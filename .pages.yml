@@ -14,6 +14,12 @@ content:
     format: json
     filename: "{primary}.json"
     fields:
+    
+    view:
+      fields: [title, heimatwelt, titelbild]
+      primary: title
+      search: [title, heimatwelt]
+
       - name: title
         label: Speziesname
         type: string
