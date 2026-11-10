@@ -1,0 +1,84 @@
+
+media:
+  - name: bilder
+    label: Bilder
+    input: assets/bilder
+    output: /assets/bilder
+    rename: safe
+
+content:
+  - name: spezies
+    label: Spezies
+    type: collection
+    path: inhalte/spezies
+    format: json
+    filename: "{primary}.json"
+    fields:
+      - name: title
+        label: Speziesname
+        type: string
+        required: true
+
+      - name: spezies_id
+        label: Spezies-ID
+        type: string
+
+      - name: heimatwelt
+        label: Heimatwelt
+        type: string
+
+      - name: titelbild
+        label: Titelbild
+        type: image
+        options:
+          media: bilder
+
+      - name: galerie
+        label: Bildergalerie
+        type: image
+        options:
+          media: bilder
+          multiple:
+            max: 30
+
+      - name: identitaet
+        label: A - Identität und Evolution
+        type: rich-text
+        options:
+          media: bilder
+
+      - name: oekosystem
+        label: B - Heimatwelt und Ökosystem
+        type: rich-text
+        options:
+          media: bilder
+
+      - name: ressourcen
+        label: C - Ressourcen
+        type: rich-text
+        options:
+          media: bilder
+
+      - name: biologie
+        label: D - Körper und Biologie
+        type: rich-text
+        options:
+          media: bilder
+
+      - name: gesellschaft
+        label: E - Intelligenz und Gesellschaft
+        type: rich-text
+        options:
+          media: bilder
+
+      - name: zivilisation
+        label: F - Entwicklung und Zivilisation
+        type: rich-text
+        options:
+          media: bilder
+
+      - name: gameplay
+        label: G - Beziehungen und Spiel
+        type: rich-text
+        options:
+          media: bilder
