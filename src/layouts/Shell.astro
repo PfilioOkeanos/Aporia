@@ -1,0 +1,31 @@
+---
+import '../styles/board.css';
+const { title = 'APORIA – Enzyklopädie der Welten', description = 'Das Worldbuilding-Board von Aporia.' } = Astro.props;
+---
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#07150f" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+    <script>
+      const input = document.querySelector<HTMLInputElement>('[data-search-input]');
+      const cards = [...document.querySelectorAll<HTMLElement>('[data-search-item]')];
+      input?.addEventListener('input', () => {
+        const query = input.value.trim().toLocaleLowerCase('de');
+        cards.forEach((card) => { card.hidden = !!query && !card.dataset.searchItem?.toLocaleLowerCase('de').includes(query); });
+      });
+      document.querySelectorAll<HTMLAnchorElement>('[data-section-link]').forEach((link) => {
+        link.addEventListener('click', () => {
+          document.querySelectorAll('[data-section-link]').forEach((item) => item.removeAttribute('aria-current'));
+          link.setAttribute('aria-current', 'location');
+        });
+      });
+    </script>
+  </body>
+</html>

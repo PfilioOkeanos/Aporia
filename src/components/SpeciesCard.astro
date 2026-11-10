@@ -1,0 +1,11 @@
+---
+const { item } = Astro.props;
+const slug = item._sys?.filename ?? 'waldfeen';
+const image = typeof item.titelbild === 'string' ? item.titelbild : '';
+const searchable = [item.title, item.spezies_id, item.heimatwelt, item.identitaet, item.oekosystem, item.ressourcen, item.biologie, item.gesellschaft, item.zivilisation, item.gameplay].filter(Boolean).join(' ');
+---
+<a class="species-card" href={`/spezies/${slug}`} data-search-item={searchable}>
+  {image && <img src={image} alt={`Porträt: ${item.title}`} loading="lazy" />}
+  <span class="species-card-shade"></span>
+  <span class="species-card-copy"><span class="eyebrow">{item.spezies_id || 'Spezies'} · {item.heimatwelt || 'Unbekannte Heimatwelt'}</span><strong>{item.title}</strong><span class="card-link">Dossier öffnen <span aria-hidden="true">↗</span></span></span>
+</a>

@@ -1,0 +1,60 @@
+---
+import { tinaField } from '@tinacms/astro/tina-field';
+import { renderMarkdown, dossierStatus } from '../lib/markdown';
+import { themeFor } from '../lib/themes';
+const { species } = Astro.props;
+const theme = themeFor(species?.spezies_id);
+const groups = [
+  { key: 'identitaet', letter: 'A', title: 'Identität und Evolution' },
+  { key: 'oekosystem', letter: 'B', title: 'Heimatwelt und Ökosystem' },
+  { key: 'ressourcen', letter: 'C', title: 'Ressourcen' },
+  { key: 'biologie', letter: 'D', title: 'Körper und Biologie' },
+  { key: 'gesellschaft', letter: 'E', title: 'Intelligenz und Gesellschaft' },
+  { key: 'zivilisation', letter: 'F', title: 'Entwicklung und Zivilisation' },
+  { key: 'gameplay', letter: 'G', title: 'Beziehungen und Spielintegration' },
+];
+const gallery = Array.isArray(species?.galerie) ? species.galerie.filter((path) => typeof path === 'string' && path) : [];
+---
+<div class="board-grid" style={`--forest:${theme.forest};--forest-deep:${theme.forestDeep};--leaf:${theme.leaf};--gold:${theme.gold};--glow:${theme.glow}`}>
+  <aside class="identity-rail">
+    <section class="portrait-card">
+      {species.titelbild && <img class="portrait" src={species.titelbild} alt={`Waldfeen-Porträt: ${species.title}`} data-tina-field={tinaField(species, 'titelbild')} />}
+      <div class="portrait-fade"></div>
+      <div class="portrait-label"><span class="leaf-emblem">❧</span><p class="eyebrow">Spezies-Dossier</p><h1 data-tina-field={tinaField(species, 'title')}>{species.title}</h1></div>
+    </section>
+    <section class="identity-facts">
+      <p><span>◎</span><b>Heimatwelt</b><strong data-tina-field={tinaField(species, 'heimatwelt')}>{species.heimatwelt}</strong></p>
+      <p><span>❧</span><b>Klassifikation</b><strong>Biologische Spezies</strong></p>
+      <p><span>✣</span><b>Intelligenz</b><strong>Intelligent</strong></p>
+      <div class="record-meta">Spezies-ID: <b>{species.spezies_id}</b><br /><span>Inhalte aus dem A–G-Dossier</span></div>
+    </section>
+    {gallery.length > 0 && <section class="gallery-card"><div class="panel-heading"><span>❧</span><h2>Galerie</h2><small>{gallery.length} Bilder</small></div><div class="gallery-grid">{gallery.map((src) => <a href={src} target="_blank" rel="noreferrer"><img src={src} alt={`${species.title} – Galeriebild`} loading="lazy" /></a>)}</div></section>}
+    <section class="world-note"><span class="world-orbit">✧</span><p class="eyebrow">Heimatwelt</p><strong>{species.heimatwelt}</strong><span>Orvaya · Lebensraum der Waldfeen</span></section>
+  </aside>
+
+  <section class="dossier-main">
+    <div class="world-banner" role="img" aria-label={`Atmosphärisches Waldmotiv zu ${species.heimatwelt}`}>
+      <span class="banner-star s1"></span><span class="banner-star s2"></span><span class="banner-star s3"></span>
+      <div class="banner-copy"><span class="eyebrow">Weltendossier · {species.heimatwelt}</span><h2>Unter den Kronen<br /><em>von Orvaya</em></h2><p>Lebensräume, Wissen und offene Fragen der Waldfeen</p></div>
+      <div class="canopy canopy-one"></div><div class="canopy canopy-two"></div><div class="river-glow"></div>
+      <div class="banner-sigil">✧</div>
+    </div>
+    <nav class="section-nav" aria-label="Dossierbereiche">
+      <a href="#overview" data-section-link aria-current="location">❧ <span>Übersicht</span></a>
+      {groups.map((group) => <a href={`#section-${group.key}`} data-section-link><span class="nav-letter">{group.letter}</span><span>{group.title.split(' ')[0]}</span></a>)}
+    </nav>
+    <div class="dossier-heading" id="overview"><div><span class="eyebrow">Die Spezies im Überblick</span><h2>Waldfeen von Orvaya</h2></div><span class="dossier-count">28 Dossierpunkte <i>·</i> 7 Bereiche</span></div>
+    <div class="dossier-columns">
+      {groups.map((group) => {
+        const markdown = species[group.key] ?? '';
+        const statuses = dossierStatus(markdown);
+        return <article id={`section-${group.key}`} class={`dossier-card group-${group.key}`} data-search-item={`${group.title} ${markdown}`}>
+          <header class="dossier-card-head"><span class="group-letter">{group.letter}</span><h3>{group.title}</h3><span class="card-flourish">✧</span></header>
+          {statuses.length > 0 && <div class="status-row">{statuses.map((status) => <span class={`status-chip ${status === 'Offene Punkte' ? 'status-open' : 'status-proposal'}`}>{status}</span>)}</div>}
+          <div class="markdown-body" data-tina-field={tinaField(species, group.key)} set:html={renderMarkdown(markdown)} />
+        </article>;
+      })}
+    </div>
+    <footer class="page-foot"><span>APORIA · Enzyklopädie der Welten</span><span>SPEC-0001 <i>·</i> {species.heimatwelt}</span></footer>
+  </section>
+</div>

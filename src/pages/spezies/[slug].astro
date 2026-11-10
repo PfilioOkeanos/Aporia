@@ -1,0 +1,18 @@
+---
+import Shell from '../../layouts/Shell.astro';
+import Topbar from '../../components/Topbar.astro';
+import TinaIsland from '@tinacms/astro/TinaIsland.astro';
+import { getSpecies } from '../../lib/data';
+import { islands } from '../../lib/islands';
+import SpeciesIsland from '../../components/islands/SpeciesIsland.astro';
+const slug = Astro.params.slug ?? 'waldfeen';
+const result = await getSpecies(slug);
+const species = result.data?.species;
+if (!species) return new Response('Spezies nicht gefunden', { status: 404 });
+---
+<Shell title={`${species.title} · APORIA`} description={`${species.title} – Dossier der Heimatwelt ${species.heimatwelt}`}>
+  <Topbar active="Spezies" />
+  <TinaIsland name="species" wrapper={islands.species.wrapper} params={{ slug }} primary>
+    <SpeciesIsland species={species} />
+  </TinaIsland>
+</Shell>

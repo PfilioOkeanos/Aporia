@@ -1,0 +1,21 @@
+---
+import Shell from '../layouts/Shell.astro';
+import Topbar from '../components/Topbar.astro';
+import SpeciesCard from '../components/SpeciesCard.astro';
+import { listSpecies } from '../lib/data';
+const speciesList = await listSpecies();
+const names = speciesList.map((species) => species.title).join(', ');
+---
+<Shell title="APORIA – Enzyklopädie der Welten" description="Das private Worldbuilding-Board von Aporia.">
+  <Topbar active="Spezies" />
+  <main class="home-wrap">
+    <section class="welcome-banner">
+      <div class="welcome-copy"><span class="eyebrow">Wissensarchiv · Aporia</span><h1>Welten entstehen<br /><em>in ihren Details.</em></h1><p>Ein lebendiges Archiv für Spezies, Ökosysteme, Ressourcen und Kulturen.</p><a class="primary-link" href="#species">Spezies entdecken <span aria-hidden="true">↓</span></a></div>
+      <div class="welcome-orbit orbit-a"></div><div class="welcome-orbit orbit-b"></div><div class="welcome-tree"><span></span></div><div class="welcome-spark">✧</div>
+    </section>
+    <div class="home-title-row" id="species"><div><span class="eyebrow">Weltindex · {speciesList.length} Einträge</span><h2>Spezies</h2></div><span class="home-hint">Wähle ein Dossier, um die sieben Themenbereiche zu öffnen.</span></div>
+    {speciesList.length ? <div class="species-grid">{speciesList.map((item) => <SpeciesCard item={item} />)}</div> : <p class="empty-state">Noch keine Speziesdaten vorhanden.</p>}
+    <section class="archive-teaser"><span class="teaser-mark">✧</span><div><span class="eyebrow">Orvaya · SPEC-0001</span><h3>{names || 'Aporia'}</h3><p>Jeder Eintrag wird direkt aus den vorhandenen CMS-Daten geladen.</p></div><a href="/spezies/waldfeen">Waldfeen-Dossier öffnen ↗</a></section>
+  </main>
+  <footer class="home-footer"><span>APORIA</span><span>Worldbuilding-Board · Privat</span></footer>
+</Shell>

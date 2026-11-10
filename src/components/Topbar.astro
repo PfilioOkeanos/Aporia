@@ -1,0 +1,17 @@
+---
+const { active = 'Spezies' } = Astro.props;
+---
+<header class="topbar">
+  <a class="brand" href="/" aria-label="Aporia Startseite"><span class="brand-mark">A</span><span class="brand-name">APORIA</span><span class="brand-caption">Enzyklopädie<br />der Welten</span></a>
+  <nav class="main-nav" aria-label="Hauptnavigation">
+    <a href="/" class:active={active === 'Universum'}>◎ <span>Universum</span></a>
+    <a href="/" class:active={active === 'Welten'}>◉ <span>Welten</span></a>
+    <a href="/" class:active={active === 'Spezies'}>❧ <span>Spezies</span></a>
+    <a href="/" class:active={active === 'Ökosysteme'}>❋ <span>Ökosysteme</span></a>
+    <a href="/" class:active={active === 'Ressourcen'}>▤ <span>Ressourcen</span></a>
+    <a href="/" class:active={active === 'Kulturen'}>♧ <span>Kulturen</span></a>
+    <a href="/" class:active={active === 'Technologie'}>⚙ <span>Technologie</span></a>
+  </nav>
+  <label class="searchbox"><span class="sr-only">Enzyklopädie durchsuchen</span><input data-search-input type="search" placeholder="Enzyklopädie durchsuchen …" /><span aria-hidden="true">⌕</span></label>
+  <a class="settings" href="/admin/index.html" aria-label="TinaCMS Editor öffnen" title="Editor öffnen">✺</a>
+</header>
