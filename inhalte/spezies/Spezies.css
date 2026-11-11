@@ -1,0 +1,823 @@
+
+/* ================================================= */
+/* APORIA - SPEZIESARCHIV                            */
+/* ================================================= */
+
+
+/* 01 - GRUNDLAGEN */
+
+:root {
+    --species-bg: #0c1716;
+    --species-panel: #14221e;
+    --species-panel-light: #192a24;
+
+    --species-gold: #c6a96b;
+    --species-gold-light: #ead7a6;
+
+    --species-text: #e8e2d5;
+    --species-muted: #aaa797;
+
+    --species-line: rgba(198,169,107,0.35);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--species-bg);
+    color: var(--species-text);
+    font-family: Georgia, serif;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+
+/* 02 - SEITENLAYOUT */
+
+.aporia-page-frame {
+    display: grid;
+
+    grid-template-columns:
+        var(--sidebar-width, 260px)
+        minmax(0, 1fr);
+
+    min-height: calc(100vh - 78px);
+}
+
+.species-main {
+    min-width: 0;
+
+    padding: 42px clamp(22px, 4vw, 65px) 70px;
+
+    background:
+        radial-gradient(
+            ellipse at 70% 5%,
+            rgba(48,79,70,0.17),
+            transparent 55%
+        );
+}
+
+
+/* 03 - EINLEITUNG */
+
+.species-hero {
+    position: relative;
+
+    padding: 12px 0 30px;
+
+    max-width: 1000px;
+}
+
+.species-eyebrow {
+    color: var(--species-gold);
+
+    font-size: 10px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+}
+
+.species-hero h1 {
+    margin: 17px 0;
+
+    font-size: clamp(34px, 4vw, 54px);
+    font-weight: normal;
+
+    color: #f0e8d9;
+}
+
+.species-hero > p {
+    max-width: 750px;
+
+    color: var(--species-muted);
+
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.species-hero-meta {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 30px;
+    padding-bottom: 14px;
+
+    border-bottom: 1px solid var(--species-line);
+
+    color: var(--species-gold);
+
+    font-size: 9px;
+    letter-spacing: 0.2em;
+}
+
+
+/* 04 - FILTER UND SUCHE */
+
+.species-controls {
+    display: grid;
+
+    grid-template-columns:
+        minmax(200px, 1.5fr)
+        repeat(4, minmax(120px, 1fr))
+        auto;
+
+    gap: 10px;
+
+    margin: 25px 0 35px;
+}
+
+.species-search {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    min-width: 0;
+    height: 43px;
+
+    padding: 0 13px;
+
+    border: 1px solid var(--species-line);
+    border-radius: 5px;
+
+    background: rgba(0,0,0,0.2);
+}
+
+.species-search:focus-within {
+    border-color: var(--species-gold);
+}
+
+.species-search svg {
+    width: 18px;
+    height: 18px;
+
+    flex-shrink: 0;
+
+    stroke: var(--species-gold);
+    stroke-width: 1.7;
+}
+
+.species-search input {
+    width: 100%;
+    min-width: 0;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    color: var(--species-text);
+
+    font-family: Georgia, serif;
+    font-size: 13px;
+}
+
+.species-search input::placeholder {
+    color: var(--species-muted);
+}
+
+.species-controls select {
+    min-width: 0;
+    height: 43px;
+
+    padding: 0 10px;
+
+    border: 1px solid var(--species-line);
+    border-radius: 5px;
+
+    background: #111f1c;
+    color: var(--species-text);
+
+    font-family: Georgia, serif;
+    font-size: 12px;
+}
+
+.species-controls select:focus {
+    outline: 1px solid var(--species-gold);
+}
+
+.species-controls select option {
+    background: #14221e;
+    color: var(--species-text);
+}
+
+.species-reset {
+    padding: 0 13px;
+
+    border: 1px solid var(--species-line);
+    border-radius: 5px;
+
+    background: transparent;
+
+    color: var(--species-gold-light);
+
+    font-family: Georgia, serif;
+    font-size: 12px;
+
+    cursor: pointer;
+}
+
+.species-reset:hover {
+    background: rgba(198,169,107,0.12);
+}
+
+
+/* 05 - ERGEBNISÜBERSCHRIFT */
+
+.species-results-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+
+    border-bottom: 1px solid var(--species-line);
+}
+
+.species-results-heading h2 {
+    margin: 0;
+
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.species-results-heading span {
+    color: var(--species-gold);
+
+    font-size: 10px;
+    letter-spacing: 0.15em;
+}
+
+
+/* 06 - SPEZIESKARTEN */
+
+.species-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 26px;
+}
+
+.species-card {
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        minmax(0, 1fr);
+
+    width: 100%;
+    min-width: 0;
+    min-height: 310px;
+
+    padding: 0;
+
+    border: none;
+    border-radius: 12px;
+
+    background: transparent;
+
+    color: var(--species-text);
+    font-family: Georgia, serif;
+    text-align: left;
+
+    cursor: pointer;
+
+    transition: transform 0.25s ease;
+}
+
+.species-card:hover {
+    transform: translateY(-4px);
+}
+
+.species-card:focus-visible {
+    outline: 2px solid var(--species-gold);
+    outline-offset: 5px;
+}
+
+
+/* LINKE KARTHÄLFTE */
+
+.species-card-left {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    min-width: 0;
+
+    padding: 25px 108px 25px 25px;
+
+    border: 1px solid var(--species-line);
+    border-right: none;
+
+    border-radius: 12px 0 0 12px;
+
+    background:
+        linear-gradient(
+            130deg,
+            #192c24,
+            #10201c
+        );
+}
+
+.species-card-id {
+    margin-bottom: 14px;
+
+    color: var(--species-gold);
+
+    font-size: 9px;
+    letter-spacing: 0.15em;
+}
+
+.species-card-left h3 {
+    margin: 0 0 10px;
+
+    color: var(--species-gold-light);
+
+    font-size: clamp(22px, 2vw, 30px);
+    font-weight: normal;
+}
+
+.species-card-group {
+    color: var(--species-muted);
+
+    font-size: 13px;
+    font-style: italic;
+    line-height: 1.6;
+}
+
+.species-card-tagline {
+    margin-top: 22px;
+    padding-top: 13px;
+
+    border-top: 1px solid var(--species-line);
+
+    color: var(--species-gold-light);
+
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+
+/* RECHTE KARTHÄLFTE */
+
+.species-card-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    min-width: 0;
+
+    padding: 23px 22px 23px 108px;
+
+    border: 1px solid var(--species-line);
+    border-left: none;
+
+    border-radius: 0 12px 12px 0;
+
+    background:
+        linear-gradient(
+            120deg,
+            #13221e,
+            #192a24
+        );
+}
+
+.species-fact {
+    padding: 9px 0;
+
+    border-bottom: 1px solid rgba(198,169,107,0.16);
+}
+
+.species-fact:last-child {
+    border-bottom: none;
+}
+
+.species-fact-label {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: var(--species-gold);
+
+    font-size: 9px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.species-fact-value {
+    display: block;
+
+    color: var(--species-text);
+
+    font-size: 13px;
+    line-height: 1.4;
+
+    overflow-wrap: anywhere;
+}
+
+
+/* 07 - KREISFÖRMIGES PORTRÄT */
+
+.species-card-portrait {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    z-index: 3;
+
+    width: 205px;
+    height: 205px;
+
+    overflow: hidden;
+
+    border: 5px double var(--species-gold);
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            #405c4b,
+            #172b24 65%,
+            #0b1515
+        );
+
+    box-shadow:
+        0 0 0 5px rgba(198,169,107,0.12),
+        0 0 28px rgba(0,0,0,0.7);
+}
+
+.species-card-portrait img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.species-portrait-fallback {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+
+    color: var(--species-gold-light);
+}
+
+.species-portrait-fallback span {
+    font-size: 50px;
+}
+
+.species-portrait-fallback small {
+    margin-top: 8px;
+
+    font-size: 8px;
+    letter-spacing: 0.15em;
+}
+
+
+/* 08 - KEINE ERGEBNISSE */
+
+.species-empty {
+    padding: 65px 20px;
+
+    text-align: center;
+
+    border: 1px solid var(--species-line);
+    border-radius: 8px;
+
+    background: var(--species-panel);
+}
+
+.species-empty > span {
+    color: var(--species-gold);
+    font-size: 38px;
+}
+
+.species-empty h3 {
+    font-size: 23px;
+    font-weight: normal;
+}
+
+.species-empty p {
+    color: var(--species-muted);
+    font-size: 13px;
+}
+
+
+/* 09 - SEITENNUMMERIERUNG */
+
+.species-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    margin-top: 38px;
+}
+
+.species-page-button {
+    min-width: 38px;
+    height: 38px;
+
+    padding: 0 10px;
+
+    border: 1px solid var(--species-line);
+    border-radius: 5px;
+
+    background: transparent;
+
+    color: var(--species-text);
+
+    font-family: Georgia, serif;
+    font-size: 13px;
+
+    cursor: pointer;
+}
+
+.species-page-button:hover,
+.species-page-button.is-active {
+    border-color: var(--species-gold);
+
+    background: rgba(198,169,107,0.15);
+
+    color: var(--species-gold-light);
+}
+
+.species-page-button:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+
+/* 10 - DETAILANSICHT */
+
+.species-dialog {
+    position: fixed;
+    inset: 0;
+
+    z-index: 5000;
+
+    display: grid;
+    place-items: center;
+
+    padding: 20px;
+}
+
+.species-dialog-backdrop {
+    position: absolute;
+    inset: 0;
+
+    border: none;
+
+    background: rgba(0,0,0,0.82);
+
+    cursor: pointer;
+}
+
+.species-dialog-panel {
+    position: relative;
+
+    z-index: 2;
+
+    width: min(700px, 100%);
+    max-height: 85vh;
+
+    overflow-y: auto;
+
+    padding: 40px;
+
+    border: 1px solid var(--species-gold);
+    border-radius: 10px;
+
+    background:
+        linear-gradient(
+            130deg,
+            #192a24,
+            #0c1716
+        );
+
+    box-shadow: 0 20px 70px rgba(0,0,0,0.6);
+}
+
+.species-dialog-panel h2 {
+    margin: 15px 0;
+
+    color: var(--species-gold-light);
+
+    font-size: 38px;
+    font-weight: normal;
+}
+
+.species-dialog-panel > p {
+    color: var(--species-muted);
+    line-height: 1.8;
+}
+
+.species-dialog-close {
+    position: absolute;
+
+    top: 15px;
+    right: 18px;
+
+    width: 35px;
+    height: 35px;
+
+    border: 1px solid var(--species-line);
+    border-radius: 50%;
+
+    background: transparent;
+
+    color: var(--species-gold-light);
+
+    font-size: 23px;
+
+    cursor: pointer;
+}
+
+.dialog-facts {
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 12px;
+
+    margin-top: 25px;
+}
+
+.dialog-fact {
+    padding: 14px;
+
+    border: 1px solid var(--species-line);
+    border-radius: 5px;
+
+    background: rgba(0,0,0,0.15);
+}
+
+.dialog-fact strong {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: var(--species-gold);
+
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.dialog-fact span {
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.dialog-note {
+    margin-top: 25px;
+
+    font-size: 12px;
+}
+
+.dialog-link {
+    display: inline-block;
+
+    margin-top: 15px;
+    padding: 12px 18px;
+
+    border: 1px solid var(--species-gold);
+    border-radius: 5px;
+
+    color: var(--species-gold-light);
+    text-decoration: none;
+}
+
+
+/* 11 - RESPONSIVE DESIGN */
+
+@media (max-width: 1250px) {
+
+    .species-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .species-controls {
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+    }
+
+    .species-search {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 760px) {
+
+    .aporia-page-frame {
+        grid-template-columns:
+            minmax(0, 200px)
+            minmax(0, 1fr);
+    }
+
+    .species-main {
+        padding: 25px 16px 45px;
+    }
+
+    .species-controls {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .species-search {
+        grid-column: 1 / -1;
+    }
+
+    .species-card {
+        min-height: 270px;
+    }
+
+    .species-card-left {
+        padding: 20px 75px 20px 15px;
+    }
+
+    .species-card-right {
+        padding: 20px 12px 20px 75px;
+    }
+
+    .species-card-portrait {
+        width: 140px;
+        height: 140px;
+    }
+
+    .species-card-left h3 {
+        font-size: 22px;
+    }
+
+    .species-fact {
+        padding: 6px 0;
+    }
+
+    .species-fact-value {
+        font-size: 11px;
+    }
+
+    .dialog-facts {
+        grid-template-columns: 1fr;
+    }
+
+    .species-dialog-panel {
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .species-card {
+        min-height: 245px;
+    }
+
+    .species-card-portrait {
+        width: 110px;
+        height: 110px;
+    }
+
+    .species-card-left {
+        padding-right: 58px;
+    }
+
+    .species-card-right {
+        padding-left: 58px;
+    }
+
+    .species-card-group {
+        font-size: 11px;
+    }
+
+    .species-card-tagline {
+        font-size: 10px;
+    }
+
+    .species-controls {
+        grid-template-columns: 1fr;
+    }
+
+    .species-search {
+        grid-column: 1;
+    }
+}

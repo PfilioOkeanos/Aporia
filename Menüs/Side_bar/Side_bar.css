@@ -1,0 +1,303 @@
+
+/* ================================================= */
+/* APORIA - SIDEBAR DESIGN                           */
+/* ================================================= */
+
+
+/* 01 - GRUNDWERTE */
+
+:root {
+    --sidebar-bg: #0c1716;
+    --sidebar-panel: #14211e;
+    --sidebar-gold: #c6a96b;
+    --sidebar-gold-light: #ead7a6;
+    --sidebar-text: #e8e2d5;
+    --sidebar-muted: #a9a394;
+    --sidebar-line: rgba(198, 169, 107, 0.25);
+
+    --sidebar-width: 260px;
+}
+
+
+/* 02 - SIDEBAR-BEREICH */
+
+#aporia-sidebar-host {
+    flex: 0 0 var(--sidebar-width);
+    width: var(--sidebar-width);
+    min-width: 0;
+}
+
+.aporia-sidebar {
+    position: sticky;
+
+    top: var(--aporia-topbar-height, 78px);
+
+    width: 100%;
+    height: calc(100vh - var(--aporia-topbar-height, 78px));
+
+    background: var(--sidebar-bg);
+
+    border-right: 1px solid var(--sidebar-line);
+
+    color: var(--sidebar-text);
+
+    overflow: hidden;
+}
+
+
+/* 03 - SCROLLBEREICH */
+
+.aporia-sidebar-scroll {
+    height: 100%;
+    overflow-y: auto;
+
+    padding: 24px 13px 35px;
+
+    scrollbar-width: thin;
+    scrollbar-color: var(--sidebar-line) transparent;
+}
+
+.aporia-sidebar-scroll::-webkit-scrollbar {
+    width: 5px;
+}
+
+.aporia-sidebar-scroll::-webkit-scrollbar-thumb {
+    background: var(--sidebar-line);
+    border-radius: 5px;
+}
+
+
+/* 04 - KATEGORIEGRUPPEN */
+
+.aporia-sidebar-section {
+    margin-bottom: 29px;
+}
+
+.aporia-sidebar-heading {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    margin: 0 10px 13px;
+
+    color: var(--sidebar-gold-light);
+
+    font-family: Georgia, serif;
+    font-size: 11px;
+    font-weight: normal;
+
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+}
+
+.aporia-sidebar-heading::after {
+    content: "";
+
+    flex: 1;
+    height: 1px;
+
+    background: var(--sidebar-line);
+}
+
+
+/* 05 - DIREKTE LINKS UND AUFKLAPPBARE MENÜS */
+
+.aporia-sidebar-link,
+.aporia-sidebar-toggle {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+
+    width: 100%;
+    min-height: 38px;
+
+    padding: 8px 11px;
+    margin: 2px 0;
+
+    border: 1px solid transparent;
+    border-radius: 6px;
+
+    background: transparent;
+
+    color: var(--sidebar-text);
+
+    font-family: Georgia, serif;
+    font-size: 14px;
+
+    text-align: left;
+    text-decoration: none;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        color 0.2s ease;
+}
+
+
+/* 06 - HOVER */
+
+.aporia-sidebar-link:hover,
+.aporia-sidebar-toggle:hover {
+    background: rgba(198, 169, 107, 0.09);
+
+    border-color: var(--sidebar-line);
+
+    color: var(--sidebar-gold-light);
+}
+
+
+/* 07 - AKTIVER MENÜPUNKT */
+
+.aporia-sidebar-link.is-active {
+    background: rgba(198, 169, 107, 0.15);
+
+    border-color: var(--sidebar-line);
+
+    color: var(--sidebar-gold-light);
+}
+
+
+/* 08 - ICONS */
+
+.sidebar-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 19px;
+    min-width: 19px;
+
+    color: var(--sidebar-gold);
+
+    font-size: 18px;
+    text-align: center;
+}
+
+
+/* 09 - AUFKLAPP-PFEIL */
+
+.sidebar-chevron {
+    margin-left: auto;
+
+    color: var(--sidebar-gold);
+
+    font-size: 21px;
+
+    transition: transform 0.2s ease;
+}
+
+.aporia-sidebar-toggle.is-open .sidebar-chevron {
+    transform: rotate(90deg);
+}
+
+
+/* 10 - ZAHLENBADGES */
+
+.sidebar-count {
+    margin-left: auto;
+
+    padding: 2px 7px;
+
+    border-radius: 20px;
+
+    background: rgba(198, 169, 107, 0.12);
+
+    color: var(--sidebar-gold-light);
+
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+}
+
+
+/* 11 - UNTERMENÜS */
+
+.aporia-sidebar-submenu {
+    margin: 3px 0 8px 29px;
+
+    padding: 3px 0 3px 12px;
+
+    border-left: 1px solid var(--sidebar-line);
+}
+
+.aporia-sidebar-submenu[hidden] {
+    display: none !important;
+}
+
+.aporia-sidebar-submenu a {
+    display: block;
+
+    padding: 8px 9px;
+
+    border-radius: 4px;
+
+    color: var(--sidebar-muted);
+
+    font-family: Georgia, serif;
+    font-size: 12px;
+
+    line-height: 1.4;
+    text-decoration: none;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease;
+}
+
+.aporia-sidebar-submenu a:hover {
+    background: rgba(198, 169, 107, 0.08);
+
+    color: var(--sidebar-gold-light);
+}
+
+.aporia-sidebar-submenu a.is-active {
+    color: var(--sidebar-gold-light);
+
+    background: rgba(198, 169, 107, 0.12);
+}
+
+
+/* 12 - UNTERMENÜ-ÜBERSCHRIFT */
+
+.sidebar-submenu-label {
+    padding: 13px 8px 5px;
+
+    color: var(--sidebar-gold);
+
+    font-family: Arial, sans-serif;
+    font-size: 9px;
+
+    letter-spacing: 0.14em;
+}
+
+
+/* 13 - RESPONSIVE */
+
+@media (max-width: 1000px) {
+
+    #aporia-sidebar-host {
+        --sidebar-width: 235px;
+        flex-basis: 235px;
+    }
+
+    .aporia-sidebar-link,
+    .aporia-sidebar-toggle {
+        font-size: 13px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    #aporia-sidebar-host {
+        --sidebar-width: 210px;
+        flex-basis: 210px;
+    }
+
+    .aporia-sidebar-scroll {
+        padding-left: 9px;
+        padding-right: 9px;
+    }
+
+}

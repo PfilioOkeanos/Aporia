@@ -1,0 +1,405 @@
+
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+
+    <!-- ================================= -->
+    <!-- APORIA - SPEZIESARCHIV            -->
+    <!-- ================================= -->
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#0c1716">
+
+    <title>APORIA – Speziesarchiv</title>
+
+
+    <!-- ================================= -->
+    <!-- 01 - GEMEINSAME STYLESHEETS       -->
+    <!-- ================================= -->
+
+    <!-- Obere Navigation -->
+    <link rel="stylesheet"
+          href="../../Menüs/TopBar/Top_bar.css">
+
+    <!-- Linke Navigation -->
+    <link rel="stylesheet"
+          href="../../Menüs/Side_bar/Side_bar.css">
+
+
+    <!-- ================================= -->
+    <!-- 02 - SPEZIES DESIGN                -->
+    <!-- ================================= -->
+
+    <link rel="stylesheet"
+          href="./Spezies.css">
+
+</head>
+
+
+<body data-page="spezies">
+
+
+    <!-- ================================= -->
+    <!-- 03 - OBERE HAUPTNAVIGATION        -->
+    <!-- ================================= -->
+
+    <div data-aporia-topbar></div>
+
+
+    <!-- ================================= -->
+    <!-- 04 - SEITENLAYOUT                 -->
+    <!-- ================================= -->
+
+    <div class="aporia-page-frame">
+
+
+        <!-- ================================= -->
+        <!-- LINKE SEITENNAVIGATION            -->
+        <!-- ================================= -->
+
+        <div data-aporia-sidebar></div>
+
+
+        <!-- ================================= -->
+        <!-- 05 - SPEZIES HAUPTINHALT          -->
+        <!-- ================================= -->
+
+        <main class="species-main">
+
+
+            <!-- ================================= -->
+            <!-- 06 - EINLEITUNG                   -->
+            <!-- ================================= -->
+
+            <header class="species-hero">
+
+                <span class="species-eyebrow">
+                    APORIA · LEBENSFORMENARCHIV
+                </span>
+
+                <h1>
+                    Die Spezies von Aporia
+                </h1>
+
+                <p>
+                    Entdecke die intelligenten und biologischen
+                    Lebensformen des Universums. Erforsche ihre
+                    Herkunft, ihre Entwicklung und ihre
+                    unterschiedlichen Lebensweisen.
+                </p>
+
+                <div class="species-hero-meta">
+
+                    <span id="species-total">
+                        ARCHIV WIRD GELADEN
+                    </span>
+
+                    <span>
+                        UNIVERSUM APORIA
+                    </span>
+
+                </div>
+
+            </header>
+
+
+
+            <!-- ================================= -->
+            <!-- 07 - FILTER UND SUCHE              -->
+            <!-- ================================= -->
+
+            <section class="species-controls">
+
+
+                <!-- SUCHFELD -->
+
+                <div class="species-search">
+
+                    <svg viewBox="0 0 24 24" fill="none">
+
+                        <circle cx="10.8"
+                                cy="10.8"
+                                r="6.8"/>
+
+                        <path d="M16 16 L21 21"/>
+
+                    </svg>
+
+                    <input
+                        type="search"
+                        id="species-search"
+                        placeholder="Spezies suchen ..."
+                        aria-label="Spezies suchen"
+                    >
+
+                </div>
+
+
+                <!-- HAUPTGRUPPE -->
+
+                <select id="filter-main-group"
+                        aria-label="Hauptgruppe">
+
+                    <option value="">
+                        Alle Hauptgruppen
+                    </option>
+
+                </select>
+
+
+                <!-- UNTERGRUPPE -->
+
+                <select id="filter-subgroup"
+                        aria-label="Untergruppe">
+
+                    <option value="">
+                        Alle Untergruppen
+                    </option>
+
+                </select>
+
+
+                <!-- HEIMATWELT -->
+
+                <select id="filter-homeworld"
+                        aria-label="Heimatwelt">
+
+                    <option value="">
+                        Alle Heimatwelten
+                    </option>
+
+                </select>
+
+
+                <!-- DOSSIERSTATUS -->
+
+                <select id="filter-status"
+                        aria-label="Dossierstatus">
+
+                    <option value="">
+                        Alle Status
+                    </option>
+
+                </select>
+
+
+                <!-- FILTER ZURÜCKSETZEN -->
+
+                <button
+                    type="button"
+                    id="species-reset"
+                    class="species-reset">
+
+                    Zurücksetzen
+
+                </button>
+
+            </section>
+
+
+
+            <!-- ================================= -->
+            <!-- 08 - SPEZIESERGEBNISSE            -->
+            <!-- ================================= -->
+
+            <section class="species-results">
+
+
+                <div class="species-results-heading">
+
+                    <h2>
+                        Speziesarchiv
+                    </h2>
+
+                    <span id="species-result-count">
+                        0 Spezies
+                    </span>
+
+                </div>
+
+
+                <!-- SPEZIESKARTEN -->
+
+                <div
+                    class="species-grid"
+                    id="species-grid"
+                    aria-live="polite">
+                </div>
+
+
+                <!-- KEINE ERGEBNISSE -->
+
+                <div
+                    class="species-empty"
+                    id="species-empty"
+                    hidden>
+
+                    <span>✧</span>
+
+                    <h3>
+                        Keine Spezies gefunden
+                    </h3>
+
+                    <p>
+                        Passe deine Suche oder Filter an.
+                    </p>
+
+                </div>
+
+
+                <!-- SEITENNUMMERIERUNG -->
+
+                <nav
+                    class="species-pagination"
+                    id="species-pagination"
+                    aria-label="Seitennavigation">
+                </nav>
+
+
+            </section>
+
+
+
+            <!-- ================================= -->
+            <!-- 09 - DETAILANSICHT                -->
+            <!-- ================================= -->
+
+            <div
+                class="species-dialog"
+                id="species-dialog"
+                hidden>
+
+
+                <!-- HINTERGRUND -->
+
+                <button
+                    class="species-dialog-backdrop"
+                    type="button"
+                    data-dialog-close
+                    aria-label="Detailansicht schließen">
+                </button>
+
+
+                <!-- DETAILFENSTER -->
+
+                <section
+                    class="species-dialog-panel"
+                    role="dialog"
+                    aria-modal="true"
+                    aria-labelledby="dialog-title">
+
+
+                    <!-- SCHLIESSEN -->
+
+                    <button
+                        type="button"
+                        class="species-dialog-close"
+                        data-dialog-close
+                        aria-label="Schließen">
+
+                        ×
+
+                    </button>
+
+
+                    <!-- DOSSIERKOPF -->
+
+                    <span
+                        class="species-eyebrow"
+                        id="dialog-kicker">
+
+                        SPEZIESDOSSIER
+
+                    </span>
+
+
+                    <h2 id="dialog-title">
+                        Speziesname
+                    </h2>
+
+
+                    <p id="dialog-description"></p>
+
+
+                    <!-- SPEZIESDATEN -->
+
+                    <div
+                        id="dialog-facts"
+                        class="dialog-facts">
+                    </div>
+
+
+                    <!-- HINWEIS -->
+
+                    <p
+                        class="dialog-note"
+                        id="dialog-note">
+
+                        Das vollständige Dossier wird
+                        in einem weiteren Entwicklungsschritt
+                        integriert.
+
+                    </p>
+
+
+                    <!-- VOLLSTÄNDIGES DOSSIER -->
+
+                    <a
+                        id="dialog-link"
+                        class="dialog-link"
+                        href="#"
+                        hidden>
+
+                        Vollständiges Dossier öffnen →
+
+                    </a>
+
+
+                </section>
+
+            </div>
+
+
+        </main>
+
+    </div>
+
+
+
+    <!-- ================================= -->
+    <!-- 10 - GEMEINSAME JAVASCRIPT-MODULE -->
+    <!-- ================================= -->
+
+    <!-- Obere Navigation -->
+
+    <script
+        type="module"
+        src="../../Menüs/TopBar/Top_bar.js">
+    </script>
+
+
+    <!-- Linke Navigation -->
+
+    <script
+        type="module"
+        src="../../Menüs/Side_bar/side_bar.js">
+    </script>
+
+
+    <!-- ================================= -->
+    <!-- 11 - SPEZIES FUNKTIONEN           -->
+    <!-- ================================= -->
+
+    <script
+        type="module"
+        src="./Spezies.js">
+    </script>
+
+
+</body>
+</html>
