@@ -3,9 +3,9 @@ body{
   --faction-accent:#d6ad70;
   --faction-deep:#321d18;
   --faction-glow:#c78c4530}
-  .faction-hero:after{
-    border-radius:2px;
-    transform:rotate(45deg);
-  }
-  .faction-card{
-    background:linear-gradient(145deg,color-mix(in srgb,var(--faction-deep),#ffffff 9%),#111916)}
+.faction-hero:after{
+  border-radius:2px;
+  transform:rotate(45deg);
+}
+.faction-card{
+  background:linear-gradient(145deg,color-mix(in srgb,var(--faction-deep),#ffffff 9%),#111916)}
