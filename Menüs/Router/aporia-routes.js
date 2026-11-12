@@ -18,22 +18,74 @@ const SPECIES_PAGE = new URL(
 const APORIA_ROUTES = {
 
     /* STARTSEITE */
-
     home: new URL(
-        "./Hauptseite.html/Hauptseite.html",
+        "../Hauptseite.html/Hauptseite.html",
         import.meta.url
     ).href,
 
+    /* FRAKTIONSARCHIV */
+    fraktionen: new URL(
+        "../../Fraktionen/Fraktionen.html",
+        import.meta.url
+    ).href,
+    "alle-fraktionen": new URL(
+        "../../Fraktionen/Fraktionen.html",
+        import.meta.url
+    ).href,
+    "fraktionskarte": new URL(
+        "../../Fraktionen/Fraktionen.html",
+        import.meta.url
+    ).href,
+    "gesellschaftsformen": new URL(
+        "../../Fraktionen/Fraktionen.html",
+        import.meta.url
+    ).href,
+    konfoederation: new URL(
+        "../../Fraktionen/Konfoederation/Konfoederation.html",
+        import.meta.url
+    ).href,
+    konsortium: new URL(
+        "../../Fraktionen/Konsortium/Konsortium.html",
+        import.meta.url
+    ).href,
+    protektorat: new URL(
+        "../../Fraktionen/Protektorat/Protektorat.html",
+        import.meta.url
+    ).href,
+    synaptorat: new URL(
+        "../../Fraktionen/Synaptorat/Synaptorat.html",
+        import.meta.url
+    ).href,
+    aetherwanderer: new URL(
+        "../../Fraktionen/Aetherwanderer/Aetherwanderer.html",
+        import.meta.url
+    ).href,
+    "aether-wanderer": new URL(
+        "../../Fraktionen/Aetherwanderer/Aetherwanderer.html",
+        import.meta.url
+    ).href,
+    zirkel: new URL(
+        "../../Fraktionen/Fraktionen.html",
+        import.meta.url
+    ).href,
 
     /* SPEZIESARCHIV */
-
-    spezies: SPECIES_PAGE,
-
-    "alle-spezies": SPECIES_PAGE,
-
-    "speziesdossiers": SPECIES_PAGE,
-
-    "dossiers-spezies": SPECIES_PAGE
+    spezies: new URL(
+        "../../inhalte/spezies/Spezies.html",
+        import.meta.url
+    ).href,
+    "alle-spezies": new URL(
+        "../../inhalte/spezies/Spezies.html",
+        import.meta.url
+    ).href,
+    speziesdossiers: new URL(
+        "../../inhalte/spezies/Spezies.html",
+        import.meta.url
+    ).href,
+    "dossiers-spezies": new URL(
+        "../../inhalte/spezies/Spezies.html",
+        import.meta.url
+    ).href
 
 };
 

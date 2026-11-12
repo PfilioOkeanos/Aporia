@@ -239,6 +239,16 @@ async function loadAporiaTopbar() {
 
         const currentPage = document.body.dataset.page;
 
+        const factionPages = new Set([
+            "fraktionen", "alle-fraktionen", "fraktionskarte",
+            "gesellschaftsformen", "konfoederation", "konsortium",
+            "protektorat", "synaptorat", "aetherwanderer", "zirkel"
+        ]);
+
+        const activePage = factionPages.has(currentPage)
+            ? "fraktionen"
+            : currentPage;
+
         topbarHost.querySelectorAll(
             "[data-route]"
         ).forEach(link => {
@@ -247,7 +257,7 @@ async function loadAporiaTopbar() {
 
             link.removeAttribute("aria-current");
 
-            if (link.dataset.route === currentPage) {
+            if (link.dataset.route === activePage) {
 
                 link.classList.add("is-active");
 
