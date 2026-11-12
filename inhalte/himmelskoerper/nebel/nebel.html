@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#090c16">
+    <title>Nebel · Aporia Weltenarchiv</title>
+    <link rel="stylesheet" href="../../../Menüs/Side_bar/Side_bar.css?v=3">
+    <link rel="stylesheet" href="../../../Menüs/TopBar/Top_bar.css?v=5">
+    <link rel="stylesheet" href="./nebel.css">
+</head>
+<body data-page="nebel" data-section="himmelskoerper">
+    <div id="aporia-topbar-mount" data-aporia-topbar></div>
+    <div class="aporia-page-frame atlas-frame">
+        <div id="aporia-sidebar-mount" data-aporia-sidebar></div>
+        <main class="atlas-main">
+            <div class="atlas-shell">
+            <nav class="atlas-crumb" aria-label="Seitenpfad">
+                <a href="#" data-route="home">Weltenarchiv</a>
+                <span aria-hidden="true">›</span>
+                <a href="#" data-route="himmelskoerper">Himmelskörper</a><span aria-hidden="true">›</span><span aria-current="page">Nebel</span>
+            </nav>
+            <header class="atlas-hero">
+                <h1>Nebel</h1>
+                <p>Gas und Staub zwischen den Sternen, von leuchtenden Wolken bis zu dunklen Staubgebieten.</p>
+            </header>
+            <nav class="atlas-categories" aria-label="Himmelskörperkategorien">
+                <a href="#" data-route="planeten">Planeten</a>
+                <a href="#" data-route="sterne">Sterne</a>
+                <a href="#" data-route="monde">Monde</a>
+                <a href="#" data-route="schwarze-loecher">Schwarze Löcher</a>
+                <a href="#" data-route="sternensysteme">Sternensysteme</a>
+                <a href="#" data-route="zwergplaneten">Zwergplaneten</a>
+                <a href="#" data-route="asteroiden">Asteroiden</a>
+                <a href="#" data-route="nebel" aria-current="page">Nebel</a>
+                <a href="#" data-route="galaxien">Galaxien</a>
+                <a href="#" data-route="phaenomene">Phänomene</a>
+            </nav>
+            <div class="atlas-filters" role="group" aria-label="Einträge nach Typ filtern" hidden>
+                <button type="button" data-filter="all" aria-pressed="true">Alle</button>
+                <button type="button" data-filter="type-0" aria-pressed="false">Leuchtend</button>
+                <button type="button" data-filter="type-1" aria-pressed="false">Reflektierend</button>
+                <button type="button" data-filter="type-2" aria-pressed="false">Absorbierend</button>
+            </div>
+            <section class="atlas-grid" aria-label="Archiveinträge">
+                <article class="atlas-card" data-type="type-0">
+                    <div class="atlas-art"><img alt="" loading="lazy" data-media-image="himmelskoerper.archiv.nebel"></div>
+                    <div class="atlas-card-body">
+                        <h2>Emissionsnebel</h2>
+                        <span class="atlas-type">Leuchtend</span>
+                        <p>Angeregtes Gas strahlt Licht ab und lässt die Wolke leuchten.</p>
+                        
+                    </div>
+                </article>
+                <article class="atlas-card" data-type="type-1">
+                    <div class="atlas-art"><img alt="" loading="lazy" data-media-image="himmelskoerper.archiv.reflexionsnebel"></div>
+                    <div class="atlas-card-body">
+                        <h2>Reflexionsnebel</h2>
+                        <span class="atlas-type">Reflektierend</span>
+                        <p>Staub streut das Licht benachbarter Sterne.</p>
+                        
+                    </div>
+                </article>
+                <article class="atlas-card" data-type="type-2">
+                    <div class="atlas-art"><img alt="" loading="lazy" data-media-image="himmelskoerper.archiv.dunkelnebel"></div>
+                    <div class="atlas-card-body">
+                        <h2>Dunkelnebel</h2>
+                        <span class="atlas-type">Absorbierend</span>
+                        <p>Dichter Staub verdeckt dahinterliegende Sterne.</p>
+                        
+                    </div>
+                </article>
+            </section>
+            </div>
+        </main>
+    </div>
+    <script type="module" src="../../../Menüs/Side_bar/side_bar.js?v=3"></script>
+    <script type="module" src="../../../Menüs/TopBar/Top_bar.js?v=6"></script>
+    <script type="module" src="./nebel.js"></script>
+</body>
+</html>

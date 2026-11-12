@@ -295,6 +295,11 @@
 
 }
 
+.aporia-nav-link[aria-disabled="true"] {
+    cursor: not-allowed;
+    opacity: 0.45 !important;
+}
+
 
 .aporia-nav-link:hover svg {
 
@@ -728,3 +733,55 @@
     }
 
 }
+
+
+.aporia-celestial-nav {
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    min-width: 0;
+}
+
+.aporia-celestial-disclosure {
+    display: flex;
+    align-items: center;
+}
+
+.aporia-celestial-disclosure summary {
+    display: grid;
+    place-items: center;
+    min-width: 28px;
+    min-height: 36px;
+    height: 100%;
+    color: #e5ce95;
+    cursor: pointer;
+    list-style: none;
+}
+
+.aporia-celestial-disclosure summary::-webkit-details-marker { display: none; }
+.aporia-celestial-disclosure ul {
+    position: absolute;
+    z-index: 1;
+    inset: 100% 0 auto auto;
+    width: min(240px, calc(100vw - 28px));
+    max-height: 55vh;
+    overflow-y: auto;
+    margin: 0;
+    padding: 6px;
+    border: 1px solid #84754e;
+    border-radius: 4px;
+    background: #15211e;
+    box-shadow: 0 8px 26px #0008;
+    list-style: none;
+}
+
+.aporia-celestial-disclosure a {
+    display: block;
+    padding: 8px 10px;
+    color: #eee4d1;
+    text-decoration: none;
+}
+
+.aporia-celestial-disclosure a:hover,
+.aporia-celestial-disclosure a[aria-current] { background: #273a33; color: #f0d9a4; }
+.aporia-celestial-disclosure :focus-visible { outline: 2px solid #f0d9a4; outline-offset: -2px; }

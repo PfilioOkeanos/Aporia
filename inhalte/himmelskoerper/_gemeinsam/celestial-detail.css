@@ -1,0 +1,90 @@
+.celestial-gallery {
+    margin-block: 38px;
+    border-top: 1px solid #826b5188;
+    padding-top: 22px;
+}
+
+.celestial-gallery h2 { margin: 0 0 18px; font-weight: 500; }
+.celestial-controls, .celestial-pagination {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: end;
+}
+
+.celestial-controls label { display: grid; gap: 6px; }
+.celestial-gallery [hidden] { display: none; }
+.celestial-controls input, .celestial-controls select, .celestial-pagination button {
+    max-width: 100%;
+    color: inherit;
+    font: inherit;
+    background: #171c27;
+    border: 1px solid #826b51;
+    border-radius: 4px;
+    padding: 8px 12px;
+}
+
+.celestial-pagination { margin-top: 18px; }
+.celestial-pagination button:not(:disabled) { cursor: pointer; }
+.celestial-pagination button:disabled { opacity: .5; }
+.celestial-gallery h3 { font-size: 1.25rem; margin: 0 0 6px; }
+.atlas-hero .celestial-jump { margin-top: 12px; }
+.celestial-hierarchy { margin-bottom: 20px; }
+
+.celestial-detail {
+    --atlas-accent: #f2cf84;
+    --muted: #d1d1bb;
+    background: radial-gradient(ellipse at 68% 0, #18352a, transparent 50%), #081610;
+}
+
+.celestial-detail .atlas-crumb a { color: #f2cf84; }
+.celestial-detail .atlas-hero h1 { max-width: 24ch; }
+.celestial-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.6fr) minmax(235px, 1fr);
+    gap: clamp(18px, 3vw, 38px);
+    align-items: start;
+}
+
+.celestial-portrait {
+    margin: 0;
+    padding: clamp(5px, 1vw, 12px);
+    border: 1px solid #b69a60;
+    border-radius: 9px;
+    background: #050e0b;
+    box-shadow: 0 14px 46px #02060499;
+}
+
+.celestial-portrait img {
+    display: block;
+    width: 100%;
+    max-height: 78vh;
+    min-height: 180px;
+    object-fit: contain;
+    border-radius: 4px;
+}
+
+.celestial-facts {
+    background: linear-gradient(145deg, #162c20, #0c1d16);
+    border: 1px solid #8e7d53;
+    border-radius: 7px;
+    padding: clamp(16px, 3vw, 30px);
+}
+
+.celestial-facts h2 { margin-top: 0; color: #f2cf84; }
+.celestial-facts dl { margin: 0 0 24px; }
+.celestial-facts dl div { padding-block: 12px; border-bottom: 1px solid #8e7d5355; }
+.celestial-facts dt { font-size: .85rem; color: #c0c8b5; }
+.celestial-facts dd { margin: 6px 0 0; overflow-wrap: anywhere; }
+.celestial-back {
+    display: inline-block;
+    border: 1px solid #b69a60;
+    border-radius: 4px;
+    padding: 8px 12px;
+    text-decoration: none;
+}
+.celestial-back:hover { background: #2e3521; }
+
+@media (max-width: 980px) {
+    .celestial-layout { grid-template-columns: minmax(0, 1fr); }
+}

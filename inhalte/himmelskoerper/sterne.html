@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080b12">
+  <meta name="description" content="Sternenarchiv von Aporia: visuelle Vorlage und getrennte Infokarte zum Roten Zwerg.">
+  <title>Sterne – Aporia Himmelskörperarchiv</title>
+  <style>
+    :root{color-scheme:dark;--space:#080b12;--panel:#111925;--line:#293748;--ink:#f3f1eb;--muted:#a9b4c1;--copper:#ed8b55;--gold:#e7c28a;--serif:Georgia,'Times New Roman',serif;--sans:Inter,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif}
+    *{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 50% 0%,#172131 0,var(--space) 62%);color:var(--ink);font:16px/1.6 var(--sans)}a{color:inherit}.shell{width:min(1120px,90vw);margin:auto}.top{padding:28px 0;border-bottom:1px solid var(--line);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}.top a{text-decoration:none}.hero{padding:64px 0 54px}.eyebrow{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--copper);font-weight:700}.hero h1{font:clamp(48px,8vw,88px)/.98 var(--serif);letter-spacing:-.045em;margin:15px 0 12px}.lede{max-width:670px;color:#c4cbd3;font:20px/1.55 var(--serif);margin:0}.art-frame{margin:36px 0 0;border:1px solid #33404d;background:#02040a;overflow:hidden}.art-frame img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}.caption{padding:12px 16px;color:var(--muted);font-size:11px;border-top:1px solid #222e3d}.section-title{font:36px/1.1 var(--serif);margin:0 0 10px}.section-intro{color:var(--muted);margin:0 0 22px;max-width:670px}.info-card{background:linear-gradient(145deg,rgba(22,31,44,.98),rgba(13,20,30,.98));border:1px solid #394657;padding:clamp(24px,5vw,44px);margin:0 0 72px;box-shadow:0 24px 70px #0005}.info-head{display:flex;justify-content:space-between;gap:20px;align-items:start;border-bottom:1px solid var(--line);padding-bottom:20px;margin-bottom:22px}.info-head h3{font:clamp(28px,4vw,42px)/1.08 var(--serif);margin:7px 0 0}.badge{border:1px solid #875b46;color:#ffc091;padding:6px 10px;font-size:10px;letter-spacing:.12em;text-transform:uppercase;white-space:nowrap}.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin:0 0 24px}.fact{background:#111925;padding:17px}.fact dt{color:var(--muted);font-size:10px;letter-spacing:.13em;text-transform:uppercase}.fact dd{margin:6px 0 0;font:19px/1.3 var(--serif)}.info-copy{max-width:800px;color:#d0d6dd}.info-copy p{margin:0 0 14px}.note{border-left:2px solid var(--copper);padding:4px 0 4px 14px;color:#c0c8d1;font-size:13px}.source{border-top:1px solid var(--line);padding-top:16px;margin-top:22px;color:var(--muted);font-size:12px}.source a{color:#f1c994;text-underline-offset:3px}.footer{border-top:1px solid var(--line);padding:22px 0 34px;color:var(--muted);font-size:11px}
+    @media(max-width:680px){.hero{padding-top:44px}.facts{grid-template-columns:repeat(2,1fr)}.info-head{display:block}.badge{display:inline-block;margin-top:12px}.art-frame img{aspect-ratio:4/3;object-fit:cover}}
+  </style>
+</head>
+<body>
+  <header class="top"><div class="shell"><a href="../../Menüs/Hauptseite.html/Hauptseite.html" data-route="home">Hauptseite</a> · <a href="sterne/sterne.html" data-route="sterne">Zur Sternenübersicht</a> · <a href="himmelskoerper/himmelskoerper.html" data-route="himmelskoerper">Alle Himmelskörper</a></div></header>
+  <main class="shell">
+    <section class="hero" aria-labelledby="page-title">
+      <span class="eyebrow">Sterne · Einzelansicht 01</span>
+      <h1 id="page-title">Roter Zwerg</h1>
+      <p class="lede">Ein einzelner M-Stern als visuelle Vorlage. Das Sternbild bleibt frei von Beschriftungen; die Sachinformationen stehen separat darunter.</p>
+      <figure class="art-frame">
+        <img data-media-image="himmelskoerper.sterne.roterZwerg" src="../../assets/bilder/himmelskoerper/roter-zwerg.png" alt="Ein einzelner, orange-roter Zwergstern vor schwarzem Weltraum" fetchpriority="high">
+        <figcaption class="caption">Reines Sternbild ohne Beschriftungen oder weitere Himmelskörper.</figcaption>
+      </figure>
+    </section>
+
+    <section aria-labelledby="info-title">
+      <span class="eyebrow">Getrennte Infokarte</span>
+      <h2 class="section-title" id="info-title">Der Rote Zwerg im Überblick</h2>
+      <p class="section-intro">Rote Zwerge sind kleine, kühle Sterne der Hauptreihe. Ihre geringe Masse lässt sie ihren Wasserstoff besonders langsam verbrauchen.</p>
+      <article class="info-card" aria-label="Infokarte zum Roten Zwerg">
+        <div class="info-head"><div><span class="eyebrow">Sternenprofil · M-Typ</span><h3>Roter Zwerg</h3></div><span class="badge">Hauptreihenstern</span></div>
+        <dl class="facts">
+          <div class="fact"><dt>Sternklasse</dt><dd>M-Stern</dd></div>
+          <div class="fact"><dt>Größenordnung</dt><dd>Bruchteil der Sonne</dd></div>
+          <div class="fact"><dt>Farbeindruck</dt><dd>orange bis rot</dd></div>
+          <div class="fact"><dt>Vorkommen</dt><dd>rund ¾ der Milchstraßensterne</dd></div>
+          <div class="fact"><dt>Mögliche Lebensdauer</dt><dd>bis etwa 14 Billionen Jahre</dd></div>
+          <div class="fact"><dt>Planetenbahnen</dt><dd>habitable Zone nahe am Stern</dd></div>
+        </dl>
+        <div class="info-copy">
+          <p>Ein Roter Zwerg fusioniert Wasserstoff zu Helium und befindet sich damit auf der Hauptreihe. Er ist deutlich kleiner und kühler als die Sonne. Weil er seinen Wasserstoff sehr langsam verbraucht, können besonders massearme Rote Zwerge theoretisch viele Billionen Jahre leuchten.</p>
+          <p>Die mögliche Nähe eines Planeten zur habitablen Zone bedeutet nicht automatisch, dass dort Leben entstehen kann. Junge Rote Zwerge können starke Ausbrüche und intensive Strahlung erzeugen, die Atmosphären und Oberflächen eines nahen Planeten belasten.</p>
+          <p class="note"><strong>Größenhinweis:</strong> Rote Zwerge gehören zu den kleinsten Hauptreihensternen und besitzen nur einen Bruchteil der Sonnenmasse und -größe. Das Bild zeigt einen einzelnen Stern ohne Vergleichskörper; es ist daher keine maßstabsgetreue Größenvergleichsgrafik.</p>
+        </div>
+        <div class="source">Sachgrundlage: <a href="https://science.nasa.gov/universe/stars/types/" target="_blank" rel="noreferrer">NASA Science · Types of Stars</a> und <a href="https://science.nasa.gov/exoplanets/stars/" target="_blank" rel="noreferrer">NASA Science · Stars in an Exoplanet World</a>.</div>
+      </article>
+    </section>
+  </main>
+  <footer class="footer"><div class="shell">APORIA · KOSMISCHES ARCHIV · STERNE</div></footer>
+  <script type="module">
+    import { applyAporiaMedia } from "../../Menüs/adapter/aporia-media.js";
+    applyAporiaMedia();
+  </script>
+  <script type="module">
+    import { applyAporiaRoutes } from "../../Menüs/adapter/aporia-routes.js";
+    applyAporiaRoutes();
+  </script>
+</body>
+</html>

@@ -1,0 +1,197 @@
+body.cosmology-page {
+    --cosmology-bg: #091515;
+    --cosmology-paper: #f3e7d0;
+    --cosmology-gold: #dfb771;
+    --cosmology-border: #655439;
+    margin: 0;
+    background: var(--cosmology-bg);
+    color: var(--cosmology-paper);
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+.cosmology-frame {
+    display: flex;
+    min-height: calc(100vh - 72px);
+}
+
+.cosmology-main {
+    flex: 1;
+    min-width: 0;
+    container-type: inline-size;
+}
+
+.cosmology-hero {
+    position: relative;
+    isolation: isolate;
+    display: flex;
+    align-items: center;
+    min-height: clamp(150px, 14cqw, 205px);
+    overflow: hidden;
+}
+
+.cosmology-hero img,
+.cosmology-card img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cosmology-hero img {
+    z-index: -2;
+    object-position: right 45%;
+}
+
+.cosmology-hero::after {
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background:
+        linear-gradient(90deg, #091515 0%, #091515cc 34%, transparent 88%),
+        linear-gradient(0deg, #091515, transparent 50%);
+    content: "";
+}
+
+.cosmology-heading {
+    padding: 26px clamp(18px, 4cqw, 52px);
+}
+
+.cosmology-heading p {
+    margin: 0 0 8px;
+    color: var(--cosmology-gold);
+    font-size: .82rem;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+}
+
+.cosmology-heading h1 {
+    margin: 0;
+    font-size: clamp(2rem, 4.2cqw, 3.5rem);
+    font-weight: 400;
+    line-height: 1.08;
+}
+
+.cosmology-heading::after {
+    display: block;
+    width: 64px;
+    height: 2px;
+    margin-top: 20px;
+    background: var(--cosmology-gold);
+    content: "";
+}
+
+.cosmology-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+    padding: 0 clamp(12px, 2.2cqw, 32px) 30px;
+}
+
+.cosmology-card {
+    position: relative;
+    isolation: isolate;
+    display: flex;
+    align-items: flex-end;
+    min-height: 140px;
+    aspect-ratio: 2 / 1;
+    overflow: hidden;
+    border: 1px solid var(--cosmology-border);
+    border-radius: 5px;
+    background: #101d1e;
+    color: var(--cosmology-paper);
+    text-decoration: none;
+}
+
+.cosmology-card img {
+    z-index: -2;
+    object-position: center 42%;
+    transition: transform .25s ease;
+}
+
+.cosmology-card::before {
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background: linear-gradient(0deg, #091414 3%, #091414d9 18%, #0914144d 46%, transparent 72%);
+    content: "";
+}
+
+.cosmology-card span {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+    padding: 12px clamp(10px, 1.7cqw, 24px);
+    font-size: clamp(1rem, 2.05cqw, 1.75rem);
+    line-height: 1.15;
+}
+
+.cosmology-card span::after {
+    flex: 0 0 auto;
+    width: 8px;
+    height: 8px;
+    border: solid var(--cosmology-gold);
+    border-width: 0 2px 2px 0;
+    transform: rotate(-45deg);
+    content: "";
+}
+
+.cosmology-card:hover,
+.cosmology-card:focus-visible {
+    border-color: var(--cosmology-gold);
+}
+
+.cosmology-card:focus-visible,
+.cosmology-placeholder a:focus-visible {
+    outline: 2px solid var(--cosmology-gold);
+    outline-offset: 3px;
+}
+
+.cosmology-card:hover img {
+    transform: scale(1.035);
+}
+
+.cosmology-placeholder {
+    padding: 0 clamp(18px, 4cqw, 52px) 30px;
+}
+
+.cosmology-placeholder a {
+    color: var(--cosmology-gold);
+    text-underline-offset: .2em;
+}
+
+@container (max-width: 780px) {
+    .cosmology-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@container (max-width: 480px) {
+    .cosmology-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .cosmology-frame {
+        display: block;
+    }
+
+    .cosmology-frame #aporia-sidebar-host {
+        width: 100%;
+    }
+
+    .cosmology-frame .aporia-sidebar {
+        position: static;
+        max-height: 28vh;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .cosmology-card img {
+        transition: none;
+    }
+}
+

@@ -6,9 +6,12 @@
 
 /* 01 - ROUTENVERWALTUNG IMPORTIEREN */
 
+
 import {
-    applyAporiaRoutes
-} from "../Router/aporia-routes.js";
+    applyAporiaRoutes,
+    getAporiaRoute,
+    celestialCategories
+} from "../adapter/aporia-routes.js";
 
 
 /* 02 - NAVIGATION-PLATZHALTER */
@@ -232,12 +235,26 @@ async function loadAporiaTopbar() {
 
         /* 09 - ZENTRALE ROUTEN ANWENDEN */
 
-        applyAporiaRoutes(topbarHost);
+        const archiveLink = navigation.querySelector('[data-route="himmelskoerper"]');
+        if (archiveLink) addCelestialMenu(archiveLink);
+        applyAporiaRoutes(document);
+
+        topbarHost.querySelectorAll("a[aria-disabled='true']").forEach(link => {
+            link.title = `${link.getAttribute("aria-label") || link.textContent.trim()} – Seite noch nicht angelegt`;
+        });
+
+        topbarHost.querySelector("#aporia-search-input")?.addEventListener("keydown", event => {
+            if (event.key !== "Enter" || !event.currentTarget.value.trim()) return;
+            const speciesRoute = getAporiaRoute("spezies");
+            if (!speciesRoute) return;
+            window.location.assign(`${speciesRoute}?q=${encodeURIComponent(event.currentTarget.value.trim())}`);
+        });
 
 
         /* 10 - AKTUELLE SEITE MARKIEREN */
 
         const currentPage = document.body.dataset.page;
+        const currentSection = document.body.dataset.section;
 
         topbarHost.querySelectorAll(
             "[data-route]"
@@ -247,13 +264,13 @@ async function loadAporiaTopbar() {
 
             link.removeAttribute("aria-current");
 
-            if (link.dataset.route === currentPage) {
+            if (link.dataset.route === currentPage || link.dataset.route === currentSection) {
 
                 link.classList.add("is-active");
 
                 link.setAttribute(
                     "aria-current",
-                    "page"
+                    link.dataset.route === currentPage ? "page" : "location"
                 );
 
             }
@@ -313,3 +330,40 @@ async function loadAporiaTopbar() {
 /* 13 - INITIALISIERUNG */
 
 loadAporiaTopbar();
+
+
+function addCelestialMenu(archiveLink) {
+    const group = document.createElement("div");
+    group.className = "aporia-celestial-nav";
+    archiveLink.before(group);
+    group.append(archiveLink);
+
+    const disclosure = document.createElement("details");
+    disclosure.className = "aporia-celestial-disclosure";
+    const toggle = document.createElement("summary");
+    toggle.setAttribute("aria-label", "Himmelskörperkategorien");
+    toggle.title = "Himmelskörperkategorien";
+    toggle.textContent = "▾";
+    const list = document.createElement("ul");
+
+    for (const { route, label } of celestialCategories) {
+        const item = document.createElement("li");
+        const link = document.createElement("a");
+        link.dataset.route = route;
+        link.textContent = label;
+        item.append(link);
+        list.append(item);
+    }
+
+    disclosure.append(toggle, list);
+    group.append(disclosure);
+    document.addEventListener("click", event => {
+        if (disclosure.open && !group.contains(event.target)) disclosure.open = false;
+    });
+    group.addEventListener("keydown", event => {
+        if (event.key === "Escape" && disclosure.open) {
+            disclosure.open = false;
+            toggle.focus();
+        }
+    });
+}

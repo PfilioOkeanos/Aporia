@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#091411">
+  <meta name="description" content="Übersicht der fünf Hauptgruppen des Lebens im Aporia-Universum.">
+  <title>Speziesarchiv – Aporia Weltenarchiv</title>
+  <link rel="stylesheet" href="Spezies.css">
+  <link rel="stylesheet" href="../../../Menüs/TopBar/Top_bar.css">
+  <link rel="stylesheet" href="../../../Menüs/Side_bar/Side_bar.css">
+  <script type="module" src="Spezies.js"></script>
+</head>
+<body data-page="spezies" class="species-index-page">
+  <div id="aporia-topbar-mount" data-aporia-topbar></div>
+  <div class="aporia-page-frame species-frame">
+    <div id="aporia-sidebar-mount" data-aporia-sidebar></div>
+    <main class="species-main" id="inhalt">
+      <header class="species-heading">
+        <div class="species-heading-copy">
+          <span class="species-kicker"><i></i> APORIA · LEBENSFORMENARCHIV</span>
+          <h1>Spezies<span>archiv</span></h1>
+          <p>Fünf Hauptgruppen ordnen die Vielfalt des Lebens. Ihre Wellen berühren und überschneiden sich – denn eine Spezies kann mehreren Gruppen angehören.</p>
+        </div>
+        <a class="home-return" href="#" data-route="home" aria-label="Zur Aporia-Hauptseite"><span>⌂</span><small>ARCHIVSTART</small></a>
+      </header>
+
+      <section class="wave-map" aria-label="Fünf Hauptgruppen. Wähle eine Welle, um ihr Menü zu öffnen.">
+        <div class="wave-map-lines" aria-hidden="true"></div>
+        <button class="group-wave wave-biological" type="button" data-group="biological" aria-controls="group-menu" aria-expanded="false">
+          <img class="wave-art" alt="" aria-hidden="true">
+          <span class="wave-content"><span class="wave-range">01–20</span><span class="wave-title">Biologische<br>Spezies</span><span class="wave-symbol symbol-cell" aria-hidden="true"></span></span>
+        </button>
+        <button class="group-wave wave-mental" type="button" data-group="mental" aria-controls="group-menu" aria-expanded="false">
+          <img class="wave-art" alt="" aria-hidden="true">
+          <span class="wave-content"><span class="wave-range">21–30</span><span class="wave-title">Mentale<br>Spezies</span><span class="wave-symbol symbol-wave" aria-hidden="true"></span></span>
+        </button>
+        <button class="group-wave wave-cosmic" type="button" data-group="cosmic" aria-controls="group-menu" aria-expanded="false">
+          <img class="wave-art" alt="" aria-hidden="true">
+          <span class="wave-content"><span class="wave-range">31–40</span><span class="wave-title">Kosmische<br>Spezies</span><span class="wave-symbol symbol-orbit" aria-hidden="true"></span></span>
+        </button>
+        <button class="group-wave wave-technological" type="button" data-group="technological" aria-controls="group-menu" aria-expanded="false">
+          <img class="wave-art" alt="" aria-hidden="true">
+          <span class="wave-content"><span class="wave-range">41–50</span><span class="wave-title">Technologische<br>Lebensformen</span><span class="wave-symbol symbol-grid" aria-hidden="true"></span></span>
+        </button>
+        <button class="group-wave wave-gigantic" type="button" data-group="gigantic" aria-controls="group-menu" aria-expanded="false">
+          <img class="wave-art" alt="" aria-hidden="true">
+          <span class="wave-content"><span class="wave-range">51–59</span><span class="wave-title">Gigantische<br>Lebensformen</span><span class="wave-symbol symbol-scale" aria-hidden="true"></span></span>
+        </button>
+        <span class="map-core" aria-hidden="true"><i></i></span>
+      </section>
+
+      <section class="group-menu" id="group-menu" hidden aria-live="polite" aria-labelledby="group-menu-title">
+        <div class="menu-art-wrap"><img class="menu-art" alt=""><span class="menu-art-index">APORIA / SPEZIESARCHIV</span></div>
+        <div class="menu-copy">
+          <span class="menu-kicker" id="group-menu-range"></span>
+          <h2 id="group-menu-title"></h2>
+          <p id="group-menu-description"></p>
+          <div class="menu-links">
+            <span class="menu-status"><i></i> GRUPPENMENÜ · ÜBERSICHT</span>
+            <button type="button" class="menu-close" data-close-menu>Zurück zu den Hauptgruppen <b aria-hidden="true">↗</b></button>
+          </div>
+        </div>
+      </section>
+
+      <footer class="species-footer"><span>KLASSIFIKATION <b>·</b> 05 HAUPTGRUPPEN</span><span>APORIA / WELTENARCHIV</span></footer>
+    </main>
+  </div>
+</body>
+</html>

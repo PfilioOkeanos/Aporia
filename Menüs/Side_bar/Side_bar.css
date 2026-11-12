@@ -158,6 +158,11 @@
     color: var(--sidebar-gold-light);
 }
 
+.aporia-sidebar a[aria-disabled="true"] {
+    cursor: not-allowed;
+    opacity: 0.45;
+}
+
 
 /* 08 - ICONS */
 

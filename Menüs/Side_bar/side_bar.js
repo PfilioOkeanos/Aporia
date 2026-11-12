@@ -11,7 +11,7 @@
 
 import {
     applyAporiaRoutes
-} from "../Router/aporia-routes.js";
+} from "../adapter/aporia-routes.js";
 
 
 /* ============================================= */
