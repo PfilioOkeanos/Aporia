@@ -2,10 +2,12 @@
 body{
   --faction-accent:#d1b5ed;
   --faction-deep:#291a38;
-  --faction-glow:#a46fd238}
+  --faction-glow:#a46fd238
+}
 .faction-hero:after{
   border-style:dotted;
   transform:rotate(-24deg);
 }
 .faction-card{
-  background:linear-gradient(145deg,color-mix(in srgb,var(--faction-deep),#ffffff 9%),#111916)}
+  background:linear-gradient(145deg,color-mix(in srgb,var(--faction-deep),#ffffff 9%),#111916)
+}
