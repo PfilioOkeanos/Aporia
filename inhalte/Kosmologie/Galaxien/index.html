@@ -1,31 +1,82 @@
 <!doctype html>
 <html lang="de">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Galaxien | Aporia Weltenarchiv</title>
-  <link rel="stylesheet" href="../../../Menüs/TopBar/Top_bar.css">
-  <link rel="stylesheet" href="../../../Menüs/Side_bar/Side_bar.css">
-  <link rel="stylesheet" href="../Kosmische_übersicht/Kosmologie.css">
-  <script type="module" src="../Kosmische_übersicht/Kosmologie.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#090c16">
+    <title>Galaxien · Aporia Weltenarchiv</title>
+    <link rel="stylesheet" href="../../../Menüs/Side_bar/Side_bar.css?v=3">
+    <link rel="stylesheet" href="../../../Menüs/TopBar/Top_bar.css?v=5">
+    <link rel="stylesheet" href="./galaxien.css">
 </head>
-<body class="cosmology-page" data-page="kosmologie-galaxien">
-  <div data-aporia-topbar></div>
-  <div class="aporia-page-frame cosmology-frame">
-    <div data-aporia-sidebar></div>
-    <main class="cosmology-main" id="inhalt">
-      <header class="cosmology-hero">
-        <img data-media-image="kosmologie.kosmologie-galaxien" alt="">
-        <div class="cosmology-heading">
-          <p>Universum</p>
-          <h1>Galaxien</h1>
-        </div>
-      </header>
-      <div class="cosmology-placeholder">
-        <p>Diese Gruppenübersicht ist in Vorbereitung.</p>
-        <a data-route="kosmische-strukturen" href="../Kosmische_übersicht/Kosmologie.html">Zurück zur Übersicht</a>
-      </div>
-    </main>
-  </div>
+<body data-page="kosmologie-galaxien">
+    <div id="aporia-topbar-mount" data-aporia-topbar></div>
+    <div class="aporia-page-frame atlas-frame">
+        <div id="aporia-sidebar-mount" data-aporia-sidebar></div>
+        <main class="atlas-main">
+            <div class="atlas-shell">
+            <nav class="atlas-crumb" aria-label="Seitenpfad">
+                <a href="#" data-route="home">Weltenarchiv</a>
+                <span aria-hidden="true">›</span>
+                <a href="#" data-route="kosmische-strukturen">Kosmische Strukturen</a><span aria-hidden="true">›</span><a href="Übersichtsseite/index.html" data-route="kosmologie-galaxien">Galaxien</a><span aria-hidden="true">›</span><span aria-current="page">Bildarchiv</span>
+            </nav>
+            <header class="atlas-hero">
+                <h1>Galaxien</h1>
+                <p>Galaxien und ihre Formen im kosmischen Archiv.</p>
+            </header>
+            <div class="atlas-filters" role="group" aria-label="Einträge nach Typ filtern" hidden>
+                <button type="button" data-filter="all" aria-pressed="true">Alle</button>
+                <button type="button" data-filter="type-0" aria-pressed="false">Spiralgalaxie</button>
+                <button type="button" data-filter="type-1" aria-pressed="false">Elliptische Galaxie</button>
+                <button type="button" data-filter="type-2" aria-pressed="false">Irreguläre Galaxie</button>
+            </div>
+            <section class="atlas-grid" aria-label="Archiveinträge">
+                <article class="atlas-card" data-type="type-0">
+                    <div class="atlas-art"><img alt="" loading="lazy" data-media-image="himmelskoerper.archiv.galaxie"></div>
+                    <div class="atlas-card-body">
+                        <h2>Milchstraße</h2>
+                        <span class="atlas-type">Spiralgalaxie</span>
+                        <p>Die Heimatgalaxie der Menschen. Ihre Orion-Spur ist in der Universumskarte verzeichnet.</p>
+                        <a data-route="karte" href="#">Universumskarte öffnen →</a>
+                    </div>
+                </article>
+                <article class="atlas-card" data-type="type-1">
+                    <div class="atlas-art"><img alt="" loading="lazy" data-media-image="himmelskoerper.archiv.elliptisch"></div>
+                    <div class="atlas-card-body">
+                        <h2>Elliptische Galaxie</h2>
+                        <span class="atlas-type">Elliptische Galaxie</span>
+                        <p>Ein Sternsystem von glatter, rundlicher bis länglicher Gestalt.</p>
+
+                    </div>
+                </article>
+                <article class="atlas-card" data-type="type-2">
+                    <div class="atlas-art"><img alt="" loading="lazy" data-media-image="himmelskoerper.archiv.irregulaer"></div>
+                    <div class="atlas-card-body">
+                        <h2>Irreguläre Galaxie</h2>
+                        <span class="atlas-type">Irreguläre Galaxie</span>
+                        <p>Eine Galaxie ohne ausgeprägte Spiralstruktur oder elliptische Gestalt.</p>
+
+                    </div>
+                </article>
+            </section>
+            <section id="bildarchiv" class="celestial-gallery" data-celestial-gallery aria-labelledby="bildarchiv-title">
+                <h2 id="bildarchiv-title">Bildarchiv</h2>
+                <div class="celestial-controls">
+                    <label>Bildtitel suchen<input type="search" disabled></label>
+                    <label hidden>Bildgruppe<select disabled><option value="">Alle Gruppen</option></select></label>
+                </div>
+                <p role="status">Bildarchiv wird geladen …</p>
+                <div class="atlas-grid"></div>
+                <div class="celestial-pagination" hidden>
+                    <button type="button" data-previous>← Vorherige Bilder</button>
+                    <button type="button" data-next>Weitere Bilder →</button>
+                </div>
+            </section>
+            </div>
+        </main>
+    </div>
+    <script type="module" src="../../../Menüs/Side_bar/side_bar.js?v=3"></script>
+    <script type="module" src="../../../Menüs/TopBar/Top_bar.js?v=6"></script>
+    <script type="module" src="./galaxien.js"></script>
 </body>
 </html>

@@ -25,6 +25,8 @@ body.cosmology-page {
     isolation: isolate;
     display: flex;
     align-items: center;
+    justify-content: center;
+    text-align: center;
     min-height: clamp(150px, 14cqw, 205px);
     overflow: hidden;
 }
@@ -40,7 +42,7 @@ body.cosmology-page {
 
 .cosmology-hero img {
     z-index: -2;
-    object-position: right 45%;
+    object-position: center;
 }
 
 .cosmology-hero::after {
@@ -48,8 +50,8 @@ body.cosmology-page {
     z-index: -1;
     inset: 0;
     background:
-        linear-gradient(90deg, #091515 0%, #091515cc 34%, transparent 88%),
-        linear-gradient(0deg, #091515, transparent 50%);
+        linear-gradient(0deg, #091515, transparent 60%),
+        radial-gradient(ellipse at center, #091515a6, transparent 80%);
     content: "";
 }
 
@@ -77,6 +79,7 @@ body.cosmology-page {
     width: 64px;
     height: 2px;
     margin-top: 20px;
+    margin-inline: auto;
     background: var(--cosmology-gold);
     content: "";
 }
@@ -195,3 +198,63 @@ body.cosmology-page {
     }
 }
 
+
+.cosmology-topic {
+    --line: var(--cosmology-border);
+    margin-inline: auto;
+    max-width: 1150px;
+    padding: 12px clamp(18px, 4cqw, 52px) 42px;
+}
+
+.cosmology-topic > p {
+    max-width: 68ch;
+    margin: 22px 0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.cosmology-topic a {
+    color: var(--cosmology-topic-accent, var(--cosmology-gold));
+    text-underline-offset: .2em;
+}
+
+.cosmology-topic-gallery .atlas-art small {
+    color: #ddd0bf;
+    letter-spacing: .05em;
+}
+
+.cosmology-topic-gallery.atlas-main {
+    --atlas-accent: var(--cosmology-topic-accent, var(--cosmology-gold));
+    padding: 0;
+    margin-block: 24px 32px;
+    background: transparent;
+}
+
+.cosmology-topic-gallery .celestial-controls,
+.cosmology-topic-gallery .celestial-pagination {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.cosmology-topic-gallery .celestial-pagination {
+    margin-top: 20px;
+}
+
+.cosmology-topic-gallery [hidden] {
+    display: none;
+}
+
+.cosmology-topic-gallery label {
+    display: grid;
+    gap: 5px;
+}
+
+.cosmology-topic-gallery :is(input, select, button) {
+    padding: 7px 10px;
+    border: 1px solid var(--cosmology-border);
+    border-radius: 4px;
+    background: #101d1e;
+    color: inherit;
+    font: inherit;
+}

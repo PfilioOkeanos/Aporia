@@ -73,7 +73,9 @@ async function loadAporiaTopbar() {
         }
 
 
-        /* 05 - VIER HAUPTNAVIGATIONSPUNKTE */
+        initializeSidebarToggle();
+
+        /* 05 - HAUPTNAVIGATIONSPUNKTE */
 
         const requiredNavItems = [
 
@@ -107,6 +109,18 @@ async function loadAporiaTopbar() {
                 icon:
                     '<path d="M20 4 C10 4 5 8 5 14 C5 18 8 20 11 20 C17 20 20 13 20 4 Z"/>' +
                     '<path d="M3 22 C7 16 12 11 18 7"/>'
+            },
+
+            {
+                route: "rohstoffe",
+                label: "Rohstoffe",
+                icon: '<path d="M3 9 L8 4 H16 L21 9 L12 21 Z M3 9 H21 M8 4 L12 21 L16 4"/>'
+            },
+
+            {
+                route: "kosmische-strukturen",
+                label: "Kosmische Strukturen",
+                icon: '<circle cx="12" cy="12" r="2"/><circle cx="4" cy="7" r="1.5"/><circle cx="20" cy="5" r="1.5"/><circle cx="18" cy="19" r="1.5"/><path d="M5.5 8 L10.3 11 M13.5 10.6 L18.8 6 M13.3 13.5 L17 18"/>'
             }
 
         ];
@@ -235,8 +249,44 @@ async function loadAporiaTopbar() {
 
         /* 09 - ZENTRALE ROUTEN ANWENDEN */
 
-        const archiveLink = navigation.querySelector('[data-route="himmelskoerper"]');
-        if (archiveLink) addCelestialMenu(archiveLink);
+        const submenus = {
+            himmelskoerper: celestialCategories,
+            "kosmische-strukturen": [
+                { route: "cosmic-webs", label: "Cosmic Webs (3)" },
+                { route: "filamente", label: "Filamente" },
+                { route: "supergalaxien", label: "Supergalaxien" },
+                { route: "galaxienhaufen", label: "Galaxienhaufen" },
+                { route: "galaxiengruppen", label: "Galaxiengruppen" },
+                { route: "kosmologie-galaxien", label: "Galaxien" },
+                { route: "galaktische-strukturen", label: "Galaktische Strukturen" },
+                { route: "sektoren", label: "Sektoren" },
+                { route: "kosmologie-sternsysteme", label: "Sternsysteme" },
+                { route: "kosmologie-asteroidenguertel", label: "Asteroidengürtel" }
+            ],
+            fraktionen: [
+                { route: "konfoederation", label: "Konföderation" },
+                { route: "konsortium", label: "Das Konsortium" },
+                { route: "protektorat", label: "Das Protektorat" },
+                { route: "fraktionen", fragment: "synaptorat", label: "Synaptorat" },
+                { route: "fraktionen", fragment: "aetherwanderer", label: "Ätherwanderer" }
+            ],
+            spezies: [
+                { route: "spezies", fragment: "biological", label: "Biologische Spezies" },
+                { route: "spezies", fragment: "mental", label: "Mentale Spezies" },
+                { route: "spezies", fragment: "cosmic", label: "Kosmische Spezies" },
+                { route: "spezies", fragment: "technological", label: "Technologische Lebensformen" },
+                { route: "spezies", fragment: "gigantic", label: "Gigantische Lebensformen" }
+            ],
+            rohstoffe: [
+                { route: "rohstoffe", fragment: "elemente", label: "Chemische Elemente" },
+                { route: "rohstoffe", fragment: "raumfahrt", label: "Raumfahrt-Werkstoffe" }
+            ]
+        };
+
+        for (const [route, items] of Object.entries(submenus)) {
+            const parent = navigation.querySelector(`[data-route="${route}"]`);
+            if (parent) addCategoryMenu(parent, items);
+        }
         applyAporiaRoutes(document);
 
         topbarHost.querySelectorAll("a[aria-disabled='true']").forEach(link => {
@@ -264,7 +314,7 @@ async function loadAporiaTopbar() {
 
             link.removeAttribute("aria-current");
 
-            if (link.dataset.route === currentPage || link.dataset.route === currentSection) {
+            if (!link.dataset.routeFragment && (link.dataset.route === currentPage || link.dataset.route === currentSection)) {
 
                 link.classList.add("is-active");
 
@@ -332,24 +382,61 @@ async function loadAporiaTopbar() {
 loadAporiaTopbar();
 
 
-function addCelestialMenu(archiveLink) {
+function initializeSidebarToggle() {
+    const button = topbarHost.querySelector("[data-sidebar-visibility]");
+    const sidebar = document.querySelector("[data-aporia-sidebar]");
+    if (!button || !sidebar) return;
+
+    const preference = "aporia.sidebar.collapsed";
+    sidebar.id = "aporia-sidebar-host";
+    function setExpanded(expanded) {
+        sidebar.hidden = !expanded;
+        button.setAttribute("aria-expanded", String(expanded));
+        const label = expanded ? "Seitenleiste einklappen" : "Seitenleiste ausklappen";
+        button.setAttribute("aria-label", label);
+        button.title = label;
+    }
+
+    let expanded = true;
+    try {
+        expanded = window.localStorage.getItem(preference) !== "true";
+    } catch {
+        // Der Schalter bleibt auch ohne Zugriff auf den Browserspeicher nutzbar.
+    }
+    setExpanded(expanded);
+    button.hidden = false;
+
+    button.addEventListener("click", () => {
+        const expanded = sidebar.hidden;
+        setExpanded(expanded);
+        try {
+            window.localStorage.setItem(preference, String(!expanded));
+        } catch {
+            // Die aktuelle Ansicht ist bereits aktualisiert.
+        }
+    });
+}
+
+function addCategoryMenu(parent, items) {
     const group = document.createElement("div");
     group.className = "aporia-celestial-nav";
-    archiveLink.before(group);
-    group.append(archiveLink);
+    parent.before(group);
+    group.append(parent);
 
     const disclosure = document.createElement("details");
     disclosure.className = "aporia-celestial-disclosure";
     const toggle = document.createElement("summary");
-    toggle.setAttribute("aria-label", "Himmelskörperkategorien");
-    toggle.title = "Himmelskörperkategorien";
+    const label = parent.getAttribute("aria-label") || parent.textContent.trim();
+    toggle.setAttribute("aria-label", label + " – Untermenü");
+    toggle.title = label + " – Untermenü";
     toggle.textContent = "▾";
     const list = document.createElement("ul");
 
-    for (const { route, label } of celestialCategories) {
+    for (const { route, label, fragment } of items) {
         const item = document.createElement("li");
         const link = document.createElement("a");
         link.dataset.route = route;
+        if (fragment) link.dataset.routeFragment = fragment;
         link.textContent = label;
         item.append(link);
         list.append(item);
@@ -357,6 +444,9 @@ function addCelestialMenu(archiveLink) {
 
     disclosure.append(toggle, list);
     group.append(disclosure);
+    list.addEventListener("click", event => {
+        if (event.target.closest("a[href]")) disclosure.open = false;
+    });
     document.addEventListener("click", event => {
         if (disclosure.open && !group.contains(event.target)) disclosure.open = false;
     });

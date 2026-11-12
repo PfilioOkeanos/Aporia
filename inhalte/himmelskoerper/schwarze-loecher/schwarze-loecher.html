@@ -32,8 +32,8 @@
                 <a href="#" data-route="sternensysteme">Sternensysteme</a>
                 <a href="#" data-route="zwergplaneten">Zwergplaneten</a>
                 <a href="#" data-route="asteroiden">Asteroiden</a>
+                <a href="#" data-route="kometen">Kometen</a>
                 <a href="#" data-route="nebel">Nebel</a>
-                <a href="#" data-route="galaxien">Galaxien</a>
                 <a href="#" data-route="phaenomene">Phänomene</a>
             </nav>
             <div class="atlas-filters" role="group" aria-label="Einträge nach Typ filtern" hidden>
@@ -97,6 +97,19 @@
                         
                     </div>
                 </article>
+            </section>
+            <section id="bildarchiv" class="celestial-gallery" data-celestial-gallery aria-labelledby="bildarchiv-title">
+                <h2 id="bildarchiv-title">Bildarchiv</h2>
+                <div class="celestial-controls">
+                    <label>Bildtitel suchen<input type="search" disabled></label>
+                    <label hidden>Bildgruppe<select disabled><option value="">Alle Gruppen</option></select></label>
+                </div>
+                <p role="status">Bildarchiv wird geladen …</p>
+                <div class="atlas-grid"></div>
+                <div class="celestial-pagination" hidden>
+                    <button type="button" data-previous>← Vorherige Bilder</button>
+                    <button type="button" data-next>Weitere Bilder →</button>
+                </div>
             </section>
             </div>
         </main>

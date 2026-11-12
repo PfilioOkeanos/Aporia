@@ -7,11 +7,13 @@ function createCard(entry, category) {
     const card = document.createElement("article");
     card.className = "atlas-card";
 
-    const art = document.createElement("div");
+    const art = document.createElement("a");
     art.className = "atlas-art";
+    art.href = getCelestialDetailUrl(category, entry.slug);
+    art.setAttribute("aria-label", "Detailseite öffnen: " + entry.title);
     const image = document.createElement("img");
     image.dataset.mediaImage = entry.preview;
-    image.alt = "";
+    image.alt = entry.title;
     image.loading = "lazy";
     image.decoding = "async";
     art.append(image);
@@ -34,7 +36,8 @@ function createCard(entry, category) {
 
 export async function initializeCelestialGallery() {
     const section = document.querySelector("[data-celestial-gallery]");
-    const category = document.body.dataset.page;
+    if (!section) return;
+    const category = section.dataset.celestialGallery || document.body.dataset.page;
     const search = section.querySelector("input");
     const select = section.querySelector("select");
     const status = section.querySelector("[role=status]");
@@ -46,6 +49,8 @@ export async function initializeCelestialGallery() {
     let entries;
     try {
         entries = await loadCelestialCatalog(category);
+        const group = section.dataset.celestialGroup;
+        if (group) entries = entries.filter(entry => entry.group === group);
     } catch {
         status.textContent = "Das Bildarchiv konnte nicht geladen werden.";
         return;

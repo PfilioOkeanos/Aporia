@@ -82,6 +82,40 @@
 /* 04 - LOGO / STARTSEITE                        */
 /* ============================================= */
 
+.aporia-topbar-start {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 0;
+}
+
+.aporia-sidebar-toggle-button {
+    display: grid;
+    place-items: center;
+    flex: 0 0 32px;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    border: 1px solid var(--aporia-line);
+    border-radius: 5px;
+    background: transparent;
+    color: var(--aporia-gold-light);
+    cursor: pointer;
+}
+
+.aporia-sidebar-toggle-button[hidden] { display: none; }
+.aporia-sidebar-toggle-button:hover,
+.aporia-sidebar-toggle-button:focus-visible {
+    border-color: currentColor;
+}
+
+.aporia-sidebar-toggle-button svg {
+    width: 18px;
+    height: 18px;
+    stroke: currentColor;
+    stroke-width: 1.6;
+}
+
 .aporia-brand {
 
     display: flex;
@@ -547,7 +581,7 @@
 /* 11 - TABLET UND MOBIL                         */
 /* ============================================= */
 
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
 
     .aporia-topbar {
 
@@ -566,7 +600,7 @@
 
     /* LOGO OBEN LINKS */
 
-    .aporia-brand {
+    .aporia-topbar-start {
 
         grid-column: 1;
 
@@ -602,7 +636,7 @@
 
         display: grid !important;
 
-        grid-template-columns: repeat(4, minmax(0, 1fr));
+        grid-template-columns: repeat(6, minmax(0, 1fr));
 
         justify-content: stretch;
 
@@ -680,7 +714,7 @@
     }
 
 
-    /* Zwei Reihen halten alle vier Symbole und Namen lesbar. */
+    /* Zwei Spalten halten die Symbole und Namen lesbar. */
 
     .aporia-main-nav {
 
@@ -785,3 +819,15 @@
 .aporia-celestial-disclosure a:hover,
 .aporia-celestial-disclosure a[aria-current] { background: #273a33; color: #f0d9a4; }
 .aporia-celestial-disclosure :focus-visible { outline: 2px solid #f0d9a4; outline-offset: -2px; }
+
+@media (481px <= width <= 1100px) {
+    .aporia-celestial-nav:nth-child(-n + 3) ul {
+        inset-inline: 0 auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .aporia-celestial-nav:nth-child(odd) ul {
+        inset-inline: 0 auto;
+    }
+}
