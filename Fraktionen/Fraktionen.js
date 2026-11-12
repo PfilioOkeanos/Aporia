@@ -1,5 +1,43 @@
 import { applyAporiaRoutes } from "../Menüs/Router/aporia-routes.js";
-const cards=[{name:"Konföderation",route:"konfoederation",summary:"Eine demokratische, flach organisierte Gemeinschaft, in der Menschen die Konföderation begründeten und planetare Wesen an gemeinsamem Recht und Entscheidungen beteiligt werden."},{name:"Konsortium",route:"konsortium",summary:"Eine einzelne Herrscherfigur bündelt politische und wirtschaftliche Macht. Ressourcen, Verträge, Abhängigkeiten und notfalls Zwang sichern den Einfluss."},{name:"Protektorat",route:"protektorat",summary:"Ein Schutzraum für Ausgestoßene und unabhängige Individuen. Gildenpunkte eröffnen Befugnisse; Ruf steht für die gewachsene Reputation."},{name:"Synaptorat",route:"synaptorat",summary:"Ein zentraler synaptischer Kern trifft die übergeordneten Entscheidungen. Mitglieder denken eigenständig, handeln jedoch innerhalb zugewiesener Aufgaben."},{name:"Ätherwanderer",route:"aetherwanderer",summary:"Die Ätherwanderer sind keine Großmacht. Jede Entität bleibt eigenständig und steht außerhalb der Fraktionsstrukturen; ihre Überlieferung reicht zwischen Leben, Tod, Traum und Dimensionen."}];
-const host=document.getElementById("faction-cards");
-host.innerHTML=cards.map(item=>`<article class="faction-overview-card"><span class="faction-label">FRAKTIONSPROFIL</span><h2>${item.name}</h2><p>${item.summary}</p><a class="faction-card-link" href="#" data-route="${item.route}">Profil öffnen →</a></article>`).join("");
+
+const profiles = [
+  {
+    name: "Konföderation",
+    route: "konfoederation",
+    summary: "Demokratisches Bündnis mit gemeinsamer Mitbestimmung und gemeinsamem Recht."
+  },
+  {
+    name: "Konsortium",
+    route: "konsortium",
+    summary: "Zentralherrschaft, die Einfluss durch Ressourcen, Verträge und wirtschaftliche Macht bündelt."
+  },
+  {
+    name: "Protektorat",
+    route: "protektorat",
+    summary: "Gildenbasierter Schutzraum mit Befugnissen, Gildenpunkten und Ruf."
+  },
+  {
+    name: "Synaptorat",
+    route: "synaptorat",
+    summary: "Kollektivnetzwerk mit zentralem synaptischem Kern und eigenständig denkenden Mitgliedern."
+  },
+  {
+    name: "Ätherwanderer",
+    route: "aetherwanderer",
+    summary: "Unabhängige Einzelne außerhalb der Großmächte, verbunden mit den Übergängen zwischen Welten."
+  }
+];
+
+const host = document.getElementById("faction-cards");
+host.innerHTML = profiles.map(profile => `
+  <article class="faction-overview-card">
+    <span class="faction-label">FRAKTIONSPROFIL</span>
+    <h2>${profile.name}</h2>
+    <p>${profile.summary}</p>
+    <a class="faction-card-link" href="#" data-route="${profile.route}">
+      Profil öffnen →
+    </a>
+  </article>
+`).join("");
+
 applyAporiaRoutes(document);

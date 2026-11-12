@@ -1,3 +1,9 @@
 @import url("../Fraktionen.css");
-body{--faction-accent:#a9d7c4;--faction-deep:#16362d;--faction-glow:#5bb19126}
-.faction-hero:after{}.faction-card{background:linear-gradient(145deg,color-mix(in srgb,var(--faction-deep),#ffffff 9%),#111916)}
+body{
+  --faction-accent:#a9d7c4;
+  --faction-deep:#16362d;
+  --faction-glow:#5bb19126}
+  .faction-hero:after{
+  }
+  .faction-card{
+    background:linear-gradient(145deg,color-mix(in srgb,var(--faction-deep),#ffffff 9%),#111916)}

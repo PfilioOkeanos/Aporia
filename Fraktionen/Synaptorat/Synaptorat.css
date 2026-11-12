@@ -1,3 +1,11 @@
 @import url("../Fraktionen.css");
-body{--faction-accent:#b6b4ff;--faction-deep:#201d45;--faction-glow:#7b79ed35}
-.faction-hero:after{border-style:dashed;box-shadow:0 0 0 24px #b6b4ff10,0 0 0 60px #b6b4ff08,inset 0 0 42px var(--faction-glow);}.faction-card{background:linear-gradient(145deg,color-mix(in srgb,var(--faction-deep),#ffffff 9%),#111916)}
+body{
+  --faction-accent:#b6b4ff;
+  --faction-deep:#201d45;
+  --faction-glow:#7b79ed35}
+  .faction-hero:after{
+    border-style:dashed;
+    box-shadow:0 0 0 24px #b6b4ff10,0 0 0 60px #b6b4ff08,inset 0 0 42px var(--faction-glow);
+  }
+  .faction-card{
+    background:linear-gradient(145deg,color-mix(in srgb,var(--faction-deep),#ffffff 9%),#111916)}

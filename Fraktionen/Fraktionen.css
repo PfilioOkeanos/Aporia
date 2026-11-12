@@ -1,1 +1,164 @@
-:root{--faction-accent:#c7ad69;--faction-deep:#101a16;--faction-glow:#c7ad6920}.aporia-page-frame{display:grid;grid-template-columns:var(--sidebar-width,260px) minmax(0,1fr);min-height:calc(100vh - 78px)}.faction-main{min-width:0;padding:42px clamp(20px,4vw,62px) 70px;background:radial-gradient(ellipse at 70% 3%,var(--faction-glow),transparent 38%),#101915;color:#e9e8dc;font-family:Georgia,'Times New Roman',serif}.faction-hero{position:relative;isolation:isolate;overflow:hidden;min-height:350px;padding:clamp(27px,5vw,58px);display:flex;align-items:end;border:1px solid color-mix(in srgb,var(--faction-accent),transparent 52%);background:linear-gradient(120deg,var(--faction-deep),#14231f);box-shadow:0 22px 55px #0004}.faction-hero:after{content:'';position:absolute;z-index:-1;right:7%;top:8%;width:280px;height:280px;border:1px solid color-mix(in srgb,var(--faction-accent),transparent 35%);border-radius:50%;box-shadow:0 0 0 24px #fff1,0 0 0 60px #fff1,0 0 70px var(--faction-glow)}.faction-kicker,.faction-label{color:var(--faction-accent);font:700 10px Arial,sans-serif;letter-spacing:.2em;text-transform:uppercase}.faction-hero h1{font:600 clamp(38px,6vw,70px)/1.04 Georgia,serif;margin:14px 0}.faction-hero p{max-width:690px;color:#d0d5ca;font:15px/1.8 Arial,sans-serif}.faction-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}.faction-back,.faction-card-link{display:inline-flex;align-items:center;gap:9px;padding:10px 14px;border:1px solid color-mix(in srgb,var(--faction-accent),transparent 45%);color:#eee9d9;text-decoration:none;font:12px Arial,sans-serif;letter-spacing:.05em;background:#0002}.faction-back:hover,.faction-card-link:hover{background:var(--faction-glow)}.faction-intro{display:grid;grid-template-columns:1.25fr .75fr;gap:28px;margin:32px 0}.faction-intro h2,.faction-section h2{font:500 27px Georgia,serif;margin:9px 0 12px}.faction-intro p,.faction-card p,.faction-note{font:14px/1.8 Arial,sans-serif;color:#aeb8ad;margin:0}.faction-quote{border-left:1px solid var(--faction-accent);padding:10px 0 10px 20px;color:#e3dcc7;font:italic 17px/1.6 Georgia,serif}.faction-quote small{display:block;margin-top:10px;color:#929c91;font:10px Arial,sans-serif;letter-spacing:.13em;text-transform:uppercase}.faction-section{margin:34px 0}.faction-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}.faction-card{padding:20px;border:1px solid #34443a;background:linear-gradient(145deg,#1b2922,#111a16);min-height:150px}.faction-card h3{font:500 18px Georgia,serif;margin:0 0 10px}.faction-card .faction-label{display:block;margin-bottom:13px}.faction-note{margin-top:22px;padding:15px 18px;border-left:2px solid var(--faction-accent);background:#ffffff08}.faction-overview{max-width:1120px;margin:0 auto}.faction-overview-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:24px}.faction-overview-card{padding:22px;border:1px solid color-mix(in srgb,var(--faction-accent),#34443a 65%);background:linear-gradient(145deg,#1b2922,#111a16)}.faction-overview-card h2{font:500 24px Georgia,serif;margin:0 0 10px}.faction-overview-card p{font:13px/1.7 Arial,sans-serif;color:#aeb8ad;margin:0 0 16px}.faction-footer{display:flex;justify-content:space-between;gap:12px;border-top:1px solid #34443a;margin-top:34px;padding-top:16px;color:#778478;font:10px Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase}@media(max-width:850px){.faction-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.faction-intro{grid-template-columns:1fr}}@media(max-width:600px){.aporia-page-frame{grid-template-columns:minmax(0,210px) minmax(0,1fr)}.faction-main{padding:22px 14px 45px}.faction-hero{min-height:330px;padding:24px}.faction-hero:after{right:-95px;opacity:.65}.faction-grid,.faction-overview-grid{grid-template-columns:1fr}.faction-footer{flex-direction:column}}
+:root{
+  --faction-accent:#c7ad69;
+  --faction-deep:#101a16;
+  --faction-glow:#c7ad6920}
+  .aporia-page-frame{
+    display:grid;
+    grid-template-columns:var(--sidebar-width,260px) minmax(0,1fr);
+    min-height:calc(100vh - 78px)}
+    .faction-main{
+      min-width:0;
+      padding:42px clamp(20px,4vw,62px) 70px;
+      background:radial-gradient(ellipse at 70% 3%,var(--faction-glow),transparent 38%),#101915;
+      color:#e9e8dc;
+      font-family:Georgia,'Times New Roman',serif}
+      .faction-hero{
+        position:relative;
+        isolation:isolate;
+        overflow:hidden;
+        min-height:350px;
+        padding:clamp(27px,5vw,58px);
+        display:flex;
+        align-items:end;
+        border:1px solid color-mix(in srgb,var(--faction-accent),transparent 52%);
+        background:linear-gradient(120deg,var(--faction-deep),#14231f);
+        box-shadow:0 22px 55px #0004}
+        .faction-hero:after{
+          content:'';
+          position:absolute;
+          z-index:-1;
+          right:7%;
+          top:8%;
+          width:280px;
+          height:280px;
+          border:1px solid color-mix(in srgb,var(--faction-accent),transparent 35%);
+          border-radius:50%;
+          box-shadow:0 0 0 24px #fff1,0 0 0 60px #fff1,0 0 70px var(--faction-glow)}
+          .faction-kicker,.faction-label{
+            color:var(--faction-accent);
+            font:700 10px Arial,sans-serif;
+            letter-spacing:.2em;
+            text-transform:uppercase}
+            .faction-hero h1{
+              font:600 clamp(38px,6vw,70px)/1.04 Georgia,serif;
+              margin:14px 0}
+              .faction-hero p{
+                max-width:690px;
+                color:#d0d5ca;
+                font:15px/1.8 Arial,sans-serif}
+                .faction-actions{
+                  display:flex;
+                  gap:12px;
+                  flex-wrap:wrap;
+                  margin-top:24px}
+                  .faction-back,.faction-card-link{
+                    display:inline-flex;
+                    align-items:center;
+                    gap:9px;
+                    padding:10px 14px;
+                    border:1px solid color-mix(in srgb,var(--faction-accent),transparent 45%);
+                    color:#eee9d9;
+                    text-decoration:none;
+                    font:12px Arial,sans-serif;
+                    letter-spacing:.05em;
+                    background:#0002}
+                    .faction-back:hover,.faction-card-link:hover{
+                      background:var(--faction-glow)}
+                      .faction-intro{
+                        display:grid;
+                        grid-template-columns:1.25fr .75fr;
+                        gap:28px;
+                        margin:32px 0}
+                        .faction-intro h2,.faction-section h2{
+                          font:500 27px Georgia,serif;
+                          margin:9px 0 12px}
+                          .faction-intro p,.faction-card p,.faction-note{
+                            font:14px/1.8 Arial,sans-serif;
+                            color:#aeb8ad;
+                            margin:0}
+                            .faction-quote{
+                              border-left:1px solid var(--faction-accent);
+                              padding:10px 0 10px 20px;
+                              color:#e3dcc7;
+                              font:italic 17px/1.6 Georgia,serif}
+                              .faction-quote small{
+                                display:block;
+                                margin-top:10px;
+                                color:#929c91;
+                                font:10px Arial,sans-serif;
+                                letter-spacing:.13em;
+                                text-transform:uppercase}
+                                .faction-section{
+                                  margin:34px 0}
+                                  .faction-grid{
+                                    display:grid;
+                                    grid-template-columns:repeat(3,minmax(0,1fr));
+                                    gap:13px}
+                                    .faction-card{
+                                      padding:20px;
+                                      border:1px solid #34443a;
+                                      background:linear-gradient(145deg,#1b2922,#111a16);
+                                      min-height:150px}
+                                      .faction-card h3{
+                                        font:500 18px Georgia,serif;
+                                        margin:0 0 10px}
+                                        .faction-card .faction-label{
+                                          display:block;
+                                          margin-bottom:13px}
+                                          .faction-note{
+                                            margin-top:22px;
+                                            padding:15px 18px;
+                                            border-left:2px solid var(--faction-accent);
+                                            background:#ffffff08}
+                                            .faction-overview{
+                                              max-width:1120px;
+                                              margin:0 auto}
+                                              .faction-overview-grid{
+                                                display:grid;
+                                                grid-template-columns:repeat(2,minmax(0,1fr));
+                                                gap:14px;
+                                                margin-top:24px}
+                                                .faction-overview-card{
+                                                  padding:22px;
+                                                  border:1px solid color-mix(in srgb,var(--faction-accent),#34443a 65%);
+                                                  background:linear-gradient(145deg,#1b2922,#111a16)}
+                                                  .faction-overview-card h2{
+                                                    font:500 24px Georgia,serif;
+                                                    margin:0 0 10px}
+                                                    .faction-overview-card p{
+                                                      font:13px/1.7 Arial,sans-serif;
+                                                      color:#aeb8ad;
+                                                      margin:0 0 16px}
+                                                      .faction-footer{
+                                                        display:flex;
+                                                        justify-content:space-between;
+                                                        gap:12px;
+                                                        border-top:1px solid #34443a;
+                                                        margin-top:34px;
+                                                        padding-top:16px;
+                                                        color:#778478;
+                                                        font:10px Arial,sans-serif;
+                                                        letter-spacing:.12em;
+                                                        text-transform:uppercase}
+                                                        @media(max-width:850px){
+                                                          .faction-grid{
+                                                            grid-template-columns:repeat(2,minmax(0,1fr))}
+                                                            .faction-intro{
+                                                              grid-template-columns:1fr}
+                                                            }
+                                                            @media(max-width:600px){
+                                                              .aporia-page-frame{
+                                                                grid-template-columns:minmax(0,210px) minmax(0,1fr)}
+                                                                .faction-main{
+                                                                  padding:22px 14px 45px}
+                                                                  .faction-hero{
+                                                                    min-height:330px;
+                                                                    padding:24px}
+                                                                    .faction-hero:after{
+                                                                      right:-95px;
+                                                                      opacity:.65}
+                                                                      .faction-grid,.faction-overview-grid{
+                                                                        grid-template-columns:1fr}
+                                                                        .faction-footer{
+                                                                          flex-direction:column}
+                                                                        }
