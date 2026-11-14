@@ -26,8 +26,15 @@
     footer { padding:30px 0 48px; color:var(--muted); font-size:14px; }
     @media(max-width:520px) { body {font-size:16px} article {padding:18px} }
   </style>
+  <link rel="stylesheet" href="../../Menüs/Side_bar/Side_bar.css">
+  <link rel="stylesheet" href="../../Menüs/TopBar/Top_bar.css">
+  <link rel="stylesheet" href="./_gemeinsam/celestial-detail.css">
+  <style>
+    .standalone-dossier-frame { display: flex; }
+    .standalone-dossier-frame > div:last-child { flex: 1; min-width: 0; }
+  </style>
 </head>
-<body>
+<body><div data-aporia-topbar></div><div class="standalone-dossier-frame"><div data-aporia-sidebar></div><div>
   <header>
     <nav aria-label="Hauptnavigation">
             <a href="../../Menüs/Hauptseite.html/Hauptseite.html" data-route="home">Hauptseite</a>
@@ -96,10 +103,13 @@
       <p class="note">Zusammengeführt aus dem bestehenden Orvaya-Weltenbau und den abgeschlossenen Orvaya-Fragerunden 01 und 02. Spätere Antworten werden hier ergänzt, damit die Seite den aktuellen Gesamtstand zeigt. Offene oder noch nicht festgelegte Angaben sind nicht als Fakten eingetragen.</p>
     </article>
   </main>
-  <footer>Aporia · Weltenarchiv · Himmelskörper</footer>
+  <footer>Aporia · Weltenarchiv · Himmelskörper</footer></div></div>
   <script type="module">
     import { applyAporiaRoutes } from "../../Menüs/adapter/aporia-routes.js";
     applyAporiaRoutes();
   </script>
+  <script type="module" src="../../Menüs/Side_bar/side_bar.js"></script>
+  <script type="module" src="../../Menüs/TopBar/Top_bar.js"></script>
+  <script type="module" src="./_gemeinsam/celestial-detail.js"></script>
 </body>
 </html>

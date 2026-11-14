@@ -1,0 +1,29 @@
+body[data-page="rohstoffe"] {
+  margin: 0;
+  background: #081610;
+}
+
+.resource-frame { display: flex; }
+.resource-main {
+  flex: 1;
+  min-width: 0;
+  min-height: 100vh;
+  color: #f5e8cd;
+  background: radial-gradient(ellipse at top right, #28433a, #081610 68%);
+}
+.resource-shell { max-width: 1300px; margin-inline: auto; padding: clamp(1rem, 4vw, 4rem); }
+.resource-shell a { color: #f2cf84; }
+.resource-shell h1 { font-size: clamp(2rem, 5vw, 4.5rem); overflow-wrap: anywhere; }
+.resource-shell section { scroll-margin-top: 8rem; }
+.resource-shell [hidden] { display: none; }
+.resource-grid { display: grid; grid-template-columns: repeat(auto-fill,minmax(min(100%, 185px),1fr)); gap: 1.4rem; }
+.resource-card { text-align: center; }
+.resource-card img {
+  width: min(100%, 215px);
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #b69a60;
+  box-shadow: 0 0 0 5px #b69a6026;
+}
+.resource-card h3 { overflow-wrap: anywhere; }

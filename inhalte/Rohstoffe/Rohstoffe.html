@@ -1,51 +1,10 @@
 <!doctype html>
 <html lang="de">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Rohstoffe | Aporia Weltenarchiv</title>
-    <link rel="stylesheet" href="../../Menüs/TopBar/Top_bar.css">
-    <link rel="stylesheet" href="../../Menüs/Side_bar/Side_bar.css">
-    <link rel="stylesheet" href="../himmelskoerper/_gemeinsam/atlas.css">
-    <link rel="stylesheet" href="Rohstoffe.css">
-    <script type="module" src="Rohstoffe.js"></script>
-    <script type="module" src="../../Menüs/TopBar/Top_bar.js"></script>
-    <script type="module" src="../../Menüs/Side_bar/side_bar.js"></script>
-</head>
-<body data-page="rohstoffe">
-    <div data-aporia-topbar></div>
-    <div class="aporia-page-frame atlas-frame">
-        <div data-aporia-sidebar></div>
-        <main class="atlas-main">
-            <div class="atlas-shell">
-                <nav class="atlas-crumb" aria-label="Seitenpfad">
-                    <a href="../../Menüs/Hauptseite.html/Hauptseite.html" data-route="home">Weltenarchiv</a>
-                </nav>
-                <header class="atlas-hero rohstoff-hero">
-                    <img data-media-image="rohstoffe.raumfahrt.items.10" alt="">
-                    <h1>Rohstoffe</h1>
-                    <p>Chemische Elemente und Werkstoffe für die Raumfahrt im Bildarchiv.</p>
-                </header>
-                <section aria-label="Rohstoffkatalog" data-resource-gallery>
-                    <div class="celestial-controls rohstoff-controls">
-                        <label>Rohstoff suchen<input type="search" disabled></label>
-                        <label>Kategorie
-                            <select disabled>
-                                <option value="">Alle Rohstoffe</option>
-                                <option value="elemente">Chemische Elemente</option>
-                                <option value="raumfahrt">Raumfahrt-Werkstoffe</option>
-                            </select>
-                        </label>
-                    </div>
-                    <p role="status">Rohstoffe werden geladen …</p>
-                    <div class="atlas-grid rohstoff-grid"></div>
-                    <div class="celestial-pagination rohstoff-pagination" hidden>
-                        <button type="button" data-previous>← Vorherige Seite</button>
-                        <button type="button" data-next>Nächste Seite →</button>
-                    </div>
-                </section>
-            </div>
-        </main>
-    </div>
-</body>
+<meta charset="utf-8">
+<title>Rohstoffe | Aporia</title>
+<a href="./Uebersicht/Rohstoffe.html" data-route="rohstoffe">Rohstoffübersicht öffnen</a>
+<script type="module">
+  import { getAporiaRoute } from "../../Menüs/adapter/aporia-routes.js";
+  location.replace(getAporiaRoute("rohstoffe"));
+</script>
 </html>

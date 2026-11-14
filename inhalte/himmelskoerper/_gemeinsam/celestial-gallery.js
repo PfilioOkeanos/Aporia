@@ -10,6 +10,8 @@ function createCard(entry, category) {
     const art = document.createElement("a");
     art.className = "atlas-art";
     art.href = getCelestialDetailUrl(category, entry.slug);
+    card.dataset.celestialDossier = art.href;
+    card.dataset.celestialGroup = entry.group ?? "";
     art.setAttribute("aria-label", "Detailseite öffnen: " + entry.title);
     const image = document.createElement("img");
     image.dataset.mediaImage = entry.preview;
@@ -58,6 +60,8 @@ export async function initializeCelestialGallery() {
 
     const groups = [...new Set(entries.map(entry => entry.group))];
     for (const group of groups) select.add(new Option(group, group));
+    const requestedGroup = new URLSearchParams(location.search).get("gruppe");
+    if (groups.includes(requestedGroup)) select.value = requestedGroup;
     select.parentElement.hidden = groups.length < 2;
     search.disabled = false;
     select.disabled = false;

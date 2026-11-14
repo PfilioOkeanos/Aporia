@@ -1,0 +1,1287 @@
+# CODEX-MASTERAUFTRAG V3.0
+## APORIA – Universelles Speziesarchiv mit visuellen Wissensseiten
+
+**Projekt:** Aporia – Unter fremden Kronen  
+**Auftrag:** Erstellung beziehungsweise Überarbeitung einer vollständigen, wiederverwendbaren Spezies-Webseite  
+**Zielspezies:** [SPEZIESNAME]  
+**Spezieskategorie:** [SPEZIES-KATEGORIE]  
+**Informationsmaterial:** [INFOMATERIAL-PFAD]  
+**Projektpfad:** [ZIELPFAD]  
+**Medien:** Vorhandene Medienbestände des Projekts ermitteln und verwenden
+
+---
+
+# 01 – ZIEL UND VERBINDLICHE GRUNDREGELN
+
+Erstelle für die angegebene Spezies ein hochwertiges, vollständiges und visuell ansprechendes digitales Wissensarchiv.
+
+Es soll sich um eine professionelle Enzyklopädie handeln, nicht um eine einfache Website mit langen Textlisten.
+
+Die Website muss drei wiederverwendbare Seitentypen besitzen:
+
+1. **Spezies-Hauptseite:** Kompakte, bildstarke Übersicht mit den wichtigsten Informationen und Verlinkungen.
+2. **Fachunterseiten:** Ausführliche Wissensinhalte, automatisch in passende visuelle Themenkarten und mehrspaltige Layouts aufgeteilt.
+3. **Medienseite:** Bildergalerien, Videos, Audio und vorbereitete interaktive 3D-Ansichten.
+
+Die Gestaltung muss für beliebige Spezies wiederverwendbar sein.
+
+Das Grundsystem soll deshalb unabhängig davon funktionieren, ob eine Spezies humanoid, biologisch, synthetisch, mineralisch, astral, myzelartig oder andersartig ist.
+
+**Oberstes Ziel:**
+
+Ein vollständig wiederverwendbares, responsives und visuell strukturiertes Speziesarchiv, das vorhandene Wissensdaten und Bildmaterial automatisch sinnvoll aufbereitet, ohne Informationen zu verändern oder unnötig doppelt zu speichern.
+
+---
+
+# 02 – VERBINDLICHER ARBEITSABLAUF
+
+Bevor Änderungen erfolgen, muss eine vollständige Bestandsaufnahme durchgeführt werden.
+
+## 2.1 Projektstruktur untersuchen
+
+Prüfe:
+
+- Bestehende Ordnerstruktur
+- Vorhandene Spezies-Webseiten
+- Bestehende HTML-, CSS- und JavaScript-Dateien
+- Globale Topbar und Navigationskomponenten
+- Vorhandene Adapter und Seitenladeverfahren
+- Zentrale Stylesheets
+- Vorhandene Wissensdaten
+- Existierende Medienverzeichnisse
+- Bereits vorhandene Galerien
+- Bestehende Asset-Verwaltung
+- Bereits angelegte Seitenverknüpfungen
+- Mögliche veraltete oder doppelte Implementierungen
+
+Prüfe außerdem, welche vorhandenen Komponenten bereits korrekt funktionieren.
+
+## 2.2 Bestand mit Anforderungen vergleichen
+
+Ermittle:
+
+- Was funktioniert bereits?
+- Welche Anforderungen fehlen?
+- Welche Layoutfehler existieren?
+- Wo werden Informationen doppelt angezeigt?
+- Wo fehlen passende Medien?
+- Welche Inhalte sind noch nicht korrekt gegliedert?
+- Welche Komponenten lassen sich wiederverwenden?
+- Welche Änderungen müssen zentral erfolgen?
+
+## 2.3 Änderungsplan
+
+Erstelle einen konkreten Änderungsplan mit den tatsächlich betroffenen Dateien.
+
+Anschließend setze ihn um.
+
+Bei fehlenden unwesentlichen Angaben verwende die vorhandenen Projektkonventionen. Erfinde keine fachlichen Informationen.
+
+## 2.4 Bestehende Architektur schützen
+
+Verbindliche Regeln:
+
+- Keine funktionierenden Systeme unnötig ersetzen.
+- Keine parallele zweite Speziesarchitektur erstellen.
+- Keine neuen Frameworks ohne technischen Bedarf.
+- Vorhandene Adapter wiederverwenden.
+- Gemeinsame Funktionen zentral implementieren.
+- Bestehende Medienpfade nach Möglichkeit erhalten.
+- Keine anderen Speziesseiten beschädigen.
+- Keine unnötigen Veränderungen an globalen Projektbereichen vornehmen.
+
+---
+
+# 03 – ORDNERSTRUKTUR
+
+Jede Spezies besitzt einen eigenen Webseitenbereich.
+
+Verwende den bestehenden tatsächlichen Projektpfad und die vorhandenen Benennungskonventionen.
+
+Falls bereits Ordner existieren, nutze diese und lege keine konkurrierenden Ordner an.
+
+## 3.1 Vorgesehene Seitenstruktur
+
+[SPEZIESNAME]/
+
+- hauptseite/
+  - hauptseite.html
+  - hauptseite.css
+  - hauptseite.js
+- anatomie/
+  - anatomie.html
+  - anatomie.css
+  - anatomie.js
+- entwicklung/
+  - entwicklung.html
+  - entwicklung.css
+  - entwicklung.js
+- geschichte/
+  - geschichte.html
+  - geschichte.css
+  - geschichte.js
+- gesellschaft/
+  - gesellschaft.html
+  - gesellschaft.css
+  - gesellschaft.js
+- politik/
+  - politik.html
+  - politik.css
+  - politik.js
+- heimatwelt/
+  - heimatwelt.html
+  - heimatwelt.css
+  - heimatwelt.js
+- medien/
+  - medien.html
+  - medien.css
+  - medien.js
+
+**Jede Seite erhält ihre eigenen drei seitenspezifischen Dateien.**
+
+Gemeinsame Designkomponenten, Adapter, CSS-Variablen und Renderer werden jedoch zentral wiederverwendet.
+
+Nicht dieselbe Navigation, Kartenlogik oder Medienverwaltung achtmal neu programmieren.
+
+Vorhandene gleichwertige Ordnernamen und gültige Seitenadressen dürfen beibehalten werden.
+
+---
+
+# 04 – GLOBALE NAVIGATION UND TOPBAR
+
+## 4.1 Grundanforderung
+
+Die Topbar muss auf sämtlichen Seiten sichtbar bleiben.
+
+Sie darf beim Scrollen nicht verschwinden.
+
+Anforderungen:
+
+- Sticky beziehungsweise Fixed
+- Einheitliche Höhe
+- Korrekte Position
+- Aktiven Reiter hervorheben
+- Gute Hover- und Fokusdarstellung
+- Responsive
+- Tastaturbedienbar
+- Keine überlappenden Elemente
+- Keine abgeschnittenen Navigationseinträge
+
+## 4.2 Navigation der Spezies
+
+Folgende Navigationspunkte sind vorgesehen:
+
+- Übersicht
+- Anatomie
+- Entwicklung
+- Geschichte
+- Gesellschaft
+- Politik
+- Heimatwelt
+- Medien
+
+Nicht benötigte Einträge wie „Dossier“ entfernen, sofern sie nicht ausdrücklich vorgesehen sind.
+
+## 4.3 Vorhandene Hauptnavigation berücksichtigen
+
+Falls bereits eine globale Aporia-Topbar existiert, verwende sie.
+
+Eine zusätzliche Speziesnavigation darf nur dann eingerichtet werden, wenn sie zur bisherigen Architektur passt.
+
+Verhindere doppelte Navigationen und Konflikte zwischen Sticky-Elementen.
+
+## 4.4 Keine Sidebar als Hauptnavigation
+
+Die eigentliche Navigation findet oben statt.
+
+Eine dauerhaft sichtbare linke Sidebar ist nicht erforderlich.
+
+Ergänzende Informationskarten auf der rechten Seite sind dagegen ausdrücklich erwünscht.
+
+---
+
+# 05 – UNIVERSAL-DESIGNSYSTEM
+
+Das gesamte Speziesarchiv muss über ein gemeinsames Designsystem verfügen.
+
+## 5.1 Allgemeine Gestaltung
+
+Verwende:
+
+- Hochwertige Typografie
+- Angenehme Farbverläufe
+- Moderne Karten und Panels
+- Dezente Schatten
+- Passende Umrandungen
+- Einheitliche Abstände
+- Aussagekräftige Icons
+- Hochwertige Bilddarstellungen
+- Ruhige Hintergründe für Text
+- Gut erkennbare interaktive Elemente
+- Konsistente Hervorhebungen
+
+## 5.2 Speziesabhängiges Aussehen
+
+Die Grundarchitektur bleibt identisch.
+
+Die visuelle Gestaltung muss sich über Konfigurationen anpassen lassen.
+
+Dazu gehören:
+
+- Primär- und Sekundärfarben
+- Hintergrundfarben
+- Akzentfarben
+- Rahmenfarben
+- Farbverläufe
+- Ornamentik
+- Icons
+- Schriftgestaltung
+- Hintergrundbilder
+- Dekorative Elemente
+- Bildsprache
+
+Beispielhafte Stilrichtungen:
+
+- Biologische Spezies: organische Formen
+- Technologische Spezies: geometrische und technische Motive
+- Mineralische Spezies: kristalline Strukturen
+- Astrale Spezies: kosmische und energetische Effekte
+- Naturverbundene Spezies: pflanzliche und natürliche Elemente
+
+Dies sind Designmöglichkeiten, keine automatisch festgelegten Spezieseigenschaften.
+
+Wähle den tatsächlichen Stil anhand vorhandener Designvorgaben und Medien.
+
+## 5.3 Design wiederverwendbar halten
+
+Keine fest in den universellen Renderer eingebauten Speziesnamen, Farben oder Bilder verwenden.
+
+Speziesbezogene Werte gehören in eine vorhandene beziehungsweise passende Konfiguration.
+
+---
+
+# 06 – RESPONSIVES VOLLBREITENLAYOUT
+
+**Diese Anforderung ist besonders wichtig.**
+
+Die Unterseiten dürfen nicht nur eine schmale Textspalte in der Bildschirmmitte verwenden, während große Flächen rechts und links leer bleiben.
+
+## 6.1 Desktop
+
+Auf großen Bildschirmen:
+
+- Ungefähr 92–96 % der verfügbaren Bildschirmbreite sinnvoll nutzen.
+- Eine maximale Gesamtbreite von etwa 1600–1800 px verwenden, sofern zum Design passend.
+- Inhalt auf mehrere Spalten verteilen.
+- Große Bilder und informative Karten nebeneinander anzeigen.
+- Lange Fachtexte in breiteren Inhaltskarten darstellen.
+- Unterschiedlich große Karten miteinander kombinieren.
+
+## 6.2 Allgemeines Grid-System
+
+Verwende ein wiederverwendbares responsives CSS-Grid.
+
+Unterstütze beispielsweise:
+
+- Eine Vollbreitenkarte
+- Zwei gleich breite Karten
+- Eine breite Hauptkarte mit schmalerer Ergänzung
+- Drei kompakte Karten
+- Bild-Text-Kombinationen
+- Mehrere Karten mit unterschiedlichen Spaltenbreiten
+
+Ein zwölfspaltiges Grid oder eine vergleichbare flexible Lösung ist geeignet.
+
+**Die Spaltenanzahl darf nicht starr sein.**
+
+## 6.3 Flächen intelligent verteilen
+
+Unterschiedliche Informationsarten benötigen unterschiedlich viel Platz.
+
+Beispiele:
+
+**Kurzer Fakt:** Kompakte Karte.
+
+**Mittlerer Text:** Normale Themenkarte.
+
+**Langer erklärender Text:** Breite Fachkarte.
+
+**Anatomisches System:** Bild und Erklärung nebeneinander.
+
+**Mehrere Varianten:** Karten-Grid.
+
+**Wichtige Besonderheit:** Hervorgehobene Vollbreitenkarte.
+
+**Vergleich mehrerer Eigenschaften:** Mehrspaltiger Vergleich.
+
+Die Karten sollen ihre Breite anhand ihres tatsächlichen Inhalts erhalten.
+
+## 6.4 Bildschirmflächen vollständig nutzen
+
+Wenn rechts oder links freie Fläche vorhanden ist, verwende diese sinnvoll für:
+
+- Passende Bilder
+- Detailansichten
+- Faktenkarten
+- Weitere verwandte Unterpunkte
+- Grafische Erklärungen
+- Vergleichsdarstellungen
+- Ergänzende Informationen
+
+Das gilt für den gesamten Artikel, nicht nur für den Anfang der Seite.
+
+Eine einzelne rechte Bildkarte am Seitenanfang reicht nicht aus, wenn der restliche Artikel anschließend wieder als lange einspaltige Textliste erscheint.
+
+## 6.5 Gute Textlesbarkeit erhalten
+
+Die Gesamtseite darf breit sein, aber einzelne lange Textzeilen dürfen nicht beliebig breit werden.
+
+Richtwerte:
+
+- Fließtext ungefähr 16–18 px
+- Zeilenhöhe ungefähr 1,5–1,8
+- Lesebreite längerer Absätze ungefähr 65–85 Zeichen
+- Ausreichende Abstände zwischen Absätzen
+- Klare Überschriftenhierarchie
+
+Die Textbreite wird innerhalb der jeweiligen Karte begrenzt, nicht durch einen unnötig schmalen äußeren Seitencontainer.
+
+---
+
+# 07 – VERBINDLICHE REGEL FÜR TEXTUMBRÜCHE UND KARTENBREITEN
+
+**Dieser Abschnitt verhindert den bereits aufgetretenen Darstellungsfehler mit senkrecht angeordneten Buchstaben.**
+
+## 7.1 Überschriften dürfen nicht vertikal umbrechen
+
+Kartentitel und Kapitelüberschriften müssen vollständig lesbar bleiben.
+
+Nicht zulässig:
+
+- Einzelne Buchstaben untereinander
+- Extrem schmale Überschriftenspalten
+- Unnötig gestreckte Karten durch fehlerhafte Wortumbrüche
+- Abgeschnittene Kapitelüberschriften
+
+Erlaubt:
+
+- Mehrzeilige Titel mit Umbrüchen zwischen Wörtern
+- Breitere Karten bei längeren Überschriften
+- Reduzierte Spaltenanzahl
+- Angepasste interne Kartenaufteilung
+
+## 7.2 Ursache technisch sauber behandeln
+
+Prüfe insbesondere:
+
+- `grid-template-columns`
+- `minmax()`
+- `min-width`
+- `max-width`
+- `flex-basis`
+- `flex-shrink`
+- `word-break`
+- `overflow-wrap`
+- `white-space`
+- `writing-mode`
+- Verschachtelte Grid- und Flexbox-Container
+- Breite von Icon- und Überschriftenelementen
+
+Verwende keine globalen Regeln, die normale Wörter buchstabenweise umbrechen.
+
+Insbesondere `word-break: break-all` und `overflow-wrap: anywhere` dürfen nicht als allgemeine Lösung für Fachüberschriften verwendet werden.
+
+## 7.3 Kartenkopf
+
+Der Kartenkopf erhält grundsätzlich die gesamte verfügbare Kartenbreite.
+
+Icons oder Kapitelnummern dürfen nur die tatsächlich benötigte Breite belegen.
+
+Der Titel verwendet den übrigen Platz.
+
+Wenn notwendig, muss der Titel eine eigene Zeile erhalten.
+
+## 7.4 Mindestbreiten
+
+Normale Fachkarten sollen möglichst mindestens 340–380 px nutzbare Breite besitzen.
+
+Breite Fachkarten dürfen mehr Platz einnehmen.
+
+Kompakte Faktenkarten dürfen schmaler sein, sofern ihre Inhalte lesbar bleiben.
+
+Wenn nicht genügend Breite für drei Karten vorhanden ist, stelle nur zwei nebeneinander dar.
+
+Wenn auch zwei Karten zu schmal werden, verwende eine Spalte.
+
+**Lesbarkeit hat Vorrang vor einer festgelegten Kartenanzahl pro Zeile.**
+
+## 7.5 Interne Bild-Text-Aufteilung
+
+Eine breite Karte darf Bild und Text nebeneinander darstellen.
+
+Bei schmaleren Karten wird das Bild oberhalb des Textes platziert.
+
+Bilder dürfen niemals die Überschrift oder den Text auf eine unbrauchbar schmale Restspalte reduzieren.
+
+Verwende dafür geeignete Container Queries oder responsive Layoutregeln.
+
+## 7.6 Keine unnötigen Leerflächen
+
+Vermeide:
+
+- Extrem hohe Karten wegen fehlerhafter Titel
+- Starre Höhen bei langen Texten
+- Riesige leere Kartenbereiche
+- Übermäßig gestreckte Bilder
+- Karten, die durch Nachbarelemente unnötig ihre Höhe verändern
+
+Verwende nach Möglichkeit inhaltsabhängige Höhen.
+
+---
+
+# 08 – UNIVERSELLES VISUELLES INHALTSBLOCKSYSTEM
+
+**Dies ist die wichtigste gestalterische Anforderung.**
+
+Fachseiten dürfen nicht einfach ihre Wissensdokumente als lange vertikale Textliste darstellen.
+
+Jeder größere inhaltliche Unterpunkt muss als eigenständiger visueller Informationsblock erscheinen.
+
+## 8.1 Bestandteile eines Themenblocks
+
+Ein Themenblock soll nach Möglichkeit enthalten:
+
+- Passende Überschrift
+- Thematisches Bild oder Bildausschnitt
+- Alternativ passendes Icon
+- Erklärenden Text
+- Wichtige Fakten
+- Hervorgehobene Besonderheiten
+- Geeignete Umrandung
+- Visuelle Trennung zum nächsten Block
+
+## 8.2 Beispiele für Unterpunkte
+
+In einem Anatomiedossier beispielsweise:
+
+- Grundlegender Körperaufbau
+- Körpergröße
+- Gewicht
+- Nervensystem
+- Organe
+- Sinnesstrukturen
+- Fortbewegung
+- Regeneration
+- Fortpflanzung
+- Besondere biologische Fähigkeiten
+
+Jedes Thema soll möglichst einen eigenen gestalteten Block erhalten.
+
+Dies gilt genauso für historische, gesellschaftliche, politische, technische und kulturelle Informationen.
+
+## 8.3 Kartentypen
+
+Implementiere ein allgemeines System mit verschiedenen Layoutvarianten:
+
+**A – Bild links, Text rechts**  
+Für ausführliche Beschreibungen mit Bildreferenz.
+
+**B – Text links, Bild rechts**  
+Für abwechslungsreiche Bild-Text-Darstellung.
+
+**C – Große Fokuskarte**  
+Für besonders wichtige Themen.
+
+**D – Kompakte Faktenkarte**  
+Für einzelne Werte oder kurze Aussagen.
+
+**E – Vergleichskarte**  
+Für mehrere Varianten oder Entwicklungsstufen.
+
+**F – Detailgalerie**  
+Für mehrere zusammengehörende Bilder.
+
+**G – Besonderheitskarte**  
+Für wichtige Fähigkeiten, Einschränkungen oder Erkenntnisse.
+
+**H – Mehrteilige Fachkarte**  
+Für umfangreiche Abschnitte mit mehreren zugehörigen Unterthemen.
+
+Die Kartentypen sollen sich abwechseln, ohne willkürlich oder chaotisch zu wirken.
+
+## 8.4 Automatische Inhaltsaufbereitung
+
+Analysiere die vorhandenen Fachtexte anhand ihrer tatsächlichen Gliederung.
+
+Erkenne:
+
+- Hauptkapitel
+- Unterkapitel
+- Einzelne Themen
+- Aufzählungen
+- Datenwerte
+- Vergleiche
+- Besonderheiten
+- Zugehörige Medien
+
+Ordne diesen Einheiten geeignete visuelle Karten zu.
+
+Ein Textabschnitt darf bei Bedarf in mehrere zusammengehörende Karten aufgeteilt werden.
+
+**Sämtliche fachlichen Aussagen müssen dabei erhalten bleiben.**
+
+Keine Zusammenfassung verwenden, die wesentliche Informationen unterschlägt.
+
+## 8.5 Keine willkürliche automatische Gestaltung
+
+Der Renderer darf Layoutvarianten anhand des Inhalts wählen.
+
+Er muss aber auch explizite Vorgaben unterstützen, beispielsweise:
+
+- gewünschter Kartentyp
+- bevorzugte Bildposition
+- gewünschte Kartenbreite
+- hervorgehobener Abschnitt
+- zugehöriges Bild
+- Bildfokus
+- wichtige Fakten
+
+So können einzelne Speziesseiten später gezielt angepasst werden, ohne den gemeinsamen Renderer verändern zu müssen.
+
+---
+
+# 09 – AUTOMATISCHE BILDZUORDNUNG
+
+Für alle Unterpunkte soll vorhandenes Bildmaterial aktiv ausgewertet werden.
+
+## 9.1 Medienbestand untersuchen
+
+Suche nach:
+
+- Einzelbildern
+- Charakterbildern
+- Anatomiebildern
+- Entwicklungsübersichten
+- Collagen
+- Sammelbildern
+- Vergleichstafeln
+- Bildreferenzen
+- Vorhandenen Icons
+- Bereits zugeschnittenen Detailbildern
+
+Nutze bevorzugt die tatsächlich vorhandenen Assets der jeweiligen Spezies.
+
+## 9.2 Bildinhalt dem Thema zuordnen
+
+Beispiele:
+
+Ein Unterpunkt zum Nervensystem benötigt ein Bild des entsprechenden Nervengewebes oder einer geeigneten anatomischen Darstellung.
+
+Ein Unterpunkt zu Fortbewegung benötigt eine passende Ansicht der Bewegungsorgane oder des vollständigen Körpers.
+
+Ein Unterpunkt zu Kolonisation benötigt eine geeignete bereits vorhandene historische oder räumliche Referenz.
+
+Ein Unterpunkt über Kommunikation benötigt eine Darstellung passender Kommunikationsorgane oder einer entsprechenden Interaktion.
+
+**Die visuelle Zuordnung muss inhaltlich sinnvoll sein.**
+
+## 9.3 Collagen automatisch berücksichtigen
+
+Im Projekt existieren häufig große Bildcollagen mit mehreren Motiven.
+
+Wenn kein Einzelbild existiert:
+
+1. Durchsuche die vorhandenen Collagen.
+2. Untersuche, welche Motive darin enthalten sind.
+3. Ermittle den passenden Bereich für den jeweiligen Unterpunkt.
+4. Schneide diesen Bereich sauber aus.
+5. Speichere den Ausschnitt als abgeleitetes Bildasset.
+6. Verknüpfe ihn mit dem entsprechenden Wissensblock.
+
+## 9.4 Regeln für Bildzuschnitte
+
+- Originalbilder niemals überschreiben.
+- Ausschnitte ausreichend hoch auflösen.
+- Wichtige Motive nicht abschneiden.
+- Beschriftungen möglichst nicht versehentlich mitten im Wort abschneiden.
+- Keine fremden Bildteile oder unpassende Motive übernehmen.
+- Seitenverhältnisse sinnvoll wählen.
+- Bilder nicht verzerren.
+- Dateinamen nachvollziehbar vergeben.
+- Vorhandene Ausschnitte wiederverwenden.
+- Keine unnötigen Duplikate erzeugen.
+
+Wenn ein Motiv aus einer Collage wegen Überlagerungen oder geringer Auflösung nicht sinnvoll isoliert werden kann, verwende einen anderen passenden Ausschnitt oder ein Icon.
+
+Keine nicht vorhandenen Details durch automatische Bildbearbeitung erfinden.
+
+## 9.5 Bildausschnitte dokumentieren
+
+Speichere nach Möglichkeit Metadaten zu abgeleiteten Bildern:
+
+- Ursprungsdatei
+- Neuer Dateipfad
+- Zugehörige Spezies
+- Zugehöriger Themenblock
+- Ausschnittkoordinaten beziehungsweise Bildfokus
+- Verwendungszweck
+
+Nutze vorhandene Medienregister und ergänze diese nur bei Bedarf.
+
+## 9.6 Fehlendes Bildmaterial
+
+Wenn keine geeignete Abbildung verfügbar ist:
+
+- Verwende ein passendes Icon.
+- Nutze einen neutralen visuellen Platzhalter.
+- Erhalte trotzdem das gestaltete Kartenlayout.
+- Kennzeichne fehlende Medien in einer internen Medienbedarfsliste.
+
+Erfinde keine Abbildungen oder fachlichen Details.
+
+---
+
+# 10 – HAUPTSEITE
+
+Die Hauptseite ist eine kompakte, visuelle Übersicht.
+
+Sie darf nicht sämtliche Fachtexte wiederholen.
+
+## 10.1 Hero
+
+Verwende:
+
+- Speziesname
+- Kurze Beschreibung
+- Kategorie
+- Großes geeignetes Bild
+- Passendes Hintergrundmotiv
+- Dezente Farbverläufe
+
+## 10.2 Wichtigste Fakten
+
+Zeige nur zentrale Informationen aus den vorhandenen Daten.
+
+Beispiele:
+
+- Klassifikation
+- Größe
+- Gewicht
+- Intelligenz
+- Besondere Eigenschaften
+- Heimatwelt
+
+Nur tatsächlich vorhandene Daten anzeigen.
+
+## 10.3 Fachbereichskarten
+
+Erstelle visuell ansprechende Karten für:
+
+- Anatomie
+- Entwicklung
+- Geschichte
+- Gesellschaft
+- Politik
+- Heimatwelt
+- Medien
+
+Jede Karte erhält:
+
+- Bild oder Icon
+- Titel
+- Kurze Beschreibung
+- Aktiven Link zur Fachseite
+- Einheitliches Hover-Verhalten
+
+## 10.4 Medienvorschau
+
+Zeige eine kompakte Auswahl vorhandener Medien.
+
+Verweise auf:
+
+- Bildergalerie
+- Videos
+- Audio
+- 360°-Ansicht
+
+Die eigentliche Medienverwaltung bleibt auf der Medienseite.
+
+## 10.5 Keine vollständigen Wissenskapitel
+
+Die Hauptseite enthält keine umfangreichen Fachtexte.
+
+Diese gehören ausschließlich in die jeweiligen Unterseiten.
+
+---
+
+# 11 – FACHUNTERSEITEN
+
+Alle Fachunterseiten verwenden das gemeinsame Block- und Grid-System.
+
+Die konkreten Themen richten sich nach den vorhandenen Wissensdaten.
+
+## 11.1 Anatomie
+
+Mögliche Inhalte:
+
+- Körperbau
+- Gewebe
+- Organsysteme
+- Bewegungsstrukturen
+- Nervensystem
+- Sinnesorgane
+- Fortpflanzungsstrukturen
+- Besondere anatomische Merkmale
+
+Jeder größere Unterpunkt erhält eine passende visuelle Darstellung.
+
+## 11.2 Entwicklung
+
+Mögliche Inhalte:
+
+- Biologische Entwicklungsphasen
+- Wachstum
+- Reifung
+- Veränderungen des Körpers
+- Altersstadien
+- Evolutionäre Anpassungen
+- Entwicklungsbedingte Unterschiede
+
+Die biologische Entwicklung ist von der historischen Zivilisationsgeschichte zu unterscheiden.
+
+## 11.3 Geschichte
+
+Mögliche Inhalte:
+
+- Frühe Geschichte
+- Entstehung von Gemeinschaften
+- Wissenschaftliche Fortschritte
+- Entdeckungen
+- Expansion
+- Historische Krisen
+- Jüngere Geschichte
+
+Verwende chronologische Karten oder Zeitlinien, sofern geeignete Daten existieren.
+
+Keine Jahreszahlen oder konkreten Ereignisse erfinden.
+
+## 11.4 Gesellschaft
+
+Mögliche Inhalte:
+
+- Familien
+- Gemeinschaften
+- Bildung
+- Versorgung
+- Sprache
+- Kommunikation
+- Kunst
+- Kultur
+- Musik
+- Gesellschaftliche Besonderheiten
+
+Verwende passende soziale, kulturelle oder anatomische Darstellungen.
+
+## 11.5 Politik
+
+Mögliche Inhalte:
+
+- Politische Organisation
+- Institutionen
+- Zugehörigkeiten
+- Fraktionen
+- Bündnisse
+- Konflikte
+- Diplomatie
+- Handel
+- Forschung
+- Sicherheit
+
+Politische Informationen müssen den aktuellen zentralen Aporia-Festlegungen entsprechen.
+
+Keine nicht mehr gültigen Fraktionen aus älteren Materialien ungeprüft übernehmen.
+
+Konkrete Mitgliedschaften nicht aus allgemeinen Spezieseigenschaften ableiten.
+
+## 11.6 Heimatwelt
+
+Die Heimatweltseite stellt vor allem die Beziehung zwischen Spezies und Herkunftswelt dar.
+
+Zeige:
+
+- Heimatweltname
+- Kurzen Herkunftsbezug
+- Passendes Bild, sofern vorhanden
+- Link zur eigenständigen Planetenseite
+
+Keine planetaren Daten unnötig duplizieren.
+
+Wenn die Planetenseite noch nicht existiert, einen eindeutig erkennbaren Platzhalter verwenden.
+
+## 11.7 Fachübergreifende Inhalte
+
+Informationen, die mehrere Fachbereiche betreffen, sollen an einer eindeutigen Datenquelle gepflegt werden.
+
+Andere Seiten referenzieren diese Informationen.
+
+Vermeide doppelte und eventuell widersprüchliche Wissensabschnitte.
+
+---
+
+# 12 – SPEZIELLE MEDIENSEITE
+
+Die Medienseite verwendet dasselbe Designsystem, bekommt aber ein eigenes Medienlayout.
+
+## 12.1 Bilder
+
+Kategorien entsprechend dem vorhandenen Material, beispielsweise:
+
+- Gesamtdarstellung
+- Anatomie
+- Entwicklungsstadien
+- Körpervarianten
+- Detailbilder
+
+Funktionen:
+
+- Galerie
+- Vorschaubilder
+- Großansicht
+- Karussell
+- Kategorienfilter, falls sinnvoll
+- Navigation zwischen Bildern
+- Responsive Darstellung
+
+Alle geeigneten, vorhandenen Originalbilder müssen in der Galerie auffindbar sein.
+
+## 12.2 Videos
+
+Bereite Kategorien vor für:
+
+- Fortbewegung
+- Verhalten
+- Mimik und Ausdruck
+- Weitere tatsächlich vorhandene Videotypen
+
+Nur echte Videodateien erhalten funktionierende Player.
+
+Fehlende Medien als „In Vorbereitung“ anzeigen.
+
+## 12.3 Audio
+
+Kategorien:
+
+- Kommunikation
+- Körpergeräusche
+- Kulturelle Musik
+- Hintergrundmusik
+
+Audio darf nicht automatisch abgespielt werden.
+
+Nur vorhandene Audiodateien erhalten echte Player.
+
+Keine fingierten Laufzeiten oder funktionslosen Bedienelemente.
+
+## 12.4 360°-Ansicht
+
+Erstelle einen dafür vorgesehenen Bereich.
+
+Solange kein funktionsfähiges 3D-Modell existiert:
+
+- Vorschaubild anzeigen
+- Status kennzeichnen
+- Layoutbereich reservieren
+- Keine funktionierende 3D-Steuerung vortäuschen
+
+Die spätere Einbindung soll ohne komplette Layoutänderung möglich sein.
+
+---
+
+# 13 – WISSENSDATEN UND INHALTSVERARBEITUNG
+
+## 13.1 Quellen zuerst untersuchen
+
+Verwende vorhandene Informationsmaterialien und Wissensindex-Dateien.
+
+Die vorhandenen Dokumente können beispielsweise Markdown, JSON oder andere unterstützte Formate enthalten.
+
+Die tatsächlichen Projektdateien haben Vorrang vor bloßen Vermutungen.
+
+## 13.2 Fachliche Informationen erhalten
+
+- Keine Wissensdaten eigenmächtig verändern.
+- Keine Fakten erfinden.
+- Keine unbestätigten Designbilder als wissenschaftlich verbindliche Informationen behandeln.
+- Keine Quelleninhalte verlieren.
+- Keine wichtigen Abschnitte willkürlich kürzen.
+- Fehlende Angaben als offen behandeln.
+
+## 13.3 Dokumente in Artikel umwandeln
+
+Die Wissensdokumente dürfen nicht unverändert als Rohtextseite erscheinen.
+
+Sie müssen:
+
+1. Inhaltlich analysiert werden.
+2. In Kapitel und Unterkapitel gegliedert werden.
+3. Thematischen Inhaltsblöcken zugeordnet werden.
+4. Mit passenden Medien verknüpft werden.
+5. In das responsive Grid-System integriert werden.
+
+Alle fachlichen Aussagen müssen erhalten bleiben.
+
+## 13.4 Keine Dokument-Metadaten als Hauptartikel
+
+Reine Dokumentverwaltungsinformationen wie:
+
+- Dokumenttyp
+- Version
+- Bearbeitungsstatus
+- Quellenpfad
+
+sollen nicht als große Textkarten im eigentlichen Artikel erscheinen.
+
+Falls benötigt, zeige sie in einer kleinen Metadatenzeile oder im technischen Informationsbereich.
+
+## 13.5 Keine Roh-Markdown-Artefakte
+
+Entferne Darstellungsprobleme wie:
+
+- Doppelte Überschriften
+- Unformatierte Markdown-Zeichen
+- Wiederholte Dokumenttitel
+- Unnötige Quellenüberschriften im Inhalt
+- Fehlerhafte automatische Aufzählungen
+
+Die fachlichen Inhalte selbst dürfen dabei nicht verloren gehen.
+
+---
+
+# 14 – TECHNISCHES TEMPLATE-SYSTEM
+
+## 14.1 Gemeinsame Komponenten
+
+Nutze vorhandene gemeinsame Komponenten oder erweitere sie sinnvoll.
+
+Benötigte Funktionsbereiche:
+
+- Navigation
+- Seitenlayout
+- Karten
+- Fachartikel
+- Mediengalerie
+- Responsive Grid
+- Bildverwaltung
+- Spezies-Theme
+- Medienplatzhalter
+
+## 14.2 Datengetriebene Darstellung
+
+Neue Speziesseiten sollen möglichst aus strukturierten Speziesdaten aufgebaut werden können.
+
+Ein Fachblock sollte beispielsweise folgende Eigenschaften unterstützen:
+
+- Block-ID
+- Titel
+- Untertitel
+- Fachbereich
+- Inhalt
+- Bildreferenz
+- Bildausschnitt
+- Fallback-Icon
+- Kartentyp
+- Layoutbreite
+- Hervorhebungen
+- Verknüpfungen
+
+Verwende bestehende Datenadapter, sofern möglich.
+
+## 14.3 Keine unnötige Duplizierung
+
+Ein allgemeiner Kartenrenderer soll nicht für jede Spezies erneut programmiert werden.
+
+Die jeweilige Spezies liefert hauptsächlich:
+
+- Inhalte
+- Medien
+- Theme
+- Besondere Layoutvorgaben
+
+## 14.4 Inhalte verschiedener Länge unterstützen
+
+Das System muss auch bei folgenden Bedingungen funktionieren:
+
+- Wenigen verfügbaren Informationen
+- Sehr langen Fachtexten
+- Fehlenden Bildern
+- Vielen Collagen
+- Kurzen Überschriften
+- Sehr langen Überschriften
+- Unterschiedlich vielen Unterkapiteln
+- Unterschiedlichen Speziesdesigns
+
+---
+
+# 15 – RESPONSIVE ANFORDERUNGEN
+
+Prüfe mindestens folgende Bildschirmgrößen:
+
+- 1920 × 1080
+- 1440 × 900
+- 1366 × 768
+- 768 px Breite
+- 390 px Breite
+
+## Desktop
+
+- Mehrspaltiges Layout
+- Große verfügbare Fläche ausnutzen
+- Inhaltlich angemessene Kartenbreiten
+- Passende Bilder neben Text
+
+## Tablet
+
+- Reduzierte Spaltenzahl
+- Keine zu schmalen Karten
+- Angepasste Bildpositionen
+
+## Smartphone
+
+- Überwiegend einspaltig
+- Vollständig lesbare Titel
+- Gut skalierte Bilder
+- Bedienbare Navigation
+- Keine horizontalen Scrollbalken
+
+---
+
+# 16 – QUALITÄTSPRÜFUNG
+
+Die Umsetzung gilt nur als abgeschlossen, wenn die tatsächliche Darstellung überprüft wurde.
+
+## 16.1 Navigation
+
+- Alle Seiten erreichbar?
+- Topbar sichtbar?
+- Aktiver Reiter korrekt?
+- Keine beschädigten Verknüpfungen?
+- Rückwege vorhanden?
+
+## 16.2 Flächennutzung
+
+- Wird die Desktopbreite sinnvoll genutzt?
+- Gibt es unnötig breite leere Bereiche?
+- Sind Fachkarten abwechslungsreich angeordnet?
+- Wird auch die untere Hälfte langer Seiten mehrspaltig gestaltet, soweit sinnvoll?
+
+## 16.3 Lesbarkeit
+
+- Keine senkrecht umgebrochenen Überschriften?
+- Keine abgeschnittenen Texte?
+- Keine extrem schmalen Textspalten?
+- Keine unnötig hohen Karten?
+- Keine übermäßig langen Textzeilen?
+- Keine überlappenden Inhalte?
+
+## 16.4 Visuelle Unterstützung
+
+- Besitzt jeder größere Unterpunkt eine visuelle Unterstützung?
+- Passen Bilder zum jeweiligen Inhalt?
+- Wurden vorhandene Collagen berücksichtigt?
+- Sind Bildausschnitte sauber?
+- Werden Bilder korrekt skaliert?
+
+## 16.5 Fachliche Korrektheit
+
+- Sind alle wichtigen Inhalte vorhanden?
+- Wurden Aussagen unverändert übernommen?
+- Gibt es doppelte Abschnitte?
+- Sind die Informationen den richtigen Fachbereichen zugeordnet?
+- Wurden fehlende Inhalte nicht erfunden?
+
+## 16.6 Medien
+
+- Funktioniert die Galerie?
+- Sind vorhandene Bilder erreichbar?
+- Funktionieren vorhandene Player?
+- Sind Platzhalter korrekt gekennzeichnet?
+- Ist der 360°-Bereich vorbereitet?
+
+## 16.7 Code
+
+- Keine unnötigen Abhängigkeiten?
+- Keine JavaScript-Fehler?
+- Keine falschen Dateipfade?
+- Keine versehentlich duplizierten Komponenten?
+- Bestehende Adapter funktionsfähig?
+
+## 16.8 Besonders wichtige visuelle Prüfung
+
+Kontrolliere nicht nur den Kopfbereich jeder Seite.
+
+Prüfe:
+
+- Anfang
+- Mitte
+- Ende
+
+Besonders bei langen Wissensartikeln muss die visuelle Darstellung über die gesamte Seite funktionieren.
+
+Die früher beobachteten Fehler dürfen nicht erneut auftreten:
+
+1. Schmale mittlere Textspalte trotz großer Desktopbreite.
+2. Endlose Auflistung von Textkarten ohne Bilder.
+3. Überschriften, deren Buchstaben senkrecht untereinander erscheinen.
+4. Übermäßig hohe Karten mit großen Leerflächen.
+5. Nur am Seitenanfang vorhandene visuelle Unterstützung.
+
+Wenn möglich, nutze Browser-Screenshots und automatisierte Layoutprüfungen. Melde nur Prüfungen als erfolgreich, die tatsächlich durchgeführt wurden.
+
+---
+
+# 17 – ABSCHLUSSBERICHT
+
+Nach der Umsetzung dokumentiere:
+
+1. Welche Projektstruktur vorgefunden wurde.
+2. Welche Komponenten wiederverwendet wurden.
+3. Welche Ordner und Dateien erstellt wurden.
+4. Welche vorhandenen Dateien geändert wurden.
+5. Welche Layoutfehler behoben wurden.
+6. Wie das allgemeine Grid-System funktioniert.
+7. Welche Kartentypen implementiert wurden.
+8. Welche Wissensquellen verwendet wurden.
+9. Welche Bilder eingebunden wurden.
+10. Welche Bilder aus Collagen zugeschnitten wurden.
+11. Welche Medien noch fehlen.
+12. Welche Seiten getestet wurden.
+13. Welche Bildschirmgrößen geprüft wurden.
+14. Welche bekannten Einschränkungen bestehen.
+
+Keine erfundenen Testergebnisse ausgeben.
+
+---
+
+# 18 – VERBINDLICHE ABNAHMEKRITERIEN
+
+Das Ergebnis gilt nur als vollständig, wenn folgende Anforderungen erfüllt sind:
+
+**1. Wiederverwendbarkeit**
+
+Das Seitensystem funktioniert für weitere Spezies, ohne dass der gemeinsame Code vollständig neu geschrieben werden muss.
+
+**2. Vollbreitenlayout**
+
+Die verfügbare Desktopbreite wird sinnvoll genutzt.
+
+**3. Adaptive Karten**
+
+Inhaltskarten passen sich der Textlänge und vorhandenen Bildschirmbreite an.
+
+**4. Korrekte Überschriften**
+
+Keine vertikal beziehungsweise buchstabenweise umgebrochenen normalen Überschriften.
+
+**5. Visuelle Wissensaufbereitung**
+
+Jeder größere Unterpunkt besitzt ein eigenes, angemessen gestaltetes visuelles Element.
+
+**6. Bestehende Bilder verwenden**
+
+Geeignete vorhandene Einzelbilder und Collagen werden aktiv berücksichtigt.
+
+**7. Collage-Zuschnitte**
+
+Fehlende Einzelbilder werden nach Möglichkeit durch passende Ausschnitte vorhandener Collagen ersetzt.
+
+**8. Vollständige Wissensinhalte**
+
+Die Fachinformationen bleiben vollständig erhalten.
+
+**9. Keine Textwände**
+
+Lange Wissensartikel werden über ihre gesamte Länge sinnvoll visuell gegliedert.
+
+**10. Einheitliche Navigation**
+
+Die Topbar bleibt sichtbar, alle Unterseiten sind korrekt verbunden.
+
+**11. Speziesabhängiges Design**
+
+Die Gestaltung kann durch Themes für andere Spezies angepasst werden.
+
+**12. Saubere Medienintegration**
+
+Bildergalerie, Video-, Audio- und 360°-Bereiche sind korrekt umgesetzt oder vorbereitet.
+
+**13. Bestehende Architektur respektieren**
+
+Vorhandene Adapter, Datenquellen und funktionierende Komponenten werden bevorzugt weiterverwendet.
+
+**14. Getestete Darstellung**
+
+Desktop-, Tablet- und Mobilansichten werden geprüft.
+
+---
+
+# 19 – ENDGÜLTIGER ARBEITSAUFTRAG
+
+Überarbeite beziehungsweise erstelle die Webseite für **[SPEZIESNAME]** nach sämtlichen Anforderungen dieses Masterplans.
+
+Das Endergebnis muss ein hochwertiges, visuell unterstütztes und vollständig wiederverwendbares Speziesarchiv sein.
+
+Verwende die vorhandenen Wissensdaten und Bilder des Projekts.
+
+Nutze Bildausschnitte aus Collagen, wenn keine Einzelbilder existieren.
+
+Stelle lange Fachtexte als adaptive, unterschiedlich große und sinnvoll bebilderte Wissenskarten dar.
+
+Nutze die vorhandene Desktopbreite, ohne die Lesbarkeit einzelner Inhalte zu beeinträchtigen.
+
+Verhindere fehlerhafte Textumbrüche, unnötige Leerflächen und endlose reine Textlisten.
+
+Erhalte die bestehende Projektstruktur und verwende die vorhandenen Adapter.
+
+Die gemeinsame Template-Architektur muss künftig auch für andere Spezies funktionieren.
+
+**Arbeitsreihenfolge:**
+
+Bestandsaufnahme → Abgleich → Änderungsplan → Gemeinsame Komponenten → Responsive Grid → Inhaltskarten → Bildzuordnung und Collage-Zuschnitte → Hauptseite → Unterseiten → Medienseite → Verknüpfungen → Browserprüfung → Abschlussbericht.
+
+**Wichtigste Priorität:**
+
+Nicht einfach mehr Karten erstellen, sondern den vorhandenen Wissensinhalt intelligent, vollständig und visuell nachvollziehbar über die gesamte verfügbare Seitenfläche aufbereiten.
+
+Die Website soll wie eine hochwertige interaktive Enzyklopädie aussehen und zugleich dauerhaft wartbar bleiben.
+
+
+
+## 20 – VERBINDLICHE VISUELLE DESIGNREFERENZEN
+
+Für die Spezies-Webseiten existieren drei Designvorlagen:
+
+1. **Hauptseiten-Design:** Großes Speziesbild, kompakte Fakten, visuelle Fachbereichskarten und Medienvorschau.
+2. **Unterseiten-Design:** Breites, mehrspaltiges Artikellayout mit thematischen Bild-Text-Karten, Icons, Hervorhebungen und übersichtlichen Unterkapiteln.
+3. **Medienseiten-Design:** Bildergalerie, Videokarten, Audiobereiche und vorbereitete 360°-Modellansicht.
+
+### Verbindliche Anweisung
+
+- Verwende die bereitgestellten Designbilder als **maßgebliche visuelle Referenzen** für das jeweilige Seitentemplate.
+- Analysiere vor der Implementierung deren Layout, Proportionen, Bildpositionen, Kartenaufteilung, Abstände, Typografie, Farbverläufe und Rahmengestaltung.
+- Übernimm die wesentlichen Gestaltungsmerkmale so genau wie technisch und responsiv sinnvoll.
+- Verwende die Designbilder nicht einfach als Hintergrundbilder, sondern setze das dargestellte Layout mit echtem HTML, CSS und JavaScript um.
+- Behalte die vorhandene globale Topbar bei und verzichte auf eine zusätzliche linke Sidebar.
+- Nutze vorhandene Projektbilder für die dargestellten visuellen Inhalte.
+- Die Gestaltung darf für unterschiedliche Spezies durch eigene Bilder, Farben, Icons und Ornamente angepasst werden.
+- Die Hauptseiten-, Unterseiten- und Medienvorlage müssen jeweils klar am entsprechenden Designbild erkennbar sein.
+- Übernimm keine möglicherweise erfundenen Fakten oder Texte aus den Designbildern. Maßgeblich sind ausschließlich die freigegebenen Wissensdaten.
+
+### Verbindliche Designprüfung
+
+Vergleiche nach der Umsetzung Screenshots der tatsächlichen Webseiten mit den drei Designreferenzen.
+
+Prüfe insbesondere, ob Seitenaufbau, Kartenverteilung, Bildgrößen, visuelle Hierarchie und Gesamteindruck übereinstimmen.
+
+Korrigiere erkennbare Abweichungen, bevor die Umsetzung als abgeschlossen gemeldet wird.
+
+**Die Designbilder definieren das visuelle Ziel. Der Masterprompt definiert die technische Umsetzung und Wiederverwendbarkeit.**

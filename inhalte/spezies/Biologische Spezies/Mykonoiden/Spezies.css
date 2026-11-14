@@ -1,0 +1,269 @@
+@import url("../../_gemeinsam/spezies-archiv.css");
+.species-archive{--archive-background:#0b0a12;--archive-edge:#745478;--archive-glow:#f7b9e9;--archive-accent:#ffc996;--archive-panel:#281d31}
+
+/* Let preview frames follow the original image proportions. */
+.species-archive :is(.archive-card, .media-entry, .feature-open, .gallery-layout .tile, .topic-art, .feature) img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: auto;
+    object-fit: contain;
+    object-position: center;
+    background: radial-gradient(ellipse at 50% 35%, #392544, #17111f 75%);
+}
+.species-archive .topic-art img {
+    max-height: none;
+}
+
+.species-archive :is(.card-grid, .media-cards, .gallery-layout .rail) {
+    align-items: start;
+}
+
+/* Compact article art with warm light sampled from the Pilzwald motif. */
+.species-archive .topic .archive-banner {
+    background: radial-gradient(ellipse at 76% 42%, #614e48aa, transparent 58%),
+                radial-gradient(ellipse at 89% 90%, #d37a464d, transparent 55%),
+                #120e19;
+}
+.species-archive .topic .archive-banner > img {
+    width: min(44%, 32rem);
+    height: 100%;
+    object-fit: contain;
+    object-position: right center;
+
+}
+.species-archive .topic .archive-banner::before {
+    background: linear-gradient(90deg, #110d18 22%, #110d1866 65%, transparent);
+}
+.species-archive .topic .feature {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+    align-items: center;
+    gap: clamp(.8rem, 2vw, 2rem);
+}
+.species-archive .topic .topic-intro {
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+}
+.species-archive .topic :is(.feature, .topic-art) img {
+    width: 100%;
+    max-height: 17rem;
+    object-fit: contain;
+    background: transparent;
+
+}
+.species-archive .topic .topic-art,
+.species-archive .topic .feature > img {
+    border-radius: 12px;
+    background: radial-gradient(ellipse at 68% 72%, #d37a4640, transparent 68%),
+                radial-gradient(ellipse at 32% 25%, #614e4877, transparent 75%),
+                #191321;
+}
+@media (max-width: 620px) {
+    .species-archive .topic :is(.feature, .topic-intro) { grid-template-columns: minmax(0, 1fr); }
+    .species-archive .topic :is(.feature, .topic-art) img { max-height: 12rem; }
+    .species-archive .topic .archive-banner > img { width: 60%; opacity: .65; }
+}
+
+/* Carry the artwork palette across the whole article surface. */
+.species-archive .topic {
+    background:
+        radial-gradient(ellipse at 88% 8%, #86543d80, transparent 52%),
+        radial-gradient(ellipse at 12% 39%, #59334c85, transparent 58%),
+        radial-gradient(ellipse at 87% 71%, #9c593b55, transparent 57%),
+        radial-gradient(ellipse at 18% 100%, #614e4870, transparent 55%),
+        linear-gradient(155deg, rgb(var(--artwork-palette, 100 62 83) / .30), transparent 80%),
+        linear-gradient(155deg, #241827, #18111f 52%, #291a25);
+}
+.species-archive .topic .archive-banner {
+    background: transparent;
+    box-shadow: none;
+}
+.species-archive .topic :is(.archive-banner, .crumb, .panel, .topic-art, .chapter-block, .chapter-visual span, .gallery-feature, .tile, .media-entry) {
+    border: 0;
+    box-shadow: none;
+}
+.species-archive .topic :is(.crumb, .panel, .chapter-block, .tile, .media-entry) {
+    background: linear-gradient(145deg, #1d14234f, #160e1c70);
+}
+.species-archive .topic :is(.topic-art, .feature > img) {
+    background: transparent;
+}
+
+/* Fade the actual image rectangle, including the edges of portrait artwork. */
+.species-archive .topic :is(.archive-banner, .feature, .topic-art, .chapter-visual, .feature-open, .tile, .media-entry, .model) img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    margin-inline: auto;
+    background: transparent;
+    mask-image: linear-gradient(to right, transparent, #000 13%, #000 86%, transparent),
+                linear-gradient(to bottom, transparent, #000 12%, #000 83%, transparent);
+    mask-composite: intersect;
+}
+.species-archive .topic .archive-banner > img {
+    inset: 50% 0 auto auto;
+    transform: translateY(-50%);
+    max-width: min(44%, 32rem);
+    max-height: 100%;
+    mask-image: linear-gradient(to right, transparent, #0008 27%, #000 51%, #000 81%, transparent),
+                linear-gradient(to bottom, transparent, #000 16%, #000 78%, transparent);
+}
+.species-archive .topic .feature-open { background: transparent; }
+.species-archive .topic .feature-open img { max-height: min(62vh, 34rem); }
+.species-archive .topic .model img { max-height: 230px; }
+@media (max-width: 620px) {
+    .species-archive .topic .archive-banner > img { max-width: 60%; }
+}
+
+/* Artwork stays sharp; its colours continue on a separate background layer. */
+.species-archive .topic {
+    position: relative;
+    isolation: isolate;
+}
+.artwork-lighting {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: -1;
+}
+.artwork-lighting > span {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background:
+        radial-gradient(ellipse at 38% 48%, rgb(var(--light-left, 112 68 90) / .25), rgb(var(--light-left, 112 68 90) / .13) 35%, rgb(var(--light-left, 112 68 90) / .035) 65%, transparent 92%),
+        radial-gradient(ellipse at 62% 54%, rgb(var(--light-right, 136 79 56) / .23), rgb(var(--light-right, 136 79 56) / .11) 34%, rgb(var(--light-right, 136 79 56) / .03) 65%, transparent 92%);
+}
+.species-archive .topic :is(.archive-banner, .feature, .topic-art, .chapter-visual, .feature-open, .tile, .media-entry, .model) img {
+    mask-image: linear-gradient(to right, transparent, #000 3%, #000 97%, transparent),
+                linear-gradient(to bottom, transparent, #000 3%, #000 97%, transparent);
+}
+
+/* Fachseiten: eigenständige Spalten mit durchgehend sichtbaren Wissenskarten. */
+.species-archive .myko-article > .shell { width:min(97%, 1900px); }
+.myko-layout {
+    display:grid;
+    grid-template-columns:minmax(9rem, 11rem) minmax(0, 1fr) minmax(13rem, 18rem);
+    align-items:start;
+    gap:.65rem;
+    padding-top:.6rem;
+}
+.myko-content, .myko-facts, .myko-index { min-width:0; }
+.myko-index, .myko-facts {
+    padding:.7rem;
+    border-radius:.75rem;
+    background:linear-gradient(140deg,#392544b8,#17111fe8);
+}
+.myko-index { position:sticky; top:6rem; max-height:calc(100vh - 7rem); overflow:auto; }
+.myko-index a { display:block; padding:.3rem 0; text-decoration:none; }
+.myko-facts ul { margin:0; padding-inline-start:1.15rem; }
+.myko-facts li + li { margin-top:.4rem; }
+.myko-facts li::marker { color:var(--archive-accent); }
+.myko-article .archive-banner > div { min-height:0; padding:.45rem .65rem; }
+.myko-article .archive-banner h1 { font-size:clamp(1.55rem,3vw,3rem); overflow-wrap:break-word; }
+.myko-article .archive-banner::before { background:none; }
+.myko-article .myko-content [id] { scroll-margin-top:8rem; }
+.myko-article .myko-source { margin-block:.8rem; }
+.myko-article .myko-source > h3 { margin:.3rem 0; color:var(--archive-accent); }
+.species-archive .myko-article .source-content > .chapter-block {
+    padding:.65rem .75rem;
+    background:linear-gradient(135deg,#38263a9c,#17101f92);
+}
+.myko-article .chapter-text > p { margin-block:.25rem .55rem; }
+.myko-article .chapter-text > :last-child { margin-bottom:0; }
+.myko-article .chapter-body:has(img) > .chapter-visual { justify-items:center; }
+@container (min-width: 35rem) {
+    .myko-article .chapter-body:has(img) { grid-template-columns:minmax(0,2fr) minmax(0,1fr); }
+    .myko-article .chapter-body:has(img) > .chapter-visual { grid-column:2; grid-row:1; }
+    .myko-article .chapter-body:has(img) > .chapter-text { grid-column:1; grid-row:1; }
+}
+@media(max-width: 1150px) {
+    .myko-layout { grid-template-columns:minmax(0,1fr) minmax(12rem,16rem); }
+    .myko-index { position:static; grid-column:1/-1; display:flex; flex-wrap:wrap; gap:.2rem .8rem; align-items:center; }
+    .myko-index h2 { margin:0; font-size:1rem; }
+}
+@media(max-width: 850px) {
+    .myko-layout { grid-template-columns:minmax(0,1fr); }
+    .myko-facts { grid-row:2; }
+}
+
+.species-archive .myko-article {
+    background:
+        radial-gradient(ellipse at 82% 12%, rgb(var(--artwork-palette, 100 62 83) / .32), transparent 62%),
+        linear-gradient(155deg, #241827, #18111f 52%, #291a25);
+}
+.myko-article .myko-facts [id] { scroll-margin-top: 8rem; }
+
+/* The same compact cards carry the topic and source sections to the page end. */
+.myko-article .myko-content :is(.panel, .chapter-block, .myko-fact-grid > div) {
+    border: 1px solid #96648c80;
+    border-radius: .75rem;
+    background: linear-gradient(135deg, #39263de8, #18111edd);
+}
+.species-archive .myko-article .source-content {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+    gap: .65rem;
+}
+.species-archive .myko-article .source-content > .chapter-block {
+    grid-column: auto;
+    align-self: start;
+}
+.myko-article .chapter-block > :is(h3, h4),
+.myko-article .myko-section-title {
+    grid-column: 1 / -1;
+    color: var(--archive-accent);
+    overflow-wrap: normal;
+    hyphens: auto;
+}
+.myko-article .chapter-body { gap: .45rem .75rem; }
+.myko-article .chapter-visual img { max-height: 10rem; object-fit: contain; }
+.myko-article .myko-fact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 11rem), 1fr));
+    gap: .45rem;
+    margin: 0;
+}
+.myko-article .myko-fact-grid > div {
+    display: block;
+    padding: .5rem .6rem;
+}
+.myko-article .myko-fact-grid dt { color: var(--archive-accent); font-weight: 650; }
+.myko-article .myko-fact-grid dd { margin: .15rem 0 0; }
+.myko-article .topic-aside .myko-fact-grid { padding: 0; }
+@media (max-width: 1000px) {
+    .species-archive .myko-article .source-content { grid-template-columns: minmax(0, 1fr); }
+}
+
+.species-archive .myko-article > .shell { width: calc(100% - clamp(.8rem, 1.5vw, 2rem)); }
+.myko-article .myko-fact-grid > div { overflow-wrap: break-word; }
+.myko-article .myko-fact-grid img {
+    float: right; width: 30%; max-height: 4rem; object-fit: contain;
+    margin: 0 0 .2rem .35rem;
+    mask-image: radial-gradient(ellipse closest-side, #000 70%, transparent);
+}
+.myko-article .myko-fact-grid > div::after { content: ""; display: block; clear: both; }
+.myko-article .chapter-body:has(img) {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 27%);
+}
+.myko-article .chapter-body:has(img) > .chapter-visual { grid-area: 1 / 2; align-self: start; }
+.myko-article .chapter-body:has(img) > .chapter-text { grid-area: 1 / 1; }
+.myko-article .chapter-visual img { width: 100%; max-height: 7rem; }
+@container (max-width: 21rem) {
+    .myko-article .chapter-body:has(img) { grid-template-columns: minmax(0, 1fr); }
+    .myko-article .chapter-body:has(img) > .chapter-visual,
+    .myko-article .chapter-body:has(img) > .chapter-text { grid-area: auto; }
+}
+@media (min-width: 1450px) {
+    .species-archive .myko-article .source-content { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (min-width: 1001px) {
+    .species-archive .myko-article .source-content.myko-packed {
+        grid-auto-rows: 1px;
+        grid-auto-flow: row dense;
+        row-gap: 0;
+    }
+    .species-archive .myko-article .source-content.myko-packed > .chapter-block {
+        grid-row-end: span var(--myko-card-rows, 1);
+    }
+}

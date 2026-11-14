@@ -271,11 +271,11 @@ async function loadAporiaTopbar() {
                 { route: "fraktionen", fragment: "aetherwanderer", label: "Ätherwanderer" }
             ],
             spezies: [
-                { route: "spezies", fragment: "biological", label: "Biologische Spezies" },
-                { route: "spezies", fragment: "mental", label: "Mentale Spezies" },
-                { route: "spezies", fragment: "cosmic", label: "Kosmische Spezies" },
-                { route: "spezies", fragment: "technological", label: "Technologische Lebensformen" },
-                { route: "spezies", fragment: "gigantic", label: "Gigantische Lebensformen" }
+                { route: "spezies-biological", label: "Biologische Spezies" },
+                { route: "spezies-mental", label: "Mentale Spezies" },
+                { route: "spezies-cosmic", label: "Kosmische Spezies" },
+                { route: "spezies-technological", label: "Technologische Lebensformen" },
+                { route: "spezies-gigantic", label: "Gigantische Lebensformen" }
             ],
             rohstoffe: [
                 { route: "rohstoffe", fragment: "elemente", label: "Chemische Elemente" },

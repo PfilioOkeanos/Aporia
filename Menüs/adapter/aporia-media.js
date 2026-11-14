@@ -560,3 +560,12 @@ if (document.readyState === "loading") {
     initializeAporiaMedia();
 
 }
+
+export async function getAporiaMediaCollection(key) {
+    const config = await loadMediaConfig();
+    const entry = findMediaEntry(config, key);
+    return (entry?.items ?? []).map(item => ({
+        ...item,
+        url: resolveMediaPath(item.src),
+    })).filter(item => item.url);
+}

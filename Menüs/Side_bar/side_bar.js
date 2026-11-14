@@ -1,3 +1,4 @@
+import { initializeSidebarDetails } from "./sidebar-details.js";
 
 /* ================================================= */
 /* APORIA - LINKE KATEGORIENNAVIGATION               */
@@ -112,6 +113,7 @@ async function loadAporiaSidebar() {
 
         populatePageDetails();
         applyAporiaRoutes(sidebarHost);
+        initializeSidebarDetails(sidebarHost);
 
 
         /* ========================================= */
@@ -205,43 +207,6 @@ async function loadAporiaSidebar() {
                         "aria-current",
                         "page"
                     );
-
-
-                    /* ZUGEHÖRIGE UNTERMENÜS ÖFFNEN */
-
-                    let panel = link.closest(
-                        ".aporia-sidebar-submenu"
-                    );
-
-                    while (panel) {
-
-                        panel.hidden = false;
-
-                        const parentToggle =
-                            sidebarHost.querySelector(
-                                '[aria-controls="' +
-                                panel.id +
-                                '"]'
-                            );
-
-                        if (parentToggle) {
-
-                            parentToggle.setAttribute(
-                                "aria-expanded",
-                                "true"
-                            );
-
-                            parentToggle.classList.add(
-                                "is-open"
-                            );
-
-                        }
-
-                        panel = panel.parentElement.closest(
-                            ".aporia-sidebar-submenu"
-                        );
-
-                    }
 
                 }
 

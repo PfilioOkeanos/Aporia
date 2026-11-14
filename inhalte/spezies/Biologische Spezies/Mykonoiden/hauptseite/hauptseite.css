@@ -1,0 +1,61 @@
+@import url("../Spezies.css");
+
+.home-scene {
+    position: relative;
+    isolation: isolate;
+    overflow: clip;
+    background:
+        radial-gradient(ellipse at 57% 16%, #614e4866, transparent 54%),
+        radial-gradient(ellipse at 50% 59%, #3a2e258f, transparent 64%),
+        radial-gradient(ellipse at 50% 88%, #d37a463d, transparent 55%),
+        linear-gradient(90deg, #251b2b, #21191f 62%, #100d17);
+}
+.home-scene > img {
+    position: absolute;
+    inset: 0 auto auto 0;
+    z-index: -2;
+    width: min(65%, 76rem, 78vh + 15rem);
+    height: auto;
+    display: block;
+    pointer-events: none;
+    mask-image: linear-gradient(to right, #000 18%, #000f 29%, #000d 43%, #0009 58%, #0005 73%, #0002 87%, #0000 100%),
+                linear-gradient(to bottom, #000 70%, #0000 100%);
+    mask-composite: intersect;
+}
+.home-scene::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient(90deg, transparent 35%, #100c1740 70%, #100c1780 100%);
+}
+.home-scene .home-hero::before {
+    background: none;
+}
+@media (max-width: 680px) {
+    .home-scene > img {
+        width: 100%;
+        mask-image: linear-gradient(to right, #000 30%, #000d 50%, #0007 72%, #0000 100%),
+                    linear-gradient(to bottom, #000 55%, #0000 100%);
+    }
+    .home-scene::before {
+        background: linear-gradient(0deg, #100c1770, transparent 80%);
+    }
+}
+
+/* Mirroring reverses the mask as well, so the right motif fades inward. */
+.home-scene > .scene-right {
+    inset: 0 0 auto auto;
+    width: min(51%, 42rem, 58vh + 10rem);
+    transform: scaleX(-1);
+    opacity: .82;
+    mask-image: linear-gradient(to right, #000 18%, #000e 38%, #000a 55%, #0005 72%, #0001 90%, transparent),
+                linear-gradient(to bottom, #000 68%, transparent);
+}
+@media (max-width: 680px) {
+    .home-scene > .scene-right {
+        top: 2rem;
+        width: 63%;
+        opacity: .52;
+    }
+}

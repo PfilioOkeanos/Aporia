@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Himmelskörper | Aporia</title>
+  <link rel="stylesheet" href="../../../Menüs/Side_bar/Side_bar.css">
+  <link rel="stylesheet" href="../../../Menüs/TopBar/Top_bar.css">
+  <link rel="stylesheet" href="./himmelskoerper.css">
+</head>
+<body data-page="himmelskoerper" data-section="himmelskoerper">
+  <div data-aporia-topbar></div>
+  <div class="aporia-page-frame celestial-frame">
+    <div data-aporia-sidebar></div>
+    <main class="celestial-index">
+      <header class="celestial-hero">
+        <a data-route="home">Weltenarchiv</a>
+        <h1>Himmelskörper</h1>
+        <p>Stöbere durch ferne Welten und hör in ihre gestalteten Klangwelten hinein.</p>
+      </header>
+      <nav class="celestial-jumps" aria-label="Archivbereiche"></nav>
+      <div id="celestial-cards"></div>
+      <section class="world-preview" data-sidebar-details data-sidebar-default aria-labelledby="world-title">
+        <h2 id="world-title">Orvaya</h2>
+        <div class="world-tabs" aria-label="Planetendaten"></div>
+        <p id="world-data" aria-live="polite"></p>
+        <a data-route="orvaya">Planetendossier öffnen →</a>
+      </section>
+    </main>
+  </div>
+  <script type="module" src="../../../Menüs/Side_bar/side_bar.js"></script>
+  <script type="module" src="../../../Menüs/TopBar/Top_bar.js"></script>
+  <script type="module" src="./himmelskoerper.js"></script>
+</body>
+</html>

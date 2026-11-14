@@ -1,0 +1,172 @@
+@import url("../../../_gemeinsam/spezies-archiv.css");
+.species-archive.aero{--archive-background:#04141e;--archive-text:#f1f8ff;--archive-edge:#537f93;--archive-glow:#82e7ff;--archive-accent:#ffc98e;--archive-panel:#092635;color:#f1f8ff}
+.aero .archive-bar{background:#04141ef5;border-color:#396b80}.aero .archive-bar nav a{font-size:.95rem;padding-block:1rem}.aero .archive-bar nav :is(a:hover,a[aria-current]){background:linear-gradient(0deg,#168fa27a,transparent);border-color:#8ef0ff}
+.aero main{--aero-art:url("../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Aeromorphen/hauptseite/sturmwelten_panorama.webp");min-height:100vh;background:radial-gradient(ellipse at 80% 12%,var(--art-tint,#234b67),transparent 53%),linear-gradient(#051923c9,#04141e 90%),var(--aero-art) center top/100% auto no-repeat}
+.aero-hero,.aero-banner{position:relative;display:grid;align-items:center;isolation:isolate;overflow:hidden;padding:clamp(1rem,4vw,4rem);min-height:clamp(15rem,34vw,32rem)}
+.aero-hero{grid-template-columns:1.05fr 1fr;background:linear-gradient(90deg,transparent,#03141e88 64%)}
+.aero-hero .hero-art{width:100%;max-height:36rem;object-fit:contain;mask-image:radial-gradient(ellipse,#000 55%,transparent 100%)}
+.hero-world{position:absolute;z-index:-1;top:0;right:0;width:min(44%,36rem);opacity:.58;mask-image:radial-gradient(ellipse,#000 40%,transparent 72%)}
+.aero-title{max-width:45rem;text-align:center;margin:auto}.aero h1{font:400 clamp(1.85rem,4.6vw,5.5rem)/1.12 Georgia,serif;letter-spacing:.12em;text-transform:uppercase;overflow-wrap:anywhere;margin:.2em 0;color:#fff}
+.aero .subtitle{font-size:clamp(1rem,1.8vw,1.5rem);letter-spacing:.045em;color:#e4f6ff}.aero .subtitle::after{content:"";display:block;height:1px;margin:.8rem 0;background:linear-gradient(90deg,transparent,#ffc98e,transparent)}
+.aero .eyebrow{color:#9de8f5}.aero-facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.45rem;text-align:left}.aero-facts div{display:block;padding:.4rem .6rem;border:1px solid #69b4cb55;border-radius:.5rem;background:#041922b8}.aero-facts dt{color:#ffc98e}
+.aero-tiles,.aero-media-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,11rem),1fr));gap:.8rem;margin-bottom:1.25rem}
+.aero :is(.archive-card,.panel,.chapter-block,.aero-source,.aero-media-card){border:1px solid #68b8d277;background:linear-gradient(145deg,#102e3ee8,#041923ea);box-shadow:inset 0 -2px 12px #60d5fb24;border-radius:14px}
+.aero .archive-card img{aspect-ratio:16/10;object-fit:contain;background:radial-gradient(ellipse,#205268,#061c29);mask-image:linear-gradient(#000 75%,transparent)}
+.aero .archive-card b,.aero h2,.aero summary{color:#ffd29a}.aero-banner{grid-template-columns:1fr 1.25fr;min-height:clamp(13rem,26vw,24rem);border-bottom:1px solid #6db0c477}
+.aero-banner img{grid-column:2;grid-row:1;width:100%;max-height:22rem;object-fit:contain;mask-image:radial-gradient(ellipse,#000 52%,transparent 100%)}
+.aero-banner div{grid-column:1;grid-row:1}.aero-medien .aero-banner,.aero-gesellschaft .aero-banner{text-align:center}
+.aero .crumb{background:#051d29;border-color:#426b80}.aero .crumb a,.aero a{color:#a7f0ff}
+.aero .aero-chapter h2{grid-column:1/-1;grid-row:1}.aero .chapter-visual img{mask-image:linear-gradient(90deg,transparent,#000 4%,#000 96%,transparent),linear-gradient(transparent,#000 4%,#000 96%,transparent);mask-composite:intersect}
+.aero-source{padding:.8rem 1rem;margin:1rem 0}.aero-source p{max-width:76ch}
+.aero .aero-medien .panel{margin-block:1rem}.aero-media-nav,.gallery-controls{display:flex;flex-wrap:wrap;align-items:end;gap:.65rem;justify-content:center;margin:1rem 0}
+.aero-media-nav a,.aero .control{border:1px solid #477f95;background:#082535;border-radius:1rem;padding:.4rem .8rem;text-decoration:none}
+.aero :is(select,button):focus-visible{outline:2px solid #ffc98e}.aero select{max-width:100%;width:100%;background:#062432;color:#fff;border:1px solid #54889a;padding:.45rem;border-radius:.4rem}
+.aero-gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,10rem),1fr));gap:.65rem;max-height:35rem;overflow:auto;padding:.3rem}
+.aero-gallery button,.gallery-preview{background:#061f2c;border:1px solid #527d8e;border-radius:.65rem;padding:.25rem}.aero-gallery button[aria-pressed=true]{border-color:#a4edff}.aero-gallery img{display:block;width:100%;height:7rem;object-fit:contain}
+.gallery-preview{display:block;margin:0 auto 1rem;width:min(100%,52rem)}.gallery-preview img{display:block;width:100%;height:min(52vh,29rem);object-fit:contain}
+.aero [hidden]{display:none!important}.aero-media-card{padding:.8rem;min-width:0}.aero-media-card :is(video,audio){width:100%;display:block;margin:.6rem 0}.aero-media-card video{aspect-ratio:16/9;object-fit:contain;background:#04141e}.aero-media-card h3{margin-top:0}.aero-model{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:1rem}.aero-model img{width:100%;max-height:17rem;object-fit:contain}
+@media(max-width:750px){.aero-hero,.aero-banner,.aero-model{grid-template-columns:minmax(0,1fr)}.aero-banner img,.aero-banner div{grid-column:1;grid-row:auto}.aero-banner img{max-height:13rem}.aero-hero .hero-art{max-height:16rem}.aero-title{text-align:left}}
+
+
+.aero .topic {
+    position: relative;
+    isolation: isolate;
+    background: linear-gradient(135deg, rgb(var(--aero-palette, 35 75 103) / .39), #04141e33 65%), #04141e;
+}
+.aero-light {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+}
+.aero .topic :is(.panel, .chapter-block, .aero-source, .aero-media-card) {
+    background: linear-gradient(145deg, #08233199, #041923ba);
+}
+.aero .topic :is(.aero-banner, .chapter-visual, .aero-model, .gallery-preview, .aero-gallery) img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+    mask-image: linear-gradient(90deg, transparent, #000 3%, #000 97%, transparent),
+                linear-gradient(transparent, #000 3%, #000 97%, transparent);
+    mask-composite: intersect;
+}
+.aero .topic .gallery-preview img { margin-inline:auto; max-height:min(52vh,29rem); }
+.aero .topic .aero-gallery img { margin-inline:auto; max-height:7rem; }
+
+.topic .aero-light::before,
+.topic .aero-light::after {
+    content: "";
+    position: absolute;
+    top: 3rem;
+    width: min(62%, 64rem);
+    height: clamp(32rem, 75vw, 85rem);
+    background: var(--side-art) center top / contain no-repeat;
+    opacity: .27;
+    mask-image: linear-gradient(var(--fade-direction), #000 12%, #000a 42%, #0003 74%, transparent),
+                radial-gradient(ellipse 65% 49% at 50% 42%, #000 24%, #000b 57%, transparent 98%);
+    mask-composite: intersect;
+}
+.topic .aero-light::before {
+    left: 0;
+    --side-art: var(--side-left);
+    --fade-direction: to right;
+}
+.topic .aero-light::after {
+    right: 0;
+    --side-art: var(--side-right);
+    --fade-direction: to left;
+}
+.species-archive .topic .source-content {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(.8rem, 1.5vw, 1.5rem);
+}
+.topic .source-content > .aero-chapter {
+    grid-column: auto;
+}
+.topic .aero-chapter .chapter-body {
+    align-items: start;
+}
+.topic .aero-chapter .chapter-visual img {
+    max-height: 12rem;
+    margin-inline: 0;
+}
+@media (max-width: 850px) {
+    .species-archive .topic .source-content {
+        grid-template-columns: minmax(0, 1fr);
+    }
+    .topic .aero-light::before,
+    .topic .aero-light::after {
+        opacity: .16;
+    }
+}
+
+.anatomy-reference { margin-block: clamp(1.5rem, 3vw, 3rem); }
+.anatomy-reference > h2 { padding-bottom: .55rem; border-bottom: 1px solid #68b8d275; }
+.anatomy-reference .chapter-text dt { color: var(--archive-accent); }
+
+
+@media (min-width: 1200px) {
+    .species-archive.aero .topic .source-content {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    .aero .source-content > [data-card-type="vollbreite"] { grid-column: 1 / -1; }
+}
+
+.aero .aero-redesign {
+    background: linear-gradient(105deg,#04141eec,#04141ea3 55%,#04141edd),
+                var(--topic-art) center top / cover fixed, #04141e;
+}
+.species-archive.aero .aero-redesign > .shell { width: calc(100% - clamp(1rem, 1.8vw, 2.5rem)); }
+.aero-topic-layout { display:grid; gap:.65rem; align-items:start; padding-top:.4rem; }
+.aero-topic-layout > * { min-width:0; }
+.aero-redesign .aero-banner { display:block; min-height:0; padding:.45rem .75rem; text-align:left; }
+.aero-redesign .aero-banner h1 { font-size:clamp(1.45rem, 3.3vw, 3.4rem); margin-block:.1rem; }
+.aero-redesign .aero-banner :is(.eyebrow,.subtitle) { margin-block:.2rem; }
+.aero-topic-index,.aero-topic-card {
+    padding:.65rem;
+    border:1px solid #69c5e59c;
+    border-radius:.8rem;
+    background:linear-gradient(130deg,#0b293bed,#061b29db);
+}
+.aero-topic-index a { display:block; padding:.35rem 0; text-decoration:none; border-bottom:1px solid #69c5e534; }
+.aero-topic-index h2 { margin-top:0; }
+.aero-topic-cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,15rem),1fr)); gap:.5rem; margin-top:.5rem; align-items:start; }
+.aero-topic-card { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,34%); align-items:center; gap:.4rem; }
+.aero-topic-card h2 { margin:0; font-size:1.15rem; }
+.aero-topic-card ul { margin:.25rem 0 0; padding-inline-start:1rem; }
+.aero-topic-card li::marker { color:#ffc98e; }
+.aero-topic-card img { width:100%; max-height:8rem; object-fit:contain; }
+.aero-topic-facts .anatomy-reference { margin:0; }
+.species-archive.aero .aero-redesign .aero-topic-facts .source-content { grid-template-columns:1fr; gap:.45rem; }
+.aero-redesign .aero-topic-facts .chapter-visual { display:none; }
+.aero-redesign .aero-topic-facts .aero-chapter { padding:.55rem .7rem; }
+.aero-redesign .aero-topic-content .aero-chapter { padding:.65rem .75rem; scroll-margin-top:8rem; }
+.aero-redesign .aero-topic-content .aero-chapter > :is(h2,h3) { font-size:clamp(1.05rem,1.35vw,1.45rem); }
+.aero-redesign .aero-topic-content .chapter-text > :is(p,ul,ol) { margin-block:.2rem .5rem; }
+.aero-redesign .aero-topic-content .chapter-text > :last-child { margin-bottom:0; }
+.aero-topic-card img,.aero-redesign .chapter-visual img {
+    mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent), linear-gradient(transparent,#000 7%,#000 93%,transparent);
+    mask-composite:intersect;
+}
+.aero-redesign #fachquelle,.aero-redesign #speziesdaten-ueberblick { scroll-margin-top:8rem; }
+@media (min-width: 1180px) {
+    .aero-topic-layout { grid-template-columns:minmax(9rem,11rem) minmax(0,1fr) minmax(15rem,19%); }
+    .aero-topic-index { grid-row:1 / span 2; position:sticky; top:5.6rem; max-height:calc(100vh - 6.5rem); overflow:auto; }
+    .aero-topic-content { grid-column:2 / -1; }
+    .aero-medien .aero-topic-layout { grid-template-columns:minmax(0,1fr) minmax(15rem,22%); }
+    .aero-medien .aero-topic-content { grid-column:1 / -1; }
+}
+@media (min-width: 1400px) {
+    .aero-redesign .aero-topic-content .chapter-body:has(img) {
+        grid-template-columns:minmax(0,1fr) minmax(0,31%);
+        grid-template-areas:"copy art";
+    }
+    .aero-redesign .aero-topic-content .chapter-body:has(img) > .chapter-text { grid-area:copy; }
+    .aero-redesign .aero-topic-content .chapter-body:has(img) > .chapter-visual { grid-area:art; }
+}
+@media (max-width: 1179px) {
+    .aero-topic-index { display:flex; flex-wrap:wrap; align-items:center; gap:.3rem .7rem; }
+    .aero-topic-index h2 { margin:0; font-size:1rem; }
+    .aero .aero-redesign { background-attachment:scroll; }
+}

@@ -1,0 +1,72 @@
+body[data-page="himmelskoerper"] {
+  margin: 0;
+  color: #f4e6cc;
+  background: #0b1419;
+  font-family: Georgia, serif;
+}
+.celestial-frame { display: flex; }
+.celestial-index {
+  flex: 1;
+  min-width: 0;
+  padding: clamp(18px, 4vw, 64px);
+  background: radial-gradient(ellipse at 75% 0%, #233935, transparent 34rem),
+              radial-gradient(ellipse at 3% 35%, #24213b, transparent 46rem);
+}
+.celestial-hero, .celestial-jumps, #celestial-cards, .world-preview {
+  max-width: 1360px;
+  margin-inline: auto;
+}
+.celestial-hero h1 { font-size: clamp(2rem, 6vw, 5rem); margin: .3em 0 .12em; overflow-wrap: anywhere; }
+.celestial-index a { color: #f0cd91; }
+.celestial-jumps, .world-tabs { display: flex; flex-wrap: wrap; gap: .55rem; margin-block: 1.6rem; }
+.celestial-jumps a, .celestial-index button {
+  border: 1px solid #947d58;
+  border-radius: 999px;
+  padding: .55rem .85rem;
+  background: #101d22;
+  color: #f4e6cc;
+  font: inherit;
+}
+.celestial-index button { cursor: pointer; }
+.celestial-index button[aria-pressed="true"], .celestial-index button:hover { background: #304439; }
+.celestial-index :focus-visible { outline: 2px solid #ffe0a2; outline-offset: 5px; }
+.celestial-group { margin-block: 2.5rem; scroll-margin-top: 8rem; }
+.celestial-group h2 { border-bottom: 1px solid #947d585e; padding-bottom: .65rem; }
+.orbit-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 205px), 1fr));
+  gap: 1.75rem;
+}
+.orbit-card { text-align: center; min-width: 0; }
+.orbit-card h3 { margin: .8rem 0 .6rem; overflow-wrap: anywhere; }
+.orbit-image {
+  display: block;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  width: min(100%, 245px);
+  aspect-ratio: 1;
+  margin-inline: auto;
+  border-radius: 50%;
+  border: 2px solid #a88c62;
+  background: radial-gradient(circle at 40% 25%, #405a51, #111b28 70%);
+  box-shadow: 0 0 0 5px #bc9b621e, 0 12px 30px #030508aa;
+}
+.orbit-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  box-shadow: inset 0 0 28px #060911bb;
+  background: linear-gradient(155deg, #ffe2a720, transparent 45%, #090e19a0);
+  pointer-events: none;
+}
+.orbit-image img { width: 100%; height: 100%; object-fit: cover; }
+.orbit-image:hover { border-color: #ffe0a2; }
+.world-preview {
+  padding: clamp(1rem, 3vw, 2.5rem);
+  border: 1px solid #947d58;
+  border-radius: 1.5rem;
+  background: linear-gradient(145deg, #253b34, #121d29);
+}
+.world-preview p { min-height: 3em; line-height: 1.6; }

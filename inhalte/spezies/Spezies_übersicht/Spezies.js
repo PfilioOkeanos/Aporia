@@ -1,4 +1,4 @@
-import { applyAporiaRoutes } from "../../../Menüs/adapter/aporia-routes.js";
+import { applyAporiaRoutes, getAporiaRoute } from "../../../Menüs/adapter/aporia-routes.js";
 import "../../../Menüs/TopBar/Top_bar.js";
 import "../../../Menüs/Side_bar/side_bar.js";
 
@@ -44,58 +44,19 @@ const imageForWave = {
   technological: groups.technological.image,
   gigantic: groups.gigantic.image,
 };
-const menu = document.querySelector("#group-menu");
-const menuTitle = document.querySelector("#group-menu-title");
-const menuRange = document.querySelector("#group-menu-range");
-const menuDescription = document.querySelector("#group-menu-description");
-const menuArt = document.querySelector(".menu-art");
-const waveButtons = [...document.querySelectorAll(".group-wave[data-group]")];
-let activeButton = null;
-
-for (const button of waveButtons) {
-  const image = button.querySelector(".wave-art");
-  image.src = new URL(imageForWave[button.dataset.group], import.meta.url).href;
-  button.addEventListener("click", () => openGroup(button));
+for (const button of document.querySelectorAll(".group-wave[data-group]")) {
+    const key = button.dataset.group;
+    const link = document.createElement("a");
+    link.className = button.className;
+    link.dataset.group = key;
+    link.dataset.route = "spezies-" + key;
+    link.append(...button.childNodes);
+    link.querySelector(".wave-art").src = new URL(imageForWave[key], import.meta.url).href;
+    button.replaceWith(link);
 }
+applyAporiaRoutes(document);
 
-function openGroup(button) {
-  const group = groups[button.dataset.group];
-  if (!group || !menu) return;
-  activeButton?.setAttribute("aria-expanded", "false");
-  activeButton = button;
-  activeButton.setAttribute("aria-expanded", "true");
-  menuTitle.textContent = group.title;
-  menuRange.textContent = group.range;
-  menuDescription.textContent = group.description;
-  menuArt.src = new URL(group.image, import.meta.url).href;
-  menuArt.alt = `Abstraktes Gruppenmotiv: ${group.title}`;
-  menu.hidden = false;
-  menu.scrollIntoView({ behavior: "smooth", block: "nearest" });
+const legacyGroup = location.hash.slice(1);
+if (Object.hasOwn(groups, legacyGroup)) {
+    location.replace(getAporiaRoute("spezies-" + legacyGroup));
 }
-
-function closeGroup() {
-  if (!menu) return;
-  menu.hidden = true;
-  if (activeButton && window.location.hash === "#" + activeButton.dataset.group) {
-    const url = new URL(window.location.href);
-    url.hash = "";
-    window.history.replaceState(null, "", url);
-  }
-  activeButton?.setAttribute("aria-expanded", "false");
-  activeButton?.focus();
-  activeButton = null;
-}
-
-document.querySelector("[data-close-menu]")?.addEventListener("click", closeGroup);
-document.addEventListener("keydown", (event) => {
-  if (event.key === "Escape" && menu && !menu.hidden) closeGroup();
-});
-
-function openGroupFromLocation() {
-  const group = window.location.hash.slice(1);
-  const button = waveButtons.find(item => item.dataset.group === group);
-  if (button) openGroup(button);
-}
-
-window.addEventListener("hashchange", openGroupFromLocation);
-openGroupFromLocation();

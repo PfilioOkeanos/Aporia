@@ -88,3 +88,140 @@
 @media (max-width: 980px) {
     .celestial-layout { grid-template-columns: minmax(0, 1fr); }
 }
+
+.exploration-dossier {
+    display: grid;
+    gap: .65rem;
+    margin-block: 1.5rem 3rem;
+}
+.exploration-dossier > details {
+    border: 1px solid #8e7d53;
+    border-radius: .75rem;
+    background: linear-gradient(145deg, #162c20, #0c1d16);
+    scroll-margin-top: 8rem;
+}
+.exploration-dossier summary {
+    padding: .85rem 1rem;
+    cursor: pointer;
+    color: #f2cf84;
+}
+.exploration-content, .exploration-dossier details > div:not(.exploration-content) {
+    padding: 0 1rem 1rem;
+}
+.exploration-content { min-height: 5rem; }
+.exploration-content p { margin: .5rem 0; }
+
+main.celestial-page-artwork {
+    width: 100%;
+    max-width: none;
+    min-width: 0;
+    min-height: 100vh;
+    flex: 1;
+    margin-inline: 0;
+    background:
+        linear-gradient(90deg, #081610db, #08161022 45%, #081610a8),
+        linear-gradient(180deg, #08161055, transparent 35%, #081610cc),
+        var(--dossier-art) center 35% / cover no-repeat,
+        #081610;
+    background-attachment: fixed;
+}
+.celestial-page-artwork .exploration-dossier > details {
+    background: linear-gradient(90deg, #081610ed, #08161070 65%, #081610a8);
+}
+.celestial-page-artwork .exploration-content {
+    max-width: 44rem;
+    background: #081610dc;
+}
+@media (max-width: 760px) {
+    main.celestial-page-artwork { background-attachment: scroll; }
+}
+
+.exploration-image-link {
+    justify-self: start;
+    color: #f2cf84;
+}
+
+.dossier-note {
+    display: grid;
+    padding: 0 1rem 1rem;
+}
+.dossier-note-surface,
+.dossier-note-actions {
+    grid-area: 1 / 1;
+}
+.dossier-note-surface {
+    min-height: 8rem;
+    padding-block: 4.5rem .5rem;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    line-height: 1.5;
+    cursor: text;
+}
+.dossier-note-surface:focus-visible {
+    outline: none;
+    box-shadow: inset 0 -1px #b69a60;
+}
+.dossier-note-actions {
+    align-self: start;
+    justify-self: end;
+    position: relative;
+}
+
+.dossier-note-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    justify-content: flex-end;
+    max-width: 14rem;
+}
+.dossier-note button {
+    padding: .35rem .55rem;
+    border: 1px solid #8e7d53;
+    border-radius: .35rem;
+    color: inherit;
+    background: #11251d;
+    font: inherit;
+    cursor: pointer;
+}
+.dossier-note button:disabled { opacity: .55; cursor: default; }
+.dossier-note-actions [role="status"] { flex-basis: 100%; font-size: .85rem; }
+
+.dossier-note-actions {
+    grid-area: auto;
+    grid-row: 1;
+    max-width: none;
+}
+.dossier-note-surface {
+    grid-area: auto;
+    grid-row: 2;
+    padding-block: .5rem;
+}
+.dossier-note-surface img {
+    display: block;
+    max-width: 100%;
+    max-height: 32rem;
+    object-fit: contain;
+    margin-block: .5rem;
+}
+.exploration-dossier summary [contenteditable],
+.exploration-dossier dd[contenteditable] { cursor: text; }
+
+.dossier-note-options {
+    grid-row: 1;
+    justify-self: end;
+    max-width: 100%;
+}
+.dossier-note-options > summary {
+    padding: .3rem .6rem;
+    border: 1px solid #8e7d53;
+    border-radius: .35rem;
+    background: #11251d;
+}
+.dossier-note-options .dossier-note-actions {
+    margin-top: .45rem;
+}
+.dossier-note-status {
+    grid-row: 3;
+    font-size: .85rem;
+}
+.dossier-note-status:empty { display: none; }

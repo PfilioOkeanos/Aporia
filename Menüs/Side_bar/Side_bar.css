@@ -306,3 +306,29 @@
     }
 
 }
+
+.sidebar-details {
+    margin-bottom: 1rem;
+    padding: .8rem;
+    border: 1px solid var(--sidebar-line, #947d58);
+    border-radius: .75rem;
+}
+.sidebar-details[hidden] { display: none; }
+.sidebar-details h2 { margin: 0 0 .65rem; font-size: 1rem; }
+.sidebar-details a,
+.sidebar-details button {
+    display: block;
+    width: 100%;
+    margin: .25rem 0;
+    padding: .45rem .55rem;
+    border: 1px solid transparent;
+    border-radius: .35rem;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+}
+.sidebar-details :is(a, button):hover,
+.sidebar-details :is(a, button):focus-visible { border-color: currentColor; }
+[data-sidebar-details], main h2[id] { scroll-margin-top: 8rem; }

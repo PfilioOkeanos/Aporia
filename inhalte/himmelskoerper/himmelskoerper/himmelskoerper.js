@@ -1,3 +1,6 @@
-import { initializeAtlas } from "../_gemeinsam/atlas.js";
+import { getAporiaRoute } from "../../../Menüs/adapter/aporia-routes.js";
 
-initializeAtlas();
+const overview = new URL(getAporiaRoute("himmelskoerper"));
+overview.search = location.search;
+overview.hash = location.hash;
+location.replace(overview);

@@ -1,0 +1,48 @@
+
+/* The outer grid may grow independently of the reading width. */
+.species-detail-shell,.species-archive .shell{box-sizing:border-box;width:min(95%,1760px);max-width:none;margin-inline:auto;padding-inline:0}
+.species-archive .topic-layout{grid-template-columns:minmax(0,1fr)}
+.species-archive .topic-layout>.grid{display:contents}
+.species-archive .topic-art{grid-row:auto}
+.species-archive .topic-aside{grid-template-columns:repeat(2,minmax(0,1fr))}
+.species-archive .topic-art img{max-height:290px}
+.species-archive .topic .source-content{max-width:none;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:.9rem;margin-block:.75rem}
+.source-content>*{grid-column:1/-1;min-width:0}
+.source-content>.chapter-block{grid-column:span var(--card-span,6);margin:0;align-content:start;align-self:start;grid-template-columns:minmax(0,1fr)}
+.chapter-block .chapter-text>p,.chapter-block .chapter-text>ul,.chapter-block .chapter-text>ol{max-width:76ch}
+.chapter-block .chapter-text h5{margin-block:1rem .45rem}
+.chapter-block .chapter-visual{justify-items:start}
+.chapter-block[data-card-type="besonderheit"]{box-shadow:inset 3px 0 var(--gold)}
+.chapter-block[data-card-type="fakten"] .chapter-visual span{border-radius:50%}
+.chapter-block .table-scroll{max-width:100%}
+.chapter-block [data-comparison],.chapter-block [data-gallery]{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,12rem),1fr));gap:.7rem}
+.species-detail-hero{grid-template-columns:minmax(0,8fr) minmax(0,4fr)}
+.species-detail-panels{grid-template-columns:repeat(12,minmax(0,1fr))}
+.species-detail-panels>.species-detail-panel{grid-column:span var(--card-span,4);min-width:0}
+.species-detail-panel p{max-width:75ch;overflow-wrap:anywhere}
+@media(max-width:1280px){.source-content>.chapter-block:not([data-card-type="vollbreite"]){grid-column:span 6}.species-detail-panels>.species-detail-panel{grid-column:span 6}}
+@media(max-width:850px){.species-detail-hero{grid-template-columns:1fr}.species-archive .topic-aside{grid-template-columns:1fr}.source-content>.chapter-block,.source-content>.chapter-block:not([data-card-type="vollbreite"]),.species-detail-panels>.species-detail-panel{grid-column:1/-1}}
+
+
+.species-archive .topic-layout>.topic-art,.species-archive .topic-layout>.topic-aside{grid-column:1/-1}
+@media(max-width:850px){.species-archive .topic .source-content{grid-template-columns:minmax(0,1fr)}}
+
+/* Titles occupy a dedicated full-width row. Only the content may split. */
+.chapter-block > :is(h2,h3,h4,h5,h6){
+    grid-column:1/-1;grid-row:1;min-width:0;word-break:normal;overflow-wrap:normal;hyphens:auto
+}
+.chapter-block > .chapter-visual,.chapter-block > .chapter-text{grid-column:1;min-width:0}
+.chapter-block > .chapter-visual{grid-row:2}
+.chapter-block > .chapter-text{grid-row:3;overflow-wrap:break-word}
+.chapter-block .chapter-visual img{width:min(100%,26rem);max-height:20rem;object-fit:contain;object-position:left top}
+
+.chapter-body{display:grid;gap:.75rem;grid-template-columns:minmax(0,1fr)}
+.chapter-body>.chapter-text{overflow-wrap:break-word}
+.chapter-body>.chapter-visual,.chapter-body>.chapter-text{min-width:0;grid-area:auto}
+.chapter-block{container-type:inline-size}
+@container (min-width: 35rem){
+    .chapter-body:has(> .chapter-visual img){grid-template-columns:minmax(0,1fr) minmax(0,2fr)}
+    .chapter-reverse>.chapter-body:has(> .chapter-visual img){grid-template-columns:minmax(0,2fr) minmax(0,1fr)}
+    .chapter-reverse>.chapter-body:has(> .chapter-visual img)>.chapter-visual{grid-column:2;grid-row:1}
+    .chapter-reverse>.chapter-body:has(> .chapter-visual img)>.chapter-text{grid-column:1;grid-row:1}
+}

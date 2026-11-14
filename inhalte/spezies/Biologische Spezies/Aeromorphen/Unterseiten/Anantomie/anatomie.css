@@ -1,0 +1,200 @@
+@import url("../../Hauptseite_%C3%BCbersicht/Spezies.css");
+
+.aero .aero-anatomie {
+    --side-left: url("../../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Aeromorphen/Unterseiten/Medien/aeromorphen-ganzkoerper-01.png");
+    --side-right: url("../../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Aeromorphen/Unterseiten/Medien/aeromorphen-ganzkoerper-07.png");
+}
+
+
+
+.aero-anatomie .aero-banner { min-height: 0; padding-block: .35rem; }
+.anatomy-index, .anatomy-summary, .anatomy-details .aero-chapter {
+    border: 1px solid #69c5e5a0;
+    border-radius: .85rem;
+    background: linear-gradient(130deg, #0b293bee, #061b29db);
+    box-shadow: inset 0 1px 13px #b588f42e;
+}
+.anatomy-index a { text-decoration: none; }
+.anatomy-summary li::marker { content: "▸ "; color: var(--archive-accent); }
+.anatomy-layout { display: grid; grid-template-columns: minmax(10rem, 13rem) minmax(0, 1fr); gap: .35rem .55rem; align-items: start; }
+.anatomy-index { align-self: start; padding: .7rem; }
+.anatomy-index a { display: block; padding: .45rem .35rem; border-bottom: 1px solid #69c5e534; }
+.anatomy-index span, .anatomy-summary h2 span { color: var(--archive-accent); }
+.anatomy-overview { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .5rem; align-items: start; }
+.anatomy-summary { display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); align-items: center; padding: .52rem .62rem; gap: .45rem; min-width: 0; scroll-margin-top: 7rem; }
+.anatomy-summary h2 { font-size: clamp(1.1rem, 1.6vw, 1.6rem); letter-spacing: .08em; text-transform: uppercase; }
+.anatomy-summary ul { margin: 0; padding-left: 1rem; font-size: .92rem; line-height: 1.45; }
+.anatomy-summary img { width: 100%; max-height: 10rem; object-fit: contain; mask-image: radial-gradient(ellipse, #000 42%, transparent 74%); }
+.anatomy-summary-wide { grid-column: 1 / -1; }
+.anatomy-emblem { text-align: center; font-size: 3rem; color: var(--archive-glow); }
+
+.aero .anatomy-details { grid-column: 2; min-width: 0; margin: 0 0 2rem; }
+.aero .anatomy-details :is(h2[id], #anatomie-details), .aero .anatomy-details { scroll-margin-top: 8rem; }
+.aero .anatomy-details > h2, .aero .anatomy-details .anatomy-reference > h2 {
+    padding: .6rem .8rem;
+    border-bottom: 1px solid #69c5e579;
+    background: linear-gradient(90deg, #0b293b, transparent);
+    letter-spacing: .06em;
+}
+.species-archive.aero .aero-anatomie .anatomy-details .source-content {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: .65rem;
+}
+.aero .anatomy-details .aero-chapter { padding: clamp(.5rem, .7vw, .8rem); }
+.aero .anatomy-details .aero-chapter > :is(h2, h3) {
+    color: var(--archive-accent);
+    border-bottom: 1px solid #69c5e554;
+    padding-bottom: .45rem;
+}
+@media (min-width: 1051px) {
+    .anatomy-index { position: sticky; top: 5.6rem; grid-column: 1; grid-row: 1 / span 2; max-height: calc(100vh - 6.5rem); overflow: auto; }
+}
+@media (max-width: 1050px) { .aero .anatomy-details { grid-column: 1; } }
+@media (max-width: 720px) {
+    .species-archive.aero .aero-anatomie .anatomy-details .source-content { grid-template-columns: minmax(0, 1fr); }
+}
+
+@media (max-width: 1050px) {
+    .anatomy-layout { grid-template-columns: 1fr; }
+    .anatomy-index { display: flex; flex-wrap: wrap; gap: .25rem .65rem; align-items: center; }
+}
+@media (max-width: 720px) {
+    .anatomy-overview { grid-template-columns: 1fr; }
+    .anatomy-summary img { max-height: 7rem; }
+}
+
+.aero .aero-anatomie > .shell { width: calc(100% - clamp(1rem, 1.6vw, 2.5rem)); }
+.anatomy-facts { min-width: 0; }
+.anatomy-facts .anatomy-reference { margin-block: 0; }
+.species-archive.aero .aero-anatomie .anatomy-facts .source-content {
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+}
+.aero .anatomy-facts .aero-chapter {
+    border-color: #69c5e5a0;
+    background: linear-gradient(130deg, #0b293bee, #061b29db);
+}
+.aero .anatomy-details .chapter-visual img {
+    width: 100%;
+    height: auto;
+    max-height: clamp(6rem, 9vw, 9rem);
+    object-position: center;
+}
+@media (min-width: 1051px) {
+    .anatomy-facts { grid-column: 2; }
+}
+@media (min-width: 1320px) {
+    .anatomy-layout {
+        grid-template-columns: minmax(9.5rem, 11rem) minmax(0, 1fr) clamp(17rem, 19vw, 28rem);
+    }
+    .anatomy-facts { grid-column: 3; grid-row: 1; margin-block-start: .5rem; }
+    .aero .anatomy-details { grid-column: 2 / -1; }
+}
+
+/* Cards keep their own height and use compact spacing around their content. */
+.anatomy-overview, .anatomy-facts .source-content, .anatomy-details .source-content {
+    align-items: start;
+}
+.aero .anatomy-facts .chapter-body, .aero .anatomy-details .chapter-body {
+    gap: .35rem .6rem;
+}
+.aero .anatomy-facts .aero-chapter { padding: .5rem .65rem; gap: .25rem; }
+.aero .anatomy-facts .chapter-visual { display: none; }
+.aero .anatomy-summary h2, .aero .anatomy-facts .aero-chapter > h3 { margin-bottom: .3rem; }
+.aero :is(.anatomy-facts, .anatomy-details) .chapter-text > :is(p, ul, ol) { margin-block: .25rem .5rem; }
+.aero :is(.anatomy-facts, .anatomy-details) .chapter-text > :last-child { margin-bottom: 0; }
+.aero .anatomy-facts dl { line-height: 1.4; }
+.aero .anatomy-facts dl div {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.55fr);
+    gap: .35rem;
+    padding-block: .2rem;
+}
+/* Match the overview: compact text at left and artwork at right. */
+.aero .anatomy-details .aero-chapter > :is(h2, h3) {
+    font-size: clamp(1rem, 1.3vw, 1.5rem);
+    letter-spacing: .06em;
+    margin: 0;
+}
+.aero .anatomy-details .chapter-body {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 32%);
+    grid-template-areas: "copy art";
+    align-items: start;
+}
+.aero .anatomy-details .chapter-body > .chapter-text { grid-area: copy; }
+.aero .anatomy-details .chapter-body > .chapter-visual {
+    grid-area: art;
+    align-self: center;
+}
+.aero .anatomy-details .chapter-visual img { mask-image: radial-gradient(ellipse, #000 45%, transparent 75%); mask-composite: add; }
+@media (max-width: 850px) {
+    .aero .anatomy-details .chapter-body {
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-areas: "art" "copy";
+    }
+}
+
+@media (min-width: 851px) {
+    .species-archive.aero .aero-anatomie .anatomy-details .source-content.is-packed {
+        grid-auto-rows: 1px;
+        grid-auto-flow: row dense;
+        row-gap: 0;
+    }
+    .anatomy-details .source-content.is-packed > .aero-chapter {
+        grid-row-end: span var(--anatomy-card-rows, 1);
+    }
+}
+
+@media (min-width: 1320px) {
+        .anatomy-layout > .anatomy-overview { grid-column: 2; grid-row: 1; }
+}
+
+.aero-anatomie .aero-banner h1 { font-size: clamp(1.8rem, 2.65vw, 2.8rem); margin-block: .1rem; }
+.aero-anatomie .aero-banner :is(.eyebrow, .subtitle) { margin-block: .15rem; }
+.aero-anatomie .aero-banner .subtitle::after { margin-block: .35rem; }
+
+.aero .aero-anatomie .aero-banner { display: block; }
+.aero .aero-anatomie {
+    background:
+        linear-gradient(110deg, #04141ee0, #04141e5c 52%, #04141e99),
+        linear-gradient(180deg, transparent 12%, #04141edb 85%),
+        url("../../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Aeromorphen/Unterseiten/anatomie/aeromorph_koerper_hero.webp") center top / cover fixed,
+        #04141e;
+}
+
+.anatomy-overview > .aero-banner { grid-column: 1 / -1; min-width: 0; }
+
+/* Let the illustration fill the spare space alongside the facts. */
+.anatomy-flight-art {
+    position: relative;
+    isolation: isolate;
+    grid-column: 1 / -1;
+    align-self: stretch;
+    display: grid;
+    place-items: center;
+    margin: 0;
+    min-height: clamp(9rem, 20vw, 18rem);
+}
+.anatomy-flight-art::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: radial-gradient(ellipse at 56% 52%, #9764516e, #7953482d 43%, transparent 72%),
+                radial-gradient(ellipse at 40% 56%, #2675968c, #214c683e 48%, transparent 74%);
+}
+.anatomy-flight-art img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: clamp(9rem, 24vw, 26rem);
+    mask-image: linear-gradient(90deg, transparent, #000 16%, #000 84%, transparent),
+                linear-gradient(transparent, #000 14%, #000 80%, transparent);
+    mask-composite: intersect;
+}
+@media (min-width: 1320px) {
+    .anatomy-layout > .anatomy-overview {
+        align-self: stretch;
+        grid-template-rows: auto auto auto auto auto auto minmax(12rem, 1fr);
+    }
+}
