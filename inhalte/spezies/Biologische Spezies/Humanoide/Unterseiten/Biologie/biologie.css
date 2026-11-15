@@ -1,0 +1,75 @@
+@import url("../../Hauptseite/Spezies.css");
+.humanoid-biology { --biology-frame:url("../../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Humanoide/Unterseiten/Biologie/ChatGPT-Bild%2014.%20Nov.%202026%2C%2015_53_45-10.png"); --biology-banner:url("../../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Humanoide/Unterseiten/Biologie/ChatGPT-Bild%2014.%20Nov.%202026%2C%2015_53_22-2.png"); }
+.ha-layout {
+    box-sizing: border-box;
+    width: 100%;
+    padding-inline: clamp(.45rem, .65vw, 1rem);
+    margin: auto;
+    padding-block: .7rem 2rem;
+    display: grid;
+    grid-template-columns: clamp(9rem, 11vw, 15rem) minmax(0, 1fr) clamp(15rem, 18vw, 28rem);
+    grid-template-areas: "nav title title" "nav content side";
+    align-items: start;
+    gap: .7rem;
+}
+.ha-nav { grid-area: nav; }
+.ha-title {
+    grid-area: title;
+    padding: clamp(.8rem, 2.2vw, 2rem);
+    background: linear-gradient(90deg,#061824 20%,#06182400), var(--biology-banner) center right / cover;
+    border-bottom: 1px solid #ffc98c;
+    border-radius: .8rem .8rem 0 0;
+}
+.ha-title h1 { font: 400 clamp(2.2rem, 5vw, 4.3rem)/1 Georgia,serif; margin: 0; }
+.ha-title p { margin: .4rem 0 0; }
+.ha-side { grid-area: side; }
+.ha-content { grid-area: content; min-width: 0; }
+.ha-content,.ha-side { display: grid; gap: .65rem; }
+.ha-card {
+    min-width: 0;
+    padding: .85rem;
+    overflow-wrap: anywhere;
+    border: 7px solid #3a8ca2;
+    border-image: var(--biology-frame) 160 160 160 160 / 11px stretch;
+    background: linear-gradient(145deg,#0b2b3c,#03151e);
+    background-clip: padding-box;
+    scroll-margin-top: 7rem;
+}
+.ha-card > * { min-width: 0; }
+.ha-card h2,.ha-card h3 { line-height: 1.2; color: #e4f7ff; margin: 0 0 .5rem; }
+.ha-card p { margin: .35rem 0; }
+.ha-card img { display: block; max-width: 100%; object-fit: contain; }
+.ha-nav img { max-height: 5.5rem; margin: auto; }
+.ha-nav a { display: block; text-decoration: none; padding: .36rem 0; border-top: 1px solid #2d5267; }
+.ha-side > section > img { max-height: 20rem; margin: auto; }
+.ha-side dl div { grid-template-columns: minmax(0,1fr); gap: .15rem; }
+.ha-side dt { display: flex; align-items: center; gap: .4rem; }
+.ha-side dt img { width: 1.8rem; flex: 0 0 1.8rem; }
+.ha-side dd { margin-inline-start: 0; }
+.ha-side ul { padding-inline-start: 1.2rem; }
+.ha-overview { display: grid; grid-template-columns: minmax(0,.75fr) minmax(0,2fr) minmax(0,1.1fr); gap: .75rem; align-items: center; }
+.ha-overview > img { max-height: 22rem; margin: auto; }
+.ha-dna img { border-radius: .5rem; margin-bottom: .35rem; }
+.ha-shortcuts,.ha-grid { display: grid; gap: .45rem; }
+.ha-shortcuts { grid-template-columns: repeat(auto-fit,minmax(min(100%,5.6rem),1fr)); margin-top: .65rem; }
+.ha-shortcuts a { text-align: center; padding: .3rem; font-size: .78rem; text-decoration: none; }
+.ha-shortcuts img { width: 2.5rem; margin: auto; }
+.ha-grid { grid-template-columns: repeat(2,minmax(0,1fr)); align-items: start; }
+.ha-systems { grid-template-columns: repeat(auto-fit,minmax(min(100%,14rem),1fr)); }
+.ha-tile { display: grid; grid-template-columns: minmax(0,26%) minmax(0,1fr); gap: .65rem; align-items: start; padding: .65rem; }
+.ha-tile img { width: 100%; max-height: 9rem; border-radius: .4rem; }
+.ha-tile h3 { font: 650 1rem/1.25 system-ui,sans-serif; }
+.ha-tile ul { padding-inline-start: 1.2rem; margin-block: .35rem; }
+@media(max-width: 1050px) {
+    .ha-layout { grid-template-columns: minmax(0,1fr) minmax(12rem,25%); grid-template-areas: "title title" "nav nav" "content side"; }
+    .ha-nav { position: static; display: flex; align-items: center; flex-wrap: wrap; gap: .35rem .75rem; }
+    .ha-nav img { display:none; }
+    .ha-overview { grid-template-columns: minmax(0,1fr) minmax(0,2fr); }
+    .ha-dna { grid-column: 1/-1; }
+    .ha-dna img { max-height: 8rem; }
+}
+@media(max-width: 680px) {
+    .ha-layout { grid-template-columns: minmax(0,1fr); grid-template-areas: "title" "nav" "side" "content"; }
+    .ha-overview,.ha-grid { grid-template-columns: minmax(0,1fr); }
+    .ha-overview > img { max-height: 13rem; }
+}

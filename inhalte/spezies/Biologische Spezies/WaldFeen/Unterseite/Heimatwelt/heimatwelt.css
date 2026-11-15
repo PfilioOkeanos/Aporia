@@ -1,0 +1,106 @@
+@import url("../Geschichte/geschichte.css");
+
+.waldfeen .wf-world-page {
+    background: radial-gradient(ellipse at 72% 0, #37432b, #0b160f 58rem);
+}
+
+.wf-world-page .wf-world-title {
+    grid-area: title;
+    padding: clamp(1.4rem, 3.5vw, 4rem);
+    background:
+        linear-gradient(90deg, #0b170ff5 3%, #0b170fbc 32%, #0b170f24 85%),
+        url("../../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/WaldFeen/hauptseite/orvaya_wasserfaelle_und_taeler.jpg") center 47% / cover;
+}
+
+.wf-world-title h1 {
+    margin: .2rem 0;
+    font: clamp(2.6rem, 5.5vw, 5rem)/1.06 Georgia, serif;
+}
+
+.wf-world-title p:last-child { margin: 0; }
+
+.wf-world-intro {
+    display: grid;
+    grid-template-columns: minmax(0, 36%) minmax(0, 1fr);
+    gap: clamp(.7rem, 2vw, 1.6rem);
+    align-items: center;
+}
+
+.wf-world-intro figure { margin: 0; text-align: center; }
+.wf-world-intro figure img {
+    width: min(100%, 21rem);
+    aspect-ratio: 1;
+    margin-inline: auto;
+    border-radius: 50%;
+    mask-image: radial-gradient(circle closest-side, #000 83%, #000c 92%, transparent);
+}
+
+.wf-world-caption, .wf-world-intro figcaption {
+    margin: .35rem 0 0;
+    font-size: .875rem;
+    color: #ded3b9;
+}
+
+.wf-world-page .wf-bio-facts dl > div { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+.wf-world-page .wf-bio-facts dt { overflow-wrap: break-word; }
+
+.wf-world-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 11rem), 1fr));
+    gap: .7rem;
+}
+
+.wf-world-features img {
+    width: 100%;
+    aspect-ratio: 3 / 1;
+    object-fit: contain;
+    mask-image: linear-gradient(90deg, transparent, #000 10% 90%, transparent),
+        linear-gradient(0deg, transparent, #000 12% 88%, transparent);
+    mask-composite: intersect;
+}
+
+.wf-world-features h3 { margin: .4rem 0; color: var(--gold); }
+.wf-world-features p { margin: 0; }
+
+.wf-world-page .wf-bio-detail-grid { grid-template-columns: repeat(auto-fit, minmax(min(100%, 26rem), 1fr)); }
+.wf-world-page .wf-bio-detail-grid .wf-bio-card {
+    display: block;
+    width: 100%;
+    overflow-wrap: break-word;
+}
+
+.wf-world-page .wf-bio-detail-grid .wf-bio-card:last-child:nth-child(odd) {
+    grid-column: auto;
+}
+
+.wf-world-page .wf-bio-detail-grid .wf-bio-card:only-child {
+    grid-column: 1 / -1;
+    width: min(100%, 60rem);
+}
+
+.wf-world-page .wf-bio-card > h4 {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin-bottom: .65rem;
+}
+
+.wf-world-page .wf-bio-card h4 > img {
+    width: 1.4rem;
+    height: 1.4rem;
+    flex: none;
+    mask-image: none;
+}
+
+.wf-world-page .wf-world-illustrated > img { margin-bottom: .6rem; }
+.wf-world-page .wf-bio-card h5 { margin: .9rem 0 .25rem; font-size: 1rem; color: var(--gold); }
+.wf-world-page .wf-bio-card li { display: list-item; border: 0; }
+.wf-world-page :is(.wf-bio-group, .wf-bio-card, .wf-bio-facts section, .wf-world-intro) { scroll-margin-top: 7rem; }
+
+@media (max-width: 730px) {
+    .wf-world-intro { grid-template-columns: minmax(0, 1fr); }
+    .wf-world-intro figure img { max-width: 14rem; }
+}
+
+.wf-world-source-note { margin-top: .7rem; }
+.wf-world-source-note p { margin: 0; }

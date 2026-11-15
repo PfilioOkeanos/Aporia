@@ -1,0 +1,29 @@
+@import url("../Unterseite/Heimatwelt/heimatwelt.css");
+
+.wf-gameplay .wf-world-title {
+    background:
+        linear-gradient(90deg, #09170ff5 3%, #0b1b11bb 42%, #10221238 90%),
+        url("../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/WaldFeen/hauptseite/weltenbaum_panorama.jpg") center 48% / cover;
+}
+
+.wf-gameplay-intro > img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    mask-image: linear-gradient(90deg, transparent, #000 12% 88%, transparent),
+        linear-gradient(0deg, transparent, #000 12% 88%, transparent);
+    mask-composite: intersect;
+}
+
+.wf-gameplay .wf-world-features img {
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.wf-gameplay .wf-bio-card li { padding-block: .16rem; }
+
+.wf-gameplay .wf-world-source-note p + p { margin-top: .5rem; }
+
+@media (max-width: 730px) {
+    .wf-gameplay-intro > img { max-height: 14rem; }
+}

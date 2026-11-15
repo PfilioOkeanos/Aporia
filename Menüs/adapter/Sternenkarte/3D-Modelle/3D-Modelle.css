@@ -1,0 +1,32 @@
+.map-model-import summary {
+    cursor: pointer;
+}
+
+.map-model-import-body {
+    display: grid;
+    gap: .65rem;
+    padding: .35rem;
+    font-size: .85rem;
+}
+
+.map-model-import-body p {
+    margin: 0;
+    overflow-wrap: anywhere;
+}
+
+.map-model-drop {
+    display: grid;
+    gap: .45rem;
+    padding: .7rem;
+    border: 1px dashed var(--sidebar-gold);
+    border-radius: .4rem;
+}
+
+.map-model-drop.is-dragover {
+    background: var(--sidebar-panel);
+}
+
+.map-model-drop input {
+    width: 100%;
+    min-width: 0;
+}

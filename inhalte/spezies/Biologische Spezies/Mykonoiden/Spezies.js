@@ -94,7 +94,7 @@ function addArtworkLighting(article) {
     }
 }
 
-const cardGroups = [...document.querySelectorAll(".myko-article .source-content")].map(group => ({
+const cardGroups = [...document.querySelectorAll(".myko-article:not(.facharchiv) .source-content")].map(group => ({
     group,
     cards: [...group.children]
 })).filter(({ cards }) => cards.length > 1 && cards.every(card => card.matches(".chapter-block")));

@@ -17,6 +17,10 @@ export async function loadModel(host, item, format) {
                 model.fieldOfView = "auto";
                 model.jumpCameraToGoal();
             },
+            setVisible(visible) {
+                model.style.visibility = visible ? "" : "hidden";
+                if (!visible) model.pause();
+            },
             dispose() { model.remove(); }
         };
     }
@@ -42,7 +46,7 @@ export async function loadModel(host, item, format) {
     lamp.position.set(3, 5, 4);
     scene.add(lamp);
     const renderer = new T.WebGLRenderer({ alpha:true, antialias:true });
-    renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+    renderer.setPixelRatio(Math.min(devicePixelRatio, 1.5));
     const camera = new T.PerspectiveCamera(40, 1, radius / 1000, radius * 100);
     const canvas = renderer.domElement;
     canvas.tabIndex = 0;
@@ -56,8 +60,10 @@ export async function loadModel(host, item, format) {
     orbit.enablePan = false;
     orbit.update();
     orbit.saveState();
-    const draw = () => renderer.render(scene, camera);
+    let visible = false;
+    const draw = () => { if (visible) renderer.render(scene, camera); };
     function resize() {
+        if (!visible) return;
         const width = host.clientWidth, height = host.clientHeight;
         if (!width || !height) return;
         camera.aspect = width / height;
@@ -83,6 +89,7 @@ export async function loadModel(host, item, format) {
     });
     return {
         resize,
+        setVisible(value) { visible = value; if (visible) resize(); },
         reset() { orbit.reset(); draw(); },
         dispose() {
             observer.disconnect();

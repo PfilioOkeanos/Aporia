@@ -1,0 +1,31 @@
+@import url("../Gesellschaft/gesellschaft.css");
+
+.hw-layout {
+    --hs-gold: url("../../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Humanoide/Unterseiten/Heimatwelt/ui/rahmen_card_gesellschaft_gold.png");
+    --hs-cyan: url("../../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Humanoide/Unterseiten/Heimatwelt/ui/rahmen_card_gesellschaft_cyan.png");
+    background: radial-gradient(ellipse at 75% 9%, #1b678855, transparent 56%),
+        radial-gradient(ellipse at 10% 45%, #8e67352b, transparent 58%);
+}
+
+.hw-title { grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr); }
+.hw-title img { max-height: 20rem; }
+.hw-intro {
+    display: grid;
+    grid-template-columns: minmax(0, 38%) minmax(0, 1fr);
+    gap: .9rem;
+    align-items: center;
+}
+.hw-layout dl { margin: .45rem 0 0; }
+.hw-layout dd { margin: 0; }
+.hw-intro dl div {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr);
+}
+.hw-layout .hs-detail-card ul {
+    padding-inline-start: 1.15rem;
+}
+.hw-layout .hs-detail-card .hs-art { max-height: 16rem; }
+
+@media (max-width: 680px) {
+    .hw-title, .hw-intro { grid-template-columns: minmax(0, 1fr); }
+    .hw-title img, .hw-intro > img { max-height: 14rem; }
+}

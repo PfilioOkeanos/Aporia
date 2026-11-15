@@ -1,7 +1,9 @@
+import { observeMediaVisibility } from "../../../Men%C3%BCs/adapter/aporia-media-visibility.js";
 import { getAporiaMediaCollection } from "../../../Men%C3%BCs/adapter/aporia-media.js";
 
 for (const card of document.querySelectorAll("[data-kind][data-key]")) mountPlayer(card);
 for (const view of document.querySelectorAll("[data-turntable]")) mountViewer(view);
+for (const catalog of document.querySelectorAll("[data-asset-catalog]")) mountCatalog(catalog);
 
 async function mountPlayer(card) {
     const kind = card.dataset.kind;
@@ -178,7 +180,17 @@ async function mountModel(view) {
     const actions = document.createElement("div");
     actions.className = "controls turntable-controls";
     let active, revision = 0;
+    let visible = false;
+    observeMediaVisibility(view, current => {
+        visible = current;
+        active?.setVisible?.(current);
+    });
     const reset = button(actions, "Ansicht zurücksetzen", () => active?.reset());
+    const unload = button(actions, "Modell entladen", () => {
+        select.value = "";
+        selectModel();
+        select.focus();
+    });
     view.append(actions);
 
     async function selectModel() {
@@ -189,8 +201,13 @@ async function mountModel(view) {
         reset.disabled = true;
         preview.hidden = false;
         surface.hidden = true;
+        const item = items[select.selectedIndex - 1];
+        unload.disabled = !item;
+        if (!item) {
+            status.textContent = "Wähle ein Modell, um die 3D-Ansicht zu laden.";
+            return;
+        }
         status.textContent = "3D-Modell wird geladen …";
-        const item = items[select.selectedIndex];
         const format = new URL(item.url).pathname.split(".").at(-1).toLowerCase();
         const host = document.createElement("div");
         surface.append(host);
@@ -202,6 +219,7 @@ async function mountModel(view) {
             active = loaded;
             preview.hidden = true;
             surface.hidden = false;
+            loaded.setVisible?.(visible);
             loaded.resize?.();
             reset.disabled = false;
             status.textContent = "Ziehen zum Drehen. Scrollen oder mit zwei Fingern zoomen.";
@@ -212,9 +230,124 @@ async function mountModel(view) {
             console.warn("Aporia: Modell", error);
         }
     }
-    select.replaceChildren(...items.map(item => new Option(item.title || decodeURIComponent(new URL(item.url).pathname.split("/").at(-1)), item.url)));
+    select.replaceChildren(new Option("Modell auswählen", ""), ...items.map(item => new Option(item.title || decodeURIComponent(new URL(item.url).pathname.split("/").at(-1)), item.url)));
     select.disabled = false;
+    select.value = "";
     select.addEventListener("change", selectModel);
-    selectModel();
+    status.textContent = "Wähle ein Modell, um die 3D-Ansicht zu laden.";
     return true;
+}
+
+async function mountCatalog(catalog) {
+    const species = catalog.dataset.assetCatalog;
+    const status = catalog.querySelector('[role="status"]');
+    function element(tag, text, parent) {
+        const node = document.createElement(tag);
+        node.textContent = text;
+        parent.append(node);
+        return node;
+    }
+
+    try {
+        // Categories are metadata, so use the single-entry adapter instead of the URL-only collection helper.
+        const { getAporiaMedia } = await import("../../../Men%C3%BCs/adapter/aporia-media.js");
+        const entry = await getAporiaMedia(species + ".assetverkauf");
+        const categories = entry?.items;
+        if (!categories?.length) {
+            status.textContent = "Demnächst verfügbar.";
+            return;
+        }
+        const layout = element("div", "", catalog);
+        layout.className = "asset-carousel-layout";
+        for (const [type, heading] of [["audio", "Audio-Assets"], ["3d", "3D-Assets"]]) {
+            const section = element("section", "", layout);
+            element("h3", heading, section);
+            const grid = element("div", "", section);
+            grid.className = "asset-carousel";
+            grid.setAttribute("role", "group");
+            grid.setAttribute("aria-label", heading);
+            const cards = [];
+            for (const category of categories.filter(item => item.type === type)) {
+                const collections = await Promise.all((category.previewCollections ?? []).map(async name => ({
+                    name, items: await getAporiaMediaCollection(species + "." + name)
+                })));
+                const products = collections.flatMap(({ name, items }) => items.map(item => ({ item, name })));
+                for (const { item, name } of products.length ? products : [{}]) {
+                    const card = element("article", "", grid);
+                    card.className = "asset-card";
+                    cards.push(card);
+                    card.dataset.assetId = item?.id ?? (item ? category.id + ":" + new URL(item.url).pathname.split("/").at(-1) : category.id);
+                    const icon = element("span", type === "audio" ? "♫" : "◇", card);
+                    icon.className = "asset-symbol";
+                    icon.setAttribute("aria-hidden", "true");
+                    element("h4", item?.title || category.title, card);
+                    element("p", item?.description || category.description, card);
+                    const details = element("dl", "", card);
+                    details.className = "asset-details";
+                    const price = item?.price ?? category.price;
+                    const currency = item?.currency ?? category.currency;
+                    for (const [term, value] of [
+                        ["Kategorie", category.title],
+                        ["Format", item?.format ?? category.format ?? (item ? new URL(item.url).pathname.split(".").at(-1).toUpperCase() : "Noch offen")],
+                        ["Dateigröße", item?.fileSize ?? category.fileSize ?? "Noch offen"],
+                        ["Lizenz", item?.license ?? category.license ?? "Noch offen"],
+                        ["Preis", price != null && currency ? price + " " + currency : "Noch offen"]
+                    ]) {
+                        const row = element("div", "", details);
+                        element("dt", term, row);
+                        element("dd", String(value), row);
+                    }
+                    if (item) {
+                        const action = element("a", "Vorschau öffnen", card);
+                        action.href = type === "audio" ? "#audio" : "#ansicht";
+                        action.addEventListener("click", () => {
+                            const key = species + "." + name;
+                            const target = type === "audio"
+                                ? document.querySelector('[data-key="' + CSS.escape(key) + '"] select')
+                                : document.querySelector('[data-model="' + CSS.escape(key) + '"] select');
+                            if (!target || !Array.from(target.options).some(option => option.value === item.url)) return;
+                            target.value = item.url;
+                            target.dispatchEvent(new Event("change"));
+                            target.focus({ preventScroll: true });
+                        });
+                    }
+                    // Reserved for a future public shop product URL, separate from the preview.
+                    const purchase = element("div", "", card);
+                    purchase.className = "asset-purchase";
+                    const buy = element("span", "Kauf: Demnächst verfügbar", purchase);
+                    buy.className = "asset-availability";
+                    element("small", "Shop-Verlinkung in Vorbereitung", purchase);
+                }
+            }
+            mountAssetCarousel(grid, cards);
+        }
+        status.hidden = true;
+    } catch {
+        status.textContent = "Die Produktübersicht konnte nicht geladen werden.";
+    }
+}
+
+function mountAssetCarousel(carousel, cards) {
+    if (!cards.length) return;
+    const controls = document.createElement("div");
+    controls.className = "asset-carousel-controls";
+    const count = document.createElement("span");
+    count.setAttribute("role", "status");
+    let index = 0;
+    function show(next) {
+        index = (next + cards.length) % cards.length;
+        cards.forEach((card, i) => { card.hidden = i !== index; });
+        count.textContent = (index + 1) + " / " + cards.length;
+    }
+    const previous = button(controls, "‹ Zurück", () => show(index - 1));
+    controls.append(count);
+    const next = button(controls, "Weiter ›", () => show(index + 1));
+    previous.disabled = next.disabled = cards.length < 2;
+    carousel.prepend(controls);
+    controls.addEventListener("keydown", event => {
+        if (event.key !== "ArrowLeft" && event.key !== "ArrowRight") return;
+        event.preventDefault();
+        show(index + (event.key === "ArrowLeft" ? -1 : 1));
+    });
+    show(0);
 }

@@ -267,3 +267,67 @@
         grid-row-end: span var(--myko-card-rows, 1);
     }
 }
+
+/* Keep the chapter rail in the overview row and pair illustrated detail cards. */
+.facharchiv .myko-layout > .myko-index { grid-row: 1; }
+.species-archive .topic.myko-article.facharchiv .facharchiv-detail .source-content {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: stretch;
+}
+.species-archive .topic.myko-article.facharchiv .facharchiv-detail .chapter-block {
+    display: grid;
+    grid-template-columns: minmax(0, 40%) minmax(0, 1fr);
+    grid-template-rows: auto auto;
+    gap: .4rem clamp(.85rem, 2vw, 2rem);
+    align-content: center;
+    align-items: center;
+    align-self: stretch;
+    padding: clamp(.85rem, 1.6vw, 1.65rem);
+    border: 1px solid #916d9e80;
+}
+.species-archive .topic.myko-article.facharchiv .facharchiv-detail .chapter-block.facharchiv-lang {
+    grid-column: 1 / -1;
+    grid-template-columns: minmax(0, 28%) minmax(0, 1fr);
+}
+.myko-article.facharchiv .facharchiv-detail .chapter-block > :is(h3,h4) {
+    grid-area: 1 / 2;
+    align-self: end;
+    margin: 0;
+}
+.myko-article.facharchiv .facharchiv-detail .chapter-body { display: contents; }
+.myko-article.facharchiv .facharchiv-detail .chapter-block .chapter-body > .chapter-visual {
+    grid-area: 1 / 1 / 3 / 2;
+    justify-items: center;
+}
+.myko-article.facharchiv .facharchiv-detail .chapter-block .chapter-body > .chapter-text {
+    grid-area: 2 / 2;
+    align-self: start;
+}
+.myko-article.facharchiv .facharchiv-detail .chapter-visual img {
+    width: 100%;
+    max-height: clamp(12rem, 19vw, 26rem);
+    mask-image: radial-gradient(ellipse closest-side, #000 72%, #000a 88%, transparent);
+    mask-composite: add;
+}
+
+@media (max-width: 850px) {
+    .species-archive .topic.myko-article.facharchiv .facharchiv-detail .source-content,
+    .species-archive .topic.myko-article.facharchiv .facharchiv-detail .chapter-block,
+    .species-archive .topic.myko-article.facharchiv .facharchiv-detail .chapter-block.facharchiv-lang {
+        grid-template-columns: minmax(0, 1fr);
+    }
+    .myko-article.facharchiv .facharchiv-detail .chapter-block > :is(h3,h4) { grid-area: 1 / 1; }
+    .myko-article.facharchiv .facharchiv-detail .chapter-block .chapter-body > .chapter-visual { grid-area: 2 / 1; }
+    .myko-article.facharchiv .facharchiv-detail .chapter-block .chapter-body > .chapter-text { grid-area: 3 / 1; }
+}
+
+@media (min-width: 1500px) {
+    .species-archive .topic.myko-article.facharchiv .facharchiv-detail .facharchiv-identitaet {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+@media (851px <= width < 1500px) {
+    .species-archive .topic.myko-article.facharchiv .facharchiv-identitaet > .chapter-block:last-child {
+        grid-column: 1 / -1;
+    }
+}

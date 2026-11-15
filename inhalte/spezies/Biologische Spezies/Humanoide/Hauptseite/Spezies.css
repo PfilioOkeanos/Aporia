@@ -1,0 +1,303 @@
+@import url("../../../_gemeinsam/spezies-archiv.css");
+.species-archive.human { --archive-background:#04131f; --archive-edge:#326779; --archive-glow:#8beaff; --archive-accent:#ffd19a; color:#edf9ff; }
+.human .archive-bar { background:#04131ff5; }
+.human .archive-bar nav a { font-size:.95rem; padding-block:1rem; }
+.human a { color:#a6edff; }
+.human a:focus-visible,.human button:focus-visible { outline:2px solid #ffd19a; outline-offset:3px; }
+.human-hero { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1.6fr); align-items:center; gap:clamp(1rem,3vw,3rem); padding:clamp(1rem,4vw,4rem); background:radial-gradient(ellipse at 5% 95%,#53351e,transparent 45%),radial-gradient(ellipse at 80% 12%,#154563,transparent 70%),#061722; border-bottom:1px solid #508094; }
+.human-intro h1 { font:400 clamp(2rem,5vw,5rem)/1 Georgia,serif; letter-spacing:.13em; text-transform:uppercase; overflow-wrap:anywhere; margin:.35rem 0; }
+.human-subtitle { font-size:clamp(1.1rem,2vw,1.6rem); }
+.human-subtitle::after,.human-divider::after { content:""; display:block; height:1px; margin:.7rem auto; background:linear-gradient(90deg,transparent,#ffc889,#74dbff,transparent); }
+.human-film { position:relative; display:grid; place-items:center; aspect-ratio:1080/546; overflow:hidden; color:#c3e4f2; }
+.human-film video { width:100%; height:100%; object-fit:contain; mask-image:linear-gradient(to right,transparent,#0007 6%,#000 18%,#000 82%,#0007 94%,transparent); }
+.human-film button { position:absolute; inset:auto .65rem .65rem auto; }
+.human [hidden] { display:none!important; }
+.human-divider { text-align:center; letter-spacing:.15em; color:#ffd19a; margin:1rem 0; }
+.human-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:.75rem; margin-bottom:1rem; }
+.human-grid-secondary { grid-template-columns:repeat(3,minmax(0,1fr)); }
+.human-card { min-width:0; display:grid; grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr); align-items:center; gap:.55rem; padding:.65rem; border:1px solid #42778d; border-radius:.8rem; background:linear-gradient(135deg,#12374a,#071924 72%); }
+.human-card img { width:100%; max-height:9rem; object-fit:contain; mix-blend-mode:screen; }
+.human-card :is(h2,h3) { font:600 clamp(.95rem,1.5vw,1.2rem)/1.25 system-ui,sans-serif; color:#dcf5ff; margin:.2rem 0; }
+.human-card p { margin:.3rem 0; }
+.human-card dl div { grid-template-columns:1fr; gap:0; padding:.15rem 0; }
+.human-card dt { color:#ffd19a; }
+.human-links .human-card { scroll-margin-top:8rem; }
+.human-links .human-card:target { border-color:#ffd19a; }
+@media(max-width:1050px) { .human-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media(max-width:680px) { .human-hero,.human-grid { grid-template-columns:minmax(0,1fr); } .human-card { grid-template-columns:minmax(0,5rem) minmax(0,1fr); } }
+
+.human .shell { width:min(97%, 1850px); }
+.human-card { align-items:start; padding:clamp(.65rem, 1.1vw, 1rem); }
+.human-card img { align-self:center; }
+.human-card dl div { grid-template-columns:minmax(0, 1fr); }
+.human-card :is(ul, ol) { margin:.35rem 0; padding-inline-start:1.15rem; }
+.human-card li + li { margin-top:.3rem; }
+.human-factions li::marker,.human-timeline strong { color:var(--archive-accent); }
+.human-topic-status { position:sticky; top:4.6rem; z-index:8; margin:0; padding:.45rem 1rem; text-align:center; background:#102e40; color:#e5f8ff; }
+
+.human-card:has(.human-card-art) { grid-template-columns:minmax(0, 1fr); gap:.55rem; }
+.human-card-art {
+    overflow:hidden;
+    border-radius:.55rem;
+    background:radial-gradient(ellipse,#104761,#061722);
+}
+.human-card .human-card-art img {
+    display:block;
+    width:100%;
+    height:auto;
+    max-height:none;
+    mix-blend-mode:normal;
+}
+
+
+.human-card--traits { --human-card-frame: url("../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Humanoide/Hauptseite/Rahmen_kernmerkmale.png"); }
+.human-card--culture { --human-card-frame: url("../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Humanoide/Hauptseite/humanoiden%20%281080%20x%201620%20px%29%2835%29.png"); }
+
+.human-card.human-card--framed {
+    position: relative;
+    isolation: isolate;
+    grid-template-columns: minmax(0, 1fr);
+    align-content: center;
+    align-self: start;
+    justify-self: center;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 29rem;
+    aspect-ratio: 2 / 3;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    overflow-wrap: anywhere;
+}
+
+.human-card--framed::before,
+.human-card--framed::after {
+    content: "";
+    position: absolute;
+    pointer-events: none;
+}
+
+.human-card--framed::before {
+    inset: 10% 12%;
+    z-index: -2;
+    background: radial-gradient(ellipse closest-side, #12374a 42%, #071924bb 76%, transparent);
+}
+
+.human-card--framed::after {
+    inset: 0;
+    z-index: -1;
+    background: var(--human-card-frame) center / contain no-repeat;
+    mask-image:
+        linear-gradient(to right, transparent, #0004 3%, #000c 7%, #000 12%, #000 88%, #000c 93%, #0004 97%, transparent),
+        linear-gradient(to bottom, transparent, #0004 3%, #000c 7%, #000 12%, #000 88%, #000c 93%, #0004 97%, transparent);
+    mask-composite: intersect;
+}
+
+.human-card--framed .human-card-art {
+    background: transparent;
+}
+
+.human-card--framed .human-card-art img {
+    width: 100%;
+    max-height: clamp(3rem, 7vw, 7rem);
+    object-fit: contain;
+}
+.human-card--framed > div {
+    width: 64%;
+    min-width: 0;
+    justify-self: center;
+}
+
+.human-card.human-card--culture {
+    align-content: start;
+    grid-template-rows: 17% auto auto;
+}
+
+.human-card--culture::before {
+    inset: 16% 15% 14%;
+    border-radius: 30% / 19%;
+    background: linear-gradient(145deg, #244052, #0b2535 58%, #102f42);
+    mask-image:
+        linear-gradient(to right, transparent, #000 13%, #000 87%, transparent),
+        linear-gradient(to bottom, transparent, #000 16%, #000 83%, transparent);
+    mask-composite: intersect;
+}
+
+.human-card--culture > .human-card-art {
+    grid-row: 2;
+    width: 65%;
+    border-radius: 0;
+    mask-image:
+        linear-gradient(to right, transparent, #000 12%, #000 88%, transparent),
+        linear-gradient(to bottom, transparent, #000 14%, #000 78%, transparent);
+    mask-composite: intersect;
+}
+
+.human-card--culture .human-card-art img {
+    max-height: none;
+}
+
+.human-card--culture > :last-child {
+    grid-row: 3;
+    width: 62%;
+}
+
+/* Remove the faint alpha matte from the culture frame PNG. */
+.human-card--culture::after {
+    filter: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cfilter%20id%3D%22alpha%22%3E%3CfeComponentTransfer%3E%3CfeFuncA%20type%3D%22linear%22%20slope%3D%221.016%22%20intercept%3D%22-0.016%22%2F%3E%3C%2FfeComponentTransfer%3E%3C%2Ffilter%3E%3C%2Fsvg%3E#alpha");
+}
+
+.human-card--profile { --human-card-frame: url("../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Humanoide/Hauptseite/Rahmen_grundprofil.png"); }
+.human-card--biology { --human-card-frame: url("../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Humanoide/Hauptseite/Rahmen_biologische%20daten%20%281080%20x%201620%20px%29.png"); }
+.human-card--factions { --human-card-frame: url("../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Humanoide/Hauptseite/Rahmen_Fraktions%20zugeh%C3%B6hrigkeit%20%281080%20x%201620%20px%29.png"); }
+
+.human-card--biology .human-card-art {
+    border-radius: 0;
+    mask-image: radial-gradient(ellipse closest-side, #000 80%, transparent 100%);
+}
+
+.human-card--framed:is(.human-card--profile, .human-card--factions) {
+    container-type: inline-size;
+    gap: .25rem;
+}
+
+.human-card--framed:is(.human-card--profile, .human-card--factions) > :last-child {
+    width: 56%;
+    font-size: clamp(.8rem, 3.8cqw, 1rem);
+    line-height: 1.3;
+    hyphens: auto;
+}
+
+.human-card--framed:is(.human-card--profile, .human-card--factions) h2 {
+    font-size: clamp(.95rem, 4.4cqw, 1.2rem);
+}
+
+.human-card--framed:is(.human-card--profile, .human-card--factions) > .human-card-art {
+    width: 76%;
+    border-radius: 0;
+    mask-image:
+        linear-gradient(to right, transparent, #000 9%, #000 91%, transparent),
+        linear-gradient(to bottom, transparent, #000 10%, #000 83%, transparent);
+    mask-composite: intersect;
+}
+
+.human-card--framed:is(.human-card--profile, .human-card--factions) .human-card-art img {
+    max-height: 37cqw;
+}
+
+.human-card--framed dl div {
+    grid-template-columns: minmax(0, 1fr);
+}
+
+.human-card--framed dd { margin-inline-start: 0; }
+
+@media (681px <= width <= 1350px) {
+    .human-grid[aria-label="Speziesprofil"] { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+.human-card.human-card--framed:is(.human-card--profile, .human-card--biology) {
+    container-type: inline-size;
+    align-content: start;
+    grid-template-rows: 15% auto auto;
+    gap: .25rem;
+}
+
+.human-card--framed:is(.human-card--profile, .human-card--biology) > .human-card-art {
+    grid-row: 2;
+    width: 78%;
+    aspect-ratio: 2.35;
+    mask-image:
+        linear-gradient(to right, transparent, #000 7%, #000 93%, transparent),
+        linear-gradient(to bottom, transparent, #000 8%, #000 80%, transparent);
+    mask-composite: intersect;
+}
+
+.human-card--framed:is(.human-card--profile, .human-card--biology) .human-card-art img {
+    height: 100%;
+    max-height: none;
+    object-fit: cover;
+    object-position: center 45%;
+}
+
+.human-card--framed:is(.human-card--profile, .human-card--biology) > :last-child {
+    grid-row: 3;
+    width: 68%;
+    font-size: clamp(.8rem, 3.8cqw, 1rem);
+    line-height: 1.3;
+}
+
+.human-card--framed:is(.human-card--profile, .human-card--biology) dl div {
+    grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+    column-gap: .4rem;
+}
+
+@container (max-width: 330px) {
+    .human-card--framed:is(.human-card--profile, .human-card--biology) dl div {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+.human-card.human-card--biology {
+    grid-template-rows: 12% auto auto;
+}
+
+.human-card--framed.human-card--biology > .human-card-art {
+    width: 60%;
+    aspect-ratio: 2.7;
+}
+
+.human-card--framed.human-card--biology > :last-child {
+    width: 54%;
+    hyphens: auto;
+}
+
+.human-card--framed.human-card--biology dl div {
+    row-gap: 0;
+    padding-block: .1rem;
+}
+
+.human #ueberblick > .shell {
+    position: relative;
+    isolation: isolate;
+}
+
+.human #ueberblick > .shell::before,
+.human #ueberblick > .shell::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    pointer-events: none;
+    top: 2.75rem;
+    width: min(50vw, 50rem);
+    aspect-ratio: 2 / 3;
+    background: var(--human-overview-image) center / contain no-repeat;
+    opacity: .7;
+    mask-image:
+        linear-gradient(to right, #000 24%, #000d 46%, #0008 65%, #0003 83%, transparent),
+        linear-gradient(to bottom, transparent, #000 13%, #000 62%, #0007 83%, transparent);
+    mask-composite: intersect;
+}
+
+.human #ueberblick > .shell::before {
+    left: 50%;
+    translate: -50vw;
+    --human-overview-image: url("../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Humanoide/Unterseiten/Medien/humanoiden%20%281080%20x%201620%20px%29%281%29.png");
+}
+
+.human #ueberblick > .shell::after {
+    right: 50%;
+    translate: 50vw;
+    transform: scaleX(-1);
+    --human-overview-image: url("../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Humanoide/Unterseiten/Medien/humanoiden%20%281080%20x%201620%20px%29.png");
+}
+
+.human #ueberblick {
+    overflow-x: clip;
+}
+
+.human #ueberblick {
+    background:
+        radial-gradient(ellipse at 7% 58%, #174a784f, transparent 48%),
+        radial-gradient(ellipse at 94% 58%, #61245450, transparent 49%),
+        var(--archive-background);
+}

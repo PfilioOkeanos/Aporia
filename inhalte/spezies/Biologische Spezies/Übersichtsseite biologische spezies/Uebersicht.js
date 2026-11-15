@@ -1,3 +1,4 @@
+import { observeMediaVisibility } from "../../../../Menüs/adapter/aporia-media-visibility.js";
 import { applyAporiaRoutes } from "../../../../Menüs/adapter/aporia-routes.js";
 import "../../../../Menüs/TopBar/Top_bar.js";
 import "../../../../Menüs/Side_bar/side_bar.js";
@@ -9,7 +10,7 @@ const toolbar = document.createElement("div");
 toolbar.className = "species-tools";
 toolbar.innerHTML = `
     <label>Suche <input type="search" placeholder="Spezies suchen …"></label>
-    <label>Heimatwelt <select data-world><option value="">Alle</option><option>Orvaya</option><option>Offen</option></select></label>
+    <label>Heimatwelt <select data-world><option value="">Alle</option></select></label>
     <label>Lebensraum <select data-habitat><option value="">Alle</option></select></label>
     <label>Sortierung <select data-sort><option value="original">Archivreihenfolge</option><option value="asc">A–Z</option><option value="desc">Z–A</option></select></label>
     <button type="button" data-view aria-pressed="false">Listenansicht</button>`;
@@ -30,7 +31,9 @@ const pageSize = 8;
 for (const value of new Set(cards.map(card => card.dataset.habitat))) {
     habitat.add(new Option(value, value));
 }
-if (!cards.some(card => card.dataset.world === "Orvaya")) world.options[1].remove();
+for (const value of new Set(cards.map(card => card.dataset.world))) {
+    world.add(new Option(value, value));
+}
 
 function render() {
     const query = search.value.trim().toLocaleLowerCase("de");
@@ -81,3 +84,18 @@ if (initial >= 0) page = Math.floor(initial / pageSize);
 render();
 applyAporiaRoutes(document);
 
+
+for (const logo of grid.querySelectorAll("[data-animated-src]")) {
+    const poster = logo.getAttribute("src");
+    const motion = matchMedia("(prefers-reduced-motion: reduce)");
+    let visible = false;
+    function syncLogo() {
+        const source = visible && !motion.matches ? logo.dataset.animatedSrc : poster;
+        if (logo.getAttribute("src") !== source) logo.src = source;
+    }
+    observeMediaVisibility(logo, current => {
+        visible = current;
+        syncLogo();
+    });
+    motion.addEventListener("change", syncLogo);
+}

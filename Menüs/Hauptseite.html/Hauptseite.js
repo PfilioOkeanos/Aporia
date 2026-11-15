@@ -1,5 +1,6 @@
 import { applyAporiaRoutes } from "../adapter/aporia-routes.js";
 import { getAporiaMedia } from "../adapter/aporia-media.js";
+import { loadVisibleLoop } from "../adapter/aporia-media-visibility.js";
 import "../TopBar/Top_bar.js";
 import "../Side_bar/side_bar.js";
 
@@ -10,7 +11,6 @@ const toggle = document.querySelector(".home-video-toggle");
 if (video && toggle) {
     const media = await getAporiaMedia(video.dataset.homeVideo);
     if (media?.url) {
-        const motion = matchMedia("(prefers-reduced-motion: reduce)");
         function updateToggle() {
             toggle.textContent = video.paused ? "▶" : "Ⅱ";
             toggle.setAttribute("aria-label", video.paused
@@ -25,17 +25,8 @@ if (video && toggle) {
             video.classList.remove("is-ready");
             toggle.hidden = true;
         });
-        toggle.addEventListener("click", () => {
-            if (video.paused) video.play().catch(updateToggle);
-            else video.pause();
-        });
-        motion.addEventListener("change", () => {
-            if (motion.matches) video.pause();
-        });
-
-        video.src = media.url;
         toggle.hidden = false;
         updateToggle();
-        if (!motion.matches) video.play().catch(updateToggle);
+        loadVisibleLoop(video, video.closest(".home-hero"), media.url, toggle);
     }
 }

@@ -1,0 +1,44 @@
+@import url("../../Hauptseite/Spezies.css");
+@import url("../../../../_gemeinsam/medien-player.css");
+
+.hm-layout {
+    --edge: #397c95;
+    --gold: var(--archive-accent);
+    --glow: var(--archive-glow);
+    background: radial-gradient(ellipse at 85% 0%, #103044, transparent 36%);
+}
+
+.hm-layout .hm-banner {
+    border-color: var(--edge);
+    box-shadow: 0 5px 28px #3288a432;
+}
+
+.hm-layout .hm-banner::before {
+    background: linear-gradient(90deg, #04131f 24%, #04131fc9 48%, #04131f26 100%);
+}
+
+.hm-banner > img { object-position: center 34%; }
+.hm-banner h1, .hm-banner p { color: #edf9ff; }
+
+.hm-layout .crumb, .hm-layout .panel, .hm-layout .media-entry {
+    background: linear-gradient(145deg, #103344, #041923 78%);
+    border-color: var(--edge);
+    box-shadow: inset 0 1px #8beaff35, 0 0 .7rem #105e752a;
+}
+
+.hm-layout :is(h2, h3, h4) { color: #e4f7ff; }
+.hm-layout :is(.control, .tile, .feature-open) { background: #081d2b; }
+.hm-layout .control, .hm-layout .tile { border-color: var(--edge); }
+.hm-layout .tile[aria-pressed="true"] { border-color: var(--gold); }
+.hm-layout .feature-open img { height: clamp(16rem, 31vw, 28rem); object-fit: contain; }
+.hm-layout .tile img { object-fit: contain; }
+.hm-layout .media-stack > .panel { scroll-margin-top: 7rem; }
+.hm-layout .asset-catalog { margin-block: 0; }
+.hm-layout .media-cards { align-items: start; }
+.hm-layout .media-cards.videos { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.hm-layout .model img { background: radial-gradient(ellipse, #1d4f65, transparent 72%); }
+.hm-layout dialog { background: #041923; border-color: var(--edge); }
+
+@media (max-width: 760px) {
+    .hm-layout .media-cards.videos { grid-template-columns: minmax(0, 1fr); }
+}

@@ -169,3 +169,27 @@ body.home-page {
     .home-frame #aporia-sidebar-host { width: 100%; }
     .home-frame .aporia-sidebar { position: static; max-height: 24vh; }
 }
+
+.home-research {
+    padding: clamp(1rem, 3cqw, 2.5rem);
+    color: #f4eaf7;
+    background: radial-gradient(ellipse at 85% 0%, #263052, transparent 70%), #14101e;
+}
+.home-research h2 { margin: 0; color: #f5d9ad; }
+.home-research-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+    gap: .75rem;
+}
+.home-research-grid article {
+    min-width: 0;
+    padding: .85rem 1rem;
+    border: 1px solid #675574;
+    border-radius: .65rem;
+    background: #171423d9;
+    overflow-wrap: anywhere;
+}
+.home-research-grid :is(h3, p) { margin: .25rem 0; }
+.home-research-grid h3 { color: #f4d7af; }
+.home-research, .home-research-grid article { scroll-margin-top: 7rem; }
+.home-research-grid article:target { border-color: #f4d7af; }

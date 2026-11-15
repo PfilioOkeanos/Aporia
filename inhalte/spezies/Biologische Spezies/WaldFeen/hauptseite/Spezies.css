@@ -1,0 +1,87 @@
+@import url("../../../_gemeinsam/spezies-archiv.css");
+
+.waldfeen {
+    --archive-background: #101b14;
+    --edge: #9b8155;
+    --gold: #f1d7a0;
+    --glow: #f1d7a0;
+    color: #f7f0e1;
+}
+.waldfeen .archive-bar { background: #101911; }
+.waldfeen .wordmark img { display: block; width: 10rem; height: 3rem; object-fit: contain; }
+.waldfeen .archive-bar nav a { font: 1rem Georgia, serif; align-content: center; }
+.waldfeen .archive-bar nav :is(a:hover, a[aria-current]) { background: linear-gradient(0deg, #94733c55, transparent); }
+.waldfeen main {
+    background: linear-gradient(#101b1499, #101b14e6), url("../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/WaldFeen/hauptseite/waldgruen_textur_1920x1080.jpg") center / cover;
+}
+.waldfeen main [id] { scroll-margin-top: 7rem; }
+.wf-hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
+    align-items: center;
+    gap: 1rem;
+    min-height: clamp(28rem, 34vw, 45rem);
+    padding: clamp(2rem, 4vw, 4.5rem) 3% clamp(2.5rem, 5vw, 5rem) 27%;
+    background: linear-gradient(0deg, #101b14, transparent 25%), linear-gradient(90deg, transparent 17%, #101b148f 38%, #101b1426),
+        url("../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/WaldFeen/hauptseite/waldfeen_hero_composite_ohne_text.jpg") left center / cover;
+}
+.wf-intro { text-align: center; }
+.wf-intro > p:last-child { margin-bottom: 0; text-shadow: 0 2px 6px #000; }
+.wf-intro h1 { margin: .4rem 0; }
+.wf-intro h1 img { display: block; width: 100%; max-height: 8rem; object-fit: contain; }
+.wf-kicker { color: var(--gold); text-transform: uppercase; letter-spacing: .13em; font-size: .8rem; }
+.wf-subtitle { font: clamp(1.15rem, 1.65vw, 1.65rem) Georgia, serif; color: var(--gold); }
+.wf-content { width: calc(100% - clamp(1rem, 3vw, 3rem)); margin-inline: auto; padding-block: clamp(1.25rem, 3vw, 3rem) 1rem; }
+.wf-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr)); gap: clamp(.85rem, 1.3vw, 1.4rem); align-items: start; }
+.wf-panel {
+    position: relative;
+    min-width: 0;
+    padding: 1rem;
+    border: 1px solid #c8ab717d;
+    border-radius: 1.05rem;
+    background: linear-gradient(135deg, #223126, #101910 76%);
+    box-shadow: 0 0 1rem #af94512b;
+    overflow-wrap: anywhere;
+}
+.wf-panel::before,
+.wf-panel::after {
+    content: "";
+    position: absolute;
+    width: clamp(2.25rem, 4vw, 3.75rem);
+    aspect-ratio: 1;
+    pointer-events: none;
+    filter: drop-shadow(.1rem .32rem .24rem #050b07d9);
+}
+.wf-panel::before {
+    inset: -.35rem auto auto -.35rem;
+    background: url("../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/WaldFeen/hauptseite/bluetenzweig_oben_links.svg") center / contain no-repeat;
+}
+.wf-panel::after {
+    inset: auto -.35rem -.35rem auto;
+    background: url("../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/WaldFeen/hauptseite/bluetenzweig_unten_rechts.svg") center / contain no-repeat;
+}
+.wf-panel > * { position: relative; }
+.wf-panel h2 { display: flex; gap: .55rem; align-items: center; color: var(--gold); font: 1.15rem Georgia, serif; padding-bottom: .6rem; border-bottom: 1px solid #9b815560; }
+.wf-panel :is(h2, dt, li) > img:not([src$=".jpg"]) { width: 1.65rem; height: 1.65rem; object-fit: contain; flex-shrink: 0; }
+.wf-panel dl > div { grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: .45rem; border-color: #9b815548; }
+.wf-panel dt { display: flex; align-items: center; gap: .4rem; color: #f7f0e1; }
+.wf-preview { margin: 0; padding: .55rem; }
+.wf-preview img, .wf-world > img { display: block; width: 100%; height: auto; border-radius: .7rem; }
+.wf-preview figcaption { font-size: .85rem; padding: .3rem .5rem 0; color: #ede0c4; }
+.wf-traits, .wf-communities { list-style: none; margin: 0; padding: 0; }
+.wf-panel li { display: flex; align-items: center; gap: .6rem; padding-block: .45rem; border-bottom: 1px solid #9b815548; }
+.wf-traits li div div, .wf-note { color: #ede0c4; font-size: .87rem; }
+.wf-communities img { width: 32%; height: auto; border-radius: .4rem; }
+.wf-button { display: inline-block; padding: .25rem .8rem; border: 1px solid var(--edge); border-radius: 2rem; color: var(--gold); }
+.wf-history { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1.6fr); gap: 1rem; align-items: center; margin-top: 1rem; }
+.wf-history img { width: 100%; max-height: 9rem; object-fit: contain; mask-image: linear-gradient(90deg, transparent, #000 15% 78%, transparent); }
+.wf-history h2, .wf-history p { margin: .2rem 0; }
+
+@media (max-width: 900px) {
+    .wf-hero { padding-left: 16%; }
+}
+@media (max-width: 680px) {
+    .wf-hero, .wf-history { grid-template-columns: minmax(0, 1fr); }
+    .wf-hero { min-height: 0; padding: 2rem 1rem 1rem; background-position: 24% center; }
+    .wf-intro { padding: .8rem; border-radius: .75rem; background: #101b14d9; }
+}

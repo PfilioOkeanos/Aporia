@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sonnensystem | Aporia</title>
+    <link rel="stylesheet" href="../../TopBar/Top_bar.css">
+    <link rel="stylesheet" href="../../Side_bar/Side_bar.css">
+    <link rel="stylesheet" href="../Sternenkarte.css">
+    <link rel="stylesheet" href="./Sternsysteme.css">
+    <script type="module" src="./Sternsysteme.js"></script>
+</head>
+<body class="map-page" data-page="sternenkarte">
+    <div data-aporia-topbar></div>
+    <div class="map-frame">
+        <div data-aporia-sidebar></div>
+        <main class="map-main system-details">
+            <nav aria-label="Archivpfad"><a data-system-map href="../Sternenkarte.html">Zur Sternenkarte</a> <span data-system-name></span></nav>
+            <h1>Kartenobjekt</h1>
+            <p data-object-status role="status">Lade Archiveintrag …</p>
+            <img alt="" hidden>
+            <p data-object-type hidden></p>
+            <p data-object-description hidden></p>
+            <p data-orbit-data hidden></p>
+            <a data-object-archive hidden>Archivillustration öffnen</a>
+            <section data-system-objects hidden aria-labelledby="system-objects-title">
+                <h2 id="system-objects-title">Objekte im System</h2>
+                <ul></ul>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

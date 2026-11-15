@@ -1,0 +1,47 @@
+@import url("../../hauptseite/Spezies.css");
+@import url("../../../../_gemeinsam/medien-player.css");
+
+.hm-layout {
+    --edge: #8e794f;
+    --gold: #dec694;
+    --glow: #dec694;
+    background: radial-gradient(ellipse at 85% 0%, #26382a, transparent 36%);
+}
+
+.hm-layout .hm-banner {
+    border-color: var(--edge);
+    box-shadow: 0 5px 28px #98815332;
+}
+
+.hm-layout .hm-banner::before {
+    background: linear-gradient(90deg, #0d1b12 24%, #0d1b12c9 48%, #0d1b1226 100%);
+}
+
+.hm-banner > img { object-position: center 34%; }
+.hm-banner h1, .hm-banner p { color: #f7f0e1; }
+
+.hm-layout .crumb, .hm-layout .panel, .hm-layout .media-entry {
+    background: linear-gradient(145deg, #233327, #111d15 78%);
+    border-color: var(--edge);
+    box-shadow: inset 0 1px #dbc48d35, 0 0 .7rem #67572d2a;
+}
+
+.hm-layout :is(h2, h3, h4) { color: #f7f0e1; }
+.hm-layout :is(.control, .tile, .feature-open) { background: #142318; }
+.hm-layout .control, .hm-layout .tile { border-color: var(--edge); }
+.hm-layout .tile[aria-pressed="true"] { border-color: var(--gold); }
+.hm-layout .feature-open img { height: clamp(16rem, 31vw, 28rem); object-fit: contain; }
+.hm-layout .tile img { object-fit: contain; }
+.hm-layout .media-stack > .panel { scroll-margin-top: 7rem; }
+.hm-layout .asset-catalog { margin-block: 0; }
+.hm-layout .media-cards { align-items: start; }
+.hm-layout .media-cards.videos { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.hm-layout .model img { background: radial-gradient(ellipse, #354b33, transparent 72%); }
+.hm-layout dialog { background: #111d15; border-color: var(--edge); }
+
+@media (max-width: 760px) {
+    .hm-layout .media-cards.videos { grid-template-columns: minmax(0, 1fr); }
+}
+
+.hm-layout .hm-banner > img { object-position: center; filter: saturate(.78); }
+.hm-layout .media-cards.audio { grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr)); }

@@ -1,28 +1,46 @@
 /* APORIA - zentrale URL- und Routenverwaltung */
 
 const routes = Object.freeze({
-    "spezies-biological-1": new URL("../../inhalte/spezies/Biologische%20Spezies/Humanoide/Spezies.html", import.meta.url).href,
-    "spezies-biological-2": new URL("../../inhalte/spezies/Biologische%20Spezies/WaldFeen/Spezies.html", import.meta.url).href,
+    "spezies-biological-1": new URL("../../inhalte/spezies/Biologische%20Spezies/Humanoide/Hauptseite/Spezies.html", import.meta.url).href,
+    "spezies-biological-1-biologie": new URL("../../inhalte/spezies/Biologische%20Spezies/Humanoide/Unterseiten/Biologie/biologie.html", import.meta.url).href,
+    "spezies-biological-1-entwicklung": new URL("../../inhalte/spezies/Biologische%20Spezies/Humanoide/Unterseiten/Entwicklung/entwicklung.html", import.meta.url).href,
+    "spezies-biological-1-geschichte": new URL("../../inhalte/spezies/Biologische%20Spezies/Humanoide/Unterseiten/Geschichte/geschichte.html", import.meta.url).href,
+    "spezies-biological-1-gesellschaft": new URL("../../inhalte/spezies/Biologische%20Spezies/Humanoide/Unterseiten/Gesellschaft/gesellschaft.html", import.meta.url).href,
+    "spezies-biological-1-politik": new URL("../../inhalte/spezies/Biologische%20Spezies/Humanoide/Unterseiten/Politik/politik.html", import.meta.url).href,
+    "spezies-biological-1-heimatwelt": new URL("../../inhalte/spezies/Biologische%20Spezies/Humanoide/Unterseiten/Heimatwelt/heimatwelt.html", import.meta.url).href,
+    "spezies-biological-1-medien": new URL("../../inhalte/spezies/Biologische%20Spezies/Humanoide/Unterseiten/Medien/medien.html", import.meta.url).href,
+    "spezies-biological-1-gameplay": new URL("../../inhalte/spezies/Biologische%20Spezies/Humanoide/Gameplay/gameplay.html", import.meta.url).href,
+    "spezies-biological-2": new URL("../../inhalte/spezies/Biologische%20Spezies/WaldFeen/hauptseite/Spezies.html", import.meta.url).href,
+    "spezies-biological-2-biologie": new URL("../../inhalte/spezies/Biologische%20Spezies/WaldFeen/Unterseite/biologie/biologie.html", import.meta.url).href,
+    "spezies-biological-2-entwicklung": new URL("../../inhalte/spezies/Biologische%20Spezies/WaldFeen/Unterseite/Entwicklung/entwicklung.html", import.meta.url).href,
+    "spezies-biological-2-geschichte": new URL("../../inhalte/spezies/Biologische%20Spezies/WaldFeen/Unterseite/Geschichte/geschichte.html", import.meta.url).href,
+    "spezies-biological-2-gesellschaft": new URL("../../inhalte/spezies/Biologische%20Spezies/WaldFeen/Unterseite/Gesellschaft/gesellschaft.html", import.meta.url).href,
+    "spezies-biological-2-politik": new URL("../../inhalte/spezies/Biologische%20Spezies/WaldFeen/Unterseite/Politik/politik.html", import.meta.url).href,
+    "spezies-biological-2-heimatwelt": new URL("../../inhalte/spezies/Biologische%20Spezies/WaldFeen/Unterseite/Heimatwelt/heimatwelt.html", import.meta.url).href,
+    "spezies-biological-2-medien": new URL("../../inhalte/spezies/Biologische%20Spezies/WaldFeen/Unterseite/Medien/medien.html", import.meta.url).href,
+    "spezies-biological-2-gameplay": new URL("../../inhalte/spezies/Biologische%20Spezies/WaldFeen/Gameplay/gameplay.html", import.meta.url).href,
     "spezies-biological-3": new URL("../../inhalte/spezies/Biologische%20Spezies/Technoiden/Spezies.html", import.meta.url).href,
     "spezies-biological-4": new URL("../../inhalte/spezies/Biologische%20Spezies/Astralizes/Spezies.html", import.meta.url).href,
     "spezies-biological-5": new URL("../../inhalte/spezies/Biologische%20Spezies/Mykonoiden/hauptseite/hauptseite.html", import.meta.url).href,
-    "spezies-biological-5-anatomie": new URL("../../inhalte/spezies/Biologische%20Spezies/Mykonoiden/anatomie/anatomie.html", import.meta.url).href,
+    "spezies-biological-5-biologie": new URL("../../inhalte/spezies/Biologische%20Spezies/Mykonoiden/biologie/biologie.html", import.meta.url).href,
     "spezies-biological-5-entwicklung": new URL("../../inhalte/spezies/Biologische%20Spezies/Mykonoiden/entwicklung/entwicklung.html", import.meta.url).href,
     "spezies-biological-5-geschichte": new URL("../../inhalte/spezies/Biologische%20Spezies/Mykonoiden/geschichte/geschichte.html", import.meta.url).href,
     "spezies-biological-5-gesellschaft": new URL("../../inhalte/spezies/Biologische%20Spezies/Mykonoiden/gesellschaft/gesellschaft.html", import.meta.url).href,
     "spezies-biological-5-politik": new URL("../../inhalte/spezies/Biologische%20Spezies/Mykonoiden/politik/politik.html", import.meta.url).href,
     "spezies-biological-5-heimatwelt": new URL("../../inhalte/spezies/Biologische%20Spezies/Mykonoiden/heimatwelt/heimatwelt.html", import.meta.url).href,
     "spezies-biological-5-medien": new URL("../../inhalte/spezies/Biologische%20Spezies/Mykonoiden/medien/medien.html", import.meta.url).href,
+    "spezies-biological-5-gameplay": new URL("../../inhalte/spezies/Biologische%20Spezies/Mykonoiden/Gameplay/gameplay.html", import.meta.url).href,
     "spezies-biological-6": new URL("../../inhalte/spezies/Biologische%20Spezies/Lithoiden/Spezies.html", import.meta.url).href,
     "spezies-biological-7": new URL("../../inhalte/spezies/Biologische%20Spezies/Thalassoiden/Spezies.html", import.meta.url).href,
     "spezies-biological-8": new URL("../../inhalte/spezies/Biologische%20Spezies/Aeromorphen/Hauptseite_%C3%BCbersicht/Spezies.html", import.meta.url).href,
-    "spezies-biological-8-anatomie": new URL("../../inhalte/spezies/Biologische%20Spezies/Aeromorphen/Unterseiten/Anantomie/anatomie.html", import.meta.url).href,
+    "spezies-biological-8-biologie": new URL("../../inhalte/spezies/Biologische%20Spezies/Aeromorphen/Unterseiten/Biologie/biologie.html", import.meta.url).href,
     "spezies-biological-8-entwicklung": new URL("../../inhalte/spezies/Biologische%20Spezies/Aeromorphen/Unterseiten/Entwicklung/entwicklung.html", import.meta.url).href,
     "spezies-biological-8-geschichte": new URL("../../inhalte/spezies/Biologische%20Spezies/Aeromorphen/Unterseiten/Geschichte/geschichte.html", import.meta.url).href,
     "spezies-biological-8-gesellschaft": new URL("../../inhalte/spezies/Biologische%20Spezies/Aeromorphen/Unterseiten/Gesellschaft/gesellschaft.html", import.meta.url).href,
     "spezies-biological-8-politik": new URL("../../inhalte/spezies/Biologische%20Spezies/Aeromorphen/Unterseiten/Politik/politik.html", import.meta.url).href,
     "spezies-biological-8-heimatwelt": new URL("../../inhalte/spezies/Biologische%20Spezies/Aeromorphen/Unterseiten/Heimatwelt/heimatwelt.html", import.meta.url).href,
     "spezies-biological-8-medien": new URL("../../inhalte/spezies/Biologische%20Spezies/Aeromorphen/Unterseiten/Medien/medien.html", import.meta.url).href,
+    "spezies-biological-8-gameplay": new URL("../../inhalte/spezies/Biologische%20Spezies/Aeromorphen/Gameplay/gameplay.html", import.meta.url).href,
     "spezies-biological-9": new URL("../../inhalte/spezies/Biologische%20Spezies/Chitinnoiden/Spezies.html", import.meta.url).href,
     "spezies-biological-10": new URL("../../inhalte/spezies/Biologische%20Spezies/Plasmoiden/Spezies.html", import.meta.url).href,
     "spezies-biological-11": new URL("../../inhalte/spezies/Biologische%20Spezies/Floranoiden/Spezies.html", import.meta.url).href,
@@ -81,10 +99,11 @@ const routes = Object.freeze({
     "spezies-technological": new URL("../../inhalte/spezies/Technologische%20Lebensformen/%C3%9Cbersichtsseite%20Technologische%20Lebensformen/Uebersicht.html", import.meta.url).href,
     "spezies-gigantic": new URL("../../inhalte/spezies/Gigantische%20Lebensformen/%C3%9CbersichtsseiteGigantische%20Lebensformen/Uebersicht.html", import.meta.url).href,
     "rohstoff-detail": new URL("../../inhalte/Rohstoffe/Details/Rohstoffe.html", import.meta.url).href,
+    forschung: new URL("../Hauptseite.html/Hauptseite.html#forschung", import.meta.url).href,
     rohstoffe: new URL("../../inhalte/Rohstoffe/Uebersicht/Rohstoffe.html", import.meta.url).href,
     "freihafen": new URL("../../inhalte/Fraktionen/Freihafen.html", import.meta.url).href,
     "synthetische-organismen": new URL("../../inhalte/spezies/Synthetische-Organismen.html", import.meta.url).href,
-    "waldfeen": new URL("../../Waldfeen.html", import.meta.url).href,
+    "waldfeen": new URL("../../inhalte/spezies/Biologische%20Spezies/WaldFeen/hauptseite/Spezies.html", import.meta.url).href,
     "protektorat": new URL("../../inhalte/Fraktionen/Protektorat/Protektorat.html", import.meta.url).href,
     "protektorat-verwaltung": new URL("../../inhalte/Fraktionen/Protektorat/Verwaltung.html", import.meta.url).href,
     "protektorat-gilden": new URL("../../inhalte/Fraktionen/Protektorat/Gilden.html", import.meta.url).href,
@@ -108,6 +127,7 @@ const routes = Object.freeze({
     "kosmologie-asteroidenguertel": new URL("../../inhalte/Kosmologie/Asteroidengürtel/Übersichtsseite/index.html", import.meta.url).href,
     home: new URL("../Hauptseite.html/Hauptseite.html", import.meta.url).href,
     karte: new URL("../Karte/Karte.html", import.meta.url).href,
+    sternenkarte: new URL("../Sternenkarte/Sternenkarte.html", import.meta.url).href,
     fraktionen: new URL("../../inhalte/Fraktionen/Fraktions_\u00fcbersichtsseite/Fraktionen.html", import.meta.url).href,
     "alle-fraktionen": new URL("../../inhalte/Fraktionen/Fraktions_\u00fcbersichtsseite/Fraktionen.html", import.meta.url).href,
     "dossiers-fraktionen": new URL("../../inhalte/Fraktionen/Fraktions_\u00fcbersichtsseite/Fraktionen.html", import.meta.url).href,
@@ -151,7 +171,9 @@ export function applyAporiaRoutes(root = document) {
         const target = getAporiaRoute(link.dataset.route);
         if (target) {
             const fragment = link.dataset.routeFragment;
-            link.href = fragment ? target + "#" + encodeURIComponent(fragment) : target;
+            const destination = new URL(target);
+            if (fragment) destination.hash = encodeURIComponent(fragment);
+            link.href = destination.href;
             link.removeAttribute("aria-disabled");
             link.removeAttribute("tabindex");
             link.classList.remove("is-unavailable");

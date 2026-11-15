@@ -8,8 +8,8 @@ const tabs = [
     "⌂"
   ],
   [
-    "anatomie",
-    "Anatomie",
+    "biologie",
+    "Biologie",
     "◇"
   ],
   [
@@ -41,6 +41,11 @@ const tabs = [
     "medien",
     "Medien",
     "▷"
+  ],
+  [
+    "gameplay",
+    "Gameplay",
+    "◇"
   ]
 ];
 
@@ -68,7 +73,7 @@ export function initializeSpeciesArchive({ name, route, archive }) {
     nav.setAttribute("aria-label", name);
     for (const [slug, label, icon] of tabs) {
         const key = slug === "hauptseite" ? route : route + "-" + slug;
-        const link = makeLink(label, "../" + slug + "/" + slug + ".html", key);
+        const link = makeLink(label, slug === "gameplay" ? "../Gameplay/gameplay.html" : "../" + slug + "/" + slug + ".html", key);
         const symbol = document.createElement("span");
         symbol.setAttribute("aria-hidden", "true");
         symbol.textContent = icon;

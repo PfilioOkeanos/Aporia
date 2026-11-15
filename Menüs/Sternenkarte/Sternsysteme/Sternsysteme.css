@@ -1,0 +1,14 @@
+.system-details {
+    padding: clamp(1rem, 4vw, 3rem);
+    line-height: 1.5;
+}
+
+.system-details nav,
+.system-details p { max-width: 52ch; }
+.system-details a { color: #ffe6a5; }
+.system-details img {
+    width: min(100%, 24rem);
+    max-height: 50vh;
+    object-fit: contain;
+    object-position: left;
+}

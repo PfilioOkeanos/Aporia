@@ -1,0 +1,14 @@
+{
+  "name": "aporia-sternenkarte",
+  "private": true,
+  "scripts": {
+    "sternenkarte": "node Menüs/adapter/Sternenkarte/3D-Modelle/lokal-server.mjs"
+  },
+  "dependencies": {
+    "three": "0.180.0"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  }
+}

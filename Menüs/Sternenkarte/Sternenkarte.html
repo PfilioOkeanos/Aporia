@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aporia – Sternenkarte</title>
+    <link rel="stylesheet" href="../TopBar/Top_bar.css">
+    <link rel="stylesheet" href="../Side_bar/Side_bar.css">
+    <link rel="stylesheet" href="./Sternenkarte.css">
+    <link rel="stylesheet" href="./Szene/Szene.css">
+    <link rel="stylesheet" href="./Kamera/Kamera.css">
+    <link rel="stylesheet" href="./Objektdetails/Objektdetails.css">
+    <link rel="stylesheet" href="../adapter/Sternenkarte/3D-Modelle/3D-Modelle.css">
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "/_aporia/three/build/three.module.js",
+                "three/addons/": "/_aporia/three/examples/jsm/"
+            }
+        }
+    </script>
+    <script type="module" src="./Sternenkarte.js"></script>
+</head>
+<body class="map-page" data-page="sternenkarte">
+    <div data-aporia-topbar></div>
+    <div class="map-frame">
+        <div data-aporia-sidebar></div>
+        <main id="inhalt" class="map-main">
+            <section class="map-view" aria-label="3D-Sternenkarte">
+                <header class="map-view-header">
+                    <h1>Sternenkarte</h1>
+                    <p class="map-scale-note">Aporia-Weltenarchiv</p>
+                </header>
+                <div class="camera-axes" role="group" aria-label="Weltachsen und Kameraposition">
+                    <canvas id="camera-axes" width="208" height="208" aria-hidden="true"></canvas>
+                    <div id="camera-position" class="camera-position" aria-label="Kameraposition">
+                        <span>X</span><span>Y</span><span>Z</span>
+                    </div>
+                </div>
+                <section class="aporia-sidebar-section camera-controls" aria-labelledby="camera-controls-title" hidden>
+                    <h2 class="aporia-sidebar-heading" id="camera-controls-title">Kamerasteuerung</h2>
+                    <div class="map-group-picker" id="map-view-group">
+                        <label>Strukturebene <select data-map-structure></select></label>
+                        <input type="search" data-map-entry-search aria-label="Eintr&auml;ge suchen" placeholder="Eintrag suchen" hidden>
+                        <label>Eintrag in der Struktur <select data-map-entry></select></label>
+                        <p data-map-entry-status role="status"></p>
+                    </div>
+                    <details class="map-editor-section" id="orbit-simulation">
+                        <summary>Bahnsimulation</summary>
+                        <div class="map-editor-section-body">
+                            <label>Sternsystem <select data-orbit-system></select></label>
+                            <output>Tag 0</output>
+                            <label>Tempo
+                                <select data-orbit-speed>
+                                    <option value="0.1">0,1 Tage/s</option>
+                                    <option value="1">1 Tag/s</option>
+                                    <option value="10" selected>10 Tage/s</option>
+                                    <option value="30">30 Tage/s</option>
+                                    <option value="365">1 Jahr/s</option>
+                                    <option value="3650">10 Jahre/s</option>
+                                </select>
+                            </label>
+                            <button type="button" data-orbit-play aria-pressed="false">Start</button>
+                            <button type="button" data-orbit-reset>Zum Anfang</button>
+                            <button type="button" data-orbit-build>Fehlende Bahnen erzeugen</button>
+                            <button type="button" data-orbit-save>Stand als Startpunkt speichern</button>
+                            <p data-orbit-status role="status"></p>
+                            <p>Sonnensystem: K&ouml;rper und Entfernungen im selben Ma&szlig;stab. Kleine K&ouml;rper haben Kartenmarkierungen.</p>
+                        </div>
+                    </details>
+                    <p id="camera-help">Linke Maustaste ziehen zum Drehen. Mausrad zum Zoomen. Umschalt + gedr&uuml;cktes Mausrad ziehen zum Verschieben der Ansicht. WASD zum Fliegen, Q/E f&uuml;r runter/hoch. ^ fliegt zum Objekt unter der Maus.</p>
+                    <button type="button" id="camera-reset">Kamera zur&uuml;cksetzen</button>
+                </section>
+                <canvas class="map-canvas" id="star-map" tabindex="0" aria-label="3D-Ansicht der Sternenkarte" aria-describedby="camera-help"></canvas>
+                <div class="map-object-labels" id="map-object-labels"></div>
+                <aside id="map-object-preview" class="aporia-sidebar-section map-object-preview" aria-labelledby="map-preview-title" hidden>
+                    <button type="button" aria-label="Objektdetails schlie&szlig;en">&times;</button>
+                    <h2 id="map-preview-title"></h2>
+                    <p data-preview-type hidden></p>
+                    <img alt="" hidden>
+                    <a>Detailseite &ouml;ffnen</a>
+                </aside>
+                <details class="aporia-sidebar-section map-editor" id="map-editor" hidden>
+                    <summary>Karte bearbeiten</summary>
+                    <div class="map-editor-body">
+                        <div class="map-group-picker" id="map-edit-group">
+                            <label>Strukturebene <select data-map-structure></select></label>
+                            <input type="search" data-map-entry-search aria-label="Eintr&auml;ge suchen" placeholder="Eintrag suchen" hidden>
+                            <label>Eintrag in der Struktur <select data-map-entry></select></label>
+                            <p data-map-entry-status role="status"></p>
+                        </div>
+                        <input type="search" data-edit-search aria-label="Objekte suchen" placeholder="Objekt suchen" hidden>
+                        <label>Vorhandenes Objekt
+                            <select data-edit-selection></select>
+                        </label>
+                        <details class="map-editor-section" data-multi>
+                            <summary>Mehrfachauswahl</summary>
+                            <div class="map-editor-section-body">
+                                <p>Umschalt + linke Maustaste ziehen, um Objekte einzurahmen. Dann mit Strg + Ziehen gemeinsam verschieben. Klick auf freie Fl&auml;che w&auml;hlt ab.</p>
+                                <input type="search" data-multi-search aria-label="Objekte f&uuml;r die Mehrfachauswahl suchen" placeholder="Objekt suchen">
+                                <div class="map-multi-list" data-multi-list></div>
+                                <p data-multi-status role="status"></p>
+                                <button type="button" data-multi-clear>Auswahl leeren</button>
+                            </div>
+                        </details>
+                        <p data-editor-selection-hint>W&auml;hle ein Objekt, um es zu bearbeiten.</p>
+                        <details class="map-editor-section">
+                            <summary>Objekt hinzuf&uuml;gen</summary>
+                            <div class="map-editor-section-body">
+                                <label>Vorlage <select data-object-template></select></label>
+                                <label>Archivmotiv
+                                    <select data-object-archive-choice disabled><option value="">Kein einzelnes Motiv</option></select>
+                                </label>
+                                <p data-object-template-status role="status"></p>
+                                <button type="button" data-add>Objekt hinzuf&uuml;gen</button>
+                            </div>
+                        </details>
+                        <form hidden>
+                            <fieldset aria-label="Ausgew&auml;hltes Objekt bearbeiten">
+                                <details class="map-editor-section" open>
+                                    <summary>Objektdaten</summary>
+                                    <div class="map-editor-section-body">
+                                        <label>Name <input type="text" name="objektname" required></label>
+                                        <label>Objekttyp <input type="text" name="objekttyp" placeholder="z. B. Gasriese"></label>
+                                        <label>Kartengruppe <select name="objektgruppe"></select></label>
+                                        <label>Link <input type="text" name="objektlink"></label>
+                                    </div>
+                                </details>
+                                <details class="map-editor-section">
+                                    <summary>Position und Gr&ouml;&szlig;e</summary>
+                                    <div class="map-editor-section-body map-editor-coordinates">
+                                        <label>X <input type="number" step="any" required></label>
+                                        <label>Y <input type="number" step="any" required></label>
+                                        <label>Z <input type="number" step="any" required></label>
+                                        <label>Radius <input type="number" min="0.000000001" step="any" required></label>
+                                    </div>
+                                    <div class="map-editor-section-body">
+                                        <label>Umlauf um <select name="umlaufzentrum"></select></label>
+                                        <label data-asteroid-speed hidden>Asteroid: Starttempo (% der Kreisbahngeschwindigkeit)
+                                            <input type="number" name="starttempo" min="75" max="135" step="any">
+                                        </label>
+                                        <label>Umlaufzeit in Tagen <input type="number" name="umlaufzeit" min="0.000001" step="any"></label>
+                                    </div>
+                                    <p class="map-editor-move-help">Strg + linke Maustaste zieht das Objekt.</p>
+                                </details>
+                                <details class="map-editor-section">
+                                    <summary>Aussehen</summary>
+                                    <div class="map-editor-section-body map-editor-coordinates">
+                                        <label class="map-editor-wide">Form
+                                            <select name="objektform"><option value="">Automatisch nach Objekttyp</option></select>
+                                        </label>
+                                        <label>Grundfarbe <input type="color" name="grundfarbe"></label>
+                                        <label>Leuchtfarbe <input type="color" name="leuchtfarbe"></label>
+                                        <label class="map-editor-wide">Emissionsst&auml;rke (0&ndash;5)
+                                            <input type="number" name="emissionsstaerke" min="0" max="5" step="any" required>
+                                        </label>
+                                    </div>
+                                </details>
+                                <div class="map-editor-actions">
+                                    <button type="submit">&Uuml;bernehmen</button>
+                                    <button type="button" data-remove>Entfernen</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                        <details class="map-editor-section">
+                            <summary>Kamera-R&uuml;cksetzpunkt</summary>
+                            <div class="map-editor-section-body">
+                                <button type="button" data-camera-save>Aktuelle Ansicht speichern</button>
+                                <button type="button" data-camera-clear>Standard wiederherstellen</button>
+                                <p data-camera-status role="status"></p>
+                            </div>
+                        </details>
+                        <details class="map-editor-section">
+                            <summary>Daten exportieren</summary>
+                            <div class="map-editor-section-body">
+                                <button type="button" data-download>JSON herunterladen</button>
+                            </div>
+                        </details>
+                        <p data-editor-status role="status">&Auml;nderungen k&ouml;nnen als JSON heruntergeladen werden.</p>
+                    </div>
+                </details>
+                <p id="map-status" role="status" hidden>Die 3D-Ansicht konnte nicht geladen werden. Lade die Seite neu und pr&uuml;fe, ob WebGL verf&uuml;gbar ist.</p>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

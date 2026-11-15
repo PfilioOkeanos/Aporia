@@ -1,0 +1,93 @@
+@import url("../../hauptseite/Spezies.css");
+
+.waldfeen .wf-bio {
+    background: linear-gradient(#08150a45, #0b170ef5 60rem),
+        url("../../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/WaldFeen/Unterseite/biologie/assets/bilder/hintergruende/waldfeen_biologie_waldlicht.jpg") center top / 100% auto no-repeat,
+        #0b170e;
+}
+
+.wf-bio-layout {
+    display: grid;
+    grid-template-columns: minmax(9rem, 11%) minmax(0, 1fr) minmax(15rem, 21%);
+    grid-template-areas: "nav title title" "nav overview facts" "detail detail detail";
+    align-items: start;
+    gap: .85rem;
+    padding-block: .6rem 2rem;
+}
+
+.wf-bio-title {
+    grid-area: title;
+    padding: clamp(1rem, 3vw, 2.6rem);
+    border-bottom: 1px solid var(--edge);
+    border-radius: .8rem;
+    background: linear-gradient(90deg, #061308 8%, #06130898 46%, transparent),
+        url("../../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/WaldFeen/Unterseite/biologie/assets/bilder/header/waldfeen_biologie_header_genetik.jpg") center 43% / cover;
+}
+.wf-bio-title h1 { font: clamp(2.4rem, 5vw, 4.6rem)/1 Georgia, serif; margin: .35rem 0; }
+.wf-bio-title p { margin: 0; }
+.wf-bio-nav { grid-area: nav; }
+.wf-bio-nav a { display: block; padding: .35rem 0; border-bottom: 1px solid #9b815548; color: inherit; }
+.wf-bio-overview { grid-area: overview; }
+.wf-bio-facts { grid-area: facts; }
+.wf-bio-overview, .wf-bio-facts { display: grid; gap: .85rem; min-width: 0; }
+.wf-bio-lead, .wf-bio-card { display: grid; gap: .75rem; align-items: center; }
+.wf-bio-lead { grid-template-columns: minmax(0, 20%) minmax(0, 1fr) minmax(0, 23%); }
+.wf-bio-lead figure { margin: 0; }
+.wf-bio :is(figure, article, aside) img, .wf-bio-lead > img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+.wf-bio :is(.wf-bio-lead, .wf-bio-card, .wf-bio-facts) img[src$=".jpg"] {
+    width: 100%;
+    max-height: 20rem;
+    mask-image: linear-gradient(90deg, transparent, #000 9% 91%, transparent),
+        linear-gradient(0deg, transparent, #000 9% 91%, transparent);
+    mask-composite: intersect;
+}
+.wf-bio-lead figcaption { text-align: center; }
+.wf-bio a { color: var(--gold); }
+.wf-bio-shortcuts { display: flex; gap: .4rem; flex-wrap: wrap; }
+.wf-bio-shortcuts a { display: inline-flex; gap: .25rem; align-items: center; border: 1px solid #9b815580; padding: .25rem .45rem; border-radius: .4rem; }
+.wf-bio-shortcuts img, .wf-bio-card h4 img { width: 1.35rem; height: 1.35rem; object-fit: contain; flex: none; }
+.wf-bio-card :is(h3, h4) { margin: 0 0 .4rem; color: var(--gold); }
+.wf-bio-card h4 { display: flex; align-items: center; gap: .45rem; }
+.wf-bio-card > div, .wf-bio-facts dd { min-width: 0; }
+.wf-bio-card p:last-child { margin-bottom: 0; }
+.wf-bio-facts li { display: list-item; padding: .15rem 0; border: 0; }
+.wf-bio-systems, .wf-bio-detail-grid { display: grid; gap: .7rem; }
+.wf-bio-systems { grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr)); }
+.wf-bio-systems .wf-bio-card { grid-template-columns: minmax(0, 32%) minmax(0, 1fr); }
+.wf-bio-detail { grid-area: detail; min-width: 0; }
+.wf-bio-detail > h2, .wf-bio-group > h3 { text-align: center; color: var(--gold); }
+.wf-bio-group + .wf-bio-group { margin-top: 1.25rem; }
+.wf-bio-detail-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.wf-bio-detail-grid .wf-bio-card { grid-template-columns: minmax(0, 34%) minmax(0, 1fr); }
+.wf-bio-detail-grid .wf-bio-card:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    width: min(100%, 60rem);
+    justify-self: center;
+}
+
+@media (max-width: 1100px) {
+    .wf-bio-layout {
+        grid-template-columns: minmax(0, 1fr) minmax(13rem, 27%);
+        grid-template-areas: "title title" "nav nav" "overview facts" "detail detail";
+    }
+    .wf-bio-nav { display: flex; flex-wrap: wrap; gap: .4rem 1rem; align-items: center; }
+    .wf-bio-nav h2 { margin: 0; }
+    .wf-bio-lead { grid-template-columns: minmax(0, 28%) minmax(0, 1fr); }
+    .wf-bio-lead figure { grid-column: 1 / -1; }
+    .wf-bio-lead figure img { max-height: 11rem; }
+}
+
+@media (max-width: 730px) {
+    .wf-bio-layout { grid-template-columns: minmax(0, 1fr); grid-template-areas: "title" "nav" "overview" "facts" "detail"; }
+    .wf-bio-detail-grid, .wf-bio-detail-grid .wf-bio-card { grid-template-columns: minmax(0, 1fr); }
+    .wf-bio-card > img { max-height: 13rem; }
+}
+
+@media (max-width: 480px) {
+    .wf-bio-lead { grid-template-columns: minmax(0, 1fr); }
+}

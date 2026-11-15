@@ -1,0 +1,90 @@
+@import url("../Biologie/biologie.css");
+
+.hh-layout {
+    grid-template-areas: "nav title title" "nav content side" "summary summary summary" "detail detail detail";
+    background: radial-gradient(ellipse at 65% 15%, #17455b70, transparent 58%);
+}
+
+.ha-layout .hh-card {
+    position: relative;
+    isolation: isolate;
+    border: 0;
+    border-image: none;
+    border-radius: .8rem;
+    background: linear-gradient(145deg, #0b2939, #04131f 82%) padding-box;
+}
+
+.hh-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 1px;
+    border-radius: inherit;
+    pointer-events: none;
+    background: linear-gradient(125deg, #ffd18a, #287791 28%, #92ebff 56%, #a26d37 85%, #ffdb9a);
+    mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    mask-composite: exclude;
+}
+
+.hh-card::after {
+    content: "";
+    position: absolute;
+    inset: -1rem;
+    z-index: -1;
+    pointer-events: none;
+    border-radius: calc(.8rem + 1rem);
+    box-shadow: 0 -.25rem 1rem -.8rem #c18a4566, 0 .35rem 1rem -.8rem #43a8c466;
+}
+
+.hh-title, .hh-illustrated {
+    display: grid;
+    align-items: center;
+    gap: .8rem;
+}
+
+.hh-title {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
+    overflow-wrap: anywhere;
+}
+
+.hh-title img { width: 100%; max-height: 15rem; object-fit: contain; }
+.hh-title h1 { font-size: clamp(2rem, 3.65vw, 4rem); }
+.hh-illustrated { grid-template-columns: minmax(0, 29%) minmax(0, 1fr); }
+.hh-illustrated img { width: 100%; }
+.hh-card img {
+    mask-image: linear-gradient(to right, transparent, #000 10% 90%, transparent),
+        linear-gradient(to bottom, transparent, #000 10% 90%, transparent);
+    mask-composite: intersect;
+}
+
+.hh-milestones, .hh-summary, .hh-detail-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--hh-card-min)), 1fr));
+    gap: .75rem;
+    align-items: start;
+}
+
+.hh-milestones { --hh-card-min: 9rem; }
+.hh-milestones .hh-card { padding: .55rem; }
+.hh-milestones img { width: 100%; aspect-ratio: 4 / 3; }
+.hh-summary { grid-area: summary; --hh-card-min: 16rem; }
+.hh-detail { grid-area: detail; min-width: 0; scroll-margin-top: 7rem; }
+.hh-detail > h2 { text-align: center; margin: 0 0 .85rem; color: var(--archive-accent); }
+.hh-detail-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.hh-detail-grid .hh-illustrated {
+    grid-template-columns: minmax(0, 42%) minmax(0, 1fr);
+    padding: clamp(.85rem, 1.4vw, 1.5rem);
+}
+.hh-detail-grid img { max-height: 23rem; }
+.hh-summary img { width: 100%; max-height: 18rem; }
+.hh-card :is(ul, ol) { padding-inline-start: 1.2rem; }
+.hh-card li::marker, .hh-card dt { color: var(--archive-accent); }
+
+@media (max-width: 1050px) {
+    .hh-layout { grid-template-areas: "title title" "nav nav" "content side" "summary summary" "detail detail"; }
+}
+
+@media (max-width: 680px) {
+    .hh-layout { grid-template-areas: "title" "nav" "content" "side" "summary" "detail"; }
+    .hh-title, .hh-detail-grid, .hh-detail-grid .hh-illustrated { grid-template-columns: minmax(0, 1fr); }
+}

@@ -1,8 +1,9 @@
+import { mountGalleryZoom } from "../../../../_gemeinsam/galerie-zoom.js";
 import "../../../../_gemeinsam/medien-player.js";
 import "../../Hauptseite_%C3%BCbersicht/Spezies.js";
 import { getAporiaMediaCollection } from "../../../../../../Men%C3%BCs/adapter/aporia-media.js";
 
-const groups = Object.entries({ neue_motive:"Neue Aeromorphen-Bilder", gesamtdarstellung:"Ganzkörpervarianten", hauptseite:"Übersicht", anatomie:"Anatomie", entwicklung:"Entwicklung", geschichte:"Geschichte", gesellschaft:"Gesellschaft", politik:"Politik", heimatwelt:"Heimatwelt", medien:"Medien" });
+const groups = Object.entries({ neue_motive:"Neue Aeromorphen-Bilder", gesamtdarstellung:"Ganzkörpervarianten", hauptseite:"Übersicht", biologie:"Biologie", entwicklung:"Entwicklung", geschichte:"Geschichte", gesellschaft:"Gesellschaft", politik:"Politik", heimatwelt:"Heimatwelt", medien:"Medien" });
 
 async function gallery() {
     const section = document.querySelector("#bilder");
@@ -17,6 +18,7 @@ async function gallery() {
         const preview = section.querySelector(".gallery-preview");
         const grid = section.querySelector(".aero-gallery");
         const dialog = document.querySelector("dialog");
+        const openGallery = mountGalleryZoom(dialog);
         const all = populated.flatMap(group => group.items);
         let items = all, index = 0;
         select.add(new Option("Alle", ""));
@@ -59,7 +61,7 @@ async function gallery() {
             event.preventDefault();
             show(index + (event.key === "ArrowRight" ? 1 : -1));
         });
-        preview.addEventListener("click", () => dialog.showModal());
+        preview.addEventListener("click", openGallery);
         populate();
         controls.hidden = preview.hidden = false;
         status.hidden = true;

@@ -1,0 +1,27 @@
+body.map-page {
+    margin: 0;
+    display: grid;
+    grid-template-rows: auto minmax(0, 1fr);
+    height: 100vh;
+    height: 100dvh;
+    color-scheme: dark;
+    font-family: Georgia, serif;
+    background: #0a1115;
+    color: #eee9dc;
+}
+
+.map-frame {
+    display: flex;
+    min-height: 0;
+}
+
+.map-frame .aporia-sidebar {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.map-main {
+    flex: 1;
+    min-width: 0;
+    overflow: auto;
+}

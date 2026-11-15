@@ -1,5 +1,5 @@
 # Speziesdaten
-# Aeromorphen – Anatomie
+# Aeromorphen – Biologie
 
 Die Aeromorphen sind intelligente, überwiegend in der Luft lebende Organismen mit einem insektenartigen Körperbau und einzelnen humanoiden Merkmalen. Ihr Kopf besitzt hauptsächlich insektenartige Eigenschaften.
 
@@ -62,7 +62,7 @@ Körperlänge: Ausgewachsen über 1,5 Meter.
 Flügelspannweite: Bis zu 4 Meter.
 Flügel: Große, organische, bewegliche Flügel mit veränderbarer Form.
 Gliedmaßen: Spezialisierte Greiforgane und flugtauglicher Körperbau.
-Innere Anatomie: Zahlreiche miteinander verbundene biologische Drahtfasern.
+Innere Biologie: Zahlreiche miteinander verbundene biologische Drahtfasern.
 Datoralium: Außergewöhnliche Materie in den Drähten, ermöglicht Gewichtsregulation.
 Flugform: Aktiver Hochgeschwindigkeitsflug mit Luftdruckkammern zur Beschleunigung.
 Schlafform: Komprimierter, versteifter und leichterer Körper für energiesparendes Gleiten.

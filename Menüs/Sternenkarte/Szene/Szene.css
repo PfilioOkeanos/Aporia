@@ -1,0 +1,64 @@
+.map-view {
+    position: relative;
+    height: 100%;
+}
+
+.map-view-header {
+    position: absolute;
+    inset: .75rem 7rem auto .75rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: .5rem;
+    pointer-events: none;
+}
+
+.map-view-header h1 {
+    order: -1;
+    margin: 0;
+    font-size: clamp(1.15rem, 3vw, 1.75rem);
+}
+
+#map-status {
+    position: absolute;
+    inset: 35% 1rem auto;
+}
+
+.map-canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background: #071018;
+    border: 0;
+    cursor: grab;
+    touch-action: none;
+}
+
+.map-canvas.is-dragging {
+    cursor: grabbing;
+}
+
+.map-canvas:focus-visible {
+    outline: 2px solid #e9c879;
+    outline-offset: -2px;
+}
+
+
+.map-model-canvas {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.map-view-header,
+.camera-axes,
+.map-object-labels,
+#map-status {
+    z-index: 1;
+}
+
+.map-scale-note { margin: 0; font-size: .8rem; color: #c4c9c5; }

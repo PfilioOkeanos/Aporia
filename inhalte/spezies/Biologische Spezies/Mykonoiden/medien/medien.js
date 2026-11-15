@@ -1,3 +1,4 @@
+import { mountGalleryZoom } from "../../../_gemeinsam/galerie-zoom.js";
 import "../../../_gemeinsam/medien-player.js";
 import "../Spezies.js";
 
@@ -5,6 +6,7 @@ const allTiles = [...document.querySelectorAll(".rail .tile")];
 let tiles = allTiles;
 const feature = document.querySelector(".gallery-feature");
 const dialog = document.querySelector("dialog");
+const openGallery = mountGalleryZoom(dialog);
 let current = Math.max(0, tiles.findIndex(tile => tile.querySelector("img").src === feature.querySelector("img").src));
 
 function display(index, scroll = false) {
@@ -30,7 +32,7 @@ for (const filter of filters) filter.addEventListener("click", () => {
     for (const button of filters) button.setAttribute("aria-pressed", String(button === filter));
     display(Math.max(0, tiles.indexOf(selected)), true);
 });
-feature.querySelector(".feature-open").addEventListener("click", () => dialog.showModal());
+feature.querySelector(".feature-open").addEventListener("click", openGallery);
 for (const button of document.querySelectorAll("[data-preview], [data-step]")) {
     button.addEventListener("click", () => display(current + Number(button.dataset.preview ?? button.dataset.step), Boolean(button.dataset.preview)));
 }

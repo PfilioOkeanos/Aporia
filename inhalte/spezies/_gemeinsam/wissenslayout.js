@@ -46,4 +46,50 @@ export function arrangeKnowledgeCards(root = document) {
         }
         finishRow();
     }
+    centerSingleCardRows(root);
+}
+
+
+// Measure the rows after CSS has chosen the current number of columns.
+export function centerSingleCardRows(root = document) {
+    const grids = root.querySelectorAll(
+        ".facharchiv .source-content, .species-detail-panels, .hh-detail-grid, .hs-detail .hs-grid, .ha-grid"
+    );
+    for (const grid of grids) {
+        const cards = [...grid.children].filter(card =>
+            card.matches(".chapter-block, .species-detail-panel, .ha-card"));
+        if (!cards.length) continue;
+        let frame;
+        function update() {
+            const bounds = grid.getBoundingClientRect();
+            if (!bounds.width) return;
+            const rows = new Map();
+            for (const card of cards) {
+                if (!card.getClientRects().length) continue;
+                const row = rows.get(card.offsetTop) ?? [];
+                row.push(card);
+                rows.set(card.offsetTop, row);
+            }
+            for (const row of rows.values()) {
+                for (const card of row) {
+                    const rect = card.getBoundingClientRect();
+                    const previous = parseFloat(card.style.getPropertyValue("--single-card-offset")) || 0;
+                    const shift = row.length === 1 && rect.width < bounds.width - 1
+                        ? bounds.left + bounds.width / 2 - (rect.left + rect.width / 2 - previous)
+                        : 0;
+                    const value = shift.toFixed(2) + "px";
+                    if (card.style.getPropertyValue("--single-card-offset") !== value) {
+                        card.style.setProperty("--single-card-offset", value);
+                    }
+                }
+            }
+        }
+        const observer = new ResizeObserver(() => {
+            cancelAnimationFrame(frame);
+            frame = requestAnimationFrame(update);
+        });
+        observer.observe(grid);
+        for (const card of cards) observer.observe(card);
+        update();
+    }
 }

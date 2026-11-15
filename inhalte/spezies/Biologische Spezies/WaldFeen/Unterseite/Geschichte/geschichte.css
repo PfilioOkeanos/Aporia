@@ -1,0 +1,52 @@
+@import url("../biologie/biologie.css");
+
+.waldfeen .wf-history-page {
+    --gold: #d8c496;
+    --edge: #8d7953;
+    background: radial-gradient(ellipse at 80% 0, #26382a, #0b160f 65rem);
+}
+.wf-history-page .wf-panel {
+    border-color: #8d795380;
+    background: linear-gradient(145deg, #1b291f, #111c14 76%);
+    box-shadow: 0 .25rem 1rem #050b0755;
+}
+.wf-history-page .wf-panel::before,
+.wf-history-page .wf-panel::after { opacity: .55; }
+.wf-history-title {
+    grid-area: title;
+    display: grid;
+    grid-template-columns: minmax(0,1fr) minmax(0,1.4fr) minmax(0,1.25fr);
+    align-items: center;
+    text-align: center;
+    gap: .75rem;
+}
+.wf-history-title h1 { font: clamp(2rem,4vw,4rem)/1.1 Georgia,serif; margin: .2rem 0; }
+.wf-history-title p { margin: .35rem 0; }
+.wf-history-page img { display: block; max-width: 100%; height: auto; }
+.wf-history-page :is(.wf-history-title,.wf-bio-card,.wf-history-epochs) img {
+    width: 100%;
+    max-height: 18rem;
+    object-fit: contain;
+    filter: saturate(.72);
+    mask-image: linear-gradient(90deg,transparent,#000 8% 92%,transparent),
+        linear-gradient(0deg,transparent,#000 9% 91%,transparent);
+    mask-composite: intersect;
+}
+.wf-history-timeline { margin: 0; padding-inline-start: 1.35rem; }
+.wf-history-page .wf-history-timeline li { display: list-item; }
+.wf-history-page .wf-history-epochs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 8.5rem),1fr));
+    gap: .65rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.wf-history-page .wf-history-epochs li { display: block; text-align: center; border: 0; }
+.wf-history-epochs img { aspect-ratio: 4 / 3; }
+.wf-history-epochs p { font-size: .9rem; }
+.wf-history-page .wf-bio-card h3 { font-family: Georgia,serif; }
+@media(max-width: 560px) {
+    .wf-history-title { grid-template-columns: 1fr 1fr; }
+    .wf-history-title > div { grid-column: 1 / -1; grid-row: 1; }
+}

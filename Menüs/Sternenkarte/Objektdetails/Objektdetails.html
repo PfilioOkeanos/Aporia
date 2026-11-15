@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Objektdetails | Aporia</title>
+    <link rel="stylesheet" href="../Sternenkarte.css">
+    <link rel="stylesheet" href="./Objektdetails.css">
+</head>
+<body class="map-page">
+    <main class="map-object-placeholder">
+        <h1 id="objektname">Kartenobjekt</h1>
+        <p>Für dieses Objekt ist eine Detailseite vorgesehen.</p>
+        <a href="../Sternenkarte.html">Zurück zur Sternenkarte</a>
+    </main>
+    <script>
+        const name = new URLSearchParams(location.search).get("objekt");
+        if (name) document.querySelector("#objektname").textContent = name;
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+@import url("../biologie/biologie.css");
+
+.wf-bio-title.wf-dev-title {
+    background: linear-gradient(90deg, #061308 8%, #061308aa 34%, transparent 72%),
+        url("../../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/WaldFeen/hauptseite/weltenbaum_panorama.jpg") center 46% / cover;
+}
+
+.wf-dev-phases {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: .7rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.wf-panel .wf-dev-phases li { display: block; min-width: 0; padding: 0; border: 0; }
+.wf-dev-phases a {
+    display: grid;
+    gap: .3rem;
+    justify-items: center;
+    text-align: center;
+    text-decoration: none;
+}
+.wf-dev-phases img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    object-fit: contain;
+    mask-image: radial-gradient(ellipse closest-side, #000 76%, transparent);
+}
+.wf-dev-phases strong {
+    width: 100%;
+    padding: .2rem .35rem;
+    border: 1px solid #9b815560;
+    border-radius: .5rem;
+    background: #152819;
+}
+.wf-bio-detail-grid .wf-bio-card > img[src$=".svg"] {
+    width: min(100%, 6rem);
+    justify-self: center;
+}
+
+@media (max-width: 900px) {
+    .wf-dev-phases { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}

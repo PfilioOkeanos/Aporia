@@ -1,0 +1,44 @@
+@import url("../Gesellschaft/gesellschaft.css");
+
+.hp-layout {
+    grid-template-areas:
+        "nav title title"
+        "nav content side"
+        "nav factions factions"
+        "summary summary summary"
+        "principle principle principle"
+        "detail detail detail";
+}
+
+.hp-intro {
+    display: grid;
+    grid-template-columns: minmax(0, 38%) minmax(0, 1fr);
+    align-items: center;
+    gap: .8rem;
+}
+
+.hp-factions { grid-area: factions; }
+.hp-factions .hs-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); align-items: stretch; }
+.hp-factions article { text-align: center; }
+.hp-factions article h3 { justify-content: center; }
+.hp-factions article img { max-height: 9rem; margin-inline: auto; }
+.hp-status { color: var(--archive-accent); font-weight: 600; }
+.hp-summary { grid-area: summary; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.hp-principle { grid-area: principle; grid-template-columns: minmax(0, 8rem) minmax(0, 1fr); }
+
+@media (max-width: 1050px) {
+    .hp-layout {
+        grid-template-areas: "title title" "nav nav" "content side" "factions factions"
+            "summary summary" "principle principle" "detail detail";
+    }
+    .hp-factions .hs-grid { grid-template-columns: repeat(auto-fit, minmax(min(100%, 11rem), 1fr)); }
+    .hp-summary { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 680px) {
+    .hp-layout {
+        grid-template-areas: "title" "nav" "content" "side" "factions" "summary" "principle" "detail";
+    }
+    .hp-summary, .hp-intro { grid-template-columns: minmax(0, 1fr); }
+    .hp-intro > img { max-height: 15rem; }
+}

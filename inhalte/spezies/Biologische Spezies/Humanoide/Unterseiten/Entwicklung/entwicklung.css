@@ -1,0 +1,44 @@
+@import url("../Biologie/biologie.css");
+
+.hd-layout {
+    grid-template-areas: "nav title title" "nav content side" "timeline timeline timeline" "detail detail detail";
+}
+
+.hd-title {
+    background: linear-gradient(90deg, #061824 8%, #061824a0 31%, transparent 66%),
+        url("../../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Humanoide/Unterseiten/Entwicklung/entwicklung_header.png") center right / cover;
+}
+
+.hd-card {
+    border: 1px solid #368798;
+    border-radius: .55rem;
+    background: linear-gradient(145deg, #0b3243, #041923 76%);
+    box-shadow: inset 0 1px #84e4ff66;
+}
+
+.hd-intro, .hd-timeline {
+    display: grid;
+    align-items: center;
+    gap: .8rem;
+}
+
+.hd-intro { grid-template-columns: minmax(0, 1fr) minmax(0, 3fr) minmax(0, 1.5fr); }
+.hd-intro > img { border-radius: .45rem; width: 100%; }
+.hd-phases { grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr)); }
+.hd-timeline { grid-area: timeline; grid-template-columns: minmax(0, 1fr) minmax(0, 4fr); }
+.hd-timeline img { width: 100%; }
+.hd-timeline ol { display: flex; flex-wrap: wrap; gap: .3rem 1.7rem; padding-inline-start: 1.4rem; }
+.hd-timeline li::marker { color: var(--archive-accent); }
+.hd-detail { grid-area: detail; }
+
+@media (max-width: 1050px) {
+    .hd-layout { grid-template-areas: "title title" "nav nav" "content side" "timeline timeline" "detail detail"; }
+    .hd-intro { grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); }
+    .hd-intro > img:last-child { grid-column: 1 / -1; max-height: 9rem; }
+}
+
+@media (max-width: 680px) {
+    .hd-layout { grid-template-areas: "title" "nav" "content" "side" "timeline" "detail"; }
+    .hd-intro, .hd-timeline { grid-template-columns: minmax(0, 1fr); }
+    .hd-intro > img { max-height: 10rem; }
+}

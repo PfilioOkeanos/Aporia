@@ -63,3 +63,31 @@ body.species-group-page { margin: 0; background: #061811; color: #f4e6c9; font-f
 .species-category--aeromorphen .species-card-columns dt { color: #ffc98e; }
 .species-category--aeromorphen .species-card-copy { border-color: #537f93; }
 .species-category--aeromorphen .species-card-copy a { color: #a7f0ff; }
+
+.species-category--humanoide {
+    color: #edf9ff;
+    border-color: #397c95;
+    background: radial-gradient(ellipse at 85% 8%, #184561, transparent 68%),
+        linear-gradient(145deg, #103344, #04131f 78%);
+}
+.species-category--humanoide > img {
+    object-fit: contain;
+    background: radial-gradient(ellipse, #174968, transparent 75%);
+    mask-image: linear-gradient(to bottom, #000 78%, transparent);
+}
+.species-category--humanoide .species-card-columns dt { color: #ffd19a; }
+.species-category--humanoide .species-card-copy { border-color: #397c95; }
+.species-category--humanoide .species-card-copy a { color: #a6edff; }
+
+.species-category--waldfeen {
+    border-color: #a28a5b;
+    background: linear-gradient(145deg, #203726, #0e2118 72%);
+}
+
+.species-category--waldfeen > .species-card-logo {
+    box-sizing: border-box;
+    height: auto;
+    padding: .5rem;
+    object-fit: contain;
+    background: radial-gradient(ellipse, #a8b27d55 0%, #54705224 48%, transparent 78%);
+}

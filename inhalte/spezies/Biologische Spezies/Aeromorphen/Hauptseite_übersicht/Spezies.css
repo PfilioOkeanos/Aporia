@@ -101,9 +101,9 @@
     }
 }
 
-.anatomy-reference { margin-block: clamp(1.5rem, 3vw, 3rem); }
-.anatomy-reference > h2 { padding-bottom: .55rem; border-bottom: 1px solid #68b8d275; }
-.anatomy-reference .chapter-text dt { color: var(--archive-accent); }
+.biology-reference { margin-block: clamp(1.5rem, 3vw, 3rem); }
+.biology-reference > h2 { padding-bottom: .55rem; border-bottom: 1px solid #68b8d275; }
+.biology-reference .chapter-text dt { color: var(--archive-accent); }
 
 
 @media (min-width: 1200px) {
@@ -137,7 +137,7 @@
 .aero-topic-card ul { margin:.25rem 0 0; padding-inline-start:1rem; }
 .aero-topic-card li::marker { color:#ffc98e; }
 .aero-topic-card img { width:100%; max-height:8rem; object-fit:contain; }
-.aero-topic-facts .anatomy-reference { margin:0; }
+.aero-topic-facts .biology-reference { margin:0; }
 .species-archive.aero .aero-redesign .aero-topic-facts .source-content { grid-template-columns:1fr; gap:.45rem; }
 .aero-redesign .aero-topic-facts .chapter-visual { display:none; }
 .aero-redesign .aero-topic-facts .aero-chapter { padding:.55rem .7rem; }

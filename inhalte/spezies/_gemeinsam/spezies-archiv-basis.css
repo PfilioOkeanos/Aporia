@@ -34,3 +34,7 @@
 .gallery-filters{display:flex;flex-wrap:wrap;gap:.35rem;margin-bottom:.55rem}.gallery-filters button[aria-pressed=true]{border-color:var(--gold)}.tile[hidden]{display:none}
 @media(max-width:570px){.chapter-visual{place-items:start}.chapter-visual img{max-width:18rem}}
 
+
+/* Keep the Gameplay navigation on one stable row without live background blur. */
+.species-archive[data-species-page="gameplay"] .archive-bar { backdrop-filter: none; }
+.species-archive[data-species-page="gameplay"] .archive-bar nav { align-items: stretch; }

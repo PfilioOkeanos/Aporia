@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Wissenschaftliche Entwicklung">
+<defs><radialGradient id="bg"><stop stop-color="#145333"/><stop offset="1" stop-color="#051b13"/></radialGradient><linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff3bd"/><stop offset=".40" stop-color="#e8c969"/><stop offset="1" stop-color="#a57935"/></linearGradient><radialGradient id="orb"><stop stop-color="#e5f9b7"/><stop offset=".4" stop-color="#c7aa55"/><stop offset="1" stop-color="#4c6c38"/></radialGradient><filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4"/></filter></defs>
+<rect width="512" height="512" rx="54" fill="url(#bg)"/>
+<g stroke="#9b7e38" stroke-width="3" opacity=".6"><rect x="18" y="18" width="476" height="476" rx="42" fill="none"/></g>
+<g stroke="url(#gold)" fill="none" stroke-linecap="round" stroke-width="10">
+<circle cx="256" cy="225" r="136" opacity=".78"/><ellipse cx="256" cy="225" rx="54" ry="137" transform="rotate(35 256 225)"/><ellipse cx="256" cy="225" rx="136" ry="61" transform="rotate(-33 256 225)"/>
+<path d="M256 360v51m-85 36h170m-121-36h72m-81 0-15 36m105-36 15 36"/>
+</g>
+<circle cx="256" cy="225" r="41" fill="url(#orb)"/><circle cx="256" cy="225" r="60" fill="#d8f6ae" opacity=".18" filter="url(#glow)"/>
+<g fill="#faefba"><circle cx="127" cy="178" r="7"/><circle cx="346" cy="121" r="6"/><circle cx="357" cy="307" r="7"/></g>
+<g stroke="#ead598" stroke-width="3" fill="none" opacity=".7"><path d="M101 104l19 0m-9-10v20M380 83h15m-8-7v14M405 384h19m-9-10v20"/></g>
+</svg>

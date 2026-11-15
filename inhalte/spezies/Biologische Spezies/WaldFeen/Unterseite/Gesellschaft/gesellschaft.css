@@ -1,0 +1,209 @@
+@import url("../biologie/biologie.css");
+
+.waldfeen .wf-society {
+    --gold: #dec694;
+    --edge: #8e794f;
+    background: #0c1811;
+}
+.wf-society .wf-panel {
+    background: linear-gradient(145deg, #233327, #111d15 75%);
+    border-color: #9580549e;
+    box-shadow: 0 .25rem .9rem #080e09a0;
+}
+.wf-society .wf-panel::before, .wf-society .wf-panel::after { opacity: .52; }
+.wf-society .wf-bio-layout {
+    grid-template-areas: "nav title title" "nav overview facts" "lower lower lower" "detail detail detail";
+}
+.wf-society .wf-society-hero {
+    grid-area: title;
+    isolation: isolate;
+    overflow: hidden;
+    display: grid;
+    align-items: center;
+    min-height: clamp(13rem, 23vw, 27rem);
+    padding: 2rem 1rem 2rem 29%;
+    text-align: center;
+    background: linear-gradient(90deg, #14231a40, #14231adb 37%, #14231a30),
+        url("../../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/WaldFeen/Unterseite/Gesellschaft/Waldfeen_Gesellschaft_NUR_NEUE_BILDER_SPEC-0001/01_Hero/gesellschaft_weltbaum_terrassen_wasserfaelle.jpg") center / cover;
+}
+.wf-society-hero h1 { font: clamp(2rem, 5vw, 5rem)/1.12 Georgia, serif; color: var(--gold); margin: .2rem 0; overflow-wrap: anywhere; }
+.wf-society .wf-society-portrait {
+    position: absolute;
+    inset: auto auto 0 0;
+    width: 39%;
+    height: 100%;
+    object-fit: contain;
+    object-position: left bottom;
+    filter: saturate(.78);
+    mask-image: linear-gradient(90deg, #000 55%, transparent);
+}
+.wf-society .wf-bio-card img, .wf-society-communities img { filter: saturate(.78); }
+.wf-society-communities ul, .wf-society-diagram ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 8rem), 1fr));
+    gap: .55rem;
+    padding: 0;
+    margin: 0;
+}
+.wf-society-communities li, .wf-society-diagram li { justify-content: center; text-align: center; }
+.wf-society-communities img { display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: contain; margin-bottom: .3rem; }
+.wf-society-diagram { margin: 0; text-align: center; }
+.wf-society-diagram > strong { display: block; margin-bottom: .5rem; color: var(--gold); }
+.wf-society-diagram li { border: 1px solid #95805480; border-radius: .5rem; padding: .4rem; }
+.wf-society-diagram figcaption { font-size: .86rem; margin-top: .65rem; }
+
+.wf-society .wf-bio-card h4 { color: var(--gold); }
+.wf-society .wf-bio-card ul, .wf-society .wf-bio-card ol { padding-inline-start: 1.3rem; }
+.wf-society .wf-bio-card li { display: list-item; border: 0; padding: .1rem 0; }
+.wf-society .wf-bio-detail-grid > .wf-bio-card { align-self: stretch; }
+.wf-society #offene-fragen .wf-bio-card { grid-template-columns: minmax(0, 30%) minmax(0, 1fr); }
+
+@media (max-width: 1100px) {
+    .wf-society .wf-bio-layout {
+        grid-template-areas: "title title" "nav nav" "overview facts" "lower lower" "detail detail";
+    }
+}
+@media (max-width: 730px) {
+    .wf-society .wf-bio-layout {
+        grid-template-areas: "title" "nav" "overview" "facts" "lower" "detail";
+    }
+    .wf-society #offene-fragen .wf-bio-card { grid-template-columns: minmax(0, 1fr); }
+    .wf-society .wf-society-portrait { opacity: .65; }
+}
+
+.waldfeen .wf-society { position: relative; isolation: isolate; }
+.wf-society::before, .wf-society::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    pointer-events: none;
+    inset-inline: 0;
+}
+.wf-society::before {
+    top: 0;
+    height: clamp(38rem, 75vw, 72rem);
+    background: url("../../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/WaldFeen/Unterseite/Gesellschaft/Waldfeen_Gesellschaft_NUR_NEUE_BILDER_SPEC-0001/01_Hero/gesellschaft_weltbaum_terrassen_wasserfaelle.jpg") center top / cover;
+    mask-image: linear-gradient(#000, #000b 55%, transparent);
+    filter: saturate(.72) brightness(.7);
+}
+.wf-society::after {
+    bottom: 0;
+    height: clamp(22rem, 38vw, 38rem);
+    background: url("../../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/WaldFeen/Unterseite/Gesellschaft/Waldfeen_Gesellschaft_NUR_NEUE_BILDER_SPEC-0001/06_Umgebung/gesellschaft_waldbach_unterer_seitenabschluss.jpg") center / cover;
+    mask-image: linear-gradient(transparent, #000a 60%, #000);
+    filter: saturate(.73) brightness(.65);
+}
+.wf-society .wf-panel:not(.wf-society-book)::before {
+    --root-art: url("../../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/WaldFeen/Unterseite/Gesellschaft/Portr%C3%A4rahmen%20wurzeln.png");
+    --root-corner: clamp(2.5rem, 5vw, 4.6rem);
+    inset: -.38rem;
+    width: auto;
+    aspect-ratio: auto;
+    background:
+        var(--root-art) left top / var(--root-corner) var(--root-corner) no-repeat,
+        var(--root-art) right bottom / var(--root-corner) var(--root-corner) no-repeat;
+    background-size: calc(var(--root-corner) * 3);
+    mask-image:
+        linear-gradient(#000 0 0),
+        linear-gradient(#000 0 0);
+    mask-size: var(--root-corner) var(--root-corner);
+    mask-position: left top, right bottom;
+    mask-repeat: no-repeat;
+    opacity: .95;
+    filter: drop-shadow(0 .22rem .25rem #070c07b0);
+}
+.wf-society .wf-panel::after, .wf-society .wf-society-book::before { display: none; }
+.wf-society .wf-bio-detail-grid { gap: 1rem; }
+.wf-society-lower {
+    grid-area: lower;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+}
+.wf-society-lower .wf-bio-card { grid-template-columns: minmax(0, 36%) minmax(0, 1fr); }
+.wf-society .wf-society-book {
+    isolation: isolate;
+    padding: 0;
+    border: 0;
+    background: none;
+    box-shadow: none;
+}
+
+.wf-book-pages {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: stretch;
+    gap: .2rem;
+    padding: .55rem;
+    border: 1px solid #8f744a;
+    border-radius: .95rem;
+    background: linear-gradient(90deg, #553921, #322417 50%, #553921);
+    box-shadow: 0 .65rem 1.25rem #050a06bd;
+    color: #2d2115;
+    font: .92rem/1.35 Georgia, serif;
+}
+.wf-book-pages > div {
+    min-width: 0;
+    padding: clamp(.65rem, 1.4vw, 1.3rem);
+    border: 1px solid #b8915d;
+    background: radial-gradient(ellipse at 45% 36%, #f6e2bb, #e3c595 72%, #bc955d);
+    box-shadow: inset 0 -.22rem #a98452;
+}
+.wf-book-pages > div:first-of-type { border-radius: .8rem .15rem .3rem .65rem; }
+.wf-book-pages > div:last-of-type { border-radius: .15rem .8rem .65rem .3rem; }
+.wf-book-pages h2 {
+    grid-column: 1 / -1;
+    display: block;
+    text-align: center;
+    color: #2d2115;
+    background: #ead0a3;
+    border: 0;
+    border-radius: .65rem .65rem .12rem .12rem;
+    margin: 0;
+    padding: .5rem;
+}
+.wf-society .wf-book-pages dl > div { display: block; border-color: #86663d55; padding-block: .35rem; }
+.wf-society .wf-book-pages dt { color: inherit; font-weight: 700; }
+.wf-society-overview .wf-society-bridge {
+    grid-column: 1 / -1;
+    position: relative;
+    margin: -1rem .25rem 0;
+}
+.wf-society-overview .wf-society-bridge img {
+    display: block;
+    width: 100%;
+    object-fit: contain;
+    filter: saturate(.75);
+    max-height: 13rem;
+    mask-image: linear-gradient(90deg, transparent, #000 9% 91%, transparent),
+        linear-gradient(0deg, transparent, #000 23% 78%, transparent);
+    mask-composite: intersect;
+}
+.wf-society-bridge figcaption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: .3rem .7rem;
+    color: var(--gold);
+    font: .88rem/1.4 Georgia, serif;
+    text-align: center;
+}
+.wf-society .wf-panel:not(.wf-society-book, .wf-society-hero) {
+    background: radial-gradient(ellipse at 50% 45%, #202f23 47%, #152219 73%, #101a1300);
+    border-color: #786a4370;
+    background-clip: padding-box;
+}
+@media (min-width: 1201px) {
+    .wf-society .wf-bio-layout { grid-template-columns: minmax(9rem, 11%) minmax(0, 1fr) minmax(22rem, 30%); }
+}
+@media (731px <= width <= 1200px) {
+    .wf-society .wf-bio-layout {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        grid-template-areas: "title title" "nav nav" "overview overview" "facts facts" "lower lower" "detail detail";
+    }
+    .wf-society .wf-bio-facts { width: min(100%, 35rem); justify-self: center; }
+}
+@media (max-width: 900px) {
+    .wf-society-lower { grid-template-columns: minmax(0, 1fr); }
+}

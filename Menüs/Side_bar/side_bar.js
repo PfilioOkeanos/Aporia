@@ -247,4 +247,4 @@ async function loadAporiaSidebar() {
 /* 09 - INITIALISIERUNG                          */
 /* ============================================= */
 
-loadAporiaSidebar();
+export const sidebarBereit = sidebarHost ? loadAporiaSidebar() : Promise.resolve();

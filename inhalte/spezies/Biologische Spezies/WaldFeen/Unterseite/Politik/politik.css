@@ -1,0 +1,26 @@
+@import url("../Geschichte/geschichte.css");
+
+.wf-politik-title, .wf-politik-intro { min-width: 0; }
+.wf-politik-intro { grid-template-columns: minmax(0, 38%) minmax(0, 1fr); }
+.wf-politik-communities {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr));
+    gap: .7rem;
+}
+.wf-politik-communities img {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: contain;
+    filter: saturate(.76);
+    mask-image: radial-gradient(ellipse closest-side, #000 74%, transparent);
+}
+.wf-politik-communities h3 { margin: .35rem 0; }
+.wf-history-page .wf-bio-card h5 {
+    font: 600 1rem/1.35 Georgia, serif;
+    color: var(--gold);
+    margin: .9rem 0 .3rem;
+}
+.wf-history-page .wf-bio-card li { display: list-item; border: 0; padding: .1rem 0; }
+@media (max-width: 730px) {
+    .wf-politik-intro { grid-template-columns: minmax(0, 1fr); }
+}

@@ -212,7 +212,7 @@
 
     flex-direction: row;
 
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 
     /* Navigation bekommt den verfügbaren Platz */
 
@@ -220,7 +220,7 @@
 
     min-width: 0;
 
-    gap: clamp(20px, 2.5vw, 42px);
+    gap: 0 clamp(10px, 1.2vw, 24px);
 
     overflow: visible;
 
@@ -251,7 +251,7 @@
 
     min-width: max-content;
 
-    padding: 27px 5px;
+    padding: 16px 5px;
 
     color: var(--aporia-text);
 

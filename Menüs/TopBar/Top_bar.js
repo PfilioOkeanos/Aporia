@@ -88,6 +88,12 @@ async function loadAporiaTopbar() {
             },
 
             {
+                route: "sternenkarte",
+                label: "Sternenkarte",
+                icon: '<path d="M12 2 L14.5 9.5 L22 12 L14.5 14.5 L12 22 L9.5 14.5 L2 12 L9.5 9.5 Z"/>'
+            },
+
+            {
                 route: "himmelskoerper",
                 label: "Himmelskörper",
                 icon:
@@ -109,6 +115,12 @@ async function loadAporiaTopbar() {
                 icon:
                     '<path d="M20 4 C10 4 5 8 5 14 C5 18 8 20 11 20 C17 20 20 13 20 4 Z"/>' +
                     '<path d="M3 22 C7 16 12 11 18 7"/>'
+            },
+
+            {
+                route: "forschung",
+                label: "Forschung",
+                icon: '<path d="M9 3h6m-5 0v7l-5 8a2 2 0 0 0 2 3h10a2 2 0 0 0 2-3l-5-8V3M8 15h8"/>'
             },
 
             {
@@ -276,6 +288,16 @@ async function loadAporiaTopbar() {
                 { route: "spezies-cosmic", label: "Kosmische Spezies" },
                 { route: "spezies-technological", label: "Technologische Lebensformen" },
                 { route: "spezies-gigantic", label: "Gigantische Lebensformen" }
+            ],
+            forschung: [
+                { route: "forschung", fragment: "forschungsgebiete", label: "Forschungsgebiete" },
+                { route: "forschung", fragment: "forschungsprojekte", label: "Forschungsprojekte" },
+                { route: "forschung", fragment: "rohstoffforschung", label: "Rohstoffforschung" },
+                { route: "forschung", fragment: "technologien", label: "Technologien" },
+                { route: "forschung", fragment: "speziesforschung", label: "Speziesforschung" },
+                { route: "forschung", fragment: "fraktionsforschung", label: "Fraktionsforschung" },
+                { route: "forschung", fragment: "forschungskooperationen", label: "Forschungskooperationen" },
+                { route: "forschung", fragment: "technologieentwicklung", label: "Technologieentwicklung" }
             ],
             rohstoffe: [
                 { route: "rohstoffe", fragment: "elemente", label: "Chemische Elemente" },
