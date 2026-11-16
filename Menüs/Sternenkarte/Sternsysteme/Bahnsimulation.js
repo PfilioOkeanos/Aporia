@@ -114,5 +114,18 @@ export function starteBahnsimulation(panel, objekte, speichere) {
     });
 
     aktualisiereSysteme();
-    return { aktualisiere, aktualisiereSysteme, tageFuer };
+    return {
+        aktualisiere, aktualisiereSysteme, tageFuer,
+        ansicht: () => [...zeiten].map(([id, uhr]) => [id, { ...uhr }]),
+        stelleAnsichtWiederHer(eintraege) {
+            if (!Array.isArray(eintraege)) return;
+            for (const [id, uhr] of eintraege.filter(eintrag => Array.isArray(eintrag))) {
+                if (!objekte.some(objekt => objekt.id === id && objekt.systemName) ||
+                    !Number.isFinite(uhr?.tage) || !Number.isFinite(uhr?.tempo)) continue;
+                zeiten.set(id, { tage: uhr.tage, tempo: uhr.tempo, laeuft: Boolean(uhr.laeuft) });
+            }
+            schaltflaechen();
+            aktualisiere(0);
+        }
+    };
 }

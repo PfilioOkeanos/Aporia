@@ -1,6 +1,10 @@
 export const PLATZHALTERLINK = "./Objektdetails/Objektdetails.html";
 const karte = new URL("../../../Sternenkarte/Sternenkarte.html", import.meta.url);
 
+export function kartenobjektLink(objekt) {
+    return objektLink(objekt.archivLink || objekt.link, objekt.name);
+}
+
 export function objektLink(pfad, name) {
     const ziel = new URL(pfad || PLATZHALTERLINK, karte);
     const platzhalter = new URL(PLATZHALTERLINK, karte);

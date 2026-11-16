@@ -1,4 +1,6 @@
 import { getAporiaRoute } from "./aporia-routes.js";
+import { ladeObjekte } from "./Sternenkarte/Kartendaten/Kartendaten.js";
+import { kartenobjektLink } from "./Sternenkarte/Verknuepfungen/Verknuepfungen.js";
 
 const detailordner = new Set(["asteroiden","kometen","monde","nebel","planeten","schwarze-loecher","sterne","sternensysteme","zwergplaneten","galaxien"]);
 const doppelteNamen = new Set([
@@ -34,8 +36,42 @@ export function getCelestialDetailUrl(category, slug) {
     return new URL("details/" + detail, getAporiaRoute(category)).href;
 }
 
-export async function loadCelestialCatalog(category) {
+export const celestialCatalogCategories = [...detailordner];
+const catalogs = new Map();
+let mappedDossiers;
+const dossierKey = href => decodeURI(new URL(href).pathname);
+
+async function loadCatalog(category) {
     const response = await fetch(new URL("bildarchiv.json", getAporiaRoute(category)));
     if (!response.ok) throw new Error("Bildarchiv: HTTP " + response.status);
-    return response.json();
+    const [entries, mapped] = await Promise.all([response.json(), mappedDossiers ??
+        (mappedDossiers = ladeObjekte().then(objects => new Map(objects.filter(object => object.archivLink)
+            .map(object => [dossierKey(kartenobjektLink(object)), object]))).catch(() => {
+            mappedDossiers = undefined;
+            return new Map();
+        }))]);
+    const seen = new Set();
+    const cards = entries.map(entry => {
+        const href = getCelestialDetailUrl(category, entry.slug);
+        const key = dossierKey(href);
+        const object = mapped.get(key);
+        seen.add(key);
+        return { ...entry, href, title: object?.name ?? entry.title, alias: entry.title, type: object?.typ };
+    });
+    const root = dossierKey(new URL("details/", getAporiaRoute(category)));
+    for (const [key, object] of mapped) {
+        if (seen.has(key) || !key.startsWith(root)) continue;
+        cards.push({ title: object.name, href: kartenobjektLink(object), group: object.typ, type: object.typ, preview: object.vorschau });
+    }
+    return cards.sort((a, b) => a.title.localeCompare(b.title, "de"));
+}
+
+export function loadCelestialCatalog(category) {
+    if (!catalogs.has(category)) {
+        catalogs.set(category, loadCatalog(category).catch(error => {
+            catalogs.delete(category);
+            throw error;
+        }));
+    }
+    return catalogs.get(category);
 }

@@ -13,11 +13,48 @@ import { erzeugeModellEbene } from "./Szene/ModellEbene.js";
 import { starteBahnsimulation } from "./Sternsysteme/Bahnsimulation.js";
 import { starteGruppenwahl } from "./Sternsysteme/Gruppenwahl.js";
 import { starteSzene } from "./Szene/Szene.js";
+import { ladeKartenansicht, leseDossierVorschau, speichereKartenansicht } from "../adapter/Sternenkarte/KartenRueckkehr.js";
+import { kartenobjektLink } from "../adapter/Sternenkarte/Verknuepfungen/Verknuepfungen.js";
 
 const canvas = document.querySelector("#star-map");
 const reset = document.querySelector("#camera-reset");
 const status = document.querySelector("#map-status");
-try {
+const dossierVorschau = leseDossierVorschau(location.href);
+
+function starteDossierVorschau(objekt) {
+    const kamera = erzeugeKamera(canvas, reset);
+    const labels = document.querySelector("#map-object-labels");
+    const zeichneAchsen = erzeugeAchsenanzeige(
+        document.querySelector("#camera-axes"), document.querySelector("#camera-position")
+    );
+    const header = document.querySelector(".map-view-header");
+    header.querySelector("h1").textContent = objekt.name;
+    header.querySelector(".map-scale-note").textContent = objekt.beschreibung;
+    const link = document.createElement("a");
+    link.href = location.pathname;
+    link.textContent = "Zur regulären Sternenkarte";
+    header.append(link);
+    const objekte = [objekt];
+    const ansicht = { objekte, alleObjekte: objekte, istMarkiert: () => false };
+    kamera.fokussiereGruppe(objekt.position, 5, objekt.id);
+    let vorschau;
+    const zeichneNavigation = (stand, aspect) => {
+        zeichneAchsen(stand);
+        vorschau?.aktualisiere(stand);
+        zeichneObjektnamen(labels, objekte, stand, aspect, ansicht.istMarkiert, canvas.clientHeight);
+    };
+    if (starteSzene(canvas, reset, status, zeichneNavigation, ansicht, kamera, { zeichnen: () => false }, () => () => 0, false)) {
+        sidebarBereit.then(() => {
+            const sidebar = document.querySelector("[data-aporia-sidebar] .aporia-sidebar-scroll");
+            if (!sidebar) return;
+            const panel = document.querySelector("#map-object-preview");
+            sidebar.prepend(panel);
+            vorschau = starteObjektvorschau(canvas, labels, panel, objekte, kamera);
+        });
+    }
+}
+
+async function starteKarte() {
     const zeichneAchsen = erzeugeAchsenanzeige(
         document.querySelector("#camera-axes"),
         document.querySelector("#camera-position")
@@ -29,7 +66,15 @@ try {
     const sichtbareObjekte = [];
     let gruppen = [];
     let gruppenNachId = new Map();
-    let aktiveGruppe = new URLSearchParams(location.search).get("system");
+    const parameter = new URLSearchParams(location.search);
+    const angefordertesSystem = parameter.get("system");
+    const zielObjekt = objekte.find(objekt => objekt.id === parameter.get("objekt"));
+    const letzteAnsicht = ladeKartenansicht();
+    const browserZurueck = performance.getEntriesByType("navigation")[0]?.type === "back_forward";
+    const rueckkehr = letzteAnsicht && ((browserZurueck && letzteAnsicht.suche === location.search) ||
+        (zielObjekt ? letzteAnsicht.objekt === zielObjekt.id : !angefordertesSystem));
+    let aktiveGruppe = rueckkehr ? letzteAnsicht.gruppe : angefordertesSystem;
+    let dossierObjekt = rueckkehr ? objekte.find(objekt => objekt.id === letzteAnsicht.objekt) : null;
     let editor;
     const simulation = starteBahnsimulation(document.querySelector("#orbit-simulation"), objekte, () => editor.speichere());
     let vorschauSteuerung;
@@ -57,11 +102,12 @@ try {
 
     function waehleGruppe(id) {
         if (!gruppenNachId.has(id)) return;
+        if (id !== aktiveGruppe) dossierObjekt = null;
         aktiveGruppe = id;
         gruppenAktualisieren();
         vorschauSteuerung?.leere();
         const system = sichtbareObjekte.find(objekt => objekt.id === id && objekt.systemName);
-        if (system) vorschauSteuerung?.zeige(system);
+        if (system && !system.archivLink) vorschauSteuerung?.zeige(system);
         document.querySelector(".map-scale-note").textContent = gruppenNachId.get(id).name;
         const mitte = system?.position ?? [0, 1, 2].map(achse => {
             let min = Infinity, max = -Infinity;
@@ -77,7 +123,15 @@ try {
     }
 
     gruppenAktualisieren();
+    if (zielObjekt && !rueckkehr) aktiveGruppe = objektgruppe(zielObjekt, gruppenNachId);
     waehleGruppe(aktiveGruppe);
+    if (rueckkehr && gruppenNachId.has(letzteAnsicht.gruppe)) {
+        simulation.stelleAnsichtWiederHer(letzteAnsicht.simulation);
+        const fokus = sichtbareObjekte.find(objekt => objekt.id === letzteAnsicht.kamera.fokusId);
+        kamera.stelleAnsichtWiederHer(letzteAnsicht.kamera, fokus);
+    } else if (zielObjekt) {
+        kamera.fliegeZumObjekt(zielObjekt);
+    }
     const gruppensteuerung = {
         sichtbareObjekte,
         liste: () => gruppen,
@@ -91,6 +145,25 @@ try {
     };
     editor = starteEditor(menue, objekte, kamera, lokal, gruppensteuerung, simulation.tageFuer);
     const labels = document.querySelector("#map-object-labels");
+    function speichereAnsicht() {
+        const ziel = dossierObjekt ? new URL(kartenobjektLink(dossierObjekt)) : null;
+        speichereKartenansicht({
+            gruppe: aktiveGruppe, kamera: kamera.ansicht(), simulation: simulation.ansicht(),
+            objekt: dossierObjekt?.id, dossierPfad: ziel?.origin === location.origin ? ziel.pathname : undefined,
+            suche: location.search
+        });
+    }
+    function merkeDossier(objekt) {
+        dossierObjekt = objekt;
+        speichereAnsicht();
+    }
+    labels.addEventListener("click", event => {
+        if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey || event.defaultPrevented) return;
+        const id = event.target.closest("a[data-id]")?.dataset.id;
+        const objekt = sichtbareObjekte.find(eintrag => eintrag.id === id);
+        if (objekt) merkeDossier(objekt);
+    });
+    window.addEventListener("pagehide", speichereAnsicht);
     function zeichneNavigation(stand, aspect) {
         zeichneAchsen(stand);
         vorschauSteuerung?.aktualisiere(stand);
@@ -109,14 +182,20 @@ try {
             sidebar.prepend(steuerung, menue, vorschau);
             steuerung.hidden = false;
             menue.hidden = false;
-            vorschauSteuerung = starteObjektvorschau(canvas, labels, vorschau, sichtbareObjekte, kamera);
-            vorschauSteuerung.zeige(sichtbareObjekte.find(objekt => objekt.id === aktiveGruppe && objekt.systemName));
+            vorschauSteuerung = starteObjektvorschau(canvas, labels, vorschau, sichtbareObjekte, kamera, merkeDossier);
+            vorschauSteuerung.zeige(sichtbareObjekte.find(objekt =>
+                objekt.id === aktiveGruppe && objekt.systemName && !objekt.archivLink));
             return starteModellimport(sidebar, editor, modellEbene, Boolean(lokal));
         }).catch(error => {
             status.textContent = error.message;
             status.hidden = false;
         });
     }
+}
+
+try {
+    if (dossierVorschau) starteDossierVorschau(dossierVorschau);
+    else await starteKarte();
 } catch (error) {
     status.hidden = false;
     reset.disabled = true;

@@ -1,5 +1,5 @@
 import { positionVon } from "../Sternsysteme/Bahnphysik.js";
-import { objektLink } from "../../adapter/Sternenkarte/Verknuepfungen/Verknuepfungen.js";
+import { kartenobjektLink } from "../../adapter/Sternenkarte/Verknuepfungen/Verknuepfungen.js";
 
 const dot = (a, b) => a.reduce((sum, value, index) => sum + value * b[index], 0);
 
@@ -7,7 +7,7 @@ export function zeichneObjektnamen(container, objekte, stand, aspect, istMarkier
     const links = new Map([...container.children].map(link => [link.dataset.id, link]));
 
     for (const objekt of objekte) {
-        const { id, name, typ, link: pfad, radius } = objekt;
+        const { id, name, typ, radius } = objekt;
         const delta = positionVon(objekt).map((value, index) => value - stand.eye[index]);
         const tiefe = -dot(delta, stand.back);
         const x = 50 + 50 * 2.414 * dot(delta, stand.right) / (tiefe * aspect);
@@ -28,7 +28,7 @@ export function zeichneObjektnamen(container, objekte, stand, aspect, istMarkier
             link.dataset.id = id;
             container.append(link);
         }
-        const ziel = objektLink(pfad, name);
+        const ziel = kartenobjektLink(objekt);
         if (link.href !== ziel) link.href = ziel;
         const beschriftung = typ ? name + " · " + typ : name;
         if (link.textContent !== beschriftung) {

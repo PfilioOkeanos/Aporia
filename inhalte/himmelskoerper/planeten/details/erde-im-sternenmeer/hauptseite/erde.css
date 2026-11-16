@@ -1,0 +1,253 @@
+body.earth-page {
+    --earth-gold: #eed28b;
+    --earth-border: #a08043;
+    margin: 0;
+    color: #f8f0dc;
+    background: radial-gradient(ellipse at 50% 30%, #18382a, #061611 70%);
+    font-family: Georgia, serif;
+}
+
+.earth-frame { display: flex; }
+.earth-frame main { min-width: 0; flex: 1; }
+.earth-page a { color: inherit; }
+.earth-page :focus-visible { outline: 2px solid #ffe293; outline-offset: 3px; }
+.earth-hero { position: relative; isolation: isolate; border-bottom: 2px solid var(--earth-border); }
+.earth-panorama { position: absolute; z-index: -1; inset: 0; overflow: hidden; background: #070e15; }
+.earth-panorama img { position: absolute; height: 100%; object-fit: cover; }
+.earth-panorama img:first-child { width: 76%; right: 0; object-position: 50% 58%; }
+.earth-panorama img:last-child {
+    width: 53%;
+    left: 0;
+    object-position: center 47%;
+    mask-image: linear-gradient(90deg, #000 66%, transparent);
+}
+.planet-dashboard .earth-panorama img:only-child {
+    width: 100%;
+    object-position: center 45%;
+    mask-image: none;
+}
+.planet-dashboard .earth-panorama::after {
+    background: linear-gradient(90deg, #031711ed 5%, #031711c9 37%, transparent 84%),
+        linear-gradient(0deg, #06140eea, transparent 80%);
+}
+body.earth-page[data-celestial-theme] {
+    --earth-gold: var(--theme-accent);
+    --earth-border: var(--theme-edge);
+    background: radial-gradient(ellipse at 65% 25%, var(--theme-halo), var(--theme-deep) 75%);
+}
+[data-celestial-theme="mars"] { --theme-accent: #ffd1a4; --theme-edge: #b97754; --theme-halo: #723719; --theme-deep: #1c100e; }
+[data-celestial-theme="jupiter"] { --theme-accent: #ffe3b9; --theme-edge: #bd9061; --theme-halo: #635043; --theme-deep: #211716; }
+[data-celestial-theme="orvaya"] { --theme-accent: #dce997; --theme-edge: #8c9a55; --theme-halo: #37472d; --theme-deep: #10180f; }
+[data-celestial-theme="saturnmond"] { --theme-accent: #e9e0c7; --theme-edge: #a29b89; --theme-halo: #4d4b49; --theme-deep: #19191c; }
+[data-celestial-theme="uranusmond"] { --theme-accent: #b9edf0; --theme-edge: #739aaf; --theme-halo: #28485c; --theme-deep: #0b171f; }
+[data-celestial-theme] .earth-panel, [data-celestial-theme] .earth-tabs summary, [data-celestial-theme] .earth-tabs ul {
+    background: linear-gradient(140deg, var(--theme-halo), var(--theme-deep) 72%);
+}
+[data-celestial-theme] .earth-panorama::after {
+    background: linear-gradient(90deg, var(--theme-deep) 12%, transparent 75%),
+        linear-gradient(0deg, var(--theme-deep), transparent 53%);
+}
+[data-celestial-theme]:not([data-celestial-theme="orvaya"]) .earth-panorama img:only-child {
+    width: 72%; left: auto; right: 0; object-fit: contain; object-position: center;
+}
+.earth-title .planet-status { color: var(--earth-gold); font-size: .88rem; }
+.planet-original { margin: 0 1.5rem 1.2rem; padding: .65rem; border: 1px solid var(--earth-border); border-radius: .5rem; }
+.planet-original summary { cursor: pointer; color: var(--earth-gold); }
+.earth-panorama::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, #06181299, transparent 65%), linear-gradient(0deg, #06140edd, transparent 70%);
+}
+.earth-hero-nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: .65rem clamp(.7rem, 3vw, 3rem);
+    padding: .65rem clamp(1rem, 4vw, 4rem);
+    background: #041611df;
+    border-bottom: 1px solid #987641;
+}
+.earth-crumb, .earth-tabs { display: flex; align-items: center; gap: .7rem; flex-wrap: wrap; }
+.earth-crumb .earth-back-to-map {
+    color: var(--earth-gold);
+    background: #10271c;
+    border: 1px solid var(--earth-border);
+    border-radius: .45rem;
+    padding: .45rem .65rem;
+    text-decoration: none;
+}
+.earth-crumb .earth-back-to-map:hover { background: #304538; }
+.earth-tabs details { position: relative; }
+.earth-tabs > a, .earth-tabs summary {
+    display: block;
+    padding: .48rem clamp(.65rem, 1.2vw, 1.2rem);
+    color: #fff2cf;
+    white-space: nowrap;
+    background: linear-gradient(#19352a, #071a13);
+    border: 1px solid var(--earth-border);
+    border-radius: .48rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+.earth-tabs > a[aria-current], .earth-tabs details[open] summary {
+    border-color: var(--earth-gold);
+    box-shadow: inset 0 0 10px #e5b85865, 0 0 8px #ecbf5540;
+}
+.earth-tabs summary { list-style: none; }
+.earth-tabs summary::-webkit-details-marker { display: none; }
+.earth-tabs summary::after { content: "⌄"; color: var(--earth-gold); margin-left: .6em; }
+.earth-tabs details[open] summary::after { content: "⌃"; }
+.earth-tabs ul {
+    position: absolute;
+    z-index: 3;
+    inset: calc(100% + 3px) auto auto 0;
+    min-width: max-content;
+    background: #071d16;
+    border: 1px solid var(--earth-border);
+    border-radius: .6rem;
+    box-shadow: 0 12px 26px #0009;
+    margin: 0;
+    padding: .3rem;
+    list-style: none;
+}
+.earth-tabs li a { display: flex; align-items: center; gap: .65rem; padding: .48rem .7rem; text-decoration: none; }
+.earth-tabs li a:hover { background: #254034; border-radius: .35rem; }
+.earth-tabs b, .earth-cards b, .earth-related b { color: var(--earth-gold); }
+.earth-title { padding: clamp(2.1rem, 5vw, 5.5rem) clamp(1.15rem, 6vw, 6.5rem) 1.7rem; }
+.earth-title h1 { color: #fff0c0; font-size: clamp(3.4rem, 6vw, 6rem); font-weight: 500; line-height: 1; letter-spacing: .06em; margin: 0; }
+.planet-dashboard .earth-title h1 { max-width: 22ch; font-size: clamp(2.6rem, 5.3vw, 5.6rem); overflow-wrap: anywhere; }
+.earth-title p { max-width: 45ch; margin: .4rem 0 0; line-height: 1.4; text-shadow: 0 2px 8px #000; }
+.earth-title .earth-class { color: var(--earth-gold); font-size: clamp(1.1rem, 2vw, 1.4rem); margin-bottom: .55rem; }
+
+.earth-dashboard {
+    display: grid;
+    grid-template-areas: "quick facts player aside" "quick features features aside";
+    grid-template-columns: minmax(0, 1.65fr) minmax(0, 1.06fr) minmax(0, .92fr) minmax(0, 1fr);
+    gap: .7rem;
+    align-items: start;
+    padding: .75rem clamp(.7rem, 1.6vw, 1.5rem);
+}
+.earth-quick { grid-area: quick; }
+.earth-facts { grid-area: facts; align-self: stretch; }
+.earth-view { grid-area: player; align-self: stretch; }
+.earth-features { grid-area: features; }
+.earth-aside { grid-area: aside; display: grid; gap: .7rem; }
+.earth-panel {
+    min-width: 0;
+    background: linear-gradient(151deg, #153228, #061812 50%, #0d241b);
+    border: 3px double var(--earth-border);
+    border-radius: .85rem;
+    box-shadow: inset 0 0 16px #b88e3320, 0 4px 18px #0006;
+}
+.earth-panel h2 {
+    margin: 0;
+    padding: .37rem .65rem;
+    color: var(--earth-gold);
+    font-weight: 500;
+    font-size: clamp(1.12rem, 1.7vw, 1.6rem);
+    border-bottom: 1px solid var(--earth-border);
+    background: linear-gradient(90deg, #51634735, transparent);
+}
+.earth-cards { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .42rem; padding: .6rem; }
+.earth-cards a {
+    position: relative;
+    display: flex;
+    align-items: end;
+    min-width: 0;
+    min-height: clamp(4.3rem, 6vw, 6.2rem);
+    isolation: isolate;
+    overflow: hidden;
+    border: 1px solid var(--earth-border);
+    border-radius: .55rem;
+    background: #152e25;
+    text-decoration: none;
+    text-align: center;
+    scroll-margin-top: 8rem;
+}
+.earth-cards img { position: absolute; z-index: -2; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.earth-cards a::before { content: ""; position: absolute; z-index: -1; inset: 0; background: linear-gradient(0deg, #020e0cf5 5%, transparent 76%); }
+.earth-cards a:hover { border-color: #ffe197; box-shadow: inset 0 0 15px #ffe19760; }
+.earth-cards span { width: 100%; padding: .3rem .2rem .35rem; font-size: clamp(.83rem, 1.05vw, 1.03rem); overflow-wrap: anywhere; }
+.earth-cards b { margin-right: .25rem; }
+.dashboard-anchor { position: absolute; top: 0; scroll-margin-top: 8rem; }
+.earth-quick .earth-cards a:nth-last-child(-n+2) { grid-column: span 2; }
+.earth-features .earth-cards { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.earth-panel dl { margin: .26rem .65rem .6rem; font-size: .95rem; }
+.earth-panel dl div { display: grid; grid-template-columns: 1fr 1.2fr; gap: .3rem; padding: .15rem 0; border-bottom: 1px solid #ab864337; }
+.earth-panel dt { color: #efdbab; }
+.earth-panel dd { margin: 0; }
+.earth-panel .earth-map { display: inline-block; margin: 0 .65rem .6rem; color: var(--earth-gold); }
+.earth-related { list-style: none; padding: .55rem; margin: 0; display: grid; gap: .35rem; }
+.earth-related a { display: flex; align-items: center; gap: .45rem; padding: .4rem; border: 1px solid #a58248aa; border-radius: .45rem; text-decoration: none; }
+.earth-related a:hover { background: #294437; }
+.earth-related a::after { content: "→"; margin-left: auto; color: var(--earth-gold); }
+.earth-related span { color: #eddbb5; }
+.earth-player { position: relative; display: grid; justify-items: center; padding: .38rem; background: radial-gradient(ellipse, #0b283d, #030910 72%); border-radius: 0 0 .55rem .55rem; }
+.earth-player > img, .earth-player canvas { width: min(100%, 330px); aspect-ratio: 1; object-fit: contain; }
+.earth-player canvas { touch-action: none; cursor: grab; }
+.earth-player canvas:active { cursor: grabbing; }
+.earth-crosshair:not([hidden]) {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    translate: -50% -50%;
+    width: 15px;
+    height: 15px;
+    background: linear-gradient(#ffe293, #ffe293) center / 100% 1px no-repeat,
+        linear-gradient(#ffe293, #ffe293) center / 1px 100% no-repeat;
+    filter: drop-shadow(0 0 2px #000);
+    pointer-events: none;
+}
+.earth-coordinates { padding: .1rem .2rem; text-align: center; color: #ffe6a3; font: .78rem/1.5 monospace; }
+.earth-controls:not([hidden]) { position: absolute; inset: 0; pointer-events: none; }
+.earth-controls button {
+    position: absolute;
+    pointer-events: auto;
+    cursor: pointer;
+    min-width: 2rem;
+    min-height: 2rem;
+    border: 1px solid var(--earth-gold);
+    border-radius: .5rem;
+    color: #fff1ca;
+    background: #061812ea;
+    font-size: 1.05rem;
+}
+.earth-controls [data-turn] { top: 50%; transform: translateY(-50%); }
+.earth-controls [data-turn="-1"] { left: .35rem; }
+.earth-controls [data-turn="1"] { right: .35rem; }
+.earth-controls [data-fullscreen] { right: .35rem; top: .35rem; }
+.earth-zoom { position: absolute; left: .35rem; top: .35rem; display: flex; gap: .25rem; }
+.earth-zoom button { position: static; }
+.earth-zoom button:disabled { opacity: .5; cursor: default; }
+.earth-view-note { margin: 0 0 .25rem; color: #efe0b6; font-size: .82rem; }
+.earth-player:fullscreen { place-content: center; width: 100%; height: 100%; }
+.earth-player:fullscreen canvas { width: min(82vw, 82vh); }
+.celestial-dashboard-art { display: grid; place-items: center; margin: .5rem; }
+.celestial-dashboard-art a { width: 100%; }
+.celestial-dashboard-art img { display: block; width: 100%; max-height: 330px; object-fit: contain; border-radius: .35rem; }
+.earth-sources { display: flex; flex-wrap: wrap; gap: 1rem; color: #dfcca6; padding: .5rem 1.5rem 1.2rem; font-size: .85rem; }
+
+@media (max-width: 1180px) {
+    .earth-dashboard {
+        grid-template-areas: "quick facts player" "quick features features" "aside aside aside";
+        grid-template-columns: minmax(0, 1.25fr) repeat(2, minmax(0, 1fr));
+    }
+    .earth-aside { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 850px) {
+    .earth-dashboard { grid-template-areas: "facts player" "quick quick" "features features" "aside aside"; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+    .earth-frame { display: block; }
+}
+@media (max-width: 520px) {
+    .earth-dashboard { grid-template-areas: "facts" "player" "quick" "features" "aside"; grid-template-columns: minmax(0, 1fr); }
+    .earth-aside { grid-template-columns: minmax(0, 1fr); }
+    .earth-cards, .earth-features .earth-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .earth-quick .earth-cards a:nth-last-child(-n+2) { grid-column: auto; }
+    .earth-tabs details:last-child ul { inset-inline: auto 0; }
+    .earth-page .aporia-topbar { grid-template-columns: minmax(0, 1fr); }
+    .earth-page .aporia-search { grid-column: 1; grid-row: 2; width: 100%; }
+    .earth-page .aporia-main-nav { grid-row: 3; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .earth-page .aporia-nav-link { flex: 1 1 auto !important; }
+    .earth-page .aporia-nav-link span { white-space: normal; }
+}

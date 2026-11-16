@@ -1,0 +1,115 @@
+body:has(.dossier-content),
+body[data-page="kosmologie-sternsysteme"]:has(.atlas-frame .aporia-dossier) {
+    margin: 0;
+    color: #f5ebd7;
+    background: #090c16;
+    font-family: Georgia, serif;
+}
+
+.atlas-main:has(.aporia-dossier) {
+    --atlas-accent: #e6c88d;
+}
+
+.aporia-dossier {
+    --dossier-gold: #e6c88d;
+    margin-block: 1.5rem;
+    color: #f5ebd7;
+}
+
+.cosmology-main > .aporia-dossier {
+    margin-inline: clamp(1rem, 4vw, 3rem);
+}
+
+.dossier-intro, .dossier-content {
+    display: grid;
+    gap: clamp(1rem, 3vw, 2rem);
+    padding: clamp(1rem, 3vw, 2rem);
+    border: 1px solid #756244;
+    border-radius: 1rem;
+    background: linear-gradient(145deg, #1a2b27, #101c20);
+}
+
+.dossier-intro:has(figure) {
+    grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+    align-items: start;
+}
+
+.aporia-dossier figure { margin: 0; }
+.aporia-dossier img, .aporia-dossier video {
+    width: 100%;
+    max-height: 36rem;
+    object-fit: contain;
+    border-radius: .65rem;
+}
+
+.aporia-dossier audio { max-width: 100%; }
+.aporia-dossier a, .aporia-dossier dt, .dossier-status { color: var(--dossier-gold); }
+.dossier-status { font-size: .9rem; }
+.aporia-dossier dt { font-weight: bold; }
+.aporia-dossier dd { margin: .2rem 0 .8rem; }
+.dossier-details, .dossier-chapters {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr));
+    gap: .65rem 1rem;
+}
+
+.dossier-chapters a, .dossier-details > div {
+    overflow-wrap: anywhere;
+    padding: .65rem .8rem;
+    border: 1px solid #61563f;
+    border-radius: .5rem;
+    background: #14211e;
+}
+
+.dossier-chapters a:hover, .dossier-chapters a:focus-visible, .dossier-chapters [aria-current] {
+    background: #34403a;
+    border-color: var(--dossier-gold);
+}
+
+.dossier-pagination { display: flex; flex-wrap: wrap; gap: 1rem; }
+
+@media (max-width: 700px) {
+    .dossier-intro:has(figure) { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 760px) {
+    body:has(.aporia-dossier) {
+        overflow-x: clip;
+    }
+
+    body:has(.aporia-dossier) .atlas-frame > #aporia-sidebar-host {
+        width: 100%;
+    }
+}
+
+@media (max-width: 620px) {
+    body:has(.aporia-dossier) .aporia-topbar {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    body:has(.aporia-dossier) .aporia-search {
+        grid-column: 1;
+        grid-row: 2;
+        width: 100%;
+    }
+
+    body:has(.aporia-dossier) .aporia-main-nav {
+        grid-row: 3;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    body:has(.aporia-dossier) .aporia-nav-link {
+        flex: 1 1 auto !important;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        text-align: start;
+    }
+
+    body:has(.aporia-dossier) .aporia-nav-link span {
+        white-space: normal;
+    }
+
+    body:has(.aporia-dossier) .aporia-celestial-nav:nth-child(odd) ul { inset-inline: 0 auto; }
+    body:has(.aporia-dossier) .aporia-celestial-nav:nth-child(even) ul { inset-inline: auto 0; }
+}

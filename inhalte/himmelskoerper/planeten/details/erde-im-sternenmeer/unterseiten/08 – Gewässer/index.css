@@ -1,0 +1,15 @@
+@import url('../05%20%E2%80%93%20Geografie/index.css');
+body.earth-page.earth-life { background: radial-gradient(ellipse at 52% 30%, #155062, #071c27 76%); }
+.earth-life .earth-panel { border-color: #6ba7b1; background: linear-gradient(140deg,#123846,#081f2a 80%); }
+.earth-life .earth-panel h2 { border-color: #5294a0; }
+.life-stats, .life-wide { grid-column: 1 / -1; }
+.life-stats { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(8rem,100%),1fr)); gap: .45rem; }
+.life-stats div { border: 1px solid #65b9c5; border-radius: .55rem; background: #0d2938; padding: .65rem; text-align: center; }
+.life-stats strong, .life-stats span { display: block; }
+.life-stats strong { color: #a7eef3; font-size: 1.2rem; margin-bottom: .2rem; }
+.life-stats span { font-size: .85rem; }
+.life-list { margin: .65rem; padding-left: 1.1rem; line-height: 1.45; }
+.life-list li { margin: .25rem 0; }
+.life-cycle { padding: .8rem; display: flex; flex-wrap: wrap; gap: .65rem; justify-content: center; }
+.life-cycle span { background: #143c54; border: 1px solid #6adce7; border-radius: 2rem; padding: .5rem .8rem; }
+.life-cycle span:not(:last-child)::after { content: " →"; color: #a9f4ff; }

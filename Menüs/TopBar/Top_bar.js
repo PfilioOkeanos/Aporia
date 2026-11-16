@@ -9,9 +9,9 @@
 
 import {
     applyAporiaRoutes,
-    getAporiaRoute,
     celestialCategories
 } from "../adapter/aporia-routes.js";
+import { starteArchivsuche } from "../adapter/aporia-archivsuche.js";
 
 
 /* 02 - NAVIGATION-PLATZHALTER */
@@ -315,12 +315,7 @@ async function loadAporiaTopbar() {
             link.title = `${link.getAttribute("aria-label") || link.textContent.trim()} – Seite noch nicht angelegt`;
         });
 
-        topbarHost.querySelector("#aporia-search-input")?.addEventListener("keydown", event => {
-            if (event.key !== "Enter" || !event.currentTarget.value.trim()) return;
-            const speciesRoute = getAporiaRoute("spezies");
-            if (!speciesRoute) return;
-            window.location.assign(`${speciesRoute}?q=${encodeURIComponent(event.currentTarget.value.trim())}`);
-        });
+        starteArchivsuche(search);
 
 
         /* 10 - AKTUELLE SEITE MARKIEREN */
@@ -419,9 +414,10 @@ function initializeSidebarToggle() {
         button.title = label;
     }
 
-    let expanded = true;
+    let expanded = !sidebar.hasAttribute("data-sidebar-default-collapsed");
     try {
-        expanded = window.localStorage.getItem(preference) !== "true";
+        const saved = window.localStorage.getItem(preference);
+        if (saved !== null) expanded = saved !== "true";
     } catch {
         // Der Schalter bleibt auch ohne Zugriff auf den Browserspeicher nutzbar.
     }

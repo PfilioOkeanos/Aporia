@@ -1,34 +1,44 @@
-import { getCelestialDetailUrl, loadCelestialCatalog } from "../../../Menüs/adapter/aporia-celestial.js";
+import { loadCelestialCatalog } from "../../../Menüs/adapter/aporia-celestial.js";
 
 const pageSize = 24;
 const normalize = value => value.toLocaleLowerCase("de").normalize("NFD").replace(/\p{M}/gu, "");
 
-function createCard(entry, category) {
+function createCard(entry) {
     const card = document.createElement("article");
     card.className = "atlas-card";
 
     const art = document.createElement("a");
     art.className = "atlas-art";
-    art.href = getCelestialDetailUrl(category, entry.slug);
+    art.href = entry.href;
     card.dataset.celestialDossier = art.href;
     card.dataset.celestialGroup = entry.group ?? "";
     art.setAttribute("aria-label", "Detailseite öffnen: " + entry.title);
-    const image = document.createElement("img");
-    image.dataset.mediaImage = entry.preview;
-    image.alt = entry.title;
-    image.loading = "lazy";
-    image.decoding = "async";
-    art.append(image);
+    if (entry.preview) {
+        const image = document.createElement("img");
+        image.dataset.mediaImage = entry.preview;
+        image.alt = entry.title;
+        image.loading = "lazy";
+        image.decoding = "async";
+        art.append(image);
+    } else {
+        const symbol = document.createElement("span");
+        symbol.setAttribute("aria-hidden", "true");
+        symbol.textContent = "✧";
+        art.append(symbol);
+    }
 
     const body = document.createElement("div");
     body.className = "atlas-card-body";
     const title = document.createElement("h3");
-    title.textContent = entry.title;
+    const titleLink = document.createElement("a");
+    titleLink.href = entry.href;
+    titleLink.textContent = entry.title;
+    title.append(titleLink);
     const group = document.createElement("span");
     group.className = "atlas-type";
-    group.textContent = entry.group;
+    group.textContent = entry.type || entry.group;
     const link = document.createElement("a");
-    link.href = getCelestialDetailUrl(category, entry.slug);
+    link.href = entry.href;
     link.textContent = "Details →";
     link.setAttribute("aria-label", "Details: " + entry.title);
     body.append(title, group, link);
@@ -71,12 +81,12 @@ export async function initializeCelestialGallery() {
         const query = normalize(search.value.trim());
         const visible = entries.filter(entry =>
             (!select.value || select.value === entry.group) &&
-            (!query || normalize(entry.title).includes(query))
+            (!query || normalize(entry.title + " " + (entry.alias ?? "")).includes(query))
         );
         const pageCount = Math.ceil(visible.length / pageSize);
         const start = page * pageSize;
         const end = Math.min(start + pageSize, visible.length);
-        grid.replaceChildren(...visible.slice(start, end).map(entry => createCard(entry, category)));
+        grid.replaceChildren(...visible.slice(start, end).map(createCard));
         status.textContent = visible.length
             ? `${start + 1}–${end} von ${visible.length} Bildern`
             : "Keine Bilder für diese Auswahl.";

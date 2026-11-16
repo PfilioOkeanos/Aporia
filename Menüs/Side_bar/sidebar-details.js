@@ -40,6 +40,14 @@ export function initializeSidebarDetails(host) {
         }
         const tabs = source.querySelectorAll("[data-sidebar-tab]");
         for (const tab of tabs) {
+            if (tab.matches("a[href]")) {
+                const link = document.createElement("a");
+                link.href = tab.href;
+                link.textContent = tab.textContent.trim();
+                if (tab.hasAttribute("aria-current")) link.setAttribute("aria-current", "page");
+                links.append(link);
+                continue;
+            }
             const button = document.createElement("button");
             button.type = "button";
             button.textContent = tab.textContent.trim();

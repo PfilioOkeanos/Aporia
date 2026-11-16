@@ -1,89 +1,136 @@
 <!doctype html>
 <html lang="de">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Zusammengeführtes Himmelskörper-Dossier zum Planeten Orvaya im Aporia-Weltenarchiv.">
-  <title>Orvaya – Himmelskörper-Dossier | Aporia</title>
-  <style>
-    :root { color-scheme: dark; --bg:#101713; --panel:#19231d; --line:#34483a; --gold:#d7bd78; --text:#edf0e7; --muted:#bdc7b9; --green:#a9c39b; }
-    * { box-sizing:border-box; }
-    body { margin:0; background:radial-gradient(ellipse at top,#26382b 0,#101713 55%); color:var(--text); font:17px/1.7 Georgia,serif; }
-    header, main, footer { width:min(1080px, calc(100% - 36px)); margin:auto; }
-    header { padding:28px 0 12px; }
-    nav { display:flex; flex-wrap:wrap; gap:12px 24px; border-bottom:1px solid var(--line); padding-bottom:16px; }
-    a { color:var(--gold); text-decoration:none; } a:hover { text-decoration:underline; }
-    .eyebrow { margin:40px 0 6px; color:var(--green); letter-spacing:.16em; text-transform:uppercase; font:700 13px/1.4 system-ui,sans-serif; }
-    h1 { margin:0; color:var(--gold); font-size:clamp(42px,8vw,76px); line-height:1.05; font-weight:500; }
-    .lead { max-width:760px; color:var(--muted); font-size:21px; }
-    .stats { display:grid; grid-template-columns:repeat(auto-fit,minmax(155px,1fr)); gap:12px; margin:28px 0 38px; }
-    .stat, article { background:linear-gradient(145deg,#202c23,#172019); border:1px solid var(--line); border-radius:14px; }
-    .stat { padding:18px; } .stat strong { display:block; color:var(--gold); font-size:25px; font-weight:500; } .stat span { color:var(--muted); font:13px system-ui,sans-serif; }
-    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,330px),1fr)); gap:18px; }
-    article { padding:22px 24px; } h2 { color:var(--gold); font-size:25px; font-weight:500; margin:0 0 10px; } h3 { color:var(--green); font-size:19px; margin:20px 0 4px; font-weight:500; }
-    p { margin:8px 0 12px; } ul { padding-left:22px; margin:8px 0; } li { padding:2px 0; }
-    .wide { margin-top:18px; } .note { color:var(--muted); font-size:14px; border-left:3px solid var(--gold); padding-left:14px; }
-    footer { padding:30px 0 48px; color:var(--muted); font-size:14px; }
-    @media(max-width:520px) { body {font-size:16px} article {padding:18px} }
-  </style>
-  <link rel="stylesheet" href="../../Menüs/Side_bar/Side_bar.css">
-  <link rel="stylesheet" href="../../Menüs/TopBar/Top_bar.css">
-  <link rel="stylesheet" href="./_gemeinsam/celestial-detail.css">
-  <style>
-    .standalone-dossier-frame { display: flex; }
-    .standalone-dossier-frame > div:last-child { flex: 1; min-width: 0; }
-  </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#061611">
+    <title>Orvaya · Aporia Weltenarchiv</title>
+    <link rel="stylesheet" href="../../Men%C3%BCs/TopBar/Top_bar.css">
+    <link rel="stylesheet" href="../../Men%C3%BCs/Side_bar/Side_bar.css">
+    <link rel="stylesheet" href="planeten/details/erde-im-sternenmeer/hauptseite/erde.css">
+    <script type="module" src="planeten/details/erde-im-sternenmeer/hauptseite/erde.js"></script>
 </head>
-<body><div data-aporia-topbar></div><div class="standalone-dossier-frame"><div data-aporia-sidebar></div><div>
-  <header>
-    <nav aria-label="Hauptnavigation">
-            <a href="../../Menüs/Hauptseite.html/Hauptseite.html" data-route="home">Hauptseite</a>
-      <a href="../../Waldfeen.html" data-route="waldfeen">Waldfeen-Dossier</a>
-      <a href="planeten/planeten.html" data-route="planeten">Zur Planetenübersicht</a>
-      <a href="himmelskoerper/himmelskoerper.html" data-route="himmelskoerper">Alle Himmelskörper</a>
-    </nav>
-  </header>
-  <main>
-    <p class="eyebrow">Himmelskörper · Planet</p>
-    <h1>Orvaya</h1>
-    <p class="lead">Heimatplanet der Waldfeen. Diese Seite führt die bisher festgelegten Planetendaten und die Antworten aus den abgeschlossenen Orvaya-Fragerunden an einem Ort zusammen.</p>
+<body class="earth-page planet-dashboard" data-page="planeten" data-section="himmelskoerper"
+      data-archive-title="Orvaya" data-archive-group="" data-celestial-theme="orvaya">
+    <div data-aporia-topbar></div>
+    <div class="earth-frame">
+        <div data-aporia-sidebar data-sidebar-default-collapsed hidden></div>
+        <main id="inhalt">
+            <header class="earth-hero" id="uebersicht">
+                <div class="earth-panorama" aria-hidden="true"><img src="../../assets/bilder/Himmelsk%C3%B6rper/Gesteinsplaneten/_%C3%9Cbersicht/waldwelt/hauptseite/waldwelt.webp" alt="" decoding="async" data-media-image="home.panorama.orvaya"></div>
+                <div class="earth-hero-nav">
+                    <nav class="earth-crumb" aria-label="Archivpfad"><a data-route="planeten" href="planeten/planeten.html">Planeten</a><span aria-hidden="true">›</span><span aria-current="page">Orvaya</span></nav>
+                    <nav class="earth-tabs" aria-label="Kapitelnavigation">
+                        <a href="#uebersicht" aria-current="page">Übersicht</a>
+                        <details name="earth-chapters"><summary>Wissenschaft</summary><ul><li><a href="planeten/details/orvaya/unterseiten/02%20-%20Astronomie/index.html">Astronomie</a></li><li><a href="planeten/details/orvaya/unterseiten/03%20-%20Physik/index.html">Physik</a></li><li><a href="planeten/details/orvaya/unterseiten/04%20-%20Planetare%20Struktur/index.html">Planetare Struktur</a></li><li><a href="planeten/details/orvaya/unterseiten/09%20-%20Geologie/index.html">Geologie</a></li></ul></details>
+<details name="earth-chapters"><summary>Natur</summary><ul><li><a href="planeten/details/orvaya/unterseiten/05%20-%20Geografie/index.html">Geografie</a></li><li><a href="planeten/details/orvaya/unterseiten/06%20-%20Atmosph%C3%A4re/index.html">Atmosphäre</a></li><li><a href="planeten/details/orvaya/unterseiten/07%20-%20Klima/index.html">Klima</a></li><li><a href="planeten/details/orvaya/unterseiten/08%20-%20Gew%C3%A4sser/index.html">Gewässer</a></li><li><a href="planeten/details/orvaya/unterseiten/10%20-%20Biosph%C3%A4re/index.html">Biosphäre</a></li></ul></details>
+<details name="earth-chapters"><summary>Zivilisation</summary><ul><li><a href="planeten/details/orvaya/unterseiten/11%20-%20Spezies/index.html">Spezies</a></li><li><a href="planeten/details/orvaya/unterseiten/12%20-%20Zivilisation/index.html">Zivilisation</a></li><li><a href="planeten/details/orvaya/unterseiten/13%20-%20Geschichte/index.html">Geschichte</a></li><li><a href="planeten/details/orvaya/unterseiten/14%20-%20Fraktionen/index.html">Fraktionen</a></li></ul></details>
+<details name="earth-chapters"><summary>Weitere</summary><ul><li><a href="planeten/details/orvaya/unterseiten/01%20-%20Allgemeines/index.html">Allgemeines</a></li><li><a href="planeten/details/orvaya/unterseiten/15%20-%20Rohstoffe/index.html">Rohstoffe</a></li><li><a href="planeten/details/orvaya/unterseiten/16%20-%20Erforschung/index.html">Erforschung</a></li><li><a href="planeten/details/orvaya/unterseiten/17%20-%20Besonderheiten/index.html">Besonderheiten</a></li><li><a href="planeten/details/orvaya/unterseiten/18%20-%20Medienarchiv/index.html">Medienarchiv</a></li></ul></details>
+                    </nav>
+                </div>
+                <div class="earth-title">
+                    <h1>Orvaya</h1>
+                    <p class="earth-class">Gesteinsplanet</p>
+                    <p>Orvaya ist die Heimat der Waldfeen. In ihren wichtigsten Siedlungsregionen prägen milde Temperaturen, Wälder und Nebel das Landschaftsbild.</p>
+                    <p class="planet-status">Festgelegte Weltenbaudaten</p>
+                </div>
+            </header>
+            <div class="earth-dashboard">
+                <section class="earth-panel earth-quick" data-sidebar-details data-sidebar-default>
+                    <h2>Schnellnavigation</h2>
+                    <div class="earth-cards"><a data-sidebar-tab href="planeten/details/orvaya/unterseiten/01%20-%20Allgemeines/index.html" id="erkundung-uebersicht"><img src="../../assets/bilder/Himmelsk%C3%B6rper/Gesteinsplaneten/_%C3%9Cbersicht/waldwelt/hauptseite/waldwelt.webp" alt="" decoding="async" loading="lazy"><span>Allgemeines</span></a>
+<a data-sidebar-tab href="planeten/details/orvaya/unterseiten/02%20-%20Astronomie/index.html" id="erkundung-orbit"><img src="../../assets/bilder/Himmelsk%C3%B6rper/Gesteinsplaneten/_%C3%9Cbersicht/waldwelt/hauptseite/waldwelt.webp" alt="" decoding="async" loading="lazy"><span>Astronomie</span></a>
+<a data-sidebar-tab href="planeten/details/orvaya/unterseiten/03%20-%20Physik/index.html" id="erkundung-gravitation"><img src="../../assets/bilder/Himmelsk%C3%B6rper/Gesteinsplaneten/_%C3%9Cbersicht/waldwelt/hauptseite/waldwelt.webp" alt="" decoding="async" loading="lazy"><span>Physik</span></a>
+<a data-sidebar-tab href="planeten/details/orvaya/unterseiten/04%20-%20Planetare%20Struktur/index.html"><img src="../../assets/bilder/Himmelsk%C3%B6rper/Gesteinsplaneten/_%C3%9Cbersicht/waldwelt/hauptseite/waldwelt.webp" alt="" decoding="async" loading="lazy"><span>Planetare Struktur</span></a>
+<a data-sidebar-tab href="planeten/details/orvaya/unterseiten/05%20-%20Geografie/index.html" id="erkundung-gelaende"><img src="../../assets/bilder/Himmelsk%C3%B6rper/Gesteinsplaneten/_%C3%9Cbersicht/waldwelt/hauptseite/waldwelt.webp" alt="" decoding="async" loading="lazy"><span>Geografie</span></a>
+<a data-sidebar-tab href="planeten/details/orvaya/unterseiten/06%20-%20Atmosph%C3%A4re/index.html" id="erkundung-atmosphaere"><img src="../../assets/bilder/Himmelsk%C3%B6rper/Gesteinsplaneten/_%C3%9Cbersicht/waldwelt/hauptseite/waldwelt.webp" alt="" decoding="async" loading="lazy"><span>Atmosphäre</span></a>
+<a data-sidebar-tab href="planeten/details/orvaya/unterseiten/07%20-%20Klima/index.html" id="erkundung-wetter"><img src="../../assets/bilder/Himmelsk%C3%B6rper/Gesteinsplaneten/_%C3%9Cbersicht/waldwelt/hauptseite/waldwelt.webp" alt="" decoding="async" loading="lazy"><span>Klima</span></a>
+<a data-sidebar-tab href="planeten/details/orvaya/unterseiten/08%20-%20Gew%C3%A4sser/index.html"><img src="../../assets/bilder/Himmelsk%C3%B6rper/Gesteinsplaneten/_%C3%9Cbersicht/waldwelt/hauptseite/waldwelt.webp" alt="" decoding="async" loading="lazy"><span>Gewässer</span></a>
+<a data-sidebar-tab href="planeten/details/orvaya/unterseiten/09%20-%20Geologie/index.html"><img src="../../assets/bilder/Himmelsk%C3%B6rper/Gesteinsplaneten/_%C3%9Cbersicht/waldwelt/hauptseite/waldwelt.webp" alt="" decoding="async" loading="lazy"><span>Geologie</span></a>
+<a data-sidebar-tab href="planeten/details/orvaya/unterseiten/10%20-%20Biosph%C3%A4re/index.html" id="erkundung-lebensformen"><img src="../../assets/bilder/Himmelsk%C3%B6rper/Gesteinsplaneten/_%C3%9Cbersicht/waldwelt/hauptseite/waldwelt.webp" alt="" decoding="async" loading="lazy"><span>Biosphäre</span></a>
+<a data-sidebar-tab href="planeten/details/orvaya/unterseiten/11%20-%20Spezies/index.html"><img src="../../assets/bilder/Himmelsk%C3%B6rper/Gesteinsplaneten/_%C3%9Cbersicht/waldwelt/hauptseite/waldwelt.webp" alt="" decoding="async" loading="lazy"><span>Spezies</span></a>
+<a data-sidebar-tab href="planeten/details/orvaya/unterseiten/12%20-%20Zivilisation/index.html" id="erkundung-siedlungen"><img src="../../assets/bilder/Himmelsk%C3%B6rper/Gesteinsplaneten/_%C3%9Cbersicht/waldwelt/hauptseite/waldwelt.webp" alt="" decoding="async" loading="lazy"><span>Zivilisation</span></a>
+<a data-sidebar-tab href="planeten/details/orvaya/unterseiten/13%20-%20Geschichte/index.html"><img src="../../assets/bilder/Himmelsk%C3%B6rper/Gesteinsplaneten/_%C3%9Cbersicht/waldwelt/hauptseite/waldwelt.webp" alt="" decoding="async" loading="lazy"><span>Geschichte</span></a>
+<a data-sidebar-tab href="planeten/details/orvaya/unterseiten/14%20-%20Fraktionen/index.html"><img src="../../assets/bilder/Himmelsk%C3%B6rper/Gesteinsplaneten/_%C3%9Cbersicht/waldwelt/hauptseite/waldwelt.webp" alt="" decoding="async" loading="lazy"><span>Fraktionen</span></a>
+<a data-sidebar-tab href="planeten/details/orvaya/unterseiten/15%20-%20Rohstoffe/index.html" id="erkundung-rohstoffe"><img src="../../assets/bilder/Himmelsk%C3%B6rper/Gesteinsplaneten/_%C3%9Cbersicht/waldwelt/hauptseite/waldwelt.webp" alt="" decoding="async" loading="lazy"><span>Rohstoffe</span></a>
+<a data-sidebar-tab href="planeten/details/orvaya/unterseiten/16%20-%20Erforschung/index.html" id="erkundung-entdeckungen"><img src="../../assets/bilder/Himmelsk%C3%B6rper/Gesteinsplaneten/_%C3%9Cbersicht/waldwelt/hauptseite/waldwelt.webp" alt="" decoding="async" loading="lazy"><span>Erforschung</span></a>
+<a data-sidebar-tab href="planeten/details/orvaya/unterseiten/17%20-%20Besonderheiten/index.html" id="erkundung-gefahren"><img src="../../assets/bilder/Himmelsk%C3%B6rper/Gesteinsplaneten/_%C3%9Cbersicht/waldwelt/hauptseite/waldwelt.webp" alt="" decoding="async" loading="lazy"><span>Besonderheiten</span></a>
+<a data-sidebar-tab href="planeten/details/orvaya/unterseiten/18%20-%20Medienarchiv/index.html"><img src="../../assets/bilder/Himmelsk%C3%B6rper/Gesteinsplaneten/_%C3%9Cbersicht/waldwelt/hauptseite/waldwelt.webp" alt="" decoding="async" loading="lazy"><span>Medienarchiv</span></a></div>
+                </section>
+                <section class="earth-panel earth-facts">
+                    <h2>Grunddaten</h2>
+                    <dl>
+    <div><dt>Archiv-ID</dt><dd>AP-BF1BED7374</dd></div>
+    <div><dt>Klasse</dt><dd>Gesteinsplanet</dd></div>
+    <div><dt>Gravitation</dt><dd>0,85 g</dd></div>
+    <div><dt>Tageslänge</dt><dd>20 Stunden</dd></div>
+    <div><dt>Wasserbedeckung</dt><dd>40 %</dd></div>
+    <div><dt>Temperatur in wichtigen Waldfeenregionen</dt><dd>ca. 10 bis 20 °C</dd></div>
+</dl>
+                </section>
+                <section class="earth-panel earth-view">
+                    <h2>3D-Ansicht</h2>
+                    <div class="earth-player" data-earth-player data-planet="orvaya" data-planet-class="Gesteinsplanet" data-radius="">
+                        <canvas width="320" height="320" tabindex="0" aria-label="Planetenglobus. Mit Pfeiltasten oder Ziehen drehen, mit Mausrad, Plus oder Minus zoomen." hidden></canvas>
+                        <div class="earth-controls" role="group" aria-label="Globussteuerung" hidden>
+                            <button type="button" data-turn="-1" aria-label="Nach links drehen">‹</button>
+                            <button type="button" data-turn="1" aria-label="Nach rechts drehen">›</button>
+                            <button type="button" data-fullscreen aria-label="Vollbild öffnen" aria-pressed="false">⛶</button>
+                            <div class="earth-zoom">
+                                <button type="button" data-zoom="-1" aria-label="Herauszoomen">−</button>
+                                <button type="button" data-zoom="1" aria-label="Heranzoomen">+</button>
+                            </div>
+                        </div>
+                        <span class="earth-crosshair" aria-hidden="true" hidden></span>
+                        <output class="earth-coordinates" aria-label="Koordinaten und Breite am Bildzentrum" hidden></output>
+                        <p class="earth-view-note">360° · Schematischer Globus</p>
+                    </div>
+                </section>
+                <div class="earth-aside">
+                    <section class="earth-panel">
+                        <h2>Position</h2>
+                        <dl>
+    <div><dt>Sternsystem</dt><dd>Offen</dd></div>
+    <div><dt>Zentralkörper</dt><dd>Offen</dd></div>
+</dl>
 
-    <section class="stats" aria-label="Planetare Kerndaten">
-      <div class="stat"><strong>erdgroß</strong><span>Größenordnung</span></div>
-      <div class="stat"><strong>0,8 g</strong><span>Oberflächengravitation</span></div>
-      <div class="stat"><strong>20 Stunden</strong><span>Tageslänge</span></div>
-      <div class="stat"><strong>2 Monde</strong><span>Begleiter</span></div>
-      <div class="stat"><strong>sonnenähnlich</strong><span>Zentralstern</span></div>
-      <div class="stat"><strong>unter 40 %</strong><span>Wasseroberfläche</span></div>
-    </section>
-
-    <div class="grid">
-      <article>
+                    </section>
+                    <section class="earth-panel">
+                        <h2>Verknüpfungen</h2>
+                        <ul class="earth-related"><li><a href="../spezies/Biologische%20Spezies/WaldFeen/hauptseite/Spezies.html">Zum Dossier der Waldfeen</a></li><li><a href="planeten/details/orvaya/unterseiten/18%20-%20Medienarchiv/index.html">Medienarchiv</a></li></ul>
+                    </section>
+                </div>
+                <section class="earth-panel earth-features">
+                    <h2>Hauptmerkmale</h2>
+                    <div class="earth-cards"><a href="planeten/details/orvaya/unterseiten/08%20-%20Gew%C3%A4sser/index.html"><img src="../../assets/bilder/Himmelsk%C3%B6rper/Gesteinsplaneten/_%C3%9Cbersicht/waldwelt/hauptseite/waldwelt.webp" alt="" decoding="async" loading="lazy"><span>Gewässer</span></a></div>
+                </section>
+            </div>
+            <details class="planet-original"><summary>Weltenbau-Notizen</summary><!-- orvaya-notes:start --><article>
         <h2>Weltbild und Klima</h2>
         <p>Orvaya ist überwiegend herbstlich geprägt. Leichter Nebel tritt häufig auf. Die Wälder bilden große zusammenhängende Lebensräume; daneben bestimmen Flusssysteme, Seen, Schluchten und ein ausgedehntes Hochland das Landschaftsbild.</p>
         <p>Die Waldfeen leben auf einem der drei Kontinente. Ihre drei Gemeinschaften befinden sich auf diesem Kontinent.</p>
       </article>
-      <article>
+<article>
         <h2>Kontinente und Wasser</h2>
         <ul>
           <li>Orvaya besitzt drei ungefähr gleich große Kontinente.</li>
           <li>Zwei Kontinente sind großflächig bewaldet und durch eine Landbrücke verbunden.</li>
           <li>Der dritte Kontinent ist ein getrenntes, kühles Hochland mit Gebirgen und Hochflächen; Schnee ist dort selten.</li>
-          <li>Die Wasserfläche liegt unter 40 Prozent. Es gibt kleinere Ozeane sowie große Seen und Flussbecken.</li>
+          <li>Wasser bedeckt 40 Prozent der Oberfläche. Es gibt viele Seen und Flüsse. Ozeane fehlen.</li>
           <li>Einige Becken sind verbunden, wenn saisonales Überwasser überläuft.</li>
         </ul>
       </article>
-      <article>
+<article>
         <h2>Der Weltenbaum</h2>
         <p>Der Weltenbaum ist etwa 500 Meter hoch. Er ist ein natürlicher Baum, der biologisch verändert wurde. Er ist einzigartig: Auf Orvaya gibt es nur diesen einen Weltenbaum.</p>
         <p>Der Baum dient als Lebens- und Wirtschaftsraum mit mehreren Siedlungsebenen. Andere gepflegte Bäume bieten zusätzliche Unterkünfte und Schutz, gelten aber nicht als weitere Weltenbäume.</p>
       </article>
-      <article>
+<article>
         <h2>Fluss, Schlucht und Wasserfall</h2>
         <p>Ein großer Fluss entspringt in einem unterirdischen System und tritt vor einer Schlucht an die Oberfläche. Über lange Zeit hat der Fluss die Schlucht geformt. Von den Klippen stürzt er als Wasserfall in das Waldgebiet.</p>
         <p>Hinter dem Wasserfall verzweigt sich der Fluss in Seitenarme und Becken. Manche dieser Becken werden durch saisonales Überlaufen miteinander verbunden.</p>
       </article>
-      <article>
+<article>
         <h2>Lebensräume und Siedlungen</h2>
         <ul>
           <li>Am Fluss in der Schlucht lebt eine abgelegene, traditionsbewusste Gemeinschaft, flussaufwärts vor dem Wasserfall.</li>
@@ -91,25 +138,17 @@
           <li>Die übrigen Landschaften wechseln zwischen Wald, Flusslandschaft, Seen, Becken, Felswänden und dem kühleren Hochland.</li>
         </ul>
       </article>
-      <article>
+<article>
         <h2>Zuordnung im Archiv</h2>
         <p><strong>Planet:</strong> Orvaya<br><strong>Bekannt als:</strong> Heimat der Waldfeen<br><strong>Zentralstern:</strong> sonnenähnlicher Stern<br><strong>Natürlicher Satellit:</strong> zwei Monde</p>
         <p><a href="../../index.html">Zum vollständigen Waldfeen-Dossier →</a></p>
       </article>
-    </div>
-
-    <article class="wide">
+<article class="wide">
       <h2>Quellenstand</h2>
       <p class="note">Zusammengeführt aus dem bestehenden Orvaya-Weltenbau und den abgeschlossenen Orvaya-Fragerunden 01 und 02. Spätere Antworten werden hier ergänzt, damit die Seite den aktuellen Gesamtstand zeigt. Offene oder noch nicht festgelegte Angaben sind nicht als Fakten eingetragen.</p>
-    </article>
-  </main>
-  <footer>Aporia · Weltenarchiv · Himmelskörper</footer></div></div>
-  <script type="module">
-    import { applyAporiaRoutes } from "../../Menüs/adapter/aporia-routes.js";
-    applyAporiaRoutes();
-  </script>
-  <script type="module" src="../../Menüs/Side_bar/side_bar.js"></script>
-  <script type="module" src="../../Menüs/TopBar/Top_bar.js"></script>
-  <script type="module" src="./_gemeinsam/celestial-detail.js"></script>
+    </article><!-- orvaya-notes:end --></details>
+
+        </main>
+    </div>
 </body>
 </html>

@@ -3,63 +3,130 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#081610">
-    <title>Erde im Sternenmeer · Aporia Weltenarchiv</title>
-    <link rel="stylesheet" href="../../../../../../Menüs/Side_bar/Side_bar.css?v=3">
-    <link rel="stylesheet" href="../../../../../../Menüs/TopBar/Top_bar.css?v=5">
-    <link rel="stylesheet" href="../../../../_gemeinsam/atlas.css">
-    <link rel="stylesheet" href="../../../../_gemeinsam/celestial-detail.css">
+    <meta name="theme-color" content="#061611">
+    <title>Erde · Aporia Weltenarchiv</title>
+    <link rel="stylesheet" href="../../../../../../Men%C3%BCs/TopBar/Top_bar.css">
+    <link rel="stylesheet" href="../../../../../../Men%C3%BCs/Side_bar/Side_bar.css">
+    <link rel="stylesheet" href="./erde.css">
+    <script type="module" src="./erde.js"></script>
 </head>
-<body data-page="planeten" data-section="himmelskoerper">
-    <div id="aporia-topbar-mount" data-aporia-topbar></div>
-    <div class="aporia-page-frame atlas-frame">
-        <div id="aporia-sidebar-mount" data-aporia-sidebar></div>
-        <main class="atlas-main celestial-detail">
-            <div class="atlas-shell">
-                <nav class="atlas-crumb" aria-label="Archivpfad">
-                    <a href="../../../../../../Menüs/Hauptseite.html/Hauptseite.html" data-route="home">Weltenarchiv</a>
-                    <span aria-hidden="true">›</span>
-                    <a href="../../../../himmelskoerper/himmelskoerper.html" data-route="himmelskoerper">Himmelskörper</a>
-                    <span aria-hidden="true">›</span>
-                    <a href="../../../planeten.html#bildarchiv" data-route="planeten" data-route-fragment="bildarchiv">Planeten</a>
-                </nav>
-                <header class="atlas-hero">
-                    <h1>Erde im Sternenmeer</h1>
-                    <p>Ozeanwelten</p>
-                </header>
-                <nav class="atlas-crumb celestial-hierarchy" aria-label="Kosmische Hierarchie">
-                    <a href="../../../../../../Menüs/Karte/Karte.html" data-route="karte">Superhaufen</a>
-                    <span aria-hidden="true">›</span>
-                    <span>Galaxienhaufen</span>
-                    <span aria-hidden="true">›</span>
-                    <span>Galaxie</span>
-                    <span aria-hidden="true">›</span>
-                    <span>Sektor</span>
-                    <span aria-hidden="true">›</span>
-                    <a href="../../../../sternensysteme/sternensysteme.html" data-route="sternensysteme">Sternensystem</a>
-                    <span aria-hidden="true">›</span>
-                    <span aria-current="page">Planet</span>
-                </nav>
-                <div class="celestial-layout">
-                    <figure class="celestial-portrait">
-                        <img src="../../../../../../assets/bilder/Himmelsk%C3%B6rper/OzeanWelt/erde-im-sternenmeer/hauptseite/erde-im-sternenmeer-ea30323b42.webp" data-media-image="himmelskoerper.bildarchiv.erde-im-sternenmeer-ea30323b42" alt="Erde im Sternenmeer" decoding="async">
-                    </figure>
-                    <section class="celestial-facts" aria-labelledby="facts-title">
-                        <h2 id="facts-title">Archiveintrag</h2>
+<body class="earth-page" data-page="planeten" data-section="himmelskoerper" data-custom-dossier>
+    <div data-aporia-topbar></div>
+    <div class="earth-frame">
+        <div data-aporia-sidebar data-sidebar-default-collapsed hidden></div>
+        <main id="inhalt">
+            <header class="earth-hero" id="uebersicht">
+                <div class="earth-panorama" aria-hidden="true"><img src="../../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Humanoide/Unterseiten/Heimatwelt/bilder/landschaften-erde.png" alt=""  decoding="async"><img src="../../../../../../assets/bilder/Himmelsk%C3%B6rper/OzeanWelt/erde-im-sternenmeer/hauptseite/erde-im-sternenmeer-ea30323b42.webp" alt=""  decoding="async"></div>
+                <div class="earth-hero-nav">
+                    <nav class="earth-crumb" aria-label="Archivpfad"><a data-route="planeten" href="../../../planeten.html">Planeten</a><span aria-hidden="true">›</span><span aria-current="page">Erde</span></nav>
+                    <nav class="earth-tabs" aria-label="Erde · Kapitelnavigation">
+                        <a href="#uebersicht" aria-current="page">Übersicht</a>
+                        <details name="earth-chapters"><summary>Wissenschaft</summary><ul><li><a href="../unterseiten/02%20%E2%80%93%20Astronomie/index.html" ><b aria-hidden="true">✧</b>Astronomie</a></li><li><a href="../unterseiten/03%20%E2%80%93%20Physik/index.html" ><b aria-hidden="true">⚛</b>Physik</a></li><li><a href="../unterseiten/04%20%E2%80%93%20Planetare%20Struktur/index.html" ><b aria-hidden="true">◈</b>Planetare Struktur</a></li><li><a href="../unterseiten/09%20%E2%80%93%20Geologie/index.html" ><b aria-hidden="true">◈</b>Geologie</a></li></ul></details>
+                        <details name="earth-chapters"><summary>Natur</summary><ul><li><a href="../unterseiten/05%20%E2%80%93%20Geografie/index.html" ><b aria-hidden="true">△</b>Geografie</a></li><li><a href="../unterseiten/06%20%E2%80%93%20Atmosph%C3%A4re/index.html" ><b aria-hidden="true">☁</b>Atmosphäre</a></li><li><a href="../unterseiten/07%20%E2%80%93%20Klima/index.html" ><b aria-hidden="true">☀</b>Klima</a></li><li><a href="../unterseiten/08%20%E2%80%93%20Gew%C3%A4sser/index.html" ><b aria-hidden="true">≈</b>Gewässer</a></li><li><a href="../unterseiten/10%20%E2%80%93%20Biosph%C3%A4re/index.html" ><b aria-hidden="true">❧</b>Biosphäre</a></li></ul></details>
+                        <details name="earth-chapters"><summary>Zivilisation</summary><ul><li><a href="../unterseiten/11%20%E2%80%93%20Spezies/index.html" ><b aria-hidden="true">✿</b>Spezies</a></li><li><a href="../unterseiten/12%20%E2%80%93%20Zivilisation/index.html" ><b aria-hidden="true">▥</b>Zivilisation</a></li><li><a href="../unterseiten/13%20%E2%80%93%20Geschichte/index.html" ><b aria-hidden="true">▤</b>Geschichte</a></li><li><a href="../unterseiten/14%20%E2%80%93%20Fraktionen/index.html" ><b aria-hidden="true">◇</b>Fraktionen</a></li></ul></details>
+                        <details name="earth-chapters"><summary>Weitere</summary><ul><li><a href="../unterseiten/01%20%E2%80%93%20Allgemeines/index.html" ><b aria-hidden="true">▤</b>Allgemeines</a></li><li><a href="../unterseiten/15%20%E2%80%93%20Rohstoffe/index.html" ><b aria-hidden="true">⬡</b>Rohstoffe</a></li><li><a href="../unterseiten/16%20%E2%80%93%20Erforschung/index.html" ><b aria-hidden="true">✧</b>Erforschung</a></li><li><a href="../unterseiten/17%20%E2%80%93%20Besonderheiten/index.html" ><b aria-hidden="true">✺</b>Besonderheiten</a></li><li><a href="../unterseiten/18%20%E2%80%93%20Medienarchiv/index.html" ><b aria-hidden="true">▣</b>Medienarchiv</a></li></ul></details>
+                    </nav>
+                </div>
+                <div class="earth-title">
+                    <h1>Erde</h1>
+                    <p class="earth-class">Planet · Klasse: Gesteinsplanet</p>
+                    <p>Die Erde ist der dritte Planet der Sonne und die einzige bekannte Welt mit Leben. Ozeane, Kontinente und eine schützende Atmosphäre prägen ihre vielfältigen Lebensräume.</p>
+                </div>
+            </header>
+            <div class="earth-dashboard">
+                <section class="earth-panel earth-quick" data-sidebar-details data-sidebar-default>
+                    <h2>❧ Schnellnavigation – Erde</h2>
+                    <div class="earth-cards">
+                        <a href="../unterseiten/01%20%E2%80%93%20Allgemeines/index.html" data-sidebar-tab id="erkundung-uebersicht"><img src="../../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Humanoide/Unterseiten/Heimatwelt/bilder/landschaften-erde.png" alt="" loading="lazy" decoding="async"><span><b aria-hidden="true">▤</b>Allgemeines</span></a>
+                        <a href="../unterseiten/02%20%E2%80%93%20Astronomie/index.html" data-sidebar-tab id="erkundung-orbit"><img src="../../../../../../assets/bilder/Kosmologie/Galaxien/cyanblaue-staubgalaxie-mit-goldkern/hauptseite/Cyanblaue%20Staubgalaxie%20mit%20Goldkern-37.png" alt="" loading="lazy" decoding="async"><span><b aria-hidden="true">✧</b>Astronomie</span></a>
+                        <a href="../unterseiten/03%20%E2%80%93%20Physik/index.html" data-sidebar-tab id="erkundung-gravitation"><img src="../../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Humanoide/Unterseiten/Heimatwelt/bilder/erde-aus-dem-orbit.png" alt="" loading="lazy" decoding="async"><span><b aria-hidden="true">⚛</b>Physik</span></a>
+                        <a href="../unterseiten/04%20%E2%80%93%20Planetare%20Struktur/index.html" data-sidebar-tab><img src="../../../../../../assets/bilder/Himmelsk%C3%B6rper/Vulkanwelten/_%C3%9Cbersicht/vulkanwelt/hauptseite/vulkanwelt.webp" alt="" loading="lazy" decoding="async"><span><b aria-hidden="true">◈</b>Planetare Struktur</span></a>
+                        <a href="../unterseiten/05%20%E2%80%93%20Geografie/index.html" data-sidebar-tab id="erkundung-gelaende"><img src="../../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Humanoide/Unterseiten/Heimatwelt/bilder/landschaften-erde.png" alt="" loading="lazy" decoding="async"><span><b aria-hidden="true">△</b>Geografie</span></a>
+                        <a href="../unterseiten/06%20%E2%80%93%20Atmosph%C3%A4re/index.html" data-sidebar-tab id="erkundung-atmosphaere"><img src="../../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Humanoide/Unterseiten/Heimatwelt/bilder/erde-aus-dem-orbit.png" alt="" loading="lazy" decoding="async"><span><b aria-hidden="true">☁</b>Atmosphäre</span></a>
+                        <a href="../unterseiten/07%20%E2%80%93%20Klima/index.html" data-sidebar-tab id="erkundung-wetter"><img src="../../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Humanoide/Unterseiten/Heimatwelt/bilder/erde-nacht.png" alt="" loading="lazy" decoding="async"><span><b aria-hidden="true">☀</b>Klima</span></a>
+                        <a href="../unterseiten/08%20%E2%80%93%20Gew%C3%A4sser/index.html" data-sidebar-tab><img src="../../../../../../assets/bilder/Himmelsk%C3%B6rper/OzeanWelt/erde-im-sternenmeer/hauptseite/erde-im-sternenmeer-ea30323b42.webp" alt="" loading="lazy" decoding="async"><span><b aria-hidden="true">≈</b>Gewässer</span></a>
+                        <a href="../unterseiten/09%20%E2%80%93%20Geologie/index.html" data-sidebar-tab><img src="../../../../../../assets/bilder/Himmelsk%C3%B6rper/Vulkanwelten/_%C3%9Cbersicht/vulkanwelt/hauptseite/vulkanwelt.webp" alt="" loading="lazy" decoding="async"><span><b aria-hidden="true">◈</b>Geologie</span></a>
+                        <a href="../unterseiten/10%20%E2%80%93%20Biosph%C3%A4re/index.html" data-sidebar-tab id="erkundung-lebensformen"><img src="../../../../../../assets/bilder/Himmelsk%C3%B6rper/Gesteinsplaneten/_%C3%9Cbersicht/waldwelt/hauptseite/waldwelt.webp" alt="" loading="lazy" decoding="async"><span><b aria-hidden="true">❧</b>Biosphäre</span></a>
+                        <a href="../unterseiten/11%20%E2%80%93%20Spezies/index.html" data-sidebar-tab><img src="../../../../../../assets/bilder/Himmelsk%C3%B6rper/Gesteinsplaneten/_%C3%9Cbersicht/waldwelt/hauptseite/waldwelt.webp" alt="" loading="lazy" decoding="async"><span><b aria-hidden="true">✿</b>Spezies</span></a>
+                        <a href="../unterseiten/12%20%E2%80%93%20Zivilisation/index.html" data-sidebar-tab id="erkundung-siedlungen"><img src="../../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Humanoide/Unterseiten/Heimatwelt/bilder/erde-nacht.png" alt="" loading="lazy" decoding="async"><span><b aria-hidden="true">▥</b>Zivilisation</span></a>
+                        <a href="../unterseiten/13%20%E2%80%93%20Geschichte/index.html" data-sidebar-tab><img src="../../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Humanoide/Unterseiten/Heimatwelt/bilder/landschaften-erde.png" alt="" loading="lazy" decoding="async"><span><b aria-hidden="true">▤</b>Geschichte</span></a>
+                        <a href="../unterseiten/14%20%E2%80%93%20Fraktionen/index.html" data-sidebar-tab><img src="../../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Humanoide/Unterseiten/Heimatwelt/bilder/erde-nacht.png" alt="" loading="lazy" decoding="async"><span><b aria-hidden="true">◇</b>Fraktionen</span></a>
+                        <a href="../unterseiten/15%20%E2%80%93%20Rohstoffe/index.html" data-sidebar-tab id="erkundung-rohstoffe"><img src="../../../../../../assets/bilder/Himmelsk%C3%B6rper/Vulkanwelten/_%C3%9Cbersicht/vulkanwelt/hauptseite/vulkanwelt.webp" alt="" loading="lazy" decoding="async"><span><b aria-hidden="true">⬡</b>Rohstoffe</span></a>
+                        <a href="../unterseiten/16%20%E2%80%93%20Erforschung/index.html" data-sidebar-tab id="erkundung-entdeckungen"><img src="../../../../../../assets/bilder/Kosmologie/Galaxien/cyanblaue-staubgalaxie-mit-goldkern/hauptseite/Cyanblaue%20Staubgalaxie%20mit%20Goldkern-37.png" alt="" loading="lazy" decoding="async"><span><b aria-hidden="true">✧</b>Erforschung</span></a>
+                        <a href="../unterseiten/17%20%E2%80%93%20Besonderheiten/index.html" data-sidebar-tab id="erkundung-gefahren"><img src="../../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Humanoide/Unterseiten/Heimatwelt/bilder/erde-nacht.png" alt="" loading="lazy" decoding="async"><span><b aria-hidden="true">✺</b>Besonderheiten</span></a>
+                        <a href="../unterseiten/18%20%E2%80%93%20Medienarchiv/index.html" data-sidebar-tab><img src="../../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Humanoide/Unterseiten/Heimatwelt/bilder/erde-aus-dem-orbit.png" alt="" loading="lazy" decoding="async"><span><b aria-hidden="true">▣</b>Medienarchiv</span></a>
+                    </div>
+                </section>
+                <section class="earth-panel earth-facts">
+                    <h2>ⓘ Grunddaten</h2>
+                    <dl>
+                        <div><dt>Typ</dt><dd>Gesteinsplanet</dd></div>
+                        <div><dt>Äquatordurchmesser</dt><dd>12.756 km</dd></div>
+                        <div><dt>Masse</dt><dd>5,97 × 10²⁴ kg</dd></div>
+                        <div><dt>Schwerkraft</dt><dd>ca. 9,81 m/s²</dd></div>
+                        <div><dt>Umlaufzeit</dt><dd>365,25 Tage</dd></div>
+                        <div><dt>Rotation relativ zu den Sternen</dt><dd>23 h 56 min</dd></div>
+                        <div><dt>Mittlerer Abstand zur Sonne</dt><dd>149,6 Mio. km</dd></div>
+                        <div><dt>Atmosphäre (trocken)</dt><dd>78 % Stickstoff, 21 % Sauerstoff, rund 1 % weitere Gase</dd></div>
+                        <div><dt>Mittlere Oberflächentemperatur</dt><dd>ca. 15 °C</dd></div>
+                        <div><dt>Monde</dt><dd>1 (Erdmond)</dd></div>
+                        <div><dt>Ozeanbedeckung</dt><dd>ca. 71 %</dd></div>
+                    </dl>
+                </section>
+                <section class="earth-panel earth-view">
+                    <h2>✧ 3D-Ansicht</h2>
+                    <div class="earth-player" data-earth-player>
+                        <img src="../../../../../../assets/bilder/Himmelsk%C3%B6rper/OzeanWelt/erde-im-sternenmeer/hauptseite/erde-im-sternenmeer-ea30323b42.webp" alt="Illustration der Erde" data-media-image="himmelskoerper.bildarchiv.erde-im-sternenmeer-ea30323b42">
+                        <canvas width="320" height="320" tabindex="0" aria-label="Erdglobus. Mit Pfeiltasten oder Ziehen drehen, mit Mausrad, Plus oder Minus zoomen." hidden></canvas>
+                        <div class="earth-controls" role="group" aria-label="Globussteuerung" hidden>
+                            <button type="button" data-turn="-1" aria-label="Nach links drehen">‹</button>
+                            <button type="button" data-turn="1" aria-label="Nach rechts drehen">›</button>
+                            <button type="button" data-fullscreen aria-label="Vollbild öffnen" aria-pressed="false">⛶</button>
+                            <div class="earth-zoom">
+                                <button type="button" data-zoom="-1" aria-label="Herauszoomen">−</button>
+                                <button type="button" data-zoom="1" aria-label="Heranzoomen">+</button>
+                            </div>
+                        </div>
+                        <span class="earth-crosshair" aria-hidden="true" hidden></span>
+                        <output class="earth-coordinates" aria-label="Koordinaten und Breite am Bildzentrum" hidden></output>
+                        <p class="earth-view-note">360° · Schematischer Globus</p>
+                    </div>
+                </section>
+                <div class="earth-aside">
+                    <section class="earth-panel">
+                        <h2>⌖ Position</h2>
                         <dl>
-                            <div><dt>Bildgruppe</dt><dd>Ozeanwelten</dd></div>
-                            <div><dt>Sternensystem</dt><dd>Offen</dd></div>
-                            
-                            <div><dt>Originaldatei</dt><dd>Erde im Sternenmeer-1.png</dd></div>
-                        </dl>
-                        <a class="celestial-back" href="../../../planeten.html#bildarchiv" data-route="planeten" data-route-fragment="bildarchiv">← Zurück zu Planeten</a>
+                        <div><dt>Sternsystem</dt><dd><a href="../../../../../../inhalte/Kosmologie/Sternensysteme/details/sonnensystem/hauptseite/index.html">Sonnensystem</a></dd></div>
+                        <div><dt>Galaxie</dt><dd>Milchstraße</dd></div>
+                        <div><dt>Spiralarm</dt><dd>Orion-Spur</dd></div>
+                        <div><dt>Region</dt><dd>Lokale Interstellare Wolke</dd></div>
+                        <div><dt>Aporia-Sektor</dt><dd>02</dd></div>
+                    </dl>
+                        <a class="earth-map" href="../../../../../../Men%C3%BCs/Sternenkarte/Sternenkarte.html?system=Kugel%201">In der Sternenkarte öffnen →</a>
+                    </section>
+                    <section class="earth-panel">
+                        <h2>◇ Verknüpfungen</h2>
+                        <ul class="earth-related">
+                            <li><a href="../../../../sterne/details/chatgpt-bild-11-nov-2026-14-58-20/hauptseite/index.html"><b aria-hidden="true">☉</b><span>Stern</span>Sonne</a></li>
+                            <li><a href="../../../../monde/details/mond/hauptseite/index.html"><b aria-hidden="true">☾</b><span>Mond</span>Erdmond</a></li>
+                            <li><a data-route="spezies-biological-1" href="../../../../../../inhalte/spezies/Biologische%20Spezies/Humanoide/Hauptseite/Spezies.html"><b aria-hidden="true">✿</b><span>Spezies</span>Menschheit</a></li>
+                            <li><a href="../unterseiten/10%20%E2%80%93%20Biosph%C3%A4re/index.html"><b aria-hidden="true">❧</b><span>Biosphäre</span>Ökosysteme</a></li>
+                        </ul>
                     </section>
                 </div>
+                <section class="earth-panel earth-features">
+                    <h2>❧ Hauptmerkmale</h2>
+                    <div class="earth-cards">
+                        <a href="../unterseiten/08%20%E2%80%93%20Gew%C3%A4sser/index.html" ><img src="../../../../../../assets/bilder/Himmelsk%C3%B6rper/OzeanWelt/erde-im-sternenmeer/hauptseite/erde-im-sternenmeer-ea30323b42.webp" alt="" loading="lazy" decoding="async"><span>71 % Ozeane</span></a>
+                        <a href="../unterseiten/05%20%E2%80%93%20Geografie/index.html" ><img src="../../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Humanoide/Unterseiten/Heimatwelt/bilder/landschaften-erde.png" alt="" loading="lazy" decoding="async"><span>Sieben Kontinente</span></a>
+                        <a href="../unterseiten/09%20%E2%80%93%20Geologie/index.html" ><img src="../../../../../../assets/bilder/Himmelsk%C3%B6rper/Vulkanwelten/_%C3%9Cbersicht/vulkanwelt/hauptseite/vulkanwelt.webp" alt="" loading="lazy" decoding="async"><span>Plattentektonik</span></a>
+                        <a href="../unterseiten/06%20%E2%80%93%20Atmosph%C3%A4re/index.html" ><img src="../../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Humanoide/Unterseiten/Heimatwelt/bilder/erde-aus-dem-orbit.png" alt="" loading="lazy" decoding="async"><span>Dichte Atmosphäre</span></a>
+                        <a href="../unterseiten/10%20%E2%80%93%20Biosph%C3%A4re/index.html" ><img src="../../../../../../assets/bilder/Himmelsk%C3%B6rper/Gesteinsplaneten/_%C3%9Cbersicht/waldwelt/hauptseite/waldwelt.webp" alt="" loading="lazy" decoding="async"><span>Reiche Biosphäre</span></a>
+                    </div>
+                </section>
             </div>
+            <footer class="earth-sources"><a href="https://science.nasa.gov/earth/facts/">NASA · Erdfakten</a> <a href="https://nssdc.gsfc.nasa.gov/planetary/factsheet/">NASA · Planetary Fact Sheet</a></footer>
         </main>
     </div>
-    <script type="module" src="../../../../../../Menüs/Side_bar/side_bar.js?v=3"></script>
-    <script type="module" src="../../../../../../Menüs/TopBar/Top_bar.js?v=6"></script>
-    <script type="module" src="../../../../_gemeinsam/celestial-detail.js"></script>
 </body>
 </html>

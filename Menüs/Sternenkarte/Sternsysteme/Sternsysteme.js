@@ -2,7 +2,7 @@ import "../../TopBar/Top_bar.js";
 import "../../Side_bar/side_bar.js";
 import { getAporiaMedia } from "../../adapter/aporia-media.js";
 import { ladeObjekte } from "../../adapter/Sternenkarte/Kartendaten/Kartendaten.js";
-import { objektLink } from "../../adapter/Sternenkarte/Verknuepfungen/Verknuepfungen.js";
+import { kartenobjektLink, objektLink } from "../../adapter/Sternenkarte/Verknuepfungen/Verknuepfungen.js";
 
 const id = new URLSearchParams(location.search).get("id");
 const status = document.querySelector("[data-object-status]");
@@ -29,7 +29,7 @@ try {
         for (const eintrag of objekteImSystem) {
             const element = document.createElement("li");
             const link = document.createElement("a");
-            link.href = objektLink(eintrag.link, eintrag.name);
+            link.href = kartenobjektLink(eintrag);
             link.textContent = eintrag.name + " · " + eintrag.typ;
             element.append(link);
             liste.querySelector("ul").append(element);

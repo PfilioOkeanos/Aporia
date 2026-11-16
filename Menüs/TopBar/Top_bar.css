@@ -381,6 +381,8 @@
 
 .aporia-search {
 
+    position: relative;
+
     display: flex !important;
 
     align-items: center;
@@ -414,6 +416,38 @@
         background 0.2s ease;
 
 }
+
+.aporia-search-results:not([hidden]) {
+    position: absolute;
+    z-index: 5;
+    top: calc(100% + .35rem);
+    right: 0;
+    width: min(24rem, calc(100vw - 2rem));
+    max-height: min(60vh, 27rem);
+    overflow-y: auto;
+    display: grid;
+    gap: .2rem;
+    padding: .5rem;
+    border: 1px solid #887343;
+    border-radius: .5rem;
+    background: #10221a;
+    color: #f4e8c6;
+    box-shadow: 0 .6rem 1.5rem #0009;
+}
+.aporia-search-results a {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: .5rem;
+    padding: .48rem .55rem;
+    text-decoration: none;
+    color: inherit;
+}
+.aporia-search-results a:hover, .aporia-search-results a:focus-visible {
+    background: #354b36;
+    outline: 1px solid #cfb166;
+}
+.aporia-search-results small { color: #dcc38e; text-align: right; }
 
 
 /* SUCHFELD AKTIV */

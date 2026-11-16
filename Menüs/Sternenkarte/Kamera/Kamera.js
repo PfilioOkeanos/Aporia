@@ -209,6 +209,11 @@ export function erzeugeKamera(canvas, reset) {
 
     return {
         stand: kamerastand,
+        ansicht: () => ({ yaw, pitch, distance, target: [...target], fokusId: fokusObjekt?.id }),
+        stelleAnsichtWiederHer(ansicht, objekt) {
+            setzeAnsicht(ansicht);
+            fokusObjekt = objekt ?? null;
+        },
         fliegeZumObjekt,
         fokussiereGruppe(punkt, abstand, id, revision) {
             gruppenStart = { ...START, target: punkt, distance: abstand };

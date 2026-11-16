@@ -1,5 +1,5 @@
 import { getAporiaRoute } from "../../aporia-routes.js";
-import { getCelestialDetailUrl, loadCelestialCatalog } from "../../aporia-celestial.js";
+import { loadCelestialCatalog } from "../../aporia-celestial.js";
 
 import { strukturgruppe } from "./Kartengruppen.js";
 
@@ -62,7 +62,7 @@ export function objektAusVorlage(vorlage, motiv) {
     const daten = { typ, form, color: [...color], emission };
     if (route) {
         daten.name = motiv?.title ?? label;
-        daten.link = relativZuKarte(motiv ? getCelestialDetailUrl(route === "kosmologie-galaxien" ? "galaxien" : route, motiv.slug) : getAporiaRoute(route));
+        daten.link = relativZuKarte(motiv?.href ?? getAporiaRoute(route));
     }
     if (typ === "Asteroidengürtel") daten.radius = 4;
     if (form === "system") daten.systemName = daten.name;

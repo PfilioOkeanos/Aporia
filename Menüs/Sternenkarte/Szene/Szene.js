@@ -72,7 +72,7 @@ function kugelGeometrie(rows = 20, columns = 32) {
     return { points: new Float32Array(points), indices: new Uint16Array(indices) };
 }
 
-export function starteSzene(canvas, reset, status, zeichneNavigation, editor, kamera, modellEbene, simuliere) {
+export function starteSzene(canvas, reset, status, zeichneNavigation, editor, kamera, modellEbene, simuliere, bearbeitbar = true) {
     const gl = canvas.getContext("webgl", { alpha: false });
     if (!gl) {
         status.hidden = false;
@@ -127,7 +127,7 @@ export function starteSzene(canvas, reset, status, zeichneNavigation, editor, ka
             [name, gl.getUniformLocation(program, "u" + name)])
     );
     let stand;
-    starteObjektbewegung(canvas, editor, () => stand);
+    if (bearbeitbar) starteObjektbewegung(canvas, editor, () => stand);
     let previousTime = performance.now();
     let frame;
 
