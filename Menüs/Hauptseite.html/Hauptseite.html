@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="Hauptseite.css">
   <script type="module" src="Hauptseite.js"></script>
 </head>
-<body class="home-page" data-page="home">
+<body class="home-page" data-page="home" data-navigation-color="fixed">
   <div data-aporia-topbar></div>
   <div class="home-frame">
     <div data-aporia-sidebar></div>
@@ -25,42 +25,49 @@
         </div>
         <button class="home-video-toggle" type="button" hidden aria-label="Hintergrundvideo abspielen">▶</button>
       </header>
-      <section id="forschung" class="home-research" aria-labelledby="forschung-titel">
-        <h2 id="forschung-titel">Forschung / Technologien</h2>
-        <p>Universumsweite Übersicht sämtlicher Forschungsgebiete, Projekte, Entdeckungen und Technologien.</p>
-        <div class="home-research-grid">
-          <article id="forschungsgebiete">
-            <h3>Forschungsgebiete</h3>
-            <p>Biologie, Medizin, Physik, Materialien, Energie, Raumfahrt und weitere Fachgebiete.</p>
-          </article>
-          <article id="forschungsprojekte">
-            <h3>Forschungsprojekte</h3>
-            <p>Laufende, abgeschlossene, unterbrochene oder geplante Forschung.</p>
-          </article>
-          <article id="rohstoffforschung">
-            <h3>Rohstoffforschung</h3>
-            <p>Erkundung von Vorkommen sowie Erforschung der Eigenschaften, Gewinnung und Verarbeitung von Rohstoffen.</p>
-          </article>
-          <article id="technologien">
-            <h3>Technologien</h3>
-            <p>Entdeckte, entwickelte oder eingesetzte Verfahren und Geräte.</p>
-          </article>
-          <article id="speziesforschung">
-            <h3>Speziesforschung</h3>
-            <p>Forschungsleistungen und technologische Besonderheiten einzelner Spezies.</p>
-          </article>
-          <article id="fraktionsforschung">
-            <h3>Fraktionsforschung</h3>
-            <p>Gemeinsame Forschungsprogramme und große wissenschaftliche Zusammenschlüsse.</p>
-          </article>
-          <article id="forschungskooperationen">
-            <h3>Forschungskooperationen</h3>
-            <p>Spezies- und fraktionsübergreifende Zusammenarbeit.</p>
-          </article>
-          <article id="technologieentwicklung">
-            <h3>Technologieentwicklung</h3>
-            <p>Historische Entwicklung, Fortschritt und Verbreitung von Technologien.</p>
-          </article>
+      <section class="home-universe" aria-label="Vier Welten im Aporia-Universum">
+        <img class="home-universe-galaxy" data-media-image="kosmologie.kosmologie-galaxien"
+             alt="" loading="lazy" decoding="async">
+        <figure class="home-universe-art">
+          <img src="../../assets/bilder/hauptseite/Design%20ohne%20Titel(1).png"
+               alt="Aporia Universum. Verschiedene Spezies, fremde Welten und Raumschiffe umgeben das Logo."
+               width="2000" height="2000" decoding="async">
+        </figure>
+        <div class="home-worlds home-worlds--left">
+          <a class="home-world home-world--ice" data-planet-dossier="blauweie-eiswelt-im-all"
+             href="../../inhalte/himmelskoerper/planeten/details/blauweie-eiswelt-im-all/hauptseite/index.html">
+            <div class="home-world-art">
+              <img src="../../assets/bilder/Himmelskörper/EisWelten/blauweie-eiswelt-im-all/hauptseite/blauweie-eiswelt-im-all-bee584865d-vorschau.webp"
+                   alt="" width="373" height="560" loading="lazy" decoding="async">
+            </div>
+            <div class="home-world-copy"><p>Eiswelt</p><h2>Blauweiße Eiswelt</h2></div>
+          </a>
+          <a class="home-world home-world--ocean" data-planet-dossier="biolumineszente-ozeanwelt-im-all"
+             href="../../inhalte/himmelskoerper/planeten/details/biolumineszente-ozeanwelt-im-all/hauptseite/index.html">
+            <div class="home-world-art">
+              <img src="../../assets/bilder/Himmelskörper/OzeanWelt/biolumineszente-ozeanwelt-im-all/hauptseite/biolumineszente-ozeanwelt-im-all-c8684fc79e-vorschau.webp"
+                   alt="" width="373" height="560" loading="lazy" decoding="async">
+            </div>
+            <div class="home-world-copy"><p>Ozeanwelt</p><h2>Biolumineszenter Ozean</h2></div>
+          </a>
+        </div>
+        <div class="home-worlds home-worlds--right">
+          <a class="home-world home-world--volcanic" data-planet-dossier="aschekrone-uber-dem-vulkanplaneten"
+             href="../../inhalte/himmelskoerper/planeten/details/aschekrone-uber-dem-vulkanplaneten/hauptseite/index.html">
+            <div class="home-world-art">
+              <img src="../../assets/bilder/Himmelskörper/Vulkanwelten/aschekrone-uber-dem-vulkanplaneten/hauptseite/aschekrone-uber-dem-vulkanplaneten-e730b41089-vorschau.webp"
+                   alt="" width="373" height="560" loading="lazy" decoding="async">
+            </div>
+            <div class="home-world-copy"><p>Vulkanwelt</p><h2>Aschekrone</h2></div>
+          </a>
+          <a class="home-world home-world--desert" data-planet-dossier="bernsteinwusten-unter-weier-sonne"
+             href="../../inhalte/himmelskoerper/planeten/details/bernsteinwusten-unter-weier-sonne/hauptseite/index.html">
+            <div class="home-world-art">
+              <img src="../../assets/bilder/Himmelskörper/WüstenPlaneten/bernsteinwusten-unter-weier-sonne/hauptseite/bernsteinwusten-unter-weier-sonne-ec2c871b79-vorschau.webp"
+                   alt="" width="373" height="560" loading="lazy" decoding="async">
+            </div>
+            <div class="home-world-copy"><p>Wüstenplanet</p><h2>Bernsteinwüsten</h2></div>
+          </a>
         </div>
       </section>
       <section class="home-panorama" aria-label="Schauplätze und Leben im Aporia-Universum">

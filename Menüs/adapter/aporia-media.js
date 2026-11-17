@@ -14,9 +14,12 @@ const MEDIA_CONFIG_URL = new URL(
     "../../inhalte/medien/medien.json",
     import.meta.url
 );
+const ASSET_CATALOG_URL = new URL("../../assets/asset-catalog.json", import.meta.url);
+const PROJECT_ROOT_URL = new URL("../../", import.meta.url);
 
 // Zwischenspeicher für die Medienkonfiguration
 let mediaConfigPromise = null;
+let assetCatalogPromise = null;
 
 // Bereits gemeldete Fehler nicht mehrfach ausgeben
 const reportedWarnings = new Set();
@@ -568,4 +571,39 @@ export async function getAporiaMediaCollection(key) {
         ...item,
         url: resolveMediaPath(item.src),
     })).filter(item => item.url);
+}
+
+export async function getAporiaAssetCatalog(forceReload = false) {
+    if (forceReload) assetCatalogPromise = null;
+    if (!assetCatalogPromise) {
+        assetCatalogPromise = fetch(ASSET_CATALOG_URL, { cache: "no-store" })
+            .then(response => {
+                if (!response.ok) throw new Error(`Asset-Katalog konnte nicht geladen werden: HTTP ${response.status}`);
+                return response.json();
+            })
+            .then(catalog => {
+                if (!catalog?.roots || typeof catalog.roots !== "object") {
+                    throw new Error("Ungültiger Asset-Katalog.");
+                }
+                const resolveNode = node => ({
+                    name: node.name,
+                    files: (node.files ?? []).map(file => ({
+                        ...file,
+                        url: new URL(file.src, PROJECT_ROOT_URL).href
+                    })),
+                    children: Object.fromEntries(
+                        Object.entries(node.children ?? {}).map(([name, child]) => [name, resolveNode(child)])
+                    )
+                });
+                return {
+                    version: catalog.version,
+                    roots: Object.fromEntries(Object.entries(catalog.roots).map(([name, node]) => [name, resolveNode(node)]))
+                };
+            })
+            .catch(error => {
+                assetCatalogPromise = null;
+                throw error;
+            });
+    }
+    return assetCatalogPromise;
 }

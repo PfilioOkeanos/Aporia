@@ -1,420 +1,299 @@
-
-/* ================================================= */
-/* APORIA - TOPBAR DESIGN                            */
-/* Version 2.0                                       */
-/* ================================================= */
-
-
-/* ============================================= */
-/* 01 - FARBPALETTE                              */
-/* ============================================= */
-
 :root {
-    --aporia-bg: #0c1716;
-    --aporia-panel: #101d1b;
-
-    --aporia-gold: #c6a96b;
-    --aporia-gold-light: #ead7a6;
-
-    --aporia-text: #e8e2d5;
-    --aporia-muted: #a9a394;
-
-    --aporia-line: rgba(198, 169, 107, 0.35);
+    --aporia-bg: #20160f;
+    --aporia-panel: #332218;
+    --aporia-gold: #eec087;
+    --aporia-gold-light: #ffe5b4;
+    --aporia-text: #fff2dc;
+    --aporia-muted: #dfc6aa;
+    --aporia-line: #ffd89a65;
 }
 
-
-/* ============================================= */
-/* 02 - GRUNDEINSTELLUNGEN                       */
-/* ============================================= */
-
-.aporia-topbar,
-.aporia-topbar * {
-    box-sizing: border-box;
+@property --aporia-scene-tint {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: #e8aa66;
 }
 
+body[data-navigation-color="forest"] {
+    --aporia-page-tint: #439366;
+    --aporia-page-glass-light: #244634;
+    --aporia-page-glass-dark: #0b2118;
+}
 
-/* ============================================= */
-/* 03 - GESAMTE TOPBAR                           */
-/* ============================================= */
+body[data-navigation-color="turquoise"] {
+    --aporia-page-tint: #42c4c3;
+    --aporia-page-glass-light: #195052;
+    --aporia-page-glass-dark: #0a262e;
+}
 
-.aporia-topbar {
+.aporia-topbar, .aporia-sidebar {
+    --aporia-scene-tint: var(--aporia-page-tint, #e8aa66);
+    --aporia-gold: color-mix(in srgb, var(--aporia-scene-tint, #e8aa66) 54%, #fff1da);
+    --aporia-gold-light: color-mix(in srgb, var(--aporia-scene-tint, #e8aa66) 28%, #fff9ee);
+    --aporia-text: #fff8ed;
+    --aporia-muted: color-mix(in srgb, var(--aporia-scene-tint, #e8aa66) 18%, #e6ded2);
+    --aporia-line: color-mix(in srgb, var(--aporia-gold-light) 45%, transparent);
+    --aporia-glass-light: var(--aporia-page-glass-light, color-mix(in srgb, var(--aporia-scene-tint, #e8aa66) 34%, #17151a));
+    --aporia-glass-dark: var(--aporia-page-glass-dark, color-mix(in srgb, var(--aporia-scene-tint, #e8aa66) 12%, #18161a));
+    --aporia-glass-glow: color-mix(in srgb, var(--aporia-scene-tint, #e8aa66) 38%, transparent);
+    --aporia-glass-surface:
+        radial-gradient(ellipse at 18% 0%, var(--aporia-glass-glow), transparent 69%),
+        linear-gradient(138deg, color-mix(in srgb, var(--aporia-glass-light) 84%, transparent),
+            color-mix(in srgb, var(--aporia-glass-dark) 92%, transparent) 55%,
+            color-mix(in srgb, var(--aporia-glass-light) 89%, transparent));
+    --aporia-glass-menu: linear-gradient(145deg, var(--aporia-glass-light), var(--aporia-glass-dark) 72%);
+    --aporia-glass-hover: linear-gradient(125deg, var(--aporia-glass-glow), transparent 90%);
+    --aporia-glass-active: linear-gradient(125deg, var(--aporia-line), var(--aporia-glass-glow) 86%);
+    --aporia-glass-rim: inset 0 1px 0 var(--aporia-line), inset 0 -1px 0 var(--aporia-glass-glow);
+    transition: --aporia-scene-tint .6s ease;
+}
 
+[data-aporia-topbar] {
     position: sticky;
     top: 0;
     z-index: 1000;
-
-    width: 100%;
-    min-height: 78px;
-
-    /* FLEXBOX STATT GRID */
-    display: flex;
-
-    align-items: center;
-    justify-content: space-between;
-
-    flex-wrap: nowrap;
-
-    gap: 30px;
-
-    padding: 0 32px;
-
-    background:
-        linear-gradient(
-            110deg,
-            #0b1715,
-            #101d1b 60%,
-            #0b1515
-        );
-
-    border-bottom: 1px solid var(--aporia-line);
-
-    box-shadow:
-        0 5px 25px rgba(0,0,0,0.3);
-
-    backdrop-filter: blur(16px);
-
-    color: var(--aporia-text);
-
 }
 
+.aporia-topbar {
+    --topbar-art: url("../../assets/bilder/hauptseite/topbar/Topbar-1png.png");
+    --art-height: clamp(420px, 30vw, 490px);
+    --art-offset: -54px;
+    /* The rectangles in the PNG run from y=208 to y=286 on a 1080px canvas. */
+    --plate-top: calc(var(--art-offset) + var(--art-height) * .193);
+    --plate-height: calc(var(--art-height) * .072);
+    --plate-ink: color-mix(in srgb, var(--aporia-scene-tint) 13%, #231711);
+    position: relative;
+    isolation: isolate;
+    width: 100%;
+    min-height: calc(var(--art-offset) + var(--art-height) * .39);
+    color: var(--plate-ink);
+    font-family: Georgia, serif;
+}
 
-/* ============================================= */
-/* 04 - LOGO / STARTSEITE                        */
-/* ============================================= */
+.aporia-topbar, .aporia-topbar * { box-sizing: border-box; }
+
+.aporia-topbar::before,
+.aporia-topbar::after {
+    content: "";
+    position: absolute;
+    inset: var(--art-offset) 0 auto;
+    height: var(--art-height);
+    pointer-events: none;
+}
+
+.aporia-topbar::before {
+    z-index: -2;
+    background: var(--topbar-art) center / 100% 100% no-repeat;
+    filter: drop-shadow(0 .35rem .65rem #08040ab0);
+}
+
+.aporia-topbar::after {
+    z-index: -1;
+    background: var(--aporia-scene-tint);
+    mask: var(--topbar-art) center / 100% 100% no-repeat;
+    mix-blend-mode: color;
+    opacity: .46;
+}
+
+.aporia-topbar-start,
+.aporia-main-nav,
+.aporia-search {
+    position: absolute;
+    top: var(--plate-top);
+    min-width: 0;
+    height: var(--plate-height);
+}
 
 .aporia-topbar-start {
+    left: 9.1%;
+    width: 6.4%;
     display: flex;
-    align-items: center;
-    gap: 10px;
-    min-width: 0;
+    align-items: stretch;
+    justify-content: center;
 }
 
+.aporia-brand,
 .aporia-sidebar-toggle-button {
     display: grid;
     place-items: center;
-    flex: 0 0 32px;
-    width: 32px;
-    height: 32px;
-    padding: 0;
-    border: 1px solid var(--aporia-line);
-    border-radius: 5px;
+    min-width: 0;
+    padding: 0 3px;
+    border: 0;
+    border-radius: 4px;
     background: transparent;
-    color: var(--aporia-gold-light);
-    cursor: pointer;
-}
-
-.aporia-sidebar-toggle-button[hidden] { display: none; }
-.aporia-sidebar-toggle-button:hover,
-.aporia-sidebar-toggle-button:focus-visible {
-    border-color: currentColor;
-}
-
-.aporia-sidebar-toggle-button svg {
-    width: 18px;
-    height: 18px;
-    stroke: currentColor;
-    stroke-width: 1.6;
+    color: inherit;
 }
 
 .aporia-brand {
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 12px;
-
-    flex: 0 0 auto;
-
-    width: fit-content;
-
-    color: var(--aporia-gold-light);
-
+    font-size: clamp(13px, 1.05vw, 19px);
+    font-weight: bold;
+    letter-spacing: .055em;
     text-decoration: none;
-
 }
 
-
-/* LOGO-SYMBOL */
-
-.aporia-brand-symbol {
-
-    width: 38px;
-    height: 38px;
-
-    flex-shrink: 0;
-
-}
-
-
-.aporia-brand-symbol svg {
-
-    display: block;
-
-    width: 100%;
-    height: 100%;
-
-    stroke: currentColor;
-
-}
-
-
-/* LOGO-SCHRIFT */
-
-.aporia-brand-text {
-
-    display: flex;
-
-    flex-direction: column;
-
-    gap: 4px;
-
-}
-
-
-.aporia-brand-name {
-
-    font-family: Georgia, serif;
-
-    font-size: 22px;
-
-    letter-spacing: 0.32em;
-
-    white-space: nowrap;
-
-}
-
-
-.aporia-brand-subtitle {
-
-    font-size: 9px;
-
-    letter-spacing: 0.32em;
-
-    color: var(--aporia-muted);
-
-    white-space: nowrap;
-
-}
-
-
-/* ============================================= */
-/* 05 - ZENTRALE HAUPTNAVIGATION                 */
-/* ============================================= */
+.aporia-sidebar-toggle-button { cursor: pointer; }
+.aporia-sidebar-toggle-button[hidden] { display: none; }
 
 .aporia-main-nav {
+    left: 16.22%;
+    width: 70.84%;
+    display: grid;
+    grid-template-columns: repeat(10, minmax(0, 1fr));
+    gap: 0;
+    align-items: stretch;
+}
 
-    display: flex !important;
-
-    align-items: center;
-
-    justify-content: center;
-
-    flex-direction: row;
-
-    flex-wrap: wrap;
-
-    /* Navigation bekommt den verfügbaren Platz */
-
-    flex: 1 1 auto;
-
+.aporia-main-nav > * {
     min-width: 0;
-
-    gap: 0 clamp(10px, 1.2vw, 24px);
-
-    overflow: visible;
-
+    min-height: 0;
+    margin-inline: 4%;
 }
 
-
-/* EINZELNE MENÜPUNKTE */
-
-.aporia-nav-link {
-
-    position: relative;
-
-    display: flex !important;
-
-    flex-direction: row;
-
+.aporia-nav-link,
+.aporia-content-trigger,
+.aporia-celestial-disclosure summary {
+    display: flex;
     align-items: center;
-
     justify-content: center;
-
-    gap: 10px;
-
-    /* WICHTIG: KEIN SCHRUMPFEN */
-
-    flex: 0 0 auto !important;
-
-    flex-shrink: 0 !important;
-
-    min-width: max-content;
-
-    padding: 16px 5px;
-
-    color: var(--aporia-text);
-
-    text-decoration: none;
-
-    font-family: Georgia, serif;
-
-    font-size: 15px;
-
-    white-space: nowrap;
-
-    visibility: visible !important;
-
-    opacity: 1 !important;
-
-    transition:
-        color 0.2s ease;
-
-}
-
-
-/* ============================================= */
-/* 06 - NAVIGATIONS-ICONS                        */
-/* ============================================= */
-
-.aporia-nav-link svg {
-
-    display: block !important;
-
-    width: 22px;
-    height: 22px;
-
-    flex: 0 0 22px;
-
-    stroke: var(--aporia-gold);
-
-    stroke-width: 1.5;
-
-    stroke-linecap: round;
-
-    stroke-linejoin: round;
-
-    transition:
-        transform 0.2s ease;
-
-}
-
-
-/* MENÜTEXTE */
-
-.aporia-nav-link span {
-
-    display: inline-block !important;
-
-    flex: 0 0 auto;
-
-    white-space: nowrap;
-
-    visibility: visible !important;
-
-    opacity: 1 !important;
-
+    gap: clamp(2px, .27vw, 5px);
+    min-width: 0;
+    height: 100%;
+    padding: 1px 3px;
+    border-radius: 4px;
     color: inherit;
-
+    font: bold clamp(10px, .79vw, 15px)/1.04 Georgia, serif;
+    text-align: center;
+    text-decoration: none;
+    overflow-wrap: anywhere;
 }
 
-
-/* ============================================= */
-/* 07 - HOVER-EFFEKT                             */
-/* ============================================= */
-
-.aporia-nav-link:hover {
-
-    color: var(--aporia-gold-light);
-
+.aporia-topbar :is(a, button, summary, input):focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: -2px;
 }
 
-.aporia-nav-link[aria-disabled="true"] {
-    cursor: not-allowed;
-    opacity: 0.45 !important;
+.aporia-topbar :is(.aporia-nav-link, .aporia-brand, .aporia-sidebar-toggle-button, .aporia-content-trigger, .aporia-celestial-disclosure summary):hover,
+.aporia-topbar :is(.aporia-nav-link.is-active, details[open] > summary) {
+    background-color: color-mix(in srgb, var(--aporia-scene-tint) 33%, #fff5db55);
 }
 
+.aporia-nav-link.is-active { box-shadow: inset 0 -2px var(--plate-ink); }
+.aporia-nav-link[aria-disabled="true"] { cursor: not-allowed; opacity: .55; }
 
-.aporia-nav-link:hover svg {
-
-    transform: translateY(-2px);
-
+.aporia-topbar :is(.aporia-nav-link, .aporia-content-trigger, .aporia-sidebar-toggle-button, .aporia-search) > svg {
+    display: block;
+    width: clamp(10px, .95vw, 19px);
+    height: clamp(10px, .95vw, 19px);
+    flex: 0 0 auto;
+    stroke: currentColor;
+    stroke-width: 1.65;
+    stroke-linecap: round;
+    stroke-linejoin: round;
 }
-
-
-/* ============================================= */
-/* 08 - AKTIVER MENÜPUNKT                        */
-/* ============================================= */
-
-.aporia-nav-link.is-active {
-
-    color: var(--aporia-gold-light);
-
-}
-
-
-.aporia-nav-link.is-active::after {
-
-    content: "";
-
-    position: absolute;
-
-    bottom: 0;
-
-    left: 0;
-
-    width: 100%;
-
-    height: 2px;
-
-    background: var(--aporia-gold);
-
-    box-shadow:
-        0 0 10px var(--aporia-gold);
-
-}
-
-
-/* ============================================= */
-/* 09 - GLOBALE ARCHIVSUCHE                      */
-/* ============================================= */
 
 .aporia-search {
-
-    position: relative;
-
-    display: flex !important;
-
+    left: 87.15%;
+    width: 7.05%;
+    display: flex;
     align-items: center;
+    justify-content: center;
+    gap: 3px;
+    padding-inline: 4px;
+    border-radius: 4px;
+}
 
-    gap: 10px;
+.aporia-search input {
+    width: 100%;
+    min-width: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: inherit;
+    font: bold clamp(9px, .69vw, 14px)/1.2 Georgia, serif;
+}
+.aporia-search input::placeholder { color: inherit; opacity: 1; }
 
-    height: 42px;
+.aporia-celestial-nav,
+.aporia-content-nav {
+    position: relative;
+    display: flex;
+    align-items: stretch;
+}
 
-    /* FESTER PLATZ FÜR DIE SUCHE */
+.aporia-celestial-nav > .aporia-nav-link { flex: 1 1 auto; }
 
-    flex: 0 0 280px;
+.aporia-celestial-disclosure {
+    display: flex;
+    flex: 0 0 clamp(13px, 1.05vw, 22px);
+    align-items: stretch;
+}
 
-    min-width: 230px;
+.aporia-celestial-disclosure summary,
+.aporia-content-trigger { cursor: pointer; list-style: none; }
+.aporia-celestial-disclosure summary::-webkit-details-marker,
+.aporia-content-trigger::-webkit-details-marker { display: none; }
+.aporia-celestial-disclosure summary { width: 100%; }
 
-    width: 280px;
+.aporia-content-disclosure { width: 100%; }
+.aporia-content-chevron { flex-shrink: 0; }
 
-    padding: 0 12px;
+@media (1280px <= width < 1550px) {
+    .aporia-celestial-nav .aporia-nav-link > svg,
+    .aporia-content-trigger > svg { display: none; }
+}
 
-    border: 1px solid var(--aporia-line);
+@media (max-width: 1279px) {
+    .aporia-topbar {
+        --art-height: 200px;
+        --art-offset: -55px;
+        display: grid;
+        grid-template-columns: auto minmax(0, 1fr);
+        gap: 7px;
+        min-height: 0;
+        padding: 8px clamp(8px, 2.5vw, 24px) 10px;
+        background: var(--aporia-glass-dark);
+    }
 
-    border-radius: 8px;
+    .aporia-topbar::before,
+    .aporia-topbar::after { clip-path: inset(55px 0 0); }
 
-    background: rgba(0,0,0,0.2);
+    .aporia-topbar-start,
+    .aporia-main-nav,
+    .aporia-search {
+        position: relative;
+        inset: auto;
+        width: auto;
+        height: auto;
+    }
 
-    visibility: visible !important;
+    .aporia-topbar-start, .aporia-search { min-height: 34px; }
+    .aporia-topbar-start { padding-inline: 4px; grid-area: 1 / 1; }
+    .aporia-search { grid-area: 1 / 2; justify-self: end; width: min(100%, 15rem); padding-inline: 8px; }
+    .aporia-main-nav { grid-column: 1 / -1; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 5px; }
+    .aporia-main-nav > * { min-height: 32px; margin: 0; }
+    .aporia-topbar-start, .aporia-main-nav > *, .aporia-search {
+        /* Crop one of the blank rectangles from the same artwork for the compact layout. */
+        background: var(--topbar-art) 40.18% 20.82% / 1628.21% 1421.05% no-repeat;
+        border-radius: 4px;
+    }
+    .aporia-nav-link, .aporia-content-trigger, .aporia-search input { font-size: 12px; }
+    .aporia-celestial-disclosure { flex-basis: 24px; }
+    .aporia-topbar :is(.aporia-nav-link, .aporia-content-trigger, .aporia-sidebar-toggle-button, .aporia-search) > svg {
+        width: 14px;
+        height: 14px;
+    }
+}
 
-    opacity: 1 !important;
+@media (max-width: 620px) {
+    .aporia-main-nav { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .aporia-nav-link, .aporia-content-trigger { font-size: 11px; }
+    .aporia-celestial-nav .aporia-nav-link > svg { display: none; }
+    .aporia-celestial-nav:nth-child(3n + 1) ul { inset-inline: 0 auto; }
+}
 
-    transition:
-        border-color 0.2s ease,
-        background 0.2s ease;
-
+@media (621px <= width <= 1279px) {
+    .aporia-celestial-nav:nth-child(5n + 1) ul,
+    .aporia-celestial-nav:nth-child(5n + 2) ul { inset-inline: 0 auto; }
 }
 
 .aporia-search-results:not([hidden]) {
@@ -428,11 +307,11 @@
     display: grid;
     gap: .2rem;
     padding: .5rem;
-    border: 1px solid #887343;
-    border-radius: .5rem;
-    background: #10221a;
-    color: #f4e8c6;
-    box-shadow: 0 .6rem 1.5rem #0009;
+    border: 1px solid var(--aporia-line);
+    border-radius: .95rem;
+    background: var(--aporia-glass-menu);
+    color: var(--aporia-text);
+    box-shadow: var(--aporia-glass-rim), 0 .6rem 1.5rem #0009;
 }
 .aporia-search-results a {
     display: flex;
@@ -440,393 +319,16 @@
     align-items: baseline;
     gap: .5rem;
     padding: .48rem .55rem;
+    border-radius: .5rem;
     text-decoration: none;
     color: inherit;
 }
 .aporia-search-results a:hover, .aporia-search-results a:focus-visible {
-    background: #354b36;
-    outline: 1px solid #cfb166;
+    background: var(--aporia-glass-hover);
 }
 .aporia-search-results small { color: #dcc38e; text-align: right; }
 
 
-/* SUCHFELD AKTIV */
-
-.aporia-search:focus-within {
-
-    border-color: var(--aporia-gold);
-
-    background: rgba(0,0,0,0.35);
-
-}
-
-
-/* SUCH-ICON */
-
-.aporia-search svg {
-
-    display: block;
-
-    width: 19px;
-
-    height: 19px;
-
-    flex: 0 0 19px;
-
-    stroke: var(--aporia-gold);
-
-    stroke-width: 1.7;
-
-}
-
-
-/* SUCH-EINGABE */
-
-.aporia-search input {
-
-    display: block;
-
-    width: 100%;
-
-    min-width: 0;
-
-    border: none;
-
-    outline: none;
-
-    background: transparent;
-
-    color: var(--aporia-text);
-
-    font-family: Georgia, serif;
-
-    font-size: 13px;
-
-}
-
-
-.aporia-search input::placeholder {
-
-    color: var(--aporia-muted);
-
-}
-
-
-/* TASTENKÜRZEL */
-
-.aporia-search kbd {
-
-    flex: 0 0 auto;
-
-    white-space: nowrap;
-
-    padding: 4px 6px;
-
-    border: 1px solid var(--aporia-line);
-
-    border-radius: 4px;
-
-    color: var(--aporia-muted);
-
-    font-size: 10px;
-
-}
-
-
-/* ============================================= */
-/* 10 - RESPONSIVE DESIGN                        */
-/* ============================================= */
-
-/* KLEINERE DESKTOP-BILDSCHIRME */
-
-@media (max-width: 1100px) {
-
-    .aporia-topbar {
-
-        gap: 16px;
-
-        padding: 0 18px;
-
-    }
-
-
-    .aporia-brand-symbol {
-
-        width: 32px;
-        height: 32px;
-
-    }
-
-
-    .aporia-brand-name {
-
-        font-size: 18px;
-
-    }
-
-
-    .aporia-main-nav {
-
-        gap: 14px;
-
-    }
-
-
-    .aporia-nav-link {
-
-        gap: 7px;
-
-        font-size: 13px;
-
-    }
-
-
-    .aporia-nav-link svg {
-
-        width: 19px;
-        height: 19px;
-
-        flex-basis: 19px;
-
-    }
-
-
-    .aporia-search {
-
-        flex-basis: 210px;
-
-        width: 210px;
-
-        min-width: 190px;
-
-    }
-
-
-    .aporia-search kbd {
-
-        display: none;
-
-    }
-
-}
-
-
-/* ============================================= */
-/* 11 - TABLET UND MOBIL                         */
-/* ============================================= */
-
-@media (max-width: 1100px) {
-
-    .aporia-topbar {
-
-        display: grid;
-
-        grid-template-columns: minmax(0, 1fr) auto;
-
-        grid-template-rows: auto auto;
-
-        gap: 10px;
-
-        padding: 12px 16px;
-
-    }
-
-
-    /* LOGO OBEN LINKS */
-
-    .aporia-topbar-start {
-
-        grid-column: 1;
-
-        grid-row: 1;
-
-    }
-
-
-    /* SUCHE OBEN RECHTS */
-
-    .aporia-search {
-
-        grid-column: 2;
-
-        grid-row: 1;
-
-        width: min(42vw, 280px);
-
-        min-width: 0;
-
-        flex: none;
-
-    }
-
-
-    /* NAVIGATION IN EIGENER ZEILE */
-
-    .aporia-main-nav {
-
-        grid-column: 1 / -1;
-
-        grid-row: 2;
-
-        display: grid !important;
-
-        grid-template-columns: repeat(6, minmax(0, 1fr));
-
-        justify-content: stretch;
-
-        width: 100%;
-
-        min-width: 0;
-
-        gap: 4px;
-
-        overflow: visible;
-
-    }
-
-
-    .aporia-nav-link {
-
-        flex-direction: column;
-
-        min-width: 0;
-
-        gap: 5px;
-
-        padding: 10px 3px;
-
-        white-space: normal;
-
-        text-align: center;
-
-    }
-
-
-    .aporia-nav-link span {
-
-        white-space: normal;
-
-        overflow-wrap: anywhere;
-
-    }
-
-}
-
-
-/* ============================================= */
-/* 12 - SEHR KLEINE BILDSCHIRME                  */
-/* ============================================= */
-
-@media (max-width: 480px) {
-
-    .aporia-brand-name {
-
-        font-size: 17px;
-
-    }
-
-
-    .aporia-brand-subtitle {
-
-        font-size: 8px;
-
-    }
-
-
-    .aporia-nav-link {
-
-        flex-direction: row;
-
-        justify-content: flex-start;
-
-        font-size: 12px;
-
-        gap: 7px;
-
-        padding: 8px 5px;
-
-    }
-
-
-    /* Zwei Spalten halten die Symbole und Namen lesbar. */
-
-    .aporia-main-nav {
-
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-
-        gap: 4px 8px;
-
-    }
-
-
-    /* Namen auch auf schmalen Displays sichtbar lassen. */
-
-    .aporia-nav-link span {
-
-        position: static;
-
-        width: auto;
-
-        height: auto;
-
-        padding: 0;
-
-        margin: 0;
-
-        overflow: visible;
-
-        clip: auto;
-
-        white-space: nowrap;
-
-        border: 0;
-
-    }
-
-
-    .aporia-nav-link svg {
-
-        width: 17px;
-        height: 17px;
-
-        flex-basis: 17px;
-
-    }
-
-
-    .aporia-search {
-
-        width: min(36vw, 145px);
-
-    }
-
-}
-
-
-.aporia-celestial-nav {
-    position: relative;
-    display: flex;
-    align-items: stretch;
-    min-width: 0;
-}
-
-.aporia-celestial-disclosure {
-    display: flex;
-    align-items: center;
-}
-
-.aporia-celestial-disclosure summary {
-    display: grid;
-    place-items: center;
-    min-width: 28px;
-    min-height: 36px;
-    height: 100%;
-    color: #e5ce95;
-    cursor: pointer;
-    list-style: none;
-}
-
-.aporia-celestial-disclosure summary::-webkit-details-marker { display: none; }
 .aporia-celestial-disclosure ul {
     position: absolute;
     z-index: 1;
@@ -836,32 +338,126 @@
     overflow-y: auto;
     margin: 0;
     padding: 6px;
-    border: 1px solid #84754e;
-    border-radius: 4px;
-    background: #15211e;
-    box-shadow: 0 8px 26px #0008;
+    border: 1px solid var(--aporia-line);
+    border-radius: .85rem;
+    background: var(--aporia-glass-menu);
+    box-shadow: var(--aporia-glass-rim), 0 8px 26px #0008;
     list-style: none;
 }
 
 .aporia-celestial-disclosure a {
     display: block;
     padding: 8px 10px;
-    color: #eee4d1;
+    border-radius: .46rem;
+    color: var(--aporia-text);
     text-decoration: none;
 }
 
 .aporia-celestial-disclosure a:hover,
-.aporia-celestial-disclosure a[aria-current] { background: #273a33; color: #f0d9a4; }
-.aporia-celestial-disclosure :focus-visible { outline: 2px solid #f0d9a4; outline-offset: -2px; }
+.aporia-celestial-disclosure a[aria-current] { background: var(--aporia-glass-hover); color: var(--aporia-gold-light); }
+.aporia-celestial-disclosure :focus-visible { outline: 2px solid var(--aporia-gold-light); outline-offset: -2px; }
 
-@media (481px <= width <= 1100px) {
-    .aporia-celestial-nav:nth-child(-n + 3) ul {
-        inset-inline: 0 auto;
+.aporia-content-panel {
+    position: absolute;
+    z-index: 1100;
+    top: 100%;
+    right: 0;
+    display: none;
+    grid-template-columns: minmax(13rem, 0.8fr) minmax(19rem, 1.25fr);
+    width: min(43rem, calc(100vw - 2rem));
+    max-height: min(72vh, 37rem);
+    overflow: hidden;
+    border: 1px solid var(--aporia-line);
+    border-radius: 1rem;
+    background: var(--aporia-glass-menu);
+    box-shadow: var(--aporia-glass-rim), 0 18px 42px #000b;
+}
+.aporia-content-disclosure[open] .aporia-content-panel { display: grid; }
+.aporia-content-disclosure[open] > summary { color: var(--aporia-gold-light); }
+
+.aporia-content-categories {
+    display: grid;
+    align-content: start;
+    gap: 2px;
+    overflow-y: auto;
+    padding: 10px;
+    border-right: 1px solid var(--aporia-line);
+}
+
+.aporia-content-categories a, .aporia-content-subfolders a {
+    display: block;
+    padding: 8px 10px;
+    border-radius: 5px;
+    color: var(--aporia-text);
+    font: 13px/1.35 Georgia, serif;
+    text-decoration: none;
+}
+.aporia-content-categories a:hover,
+.aporia-content-categories a:focus-visible,
+.aporia-content-categories a.is-selected,
+.aporia-content-subfolders a:hover,
+.aporia-content-subfolders a:focus-visible {
+    color: var(--aporia-gold-light);
+    background: var(--aporia-glass-hover);
+}
+
+.aporia-content-subfolders {
+    min-width: 0;
+    overflow-y: auto;
+    padding: 14px 16px;
+}
+.aporia-content-subfolders h2 {
+    margin: 0;
+    font: 600 18px/1.3 Georgia, serif;
+}
+.aporia-content-subfolders > p {
+    margin: 6px 0 10px;
+    color: var(--aporia-muted);
+    font: 12px/1.45 "Segoe UI", sans-serif;
+}
+.aporia-content-subfolders ul {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2px 8px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.aporia-content-overview::after { content: "  ↗"; color: var(--aporia-gold); }
+
+@media (min-width: 1101px) {
+    .aporia-topbar { justify-content: flex-start; }
+    .aporia-main-nav { justify-content: center; }
+    .aporia-search { margin-left: 0; }
+}
+
+@media (max-width: 600px) {
+    .aporia-content-panel {
+        position: fixed;
+        top: auto;
+        left: .5rem;
+        right: .5rem;
+        bottom: .5rem;
+        grid-template-columns: minmax(7.5rem, .8fr) minmax(0, 1.2fr);
+        width: auto;
+        max-height: 78vh;
+        border-radius: 10px;
+    }
+    .aporia-content-categories { padding: 6px; }
+    .aporia-content-categories a, .aporia-content-subfolders a { padding: 7px 6px; font-size: 12px; }
+    .aporia-content-subfolders { padding: 10px; }
+    .aporia-content-subfolders ul { grid-template-columns: minmax(0, 1fr); }
+}
+
+@media (601px <= width <= 1279px) {
+    .aporia-content-panel {
+        position: fixed;
+        inset: auto 1rem 1rem auto;
     }
 }
 
-@media (max-width: 480px) {
-    .aporia-celestial-nav:nth-child(odd) ul {
-        inset-inline: 0 auto;
-    }
+@media (prefers-reduced-motion: reduce) {
+    .aporia-topbar, .aporia-sidebar { transition: none; }
+    .aporia-topbar *, .aporia-topbar *::after { transition: none; }
+    .aporia-nav-link:hover svg { transform: none; }
 }

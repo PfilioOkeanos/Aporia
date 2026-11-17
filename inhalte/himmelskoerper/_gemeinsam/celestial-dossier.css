@@ -82,34 +82,3 @@ body[data-page="kosmologie-sternsysteme"]:has(.atlas-frame .aporia-dossier) {
     }
 }
 
-@media (max-width: 620px) {
-    body:has(.aporia-dossier) .aporia-topbar {
-        grid-template-columns: minmax(0, 1fr);
-    }
-
-    body:has(.aporia-dossier) .aporia-search {
-        grid-column: 1;
-        grid-row: 2;
-        width: 100%;
-    }
-
-    body:has(.aporia-dossier) .aporia-main-nav {
-        grid-row: 3;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    body:has(.aporia-dossier) .aporia-nav-link {
-        flex: 1 1 auto !important;
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-start;
-        text-align: start;
-    }
-
-    body:has(.aporia-dossier) .aporia-nav-link span {
-        white-space: normal;
-    }
-
-    body:has(.aporia-dossier) .aporia-celestial-nav:nth-child(odd) ul { inset-inline: 0 auto; }
-    body:has(.aporia-dossier) .aporia-celestial-nav:nth-child(even) ul { inset-inline: auto 0; }
-}

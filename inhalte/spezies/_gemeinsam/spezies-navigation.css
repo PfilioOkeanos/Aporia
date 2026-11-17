@@ -1,0 +1,192 @@
+.species-navigation-stack {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    min-width: 0;
+}
+
+.species-navigation-stack .archive-bar,
+.species-section-nav .archive-bar {
+    position: static;
+    min-width: 0;
+    backdrop-filter: none;
+}
+
+.species-navigation-stack .aporia-topbar {
+    position: relative;
+}
+
+.species-navigation-stack :is(.aporia-celestial-disclosure, .aporia-content-disclosure) {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.species-navigation-stack .archive-bar nav,
+.species-section-nav .archive-bar nav {
+    min-width: 0;
+    overscroll-behavior-inline: contain;
+}
+
+.species-archive > .aporia-auto-page-frame:has(> .species-section-nav) {
+    --species-nav-width: clamp(10.5rem, 13vw, 14rem);
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) var(--species-nav-width);
+    grid-template-areas: "content species-nav";
+}
+
+.species-archive > .aporia-auto-page-frame:has(> .species-section-nav):has(> [data-aporia-sidebar]:not([hidden])) {
+    grid-template-columns: var(--sidebar-width, 260px) minmax(0, 1fr) var(--species-nav-width);
+    grid-template-areas: "sidebar content species-nav";
+}
+
+.species-archive > .aporia-auto-page-frame > [data-aporia-sidebar] { grid-area: sidebar; }
+.species-archive > .aporia-auto-page-frame > main { grid-area: content; }
+
+.species-section-nav {
+    grid-area: species-nav;
+    align-self: start;
+    position: sticky;
+    top: calc(var(--aporia-topbar-height, 120px) + 1rem);
+    min-width: 0;
+    max-height: calc(100dvh - var(--aporia-topbar-height, 120px) - 2rem);
+    margin: 1rem .75rem 1rem 0;
+    overflow: auto;
+    overscroll-behavior: contain;
+}
+
+.species-section-nav .archive-bar {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: .4rem;
+    padding: .65rem;
+    border-radius: .75rem;
+}
+
+.species-section-nav .archive-bar :is(.wordmark, .archive-link, .species-badge) {
+    min-width: 0;
+    max-width: 100%;
+    white-space: normal;
+    overflow-wrap: anywhere;
+}
+
+.species-section-nav .archive-bar .wordmark { font-size: 1.15rem; }
+.species-section-nav .archive-bar .wordmark img { max-width: 100%; height: auto; }
+.species-section-nav .archive-bar .species-badge { border: 0; padding: 0; }
+.species-section-nav .archive-bar nav { display: grid; overflow: visible; }
+
+.species-section-nav .archive-bar nav > a {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    min-width: 0;
+    padding: .5rem .45rem;
+    border-radius: .3rem;
+    font-size: .9rem;
+    text-align: start;
+    white-space: normal;
+    overflow-wrap: anywhere;
+}
+
+html:has(.species-navigation-stack) {
+    scroll-padding-top: calc(var(--aporia-topbar-height, 120px) + 1rem);
+}
+
+.species-archive > .aporia-auto-page-frame > main {
+    container: species-content / inline-size;
+}
+
+@container species-content (max-width: 1150px) {
+    .card-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .myko-layout { grid-template-columns: minmax(0, 1fr) minmax(12rem, 16rem); }
+    .myko-index {
+        position: static;
+        grid-column: 1 / -1;
+        display: flex;
+        flex-wrap: wrap;
+        gap: .2rem .8rem;
+        align-items: center;
+    }
+    .myko-index h2 { margin: 0; font-size: 1rem; }
+}
+
+@container species-content (max-width: 1100px) {
+    .wf-bio-layout {
+        grid-template-columns: minmax(0, 1fr) minmax(13rem, 27%);
+        grid-template-areas: "title title" "nav nav" "overview facts" "detail detail";
+    }
+    .wf-bio-nav { display: flex; flex-wrap: wrap; gap: .4rem 1rem; align-items: center; }
+    .wf-bio-nav h2 { margin: 0; }
+    .wf-bio-lead { grid-template-columns: minmax(0, 28%) minmax(0, 1fr); }
+    .wf-bio-lead figure { grid-column: 1 / -1; }
+    .wf-bio-lead figure img { max-height: 11rem; }
+}
+
+@container species-content (max-width: 480px) {
+    .wf-bio-lead { grid-template-columns: minmax(0, 1fr); }
+}
+
+@container species-content (max-width: 850px) {
+    .myko-layout, .topic-layout { grid-template-columns: minmax(0, 1fr); }
+    .myko-facts { grid-row: 2; }
+    .human-grid[aria-label="Speziesprofil"], .human-grid-secondary {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@container species-content (max-width: 730px) {
+    .wf-bio-layout {
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-areas: "title" "nav" "overview" "facts" "detail";
+    }
+    .wf-bio-detail-grid, .wf-bio-detail-grid .wf-bio-card,
+    .wf-hero, .wf-history, .gallery-layout, .model { grid-template-columns: minmax(0, 1fr); }
+    .card-grid, .media-cards, .media-cards.videos { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@container species-content (max-width: 480px) {
+    .human-hero, .human-grid[aria-label="Speziesprofil"], .human-grid-secondary {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+@media (max-width: 1100px) {
+    .species-archive > .aporia-auto-page-frame:has(> .species-section-nav) {
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-areas: "species-nav" "content";
+        grid-template-rows: auto 1fr;
+    }
+
+    .species-archive > .aporia-auto-page-frame:has(> .species-section-nav):has(> [data-aporia-sidebar]:not([hidden])) {
+        grid-template-columns: var(--sidebar-width, 260px) minmax(0, 1fr);
+        grid-template-areas: "sidebar species-nav" "sidebar content";
+    }
+
+    .species-section-nav {
+        position: static;
+        max-height: none;
+        margin: 1rem .75rem .5rem;
+        overflow: visible;
+    }
+
+    .species-section-nav .archive-bar nav {
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, 7rem), 1fr));
+    }
+}
+
+@media (max-width: 760px) {
+    .species-navigation-stack { position: relative; }
+    html:has(.species-navigation-stack) { scroll-padding-top: 1rem; }
+
+    .species-archive > .aporia-auto-page-frame,
+    .species-archive > .aporia-auto-page-frame:has(> .species-section-nav) { display: block; }
+    .species-archive > .aporia-auto-page-frame > #aporia-sidebar-host[data-sidebar-auto="true"] {
+        position: static;
+        width: 100%;
+        height: auto;
+    }
+    .species-archive > .aporia-auto-page-frame .aporia-sidebar {
+        position: static;
+        height: min(25vh, 13rem);
+    }
+}

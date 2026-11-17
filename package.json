@@ -2,7 +2,8 @@
   "name": "aporia-sternenkarte",
   "private": true,
   "scripts": {
-    "sternenkarte": "node Menüs/adapter/Sternenkarte/3D-Modelle/lokal-server.mjs"
+    "sternenkarte": "node Menüs/adapter/Sternenkarte/3D-Modelle/lokal-server.mjs",
+    "assets:index": "node scripts/build-asset-catalog.mjs"
   },
   "dependencies": {
     "three": "0.180.0"

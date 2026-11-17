@@ -1,0 +1,156 @@
+@import url("../hauptseite/Spezies.css");
+
+.arch-subpage {
+    --aporia-page-tint: #9d75bd;
+    --aporia-page-glass-light: #30233e;
+    --aporia-page-glass-dark: #191526;
+}
+.arch-subpage .architektoiden-frame {
+    background: radial-gradient(ellipse at 55% 13%, #292136, transparent 70%), #14101b;
+}
+.arch-subpage .arch-layout {
+    grid-template-columns: minmax(0, 1fr) clamp(8.8rem, 10cqi, 10.3rem);
+    grid-template-areas: "content rail";
+}
+.arch-sub-content { grid-area: content; min-width: 0; display: grid; gap: .8rem; }
+.arch-subpage .arch-panel {
+    background: linear-gradient(145deg, #221d2b, #17141a 73%) padding-box,
+        linear-gradient(135deg, #edd2a2, #725a53 37%, #ab845b 75%, #dec292) border-box;
+}
+.arch-subpage .arch-rail a[aria-current] {
+    background: linear-gradient(120deg, #765399, #32253c);
+    border-color: #dabc9f;
+}
+
+.arch-subpage .arch-sub-hero {
+    grid-area: auto;
+    min-height: clamp(16rem, 24cqi, 26rem);
+}
+.arch-sub-hero > div {
+    background: linear-gradient(90deg, #151122f0, #151122ad 43%, #15112213 78%);
+}
+.arch-sub-hero > div p:last-child { max-width: 44ch; }
+.arch-subpage .arch-sub-hero img {
+    width: 82%;
+    mask-image: linear-gradient(90deg, transparent 2%, #000 36%);
+}
+
+.arch-jumps {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: .4rem .75rem;
+    padding: .55rem .8rem;
+    font-size: .87rem;
+}
+.arch-card-group h2 {
+    margin-bottom: .55rem;
+    padding-bottom: .25rem;
+    border-bottom: 1px solid #b98b5b77;
+}
+.arch-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 13.3rem), 1fr));
+    align-items: stretch;
+    gap: .65rem;
+}
+.arch-dossier-card { padding: .72rem; }
+.arch-dossier-card h3 { color: var(--arch-gold); margin: 0 0 .35rem; font: 500 1.04rem/1.3 Georgia, serif; }
+.arch-dossier-card p { font-size: .92rem; }
+.arch-dossier-card img {
+    width: 100%;
+    aspect-ratio: 2.25;
+    object-fit: cover;
+    margin-bottom: .45rem;
+    border-radius: .5rem;
+    mask-image: linear-gradient(90deg, transparent, #000 6% 94%, transparent),
+        linear-gradient(0deg, transparent, #000 9% 94%, transparent);
+    mask-composite: intersect;
+}
+.arch-timeline, .arch-conclusion, .arch-gallery, .arch-media-panel { padding: clamp(.7rem, 1.3cqi, 1.05rem); }
+.arch-timeline ol {
+    display: flex;
+    flex-wrap: wrap;
+    padding: .4rem 0 0;
+    margin: 0;
+    list-style: none;
+    counter-reset: arch-phase;
+}
+.arch-timeline li {
+    counter-increment: arch-phase;
+    flex: 1 1 7.5rem;
+    border-top: 1px solid #d7a77999;
+    padding: .4rem;
+    text-align: center;
+}
+.arch-timeline li::before {
+    content: counter(arch-phase);
+    display: block;
+    width: 1.5rem;
+    margin: 0 auto .25rem;
+    border: 1px solid #c6a278;
+    border-radius: 50%;
+    background: #3d2c51;
+    color: var(--arch-gold);
+}
+.arch-conclusion {
+    display: grid;
+    grid-template-columns: minmax(0, .9fr) minmax(0, 1fr) auto;
+    align-items: center;
+    gap: .75rem;
+}
+.arch-conclusion img { width: 100%; border-radius: .45rem; }
+.arch-conclusion p { margin-top: .3rem; }
+.arch-conclusion .arch-action { margin: 0; justify-self: start; }
+.arch-subpage :is(.arch-card-group, .arch-timeline, .arch-media-panel, .arch-gallery):target {
+    border-color: #e2bd83;
+}
+
+.arch-gallery h2, .arch-media-panel h2 { padding-bottom: .35rem; margin-bottom: .55rem; border-bottom: 1px solid #bd94715e; }
+.arch-gallery-grid, .arch-media-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: .75rem; align-items: start; }
+.arch-gallery-feature { margin: 0; min-width: 0; }
+.arch-gallery :is(button,select), .arch-media-panel :is(button,select), .arch-dossier dialog button {
+    min-width: 0;
+    border: 1px solid #936d74;
+    border-radius: .4rem;
+    background: #292036;
+    color: inherit;
+    font: inherit;
+}
+.arch-gallery button, .arch-media-panel button, .arch-dossier dialog button { cursor: pointer; }
+.arch-gallery :is(button,select):focus-visible, .arch-dossier dialog button:focus-visible {
+    outline: 2px solid var(--arch-gold);
+    outline-offset: 2px;
+}
+.arch-gallery button[aria-pressed="true"] { border-color: #f4c794; box-shadow: 0 0 .5rem #c88add88; }
+.arch-gallery button:not(.control) { display: block; width: 100%; overflow: hidden; padding: 0; }
+.arch-gallery .feature-open { cursor: zoom-in; }
+.arch-gallery .feature-open img { width: 100%; aspect-ratio: 2.1; object-fit: contain; background: #14101c; }
+.arch-gallery .control, .arch-dossier dialog .control { padding: .18rem .52rem; }
+.arch-gallery-controls { display: flex; gap: .45rem; align-items: center; justify-content: space-between; padding-top: .4rem; }
+.arch-gallery-controls output { min-width: 0; text-align: center; overflow-wrap: anywhere; font-size: .88rem; }
+.arch-thumbnails { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: .4rem; }
+.arch-thumbnails img { width: 100%; aspect-ratio: 1.65; object-fit: cover; }
+.arch-gallery label { display: grid; padding-top: .4rem; }
+.arch-gallery select { width: 100%; padding: .3rem; }
+.arch-media-panel :is(video,audio) { max-width: 100%; }
+.arch-media-panel .media-player-card + .media-player-card { margin-top: .65rem; }
+.arch-media-panel .media-player-card h3 { margin-top: 0; color: var(--arch-gold); font-size: 1rem; }
+.arch-media-panel.asset-catalog { margin: 0; }
+.arch-media-panel .asset-card { --edge: #936d74; --glow: #d9a7ed; background: #292036; }
+.arch-media-panel .asset-carousel-layout { grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr)); }
+.arch-media-panel .turntable-stage { margin: .3rem auto; }
+.arch-dossier dialog:not(.gallery-fullscreen) { max-width: 94vw; color: var(--arch-ink); background: #1d172a; }
+
+@container (max-width: 915px) {
+    .arch-subpage .arch-layout {
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-areas: "rail" "content";
+    }
+}
+@container (max-width: 585px) {
+    .arch-conclusion, .arch-gallery-grid, .arch-media-grid { grid-template-columns: minmax(0,1fr); }
+}
+@media (min-width: 1280px) {
+    .arch-subpage .arch-sub-hero { min-height: clamp(22rem, 28cqi, 27rem); align-items: end; }
+}

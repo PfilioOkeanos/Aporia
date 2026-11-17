@@ -1,0 +1,216 @@
+.technoiden {
+    --techno-gold: #f7cd92;
+    --techno-ink: #f6eadd;
+    --aporia-page-tint: #e69455;
+    --aporia-page-glass-light: #39251f;
+    --aporia-page-glass-dark: #1b171a;
+    margin: 0;
+    color: var(--techno-ink);
+    background: #141015;
+    font: 1rem/1.55 Georgia, serif;
+}
+
+.techno-frame {
+    min-height: calc(100dvh - var(--aporia-topbar-height, 78px));
+    display: flex;
+    background: radial-gradient(ellipse at 54% 8%, #4a2827, transparent 68%),
+        linear-gradient(#171316 65%, #2d1918);
+}
+
+.technoiden .aporia-sidebar::after {
+    background: url("../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Technoiden/hauptseite/seitenleiste-vulkanstadt.jpg") center 70% / cover no-repeat;
+    mask-image: linear-gradient(transparent, #000 23%);
+}
+
+.techno-dossier {
+    min-width: 0;
+    flex: 1;
+    container-type: inline-size;
+    padding: clamp(.6rem, 1.35vw, 1.4rem);
+    background: linear-gradient(to bottom, #141015, #14101535 53%, #14101533),
+        url("../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Technoiden/hauptseite/glutlandschaft.jpg") center bottom / 100% auto no-repeat;
+}
+
+.techno-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) clamp(8.7rem, 11vw, 11rem);
+    grid-template-areas: "hero rail" "content rail";
+    gap: .85rem;
+    align-items: start;
+}
+
+.techno-dossier :is(h1, h2, p, figure, dl, dd) { margin: 0; }
+.techno-dossier :is(a, h1, h2) { overflow-wrap: break-word; }
+.techno-dossier a { color: var(--techno-gold); }
+.techno-dossier :is(a, summary):focus-visible { outline: 2px solid #ffe5af; outline-offset: 2px; }
+.techno-dossier [id] { scroll-margin-top: calc(var(--aporia-topbar-height, 78px) + .8rem); }
+.techno-dossier img { display: block; max-width: 100%; height: auto; }
+
+.techno-panel {
+    box-sizing: border-box;
+    min-width: 0;
+    border: 1px solid transparent;
+    border-radius: .85rem;
+    background: linear-gradient(155deg, #1d191d, #211715) padding-box,
+        linear-gradient(145deg, #e5a969, #644b3b 35%, #9b603e 72%, #ffc08b) border-box;
+    box-shadow: inset 0 1px 6px #e6955240, 0 .3rem .8rem #0006;
+}
+
+.techno-hero {
+    grid-area: hero;
+    isolation: isolate;
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(0, .85fr) minmax(0, 1.1fr) minmax(0, 1.15fr);
+    align-items: center;
+    gap: clamp(.45rem, 1.45cqi, 1.6rem);
+    min-height: 23rem;
+    border-block: 1px solid #ba805b8c;
+    border-radius: .8rem;
+    background: linear-gradient(100deg, #23181e40, #1d151be6 42%, #3220278c),
+        url("../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Technoiden/hauptseite/hoehlenkolonie.jpg") center / cover;
+}
+
+.techno-dossier .techno-portrait {
+    width: 100%;
+    align-self: stretch;
+    height: 100%;
+    max-height: 28rem;
+    object-fit: cover;
+    object-position: 53% center;
+    mask-image: linear-gradient(90deg, #000 72%, transparent), linear-gradient(0deg, transparent, #000 17% 92%, transparent);
+    mask-composite: intersect;
+}
+
+.techno-intro { min-width: 0; text-align: center; padding-block: 1rem; }
+.techno-dossier .techno-kicker {
+    color: var(--techno-gold);
+    font-size: .72rem;
+    line-height: 1.4;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+}
+.techno-intro h1 {
+    margin: .55rem 0 .65rem;
+    font-size: clamp(2rem, 3.55cqi, 4.7rem);
+    font-weight: 500;
+    line-height: 1.1;
+    text-transform: uppercase;
+    letter-spacing: .065em;
+    color: #ffe3b9;
+    text-shadow: 0 2px 7px #bd661c90;
+}
+.techno-dossier .techno-subtitle {
+    padding-top: .6rem;
+    border-top: 1px solid #d19861af;
+    margin-bottom: .55rem;
+    color: #ffe4bb;
+    font-size: clamp(1.04rem, 1.65cqi, 1.6rem);
+}
+.techno-dossier .techno-feature { padding: .35rem; margin-inline-end: .6rem; }
+.techno-feature img, .techno-landscape, .techno-history > img {
+    width: 100%;
+    border-radius: .5rem;
+}
+.techno-feature figcaption { text-align: center; padding: .35rem .2rem .1rem; font-size: .8rem; }
+
+.techno-rail { grid-area: rail; padding: .75rem; text-align: center; }
+.techno-dossier .techno-rail-title { margin: .18rem 0 .65rem; font-size: 1.14rem; color: var(--techno-gold); }
+.techno-rail nav { display: grid; gap: .17rem; text-align: left; }
+.techno-rail nav a {
+    display: block;
+    padding: .27rem .45rem;
+    border: 1px solid transparent;
+    border-bottom-color: #bc876044;
+    border-radius: .35rem;
+    color: var(--techno-ink);
+    line-height: 1.4;
+    text-decoration: none;
+}
+.techno-rail nav a:is(:hover, [aria-current]) {
+    border-color: #e0a778;
+    background: linear-gradient(120deg, #9b532a9e, #48272438);
+    color: #fff2d8;
+}
+
+.techno-content { grid-area: content; min-width: 0; display: grid; gap: .85rem; }
+.techno-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 13.3rem), 1fr)); gap: .75rem; }
+.techno-card, .techno-history, .techno-placeholder { padding: clamp(.7rem, 1.2cqi, 1.1rem); }
+.techno-dossier h2 { color: var(--techno-gold); font: 500 1.2rem/1.25 Georgia, serif; }
+.techno-card h2 {
+    margin-bottom: .65rem;
+    padding-bottom: .4rem;
+    border-bottom: 1px solid #ae775367;
+}
+.techno-card h2::before { content: "◇"; margin-inline-end: .5rem; color: #f39456; }
+.techno-card :is(dl, ul, p), .techno-history > p { font-size: .91rem; }
+.techno-card dl > div { display: grid; grid-template-columns: minmax(0,.9fr) minmax(0,1.1fr); gap: .45rem; }
+.techno-card dt { color: #e4bf98; }
+.techno-card ul { list-style: none; margin: 0; padding: 0; }
+.techno-card :is(dl > div, li) { border-bottom: 1px solid #be885239; padding-block: .38rem; }
+.techno-facts li { display: grid; gap: .15rem; }
+.techno-facts strong { color: #ffe0b9; }
+.techno-community li { display: grid; grid-template-columns: minmax(3.5rem, 39%) minmax(0,1fr); align-items: center; gap: .55rem; }
+.techno-community img { width: 100%; border-radius: .25rem; }
+.techno-dossier .techno-card p { margin-top: .58rem; }
+.techno-action {
+    display: inline-flex;
+    gap: .45rem;
+    align-items: center;
+    justify-self: start;
+    margin-top: .55rem;
+    padding: .25rem .65rem;
+    border: 1px solid #c19265;
+    border-radius: 1.5rem;
+    text-decoration: none;
+}
+.techno-action:hover { background: #5d3828; }
+.techno-history {
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, .65fr) minmax(0, 1.25fr) auto;
+    gap: .75rem;
+    align-items: center;
+}
+.techno-history h2 { margin-top: .2rem; }
+.techno-history .techno-action { margin: 0; }
+.techno-placeholder p { margin-top: .32rem; }
+.techno-placeholder:target { border-color: #f0aa65; }
+
+@container (max-width: 1075px) {
+    .techno-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@container (max-width: 940px) {
+    .techno-layout {
+        grid-template-columns: minmax(0,1fr);
+        grid-template-areas: "rail" "hero" "content";
+    }
+    .techno-rail nav { display: flex; flex-wrap: wrap; justify-content: center; }
+    .techno-rail .techno-kicker, .techno-dossier .techno-rail-title { display: none; }
+    .techno-hero { min-height: 19rem; }
+}
+@container (max-width: 730px) {
+    .techno-hero { grid-template-columns: minmax(0,.75fr) minmax(0,1fr); }
+    .techno-intro { padding-inline-end: .6rem; }
+    .techno-dossier .techno-feature { grid-column: 1 / -1; margin: .15rem .7rem .7rem; }
+    .techno-history { grid-template-columns: minmax(0,1fr) minmax(0,1fr); }
+}
+@container (max-width: 450px) {
+    .techno-cards { grid-template-columns: minmax(0, 1fr); }
+    .techno-hero { grid-template-columns: minmax(0,1fr); }
+    .techno-intro { grid-row: 1; padding-inline: .75rem; }
+    .techno-dossier .techno-portrait {
+        max-height: 17rem;
+        object-position: 50% 40%;
+        mask-image: linear-gradient(0deg, transparent, #000 16% 86%, transparent);
+    }
+    .techno-history { grid-template-columns: minmax(0,1fr); }
+    .techno-rail nav a { font-size: .89rem; }
+}
+
+@media (max-width: 760px) {
+    .techno-frame { flex-direction: column; }
+    .techno-frame > #aporia-sidebar-host { flex: 0 0 auto; width: 100%; }
+    .techno-frame .aporia-sidebar { position: relative; top: auto; max-height: 42dvh; }
+    .techno-frame .aporia-sidebar::after { display: none; }
+}

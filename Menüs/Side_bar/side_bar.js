@@ -19,9 +19,56 @@ import {
 /* 02 - SIDEBAR-PLATZHALTER                      */
 /* ============================================= */
 
-const sidebarHost = document.querySelector(
-    "[data-aporia-sidebar]"
-);
+function ensureSidebarHost() {
+    let host = document.querySelector("[data-aporia-sidebar]");
+    if (host || !document.querySelector("[data-aporia-topbar]")) return host;
+
+    host = document.createElement("div");
+    host.dataset.aporiaSidebar = "";
+    host.dataset.sidebarAuto = "true";
+
+    const pageFrame = document.querySelector(".aporia-page-frame");
+    const main = document.querySelector("main");
+    if (pageFrame) {
+        pageFrame.insertBefore(host, pageFrame.firstChild);
+    } else if (main?.parentNode) {
+        const frame = document.createElement("div");
+        frame.className = "aporia-auto-page-frame";
+        main.parentNode.insertBefore(frame, main);
+        frame.append(host, main);
+    } else {
+        document.body.append(host);
+    }
+
+    return host;
+}
+
+const sidebarHost = ensureSidebarHost();
+
+const savedSidebarWidth = (() => {
+    try {
+        return Number(window.localStorage.getItem("aporia.sidebar.width")) || 260;
+    } catch {
+        return 260;
+    }
+})();
+if (savedSidebarWidth >= 210 && savedSidebarWidth <= 440) {
+    document.documentElement.style.setProperty("--sidebar-width", savedSidebarWidth + "px");
+}
+
+
+function ensureSidebarStyles() {
+    const stylesheet = new URL("./Side_bar.css", import.meta.url).href;
+    const existing = [...document.querySelectorAll('link[rel="stylesheet"]')]
+        .some(link => link.href === stylesheet);
+    if (existing) return;
+    const link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.href = stylesheet;
+    document.head.append(link);
+}
+
+ensureSidebarStyles();
 
 
 /* ============================================= */
@@ -35,6 +82,15 @@ function populatePageDetails() {
     if (!main) return;
 
     const seen = new Set();
+    const pageTitle = main.querySelector("h1");
+    if (pageTitle) {
+        if (!pageTitle.id) pageTitle.id = "aporia-current-page-title";
+        const titleLink = document.createElement("a");
+        titleLink.href = "#" + pageTitle.id;
+        titleLink.textContent = pageTitle.textContent.trim();
+        links.append(titleLink);
+        seen.add(titleLink.href);
+    }
     function addLink(href, label, route) {
         const key = route || href;
         if (!label || seen.has(key)) return;
@@ -62,6 +118,65 @@ function populatePageDetails() {
     }
 
     section.hidden = links.childElementCount === 0;
+}
+
+function initializeSidebarResize(host) {
+    const handle = host.querySelector(".aporia-sidebar-resizer");
+    if (!handle) return;
+
+    const minimumWidth = 210;
+    const maximumWidth = 440;
+    const preference = "aporia.sidebar.width";
+    let dragState = null;
+
+    function setWidth(width, save = false) {
+        const availableMaximum = Math.min(maximumWidth, Math.max(minimumWidth, window.innerWidth * 0.45));
+        const nextWidth = Math.round(Math.max(minimumWidth, Math.min(availableMaximum, width)));
+        document.documentElement.style.setProperty("--sidebar-width", nextWidth + "px");
+        handle.setAttribute("aria-valuenow", String(nextWidth));
+        if (save) {
+            try { window.localStorage.setItem(preference, String(nextWidth)); } catch {}
+        }
+    }
+
+    function finishResize(event) {
+        if (!dragState || event.pointerId !== dragState.pointerId) return;
+        setWidth(host.getBoundingClientRect().width, true);
+        dragState = null;
+        document.body.classList.remove("is-resizing-sidebar");
+        if (handle.hasPointerCapture(event.pointerId)) handle.releasePointerCapture(event.pointerId);
+    }
+
+    handle.addEventListener("pointerdown", event => {
+        if (window.matchMedia("(max-width: 760px)").matches) return;
+        event.preventDefault();
+        const currentWidth = host.getBoundingClientRect().width;
+        dragState = { pointerId: event.pointerId, startX: event.clientX, width: currentWidth };
+        handle.setPointerCapture(event.pointerId);
+        document.body.classList.add("is-resizing-sidebar");
+    });
+
+    handle.addEventListener("pointermove", event => {
+        if (!dragState || event.pointerId !== dragState.pointerId) return;
+        setWidth(dragState.width + event.clientX - dragState.startX);
+    });
+
+    handle.addEventListener("pointerup", finishResize);
+    handle.addEventListener("pointercancel", finishResize);
+
+    handle.addEventListener("keydown", event => {
+        const currentWidth = host.getBoundingClientRect().width;
+        if (event.key === "ArrowLeft" || event.key === "ArrowRight") {
+            event.preventDefault();
+            setWidth(currentWidth + (event.key === "ArrowRight" ? 16 : -16), true);
+        } else if (event.key === "Home") {
+            event.preventDefault();
+            setWidth(minimumWidth, true);
+        } else if (event.key === "End") {
+            event.preventDefault();
+            setWidth(maximumWidth, true);
+        }
+    });
 }
 
 async function loadAporiaSidebar() {
@@ -114,6 +229,7 @@ async function loadAporiaSidebar() {
         populatePageDetails();
         applyAporiaRoutes(sidebarHost);
         initializeSidebarDetails(sidebarHost);
+        initializeSidebarResize(sidebarHost);
 
 
         /* ========================================= */
@@ -199,7 +315,7 @@ async function loadAporiaSidebar() {
                 "a[data-route]"
             ).forEach(link => {
 
-                if (link.dataset.route === currentPage) {
+                if (link.dataset.route === currentPage || link.dataset.route === document.body.dataset.section) {
 
                     link.classList.add("is-active");
 

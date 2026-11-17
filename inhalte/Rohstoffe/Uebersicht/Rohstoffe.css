@@ -1,29 +1,177 @@
 body[data-page="rohstoffe"] {
   margin: 0;
-  background: #081610;
+  background: #101419;
 }
 
 .resource-frame { display: flex; }
+
 .resource-main {
+  --resource-text: #f6ebd9;
+  --resource-muted: #d2c2ae;
+  --resource-gold: #edc38b;
+  --resource-edge: #9b7d5b96;
+  --resource-panel: linear-gradient(145deg, #171c20f2, #101315f5 65%, #25201bd9);
   flex: 1;
   min-width: 0;
   min-height: 100vh;
-  color: #f5e8cd;
-  background: radial-gradient(ellipse at top right, #28433a, #081610 68%);
+  color: var(--resource-text);
+  font-family: Georgia, serif;
+  color-scheme: dark;
+  background:
+    linear-gradient(180deg, #0b101630 0, #0b0e11da 23rem, #100f10f7 52rem, #12100ee6),
+    url("../../../assets/bilder/Technologien/Übersichtsseite/Viktorianischer Laborarbeitsplatz mit grünen Hologrammen-2.png") center top / 100% auto no-repeat,
+    #101419;
 }
-.resource-shell { max-width: 1300px; margin-inline: auto; padding: clamp(1rem, 4vw, 4rem); }
-.resource-shell a { color: #f2cf84; }
-.resource-shell h1 { font-size: clamp(2rem, 5vw, 4.5rem); overflow-wrap: anywhere; }
-.resource-shell section { scroll-margin-top: 8rem; }
-.resource-shell [hidden] { display: none; }
-.resource-grid { display: grid; grid-template-columns: repeat(auto-fill,minmax(min(100%, 185px),1fr)); gap: 1.4rem; }
-.resource-card { text-align: center; }
+
+.resource-shell {
+  padding: clamp(.6rem, 1.1vw, 1.1rem) clamp(.4rem, .65vw, .85rem) 1.25rem;
+}
+.resource-shell *, .resource-shell *::before { box-sizing: border-box; }
+.resource-shell a { color: inherit; }
+.resource-shell :is(a, button, input, select, summary):focus-visible { outline: 2px solid #ffe1b6; outline-offset: 2px; }
+.resource-shell :is(input, select, button) {
+  min-width: 0;
+  border: 1px solid var(--resource-edge);
+  border-radius: .35rem;
+  padding: .44rem .55rem;
+  color: inherit;
+  background: #101317;
+  font: inherit;
+}
+.resource-shell button { cursor: pointer; }
+.resource-shell button:disabled { cursor: default; opacity: .4; }
+
+.resource-hero {
+  min-height: clamp(11rem, 18vw, 20rem);
+  display: grid;
+  align-items: center;
+  padding: clamp(1rem, 4vw, 4rem);
+  border: 1px solid var(--resource-edge);
+  border-radius: .8rem;
+  background: linear-gradient(90deg, #080b0eea 0%, #080b0eb0 36%, #1c17161c 78%);
+}
+.resource-hero nav { color: var(--resource-muted); font-size: .88rem; }
+.resource-hero h1 {
+  margin: .38rem 0;
+  font: 500 clamp(2.8rem, 5.5vw, 5.6rem)/1.04 Georgia, serif;
+  color: #fff0da;
+  text-shadow: 0 0 1.35rem #e8aa6d85, 0 2px 5px #110b08;
+}
+.resource-hero p { max-width: 42ch; margin: .7rem 0 0; line-height: 1.55; }
+
+.resource-workspace {
+  display: grid;
+  grid-template-columns: clamp(10rem, 12vw, 13rem) minmax(0, 1fr) clamp(11rem, 15vw, 16rem);
+  align-items: start;
+  gap: .85rem;
+  margin-top: .85rem;
+}
+.resource-panel, .resource-topic {
+  min-width: 0;
+  border: 1px solid var(--resource-edge);
+  border-radius: .72rem;
+  background: var(--resource-panel);
+  box-shadow: 0 .3rem 1rem #0007;
+}
+.resource-panel h2 { margin: 0; font-size: 1.12rem; font-weight: 500; }
+.resource-filters { padding: .8rem; }
+.resource-filters h2 { padding-bottom: .5rem; border-bottom: 1px solid var(--resource-edge); }
+#resource-groups { margin-block: .4rem .9rem; }
+#resource-groups a {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: .3rem;
+  padding: .45rem .35rem;
+  border-radius: .3rem;
+  text-decoration: none;
+  font-size: .85rem;
+}
+#resource-groups a span + span { color: var(--resource-gold); font-variant-numeric: tabular-nums; }
+#resource-groups a:is(:hover, [aria-current="true"]) { background: linear-gradient(90deg, #9566378a, #95663722); }
+#resource-filters { display: grid; gap: .75rem; }
+#resource-filters input, #resource-filters select { width: 100%; scroll-margin-top: 6rem; }
+.resource-shell label { display: grid; gap: .24rem; color: var(--resource-muted); font-size: .86rem; }
+
+.resource-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: .65rem 1rem;
+  padding: .65rem .75rem;
+  border-bottom: 1px solid var(--resource-edge);
+}
+#resource-list-title { scroll-margin-top: 6rem; }
+#resource-status { margin: .25rem 0 0; color: var(--resource-muted); font-size: .82rem; }
+.resource-controls, .resource-views { display: flex; flex-wrap: wrap; align-items: end; gap: .35rem; }
+.resource-controls input { width: min(100%, 11rem); }
+.resource-controls button[aria-pressed="true"], .resource-pagination button[aria-current="page"] {
+  border-color: var(--resource-gold);
+  background: linear-gradient(#875e37, #5c4027);
+}
+
+.resource-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 9.25rem), 1fr));
+  align-items: stretch;
+  gap: .55rem;
+  padding: .65rem;
+}
+.resource-card {
+  min-width: 0;
+  border: 1px solid #b7926259;
+  border-radius: .55rem;
+  background: linear-gradient(145deg, #181c21, #101113);
+  overflow: hidden;
+}
+.resource-card:hover, .resource-card:focus-within { border-color: var(--resource-gold); background: #222224; }
+.resource-card a { display: block; height: 100%; text-decoration: none; }
+.resource-card a:focus-visible { outline-offset: -2px; }
 .resource-card img {
-  width: min(100%, 215px);
-  aspect-ratio: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2 / 3;
   object-fit: cover;
-  border-radius: 50%;
-  border: 2px solid #b69a60;
-  box-shadow: 0 0 0 5px #b69a6026;
 }
-.resource-card h3 { overflow-wrap: anywhere; }
+.resource-card-copy { padding: .5rem .58rem .6rem; overflow-wrap: anywhere; }
+.resource-card h3 { margin: 0; font-size: 1.03rem; font-weight: 500; }
+.resource-card p { margin: .2rem 0 0; font-size: .8rem; line-height: 1.25; color: var(--resource-muted); }
+.resource-card p::before { content: "◆"; color: var(--resource-gold); font-size: .58rem; margin-right: .32rem; }
+.resource-grid[data-view="list"] { grid-template-columns: minmax(0, 1fr); }
+.resource-grid[data-view="list"] .resource-card a { display: grid; grid-template-columns: 4rem minmax(0, 1fr); align-items: center; }
+.resource-empty { grid-column: 1 / -1; padding-inline: .5rem; }
+.resource-pagination { display: flex; flex-wrap: wrap; justify-content: center; gap: .28rem; padding: 0 .65rem .7rem; }
+.resource-pagination:empty { display: none; }
+
+.resource-topics { display: grid; gap: .55rem; }
+.resource-topic {
+  --topic-art: none;
+  display: block;
+  overflow: hidden;
+  color: inherit;
+  background: linear-gradient(90deg, #0d1115fb 8%, #101317e8 44%, #14131831), var(--topic-art) right center / auto 100% no-repeat, #11161a;
+  text-decoration: none;
+}
+.resource-topics a, .resource-topic summary { padding: .75rem; min-height: 5.4rem; }
+.resource-topic summary { cursor: pointer; }
+.resource-topic:hover, .resource-topic:focus-within { border-color: var(--resource-gold); }
+.resource-topic strong { display: block; font-size: 1.18rem; font-weight: 500; color: #fff0da; }
+.resource-topic span, .resource-topic p { max-width: 22ch; display: block; margin-top: .3rem; font-size: .84rem; color: var(--resource-muted); line-height: 1.35; }
+.resource-topic p { max-width: none; margin: 0; padding: .65rem .75rem; background: #101419f4; }
+.topic-craft { --topic-art: url("../../../assets/bilder/Werkstatt & Herstellung/Übersichtsseite/fertigung-atelier.png"); }
+.topic-refine { --topic-art: url("../../../assets/bilder/Werkstatt & Herstellung/Übersichtsseite/produktionsverfahren-atelier.png"); }
+.topic-rarity { --topic-art: url("../../../assets/bilder/Rohstoffe/Schillernder Bismutkristall in Stufenform-85.png"); }
+.topic-origin { --topic-art: url("../../../assets/bilder/Himmelskörper/OzeanWelt/die-erde-aus-dem-all/hauptseite/die-erde-aus-dem-all-d7d0cada8d-vorschau.webp"); }
+.topic-use { --topic-art: url("../../../assets/bilder/Technologien/Übersichtsseite/Futuristische Präzisionsturbine mit smaragdgrünem Energiekern-3.png"); }
+
+@media (max-width: 74rem) {
+  .resource-workspace { grid-template-columns: clamp(10rem, 18vw, 13rem) minmax(0, 1fr); }
+  .resource-topics { grid-column: 1 / -1; grid-template-columns: repeat(auto-fit, minmax(min(100%, 10rem), 1fr)); }
+}
+@media (max-width: 44rem) {
+  .resource-workspace { grid-template-columns: minmax(0, 1fr); }
+  .resource-main { background-size: auto, auto 18rem, auto; }
+  .resource-grid { grid-template-columns: repeat(auto-fill, minmax(min(100%, 8.5rem), 1fr)); }
+}

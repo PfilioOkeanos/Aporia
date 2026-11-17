@@ -43,6 +43,103 @@
         }
       }
     },
+    "technoiden": {
+      "videos": {
+        "verhalten": {
+          "items": []
+        },
+        "lebensraum": {
+          "items": []
+        },
+        "mineralhuelle": {
+          "items": []
+        }
+      },
+      "audio": {
+        "vibration": {
+          "items": []
+        },
+        "uebersetzer": {
+          "items": []
+        }
+      },
+      "modell": {
+        "items": []
+      },
+      "rundum": {
+        "items": []
+      },
+      "assetverkauf": {
+        "items": [
+          {
+            "id": "technoiden-audio",
+            "species": "technoiden",
+            "type": "audio",
+            "title": "Technoiden-Audio",
+            "description": "Vibrationsmuster und Übersetzer-Signale.",
+            "previewCollections": [
+              "audio.vibration",
+              "audio.uebersetzer"
+            ]
+          },
+          {
+            "id": "technoiden-modelle",
+            "species": "technoiden",
+            "type": "3d",
+            "title": "Technoiden-Modelle",
+            "description": "Speziesmodelle und Körpervarianten.",
+            "previewCollections": [
+              "modell"
+            ]
+          }
+        ]
+      }
+    },
+    "architektoiden": {
+      "videos": {
+        "animationen": {
+          "items": []
+        },
+        "videos": {
+          "items": []
+        }
+      },
+      "audio": {
+        "strukturen": {
+          "items": []
+        }
+      },
+      "modell": {
+        "items": []
+      },
+      "rundum": {
+        "items": []
+      },
+      "assetverkauf": {
+        "items": [
+          {
+            "id": "architektoiden-audio",
+            "species": "architektoiden",
+            "type": "audio",
+            "title": "Strukturklänge",
+            "description": "Organische Resonanzen und Atmosphären.",
+            "previewCollections": [
+              "audio.strukturen"
+            ]
+          },
+          {
+            "id": "architektoiden-modelle",
+            "species": "architektoiden",
+            "type": "3d",
+            "title": "Bauformen und Strukturmodelle",
+            "description": "Lebende Architektur und ihre Varianten.",
+            "previewCollections": [
+              "modell"
+            ]
+          }
+        ]
+      }
+    },
     "waldfeen": {
       "videos": {
         "fortbewegung": {
@@ -187,7 +284,12 @@
         }
       },
       "modell": {
-        "items": []
+        "items": [
+          {
+            "title": "Elfe Nr. 1",
+            "src": "../../assets/Modelle/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Humanoide/Unterseiten/Medien/Elfe_NR1.fbx"
+          }
+        ]
       },
       "rundum": {
         "items": []
@@ -9616,6 +9718,38 @@
         "sterne-weisser-zwerg-mit-zarter-korona-412f27dbc200": {
           "src": "../../assets/bilder/Himmelsk%C3%B6rper/wei%C3%9Fezwerge/weisser-zwerg-mit-zarter-korona/hauptseite/weisser-zwerg-mit-zarter-korona-412f27dbc200.jpg",
           "alt": "Weißer Zwerg mit zarter Korona"
+        }
+      }
+    },
+    "medienarchiv": {
+      "video": {
+        "spezies_intro": {
+          "type": "video",
+          "src": "../../assets/videos/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Humanoide/Hauptseite/humanoiden%20(1080%20x%201620%20px)%20(1080%20x%20546%20px).mp4",
+          "poster": "../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Humanoide/Unterseiten/Medien/humanoid-00.png"
+        },
+        "mykonoiden_verhalten": {
+          "type": "video",
+          "src": "../../assets/videos/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Mykonoiden/verhalten/MiniMax_H3_00001_.mp4",
+          "poster": "../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Mykonoiden/Biologie/koerperaufbau.png"
+        }
+      },
+      "audio": {
+        "aeromorphen_kontaktruf": {
+          "type": "audio",
+          "src": "../../assets/audio/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Aeromorphen/kommunikation/aeromorphen-kontaktruf.wav"
+        },
+        "aeromorphen_warnruf": {
+          "type": "audio",
+          "src": "../../assets/audio/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Aeromorphen/kommunikation/aeromorphen-warnruf.wav"
+        },
+        "mykonoiden_begruessung": {
+          "type": "audio",
+          "src": "../../assets/audio/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Mykonoiden/koerpergeraeusche/mykonoiden_01_begruessung.wav"
+        },
+        "mykonoiden_kommunikation": {
+          "type": "audio",
+          "src": "../../assets/audio/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Mykonoiden/koerpergeraeusche/mykonoiden_02_kommunikation.wav"
         }
       }
     }

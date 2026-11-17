@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a1118">
+  <title>StoryEditor | Aporia Weltenarchiv</title>
+  <link rel="stylesheet" href="../../../Menüs/TopBar/Top_bar.css">
+  <link rel="stylesheet" href="./StoryEditor.css">
+  <script type="module" src="./StoryEditor.js"></script>
+</head>
+<body class="story-editor-page" data-page="story-editor" data-section="story-editor">
+  <div data-aporia-topbar></div>
+  <main class="story-editor-main" id="inhalt">
+    <header class="story-header">
+      <div>
+        <p class="story-kicker">APORIA · SCHREIBWERKSTATT</p>
+        <h1>StoryEditor</h1>
+        <p class="story-subtitle">Geschichten entwerfen, verzweigen und lokal sichern.</p>
+      </div>
+      <div class="story-header-actions">
+        <span id="save-status" class="save-status" role="status" aria-live="polite">Lokal gespeichert</span>
+        <button type="button" class="button button-secondary" id="versions-open">Versionen</button>
+        <button type="button" class="button button-secondary" id="export-markdown">Markdown</button>
+        <button type="button" class="button button-primary" id="export-json">JSON sichern</button>
+        <label class="button button-secondary import-button" for="import-file">Importieren</label>
+        <input id="import-file" type="file" accept=".json,.md,.markdown,text/markdown,application/json" hidden>
+      </div>
+    </header>
+
+    <div class="story-workspace">
+      <aside class="story-library" aria-label="Geschichten und Kapitel">
+        <div class="panel-heading">
+          <div><p class="panel-kicker">PROJEKT</p><h2>Geschichten</h2></div>
+          <button type="button" class="icon-button" id="story-new" aria-label="Neue Geschichte" title="Neue Geschichte">＋</button>
+        </div>
+        <label class="search-box">
+          <span aria-hidden="true">⌕</span>
+          <input type="search" id="story-search" placeholder="Geschichten, Kapitel, Text …" aria-label="Geschichten und Text durchsuchen">
+        </label>
+        <div id="search-results" class="search-results" hidden></div>
+
+        <div id="story-list" class="story-list" aria-label="Geschichten"></div>
+
+        <div class="chapter-heading">
+          <h3>Kapitel</h3>
+          <button type="button" class="icon-button" id="chapter-new" aria-label="Neues Kapitel" title="Neues Kapitel">＋</button>
+        </div>
+        <ol id="chapter-list" class="chapter-list" aria-label="Kapitel dieser Geschichte"></ol>
+
+        <details class="trash-section">
+          <summary>Papierkorb <span id="trash-count">0</span></summary>
+          <div id="trash-dropzone" class="trash-dropzone">Text oder Bild / Video hier ablegen</div>
+          <button type="button" id="trash-clear" class="trash-clear-button" disabled>Alles löschen</button>
+          <div id="trash-list" class="trash-list"></div>
+        </details>
+      </aside>
+
+      <section class="story-editor-panel" aria-label="Texteditor">
+        <div class="document-toolbar">
+          <div class="document-title-fields">
+            <label class="visually-hidden" for="story-title">Geschichtentitel</label>
+            <input id="story-title" class="story-title-input" value="" placeholder="Geschichtentitel">
+            <div class="chapter-title-row">
+              <label class="visually-hidden" for="chapter-title">Kapiteltitel</label>
+              <input id="chapter-title" class="chapter-title-input" value="" placeholder="Kapiteltitel">
+              <div class="chapter-move-buttons">
+                <button type="button" class="icon-button" id="chapter-up" aria-label="Kapitel nach oben verschieben" title="Nach oben">↑</button>
+                <button type="button" class="icon-button" id="chapter-down" aria-label="Kapitel nach unten verschieben" title="Nach unten">↓</button>
+                <button type="button" class="icon-button danger-button" id="chapter-delete" aria-label="Kapitel in den Papierkorb verschieben" title="Kapitel löschen">⌫</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="format-toolbar" role="toolbar" aria-label="Textformatierung">
+            <select id="format-block" aria-label="Absatzformat">
+              <option value="P">Text</option>
+              <option value="H1">Überschrift 1</option>
+              <option value="H2">Überschrift 2</option>
+              <option value="H3">Überschrift 3</option>
+              <option value="H4">Überschrift 4</option>
+              <option value="H5">Überschrift 5</option>
+              <option value="H6">Überschrift 6</option>
+            </select>
+            <span class="toolbar-divider" aria-hidden="true"></span>
+            <button type="button" data-command="bold" aria-label="Fett" title="Fett"><strong>B</strong></button>
+            <button type="button" data-command="italic" aria-label="Kursiv" title="Kursiv"><em>I</em></button>
+            <button type="button" data-command="insertUnorderedList" aria-label="Aufzählung" title="Aufzählung">•≡</button>
+            <button type="button" data-command="insertOrderedList" aria-label="Nummerierte Liste" title="Nummerierte Liste">1≡</button>
+            <button type="button" data-command="formatBlock" data-value="BLOCKQUOTE" aria-label="Zitat" title="Zitat">❝</button>
+            <button type="button" id="undo" aria-label="Rückgängig" title="Rückgängig">↶</button>
+            <button type="button" id="redo" aria-label="Wiederholen" title="Wiederholen">↷</button>
+            <span class="toolbar-spacer"></span>
+            <button type="button" class="insert-media-button" id="media-open">＋ Bild / Video</button>
+          </div>
+        </div>
+
+        <div id="editor-empty" class="editor-empty" hidden>Lege eine Geschichte oder ein Kapitel an, um loszuschreiben.</div>
+        <div id="story-editor" class="story-editor" contenteditable="true" role="textbox" aria-label="Geschichtentext" aria-multiline="true" spellcheck="true" data-placeholder="Deine Geschichte beginnt hier …"></div>
+        <footer class="editor-footer">
+          <span id="word-count">0 Wörter</span>
+          <span>Freie Fläche anklicken zum Schreiben · Linke Maustaste halten und Rahmen ziehen zum Auswählen · Auswahl über den Griff „Verschieben“ gemeinsam bewegen · einzelne Textfelder am Griff bewegen</span>
+        </footer>
+      </section>
+
+      <aside class="story-inspector" aria-label="Handlung und Entscheidungen">
+        <div class="panel-heading">
+          <div><p class="panel-kicker">HANDLUNGSWEGE</p><h2>Entscheidungen</h2></div>
+          <button type="button" class="icon-button" id="decision-new" aria-label="Entscheidung hinzufügen" title="Entscheidung hinzufügen">＋</button>
+        </div>
+        <p class="inspector-intro">Verknüpfe eine Szene mit alternativen Entscheidungen und Zielkapiteln.</p>
+        <div id="decision-list" class="decision-list"></div>
+
+        <section class="editor-help">
+          <h3>Lokale Speicherung</h3>
+          <p>Deine Geschichten bleiben in diesem Browser gespeichert. Sichere regelmäßig eine JSON-Datei für den Wechsel auf einen anderen Rechner.</p>
+        </section>
+      </aside>
+    </div>
+  </main>
+
+  <dialog id="versions-dialog" class="story-dialog">
+    <form method="dialog" class="dialog-shell">
+      <header class="dialog-header"><div><p class="panel-kicker">ÄNDERUNGSVERLAUF</p><h2>Versionen</h2></div><button class="icon-button" aria-label="Schließen">×</button></header>
+      <div id="version-list" class="version-list"></div>
+    </form>
+  </dialog>
+
+  <dialog id="media-dialog" class="story-dialog">
+    <form method="dialog" class="dialog-shell" id="media-form">
+      <header class="dialog-header"><div><p class="panel-kicker">ZENTRALES ASSET-SYSTEM</p><h2>Medium einfügen</h2></div><button class="icon-button" aria-label="Schließen">×</button></header>
+      <p class="dialog-copy">Wähle zuerst den Asset-Ordner und öffne dann die Unterordner bis zur gewünschten Datei.</p>
+      <label class="field-label" for="media-root">Asset-Ordner</label>
+      <select id="media-root" class="media-picker-select"><option value="">Ordner wird geladen …</option></select>
+      <div id="media-folders" class="media-folder-tree"></div>
+      <div class="media-path-output"><code id="media-selection-path">Noch kein Medium ausgewählt.</code><button type="button" id="media-path-copy" class="button button-secondary" disabled>Pfad kopieren</button></div>
+      <div id="media-preview" class="media-preview" aria-live="polite">Noch kein Medium ausgewählt.</div>
+      <div class="dialog-actions"><button type="button" class="button button-secondary" id="media-cancel">Abbrechen</button><button type="button" class="button button-primary" id="media-insert" disabled>Einfügen</button></div>
+    </form>
+  </dialog>
+</body>
+</html>

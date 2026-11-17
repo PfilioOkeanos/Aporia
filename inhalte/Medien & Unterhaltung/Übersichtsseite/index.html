@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07151b">
+  <meta name="description" content="Radiosender, Videos, Serien, Nachrichten und interaktive Medien im Aporia-Weltenarchiv.">
+  <title>Medien &amp; Unterhaltung | Aporia Weltenarchiv</title>
+  <link rel="stylesheet" href="../../../Menüs/TopBar/Top_bar.css">
+  <link rel="stylesheet" href="./Medien.css">
+  <script type="module" src="./Medien.js"></script>
+</head>
+<body class="media-page" data-page="inhalt-medien-und-unterhaltung">
+  <div data-aporia-topbar></div>
+  <main class="media-main" id="inhalt">
+    <header class="media-hero">
+      <img class="media-hero-image" src="../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Aeromorphen/Unterseiten/Medien/holografisches_medienarchiv.webp" alt="Holografisches Medienarchiv in einer futuristischen Umgebung" fetchpriority="high">
+      <div class="media-hero-shade"></div>
+      <div class="media-hero-copy"><p class="eyebrow">APORIA · WELTENARCHIV</p><h1>Medien &amp; Unterhaltung</h1><p>Radiosender · Videos · Serien · Nachrichten · Interaktive Medien</p><div class="sound-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+      <span class="media-coordinate">MEDIENARCHIV · M-10</span>
+    </header>
+
+    <nav class="media-shortcuts" aria-label="Medienbereiche">
+      <a data-route="inhalt-medien-und-unterhaltung-radiosender" href="#"><i>◖</i>Radiosender<span>→</span></a>
+      <a data-route="inhalt-medien-und-unterhaltung-fernsehsendungen" href="#"><i>▣</i>Fernsehsendungen<span>→</span></a>
+      <a data-route="inhalt-medien-und-unterhaltung-nachrichten" href="#"><i>▤</i>Nachrichten<span>→</span></a>
+      <a data-route="inhalt-medien-und-unterhaltung-musik" href="#"><i>♫</i>Musik<span>→</span></a>
+      <a data-route="inhalt-medien-und-unterhaltung-unterhaltung" href="#"><i>✦</i>Unterhaltung<span>→</span></a>
+    </nav>
+
+    <section class="player-grid" aria-label="Audio- und Videoplayer">
+      <article class="media-panel audio-panel">
+        <div class="panel-heading"><span class="panel-icon">◖</span><div><p class="eyebrow">AUDIOARCHIV · HÖRPROBEN</p><h2>Audio-Player</h2></div><span class="live-chip"><i></i>ARCHIV</span></div>
+        <p class="panel-intro">Wähle eine vorhandene Sprach- oder Kommunikationsaufnahme aus dem Projekt.</p>
+        <div class="audio-playlist" role="list" aria-label="Vorhandene Audioaufnahmen">
+          <button class="audio-track is-selected" type="button" data-audio-key="medienarchiv.audio.aeromorphen_kontaktruf" data-audio-title="Aeromorphen · Kontaktruf" role="listitem"><span class="track-symbol blue">◉</span><span class="track-info"><b>Aeromorphen · Kontaktruf</b><small>Kommunikation · WAV</small></span><span class="track-wave" aria-hidden="true">▂▅▃▇▅▂▆</span></button>
+          <button class="audio-track" type="button" data-audio-key="medienarchiv.audio.aeromorphen_warnruf" data-audio-title="Aeromorphen · Warnruf" role="listitem"><span class="track-symbol red">◉</span><span class="track-info"><b>Aeromorphen · Warnruf</b><small>Kommunikation · WAV</small></span><span class="track-wave red-wave" aria-hidden="true">▅▂▆▃▇▂▅</span></button>
+          <button class="audio-track" type="button" data-audio-key="medienarchiv.audio.mykonoiden_begruessung" data-audio-title="Mykonoiden · Begrüßung" role="listitem"><span class="track-symbol gold">✧</span><span class="track-info"><b>Mykonoiden · Begrüßung</b><small>Körpergeräusch · WAV</small></span><span class="track-wave gold-wave" aria-hidden="true">▃▇▂▅▃▆▂</span></button>
+          <button class="audio-track" type="button" data-audio-key="medienarchiv.audio.mykonoiden_kommunikation" data-audio-title="Mykonoiden · Kommunikation" role="listitem"><span class="track-symbol violet">✧</span><span class="track-info"><b>Mykonoiden · Kommunikation</b><small>Körpergeräusch · WAV</small></span><span class="track-wave violet-wave" aria-hidden="true">▆▃▇▂▅▃▆</span></button>
+        </div>
+        <div class="audio-now"><span class="audio-disc">♫</span><div><small>JETZT AUSGEWÄHLT</small><b data-audio-now-title>Aeromorphen · Kontaktruf</b></div></div>
+        <audio class="native-audio" id="archive-audio" controls preload="none" aria-label="Audioaufnahme abspielen" data-media-audio="medienarchiv.audio.aeromorphen_kontaktruf"></audio>
+        <small class="media-note">Die Audiodateien sind Hörproben aus vorhandenen Spezies-Assets, keine Live-Radiosendungen.</small>
+      </article>
+
+      <article class="media-panel video-panel">
+        <div class="panel-heading"><span class="panel-icon cyan">▣</span><div><p class="eyebrow">VIDEOARCHIV · VORHANDENER CLIP</p><h2 data-video-title>Humanoiden · Introclip</h2></div><span class="quality-chip">MP4</span></div>
+        <div class="video-frame"><video id="archive-video" controls playsinline preload="metadata" data-media-video="medienarchiv.video.spezies_intro" aria-label="Humanoiden Introclip abspielen"></video><span class="video-corner">APORIA · ARCHIVCLIP</span></div>
+        <div class="video-switcher" aria-label="Videoclips auswählen"><button type="button" class="video-choice is-selected" data-video-key="medienarchiv.video.spezies_intro" data-video-title="Humanoiden · Introclip"><img src="../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Humanoide/Unterseiten/Medien/humanoid-00.png" alt="" loading="lazy"><span><b>Humanoiden · Intro</b><small>Vorhandener Clip</small></span></button><button type="button" class="video-choice" data-video-key="medienarchiv.video.mykonoiden_verhalten" data-video-title="Mykonoiden · Verhaltensclip"><img src="../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Mykonoiden/Biologie/koerperaufbau.png" alt="" loading="lazy"><span><b>Mykonoiden · Verhalten</b><small>Vorhandener Clip</small></span></button></div>
+      </article>
+
+      <aside class="media-panel focus-panel">
+        <div class="panel-heading"><span class="panel-icon warm">✦</span><div><p class="eyebrow">ARCHIVÜBERSICHT</p><h2>Medien im Fokus</h2></div></div>
+        <a class="focus-row" data-route="inhalt-medien-und-unterhaltung-fernsehsendungen" href="#"><img src="../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Aeromorphen/Unterseiten/Medien/medien_schwebestadt.webp" alt="Schwebende Stadt als Medienmotiv" loading="lazy"><span><small>FORMATE</small><b>Sendungen &amp; Serien</b></span><em>›</em></a>
+        <a class="focus-row" data-route="inhalt-medien-und-unterhaltung-nachrichten" href="#"><img src="../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Aeromorphen/Unterseiten/Medien/medien_raumzeitanomalie.webp" alt="Raumzeitmotiv aus dem Medienarchiv" loading="lazy"><span><small>BERICHTE</small><b>Nachrichten &amp; Dossiers</b></span><em>›</em></a>
+        <a class="focus-row" data-route="inhalt-medien-und-unterhaltung-musik" href="#"><img src="../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Aeromorphen/Unterseiten/Medien/medien_energiewolken.webp" alt="Leuchtende Energiewolken als Klangmotiv" loading="lazy"><span><small>HÖREN</small><b>Musik &amp; Klangwelten</b></span><em>›</em></a>
+      </aside>
+    </section>
+
+    <section class="media-formats" aria-label="Medienformate und Archivbereiche">
+      <div class="section-heading"><span class="panel-icon">▧</span><div><p class="eyebrow">ENTDECKEN UND WEITERSTÖBERN</p><h2>Medienformate</h2></div><small>ALLE ZIELE FÜHREN ÜBER DEN ROUTENADAPTER</small></div>
+      <div class="format-grid">
+        <a data-route="inhalt-medien-und-unterhaltung-radiosender" href="#"><img src="../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Aeromorphen/Unterseiten/Medien/medien_fluggruppe.webp" alt="Gruppe von Aeromorphen im Flug" loading="lazy"><span><i>◖</i><b>Radiosender</b><em>→</em></span></a>
+        <a data-route="inhalt-medien-und-unterhaltung-fernsehsendungen" href="#"><img src="../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Aeromorphen/Unterseiten/Medien/medien_schwebestadt.webp" alt="Schwebestadt als Kulisse für Sendungen" loading="lazy"><span><i>▣</i><b>Fernsehsendungen</b><em>→</em></span></a>
+        <a data-route="inhalt-medien-und-unterhaltung-nachrichten" href="#"><img src="../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Aeromorphen/Unterseiten/Medien/holografisches_medienarchiv.webp" alt="Holografische Medienwand" loading="lazy"><span><i>▤</i><b>Nachrichten</b><em>→</em></span></a>
+        <a data-route="inhalt-medien-und-unterhaltung-musik" href="#"><img src="../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Aeromorphen/Unterseiten/Medien/medien_energiewolken.webp" alt="Abstrakte Klang- und Energiewolken" loading="lazy"><span><i>♫</i><b>Musik</b><em>→</em></span></a>
+        <a data-route="inhalt-medien-und-unterhaltung-unterhaltung" href="#"><img src="../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Aeromorphen/Unterseiten/Medien/medien_babiew.webp" alt="Archivmotiv einer fremden Lebensform" loading="lazy"><span><i>✦</i><b>Unterhaltung</b><em>→</em></span></a>
+      </div>
+    </section>
+    <footer class="media-footer"><span>APORIA · WELTENARCHIV</span><span>MEDIEN &amp; UNTERHALTUNG</span></footer>
+  </main>
+</body>
+</html>

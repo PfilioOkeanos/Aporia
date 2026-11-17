@@ -245,9 +245,4 @@ body.earth-page[data-celestial-theme] {
     .earth-cards, .earth-features .earth-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .earth-quick .earth-cards a:nth-last-child(-n+2) { grid-column: auto; }
     .earth-tabs details:last-child ul { inset-inline: auto 0; }
-    .earth-page .aporia-topbar { grid-template-columns: minmax(0, 1fr); }
-    .earth-page .aporia-search { grid-column: 1; grid-row: 2; width: 100%; }
-    .earth-page .aporia-main-nav { grid-row: 3; grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    .earth-page .aporia-nav-link { flex: 1 1 auto !important; }
-    .earth-page .aporia-nav-link span { white-space: normal; }
 }

@@ -4,10 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Objektdetails | Aporia</title>
+    <link rel="stylesheet" href="../../TopBar/Top_bar.css">
     <link rel="stylesheet" href="../Sternenkarte.css">
     <link rel="stylesheet" href="./Objektdetails.css">
 </head>
-<body class="map-page">
+<body class="map-page" data-page="sternenkarte" data-navigation-color="fixed">
+    <div data-aporia-topbar></div>
     <main class="map-object-placeholder">
         <h1 id="objektname">Kartenobjekt</h1>
         <p>Für dieses Objekt ist eine Detailseite vorgesehen.</p>
@@ -17,5 +19,6 @@
         const name = new URLSearchParams(location.search).get("objekt");
         if (name) document.querySelector("#objektname").textContent = name;
     </script>
+    <script type="module" src="../../TopBar/Top_bar.js"></script>
 </body>
 </html>

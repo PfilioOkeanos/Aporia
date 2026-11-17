@@ -6,20 +6,83 @@
   <title>Rohstoffarchiv | Aporia</title>
   <link rel="stylesheet" href="../../../Menüs/TopBar/Top_bar.css">
   <link rel="stylesheet" href="../../../Menüs/Side_bar/Side_bar.css">
-  <link rel="stylesheet" href="../../himmelskoerper/_gemeinsam/celestial-detail.css">
   <link rel="stylesheet" href="./Rohstoffe.css">
 </head>
 <body data-page="rohstoffe">
   <div data-aporia-topbar></div>
   <div class="aporia-page-frame resource-frame">
-    <div data-aporia-sidebar></div>
+    <div data-aporia-sidebar data-sidebar-default-collapsed></div>
     <main class="resource-main">
       <div class="resource-shell">
-        <nav aria-label="Archivpfad"><a data-route="home">Weltenarchiv</a></nav>
-        <h1>Rohstoffe</h1>
-        <label>Rohstoff suchen <input type="search" id="resource-search"></label>
-        <p role="status">Archiv wird geladen …</p>
-        <div id="resource-content"></div>
+        <header class="resource-hero">
+          <div>
+            <nav aria-label="Archivpfad"><a data-route="home">Weltenarchiv</a> <span aria-hidden="true">›</span> Rohstoffe</nav>
+            <h1>Rohstoffe</h1>
+            <p>Elemente und Werkstoffe aus dem Aporia-Weltenarchiv. Entdecke ihre Eigenschaften, Vorkommen und Einsatzgebiete.</p>
+          </div>
+        </header>
+        <div class="resource-workspace">
+          <aside class="resource-panel resource-filters" aria-labelledby="resource-group-title">
+            <h2 id="resource-group-title">Rohstoffgruppen</h2>
+            <nav id="resource-groups" aria-labelledby="resource-group-title"></nav>
+            <form id="resource-filters">
+              <h2>Filter</h2>
+              <label>Vorkommen <input type="search" id="resource-origin" placeholder="z. B. Erze"></label>
+              <label>Standardzustand
+                <select id="resource-state">
+                  <option value="">Alle Zustände</option>
+                  <option>Fest</option>
+                  <option>Flüssig</option>
+                  <option>Gasförmig</option>
+                </select>
+              </label>
+              <label>Anwendung <input type="search" id="resource-use" placeholder="z. B. Akkus"></label>
+              <button type="reset">Filter zurücksetzen</button>
+            </form>
+          </aside>
+          <section class="resource-panel resource-catalog" aria-labelledby="resource-list-title">
+            <div class="resource-toolbar">
+              <div>
+                <h2 id="resource-list-title">Gesamtliste der Rohstoffe</h2>
+                <p id="resource-status" role="status">Archiv wird geladen …</p>
+              </div>
+              <div class="resource-controls">
+                <label class="resource-search">Suche <input type="search" id="resource-search" placeholder="Name oder Symbol"></label>
+                <label>Sortierung
+                  <select id="resource-sort">
+                    <option value="asc">Name (A–Z)</option>
+                    <option value="desc">Name (Z–A)</option>
+                    <option value="group">Rohstoffgruppe</option>
+                  </select>
+                </label>
+                <div class="resource-views" role="group" aria-label="Ansicht">
+                  <button type="button" data-resource-view="grid" aria-label="Kartenansicht" title="Kartenansicht" aria-pressed="true">▦</button>
+                  <button type="button" data-resource-view="list" aria-label="Listenansicht" title="Listenansicht" aria-pressed="false">☰</button>
+                </div>
+              </div>
+            </div>
+            <div id="resource-content" class="resource-grid"></div>
+            <nav id="resource-pagination" class="resource-pagination" aria-label="Katalogseiten"></nav>
+          </section>
+          <aside class="resource-topics" aria-label="Rohstoffthemen">
+            <a class="resource-topic topic-craft" data-route="inhalt-werkstatt-und-herstellung">
+              <strong>Herstellung</strong><span>Rezepte, Werkstatt und Fertigung</span>
+            </a>
+            <a class="resource-topic topic-refine" data-route="inhalt-werkstatt-und-herstellung-produktionsverfahren">
+              <strong>Veredelung</strong><span>Aufbereitung und Produktionsverfahren</span>
+            </a>
+            <details class="resource-topic topic-rarity">
+              <summary><strong>Seltenheit</strong><span>Verfügbarkeit im Weltenarchiv</span></summary>
+              <p>Für den Katalog sind noch keine einheitlichen Seltenheitsstufen hinterlegt. Hinweise zur Verfügbarkeit findest du in den Rohstoffdossiers.</p>
+            </details>
+            <a class="resource-topic topic-origin" href="#resource-origin">
+              <strong>Vorkommen</strong><span>Nach bekannten Bezugsquellen suchen</span>
+            </a>
+            <a class="resource-topic topic-use" href="#resource-use">
+              <strong>Anwendungen</strong><span>Materialien nach Einsatzgebiet finden</span>
+            </a>
+          </aside>
+        </div>
       </div>
     </main>
   </div>

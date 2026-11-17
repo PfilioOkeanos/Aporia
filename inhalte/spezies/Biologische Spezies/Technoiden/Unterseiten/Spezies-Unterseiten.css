@@ -1,0 +1,217 @@
+@import url("../Hauptseite/Spezies.css");
+
+.techno-subpage .techno-layout { grid-template-areas: "content rail"; }
+.techno-topic {
+    display: grid;
+    grid-template-columns: clamp(8rem, 11cqi, 10.8rem) minmax(0, 1fr);
+    align-items: start;
+}
+.techno-topic > * { grid-column: 1 / -1; }
+.techno-topic > .techno-chapters {
+    grid-column: 1;
+    grid-row: 1 / 3;
+    display: grid;
+    gap: .25rem;
+    padding: .8rem;
+}
+.techno-topic > .techno-topic-banner,
+.techno-topic > .techno-topic-overview,
+.techno-topic > .techno-gallery { grid-column: 2; }
+.techno-chapters a {
+    padding-block: .25rem;
+    border-bottom: 1px solid #bc876044;
+    font-size: .9rem;
+    line-height: 1.35;
+}
+.techno-topic-banner {
+    min-height: 11.5rem;
+    display: grid;
+    align-items: center;
+    isolation: isolate;
+    overflow: hidden;
+    position: relative;
+    background-color: #1b1518;
+}
+.techno-topic-banner img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 82%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    mask-image: linear-gradient(90deg, transparent 4%, #000 35%);
+    z-index: -1;
+}
+.techno-topic-banner > div {
+    padding: clamp(.9rem, 2.3cqi, 1.75rem);
+    background: linear-gradient(90deg, #1a1518ef, #1a151897 29%, transparent 78%);
+}
+.techno-topic-banner h1 {
+    margin: .08rem 0 .28rem;
+    color: #ffe4b8;
+    font: 500 clamp(2.25rem, 4.65cqi, 4.2rem)/1.07 Georgia, serif;
+    text-shadow: 0 2px 12px #10090b;
+}
+.techno-topic-banner p:last-child { max-width: 40ch; text-shadow: 0 1px 4px #170d0c; }
+.techno-topic-overview { display: grid; grid-template-columns: minmax(0, 1.85fr) minmax(0, 1fr); gap: .75rem; }
+.techno-topic-overview > section,
+.techno-timeline, .techno-topic-cards, .techno-topic-note, .techno-gallery,
+.techno-media-section { padding: clamp(.72rem, 1.3cqi, 1.1rem); }
+.techno-topic-lead {
+    display: grid;
+    align-content: start;
+    grid-template-columns: minmax(0, .8fr) minmax(0, 1fr);
+    gap: .65rem .85rem;
+}
+.techno-topic-lead h2 { grid-column: 1 / -1; }
+.techno-topic-lead img { width: 100%; max-height: 12.5rem; object-fit: contain; }
+.techno-topic-lead p { align-self: center; }
+.techno-topic-overview h2, .techno-timeline h2, .techno-topic-cards > h2,
+.techno-media-section h2, .techno-gallery h2 {
+    padding-bottom: .4rem;
+    border-bottom: 1px solid #ad76516e;
+    margin-bottom: .45rem;
+}
+.techno-topic-overview h2 { margin-bottom: 0; }
+.techno-topic-facts dl > div {
+    display: grid;
+    grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+    gap: .45rem;
+    padding: .4rem 0;
+    border-bottom: 1px solid #c1926238;
+    line-height: 1.4;
+    font-size: .88rem;
+    overflow-wrap: break-word;
+}
+.techno-topic-facts dt { color: var(--techno-gold); }
+.techno-timeline ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: .35rem 0 0;
+    padding: 0;
+    counter-reset: techno-step;
+}
+.techno-timeline li {
+    flex: 1 1 8.5rem;
+    padding: .45rem .35rem;
+    text-align: center;
+    border-top: 1px solid #d69760b0;
+    counter-increment: techno-step;
+}
+.techno-timeline li::before {
+    display: block;
+    content: counter(techno-step);
+    margin: 0 auto .25rem;
+    width: 1.6rem;
+    background: #462925;
+    border: 1px solid #ffbc7b;
+    border-radius: 50%;
+    color: var(--techno-gold);
+}
+.techno-topic-group { margin-top: .8rem; }
+.techno-topic-group h3 {
+    margin: 0 0 .45rem;
+    color: #eed0a8;
+    font: 500 1.04rem Georgia, serif;
+}
+.techno-topic-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr));
+    gap: .7rem;
+    align-items: start;
+}
+.techno-topic-card { padding: .7rem; }
+.techno-topic-card h4 { margin: 0 0 .35rem; color: var(--techno-gold); line-height: 1.25; }
+.techno-topic-card img {
+    width: 100%;
+    aspect-ratio: 2.15;
+    object-fit: cover;
+    margin-bottom: .4rem;
+}
+.techno-topic-card img, .techno-topic-lead img {
+    mask-image: linear-gradient(90deg, transparent, #000 7% 93%, transparent),
+        linear-gradient(0deg, transparent, #000 9% 94%, transparent);
+    mask-composite: intersect;
+}
+.techno-topic-card p, .techno-topic-card ul { font-size: .93rem; }
+.techno-topic-card :is(p,ul) + :is(p,ul) { margin-top: .55rem; }
+.techno-topic-card ul { padding-inline-start: 1.2rem; }
+.techno-topic-card details { margin-top: .55rem; border-top: 1px solid #b579475c; padding-top: .28rem; }
+.techno-topic-card details[open] summary { margin-bottom: .55rem; }
+.techno-topic-card summary { color: var(--techno-gold); cursor: pointer; }
+.techno-topic-note p { margin-top: .45rem; }
+
+.techno-gallery-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+    gap: .75rem;
+    align-items: start;
+}
+.techno-gallery button, .techno-gallery select, .techno-media-section :is(button, select),
+.techno-dossier dialog .control {
+    color: inherit;
+    background: #241b19;
+    border: 1px solid #a6744f;
+    border-radius: .45rem;
+    font: inherit;
+}
+.techno-gallery button, .techno-media-section button, .techno-dossier dialog .control { cursor: pointer; }
+.techno-gallery button:focus-visible, .techno-gallery select:focus-visible {
+    outline: 2px solid var(--techno-gold);
+    outline-offset: 2px;
+}
+.techno-gallery .feature-open, .techno-gallery .tile { display: block; width: 100%; overflow: hidden; padding: 0; }
+.techno-gallery .feature-open { cursor: zoom-in; }
+.techno-gallery .feature-open img {
+    width: 100%;
+    aspect-ratio: 2;
+    object-fit: contain;
+    background: #120e13;
+}
+.techno-gallery .controls { display: flex; align-items: center; justify-content: space-between; gap: .55rem; padding-top: .35rem; }
+.techno-gallery .control, .techno-dossier dialog .control { padding: .25rem .55rem; }
+.techno-gallery .controls output { text-align: center; min-width: 0; overflow-wrap: anywhere; }
+.techno-gallery-tiles { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .35rem; }
+.techno-gallery .tile[aria-pressed="true"] { border-color: #ffd198; box-shadow: 0 0 .55rem #e79a6e66; }
+.techno-gallery .tile img { width: 100%; aspect-ratio: 1.9; object-fit: cover; }
+.techno-gallery-picker { display: grid; gap: .25rem; margin-top: .45rem; }
+.techno-gallery-picker select { min-width: 0; width: 100%; padding: .3rem; }
+.techno-media-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .75rem; align-items: start; }
+.techno-media-slots { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr)); gap: .55rem; }
+.techno-media-section.asset-catalog { margin-block: 0; }
+.techno-media-section .asset-card {
+    --edge: #a6744f;
+    --glow: var(--techno-gold);
+    background: #241b19;
+}
+.techno-media-section .asset-carousel-layout {
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr));
+}
+.techno-media-section .media-player-card { padding: .55rem; display: grid; gap: .3rem; }
+.techno-media-section .media-player-card h3 { margin: 0; color: var(--techno-gold); font-size: 1rem; }
+.techno-media-section .media-player-card :is(audio, video, select) { display: block; max-width: 100%; width: 100%; }
+.techno-media-section .media-status { margin-bottom: .25rem; }
+.techno-media-section .turntable-stage { margin: .4rem auto; max-width: 100%; }
+.techno-media-section .turntable-stage img { margin: auto; }
+.techno-media-section .controls { display: flex; gap: .35rem; flex-wrap: wrap; }
+.techno-media-section button:disabled { cursor: default; }
+.techno-dossier dialog:not(.gallery-fullscreen) { max-width: min(94vw, 60rem); color: var(--techno-ink); background: #161017; }
+
+@container (max-width: 940px) {
+    .techno-subpage .techno-layout { grid-template-areas: "rail" "content"; }
+}
+@container (max-width: 790px) {
+    .techno-topic { grid-template-columns: minmax(0, 1fr); }
+    .techno-topic > :is(.techno-chapters, .techno-topic-banner, .techno-topic-overview, .techno-gallery) { grid-column: 1; }
+    .techno-topic > .techno-chapters { grid-row: auto; display: flex; flex-wrap: wrap; align-items: center; gap: .3rem .65rem; }
+}
+@container (max-width: 630px) {
+    .techno-topic-overview, .techno-media-grid, .techno-gallery-layout { grid-template-columns: minmax(0, 1fr); }
+    .techno-topic-banner { min-height: 8.5rem; }
+    .techno-topic-banner img { width: 100%; mask-image: linear-gradient(90deg, transparent, #000 75%); }
+}
+@container (max-width: 420px) {
+    .techno-topic-lead { grid-template-columns: minmax(0, 1fr); }
+}

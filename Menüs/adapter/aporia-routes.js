@@ -19,7 +19,15 @@ const routes = Object.freeze({
     "spezies-biological-2-heimatwelt": new URL("../../inhalte/spezies/Biologische%20Spezies/WaldFeen/Unterseite/Heimatwelt/heimatwelt.html", import.meta.url).href,
     "spezies-biological-2-medien": new URL("../../inhalte/spezies/Biologische%20Spezies/WaldFeen/Unterseite/Medien/medien.html", import.meta.url).href,
     "spezies-biological-2-gameplay": new URL("../../inhalte/spezies/Biologische%20Spezies/WaldFeen/Gameplay/gameplay.html", import.meta.url).href,
-    "spezies-biological-3": new URL("../../inhalte/spezies/Biologische%20Spezies/Technoiden/Spezies.html", import.meta.url).href,
+    "spezies-biological-3": new URL("../../inhalte/spezies/Biologische%20Spezies/Technoiden/Hauptseite/Spezies.html", import.meta.url).href,
+    "spezies-biological-3-biologie": new URL("../../inhalte/spezies/Biologische%20Spezies/Technoiden/Unterseiten/Biologie/biologie.html", import.meta.url).href,
+    "spezies-biological-3-entwicklung": new URL("../../inhalte/spezies/Biologische%20Spezies/Technoiden/Unterseiten/Entwicklung/entwicklung.html", import.meta.url).href,
+    "spezies-biological-3-geschichte": new URL("../../inhalte/spezies/Biologische%20Spezies/Technoiden/Unterseiten/Geschichte/geschichte.html", import.meta.url).href,
+    "spezies-biological-3-gesellschaft": new URL("../../inhalte/spezies/Biologische%20Spezies/Technoiden/Unterseiten/Gesellschaft/gesellschaft.html", import.meta.url).href,
+    "spezies-biological-3-politik": new URL("../../inhalte/spezies/Biologische%20Spezies/Technoiden/Unterseiten/Politik/politik.html", import.meta.url).href,
+    "spezies-biological-3-heimatwelt": new URL("../../inhalte/spezies/Biologische%20Spezies/Technoiden/Unterseiten/Heimatwelt/heimatwelt.html", import.meta.url).href,
+    "spezies-biological-3-medien": new URL("../../inhalte/spezies/Biologische%20Spezies/Technoiden/Unterseiten/Medien/medien.html", import.meta.url).href,
+    "spezies-biological-3-gameplay": new URL("../../inhalte/spezies/Biologische%20Spezies/Technoiden/Gameplay/gameplay.html", import.meta.url).href,
     "spezies-biological-4": new URL("../../inhalte/spezies/Biologische%20Spezies/Astralizes/Spezies.html", import.meta.url).href,
     "spezies-biological-5": new URL("../../inhalte/spezies/Biologische%20Spezies/Mykonoiden/hauptseite/hauptseite.html", import.meta.url).href,
     "spezies-biological-5-biologie": new URL("../../inhalte/spezies/Biologische%20Spezies/Mykonoiden/biologie/biologie.html", import.meta.url).href,
@@ -79,7 +87,15 @@ const routes = Object.freeze({
     "spezies-technological-4": new URL("../../inhalte/spezies/Technologische%20Lebensformen/Digitaliden/Spezies.html", import.meta.url).href,
     "spezies-technological-5": new URL("../../inhalte/spezies/Technologische%20Lebensformen/Autokonstrukte/Spezies.html", import.meta.url).href,
     "spezies-technological-6": new URL("../../inhalte/spezies/Technologische%20Lebensformen/Technosymbionten/Spezies.html", import.meta.url).href,
-    "spezies-technological-7": new URL("../../inhalte/spezies/Technologische%20Lebensformen/Architektoiden/Spezies.html", import.meta.url).href,
+    "spezies-technological-7": new URL("../../inhalte/spezies/Technologische%20Lebensformen/Architektoiden/hauptseite/Spezies.html", import.meta.url).href,
+    "spezies-technological-7-biologie": new URL("../../inhalte/spezies/Technologische%20Lebensformen/Architektoiden/Unterseiten/Biologie/biologie.html", import.meta.url).href,
+    "spezies-technological-7-entwicklung": new URL("../../inhalte/spezies/Technologische%20Lebensformen/Architektoiden/Unterseiten/Entwicklung/entwicklung.html", import.meta.url).href,
+    "spezies-technological-7-geschichte": new URL("../../inhalte/spezies/Technologische%20Lebensformen/Architektoiden/Unterseiten/Geschichte/geschichte.html", import.meta.url).href,
+    "spezies-technological-7-gesellschaft": new URL("../../inhalte/spezies/Technologische%20Lebensformen/Architektoiden/Unterseiten/Gesellschaft/gesellschaft.html", import.meta.url).href,
+    "spezies-technological-7-politik": new URL("../../inhalte/spezies/Technologische%20Lebensformen/Architektoiden/Unterseiten/Politik/politik.html", import.meta.url).href,
+    "spezies-technological-7-heimatwelt": new URL("../../inhalte/spezies/Technologische%20Lebensformen/Architektoiden/Unterseiten/Heimatwelt/heimatwelt.html", import.meta.url).href,
+    "spezies-technological-7-medien": new URL("../../inhalte/spezies/Technologische%20Lebensformen/Architektoiden/Unterseiten/Medien/medien.html", import.meta.url).href,
+    "spezies-technological-7-gameplay": new URL("../../inhalte/spezies/Technologische%20Lebensformen/Architektoiden/Gameplay/gameplay.html", import.meta.url).href,
     "spezies-technological-8": new URL("../../inhalte/spezies/Technologische%20Lebensformen/Rekombinanten/Spezies.html", import.meta.url).href,
     "spezies-technological-9": new URL("../../inhalte/spezies/Technologische%20Lebensformen/Protokoliden/Spezies.html", import.meta.url).href,
     "spezies-technological-10": new URL("../../inhalte/spezies/Technologische%20Lebensformen/Hybriden/Spezies.html", import.meta.url).href,
@@ -99,7 +115,8 @@ const routes = Object.freeze({
     "spezies-technological": new URL("../../inhalte/spezies/Technologische%20Lebensformen/%C3%9Cbersichtsseite%20Technologische%20Lebensformen/Uebersicht.html", import.meta.url).href,
     "spezies-gigantic": new URL("../../inhalte/spezies/Gigantische%20Lebensformen/%C3%9CbersichtsseiteGigantische%20Lebensformen/Uebersicht.html", import.meta.url).href,
     "rohstoff-detail": new URL("../../inhalte/Rohstoffe/Details/Rohstoffe.html", import.meta.url).href,
-    forschung: new URL("../Hauptseite.html/Hauptseite.html#forschung", import.meta.url).href,
+    "story-editor": new URL("../../inhalte/StoryEditor/Hauptseite/StoryEditor.html", import.meta.url).href,
+    forschung: new URL("../../inhalte/Forschung/Übersicht/Forschung.html", import.meta.url).href,
     rohstoffe: new URL("../../inhalte/Rohstoffe/Uebersicht/Rohstoffe.html", import.meta.url).href,
     "freihafen": new URL("../../inhalte/Fraktionen/Freihafen.html", import.meta.url).href,
     "synthetische-organismen": new URL("../../inhalte/spezies/Synthetische-Organismen.html", import.meta.url).href,
@@ -157,10 +174,54 @@ const routes = Object.freeze({
     "alle-spezies": new URL("../../inhalte/spezies/Spezies_\u00fcbersicht/Spezies.html", import.meta.url).href,
     speziesdossiers: new URL("../../inhalte/spezies/Spezies_\u00fcbersicht/Spezies.html", import.meta.url).href,
     "dossiers-spezies": new URL("../../inhalte/spezies/Spezies_\u00fcbersicht/Spezies.html", import.meta.url).href,
+    "inhalt-technologien": new URL("../../inhalte/Technologien/Übersichtsseite/index.html", import.meta.url).href,
+    "inhalt-technologien-erfindungen": new URL("../../inhalte/Technologien/Erfindungen/index.html", import.meta.url).href,
+    "inhalt-technologien-maschinen": new URL("../../inhalte/Technologien/Maschinen/index.html", import.meta.url).href,
+    "inhalt-technologien-gerate": new URL("../../inhalte/Technologien/Geräte/index.html", import.meta.url).href,
+    "inhalt-technologien-technische-systeme": new URL("../../inhalte/Technologien/Technische%20Systeme/index.html", import.meta.url).href,
+    "inhalt-technologien-freischaltungen": new URL("../../inhalte/Technologien/Freischaltungen/index.html", import.meta.url).href,
 });
 
+
+const contentSlug = value => value
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/&/g, "und")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+
+export const contentCategories = Object.freeze([["Werkstatt & Herstellung","Rezepte, Baupläne und Produktionsverfahren.",["Rezepte","Baupläne","Produktionsverfahren","Handwerk","Fertigung"]],["Technologien","Erfindungen und technische Systeme.",["Erfindungen","Maschinen","Geräte","Technische Systeme","Freischaltungen"]],["Ausrüstung & Gegenstände","Gegenstände und Ausrüstung für den Alltag.",["Werkzeuge","Waffen","Kleidung","Rüstungen","Alltagsgegenstände"]],["Fahrzeuge & Raumschiffe","Fahrzeuge und Module für alle Umgebungen.",["Bodenfahrzeuge","Wasserfahrzeuge","Luftfahrzeuge","Raumfahrzeuge","Antriebe","Module"]],["Bauwerke & Siedlungen","Gebäude, Siedlungen und Infrastruktur.",["Gebäude","Städte","Stationen","Kolonien","Infrastruktur"]],["Flora & Fauna","Lebewesen, Lebensräume und Ökosysteme.",["Pflanzen","Tiere","Pilze","Lebensräume","Nahrungsketten"]],["Charaktere & Persönlichkeiten","Wichtige Figuren und ihre Beziehungen.",["Bedeutende Personen","NPCs","Beziehungen","Biografien"]],["Geschichte & Ereignisse","Zeitlinien und prägende Ereignisse.",["Zeitlinien","Kriege","Entdeckungen","Katastrophen","Geschichten"]],["Wirtschaft & Handel","Wirtschaft und Austausch zwischen Akteuren.",["Märkte","Währungen","Handelsnetze","Unternehmen","Dienstleistungen"]],["Fähigkeiten & Evolution","Entwicklung von Körpern und Fähigkeiten.",["Morphing","Körperentwicklung","Erlernte Fähigkeiten","Bewusstseinszustände"]],["Kultur & Zivilisation","Sprachen, Gesellschaft und Traditionen.",["Sprachen","Religionen","Traditionen","Gesellschaften","Lebensweisen"]],["Anomalien & Phänomene","Ungewöhnliche Ereignisse und Erscheinungen.",["Mystische Ereignisse","Ungewöhnliche Orte","Rituale","Unerklärte Erscheinungen"]],["Medien & Unterhaltung","Medienangebote und Unterhaltung in Aporia.",["Radiosender","Fernsehsendungen","Nachrichten","Musik","Unterhaltung"]],["Spielsysteme","Spielmechaniken und Charakterentwicklung.",["Kampf","Interaktion","Bauen","Inventar","Reisen","Handel","Charakterentwicklung"]]].map(([label, description, folders]) => {
+    const categoryRoute = "inhalt-" + contentSlug(label);
+    return Object.freeze({
+        label,
+        description,
+        route: categoryRoute,
+        children: Object.freeze(folders.map(folder => Object.freeze({
+            label: folder,
+            route: categoryRoute + "-" + contentSlug(folder)
+        })))
+    });
+}));
+
+const contentRoutes = new Map();
+for (const category of contentCategories) {
+    contentRoutes.set(category.route, new URL(
+        "../../inhalte/" + encodeURIComponent(category.label) + "/Übersichtsseite/",
+        import.meta.url
+    ).href);
+    for (const child of category.children) {
+        contentRoutes.set(child.route, new URL(
+            "../../inhalte/" + encodeURIComponent(category.label) + "/" + encodeURIComponent(child.label) + "/",
+            import.meta.url
+        ).href);
+    }
+}
+contentRoutes.set("inhalte", contentRoutes.get(contentCategories[0].route));
+
 export function getAporiaRoute(route) {
-    return routes[String(route ?? "").trim()] ?? null;
+    const key = String(route ?? "").trim();
+    return routes[key] ?? contentRoutes.get(key) ?? null;
 }
 
 export function applyAporiaRoutes(root = document) {

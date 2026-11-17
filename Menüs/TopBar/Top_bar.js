@@ -7,11 +7,14 @@
 /* 01 - ROUTENVERWALTUNG IMPORTIEREN */
 
 
+import "../Side_bar/side_bar.js";
 import {
     applyAporiaRoutes,
-    celestialCategories
+    celestialCategories,
+    contentCategories
 } from "../adapter/aporia-routes.js";
 import { starteArchivsuche } from "../adapter/aporia-archivsuche.js";
+import { initializeNavigationColor } from "../adapter/aporia-navigation-color.js";
 
 
 /* 02 - NAVIGATION-PLATZHALTER */
@@ -74,6 +77,10 @@ async function loadAporiaTopbar() {
 
 
         initializeSidebarToggle();
+        new ResizeObserver(() => {
+            document.documentElement.style.setProperty("--aporia-topbar-height", header.offsetHeight + "px");
+        }).observe(header);
+        initializeNavigationColor(header);
 
         /* 05 - HAUPTNAVIGATIONSPUNKTE */
 
@@ -181,6 +188,7 @@ async function loadAporiaTopbar() {
                 );
 
                 icon.setAttribute("fill", "none");
+                icon.setAttribute("aria-hidden", "true");
 
                 icon.innerHTML = item.icon;
 
@@ -208,6 +216,7 @@ async function loadAporiaTopbar() {
             }
 
             label.textContent = item.label;
+            navigation.append(link);
 
         });
 
@@ -241,18 +250,15 @@ async function loadAporiaTopbar() {
             input.type = "search";
             input.id = "aporia-search-input";
 
-            input.placeholder = "Archiv durchsuchen ...";
+            input.placeholder = "Archiv durchsuchen";
 
             input.setAttribute(
                 "aria-label",
                 "Aporia-Archiv durchsuchen"
             );
 
-            const shortcut = document.createElement("kbd");
-
-            shortcut.textContent = "Strg + K";
-
-            search.append(icon, input, shortcut);
+            icon.setAttribute("aria-hidden", "true");
+            search.append(icon, input);
 
             header.appendChild(search);
 
@@ -291,19 +297,24 @@ async function loadAporiaTopbar() {
             ],
             forschung: [
                 { route: "forschung", fragment: "forschungsgebiete", label: "Forschungsgebiete" },
-                { route: "forschung", fragment: "forschungsprojekte", label: "Forschungsprojekte" },
-                { route: "forschung", fragment: "rohstoffforschung", label: "Rohstoffforschung" },
-                { route: "forschung", fragment: "technologien", label: "Technologien" },
-                { route: "forschung", fragment: "speziesforschung", label: "Speziesforschung" },
-                { route: "forschung", fragment: "fraktionsforschung", label: "Fraktionsforschung" },
-                { route: "forschung", fragment: "forschungskooperationen", label: "Forschungskooperationen" },
-                { route: "forschung", fragment: "technologieentwicklung", label: "Technologieentwicklung" }
+                { route: "forschung", fragment: "gruppe-1", label: "Naturwissenschaften" },
+                { route: "forschung", fragment: "gruppe-2", label: "Technologie und Ingenieurwesen" },
+                { route: "forschung", fragment: "gruppe-3", label: "Gesellschaft und Kultur" },
+                { route: "forschung", fragment: "gruppe-4", label: "Raum- und Planetensysteme" },
+                { route: "forschung", fragment: "gruppe-5", label: "Umwelt, Leben und Ressourcen" },
+                { route: "forschung", fragment: "gruppe-6", label: "Spezialisierte Forschung" },
+                { route: "forschung", fragment: "gruppe-7", label: "Xenoforschung" },
+                { route: "forschung", fragment: "gruppe-8", label: "Fundamentale und exotische Forschung" },
+                { route: "forschung", fragment: "gruppe-9", label: "Mystik und Bewusstsein" }
             ],
             rohstoffe: [
                 { route: "rohstoffe", fragment: "elemente", label: "Chemische Elemente" },
                 { route: "rohstoffe", fragment: "raumfahrt", label: "Raumfahrt-Werkstoffe" }
             ]
         };
+
+        addContentMenu(navigation);
+        addStoryEditorMenuItem(navigation);
 
         for (const [route, items] of Object.entries(submenus)) {
             const parent = navigation.querySelector(`[data-route="${route}"]`);
@@ -474,4 +485,111 @@ function addCategoryMenu(parent, items) {
             toggle.focus();
         }
     });
+}
+
+function addContentMenu(navigation) {
+    const group = document.createElement("div");
+    group.className = "aporia-content-nav";
+
+    const details = document.createElement("details");
+    details.className = "aporia-content-disclosure";
+
+    const summary = document.createElement("summary");
+    summary.className = "aporia-content-trigger";
+    summary.innerHTML = '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 5h16M4 12h16M4 19h16"/></svg><span>Inhalte</span><span class="aporia-content-chevron" aria-hidden="true">▾</span>';
+    details.append(summary);
+
+    const panel = document.createElement("div");
+    panel.className = "aporia-content-panel";
+    const categoryList = document.createElement("nav");
+    categoryList.className = "aporia-content-categories";
+    categoryList.setAttribute("aria-label", "Inhaltsbereiche");
+    const subfolderPanel = document.createElement("section");
+    subfolderPanel.className = "aporia-content-subfolders";
+    subfolderPanel.setAttribute("aria-live", "polite");
+    panel.append(categoryList, subfolderPanel);
+    details.append(panel);
+    group.append(details);
+    navigation.append(group);
+
+    function selectCategory(category, selectedLink) {
+        categoryList.querySelectorAll(".is-selected").forEach(link => {
+            link.classList.remove("is-selected");
+            link.removeAttribute("aria-current");
+        });
+        selectedLink.classList.add("is-selected");
+        selectedLink.setAttribute("aria-current", "true");
+
+        subfolderPanel.replaceChildren();
+        const heading = document.createElement("h2");
+        const overviewLink = document.createElement("a");
+        overviewLink.dataset.route = category.route;
+        overviewLink.textContent = category.label;
+        overviewLink.className = "aporia-content-overview";
+        heading.append(overviewLink);
+        subfolderPanel.append(heading);
+
+        const description = document.createElement("p");
+        description.textContent = category.description;
+        subfolderPanel.append(description);
+
+        const links = document.createElement("ul");
+        for (const child of category.children) {
+            const row = document.createElement("li");
+            const link = document.createElement("a");
+            link.dataset.route = child.route;
+            link.textContent = child.label;
+            row.append(link);
+            links.append(row);
+        }
+        subfolderPanel.append(links);
+        applyAporiaRoutes(subfolderPanel);
+    }
+
+    for (const category of contentCategories) {
+        const link = document.createElement("a");
+        link.dataset.route = category.route;
+        link.textContent = category.label;
+        link.addEventListener("pointerenter", () => selectCategory(category, link));
+        link.addEventListener("focus", () => selectCategory(category, link));
+        categoryList.append(link);
+    }
+    const firstCategory = contentCategories[0];
+    selectCategory(firstCategory, categoryList.querySelector("a"));
+    applyAporiaRoutes(categoryList);
+
+    details.addEventListener("click", event => {
+        const link = event.target.closest("a[href]");
+        if (link) details.open = false;
+    });
+    document.addEventListener("click", event => {
+        if (details.open && !group.contains(event.target)) details.open = false;
+    });
+    group.addEventListener("keydown", event => {
+        if (event.key === "Escape" && details.open) {
+            details.open = false;
+            summary.focus();
+        }
+    });
+}
+
+
+function addStoryEditorMenuItem(navigation) {
+    if (navigation.querySelector('[data-route="story-editor"]')) return;
+
+    const link = document.createElement("a");
+    link.className = "aporia-nav-link";
+    link.dataset.route = "story-editor";
+    link.setAttribute("aria-label", "StoryEditor");
+    link.title = "StoryEditor";
+
+    const icon = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+    icon.setAttribute("viewBox", "0 0 24 24");
+    icon.setAttribute("fill", "none");
+    icon.setAttribute("aria-hidden", "true");
+    icon.innerHTML = '<path d="M4 20l4.2-.9L19 8.3a2.1 2.1 0 0 0-3-3L5.2 16.1 4 20z"/><path d="M14.5 6.8l3 3"/><path d="M4 20h16"/>';
+    const label = document.createElement("span");
+    label.textContent = "StoryEditor";
+    link.append(icon, label);
+    navigation.append(link);
 }

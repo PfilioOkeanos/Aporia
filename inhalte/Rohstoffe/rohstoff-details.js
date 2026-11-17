@@ -129,12 +129,31 @@ Fusionspellet|Konzept für einen Fusionsbrennstoff|Forschungsreaktoren im Spiel|
 Sauerstoffkeramik|Poröser Funktionswerkstoff|Sauerstoffmodule|Lebenserhaltungswerkstätten|Keramikkörper fertigen und in Module einsetzen|Trocken und stoßgeschützt|Bruch kann die Modulleistung senken|Lebenserhaltungshandel
 Asteroidenmetall-Pulver|Metallischer Druckrohstoff|Ersatzteile im 3D-Druck|Asteroidenraffinerien|Metall sortieren und als Druckpulver aufbereiten|Versiegelte Pulverbehälter|Staubfreisetzung vermeiden|Werftdepots`.split("\n");
 
-export function resourceDetails(group, item) {
+function resourceRecord(group, item) {
     const number = Number(item.id.match(/-(\d+)\.png$/i)?.[1]);
-    const source = (group === "elemente" ? elements : materials)[number - 1];
+    return (group === "elemente" ? elements : materials)[number - 1]?.split("|");
+}
+
+const gasSymbols = new Set(["H", "He", "N", "O", "F", "Ne", "Cl", "Ar", "Kr", "Xe", "Rn"]);
+const liquidSymbols = new Set(["Br", "Hg"]);
+
+export function resourceCatalogFields(group, item) {
+    const record = resourceRecord(group, item);
+    if (!record) return { name: item.title };
+    if (group === "raumfahrt") {
+        const [name, kind, use, origin] = record;
+        return { name, kind, use, origin };
+    }
+    const [name, symbol, origin, use] = record;
+    const state = gasSymbols.has(symbol) ? "Gasförmig" : liquidSymbols.has(symbol) ? "Flüssig" : origin ? "Fest" : "";
+    return { name, symbol, origin, use, state };
+}
+
+export function resourceDetails(group, item) {
+    const source = resourceRecord(group, item);
     if (!source) return {};
     if (group === "raumfahrt") {
-        const [name, properties, use, origin, process, storage, risk, market] = source.split("|");
+        const [name, properties, use, origin, process, storage, risk, market] = source;
         return {
             uebersicht: name + " · Raumfahrtmaterial. Einsatz im Spiel: " + use + ".",
             eigenschaften: properties + ". Messwerte im Spiel sind offen.",
@@ -147,8 +166,8 @@ export function resourceDetails(group, item) {
         };
     }
 
-    const [name, symbol, origin, use = "Elementforschung"] = source.split("|");
-    const gas = ["O", "N", "Ne", "F", "Ar", "Cl", "Kr", "Xe", "Rn"].includes(symbol);
+    const [name, symbol, origin, use = "Elementforschung"] = source;
+    const gas = gasSymbols.has(symbol);
     const radioactive = ["Tc", "Pm", "Po", "At", "Rn", "Fr", "Ra", "Ac", "Th", "Pa", "U", "Np", "Pu", "Am", "Cm", "Bk", "Cf", "Es", "Fm"].includes(symbol) || !origin;
     const toxic = ["Be", "F", "Cl", "Br", "As", "Cd", "Hg", "Tl", "Pb", "Sb"].includes(symbol);
     const reactive = ["Li", "Na", "K", "Rb", "Cs", "Ca", "Sr", "Ba"].includes(symbol);

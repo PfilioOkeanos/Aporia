@@ -1,0 +1,222 @@
+.architektoiden {
+    --arch-gold: #f0d5a1;
+    --arch-ink: #eee9db;
+    --aporia-page-tint: #759eac;
+    --aporia-page-glass-light: #233b4a;
+    --aporia-page-glass-dark: #111d27;
+    margin: 0;
+    background: #0a141c;
+    color: var(--arch-ink);
+    font: 1rem/1.5 Georgia, serif;
+}
+
+.architektoiden-frame {
+    display: flex;
+    min-height: calc(100dvh - var(--aporia-topbar-height, 78px));
+    background: radial-gradient(ellipse at 62% 12%, #1b3445, #0b161e 66%);
+}
+
+.architektoiden .aporia-sidebar::after {
+    background: url("../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Technologische%20Lebensformen/Architektoiden/hauptseite/archivmotiv.jpg") center 70% / cover no-repeat;
+    mask-image: linear-gradient(transparent, #000 22%);
+}
+
+.arch-dossier {
+    flex: 1;
+    min-width: 0;
+    padding: clamp(.6rem, 1.3vw, 1.4rem);
+    container-type: inline-size;
+}
+.arch-layout {
+    display: grid;
+    grid-template-columns: clamp(8rem, 10cqi, 10.2rem) minmax(0, 1fr) clamp(8.4rem, 10cqi, 10.3rem);
+    grid-template-areas:
+        "chapters hero rail"
+        "chapters core rail"
+        "topics topics topics"
+        "concept concept concept"
+        "variants variants variants";
+    align-items: start;
+    gap: .8rem;
+}
+.arch-dossier :is(h1,h2,p,dd,dl) { margin: 0; }
+.arch-dossier :is(h1,h2,a) { overflow-wrap: break-word; }
+.arch-dossier [id] { scroll-margin-top: calc(var(--aporia-topbar-height, 78px) + .75rem); }
+.arch-dossier a { color: var(--arch-gold); }
+.arch-dossier a:focus-visible { outline: 2px solid #fff1c6; outline-offset: 2px; }
+.arch-dossier img { display: block; max-width: 100%; height: auto; }
+
+.arch-panel {
+    box-sizing: border-box;
+    min-width: 0;
+    border: 1px solid transparent;
+    border-radius: .85rem;
+    background: linear-gradient(150deg, #15252ce8, #0d191f 70%) padding-box,
+        linear-gradient(135deg, #e7d5ab, #546879 28%, #b68d5e 76%, #f2d5a2) border-box;
+    box-shadow: inset 0 1px 9px #d6c3a031, 0 .35rem 1.1rem #03080ab3;
+}
+.arch-dossier h2 { color: var(--arch-gold); font: 500 1.15rem/1.25 Georgia, serif; }
+.arch-dossier .arch-kicker {
+    color: var(--arch-gold);
+    font-size: .7rem;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+}
+
+.arch-hero {
+    grid-area: hero;
+    position: relative;
+    isolation: isolate;
+    display: grid;
+    align-items: center;
+    min-height: clamp(19rem, 24cqi, 27rem);
+    overflow: hidden;
+}
+.arch-dossier .arch-hero img {
+    position: absolute;
+    inset: 0 0 0 auto;
+    z-index: -1;
+    width: 77%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 66% center;
+    mask-image: linear-gradient(90deg, transparent, #000 39%);
+}
+.arch-hero > div {
+    padding: clamp(1rem, 2.4cqi, 2rem);
+    background: linear-gradient(90deg, #0d171eea, #0d171ea8 37%, transparent 71%);
+}
+.arch-hero h1 {
+    margin: .35rem 0 .7rem;
+    color: #ffe8ba;
+    font: 500 clamp(2rem, 4.25cqi, 4rem)/1.06 Georgia, serif;
+    letter-spacing: .03em;
+    text-transform: uppercase;
+    text-shadow: 0 2px 12px #050a10;
+}
+.arch-hero p:last-child { max-width: 35ch; }
+.arch-dossier .arch-subtitle {
+    width: fit-content;
+    margin-bottom: .6rem;
+    padding-top: .52rem;
+    border-top: 1px solid #dfa76da6;
+    color: #ffe5b6;
+    font-size: clamp(1rem, 1.6cqi, 1.42rem);
+}
+.arch-chapters { grid-area: chapters; }
+.arch-rail { grid-area: rail; }
+.arch-chapters, .arch-rail { display: grid; gap: .25rem; padding: .7rem; }
+.arch-rail nav { display: grid; gap: .15rem; }
+.arch-chapters a, .arch-rail a {
+    display: block;
+    padding: .3rem .4rem;
+    border: 1px solid transparent;
+    border-bottom-color: #b4ad9340;
+    border-radius: .3rem;
+    color: var(--arch-ink);
+    font-size: .88rem;
+    line-height: 1.35;
+    text-decoration: none;
+}
+.arch-chapters a:hover, .arch-rail a:is(:hover,[aria-current]) {
+    border-color: #daae72;
+    color: #fff0d0;
+    background: linear-gradient(120deg, #94704486, #5a452c36);
+}
+
+.arch-core {
+    grid-area: core;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(min(100%, 13.5rem),1fr));
+    gap: .65rem;
+}
+.arch-core > section, .arch-concept, .arch-variants { padding: clamp(.65rem, 1.15cqi, 1rem); }
+.arch-core h2 {
+    margin-bottom: .55rem;
+    padding-bottom: .4rem;
+    border-bottom: 1px solid #ad947352;
+}
+.arch-core h2::before { content: "◇"; color: #dfb882; margin-inline-end: .4rem; }
+.arch-core :is(p, li, dl) { font-size: .88rem; }
+.arch-core dl > div {
+    display: grid;
+    grid-template-columns: minmax(0,.8fr) minmax(0,1fr);
+    gap: .35rem;
+    padding-block: .32rem;
+    border-bottom: 1px solid #a3958050;
+}
+.arch-core dt, .arch-traits strong { color: var(--arch-gold); }
+.arch-traits { list-style: none; margin: 0; padding: 0; }
+.arch-traits li { display: grid; gap: .12rem; padding-block: .32rem; border-bottom: 1px solid #a3958050; }
+.arch-core img { width: 100%; border-radius: .42rem; margin-bottom: .45rem; }
+.arch-action {
+    display: inline-flex;
+    gap: .4rem;
+    margin-top: .5rem;
+    padding: .22rem .56rem;
+    border: 1px solid #b89563;
+    border-radius: .5rem;
+    font-size: .85rem;
+    text-decoration: none;
+}
+.arch-action:hover { background: #6550348c; }
+
+.arch-topics {
+    grid-area: topics;
+    display: grid;
+    grid-template-columns: repeat(8,minmax(0,1fr));
+    gap: .55rem;
+}
+.arch-topic { padding: .4rem; }
+.arch-topic img { width: 100%; aspect-ratio: 1.94; object-fit: cover; border-radius: .45rem; }
+.arch-topic h2 { margin: .35rem .25rem .15rem; font-size: 1rem; }
+.arch-topic p { margin-inline: .25rem; font-size: .8rem; }
+.arch-topic:target, .arch-core > section:target { border-color: #f1c68d; }
+.arch-concept, .arch-variants {
+    display: grid;
+    align-items: center;
+    gap: .85rem;
+}
+.arch-concept { grid-area: concept; grid-template-columns: minmax(0,1.1fr) auto minmax(0,1fr); }
+.arch-concept h2 { padding-inline-end: .75rem; border-inline-end: 1px solid #b89e71; }
+.arch-variants { grid-area: variants; grid-template-columns: minmax(0,.9fr) minmax(0,1fr); }
+.arch-dossier :is(.arch-concept,.arch-variants) img { width: 100%; border-radius: .4rem; object-fit: contain; }
+.arch-variants p { margin-top: .35rem; }
+
+@container (max-width: 1110px) {
+    .arch-topics { grid-template-columns: repeat(4,minmax(0,1fr)); }
+}
+@container (max-width: 1000px) {
+    .arch-core { grid-template-columns: repeat(2,minmax(0,1fr)); }
+}
+@container (max-width: 915px) {
+    .arch-layout {
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-areas: "rail" "hero" "chapters" "core" "topics" "concept" "variants";
+    }
+    .arch-rail > .arch-kicker { display: none; }
+    .arch-chapters, .arch-rail nav { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; }
+    .arch-hero > div { background: linear-gradient(90deg, #0d171ef2, #0d171e9c 56%, transparent); }
+}
+@container (max-width: 560px) {
+    .arch-topics { grid-template-columns: repeat(2,minmax(0,1fr)); }
+    .arch-concept, .arch-variants { grid-template-columns: minmax(0,1fr); }
+    .arch-concept h2 { padding-inline-end: 0; border-inline-end: 0; }
+    .arch-hero h1 { letter-spacing: 0; }
+}
+@container (max-width: 460px) {
+    .arch-core { grid-template-columns: minmax(0,1fr); }
+    .arch-dossier .arch-hero img { width: 100%; mask-image: linear-gradient(90deg, #0003, #000); }
+}
+@media (min-width: 1280px) {
+    .arch-hero {
+        min-height: clamp(25rem, 29cqi, 29rem);
+        align-items: end;
+    }
+}
+@media (max-width: 760px) {
+    .architektoiden-frame { flex-direction: column; }
+    .architektoiden-frame > #aporia-sidebar-host { flex: 0 0 auto; width: 100%; }
+    .architektoiden-frame .aporia-sidebar { position: relative; top: auto; max-height: 42dvh; }
+    .architektoiden-frame .aporia-sidebar::after { display: none; }
+}

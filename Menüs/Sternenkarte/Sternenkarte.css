@@ -1,4 +1,5 @@
 body.map-page {
+    --aporia-page-tint: #487fcb;
     margin: 0;
     display: grid;
     grid-template-rows: auto minmax(0, 1fr);
@@ -8,6 +9,11 @@ body.map-page {
     font-family: Georgia, serif;
     background: #0a1115;
     color: #eee9dc;
+}
+
+.map-page :is(.aporia-topbar, .aporia-sidebar) {
+    --aporia-glass-light: #132849;
+    --aporia-glass-dark: #080f20;
 }
 
 .map-frame {
