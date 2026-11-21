@@ -1,0 +1,159 @@
+# ELEKTROZOIDEN – 08 SPIELINTEGRATION
+
+## SPI01 – Grundkonzept
+
+Elektrozoiden erhalten ein speziesabhängiges Wahrnehmungs- und Kommunikationssystem.
+
+Ihre besonderen Fähigkeiten ermöglichen neue Formen der Erkundung, Interaktion und Informationsverarbeitung.
+
+Sie sind keine spezialisierte elektrische Kampfklasse.
+
+## SPI02 – Elektrische Wahrnehmungsansicht
+
+Der Spieler kann in eine eigene elektrische Wahrnehmungsansicht wechseln.
+
+Diese stellt geeignete elektrische Felder und Signalquellen als visuelle Informationen dar.
+
+Es handelt sich um eine spielerische Übersetzung ihrer natürlichen Sinneseindrücke.
+
+## SPI03 – Elektrostatische Wahrnehmung
+
+Geladene Objekte können im Nahbereich unter geeigneten Bedingungen erkannt werden.
+
+Wind, Feuchtigkeit, Entfernung und Störquellen beeinflussen die Erkennung.
+
+## SPI04 – Kontaktbasierte Wahrnehmung
+
+Berührt der Spieler geeignete Oberflächen, können zusätzliche elektrische Informationen verfügbar werden.
+
+Die Anwendung hängt von den Materialeigenschaften und der Kontaktqualität ab.
+
+## SPI05 – Aktive Materialuntersuchung
+
+Der Spieler kann schwache Prüfsignale über getrennte Kontaktpunkte einspeisen.
+
+Dies erlaubt unter geeigneten Bedingungen die Untersuchung lokaler elektrischer Eigenschaften.
+
+Eine vollständige Darstellung verborgener Räume ist dadurch nicht möglich.
+
+## SPI06 – Elektrische Kommunikation
+
+Direkte Kontakte ermöglichen Gespräche mit anderen Elektrozoiden.
+
+Geeignete leitfähige Strukturen können die Kommunikation erweitern.
+
+Technische Kommunikationssysteme erlauben größere Reichweiten.
+
+## SPI07 – Fremdsprachenübersetzung
+
+Technische Übersetzungssysteme ermöglichen Gespräche mit anderen intelligenten Spezies.
+
+Ihre Funktion hängt von verfügbarer Sprachinformation und der Leistungsfähigkeit der Übersetzungstechnik ab.
+
+## SPI08 – Erkundung
+
+Elektrische Wahrnehmung kann helfen, bestimmte Stromquellen, Kontaktleitungen und elektrisch auffällige Materialien zu untersuchen.
+
+Die Funktion ersetzt weder normale Sicht noch gewöhnliche technische Sensoren.
+
+## SPI09 – Schleichen
+
+Aktive elektrische Signale können die Anwesenheit eines Elektrozoiden verraten.
+
+Der Spieler kann bestimmte Signalorgane zeitweise deaktivieren oder ihre Aktivität vermindern.
+
+Die passive Wahrnehmung bleibt davon grundsätzlich getrennt.
+
+## SPI10 – Kampf
+
+Elektrozoiden verwenden körperliche Fähigkeiten, Werkzeuge und technische Waffen.
+
+Natürliche Blitzangriffe sind nicht vorgesehen.
+
+Elektrische Störungen können spezielle Interaktionen beeinflussen, sind jedoch keine universellen Kampfwaffen.
+
+## SPI11 – Verletzungssystem
+
+Schäden an Feldhaaren können die elektrostatische Wahrnehmung beeinträchtigen.
+
+Beschädigte Kontaktpolster können die Kommunikation erschweren.
+
+Verletzungen elektrischer Organe können die Signalerzeugung verändern.
+
+## SPI12 – Medizin
+
+Medizinische Forschung und spezialisierte Geräte ermöglichen die Diagnose elektrischer Organe.
+
+Bestimmte Verletzungen können durch Behandlung oder Prothesen ausgeglichen werden.
+
+## SPI13 – Biologische Energie
+
+Die elektrischen Fähigkeiten benötigen Stoffwechselenergie.
+
+Der Energiebedarf soll über das allgemeine biologische Ausdauer- und Versorgungssystem abgebildet werden.
+
+Eine zusätzliche magische Stromanzeige ist nicht erforderlich.
+
+## SPI14 – Speziesfähigkeiten
+
+Vorgeschlagene Fähigkeiten:
+
+- Passive Feldwahrnehmung.
+- Elektrische Kontaktanalyse.
+- Aktive lokale Impedanzmessung.
+- Elektrische Nahkommunikation.
+- Interpretation speziesbezogener Signalfolgen.
+- Erkennen bestimmter Störquellen.
+
+## SPI15 – Forschung
+
+Der Spieler kann speziesbezogene Forschung freischalten.
+
+Mögliche Ergebnisse sind verbesserte Sensorvisualisierung, Signalübersetzung, medizinische Verfahren und technische Schnittstellen.
+
+## SPI16 – Missionen
+
+Mögliche Missionen:
+
+- Entschlüsselung historischer Signalmuster.
+- Erforschung alter Kommunikationsanlagen.
+- Untersuchung ungewöhnlicher elektrischer Umweltphänomene.
+- Medizinische Versorgung.
+- Entwicklung fremdsprachlicher Übersetzungssysteme.
+- Untersuchung besonderer biologischer Elektrorezeptoren.
+
+## SPI17 – Technische Umsetzung
+
+Die Gameplay-Systeme sollten modular und datengetrieben angelegt werden.
+
+Empfohlene logische Module:
+
+- ElectricFieldPerception
+- ContactElectroreception
+- BioelectricSignalGenerator
+- BioelectricCommunication
+- SignalInterference
+- ElectroTranslation
+- ElectroPerceptionView
+
+Die tatsächliche Implementierung soll keine vollständige physikalische Feldsimulation der gesamten Spielwelt voraussetzen.
+
+## SPI18 – Physikalisches Näherungsmodell
+
+Für Gameplay können Quellen, Kontakte, Materialeigenschaften und definierte Störzonen ausgewertet werden.
+
+Eine genauere Simulation ist nur dort erforderlich, wo sie für Forschung oder spezielle Mechaniken zusätzlichen Nutzen bringt.
+
+## SPI19 – Spielbalance
+
+Elektrische Wahrnehmung besitzt besondere Stärken bei geeigneten Umgebungsbedingungen.
+
+Trockene isolierende Oberflächen, Störungen und biologische Verletzungen können die Leistungsfähigkeit begrenzen.
+
+Andere Spezies behalten ihre eigenen biologischen und technologischen Vorteile.
+
+## SPI20 – Kompatibilität
+
+Die Fähigkeiten sollen auch von NPCs, Forschungsanlagen und technischen Geräten verwendet werden können.
+
+Biologische Organe, Sensorinformationen, Visualisierung und Kommunikation bleiben als eigenständige Systeme getrennt.

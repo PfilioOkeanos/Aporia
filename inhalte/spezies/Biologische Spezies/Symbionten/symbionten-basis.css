@@ -199,6 +199,12 @@ html:has(dialog.sy-zoom[open]) { overflow: hidden; }
 .sy-text > .sy-ausschnitt { width: min(100%, 26rem); border: 1px solid var(--sy-linie); border-radius: 10px; }
 .sy-quelle-design { color: var(--sy-cyan) !important; }
 
+/* Steckbrief aus dem Dossier (Hauptseiten) */
+.sy-dossier-steckbrief { margin-top: var(--sy-raum); }
+.sy-dossier-raster { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); gap: var(--sy-raum); align-items: start; }
+.sy-dossier-raster .sy-fakten > div { grid-template-columns: minmax(8rem, .7fr) minmax(0, 1.3fr); }
+@container (max-width: 820px) { .sy-dossier-raster { grid-template-columns: minmax(0, 1fr); } }
+
 /* Karussell: Tafeln vollständig zeigen */
 .sy-karussell-block .sy-h2 { margin-bottom: .6rem !important; }
 .sy-dossier .karussell-bild img { object-fit: contain; background: #080609; }

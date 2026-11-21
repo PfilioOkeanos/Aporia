@@ -31,6 +31,7 @@
 .sy-thema-kopf { display: flex; gap: .45rem; align-items: center; }
 .sy-thema-text { font-size: .82rem; line-height: 1.35; }
 .sy-fuss-raster { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--sy-raum); }
+.sy-fuss-raster--eins { grid-template-columns: minmax(0, 1fr); }
 .sy-klang-chips { display: flex; flex-wrap: wrap; gap: .4rem; }
 .sy-klang-chips a { display: inline-flex; align-items: center; gap: .4rem; padding: .4rem .8rem; border: 1px solid var(--sy-linie); border-radius: 999px; background: #1a1319cc; color: var(--sy-text) !important; font-size: .84rem; text-decoration: none; }
 .sy-klang-chips a:hover { border-color: var(--sy-cyan); }

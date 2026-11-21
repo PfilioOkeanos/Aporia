@@ -43,11 +43,238 @@
             </nav>
             <div class="fl-layout">
                 <div class="fl-inhalt">
-                    <details class="fl-panel fl-karte" id="noch-offen" open>
-                        <summary><span class="fl-nr">…</span><h2>Spielintegration</h2><span class="fl-chevron" aria-hidden="true"></span></summary>
+                    <details class="fl-panel fl-karte" id="k-steckbrief" open>
+                        <summary><span class="fl-nr">◇</span><h2>Steckbrief</h2><span class="fl-chevron" aria-hidden="true"></span></summary>
                         <div class="fl-text">
-                            <p class="fl-offen">Noch nicht ausgearbeitet.</p>
-                            <p class="fl-quelle">Vorgesehene Infodateien (noch ohne Text): Gameplay/.gitkeep</p>
+                            <dl class="fl-fakten"><div><dt>Version</dt><dd>1.1 – Überarbeitete Arbeitsfassung</dd></div></dl>
+                            <p class="fl-quelle">Quelle: Info_material · Floranoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="fl-panel fl-karte" id="k-1-rolle-im-spiel">
+                        <summary><span class="fl-nr">1</span><h2>Rolle im Spiel</h2><span class="fl-chevron" aria-hidden="true"></span></summary>
+                        <div class="fl-text">
+                            <p>Die Floranoiden sind eine intelligente Spezies im APORIA-Universum.</p>
+                            <p>Sie treten in „Unter fremden Kronen“ als NPCs und Mitglieder verschiedener Gemeinschaften auf.</p>
+                            <p>Mögliche Rollen:</p>
+                            <ul><li>Zivilisten.</li><li>Händler.</li><li>Wissenschaftler.</li><li>Techniker.</li><li>Diplomaten.</li><li>Begleiter.</li><li>Politische Vertreter.</li><li>Gegner.</li><li>Questcharaktere.</li></ul>
+                            <p>Die menschliche Protagonistin des Spiels bleibt unverändert.</p>
+                            <p>Eine spätere Spielbarkeit der Floranoiden ist möglich, aber nicht automatisch festgelegt.</p>
+                            <p class="fl-quelle">Quelle: Info_material · Floranoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="fl-panel fl-karte" id="k-2-eigenstandige-korpermechanik">
+                        <summary><span class="fl-nr">2</span><h2>Eigenständige Körpermechanik</h2><span class="fl-chevron" aria-hidden="true"></span></summary>
+                        <div class="fl-text">
+                            <p>Floranoiden erhalten ein spezielles Fortbewegungssystem.</p>
+                            <p>Ihre Animationen dürfen nicht bloß aus menschlichen Laufanimationen mit angefügten Blättern bestehen.</p>
+                            <p>Notwendige Bewegungen:</p>
+                            <ul><li>Koordinierte Bewegungen mehrerer Tragglieder.</li><li>Hydraulische Druckverlagerung.</li><li>Elastisches Spannen und Entlasten.</li><li>Faltung der Photosynthesekrone.</li><li>Bewegung der Greiforgane.</li><li>Aktivierung der Versorgungswurzeln.</li><li>Unterschiedliche Ruhehaltungen.</li></ul>
+                            <p class="fl-quelle">Quelle: Info_material · Floranoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="fl-panel fl-karte" id="k-3-bewegungsfahigkeit">
+                        <summary><span class="fl-nr">3</span><h2>Bewegungsfähigkeit</h2><span class="fl-chevron" aria-hidden="true"></span></summary>
+                        <div class="fl-text">
+                            <p>Die grundlegende Bewegung ist kontrolliert und energieeffizient.</p>
+                            <p>Schnelle Bewegungen erfordern zusätzliche gespeicherte Energie.</p>
+                            <p>Längere intensive Bewegung führt zu:</p>
+                            <ul><li>Erhöhtem Nährstoffverbrauch.</li><li>Größerer Wärmeentwicklung.</li><li>Steigender Belastung der Drucksysteme.</li><li>Höherem Regenerationsbedarf.</li></ul>
+                            <p>Floranoiden sind nicht grundsätzlich langsam, besitzen aber andere körperliche Belastungsgrenzen als humanoide Spezies.</p>
+                            <p class="fl-quelle">Quelle: Info_material · Floranoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="fl-panel fl-karte" id="k-4-biologische-statuswerte">
+                        <summary><span class="fl-nr">4</span><h2>Biologische Statuswerte</h2><span class="fl-chevron" aria-hidden="true"></span></summary>
+                        <div class="fl-text">
+                            <p>Für die Simulation werden folgende Zustände vorgesehen:</p>
+                            <dl class="fl-fakten"><div><dt>Hydration</dt><dd>Wasserhaushalt.</dd></div><div><dt>Energiereserve</dt><dd>Biochemisch verfügbare Energie.</dd></div><div><dt>Nährstoffstatus</dt><dd>Langfristige Versorgung mit organischen und mineralischen Nährstoffen.</dd></div><div><dt>Photosyntheseleistung</dt><dd>Aktueller Energiegewinn durch Licht.</dd></div><div><dt>Gewebeintegrität</dt><dd>Zustand des Körpers.</dd></div><div><dt>Hydraulikfunktion</dt><dd>Leistungsfähigkeit der Bewegungsdruckkammern.</dd></div><div><dt>Markkelchintegrität</dt><dd>Funktion des zentralen Denkorgans.</dd></div><div><dt>Thermische Belastung</dt><dd>Auswirkungen von Temperatur und Stoffwechselaktivität.</dd></div></dl>
+                            <p>Die Werte sollen nicht zwangsläufig alle separat in der Benutzeroberfläche dargestellt werden.</p>
+                            <p class="fl-quelle">Quelle: Info_material · Floranoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="fl-panel fl-karte" id="k-5-photosynthese-im-gameplay">
+                        <summary><span class="fl-nr">5</span><h2>Photosynthese im Gameplay</h2><span class="fl-chevron" aria-hidden="true"></span></summary>
+                        <div class="fl-text">
+                            <p>Licht ermöglicht Floranoiden einen zusätzlichen biologischen Energiegewinn.</p>
+                            <p>Die Wirkung hängt ab von:</p>
+                            <ul><li>Lichtstärke.</li><li>Lichtspektrum.</li><li>Kronenoberfläche.</li><li>Kronenstellung.</li><li>Gesundheitszustand.</li><li>Temperatur.</li><li>Wasserverfügbarkeit.</li></ul>
+                            <p>Photosynthese ersetzt keine vollständige Nahrungsversorgung.</p>
+                            <p>Eine dauerhafte kostenlose Selbstheilung allein durch Sonnenlicht ist nicht vorgesehen.</p>
+                            <p class="fl-quelle">Quelle: Info_material · Floranoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="fl-panel fl-karte" id="k-6-organische-ernahrung">
+                        <summary><span class="fl-nr">6</span><h2>Organische Ernährung</h2><span class="fl-chevron" aria-hidden="true"></span></summary>
+                        <div class="fl-text">
+                            <p>Floranoiden müssen regelmäßig organische Nahrung aufnehmen.</p>
+                            <p>Geeignete Nahrungsquellen können über:</p>
+                            <ul><li>Lebensmittel.</li><li>Nährstoffkonzentrate.</li><li>Technische Versorgungsstationen.</li><li>Medizinische Ernährungssysteme.</li></ul>
+                            <p>bereitgestellt werden.</p>
+                            <p>Der Nährkelch erhält bei Bedarf eigenständige Interaktionsanimationen.</p>
+                            <p>Die genaue Versorgungshäufigkeit wird später anhand von Gameplay und biologischem Simulationsmaßstab festgelegt.</p>
+                            <p class="fl-quelle">Quelle: Info_material · Floranoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="fl-panel fl-karte" id="k-7-wasserversorgung">
+                        <summary><span class="fl-nr">7</span><h2>Wasserversorgung</h2><span class="fl-chevron" aria-hidden="true"></span></summary>
+                        <div class="fl-text">
+                            <p>Wasser ist für Bewegung und Stoffwechsel notwendig.</p>
+                            <p>Wassermangel beeinträchtigt zunächst die Leistungsfähigkeit.</p>
+                            <p>Bei längerem Mangel können Gesundheit und Organfunktion geschädigt werden.</p>
+                            <p>Geeignete Versorgungssysteme können Wasser wieder auffüllen.</p>
+                            <p>Die Simulation sollte nicht verlangen, dass jeder NPC im Sekundentakt Wasser aufnimmt.</p>
+                            <p class="fl-quelle">Quelle: Info_material · Floranoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="fl-panel fl-karte" id="k-8-naturliche-fahigkeiten">
+                        <summary><span class="fl-nr">8</span><h2>Natürliche Fähigkeiten</h2><span class="fl-chevron" aria-hidden="true"></span></summary>
+                        <div class="fl-text">
+                            <h3>Fächerentfaltung</h3>
+                            <p>Vergrößert die nutzbare Lichtaufnahmefläche.</p>
+                            <p>Erhöht bei geeigneten Bedingungen die Photosyntheseleistung.</p>
+                            <p>Reduziert gegebenenfalls Bewegungsfreiheit und erhöht die Angriffsfläche.</p>
+                            <h3>Hydraulische Stabilisierung</h3>
+                            <p>Verbessert die Standfestigkeit.</p>
+                            <p>Benötigt geeigneten Druck und funktionsfähige Gliedmaßen.</p>
+                            <h3>Elastischer Kraftimpuls</h3>
+                            <p>Ermöglicht eine kurzzeitige kraftvolle Bewegung.</p>
+                            <p>Verbraucht gespeicherte mechanische und chemische Energie.</p>
+                            <h3>Chemische Umweltanalyse</h3>
+                            <p>Ermöglicht die Wahrnehmung bestimmter chemischer Stoffe.</p>
+                            <p>Die Fähigkeit besitzt begrenzte Reichweite und hängt von den Umweltbedingungen ab.</p>
+                            <h3>Geweberegeneration</h3>
+                            <p>Ermöglicht die langsame Wiederherstellung bestimmter äußerer Gewebe.</p>
+                            <p>Benötigt Wasser, Energie, Nährstoffe und Zeit.</p>
+                            <h3>Versorgungsruhe</h3>
+                            <p>Verringert körperliche Aktivität und erleichtert physiologische Erholung.</p>
+                            <p>Die Ruhe ersetzt keine notwendige Nahrungsversorgung.</p>
+                            <p class="fl-quelle">Quelle: Info_material · Floranoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="fl-panel fl-karte" id="k-9-kampfverhalten">
+                        <summary><span class="fl-nr">9</span><h2>Kampfverhalten</h2><span class="fl-chevron" aria-hidden="true"></span></summary>
+                        <div class="fl-text">
+                            <p>Floranoiden nutzen im Kampf ihre besondere Anatomie.</p>
+                            <p>Mögliche Taktiken:</p>
+                            <ul><li>Mehrpunktstabilisierung.</li><li>Gezielte Greifbewegungen.</li><li>Kurzzeitige elastische Kraftimpulse.</li><li>Technologische Distanzwaffen.</li><li>Schutz empfindlicher Organbereiche.</li><li>Kontrollierter Rückzug.</li></ul>
+                            <p>Die genaue Kampfrolle hängt von Ausbildung, Ausrüstung und persönlichen Fähigkeiten ab.</p>
+                            <p>Floranoiden besitzen keine pauschale Pflanzenmagie.</p>
+                            <p class="fl-quelle">Quelle: Info_material · Floranoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="fl-panel fl-karte" id="k-10-schadensarten">
+                        <summary><span class="fl-nr">10</span><h2>Schadensarten</h2><span class="fl-chevron" aria-hidden="true"></span></summary>
+                        <div class="fl-text">
+                            <p>Besonders relevante Schädigungen betreffen:</p>
+                            <ul><li>Leitgewebe.</li><li>Bewegungsdruckkammern.</li><li>Tragfasern.</li><li>Kronenmembranen.</li><li>Nährkelch.</li><li>Markkelch.</li></ul>
+                            <p>Feuer und bestimmte Chemikalien können schwere Gewebeschäden verursachen.</p>
+                            <p>Frost kann empfindliche Zellstrukturen beeinträchtigen.</p>
+                            <p>Die Stärke dieser Wirkungen hängt von Temperatur, Exposition, Ausrüstung und individueller Resistenz ab.</p>
+                            <p class="fl-quelle">Quelle: Info_material · Floranoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="fl-panel fl-karte" id="k-11-regeneration-und-heilung">
+                        <summary><span class="fl-nr">11</span><h2>Regeneration und Heilung</h2><span class="fl-chevron" aria-hidden="true"></span></summary>
+                        <div class="fl-text">
+                            <p>Regeneration erfolgt nicht unmittelbar.</p>
+                            <p>Kleinere Verletzungen können durch natürliche Gewebereparatur behandelt werden.</p>
+                            <p>Größere Schäden benötigen medizinische Versorgung oder technische Hilfsmittel.</p>
+                            <p>Schäden am Markkelch sind besonders kritisch.</p>
+                            <p>Die vollständige Zerstörung dieses Organs kann nicht durch gewöhnliche Regeneration rückgängig gemacht werden.</p>
+                            <p class="fl-quelle">Quelle: Info_material · Floranoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="fl-panel fl-karte" id="k-12-ausrustung">
+                        <summary><span class="fl-nr">12</span><h2>Ausrüstung</h2><span class="fl-chevron" aria-hidden="true"></span></summary>
+                        <div class="fl-text">
+                            <p>Floranoidische Ausrüstung benötigt besondere Schnittstellen.</p>
+                            <p>Dazu gehören:</p>
+                            <ul><li>Angepasste Greifgriffe.</li><li>Flexible Körperpanzerung.</li><li>Schutz für Kronenmembranen.</li><li>Wasserspeicher.</li><li>Nährstoffbehälter.</li><li>Temperaturregulierung.</li><li>Raumanzüge mit geeigneten Bewegungssegmenten.</li><li>Künstliche Beleuchtung.</li></ul>
+                            <p>Menschliche Standardausrüstung passt nicht automatisch auf floranoidische Körper.</p>
+                            <p class="fl-quelle">Quelle: Info_material · Floranoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="fl-panel fl-karte" id="k-13-npc-verhalten">
+                        <summary><span class="fl-nr">13</span><h2>NPC-Verhalten</h2><span class="fl-chevron" aria-hidden="true"></span></summary>
+                        <div class="fl-text">
+                            <p>Floranoiden-NPCs erhalten biologische und soziale Bedürfnisse.</p>
+                            <p>Mögliche Verhaltenszustände:</p>
+                            <ol><li>Arbeiten.</li><li>Soziale Interaktion.</li><li>Nahrungsaufnahme.</li><li>Wasserversorgung.</li><li>Photosynthese.</li><li>Ruhe.</li><li>Fortbewegung.</li><li>Medizinische Versorgung.</li><li>Flucht.</li><li>Kampf.</li></ol>
+                            <p>Die tatsächliche Auswahl wird durch Umweltbedingungen, Persönlichkeit, Tagesablauf und aktuelle Ziele beeinflusst.</p>
+                            <p class="fl-quelle">Quelle: Info_material · Floranoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="fl-panel fl-karte" id="k-14-umweltreaktionen">
+                        <summary><span class="fl-nr">14</span><h2>Umweltreaktionen</h2><span class="fl-chevron" aria-hidden="true"></span></summary>
+                        <div class="fl-text">
+                            <p>NPCs können auf bestimmte Umweltbedingungen reagieren.</p>
+                            <p>Beispiele:</p>
+                            <ul><li>Veränderte Kronenstellung bei stärkerer Beleuchtung.</li><li>Aufsuchen schattiger Bereiche bei Überhitzung.</li><li>Nutzung von Versorgungsstationen.</li><li>Reduzierung körperlicher Aktivität bei Erschöpfung.</li><li>Schutzreaktionen gegen gefährliche Chemikalien.</li></ul>
+                            <p>Diese Reaktionen müssen nicht alle mit teurer permanenter Echtzeitsimulation berechnet werden.</p>
+                            <p class="fl-quelle">Quelle: Info_material · Floranoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="fl-panel fl-karte" id="k-15-dialoganimation">
+                        <summary><span class="fl-nr">15</span><h2>Dialoganimation</h2><span class="fl-chevron" aria-hidden="true"></span></summary>
+                        <div class="fl-text">
+                            <p>Floranoiden benötigen eine eigenständige Ausdrucksanimation.</p>
+                            <p>Emotionale Zustände werden unter anderem durch:</p>
+                            <ul><li>Kronenstellung.</li><li>Veränderungen der Gewebespannung.</li><li>Bewegungen der Resonanzlamellen.</li><li>Leichte Pigmentveränderungen.</li><li>Körperhaltung.</li></ul>
+                            <p>dargestellt.</p>
+                            <p>Eine menschliche Lippenanimation ist nicht erforderlich.</p>
+                            <p class="fl-quelle">Quelle: Info_material · Floranoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="fl-panel fl-karte" id="k-16-interaktion-mit-siedlungen">
+                        <summary><span class="fl-nr">16</span><h2>Interaktion mit Siedlungen</h2><span class="fl-chevron" aria-hidden="true"></span></summary>
+                        <div class="fl-text">
+                            <p>Der Spieler kann floranoidische Einrichtungen untersuchen oder nutzen.</p>
+                            <p>Beispiele:</p>
+                            <ul><li>Wasseraufbereitungsanlagen.</li><li>Künstliche Belichtungsflächen.</li><li>Nährstoffproduktion.</li><li>Floranoidische Medizin.</li><li>Biohydraulische Technik.</li><li>Spezialisierte Forschungslabore.</li><li>Umweltüberwachung.</li></ul>
+                            <p>Diese Einrichtungen können in Quests und wirtschaftliche Systeme eingebunden werden.</p>
+                            <p class="fl-quelle">Quelle: Info_material · Floranoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="fl-panel fl-karte" id="k-17-quests">
+                        <summary><span class="fl-nr">17</span><h2>Quests</h2><span class="fl-chevron" aria-hidden="true"></span></summary>
+                        <div class="fl-text">
+                            <p>Mögliche Questansätze:</p>
+                            <dl class="fl-fakten"><div><dt>Versorgungsausfall</dt><dd>In einer floranoidischen Kolonie fällt ein Teil der Nährstoffversorgung aus.</dd></div><div><dt>Politischer Konflikt</dt><dd>Eine neue Industrieanlage schränkt die Belichtung benachbarter Wohngebiete ein.</dd></div><div><dt>Biologische Erkrankung</dt><dd>Ein unbekannter Krankheitserreger verursacht Schäden an hydraulischen Geweben.</dd></div><div><dt>Wissenschaftliche Expedition</dt><dd>Ein Forscherteam untersucht fossile Vorfahren der Floranoiden.</dd></div><div><dt>Interstellare Diplomatie</dt><dd>Mehrere Fraktionen konkurrieren um eine neue biotechnologische Entwicklung.</dd></div></dl>
+                            <p>Die vollständigen Missionen werden später separat ausgearbeitet.</p>
+                            <p class="fl-quelle">Quelle: Info_material · Floranoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="fl-panel fl-karte" id="k-19-save-load-integration">
+                        <summary><span class="fl-nr">19</span><h2>Save-/Load-Integration</h2><span class="fl-chevron" aria-hidden="true"></span></summary>
+                        <div class="fl-text">
+                            <p>Jeder dauerhaft relevante Floranoid besitzt eine persistente Identität.</p>
+                            <p>Zu speichernde Informationen können sein:</p>
+                            <ul><li>Eindeutige Charakteridentität.</li><li>Spezieszugehörigkeit.</li><li>Individuelle biologische Varianten.</li><li>Entwicklungsstadium.</li><li>Langfristige Gesundheitswerte.</li><li>Verletzungen.</li><li>Regenerationszustände.</li><li>Relevante Energiespeicher.</li><li>Soziale Beziehungen.</li><li>Fraktionszugehörigkeit.</li><li>Questfortschritt.</li><li>Dauerhafte Inventar- und Ausrüstungsdaten.</li></ul>
+                            <p>Kurzfristige Werte wie momentane Lichtaufnahme und aktuelle Kronenausrichtung können bei der Wiederherstellung teilweise neu berechnet werden.</p>
+                            <p>Die Datenstruktur soll unabhängig von der jeweiligen Actor-Repräsentation funktionieren.</p>
+                            <p class="fl-quelle">Quelle: Info_material · Floranoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="fl-panel fl-karte" id="k-20-unreal-engine-umsetzung">
+                        <summary><span class="fl-nr">20</span><h2>Unreal-Engine-Umsetzung</h2><span class="fl-chevron" aria-hidden="true"></span></summary>
+                        <div class="fl-text">
+                            <p>Für die technische Architektur wird eine Trennung zwischen Simulation, Darstellung und Persistenz empfohlen.</p>
+                            <p>Mögliche Module:</p>
+                            <ul><li>BiologyState.</li><li>MetabolismSimulation.</li><li>HydraulicMovement.</li><li>FloranoidAnimation.</li><li>SensoryPerception.</li><li>NeedsAndBehavior.</li><li>InteractionSystem.</li><li>PersistenceAdapter.</li></ul>
+                            <p>Dies sind konzeptionelle Modulbezeichnungen und keine bereits angelegten Dateien.</p>
+                            <p>Die Umsetzung kann zunächst in Unreal Engine 5.8.4 prototypisiert werden.</p>
+                            <p>Die Simulationsdaten sollten für eine spätere Übertragung nach Unreal Engine 6 möglichst unabhängig von konkreten Actor- und Komponentenstrukturen bleiben.</p>
+                            <p>Große Populationen sollen über unterschiedliche Simulationsdetailstufen verarbeitet werden.</p>
+                            <p class="fl-quelle">Quelle: Info_material · Floranoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="fl-panel fl-karte" id="k-21-eigenstandiges-spielerlebnis">
+                        <summary><span class="fl-nr">21</span><h2>Eigenständiges Spielerlebnis</h2><span class="fl-chevron" aria-hidden="true"></span></summary>
+                        <div class="fl-text">
+                            <p>Floranoiden unterscheiden sich im Gameplay durch:</p>
+                            <ul><li>Ungewöhnliche Körperanimationen.</li><li>Kombinierte Energieversorgung.</li><li>Angepasste Ausrüstung.</li><li>Spezialisierte Umweltwahrnehmung.</li><li>Besondere Versorgungsbedürfnisse.</li><li>Eigenständige Stadt- und Gebäudetechnik.</li><li>Biologisch begründete Fähigkeiten.</li></ul>
+                            <p>Sie dürfen nicht lediglich als humanoide Charaktere mit pflanzlichen Texturen erscheinen.</p>
+                            <p class="fl-quelle">Quelle: Info_material · Floranoiden · Gameplay/.gitkeep</p>
                         </div>
                     </details>
                     <section class="fl-panel fl-block fl-karussell-block" id="galerie" aria-label="Bilder">
@@ -106,7 +333,27 @@
                 <nav class="fl-panel fl-sprung" data-fl-sprung aria-label="Kapitel dieser Seite">
                     <p class="fl-kicker">Kapitel</p>
                     <button type="button" class="fl-klappen" data-fl-klappen aria-pressed="false">Alle aufklappen</button>
-                    <a href="#noch-offen"><span class="fl-nr">…</span>Spielintegration</a>
+                    <a href="#k-steckbrief"><span class="fl-nr">◇</span>Steckbrief</a>
+                    <a href="#k-1-rolle-im-spiel"><span class="fl-nr">1</span>Rolle im Spiel</a>
+                    <a href="#k-2-eigenstandige-korpermechanik"><span class="fl-nr">2</span>Eigenständige Körpermechanik</a>
+                    <a href="#k-3-bewegungsfahigkeit"><span class="fl-nr">3</span>Bewegungsfähigkeit</a>
+                    <a href="#k-4-biologische-statuswerte"><span class="fl-nr">4</span>Biologische Statuswerte</a>
+                    <a href="#k-5-photosynthese-im-gameplay"><span class="fl-nr">5</span>Photosynthese im Gameplay</a>
+                    <a href="#k-6-organische-ernahrung"><span class="fl-nr">6</span>Organische Ernährung</a>
+                    <a href="#k-7-wasserversorgung"><span class="fl-nr">7</span>Wasserversorgung</a>
+                    <a href="#k-8-naturliche-fahigkeiten"><span class="fl-nr">8</span>Natürliche Fähigkeiten</a>
+                    <a href="#k-9-kampfverhalten"><span class="fl-nr">9</span>Kampfverhalten</a>
+                    <a href="#k-10-schadensarten"><span class="fl-nr">10</span>Schadensarten</a>
+                    <a href="#k-11-regeneration-und-heilung"><span class="fl-nr">11</span>Regeneration und Heilung</a>
+                    <a href="#k-12-ausrustung"><span class="fl-nr">12</span>Ausrüstung</a>
+                    <a href="#k-13-npc-verhalten"><span class="fl-nr">13</span>NPC-Verhalten</a>
+                    <a href="#k-14-umweltreaktionen"><span class="fl-nr">14</span>Umweltreaktionen</a>
+                    <a href="#k-15-dialoganimation"><span class="fl-nr">15</span>Dialoganimation</a>
+                    <a href="#k-16-interaktion-mit-siedlungen"><span class="fl-nr">16</span>Interaktion mit Siedlungen</a>
+                    <a href="#k-17-quests"><span class="fl-nr">17</span>Quests</a>
+                    <a href="#k-19-save-load-integration"><span class="fl-nr">19</span>Save-/Load-Integration</a>
+                    <a href="#k-20-unreal-engine-umsetzung"><span class="fl-nr">20</span>Unreal-Engine-Umsetzung</a>
+                    <a href="#k-21-eigenstandiges-spielerlebnis"><span class="fl-nr">21</span>Eigenständiges Spielerlebnis</a>
                     <a href="#galerie"><span class="fl-nr">▣</span>Bilder</a>
                 </nav>
             </div>

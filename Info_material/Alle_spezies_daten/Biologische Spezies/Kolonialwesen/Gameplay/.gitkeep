@@ -1,0 +1,302 @@
+# APORIA – SPEZIESDOSSIER
+# 08 – SPIELINTEGRATION
+
+## 8.1 Grundlegende Integration
+
+Die Kohäriden sind eine eigenständige intelligente NPC-Spezies innerhalb von APORIA – Unter fremden Kronen.
+
+Spieler können ihnen auf Namaris, in außerplanetaren Siedlungen, Forschungseinrichtungen und während interstellarer Begegnungen begegnen.
+
+Die Spezies besitzt eigene:
+
+- NPC-Charaktere.
+- Körperbaupläne.
+- Animationen.
+- Kommunikationsformen.
+- Gesellschaftliche Einrichtungen.
+- Medizinische Mechaniken.
+- Forschungsinhalte.
+- Missionen.
+- Handelsbeziehungen.
+- Fraktionskontakte.
+
+Eine direkte Auswahl als spielbarer Charakter ist nicht Bestandteil der gegenwärtigen Festlegung. Ihre Biologie wird jedoch so konzipiert, dass eine spätere spielbare Variante technisch möglich bleibt.
+
+## 8.2 Biologisches Zustandsmodell
+
+Jeder Kohärid besitzt einen gemeinsamen biologischen Gesamtzustand.
+
+Dieser wird durch mehrere funktionale Teilzustände ergänzt.
+
+**Wichtige Werte:**
+
+- Allgemeine körperliche Integrität.
+- Neuralintegrität.
+- Versorgungskapazität.
+- Atemleistung.
+- Bewegungsfähigkeit.
+- Wasserhaushalt.
+- Regenerationsreserven.
+- Zooidbestand nach Funktionsgruppen.
+- Aktive Erkrankungen.
+- Körperbauplan.
+
+Die Simulation behandelt das gesamte Kolonialwesen als ein Individuum.
+
+## 8.3 Körperbauplan und Fortbewegung
+
+Die acht Körperbaupläne verwenden unterschiedliche Bewegungsmechaniken.
+
+### Polsterkolonie
+
+Flächige, eher langsame Bewegungen auf unterschiedlichen weichen Untergründen.
+
+### Strömungsband
+
+Wellenförmige Schwimmbewegungen; deutlich eingeschränkte Landmobilität.
+
+### Stelzenkrone
+
+Fortbewegung über mehrere Stützorgane mit angepasster Hindernisüberwindung.
+
+### Panzerkeil
+
+Schwere, bodennahe Bewegung mit hoher mechanischer Stabilität.
+
+### Fächerkörper
+
+Kontrollierte Ausrichtung und Bewegung großer Sensormembranen.
+
+### Hohlringkolonie
+
+Aquatische Bewegung mit ringförmig angeordneten Kontraktionsgruppen.
+
+### Flechtknoten
+
+Mehrere fein koordinierbare Greif- und Bewegungsglieder.
+
+### Spaltfalte
+
+Flache Bewegung und kontrollierte Verformung in engen Passagen.
+
+## 8.4 Wahrnehmung
+
+Die Kohäriden besitzen eine verteilte Sensorik.
+
+Die Position und Ausrichtung der Sinneszooide beeinflusst das Sicht- und Wahrnehmungsfeld.
+
+Ein Fächerkörper kann beispielsweise großflächige Bewegungsmuster besser erkennen.
+
+Ein Spaltfalten-Individuum besitzt Vorteile bei der Wahrnehmung von Druckänderungen in engen Räumen.
+
+Die Wahrnehmung bleibt von Umgebung, Körperzustand und funktionsfähigen Sinneszooiden abhängig.
+
+## 8.5 Kommunikation mit dem Spieler
+
+Die Kohäriden verwenden ihre natürliche mehrkanalige Sprache.
+
+Im Spiel werden ihre Signale über Übersetzungstechnologie verständlich gemacht.
+
+Die Kommunikation kann sichtbar dargestellt werden durch:
+
+- Wandernde Farbveränderungen.
+- Rhythmische Körperbewegungen.
+- Schwingende Membranen.
+- Koordinierte Zooidkontraktionen.
+- Zusätzliche akustische Signale.
+
+Diese Effekte dienen nicht ausschließlich der Dekoration, sondern können Emotionen, Warnungen und Gesprächszustände vermitteln.
+
+## 8.6 Kampfsystem
+
+Kohäriden besitzen mehrere anatomisch unterscheidbare Schadensbereiche.
+
+Die Auswirkungen hängen von der betroffenen Zooidgruppe ab.
+
+| Schaden | Mögliche Auswirkung |
+|---|---|
+| Strukturzooide | Verminderte Stabilität |
+| Bewegungszooide | Bewegungseinschränkungen |
+| Sinneszooide | Eingeschränkte Wahrnehmung |
+| Atemzooide | Reduzierte Sauerstoffversorgung |
+| Transportzooide | Störung der Nährstoffverteilung |
+| Neuralzooide | Koordinations- und Bewusstseinsstörungen |
+| Abwehrzooide | Erhöhte Infektionsgefahr |
+
+Ein Kohärid besitzt nicht automatisch mehr Lebenspunkte, nur weil er aus vielen Zooiden besteht.
+
+Seine Widerstandsfähigkeit ergibt sich aus Körperbau, Schutzstrukturen und funktionaler Redundanz.
+
+## 8.7 Regeneration im Gameplay
+
+Kleinere Verletzungen können unter günstigen Bedingungen innerhalb von Stunden bis Tagen stabilisiert werden.
+
+Die vollständige Neubildung größerer beschädigter Zooidgruppen dauert deutlich länger.
+
+Schwere Schäden können Wochen oder Monate zur Regeneration benötigen.
+
+Regeneration erfordert:
+
+- Nährstoffe.
+- Geeignete Flüssigkeitsversorgung.
+- Funktionierende Wachstumszonen.
+- Ausreichende Sauerstoffversorgung.
+- Medizinische Behandlung bei komplexen Schäden.
+
+Verlorene Erinnerungen lassen sich nicht durch gewöhnliche Regeneration wiederherstellen.
+
+## 8.8 Medizinische Behandlung
+
+Spieler können besondere medizinische Aufgaben übernehmen.
+
+Mögliche Tätigkeiten sind:
+
+1. Untersuchung des Zooidbestands.
+2. Erkennung beschädigter Versorgungssysteme.
+3. Analyse genetischer Kompatibilität.
+4. Behandlung von Infektionen.
+5. Kultivierung geeigneter Ersatzzooide.
+6. Stabilisierung verletzter Neuralnetze.
+7. Überwachung der Regeneration.
+8. Prüfung der Wirksamkeit medizinischer Verfahren.
+
+Die Behandlung kann medizinische Geräte und spezielle Forschungsanlagen erfordern.
+
+## 8.9 Forschungssystem
+
+Die Spezies besitzt einen eigenen Forschungszweig innerhalb der allgemeinen APORIA-Forschung.
+
+Wichtige Freischaltungen können sein:
+
+- Fortschrittliche Zooiddiagnostik.
+- Verbesserte Gewebezucht.
+- Regenerationsverfahren.
+- Untersuchungsmethoden für neuronale Netzwerke.
+- Biologische Umweltanpassungen.
+- Kompatible medizinische Implantate.
+- Sicherere Raumfahrt-Lebenserhaltung.
+
+Ein Forschungsfortschritt hebt nicht sämtliche biologischen Grenzen der Spezies auf.
+
+## 8.10 Missionen
+
+### Mission K-M01 – Unterbrochene Verbindung
+
+Ein verletzter Kohärid leidet unter einer Störung seines neuronalen Verbundnetzes.
+
+Der Spieler muss die Ursache feststellen und eine geeignete medizinische Behandlung ermöglichen.
+
+### Mission K-M02 – Die fremden Zooide
+
+In einer medizinischen Einrichtung werden biologisch inkompatible Zooide gefunden.
+
+Die Herkunft der fremden Gewebe muss untersucht werden.
+
+### Mission K-M03 – Das versunkene Archiv
+
+Ein historisches Archiv in einer überfluteten Siedlung enthält Informationen über frühere Körperbaupläne.
+
+Die Expedition benötigt angepasste Ausrüstung und geeignete lokale Begleiter.
+
+### Mission K-M04 – Biologische Eigentumsrechte
+
+Ein Unternehmen beansprucht Rechte an künstlich kultivierten Zooidgruppen.
+
+Der Konflikt berührt medizinische Versorgung, Forschung und persönliche Freiheitsrechte.
+
+### Mission K-M05 – Die verlorene Kolonie
+
+Eine außerplanetare Forschungsstation verliert den Kontakt zu einer kohäridischen Expedition.
+
+Der Spieler untersucht Umweltgefahren, Versorgungssysteme und mögliche medizinische Ursachen.
+
+## 8.11 Interaktion und Ausrüstung
+
+Kohäriden verwenden angepasste technische Gegenstände.
+
+Die Spielwelt berücksichtigt unterschiedliche Griffsysteme, Körperhöhen und Bewegungsarten.
+
+Ein Flechtknoten kann mehrere Werkzeugkontakte gleichzeitig herstellen.
+
+Ein Strömungsband benötigt andere Arbeitsplätze als eine Stelzenkrone.
+
+Universell nutzbare technische Schnittstellen erleichtern die Zusammenarbeit mit anderen Spezies.
+
+## 8.12 Begleiter und NPC-Verhalten
+
+Kohäridische Begleiter können aufgrund ihres Körperbaus unterschiedliche praktische Fähigkeiten besitzen.
+
+Das Verhalten hängt jedoch ebenso von Persönlichkeit, Ausbildung, Erfahrung und Ausrüstung ab.
+
+Ein besonderer Körperbau begründet keine automatische gesellschaftliche Rolle oder festgelegte Charakterklasse.
+
+NPCs können individuelle Ziele, Beziehungen, Erinnerungen und Wissensstände besitzen.
+
+## 8.13 Animation und visuelle Darstellung
+
+Jeder Körperbauplan erhält eigene Bewegungsanimationen.
+
+Zusätzlich besitzen alle Kohäriden überlagerte biologische Effekte:
+
+- Kleine koordinierte Zooidbewegungen.
+- Pulsierende Versorgungskanäle.
+- Körperliche Signalfolgen.
+- Lokale Kontraktionsbewegungen.
+- Individuelle Farbmuster.
+- Sichtbare Reaktionen auf Verletzungen.
+
+Der Körper darf nicht wie ein gewöhnliches einzelnes Tier wirken, auf dessen Oberfläche lediglich kleine Schuppen angebracht wurden.
+
+## 8.14 Technische Unreal-Engine-Umsetzung
+
+Die spätere technische Umsetzung verwendet eine hierarchische Simulation.
+
+**Ebene 1 – Individuum**
+
+Eine übergeordnete Charakteridentität mit Persönlichkeit, Erinnerungen, Beziehungen und allgemeinen Zuständen.
+
+**Ebene 2 – Körperbauplan**
+
+Festlegung der grundlegenden Anatomie, Bewegung und Schadenszonen.
+
+**Ebene 3 – Zooidgruppen**
+
+Simulation der funktionalen Organismengruppen über zusammengefasste Werte.
+
+**Ebene 4 – Visuelle Zooide**
+
+Zahlreiche grafische Teilorganismen, die bei Bedarf über Instancing, Animation und vereinfachte Bewegungsmodelle dargestellt werden.
+
+Nicht jeder Zooid benötigt einen eigenen Actor oder eine vollständige KI.
+
+## 8.15 Save- und Load-System
+
+Jeder kohäridische NPC erhält eine dauerhafte CharacterID.
+
+Die Identität ist unabhängig von einzelnen Actors oder gerenderten Zooidinstanzen.
+
+Gespeichert werden insbesondere:
+
+- CharacterID.
+- Spezieskennung.
+- Körperbauplancode.
+- Individuelle Körpermerkmale.
+- Zustand der funktionalen Zooidgruppen.
+- Bedeutende Verletzungen.
+- Regenerationsfortschritt.
+- Aktive Erkrankungen.
+- Neuronale Beeinträchtigungen.
+- Persönliche Beziehungen und Erinnerungsdaten.
+- Position und Weltzuordnung.
+
+Die große Anzahl grafischer Einzelzooide wird beim Laden aus den gespeicherten Zustandsdaten rekonstruiert.
+
+Dadurch bleibt die Spezies für große Spielwelten technisch beherrschbar.
+
+## 8.16 Erweiterbarkeit
+
+Die Kernsysteme werden zunächst für die vorhandene Unreal-Engine-Entwicklungsumgebung konzipiert.
+
+Für die spätere Produktionsphase sollen Datenmodelle, Identitäten und Gameplaykomponenten möglichst unabhängig von konkreten Actor-Implementierungen bleiben.
+
+So können die Systeme bei einer künftigen Umstellung auf Unreal Engine 6 angepasst werden, ohne das gesamte Spezieskonzept neu aufzubauen.

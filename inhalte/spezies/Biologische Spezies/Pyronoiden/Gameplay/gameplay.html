@@ -43,11 +43,418 @@
             </nav>
             <div class="py-layout">
                 <div class="py-inhalt">
-                    <details class="py-panel py-karte" id="noch-offen" open>
-                        <summary><span class="py-nr">…</span><h2>Spielintegration</h2><span class="py-chevron" aria-hidden="true"></span></summary>
+                    <details class="py-panel py-karte" id="k-8-1-grundlegende-einbindung" open>
+                        <summary><span class="py-nr">8.1</span><h2>Grundlegende Einbindung</h2><span class="py-chevron" aria-hidden="true"></span></summary>
                         <div class="py-text">
-                            <p class="py-offen">Noch nicht ausgearbeitet.</p>
-                            <p class="py-quelle">Vorgesehene Infodateien (noch ohne Text): Gameplay/.gitkeep</p>
+                            <dl class="py-fakten"><div><dt>Spiel</dt><dd>Unter fremden Kronen</dd></div><div><dt>Universum</dt><dd>APORIA</dd></div><div><dt>Spezies</dt><dd>Pyronoiden</dd></div><div><dt>Spielbarkeit</dt><dd>Vorgesehen</dd></div><div><dt>NPC-Integration</dt><dd>Vollständig vorgesehen</dd></div><div><dt>Grundprinzip</dt><dd>Klassenfreie Charakterentwicklung mit biologisch besonderen Fähigkeiten</dd></div></dl>
+                            <p>Pyronoiden werden als eigenständige intelligente Spezies in die Spielwelt integriert.</p>
+                            <p>Sie können als NPCs, Bewohner ihrer Heimatwelt, Händler, Forscher, Techniker, Diplomaten und Begleiter auftreten.</p>
+                            <p>Eine spätere spielbare Charakteroption beziehungsweise geeignete Charaktertransformation kann ebenfalls vorgesehen werden.</p>
+                            <p>Die menschliche Hauptprotagonistin bleibt davon unabhängig.</p>
+                            <p class="py-quelle">Quelle: Info_material · Pyronoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="py-panel py-karte" id="k-8-2-biologische-charakterwerte">
+                        <summary><span class="py-nr">8.2</span><h2>Biologische Charakterwerte</h2><span class="py-chevron" aria-hidden="true"></span></summary>
+                        <div class="py-text">
+                            <p>Neben allgemeinen Charakterwerten benötigen Pyronoiden zusätzliche biologische Zustände.</p>
+                            <div class="py-tabelle"><table><thead><tr><th>Charakterwert</th><th>Funktion</th></tr></thead><tbody><tr><td>Thermischer Zustand</td><td>Aktuelle Temperatur und thermische Funktionsfähigkeit</td></tr><tr><td>Elektrochemische Reserve</td><td>Kurzfristig verfügbare Stoffwechselenergie</td></tr><tr><td>Mineralische Versorgung</td><td>Verfügbare Stoffe für Stoffwechsel und Regeneration</td></tr><tr><td>Hüllenintegrität</td><td>Zustand der äußeren Schutzstrukturen</td></tr><tr><td>Flusskernstabilität</td><td>Zustand des zentralen Lebensorgans</td></tr><tr><td>Informationsnetzwerk</td><td>Zustand der Wahrnehmungs- und Steuerungsfunktionen</td></tr><tr><td>Regenerationszustand</td><td>Fortschritt biologischer Reparaturprozesse</td></tr></tbody></table></div>
+                            <p>Die endgültigen numerischen Werte werden im zentralen Balancingsystem definiert.</p>
+                            <p class="py-quelle">Quelle: Info_material · Pyronoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="py-panel py-karte" id="k-8-3-thermische-spielmechanik">
+                        <summary><span class="py-nr">8.3</span><h2>Thermische Spielmechanik</h2><span class="py-chevron" aria-hidden="true"></span></summary>
+                        <div class="py-text">
+                            <p>Die Temperatur beeinflusst die biologischen Funktionen des Charakters.</p>
+                            <p>In geeigneten Hochtemperaturregionen erreichen Pyronoiden ihre gewöhnliche Leistungsfähigkeit.</p>
+                            <p>Sinkt die Temperatur deutlich ab, verlangsamen sich Stoffwechsel und Bewegung.</p>
+                            <p>Bei extremer oder lang anhaltender Abkühlung können schwere Funktionsstörungen entstehen.</p>
+                            <p>Wird ein kritischer Zustand erreicht, kann der Charakter in Kältestarre übergehen.</p>
+                            <p>Die Kältestarre ist nicht automatisch tödlich.</p>
+                            <p>Eine rechtzeitige Wiedererwärmung und medizinische Stabilisierung können die Lebensfunktionen wiederherstellen.</p>
+                            <p class="py-quelle">Quelle: Info_material · Pyronoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="py-panel py-karte" id="k-8-4-temperaturbereiche">
+                        <summary><span class="py-nr">8.4</span><h2>Temperaturbereiche</h2><span class="py-chevron" aria-hidden="true"></span></summary>
+                        <div class="py-text">
+                            <p>Für den ersten Gameplay-Entwurf werden folgende Zustände verwendet:</p>
+                            <dl class="py-fakten"><div><dt>Optimaler Bereich</dt><dd>Ungefähr 500–800 °C Umgebungstemperatur bei geeigneter Stoffversorgung.</dd></div><div><dt>Unterversorgung durch Kälte</dt><dd>Unterhalb des bevorzugten Bereichs nimmt die Leistungsfähigkeit abhängig von Dauer und individueller Anpassung ab.</dd></div><div><dt>Kritische Abkühlung</dt><dd>Unter ungefähr 300 °C treten bei vielen Individuen deutliche Funktionsstörungen auf.</dd></div><div><dt>Kältestarre</dt><dd>Bei stärkerer oder länger anhaltender Abkühlung möglich.</dd></div><div><dt>Thermische Überlastung</dt><dd>Oberhalb der individuellen Material- und Stoffwechselgrenzen.</dd></div></dl>
+                            <p>Diese Bereiche werden nicht als sofortige feste Schadensschwellen umgesetzt.</p>
+                            <p>Die tatsächliche Wirkung hängt von Expositionsdauer, Körperzustand, Ausrüstung und Formgruppe ab.</p>
+                            <p class="py-quelle">Quelle: Info_material · Pyronoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="py-panel py-karte" id="k-8-5-warmehaushalt-und-energieverbrauch">
+                        <summary><span class="py-nr">8.5</span><h2>Wärmehaushalt und Energieverbrauch</h2><span class="py-chevron" aria-hidden="true"></span></summary>
+                        <div class="py-text">
+                            <p>Die Temperaturmechanik berücksichtigt die Aufnahme und Abgabe von Wärme.</p>
+                            <p>Besondere Aktivitäten können zusätzliche Energie benötigen.</p>
+                            <p>Dazu gehören intensive Bewegung, beschleunigte Regeneration und bestimmte thermische Fähigkeiten.</p>
+                            <p>Pyronoiden können keine unbegrenzte Energie aus ihrer Umgebung gewinnen.</p>
+                            <p>Chemische Versorgung und nutzbare Wärmegradienten bleiben wesentliche Voraussetzungen.</p>
+                            <p class="py-quelle">Quelle: Info_material · Pyronoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="py-panel py-karte" id="k-8-6-kalteschaden">
+                        <summary><span class="py-nr">8.6</span><h2>Kälteschäden</h2><span class="py-chevron" aria-hidden="true"></span></summary>
+                        <div class="py-text">
+                            <p>Kälte kann unterschiedliche Auswirkungen haben:</p>
+                            <ul><li>Reduzierte Bewegungsgeschwindigkeit</li><li>Langsamere Informationsverarbeitung</li><li>Verringerte Regenerationsfähigkeit</li><li>Eingeschränkte Sinnesleistung</li><li>Erhöhter Bedarf an gespeicherter Energie</li><li>Störungen einzelner Organsysteme</li><li>Kältestarre</li><li>Irreversible Schäden bei extremer oder zu langer Belastung</li></ul>
+                            <p>Diese Folgen sollen abgestuft und nicht als ausschließlich binärer Zustand umgesetzt werden.</p>
+                            <p class="py-quelle">Quelle: Info_material · Pyronoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="py-panel py-karte" id="k-8-7-vorteile-in-hitzegebieten">
+                        <summary><span class="py-nr">8.7</span><h2>Vorteile in Hitzegebieten</h2><span class="py-chevron" aria-hidden="true"></span></summary>
+                        <div class="py-text">
+                            <p>Pyronoiden besitzen deutliche Vorteile innerhalb geeigneter vulkanischer Umgebungen.</p>
+                            <p>Sie benötigen dort wesentlich weniger thermische Schutztechnik als viele andere intelligente Spezies.</p>
+                            <p>Sie können heiße Rohstoffgebiete betreten, geothermische Anlagen warten und bestimmte gefährliche Umgebungen erkunden.</p>
+                            <p>Ihre Widerstandsfähigkeit bleibt abhängig von Temperatur, Chemie und mechanischen Belastungen.</p>
+                            <p class="py-quelle">Quelle: Info_material · Pyronoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="py-panel py-karte" id="k-8-8-kontakt-mit-lava">
+                        <summary><span class="py-nr">8.8</span><h2>Kontakt mit Lava</h2><span class="py-chevron" aria-hidden="true"></span></summary>
+                        <div class="py-text">
+                            <p>Einzelne Formgruppen können geeignete Schmelzen kurzfristig betreten.</p>
+                            <p>Besonders Lavasaumpyronoiden erhalten entsprechende biologische Vorteile.</p>
+                            <p>Der Aufenthalt in Lava bleibt jedoch gefährlich.</p>
+                            <p>Die Spielmechanik berücksichtigt:</p>
+                            <ul><li>Temperatur der Schmelze</li><li>Chemische Zusammensetzung</li><li>Dauer des Kontakts</li><li>Belastung der Außenhülle</li><li>Tiefe und mechanische Widerstände</li><li>Biologische Formgruppe</li><li>Zusätzliche Schutztechnik</li></ul>
+                            <p>Lava ist damit kein universell ungefährliches Bewegungsmedium für die gesamte Spezies.</p>
+                            <p class="py-quelle">Quelle: Info_material · Pyronoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="py-panel py-karte" id="k-8-9-biologische-formgruppen">
+                        <summary><span class="py-nr">8.9</span><h2>Biologische Formgruppen</h2><span class="py-chevron" aria-hidden="true"></span></summary>
+                        <div class="py-text">
+                            <h3>Schachtpyronoiden</h3>
+                            <p>Mögliche spielmechanische Vorteile:</p>
+                            <ul><li>Höhere Stabilität bei mechanischer Belastung</li><li>Verbesserte Bewegung auf schwierigem Felsuntergrund</li><li>Spezialisierte seismische Wahrnehmung</li></ul>
+                            <h3>Lavasaumpyronoiden</h3>
+                            <p>Mögliche Vorteile:</p>
+                            <ul><li>Höhere kurzfristige Hitzetoleranz</li><li>Widerstandsfähigere Außenhülle</li><li>Bessere Eignung für bestimmte Schmelzrandregionen</li></ul>
+                            <h3>Aschepyronoiden</h3>
+                            <p>Mögliche Vorteile:</p>
+                            <ul><li>Höhere Mobilität</li><li>Bessere Anpassung an Temperaturschwankungen</li><li>Vorteile bei der Orientierung auf offenen vulkanischen Flächen</li></ul>
+                            <h3>Schlackenfeldpyronoiden</h3>
+                            <p>Mögliche Vorteile:</p>
+                            <ul><li>Spezialisierte mineralische Stoffaufnahme</li><li>Effizientere Verarbeitung bestimmter Rohstoffe</li><li>Verbesserte chemische Analyse geeigneter Materialien</li></ul>
+                            <p>Die Formgruppen sind biologische Varianten, keine festen Charakterklassen.</p>
+                            <p class="py-quelle">Quelle: Info_material · Pyronoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="py-panel py-karte" id="k-8-10-charakterentwicklung">
+                        <summary><span class="py-nr">8.10</span><h2>Charakterentwicklung</h2><span class="py-chevron" aria-hidden="true"></span></summary>
+                        <div class="py-text">
+                            <p>Pyronoiden verwenden das klassenfreie Entwicklungssystem von APORIA.</p>
+                            <p>Individuen können Fähigkeiten durch Erfahrung, Forschung, Ausbildung und Ausrüstung verbessern.</p>
+                            <p>Biologische Eigenschaften definieren die natürlichen Ausgangsmöglichkeiten.</p>
+                            <p>Erworbene Fähigkeiten bleiben davon getrennt.</p>
+                            <p>Nicht jede Formgruppe erhält exklusiven Zugang zu bestimmten Berufen oder gesellschaftlichen Tätigkeiten.</p>
+                            <p class="py-quelle">Quelle: Info_material · Pyronoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="py-panel py-karte" id="k-8-11-thermische-wahrnehmung">
+                        <summary><span class="py-nr">8.11</span><h2>Thermische Wahrnehmung</h2><span class="py-chevron" aria-hidden="true"></span></summary>
+                        <div class="py-text">
+                            <p>Die natürlichen Sinne ermöglichen besondere Wahrnehmungsmodi.</p>
+                            <dl class="py-fakten"><div><dt>Thermische Analyse</dt><dd>Anzeige geeigneter Wärmesignaturen.</dd></div><div><dt>Seismische Wahrnehmung</dt><dd>Erkennung bestimmter Erschütterungen und Bewegungen durch feste Materialien.</dd></div><div><dt>Chemische Analyse</dt><dd>Erfassung geeigneter Gase, Mineralien und Stoffveränderungen.</dd></div><div><dt>Elektromagnetische Wahrnehmung</dt><dd>Erkennung bestimmter elektrischer und magnetischer Auffälligkeiten.</dd></div></dl>
+                            <p>Die Fähigkeiten besitzen begrenzte Reichweite und Genauigkeit.</p>
+                            <p class="py-quelle">Quelle: Info_material · Pyronoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="py-panel py-karte" id="k-8-12-kommunikation-im-gameplay">
+                        <summary><span class="py-nr">8.12</span><h2>Kommunikation im Gameplay</h2><span class="py-chevron" aria-hidden="true"></span></summary>
+                        <div class="py-text">
+                            <p>Pyronoiden verwenden ihre natürlichen Resonanzsprachen und ergänzende Lichtsignale.</p>
+                            <p>Fremde Spezies benötigen geeignete Übersetzungssysteme, um komplexe Aussagen vollständig zu verstehen.</p>
+                            <p>Kommunikation kann abhängig von Atmosphäre und Umgebung unterschiedlich funktionieren.</p>
+                            <p>In luftleeren Räumen werden technische Übertragungssysteme oder geeignete alternative Signalkanäle verwendet.</p>
+                            <p class="py-quelle">Quelle: Info_material · Pyronoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="py-panel py-karte" id="k-8-13-fortbewegung">
+                        <summary><span class="py-nr">8.13</span><h2>Fortbewegung</h2><span class="py-chevron" aria-hidden="true"></span></summary>
+                        <div class="py-text">
+                            <p>Die vier tragenden Gliedmaßen ermöglichen stabile Bewegung auf unebenem Untergrund.</p>
+                            <p>Die Bewegungsanimationen unterscheiden sich deutlich von humanoiden Bewegungsabläufen.</p>
+                            <p>Besondere Bewegungszustände können sein:</p>
+                            <ul><li>Normales Gehen</li><li>Beschleunigtes Laufen</li><li>Klettern</li><li>Bewegung auf geneigten Felsflächen</li><li>Vorsichtige Bewegung über instabile Oberflächen</li><li>Bewegung unter hoher thermischer Belastung</li><li>Bewegung mit beschädigter Hülle</li></ul>
+                            <p>Die hohe Körpermasse beeinflusst Beschleunigung, Sprungverhalten und mechanische Belastungen.</p>
+                            <p class="py-quelle">Quelle: Info_material · Pyronoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="py-panel py-karte" id="k-8-14-kampfmechanik">
+                        <summary><span class="py-nr">8.14</span><h2>Kampfmechanik</h2><span class="py-chevron" aria-hidden="true"></span></summary>
+                        <div class="py-text">
+                            <p>Pyronoiden verfügen über natürliche mechanische Widerstandsfähigkeit.</p>
+                            <p>Ihre Körpermasse und Gliedmaßen ermöglichen kraftvolle körperliche Angriffe.</p>
+                            <p>Bestimmte Kontaktangriffe können thermische Schäden verursachen.</p>
+                            <p>Die Wirkung hängt von Temperatur, Kontaktfläche und Einwirkungsdauer ab.</p>
+                            <p>Pyronoiden können nicht automatisch beliebige Feuergeschosse erzeugen oder unbegrenzt Hitze ausstrahlen.</p>
+                            <p>Besondere thermische Angriffe müssen biologisch oder technisch begründet sein.</p>
+                            <p class="py-quelle">Quelle: Info_material · Pyronoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="py-panel py-karte" id="k-8-15-waffen">
+                        <summary><span class="py-nr">8.15</span><h2>Waffen</h2><span class="py-chevron" aria-hidden="true"></span></summary>
+                        <div class="py-text">
+                            <p>Waffen werden an die Anatomie und die hohen Betriebstemperaturen angepasst.</p>
+                            <p>Geeignete Waffentypen umfassen mechanische Nahkampfwaffen und technisch unterstützte Systeme.</p>
+                            <p>Interstellare Waffentechnik kann mit passenden Materialien und Schutzsystemen verwendet werden.</p>
+                            <p>Nicht sämtliche Waffen anderer Spezies sind ohne Anpassung kompatibel.</p>
+                            <p class="py-quelle">Quelle: Info_material · Pyronoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="py-panel py-karte" id="k-8-16-rustungen">
+                        <summary><span class="py-nr">8.16</span><h2>Rüstungen</h2><span class="py-chevron" aria-hidden="true"></span></summary>
+                        <div class="py-text">
+                            <p>Pyronoidische Rüstungen müssen sowohl mechanischen Schutz als auch thermische Stabilität bieten.</p>
+                            <p>Die Konstruktion berücksichtigt die sechs Hauptgliedmaßen und die mineralische Außenhülle.</p>
+                            <p>Rüstungen können zusätzliche Sensoren, Energiespeicher und chemische Schutzsysteme enthalten.</p>
+                            <p>Sie dürfen die natürlichen Versorgungs- und Wärmeleitungsfunktionen nicht unkontrolliert blockieren.</p>
+                            <p class="py-quelle">Quelle: Info_material · Pyronoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="py-panel py-karte" id="k-8-17-ausrustung-fur-kalte-umgebungen">
+                        <summary><span class="py-nr">8.17</span><h2>Ausrüstung für kalte Umgebungen</h2><span class="py-chevron" aria-hidden="true"></span></summary>
+                        <div class="py-text">
+                            <p>Auf vielen fremden Planeten benötigen Pyronoiden thermisch kontrollierte Schutzsysteme.</p>
+                            <p>Mögliche Ausrüstungsgruppen sind:</p>
+                            <ul><li>Tragbare Heizmodule</li><li>Isolierte Außenhüllen</li><li>Energiepuffer</li><li>Chemische Versorgungsbehälter</li><li>Temperaturüberwachung</li><li>Notfall-Wärmespeicher</li><li>Thermisch kontrollierte Ruhekammern</li></ul>
+                            <p>Ohne geeignete Versorgung ist ein langfristiger Aufenthalt in kalten Umgebungen nur eingeschränkt möglich.</p>
+                            <p class="py-quelle">Quelle: Info_material · Pyronoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="py-panel py-karte" id="k-8-18-regeneration">
+                        <summary><span class="py-nr">8.18</span><h2>Regeneration</h2><span class="py-chevron" aria-hidden="true"></span></summary>
+                        <div class="py-text">
+                            <p>Die natürliche Regeneration benötigt Wärme, geeignete mineralische Stoffe und Zeit.</p>
+                            <p>Kleinere Oberflächenverletzungen können ohne umfangreiche medizinische Behandlung ausheilen.</p>
+                            <p>Größere Schäden erfordern besondere Materialien oder medizinische Versorgung.</p>
+                            <p>Schwere Schäden am Flusskern und am Informationsnetzwerk können dauerhaft bestehen bleiben.</p>
+                            <p class="py-quelle">Quelle: Info_material · Pyronoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="py-panel py-karte" id="k-8-19-medizinisches-gameplay">
+                        <summary><span class="py-nr">8.19</span><h2>Medizinisches Gameplay</h2><span class="py-chevron" aria-hidden="true"></span></summary>
+                        <div class="py-text">
+                            <p>Medizinische Einrichtungen müssen an die pyronoidische Biologie angepasst sein.</p>
+                            <p>Mögliche Behandlungsmaßnahmen sind:</p>
+                            <ul><li>Stabilisierung des Wärmehaushalts</li><li>Entfernung schädlicher Mineralablagerungen</li><li>Versorgung mit geeigneten chemischen Reaktionspartnern</li><li>Reparatur beschädigter Außenstrukturen</li><li>Behandlung ionischer Leitungsstörungen</li><li>Stabilisierung des Flusskerns</li><li>Untersuchung biologischer Entwicklungsfehler</li></ul>
+                            <p>Die medizinischen Verfahren unterscheiden sich von jenen wasserbasierter Spezies.</p>
+                            <p class="py-quelle">Quelle: Info_material · Pyronoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="py-panel py-karte" id="k-8-20-fortpflanzung-und-nachwuchs">
+                        <summary><span class="py-nr">8.20</span><h2>Fortpflanzung und Nachwuchs</h2><span class="py-chevron" aria-hidden="true"></span></summary>
+                        <div class="py-text">
+                            <p>Falls das allgemeine Spielsystem Fortpflanzung, Familien oder biologische Nachkommen unterstützt, werden die Besonderheiten der Pyronoiden berücksichtigt.</p>
+                            <p>Die Fortpflanzung erfolgt durch kompatible Erbinformation und geschützte Brutkörper.</p>
+                            <p>Nachkommen besitzen individuelle biologische Eigenschaften.</p>
+                            <p>Die Entwicklung benötigt geeignete thermische Bedingungen.</p>
+                            <p>Erbliche Formgruppenmerkmale können zwischen kompatiblen Eltern kombiniert werden.</p>
+                            <p class="py-quelle">Quelle: Info_material · Pyronoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="py-panel py-karte" id="k-8-21-genetik-und-evolution">
+                        <summary><span class="py-nr">8.21</span><h2>Genetik und Evolution</h2><span class="py-chevron" aria-hidden="true"></span></summary>
+                        <div class="py-text">
+                            <p>Die thermoionische Erbmatrix wird als eigener biologischer Informationstyp im allgemeinen Genetiksystem behandelt.</p>
+                            <p>Relevante Eigenschaften sind:</p>
+                            <ul><li>Erbliche Formgruppenmerkmale</li><li>Körperbau</li><li>Mineralische Hüllenzusammensetzung</li><li>Temperaturtoleranz</li><li>Stoffwechselvarianten</li><li>Sinnesleistungen</li><li>Regenerationsanlagen</li><li>Entwicklungsregulation</li></ul>
+                            <p>Künstliche Veränderungen können über entsprechende Forschungs- und Technologiesysteme ermöglicht werden.</p>
+                            <p>Die dafür geltenden Grenzen werden durch wissenschaftliche Voraussetzungen und Balancing bestimmt.</p>
+                            <p class="py-quelle">Quelle: Info_material · Pyronoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="py-panel py-karte" id="k-8-22-rohstoffe">
+                        <summary><span class="py-nr">8.22</span><h2>Rohstoffe</h2><span class="py-chevron" aria-hidden="true"></span></summary>
+                        <div class="py-text">
+                            <p>Für die pyronoidische Biologie und Technologie werden spezialisierte Materialien benötigt.</p>
+                            <p>Relevante Rohstoffgruppen sind:</p>
+                            <ul><li>Silikatische Mineralien</li><li>Metallhaltige Verbindungen</li><li>Schwefelhaltige Stoffe</li><li>Leitfähige Mineralmischungen</li><li>Temperaturbeständige Verbundmaterialien</li><li>Chemische Energieträger</li><li>Materialien zur Regeneration der Außenhülle</li></ul>
+                            <p>Die genaue Einteilung erfolgt innerhalb des allgemeinen Rohstoffsystems von APORIA.</p>
+                            <p class="py-quelle">Quelle: Info_material · Pyronoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="py-panel py-karte" id="k-8-23-herstellung">
+                        <summary><span class="py-nr">8.23</span><h2>Herstellung</h2><span class="py-chevron" aria-hidden="true"></span></summary>
+                        <div class="py-text">
+                            <p>Pyronoiden besitzen besondere Hochtemperatur-Verarbeitungstechniken.</p>
+                            <p>Daraus ergeben sich spezielle Werkzeuge, Maschinen und Herstellungsverfahren.</p>
+                            <p>Mögliche Produktionsgruppen sind:</p>
+                            <ul><li>Hochtemperaturkeramiken</li><li>Speziallegierungen</li><li>Mineralische Verbundwerkstoffe</li><li>Geothermische Energietechnik</li><li>Thermische Schutzsysteme</li><li>Chemische Reaktionsanlagen</li><li>Spezialisierte biologische Versorgungstechnik</li></ul>
+                            <p>Diese Technologien werden in das allgemeine Herstellungs- und Werkstattsystem integriert.</p>
+                            <p class="py-quelle">Quelle: Info_material · Pyronoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="py-panel py-karte" id="k-8-24-wissenschaftliche-forschung">
+                        <summary><span class="py-nr">8.24</span><h2>Wissenschaftliche Forschung</h2><span class="py-chevron" aria-hidden="true"></span></summary>
+                        <div class="py-text">
+                            <p>Die Spezies wird in die vorhandenen APORIA-Forschungszweige eingebunden.</p>
+                            <p>Besonders relevant sind:</p>
+                            <dl class="py-fakten"><div><dt>Xenobiologie</dt><dd>Erforschung mineralisch-thermoionischer Organismen.</dd></div><div><dt>Genetik und Biotechnologie</dt><dd>Analyse der Erbmatrix und ihrer Regulationssysteme.</dd></div><div><dt>Medizin</dt><dd>Behandlung speziesbezogener Erkrankungen.</dd></div><div><dt>Planetologie</dt><dd>Untersuchung vulkanisch aktiver Planeten.</dd></div><div><dt>Geologie</dt><dd>Analyse tektonischer und magmatischer Prozesse.</dd></div><div><dt>Werkstoffkunde</dt><dd>Erforschung temperaturbeständiger biologischer und technischer Materialien.</dd></div><div><dt>Energietechnik</dt><dd>Entwicklung chemischer und thermischer Energiesysteme.</dd></div><div><dt>Bewusstseinsforschung</dt><dd>Untersuchung dezentraler biologischer Informationsnetzwerke.</dd></div></dl>
+                            <p>Diese Forschungsinhalte werden als Unterthemen in die vorhandene Forschungsstruktur eingebunden.</p>
+                            <p class="py-quelle">Quelle: Info_material · Pyronoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="py-panel py-karte" id="k-8-25-siedlungsbau">
+                        <summary><span class="py-nr">8.25</span><h2>Siedlungsbau</h2><span class="py-chevron" aria-hidden="true"></span></summary>
+                        <div class="py-text">
+                            <p>Pyronoidische Siedlungen benötigen geothermische oder technische Wärmeversorgung.</p>
+                            <p>Wichtige Bauwerke sind:</p>
+                            <ul><li>Wohnkammern</li><li>Wärmeversorgungsstationen</li><li>Mineralverarbeitungsanlagen</li><li>Brutstätten</li><li>Regenerationskammern</li><li>Medizinische Einrichtungen</li><li>Forschungslabore</li><li>Geologische Überwachungsstationen</li><li>Transportanlagen</li><li>Handelsstationen</li></ul>
+                            <p>Die Gebäude müssen an hohe Temperaturen und teilweise hohe mechanische Belastungen angepasst sein.</p>
+                            <p class="py-quelle">Quelle: Info_material · Pyronoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="py-panel py-karte" id="k-8-26-gemischte-siedlungen">
+                        <summary><span class="py-nr">8.26</span><h2>Gemischte Siedlungen</h2><span class="py-chevron" aria-hidden="true"></span></summary>
+                        <div class="py-text">
+                            <p>Das Zusammenleben mit anderen Spezies erfordert thermisch getrennte Wohnbereiche.</p>
+                            <p>Gemeinsame Infrastruktur kann über geschützte Übergangszonen verbunden werden.</p>
+                            <p>Technische Ausfälle können unterschiedliche biologische Gefahren für die Bewohner auslösen.</p>
+                            <p>Die Temperaturversorgung wird deshalb Bestandteil der Siedlungssimulation.</p>
+                            <p class="py-quelle">Quelle: Info_material · Pyronoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="py-panel py-karte" id="k-8-27-fahrzeuge-und-raumfahrt">
+                        <summary><span class="py-nr">8.27</span><h2>Fahrzeuge und Raumfahrt</h2><span class="py-chevron" aria-hidden="true"></span></summary>
+                        <div class="py-text">
+                            <p>Pyronoiden benötigen für den Aufenthalt in Fahrzeugen geeignete Innenraumtemperaturen und chemische Versorgung.</p>
+                            <p>Ihre Raumschiffe besitzen thermisch kontrollierte Aufenthaltsbereiche.</p>
+                            <p>Gemischte Besatzungen verwenden voneinander getrennte Umweltzonen.</p>
+                            <p>Die Temperaturregelung ist ein Bestandteil der Energieversorgung.</p>
+                            <p>Bei längerem Ausfall können lebensgefährliche Zustände entstehen.</p>
+                            <p class="py-quelle">Quelle: Info_material · Pyronoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="py-panel py-karte" id="k-8-28-npc-verhalten">
+                        <summary><span class="py-nr">8.28</span><h2>NPC-Verhalten</h2><span class="py-chevron" aria-hidden="true"></span></summary>
+                        <div class="py-text">
+                            <p>Pyronoidische NPCs berücksichtigen ihre Umweltanforderungen.</p>
+                            <p>Sie können:</p>
+                            <ul><li>Geeignete Wärmebereiche suchen</li><li>Rohstoffe beschaffen</li><li>Thermische Gefahren erkennen</li><li>Brutstätten schützen</li><li>Beschädigte Infrastruktur reparieren</li><li>Ruhephasen einhalten</li><li>Auf geologische Warnungen reagieren</li><li>Bei Kälte Schutzräume aufsuchen</li><li>Eigene berufliche Tätigkeiten ausführen</li></ul>
+                            <p>Zusätzlich werden Entscheidungen durch Persönlichkeit, Kultur, Ausbildung und individuelle Ziele beeinflusst.</p>
+                            <p class="py-quelle">Quelle: Info_material · Pyronoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="py-panel py-karte" id="k-8-29-gesellschaftliche-npc-rollen">
+                        <summary><span class="py-nr">8.29</span><h2>Gesellschaftliche NPC-Rollen</h2><span class="py-chevron" aria-hidden="true"></span></summary>
+                        <div class="py-text">
+                            <p>Geeignete Rollen sind:</p>
+                            <ul><li>Geologen</li><li>Mineraltechniker</li><li>Wissenschaftler</li><li>Mediziner</li><li>Händler</li><li>Bergarbeiter</li><li>Ingenieure</li><li>Politiker</li><li>Künstler</li><li>Sicherheitskräfte</li><li>Diplomaten</li><li>Lehrer</li><li>Forscher</li><li>Raumfahrer</li></ul>
+                            <p>Biologische Formgruppen schreiben keine dieser Berufe zwingend vor.</p>
+                            <p class="py-quelle">Quelle: Info_material · Pyronoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="py-panel py-karte" id="k-8-30-handel">
+                        <summary><span class="py-nr">8.30</span><h2>Handel</h2><span class="py-chevron" aria-hidden="true"></span></summary>
+                        <div class="py-text">
+                            <p>Spieler können mit pyronoidischen Gemeinschaften Rohstoffe, Technologien und Dienstleistungen austauschen.</p>
+                            <p>Besonders wertvoll können Hochtemperaturwerkstoffe und spezialisierte geologische Technologien sein.</p>
+                            <p>Handelsbeziehungen werden durch politische Entscheidungen, lokale Ressourcen und Fraktionsbeziehungen beeinflusst.</p>
+                            <p class="py-quelle">Quelle: Info_material · Pyronoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="py-panel py-karte" id="k-8-31-diplomatie">
+                        <summary><span class="py-nr">8.31</span><h2>Diplomatie</h2><span class="py-chevron" aria-hidden="true"></span></summary>
+                        <div class="py-text">
+                            <p>Spieler können Beziehungen zu unterschiedlichen pyronoidischen Gemeinschaften aufbauen.</p>
+                            <p>Politische Entscheidungen können Einfluss auf einzelne Städte oder den Bund der Schachtstädte besitzen.</p>
+                            <p>Die Beziehungen zu Konföderation, Konsortium, Protektorat, Synaptorat und Ätherwanderern können in entsprechenden Missionen eine Rolle spielen.</p>
+                            <p>Nicht alle pyronoidischen Organisationen vertreten dieselben politischen Interessen.</p>
+                            <p class="py-quelle">Quelle: Info_material · Pyronoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="py-panel py-karte" id="k-8-32-missionstypen">
+                        <summary><span class="py-nr">8.32</span><h2>Missionstypen</h2><span class="py-chevron" aria-hidden="true"></span></summary>
+                        <div class="py-text">
+                            <h3>Geologische Erforschung</h3>
+                            <p>Untersuchung gefährlicher Vulkanlandschaften und geothermischer Systeme.</p>
+                            <h3>Katastrophenschutz</h3>
+                            <p>Rettung von Bewohnern und Stabilisierung kritischer Versorgungsanlagen.</p>
+                            <h3>Xenobiologische Forschung</h3>
+                            <p>Erforschung der Erbmatrix und besonderer biologischer Fähigkeiten.</p>
+                            <h3>Medizinische Missionen</h3>
+                            <p>Beschaffung spezieller Materialien und Behandlung seltener Erkrankungen.</p>
+                            <h3>Rohstoffkonflikte</h3>
+                            <p>Entscheidungen über wirtschaftliche Nutzung und Schutz empfindlicher Gebiete.</p>
+                            <h3>Archäologie</h3>
+                            <p>Erforschung alter Schachtstädte und verlorener Archive.</p>
+                            <h3>Diplomatie</h3>
+                            <p>Vermittlung zwischen politischen Organisationen und interstellaren Fraktionen.</p>
+                            <h3>Technologieentwicklung</h3>
+                            <p>Entwicklung neuer Wärmeschutz- und Hochtemperatursysteme.</p>
+                            <p class="py-quelle">Quelle: Info_material · Pyronoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="py-panel py-karte" id="k-8-33-welt-und-umweltinteraktion">
+                        <summary><span class="py-nr">8.33</span><h2>Welt- und Umweltinteraktion</h2><span class="py-chevron" aria-hidden="true"></span></summary>
+                        <div class="py-text">
+                            <p>Pyronoiden können Umgebungen nutzen, die für andere Spezies schwer zugänglich sind.</p>
+                            <p>Daraus entstehen eigenständige Erkundungswege und Interaktionsmöglichkeiten.</p>
+                            <p>Beispiele sind heiße Höhlensysteme, Vulkanregionen, geothermische Forschungsanlagen und spezielle Rohstofffelder.</p>
+                            <p>Andere Umweltgefahren bleiben wirksam.</p>
+                            <p>Hoher Druck, mechanische Schäden und ungeeignete Chemie können weiterhin gefährlich sein.</p>
+                            <p class="py-quelle">Quelle: Info_material · Pyronoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="py-panel py-karte" id="k-8-34-balancing">
+                        <summary><span class="py-nr">8.34</span><h2>Balancing</h2><span class="py-chevron" aria-hidden="true"></span></summary>
+                        <div class="py-text">
+                            <p>Pyronoiden erhalten deutliche biologische Vorteile in geeigneten Hochtemperaturgebieten.</p>
+                            <p>Dem stehen Einschränkungen in kalten Regionen und besondere Ausrüstungsanforderungen gegenüber.</p>
+                            <p>Eine hohe Hitzetoleranz bedeutet nicht automatisch hohe Resistenz gegen sämtliche Schadensarten.</p>
+                            <p>Die individuelle Leistungsfähigkeit wird durch Formgruppe, Entwicklung, Ausrüstung und körperlichen Zustand beeinflusst.</p>
+                            <p>Die Spezies soll innerhalb des klassenfreien Spielsystems eigenständig, aber nicht grundsätzlich überlegen sein.</p>
+                            <p class="py-quelle">Quelle: Info_material · Pyronoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="py-panel py-karte" id="k-8-35-save-load-integration">
+                        <summary><span class="py-nr">8.35</span><h2>Save/Load-Integration</h2><span class="py-chevron" aria-hidden="true"></span></summary>
+                        <div class="py-text">
+                            <p>Pyronoidische Charaktere werden in das zentrale Persistenzsystem eingebunden.</p>
+                            <p>Wichtige dauerhaft zu speichernde Daten sind:</p>
+                            <ul><li>CharacterID</li><li>Spezieszugehörigkeit</li><li>Biologische Formgruppe</li><li>Erbliche Merkmale</li><li>Entwicklungsphase</li><li>Individuelle Körpermerkmale</li><li>Körperintegrität</li><li>Flusskernzustand</li><li>Informationsnetzwerkzustand</li><li>Thermische Reserven</li><li>Mineralische Versorgung</li><li>Erkrankungen und Verletzungen</li><li>Erlernte Fähigkeiten</li><li>Persönliche Entwicklung</li><li>Zugehörigkeiten</li><li>Inventar</li><li>Fortpflanzungs- und Brutkörperzustände, sofern relevant</li></ul>
+                            <p>Die Identität eines Charakters bleibt unabhängig von seiner aktuellen Unreal-Actor-Darstellung.</p>
+                            <p class="py-quelle">Quelle: Info_material · Pyronoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="py-panel py-karte" id="k-8-36-technische-systemtrennung">
+                        <summary><span class="py-nr">8.36</span><h2>Technische Systemtrennung</h2><span class="py-chevron" aria-hidden="true"></span></summary>
+                        <div class="py-text">
+                            <p>Die biologische Simulation wird von ihrer visuellen Darstellung getrennt.</p>
+                            <p>Dauerhafte Charakterdaten gehören in die allgemeinen Daten- und Persistenzsysteme.</p>
+                            <p>Animationen, Partikeleffekte und sichtbare Wärmemuster werden aus den jeweiligen Charakterzuständen abgeleitet.</p>
+                            <p>Nicht jede kurzfristige visuelle Veränderung muss dauerhaft gespeichert werden.</p>
+                            <p>Die Trennung erleichtert später die Anpassung an neue Unreal-Engine-Versionen.</p>
+                            <p class="py-quelle">Quelle: Info_material · Pyronoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="py-panel py-karte" id="k-8-41-langfristige-spielentwicklung">
+                        <summary><span class="py-nr">8.41</span><h2>Langfristige Spielentwicklung</h2><span class="py-chevron" aria-hidden="true"></span></summary>
+                        <div class="py-text">
+                            <p>Die Pyronoiden können durch spätere Forschung zusätzliche Ausrüstung, medizinische Verfahren und biologische Anpassungsmöglichkeiten erhalten.</p>
+                            <p>Auch neue Siedlungsformen und außerplanetare Lebensräume sind möglich.</p>
+                            <p>Die Spezies bietet dadurch langfristige Entwicklungsmöglichkeiten in den Bereichen Überleben, Forschung, Herstellung, Politik und Erkundung.</p>
+                            <p>Die biologischen Grundregeln bleiben dabei erhalten.</p>
+                            <p class="py-quelle">Quelle: Info_material · Pyronoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="py-panel py-karte" id="k-8-42-spielmechanische-gesamtrolle">
+                        <summary><span class="py-nr">8.42</span><h2>Spielmechanische Gesamtrolle</h2><span class="py-chevron" aria-hidden="true"></span></summary>
+                        <div class="py-text">
+                            <p>Die Pyronoiden erweitern das APORIA-Universum um eine intelligente Spezies, deren Fähigkeiten und Schwierigkeiten unmittelbar aus ihrer extremen Hitzeanpassung entstehen.</p>
+                            <p>Sie sind keine gewöhnlichen Feuerwesen.</p>
+                            <p>Ihre Spielmechaniken beruhen auf biologischen Prozessen, chemischer Versorgung, thermischer Regulation und einer eigenständigen technologischen Entwicklung.</p>
+                            <p>Dadurch erhalten sie eine klar unterscheidbare Rolle innerhalb des gemeinsamen Spielsystems.</p>
+                            <p class="py-quelle">Quelle: Info_material · Pyronoiden · Gameplay/.gitkeep</p>
                         </div>
                     </details>
                     <section class="py-panel py-block py-karussell-block" id="galerie" aria-label="Bilder">
@@ -106,7 +513,44 @@
                 <nav class="py-panel py-sprung" data-py-sprung aria-label="Kapitel dieser Seite">
                     <p class="py-kicker">Kapitel</p>
                     <button type="button" class="py-klappen" data-py-klappen aria-pressed="false">Alle aufklappen</button>
-                    <a href="#noch-offen"><span class="py-nr">…</span>Spielintegration</a>
+                    <a href="#k-8-1-grundlegende-einbindung"><span class="py-nr">8.1</span>Grundlegende Einbindung</a>
+                    <a href="#k-8-2-biologische-charakterwerte"><span class="py-nr">8.2</span>Biologische Charakterwerte</a>
+                    <a href="#k-8-3-thermische-spielmechanik"><span class="py-nr">8.3</span>Thermische Spielmechanik</a>
+                    <a href="#k-8-4-temperaturbereiche"><span class="py-nr">8.4</span>Temperaturbereiche</a>
+                    <a href="#k-8-5-warmehaushalt-und-energieverbrauch"><span class="py-nr">8.5</span>Wärmehaushalt und Energieverbrauch</a>
+                    <a href="#k-8-6-kalteschaden"><span class="py-nr">8.6</span>Kälteschäden</a>
+                    <a href="#k-8-7-vorteile-in-hitzegebieten"><span class="py-nr">8.7</span>Vorteile in Hitzegebieten</a>
+                    <a href="#k-8-8-kontakt-mit-lava"><span class="py-nr">8.8</span>Kontakt mit Lava</a>
+                    <a href="#k-8-9-biologische-formgruppen"><span class="py-nr">8.9</span>Biologische Formgruppen</a>
+                    <a href="#k-8-10-charakterentwicklung"><span class="py-nr">8.10</span>Charakterentwicklung</a>
+                    <a href="#k-8-11-thermische-wahrnehmung"><span class="py-nr">8.11</span>Thermische Wahrnehmung</a>
+                    <a href="#k-8-12-kommunikation-im-gameplay"><span class="py-nr">8.12</span>Kommunikation im Gameplay</a>
+                    <a href="#k-8-13-fortbewegung"><span class="py-nr">8.13</span>Fortbewegung</a>
+                    <a href="#k-8-14-kampfmechanik"><span class="py-nr">8.14</span>Kampfmechanik</a>
+                    <a href="#k-8-15-waffen"><span class="py-nr">8.15</span>Waffen</a>
+                    <a href="#k-8-16-rustungen"><span class="py-nr">8.16</span>Rüstungen</a>
+                    <a href="#k-8-17-ausrustung-fur-kalte-umgebungen"><span class="py-nr">8.17</span>Ausrüstung für kalte Umgebungen</a>
+                    <a href="#k-8-18-regeneration"><span class="py-nr">8.18</span>Regeneration</a>
+                    <a href="#k-8-19-medizinisches-gameplay"><span class="py-nr">8.19</span>Medizinisches Gameplay</a>
+                    <a href="#k-8-20-fortpflanzung-und-nachwuchs"><span class="py-nr">8.20</span>Fortpflanzung und Nachwuchs</a>
+                    <a href="#k-8-21-genetik-und-evolution"><span class="py-nr">8.21</span>Genetik und Evolution</a>
+                    <a href="#k-8-22-rohstoffe"><span class="py-nr">8.22</span>Rohstoffe</a>
+                    <a href="#k-8-23-herstellung"><span class="py-nr">8.23</span>Herstellung</a>
+                    <a href="#k-8-24-wissenschaftliche-forschung"><span class="py-nr">8.24</span>Wissenschaftliche Forschung</a>
+                    <a href="#k-8-25-siedlungsbau"><span class="py-nr">8.25</span>Siedlungsbau</a>
+                    <a href="#k-8-26-gemischte-siedlungen"><span class="py-nr">8.26</span>Gemischte Siedlungen</a>
+                    <a href="#k-8-27-fahrzeuge-und-raumfahrt"><span class="py-nr">8.27</span>Fahrzeuge und Raumfahrt</a>
+                    <a href="#k-8-28-npc-verhalten"><span class="py-nr">8.28</span>NPC-Verhalten</a>
+                    <a href="#k-8-29-gesellschaftliche-npc-rollen"><span class="py-nr">8.29</span>Gesellschaftliche NPC-Rollen</a>
+                    <a href="#k-8-30-handel"><span class="py-nr">8.30</span>Handel</a>
+                    <a href="#k-8-31-diplomatie"><span class="py-nr">8.31</span>Diplomatie</a>
+                    <a href="#k-8-32-missionstypen"><span class="py-nr">8.32</span>Missionstypen</a>
+                    <a href="#k-8-33-welt-und-umweltinteraktion"><span class="py-nr">8.33</span>Welt- und Umweltinteraktion</a>
+                    <a href="#k-8-34-balancing"><span class="py-nr">8.34</span>Balancing</a>
+                    <a href="#k-8-35-save-load-integration"><span class="py-nr">8.35</span>Save/Load-Integration</a>
+                    <a href="#k-8-36-technische-systemtrennung"><span class="py-nr">8.36</span>Technische Systemtrennung</a>
+                    <a href="#k-8-41-langfristige-spielentwicklung"><span class="py-nr">8.41</span>Langfristige Spielentwicklung</a>
+                    <a href="#k-8-42-spielmechanische-gesamtrolle"><span class="py-nr">8.42</span>Spielmechanische Gesamtrolle</a>
                     <a href="#galerie"><span class="py-nr">▣</span>Bilder</a>
                 </nav>
             </div>

@@ -42,11 +42,192 @@
             </nav>
             <div class="kr-layout">
                 <div class="kr-inhalt">
-                    <details class="kr-panel kr-karte" id="noch-offen" open>
-                        <summary><span class="kr-nr">…</span><h2>Spielintegration</h2><span class="kr-chevron" aria-hidden="true"></span></summary>
+                    <details class="kr-panel kr-karte" id="k-steckbrief" open>
+                        <summary><span class="kr-nr">◇</span><h2>Steckbrief</h2><span class="kr-chevron" aria-hidden="true"></span></summary>
                         <div class="kr-text">
-                            <p class="kr-offen">Noch nicht ausgearbeitet.</p>
-                            <p class="kr-quelle">Vorgesehene Infodateien (noch ohne Text): Gameplay/.gitkeep</p>
+                            <dl class="kr-fakten"><div><dt>Spiel</dt><dd>Unter fremden Kronen</dd></div><div><dt>Universum</dt><dd>APORIA</dd></div><div><dt>Spezies</dt><dd>Kryonoiden</dd></div><div><dt>Gameplay-Schwerpunkte</dt><dd>Extreme Kälte, Kryotechnologie, Umweltüberleben, Tiefenforschung und interkulturelle Zusammenarbeit</dd></div></dl>
+                            <p class="kr-quelle">Quelle: Info_material · Kryonoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="kr-panel kr-karte" id="k-1-grundlegende-spielrolle">
+                        <summary><span class="kr-nr">1</span><h2>Grundlegende Spielrolle</h2><span class="kr-chevron" aria-hidden="true"></span></summary>
+                        <div class="kr-text">
+                            <p>Die Kryonoiden können als freundliche, neutrale oder feindliche intelligente NPCs auftreten.</p>
+                            <p>Ihre tatsächliche Haltung wird durch individuelle Eigenschaften, gesellschaftliche Beziehungen und Fraktionszugehörigkeit bestimmt.</p>
+                            <p>Sie können Wissenschaftler, Händler, Techniker, Forschende, Sicherheitskräfte oder gewöhnliche Bewohner ihrer Heimatwelt darstellen.</p>
+                            <p>Eine spätere spielbare Umsetzung der Spezies ist vorgesehen.</p>
+                            <p class="kr-quelle">Quelle: Info_material · Kryonoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="kr-panel kr-karte" id="k-2-temperaturabhangiges-uberlebenssystem">
+                        <summary><span class="kr-nr">2</span><h2>Temperaturabhängiges Überlebenssystem</h2><span class="kr-chevron" aria-hidden="true"></span></summary>
+                        <div class="kr-text">
+                            <p>Ein wesentliches Merkmal der Kryonoiden ist ihre besondere Temperaturabhängigkeit.</p>
+                            <p>Sie sind hervorragend an extreme Kälte angepasst.</p>
+                            <p>Warme Umgebungen stellen dagegen eine erhebliche Gefahr dar.</p>
+                            <p>Für die Spielintegration wird zwischen Umgebungstemperatur, Körperkerntemperatur und dem Zustand der technischen Schutzausrüstung unterschieden.</p>
+                            <p>Diese Werte beeinflussen sich gegenseitig, sind aber nicht identisch.</p>
+                            <h3>Vorläufige biologische Temperaturbereiche</h3>
+                            <div class="kr-tabelle"><table><thead><tr><th>Körperkerntemperatur</th><th>Zustand</th></tr></thead><tbody><tr><td>−48 bis −38 °C</td><td>Normaler Stoffwechselbereich</td></tr><tr><td>−55 bis −48 °C</td><td>Beginnende Verlangsamung und erhöhter Regulationsaufwand</td></tr><tr><td>Unter −55 °C</td><td>Zunehmende Unterkühlung, Gefahr des Stoffwechselstillstands</td></tr><tr><td>−38 bis −25 °C</td><td>Erhöhte thermische Belastung</td></tr><tr><td>−25 bis −15 °C</td><td>Schwere Belastung und zunehmende Funktionsstörungen</td></tr><tr><td>Über −15 °C</td><td>Akute Lebensgefahr bei anhaltender Erwärmung</td></tr></tbody></table></div>
+                            <p>Die Temperaturwerte sind biologische Modellparameter und keine unmittelbar festgelegten Schadenspunkte.</p>
+                            <p>Entscheidend sind die Dauer der Belastung, der Zustand des Individuums und verfügbare Schutzmaßnahmen.</p>
+                            <p class="kr-quelle">Quelle: Info_material · Kryonoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="kr-panel kr-karte" id="k-3-umgebungstemperatur">
+                        <summary><span class="kr-nr">3</span><h2>Umgebungstemperatur</h2><span class="kr-chevron" aria-hidden="true"></span></summary>
+                        <div class="kr-text">
+                            <p>Die Umgebungstemperatur bestimmt den Wärmeaustausch mit dem Körper.</p>
+                            <p>Kryonoiden können in vielen eisigen Lebensräumen ohne zusätzliche Heiztechnik überleben.</p>
+                            <p>Bei besonders niedrigen Temperaturen steigt allerdings der Aufwand für ihre innere Wärmeregulierung.</p>
+                            <p>In heißen Umgebungen benötigen sie aktive Kühlung.</p>
+                            <p>Die Wirkung einer Umgebung hängt zusätzlich von Wind, Druck, Luftzusammensetzung, Kontaktflächen und vorhandener Ausrüstung ab.</p>
+                            <p class="kr-quelle">Quelle: Info_material · Kryonoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="kr-panel kr-karte" id="k-4-naturliche-fahigkeiten">
+                        <summary><span class="kr-nr">4</span><h2>Natürliche Fähigkeiten</h2><span class="kr-chevron" aria-hidden="true"></span></summary>
+                        <div class="kr-text">
+                            <h3>Kälteanpassung</h3>
+                            <p>Verringert den biologischen Regulationsaufwand in geeigneten kalten Umgebungen.</p>
+                            <h3>Vibrationswahrnehmung</h3>
+                            <p>Erlaubt das Erkennen bestimmter Bewegungen und Erschütterungen im Untergrund.</p>
+                            <p>Die Reichweite hängt von Material, Entfernung und Störsignalen ab.</p>
+                            <h3>Kälteruhe</h3>
+                            <p>Ermöglicht eine starke Reduktion des Stoffwechsels.</p>
+                            <p>Verringert den Energiebedarf, schränkt aber Wahrnehmung und Handlungsfähigkeit ein.</p>
+                            <h3>Eisoberflächenbewegung</h3>
+                            <p>Verbessert die Stabilität und Orientierung auf geeigneten vereisten Untergründen.</p>
+                            <h3>Chemische Umweltwahrnehmung</h3>
+                            <p>Erleichtert das Erkennen bestimmter Substanzen in natürlichen Lebensräumen.</p>
+                            <p class="kr-quelle">Quelle: Info_material · Kryonoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="kr-panel kr-karte" id="k-5-begrenzungen-naturlicher-fahigkeiten">
+                        <summary><span class="kr-nr">5</span><h2>Begrenzungen natürlicher Fähigkeiten</h2><span class="kr-chevron" aria-hidden="true"></span></summary>
+                        <div class="kr-text">
+                            <p>Die Kryonoiden können nicht ohne Energie Eis erschaffen oder große Mengen Wärme verschwinden lassen.</p>
+                            <p>Sie besitzen keine allgemeine Immunität gegen Kälte, Druck oder mechanische Schäden.</p>
+                            <p>Ihre Vibrationswahrnehmung funktioniert nicht als universelles Radar.</p>
+                            <p>Besondere Fähigkeiten werden deshalb als biologische Wahrnehmungs- und Anpassungsmechanismen umgesetzt.</p>
+                            <p>Übernatürliche oder exotisch-physikalische Kräfte wären separate, später zu definierende Systeme.</p>
+                            <p class="kr-quelle">Quelle: Info_material · Kryonoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="kr-panel kr-karte" id="k-6-bewegungssystem">
+                        <summary><span class="kr-nr">6</span><h2>Bewegungssystem</h2><span class="kr-chevron" aria-hidden="true"></span></summary>
+                        <div class="kr-text">
+                            <p>Der Charakter benötigt ein angepasstes Bewegungsmodell mit vier Laufgliedmaßen und zwei Greifgliedmaßen.</p>
+                            <p>Vorgesehen sind:</p>
+                            <ul><li>Vierbeinige Fortbewegung</li><li>Langsamer Präzisionsgang</li><li>Beschleunigter Lauf</li><li>Bewegung auf unebenem Eis</li><li>Klettern über geeignete Hindernisse</li><li>Eingeschränkte aufgerichtete Haltung</li><li>Werkzeugbenutzung mit beiden Greifgliedern</li><li>Ruhe- und Schutzstellungen</li></ul>
+                            <p>Der Bewegungsablauf muss sich von humanoiden Standardanimationen unterscheiden.</p>
+                            <p class="kr-quelle">Quelle: Info_material · Kryonoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="kr-panel kr-karte" id="k-11-npc-verhalten">
+                        <summary><span class="kr-nr">11</span><h2>NPC-Verhalten</h2><span class="kr-chevron" aria-hidden="true"></span></summary>
+                        <div class="kr-text">
+                            <p>Kryonoidische NPCs berücksichtigen ihre Umweltbedingungen.</p>
+                            <p>Ein NPC kann beispielsweise:</p>
+                            <ul><li>Eine zu warme Umgebung meiden</li><li>Einen sicheren Kälteraum aufsuchen</li><li>Defekte Kühlsysteme melden</li><li>Einen instabilen Eisbereich erkennen</li><li>Technische Hilfe anfordern</li><li>Die eigene Aktivität bei Energiemangel reduzieren</li></ul>
+                            <p>Dieses Verhalten kann auf bestehenden Umwelt-, Gesundheits- und KI-Systemen aufbauen.</p>
+                            <p class="kr-quelle">Quelle: Info_material · Kryonoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="kr-panel kr-karte" id="k-12-interaktion-und-kommunikation">
+                        <summary><span class="kr-nr">12</span><h2>Interaktion und Kommunikation</h2><span class="kr-chevron" aria-hidden="true"></span></summary>
+                        <div class="kr-text">
+                            <p>Kryonoiden besitzen eine eigene Kommunikationsidentität.</p>
+                            <p>Die Verständigung mit anderen Spezies erfolgt über:</p>
+                            <ul><li>Direkte Resonanzkommunikation</li><li>Optische Signale</li><li>Kontaktbasierte Kommunikation</li><li>Übersetzungsgeräte</li><li>Digitale Kommunikationssysteme</li></ul>
+                            <p>Bei Erstkontakten können technische und kulturelle Missverständnisse entstehen.</p>
+                            <p class="kr-quelle">Quelle: Info_material · Kryonoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="kr-panel kr-karte" id="k-13-handel">
+                        <summary><span class="kr-nr">13</span><h2>Handel</h2><span class="kr-chevron" aria-hidden="true"></span></summary>
+                        <div class="kr-text">
+                            <p>Kryonoidische Händler bieten insbesondere spezialisierte Technologie an.</p>
+                            <p>Mögliche Handelsgüter:</p>
+                            <ul><li>Kryomaterialien</li><li>Frostschutzkomponenten</li><li>Kältesolanalysatoren</li><li>Sensoren für geologische Stabilität</li><li>Hochleistungsisolierung</li><li>Spezialwerkzeuge</li><li>Kryogene Speichersysteme</li><li>Forschungslizenzen</li><li>Kälteangepasste Nahrungsmittel</li></ul>
+                            <p>Nicht sämtliche Güter sind auf anderen Welten biologisch oder technisch unmittelbar verwendbar.</p>
+                            <p class="kr-quelle">Quelle: Info_material · Kryonoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="kr-panel kr-karte" id="k-14-fraktionsinteraktionen">
+                        <summary><span class="kr-nr">14</span><h2>Fraktionsinteraktionen</h2><span class="kr-chevron" aria-hidden="true"></span></summary>
+                        <div class="kr-text">
+                            <p>Die politische Zugehörigkeit eines Kryonoiden ist nicht allein durch seine Spezies bestimmt.</p>
+                            <p>Einzelne NPCs können mit verschiedenen Fraktionen verbunden sein.</p>
+                            <p>Mögliche Interaktionen umfassen:</p>
+                            <ul><li>Wissenschaftliche Zusammenarbeit mit der Konföderation</li><li>Handelsverträge mit dem Konsortium</li><li>Sicherheitskooperationen mit dem Protektorat</li><li>Forschungskontakte zum Synaptorat</li><li>Kulturelle oder philosophische Kontakte zu den Ätherwanderern</li></ul>
+                            <p>Einzelne Kryonoiden können auch unabhängig oder oppositionell organisiert sein.</p>
+                            <p class="kr-quelle">Quelle: Info_material · Kryonoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="kr-panel kr-karte" id="k-15-missionstypen">
+                        <summary><span class="kr-nr">15</span><h2>Missionstypen</h2><span class="kr-chevron" aria-hidden="true"></span></summary>
+                        <div class="kr-text">
+                            <h3>Eisbruchrettung</h3>
+                            <p>Eine unterirdische Siedlung verliert einen wichtigen Verkehrsweg.</p>
+                            <p>Der Spieler muss Gefahren untersuchen, Überlebende finden und Versorgungssysteme sichern.</p>
+                            <h3>Geothermischer Konflikt</h3>
+                            <p>Zwei Gemeinschaften beanspruchen dieselbe Energiequelle.</p>
+                            <p>Der Spieler kann Informationen beschaffen, verhandeln oder unterschiedliche Interessen unterstützen.</p>
+                            <h3>Die verlorenen Archive</h3>
+                            <p>Ein alter unterirdischer Komplex wird entdeckt.</p>
+                            <p>Die Mission verbindet historische Erforschung mit geologischen Gefahren.</p>
+                            <h3>Fremde Wärme</h3>
+                            <p>Eine kryonoidische Forschungsstation auf einer warmen Welt verliert ihre aktive Kühlung.</p>
+                            <p>Der Spieler muss technische Schäden beheben und eine Evakuierung ermöglichen.</p>
+                            <h3>Der umstrittene Vertrag</h3>
+                            <p>Ein interstellares Unternehmen möchte exklusive Rechte an wichtigen Ressourcen erwerben.</p>
+                            <p>Die Entscheidung kann wirtschaftliche, soziale und politische Folgen besitzen.</p>
+                            <p class="kr-quelle">Quelle: Info_material · Kryonoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="kr-panel kr-karte" id="k-16-kampfverhalten">
+                        <summary><span class="kr-nr">16</span><h2>Kampfverhalten</h2><span class="kr-chevron" aria-hidden="true"></span></summary>
+                        <div class="kr-text">
+                            <p>Kryonoidische Kämpfer nutzen den Untergrund und geeignete Deckung.</p>
+                            <p>Ihre körperliche Anatomie ermöglicht andere Bewegungsmuster als bei humanoiden Gegnern.</p>
+                            <p>Auf Eis können sie besonders stabil agieren.</p>
+                            <p>In ungeeigneten warmen Umgebungen sind sie hingegen stark von funktionsfähiger technischer Kühlung abhängig.</p>
+                            <p>Die Zerstörung solcher Systeme kann gefährlich sein, soll aber nicht als automatisch tödlicher Ein-Treffer-Effekt umgesetzt werden.</p>
+                            <p class="kr-quelle">Quelle: Info_material · Kryonoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="kr-panel kr-karte" id="k-20-technische-unreal-engine-integration">
+                        <summary><span class="kr-nr">20</span><h2>Technische Unreal-Engine-Integration</h2><span class="kr-chevron" aria-hidden="true"></span></summary>
+                        <div class="kr-text">
+                            <p>Die Umsetzung sollte modular erfolgen.</p>
+                            <p>Biologische Eigenschaften werden von der grafischen Darstellung und den konkreten Actor-Instanzen getrennt.</p>
+                            <p>Geeignete Datenbereiche sind:</p>
+                            <ul><li>Speziesidentität</li><li>Physiologische Parameter</li><li>Temperaturtoleranz</li><li>Umweltanforderungen</li><li>Bewegungsprofil</li><li>Sensorprofil</li><li>Kommunikation</li><li>Fortpflanzungs- und Entwicklungsdaten</li><li>Fraktionsbeziehungen</li><li>NPC-Verhaltensparameter</li><li>Ausrüstungskompatibilität</li></ul>
+                            <p>Diese Trennung erleichtert eine spätere Anpassung an Unreal Engine 6.</p>
+                            <p>Für persistente Charaktere sollten stabile CharacterIDs und Speziesreferenzen statt ausschließlich Actor-Referenzen verwendet werden.</p>
+                            <p class="kr-quelle">Quelle: Info_material · Kryonoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="kr-panel kr-karte" id="k-21-gameplay-balance">
+                        <summary><span class="kr-nr">21</span><h2>Gameplay-Balance</h2><span class="kr-chevron" aria-hidden="true"></span></summary>
+                        <div class="kr-text">
+                            <p>Die Kryonoiden sollen nicht grundsätzlich stärker oder schwächer als andere Spezies sein.</p>
+                            <p>Ihre Vorteile liegen in bestimmten Umgebungen und Tätigkeiten.</p>
+                            <p>Ihre Nachteile entstehen hauptsächlich durch ungeeignete Temperaturen und biologische Versorgung.</p>
+                            <p>Die Balance berücksichtigt:</p>
+                            <ul><li>Umweltbedingungen</li><li>Technologische Ausrüstung</li><li>Individuelle Fähigkeiten</li><li>Ausbildung</li><li>Fraktionszugehörigkeit</li><li>Ressourcenversorgung</li><li>Langfristige Charakterentwicklung</li></ul>
+                            <p class="kr-quelle">Quelle: Info_material · Kryonoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="kr-panel kr-karte" id="k-22-ubergeordnete-spielidentitat">
+                        <summary><span class="kr-nr">22</span><h2>Übergeordnete Spielidentität</h2><span class="kr-chevron" aria-hidden="true"></span></summary>
+                        <div class="kr-text">
+                            <p>Die Kryonoiden erweitern APORIA um eine intelligente Spezies, deren natürliche Lebenswelt für viele andere Lebewesen nahezu unzugänglich ist.</p>
+                            <p>Sie erlauben eigenständige Erkundungs-, Forschungs- und Gesellschaftssysteme.</p>
+                            <p>Ihre Besonderheit liegt im Gegensatz zwischen hervorragender Anpassung an extreme Kälte und der Abhängigkeit von aufwendiger Schutztechnik in wärmeren Lebensräumen.</p>
+                            <p>Damit besitzen sie eine eigenständige Rolle innerhalb von „Unter fremden Kronen“.</p>
+                            <p class="kr-quelle">Quelle: Info_material · Kryonoiden · Gameplay/.gitkeep</p>
                         </div>
                     </details>
                     <section class="kr-panel kr-block kr-karussell-block" id="galerie" aria-label="Bilder">
@@ -93,7 +274,22 @@
                 <nav class="kr-panel kr-sprung" data-kr-sprung aria-label="Kapitel dieser Seite">
                     <p class="kr-kicker">Kapitel</p>
                     <button type="button" class="kr-klappen" data-kr-klappen aria-pressed="false">Alle aufklappen</button>
-                    <a href="#noch-offen"><span class="kr-nr">…</span>Spielintegration</a>
+                    <a href="#k-steckbrief"><span class="kr-nr">◇</span>Steckbrief</a>
+                    <a href="#k-1-grundlegende-spielrolle"><span class="kr-nr">1</span>Grundlegende Spielrolle</a>
+                    <a href="#k-2-temperaturabhangiges-uberlebenssystem"><span class="kr-nr">2</span>Temperaturabhängiges Überlebenssystem</a>
+                    <a href="#k-3-umgebungstemperatur"><span class="kr-nr">3</span>Umgebungstemperatur</a>
+                    <a href="#k-4-naturliche-fahigkeiten"><span class="kr-nr">4</span>Natürliche Fähigkeiten</a>
+                    <a href="#k-5-begrenzungen-naturlicher-fahigkeiten"><span class="kr-nr">5</span>Begrenzungen natürlicher Fähigkeiten</a>
+                    <a href="#k-6-bewegungssystem"><span class="kr-nr">6</span>Bewegungssystem</a>
+                    <a href="#k-11-npc-verhalten"><span class="kr-nr">11</span>NPC-Verhalten</a>
+                    <a href="#k-12-interaktion-und-kommunikation"><span class="kr-nr">12</span>Interaktion und Kommunikation</a>
+                    <a href="#k-13-handel"><span class="kr-nr">13</span>Handel</a>
+                    <a href="#k-14-fraktionsinteraktionen"><span class="kr-nr">14</span>Fraktionsinteraktionen</a>
+                    <a href="#k-15-missionstypen"><span class="kr-nr">15</span>Missionstypen</a>
+                    <a href="#k-16-kampfverhalten"><span class="kr-nr">16</span>Kampfverhalten</a>
+                    <a href="#k-20-technische-unreal-engine-integration"><span class="kr-nr">20</span>Technische Unreal-Engine-Integration</a>
+                    <a href="#k-21-gameplay-balance"><span class="kr-nr">21</span>Gameplay-Balance</a>
+                    <a href="#k-22-ubergeordnete-spielidentitat"><span class="kr-nr">22</span>Übergeordnete Spielidentität</a>
                     <a href="#galerie"><span class="kr-nr">▣</span>Bilder</a>
                 </nav>
             </div>

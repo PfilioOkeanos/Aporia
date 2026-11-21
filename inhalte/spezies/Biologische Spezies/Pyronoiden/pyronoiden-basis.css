@@ -199,6 +199,12 @@ html:has(dialog.py-zoom[open]) { overflow: hidden; }
 .py-text > .py-ausschnitt { width: min(100%, 26rem); border: 1px solid var(--py-linie); border-radius: 10px; }
 .py-quelle-design { color: var(--py-cyan) !important; }
 
+/* Steckbrief aus dem Dossier (Hauptseiten) */
+.py-dossier-steckbrief { margin-top: var(--py-raum); }
+.py-dossier-raster { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); gap: var(--py-raum); align-items: start; }
+.py-dossier-raster .py-fakten > div { grid-template-columns: minmax(8rem, .7fr) minmax(0, 1.3fr); }
+@container (max-width: 820px) { .py-dossier-raster { grid-template-columns: minmax(0, 1fr); } }
+
 /* Karussell: Tafeln vollständig zeigen */
 .py-karussell-block .py-h2 { margin-bottom: .6rem !important; }
 .py-dossier .karussell-bild img { object-fit: contain; background: #080504; }
