@@ -1,0 +1,10 @@
+/* Geomorphen – Forschung
+   Gemeinsames Design: geomorphen-basis.css · hier nur der Hintergrund (Designvorlage) dieser Seite. */
+.geo-forschung .geo-buehne { background-image: url("../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Gigantische%20Lebensformen/geomorphen/PageDesign/Geomorphen_%20Forschung%20im%20Cocon-5.png"); }
+/* Der Geomorph reicht in dieser Vorlage weiter nach rechts: Schleierkante und Titel rücken mit. */
+.geo-forschung { --geo-schleier-links: 20cqi; --geo-hero-einzug: 2cqi; }
+@container (max-width: 700px) { .geo-forschung .geo-schleier { left: 0; } .geo-forschung .geo-hero { padding-left: 0; } }
+/* Schmale Ansicht: bis hierhin reicht der Geomorph, rechts davon wird der Entwurfstext abgedeckt */
+.geo-forschung { --geo-mobil-kante: 35%; }
+/* Lage der eingebackenen Entwurfsnavigation und des Entwurfstitels in dieser Vorlage */
+.geo-forschung { --geo-leiste-start: 28cqi; --geo-schleier-oben: 1cqi; }

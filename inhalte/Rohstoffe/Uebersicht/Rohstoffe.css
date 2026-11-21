@@ -175,3 +175,145 @@ body[data-page="rohstoffe"] {
   .resource-main { background-size: auto, auto 18rem, auto; }
   .resource-grid { grid-template-columns: repeat(auto-fill, minmax(min(100%, 8.5rem), 1fr)); }
 }
+
+/* =====================================================================
+   Rohstoff-Fenster (inhalte/Rohstoffe/rohstoff-fenster.js)
+   Farbe je Elementkategorie über --rf-farbe, Goldrahmen der Rohstoffübersicht
+   ===================================================================== */
+.rf-fenster {
+  --rf-farbe: #8fd8ff;
+  --rf-gold: #edc38b;
+  --rf-text: #f6ebd9;
+  --rf-leise: #cdbda8;
+  width: min(1180px, 96vw);
+  max-height: 92dvh;
+  padding: 0;
+  border: 0;
+  border-radius: 1.2rem;
+  background: transparent;
+  color: var(--rf-text);
+  font-family: Georgia, serif;
+  overflow: visible;
+}
+.rf-fenster::backdrop { background: radial-gradient(ellipse at center, #0b0e12cc, #050608f2); backdrop-filter: blur(4px); }
+.rf-fenster.ist-neu .rf-rahmen { animation: rf-ein .35s ease-out; }
+@keyframes rf-ein { from { opacity: 0; transform: translateY(14px) scale(.985); } }
+.rf-rahmen {
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  max-height: 92dvh;
+  overflow: hidden;
+  border: 1px solid #9b7d5b;
+  border-radius: 1.2rem;
+  background:
+    radial-gradient(ellipse 60% 45% at 85% 0%, color-mix(in srgb, var(--rf-farbe) 18%, transparent), transparent 70%),
+    linear-gradient(150deg, #191d22f8, #111417fa 60%, #221d18f6);
+  box-shadow: 0 0 0 1px #00000080, 0 0 2.4rem color-mix(in srgb, var(--rf-farbe) 22%, transparent), 0 2rem 4rem #000c;
+}
+.rf-fenster :is(h2, h3, p, dl, dd, ol, ul) { margin: 0; }
+.rf-fenster a { color: var(--rf-gold); }
+.rf-fenster :is(a, button):focus-visible { outline: 2px solid var(--rf-farbe); outline-offset: 2px; }
+.rf-label { color: var(--rf-leise); font: 600 .68rem/1.3 ui-monospace, Consolas, monospace; letter-spacing: .14em; text-transform: uppercase; }
+
+/* Kopf mit Symbolkachel */
+.rf-kopf { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 1rem; align-items: center; padding: 1rem 1.2rem; border-bottom: 1px solid #9b7d5b66; }
+.rf-kachel {
+  position: relative;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  width: 5.4rem;
+  aspect-ratio: 1;
+  box-sizing: border-box;
+  padding: .35rem .45rem;
+  border: 2px solid var(--rf-farbe);
+  border-radius: .7rem;
+  background: radial-gradient(circle at 35% 30%, color-mix(in srgb, var(--rf-farbe) 35%, transparent), #0d1014 75%);
+  box-shadow: 0 0 1.4rem color-mix(in srgb, var(--rf-farbe) 40%, transparent), inset 0 0 1rem color-mix(in srgb, var(--rf-farbe) 20%, transparent);
+  animation: rf-glimmen 4s ease-in-out infinite;
+}
+@keyframes rf-glimmen { 50% { box-shadow: 0 0 .7rem color-mix(in srgb, var(--rf-farbe) 30%, transparent), inset 0 0 .6rem color-mix(in srgb, var(--rf-farbe) 12%, transparent); } }
+.rf-kachel-nr { font: 600 .78rem/1 ui-monospace, Consolas, monospace; color: var(--rf-farbe); }
+.rf-kachel-symbol { align-self: center; justify-self: center; font: 700 2.1rem/1 Georgia, serif; color: #fff; text-shadow: 0 0 .8rem var(--rf-farbe); }
+.rf-kachel-masse { font: .6rem/1.1 ui-monospace, Consolas, monospace; color: var(--rf-leise); text-align: center; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.rf-kopf h2 { font: 500 clamp(1.5rem, 3vw, 2.3rem)/1.1 Georgia, serif; overflow-wrap: anywhere; }
+.rf-chips { display: flex; flex-wrap: wrap; gap: .35rem; margin-top: .4rem; }
+.rf-chip { padding: .15rem .6rem; border: 1px solid color-mix(in srgb, var(--rf-farbe) 60%, transparent); border-radius: 999px; background: color-mix(in srgb, var(--rf-farbe) 12%, transparent); font-size: .8rem; }
+.rf-chip--fiktiv { border-color: var(--rf-gold); color: var(--rf-gold); }
+.rf-kopf-knoepfe { display: flex; gap: .4rem; align-self: start; }
+.rf-knopf { width: 2.3rem; height: 2.3rem; border: 1px solid #9b7d5b; border-radius: .6rem; background: #0007; color: var(--rf-text); font-size: 1.1rem; cursor: pointer; transition: border-color .2s, background .2s; }
+.rf-knopf:hover { border-color: var(--rf-farbe); background: color-mix(in srgb, var(--rf-farbe) 18%, transparent); }
+
+/* Körper: Bild + Reiter */
+.rf-koerper { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.4fr); min-height: 0; overflow: hidden; }
+.rf-bild { display: grid; grid-template-rows: minmax(0, 1fr) auto; margin: 0; min-height: 0; padding: 1rem; border-right: 1px solid #9b7d5b44; background: radial-gradient(ellipse at 50% 40%, color-mix(in srgb, var(--rf-farbe) 14%, transparent), transparent 70%); }
+.rf-bild img { width: 100%; height: 100%; max-height: 58dvh; object-fit: contain; border-radius: .8rem; filter: drop-shadow(0 1rem 1.6rem #000a); }
+.rf-bild figcaption { display: flex; justify-content: space-between; gap: .6rem; padding-top: .6rem; color: var(--rf-leise); font-size: .82rem; }
+.rf-info { display: grid; grid-template-rows: auto minmax(0, 1fr); min-height: 0; }
+.rf-tabs { display: flex; gap: .2rem; padding: .7rem 1rem 0; border-bottom: 1px solid #9b7d5b44; overflow-x: auto; scrollbar-width: thin; }
+.rf-tabs [role="tab"] { flex: none; padding: .5rem .85rem; border: 1px solid transparent; border-bottom: 0; border-radius: .6rem .6rem 0 0; background: none; color: var(--rf-leise); font: 500 .92rem/1.2 Georgia, serif; cursor: pointer; }
+.rf-tabs [role="tab"]:hover { color: var(--rf-text); }
+.rf-tabs [role="tab"][aria-selected="true"] { border-color: #9b7d5b66; background: color-mix(in srgb, var(--rf-farbe) 12%, #15191d); color: #fff; box-shadow: inset 0 2px 0 var(--rf-farbe); }
+.rf-panels { min-height: 0; overflow-y: auto; scrollbar-width: thin; scrollbar-color: #9b7d5b transparent; }
+.rf-panel { display: grid; gap: .7rem; padding: 1rem 1.2rem 1.3rem; animation: rf-ein .25s ease-out; }
+.rf-panel[hidden] { display: none; }
+.rf-panel h3 { margin-top: .4rem; color: var(--rf-gold); font: 600 1rem/1.3 Georgia, serif; }
+.rf-panel p { line-height: 1.6; }
+.rf-offen { color: var(--rf-leise); font-style: italic; }
+.rf-hinweis { padding: .5rem .7rem; border-left: 3px solid var(--rf-farbe); border-radius: 0 .5rem .5rem 0; background: color-mix(in srgb, var(--rf-farbe) 8%, transparent); color: var(--rf-leise); font-size: .9rem; }
+.rf-werte { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .45rem; }
+.rf-werte div { display: grid; gap: .1rem; padding: .45rem .6rem; border: 1px solid #9b7d5b44; border-radius: .55rem; background: #0005; }
+.rf-werte dt { color: var(--rf-leise); font-size: .74rem; }
+.rf-werte dd { font-size: .95rem; overflow-wrap: anywhere; }
+
+/* Platzhalter: Fundort-Karte */
+.rf-karte { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: .8rem; align-items: center; padding: .7rem; border: 1px dashed color-mix(in srgb, var(--rf-farbe) 50%, transparent); border-radius: .8rem; background: #0005; }
+.rf-karte svg { width: 100%; }
+.rf-orbit { fill: none; stroke: color-mix(in srgb, var(--rf-farbe) 30%, transparent); stroke-dasharray: 3 5; }
+.rf-fundort text { fill: var(--rf-farbe); font: 700 12px Georgia, serif; text-anchor: middle; }
+.rf-fundort { animation: rf-puls 2.6s ease-in-out infinite; }
+.rf-fundort:nth-child(even) { animation-delay: .9s; }
+@keyframes rf-puls { 50% { opacity: .45; } }
+.rf-platzhalter { display: grid; gap: .35rem; padding: 0; list-style: none; }
+.rf-platzhalter li { display: grid; padding: .3rem .5rem; border-radius: .4rem; background: #ffffff08; font-size: .88rem; color: var(--rf-leise); font-style: italic; }
+
+/* Platzhalter: Herstellungskette */
+.rf-kette { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .5rem; padding: 0; list-style: none; }
+.rf-kette li { position: relative; display: grid; gap: .25rem; align-content: start; padding: .7rem .6rem; border: 1px solid #9b7d5b55; border-radius: .7rem; background: #0005; font-size: .84rem; color: var(--rf-leise); }
+.rf-kette li:not(:last-child)::after { content: "\2192"; position: absolute; right: -.55rem; top: 1.1rem; z-index: 1; color: var(--rf-farbe); font-size: 1rem; }
+.rf-kette strong { color: var(--rf-text); font-size: .95rem; }
+.rf-kette-punkt { display: grid; place-items: center; width: 1.6rem; aspect-ratio: 1; border-radius: 50%; border: 1px solid var(--rf-farbe); color: var(--rf-farbe); font: 600 .78rem/1 ui-monospace, monospace; animation: rf-schritt 4s ease-in-out infinite; animation-delay: calc(var(--i) * 1s); }
+@keyframes rf-schritt { 0%, 30%, 100% { background: transparent; box-shadow: none; } 12% { background: color-mix(in srgb, var(--rf-farbe) 40%, transparent); box-shadow: 0 0 .8rem var(--rf-farbe); } }
+
+/* Fuß: Forschung, Dossier, Quellen */
+.rf-fuss { display: grid; gap: .45rem; padding: .8rem 1.2rem 1rem; border-top: 1px solid #9b7d5b66; background: #0004; }
+.rf-links { display: flex; flex-wrap: wrap; align-items: center; gap: .45rem; }
+.rf-link { padding: .3rem .8rem; border: 1px solid color-mix(in srgb, var(--rf-farbe) 55%, transparent); border-radius: 999px; font-size: .88rem; text-decoration: none; transition: background .2s; }
+.rf-link:hover { background: color-mix(in srgb, var(--rf-farbe) 18%, transparent); }
+.rf-link--dossier { margin-left: auto; border-color: var(--rf-gold); }
+.rf-quelle { color: var(--rf-leise); font-size: .74rem; }
+
+@media (max-width: 860px) {
+  .rf-rahmen { overflow-y: auto; }
+  .rf-koerper { grid-template-columns: minmax(0, 1fr); overflow: visible; }
+  .rf-bild { border-right: 0; border-bottom: 1px solid #9b7d5b44; }
+  .rf-bild img { max-height: 34dvh; }
+  .rf-panels { overflow: visible; }
+  .rf-kopf { grid-template-columns: auto minmax(0, 1fr); }
+  .rf-kopf-knoepfe { grid-column: 1 / -1; justify-content: flex-end; order: -1; }
+  .rf-kachel { width: 4.2rem; }
+  .rf-kachel-symbol { font-size: 1.6rem; }
+  .rf-karte { grid-template-columns: minmax(0, 1fr); }
+  .rf-kette { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .rf-kette li:nth-child(2)::after { display: none; }
+  .rf-werte { grid-template-columns: minmax(0, 1fr); }
+  .rf-link--dossier { margin-left: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .rf-kachel, .rf-fundort, .rf-kette-punkt, .rf-fenster.ist-neu .rf-rahmen, .rf-panel { animation: none; }
+}
+
+/* Planetenfilter (?planet=…) */
+.resource-planet-active { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem .9rem; margin: 0 0 .8rem; padding: .5rem .75rem; border: 1px solid currentColor; border-radius: .6rem; font-size: .88rem; }
+.resource-planet-active[hidden] { display: none; }
+.resource-planet-active span { font-weight: 600; }
+.resource-planet-active button { margin-left: auto; padding: .25rem .65rem; border: 1px solid currentColor; border-radius: 999px; background: transparent; color: inherit; font: inherit; font-size: .8rem; cursor: pointer; }

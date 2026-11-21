@@ -1,0 +1,32 @@
+/* Syntheten – Hauptseite (Allgemeines)
+   Gemeinsames Design: ../syntheten-basis.css · hier nur Anpassungen dieser Seite. */
+
+.syn-hauptseite .syn-dossier .syn-hero img { object-position: 58% 30%; }
+
+/* Kapitelleiste breiter, damit lange Kapitelnamen nicht abgeschnitten werden */
+.syn-hauptseite .syn-layout--index { grid-template-columns: clamp(10.5rem, 14cqi, 13.5rem) minmax(0, 1fr) clamp(9rem, 11cqi, 11.5rem); }
+.syn-hauptseite .syn-chapters a { font-size: .8rem; hyphens: auto; overflow-wrap: anywhere; }
+.syn-hauptseite .syn-chapters .syn-code { margin-inline-end: .35rem; }
+@container (max-width: 980px) {
+    .syn-hauptseite .syn-layout--index { grid-template-columns: minmax(0, 1fr) clamp(9rem, 22cqi, 11rem); }
+}
+@container (max-width: 700px) {
+    .syn-hauptseite .syn-layout--index { grid-template-columns: minmax(0, 1fr); }
+}
+
+/* Referenzbild der ersten Produktionsgeneration als vergrößerbare Schaltfläche */
+.syn-zoom {
+    display: block;
+    width: 100%;
+    margin: 0 0 .55rem;
+    padding: 0;
+    border: 0;
+    background: none;
+    cursor: zoom-in;
+}
+.syn-zoom img { margin: 0; transition: filter .2s; }
+.syn-zoom:hover img, .syn-zoom:focus-visible img { filter: brightness(1.12) drop-shadow(0 0 .6rem #ffb54740); }
+
+/* Längere Abschnitte in den Kernpanels lesbar halten */
+.syn-hauptseite .syn-block :is(ul, ol):not(.syn-traits, .syn-models) { display: grid; gap: .2rem; padding-left: 1.15rem; }
+.syn-hauptseite .syn-block li::marker { color: var(--syn-amber); }

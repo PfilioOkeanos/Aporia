@@ -1,0 +1,53 @@
+/* Dendroarchen – Medienseite
+   Gemeinsames Design: ../../dendroarchen-basis.css, Player/Assets: _gemeinsam/medien-player.css
+   Hier: Galerie und Medienbereiche im Syntheten-Stil. */
+
+.den-medien .den-dossier .den-hero img { object-position: 50% 40%; }
+
+.den-block h2 .den-code { margin-inline-end: .5rem; }
+
+/* Bildgalerie */
+.den-gallery-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
+    gap: .8rem;
+    align-items: start;
+}
+.den-gallery-feature { margin: 0; min-width: 0; }
+.den-medien :is(.den-gallery, .den-media-panel, dialog) :is(button, select) {
+    border: 1px solid var(--den-line-hi);
+    background: linear-gradient(180deg, var(--den-btn-1), var(--den-btn-2));
+    color: var(--den-text);
+    font: 600 .8rem/1.2 var(--den-mono);
+}
+.den-medien :is(.den-gallery, .den-media-panel, dialog) button { cursor: pointer; }
+.den-medien :is(.den-gallery, .den-media-panel, dialog) :is(button, select):hover { border-color: var(--den-cyan); color: var(--den-cyan-hot); }
+.den-gallery .feature-open, .den-thumbnails button { display: block; width: 100%; padding: 0; overflow: hidden; }
+.den-gallery .feature-open { cursor: zoom-in; }
+.den-gallery .feature-open img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: contain;
+    background: var(--den-bg);
+}
+.den-gallery-controls { display: flex; align-items: center; justify-content: space-between; gap: .5rem; padding-top: .45rem; }
+.den-gallery-controls output { min-width: 0; color: var(--den-muted); font-size: .85rem; text-align: center; overflow-wrap: anywhere; }
+.den-medien .control { padding: .3rem .65rem; }
+.den-thumbnails { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .45rem; }
+.den-thumbnails img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; filter: saturate(.75) brightness(.85); transition: filter .2s; }
+.den-thumbnails button:hover img, .den-thumbnails button[aria-pressed="true"] img { filter: none; }
+.den-medien .den-thumbnails button[aria-pressed="true"] { border-color: var(--den-cyan); box-shadow: 0 0 .6rem var(--den-cyan-glow); }
+.den-gallery label { display: grid; gap: .3rem; margin-top: .6rem; color: var(--den-muted); font: 600 .72rem/1.3 var(--den-mono); letter-spacing: .1em; text-transform: uppercase; }
+.den-gallery select { width: 100%; padding: .4rem; text-transform: none; letter-spacing: 0; }
+
+/* Video, Audio, 3D, Assets */
+.den-media-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .7rem; align-items: start; }
+.den-media-panel { display: grid; gap: .6rem; }
+.den-medien .media-player-card { padding: .7rem .8rem; --den-cut: 10px; }
+.den-medien .media-player-card h3 { margin-bottom: .4rem; color: #f0e9dc; font-size: .95rem; }
+.den-medien .media-status, .den-medien .asset-catalog [role="status"] { color: var(--den-muted); font-style: italic; font-size: .88rem; }
+
+@container (max-width: 760px) {
+    .den-gallery-grid, .den-media-grid { grid-template-columns: minmax(0, 1fr); }
+    .den-thumbnails { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}

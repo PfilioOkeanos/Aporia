@@ -27,6 +27,11 @@
             <nav id="resource-groups" aria-labelledby="resource-group-title"></nav>
             <form id="resource-filters">
               <h2>Filter</h2>
+              <label>Planet
+                <select id="resource-planet">
+                  <option value="">Alle Planeten</option>
+                </select>
+              </label>
               <label>Vorkommen <input type="search" id="resource-origin" placeholder="z. B. Erze"></label>
               <label>Standardzustand
                 <select id="resource-state">
@@ -61,6 +66,7 @@
                 </div>
               </div>
             </div>
+            <div id="resource-planet-active" class="resource-planet-active" hidden></div>
             <div id="resource-content" class="resource-grid"></div>
             <nav id="resource-pagination" class="resource-pagination" aria-label="Katalogseiten"></nav>
           </section>

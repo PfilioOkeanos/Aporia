@@ -1,0 +1,10 @@
+/* Geomorphen – Geschichte
+   Gemeinsames Design: geomorphen-basis.css · hier nur der Hintergrund (Designvorlage) dieser Seite. */
+.geo-geschichte .geo-buehne { background-image: url("../../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Gigantische%20Lebensformen/geomorphen/PageDesign/Geomorphen_%20Entwicklung%20und%20Ursprung-3.png"); }
+/* Der Geomorph reicht in dieser Vorlage weiter nach rechts: Schleierkante und Titel rücken mit. */
+.geo-geschichte { --geo-schleier-links: 29cqi; --geo-hero-einzug: 5cqi; }
+@container (max-width: 700px) { .geo-geschichte .geo-schleier { left: 0; } .geo-geschichte .geo-hero { padding-left: 0; } }
+/* Schmale Ansicht: bis hierhin reicht der Geomorph, rechts davon wird der Entwurfstext abgedeckt */
+.geo-geschichte { --geo-mobil-kante: 38%; }
+/* Lage der eingebackenen Entwurfsnavigation und des Entwurfstitels in dieser Vorlage */
+.geo-geschichte { --geo-leiste-start: 30cqi; --geo-schleier-oben: 6.5cqi; }

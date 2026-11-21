@@ -1,0 +1,10 @@
+/* Geomorphen – Gesellschaft
+   Gemeinsames Design: geomorphen-basis.css · hier nur der Hintergrund (Designvorlage) dieser Seite. */
+.geo-gesellschaft .geo-buehne { background-image: url("../../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Gigantische%20Lebensformen/geomorphen/PageDesign/Kontakt%20im%20Geomorphen-Weltenarchiv-6.png"); }
+/* Der Geomorph reicht in dieser Vorlage weiter nach rechts: Schleierkante und Titel rücken mit. */
+.geo-gesellschaft { --geo-schleier-links: 31cqi; --geo-hero-einzug: 7cqi; }
+@container (max-width: 700px) { .geo-gesellschaft .geo-schleier { left: 0; } .geo-gesellschaft .geo-hero { padding-left: 0; } }
+/* Schmale Ansicht: bis hierhin reicht der Geomorph, rechts davon wird der Entwurfstext abgedeckt */
+.geo-gesellschaft { --geo-mobil-kante: 41%; }
+/* Lage der eingebackenen Entwurfsnavigation und des Entwurfstitels in dieser Vorlage */
+.geo-gesellschaft { --geo-leiste-start: 33cqi; --geo-schleier-oben: 1.5cqi; }

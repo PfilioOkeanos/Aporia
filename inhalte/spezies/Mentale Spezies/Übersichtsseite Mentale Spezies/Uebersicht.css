@@ -32,3 +32,192 @@ body.species-group-page { margin: 0; background: #061811; color: #f4e6c9; font-f
 @media(max-width: 1000px) { .species-category-grid { grid-template-columns: repeat(2,minmax(0,1fr)); } }
 @media(max-width: 650px) { .species-category-grid { grid-template-columns: 1fr; } }
 
+
+/* Rahmen mit Eckzier */
+.species-category--noetiden::after {
+    content: "";
+    position: absolute;
+    inset: 5px;
+    border: 1px solid #a98bff33;
+    border-radius: .5rem;
+    background:
+        linear-gradient(#a98bff, #a98bff) 0 0 / 16px 2px no-repeat,
+        linear-gradient(#a98bff, #a98bff) 0 0 / 2px 16px no-repeat,
+        linear-gradient(#a98bff, #a98bff) 100% 0 / 16px 2px no-repeat,
+        linear-gradient(#a98bff, #a98bff) 100% 0 / 2px 16px no-repeat,
+        linear-gradient(#a98bff, #a98bff) 0 100% / 16px 2px no-repeat,
+        linear-gradient(#a98bff, #a98bff) 0 100% / 2px 16px no-repeat,
+        linear-gradient(#a98bff, #a98bff) 100% 100% / 16px 2px no-repeat,
+        linear-gradient(#a98bff, #a98bff) 100% 100% / 2px 16px no-repeat;
+    opacity: .75;
+    pointer-events: none;
+}
+.species-category--noetiden .species-card-columns dt { color: #ffbf6b; }
+.species-category--noetiden .species-card-copy { border-color: #6d63c9; }
+.species-category--noetiden .species-card-copy a { color: #a98bff; }
+
+/* Rahmen mit Eckzier */
+.species-category--muemoiden::after {
+    content: "";
+    position: absolute;
+    inset: 5px;
+    border: 1px solid #d8434f33;
+    border-radius: .5rem;
+    background:
+        linear-gradient(#d8434f, #d8434f) 0 0 / 16px 2px no-repeat,
+        linear-gradient(#d8434f, #d8434f) 0 0 / 2px 16px no-repeat,
+        linear-gradient(#d8434f, #d8434f) 100% 0 / 16px 2px no-repeat,
+        linear-gradient(#d8434f, #d8434f) 100% 0 / 2px 16px no-repeat,
+        linear-gradient(#d8434f, #d8434f) 0 100% / 16px 2px no-repeat,
+        linear-gradient(#d8434f, #d8434f) 0 100% / 2px 16px no-repeat,
+        linear-gradient(#d8434f, #d8434f) 100% 100% / 16px 2px no-repeat,
+        linear-gradient(#d8434f, #d8434f) 100% 100% / 2px 16px no-repeat;
+    opacity: .75;
+    pointer-events: none;
+}
+.species-category--muemoiden .species-card-columns dt { color: #e0b464; }
+.species-category--muemoiden .species-card-copy { border-color: #7a3a3e; }
+.species-category--muemoiden .species-card-copy a { color: #d8434f; }
+
+/* Rahmen mit Eckzier */
+.species-category--noetiden::after {
+    content: "";
+    position: absolute;
+    inset: 5px;
+    border: 1px solid #a98bff33;
+    border-radius: .5rem;
+    background:
+        linear-gradient(#a98bff, #a98bff) 0 0 / 16px 2px no-repeat,
+        linear-gradient(#a98bff, #a98bff) 0 0 / 2px 16px no-repeat,
+        linear-gradient(#a98bff, #a98bff) 100% 0 / 16px 2px no-repeat,
+        linear-gradient(#a98bff, #a98bff) 100% 0 / 2px 16px no-repeat,
+        linear-gradient(#a98bff, #a98bff) 0 100% / 16px 2px no-repeat,
+        linear-gradient(#a98bff, #a98bff) 0 100% / 2px 16px no-repeat,
+        linear-gradient(#a98bff, #a98bff) 100% 100% / 16px 2px no-repeat,
+        linear-gradient(#a98bff, #a98bff) 100% 100% / 2px 16px no-repeat;
+    opacity: .75;
+    pointer-events: none;
+}
+.species-category--noetiden .species-card-columns dt { color: #ffbf6b; }
+.species-category--noetiden .species-card-copy { border-color: #6d63c9; }
+.species-category--noetiden .species-card-copy a { color: #a98bff; }
+
+/* Rahmen mit Eckzier */
+.species-category--muemoiden::after {
+    content: "";
+    position: absolute;
+    inset: 5px;
+    border: 1px solid #d8434f33;
+    border-radius: .5rem;
+    background:
+        linear-gradient(#d8434f, #d8434f) 0 0 / 16px 2px no-repeat,
+        linear-gradient(#d8434f, #d8434f) 0 0 / 2px 16px no-repeat,
+        linear-gradient(#d8434f, #d8434f) 100% 0 / 16px 2px no-repeat,
+        linear-gradient(#d8434f, #d8434f) 100% 0 / 2px 16px no-repeat,
+        linear-gradient(#d8434f, #d8434f) 0 100% / 16px 2px no-repeat,
+        linear-gradient(#d8434f, #d8434f) 0 100% / 2px 16px no-repeat,
+        linear-gradient(#d8434f, #d8434f) 100% 100% / 16px 2px no-repeat,
+        linear-gradient(#d8434f, #d8434f) 100% 100% / 2px 16px no-repeat;
+    opacity: .75;
+    pointer-events: none;
+}
+.species-category--muemoiden .species-card-columns dt { color: #e0b464; }
+.species-category--muemoiden .species-card-copy { border-color: #7a3a3e; }
+.species-category--muemoiden .species-card-copy a { color: #d8434f; }
+
+/* Mobile Darstellung der Übersicht: Sidebar über dem Inhalt, Felder und Cards in voller Breite */
+.species-tools :is(input, select) { width: 100%; min-width: 0; }
+@media (max-width: 760px) {
+    .species-group-frame { flex-direction: column; }
+    .species-group-frame > #aporia-sidebar-host { flex: 0 0 auto; width: 100%; }
+    .species-group-frame .aporia-sidebar { position: relative; top: auto; max-height: 42dvh; }
+}
+@media (max-width: 480px) {
+    .species-card-columns { grid-template-columns: minmax(0, 1fr); }
+    .species-card-copy { border-left: 0; padding-left: 0; border-top: 1px solid #9c805b70; padding-top: .5rem; }
+}
+
+/* Noetiden – Card-Design (Icon: assets/bilder/Alle Spezies+Übersicht/Mentale Spezies/Noetiden/hauptseite/noetiden-icon-*.svg) */
+.species-category--noetiden {
+    position: relative;
+    color: #ebe8ff;
+    border-color: #6d63c9;
+    background: radial-gradient(ellipse at 85% 8%, #a98bff22, transparent 65%),
+        linear-gradient(145deg, #17123a, #06040f 78%);
+    transition: transform .25s, box-shadow .25s;
+}
+.species-category--noetiden:hover, .species-category--noetiden:focus-within { transform: translateY(-3px); box-shadow: 0 .8rem 1.8rem #0009, 0 0 1.2rem #a98bff33; }
+.species-category--noetiden > .species-card-logo {
+    height: auto;
+    box-sizing: border-box;
+    object-fit: contain;
+    background: linear-gradient(180deg, #06040f33, #06040f66 70%, #17123a),
+        url("../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Noetiden/gesamtdarstellung/Biolumineszentes%20Netzwerk%20aus%20f%C3%BCnf%20Kernen-10.png") center 45% / cover no-repeat;
+    border-bottom: 1px solid #6d63c988;
+}
+/* Rahmen mit Eckzier */
+.species-category--noetiden::after {
+    content: "";
+    position: absolute;
+    inset: 5px;
+    border: 1px solid #a98bff33;
+    border-radius: .5rem;
+    background:
+        linear-gradient(#a98bff, #a98bff) 0 0 / 16px 2px no-repeat,
+        linear-gradient(#a98bff, #a98bff) 0 0 / 2px 16px no-repeat,
+        linear-gradient(#a98bff, #a98bff) 100% 0 / 16px 2px no-repeat,
+        linear-gradient(#a98bff, #a98bff) 100% 0 / 2px 16px no-repeat,
+        linear-gradient(#a98bff, #a98bff) 0 100% / 16px 2px no-repeat,
+        linear-gradient(#a98bff, #a98bff) 0 100% / 2px 16px no-repeat,
+        linear-gradient(#a98bff, #a98bff) 100% 100% / 16px 2px no-repeat,
+        linear-gradient(#a98bff, #a98bff) 100% 100% / 2px 16px no-repeat;
+    opacity: .75;
+    pointer-events: none;
+}
+.species-category--noetiden .species-card-columns dt { color: #ffbf6b; }
+.species-category--noetiden .species-card-copy { border-color: #6d63c9; }
+.species-category--noetiden .species-card-copy a { color: #a98bff; }
+
+/* Muemoiden – Card-Design (Icon: assets/bilder/Alle Spezies+Übersicht/Mentale Spezies/MueMoiden/hauptseite/muemoiden-icon-*.svg) */
+.species-category--muemoiden {
+    position: relative;
+    color: #f1e6d6;
+    border-color: #7a3a3e;
+    background: radial-gradient(ellipse at 85% 8%, #d8434f22, transparent 65%),
+        linear-gradient(145deg, #24171a, #0b0708 78%);
+    transition: transform .25s, box-shadow .25s;
+}
+.species-category--muemoiden:hover, .species-category--muemoiden:focus-within { transform: translateY(-3px); box-shadow: 0 .8rem 1.8rem #0009, 0 0 1.2rem #d8434f33; }
+.species-category--muemoiden > .species-card-logo {
+    height: auto;
+    box-sizing: border-box;
+    object-fit: contain;
+    background: linear-gradient(180deg, #0b070833, #0b070866 70%, #24171a),
+        url("../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/MueMoiden/gesamtdarstellung/Dunkles%20Muemoiden-Schreinritual%20im%20Sci-Fi-Fantasy-Tempel-17.png") center 45% / cover no-repeat;
+    border-bottom: 1px solid #7a3a3e88;
+}
+/* Rahmen mit Eckzier */
+.species-category--muemoiden::after {
+    content: "";
+    position: absolute;
+    inset: 5px;
+    border: 1px solid #d8434f33;
+    border-radius: .5rem;
+    background:
+        linear-gradient(#d8434f, #d8434f) 0 0 / 16px 2px no-repeat,
+        linear-gradient(#d8434f, #d8434f) 0 0 / 2px 16px no-repeat,
+        linear-gradient(#d8434f, #d8434f) 100% 0 / 16px 2px no-repeat,
+        linear-gradient(#d8434f, #d8434f) 100% 0 / 2px 16px no-repeat,
+        linear-gradient(#d8434f, #d8434f) 0 100% / 16px 2px no-repeat,
+        linear-gradient(#d8434f, #d8434f) 0 100% / 2px 16px no-repeat,
+        linear-gradient(#d8434f, #d8434f) 100% 100% / 16px 2px no-repeat,
+        linear-gradient(#d8434f, #d8434f) 100% 100% / 2px 16px no-repeat;
+    opacity: .75;
+    pointer-events: none;
+}
+.species-category--muemoiden .species-card-columns dt { color: #e0b464; }
+.species-category--muemoiden .species-card-copy { border-color: #7a3a3e; }
+.species-category--muemoiden .species-card-copy a { color: #d8434f; }
+
+/* Lange Wörter in Cards umbrechen statt abschneiden */
+.species-card-columns :is(dd, p) { overflow-wrap: break-word; hyphens: auto; }

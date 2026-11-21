@@ -1,0 +1,53 @@
+/* Noetiden – Medienseite
+   Gemeinsames Design: ../../noetiden-basis.css, Player/Assets: _gemeinsam/medien-player.css
+   Hier: Galerie und Medienbereiche im Syntheten-Stil. */
+
+.noe-medien .noe-dossier .noe-hero img { object-position: 50% 40%; }
+
+.noe-block h2 .noe-code { margin-inline-end: .5rem; }
+
+/* Bildgalerie */
+.noe-gallery-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
+    gap: .8rem;
+    align-items: start;
+}
+.noe-gallery-feature { margin: 0; min-width: 0; }
+.noe-medien :is(.noe-gallery, .noe-media-panel, dialog) :is(button, select) {
+    border: 1px solid var(--noe-line-hi);
+    background: linear-gradient(180deg, var(--noe-btn-1), var(--noe-btn-2));
+    color: var(--noe-text);
+    font: 600 .8rem/1.2 var(--noe-mono);
+}
+.noe-medien :is(.noe-gallery, .noe-media-panel, dialog) button { cursor: pointer; }
+.noe-medien :is(.noe-gallery, .noe-media-panel, dialog) :is(button, select):hover { border-color: var(--noe-cyan); color: var(--noe-cyan-hot); }
+.noe-gallery .feature-open, .noe-thumbnails button { display: block; width: 100%; padding: 0; overflow: hidden; }
+.noe-gallery .feature-open { cursor: zoom-in; }
+.noe-gallery .feature-open img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: contain;
+    background: var(--noe-bg);
+}
+.noe-gallery-controls { display: flex; align-items: center; justify-content: space-between; gap: .5rem; padding-top: .45rem; }
+.noe-gallery-controls output { min-width: 0; color: var(--noe-muted); font-size: .85rem; text-align: center; overflow-wrap: anywhere; }
+.noe-medien .control { padding: .3rem .65rem; }
+.noe-thumbnails { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .45rem; }
+.noe-thumbnails img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; filter: saturate(.75) brightness(.85); transition: filter .2s; }
+.noe-thumbnails button:hover img, .noe-thumbnails button[aria-pressed="true"] img { filter: none; }
+.noe-medien .noe-thumbnails button[aria-pressed="true"] { border-color: var(--noe-cyan); box-shadow: 0 0 .6rem var(--noe-cyan-glow); }
+.noe-gallery label { display: grid; gap: .3rem; margin-top: .6rem; color: var(--noe-muted); font: 600 .72rem/1.3 var(--noe-mono); letter-spacing: .1em; text-transform: uppercase; }
+.noe-gallery select { width: 100%; padding: .4rem; text-transform: none; letter-spacing: 0; }
+
+/* Video, Audio, 3D, Assets */
+.noe-media-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .7rem; align-items: start; }
+.noe-media-panel { display: grid; gap: .6rem; }
+.noe-medien .media-player-card { padding: .7rem .8rem; --noe-cut: 10px; }
+.noe-medien .media-player-card h3 { margin-bottom: .4rem; color: #f0e9dc; font-size: .95rem; }
+.noe-medien .media-status, .noe-medien .asset-catalog [role="status"] { color: var(--noe-muted); font-style: italic; font-size: .88rem; }
+
+@container (max-width: 760px) {
+    .noe-gallery-grid, .noe-media-grid { grid-template-columns: minmax(0, 1fr); }
+    .noe-thumbnails { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}

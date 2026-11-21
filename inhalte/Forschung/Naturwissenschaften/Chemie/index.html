@@ -3,73 +3,90 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Chemie im APORIA-Weltenarchiv: Stoffe, Reaktionen und Verbindungen. Mit interaktivem Forschungsbaum.">
   <title>Chemie | Aporia Weltenarchiv</title>
-  <link rel="stylesheet" href="../../../../Menüs/TopBar/Top_bar.css">
-  <link rel="stylesheet" href="../../Übersicht/Forschung.css">
-  <script type="module" src="../../Übersicht/Forschung.js"></script>
+  <link rel="stylesheet" href="../../../../Men%C3%BCs/TopBar/Top_bar.css">
+  <link rel="stylesheet" href="../../_gemeinsam/zweig.css">
+  <link rel="stylesheet" href="index.css">
+  <script type="module" src="index.js"></script>
 </head>
-<body class="research-page" data-section="forschung">
+<body class="research-page fz-seite fz-chemie" data-section="forschung" data-familie="labor">
   <div data-aporia-topbar></div>
-  <main id="inhalt" class="research-main research-branch-page" data-layout="laboratory" style="--accent: #ffc181">
-    <a class="branch-back" data-route="forschung" data-route-fragment="gruppe-1" href="../../Übersicht/Forschung.html#gruppe-1">← Forschungsübersicht</a>
-    <header class="branch-hero">
-      <div class="branch-intro">
-        <p class="branch-group">Naturwissenschaften</p>
+  <main id="inhalt" class="fz-main">
+    <a class="fz-zurueck" data-route="forschung" data-route-fragment="gruppe-1" href="../../%C3%9Cbersicht/Forschung.html#gruppe-1">← Forschungsübersicht</a>
+
+    <header class="fz-panel fz-hero">
+      <div class="fz-hero-text">
+        <p class="fz-gruppe">Naturwissenschaften</p>
         <h1>Chemie</h1>
         <p>Stoffe, Reaktionen und Verbindungen.</p>
-        <a class="branch-related" data-route="rohstoffe" href="../../../Rohstoffe/Uebersicht/Rohstoffe.html">Rohstoffarchiv ↗</a>
-      </div>
-      <a class="branch-hero-image" href="../../../../assets/bilder/Technologien/%C3%9Cbersichtsseite/Viktorianischer%20Laborarbeitsplatz%20mit%20gr%C3%BCnen%20Hologrammen-2.png" target="_blank" rel="noopener" aria-label="Titelmotiv in Originalgröße öffnen">
-        <img src="../../../../assets/bilder/Technologien/%C3%9Cbersichtsseite/Viktorianischer%20Laborarbeitsplatz%20mit%20gr%C3%BCnen%20Hologrammen-2.png" alt="" decoding="async">
-      </a>
-    </header>
-    <div class="branch-sections">
-      <section class="branch-collection" aria-labelledby="motive">
-        <h2 id="motive">Motive aus dem Archiv</h2>
-        <div class="branch-gallery">
-          <details class="branch-motif">
-            <summary>
-              <img src="../../../../assets/bilder/Rohstoffe/Galliumtropfen%20schmilzt%20im%20Labortiegel-38.png" alt="" loading="lazy" decoding="async">
-              <span>Gallium · Phasenübergänge</span>
-            </summary>
-            <div>
-              <p>Das Motiv zeigt Gallium beim Schmelzen und ordnet die Probe dem Thema Aggregatzustände zu.</p>
-              <a href="../../../../assets/bilder/Rohstoffe/Galliumtropfen%20schmilzt%20im%20Labortiegel-38.png" target="_blank" rel="noopener">Bild in Originalgröße öffnen</a>
-            </div>
-          </details>
-          <details class="branch-motif">
-            <summary>
-              <img src="../../../../assets/bilder/Rohstoffe/Versiegelte%20Bromampulle%20im%20Labor-29.png" alt="" loading="lazy" decoding="async">
-              <span>Brom · Stoffeigenschaften</span>
-            </summary>
-            <div>
-              <p>Eine versiegelte Ampulle aus dem Rohstoffarchiv zeigt, wie Brom als Elementprobe dargestellt ist.</p>
-              <a href="../../../../assets/bilder/Rohstoffe/Versiegelte%20Bromampulle%20im%20Labor-29.png" target="_blank" rel="noopener">Bild in Originalgröße öffnen</a>
-            </div>
-          </details>
-          <details class="branch-motif">
-            <summary>
-              <img src="../../../../assets/bilder/Rohstoffe/Leuchtende%20Kryptonr%C3%B6hre%20im%20Museumslabor-32.png" alt="" loading="lazy" decoding="async">
-              <span>Krypton · Spektren</span>
-            </summary>
-            <div>
-              <p>Die Röhre illustriert das Licht, das angeregte Edelgase abgeben.</p>
-              <a href="../../../../assets/bilder/Rohstoffe/Leuchtende%20Kryptonr%C3%B6hre%20im%20Museumslabor-32.png" target="_blank" rel="noopener">Bild in Originalgröße öffnen</a>
-            </div>
-          </details>
+        <div class="fz-chips"><a class="fz-chip" data-route="rohstoffe" href="../../../Rohstoffe/Uebersicht/Rohstoffe.html">Rohstoffarchiv ↗</a><a class="fz-chip" href="#forschungsbaum">Zum Forschungsbaum ↓</a></div>
+        <div class="fz-kennzahlen" aria-label="Forschungsbaum in Zahlen">
+          <div class="fz-kennzahl"><span class="fz-label">Baumform</span><strong>Breite Basis</strong><i style="--wert: 88%"></i></div>
+          <div class="fz-kennzahl"><span class="fz-label">Stufen</span><strong>4</strong><i style="--wert: 80%"></i></div>
+          <div class="fz-kennzahl"><span class="fz-label">Vorteile</span><strong>1</strong><i style="--wert: 12.5%"></i></div>
+          <div class="fz-kennzahl"><span class="fz-label">Gegenstände</span><strong>3</strong><i style="--wert: 37.5%"></i></div>
         </div>
-      </section>
-      <nav class="branch-navigation" aria-label="Naturwissenschaften">
-        <h2>Forschungszweige der Gruppe</h2>
-        <ul>
-          <li><a href="../Physik/index.html">Physik</a></li>
-          <li><a href="#inhalt" aria-current="page">Chemie</a></li>
-          <li><a href="../Biologie/index.html">Biologie</a></li>
-          <li><a href="../Medizin/index.html">Medizin</a></li>
-          <li><a href="../Genetik%20und%20Biotechnologie/index.html">Genetik und Biotechnologie</a></li>
-        </ul>
-      </nav>
-    </div>
+      </div>
+      <figure class="fz-hero-bild">
+        <img src="../../../../assets/bilder/Rohstoffe/Galliumtropfen%20schmilzt%20im%20Labortiegel-38.png" alt="Galliumtropfen schmilzt im Labortiegel" fetchpriority="high" decoding="async">
+      </figure>
+    </header>
+
+    <section class="fz-panel fz-abschnitt" id="forschungsbaum" aria-labelledby="baum-titel">
+      <header>
+        <p class="fz-label">Forschungssystem · Entwurf</p>
+        <h2 id="baum-titel">Forschungsbaum</h2>
+        <p>Messwerte sammeln sich, solange der Baum sichtbar ist; „Messung durchführen“ bringt zusätzlich 4 MW. Erforsche von „Grundlagen“ aufwärts bis „Durchbruch“: Jede Forschung verbindet sich mit der nächsten Stufe und schaltet Vorteile oder Gegenstände frei. Doppelklick erforscht direkt.</p>
+      </header>
+      <div data-forschungsbaum></div>
+      <noscript><p>Der Forschungsbaum benötigt JavaScript.</p></noscript>
+    </section>
+
+    <section class="fz-panel fz-abschnitt" aria-labelledby="motive-titel">
+      <header><p class="fz-label">Archiv</p><h2 id="motive-titel">Motive aus dem Archiv</h2></header>
+      <div class="fz-motive">
+          <details class="fz-motiv">
+            <summary><img src="../../../../assets/bilder/Rohstoffe/Galliumtropfen%20schmilzt%20im%20Labortiegel-38.png" alt="" loading="lazy" decoding="async"><span>Galliumtropfen schmilzt im Labortiegel</span></summary>
+            <div><p>Titelmotiv dieses Forschungszweigs.</p><a href="../../../../assets/bilder/Rohstoffe/Galliumtropfen%20schmilzt%20im%20Labortiegel-38.png" target="_blank" rel="noopener">Bild in Originalgröße öffnen</a></div>
+          </details>
+          <details class="fz-motiv">
+            <summary><img src="../../../../assets/bilder/Rohstoffe/Versiegelte%20Ampulle%20mit%20fl%C3%BCssigem%20Sauerstoff-2.png" alt="" loading="lazy" decoding="async"><span>Versiegelte Ampulle mit flüssigem Sauerstoff</span></summary>
+            <div><p>Freischaltbar im Forschungsbaum.</p><a href="../../../../assets/bilder/Rohstoffe/Versiegelte%20Ampulle%20mit%20fl%C3%BCssigem%20Sauerstoff-2.png" target="_blank" rel="noopener">Bild in Originalgröße öffnen</a></div>
+          </details>
+          <details class="fz-motiv">
+            <summary><img src="../../../../assets/bilder/Himmelsk%C3%B6rper/OzeanWelt/erde-im-sternenmeer/unterseiten/ERDE_BILDER/Erforschung/07%20%E2%80%93%20Probenahme%20&%20Materialanalysen/07_Probenahme_Materialanalysen.jpg" alt="" loading="lazy" decoding="async"><span>Probenahme Materialanalysen</span></summary>
+            <div><p>Freischaltbar im Forschungsbaum.</p><a href="../../../../assets/bilder/Himmelsk%C3%B6rper/OzeanWelt/erde-im-sternenmeer/unterseiten/ERDE_BILDER/Erforschung/07%20%E2%80%93%20Probenahme%20&%20Materialanalysen/07_Probenahme_Materialanalysen.jpg" target="_blank" rel="noopener">Bild in Originalgröße öffnen</a></div>
+          </details>
+          <details class="fz-motiv">
+            <summary><img src="../../../../assets/bilder/Rohstoffe/Versiegelte%20Bromampulle%20im%20Labor-29.png" alt="" loading="lazy" decoding="async"><span>Versiegelte Bromampulle im Labor</span></summary>
+            <div><p>Freischaltbar im Forschungsbaum.</p><a href="../../../../assets/bilder/Rohstoffe/Versiegelte%20Bromampulle%20im%20Labor-29.png" target="_blank" rel="noopener">Bild in Originalgröße öffnen</a></div>
+          </details>
+          <details class="fz-motiv">
+            <summary><img src="../../../../assets/bilder/Rohstoffe/Galliumtropfen%20schmilzt%20im%20Labortiegel-38.png" alt="" loading="lazy" decoding="async"><span>Gallium · Phasenübergänge</span></summary>
+            <div><p>Das Motiv zeigt Gallium beim Schmelzen und ordnet die Probe dem Thema Aggregatzustände zu.</p><a href="../../../../assets/bilder/Rohstoffe/Galliumtropfen%20schmilzt%20im%20Labortiegel-38.png" target="_blank" rel="noopener">Bild in Originalgröße öffnen</a></div>
+          </details>
+          <details class="fz-motiv">
+            <summary><img src="../../../../assets/bilder/Rohstoffe/Versiegelte%20Bromampulle%20im%20Labor-29.png" alt="" loading="lazy" decoding="async"><span>Brom · Stoffeigenschaften</span></summary>
+            <div><p>Eine versiegelte Ampulle aus dem Rohstoffarchiv zeigt, wie Brom als Elementprobe dargestellt ist.</p><a href="../../../../assets/bilder/Rohstoffe/Versiegelte%20Bromampulle%20im%20Labor-29.png" target="_blank" rel="noopener">Bild in Originalgröße öffnen</a></div>
+          </details>
+          <details class="fz-motiv">
+            <summary><img src="../../../../assets/bilder/Rohstoffe/Leuchtende%20Kryptonr%C3%B6hre%20im%20Museumslabor-32.png" alt="" loading="lazy" decoding="async"><span>Krypton · Spektren</span></summary>
+            <div><p>Die Röhre illustriert das Licht, das angeregte Edelgase abgeben.</p><a href="../../../../assets/bilder/Rohstoffe/Leuchtende%20Kryptonr%C3%B6hre%20im%20Museumslabor-32.png" target="_blank" rel="noopener">Bild in Originalgröße öffnen</a></div>
+          </details>
+      </div>
+    </section>
+
+    <nav class="fz-panel fz-abschnitt fz-nachbarn" aria-label="Naturwissenschaften">
+      <header><p class="fz-label">Naturwissenschaften</p><h2>Forschungszweige der Gruppe</h2></header>
+      <ul>
+            <li><a href="../Physik/index.html">Physik</a></li>
+            <li><a href="#inhalt" aria-current="page">Chemie</a></li>
+            <li><a href="../Biologie/index.html">Biologie</a></li>
+            <li><a href="../Medizin/index.html">Medizin</a></li>
+            <li><a href="../Genetik%20und%20Biotechnologie/index.html">Genetik und Biotechnologie</a></li>
+      </ul>
+    </nav>
   </main>
 </body>
 </html>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 550 200" width="550" height="200">
+<style>.krone{animation:wieg 6s ease-in-out infinite;transform-origin:275px 100px}.ring{opacity:0;animation:ring 6s ease-out infinite;transform-origin:275px 150px}.r1{animation-delay:2s}.r2{animation-delay:4s}
+.spore{opacity:0;animation:spore 6s ease-in-out infinite}.s0{animation-delay:0.00s}.s1{animation-delay:0.55s}.s2{animation-delay:1.10s}.s3{animation-delay:1.65s}.s4{animation-delay:2.20s}.s5{animation-delay:2.75s}.s6{animation-delay:3.30s}.s7{animation-delay:3.85s}.s8{animation-delay:4.40s}.s9{animation-delay:4.95s}
+@keyframes wieg{50%{transform:rotate(2.5deg)}}@keyframes ring{0%{opacity:.7;transform:scale(.3)}100%{opacity:0;transform:scale(3)}}
+@keyframes spore{0%{opacity:0;transform:translate(0,0)}30%{opacity:1}100%{opacity:0;transform:translate(14px,-110px)}}</style>
+<defs><filter id="d" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feFlood flood-color="#f0c46e"/><feComposite in2="b" operator="in"/><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+<circle cx="275" cy="100" r="86" fill="#0b120a" fill-opacity=".78" stroke="#f0c46e" stroke-opacity=".65" stroke-width="1.5"/>
+<g fill="none" stroke="#a6d86e"><circle class="ring r0" cx="275" cy="150" r="22" stroke-opacity=".5"/><circle class="ring r1" cx="275" cy="150" r="22" stroke-opacity=".5"/><circle class="ring r2" cx="275" cy="150" r="22" stroke-opacity=".5"/></g>
+<path d="M275 150 Q 256 158 242 174 M275 150 Q 294 158 308 174 M275 150 Q 270 164 262 180 M275 150 Q 280 164 288 180" fill="none" stroke="#8a6a44" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M271 150 C 272 130 270 112 273 96 L 277 96 C 280 112 278 130 279 150 Z" fill="#5a4330" stroke="#8a6a44" stroke-width="1.5"/>
+<g class="krone">
+<path d="M275 122 Q 252 110 238 86 M275 112 Q 300 100 314 78 M275 98 Q 262 78 256 54 M275 98 Q 290 76 296 52 M238 86 Q 226 78 220 62 M314 78 Q 328 70 334 56 M256 54 Q 248 44 246 32 M296 52 Q 304 42 308 30" fill="none" stroke="#c9a86a" stroke-width="2.4" stroke-linecap="round"/>
+<g fill="#a6d86e" fill-opacity=".9"><circle cx="238" cy="86" r="6"/><circle cx="220" cy="62" r="8"/><circle cx="314" cy="78" r="10"/><circle cx="334" cy="56" r="6"/><circle cx="256" cy="54" r="8"/><circle cx="296" cy="52" r="10"/><circle cx="246" cy="32" r="6"/><circle cx="308" cy="30" r="8"/><circle cx="275" cy="46" r="10"/><circle cx="228" cy="74" r="6"/><circle cx="324" cy="66" r="8"/></g>
+<g fill="#d690ff" fill-opacity=".85"><circle cx="244" cy="70" r="3"/><circle cx="306" cy="62" r="3"/><circle cx="268" cy="38" r="3"/><circle cx="286" cy="40" r="3"/></g></g>
+<g fill="#f0c46e" filter="url(#d)"><circle class="spore s0" cx="190" cy="150" r="1.4"/><circle class="spore s1" cx="208" cy="140" r="2.4"/><circle class="spore s2" cx="226" cy="130" r="1.4"/><circle class="spore s3" cx="244" cy="120" r="2.4"/><circle class="spore s4" cx="262" cy="150" r="1.4"/><circle class="spore s5" cx="280" cy="140" r="2.4"/><circle class="spore s6" cx="298" cy="130" r="1.4"/><circle class="spore s7" cx="316" cy="120" r="2.4"/><circle class="spore s8" cx="334" cy="150" r="1.4"/><circle class="spore s9" cx="352" cy="140" r="2.4"/></g>
+</svg>

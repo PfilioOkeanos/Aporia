@@ -1,0 +1,278 @@
+/* APORIA – Forschungszweige: gemeinsames Basisdesign
+   Grundlayout, Forschungsbaum (Adapter Menüs/adapter/aporia-forschung.js) und neun Design-Familien.
+   Jede Seite setzt in ihrer index.css die eigene Akzentfarbe (--akzent) und Varianten. */
+
+/* ---------- Grundwerte ---------- */
+.fz-seite {
+    --akzent: #78cfff;
+    --akzent-hell: color-mix(in srgb, var(--akzent) 55%, #fff);
+    --akzent-dunkel: color-mix(in srgb, var(--akzent) 30%, #000);
+    --akzent-glow: color-mix(in srgb, var(--akzent) 45%, transparent);
+    --fz-bg: #070b12;
+    --fz-flaeche: #0e1520;
+    --fz-flaeche-2: #121c2a;
+    --fz-linie: color-mix(in srgb, var(--akzent) 22%, #2a3646);
+    --fz-text: #e6edf5;
+    --fz-leise: #9aa8b8;
+    --fz-kopf: "Segoe UI", system-ui, sans-serif;
+    --fz-mono: ui-monospace, "Cascadia Mono", Consolas, monospace;
+    --fz-radius: 1rem;
+    --fz-knoten-form: 50%;
+    --fz-muster: none;
+    --fz-muster-groesse: auto;
+    margin: 0;
+    min-height: 100vh;
+    background: var(--fz-muster), radial-gradient(ellipse 70% 50% at 80% 0%, color-mix(in srgb, var(--akzent) 12%, transparent), transparent 70%), var(--fz-bg);
+    background-size: var(--fz-muster-groesse), auto, auto;
+    color: var(--fz-text);
+    font: 1rem/1.6 "Segoe UI", system-ui, sans-serif;
+}
+.fz-main { box-sizing: border-box; width: min(1400px, 100%); margin: 0 auto; padding: clamp(.8rem, 2vw, 1.8rem); display: grid; gap: clamp(1rem, 2.2vw, 1.8rem); }
+.fz-main :is(h1, h2, h3, p) { margin: 0; }
+.fz-main a { color: var(--akzent-hell); }
+.fz-main a:focus-visible, .fz-main button:focus-visible, .fz-main summary:focus-visible { outline: 2px solid var(--akzent-hell); outline-offset: 3px; }
+.fz-zurueck { justify-self: start; padding: .35rem .9rem; border: 1px solid var(--fz-linie); border-radius: 999px; font-size: .88rem; text-decoration: none; background: color-mix(in srgb, var(--fz-flaeche) 80%, transparent); }
+.fz-zurueck:hover { border-color: var(--akzent); }
+.fz-panel { border: 1px solid var(--fz-linie); border-radius: var(--fz-radius); background: linear-gradient(160deg, color-mix(in srgb, var(--fz-flaeche-2) 92%, transparent), color-mix(in srgb, var(--fz-flaeche) 96%, transparent)); box-shadow: 0 1rem 2.2rem #0008, inset 0 1px 0 #ffffff0d; }
+.fz-label { color: var(--fz-leise); font: 600 .7rem/1.3 var(--fz-mono); letter-spacing: .14em; text-transform: uppercase; }
+
+/* ---------- Kopfbereich ---------- */
+.fz-hero { position: relative; isolation: isolate; display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); gap: clamp(1rem, 2.5vw, 2rem); align-items: center; padding: clamp(1rem, 2.5vw, 2rem); overflow: hidden; }
+.fz-hero-text { display: grid; gap: .7rem; align-content: center; }
+.fz-gruppe { color: var(--akzent); font: 600 .78rem/1.3 var(--fz-mono); letter-spacing: .16em; text-transform: uppercase; }
+.fz-hero h1 { font: 600 clamp(1.8rem, 3.6vw, 3.4rem)/1.08 var(--fz-kopf); letter-spacing: .02em; text-wrap: balance; text-shadow: 0 0 1.6rem var(--akzent-glow); hyphens: auto; overflow-wrap: break-word; }
+.fz-hero-text > p:not(.fz-gruppe) { max-width: 46ch; color: var(--fz-leise); font-size: 1.08rem; }
+.fz-chips { display: flex; flex-wrap: wrap; gap: .45rem; margin-top: .3rem; }
+.fz-chip { padding: .3rem .8rem; border: 1px solid color-mix(in srgb, var(--akzent) 50%, transparent); border-radius: 999px; font-size: .84rem; text-decoration: none; background: color-mix(in srgb, var(--akzent) 10%, transparent); }
+.fz-chip:hover { background: color-mix(in srgb, var(--akzent) 22%, transparent); }
+.fz-hero-bild { position: relative; margin: 0; aspect-ratio: 16 / 10; overflow: hidden; border-radius: calc(var(--fz-radius) * .8); box-shadow: 0 0 0 1px var(--fz-linie), 0 1.2rem 2.4rem #000a; }
+.fz-hero-bild img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: var(--fz-bild-pos, 50% 50%); transition: transform 6s ease; }
+.fz-hero:hover .fz-hero-bild img { transform: scale(1.04); }
+.fz-hero-bild::after { content: ""; position: absolute; inset: 0; pointer-events: none; }
+/* Kennzahlen als kleines Diagramm */
+.fz-kennzahlen { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .5rem; margin-top: .4rem; }
+.fz-kennzahl { display: grid; gap: .15rem; padding: .55rem .6rem; border: 1px solid var(--fz-linie); border-radius: .6rem; background: color-mix(in srgb, var(--fz-flaeche) 70%, transparent); }
+.fz-kennzahl strong { font: 600 1.25rem/1 var(--fz-kopf); color: var(--akzent-hell); }
+.fz-kennzahl i { display: block; height: 4px; border-radius: 2px; background: linear-gradient(90deg, var(--akzent) var(--wert, 50%), color-mix(in srgb, var(--akzent) 15%, transparent) 0); }
+
+/* ---------- Abschnitte ---------- */
+.fz-abschnitt { display: grid; gap: 1rem; padding: clamp(1rem, 2.2vw, 1.6rem); }
+.fz-abschnitt > header { display: grid; gap: .35rem; }
+.fz-abschnitt h2 { font: 600 clamp(1.3rem, 2.4vw, 1.8rem)/1.2 var(--fz-kopf); }
+.fz-abschnitt > header p { color: var(--fz-leise); max-width: 70ch; }
+
+/* ---------- Forschungssystem ---------- */
+.fs-system { display: grid; gap: 1rem; }
+.fs-leiste { display: flex; flex-wrap: wrap; align-items: center; gap: .7rem 1.2rem; padding: .8rem 1rem; border: 1px solid var(--fz-linie); border-radius: .8rem; background: color-mix(in srgb, var(--fz-bg) 60%, transparent); }
+.fs-wert { display: grid; gap: .05rem; min-width: 8rem; }
+.fs-wert--ring { display: flex; align-items: center; gap: .6rem; }
+.fs-punkte { font: 700 1.6rem/1 var(--fz-kopf); color: var(--akzent-hell); font-variant-numeric: tabular-nums; }
+.fs-rate, .fs-fortschritt { color: var(--fz-leise); font: .82rem/1.3 var(--fz-mono); }
+.fs-fortschritt { display: block; color: var(--fz-text); font-size: 1rem; }
+.fs-ring { width: 2.8rem; height: 2.8rem; transform: rotate(-90deg); }
+.fs-ring circle { fill: none; stroke-width: 4; }
+.fs-ring-grund { stroke: color-mix(in srgb, var(--akzent) 18%, transparent); }
+.fs-ring-wert { stroke: var(--akzent); stroke-linecap: round; stroke-dasharray: 0 100; transition: stroke-dasharray .6s ease; filter: drop-shadow(0 0 3px var(--akzent-glow)); }
+.fs-knopf { display: inline-flex; align-items: center; gap: .45rem; padding: .55rem 1rem; border: 1px solid var(--akzent); border-radius: .6rem; background: color-mix(in srgb, var(--akzent) 16%, transparent); color: var(--fz-text); font: 600 .9rem/1.2 inherit; cursor: pointer; transition: background .2s, transform .15s, box-shadow .2s; }
+.fs-knopf:hover:not(:disabled) { background: color-mix(in srgb, var(--akzent) 30%, transparent); box-shadow: 0 0 1rem var(--akzent-glow); }
+.fs-knopf:active:not(:disabled) { transform: scale(.97); }
+.fs-knopf:disabled { opacity: .5; cursor: not-allowed; border-color: var(--fz-linie); background: transparent; }
+.fs-experiment { margin-left: auto; }
+.fs-experiment.ist-aktiv .fs-knopf-icon { animation: fs-blubb .6s ease-out; }
+@keyframes fs-blubb { 40% { transform: translateY(-4px) rotate(-12deg) scale(1.2); } }
+.fs-reset { border-color: var(--fz-linie); background: transparent; color: var(--fz-leise); font-weight: 400; }
+
+.fs-bereich { display: grid; grid-template-columns: minmax(0, 1fr) minmax(15rem, 19rem); gap: 1rem; align-items: start; }
+.fs-baum { position: relative; display: grid; gap: clamp(1.4rem, 3vw, 2.6rem); padding: 1.4rem .8rem; border: 1px solid var(--fz-linie); border-radius: var(--fz-radius); background: radial-gradient(ellipse at 50% 100%, color-mix(in srgb, var(--akzent) 10%, transparent), transparent 70%), color-mix(in srgb, var(--fz-bg) 55%, transparent); overflow: hidden; }
+.fs-linien { position: absolute; inset: 0; pointer-events: none; overflow: visible; }
+.fs-linie, .fs-fluss { fill: none; stroke-linecap: round; }
+.fs-linie { stroke: color-mix(in srgb, var(--fz-leise) 30%, transparent); stroke-width: 2; }
+.fs-linie.ist-offen { stroke: color-mix(in srgb, var(--akzent) 55%, transparent); stroke-dasharray: .02 .02; }
+.fs-linie.ist-frei { stroke: var(--akzent); stroke-width: 2.6; filter: drop-shadow(0 0 3px var(--akzent-glow)); }
+.fs-linie.ist-neu { stroke-dasharray: 1; animation: fs-zeichnen 1s ease-out both; }
+@keyframes fs-zeichnen { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
+.fs-fluss { stroke: var(--akzent-hell); stroke-width: 2.4; stroke-dasharray: .04 .26; opacity: 0; }
+.fs-fluss.ist-frei { opacity: .9; }
+.ist-sichtbar:not(.ist-ruhig) .fs-fluss.ist-frei { animation: fs-fluss 2.4s linear infinite; }
+@keyframes fs-fluss { to { stroke-dashoffset: -.3; } }
+
+.fs-reihe { position: relative; z-index: 1; display: flex; flex-wrap: nowrap; justify-content: space-evenly; gap: .5rem; }
+.fs-reihe-label { position: absolute; left: 0; top: -1.1rem; color: color-mix(in srgb, var(--fz-leise) 70%, transparent); font: 600 .62rem/1 var(--fz-mono); letter-spacing: .16em; text-transform: uppercase; }
+.fs-knoten { display: grid; justify-items: center; align-content: start; gap: .3rem; flex: 0 1 9rem; min-width: 0; padding: .2rem; border: 0; background: none; color: var(--fz-text); font: inherit; cursor: pointer; }
+.fs-knoten-kern { position: relative; display: grid; place-items: center; width: 3.4rem; aspect-ratio: 1; border-radius: var(--fz-knoten-form); clip-path: var(--fz-knoten-clip, none); background: color-mix(in srgb, var(--fz-flaeche) 90%, transparent); box-shadow: inset 0 0 0 2px color-mix(in srgb, var(--fz-leise) 35%, transparent); transition: box-shadow .25s, background .25s, transform .25s; }
+.fs-knoten-icon { color: var(--fz-leise); font-size: 1rem; }
+.fs-knoten-name { font-size: .82rem; line-height: 1.25; text-align: center; text-wrap: balance; hyphens: auto; overflow-wrap: anywhere; }
+.fs-knoten-kosten { color: var(--fz-leise); font: .7rem/1 var(--fz-mono); }
+.fs-knoten:hover .fs-knoten-kern { transform: translateY(-2px); }
+.fs-knoten[data-status="gesperrt"] { opacity: .45; }
+.fs-knoten[data-status="verfuegbar"] .fs-knoten-kern { box-shadow: inset 0 0 0 2px color-mix(in srgb, var(--akzent) 60%, transparent); }
+.fs-knoten[data-status="bereit"] .fs-knoten-kern { box-shadow: inset 0 0 0 2px var(--akzent), 0 0 1rem var(--akzent-glow); }
+.ist-sichtbar:not(.ist-ruhig) .fs-knoten[data-status="bereit"] .fs-knoten-kern { animation: fs-bereit 1.8s ease-in-out infinite; }
+@keyframes fs-bereit { 50% { transform: scale(1.08); } }
+.fs-knoten[data-status="bereit"] .fs-knoten-kosten { color: var(--akzent-hell); }
+.fs-knoten[data-status="frei"] .fs-knoten-kern { background: radial-gradient(circle at 40% 35%, var(--akzent-hell), var(--akzent) 55%, var(--akzent-dunkel)); box-shadow: 0 0 1.2rem var(--akzent-glow); }
+.fs-knoten[data-status="frei"] .fs-knoten-icon { color: var(--fz-bg); }
+.fs-knoten[data-status="frei"] .fs-knoten-kosten { color: var(--akzent); }
+.fs-knoten[aria-pressed="true"] .fs-knoten-name { color: var(--akzent-hell); }
+.fs-knoten[aria-pressed="true"] .fs-knoten-kern { outline: 2px dashed color-mix(in srgb, var(--akzent) 70%, transparent); outline-offset: 4px; }
+.fs-knoten.ist-neu .fs-knoten-kern { animation: fs-neu .9s ease-out; }
+@keyframes fs-neu { 0% { transform: scale(.7); } 50% { transform: scale(1.25); box-shadow: 0 0 2.4rem var(--akzent); } 100% { transform: scale(1); } }
+.fs-durchbruch .fs-knoten-kern { width: 4.2rem; }
+
+.fs-seite { display: grid; gap: 1rem; }
+.fs-detail, .fs-inventar { display: grid; gap: .55rem; padding: 1rem; border: 1px solid var(--fz-linie); border-radius: var(--fz-radius); background: color-mix(in srgb, var(--fz-flaeche) 85%, transparent); }
+.fs-detail h3, .fs-inventar h3 { font: 600 1.15rem/1.25 var(--fz-kopf); }
+.fs-hinweis { color: #ffb4a8; font-size: .85rem; }
+.fs-belohnung { display: grid; gap: .15rem; padding: .6rem .7rem; border-radius: .6rem; background: color-mix(in srgb, var(--akzent) 9%, transparent); }
+.fs-belohnung--gegenstand { grid-template-columns: 4rem 1fr; align-items: center; gap: .6rem; }
+.fs-belohnung img { width: 4rem; aspect-ratio: 1; object-fit: cover; border-radius: .45rem; }
+.fs-belohnung > span { display: grid; gap: .1rem; }
+.fs-erforschen { justify-content: center; }
+.fs-inventar-liste { display: grid; gap: .4rem; margin: 0; padding: 0; list-style: none; max-height: 18rem; overflow-y: auto; }
+.fs-item { display: flex; align-items: center; gap: .55rem; padding: .35rem .45rem; border-radius: .5rem; background: color-mix(in srgb, var(--fz-bg) 50%, transparent); font-size: .85rem; animation: fs-ein .4s ease-out; }
+.fs-item img { width: 2.4rem; aspect-ratio: 1; object-fit: cover; border-radius: .35rem; }
+.fs-item-icon { color: var(--akzent); }
+.fs-leer { color: var(--fz-leise); font-size: .85rem; font-style: italic; }
+@keyframes fs-ein { from { opacity: 0; transform: translateX(-6px); } }
+.fs-meldung { position: fixed; left: 50%; bottom: 1.4rem; z-index: 50; display: flex; align-items: center; gap: .7rem; max-width: min(92vw, 30rem); padding: .6rem 1rem .6rem .6rem; border: 1px solid var(--akzent); border-radius: .8rem; background: color-mix(in srgb, var(--fz-flaeche) 95%, #000); box-shadow: 0 0 1.6rem var(--akzent-glow), 0 1rem 2rem #000a; opacity: 0; transform: translate(-50%, 1rem); pointer-events: none; }
+.fs-meldung img { width: 3rem; aspect-ratio: 1; object-fit: cover; border-radius: .5rem; }
+.fs-meldung.ist-sichtbar { animation: fs-toast 3.4s ease both; }
+@keyframes fs-toast { 0% { opacity: 0; transform: translate(-50%, 1rem); } 10%, 85% { opacity: 1; transform: translate(-50%, 0); } 100% { opacity: 0; transform: translate(-50%, .5rem); } }
+
+/* ---------- Archivmotive ---------- */
+.fz-motive { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr)); gap: .9rem; }
+.fz-motiv { overflow: hidden; border: 1px solid var(--fz-linie); border-radius: calc(var(--fz-radius) * .8); background: var(--fz-flaeche); }
+.fz-motiv summary { position: relative; display: block; cursor: pointer; list-style: none; }
+.fz-motiv summary::-webkit-details-marker { display: none; }
+.fz-motiv img { display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover; transition: transform .4s ease; }
+.fz-motiv:hover img { transform: scale(1.05); }
+.fz-motiv summary span { position: absolute; inset: auto 0 0; padding: 1.4rem .8rem .55rem; background: linear-gradient(transparent, #000c); font-weight: 600; }
+.fz-motiv > div { display: grid; gap: .4rem; padding: .7rem .8rem .9rem; font-size: .9rem; color: var(--fz-leise); }
+
+/* ---------- Gruppennavigation ---------- */
+.fz-nachbarn ul { display: flex; flex-wrap: wrap; gap: .5rem; margin: 0; padding: 0; list-style: none; }
+.fz-nachbarn a { display: block; padding: .45rem .9rem; border: 1px solid var(--fz-linie); border-radius: .6rem; text-decoration: none; color: var(--fz-text); background: color-mix(in srgb, var(--fz-flaeche) 80%, transparent); transition: border-color .2s, background .2s; }
+.fz-nachbarn a:hover { border-color: var(--akzent); }
+.fz-nachbarn a[aria-current] { border-color: var(--akzent); background: color-mix(in srgb, var(--akzent) 18%, transparent); color: var(--akzent-hell); }
+
+/* =====================================================================
+   Design-Familien (eine je Forschungsgruppe), gesetzt über data-familie
+   ===================================================================== */
+
+/* Naturwissenschaften – Labor: Glas, Hexagon-Raster, aufsteigende Blasen */
+[data-familie="labor"] {
+    --fz-bg: #06101a; --fz-flaeche: #0c1a26; --fz-flaeche-2: #10222f;
+    --fz-muster: radial-gradient(circle, color-mix(in srgb, var(--akzent) 10%, transparent) 1px, transparent 1.5px);
+    --fz-muster-groesse: 26px 26px;
+    --fz-knoten-form: 0; --fz-knoten-clip: polygon(25% 3%, 75% 3%, 100% 50%, 75% 97%, 25% 97%, 0 50%);
+}
+[data-familie="labor"] .fz-hero-bild::after { background: radial-gradient(circle, #ffffff55 0 2px, transparent 3px) 20% 110% / 60px 80px, radial-gradient(circle, color-mix(in srgb, var(--akzent) 60%, transparent) 0 3px, transparent 4px) 60% 120% / 90px 110px; animation: fz-blasen 9s linear infinite; }
+@keyframes fz-blasen { to { transform: translateY(-30%); opacity: .3; } }
+
+/* Technologie – Werkstatt: Blaupause, Maßlinien, Eckwinkel */
+[data-familie="werkstatt"] {
+    --fz-bg: #0a0d14; --fz-flaeche: #11161f; --fz-flaeche-2: #161d28; --fz-radius: .35rem;
+    --fz-muster: linear-gradient(color-mix(in srgb, var(--akzent) 7%, transparent) 1px, transparent 1px), linear-gradient(90deg, color-mix(in srgb, var(--akzent) 7%, transparent) 1px, transparent 1px);
+    --fz-muster-groesse: 32px 32px;
+    --fz-knoten-form: .3rem; --fz-kopf: "Bahnschrift", "Segoe UI", sans-serif;
+}
+[data-familie="werkstatt"] .fz-hero-bild::after { background: linear-gradient(90deg, transparent, color-mix(in srgb, var(--akzent) 35%, transparent), transparent) 0 0 / 30% 100% no-repeat; animation: fz-scan 5s ease-in-out infinite; }
+@keyframes fz-scan { 0% { transform: translateX(-40%); } 100% { transform: translateX(330%); } }
+[data-familie="werkstatt"] .fz-panel { background-image: linear-gradient(var(--akzent), var(--akzent)), linear-gradient(var(--akzent), var(--akzent)), linear-gradient(160deg, var(--fz-flaeche-2), var(--fz-flaeche)); background-size: 18px 2px, 2px 18px, auto; background-repeat: no-repeat; background-position: 0 0, 0 0, 0 0; }
+
+/* Gesellschaft und Kultur – Archiv: Papierton, Serifen, Registerkarten */
+[data-familie="archiv"] {
+    --fz-bg: #110d0b; --fz-flaeche: #1b1512; --fz-flaeche-2: #221a16; --fz-text: #f1e8dc; --fz-leise: #b8a898;
+    --fz-kopf: Georgia, "Times New Roman", serif; --fz-radius: .4rem; --fz-knoten-form: .25rem;
+    --fz-muster: repeating-linear-gradient(0deg, #ffffff04 0 1px, transparent 1px 4px);
+}
+[data-familie="archiv"] .fz-hero-bild::after { background: linear-gradient(115deg, transparent 40%, #fff3d622 50%, transparent 60%) -100% 0 / 200% 100% no-repeat; animation: fz-glanz 7s ease-in-out infinite; }
+@keyframes fz-glanz { to { transform: translateX(60%); } }
+[data-familie="archiv"] .fz-hero-bild img { filter: sepia(.25) saturate(.9); }
+
+/* Raum und Planeten – Sternwarte: Sternenfeld, kreisende Umlaufbahnen */
+[data-familie="sternwarte"] {
+    --fz-bg: #04060f; --fz-flaeche: #0a0f1f; --fz-flaeche-2: #0f1630;
+    --fz-muster: radial-gradient(circle, #ffffffb0 0 .7px, transparent 1.2px), radial-gradient(circle, color-mix(in srgb, var(--akzent) 70%, transparent) 0 .8px, transparent 1.3px);
+    --fz-muster-groesse: 97px 113px, 171px 189px;
+}
+[data-familie="sternwarte"] .fz-hero-bild::after { inset: -30%; border-radius: 50%; background: radial-gradient(circle, transparent 0 46%, color-mix(in srgb, var(--akzent) 40%, transparent) 46.3% 46.6%, transparent 47% 62%, #ffffff30 62.2% 62.4%, transparent 62.8%); animation: fz-orbit 40s linear infinite; }
+@keyframes fz-orbit { to { transform: rotate(360deg); } }
+
+/* Umwelt und Ressourcen – Biom: organisch, Blattformen, treibende Sporen */
+[data-familie="biom"] {
+    --fz-bg: #06100b; --fz-flaeche: #0c1a12; --fz-flaeche-2: #112217; --fz-radius: 1.4rem .5rem 1.4rem .5rem;
+    --fz-knoten-form: 50% 0 50% 50%;
+    --fz-muster: radial-gradient(ellipse 4px 2px, color-mix(in srgb, var(--akzent) 22%, transparent) 60%, transparent) 0 0 / 70px 90px;
+}
+[data-familie="biom"] .fz-hero-bild::after { background: radial-gradient(circle, color-mix(in srgb, var(--akzent) 80%, transparent) 0 1.5px, transparent 2.5px) 0 0 / 70px 90px; animation: fz-sporen 14s linear infinite; opacity: .7; }
+@keyframes fz-sporen { to { transform: translate(20px, -90px); } }
+[data-familie="biom"] .fs-knoten-kern { transform: rotate(-45deg); }
+[data-familie="biom"] .fs-knoten-icon { transform: rotate(45deg); }
+
+/* Spezialisierte Forschung – Hologramm: Scanlinien, Projektionsrahmen */
+[data-familie="hologramm"] {
+    --fz-bg: #030c12; --fz-flaeche: #071722; --fz-flaeche-2: #0a1f2d; --fz-radius: .6rem;
+    --fz-muster: repeating-linear-gradient(0deg, color-mix(in srgb, var(--akzent) 6%, transparent) 0 1px, transparent 1px 3px);
+    --fz-knoten-form: 0; --fz-knoten-clip: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+    --fz-kopf: "Bahnschrift", "Segoe UI", sans-serif;
+}
+[data-familie="hologramm"] .fz-hero-bild::after { background: linear-gradient(transparent, color-mix(in srgb, var(--akzent) 30%, transparent) 50%, transparent) 0 0 / 100% 18% no-repeat, repeating-linear-gradient(0deg, #0000 0 2px, #00000040 2px 3px); animation: fz-holo 4s linear infinite; }
+@keyframes fz-holo { to { background-position: 0 600%, 0 0; } }
+
+/* Xenoforschung – Xeno: biolumineszente Membranen */
+[data-familie="xeno"] {
+    --fz-bg: #07060f; --fz-flaeche: #110e1f; --fz-flaeche-2: #171329; --fz-radius: 1.6rem;
+    --fz-knoten-form: 42% 58% 55% 45% / 50% 40% 60% 50%;
+    --fz-muster: radial-gradient(ellipse 120px 80px at 20% 30%, color-mix(in srgb, var(--akzent) 6%, transparent), transparent 70%), radial-gradient(ellipse 160px 110px at 80% 70%, color-mix(in srgb, var(--akzent) 5%, transparent), transparent 70%);
+    --fz-muster-groesse: 420px 380px, 520px 460px;
+}
+[data-familie="xeno"] .fz-hero-bild::after { background: radial-gradient(circle at 30% 40%, color-mix(in srgb, var(--akzent) 30%, transparent), transparent 40%), radial-gradient(circle at 70% 70%, color-mix(in srgb, var(--akzent) 22%, transparent), transparent 35%); animation: fz-pulsieren 6s ease-in-out infinite; }
+@keyframes fz-pulsieren { 50% { opacity: .35; transform: scale(1.08); } }
+
+/* Fundamentale Forschung – Quanten: Interferenzwellen, Orbitale */
+[data-familie="quanten"] {
+    --fz-bg: #04050d; --fz-flaeche: #0a0c1c; --fz-flaeche-2: #0f1228;
+    --fz-muster: repeating-radial-gradient(circle at 15% 20%, transparent 0 22px, color-mix(in srgb, var(--akzent) 5%, transparent) 22px 23px), repeating-radial-gradient(circle at 85% 75%, transparent 0 26px, color-mix(in srgb, var(--akzent) 4%, transparent) 26px 27px);
+}
+[data-familie="quanten"] .fz-hero-bild::after { background: repeating-radial-gradient(circle at 50% 50%, transparent 0 14px, color-mix(in srgb, var(--akzent) 22%, transparent) 14px 15px); animation: fz-welle 3.5s linear infinite; mix-blend-mode: screen; }
+@keyframes fz-welle { from { transform: scale(1); opacity: .8; } to { transform: scale(1.5); opacity: 0; } }
+[data-familie="quanten"] .fs-knoten-kern::after { content: ""; position: absolute; inset: -6px; border: 1px solid color-mix(in srgb, var(--akzent) 40%, transparent); border-radius: 50%; transform: rotateX(70deg); }
+
+/* Mystik und Bewusstsein – Arkan: Runenkreis, Siegel */
+[data-familie="arkan"] {
+    --fz-bg: #0b0610; --fz-flaeche: #160d1d; --fz-flaeche-2: #1d1126; --fz-text: #f0e6f7; --fz-leise: #b7a3c4;
+    --fz-kopf: Georgia, "Times New Roman", serif;
+    --fz-knoten-form: 0; --fz-knoten-clip: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+    --fz-muster: repeating-conic-gradient(from 0deg at 90% 10%, color-mix(in srgb, var(--akzent) 5%, transparent) 0 2deg, transparent 2deg 15deg);
+}
+[data-familie="arkan"] .fz-hero-bild::after { inset: -10%; border-radius: 50%; background: repeating-conic-gradient(color-mix(in srgb, var(--akzent) 30%, transparent) 0 1.5deg, transparent 1.5deg 30deg); mask-image: radial-gradient(circle, transparent 38%, #000 39% 41%, transparent 42% 55%, #000 56% 57%, transparent 58%); animation: fz-orbit 50s linear infinite; }
+
+/* ---------- Responsiv ---------- */
+@media (max-width: 1000px) {
+    .fs-bereich { grid-template-columns: minmax(0, 1fr); }
+    .fs-seite { grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr)); }
+}
+@media (max-width: 820px) {
+    .fz-hero { grid-template-columns: minmax(0, 1fr); }
+    .fz-hero-bild { order: -1; }
+    .fz-kennzahlen { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 760px) {
+    /* automatisch eingefügte Sidebar über den Inhalt statt daneben */
+    .fz-seite .aporia-auto-page-frame { flex-direction: column; }
+    .fz-seite .aporia-auto-page-frame > #aporia-sidebar-host { flex: 0 0 auto; width: 100%; position: relative; top: auto; }
+    .fz-seite .aporia-auto-page-frame .aporia-sidebar { position: relative; top: auto; max-height: 42dvh; }
+    .fz-seite .aporia-auto-page-frame > main { min-width: 0; }
+}
+@media (max-width: 520px) {
+    .fs-knoten-name { font-size: .74rem; }
+    .fs-knoten-kern { width: 2.8rem; }
+    .fs-durchbruch .fs-knoten-kern { width: 3.4rem; }
+    .fs-experiment { margin-left: 0; }
+    .fs-leiste { gap: .6rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .fz-hero-bild::after, .fz-hero-bild img, .fs-meldung.ist-sichtbar { animation: none !important; transition: none !important; }
+    .fs-meldung.ist-sichtbar { opacity: 1; transform: translate(-50%, 0); }
+}

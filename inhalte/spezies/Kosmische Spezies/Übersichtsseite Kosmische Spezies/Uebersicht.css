@@ -32,3 +32,105 @@ body.species-group-page { margin: 0; background: #061811; color: #f4e6c9; font-f
 @media(max-width: 1000px) { .species-category-grid { grid-template-columns: repeat(2,minmax(0,1fr)); } }
 @media(max-width: 650px) { .species-category-grid { grid-template-columns: 1fr; } }
 
+
+/* Rahmen mit Eckzier */
+.species-category--stellaroiden::after {
+    content: "";
+    position: absolute;
+    inset: 5px;
+    border: 1px solid #7dffc833;
+    border-radius: .5rem;
+    background:
+        linear-gradient(#7dffc8, #7dffc8) 0 0 / 16px 2px no-repeat,
+        linear-gradient(#7dffc8, #7dffc8) 0 0 / 2px 16px no-repeat,
+        linear-gradient(#7dffc8, #7dffc8) 100% 0 / 16px 2px no-repeat,
+        linear-gradient(#7dffc8, #7dffc8) 100% 0 / 2px 16px no-repeat,
+        linear-gradient(#7dffc8, #7dffc8) 0 100% / 16px 2px no-repeat,
+        linear-gradient(#7dffc8, #7dffc8) 0 100% / 2px 16px no-repeat,
+        linear-gradient(#7dffc8, #7dffc8) 100% 100% / 16px 2px no-repeat,
+        linear-gradient(#7dffc8, #7dffc8) 100% 100% / 2px 16px no-repeat;
+    opacity: .75;
+    pointer-events: none;
+}
+.species-category--stellaroiden .species-card-columns dt { color: #d9a85c; }
+.species-category--stellaroiden .species-card-copy { border-color: #6a6488; }
+.species-category--stellaroiden .species-card-copy a { color: #7dffc8; }
+
+/* Rahmen mit Eckzier */
+.species-category--stellaroiden::after {
+    content: "";
+    position: absolute;
+    inset: 5px;
+    border: 1px solid #7dffc833;
+    border-radius: .5rem;
+    background:
+        linear-gradient(#7dffc8, #7dffc8) 0 0 / 16px 2px no-repeat,
+        linear-gradient(#7dffc8, #7dffc8) 0 0 / 2px 16px no-repeat,
+        linear-gradient(#7dffc8, #7dffc8) 100% 0 / 16px 2px no-repeat,
+        linear-gradient(#7dffc8, #7dffc8) 100% 0 / 2px 16px no-repeat,
+        linear-gradient(#7dffc8, #7dffc8) 0 100% / 16px 2px no-repeat,
+        linear-gradient(#7dffc8, #7dffc8) 0 100% / 2px 16px no-repeat,
+        linear-gradient(#7dffc8, #7dffc8) 100% 100% / 16px 2px no-repeat,
+        linear-gradient(#7dffc8, #7dffc8) 100% 100% / 2px 16px no-repeat;
+    opacity: .75;
+    pointer-events: none;
+}
+.species-category--stellaroiden .species-card-columns dt { color: #d9a85c; }
+.species-category--stellaroiden .species-card-copy { border-color: #6a6488; }
+.species-category--stellaroiden .species-card-copy a { color: #7dffc8; }
+
+/* Mobile Darstellung der Übersicht: Sidebar über dem Inhalt, Felder und Cards in voller Breite */
+.species-tools :is(input, select) { width: 100%; min-width: 0; }
+@media (max-width: 760px) {
+    .species-group-frame { flex-direction: column; }
+    .species-group-frame > #aporia-sidebar-host { flex: 0 0 auto; width: 100%; }
+    .species-group-frame .aporia-sidebar { position: relative; top: auto; max-height: 42dvh; }
+}
+@media (max-width: 480px) {
+    .species-card-columns { grid-template-columns: minmax(0, 1fr); }
+    .species-card-copy { border-left: 0; padding-left: 0; border-top: 1px solid #9c805b70; padding-top: .5rem; }
+}
+
+/* Stellaroiden – Card-Design (Icon: assets/bilder/Alle Spezies+Übersicht/Kosmische Spezies/Stellaroiden/hauptseite/stellaroiden-icon-*.svg) */
+.species-category--stellaroiden {
+    position: relative;
+    color: #ebe9f3;
+    border-color: #6a6488;
+    background: radial-gradient(ellipse at 85% 8%, #7dffc822, transparent 65%),
+        linear-gradient(145deg, #1a1a2c, #05050b 78%);
+    transition: transform .25s, box-shadow .25s;
+}
+.species-category--stellaroiden:hover, .species-category--stellaroiden:focus-within { transform: translateY(-3px); box-shadow: 0 .8rem 1.8rem #0009, 0 0 1.2rem #7dffc833; }
+.species-category--stellaroiden > .species-card-logo {
+    height: auto;
+    box-sizing: border-box;
+    object-fit: contain;
+    background: linear-gradient(180deg, #05050b33, #05050b66 70%, #1a1a2c),
+        url("../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Kosmische%20Spezies/Stellaroiden/gesamtdarstellung/ChatGPT-Bild%2019.%20Nov.%202026,%2019_10_55-1.png") center 45% / cover no-repeat;
+    border-bottom: 1px solid #6a648888;
+}
+/* Rahmen mit Eckzier */
+.species-category--stellaroiden::after {
+    content: "";
+    position: absolute;
+    inset: 5px;
+    border: 1px solid #7dffc833;
+    border-radius: .5rem;
+    background:
+        linear-gradient(#7dffc8, #7dffc8) 0 0 / 16px 2px no-repeat,
+        linear-gradient(#7dffc8, #7dffc8) 0 0 / 2px 16px no-repeat,
+        linear-gradient(#7dffc8, #7dffc8) 100% 0 / 16px 2px no-repeat,
+        linear-gradient(#7dffc8, #7dffc8) 100% 0 / 2px 16px no-repeat,
+        linear-gradient(#7dffc8, #7dffc8) 0 100% / 16px 2px no-repeat,
+        linear-gradient(#7dffc8, #7dffc8) 0 100% / 2px 16px no-repeat,
+        linear-gradient(#7dffc8, #7dffc8) 100% 100% / 16px 2px no-repeat,
+        linear-gradient(#7dffc8, #7dffc8) 100% 100% / 2px 16px no-repeat;
+    opacity: .75;
+    pointer-events: none;
+}
+.species-category--stellaroiden .species-card-columns dt { color: #d9a85c; }
+.species-category--stellaroiden .species-card-copy { border-color: #6a6488; }
+.species-category--stellaroiden .species-card-copy a { color: #7dffc8; }
+
+/* Lange Wörter in Cards umbrechen statt abschneiden */
+.species-card-columns :is(dd, p) { overflow-wrap: break-word; hyphens: auto; }

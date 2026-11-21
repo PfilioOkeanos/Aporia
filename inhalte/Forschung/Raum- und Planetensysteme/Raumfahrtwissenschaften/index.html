@@ -3,53 +3,78 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Raumfahrtwissenschaften im APORIA-Weltenarchiv: Raumfahrt, Navigation und Expeditionen. Mit interaktivem Forschungsbaum.">
   <title>Raumfahrtwissenschaften | Aporia Weltenarchiv</title>
-  <link rel="stylesheet" href="../../../../Menüs/TopBar/Top_bar.css">
-  <link rel="stylesheet" href="../../Übersicht/Forschung.css">
-  <script type="module" src="../../Übersicht/Forschung.js"></script>
+  <link rel="stylesheet" href="../../../../Men%C3%BCs/TopBar/Top_bar.css">
+  <link rel="stylesheet" href="../../_gemeinsam/zweig.css">
+  <link rel="stylesheet" href="index.css">
+  <script type="module" src="index.js"></script>
 </head>
-<body class="research-page" data-section="forschung">
+<body class="research-page fz-seite fz-raumfahrtwissenschaften" data-section="forschung" data-familie="sternwarte">
   <div data-aporia-topbar></div>
-  <main id="inhalt" class="research-main research-branch-page" data-layout="observatory" style="--accent: #83b8ff">
-    <a class="branch-back" data-route="forschung" data-route-fragment="gruppe-4" href="../../Übersicht/Forschung.html#gruppe-4">← Forschungsübersicht</a>
-    <header class="branch-hero">
-      <div class="branch-intro">
-        <p class="branch-group">Raum- und Planetensysteme</p>
+  <main id="inhalt" class="fz-main">
+    <a class="fz-zurueck" data-route="forschung" data-route-fragment="gruppe-4" href="../../%C3%9Cbersicht/Forschung.html#gruppe-4">← Forschungsübersicht</a>
+
+    <header class="fz-panel fz-hero">
+      <div class="fz-hero-text">
+        <p class="fz-gruppe">Raum- und Planetensysteme</p>
         <h1>Raumfahrtwissenschaften</h1>
         <p>Raumfahrt, Navigation und Expeditionen.</p>
-        <a class="branch-related" data-route="sternenkarte" href="../../../../Men%C3%BCs/Sternenkarte/Sternenkarte.html">Sternenkarte ↗</a>
-      </div>
-      <a class="branch-hero-image" href="../../../../assets/bilder/Himmelsk%C3%B6rper/GasPlaneten/kalter-saturn-mit-eisigen-ringen/hauptseite/kalter-saturn-mit-eisigen-ringen-8aeeeccff8-vorschau.webp" target="_blank" rel="noopener" aria-label="Titelmotiv in Originalgröße öffnen">
-        <img src="../../../../assets/bilder/Himmelsk%C3%B6rper/GasPlaneten/kalter-saturn-mit-eisigen-ringen/hauptseite/kalter-saturn-mit-eisigen-ringen-8aeeeccff8-vorschau.webp" alt="" decoding="async">
-      </a>
-    </header>
-    <div class="branch-sections">
-      <section class="branch-collection" aria-labelledby="motive">
-        <h2 id="motive">Motive aus dem Archiv</h2>
-        <div class="branch-gallery">
-          <details class="branch-motif">
-            <summary>
-              <img src="../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Humanoide/Unterseiten/Heimatwelt/bilder/aporia-orbitstation.png" alt="" loading="lazy" decoding="async">
-              <span>Orbitstation</span>
-            </summary>
-            <div>
-              <p>Projektmotiv zum Themenfeld „Raum- und Planetensysteme“.</p>
-              <a href="../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Humanoide/Unterseiten/Heimatwelt/bilder/aporia-orbitstation.png" target="_blank" rel="noopener">Bild in Originalgröße öffnen</a>
-            </div>
-          </details>
+        <div class="fz-chips"><a class="fz-chip" data-route="sternenkarte" href="../../../../Men%C3%BCs/Sternenkarte/Sternenkarte.html">Sternenkarte ↗</a><a class="fz-chip" href="#forschungsbaum">Zum Forschungsbaum ↓</a></div>
+        <div class="fz-kennzahlen" aria-label="Forschungsbaum in Zahlen">
+          <div class="fz-kennzahl"><span class="fz-label">Baumform</span><strong>Netz</strong><i style="--wert: 38%"></i></div>
+          <div class="fz-kennzahl"><span class="fz-label">Stufen</span><strong>4</strong><i style="--wert: 80%"></i></div>
+          <div class="fz-kennzahl"><span class="fz-label">Vorteile</span><strong>3</strong><i style="--wert: 37.5%"></i></div>
+          <div class="fz-kennzahl"><span class="fz-label">Gegenstände</span><strong>2</strong><i style="--wert: 25%"></i></div>
         </div>
-      </section>
-      <nav class="branch-navigation" aria-label="Raum- und Planetensysteme">
-        <h2>Forschungszweige der Gruppe</h2>
-        <ul>
-          <li><a href="../Astronomie%20und%20Kosmologie/index.html">Astronomie und Kosmologie</a></li>
-          <li><a href="../Planetologie%20und%20Geowissenschaften/index.html">Planetologie und Geowissenschaften</a></li>
-          <li><a href="#inhalt" aria-current="page">Raumfahrtwissenschaften</a></li>
-          <li><a href="../Exoplanetare%20%C3%96kologie/index.html">Exoplanetare Ökologie</a></li>
-          <li><a href="../Interstellare%20Technologie/index.html">Interstellare Technologie</a></li>
-        </ul>
-      </nav>
-    </div>
+      </div>
+      <figure class="fz-hero-bild">
+        <img src="../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Aeromorphen/Unterseiten/Geschichte/erstkontakt_raumschiffe.webp" alt="Erstkontakt raumschiffe" fetchpriority="high" decoding="async">
+      </figure>
+    </header>
+
+    <section class="fz-panel fz-abschnitt" id="forschungsbaum" aria-labelledby="baum-titel">
+      <header>
+        <p class="fz-label">Forschungssystem · Entwurf</p>
+        <h2 id="baum-titel">Forschungsbaum</h2>
+        <p>Beobachtungsdaten sammeln sich, solange der Baum sichtbar ist; „Himmel beobachten“ bringt zusätzlich 2 BD. Erforsche von „Beobachtung“ aufwärts bis „Entdeckung“: Jede Forschung verbindet sich mit der nächsten Stufe und schaltet Vorteile oder Gegenstände frei. Doppelklick erforscht direkt.</p>
+      </header>
+      <div data-forschungsbaum></div>
+      <noscript><p>Der Forschungsbaum benötigt JavaScript.</p></noscript>
+    </section>
+
+    <section class="fz-panel fz-abschnitt" aria-labelledby="motive-titel">
+      <header><p class="fz-label">Archiv</p><h2 id="motive-titel">Motive aus dem Archiv</h2></header>
+      <div class="fz-motive">
+          <details class="fz-motiv">
+            <summary><img src="../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Aeromorphen/Unterseiten/Geschichte/erstkontakt_raumschiffe.webp" alt="" loading="lazy" decoding="async"><span>Erstkontakt raumschiffe</span></summary>
+            <div><p>Titelmotiv dieses Forschungszweigs.</p><a href="../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Aeromorphen/Unterseiten/Geschichte/erstkontakt_raumschiffe.webp" target="_blank" rel="noopener">Bild in Originalgröße öffnen</a></div>
+          </details>
+          <details class="fz-motiv">
+            <summary><img src="../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Aeromorphen/Unterseiten/Entwicklung/lebensdauer_station.webp" alt="" loading="lazy" decoding="async"><span>Lebensdauer station</span></summary>
+            <div><p>Freischaltbar im Forschungsbaum.</p><a href="../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Aeromorphen/Unterseiten/Entwicklung/lebensdauer_station.webp" target="_blank" rel="noopener">Bild in Originalgröße öffnen</a></div>
+          </details>
+          <details class="fz-motiv">
+            <summary><img src="../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Aeromorphen/Unterseiten/Geschichte/konsortium_station.webp" alt="" loading="lazy" decoding="async"><span>Konsortium station</span></summary>
+            <div><p>Freischaltbar im Forschungsbaum.</p><a href="../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Aeromorphen/Unterseiten/Geschichte/konsortium_station.webp" target="_blank" rel="noopener">Bild in Originalgröße öffnen</a></div>
+          </details>
+          <details class="fz-motiv">
+            <summary><img src="../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Humanoide/Unterseiten/Heimatwelt/bilder/aporia-orbitstation.png" alt="" loading="lazy" decoding="async"><span>Orbitstation</span></summary>
+            <div><p>Projektmotiv zum Themenfeld „Raum- und Planetensysteme“.</p><a href="../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Humanoide/Unterseiten/Heimatwelt/bilder/aporia-orbitstation.png" target="_blank" rel="noopener">Bild in Originalgröße öffnen</a></div>
+          </details>
+      </div>
+    </section>
+
+    <nav class="fz-panel fz-abschnitt fz-nachbarn" aria-label="Raum- und Planetensysteme">
+      <header><p class="fz-label">Raum- und Planetensysteme</p><h2>Forschungszweige der Gruppe</h2></header>
+      <ul>
+            <li><a href="../Astronomie%20und%20Kosmologie/index.html">Astronomie und Kosmologie</a></li>
+            <li><a href="../Planetologie%20und%20Geowissenschaften/index.html">Planetologie und Geowissenschaften</a></li>
+            <li><a href="#inhalt" aria-current="page">Raumfahrtwissenschaften</a></li>
+            <li><a href="../Exoplanetare%20%C3%96kologie/index.html">Exoplanetare Ökologie</a></li>
+            <li><a href="../Interstellare%20Technologie/index.html">Interstellare Technologie</a></li>
+      </ul>
+    </nav>
   </main>
 </body>
 </html>

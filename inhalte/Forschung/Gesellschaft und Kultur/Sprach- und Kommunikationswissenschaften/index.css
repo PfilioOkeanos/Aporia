@@ -1,0 +1,29 @@
+/* Sprach- und Kommunikationswissenschaften – Forschungszweig
+   Gemeinsames Design: ../../_gemeinsam/zweig.css (Familie „archiv“) · hier die eigene Gestaltung dieser Seite. */
+
+.fz-sprach-und-kommunikationswissenschaften {
+    --akzent: #a3c4ff;
+    --fz-bild-pos: 50% 38%;
+}
+
+/* Eigene Lichtführung im Kopfbereich */
+.fz-sprach-und-kommunikationswissenschaften .fz-hero {
+    background:
+        radial-gradient(ellipse 55% 70% at 33% 62%, color-mix(in srgb, var(--akzent) 16%, transparent), transparent 70%),
+        conic-gradient(from 32deg at 100% 0%, color-mix(in srgb, var(--akzent) 8%, transparent), transparent 25%),
+        linear-gradient(160deg, var(--fz-flaeche-2), var(--fz-flaeche));
+}
+
+/* Zweig-Symbol als Wasserzeichen */
+.fz-sprach-und-kommunikationswissenschaften .fz-hero::before {
+    content: "◌";
+    position: absolute;
+    left: auto;
+    right: -1rem;
+    bottom: -2.5rem;
+    z-index: -1;
+    color: color-mix(in srgb, var(--akzent) 9%, transparent);
+    font-size: clamp(9rem, 20vw, 16rem);
+    line-height: 1;
+    pointer-events: none;
+}

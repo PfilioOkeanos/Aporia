@@ -1,0 +1,22 @@
+/* Muemoiden – Hauptseite
+   Gemeinsames Design: ../muemoiden-basis.css · hier nur Anpassungen dieser Seite. */
+
+/* Bildausschnitt des Kopfbildes */
+.mue-hauptseite .mue-dossier .mue-hero img { object-position: 55% 40%; }
+
+/* Kapitelleiste breiter, damit lange Kapitelnamen nicht abgeschnitten werden */
+.mue-hauptseite .mue-layout--index { grid-template-columns: clamp(10.5rem, 14cqi, 13.5rem) minmax(0, 1fr) clamp(9rem, 11cqi, 11.5rem); }
+.mue-hauptseite .mue-chapters a { font-size: .8rem; hyphens: auto; overflow-wrap: anywhere; }
+.mue-hauptseite .mue-chapters .mue-code { margin-inline-end: .35rem; }
+.mue-hauptseite .mue-core { align-items: start; }
+.mue-hauptseite .mue-topics { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+@container (max-width: 980px) {
+    .mue-hauptseite .mue-layout--index { grid-template-columns: minmax(0, 1fr) clamp(9rem, 22cqi, 11rem); }
+}
+@container (max-width: 700px) {
+    .mue-hauptseite .mue-layout--index { grid-template-columns: minmax(0, 1fr); }
+    .mue-hauptseite .mue-topics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@container (max-width: 440px) {
+    .mue-hauptseite .mue-topics { grid-template-columns: minmax(0, 1fr); }
+}

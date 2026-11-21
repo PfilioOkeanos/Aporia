@@ -1,0 +1,641 @@
+/* Dendroarchen – gemeinsames Basisdesign „Lebender Weltenbaum“
+   Wird von der Hauptseite und allen Unterseiten geladen. Seitenspezifisches steht in der jeweiligen Seiten-CSS. */
+
+.dendroarchen {
+    --den-bg: #070b08;
+    --den-deep-1: #1d2a1c;
+    --den-deep-2: #131c12;
+    --den-deep-3: #0b110b;
+    --den-line: #34452c;
+    --den-line-hi: #6f8a4f;
+    --den-text: #e9eedc;
+    --den-muted: #a7b294;
+    --den-akzent: #a6d86e;
+    --den-akzent-hell: #e1f7bf;
+    --den-akzent-glow: #a6d86e55;
+    --den-akzent2: #d690ff;
+    --den-zier: #f0c46e;
+    --den-hell: #fbf1d4;
+    --den-btn-1: #22301f;
+    --den-btn-2: #111a10;
+    --den-cut: 0px;
+    --den-mono: ui-monospace, "Cascadia Mono", Consolas, "Courier New", monospace;
+    --aporia-page-tint: #6f9a45;
+    --aporia-page-glass-light: #1f2d1b;
+    --aporia-page-glass-dark: #0b120a;
+    margin: 0;
+    background: var(--den-bg);
+    color: var(--den-text);
+    font: 1rem/1.62 "Segoe UI", system-ui, sans-serif;
+}
+
+.den-frame {
+    display: flex;
+    min-height: calc(100dvh - var(--aporia-topbar-height, 78px));
+    background:
+        radial-gradient(ellipse at 70% -10%, #3a2a1430, transparent 55%),
+        repeating-linear-gradient(0deg, #ffffff04 0 1px, transparent 1px 46px),
+        repeating-linear-gradient(90deg, #ffffff04 0 1px, transparent 1px 46px),
+        linear-gradient(180deg, #11151a, var(--den-bg) 70%);
+}
+.dendroarchen .aporia-sidebar::after {
+    background: linear-gradient(180deg, transparent, #ffb5470d 70%, transparent);
+}
+
+.den-dossier {
+    flex: 1;
+    min-width: 0;
+    padding: clamp(.6rem, 1.3vw, 1.4rem);
+    container-type: inline-size;
+}
+.den-dossier :is(.den-block, .den-card-body, .den-topic) :is(p, li, dd, dt) { hyphens: auto; }
+.den-dossier :is(h1, h2, h3, h4, p, dl, dd, ul, ol) { margin: 0; }
+.den-dossier :is(h1, h2, h3, a, p, li, dd) { overflow-wrap: break-word; }
+.den-dossier [id] { scroll-margin-top: calc(var(--aporia-topbar-height, 78px) + .75rem); }
+.den-dossier a { color: var(--den-cyan); }
+.den-dossier a:focus-visible, .den-dossier button:focus-visible, .den-dossier summary:focus-visible {
+    outline: 2px solid var(--den-cyan-hot);
+    outline-offset: 2px;
+}
+.den-dossier img { display: block; max-width: 100%; height: auto; }
+
+/* ---------- Bausteine ---------- */
+.den-code {
+    display: inline-block;
+    margin-inline-end: .5rem;
+    color: var(--den-cyan);
+    font: 600 .72rem/1 var(--den-mono);
+    letter-spacing: .08em;
+}
+.den-kicker {
+    display: flex;
+    align-items: center;
+    gap: .45rem;
+    color: var(--den-muted);
+    font: 600 .7rem/1.3 var(--den-mono);
+    letter-spacing: .16em;
+    text-transform: uppercase;
+}
+.den-glow {
+    flex: none;
+    display: inline-block;
+    width: .5rem;
+    height: .5rem;
+    border-radius: 50%;
+    background: radial-gradient(circle at 35% 35%, #fff3d0, var(--den-cyan) 45%, #a35c00);
+    box-shadow: 0 0 .35rem var(--den-cyan), 0 0 .9rem var(--den-cyan-glow);
+    animation: den-pulse 3.2s ease-in-out infinite;
+}
+@keyframes den-pulse { 50% { opacity: .55; box-shadow: 0 0 .2rem var(--den-cyan); } }
+.den-placeholder { color: var(--den-muted); font-style: italic; }
+
+/* Metallpanel mit gefasten Ecken, Nieten und Kantenlicht */
+.den-panel {
+    position: relative;
+    box-sizing: border-box;
+    min-width: 0;
+    clip-path: polygon(var(--den-cut) 0, 100% 0, 100% calc(100% - var(--den-cut)), calc(100% - var(--den-cut)) 100%, 0 100%, 0 var(--den-cut));
+    background:
+        radial-gradient(circle at 9px calc(100% - 9px), #8c97a2 0 1.5px, #0000 2.5px),
+        radial-gradient(circle at calc(100% - 9px) 9px, #8c97a2 0 1.5px, #0000 2.5px),
+        repeating-linear-gradient(90deg, #ffffff06 0 1px, #0000 1px 3px),
+        linear-gradient(160deg, var(--den-deep-1), var(--den-deep-2) 45%, var(--den-deep-3));
+    box-shadow: inset 0 1px 0 #ffffff1f, inset 0 0 0 1px #ffffff10, inset 0 -2px 0 #00000080;
+}
+.den-panel::before {
+    content: "";
+    position: absolute;
+    inset: 0 auto auto var(--den-cut);
+    width: 3.2rem;
+    height: 2px;
+    background: linear-gradient(90deg, var(--den-cyan), transparent);
+    box-shadow: 0 0 .6rem var(--den-cyan-glow);
+}
+
+/* ---------- Übersicht: Raster ---------- */
+.den-layout {
+    display: grid;
+    gap: .8rem;
+    align-items: start;
+}
+.den-layout--index {
+    grid-template-columns: clamp(8.4rem, 11cqi, 11rem) minmax(0, 1fr) clamp(9rem, 11cqi, 11.5rem);
+    grid-template-areas:
+        "chapters hero rail"
+        "chapters core rail"
+        "topics topics topics";
+}
+.den-chapters { grid-area: chapters; position: sticky; top: calc(var(--aporia-topbar-height, 78px) + .8rem); }
+.den-rail { grid-area: rail; position: sticky; top: calc(var(--aporia-topbar-height, 78px) + .8rem); }
+.den-hero { grid-area: hero; }
+.den-core { grid-area: core; }
+.den-topics-wrap { grid-area: topics; }
+
+/* Navigationsleisten */
+.den-chapters, .den-rail, .den-jumps { display: grid; gap: .2rem; padding: .85rem .7rem .7rem; }
+.den-rail nav { display: grid; gap: .15rem; margin-top: .35rem; }
+.den-chapters a, .den-rail a, .den-jumps a, .den-rail-pending {
+    position: relative;
+    display: block;
+    padding: .32rem .45rem .32rem .6rem;
+    border-left: 2px solid transparent;
+    color: var(--den-text);
+    font-size: .86rem;
+    line-height: 1.35;
+    text-decoration: none;
+    transition: background .2s, border-color .2s, color .2s;
+}
+.den-chapters a:hover, .den-rail a:hover, .den-jumps a:hover,
+.den-chapters a.is-active, .den-jumps a.is-active, .den-rail a[aria-current] {
+    border-left-color: var(--den-cyan);
+    background: linear-gradient(90deg, #ffb5472b, transparent 85%);
+    color: #fff;
+    text-shadow: 0 0 .6rem #ffb54740;
+}
+.den-rail a[aria-current] .den-code, .den-jumps a.is-active .den-code { color: var(--den-cyan-hot); }
+.den-rail-pending { color: var(--den-muted); cursor: not-allowed; }
+.den-rail-pending em {
+    display: block;
+    color: #c8873a;
+    font: normal .66rem/1.3 var(--den-mono);
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+/* Hero */
+.den-hero {
+    position: relative;
+    isolation: isolate;
+    display: grid;
+    align-items: end;
+    min-height: clamp(19rem, 30cqi, 30rem);
+    overflow: hidden;
+    --den-cut: 22px;
+}
+.den-dossier .den-hero img {
+    position: absolute;
+    inset: 0 0 0 auto;
+    z-index: -2;
+    width: 78%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 60% 30%;
+    mask-image: linear-gradient(90deg, transparent, #000 38%);
+    filter: saturate(.85) contrast(1.05);
+}
+.den-hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background:
+        repeating-linear-gradient(0deg, #0000 0 3px, #00000026 3px 4px),
+        linear-gradient(90deg, #0b0e12f2 0, #0b0e12b8 36%, transparent 70%);
+    pointer-events: none;
+}
+.den-hero > div { padding: clamp(1rem, 2.6cqi, 2.2rem); }
+.den-hero h1 {
+    margin: .4rem 0 .55rem;
+    color: #f2ede4;
+    font: 700 clamp(2.2rem, 5.2cqi, 4.6rem)/1 "Segoe UI", system-ui, sans-serif;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    text-shadow: 0 2px 16px #000, 0 0 2rem #ffb5471f;
+}
+.den-subtitle {
+    width: fit-content;
+    padding-top: .45rem;
+    border-top: 2px solid var(--den-cyan);
+    color: var(--den-pearl);
+    font: 500 clamp(.95rem, 1.5cqi, 1.25rem)/1.35 var(--den-mono);
+    letter-spacing: .06em;
+}
+.den-crumbs { margin-top: .9rem; color: var(--den-muted); font-size: .8rem; }
+.den-crumbs a { color: var(--den-muted); }
+.den-crumbs a:hover { color: var(--den-cyan); }
+
+
+/* Kernpanels */
+.den-core {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: .7rem;
+}
+.den-block { padding: clamp(.75rem, 1.3cqi, 1.1rem); }
+.den-wide { grid-column: span 2; }
+.den-block h2, .den-card h2, .den-section-title {
+    color: #f0e9dc;
+    font: 600 1.02rem/1.3 "Segoe UI", system-ui, sans-serif;
+    letter-spacing: .04em;
+}
+.den-block h2 {
+    margin-bottom: .65rem;
+    padding-bottom: .45rem;
+    border-bottom: 1px solid var(--den-line);
+}
+.den-block p, .den-block li, .den-specs { font-size: .9rem; }
+.den-block p + p { margin-top: .55rem; }
+.den-specs > div {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+    gap: .6rem;
+    padding-block: .3rem;
+    border-bottom: 1px solid #ffffff12;
+}
+.den-specs dt { color: var(--den-muted); font-size: .82rem; }
+.den-specs dd { color: var(--den-text); }
+.den-specs dd.den-open { color: #c8873a; font-style: italic; }
+.den-traits, .den-models { list-style: none; padding: 0; display: grid; gap: .3rem; }
+.den-traits li {
+    position: relative;
+    padding: .25rem 0 .25rem 1.1rem;
+    border-bottom: 1px solid #ffffff10;
+}
+.den-traits li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: .72rem;
+    width: .42rem;
+    height: .42rem;
+    background: var(--den-cyan);
+    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+    box-shadow: 0 0 .4rem var(--den-cyan);
+}
+.den-gen1 img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; margin-bottom: .55rem; clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px); }
+.den-caption { color: var(--den-muted); font-size: .78rem; }
+.den-models { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: .35rem; }
+.den-models li {
+    padding: .3rem .45rem;
+    border: 1px solid var(--den-line);
+    background: #0b0e12a0;
+    font-size: .82rem;
+}
+.den-models .den-code { display: block; margin-bottom: .1rem; }
+
+/* Warnstreifen als Trenner */
+.den-section-title {
+    display: flex;
+    align-items: center;
+    gap: .55rem;
+    margin: .6rem 0 .7rem;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: .18em;
+}
+.den-section-title::after {
+    content: "";
+    flex: 1;
+    height: .5rem;
+    background: repeating-linear-gradient(-45deg, #ffb54755 0 8px, #0000 8px 16px);
+    opacity: .7;
+}
+
+/* Themenkacheln */
+.den-topics {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: .7rem;
+}
+.den-topic {
+    display: grid;
+    align-content: start;
+    gap: .3rem;
+    padding: .5rem .5rem .8rem;
+    color: var(--den-text);
+    text-decoration: none;
+    transition: transform .2s, filter .2s;
+}
+.den-dossier .den-topic { color: var(--den-text); }
+.den-topic img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    margin-bottom: .35rem;
+    filter: saturate(.75) brightness(.85);
+    transition: filter .25s;
+    clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+}
+.den-topic h3 { padding-inline: .2rem; color: #f2ede4; font-size: 1.02rem; font-weight: 600; }
+.den-topic .den-code { padding-inline: .2rem; }
+.den-topic p { padding-inline: .2rem; color: var(--den-muted); font-size: .78rem; line-height: 1.4; }
+.den-topic:hover, .den-topic:focus-visible { transform: translateY(-2px); filter: drop-shadow(0 0 .7rem #ffb54733); }
+.den-topic:hover img, .den-topic:focus-visible img { filter: saturate(1) brightness(1); }
+
+/* ---------- Hauptreiter-Seiten ---------- */
+.den-layout--reiter {
+    grid-template-columns: clamp(10rem, 15cqi, 14rem) minmax(0, 1fr) clamp(9rem, 11cqi, 11.5rem);
+    grid-template-areas:
+        "hero hero rail"
+        "jumps content rail";
+}
+.den-jumps { grid-area: jumps; position: sticky; top: calc(var(--aporia-topbar-height, 78px) + .8rem); max-height: calc(100dvh - var(--aporia-topbar-height, 78px) - 2rem); overflow-y: auto; scrollbar-width: thin; scrollbar-color: #ffb54766 transparent; }
+.den-jumps a { font-size: .8rem; }
+.den-jumps .den-code { margin-inline-end: .35rem; }
+.den-content { grid-area: content; display: grid; gap: .6rem; min-width: 0; }
+.den-hero--reiter { min-height: clamp(13rem, 20cqi, 18rem); }
+.den-hero--reiter h1 { font-size: clamp(2rem, 4.4cqi, 3.6rem); }
+
+.den-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: .5rem;
+    padding: .2rem 0;
+}
+.den-count {
+    display: inline-flex;
+    align-items: center;
+    gap: .45rem;
+    margin-inline-end: auto;
+    color: var(--den-muted);
+    font: 600 .72rem/1 var(--den-mono);
+    letter-spacing: .12em;
+    text-transform: uppercase;
+}
+.den-toolbar button {
+    padding: .38rem .8rem;
+    border: 1px solid var(--den-line-hi);
+    background: linear-gradient(180deg, #2b323a, #171b20);
+    color: var(--den-text);
+    font: 600 .74rem/1 var(--den-mono);
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    cursor: pointer;
+    clip-path: polygon(6px 0, 100% 0, 100% calc(100% - 6px), calc(100% - 6px) 100%, 0 100%, 0 6px);
+    transition: border-color .2s, color .2s, box-shadow .2s;
+}
+.den-toolbar button:hover { border-color: var(--den-cyan); color: var(--den-cyan-hot); box-shadow: inset 0 0 .8rem #ffb5472b; }
+
+.den-card { --den-cut: 12px; }
+.den-card summary {
+    display: flex;
+    align-items: baseline;
+    gap: .2rem;
+    padding: .8rem 1rem;
+    cursor: pointer;
+    list-style: none;
+}
+.den-card summary::-webkit-details-marker { display: none; }
+.den-card summary h2 { flex: 1; }
+.den-chevron {
+    flex: none;
+    align-self: center;
+    width: .55rem;
+    height: .55rem;
+    border-right: 2px solid var(--den-cyan);
+    border-bottom: 2px solid var(--den-cyan);
+    transform: rotate(-45deg);
+    transition: transform .25s;
+}
+.den-card[open] .den-chevron { transform: rotate(45deg); }
+.den-card summary:hover h2 { color: var(--den-cyan-hot); }
+.den-card-body {
+    display: grid;
+    gap: .55rem;
+    margin: 0 1rem 1rem;
+    padding-top: .7rem;
+    border-top: 1px solid var(--den-line);
+    font-size: .92rem;
+    max-width: 75ch;
+}
+.den-card-body h4 {
+    margin-top: .3rem;
+    color: var(--den-cyan);
+    font: 600 .78rem/1.3 var(--den-mono);
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+.den-card-body :is(ul, ol) { display: grid; gap: .2rem; padding-left: 1.2rem; }
+.den-card-body li::marker { color: var(--den-cyan); }
+.den-card:target, .den-card:has(summary:focus-visible) { box-shadow: inset 0 0 0 1px #ffb54799, inset 0 0 1.2rem #ffb5471a; }
+.den-card-static { padding: 1rem; }
+
+.den-pager {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: .6rem;
+    margin-top: .4rem;
+}
+.den-pager a {
+    padding: .5rem .9rem;
+    border: 1px solid var(--den-line);
+    background: #0f1318;
+    color: var(--den-text);
+    font-size: .86rem;
+    text-decoration: none;
+    clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+}
+.den-pager a:hover { border-color: var(--den-cyan); color: var(--den-cyan-hot); }
+
+/* ---------- Responsiv (Container-Queries wie Architektoiden) ---------- */
+@container (max-width: 1100px) {
+    .den-topics { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .den-core { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@container (max-width: 560px) {
+    .den-core { grid-template-columns: minmax(0, 1fr); }
+    .den-wide { grid-column: auto; }
+}
+@container (max-width: 980px) {
+    .den-layout--index {
+        grid-template-columns: minmax(0, 1fr) clamp(9rem, 22cqi, 11rem);
+        grid-template-areas: "hero rail" "chapters chapters" "core core" "topics topics";
+    }
+    .den-layout--reiter {
+        grid-template-columns: minmax(0, 1fr) clamp(9rem, 22cqi, 11rem);
+        grid-template-areas: "hero rail" "jumps jumps" "content content";
+    }
+    .den-chapters, .den-jumps { position: static; max-height: none; display: flex; flex-wrap: wrap; align-items: center; gap: .25rem; }
+    .den-chapters > .den-kicker, .den-jumps > .den-kicker { flex-basis: 100%; }
+    .den-chapters a, .den-jumps a { border-left: 0; border-bottom: 2px solid transparent; }
+    .den-chapters a.is-active, .den-jumps a.is-active { border-bottom-color: var(--den-cyan); }
+}
+@container (max-width: 700px) {
+    .den-layout--index, .den-layout--reiter { grid-template-columns: minmax(0, 1fr); }
+    .den-layout--index { grid-template-areas: "rail" "hero" "chapters" "core" "topics"; }
+    .den-layout--reiter { grid-template-areas: "rail" "hero" "jumps" "content"; }
+    .den-rail { position: static; }
+    .den-rail > .den-kicker { display: none; }
+    .den-rail nav { display: flex; flex-wrap: wrap; justify-content: center; margin: 0; }
+    .den-rail a, .den-rail-pending { border-left: 0; border-bottom: 2px solid transparent; }
+    .den-rail a[aria-current] { border-bottom-color: var(--den-cyan); }
+    .den-rail-pending em { display: inline; margin-left: .3rem; }
+    .den-topics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .den-dossier .den-hero img { width: 100%; mask-image: linear-gradient(90deg, #0006, #000 60%); }
+    .den-hero::after { background: repeating-linear-gradient(0deg, #0000 0 3px, #00000026 3px 4px), linear-gradient(0deg, #0b0e12f2, #0b0e1299 55%, #0b0e1240); }
+    .den-hero h1 { letter-spacing: .08em; }
+    .den-jumps { display: none; }
+}
+@container (max-width: 440px) {
+    .den-topics, .den-models { grid-template-columns: minmax(0, 1fr); }
+    .den-specs > div { grid-template-columns: minmax(0, 1fr); gap: .05rem; }
+}
+@media (max-width: 760px) {
+    .den-frame { flex-direction: column; }
+    .den-frame > #aporia-sidebar-host { flex: 0 0 auto; width: 100%; }
+    .den-frame .aporia-sidebar { position: relative; top: auto; max-height: 42dvh; }
+    .den-frame .aporia-sidebar::after { display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .den-glow { animation: none; }
+    .den-topic, .den-topic img, .den-chevron { transition: none; }
+}
+
+
+
+/* =====================================================================
+   Stil der Dendroarchen „Lebender Weltenbaum“
+   Rinde und Moos, goldenes Licht, Jahresringe, aufsteigende Sporen,
+   blattförmige Panels und Rankentrenner.
+   ===================================================================== */
+
+.den-frame {
+    background:
+        radial-gradient(ellipse 60% 45% at 70% 0%, #f0c46e1c, transparent 70%),
+        radial-gradient(ellipse 50% 40% at 0% 100%, #a6d86e14, transparent 70%),
+        linear-gradient(180deg, #0f170e, var(--den-bg) 60%);
+}
+.dendroarchen .aporia-sidebar::after { background: linear-gradient(180deg, transparent, #a6d86e10 70%, transparent); }
+.den-dossier { position: relative; isolation: isolate; overflow-x: clip; }
+
+/* Jahresringe und Sporen */
+.den-ambient {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background-image:
+        radial-gradient(circle, #f0c46ecc 0 1.2px, transparent 1.8px),
+        radial-gradient(circle, #a6d86e99 0 1px, transparent 1.6px),
+        repeating-radial-gradient(circle at 92% 8%, transparent 0 26px, #a6d86e0c 26px 27px, transparent 27px 44px, #f0c46e09 44px 45px);
+    background-size: 210px 260px, 150px 190px, 100% 100%;
+    background-position: 20px 0, 90px 60px, 0 0;
+    animation: den-sporen 50s linear infinite;
+}
+@keyframes den-sporen { to { background-position: 20px -260px, 90px -130px, 0 0; } }
+
+/* Blattförmige Panels mit Rindenmaserung */
+.den-panel, .den-toolbar button, .den-pager a, .den-topic img, .den-gen1 img { clip-path: none; }
+.den-panel {
+    border-radius: 1.5rem .45rem 1.5rem .45rem;
+    background:
+        repeating-linear-gradient(92deg, #ffffff04 0 2px, transparent 2px 7px, #00000012 7px 9px, transparent 9px 15px),
+        radial-gradient(ellipse 80% 60% at 0% 0%, #f0c46e10, transparent 60%),
+        linear-gradient(165deg, #1b2719f2, #121b11f5 55%, #0b110af7);
+    box-shadow:
+        inset 0 0 0 1px #a6d86e26,
+        inset 0 1px 0 #f0c46e1f,
+        0 .8rem 1.8rem #000000aa;
+}
+.den-panel::before {
+    inset: 0 auto auto 1.4rem;
+    width: 5rem;
+    height: 2px;
+    border-radius: 2px;
+    background: linear-gradient(90deg, var(--den-zier), var(--den-akzent), transparent);
+    box-shadow: 0 0 .6rem #f0c46e55;
+}
+
+/* Leuchtende Knospe */
+.den-glow {
+    width: .55rem;
+    height: .55rem;
+    border-radius: 50% 0 50% 50%;
+    transform: rotate(-45deg);
+    background: radial-gradient(circle at 40% 40%, #fffbe6, var(--den-zier) 45%, #5f8f2e 90%);
+    box-shadow: 0 0 .45rem var(--den-zier), 0 0 1.1rem #a6d86e66;
+    animation: den-knospe 5s ease-in-out infinite;
+}
+@keyframes den-knospe { 50% { opacity: .55; transform: rotate(-45deg) scale(.8); } }
+
+.den-code { color: var(--den-zier); }
+.den-kicker { color: var(--den-muted); }
+.den-dossier a { color: var(--den-akzent); }
+
+/* Hero */
+.den-hero { border-radius: 2rem .6rem 2rem .6rem; }
+.den-dossier .den-hero img { filter: saturate(1.05); mask-image: linear-gradient(90deg, transparent, #000 34%); }
+.den-hero::after {
+    background:
+        radial-gradient(ellipse 35% 45% at 18% 15%, #f0c46e22, transparent 70%),
+        linear-gradient(90deg, #070b08f2 0, #070b08b0 38%, transparent 74%);
+    animation: none;
+}
+.den-hero h1 {
+    color: var(--den-hell);
+    font: 600 clamp(2.2rem, 5cqi, 4.4rem)/1 "Palatino Linotype", "Book Antiqua", Georgia, serif;
+    letter-spacing: .1em;
+    text-shadow: 0 0 1.6rem #f0c46e44, 0 2px 12px #000;
+}
+.den-subtitle {
+    border-top: 2px solid var(--den-akzent);
+    border-radius: 2px;
+    color: var(--den-zier);
+    font: italic 400 clamp(1rem, 1.5cqi, 1.25rem)/1.4 "Palatino Linotype", Georgia, serif;
+}
+
+/* Navigation */
+.den-dossier :is(.den-chapters, .den-rail, .den-jumps) a { color: var(--den-text); }
+.den-chapters a:hover, .den-rail a:hover, .den-jumps a:hover,
+.den-chapters a.is-active, .den-jumps a.is-active, .den-rail a[aria-current] {
+    border-left-color: var(--den-akzent);
+    border-radius: 0 .9rem .9rem 0;
+    background: linear-gradient(90deg, #a6d86e24, transparent 85%);
+    color: #fff;
+    text-shadow: 0 0 .7rem #a6d86e55;
+}
+.den-dossier .den-crumbs a { color: var(--den-muted); }
+
+/* Inhalte */
+.den-block h2, .den-card h2, .den-section-title { color: var(--den-hell); font-family: "Palatino Linotype", "Book Antiqua", Georgia, serif; font-weight: 600; }
+.den-block h2 { border-bottom-color: #34452c; }
+.den-card { border-radius: 1.2rem .4rem 1.2rem .4rem; }
+.den-card-body { border-top-color: #34452c; }
+.den-card-body h4 { color: var(--den-zier); }
+.den-card-body li::marker, .den-block li::marker { color: var(--den-akzent); }
+.den-chevron { border-color: var(--den-akzent); }
+.den-card:target, .den-card:has(summary:focus-visible) { box-shadow: inset 0 0 0 1px #a6d86e99, inset 0 0 1.4rem #a6d86e1a; }
+.den-block p + p { margin-top: .55rem; }
+.den-block :is(ul, ol) { display: grid; gap: .2rem; margin: .4rem 0; padding-left: 1.15rem; font-size: .9rem; }
+
+/* Trenner: Ranke mit Blättern */
+.den-section-title::after {
+    height: .8rem;
+    background:
+        radial-gradient(ellipse 5px 3px at 50% 30%, var(--den-akzent) 0 98%, transparent) 0 0 / 30px .8rem repeat-x,
+        radial-gradient(ellipse 5px 3px at 50% 70%, #f0c46e 0 98%, transparent) 15px 0 / 30px .8rem repeat-x,
+        linear-gradient(90deg, #a6d86e66, #f0c46e44, transparent) 0 50% / 100% 1px no-repeat;
+    opacity: .85;
+}
+
+/* Schaltflächen */
+.den-toolbar button, .den-pager a {
+    border: 1px solid var(--den-line-hi);
+    border-radius: 1rem .3rem 1rem .3rem;
+    background: linear-gradient(180deg, var(--den-btn-1), var(--den-btn-2));
+}
+.den-toolbar button:hover, .den-pager a:hover {
+    border-color: var(--den-akzent);
+    color: var(--den-akzent-hell);
+    box-shadow: 0 0 1rem #a6d86e40, inset 0 0 .6rem #a6d86e1f;
+}
+
+/* Themenkacheln */
+.den-topic img { border-radius: 1.1rem .35rem 1.1rem .35rem; filter: saturate(.85) brightness(.85); }
+.den-topic:hover img, .den-topic:focus-visible img { filter: none; }
+.den-topic:hover, .den-topic:focus-visible { filter: drop-shadow(0 0 1rem #f0c46e40); }
+
+/* Quelle und Weiterlink */
+.den-source { margin-bottom: .2rem; color: var(--den-zier); font: 600 .68rem/1.3 var(--den-mono); letter-spacing: .14em; text-transform: uppercase; }
+.den-action {
+    display: inline-flex; gap: .4rem; margin-top: .75rem; padding: .3rem .85rem;
+    border: 1px solid var(--den-line-hi); border-radius: 1rem .3rem 1rem .3rem; font-size: .84rem; text-decoration: none;
+}
+.den-action:hover { border-color: var(--den-akzent); box-shadow: 0 0 .8rem #a6d86e40; }
+.den-card-group { display: grid; gap: .6rem; }
+
+@media (prefers-reduced-motion: reduce) {
+    .den-ambient, .den-glow { animation: none; }
+}

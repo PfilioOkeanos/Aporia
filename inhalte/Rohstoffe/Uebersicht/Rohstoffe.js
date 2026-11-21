@@ -1,9 +1,12 @@
 import { getResourceDetailUrl } from "../../../Menüs/adapter/aporia-resource.js";
 import { applyAporiaRoutes } from "../../../Menüs/adapter/aporia-routes.js";
+import { getPlanetInfos } from "../../../Menüs/adapter/aporia-planeten.js";
 import { resourceCatalogFields } from "../rohstoff-details.js";
 import { loadResources, resourceTopics } from "../rohstoff-katalog.js";
+import { oeffneRohstoffFenster, ladeRohstoffDaten } from "../rohstoff-fenster.js";
 
 applyAporiaRoutes(document);
+let aktuelleErgebnisse = [];
 
 const content = document.querySelector("#resource-content");
 const status = document.querySelector("#resource-status");
@@ -14,6 +17,8 @@ const origin = document.querySelector("#resource-origin");
 const state = document.querySelector("#resource-state");
 const use = document.querySelector("#resource-use");
 const sort = document.querySelector("#resource-sort");
+const planetSelect = document.querySelector("#resource-planet");
+const planetActive = document.querySelector("#resource-planet-active");
 const filters = document.querySelector("#resource-filters");
 const views = document.querySelectorAll("[data-resource-view]");
 const pageSize = 40;
@@ -49,6 +54,13 @@ function makeCard(item) {
     );
     link.append(image, copy);
     card.append(link);
+    // Klick öffnet das Rohstoff-Fenster; Strg/Mittelklick öffnet weiterhin das Dossier
+    item.dossier = target;
+    link.addEventListener("click", (event) => {
+        if (event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+        event.preventDefault();
+        oeffneRohstoffFenster(aktuelleErgebnisse, item);
+    });
     if (target) {
         card.dataset.sidebarDossier = target;
         card.sidebarTopics = resourceTopics;
@@ -63,7 +75,16 @@ try {
         ...resourceCatalogFields(group, item),
         group,
         groupLabel,
+        schluessel: group + "-" + (item.id.match(/-(\d+)\.png$/i)?.[1] ?? "0").padStart(3, "0"),
+        dossier: getResourceDetailUrl(group, item.id),
     })));
+    // Planetenzuordnung aus daten/rohstoffe.json ("planeten": Ordnernamen der Planetendossiers)
+    const rohdaten = await ladeRohstoffDaten();
+    for (const item of items) item.planeten = rohdaten[item.schluessel]?.planeten ?? [];
+    const planets = new Map((await getPlanetInfos(items.flatMap(item => item.planeten))).map(planet => [planet.slug, planet]));
+    for (const planet of [...planets.values()].sort((a, b) => collator.compare(a.name, b.name))) planetSelect.add(new Option(planet.name, planet.slug));
+    const requestedPlanet = new URLSearchParams(location.search).get("planet");
+    if (planets.has(requestedPlanet)) planetSelect.value = requestedPlanet;
     const categories = [["alle", "Alle Rohstoffe", items], ...groups];
     const groupLinks = new Map();
     let page = 1;
@@ -115,13 +136,15 @@ try {
             matches([item.name, item.symbol, item.title].join(" "), search.value) &&
             matches(item.origin, origin.value) &&
             matches(item.use, use.value) &&
-            (!state.value || item.state === state.value)
+            (!state.value || item.state === state.value) &&
+            (!planetSelect.value || item.planeten.includes(planetSelect.value))
         ).sort((first, second) => {
             const byName = collator.compare(first.name, second.name);
             if (sort.value === "group") return collator.compare(first.groupLabel, second.groupLabel) || byName;
             return sort.value === "desc" ? -byName : byName;
         });
 
+        aktuelleErgebnisse = results;
         const pageCount = Math.max(1, Math.ceil(results.length / pageSize));
         page = Math.min(pageCount, page);
         const first = (page - 1) * pageSize;
@@ -132,6 +155,22 @@ try {
         status.textContent = formatNumber.format(results.length) + " von " + formatNumber.format(items.length) + " Einträgen" +
             (pageCount > 1 ? " · " + (first + 1) + "–" + last + " angezeigt" : "");
         renderPagination(pageCount);
+        renderPlanet();
+    }
+
+    function renderPlanet() {
+        const planet = planets.get(planetSelect.value);
+        planetActive.hidden = !planet;
+        const url = new URL(location.href);
+        if (planet) url.searchParams.set("planet", planet.slug); else url.searchParams.delete("planet");
+        history.replaceState(null, "", url);
+        if (!planet) return;
+        const back = element("a", "Zum Dossier " + planet.name + " →");
+        back.href = planet.href;
+        const remove = element("button", "Planetenfilter entfernen ✕");
+        remove.type = "button";
+        remove.addEventListener("click", () => { planetSelect.value = ""; resetPage(); });
+        planetActive.replaceChildren(element("span", "Gefiltert: Rohstoffe von " + planet.name), back, remove);
     }
 
     function resetPage() {
@@ -140,7 +179,7 @@ try {
     }
 
     for (const input of [search, origin, use]) input.addEventListener("input", resetPage);
-    for (const select of [state, sort]) select.addEventListener("change", resetPage);
+    for (const select of [state, sort, planetSelect]) select.addEventListener("change", resetPage);
     filters.addEventListener("submit", event => event.preventDefault());
     filters.addEventListener("reset", () => {
         search.value = "";
@@ -170,6 +209,12 @@ try {
     }
     if (groupLinks.has(location.hash.slice(1))) group = location.hash.slice(1);
     render();
+    // Direktlink ?rohstoff=elemente-031 öffnet das Fenster
+    const direkt = items.find((item) => item.schluessel === new URLSearchParams(location.search).get("rohstoff"));
+    if (direkt) {
+        direkt.dossier = getResourceDetailUrl(direkt.group, direkt.id);
+        oeffneRohstoffFenster(aktuelleErgebnisse.includes(direkt) ? aktuelleErgebnisse : items, direkt);
+    }
     document.querySelector("main").dispatchEvent(new Event("aporia:detail-tabs-ready"));
 } catch (error) {
     console.error("Rohstoffkatalog:", error);

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 550 200" width="550" height="200">
+<style>.wellen{animation:welle 6s linear infinite}.ring{animation:puls 3.6s ease-in-out infinite;transform-origin:275px 92px}
+.blase{opacity:0;animation:blase 5s ease-in infinite}.b0{animation-delay:0.0s}.b1{animation-delay:0.6s}.b2{animation-delay:1.2s}.b3{animation-delay:1.8s}.b4{animation-delay:2.4s}.b5{animation-delay:3.0s}.b6{animation-delay:3.6s}.b7{animation-delay:4.2s}
+@keyframes welle{to{transform:translateX(-60px)}}@keyframes puls{50%{transform:scale(1.08);stroke-opacity:.4}}
+@keyframes blase{0%{opacity:0;transform:translateY(0)}20%{opacity:1}100%{opacity:0;transform:translate(10px,-170px)}}</style>
+<defs><filter id="w" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="5" result="b"/><feFlood flood-color="#4ff0e0"/><feComposite in2="b" operator="in"/><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+<g class="wellen" fill="none" stroke="#4ff0e0" stroke-opacity=".35" stroke-width="2"><path d="M-60 150 q 30 -10 60 0 t 60 0 t 60 0 t 60 0 t 60 0 t 60 0 t 60 0 t 60 0 t 60 0 t 60 0 t 60 0"/><path d="M-60 164 q 30 -10 60 0 t 60 0 t 60 0 t 60 0 t 60 0 t 60 0 t 60 0 t 60 0 t 60 0 t 60 0 t 60 0"/><path d="M-60 178 q 30 -10 60 0 t 60 0 t 60 0 t 60 0 t 60 0 t 60 0 t 60 0 t 60 0 t 60 0 t 60 0 t 60 0"/></g>
+<circle class="ring" cx="275" cy="92" r="52" fill="none" stroke="#4ff0e0" stroke-width="2.5" filter="url(#w)"/>
+<circle cx="275" cy="92" r="42" fill="#06212e" stroke="#d9b56a" stroke-width="1.5"/>
+<path d="M275 58 C 290 78 292 100 275 126 C 258 100 260 78 275 58 Z M275 70 L275 120 M262 84 Q 245 92 248 112 M288 84 Q 305 92 302 112" fill="none" stroke="#d9b56a" stroke-width="2" stroke-linecap="round"/>
+<g fill="none" stroke="#a8fff5" stroke-opacity=".8"><circle class="blase b0" cx="150" cy="190" r="2"/><circle class="blase b1" cx="184" cy="190" r="3"/><circle class="blase b2" cx="218" cy="190" r="4"/><circle class="blase b3" cx="252" cy="190" r="2"/><circle class="blase b4" cx="286" cy="190" r="3"/><circle class="blase b5" cx="320" cy="190" r="4"/><circle class="blase b6" cx="354" cy="190" r="2"/><circle class="blase b7" cx="388" cy="190" r="3"/></g>
+</svg>

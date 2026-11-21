@@ -3,54 +3,79 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Elektrotechnik und Elektronik im APORIA-Weltenarchiv: Schaltkreise, Elektronik und Sensorik. Mit interaktivem Forschungsbaum.">
   <title>Elektrotechnik und Elektronik | Aporia Weltenarchiv</title>
-  <link rel="stylesheet" href="../../../../Menüs/TopBar/Top_bar.css">
-  <link rel="stylesheet" href="../../Übersicht/Forschung.css">
-  <script type="module" src="../../Übersicht/Forschung.js"></script>
+  <link rel="stylesheet" href="../../../../Men%C3%BCs/TopBar/Top_bar.css">
+  <link rel="stylesheet" href="../../_gemeinsam/zweig.css">
+  <link rel="stylesheet" href="index.css">
+  <script type="module" src="index.js"></script>
 </head>
-<body class="research-page" data-section="forschung">
+<body class="research-page fz-seite fz-elektrotechnik-und-elektronik" data-section="forschung" data-familie="werkstatt">
   <div data-aporia-topbar></div>
-  <main id="inhalt" class="research-main research-branch-page" data-layout="workshop" style="--accent: #ffbe68">
-    <a class="branch-back" data-route="forschung" data-route-fragment="gruppe-2" href="../../Übersicht/Forschung.html#gruppe-2">← Forschungsübersicht</a>
-    <header class="branch-hero">
-      <div class="branch-intro">
-        <p class="branch-group">Technologie und Ingenieurwesen</p>
+  <main id="inhalt" class="fz-main">
+    <a class="fz-zurueck" data-route="forschung" data-route-fragment="gruppe-2" href="../../%C3%9Cbersicht/Forschung.html#gruppe-2">← Forschungsübersicht</a>
+
+    <header class="fz-panel fz-hero">
+      <div class="fz-hero-text">
+        <p class="fz-gruppe">Technologie und Ingenieurwesen</p>
         <h1>Elektrotechnik und Elektronik</h1>
         <p>Schaltkreise, Elektronik und Sensorik.</p>
-        <a class="branch-related" data-route="inhalt-technologien" href="../../../Technologien/%C3%9Cbersichtsseite/index.html">Technologien ↗</a>
-      </div>
-      <a class="branch-hero-image" href="../../../../assets/bilder/Das_Konsortium/Interstellare%20Schmiedestadt%20im%20roten%20D%C3%A4mmerlicht-3.png" target="_blank" rel="noopener" aria-label="Titelmotiv in Originalgröße öffnen">
-        <img src="../../../../assets/bilder/Das_Konsortium/Interstellare%20Schmiedestadt%20im%20roten%20D%C3%A4mmerlicht-3.png" alt="" decoding="async">
-      </a>
-    </header>
-    <div class="branch-sections">
-      <section class="branch-collection" aria-labelledby="motive">
-        <h2 id="motive">Motive aus dem Archiv</h2>
-        <div class="branch-gallery">
-          <details class="branch-motif">
-            <summary>
-              <img src="../../../../assets/bilder/Technologien/%C3%9Cbersichtsseite/Tragbarer%20Feldscanner%20mit%20holografischem%20Display-1.png" alt="" loading="lazy" decoding="async">
-              <span>Feldscanner</span>
-            </summary>
-            <div>
-              <p>Projektmotiv zum Themenfeld „Technologie und Ingenieurwesen“.</p>
-              <a href="../../../../assets/bilder/Technologien/%C3%9Cbersichtsseite/Tragbarer%20Feldscanner%20mit%20holografischem%20Display-1.png" target="_blank" rel="noopener">Bild in Originalgröße öffnen</a>
-            </div>
-          </details>
+        <div class="fz-chips"><a class="fz-chip" data-route="inhalt-technologien" href="../../../Technologien/%C3%9Cbersichtsseite/index.html">Technologien ↗</a><a class="fz-chip" href="#forschungsbaum">Zum Forschungsbaum ↓</a></div>
+        <div class="fz-kennzahlen" aria-label="Forschungsbaum in Zahlen">
+          <div class="fz-kennzahl"><span class="fz-label">Baumform</span><strong>Kette</strong><i style="--wert: 63%"></i></div>
+          <div class="fz-kennzahl"><span class="fz-label">Stufen</span><strong>5</strong><i style="--wert: 100%"></i></div>
+          <div class="fz-kennzahl"><span class="fz-label">Vorteile</span><strong>5</strong><i style="--wert: 62.5%"></i></div>
+          <div class="fz-kennzahl"><span class="fz-label">Gegenstände</span><strong>2</strong><i style="--wert: 25%"></i></div>
         </div>
-      </section>
-      <nav class="branch-navigation" aria-label="Technologie und Ingenieurwesen">
-        <h2>Forschungszweige der Gruppe</h2>
-        <ul>
-          <li><a href="../Material-%20und%20Werkstoffwissenschaften/index.html">Material- und Werkstoffwissenschaften</a></li>
-          <li><a href="../Energie-%20und%20Antriebsforschung/index.html">Energie- und Antriebsforschung</a></li>
-          <li><a href="../Maschinenbau%20und%20Ingenieurwissenschaften/index.html">Maschinenbau und Ingenieurwissenschaften</a></li>
-          <li><a href="#inhalt" aria-current="page">Elektrotechnik und Elektronik</a></li>
-          <li><a href="../Informatik%20und%20Informationstechnologie/index.html">Informatik und Informationstechnologie</a></li>
-          <li><a href="../K%C3%BCnstliche%20Intelligenz%20und%20Robotik/index.html">Künstliche Intelligenz und Robotik</a></li>
-        </ul>
-      </nav>
-    </div>
+      </div>
+      <figure class="fz-hero-bild">
+        <img src="../../../../assets/bilder/Himmelsk%C3%B6rper/OzeanWelt/erde-im-sternenmeer/unterseiten/ERDE_BILDER/Erforschung/08%20%E2%80%93%20Messstationen%20&%20Sensorik/08_Messstationen_Sensorik.jpg" alt="Messstationen Sensorik" fetchpriority="high" decoding="async">
+      </figure>
+    </header>
+
+    <section class="fz-panel fz-abschnitt" id="forschungsbaum" aria-labelledby="baum-titel">
+      <header>
+        <p class="fz-label">Forschungssystem · Entwurf</p>
+        <h2 id="baum-titel">Forschungsbaum</h2>
+        <p>Konstruktionspunkte sammeln sich, solange der Baum sichtbar ist; „Prototyp bauen“ bringt zusätzlich 3 KP. Erforsche von „Grundlagen“ aufwärts bis „Meisterwerk“: Jede Forschung verbindet sich mit der nächsten Stufe und schaltet Vorteile oder Gegenstände frei. Doppelklick erforscht direkt.</p>
+      </header>
+      <div data-forschungsbaum></div>
+      <noscript><p>Der Forschungsbaum benötigt JavaScript.</p></noscript>
+    </section>
+
+    <section class="fz-panel fz-abschnitt" aria-labelledby="motive-titel">
+      <header><p class="fz-label">Archiv</p><h2 id="motive-titel">Motive aus dem Archiv</h2></header>
+      <div class="fz-motive">
+          <details class="fz-motiv">
+            <summary><img src="../../../../assets/bilder/Himmelsk%C3%B6rper/OzeanWelt/erde-im-sternenmeer/unterseiten/ERDE_BILDER/Erforschung/08%20%E2%80%93%20Messstationen%20&%20Sensorik/08_Messstationen_Sensorik.jpg" alt="" loading="lazy" decoding="async"><span>Messstationen Sensorik</span></summary>
+            <div><p>Titelmotiv dieses Forschungszweigs.</p><a href="../../../../assets/bilder/Himmelsk%C3%B6rper/OzeanWelt/erde-im-sternenmeer/unterseiten/ERDE_BILDER/Erforschung/08%20%E2%80%93%20Messstationen%20&%20Sensorik/08_Messstationen_Sensorik.jpg" target="_blank" rel="noopener">Bild in Originalgröße öffnen</a></div>
+          </details>
+          <details class="fz-motiv">
+            <summary><img src="../../../../assets/bilder/Rohstoffe/Hassium-Signal%20im%20dunklen%20Labor-104.png" alt="" loading="lazy" decoding="async"><span>Hassium-Signal im dunklen Labor</span></summary>
+            <div><p>Freischaltbar im Forschungsbaum.</p><a href="../../../../assets/bilder/Rohstoffe/Hassium-Signal%20im%20dunklen%20Labor-104.png" target="_blank" rel="noopener">Bild in Originalgröße öffnen</a></div>
+          </details>
+          <details class="fz-motiv">
+            <summary><img src="../../../../assets/bilder/Rohstoffe/Leuchtendes%20Oganesson-Signal%20im%20Teilchendetektor-115.png" alt="" loading="lazy" decoding="async"><span>Leuchtendes Oganesson-Signal im Teilchendetektor</span></summary>
+            <div><p>Freischaltbar im Forschungsbaum.</p><a href="../../../../assets/bilder/Rohstoffe/Leuchtendes%20Oganesson-Signal%20im%20Teilchendetektor-115.png" target="_blank" rel="noopener">Bild in Originalgröße öffnen</a></div>
+          </details>
+          <details class="fz-motiv">
+            <summary><img src="../../../../assets/bilder/Technologien/%C3%9Cbersichtsseite/Tragbarer%20Feldscanner%20mit%20holografischem%20Display-1.png" alt="" loading="lazy" decoding="async"><span>Feldscanner</span></summary>
+            <div><p>Projektmotiv zum Themenfeld „Technologie und Ingenieurwesen“.</p><a href="../../../../assets/bilder/Technologien/%C3%9Cbersichtsseite/Tragbarer%20Feldscanner%20mit%20holografischem%20Display-1.png" target="_blank" rel="noopener">Bild in Originalgröße öffnen</a></div>
+          </details>
+      </div>
+    </section>
+
+    <nav class="fz-panel fz-abschnitt fz-nachbarn" aria-label="Technologie und Ingenieurwesen">
+      <header><p class="fz-label">Technologie und Ingenieurwesen</p><h2>Forschungszweige der Gruppe</h2></header>
+      <ul>
+            <li><a href="../Material-%20und%20Werkstoffwissenschaften/index.html">Material- und Werkstoffwissenschaften</a></li>
+            <li><a href="../Energie-%20und%20Antriebsforschung/index.html">Energie- und Antriebsforschung</a></li>
+            <li><a href="../Maschinenbau%20und%20Ingenieurwissenschaften/index.html">Maschinenbau und Ingenieurwissenschaften</a></li>
+            <li><a href="#inhalt" aria-current="page">Elektrotechnik und Elektronik</a></li>
+            <li><a href="../Informatik%20und%20Informationstechnologie/index.html">Informatik und Informationstechnologie</a></li>
+            <li><a href="../K%C3%BCnstliche%20Intelligenz%20und%20Robotik/index.html">Künstliche Intelligenz und Robotik</a></li>
+      </ul>
+    </nav>
   </main>
 </body>
 </html>

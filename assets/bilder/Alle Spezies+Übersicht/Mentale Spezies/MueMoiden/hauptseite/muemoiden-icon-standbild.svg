@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 550 200" width="550" height="200">
+<defs><filter id="m" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feFlood flood-color="#d8434f"/><feComposite in2="b" operator="in"/><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter><filter id="c" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feFlood flood-color="#ffb347"/><feComposite in2="b" operator="in"/><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+<g class="kreis" fill="none" stroke="#d8434f" stroke-opacity=".7">
+<circle cx="275" cy="100" r="78" stroke-width="1.5"/><circle cx="275" cy="100" r="66" stroke-width="1"/>
+<path d="M347.0 100.0 l 0.0 5.0" stroke-width="2.5"/><path d="M337.4 136.0 l -2.5 4.3" stroke-width="2.5"/><path d="M311.0 162.4 l -4.3 2.5" stroke-width="2.5"/><path d="M275.0 172.0 l -5.0 0.0" stroke-width="2.5"/><path d="M239.0 162.4 l -4.3 -2.5" stroke-width="2.5"/><path d="M212.6 136.0 l -2.5 -4.3" stroke-width="2.5"/><path d="M203.0 100.0 l -0.0 -5.0" stroke-width="2.5"/><path d="M212.6 64.0 l 2.5 -4.3" stroke-width="2.5"/><path d="M239.0 37.6 l 4.3 -2.5" stroke-width="2.5"/><path d="M275.0 28.0 l 5.0 -0.0" stroke-width="2.5"/><path d="M311.0 37.6 l 4.3 2.5" stroke-width="2.5"/><path d="M337.4 64.0 l 2.5 4.3" stroke-width="2.5"/>
+<polygon points="275,34 332,133 218,133" stroke-width="1.2"/><polygon points="275,166 218,67 332,67" stroke-width="1.2"/></g>
+<path d="M240 100 Q 275 70 310 100 Q 275 130 240 100 Z" fill="#170e10" stroke="#e0b464" stroke-width="2"/>
+<circle class="auge" cx="275" cy="100" r="10" fill="#d8434f" filter="url(#m)"/>
+<rect x="144" y="128" width="12" height="40" rx="2" fill="#e8dcc0"/><path class="flamme fl0" d="M150 104 C 158 116 156 126 150 128 C 144 126 142 116 150 104 Z" fill="#ffb347" filter="url(#c)"/><rect x="394" y="128" width="12" height="40" rx="2" fill="#e8dcc0"/><path class="flamme fl1" d="M400 104 C 408 116 406 126 400 128 C 394 126 392 116 400 104 Z" fill="#ffb347" filter="url(#c)"/>
+</svg>

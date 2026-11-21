@@ -1,0 +1,668 @@
+/* Muemoiden – gemeinsames Basisdesign „Okkultes Grimoire“
+   Wird von der Hauptseite und allen Unterseiten geladen. Seitenspezifisches steht in der jeweiligen Seiten-CSS. */
+
+.muemoiden {
+    --mue-bg: #0a0809;
+    --mue-deep-1: #231a1c;
+    --mue-deep-2: #171113;
+    --mue-deep-3: #0e0a0b;
+    --mue-line: #3b2a2c;
+    --mue-line-hi: #7a4a4c;
+    --mue-text: #ece2d4;
+    --mue-muted: #a8988a;
+    --mue-akzent: #d8434f;
+    --mue-akzent-hell: #ffb4a8;
+    --mue-akzent-glow: #d8434f55;
+    --mue-akzent2: #a07cff;
+    --mue-zier: #e0b464;
+    --mue-hell: #f3e6c8;
+    --mue-btn-1: #2a1c1e;
+    --mue-btn-2: #150e10;
+    --mue-cut: 0px;
+    --mue-mono: ui-monospace, "Cascadia Mono", Consolas, "Courier New", monospace;
+    --aporia-page-tint: #9a3d43;
+    --aporia-page-glass-light: #2a1a1d;
+    --aporia-page-glass-dark: #0e090a;
+    margin: 0;
+    background: var(--mue-bg);
+    color: var(--mue-text);
+    font: 1rem/1.62 Georgia, "Times New Roman", serif;
+}
+
+.mue-frame {
+    display: flex;
+    min-height: calc(100dvh - var(--aporia-topbar-height, 78px));
+    background:
+        radial-gradient(ellipse at 70% -10%, #3a2a1430, transparent 55%),
+        repeating-linear-gradient(0deg, #ffffff04 0 1px, transparent 1px 46px),
+        repeating-linear-gradient(90deg, #ffffff04 0 1px, transparent 1px 46px),
+        linear-gradient(180deg, #11151a, var(--mue-bg) 70%);
+}
+.muemoiden .aporia-sidebar::after {
+    background: linear-gradient(180deg, transparent, #ffb5470d 70%, transparent);
+}
+
+.mue-dossier {
+    flex: 1;
+    min-width: 0;
+    padding: clamp(.6rem, 1.3vw, 1.4rem);
+    container-type: inline-size;
+}
+.mue-dossier :is(.mue-block, .mue-card-body, .mue-topic) :is(p, li, dd, dt) { hyphens: auto; }
+.mue-dossier :is(h1, h2, h3, h4, p, dl, dd, ul, ol) { margin: 0; }
+.mue-dossier :is(h1, h2, h3, a, p, li, dd) { overflow-wrap: break-word; }
+.mue-dossier [id] { scroll-margin-top: calc(var(--aporia-topbar-height, 78px) + .75rem); }
+.mue-dossier a { color: var(--mue-cyan); }
+.mue-dossier a:focus-visible, .mue-dossier button:focus-visible, .mue-dossier summary:focus-visible {
+    outline: 2px solid var(--mue-cyan-hot);
+    outline-offset: 2px;
+}
+.mue-dossier img { display: block; max-width: 100%; height: auto; }
+
+/* ---------- Bausteine ---------- */
+.mue-code {
+    display: inline-block;
+    margin-inline-end: .5rem;
+    color: var(--mue-cyan);
+    font: 600 .72rem/1 var(--mue-mono);
+    letter-spacing: .08em;
+}
+.mue-kicker {
+    display: flex;
+    align-items: center;
+    gap: .45rem;
+    color: var(--mue-muted);
+    font: 600 .7rem/1.3 var(--mue-mono);
+    letter-spacing: .16em;
+    text-transform: uppercase;
+}
+.mue-glow {
+    flex: none;
+    display: inline-block;
+    width: .5rem;
+    height: .5rem;
+    border-radius: 50%;
+    background: radial-gradient(circle at 35% 35%, #fff3d0, var(--mue-cyan) 45%, #a35c00);
+    box-shadow: 0 0 .35rem var(--mue-cyan), 0 0 .9rem var(--mue-cyan-glow);
+    animation: mue-pulse 3.2s ease-in-out infinite;
+}
+@keyframes mue-pulse { 50% { opacity: .55; box-shadow: 0 0 .2rem var(--mue-cyan); } }
+.mue-placeholder { color: var(--mue-muted); font-style: italic; }
+
+/* Metallpanel mit gefasten Ecken, Nieten und Kantenlicht */
+.mue-panel {
+    position: relative;
+    box-sizing: border-box;
+    min-width: 0;
+    clip-path: polygon(var(--mue-cut) 0, 100% 0, 100% calc(100% - var(--mue-cut)), calc(100% - var(--mue-cut)) 100%, 0 100%, 0 var(--mue-cut));
+    background:
+        radial-gradient(circle at 9px calc(100% - 9px), #8c97a2 0 1.5px, #0000 2.5px),
+        radial-gradient(circle at calc(100% - 9px) 9px, #8c97a2 0 1.5px, #0000 2.5px),
+        repeating-linear-gradient(90deg, #ffffff06 0 1px, #0000 1px 3px),
+        linear-gradient(160deg, var(--mue-deep-1), var(--mue-deep-2) 45%, var(--mue-deep-3));
+    box-shadow: inset 0 1px 0 #ffffff1f, inset 0 0 0 1px #ffffff10, inset 0 -2px 0 #00000080;
+}
+.mue-panel::before {
+    content: "";
+    position: absolute;
+    inset: 0 auto auto var(--mue-cut);
+    width: 3.2rem;
+    height: 2px;
+    background: linear-gradient(90deg, var(--mue-cyan), transparent);
+    box-shadow: 0 0 .6rem var(--mue-cyan-glow);
+}
+
+/* ---------- Übersicht: Raster ---------- */
+.mue-layout {
+    display: grid;
+    gap: .8rem;
+    align-items: start;
+}
+.mue-layout--index {
+    grid-template-columns: clamp(8.4rem, 11cqi, 11rem) minmax(0, 1fr) clamp(9rem, 11cqi, 11.5rem);
+    grid-template-areas:
+        "chapters hero rail"
+        "chapters core rail"
+        "topics topics topics";
+}
+.mue-chapters { grid-area: chapters; position: sticky; top: calc(var(--aporia-topbar-height, 78px) + .8rem); }
+.mue-rail { grid-area: rail; position: sticky; top: calc(var(--aporia-topbar-height, 78px) + .8rem); }
+.mue-hero { grid-area: hero; }
+.mue-core { grid-area: core; }
+.mue-topics-wrap { grid-area: topics; }
+
+/* Navigationsleisten */
+.mue-chapters, .mue-rail, .mue-jumps { display: grid; gap: .2rem; padding: .85rem .7rem .7rem; }
+.mue-rail nav { display: grid; gap: .15rem; margin-top: .35rem; }
+.mue-chapters a, .mue-rail a, .mue-jumps a, .mue-rail-pending {
+    position: relative;
+    display: block;
+    padding: .32rem .45rem .32rem .6rem;
+    border-left: 2px solid transparent;
+    color: var(--mue-text);
+    font-size: .86rem;
+    line-height: 1.35;
+    text-decoration: none;
+    transition: background .2s, border-color .2s, color .2s;
+}
+.mue-chapters a:hover, .mue-rail a:hover, .mue-jumps a:hover,
+.mue-chapters a.is-active, .mue-jumps a.is-active, .mue-rail a[aria-current] {
+    border-left-color: var(--mue-cyan);
+    background: linear-gradient(90deg, #ffb5472b, transparent 85%);
+    color: #fff;
+    text-shadow: 0 0 .6rem #ffb54740;
+}
+.mue-rail a[aria-current] .mue-code, .mue-jumps a.is-active .mue-code { color: var(--mue-cyan-hot); }
+.mue-rail-pending { color: var(--mue-muted); cursor: not-allowed; }
+.mue-rail-pending em {
+    display: block;
+    color: #c8873a;
+    font: normal .66rem/1.3 var(--mue-mono);
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+/* Hero */
+.mue-hero {
+    position: relative;
+    isolation: isolate;
+    display: grid;
+    align-items: end;
+    min-height: clamp(19rem, 30cqi, 30rem);
+    overflow: hidden;
+    --mue-cut: 22px;
+}
+.mue-dossier .mue-hero img {
+    position: absolute;
+    inset: 0 0 0 auto;
+    z-index: -2;
+    width: 78%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 60% 30%;
+    mask-image: linear-gradient(90deg, transparent, #000 38%);
+    filter: saturate(.85) contrast(1.05);
+}
+.mue-hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background:
+        repeating-linear-gradient(0deg, #0000 0 3px, #00000026 3px 4px),
+        linear-gradient(90deg, #0b0e12f2 0, #0b0e12b8 36%, transparent 70%);
+    pointer-events: none;
+}
+.mue-hero > div { padding: clamp(1rem, 2.6cqi, 2.2rem); }
+.mue-hero h1 {
+    margin: .4rem 0 .55rem;
+    color: #f2ede4;
+    font: 700 clamp(2.2rem, 5.2cqi, 4.6rem)/1 "Segoe UI", system-ui, sans-serif;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    text-shadow: 0 2px 16px #000, 0 0 2rem #ffb5471f;
+}
+.mue-subtitle {
+    width: fit-content;
+    padding-top: .45rem;
+    border-top: 2px solid var(--mue-cyan);
+    color: var(--mue-pearl);
+    font: 500 clamp(.95rem, 1.5cqi, 1.25rem)/1.35 var(--mue-mono);
+    letter-spacing: .06em;
+}
+.mue-crumbs { margin-top: .9rem; color: var(--mue-muted); font-size: .8rem; }
+.mue-crumbs a { color: var(--mue-muted); }
+.mue-crumbs a:hover { color: var(--mue-cyan); }
+
+
+/* Kernpanels */
+.mue-core {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: .7rem;
+}
+.mue-block { padding: clamp(.75rem, 1.3cqi, 1.1rem); }
+.mue-wide { grid-column: span 2; }
+.mue-block h2, .mue-card h2, .mue-section-title {
+    color: #f0e9dc;
+    font: 600 1.02rem/1.3 "Segoe UI", system-ui, sans-serif;
+    letter-spacing: .04em;
+}
+.mue-block h2 {
+    margin-bottom: .65rem;
+    padding-bottom: .45rem;
+    border-bottom: 1px solid var(--mue-line);
+}
+.mue-block p, .mue-block li, .mue-specs { font-size: .9rem; }
+.mue-block p + p { margin-top: .55rem; }
+.mue-specs > div {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+    gap: .6rem;
+    padding-block: .3rem;
+    border-bottom: 1px solid #ffffff12;
+}
+.mue-specs dt { color: var(--mue-muted); font-size: .82rem; }
+.mue-specs dd { color: var(--mue-text); }
+.mue-specs dd.mue-open { color: #c8873a; font-style: italic; }
+.mue-traits, .mue-models { list-style: none; padding: 0; display: grid; gap: .3rem; }
+.mue-traits li {
+    position: relative;
+    padding: .25rem 0 .25rem 1.1rem;
+    border-bottom: 1px solid #ffffff10;
+}
+.mue-traits li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: .72rem;
+    width: .42rem;
+    height: .42rem;
+    background: var(--mue-cyan);
+    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+    box-shadow: 0 0 .4rem var(--mue-cyan);
+}
+.mue-gen1 img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; margin-bottom: .55rem; clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px); }
+.mue-caption { color: var(--mue-muted); font-size: .78rem; }
+.mue-models { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: .35rem; }
+.mue-models li {
+    padding: .3rem .45rem;
+    border: 1px solid var(--mue-line);
+    background: #0b0e12a0;
+    font-size: .82rem;
+}
+.mue-models .mue-code { display: block; margin-bottom: .1rem; }
+
+/* Warnstreifen als Trenner */
+.mue-section-title {
+    display: flex;
+    align-items: center;
+    gap: .55rem;
+    margin: .6rem 0 .7rem;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: .18em;
+}
+.mue-section-title::after {
+    content: "";
+    flex: 1;
+    height: .5rem;
+    background: repeating-linear-gradient(-45deg, #ffb54755 0 8px, #0000 8px 16px);
+    opacity: .7;
+}
+
+/* Themenkacheln */
+.mue-topics {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: .7rem;
+}
+.mue-topic {
+    display: grid;
+    align-content: start;
+    gap: .3rem;
+    padding: .5rem .5rem .8rem;
+    color: var(--mue-text);
+    text-decoration: none;
+    transition: transform .2s, filter .2s;
+}
+.mue-dossier .mue-topic { color: var(--mue-text); }
+.mue-topic img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    margin-bottom: .35rem;
+    filter: saturate(.75) brightness(.85);
+    transition: filter .25s;
+    clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+}
+.mue-topic h3 { padding-inline: .2rem; color: #f2ede4; font-size: 1.02rem; font-weight: 600; }
+.mue-topic .mue-code { padding-inline: .2rem; }
+.mue-topic p { padding-inline: .2rem; color: var(--mue-muted); font-size: .78rem; line-height: 1.4; }
+.mue-topic:hover, .mue-topic:focus-visible { transform: translateY(-2px); filter: drop-shadow(0 0 .7rem #ffb54733); }
+.mue-topic:hover img, .mue-topic:focus-visible img { filter: saturate(1) brightness(1); }
+
+/* ---------- Hauptreiter-Seiten ---------- */
+.mue-layout--reiter {
+    grid-template-columns: clamp(10rem, 15cqi, 14rem) minmax(0, 1fr) clamp(9rem, 11cqi, 11.5rem);
+    grid-template-areas:
+        "hero hero rail"
+        "jumps content rail";
+}
+.mue-jumps { grid-area: jumps; position: sticky; top: calc(var(--aporia-topbar-height, 78px) + .8rem); max-height: calc(100dvh - var(--aporia-topbar-height, 78px) - 2rem); overflow-y: auto; scrollbar-width: thin; scrollbar-color: #ffb54766 transparent; }
+.mue-jumps a { font-size: .8rem; }
+.mue-jumps .mue-code { margin-inline-end: .35rem; }
+.mue-content { grid-area: content; display: grid; gap: .6rem; min-width: 0; }
+.mue-hero--reiter { min-height: clamp(13rem, 20cqi, 18rem); }
+.mue-hero--reiter h1 { font-size: clamp(2rem, 4.4cqi, 3.6rem); }
+
+.mue-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: .5rem;
+    padding: .2rem 0;
+}
+.mue-count {
+    display: inline-flex;
+    align-items: center;
+    gap: .45rem;
+    margin-inline-end: auto;
+    color: var(--mue-muted);
+    font: 600 .72rem/1 var(--mue-mono);
+    letter-spacing: .12em;
+    text-transform: uppercase;
+}
+.mue-toolbar button {
+    padding: .38rem .8rem;
+    border: 1px solid var(--mue-line-hi);
+    background: linear-gradient(180deg, #2b323a, #171b20);
+    color: var(--mue-text);
+    font: 600 .74rem/1 var(--mue-mono);
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    cursor: pointer;
+    clip-path: polygon(6px 0, 100% 0, 100% calc(100% - 6px), calc(100% - 6px) 100%, 0 100%, 0 6px);
+    transition: border-color .2s, color .2s, box-shadow .2s;
+}
+.mue-toolbar button:hover { border-color: var(--mue-cyan); color: var(--mue-cyan-hot); box-shadow: inset 0 0 .8rem #ffb5472b; }
+
+.mue-card { --mue-cut: 12px; }
+.mue-card summary {
+    display: flex;
+    align-items: baseline;
+    gap: .2rem;
+    padding: .8rem 1rem;
+    cursor: pointer;
+    list-style: none;
+}
+.mue-card summary::-webkit-details-marker { display: none; }
+.mue-card summary h2 { flex: 1; }
+.mue-chevron {
+    flex: none;
+    align-self: center;
+    width: .55rem;
+    height: .55rem;
+    border-right: 2px solid var(--mue-cyan);
+    border-bottom: 2px solid var(--mue-cyan);
+    transform: rotate(-45deg);
+    transition: transform .25s;
+}
+.mue-card[open] .mue-chevron { transform: rotate(45deg); }
+.mue-card summary:hover h2 { color: var(--mue-cyan-hot); }
+.mue-card-body {
+    display: grid;
+    gap: .55rem;
+    margin: 0 1rem 1rem;
+    padding-top: .7rem;
+    border-top: 1px solid var(--mue-line);
+    font-size: .92rem;
+    max-width: 75ch;
+}
+.mue-card-body h4 {
+    margin-top: .3rem;
+    color: var(--mue-cyan);
+    font: 600 .78rem/1.3 var(--mue-mono);
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+.mue-card-body :is(ul, ol) { display: grid; gap: .2rem; padding-left: 1.2rem; }
+.mue-card-body li::marker { color: var(--mue-cyan); }
+.mue-card:target, .mue-card:has(summary:focus-visible) { box-shadow: inset 0 0 0 1px #ffb54799, inset 0 0 1.2rem #ffb5471a; }
+.mue-card-static { padding: 1rem; }
+
+.mue-pager {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: .6rem;
+    margin-top: .4rem;
+}
+.mue-pager a {
+    padding: .5rem .9rem;
+    border: 1px solid var(--mue-line);
+    background: #0f1318;
+    color: var(--mue-text);
+    font-size: .86rem;
+    text-decoration: none;
+    clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+}
+.mue-pager a:hover { border-color: var(--mue-cyan); color: var(--mue-cyan-hot); }
+
+/* ---------- Responsiv (Container-Queries wie Architektoiden) ---------- */
+@container (max-width: 1100px) {
+    .mue-topics { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .mue-core { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@container (max-width: 560px) {
+    .mue-core { grid-template-columns: minmax(0, 1fr); }
+    .mue-wide { grid-column: auto; }
+}
+@container (max-width: 980px) {
+    .mue-layout--index {
+        grid-template-columns: minmax(0, 1fr) clamp(9rem, 22cqi, 11rem);
+        grid-template-areas: "hero rail" "chapters chapters" "core core" "topics topics";
+    }
+    .mue-layout--reiter {
+        grid-template-columns: minmax(0, 1fr) clamp(9rem, 22cqi, 11rem);
+        grid-template-areas: "hero rail" "jumps jumps" "content content";
+    }
+    .mue-chapters, .mue-jumps { position: static; max-height: none; display: flex; flex-wrap: wrap; align-items: center; gap: .25rem; }
+    .mue-chapters > .mue-kicker, .mue-jumps > .mue-kicker { flex-basis: 100%; }
+    .mue-chapters a, .mue-jumps a { border-left: 0; border-bottom: 2px solid transparent; }
+    .mue-chapters a.is-active, .mue-jumps a.is-active { border-bottom-color: var(--mue-cyan); }
+}
+@container (max-width: 700px) {
+    .mue-layout--index, .mue-layout--reiter { grid-template-columns: minmax(0, 1fr); }
+    .mue-layout--index { grid-template-areas: "rail" "hero" "chapters" "core" "topics"; }
+    .mue-layout--reiter { grid-template-areas: "rail" "hero" "jumps" "content"; }
+    .mue-rail { position: static; }
+    .mue-rail > .mue-kicker { display: none; }
+    .mue-rail nav { display: flex; flex-wrap: wrap; justify-content: center; margin: 0; }
+    .mue-rail a, .mue-rail-pending { border-left: 0; border-bottom: 2px solid transparent; }
+    .mue-rail a[aria-current] { border-bottom-color: var(--mue-cyan); }
+    .mue-rail-pending em { display: inline; margin-left: .3rem; }
+    .mue-topics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .mue-dossier .mue-hero img { width: 100%; mask-image: linear-gradient(90deg, #0006, #000 60%); }
+    .mue-hero::after { background: repeating-linear-gradient(0deg, #0000 0 3px, #00000026 3px 4px), linear-gradient(0deg, #0b0e12f2, #0b0e1299 55%, #0b0e1240); }
+    .mue-hero h1 { letter-spacing: .08em; }
+    .mue-jumps { display: none; }
+}
+@container (max-width: 440px) {
+    .mue-topics, .mue-models { grid-template-columns: minmax(0, 1fr); }
+    .mue-specs > div { grid-template-columns: minmax(0, 1fr); gap: .05rem; }
+}
+@media (max-width: 760px) {
+    .mue-frame { flex-direction: column; }
+    .mue-frame > #aporia-sidebar-host { flex: 0 0 auto; width: 100%; }
+    .mue-frame .aporia-sidebar { position: relative; top: auto; max-height: 42dvh; }
+    .mue-frame .aporia-sidebar::after { display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .mue-glow { animation: none; }
+    .mue-topic, .mue-topic img, .mue-chevron { transition: none; }
+}
+
+
+
+/* =====================================================================
+   Stil der Muemoiden „Okkultes Grimoire“
+   Kohle und Asche, Manuskript-Doppelrahmen mit Eckornamenten, glimmender
+   Ritualkreis, Kerzenflackern, Blutrot und arkanes Violett.
+   ===================================================================== */
+
+.mue-frame {
+    background:
+        radial-gradient(ellipse 55% 40% at 70% 0%, #6d1f2622, transparent 70%),
+        radial-gradient(ellipse 45% 35% at 0% 100%, #3d2a6a1c, transparent 70%),
+        radial-gradient(ellipse at 50% 50%, #120d0e, var(--mue-bg) 75%);
+}
+.muemoiden .aporia-sidebar::after { background: linear-gradient(180deg, transparent, #d8434f0f 70%, transparent); }
+.mue-dossier { position: relative; isolation: isolate; overflow-x: clip; }
+
+/* Glimmender Ritualkreis */
+.mue-ambient {
+    position: absolute;
+    top: 2rem;
+    right: -12rem;
+    z-index: -1;
+    width: 46rem;
+    aspect-ratio: 1;
+    pointer-events: none;
+    border-radius: 50%;
+    background:
+        repeating-conic-gradient(from 0deg, #d8434f1c 0 1deg, transparent 1deg 30deg),
+        radial-gradient(circle, transparent 0 39%, #d8434f26 39.3% 39.7%, transparent 40% 47%, #e0b46418 47.3% 47.6%, transparent 48% 64%, #d8434f22 64.3% 64.8%, transparent 65%);
+    mask-image: radial-gradient(circle, #000 55%, transparent 70%);
+    opacity: .9;
+    animation: mue-kreis 120s linear infinite;
+}
+@keyframes mue-kreis { to { transform: rotate(360deg); } }
+
+/* Manuskript-Panels: Doppelrahmen und Eckornamente */
+.mue-panel, .mue-toolbar button, .mue-pager a, .mue-topic img, .mue-gen1 img { clip-path: none; }
+.mue-panel {
+    border-radius: .25rem;
+    background:
+        radial-gradient(ellipse 90% 70% at 50% 0%, #e0b4640a, transparent 60%),
+        linear-gradient(170deg, #1f1719f2, #140f11f5 60%, #0d090af7);
+    box-shadow:
+        inset 0 0 0 1px #e0b46433,
+        inset 0 0 0 4px #0d090a,
+        inset 0 0 0 5px #7a4a4c55,
+        0 .8rem 1.8rem #000000b8;
+}
+.mue-panel::before {
+    inset: 6px;
+    width: auto;
+    height: auto;
+    background:
+        linear-gradient(var(--mue-zier), var(--mue-zier)) 0 0 / 14px 1px no-repeat,
+        linear-gradient(var(--mue-zier), var(--mue-zier)) 0 0 / 1px 14px no-repeat,
+        linear-gradient(var(--mue-zier), var(--mue-zier)) 100% 100% / 14px 1px no-repeat,
+        linear-gradient(var(--mue-zier), var(--mue-zier)) 100% 100% / 1px 14px no-repeat;
+    box-shadow: none;
+    opacity: .75;
+    pointer-events: none;
+}
+
+/* Kerzenflamme */
+.mue-glow {
+    width: .5rem;
+    height: .7rem;
+    border-radius: 50% 50% 50% 50% / 65% 65% 35% 35%;
+    background: radial-gradient(ellipse at 50% 70%, #fff4d0, #ffb347 45%, #d8434f 85%);
+    box-shadow: 0 0 .5rem #ffb347, 0 0 1.2rem #d8434f88;
+    animation: mue-flacker 2.4s ease-in-out infinite;
+}
+@keyframes mue-flacker {
+    20% { transform: scale(.92, 1.06); opacity: .85; }
+    45% { transform: scale(1.05, .94); opacity: 1; }
+    70% { transform: scale(.96, 1.03); opacity: .75; }
+}
+
+.mue-code { color: var(--mue-zier); font-family: var(--mue-mono); }
+.mue-kicker { color: var(--mue-muted); }
+.mue-dossier a { color: var(--mue-akzent-hell); }
+
+/* Hero */
+.mue-hero { border-radius: .3rem; }
+.mue-dossier .mue-hero img { filter: saturate(.9) contrast(1.08); mask-image: linear-gradient(90deg, transparent, #000 36%); }
+.mue-hero::after {
+    background:
+        radial-gradient(ellipse at 30% 110%, #d8434f26, transparent 55%),
+        linear-gradient(90deg, #0a0809f5 0, #0a0809b5 38%, transparent 74%);
+    animation: none;
+}
+.mue-hero h1 {
+    color: var(--mue-hell);
+    font: 400 clamp(2.2rem, 5cqi, 4.4rem)/1 Georgia, "Times New Roman", serif;
+    letter-spacing: .18em;
+    font-variant: small-caps;
+    text-transform: none;
+    text-shadow: 0 0 1.4rem #d8434f66, 0 2px 12px #000;
+}
+.mue-subtitle {
+    border-top: 1px solid var(--mue-akzent);
+    color: var(--mue-zier);
+    font: italic 400 clamp(1rem, 1.5cqi, 1.25rem)/1.4 Georgia, serif;
+    letter-spacing: .05em;
+}
+
+/* Navigation */
+.mue-dossier :is(.mue-chapters, .mue-rail, .mue-jumps) a { color: var(--mue-text); font-family: Georgia, serif; }
+.mue-chapters a:hover, .mue-rail a:hover, .mue-jumps a:hover,
+.mue-chapters a.is-active, .mue-jumps a.is-active, .mue-rail a[aria-current] {
+    border-left-color: var(--mue-akzent);
+    background: linear-gradient(90deg, #d8434f26, transparent 85%);
+    color: #fff;
+    text-shadow: 0 0 .7rem #d8434f66;
+}
+.mue-dossier .mue-crumbs a { color: var(--mue-muted); }
+
+/* Inhalte */
+.mue-block h2, .mue-card h2, .mue-section-title {
+    color: var(--mue-hell);
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 400;
+    font-variant: small-caps;
+    letter-spacing: .06em;
+}
+.mue-block h2 { border-bottom: 1px solid #7a4a4c66; }
+.mue-card-body { border-top-color: #7a4a4c66; }
+.mue-card-body h4 { color: var(--mue-akzent-hell); font-family: Georgia, serif; font-style: italic; text-transform: none; letter-spacing: .02em; font-size: .95rem; }
+.mue-card-body li::marker, .mue-block li::marker { color: var(--mue-akzent); }
+.mue-card-body p:first-child::first-letter, .mue-block h2 + p::first-letter {
+    float: left;
+    margin: .1rem .45rem 0 0;
+    color: var(--mue-akzent);
+    font: 2.6em/.85 Georgia, serif;
+    text-shadow: 0 0 .6rem #d8434f55;
+}
+.mue-chevron { border-color: var(--mue-zier); }
+.mue-card:target, .mue-card:has(summary:focus-visible) { box-shadow: inset 0 0 0 1px #d8434f99, inset 0 0 1.4rem #d8434f1f; }
+.mue-specs dt { color: var(--mue-muted); font-family: Georgia, serif; font-style: italic; }
+.mue-block p + p { margin-top: .55rem; }
+.mue-block :is(ul, ol) { display: grid; gap: .2rem; margin: .4rem 0; padding-left: 1.15rem; font-size: .92rem; }
+
+/* Trenner: Runenband */
+.mue-section-title::after {
+    height: .7rem;
+    background:
+        radial-gradient(circle, var(--mue-akzent) 0 1.6px, transparent 2px) 0 50% / 34px .7rem repeat-x,
+        linear-gradient(90deg, #e0b46466, #d8434f44, transparent) 0 50% / 100% 1px no-repeat;
+    opacity: .9;
+}
+
+/* Schaltflächen */
+.mue-toolbar button, .mue-pager a {
+    border: 1px solid var(--mue-line-hi);
+    border-radius: .2rem;
+    background: linear-gradient(180deg, var(--mue-btn-1), var(--mue-btn-2));
+    font-family: Georgia, serif;
+    letter-spacing: .06em;
+}
+.mue-toolbar button:hover, .mue-pager a:hover {
+    border-color: var(--mue-akzent);
+    color: var(--mue-akzent-hell);
+    box-shadow: 0 0 1rem #d8434f40, inset 0 0 .6rem #d8434f1f;
+}
+
+/* Themenkacheln */
+.mue-topic img { border-radius: .15rem; filter: sepia(.25) saturate(.85) brightness(.82); }
+.mue-topic:hover img, .mue-topic:focus-visible img { filter: none; }
+.mue-topic:hover, .mue-topic:focus-visible { filter: drop-shadow(0 0 1rem #d8434f4d); }
+.mue-topic h3 { font-family: Georgia, serif; font-variant: small-caps; letter-spacing: .05em; }
+
+/* Quelle und Weiterlink */
+.mue-source { margin-bottom: .2rem; color: var(--mue-zier); font: 600 .68rem/1.3 var(--mue-mono); letter-spacing: .14em; text-transform: uppercase; }
+.mue-action {
+    display: inline-flex; gap: .4rem; margin-top: .75rem; padding: .3rem .85rem;
+    border: 1px solid var(--mue-line-hi); border-radius: .2rem; font-size: .84rem; text-decoration: none;
+}
+.mue-action:hover { border-color: var(--mue-akzent); box-shadow: 0 0 .8rem #d8434f40; }
+.mue-card-group { display: grid; gap: .6rem; }
+
+@media (prefers-reduced-motion: reduce) {
+    .mue-ambient, .mue-glow { animation: none; }
+}

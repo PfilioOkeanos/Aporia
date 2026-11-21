@@ -1,0 +1,10 @@
+/* Geomorphen – Politik
+   Gemeinsames Design: geomorphen-basis.css · hier nur der Hintergrund (Designvorlage) dieser Seite. */
+.geo-politik .geo-buehne { background-image: url("../../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Gigantische%20Lebensformen/geomorphen/PageDesign/Geomorphen-Dossier%20im%20lebenden%20Kokon.png"); }
+/* Der Geomorph reicht in dieser Vorlage weiter nach rechts: Schleierkante und Titel rücken mit. */
+.geo-politik { --geo-schleier-links: 34cqi; --geo-hero-einzug: 10cqi; }
+@container (max-width: 700px) { .geo-politik .geo-schleier { left: 0; } .geo-politik .geo-hero { padding-left: 0; } }
+/* Schmale Ansicht: bis hierhin reicht der Geomorph, rechts davon wird der Entwurfstext abgedeckt */
+.geo-politik { --geo-mobil-kante: 45%; }
+/* Lage der eingebackenen Entwurfsnavigation und des Entwurfstitels in dieser Vorlage */
+.geo-politik { --geo-leiste-start: 40cqi; --geo-schleier-oben: 6.5cqi; }

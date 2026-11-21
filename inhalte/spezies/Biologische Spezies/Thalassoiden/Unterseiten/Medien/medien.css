@@ -1,0 +1,53 @@
+/* Thalassoiden – Medienseite
+   Gemeinsames Design: ../../thalassoiden-basis.css, Player/Assets: _gemeinsam/medien-player.css
+   Hier: Galerie und Medienbereiche im Syntheten-Stil. */
+
+.thl-medien .thl-dossier .thl-hero img { object-position: 50% 40%; }
+
+.thl-block h2 .thl-code { margin-inline-end: .5rem; }
+
+/* Bildgalerie */
+.thl-gallery-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
+    gap: .8rem;
+    align-items: start;
+}
+.thl-gallery-feature { margin: 0; min-width: 0; }
+.thl-medien :is(.thl-gallery, .thl-media-panel, dialog) :is(button, select) {
+    border: 1px solid var(--thl-line-hi);
+    background: linear-gradient(180deg, #11394c, #082231);
+    color: var(--thl-text);
+    font: 600 .8rem/1.2 var(--thl-mono);
+}
+.thl-medien :is(.thl-gallery, .thl-media-panel, dialog) button { cursor: pointer; }
+.thl-medien :is(.thl-gallery, .thl-media-panel, dialog) :is(button, select):hover { border-color: var(--thl-cyan); color: var(--thl-cyan-hot); }
+.thl-gallery .feature-open, .thl-thumbnails button { display: block; width: 100%; padding: 0; overflow: hidden; }
+.thl-gallery .feature-open { cursor: zoom-in; }
+.thl-gallery .feature-open img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: contain;
+    background: #020b14;
+}
+.thl-gallery-controls { display: flex; align-items: center; justify-content: space-between; gap: .5rem; padding-top: .45rem; }
+.thl-gallery-controls output { min-width: 0; color: var(--thl-muted); font-size: .85rem; text-align: center; overflow-wrap: anywhere; }
+.thl-medien .control { padding: .3rem .65rem; }
+.thl-thumbnails { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .45rem; }
+.thl-thumbnails img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; filter: saturate(.75) brightness(.85); transition: filter .2s; }
+.thl-thumbnails button:hover img, .thl-thumbnails button[aria-pressed="true"] img { filter: none; }
+.thl-medien .thl-thumbnails button[aria-pressed="true"] { border-color: var(--thl-cyan); box-shadow: 0 0 .6rem var(--thl-cyan-glow); }
+.thl-gallery label { display: grid; gap: .3rem; margin-top: .6rem; color: var(--thl-muted); font: 600 .72rem/1.3 var(--thl-mono); letter-spacing: .1em; text-transform: uppercase; }
+.thl-gallery select { width: 100%; padding: .4rem; text-transform: none; letter-spacing: 0; }
+
+/* Video, Audio, 3D, Assets */
+.thl-media-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .7rem; align-items: start; }
+.thl-media-panel { display: grid; gap: .6rem; }
+.thl-medien .media-player-card { padding: .7rem .8rem; --thl-cut: 10px; }
+.thl-medien .media-player-card h3 { margin-bottom: .4rem; color: #f0e9dc; font-size: .95rem; }
+.thl-medien .media-status, .thl-medien .asset-catalog [role="status"] { color: var(--thl-muted); font-style: italic; font-size: .88rem; }
+
+@container (max-width: 760px) {
+    .thl-gallery-grid, .thl-media-grid { grid-template-columns: minmax(0, 1fr); }
+    .thl-thumbnails { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}

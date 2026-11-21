@@ -1,0 +1,644 @@
+/* Stellaroiden – gemeinsames Basisdesign „Kosmisches Warnsignal“
+   Wird von der Hauptseite und allen Unterseiten geladen. Seitenspezifisches steht in der jeweiligen Seiten-CSS. */
+
+.stellaroiden {
+    --ste-bg: #03040a;
+    --ste-deep-1: #1a1a2c;
+    --ste-deep-2: #11111d;
+    --ste-deep-3: #0a0a12;
+    --ste-line: #2e2c42;
+    --ste-line-hi: #6a6488;
+    --ste-text: #e4e2ee;
+    --ste-muted: #9c98b4;
+    --ste-akzent: #7dffc8;
+    --ste-akzent-hell: #d4fff0;
+    --ste-akzent-glow: #7dffc84d;
+    --ste-akzent2: #b48cff;
+    --ste-zier: #d9a85c;
+    --ste-hell: #f2eee4;
+    --ste-btn-1: #1d1c2e;
+    --ste-btn-2: #0e0e18;
+    --ste-cut: 0px;
+    --ste-mono: ui-monospace, "Cascadia Mono", Consolas, "Courier New", monospace;
+    --aporia-page-tint: #6b6290;
+    --aporia-page-glass-light: #1c1b2e;
+    --aporia-page-glass-dark: #0a0a12;
+    margin: 0;
+    background: var(--ste-bg);
+    color: var(--ste-text);
+    font: 1rem/1.6 "Segoe UI", system-ui, sans-serif;
+}
+
+.ste-frame {
+    display: flex;
+    min-height: calc(100dvh - var(--aporia-topbar-height, 78px));
+    background:
+        radial-gradient(ellipse at 70% -10%, #3a2a1430, transparent 55%),
+        repeating-linear-gradient(0deg, #ffffff04 0 1px, transparent 1px 46px),
+        repeating-linear-gradient(90deg, #ffffff04 0 1px, transparent 1px 46px),
+        linear-gradient(180deg, #11151a, var(--ste-bg) 70%);
+}
+.stellaroiden .aporia-sidebar::after {
+    background: linear-gradient(180deg, transparent, #ffb5470d 70%, transparent);
+}
+
+.ste-dossier {
+    flex: 1;
+    min-width: 0;
+    padding: clamp(.6rem, 1.3vw, 1.4rem);
+    container-type: inline-size;
+}
+.ste-dossier :is(.ste-block, .ste-card-body, .ste-topic) :is(p, li, dd, dt) { hyphens: auto; }
+.ste-dossier :is(h1, h2, h3, h4, p, dl, dd, ul, ol) { margin: 0; }
+.ste-dossier :is(h1, h2, h3, a, p, li, dd) { overflow-wrap: break-word; }
+.ste-dossier [id] { scroll-margin-top: calc(var(--aporia-topbar-height, 78px) + .75rem); }
+.ste-dossier a { color: var(--ste-cyan); }
+.ste-dossier a:focus-visible, .ste-dossier button:focus-visible, .ste-dossier summary:focus-visible {
+    outline: 2px solid var(--ste-cyan-hot);
+    outline-offset: 2px;
+}
+.ste-dossier img { display: block; max-width: 100%; height: auto; }
+
+/* ---------- Bausteine ---------- */
+.ste-code {
+    display: inline-block;
+    margin-inline-end: .5rem;
+    color: var(--ste-cyan);
+    font: 600 .72rem/1 var(--ste-mono);
+    letter-spacing: .08em;
+}
+.ste-kicker {
+    display: flex;
+    align-items: center;
+    gap: .45rem;
+    color: var(--ste-muted);
+    font: 600 .7rem/1.3 var(--ste-mono);
+    letter-spacing: .16em;
+    text-transform: uppercase;
+}
+.ste-glow {
+    flex: none;
+    display: inline-block;
+    width: .5rem;
+    height: .5rem;
+    border-radius: 50%;
+    background: radial-gradient(circle at 35% 35%, #fff3d0, var(--ste-cyan) 45%, #a35c00);
+    box-shadow: 0 0 .35rem var(--ste-cyan), 0 0 .9rem var(--ste-cyan-glow);
+    animation: ste-pulse 3.2s ease-in-out infinite;
+}
+@keyframes ste-pulse { 50% { opacity: .55; box-shadow: 0 0 .2rem var(--ste-cyan); } }
+.ste-placeholder { color: var(--ste-muted); font-style: italic; }
+
+/* Metallpanel mit gefasten Ecken, Nieten und Kantenlicht */
+.ste-panel {
+    position: relative;
+    box-sizing: border-box;
+    min-width: 0;
+    clip-path: polygon(var(--ste-cut) 0, 100% 0, 100% calc(100% - var(--ste-cut)), calc(100% - var(--ste-cut)) 100%, 0 100%, 0 var(--ste-cut));
+    background:
+        radial-gradient(circle at 9px calc(100% - 9px), #8c97a2 0 1.5px, #0000 2.5px),
+        radial-gradient(circle at calc(100% - 9px) 9px, #8c97a2 0 1.5px, #0000 2.5px),
+        repeating-linear-gradient(90deg, #ffffff06 0 1px, #0000 1px 3px),
+        linear-gradient(160deg, var(--ste-deep-1), var(--ste-deep-2) 45%, var(--ste-deep-3));
+    box-shadow: inset 0 1px 0 #ffffff1f, inset 0 0 0 1px #ffffff10, inset 0 -2px 0 #00000080;
+}
+.ste-panel::before {
+    content: "";
+    position: absolute;
+    inset: 0 auto auto var(--ste-cut);
+    width: 3.2rem;
+    height: 2px;
+    background: linear-gradient(90deg, var(--ste-cyan), transparent);
+    box-shadow: 0 0 .6rem var(--ste-cyan-glow);
+}
+
+/* ---------- Übersicht: Raster ---------- */
+.ste-layout {
+    display: grid;
+    gap: .8rem;
+    align-items: start;
+}
+.ste-layout--index {
+    grid-template-columns: clamp(8.4rem, 11cqi, 11rem) minmax(0, 1fr) clamp(9rem, 11cqi, 11.5rem);
+    grid-template-areas:
+        "chapters hero rail"
+        "chapters core rail"
+        "topics topics topics";
+}
+.ste-chapters { grid-area: chapters; position: sticky; top: calc(var(--aporia-topbar-height, 78px) + .8rem); }
+.ste-rail { grid-area: rail; position: sticky; top: calc(var(--aporia-topbar-height, 78px) + .8rem); }
+.ste-hero { grid-area: hero; }
+.ste-core { grid-area: core; }
+.ste-topics-wrap { grid-area: topics; }
+
+/* Navigationsleisten */
+.ste-chapters, .ste-rail, .ste-jumps { display: grid; gap: .2rem; padding: .85rem .7rem .7rem; }
+.ste-rail nav { display: grid; gap: .15rem; margin-top: .35rem; }
+.ste-chapters a, .ste-rail a, .ste-jumps a, .ste-rail-pending {
+    position: relative;
+    display: block;
+    padding: .32rem .45rem .32rem .6rem;
+    border-left: 2px solid transparent;
+    color: var(--ste-text);
+    font-size: .86rem;
+    line-height: 1.35;
+    text-decoration: none;
+    transition: background .2s, border-color .2s, color .2s;
+}
+.ste-chapters a:hover, .ste-rail a:hover, .ste-jumps a:hover,
+.ste-chapters a.is-active, .ste-jumps a.is-active, .ste-rail a[aria-current] {
+    border-left-color: var(--ste-cyan);
+    background: linear-gradient(90deg, #ffb5472b, transparent 85%);
+    color: #fff;
+    text-shadow: 0 0 .6rem #ffb54740;
+}
+.ste-rail a[aria-current] .ste-code, .ste-jumps a.is-active .ste-code { color: var(--ste-cyan-hot); }
+.ste-rail-pending { color: var(--ste-muted); cursor: not-allowed; }
+.ste-rail-pending em {
+    display: block;
+    color: #c8873a;
+    font: normal .66rem/1.3 var(--ste-mono);
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+/* Hero */
+.ste-hero {
+    position: relative;
+    isolation: isolate;
+    display: grid;
+    align-items: end;
+    min-height: clamp(19rem, 30cqi, 30rem);
+    overflow: hidden;
+    --ste-cut: 22px;
+}
+.ste-dossier .ste-hero img {
+    position: absolute;
+    inset: 0 0 0 auto;
+    z-index: -2;
+    width: 78%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 60% 30%;
+    mask-image: linear-gradient(90deg, transparent, #000 38%);
+    filter: saturate(.85) contrast(1.05);
+}
+.ste-hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background:
+        repeating-linear-gradient(0deg, #0000 0 3px, #00000026 3px 4px),
+        linear-gradient(90deg, #0b0e12f2 0, #0b0e12b8 36%, transparent 70%);
+    pointer-events: none;
+}
+.ste-hero > div { padding: clamp(1rem, 2.6cqi, 2.2rem); }
+.ste-hero h1 {
+    margin: .4rem 0 .55rem;
+    color: #f2ede4;
+    font: 700 clamp(2.2rem, 5.2cqi, 4.6rem)/1 "Segoe UI", system-ui, sans-serif;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    text-shadow: 0 2px 16px #000, 0 0 2rem #ffb5471f;
+}
+.ste-subtitle {
+    width: fit-content;
+    padding-top: .45rem;
+    border-top: 2px solid var(--ste-cyan);
+    color: var(--ste-pearl);
+    font: 500 clamp(.95rem, 1.5cqi, 1.25rem)/1.35 var(--ste-mono);
+    letter-spacing: .06em;
+}
+.ste-crumbs { margin-top: .9rem; color: var(--ste-muted); font-size: .8rem; }
+.ste-crumbs a { color: var(--ste-muted); }
+.ste-crumbs a:hover { color: var(--ste-cyan); }
+
+
+/* Kernpanels */
+.ste-core {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: .7rem;
+}
+.ste-block { padding: clamp(.75rem, 1.3cqi, 1.1rem); }
+.ste-wide { grid-column: span 2; }
+.ste-block h2, .ste-card h2, .ste-section-title {
+    color: #f0e9dc;
+    font: 600 1.02rem/1.3 "Segoe UI", system-ui, sans-serif;
+    letter-spacing: .04em;
+}
+.ste-block h2 {
+    margin-bottom: .65rem;
+    padding-bottom: .45rem;
+    border-bottom: 1px solid var(--ste-line);
+}
+.ste-block p, .ste-block li, .ste-specs { font-size: .9rem; }
+.ste-block p + p { margin-top: .55rem; }
+.ste-specs > div {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+    gap: .6rem;
+    padding-block: .3rem;
+    border-bottom: 1px solid #ffffff12;
+}
+.ste-specs dt { color: var(--ste-muted); font-size: .82rem; }
+.ste-specs dd { color: var(--ste-text); }
+.ste-specs dd.ste-open { color: #c8873a; font-style: italic; }
+.ste-traits, .ste-models { list-style: none; padding: 0; display: grid; gap: .3rem; }
+.ste-traits li {
+    position: relative;
+    padding: .25rem 0 .25rem 1.1rem;
+    border-bottom: 1px solid #ffffff10;
+}
+.ste-traits li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: .72rem;
+    width: .42rem;
+    height: .42rem;
+    background: var(--ste-cyan);
+    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+    box-shadow: 0 0 .4rem var(--ste-cyan);
+}
+.ste-gen1 img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; margin-bottom: .55rem; clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px); }
+.ste-caption { color: var(--ste-muted); font-size: .78rem; }
+.ste-models { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: .35rem; }
+.ste-models li {
+    padding: .3rem .45rem;
+    border: 1px solid var(--ste-line);
+    background: #0b0e12a0;
+    font-size: .82rem;
+}
+.ste-models .ste-code { display: block; margin-bottom: .1rem; }
+
+/* Warnstreifen als Trenner */
+.ste-section-title {
+    display: flex;
+    align-items: center;
+    gap: .55rem;
+    margin: .6rem 0 .7rem;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: .18em;
+}
+.ste-section-title::after {
+    content: "";
+    flex: 1;
+    height: .5rem;
+    background: repeating-linear-gradient(-45deg, #ffb54755 0 8px, #0000 8px 16px);
+    opacity: .7;
+}
+
+/* Themenkacheln */
+.ste-topics {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: .7rem;
+}
+.ste-topic {
+    display: grid;
+    align-content: start;
+    gap: .3rem;
+    padding: .5rem .5rem .8rem;
+    color: var(--ste-text);
+    text-decoration: none;
+    transition: transform .2s, filter .2s;
+}
+.ste-dossier .ste-topic { color: var(--ste-text); }
+.ste-topic img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    margin-bottom: .35rem;
+    filter: saturate(.75) brightness(.85);
+    transition: filter .25s;
+    clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+}
+.ste-topic h3 { padding-inline: .2rem; color: #f2ede4; font-size: 1.02rem; font-weight: 600; }
+.ste-topic .ste-code { padding-inline: .2rem; }
+.ste-topic p { padding-inline: .2rem; color: var(--ste-muted); font-size: .78rem; line-height: 1.4; }
+.ste-topic:hover, .ste-topic:focus-visible { transform: translateY(-2px); filter: drop-shadow(0 0 .7rem #ffb54733); }
+.ste-topic:hover img, .ste-topic:focus-visible img { filter: saturate(1) brightness(1); }
+
+/* ---------- Hauptreiter-Seiten ---------- */
+.ste-layout--reiter {
+    grid-template-columns: clamp(10rem, 15cqi, 14rem) minmax(0, 1fr) clamp(9rem, 11cqi, 11.5rem);
+    grid-template-areas:
+        "hero hero rail"
+        "jumps content rail";
+}
+.ste-jumps { grid-area: jumps; position: sticky; top: calc(var(--aporia-topbar-height, 78px) + .8rem); max-height: calc(100dvh - var(--aporia-topbar-height, 78px) - 2rem); overflow-y: auto; scrollbar-width: thin; scrollbar-color: #ffb54766 transparent; }
+.ste-jumps a { font-size: .8rem; }
+.ste-jumps .ste-code { margin-inline-end: .35rem; }
+.ste-content { grid-area: content; display: grid; gap: .6rem; min-width: 0; }
+.ste-hero--reiter { min-height: clamp(13rem, 20cqi, 18rem); }
+.ste-hero--reiter h1 { font-size: clamp(2rem, 4.4cqi, 3.6rem); }
+
+.ste-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: .5rem;
+    padding: .2rem 0;
+}
+.ste-count {
+    display: inline-flex;
+    align-items: center;
+    gap: .45rem;
+    margin-inline-end: auto;
+    color: var(--ste-muted);
+    font: 600 .72rem/1 var(--ste-mono);
+    letter-spacing: .12em;
+    text-transform: uppercase;
+}
+.ste-toolbar button {
+    padding: .38rem .8rem;
+    border: 1px solid var(--ste-line-hi);
+    background: linear-gradient(180deg, #2b323a, #171b20);
+    color: var(--ste-text);
+    font: 600 .74rem/1 var(--ste-mono);
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    cursor: pointer;
+    clip-path: polygon(6px 0, 100% 0, 100% calc(100% - 6px), calc(100% - 6px) 100%, 0 100%, 0 6px);
+    transition: border-color .2s, color .2s, box-shadow .2s;
+}
+.ste-toolbar button:hover { border-color: var(--ste-cyan); color: var(--ste-cyan-hot); box-shadow: inset 0 0 .8rem #ffb5472b; }
+
+.ste-card { --ste-cut: 12px; }
+.ste-card summary {
+    display: flex;
+    align-items: baseline;
+    gap: .2rem;
+    padding: .8rem 1rem;
+    cursor: pointer;
+    list-style: none;
+}
+.ste-card summary::-webkit-details-marker { display: none; }
+.ste-card summary h2 { flex: 1; }
+.ste-chevron {
+    flex: none;
+    align-self: center;
+    width: .55rem;
+    height: .55rem;
+    border-right: 2px solid var(--ste-cyan);
+    border-bottom: 2px solid var(--ste-cyan);
+    transform: rotate(-45deg);
+    transition: transform .25s;
+}
+.ste-card[open] .ste-chevron { transform: rotate(45deg); }
+.ste-card summary:hover h2 { color: var(--ste-cyan-hot); }
+.ste-card-body {
+    display: grid;
+    gap: .55rem;
+    margin: 0 1rem 1rem;
+    padding-top: .7rem;
+    border-top: 1px solid var(--ste-line);
+    font-size: .92rem;
+    max-width: 75ch;
+}
+.ste-card-body h4 {
+    margin-top: .3rem;
+    color: var(--ste-cyan);
+    font: 600 .78rem/1.3 var(--ste-mono);
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+.ste-card-body :is(ul, ol) { display: grid; gap: .2rem; padding-left: 1.2rem; }
+.ste-card-body li::marker { color: var(--ste-cyan); }
+.ste-card:target, .ste-card:has(summary:focus-visible) { box-shadow: inset 0 0 0 1px #ffb54799, inset 0 0 1.2rem #ffb5471a; }
+.ste-card-static { padding: 1rem; }
+
+.ste-pager {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: .6rem;
+    margin-top: .4rem;
+}
+.ste-pager a {
+    padding: .5rem .9rem;
+    border: 1px solid var(--ste-line);
+    background: #0f1318;
+    color: var(--ste-text);
+    font-size: .86rem;
+    text-decoration: none;
+    clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+}
+.ste-pager a:hover { border-color: var(--ste-cyan); color: var(--ste-cyan-hot); }
+
+/* ---------- Responsiv (Container-Queries wie Architektoiden) ---------- */
+@container (max-width: 1100px) {
+    .ste-topics { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .ste-core { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@container (max-width: 560px) {
+    .ste-core { grid-template-columns: minmax(0, 1fr); }
+    .ste-wide { grid-column: auto; }
+}
+@container (max-width: 980px) {
+    .ste-layout--index {
+        grid-template-columns: minmax(0, 1fr) clamp(9rem, 22cqi, 11rem);
+        grid-template-areas: "hero rail" "chapters chapters" "core core" "topics topics";
+    }
+    .ste-layout--reiter {
+        grid-template-columns: minmax(0, 1fr) clamp(9rem, 22cqi, 11rem);
+        grid-template-areas: "hero rail" "jumps jumps" "content content";
+    }
+    .ste-chapters, .ste-jumps { position: static; max-height: none; display: flex; flex-wrap: wrap; align-items: center; gap: .25rem; }
+    .ste-chapters > .ste-kicker, .ste-jumps > .ste-kicker { flex-basis: 100%; }
+    .ste-chapters a, .ste-jumps a { border-left: 0; border-bottom: 2px solid transparent; }
+    .ste-chapters a.is-active, .ste-jumps a.is-active { border-bottom-color: var(--ste-cyan); }
+}
+@container (max-width: 700px) {
+    .ste-layout--index, .ste-layout--reiter { grid-template-columns: minmax(0, 1fr); }
+    .ste-layout--index { grid-template-areas: "rail" "hero" "chapters" "core" "topics"; }
+    .ste-layout--reiter { grid-template-areas: "rail" "hero" "jumps" "content"; }
+    .ste-rail { position: static; }
+    .ste-rail > .ste-kicker { display: none; }
+    .ste-rail nav { display: flex; flex-wrap: wrap; justify-content: center; margin: 0; }
+    .ste-rail a, .ste-rail-pending { border-left: 0; border-bottom: 2px solid transparent; }
+    .ste-rail a[aria-current] { border-bottom-color: var(--ste-cyan); }
+    .ste-rail-pending em { display: inline; margin-left: .3rem; }
+    .ste-topics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .ste-dossier .ste-hero img { width: 100%; mask-image: linear-gradient(90deg, #0006, #000 60%); }
+    .ste-hero::after { background: repeating-linear-gradient(0deg, #0000 0 3px, #00000026 3px 4px), linear-gradient(0deg, #0b0e12f2, #0b0e1299 55%, #0b0e1240); }
+    .ste-hero h1 { letter-spacing: .08em; }
+    .ste-jumps { display: none; }
+}
+@container (max-width: 440px) {
+    .ste-topics, .ste-models { grid-template-columns: minmax(0, 1fr); }
+    .ste-specs > div { grid-template-columns: minmax(0, 1fr); gap: .05rem; }
+}
+@media (max-width: 760px) {
+    .ste-frame { flex-direction: column; }
+    .ste-frame > #aporia-sidebar-host { flex: 0 0 auto; width: 100%; }
+    .ste-frame .aporia-sidebar { position: relative; top: auto; max-height: 42dvh; }
+    .ste-frame .aporia-sidebar::after { display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .ste-glow { animation: none; }
+    .ste-topic, .ste-topic img, .ste-chevron { transition: none; }
+}
+
+
+
+/* =====================================================================
+   Stil der Stellaroiden „Kosmisches Warnsignal“
+   Sternenfeld mit Nebelschleiern, Mineralkruste mit Erzkanten,
+   mintgrüne Signallichter als Lauflicht.
+   ===================================================================== */
+
+.ste-frame {
+    background:
+        radial-gradient(ellipse 55% 40% at 80% 5%, #6b3fb022, transparent 70%),
+        radial-gradient(ellipse 45% 35% at 10% 90%, #2f5fa018, transparent 70%),
+        var(--ste-bg);
+}
+.stellaroiden .aporia-sidebar::after { background: linear-gradient(180deg, transparent, #7dffc80c 70%, transparent); }
+.ste-dossier { position: relative; isolation: isolate; overflow-x: clip; }
+
+/* Sternenfeld */
+.ste-ambient {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background-image:
+        radial-gradient(circle, #ffffffd9 0 .8px, transparent 1.3px),
+        radial-gradient(circle, #d9c8ffaa 0 1px, transparent 1.5px),
+        radial-gradient(circle, #ffffff80 0 .6px, transparent 1px),
+        radial-gradient(circle, #7dffc8aa 0 1.2px, transparent 1.8px);
+    background-size: 97px 113px, 173px 191px, 61px 67px, 420px 460px;
+    background-position: 0 0, 40px 70px, 20px 30px, 120px 200px;
+    animation: ste-funkeln 6s ease-in-out infinite alternate;
+}
+@keyframes ste-funkeln { to { opacity: .55; } }
+
+/* Mineralkruste mit Erzkante */
+.ste-panel, .ste-toolbar button, .ste-pager a, .ste-topic img, .ste-gen1 img { clip-path: none; }
+.ste-panel {
+    border-radius: .7rem 1.1rem .5rem 1rem;
+    background:
+        radial-gradient(ellipse 60% 40% at 15% 0%, #b48cff12, transparent 60%),
+        radial-gradient(circle at 85% 110%, #d9a85c0e, transparent 45%),
+        linear-gradient(155deg, #1a1a2cf2, #11111df5 55%, #09090ff7);
+    box-shadow:
+        inset 0 0 0 1px #d9a85c26,
+        inset 0 1px 0 #ffffff14,
+        inset 0 -1px 0 #b48cff1f,
+        0 .8rem 1.8rem #000000c0;
+}
+.ste-panel::before {
+    inset: .45rem auto auto 1rem;
+    width: 4.5rem;
+    height: 2px;
+    background: repeating-linear-gradient(90deg, var(--ste-akzent) 0 6px, transparent 6px 11px);
+    box-shadow: 0 0 .6rem var(--ste-akzent-glow);
+    animation: ste-lauf 2.4s steps(4) infinite;
+}
+@keyframes ste-lauf { to { background-position: 44px 0; } }
+
+/* Signallicht */
+.ste-glow {
+    width: .5rem;
+    height: .5rem;
+    background: radial-gradient(circle at 40% 40%, #ffffff, var(--ste-akzent) 45%, #157a5c 90%);
+    box-shadow: 0 0 .45rem var(--ste-akzent), 0 0 1.2rem var(--ste-akzent-glow);
+    animation: ste-signal 3s steps(1) infinite;
+}
+@keyframes ste-signal { 0%, 60%, 80% { opacity: 1; } 70%, 90% { opacity: .25; } }
+
+.ste-code { color: var(--ste-akzent); }
+.ste-kicker { color: var(--ste-muted); }
+.ste-dossier a { color: var(--ste-akzent); }
+
+/* Hero */
+.ste-hero { border-radius: 1rem 1.6rem .8rem 1.4rem; }
+.ste-dossier .ste-hero img { filter: saturate(1.1) contrast(1.05); mask-image: linear-gradient(90deg, transparent, #000 32%); }
+.ste-hero::after {
+    background:
+        radial-gradient(ellipse 30% 40% at 85% 20%, #b48cff1f, transparent 70%),
+        linear-gradient(90deg, #03040af2 0, #03040ab3 38%, transparent 74%);
+    animation: none;
+}
+.ste-hero h1 {
+    color: var(--ste-hell);
+    font-weight: 300;
+    letter-spacing: .24em;
+    text-shadow: 0 0 1.4rem #b48cff55, 0 2px 12px #000;
+}
+.ste-subtitle {
+    border-top: 1px solid var(--ste-zier);
+    color: var(--ste-akzent-hell);
+    font: 400 clamp(.85rem, 1.3cqi, 1.05rem)/1.4 var(--ste-mono);
+    letter-spacing: .16em;
+    text-transform: uppercase;
+}
+
+/* Navigation */
+.ste-dossier :is(.ste-chapters, .ste-rail, .ste-jumps) a { color: var(--ste-text); }
+.ste-chapters a:hover, .ste-rail a:hover, .ste-jumps a:hover,
+.ste-chapters a.is-active, .ste-jumps a.is-active, .ste-rail a[aria-current] {
+    border-left-color: var(--ste-akzent);
+    border-radius: 0 .5rem .5rem 0;
+    background: linear-gradient(90deg, #7dffc81f, transparent 85%);
+    color: #fff;
+    text-shadow: 0 0 .7rem #7dffc855;
+}
+.ste-dossier .ste-crumbs a { color: var(--ste-muted); }
+
+/* Inhalte */
+.ste-block h2, .ste-card h2, .ste-section-title { color: var(--ste-hell); font-weight: 400; letter-spacing: .06em; }
+.ste-block h2 { border-bottom-color: #2e2c42; }
+.ste-card { border-radius: .6rem 1rem .5rem .9rem; }
+.ste-card-body { border-top-color: #2e2c42; }
+.ste-card-body h4 { color: var(--ste-zier); }
+.ste-card-body li::marker, .ste-block li::marker { color: var(--ste-akzent); }
+.ste-chevron { border-color: var(--ste-akzent); }
+.ste-card:target, .ste-card:has(summary:focus-visible) { box-shadow: inset 0 0 0 1px #7dffc899, inset 0 0 1.4rem #7dffc81a; }
+.ste-block p + p { margin-top: .55rem; }
+.ste-block :is(ul, ol) { display: grid; gap: .2rem; margin: .4rem 0; padding-left: 1.15rem; font-size: .9rem; }
+
+/* Trenner: Signalfolge */
+.ste-section-title::after {
+    height: .5rem;
+    background:
+        radial-gradient(circle, var(--ste-akzent) 0 2.2px, transparent 2.8px) 0 50% / 18px .5rem repeat-x;
+    mask-image: linear-gradient(90deg, #000 0 30%, #0008 30% 33%, #000 33% 55%, #0006 55% 60%, #000 60% 75%, transparent);
+    opacity: .85;
+    animation: ste-folge 3s linear infinite;
+}
+@keyframes ste-folge { to { background-position: 72px 50%; } }
+
+/* Schaltflächen */
+.ste-toolbar button, .ste-pager a {
+    border: 1px solid var(--ste-line-hi);
+    border-radius: .4rem .8rem .4rem .8rem;
+    background: linear-gradient(180deg, var(--ste-btn-1), var(--ste-btn-2));
+}
+.ste-toolbar button:hover, .ste-pager a:hover {
+    border-color: var(--ste-akzent);
+    color: var(--ste-akzent-hell);
+    box-shadow: 0 0 1rem #7dffc833, inset 0 0 .6rem #7dffc81a;
+}
+
+/* Themenkacheln */
+.ste-topic img { border-radius: .5rem .9rem .5rem .9rem; filter: saturate(.9) brightness(.85); }
+.ste-topic:hover img, .ste-topic:focus-visible img { filter: none; }
+.ste-topic:hover, .ste-topic:focus-visible { filter: drop-shadow(0 0 1rem #b48cff40); }
+
+/* Quelle und Weiterlink */
+.ste-source { margin-bottom: .2rem; color: var(--ste-zier); font: 600 .68rem/1.3 var(--ste-mono); letter-spacing: .14em; text-transform: uppercase; }
+.ste-action {
+    display: inline-flex; gap: .4rem; margin-top: .75rem; padding: .3rem .85rem;
+    border: 1px solid var(--ste-line-hi); border-radius: .4rem .8rem; font-size: .84rem; text-decoration: none;
+}
+.ste-action:hover { border-color: var(--ste-akzent); box-shadow: 0 0 .8rem #7dffc833; }
+.ste-card-group { display: grid; gap: .6rem; }
+
+@media (prefers-reduced-motion: reduce) {
+    .ste-ambient, .ste-glow, .ste-panel::before, .ste-section-title::after { animation: none; }
+}

@@ -1,0 +1,130 @@
+/* Biomechnoiden – Übersicht (Hauptseite)
+   Gemeinsames Design: ../biomechnoiden-basis.css · hier nur das Raster und die Bausteine dieser Seite. */
+
+.bm-hauptseite .bm-hero { min-height: clamp(15rem, 28cqi, 22rem); }
+.bm-hauptseite .bm-hero-bild { width: 80% !important; }
+
+.bm-layout--index {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-areas:
+        "kokon ueber ueber daten"
+        "weg   weg   weg   werte"
+        "formen formen heimat heimat"
+        "warn  polit bedeut rail"
+        "themen themen themen themen";
+}
+.bm-kokon-feld { grid-area: kokon; }
+.bm-ueberblick { grid-area: ueber; }
+.bm-daten { grid-area: daten; }
+.bm-weg--index { grid-area: weg; }
+.bm-werte { grid-area: werte; }
+.bm-formen { grid-area: formen; }
+.bm-heimat { grid-area: heimat; }
+.bm-warnung { grid-area: warn; }
+.bm-politisch { grid-area: polit; }
+.bm-bedeutung { grid-area: bedeut; }
+.bm-rail--index { grid-area: rail; position: static; max-height: none; }
+.bm-themen { grid-area: themen; }
+.bm-layout--index > .bm-panel { align-self: stretch; }
+
+/* Blickfang: Kokonrahmen mit atmendem Glühen */
+.bm-kokon-feld { display: grid; place-items: center; }
+.bm-kokon { position: relative; width: min(100%, 22rem); aspect-ratio: 1086 / 1448; }
+.bm-kokon-bild {
+    position: absolute;
+    z-index: 1;
+    left: 31%;
+    top: 16%;
+    width: 36% !important;
+    height: 60% !important;
+    max-width: none !important;
+    object-fit: cover;
+    object-position: 50% 30%;
+    border-radius: 45% 45% 30% 30% / 20% 20% 12% 12%;
+    mask-image: radial-gradient(ellipse 60% 62% at 50% 48%, #000 62%, transparent 100%);
+}
+.bm-kokon-rahmen {
+    position: absolute;
+    inset: 0;
+    width: 100% !important;
+    height: 100% !important;
+    filter: drop-shadow(0 0 .8rem #e3263f55);
+    animation: bm-kokon 6s ease-in-out infinite;
+}
+@keyframes bm-kokon {
+    0%, 100% { filter: drop-shadow(0 0 .6rem #e3263f44) brightness(.95); }
+    50% { filter: drop-shadow(0 0 1.8rem #ff2d4a99) brightness(1.12); }
+}
+
+.bm-profil { gap: .45rem !important; }
+
+/* Spezies-Daten mit Genetik-Symbol */
+.bm-daten-inhalt { display: grid; grid-template-columns: 2.6rem minmax(0, 1fr); gap: .8rem; align-items: start; }
+.bm-helix { width: 2.6rem; height: 2.6rem; object-fit: contain; }
+.bm-daten .bm-facts > div { grid-template-columns: minmax(0, 1fr); gap: .05rem; }
+
+/* Abstammungslinien */
+.bm-formen-raster { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.bm-formen .bm-kachel span { color: var(--bm-bone); font: 500 .74rem/1.3 var(--bm-serif); letter-spacing: .04em; text-align: center; }
+
+/* Heimatwelt-Kachel */
+.bm-heimat { position: relative; display: grid; min-height: 20rem; overflow: hidden; padding: 0; }
+.bm-heimat-bild { position: absolute; inset: 0; width: 100% !important; height: 100% !important; object-fit: cover; object-position: 50% 45%; opacity: .8; }
+.bm-heimat::before { z-index: 2; }
+.bm-heimat-text { position: relative; z-index: 1; align-self: end; padding: clamp(1rem, 2cqi, 1.5rem); background: linear-gradient(0deg, #070406f2 30%, #07040699 75%, transparent); }
+.bm-heimat-text p { font-size: .9rem; }
+.bm-heimat-text p + p { margin-top: .45rem; }
+.bm-heimat .bm-kristall { right: .8rem; top: .8rem; bottom: auto; z-index: 1; }
+
+/* Historische Besonderheit als Warnpanel */
+.bm-warnung { border-color: #7a1426; background: radial-gradient(ellipse at 0 0, #e3263f2a, transparent 55%), linear-gradient(165deg, #1e0a10, #0a0507); }
+.bm-warnung p + p { margin-top: .5rem; }
+
+/* Hauptreiter-Kacheln */
+.bm-themen-raster { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: .8rem; }
+.bm-thema {
+    display: grid;
+    align-content: start;
+    gap: .45rem;
+    padding: .45rem .45rem .8rem;
+    color: var(--bm-text) !important;
+    text-decoration: none;
+    transition: transform .2s, border-color .2s;
+}
+.bm-thema > img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; border-radius: 12px 3px 12px 3px; filter: saturate(.75) brightness(.8); transition: filter .25s; }
+.bm-thema-kopf { display: flex; align-items: center; gap: .4rem; padding-inline: .25rem; }
+.bm-thema-kopf img { width: 1.6rem; height: 1.6rem; object-fit: contain; }
+.bm-thema-kopf .bm-nr { margin: 0; }
+.bm-thema-kopf strong { color: var(--bm-bone); font: 600 .98rem/1.2 var(--bm-serif); letter-spacing: .05em; }
+.bm-thema-text { padding-inline: .25rem; color: var(--bm-muted); font-size: .78rem; line-height: 1.4; }
+.bm-thema:hover, .bm-thema:focus-visible { transform: translateY(-3px); border-color: var(--bm-rot); }
+.bm-thema:hover > img, .bm-thema:focus-visible > img { filter: none; }
+
+@container (max-width: 1180px) {
+    .bm-layout--index {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-areas:
+            "kokon ueber"
+            "daten werte"
+            "weg weg"
+            "formen formen"
+            "heimat heimat"
+            "warn polit"
+            "bedeut rail"
+            "themen themen";
+    }
+    .bm-themen-raster { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@container (max-width: 760px) {
+    .bm-layout--index {
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-areas: "kokon" "ueber" "daten" "werte" "weg" "formen" "heimat" "warn" "polit" "bedeut" "rail" "themen";
+    }
+    .bm-kokon { width: min(100%, 17rem); }
+    .bm-formen-raster { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .bm-themen-raster { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .bm-heimat { min-height: 22rem; }
+}
+@container (max-width: 440px) {
+    .bm-themen-raster { grid-template-columns: minmax(0, 1fr); }
+}

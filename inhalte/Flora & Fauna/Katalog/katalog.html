@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071714">
+  <meta name="description" content="Artenkatalog des Aporia-Weltenarchivs: Pflanzen, Tiere und Pilze, filterbar nach Planet, Gruppe, Lebensraum und Gefährdung.">
+  <title>Artenkatalog · Flora &amp; Fauna | Aporia Weltenarchiv</title>
+  <link rel="stylesheet" href="../../../Men%C3%BCs/TopBar/Top_bar.css">
+  <link rel="stylesheet" href="../../../Men%C3%BCs/Side_bar/Side_bar.css">
+  <link rel="stylesheet" href="./katalog.css">
+  <script type="module" src="./katalog.js"></script>
+</head>
+<body class="flora-page arten-page" data-page="flora-fauna-katalog" data-section="inhalte">
+  <div data-aporia-topbar></div>
+  <div class="aporia-page-frame arten-frame">
+    <div data-aporia-sidebar data-sidebar-default-collapsed></div>
+    <main class="arten-main" id="inhalt">
+      <header class="arten-hero">
+        <img class="arten-hero-bild" src="../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/WaldFeen/hauptseite/orvaya_wasserfaelle_und_taeler.jpg" alt="" fetchpriority="high" decoding="async">
+        <div class="arten-hero-text">
+          <nav class="arten-pfad" aria-label="Archivpfad"><a data-route="home" href="#">Weltenarchiv</a><span aria-hidden="true">›</span><a data-route="inhalt-flora-und-fauna" href="../%C3%9Cbersichtsseite/index.html">Flora &amp; Fauna</a><span aria-hidden="true">›</span><span aria-current="page">Artenkatalog</span></nav>
+          <p class="arten-kicker">Bioarchiv · Arten</p>
+          <h1 id="arten-titel">Artenkatalog</h1>
+          <p id="arten-untertitel">Pflanzen, Tiere und Pilze aller erfassten Welten.</p>
+        </div>
+      </header>
+
+      <div class="arten-arbeitsflaeche">
+        <aside class="arten-panel arten-filter" aria-labelledby="arten-filter-titel">
+          <h2 id="arten-filter-titel">Filter</h2>
+          <nav class="arten-kategorien" id="arten-kategorien" aria-label="Kategorie"></nav>
+          <form id="arten-formular">
+            <label>Planet <select id="arten-planet"><option value="">Alle Planeten</option></select></label>
+            <label>Gruppe <select id="arten-gruppe"><option value="">Alle Gruppen</option></select></label>
+            <label>Lebensraum <select id="arten-lebensraum"><option value="">Alle Lebensräume</option></select></label>
+            <label>Gefährdung (IUCN) <select id="arten-gefaehrdung"><option value="">Alle</option></select></label>
+            <button type="reset">Filter zurücksetzen</button>
+          </form>
+          <p class="arten-hinweis">Tipp: Über den Planeten-Link im Dossier einer Welt öffnet sich der Katalog bereits gefiltert.</p>
+        </aside>
+
+        <section class="arten-panel arten-liste" aria-labelledby="arten-liste-titel">
+          <div class="arten-werkzeug">
+            <div>
+              <h2 id="arten-liste-titel">Alle Arten</h2>
+              <p id="arten-status" role="status">Katalog wird geladen …</p>
+            </div>
+            <label class="arten-suche">Suche <input type="search" id="arten-suche" placeholder="Name oder wissenschaftlicher Name"></label>
+          </div>
+          <div class="arten-aktiv" id="arten-aktiv" hidden></div>
+          <div class="arten-raster" id="arten-raster"></div>
+        </section>
+      </div>
+
+      <dialog class="arten-dialog" id="arten-dialog" aria-labelledby="arten-dialog-name">
+        <form method="dialog"><button class="arten-schliessen" aria-label="Schließen">✕</button></form>
+        <article class="arten-detail">
+          <figure class="arten-detail-bild"><img alt=""><figcaption></figcaption></figure>
+          <div class="arten-detail-text">
+            <p class="arten-kicker" id="arten-dialog-kategorie"></p>
+            <h2 id="arten-dialog-name"></h2>
+            <p class="arten-wiss" id="arten-dialog-wiss"></p>
+            <p id="arten-dialog-text"></p>
+            <dl class="arten-fakten" id="arten-dialog-fakten"></dl>
+            <p class="arten-quelle" id="arten-dialog-quelle"></p>
+          </div>
+        </article>
+      </dialog>
+      <footer class="arten-fuss"><span>APORIA · WELTENARCHIV</span><span>Texte: Wikipedia (CC BY-SA 4.0) · Taxon &amp; IUCN-Status: Wikidata</span></footer>
+    </main>
+  </div>
+</body>
+</html>

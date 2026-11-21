@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 550 200" width="550" height="200">
+<style>.bogen{animation:wachs 7s ease-in-out infinite}.w1{animation-delay:.6s}.w2{animation-delay:1.2s}
+.fenster{animation:licht 7s ease-in-out infinite}.h0{animation-delay:2.0s}.h1{animation-delay:2.4s}.h2{animation-delay:2.8s}.h3{animation-delay:3.2s}.h4{animation-delay:3.6s}.h5{animation-delay:4.0s}
+@keyframes wachs{0%{stroke-dashoffset:100}35%,85%{stroke-dashoffset:0}100%{stroke-dashoffset:100}}@keyframes licht{0%,20%{opacity:.15}40%,80%{opacity:1}100%{opacity:.15}}</style>
+<defs><filter id="a" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feFlood flood-color="#f0d5a1"/><feComposite in2="b" operator="in"/><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+<path d="M170 170 L380 170" stroke="#546879" stroke-width="2"/>
+<g fill="none" stroke="#e7d5ab" stroke-width="2.5" stroke-linecap="round">
+<path class="bogen w0" pathLength="100" stroke-dasharray="100" d="M190 170 L190 120 Q 190 80 230 80 Q 270 80 270 120 L270 170"/>
+<path class="bogen w1" pathLength="100" stroke-dasharray="100" d="M280 170 L280 110 Q 280 60 320 60 Q 360 60 360 110 L360 170"/>
+<path class="bogen w2" pathLength="100" stroke-dasharray="100" d="M230 80 Q 275 18 320 60"/></g>
+<g fill="#f0d5a1" filter="url(#a)"><rect class="fenster h0" x="216" y="124" width="8" height="12" rx="4"/><rect class="fenster h1" x="236" y="124" width="8" height="12" rx="4"/><rect class="fenster h2" x="306" y="114" width="8" height="12" rx="4"/><rect class="fenster h3" x="326" y="114" width="8" height="12" rx="4"/><rect class="fenster h4" x="316" y="144" width="8" height="12" rx="4"/><rect class="fenster h5" x="226" y="149" width="8" height="12" rx="4"/></g>
+</svg>

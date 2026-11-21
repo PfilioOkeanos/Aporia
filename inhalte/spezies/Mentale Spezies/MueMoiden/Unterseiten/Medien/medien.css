@@ -1,0 +1,53 @@
+/* Muemoiden – Medienseite
+   Gemeinsames Design: ../../muemoiden-basis.css, Player/Assets: _gemeinsam/medien-player.css
+   Hier: Galerie und Medienbereiche im Syntheten-Stil. */
+
+.mue-medien .mue-dossier .mue-hero img { object-position: 50% 40%; }
+
+.mue-block h2 .mue-code { margin-inline-end: .5rem; }
+
+/* Bildgalerie */
+.mue-gallery-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
+    gap: .8rem;
+    align-items: start;
+}
+.mue-gallery-feature { margin: 0; min-width: 0; }
+.mue-medien :is(.mue-gallery, .mue-media-panel, dialog) :is(button, select) {
+    border: 1px solid var(--mue-line-hi);
+    background: linear-gradient(180deg, var(--mue-btn-1), var(--mue-btn-2));
+    color: var(--mue-text);
+    font: 600 .8rem/1.2 var(--mue-mono);
+}
+.mue-medien :is(.mue-gallery, .mue-media-panel, dialog) button { cursor: pointer; }
+.mue-medien :is(.mue-gallery, .mue-media-panel, dialog) :is(button, select):hover { border-color: var(--mue-cyan); color: var(--mue-cyan-hot); }
+.mue-gallery .feature-open, .mue-thumbnails button { display: block; width: 100%; padding: 0; overflow: hidden; }
+.mue-gallery .feature-open { cursor: zoom-in; }
+.mue-gallery .feature-open img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: contain;
+    background: var(--mue-bg);
+}
+.mue-gallery-controls { display: flex; align-items: center; justify-content: space-between; gap: .5rem; padding-top: .45rem; }
+.mue-gallery-controls output { min-width: 0; color: var(--mue-muted); font-size: .85rem; text-align: center; overflow-wrap: anywhere; }
+.mue-medien .control { padding: .3rem .65rem; }
+.mue-thumbnails { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .45rem; }
+.mue-thumbnails img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; filter: saturate(.75) brightness(.85); transition: filter .2s; }
+.mue-thumbnails button:hover img, .mue-thumbnails button[aria-pressed="true"] img { filter: none; }
+.mue-medien .mue-thumbnails button[aria-pressed="true"] { border-color: var(--mue-cyan); box-shadow: 0 0 .6rem var(--mue-cyan-glow); }
+.mue-gallery label { display: grid; gap: .3rem; margin-top: .6rem; color: var(--mue-muted); font: 600 .72rem/1.3 var(--mue-mono); letter-spacing: .1em; text-transform: uppercase; }
+.mue-gallery select { width: 100%; padding: .4rem; text-transform: none; letter-spacing: 0; }
+
+/* Video, Audio, 3D, Assets */
+.mue-media-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .7rem; align-items: start; }
+.mue-media-panel { display: grid; gap: .6rem; }
+.mue-medien .media-player-card { padding: .7rem .8rem; --mue-cut: 10px; }
+.mue-medien .media-player-card h3 { margin-bottom: .4rem; color: #f0e9dc; font-size: .95rem; }
+.mue-medien .media-status, .mue-medien .asset-catalog [role="status"] { color: var(--mue-muted); font-style: italic; font-size: .88rem; }
+
+@container (max-width: 760px) {
+    .mue-gallery-grid, .mue-media-grid { grid-template-columns: minmax(0, 1fr); }
+    .mue-thumbnails { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}

@@ -1,0 +1,29 @@
+/* Bewusstseins- und neuronale Vernetzungsforschung – Forschungszweig
+   Gemeinsames Design: ../../_gemeinsam/zweig.css (Familie „hologramm“) · hier die eigene Gestaltung dieser Seite. */
+
+.fz-bewusstseins-und-neuronale-vernetzungsforschung {
+    --akzent: #7fb6ff;
+    --fz-bild-pos: 50% 59%;
+}
+
+/* Eigene Lichtführung im Kopfbereich */
+.fz-bewusstseins-und-neuronale-vernetzungsforschung .fz-hero {
+    background:
+        radial-gradient(ellipse 55% 70% at 74% 31%, color-mix(in srgb, var(--akzent) 16%, transparent), transparent 70%),
+        conic-gradient(from 111deg at 100% 0%, color-mix(in srgb, var(--akzent) 8%, transparent), transparent 25%),
+        linear-gradient(160deg, var(--fz-flaeche-2), var(--fz-flaeche));
+}
+
+/* Zweig-Symbol als Wasserzeichen */
+.fz-bewusstseins-und-neuronale-vernetzungsforschung .fz-hero::before {
+    content: "⌘";
+    position: absolute;
+    left: -1rem;
+    right: auto;
+    bottom: -2.5rem;
+    z-index: -1;
+    color: color-mix(in srgb, var(--akzent) 9%, transparent);
+    font-size: clamp(9rem, 20vw, 16rem);
+    line-height: 1;
+    pointer-events: none;
+}

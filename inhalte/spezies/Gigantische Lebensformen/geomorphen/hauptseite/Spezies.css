@@ -1,0 +1,38 @@
+/* Geomorphen – Allgemeines
+   Gemeinsames Design: geomorphen-basis.css · hier nur der Hintergrund (Designvorlage) dieser Seite. */
+.geo-hauptseite .geo-buehne { background-image: url("../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Gigantische%20Lebensformen/geomorphen/PageDesign/Geomorphen-Dossier_%20Kokon%20der%20Resonanz-1.png"); }
+
+/* Willkommen mit vier Bildkacheln (Ausschnitte aus dem Querschnitt) */
+.geo-willkommen { display: grid; gap: 1.1rem; justify-items: center; padding: clamp(1rem, 2.4cqi, 2rem); text-align: center; }
+.geo-willkommen .geo-text { max-width: 70ch; font: clamp(.98rem, 1.4cqi, 1.1rem)/1.6 var(--geo-serif); }
+.geo-kacheln { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .8rem; width: 100%; }
+.geo-kachel-link { display: grid; gap: .45rem; color: var(--geo-text) !important; font: 500 .92rem/1.25 var(--geo-serif); text-decoration: none; }
+.geo-kachel-link .geo-crop { border: 1px solid var(--geo-linie-hell); box-shadow: 0 0 1rem #ffb46a2e; transition: box-shadow .25s, transform .25s; }
+.geo-kachel-link:hover .geo-crop { box-shadow: 0 0 1.6rem #ffcf8a77; transform: translateY(-3px); }
+
+/* Steckbrief + Querschnitt nebeneinander (asymmetrisch 1,3 : 1) */
+.geo-steckbrief .geo-fakten > div { grid-template-columns: minmax(6.5rem, .55fr) minmax(0, 1.45fr); }
+.geo-querschnitt { display: grid; align-content: start; padding: clamp(.9rem, 1.8cqi, 1.3rem); }
+.geo-querschnitt .geo-kachel--gross img { aspect-ratio: 3 / 2; }
+
+/* Hauptreiter-Kacheln */
+.geo-themen-raster { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .8rem; }
+.geo-thema { display: grid; align-content: start; gap: .35rem; padding: .45rem .45rem .8rem; color: var(--geo-text) !important; text-decoration: none; transition: transform .2s, border-color .2s, box-shadow .2s; }
+.geo-thema img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; border-radius: 20px 7px 20px 7px; filter: saturate(.85) brightness(.85); transition: filter .25s; }
+.geo-thema strong { display: flex; align-items: center; gap: .45rem; padding-inline: .3rem; color: var(--geo-gold-hell); font: 500 1.02rem/1.25 var(--geo-serif); }
+.geo-thema strong span { color: var(--geo-gold); }
+.geo-thema > span { padding-inline: .3rem; color: var(--geo-leise); font-size: .8rem; line-height: 1.4; }
+.geo-thema:hover { transform: translateY(-3px); border-color: var(--geo-linie-hell); box-shadow: 0 0 1.4rem #ffb46a33, 0 .7rem 1.8rem #0009; }
+.geo-thema:hover img { filter: none; }
+
+@container (max-width: 1100px) { .geo-themen-raster { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@container (max-width: 760px) {
+    .geo-kacheln, .geo-themen-raster { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+/* Der Geomorph reicht in dieser Vorlage weiter nach rechts: Schleierkante und Titel rücken mit. */
+.geo-hauptseite { --geo-schleier-links: 36cqi; --geo-hero-einzug: 12cqi; }
+@container (max-width: 700px) { .geo-hauptseite .geo-schleier { left: 0; } .geo-hauptseite .geo-hero { padding-left: 0; } }
+/* Schmale Ansicht: bis hierhin reicht der Geomorph, rechts davon wird der Entwurfstext abgedeckt */
+.geo-hauptseite { --geo-mobil-kante: 48%; }
+/* Lage der eingebackenen Entwurfsnavigation und des Entwurfstitels in dieser Vorlage */
+.geo-hauptseite { --geo-leiste-start: 40cqi; --geo-schleier-oben: 6.5cqi; }

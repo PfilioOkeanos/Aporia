@@ -1,0 +1,317 @@
+/* Geomorphen – gemeinsames Basisdesign „Lebender Kokon“
+   Nach den Designvorlagen (assets/…/geomorphen/PageDesign). Die jeweilige Vorlage liegt als feste Bühne hinter der Seite:
+   oben links schaut der Geomorph herein, der Kokon legt sich als Ring um den Inhalt. Topbar und Sidebar dürfen sie überdecken.
+   Seitenspezifisch (in der Seiten-CSS) ist nur das Bühnenbild. */
+
+.geomorphen {
+    --geo-bg: #08050c;
+    --geo-glas: #120a19c7;
+    --geo-glas-tief: #0b0610e6;
+    --geo-linie: #d9a76a5c;
+    --geo-linie-hell: #f2c58a;
+    --geo-gold: #e8bd7f;
+    --geo-gold-hell: #ffe2b0;
+    --geo-violett: #a77bff;
+    --geo-blau: #7fb8ff;
+    --geo-text: #f1e7dc;
+    --geo-leise: #c6b4a6;
+    --geo-serif: "Cinzel", "Trajan Pro", "Cormorant Garamond", "Palatino Linotype", Georgia, serif;
+    --geo-raum: clamp(.7rem, 1.4vw, 1.3rem);
+    --aporia-page-tint: #c08a4c;
+    --aporia-page-glass-light: #2a1a2e;
+    --aporia-page-glass-dark: #0c0710;
+    margin: 0;
+    background: var(--geo-bg);
+    color: var(--geo-text);
+    font: 1rem/1.62 "Segoe UI", system-ui, sans-serif;
+}
+
+/* ---------- Bühne: Designvorlage als mitlaufender Hintergrund des Inhaltsbereichs ----------
+   Alle Maße in cqi (= Breite des Inhaltsbereichs rechts der Sidebar), damit Bild, Schleier und Raster gemeinsam skalieren.
+   Das Bild (1199 × 1312) ist 109,4 cqi hoch; sein eingebackener Kopfbereich (≈ 5 cqi) liegt unter der Topbar. */
+.geo-buehne {
+    position: sticky;
+    top: var(--aporia-topbar-height, 78px);
+    z-index: 0;
+    height: calc(100dvh - var(--aporia-topbar-height, 78px));
+    margin-bottom: calc(-100dvh + var(--aporia-topbar-height, 78px));
+    overflow: hidden;
+    background: var(--geo-bg) left -6.2cqi / 100% auto no-repeat;
+    pointer-events: none;
+}
+.geo-buehne::after {          /* Kristallgrund unten */
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(0deg, #08050cd0, transparent 18%);
+}
+/* Innenraum des Kokons: deckt die eingebackenen Entwurfstexte ab, lässt Ring und Geomorph frei */
+.geo-schleier {
+    position: absolute;
+    left: var(--geo-schleier-links, 23.5cqi);
+    right: 2.5cqi;
+    top: var(--geo-schleier-oben, 6.5cqi);
+    bottom: -12vh;
+    border-radius: 46% 46% 10% 10% / 20% 20% 5% 5%;
+    background:
+        linear-gradient(180deg, transparent 0, #09060eea 3%, #09060eea 22%, transparent 34%) 22% 0 / 56% 100% no-repeat,
+        radial-gradient(ellipse 68% 80% at 50% 44%, #09060ef7 60%, #09060eee 84%, #09060ec4 100%);
+    filter: blur(clamp(8px, 1.4cqi, 24px));
+}
+.geo-schleier::after {        /* Blickfang: der Kokon atmet – warmes Glühen am Innenrand */
+    content: "";
+    position: absolute;
+    inset: -1.2vw;
+    border-radius: inherit;
+    box-shadow: inset 0 0 3vw #ffb46a40, 0 0 4vw #a77bff26;
+    animation: geo-atmen 7s ease-in-out infinite;
+}
+@keyframes geo-atmen { 50% { box-shadow: inset 0 0 4.5vw #ffb46a66, 0 0 6vw #a77bff40; } }
+
+/* ---------- Rahmen & Inhalt ---------- */
+.geo-frame { display: flex; min-height: calc(100dvh - var(--aporia-topbar-height, 78px)); }
+.geo-dossier {
+    position: relative;
+    flex: 1;
+    min-width: 0;
+    container-type: inline-size;
+    overflow-x: clip;
+}
+/* Asymmetrisches Seitengerüst: links die Leiste unter dem Geomorph, rechts der Inhalt im Kokon */
+.geo-seite {
+    --geo-kopfraum: min(var(--geo-leiste-start, 40cqi), 46dvh);   /* Platz für den Geomorph oben links */
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 21cqi minmax(0, 1fr);
+    column-gap: 2.5cqi;
+    box-sizing: border-box;
+    padding: 0 4cqi 3rem 1.2cqi;
+}
+.geo-leiste {
+    position: sticky;
+    top: calc(var(--aporia-topbar-height, 78px) + var(--geo-kopfraum));
+    align-self: start;
+    margin-top: var(--geo-kopfraum);
+}
+.geo-leiste-innen {
+    display: grid;
+    gap: .25rem;
+    max-height: calc(100dvh - var(--aporia-topbar-height, 78px) - var(--geo-kopfraum) - 1rem);
+    overflow-y: auto;
+    padding: .9rem .6rem;
+    border: 1px solid var(--geo-linie);
+    border-radius: 28px 12px 28px 12px;
+    background: linear-gradient(180deg, #160d1df2, #0b0610f5);
+    box-shadow: 0 0 1.6rem #000b, inset 0 0 1.4rem #ffb46a14;
+    scrollbar-width: thin;
+    scrollbar-color: #d9a76a66 transparent;
+}
+.geo-leiste-titel { display: grid; justify-items: center; margin: .1rem 0 .5rem !important; color: var(--geo-gold-hell); font: 500 1rem/1.2 var(--geo-serif); letter-spacing: .16em; text-transform: uppercase; text-align: center; }
+.geo-leiste-titel span { margin-top: .2rem; color: var(--geo-leise); font-size: .6rem; letter-spacing: .3em; }
+.geo-leiste-titel--klein { margin-top: .8rem !important; padding-top: .7rem; border-top: 1px solid var(--geo-linie); font-size: .82rem; }
+.geo-spalte { min-width: 0; padding-top: clamp(1rem, 4cqi, 3.5rem); }
+.geo-dossier :is(h1, h2, h3, p, dl, dd, ul, figure) { margin: 0; }
+.geo-dossier :is(p, li, dd) { hyphens: auto; overflow-wrap: break-word; }
+.geo-dossier [id] { scroll-margin-top: calc(var(--aporia-topbar-height, 78px) + 1rem); }
+.geo-dossier a { color: var(--geo-gold-hell); }
+.geo-dossier :is(a, button, summary):focus-visible { outline: 2px solid var(--geo-gold-hell); outline-offset: 3px; }
+.geo-dossier img { display: block; max-width: 100%; }
+
+/* ---------- Kopf ---------- */
+.geo-hero { display: grid; justify-items: center; gap: .35rem; margin-bottom: clamp(.8rem, 2vw, 1.6rem); padding-left: var(--geo-hero-einzug, 0); text-align: center; container-type: inline-size; }
+.geo-pfad { display: flex; flex-wrap: wrap; justify-content: center; gap: .35rem; margin-bottom: .6rem; color: var(--geo-leise); font-size: .8rem; }
+.geo-pfad a { color: var(--geo-leise) !important; text-decoration: none; }
+.geo-pfad a:hover { color: var(--geo-gold-hell) !important; }
+.geo-kristall {               /* Blickfang: Kristall über dem Titel */
+    width: clamp(1.2rem, 2.2vw, 1.9rem);
+    aspect-ratio: 1 / 1.6;
+    background: linear-gradient(160deg, #fff6e2, #e8bd7f 40%, #8a5bd8 75%, #3b2160);
+    clip-path: polygon(50% 0, 100% 45%, 50% 100%, 0 45%);
+    filter: drop-shadow(0 0 .7rem #ffcf8a) drop-shadow(0 0 1.6rem #a77bff99);
+    animation: geo-kristall 4.8s ease-in-out infinite;
+}
+@keyframes geo-kristall { 50% { filter: drop-shadow(0 0 1.2rem #ffe2b0) drop-shadow(0 0 2.6rem #a77bffcc); transform: translateY(-3px); } }
+.geo-titel {
+    padding-left: .35em;
+    background: linear-gradient(180deg, #fff2d8, #e8bd7f 55%, #a87645);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font: 500 min(4.6rem, calc(100cqi / 12.5))/1.05 var(--geo-serif);
+    letter-spacing: .32em;
+    white-space: nowrap;
+    hyphens: none;
+    text-transform: uppercase;
+    filter: drop-shadow(0 2px 14px #000);
+}
+.geo-dossierzeile {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    color: var(--geo-leise);
+    font: 500 clamp(.66rem, 1.1cqi, .82rem)/1 var(--geo-serif);
+    letter-spacing: .42em;
+    text-transform: uppercase;
+}
+.geo-dossierzeile::before, .geo-dossierzeile::after { content: ""; width: clamp(2rem, 8cqi, 6rem); height: 1px; background: linear-gradient(90deg, transparent, var(--geo-gold)); }
+.geo-dossierzeile::after { transform: scaleX(-1); }
+.geo-seitentitel { display: flex; align-items: center; gap: .6rem; margin-top: .9rem; color: var(--geo-gold-hell); font: 500 clamp(1.7rem, 4cqi, 2.8rem)/1.1 var(--geo-serif); }
+.geo-seitentitel h1 { font: inherit; }
+.geo-seitentitel span { display: grid; place-items: center; width: 1.6em; aspect-ratio: 1; border: 1px solid var(--geo-linie-hell); border-radius: 50%; font-size: .55em; box-shadow: 0 0 1rem #ffb46a44; }
+.geo-unterzeile { max-width: 60ch; color: var(--geo-text); font: italic clamp(.95rem, 1.5cqi, 1.15rem)/1.45 var(--geo-serif); }
+
+/* ---------- Hauptreiter (senkrecht in der Leiste, wie in den Vorlagen) ---------- */
+.geo-reiter { display: grid; gap: .3rem; }
+.geo-reiter a {
+    display: flex;
+    align-items: center;
+    gap: .55rem;
+    padding: .42rem .7rem;
+    border: 1px solid #d9a76a2e;
+    border-radius: 999px 14px 14px 999px;
+    background: linear-gradient(90deg, #1e1226d9, #0d0712e6);
+    box-shadow: inset 0 1px 0 #ffffff12;
+    color: var(--geo-text) !important;
+    font: 500 .92rem/1.15 var(--geo-serif);
+    text-decoration: none;
+    transition: border-color .2s, box-shadow .2s, color .2s;
+}
+.geo-reiter a span { display: grid; place-items: center; width: 1.6rem; flex: none; color: var(--geo-gold); }
+.geo-reiter a:hover { border-color: var(--geo-linie-hell); box-shadow: 0 0 .9rem #ffb46a40; }
+.geo-reiter a[aria-current="page"] { border-color: #c9a2ff; background: linear-gradient(180deg, #4a2c78, #23143a); box-shadow: 0 0 1.1rem #a77bff88, inset 0 1px 0 #ffffff30; color: #fff !important; }
+
+/* ---------- Inhaltsraster (asymmetrisch 1,3 : 1) ---------- */
+.geo-inhalt { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: var(--geo-raum); align-items: start; min-width: 0; }
+.geo-inhalt > :is(.geo-titelbild, .geo-karte--breit, .geo-galerie, .geo-quelle, .geo-blaettern, .geo-willkommen, .geo-themen, .geo-links) { grid-column: 1 / -1; }
+
+/* Panels: Glas im Kokon mit Goldkante */
+.geo-panel {
+    position: relative;
+    box-sizing: border-box;
+    min-width: 0;
+    border: 1px solid var(--geo-linie);
+    border-radius: 26px 10px 26px 10px;
+    background: radial-gradient(ellipse at 0 0, #ffb46a1c, transparent 50%), radial-gradient(ellipse at 100% 100%, #a77bff17, transparent 55%), var(--geo-glas);
+    box-shadow: inset 0 1px 0 #ffffff12, inset 0 0 2rem #0008, 0 .7rem 1.8rem #0009;
+    backdrop-filter: blur(6px);
+}
+.geo-panel::before { content: ""; position: absolute; top: -1px; left: 12%; right: 12%; height: 1px; background: linear-gradient(90deg, transparent, var(--geo-gold-hell), transparent); opacity: .7; }
+.geo-block { padding: clamp(.9rem, 1.8cqi, 1.4rem); }
+.geo-h2 { margin-bottom: .75rem !important; color: var(--geo-gold-hell); font: 500 clamp(1.05rem, 1.8cqi, 1.3rem)/1.25 var(--geo-serif); letter-spacing: .06em; }
+.geo-h2::before { content: "◆"; margin-right: .5rem; color: var(--geo-gold); font-size: .7em; vertical-align: .15em; }
+.geo-h2 small { color: var(--geo-leise); font-size: .72em; letter-spacing: .12em; text-transform: uppercase; }
+
+/* Kapitelkarten */
+.geo-karte summary { display: flex; align-items: baseline; gap: .55rem; padding: .9rem 1.1rem; cursor: pointer; list-style: none; }
+.geo-karte summary::-webkit-details-marker { display: none; }
+.geo-karte summary h2 { flex: 1; color: var(--geo-gold-hell); font: 500 clamp(1rem, 1.6cqi, 1.2rem)/1.3 var(--geo-serif); letter-spacing: .04em; }
+.geo-nr { color: var(--geo-violett); font: 600 .74rem/1 ui-monospace, Consolas, monospace; letter-spacing: .06em; }
+.geo-chevron { align-self: center; width: .5rem; height: .5rem; border-right: 2px solid var(--geo-gold); border-bottom: 2px solid var(--geo-gold); transform: rotate(-45deg); transition: transform .25s; }
+.geo-karte[open] .geo-chevron { transform: rotate(45deg); }
+.geo-text { display: grid; gap: .55rem; padding: 0 1.1rem 1.1rem; font-size: .95rem; }
+.geo-block .geo-text, .geo-willkommen .geo-text { padding: 0; }
+.geo-karte .geo-text { border-top: 1px solid #d9a76a2e; padding-top: .8rem; margin-inline: 0; }
+.geo-text ul, .geo-dossier .geo-links ul { display: grid; gap: .3rem; margin: 0; padding: 0; list-style: none; }
+.geo-text ul li { position: relative; padding-left: 1.1rem; }
+.geo-text ul li::before { content: ""; position: absolute; left: .1rem; top: .62em; width: .4rem; height: .4rem; background: var(--geo-gold); clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%); box-shadow: 0 0 .4rem var(--geo-gold); }
+.geo-karte--offen { border-style: dashed; }
+.geo-karte:target { box-shadow: 0 0 0 1px #c9a2ff, 0 0 1.6rem #a77bff55; }
+.geo-fakten { display: grid; gap: 0; }
+.geo-fakten > div { display: grid; grid-template-columns: minmax(7rem, .7fr) minmax(0, 1.3fr); gap: .8rem; padding: .42rem 0; border-bottom: 1px solid #ffffff12; }
+.geo-fakten dt { color: var(--geo-gold); font: 500 .86rem/1.4 var(--geo-serif); }
+.geo-fakten dd { font-size: .9rem; }
+.geo-offen { color: var(--geo-leise); font-style: italic; }
+.geo-quelle { color: #9d8b80; font-size: .74rem; }
+
+/* Kapitel der Seite (in der Leiste) */
+.geo-sprung { display: grid; gap: .1rem; }
+.geo-sprung a { padding: .28rem .5rem; border-radius: 0 10px 10px 0; color: var(--geo-text) !important; font-size: .78rem; line-height: 1.35; text-decoration: none; transition: background .2s; }
+.geo-sprung a .geo-nr { margin-right: .35rem; }
+.geo-sprung a:hover, .geo-sprung a.is-active { background: linear-gradient(90deg, #a77bff40, transparent); box-shadow: inset 2px 0 0 #c9a2ff; }
+
+/* Verknüpfungen */
+.geo-links { padding: 1rem .9rem; }
+.geo-links ul { grid-template-columns: repeat(auto-fill, minmax(min(100%, 13rem), 1fr)); }
+.geo-links a { display: grid; gap: .05rem; padding: .45rem .55rem; border: 1px solid transparent; border-radius: 14px 5px 14px 5px; color: var(--geo-text) !important; text-decoration: none; transition: border-color .2s, background .2s; }
+.geo-links a:hover { border-color: var(--geo-linie-hell); background: #ffb46a14; }
+.geo-links strong { color: var(--geo-gold-hell); font: 500 .9rem/1.3 var(--geo-serif); }
+.geo-links span { color: var(--geo-leise); font-size: .74rem; }
+.geo-links a.is-unavailable { opacity: .5; }
+
+/* Bilder & Galerien */
+.geo-titelbild { overflow: hidden; padding: 0; }
+.geo-kachel { display: grid; gap: .35rem; padding: .35rem; border: 1px solid #d9a76a33; border-radius: 16px 6px 16px 6px; background: #0b0610cc; color: var(--geo-leise); font: .74rem/1.3 "Segoe UI", system-ui, sans-serif; text-align: left; cursor: zoom-in; transition: border-color .2s, transform .2s; }
+.geo-kachel img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 12px 4px 12px 4px; transition: filter .25s; filter: saturate(.9) brightness(.9); }
+.geo-kachel:hover { border-color: var(--geo-linie-hell); transform: translateY(-2px); }
+.geo-kachel:hover img { filter: none; }
+.geo-kachel--gross { width: 100%; padding: 0; border: 0; border-radius: inherit; background: none; }
+.geo-kachel--gross img { aspect-ratio: 21 / 9; border-radius: inherit; }
+.geo-galerie { padding: clamp(.9rem, 1.8cqi, 1.3rem); }
+.geo-galerie-raster { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 11rem), 1fr)); gap: .6rem; }
+
+/* Knopf & Blättern */
+.geo-knopf { display: inline-flex; justify-self: center; align-items: center; gap: .4rem; padding: .7rem 2rem; border: 1px solid #c9a2ff; border-radius: 999px; background: linear-gradient(180deg, #4a2c78, #1f1233); box-shadow: 0 0 1.4rem #a77bff66, inset 0 1px 0 #ffffff2a; color: #fff !important; font: 500 1rem/1 var(--geo-serif); letter-spacing: .12em; text-decoration: none; text-transform: uppercase; transition: box-shadow .2s; }
+.geo-knopf:hover { box-shadow: 0 0 2rem #c9a2ffaa, inset 0 1px 0 #ffffff40; }
+.geo-blaettern { display: flex; justify-content: space-between; gap: .6rem; }
+.geo-blaettern a { padding: .45rem 1rem; border: 1px solid var(--geo-linie); border-radius: 999px; background: #0d0712cc; color: var(--geo-text) !important; font: 500 .85rem var(--geo-serif); text-decoration: none; }
+.geo-blaettern a:hover { border-color: var(--geo-linie-hell); }
+
+/* Forschungszweige */
+.geo-zweige { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 13rem), 1fr)); gap: .55rem; margin-top: .9rem; }
+.geo-zweige a { display: grid; gap: .1rem; padding: .65rem .8rem; border: 1px solid var(--geo-linie); border-radius: 16px 6px 16px 6px; background: #0b0610cc; color: var(--geo-text) !important; text-decoration: none; transition: border-color .2s, box-shadow .2s; }
+.geo-zweige a:hover { border-color: var(--geo-linie-hell); box-shadow: 0 0 1rem #ffb46a33; }
+.geo-zweige strong { color: var(--geo-gold-hell); font: 500 .92rem/1.3 var(--geo-serif); }
+.geo-zweige span { color: var(--geo-leise); font-size: .74rem; }
+
+/* Großansicht (Logik: _gemeinsam/galerie-zoom.js) */
+html:has(dialog.geo-zoom[open]) { overflow: hidden; }
+.geomorphen dialog.geo-zoom { position: fixed; inset: 0; width: 100%; height: 100%; max-width: none; max-height: none; margin: 0; padding: 0; border: 0; overflow: hidden; background: transparent; }
+.geomorphen dialog.geo-zoom::backdrop { background: #000c; }
+.geo-zoom .gallery-fullscreen-surface { display: flex; flex-direction: column; width: 100%; height: 100%; overflow: hidden; color: var(--geo-text); background: #060308; }
+.geo-zoom .gallery-fullscreen-toolbar { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: .3rem .65rem; padding: .4rem .5rem; border-bottom: 1px solid var(--geo-linie); background: #140b1a; }
+.geo-zoom .gallery-fullscreen-toolbar .controls { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: .35rem; margin: 0; }
+.geo-zoom .gallery-fullscreen-toolbar form { order: 1; margin: 0; }
+.geo-zoom .control { padding: .3rem .75rem; border: 1px solid var(--geo-linie); border-radius: 999px; background: #1e1226; color: var(--geo-text); font: 600 .8rem/1 "Segoe UI", system-ui, sans-serif; cursor: pointer; }
+.geo-zoom output { padding: 0 .4rem; color: var(--geo-leise); font-size: .8rem; }
+.geo-zoom .gallery-zoom-viewport { flex: 1; min-height: 0; overflow: auto; overscroll-behavior: contain; }
+.geomorphen dialog.geo-zoom .gallery-zoom-viewport img { display: block; width: calc(100% * var(--gallery-zoom, 1)); height: calc(100% * var(--gallery-zoom, 1)); max-width: none; max-height: none; margin: 0; object-fit: contain; }
+
+/* Bildausschnitte aus dem Querschnitt „Aporias lebender Planetenkern“ (1536 × 1024) für die Kacheln der Hauptseite */
+.geo-crop {
+    display: block;
+    aspect-ratio: 4 / 3;
+    border-radius: 14px 5px 14px 5px;
+    background: #0b0610 url("../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Gigantische%20Lebensformen/geomorphen/gesamtdarstellung/Geomorphen_%20Aporias%20lebender%20Planetenkern.png") no-repeat;
+}
+.geo-crop--netz { background-size: 750% auto; background-position: 98.4% 40%; }
+.geo-crop--kern { background-size: 750% auto; background-position: 98.4% 62%; }
+.geo-crop--tiefe { background-size: 632% auto; background-position: 98.4% 89%; }
+.geo-crop--schichten { background-size: 384% auto; background-position: 26% 26%; }
+
+/* ---------- Responsiv ---------- */
+@container (max-width: 1000px) {
+    .geo-seite { grid-template-columns: 24cqi minmax(0, 1fr); column-gap: 2cqi; padding-right: 3cqi; }
+    .geo-inhalt { grid-template-columns: minmax(0, 1fr); }
+    .geo-reiter a { font-size: .84rem; padding: .38rem .55rem; }
+}
+/* Schmal: Geomorph oben, Leiste als Reiterzeile, Inhalt darunter über die volle Breite */
+@container (max-width: 700px) {
+    .geo-buehne { background-size: 135% auto; background-position: 0 -9cqi; }
+    .geo-buehne::after { background: linear-gradient(90deg, transparent var(--geo-mobil-kante, 26%), #09060ef2 calc(var(--geo-mobil-kante, 26%) + 12%)) 0 0 / 100% 52cqi no-repeat, linear-gradient(0deg, #08050cd0, transparent 18%); }
+    .geo-schleier { left: 0; right: 0; top: 44cqi; --geo-schleier-links: 0; }
+    .geo-hero { padding-left: 0; }
+    .geo-seite { --geo-kopfraum: 48cqi; grid-template-columns: minmax(0, 1fr); padding: 0 .8rem 2rem; }
+    .geo-leiste { position: static; margin-top: var(--geo-kopfraum); }
+    .geo-leiste-innen { max-height: none; overflow: visible; padding: .6rem; }
+    .geo-reiter { display: flex; overflow-x: auto; padding-bottom: .3rem; }
+    .geo-reiter a { flex: none; border-radius: 999px; }
+    .geo-sprung { display: flex; overflow-x: auto; padding-bottom: .3rem; }
+    .geo-sprung a { flex: none; border: 1px solid var(--geo-linie); border-radius: 999px; background: #0d0712cc; }
+    .geo-spalte { padding-top: 1rem; }
+    .geo-fakten > div { grid-template-columns: minmax(0, 1fr); gap: .1rem; }
+    .geo-kachel--gross img { aspect-ratio: 4 / 3; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .geomorphen *, .geomorphen *::before, .geomorphen *::after { animation: none !important; transition: none !important; }
+}
