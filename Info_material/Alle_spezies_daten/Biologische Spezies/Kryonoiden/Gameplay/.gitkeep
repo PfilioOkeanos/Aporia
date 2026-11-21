@@ -1,0 +1,407 @@
+# KRYONOIDEN – SPIELINTEGRATION
+
+**Spiel:** Unter fremden Kronen  
+**Universum:** APORIA  
+**Spezies:** Kryonoiden  
+**Gameplay-Schwerpunkte:** Extreme Kälte, Kryotechnologie, Umweltüberleben, Tiefenforschung und interkulturelle Zusammenarbeit
+
+## 1. Grundlegende Spielrolle
+
+Die Kryonoiden können als freundliche, neutrale oder feindliche intelligente NPCs auftreten.
+
+Ihre tatsächliche Haltung wird durch individuelle Eigenschaften, gesellschaftliche Beziehungen und Fraktionszugehörigkeit bestimmt.
+
+Sie können Wissenschaftler, Händler, Techniker, Forschende, Sicherheitskräfte oder gewöhnliche Bewohner ihrer Heimatwelt darstellen.
+
+Eine spätere spielbare Umsetzung der Spezies ist vorgesehen.
+
+## 2. Temperaturabhängiges Überlebenssystem
+
+Ein wesentliches Merkmal der Kryonoiden ist ihre besondere Temperaturabhängigkeit.
+
+Sie sind hervorragend an extreme Kälte angepasst.
+
+Warme Umgebungen stellen dagegen eine erhebliche Gefahr dar.
+
+Für die Spielintegration wird zwischen Umgebungstemperatur, Körperkerntemperatur und dem Zustand der technischen Schutzausrüstung unterschieden.
+
+Diese Werte beeinflussen sich gegenseitig, sind aber nicht identisch.
+
+### Vorläufige biologische Temperaturbereiche
+
+| Körperkerntemperatur | Zustand |
+|---|---|
+| −48 bis −38 °C | Normaler Stoffwechselbereich |
+| −55 bis −48 °C | Beginnende Verlangsamung und erhöhter Regulationsaufwand |
+| Unter −55 °C | Zunehmende Unterkühlung, Gefahr des Stoffwechselstillstands |
+| −38 bis −25 °C | Erhöhte thermische Belastung |
+| −25 bis −15 °C | Schwere Belastung und zunehmende Funktionsstörungen |
+| Über −15 °C | Akute Lebensgefahr bei anhaltender Erwärmung |
+
+Die Temperaturwerte sind biologische Modellparameter und keine unmittelbar festgelegten Schadenspunkte.
+
+Entscheidend sind die Dauer der Belastung, der Zustand des Individuums und verfügbare Schutzmaßnahmen.
+
+## 3. Umgebungstemperatur
+
+Die Umgebungstemperatur bestimmt den Wärmeaustausch mit dem Körper.
+
+Kryonoiden können in vielen eisigen Lebensräumen ohne zusätzliche Heiztechnik überleben.
+
+Bei besonders niedrigen Temperaturen steigt allerdings der Aufwand für ihre innere Wärmeregulierung.
+
+In heißen Umgebungen benötigen sie aktive Kühlung.
+
+Die Wirkung einer Umgebung hängt zusätzlich von Wind, Druck, Luftzusammensetzung, Kontaktflächen und vorhandener Ausrüstung ab.
+
+## 4. Natürliche Fähigkeiten
+
+### Kälteanpassung
+
+Verringert den biologischen Regulationsaufwand in geeigneten kalten Umgebungen.
+
+### Vibrationswahrnehmung
+
+Erlaubt das Erkennen bestimmter Bewegungen und Erschütterungen im Untergrund.
+
+Die Reichweite hängt von Material, Entfernung und Störsignalen ab.
+
+### Kälteruhe
+
+Ermöglicht eine starke Reduktion des Stoffwechsels.
+
+Verringert den Energiebedarf, schränkt aber Wahrnehmung und Handlungsfähigkeit ein.
+
+### Eisoberflächenbewegung
+
+Verbessert die Stabilität und Orientierung auf geeigneten vereisten Untergründen.
+
+### Chemische Umweltwahrnehmung
+
+Erleichtert das Erkennen bestimmter Substanzen in natürlichen Lebensräumen.
+
+## 5. Begrenzungen natürlicher Fähigkeiten
+
+Die Kryonoiden können nicht ohne Energie Eis erschaffen oder große Mengen Wärme verschwinden lassen.
+
+Sie besitzen keine allgemeine Immunität gegen Kälte, Druck oder mechanische Schäden.
+
+Ihre Vibrationswahrnehmung funktioniert nicht als universelles Radar.
+
+Besondere Fähigkeiten werden deshalb als biologische Wahrnehmungs- und Anpassungsmechanismen umgesetzt.
+
+Übernatürliche oder exotisch-physikalische Kräfte wären separate, später zu definierende Systeme.
+
+## 6. Bewegungssystem
+
+Der Charakter benötigt ein angepasstes Bewegungsmodell mit vier Laufgliedmaßen und zwei Greifgliedmaßen.
+
+Vorgesehen sind:
+
+- Vierbeinige Fortbewegung
+- Langsamer Präzisionsgang
+- Beschleunigter Lauf
+- Bewegung auf unebenem Eis
+- Klettern über geeignete Hindernisse
+- Eingeschränkte aufgerichtete Haltung
+- Werkzeugbenutzung mit beiden Greifgliedern
+- Ruhe- und Schutzstellungen
+
+Der Bewegungsablauf muss sich von humanoiden Standardanimationen unterscheiden.
+
+## 7. Animationen
+
+Benötigte Animationsgruppen:
+
+1. Leerlauf und Atmungsbewegungen
+2. Normales Gehen
+3. Schnelle Fortbewegung
+4. Richtungswechsel
+5. Bremsen und Rutschen
+6. Greifen und Werkzeugbenutzung
+7. Sensorisches Abtasten
+8. Kommunikation
+9. Nahrungsaufnahme
+10. Schutzstellung
+11. Kälteruhe
+12. Erwachen
+13. Verletzung und Regeneration
+14. Temperaturbelastung
+15. Tod und Zusammenbruch
+
+Weitere Animationen ergeben sich aus Berufen und individuellen Rollen.
+
+## 8. Ausrüstung
+
+Kryonoidische Ausrüstung ist auf eine verhältnismäßig kalte Körpertemperatur ausgelegt.
+
+Wichtige Ausrüstungstypen sind:
+
+**Temperaturanzüge:** Halten den Körper innerhalb geeigneter Temperaturgrenzen.
+
+**Kryo-Lebenserhaltungssysteme:** Regulieren Körperflüssigkeitschemie, Druck und gasförmige Stoffe.
+
+**Forschungsausrüstung:** Untersucht Eisstrukturen, Kältesole und geologische Vorgänge.
+
+**Untergrundfahrzeuge:** Ermöglichen sicheren Transport durch schwierige Eislandschaften.
+
+**Kälteschutzrüstungen:** Schützen vor mechanischen und chemischen Gefahren.
+
+**Thermische Notfallsysteme:** Stabilisieren gefährdete Individuen zeitweilig.
+
+## 9. Technologie und Forschung
+
+Die Kryonoiden ermöglichen die Freischaltung spezialisierter Technologien.
+
+Mögliche Forschungsbereiche sind:
+
+- Kryosolchemie
+- Biologische Frostschutzsysteme
+- Temperaturstabile Polymere
+- Kryogene Langzeitspeicher
+- Eisstruktursensorik
+- Geothermische Energiegewinnung
+- Automatisierte Eisarchitektur
+- Kälteangepasste Robotik
+- Umweltkontrollsysteme
+- Kryobiologische Medizin
+
+Nicht alle Forschungszweige müssen exklusiv für diese Spezies verfügbar sein.
+
+## 10. Siedlungsbau
+
+Kryonoidische Bauwerke benötigen geeignete Temperaturbedingungen.
+
+Auf Nivareth können bestimmte natürliche Eisformationen als Baumaterial dienen.
+
+Für fremde Planeten müssen zusätzliche Schutzschichten und Klimasysteme berücksichtigt werden.
+
+Technisch denkbare Bauoptionen umfassen:
+
+- Unterirdische Städte
+- Isolierte Forschungskomplexe
+- Kryogene Industrieanlagen
+- Automatisierte Materiallager
+- Temperierte Besucherbereiche
+- Geothermische Versorgungseinrichtungen
+- Geschützte Transporttunnel
+
+## 11. NPC-Verhalten
+
+Kryonoidische NPCs berücksichtigen ihre Umweltbedingungen.
+
+Ein NPC kann beispielsweise:
+
+- Eine zu warme Umgebung meiden
+- Einen sicheren Kälteraum aufsuchen
+- Defekte Kühlsysteme melden
+- Einen instabilen Eisbereich erkennen
+- Technische Hilfe anfordern
+- Die eigene Aktivität bei Energiemangel reduzieren
+
+Dieses Verhalten kann auf bestehenden Umwelt-, Gesundheits- und KI-Systemen aufbauen.
+
+## 12. Interaktion und Kommunikation
+
+Kryonoiden besitzen eine eigene Kommunikationsidentität.
+
+Die Verständigung mit anderen Spezies erfolgt über:
+
+- Direkte Resonanzkommunikation
+- Optische Signale
+- Kontaktbasierte Kommunikation
+- Übersetzungsgeräte
+- Digitale Kommunikationssysteme
+
+Bei Erstkontakten können technische und kulturelle Missverständnisse entstehen.
+
+## 13. Handel
+
+Kryonoidische Händler bieten insbesondere spezialisierte Technologie an.
+
+Mögliche Handelsgüter:
+
+- Kryomaterialien
+- Frostschutzkomponenten
+- Kältesolanalysatoren
+- Sensoren für geologische Stabilität
+- Hochleistungsisolierung
+- Spezialwerkzeuge
+- Kryogene Speichersysteme
+- Forschungslizenzen
+- Kälteangepasste Nahrungsmittel
+
+Nicht sämtliche Güter sind auf anderen Welten biologisch oder technisch unmittelbar verwendbar.
+
+## 14. Fraktionsinteraktionen
+
+Die politische Zugehörigkeit eines Kryonoiden ist nicht allein durch seine Spezies bestimmt.
+
+Einzelne NPCs können mit verschiedenen Fraktionen verbunden sein.
+
+Mögliche Interaktionen umfassen:
+
+- Wissenschaftliche Zusammenarbeit mit der Konföderation
+- Handelsverträge mit dem Konsortium
+- Sicherheitskooperationen mit dem Protektorat
+- Forschungskontakte zum Synaptorat
+- Kulturelle oder philosophische Kontakte zu den Ätherwanderern
+
+Einzelne Kryonoiden können auch unabhängig oder oppositionell organisiert sein.
+
+## 15. Missionstypen
+
+### Eisbruchrettung
+
+Eine unterirdische Siedlung verliert einen wichtigen Verkehrsweg.
+
+Der Spieler muss Gefahren untersuchen, Überlebende finden und Versorgungssysteme sichern.
+
+### Geothermischer Konflikt
+
+Zwei Gemeinschaften beanspruchen dieselbe Energiequelle.
+
+Der Spieler kann Informationen beschaffen, verhandeln oder unterschiedliche Interessen unterstützen.
+
+### Die verlorenen Archive
+
+Ein alter unterirdischer Komplex wird entdeckt.
+
+Die Mission verbindet historische Erforschung mit geologischen Gefahren.
+
+### Fremde Wärme
+
+Eine kryonoidische Forschungsstation auf einer warmen Welt verliert ihre aktive Kühlung.
+
+Der Spieler muss technische Schäden beheben und eine Evakuierung ermöglichen.
+
+### Der umstrittene Vertrag
+
+Ein interstellares Unternehmen möchte exklusive Rechte an wichtigen Ressourcen erwerben.
+
+Die Entscheidung kann wirtschaftliche, soziale und politische Folgen besitzen.
+
+## 16. Kampfverhalten
+
+Kryonoidische Kämpfer nutzen den Untergrund und geeignete Deckung.
+
+Ihre körperliche Anatomie ermöglicht andere Bewegungsmuster als bei humanoiden Gegnern.
+
+Auf Eis können sie besonders stabil agieren.
+
+In ungeeigneten warmen Umgebungen sind sie hingegen stark von funktionsfähiger technischer Kühlung abhängig.
+
+Die Zerstörung solcher Systeme kann gefährlich sein, soll aber nicht als automatisch tödlicher Ein-Treffer-Effekt umgesetzt werden.
+
+## 17. Sounddesign
+
+Der Körper erzeugt schwache organische und mechanisch wirkende Geräusche.
+
+Charakteristische Soundelemente:
+
+- Tiefe Körperschwingungen
+- Kurze resonierende Klicklaute
+- Leise Faser- und Plattenbewegungen
+- Gedämpfte Kontaktgeräusche auf Eis
+- Langsame rhythmische Kommunikationsmuster
+- Stärkere Warnresonanzen
+
+Diese Geräusche stammen aus biologischen Strukturen und sind nicht als magisches Knacken lebendigen Eises gedacht.
+
+## 18. Musik
+
+Die kryonoidische Musik nutzt tiefe Resonanzfrequenzen und präzise Rhythmusmuster.
+
+Für die spätere Produktion eignen sich kurze originale Soundmotive.
+
+Mögliche Kategorien:
+
+- Ruhige Gemeinschaftsresonanzen
+- Historische Erinnerungsmotive
+- Technische Signalmuster
+- Warn- und Gefahrensignale
+- Unterirdische Stadtatmosphäre
+- Rituale und gesellschaftliche Veranstaltungen
+
+## 19. Medienmaterial
+
+Für das APORIA-Weltenarchiv werden später eigene Bild-, Video- und Audiodateien vorgesehen.
+
+Sinnvolle Medienkategorien:
+
+**Bilder**
+- Biologische Referenz
+- Körperdetails
+- Entwicklungsstadien
+- Regionale Körpervarianten
+- Kleidung und Ausrüstung
+- Architektur
+- Heimatwelt
+- Gesellschaft und Kultur
+
+**Videos**
+- Fortbewegung
+- Kommunikation
+- Kälteruhe
+- Werkzeugbenutzung
+- Stadtleben
+- Geologische Erkundung
+
+**Audio**
+- Körpergeräusche
+- Kommunikation
+- Warnsignale
+- Umweltgeräusche
+- Kurze musikalische Motive
+
+## 20. Technische Unreal-Engine-Integration
+
+Die Umsetzung sollte modular erfolgen.
+
+Biologische Eigenschaften werden von der grafischen Darstellung und den konkreten Actor-Instanzen getrennt.
+
+Geeignete Datenbereiche sind:
+
+- Speziesidentität
+- Physiologische Parameter
+- Temperaturtoleranz
+- Umweltanforderungen
+- Bewegungsprofil
+- Sensorprofil
+- Kommunikation
+- Fortpflanzungs- und Entwicklungsdaten
+- Fraktionsbeziehungen
+- NPC-Verhaltensparameter
+- Ausrüstungskompatibilität
+
+Diese Trennung erleichtert eine spätere Anpassung an Unreal Engine 6.
+
+Für persistente Charaktere sollten stabile CharacterIDs und Speziesreferenzen statt ausschließlich Actor-Referenzen verwendet werden.
+
+## 21. Gameplay-Balance
+
+Die Kryonoiden sollen nicht grundsätzlich stärker oder schwächer als andere Spezies sein.
+
+Ihre Vorteile liegen in bestimmten Umgebungen und Tätigkeiten.
+
+Ihre Nachteile entstehen hauptsächlich durch ungeeignete Temperaturen und biologische Versorgung.
+
+Die Balance berücksichtigt:
+
+- Umweltbedingungen
+- Technologische Ausrüstung
+- Individuelle Fähigkeiten
+- Ausbildung
+- Fraktionszugehörigkeit
+- Ressourcenversorgung
+- Langfristige Charakterentwicklung
+
+## 22. Übergeordnete Spielidentität
+
+Die Kryonoiden erweitern APORIA um eine intelligente Spezies, deren natürliche Lebenswelt für viele andere Lebewesen nahezu unzugänglich ist.
+
+Sie erlauben eigenständige Erkundungs-, Forschungs- und Gesellschaftssysteme.
+
+Ihre Besonderheit liegt im Gegensatz zwischen hervorragender Anpassung an extreme Kälte und der Abhängigkeit von aufwendiger Schutztechnik in wärmeren Lebensräumen.
+
+Damit besitzen sie eine eigenständige Rolle innerhalb von „Unter fremden Kronen“.

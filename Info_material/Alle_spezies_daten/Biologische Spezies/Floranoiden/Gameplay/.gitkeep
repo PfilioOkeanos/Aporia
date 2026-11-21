@@ -1,0 +1,384 @@
+# APORIA – FLORANOIDEN
+# SPIELINTEGRATION
+Version: 1.1 – Überarbeitete Arbeitsfassung
+
+## 1. Rolle im Spiel
+
+Die Floranoiden sind eine intelligente Spezies im APORIA-Universum.
+
+Sie treten in „Unter fremden Kronen“ als NPCs und Mitglieder verschiedener Gemeinschaften auf.
+
+Mögliche Rollen:
+
+- Zivilisten.
+- Händler.
+- Wissenschaftler.
+- Techniker.
+- Diplomaten.
+- Begleiter.
+- Politische Vertreter.
+- Gegner.
+- Questcharaktere.
+
+Die menschliche Protagonistin des Spiels bleibt unverändert.
+
+Eine spätere Spielbarkeit der Floranoiden ist möglich, aber nicht automatisch festgelegt.
+
+## 2. Eigenständige Körpermechanik
+
+Floranoiden erhalten ein spezielles Fortbewegungssystem.
+
+Ihre Animationen dürfen nicht bloß aus menschlichen Laufanimationen mit angefügten Blättern bestehen.
+
+Notwendige Bewegungen:
+
+- Koordinierte Bewegungen mehrerer Tragglieder.
+- Hydraulische Druckverlagerung.
+- Elastisches Spannen und Entlasten.
+- Faltung der Photosynthesekrone.
+- Bewegung der Greiforgane.
+- Aktivierung der Versorgungswurzeln.
+- Unterschiedliche Ruhehaltungen.
+
+## 3. Bewegungsfähigkeit
+
+Die grundlegende Bewegung ist kontrolliert und energieeffizient.
+
+Schnelle Bewegungen erfordern zusätzliche gespeicherte Energie.
+
+Längere intensive Bewegung führt zu:
+
+- Erhöhtem Nährstoffverbrauch.
+- Größerer Wärmeentwicklung.
+- Steigender Belastung der Drucksysteme.
+- Höherem Regenerationsbedarf.
+
+Floranoiden sind nicht grundsätzlich langsam, besitzen aber andere körperliche Belastungsgrenzen als humanoide Spezies.
+
+## 4. Biologische Statuswerte
+
+Für die Simulation werden folgende Zustände vorgesehen:
+
+**Hydration:** Wasserhaushalt.
+
+**Energiereserve:** Biochemisch verfügbare Energie.
+
+**Nährstoffstatus:** Langfristige Versorgung mit organischen und mineralischen Nährstoffen.
+
+**Photosyntheseleistung:** Aktueller Energiegewinn durch Licht.
+
+**Gewebeintegrität:** Zustand des Körpers.
+
+**Hydraulikfunktion:** Leistungsfähigkeit der Bewegungsdruckkammern.
+
+**Markkelchintegrität:** Funktion des zentralen Denkorgans.
+
+**Thermische Belastung:** Auswirkungen von Temperatur und Stoffwechselaktivität.
+
+Die Werte sollen nicht zwangsläufig alle separat in der Benutzeroberfläche dargestellt werden.
+
+## 5. Photosynthese im Gameplay
+
+Licht ermöglicht Floranoiden einen zusätzlichen biologischen Energiegewinn.
+
+Die Wirkung hängt ab von:
+
+- Lichtstärke.
+- Lichtspektrum.
+- Kronenoberfläche.
+- Kronenstellung.
+- Gesundheitszustand.
+- Temperatur.
+- Wasserverfügbarkeit.
+
+Photosynthese ersetzt keine vollständige Nahrungsversorgung.
+
+Eine dauerhafte kostenlose Selbstheilung allein durch Sonnenlicht ist nicht vorgesehen.
+
+## 6. Organische Ernährung
+
+Floranoiden müssen regelmäßig organische Nahrung aufnehmen.
+
+Geeignete Nahrungsquellen können über:
+
+- Lebensmittel.
+- Nährstoffkonzentrate.
+- Technische Versorgungsstationen.
+- Medizinische Ernährungssysteme.
+
+bereitgestellt werden.
+
+Der Nährkelch erhält bei Bedarf eigenständige Interaktionsanimationen.
+
+Die genaue Versorgungshäufigkeit wird später anhand von Gameplay und biologischem Simulationsmaßstab festgelegt.
+
+## 7. Wasserversorgung
+
+Wasser ist für Bewegung und Stoffwechsel notwendig.
+
+Wassermangel beeinträchtigt zunächst die Leistungsfähigkeit.
+
+Bei längerem Mangel können Gesundheit und Organfunktion geschädigt werden.
+
+Geeignete Versorgungssysteme können Wasser wieder auffüllen.
+
+Die Simulation sollte nicht verlangen, dass jeder NPC im Sekundentakt Wasser aufnimmt.
+
+## 8. Natürliche Fähigkeiten
+
+### Fächerentfaltung
+
+Vergrößert die nutzbare Lichtaufnahmefläche.
+
+Erhöht bei geeigneten Bedingungen die Photosyntheseleistung.
+
+Reduziert gegebenenfalls Bewegungsfreiheit und erhöht die Angriffsfläche.
+
+### Hydraulische Stabilisierung
+
+Verbessert die Standfestigkeit.
+
+Benötigt geeigneten Druck und funktionsfähige Gliedmaßen.
+
+### Elastischer Kraftimpuls
+
+Ermöglicht eine kurzzeitige kraftvolle Bewegung.
+
+Verbraucht gespeicherte mechanische und chemische Energie.
+
+### Chemische Umweltanalyse
+
+Ermöglicht die Wahrnehmung bestimmter chemischer Stoffe.
+
+Die Fähigkeit besitzt begrenzte Reichweite und hängt von den Umweltbedingungen ab.
+
+### Geweberegeneration
+
+Ermöglicht die langsame Wiederherstellung bestimmter äußerer Gewebe.
+
+Benötigt Wasser, Energie, Nährstoffe und Zeit.
+
+### Versorgungsruhe
+
+Verringert körperliche Aktivität und erleichtert physiologische Erholung.
+
+Die Ruhe ersetzt keine notwendige Nahrungsversorgung.
+
+## 9. Kampfverhalten
+
+Floranoiden nutzen im Kampf ihre besondere Anatomie.
+
+Mögliche Taktiken:
+
+- Mehrpunktstabilisierung.
+- Gezielte Greifbewegungen.
+- Kurzzeitige elastische Kraftimpulse.
+- Technologische Distanzwaffen.
+- Schutz empfindlicher Organbereiche.
+- Kontrollierter Rückzug.
+
+Die genaue Kampfrolle hängt von Ausbildung, Ausrüstung und persönlichen Fähigkeiten ab.
+
+Floranoiden besitzen keine pauschale Pflanzenmagie.
+
+## 10. Schadensarten
+
+Besonders relevante Schädigungen betreffen:
+
+- Leitgewebe.
+- Bewegungsdruckkammern.
+- Tragfasern.
+- Kronenmembranen.
+- Nährkelch.
+- Markkelch.
+
+Feuer und bestimmte Chemikalien können schwere Gewebeschäden verursachen.
+
+Frost kann empfindliche Zellstrukturen beeinträchtigen.
+
+Die Stärke dieser Wirkungen hängt von Temperatur, Exposition, Ausrüstung und individueller Resistenz ab.
+
+## 11. Regeneration und Heilung
+
+Regeneration erfolgt nicht unmittelbar.
+
+Kleinere Verletzungen können durch natürliche Gewebereparatur behandelt werden.
+
+Größere Schäden benötigen medizinische Versorgung oder technische Hilfsmittel.
+
+Schäden am Markkelch sind besonders kritisch.
+
+Die vollständige Zerstörung dieses Organs kann nicht durch gewöhnliche Regeneration rückgängig gemacht werden.
+
+## 12. Ausrüstung
+
+Floranoidische Ausrüstung benötigt besondere Schnittstellen.
+
+Dazu gehören:
+
+- Angepasste Greifgriffe.
+- Flexible Körperpanzerung.
+- Schutz für Kronenmembranen.
+- Wasserspeicher.
+- Nährstoffbehälter.
+- Temperaturregulierung.
+- Raumanzüge mit geeigneten Bewegungssegmenten.
+- Künstliche Beleuchtung.
+
+Menschliche Standardausrüstung passt nicht automatisch auf floranoidische Körper.
+
+## 13. NPC-Verhalten
+
+Floranoiden-NPCs erhalten biologische und soziale Bedürfnisse.
+
+Mögliche Verhaltenszustände:
+
+1. Arbeiten.
+2. Soziale Interaktion.
+3. Nahrungsaufnahme.
+4. Wasserversorgung.
+5. Photosynthese.
+6. Ruhe.
+7. Fortbewegung.
+8. Medizinische Versorgung.
+9. Flucht.
+10. Kampf.
+
+Die tatsächliche Auswahl wird durch Umweltbedingungen, Persönlichkeit, Tagesablauf und aktuelle Ziele beeinflusst.
+
+## 14. Umweltreaktionen
+
+NPCs können auf bestimmte Umweltbedingungen reagieren.
+
+Beispiele:
+
+- Veränderte Kronenstellung bei stärkerer Beleuchtung.
+- Aufsuchen schattiger Bereiche bei Überhitzung.
+- Nutzung von Versorgungsstationen.
+- Reduzierung körperlicher Aktivität bei Erschöpfung.
+- Schutzreaktionen gegen gefährliche Chemikalien.
+
+Diese Reaktionen müssen nicht alle mit teurer permanenter Echtzeitsimulation berechnet werden.
+
+## 15. Dialoganimation
+
+Floranoiden benötigen eine eigenständige Ausdrucksanimation.
+
+Emotionale Zustände werden unter anderem durch:
+
+- Kronenstellung.
+- Veränderungen der Gewebespannung.
+- Bewegungen der Resonanzlamellen.
+- Leichte Pigmentveränderungen.
+- Körperhaltung.
+
+dargestellt.
+
+Eine menschliche Lippenanimation ist nicht erforderlich.
+
+## 16. Interaktion mit Siedlungen
+
+Der Spieler kann floranoidische Einrichtungen untersuchen oder nutzen.
+
+Beispiele:
+
+- Wasseraufbereitungsanlagen.
+- Künstliche Belichtungsflächen.
+- Nährstoffproduktion.
+- Floranoidische Medizin.
+- Biohydraulische Technik.
+- Spezialisierte Forschungslabore.
+- Umweltüberwachung.
+
+Diese Einrichtungen können in Quests und wirtschaftliche Systeme eingebunden werden.
+
+## 17. Quests
+
+Mögliche Questansätze:
+
+**Versorgungsausfall:** In einer floranoidischen Kolonie fällt ein Teil der Nährstoffversorgung aus.
+
+**Politischer Konflikt:** Eine neue Industrieanlage schränkt die Belichtung benachbarter Wohngebiete ein.
+
+**Biologische Erkrankung:** Ein unbekannter Krankheitserreger verursacht Schäden an hydraulischen Geweben.
+
+**Wissenschaftliche Expedition:** Ein Forscherteam untersucht fossile Vorfahren der Floranoiden.
+
+**Interstellare Diplomatie:** Mehrere Fraktionen konkurrieren um eine neue biotechnologische Entwicklung.
+
+Die vollständigen Missionen werden später separat ausgearbeitet.
+
+## 18. Forschung und Freischaltungen
+
+Floranoidische Forschungsinhalte können neue Spieltechnologien freischalten.
+
+Dazu gehören:
+
+- Verbesserte Sensoren.
+- Hydraulische Werkzeuge.
+- Flexible Materialien.
+- Neue medizinische Verfahren.
+- Versorgungstechnik.
+- Fortschrittliche Umweltschutzsysteme.
+
+Die Freischaltungen werden den vorhandenen Forschungszweigen von APORIA zugeordnet.
+
+## 19. Save-/Load-Integration
+
+Jeder dauerhaft relevante Floranoid besitzt eine persistente Identität.
+
+Zu speichernde Informationen können sein:
+
+- Eindeutige Charakteridentität.
+- Spezieszugehörigkeit.
+- Individuelle biologische Varianten.
+- Entwicklungsstadium.
+- Langfristige Gesundheitswerte.
+- Verletzungen.
+- Regenerationszustände.
+- Relevante Energiespeicher.
+- Soziale Beziehungen.
+- Fraktionszugehörigkeit.
+- Questfortschritt.
+- Dauerhafte Inventar- und Ausrüstungsdaten.
+
+Kurzfristige Werte wie momentane Lichtaufnahme und aktuelle Kronenausrichtung können bei der Wiederherstellung teilweise neu berechnet werden.
+
+Die Datenstruktur soll unabhängig von der jeweiligen Actor-Repräsentation funktionieren.
+
+## 20. Unreal-Engine-Umsetzung
+
+Für die technische Architektur wird eine Trennung zwischen Simulation, Darstellung und Persistenz empfohlen.
+
+Mögliche Module:
+
+- BiologyState.
+- MetabolismSimulation.
+- HydraulicMovement.
+- FloranoidAnimation.
+- SensoryPerception.
+- NeedsAndBehavior.
+- InteractionSystem.
+- PersistenceAdapter.
+
+Dies sind konzeptionelle Modulbezeichnungen und keine bereits angelegten Dateien.
+
+Die Umsetzung kann zunächst in Unreal Engine 5.8.4 prototypisiert werden.
+
+Die Simulationsdaten sollten für eine spätere Übertragung nach Unreal Engine 6 möglichst unabhängig von konkreten Actor- und Komponentenstrukturen bleiben.
+
+Große Populationen sollen über unterschiedliche Simulationsdetailstufen verarbeitet werden.
+
+## 21. Eigenständiges Spielerlebnis
+
+Floranoiden unterscheiden sich im Gameplay durch:
+
+- Ungewöhnliche Körperanimationen.
+- Kombinierte Energieversorgung.
+- Angepasste Ausrüstung.
+- Spezialisierte Umweltwahrnehmung.
+- Besondere Versorgungsbedürfnisse.
+- Eigenständige Stadt- und Gebäudetechnik.
+- Biologisch begründete Fähigkeiten.
+
+Sie dürfen nicht lediglich als humanoide Charaktere mit pflanzlichen Texturen erscheinen.

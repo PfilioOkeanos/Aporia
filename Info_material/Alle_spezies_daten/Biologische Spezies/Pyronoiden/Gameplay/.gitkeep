@@ -1,0 +1,681 @@
+# Pyronoiden – Spielintegration
+**APORIA | Speziesdossier V1.1**
+
+## 8.1 Grundlegende Einbindung
+
+**Spiel:** Unter fremden Kronen  
+**Universum:** APORIA  
+**Spezies:** Pyronoiden  
+**Spielbarkeit:** Vorgesehen  
+**NPC-Integration:** Vollständig vorgesehen  
+**Grundprinzip:** Klassenfreie Charakterentwicklung mit biologisch besonderen Fähigkeiten
+
+Pyronoiden werden als eigenständige intelligente Spezies in die Spielwelt integriert.
+
+Sie können als NPCs, Bewohner ihrer Heimatwelt, Händler, Forscher, Techniker, Diplomaten und Begleiter auftreten.
+
+Eine spätere spielbare Charakteroption beziehungsweise geeignete Charaktertransformation kann ebenfalls vorgesehen werden.
+
+Die menschliche Hauptprotagonistin bleibt davon unabhängig.
+
+## 8.2 Biologische Charakterwerte
+
+Neben allgemeinen Charakterwerten benötigen Pyronoiden zusätzliche biologische Zustände.
+
+| Charakterwert | Funktion |
+|---|---|
+| Thermischer Zustand | Aktuelle Temperatur und thermische Funktionsfähigkeit |
+| Elektrochemische Reserve | Kurzfristig verfügbare Stoffwechselenergie |
+| Mineralische Versorgung | Verfügbare Stoffe für Stoffwechsel und Regeneration |
+| Hüllenintegrität | Zustand der äußeren Schutzstrukturen |
+| Flusskernstabilität | Zustand des zentralen Lebensorgans |
+| Informationsnetzwerk | Zustand der Wahrnehmungs- und Steuerungsfunktionen |
+| Regenerationszustand | Fortschritt biologischer Reparaturprozesse |
+
+Die endgültigen numerischen Werte werden im zentralen Balancingsystem definiert.
+
+## 8.3 Thermische Spielmechanik
+
+Die Temperatur beeinflusst die biologischen Funktionen des Charakters.
+
+In geeigneten Hochtemperaturregionen erreichen Pyronoiden ihre gewöhnliche Leistungsfähigkeit.
+
+Sinkt die Temperatur deutlich ab, verlangsamen sich Stoffwechsel und Bewegung.
+
+Bei extremer oder lang anhaltender Abkühlung können schwere Funktionsstörungen entstehen.
+
+Wird ein kritischer Zustand erreicht, kann der Charakter in Kältestarre übergehen.
+
+Die Kältestarre ist nicht automatisch tödlich.
+
+Eine rechtzeitige Wiedererwärmung und medizinische Stabilisierung können die Lebensfunktionen wiederherstellen.
+
+## 8.4 Temperaturbereiche
+
+Für den ersten Gameplay-Entwurf werden folgende Zustände verwendet:
+
+**Optimaler Bereich:** Ungefähr 500–800 °C Umgebungstemperatur bei geeigneter Stoffversorgung.
+
+**Unterversorgung durch Kälte:** Unterhalb des bevorzugten Bereichs nimmt die Leistungsfähigkeit abhängig von Dauer und individueller Anpassung ab.
+
+**Kritische Abkühlung:** Unter ungefähr 300 °C treten bei vielen Individuen deutliche Funktionsstörungen auf.
+
+**Kältestarre:** Bei stärkerer oder länger anhaltender Abkühlung möglich.
+
+**Thermische Überlastung:** Oberhalb der individuellen Material- und Stoffwechselgrenzen.
+
+Diese Bereiche werden nicht als sofortige feste Schadensschwellen umgesetzt.
+
+Die tatsächliche Wirkung hängt von Expositionsdauer, Körperzustand, Ausrüstung und Formgruppe ab.
+
+## 8.5 Wärmehaushalt und Energieverbrauch
+
+Die Temperaturmechanik berücksichtigt die Aufnahme und Abgabe von Wärme.
+
+Besondere Aktivitäten können zusätzliche Energie benötigen.
+
+Dazu gehören intensive Bewegung, beschleunigte Regeneration und bestimmte thermische Fähigkeiten.
+
+Pyronoiden können keine unbegrenzte Energie aus ihrer Umgebung gewinnen.
+
+Chemische Versorgung und nutzbare Wärmegradienten bleiben wesentliche Voraussetzungen.
+
+## 8.6 Kälteschäden
+
+Kälte kann unterschiedliche Auswirkungen haben:
+
+- Reduzierte Bewegungsgeschwindigkeit
+- Langsamere Informationsverarbeitung
+- Verringerte Regenerationsfähigkeit
+- Eingeschränkte Sinnesleistung
+- Erhöhter Bedarf an gespeicherter Energie
+- Störungen einzelner Organsysteme
+- Kältestarre
+- Irreversible Schäden bei extremer oder zu langer Belastung
+
+Diese Folgen sollen abgestuft und nicht als ausschließlich binärer Zustand umgesetzt werden.
+
+## 8.7 Vorteile in Hitzegebieten
+
+Pyronoiden besitzen deutliche Vorteile innerhalb geeigneter vulkanischer Umgebungen.
+
+Sie benötigen dort wesentlich weniger thermische Schutztechnik als viele andere intelligente Spezies.
+
+Sie können heiße Rohstoffgebiete betreten, geothermische Anlagen warten und bestimmte gefährliche Umgebungen erkunden.
+
+Ihre Widerstandsfähigkeit bleibt abhängig von Temperatur, Chemie und mechanischen Belastungen.
+
+## 8.8 Kontakt mit Lava
+
+Einzelne Formgruppen können geeignete Schmelzen kurzfristig betreten.
+
+Besonders Lavasaumpyronoiden erhalten entsprechende biologische Vorteile.
+
+Der Aufenthalt in Lava bleibt jedoch gefährlich.
+
+Die Spielmechanik berücksichtigt:
+
+- Temperatur der Schmelze
+- Chemische Zusammensetzung
+- Dauer des Kontakts
+- Belastung der Außenhülle
+- Tiefe und mechanische Widerstände
+- Biologische Formgruppe
+- Zusätzliche Schutztechnik
+
+Lava ist damit kein universell ungefährliches Bewegungsmedium für die gesamte Spezies.
+
+## 8.9 Biologische Formgruppen
+
+### Schachtpyronoiden
+
+Mögliche spielmechanische Vorteile:
+
+- Höhere Stabilität bei mechanischer Belastung
+- Verbesserte Bewegung auf schwierigem Felsuntergrund
+- Spezialisierte seismische Wahrnehmung
+
+### Lavasaumpyronoiden
+
+Mögliche Vorteile:
+
+- Höhere kurzfristige Hitzetoleranz
+- Widerstandsfähigere Außenhülle
+- Bessere Eignung für bestimmte Schmelzrandregionen
+
+### Aschepyronoiden
+
+Mögliche Vorteile:
+
+- Höhere Mobilität
+- Bessere Anpassung an Temperaturschwankungen
+- Vorteile bei der Orientierung auf offenen vulkanischen Flächen
+
+### Schlackenfeldpyronoiden
+
+Mögliche Vorteile:
+
+- Spezialisierte mineralische Stoffaufnahme
+- Effizientere Verarbeitung bestimmter Rohstoffe
+- Verbesserte chemische Analyse geeigneter Materialien
+
+Die Formgruppen sind biologische Varianten, keine festen Charakterklassen.
+
+## 8.10 Charakterentwicklung
+
+Pyronoiden verwenden das klassenfreie Entwicklungssystem von APORIA.
+
+Individuen können Fähigkeiten durch Erfahrung, Forschung, Ausbildung und Ausrüstung verbessern.
+
+Biologische Eigenschaften definieren die natürlichen Ausgangsmöglichkeiten.
+
+Erworbene Fähigkeiten bleiben davon getrennt.
+
+Nicht jede Formgruppe erhält exklusiven Zugang zu bestimmten Berufen oder gesellschaftlichen Tätigkeiten.
+
+## 8.11 Thermische Wahrnehmung
+
+Die natürlichen Sinne ermöglichen besondere Wahrnehmungsmodi.
+
+**Thermische Analyse:** Anzeige geeigneter Wärmesignaturen.
+
+**Seismische Wahrnehmung:** Erkennung bestimmter Erschütterungen und Bewegungen durch feste Materialien.
+
+**Chemische Analyse:** Erfassung geeigneter Gase, Mineralien und Stoffveränderungen.
+
+**Elektromagnetische Wahrnehmung:** Erkennung bestimmter elektrischer und magnetischer Auffälligkeiten.
+
+Die Fähigkeiten besitzen begrenzte Reichweite und Genauigkeit.
+
+## 8.12 Kommunikation im Gameplay
+
+Pyronoiden verwenden ihre natürlichen Resonanzsprachen und ergänzende Lichtsignale.
+
+Fremde Spezies benötigen geeignete Übersetzungssysteme, um komplexe Aussagen vollständig zu verstehen.
+
+Kommunikation kann abhängig von Atmosphäre und Umgebung unterschiedlich funktionieren.
+
+In luftleeren Räumen werden technische Übertragungssysteme oder geeignete alternative Signalkanäle verwendet.
+
+## 8.13 Fortbewegung
+
+Die vier tragenden Gliedmaßen ermöglichen stabile Bewegung auf unebenem Untergrund.
+
+Die Bewegungsanimationen unterscheiden sich deutlich von humanoiden Bewegungsabläufen.
+
+Besondere Bewegungszustände können sein:
+
+- Normales Gehen
+- Beschleunigtes Laufen
+- Klettern
+- Bewegung auf geneigten Felsflächen
+- Vorsichtige Bewegung über instabile Oberflächen
+- Bewegung unter hoher thermischer Belastung
+- Bewegung mit beschädigter Hülle
+
+Die hohe Körpermasse beeinflusst Beschleunigung, Sprungverhalten und mechanische Belastungen.
+
+## 8.14 Kampfmechanik
+
+Pyronoiden verfügen über natürliche mechanische Widerstandsfähigkeit.
+
+Ihre Körpermasse und Gliedmaßen ermöglichen kraftvolle körperliche Angriffe.
+
+Bestimmte Kontaktangriffe können thermische Schäden verursachen.
+
+Die Wirkung hängt von Temperatur, Kontaktfläche und Einwirkungsdauer ab.
+
+Pyronoiden können nicht automatisch beliebige Feuergeschosse erzeugen oder unbegrenzt Hitze ausstrahlen.
+
+Besondere thermische Angriffe müssen biologisch oder technisch begründet sein.
+
+## 8.15 Waffen
+
+Waffen werden an die Anatomie und die hohen Betriebstemperaturen angepasst.
+
+Geeignete Waffentypen umfassen mechanische Nahkampfwaffen und technisch unterstützte Systeme.
+
+Interstellare Waffentechnik kann mit passenden Materialien und Schutzsystemen verwendet werden.
+
+Nicht sämtliche Waffen anderer Spezies sind ohne Anpassung kompatibel.
+
+## 8.16 Rüstungen
+
+Pyronoidische Rüstungen müssen sowohl mechanischen Schutz als auch thermische Stabilität bieten.
+
+Die Konstruktion berücksichtigt die sechs Hauptgliedmaßen und die mineralische Außenhülle.
+
+Rüstungen können zusätzliche Sensoren, Energiespeicher und chemische Schutzsysteme enthalten.
+
+Sie dürfen die natürlichen Versorgungs- und Wärmeleitungsfunktionen nicht unkontrolliert blockieren.
+
+## 8.17 Ausrüstung für kalte Umgebungen
+
+Auf vielen fremden Planeten benötigen Pyronoiden thermisch kontrollierte Schutzsysteme.
+
+Mögliche Ausrüstungsgruppen sind:
+
+- Tragbare Heizmodule
+- Isolierte Außenhüllen
+- Energiepuffer
+- Chemische Versorgungsbehälter
+- Temperaturüberwachung
+- Notfall-Wärmespeicher
+- Thermisch kontrollierte Ruhekammern
+
+Ohne geeignete Versorgung ist ein langfristiger Aufenthalt in kalten Umgebungen nur eingeschränkt möglich.
+
+## 8.18 Regeneration
+
+Die natürliche Regeneration benötigt Wärme, geeignete mineralische Stoffe und Zeit.
+
+Kleinere Oberflächenverletzungen können ohne umfangreiche medizinische Behandlung ausheilen.
+
+Größere Schäden erfordern besondere Materialien oder medizinische Versorgung.
+
+Schwere Schäden am Flusskern und am Informationsnetzwerk können dauerhaft bestehen bleiben.
+
+## 8.19 Medizinisches Gameplay
+
+Medizinische Einrichtungen müssen an die pyronoidische Biologie angepasst sein.
+
+Mögliche Behandlungsmaßnahmen sind:
+
+- Stabilisierung des Wärmehaushalts
+- Entfernung schädlicher Mineralablagerungen
+- Versorgung mit geeigneten chemischen Reaktionspartnern
+- Reparatur beschädigter Außenstrukturen
+- Behandlung ionischer Leitungsstörungen
+- Stabilisierung des Flusskerns
+- Untersuchung biologischer Entwicklungsfehler
+
+Die medizinischen Verfahren unterscheiden sich von jenen wasserbasierter Spezies.
+
+## 8.20 Fortpflanzung und Nachwuchs
+
+Falls das allgemeine Spielsystem Fortpflanzung, Familien oder biologische Nachkommen unterstützt, werden die Besonderheiten der Pyronoiden berücksichtigt.
+
+Die Fortpflanzung erfolgt durch kompatible Erbinformation und geschützte Brutkörper.
+
+Nachkommen besitzen individuelle biologische Eigenschaften.
+
+Die Entwicklung benötigt geeignete thermische Bedingungen.
+
+Erbliche Formgruppenmerkmale können zwischen kompatiblen Eltern kombiniert werden.
+
+## 8.21 Genetik und Evolution
+
+Die thermoionische Erbmatrix wird als eigener biologischer Informationstyp im allgemeinen Genetiksystem behandelt.
+
+Relevante Eigenschaften sind:
+
+- Erbliche Formgruppenmerkmale
+- Körperbau
+- Mineralische Hüllenzusammensetzung
+- Temperaturtoleranz
+- Stoffwechselvarianten
+- Sinnesleistungen
+- Regenerationsanlagen
+- Entwicklungsregulation
+
+Künstliche Veränderungen können über entsprechende Forschungs- und Technologiesysteme ermöglicht werden.
+
+Die dafür geltenden Grenzen werden durch wissenschaftliche Voraussetzungen und Balancing bestimmt.
+
+## 8.22 Rohstoffe
+
+Für die pyronoidische Biologie und Technologie werden spezialisierte Materialien benötigt.
+
+Relevante Rohstoffgruppen sind:
+
+- Silikatische Mineralien
+- Metallhaltige Verbindungen
+- Schwefelhaltige Stoffe
+- Leitfähige Mineralmischungen
+- Temperaturbeständige Verbundmaterialien
+- Chemische Energieträger
+- Materialien zur Regeneration der Außenhülle
+
+Die genaue Einteilung erfolgt innerhalb des allgemeinen Rohstoffsystems von APORIA.
+
+## 8.23 Herstellung
+
+Pyronoiden besitzen besondere Hochtemperatur-Verarbeitungstechniken.
+
+Daraus ergeben sich spezielle Werkzeuge, Maschinen und Herstellungsverfahren.
+
+Mögliche Produktionsgruppen sind:
+
+- Hochtemperaturkeramiken
+- Speziallegierungen
+- Mineralische Verbundwerkstoffe
+- Geothermische Energietechnik
+- Thermische Schutzsysteme
+- Chemische Reaktionsanlagen
+- Spezialisierte biologische Versorgungstechnik
+
+Diese Technologien werden in das allgemeine Herstellungs- und Werkstattsystem integriert.
+
+## 8.24 Wissenschaftliche Forschung
+
+Die Spezies wird in die vorhandenen APORIA-Forschungszweige eingebunden.
+
+Besonders relevant sind:
+
+**Xenobiologie:** Erforschung mineralisch-thermoionischer Organismen.
+
+**Genetik und Biotechnologie:** Analyse der Erbmatrix und ihrer Regulationssysteme.
+
+**Medizin:** Behandlung speziesbezogener Erkrankungen.
+
+**Planetologie:** Untersuchung vulkanisch aktiver Planeten.
+
+**Geologie:** Analyse tektonischer und magmatischer Prozesse.
+
+**Werkstoffkunde:** Erforschung temperaturbeständiger biologischer und technischer Materialien.
+
+**Energietechnik:** Entwicklung chemischer und thermischer Energiesysteme.
+
+**Bewusstseinsforschung:** Untersuchung dezentraler biologischer Informationsnetzwerke.
+
+Diese Forschungsinhalte werden als Unterthemen in die vorhandene Forschungsstruktur eingebunden.
+
+## 8.25 Siedlungsbau
+
+Pyronoidische Siedlungen benötigen geothermische oder technische Wärmeversorgung.
+
+Wichtige Bauwerke sind:
+
+- Wohnkammern
+- Wärmeversorgungsstationen
+- Mineralverarbeitungsanlagen
+- Brutstätten
+- Regenerationskammern
+- Medizinische Einrichtungen
+- Forschungslabore
+- Geologische Überwachungsstationen
+- Transportanlagen
+- Handelsstationen
+
+Die Gebäude müssen an hohe Temperaturen und teilweise hohe mechanische Belastungen angepasst sein.
+
+## 8.26 Gemischte Siedlungen
+
+Das Zusammenleben mit anderen Spezies erfordert thermisch getrennte Wohnbereiche.
+
+Gemeinsame Infrastruktur kann über geschützte Übergangszonen verbunden werden.
+
+Technische Ausfälle können unterschiedliche biologische Gefahren für die Bewohner auslösen.
+
+Die Temperaturversorgung wird deshalb Bestandteil der Siedlungssimulation.
+
+## 8.27 Fahrzeuge und Raumfahrt
+
+Pyronoiden benötigen für den Aufenthalt in Fahrzeugen geeignete Innenraumtemperaturen und chemische Versorgung.
+
+Ihre Raumschiffe besitzen thermisch kontrollierte Aufenthaltsbereiche.
+
+Gemischte Besatzungen verwenden voneinander getrennte Umweltzonen.
+
+Die Temperaturregelung ist ein Bestandteil der Energieversorgung.
+
+Bei längerem Ausfall können lebensgefährliche Zustände entstehen.
+
+## 8.28 NPC-Verhalten
+
+Pyronoidische NPCs berücksichtigen ihre Umweltanforderungen.
+
+Sie können:
+
+- Geeignete Wärmebereiche suchen
+- Rohstoffe beschaffen
+- Thermische Gefahren erkennen
+- Brutstätten schützen
+- Beschädigte Infrastruktur reparieren
+- Ruhephasen einhalten
+- Auf geologische Warnungen reagieren
+- Bei Kälte Schutzräume aufsuchen
+- Eigene berufliche Tätigkeiten ausführen
+
+Zusätzlich werden Entscheidungen durch Persönlichkeit, Kultur, Ausbildung und individuelle Ziele beeinflusst.
+
+## 8.29 Gesellschaftliche NPC-Rollen
+
+Geeignete Rollen sind:
+
+- Geologen
+- Mineraltechniker
+- Wissenschaftler
+- Mediziner
+- Händler
+- Bergarbeiter
+- Ingenieure
+- Politiker
+- Künstler
+- Sicherheitskräfte
+- Diplomaten
+- Lehrer
+- Forscher
+- Raumfahrer
+
+Biologische Formgruppen schreiben keine dieser Berufe zwingend vor.
+
+## 8.30 Handel
+
+Spieler können mit pyronoidischen Gemeinschaften Rohstoffe, Technologien und Dienstleistungen austauschen.
+
+Besonders wertvoll können Hochtemperaturwerkstoffe und spezialisierte geologische Technologien sein.
+
+Handelsbeziehungen werden durch politische Entscheidungen, lokale Ressourcen und Fraktionsbeziehungen beeinflusst.
+
+## 8.31 Diplomatie
+
+Spieler können Beziehungen zu unterschiedlichen pyronoidischen Gemeinschaften aufbauen.
+
+Politische Entscheidungen können Einfluss auf einzelne Städte oder den Bund der Schachtstädte besitzen.
+
+Die Beziehungen zu Konföderation, Konsortium, Protektorat, Synaptorat und Ätherwanderern können in entsprechenden Missionen eine Rolle spielen.
+
+Nicht alle pyronoidischen Organisationen vertreten dieselben politischen Interessen.
+
+## 8.32 Missionstypen
+
+### Geologische Erforschung
+
+Untersuchung gefährlicher Vulkanlandschaften und geothermischer Systeme.
+
+### Katastrophenschutz
+
+Rettung von Bewohnern und Stabilisierung kritischer Versorgungsanlagen.
+
+### Xenobiologische Forschung
+
+Erforschung der Erbmatrix und besonderer biologischer Fähigkeiten.
+
+### Medizinische Missionen
+
+Beschaffung spezieller Materialien und Behandlung seltener Erkrankungen.
+
+### Rohstoffkonflikte
+
+Entscheidungen über wirtschaftliche Nutzung und Schutz empfindlicher Gebiete.
+
+### Archäologie
+
+Erforschung alter Schachtstädte und verlorener Archive.
+
+### Diplomatie
+
+Vermittlung zwischen politischen Organisationen und interstellaren Fraktionen.
+
+### Technologieentwicklung
+
+Entwicklung neuer Wärmeschutz- und Hochtemperatursysteme.
+
+## 8.33 Welt- und Umweltinteraktion
+
+Pyronoiden können Umgebungen nutzen, die für andere Spezies schwer zugänglich sind.
+
+Daraus entstehen eigenständige Erkundungswege und Interaktionsmöglichkeiten.
+
+Beispiele sind heiße Höhlensysteme, Vulkanregionen, geothermische Forschungsanlagen und spezielle Rohstofffelder.
+
+Andere Umweltgefahren bleiben wirksam.
+
+Hoher Druck, mechanische Schäden und ungeeignete Chemie können weiterhin gefährlich sein.
+
+## 8.34 Balancing
+
+Pyronoiden erhalten deutliche biologische Vorteile in geeigneten Hochtemperaturgebieten.
+
+Dem stehen Einschränkungen in kalten Regionen und besondere Ausrüstungsanforderungen gegenüber.
+
+Eine hohe Hitzetoleranz bedeutet nicht automatisch hohe Resistenz gegen sämtliche Schadensarten.
+
+Die individuelle Leistungsfähigkeit wird durch Formgruppe, Entwicklung, Ausrüstung und körperlichen Zustand beeinflusst.
+
+Die Spezies soll innerhalb des klassenfreien Spielsystems eigenständig, aber nicht grundsätzlich überlegen sein.
+
+## 8.35 Save/Load-Integration
+
+Pyronoidische Charaktere werden in das zentrale Persistenzsystem eingebunden.
+
+Wichtige dauerhaft zu speichernde Daten sind:
+
+- CharacterID
+- Spezieszugehörigkeit
+- Biologische Formgruppe
+- Erbliche Merkmale
+- Entwicklungsphase
+- Individuelle Körpermerkmale
+- Körperintegrität
+- Flusskernzustand
+- Informationsnetzwerkzustand
+- Thermische Reserven
+- Mineralische Versorgung
+- Erkrankungen und Verletzungen
+- Erlernte Fähigkeiten
+- Persönliche Entwicklung
+- Zugehörigkeiten
+- Inventar
+- Fortpflanzungs- und Brutkörperzustände, sofern relevant
+
+Die Identität eines Charakters bleibt unabhängig von seiner aktuellen Unreal-Actor-Darstellung.
+
+## 8.36 Technische Systemtrennung
+
+Die biologische Simulation wird von ihrer visuellen Darstellung getrennt.
+
+Dauerhafte Charakterdaten gehören in die allgemeinen Daten- und Persistenzsysteme.
+
+Animationen, Partikeleffekte und sichtbare Wärmemuster werden aus den jeweiligen Charakterzuständen abgeleitet.
+
+Nicht jede kurzfristige visuelle Veränderung muss dauerhaft gespeichert werden.
+
+Die Trennung erleichtert später die Anpassung an neue Unreal-Engine-Versionen.
+
+## 8.37 Animation
+
+Die Pyronoiden benötigen ein eigenständiges Bewegungs- und Animationskonzept.
+
+Die sechs Gliedmaßen unterscheiden sich von der gewöhnlichen humanoiden Skelettstruktur.
+
+Zusätzlich sollten folgende Zustände berücksichtigt werden:
+
+- Bewegliche mineralische Platten
+- Leuchtende Kommunikationskanäle
+- Temperaturabhängige Oberflächenveränderungen
+- Mechanische Körperresonanzen
+- Langsame Ruhebewegungen
+- Kältestarre
+- Regeneration beschädigter Strukturen
+
+Die Animation wird an die endgültigen visuellen Formgruppen angepasst.
+
+## 8.38 Visuelle Effekte
+
+Geeignete visuelle Merkmale sind:
+
+- Dunkle mineralische Außenhülle
+- Kontrollierte Oberflächenemission
+- Temperaturabhängige Leuchtmuster
+- Bewegliche Panzersegmente
+- Sichtbare Wärmekanäle
+- Gelegentliche lokale Glüherscheinungen
+- Unterschiede zwischen den Formgruppen
+
+Ständige großflächige Flammen sind nicht erforderlich.
+
+Die Hitzeanpassung soll durch glaubwürdige biologische Strukturen dargestellt werden.
+
+## 8.39 Sounddesign
+
+Für Pyronoiden sind eigenständige Körper- und Kommunikationsgeräusche vorgesehen.
+
+### Körpergeräusche
+
+- Mineralisches Knacken
+- Tiefe innere Resonanzen
+- Reibung beweglicher Panzerplatten
+- Langsame strukturelle Verschiebungen
+- Kontrollierte Stofftransportgeräusche
+
+### Kommunikation
+
+- Tiefe pulsierende Resonanzmuster
+- Mechanische Klickfolgen
+- Kurze vibrierende Signale
+- Mehrschichtige Rufmuster
+- Rhythmische Kontaktkommunikation
+
+### Musik
+
+- Tieffrequente Resonanzinstrumente
+- Rhythmische mineralische Percussion
+- Langsame Schwingungssequenzen
+- Kurze zeremonielle Motive
+- Technisch modulierte Resonanzklänge
+
+Für das spätere Soundpaket sind kurze, einzeln verwendbare WAV-Samples vorgesehen.
+
+## 8.40 Medienintegration
+
+Die Spezies erhält im APORIA-Weltenarchiv eigene Medienmodule.
+
+Vorgesehen sind:
+
+- Standardansicht der Spezies
+- Vier biologische Formgruppen
+- Anatomische Darstellung
+- Flusskern und Informationsnetzwerk
+- Fortpflanzung und Entwicklungsstadien
+- Heimatplanet Kharuun
+- Flora und Fauna
+- Architektur und Städte
+- Kultur und Kunst
+- Technologie und Ausrüstung
+- Körper- und Kommunikationssounds
+- Kurze musikalische Motive
+- Videos zu Biologie und Lebensräumen
+
+Die Medien werden separat verwaltet und mit dem Speziesdossier verknüpft.
+
+## 8.41 Langfristige Spielentwicklung
+
+Die Pyronoiden können durch spätere Forschung zusätzliche Ausrüstung, medizinische Verfahren und biologische Anpassungsmöglichkeiten erhalten.
+
+Auch neue Siedlungsformen und außerplanetare Lebensräume sind möglich.
+
+Die Spezies bietet dadurch langfristige Entwicklungsmöglichkeiten in den Bereichen Überleben, Forschung, Herstellung, Politik und Erkundung.
+
+Die biologischen Grundregeln bleiben dabei erhalten.
+
+## 8.42 Spielmechanische Gesamtrolle
+
+Die Pyronoiden erweitern das APORIA-Universum um eine intelligente Spezies, deren Fähigkeiten und Schwierigkeiten unmittelbar aus ihrer extremen Hitzeanpassung entstehen.
+
+Sie sind keine gewöhnlichen Feuerwesen.
+
+Ihre Spielmechaniken beruhen auf biologischen Prozessen, chemischer Versorgung, thermischer Regulation und einer eigenständigen technologischen Entwicklung.
+
+Dadurch erhalten sie eine klar unterscheidbare Rolle innerhalb des gemeinsamen Spielsystems.
