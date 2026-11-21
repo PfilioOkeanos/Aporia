@@ -1,0 +1,5 @@
+# Gravanten – Forschung
+
+**Stand** – Konzeptgrundlage mit Ausarbeitungsideen.
+
+klCcqnE9ye2C91mujLeAKHTpPmJ4GIGocx0Rv3uxqWUJbQtwvDrcyH18Ij2vRCgFLizxCaAEnxcMFTXFQ505rTk7vzaV2XNjcBQfZ29gFqLxStGYq1JDQy5Bg27kUhwQwI8RptI2upG4wo-aNL7zfiS9ijgNeILAUVHGu4JwpoY

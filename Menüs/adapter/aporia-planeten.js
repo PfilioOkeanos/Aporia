@@ -14,6 +14,20 @@ export function getPlanetDossierUrl(planet) {
     return new URL("details/" + encodeURIComponent(planet) + "/hauptseite/index.html", getAporiaRoute("planeten")).href;
 }
 
+/** Link in den Artenkatalog (Flora & Fauna), optional gefiltert: { planet, kategorie, art, gruppe, lebensraum }. */
+export function getArtenKatalogUrl(filter = {}) {
+    const url = new URL(getAporiaRoute("flora-fauna-katalog"));
+    for (const [schluessel, wert] of Object.entries(filter)) if (wert) url.searchParams.set(schluessel, wert);
+    return url.href;
+}
+
+/** Link in den Rohstoffkatalog, optional auf einen Planeten gefiltert. */
+export function getRohstoffKatalogUrl(planet) {
+    const url = new URL(getAporiaRoute("rohstoffe"));
+    if (planet) url.searchParams.set("planet", planet);
+    return url.href;
+}
+
 let verzeichnis;
 async function ladeVerzeichnis() {
     const karten = await loadCelestialCatalog("planeten").catch(() => []);

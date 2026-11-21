@@ -1,1 +1,1 @@
-import "../Spezies.js";
+import "../mykonoiden-basis.js";

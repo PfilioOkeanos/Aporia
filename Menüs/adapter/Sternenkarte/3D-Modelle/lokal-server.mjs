@@ -150,7 +150,7 @@ async function statischeDatei(request, response, pathname) {
         : resolve(projekt, "." + (name === "/" ? "/index.html" : name));
     const erlaubt = bibliothek ? ["build", "examples"].some(teil => imOrdner(pfad, resolve(threeOrdner, teil)))
         : ["Menüs", "assets", "inhalte", "Info_material"].some(teil => imOrdner(pfad, resolve(projekt, teil))) ||
-            ["index.html", "Hauptseite.html", "Waldfeen.html"].some(teil => pfad === resolve(projekt, teil));
+            pfad === resolve(projekt, "index.html");
     const typ = mime[extname(pfad).toLowerCase()];
     if (!erlaubt || !typ || await realpath(pfad).catch(() => null) !== pfad) {
         if (bibliothek) throw fehler(404, "Lokales Three.js fehlt. Führe einmal npm install aus.");

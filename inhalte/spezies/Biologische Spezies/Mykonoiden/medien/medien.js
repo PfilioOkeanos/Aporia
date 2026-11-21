@@ -1,6 +1,6 @@
 import { mountGalleryZoom } from "../../../_gemeinsam/galerie-zoom.js";
 import "../../../_gemeinsam/medien-player.js";
-import "../Spezies.js";
+import "../mykonoiden-basis.js";
 
 const allTiles = [...document.querySelectorAll(".rail .tile")];
 let tiles = allTiles;

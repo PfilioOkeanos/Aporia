@@ -4,19 +4,12 @@
 //             <script type="module" src="…/inhalte/Flora%20%26%20Fauna/Katalog/planet-leben.js"></script>
 // Optional:   data-planet-leben-vorschau="12"  (Anzahl der Vorschaubilder, 0 = keine)
 //             data-planet-leben-nur="Pflanzen,Tiere,Pilze,Rohstoffe"  (welche Kacheln)
-import { getAporiaRoute } from "../../../Men%C3%BCs/adapter/aporia-routes.js";
-import { getPlanetInfo } from "../../../Men%C3%BCs/adapter/aporia-planeten.js";
-import { ladeArten, katalogUrl, KATEGORIEN } from "./flora-daten.js";
+import { getPlanetInfo, getArtenKatalogUrl, getRohstoffKatalogUrl } from "../../../Men%C3%BCs/adapter/aporia-planeten.js";
+import { ladeArten, KATEGORIEN } from "./flora-daten.js";
 
 const ROHSTOFFE = new URL("../../Rohstoffe/daten/rohstoffe.json", import.meta.url);
 let rohstoffeLaden;
 const ladeRohstoffe = () => (rohstoffeLaden ??= fetch(ROHSTOFFE).then((r) => (r.ok ? r.json() : {})).catch(() => ({})));
-
-export function rohstoffKatalogUrl(planet) {
-    const url = new URL(getAporiaRoute("rohstoffe"));
-    if (planet) url.searchParams.set("planet", planet);
-    return url.href;
-}
 
 function el(tag, text, klasse) {
     const knoten = document.createElement(tag);
@@ -39,13 +32,13 @@ async function aufbauen(ziel) {
     for (const [kategorie, zeichen, text] of KATEGORIEN) {
         if (!nur.includes(kategorie)) continue;
         const a = el("a", "", "planet-leben-kachel");
-        a.href = katalogUrl({ planet: slug, kategorie });
+        a.href = getArtenKatalogUrl({ planet: slug, kategorie });
         a.append(el("i", zeichen), el("b", String(hier.filter((x) => x.kategorie === kategorie).length)), el("span", `${text} von ${planet.name}`));
         kacheln.append(a);
     }
     if (nur.includes("Rohstoffe")) {
         const a = el("a", "", "planet-leben-kachel planet-leben-kachel--roh");
-        a.href = rohstoffKatalogUrl(slug);
+        a.href = getRohstoffKatalogUrl(slug);
         a.append(el("i", "⬡"), el("b", String(rohHier.length)), el("span", `Rohstoffe von ${planet.name}`));
         kacheln.append(a);
     }
@@ -60,7 +53,7 @@ async function aufbauen(ziel) {
         for (const art of auswahl) {
             const li = el("li");
             const a = el("a");
-            a.href = katalogUrl({ planet: slug, art: art.id });
+            a.href = getArtenKatalogUrl({ planet: slug, art: art.id });
             a.title = art.name;
             const bild = el("img");
             bild.src = art.bildUrl;
@@ -75,7 +68,7 @@ async function aufbauen(ziel) {
     }
     const fuss = el("p", "", "planet-leben-fuss");
     const alle = el("a", `Gesamten Artenkatalog von ${planet.name} öffnen →`);
-    alle.href = katalogUrl({ planet: slug });
+    alle.href = getArtenKatalogUrl({ planet: slug });
     fuss.append(alle);
     if (!hier.length) fuss.prepend(el("span", "Noch nicht ausgearbeitet · ", "planet-leben-offen"));
     ziel.append(fuss);
