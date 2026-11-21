@@ -1,0 +1,27 @@
+/* Lithoiden – Medien
+   Gemeinsames Design: lithoiden-basis.css, Player/Assets: _gemeinsam/medien-player.css
+   Hier: Galerie (großes Motiv + Vorschau) und Medienbereiche. */
+.li-medien-raster { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); gap: .9rem; align-items: start; }
+.li-medien-feature { margin: 0; min-width: 0; }
+.li-medien :is(.li-medien-galerie, .li-medien-bereich, dialog) :is(button, select) { border: 1px solid var(--li-linie-hell); border-radius: 9px; background: #1f2338; color: var(--li-text); font: 600 .82rem/1.2 "Segoe UI", system-ui, sans-serif; }
+.li-medien :is(.li-medien-galerie, .li-medien-bereich, dialog) button { cursor: pointer; }
+.li-medien :is(.li-medien-galerie, .li-medien-bereich, dialog) :is(button, select):hover { border-color: var(--li-violett); }
+.li-medien .feature-open, .li-medien-vorschau button { display: block; width: 100%; padding: 0; overflow: hidden; }
+.li-medien .feature-open { cursor: zoom-in; border-radius: 14px; }
+.li-medien .feature-open img { width: 100%; aspect-ratio: 16 / 10; object-fit: contain; background: #07080d; }
+.li-medien-steuerung { display: flex; align-items: center; justify-content: space-between; gap: .5rem; padding-top: .5rem; }
+.li-medien-steuerung output { min-width: 0; color: var(--li-leise); font-size: .85rem; text-align: center; overflow-wrap: anywhere; }
+.li-medien .control { padding: .3rem .7rem; }
+.li-medien-vorschau { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .5rem; }
+.li-medien-vorschau img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; filter: saturate(.8) brightness(.85); transition: filter .2s; }
+.li-medien-vorschau button:hover img, .li-medien-vorschau button[aria-pressed="true"] img { filter: none; }
+.li-medien .li-medien-vorschau button[aria-pressed="true"] { border-color: var(--li-violett); box-shadow: 0 0 .9rem #b48cff66; }
+.li-medien-galerie label { display: grid; gap: .3rem; margin-top: .7rem; color: var(--li-leise); font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; }
+.li-medien-galerie select { width: 100%; padding: .45rem; text-transform: none; letter-spacing: 0; }
+.li-medien-bereich { display: grid; gap: .6rem; }
+.li-medien .media-player-card { padding: .75rem .85rem; }
+.li-medien .media-player-card h3 { margin-bottom: .4rem; font: 600 1rem/1.3 var(--li-serif); }
+.li-medien .media-status, .li-medien .asset-catalog [role="status"] { color: var(--li-leise); font-style: italic; font-size: .88rem; }
+.li-medien #ansicht img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; border-radius: 12px; }
+.li-medien :is(video, audio) { width: 100%; }
+@container (max-width: 900px) { .li-medien-raster { grid-template-columns: minmax(0, 1fr); } .li-medien-vorschau { grid-template-columns: repeat(3, minmax(0, 1fr)); } }

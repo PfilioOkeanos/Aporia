@@ -1,0 +1,242 @@
+/* Pyronoiden – gemeinsames Basisdesign „Obsidian & Glut“
+   Nach der Designvorlage assets/…/Pyronoiden/Design/Dunkles Weltenarchiv_ Pyronoiden von Kharuun.png.
+   Wird von der Hauptseite und allen Unterseiten geladen; Seitenspezifisches steht in der jeweiligen Seiten-CSS. */
+
+.pyronoiden {
+    --py-bg: #0d0908;
+    --py-glas: #1a1210d9;
+    --py-glas-hell: #24170fe6;
+    --py-linie: #ff7a2a3d;
+    --py-linie-hell: #ff9a4d99;
+    --py-violett: #ff7a2a;
+    --py-violett-hell: #ffc58a;
+    --py-cyan: #ffb347;
+    --py-text: #f3e7dc;
+    --py-leise: #b9a596;
+    --py-serif: "Cormorant Garamond", "Palatino Linotype", Georgia, "Times New Roman", serif;
+    --py-raum: clamp(.7rem, 1.4cqi, 1.1rem);
+    --aporia-page-tint: #c4561e;
+    --aporia-page-glass-light: #2a1a12;
+    --aporia-page-glass-dark: #0d0908;
+    --karussell-akzent: var(--py-cyan);
+    --karussell-linie: var(--py-linie);
+    --karussell-flaeche: #140d0a;
+    --karussell-text: var(--py-text);
+    --karussell-leise: var(--py-leise);
+    margin: 0;
+    background: var(--py-bg);
+    color: var(--py-text);
+    font: 1rem/1.6 "Segoe UI", system-ui, sans-serif;
+}
+.py-frame {
+    display: flex;
+    min-height: calc(100dvh - var(--aporia-topbar-height, 78px));
+    background:
+        radial-gradient(ellipse 45% 35% at 0% 85%, #d2461e33, transparent 70%),
+        radial-gradient(ellipse 40% 30% at 100% 95%, #ff9a3c2b, transparent 70%),
+        radial-gradient(ellipse 60% 40% at 70% 0%, #7a1e1022, transparent 70%),
+        linear-gradient(180deg, #140d0a, var(--py-bg) 50%);
+}
+.py-dossier { flex: 1; min-width: 0; padding: clamp(.6rem, 1.3vw, 1.3rem); container-type: inline-size; overflow-x: clip; }
+.py-dossier :is(h1, h2, h3, p, dl, dd, ul, ol, figure) { margin: 0; }
+.py-dossier :is(p, li, dd, td) { hyphens: auto; overflow-wrap: break-word; }
+.py-dossier [id] { scroll-margin-top: calc(var(--aporia-topbar-height, 78px) + 1rem); }
+.py-dossier a { color: var(--py-violett-hell); }
+.py-dossier :is(a, button, summary, select):focus-visible { outline: 2px solid var(--py-cyan); outline-offset: 2px; }
+.py-dossier img { display: block; max-width: 100%; }
+
+/* ---------- Bausteine ---------- */
+.py-panel {
+    position: relative;
+    box-sizing: border-box;
+    min-width: 0;
+    border: 1px solid var(--py-linie);
+    border-radius: 14px;
+    background: linear-gradient(160deg, var(--py-glas-hell), var(--py-glas));
+    box-shadow: inset 0 1px 0 #ffffff10, 0 .6rem 1.6rem #0008;
+    backdrop-filter: blur(8px);
+}
+.py-block { padding: clamp(.9rem, 1.8cqi, 1.3rem); }
+.py-block > p + p, .py-ueber-text > p + p { margin-top: .5rem; }
+.py-kicker { color: var(--py-leise); font: 600 .7rem/1.3 "Segoe UI", system-ui, sans-serif; letter-spacing: .16em; text-transform: uppercase; }
+.py-h2 { display: flex; flex-wrap: wrap; align-items: baseline; gap: .2rem .6rem; margin-bottom: .8rem !important; color: var(--py-text); font: 600 clamp(1.15rem, 2cqi, 1.5rem)/1.2 var(--py-serif); }
+.py-h2 small { color: var(--py-leise); font-size: .78em; font-weight: 500; }
+.py-icon { display: inline-grid; place-items: center; width: 1.7em; height: 1.7em; border: 1px solid var(--py-linie-hell); border-radius: 50%; color: var(--py-violett); font: 600 .8em/1 "Segoe UI Symbol", system-ui, sans-serif; box-shadow: 0 0 .8rem #ff7a2a33; }
+.py-nr { color: var(--py-cyan); font: 600 .74rem/1 ui-monospace, Consolas, monospace; }
+.py-offen, .py-quelle { color: var(--py-leise); }
+.py-offen { font-style: italic; }
+.py-quelle { font-size: .76rem; }
+.py-fakten > div { display: grid; grid-template-columns: minmax(7rem, .8fr) minmax(0, 1.4fr); gap: .7rem; padding: .32rem 0; border-bottom: 1px solid #ffffff12; }
+.py-fakten dt { color: var(--py-leise); font-size: .85rem; }
+.py-fakten dd { font-size: .9rem; }
+.py-text ul, .py-ueber-text ul { display: grid; gap: .25rem; padding: 0; list-style: none; }
+.py-text ul li, .py-ueber-text ul li { position: relative; padding-left: 1.05rem; }
+.py-text ul li::before, .py-ueber-text ul li::before { content: ""; position: absolute; left: .1rem; top: .6em; width: .42rem; height: .42rem; background: var(--py-violett); clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%); box-shadow: 0 0 .4rem var(--py-violett); }
+.py-tabelle { overflow-x: auto; }
+.py-tabelle table { width: 100%; border-collapse: collapse; font-size: .9rem; }
+.py-tabelle :is(th, td) { padding: .4rem .6rem; border-bottom: 1px solid #ffffff14; text-align: left; vertical-align: top; }
+.py-tabelle th { color: var(--py-violett-hell); font-weight: 600; }
+.py-knopf, .py-mehr { display: inline-flex; align-items: center; gap: .4rem; text-decoration: none; }
+.py-knopf { padding: .4rem .9rem; border: 1px solid var(--py-linie-hell); border-radius: 10px; background: #2a1a12; color: var(--py-text) !important; font-size: .85rem; }
+.py-knopf:hover { border-color: var(--py-violett); box-shadow: 0 0 .9rem #ff7a2a44; }
+.py-mehr { margin-top: .7rem; color: var(--py-violett-hell) !important; font-size: .85rem; }
+.py-mehr:hover { color: var(--py-cyan) !important; }
+
+/* ---------- Kopf ---------- */
+.py-hero { position: relative; isolation: isolate; display: grid; grid-template-columns: minmax(0, 1fr); min-height: clamp(18rem, 34cqi, 27rem); margin-bottom: .8rem; overflow: hidden; border: 1px solid var(--py-linie); border-radius: 18px; background: #120b08; }
+.py-hero--reiter { min-height: clamp(13rem, 22cqi, 18rem); }
+.py-hero-bild { position: absolute; inset: 0 0 0 auto; z-index: -2; width: 70% !important; height: 100% !important; max-width: none !important; object-fit: cover; object-position: 60% 45%; mask-image: linear-gradient(90deg, transparent, #000 38%); }
+.py-hero::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, #0d0908f2 0, #0d0908c9 32%, transparent 64%), linear-gradient(0deg, #0d0908d9, transparent 45%); pointer-events: none; }
+.py-hero-text { align-self: center; max-width: min(36rem, 56%); padding: clamp(1rem, 3cqi, 2.4rem); }
+.py-pfad { display: flex; flex-wrap: wrap; gap: .35rem; margin-bottom: .7rem; color: var(--py-leise); font-size: .8rem; }
+.py-pfad a { color: var(--py-violett-hell) !important; text-decoration: none; }
+.py-hero h1 { color: #fff4ea; font: 600 clamp(2.4rem, 6.4cqi, 4.8rem)/1 var(--py-serif); text-shadow: 0 2px 18px #000; }
+.py-hero--reiter h1 { font-size: clamp(2rem, 4.6cqi, 3.4rem); }
+.py-unterzeile { margin-top: .4rem !important; color: var(--py-text); font: 500 clamp(1rem, 1.7cqi, 1.25rem)/1.35 var(--py-serif); }
+.py-intro { margin-top: .9rem !important; color: #e6d6c8; font-size: .95rem; line-height: 1.55; }
+/* Blickfang: Glanz wandert über das Kopfbild */
+.py-glanz { position: absolute; inset: 0; z-index: -1; background: linear-gradient(115deg, transparent 40%, #ffc58a22 48%, #ffb3471f 52%, transparent 60%) 0 0 / 250% 100%; animation: py-glanz 9s ease-in-out infinite; pointer-events: none; }
+@keyframes py-glanz { 0% { background-position: 100% 0; } 55%, 100% { background-position: -60% 0; } }
+.py-chips { display: grid; grid-template-columns: repeat(4, minmax(0, max-content)); gap: .6rem; align-self: end; padding: 0 clamp(1rem, 3cqi, 2.4rem) clamp(1rem, 2.4cqi, 1.8rem); }
+.py-chips > div { display: grid; gap: .1rem; padding: .55rem .9rem; border: 1px solid var(--py-linie-hell); border-radius: 12px; background: #1c130ed9; backdrop-filter: blur(6px); }
+.py-chips dt { color: var(--py-leise); font-size: .7rem; }
+.py-chips dd { margin: 0; font: 600 .95rem/1.25 var(--py-serif); }
+
+/* ---------- Reiterleiste ---------- */
+.py-reiter { display: flex; gap: .35rem; margin-bottom: 1rem; padding-bottom: .2rem; overflow-x: auto; scrollbar-width: thin; scrollbar-color: #ff7a2a66 transparent; }
+.py-reiter a { flex: 1 0 auto; display: inline-flex; align-items: center; justify-content: center; gap: .4rem; padding: .5rem .9rem; border: 1px solid var(--py-linie); border-radius: 10px; background: #1c130ecc; color: var(--py-text) !important; font-size: .88rem; text-decoration: none; white-space: nowrap; transition: border-color .2s, box-shadow .2s; }
+.py-reiter a span { color: var(--py-violett); }
+.py-reiter a:hover { border-color: var(--py-linie-hell); }
+.py-reiter a[aria-current="page"] { border-color: var(--py-violett); background: linear-gradient(180deg, #6a2a12, #3a160a); box-shadow: 0 0 1rem #ff7a2a55; }
+
+/* ---------- Raster der Unterseiten: Inhalt + Kapitel rechts (links liegt die Sidebar) ---------- */
+.py-layout { display: grid; grid-template-columns: minmax(0, 1fr) clamp(11rem, 17cqi, 14.5rem); gap: var(--py-raum); align-items: start; }
+.py-layout--fuss { grid-template-columns: minmax(0, 1fr); margin-top: var(--py-raum); }
+.py-inhalt { display: grid; gap: var(--py-raum); min-width: 0; }
+.py-sprung { position: sticky; top: calc(var(--aporia-topbar-height, 78px) + 1rem); display: grid; gap: .1rem; max-height: calc(100dvh - var(--aporia-topbar-height, 78px) - 2rem); overflow-y: auto; padding: .8rem .6rem; scrollbar-width: thin; }
+.py-sprung .py-kicker { margin: 0 0 .35rem .4rem; }
+.py-sprung a { padding: .3rem .45rem; border-radius: 8px; color: var(--py-text) !important; font-size: .8rem; line-height: 1.35; text-decoration: none; }
+.py-sprung a .py-nr { margin-right: .35rem; }
+.py-sprung a:hover, .py-sprung a.is-active { background: linear-gradient(90deg, #ff7a2a30, transparent); box-shadow: inset 2px 0 0 var(--py-violett); }
+
+/* Kapitelkarten */
+.py-karte summary { display: flex; align-items: baseline; gap: .55rem; padding: .85rem 1.05rem; cursor: pointer; list-style: none; }
+.py-karte summary::-webkit-details-marker { display: none; }
+.py-karte summary h2 { flex: 1; font: 600 clamp(1.05rem, 1.7cqi, 1.25rem)/1.3 var(--py-serif); }
+.py-chevron { align-self: center; width: .5rem; height: .5rem; border-right: 2px solid var(--py-violett); border-bottom: 2px solid var(--py-violett); transform: rotate(-45deg); transition: transform .25s; }
+.py-karte[open] .py-chevron { transform: rotate(45deg); }
+.py-text { display: grid; gap: .55rem; margin: 0 1.05rem 1.05rem; padding-top: .75rem; border-top: 1px solid #ffffff14; font-size: .94rem; max-width: 80ch; }
+.py-text h3 { margin-top: .3rem; color: var(--py-cyan); font: 600 .82rem/1.3 "Segoe UI", system-ui, sans-serif; letter-spacing: .08em; text-transform: uppercase; }
+.py-karte:target { box-shadow: 0 0 0 1px var(--py-violett), 0 0 1.4rem #ff7a2a40; }
+
+/* Verknüpfungen */
+.py-links ul { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 13rem), 1fr)); gap: .45rem; margin: 0; padding: 0; list-style: none; }
+.py-links a { display: grid; gap: .05rem; padding: .5rem .65rem; border: 1px solid var(--py-linie); border-radius: 10px; background: #1a110c99; color: var(--py-text) !important; text-decoration: none; }
+.py-links a:hover { border-color: var(--py-violett); }
+.py-links strong { color: var(--py-violett-hell); font: 600 .95rem/1.3 var(--py-serif); }
+.py-links span { color: var(--py-leise); font-size: .75rem; }
+.py-links a.is-unavailable { opacity: .5; }
+
+/* Galerien */
+.py-galerie-raster, .py-medienleiste-raster { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 11rem), 1fr)); gap: .6rem; }
+.py-kachel { display: grid; gap: .35rem; padding: .35rem; border: 1px solid var(--py-linie); border-radius: 12px; background: #140d0a; color: var(--py-leise); font: .76rem/1.3 "Segoe UI", system-ui, sans-serif; text-align: left; cursor: zoom-in; transition: border-color .2s, transform .2s; }
+.py-kachel[hidden] { display: none; }
+.py-kachel img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 9px; filter: saturate(.9) brightness(.92); transition: filter .25s; }
+.py-kachel:hover { border-color: var(--py-violett); transform: translateY(-2px); }
+.py-kachel:hover img { filter: none; }
+
+/* Forschungszweige */
+.py-zweige { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 14rem), 1fr)); gap: .55rem; margin-top: .8rem; }
+.py-zweige a { display: grid; gap: .15rem; padding: .7rem .8rem; border: 1px solid var(--py-linie); border-radius: 12px; background: #1a110c99; color: var(--py-text) !important; text-decoration: none; }
+.py-zweige a:hover { border-color: var(--py-violett); box-shadow: 0 0 1rem #ff7a2a33; }
+.py-zweige strong { color: var(--py-violett-hell); font: 600 1rem/1.3 var(--py-serif); }
+.py-zweige span { color: var(--py-leise); font-size: .78rem; }
+
+.py-blaettern { display: flex; justify-content: space-between; gap: .6rem; }
+.py-blaettern a { padding: .45rem .95rem; border: 1px solid var(--py-linie); border-radius: 10px; background: #1c130ecc; color: var(--py-text) !important; text-decoration: none; font-size: .88rem; }
+.py-blaettern a:hover { border-color: var(--py-violett); }
+
+/* Großansicht (Logik: _gemeinsam/galerie-zoom.js) */
+html:has(dialog.py-zoom[open]) { overflow: hidden; }
+.pyronoiden dialog.py-zoom { position: fixed; inset: 0; width: 100%; height: 100%; max-width: none; max-height: none; margin: 0; padding: 0; border: 0; overflow: hidden; background: transparent; }
+.pyronoiden dialog.py-zoom::backdrop { background: #000c; }
+.py-zoom .gallery-fullscreen-surface { display: flex; flex-direction: column; width: 100%; height: 100%; overflow: hidden; color: var(--py-text); background: #080504; }
+.py-zoom .gallery-fullscreen-toolbar { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: .3rem .65rem; padding: .4rem .5rem; border-bottom: 1px solid var(--py-linie); background: #1c130e; }
+.py-zoom .gallery-fullscreen-toolbar .controls { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: .35rem; margin: 0; }
+.py-zoom .gallery-fullscreen-toolbar form { order: 1; margin: 0; }
+.py-zoom .control { padding: .3rem .75rem; border: 1px solid var(--py-linie-hell); border-radius: 8px; background: #2a1a12; color: var(--py-text); font: 600 .8rem/1 "Segoe UI", system-ui, sans-serif; cursor: pointer; }
+.py-zoom output { padding: 0 .4rem; color: var(--py-leise); font-size: .8rem; }
+.py-zoom .gallery-zoom-viewport { flex: 1; min-height: 0; overflow: auto; overscroll-behavior: contain; }
+.pyronoiden dialog.py-zoom .gallery-zoom-viewport img { display: block; width: calc(100% * var(--gallery-zoom, 1)); height: calc(100% * var(--gallery-zoom, 1)); max-width: none; max-height: none; margin: 0; object-fit: contain; }
+
+/* ---------- Ausschnitte aus Designtafeln (Region als Anteil von Breite x/w und Höhe y/h; --r = Bildhöhe / Bildbreite) ---------- */
+.py-ausschnitt { position: relative; display: block; overflow: hidden; aspect-ratio: calc(var(--w) / (var(--h) * var(--r, 1))); background: #080504; }
+.py-ausschnitt.py-hero-bild { position: absolute; aspect-ratio: auto; }
+.py-ausschnitt > img { position: absolute; top: 0; left: calc(var(--x) / var(--w) * -100%); width: calc(100% / var(--w)) !important; max-width: none !important; height: auto; margin-top: calc(var(--y) * var(--r, 1) / var(--w) * -100%); }
+
+/* ---------- Klappbereiche ---------- */
+.py-klappen { display: inline-flex; align-items: center; gap: .4rem; margin: 0 0 .45rem .4rem; padding: .3rem .7rem; border: 1px solid var(--py-linie-hell); border-radius: 999px; background: #2a1a12; color: var(--py-text); font: 600 .74rem/1.2 "Segoe UI", system-ui, sans-serif; cursor: pointer; justify-self: start; }
+.py-klappen:hover { border-color: var(--py-cyan); }
+.py-klappen::before { content: "▾"; color: var(--py-cyan); transition: transform .25s; }
+.py-klappen[aria-pressed="true"]::before { transform: rotate(180deg); }
+.py-karte[open] > .py-text, .py-klapp[open] > .py-klapp-inhalt { animation: py-auf .35s ease; }
+@keyframes py-auf { from { opacity: 0; transform: translateY(-.35rem); } to { opacity: 1; transform: none; } }
+.py-karte:not([open]) summary:hover { background: linear-gradient(90deg, color-mix(in srgb, var(--py-violett) 14%, transparent), transparent); border-radius: 14px; }
+.py-klapp { border: 1px solid var(--py-linie); border-radius: 12px; background: #1a110cb3; }
+.py-klapp summary { display: flex; align-items: center; gap: .55rem; padding: .6rem .8rem; cursor: pointer; list-style: none; }
+.py-klapp summary::-webkit-details-marker { display: none; }
+.py-klapp summary strong { flex: 1; color: var(--py-violett-hell); font: 600 1rem/1.3 var(--py-serif); }
+.py-klapp summary small { color: var(--py-leise); font-size: .76rem; }
+.py-klapp[open] .py-chevron { transform: rotate(45deg); }
+.py-klapp-inhalt { display: grid; gap: .45rem; padding: 0 .8rem .8rem; font-size: .9rem; }
+.py-klapp-inhalt ul, .py-text ol { display: grid; gap: .25rem; padding: 0; list-style: none; }
+.py-klapp-inhalt ul li { position: relative; padding-left: 1.05rem; }
+.py-klapp-inhalt ul li::before { content: ""; position: absolute; left: .1rem; top: .6em; width: .42rem; height: .42rem; border-radius: 50%; background: var(--py-cyan); box-shadow: 0 0 .4rem var(--py-cyan); }
+.py-text ol { counter-reset: schritt; }
+.py-text ol li { counter-increment: schritt; position: relative; padding-left: 1.9rem; }
+.py-text ol li::before { content: counter(schritt); position: absolute; left: 0; top: .1em; display: grid; place-items: center; width: 1.35rem; height: 1.35rem; border: 1px solid var(--py-linie-hell); border-radius: 50%; color: var(--py-cyan); font: 600 .7rem/1 ui-monospace, Consolas, monospace; }
+.py-text--frei { margin: 0 0 .7rem; padding: 0; border: 0; max-width: none; }
+.py-text > .py-ausschnitt { width: min(100%, 26rem); border: 1px solid var(--py-linie); border-radius: 10px; }
+.py-quelle-design { color: var(--py-cyan) !important; }
+
+/* Karussell: Tafeln vollständig zeigen */
+.py-karussell-block .py-h2 { margin-bottom: .6rem !important; }
+.py-dossier .karussell-bild img { object-fit: contain; background: #080504; }
+.py-dossier .bilder-karussell--buehne .karussell-bild { background: #080504; }
+
+/* Überschrift mit Leuchtlinie */
+.py-h2--linie { text-transform: uppercase; letter-spacing: .12em; font-size: clamp(1rem, 1.7cqi, 1.22rem) !important; }
+.py-h2--linie::after { content: ""; flex: 1 1 4rem; align-self: center; height: 1px; background: linear-gradient(90deg, var(--py-violett), transparent); box-shadow: 0 0 .5rem var(--py-violett); }
+
+/* Medienseite: Schnellnavigation */
+.py-medien-nav { display: flex; flex-wrap: wrap; gap: .4rem; }
+.py-medien-nav a { display: inline-flex; align-items: center; gap: .45rem; padding: .45rem .8rem; border: 1px solid var(--py-linie); border-radius: 10px; background: #1c130ecc; color: var(--py-text) !important; font-size: .86rem; text-decoration: none; }
+.py-medien-nav a:hover { border-color: var(--py-violett); }
+.py-medien-nav b { color: var(--py-cyan); font: 600 .74rem/1 ui-monospace, Consolas, monospace; }
+.py-medien-bereich { display: grid; gap: .6rem; }
+.py-dossier .media-player-card { padding: .75rem .85rem; }
+.py-dossier .media-player-card h3 { margin-bottom: .4rem; font: 600 1rem/1.3 var(--py-serif); }
+.py-dossier .media-status, .py-dossier .asset-catalog [role="status"] { color: var(--py-leise); font-style: italic; font-size: .88rem; }
+.py-dossier .media-player-card :is(select, button) { border: 1px solid var(--py-linie-hell); border-radius: 9px; background: #2a1a12; color: var(--py-text); }
+.py-dossier :is(video, audio) { width: 100%; }
+.py-medien-zwei { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .6rem; }
+@container (max-width: 640px) { .py-medien-zwei { grid-template-columns: minmax(0, 1fr); } }
+
+/* ---------- Responsiv ---------- */
+@container (max-width: 900px) {
+    .py-layout { grid-template-columns: minmax(0, 1fr); }
+    .py-sprung { position: static; display: flex; max-height: none; overflow-x: auto; }
+    .py-sprung .py-kicker { display: none; }
+    .py-sprung a { flex: none; border: 1px solid var(--py-linie); }
+    .py-hero-text { max-width: 70%; }
+}
+@container (max-width: 640px) {
+    .py-hero-bild { width: 100% !important; mask-image: linear-gradient(180deg, #0008, #000 60%); }
+    .py-hero::after { background: linear-gradient(0deg, #0d0908f2 25%, #0d090899 70%, #0d090866); }
+    .py-hero-text { max-width: none; }
+    .py-chips { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .py-fakten > div { grid-template-columns: minmax(0, 1fr); gap: .1rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .pyronoiden *, .pyronoiden *::before, .pyronoiden *::after { animation: none !important; transition: none !important; }
+}

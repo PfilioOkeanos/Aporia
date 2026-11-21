@@ -1,20 +1,45 @@
-@import url("../../../_gemeinsam/wissenslayout.css");
-body { margin: 0; background: #030d15; color: #e7f4fa; font: 1rem/1.55 Arial,sans-serif; }
-.species-detail-frame { display: flex; }
-main { flex: 1; min-width: 0; }
-a { color: #9be9f5; }
-.species-detail-hero {
-    min-height: 28rem; margin-top: 1rem; padding: clamp(1rem,3vw,2rem);
-    display: grid; 
-    align-items: end; gap: 1.5rem;
-    background: linear-gradient(90deg,#030d15f5,#030d1555 68%,#030d1599), var(--portrait) center / cover;
-    border: 1px solid #376575; border-radius: .6rem;
+/* Lithoiden – Hauptseite (Übersicht nach der Designvorlage)
+   Gemeinsames Design: ../lithoiden-basis.css · hier nur Kopf, Überblicksraster und Medienleiste. */
+
+.li-hauptseite .li-hero { grid-template-rows: 1fr auto; }
+
+/* Überblick */
+.li-ueberblick-kopf { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .6rem; margin: .4rem 0 .8rem; }
+.li-ueberblick-kopf .li-h2 { margin: 0 !important; }
+.li-ueber-raster { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--li-raum); }
+.li-ueber { display: grid; grid-template-rows: auto 1fr auto; padding: .95rem 1.05rem; }
+.li-ueber--breit { grid-column: 1 / -1; }
+.li-ueber-titel { display: flex; align-items: center; gap: .55rem; margin-bottom: .7rem !important; font: 600 clamp(1.05rem, 1.8cqi, 1.3rem)/1.2 var(--li-serif); }
+.li-ueber-inhalt { display: grid; grid-template-columns: minmax(7rem, .8fr) minmax(0, 1.3fr); gap: .9rem; align-items: start; }
+.li-ueber-inhalt:not(:has(img)) { grid-template-columns: minmax(0, 1fr); }
+.li-ueber-inhalt img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border: 1px solid var(--li-linie); border-radius: 10px; }
+.li-ueber-text { display: grid; gap: .5rem; font-size: .9rem; }
+.li-ueber-text .li-fakten > div { grid-template-columns: minmax(6rem, .75fr) minmax(0, 1.25fr); padding: .22rem 0; }
+.li-ueber--breit .li-ueber-inhalt { grid-template-columns: minmax(10rem, .6fr) minmax(0, 1.6fr); }
+
+/* Entwicklung: Phasenfolge */
+.li-phasen { display: flex; flex-wrap: wrap; gap: .35rem; margin: .2rem 0 0; padding: 0; list-style: none; counter-reset: phase; }
+.li-phasen li { counter-increment: phase; padding: .25rem .55rem; border: 1px solid var(--li-linie); border-radius: 999px; background: #12152399; font-size: .76rem; }
+.li-phasen li::before { content: counter(phase) " · "; color: var(--li-cyan); }
+.li-regionen { color: var(--li-violett-hell); font-size: .82rem; }
+.li-tags { display: flex !important; flex-wrap: wrap; gap: .35rem !important; }
+.li-tags li { padding: .25rem .6rem !important; border: 1px solid var(--li-linie-hell); border-radius: 999px; font-size: .78rem; }
+.li-tags li::before { display: none; }
+.li-chrono { max-height: 13rem; overflow-y: auto; scrollbar-width: thin; }
+.li-chrono .li-tabelle table { font-size: .8rem; }
+
+/* Medienleiste mit Filter */
+.li-medienleiste { margin-top: var(--li-raum); }
+.li-medienleiste-kopf { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .6rem; margin-bottom: .8rem; }
+.li-medienleiste-kopf .li-h2 { margin: 0 !important; }
+.li-filter { display: flex; flex-wrap: wrap; gap: .3rem; padding: .25rem; border: 1px solid var(--li-linie); border-radius: 999px; background: #10131f; }
+.li-filter button { padding: .3rem .8rem; border: 0; border-radius: 999px; background: none; color: var(--li-text); font: 500 .82rem/1.2 "Segoe UI", system-ui, sans-serif; cursor: pointer; }
+.li-filter button[aria-pressed="true"] { background: linear-gradient(180deg, #4a3880, #2b2150); box-shadow: 0 0 .8rem #b48cff55; }
+.li-medienleiste-raster { grid-template-columns: repeat(auto-fill, minmax(min(100%, 12.5rem), 1fr)); }
+
+@container (max-width: 900px) {
+    .li-ueber-raster { grid-template-columns: minmax(0, 1fr); }
 }
-h1 { font-size: clamp(2rem,5vw,4.5rem); line-height: 1; overflow-wrap: anywhere; }
-h2 { color: #9be9f5; font-size: 1rem; letter-spacing: .08em; text-transform: uppercase; }
-dt { color: #9be9f5; }
-dd { margin: 0 0 .55rem; }
-.species-detail-panel { padding: 1rem; border: 1px solid #376575; border-radius: .6rem; background: #06141de8; }
-.species-detail-panel img { display: block; width: 100%; aspect-ratio: 16/9; object-fit: cover; border-radius: .35rem; }
-.species-detail-panel small { display: block; margin-top: .35rem; color: #b6d3df; }
-main section[id] { scroll-margin-top: 8rem; }
+@container (max-width: 640px) {
+    .li-ueber-inhalt, .li-ueber--breit .li-ueber-inhalt { grid-template-columns: minmax(0, 1fr); }
+}

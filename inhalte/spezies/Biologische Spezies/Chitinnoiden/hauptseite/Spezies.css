@@ -1,20 +1,98 @@
-@import url("../../../_gemeinsam/wissenslayout.css");
-body { margin: 0; background: #030d15; color: #e7f4fa; font: 1rem/1.55 Arial,sans-serif; }
-.species-detail-frame { display: flex; }
-main { flex: 1; min-width: 0; }
-a { color: #9be9f5; }
-.species-detail-hero {
-    min-height: 28rem; margin-top: 1rem; padding: clamp(1rem,3vw,2rem);
-    display: grid; 
-    align-items: end; gap: 1.5rem;
-    background: linear-gradient(90deg,#030d15f5,#030d1555 68%,#030d1599), var(--portrait) center / cover;
-    border: 1px solid #376575; border-radius: .6rem;
+.ch-hauptseite .ch-hero {
+    min-height: clamp(21rem, 35cqi, 34rem);
 }
-h1 { font-size: clamp(2rem,5vw,4.5rem); line-height: 1; overflow-wrap: anywhere; }
-h2 { color: #9be9f5; font-size: 1rem; letter-spacing: .08em; text-transform: uppercase; }
-dt { color: #9be9f5; }
-dd { margin: 0 0 .55rem; }
-.species-detail-panel { padding: 1rem; border: 1px solid #376575; border-radius: .6rem; background: #06141de8; }
-.species-detail-panel img { display: block; width: 100%; aspect-ratio: 16/9; object-fit: cover; border-radius: .35rem; }
-.species-detail-panel small { display: block; margin-top: .35rem; color: #b6d3df; }
-main section[id] { scroll-margin-top: 8rem; }
+
+.ch-glanz {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: radial-gradient(ellipse at 80% 15%, #d9a44122, transparent 64%);
+    pointer-events: none;
+}
+
+.ch-start-raster,
+.ch-formen-spalten,
+.ch-themen-raster,
+.ch-highlights-raster {
+    display: grid;
+    gap: var(--ch-raum);
+}
+
+.ch-start-raster { grid-template-columns: minmax(0, 2fr) minmax(16rem, 1fr); }
+.ch-formen-spalten, .ch-highlights-raster { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.ch-themen-raster { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.ch-themen, .ch-highlights, .ch-veshkara, .ch-layout--fuss { margin-top: var(--ch-raum); }
+.ch-formen-bild {
+    width: 100%;
+    height: clamp(10rem, 19cqi, 19rem);
+    object-fit: cover;
+    object-position: center 48%;
+    border-radius: .55rem;
+    margin-bottom: .9rem;
+}
+.ch-formen-spalten article { min-width: 0; border-top: 1px solid var(--ch-linie); padding-top: .65rem; }
+.ch-formen-spalten h3 { color: var(--ch-violett-hell); font: 600 1.05rem/1.2 var(--ch-serif); }
+.ch-formen-spalten p, .ch-formen-spalten ul { margin-top: .35rem; font-size: .9rem; }
+.ch-formen-spalten ul { padding-left: 1.15rem; color: var(--ch-leise); }
+.ch-mehr { display: inline-block; margin-top: .8rem; }
+
+.ch-thema {
+    display: grid;
+    align-content: end;
+    gap: .25rem;
+    min-height: 9.2rem;
+    padding: .8rem 1.55rem .8rem .8rem;
+    overflow: hidden;
+    isolation: isolate;
+}
+.ch-thema img, .ch-veshkara > img {
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.ch-thema::before, .ch-veshkara::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient(0deg, #071311 5%, #071311cc 52%, #07131130 100%);
+}
+.ch-dossier :is(.ch-thema, .ch-highlight) { color: var(--ch-text); text-decoration: none; }
+.ch-dossier :is(.ch-thema, .ch-highlight):hover { border-color: var(--ch-violett); }
+.ch-thema-kopf { display: flex; gap: .45rem; align-items: center; }
+.ch-thema-text { font-size: .84rem; line-height: 1.35; }
+.ch-pfeil { position: absolute; right: .65rem; bottom: .75rem; color: var(--ch-violett-hell); }
+
+.ch-veshkara {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    display: grid;
+    align-items: end;
+    min-height: clamp(16rem, 26cqi, 25rem);
+    border: 1px solid var(--ch-linie);
+    border-radius: 14px;
+}
+.ch-veshkara::before { background: linear-gradient(90deg, #061310f5, #061310c9 38%, #06131022 78%); }
+.ch-veshkara-text { display: grid; gap: .45rem; max-width: 35rem; padding: clamp(1rem, 2.8cqi, 2rem); }
+.ch-veshkara h2 { font: 600 clamp(1.8rem, 3.4cqi, 2.8rem)/1 var(--ch-serif); }
+.ch-veshkara-zeile { color: var(--ch-violett-hell); }
+.ch-veshkara-text .ch-knopf { justify-self: start; margin-top: .45rem; }
+
+.ch-highlight { display: grid; grid-template-rows: auto 1fr; overflow: hidden; }
+.ch-highlight img { width: 100%; aspect-ratio: 2 / 1; object-fit: cover; }
+.ch-highlight > span { display: grid; align-content: start; gap: .15rem; padding: .7rem .8rem; }
+.ch-highlight em { color: var(--ch-leise); font-size: .86rem; font-style: normal; }
+.ch-layout--fuss { grid-template-columns: minmax(0, 1fr); }
+
+@container (max-width: 960px) {
+    .ch-start-raster { grid-template-columns: minmax(0, 1fr); }
+    .ch-themen-raster { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@container (max-width: 520px) {
+    .ch-formen-spalten, .ch-highlights-raster, .ch-themen-raster { grid-template-columns: minmax(0, 1fr); }
+    .ch-veshkara::before { background: linear-gradient(0deg, #061310f5 15%, #06131066 100%); }
+}

@@ -1,0 +1,184 @@
+/* Chitinoiden – gemeinsames Basisdesign „Panzer & Wurzelwald“
+   Nach der Designvorlage assets/…/Chitinoiden/Designs/APORIA Weltenarchiv_ Chitinoiden.png.
+   Wird von der Hauptseite und allen Unterseiten geladen; Seitenspezifisches steht in der jeweiligen Seiten-CSS. */
+
+.chitinnoiden {
+    --ch-bg: #0b1210;
+    --ch-glas: #13201bd9;
+    --ch-glas-hell: #192a23e6;
+    --ch-linie: #d9a4413d;
+    --ch-linie-hell: #e0b45e99;
+    --ch-violett: #d9a441;
+    --ch-violett-hell: #f2d79a;
+    --ch-cyan: #5fd0b8;
+    --ch-text: #ece6d6;
+    --ch-leise: #a9b2a6;
+    --ch-serif: "Cormorant Garamond", "Palatino Linotype", Georgia, "Times New Roman", serif;
+    --ch-raum: clamp(.7rem, 1.4cqi, 1.1rem);
+    --aporia-page-tint: #b9893a;
+    --aporia-page-glass-light: #1d2a24;
+    --aporia-page-glass-dark: #0a110e;
+    margin: 0;
+    background: var(--ch-bg);
+    color: var(--ch-text);
+    font: 1rem/1.6 "Segoe UI", system-ui, sans-serif;
+}
+.ch-frame {
+    display: flex;
+    min-height: calc(100dvh - var(--aporia-topbar-height, 78px));
+    background:
+        radial-gradient(ellipse 45% 35% at 0% 85%, #3f6b4a33, transparent 70%),
+        radial-gradient(ellipse 40% 30% at 100% 95%, #5fd0b82b, transparent 70%),
+        radial-gradient(ellipse 60% 40% at 70% 0%, #b9893a22, transparent 70%),
+        linear-gradient(180deg, #0e1713, var(--ch-bg) 50%);
+}
+.ch-dossier { flex: 1; min-width: 0; padding: clamp(.6rem, 1.3vw, 1.3rem); container-type: inline-size; overflow-x: clip; }
+.ch-dossier :is(h1, h2, h3, p, dl, dd, ul, ol, figure) { margin: 0; }
+.ch-dossier :is(p, li, dd, td) { hyphens: auto; overflow-wrap: break-word; }
+.ch-dossier [id] { scroll-margin-top: calc(var(--aporia-topbar-height, 78px) + 1rem); }
+.ch-dossier a { color: var(--ch-violett-hell); }
+.ch-dossier :is(a, button, summary, select):focus-visible { outline: 2px solid var(--ch-cyan); outline-offset: 2px; }
+.ch-dossier img { display: block; max-width: 100%; }
+
+/* ---------- Bausteine ---------- */
+.ch-panel {
+    position: relative;
+    box-sizing: border-box;
+    min-width: 0;
+    border: 1px solid var(--ch-linie);
+    border-radius: 14px;
+    background: linear-gradient(160deg, var(--ch-glas-hell), var(--ch-glas));
+    box-shadow: inset 0 1px 0 #ffffff10, 0 .6rem 1.6rem #0008;
+    backdrop-filter: blur(8px);
+}
+.ch-block { padding: clamp(.9rem, 1.8cqi, 1.3rem); }
+.ch-block > p + p, .ch-ueber-text > p + p { margin-top: .5rem; }
+.ch-kicker { color: var(--ch-leise); font: 600 .7rem/1.3 "Segoe UI", system-ui, sans-serif; letter-spacing: .16em; text-transform: uppercase; }
+.ch-h2 { display: flex; flex-wrap: wrap; align-items: baseline; gap: .2rem .6rem; margin-bottom: .8rem !important; color: var(--ch-text); font: 600 clamp(1.15rem, 2cqi, 1.5rem)/1.2 var(--ch-serif); }
+.ch-h2 small { color: var(--ch-leise); font-size: .78em; font-weight: 500; }
+.ch-icon { display: inline-grid; place-items: center; width: 1.7em; height: 1.7em; border: 1px solid var(--ch-linie-hell); border-radius: 50%; color: var(--ch-violett); font: 600 .8em/1 "Segoe UI Symbol", system-ui, sans-serif; box-shadow: 0 0 .8rem #d9a44133; }
+.ch-nr { color: var(--ch-cyan); font: 600 .74rem/1 ui-monospace, Consolas, monospace; }
+.ch-offen, .ch-quelle { color: var(--ch-leise); }
+.ch-offen { font-style: italic; }
+.ch-quelle { font-size: .76rem; }
+.ch-fakten > div { display: grid; grid-template-columns: minmax(7rem, .8fr) minmax(0, 1.4fr); gap: .7rem; padding: .32rem 0; border-bottom: 1px solid #ffffff12; }
+.ch-fakten dt { color: var(--ch-leise); font-size: .85rem; }
+.ch-fakten dd { font-size: .9rem; }
+.ch-text ul, .ch-ueber-text ul { display: grid; gap: .25rem; padding: 0; list-style: none; }
+.ch-text ul li, .ch-ueber-text ul li { position: relative; padding-left: 1.05rem; }
+.ch-text ul li::before, .ch-ueber-text ul li::before { content: ""; position: absolute; left: .1rem; top: .6em; width: .42rem; height: .42rem; background: var(--ch-violett); clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%); box-shadow: 0 0 .4rem var(--ch-violett); }
+.ch-tabelle { overflow-x: auto; }
+.ch-tabelle table { width: 100%; border-collapse: collapse; font-size: .9rem; }
+.ch-tabelle :is(th, td) { padding: .4rem .6rem; border-bottom: 1px solid #ffffff14; text-align: left; vertical-align: top; }
+.ch-tabelle th { color: var(--ch-violett-hell); font-weight: 600; }
+.ch-knopf, .ch-mehr { display: inline-flex; align-items: center; gap: .4rem; text-decoration: none; }
+.ch-knopf { padding: .4rem .9rem; border: 1px solid var(--ch-linie-hell); border-radius: 10px; background: #1d2c25; color: var(--ch-text) !important; font-size: .85rem; }
+.ch-knopf:hover { border-color: var(--ch-violett); box-shadow: 0 0 .9rem #d9a44144; }
+.ch-mehr { margin-top: .7rem; color: var(--ch-violett-hell) !important; font-size: .85rem; }
+.ch-mehr:hover { color: var(--ch-cyan) !important; }
+
+/* ---------- Kopf ---------- */
+.ch-hero { position: relative; isolation: isolate; display: grid; grid-template-columns: minmax(0, 1fr); min-height: clamp(18rem, 34cqi, 27rem); margin-bottom: .8rem; overflow: hidden; border: 1px solid var(--ch-linie); border-radius: 18px; background: #0c1310; }
+.ch-hero--reiter { min-height: clamp(13rem, 22cqi, 18rem); }
+.ch-hero-bild { position: absolute; inset: 0 0 0 auto; z-index: -2; width: 70% !important; height: 100% !important; max-width: none !important; object-fit: cover; object-position: 60% 45%; mask-image: linear-gradient(90deg, transparent, #000 38%); }
+.ch-hero::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, #0b1210f2 0, #0b1210c9 32%, transparent 64%), linear-gradient(0deg, #0b1210d9, transparent 45%); pointer-events: none; }
+.ch-hero-text { align-self: center; max-width: min(36rem, 56%); padding: clamp(1rem, 3cqi, 2.4rem); }
+.ch-pfad { display: flex; flex-wrap: wrap; gap: .35rem; margin-bottom: .7rem; color: var(--ch-leise); font-size: .8rem; }
+.ch-pfad a { color: var(--ch-violett-hell) !important; text-decoration: none; }
+.ch-hero h1 { color: #f7f0de; font: 600 clamp(2.4rem, 6.4cqi, 4.8rem)/1 var(--ch-serif); text-shadow: 0 2px 18px #000; }
+.ch-hero--reiter h1 { font-size: clamp(2rem, 4.6cqi, 3.4rem); }
+.ch-unterzeile { margin-top: .4rem !important; color: var(--ch-text); font: 500 clamp(1rem, 1.7cqi, 1.25rem)/1.35 var(--ch-serif); }
+.ch-intro { margin-top: .9rem !important; color: #dcd6c4; font-size: .95rem; line-height: 1.55; }
+/* Blickfang: Kristallglanz wandert über das Kopfbild */
+.ch-glanz { position: absolute; inset: 0; z-index: -1; background: linear-gradient(115deg, transparent 40%, #f2d79a22 48%, #5fd0b81f 52%, transparent 60%) 0 0 / 250% 100%; animation: ch-glanz 9s ease-in-out infinite; pointer-events: none; }
+@keyframes ch-glanz { 0% { background-position: 100% 0; } 55%, 100% { background-position: -60% 0; } }
+.ch-chips { display: grid; grid-template-columns: repeat(4, minmax(0, max-content)); gap: .6rem; align-self: end; padding: 0 clamp(1rem, 3cqi, 2.4rem) clamp(1rem, 2.4cqi, 1.8rem); }
+.ch-chips > div { display: grid; gap: .1rem; padding: .55rem .9rem; border: 1px solid var(--ch-linie-hell); border-radius: 12px; background: #13201bd9; backdrop-filter: blur(6px); }
+.ch-chips dt { color: var(--ch-leise); font-size: .7rem; }
+.ch-chips dd { margin: 0; font: 600 .95rem/1.25 var(--ch-serif); }
+
+/* ---------- Reiterleiste ---------- */
+.ch-reiter { display: flex; gap: .35rem; margin-bottom: 1rem; padding-bottom: .2rem; overflow-x: auto; scrollbar-width: thin; scrollbar-color: #d9a44166 transparent; }
+.ch-reiter a { flex: 1 0 auto; display: inline-flex; align-items: center; justify-content: center; gap: .4rem; padding: .5rem .9rem; border: 1px solid var(--ch-linie); border-radius: 10px; background: #13201bcc; color: var(--ch-text) !important; font-size: .88rem; text-decoration: none; white-space: nowrap; transition: border-color .2s, box-shadow .2s; }
+.ch-reiter a span { color: var(--ch-violett); }
+.ch-reiter a:hover { border-color: var(--ch-linie-hell); }
+.ch-reiter a[aria-current="page"] { border-color: var(--ch-violett); background: linear-gradient(180deg, #4a3a1c, #2a2110); box-shadow: 0 0 1rem #d9a44155; }
+
+/* ---------- Raster der Unterseiten: Inhalt + Kapitel rechts (links liegt die Sidebar) ---------- */
+.ch-layout { display: grid; grid-template-columns: minmax(0, 1fr) clamp(11rem, 17cqi, 14.5rem); gap: var(--ch-raum); align-items: start; }
+.ch-layout--fuss { grid-template-columns: minmax(0, 1fr); margin-top: var(--ch-raum); }
+.ch-inhalt { display: grid; gap: var(--ch-raum); min-width: 0; }
+.ch-sprung { position: sticky; top: calc(var(--aporia-topbar-height, 78px) + 1rem); display: grid; gap: .1rem; max-height: calc(100dvh - var(--aporia-topbar-height, 78px) - 2rem); overflow-y: auto; padding: .8rem .6rem; scrollbar-width: thin; }
+.ch-sprung .ch-kicker { margin: 0 0 .35rem .4rem; }
+.ch-sprung a { padding: .3rem .45rem; border-radius: 8px; color: var(--ch-text) !important; font-size: .8rem; line-height: 1.35; text-decoration: none; }
+.ch-sprung a .ch-nr { margin-right: .35rem; }
+.ch-sprung a:hover, .ch-sprung a.is-active { background: linear-gradient(90deg, #d9a44130, transparent); box-shadow: inset 2px 0 0 var(--ch-violett); }
+
+/* Kapitelkarten */
+.ch-karte summary { display: flex; align-items: baseline; gap: .55rem; padding: .85rem 1.05rem; cursor: pointer; list-style: none; }
+.ch-karte summary::-webkit-details-marker { display: none; }
+.ch-karte summary h2 { flex: 1; font: 600 clamp(1.05rem, 1.7cqi, 1.25rem)/1.3 var(--ch-serif); }
+.ch-chevron { align-self: center; width: .5rem; height: .5rem; border-right: 2px solid var(--ch-violett); border-bottom: 2px solid var(--ch-violett); transform: rotate(-45deg); transition: transform .25s; }
+.ch-karte[open] .ch-chevron { transform: rotate(45deg); }
+.ch-text { display: grid; gap: .55rem; margin: 0 1.05rem 1.05rem; padding-top: .75rem; border-top: 1px solid #ffffff14; font-size: .94rem; max-width: 80ch; }
+.ch-text h3 { margin-top: .3rem; color: var(--ch-cyan); font: 600 .82rem/1.3 "Segoe UI", system-ui, sans-serif; letter-spacing: .08em; text-transform: uppercase; }
+.ch-karte:target { box-shadow: 0 0 0 1px var(--ch-violett), 0 0 1.4rem #d9a44140; }
+
+/* Verknüpfungen */
+.ch-links ul { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 13rem), 1fr)); gap: .45rem; margin: 0; padding: 0; list-style: none; }
+.ch-links a { display: grid; gap: .05rem; padding: .5rem .65rem; border: 1px solid var(--ch-linie); border-radius: 10px; background: #12201a99; color: var(--ch-text) !important; text-decoration: none; }
+.ch-links a:hover { border-color: var(--ch-violett); }
+.ch-links strong { color: var(--ch-violett-hell); font: 600 .95rem/1.3 var(--ch-serif); }
+.ch-links span { color: var(--ch-leise); font-size: .75rem; }
+.ch-links a.is-unavailable { opacity: .5; }
+
+/* Galerien */
+.ch-galerie-raster, .ch-medienleiste-raster { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 11rem), 1fr)); gap: .6rem; }
+.ch-kachel { display: grid; gap: .35rem; padding: .35rem; border: 1px solid var(--ch-linie); border-radius: 12px; background: #0f1914; color: var(--ch-leise); font: .76rem/1.3 "Segoe UI", system-ui, sans-serif; text-align: left; cursor: zoom-in; transition: border-color .2s, transform .2s; }
+.ch-kachel[hidden] { display: none; }
+.ch-kachel img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 9px; filter: saturate(.9) brightness(.92); transition: filter .25s; }
+.ch-kachel:hover { border-color: var(--ch-violett); transform: translateY(-2px); }
+.ch-kachel:hover img { filter: none; }
+
+/* Forschungszweige */
+.ch-zweige { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 14rem), 1fr)); gap: .55rem; margin-top: .8rem; }
+.ch-zweige a { display: grid; gap: .15rem; padding: .7rem .8rem; border: 1px solid var(--ch-linie); border-radius: 12px; background: #12201a99; color: var(--ch-text) !important; text-decoration: none; }
+.ch-zweige a:hover { border-color: var(--ch-violett); box-shadow: 0 0 1rem #d9a44133; }
+.ch-zweige strong { color: var(--ch-violett-hell); font: 600 1rem/1.3 var(--ch-serif); }
+.ch-zweige span { color: var(--ch-leise); font-size: .78rem; }
+
+.ch-blaettern { display: flex; justify-content: space-between; gap: .6rem; }
+.ch-blaettern a { padding: .45rem .95rem; border: 1px solid var(--ch-linie); border-radius: 10px; background: #13201bcc; color: var(--ch-text) !important; text-decoration: none; font-size: .88rem; }
+.ch-blaettern a:hover { border-color: var(--ch-violett); }
+
+/* Großansicht (Logik: _gemeinsam/galerie-zoom.js) */
+html:has(dialog.ch-zoom[open]) { overflow: hidden; }
+.chitinnoiden dialog.ch-zoom { position: fixed; inset: 0; width: 100%; height: 100%; max-width: none; max-height: none; margin: 0; padding: 0; border: 0; overflow: hidden; background: transparent; }
+.chitinnoiden dialog.ch-zoom::backdrop { background: #000c; }
+.ch-zoom .gallery-fullscreen-surface { display: flex; flex-direction: column; width: 100%; height: 100%; overflow: hidden; color: var(--ch-text); background: #060a08; }
+.ch-zoom .gallery-fullscreen-toolbar { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: .3rem .65rem; padding: .4rem .5rem; border-bottom: 1px solid var(--ch-linie); background: #13201b; }
+.ch-zoom .gallery-fullscreen-toolbar .controls { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: .35rem; margin: 0; }
+.ch-zoom .gallery-fullscreen-toolbar form { order: 1; margin: 0; }
+.ch-zoom .control { padding: .3rem .75rem; border: 1px solid var(--ch-linie-hell); border-radius: 8px; background: #1d2c25; color: var(--ch-text); font: 600 .8rem/1 "Segoe UI", system-ui, sans-serif; cursor: pointer; }
+.ch-zoom output { padding: 0 .4rem; color: var(--ch-leise); font-size: .8rem; }
+.ch-zoom .gallery-zoom-viewport { flex: 1; min-height: 0; overflow: auto; overscroll-behavior: contain; }
+.chitinnoiden dialog.ch-zoom .gallery-zoom-viewport img { display: block; width: calc(100% * var(--gallery-zoom, 1)); height: calc(100% * var(--gallery-zoom, 1)); max-width: none; max-height: none; margin: 0; object-fit: contain; }
+
+/* ---------- Responsiv ---------- */
+@container (max-width: 900px) {
+    .ch-layout { grid-template-columns: minmax(0, 1fr); }
+    .ch-sprung { position: static; display: flex; max-height: none; overflow-x: auto; }
+    .ch-sprung .ch-kicker { display: none; }
+    .ch-sprung a { flex: none; border: 1px solid var(--ch-linie); }
+    .ch-hero-text { max-width: 70%; }
+}
+@container (max-width: 640px) {
+    .ch-hero-bild { width: 100% !important; mask-image: linear-gradient(180deg, #0008, #000 60%); }
+    .ch-hero::after { background: linear-gradient(0deg, #0b1210f2 25%, #0b121099 70%, #0b121066); }
+    .ch-hero-text { max-width: none; }
+    .ch-chips { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .ch-fakten > div { grid-template-columns: minmax(0, 1fr); gap: .1rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .chitinnoiden *, .chitinnoiden *::before, .chitinnoiden *::after { animation: none !important; transition: none !important; }
+}

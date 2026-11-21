@@ -1,0 +1,242 @@
+/* Floranoiden – gemeinsames Basisdesign „Biolumineszentes Weltarchiv“
+   Nach der Designvorlage assets/…/Floranoiden/Design/Floranoiden_ Biolumineszentes Weltarchiv.png.
+   Wird von der Hauptseite und allen Unterseiten geladen; Seitenspezifisches steht in der jeweiligen Seiten-CSS. */
+
+.floranoiden {
+    --fl-bg: #070d0c;
+    --fl-glas: #0e1916d9;
+    --fl-glas-hell: #14231ee6;
+    --fl-linie: #e3b86a3d;
+    --fl-linie-hell: #f0cf8a99;
+    --fl-violett: #e3b86a;
+    --fl-violett-hell: #f6e2b5;
+    --fl-cyan: #5fe0c8;
+    --fl-text: #eeeadf;
+    --fl-leise: #a9b5ac;
+    --fl-serif: "Cormorant Garamond", "Palatino Linotype", Georgia, "Times New Roman", serif;
+    --fl-raum: clamp(.7rem, 1.4cqi, 1.1rem);
+    --aporia-page-tint: #b48a3c;
+    --aporia-page-glass-light: #17271f;
+    --aporia-page-glass-dark: #070d0c;
+    --karussell-akzent: var(--fl-cyan);
+    --karussell-linie: var(--fl-linie);
+    --karussell-flaeche: #0b1411;
+    --karussell-text: var(--fl-text);
+    --karussell-leise: var(--fl-leise);
+    margin: 0;
+    background: var(--fl-bg);
+    color: var(--fl-text);
+    font: 1rem/1.6 "Segoe UI", system-ui, sans-serif;
+}
+.fl-frame {
+    display: flex;
+    min-height: calc(100dvh - var(--aporia-topbar-height, 78px));
+    background:
+        radial-gradient(ellipse 45% 35% at 0% 85%, #7a4fd633, transparent 70%),
+        radial-gradient(ellipse 40% 30% at 100% 95%, #3fd0b02b, transparent 70%),
+        radial-gradient(ellipse 60% 40% at 70% 0%, #c08a3022, transparent 70%),
+        linear-gradient(180deg, #09110f, var(--fl-bg) 50%);
+}
+.fl-dossier { flex: 1; min-width: 0; padding: clamp(.6rem, 1.3vw, 1.3rem); container-type: inline-size; overflow-x: clip; }
+.fl-dossier :is(h1, h2, h3, p, dl, dd, ul, ol, figure) { margin: 0; }
+.fl-dossier :is(p, li, dd, td) { hyphens: auto; overflow-wrap: break-word; }
+.fl-dossier [id] { scroll-margin-top: calc(var(--aporia-topbar-height, 78px) + 1rem); }
+.fl-dossier a { color: var(--fl-violett-hell); }
+.fl-dossier :is(a, button, summary, select):focus-visible { outline: 2px solid var(--fl-cyan); outline-offset: 2px; }
+.fl-dossier img { display: block; max-width: 100%; }
+
+/* ---------- Bausteine ---------- */
+.fl-panel {
+    position: relative;
+    box-sizing: border-box;
+    min-width: 0;
+    border: 1px solid var(--fl-linie);
+    border-radius: 14px;
+    background: linear-gradient(160deg, var(--fl-glas-hell), var(--fl-glas));
+    box-shadow: inset 0 1px 0 #ffffff10, 0 .6rem 1.6rem #0008;
+    backdrop-filter: blur(8px);
+}
+.fl-block { padding: clamp(.9rem, 1.8cqi, 1.3rem); }
+.fl-block > p + p, .fl-ueber-text > p + p { margin-top: .5rem; }
+.fl-kicker { color: var(--fl-leise); font: 600 .7rem/1.3 "Segoe UI", system-ui, sans-serif; letter-spacing: .16em; text-transform: uppercase; }
+.fl-h2 { display: flex; flex-wrap: wrap; align-items: baseline; gap: .2rem .6rem; margin-bottom: .8rem !important; color: var(--fl-text); font: 600 clamp(1.15rem, 2cqi, 1.5rem)/1.2 var(--fl-serif); }
+.fl-h2 small { color: var(--fl-leise); font-size: .78em; font-weight: 500; }
+.fl-icon { display: inline-grid; place-items: center; width: 1.7em; height: 1.7em; border: 1px solid var(--fl-linie-hell); border-radius: 50%; color: var(--fl-violett); font: 600 .8em/1 "Segoe UI Symbol", system-ui, sans-serif; box-shadow: 0 0 .8rem #e3b86a33; }
+.fl-nr { color: var(--fl-cyan); font: 600 .74rem/1 ui-monospace, Consolas, monospace; }
+.fl-offen, .fl-quelle { color: var(--fl-leise); }
+.fl-offen { font-style: italic; }
+.fl-quelle { font-size: .76rem; }
+.fl-fakten > div { display: grid; grid-template-columns: minmax(7rem, .8fr) minmax(0, 1.4fr); gap: .7rem; padding: .32rem 0; border-bottom: 1px solid #ffffff12; }
+.fl-fakten dt { color: var(--fl-leise); font-size: .85rem; }
+.fl-fakten dd { font-size: .9rem; }
+.fl-text ul, .fl-ueber-text ul { display: grid; gap: .25rem; padding: 0; list-style: none; }
+.fl-text ul li, .fl-ueber-text ul li { position: relative; padding-left: 1.05rem; }
+.fl-text ul li::before, .fl-ueber-text ul li::before { content: ""; position: absolute; left: .1rem; top: .6em; width: .42rem; height: .42rem; background: var(--fl-violett); clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%); box-shadow: 0 0 .4rem var(--fl-violett); }
+.fl-tabelle { overflow-x: auto; }
+.fl-tabelle table { width: 100%; border-collapse: collapse; font-size: .9rem; }
+.fl-tabelle :is(th, td) { padding: .4rem .6rem; border-bottom: 1px solid #ffffff14; text-align: left; vertical-align: top; }
+.fl-tabelle th { color: var(--fl-violett-hell); font-weight: 600; }
+.fl-knopf, .fl-mehr { display: inline-flex; align-items: center; gap: .4rem; text-decoration: none; }
+.fl-knopf { padding: .4rem .9rem; border: 1px solid var(--fl-linie-hell); border-radius: 10px; background: #1a2a22; color: var(--fl-text) !important; font-size: .85rem; }
+.fl-knopf:hover { border-color: var(--fl-violett); box-shadow: 0 0 .9rem #e3b86a44; }
+.fl-mehr { margin-top: .7rem; color: var(--fl-violett-hell) !important; font-size: .85rem; }
+.fl-mehr:hover { color: var(--fl-cyan) !important; }
+
+/* ---------- Kopf ---------- */
+.fl-hero { position: relative; isolation: isolate; display: grid; grid-template-columns: minmax(0, 1fr); min-height: clamp(18rem, 34cqi, 27rem); margin-bottom: .8rem; overflow: hidden; border: 1px solid var(--fl-linie); border-radius: 18px; background: #08100e; }
+.fl-hero--reiter { min-height: clamp(13rem, 22cqi, 18rem); }
+.fl-hero-bild { position: absolute; inset: 0 0 0 auto; z-index: -2; width: 70% !important; height: 100% !important; max-width: none !important; object-fit: cover; object-position: 60% 45%; mask-image: linear-gradient(90deg, transparent, #000 38%); }
+.fl-hero::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, #070d0cf2 0, #070d0cc9 32%, transparent 64%), linear-gradient(0deg, #070d0cd9, transparent 45%); pointer-events: none; }
+.fl-hero-text { align-self: center; max-width: min(36rem, 56%); padding: clamp(1rem, 3cqi, 2.4rem); }
+.fl-pfad { display: flex; flex-wrap: wrap; gap: .35rem; margin-bottom: .7rem; color: var(--fl-leise); font-size: .8rem; }
+.fl-pfad a { color: var(--fl-violett-hell) !important; text-decoration: none; }
+.fl-hero h1 { color: #fbf3df; font: 600 clamp(2.4rem, 6.4cqi, 4.8rem)/1 var(--fl-serif); text-shadow: 0 2px 18px #000; }
+.fl-hero--reiter h1 { font-size: clamp(2rem, 4.6cqi, 3.4rem); }
+.fl-unterzeile { margin-top: .4rem !important; color: var(--fl-text); font: 500 clamp(1rem, 1.7cqi, 1.25rem)/1.35 var(--fl-serif); }
+.fl-intro { margin-top: .9rem !important; color: #dcd8c8; font-size: .95rem; line-height: 1.55; }
+/* Blickfang: Glanz wandert über das Kopfbild */
+.fl-glanz { position: absolute; inset: 0; z-index: -1; background: linear-gradient(115deg, transparent 40%, #f6e2b522 48%, #5fe0c81f 52%, transparent 60%) 0 0 / 250% 100%; animation: fl-glanz 9s ease-in-out infinite; pointer-events: none; }
+@keyframes fl-glanz { 0% { background-position: 100% 0; } 55%, 100% { background-position: -60% 0; } }
+.fl-chips { display: grid; grid-template-columns: repeat(4, minmax(0, max-content)); gap: .6rem; align-self: end; padding: 0 clamp(1rem, 3cqi, 2.4rem) clamp(1rem, 2.4cqi, 1.8rem); }
+.fl-chips > div { display: grid; gap: .1rem; padding: .55rem .9rem; border: 1px solid var(--fl-linie-hell); border-radius: 12px; background: #0f1b17d9; backdrop-filter: blur(6px); }
+.fl-chips dt { color: var(--fl-leise); font-size: .7rem; }
+.fl-chips dd { margin: 0; font: 600 .95rem/1.25 var(--fl-serif); }
+
+/* ---------- Reiterleiste ---------- */
+.fl-reiter { display: flex; gap: .35rem; margin-bottom: 1rem; padding-bottom: .2rem; overflow-x: auto; scrollbar-width: thin; scrollbar-color: #e3b86a66 transparent; }
+.fl-reiter a { flex: 1 0 auto; display: inline-flex; align-items: center; justify-content: center; gap: .4rem; padding: .5rem .9rem; border: 1px solid var(--fl-linie); border-radius: 10px; background: #0f1b17cc; color: var(--fl-text) !important; font-size: .88rem; text-decoration: none; white-space: nowrap; transition: border-color .2s, box-shadow .2s; }
+.fl-reiter a span { color: var(--fl-violett); }
+.fl-reiter a:hover { border-color: var(--fl-linie-hell); }
+.fl-reiter a[aria-current="page"] { border-color: var(--fl-violett); background: linear-gradient(180deg, #5a4420, #2e2410); box-shadow: 0 0 1rem #e3b86a55; }
+
+/* ---------- Raster der Unterseiten: Inhalt + Kapitel rechts (links liegt die Sidebar) ---------- */
+.fl-layout { display: grid; grid-template-columns: minmax(0, 1fr) clamp(11rem, 17cqi, 14.5rem); gap: var(--fl-raum); align-items: start; }
+.fl-layout--fuss { grid-template-columns: minmax(0, 1fr); margin-top: var(--fl-raum); }
+.fl-inhalt { display: grid; gap: var(--fl-raum); min-width: 0; }
+.fl-sprung { position: sticky; top: calc(var(--aporia-topbar-height, 78px) + 1rem); display: grid; gap: .1rem; max-height: calc(100dvh - var(--aporia-topbar-height, 78px) - 2rem); overflow-y: auto; padding: .8rem .6rem; scrollbar-width: thin; }
+.fl-sprung .fl-kicker { margin: 0 0 .35rem .4rem; }
+.fl-sprung a { padding: .3rem .45rem; border-radius: 8px; color: var(--fl-text) !important; font-size: .8rem; line-height: 1.35; text-decoration: none; }
+.fl-sprung a .fl-nr { margin-right: .35rem; }
+.fl-sprung a:hover, .fl-sprung a.is-active { background: linear-gradient(90deg, #e3b86a30, transparent); box-shadow: inset 2px 0 0 var(--fl-violett); }
+
+/* Kapitelkarten */
+.fl-karte summary { display: flex; align-items: baseline; gap: .55rem; padding: .85rem 1.05rem; cursor: pointer; list-style: none; }
+.fl-karte summary::-webkit-details-marker { display: none; }
+.fl-karte summary h2 { flex: 1; font: 600 clamp(1.05rem, 1.7cqi, 1.25rem)/1.3 var(--fl-serif); }
+.fl-chevron { align-self: center; width: .5rem; height: .5rem; border-right: 2px solid var(--fl-violett); border-bottom: 2px solid var(--fl-violett); transform: rotate(-45deg); transition: transform .25s; }
+.fl-karte[open] .fl-chevron { transform: rotate(45deg); }
+.fl-text { display: grid; gap: .55rem; margin: 0 1.05rem 1.05rem; padding-top: .75rem; border-top: 1px solid #ffffff14; font-size: .94rem; max-width: 80ch; }
+.fl-text h3 { margin-top: .3rem; color: var(--fl-cyan); font: 600 .82rem/1.3 "Segoe UI", system-ui, sans-serif; letter-spacing: .08em; text-transform: uppercase; }
+.fl-karte:target { box-shadow: 0 0 0 1px var(--fl-violett), 0 0 1.4rem #e3b86a40; }
+
+/* Verknüpfungen */
+.fl-links ul { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 13rem), 1fr)); gap: .45rem; margin: 0; padding: 0; list-style: none; }
+.fl-links a { display: grid; gap: .05rem; padding: .5rem .65rem; border: 1px solid var(--fl-linie); border-radius: 10px; background: #0e181499; color: var(--fl-text) !important; text-decoration: none; }
+.fl-links a:hover { border-color: var(--fl-violett); }
+.fl-links strong { color: var(--fl-violett-hell); font: 600 .95rem/1.3 var(--fl-serif); }
+.fl-links span { color: var(--fl-leise); font-size: .75rem; }
+.fl-links a.is-unavailable { opacity: .5; }
+
+/* Galerien */
+.fl-galerie-raster, .fl-medienleiste-raster { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 11rem), 1fr)); gap: .6rem; }
+.fl-kachel { display: grid; gap: .35rem; padding: .35rem; border: 1px solid var(--fl-linie); border-radius: 12px; background: #0b1411; color: var(--fl-leise); font: .76rem/1.3 "Segoe UI", system-ui, sans-serif; text-align: left; cursor: zoom-in; transition: border-color .2s, transform .2s; }
+.fl-kachel[hidden] { display: none; }
+.fl-kachel img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 9px; filter: saturate(.9) brightness(.92); transition: filter .25s; }
+.fl-kachel:hover { border-color: var(--fl-violett); transform: translateY(-2px); }
+.fl-kachel:hover img { filter: none; }
+
+/* Forschungszweige */
+.fl-zweige { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 14rem), 1fr)); gap: .55rem; margin-top: .8rem; }
+.fl-zweige a { display: grid; gap: .15rem; padding: .7rem .8rem; border: 1px solid var(--fl-linie); border-radius: 12px; background: #0e181499; color: var(--fl-text) !important; text-decoration: none; }
+.fl-zweige a:hover { border-color: var(--fl-violett); box-shadow: 0 0 1rem #e3b86a33; }
+.fl-zweige strong { color: var(--fl-violett-hell); font: 600 1rem/1.3 var(--fl-serif); }
+.fl-zweige span { color: var(--fl-leise); font-size: .78rem; }
+
+.fl-blaettern { display: flex; justify-content: space-between; gap: .6rem; }
+.fl-blaettern a { padding: .45rem .95rem; border: 1px solid var(--fl-linie); border-radius: 10px; background: #0f1b17cc; color: var(--fl-text) !important; text-decoration: none; font-size: .88rem; }
+.fl-blaettern a:hover { border-color: var(--fl-violett); }
+
+/* Großansicht (Logik: _gemeinsam/galerie-zoom.js) */
+html:has(dialog.fl-zoom[open]) { overflow: hidden; }
+.floranoiden dialog.fl-zoom { position: fixed; inset: 0; width: 100%; height: 100%; max-width: none; max-height: none; margin: 0; padding: 0; border: 0; overflow: hidden; background: transparent; }
+.floranoiden dialog.fl-zoom::backdrop { background: #000c; }
+.fl-zoom .gallery-fullscreen-surface { display: flex; flex-direction: column; width: 100%; height: 100%; overflow: hidden; color: var(--fl-text); background: #040807; }
+.fl-zoom .gallery-fullscreen-toolbar { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: .3rem .65rem; padding: .4rem .5rem; border-bottom: 1px solid var(--fl-linie); background: #0f1b17; }
+.fl-zoom .gallery-fullscreen-toolbar .controls { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: .35rem; margin: 0; }
+.fl-zoom .gallery-fullscreen-toolbar form { order: 1; margin: 0; }
+.fl-zoom .control { padding: .3rem .75rem; border: 1px solid var(--fl-linie-hell); border-radius: 8px; background: #1a2a22; color: var(--fl-text); font: 600 .8rem/1 "Segoe UI", system-ui, sans-serif; cursor: pointer; }
+.fl-zoom output { padding: 0 .4rem; color: var(--fl-leise); font-size: .8rem; }
+.fl-zoom .gallery-zoom-viewport { flex: 1; min-height: 0; overflow: auto; overscroll-behavior: contain; }
+.floranoiden dialog.fl-zoom .gallery-zoom-viewport img { display: block; width: calc(100% * var(--gallery-zoom, 1)); height: calc(100% * var(--gallery-zoom, 1)); max-width: none; max-height: none; margin: 0; object-fit: contain; }
+
+/* ---------- Ausschnitte aus Designtafeln (Region als Anteil von Breite x/w und Höhe y/h; --r = Bildhöhe / Bildbreite) ---------- */
+.fl-ausschnitt { position: relative; display: block; overflow: hidden; aspect-ratio: calc(var(--w) / (var(--h) * var(--r, 1))); background: #040807; }
+.fl-ausschnitt.fl-hero-bild { position: absolute; aspect-ratio: auto; }
+.fl-ausschnitt > img { position: absolute; top: 0; left: calc(var(--x) / var(--w) * -100%); width: calc(100% / var(--w)) !important; max-width: none !important; height: auto; margin-top: calc(var(--y) * var(--r, 1) / var(--w) * -100%); }
+
+/* ---------- Klappbereiche ---------- */
+.fl-klappen { display: inline-flex; align-items: center; gap: .4rem; margin: 0 0 .45rem .4rem; padding: .3rem .7rem; border: 1px solid var(--fl-linie-hell); border-radius: 999px; background: #1a2a22; color: var(--fl-text); font: 600 .74rem/1.2 "Segoe UI", system-ui, sans-serif; cursor: pointer; justify-self: start; }
+.fl-klappen:hover { border-color: var(--fl-cyan); }
+.fl-klappen::before { content: "▾"; color: var(--fl-cyan); transition: transform .25s; }
+.fl-klappen[aria-pressed="true"]::before { transform: rotate(180deg); }
+.fl-karte[open] > .fl-text, .fl-klapp[open] > .fl-klapp-inhalt { animation: fl-auf .35s ease; }
+@keyframes fl-auf { from { opacity: 0; transform: translateY(-.35rem); } to { opacity: 1; transform: none; } }
+.fl-karte:not([open]) summary:hover { background: linear-gradient(90deg, color-mix(in srgb, var(--fl-violett) 14%, transparent), transparent); border-radius: 14px; }
+.fl-klapp { border: 1px solid var(--fl-linie); border-radius: 12px; background: #0e1814b3; }
+.fl-klapp summary { display: flex; align-items: center; gap: .55rem; padding: .6rem .8rem; cursor: pointer; list-style: none; }
+.fl-klapp summary::-webkit-details-marker { display: none; }
+.fl-klapp summary strong { flex: 1; color: var(--fl-violett-hell); font: 600 1rem/1.3 var(--fl-serif); }
+.fl-klapp summary small { color: var(--fl-leise); font-size: .76rem; }
+.fl-klapp[open] .fl-chevron { transform: rotate(45deg); }
+.fl-klapp-inhalt { display: grid; gap: .45rem; padding: 0 .8rem .8rem; font-size: .9rem; }
+.fl-klapp-inhalt ul, .fl-text ol { display: grid; gap: .25rem; padding: 0; list-style: none; }
+.fl-klapp-inhalt ul li { position: relative; padding-left: 1.05rem; }
+.fl-klapp-inhalt ul li::before { content: ""; position: absolute; left: .1rem; top: .6em; width: .42rem; height: .42rem; border-radius: 50%; background: var(--fl-cyan); box-shadow: 0 0 .4rem var(--fl-cyan); }
+.fl-text ol { counter-reset: schritt; }
+.fl-text ol li { counter-increment: schritt; position: relative; padding-left: 1.9rem; }
+.fl-text ol li::before { content: counter(schritt); position: absolute; left: 0; top: .1em; display: grid; place-items: center; width: 1.35rem; height: 1.35rem; border: 1px solid var(--fl-linie-hell); border-radius: 50%; color: var(--fl-cyan); font: 600 .7rem/1 ui-monospace, Consolas, monospace; }
+.fl-text--frei { margin: 0 0 .7rem; padding: 0; border: 0; max-width: none; }
+.fl-text > .fl-ausschnitt { width: min(100%, 26rem); border: 1px solid var(--fl-linie); border-radius: 10px; }
+.fl-quelle-design { color: var(--fl-cyan) !important; }
+
+/* Karussell: Tafeln vollständig zeigen */
+.fl-karussell-block .fl-h2 { margin-bottom: .6rem !important; }
+.fl-dossier .karussell-bild img { object-fit: contain; background: #040807; }
+.fl-dossier .bilder-karussell--buehne .karussell-bild { background: #040807; }
+
+/* Überschrift mit Leuchtlinie */
+.fl-h2--linie { text-transform: uppercase; letter-spacing: .12em; font-size: clamp(1rem, 1.7cqi, 1.22rem) !important; }
+.fl-h2--linie::after { content: ""; flex: 1 1 4rem; align-self: center; height: 1px; background: linear-gradient(90deg, var(--fl-violett), transparent); box-shadow: 0 0 .5rem var(--fl-violett); }
+
+/* Medienseite: Schnellnavigation */
+.fl-medien-nav { display: flex; flex-wrap: wrap; gap: .4rem; }
+.fl-medien-nav a { display: inline-flex; align-items: center; gap: .45rem; padding: .45rem .8rem; border: 1px solid var(--fl-linie); border-radius: 10px; background: #0f1b17cc; color: var(--fl-text) !important; font-size: .86rem; text-decoration: none; }
+.fl-medien-nav a:hover { border-color: var(--fl-violett); }
+.fl-medien-nav b { color: var(--fl-cyan); font: 600 .74rem/1 ui-monospace, Consolas, monospace; }
+.fl-medien-bereich { display: grid; gap: .6rem; }
+.fl-dossier .media-player-card { padding: .75rem .85rem; }
+.fl-dossier .media-player-card h3 { margin-bottom: .4rem; font: 600 1rem/1.3 var(--fl-serif); }
+.fl-dossier .media-status, .fl-dossier .asset-catalog [role="status"] { color: var(--fl-leise); font-style: italic; font-size: .88rem; }
+.fl-dossier .media-player-card :is(select, button) { border: 1px solid var(--fl-linie-hell); border-radius: 9px; background: #1a2a22; color: var(--fl-text); }
+.fl-dossier :is(video, audio) { width: 100%; }
+.fl-medien-zwei { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .6rem; }
+@container (max-width: 640px) { .fl-medien-zwei { grid-template-columns: minmax(0, 1fr); } }
+
+/* ---------- Responsiv ---------- */
+@container (max-width: 900px) {
+    .fl-layout { grid-template-columns: minmax(0, 1fr); }
+    .fl-sprung { position: static; display: flex; max-height: none; overflow-x: auto; }
+    .fl-sprung .fl-kicker { display: none; }
+    .fl-sprung a { flex: none; border: 1px solid var(--fl-linie); }
+    .fl-hero-text { max-width: 70%; }
+}
+@container (max-width: 640px) {
+    .fl-hero-bild { width: 100% !important; mask-image: linear-gradient(180deg, #0008, #000 60%); }
+    .fl-hero::after { background: linear-gradient(0deg, #070d0cf2 25%, #070d0c99 70%, #070d0c66); }
+    .fl-hero-text { max-width: none; }
+    .fl-chips { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .fl-fakten > div { grid-template-columns: minmax(0, 1fr); gap: .1rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .floranoiden *, .floranoiden *::before, .floranoiden *::after { animation: none !important; transition: none !important; }
+}

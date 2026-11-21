@@ -1,20 +1,69 @@
-@import url("../../../_gemeinsam/wissenslayout.css");
-body { margin: 0; background: #030d15; color: #e7f4fa; font: 1rem/1.55 Arial,sans-serif; }
-.species-detail-frame { display: flex; }
-main { flex: 1; min-width: 0; }
-a { color: #9be9f5; }
-.species-detail-hero {
-    min-height: 28rem; margin-top: 1rem; padding: clamp(1rem,3vw,2rem);
-    display: grid; 
-    align-items: end; gap: 1.5rem;
-    background: linear-gradient(90deg,#030d15f5,#030d1555 68%,#030d1599), var(--portrait) center / cover;
-    border: 1px solid #376575; border-radius: .6rem;
+/* Pyronoiden – Hauptseite (nach der Designtafel „Dunkles Weltenarchiv: Pyronoiden von Kharuun“)
+   Gemeinsames Design: ../pyronoiden-basis.css · hier nur der Aufbau der Übersicht. */
+
+/* Kopf: breites Banner wie auf der Tafel */
+.py-hauptseite .py-hero { grid-template-rows: 1fr auto; min-height: clamp(18rem, 30cqi, 26rem); }
+.py-hauptseite .py-hero-bild { width: 78% !important; mask-image: linear-gradient(90deg, transparent, #000 30%), linear-gradient(180deg, #000 70%, transparent 92%); mask-composite: intersect; }
+.py-hauptseite .py-hero h1 { letter-spacing: .08em; text-transform: uppercase; }
+.py-hero-chips { display: flex; flex-wrap: wrap; gap: .5rem; margin: 0; padding: 0 clamp(1rem, 3cqi, 2.4rem) clamp(1rem, 2.4cqi, 1.8rem); list-style: none; }
+.py-hero-chips li { display: inline-flex; align-items: center; gap: .45rem; padding: .4rem .85rem; border: 1px solid var(--py-linie-hell); border-radius: 999px; background: #1c130ed9; font-size: .86rem; backdrop-filter: blur(6px); }
+.py-hero-chips span { color: var(--py-violett); }
+
+/* Start: Überblick | Steckbrief | Kharuun */
+.py-start { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(14rem, .85fr) minmax(14rem, .9fr); gap: var(--py-raum); align-items: stretch; }
+.py-ueberblick .py-h2 + .py-text { margin-bottom: .8rem; }
+.py-steckbrief { display: grid; gap: .5rem; align-content: start; }
+.py-wert { display: flex; align-items: center; gap: .8rem; padding: .6rem .8rem; }
+.py-wert-icon { display: grid; place-items: center; width: 2.2rem; height: 2.2rem; color: var(--py-violett); font-size: 1.3rem; }
+.py-wert small { display: block; color: var(--py-leise); font-size: .76rem; }
+.py-wert strong { font: 600 1.15rem/1.2 var(--py-serif); }
+.py-dossier :is(.py-sensor, .py-welt, .py-thema, .py-medium) { color: var(--py-text); text-decoration: none; }
+.py-dossier :is(.py-sensor, .py-welt, .py-thema, .py-medium):hover { border-color: var(--py-violett); box-shadow: 0 0 1.1rem #ff7a2a44; }
+.py-sensor { display: grid; grid-template-columns: 6.5rem minmax(0, 1fr); gap: .7rem; align-items: center; padding: .5rem; }
+.py-sensor-bild { border-radius: 8px; }
+.py-sensor strong { display: block; color: var(--py-violett); font-size: .85rem; }
+.py-sensor span span, .py-sensor > span { font-size: .8rem; }
+.py-welt { position: relative; align-self: start; display: grid; align-content: start; min-height: 16rem; overflow: hidden; background: radial-gradient(circle at 70% 35%, #ff7a2a1f, transparent 60%), linear-gradient(160deg, var(--py-glas-hell), var(--py-glas)); }
+.py-welt-bild { width: 100%; mask-image: linear-gradient(180deg, #000 70%, transparent); }
+.py-welt-text { position: absolute; top: .9rem; left: 1rem; display: grid; }
+.py-welt-text strong { font: 600 1.35rem/1.2 var(--py-serif); text-shadow: 0 2px 10px #000; }
+.py-welt-text small { color: var(--py-leise); }
+.py-welt .py-pfeil { position: absolute; right: .8rem; bottom: .7rem; color: var(--py-violett-hell); font-size: 1.3rem; }
+
+/* Ritualik */
+.py-ritualik, .py-themen, .py-karussell-block, .py-medienleiste, .py-layout--fuss { margin-top: var(--py-raum); }
+.py-ritualik-raster { display: grid; grid-template-columns: minmax(12rem, .65fr) minmax(0, 1.35fr); gap: var(--py-raum); align-items: start; }
+.py-ritualik-bild, .py-ganz-bild, .py-klapp-inhalt .py-ausschnitt { border: 1px solid var(--py-linie); border-radius: 10px; }
+.py-ritualik-text { display: grid; gap: .7rem; }
+.py-klapp-liste { display: grid; gap: .45rem; }
+
+/* Themenkacheln */
+.py-themen-raster { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--py-raum); }
+.py-thema { display: grid; align-content: end; gap: .25rem; min-height: 9.5rem; padding: .8rem 1.55rem .8rem .8rem; overflow: hidden; isolation: isolate; }
+.py-thema-bild { position: absolute !important; inset: 0; z-index: -2; width: 100% !important; height: 100% !important; object-fit: cover; object-position: center 25%; transition: transform .5s ease; }
+.py-thema:hover .py-thema-bild { transform: scale(1.05); }
+.py-thema::before { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(0deg, #0d0908 8%, #0d0908cc 52%, #0d090830 100%); }
+.py-thema-kopf { display: flex; gap: .45rem; align-items: center; }
+.py-thema-text { font-size: .84rem; line-height: 1.35; }
+.py-thema .py-pfeil { position: absolute; right: .65rem; bottom: .75rem; color: var(--py-violett-hell); }
+
+/* Medienleiste wie auf der Tafel */
+.py-medien-raster { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--py-raum); }
+.py-medium { display: grid; overflow: hidden; }
+.py-medium > span:last-child { padding: .55rem .8rem; font: 600 .95rem/1.2 var(--py-serif); }
+.py-medium small { color: var(--py-leise); font: 400 .75rem/1 "Segoe UI", system-ui, sans-serif; }
+
+@container (max-width: 1100px) {
+    .py-start { grid-template-columns: minmax(0, 1fr) minmax(14rem, .8fr); }
+    .py-welt { grid-column: 1 / -1; }
+    .py-welt-bild { max-width: 26rem; margin-left: auto; }
 }
-h1 { font-size: clamp(2rem,5vw,4.5rem); line-height: 1; overflow-wrap: anywhere; }
-h2 { color: #9be9f5; font-size: 1rem; letter-spacing: .08em; text-transform: uppercase; }
-dt { color: #9be9f5; }
-dd { margin: 0 0 .55rem; }
-.species-detail-panel { padding: 1rem; border: 1px solid #376575; border-radius: .6rem; background: #06141de8; }
-.species-detail-panel img { display: block; width: 100%; aspect-ratio: 16/9; object-fit: cover; border-radius: .35rem; }
-.species-detail-panel small { display: block; margin-top: .35rem; color: #b6d3df; }
-main section[id] { scroll-margin-top: 8rem; }
+@container (max-width: 760px) {
+    .py-start, .py-ritualik-raster { grid-template-columns: minmax(0, 1fr); }
+    .py-themen-raster { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .py-medien-raster { grid-template-columns: minmax(0, 1fr); }
+    .py-hauptseite .py-hero-bild { width: 100% !important; }
+}
+@container (max-width: 480px) {
+    .py-themen-raster { grid-template-columns: minmax(0, 1fr); }
+}

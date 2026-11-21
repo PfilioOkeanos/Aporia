@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#080f19">
+    <meta name="description" content="Spielintegration der Plasmoiden im APORIA-Weltenarchiv.">
+    <title>Spielintegration · Plasmoiden · APORIA</title>
+    <link rel="stylesheet" href="../../../../../Men%C3%BCs/TopBar/Top_bar.css">
+    <link rel="stylesheet" href="../../../../../Men%C3%BCs/Side_bar/Side_bar.css">
+    <link rel="stylesheet" href="../../../_gemeinsam/bilder-karussell.css">
+    <link rel="stylesheet" href="../plasmoiden-basis.css">
+    <link rel="stylesheet" href="gameplay.css">
+    <script type="module" src="gameplay.js"></script>
+</head>
+<body class="plasmoiden pl-gameplay" data-page="spezies-biological-10-gameplay" data-section="spezies">
+    <div data-aporia-topbar></div>
+    <div class="aporia-page-frame pl-frame">
+        <div data-aporia-sidebar></div>
+        <main class="pl-dossier" id="inhalt">
+            <header class="pl-hero pl-hero--reiter">
+                <img class="pl-hero-bild" src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Plasmoiden/gesamtdarstellung/Plasmoiden_designPirat_charactercharacter%281%29.png" alt="" fetchpriority="high" decoding="async">
+                <span class="pl-glanz" aria-hidden="true"></span>
+                <div class="pl-hero-text">
+                    <nav class="pl-pfad" aria-label="Archivpfad"><a data-route="spezies" href="../../../Spezies_%C3%BCbersicht/Spezies.html">Spezies</a><span aria-hidden="true">›</span><a data-route="spezies-biological" href="../../%C3%9Cbersichtsseite%20biologische%20spezies/Uebersicht.html">Biologische Spezies</a><span aria-hidden="true">›</span><a data-route="spezies-biological-10" href="../hauptseite/Spezies.html">Plasmoiden</a><span aria-hidden="true">›</span><span aria-current="page">Spielintegration</span></nav>
+                    <p class="pl-kicker">Plasmoiden · Hauptreiter</p>
+                    <h1>Spielintegration</h1>
+                    <p class="pl-unterzeile">Rolle im Spiel, Körperzustände, Kampf und Missionen</p>
+                </div>
+            </header>
+            <nav class="pl-reiter" aria-label="Hauptreiter der Plasmoiden">
+                <a href="../hauptseite/Spezies.html" data-route="spezies-biological-10"><span aria-hidden="true">◆</span>Übersicht</a>
+                <a href="../Unterseiten/Allgemeines/allgemeines.html" data-route="spezies-biological-10-allgemeines"><span aria-hidden="true">ⓘ</span>Allgemeines</a>
+                <a href="../Unterseiten/Biologie/biologie.html" data-route="spezies-biological-10-biologie"><span aria-hidden="true">⟡</span>Biologie</a>
+                <a href="../Unterseiten/Entwicklung/entwicklung.html" data-route="spezies-biological-10-entwicklung"><span aria-hidden="true">⤳</span>Entwicklung</a>
+                <a href="../Unterseiten/Heimatwelt/heimatwelt.html" data-route="spezies-biological-10-heimatwelt"><span aria-hidden="true">◍</span>Heimatwelt</a>
+                <a href="../Unterseiten/Gesellschaft/gesellschaft.html" data-route="spezies-biological-10-gesellschaft"><span aria-hidden="true">⁂</span>Gesellschaft</a>
+                <a href="../Unterseiten/Politik/politik.html" data-route="spezies-biological-10-politik"><span aria-hidden="true">⚖</span>Politik</a>
+                <a href="../Unterseiten/Geschichte/geschichte.html" data-route="spezies-biological-10-geschichte"><span aria-hidden="true">⧗</span>Geschichte</a>
+                <a href="gameplay.html" data-route="spezies-biological-10-gameplay" aria-current="page"><span aria-hidden="true">◈</span>Spielintegration</a>
+                <a href="../Forschung/forschung.html" data-route="spezies-biological-10-forschung"><span aria-hidden="true">⚗</span>Forschung</a>
+                <a href="../Unterseiten/Medien/medien.html" data-route="spezies-biological-10-medien"><span aria-hidden="true">▣</span>Medien</a>
+            </nav>
+            <div class="pl-layout">
+                <div class="pl-inhalt">
+                    <details class="pl-panel pl-karte" id="k-1-grundlegende-rolle-im-spiel" open>
+                        <summary><span class="pl-nr">1</span><h2>Grundlegende Rolle im Spiel</h2><span class="pl-chevron" aria-hidden="true"></span></summary>
+                        <div class="pl-text">
+                            <p>Die Plasmoiden sind eine eigenständige intelligente NPC-Spezies innerhalb von APORIA – Unter fremden Kronen.</p>
+                            <p>Sie können als Wissenschaftler, Techniker, Händler, Diplomaten, Bewohner oder besondere Missionscharaktere auftreten.</p>
+                            <p>Ihre Biologie beeinflusst Bewegung, Interaktion, Ausrüstung und Umgebungseignung.</p>
+                        </div>
+                    </details>
+                    <details class="pl-panel pl-karte" id="k-2-npc-verhalten">
+                        <summary><span class="pl-nr">2</span><h2>NPC-Verhalten</h2><span class="pl-chevron" aria-hidden="true"></span></summary>
+                        <div class="pl-text">
+                            <p>Plasmoidische NPCs benötigen eine von humanoiden Figuren abweichende Bewegungslogik.</p>
+                            <p>Sie besitzen keine festgelegte Skelettanimation.</p>
+                            <p>Stattdessen bewegen sie sich durch Veränderung einer zusammenhängenden Körperform.</p>
+                            <p>Die Darstellung sollte auf einer Kombination aus verformbarer Körpergeometrie, geeigneten Animationen und vereinfachter physikalischer Steuerung beruhen.</p>
+                        </div>
+                    </details>
+                    <details class="pl-panel pl-karte" id="k-3-korperzustande">
+                        <summary><span class="pl-nr">3</span><h2>Körperzustände</h2><span class="pl-chevron" aria-hidden="true"></span></summary>
+                        <div class="pl-text">
+                            <p>Für Gameplay und Simulation werden folgende Zustände vorgesehen:</p>
+                            <dl class="pl-fakten"><div><dt>Ruheform</dt><dd>Kompakte Körpergestalt mit geringer Aktivität.</dd></div><div><dt>Bewegungsform</dt><dd>Kontrollierte Verlagerung und Ausbildung von Kontaktflächen.</dd></div><div><dt>Greifform</dt><dd>Temporäre Fortsätze zur Objektinteraktion.</dd></div><div><dt>Haftform</dt><dd>Vergrößerte Kontaktbereiche an geeigneten Oberflächen.</dd></div><div><dt>Schutzform</dt><dd>Verdichtete äußere Gelmatrix zur Reduktion leichter Belastungen.</dd></div><div><dt>Regenerationsform</dt><dd>Verminderte Bewegung während biologischer Reparaturprozesse.</dd></div><div><dt>Notzustand</dt><dd>Eingeschränkte Kontrolle infolge schwerer Flüssigkeits- oder Strukturschäden.</dd></div></dl>
+                        </div>
+                    </details>
+                    <details class="pl-panel pl-karte" id="k-4-biologische-statuswerte">
+                        <summary><span class="pl-nr">4</span><h2>Biologische Statuswerte</h2><span class="pl-chevron" aria-hidden="true"></span></summary>
+                        <div class="pl-text">
+                            <p>Für die Simulation eignen sich:</p>
+                            <ul><li>Körpermasse</li><li>Flüssigkeitsanteil</li><li>Gelkohäsion</li><li>Osmotisches Gleichgewicht</li><li>Innere Temperatur</li><li>Stoffwechselenergie</li><li>Sauerstoffversorgung</li><li>Verletzungsgrad</li><li>Koordinationsfähigkeit</li></ul>
+                            <p>Diese Werte beeinflussen Fähigkeiten und Animationen.</p>
+                        </div>
+                    </details>
+                    <details class="pl-panel pl-karte" id="k-5-fortbewegung">
+                        <summary><span class="pl-nr">5</span><h2>Fortbewegung</h2><span class="pl-chevron" aria-hidden="true"></span></summary>
+                        <div class="pl-text">
+                            <p>Plasmoiden können sich über geeignete Oberflächen bewegen und kleinere Hindernisse durch Formanpassung überwinden.</p>
+                            <p>Besondere Fähigkeiten:</p>
+                            <ul><li>Kriechen durch passende Durchgänge</li><li>Gleiten über glatte Flächen</li><li>Anhaften an geeigneten Untergründen</li><li>Umfließen kleiner Hindernisse</li><li>Temporäre Ausbildung von Greiffortsätzen</li></ul>
+                            <p>Die Bewegung bleibt durch Körpervolumen, Querschnitt, Oberflächenbeschaffenheit und Energieverbrauch begrenzt.</p>
+                            <p>Ein Plasmoid kann sich beispielsweise durch einen schmalen Schacht bewegen, wenn die Öffnung ausreichend groß und der dahinterliegende Raum geeignet ist.</p>
+                            <p>Er kann nicht mit unveränderter Körpermasse durch einen mikroskopischen Spalt verschwinden.</p>
+                        </div>
+                    </details>
+                    <details class="pl-panel pl-karte" id="k-6-kampf">
+                        <summary><span class="pl-nr">6</span><h2>Kampf</h2><span class="pl-chevron" aria-hidden="true"></span></summary>
+                        <div class="pl-text">
+                            <p>Plasmoiden kämpfen anders als humanoide Lebewesen.</p>
+                            <p>Mögliche Techniken:</p>
+                            <ul><li>Kurzzeitiges Umschließen kleinerer Körperbereiche</li><li>Festhalten mit Haftflächen</li><li>Ausweichen durch Gestaltänderung</li><li>Einsatz spezialisierter Werkzeuge</li><li>Kontaktgebundene elektrische Abwehrimpulse bei geeigneten Individuen</li></ul>
+                            <p>Die Gelmatrix ist gegenüber hoher Hitze und stark schädigenden Chemikalien empfindlich.</p>
+                            <p>Die natürliche Kampfkraft ist deshalb situationsabhängig.</p>
+                        </div>
+                    </details>
+                    <details class="pl-panel pl-karte" id="k-7-regeneration">
+                        <summary><span class="pl-nr">7</span><h2>Regeneration</h2><span class="pl-chevron" aria-hidden="true"></span></summary>
+                        <div class="pl-text">
+                            <p>Kleinere Oberflächenverletzungen können biologisch repariert werden.</p>
+                            <p>Größere Verletzungen erfordern passende Nährstoffe, Flüssigkeiten und ausreichend Ruhe.</p>
+                            <p>Regeneration kostet Ressourcen.</p>
+                            <p>Abgetrennte Körpermasse kann nicht ohne erneute Stoffaufnahme ersetzt werden.</p>
+                            <p>Schwere Schäden am Informationsnetz können langfristige Folgen haben.</p>
+                        </div>
+                    </details>
+                    <details class="pl-panel pl-karte" id="k-8-forschungssystem">
+                        <summary><span class="pl-nr">8</span><h2>Forschungssystem</h2><span class="pl-chevron" aria-hidden="true"></span></summary>
+                        <div class="pl-text">
+                            <p>Spieler können die Plasmoiden im Rahmen der Xenobiologie, Biotechnologie und Materialforschung untersuchen.</p>
+                            <p>Forschungsbereiche:</p>
+                            <ul><li>Adaptives Hydrogel</li><li>Gelbasierte Aktuatoren</li><li>Elektrochemische Sensorik</li><li>Biologische Selbstreparatur</li><li>Osmotische Regulation</li><li>Biokompatible Kommunikationsschnittstellen</li><li>Medizinische Gelmaterialien</li></ul>
+                            <p>Diese Forschung kann neue technische Anwendungen erschließen.</p>
+                        </div>
+                    </details>
+                    <details class="pl-panel pl-karte" id="k-9-technologische-nutzung">
+                        <summary><span class="pl-nr">9</span><h2>Technologische Nutzung</h2><span class="pl-chevron" aria-hidden="true"></span></summary>
+                        <div class="pl-text">
+                            <p>Aus plasm oidischer Forschung können technische Komponenten entstehen.</p>
+                            <p>Beispiele:</p>
+                            <ul><li>Flexible Dichtungsmaterialien</li><li>Selbstreparierende Schutzschichten</li><li>Biochemische Messsysteme</li><li>Adaptive Greifwerkzeuge</li><li>Medizinische Regenerationsmaterialien</li><li>Intelligente Feuchtigkeitsregulation</li></ul>
+                            <p>Die technische Nutzung muss nicht auf lebende intelligente Plasmoiden zurückgreifen.</p>
+                        </div>
+                    </details>
+                    <details class="pl-panel pl-karte" id="k-10-interaktion-mit-dem-spieler">
+                        <summary><span class="pl-nr">10</span><h2>Interaktion mit dem Spieler</h2><span class="pl-chevron" aria-hidden="true"></span></summary>
+                        <div class="pl-text">
+                            <p>Der Spieler kann plasm oidische NPCs kontaktieren, Gespräche führen und diplomatische Beziehungen aufbauen.</p>
+                            <p>Für komplexe Kommunikation können Übersetzungsgeräte notwendig sein.</p>
+                            <p>Beziehungen beeinflussen Forschung, Handel und Zugang zu bestimmten Einrichtungen.</p>
+                        </div>
+                    </details>
+                    <details class="pl-panel pl-karte" id="k-11-besondere-missionen">
+                        <summary><span class="pl-nr">11</span><h2>Besondere Missionen</h2><span class="pl-chevron" aria-hidden="true"></span></summary>
+                        <div class="pl-text">
+                            <h3>Mission: Das versiegende Becken</h3>
+                            <p>Eine Siedlung verliert ihre lebenswichtige Wasserversorgung. Der Spieler untersucht die Ursache und hilft, die Versorgung wiederherzustellen.</p>
+                            <h3>Mission: Verbotene Proben</h3>
+                            <p>Ein Unternehmen hat unerlaubt biologische Proben intelligenter Plasmoiden gesammelt. Der Spieler ermittelt und muss über mögliche weitere Schritte entscheiden.</p>
+                            <h3>Mission: Die verlorene Kolonie</h3>
+                            <p>Eine außerplanetare Plasmoidensiedlung meldet ungewöhnliche Störungen ihrer Lebenserhaltungssysteme.</p>
+                            <h3>Mission: Der wandernde Körper</h3>
+                            <p>Ein junger Plasmoid besitzt ungewöhnliche Schwierigkeiten bei der Formstabilisierung. Eine wissenschaftliche Untersuchung kann neue Erkenntnisse ermöglichen.</p>
+                        </div>
+                    </details>
+                    <details class="pl-panel pl-karte" id="k-12-vorubergehende-spielbare-nutzung">
+                        <summary><span class="pl-nr">12</span><h2>Vorübergehende spielbare Nutzung</h2><span class="pl-chevron" aria-hidden="true"></span></summary>
+                        <div class="pl-text">
+                            <p>Der menschliche Hauptcharakter wird nicht automatisch zu einem Plasmoiden.</p>
+                            <p>Über erforschte technische Biointerfaces können jedoch fernsteuerbare Gelsonden oder experimentelle Gelkörper genutzt werden.</p>
+                            <p>Dadurch lassen sich spezielle Umgebungen erkunden und neue Interaktionsmechaniken freischalten.</p>
+                            <p>Eine dauerhafte Speziesverwandlung wird dadurch nicht vorausgesetzt.</p>
+                        </div>
+                    </details>
+                    <details class="pl-panel pl-karte" id="k-13-technische-integration">
+                        <summary><span class="pl-nr">13</span><h2>Technische Integration</h2><span class="pl-chevron" aria-hidden="true"></span></summary>
+                        <div class="pl-text">
+                            <p>Für die Unreal-Engine-Entwicklung empfiehlt sich eine modulare Physiologielogik.</p>
+                            <p>Die Körpervisualisierung und das eigentliche Identitäts- beziehungsweise Speichersystem sollen getrennt bleiben.</p>
+                            <p>Wichtige Komponenten:</p>
+                            <ul><li>Physiologiemodul</li><li>Formzustandssteuerung</li><li>Bewegungssteuerung</li><li>Umwelt- und Flüssigkeitsüberwachung</li><li>Verletzungs- und Regenerationssystem</li><li>Kommunikationsmodul</li><li>Interaktionssystem</li></ul>
+                            <p>Die eigentliche Individualität und der persistente Charakterdatensatz bleiben unabhängig von einzelnen visuellen Meshes.</p>
+                            <p>Damit können zukünftige technische Änderungen an Darstellung oder Animation vorgenommen werden, ohne gespeicherte individuelle NPC-Identitäten zu verlieren.</p>
+                        </div>
+                    </details>
+                    <section class="pl-panel pl-block pl-karussell-block" id="galerie" aria-label="Bilder">
+                    <h2 class="pl-h2">Bilder <small>8 Bilder · Bildarchiv</small></h2>
+                    <div class="bilder-karussell" data-karussell aria-roledescription="Karussell" aria-label="Bilder der Plasmoiden">
+                    <div class="karussell-spur" tabindex="0" aria-label="Bilder – mit Pfeiltasten blättern">
+                        <figure class="karussell-folie" data-kategorie="Piratenentwürfe" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Piratenentwurf 1 in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Plasmoiden/gesamtdarstellung/Plasmoiden_designPirat_charactercharacter.png" alt="Piratenentwurf 1" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Piratenentwurf 1</strong><span>Piratenentwürfe</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Piratenentwürfe" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Piratenentwurf 2 in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Plasmoiden/gesamtdarstellung/Plasmoiden_designPirat_charactercharacter%281%29.png" alt="Piratenentwurf 2" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Piratenentwurf 2</strong><span>Piratenentwürfe</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Piratenentwürfe" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Piratenentwurf 3 in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Plasmoiden/gesamtdarstellung/Plasmoiden_designPirat_charactercharacter%282%29.png" alt="Piratenentwurf 3" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Piratenentwurf 3</strong><span>Piratenentwürfe</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Piratenentwürfe" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Piratenentwurf 4 in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Plasmoiden/gesamtdarstellung/Plasmoiden_designPirat_charactercharacter%283%29.png" alt="Piratenentwurf 4" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Piratenentwurf 4</strong><span>Piratenentwürfe</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Konzepttafeln" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Konzepttafel 1 in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Plasmoiden/gesamtdarstellung/Plasmoiden_design_charactercharacter.png" alt="Konzepttafel 1" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Konzepttafel 1</strong><span>Konzepttafeln</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Konzepttafeln" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Konzepttafel 2 in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Plasmoiden/gesamtdarstellung/Plasmoiden_design_charactercharacter%281%29.png" alt="Konzepttafel 2" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Konzepttafel 2</strong><span>Konzepttafeln</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Konzepttafeln" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Konzepttafel 3 in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Plasmoiden/gesamtdarstellung/Plasmoiden_design_charactercharacter%282%29.png" alt="Konzepttafel 3" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Konzepttafel 3</strong><span>Konzepttafeln</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Konzepttafeln" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Konzepttafel 4 in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Plasmoiden/gesamtdarstellung/Plasmoiden_design_charactercharacter%283%29.png" alt="Konzepttafel 4" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Konzepttafel 4</strong><span>Konzepttafeln</span></figcaption>
+                        </figure>
+                    </div>
+                    <div class="karussell-steuerung">
+                        <button type="button" data-karussell-schritt="-1" aria-label="Vorheriges Bild">‹</button>
+                        <div class="karussell-punkte" role="group" aria-label="Bild wählen"></div>
+                        <output class="karussell-zaehler" aria-live="polite"></output>
+                        <button type="button" data-karussell-schritt="1" aria-label="Nächstes Bild">›</button>
+                    </div>
+                </div>
+                </section>
+                    <aside class="pl-panel pl-block pl-links" aria-label="Verknüpfungen">
+                    <h2 class="pl-h2">Verknüpfungen</h2>
+                    <ul>
+                        <li><a href="../Forschung/forschung.html" data-route="spezies-biological-10-forschung"><strong>Forschung</strong><span>Forschungsfelder zu den Plasmoiden</span></a></li>
+                        <li><a href="../../../../Forschung/Xenoforschung/Xenobiologie/index.html" ><strong>Xenobiologie</strong><span>Forschungszweig</span></a></li>
+                        <li><a href="../../../../Forschung/Technologie%20und%20Ingenieurwesen/Material-%20und%20Werkstoffwissenschaften/index.html" ><strong>Material- und Werkstoffwissenschaften</strong><span>Forschungszweig · Adaptives Hydrogel</span></a></li>
+                        <li><a href="../../../../Forschung/Naturwissenschaften/Biologie/index.html" ><strong>Biologie</strong><span>Forschungszweig · Osmotische Regulation</span></a></li>
+                        <li><a href="../../../../Rohstoffe/Uebersicht/Rohstoffe.html" data-route="rohstoffe"><strong>Rohstoffarchiv</strong><span>Rohstoffe im Weltenarchiv</span></a></li>
+                        <li><a href="../../../../himmelskoerper/planeten/planeten.html" data-route="planeten"><strong>Planetenarchiv</strong><span>Lymara ist noch kein Planetendossier</span></a></li>
+                    </ul>
+                </aside>
+                    <p class="pl-quelle">Quelle: Info_material · Biologische Spezies · Plasmoiden · Gameplay/.gitkeep</p>
+                    <nav class="pl-blaettern" aria-label="Hauptreiter blättern"><a href="../Unterseiten/Geschichte/geschichte.html" data-route="spezies-biological-10-geschichte">← Geschichte</a><a href="../Forschung/forschung.html" data-route="spezies-biological-10-forschung">Forschung →</a></nav>
+                </div>
+                <nav class="pl-panel pl-sprung" data-pl-sprung aria-label="Kapitel dieser Seite">
+                    <p class="pl-kicker">Kapitel</p>
+                    <button type="button" class="pl-klappen" data-pl-klappen aria-pressed="false">Alle aufklappen</button>
+                    <a href="#k-1-grundlegende-rolle-im-spiel"><span class="pl-nr">1</span>Grundlegende Rolle im Spiel</a>
+                    <a href="#k-2-npc-verhalten"><span class="pl-nr">2</span>NPC-Verhalten</a>
+                    <a href="#k-3-korperzustande"><span class="pl-nr">3</span>Körperzustände</a>
+                    <a href="#k-4-biologische-statuswerte"><span class="pl-nr">4</span>Biologische Statuswerte</a>
+                    <a href="#k-5-fortbewegung"><span class="pl-nr">5</span>Fortbewegung</a>
+                    <a href="#k-6-kampf"><span class="pl-nr">6</span>Kampf</a>
+                    <a href="#k-7-regeneration"><span class="pl-nr">7</span>Regeneration</a>
+                    <a href="#k-8-forschungssystem"><span class="pl-nr">8</span>Forschungssystem</a>
+                    <a href="#k-9-technologische-nutzung"><span class="pl-nr">9</span>Technologische Nutzung</a>
+                    <a href="#k-10-interaktion-mit-dem-spieler"><span class="pl-nr">10</span>Interaktion mit dem Spieler</a>
+                    <a href="#k-11-besondere-missionen"><span class="pl-nr">11</span>Besondere Missionen</a>
+                    <a href="#k-12-vorubergehende-spielbare-nutzung"><span class="pl-nr">12</span>Vorübergehende spielbare Nutzung</a>
+                    <a href="#k-13-technische-integration"><span class="pl-nr">13</span>Technische Integration</a>
+                    <a href="#galerie"><span class="pl-nr">▣</span>Bilder</a>
+                </nav>
+            </div>
+            <dialog class="pl-zoom" aria-label="Bild in Großansicht"><div class="controls"><button class="control" type="button" data-step="-1" aria-label="Vorheriges Bild">←</button><output aria-live="polite"></output><button class="control" type="button" data-step="1" aria-label="Nächstes Bild">→</button></div><form method="dialog"><button class="control">Schließen</button></form><img alt=""></dialog>
+        </main>
+    </div>
+</body>
+</html>

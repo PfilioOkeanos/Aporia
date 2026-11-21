@@ -102,12 +102,14 @@ function populatePageDetails() {
         links.append(link);
     }
 
-    for (const link of main.querySelectorAll(".consortium-nav a, .chapter-nav a, .protectorate-nav a")) {
+    for (const link of main.querySelectorAll(".consortium-nav a, .chapter-nav a, .protectorate-nav a, [data-sidebar-page-nav] a")) {
         const href = link.getAttribute("href");
         const route = link.dataset.route;
         if (!href || (href.startsWith("#") && !document.getElementById(href.slice(1)))) continue;
         if (link.hasAttribute("aria-current") || (route && route === document.body.dataset.page)) continue;
-        addLink(href, link.textContent.trim(), route);
+        const label = link.cloneNode(true);
+        label.querySelectorAll('[aria-hidden="true"]').forEach((decoration) => decoration.remove());
+        addLink(href, label.textContent.trim(), route);
     }
 
     const details = main.querySelectorAll("section[id], article[id], .celestial-facts h2[id]");

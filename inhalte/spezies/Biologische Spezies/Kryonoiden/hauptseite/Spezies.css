@@ -1,20 +1,59 @@
-@import url("../../../_gemeinsam/wissenslayout.css");
-body { margin: 0; background: #030d15; color: #e7f4fa; font: 1rem/1.55 Arial,sans-serif; }
-.species-detail-frame { display: flex; }
-main { flex: 1; min-width: 0; }
-a { color: #9be9f5; }
-.species-detail-hero {
-    min-height: 28rem; margin-top: 1rem; padding: clamp(1rem,3vw,2rem);
-    display: grid; 
-    align-items: end; gap: 1.5rem;
-    background: linear-gradient(90deg,#030d15f5,#030d1555 68%,#030d1599), var(--portrait) center / cover;
-    border: 1px solid #376575; border-radius: .6rem;
+/* Kryonoiden – Hauptseite (nach der Designtafel „Kryonoiden – Archiv des Eisplaneten“)
+   Gemeinsames Design: ../kryonoiden-basis.css · hier nur der Aufbau der Übersicht. */
+
+/* Kopf: Figur in der Mitte, Kryokammer rechts */
+.kr-hauptseite .kr-hero { min-height: clamp(24rem, 40cqi, 36rem); }
+.kr-hauptseite .kr-hero-bild { inset: 0 22% 0 auto; width: 46% !important; mask-image: linear-gradient(90deg, transparent, #000 30%, #000 80%, transparent); }
+.kr-kammer { position: absolute !important; inset: 0 0 0 auto; z-index: -2; width: 24% !important; height: 100% !important; aspect-ratio: auto !important; mask-image: linear-gradient(90deg, transparent, #000 25%); }
+.kr-hauptseite .kr-hero h1 { letter-spacing: .1em; text-transform: uppercase; }
+.kr-hauptseite .kr-unterzeile { color: var(--kr-leise); letter-spacing: .3em; text-transform: uppercase; font-size: .95rem; }
+.kr-motto { margin-top: 1rem !important; color: var(--kr-violett-hell); font: italic 500 clamp(1.05rem, 1.8cqi, 1.35rem)/1.4 var(--kr-serif); }
+/* Glanz: langsam ziehender Frostschleier */
+.kr-hauptseite .kr-glanz { background: linear-gradient(115deg, transparent 40%, #d3ebff1a 48%, #9ff3ff14 52%, transparent 60%) 0 0 / 250% 100%; }
+
+/* Ton-Schalter (kryonoiden-klang.js) */
+.kr-ton { position: absolute; top: .8rem; right: .8rem; z-index: 2; padding: .35rem .75rem; border: 1px solid var(--kr-linie-hell); border-radius: 999px; background: #0d1828d9; color: var(--kr-text); font: 600 .78rem/1.2 "Segoe UI", system-ui, sans-serif; cursor: pointer; backdrop-filter: blur(6px); }
+.kr-ton:hover { border-color: var(--kr-cyan); box-shadow: 0 0 .9rem #9ff3ff44; }
+.kr-ton[aria-pressed="false"] { color: var(--kr-leise); }
+
+/* Start: Speziesdaten | Anatomie | Nivareth */
+.kr-start { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr) minmax(0, .9fr); gap: var(--kr-raum); align-items: stretch; }
+.kr-datenliste { display: grid; margin: 0; }
+.kr-datenliste > div { display: flex; justify-content: space-between; gap: .8rem; padding: .45rem 0; border-bottom: 1px solid #ffffff12; }
+.kr-datenliste dt { display: flex; align-items: center; gap: .55rem; color: var(--kr-leise); font-size: .88rem; }
+.kr-datenliste dt span { width: 1.3rem; color: var(--kr-violett); text-align: center; }
+.kr-datenliste dd { margin: 0; text-align: right; font-size: .9rem; }
+.kr-dossier :is(.kr-anatomie-karte, .kr-welt, .kr-thema) { color: var(--kr-text); text-decoration: none; }
+.kr-dossier :is(.kr-anatomie-karte, .kr-welt, .kr-thema):hover { border-color: var(--kr-violett); box-shadow: 0 0 1.1rem #7fc4ff44; }
+.kr-anatomie-karte { display: grid; align-content: start; gap: .5rem; }
+.kr-anatomie-karte .kr-ausschnitt { border: 1px solid var(--kr-linie); border-radius: 10px; }
+.kr-welt { display: grid; align-content: start; gap: .35rem; background: radial-gradient(circle at 85% 20%, #7fc4ff22, transparent 55%), linear-gradient(160deg, var(--kr-glas-hell), var(--kr-glas)); }
+.kr-welt h2 { font: 600 clamp(1.6rem, 3cqi, 2.2rem)/1 var(--kr-serif); letter-spacing: .08em; text-transform: uppercase; }
+
+/* Archivbereiche (Kacheln wie die untere Bildleiste der Tafel) */
+.kr-themen, .kr-karussell-block, .kr-klangleiste, .kr-layout--fuss { margin-top: var(--kr-raum); }
+.kr-themen-raster { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--kr-raum); }
+.kr-thema { display: grid; align-content: end; gap: .2rem; min-height: 9rem; padding: .8rem; overflow: hidden; isolation: isolate; text-align: center; }
+.kr-thema-bild { position: absolute !important; inset: 0; z-index: -2; width: 100% !important; height: 100% !important; object-fit: cover; object-position: center 30%; transition: transform .6s ease; }
+.kr-thema:hover .kr-thema-bild { transform: scale(1.05); }
+.kr-thema::before { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(0deg, #060b14 6%, #060b14b3 45%, #060b1420 100%); }
+.kr-thema-kopf strong { font: 600 .9rem/1.2 var(--kr-serif); letter-spacing: .14em; text-transform: uppercase; }
+.kr-thema-text { color: var(--kr-leise); font-size: .78rem; line-height: 1.3; }
+
+/* Klangleiste */
+.kr-klang-chips { display: flex; flex-wrap: wrap; gap: .4rem; }
+.kr-klang-chips a { display: inline-flex; align-items: center; gap: .4rem; padding: .4rem .8rem; border: 1px solid var(--kr-linie); border-radius: 999px; background: #0d1828cc; color: var(--kr-text) !important; font-size: .84rem; text-decoration: none; }
+.kr-klang-chips a:hover { border-color: var(--kr-cyan); }
+.kr-klang-chips b { color: var(--kr-cyan); font: 600 .72rem/1 ui-monospace, Consolas, monospace; }
+
+@container (max-width: 1000px) {
+    .kr-start { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .kr-daten { grid-column: 1 / -1; }
+    .kr-kammer { display: none !important; }
+    .kr-hauptseite .kr-hero-bild { inset: 0 0 0 auto; width: 60% !important; mask-image: linear-gradient(90deg, transparent, #000 35%); }
 }
-h1 { font-size: clamp(2rem,5vw,4.5rem); line-height: 1; overflow-wrap: anywhere; }
-h2 { color: #9be9f5; font-size: 1rem; letter-spacing: .08em; text-transform: uppercase; }
-dt { color: #9be9f5; }
-dd { margin: 0 0 .55rem; }
-.species-detail-panel { padding: 1rem; border: 1px solid #376575; border-radius: .6rem; background: #06141de8; }
-.species-detail-panel img { display: block; width: 100%; aspect-ratio: 16/9; object-fit: cover; border-radius: .35rem; }
-.species-detail-panel small { display: block; margin-top: .35rem; color: #b6d3df; }
-main section[id] { scroll-margin-top: 8rem; }
+@container (max-width: 640px) {
+    .kr-start { grid-template-columns: minmax(0, 1fr); }
+    .kr-themen-raster { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .kr-hauptseite .kr-hero-bild { width: 100% !important; }
+}

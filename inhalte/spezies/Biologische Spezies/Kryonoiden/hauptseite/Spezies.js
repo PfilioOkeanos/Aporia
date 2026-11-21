@@ -1,8 +1,5 @@
-import { applyAporiaRoutes } from "../../../../../Menüs/adapter/aporia-routes.js";
-import "../../../../../Menüs/TopBar/Top_bar.js";
-import "../../../../../Menüs/Side_bar/side_bar.js";
-
-applyAporiaRoutes(document);
-
-import { arrangeKnowledgeCards } from "../../../_gemeinsam/wissenslayout.js";
-arrangeKnowledgeCards();
+// Kryonoiden – Hauptseite
+// Gemeinsame Funktionen (Topbar, Sidebar, Routen, Klappbereiche, Bildkarussell) aus der Basis;
+// Seitenklänge (Eintrittsklang hier, Frostklang beim Reiterwechsel) aus kryonoiden-klang.js.
+import "../kryonoiden-basis.js";
+import "../kryonoiden-klang.js";

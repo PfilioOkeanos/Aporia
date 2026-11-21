@@ -1,0 +1,40 @@
+/* Gemeinsames Bildkarussell (Logik: bilder-karussell.js).
+   Farben über Variablen der jeweiligen Spezies: --karussell-akzent, --karussell-linie, --karussell-flaeche, --karussell-text, --karussell-leise */
+.bilder-karussell { --k-akzent: var(--karussell-akzent, #8ce8f9); --k-linie: var(--karussell-linie, #ffffff26); --k-flaeche: var(--karussell-flaeche, #0c1422); position: relative; display: grid; gap: .7rem; min-width: 0; }
+.karussell-filter { display: flex; flex-wrap: wrap; gap: .3rem; }
+.karussell-filter button, .karussell-steuerung button { padding: .32rem .8rem; border: 1px solid var(--k-linie); border-radius: 999px; background: var(--k-flaeche); color: var(--karussell-text, #edf2ff); font: 500 .8rem/1.2 "Segoe UI", system-ui, sans-serif; cursor: pointer; }
+.karussell-filter button[aria-pressed="true"] { border-color: var(--k-akzent); box-shadow: 0 0 .8rem color-mix(in srgb, var(--k-akzent) 45%, transparent); }
+.karussell-spur { display: flex; gap: .7rem; overflow-x: auto; overscroll-behavior-x: contain; scroll-snap-type: x mandatory; scrollbar-width: none; border-radius: 14px; }
+.karussell-spur::-webkit-scrollbar { display: none; }
+.karussell-folie { flex: 0 0 var(--karussell-breite, min(100%, 19rem)); display: grid; grid-template-rows: auto 1fr; margin: 0; scroll-snap-align: start; overflow: hidden; border: 1px solid var(--k-linie); border-radius: 14px; background: var(--k-flaeche); transition: border-color .25s, box-shadow .25s; }
+.karussell-folie[hidden] { display: none; }
+.karussell-folie.is-aktiv { border-color: color-mix(in srgb, var(--k-akzent) 70%, transparent); }
+.karussell-bild { display: block; width: 100%; padding: 0; border: 0; background: #000; cursor: zoom-in; overflow: hidden; }
+.karussell-bild img { display: block; width: 100%; aspect-ratio: var(--karussell-format, 1); object-fit: cover; transition: transform .5s ease; }
+.karussell-bild:hover img { transform: scale(1.04); }
+.karussell-folie figcaption { display: grid; gap: .1rem; padding: .55rem .75rem .7rem; }
+.karussell-folie figcaption strong { color: var(--karussell-text, #edf2ff); font-size: .9rem; }
+.karussell-folie figcaption span { color: var(--karussell-leise, #b6c4d9); font-size: .76rem; }
+.karussell-steuerung { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: .45rem; }
+.karussell-steuerung [data-karussell-schritt] { display: grid; place-items: center; width: 2.3rem; height: 2.3rem; padding: 0; font-size: 1.2rem; }
+.karussell-steuerung button:hover { border-color: var(--k-akzent); }
+.karussell-punkte { display: flex; flex-wrap: wrap; justify-content: center; gap: .3rem; max-width: min(100%, 26rem); }
+.karussell-punkte button { width: .62rem; height: .62rem; padding: 0; border: 1px solid var(--k-linie); border-radius: 50%; background: transparent; cursor: pointer; }
+.karussell-punkte button[aria-current="true"] { background: var(--k-akzent); border-color: var(--k-akzent); box-shadow: 0 0 .5rem var(--k-akzent); }
+.karussell-zaehler { min-width: 3.5rem; color: var(--karussell-leise, #b6c4d9); font: 600 .78rem/1 ui-monospace, Consolas, monospace; text-align: center; }
+
+/* Bühne: eine große Folie mit Beschriftung daneben */
+.bilder-karussell--buehne { --karussell-breite: 100%; }
+.bilder-karussell--buehne .karussell-folie { grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); grid-template-rows: none; }
+.bilder-karussell--buehne .karussell-bild img { height: 100%; max-height: 32rem; object-fit: contain; aspect-ratio: 1; }
+.bilder-karussell--buehne figcaption { align-content: center; gap: .45rem; padding: clamp(.9rem, 3cqi, 2rem); }
+.bilder-karussell--buehne figcaption strong { font-size: clamp(1.05rem, 2cqi, 1.4rem); }
+.bilder-karussell--buehne figcaption span { font-size: .85rem; }
+@container (max-width: 640px) {
+    .bilder-karussell--buehne .karussell-folie { grid-template-columns: minmax(0, 1fr); }
+    .karussell-folie { --karussell-breite: 82%; }
+    .bilder-karussell--buehne .karussell-folie { --karussell-breite: 100%; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .karussell-bild img, .karussell-folie { transition: none; }
+}

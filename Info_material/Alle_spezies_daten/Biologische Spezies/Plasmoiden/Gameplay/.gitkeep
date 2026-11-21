@@ -1,0 +1,186 @@
+# Plasmoiden – Spielintegration
+
+## 1. Grundlegende Rolle im Spiel
+
+Die Plasmoiden sind eine eigenständige intelligente NPC-Spezies innerhalb von APORIA – Unter fremden Kronen.
+
+Sie können als Wissenschaftler, Techniker, Händler, Diplomaten, Bewohner oder besondere Missionscharaktere auftreten.
+
+Ihre Biologie beeinflusst Bewegung, Interaktion, Ausrüstung und Umgebungseignung.
+
+## 2. NPC-Verhalten
+
+Plasmoidische NPCs benötigen eine von humanoiden Figuren abweichende Bewegungslogik.
+
+Sie besitzen keine festgelegte Skelettanimation.
+
+Stattdessen bewegen sie sich durch Veränderung einer zusammenhängenden Körperform.
+
+Die Darstellung sollte auf einer Kombination aus verformbarer Körpergeometrie, geeigneten Animationen und vereinfachter physikalischer Steuerung beruhen.
+
+## 3. Körperzustände
+
+Für Gameplay und Simulation werden folgende Zustände vorgesehen:
+
+**Ruheform:** Kompakte Körpergestalt mit geringer Aktivität.
+
+**Bewegungsform:** Kontrollierte Verlagerung und Ausbildung von Kontaktflächen.
+
+**Greifform:** Temporäre Fortsätze zur Objektinteraktion.
+
+**Haftform:** Vergrößerte Kontaktbereiche an geeigneten Oberflächen.
+
+**Schutzform:** Verdichtete äußere Gelmatrix zur Reduktion leichter Belastungen.
+
+**Regenerationsform:** Verminderte Bewegung während biologischer Reparaturprozesse.
+
+**Notzustand:** Eingeschränkte Kontrolle infolge schwerer Flüssigkeits- oder Strukturschäden.
+
+## 4. Biologische Statuswerte
+
+Für die Simulation eignen sich:
+
+- Körpermasse
+- Flüssigkeitsanteil
+- Gelkohäsion
+- Osmotisches Gleichgewicht
+- Innere Temperatur
+- Stoffwechselenergie
+- Sauerstoffversorgung
+- Verletzungsgrad
+- Koordinationsfähigkeit
+
+Diese Werte beeinflussen Fähigkeiten und Animationen.
+
+## 5. Fortbewegung
+
+Plasmoiden können sich über geeignete Oberflächen bewegen und kleinere Hindernisse durch Formanpassung überwinden.
+
+Besondere Fähigkeiten:
+
+- Kriechen durch passende Durchgänge
+- Gleiten über glatte Flächen
+- Anhaften an geeigneten Untergründen
+- Umfließen kleiner Hindernisse
+- Temporäre Ausbildung von Greiffortsätzen
+
+Die Bewegung bleibt durch Körpervolumen, Querschnitt, Oberflächenbeschaffenheit und Energieverbrauch begrenzt.
+
+Ein Plasmoid kann sich beispielsweise durch einen schmalen Schacht bewegen, wenn die Öffnung ausreichend groß und der dahinterliegende Raum geeignet ist.
+
+Er kann nicht mit unveränderter Körpermasse durch einen mikroskopischen Spalt verschwinden.
+
+## 6. Kampf
+
+Plasmoiden kämpfen anders als humanoide Lebewesen.
+
+Mögliche Techniken:
+
+- Kurzzeitiges Umschließen kleinerer Körperbereiche
+- Festhalten mit Haftflächen
+- Ausweichen durch Gestaltänderung
+- Einsatz spezialisierter Werkzeuge
+- Kontaktgebundene elektrische Abwehrimpulse bei geeigneten Individuen
+
+Die Gelmatrix ist gegenüber hoher Hitze und stark schädigenden Chemikalien empfindlich.
+
+Die natürliche Kampfkraft ist deshalb situationsabhängig.
+
+## 7. Regeneration
+
+Kleinere Oberflächenverletzungen können biologisch repariert werden.
+
+Größere Verletzungen erfordern passende Nährstoffe, Flüssigkeiten und ausreichend Ruhe.
+
+Regeneration kostet Ressourcen.
+
+Abgetrennte Körpermasse kann nicht ohne erneute Stoffaufnahme ersetzt werden.
+
+Schwere Schäden am Informationsnetz können langfristige Folgen haben.
+
+## 8. Forschungssystem
+
+Spieler können die Plasmoiden im Rahmen der Xenobiologie, Biotechnologie und Materialforschung untersuchen.
+
+Forschungsbereiche:
+
+- Adaptives Hydrogel
+- Gelbasierte Aktuatoren
+- Elektrochemische Sensorik
+- Biologische Selbstreparatur
+- Osmotische Regulation
+- Biokompatible Kommunikationsschnittstellen
+- Medizinische Gelmaterialien
+
+Diese Forschung kann neue technische Anwendungen erschließen.
+
+## 9. Technologische Nutzung
+
+Aus plasm oidischer Forschung können technische Komponenten entstehen.
+
+Beispiele:
+
+- Flexible Dichtungsmaterialien
+- Selbstreparierende Schutzschichten
+- Biochemische Messsysteme
+- Adaptive Greifwerkzeuge
+- Medizinische Regenerationsmaterialien
+- Intelligente Feuchtigkeitsregulation
+
+Die technische Nutzung muss nicht auf lebende intelligente Plasmoiden zurückgreifen.
+
+## 10. Interaktion mit dem Spieler
+
+Der Spieler kann plasm oidische NPCs kontaktieren, Gespräche führen und diplomatische Beziehungen aufbauen.
+
+Für komplexe Kommunikation können Übersetzungsgeräte notwendig sein.
+
+Beziehungen beeinflussen Forschung, Handel und Zugang zu bestimmten Einrichtungen.
+
+## 11. Besondere Missionen
+
+**Mission: Das versiegende Becken**
+
+Eine Siedlung verliert ihre lebenswichtige Wasserversorgung. Der Spieler untersucht die Ursache und hilft, die Versorgung wiederherzustellen.
+
+**Mission: Verbotene Proben**
+
+Ein Unternehmen hat unerlaubt biologische Proben intelligenter Plasmoiden gesammelt. Der Spieler ermittelt und muss über mögliche weitere Schritte entscheiden.
+
+**Mission: Die verlorene Kolonie**
+
+Eine außerplanetare Plasmoidensiedlung meldet ungewöhnliche Störungen ihrer Lebenserhaltungssysteme.
+
+**Mission: Der wandernde Körper**
+
+Ein junger Plasmoid besitzt ungewöhnliche Schwierigkeiten bei der Formstabilisierung. Eine wissenschaftliche Untersuchung kann neue Erkenntnisse ermöglichen.
+
+## 12. Vorübergehende spielbare Nutzung
+
+Der menschliche Hauptcharakter wird nicht automatisch zu einem Plasmoiden.
+
+Über erforschte technische Biointerfaces können jedoch fernsteuerbare Gelsonden oder experimentelle Gelkörper genutzt werden.
+
+Dadurch lassen sich spezielle Umgebungen erkunden und neue Interaktionsmechaniken freischalten.
+
+Eine dauerhafte Speziesverwandlung wird dadurch nicht vorausgesetzt.
+
+## 13. Technische Integration
+
+Für die Unreal-Engine-Entwicklung empfiehlt sich eine modulare Physiologielogik.
+
+Die Körpervisualisierung und das eigentliche Identitäts- beziehungsweise Speichersystem sollen getrennt bleiben.
+
+Wichtige Komponenten:
+
+- Physiologiemodul
+- Formzustandssteuerung
+- Bewegungssteuerung
+- Umwelt- und Flüssigkeitsüberwachung
+- Verletzungs- und Regenerationssystem
+- Kommunikationsmodul
+- Interaktionssystem
+
+Die eigentliche Individualität und der persistente Charakterdatensatz bleiben unabhängig von einzelnen visuellen Meshes.
+
+Damit können zukünftige technische Änderungen an Darstellung oder Animation vorgenommen werden, ohne gespeicherte individuelle NPC-Identitäten zu verlieren.

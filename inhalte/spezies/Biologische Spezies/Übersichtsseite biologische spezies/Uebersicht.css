@@ -280,3 +280,26 @@ body.species-group-page { margin: 0; background: #061811; color: #f4e6c9; font-f
 
 /* Lange Wörter in Cards umbrechen statt abschneiden */
 .species-card-columns :is(dd, p) { overflow-wrap: break-word; hyphens: auto; }
+
+.species-plasmoiden-thumb {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 2.75;
+    background: #101a2b;
+}
+.species-plasmoiden-thumb img {
+    position: absolute;
+    top: 0;
+    left: -5%;
+    max-width: none;
+    width: 215%;
+    height: auto;
+    aspect-ratio: auto;
+    transform: translateY(-30%);
+}
+.species-plasmoiden-thumb:focus-visible {
+    outline: 2px solid #8ce8f9;
+    outline-offset: -3px;
+    z-index: 1;
+}

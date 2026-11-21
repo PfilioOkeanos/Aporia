@@ -1,20 +1,58 @@
-@import url("../../../_gemeinsam/wissenslayout.css");
-body { margin: 0; background: #030d15; color: #e7f4fa; font: 1rem/1.55 Arial,sans-serif; }
-.species-detail-frame { display: flex; }
-main { flex: 1; min-width: 0; }
-a { color: #9be9f5; }
-.species-detail-hero {
-    min-height: 28rem; margin-top: 1rem; padding: clamp(1rem,3vw,2rem);
-    display: grid; 
-    align-items: end; gap: 1.5rem;
-    background: linear-gradient(90deg,#030d15f5,#030d1555 68%,#030d1599), var(--portrait) center / cover;
-    border: 1px solid #376575; border-radius: .6rem;
+/* Floranoiden – Hauptseite (nach der Designtafel „Floranoiden: Biolumineszentes Weltarchiv“)
+   Gemeinsames Design: ../floranoiden-basis.css · hier nur der Aufbau der Übersicht. */
+
+.fl-hauptseite .fl-hero { min-height: clamp(20rem, 32cqi, 28rem); }
+.fl-hauptseite .fl-hero-bild { width: 66% !important; }
+.fl-hauptseite .fl-hero h1 { color: #f6e2b5; }
+.fl-hauptseite .fl-unterzeile { font-style: italic; letter-spacing: .12em; }
+
+/* Vier Karten wie auf der Tafel */
+.fl-karten4 { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--fl-raum); }
+.fl-karte4 { display: grid; grid-template-rows: auto auto 1fr auto; gap: .65rem; padding: .9rem 1rem 1rem; }
+.fl-karte4 .fl-h2 { margin: 0 !important; font-size: clamp(1rem, 1.6cqi, 1.2rem); }
+.fl-karte4-bild { border: 1px solid var(--fl-linie); border-radius: 10px; }
+.fl-karte4-text { display: grid; align-content: start; gap: .5rem; font-size: .86rem; line-height: 1.5; }
+.fl-karte4-text ul { display: grid; gap: .35rem; margin: 0; padding: 0; list-style: none; }
+.fl-karte4-text li { position: relative; padding-left: 1rem; }
+.fl-karte4-text li::before { content: "◆"; position: absolute; left: 0; color: var(--fl-violett); font-size: .6rem; top: .35em; }
+.fl-tags { display: flex; flex-wrap: wrap; gap: .35rem; }
+.fl-tags span { padding: .15rem .6rem; border: 1px solid var(--fl-linie-hell); border-radius: 999px; font-size: .74rem; }
+.fl-zitat { margin: 0; color: var(--fl-violett-hell); font: italic 500 .98rem/1.45 var(--fl-serif); }
+.fl-zitat footer { margin-top: .4rem; color: var(--fl-leise); font: normal .76rem/1.3 "Segoe UI", system-ui, sans-serif; }
+.fl-karte4 .fl-mehr { margin-top: 0; }
+
+/* Statusleiste */
+.fl-statusleiste { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .4rem; margin-top: var(--fl-raum); padding: .9rem 1rem; }
+.fl-statusleiste > div { display: grid; justify-items: center; gap: .45rem; padding: 0 .4rem; text-align: center; }
+.fl-statusleiste > div + div { border-left: 1px solid var(--fl-linie); }
+.fl-status-kopf { display: flex; align-items: center; gap: .45rem; font: 600 1rem/1.2 var(--fl-serif); }
+.fl-status-kopf span { color: var(--fl-violett); }
+.fl-status-wert { padding: .3rem .9rem; border: 1px solid var(--fl-linie-hell); border-radius: 999px; background: #0f1b17; font-size: .82rem; }
+
+/* Themen, Bildarchiv, Klang */
+.fl-themen, .fl-karussell-block, .fl-klangleiste, .fl-layout--fuss { margin-top: var(--fl-raum); }
+.fl-themen-raster { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--fl-raum); }
+.fl-thema { display: grid; align-content: end; gap: .25rem; min-height: 9.5rem; padding: .8rem; overflow: hidden; isolation: isolate; color: var(--fl-text) !important; text-decoration: none; }
+.fl-thema-bild { position: absolute !important; inset: 0; z-index: -2; width: 100% !important; height: 100% !important; object-fit: cover; object-position: center 35%; transition: transform .6s ease; }
+.fl-thema:hover { border-color: var(--fl-violett); box-shadow: 0 0 1.1rem #e3b86a44; }
+.fl-thema:hover .fl-thema-bild { transform: scale(1.05); }
+.fl-thema::before { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(0deg, #070d0c 8%, #070d0ccc 50%, #070d0c26 100%); }
+.fl-thema-kopf { display: flex; gap: .45rem; align-items: center; }
+.fl-thema-text { font-size: .82rem; line-height: 1.35; }
+.fl-klang-chips { display: flex; flex-wrap: wrap; gap: .4rem; }
+.fl-klang-chips a { display: inline-flex; align-items: center; gap: .4rem; padding: .4rem .8rem; border: 1px solid var(--fl-linie); border-radius: 999px; background: #0f1b17cc; color: var(--fl-text) !important; font-size: .84rem; text-decoration: none; }
+.fl-klang-chips a:hover { border-color: var(--fl-cyan); }
+.fl-klang-chips b { color: var(--fl-cyan); font: 600 .72rem/1 ui-monospace, Consolas, monospace; }
+
+@container (max-width: 1100px) {
+    .fl-karten4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
-h1 { font-size: clamp(2rem,5vw,4.5rem); line-height: 1; overflow-wrap: anywhere; }
-h2 { color: #9be9f5; font-size: 1rem; letter-spacing: .08em; text-transform: uppercase; }
-dt { color: #9be9f5; }
-dd { margin: 0 0 .55rem; }
-.species-detail-panel { padding: 1rem; border: 1px solid #376575; border-radius: .6rem; background: #06141de8; }
-.species-detail-panel img { display: block; width: 100%; aspect-ratio: 16/9; object-fit: cover; border-radius: .35rem; }
-.species-detail-panel small { display: block; margin-top: .35rem; color: #b6d3df; }
-main section[id] { scroll-margin-top: 8rem; }
+@container (max-width: 760px) {
+    .fl-statusleiste, .fl-themen-raster { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .fl-statusleiste > div:nth-child(3) { border-left: 0; }
+    .fl-hauptseite .fl-hero-bild { width: 100% !important; }
+}
+@container (max-width: 520px) {
+    .fl-karten4, .fl-statusleiste, .fl-themen-raster { grid-template-columns: minmax(0, 1fr); }
+    .fl-statusleiste > div + div { border-left: 0; border-top: 1px solid var(--fl-linie); padding-top: .6rem; }
+}

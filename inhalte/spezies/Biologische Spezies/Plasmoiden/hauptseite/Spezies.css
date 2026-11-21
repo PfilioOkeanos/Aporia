@@ -1,20 +1,68 @@
-@import url("../../../_gemeinsam/wissenslayout.css");
-body { margin: 0; background: #030d15; color: #e7f4fa; font: 1rem/1.55 Arial,sans-serif; }
-.species-detail-frame { display: flex; }
-main { flex: 1; min-width: 0; }
-a { color: #9be9f5; }
-.species-detail-hero {
-    min-height: 28rem; margin-top: 1rem; padding: clamp(1rem,3vw,2rem);
-    display: grid; 
-    align-items: end; gap: 1.5rem;
-    background: linear-gradient(90deg,#030d15f5,#030d1555 68%,#030d1599), var(--portrait) center / cover;
-    border: 1px solid #376575; border-radius: .6rem;
+/* Plasmoiden – Hauptseite (nach der Designtafel „Plasmoiden – Form im Fluss“)
+   Gemeinsames Design: ../plasmoiden-basis.css · Karussell: _gemeinsam/bilder-karussell.css · hier nur der Aufbau der Übersicht. */
+
+.pl-hauptseite .pl-hero { grid-template-rows: 1fr auto; min-height: clamp(22rem, 38cqi, 34rem); }
+.pl-hauptseite .pl-hero-bild { width: 62% !important; }
+.pl-hauptseite .pl-intro + .pl-intro { margin-top: .5rem !important; }
+
+/* Überschriften mit Leuchtlinie wie auf der Designtafel */
+.pl-h2--linie { text-transform: uppercase; letter-spacing: .12em; font-size: clamp(1rem, 1.7cqi, 1.22rem) !important; }
+.pl-h2--linie::after { content: ""; flex: 1 1 4rem; align-self: center; height: 1px; background: linear-gradient(90deg, var(--pl-violett), transparent); box-shadow: 0 0 .5rem var(--pl-violett); }
+
+.pl-start-raster, .pl-fuss-raster { display: grid; grid-template-columns: minmax(0, 1.7fr) minmax(16rem, 1fr); gap: var(--pl-raum); }
+.pl-fuss-raster { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.pl-band, .pl-karussell-block, .pl-themen, .pl-welt, .pl-fuss-raster, .pl-highlights, .pl-layout--fuss { margin-top: var(--pl-raum); }
+.pl-formen-bild, .pl-band-bild, .pl-varianten-bild { border: 1px solid var(--pl-linie); border-radius: 10px; }
+.pl-formen-bild { margin-bottom: .8rem; }
+.pl-text--frei { margin: 0 0 .7rem; padding: 0; border: 0; max-width: none; }
+.pl-fakten-box .pl-fakten > div { grid-template-columns: minmax(6.5rem, .7fr) minmax(0, 1.3fr); }
+
+/* Bänder: Bild + aufklappbare Abschnitte */
+.pl-band-raster { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: var(--pl-raum); align-items: start; }
+.pl-band--gespiegelt .pl-band-bild { order: 2; }
+.pl-klapp-liste { display: grid; gap: .45rem; }
+.pl-varianten-bild { max-width: 44rem; margin: 0 auto .8rem; }
+.pl-hauptseite .bilder-karussell--buehne .karussell-bild { background: #050a12; }
+.pl-varianten { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .45rem; align-items: start; }
+
+/* Themenkacheln */
+.pl-themen-raster { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--pl-raum); }
+.pl-thema { display: grid; align-content: end; gap: .25rem; min-height: 9.5rem; padding: .8rem 1.55rem .8rem .8rem; overflow: hidden; isolation: isolate; }
+.pl-thema-bild { position: absolute !important; inset: 0; z-index: -2; width: 100% !important; height: 100% !important; object-fit: cover; object-position: center 30%; transition: transform .5s ease; }
+.pl-thema:hover .pl-thema-bild { transform: scale(1.05); }
+.pl-thema::before, .pl-welt::before { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(0deg, #060c16 8%, #060c16cc 52%, #060c1630 100%); }
+.pl-dossier :is(.pl-thema, .pl-highlight) { color: var(--pl-text); text-decoration: none; }
+.pl-dossier :is(.pl-thema, .pl-highlight):hover { border-color: var(--pl-violett); box-shadow: 0 0 1.1rem #a58cff44; }
+.pl-thema-kopf { display: flex; gap: .45rem; align-items: center; }
+.pl-thema-text { font-size: .84rem; line-height: 1.35; }
+.pl-pfeil { position: absolute; right: .65rem; bottom: .75rem; color: var(--pl-violett-hell); }
+
+/* Heimatwelt-Banner */
+.pl-welt { position: relative; isolation: isolate; overflow: hidden; display: grid; align-items: end; min-height: clamp(17rem, 27cqi, 25rem); border: 1px solid var(--pl-linie); border-radius: 14px; }
+.pl-welt-bild { position: absolute !important; inset: 0 0 0 auto; z-index: -2; width: 70% !important; height: 100% !important; }
+.pl-welt::before { background: linear-gradient(90deg, #060c16 30%, #060c16c9 50%, #060c1622 85%); }
+.pl-welt-text { display: grid; gap: .45rem; max-width: 36rem; padding: clamp(1rem, 2.8cqi, 2rem); }
+.pl-welt h2 { font: 600 clamp(1.9rem, 3.6cqi, 2.9rem)/1 var(--pl-serif); }
+.pl-welt-zeile { color: var(--pl-cyan); font-size: .9rem; }
+.pl-welt-text .pl-knopf { justify-self: start; margin-top: .45rem; }
+
+/* Highlights */
+.pl-highlights-raster { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--pl-raum); }
+.pl-highlight { display: grid; grid-template-rows: auto 1fr; overflow: hidden; }
+.pl-highlight-bild { width: 100% !important; aspect-ratio: 2 / 1 !important; object-fit: cover; object-position: center 25%; }
+.pl-highlight > span:last-child { display: grid; align-content: start; gap: .15rem; padding: .7rem .8rem; }
+.pl-highlight em { color: var(--pl-leise); font-size: .86rem; font-style: normal; }
+
+@container (max-width: 960px) {
+    .pl-start-raster, .pl-fuss-raster, .pl-band-raster { grid-template-columns: minmax(0, 1fr); }
+    .pl-band--gespiegelt .pl-band-bild { order: 0; }
+    .pl-themen-raster { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
-h1 { font-size: clamp(2rem,5vw,4.5rem); line-height: 1; overflow-wrap: anywhere; }
-h2 { color: #9be9f5; font-size: 1rem; letter-spacing: .08em; text-transform: uppercase; }
-dt { color: #9be9f5; }
-dd { margin: 0 0 .55rem; }
-.species-detail-panel { padding: 1rem; border: 1px solid #376575; border-radius: .6rem; background: #06141de8; }
-.species-detail-panel img { display: block; width: 100%; aspect-ratio: 16/9; object-fit: cover; border-radius: .35rem; }
-.species-detail-panel small { display: block; margin-top: .35rem; color: #b6d3df; }
-main section[id] { scroll-margin-top: 8rem; }
+@container (max-width: 640px) {
+    .pl-hauptseite .pl-hero-bild { width: 100% !important; }
+    .pl-welt-bild { width: 100% !important; }
+    .pl-welt::before { background: linear-gradient(0deg, #060c16f5 30%, #060c1666 100%); }
+}
+@container (max-width: 520px) {
+    .pl-varianten, .pl-highlights-raster, .pl-themen-raster { grid-template-columns: minmax(0, 1fr); }
+}
