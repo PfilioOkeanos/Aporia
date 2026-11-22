@@ -199,6 +199,9 @@ html:has(dialog.fl-zoom[open]) { overflow: hidden; }
 .fl-text > .fl-ausschnitt { width: min(100%, 26rem); border: 1px solid var(--fl-linie); border-radius: 10px; }
 .fl-quelle-design { color: var(--fl-cyan) !important; }
 
+/* Lange Begriffe in Steckbriefen umbrechen statt überlappen */
+.fl-fakten dt, .fl-fakten dd { min-width: 0; overflow-wrap: anywhere; hyphens: auto; }
+
 /* Steckbrief aus dem Dossier (Hauptseiten) */
 .fl-dossier-steckbrief { margin-top: var(--fl-raum); }
 .fl-dossier-raster { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); gap: var(--fl-raum); align-items: start; }

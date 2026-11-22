@@ -1,0 +1,534 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Ashur",
+  "genitiv": "von Ashur",
+  "dossierName": "Ashur-Dossier",
+  "klasse": "Mond",
+  "intro": "Ashur ist ein naher Gesteinsmond. Seine leicht exzentrische Bahn, die Krell über eine 4:1-Resonanz aufrechterhält, knetet Gorvhan durch Gezeitenkräfte und trägt zu dessen Vulkanismus bei. Ashur umkreist Gorvhan in 2,9 Tage.",
+  "globusDaten": {
+    "planet": "junger-rohmond-mit-gluhendem-staubhalo",
+    "klasse": "Gestein",
+    "radius": 900000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=gorvhan-stern&objekt=gorvhan-ashur",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-0E81EAF6D5"
+    ],
+    [
+      "Typ",
+      "Mond"
+    ],
+    [
+      "Sternsystem",
+      "Morvath-System"
+    ],
+    [
+      "Zentralkörper",
+      "Gorvhan"
+    ],
+    [
+      "Große Halbachse",
+      "70.805 km"
+    ],
+    [
+      "Umlaufzeit",
+      "2,9 Tage"
+    ],
+    [
+      "Durchmesser",
+      "1.800 km"
+    ],
+    [
+      "Masse",
+      "0,325 Mondmassen"
+    ],
+    [
+      "Schwerkraft",
+      "0,2 g"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. 15 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Morvath-System"
+    ],
+    [
+      "Zentralstern",
+      "Morvath",
+      "inhalte/himmelskoerper/sterne/details/portrat-eines-gelben-riesensterns/hauptseite/index.html"
+    ],
+    [
+      "Umläuft",
+      "Gorvhan",
+      "inhalte/himmelskoerper/planeten/details/die-zerbrochene-kruste/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "70.805 km"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Ashur im Morvath-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=gorvhan-stern&objekt=gorvhan-ashur",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Morvath",
+      "href": "inhalte/himmelskoerper/sterne/details/portrat-eines-gelben-riesensterns/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◍",
+      "art": "Mutterplanet",
+      "titel": "Gorvhan",
+      "href": "inhalte/himmelskoerper/planeten/details/die-zerbrochene-kruste/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Technoiden",
+      "titel": "Gorvhan",
+      "href": "inhalte/himmelskoerper/planeten/details/die-zerbrochene-kruste/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Technoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Technoiden/Hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Morvath-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=gorvhan-stern&objekt=gorvhan-ashur"
+    },
+    {
+      "titel": "Speziesdossier Technoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Technoiden/Hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#090706",
+      "tiefe": "#14100d",
+      "akzent": "#cdb9a5",
+      "sand": "#d1b897",
+      "moos": "#abaf82",
+      "ozean": "#899891",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#504335"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Astronomie"
+      ],
+      [
+        "Planet",
+        "Mutterplanet"
+      ],
+      [
+        "Kräfte",
+        "Gezeiten"
+      ],
+      [
+        "Tiefe",
+        "Geologie"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Mutterplanet": {
+      "gruppe": "Wissenschaft",
+      "icon": "◐",
+      "intro": "Mutterplanet von Ashur.",
+      "abschnitte": [
+        {
+          "titel": "Gorvhan",
+          "text": [
+            "Gorvhan ist die Heimatwelt der Technoiden: eine geologisch extrem aktive Welt aus Vulkangebirgen, Lavafeldern, Erzebenen und tiefen Höhlensystemen, mit wenig freiem Wasser."
+          ],
+          "daten": [
+            [
+              "Typ",
+              "Gesteinsplanet"
+            ],
+            [
+              "Durchmesser",
+              "10.800 km"
+            ],
+            [
+              "Abstand des Mondes",
+              "70.805 km (13,1 Planetenradien)"
+            ]
+          ],
+          "verweise": [
+            [
+              "Gorvhan",
+              "inhalte/himmelskoerper/planeten/details/die-zerbrochene-kruste/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Weitere Monde von Gorvhan",
+          "liste": [
+            "Krell – Umlauf in 11,6 Tage"
+          ],
+          "verweise": [
+            [
+              "Krell",
+              "inhalte/himmelskoerper/monde/details/riesiger-basaltmond-im-schwarzen-all/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Gezeiten": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gezeiten von Ashur.",
+      "abschnitte": [
+        {
+          "titel": "Gezeitenkräfte",
+          "text": [
+            "Auf seiner Bahn in 70.805 km Abstand wirken starke Gezeitenkräfte von Gorvhan auf Ashur. Die leicht exzentrische Bahn (e = 0,04) knetet das Innere bei jedem Umlauf."
+          ]
+        }
+      ]
+    },
+    "Gebundene Rotation": {
+      "gruppe": "Wissenschaft",
+      "icon": "↻",
+      "intro": "Gebundene Rotation von Ashur.",
+      "abschnitte": [
+        {
+          "titel": "Rotation",
+          "text": [
+            "Ashur wendet Gorvhan vermutlich stets dieselbe Seite zu: Ein Tag dauert so lange wie ein Umlauf – 2,9 Tage."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Ashur auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Ashur",
+          "text": [
+            "Ashur ist ein naher Gesteinsmond. Seine leicht exzentrische Bahn, die Krell über eine 4:1-Resonanz aufrechterhält, knetet Gorvhan durch Gezeitenkräfte und trägt zu dessen Vulkanismus bei.",
+            "Ashur umkreist Gorvhan in 2,9 Tage."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Mond"
+            ],
+            [
+              "Sternsystem",
+              "Morvath-System"
+            ],
+            [
+              "Zentralkörper",
+              "Gorvhan"
+            ],
+            [
+              "Große Halbachse",
+              "70.805 km"
+            ],
+            [
+              "Umlaufzeit",
+              "2,9 Tage"
+            ],
+            [
+              "Durchmesser",
+              "1.800 km"
+            ],
+            [
+              "Masse",
+              "0,325 Mondmassen"
+            ],
+            [
+              "Schwerkraft",
+              "0,2 g"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. 15 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Gorvhan",
+          "text": [
+            "Das Morvath-System ist die Heimat der Technoiden: Ihr Planet Gorvhan umkreist Morvath, und Ashur ist einer seiner Monde."
+          ],
+          "verweise": [
+            [
+              "Gorvhan",
+              "inhalte/himmelskoerper/planeten/details/die-zerbrochene-kruste/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Technoiden",
+              "inhalte/spezies/Biologische Spezies/Technoiden/Hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Ashur im Morvath-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Gorvhan"
+            ],
+            [
+              "Große Halbachse",
+              "70.805 km"
+            ],
+            [
+              "Exzentrizität",
+              "0,04"
+            ],
+            [
+              "Bahnneigung",
+              "1°"
+            ],
+            [
+              "Umlaufzeit",
+              "2,9 Tage"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Morvath · Stern",
+              "Orangefarbener Zwerg (K1 V)"
+            ],
+            [
+              "Morvath I · 0,3 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Gorvhan · 0,62 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Morvath III · 1,3 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Morvath IV · 4,1 AE",
+              "Gasriese"
+            ],
+            [
+              "Morvath V · 10 AE",
+              "Eisriese"
+            ],
+            [
+              "Erzgürtel · 1,9–2,7 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 30–44 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Morvath",
+              "inhalte/himmelskoerper/sterne/details/portrat-eines-gelben-riesensterns/hauptseite/index.html"
+            ],
+            [
+              "Morvath I",
+              "inhalte/himmelskoerper/planeten/details/roter-felsplanet-mit-dunnem-atmospharenrand/hauptseite/index.html"
+            ],
+            [
+              "Gorvhan",
+              "inhalte/himmelskoerper/planeten/details/die-zerbrochene-kruste/hauptseite/index.html"
+            ],
+            [
+              "Morvath III",
+              "inhalte/himmelskoerper/planeten/details/verwitterter-felsplanet-im-sternenlicht/hauptseite/index.html"
+            ],
+            [
+              "Morvath IV",
+              "inhalte/himmelskoerper/planeten/details/freifliegender-gasriese-in-interstellarer-dunkelheit/hauptseite/index.html"
+            ],
+            [
+              "Morvath V",
+              "inhalte/himmelskoerper/planeten/details/warmer-neptun-im-bernsteinfarbenen-licht/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Ashur.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "900 km"
+            ],
+            [
+              "Masse",
+              "0,325 Mondmassen"
+            ],
+            [
+              "Mittlere Dichte",
+              "7,82 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "1,97 m/s² (0,2 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "1,88 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Ashur.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Ashur ist geologisch weitgehend erstarrt; Einschläge haben seine Oberfläche geformt."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Ashur.",
+      "abschnitte": [
+        {
+          "titel": "Gashülle",
+          "text": [
+            "Ashur besitzt keine nennenswerte Atmosphäre – dafür ist die Schwerkraft zu gering."
+          ]
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Ashur.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 0,62 AE Abstand zu Morvath liegt die Gleichgewichtstemperatur von Ashur bei rund 15 °C – gemäßigt."
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Ashur.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Ashur entstand zusammen mit dem Morvath-System vor rund 7,8 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Ashur.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Ist der Mond eingefangen oder mit seinem Planeten entstanden?",
+            "Welche Spuren tragen seine ältesten Krater?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Ashur ist mit allen Bahndaten im Morvath-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=gorvhan-stern&objekt=gorvhan-ashur"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Ashur.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Größter Mond von Gorvhan"
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Ashur.",
+      "abschnitte": [
+        {
+          "titel": "Ashur – Archivbild",
+          "bild": true,
+          "bildtext": "Ashur"
+        }
+      ]
+    }
+  }
+}

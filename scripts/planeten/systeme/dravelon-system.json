@@ -1,0 +1,261 @@
+{
+  "systemName": "Halvorn-System",
+  "praefix": "dravelon-",
+  "lage": {
+    "entfernungLj": 21,
+    "richtung": [
+      -0.15,
+      0.4,
+      0.9
+    ]
+  },
+  "einzelstern": true,
+  "stern": {
+    "id": "dravelon-stern",
+    "name": "Halvorn",
+    "typ": "Orangefarbener Zwerg (K0 V)",
+    "masseSonne": 0.88,
+    "radiusSonne": 0.86,
+    "leuchtkraftSonne": 0.55,
+    "temperaturK": 5250,
+    "alterMrd": 6,
+    "farbe": [
+      1,
+      0.8,
+      0.54
+    ],
+    "emissionsfarbe": [
+      1,
+      0.8300000000000001,
+      0.5700000000000001
+    ],
+    "emission": 1.12,
+    "bild": {
+      "art": "sterne",
+      "suche": "gelb|Sonne|orange|K-Stern|Hauptreihe"
+    },
+    "beschreibung": "Halvorn ist ein orangefarbener Zwerg der Spektralklasse K0 V mit 88 % der Sonnenmasse und 55 % ihrer Leuchtkraft – Zentralstern von Dravelon, dem Ursprungsplaneten der Dendroarchen."
+  },
+  "koerper": [
+    {
+      "id": "dravelon-halvorn-i",
+      "name": "Halvorn I",
+      "typ": "Gesteinsplanet",
+      "um": "dravelon-stern",
+      "aAE": 0.35,
+      "e": 0.04,
+      "i": 1.5,
+      "knoten": 40,
+      "peri": 90,
+      "phase": 250,
+      "radiusKm": 3900,
+      "masseErde": 0.3,
+      "albedo": 0.12,
+      "farbe": [
+        0.6,
+        0.5,
+        0.42
+      ],
+      "bild": {
+        "art": "planeten",
+        "suche": "Felsplanet|Krater|Basalt"
+      },
+      "beschreibung": "Halvorn I ist ein kleiner, heißer Gesteinsplanet."
+    },
+    {
+      "id": "dravelon-planet",
+      "name": "Dravelon",
+      "typ": "Gesteinsplanet",
+      "um": "dravelon-stern",
+      "aAE": 0.75,
+      "e": 0.03,
+      "i": 0,
+      "knoten": 40,
+      "peri": 90,
+      "phase": 80,
+      "radiusKm": 5600,
+      "masseErde": 0.556,
+      "albedo": 0.3,
+      "farbe": [
+        0.3,
+        0.56,
+        0.42
+      ],
+      "bild": {
+        "art": "planeten",
+        "slug": "lebender-jadeplanet-mit-flussbecken"
+      },
+      "beschreibung": "Dravelon ist der Ursprungsplanet der Dendroarchen: eine feuchte, leicht gebaute Welt mit geringer Schwerkraft, endlosen Wald- und Sumpflandschaften und weit verzweigten Flussbecken.",
+      "zielTemperaturC": 21
+    },
+    {
+      "id": "dravelon-thessil",
+      "name": "Thessil",
+      "typ": "Mond",
+      "um": "dravelon-planet",
+      "periodeTage": 16,
+      "e": 0.02,
+      "i": 2,
+      "knoten": 30,
+      "peri": 0,
+      "phase": 100,
+      "radiusKm": 1100,
+      "masseErde": 0.005,
+      "farbe": [
+        0.74,
+        0.72,
+        0.68
+      ],
+      "bild": {
+        "art": "monde",
+        "suche": "Krater|Mond|grau|Fels"
+      },
+      "beschreibung": "Thessil ist der einzige große Mond Dravelons. Seine Gezeiten bewegen das Wasser in den riesigen Flussdeltas und Sumpfbecken."
+    },
+    {
+      "id": "dravelon-halvorn-iii",
+      "name": "Halvorn III",
+      "typ": "Gesteinsplanet",
+      "um": "dravelon-stern",
+      "aAE": 1.42,
+      "e": 0.04,
+      "i": 1.5,
+      "knoten": 40,
+      "peri": 90,
+      "phase": 340,
+      "radiusKm": 4300,
+      "masseErde": 0.5,
+      "albedo": 0.28,
+      "farbe": [
+        0.68,
+        0.56,
+        0.48
+      ],
+      "bild": {
+        "art": "planeten",
+        "suche": "Gefrorener Planet|kaltem Sternenlicht|Felsplanet|Wüste"
+      },
+      "beschreibung": "Halvorn III ist eine kalte, trockene Gesteinswelt."
+    },
+    {
+      "id": "dravelon-staubgurtel",
+      "name": "Rindengürtel",
+      "typ": "Asteroidengürtel",
+      "ringUm": "dravelon-stern",
+      "ringeAE": [
+        2.2,
+        2.45,
+        2.7,
+        2.95
+      ],
+      "anzahl": 200,
+      "groesseKm": 320,
+      "mindestPx": 5.5,
+      "farbe": [
+        0.6,
+        0.54,
+        0.46
+      ],
+      "bild": {
+        "art": "sternensysteme",
+        "suche": "Asteroidengürtel"
+      },
+      "beschreibung": "Der Rindengürtel zwischen 2,2 und 2,95 AE besteht aus dunklen, kohlenstoffreichen Gesteinsbrocken."
+    },
+    {
+      "id": "dravelon-halvorn-iv",
+      "name": "Halvorn IV",
+      "typ": "Gasriese",
+      "um": "dravelon-stern",
+      "aAE": 4.8,
+      "e": 0.04,
+      "i": 1.5,
+      "knoten": 40,
+      "peri": 90,
+      "phase": 200,
+      "radiusKm": 62000,
+      "masseErde": 190,
+      "albedo": 0.42,
+      "farbe": [
+        0.84,
+        0.76,
+        0.6
+      ],
+      "bild": {
+        "art": "planeten",
+        "suche": "Gasriese|Wolkenbänder|Jupiter"
+      },
+      "beschreibung": "Halvorn IV ist ein Gasriese mit zahlreichen kleinen Monden."
+    },
+    {
+      "id": "dravelon-halvorn-v",
+      "name": "Halvorn V",
+      "typ": "Eisriese",
+      "um": "dravelon-stern",
+      "aAE": 12,
+      "e": 0.04,
+      "i": 1.5,
+      "knoten": 40,
+      "peri": 90,
+      "phase": 100,
+      "radiusKm": 24000,
+      "masseErde": 15,
+      "albedo": 0.3,
+      "farbe": [
+        0.5,
+        0.7,
+        0.84
+      ],
+      "bild": {
+        "art": "planeten",
+        "suche": "Eisriese|Neptun"
+      },
+      "beschreibung": "Halvorn V ist ein ferner, blassblauer Eisriese."
+    },
+    {
+      "id": "dravelon-grunschweif",
+      "name": "Grünschweif",
+      "typ": "Komet",
+      "um": "dravelon-stern",
+      "anomalie": true,
+      "aAE": 14,
+      "e": 0.92,
+      "i": 30,
+      "knoten": 120,
+      "peri": 60,
+      "phase": 172,
+      "radiusKm": 6,
+      "masseErde": 0,
+      "farbe": [
+        0.6,
+        0.9,
+        0.7
+      ],
+      "bild": {
+        "art": "kometen",
+        "suche": "grün|Komet"
+      },
+      "beschreibung": "Ein Komet mit grünlich leuchtender Koma, der alle 60 Jahre das innere System erreicht."
+    },
+    {
+      "id": "dravelon-kometengebiet",
+      "name": "Äußeres Kometengebiet",
+      "typ": "Kometengebiet",
+      "ringUm": "dravelon-stern",
+      "ringeAE": [
+        32,
+        39,
+        46
+      ],
+      "anzahl": 200,
+      "groesseKm": 150,
+      "mindestPx": 4.5,
+      "farbe": [
+        0.56,
+        0.7,
+        0.86
+      ],
+      "beschreibung": "Ein ferner Gürtel aus Eiskörpern zwischen 32 und 46 AE."
+    }
+  ]
+}

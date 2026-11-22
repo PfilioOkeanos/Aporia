@@ -1,0 +1,534 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Oun",
+  "genitiv": "von Oun",
+  "dossierName": "Oun-Dossier",
+  "klasse": "Mond",
+  "intro": "Oun ist ein kleiner, dunkler Mond auf weiter Bahn. Oun umkreist Vessarin in 34 Tage.",
+  "globusDaten": {
+    "planet": "mond-mit-riesigem-einschlagskrater",
+    "klasse": "Gestein",
+    "radius": 600000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=vessarin-stern&objekt=vessarin-oun",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-C77AFD36F5"
+    ],
+    [
+      "Typ",
+      "Mond"
+    ],
+    [
+      "Sternsystem",
+      "Celeun-System"
+    ],
+    [
+      "Zentralkörper",
+      "Vessarin"
+    ],
+    [
+      "Große Halbachse",
+      "502.928 km"
+    ],
+    [
+      "Umlaufzeit",
+      "34 Tage"
+    ],
+    [
+      "Durchmesser",
+      "1.200 km"
+    ],
+    [
+      "Masse",
+      "0,065 Mondmassen"
+    ],
+    [
+      "Schwerkraft",
+      "0,09 g"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -7 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Celeun-System"
+    ],
+    [
+      "Zentralstern",
+      "Celeun",
+      "inhalte/himmelskoerper/sterne/details/junge-sonne-im-blauen-sternnebel/hauptseite/index.html"
+    ],
+    [
+      "Umläuft",
+      "Vessarin",
+      "inhalte/himmelskoerper/planeten/details/hydrothermale-ozeanwelt-im-all/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "502.928 km"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Oun im Celeun-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=vessarin-stern&objekt=vessarin-oun",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Celeun",
+      "href": "inhalte/himmelskoerper/sterne/details/junge-sonne-im-blauen-sternnebel/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◍",
+      "art": "Mutterplanet",
+      "titel": "Vessarin",
+      "href": "inhalte/himmelskoerper/planeten/details/hydrothermale-ozeanwelt-im-all/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Thalassoiden",
+      "titel": "Vessarin",
+      "href": "inhalte/himmelskoerper/planeten/details/hydrothermale-ozeanwelt-im-all/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Thalassoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Thalassoiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Celeun-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=vessarin-stern&objekt=vessarin-oun"
+    },
+    {
+      "titel": "Speziesdossier Thalassoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Thalassoiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#080707",
+      "tiefe": "#111010",
+      "akzent": "#bdb9b6",
+      "sand": "#c2b8a2",
+      "moos": "#9caf90",
+      "ozean": "#7c98a5",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#454340"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Astronomie"
+      ],
+      [
+        "Planet",
+        "Mutterplanet"
+      ],
+      [
+        "Kräfte",
+        "Gezeiten"
+      ],
+      [
+        "Tiefe",
+        "Geologie"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Mutterplanet": {
+      "gruppe": "Wissenschaft",
+      "icon": "◐",
+      "intro": "Mutterplanet von Oun.",
+      "abschnitte": [
+        {
+          "titel": "Vessarin",
+          "text": [
+            "Vessarin ist die Heimatwelt der Thalassoiden: eine Ozeanwelt mit globalem, kilometertiefem Meer, wenigen Inselbögen und ausgedehnten hydrothermalen Feldern am Meeresboden."
+          ],
+          "daten": [
+            [
+              "Typ",
+              "Ozeanplanet"
+            ],
+            [
+              "Durchmesser",
+              "14.800 km"
+            ],
+            [
+              "Abstand des Mondes",
+              "502.928 km (68 Planetenradien)"
+            ]
+          ],
+          "verweise": [
+            [
+              "Vessarin",
+              "inhalte/himmelskoerper/planeten/details/hydrothermale-ozeanwelt-im-all/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Weitere Monde von Vessarin",
+          "liste": [
+            "Lirae – Umlauf in 9,5 Tage"
+          ],
+          "verweise": [
+            [
+              "Lirae",
+              "inhalte/himmelskoerper/monde/details/halbbeleuchteter-mond-mit-gewaltiger-einschlagsnarbe/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Gezeiten": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gezeiten von Oun.",
+      "abschnitte": [
+        {
+          "titel": "Gezeitenkräfte",
+          "text": [
+            "Auf seiner Bahn in 502.928 km Abstand wirken starke Gezeitenkräfte von Vessarin auf Oun."
+          ]
+        }
+      ]
+    },
+    "Gebundene Rotation": {
+      "gruppe": "Wissenschaft",
+      "icon": "↻",
+      "intro": "Gebundene Rotation von Oun.",
+      "abschnitte": [
+        {
+          "titel": "Rotation",
+          "text": [
+            "Oun wendet Vessarin vermutlich stets dieselbe Seite zu: Ein Tag dauert so lange wie ein Umlauf – 34 Tage."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Oun auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Oun",
+          "text": [
+            "Oun ist ein kleiner, dunkler Mond auf weiter Bahn.",
+            "Oun umkreist Vessarin in 34 Tage."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Mond"
+            ],
+            [
+              "Sternsystem",
+              "Celeun-System"
+            ],
+            [
+              "Zentralkörper",
+              "Vessarin"
+            ],
+            [
+              "Große Halbachse",
+              "502.928 km"
+            ],
+            [
+              "Umlaufzeit",
+              "34 Tage"
+            ],
+            [
+              "Durchmesser",
+              "1.200 km"
+            ],
+            [
+              "Masse",
+              "0,065 Mondmassen"
+            ],
+            [
+              "Schwerkraft",
+              "0,09 g"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -7 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Vessarin",
+          "text": [
+            "Das Celeun-System ist die Heimat der Thalassoiden: Ihr Planet Vessarin umkreist Celeun, und Oun ist einer seiner Monde."
+          ],
+          "verweise": [
+            [
+              "Vessarin",
+              "inhalte/himmelskoerper/planeten/details/hydrothermale-ozeanwelt-im-all/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Thalassoiden",
+              "inhalte/spezies/Biologische Spezies/Thalassoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Oun im Celeun-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Vessarin"
+            ],
+            [
+              "Große Halbachse",
+              "502.928 km"
+            ],
+            [
+              "Exzentrizität",
+              "0,02"
+            ],
+            [
+              "Bahnneigung",
+              "4°"
+            ],
+            [
+              "Umlaufzeit",
+              "34 Tage"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Celeun · Stern",
+              "Gelber Zwerg (G6 V)"
+            ],
+            [
+              "Celeun I · 0,42 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Vessarin · 0,93 AE",
+              "Ozeanplanet"
+            ],
+            [
+              "Celeun III · 1,7 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Celeun IV · 6 AE",
+              "Gasriese"
+            ],
+            [
+              "Celeun V · 16 AE",
+              "Eisriese"
+            ],
+            [
+              "Perlgürtel · 2,5–3,3 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 40–56 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Celeun",
+              "inhalte/himmelskoerper/sterne/details/junge-sonne-im-blauen-sternnebel/hauptseite/index.html"
+            ],
+            [
+              "Celeun I",
+              "inhalte/himmelskoerper/planeten/details/roter-planet-mit-alten-kratern/hauptseite/index.html"
+            ],
+            [
+              "Vessarin",
+              "inhalte/himmelskoerper/planeten/details/hydrothermale-ozeanwelt-im-all/hauptseite/index.html"
+            ],
+            [
+              "Celeun III",
+              "inhalte/himmelskoerper/planeten/details/eisplanet-mit-dunklen-felskontinenten/hauptseite/index.html"
+            ],
+            [
+              "Celeun IV",
+              "inhalte/himmelskoerper/planeten/details/gasriese-auf-exzentrischer-umlaufbahn/hauptseite/index.html"
+            ],
+            [
+              "Celeun V",
+              "inhalte/himmelskoerper/planeten/details/triton-vor-tiefblauem-neptun/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Oun.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "600 km"
+            ],
+            [
+              "Masse",
+              "0,065 Mondmassen"
+            ],
+            [
+              "Mittlere Dichte",
+              "5,28 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "0,88 m/s² (0,09 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "1,03 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Oun.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Oun ist geologisch weitgehend erstarrt; Einschläge haben seine Oberfläche geformt."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Oun.",
+      "abschnitte": [
+        {
+          "titel": "Gashülle",
+          "text": [
+            "Oun besitzt keine nennenswerte Atmosphäre – dafür ist die Schwerkraft zu gering."
+          ]
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Oun.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 0,93 AE Abstand zu Celeun liegt die Gleichgewichtstemperatur von Oun bei rund -7 °C – gemäßigt."
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Oun.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Oun entstand zusammen mit dem Celeun-System vor rund 4,1 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Oun.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Ist der Mond eingefangen oder mit seinem Planeten entstanden?",
+            "Welche Spuren tragen seine ältesten Krater?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Oun ist mit allen Bahndaten im Celeun-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=vessarin-stern&objekt=vessarin-oun"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Oun.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Oun ist ein kleiner, dunkler Mond auf weiter Bahn."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Oun.",
+      "abschnitte": [
+        {
+          "titel": "Oun – Archivbild",
+          "bild": true,
+          "bildtext": "Oun"
+        }
+      ]
+    }
+  }
+}

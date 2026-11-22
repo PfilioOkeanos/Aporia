@@ -38,3 +38,6 @@ document.addEventListener("click", (event) => {
     const offen = knopf.dataset.mueToggle === "open";
     document.querySelectorAll("details.mue-card").forEach((karte) => { karte.open = offen; });
 });
+
+// Heimatwelt-Kasten (Planetendossier + Sternenkarte) für Spezies mit Heimatwelt
+import "../../_gemeinsam/heimatwelt-verweis.js";

@@ -1,0 +1,285 @@
+{
+  "systemName": "Celeun-System",
+  "praefix": "vessarin-",
+  "lage": {
+    "entfernungLj": 29,
+    "richtung": [
+      0.45,
+      -0.35,
+      -0.8
+    ]
+  },
+  "einzelstern": true,
+  "stern": {
+    "id": "vessarin-stern",
+    "name": "Celeun",
+    "typ": "Gelber Zwerg (G6 V)",
+    "masseSonne": 0.95,
+    "radiusSonne": 0.93,
+    "leuchtkraftSonne": 0.82,
+    "temperaturK": 5600,
+    "alterMrd": 4.1,
+    "farbe": [
+      1,
+      0.9,
+      0.7
+    ],
+    "emissionsfarbe": [
+      1,
+      0.93,
+      0.73
+    ],
+    "emission": 1.12,
+    "bild": {
+      "art": "sterne",
+      "suche": "gelb|Sonne|orange|K-Stern|Hauptreihe"
+    },
+    "beschreibung": "Celeun ist ein gelber Zwerg der Spektralklasse G6 V mit 95 % der Sonnenmasse und 82 % ihrer Leuchtkraft – Zentralstern von Vessarin, der Heimatwelt der Thalassoiden."
+  },
+  "koerper": [
+    {
+      "id": "vessarin-celeun-i",
+      "name": "Celeun I",
+      "typ": "Gesteinsplanet",
+      "um": "vessarin-stern",
+      "aAE": 0.42,
+      "e": 0.04,
+      "i": 1.5,
+      "knoten": 40,
+      "peri": 90,
+      "phase": 330,
+      "radiusKm": 4700,
+      "masseErde": 0.4,
+      "albedo": 0.14,
+      "farbe": [
+        0.62,
+        0.54,
+        0.46
+      ],
+      "bild": {
+        "art": "planeten",
+        "suche": "Felsplanet|Krater|Basalt"
+      },
+      "beschreibung": "Celeun I ist ein heißer, luftloser Gesteinsplanet."
+    },
+    {
+      "id": "vessarin-planet",
+      "name": "Vessarin",
+      "typ": "Ozeanplanet",
+      "um": "vessarin-stern",
+      "aAE": 0.93,
+      "e": 0.02,
+      "i": 0,
+      "knoten": 40,
+      "peri": 90,
+      "phase": 210,
+      "radiusKm": 7400,
+      "masseErde": 1.46,
+      "albedo": 0.28,
+      "farbe": [
+        0.2,
+        0.42,
+        0.52
+      ],
+      "bild": {
+        "art": "planeten",
+        "slug": "hydrothermale-ozeanwelt-im-all"
+      },
+      "beschreibung": "Vessarin ist die Heimatwelt der Thalassoiden: eine Ozeanwelt mit globalem, kilometertiefem Meer, wenigen Inselbögen und ausgedehnten hydrothermalen Feldern am Meeresboden.",
+      "zielTemperaturC": 19
+    },
+    {
+      "id": "vessarin-lirae",
+      "name": "Lirae",
+      "typ": "Mond",
+      "um": "vessarin-planet",
+      "periodeTage": 9.5,
+      "e": 0.02,
+      "i": 2,
+      "knoten": 30,
+      "peri": 0,
+      "phase": 100,
+      "radiusKm": 1700,
+      "masseErde": 0.012,
+      "farbe": [
+        0.76,
+        0.74,
+        0.7
+      ],
+      "bild": {
+        "art": "monde",
+        "slug": "halbbeleuchteter-mond-mit-gewaltiger-einschlagsnarbe"
+      },
+      "beschreibung": "Lirae ist der große innere Mond Vessarins. Seine Gezeiten erzeugen kräftige Tiefenströmungen und Gezeitenbänder an den Inselbögen."
+    },
+    {
+      "id": "vessarin-oun",
+      "name": "Oun",
+      "typ": "Mond",
+      "um": "vessarin-planet",
+      "periodeTage": 34,
+      "e": 0.02,
+      "i": 4,
+      "knoten": 30,
+      "peri": 0,
+      "phase": 20,
+      "radiusKm": 600,
+      "masseErde": 0.0008,
+      "farbe": [
+        0.6,
+        0.58,
+        0.56
+      ],
+      "bild": {
+        "art": "monde",
+        "slug": "mond-mit-riesigem-einschlagskrater"
+      },
+      "beschreibung": "Oun ist ein kleiner, dunkler Mond auf weiter Bahn."
+    },
+    {
+      "id": "vessarin-celeun-iii",
+      "name": "Celeun III",
+      "typ": "Gesteinsplanet",
+      "um": "vessarin-stern",
+      "aAE": 1.7,
+      "e": 0.04,
+      "i": 1.5,
+      "knoten": 40,
+      "peri": 90,
+      "phase": 90,
+      "radiusKm": 5100,
+      "masseErde": 0.9,
+      "albedo": 0.3,
+      "farbe": [
+        0.64,
+        0.6,
+        0.58
+      ],
+      "bild": {
+        "art": "planeten",
+        "slug": "eisplanet-mit-dunklen-felskontinenten"
+      },
+      "beschreibung": "Celeun III ist eine kalte Gesteinswelt mit Polkappen aus Wassereis."
+    },
+    {
+      "id": "vessarin-perlgurtel",
+      "name": "Perlgürtel",
+      "typ": "Asteroidengürtel",
+      "ringUm": "vessarin-stern",
+      "ringeAE": [
+        2.5,
+        2.75,
+        3,
+        3.25
+      ],
+      "anzahl": 200,
+      "groesseKm": 320,
+      "mindestPx": 5.5,
+      "farbe": [
+        0.66,
+        0.64,
+        0.6
+      ],
+      "bild": {
+        "art": "sternensysteme",
+        "suche": "Asteroidengürtel"
+      },
+      "beschreibung": "Der Perlgürtel zwischen 2,5 und 3,25 AE enthält viele helle, wasserreiche Brocken."
+    },
+    {
+      "id": "vessarin-celeun-iv",
+      "name": "Celeun IV",
+      "typ": "Gasriese",
+      "um": "vessarin-stern",
+      "aAE": 6,
+      "e": 0.04,
+      "i": 1.5,
+      "knoten": 40,
+      "peri": 90,
+      "phase": 160,
+      "radiusKm": 64000,
+      "masseErde": 240,
+      "albedo": 0.42,
+      "farbe": [
+        0.82,
+        0.76,
+        0.62
+      ],
+      "bild": {
+        "art": "planeten",
+        "suche": "Gasriese|Wolkenbänder|Jupiter"
+      },
+      "beschreibung": "Celeun IV ist ein großer Gasriese mit hellen Wolkenbändern."
+    },
+    {
+      "id": "vessarin-celeun-v",
+      "name": "Celeun V",
+      "typ": "Eisriese",
+      "um": "vessarin-stern",
+      "aAE": 16,
+      "e": 0.04,
+      "i": 1.5,
+      "knoten": 40,
+      "peri": 90,
+      "phase": 40,
+      "radiusKm": 26000,
+      "masseErde": 20,
+      "albedo": 0.3,
+      "farbe": [
+        0.46,
+        0.66,
+        0.86
+      ],
+      "bild": {
+        "art": "planeten",
+        "suche": "Eisriese|Neptun"
+      },
+      "beschreibung": "Celeun V ist ein ferner, tiefblauer Eisriese."
+    },
+    {
+      "id": "vessarin-perlschweif",
+      "name": "Perlschweif",
+      "typ": "Komet",
+      "um": "vessarin-stern",
+      "anomalie": true,
+      "aAE": 15,
+      "e": 0.9,
+      "i": 22,
+      "knoten": 120,
+      "peri": 60,
+      "phase": 172,
+      "radiusKm": 6,
+      "masseErde": 0,
+      "farbe": [
+        0.72,
+        0.86,
+        0.96
+      ],
+      "bild": {
+        "art": "kometen",
+        "suche": "blau|weiß|Komet"
+      },
+      "beschreibung": "Ein wasserreicher Komet mit perlmuttfarben schimmerndem Staubschweif, der alle 58 Jahre das innere System durchquert."
+    },
+    {
+      "id": "vessarin-kometengebiet",
+      "name": "Äußeres Kometengebiet",
+      "typ": "Kometengebiet",
+      "ringUm": "vessarin-stern",
+      "ringeAE": [
+        40,
+        48,
+        56
+      ],
+      "anzahl": 200,
+      "groesseKm": 150,
+      "mindestPx": 4.5,
+      "farbe": [
+        0.56,
+        0.7,
+        0.86
+      ],
+      "beschreibung": "Ein ferner Gürtel aus Eiskörpern zwischen 40 und 56 AE."
+    }
+  ]
+}

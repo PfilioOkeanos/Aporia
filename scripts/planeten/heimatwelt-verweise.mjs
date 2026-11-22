@@ -1,0 +1,39 @@
+// Heimatwelt-Verweise · schreibt inhalte/spezies/_gemeinsam/heimatwelten.js: welche Spezies welche Heimatwelt hat
+// (Planetendossier, Planetenbild, Sternsystem). Daraus zeigt _gemeinsam/heimatwelt-verweis.js auf allen Speziesseiten
+// den Weg zum Planeten – das Gegenstück zum Speziesverweis im Planetendossier.
+// Quellen: scripts/planeten/heimatwelten/*.mjs + systeme/*-system.json, dazu EXTRA (Welten ohne Beschreibungsdatei).
+// Aufruf: node scripts/planeten/heimatwelt-verweise.mjs   (heimatwelt-bauen.mjs ruft es nach jedem Bau selbst auf)
+import fs from "node:fs";
+import { pathToFileURL } from "node:url";
+import { ROOT } from "./koerper.mjs";
+
+const P = "inhalte/himmelskoerper/planeten/details/";
+const EXTRA = [
+    { welt: "Erde", spezies: "Biologische Spezies/Humanoide", ordner: "erde-im-sternenmeer", system: "Kugel 1", systemName: "Sonnensystem", stern: "Sonne" },
+    { welt: "Kharuun", spezies: "Biologische Spezies/Pyronoiden", ordner: "dammernder-vulkanplanet-mit-gluhenden-lavaseen", systemDatei: "kharuun-system" },
+];
+const bildVon = (ordner) => {
+    const html = fs.readFileSync(`${ROOT}${P}${ordner}/hauptseite/index.html`, "utf8");
+    const src = html.match(/assets\/bilder\/[^"]+\.(?:png|jpe?g|webp)/i)?.[0];
+    return src ? decodeURIComponent(src) : null;
+};
+const eintraege = [];
+for (const f of fs.readdirSync(`${ROOT}scripts/planeten/heimatwelten`).filter((x) => x.endsWith(".mjs")).sort()) {
+    const s = (await import(pathToFileURL(`${ROOT}scripts/planeten/heimatwelten/${f}`).href)).default;
+    const sys = JSON.parse(fs.readFileSync(`${ROOT}scripts/planeten/systeme/${s.system}.json`, "utf8"));
+    eintraege.push({ welt: s.name, spezies: `${s.spezies.gruppe}/${s.spezies.ordner}`, ordner: s.ordner, system: sys.stern.id, systemName: sys.systemName, stern: sys.stern.name });
+}
+for (const x of EXTRA) {
+    if (eintraege.some((e) => e.spezies === x.spezies)) continue;
+    if (x.systemDatei) { const sys = JSON.parse(fs.readFileSync(`${ROOT}scripts/planeten/systeme/${x.systemDatei}.json`, "utf8")); Object.assign(x, { system: sys.stern.id, systemName: sys.systemName, stern: sys.stern.name }); delete x.systemDatei; }
+    eintraege.push(x);
+}
+const daten = {};
+for (const e of eintraege) {
+    if (!fs.existsSync(`${ROOT}${P}${e.ordner}/hauptseite/index.html`)) throw new Error("Planetendossier fehlt: " + e.ordner);
+    if (!fs.existsSync(`${ROOT}inhalte/spezies/${e.spezies}`)) throw new Error("Speziesordner fehlt: " + e.spezies);
+    daten[e.spezies] = { welt: e.welt, ordner: e.ordner, dossier: `${P}${e.ordner}/hauptseite/index.html`, bild: bildVon(e.ordner), system: e.system, systemName: e.systemName, stern: e.stern };
+}
+const ziel = `${ROOT}inhalte/spezies/_gemeinsam/heimatwelten.js`;
+fs.writeFileSync(ziel, `// Spezies → Heimatwelt · erzeugt von scripts/planeten/heimatwelt-verweise.mjs – nicht von Hand ändern.\n// Pfade relativ zum Projektordner. Verwendet von heimatwelt-verweis.js.\nexport const HEIMATWELTEN = ${JSON.stringify(daten, null, 4)};\n`);
+console.log(`heimatwelten.js: ${Object.keys(daten).length} Spezies mit Heimatwelt`);

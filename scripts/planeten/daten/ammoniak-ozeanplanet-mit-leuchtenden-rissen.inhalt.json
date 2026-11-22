@@ -1,0 +1,594 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Iovar II",
+  "genitiv": "von Iovar II",
+  "dossierName": "Iovar II-Dossier",
+  "klasse": "Ozeanplanet",
+  "intro": "Iovar II ist in dieser Karte die Ammoniak-Ozeanwelt mit leuchtenden Rissen aus dem Aporia-Archiv. Iovar II umkreist Iovar in 0,407 AE Abstand und braucht für einen Umlauf 189,4 Tage.",
+  "globusDaten": {
+    "planet": "ammoniak-ozeanplanet-mit-leuchtenden-rissen",
+    "klasse": "Ozean",
+    "radius": 9800000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=iovar-stern&objekt=iovar-ozeanwelt",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-FED082F559"
+    ],
+    [
+      "Typ",
+      "Ozeanplanet"
+    ],
+    [
+      "Sternsystem",
+      "Iovar-System"
+    ],
+    [
+      "Zentralkörper",
+      "Iovar"
+    ],
+    [
+      "Große Halbachse",
+      "0,407 AE"
+    ],
+    [
+      "Umlaufzeit",
+      "189,4 Tage"
+    ],
+    [
+      "Durchmesser",
+      "19.600 km"
+    ],
+    [
+      "Masse",
+      "3,4 Erdmassen"
+    ],
+    [
+      "Schwerkraft",
+      "1,44 g"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -148 °C"
+    ],
+    [
+      "Monde",
+      "1 (Brevora)"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Iovar-System"
+    ],
+    [
+      "Zentralstern",
+      "Iovar",
+      "inhalte/himmelskoerper/sterne/details/roter-zwerg-kosmische-enzyklopadie/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "0,407 AE"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Iovar II im Iovar-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=iovar-stern&objekt=iovar-ozeanwelt",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Iovar",
+      "href": "inhalte/himmelskoerper/sterne/details/roter-zwerg-kosmische-enzyklopadie/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Brevora",
+      "href": "inhalte/himmelskoerper/monde/details/brevora-der-lebende-doppelmond/hauptseite/index.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Iovar-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=iovar-stern&objekt=iovar-ozeanwelt"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#040809",
+      "tiefe": "#091114",
+      "akzent": "#90becf",
+      "sand": "#98bcb2",
+      "moos": "#72b4a6",
+      "ozean": "#5b9dc4",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#264651"
+    }
+  },
+  "kapitel": {
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Iovar II auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Iovar II",
+          "text": [
+            "Iovar II ist in dieser Karte die Ammoniak-Ozeanwelt mit leuchtenden Rissen aus dem Aporia-Archiv.",
+            "Iovar II umkreist Iovar in 0,407 AE Abstand und braucht für einen Umlauf 189,4 Tage."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Ozeanplanet"
+            ],
+            [
+              "Sternsystem",
+              "Iovar-System"
+            ],
+            [
+              "Zentralkörper",
+              "Iovar"
+            ],
+            [
+              "Große Halbachse",
+              "0,407 AE"
+            ],
+            [
+              "Umlaufzeit",
+              "189,4 Tage"
+            ],
+            [
+              "Durchmesser",
+              "19.600 km"
+            ],
+            [
+              "Masse",
+              "3,4 Erdmassen"
+            ],
+            [
+              "Schwerkraft",
+              "1,44 g"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -148 °C"
+            ],
+            [
+              "Monde",
+              "1 (Brevora)"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Iovar II im Iovar-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Iovar"
+            ],
+            [
+              "Große Halbachse",
+              "0,4066 AE (60,8 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0"
+            ],
+            [
+              "Bahnneigung",
+              "0°"
+            ],
+            [
+              "Umlaufzeit",
+              "189,4 Tage"
+            ],
+            [
+              "Einstrahlung",
+              "0,057-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Am Himmel von Iovar II",
+          "text": [
+            "Iovar erscheint von hier aus etwa 0,34° groß (die Sonne von der Erde: 0,53°)."
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Iovar · Stern",
+              "Roter Zwerg"
+            ],
+            [
+              "Iovar I · 0,22 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Iovar II · 0,41 AE · dieses Dossier",
+              "Ozeanplanet"
+            ],
+            [
+              "Iovar III · 0,84 AE",
+              "Gasriese"
+            ],
+            [
+              "Iovar IV · 1,17 AE",
+              "Eisplanet"
+            ],
+            [
+              "Iovars Zwergwelt · 1,4 AE",
+              "Zwergplanet"
+            ],
+            [
+              "Rostroter Asteroidengürtel · 0,5–0,7 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Kometengebiet Iovar · 1,5–1,6 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Iovar",
+              "inhalte/himmelskoerper/sterne/details/roter-zwerg-kosmische-enzyklopadie/hauptseite/index.html"
+            ],
+            [
+              "Iovar I",
+              "inhalte/himmelskoerper/planeten/details/ursprunglicher-gesteinsplanet-mit-einschlagkratern/hauptseite/index.html"
+            ],
+            [
+              "Iovar III",
+              "inhalte/himmelskoerper/planeten/details/saturnahnlicher-gasriese-mit-leuchtenden-eisringen/hauptseite/index.html"
+            ],
+            [
+              "Iovar IV",
+              "inhalte/himmelskoerper/planeten/details/blauweie-eiswelt-im-all/hauptseite/index.html"
+            ],
+            [
+              "Iovars Zwergwelt",
+              "inhalte/himmelskoerper/zwergplaneten/details/blaugrauer-zwergplanet-mit-eisring/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Iovar II.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "9.800 km"
+            ],
+            [
+              "Masse",
+              "3,4 Erdmassen"
+            ],
+            [
+              "Mittlere Dichte",
+              "5,15 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "14,1 m/s² (1,437 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "16,63 km/s"
+            ]
+          ],
+          "vergleich": {
+            "mit": "Erde",
+            "werte": [
+              [
+                "Durchmesser",
+                19600,
+                12742,
+                "km"
+              ],
+              [
+                "Masse",
+                3.4,
+                1,
+                "Erdmassen"
+              ],
+              [
+                "Schwerkraft",
+                1.44,
+                1,
+                "g"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "Planetare Struktur": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Planetare Struktur von Iovar II.",
+      "abschnitte": [
+        {
+          "titel": "Schalenbau",
+          "schichten": [
+            [
+              "Ozean",
+              "Globale Wasserschicht"
+            ],
+            [
+              "Meeresboden",
+              "Basaltische Kruste"
+            ],
+            [
+              "Mantel",
+              "Silikatgestein"
+            ],
+            [
+              "Kern",
+              "Eisen und Nickel"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geografie": {
+      "gruppe": "Natur",
+      "icon": "△",
+      "intro": "Geografie von Iovar II.",
+      "abschnitte": [
+        {
+          "titel": "Oberfläche",
+          "text": [
+            "Die Oberfläche von Iovar II ist eisig kalt."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Iovar II.",
+      "abschnitte": [
+        {
+          "titel": "Gashülle",
+          "text": [
+            "Iovar II hält eine dünne, kalte Gashülle fest."
+          ],
+          "balken": {
+            "werte": [
+              [
+                "Kohlendioxid",
+                62
+              ],
+              [
+                "Stickstoff",
+                33
+              ],
+              [
+                "Argon",
+                5
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Iovar II.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 0,407 AE Abstand zu Iovar liegt die Gleichgewichtstemperatur von Iovar II bei rund -148 °C – eisig kalt."
+          ]
+        }
+      ]
+    },
+    "Gewässer": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gewässer von Iovar II.",
+      "abschnitte": [
+        {
+          "titel": "Wasser",
+          "text": [
+            "Wasser gibt es höchstens als Eis in Kratern und im Untergrund."
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Iovar II.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Iovar II ist groß genug, um im Inneren noch Wärme zu speichern; Spuren alter vulkanischer Tätigkeit sind wahrscheinlich."
+          ]
+        }
+      ]
+    },
+    "Biosphäre": {
+      "gruppe": "Natur",
+      "icon": "❧",
+      "intro": "Biosphäre von Iovar II.",
+      "abschnitte": [
+        {
+          "titel": "Leben",
+          "text": [
+            "Auf Iovar II ist kein Leben verzeichnet."
+          ]
+        }
+      ]
+    },
+    "Spezies": {
+      "gruppe": "Zivilisation",
+      "icon": "✿",
+      "intro": "Spezies von Iovar II.",
+      "abschnitte": [
+        {
+          "titel": "Bewohner",
+          "text": [
+            "Iovar II ist keine Heimat einer intelligenten Spezies."
+          ]
+        }
+      ]
+    },
+    "Zivilisation": {
+      "gruppe": "Zivilisation",
+      "icon": "▥",
+      "intro": "Zivilisation von Iovar II.",
+      "abschnitte": [
+        {
+          "titel": "Siedlungen",
+          "text": [
+            "Für Iovar II sind keine dauerhaften Siedlungen verzeichnet."
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Iovar II.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Iovar II entstand zusammen mit dem Iovar-System."
+          ]
+        }
+      ]
+    },
+    "Fraktionen": {
+      "gruppe": "Zivilisation",
+      "icon": "◇",
+      "intro": "Fraktionen von Iovar II.",
+      "abschnitte": [
+        {
+          "titel": "Ansprüche",
+          "text": [
+            "Für Iovar II sind keine Fraktionsansprüche verzeichnet."
+          ]
+        }
+      ]
+    },
+    "Rohstoffe": {
+      "gruppe": "Weitere",
+      "icon": "⬡",
+      "intro": "Rohstoffe von Iovar II.",
+      "abschnitte": [
+        {
+          "titel": "Rohstoffe",
+          "liste": [
+            "Silikatgestein",
+            "Metallerze"
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Iovar II.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Wie ist der innere Aufbau beschaffen?",
+            "Gab es früher eine dichtere Atmosphäre?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Iovar II ist mit allen Bahndaten im Iovar-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=iovar-stern&objekt=iovar-ozeanwelt"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Iovar II.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Ein Mond: Brevora"
+          ]
+        },
+        {
+          "titel": "Monde",
+          "karten": [
+            {
+              "titel": "Brevora",
+              "text": "2.200 km Durchmesser, Umlauf in 13,8 Tage. Der lebende Doppelmond Brevora aus dem Aporia-Archiv wird hier durch einen Körper auf der Bahn um Iovar II dargestellt."
+            }
+          ],
+          "verweise": [
+            [
+              "Brevora",
+              "inhalte/himmelskoerper/monde/details/brevora-der-lebende-doppelmond/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Iovar II.",
+      "abschnitte": [
+        {
+          "titel": "Iovar II – Archivbild",
+          "bild": true,
+          "bildtext": "Iovar II"
+        }
+      ]
+    }
+  }
+}

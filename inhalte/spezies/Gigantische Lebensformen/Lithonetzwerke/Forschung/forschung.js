@@ -1,0 +1,2 @@
+// Lithonetzwerke – Forschung · erzeugt vom Spezies-Baukasten (scripts/spezies) – Änderungen dort vornehmen
+import "../lithonetzwerke-basis.js";

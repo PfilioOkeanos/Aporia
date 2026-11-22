@@ -47,7 +47,6 @@ Eine Zusammenarbeit führt beispielsweise nicht automatisch zu einer Mitgliedsch
 | Protektorat | Nur wenige einzelne Mykonoiden gehören Gilden an und besitzen dadurch eine Verbindung zum Protektorat |
 | Synaptorat | Keine mykonoidischen Mitglieder; bewusste Nichtmitgliedschaft |
 | Ätherwanderer | Keine Beziehungen |
-| Zirkel der Erhabenen | Existiert gemäß neuer Aporia-Weltgrundlage nicht mehr als Fraktion |
 
 Die vier verbleibenden Großmächte sind Konföderation, Konsortium, Protektorat und Synaptorat.
 
@@ -260,49 +259,6 @@ Bis dahin gilt die festgelegte Beziehungslosigkeit.
 
 ---
 
-## 8. Zirkel der Erhabenen – Aufhebung der früheren Weltbau-Festlegung
-
-### 8.1 Neue verbindliche Entscheidung
-
-Der Zirkel der Erhabenen existiert nicht im Aporia-Universum.
-
-Diese Festlegung ersetzt seine bisherige Einordnung als fünfte Großmacht.
-
-### 8.2 Bedeutung für die Mykonoiden
-
-Es kann keine politische Mitgliedschaft, Diplomatie oder Beziehung zu einer nicht existierenden Fraktion geben.
-
-Der Zirkel wird deshalb nicht als aktive Macht in den Beziehungen der Mykonoiden geführt.
-
-### 8.3 Bedeutung für die gesamte Welt
-
-Die Änderung betrifft nicht nur diese Spezies, sondern den zentralen Weltbau.
-
-Künftige Fraktionsdaten müssen diese Entscheidung berücksichtigen.
-
-### 8.4 Auswirkungen auf vorhandene Archive
-
-Bei einer späteren Bestandsprüfung sind mögliche Referenzen auf den Zirkel zu identifizieren.
-
-Dies betrifft gegebenenfalls:
-
-- Das zentrale Fraktionsregister
-- Bisherige Weltbauübersichten
-- Fraktionsverknüpfungen
-- Kosmologische und politische Darstellungen
-- Frühere Entwürfe von Geschichten
-- Navigations- und Archivstrukturen
-
-Die bloße Existenz solcher älteren Entwürfe macht den Zirkel nicht erneut zum gültigen Bestandteil des Universums.
-
-### 8.5 Keine automatische Ersatzfraktion
-
-Die Streichung des Zirkels führt nicht automatisch zur Benennung einer neuen fünften Großmacht.
-
-Auch die Ätherwanderer erhalten dadurch keine neue politische Stellung.
-
----
-
 ## 9. Beziehungen zwischen politisch unterschiedlich gebundenen Mykonoiden
 
 ### 9.1 Gemeinsame Herkunft
@@ -511,9 +467,6 @@ Daraus dürfen ohne weitere Festlegung keine automatisch feindlichen Beziehungen
 - Zuständigkeiten bei fraktionsübergreifenden Interessen
 - Verbindlichkeit gemeinsamer Entscheidungen
 
-### Zentraler Weltbau
-- Bereinigung aller veralteten Verweise auf den gestrichenen Zirkel der Erhabenen
-
 Diese Angaben werden erst ergänzt, wenn entsprechende konkrete Festlegungen getroffen wurden.
 
 ---
@@ -547,7 +500,6 @@ Festgelegt sind:
 - Wenige individuelle Gildenverbindungen zum Protektorat
 - Bewusster Ausschluss der Mitgliedschaft im Synaptorat
 - Keine Beziehungen zu den Ätherwanderern
-- Vollständige Streichung des Zirkels der Erhabenen aus Aporia
 - Politische Unterschiede innerhalb der Mykonoiden
 - Gemeinsame wissenschaftliche und diplomatische Interessen
 - Bündnisbezogene Sicherheits- und Forschungsregeln

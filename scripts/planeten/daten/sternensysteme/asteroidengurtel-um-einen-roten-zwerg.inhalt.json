@@ -1,0 +1,475 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Erzgürtel",
+  "genitiv": "von Erzgürtel",
+  "dossierName": "Erzgürtel-Dossier",
+  "klasse": "Asteroidengürtel",
+  "intro": "Der Erzgürtel zwischen 1,6 und 2,4 AE ist ungewöhnlich metall- und kristallreich. Für die Lithoiden ist er ein wichtiges Abbaugebiet – und ein Ort, an dem mineralische Strukturen ohne Leben untersucht werden. Erzgürtel umgibt Thalor im Thalor-System.",
+  "globusDaten": {
+    "planet": "asteroidengurtel-um-einen-roten-zwerg",
+    "klasse": "Gestein",
+    "radius": 1000000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=nhemara-stern&objekt=nhemara-erzguertel",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-9FADAE9B99"
+    ],
+    [
+      "Typ",
+      "Asteroidengürtel"
+    ],
+    [
+      "Sternsystem",
+      "Thalor-System"
+    ],
+    [
+      "Zentralkörper",
+      "Thalor"
+    ],
+    [
+      "Ausdehnung",
+      "1,6–2,4 AE"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Thalor-System"
+    ],
+    [
+      "Zentralstern",
+      "Thalor",
+      "inhalte/himmelskoerper/sterne/details/brauner-zwerg-mit-bernsteinfarbenem-wolkensaum/hauptseite/index.html"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Erzgürtel im Thalor-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=nhemara-stern&objekt=nhemara-erzguertel",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Thalor",
+      "href": "inhalte/himmelskoerper/sterne/details/brauner-zwerg-mit-bernsteinfarbenem-wolkensaum/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Lithoiden",
+      "titel": "Nhemara",
+      "href": "inhalte/himmelskoerper/planeten/details/planet-der-gewaltigen-verwerfungen/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Lithoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Lithoiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Thalor-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=nhemara-stern&objekt=nhemara-erzguertel"
+    },
+    {
+      "titel": "Speziesdossier Lithoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Lithoiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#080605",
+      "tiefe": "#110e0c",
+      "akzent": "#bdac9f",
+      "sand": "#c2ac93",
+      "moos": "#9c9f7c",
+      "ozean": "#7c8a89",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#453930"
+    },
+    "schichten": [
+      [
+        "Lage",
+        "Bahnen"
+      ],
+      [
+        "System",
+        "Planeten"
+      ],
+      [
+        "Dynamik",
+        "Stabilität"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Zentralsterne": {
+      "gruppe": "Wissenschaft",
+      "icon": "✦",
+      "intro": "Zentralsterne von Erzgürtel.",
+      "abschnitte": [
+        {
+          "titel": "Thalor",
+          "text": [
+            "Thalor ist ein orangefarbener Hauptreihenstern (K2 V) und Heimatstern der Lithoiden. Ein ruhiger Einzelstern, dessen gleichmäßiges Licht die hydrothermalen Landschaften Nhemaras seit Milliarden Jahren bescheint."
+          ],
+          "verweise": [
+            [
+              "Thalor",
+              "inhalte/himmelskoerper/sterne/details/brauner-zwerg-mit-bernsteinfarbenem-wolkensaum/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Planeten": {
+      "gruppe": "Wissenschaft",
+      "icon": "◍",
+      "intro": "Planeten von Erzgürtel.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Thalor · Stern",
+              "Orangefarbener Zwerg (K2 V)"
+            ],
+            [
+              "Thalor I · 0,31 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Nhemara · 0,87 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Thalor III · 3,1 AE",
+              "Gasriese"
+            ],
+            [
+              "Thalor IV · 8,6 AE",
+              "Eisriese"
+            ],
+            [
+              "Erzgürtel · 1,6–2,4 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 30–44 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Thalor",
+              "inhalte/himmelskoerper/sterne/details/brauner-zwerg-mit-bernsteinfarbenem-wolkensaum/hauptseite/index.html"
+            ],
+            [
+              "Thalor I",
+              "inhalte/himmelskoerper/planeten/details/dampfplanet-mit-gluhendem-ozean/hauptseite/index.html"
+            ],
+            [
+              "Nhemara",
+              "inhalte/himmelskoerper/planeten/details/planet-der-gewaltigen-verwerfungen/hauptseite/index.html"
+            ],
+            [
+              "Thalor III",
+              "inhalte/himmelskoerper/planeten/details/abgeplatteter-gasriese-unter-sternen/hauptseite/index.html"
+            ],
+            [
+              "Thalor IV",
+              "inhalte/himmelskoerper/planeten/details/tiefblauer-eisriese-mit-zarten-ringen/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Bahnen": {
+      "gruppe": "Wissenschaft",
+      "icon": "◌",
+      "intro": "Bahnen von Erzgürtel.",
+      "abschnitte": [
+        {
+          "titel": "Lage",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Thalor"
+            ],
+            [
+              "Ausdehnung",
+              "1,6–2,4 AE"
+            ]
+          ]
+        }
+      ]
+    },
+    "Stabilität": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚖",
+      "intro": "Stabilität von Erzgürtel.",
+      "abschnitte": [
+        {
+          "titel": "Stabilität",
+          "text": [
+            "Die Brocken von Erzgürtel bewegen sich auf stabilen Bahnen zwischen den Planeten; Resonanzen mit den großen Planeten formen die Ränder des Gebiets."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Erzgürtel auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Erzgürtel",
+          "text": [
+            "Der Erzgürtel zwischen 1,6 und 2,4 AE ist ungewöhnlich metall- und kristallreich. Für die Lithoiden ist er ein wichtiges Abbaugebiet – und ein Ort, an dem mineralische Strukturen ohne Leben untersucht werden.",
+            "Erzgürtel umgibt Thalor im Thalor-System."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Asteroidengürtel"
+            ],
+            [
+              "Sternsystem",
+              "Thalor-System"
+            ],
+            [
+              "Zentralkörper",
+              "Thalor"
+            ],
+            [
+              "Ausdehnung",
+              "1,6–2,4 AE"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Nhemara",
+          "text": [
+            "Das Thalor-System ist die Heimat der Lithoiden: Ihr Planet Nhemara umkreist Thalor."
+          ],
+          "verweise": [
+            [
+              "Nhemara",
+              "inhalte/himmelskoerper/planeten/details/planet-der-gewaltigen-verwerfungen/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Lithoiden",
+              "inhalte/spezies/Biologische Spezies/Lithoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Erzgürtel im Thalor-System.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Thalor · Stern",
+              "Orangefarbener Zwerg (K2 V)"
+            ],
+            [
+              "Thalor I · 0,31 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Nhemara · 0,87 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Thalor III · 3,1 AE",
+              "Gasriese"
+            ],
+            [
+              "Thalor IV · 8,6 AE",
+              "Eisriese"
+            ],
+            [
+              "Erzgürtel · 1,6–2,4 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 30–44 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Thalor",
+              "inhalte/himmelskoerper/sterne/details/brauner-zwerg-mit-bernsteinfarbenem-wolkensaum/hauptseite/index.html"
+            ],
+            [
+              "Thalor I",
+              "inhalte/himmelskoerper/planeten/details/dampfplanet-mit-gluhendem-ozean/hauptseite/index.html"
+            ],
+            [
+              "Nhemara",
+              "inhalte/himmelskoerper/planeten/details/planet-der-gewaltigen-verwerfungen/hauptseite/index.html"
+            ],
+            [
+              "Thalor III",
+              "inhalte/himmelskoerper/planeten/details/abgeplatteter-gasriese-unter-sternen/hauptseite/index.html"
+            ],
+            [
+              "Thalor IV",
+              "inhalte/himmelskoerper/planeten/details/tiefblauer-eisriese-mit-zarten-ringen/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Umgebung": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Umgebung von Erzgürtel.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Thalor · Stern",
+              "Orangefarbener Zwerg (K2 V)"
+            ],
+            [
+              "Thalor I · 0,31 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Nhemara · 0,87 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Thalor III · 3,1 AE",
+              "Gasriese"
+            ],
+            [
+              "Thalor IV · 8,6 AE",
+              "Eisriese"
+            ],
+            [
+              "Erzgürtel · 1,6–2,4 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 30–44 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Thalor",
+              "inhalte/himmelskoerper/sterne/details/brauner-zwerg-mit-bernsteinfarbenem-wolkensaum/hauptseite/index.html"
+            ],
+            [
+              "Thalor I",
+              "inhalte/himmelskoerper/planeten/details/dampfplanet-mit-gluhendem-ozean/hauptseite/index.html"
+            ],
+            [
+              "Nhemara",
+              "inhalte/himmelskoerper/planeten/details/planet-der-gewaltigen-verwerfungen/hauptseite/index.html"
+            ],
+            [
+              "Thalor III",
+              "inhalte/himmelskoerper/planeten/details/abgeplatteter-gasriese-unter-sternen/hauptseite/index.html"
+            ],
+            [
+              "Thalor IV",
+              "inhalte/himmelskoerper/planeten/details/tiefblauer-eisriese-mit-zarten-ringen/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Erzgürtel.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Erzgürtel besteht aus Material, das sich bei der Entstehung des Thalor-Systems nicht zu einem Planeten vereinte."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Erzgürtel.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Wie viel Masse enthält das Gebiet insgesamt?",
+            "Welche Resonanzen formen seine Ränder?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Erzgürtel ist mit allen Bahndaten im Thalor-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=nhemara-stern&objekt=nhemara-erzguertel"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Erzgürtel.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Der Erzgürtel zwischen 1,6 und 2,4 AE ist ungewöhnlich metall- und kristallreich. Für die Lithoiden ist er ein wichtiges Abbaugebiet – und ein Ort, an dem mineralische Strukturen ohne Leben untersucht werden."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Erzgürtel.",
+      "abschnitte": [
+        {
+          "titel": "Erzgürtel – Archivbild",
+          "bild": true,
+          "bildtext": "Erzgürtel"
+        }
+      ]
+    }
+  }
+}

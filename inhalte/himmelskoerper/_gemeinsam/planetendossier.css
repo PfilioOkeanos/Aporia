@@ -1,0 +1,648 @@
+/* =====================================================================
+   Planetendossier · gemeinsames Design für Planeten-Hauptseiten und Kapitel
+   „Modern, futuristisch, geerdet“: echte Landschaftsbilder, ruhige Erdfarben,
+   feine HUD-Linien und Messdaten. Farben je Planet über die --pd-* Variablen
+   (z. B. in <planet>/hauptseite/erde-design.css). Logik: planetendossier.js
+   ===================================================================== */
+
+body.planetendossier {
+    --pd-nacht: #050d10;
+    --pd-tiefe: #0a1a1f;
+    --pd-glas: rgba(12, 30, 34, .72);
+    --pd-glas-hell: rgba(22, 46, 50, .78);
+    --pd-linie: rgba(160, 215, 195, .16);
+    --pd-linie-hell: rgba(170, 230, 205, .34);
+    --pd-akzent: #7fe0c3;
+    --pd-sand: #e6c48c;
+    --pd-moos: #9cc77e;
+    --pd-ozean: #57a9df;
+    --pd-text: #eef2ea;
+    --pd-leise: #a2b5ad;
+    --pd-schrift: "Segoe UI Variable Display", "Segoe UI", system-ui, sans-serif;
+    --pd-technik: "Bahnschrift", "DIN Alternate", "Segoe UI", system-ui, sans-serif;
+    --pd-mono: ui-monospace, "Cascadia Mono", Consolas, monospace;
+    --pd-raum: clamp(1rem, 2.6vw, 2.2rem);
+    --aporia-page-tint: #3d8d7a;
+    --aporia-page-glass-light: #12302c;
+    --aporia-page-glass-dark: #061210;
+    margin: 0;
+    color: var(--pd-text);
+    font-family: var(--pd-schrift);
+    background:
+        radial-gradient(ellipse 70% 40% at 80% 0%, color-mix(in srgb, var(--pd-ozean) 12%, transparent), transparent 70%),
+        radial-gradient(ellipse 60% 40% at 0% 100%, rgba(156, 199, 126, .08), transparent 70%),
+        linear-gradient(180deg, var(--pd-tiefe), var(--pd-nacht) 40%);
+    background-attachment: fixed;
+}
+/* feines Koordinatenraster im Hintergrund */
+body.planetendossier::before { content: ""; position: fixed; inset: 0; z-index: -1; pointer-events: none; background-image: linear-gradient(var(--pd-linie) 1px, transparent 1px), linear-gradient(90deg, var(--pd-linie) 1px, transparent 1px); background-size: 72px 72px; mask-image: radial-gradient(ellipse at 50% 30%, #000 0%, transparent 75%); opacity: .35; }
+.planetendossier .pd-rahmen { display: flex; }
+.planetendossier .pd-main { flex: 1; min-width: 0; container-type: inline-size; padding-bottom: 3rem; }
+.planetendossier .pd-unsichtbar { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+.planetendossier a { color: var(--pd-akzent); }
+.planetendossier :is(a, button, summary, [tabindex]):focus-visible { outline: 2px solid var(--pd-akzent); outline-offset: 3px; }
+.planetendossier img { display: block; max-width: 100%; }
+
+/* ---------- Bausteine ---------- */
+.pd-kicker { margin: 0; color: var(--pd-akzent); font: 600 .72rem/1.2 var(--pd-technik); letter-spacing: .24em; text-transform: uppercase; }
+.pd-kopf { display: grid; gap: .45rem; margin-bottom: 1.4rem; max-width: 60ch; }
+.pd-kopf h2 { margin: 0; font: 300 clamp(1.7rem, 3.6cqi, 2.9rem)/1.08 var(--pd-schrift); letter-spacing: -.01em; }
+.pd-kopf-text { margin: 0; color: var(--pd-leise); font-size: 1.02rem; line-height: 1.55; }
+.pd-glas { position: relative; border: 1px solid var(--pd-linie); border-radius: 14px; background: linear-gradient(160deg, var(--pd-glas-hell), var(--pd-glas)); backdrop-filter: blur(10px); }
+/* HUD-Ecken */
+.pd-glas::before, .pd-mess::before, .pd-schichten-buehne::before { content: ""; position: absolute; inset: -1px; border-radius: inherit; pointer-events: none; background:
+    linear-gradient(var(--pd-akzent), var(--pd-akzent)) top left / 14px 1px no-repeat, linear-gradient(var(--pd-akzent), var(--pd-akzent)) top left / 1px 14px no-repeat,
+    linear-gradient(var(--pd-akzent), var(--pd-akzent)) bottom right / 14px 1px no-repeat, linear-gradient(var(--pd-akzent), var(--pd-akzent)) bottom right / 1px 14px no-repeat; opacity: .8; }
+.pd-knopf { display: inline-flex; align-items: center; gap: .45rem; padding: .65rem 1.15rem; border: 1px solid var(--pd-linie-hell); border-radius: 999px; background: rgba(8, 22, 24, .55); color: var(--pd-text) !important; font: 500 .9rem/1.2 var(--pd-technik); letter-spacing: .04em; text-decoration: none; backdrop-filter: blur(8px); transition: border-color .2s, background .2s, transform .2s, box-shadow .2s; }
+.pd-knopf:hover { border-color: var(--pd-akzent); transform: translateY(-2px); box-shadow: 0 .5rem 1.4rem color-mix(in srgb, var(--pd-akzent) 18%, transparent); }
+.pd-knopf--hell { border-color: transparent; background: linear-gradient(135deg, var(--pd-akzent), color-mix(in srgb, var(--pd-akzent) 55%, var(--pd-ozean))); color: #04231c !important; font-weight: 600; }
+.pd-abschnitt { padding: clamp(2.2rem, 5cqi, 4.2rem) var(--pd-raum) 0; }
+
+/* ---------- Kopf: Landschaft, Topografie, Globus, HUD ---------- */
+.pd-hero { position: relative; isolation: isolate; display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr); grid-template-rows: 1fr auto; align-items: center; gap: 1rem var(--pd-raum); min-height: clamp(36rem, 62cqi, 50rem); padding: clamp(5.5rem, 9cqi, 7.5rem) var(--pd-raum) 1.4rem; overflow: hidden; }
+.pd-hero-bild { position: absolute; inset: 0; z-index: -3; }
+.pd-hero-bild img { width: 100%; height: 100%; object-fit: cover; object-position: center 55%; transform-origin: 60% 50%; animation: pd-kamera 40s ease-in-out infinite alternate; }
+@keyframes pd-kamera { from { transform: scale(1.06) translate3d(0, 0, 0); } to { transform: scale(1.14) translate3d(-1.5%, -1%, 0); } }
+.pd-hero::after { content: ""; position: absolute; inset: 0; z-index: -2; background:
+    linear-gradient(90deg, color-mix(in srgb, var(--pd-nacht) 94%, transparent) 0%, color-mix(in srgb, var(--pd-nacht) 72%, transparent) 38%, color-mix(in srgb, var(--pd-nacht) 20%, transparent) 70%, color-mix(in srgb, var(--pd-nacht) 55%, transparent) 100%),
+    linear-gradient(0deg, var(--pd-nacht) 2%, transparent 38%), linear-gradient(180deg, color-mix(in srgb, var(--pd-nacht) 70%, transparent), transparent 22%); }
+.pd-topo { position: absolute; inset: auto 0 0 0; z-index: -1; width: 100%; height: 70%; fill: none; stroke: var(--pd-akzent); stroke-width: .6; opacity: .14; pointer-events: none; }
+.pd-scan { position: absolute; inset: 0; z-index: -1; pointer-events: none; background: linear-gradient(180deg, transparent 0, color-mix(in srgb, var(--pd-akzent) 7%, transparent) 50%, transparent 100%) 0 -100% / 100% 30% no-repeat; animation: pd-scan 9s linear infinite; }
+@keyframes pd-scan { to { background-position: 0 220%; } }
+.pd-hero-inhalt { display: grid; gap: .9rem; max-width: 40rem; }
+.planetendossier .pd-pfad { display: flex; flex-wrap: wrap; align-items: center; gap: .45rem; font: 500 .82rem/1.3 var(--pd-technik); letter-spacing: .06em; }
+.planetendossier .pd-pfad a { color: var(--pd-leise); text-decoration: none; }
+.planetendossier .pd-pfad a:hover { color: var(--pd-akzent); }
+.planetendossier .pd-pfad .earth-back-to-map { margin-left: .4rem; padding: .25rem .7rem; border: 1px solid var(--pd-linie-hell); border-radius: 999px; color: var(--pd-text); }
+.pd-kennung { margin: 0; color: var(--pd-sand); font: 600 .78rem/1.3 var(--pd-technik); letter-spacing: .26em; text-transform: uppercase; }
+.pd-titel { margin: 0; font: 200 clamp(4rem, 13cqi, 9.5rem)/.9 var(--pd-schrift); letter-spacing: .04em; text-transform: uppercase; background: linear-gradient(180deg, #ffffff, #cfe9dc 70%, var(--pd-akzent)); -webkit-background-clip: text; background-clip: text; color: transparent; text-shadow: 0 0 60px color-mix(in srgb, var(--pd-akzent) 18%, transparent); }
+.pd-intro { margin: 0; max-width: 34rem; color: #dfe8e1; font-size: clamp(1rem, 1.5cqi, 1.18rem); line-height: 1.6; }
+.pd-aktionen { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: .4rem; }
+/* Globus mit Umlaufbahnen */
+.pd-globus { position: relative; display: grid; justify-items: center; align-self: center; }
+.pd-orbit { position: absolute; top: 50%; left: 50%; border: 1px solid var(--pd-linie-hell); border-radius: 50%; transform: translate(-50%, -54%) rotateX(72deg); pointer-events: none; }
+.pd-orbit--1 { width: min(118%, 34rem); aspect-ratio: 1; opacity: .5; }
+.pd-orbit--2 { width: min(96%, 28rem); aspect-ratio: 1; border-style: dashed; animation: pd-orbit 26s linear infinite; }
+.pd-orbit--2 i { position: absolute; top: -4px; left: 50%; width: 8px; height: 8px; border-radius: 50%; background: var(--pd-sand); box-shadow: 0 0 12px var(--pd-sand); }
+@keyframes pd-orbit { to { transform: translate(-50%, -54%) rotateX(72deg) rotate(360deg); } }
+.planetendossier .pd-player { position: relative; padding: 0; background: radial-gradient(circle, color-mix(in srgb, var(--pd-ozean) 22%, transparent), transparent 62%); border-radius: 50%; }
+.planetendossier .pd-player > img, .planetendossier .pd-player canvas { width: min(100%, 25rem); filter: drop-shadow(0 0 40px color-mix(in srgb, var(--pd-ozean) 35%, transparent)); }
+.planetendossier .pd-player > img[hidden] { display: none !important; }
+.planetendossier .pd-player .earth-controls button { border: 1px solid var(--pd-linie-hell); background: color-mix(in srgb, var(--pd-nacht) 70%, transparent); color: var(--pd-text); }
+.planetendossier .pd-player .earth-coordinates { color: var(--pd-sand); font-family: var(--pd-mono); }
+.pd-globus-hinweis { margin: .3rem 0 0; color: var(--pd-leise); font: 500 .74rem/1.2 var(--pd-technik); letter-spacing: .2em; text-transform: uppercase; }
+/* HUD-Leiste */
+.pd-hud { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr)); margin: 0; border-top: 1px solid var(--pd-linie-hell); border-bottom: 1px solid var(--pd-linie); background: linear-gradient(90deg, color-mix(in srgb, var(--pd-nacht) 60%, transparent), color-mix(in srgb, var(--pd-nacht) 25%, transparent)); backdrop-filter: blur(6px); }
+.pd-hud > div { padding: .9rem 1.1rem; border-right: 1px solid var(--pd-linie); }
+.pd-hud > div:last-child { border-right: 0; }
+.pd-hud dt { color: var(--pd-leise); font: 600 .68rem/1.2 var(--pd-technik); letter-spacing: .22em; text-transform: uppercase; }
+.pd-hud dd { margin: .3rem 0 0; font: 300 clamp(1.25rem, 2.2cqi, 1.75rem)/1.1 var(--pd-schrift); font-variant-numeric: tabular-nums; }
+
+/* ---------- Kapitelmenü (Leiste unter dem Kopf, bleibt oben) ---------- */
+.pd-leiste { position: sticky; top: calc(var(--aporia-topbar-height, 78px) + .4rem); z-index: 20; display: flex; justify-content: center; padding: .6rem var(--pd-raum); pointer-events: none; }
+.planetendossier .earth-tabs { pointer-events: auto; display: flex; flex-wrap: wrap; justify-content: center; gap: .3rem; padding: .35rem; border: 1px solid var(--pd-linie-hell); border-radius: 999px; background: rgba(6, 18, 20, .78); backdrop-filter: blur(14px); box-shadow: 0 .8rem 2rem rgba(0, 0, 0, .45); }
+.planetendossier .earth-tabs > a, .planetendossier .earth-tabs summary { display: inline-flex; align-items: center; gap: .35rem; padding: .5rem 1rem; border: 0; border-radius: 999px; background: none; color: var(--pd-text); font: 500 .86rem/1.2 var(--pd-technik); letter-spacing: .05em; text-decoration: none; cursor: pointer; list-style: none; }
+.planetendossier .earth-tabs summary::-webkit-details-marker { display: none; }
+.planetendossier .earth-tabs summary::after { content: "▾"; color: var(--pd-akzent); font-size: .75em; }
+.planetendossier .earth-tabs > a:hover, .planetendossier .earth-tabs summary:hover { background: color-mix(in srgb, var(--pd-akzent) 10%, transparent); }
+.planetendossier .earth-tabs > a[aria-current], .planetendossier .earth-tabs details[open] summary { background: linear-gradient(135deg, color-mix(in srgb, var(--pd-akzent) 28%, transparent), color-mix(in srgb, var(--pd-ozean) 20%, transparent)); box-shadow: inset 0 0 0 1px var(--pd-linie-hell); }
+.planetendossier .earth-tabs details { position: relative; }
+.planetendossier .earth-tabs ul { position: absolute; top: calc(100% + .5rem); left: 50%; z-index: 30; display: grid; gap: .1rem; min-width: 14rem; margin: 0; padding: .45rem; border: 1px solid var(--pd-linie-hell); border-radius: 14px; background: rgba(6, 18, 20, .96); list-style: none; transform: translateX(-50%); box-shadow: 0 1rem 2.4rem rgba(0, 0, 0, .55); }
+.planetendossier .earth-tabs li a { display: flex; align-items: center; gap: .55rem; padding: .5rem .7rem; border-radius: 9px; color: var(--pd-text); font: 400 .9rem/1.2 var(--pd-schrift); text-decoration: none; }
+.planetendossier .earth-tabs li a:hover, .planetendossier .earth-tabs li a[aria-current] { background: color-mix(in srgb, var(--pd-akzent) 12%, transparent); color: var(--pd-akzent); }
+.planetendossier .earth-tabs b { display: inline-grid; place-items: center; width: 1.5rem; color: var(--pd-akzent); }
+
+/* ---------- Messdaten ---------- */
+.pd-messraster { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem; }
+.pd-mess { position: relative; display: grid; align-content: center; gap: .7rem; min-height: 12rem; padding: 1.2rem; border: 1px solid var(--pd-linie); border-radius: 16px; background: linear-gradient(160deg, var(--pd-glas-hell), var(--pd-glas)); }
+.pd-mess h3 { margin: 0; color: var(--pd-leise); font: 600 .72rem/1.2 var(--pd-technik); letter-spacing: .22em; text-transform: uppercase; }
+.pd-mess dl { display: grid; gap: .7rem; margin: 0; }
+.pd-mess dt { color: var(--pd-leise); font: 600 .68rem/1.2 var(--pd-technik); letter-spacing: .2em; text-transform: uppercase; }
+.pd-mess dd { margin: .2rem 0 0; font: 300 1.3rem/1.2 var(--pd-schrift); }
+/* Ring: Ozeanbedeckung */
+.pd-mess--ring { place-items: center; }
+.pd-mess--ring svg { grid-area: 1 / 1; width: min(100%, 11rem); transform: rotate(-90deg); }
+.pd-ring-grund { fill: none; stroke: rgba(156, 199, 126, .25); stroke-width: 9; }
+.pd-ring-wert { fill: none; stroke: var(--pd-ozean); stroke-width: 9; stroke-linecap: round; stroke-dasharray: 0 100; transition: stroke-dasharray 1.8s cubic-bezier(.2, .7, .2, 1); filter: drop-shadow(0 0 6px color-mix(in srgb, var(--pd-ozean) 60%, transparent)); }
+.pd-einblenden.ist-sichtbar .pd-ring-wert, .pd-ohne-bewegung .pd-ring-wert { stroke-dasharray: var(--wert) 100; }
+.pd-mess-zentrum { grid-area: 1 / 1; display: grid; justify-items: center; text-align: center; }
+.pd-mess-zentrum strong { font: 300 2.1rem/1 var(--pd-schrift); }
+.pd-mess-zentrum span { color: var(--pd-leise); font: 600 .62rem/1.3 var(--pd-technik); letter-spacing: .2em; text-transform: uppercase; }
+/* Balken: Atmosphäre */
+.pd-balken { display: flex; height: 1.1rem; overflow: hidden; border-radius: 999px; background: rgba(255, 255, 255, .06); }
+.pd-balken i { width: 0; background: var(--farbe); transition: width 1.6s cubic-bezier(.2, .7, .2, 1) calc(var(--i) * .2s); }
+.pd-balken i, .pd-legende li { --farbe: var(--pd-ozean); }
+.pd-balken i:nth-child(2), .pd-legende li:nth-child(2) { --farbe: var(--pd-akzent); }
+.pd-balken i:nth-child(3), .pd-legende li:nth-child(3) { --farbe: var(--pd-sand); }
+.pd-einblenden.ist-sichtbar .pd-balken i, .pd-ohne-bewegung .pd-balken i { width: max(var(--anteil), 4px); }
+.pd-legende { display: grid; gap: .35rem; margin: 0; padding: 0; list-style: none; font-size: .9rem; }
+.pd-legende li { display: flex; align-items: baseline; gap: .55rem; }
+.pd-legende li::before { content: ""; width: .6rem; height: .6rem; border-radius: 2px; background: var(--farbe); transform: translateY(.05rem); }
+.pd-legende b { min-width: 3.2rem; font: 500 .95rem/1 var(--pd-mono); }
+/* Uhr: Tag und Jahr */
+.pd-mess--zeit { grid-template-columns: auto 1fr; align-items: center; }
+.pd-uhr { position: relative; width: 6.5rem; aspect-ratio: 1; border: 1px solid var(--pd-linie-hell); border-radius: 50%; background: radial-gradient(circle, color-mix(in srgb, var(--pd-sand) 12%, transparent), transparent 70%); }
+.pd-uhr-sonne { position: absolute; inset: 42%; border-radius: 50%; background: var(--pd-sand); box-shadow: 0 0 14px var(--pd-sand); }
+.pd-uhr i { position: absolute; left: 50%; bottom: 50%; width: 2px; transform-origin: bottom center; border-radius: 2px; }
+.pd-uhr-tag { height: 42%; background: var(--pd-akzent); animation: pd-dreh 4s linear infinite; }
+.pd-uhr-jahr { height: 30%; background: var(--pd-ozean); animation: pd-dreh 24s linear infinite; }
+@keyframes pd-dreh { from { transform: translateX(-50%) rotate(0); } to { transform: translateX(-50%) rotate(360deg); } }
+/* Alle Grunddaten */
+.pd-alle-daten { margin-top: 1rem; border: 1px solid var(--pd-linie); border-radius: 14px; background: rgba(6, 18, 20, .5); }
+.pd-alle-daten summary { display: flex; justify-content: space-between; padding: .9rem 1.1rem; cursor: pointer; font: 500 .9rem/1.2 var(--pd-technik); letter-spacing: .08em; list-style: none; }
+.pd-alle-daten summary::-webkit-details-marker { display: none; }
+.pd-alle-daten summary span { color: var(--pd-leise); }
+.pd-alle-daten dl { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 18rem), 1fr)); gap: 0 1.6rem; margin: 0; padding: 0 1.1rem 1rem; }
+.pd-alle-daten dl > div { display: flex; justify-content: space-between; gap: 1rem; padding: .5rem 0; border-bottom: 1px solid var(--pd-linie); }
+.pd-alle-daten dt { color: var(--pd-leise); font-size: .88rem; }
+.pd-alle-daten dd { margin: 0; text-align: right; font-size: .92rem; }
+
+/* ---------- Von außen nach innen ---------- */
+.pd-schichten-raster { display: grid; grid-template-columns: minmax(13rem, .35fr) minmax(0, 1fr); gap: 1rem; align-items: stretch; }
+.pd-schichten-liste { position: relative; display: grid; align-content: start; gap: .2rem; padding-left: 1.2rem; }
+.pd-schichten-liste::before { content: ""; position: absolute; left: .35rem; top: .6rem; bottom: .6rem; width: 2px; background: linear-gradient(180deg, var(--pd-ozean), var(--pd-akzent) 40%, var(--pd-moos) 65%, var(--pd-sand) 85%, #e0784a); border-radius: 2px; opacity: .7; }
+.pd-schichten-liste button { position: relative; display: grid; gap: .1rem; padding: .6rem .8rem; border: 1px solid transparent; border-radius: 12px; background: none; color: var(--pd-text); text-align: left; cursor: pointer; transition: background .2s, border-color .2s; }
+.pd-schichten-liste button::before { content: ""; position: absolute; left: -1.08rem; top: 50%; width: .62rem; height: .62rem; border: 2px solid var(--pd-nacht); border-radius: 50%; background: var(--pd-leise); transform: translateY(-50%); transition: background .2s, box-shadow .2s; }
+.pd-schichten-liste button small { color: var(--pd-leise); font: 600 .62rem/1.2 var(--pd-technik); letter-spacing: .22em; text-transform: uppercase; }
+.pd-schichten-liste button span { font: 400 1rem/1.25 var(--pd-schrift); }
+.pd-schichten-liste button:hover { background: color-mix(in srgb, var(--pd-akzent) 6%, transparent); }
+.pd-schichten-liste button[aria-selected="true"] { border-color: var(--pd-linie-hell); background: linear-gradient(90deg, color-mix(in srgb, var(--pd-akzent) 14%, transparent), transparent); }
+.pd-schichten-liste button[aria-selected="true"]::before { background: var(--pd-akzent); box-shadow: 0 0 0 4px color-mix(in srgb, var(--pd-akzent) 20%, transparent), 0 0 12px var(--pd-akzent); }
+.pd-schichten-buehne { position: relative; min-height: 26rem; overflow: hidden; border: 1px solid var(--pd-linie); border-radius: 18px; background: var(--pd-tiefe); }
+.pd-schicht { position: absolute; inset: 0; display: grid; align-items: end; animation: pd-schicht-auf .7s cubic-bezier(.2, .7, .2, 1); }
+.pd-schicht[hidden] { display: none; }
+@keyframes pd-schicht-auf { from { opacity: 0; transform: scale(1.03); } to { opacity: 1; transform: none; } }
+.pd-schicht img { position: absolute; left: 0; top: 50%; width: calc(58% / .42); max-width: none; height: auto; translate: 0 -50%; -webkit-mask-image: linear-gradient(90deg, #000 28%, transparent 41.5%); mask-image: linear-gradient(90deg, #000 28%, transparent 41.5%); }
+.pd-schicht::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, transparent 25%, color-mix(in srgb, var(--pd-nacht) 92%, transparent) 62%), linear-gradient(0deg, color-mix(in srgb, var(--pd-nacht) 85%, transparent), transparent 45%); }
+.pd-schicht-text { position: relative; z-index: 1; display: grid; gap: .6rem; justify-self: end; max-width: 26rem; padding: clamp(1.2rem, 3cqi, 2.4rem); }
+.pd-schicht-text h3 { margin: 0; font: 300 clamp(1.6rem, 3cqi, 2.4rem)/1.1 var(--pd-schrift); }
+.pd-schicht-text p:not(.pd-kicker) { margin: 0; color: #d7e2dc; line-height: 1.55; }
+.pd-schicht-text .pd-knopf { justify-self: start; margin-top: .3rem; }
+
+/* ---------- Lebendige Welt (Flora/Fauna-Baustein) ---------- */
+.pd-leben .planet-leben { padding: clamp(1rem, 2.4cqi, 1.6rem); border: 1px solid var(--pd-linie); border-radius: 18px; background: linear-gradient(160deg, var(--pd-glas-hell), var(--pd-glas)); }
+
+/* ---------- Zivilisation und Geschichte ---------- */
+.pd-kartenband { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr)); gap: 1rem; }
+.pd-karte { position: relative; display: grid; align-content: end; min-height: 22rem; overflow: hidden; isolation: isolate; border: 1px solid var(--pd-linie); border-radius: 18px; color: var(--pd-text) !important; text-decoration: none; transition: transform .4s cubic-bezier(.2, .7, .2, 1), border-color .3s, box-shadow .3s; }
+.pd-karte img { position: absolute; left: 0; top: 50%; z-index: -2; width: calc(100% / .41); max-width: none; height: auto; translate: 0 -50%; transform-origin: 20% 50%; transition: transform .9s cubic-bezier(.2, .7, .2, 1); }
+.pd-karte::before { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(0deg, color-mix(in srgb, var(--pd-nacht) 96%, transparent) 10%, color-mix(in srgb, var(--pd-nacht) 55%, transparent) 50%, transparent 80%); }
+.pd-karte:hover { transform: translateY(-6px); border-color: var(--pd-akzent); box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, .5); }
+.pd-karte:hover img { transform: scale(1.06); }
+.pd-karte-text { display: grid; gap: .35rem; padding: 1.2rem; }
+.pd-karte-text small { color: var(--pd-akzent); font: 600 .66rem/1.2 var(--pd-technik); letter-spacing: .2em; text-transform: uppercase; }
+.pd-karte-text strong { font: 300 1.6rem/1.1 var(--pd-schrift); }
+.pd-karte-text em { color: #cfdbd5; font-size: .9rem; font-style: normal; line-height: 1.45; }
+
+/* ---------- Position im Universum ---------- */
+.pd-kosmos-raster { display: grid; grid-template-columns: minmax(14rem, .8fr) minmax(0, 1fr) minmax(0, .9fr); gap: 1rem; align-items: center; }
+.pd-system { position: relative; aspect-ratio: 1; display: grid; place-items: center; }
+.pd-stern { width: 18%; aspect-ratio: 1; border-radius: 50%; background: radial-gradient(circle, #fff6d8, var(--pd-sand) 55%, #e08a3c); box-shadow: 0 0 40px color-mix(in srgb, var(--pd-sand) 60%, transparent), 0 0 90px rgba(230, 160, 80, .25); }
+.pd-bahn { position: absolute; inset: 12%; border: 1px dashed var(--pd-linie-hell); border-radius: 50%; animation: pd-kreisen 30s linear infinite; }
+.pd-planet { position: absolute; top: 50%; right: -5%; width: 12%; aspect-ratio: 1; border-radius: 50%; background: radial-gradient(circle at 35% 35%, #9fd6ff, var(--pd-ozean) 50%, #1e5a3a); box-shadow: 0 0 16px color-mix(in srgb, var(--pd-ozean) 70%, transparent); transform: translateY(-50%); }
+.pd-mondbahn { position: absolute; inset: -90%; border: 1px solid var(--pd-linie); border-radius: 50%; animation: pd-kreisen 6s linear infinite; }
+.pd-mondbahn i { position: absolute; top: -3px; left: 50%; width: 6px; height: 6px; border-radius: 50%; background: #d8d8d0; }
+@keyframes pd-kreisen { to { transform: rotate(360deg); } }
+.pd-planet { animation: pd-gegen 30s linear infinite; }
+@keyframes pd-gegen { to { transform: translateY(-50%) rotate(-360deg); } }
+.pd-position { display: grid; gap: 1rem; padding: 1.2rem 1.3rem; }
+.pd-position dl { display: grid; margin: 0; }
+.pd-position dl > div { display: flex; justify-content: space-between; gap: 1rem; padding: .55rem 0; border-bottom: 1px solid var(--pd-linie); }
+.pd-position dt { color: var(--pd-leise); font: 600 .7rem/1.4 var(--pd-technik); letter-spacing: .18em; text-transform: uppercase; }
+.pd-position dd { margin: 0; text-align: right; }
+.pd-position .pd-knopf { justify-self: start; }
+.pd-verweise { display: grid; gap: .55rem; margin: 0; padding: 0; list-style: none; }
+.pd-verweise a { display: flex; align-items: center; gap: .9rem; padding: .8rem 1rem; border: 1px solid var(--pd-linie); border-radius: 14px; background: rgba(6, 18, 20, .55); color: var(--pd-text) !important; text-decoration: none; transition: border-color .2s, transform .2s; }
+.pd-verweise a:hover { border-color: var(--pd-akzent); transform: translateX(4px); }
+.pd-verweise b { display: grid; place-items: center; width: 2.2rem; height: 2.2rem; border: 1px solid var(--pd-linie-hell); border-radius: 50%; color: var(--pd-sand); }
+.pd-verweise span { display: grid; font-size: 1.02rem; }
+.pd-verweise small { color: var(--pd-leise); font: 600 .62rem/1.3 var(--pd-technik); letter-spacing: .2em; text-transform: uppercase; }
+
+/* ---------- Alle Kapitel ---------- */
+.pd-archiv-gruppe + .pd-archiv-gruppe { margin-top: 1.6rem; }
+.pd-archiv-gruppe h3 { display: flex; align-items: center; gap: .8rem; margin: 0 0 .8rem; color: var(--pd-sand); font: 600 .74rem/1.2 var(--pd-technik); letter-spacing: .26em; text-transform: uppercase; }
+.pd-archiv-gruppe h3::after { content: ""; flex: 1; height: 1px; background: linear-gradient(90deg, var(--pd-linie-hell), transparent); }
+.pd-archiv-raster { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 12.5rem), 1fr)); gap: .8rem; }
+.pd-kachel { position: relative; display: grid; align-content: end; aspect-ratio: 3 / 4; overflow: hidden; isolation: isolate; border: 1px solid var(--pd-linie); border-radius: 16px; color: var(--pd-text) !important; text-decoration: none; transition: transform .35s cubic-bezier(.2, .7, .2, 1), border-color .3s; }
+.pd-kachel img { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; object-position: left center; filter: saturate(.85) brightness(.85); transition: transform .8s cubic-bezier(.2, .7, .2, 1), filter .4s; }
+.pd-kachel::before { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(0deg, color-mix(in srgb, var(--pd-nacht) 96%, transparent) 18%, color-mix(in srgb, var(--pd-nacht) 30%, transparent) 60%, transparent); }
+.pd-kachel-nr { position: absolute; top: .7rem; right: .8rem; color: var(--pd-sand); font: 500 .78rem/1 var(--pd-mono); }
+.pd-kachel-text { display: grid; gap: .3rem; padding: 1rem; }
+.pd-kachel-text strong { font: 400 1.1rem/1.2 var(--pd-schrift); }
+.pd-kachel-text em { display: -webkit-box; overflow: hidden; -webkit-line-clamp: 3; -webkit-box-orient: vertical; color: #c9d6cf; font-size: .82rem; font-style: normal; line-height: 1.4; max-height: 0; opacity: 0; transition: max-height .4s ease, opacity .3s; }
+.pd-kachel:hover { transform: translateY(-4px); border-color: var(--pd-akzent); }
+.pd-kachel:hover img { transform: scale(1.06); filter: none; }
+.pd-kachel:is(:hover, :focus-visible) em { max-height: 4.2em; opacity: 1; }
+
+/* ---------- Quellen ---------- */
+.pd-quellen { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem 1.2rem; margin: 3rem var(--pd-raum) 0; padding-top: 1.2rem; border-top: 1px solid var(--pd-linie); font-size: .86rem; }
+.pd-quellen span { color: var(--pd-leise); font: 600 .68rem/1.2 var(--pd-technik); letter-spacing: .22em; text-transform: uppercase; }
+
+/* ---------- Einblenden ---------- */
+.pd-einblenden { opacity: 0; transform: translateY(26px); transition: opacity .9s ease, transform .9s cubic-bezier(.2, .7, .2, 1); }
+.pd-einblenden.ist-sichtbar, .pd-ohne-bewegung .pd-einblenden { opacity: 1; transform: none; }
+
+/* =====================================================================
+   Kapitelseiten (pd-kapitel): bestehende Inhalte im neuen Design
+   ===================================================================== */
+.planetendossier.pd-kapitel main { container-type: inline-size; padding-bottom: 2rem; }
+.planetendossier.pd-kapitel .earth-hero { position: relative; isolation: isolate; display: grid; grid-template-columns: minmax(0, 1fr); align-content: end; gap: 1rem; min-height: clamp(20rem, 34cqi, 28rem); padding: clamp(5.5rem, 8cqi, 7rem) var(--pd-raum) 1.2rem; overflow: visible; z-index: 5; background: var(--pd-tiefe); }
+.planetendossier.pd-kapitel .earth-hero :is(.nature-hero-image, .earth-panorama, .astro-banner) { position: absolute; inset: 0; z-index: -2; margin: 0; overflow: hidden; }
+.planetendossier.pd-kapitel .earth-hero :is(.nature-hero-image, .earth-panorama, .astro-banner) img { width: 100%; height: 100%; object-fit: cover; object-position: center 55%; animation: pd-kamera 40s ease-in-out infinite alternate; }
+.planetendossier.pd-kapitel .earth-hero::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, color-mix(in srgb, var(--pd-nacht) 92%, transparent), color-mix(in srgb, var(--pd-nacht) 45%, transparent) 55%, color-mix(in srgb, var(--pd-nacht) 25%, transparent)), linear-gradient(0deg, var(--pd-nacht), transparent 55%); }
+.planetendossier.pd-kapitel .earth-hero > :is(.astro-intro, .earth-title) { order: 1; display: grid; gap: .5rem; max-width: 46rem; margin: 0; padding: 0; border: 0; background: none; box-shadow: none; }
+.planetendossier.pd-kapitel .earth-hero > .earth-hero-nav { order: 2; position: static; display: grid; gap: .8rem; margin: 0; padding: 0; border: 0; background: none; box-shadow: none; }
+.planetendossier.pd-kapitel .astro-intro::before { display: none; }
+.planetendossier.pd-kapitel :is(.astro-earth-name) { margin: 0; color: var(--pd-sand); font: 600 .8rem/1.2 var(--pd-technik); letter-spacing: .3em; text-transform: uppercase; }
+.planetendossier.pd-kapitel .earth-hero h1 { margin: 0; color: var(--pd-text); font: 200 clamp(2.8rem, 7cqi, 5.2rem)/.95 var(--pd-schrift); letter-spacing: .02em; }
+.planetendossier.pd-kapitel .earth-hero :is(.astro-intro, .earth-title) > p:last-child { margin: 0; max-width: 40rem; color: #dbe5df; font-size: 1.08rem; line-height: 1.55; }
+.planetendossier.pd-kapitel .earth-crumb { display: flex; flex-wrap: wrap; align-items: center; gap: .45rem; font: 500 .82rem/1.3 var(--pd-technik); letter-spacing: .06em; }
+.planetendossier.pd-kapitel .earth-crumb a { color: var(--pd-leise); text-decoration: none; }
+.planetendossier.pd-kapitel .earth-crumb a:hover { color: var(--pd-akzent); }
+.planetendossier.pd-kapitel .earth-crumb .earth-back-to-map { margin-left: .4rem; padding: .25rem .7rem; border: 1px solid var(--pd-linie-hell); border-radius: 999px; color: var(--pd-text); }
+.planetendossier.pd-kapitel .earth-tabs { justify-self: start; }
+/* Raster: Kapitelnavigation links, Inhalte rechts */
+.planetendossier.pd-kapitel .astro-layout { gap: 1rem; padding: 1.4rem var(--pd-raum) 0; }
+.planetendossier.pd-kapitel .astro-chapters { position: sticky; top: calc(var(--aporia-topbar-height, 78px) + 1rem); align-self: start; max-height: calc(100dvh - var(--aporia-topbar-height, 78px) - 2rem); overflow-y: auto; padding: .9rem .6rem; scrollbar-width: thin; }
+.planetendossier.pd-kapitel .astro-chapters h2 { margin: 0 0 .5rem .5rem; color: var(--pd-sand); font: 600 .7rem/1.2 var(--pd-technik); letter-spacing: .24em; text-transform: uppercase; }
+.planetendossier.pd-kapitel .astro-chapters a { position: relative; display: block; padding: .38rem .6rem .38rem 1.4rem; border: 0; border-radius: 8px; color: var(--pd-text); font: 400 .88rem/1.3 var(--pd-schrift); text-decoration: none; }
+.planetendossier.pd-kapitel .astro-chapters a::before { content: ""; position: absolute; left: .55rem; top: 50%; width: 5px; height: 5px; border-radius: 50%; background: var(--pd-linie-hell); transform: translateY(-50%); }
+.planetendossier.pd-kapitel .astro-chapters a:hover { background: color-mix(in srgb, var(--pd-akzent) 8%, transparent); }
+.planetendossier.pd-kapitel .astro-chapters a[aria-current] { background: linear-gradient(90deg, color-mix(in srgb, var(--pd-akzent) 18%, transparent), transparent); color: var(--pd-akzent); }
+.planetendossier.pd-kapitel .astro-chapters a[aria-current]::before { background: var(--pd-akzent); box-shadow: 0 0 8px var(--pd-akzent); }
+/* Panels */
+.planetendossier.pd-kapitel .earth-panel:not(.astro-chapters) { position: relative; }
+.planetendossier.pd-kapitel .earth-panel { border: 1px solid var(--pd-linie); border-radius: 16px; background: linear-gradient(160deg, var(--pd-glas-hell), var(--pd-glas)); box-shadow: 0 .8rem 2rem rgba(0, 0, 0, .25); backdrop-filter: blur(8px); }
+.planetendossier.pd-kapitel .earth-panel::before { content: ""; position: absolute; inset: -1px; border-radius: inherit; pointer-events: none; animation: none; background:
+    linear-gradient(var(--pd-akzent), var(--pd-akzent)) top left / 12px 1px no-repeat, linear-gradient(var(--pd-akzent), var(--pd-akzent)) top left / 1px 12px no-repeat,
+    linear-gradient(var(--pd-akzent), var(--pd-akzent)) bottom right / 12px 1px no-repeat, linear-gradient(var(--pd-akzent), var(--pd-akzent)) bottom right / 1px 12px no-repeat; opacity: .7; }
+.planetendossier.pd-kapitel .earth-panel:hover { border-color: var(--pd-linie-hell); }
+.planetendossier.pd-kapitel .earth-panel h2 { color: var(--pd-text); font: 400 1.15rem/1.25 var(--pd-schrift); letter-spacing: .01em; }
+.planetendossier.pd-kapitel .earth-panel h3 { color: var(--pd-akzent); font-family: var(--pd-technik); letter-spacing: .04em; }
+.planetendossier.pd-kapitel .earth-panel dt { color: var(--pd-leise); }
+.planetendossier.pd-kapitel .earth-panel dl div { border-color: var(--pd-linie); }
+.planetendossier.pd-kapitel .earth-panel a { color: var(--pd-akzent); }
+.planetendossier.pd-kapitel :is(.erde-fakt-bild img, .nature-cards img, .general-cards img) { border-radius: 10px; }
+.planetendossier.pd-kapitel .erde-quelle { color: var(--pd-leise); font-size: .78rem; }
+.planetendossier.pd-kapitel .erde-wissen-suche { padding: .6rem .9rem; border: 1px solid var(--pd-linie-hell); border-radius: 999px; background: rgba(6, 18, 20, .7); color: var(--pd-text); font: 400 .95rem/1.2 var(--pd-schrift); }
+/* Lesefortschritt und Kapitel-Blättern (planetendossier.js) */
+.pd-fortschritt { position: fixed; top: 0; left: 0; z-index: 1000; height: 2px; width: 100%; background: linear-gradient(90deg, var(--pd-akzent), var(--pd-ozean)); transform: scaleX(var(--fortschritt, 0)); transform-origin: left; box-shadow: 0 0 10px var(--pd-akzent); pointer-events: none; }
+.pd-blaettern { display: grid; grid-template-columns: 1fr auto 1fr; align-items: stretch; gap: 1rem; margin: 2.5rem var(--pd-raum) 0; }
+.pd-blaettern a { position: relative; display: grid; align-content: end; min-height: 8.5rem; overflow: hidden; isolation: isolate; padding: 1rem 1.2rem; border: 1px solid var(--pd-linie); border-radius: 16px; color: var(--pd-text) !important; text-decoration: none; transition: border-color .3s, transform .3s; }
+.pd-blaettern a img { position: absolute; left: 0; top: 50%; z-index: -2; width: calc(100% / .41); max-width: none; height: auto; translate: 0 -50%; transform-origin: 20% 50%; opacity: .55; transition: opacity .3s, transform .8s; }
+.pd-blaettern a::before { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, color-mix(in srgb, var(--pd-nacht) 92%, transparent), color-mix(in srgb, var(--pd-nacht) 50%, transparent)); }
+.pd-blaettern a:hover { border-color: var(--pd-akzent); transform: translateY(-3px); }
+.pd-blaettern a:hover img { opacity: .8; transform: scale(1.05); }
+.pd-blaettern small { color: var(--pd-akzent); font: 600 .66rem/1.2 var(--pd-technik); letter-spacing: .22em; text-transform: uppercase; }
+.pd-blaettern strong { font: 300 1.4rem/1.15 var(--pd-schrift); }
+.pd-blaettern .pd-blaettern-weiter { text-align: right; }
+.pd-blaettern .pd-blaettern-mitte { display: grid; place-items: center; align-content: center; gap: .4rem; min-width: 9rem; text-align: center; }
+.pd-blaettern-mitte b { font: 300 2rem/1 var(--pd-mono); color: var(--pd-sand); }
+
+/* ---------- Responsiv ---------- */
+@container (max-width: 1100px) {
+    .pd-messraster { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .pd-kosmos-raster { grid-template-columns: minmax(0, .8fr) minmax(0, 1fr); }
+    .pd-verweise { grid-column: 1 / -1; grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr)); }
+}
+@container (max-width: 820px) {
+    .pd-hero { grid-template-columns: minmax(0, 1fr); text-align: left; }
+    .pd-globus { grid-row: 2; width: min(100%, 22rem); justify-self: center; }
+    .pd-hud { grid-row: 3; }
+    .pd-schichten-raster { grid-template-columns: minmax(0, 1fr); }
+    .pd-schichten-liste { display: flex; overflow-x: auto; padding: 0 0 .4rem; gap: .4rem; scrollbar-width: thin; }
+    .pd-schichten-liste::before, .pd-schichten-liste button::before { display: none; }
+    .pd-schichten-liste button { flex: none; border-color: var(--pd-linie); }
+    .pd-schichten-buehne { min-height: 30rem; }
+    .pd-schicht img { top: 0; width: calc(100% / .42); translate: none; -webkit-mask-image: linear-gradient(90deg, #000 38%, transparent 42%); mask-image: linear-gradient(90deg, #000 38%, transparent 42%); }
+    .pd-schicht::after { background: linear-gradient(0deg, color-mix(in srgb, var(--pd-nacht) 96%, transparent) 35%, color-mix(in srgb, var(--pd-nacht) 30%, transparent) 80%); }
+    .pd-schicht-text { justify-self: stretch; max-width: none; }
+    .pd-kosmos-raster { grid-template-columns: minmax(0, 1fr); }
+    .pd-system { width: min(100%, 18rem); justify-self: center; }
+    .pd-blaettern { grid-template-columns: minmax(0, 1fr); }
+    .pd-blaettern .pd-blaettern-mitte { order: -1; min-height: 0; padding: .6rem; }
+}
+@container (max-width: 560px) {
+    .pd-messraster { grid-template-columns: minmax(0, 1fr); }
+    .pd-titel { font-size: clamp(3.2rem, 18cqi, 5rem); }
+    .planetendossier .earth-tabs { border-radius: 18px; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .planetendossier *, .planetendossier *::before, .planetendossier *::after { animation: none !important; transition: none !important; }
+    .pd-einblenden { opacity: 1; transform: none; }
+}
+
+/* ---------- Inhaltsbausteine der Kapitel: Wissensdatenbank, Faktenkarten, Abschnitte, Rohstoffe ---------- */
+.planetendossier .erde-wissen { margin: 1.2rem clamp(1rem, 2.4vw, 2.2rem) 1.6rem; padding: 0; }
+.planetendossier .erde-wissen > header { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: .6rem 1rem; padding: 1.1rem 1.2rem .6rem; }
+.planetendossier .erde-wissen h2 { margin: 0; color: var(--pd-text); font: 300 clamp(1.4rem, 2.4vw, 2rem)/1.15 var(--pd-schrift); }
+.planetendossier .erde-wissen .erde-kicker { margin: 0 0 .25rem; color: var(--pd-akzent); font: 600 .68rem/1.3 var(--pd-technik); letter-spacing: .22em; text-transform: uppercase; }
+.planetendossier .erde-wissen-suche { min-width: min(100%, 17rem); }
+.planetendossier .erde-wissen-raster { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 19rem), 1fr)); gap: .8rem; padding: .3rem 1.2rem 1.2rem; }
+.planetendossier .erde-fakt { display: grid; align-content: start; gap: .5rem; padding: 0 1rem 1rem; overflow: hidden; border: 1px solid var(--pd-linie); border-radius: 14px; background: linear-gradient(160deg, rgba(14, 32, 36, .82), rgba(6, 16, 19, .9)); transition: border-color .3s, transform .3s; }
+.planetendossier .erde-fakt:hover { border-color: var(--pd-linie-hell); transform: translateY(-2px); }
+.planetendossier .erde-fakt[hidden], .planetendossier .erde-gruppe[hidden] { display: none; }
+.planetendossier .erde-fakt > h3 { margin: 0; padding-top: .9rem; display: flex; gap: .55rem; align-items: baseline; color: var(--pd-text); font: 500 1rem/1.3 var(--pd-schrift); }
+.planetendossier .erde-fakt h3 span { flex: none; color: var(--pd-sand); font: 600 .72rem/1 var(--pd-mono); }
+.planetendossier .erde-fakt ul { margin: 0; padding-left: 1.05rem; display: grid; gap: .3rem; color: #d3e0da; font-size: .92rem; line-height: 1.5; }
+.planetendossier .erde-fakt li::marker { color: var(--pd-akzent); }
+.planetendossier .erde-fakt .erde-ergaenzt { padding-top: .45rem; border-top: 1px dashed var(--pd-linie); }
+.planetendossier .erde-fakt .erde-ergaenzt li::marker { color: var(--pd-sand); }
+.planetendossier .erde-fakt :is(.erde-quelle, small) { margin: 0; color: var(--pd-leise); font-size: .74rem; }
+.planetendossier .erde-fakt a, .planetendossier .erde-quellen a { color: var(--pd-akzent); overflow-wrap: anywhere; }
+.planetendossier .erde-fakt-bild { position: relative; margin: 0 -1rem; overflow: hidden; border-bottom: 1px solid var(--pd-linie); }
+.planetendossier .erde-fakt-bild img { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; object-position: left center; border-radius: 0; transition: transform .6s ease; }
+.planetendossier .erde-fakt:hover .erde-fakt-bild img { transform: scale(1.05); }
+.planetendossier .erde-fakt-bild figcaption { position: absolute; inset: auto 0 0; padding: 1.4rem .9rem .45rem; background: linear-gradient(0deg, color-mix(in srgb, var(--pd-nacht) 94%, transparent), transparent); color: var(--pd-text); font-size: .78rem; line-height: 1.35; }
+.planetendossier .erde-offen { margin: 0; color: var(--pd-leise); font-style: italic; }
+.planetendossier .erde-gruppe { grid-column: 1 / -1; margin: 1rem 0 0; padding: .3rem .1rem; border-bottom: 1px solid var(--pd-linie); color: var(--pd-sand); font: 600 .72rem/1.3 var(--pd-technik); letter-spacing: .22em; text-transform: uppercase; }
+.planetendossier .erde-gruppe:first-child { margin-top: 0; }
+.planetendossier .erde-quellen { margin: 0 1.2rem 1.2rem; color: var(--pd-leise); font-size: .85rem; }
+.planetendossier .erde-quellen summary { cursor: pointer; color: var(--pd-text); }
+.planetendossier .erde-quellen ul { columns: 2 18rem; margin: .5rem 0 0; padding-left: 1.1rem; }
+.planetendossier .erde-quellen p { margin: .6rem 0 0; font-size: .78rem; }
+.planetendossier .erde-abschnitte { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 22rem), 1fr)); gap: .8rem; padding: 0 clamp(1rem, 2.4vw, 2.2rem) 1rem; }
+.planetendossier .erde-abschnitt { padding-bottom: .4rem; }
+.planetendossier .erde-abschnitt > div { display: grid; gap: .5rem; padding: .8rem 1rem; color: #d3e0da; font-size: .95rem; line-height: 1.55; }
+.planetendossier .erde-abschnitt p { margin: 0; }
+.planetendossier .erde-abschnitt h3 { margin: .3rem 0 0; color: var(--pd-ozean); font-size: .95rem; }
+.planetendossier .erde-abschnitt ul { margin: 0; padding-left: 1.1rem; }
+.planetendossier .erde-label { display: inline-block; margin: .7rem 1rem 0; padding: .12rem .65rem; border: 1px solid color-mix(in srgb, var(--pd-sand) 40%, transparent); border-radius: 999px; color: var(--pd-sand); font: 600 .66rem/1.4 var(--pd-technik); letter-spacing: .14em; text-transform: uppercase; }
+.planetendossier .erde-rohstoffe { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 12rem), 1fr)); gap: .6rem; padding: .8rem; }
+.planetendossier .erde-rohstoff { display: grid; grid-template-columns: 3rem 1fr; gap: .6rem; align-items: center; padding: .5rem; border: 1px solid var(--pd-linie); border-radius: 12px; background: rgba(10, 26, 31, .8); text-decoration: none; transition: transform .25s, border-color .25s; }
+.planetendossier .erde-rohstoff:hover { transform: translateY(-2px); border-color: var(--pd-akzent); }
+.planetendossier .erde-rohstoff img { width: 3rem; aspect-ratio: 1; object-fit: cover; border-radius: 9px; }
+.planetendossier .erde-rohstoff strong { display: block; color: var(--pd-text); font-size: .95rem; }
+.planetendossier .erde-rohstoff span { color: var(--pd-leise); font-size: .78rem; }
+.planetendossier .erde-hero-video { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; opacity: .55; }
+.planetendossier .earth-sources { padding: .6rem clamp(1rem, 2.4vw, 2.2rem) 1.2rem; color: var(--pd-leise); }
+
+/* Schmale Bildschirme: die Topbar ist dort schon hoch – Kapitelnavigation und Kapitelliste kleben nicht mit */
+@media (max-width: 760px) {
+    .pd-leiste { position: relative; top: auto; }
+    .planetendossier.pd-kapitel .astro-chapters { position: relative; top: auto; max-height: none; }
+    .planetendossier .earth-tabs > a, .planetendossier .earth-tabs summary { padding: .45rem .7rem; font-size: .8rem; }
+}
+/* Umlaufbahnen und Aufklappmenüs dürfen am Rand überstehen, ohne seitliches Scrollen auszulösen */
+body.planetendossier main { overflow-x: clip; }
+/* Flora, Fauna & Rohstoffe in Kapiteln (Widget planet-leben) */
+.planetendossier .erde-leben-panel {
+    grid-column: 1 / -1;
+    margin: 1.2rem clamp(1rem, 2.4vw, 2.2rem);
+    padding: clamp(1rem, 1.8vw, 1.5rem);
+    --planet-leben-akzent: var(--pd-akzent);
+    --planet-leben-linie: var(--pd-linie);
+    --planet-leben-flaeche: rgba(10, 26, 31, .8);
+    --planet-leben-text: var(--pd-text);
+}
+.planetendossier .astro-layout .erde-leben-panel { margin-inline: 0; }
+
+/* Kapitelkopf mit Banner im Intro (Astronomie, Physik, …): Banner füllt den ganzen Kopf */
+.planetendossier.pd-kapitel .earth-hero > .astro-intro { position: static; isolation: auto; overflow: visible; min-height: 0; grid-template-columns: minmax(0, 1fr); }
+.planetendossier.pd-kapitel .earth-hero > .astro-intro::before { display: none; }
+.planetendossier.pd-kapitel .earth-hero img.astro-banner { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; object-position: center 46%; animation: none; }
+/* Kopfbild aus dem Infokarten-Archiv: nur den Fototeil rechts zeigen, Text der Karte bleibt außerhalb */
+.planetendossier.pd-kapitel .earth-hero .nature-hero-image img[src*="ERDE_BILDER"] { position: absolute; left: 50%; top: 50%; width: calc(50% / .41); max-width: none; height: auto; translate: 0 -50%; animation: none; -webkit-mask-image: linear-gradient(90deg, transparent, #000 14%, #000 40.5%, transparent 41.5%); mask-image: linear-gradient(90deg, transparent, #000 14%, #000 40.5%, transparent 41.5%); }
+@media (max-width: 760px) {
+    .planetendossier.pd-kapitel .earth-hero .nature-hero-image img[src*="ERDE_BILDER"] { left: 0; width: calc(100% / .41); -webkit-mask-image: linear-gradient(90deg, #000 36%, transparent 41%); mask-image: linear-gradient(90deg, #000 36%, transparent 41%); }
+}
+
+/* =====================================================================
+   Leseführung auf Kapitelseiten (planetendossier.js → leseFuehrung, Symbole: dossier-symbole.js)
+   Gilt für jede Kapitelseite eines Himmelskörpers mit .astro-layout und .earth-panel
+   ===================================================================== */
+/* Themenfarben der Symbole – helfen beim Wiedererkennen (Himmel, Luft, Wasser, Gestein, Leben, Kultur, Daten) */
+.planetendossier { --pd-thema: var(--pd-akzent); }
+.planetendossier .pd-thema-himmel { --pd-thema: #b7a7ff; }
+.planetendossier .pd-thema-luft { --pd-thema: #8fd3ff; }
+.planetendossier .pd-thema-wasser { --pd-thema: #5fb2ea; }
+.planetendossier .pd-thema-gestein { --pd-thema: #e6b47a; }
+.planetendossier .pd-thema-leben { --pd-thema: #9fd07f; }
+.planetendossier .pd-thema-kultur { --pd-thema: #f2a76c; }
+.planetendossier .pd-thema-daten { --pd-thema: #7fe0c3; }
+
+/* Raster: Leiste links, ein ruhiger Lesefluss rechts */
+@media (min-width: 761px) {
+    .planetendossier.pd-kapitel .astro-layout { grid-template-columns: 16rem minmax(0, 1fr) !important; gap: 1.6rem; }
+}
+.planetendossier.pd-kapitel .pd-lesefluss { display: grid !important; grid-template-columns: minmax(0, 1fr) !important; grid-template-rows: none !important; grid-template-areas: none !important; grid-auto-flow: row !important; align-items: start; gap: .85rem; max-width: 76rem; }
+.planetendossier.pd-kapitel .pd-lesefluss .pd-huelle { display: contents !important; }
+.planetendossier.pd-kapitel .pd-lesefluss > *, .planetendossier.pd-kapitel .pd-lesefluss .pd-huelle > * { grid-column: 1 / -1 !important; grid-row: auto !important; margin: 0; }
+
+/* Werkzeugleiste */
+.planetendossier .pd-werkzeug { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .6rem 1rem; padding: 0 .2rem .2rem; }
+.planetendossier .pd-werkzeug p { margin: 0; color: var(--pd-leise); font: 500 .74rem/1.3 var(--pd-technik); letter-spacing: .14em; text-transform: uppercase; }
+.planetendossier .pd-werkzeug b { color: var(--pd-text); font-weight: 600; }
+.planetendossier .pd-werkzeug div { display: flex; flex-wrap: wrap; gap: .4rem; }
+.planetendossier .pd-werkzeug button { padding: .42rem .95rem; border: 1px solid var(--pd-linie-hell); border-radius: 999px; background: color-mix(in srgb, var(--pd-nacht) 50%, transparent); color: var(--pd-text); font: 500 .78rem/1.2 var(--pd-technik); letter-spacing: .03em; cursor: pointer; transition: border-color .2s, color .2s; }
+.planetendossier .pd-werkzeug button:hover { border-color: var(--pd-akzent); color: var(--pd-akzent); }
+
+/* Abschnitt: farbige Kante, Symbolkachel, Titel als Schalter */
+.planetendossier.pd-kapitel .pd-leseabschnitt {
+    scroll-margin-top: calc(var(--aporia-topbar-height, 78px) + 1.2rem);
+    border-color: color-mix(in srgb, var(--pd-thema) 24%, transparent);
+    background:
+        linear-gradient(120deg, color-mix(in srgb, var(--pd-thema) 10%, transparent), transparent 38%),
+        linear-gradient(160deg, var(--pd-glas-hell), var(--pd-glas));
+    box-shadow: inset 3px 0 0 color-mix(in srgb, var(--pd-thema) 75%, transparent), 0 .7rem 1.8rem rgba(0, 0, 0, .25);
+    transition: border-color .3s, transform .3s, box-shadow .3s;
+}
+.planetendossier.pd-kapitel .pd-leseabschnitt.pd-zu:hover { transform: translateY(-2px); border-color: color-mix(in srgb, var(--pd-thema) 50%, transparent); box-shadow: inset 3px 0 0 var(--pd-thema), 0 1rem 2.2rem rgba(0, 0, 0, .35), 0 0 0 1px color-mix(in srgb, var(--pd-thema) 18%, transparent); }
+.planetendossier.pd-kapitel .pd-leseabschnitt.pd-aktiv { border-color: color-mix(in srgb, var(--pd-thema) 45%, transparent); }
+.planetendossier.pd-kapitel .pd-leseabschnitt.pd-zu > :not(.pd-kopf, .pd-vorschau) { display: none !important; }
+.planetendossier.pd-kapitel .pd-leseabschnitt.pd-zu .pd-kopf:not(h2) > :not(h2):not(:has(h2)) { display: none !important; }
+.planetendossier.pd-kapitel .pd-leseabschnitt.pd-offen > .pd-vorschau { display: none; }
+.planetendossier.pd-kapitel .pd-leseabschnitt.pd-offen > :not(.pd-kopf) { animation: pd-aufklappen .45s cubic-bezier(.2, .7, .2, 1) both; }
+@keyframes pd-aufklappen { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: none; } }
+.planetendossier.pd-kapitel .pd-leseabschnitt.pd-offen > .pd-kopf { border-bottom: 1px solid var(--pd-linie); }
+.planetendossier.pd-kapitel .pd-leseabschnitt h2:has(> .pd-schalter) { display: block; max-width: none; width: 100%; margin: 0; padding: 0; border: 0; background: none; font: inherit; }
+.planetendossier.pd-kapitel .erde-wissen > header.pd-kopf { width: 100%; max-width: none; padding: .2rem .4rem .2rem 0; align-items: center; }
+.planetendossier.pd-kapitel .erde-wissen > header.pd-kopf .erde-kicker { margin: .7rem 0 0 1.1rem; }
+.planetendossier.pd-kapitel .erde-wissen > header.pd-kopf > :has(h2) { flex: 1 1 22rem; min-width: 0; }
+
+.planetendossier .pd-schalter { display: grid; grid-template-columns: auto auto minmax(0, 1fr) auto; align-items: center; gap: .85rem; width: 100%; padding: .85rem 1.1rem; border: 0; background: none; color: var(--pd-text); font: 300 clamp(1.18rem, 2cqi, 1.6rem)/1.2 var(--pd-schrift); text-align: left; cursor: pointer; }
+.planetendossier .pd-schalter:focus-visible { outline: 2px solid var(--pd-thema); outline-offset: -2px; border-radius: 14px; }
+.planetendossier .pd-symbol { display: grid; place-items: center; width: 3rem; height: 3rem; border: 1px solid color-mix(in srgb, var(--pd-thema) 50%, transparent); border-radius: 13px; background: radial-gradient(circle at 30% 25%, color-mix(in srgb, var(--pd-thema) 38%, transparent), color-mix(in srgb, var(--pd-thema) 7%, color-mix(in srgb, var(--pd-nacht) 70%, transparent)) 75%); color: var(--pd-thema); box-shadow: 0 0 20px color-mix(in srgb, var(--pd-thema) 22%, transparent), inset 0 1px 0 rgba(255, 255, 255, .08); transition: transform .3s; }
+.planetendossier .pd-symbol svg { width: 1.6rem; height: 1.6rem; }
+.planetendossier .pd-schalter:hover .pd-symbol { transform: scale(1.06) rotate(-3deg); }
+.planetendossier .pd-nr { flex: none; display: inline-grid; place-items: center; min-width: 2.1rem; padding: .32rem .4rem; border: 1px solid color-mix(in srgb, var(--pd-sand) 38%, transparent); border-radius: 7px; background: color-mix(in srgb, var(--pd-sand) 7%, transparent); color: var(--pd-sand); font: 600 .74rem/1 var(--pd-mono); letter-spacing: .06em; }
+.planetendossier .pd-pfeil { position: relative; width: 2.1rem; height: 2.1rem; border: 1px solid var(--pd-linie-hell); border-radius: 50%; color: var(--pd-thema); transition: transform .35s cubic-bezier(.2, .7, .2, 1), background .3s; }
+.planetendossier .pd-pfeil::before { content: ""; position: absolute; inset: 0; width: .5rem; height: .5rem; margin: auto; border-right: 1.6px solid currentColor; border-bottom: 1.6px solid currentColor; transform: translateY(-2px) rotate(45deg); }
+.planetendossier .pd-offen .pd-pfeil { transform: rotate(180deg); background: color-mix(in srgb, var(--pd-thema) 18%, transparent); }
+
+/* Vorschau im zugeklappten Zustand */
+.planetendossier.pd-kapitel .pd-leseabschnitt > .pd-vorschau, .planetendossier .pd-vorschau { display: grid; gap: .55rem; padding: 0 1.1rem 1rem calc(1.1rem + 3rem + .85rem); cursor: pointer; }
+.planetendossier .pd-vorschau p { display: -webkit-box; margin: 0; max-width: 72ch; overflow: hidden; color: var(--pd-leise); font-size: .93rem; line-height: 1.5; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+.planetendossier .pd-marken { display: flex; flex-wrap: wrap; gap: .35rem; }
+.planetendossier .pd-marken span { padding: .18rem .62rem; border: 1px solid color-mix(in srgb, var(--pd-thema) 35%, transparent); border-radius: 999px; background: color-mix(in srgb, var(--pd-thema) 7%, transparent); color: color-mix(in srgb, var(--pd-thema) 75%, #fff); font: 500 .7rem/1.35 var(--pd-technik); letter-spacing: .05em; }
+
+/* Lesbarkeit im offenen Abschnitt */
+.planetendossier.pd-kapitel .pd-leseabschnitt :is(p, li) { max-width: 75ch; }
+.planetendossier.pd-kapitel .pd-leseabschnitt p { line-height: 1.65; }
+.planetendossier.pd-kapitel .pd-leseabschnitt > dl { max-width: 48rem; }
+
+/* „Auf dieser Seite“ mit Symbolen und Leitlinie */
+.planetendossier.pd-kapitel .pd-leseleiste { display: block !important; padding: 1rem .7rem 1rem .5rem; }
+.planetendossier .pd-toc { --pd-toc-wert: 0; }
+.planetendossier .pd-toc-titel { margin: 0 0 .7rem .5rem; color: var(--pd-sand); font: 600 .68rem/1.2 var(--pd-technik); letter-spacing: .24em; text-transform: uppercase; }
+.planetendossier .pd-toc ol { position: relative; display: grid; gap: .15rem; margin: 0; padding: 0; list-style: none; }
+.planetendossier .pd-toc ol::before { content: ""; position: absolute; left: 1.35rem; top: 1rem; bottom: 1rem; width: 2px; border-radius: 2px; background: linear-gradient(var(--pd-akzent), var(--pd-ozean)) top / 100% calc(var(--pd-toc-wert) * 100%) no-repeat, var(--pd-linie); transition: background-size .4s; }
+.planetendossier.pd-kapitel .pd-toc a { display: grid; grid-template-columns: 2.1rem minmax(0, 1fr); gap: .6rem; align-items: center; padding: .34rem .5rem .34rem .3rem; border-radius: 10px; color: var(--pd-leise); font: 400 .88rem/1.25 var(--pd-schrift); text-decoration: none; transition: background .25s, color .25s; }
+.planetendossier.pd-kapitel .pd-toc a::before { display: none; }
+.planetendossier .pd-toc-symbol { position: relative; display: grid; place-items: center; width: 2.1rem; height: 2.1rem; border: 1px solid color-mix(in srgb, var(--pd-thema) 40%, transparent); border-radius: 50%; background: var(--pd-nacht); color: color-mix(in srgb, var(--pd-thema) 85%, transparent); transition: background .3s, color .3s, border-color .3s, box-shadow .3s; }
+.planetendossier .pd-toc-symbol svg { width: 1.05rem; height: 1.05rem; }
+.planetendossier .pd-toc a small { display: block; margin-bottom: .12rem; color: var(--pd-leise); font: 600 .6rem/1 var(--pd-mono); letter-spacing: .12em; opacity: .8; }
+.planetendossier .pd-toc a b { display: block; font-weight: 400; }
+.planetendossier.pd-kapitel .pd-toc a:hover { background: color-mix(in srgb, var(--pd-akzent) 7%, transparent); color: var(--pd-text); }
+.planetendossier .pd-toc a.ist-gelesen .pd-toc-symbol { border-color: var(--pd-thema); background: color-mix(in srgb, var(--pd-thema) 14%, var(--pd-nacht)); color: var(--pd-thema); }
+.planetendossier.pd-kapitel .pd-toc a[aria-current] { background: linear-gradient(90deg, color-mix(in srgb, var(--pd-thema) 18%, transparent), transparent); color: var(--pd-text); }
+.planetendossier .pd-toc a[aria-current] .pd-toc-symbol { border-color: var(--pd-thema); background: var(--pd-thema); color: var(--pd-nacht); box-shadow: 0 0 0 4px color-mix(in srgb, var(--pd-thema) 20%, transparent), 0 0 14px color-mix(in srgb, var(--pd-thema) 55%, transparent); }
+.planetendossier .pd-alle-kapitel { margin-top: 1rem; padding-top: .7rem; border-top: 1px solid var(--pd-linie); }
+.planetendossier .pd-alle-kapitel summary { padding: .35rem .5rem; color: var(--pd-sand); font: 600 .68rem/1.2 var(--pd-technik); letter-spacing: .24em; text-transform: uppercase; list-style: none; cursor: pointer; }
+.planetendossier .pd-alle-kapitel summary::-webkit-details-marker { display: none; }
+.planetendossier .pd-alle-kapitel summary::after { content: " ▾"; color: var(--pd-akzent); }
+.planetendossier .pd-alle-kapitel[open] summary::after { content: " ▴"; }
+
+/* Kopf: Umfang der Seite und Einstieg */
+.planetendossier .pd-lesemeta { display: flex; flex-wrap: wrap; align-items: center; gap: .45rem; margin: .5rem 0 0; }
+.planetendossier .pd-lesemeta span { padding: .28rem .7rem; border: 1px solid var(--pd-linie-hell); border-radius: 999px; background: color-mix(in srgb, var(--pd-nacht) 55%, transparent); backdrop-filter: blur(6px); color: var(--pd-text); font: 500 .74rem/1.3 var(--pd-technik); letter-spacing: .05em; }
+.planetendossier .pd-lesestart { margin-left: .2rem; padding: .34rem .9rem; border-radius: 999px; background: var(--pd-akzent); color: var(--pd-nacht) !important; font: 600 .78rem/1.3 var(--pd-technik); letter-spacing: .04em; text-decoration: none; transition: transform .2s, box-shadow .2s; }
+.planetendossier .pd-lesestart:hover { transform: translateY(-1px); box-shadow: 0 0 18px color-mix(in srgb, var(--pd-akzent) 45%, transparent); }
+
+/* Wissensdatenbank: Sprungleiste, gekürzte Karten */
+.planetendossier .pd-sprung { display: flex; flex-wrap: wrap; gap: .4rem; padding: .9rem 1.2rem .9rem; }
+.planetendossier .pd-sprung a { padding: .3rem .7rem; border: 1px solid var(--pd-linie); border-radius: 999px; background: color-mix(in srgb, var(--pd-nacht) 40%, transparent); color: var(--pd-leise) !important; font: 500 .74rem/1.2 var(--pd-technik); text-decoration: none; white-space: nowrap; transition: border-color .2s, color .2s; }
+.planetendossier .pd-sprung a:hover { border-color: var(--pd-akzent); color: var(--pd-text) !important; }
+.planetendossier .erde-fakt { scroll-margin-top: calc(var(--aporia-topbar-height, 78px) + 1.4rem); }
+.planetendossier .erde-fakt:target { border-color: var(--pd-akzent); box-shadow: 0 0 0 3px color-mix(in srgb, var(--pd-akzent) 20%, transparent); }
+.planetendossier .erde-fakt.pd-gekuerzt { position: relative; max-height: 34rem; }
+.planetendossier .erde-fakt.pd-gekuerzt::after { content: ""; position: absolute; inset: auto 0 0; height: 7rem; background: linear-gradient(transparent, rgba(6, 16, 19, .97) 72%); pointer-events: none; }
+.planetendossier .erde-fakt.pd-kurz-offen { max-height: none; }
+.planetendossier .erde-fakt.pd-kurz-offen::after { display: none; }
+.planetendossier .pd-mehr { position: absolute; left: 1rem; bottom: .9rem; z-index: 1; padding: .4rem .9rem; border: 1px solid var(--pd-linie-hell); border-radius: 999px; background: color-mix(in srgb, var(--pd-nacht) 85%, transparent); color: var(--pd-akzent); font: 600 .76rem/1.2 var(--pd-technik); letter-spacing: .04em; cursor: pointer; }
+.planetendossier .pd-mehr:hover { border-color: var(--pd-akzent); }
+.planetendossier .pd-kurz-offen .pd-mehr { position: static; justify-self: start; margin-top: .3rem; }
+
+@media (max-width: 760px) {
+    .planetendossier .pd-schalter { gap: .6rem; padding: .75rem .8rem; font-size: 1.1rem; }
+    .planetendossier .pd-symbol { width: 2.5rem; height: 2.5rem; border-radius: 11px; }
+    .planetendossier .pd-symbol svg { width: 1.35rem; height: 1.35rem; }
+    .planetendossier .pd-nr { display: none; }
+    .planetendossier .pd-schalter { grid-template-columns: auto minmax(0, 1fr) auto; }
+    .planetendossier.pd-kapitel .pd-leseabschnitt > .pd-vorschau { padding: 0 .9rem .9rem; }
+    .planetendossier .pd-toc ol { grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr)); }
+    .planetendossier .pd-toc ol::before { display: none; }
+    .planetendossier .pd-alle-kapitel[open] { display: grid; grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr)); }
+    .planetendossier .pd-alle-kapitel summary { grid-column: 1 / -1; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .planetendossier.pd-kapitel .pd-leseabschnitt.pd-offen > :not(.pd-kopf) { animation: none; }
+}
+
+
+/* =====================================================================
+   Gebaute Kapitelseiten (scripts/planeten/kapitel-bauen.mjs) – Grundaufbau und Grafikbausteine
+   Farben kommen aus den --pd-* Werten des Himmelskörpers (dossier-farben.css)
+   ===================================================================== */
+.planetendossier.pd-gebaut .astro-layout { display: grid; align-items: start; }
+.planetendossier.pd-gebaut .astro-chapters { display: grid; align-content: start; }
+.planetendossier.pd-gebaut .astro-chapters > a { color: var(--pd-text); }
+.planetendossier.pd-gebaut .earth-hero .nature-hero-image img { object-position: center 40%; }
+.planetendossier .pd-g-inhalt { display: grid; gap: 1rem; padding: 1.1rem 1.3rem 1.3rem; }
+.planetendossier .pd-g-inhalt > p { margin: 0; color: #e2dcd2; }
+.planetendossier .pd-g-hinweis { color: var(--pd-leise) !important; font-size: .82rem; font-style: italic; }
+.planetendossier .pd-g-bild { position: relative; margin: 0; overflow: hidden; border: 1px solid var(--pd-linie); border-radius: 14px; }
+.planetendossier .pd-g-bild img { display: block; width: 100%; max-height: 22rem; object-fit: cover; object-position: center 45%; }
+.planetendossier .pd-g-bild figcaption { position: absolute; inset: auto 0 0; padding: 1.6rem 1rem .6rem; background: linear-gradient(0deg, rgba(0, 0, 0, .8), transparent); color: var(--pd-text); font-size: .82rem; }
+.planetendossier .pd-g-daten { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 17rem), 1fr)); gap: .1rem 1.4rem; max-width: none !important; margin: 0; }
+.planetendossier .pd-g-daten div { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); gap: .6rem; padding: .45rem 0; border-bottom: 1px solid var(--pd-linie); }
+.planetendossier .pd-g-daten dt { color: var(--pd-leise); }
+.planetendossier .pd-g-daten dd { margin: 0; color: var(--pd-text); }
+.planetendossier .pd-g-liste { display: grid; gap: .4rem; margin: 0; padding-left: 1.2rem; }
+.planetendossier .pd-g-liste li::marker { color: var(--pd-akzent); }
+.planetendossier .pd-g-verweise { display: flex; flex-wrap: wrap; gap: .5rem; margin: 0; }
+.planetendossier .pd-g-verweise a { padding: .4rem .9rem; border: 1px solid var(--pd-linie-hell); border-radius: 999px; color: var(--pd-akzent); text-decoration: none; }
+.planetendossier .pd-g-verweise a:hover { border-color: var(--pd-akzent); }
+
+/* Farbfolge für Anteile, Schichten und Bereiche (aus der Farbwelt des Himmelskörpers abgeleitet) */
+.planetendossier :is(.pd-g-balken, .pd-g-schichten, .pd-g-skala) [style*="--i:0"] { --f: var(--pd-akzent); }
+.planetendossier :is(.pd-g-balken, .pd-g-schichten, .pd-g-skala) [style*="--i:1"] { --f: var(--pd-sand); }
+.planetendossier :is(.pd-g-balken, .pd-g-schichten, .pd-g-skala) [style*="--i:2"] { --f: var(--pd-moos); }
+.planetendossier :is(.pd-g-balken, .pd-g-schichten, .pd-g-skala) [style*="--i:3"] { --f: var(--pd-ozean); }
+.planetendossier :is(.pd-g-balken, .pd-g-schichten, .pd-g-skala) [style*="--i:4"] { --f: color-mix(in srgb, var(--pd-akzent) 50%, var(--pd-nacht)); }
+.planetendossier :is(.pd-g-balken, .pd-g-schichten, .pd-g-skala) [style*="--i:5"] { --f: color-mix(in srgb, var(--pd-sand) 45%, var(--pd-nacht)); }
+.planetendossier :is(.pd-g-balken, .pd-g-schichten, .pd-g-skala) [style*="--i:6"] { --f: color-mix(in srgb, var(--pd-moos) 45%, var(--pd-nacht)); }
+.planetendossier :is(.pd-g-balken, .pd-g-schichten, .pd-g-skala) [style*="--i:7"] { --f: color-mix(in srgb, var(--pd-ozean) 45%, var(--pd-nacht)); }
+
+/* Anteilsbalken */
+.planetendossier .pd-g-balken-leiste { display: flex; height: 1.1rem; overflow: hidden; border: 1px solid var(--pd-linie); border-radius: 999px; background: rgba(0, 0, 0, .3); }
+.planetendossier .pd-g-balken-leiste i { flex: 0 0 var(--anteil); background: var(--f); box-shadow: inset -1px 0 0 rgba(0, 0, 0, .35); transform-origin: left; animation: pd-g-wachsen 1.2s cubic-bezier(.2, .7, .2, 1) both; animation-delay: calc(var(--i) * .12s); }
+@keyframes pd-g-wachsen { from { transform: scaleX(0); } }
+.planetendossier .pd-g-balken ul { display: flex; flex-wrap: wrap; gap: .4rem 1.2rem; margin: .7rem 0 0; padding: 0; list-style: none; }
+.planetendossier .pd-g-balken li { display: flex; align-items: center; gap: .45rem; color: var(--pd-leise); font-size: .88rem; }
+.planetendossier .pd-g-balken li::before { content: ""; width: .7rem; height: .7rem; border-radius: 3px; background: var(--f); }
+.planetendossier .pd-g-balken li b { color: var(--pd-text); font: 600 .86rem/1 var(--pd-mono); }
+
+/* Schalenaufbau */
+.planetendossier .pd-g-schichten { display: grid; grid-template-columns: minmax(9rem, 14rem) minmax(0, 1fr); align-items: center; gap: 1.4rem; }
+.planetendossier .pd-g-schichten svg { width: 100%; filter: drop-shadow(0 0 22px color-mix(in srgb, var(--pd-akzent) 30%, transparent)); }
+.planetendossier .pd-g-ringe circle { fill: var(--f); stroke: rgba(0, 0, 0, .45); stroke-width: .8; }
+.planetendossier .pd-g-schnitt { fill: rgba(0, 0, 0, .28); stroke: rgba(255, 255, 255, .25); stroke-width: .8; }
+.planetendossier .pd-g-schichten ol { display: grid; gap: .55rem; margin: 0; padding: 0; list-style: none; }
+.planetendossier .pd-g-schichten li { display: grid; grid-template-columns: .8rem minmax(8rem, 12rem) minmax(0, 1fr); gap: .7rem; align-items: baseline; }
+.planetendossier .pd-g-schichten li::before { content: ""; width: .8rem; height: .8rem; border-radius: 50%; background: var(--f); transform: translateY(.1rem); }
+.planetendossier .pd-g-schichten li b { color: var(--pd-text); font-weight: 500; }
+.planetendossier .pd-g-schichten li span { color: var(--pd-leise); font-size: .92rem; }
+
+/* Zeitleiste */
+.planetendossier .pd-g-zeitleiste { position: relative; display: grid; gap: .2rem; margin: 0; padding: 0; list-style: none; }
+.planetendossier .pd-g-zeitleiste::before { content: ""; position: absolute; left: 1.05rem; top: .8rem; bottom: .8rem; width: 2px; background: linear-gradient(var(--pd-akzent), var(--pd-sand), var(--pd-ozean)); opacity: .6; }
+.planetendossier .pd-g-zeitleiste li { position: relative; display: grid; grid-template-columns: 2.1rem minmax(0, 1fr); gap: .8rem; align-items: start; padding: .35rem 0; }
+.planetendossier .pd-g-punkt { display: grid; place-items: center; width: 2.1rem; height: 2.1rem; border: 1px solid var(--pd-akzent); border-radius: 50%; background: var(--pd-nacht); color: var(--pd-akzent); font: 600 .68rem/1 var(--pd-mono); }
+.planetendossier .pd-g-zeitleiste b { display: block; padding-top: .35rem; color: var(--pd-text); font-weight: 500; }
+.planetendossier .pd-g-zeitleiste p { margin: .2rem 0 0; color: var(--pd-leise); font-size: .92rem; }
+
+/* Werteskala */
+.planetendossier .pd-g-skala-band { position: relative; height: calc(var(--n, 1) * .95rem + .5rem); border: 1px solid var(--pd-linie); border-radius: 12px; background: linear-gradient(90deg, #3d6c8f, #c9a35a 45%, #e0662f 75%, #fff2c4); overflow: hidden; }
+.planetendossier .pd-g-skala-band span { position: absolute; top: calc(var(--i) * .95rem + .3rem); height: .7rem; left: var(--von); width: calc(var(--bis) - var(--von)); border: 1.5px solid var(--f); border-radius: 999px; background: color-mix(in srgb, var(--f) 35%, transparent); box-shadow: 0 0 10px color-mix(in srgb, var(--f) 60%, transparent); }
+.planetendossier .pd-g-skala-achse { display: flex; justify-content: space-between; margin-top: .35rem; color: var(--pd-leise); font: 500 .74rem/1 var(--pd-mono); }
+.planetendossier .pd-g-skala ul { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 19rem), 1fr)); gap: .4rem 1rem; margin: .8rem 0 0; padding: 0; list-style: none; }
+.planetendossier .pd-g-skala li { display: grid; grid-template-columns: .7rem auto 1fr; gap: .5rem; align-items: baseline; font-size: .9rem; }
+.planetendossier .pd-g-skala li i { width: .7rem; height: .7rem; border-radius: 50%; background: var(--f); }
+.planetendossier .pd-g-skala li b { color: var(--pd-text); font-weight: 500; }
+.planetendossier .pd-g-skala li span { color: var(--pd-leise); font-family: var(--pd-mono); font-size: .8rem; text-align: right; white-space: nowrap; }
+
+/* Karten mit Symbolen */
+.planetendossier .pd-g-karten { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr)); gap: .8rem; }
+.planetendossier .pd-g-karte { display: grid; align-content: start; gap: .45rem; padding: .9rem 1rem 1rem; border: 1px solid color-mix(in srgb, var(--pd-thema) 25%, transparent); border-radius: 14px; background: linear-gradient(150deg, color-mix(in srgb, var(--pd-thema) 9%, transparent), rgba(0, 0, 0, .15)); transition: transform .25s, border-color .25s; }
+.planetendossier .pd-g-karte:hover { transform: translateY(-2px); border-color: color-mix(in srgb, var(--pd-thema) 55%, transparent); }
+.planetendossier .pd-g-karte-symbol { display: grid; place-items: center; width: 2.4rem; height: 2.4rem; border: 1px solid color-mix(in srgb, var(--pd-thema) 45%, transparent); border-radius: 10px; color: var(--pd-thema); background: color-mix(in srgb, var(--pd-thema) 12%, transparent); }
+.planetendossier .pd-g-karte-symbol svg { width: 1.3rem; height: 1.3rem; }
+.planetendossier .pd-g-karte h3 { margin: 0; color: var(--pd-text) !important; font: 500 1rem/1.3 var(--pd-schrift) !important; letter-spacing: 0 !important; }
+.planetendossier .pd-g-karte p { margin: 0; color: var(--pd-leise); font-size: .9rem; line-height: 1.5; }
+
+@media (max-width: 760px) {
+    .planetendossier .pd-g-schichten { grid-template-columns: minmax(0, 1fr); }
+    .planetendossier .pd-g-schichten svg { max-width: 13rem; justify-self: center; }
+    .planetendossier .pd-g-schichten li { grid-template-columns: .8rem minmax(0, 1fr); }
+    .planetendossier .pd-g-schichten li span { grid-column: 2; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .planetendossier .pd-g-balken-leiste i { animation: none; }
+}
+
+/* Vergleich mit einem anderen Himmelskörper (Doppelbalken) */
+.planetendossier .pd-g-vergleich-legende { display: flex; gap: 1.2rem; margin: 0 0 .7rem; font-size: .85rem; color: var(--pd-leise); }
+.planetendossier .pd-g-vergleich-legende span::before { content: ""; display: inline-block; width: .7rem; height: .7rem; margin-right: .4rem; border-radius: 3px; vertical-align: -.05rem; }
+.planetendossier .pd-g-vergleich-legende .pd-g-hier::before { background: var(--pd-akzent); }
+.planetendossier .pd-g-vergleich-legende .pd-g-dort::before { background: var(--pd-ozean); }
+.planetendossier .pd-g-vergleich ul { display: grid; gap: .75rem; margin: 0; padding: 0; list-style: none; }
+.planetendossier .pd-g-vergleich li { display: grid; grid-template-columns: minmax(8rem, 12rem) minmax(0, 1fr); gap: .9rem; align-items: center; }
+.planetendossier .pd-g-vergleich-name { color: var(--pd-text); font-size: .92rem; }
+.planetendossier .pd-g-vergleich-balken { display: grid; gap: .25rem; }
+.planetendossier .pd-g-vergleich-balken i { position: relative; display: block; width: max(var(--w), 2px); height: 1.15rem; border-radius: 0 6px 6px 0; transform-origin: left; animation: pd-g-wachsen 1.1s cubic-bezier(.2, .7, .2, 1) both; }
+.planetendossier .pd-g-vergleich-balken .pd-g-hier { background: linear-gradient(90deg, color-mix(in srgb, var(--pd-akzent) 55%, transparent), var(--pd-akzent)); }
+.planetendossier .pd-g-vergleich-balken .pd-g-dort { background: linear-gradient(90deg, color-mix(in srgb, var(--pd-ozean) 45%, transparent), var(--pd-ozean)); animation-delay: .15s; }
+.planetendossier .pd-g-vergleich-balken b { position: absolute; left: calc(100% + .5rem); top: 50%; translate: 0 -50%; white-space: nowrap; color: var(--pd-text); font: 600 .78rem/1 var(--pd-mono); }
+.planetendossier .pd-g-vergleich-balken { padding-right: 7rem; }
+@media (max-width: 760px) { .planetendossier .pd-g-vergleich li { grid-template-columns: minmax(0, 1fr); gap: .3rem; } }

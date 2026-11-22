@@ -1,0 +1,526 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Pell",
+  "genitiv": "von Pell",
+  "dossierName": "Pell-Dossier",
+  "klasse": "Mond",
+  "intro": "Pell ist ein kleiner, dunkler Mond auf enger Bahn, der als schneller Punkt über den Nachthimmel zieht. Pell umkreist Nhalora in 4,5 Tage.",
+  "globusDaten": {
+    "planet": "helyx-der-lebende-mond",
+    "klasse": "Gestein",
+    "radius": 160000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=nhalora-stern&objekt=nhalora-pell",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-0D3CC571B8"
+    ],
+    [
+      "Typ",
+      "Mond"
+    ],
+    [
+      "Sternsystem",
+      "Velhar-System"
+    ],
+    [
+      "Zentralkörper",
+      "Nhalora"
+    ],
+    [
+      "Große Halbachse",
+      "118.852 km"
+    ],
+    [
+      "Umlaufzeit",
+      "4,5 Tage"
+    ],
+    [
+      "Durchmesser",
+      "320 km"
+    ],
+    [
+      "Masse",
+      "1,19 · 10^20 kg"
+    ],
+    [
+      "Schwerkraft",
+      "0,03 g"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -11 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Velhar-System"
+    ],
+    [
+      "Zentralstern",
+      "Velhar",
+      "inhalte/himmelskoerper/sterne/details/gelbweier-stern-hinter-dunkler-kohlenstoffwolke/hauptseite/index.html"
+    ],
+    [
+      "Umläuft",
+      "Nhalora",
+      "inhalte/himmelskoerper/planeten/details/planet-der-blauen-binnenmeere/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "118.852 km"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Pell im Velhar-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=nhalora-stern&objekt=nhalora-pell",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Velhar",
+      "href": "inhalte/himmelskoerper/sterne/details/gelbweier-stern-hinter-dunkler-kohlenstoffwolke/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◍",
+      "art": "Mutterplanet",
+      "titel": "Nhalora",
+      "href": "inhalte/himmelskoerper/planeten/details/planet-der-blauen-binnenmeere/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Symbionten",
+      "titel": "Nhalora",
+      "href": "inhalte/himmelskoerper/planeten/details/planet-der-blauen-binnenmeere/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Symbionten",
+      "href": "inhalte/spezies/Biologische Spezies/Symbionten/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Velhar-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=nhalora-stern&objekt=nhalora-pell"
+    },
+    {
+      "titel": "Speziesdossier Symbionten",
+      "href": "inhalte/spezies/Biologische Spezies/Symbionten/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#060606",
+      "tiefe": "#0e0d0c",
+      "akzent": "#aca5a2",
+      "sand": "#b3a795",
+      "moos": "#8c987f",
+      "ozean": "#70838d",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#393532"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Astronomie"
+      ],
+      [
+        "Planet",
+        "Mutterplanet"
+      ],
+      [
+        "Kräfte",
+        "Gezeiten"
+      ],
+      [
+        "Tiefe",
+        "Geologie"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Mutterplanet": {
+      "gruppe": "Wissenschaft",
+      "icon": "◐",
+      "intro": "Mutterplanet von Pell.",
+      "abschnitte": [
+        {
+          "titel": "Nhalora",
+          "text": [
+            "Nhalora ist die warme, feuchte Heimatwelt der Symbionten mit ausgedehnten Feuchtgebieten, flachen Gewässern und dicht bewachsenen Ufern."
+          ],
+          "daten": [
+            [
+              "Typ",
+              "Gesteinsplanet"
+            ],
+            [
+              "Durchmesser",
+              "13.252 km"
+            ],
+            [
+              "Abstand des Mondes",
+              "118.852 km (17,9 Planetenradien)"
+            ]
+          ],
+          "verweise": [
+            [
+              "Nhalora",
+              "inhalte/himmelskoerper/planeten/details/planet-der-blauen-binnenmeere/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Weitere Monde von Nhalora",
+          "liste": [
+            "Orra – Umlauf in 20 Tage"
+          ],
+          "verweise": [
+            [
+              "Orra",
+              "inhalte/himmelskoerper/monde/details/gorveth-der-lebende-mond/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Gezeiten": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gezeiten von Pell.",
+      "abschnitte": [
+        {
+          "titel": "Gezeitenkräfte",
+          "text": [
+            "Auf seiner Bahn in 118.852 km Abstand wirken starke Gezeitenkräfte von Nhalora auf Pell."
+          ]
+        }
+      ]
+    },
+    "Gebundene Rotation": {
+      "gruppe": "Wissenschaft",
+      "icon": "↻",
+      "intro": "Gebundene Rotation von Pell.",
+      "abschnitte": [
+        {
+          "titel": "Rotation",
+          "text": [
+            "Pell wendet Nhalora vermutlich stets dieselbe Seite zu: Ein Tag dauert so lange wie ein Umlauf – 4,5 Tage."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Pell auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Pell",
+          "text": [
+            "Pell ist ein kleiner, dunkler Mond auf enger Bahn, der als schneller Punkt über den Nachthimmel zieht.",
+            "Pell umkreist Nhalora in 4,5 Tage."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Mond"
+            ],
+            [
+              "Sternsystem",
+              "Velhar-System"
+            ],
+            [
+              "Zentralkörper",
+              "Nhalora"
+            ],
+            [
+              "Große Halbachse",
+              "118.852 km"
+            ],
+            [
+              "Umlaufzeit",
+              "4,5 Tage"
+            ],
+            [
+              "Durchmesser",
+              "320 km"
+            ],
+            [
+              "Masse",
+              "1,19 · 10^20 kg"
+            ],
+            [
+              "Schwerkraft",
+              "0,03 g"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -11 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Nhalora",
+          "text": [
+            "Das Velhar-System ist die Heimat der Symbionten: Ihr Planet Nhalora umkreist Velhar, und Pell ist einer seiner Monde."
+          ],
+          "verweise": [
+            [
+              "Nhalora",
+              "inhalte/himmelskoerper/planeten/details/planet-der-blauen-binnenmeere/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Symbionten",
+              "inhalte/spezies/Biologische Spezies/Symbionten/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Pell im Velhar-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Nhalora"
+            ],
+            [
+              "Große Halbachse",
+              "118.852 km"
+            ],
+            [
+              "Exzentrizität",
+              "0,01"
+            ],
+            [
+              "Bahnneigung",
+              "1°"
+            ],
+            [
+              "Umlaufzeit",
+              "4,5 Tage"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Velhar · Stern",
+              "Gelber Zwerg (G5 V)"
+            ],
+            [
+              "Velhar I · 0,42 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Nhalora · 0,95 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Velhar III · 3,6 AE",
+              "Gasriese"
+            ],
+            [
+              "Velhar IV · 9,4 AE",
+              "Eisriese"
+            ],
+            [
+              "Sporengürtel · 1,7–2,5 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 36–52 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Velhar",
+              "inhalte/himmelskoerper/sterne/details/gelbweier-stern-hinter-dunkler-kohlenstoffwolke/hauptseite/index.html"
+            ],
+            [
+              "Velhar I",
+              "inhalte/himmelskoerper/planeten/details/narbenplanet-mit-freigelegtem-metallkern/hauptseite/index.html"
+            ],
+            [
+              "Nhalora",
+              "inhalte/himmelskoerper/planeten/details/planet-der-blauen-binnenmeere/hauptseite/index.html"
+            ],
+            [
+              "Velhar III",
+              "inhalte/himmelskoerper/planeten/details/bronzener-gasriese-auf-rucklaufiger-bahn/hauptseite/index.html"
+            ],
+            [
+              "Velhar IV",
+              "inhalte/himmelskoerper/planeten/details/blaugruner-eisriese-im-all/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Pell.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "160 km"
+            ],
+            [
+              "Masse",
+              "1,19 · 10^20 kg"
+            ],
+            [
+              "Mittlere Dichte",
+              "6,96 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "0,31 m/s² (0,032 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "0,32 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Pell.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Pell ist geologisch weitgehend erstarrt; Einschläge haben seine Oberfläche geformt."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Pell.",
+      "abschnitte": [
+        {
+          "titel": "Gashülle",
+          "text": [
+            "Pell besitzt keine nennenswerte Atmosphäre – dafür ist die Schwerkraft zu gering."
+          ]
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Pell.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 0,95 AE Abstand zu Velhar liegt die Gleichgewichtstemperatur von Pell bei rund -11 °C – gemäßigt."
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Pell.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Pell entstand zusammen mit dem Velhar-System vor rund 4,9 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Pell.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Ist der Mond eingefangen oder mit seinem Planeten entstanden?",
+            "Welche Spuren tragen seine ältesten Krater?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Pell ist mit allen Bahndaten im Velhar-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=nhalora-stern&objekt=nhalora-pell"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Pell.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Pell ist ein kleiner, dunkler Mond auf enger Bahn, der als schneller Punkt über den Nachthimmel zieht."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Pell.",
+      "abschnitte": [
+        {
+          "titel": "Pell – Archivbild",
+          "bild": true,
+          "bildtext": "Pell"
+        }
+      ]
+    }
+  }
+}

@@ -552,7 +552,8 @@ build("inhalte/himmelskoerper/orvaya.html", "planeten", false, "orvaya", {
     preserveNotes: true,
     folder: "inhalte/himmelskoerper/planeten/details/orvaya",
     art: registeredArtwork("home.panorama.orvaya"),
-    related: [["inhalte/spezies/Biologische Spezies/WaldFeen/hauptseite/Spezies.html", "Zum Dossier der Waldfeen"]],
+    related: [["inhalte/himmelskoerper/planeten/details/orvaya/hauptseite/index.html", "Zum Planetendossier Orvaya"],
+        ["inhalte/spezies/Biologische Spezies/WaldFeen/hauptseite/Spezies.html", "Zum Dossier der Waldfeen"]],
     data: {
         name: "Orvaya", status: "Festgelegte Weltenbaudaten",
         intro: "Orvaya ist die Heimat der Waldfeen. In ihren wichtigsten Siedlungsregionen prägen milde Temperaturen, Wälder und Nebel das Landschaftsbild.",

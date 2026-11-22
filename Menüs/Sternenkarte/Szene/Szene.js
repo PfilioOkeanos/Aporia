@@ -1,7 +1,7 @@
 
 import { kreisPunkte, sammleUmlaufbahnen } from "../Sternsysteme/Umlaufbahnen.js";
 import { bahnPunkte, positionVon } from "../Sternsysteme/Bahnphysik.js";
-import { sammleAsteroiden } from "../Sternsysteme/Asteroidenguertel.js";
+import { sammleAsteroiden, sichtbarerSteinRadius } from "../Sternsysteme/Asteroidenguertel.js";
 import { formePunkt, objektform } from "./Objektformen.js";
 import { starteObjektbewegung } from "./Objektbewegung.js";
 
@@ -197,9 +197,11 @@ export function starteSzene(canvas, reset, status, zeichneNavigation, editor, ka
             gl.vertexAttribPointer(point, 3, gl.FLOAT, false, 0, 0);
             gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, steinIndex);
             gl.uniform1f(uniforms.Emission, 0);
-            for (const { position, radius, farbe } of steine) {
-                gl.uniform3fv(uniforms.Center, relativ(position));
-                gl.uniform1f(uniforms.Radius, radius);
+            for (const brocken of steine) {
+                const { position, farbe } = brocken;
+                const nah = relativ(position);
+                gl.uniform3fv(uniforms.Center, nah);
+                gl.uniform1f(uniforms.Radius, sichtbarerSteinRadius(brocken, Math.hypot(...nah), height));
                 gl.uniform3fv(uniforms.Color, farbe);
                 gl.drawElements(gl.TRIANGLES, stein.indices.length, gl.UNSIGNED_SHORT, 0);
             }

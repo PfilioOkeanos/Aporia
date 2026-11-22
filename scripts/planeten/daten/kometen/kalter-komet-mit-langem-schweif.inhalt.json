@@ -1,0 +1,511 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Erzkomet",
+  "genitiv": "von Erzkomet",
+  "dossierName": "Erzkomet-Dossier",
+  "klasse": "Komet",
+  "intro": "Ein Komet mit ungewöhnlich hohem Metallanteil, vermutlich ein Trümmerstück, das Ashkor B ins innere System gelenkt hat. Erzkomet umkreist Ashkor in 9 AE Abstand und braucht für einen Umlauf 32,3 Jahre.",
+  "globusDaten": {
+    "planet": "kalter-komet-mit-langem-schweif",
+    "klasse": "Eis",
+    "radius": 5000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=ferrum-stern&objekt=ferrum-erzkomet",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-8FA95A6202"
+    ],
+    [
+      "Typ",
+      "Komet"
+    ],
+    [
+      "Sternsystem",
+      "Ferrum-System"
+    ],
+    [
+      "Zentralkörper",
+      "Ashkor"
+    ],
+    [
+      "Große Halbachse",
+      "9 AE"
+    ],
+    [
+      "Umlaufzeit",
+      "32,3 Jahre"
+    ],
+    [
+      "Durchmesser",
+      "10 km"
+    ],
+    [
+      "Masse",
+      "3,14 · 10^14 kg"
+    ],
+    [
+      "Schwerkraft",
+      "0,08 cm/s²"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -215 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Ferrum-System"
+    ],
+    [
+      "Zentralstern",
+      "Ashkor",
+      "inhalte/himmelskoerper/sterne/details/kompakter-orangefarbener-red-clump-stern/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "9 AE"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Erzkomet im Ferrum-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=ferrum-stern&objekt=ferrum-erzkomet",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Ashkor",
+      "href": "inhalte/himmelskoerper/sterne/details/kompakter-orangefarbener-red-clump-stern/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Syntheten",
+      "titel": "Ferrum Prime",
+      "href": "inhalte/himmelskoerper/planeten/details/rostiger-eisenplanet-mit-freiliegendem-metallkern/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Syntheten",
+      "href": "inhalte/spezies/Technologische Lebensformen/Syntheten/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Ferrum-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=ferrum-stern&objekt=ferrum-erzkomet"
+    },
+    {
+      "titel": "Speziesdossier Syntheten",
+      "href": "inhalte/spezies/Technologische Lebensformen/Syntheten/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#090706",
+      "tiefe": "#14100d",
+      "akzent": "#cdb6a9",
+      "sand": "#d1b599",
+      "moos": "#abab85",
+      "ozean": "#899495",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#504037"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Umlaufbahn"
+      ],
+      [
+        "Hülle",
+        "Schweif"
+      ],
+      [
+        "Hülle",
+        "Koma"
+      ],
+      [
+        "Kern",
+        "Kern"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Kern": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Kern von Erzkomet.",
+      "abschnitte": [
+        {
+          "titel": "Kometenkern",
+          "text": [
+            "Der Kern von Erzkomet misst rund 10 km und besteht aus einem lockeren Gemenge aus Eis, Staub und Gestein."
+          ],
+          "schichten": [
+            [
+              "Staubkruste",
+              "Dunkle, kohlenstoffreiche Oberfläche"
+            ],
+            [
+              "Eis-Staub-Gemisch",
+              "Wassereis, Kohlendioxid und Staub"
+            ],
+            [
+              "Kern",
+              "Lockeres Eis-Gestein-Gemenge"
+            ]
+          ]
+        }
+      ]
+    },
+    "Koma": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Koma von Erzkomet.",
+      "abschnitte": [
+        {
+          "titel": "Koma",
+          "text": [
+            "Nähert sich Erzkomet dem Stern Ashkor, verdampft Eis und bildet eine leuchtende Gashülle um den Kern."
+          ]
+        }
+      ]
+    },
+    "Schweif": {
+      "gruppe": "Natur",
+      "icon": "☄",
+      "intro": "Schweif von Erzkomet.",
+      "abschnitte": [
+        {
+          "titel": "Schweif",
+          "text": [
+            "Ein Komet mit ungewöhnlich hohem Metallanteil, vermutlich ein Trümmerstück, das Ashkor B ins innere System gelenkt hat."
+          ]
+        }
+      ]
+    },
+    "Umlaufbahn": {
+      "gruppe": "Wissenschaft",
+      "icon": "◌",
+      "intro": "Umlaufbahn von Erzkomet.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Ashkor"
+            ],
+            [
+              "Große Halbachse",
+              "9 AE (1.346,4 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,9"
+            ],
+            [
+              "Bahnneigung",
+              "22°"
+            ],
+            [
+              "Umlaufzeit",
+              "32,3 Jahre"
+            ],
+            [
+              "Einstrahlung",
+              "0,002-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Sternnächster und fernster Punkt",
+          "daten": [
+            [
+              "Perihel",
+              "0,9 AE"
+            ],
+            [
+              "Aphel",
+              "17,1 AE"
+            ]
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Erzkomet auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Erzkomet",
+          "text": [
+            "Ein Komet mit ungewöhnlich hohem Metallanteil, vermutlich ein Trümmerstück, das Ashkor B ins innere System gelenkt hat.",
+            "Erzkomet umkreist Ashkor in 9 AE Abstand und braucht für einen Umlauf 32,3 Jahre."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Komet"
+            ],
+            [
+              "Sternsystem",
+              "Ferrum-System"
+            ],
+            [
+              "Zentralkörper",
+              "Ashkor"
+            ],
+            [
+              "Große Halbachse",
+              "9 AE"
+            ],
+            [
+              "Umlaufzeit",
+              "32,3 Jahre"
+            ],
+            [
+              "Durchmesser",
+              "10 km"
+            ],
+            [
+              "Masse",
+              "3,14 · 10^14 kg"
+            ],
+            [
+              "Schwerkraft",
+              "0,08 cm/s²"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -215 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Ferrum Prime",
+          "text": [
+            "Das Ferrum-System ist die Heimat der Syntheten: Ihr Planet Ferrum Prime umkreist Ashkor."
+          ],
+          "verweise": [
+            [
+              "Ferrum Prime",
+              "inhalte/himmelskoerper/planeten/details/rostiger-eisenplanet-mit-freiliegendem-metallkern/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Syntheten",
+              "inhalte/spezies/Technologische Lebensformen/Syntheten/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Erzkomet im Ferrum-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Ashkor"
+            ],
+            [
+              "Große Halbachse",
+              "9 AE (1.346,4 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,9"
+            ],
+            [
+              "Bahnneigung",
+              "22°"
+            ],
+            [
+              "Umlaufzeit",
+              "32,3 Jahre"
+            ],
+            [
+              "Einstrahlung",
+              "0,002-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Ashkor · Stern",
+              "Orangefarbener Zwerg (K5 V)"
+            ],
+            [
+              "Ferrum Prime · 0,45 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Ashkor II · 0,92 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Ashkor III · 4,1 AE",
+              "Gasriese"
+            ],
+            [
+              "Ashkor B · 85 AE",
+              "Brauner Zwerg"
+            ],
+            [
+              "Trümmerband · 1,3–2,8 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Staubschleier · 12–24 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Ashkor",
+              "inhalte/himmelskoerper/sterne/details/kompakter-orangefarbener-red-clump-stern/hauptseite/index.html"
+            ],
+            [
+              "Ferrum Prime",
+              "inhalte/himmelskoerper/planeten/details/rostiger-eisenplanet-mit-freiliegendem-metallkern/hauptseite/index.html"
+            ],
+            [
+              "Ashkor II",
+              "inhalte/himmelskoerper/planeten/details/gefrorener-planet-unter-kaltem-sternenlicht/hauptseite/index.html"
+            ],
+            [
+              "Ashkor III",
+              "inhalte/himmelskoerper/planeten/details/metallischer-gasriese-in-bronze-und-gold/hauptseite/index.html"
+            ],
+            [
+              "Ashkor B",
+              "inhalte/himmelskoerper/sterne/details/alter-brauner-zwerg-im-tiefen-all/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Erzkomet.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "5 km"
+            ],
+            [
+              "Masse",
+              "3,14 · 10^14 kg"
+            ],
+            [
+              "Mittlere Dichte",
+              "0,6 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "0 m/s² (0 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "0 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Erzkomet.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Erzkomet stammt aus den kalten Außenbereichen des Ferrum-Systems und wurde auf seine heutige, langgestreckte Bahn gelenkt."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Erzkomet.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Was steckt hinter den Besonderheiten von Erzkomet?",
+            "Woher stammt der Komet genau?",
+            "Wie lange übersteht sein Kern noch die Annäherungen an den Stern?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Erzkomet ist mit allen Bahndaten im Ferrum-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=ferrum-stern&objekt=ferrum-erzkomet"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Erzkomet.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Als Anomalie in der Sternenkarte verzeichnet"
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Erzkomet.",
+      "abschnitte": [
+        {
+          "titel": "Erzkomet – Archivbild",
+          "bild": true,
+          "bildtext": "Erzkomet"
+        }
+      ]
+    }
+  }
+}

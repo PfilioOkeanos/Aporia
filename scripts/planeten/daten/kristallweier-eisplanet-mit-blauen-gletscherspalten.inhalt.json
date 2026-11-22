@@ -1,0 +1,1398 @@
+{
+  "name": "Nivareth",
+  "genitiv": "Nivareths",
+  "dossierName": "Nivareth-Dossier",
+  "klasse": "Planet · Eiswelt",
+  "intro": "Nivareth ist die gefrorene Heimatwelt der Kryonoiden: Eisebenen, Bruchwände und Spaltensysteme an der Oberfläche, Kältesolreservoire und geothermische Wärmeinseln in der Tiefe – eine Welt, auf der Kälte Lebensgrundlage ist.",
+  "globusDaten": {
+    "planet": "kristallweier-eisplanet-mit-blauen-gletscherspalten",
+    "klasse": "Eiswelt",
+    "radius": 6116000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=nivareth-stern",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-FD030E4129"
+    ],
+    [
+      "Klasse",
+      "Kalter, vereister terrestrischer Planet"
+    ],
+    [
+      "Durchmesser",
+      "12.232 km"
+    ],
+    [
+      "Radius",
+      "6.116 km"
+    ],
+    [
+      "Masse",
+      "0,78 Erdmassen"
+    ],
+    [
+      "Dichte",
+      "4,86 g/cm³"
+    ],
+    [
+      "Schwerkraft",
+      "0,85 g (8,3 m/s²)"
+    ],
+    [
+      "Mittlere Oberflächentemperatur",
+      "ca. −80 °C"
+    ],
+    [
+      "Ozeane",
+      "keine Oberflächenmeere, Kältesolreservoire unter dem Eis"
+    ],
+    [
+      "Atmosphäre",
+      "88 % Stickstoff, 8 % Kohlendioxid, 3 % Methan, 1 % Argon und Spurengase"
+    ],
+    [
+      "Atmosphärendruck",
+      "ca. 1,4 bar"
+    ],
+    [
+      "Rotationsperiode",
+      "ca. 31 h"
+    ],
+    [
+      "Umlaufzeit",
+      "331 Erdtage"
+    ],
+    [
+      "Abstand zum Stern",
+      "0,85 AE"
+    ],
+    [
+      "Monde",
+      "2 (Isk, Varn)"
+    ],
+    [
+      "Zentralstern",
+      "Seryn, Orangefarbener Zwerg (K4 V)"
+    ],
+    [
+      "Einstrahlung",
+      "0,35-fach der Erde"
+    ],
+    [
+      "Achsneigung",
+      "11°"
+    ],
+    [
+      "Exzentrizität",
+      "0,03"
+    ],
+    [
+      "Fluchtgeschwindigkeit",
+      "10,1 km/s"
+    ],
+    [
+      "Alter",
+      "ca. 6,2 Mrd. Jahre"
+    ],
+    [
+      "Kryosphäre",
+      "bis mehrere Kilometer dick"
+    ],
+    [
+      "Magnetfeld",
+      "ca. 60 % der Erdstärke"
+    ],
+    [
+      "Bevölkerung",
+      "ca. 780 Mio. Kryonoiden"
+    ],
+    [
+      "Intelligente Spezies",
+      "Kryonoiden"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Seryn-System"
+    ],
+    [
+      "Zentralstern",
+      "Seryn · K4 V, Einzelstern"
+    ],
+    [
+      "Bahnposition",
+      "2. von 3 Planeten"
+    ],
+    [
+      "Entfernung zur Sonne",
+      "8,6 Lichtjahre"
+    ],
+    [
+      "Nächste Nachbarsysteme",
+      "Sonnensystem (8,6 Lj), Kharuun-System (11,4 Lj)"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✿",
+      "art": "Heimische Spezies",
+      "titel": "Kryonoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Kryonoiden/hauptseite/Spezies.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Heimatwelt",
+      "href": "inhalte/spezies/Biologische Spezies/Kryonoiden/Unterseiten/Heimatwelt/heimatwelt.html",
+      "route": null
+    },
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Seryn-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=nivareth-stern",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Speziesdossier Kryonoiden · Heimatwelt",
+      "href": "inhalte/spezies/Biologische Spezies/Kryonoiden/Unterseiten/Heimatwelt/heimatwelt.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#050b12",
+      "tiefe": "#0b1622",
+      "akzent": "#8fd6ff",
+      "sand": "#cfe3f2",
+      "moos": "#7fb3d6",
+      "ozean": "#4f7fbf",
+      "glas": "rgba(12, 24, 38, .74)",
+      "glas-hell": "rgba(22, 40, 60, .8)",
+      "linie": "rgba(160, 210, 245, .18)",
+      "linie-hell": "rgba(175, 220, 250, .38)",
+      "text": "#eef6fc",
+      "leise": "#a3b6c6",
+      "aporia-page-tint": "#2f6a99"
+    }
+  },
+  "kapitel": {
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Nivareth auf einen Blick: Eis, Kältesole und geothermische Wärmeinseln.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Nivareth – kristallweißes Eis mit blauen Gletscherspalten",
+          "text": [
+            "Nivareth ist ein kalter, vereister terrestrischer Planet im Seryn-System. Sein schwacher orangefarbener Stern liefert nur gut ein Drittel des Lichts, das die Erde erhält; die mittlere Oberflächentemperatur liegt bei rund −80 °C.",
+            "Geologisch ist Nivareth nicht erstarrt: Unter einer kilometerdicken Kryosphäre liegen Kältesolreservoire, die stellenweise mit geothermisch aktiven Bereichen verbunden sind. Dort entstand das Leben – und die Zivilisation der Kryonoiden."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Kalter, vereister terrestrischer Planet"
+            ],
+            [
+              "Zentralstern",
+              "Seryn (Orangefarbener Zwerg (K4 V))"
+            ],
+            [
+              "Schwerkraft",
+              "0,85 g"
+            ],
+            [
+              "Durchmesser",
+              "12.232 km"
+            ],
+            [
+              "Mittlere Temperatur",
+              "ca. −80 °C"
+            ],
+            [
+              "Atmosphäre",
+              "Stickstoff, CO₂ und Methan – nicht atembar"
+            ],
+            [
+              "Wasser",
+              "keine Oberflächenmeere, Kältesolreservoire unter dem Eis"
+            ],
+            [
+              "Intelligente Spezies",
+              "Kryonoiden"
+            ]
+          ]
+        },
+        {
+          "titel": "Nivareth im Vergleich zur Erde",
+          "vergleich": {
+            "mit": "Erde",
+            "werte": [
+              [
+                "Durchmesser",
+                12232,
+                12742,
+                "km"
+              ],
+              [
+                "Schwerkraft",
+                0.85,
+                1,
+                "g"
+              ],
+              [
+                "Tageslänge",
+                31,
+                24,
+                "h"
+              ],
+              [
+                "Luftdruck (Mittel)",
+                1.4,
+                1,
+                "bar"
+              ],
+              [
+                "Mittlere Temperatur",
+                -80,
+                15,
+                "°C"
+              ],
+              [
+                "Einstrahlung",
+                0.35,
+                1,
+                "× Erde"
+              ]
+            ]
+          }
+        },
+        {
+          "titel": "Hauptmerkmale",
+          "karten": [
+            {
+              "titel": "Kryosphäre",
+              "text": "Bis zu kilometerdicke Eisschichten bedecken fast die gesamte Oberfläche."
+            },
+            {
+              "titel": "Kältesole",
+              "text": "Wasser-Ammoniak-Gemische bleiben tief unter 0 °C flüssig und bilden Lebensräume."
+            },
+            {
+              "titel": "Geothermische Spalten",
+              "text": "Wärmeinseln im Eis – Zentren von Leben und Zivilisation."
+            },
+            {
+              "titel": "Tunnelstädte",
+              "text": "Kryonoiden leben überwiegend in geschützten unterirdischen Kälteräumen."
+            }
+          ]
+        },
+        {
+          "titel": "Name und Einordnung",
+          "text": [
+            "Im Archiv zählt Nivareth zu den Eiswelten. Sein Stern heißt Seryn, das System Seryn-System."
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Eine kalte Bahn um den schwachen Stern Seryn.",
+      "abschnitte": [
+        {
+          "titel": "Bahn und Position",
+          "text": [
+            "Nivareth ist der 2. von 3 Planeten im Seryn-System. Er umkreist Seryn in 0,85 AE Abstand – jenseits der äußeren Grenze der habitablen Zone (bei Seryn zwischen 0,48 und 0,83 AE). Er erhält 0,35-mal so viel Sternlicht wie die Erde.",
+            "Ohne Atmosphäre läge seine Gleichgewichtstemperatur bei rund -103 °C. Die helle Eisoberfläche wirft einen Großteil des Lichts zurück. Eine Treibhauswirkung von rund 23 K – vor allem durch Kohlendioxid und Methan – hält die mittlere Temperatur bei etwa −80 °C. Nivareth liegt knapp jenseits der äußeren Grenze der habitablen Zone."
+          ],
+          "daten": [
+            [
+              "Sternsystem",
+              "Seryn-System"
+            ],
+            [
+              "Bahnposition",
+              "2. von 3 Planeten"
+            ],
+            [
+              "Große Halbachse",
+              "0,85 AE (ca. 127,2 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,03"
+            ],
+            [
+              "Umlaufzeit",
+              "330,5 Erdtage"
+            ],
+            [
+              "Ortsjahr",
+              "ca. 256 Ortstage"
+            ],
+            [
+              "Einstrahlung",
+              "ca. 0,35-fach der Erde"
+            ],
+            [
+              "Habitable Zone von Seryn",
+              "0,48–0,83 AE"
+            ]
+          ]
+        },
+        {
+          "titel": "Zentralstern",
+          "text": [
+            "Seryn ist ein orangefarbener Hauptreihenstern (K4 V) mit etwa einem Viertel der Sonnenleuchtkraft. Sein schwaches Licht lässt Nivareth dauerhaft gefrieren. Ein alter, ruhiger Einzelstern."
+          ],
+          "daten": [
+            [
+              "Name",
+              "Seryn"
+            ],
+            [
+              "Typ",
+              "Orangefarbener Zwerg (K4 V)"
+            ],
+            [
+              "Masse",
+              "0,75 Sonnenmassen"
+            ],
+            [
+              "Radius",
+              "0,72 Sonnenradien"
+            ],
+            [
+              "Leuchtkraft",
+              "0,25 Sonnenleuchtkräfte"
+            ],
+            [
+              "Oberflächentemperatur",
+              "ca. 4.600 K"
+            ],
+            [
+              "Alter",
+              "ca. 6,2 Mrd. Jahre"
+            ],
+            [
+              "Begleitsterne",
+              "keine (Einzelstern)"
+            ]
+          ],
+          "verweise": [
+            [
+              "Seryn",
+              "inhalte/himmelskoerper/sterne/details/junger-orange-roter-t-tauri-stern/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Rotation und Achse",
+          "daten": [
+            [
+              "Rotationsperiode",
+              "ca. 31 h"
+            ],
+            [
+              "Achsneigung",
+              "11°"
+            ],
+            [
+              "Scheinbare Sterngröße",
+              "ca. 0,45° (Sonne von der Erde: 0,53°)"
+            ],
+            [
+              "Jahreszeiten",
+              "Schwach; Temperaturunterschiede entstehen vor allem durch Höhe und geothermische Wärme"
+            ]
+          ]
+        },
+        {
+          "titel": "Monde",
+          "karten": [
+            {
+              "titel": "Isk",
+              "text": "420 km Durchmesser, Abstand 131.228 km, Umlauf in 6,2 Tagen. Isk ist der innere der beiden kleinen Monde, ein eisbedeckter Brocken. Seine schwachen Gezeiten bewegen die Kältesole unter dem Eis."
+            },
+            {
+              "titel": "Varn",
+              "text": "280 km Durchmesser, Abstand 276.866 km, Umlauf in 19 Tagen. Varn ist ein kleiner, dunkler Mond aus Gestein und Eis – vermutlich ein eingefangener Asteroid."
+            }
+          ],
+          "verweise": [
+            [
+              "Isk",
+              "inhalte/himmelskoerper/monde/details/lebender-eismond-mit-medusenmantel/hauptseite/index.html"
+            ],
+            [
+              "Varn",
+              "inhalte/himmelskoerper/monde/details/albedo-kontrastmond-mit-eis-und-kratern/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Planeten des Systems",
+          "zeitleiste": [
+            [
+              "Seryn I · 0,21 AE",
+              "Seryn I ist eine sternnahe, luftlose Basaltwelt mit gebundener Rotation.."
+            ],
+            [
+              "Nivareth · 0,85 AE",
+              "Nivareth ist die gefrorene Heimatwelt der Kryonoiden: eine kalte terrestrische Welt mit kilometerdicker Kryosphäre, Kältesolreservoiren und geothermischen Spalten.."
+            ],
+            [
+              "Seryn III · 3,9 AE",
+              "Seryn III ist ein kalter, silberblauer Gasriese mit mehreren Eismonden – das wichtigste Ziel der kryonoidischen Raumfahrt.."
+            ],
+            [
+              "Frostgürtel · 20–32 AE",
+              "Der Frostgürtel zwischen 20 und 32 AE ist ein Gürtel aus Eiskörpern – reich an gefrorenem Wasser, Ammoniak und Methan."
+            ]
+          ],
+          "verweise": [
+            [
+              "Seryn I",
+              "inhalte/himmelskoerper/planeten/details/basaltische-welt-mit-hauchdunner-kruste/hauptseite/index.html"
+            ],
+            [
+              "Seryn III",
+              "inhalte/himmelskoerper/planeten/details/kalter-jupiter-im-fernen-sternenlicht/hauptseite/index.html"
+            ],
+            [
+              "Frostgürtel",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=nivareth-stern&objekt=nivareth-frostguertel"
+            ]
+          ]
+        },
+        {
+          "titel": "Nachbarschaft und Anomalien",
+          "karten": [
+            {
+              "titel": "Gletscherbote",
+              "text": "Ein periodischer Komet (rund 31 Jahre), der bei seiner Annäherung bis auf 0,9 AE einen langen blauen Ionenschweif bildet – am Himmel Nivareths das hellste Ereignis."
+            },
+            {
+              "titel": "Zwillingseis",
+              "text": "Ein ungewöhnlich heller, kristalliner Eiskörper im Frostgürtel, dessen Oberfläche in regelmäßigen Abständen aufleuchtet – vermutlich durch Kryovulkanismus. Seine Ursache ist noch umstritten."
+            },
+            {
+              "titel": "Nachbarsysteme",
+              "text": "Sonnensystem (8,6 Lj), Kharuun-System (11,4 Lj), Iovar-System (12,5 Lj) – alle weit außerhalb der gravitativen Einflusszone von Seryn (rund 3,3 Lichtjahre)."
+            }
+          ],
+          "verweise": [
+            [
+              "Gletscherbote",
+              "inhalte/himmelskoerper/kometen/details/bernsteinfarbener-komet-mit-geschichtetem-schweif/hauptseite/index.html"
+            ],
+            [
+              "Zwillingseis",
+              "inhalte/himmelskoerper/asteroiden/details/asteroid-mit-hellem-kristallgrat/hauptseite/index.html"
+            ],
+            [
+              "Seryn-System in der Sternenkarte",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=nivareth-stern"
+            ]
+          ]
+        },
+        {
+          "titel": "Licht unter Seryn",
+          "text": [
+            "Seryn erscheint am Himmel etwas kleiner als die Sonne von der Erde und leuchtet in warmem Orange. Auf den weißen Eisebenen entsteht ein gedämpftes, goldenes Dämmerlicht; in den langen Nächten sind die beiden kleinen Monde und der Gasriese Seryn III gut sichtbar."
+          ]
+        },
+        {
+          "titel": "Zeitrechnung",
+          "daten": [
+            [
+              "Ortstag",
+              "ca. 31 h"
+            ],
+            [
+              "Ortsjahr",
+              "330 Erdtage ≈ 256 Ortstage"
+            ],
+            [
+              "Umlauf Isk",
+              "6,2 Erdtage"
+            ],
+            [
+              "Umlauf Varn",
+              "19 Erdtage"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik Nivareths.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "6.116 km"
+            ],
+            [
+              "Masse",
+              "0,78 Erdmassen"
+            ],
+            [
+              "Mittlere Dichte",
+              "4,86 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "8,3 m/s² (0,85 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "ca. 10,1 km/s"
+            ]
+          ]
+        },
+        {
+          "titel": "Physikalische Werte im Vergleich",
+          "vergleich": {
+            "mit": "Erde",
+            "werte": [
+              [
+                "Masse",
+                0.78,
+                1,
+                "Erdmassen"
+              ],
+              [
+                "Dichte",
+                4.86,
+                5.51,
+                "g/cm³"
+              ],
+              [
+                "Fluchtgeschwindigkeit",
+                10.1,
+                11.2,
+                "km/s"
+              ],
+              [
+                "Magnetfeld",
+                0.6,
+                1,
+                "× Erde"
+              ]
+            ]
+          }
+        },
+        {
+          "titel": "Kälte und Material",
+          "text": [
+            "Bei Temperaturen um −80 °C verhalten sich viele Werkstoffe spröde. Kryonoidische Technik setzt deshalb auf kältezähe Legierungen, Verbundstoffe und kontrolliert bearbeitetes Eis als Baumaterial."
+          ]
+        },
+        {
+          "titel": "Innere Wärme",
+          "text": [
+            "Restwärme und radioaktiver Zerfall halten das Innere aktiv. Der Wärmefluss erreicht die Oberfläche ungleichmäßig: In geothermischen Spalten steigt er stark an, unter den Eisebenen bleibt er gering."
+          ]
+        }
+      ]
+    },
+    "Planetare Struktur": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Metallkern, Silikatmantel, Kruste und Kryosphäre.",
+      "abschnitte": [
+        {
+          "titel": "Schalenbau",
+          "text": [
+            "Nivareth besteht aus einem metallischen Kern, einem überwiegend silikatischen Mantel, einer mineralischen Kruste und einer bis zu kilometerdicken Kryosphäre. Unter bestimmten Eisschichten liegen Flüssigkeitsreservoire."
+          ],
+          "schichten": [
+            [
+              "Kryosphäre",
+              "Eis, Schnee und Kältesole, bis mehrere Kilometer dick"
+            ],
+            [
+              "Mineralische Kruste",
+              "Gestein mit eisführenden Ablagerungen"
+            ],
+            [
+              "Silikatmantel",
+              "Langsame Konvektion, Quelle geothermischer Wärme"
+            ],
+            [
+              "Äußerer Kern",
+              "Teilweise flüssiges Eisen, schwaches Magnetfeld"
+            ],
+            [
+              "Innerer Kern",
+              "Fester Metallkern"
+            ]
+          ]
+        },
+        {
+          "titel": "Kältesolreservoire",
+          "text": [
+            "Die Kältesole enthalten Wasser-Ammoniak-Gemische mit unterschiedlichen Salzkonzentrationen, Drücken und Temperaturen. Unter geeigneten Bedingungen bleiben sie weit unter dem Gefrierpunkt reinen Wassers flüssig und stehen stellenweise mit geothermischen Bereichen in Verbindung."
+          ]
+        }
+      ]
+    },
+    "Geografie": {
+      "gruppe": "Natur",
+      "icon": "△",
+      "intro": "Eisebenen, Bruchwände, Spalten und Hochländer.",
+      "kopfbild": "assets/bilder/Alle Spezies+Übersicht/Biologische Spezies/Kryonoiden/gesamtdarstellung/Kryonoid-Wächter in eisiger Wildnis-9.png",
+      "bild": "assets/bilder/Alle Spezies+Übersicht/Biologische Spezies/Kryonoiden/gesamtdarstellung/Kryonoid-Wächter in eisiger Wildnis-9.png",
+      "abschnitte": [
+        {
+          "titel": "Eislandschaften",
+          "karten": [
+            {
+              "titel": "Eisebenen",
+              "text": "Geschlossene, weite Ebenen aus geschichtetem Eis."
+            },
+            {
+              "titel": "Eisbruchwände",
+              "text": "Hoch aufragende Wände an Bruchkanten."
+            },
+            {
+              "titel": "Spaltensysteme",
+              "text": "Tief eingeschnittene Spalten, teils bis zur Kältesole."
+            },
+            {
+              "titel": "Kristallfelder",
+              "text": "Kristalline Oberflächen, die im Sternlicht funkeln."
+            },
+            {
+              "titel": "Mineralische Hochländer",
+              "text": "Vom Wind freigelegte Gesteinsflächen."
+            },
+            {
+              "titel": "Kryovulkanische Felder",
+              "text": "Austrittsgebiete von Sole und Gasen."
+            }
+          ]
+        },
+        {
+          "titel": "Oberflächenanteile",
+          "balken": {
+            "werte": [
+              [
+                "Geschlossene Eisebenen",
+                46
+              ],
+              [
+                "Bruch- und Spaltenzonen",
+                18
+              ],
+              [
+                "Mineralische Hochländer",
+                16
+              ],
+              [
+                "Kristallfelder und Schneeflächen",
+                12
+              ],
+              [
+                "Geothermische und kryovulkanische Gebiete",
+                8
+              ]
+            ]
+          }
+        },
+        {
+          "titel": "Bedeutende Orte",
+          "karten": [
+            {
+              "titel": "Tiefsole von Vel-Askar",
+              "text": "Größtes bekanntes Kältesolreservoir, dicht besiedelt."
+            },
+            {
+              "titel": "Brüche von Orrem",
+              "text": "Region der Stillen Brüche, teils bis heute aufgegeben."
+            },
+            {
+              "titel": "Hochland von Thessk",
+              "text": "Mineralreiches Hochland mit Abbaugebieten."
+            },
+            {
+              "titel": "Glutspalte Sereth",
+              "text": "Wichtigste geothermische Spalte, Zentrum der Konkordanz."
+            }
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre Nivareths.",
+      "abschnitte": [
+        {
+          "titel": "Zusammensetzung",
+          "text": [
+            "Die Atmosphäre besteht überwiegend aus Stickstoff. Bei sehr niedrigen Temperaturen frieren Kohlendioxid und Methan teilweise aus und verändern die lokale Zusammensetzung. Freier Sauerstoff kommt nur in Spuren vor; für Menschen ist die Luft nicht atembar."
+          ],
+          "balken": {
+            "werte": [
+              [
+                "Stickstoff",
+                88
+              ],
+              [
+                "Kohlendioxid",
+                8
+              ],
+              [
+                "Methan",
+                3
+              ],
+              [
+                "Argon und Spurengase",
+                1
+              ]
+            ]
+          }
+        },
+        {
+          "titel": "Druck",
+          "daten": [
+            [
+              "Mittlerer Oberflächendruck",
+              "ca. 1,4 bar"
+            ],
+            [
+              "Tiefe Senken",
+              "bis ca. 1,7 bar"
+            ],
+            [
+              "Mineralische Hochländer",
+              "ca. 1,0 bar"
+            ]
+          ]
+        },
+        {
+          "titel": "Wetter",
+          "karten": [
+            {
+              "titel": "Eisstürme",
+              "text": "Schwere Stürme transportieren Eispartikel, Staub und Kristalle."
+            },
+            {
+              "titel": "Ausfrierende Gase",
+              "text": "In kalten Senken kondensieren CO₂ und Methan als Reif."
+            },
+            {
+              "titel": "Thermische Winde",
+              "text": "Temperaturunterschiede zwischen Hochland, Senke und Spalte treiben Strömungen."
+            },
+            {
+              "titel": "Kristallniederschlag",
+              "text": "Feiner kristalliner Schnee aus der oberen Atmosphäre."
+            }
+          ]
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima Nivareths.",
+      "abschnitte": [
+        {
+          "titel": "Temperaturzonen",
+          "text": [
+            "Die tiefsten Temperaturbereiche sind auch für Kryonoiden ohne Schutz gefährlich. Ihre dauerhaften Städte liegen deshalb in thermisch stabilen Regionen."
+          ],
+          "skala": {
+            "einheit": "°C",
+            "min": -140,
+            "max": 0,
+            "bereiche": [
+              [
+                "Extreme Kälteereignisse",
+                -140,
+                -130
+              ],
+              [
+                "Sehr kalte Außenregionen",
+                -115,
+                -90
+              ],
+              [
+                "Gewöhnliche Oberflächenregionen",
+                -90,
+                -60
+              ],
+              [
+                "Bewohnte unterirdische Kälteräume",
+                -60,
+                -40
+              ],
+              [
+                "Geothermische Übergangszonen",
+                -50,
+                -20
+              ]
+            ]
+          }
+        },
+        {
+          "titel": "Klimaprozesse",
+          "text": [
+            "Das Klima wird durch die geringe Einstrahlung und die großflächige Eisbedeckung bestimmt. Große Temperaturunterschiede zwischen Hochländern, Senken und geothermischen Gebieten erzeugen regionale Luftströmungen und zeitweise schwere Stürme."
+          ]
+        },
+        {
+          "titel": "Klimafaktoren",
+          "liste": [
+            "Geringe Einstrahlung von Seryn",
+            "Hohe Rückstrahlung der Eisflächen",
+            "Treibhauswirkung von Kohlendioxid und Methan",
+            "Geothermische Wärmeinseln",
+            "Ausfrieren von Gasen in kalten Regionen"
+          ]
+        }
+      ]
+    },
+    "Gewässer": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Kältesole statt Meere.",
+      "kopfbild": "assets/bilder/Alle Spezies+Übersicht/Biologische Spezies/Kryonoiden/gesamtdarstellung/Frostiger Kryonoid in der Eishöhle-2.png",
+      "bild": "assets/bilder/Alle Spezies+Übersicht/Biologische Spezies/Kryonoiden/gesamtdarstellung/Frostiger Kryonoid in der Eishöhle-2.png",
+      "abschnitte": [
+        {
+          "titel": "Kältesole",
+          "text": [
+            "Freie Oberflächenmeere aus flüssigem Wasser gibt es nicht. Stattdessen besitzt Nivareth teilweise verbundene Kältesolreservoire aus Wasser-Ammoniak-Gemischen mit weiteren chemischen Bestandteilen. Sie bilden die wichtigsten chemischen und biologischen Lebensräume."
+          ]
+        },
+        {
+          "titel": "Kreislauf der Sole",
+          "zeitleiste": [
+            [
+              "Erwärmung",
+              "Geothermische Wärme hält Sole in der Tiefe flüssig"
+            ],
+            [
+              "Aufstieg",
+              "Sole dringt durch Spalten nach oben"
+            ],
+            [
+              "Kryovulkanismus",
+              "Austritt als Sole und Gas an der Oberfläche"
+            ],
+            [
+              "Gefrieren",
+              "Ablagerung als Eis und Salzkrusten"
+            ],
+            [
+              "Versenkung",
+              "Wandernde Eisschichten tragen Material zurück in die Tiefe"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie Nivareths.",
+      "abschnitte": [
+        {
+          "titel": "Geologische Aktivität",
+          "text": [
+            "Nivareth ist geologisch nicht vollständig erstarrt. Tektonik, unterirdische Wärmeströme und örtlicher Vulkanismus verändern die Oberfläche langfristig."
+          ],
+          "liste": [
+            "Tiefe Eisbruchsysteme",
+            "Mineralische Hochländer",
+            "Geothermische Spalten",
+            "Kryovulkanische Austrittsgebiete",
+            "Unterirdische Flüssigkeitsreservoire",
+            "Langsam wandernde Eisschichten",
+            "Druckbedingte Eisverformungen"
+          ]
+        },
+        {
+          "titel": "Naturgefahren",
+          "liste": [
+            "Große Eisbrüche",
+            "Geothermische Ausbrüche",
+            "Instabile unterirdische Hohlräume",
+            "Kryovulkanische Stoffaustritte",
+            "Starke Windereignisse",
+            "Unterbrechung geothermischer Versorgungsnetze"
+          ]
+        }
+      ]
+    },
+    "Biosphäre": {
+      "gruppe": "Natur",
+      "icon": "❧",
+      "intro": "Langsam wachsende Kolonien, isolierte Fauna und chemotrophe Mikroben.",
+      "kopfbild": "assets/bilder/Alle Spezies+Übersicht/Biologische Spezies/Kryonoiden/gesamtdarstellung/Kristallwesen im ewigen Eis-15.png",
+      "bild": "assets/bilder/Alle Spezies+Übersicht/Biologische Spezies/Kryonoiden/gesamtdarstellung/Kristallwesen im ewigen Eis-15.png",
+      "abschnitte": [
+        {
+          "titel": "Vegetationsähnliche Organismen",
+          "text": [
+            "Nivareth besitzt keine Wälder. Stattdessen wachsen langsam wachsende Kolonieorganismen, die vor allem chemische Energiequellen nutzen; manche oberflächennahe Arten verwerten zusätzlich schwaches Licht."
+          ]
+        },
+        {
+          "titel": "Tierähnliche Fauna",
+          "liste": [
+            "Kompakte Körper und isolierende Außenstrukturen",
+            "Langsamer Stoffwechsel und lange Ruhephasen",
+            "Mechanische Sinnesorgane",
+            "Spezialisierte Ernährungsweisen"
+          ],
+          "text": [
+            "Besonders produktive Lebensgemeinschaften existieren in geothermisch beeinflussten Regionen."
+          ]
+        },
+        {
+          "titel": "Mikrobielle Biosphäre",
+          "text": [
+            "Mikroorganismen bilden die Grundlage zahlreicher Ökosysteme. Sie nutzen chemische Redoxreaktionen und organische Reststoffe. Kryonoiden nutzen bestimmte Mikrobengemeinschaften für Ernährung, Medizin und Stoffverarbeitung."
+          ]
+        },
+        {
+          "titel": "Lebensräume",
+          "karten": [
+            {
+              "titel": "Solegründe",
+              "text": "Mikrobenmatten und Kolonien in der Kältesole."
+            },
+            {
+              "titel": "Spaltengärten",
+              "text": "Reiche Lebensgemeinschaften an geothermischen Spalten."
+            },
+            {
+              "titel": "Eishöhlen",
+              "text": "Ruhige Kälteräume mit langsam wachsenden Kolonien."
+            },
+            {
+              "titel": "Oberflächenkrusten",
+              "text": "Lichtnutzende Kolonien in Eisrissen."
+            }
+          ]
+        }
+      ]
+    },
+    "Spezies": {
+      "gruppe": "Zivilisation",
+      "icon": "✿",
+      "intro": "Die Kryonoiden – Lebensform der Kälte.",
+      "kopfbild": "assets/bilder/Alle Spezies+Übersicht/Biologische Spezies/Kryonoiden/gesamtdarstellung/Kryonoiden_designi_charactercharacter.png",
+      "bild": "assets/bilder/Alle Spezies+Übersicht/Biologische Spezies/Kryonoiden/gesamtdarstellung/Kryonoiden_designi_charactercharacter.png",
+      "abschnitte": [
+        {
+          "titel": "Kryonoiden",
+          "bild": "assets/bilder/Alle Spezies+Übersicht/Biologische Spezies/Kryonoiden/gesamtdarstellung/Eisiger Kryonoid mit leuchtenden Augen-5.png",
+          "bildtext": "Kryonoid mit leuchtenden Augen",
+          "text": [
+            "Die Kryonoiden sind eine intelligente, an extreme Kälte angepasste Lebensform. Sie kommunizieren über Resonanz, Licht und Berührung und leben bevorzugt in thermisch stabilen unterirdischen Kälteräumen zwischen −60 und −40 °C."
+          ],
+          "verweise": [
+            [
+              "Zum Speziesdossier",
+              "inhalte/spezies/Biologische Spezies/Kryonoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Kommunikation",
+          "karten": [
+            {
+              "titel": "Resonanzsprache",
+              "text": "Schwingungen, die durch Eis und Gestein getragen werden."
+            },
+            {
+              "titel": "Optische Kommunikation",
+              "text": "Lichtsignale in dunklen Kälteräumen."
+            },
+            {
+              "titel": "Taktile Kommunikation",
+              "text": "Berührung und Druckmuster."
+            },
+            {
+              "titel": "Technische Kommunikation",
+              "text": "Netze und Übersetzungssysteme."
+            }
+          ]
+        },
+        {
+          "titel": "Verbreitung",
+          "text": [
+            "Die meisten Kryonoiden leben in den Tunnelstädten nahe geothermischer Spalten und Kältesolreservoire. Durch die Raumfahrt besiedelten sie auch vereiste Monde und kalte Welten – etwa Hjalm, einen Eismond des Gasriesen Seryn III."
+          ]
+        }
+      ]
+    },
+    "Zivilisation": {
+      "gruppe": "Zivilisation",
+      "icon": "▥",
+      "intro": "Tunnelstädte, Versorgungsnetze und Eiskunst.",
+      "kopfbild": "assets/bilder/Alle Spezies+Übersicht/Biologische Spezies/Kryonoiden/gesamtdarstellung/Kryonoiden_designi_charactercharacter(1).png",
+      "bild": "assets/bilder/Alle Spezies+Übersicht/Biologische Spezies/Kryonoiden/gesamtdarstellung/Kryonoiden_designi_charactercharacter(1).png",
+      "abschnitte": [
+        {
+          "titel": "Gesellschaft",
+          "text": [
+            "Siedlungsbau, Politik, Wirtschaft, Medizin, Transport und Kultur der Kryonoiden entstanden aus der Notwendigkeit, lebenswichtige Kälteräume und Ressourcen dauerhaft zu sichern. Die Abhängigkeit von geeigneten Temperaturen ist Teil ihrer Identität."
+          ]
+        },
+        {
+          "titel": "Bevölkerung",
+          "daten": [
+            [
+              "Kryonoiden",
+              "ca. 780 Millionen"
+            ],
+            [
+              "Siedlungsform",
+              "Verbundene unterirdische Städte"
+            ],
+            [
+              "Außenposten",
+              "Hjalm und weitere Eiskörper im Seryn-System"
+            ]
+          ]
+        },
+        {
+          "titel": "Städte",
+          "text": [
+            "Größere Städte bestehen aus mehreren verbundenen Siedlungsbereichen. Die Transportwege verlaufen durch geschützte Tunnel; an der Oberfläche liegen Kontrollstationen, Industrieanlagen und automatische Messsysteme. Wichtige Siedlungen liegen nahe langfristig verfügbarer Energiequellen."
+          ]
+        },
+        {
+          "titel": "Kunst und Kultur",
+          "liste": [
+            "Resonanzkunst: strukturierte Schwingungen in Materialien",
+            "Eisarchitektur: Raumgestaltung durch kontrollierte Bearbeitung",
+            "Lichtkunst mit Reflexionen und schwachen Lichtquellen",
+            "Langzeitkunst, deren Veränderung über Jahre gestaltet wird",
+            "Bewegungskunst mit Körper und Greifgliedern"
+          ]
+        },
+        {
+          "titel": "Wirtschaft",
+          "karten": [
+            {
+              "titel": "Geothermie",
+              "text": "Wärme aus Spalten treibt Industrie und Versorgung."
+            },
+            {
+              "titel": "Kryotechnologie",
+              "text": "Gefragtes Exportgut im interstellaren Handel."
+            },
+            {
+              "titel": "Solegewinnung",
+              "text": "Chemische Rohstoffe aus den Reservoiren."
+            },
+            {
+              "titel": "Mikrobenwirtschaft",
+              "text": "Nahrung, Medizin und Stoffverarbeitung."
+            }
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Von den Tiefenräumen zur Konkordanz.",
+      "abschnitte": [
+        {
+          "titel": "Planetare Frühgeschichte",
+          "zeitleiste": [
+            [
+              "Entstehung",
+              "Bildung Nivareths vor rund 6,2 Mrd. Jahren"
+            ],
+            [
+              "Kurze warme Phase",
+              "Frühe Meere unter dichterer Atmosphäre"
+            ],
+            [
+              "Vereisung",
+              "Ozeane gefrieren, Kältesole bleibt in der Tiefe"
+            ],
+            [
+              "Leben in der Sole",
+              "Chemotrophe Organismen an geothermischen Spalten"
+            ]
+          ]
+        },
+        {
+          "titel": "Geschichte der Kryonoiden",
+          "zeitleiste": [
+            [
+              "Vorintelligente Vorfahren",
+              "Mobile Kälteorganismen"
+            ],
+            [
+              "Frühe Gemeinschaften",
+              "Gruppen an Wärmeinseln"
+            ],
+            [
+              "Epoche der Tiefenräume",
+              "Dauerhaft bewohnte unterirdische Siedlungen"
+            ],
+            [
+              "Organisierte Städte und Schrift",
+              "Versorgungssysteme und erste Regeln"
+            ],
+            [
+              "Industrialisierung",
+              "Großräumige Energiegewinnung"
+            ],
+            [
+              "Die Stillen Brüche",
+              "Eisinstabilitäten zerstören Verbindungen und Siedlungen"
+            ],
+            [
+              "Nivareth-Konkordanz",
+              "Gemeinsame Sicherung lebenswichtiger Infrastruktur"
+            ],
+            [
+              "Raumfahrt",
+              "Erschließung von Eismonden und Eiskörpern"
+            ],
+            [
+              "Interstellarer Austausch",
+              "Kontakt mit fremden Intelligenzen"
+            ]
+          ]
+        },
+        {
+          "titel": "Die Stillen Brüche",
+          "text": [
+            "In mehreren besiedelten Regionen kam es zu großräumigen Eisinstabilitäten. Verbindungen und Versorgungsleitungen brachen zusammen, Siedlungen wurden aufgegeben oder blieben lange isoliert. Ob einzelne Ereignisse durch Sabotage verschärft wurden, ist bis heute umstritten."
+          ]
+        }
+      ]
+    },
+    "Fraktionen": {
+      "gruppe": "Zivilisation",
+      "icon": "◇",
+      "intro": "Die Nivareth-Konkordanz und ihre Beziehungen.",
+      "kopfbild": "assets/bilder/Alle Spezies+Übersicht/Biologische Spezies/Kryonoiden/gesamtdarstellung/Kryonoiden_designi_charactercharacter(2).png",
+      "bild": "assets/bilder/Alle Spezies+Übersicht/Biologische Spezies/Kryonoiden/gesamtdarstellung/Kryonoiden_designi_charactercharacter(2).png",
+      "abschnitte": [
+        {
+          "titel": "Nivareth-Konkordanz",
+          "text": [
+            "Die Konkordanz entstand aus dem Bedürfnis, lebenswichtige Infrastruktur über regionale Grenzen hinweg zu sichern. Die Mitgliedsgemeinschaften behalten erhebliche eigene Zuständigkeiten."
+          ],
+          "liste": [
+            "Gemeinsame Versorgungssicherheit",
+            "Überregionale Transportnetze",
+            "Umwelt- und Infrastrukturstandards",
+            "Diplomatische Außenvertretung",
+            "Katastrophenschutz und Verteidigung"
+          ]
+        },
+        {
+          "titel": "Organe",
+          "karten": [
+            {
+              "titel": "Vertretung der Lebensräume",
+              "text": "Hauptorgan aus Vertretern der Mitgliedsgemeinschaften."
+            },
+            {
+              "titel": "Wissenschaftlich-technischer Rat",
+              "text": "Berät über Infrastruktur, Sicherheit und Forschung."
+            },
+            {
+              "titel": "Exekutive",
+              "text": "Setzt gemeinsame Beschlüsse um."
+            },
+            {
+              "titel": "Lokale Selbstverwaltung",
+              "text": "Städte und Gemeinschaften regeln ihre eigenen Belange."
+            }
+          ]
+        },
+        {
+          "titel": "Beziehungen zu den großen Fraktionen",
+          "daten": [
+            [
+              "Konföderation",
+              "Diplomatische und wissenschaftliche Zusammenarbeit"
+            ],
+            [
+              "Konsortium",
+              "Wichtiger Wirtschaftspartner; Konflikte um Abbaurechte und geothermische Quellen"
+            ],
+            [
+              "Protektorat",
+              "Sicherheits- und Technikkontakte"
+            ],
+            [
+              "Synaptorat",
+              "Forschungsinteresse an Kältebiologie"
+            ],
+            [
+              "Ätherwanderer",
+              "Vereinzelte Kontakte"
+            ]
+          ]
+        }
+      ]
+    },
+    "Rohstoffe": {
+      "gruppe": "Weitere",
+      "icon": "⬡",
+      "intro": "Rohstoffe Nivareths.",
+      "abschnitte": [
+        {
+          "titel": "Rohstoffgruppen",
+          "karten": [
+            {
+              "titel": "Kältesole",
+              "text": "Ammoniak, Salze und gelöste Minerale."
+            },
+            {
+              "titel": "Geothermische Energie",
+              "text": "Wichtigste Energiequelle der Zivilisation."
+            },
+            {
+              "titel": "Hochlanderze",
+              "text": "Metalle aus den mineralischen Hochländern."
+            },
+            {
+              "titel": "Flüchtige Eise",
+              "text": "Methan, CO₂ und Stickstoffeis aus Senken und dem Frostgürtel."
+            }
+          ]
+        },
+        {
+          "titel": "Rohstoffkonflikte",
+          "text": [
+            "Abbaurechte, Produktionsstandorte und die Kontrolle geothermischer Energiequellen sind die häufigsten Streitpunkte – zwischen Gemeinschaften ebenso wie mit dem Konsortium."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung Nivareths.",
+      "abschnitte": [
+        {
+          "titel": "Kryonoidische Raumfahrt",
+          "text": [
+            "Durch die Raumfahrt erschlossen die Kryonoiden weitere kalte Himmelskörper: vereiste Monde, kalte terrestrische Planeten, Flüssigkeitsreservoire und eisreiche Kleinkörper. Auf fremden Welten müssen Temperatur, Atmosphäre und Chemie stets zuerst geprüft werden – Eis allein bedeutet keine biologische Eignung."
+          ]
+        },
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Was löste die Stillen Brüche wirklich aus?",
+            "Wie weit reichen die Kältesolreservoire?",
+            "Warum leuchtet das Zwillingseis im Frostgürtel?",
+            "Gibt es Leben im Ozean von Hjalm?"
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten Nivareths.",
+      "abschnitte": [
+        {
+          "titel": "Rekorde",
+          "daten": [
+            [
+              "Kälteste gemessene Temperatur",
+              "ca. −138 °C in den Polarsenken"
+            ],
+            [
+              "Dickste Eisschicht",
+              "über 6 km in den Polarregionen"
+            ],
+            [
+              "Größtes Kältesolreservoir",
+              "Tiefsole von Vel-Askar, ca. 40.000 km²"
+            ],
+            [
+              "Höchste Eisbruchwand",
+              "ca. 2.300 m"
+            ]
+          ]
+        },
+        {
+          "titel": "Einzigartige Welt",
+          "liste": [
+            "Leben in Kältesole tief unter dem Eis",
+            "Städte in geothermischen Wärmeinseln",
+            "Ausfrierende Atmosphärengase",
+            "Eisarchitektur als Bau- und Kunstform"
+          ]
+        },
+        {
+          "titel": "Hinweise für Besucher",
+          "liste": [
+            "Schutzanzug gegen Kälte und nicht atembare Luft",
+            "Eisbrüche und instabile Hohlräume beachten",
+            "Wärmequellen nicht in Kälteräume bringen – sie können Lebensräume zerstören",
+            "Kommunikation über Übersetzungssysteme für Resonanzsprache"
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv Nivareths.",
+      "abschnitte": [
+        {
+          "titel": "Nivareth aus dem All",
+          "bild": true,
+          "bildtext": "Nivareth – kristallweißes Eis mit blauen Gletscherspalten"
+        },
+        {
+          "titel": "Kristallwesen im ewigen Eis",
+          "bild": "assets/bilder/Alle Spezies+Übersicht/Biologische Spezies/Kryonoiden/gesamtdarstellung/Kristallwesen im ewigen Eis-15.png",
+          "bildtext": "Kristallwesen im ewigen Eis"
+        },
+        {
+          "titel": "Kryonoid im Eisnebel",
+          "bild": "assets/bilder/Alle Spezies+Übersicht/Biologische Spezies/Kryonoiden/gesamtdarstellung/Kryonoid_ Aetheris-Typ im Eisnebel-3.png",
+          "bildtext": "Kryonoid im Eisnebel"
+        },
+        {
+          "titel": "Eisiger Kristallwächter",
+          "bild": "assets/bilder/Alle Spezies+Übersicht/Biologische Spezies/Kryonoiden/gesamtdarstellung/Kryonoid_ Eisiger Kristallwächter-10.png",
+          "bildtext": "Eisiger Kristallwächter"
+        },
+        {
+          "titel": "Archiv des Eisplaneten",
+          "bild": "assets/bilder/Alle Spezies+Übersicht/Biologische Spezies/Kryonoiden/Design/Kryonoiden – Archiv des Eisplaneten.png",
+          "bildtext": "Archiv des Eisplaneten"
+        }
+      ]
+    }
+  }
+}

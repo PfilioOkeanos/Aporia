@@ -1,0 +1,482 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Trojaner von Ushara III",
+  "genitiv": "von Trojaner von Ushara III",
+  "dossierName": "Trojaner von Ushara III-Dossier",
+  "klasse": "Asteroid",
+  "intro": "Am vorauseilenden Lagrange-Punkt L4 von Ushara III sammelt sich eine Gruppe von Trojaner-Asteroiden. Der größte Körper ist ein doppelköpfiger Kontaktasteroid von rund 120 km Länge. Trojaner von Ushara III umkreist Ushara in 0,572 AE Abstand und braucht für einen Umlauf 178,7 Tage.",
+  "globusDaten": {
+    "planet": "geteilter-asteroid-mit-lichtkante",
+    "klasse": "Gestein",
+    "radius": 60000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=kharuun-stern&objekt=kharuun-trojaner",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-8BCA724279"
+    ],
+    [
+      "Typ",
+      "Asteroid"
+    ],
+    [
+      "Sternsystem",
+      "Kharuun-System"
+    ],
+    [
+      "Zentralkörper",
+      "Ushara"
+    ],
+    [
+      "Große Halbachse",
+      "0,572 AE"
+    ],
+    [
+      "Umlaufzeit",
+      "178,7 Tage"
+    ],
+    [
+      "Durchmesser",
+      "120 km"
+    ],
+    [
+      "Masse",
+      "2,44 · 10^18 kg"
+    ],
+    [
+      "Schwerkraft",
+      "4,52 cm/s²"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -7 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Kharuun-System"
+    ],
+    [
+      "Zentralstern",
+      "Ushara",
+      "inhalte/himmelskoerper/sterne/details/orangefarbener-k-stern-im-all/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "0,572 AE"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Trojaner von Ushara III im Kharuun-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=kharuun-stern&objekt=kharuun-trojaner",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Ushara",
+      "href": "inhalte/himmelskoerper/sterne/details/orangefarbener-k-stern-im-all/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Pyronoiden",
+      "titel": "Kharuun",
+      "href": "inhalte/himmelskoerper/planeten/details/dammernder-vulkanplanet-mit-gluhenden-lavaseen/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Pyronoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Pyronoiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Kharuun-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=kharuun-stern&objekt=kharuun-trojaner"
+    },
+    {
+      "titel": "Speziesdossier Pyronoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Pyronoiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#070605",
+      "tiefe": "#0f0d0b",
+      "akzent": "#b4a498",
+      "sand": "#baa58f",
+      "moos": "#949676",
+      "ozean": "#768181",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#3f342c"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Bahn"
+      ],
+      [
+        "Material",
+        "Zusammensetzung"
+      ],
+      [
+        "Zeit",
+        "Herkunft"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Zusammensetzung": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Zusammensetzung von Trojaner von Ushara III.",
+      "abschnitte": [
+        {
+          "titel": "Material",
+          "liste": [
+            "Silikate",
+            "Eisen und Nickel",
+            "Seltene Metalle"
+          ],
+          "schichten": [
+            [
+              "Regolith",
+              "Staub und Gesteinsschutt"
+            ],
+            [
+              "Gesteinsmantel",
+              "Silikate und Metalle"
+            ],
+            [
+              "Kern",
+              "Metallreich"
+            ]
+          ]
+        }
+      ]
+    },
+    "Bahn": {
+      "gruppe": "Wissenschaft",
+      "icon": "◌",
+      "intro": "Bahn von Trojaner von Ushara III.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Ushara"
+            ],
+            [
+              "Große Halbachse",
+              "0,5715 AE (85,5 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,04"
+            ],
+            [
+              "Bahnneigung",
+              "4°"
+            ],
+            [
+              "Umlaufzeit",
+              "178,7 Tage"
+            ],
+            [
+              "Einstrahlung",
+              "0,919-fach der Erde"
+            ]
+          ]
+        }
+      ]
+    },
+    "Herkunft": {
+      "gruppe": "Weitere",
+      "icon": "⧗",
+      "intro": "Herkunft von Trojaner von Ushara III.",
+      "abschnitte": [
+        {
+          "titel": "Herkunft",
+          "text": [
+            "Trojaner von Ushara III ist ein Überrest aus der Entstehungszeit des Kharuun-Systems."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Trojaner von Ushara III auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Trojaner von Ushara III",
+          "text": [
+            "Am vorauseilenden Lagrange-Punkt L4 von Ushara III sammelt sich eine Gruppe von Trojaner-Asteroiden. Der größte Körper ist ein doppelköpfiger Kontaktasteroid von rund 120 km Länge.",
+            "Trojaner von Ushara III umkreist Ushara in 0,572 AE Abstand und braucht für einen Umlauf 178,7 Tage."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Asteroid"
+            ],
+            [
+              "Sternsystem",
+              "Kharuun-System"
+            ],
+            [
+              "Zentralkörper",
+              "Ushara"
+            ],
+            [
+              "Große Halbachse",
+              "0,572 AE"
+            ],
+            [
+              "Umlaufzeit",
+              "178,7 Tage"
+            ],
+            [
+              "Durchmesser",
+              "120 km"
+            ],
+            [
+              "Masse",
+              "2,44 · 10^18 kg"
+            ],
+            [
+              "Schwerkraft",
+              "4,52 cm/s²"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -7 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Kharuun",
+          "text": [
+            "Das Kharuun-System ist die Heimat der Pyronoiden: Ihr Planet Kharuun umkreist Ushara."
+          ],
+          "verweise": [
+            [
+              "Kharuun",
+              "inhalte/himmelskoerper/planeten/details/dammernder-vulkanplanet-mit-gluhenden-lavaseen/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Pyronoiden",
+              "inhalte/spezies/Biologische Spezies/Pyronoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Trojaner von Ushara III im Kharuun-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Ushara"
+            ],
+            [
+              "Große Halbachse",
+              "0,5715 AE (85,5 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,04"
+            ],
+            [
+              "Bahnneigung",
+              "4°"
+            ],
+            [
+              "Umlaufzeit",
+              "178,7 Tage"
+            ],
+            [
+              "Einstrahlung",
+              "0,919-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Ushara · Stern",
+              "Orangefarbener Zwerg (K3 V)"
+            ],
+            [
+              "Ushara I · 0,02 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Kharuun · 0,36 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Ushara III · 0,57 AE",
+              "Gasriese"
+            ],
+            [
+              "Ushara IV · 4,8 AE",
+              "Eisriese"
+            ],
+            [
+              "Schlackengürtel · 1,3–2,1 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 30–42 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Ushara",
+              "inhalte/himmelskoerper/sterne/details/orangefarbener-k-stern-im-all/hauptseite/index.html"
+            ],
+            [
+              "Ushara I",
+              "inhalte/himmelskoerper/planeten/details/gluhender-exoplanet-mit-mineraldampfschweif/hauptseite/index.html"
+            ],
+            [
+              "Kharuun",
+              "inhalte/himmelskoerper/planeten/details/dammernder-vulkanplanet-mit-gluhenden-lavaseen/hauptseite/index.html"
+            ],
+            [
+              "Ushara III",
+              "inhalte/himmelskoerper/planeten/details/warmer-gestreifter-gasriese-im-all/hauptseite/index.html"
+            ],
+            [
+              "Ushara IV",
+              "inhalte/himmelskoerper/planeten/details/kalter-neptun-unter-fernem-sternlicht/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Trojaner von Ushara III.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "60 km"
+            ],
+            [
+              "Masse",
+              "2,44 · 10^18 kg"
+            ],
+            [
+              "Mittlere Dichte",
+              "2,7 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "0,05 m/s² (0,005 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "0,07 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Trojaner von Ushara III.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Trojaner von Ushara III besteht aus Material, das sich bei der Entstehung des Kharuun-Systems nicht zu einem Planeten vereinte."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Trojaner von Ushara III.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Ist der Körper ein Bruchstück eines größeren Körpers?",
+            "Welche Rohstoffe birgt er?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Trojaner von Ushara III ist mit allen Bahndaten im Kharuun-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=kharuun-stern&objekt=kharuun-trojaner"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Trojaner von Ushara III.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Am vorauseilenden Lagrange-Punkt L4 von Ushara III sammelt sich eine Gruppe von Trojaner-Asteroiden. Der größte Körper ist ein doppelköpfiger Kontaktasteroid von rund 120 km Länge."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Trojaner von Ushara III.",
+      "abschnitte": [
+        {
+          "titel": "Trojaner von Ushara III – Archivbild",
+          "bild": true,
+          "bildtext": "Trojaner von Ushara III"
+        }
+      ]
+    }
+  }
+}

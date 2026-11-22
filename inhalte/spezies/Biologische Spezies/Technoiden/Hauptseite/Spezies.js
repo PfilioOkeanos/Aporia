@@ -6,3 +6,6 @@ if (matchMedia("(max-width: 760px)").matches) {
     document.querySelector("[data-aporia-sidebar]").setAttribute("data-sidebar-default-collapsed", "");
 }
 applyAporiaRoutes(document);
+
+// Heimatwelt-Kasten (Planetendossier + Sternenkarte) für Spezies mit Heimatwelt
+import "../../../_gemeinsam/heimatwelt-verweis.js";

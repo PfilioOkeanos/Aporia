@@ -1,0 +1,285 @@
+{
+  "systemName": "Ixar-System",
+  "praefix": "kyreth-",
+  "lage": {
+    "entfernungLj": 18,
+    "richtung": [
+      0.2,
+      0.85,
+      -0.3
+    ]
+  },
+  "einzelstern": true,
+  "stern": {
+    "id": "kyreth-stern",
+    "name": "Ixar",
+    "typ": "Gelber Zwerg (G9 V)",
+    "masseSonne": 0.9,
+    "radiusSonne": 0.92,
+    "leuchtkraftSonne": 0.68,
+    "temperaturK": 5400,
+    "alterMrd": 4.6,
+    "farbe": [
+      1,
+      0.86,
+      0.62
+    ],
+    "emissionsfarbe": [
+      1,
+      0.89,
+      0.65
+    ],
+    "emission": 1.12,
+    "bild": {
+      "art": "sterne",
+      "suche": "gelb|Sonne|orange|K-Stern|Hauptreihe"
+    },
+    "beschreibung": "Ixar ist ein ruhiger gelber Zwerg der Spektralklasse G9 V mit 90 % der Sonnenmasse und 68 % ihrer Leuchtkraft – Zentralstern von Kyreth, der Heimatwelt der Elektrozoiden."
+  },
+  "koerper": [
+    {
+      "id": "kyreth-ixar-i",
+      "name": "Ixar I",
+      "typ": "Gesteinsplanet",
+      "um": "kyreth-stern",
+      "aAE": 0.38,
+      "e": 0.04,
+      "i": 1.5,
+      "knoten": 40,
+      "peri": 90,
+      "phase": 200,
+      "radiusKm": 4900,
+      "masseErde": 0.45,
+      "albedo": 0.14,
+      "farbe": [
+        0.62,
+        0.52,
+        0.44
+      ],
+      "bild": {
+        "art": "planeten",
+        "suche": "Felsplanet|Krater|Basalt"
+      },
+      "beschreibung": "Ixar I ist ein heißer, trockener Gesteinsplanet mit dünner Atmosphäre."
+    },
+    {
+      "id": "kyreth-planet",
+      "name": "Kyreth",
+      "typ": "Gesteinsplanet",
+      "um": "kyreth-stern",
+      "aAE": 0.83,
+      "e": 0.02,
+      "i": 0,
+      "knoten": 40,
+      "peri": 90,
+      "phase": 30,
+      "radiusKm": 6600,
+      "masseErde": 1.2,
+      "albedo": 0.32,
+      "farbe": [
+        0.42,
+        0.58,
+        0.4
+      ],
+      "bild": {
+        "art": "planeten",
+        "slug": "lebender-planet-mit-grunen-wetterswirbeln"
+      },
+      "beschreibung": "Kyreth ist die Heimatwelt der Elektrozoiden: eine feuchtwarme Landwelt mit mineralisch vielfältigen Böden, ausgedehnter Vegetation und ungewöhnlich gewitterreichem Wetter.",
+      "zielTemperaturC": 17
+    },
+    {
+      "id": "kyreth-ressa",
+      "name": "Ressa",
+      "typ": "Mond",
+      "um": "kyreth-planet",
+      "periodeTage": 22,
+      "e": 0.02,
+      "i": 2,
+      "knoten": 30,
+      "peri": 0,
+      "phase": 100,
+      "radiusKm": 1300,
+      "masseErde": 0.0055,
+      "farbe": [
+        0.74,
+        0.7,
+        0.66
+      ],
+      "bild": {
+        "art": "monde",
+        "slug": "grauer-mond-mit-kolossalem-berggrat"
+      },
+      "beschreibung": "Ressa ist der große Mond Kyreths, ein verkraterter Gesteinsmond, dessen Gezeiten die Küstensümpfe und Flussmündungen bewegen."
+    },
+    {
+      "id": "kyreth-ulm",
+      "name": "Ulm",
+      "typ": "Mond",
+      "um": "kyreth-planet",
+      "periodeTage": 5.5,
+      "e": 0.03,
+      "i": 5,
+      "knoten": 30,
+      "peri": 0,
+      "phase": 300,
+      "radiusKm": 210,
+      "masseErde": 0.00002,
+      "farbe": [
+        0.56,
+        0.52,
+        0.5
+      ],
+      "bild": {
+        "art": "monde",
+        "slug": "dunkler-kohlenstoffreicher-mond-mit-eisigen-kratern"
+      },
+      "beschreibung": "Ulm ist ein kleiner, unregelmäßiger Mond auf enger Bahn – vermutlich ein eingefangener Asteroid."
+    },
+    {
+      "id": "kyreth-ixar-iii",
+      "name": "Ixar III",
+      "typ": "Gesteinsplanet",
+      "um": "kyreth-stern",
+      "aAE": 1.6,
+      "e": 0.04,
+      "i": 1.5,
+      "knoten": 40,
+      "peri": 90,
+      "phase": 260,
+      "radiusKm": 4400,
+      "masseErde": 0.35,
+      "albedo": 0.28,
+      "farbe": [
+        0.66,
+        0.54,
+        0.46
+      ],
+      "bild": {
+        "art": "planeten",
+        "suche": "Gefrorener Planet|kaltem Sternenlicht|Felsplanet|Wüste"
+      },
+      "beschreibung": "Ixar III ist eine kalte, trockene Gesteinswelt am äußeren Rand der habitablen Zone."
+    },
+    {
+      "id": "kyreth-glimmergurtel",
+      "name": "Glimmergürtel",
+      "typ": "Asteroidengürtel",
+      "ringUm": "kyreth-stern",
+      "ringeAE": [
+        2.4,
+        2.65,
+        2.9,
+        3.15
+      ],
+      "anzahl": 200,
+      "groesseKm": 320,
+      "mindestPx": 5.5,
+      "farbe": [
+        0.62,
+        0.58,
+        0.52
+      ],
+      "bild": {
+        "art": "sternensysteme",
+        "suche": "Asteroidengürtel"
+      },
+      "beschreibung": "Der Glimmergürtel zwischen 2,4 und 3,15 AE besteht aus silikatischen und metallreichen Gesteinsbrocken."
+    },
+    {
+      "id": "kyreth-ixar-iv",
+      "name": "Ixar IV",
+      "typ": "Gasriese",
+      "um": "kyreth-stern",
+      "aAE": 5.6,
+      "e": 0.04,
+      "i": 1.5,
+      "knoten": 40,
+      "peri": 90,
+      "phase": 40,
+      "radiusKm": 66000,
+      "masseErde": 280,
+      "albedo": 0.4,
+      "farbe": [
+        0.82,
+        0.72,
+        0.56
+      ],
+      "bild": {
+        "art": "planeten",
+        "suche": "Gasriese|Wolkenbänder|Jupiter"
+      },
+      "beschreibung": "Ixar IV ist ein großer Gasriese mit kräftigen Wolkenbändern und einer starken Magnetosphäre."
+    },
+    {
+      "id": "kyreth-ixar-v",
+      "name": "Ixar V",
+      "typ": "Eisriese",
+      "um": "kyreth-stern",
+      "aAE": 14,
+      "e": 0.04,
+      "i": 1.5,
+      "knoten": 40,
+      "peri": 90,
+      "phase": 310,
+      "radiusKm": 25000,
+      "masseErde": 18,
+      "albedo": 0.3,
+      "farbe": [
+        0.5,
+        0.68,
+        0.86
+      ],
+      "bild": {
+        "art": "planeten",
+        "suche": "Eisriese|Neptun"
+      },
+      "beschreibung": "Ixar V ist ein ferner, blassblauer Eisriese."
+    },
+    {
+      "id": "kyreth-ladungskomet",
+      "name": "Ladungsschweif",
+      "typ": "Komet",
+      "um": "kyreth-stern",
+      "anomalie": true,
+      "aAE": 13,
+      "e": 0.91,
+      "i": 26,
+      "knoten": 120,
+      "peri": 60,
+      "phase": 172,
+      "radiusKm": 6,
+      "masseErde": 0,
+      "farbe": [
+        0.62,
+        0.82,
+        1
+      ],
+      "bild": {
+        "art": "kometen",
+        "suche": "blau|Ionenschweif|Komet"
+      },
+      "beschreibung": "Ein Komet mit ungewöhnlich hellem, verzweigtem Ionenschweif, der alle 49 Jahre das innere System erreicht. Elektrozoiden registrieren bei seiner Wiederkehr verstärkte Störungen der atmosphärischen Felder."
+    },
+    {
+      "id": "kyreth-kometengebiet",
+      "name": "Äußeres Kometengebiet",
+      "typ": "Kometengebiet",
+      "ringUm": "kyreth-stern",
+      "ringeAE": [
+        38,
+        45,
+        52
+      ],
+      "anzahl": 200,
+      "groesseKm": 150,
+      "mindestPx": 4.5,
+      "farbe": [
+        0.56,
+        0.7,
+        0.86
+      ],
+      "beschreibung": "Ein ferner Gürtel aus Eiskörpern zwischen 38 und 52 AE."
+    }
+  ]
+}

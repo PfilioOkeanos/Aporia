@@ -1,0 +1,58 @@
+/* Spezies-Baukasten · gemeinsames Layout der Standard-Hauptseite (alle Spezies aus scripts/spezies/standard.mjs).
+   Farben kommen aus der jeweiligen <spezies>-basis.css (Variablen --st-*). Änderungen hier wirken auf alle Vorlagen-Spezies. */
+
+.st-hauptseite .st-hero { min-height: clamp(20rem, 32cqi, 28rem); }
+.st-hauptseite .st-hero-bild { width: 62% !important; object-position: center 35%; }
+
+/* Kopf ohne Bild: ruhiges Feld in der Akzentfarbe */
+.st-hero--ohne-bild { background: radial-gradient(ellipse 45% 70% at 78% 50%, color-mix(in srgb, var(--st-violett) 22%, transparent), transparent 70%), var(--st-bg); }
+.st-feld { position: absolute; inset: 0 0 0 auto; z-index: -1; width: 55%; pointer-events: none; mask-image: linear-gradient(90deg, transparent, #000 35%); }
+.st-feld i { position: absolute; top: 50%; left: 58%; width: var(--g); aspect-ratio: 1; border: 1px solid var(--st-violett); border-radius: 50%; opacity: 0; transform: translate(-50%, -50%) scale(.6); animation: st-welle 7s ease-out infinite; }
+.st-feld i:nth-child(1) { --g: 10rem; }
+.st-feld i:nth-child(2) { --g: 18rem; animation-delay: 2.3s; border-color: var(--st-cyan); }
+.st-feld i:nth-child(3) { --g: 26rem; animation-delay: 4.6s; }
+.st-feld::before { content: ""; position: absolute; top: 50%; left: 58%; width: .9rem; aspect-ratio: 1; border-radius: 50%; background: var(--st-violett-hell); transform: translate(-50%, -50%); box-shadow: 0 0 1.4rem .3rem var(--st-violett); }
+@keyframes st-welle { 0% { opacity: 0; transform: translate(-50%, -50%) scale(.55); } 25% { opacity: .5; } 100% { opacity: 0; transform: translate(-50%, -50%) scale(1.25); } }
+
+/* Start: Kurzprofil | Aus dem Dossier */
+.st-start { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.4fr); gap: var(--st-raum); align-items: start; }
+.st-klapp-liste { display: grid; gap: .45rem; }
+
+/* Themenkacheln */
+.st-themen, .st-karussell-block, .st-leiste, .st-stand, .st-layout--fuss { margin-top: var(--st-raum); }
+.st-themen-raster { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--st-raum); }
+.st-thema { position: relative; display: grid; align-content: end; gap: .25rem; min-height: 9.5rem; padding: .85rem; overflow: hidden; isolation: isolate; color: var(--st-text) !important; text-decoration: none; }
+.st-thema-bild { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; object-position: center 30%; transition: transform .6s ease; }
+.st-thema::before { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(0deg, var(--st-bg) 8%, color-mix(in srgb, var(--st-bg) 80%, transparent) 50%, color-mix(in srgb, var(--st-bg) 15%, transparent)); }
+.st-thema--ohne-bild { align-content: start; }
+.st-thema--ohne-bild::before { background: radial-gradient(circle at 85% 15%, color-mix(in srgb, var(--st-violett) 14%, transparent), transparent 55%); }
+.st-thema:hover { border-color: var(--st-violett); box-shadow: 0 0 1.1rem color-mix(in srgb, var(--st-violett) 30%, transparent); }
+.st-thema:hover .st-thema-bild { transform: scale(1.05); }
+.st-thema-icon { display: grid; place-items: center; width: 2.2rem; height: 2.2rem; margin-bottom: .2rem; border: 1px solid var(--st-linie-hell); border-radius: 50%; color: var(--st-violett); font-size: 1.05rem; }
+.st-thema strong { font: 600 1.05rem/1.2 var(--st-serif); }
+.st-thema-text { color: var(--st-leise); font-size: .82rem; line-height: 1.35; }
+
+/* Leisten (Klänge, Forschung) */
+.st-chips { display: flex; flex-wrap: wrap; gap: .4rem; }
+.st-chips a { display: inline-flex; align-items: center; gap: .4rem; padding: .35rem .75rem; border: 1px solid var(--st-linie); border-radius: 999px; background: color-mix(in srgb, var(--st-bg) 70%, transparent); color: var(--st-text) !important; font-size: .82rem; text-decoration: none; }
+.st-chips a:hover { border-color: var(--st-cyan); }
+.st-chips b { color: var(--st-cyan); font: 600 .7rem/1 ui-monospace, Consolas, monospace; }
+
+/* Dossierstand: was fehlt und wohin es gehört */
+.st-stand-liste { display: grid; gap: .4rem; margin: .6rem 0 0; padding: 0; list-style: none; }
+.st-stand-liste li { display: grid; gap: .15rem; padding: .5rem .7rem; border: 1px dashed var(--st-linie); border-radius: 10px; }
+.st-stand-liste strong { font-size: .88rem; }
+.st-stand-liste code { color: var(--st-leise); font: .74rem/1.3 ui-monospace, Consolas, monospace; overflow-wrap: anywhere; }
+
+@container (max-width: 900px) {
+    .st-start { grid-template-columns: minmax(0, 1fr); }
+    .st-themen-raster { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@container (max-width: 640px) {
+    .st-hauptseite .st-hero-bild { width: 100% !important; }
+    .st-feld { width: 100%; opacity: .5; }
+}
+@container (max-width: 440px) {
+    .st-themen-raster { grid-template-columns: minmax(0, 1fr); }
+}
+@media (prefers-reduced-motion: reduce) { .st-feld i { animation: none; opacity: .3; } }

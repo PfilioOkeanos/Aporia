@@ -1,0 +1,28 @@
+/* Gemeinsamer Baustein „Aus dem Infomaterial“: ergänzende Kapitel auf älteren Speziesseiten.
+   Übernimmt Schrift und Farben der jeweiligen Seite (currentColor); keine eigene Farbwelt. */
+.info-ergaenzung { grid-column: 1 / -1; flex: 1 1 100%; align-self: stretch; box-sizing: border-box; width: min(100% - 2rem, 78rem); margin: 1.5rem auto 2rem; padding: clamp(.9rem, 2vw, 1.4rem); border: 1px solid color-mix(in srgb, currentColor 22%, transparent); border-radius: 14px; background: color-mix(in srgb, currentColor 4%, transparent); }
+.info-ergaenzung > h2 { margin: 0 0 .3rem; font-size: clamp(1.15rem, 2vw, 1.45rem); }
+.info-ergaenzung-hinweis { margin: 0 0 .9rem; opacity: .75; font-size: .88rem; }
+.info-ergaenzung-werkzeug { display: flex; flex-wrap: wrap; gap: .4rem; margin-bottom: .8rem; }
+.info-ergaenzung-werkzeug button { padding: .3rem .8rem; border: 1px solid color-mix(in srgb, currentColor 35%, transparent); border-radius: 999px; background: transparent; color: inherit; font: inherit; font-size: .8rem; cursor: pointer; }
+.info-kapitel { border-top: 1px solid color-mix(in srgb, currentColor 16%, transparent); }
+.info-kapitel summary { display: flex; align-items: baseline; gap: .6rem; padding: .65rem .2rem; cursor: pointer; list-style: none; font-weight: 600; }
+.info-kapitel summary::-webkit-details-marker { display: none; }
+.info-kapitel summary::after { content: "▾"; margin-left: auto; opacity: .6; transition: transform .2s; }
+.info-kapitel[open] summary::after { transform: rotate(180deg); }
+.info-kapitel summary .info-nr { min-width: 2.2rem; opacity: .65; font: 600 .78rem/1 ui-monospace, Consolas, monospace; }
+.info-text { display: grid; gap: .5rem; max-width: 80ch; padding: 0 .2rem 1rem 2.8rem; font-size: .94rem; line-height: 1.6; }
+.info-text :is(p, ul, ol, dl, h3) { margin: 0; }
+.info-text h3 { margin-top: .4rem; font-size: .85rem; letter-spacing: .06em; text-transform: uppercase; opacity: .85; }
+.info-text ul, .info-text ol { padding-left: 1.2rem; }
+.info-text dl > div { display: grid; grid-template-columns: minmax(8rem, .7fr) minmax(0, 1.3fr); gap: .7rem; padding: .25rem 0; border-bottom: 1px solid color-mix(in srgb, currentColor 10%, transparent); }
+.info-text dt { opacity: .7; }
+.info-text dd { margin: 0; }
+.info-text table { width: 100%; border-collapse: collapse; font-size: .88rem; }
+.info-text :is(th, td) { padding: .35rem .5rem; border-bottom: 1px solid color-mix(in srgb, currentColor 12%, transparent); text-align: left; vertical-align: top; }
+.info-text > div[class$="-tabelle"] { overflow-x: auto; }
+.info-quelle { opacity: .6; font-size: .76rem; }
+@media (max-width: 640px) {
+    .info-text { padding-left: .2rem; }
+    .info-text dl > div { grid-template-columns: minmax(0, 1fr); gap: .1rem; }
+}

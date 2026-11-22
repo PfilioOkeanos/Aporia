@@ -1,0 +1,626 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Halvorn III",
+  "genitiv": "von Halvorn III",
+  "dossierName": "Halvorn III-Dossier",
+  "klasse": "Gesteinsplanet",
+  "intro": "Halvorn III ist eine kalte, trockene Gesteinswelt. Halvorn III umkreist Halvorn in 1,42 AE Abstand und braucht für einen Umlauf 658,9 Tage.",
+  "globusDaten": {
+    "planet": "lebender-felsplanet-im-all",
+    "klasse": "Gestein",
+    "radius": 4300000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=dravelon-stern&objekt=dravelon-halvorn-iii",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-A49130D268"
+    ],
+    [
+      "Typ",
+      "Gesteinsplanet"
+    ],
+    [
+      "Sternsystem",
+      "Halvorn-System"
+    ],
+    [
+      "Zentralkörper",
+      "Halvorn"
+    ],
+    [
+      "Große Halbachse",
+      "1,42 AE"
+    ],
+    [
+      "Umlaufzeit",
+      "658,9 Tage"
+    ],
+    [
+      "Durchmesser",
+      "8.600 km"
+    ],
+    [
+      "Masse",
+      "0,5 Erdmassen"
+    ],
+    [
+      "Schwerkraft",
+      "1,1 g"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -88 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Halvorn-System"
+    ],
+    [
+      "Zentralstern",
+      "Halvorn",
+      "inhalte/himmelskoerper/sterne/details/sonnenahnliche-akkretionsscheibe-mit-schmaler-ringlucke/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "1,42 AE"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Halvorn III im Halvorn-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=dravelon-stern&objekt=dravelon-halvorn-iii",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Halvorn",
+      "href": "inhalte/himmelskoerper/sterne/details/sonnenahnliche-akkretionsscheibe-mit-schmaler-ringlucke/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Dendroarchen",
+      "titel": "Dravelon",
+      "href": "inhalte/himmelskoerper/planeten/details/lebender-jadeplanet-mit-flussbecken/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Dendroarchen",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Dendroarchen/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Halvorn-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=dravelon-stern&objekt=dravelon-halvorn-iii"
+    },
+    {
+      "titel": "Speziesdossier Dendroarchen",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Dendroarchen/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#090706",
+      "tiefe": "#13100d",
+      "akzent": "#cab6a9",
+      "sand": "#ceb599",
+      "moos": "#a8ab85",
+      "ozean": "#869495",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#4e4037"
+    }
+  },
+  "kapitel": {
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Halvorn III auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Halvorn III",
+          "text": [
+            "Halvorn III ist eine kalte, trockene Gesteinswelt.",
+            "Halvorn III umkreist Halvorn in 1,42 AE Abstand und braucht für einen Umlauf 658,9 Tage."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Gesteinsplanet"
+            ],
+            [
+              "Sternsystem",
+              "Halvorn-System"
+            ],
+            [
+              "Zentralkörper",
+              "Halvorn"
+            ],
+            [
+              "Große Halbachse",
+              "1,42 AE"
+            ],
+            [
+              "Umlaufzeit",
+              "658,9 Tage"
+            ],
+            [
+              "Durchmesser",
+              "8.600 km"
+            ],
+            [
+              "Masse",
+              "0,5 Erdmassen"
+            ],
+            [
+              "Schwerkraft",
+              "1,1 g"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -88 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Dravelon",
+          "text": [
+            "Das Halvorn-System ist die Heimat der Dendroarchen: Ihr Planet Dravelon umkreist Halvorn."
+          ],
+          "verweise": [
+            [
+              "Dravelon",
+              "inhalte/himmelskoerper/planeten/details/lebender-jadeplanet-mit-flussbecken/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Dendroarchen",
+              "inhalte/spezies/Gigantische Lebensformen/Dendroarchen/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Halvorn III im Halvorn-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Halvorn"
+            ],
+            [
+              "Große Halbachse",
+              "1,42 AE (212,4 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,04"
+            ],
+            [
+              "Bahnneigung",
+              "1,5°"
+            ],
+            [
+              "Umlaufzeit",
+              "658,9 Tage"
+            ],
+            [
+              "Einstrahlung",
+              "0,273-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Am Himmel von Halvorn III",
+          "text": [
+            "Halvorn erscheint von hier aus etwa 0,32° groß (die Sonne von der Erde: 0,53°)."
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Halvorn · Stern",
+              "Orangefarbener Zwerg (K0 V)"
+            ],
+            [
+              "Halvorn I · 0,35 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Dravelon · 0,75 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Halvorn III · 1,42 AE · dieses Dossier",
+              "Gesteinsplanet"
+            ],
+            [
+              "Halvorn IV · 4,8 AE",
+              "Gasriese"
+            ],
+            [
+              "Halvorn V · 12 AE",
+              "Eisriese"
+            ],
+            [
+              "Rindengürtel · 2,2–3 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 32–46 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Halvorn",
+              "inhalte/himmelskoerper/sterne/details/sonnenahnliche-akkretionsscheibe-mit-schmaler-ringlucke/hauptseite/index.html"
+            ],
+            [
+              "Halvorn I",
+              "inhalte/himmelskoerper/planeten/details/lebender-basaltplanet-im-orbitalen-dammerlicht/hauptseite/index.html"
+            ],
+            [
+              "Dravelon",
+              "inhalte/himmelskoerper/planeten/details/lebender-jadeplanet-mit-flussbecken/hauptseite/index.html"
+            ],
+            [
+              "Halvorn IV",
+              "inhalte/himmelskoerper/planeten/details/gasriese-unter-zwei-sonnen/hauptseite/index.html"
+            ],
+            [
+              "Halvorn V",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=dravelon-stern&objekt=dravelon-halvorn-v"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Halvorn III.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "4.300 km"
+            ],
+            [
+              "Masse",
+              "0,5 Erdmassen"
+            ],
+            [
+              "Mittlere Dichte",
+              "8,97 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "10,77 m/s² (1,098 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "9,63 km/s"
+            ]
+          ],
+          "vergleich": {
+            "mit": "Erde",
+            "werte": [
+              [
+                "Durchmesser",
+                8600,
+                12742,
+                "km"
+              ],
+              [
+                "Masse",
+                0.5,
+                1,
+                "Erdmassen"
+              ],
+              [
+                "Schwerkraft",
+                1.1,
+                1,
+                "g"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "Planetare Struktur": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Planetare Struktur von Halvorn III.",
+      "abschnitte": [
+        {
+          "titel": "Schalenbau",
+          "schichten": [
+            [
+              "Kruste",
+              "Silikatgestein"
+            ],
+            [
+              "Mantel",
+              "Dichteres Silikatgestein"
+            ],
+            [
+              "Kern",
+              "Eisen und Nickel"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geografie": {
+      "gruppe": "Natur",
+      "icon": "△",
+      "intro": "Geografie von Halvorn III.",
+      "abschnitte": [
+        {
+          "titel": "Oberfläche",
+          "text": [
+            "Die Oberfläche von Halvorn III ist kalt."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Halvorn III.",
+      "abschnitte": [
+        {
+          "titel": "Gashülle",
+          "text": [
+            "Halvorn III hält eine dünne, kalte Gashülle fest."
+          ],
+          "balken": {
+            "werte": [
+              [
+                "Kohlendioxid",
+                62
+              ],
+              [
+                "Stickstoff",
+                33
+              ],
+              [
+                "Argon",
+                5
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Halvorn III.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 1,42 AE Abstand zu Halvorn liegt die Gleichgewichtstemperatur von Halvorn III bei rund -88 °C – kalt."
+          ]
+        }
+      ]
+    },
+    "Gewässer": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gewässer von Halvorn III.",
+      "abschnitte": [
+        {
+          "titel": "Wasser",
+          "text": [
+            "Wasser gibt es höchstens als Eis in Kratern und im Untergrund."
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Halvorn III.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Halvorn III ist groß genug, um im Inneren noch Wärme zu speichern; Spuren alter vulkanischer Tätigkeit sind wahrscheinlich."
+          ]
+        }
+      ]
+    },
+    "Biosphäre": {
+      "gruppe": "Natur",
+      "icon": "❧",
+      "intro": "Biosphäre von Halvorn III.",
+      "abschnitte": [
+        {
+          "titel": "Leben",
+          "text": [
+            "Auf Halvorn III ist kein Leben verzeichnet."
+          ]
+        }
+      ]
+    },
+    "Spezies": {
+      "gruppe": "Zivilisation",
+      "icon": "✿",
+      "intro": "Spezies von Halvorn III.",
+      "abschnitte": [
+        {
+          "titel": "Bewohner",
+          "text": [
+            "Halvorn III ist keine Heimat einer intelligenten Spezies."
+          ]
+        },
+        {
+          "titel": "Im System von Dravelon",
+          "text": [
+            "Das Halvorn-System ist die Heimat der Dendroarchen: Ihr Planet Dravelon umkreist Halvorn."
+          ],
+          "verweise": [
+            [
+              "Dravelon",
+              "inhalte/himmelskoerper/planeten/details/lebender-jadeplanet-mit-flussbecken/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Dendroarchen",
+              "inhalte/spezies/Gigantische Lebensformen/Dendroarchen/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Zivilisation": {
+      "gruppe": "Zivilisation",
+      "icon": "▥",
+      "intro": "Zivilisation von Halvorn III.",
+      "abschnitte": [
+        {
+          "titel": "Siedlungen",
+          "text": [
+            "Für Halvorn III sind keine dauerhaften Siedlungen verzeichnet."
+          ]
+        },
+        {
+          "titel": "Im System von Dravelon",
+          "text": [
+            "Das Halvorn-System ist die Heimat der Dendroarchen: Ihr Planet Dravelon umkreist Halvorn."
+          ],
+          "verweise": [
+            [
+              "Dravelon",
+              "inhalte/himmelskoerper/planeten/details/lebender-jadeplanet-mit-flussbecken/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Dendroarchen",
+              "inhalte/spezies/Gigantische Lebensformen/Dendroarchen/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Halvorn III.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Halvorn III entstand zusammen mit dem Halvorn-System vor rund 6 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Fraktionen": {
+      "gruppe": "Zivilisation",
+      "icon": "◇",
+      "intro": "Fraktionen von Halvorn III.",
+      "abschnitte": [
+        {
+          "titel": "Ansprüche",
+          "text": [
+            "Für Halvorn III sind keine Fraktionsansprüche verzeichnet."
+          ]
+        }
+      ]
+    },
+    "Rohstoffe": {
+      "gruppe": "Weitere",
+      "icon": "⬡",
+      "intro": "Rohstoffe von Halvorn III.",
+      "abschnitte": [
+        {
+          "titel": "Rohstoffe",
+          "liste": [
+            "Silikatgestein",
+            "Metallerze"
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Halvorn III.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Wie ist der innere Aufbau beschaffen?",
+            "Gab es früher eine dichtere Atmosphäre?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Halvorn III ist mit allen Bahndaten im Halvorn-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=dravelon-stern&objekt=dravelon-halvorn-iii"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Halvorn III.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Halvorn III ist eine kalte, trockene Gesteinswelt."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Halvorn III.",
+      "abschnitte": [
+        {
+          "titel": "Halvorn III – Archivbild",
+          "bild": true,
+          "bildtext": "Halvorn III"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,285 @@
+{
+  "systemName": "Morvath-System",
+  "praefix": "gorvhan-",
+  "lage": {
+    "entfernungLj": 33,
+    "richtung": [
+      -0.7,
+      -0.6,
+      -0.4
+    ]
+  },
+  "einzelstern": true,
+  "stern": {
+    "id": "gorvhan-stern",
+    "name": "Morvath",
+    "typ": "Orangefarbener Zwerg (K1 V)",
+    "masseSonne": 0.85,
+    "radiusSonne": 0.82,
+    "leuchtkraftSonne": 0.5,
+    "temperaturK": 5150,
+    "alterMrd": 7.8,
+    "farbe": [
+      1,
+      0.74,
+      0.48
+    ],
+    "emissionsfarbe": [
+      1,
+      0.77,
+      0.51
+    ],
+    "emission": 1.12,
+    "bild": {
+      "art": "sterne",
+      "suche": "gelb|Sonne|orange|K-Stern|Hauptreihe"
+    },
+    "beschreibung": "Morvath ist ein alter orangefarbener Zwerg der Spektralklasse K1 V mit 85 % der Sonnenmasse und 50 % ihrer Leuchtkraft – Zentralstern von Gorvhan, der Heimatwelt der Technoiden."
+  },
+  "koerper": [
+    {
+      "id": "gorvhan-morvath-i",
+      "name": "Morvath I",
+      "typ": "Gesteinsplanet",
+      "um": "gorvhan-stern",
+      "aAE": 0.3,
+      "e": 0.04,
+      "i": 1.5,
+      "knoten": 40,
+      "peri": 90,
+      "phase": 70,
+      "radiusKm": 3700,
+      "masseErde": 0.25,
+      "albedo": 0.12,
+      "farbe": [
+        0.6,
+        0.48,
+        0.4
+      ],
+      "bild": {
+        "art": "planeten",
+        "suche": "Felsplanet|Krater|Basalt"
+      },
+      "beschreibung": "Morvath I ist ein kleiner, glühend heißer Gesteinsplanet ohne Atmosphäre."
+    },
+    {
+      "id": "gorvhan-planet",
+      "name": "Gorvhan",
+      "typ": "Gesteinsplanet",
+      "um": "gorvhan-stern",
+      "aAE": 0.62,
+      "e": 0.06,
+      "i": 0,
+      "knoten": 40,
+      "peri": 90,
+      "phase": 150,
+      "radiusKm": 5400,
+      "masseErde": 0.56,
+      "albedo": 0.24,
+      "farbe": [
+        0.42,
+        0.3,
+        0.26
+      ],
+      "bild": {
+        "art": "planeten",
+        "slug": "die-zerbrochene-kruste"
+      },
+      "beschreibung": "Gorvhan ist die Heimatwelt der Technoiden: eine geologisch extrem aktive Welt aus Vulkangebirgen, Lavafeldern, Erzebenen und tiefen Höhlensystemen, mit wenig freiem Wasser.",
+      "zielTemperaturC": 46
+    },
+    {
+      "id": "gorvhan-ashur",
+      "name": "Ashur",
+      "typ": "Mond",
+      "um": "gorvhan-planet",
+      "periodeTage": 2.9,
+      "e": 0.04,
+      "i": 1,
+      "knoten": 30,
+      "peri": 0,
+      "phase": 100,
+      "radiusKm": 900,
+      "masseErde": 0.004,
+      "farbe": [
+        0.7,
+        0.58,
+        0.46
+      ],
+      "bild": {
+        "art": "monde",
+        "slug": "junger-rohmond-mit-gluhendem-staubhalo"
+      },
+      "beschreibung": "Ashur ist ein naher Gesteinsmond. Seine leicht exzentrische Bahn, die Krell über eine 4:1-Resonanz aufrechterhält, knetet Gorvhan durch Gezeitenkräfte und trägt zu dessen Vulkanismus bei."
+    },
+    {
+      "id": "gorvhan-krell",
+      "name": "Krell",
+      "typ": "Mond",
+      "um": "gorvhan-planet",
+      "periodeTage": 11.6,
+      "e": 0.02,
+      "i": 3,
+      "knoten": 30,
+      "peri": 0,
+      "phase": 250,
+      "radiusKm": 420,
+      "masseErde": 0.0004,
+      "farbe": [
+        0.58,
+        0.54,
+        0.5
+      ],
+      "bild": {
+        "art": "monde",
+        "slug": "riesiger-basaltmond-im-schwarzen-all"
+      },
+      "beschreibung": "Krell ist ein kleiner, dunkler Mond auf weiterer Bahn in 4:1-Resonanz mit Ashur."
+    },
+    {
+      "id": "gorvhan-morvath-iii",
+      "name": "Morvath III",
+      "typ": "Gesteinsplanet",
+      "um": "gorvhan-stern",
+      "aAE": 1.3,
+      "e": 0.04,
+      "i": 1.5,
+      "knoten": 40,
+      "peri": 90,
+      "phase": 20,
+      "radiusKm": 7600,
+      "masseErde": 2.1,
+      "albedo": 0.3,
+      "farbe": [
+        0.6,
+        0.62,
+        0.66
+      ],
+      "bild": {
+        "art": "planeten",
+        "suche": "Gefrorener Planet|kaltem Sternenlicht|Felsplanet|Wüste"
+      },
+      "beschreibung": "Morvath III ist eine kalte Super-Erde mit dichter, gefrorener Kruste."
+    },
+    {
+      "id": "gorvhan-erzgurtel",
+      "name": "Erzgürtel",
+      "typ": "Asteroidengürtel",
+      "ringUm": "gorvhan-stern",
+      "ringeAE": [
+        1.9,
+        2.15,
+        2.4,
+        2.65
+      ],
+      "anzahl": 200,
+      "groesseKm": 320,
+      "mindestPx": 5.5,
+      "farbe": [
+        0.62,
+        0.5,
+        0.42
+      ],
+      "bild": {
+        "art": "sternensysteme",
+        "suche": "Asteroidengürtel"
+      },
+      "beschreibung": "Der Erzgürtel zwischen 1,9 und 2,65 AE ist auffallend reich an metallischen Brocken."
+    },
+    {
+      "id": "gorvhan-morvath-iv",
+      "name": "Morvath IV",
+      "typ": "Gasriese",
+      "um": "gorvhan-stern",
+      "aAE": 4.1,
+      "e": 0.04,
+      "i": 1.5,
+      "knoten": 40,
+      "peri": 90,
+      "phase": 280,
+      "radiusKm": 60000,
+      "masseErde": 150,
+      "albedo": 0.42,
+      "farbe": [
+        0.84,
+        0.7,
+        0.54
+      ],
+      "bild": {
+        "art": "planeten",
+        "suche": "Gasriese|Wolkenbänder|Jupiter"
+      },
+      "beschreibung": "Morvath IV ist ein ockerfarbener Gasriese mit breiten Wolkenbändern."
+    },
+    {
+      "id": "gorvhan-morvath-v",
+      "name": "Morvath V",
+      "typ": "Eisriese",
+      "um": "gorvhan-stern",
+      "aAE": 10,
+      "e": 0.04,
+      "i": 1.5,
+      "knoten": 40,
+      "peri": 90,
+      "phase": 180,
+      "radiusKm": 23000,
+      "masseErde": 12,
+      "albedo": 0.3,
+      "farbe": [
+        0.52,
+        0.66,
+        0.82
+      ],
+      "bild": {
+        "art": "planeten",
+        "suche": "Eisriese|Neptun"
+      },
+      "beschreibung": "Morvath V ist ein ferner Eisriese."
+    },
+    {
+      "id": "gorvhan-resonanzbrocken",
+      "name": "Resonanzbrocken",
+      "typ": "Asteroid",
+      "um": "gorvhan-stern",
+      "anomalie": true,
+      "aAE": 2.3,
+      "e": 0.08,
+      "i": 6,
+      "knoten": 200,
+      "peri": 30,
+      "phase": 90,
+      "radiusKm": 22,
+      "masseErde": 0,
+      "farbe": [
+        0.72,
+        0.56,
+        0.42
+      ],
+      "bild": {
+        "art": "asteroiden",
+        "suche": "Kristall|metall|Asteroid"
+      },
+      "beschreibung": "Ein metallreicher Asteroid im Erzgürtel, an dem Messungen ungewöhnlich lang anhaltende Schwingungsresonanzen zeigen. Die Ursache ist ungeklärt."
+    },
+    {
+      "id": "gorvhan-kometengebiet",
+      "name": "Äußeres Kometengebiet",
+      "typ": "Kometengebiet",
+      "ringUm": "gorvhan-stern",
+      "ringeAE": [
+        30,
+        37,
+        44
+      ],
+      "anzahl": 200,
+      "groesseKm": 150,
+      "mindestPx": 4.5,
+      "farbe": [
+        0.56,
+        0.7,
+        0.86
+      ],
+      "beschreibung": "Ein ferner Gürtel aus Eiskörpern zwischen 30 und 44 AE."
+    }
+  ]
+}

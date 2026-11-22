@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../dendroarchen-basis.css">
     <link rel="stylesheet" href="gameplay.css">
     <script type="module" src="gameplay.js"></script>
+    <link rel="stylesheet" href="../../../_gemeinsam/info-ergaenzung.css">
 </head>
 <body class="dendroarchen den-unterseite den-gameplay" data-page="spezies-gigantic-1-gameplay" data-section="spezies">
     <div data-aporia-topbar></div>
@@ -238,7 +239,16 @@
                     </nav>
                 </aside>
             </div>
-        </main>
+        <section class="info-ergaenzung" id="aus-dem-infomaterial" aria-labelledby="info-ergaenzung-titel">
+    <h2 id="info-ergaenzung-titel">Aus dem Infomaterial</h2>
+    <p class="info-ergaenzung-hinweis">Weitere Kapitel aus Info_material · Dendroarchen, die auf dieser Seite noch nicht ausgearbeitet waren. Zum Lesen aufklappen.</p>
+    <div class="info-ergaenzung-werkzeug"><button type="button" onclick="this.closest('.info-ergaenzung').querySelectorAll('details').forEach((d) => d.open = true)">Alle aufklappen</button><button type="button" onclick="this.closest('.info-ergaenzung').querySelectorAll('details').forEach((d) => d.open = false)">Alle zuklappen</button></div>
+    <details class="info-kapitel" id="info-k-steckbrief"><summary><span class="info-nr">◇</span>Steckbrief – Gameplay</summary><div class="info-text">
+<dl class="ie-fakten"><div><dt>Spiel</dt><dd>Unter fremden Kronen</dd></div><div><dt>Universum</dt><dd>APORIA</dd></div><div><dt>Rolle</dt><dd>Gigantische erforschbare Lebensformen, bewohnbare Organismen und komplexe Ökosysteme</dd></div></dl>
+<p class="info-quelle">Quelle: Info_material · Dendroarchen · Gameplay/.gitkeep</p>
+    </div></details>
+</section><!-- /info-ergaenzung -->
+</main>
     </div>
 </body>
 </html>

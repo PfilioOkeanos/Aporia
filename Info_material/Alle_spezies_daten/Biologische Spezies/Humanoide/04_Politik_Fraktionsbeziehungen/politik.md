@@ -34,13 +34,12 @@ Zu diesen Einrichtungen gehören beispielsweise die Vereinten Nationen und zahlr
 
 ## Politische Zugehörigkeit innerhalb von Aporia
 
-Im Aporia-Universum existieren fünf Großmächte:
+Im Aporia-Universum existieren vier Großmächte:
 
 1. Konföderation
 2. Konsortium
 3. Protektorat
 4. Synaptorat
-5. Zirkel der Erhabenen
 
 Menschen sind verbindlich in drei dieser Großmächte vertreten.
 
@@ -62,9 +61,9 @@ Menschen sind außerdem im Protektorat vertreten.
 
 Das Protektorat verwendet ein System, in dem Gildenpunkte die Berechtigung zur Durchführung bestimmter Handlungen regeln.
 
-### Synaptorat und Zirkel der Erhabenen
+### Synaptorat
 
-Eine menschliche Zugehörigkeit zu diesen beiden Großmächten ist bislang nicht festgelegt.
+Eine menschliche Zugehörigkeit zu dieser Großmacht ist bislang nicht festgelegt.
 
 ## Politische Stellung der Erde
 

@@ -1,0 +1,679 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Halvorn",
+  "genitiv": "von Halvorn",
+  "dossierName": "Halvorn-Dossier",
+  "klasse": "Orangefarbener Zwerg (K0 V)",
+  "intro": "Halvorn ist ein orangefarbener Zwerg der Spektralklasse K0 V mit 88 % der Sonnenmasse und 55 % ihrer Leuchtkraft – Zentralstern von Dravelon, dem Ursprungsplaneten der Dendroarchen. Halvorn ist der Zentralstern des Halvorn-Systems.",
+  "globusDaten": {
+    "planet": "sonnenahnliche-akkretionsscheibe-mit-schmaler-ringlucke",
+    "klasse": "Vulkan",
+    "radius": 598302000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=dravelon-stern",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-55BA0F06CC"
+    ],
+    [
+      "Typ",
+      "Orangefarbener Zwerg (K0 V)"
+    ],
+    [
+      "Sternsystem",
+      "Halvorn-System"
+    ],
+    [
+      "Masse",
+      "0,88 Sonnenmassen"
+    ],
+    [
+      "Radius",
+      "0,86 Sonnenradien"
+    ],
+    [
+      "Leuchtkraft",
+      "0,55 Sonnenleuchtkräfte"
+    ],
+    [
+      "Oberflächentemperatur",
+      "ca. 5.250 K"
+    ],
+    [
+      "Alter",
+      "ca. 6 Mrd. Jahre"
+    ],
+    [
+      "Monde",
+      "6 (Halvorn I, Dravelon, Halvorn III, Halvorn IV, Halvorn V, Grünschweif)"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Halvorn-System"
+    ],
+    [
+      "Entfernung zur Sonne",
+      "21 Lichtjahre"
+    ],
+    [
+      "Nächste Nachbarsysteme",
+      "Kharuun-System (14,1 Lj), Osselyr-System (14,1 Lj)"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Halvorn im Halvorn-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=dravelon-stern",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Halvorn I",
+      "href": "inhalte/himmelskoerper/planeten/details/lebender-basaltplanet-im-orbitalen-dammerlicht/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Dravelon",
+      "href": "inhalte/himmelskoerper/planeten/details/lebender-jadeplanet-mit-flussbecken/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Halvorn III",
+      "href": "inhalte/himmelskoerper/planeten/details/lebender-felsplanet-im-all/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Halvorn IV",
+      "href": "inhalte/himmelskoerper/planeten/details/gasriese-unter-zwei-sonnen/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Halvorn V",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=dravelon-stern&objekt=dravelon-halvorn-v",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Grünschweif",
+      "href": "inhalte/himmelskoerper/kometen/details/komet-mit-gebogenem-blauem-ionenschweif/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Dendroarchen",
+      "titel": "Dravelon",
+      "href": "inhalte/himmelskoerper/planeten/details/lebender-jadeplanet-mit-flussbecken/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Dendroarchen",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Dendroarchen/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Halvorn-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=dravelon-stern"
+    },
+    {
+      "titel": "Speziesdossier Dendroarchen",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Dendroarchen/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#0d0a07",
+      "tiefe": "#1c160f",
+      "akzent": "#ffdeb3",
+      "sand": "#ffd7a0",
+      "moos": "#d9d98d",
+      "ozean": "#adbea1",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#735c3e"
+    },
+    "schichten": [
+      [
+        "Strahlung",
+        "Leuchtkraft"
+      ],
+      [
+        "Hülle",
+        "Spektralklasse"
+      ],
+      [
+        "Kern",
+        "Fusion"
+      ],
+      [
+        "Zeit",
+        "Lebenszyklus"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Gas": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Gas von Halvorn.",
+      "abschnitte": [
+        {
+          "titel": "Gas",
+          "text": [
+            "Der Nebel besteht überwiegend aus Wasserstoff und Helium."
+          ]
+        }
+      ]
+    },
+    "Staub": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Staub von Halvorn.",
+      "abschnitte": [
+        {
+          "titel": "Staub",
+          "text": [
+            "Feiner Staub streut das Licht benachbarter Sterne und lässt den Nebel bläulich leuchten."
+          ]
+        }
+      ]
+    },
+    "Ionisation": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Ionisation von Halvorn.",
+      "abschnitte": [
+        {
+          "titel": "Ionisation",
+          "text": [
+            "Ein Reflexionsnebel leuchtet nicht selbst, sondern streut das Licht naher Sterne."
+          ]
+        }
+      ]
+    },
+    "Sternentstehung": {
+      "gruppe": "Natur",
+      "icon": "✦",
+      "intro": "Sternentstehung von Halvorn.",
+      "abschnitte": [
+        {
+          "titel": "Sternentstehung",
+          "text": [
+            "Ob im Nebel neue Sterne entstehen, ist nicht bekannt."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Halvorn auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Halvorn",
+          "text": [
+            "Halvorn ist ein orangefarbener Zwerg der Spektralklasse K0 V mit 88 % der Sonnenmasse und 55 % ihrer Leuchtkraft – Zentralstern von Dravelon, dem Ursprungsplaneten der Dendroarchen.",
+            "Halvorn ist der Zentralstern des Halvorn-Systems."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Orangefarbener Zwerg (K0 V)"
+            ],
+            [
+              "Sternsystem",
+              "Halvorn-System"
+            ],
+            [
+              "Masse",
+              "0,88 Sonnenmassen"
+            ],
+            [
+              "Radius",
+              "0,86 Sonnenradien"
+            ],
+            [
+              "Leuchtkraft",
+              "0,55 Sonnenleuchtkräfte"
+            ],
+            [
+              "Oberflächentemperatur",
+              "ca. 5.250 K"
+            ],
+            [
+              "Alter",
+              "ca. 6 Mrd. Jahre"
+            ],
+            [
+              "Monde",
+              "6 (Halvorn I, Dravelon, Halvorn III, Halvorn IV, Halvorn V, Grünschweif)"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Dravelon",
+          "text": [
+            "Das Halvorn-System ist die Heimat der Dendroarchen: Ihr Planet Dravelon umkreist Halvorn."
+          ],
+          "verweise": [
+            [
+              "Dravelon",
+              "inhalte/himmelskoerper/planeten/details/lebender-jadeplanet-mit-flussbecken/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Dendroarchen",
+              "inhalte/spezies/Gigantische Lebensformen/Dendroarchen/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Halvorn im Raum.",
+      "abschnitte": [
+        {
+          "titel": "Lage im Raum",
+          "daten": [
+            [
+              "Entfernung zur Sonne",
+              "21 Lichtjahre"
+            ],
+            [
+              "Nächste Nachbarsysteme",
+              "Kharuun-System (14,1 Lj), Osselyr-System (14,1 Lj), Velhar-System (14,9 Lj)"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Halvorn · Stern",
+              "Orangefarbener Zwerg (K0 V)"
+            ],
+            [
+              "Halvorn I · 0,35 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Dravelon · 0,75 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Halvorn III · 1,42 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Halvorn IV · 4,8 AE",
+              "Gasriese"
+            ],
+            [
+              "Halvorn V · 12 AE",
+              "Eisriese"
+            ],
+            [
+              "Rindengürtel · 2,2–3 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 32–46 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Halvorn I",
+              "inhalte/himmelskoerper/planeten/details/lebender-basaltplanet-im-orbitalen-dammerlicht/hauptseite/index.html"
+            ],
+            [
+              "Dravelon",
+              "inhalte/himmelskoerper/planeten/details/lebender-jadeplanet-mit-flussbecken/hauptseite/index.html"
+            ],
+            [
+              "Halvorn III",
+              "inhalte/himmelskoerper/planeten/details/lebender-felsplanet-im-all/hauptseite/index.html"
+            ],
+            [
+              "Halvorn IV",
+              "inhalte/himmelskoerper/planeten/details/gasriese-unter-zwei-sonnen/hauptseite/index.html"
+            ],
+            [
+              "Halvorn V",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=dravelon-stern&objekt=dravelon-halvorn-v"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Halvorn.",
+      "abschnitte": [
+        {
+          "titel": "Physik",
+          "daten": [
+            [
+              "Masse",
+              "0,88 Sonnenmassen"
+            ],
+            [
+              "Radius",
+              "0,86 Sonnenradien"
+            ],
+            [
+              "Leuchtkraft",
+              "0,55 Sonnenleuchtkräfte"
+            ],
+            [
+              "Oberflächentemperatur",
+              "ca. 5.250 K"
+            ],
+            [
+              "Alter",
+              "ca. 6 Mrd. Jahre"
+            ],
+            [
+              "Monde",
+              "6 (Halvorn I, Dravelon, Halvorn III, Halvorn IV, Halvorn V, Grünschweif)"
+            ]
+          ]
+        }
+      ]
+    },
+    "Spektralklasse": {
+      "gruppe": "Wissenschaft",
+      "icon": "✦",
+      "intro": "Spektralklasse von Halvorn.",
+      "abschnitte": [
+        {
+          "titel": "Einordnung",
+          "daten": [
+            [
+              "Typ",
+              "Orangefarbener Zwerg (K0 V)"
+            ],
+            [
+              "Oberflächentemperatur",
+              "ca. 5.250 K"
+            ],
+            [
+              "Farbe",
+              "gelb"
+            ]
+          ]
+        }
+      ]
+    },
+    "Fusion": {
+      "gruppe": "Wissenschaft",
+      "icon": "☀",
+      "intro": "Fusion von Halvorn.",
+      "abschnitte": [
+        {
+          "titel": "Energiequelle",
+          "text": [
+            "Im Kern von Halvorn verschmilzt Wasserstoff zu Helium."
+          ]
+        }
+      ]
+    },
+    "Leuchtkraft": {
+      "gruppe": "Wissenschaft",
+      "icon": "☀",
+      "intro": "Leuchtkraft von Halvorn.",
+      "abschnitte": [
+        {
+          "titel": "Strahlung",
+          "daten": [
+            [
+              "Leuchtkraft",
+              "0,55 Sonnenleuchtkräfte"
+            ],
+            [
+              "Habitable Zone",
+              "0,71–1,24 AE"
+            ]
+          ]
+        }
+      ]
+    },
+    "Lebenszyklus": {
+      "gruppe": "Wissenschaft",
+      "icon": "⧗",
+      "intro": "Lebenszyklus von Halvorn.",
+      "abschnitte": [
+        {
+          "titel": "Lebensdauer",
+          "text": [
+            "Ein Stern mit 0,88 Sonnenmassen bleibt rund 14 Milliarden Jahre auf der Hauptreihe; Halvorn ist etwa 6 Milliarden Jahre alt."
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Halvorn.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Halvorn entstand zusammen mit dem Halvorn-System vor rund 6 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Umgebung": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Umgebung von Halvorn.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Halvorn · Stern",
+              "Orangefarbener Zwerg (K0 V)"
+            ],
+            [
+              "Halvorn I · 0,35 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Dravelon · 0,75 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Halvorn III · 1,42 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Halvorn IV · 4,8 AE",
+              "Gasriese"
+            ],
+            [
+              "Halvorn V · 12 AE",
+              "Eisriese"
+            ],
+            [
+              "Rindengürtel · 2,2–3 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 32–46 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Halvorn I",
+              "inhalte/himmelskoerper/planeten/details/lebender-basaltplanet-im-orbitalen-dammerlicht/hauptseite/index.html"
+            ],
+            [
+              "Dravelon",
+              "inhalte/himmelskoerper/planeten/details/lebender-jadeplanet-mit-flussbecken/hauptseite/index.html"
+            ],
+            [
+              "Halvorn III",
+              "inhalte/himmelskoerper/planeten/details/lebender-felsplanet-im-all/hauptseite/index.html"
+            ],
+            [
+              "Halvorn IV",
+              "inhalte/himmelskoerper/planeten/details/gasriese-unter-zwei-sonnen/hauptseite/index.html"
+            ],
+            [
+              "Halvorn V",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=dravelon-stern&objekt=dravelon-halvorn-v"
+            ]
+          ]
+        },
+        {
+          "titel": "Nachbarsysteme",
+          "liste": [
+            "Kharuun-System – 14,1 Lichtjahre",
+            "Osselyr-System – 14,1 Lichtjahre",
+            "Velhar-System – 14,9 Lichtjahre",
+            "Orvaya-System – 15,8 Lichtjahre",
+            "Narev-System – 20,9 Lichtjahre"
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Halvorn.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Wie stark schwankt die magnetische Aktivität?",
+            "Wie hat sich die Leuchtkraft seit der Entstehung verändert?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Halvorn ist mit allen Bahndaten im Halvorn-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=dravelon-stern"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Halvorn.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "6 Monde: Halvorn I, Dravelon, Halvorn III, Halvorn IV, Halvorn V, Grünschweif"
+          ]
+        },
+        {
+          "titel": "Monde",
+          "karten": [
+            {
+              "titel": "Halvorn I",
+              "text": "7.800 km Durchmesser, Umlauf in 80,6 Tage. Halvorn I ist ein kleiner, heißer Gesteinsplanet."
+            },
+            {
+              "titel": "Dravelon",
+              "text": "11.200 km Durchmesser, Umlauf in 252,9 Tage. Dravelon ist der Ursprungsplanet der Dendroarchen: eine feuchte, leicht gebaute Welt mit geringer Schwerkraft, endlosen Wald- und Sumpflandschaften und weit verzweigten Flussbecken."
+            },
+            {
+              "titel": "Halvorn III",
+              "text": "8.600 km Durchmesser, Umlauf in 658,9 Tage. Halvorn III ist eine kalte, trockene Gesteinswelt."
+            },
+            {
+              "titel": "Halvorn IV",
+              "text": "124.000 km Durchmesser, Umlauf in 11,2 Jahre. Halvorn IV ist ein Gasriese mit zahlreichen kleinen Monden."
+            },
+            {
+              "titel": "Halvorn V",
+              "text": "48.000 km Durchmesser, Umlauf in 44,3 Jahre. Halvorn V ist ein ferner, blassblauer Eisriese."
+            },
+            {
+              "titel": "Grünschweif",
+              "text": "12 km Durchmesser, Umlauf in 55,8 Jahre. Ein Komet mit grünlich leuchtender Koma, der alle 60 Jahre das innere System erreicht."
+            }
+          ],
+          "verweise": [
+            [
+              "Halvorn I",
+              "inhalte/himmelskoerper/planeten/details/lebender-basaltplanet-im-orbitalen-dammerlicht/hauptseite/index.html"
+            ],
+            [
+              "Dravelon",
+              "inhalte/himmelskoerper/planeten/details/lebender-jadeplanet-mit-flussbecken/hauptseite/index.html"
+            ],
+            [
+              "Halvorn III",
+              "inhalte/himmelskoerper/planeten/details/lebender-felsplanet-im-all/hauptseite/index.html"
+            ],
+            [
+              "Halvorn IV",
+              "inhalte/himmelskoerper/planeten/details/gasriese-unter-zwei-sonnen/hauptseite/index.html"
+            ],
+            [
+              "Halvorn V",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=dravelon-stern&objekt=dravelon-halvorn-v"
+            ],
+            [
+              "Grünschweif",
+              "inhalte/himmelskoerper/kometen/details/komet-mit-gebogenem-blauem-ionenschweif/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Halvorn.",
+      "abschnitte": [
+        {
+          "titel": "Halvorn – Archivbild",
+          "bild": true,
+          "bildtext": "Halvorn"
+        }
+      ]
+    }
+  }
+}

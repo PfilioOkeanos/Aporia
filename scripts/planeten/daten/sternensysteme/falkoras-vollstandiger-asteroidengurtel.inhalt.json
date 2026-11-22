@@ -1,0 +1,499 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Glimmergürtel",
+  "genitiv": "von Glimmergürtel",
+  "dossierName": "Glimmergürtel-Dossier",
+  "klasse": "Asteroidengürtel",
+  "intro": "Der Glimmergürtel zwischen 2,4 und 3,15 AE besteht aus silikatischen und metallreichen Gesteinsbrocken. Glimmergürtel umgibt Ixar im Ixar-System.",
+  "globusDaten": {
+    "planet": "falkoras-vollstandiger-asteroidengurtel",
+    "klasse": "Gestein",
+    "radius": 1000000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=kyreth-stern&objekt=kyreth-glimmergurtel",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-6039620F6A"
+    ],
+    [
+      "Typ",
+      "Asteroidengürtel"
+    ],
+    [
+      "Sternsystem",
+      "Ixar-System"
+    ],
+    [
+      "Zentralkörper",
+      "Ixar"
+    ],
+    [
+      "Ausdehnung",
+      "2,4–3,15 AE"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Ixar-System"
+    ],
+    [
+      "Zentralstern",
+      "Ixar",
+      "inhalte/himmelskoerper/sterne/details/oszillierender-sonnenahnlicher-stern/hauptseite/index.html"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Glimmergürtel im Ixar-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=kyreth-stern&objekt=kyreth-glimmergurtel",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Ixar",
+      "href": "inhalte/himmelskoerper/sterne/details/oszillierender-sonnenahnlicher-stern/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Elektrozoiden",
+      "titel": "Kyreth",
+      "href": "inhalte/himmelskoerper/planeten/details/lebender-planet-mit-grunen-wetterswirbeln/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Elektrozoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Elektrozoiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Ixar-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=kyreth-stern&objekt=kyreth-glimmergurtel"
+    },
+    {
+      "titel": "Speziesdossier Elektrozoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Elektrozoiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#080707",
+      "tiefe": "#11100f",
+      "akzent": "#c0b9af",
+      "sand": "#c5b89e",
+      "moos": "#9faf8a",
+      "ozean": "#7f989d",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#47433c"
+    },
+    "schichten": [
+      [
+        "Lage",
+        "Bahnen"
+      ],
+      [
+        "System",
+        "Planeten"
+      ],
+      [
+        "Dynamik",
+        "Stabilität"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Zentralsterne": {
+      "gruppe": "Wissenschaft",
+      "icon": "✦",
+      "intro": "Zentralsterne von Glimmergürtel.",
+      "abschnitte": [
+        {
+          "titel": "Ixar",
+          "text": [
+            "Ixar ist ein ruhiger gelber Zwerg der Spektralklasse G9 V mit 90 % der Sonnenmasse und 68 % ihrer Leuchtkraft – Zentralstern von Kyreth, der Heimatwelt der Elektrozoiden."
+          ],
+          "verweise": [
+            [
+              "Ixar",
+              "inhalte/himmelskoerper/sterne/details/oszillierender-sonnenahnlicher-stern/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Planeten": {
+      "gruppe": "Wissenschaft",
+      "icon": "◍",
+      "intro": "Planeten von Glimmergürtel.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Ixar · Stern",
+              "Gelber Zwerg (G9 V)"
+            ],
+            [
+              "Ixar I · 0,38 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Kyreth · 0,83 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Ixar III · 1,6 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Ixar IV · 5,6 AE",
+              "Gasriese"
+            ],
+            [
+              "Ixar V · 14 AE",
+              "Eisriese"
+            ],
+            [
+              "Glimmergürtel · 2,4–3,2 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 38–52 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Ixar",
+              "inhalte/himmelskoerper/sterne/details/oszillierender-sonnenahnlicher-stern/hauptseite/index.html"
+            ],
+            [
+              "Ixar I",
+              "inhalte/himmelskoerper/planeten/details/mineralreiche-silikatwelt-mit-basaltebenen/hauptseite/index.html"
+            ],
+            [
+              "Kyreth",
+              "inhalte/himmelskoerper/planeten/details/lebender-planet-mit-grunen-wetterswirbeln/hauptseite/index.html"
+            ],
+            [
+              "Ixar III",
+              "inhalte/himmelskoerper/planeten/details/ockerfarbener-wustenplanet-mit-windgeformten-tafelbergen/hauptseite/index.html"
+            ],
+            [
+              "Ixar IV",
+              "inhalte/himmelskoerper/planeten/details/entstehender-proto-gasriese-in-der-staubscheibe/hauptseite/index.html"
+            ],
+            [
+              "Ixar V",
+              "inhalte/himmelskoerper/planeten/details/uranusahnlicher-eisriese-im-all/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Bahnen": {
+      "gruppe": "Wissenschaft",
+      "icon": "◌",
+      "intro": "Bahnen von Glimmergürtel.",
+      "abschnitte": [
+        {
+          "titel": "Lage",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Ixar"
+            ],
+            [
+              "Ausdehnung",
+              "2,4–3,15 AE"
+            ]
+          ]
+        }
+      ]
+    },
+    "Stabilität": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚖",
+      "intro": "Stabilität von Glimmergürtel.",
+      "abschnitte": [
+        {
+          "titel": "Stabilität",
+          "text": [
+            "Die Brocken von Glimmergürtel bewegen sich auf stabilen Bahnen zwischen den Planeten; Resonanzen mit den großen Planeten formen die Ränder des Gebiets."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Glimmergürtel auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Glimmergürtel",
+          "text": [
+            "Der Glimmergürtel zwischen 2,4 und 3,15 AE besteht aus silikatischen und metallreichen Gesteinsbrocken.",
+            "Glimmergürtel umgibt Ixar im Ixar-System."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Asteroidengürtel"
+            ],
+            [
+              "Sternsystem",
+              "Ixar-System"
+            ],
+            [
+              "Zentralkörper",
+              "Ixar"
+            ],
+            [
+              "Ausdehnung",
+              "2,4–3,15 AE"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Kyreth",
+          "text": [
+            "Das Ixar-System ist die Heimat der Elektrozoiden: Ihr Planet Kyreth umkreist Ixar."
+          ],
+          "verweise": [
+            [
+              "Kyreth",
+              "inhalte/himmelskoerper/planeten/details/lebender-planet-mit-grunen-wetterswirbeln/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Elektrozoiden",
+              "inhalte/spezies/Biologische Spezies/Elektrozoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Glimmergürtel im Ixar-System.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Ixar · Stern",
+              "Gelber Zwerg (G9 V)"
+            ],
+            [
+              "Ixar I · 0,38 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Kyreth · 0,83 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Ixar III · 1,6 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Ixar IV · 5,6 AE",
+              "Gasriese"
+            ],
+            [
+              "Ixar V · 14 AE",
+              "Eisriese"
+            ],
+            [
+              "Glimmergürtel · 2,4–3,2 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 38–52 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Ixar",
+              "inhalte/himmelskoerper/sterne/details/oszillierender-sonnenahnlicher-stern/hauptseite/index.html"
+            ],
+            [
+              "Ixar I",
+              "inhalte/himmelskoerper/planeten/details/mineralreiche-silikatwelt-mit-basaltebenen/hauptseite/index.html"
+            ],
+            [
+              "Kyreth",
+              "inhalte/himmelskoerper/planeten/details/lebender-planet-mit-grunen-wetterswirbeln/hauptseite/index.html"
+            ],
+            [
+              "Ixar III",
+              "inhalte/himmelskoerper/planeten/details/ockerfarbener-wustenplanet-mit-windgeformten-tafelbergen/hauptseite/index.html"
+            ],
+            [
+              "Ixar IV",
+              "inhalte/himmelskoerper/planeten/details/entstehender-proto-gasriese-in-der-staubscheibe/hauptseite/index.html"
+            ],
+            [
+              "Ixar V",
+              "inhalte/himmelskoerper/planeten/details/uranusahnlicher-eisriese-im-all/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Umgebung": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Umgebung von Glimmergürtel.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Ixar · Stern",
+              "Gelber Zwerg (G9 V)"
+            ],
+            [
+              "Ixar I · 0,38 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Kyreth · 0,83 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Ixar III · 1,6 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Ixar IV · 5,6 AE",
+              "Gasriese"
+            ],
+            [
+              "Ixar V · 14 AE",
+              "Eisriese"
+            ],
+            [
+              "Glimmergürtel · 2,4–3,2 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 38–52 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Ixar",
+              "inhalte/himmelskoerper/sterne/details/oszillierender-sonnenahnlicher-stern/hauptseite/index.html"
+            ],
+            [
+              "Ixar I",
+              "inhalte/himmelskoerper/planeten/details/mineralreiche-silikatwelt-mit-basaltebenen/hauptseite/index.html"
+            ],
+            [
+              "Kyreth",
+              "inhalte/himmelskoerper/planeten/details/lebender-planet-mit-grunen-wetterswirbeln/hauptseite/index.html"
+            ],
+            [
+              "Ixar III",
+              "inhalte/himmelskoerper/planeten/details/ockerfarbener-wustenplanet-mit-windgeformten-tafelbergen/hauptseite/index.html"
+            ],
+            [
+              "Ixar IV",
+              "inhalte/himmelskoerper/planeten/details/entstehender-proto-gasriese-in-der-staubscheibe/hauptseite/index.html"
+            ],
+            [
+              "Ixar V",
+              "inhalte/himmelskoerper/planeten/details/uranusahnlicher-eisriese-im-all/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Glimmergürtel.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Glimmergürtel besteht aus Material, das sich bei der Entstehung des Ixar-Systems nicht zu einem Planeten vereinte."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Glimmergürtel.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Wie viel Masse enthält das Gebiet insgesamt?",
+            "Welche Resonanzen formen seine Ränder?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Glimmergürtel ist mit allen Bahndaten im Ixar-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=kyreth-stern&objekt=kyreth-glimmergurtel"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Glimmergürtel.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Der Glimmergürtel zwischen 2,4 und 3,15 AE besteht aus silikatischen und metallreichen Gesteinsbrocken."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Glimmergürtel.",
+      "abschnitte": [
+        {
+          "titel": "Glimmergürtel – Archivbild",
+          "bild": true,
+          "bildtext": "Glimmergürtel"
+        }
+      ]
+    }
+  }
+}

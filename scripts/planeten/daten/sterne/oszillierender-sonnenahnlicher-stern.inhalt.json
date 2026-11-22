@@ -1,0 +1,627 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Ixar",
+  "genitiv": "von Ixar",
+  "dossierName": "Ixar-Dossier",
+  "klasse": "Gelber Zwerg (G9 V)",
+  "intro": "Ixar ist ein ruhiger gelber Zwerg der Spektralklasse G9 V mit 90 % der Sonnenmasse und 68 % ihrer Leuchtkraft – Zentralstern von Kyreth, der Heimatwelt der Elektrozoiden. Ixar ist der Zentralstern des Ixar-Systems.",
+  "globusDaten": {
+    "planet": "oszillierender-sonnenahnlicher-stern",
+    "klasse": "Vulkan",
+    "radius": 640044000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=kyreth-stern",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-E2A1AD2B53"
+    ],
+    [
+      "Typ",
+      "Gelber Zwerg (G9 V)"
+    ],
+    [
+      "Sternsystem",
+      "Ixar-System"
+    ],
+    [
+      "Masse",
+      "0,9 Sonnenmassen"
+    ],
+    [
+      "Radius",
+      "0,92 Sonnenradien"
+    ],
+    [
+      "Leuchtkraft",
+      "0,68 Sonnenleuchtkräfte"
+    ],
+    [
+      "Oberflächentemperatur",
+      "ca. 5.400 K"
+    ],
+    [
+      "Alter",
+      "ca. 4,6 Mrd. Jahre"
+    ],
+    [
+      "Monde",
+      "6 (Ixar I, Kyreth, Ixar III, Ixar IV, Ladungsschweif, Ixar V)"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Ixar-System"
+    ],
+    [
+      "Entfernung zur Sonne",
+      "18 Lichtjahre"
+    ],
+    [
+      "Nächste Nachbarsysteme",
+      "Thalor-System (16,9 Lj), Iovar-System (17,3 Lj)"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Ixar im Ixar-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=kyreth-stern",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Ixar I",
+      "href": "inhalte/himmelskoerper/planeten/details/mineralreiche-silikatwelt-mit-basaltebenen/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Kyreth",
+      "href": "inhalte/himmelskoerper/planeten/details/lebender-planet-mit-grunen-wetterswirbeln/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Ixar III",
+      "href": "inhalte/himmelskoerper/planeten/details/ockerfarbener-wustenplanet-mit-windgeformten-tafelbergen/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Ixar IV",
+      "href": "inhalte/himmelskoerper/planeten/details/entstehender-proto-gasriese-in-der-staubscheibe/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Ladungsschweif",
+      "href": "inhalte/himmelskoerper/kometen/details/komet-mit-breitem-staubfacher/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Ixar V",
+      "href": "inhalte/himmelskoerper/planeten/details/uranusahnlicher-eisriese-im-all/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Elektrozoiden",
+      "titel": "Kyreth",
+      "href": "inhalte/himmelskoerper/planeten/details/lebender-planet-mit-grunen-wetterswirbeln/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Elektrozoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Elektrozoiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Ixar-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=kyreth-stern"
+    },
+    {
+      "titel": "Speziesdossier Elektrozoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Elektrozoiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#0d0b08",
+      "tiefe": "#1c1811",
+      "akzent": "#ffe8c0",
+      "sand": "#ffdfa8",
+      "moos": "#d9e499",
+      "ozean": "#adc8b1",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#736347"
+    },
+    "schichten": [
+      [
+        "Strahlung",
+        "Leuchtkraft"
+      ],
+      [
+        "Hülle",
+        "Spektralklasse"
+      ],
+      [
+        "Kern",
+        "Fusion"
+      ],
+      [
+        "Zeit",
+        "Lebenszyklus"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Spektralklasse": {
+      "gruppe": "Wissenschaft",
+      "icon": "✦",
+      "intro": "Spektralklasse von Ixar.",
+      "abschnitte": [
+        {
+          "titel": "Einordnung",
+          "daten": [
+            [
+              "Typ",
+              "Gelber Zwerg (G9 V)"
+            ],
+            [
+              "Oberflächentemperatur",
+              "ca. 5.400 K"
+            ],
+            [
+              "Farbe",
+              "gelb"
+            ]
+          ]
+        }
+      ]
+    },
+    "Fusion": {
+      "gruppe": "Wissenschaft",
+      "icon": "☀",
+      "intro": "Fusion von Ixar.",
+      "abschnitte": [
+        {
+          "titel": "Energiequelle",
+          "text": [
+            "Im Kern von Ixar verschmilzt Wasserstoff zu Helium."
+          ]
+        }
+      ]
+    },
+    "Leuchtkraft": {
+      "gruppe": "Wissenschaft",
+      "icon": "☀",
+      "intro": "Leuchtkraft von Ixar.",
+      "abschnitte": [
+        {
+          "titel": "Strahlung",
+          "daten": [
+            [
+              "Leuchtkraft",
+              "0,68 Sonnenleuchtkräfte"
+            ],
+            [
+              "Habitable Zone",
+              "0,79–1,37 AE"
+            ]
+          ]
+        }
+      ]
+    },
+    "Lebenszyklus": {
+      "gruppe": "Wissenschaft",
+      "icon": "⧗",
+      "intro": "Lebenszyklus von Ixar.",
+      "abschnitte": [
+        {
+          "titel": "Lebensdauer",
+          "text": [
+            "Ein Stern mit 0,9 Sonnenmassen bleibt rund 13 Milliarden Jahre auf der Hauptreihe; Ixar ist etwa 4,6 Milliarden Jahre alt."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Ixar auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Ixar",
+          "text": [
+            "Ixar ist ein ruhiger gelber Zwerg der Spektralklasse G9 V mit 90 % der Sonnenmasse und 68 % ihrer Leuchtkraft – Zentralstern von Kyreth, der Heimatwelt der Elektrozoiden.",
+            "Ixar ist der Zentralstern des Ixar-Systems."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Gelber Zwerg (G9 V)"
+            ],
+            [
+              "Sternsystem",
+              "Ixar-System"
+            ],
+            [
+              "Masse",
+              "0,9 Sonnenmassen"
+            ],
+            [
+              "Radius",
+              "0,92 Sonnenradien"
+            ],
+            [
+              "Leuchtkraft",
+              "0,68 Sonnenleuchtkräfte"
+            ],
+            [
+              "Oberflächentemperatur",
+              "ca. 5.400 K"
+            ],
+            [
+              "Alter",
+              "ca. 4,6 Mrd. Jahre"
+            ],
+            [
+              "Monde",
+              "6 (Ixar I, Kyreth, Ixar III, Ixar IV, Ladungsschweif, Ixar V)"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Kyreth",
+          "text": [
+            "Das Ixar-System ist die Heimat der Elektrozoiden: Ihr Planet Kyreth umkreist Ixar."
+          ],
+          "verweise": [
+            [
+              "Kyreth",
+              "inhalte/himmelskoerper/planeten/details/lebender-planet-mit-grunen-wetterswirbeln/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Elektrozoiden",
+              "inhalte/spezies/Biologische Spezies/Elektrozoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Ixar im Raum.",
+      "abschnitte": [
+        {
+          "titel": "Lage im Raum",
+          "daten": [
+            [
+              "Entfernung zur Sonne",
+              "18 Lichtjahre"
+            ],
+            [
+              "Nächste Nachbarsysteme",
+              "Thalor-System (16,9 Lj), Iovar-System (17,3 Lj), Sonnensystem (18 Lj)"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Ixar · Stern",
+              "Gelber Zwerg (G9 V)"
+            ],
+            [
+              "Ixar I · 0,38 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Kyreth · 0,83 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Ixar III · 1,6 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Ixar IV · 5,6 AE",
+              "Gasriese"
+            ],
+            [
+              "Ixar V · 14 AE",
+              "Eisriese"
+            ],
+            [
+              "Glimmergürtel · 2,4–3,2 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 38–52 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Ixar I",
+              "inhalte/himmelskoerper/planeten/details/mineralreiche-silikatwelt-mit-basaltebenen/hauptseite/index.html"
+            ],
+            [
+              "Kyreth",
+              "inhalte/himmelskoerper/planeten/details/lebender-planet-mit-grunen-wetterswirbeln/hauptseite/index.html"
+            ],
+            [
+              "Ixar III",
+              "inhalte/himmelskoerper/planeten/details/ockerfarbener-wustenplanet-mit-windgeformten-tafelbergen/hauptseite/index.html"
+            ],
+            [
+              "Ixar IV",
+              "inhalte/himmelskoerper/planeten/details/entstehender-proto-gasriese-in-der-staubscheibe/hauptseite/index.html"
+            ],
+            [
+              "Ixar V",
+              "inhalte/himmelskoerper/planeten/details/uranusahnlicher-eisriese-im-all/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Ixar.",
+      "abschnitte": [
+        {
+          "titel": "Physik",
+          "daten": [
+            [
+              "Masse",
+              "0,9 Sonnenmassen"
+            ],
+            [
+              "Radius",
+              "0,92 Sonnenradien"
+            ],
+            [
+              "Leuchtkraft",
+              "0,68 Sonnenleuchtkräfte"
+            ],
+            [
+              "Oberflächentemperatur",
+              "ca. 5.400 K"
+            ],
+            [
+              "Alter",
+              "ca. 4,6 Mrd. Jahre"
+            ],
+            [
+              "Monde",
+              "6 (Ixar I, Kyreth, Ixar III, Ixar IV, Ladungsschweif, Ixar V)"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Ixar.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Ixar entstand zusammen mit dem Ixar-System vor rund 4,6 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Umgebung": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Umgebung von Ixar.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Ixar · Stern",
+              "Gelber Zwerg (G9 V)"
+            ],
+            [
+              "Ixar I · 0,38 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Kyreth · 0,83 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Ixar III · 1,6 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Ixar IV · 5,6 AE",
+              "Gasriese"
+            ],
+            [
+              "Ixar V · 14 AE",
+              "Eisriese"
+            ],
+            [
+              "Glimmergürtel · 2,4–3,2 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 38–52 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Ixar I",
+              "inhalte/himmelskoerper/planeten/details/mineralreiche-silikatwelt-mit-basaltebenen/hauptseite/index.html"
+            ],
+            [
+              "Kyreth",
+              "inhalte/himmelskoerper/planeten/details/lebender-planet-mit-grunen-wetterswirbeln/hauptseite/index.html"
+            ],
+            [
+              "Ixar III",
+              "inhalte/himmelskoerper/planeten/details/ockerfarbener-wustenplanet-mit-windgeformten-tafelbergen/hauptseite/index.html"
+            ],
+            [
+              "Ixar IV",
+              "inhalte/himmelskoerper/planeten/details/entstehender-proto-gasriese-in-der-staubscheibe/hauptseite/index.html"
+            ],
+            [
+              "Ixar V",
+              "inhalte/himmelskoerper/planeten/details/uranusahnlicher-eisriese-im-all/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Nachbarsysteme",
+          "liste": [
+            "Thalor-System – 16,9 Lichtjahre",
+            "Iovar-System – 17,3 Lichtjahre",
+            "Sonnensystem – 18 Lichtjahre",
+            "Seryn-System – 19,7 Lichtjahre",
+            "Kharuun-System – 23,3 Lichtjahre"
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Ixar.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Wie stark schwankt die magnetische Aktivität?",
+            "Wie hat sich die Leuchtkraft seit der Entstehung verändert?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Ixar ist mit allen Bahndaten im Ixar-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=kyreth-stern"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Ixar.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "6 Monde: Ixar I, Kyreth, Ixar III, Ixar IV, Ladungsschweif, Ixar V"
+          ]
+        },
+        {
+          "titel": "Monde",
+          "karten": [
+            {
+              "titel": "Ixar I",
+              "text": "9.800 km Durchmesser, Umlauf in 90,2 Tage. Ixar I ist ein heißer, trockener Gesteinsplanet mit dünner Atmosphäre."
+            },
+            {
+              "titel": "Kyreth",
+              "text": "13.200 km Durchmesser, Umlauf in 291,1 Tage. Kyreth ist die Heimatwelt der Elektrozoiden: eine feuchtwarme Landwelt mit mineralisch vielfältigen Böden, ausgedehnter Vegetation und ungewöhnlich gewitterreichem Wetter."
+            },
+            {
+              "titel": "Ixar III",
+              "text": "8.800 km Durchmesser, Umlauf in 2,1 Jahre. Ixar III ist eine kalte, trockene Gesteinswelt am äußeren Rand der habitablen Zone."
+            },
+            {
+              "titel": "Ixar IV",
+              "text": "132.000 km Durchmesser, Umlauf in 14 Jahre. Ixar IV ist ein großer Gasriese mit kräftigen Wolkenbändern und einer starken Magnetosphäre."
+            },
+            {
+              "titel": "Ladungsschweif",
+              "text": "12 km Durchmesser, Umlauf in 49,4 Jahre. Ein Komet mit ungewöhnlich hellem, verzweigtem Ionenschweif, der alle 49 Jahre das innere System erreicht. Elektrozoiden registrieren bei seiner Wiederkehr verstärkte Störungen der atmosphärischen Felder."
+            },
+            {
+              "titel": "Ixar V",
+              "text": "50.000 km Durchmesser, Umlauf in 55,2 Jahre. Ixar V ist ein ferner, blassblauer Eisriese."
+            }
+          ],
+          "verweise": [
+            [
+              "Ixar I",
+              "inhalte/himmelskoerper/planeten/details/mineralreiche-silikatwelt-mit-basaltebenen/hauptseite/index.html"
+            ],
+            [
+              "Kyreth",
+              "inhalte/himmelskoerper/planeten/details/lebender-planet-mit-grunen-wetterswirbeln/hauptseite/index.html"
+            ],
+            [
+              "Ixar III",
+              "inhalte/himmelskoerper/planeten/details/ockerfarbener-wustenplanet-mit-windgeformten-tafelbergen/hauptseite/index.html"
+            ],
+            [
+              "Ixar IV",
+              "inhalte/himmelskoerper/planeten/details/entstehender-proto-gasriese-in-der-staubscheibe/hauptseite/index.html"
+            ],
+            [
+              "Ladungsschweif",
+              "inhalte/himmelskoerper/kometen/details/komet-mit-breitem-staubfacher/hauptseite/index.html"
+            ],
+            [
+              "Ixar V",
+              "inhalte/himmelskoerper/planeten/details/uranusahnlicher-eisriese-im-all/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Ixar.",
+      "abschnitte": [
+        {
+          "titel": "Ixar – Archivbild",
+          "bild": true,
+          "bildtext": "Ixar"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,512 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#07080f">
+    <meta name="description" content="Spielintegration der Bioluminoiden im APORIA-Weltenarchiv.">
+    <title>Spielintegration · Bioluminoiden · APORIA</title>
+    <link rel="stylesheet" href="../../../../../Men%C3%BCs/TopBar/Top_bar.css">
+    <link rel="stylesheet" href="../../../../../Men%C3%BCs/Side_bar/Side_bar.css">
+    <link rel="stylesheet" href="../../../_gemeinsam/bilder-karussell.css">
+    <link rel="stylesheet" href="../bioluminoiden-basis.css">
+    <link rel="stylesheet" href="gameplay.css">
+    <script type="module" src="gameplay.js"></script>
+</head>
+<body class="bioluminoiden bl-gameplay" data-page="spezies-biological-17-gameplay" data-section="spezies">
+    <div data-aporia-topbar></div>
+    <div class="aporia-page-frame bl-frame">
+        <div data-aporia-sidebar></div>
+        <main class="bl-dossier" id="inhalt">
+            <header class="bl-hero bl-hero--reiter">
+                <img class="bl-hero-bild" src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Bioluminoiden/gesamtdarstellung/Biolumineszenter%20Lichtl%C3%A4ufer%20im%20Zwielicht-4.png" alt="" fetchpriority="high" decoding="async">
+                <span class="bl-glanz" aria-hidden="true"></span>
+                <div class="bl-hero-text">
+                    <nav class="bl-pfad" aria-label="Archivpfad"><a data-route="spezies" href="../../../Spezies_%C3%BCbersicht/Spezies.html">Spezies</a><span aria-hidden="true">›</span><a data-route="spezies-biological" href="../../%C3%9Cbersichtsseite%20biologische%20spezies/Uebersicht.html">Biologische Spezies</a><span aria-hidden="true">›</span><a data-route="spezies-biological-17" href="../hauptseite/Spezies.html">Bioluminoiden</a><span aria-hidden="true">›</span><span aria-current="page">Spielintegration</span></nav>
+                    <p class="bl-kicker">Bioluminoiden · Hauptreiter</p>
+                    <h1>Spielintegration</h1>
+                    <p class="bl-unterzeile">Körpermodelle, Lichtkommunikation und Spielsysteme</p>
+                </div>
+            </header>
+            <nav class="bl-reiter" aria-label="Hauptreiter der Bioluminoiden">
+                <a href="../hauptseite/Spezies.html" data-route="spezies-biological-17"><span aria-hidden="true">✦</span>Übersicht</a>
+                <a href="../Unterseiten/Allgemeines/allgemeines.html" data-route="spezies-biological-17-allgemeines"><span aria-hidden="true">ⓘ</span>Allgemeines</a>
+                <a href="../Unterseiten/Biologie/biologie.html" data-route="spezies-biological-17-biologie"><span aria-hidden="true">⟡</span>Biologie</a>
+                <a href="../Unterseiten/Entwicklung/entwicklung.html" data-route="spezies-biological-17-entwicklung"><span aria-hidden="true">⤳</span>Entwicklung</a>
+                <a href="../Unterseiten/Heimatwelt/heimatwelt.html" data-route="spezies-biological-17-heimatwelt"><span aria-hidden="true">◍</span>Heimatwelt</a>
+                <a href="../Unterseiten/Gesellschaft/gesellschaft.html" data-route="spezies-biological-17-gesellschaft"><span aria-hidden="true">⁂</span>Gesellschaft</a>
+                <a href="../Unterseiten/Politik/politik.html" data-route="spezies-biological-17-politik"><span aria-hidden="true">⚖</span>Politik</a>
+                <a href="../Unterseiten/Geschichte/geschichte.html" data-route="spezies-biological-17-geschichte"><span aria-hidden="true">⧗</span>Geschichte</a>
+                <a href="gameplay.html" data-route="spezies-biological-17-gameplay" aria-current="page"><span aria-hidden="true">◈</span>Spielintegration</a>
+                <a href="../Forschung/forschung.html" data-route="spezies-biological-17-forschung"><span aria-hidden="true">⚗</span>Forschung</a>
+                <a href="../Unterseiten/Medien/medien.html" data-route="spezies-biological-17-medien"><span aria-hidden="true">▣</span>Medien</a>
+            </nav>
+            <div class="bl-layout">
+                <div class="bl-inhalt">
+                    <details class="bl-panel bl-karte" id="k-steckbrief" open>
+                        <summary><span class="bl-nr">◇</span><h2>Steckbrief</h2><span class="bl-chevron" aria-hidden="true"></span></summary>
+                        <div class="bl-text">
+                            <dl class="bl-fakten"><div><dt>Dossierversion</dt><dd>2.2</dd></div><div><dt>Spiel</dt><dd>APORIA – Unter fremden Kronen</dd></div><div><dt>Entwicklungsumgebung</dt><dd>Unreal Engine</dd></div><div><dt>Ziel</dt><dd>Datengetriebene, erweiterbare Implementierung</dd></div></dl>
+                            <p class="bl-quelle">Quelle: Info_material · Bioluminoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="bl-panel bl-karte" id="k-8-1-rolle-der-spezies">
+                        <summary><span class="bl-nr">8.1</span><h2>Rolle der Spezies</h2><span class="bl-chevron" aria-hidden="true"></span></summary>
+                        <div class="bl-text">
+                            <p>Die Bioluminoiden sind eine eigenständige intelligente Spezies innerhalb des APORIA-Universums.</p>
+                            <p>Sie können als NPCs, Forscher, Händler, Diplomaten, Reisende, Techniker und Angehörige unterschiedlicher Organisationen auftreten.</p>
+                            <p>Ihre biologischen Besonderheiten beeinflussen Fortbewegung, Kommunikation, Sinneswahrnehmung und medizinische Versorgung.</p>
+                            <p>Die Spezies soll nicht auf Lichtkampffähigkeiten reduziert werden.</p>
+                            <p class="bl-quelle">Quelle: Info_material · Bioluminoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="bl-panel bl-karte" id="k-8-2-vier-korpermodelle">
+                        <summary><span class="bl-nr">8.2</span><h2>Vier Körpermodelle</h2><span class="bl-chevron" aria-hidden="true"></span></summary>
+                        <div class="bl-text">
+                            <p>Für die Selari werden vier grundlegende anatomische Modelle vorgesehen.</p>
+                            <h3>Thaleri</h3>
+                            <p>Schlanke Körperform mit sechs Gliedmaßen und ausspannbaren Gleitmembranen.</p>
+                            <h3>Vorali</h3>
+                            <p>Breite, flache Körperform mit acht Gliedmaßen.</p>
+                            <h3>Nemerai</h3>
+                            <p>Amphibische Körperform mit paddelartigen Gliedmaßen und kräftigem Schwanz.</p>
+                            <h3>Serrathi</h3>
+                            <p>Hochbeinige terrestrische Körperform mit widerstandsfähigen Schutzstrukturen.</p>
+                            <p>Alle Formen erhalten individuelle Erscheinungsvarianten.</p>
+                            <p class="bl-quelle">Quelle: Info_material · Bioluminoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="bl-panel bl-karte" id="k-8-3-fortbewegung">
+                        <summary><span class="bl-nr">8.3</span><h2>Fortbewegung</h2><span class="bl-chevron" aria-hidden="true"></span></summary>
+                        <div class="bl-text">
+                            <h3>Thaleri</h3>
+                            <ul><li>Klettern.</li><li>Balancieren.</li><li>Kontrolliertes Gleiten.</li><li>Fortbewegung auf großen Vegetationsstrukturen.</li></ul>
+                            <h3>Vorali</h3>
+                            <ul><li>Bewegung in engen Räumen.</li><li>Klettern auf geeigneten Oberflächen.</li><li>Stabile Bewegung auf unebenem Untergrund.</li><li>Orientierung durch mechanische Reize.</li></ul>
+                            <h3>Nemerai</h3>
+                            <ul><li>Schwimmen.</li><li>Tauchen.</li><li>Amphibische Fortbewegung.</li><li>Nutzung flacher Wasserwege.</li></ul>
+                            <h3>Serrathi</h3>
+                            <ul><li>Ausdauernde Landbewegung.</li><li>Trittsichere Bewegung auf felsigem Gelände.</li><li>Überwinden unterschiedlicher Höhenprofile.</li><li>Effiziente Fortbewegung auf offenen Flächen.</li></ul>
+                            <p class="bl-quelle">Quelle: Info_material · Bioluminoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="bl-panel bl-karte" id="k-8-4-biologische-lichtkommunikation">
+                        <summary><span class="bl-nr">8.4</span><h2>Biologische Lichtkommunikation</h2><span class="bl-chevron" aria-hidden="true"></span></summary>
+                        <div class="bl-text">
+                            <p>Die Selari besitzen eine eigene Lichtsprache.</p>
+                            <p>NPCs erzeugen Signale abhängig von Gespräch, Situation und individuellem Verhalten.</p>
+                            <p>Die optischen Muster werden aus wiederverwendbaren Signalbausteinen zusammengesetzt.</p>
+                            <p>Ein gemeinsames semantisches Signalsystem ermöglicht die Darstellung derselben Aussage durch unterschiedliche Körperformen.</p>
+                            <p class="bl-quelle">Quelle: Info_material · Bioluminoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="bl-panel bl-karte" id="k-8-5-lichtsignaturen">
+                        <summary><span class="bl-nr">8.5</span><h2>Lichtsignaturen</h2><span class="bl-chevron" aria-hidden="true"></span></summary>
+                        <div class="bl-text">
+                            <p>Individuen besitzen unterschiedliche biologische Lichtmerkmale.</p>
+                            <p>Diese können zur visuellen Wiedererkennung verwendet werden.</p>
+                            <p>Die persönliche Signatur hängt von genetischen, entwicklungsbiologischen und erlernten Eigenschaften ab.</p>
+                            <p>Technische Nachahmung ist grundsätzlich möglich.</p>
+                            <p>Eine Lichtsignatur gilt deshalb nicht als vollständig sichere Identifikation.</p>
+                            <p class="bl-quelle">Quelle: Info_material · Bioluminoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="bl-panel bl-karte" id="k-8-6-spielerkommunikation">
+                        <summary><span class="bl-nr">8.6</span><h2>Spielerkommunikation</h2><span class="bl-chevron" aria-hidden="true"></span></summary>
+                        <div class="bl-text">
+                            <p>Spieler können mithilfe geeigneter Geräte bioluminoide Signale übersetzen.</p>
+                            <p>Ohne Übersetzung sind zunächst nur einfache Signale verständlich.</p>
+                            <p>Durch Forschung und Lernen können weitere Bedeutungen erschlossen werden.</p>
+                            <p>Die vollständige Kommunikation soll nicht ausschließlich aus einem manuellen Entschlüsselungs-Minispiel bestehen.</p>
+                            <p class="bl-quelle">Quelle: Info_material · Bioluminoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="bl-panel bl-karte" id="k-8-7-biologische-fahigkeiten">
+                        <summary><span class="bl-nr">8.7</span><h2>Biologische Fähigkeiten</h2><span class="bl-chevron" aria-hidden="true"></span></summary>
+                        <div class="bl-text">
+                            <h3>Lichtkommunikation</h3>
+                            <p>Übertragung visueller Informationen an geeignete Empfänger.</p>
+                            <h3>Signalanpassung</h3>
+                            <p>Veränderung der Intensität und räumlichen Verteilung einzelner Lichtfelder.</p>
+                            <h3>Optische Ruhe</h3>
+                            <p>Unterdrückung unnötiger Lichtemission.</p>
+                            <h3>Nahbereichsbeleuchtung</h3>
+                            <p>Schwache Beleuchtung unmittelbar benachbarter Objekte.</p>
+                            <h3>Musterimitation</h3>
+                            <p>Begrenzte Nachahmung bekannter Lichtsignale.</p>
+                            <h3>Besondere Signalwahrnehmung</h3>
+                            <p>Verbesserte Erkennung bestimmter biolumineszenter Muster.</p>
+                            <p class="bl-quelle">Quelle: Info_material · Bioluminoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="bl-panel bl-karte" id="k-8-8-biologische-nachteile">
+                        <summary><span class="bl-nr">8.8</span><h2>Biologische Nachteile</h2><span class="bl-chevron" aria-hidden="true"></span></summary>
+                        <div class="bl-text">
+                            <ul><li>Energieverbrauch durch starke Lichtemission.</li><li>Eingeschränkte Signalwirkung bei hellem Tageslicht.</li><li>Reduzierte Sichtweite bei Nebel und Hindernissen.</li><li>Verletzbarkeit bestimmter Lichtorgane.</li><li>Stoffwechselabhängigkeit.</li><li>Körperformspezifische Bewegungsgrenzen.</li><li>Mögliche Erkrankungen der Photocyten.</li></ul>
+                            <p>Diese Nachteile können durch Technik teilweise ausgeglichen werden.</p>
+                            <p class="bl-quelle">Quelle: Info_material · Bioluminoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="bl-panel bl-karte" id="k-8-9-wahrnehmungssystem">
+                        <summary><span class="bl-nr">8.9</span><h2>Wahrnehmungssystem</h2><span class="bl-chevron" aria-hidden="true"></span></summary>
+                        <div class="bl-text">
+                            <p>Die vier Körperformen besitzen unterschiedliche sensorische Schwerpunkte.</p>
+                            <p>Thaleri sind besonders auf räumliche Orientierung ausgelegt.</p>
+                            <p>Vorali besitzen eine ausgeprägte mechanische Wahrnehmung.</p>
+                            <p>Nemerai können Wasserbewegungen erfassen.</p>
+                            <p>Serrathi verfügen über eine gute terrestrische Bewegungskoordination.</p>
+                            <p>Alle Formen besitzen komplexe optische Wahrnehmung.</p>
+                            <p class="bl-quelle">Quelle: Info_material · Bioluminoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="bl-panel bl-karte" id="k-8-10-genetisches-system">
+                        <summary><span class="bl-nr">8.10</span><h2>Genetisches System</h2><span class="bl-chevron" aria-hidden="true"></span></summary>
+                        <div class="bl-text">
+                            <p>Die genetischen Daten eines Individuums werden von seiner dargestellten Körperform getrennt gespeichert.</p>
+                            <p>Das System unterscheidet:</p>
+                            <dl class="bl-fakten"><div><dt>Genotyp</dt><dd>Erbliche Eigenschaften.</dd></div><div><dt>Entwicklungsbedingungen</dt><dd>Biologische und äußere Einflüsse während der Embryonalentwicklung.</dd></div><div><dt>Morphologie</dt><dd>Resultierende Körperform.</dd></div><div><dt>Individuelle Variation</dt><dd>Größe, Pigmentierung, Lichtorgane und andere Eigenschaften.</dd></div></dl>
+                            <p>Dadurch können unterschiedliche Körperformen innerhalb derselben Spezies simuliert werden.</p>
+                            <p class="bl-quelle">Quelle: Info_material · Bioluminoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="bl-panel bl-karte" id="k-8-11-fortpflanzung">
+                        <summary><span class="bl-nr">8.11</span><h2>Fortpflanzung</h2><span class="bl-chevron" aria-hidden="true"></span></summary>
+                        <div class="bl-text">
+                            <p>Die drei Fortpflanzungswege können in der Hintergrundsimulation berücksichtigt werden.</p>
+                            <h3>Sexuelle Fortpflanzung</h3>
+                            <p>Genetische Rekombination zwischen zwei kompatiblen Individuen.</p>
+                            <h3>Parthenogenese</h3>
+                            <p>Entwicklung aus einer unbefruchteten Eizelle mit besonderer Chromosomenregulation.</p>
+                            <h3>Knospung</h3>
+                            <p>Entwicklung eines neuen Organismus aus spezialisierten reproduktiven Keimgeweben.</p>
+                            <p>Die Simulation muss physiologische Voraussetzungen, genetische Folgen und Entwicklungsbedingungen berücksichtigen.</p>
+                            <p class="bl-quelle">Quelle: Info_material · Bioluminoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="bl-panel bl-karte" id="k-8-12-nachwuchsentwicklung">
+                        <summary><span class="bl-nr">8.12</span><h2>Nachwuchsentwicklung</h2><span class="bl-chevron" aria-hidden="true"></span></summary>
+                        <div class="bl-text">
+                            <p>Die Körperform wird während der Embryonalentwicklung festgelegt.</p>
+                            <p>Nach dem Schlüpfen wachsen Organe, Muskulatur und Leuchtgewebe weiter.</p>
+                            <p>Die komplexe Lichtsprache entwickelt sich durch Lernen.</p>
+                            <p>Die Entwicklungsphasen können für wichtige Charaktere detailliert und für Hintergrundpopulationen vereinfacht simuliert werden.</p>
+                            <p class="bl-quelle">Quelle: Info_material · Bioluminoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="bl-panel bl-karte" id="k-8-13-medizin">
+                        <summary><span class="bl-nr">8.13</span><h2>Medizin</h2><span class="bl-chevron" aria-hidden="true"></span></summary>
+                        <div class="bl-text">
+                            <p>Verletzungen der Lichtorgane können die Kommunikation beeinträchtigen.</p>
+                            <p>Medizinische Geräte können biologische Funktionen unterstützen oder ersetzen.</p>
+                            <p>Die vier Körperformen benötigen angepasste Behandlungs- und Transportsysteme.</p>
+                            <p>Regeneration erfolgt nicht unmittelbar oder unbegrenzt.</p>
+                            <p class="bl-quelle">Quelle: Info_material · Bioluminoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="bl-panel bl-karte" id="k-8-15-wissenschaftliche-untersuchungen">
+                        <summary><span class="bl-nr">8.15</span><h2>Wissenschaftliche Untersuchungen</h2><span class="bl-chevron" aria-hidden="true"></span></summary>
+                        <div class="bl-text">
+                            <p>Spieler können Lichtsignale und biologische Gewebe mit geeigneten Scannern untersuchen.</p>
+                            <p>Mögliche Messwerte sind:</p>
+                            <ul><li>Emissionsspektren.</li><li>Lichtintensität.</li><li>Signalfrequenz.</li><li>Räumliche Lichtverteilung.</li><li>Organstruktur.</li><li>Physiologischer Zustand.</li></ul>
+                            <p>Komplexe genetische Untersuchungen benötigen spezialisierte Einrichtungen.</p>
+                            <p class="bl-quelle">Quelle: Info_material · Bioluminoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="bl-panel bl-karte" id="k-8-16-heimatwelt-als-spielumgebung">
+                        <summary><span class="bl-nr">8.16</span><h2>Heimatwelt als Spielumgebung</h2><span class="bl-chevron" aria-hidden="true"></span></summary>
+                        <div class="bl-text">
+                            <p>Nhalyss besitzt mehrere stark unterschiedliche erkundbare Lebensräume.</p>
+                            <p>Wichtige Regionen sind:</p>
+                            <ul><li>Hängende Wälder.</li><li>Spaltenwelten.</li><li>Tiefenbecken.</li><li>Höhlenlandschaften.</li><li>Spiegelmoore.</li><li>Hochländer.</li><li>Große Flusssysteme.</li><li>Historische Siedlungen.</li><li>Moderne Städte.</li><li>Forschungseinrichtungen.</li></ul>
+                            <p>Die Körperformen können in diesen Umgebungen unterschiedliche Bewegungsmöglichkeiten besitzen.</p>
+                            <p class="bl-quelle">Quelle: Info_material · Bioluminoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="bl-panel bl-karte" id="k-8-17-ringsystem">
+                        <summary><span class="bl-nr">8.17</span><h2>Ringsystem</h2><span class="bl-chevron" aria-hidden="true"></span></summary>
+                        <div class="bl-text">
+                            <p>Der Scherbenkranz ist ein bedeutendes visuelles Merkmal des Planeten.</p>
+                            <p>Sein Erscheinungsbild verändert sich mit Tageszeit, Sonnenstand und geografischer Position.</p>
+                            <p>Unter geeigneten Bedingungen entstehen Ringschatten.</p>
+                            <p>Orbitalmissionen müssen gefährliche Ringregionen berücksichtigen.</p>
+                            <p class="bl-quelle">Quelle: Info_material · Bioluminoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="bl-panel bl-karte" id="k-8-18-siedlungen">
+                        <summary><span class="bl-nr">8.18</span><h2>Siedlungen</h2><span class="bl-chevron" aria-hidden="true"></span></summary>
+                        <div class="bl-text">
+                            <p>Bioluminoide Siedlungen besitzen besondere architektonische Anforderungen.</p>
+                            <p>Unterschiedliche Körperformen benötigen angepasste Verkehrswege.</p>
+                            <p>Einige Gebäude besitzen Kletterstrukturen, Wasserwege oder mehrere Höhenebenen.</p>
+                            <p>Öffentliche Kommunikationsräume verfügen über gezielt gestaltete Lichtverhältnisse.</p>
+                            <p class="bl-quelle">Quelle: Info_material · Bioluminoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="bl-panel bl-karte" id="k-8-19-npc-verhalten">
+                        <summary><span class="bl-nr">8.19</span><h2>NPC-Verhalten</h2><span class="bl-chevron" aria-hidden="true"></span></summary>
+                        <div class="bl-text">
+                            <p>NPCs können situationsabhängige Lichtsignale erzeugen.</p>
+                            <p>Einige körperliche Reaktionen sind unwillkürlich.</p>
+                            <p>Andere Signale dienen bewusst der Sprache.</p>
+                            <p>Die Körperform beeinflusst Fortbewegung und Haltung.</p>
+                            <p>Die individuelle Persönlichkeit bleibt davon unabhängig.</p>
+                            <p class="bl-quelle">Quelle: Info_material · Bioluminoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="bl-panel bl-karte" id="k-8-20-politische-interaktion">
+                        <summary><span class="bl-nr">8.20</span><h2>Politische Interaktion</h2><span class="bl-chevron" aria-hidden="true"></span></summary>
+                        <div class="bl-text">
+                            <p>Nhalyss ist politisch eigenständig.</p>
+                            <p>Spieler können verschiedenen Institutionen und Organisationen begegnen.</p>
+                            <p>Die Konföderation besitzt vertraglich geregelte Beziehungen zum Bund der Sichtlinien.</p>
+                            <p>Die unterschiedlichen politischen Interessen bieten Möglichkeiten für Diplomatie, Handel und wissenschaftliche Zusammenarbeit.</p>
+                            <p class="bl-quelle">Quelle: Info_material · Bioluminoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="bl-panel bl-karte" id="k-8-21-historische-inhalte">
+                        <summary><span class="bl-nr">8.21</span><h2>Historische Inhalte</h2><span class="bl-chevron" aria-hidden="true"></span></summary>
+                        <div class="bl-text">
+                            <p>Die lange Geschichte ermöglicht zahlreiche spätere Erkundungs- und Forschungsinhalte.</p>
+                            <p>Besonders relevant sind:</p>
+                            <ul><li>Frühe Lichtarchive.</li><li>Die Große Überflutung von Nereth.</li><li>Die Engpasskriege.</li><li>Die Spiegelwirren.</li><li>Die Moorkrise.</li><li>Der Formenstreit.</li><li>Die Gründung des Bundes.</li><li>Der Erste Kontakt.</li><li>Der Vertrag von Seyrath.</li><li>Die Tiefenarchive von Ildeth.</li></ul>
+                            <p>Konkrete Missionen werden später im Story- und Questsystem ausgearbeitet.</p>
+                            <p class="bl-quelle">Quelle: Info_material · Bioluminoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="bl-panel bl-karte" id="k-8-22-ausrustung">
+                        <summary><span class="bl-nr">8.22</span><h2>Ausrüstung</h2><span class="bl-chevron" aria-hidden="true"></span></summary>
+                        <div class="bl-text">
+                            <p>Die vier Körperformen benötigen unterschiedliche Ausrüstung.</p>
+                            <h3>Thaleri</h3>
+                            <p>Flexible Schutzsysteme, die Gleitmembranen freihalten.</p>
+                            <h3>Vorali</h3>
+                            <p>Kompakte körpernahe Ausrüstung für enge Räume.</p>
+                            <h3>Nemerai</h3>
+                            <p>Wasserbeständige Geräte und amphibische Schutzsysteme.</p>
+                            <h3>Serrathi</h3>
+                            <p>Robuste Ausrüstung für längere terrestrische Fortbewegung.</p>
+                            <p>Für alle Formen können technische Systeme biologische Lichtkommunikation nach außen übertragen.</p>
+                            <p class="bl-quelle">Quelle: Info_material · Bioluminoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="bl-panel bl-karte" id="k-8-23-raumanzuge">
+                        <summary><span class="bl-nr">8.23</span><h2>Raumanzüge</h2><span class="bl-chevron" aria-hidden="true"></span></summary>
+                        <div class="bl-text">
+                            <p>Raumanzüge berücksichtigen unterschiedliche Anatomien.</p>
+                            <p>Die Position der Lichtorgane ist für Kommunikation und Schutz wichtig.</p>
+                            <p>Verdeckte biologische Signale können über technische Displays wiedergegeben werden.</p>
+                            <p>Die Fortbewegung bei geringer Gravitation erfordert formabhängige Anpassungen.</p>
+                            <p class="bl-quelle">Quelle: Info_material · Bioluminoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="bl-panel bl-karte" id="k-8-24-materialdarstellung-in-unreal-engine">
+                        <summary><span class="bl-nr">8.24</span><h2>Materialdarstellung in Unreal Engine</h2><span class="bl-chevron" aria-hidden="true"></span></summary>
+                        <div class="bl-text">
+                            <p>Die Lichtorgane werden hauptsächlich über Emissive-Materialien dargestellt.</p>
+                            <p>Geeignete Parameter steuern:</p>
+                            <ul><li>Farbe.</li><li>Helligkeit.</li><li>Lichtmuster.</li><li>Räumliche Signalverteilung.</li><li>Zeitliche Aktivierung.</li><li>Individuelle Lichtsignaturen.</li></ul>
+                            <p>Nicht jedes Lichtfeld benötigt eine dynamische Lichtquelle.</p>
+                            <p class="bl-quelle">Quelle: Info_material · Bioluminoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="bl-panel bl-karte" id="k-8-25-animation">
+                        <summary><span class="bl-nr">8.25</span><h2>Animation</h2><span class="bl-chevron" aria-hidden="true"></span></summary>
+                        <div class="bl-text">
+                            <p>Die vier Körperformen besitzen geeignete eigene Skelette beziehungsweise Rig-Systeme.</p>
+                            <p>Wichtige Animationen umfassen Fortbewegung, Ruhe, Werkzeuggebrauch und Kommunikation.</p>
+                            <p>Flexible Lichtorgane können zusätzlich animiert werden.</p>
+                            <p>Die Lichtmuster werden über ein gemeinsames Signalsystem gesteuert.</p>
+                            <p class="bl-quelle">Quelle: Info_material · Bioluminoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="bl-panel bl-karte" id="k-8-26-performance">
+                        <summary><span class="bl-nr">8.26</span><h2>Performance</h2><span class="bl-chevron" aria-hidden="true"></span></summary>
+                        <div class="bl-text">
+                            <p>Entfernte Charaktere verwenden vereinfachte Animationen und Leuchtmuster.</p>
+                            <p>Die Detailstufe orientiert sich an Entfernung, Sichtbarkeit und Bedeutung.</p>
+                            <p>Komplexe dynamische Beleuchtung wird auf wichtige Szenen beschränkt.</p>
+                            <p>Die Daten der biologischen Sprache bleiben unabhängig von der Darstellung.</p>
+                            <p class="bl-quelle">Quelle: Info_material · Bioluminoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="bl-panel bl-karte" id="k-8-27-persistenz">
+                        <summary><span class="bl-nr">8.27</span><h2>Persistenz</h2><span class="bl-chevron" aria-hidden="true"></span></summary>
+                        <div class="bl-text">
+                            <p>Individuen benötigen stabile Identitäten, die unabhängig von konkreten Actor-Instanzen bestehen.</p>
+                            <p>Genetische Eigenschaften, Körperform, individuelle Lichtsignatur und Entwicklungszustand gehören zu den persistenten Charakterdaten.</p>
+                            <p>Kurzfristige Lichtanimationen müssen nicht dauerhaft gespeichert werden, sofern sie aus dem aktuellen Zustand rekonstruiert werden können.</p>
+                            <p class="bl-quelle">Quelle: Info_material · Bioluminoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="bl-panel bl-karte" id="k-8-28-vorbereitung-auf-unreal-engine-6">
+                        <summary><span class="bl-nr">8.28</span><h2>Vorbereitung auf Unreal Engine 6</h2><span class="bl-chevron" aria-hidden="true"></span></summary>
+                        <div class="bl-text">
+                            <p>Die grundlegenden Gameplaydaten werden von der Engine-spezifischen Darstellung getrennt.</p>
+                            <p>Speziesdaten, genetische Eigenschaften, Morphologien und Signalsemantik bleiben unabhängig von bestimmten Actor-Implementierungen.</p>
+                            <p>Die Darstellung kann später an neue Engine-Systeme angepasst werden.</p>
+                            <p class="bl-quelle">Quelle: Info_material · Bioluminoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="bl-panel bl-karte" id="k-8-29-bildmaterial">
+                        <summary><span class="bl-nr">8.29</span><h2>Bildmaterial</h2><span class="bl-chevron" aria-hidden="true"></span></summary>
+                        <div class="bl-text">
+                            <p>Für die Bioluminoiden werden eigenständige visuelle Designreihen benötigt.</p>
+                            <p>Jede Körperform erhält:</p>
+                            <ul><li>Anatomische Referenzansichten.</li><li>Individuelle Körpervarianten.</li><li>Entwicklungsstadien.</li><li>Lichtorgandarstellungen.</li><li>Bewegungsreferenzen.</li><li>Kleidung und Ausrüstung.</li><li>Wissenschaftliche Querschnitte.</li></ul>
+                            <p class="bl-quelle">Quelle: Info_material · Bioluminoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="bl-panel bl-karte" id="k-8-30-heimatwelt-medien">
+                        <summary><span class="bl-nr">8.30</span><h2>Heimatwelt-Medien</h2><span class="bl-chevron" aria-hidden="true"></span></summary>
+                        <div class="bl-text">
+                            <p>Wichtige Motive sind:</p>
+                            <ul><li>Planet Nhalyss aus dem Orbit.</li><li>Scherbenkranz.</li><li>Ringschatten.</li><li>Hängende Wälder.</li><li>Spaltenlandschaften.</li><li>Höhlensysteme.</li><li>Spiegelmoore.</li><li>Seyrath.</li><li>Ireth-Wache.</li><li>Historische Städte.</li><li>Forschungseinrichtungen.</li></ul>
+                            <p class="bl-quelle">Quelle: Info_material · Bioluminoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="bl-panel bl-karte" id="k-8-31-sounddesign">
+                        <summary><span class="bl-nr">8.31</span><h2>Sounddesign</h2><span class="bl-chevron" aria-hidden="true"></span></summary>
+                        <div class="bl-text">
+                            <p>Jede Körperform erhält individuelle biologische Geräusche.</p>
+                            <p>Die Soundpakete sollen kurze, einzeln verwendbare WAV-Samples enthalten.</p>
+                            <p>Wichtige Geräuschtypen sind:</p>
+                            <ul><li>Körperbewegungen.</li><li>Kontaktgeräusche.</li><li>Atemgeräusche.</li><li>Ruhegeräusche.</li><li>Akustische Warnsignale.</li><li>Mechanische Bewegungen der Leuchtlamellen.</li><li>Kurze kulturelle Klangmotive.</li></ul>
+                            <p>Biolumineszenz selbst erzeugt nicht automatisch einen hörbaren Klang.</p>
+                            <p class="bl-quelle">Quelle: Info_material · Bioluminoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="bl-panel bl-karte" id="k-8-32-musik-und-unterhaltung">
+                        <summary><span class="bl-nr">8.32</span><h2>Musik und Unterhaltung</h2><span class="bl-chevron" aria-hidden="true"></span></summary>
+                        <div class="bl-text">
+                            <p>Die Selari besitzen akustische Musik und optische Kunstformen.</p>
+                            <p>Einige Aufführungen kombinieren Licht, Bewegung und Klang.</p>
+                            <p>Für die audiovisuelle Darstellung können technische Übersetzungen verwendet werden.</p>
+                            <p>Diese sind von den natürlichen biologischen Lauten zu unterscheiden.</p>
+                            <p class="bl-quelle">Quelle: Info_material · Bioluminoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="bl-panel bl-karte" id="k-8-33-radio-und-fernsehen">
+                        <summary><span class="bl-nr">8.33</span><h2>Radio und Fernsehen</h2><span class="bl-chevron" aria-hidden="true"></span></summary>
+                        <div class="bl-text">
+                            <p>Bioluminoide Medien besitzen optische und akustische Übertragungsformate.</p>
+                            <p>Radioähnliche Angebote verwenden nichtoptische Kommunikationsformen.</p>
+                            <p>Fernsehähnliche Systeme können biologische Lichtmuster technisch reproduzieren.</p>
+                            <p>Interstellare Medien verwenden Übersetzungssysteme für andere Spezies.</p>
+                            <p class="bl-quelle">Quelle: Info_material · Bioluminoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="bl-panel bl-karte" id="k-8-34-spatere-erweiterungen">
+                        <summary><span class="bl-nr">8.34</span><h2>Spätere Erweiterungen</h2><span class="bl-chevron" aria-hidden="true"></span></summary>
+                        <div class="bl-text">
+                            <p>Weitere regionale Körpervarianten können ergänzt werden, sofern sie zum gemeinsamen genetischen Entwicklungsmodell passen.</p>
+                            <p>Neue biologische Fortpflanzungswege oder vollständig andere Körperbaupläne benötigen eine erneute Konsistenzprüfung.</p>
+                            <p>Die vier Hauptformen und drei Fortpflanzungswege bilden den aktuellen verbindlichen biologischen Grundbestand.</p>
+                            <p class="bl-quelle">Quelle: Info_material · Bioluminoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="bl-panel bl-karte" id="k-8-35-spielbalance">
+                        <summary><span class="bl-nr">8.35</span><h2>Spielbalance</h2><span class="bl-chevron" aria-hidden="true"></span></summary>
+                        <div class="bl-text">
+                            <p>Keine Körperform soll grundsätzlich allen anderen überlegen sein.</p>
+                            <p>Vorteile entstehen durch anatomische Eigenschaften und passende Umweltbedingungen.</p>
+                            <p>Technologie kann zahlreiche biologische Einschränkungen ausgleichen.</p>
+                            <p>Die Selari bleiben eine intelligente, gesellschaftlich vielfältige Spezies und werden nicht auf starre Klassen oder biologische Kasten reduziert.</p>
+                            <p class="bl-quelle">Quelle: Info_material · Bioluminoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <section class="bl-panel bl-block bl-karussell-block" id="galerie" aria-label="Bilder">
+                    <h2 class="bl-h2">Bilder <small>6 Bilder · Bildarchiv</small></h2>
+                    <div class="bilder-karussell" data-karussell aria-roledescription="Karussell" aria-label="Bilder der Bioluminoiden">
+                    <div class="karussell-spur" tabindex="0" aria-label="Bilder – mit Pfeiltasten blättern">
+                        <figure class="karussell-folie" data-kategorie="Designentwürfe" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Entwurf A2 · 1 in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Bioluminoiden/gesamtdarstellung/Bioluminoiden_designA2.png" alt="Entwurf A2 · 1" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Entwurf A2 · 1</strong><span>Designentwürfe</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Designentwürfe" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Entwurf A2 · 2 in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Bioluminoiden/gesamtdarstellung/Bioluminoiden_designA2%281%29.png" alt="Entwurf A2 · 2" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Entwurf A2 · 2</strong><span>Designentwürfe</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Designentwürfe" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Entwurf A2 · 3 in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Bioluminoiden/gesamtdarstellung/Bioluminoiden_designA2%282%29.png" alt="Entwurf A2 · 3" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Entwurf A2 · 3</strong><span>Designentwürfe</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Designentwürfe" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Entwurf A2 · 4 in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Bioluminoiden/gesamtdarstellung/Bioluminoiden_designA2%283%29.png" alt="Entwurf A2 · 4" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Entwurf A2 · 4</strong><span>Designentwürfe</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Designentwürfe" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Entwurf A2 · 5 in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Bioluminoiden/gesamtdarstellung/Bioluminoiden_designA2%284%29.png" alt="Entwurf A2 · 5" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Entwurf A2 · 5</strong><span>Designentwürfe</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Designentwürfe" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Entwurf A2 · 6 in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Bioluminoiden/gesamtdarstellung/Bioluminoiden_designA2%285%29.png" alt="Entwurf A2 · 6" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Entwurf A2 · 6</strong><span>Designentwürfe</span></figcaption>
+                        </figure>
+                    </div>
+                    <div class="karussell-steuerung">
+                        <button type="button" data-karussell-schritt="-1" aria-label="Vorheriges Bild">‹</button>
+                        <div class="karussell-punkte" role="group" aria-label="Bild wählen"></div>
+                        <output class="karussell-zaehler" aria-live="polite"></output>
+                        <button type="button" data-karussell-schritt="1" aria-label="Nächstes Bild">›</button>
+                    </div>
+                </div>
+                </section>
+                    <aside class="bl-panel bl-block bl-links" aria-label="Verknüpfungen">
+                    <h2 class="bl-h2">Verknüpfungen</h2>
+                    <ul>
+                        <li><a href="../../../../himmelskoerper/planeten/details/imposante-supererde-mit-dunklen-kontinenten/hauptseite/index.html" ><strong>Planetendossier Nhalyss</strong><span>Heimatwelt im Planetenarchiv</span></a></li>
+                        <li><a href="../../../../../Men%C3%BCs/Sternenkarte/Sternenkarte.html?system=nhalyss-stern" ><strong>Seyvar-System</strong><span>In der Sternenkarte ansehen</span></a></li>
+                        <li><a href="../Forschung/forschung.html" data-route="spezies-biological-17-forschung"><strong>Forschung</strong><span>Forschung an den Bioluminoiden</span></a></li>
+                        <li><a href="../../../../Forschung/Xenoforschung/Xenobiologie/index.html" ><strong>Xenobiologie</strong><span>Forschungszweig</span></a></li>
+                        <li><a href="../../../../Forschung/%C3%9Cbersicht/Forschung.html" ><strong>Forschungsarchiv</strong><span>Alle Forschungszweige</span></a></li>
+                    </ul>
+                </aside>
+                    <nav class="bl-blaettern" aria-label="Hauptreiter blättern"><a href="../Unterseiten/Geschichte/geschichte.html" data-route="spezies-biological-17-geschichte">← Geschichte</a><a href="../Forschung/forschung.html" data-route="spezies-biological-17-forschung">Forschung →</a></nav>
+                </div>
+                <nav class="bl-panel bl-sprung" data-bl-sprung aria-label="Kapitel dieser Seite">
+                    <p class="bl-kicker">Kapitel</p>
+                    <button type="button" class="bl-klappen" data-bl-klappen aria-pressed="false">Alle aufklappen</button>
+                    <a href="#k-steckbrief"><span class="bl-nr">◇</span>Steckbrief</a>
+                    <a href="#k-8-1-rolle-der-spezies"><span class="bl-nr">8.1</span>Rolle der Spezies</a>
+                    <a href="#k-8-2-vier-korpermodelle"><span class="bl-nr">8.2</span>Vier Körpermodelle</a>
+                    <a href="#k-8-3-fortbewegung"><span class="bl-nr">8.3</span>Fortbewegung</a>
+                    <a href="#k-8-4-biologische-lichtkommunikation"><span class="bl-nr">8.4</span>Biologische Lichtkommunikation</a>
+                    <a href="#k-8-5-lichtsignaturen"><span class="bl-nr">8.5</span>Lichtsignaturen</a>
+                    <a href="#k-8-6-spielerkommunikation"><span class="bl-nr">8.6</span>Spielerkommunikation</a>
+                    <a href="#k-8-7-biologische-fahigkeiten"><span class="bl-nr">8.7</span>Biologische Fähigkeiten</a>
+                    <a href="#k-8-8-biologische-nachteile"><span class="bl-nr">8.8</span>Biologische Nachteile</a>
+                    <a href="#k-8-9-wahrnehmungssystem"><span class="bl-nr">8.9</span>Wahrnehmungssystem</a>
+                    <a href="#k-8-10-genetisches-system"><span class="bl-nr">8.10</span>Genetisches System</a>
+                    <a href="#k-8-11-fortpflanzung"><span class="bl-nr">8.11</span>Fortpflanzung</a>
+                    <a href="#k-8-12-nachwuchsentwicklung"><span class="bl-nr">8.12</span>Nachwuchsentwicklung</a>
+                    <a href="#k-8-13-medizin"><span class="bl-nr">8.13</span>Medizin</a>
+                    <a href="#k-8-15-wissenschaftliche-untersuchungen"><span class="bl-nr">8.15</span>Wissenschaftliche Untersuchungen</a>
+                    <a href="#k-8-16-heimatwelt-als-spielumgebung"><span class="bl-nr">8.16</span>Heimatwelt als Spielumgebung</a>
+                    <a href="#k-8-17-ringsystem"><span class="bl-nr">8.17</span>Ringsystem</a>
+                    <a href="#k-8-18-siedlungen"><span class="bl-nr">8.18</span>Siedlungen</a>
+                    <a href="#k-8-19-npc-verhalten"><span class="bl-nr">8.19</span>NPC-Verhalten</a>
+                    <a href="#k-8-20-politische-interaktion"><span class="bl-nr">8.20</span>Politische Interaktion</a>
+                    <a href="#k-8-21-historische-inhalte"><span class="bl-nr">8.21</span>Historische Inhalte</a>
+                    <a href="#k-8-22-ausrustung"><span class="bl-nr">8.22</span>Ausrüstung</a>
+                    <a href="#k-8-23-raumanzuge"><span class="bl-nr">8.23</span>Raumanzüge</a>
+                    <a href="#k-8-24-materialdarstellung-in-unreal-engine"><span class="bl-nr">8.24</span>Materialdarstellung in Unreal Engine</a>
+                    <a href="#k-8-25-animation"><span class="bl-nr">8.25</span>Animation</a>
+                    <a href="#k-8-26-performance"><span class="bl-nr">8.26</span>Performance</a>
+                    <a href="#k-8-27-persistenz"><span class="bl-nr">8.27</span>Persistenz</a>
+                    <a href="#k-8-28-vorbereitung-auf-unreal-engine-6"><span class="bl-nr">8.28</span>Vorbereitung auf Unreal Engine 6</a>
+                    <a href="#k-8-29-bildmaterial"><span class="bl-nr">8.29</span>Bildmaterial</a>
+                    <a href="#k-8-30-heimatwelt-medien"><span class="bl-nr">8.30</span>Heimatwelt-Medien</a>
+                    <a href="#k-8-31-sounddesign"><span class="bl-nr">8.31</span>Sounddesign</a>
+                    <a href="#k-8-32-musik-und-unterhaltung"><span class="bl-nr">8.32</span>Musik und Unterhaltung</a>
+                    <a href="#k-8-33-radio-und-fernsehen"><span class="bl-nr">8.33</span>Radio und Fernsehen</a>
+                    <a href="#k-8-34-spatere-erweiterungen"><span class="bl-nr">8.34</span>Spätere Erweiterungen</a>
+                    <a href="#k-8-35-spielbalance"><span class="bl-nr">8.35</span>Spielbalance</a>
+                    <a href="#galerie"><span class="bl-nr">▣</span>Bilder</a>
+                </nav>
+            </div>
+            <dialog class="bl-zoom" aria-label="Bild in Großansicht"><div class="controls"><button class="control" type="button" data-step="-1" aria-label="Vorheriges Bild">←</button><output aria-live="polite"></output><button class="control" type="button" data-step="1" aria-label="Nächstes Bild">→</button></div><form method="dialog"><button class="control">Schließen</button></form><img alt=""></dialog>
+        </main>
+    </div>
+</body>
+</html>

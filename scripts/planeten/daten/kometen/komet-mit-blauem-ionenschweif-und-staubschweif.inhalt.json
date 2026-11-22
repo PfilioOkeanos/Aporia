@@ -1,0 +1,519 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Prismenkomet",
+  "genitiv": "von Prismenkomet",
+  "dossierName": "Prismenkomet-Dossier",
+  "klasse": "Komet",
+  "intro": "Ein Komet, dessen Staubschweif im Licht von Seyvar in Cyan- und Bernsteintönen schimmert. Er kehrt alle 58 Jahre wieder; frühe Darstellungen des Ringhimmels zeigen ihn neben dem Scherbenkranz. Prismenkomet umkreist Seyvar in 15 AE Abstand und braucht für einen Umlauf 64,2 Jahre.",
+  "globusDaten": {
+    "planet": "komet-mit-blauem-ionenschweif-und-staubschweif",
+    "klasse": "Eis",
+    "radius": 5000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=nhalyss-stern&objekt=nhalyss-prismenkomet",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-D6DA590876"
+    ],
+    [
+      "Typ",
+      "Komet"
+    ],
+    [
+      "Sternsystem",
+      "Seyvar-System"
+    ],
+    [
+      "Zentralkörper",
+      "Seyvar"
+    ],
+    [
+      "Große Halbachse",
+      "15 AE"
+    ],
+    [
+      "Umlaufzeit",
+      "64,2 Jahre"
+    ],
+    [
+      "Durchmesser",
+      "10 km"
+    ],
+    [
+      "Masse",
+      "3,14 · 10^14 kg"
+    ],
+    [
+      "Schwerkraft",
+      "0,08 cm/s²"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -214 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Seyvar-System"
+    ],
+    [
+      "Zentralstern",
+      "Seyvar",
+      "inhalte/himmelskoerper/sterne/details/pulsierender-orange-roter-riesenstern/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "15 AE"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Prismenkomet im Seyvar-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=nhalyss-stern&objekt=nhalyss-prismenkomet",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Seyvar",
+      "href": "inhalte/himmelskoerper/sterne/details/pulsierender-orange-roter-riesenstern/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Bioluminoiden",
+      "titel": "Nhalyss",
+      "href": "inhalte/himmelskoerper/planeten/details/imposante-supererde-mit-dunklen-kontinenten/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Bioluminoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Bioluminoiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Seyvar-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=nhalyss-stern&objekt=nhalyss-prismenkomet"
+    },
+    {
+      "titel": "Speziesdossier Bioluminoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Bioluminoiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#080c0b",
+      "tiefe": "#111a18",
+      "akzent": "#bdf2e8",
+      "sand": "#c2e7c2",
+      "moos": "#9cf0bb",
+      "ozean": "#7cd3e2",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#456a63"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Umlaufbahn"
+      ],
+      [
+        "Hülle",
+        "Schweif"
+      ],
+      [
+        "Hülle",
+        "Koma"
+      ],
+      [
+        "Kern",
+        "Kern"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Kern": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Kern von Prismenkomet.",
+      "abschnitte": [
+        {
+          "titel": "Kometenkern",
+          "text": [
+            "Der Kern von Prismenkomet misst rund 10 km und besteht aus einem lockeren Gemenge aus Eis, Staub und Gestein."
+          ],
+          "schichten": [
+            [
+              "Staubkruste",
+              "Dunkle, kohlenstoffreiche Oberfläche"
+            ],
+            [
+              "Eis-Staub-Gemisch",
+              "Wassereis, Kohlendioxid und Staub"
+            ],
+            [
+              "Kern",
+              "Lockeres Eis-Gestein-Gemenge"
+            ]
+          ]
+        }
+      ]
+    },
+    "Koma": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Koma von Prismenkomet.",
+      "abschnitte": [
+        {
+          "titel": "Koma",
+          "text": [
+            "Nähert sich Prismenkomet dem Stern Seyvar, verdampft Eis und bildet eine leuchtende Gashülle um den Kern."
+          ]
+        }
+      ]
+    },
+    "Schweif": {
+      "gruppe": "Natur",
+      "icon": "☄",
+      "intro": "Schweif von Prismenkomet.",
+      "abschnitte": [
+        {
+          "titel": "Schweif",
+          "text": [
+            "Ein Komet, dessen Staubschweif im Licht von Seyvar in Cyan- und Bernsteintönen schimmert. Er kehrt alle 58 Jahre wieder; frühe Darstellungen des Ringhimmels zeigen ihn neben dem Scherbenkranz."
+          ]
+        }
+      ]
+    },
+    "Umlaufbahn": {
+      "gruppe": "Wissenschaft",
+      "icon": "◌",
+      "intro": "Umlaufbahn von Prismenkomet.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Seyvar"
+            ],
+            [
+              "Große Halbachse",
+              "15 AE (2.244 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,92"
+            ],
+            [
+              "Bahnneigung",
+              "31°"
+            ],
+            [
+              "Umlaufzeit",
+              "64,2 Jahre"
+            ],
+            [
+              "Einstrahlung",
+              "0,002-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Sternnächster und fernster Punkt",
+          "daten": [
+            [
+              "Perihel",
+              "1,2 AE"
+            ],
+            [
+              "Aphel",
+              "28,8 AE"
+            ]
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Prismenkomet auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Prismenkomet",
+          "text": [
+            "Ein Komet, dessen Staubschweif im Licht von Seyvar in Cyan- und Bernsteintönen schimmert. Er kehrt alle 58 Jahre wieder; frühe Darstellungen des Ringhimmels zeigen ihn neben dem Scherbenkranz.",
+            "Prismenkomet umkreist Seyvar in 15 AE Abstand und braucht für einen Umlauf 64,2 Jahre."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Komet"
+            ],
+            [
+              "Sternsystem",
+              "Seyvar-System"
+            ],
+            [
+              "Zentralkörper",
+              "Seyvar"
+            ],
+            [
+              "Große Halbachse",
+              "15 AE"
+            ],
+            [
+              "Umlaufzeit",
+              "64,2 Jahre"
+            ],
+            [
+              "Durchmesser",
+              "10 km"
+            ],
+            [
+              "Masse",
+              "3,14 · 10^14 kg"
+            ],
+            [
+              "Schwerkraft",
+              "0,08 cm/s²"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -214 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Nhalyss",
+          "text": [
+            "Das Seyvar-System ist die Heimat der Bioluminoiden: Ihr Planet Nhalyss umkreist Seyvar."
+          ],
+          "verweise": [
+            [
+              "Nhalyss",
+              "inhalte/himmelskoerper/planeten/details/imposante-supererde-mit-dunklen-kontinenten/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Bioluminoiden",
+              "inhalte/spezies/Biologische Spezies/Bioluminoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Prismenkomet im Seyvar-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Seyvar"
+            ],
+            [
+              "Große Halbachse",
+              "15 AE (2.244 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,92"
+            ],
+            [
+              "Bahnneigung",
+              "31°"
+            ],
+            [
+              "Umlaufzeit",
+              "64,2 Jahre"
+            ],
+            [
+              "Einstrahlung",
+              "0,002-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Seyvar · Stern",
+              "Orangefarbener Zwerg (K2 V)"
+            ],
+            [
+              "Seyvar I · 0,29 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Nhalyss · 0,72 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Seyvar III · 1,38 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Seyvar IV · 4,4 AE",
+              "Gasriese"
+            ],
+            [
+              "Seyvar V · 11,5 AE",
+              "Eisriese"
+            ],
+            [
+              "Splittergürtel · 2,1–2,9 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 34–48 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Seyvar",
+              "inhalte/himmelskoerper/sterne/details/pulsierender-orange-roter-riesenstern/hauptseite/index.html"
+            ],
+            [
+              "Seyvar I",
+              "inhalte/himmelskoerper/planeten/details/luftloser-basaltplanet-im-harten-sonnenlicht/hauptseite/index.html"
+            ],
+            [
+              "Nhalyss",
+              "inhalte/himmelskoerper/planeten/details/imposante-supererde-mit-dunklen-kontinenten/hauptseite/index.html"
+            ],
+            [
+              "Seyvar III",
+              "inhalte/himmelskoerper/planeten/details/kompakter-felsplanet-im-schwarzen-all/hauptseite/index.html"
+            ],
+            [
+              "Seyvar IV",
+              "inhalte/himmelskoerper/planeten/details/einsamer-gasriese-im-kalten-all/hauptseite/index.html"
+            ],
+            [
+              "Seyvar V",
+              "inhalte/himmelskoerper/planeten/details/leuchtender-mini-neptun-im-tiefen-all/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Prismenkomet.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "5 km"
+            ],
+            [
+              "Masse",
+              "3,14 · 10^14 kg"
+            ],
+            [
+              "Mittlere Dichte",
+              "0,6 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "0 m/s² (0 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "0 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Prismenkomet.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Prismenkomet stammt aus den kalten Außenbereichen des Seyvar-Systems und wurde auf seine heutige, langgestreckte Bahn gelenkt."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Prismenkomet.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Was steckt hinter den Besonderheiten von Prismenkomet?",
+            "Woher stammt der Komet genau?",
+            "Wie lange übersteht sein Kern noch die Annäherungen an den Stern?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Prismenkomet ist mit allen Bahndaten im Seyvar-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=nhalyss-stern&objekt=nhalyss-prismenkomet"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Prismenkomet.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Als Anomalie in der Sternenkarte verzeichnet"
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Prismenkomet.",
+      "abschnitte": [
+        {
+          "titel": "Prismenkomet – Archivbild",
+          "bild": true,
+          "bildtext": "Prismenkomet"
+        }
+      ]
+    }
+  }
+}

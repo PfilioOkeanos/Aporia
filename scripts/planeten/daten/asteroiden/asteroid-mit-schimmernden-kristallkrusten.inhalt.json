@@ -1,0 +1,479 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Spiegelstein",
+  "genitiv": "von Spiegelstein",
+  "dossierName": "Spiegelstein-Dossier",
+  "klasse": "Asteroid",
+  "intro": "Spiegelstein ist ein Asteroid aus nahezu reinem Kristall. Er reflektiert das Licht Thalors so stark, dass er von Nhemara aus mit bloßem Auge als flackernder Punkt sichtbar ist. Spiegelstein umkreist Thalor in 2,05 AE Abstand und braucht für einen Umlauf 3,3 Jahre.",
+  "globusDaten": {
+    "planet": "asteroid-mit-schimmernden-kristallkrusten",
+    "klasse": "Gestein",
+    "radius": 35000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=nhemara-stern&objekt=nhemara-spiegelstein",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-290125E251"
+    ],
+    [
+      "Typ",
+      "Asteroid"
+    ],
+    [
+      "Sternsystem",
+      "Thalor-System"
+    ],
+    [
+      "Zentralkörper",
+      "Thalor"
+    ],
+    [
+      "Große Halbachse",
+      "2,05 AE"
+    ],
+    [
+      "Umlaufzeit",
+      "3,3 Jahre"
+    ],
+    [
+      "Durchmesser",
+      "70 km"
+    ],
+    [
+      "Masse",
+      "4,85 · 10^17 kg"
+    ],
+    [
+      "Schwerkraft",
+      "2,64 cm/s²"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -124 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Thalor-System"
+    ],
+    [
+      "Zentralstern",
+      "Thalor",
+      "inhalte/himmelskoerper/sterne/details/brauner-zwerg-mit-bernsteinfarbenem-wolkensaum/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "2,05 AE"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Spiegelstein im Thalor-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=nhemara-stern&objekt=nhemara-spiegelstein",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Thalor",
+      "href": "inhalte/himmelskoerper/sterne/details/brauner-zwerg-mit-bernsteinfarbenem-wolkensaum/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Lithoiden",
+      "titel": "Nhemara",
+      "href": "inhalte/himmelskoerper/planeten/details/planet-der-gewaltigen-verwerfungen/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Lithoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Lithoiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Thalor-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=nhemara-stern&objekt=nhemara-spiegelstein"
+    },
+    {
+      "titel": "Speziesdossier Lithoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Lithoiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#0a0a0a",
+      "tiefe": "#161516",
+      "akzent": "#dbd7de",
+      "sand": "#ddd1bc",
+      "moos": "#b7d1b3",
+      "ozean": "#92b7d6",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#5a575c"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Bahn"
+      ],
+      [
+        "Material",
+        "Zusammensetzung"
+      ],
+      [
+        "Zeit",
+        "Herkunft"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Zusammensetzung": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Zusammensetzung von Spiegelstein.",
+      "abschnitte": [
+        {
+          "titel": "Material",
+          "liste": [
+            "Silikate",
+            "Eisen und Nickel",
+            "Seltene Metalle"
+          ],
+          "schichten": [
+            [
+              "Regolith",
+              "Staub und Gesteinsschutt"
+            ],
+            [
+              "Trümmerkörper",
+              "Lose zusammengehaltene Gesteinsbrocken"
+            ]
+          ]
+        }
+      ]
+    },
+    "Bahn": {
+      "gruppe": "Wissenschaft",
+      "icon": "◌",
+      "intro": "Bahn von Spiegelstein.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Thalor"
+            ],
+            [
+              "Große Halbachse",
+              "2,05 AE (306,7 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,12"
+            ],
+            [
+              "Bahnneigung",
+              "7°"
+            ],
+            [
+              "Umlaufzeit",
+              "3,3 Jahre"
+            ],
+            [
+              "Einstrahlung",
+              "0,09-fach der Erde"
+            ]
+          ]
+        }
+      ]
+    },
+    "Herkunft": {
+      "gruppe": "Weitere",
+      "icon": "⧗",
+      "intro": "Herkunft von Spiegelstein.",
+      "abschnitte": [
+        {
+          "titel": "Herkunft",
+          "text": [
+            "Spiegelstein ist ein Überrest aus der Entstehungszeit des Thalor-Systems."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Spiegelstein auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Spiegelstein",
+          "text": [
+            "Spiegelstein ist ein Asteroid aus nahezu reinem Kristall. Er reflektiert das Licht Thalors so stark, dass er von Nhemara aus mit bloßem Auge als flackernder Punkt sichtbar ist.",
+            "Spiegelstein umkreist Thalor in 2,05 AE Abstand und braucht für einen Umlauf 3,3 Jahre."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Asteroid"
+            ],
+            [
+              "Sternsystem",
+              "Thalor-System"
+            ],
+            [
+              "Zentralkörper",
+              "Thalor"
+            ],
+            [
+              "Große Halbachse",
+              "2,05 AE"
+            ],
+            [
+              "Umlaufzeit",
+              "3,3 Jahre"
+            ],
+            [
+              "Durchmesser",
+              "70 km"
+            ],
+            [
+              "Masse",
+              "4,85 · 10^17 kg"
+            ],
+            [
+              "Schwerkraft",
+              "2,64 cm/s²"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -124 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Nhemara",
+          "text": [
+            "Das Thalor-System ist die Heimat der Lithoiden: Ihr Planet Nhemara umkreist Thalor."
+          ],
+          "verweise": [
+            [
+              "Nhemara",
+              "inhalte/himmelskoerper/planeten/details/planet-der-gewaltigen-verwerfungen/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Lithoiden",
+              "inhalte/spezies/Biologische Spezies/Lithoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Spiegelstein im Thalor-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Thalor"
+            ],
+            [
+              "Große Halbachse",
+              "2,05 AE (306,7 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,12"
+            ],
+            [
+              "Bahnneigung",
+              "7°"
+            ],
+            [
+              "Umlaufzeit",
+              "3,3 Jahre"
+            ],
+            [
+              "Einstrahlung",
+              "0,09-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Thalor · Stern",
+              "Orangefarbener Zwerg (K2 V)"
+            ],
+            [
+              "Thalor I · 0,31 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Nhemara · 0,87 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Thalor III · 3,1 AE",
+              "Gasriese"
+            ],
+            [
+              "Thalor IV · 8,6 AE",
+              "Eisriese"
+            ],
+            [
+              "Erzgürtel · 1,6–2,4 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 30–44 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Thalor",
+              "inhalte/himmelskoerper/sterne/details/brauner-zwerg-mit-bernsteinfarbenem-wolkensaum/hauptseite/index.html"
+            ],
+            [
+              "Thalor I",
+              "inhalte/himmelskoerper/planeten/details/dampfplanet-mit-gluhendem-ozean/hauptseite/index.html"
+            ],
+            [
+              "Nhemara",
+              "inhalte/himmelskoerper/planeten/details/planet-der-gewaltigen-verwerfungen/hauptseite/index.html"
+            ],
+            [
+              "Thalor III",
+              "inhalte/himmelskoerper/planeten/details/abgeplatteter-gasriese-unter-sternen/hauptseite/index.html"
+            ],
+            [
+              "Thalor IV",
+              "inhalte/himmelskoerper/planeten/details/tiefblauer-eisriese-mit-zarten-ringen/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Spiegelstein.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "35 km"
+            ],
+            [
+              "Masse",
+              "4,85 · 10^17 kg"
+            ],
+            [
+              "Mittlere Dichte",
+              "2,7 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "0,03 m/s² (0,003 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "0,04 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Spiegelstein.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Spiegelstein besteht aus Material, das sich bei der Entstehung des Thalor-Systems nicht zu einem Planeten vereinte."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Spiegelstein.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Was steckt hinter den Besonderheiten von Spiegelstein?",
+            "Ist der Körper ein Bruchstück eines größeren Körpers?",
+            "Welche Rohstoffe birgt er?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Spiegelstein ist mit allen Bahndaten im Thalor-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=nhemara-stern&objekt=nhemara-spiegelstein"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Spiegelstein.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Als Anomalie in der Sternenkarte verzeichnet"
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Spiegelstein.",
+      "abschnitte": [
+        {
+          "titel": "Spiegelstein – Archivbild",
+          "bild": true,
+          "bildtext": "Spiegelstein"
+        }
+      ]
+    }
+  }
+}

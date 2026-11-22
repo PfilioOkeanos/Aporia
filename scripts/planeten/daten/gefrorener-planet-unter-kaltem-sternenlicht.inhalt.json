@@ -1,0 +1,618 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Ashkor II",
+  "genitiv": "von Ashkor II",
+  "dossierName": "Ashkor II-Dossier",
+  "klasse": "Gesteinsplanet",
+  "intro": "Ashkor II ist eine kalte, staubbedeckte Gesteinswelt mit dünner Atmosphäre. Ashkor II umkreist Ashkor in 0,92 AE Abstand und braucht für einen Umlauf 385,2 Tage.",
+  "globusDaten": {
+    "planet": "gefrorener-planet-unter-kaltem-sternenlicht",
+    "klasse": "Gestein",
+    "radius": 5400000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=ferrum-stern&objekt=ferrum-ashkor-ii",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-AA31CC45F4"
+    ],
+    [
+      "Typ",
+      "Gesteinsplanet"
+    ],
+    [
+      "Sternsystem",
+      "Ferrum-System"
+    ],
+    [
+      "Zentralkörper",
+      "Ashkor"
+    ],
+    [
+      "Große Halbachse",
+      "0,92 AE"
+    ],
+    [
+      "Umlaufzeit",
+      "385,2 Tage"
+    ],
+    [
+      "Durchmesser",
+      "10.800 km"
+    ],
+    [
+      "Masse",
+      "0,6 Erdmassen"
+    ],
+    [
+      "Schwerkraft",
+      "0,84 g"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -108 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Ferrum-System"
+    ],
+    [
+      "Zentralstern",
+      "Ashkor",
+      "inhalte/himmelskoerper/sterne/details/kompakter-orangefarbener-red-clump-stern/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "0,92 AE"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Ashkor II im Ferrum-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=ferrum-stern&objekt=ferrum-ashkor-ii",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Ashkor",
+      "href": "inhalte/himmelskoerper/sterne/details/kompakter-orangefarbener-red-clump-stern/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Syntheten",
+      "titel": "Ferrum Prime",
+      "href": "inhalte/himmelskoerper/planeten/details/rostiger-eisenplanet-mit-freiliegendem-metallkern/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Syntheten",
+      "href": "inhalte/spezies/Technologische Lebensformen/Syntheten/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Ferrum-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=ferrum-stern&objekt=ferrum-ashkor-ii"
+    },
+    {
+      "titel": "Speziesdossier Syntheten",
+      "href": "inhalte/spezies/Technologische Lebensformen/Syntheten/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#080808",
+      "tiefe": "#111111",
+      "akzent": "#bdbdc0",
+      "sand": "#c2baa8",
+      "moos": "#9cb399",
+      "ozean": "#7c9bb1",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#454547"
+    }
+  },
+  "kapitel": {
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Ashkor II auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Ashkor II",
+          "text": [
+            "Ashkor II ist eine kalte, staubbedeckte Gesteinswelt mit dünner Atmosphäre.",
+            "Ashkor II umkreist Ashkor in 0,92 AE Abstand und braucht für einen Umlauf 385,2 Tage."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Gesteinsplanet"
+            ],
+            [
+              "Sternsystem",
+              "Ferrum-System"
+            ],
+            [
+              "Zentralkörper",
+              "Ashkor"
+            ],
+            [
+              "Große Halbachse",
+              "0,92 AE"
+            ],
+            [
+              "Umlaufzeit",
+              "385,2 Tage"
+            ],
+            [
+              "Durchmesser",
+              "10.800 km"
+            ],
+            [
+              "Masse",
+              "0,6 Erdmassen"
+            ],
+            [
+              "Schwerkraft",
+              "0,84 g"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -108 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Ferrum Prime",
+          "text": [
+            "Das Ferrum-System ist die Heimat der Syntheten: Ihr Planet Ferrum Prime umkreist Ashkor."
+          ],
+          "verweise": [
+            [
+              "Ferrum Prime",
+              "inhalte/himmelskoerper/planeten/details/rostiger-eisenplanet-mit-freiliegendem-metallkern/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Syntheten",
+              "inhalte/spezies/Technologische Lebensformen/Syntheten/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Ashkor II im Ferrum-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Ashkor"
+            ],
+            [
+              "Große Halbachse",
+              "0,92 AE (137,6 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,09"
+            ],
+            [
+              "Bahnneigung",
+              "2,5°"
+            ],
+            [
+              "Umlaufzeit",
+              "385,2 Tage"
+            ],
+            [
+              "Einstrahlung",
+              "0,189-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Am Himmel von Ashkor II",
+          "text": [
+            "Ashkor erscheint von hier aus etwa 0,39° groß (die Sonne von der Erde: 0,53°)."
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Ashkor · Stern",
+              "Orangefarbener Zwerg (K5 V)"
+            ],
+            [
+              "Ferrum Prime · 0,45 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Ashkor II · 0,92 AE · dieses Dossier",
+              "Gesteinsplanet"
+            ],
+            [
+              "Ashkor III · 4,1 AE",
+              "Gasriese"
+            ],
+            [
+              "Ashkor B · 85 AE",
+              "Brauner Zwerg"
+            ],
+            [
+              "Trümmerband · 1,3–2,8 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Staubschleier · 12–24 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Ashkor",
+              "inhalte/himmelskoerper/sterne/details/kompakter-orangefarbener-red-clump-stern/hauptseite/index.html"
+            ],
+            [
+              "Ferrum Prime",
+              "inhalte/himmelskoerper/planeten/details/rostiger-eisenplanet-mit-freiliegendem-metallkern/hauptseite/index.html"
+            ],
+            [
+              "Ashkor III",
+              "inhalte/himmelskoerper/planeten/details/metallischer-gasriese-in-bronze-und-gold/hauptseite/index.html"
+            ],
+            [
+              "Ashkor B",
+              "inhalte/himmelskoerper/sterne/details/alter-brauner-zwerg-im-tiefen-all/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Ashkor II.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "5.400 km"
+            ],
+            [
+              "Masse",
+              "0,6 Erdmassen"
+            ],
+            [
+              "Mittlere Dichte",
+              "5,43 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "8,19 m/s² (0,835 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "9,41 km/s"
+            ]
+          ],
+          "vergleich": {
+            "mit": "Erde",
+            "werte": [
+              [
+                "Durchmesser",
+                10800,
+                12742,
+                "km"
+              ],
+              [
+                "Masse",
+                0.6,
+                1,
+                "Erdmassen"
+              ],
+              [
+                "Schwerkraft",
+                0.84,
+                1,
+                "g"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "Planetare Struktur": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Planetare Struktur von Ashkor II.",
+      "abschnitte": [
+        {
+          "titel": "Schalenbau",
+          "schichten": [
+            [
+              "Kruste",
+              "Silikatgestein"
+            ],
+            [
+              "Mantel",
+              "Dichteres Silikatgestein"
+            ],
+            [
+              "Kern",
+              "Eisen und Nickel"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geografie": {
+      "gruppe": "Natur",
+      "icon": "△",
+      "intro": "Geografie von Ashkor II.",
+      "abschnitte": [
+        {
+          "titel": "Oberfläche",
+          "text": [
+            "Die Oberfläche von Ashkor II ist kalt."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Ashkor II.",
+      "abschnitte": [
+        {
+          "titel": "Gashülle",
+          "text": [
+            "Ashkor II hält eine dünne, kalte Gashülle fest."
+          ],
+          "balken": {
+            "werte": [
+              [
+                "Kohlendioxid",
+                62
+              ],
+              [
+                "Stickstoff",
+                33
+              ],
+              [
+                "Argon",
+                5
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Ashkor II.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 0,92 AE Abstand zu Ashkor liegt die Gleichgewichtstemperatur von Ashkor II bei rund -108 °C – kalt."
+          ]
+        }
+      ]
+    },
+    "Gewässer": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gewässer von Ashkor II.",
+      "abschnitte": [
+        {
+          "titel": "Wasser",
+          "text": [
+            "Wasser gibt es höchstens als Eis in Kratern und im Untergrund."
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Ashkor II.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Ashkor II ist groß genug, um im Inneren noch Wärme zu speichern; Spuren alter vulkanischer Tätigkeit sind wahrscheinlich."
+          ]
+        }
+      ]
+    },
+    "Biosphäre": {
+      "gruppe": "Natur",
+      "icon": "❧",
+      "intro": "Biosphäre von Ashkor II.",
+      "abschnitte": [
+        {
+          "titel": "Leben",
+          "text": [
+            "Auf Ashkor II ist kein Leben verzeichnet."
+          ]
+        }
+      ]
+    },
+    "Spezies": {
+      "gruppe": "Zivilisation",
+      "icon": "✿",
+      "intro": "Spezies von Ashkor II.",
+      "abschnitte": [
+        {
+          "titel": "Bewohner",
+          "text": [
+            "Ashkor II ist keine Heimat einer intelligenten Spezies."
+          ]
+        },
+        {
+          "titel": "Im System von Ferrum Prime",
+          "text": [
+            "Das Ferrum-System ist die Heimat der Syntheten: Ihr Planet Ferrum Prime umkreist Ashkor."
+          ],
+          "verweise": [
+            [
+              "Ferrum Prime",
+              "inhalte/himmelskoerper/planeten/details/rostiger-eisenplanet-mit-freiliegendem-metallkern/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Syntheten",
+              "inhalte/spezies/Technologische Lebensformen/Syntheten/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Zivilisation": {
+      "gruppe": "Zivilisation",
+      "icon": "▥",
+      "intro": "Zivilisation von Ashkor II.",
+      "abschnitte": [
+        {
+          "titel": "Siedlungen",
+          "text": [
+            "Für Ashkor II sind keine dauerhaften Siedlungen verzeichnet."
+          ]
+        },
+        {
+          "titel": "Im System von Ferrum Prime",
+          "text": [
+            "Das Ferrum-System ist die Heimat der Syntheten: Ihr Planet Ferrum Prime umkreist Ashkor."
+          ],
+          "verweise": [
+            [
+              "Ferrum Prime",
+              "inhalte/himmelskoerper/planeten/details/rostiger-eisenplanet-mit-freiliegendem-metallkern/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Syntheten",
+              "inhalte/spezies/Technologische Lebensformen/Syntheten/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Ashkor II.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Ashkor II entstand zusammen mit dem Ferrum-System vor rund 6,8 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Fraktionen": {
+      "gruppe": "Zivilisation",
+      "icon": "◇",
+      "intro": "Fraktionen von Ashkor II.",
+      "abschnitte": [
+        {
+          "titel": "Ansprüche",
+          "text": [
+            "Für Ashkor II sind keine Fraktionsansprüche verzeichnet."
+          ]
+        }
+      ]
+    },
+    "Rohstoffe": {
+      "gruppe": "Weitere",
+      "icon": "⬡",
+      "intro": "Rohstoffe von Ashkor II.",
+      "abschnitte": [
+        {
+          "titel": "Rohstoffe",
+          "liste": [
+            "Silikatgestein",
+            "Metallerze"
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Ashkor II.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Wie ist der innere Aufbau beschaffen?",
+            "Gab es früher eine dichtere Atmosphäre?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Ashkor II ist mit allen Bahndaten im Ferrum-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=ferrum-stern&objekt=ferrum-ashkor-ii"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Ashkor II.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Ashkor II ist eine kalte, staubbedeckte Gesteinswelt mit dünner Atmosphäre."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Ashkor II.",
+      "abschnitte": [
+        {
+          "titel": "Ashkor II – Archivbild",
+          "bild": true,
+          "bildtext": "Ashkor II"
+        }
+      ]
+    }
+  }
+}

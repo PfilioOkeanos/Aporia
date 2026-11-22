@@ -52,7 +52,7 @@ body.home-page {
     content: "";
 }
 
-.home-hero-copy { padding: clamp(28px, 4cqw, 65px) 5% 62px; }
+.home-hero-copy { position: relative; z-index: 1; padding: clamp(28px, 4cqw, 65px) 5% 86px; }
 .home-hero h1 {
     margin: 12px 0 0;
     font-size: clamp(2.3rem, 5.6cqw, 6.1rem);
@@ -296,4 +296,130 @@ body.home-page {
 
 @media (prefers-reduced-motion: reduce) {
     .home-world-art::after { transition: none; }
+}
+
+/* =========================================================
+   Interaktive Startseite: Sternenfeld, Leitworte, Suche, Einstiege,
+   Zahlen, Welt des Augenblicks, Spezies-Vitrine, Einblenden
+   ========================================================= */
+
+/* Sternenfeld (Canvas) liegt über dem Bild, unter dem Text */
+.home-sterne { position: absolute; inset: 0; z-index: 0; width: 100%; height: 100%; pointer-events: none; mix-blend-mode: screen; }
+.home-hero-copy > * { animation: home-auftritt .9s cubic-bezier(.2, .7, .2, 1) both; }
+.home-hero-copy > :nth-child(2) { animation-delay: .12s; }
+.home-hero-copy > :nth-child(3) { animation-delay: .24s; }
+.home-hero-copy > :nth-child(4) { animation-delay: .36s; }
+.home-hero-copy > :nth-child(5) { animation-delay: .48s; }
+@keyframes home-auftritt { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+
+/* Wechselnde Leitworte */
+.home-leitwort { margin: .9rem 0 0; color: var(--home-gold); font: italic 400 clamp(1rem, 1.7cqw, 1.5rem)/1.3 Georgia, serif; letter-spacing: .04em; text-shadow: 0 2px 14px #100c16; }
+.home-leitwort span { display: inline-block; transition: opacity .35s ease, transform .35s ease, filter .35s ease; }
+.home-leitwort span.is-wechsel { opacity: 0; transform: translateY(-6px); filter: blur(3px); }
+
+/* Archivsuche */
+.home-suche { position: relative; width: min(100%, 36rem); margin: 1.4rem auto 0; text-align: left; }
+.home-suche-feld { display: flex; align-items: center; gap: .6rem; padding: .25rem .4rem .25rem 1rem; border: 1px solid #dbb47799; border-radius: 999px; background: #120d1acc; backdrop-filter: blur(10px); box-shadow: 0 .6rem 1.8rem #0009, inset 0 1px 0 #ffffff14; transition: border-color .2s, box-shadow .2s; }
+.home-suche-feld:focus-within { border-color: var(--home-gold); box-shadow: 0 0 0 3px #dbb47733, 0 .6rem 1.8rem #0009; }
+.home-suche-symbol { color: var(--home-gold); font-size: 1.25rem; }
+.home-suche input { flex: 1; min-width: 0; padding: .7rem .2rem; border: 0; background: none; color: var(--home-cream); font: 400 1rem/1.2 system-ui, sans-serif; outline: none; }
+.home-suche input::placeholder { color: #fff0d899; }
+.home-suche .aporia-search-results:not([hidden]) { left: 0; right: 0; width: auto; }
+
+/* Einstiege */
+.home-aktionen { display: flex; flex-wrap: wrap; justify-content: center; gap: .55rem; margin-top: 1.1rem; }
+.home-knopf { display: inline-flex; align-items: center; gap: .4rem; padding: .6rem 1.1rem; border: 1px solid #dbb47780; border-radius: 999px; background: #120d1ab3; color: var(--home-cream); font: 500 .92rem/1.2 system-ui, sans-serif; text-decoration: none; cursor: pointer; backdrop-filter: blur(8px); transition: transform .2s, border-color .2s, box-shadow .2s, background .2s; }
+.home-knopf:hover:not(:disabled), .home-knopf:focus-visible { transform: translateY(-2px); border-color: var(--home-gold); box-shadow: 0 .4rem 1.2rem #dbb47733; }
+.home-knopf:disabled { opacity: .5; cursor: progress; }
+.home-knopf--gold { border-color: var(--home-gold); background: linear-gradient(180deg, #dbb477, #a9824a); color: #1b1208; font-weight: 600; }
+.home-knopf--gold:hover { background: linear-gradient(180deg, #f0cd92, #b98f52); }
+.home-knopf:focus-visible { outline: 2px solid var(--home-gold); outline-offset: 2px; }
+
+/* Hinweis zum Weiterscrollen */
+.home-weiter { position: absolute; left: 50%; bottom: 14px; z-index: 1; display: grid; place-items: center; width: 38px; height: 38px; border: 1px solid #dbb47766; border-radius: 50%; color: var(--home-gold); font-size: 1.3rem; text-decoration: none; transform: translateX(-50%); animation: home-schweben 2.4s ease-in-out infinite; }
+@keyframes home-schweben { 50% { transform: translate(-50%, 6px); } }
+
+/* Zahlen */
+.home-zahlen { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(.5rem, 1.5cqw, 1.2rem); padding: clamp(1rem, 2.4cqw, 2rem) clamp(1rem, 4cqw, 3.5rem); background: linear-gradient(180deg, var(--home-dark), #161025); scroll-margin-top: 90px; }
+.home-zahl { display: grid; justify-items: center; gap: .2rem; padding: .9rem .5rem; border: 1px solid #dbb47733; border-radius: 16px; background: radial-gradient(ellipse at 50% 0%, #dbb4771a, transparent 70%), #120d1a; color: var(--home-cream); text-decoration: none; transition: transform .25s, border-color .25s; }
+.home-zahl strong { color: var(--home-gold); font: 400 clamp(1.8rem, 4cqw, 3.2rem)/1 Georgia, serif; font-variant-numeric: tabular-nums; }
+.home-zahl span { font: 600 .74rem/1.2 system-ui, sans-serif; letter-spacing: .16em; text-transform: uppercase; opacity: .8; }
+.home-zahl:hover { transform: translateY(-3px); border-color: var(--home-gold); }
+
+/* Emblem: Neigung zur Maus und leuchtender Ring */
+.home-universe-art { position: relative; perspective: 1200px; }
+.home-universe-art img { transform: rotateX(var(--neigung-x, 0deg)) rotateY(var(--neigung-y, 0deg)); transition: transform .4s cubic-bezier(.2, .7, .2, 1); will-change: transform; }
+.home-emblem-ring { position: absolute; z-index: -1; width: min(70%, 34rem); aspect-ratio: 1; border-radius: 50%; background: conic-gradient(from 0deg, transparent, #dbb47755, transparent 30%, #7fb0ff44, transparent 60%, #dbb47744, transparent); filter: blur(18px); animation: home-drehen 24s linear infinite; }
+@keyframes home-drehen { to { transform: rotate(360deg); } }
+
+/* Welten schweben leicht und zeigen beim Darüberfahren den Link */
+.home-world-art img { animation: home-schwebe-welt 6s ease-in-out infinite; }
+.home-world--ocean .home-world-art img { animation-delay: -1.5s; }
+.home-world--volcanic .home-world-art img { animation-delay: -3s; }
+.home-world--desert .home-world-art img { animation-delay: -4.5s; }
+@keyframes home-schwebe-welt { 50% { transform: translate(-50%, -5px); } }
+.home-world { transition: transform .3s cubic-bezier(.2, .7, .2, 1); }
+.home-world:is(:hover, :focus-visible) { transform: scale(1.04); }
+.home-world-mehr { display: block; margin-top: .3rem; color: var(--world-accent); font: 500 .76rem/1.2 system-ui, sans-serif; opacity: 0; transform: translateY(-4px); transition: opacity .25s, transform .25s; }
+.home-world:is(:hover, :focus-visible) .home-world-mehr { opacity: 1; transform: none; }
+
+/* Abschnittsköpfe */
+.home-abschnitt-kopf { display: flex; flex-wrap: wrap; align-items: end; gap: .3rem 1rem; margin-bottom: 1rem; }
+.home-abschnitt-kopf h2 { flex: 1 1 auto; margin: 0; font-size: clamp(1.5rem, 3cqw, 2.6rem); font-weight: 400; line-height: 1.1; }
+.home-abschnitt-kopf .home-kicker { flex-basis: 100%; }
+.home-kicker { margin: 0; color: var(--home-gold); font: 600 .72rem/1.2 system-ui, sans-serif; letter-spacing: .2em; text-transform: uppercase; }
+
+/* Welt des Augenblicks */
+.home-entdecken, .home-spezies { padding: clamp(1.4rem, 3cqw, 2.8rem) clamp(1rem, 4cqw, 3.5rem); }
+.home-entdecken { background: radial-gradient(ellipse 60% 70% at 20% 50%, #1d2a4d66, transparent 70%), var(--home-dark); }
+.home-welt-zufall { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); align-items: center; gap: clamp(1rem, 3cqw, 2.5rem); }
+.home-welt-bild { position: relative; display: block; justify-self: center; width: min(100%, 24rem); aspect-ratio: 1; border-radius: 50%; overflow: hidden; box-shadow: 0 0 3rem #4b9de433, 0 0 0 1px #dbb47744; }
+.home-welt-bild img { width: 100%; height: 100%; object-fit: cover; transition: transform 8s linear, opacity .3s; }
+.home-welt-bild:hover img { transform: scale(1.12) rotate(4deg); }
+.home-welt-zufall.is-wechsel .home-welt-bild img, .home-welt-zufall.is-wechsel .home-welt-text h3 { opacity: 0; }
+.home-welt-text { display: grid; gap: .5rem; }
+.home-welt-text h3 { margin: 0; font-size: clamp(1.4rem, 2.6cqw, 2.3rem); font-weight: 400; line-height: 1.15; transition: opacity .3s; }
+.home-welt-hinweis { margin: 0; opacity: .75; font: italic 1rem/1.4 Georgia, serif; }
+.home-welt-knoepfe { display: flex; flex-wrap: wrap; gap: .55rem; margin-top: .4rem; }
+
+/* Spezies-Vitrine */
+.home-spezies { background: linear-gradient(180deg, var(--home-dark), #140f20 60%, var(--home-dark)); }
+.home-spezies-steuerung { display: flex; gap: .4rem; }
+.home-pfeil { display: grid; place-items: center; width: 42px; height: 42px; border: 1px solid #dbb47780; border-radius: 50%; background: #120d1a; color: var(--home-cream); font-size: 1.4rem; cursor: pointer; transition: border-color .2s, transform .2s; }
+.home-pfeil:hover { border-color: var(--home-gold); transform: scale(1.06); }
+.home-spezies-spur { display: flex; gap: 16px; overflow-x: auto; padding: .4rem .2rem 1rem; scroll-snap-type: x mandatory; scrollbar-width: thin; scrollbar-color: #dbb47766 transparent; }
+.home-spezies-spur:focus-visible { outline: 2px solid var(--home-gold); outline-offset: 4px; }
+.home-spezies-status { margin: 0; opacity: .7; font-style: italic; }
+.home-spezies-karte { position: relative; flex: 0 0 clamp(13rem, 22cqw, 17rem); display: grid; align-content: end; aspect-ratio: 3 / 4; overflow: hidden; isolation: isolate; border: 1px solid #dbb47733; border-radius: 18px; color: var(--home-cream); text-decoration: none; scroll-snap-align: start; transition: transform .35s cubic-bezier(.2, .7, .2, 1), border-color .35s, box-shadow .35s; }
+.home-spezies-karte img { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; transition: transform .8s cubic-bezier(.2, .7, .2, 1); }
+.home-spezies-karte::before { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(0deg, #100c16 8%, #100c16b3 40%, transparent 75%); }
+.home-spezies-karte:is(:hover, :focus-visible) { transform: translateY(-6px); border-color: var(--home-gold); box-shadow: 0 1rem 2rem #000a, 0 0 1.4rem #dbb47733; }
+.home-spezies-karte:is(:hover, :focus-visible) img { transform: scale(1.07); }
+.home-spezies-text { display: grid; gap: .2rem; padding: 1rem; }
+.home-spezies-text small { color: var(--home-gold); font: 600 .66rem/1.2 system-ui, sans-serif; letter-spacing: .14em; text-transform: uppercase; }
+.home-spezies-text strong { font: 400 1.35rem/1.15 Georgia, serif; }
+.home-spezies-text em { display: -webkit-box; overflow: hidden; -webkit-line-clamp: 3; -webkit-box-orient: vertical; font-size: .86rem; line-height: 1.35; opacity: .85; }
+.home-mehr { display: inline-block; margin-top: .6rem; color: var(--home-gold); font: 500 .95rem/1.2 system-ui, sans-serif; text-decoration: none; }
+.home-mehr:hover { text-decoration: underline; text-underline-offset: .25em; }
+
+/* Panorama: Bild bewegt sich beim Darüberfahren */
+.home-scene img { transition: transform 1.2s cubic-bezier(.2, .7, .2, 1); }
+.home-scene:is(:hover, :focus-visible) img { transform: scale(1.05); }
+
+/* Einblenden beim Scrollen */
+.home-einblenden { opacity: 0; transform: translateY(28px); transition: opacity .9s ease, transform .9s cubic-bezier(.2, .7, .2, 1); }
+.home-einblenden.is-sichtbar { opacity: 1; transform: none; }
+
+.home-universe { overflow-x: clip; }
+@container (max-width: 760px) {
+    .home-worlds, .home-worlds--left, .home-worlds--right { width: 100%; justify-self: stretch; }
+    .home-zahlen { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .home-welt-zufall { grid-template-columns: minmax(0, 1fr); justify-items: center; text-align: center; }
+    .home-welt-bild { width: min(100%, 18rem); }
+    .home-welt-knoepfe { justify-content: center; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .home-hero-copy > *, .home-weiter, .home-emblem-ring, .home-world-art img { animation: none !important; }
+    .home-einblenden { opacity: 1; transform: none; transition: none; }
+    .home-universe-art img, .home-spezies-karte, .home-spezies-karte img, .home-scene img, .home-welt-bild img { transition: none; }
 }

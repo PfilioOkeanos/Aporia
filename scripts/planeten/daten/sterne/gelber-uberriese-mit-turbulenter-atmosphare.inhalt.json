@@ -1,0 +1,611 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Narev",
+  "genitiv": "von Narev",
+  "dossierName": "Narev-Dossier",
+  "klasse": "Orangefarbener Zwerg (K0 V)",
+  "intro": "Narev ist ein orangefarbener Hauptreihenstern der Spektralklasse K0 V, Heimatstern der Plasmoiden. Ein ruhiger Einzelstern mit warmem, goldorangem Licht. Narev ist der Zentralstern des Narev-Systems.",
+  "globusDaten": {
+    "planet": "gelber-uberriese-mit-turbulenter-atmosphare",
+    "klasse": "Vulkan",
+    "radius": 570474000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=lymara-stern",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-35D4280AC9"
+    ],
+    [
+      "Typ",
+      "Orangefarbener Zwerg (K0 V)"
+    ],
+    [
+      "Sternsystem",
+      "Narev-System"
+    ],
+    [
+      "Masse",
+      "0,86 Sonnenmassen"
+    ],
+    [
+      "Radius",
+      "0,82 Sonnenradien"
+    ],
+    [
+      "Leuchtkraft",
+      "0,55 Sonnenleuchtkräfte"
+    ],
+    [
+      "Oberflächentemperatur",
+      "ca. 5.200 K"
+    ],
+    [
+      "Alter",
+      "ca. 4,3 Mrd. Jahre"
+    ],
+    [
+      "Monde",
+      "6 (Narev I, Lymara, Schwammstein, Narev III, Narev IV, Glimmspur)"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Narev-System"
+    ],
+    [
+      "Entfernung zur Sonne",
+      "21 Lichtjahre"
+    ],
+    [
+      "Nächste Nachbarsysteme",
+      "Ombrys-System (8,7 Lj), Osselyr-System (11,8 Lj)"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Narev im Narev-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=lymara-stern",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Narev I",
+      "href": "inhalte/himmelskoerper/planeten/details/kernloser-silikatplanet-mit-einschlagbecken/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Lymara",
+      "href": "inhalte/himmelskoerper/planeten/details/biolumineszente-ozeanwelt-im-all/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Schwammstein",
+      "href": "inhalte/himmelskoerper/asteroiden/details/asteroid-mit-anhaftendem-bruchstuck/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Narev III",
+      "href": "inhalte/himmelskoerper/planeten/details/auskuhlender-gasriese-in-orangeblauen-wolken/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Narev IV",
+      "href": "inhalte/himmelskoerper/planeten/details/misch-eisplanet-mit-wasser-methan-stickstoff-und-co-eis/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Glimmspur",
+      "href": "inhalte/himmelskoerper/kometen/details/gefleckter-komet-mit-grunweissem-schweif/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Plasmoiden",
+      "titel": "Lymara",
+      "href": "inhalte/himmelskoerper/planeten/details/biolumineszente-ozeanwelt-im-all/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Plasmoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Plasmoiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Narev-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=lymara-stern"
+    },
+    {
+      "titel": "Speziesdossier Plasmoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Plasmoiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#0d0906",
+      "tiefe": "#1c150d",
+      "akzent": "#ffd4a5",
+      "sand": "#ffce97",
+      "moos": "#d9cd82",
+      "ozean": "#adb391",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#735535"
+    },
+    "schichten": [
+      [
+        "Strahlung",
+        "Leuchtkraft"
+      ],
+      [
+        "Hülle",
+        "Spektralklasse"
+      ],
+      [
+        "Kern",
+        "Fusion"
+      ],
+      [
+        "Zeit",
+        "Lebenszyklus"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Spektralklasse": {
+      "gruppe": "Wissenschaft",
+      "icon": "✦",
+      "intro": "Spektralklasse von Narev.",
+      "abschnitte": [
+        {
+          "titel": "Einordnung",
+          "daten": [
+            [
+              "Typ",
+              "Orangefarbener Zwerg (K0 V)"
+            ],
+            [
+              "Oberflächentemperatur",
+              "ca. 5.200 K"
+            ],
+            [
+              "Farbe",
+              "orange"
+            ]
+          ]
+        }
+      ]
+    },
+    "Fusion": {
+      "gruppe": "Wissenschaft",
+      "icon": "☀",
+      "intro": "Fusion von Narev.",
+      "abschnitte": [
+        {
+          "titel": "Energiequelle",
+          "text": [
+            "Im Kern von Narev verschmilzt Wasserstoff zu Helium."
+          ]
+        }
+      ]
+    },
+    "Leuchtkraft": {
+      "gruppe": "Wissenschaft",
+      "icon": "☀",
+      "intro": "Leuchtkraft von Narev.",
+      "abschnitte": [
+        {
+          "titel": "Strahlung",
+          "daten": [
+            [
+              "Leuchtkraft",
+              "0,55 Sonnenleuchtkräfte"
+            ],
+            [
+              "Habitable Zone",
+              "0,71–1,24 AE"
+            ]
+          ]
+        }
+      ]
+    },
+    "Lebenszyklus": {
+      "gruppe": "Wissenschaft",
+      "icon": "⧗",
+      "intro": "Lebenszyklus von Narev.",
+      "abschnitte": [
+        {
+          "titel": "Lebensdauer",
+          "text": [
+            "Ein Stern mit 0,86 Sonnenmassen bleibt rund 15 Milliarden Jahre auf der Hauptreihe; Narev ist etwa 4,3 Milliarden Jahre alt."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Narev auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Narev",
+          "text": [
+            "Narev ist ein orangefarbener Hauptreihenstern der Spektralklasse K0 V, Heimatstern der Plasmoiden. Ein ruhiger Einzelstern mit warmem, goldorangem Licht.",
+            "Narev ist der Zentralstern des Narev-Systems."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Orangefarbener Zwerg (K0 V)"
+            ],
+            [
+              "Sternsystem",
+              "Narev-System"
+            ],
+            [
+              "Masse",
+              "0,86 Sonnenmassen"
+            ],
+            [
+              "Radius",
+              "0,82 Sonnenradien"
+            ],
+            [
+              "Leuchtkraft",
+              "0,55 Sonnenleuchtkräfte"
+            ],
+            [
+              "Oberflächentemperatur",
+              "ca. 5.200 K"
+            ],
+            [
+              "Alter",
+              "ca. 4,3 Mrd. Jahre"
+            ],
+            [
+              "Monde",
+              "6 (Narev I, Lymara, Schwammstein, Narev III, Narev IV, Glimmspur)"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Lymara",
+          "text": [
+            "Das Narev-System ist die Heimat der Plasmoiden: Ihr Planet Lymara umkreist Narev."
+          ],
+          "verweise": [
+            [
+              "Lymara",
+              "inhalte/himmelskoerper/planeten/details/biolumineszente-ozeanwelt-im-all/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Plasmoiden",
+              "inhalte/spezies/Biologische Spezies/Plasmoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Narev im Raum.",
+      "abschnitte": [
+        {
+          "titel": "Lage im Raum",
+          "daten": [
+            [
+              "Entfernung zur Sonne",
+              "21 Lichtjahre"
+            ],
+            [
+              "Nächste Nachbarsysteme",
+              "Ombrys-System (8,7 Lj), Osselyr-System (11,8 Lj), Orvaya-System (14,3 Lj)"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Narev · Stern",
+              "Orangefarbener Zwerg (K0 V)"
+            ],
+            [
+              "Narev I · 0,33 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Lymara · 0,85 AE",
+              "Ozeanplanet"
+            ],
+            [
+              "Narev III · 2,9 AE",
+              "Gasriese"
+            ],
+            [
+              "Narev IV · 8,2 AE",
+              "Eisriese"
+            ],
+            [
+              "Nebelgürtel · 1,5–2,3 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 32–46 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Narev I",
+              "inhalte/himmelskoerper/planeten/details/kernloser-silikatplanet-mit-einschlagbecken/hauptseite/index.html"
+            ],
+            [
+              "Lymara",
+              "inhalte/himmelskoerper/planeten/details/biolumineszente-ozeanwelt-im-all/hauptseite/index.html"
+            ],
+            [
+              "Narev III",
+              "inhalte/himmelskoerper/planeten/details/auskuhlender-gasriese-in-orangeblauen-wolken/hauptseite/index.html"
+            ],
+            [
+              "Narev IV",
+              "inhalte/himmelskoerper/planeten/details/misch-eisplanet-mit-wasser-methan-stickstoff-und-co-eis/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Narev.",
+      "abschnitte": [
+        {
+          "titel": "Physik",
+          "daten": [
+            [
+              "Masse",
+              "0,86 Sonnenmassen"
+            ],
+            [
+              "Radius",
+              "0,82 Sonnenradien"
+            ],
+            [
+              "Leuchtkraft",
+              "0,55 Sonnenleuchtkräfte"
+            ],
+            [
+              "Oberflächentemperatur",
+              "ca. 5.200 K"
+            ],
+            [
+              "Alter",
+              "ca. 4,3 Mrd. Jahre"
+            ],
+            [
+              "Monde",
+              "6 (Narev I, Lymara, Schwammstein, Narev III, Narev IV, Glimmspur)"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Narev.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Narev entstand zusammen mit dem Narev-System vor rund 4,3 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Umgebung": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Umgebung von Narev.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Narev · Stern",
+              "Orangefarbener Zwerg (K0 V)"
+            ],
+            [
+              "Narev I · 0,33 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Lymara · 0,85 AE",
+              "Ozeanplanet"
+            ],
+            [
+              "Narev III · 2,9 AE",
+              "Gasriese"
+            ],
+            [
+              "Narev IV · 8,2 AE",
+              "Eisriese"
+            ],
+            [
+              "Nebelgürtel · 1,5–2,3 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 32–46 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Narev I",
+              "inhalte/himmelskoerper/planeten/details/kernloser-silikatplanet-mit-einschlagbecken/hauptseite/index.html"
+            ],
+            [
+              "Lymara",
+              "inhalte/himmelskoerper/planeten/details/biolumineszente-ozeanwelt-im-all/hauptseite/index.html"
+            ],
+            [
+              "Narev III",
+              "inhalte/himmelskoerper/planeten/details/auskuhlender-gasriese-in-orangeblauen-wolken/hauptseite/index.html"
+            ],
+            [
+              "Narev IV",
+              "inhalte/himmelskoerper/planeten/details/misch-eisplanet-mit-wasser-methan-stickstoff-und-co-eis/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Nachbarsysteme",
+          "liste": [
+            "Ombrys-System – 8,7 Lichtjahre",
+            "Osselyr-System – 11,8 Lichtjahre",
+            "Orvaya-System – 14,3 Lichtjahre",
+            "Iovar-System – 18,6 Lichtjahre",
+            "Halvorn-System – 20,9 Lichtjahre"
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Narev.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Wie stark schwankt die magnetische Aktivität?",
+            "Wie hat sich die Leuchtkraft seit der Entstehung verändert?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Narev ist mit allen Bahndaten im Narev-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=lymara-stern"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Narev.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "6 Monde: Narev I, Lymara, Schwammstein, Narev III, Narev IV, Glimmspur"
+          ]
+        },
+        {
+          "titel": "Monde",
+          "karten": [
+            {
+              "titel": "Narev I",
+              "text": "8.800 km Durchmesser, Umlauf in 74,7 Tage. Narev I ist eine heiße, luftlose Gesteinswelt mit großen Einschlagbecken."
+            },
+            {
+              "titel": "Lymara",
+              "text": "11.980 km Durchmesser, Umlauf in 309,7 Tage. Lymara ist die wasserreiche Heimatwelt der Plasmoiden mit Flusslandschaften, Seen, Lagunen, Höhlengewässern und nebelreichen Hochländern."
+            },
+            {
+              "titel": "Schwammstein",
+              "text": "80 km Durchmesser, Umlauf in 2,8 Jahre. Ein poröser, extrem wasserreicher Asteroid, der beim Annähern an Narev feine Dampffahnen abgibt – halb Asteroid, halb Komet."
+            },
+            {
+              "titel": "Narev III",
+              "text": "120.000 km Durchmesser, Umlauf in 5,3 Jahre. Narev III ist ein blaugrauer Gasriese mit einem Drittel Jupitermasse und mehreren Eismonden."
+            },
+            {
+              "titel": "Narev IV",
+              "text": "49.600 km Durchmesser, Umlauf in 25,3 Jahre. Narev IV ist ein kalter Eisriese am Rand des Systems."
+            },
+            {
+              "titel": "Glimmspur",
+              "text": "10 km Durchmesser, Umlauf in 31,6 Jahre. Ein periodischer Komet (rund 31 Jahre), dessen grünlich leuchtender Schweif in den Nebelnächten Lymaras zu sehen ist."
+            }
+          ],
+          "verweise": [
+            [
+              "Narev I",
+              "inhalte/himmelskoerper/planeten/details/kernloser-silikatplanet-mit-einschlagbecken/hauptseite/index.html"
+            ],
+            [
+              "Lymara",
+              "inhalte/himmelskoerper/planeten/details/biolumineszente-ozeanwelt-im-all/hauptseite/index.html"
+            ],
+            [
+              "Schwammstein",
+              "inhalte/himmelskoerper/asteroiden/details/asteroid-mit-anhaftendem-bruchstuck/hauptseite/index.html"
+            ],
+            [
+              "Narev III",
+              "inhalte/himmelskoerper/planeten/details/auskuhlender-gasriese-in-orangeblauen-wolken/hauptseite/index.html"
+            ],
+            [
+              "Narev IV",
+              "inhalte/himmelskoerper/planeten/details/misch-eisplanet-mit-wasser-methan-stickstoff-und-co-eis/hauptseite/index.html"
+            ],
+            [
+              "Glimmspur",
+              "inhalte/himmelskoerper/kometen/details/gefleckter-komet-mit-grunweissem-schweif/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Narev.",
+      "abschnitte": [
+        {
+          "titel": "Narev – Archivbild",
+          "bild": true,
+          "bildtext": "Narev"
+        }
+      ]
+    }
+  }
+}

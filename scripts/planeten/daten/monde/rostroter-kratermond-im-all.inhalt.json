@@ -1,0 +1,526 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Oskil",
+  "genitiv": "von Oskil",
+  "dossierName": "Oskil-Dossier",
+  "klasse": "Mond",
+  "intro": "Oskil ist der äußere, rostrote Kratermond Kharuuns. Seine 1:3-Bahnresonanz mit Thurak hält dessen Bahn leicht elliptisch und damit die Gezeitenheizung dauerhaft in Gang. Oskil umkreist Kharuun in 10,8 Tage.",
+  "globusDaten": {
+    "planet": "rostroter-kratermond-im-all",
+    "klasse": "Gestein",
+    "radius": 320000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=kharuun-stern&objekt=kharuun-oskil",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-D54E2ED5BE"
+    ],
+    [
+      "Typ",
+      "Mond"
+    ],
+    [
+      "Sternsystem",
+      "Kharuun-System"
+    ],
+    [
+      "Zentralkörper",
+      "Kharuun"
+    ],
+    [
+      "Große Halbachse",
+      "237.301 km"
+    ],
+    [
+      "Umlaufzeit",
+      "10,8 Tage"
+    ],
+    [
+      "Durchmesser",
+      "640 km"
+    ],
+    [
+      "Masse",
+      "0,049 Mondmassen"
+    ],
+    [
+      "Schwerkraft",
+      "0,24 g"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. 60 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Kharuun-System"
+    ],
+    [
+      "Zentralstern",
+      "Ushara",
+      "inhalte/himmelskoerper/sterne/details/orangefarbener-k-stern-im-all/hauptseite/index.html"
+    ],
+    [
+      "Umläuft",
+      "Kharuun",
+      "inhalte/himmelskoerper/planeten/details/dammernder-vulkanplanet-mit-gluhenden-lavaseen/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "237.301 km"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Oskil im Kharuun-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=kharuun-stern&objekt=kharuun-oskil",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Ushara",
+      "href": "inhalte/himmelskoerper/sterne/details/orangefarbener-k-stern-im-all/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◍",
+      "art": "Mutterplanet",
+      "titel": "Kharuun",
+      "href": "inhalte/himmelskoerper/planeten/details/dammernder-vulkanplanet-mit-gluhenden-lavaseen/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Pyronoiden",
+      "titel": "Kharuun",
+      "href": "inhalte/himmelskoerper/planeten/details/dammernder-vulkanplanet-mit-gluhenden-lavaseen/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Pyronoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Pyronoiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Kharuun-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=kharuun-stern&objekt=kharuun-oskil"
+    },
+    {
+      "titel": "Speziesdossier Pyronoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Pyronoiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#080504",
+      "tiefe": "#110a08",
+      "akzent": "#c09588",
+      "sand": "#c59984",
+      "moos": "#9f8568",
+      "ozean": "#7f716c",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#472920"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Astronomie"
+      ],
+      [
+        "Planet",
+        "Mutterplanet"
+      ],
+      [
+        "Kräfte",
+        "Gezeiten"
+      ],
+      [
+        "Tiefe",
+        "Geologie"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Mutterplanet": {
+      "gruppe": "Wissenschaft",
+      "icon": "◐",
+      "intro": "Mutterplanet von Oskil.",
+      "abschnitte": [
+        {
+          "titel": "Kharuun",
+          "text": [
+            "Kharuun ist die vulkanisch hochaktive Heimatwelt der Pyronoiden. Er liegt innerhalb der inneren Grenze der habitablen Zone; eine dichte Kohlendioxid-Schwefel-Atmosphäre und starke innere Wärme machen ihn zur Glutwelt."
+          ],
+          "daten": [
+            [
+              "Typ",
+              "Gesteinsplanet"
+            ],
+            [
+              "Durchmesser",
+              "14.988 km"
+            ],
+            [
+              "Abstand des Mondes",
+              "237.301 km (31,7 Planetenradien)"
+            ]
+          ],
+          "verweise": [
+            [
+              "Kharuun",
+              "inhalte/himmelskoerper/planeten/details/dammernder-vulkanplanet-mit-gluhenden-lavaseen/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Weitere Monde von Kharuun",
+          "liste": [
+            "Thurak – Umlauf in 3,6 Tage"
+          ],
+          "verweise": [
+            [
+              "Thurak",
+              "inhalte/himmelskoerper/monde/details/stumpfer-vulkanmond-im-schwarzen-all/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Gezeiten": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gezeiten von Oskil.",
+      "abschnitte": [
+        {
+          "titel": "Gezeitenkräfte",
+          "text": [
+            "Auf seiner Bahn in 237.301 km Abstand wirken starke Gezeitenkräfte von Kharuun auf Oskil."
+          ]
+        }
+      ]
+    },
+    "Gebundene Rotation": {
+      "gruppe": "Wissenschaft",
+      "icon": "↻",
+      "intro": "Gebundene Rotation von Oskil.",
+      "abschnitte": [
+        {
+          "titel": "Rotation",
+          "text": [
+            "Oskil wendet Kharuun vermutlich stets dieselbe Seite zu: Ein Tag dauert so lange wie ein Umlauf – 10,8 Tage."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Oskil auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Oskil",
+          "text": [
+            "Oskil ist der äußere, rostrote Kratermond Kharuuns. Seine 1:3-Bahnresonanz mit Thurak hält dessen Bahn leicht elliptisch und damit die Gezeitenheizung dauerhaft in Gang.",
+            "Oskil umkreist Kharuun in 10,8 Tage."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Mond"
+            ],
+            [
+              "Sternsystem",
+              "Kharuun-System"
+            ],
+            [
+              "Zentralkörper",
+              "Kharuun"
+            ],
+            [
+              "Große Halbachse",
+              "237.301 km"
+            ],
+            [
+              "Umlaufzeit",
+              "10,8 Tage"
+            ],
+            [
+              "Durchmesser",
+              "640 km"
+            ],
+            [
+              "Masse",
+              "0,049 Mondmassen"
+            ],
+            [
+              "Schwerkraft",
+              "0,24 g"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. 60 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Kharuun",
+          "text": [
+            "Das Kharuun-System ist die Heimat der Pyronoiden: Ihr Planet Kharuun umkreist Ushara, und Oskil ist einer seiner Monde."
+          ],
+          "verweise": [
+            [
+              "Kharuun",
+              "inhalte/himmelskoerper/planeten/details/dammernder-vulkanplanet-mit-gluhenden-lavaseen/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Pyronoiden",
+              "inhalte/spezies/Biologische Spezies/Pyronoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Oskil im Kharuun-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Kharuun"
+            ],
+            [
+              "Große Halbachse",
+              "237.301 km"
+            ],
+            [
+              "Exzentrizität",
+              "0,012"
+            ],
+            [
+              "Bahnneigung",
+              "1,1°"
+            ],
+            [
+              "Umlaufzeit",
+              "10,8 Tage"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Ushara · Stern",
+              "Orangefarbener Zwerg (K3 V)"
+            ],
+            [
+              "Ushara I · 0,02 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Kharuun · 0,36 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Ushara III · 0,57 AE",
+              "Gasriese"
+            ],
+            [
+              "Ushara IV · 4,8 AE",
+              "Eisriese"
+            ],
+            [
+              "Schlackengürtel · 1,3–2,1 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 30–42 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Ushara",
+              "inhalte/himmelskoerper/sterne/details/orangefarbener-k-stern-im-all/hauptseite/index.html"
+            ],
+            [
+              "Ushara I",
+              "inhalte/himmelskoerper/planeten/details/gluhender-exoplanet-mit-mineraldampfschweif/hauptseite/index.html"
+            ],
+            [
+              "Kharuun",
+              "inhalte/himmelskoerper/planeten/details/dammernder-vulkanplanet-mit-gluhenden-lavaseen/hauptseite/index.html"
+            ],
+            [
+              "Ushara III",
+              "inhalte/himmelskoerper/planeten/details/warmer-gestreifter-gasriese-im-all/hauptseite/index.html"
+            ],
+            [
+              "Ushara IV",
+              "inhalte/himmelskoerper/planeten/details/kalter-neptun-unter-fernem-sternlicht/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Oskil.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "320 km"
+            ],
+            [
+              "Masse",
+              "0,049 Mondmassen"
+            ],
+            [
+              "Mittlere Dichte",
+              "26,11 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "2,33 m/s² (0,238 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "1,22 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Oskil.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Oskil ist geologisch weitgehend erstarrt; Einschläge haben seine Oberfläche geformt."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Oskil.",
+      "abschnitte": [
+        {
+          "titel": "Gashülle",
+          "text": [
+            "Oskil besitzt keine nennenswerte Atmosphäre – dafür ist die Schwerkraft zu gering."
+          ]
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Oskil.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 0,36 AE Abstand zu Ushara liegt die Gleichgewichtstemperatur von Oskil bei rund 60 °C – heiß."
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Oskil.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Oskil entstand zusammen mit dem Kharuun-System vor rund 5,1 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Oskil.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Ist der Mond eingefangen oder mit seinem Planeten entstanden?",
+            "Welche Spuren tragen seine ältesten Krater?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Oskil ist mit allen Bahndaten im Kharuun-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=kharuun-stern&objekt=kharuun-oskil"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Oskil.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Oskil ist der äußere, rostrote Kratermond Kharuuns. Seine 1:3-Bahnresonanz mit Thurak hält dessen Bahn leicht elliptisch und damit die Gezeitenheizung dauerhaft in Gang."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Oskil.",
+      "abschnitte": [
+        {
+          "titel": "Oskil – Archivbild",
+          "bild": true,
+          "bildtext": "Oskil"
+        }
+      ]
+    }
+  }
+}

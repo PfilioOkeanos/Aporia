@@ -1,0 +1,514 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Irvel",
+  "genitiv": "von Irvel",
+  "dossierName": "Irvel-Dossier",
+  "klasse": "Mond",
+  "intro": "Irvel ist der einzige, große Mond Osselyrs. Seine Gezeiten setzen die Küstenebenen und Deltas regelmäßig unter Wasser – der Wechsel von Flut und Trockenfallen prägte die Evolution der Floranoiden. Irvel umkreist Osselyr in 24 Tage.",
+  "globusDaten": {
+    "planet": "lebender-mond-mit-violettem-kraterauge",
+    "klasse": "Gestein",
+    "radius": 1420000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=osselyr-stern&objekt=osselyr-irvel",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-3D457F78ED"
+    ],
+    [
+      "Typ",
+      "Mond"
+    ],
+    [
+      "Sternsystem",
+      "Osselyr-System"
+    ],
+    [
+      "Zentralkörper",
+      "Osselyr"
+    ],
+    [
+      "Große Halbachse",
+      "334.227 km"
+    ],
+    [
+      "Umlaufzeit",
+      "24 Tage"
+    ],
+    [
+      "Durchmesser",
+      "2.840 km"
+    ],
+    [
+      "Masse",
+      "1,463 Mondmassen"
+    ],
+    [
+      "Schwerkraft",
+      "0,36 g"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -6 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Osselyr-System"
+    ],
+    [
+      "Zentralstern",
+      "Saelith",
+      "inhalte/himmelskoerper/sterne/details/gasstrom-vom-orangefarbenen-zum-blauweien-stern/hauptseite/index.html"
+    ],
+    [
+      "Umläuft",
+      "Osselyr",
+      "inhalte/himmelskoerper/planeten/details/aporia-zwischen-grun-und-gold/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "334.227 km"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Irvel im Osselyr-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=osselyr-stern&objekt=osselyr-irvel",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Saelith",
+      "href": "inhalte/himmelskoerper/sterne/details/gasstrom-vom-orangefarbenen-zum-blauweien-stern/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◍",
+      "art": "Mutterplanet",
+      "titel": "Osselyr",
+      "href": "inhalte/himmelskoerper/planeten/details/aporia-zwischen-grun-und-gold/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Floranoiden",
+      "titel": "Osselyr",
+      "href": "inhalte/himmelskoerper/planeten/details/aporia-zwischen-grun-und-gold/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Floranoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Floranoiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Osselyr-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=osselyr-stern&objekt=osselyr-irvel"
+    },
+    {
+      "titel": "Speziesdossier Floranoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Floranoiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#090909",
+      "tiefe": "#151413",
+      "akzent": "#d4d1ca",
+      "sand": "#d7cbaf",
+      "moos": "#b1c9a1",
+      "ozean": "#8eb0be",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#55534e"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Astronomie"
+      ],
+      [
+        "Planet",
+        "Mutterplanet"
+      ],
+      [
+        "Kräfte",
+        "Gezeiten"
+      ],
+      [
+        "Tiefe",
+        "Geologie"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Mutterplanet": {
+      "gruppe": "Wissenschaft",
+      "icon": "◐",
+      "intro": "Mutterplanet von Irvel.",
+      "abschnitte": [
+        {
+          "titel": "Osselyr",
+          "text": [
+            "Osselyr ist die Heimatwelt der Floranoiden: ein bewohnbarer Gesteinsplanet mit Küstenebenen, Flussdeltas, Feuchtgebieten und mineralreichen Hochflächen."
+          ],
+          "daten": [
+            [
+              "Typ",
+              "Gesteinsplanet"
+            ],
+            [
+              "Durchmesser",
+              "12.232 km"
+            ],
+            [
+              "Abstand des Mondes",
+              "334.227 km (54,6 Planetenradien)"
+            ]
+          ],
+          "verweise": [
+            [
+              "Osselyr",
+              "inhalte/himmelskoerper/planeten/details/aporia-zwischen-grun-und-gold/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Gezeiten": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gezeiten von Irvel.",
+      "abschnitte": [
+        {
+          "titel": "Gezeitenkräfte",
+          "text": [
+            "Auf seiner Bahn in 334.227 km Abstand wirken starke Gezeitenkräfte von Osselyr auf Irvel. Die leicht exzentrische Bahn (e = 0,05) knetet das Innere bei jedem Umlauf."
+          ]
+        }
+      ]
+    },
+    "Gebundene Rotation": {
+      "gruppe": "Wissenschaft",
+      "icon": "↻",
+      "intro": "Gebundene Rotation von Irvel.",
+      "abschnitte": [
+        {
+          "titel": "Rotation",
+          "text": [
+            "Irvel wendet Osselyr vermutlich stets dieselbe Seite zu: Ein Tag dauert so lange wie ein Umlauf – 24 Tage."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Irvel auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Irvel",
+          "text": [
+            "Irvel ist der einzige, große Mond Osselyrs. Seine Gezeiten setzen die Küstenebenen und Deltas regelmäßig unter Wasser – der Wechsel von Flut und Trockenfallen prägte die Evolution der Floranoiden.",
+            "Irvel umkreist Osselyr in 24 Tage."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Mond"
+            ],
+            [
+              "Sternsystem",
+              "Osselyr-System"
+            ],
+            [
+              "Zentralkörper",
+              "Osselyr"
+            ],
+            [
+              "Große Halbachse",
+              "334.227 km"
+            ],
+            [
+              "Umlaufzeit",
+              "24 Tage"
+            ],
+            [
+              "Durchmesser",
+              "2.840 km"
+            ],
+            [
+              "Masse",
+              "1,463 Mondmassen"
+            ],
+            [
+              "Schwerkraft",
+              "0,36 g"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -6 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Osselyr",
+          "text": [
+            "Das Osselyr-System ist die Heimat der Floranoiden: Ihr Planet Osselyr umkreist Saelith, und Irvel ist einer seiner Monde."
+          ],
+          "verweise": [
+            [
+              "Osselyr",
+              "inhalte/himmelskoerper/planeten/details/aporia-zwischen-grun-und-gold/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Floranoiden",
+              "inhalte/spezies/Biologische Spezies/Floranoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Irvel im Osselyr-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Osselyr"
+            ],
+            [
+              "Große Halbachse",
+              "334.227 km"
+            ],
+            [
+              "Exzentrizität",
+              "0,05"
+            ],
+            [
+              "Bahnneigung",
+              "4,5°"
+            ],
+            [
+              "Umlaufzeit",
+              "24 Tage"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Saelith · Stern",
+              "Orangefarbener Zwerg (K1 V)"
+            ],
+            [
+              "Saelith I · 0,29 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Osselyr · 0,75 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Saelith III · 2,6 AE",
+              "Gasriese"
+            ],
+            [
+              "Saelith IV · 7,4 AE",
+              "Eisriese"
+            ],
+            [
+              "Brachgürtel · 1,4–2 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 34–46 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Saelith",
+              "inhalte/himmelskoerper/sterne/details/gasstrom-vom-orangefarbenen-zum-blauweien-stern/hauptseite/index.html"
+            ],
+            [
+              "Saelith I",
+              "inhalte/himmelskoerper/planeten/details/einsamer-kraterplanet-mit-hellen-auswurfstrahlen/hauptseite/index.html"
+            ],
+            [
+              "Osselyr",
+              "inhalte/himmelskoerper/planeten/details/aporia-zwischen-grun-und-gold/hauptseite/index.html"
+            ],
+            [
+              "Saelith III",
+              "inhalte/himmelskoerper/planeten/details/blau-goldener-gasriese-mit-atmospharenschweif/hauptseite/index.html"
+            ],
+            [
+              "Saelith IV",
+              "inhalte/himmelskoerper/planeten/details/mini-neptun-mit-blauer-atmosphare/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Irvel.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "1.420 km"
+            ],
+            [
+              "Masse",
+              "1,463 Mondmassen"
+            ],
+            [
+              "Mittlere Dichte",
+              "8,96 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "3,55 m/s² (0,362 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "3,18 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Irvel.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Irvel ist geologisch weitgehend erstarrt; Einschläge haben seine Oberfläche geformt."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Irvel.",
+      "abschnitte": [
+        {
+          "titel": "Gashülle",
+          "text": [
+            "Irvel besitzt keine nennenswerte Atmosphäre – dafür ist die Schwerkraft zu gering."
+          ]
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Irvel.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 0,75 AE Abstand zu Saelith liegt die Gleichgewichtstemperatur von Irvel bei rund -6 °C – gemäßigt."
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Irvel.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Irvel entstand zusammen mit dem Osselyr-System vor rund 4,6 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Irvel.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Ist der Mond eingefangen oder mit seinem Planeten entstanden?",
+            "Welche Spuren tragen seine ältesten Krater?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Irvel ist mit allen Bahndaten im Osselyr-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=osselyr-stern&objekt=osselyr-irvel"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Irvel.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Irvel ist der einzige, große Mond Osselyrs. Seine Gezeiten setzen die Küstenebenen und Deltas regelmäßig unter Wasser – der Wechsel von Flut und Trockenfallen prägte die Evolution der Floranoiden."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Irvel.",
+      "abschnitte": [
+        {
+          "titel": "Irvel – Archivbild",
+          "bild": true,
+          "bildtext": "Irvel"
+        }
+      ]
+    }
+  }
+}

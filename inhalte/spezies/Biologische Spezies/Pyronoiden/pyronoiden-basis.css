@@ -199,6 +199,9 @@ html:has(dialog.py-zoom[open]) { overflow: hidden; }
 .py-text > .py-ausschnitt { width: min(100%, 26rem); border: 1px solid var(--py-linie); border-radius: 10px; }
 .py-quelle-design { color: var(--py-cyan) !important; }
 
+/* Lange Begriffe in Steckbriefen umbrechen statt überlappen */
+.py-fakten dt, .py-fakten dd { min-width: 0; overflow-wrap: anywhere; hyphens: auto; }
+
 /* Steckbrief aus dem Dossier (Hauptseiten) */
 .py-dossier-steckbrief { margin-top: var(--py-raum); }
 .py-dossier-raster { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); gap: var(--py-raum); align-items: start; }

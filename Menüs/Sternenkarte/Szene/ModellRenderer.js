@@ -3,7 +3,7 @@ import { Line2 } from "three/addons/lines/Line2.js";
 import { LineGeometry } from "three/addons/lines/LineGeometry.js";
 import { LineMaterial } from "three/addons/lines/LineMaterial.js";
 import { bahnPunkte, positionVon } from "../Sternsysteme/Bahnphysik.js";
-import { sammleAsteroiden } from "../Sternsysteme/Asteroidenguertel.js";
+import { sammleAsteroiden, sichtbarerSteinRadius } from "../Sternsysteme/Asteroidenguertel.js";
 import { formePunkt, objektform } from "./Objektformen.js";
 import { kreisPunkte, sammleUmlaufbahnen } from "../Sternsysteme/Umlaufbahnen.js";
 import { modellURL, parseModell } from "../../adapter/Sternenkarte/3D-Modelle/3D-Modelle.js";
@@ -87,10 +87,11 @@ export function erzeugeModellRenderer(canvas, meldeFehler) {
             scene.add(steineMesh);
         }
         steineMesh.count = steine.length;
-        steine.forEach(({ position, radius, farbe, winkel }, index) => {
+        steine.forEach((stein, index) => {
+            const { position, farbe, winkel } = stein;
             steinMatrix.position.set(...position);
             steinMatrix.rotation.set(winkel * 2, winkel, 0);
-            steinMatrix.scale.setScalar(radius);
+            steinMatrix.scale.setScalar(sichtbarerSteinRadius(stein, kamera.position.distanceTo(steinMatrix.position), hoehe));
             steinMatrix.updateMatrix();
             steineMesh.setMatrixAt(index, steinMatrix.matrix);
             steinFarbe.setRGB(...farbe, THREE.SRGBColorSpace);

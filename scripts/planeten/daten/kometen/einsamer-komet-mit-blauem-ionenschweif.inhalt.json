@@ -1,0 +1,484 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Iovars Ionenschweifkomet",
+  "genitiv": "von Iovars Ionenschweifkomet",
+  "dossierName": "Iovars Ionenschweifkomet-Dossier",
+  "klasse": "Komet",
+  "intro": "Der Komet mit blauem Ionenschweif markiert einen Punkt im äußeren Kometengebiet. Iovars Ionenschweifkomet umkreist Iovar in 1,521 AE Abstand und braucht für einen Umlauf 3,8 Jahre.",
+  "globusDaten": {
+    "planet": "einsamer-komet-mit-blauem-ionenschweif",
+    "klasse": "Eis",
+    "radius": 4500
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=iovar-stern&objekt=iovar-komet",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-98824E5D0C"
+    ],
+    [
+      "Typ",
+      "Komet"
+    ],
+    [
+      "Sternsystem",
+      "Iovar-System"
+    ],
+    [
+      "Zentralkörper",
+      "Iovar"
+    ],
+    [
+      "Große Halbachse",
+      "1,521 AE"
+    ],
+    [
+      "Umlaufzeit",
+      "3,8 Jahre"
+    ],
+    [
+      "Durchmesser",
+      "9 km"
+    ],
+    [
+      "Masse",
+      "2,29 · 10^14 kg"
+    ],
+    [
+      "Schwerkraft",
+      "0,08 cm/s²"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -203 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Iovar-System"
+    ],
+    [
+      "Zentralstern",
+      "Iovar",
+      "inhalte/himmelskoerper/sterne/details/roter-zwerg-kosmische-enzyklopadie/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "1,521 AE"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Iovars Ionenschweifkomet im Iovar-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=iovar-stern&objekt=iovar-komet",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Iovar",
+      "href": "inhalte/himmelskoerper/sterne/details/roter-zwerg-kosmische-enzyklopadie/hauptseite/index.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Iovar-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=iovar-stern&objekt=iovar-komet"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#04090d",
+      "tiefe": "#09131c",
+      "akzent": "#90caff",
+      "sand": "#98c6d1",
+      "moos": "#72c2cf",
+      "ozean": "#5ba9ff",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#264e73"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Umlaufbahn"
+      ],
+      [
+        "Hülle",
+        "Schweif"
+      ],
+      [
+        "Hülle",
+        "Koma"
+      ],
+      [
+        "Kern",
+        "Kern"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Kern": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Kern von Iovars Ionenschweifkomet.",
+      "abschnitte": [
+        {
+          "titel": "Kometenkern",
+          "text": [
+            "Der Kern von Iovars Ionenschweifkomet misst rund 9 km und besteht aus einem lockeren Gemenge aus Eis, Staub und Gestein."
+          ],
+          "schichten": [
+            [
+              "Staubkruste",
+              "Dunkle, kohlenstoffreiche Oberfläche"
+            ],
+            [
+              "Eis-Staub-Gemisch",
+              "Wassereis, Kohlendioxid und Staub"
+            ],
+            [
+              "Kern",
+              "Lockeres Eis-Gestein-Gemenge"
+            ]
+          ]
+        }
+      ]
+    },
+    "Koma": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Koma von Iovars Ionenschweifkomet.",
+      "abschnitte": [
+        {
+          "titel": "Koma",
+          "text": [
+            "Nähert sich Iovars Ionenschweifkomet dem Stern Iovar, verdampft Eis und bildet eine leuchtende Gashülle um den Kern."
+          ]
+        }
+      ]
+    },
+    "Schweif": {
+      "gruppe": "Natur",
+      "icon": "☄",
+      "intro": "Schweif von Iovars Ionenschweifkomet.",
+      "abschnitte": [
+        {
+          "titel": "Schweif",
+          "text": [
+            "Der Komet mit blauem Ionenschweif markiert einen Punkt im äußeren Kometengebiet."
+          ]
+        }
+      ]
+    },
+    "Umlaufbahn": {
+      "gruppe": "Wissenschaft",
+      "icon": "◌",
+      "intro": "Umlaufbahn von Iovars Ionenschweifkomet.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Iovar"
+            ],
+            [
+              "Große Halbachse",
+              "1,5207 AE (227,5 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0"
+            ],
+            [
+              "Bahnneigung",
+              "3,7°"
+            ],
+            [
+              "Umlaufzeit",
+              "3,8 Jahre"
+            ],
+            [
+              "Einstrahlung",
+              "0,004-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Sternnächster und fernster Punkt",
+          "daten": [
+            [
+              "Perihel",
+              "1,52 AE"
+            ],
+            [
+              "Aphel",
+              "1,52 AE"
+            ]
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Iovars Ionenschweifkomet auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Iovars Ionenschweifkomet",
+          "text": [
+            "Der Komet mit blauem Ionenschweif markiert einen Punkt im äußeren Kometengebiet.",
+            "Iovars Ionenschweifkomet umkreist Iovar in 1,521 AE Abstand und braucht für einen Umlauf 3,8 Jahre."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Komet"
+            ],
+            [
+              "Sternsystem",
+              "Iovar-System"
+            ],
+            [
+              "Zentralkörper",
+              "Iovar"
+            ],
+            [
+              "Große Halbachse",
+              "1,521 AE"
+            ],
+            [
+              "Umlaufzeit",
+              "3,8 Jahre"
+            ],
+            [
+              "Durchmesser",
+              "9 km"
+            ],
+            [
+              "Masse",
+              "2,29 · 10^14 kg"
+            ],
+            [
+              "Schwerkraft",
+              "0,08 cm/s²"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -203 °C"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Iovars Ionenschweifkomet im Iovar-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Iovar"
+            ],
+            [
+              "Große Halbachse",
+              "1,5207 AE (227,5 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0"
+            ],
+            [
+              "Bahnneigung",
+              "3,7°"
+            ],
+            [
+              "Umlaufzeit",
+              "3,8 Jahre"
+            ],
+            [
+              "Einstrahlung",
+              "0,004-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Iovar · Stern",
+              "Roter Zwerg"
+            ],
+            [
+              "Iovar I · 0,22 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Iovar II · 0,41 AE",
+              "Ozeanplanet"
+            ],
+            [
+              "Iovar III · 0,84 AE",
+              "Gasriese"
+            ],
+            [
+              "Iovar IV · 1,17 AE",
+              "Eisplanet"
+            ],
+            [
+              "Iovars Zwergwelt · 1,4 AE",
+              "Zwergplanet"
+            ],
+            [
+              "Rostroter Asteroidengürtel · 0,5–0,7 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Kometengebiet Iovar · 1,5–1,6 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Iovar",
+              "inhalte/himmelskoerper/sterne/details/roter-zwerg-kosmische-enzyklopadie/hauptseite/index.html"
+            ],
+            [
+              "Iovar I",
+              "inhalte/himmelskoerper/planeten/details/ursprunglicher-gesteinsplanet-mit-einschlagkratern/hauptseite/index.html"
+            ],
+            [
+              "Iovar II",
+              "inhalte/himmelskoerper/planeten/details/ammoniak-ozeanplanet-mit-leuchtenden-rissen/hauptseite/index.html"
+            ],
+            [
+              "Iovar III",
+              "inhalte/himmelskoerper/planeten/details/saturnahnlicher-gasriese-mit-leuchtenden-eisringen/hauptseite/index.html"
+            ],
+            [
+              "Iovar IV",
+              "inhalte/himmelskoerper/planeten/details/blauweie-eiswelt-im-all/hauptseite/index.html"
+            ],
+            [
+              "Iovars Zwergwelt",
+              "inhalte/himmelskoerper/zwergplaneten/details/blaugrauer-zwergplanet-mit-eisring/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Iovars Ionenschweifkomet.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "5 km"
+            ],
+            [
+              "Masse",
+              "2,29 · 10^14 kg"
+            ],
+            [
+              "Mittlere Dichte",
+              "0,6 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "0 m/s² (0 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "0 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Iovars Ionenschweifkomet.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Iovars Ionenschweifkomet stammt aus den kalten Außenbereichen des Iovar-Systems und wurde auf seine heutige, langgestreckte Bahn gelenkt."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Iovars Ionenschweifkomet.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Woher stammt der Komet genau?",
+            "Wie lange übersteht sein Kern noch die Annäherungen an den Stern?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Iovars Ionenschweifkomet ist mit allen Bahndaten im Iovar-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=iovar-stern&objekt=iovar-komet"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Iovars Ionenschweifkomet.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Der Komet mit blauem Ionenschweif markiert einen Punkt im äußeren Kometengebiet."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Iovars Ionenschweifkomet.",
+      "abschnitte": [
+        {
+          "titel": "Iovars Ionenschweifkomet – Archivbild",
+          "bild": true,
+          "bildtext": "Iovars Ionenschweifkomet"
+        }
+      ]
+    }
+  }
+}

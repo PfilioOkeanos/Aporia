@@ -1,0 +1,511 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Windkomet",
+  "genitiv": "von Windkomet",
+  "dossierName": "Windkomet-Dossier",
+  "klasse": "Komet",
+  "intro": "Ein Komet mit gewundenem, mehrfach geteiltem Schweif, der alle 52 Jahre das innere System durchquert. Die Aeromorphen deuten seine Wiederkehr als Zeichen großer Strömungswechsel. Windkomet umkreist Thyrrae in 14 AE Abstand und braucht für einen Umlauf 50,4 Jahre.",
+  "globusDaten": {
+    "planet": "komet-im-ersten-erwachen",
+    "klasse": "Eis",
+    "radius": 6000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=babiew-stern&objekt=babiew-sturmkomet",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-6A0C72749E"
+    ],
+    [
+      "Typ",
+      "Komet"
+    ],
+    [
+      "Sternsystem",
+      "Thyrrae-System"
+    ],
+    [
+      "Zentralkörper",
+      "Thyrrae"
+    ],
+    [
+      "Große Halbachse",
+      "14 AE"
+    ],
+    [
+      "Umlaufzeit",
+      "50,4 Jahre"
+    ],
+    [
+      "Durchmesser",
+      "12 km"
+    ],
+    [
+      "Masse",
+      "5,43 · 10^14 kg"
+    ],
+    [
+      "Schwerkraft",
+      "0,1 cm/s²"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -194 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Thyrrae-System"
+    ],
+    [
+      "Zentralstern",
+      "Thyrrae",
+      "inhalte/himmelskoerper/sterne/details/goldene-sonne-im-sternennebel/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "14 AE"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Windkomet im Thyrrae-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=babiew-stern&objekt=babiew-sturmkomet",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Thyrrae",
+      "href": "inhalte/himmelskoerper/sterne/details/goldene-sonne-im-sternennebel/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Aeromorphen",
+      "titel": "Babiew",
+      "href": "inhalte/himmelskoerper/planeten/details/gigantischer-sturm-auf-einem-gasriesen/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Aeromorphen",
+      "href": "inhalte/spezies/Biologische Spezies/Aeromorphen/Hauptseite_übersicht/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Thyrrae-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=babiew-stern&objekt=babiew-sturmkomet"
+    },
+    {
+      "titel": "Speziesdossier Aeromorphen",
+      "href": "inhalte/spezies/Biologische Spezies/Aeromorphen/Hauptseite_übersicht/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#090b0c",
+      "tiefe": "#15181a",
+      "akzent": "#d4e4f5",
+      "sand": "#d7dccb",
+      "moos": "#b1e0c7",
+      "ozean": "#8ec5f3",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#55606c"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Umlaufbahn"
+      ],
+      [
+        "Hülle",
+        "Schweif"
+      ],
+      [
+        "Hülle",
+        "Koma"
+      ],
+      [
+        "Kern",
+        "Kern"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Kern": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Kern von Windkomet.",
+      "abschnitte": [
+        {
+          "titel": "Kometenkern",
+          "text": [
+            "Der Kern von Windkomet misst rund 12 km und besteht aus einem lockeren Gemenge aus Eis, Staub und Gestein."
+          ],
+          "schichten": [
+            [
+              "Staubkruste",
+              "Dunkle, kohlenstoffreiche Oberfläche"
+            ],
+            [
+              "Eis-Staub-Gemisch",
+              "Wassereis, Kohlendioxid und Staub"
+            ],
+            [
+              "Kern",
+              "Lockeres Eis-Gestein-Gemenge"
+            ]
+          ]
+        }
+      ]
+    },
+    "Koma": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Koma von Windkomet.",
+      "abschnitte": [
+        {
+          "titel": "Koma",
+          "text": [
+            "Nähert sich Windkomet dem Stern Thyrrae, verdampft Eis und bildet eine leuchtende Gashülle um den Kern."
+          ]
+        }
+      ]
+    },
+    "Schweif": {
+      "gruppe": "Natur",
+      "icon": "☄",
+      "intro": "Schweif von Windkomet.",
+      "abschnitte": [
+        {
+          "titel": "Schweif",
+          "text": [
+            "Ein Komet mit gewundenem, mehrfach geteiltem Schweif, der alle 52 Jahre das innere System durchquert. Die Aeromorphen deuten seine Wiederkehr als Zeichen großer Strömungswechsel."
+          ]
+        }
+      ]
+    },
+    "Umlaufbahn": {
+      "gruppe": "Wissenschaft",
+      "icon": "◌",
+      "intro": "Umlaufbahn von Windkomet.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Thyrrae"
+            ],
+            [
+              "Große Halbachse",
+              "14 AE (2.094,4 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,91"
+            ],
+            [
+              "Bahnneigung",
+              "28°"
+            ],
+            [
+              "Umlaufzeit",
+              "50,4 Jahre"
+            ],
+            [
+              "Einstrahlung",
+              "0,007-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Sternnächster und fernster Punkt",
+          "daten": [
+            [
+              "Perihel",
+              "1,26 AE"
+            ],
+            [
+              "Aphel",
+              "26,74 AE"
+            ]
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Windkomet auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Windkomet",
+          "text": [
+            "Ein Komet mit gewundenem, mehrfach geteiltem Schweif, der alle 52 Jahre das innere System durchquert. Die Aeromorphen deuten seine Wiederkehr als Zeichen großer Strömungswechsel.",
+            "Windkomet umkreist Thyrrae in 14 AE Abstand und braucht für einen Umlauf 50,4 Jahre."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Komet"
+            ],
+            [
+              "Sternsystem",
+              "Thyrrae-System"
+            ],
+            [
+              "Zentralkörper",
+              "Thyrrae"
+            ],
+            [
+              "Große Halbachse",
+              "14 AE"
+            ],
+            [
+              "Umlaufzeit",
+              "50,4 Jahre"
+            ],
+            [
+              "Durchmesser",
+              "12 km"
+            ],
+            [
+              "Masse",
+              "5,43 · 10^14 kg"
+            ],
+            [
+              "Schwerkraft",
+              "0,1 cm/s²"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -194 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Babiew",
+          "text": [
+            "Das Thyrrae-System ist die Heimat der Aeromorphen: Ihr Planet Babiew umkreist Thyrrae."
+          ],
+          "verweise": [
+            [
+              "Babiew",
+              "inhalte/himmelskoerper/planeten/details/gigantischer-sturm-auf-einem-gasriesen/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Aeromorphen",
+              "inhalte/spezies/Biologische Spezies/Aeromorphen/Hauptseite_übersicht/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Windkomet im Thyrrae-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Thyrrae"
+            ],
+            [
+              "Große Halbachse",
+              "14 AE (2.094,4 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,91"
+            ],
+            [
+              "Bahnneigung",
+              "28°"
+            ],
+            [
+              "Umlaufzeit",
+              "50,4 Jahre"
+            ],
+            [
+              "Einstrahlung",
+              "0,007-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Thyrrae · Stern",
+              "Gelber Zwerg (F9 V)"
+            ],
+            [
+              "Thyrrae I · 0,38 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Thyrrae II · 0,72 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Babiew · 1,3 AE",
+              "Gasriese"
+            ],
+            [
+              "Thyrrae V · 9,4 AE",
+              "Eisriese"
+            ],
+            [
+              "Schleiergürtel · 2,6–3,4 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 36–52 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Thyrrae",
+              "inhalte/himmelskoerper/sterne/details/goldene-sonne-im-sternennebel/hauptseite/index.html"
+            ],
+            [
+              "Thyrrae I",
+              "inhalte/himmelskoerper/planeten/details/gluhende-silikatwolken-uber-dem-kupferplaneten/hauptseite/index.html"
+            ],
+            [
+              "Thyrrae II",
+              "inhalte/himmelskoerper/planeten/details/venusahnlicher-planet-unter-goldenen-wolken/hauptseite/index.html"
+            ],
+            [
+              "Babiew",
+              "inhalte/himmelskoerper/planeten/details/gigantischer-sturm-auf-einem-gasriesen/hauptseite/index.html"
+            ],
+            [
+              "Thyrrae V",
+              "inhalte/himmelskoerper/planeten/details/kobaltblauer-eisriese-mit-weien-sturmwolken/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Windkomet.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "6 km"
+            ],
+            [
+              "Masse",
+              "5,43 · 10^14 kg"
+            ],
+            [
+              "Mittlere Dichte",
+              "0,6 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "0 m/s² (0 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "0 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Windkomet.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Windkomet stammt aus den kalten Außenbereichen des Thyrrae-Systems und wurde auf seine heutige, langgestreckte Bahn gelenkt."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Windkomet.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Was steckt hinter den Besonderheiten von Windkomet?",
+            "Woher stammt der Komet genau?",
+            "Wie lange übersteht sein Kern noch die Annäherungen an den Stern?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Windkomet ist mit allen Bahndaten im Thyrrae-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=babiew-stern&objekt=babiew-sturmkomet"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Windkomet.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Als Anomalie in der Sternenkarte verzeichnet"
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Windkomet.",
+      "abschnitte": [
+        {
+          "titel": "Windkomet – Archivbild",
+          "bild": true,
+          "bildtext": "Windkomet"
+        }
+      ]
+    }
+  }
+}

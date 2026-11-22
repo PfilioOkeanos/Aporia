@@ -1,0 +1,499 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Erzgürtel",
+  "genitiv": "von Erzgürtel",
+  "dossierName": "Erzgürtel-Dossier",
+  "klasse": "Asteroidengürtel",
+  "intro": "Der Erzgürtel zwischen 1,9 und 2,65 AE ist auffallend reich an metallischen Brocken. Erzgürtel umgibt Morvath im Morvath-System.",
+  "globusDaten": {
+    "planet": "frostiger-asteroidengurtel-mit-silberspur",
+    "klasse": "Gestein",
+    "radius": 1000000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=gorvhan-stern&objekt=gorvhan-erzgurtel",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-D2E36C8ED3"
+    ],
+    [
+      "Typ",
+      "Asteroidengürtel"
+    ],
+    [
+      "Sternsystem",
+      "Morvath-System"
+    ],
+    [
+      "Zentralkörper",
+      "Morvath"
+    ],
+    [
+      "Ausdehnung",
+      "1,9–2,65 AE"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Morvath-System"
+    ],
+    [
+      "Zentralstern",
+      "Morvath",
+      "inhalte/himmelskoerper/sterne/details/portrat-eines-gelben-riesensterns/hauptseite/index.html"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Erzgürtel im Morvath-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=gorvhan-stern&objekt=gorvhan-erzgurtel",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Morvath",
+      "href": "inhalte/himmelskoerper/sterne/details/portrat-eines-gelben-riesensterns/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Technoiden",
+      "titel": "Gorvhan",
+      "href": "inhalte/himmelskoerper/planeten/details/die-zerbrochene-kruste/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Technoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Technoiden/Hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Morvath-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=gorvhan-stern&objekt=gorvhan-erzgurtel"
+    },
+    {
+      "titel": "Speziesdossier Technoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Technoiden/Hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#080605",
+      "tiefe": "#110e0c",
+      "akzent": "#c0ac9f",
+      "sand": "#c5ac93",
+      "moos": "#9f9f7c",
+      "ozean": "#7f8a89",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#473930"
+    },
+    "schichten": [
+      [
+        "Lage",
+        "Bahnen"
+      ],
+      [
+        "System",
+        "Planeten"
+      ],
+      [
+        "Dynamik",
+        "Stabilität"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Zentralsterne": {
+      "gruppe": "Wissenschaft",
+      "icon": "✦",
+      "intro": "Zentralsterne von Erzgürtel.",
+      "abschnitte": [
+        {
+          "titel": "Morvath",
+          "text": [
+            "Morvath ist ein alter orangefarbener Zwerg der Spektralklasse K1 V mit 85 % der Sonnenmasse und 50 % ihrer Leuchtkraft – Zentralstern von Gorvhan, der Heimatwelt der Technoiden."
+          ],
+          "verweise": [
+            [
+              "Morvath",
+              "inhalte/himmelskoerper/sterne/details/portrat-eines-gelben-riesensterns/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Planeten": {
+      "gruppe": "Wissenschaft",
+      "icon": "◍",
+      "intro": "Planeten von Erzgürtel.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Morvath · Stern",
+              "Orangefarbener Zwerg (K1 V)"
+            ],
+            [
+              "Morvath I · 0,3 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Gorvhan · 0,62 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Morvath III · 1,3 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Morvath IV · 4,1 AE",
+              "Gasriese"
+            ],
+            [
+              "Morvath V · 10 AE",
+              "Eisriese"
+            ],
+            [
+              "Erzgürtel · 1,9–2,7 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 30–44 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Morvath",
+              "inhalte/himmelskoerper/sterne/details/portrat-eines-gelben-riesensterns/hauptseite/index.html"
+            ],
+            [
+              "Morvath I",
+              "inhalte/himmelskoerper/planeten/details/roter-felsplanet-mit-dunnem-atmospharenrand/hauptseite/index.html"
+            ],
+            [
+              "Gorvhan",
+              "inhalte/himmelskoerper/planeten/details/die-zerbrochene-kruste/hauptseite/index.html"
+            ],
+            [
+              "Morvath III",
+              "inhalte/himmelskoerper/planeten/details/verwitterter-felsplanet-im-sternenlicht/hauptseite/index.html"
+            ],
+            [
+              "Morvath IV",
+              "inhalte/himmelskoerper/planeten/details/freifliegender-gasriese-in-interstellarer-dunkelheit/hauptseite/index.html"
+            ],
+            [
+              "Morvath V",
+              "inhalte/himmelskoerper/planeten/details/warmer-neptun-im-bernsteinfarbenen-licht/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Bahnen": {
+      "gruppe": "Wissenschaft",
+      "icon": "◌",
+      "intro": "Bahnen von Erzgürtel.",
+      "abschnitte": [
+        {
+          "titel": "Lage",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Morvath"
+            ],
+            [
+              "Ausdehnung",
+              "1,9–2,65 AE"
+            ]
+          ]
+        }
+      ]
+    },
+    "Stabilität": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚖",
+      "intro": "Stabilität von Erzgürtel.",
+      "abschnitte": [
+        {
+          "titel": "Stabilität",
+          "text": [
+            "Die Brocken von Erzgürtel bewegen sich auf stabilen Bahnen zwischen den Planeten; Resonanzen mit den großen Planeten formen die Ränder des Gebiets."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Erzgürtel auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Erzgürtel",
+          "text": [
+            "Der Erzgürtel zwischen 1,9 und 2,65 AE ist auffallend reich an metallischen Brocken.",
+            "Erzgürtel umgibt Morvath im Morvath-System."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Asteroidengürtel"
+            ],
+            [
+              "Sternsystem",
+              "Morvath-System"
+            ],
+            [
+              "Zentralkörper",
+              "Morvath"
+            ],
+            [
+              "Ausdehnung",
+              "1,9–2,65 AE"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Gorvhan",
+          "text": [
+            "Das Morvath-System ist die Heimat der Technoiden: Ihr Planet Gorvhan umkreist Morvath."
+          ],
+          "verweise": [
+            [
+              "Gorvhan",
+              "inhalte/himmelskoerper/planeten/details/die-zerbrochene-kruste/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Technoiden",
+              "inhalte/spezies/Biologische Spezies/Technoiden/Hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Erzgürtel im Morvath-System.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Morvath · Stern",
+              "Orangefarbener Zwerg (K1 V)"
+            ],
+            [
+              "Morvath I · 0,3 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Gorvhan · 0,62 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Morvath III · 1,3 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Morvath IV · 4,1 AE",
+              "Gasriese"
+            ],
+            [
+              "Morvath V · 10 AE",
+              "Eisriese"
+            ],
+            [
+              "Erzgürtel · 1,9–2,7 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 30–44 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Morvath",
+              "inhalte/himmelskoerper/sterne/details/portrat-eines-gelben-riesensterns/hauptseite/index.html"
+            ],
+            [
+              "Morvath I",
+              "inhalte/himmelskoerper/planeten/details/roter-felsplanet-mit-dunnem-atmospharenrand/hauptseite/index.html"
+            ],
+            [
+              "Gorvhan",
+              "inhalte/himmelskoerper/planeten/details/die-zerbrochene-kruste/hauptseite/index.html"
+            ],
+            [
+              "Morvath III",
+              "inhalte/himmelskoerper/planeten/details/verwitterter-felsplanet-im-sternenlicht/hauptseite/index.html"
+            ],
+            [
+              "Morvath IV",
+              "inhalte/himmelskoerper/planeten/details/freifliegender-gasriese-in-interstellarer-dunkelheit/hauptseite/index.html"
+            ],
+            [
+              "Morvath V",
+              "inhalte/himmelskoerper/planeten/details/warmer-neptun-im-bernsteinfarbenen-licht/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Umgebung": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Umgebung von Erzgürtel.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Morvath · Stern",
+              "Orangefarbener Zwerg (K1 V)"
+            ],
+            [
+              "Morvath I · 0,3 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Gorvhan · 0,62 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Morvath III · 1,3 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Morvath IV · 4,1 AE",
+              "Gasriese"
+            ],
+            [
+              "Morvath V · 10 AE",
+              "Eisriese"
+            ],
+            [
+              "Erzgürtel · 1,9–2,7 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 30–44 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Morvath",
+              "inhalte/himmelskoerper/sterne/details/portrat-eines-gelben-riesensterns/hauptseite/index.html"
+            ],
+            [
+              "Morvath I",
+              "inhalte/himmelskoerper/planeten/details/roter-felsplanet-mit-dunnem-atmospharenrand/hauptseite/index.html"
+            ],
+            [
+              "Gorvhan",
+              "inhalte/himmelskoerper/planeten/details/die-zerbrochene-kruste/hauptseite/index.html"
+            ],
+            [
+              "Morvath III",
+              "inhalte/himmelskoerper/planeten/details/verwitterter-felsplanet-im-sternenlicht/hauptseite/index.html"
+            ],
+            [
+              "Morvath IV",
+              "inhalte/himmelskoerper/planeten/details/freifliegender-gasriese-in-interstellarer-dunkelheit/hauptseite/index.html"
+            ],
+            [
+              "Morvath V",
+              "inhalte/himmelskoerper/planeten/details/warmer-neptun-im-bernsteinfarbenen-licht/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Erzgürtel.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Erzgürtel besteht aus Material, das sich bei der Entstehung des Morvath-Systems nicht zu einem Planeten vereinte."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Erzgürtel.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Wie viel Masse enthält das Gebiet insgesamt?",
+            "Welche Resonanzen formen seine Ränder?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Erzgürtel ist mit allen Bahndaten im Morvath-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=gorvhan-stern&objekt=gorvhan-erzgurtel"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Erzgürtel.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Der Erzgürtel zwischen 1,9 und 2,65 AE ist auffallend reich an metallischen Brocken."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Erzgürtel.",
+      "abschnitte": [
+        {
+          "titel": "Erzgürtel – Archivbild",
+          "bild": true,
+          "bildtext": "Erzgürtel"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,534 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Ulm",
+  "genitiv": "von Ulm",
+  "dossierName": "Ulm-Dossier",
+  "klasse": "Mond",
+  "intro": "Ulm ist ein kleiner, unregelmäßiger Mond auf enger Bahn – vermutlich ein eingefangener Asteroid. Ulm umkreist Kyreth in 5,5 Tage.",
+  "globusDaten": {
+    "planet": "dunkler-kohlenstoffreicher-mond-mit-eisigen-kratern",
+    "klasse": "Gestein",
+    "radius": 210000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=kyreth-stern&objekt=kyreth-ulm",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-C74DD556F9"
+    ],
+    [
+      "Typ",
+      "Mond"
+    ],
+    [
+      "Sternsystem",
+      "Ixar-System"
+    ],
+    [
+      "Zentralkörper",
+      "Kyreth"
+    ],
+    [
+      "Große Halbachse",
+      "139.863 km"
+    ],
+    [
+      "Umlaufzeit",
+      "5,5 Tage"
+    ],
+    [
+      "Durchmesser",
+      "420 km"
+    ],
+    [
+      "Masse",
+      "1,19 · 10^20 kg"
+    ],
+    [
+      "Schwerkraft",
+      "0,02 g"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -4 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Ixar-System"
+    ],
+    [
+      "Zentralstern",
+      "Ixar",
+      "inhalte/himmelskoerper/sterne/details/oszillierender-sonnenahnlicher-stern/hauptseite/index.html"
+    ],
+    [
+      "Umläuft",
+      "Kyreth",
+      "inhalte/himmelskoerper/planeten/details/lebender-planet-mit-grunen-wetterswirbeln/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "139.863 km"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Ulm im Ixar-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=kyreth-stern&objekt=kyreth-ulm",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Ixar",
+      "href": "inhalte/himmelskoerper/sterne/details/oszillierender-sonnenahnlicher-stern/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◍",
+      "art": "Mutterplanet",
+      "titel": "Kyreth",
+      "href": "inhalte/himmelskoerper/planeten/details/lebender-planet-mit-grunen-wetterswirbeln/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Elektrozoiden",
+      "titel": "Kyreth",
+      "href": "inhalte/himmelskoerper/planeten/details/lebender-planet-mit-grunen-wetterswirbeln/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Elektrozoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Elektrozoiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Ixar-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=kyreth-stern&objekt=kyreth-ulm"
+    },
+    {
+      "titel": "Speziesdossier Elektrozoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Elektrozoiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#070706",
+      "tiefe": "#100f0e",
+      "akzent": "#b6afac",
+      "sand": "#bcaf9c",
+      "moos": "#95a387",
+      "ozean": "#788d99",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#403c39"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Astronomie"
+      ],
+      [
+        "Planet",
+        "Mutterplanet"
+      ],
+      [
+        "Kräfte",
+        "Gezeiten"
+      ],
+      [
+        "Tiefe",
+        "Geologie"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Mutterplanet": {
+      "gruppe": "Wissenschaft",
+      "icon": "◐",
+      "intro": "Mutterplanet von Ulm.",
+      "abschnitte": [
+        {
+          "titel": "Kyreth",
+          "text": [
+            "Kyreth ist die Heimatwelt der Elektrozoiden: eine feuchtwarme Landwelt mit mineralisch vielfältigen Böden, ausgedehnter Vegetation und ungewöhnlich gewitterreichem Wetter."
+          ],
+          "daten": [
+            [
+              "Typ",
+              "Gesteinsplanet"
+            ],
+            [
+              "Durchmesser",
+              "13.200 km"
+            ],
+            [
+              "Abstand des Mondes",
+              "139.863 km (21,2 Planetenradien)"
+            ]
+          ],
+          "verweise": [
+            [
+              "Kyreth",
+              "inhalte/himmelskoerper/planeten/details/lebender-planet-mit-grunen-wetterswirbeln/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Weitere Monde von Kyreth",
+          "liste": [
+            "Ressa – Umlauf in 22 Tage"
+          ],
+          "verweise": [
+            [
+              "Ressa",
+              "inhalte/himmelskoerper/monde/details/grauer-mond-mit-kolossalem-berggrat/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Gezeiten": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gezeiten von Ulm.",
+      "abschnitte": [
+        {
+          "titel": "Gezeitenkräfte",
+          "text": [
+            "Auf seiner Bahn in 139.863 km Abstand wirken starke Gezeitenkräfte von Kyreth auf Ulm. Die leicht exzentrische Bahn (e = 0,03) knetet das Innere bei jedem Umlauf."
+          ]
+        }
+      ]
+    },
+    "Gebundene Rotation": {
+      "gruppe": "Wissenschaft",
+      "icon": "↻",
+      "intro": "Gebundene Rotation von Ulm.",
+      "abschnitte": [
+        {
+          "titel": "Rotation",
+          "text": [
+            "Ulm wendet Kyreth vermutlich stets dieselbe Seite zu: Ein Tag dauert so lange wie ein Umlauf – 5,5 Tage."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Ulm auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Ulm",
+          "text": [
+            "Ulm ist ein kleiner, unregelmäßiger Mond auf enger Bahn – vermutlich ein eingefangener Asteroid.",
+            "Ulm umkreist Kyreth in 5,5 Tage."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Mond"
+            ],
+            [
+              "Sternsystem",
+              "Ixar-System"
+            ],
+            [
+              "Zentralkörper",
+              "Kyreth"
+            ],
+            [
+              "Große Halbachse",
+              "139.863 km"
+            ],
+            [
+              "Umlaufzeit",
+              "5,5 Tage"
+            ],
+            [
+              "Durchmesser",
+              "420 km"
+            ],
+            [
+              "Masse",
+              "1,19 · 10^20 kg"
+            ],
+            [
+              "Schwerkraft",
+              "0,02 g"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -4 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Kyreth",
+          "text": [
+            "Das Ixar-System ist die Heimat der Elektrozoiden: Ihr Planet Kyreth umkreist Ixar, und Ulm ist einer seiner Monde."
+          ],
+          "verweise": [
+            [
+              "Kyreth",
+              "inhalte/himmelskoerper/planeten/details/lebender-planet-mit-grunen-wetterswirbeln/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Elektrozoiden",
+              "inhalte/spezies/Biologische Spezies/Elektrozoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Ulm im Ixar-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Kyreth"
+            ],
+            [
+              "Große Halbachse",
+              "139.863 km"
+            ],
+            [
+              "Exzentrizität",
+              "0,03"
+            ],
+            [
+              "Bahnneigung",
+              "5°"
+            ],
+            [
+              "Umlaufzeit",
+              "5,5 Tage"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Ixar · Stern",
+              "Gelber Zwerg (G9 V)"
+            ],
+            [
+              "Ixar I · 0,38 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Kyreth · 0,83 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Ixar III · 1,6 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Ixar IV · 5,6 AE",
+              "Gasriese"
+            ],
+            [
+              "Ixar V · 14 AE",
+              "Eisriese"
+            ],
+            [
+              "Glimmergürtel · 2,4–3,2 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 38–52 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Ixar",
+              "inhalte/himmelskoerper/sterne/details/oszillierender-sonnenahnlicher-stern/hauptseite/index.html"
+            ],
+            [
+              "Ixar I",
+              "inhalte/himmelskoerper/planeten/details/mineralreiche-silikatwelt-mit-basaltebenen/hauptseite/index.html"
+            ],
+            [
+              "Kyreth",
+              "inhalte/himmelskoerper/planeten/details/lebender-planet-mit-grunen-wetterswirbeln/hauptseite/index.html"
+            ],
+            [
+              "Ixar III",
+              "inhalte/himmelskoerper/planeten/details/ockerfarbener-wustenplanet-mit-windgeformten-tafelbergen/hauptseite/index.html"
+            ],
+            [
+              "Ixar IV",
+              "inhalte/himmelskoerper/planeten/details/entstehender-proto-gasriese-in-der-staubscheibe/hauptseite/index.html"
+            ],
+            [
+              "Ixar V",
+              "inhalte/himmelskoerper/planeten/details/uranusahnlicher-eisriese-im-all/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Ulm.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "210 km"
+            ],
+            [
+              "Masse",
+              "1,19 · 10^20 kg"
+            ],
+            [
+              "Mittlere Dichte",
+              "3,08 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "0,18 m/s² (0,018 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "0,28 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Ulm.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Ulm ist geologisch weitgehend erstarrt; Einschläge haben seine Oberfläche geformt."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Ulm.",
+      "abschnitte": [
+        {
+          "titel": "Gashülle",
+          "text": [
+            "Ulm besitzt keine nennenswerte Atmosphäre – dafür ist die Schwerkraft zu gering."
+          ]
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Ulm.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 0,83 AE Abstand zu Ixar liegt die Gleichgewichtstemperatur von Ulm bei rund -4 °C – gemäßigt."
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Ulm.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Ulm entstand zusammen mit dem Ixar-System vor rund 4,6 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Ulm.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Ist der Mond eingefangen oder mit seinem Planeten entstanden?",
+            "Welche Spuren tragen seine ältesten Krater?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Ulm ist mit allen Bahndaten im Ixar-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=kyreth-stern&objekt=kyreth-ulm"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Ulm.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Ulm ist ein kleiner, unregelmäßiger Mond auf enger Bahn – vermutlich ein eingefangener Asteroid."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Ulm.",
+      "abschnitte": [
+        {
+          "titel": "Ulm – Archivbild",
+          "bild": true,
+          "bildtext": "Ulm"
+        }
+      ]
+    }
+  }
+}

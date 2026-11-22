@@ -1,0 +1,522 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Ireth",
+  "genitiv": "von Ireth",
+  "dossierName": "Ireth-Dossier",
+  "klasse": "Mond",
+  "intro": "Ireth ist der größte natürliche Mond von Nhalyss: ein Gesteinsmond mit Kraterlandschaften, Hochländern und Einschlagbecken. Hier liegt die Forschungs- und Versorgungsstation Ireth-Wache. Ireth umkreist Nhalyss in 18 Tage.",
+  "globusDaten": {
+    "planet": "erosionsmond-mit-uralten-einschlagbecken",
+    "klasse": "Gestein",
+    "radius": 1450000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=nhalyss-stern&objekt=nhalyss-ireth",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-9011B5548D"
+    ],
+    [
+      "Typ",
+      "Mond"
+    ],
+    [
+      "Sternsystem",
+      "Seyvar-System"
+    ],
+    [
+      "Zentralkörper",
+      "Nhalyss"
+    ],
+    [
+      "Große Halbachse",
+      "271.553 km"
+    ],
+    [
+      "Umlaufzeit",
+      "18 Tage"
+    ],
+    [
+      "Durchmesser",
+      "2.900 km"
+    ],
+    [
+      "Masse",
+      "0,569 Mondmassen"
+    ],
+    [
+      "Schwerkraft",
+      "0,14 g"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -10 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Seyvar-System"
+    ],
+    [
+      "Zentralstern",
+      "Seyvar",
+      "inhalte/himmelskoerper/sterne/details/pulsierender-orange-roter-riesenstern/hauptseite/index.html"
+    ],
+    [
+      "Umläuft",
+      "Nhalyss",
+      "inhalte/himmelskoerper/planeten/details/imposante-supererde-mit-dunklen-kontinenten/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "271.553 km"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Ireth im Seyvar-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=nhalyss-stern&objekt=nhalyss-ireth",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Seyvar",
+      "href": "inhalte/himmelskoerper/sterne/details/pulsierender-orange-roter-riesenstern/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◍",
+      "art": "Mutterplanet",
+      "titel": "Nhalyss",
+      "href": "inhalte/himmelskoerper/planeten/details/imposante-supererde-mit-dunklen-kontinenten/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Bioluminoiden",
+      "titel": "Nhalyss",
+      "href": "inhalte/himmelskoerper/planeten/details/imposante-supererde-mit-dunklen-kontinenten/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Bioluminoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Bioluminoiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Seyvar-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=nhalyss-stern&objekt=nhalyss-ireth"
+    },
+    {
+      "titel": "Speziesdossier Bioluminoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Bioluminoiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#090908",
+      "tiefe": "#141413",
+      "akzent": "#d1cdc7",
+      "sand": "#d4c9ad",
+      "moos": "#aec69e",
+      "ozean": "#8bacba",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#53504c"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Astronomie"
+      ],
+      [
+        "Planet",
+        "Mutterplanet"
+      ],
+      [
+        "Kräfte",
+        "Gezeiten"
+      ],
+      [
+        "Tiefe",
+        "Geologie"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Mutterplanet": {
+      "gruppe": "Wissenschaft",
+      "icon": "◐",
+      "intro": "Mutterplanet von Ireth.",
+      "abschnitte": [
+        {
+          "titel": "Nhalyss",
+          "text": [
+            "Nhalyss ist die Heimatwelt der Bioluminoiden: ein geologisch aktiver Gesteinsplanet mit großen Ozeanen, vier Kontinenten, riesigen Spaltenlandschaften und dem Ringsystem Scherbenkranz."
+          ],
+          "daten": [
+            [
+              "Typ",
+              "Gesteinsplanet"
+            ],
+            [
+              "Durchmesser",
+              "11.980 km"
+            ],
+            [
+              "Abstand des Mondes",
+              "271.553 km (45,3 Planetenradien)"
+            ]
+          ],
+          "verweise": [
+            [
+              "Nhalyss",
+              "inhalte/himmelskoerper/planeten/details/imposante-supererde-mit-dunklen-kontinenten/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Gezeiten": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gezeiten von Ireth.",
+      "abschnitte": [
+        {
+          "titel": "Gezeitenkräfte",
+          "text": [
+            "Auf seiner Bahn in 271.553 km Abstand wirken starke Gezeitenkräfte von Nhalyss auf Ireth."
+          ]
+        }
+      ]
+    },
+    "Gebundene Rotation": {
+      "gruppe": "Wissenschaft",
+      "icon": "↻",
+      "intro": "Gebundene Rotation von Ireth.",
+      "abschnitte": [
+        {
+          "titel": "Rotation",
+          "text": [
+            "Ireth wendet Nhalyss vermutlich stets dieselbe Seite zu: Ein Tag dauert so lange wie ein Umlauf – 18 Tage."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Ireth auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Ireth",
+          "text": [
+            "Ireth ist der größte natürliche Mond von Nhalyss: ein Gesteinsmond mit Kraterlandschaften, Hochländern und Einschlagbecken. Hier liegt die Forschungs- und Versorgungsstation Ireth-Wache.",
+            "Ireth umkreist Nhalyss in 18 Tage."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Mond"
+            ],
+            [
+              "Sternsystem",
+              "Seyvar-System"
+            ],
+            [
+              "Zentralkörper",
+              "Nhalyss"
+            ],
+            [
+              "Große Halbachse",
+              "271.553 km"
+            ],
+            [
+              "Umlaufzeit",
+              "18 Tage"
+            ],
+            [
+              "Durchmesser",
+              "2.900 km"
+            ],
+            [
+              "Masse",
+              "0,569 Mondmassen"
+            ],
+            [
+              "Schwerkraft",
+              "0,14 g"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -10 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Nhalyss",
+          "text": [
+            "Das Seyvar-System ist die Heimat der Bioluminoiden: Ihr Planet Nhalyss umkreist Seyvar, und Ireth ist einer seiner Monde."
+          ],
+          "verweise": [
+            [
+              "Nhalyss",
+              "inhalte/himmelskoerper/planeten/details/imposante-supererde-mit-dunklen-kontinenten/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Bioluminoiden",
+              "inhalte/spezies/Biologische Spezies/Bioluminoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Ireth im Seyvar-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Nhalyss"
+            ],
+            [
+              "Große Halbachse",
+              "271.553 km"
+            ],
+            [
+              "Exzentrizität",
+              "0,02"
+            ],
+            [
+              "Bahnneigung",
+              "4,2°"
+            ],
+            [
+              "Umlaufzeit",
+              "18 Tage"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Seyvar · Stern",
+              "Orangefarbener Zwerg (K2 V)"
+            ],
+            [
+              "Seyvar I · 0,29 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Nhalyss · 0,72 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Seyvar III · 1,38 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Seyvar IV · 4,4 AE",
+              "Gasriese"
+            ],
+            [
+              "Seyvar V · 11,5 AE",
+              "Eisriese"
+            ],
+            [
+              "Splittergürtel · 2,1–2,9 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 34–48 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Seyvar",
+              "inhalte/himmelskoerper/sterne/details/pulsierender-orange-roter-riesenstern/hauptseite/index.html"
+            ],
+            [
+              "Seyvar I",
+              "inhalte/himmelskoerper/planeten/details/luftloser-basaltplanet-im-harten-sonnenlicht/hauptseite/index.html"
+            ],
+            [
+              "Nhalyss",
+              "inhalte/himmelskoerper/planeten/details/imposante-supererde-mit-dunklen-kontinenten/hauptseite/index.html"
+            ],
+            [
+              "Seyvar III",
+              "inhalte/himmelskoerper/planeten/details/kompakter-felsplanet-im-schwarzen-all/hauptseite/index.html"
+            ],
+            [
+              "Seyvar IV",
+              "inhalte/himmelskoerper/planeten/details/einsamer-gasriese-im-kalten-all/hauptseite/index.html"
+            ],
+            [
+              "Seyvar V",
+              "inhalte/himmelskoerper/planeten/details/leuchtender-mini-neptun-im-tiefen-all/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Ireth.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "1.450 km"
+            ],
+            [
+              "Masse",
+              "0,569 Mondmassen"
+            ],
+            [
+              "Mittlere Dichte",
+              "3,27 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "1,33 m/s² (0,135 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "1,96 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Ireth.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Ireth ist geologisch weitgehend erstarrt; Einschläge haben seine Oberfläche geformt."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Ireth.",
+      "abschnitte": [
+        {
+          "titel": "Gashülle",
+          "text": [
+            "Ireth besitzt keine nennenswerte Atmosphäre – dafür ist die Schwerkraft zu gering."
+          ]
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Ireth.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 0,72 AE Abstand zu Seyvar liegt die Gleichgewichtstemperatur von Ireth bei rund -10 °C – gemäßigt."
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Ireth.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Ireth entstand zusammen mit dem Seyvar-System vor rund 5,1 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Ireth.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Ist der Mond eingefangen oder mit seinem Planeten entstanden?",
+            "Welche Spuren tragen seine ältesten Krater?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Ireth ist mit allen Bahndaten im Seyvar-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=nhalyss-stern&objekt=nhalyss-ireth"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Ireth.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Ireth ist der größte natürliche Mond von Nhalyss: ein Gesteinsmond mit Kraterlandschaften, Hochländern und Einschlagbecken. Hier liegt die Forschungs- und Versorgungsstation Ireth-Wache."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Ireth.",
+      "abschnitte": [
+        {
+          "titel": "Ireth – Archivbild",
+          "bild": true,
+          "bildtext": "Ireth"
+        }
+      ]
+    }
+  }
+}

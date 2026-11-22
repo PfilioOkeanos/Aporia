@@ -1,0 +1,519 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Ladungsschweif",
+  "genitiv": "von Ladungsschweif",
+  "dossierName": "Ladungsschweif-Dossier",
+  "klasse": "Komet",
+  "intro": "Ein Komet mit ungewöhnlich hellem, verzweigtem Ionenschweif, der alle 49 Jahre das innere System erreicht. Elektrozoiden registrieren bei seiner Wiederkehr verstärkte Störungen der atmosphärischen Felder. Ladungsschweif umkreist Ixar in 13 AE Abstand und braucht für einen Umlauf 49,4 Jahre.",
+  "globusDaten": {
+    "planet": "komet-mit-breitem-staubfacher",
+    "klasse": "Eis",
+    "radius": 6000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=kyreth-stern&objekt=kyreth-ladungskomet",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-EC06CF5417"
+    ],
+    [
+      "Typ",
+      "Komet"
+    ],
+    [
+      "Sternsystem",
+      "Ixar-System"
+    ],
+    [
+      "Zentralkörper",
+      "Ixar"
+    ],
+    [
+      "Große Halbachse",
+      "13 AE"
+    ],
+    [
+      "Umlaufzeit",
+      "49,4 Jahre"
+    ],
+    [
+      "Durchmesser",
+      "12 km"
+    ],
+    [
+      "Masse",
+      "5,43 · 10^14 kg"
+    ],
+    [
+      "Schwerkraft",
+      "0,1 cm/s²"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -204 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Ixar-System"
+    ],
+    [
+      "Zentralstern",
+      "Ixar",
+      "inhalte/himmelskoerper/sterne/details/oszillierender-sonnenahnlicher-stern/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "13 AE"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Ladungsschweif im Ixar-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=kyreth-stern&objekt=kyreth-ladungskomet",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Ixar",
+      "href": "inhalte/himmelskoerper/sterne/details/oszillierender-sonnenahnlicher-stern/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Elektrozoiden",
+      "titel": "Kyreth",
+      "href": "inhalte/himmelskoerper/planeten/details/lebender-planet-mit-grunen-wetterswirbeln/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Elektrozoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Elektrozoiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Ixar-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=kyreth-stern&objekt=kyreth-ladungskomet"
+    },
+    {
+      "titel": "Speziesdossier Elektrozoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Elektrozoiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#080a0d",
+      "tiefe": "#11171c",
+      "akzent": "#c0e1ff",
+      "sand": "#c5d9d1",
+      "moos": "#9fddcf",
+      "ozean": "#7fc1ff",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#475e73"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Umlaufbahn"
+      ],
+      [
+        "Hülle",
+        "Schweif"
+      ],
+      [
+        "Hülle",
+        "Koma"
+      ],
+      [
+        "Kern",
+        "Kern"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Kern": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Kern von Ladungsschweif.",
+      "abschnitte": [
+        {
+          "titel": "Kometenkern",
+          "text": [
+            "Der Kern von Ladungsschweif misst rund 12 km und besteht aus einem lockeren Gemenge aus Eis, Staub und Gestein."
+          ],
+          "schichten": [
+            [
+              "Staubkruste",
+              "Dunkle, kohlenstoffreiche Oberfläche"
+            ],
+            [
+              "Eis-Staub-Gemisch",
+              "Wassereis, Kohlendioxid und Staub"
+            ],
+            [
+              "Kern",
+              "Lockeres Eis-Gestein-Gemenge"
+            ]
+          ]
+        }
+      ]
+    },
+    "Koma": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Koma von Ladungsschweif.",
+      "abschnitte": [
+        {
+          "titel": "Koma",
+          "text": [
+            "Nähert sich Ladungsschweif dem Stern Ixar, verdampft Eis und bildet eine leuchtende Gashülle um den Kern."
+          ]
+        }
+      ]
+    },
+    "Schweif": {
+      "gruppe": "Natur",
+      "icon": "☄",
+      "intro": "Schweif von Ladungsschweif.",
+      "abschnitte": [
+        {
+          "titel": "Schweif",
+          "text": [
+            "Ein Komet mit ungewöhnlich hellem, verzweigtem Ionenschweif, der alle 49 Jahre das innere System erreicht. Elektrozoiden registrieren bei seiner Wiederkehr verstärkte Störungen der atmosphärischen Felder."
+          ]
+        }
+      ]
+    },
+    "Umlaufbahn": {
+      "gruppe": "Wissenschaft",
+      "icon": "◌",
+      "intro": "Umlaufbahn von Ladungsschweif.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Ixar"
+            ],
+            [
+              "Große Halbachse",
+              "13 AE (1.944,8 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,91"
+            ],
+            [
+              "Bahnneigung",
+              "26°"
+            ],
+            [
+              "Umlaufzeit",
+              "49,4 Jahre"
+            ],
+            [
+              "Einstrahlung",
+              "0,004-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Sternnächster und fernster Punkt",
+          "daten": [
+            [
+              "Perihel",
+              "1,17 AE"
+            ],
+            [
+              "Aphel",
+              "24,83 AE"
+            ]
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Ladungsschweif auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Ladungsschweif",
+          "text": [
+            "Ein Komet mit ungewöhnlich hellem, verzweigtem Ionenschweif, der alle 49 Jahre das innere System erreicht. Elektrozoiden registrieren bei seiner Wiederkehr verstärkte Störungen der atmosphärischen Felder.",
+            "Ladungsschweif umkreist Ixar in 13 AE Abstand und braucht für einen Umlauf 49,4 Jahre."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Komet"
+            ],
+            [
+              "Sternsystem",
+              "Ixar-System"
+            ],
+            [
+              "Zentralkörper",
+              "Ixar"
+            ],
+            [
+              "Große Halbachse",
+              "13 AE"
+            ],
+            [
+              "Umlaufzeit",
+              "49,4 Jahre"
+            ],
+            [
+              "Durchmesser",
+              "12 km"
+            ],
+            [
+              "Masse",
+              "5,43 · 10^14 kg"
+            ],
+            [
+              "Schwerkraft",
+              "0,1 cm/s²"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -204 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Kyreth",
+          "text": [
+            "Das Ixar-System ist die Heimat der Elektrozoiden: Ihr Planet Kyreth umkreist Ixar."
+          ],
+          "verweise": [
+            [
+              "Kyreth",
+              "inhalte/himmelskoerper/planeten/details/lebender-planet-mit-grunen-wetterswirbeln/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Elektrozoiden",
+              "inhalte/spezies/Biologische Spezies/Elektrozoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Ladungsschweif im Ixar-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Ixar"
+            ],
+            [
+              "Große Halbachse",
+              "13 AE (1.944,8 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,91"
+            ],
+            [
+              "Bahnneigung",
+              "26°"
+            ],
+            [
+              "Umlaufzeit",
+              "49,4 Jahre"
+            ],
+            [
+              "Einstrahlung",
+              "0,004-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Ixar · Stern",
+              "Gelber Zwerg (G9 V)"
+            ],
+            [
+              "Ixar I · 0,38 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Kyreth · 0,83 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Ixar III · 1,6 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Ixar IV · 5,6 AE",
+              "Gasriese"
+            ],
+            [
+              "Ixar V · 14 AE",
+              "Eisriese"
+            ],
+            [
+              "Glimmergürtel · 2,4–3,2 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 38–52 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Ixar",
+              "inhalte/himmelskoerper/sterne/details/oszillierender-sonnenahnlicher-stern/hauptseite/index.html"
+            ],
+            [
+              "Ixar I",
+              "inhalte/himmelskoerper/planeten/details/mineralreiche-silikatwelt-mit-basaltebenen/hauptseite/index.html"
+            ],
+            [
+              "Kyreth",
+              "inhalte/himmelskoerper/planeten/details/lebender-planet-mit-grunen-wetterswirbeln/hauptseite/index.html"
+            ],
+            [
+              "Ixar III",
+              "inhalte/himmelskoerper/planeten/details/ockerfarbener-wustenplanet-mit-windgeformten-tafelbergen/hauptseite/index.html"
+            ],
+            [
+              "Ixar IV",
+              "inhalte/himmelskoerper/planeten/details/entstehender-proto-gasriese-in-der-staubscheibe/hauptseite/index.html"
+            ],
+            [
+              "Ixar V",
+              "inhalte/himmelskoerper/planeten/details/uranusahnlicher-eisriese-im-all/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Ladungsschweif.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "6 km"
+            ],
+            [
+              "Masse",
+              "5,43 · 10^14 kg"
+            ],
+            [
+              "Mittlere Dichte",
+              "0,6 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "0 m/s² (0 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "0 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Ladungsschweif.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Ladungsschweif stammt aus den kalten Außenbereichen des Ixar-Systems und wurde auf seine heutige, langgestreckte Bahn gelenkt."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Ladungsschweif.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Was steckt hinter den Besonderheiten von Ladungsschweif?",
+            "Woher stammt der Komet genau?",
+            "Wie lange übersteht sein Kern noch die Annäherungen an den Stern?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Ladungsschweif ist mit allen Bahndaten im Ixar-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=kyreth-stern&objekt=kyreth-ladungskomet"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Ladungsschweif.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Als Anomalie in der Sternenkarte verzeichnet"
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Ladungsschweif.",
+      "abschnitte": [
+        {
+          "titel": "Ladungsschweif – Archivbild",
+          "bild": true,
+          "bildtext": "Ladungsschweif"
+        }
+      ]
+    }
+  }
+}

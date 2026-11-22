@@ -3,7 +3,9 @@
   "private": true,
   "scripts": {
     "sternenkarte": "node Menüs/adapter/Sternenkarte/3D-Modelle/lokal-server.mjs",
-    "assets:index": "node scripts/build-asset-catalog.mjs"
+    "assets:index": "node scripts/build-asset-catalog.mjs",
+    "spezies": "node scripts/spezies/bauen.mjs",
+    "spezies:pruefen": "node scripts/spezies/pruefen.mjs"
   },
   "dependencies": {
     "three": "0.180.0"

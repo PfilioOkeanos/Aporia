@@ -11,15 +11,14 @@ Die biologische Zugehörigkeit zur Spezies Homo sapiens ist unabhängig von der 
 
 ## Zugehörigkeit zu den Großmächten
 
-Im Aporia-Universum existieren fünf Großmächte:
+Im Aporia-Universum existieren vier Großmächte:
 
 1. Konföderation
 2. Konsortium
 3. Protektorat
 4. Synaptorat
-5. Zirkel der Erhabenen
 
-Menschen sind verbindlich in drei dieser fünf Großmächte vertreten.
+Menschen sind verbindlich in drei dieser vier Großmächte vertreten.
 
 ### 01 – Konföderation
 
@@ -67,16 +66,6 @@ Eine menschliche Mitgliedschaft ist bisher nicht verbindlich festgelegt.
 
 Ebenso bestehen noch keine konkreten Festlegungen zu diplomatischen Beziehungen, Konflikten oder gemeinsamen Projekten zwischen Menschen und dem Synaptorat.
 
-### 05 – Zirkel der Erhabenen
-
-**Zugehörigkeit:** Nicht festgelegt
-
-Der Zirkel der Erhabenen ist eine eigenständige Großmacht, deren Wesen und Hintergründe innerhalb des Aporia-Universums bewusst geheimnisvoll bleiben.
-
-Eine menschliche Mitgliedschaft ist bisher nicht festgelegt.
-
-Auch Beziehungen, Konflikte oder besondere Abhängigkeiten zwischen Menschen und dem Zirkel der Erhabenen sind derzeit nicht definiert.
-
 ## Beziehungen zwischen menschlichen Fraktionsmitgliedern
 
 Da Menschen in der Konföderation, im Konsortium und im Protektorat vertreten sind, existieren menschliche Bevölkerungsgruppen in unterschiedlichen politischen Systemen.
@@ -95,9 +84,9 @@ Bisher sind keine allgemeinen Freundschaften, Feindschaften oder biologisch begr
 
 ## Beziehungen zu unabhängigen Organisationen
 
-Neben den fünf Großmächten existieren unabhängige Organisationen und Lebensformen, darunter die Ätherwanderer.
+Neben den vier Großmächten existieren unabhängige Organisationen und Lebensformen, darunter die Ätherwanderer.
 
-Die Ätherwanderer stellen keine der fünf Großmächte dar und handeln eigenständig.
+Die Ätherwanderer stellen keine der vier Großmächte dar und handeln eigenständig.
 
 Die spezifischen Beziehungen der Menschen zu ihnen sind noch nicht festgelegt.
 
@@ -107,7 +96,7 @@ Die Erde ist der Ursprungsplanet der Menschheit.
 
 Sie besitzt entsprechend der realen Ausgangslage unterschiedliche Staaten, Regierungen und politische Systeme.
 
-Eine einheitliche politische Zugehörigkeit der gesamten Erde zu einer der fünf Aporia-Großmächte ist nicht festgelegt.
+Eine einheitliche politische Zugehörigkeit der gesamten Erde zu einer der vier Aporia-Großmächte ist nicht festgelegt.
 
 ## Grundsatz der Fraktionsbeziehungen
 

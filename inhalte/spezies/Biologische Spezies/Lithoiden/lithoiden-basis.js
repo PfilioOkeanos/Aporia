@@ -72,3 +72,6 @@ if (dialog && alleKacheln.length) {
     });
     dialog.addEventListener("click", (event) => { if (event.target === dialog) dialog.close(); });
 }
+
+// Heimatwelt-Kasten (Planetendossier + Sternenkarte) für Spezies mit Heimatwelt
+import "../../_gemeinsam/heimatwelt-verweis.js";

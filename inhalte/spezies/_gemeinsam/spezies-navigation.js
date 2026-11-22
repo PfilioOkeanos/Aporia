@@ -11,3 +11,6 @@ if (main && sectionNavigation) {
     rail.append(sectionNavigation);
     pageFrame.insertBefore(rail, main);
 }
+
+// Heimatwelt-Kasten (Planetendossier + Sternenkarte) für Spezies mit Heimatwelt
+import "./heimatwelt-verweis.js";

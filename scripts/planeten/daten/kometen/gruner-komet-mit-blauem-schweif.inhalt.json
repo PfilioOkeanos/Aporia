@@ -1,0 +1,511 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Panzerkomet",
+  "genitiv": "von Panzerkomet",
+  "dossierName": "Panzerkomet-Dossier",
+  "klasse": "Komet",
+  "intro": "Ein ungewöhnlich großer, dunkel verkrusteter Komet (rund 34 Jahre Umlaufzeit), dessen Schweif in einzelnen Schichten aufbricht – die Chitinoiden nennen ihn wegen seiner Kruste den Panzerkometen. Panzerkomet umkreist Khelar in 10,5 AE Abstand und braucht für einen Umlauf 37,3 Jahre.",
+  "globusDaten": {
+    "planet": "gruner-komet-mit-blauem-schweif",
+    "klasse": "Eis",
+    "radius": 9000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=veshkara-stern&objekt=veshkara-panzerkomet",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-88A36E54C1"
+    ],
+    [
+      "Typ",
+      "Komet"
+    ],
+    [
+      "Sternsystem",
+      "Khelar-System"
+    ],
+    [
+      "Zentralkörper",
+      "Khelar"
+    ],
+    [
+      "Große Halbachse",
+      "10,5 AE"
+    ],
+    [
+      "Umlaufzeit",
+      "37,3 Jahre"
+    ],
+    [
+      "Durchmesser",
+      "18 km"
+    ],
+    [
+      "Masse",
+      "1,83 · 10^15 kg"
+    ],
+    [
+      "Schwerkraft",
+      "0,15 cm/s²"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -198 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Khelar-System"
+    ],
+    [
+      "Zentralstern",
+      "Khelar",
+      "inhalte/himmelskoerper/sterne/details/gelbweier-unterriese-im-ubergang/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "10,5 AE"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Panzerkomet im Khelar-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=veshkara-stern&objekt=veshkara-panzerkomet",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Khelar",
+      "href": "inhalte/himmelskoerper/sterne/details/gelbweier-unterriese-im-ubergang/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Chitinoiden",
+      "titel": "Veshkara",
+      "href": "inhalte/himmelskoerper/planeten/details/tiefblauer-ozeanplanet-unter-weien-wolken/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Chitinoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Chitinnoiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Khelar-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=veshkara-stern&objekt=veshkara-panzerkomet"
+    },
+    {
+      "titel": "Speziesdossier Chitinoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Chitinnoiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#080807",
+      "tiefe": "#13110f",
+      "akzent": "#c7bdaf",
+      "sand": "#cbba9e",
+      "moos": "#a5b38a",
+      "ozean": "#849b9d",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#4c453c"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Umlaufbahn"
+      ],
+      [
+        "Hülle",
+        "Schweif"
+      ],
+      [
+        "Hülle",
+        "Koma"
+      ],
+      [
+        "Kern",
+        "Kern"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Kern": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Kern von Panzerkomet.",
+      "abschnitte": [
+        {
+          "titel": "Kometenkern",
+          "text": [
+            "Der Kern von Panzerkomet misst rund 18 km und besteht aus einem lockeren Gemenge aus Eis, Staub und Gestein."
+          ],
+          "schichten": [
+            [
+              "Staubkruste",
+              "Dunkle, kohlenstoffreiche Oberfläche"
+            ],
+            [
+              "Eis-Staub-Gemisch",
+              "Wassereis, Kohlendioxid und Staub"
+            ],
+            [
+              "Kern",
+              "Lockeres Eis-Gestein-Gemenge"
+            ]
+          ]
+        }
+      ]
+    },
+    "Koma": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Koma von Panzerkomet.",
+      "abschnitte": [
+        {
+          "titel": "Koma",
+          "text": [
+            "Nähert sich Panzerkomet dem Stern Khelar, verdampft Eis und bildet eine leuchtende Gashülle um den Kern."
+          ]
+        }
+      ]
+    },
+    "Schweif": {
+      "gruppe": "Natur",
+      "icon": "☄",
+      "intro": "Schweif von Panzerkomet.",
+      "abschnitte": [
+        {
+          "titel": "Schweif",
+          "text": [
+            "Ein ungewöhnlich großer, dunkel verkrusteter Komet (rund 34 Jahre Umlaufzeit), dessen Schweif in einzelnen Schichten aufbricht – die Chitinoiden nennen ihn wegen seiner Kruste den Panzerkometen."
+          ]
+        }
+      ]
+    },
+    "Umlaufbahn": {
+      "gruppe": "Wissenschaft",
+      "icon": "◌",
+      "intro": "Umlaufbahn von Panzerkomet.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Khelar"
+            ],
+            [
+              "Große Halbachse",
+              "10,5 AE (1.570,8 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,92"
+            ],
+            [
+              "Bahnneigung",
+              "16°"
+            ],
+            [
+              "Umlaufzeit",
+              "37,3 Jahre"
+            ],
+            [
+              "Einstrahlung",
+              "0,005-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Sternnächster und fernster Punkt",
+          "daten": [
+            [
+              "Perihel",
+              "0,84 AE"
+            ],
+            [
+              "Aphel",
+              "20,16 AE"
+            ]
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Panzerkomet auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Panzerkomet",
+          "text": [
+            "Ein ungewöhnlich großer, dunkel verkrusteter Komet (rund 34 Jahre Umlaufzeit), dessen Schweif in einzelnen Schichten aufbricht – die Chitinoiden nennen ihn wegen seiner Kruste den Panzerkometen.",
+            "Panzerkomet umkreist Khelar in 10,5 AE Abstand und braucht für einen Umlauf 37,3 Jahre."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Komet"
+            ],
+            [
+              "Sternsystem",
+              "Khelar-System"
+            ],
+            [
+              "Zentralkörper",
+              "Khelar"
+            ],
+            [
+              "Große Halbachse",
+              "10,5 AE"
+            ],
+            [
+              "Umlaufzeit",
+              "37,3 Jahre"
+            ],
+            [
+              "Durchmesser",
+              "18 km"
+            ],
+            [
+              "Masse",
+              "1,83 · 10^15 kg"
+            ],
+            [
+              "Schwerkraft",
+              "0,15 cm/s²"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -198 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Veshkara",
+          "text": [
+            "Das Khelar-System ist die Heimat der Chitinoiden: Ihr Planet Veshkara umkreist Khelar."
+          ],
+          "verweise": [
+            [
+              "Veshkara",
+              "inhalte/himmelskoerper/planeten/details/tiefblauer-ozeanplanet-unter-weien-wolken/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Chitinoiden",
+              "inhalte/spezies/Biologische Spezies/Chitinnoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Panzerkomet im Khelar-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Khelar"
+            ],
+            [
+              "Große Halbachse",
+              "10,5 AE (1.570,8 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,92"
+            ],
+            [
+              "Bahnneigung",
+              "16°"
+            ],
+            [
+              "Umlaufzeit",
+              "37,3 Jahre"
+            ],
+            [
+              "Einstrahlung",
+              "0,005-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Khelar · Stern",
+              "Orangefarbener Zwerg (K0 V)"
+            ],
+            [
+              "Khelar I · 0,3 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Veshkara · 0,78 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Khelar III · 2,7 AE",
+              "Gasriese"
+            ],
+            [
+              "Khelar IV · 7,8 AE",
+              "Eisriese"
+            ],
+            [
+              "Harzgürtel · 1,4–2 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 33–47 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Khelar",
+              "inhalte/himmelskoerper/sterne/details/gelbweier-unterriese-im-ubergang/hauptseite/index.html"
+            ],
+            [
+              "Khelar I",
+              "inhalte/himmelskoerper/planeten/details/nickel-eisen-planet-mit-tiefen-einschlagsbecken/hauptseite/index.html"
+            ],
+            [
+              "Veshkara",
+              "inhalte/himmelskoerper/planeten/details/tiefblauer-ozeanplanet-unter-weien-wolken/hauptseite/index.html"
+            ],
+            [
+              "Khelar III",
+              "inhalte/himmelskoerper/planeten/details/champagnerfarbener-helium-gasriese-im-sternenlicht/hauptseite/index.html"
+            ],
+            [
+              "Khelar IV",
+              "inhalte/himmelskoerper/planeten/details/heier-neptun-im-sternenlicht/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Panzerkomet.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "9 km"
+            ],
+            [
+              "Masse",
+              "1,83 · 10^15 kg"
+            ],
+            [
+              "Mittlere Dichte",
+              "0,6 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "0 m/s² (0 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "0,01 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Panzerkomet.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Panzerkomet stammt aus den kalten Außenbereichen des Khelar-Systems und wurde auf seine heutige, langgestreckte Bahn gelenkt."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Panzerkomet.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Was steckt hinter den Besonderheiten von Panzerkomet?",
+            "Woher stammt der Komet genau?",
+            "Wie lange übersteht sein Kern noch die Annäherungen an den Stern?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Panzerkomet ist mit allen Bahndaten im Khelar-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=veshkara-stern&objekt=veshkara-panzerkomet"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Panzerkomet.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Als Anomalie in der Sternenkarte verzeichnet"
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Panzerkomet.",
+      "abschnitte": [
+        {
+          "titel": "Panzerkomet – Archivbild",
+          "bild": true,
+          "bildtext": "Panzerkomet"
+        }
+      ]
+    }
+  }
+}

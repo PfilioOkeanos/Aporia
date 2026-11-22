@@ -1,0 +1,475 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Trümmerband",
+  "genitiv": "von Trümmerband",
+  "dossierName": "Trümmerband-Dossier",
+  "klasse": "Asteroidengürtel",
+  "intro": "Das Trümmerband zwischen 1,3 und 2,8 AE ist ungewöhnlich dicht und metallreich. Es ist der Hauptgrund, warum nur wenige sichere Anflugrouten nach Ferrum Prime existieren. Trümmerband umgibt Ashkor im Ferrum-System.",
+  "globusDaten": {
+    "planet": "der-weite-asteroidengurtel-von-weryn",
+    "klasse": "Gestein",
+    "radius": 1000000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=ferrum-stern&objekt=ferrum-truemmerband",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-6F4408D4BB"
+    ],
+    [
+      "Typ",
+      "Asteroidengürtel"
+    ],
+    [
+      "Sternsystem",
+      "Ferrum-System"
+    ],
+    [
+      "Zentralkörper",
+      "Ashkor"
+    ],
+    [
+      "Ausdehnung",
+      "1,3–2,8 AE"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Ferrum-System"
+    ],
+    [
+      "Zentralstern",
+      "Ashkor",
+      "inhalte/himmelskoerper/sterne/details/kompakter-orangefarbener-red-clump-stern/hauptseite/index.html"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Trümmerband im Ferrum-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=ferrum-stern&objekt=ferrum-truemmerband",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Ashkor",
+      "href": "inhalte/himmelskoerper/sterne/details/kompakter-orangefarbener-red-clump-stern/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Syntheten",
+      "titel": "Ferrum Prime",
+      "href": "inhalte/himmelskoerper/planeten/details/rostiger-eisenplanet-mit-freiliegendem-metallkern/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Syntheten",
+      "href": "inhalte/spezies/Technologische Lebensformen/Syntheten/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Ferrum-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=ferrum-stern&objekt=ferrum-truemmerband"
+    },
+    {
+      "titel": "Speziesdossier Syntheten",
+      "href": "inhalte/spezies/Technologische Lebensformen/Syntheten/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#080605",
+      "tiefe": "#110c0a",
+      "akzent": "#bda295",
+      "sand": "#c2a48d",
+      "moos": "#9c9473",
+      "ozean": "#7c7f7c",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#453229"
+    },
+    "schichten": [
+      [
+        "Lage",
+        "Bahnen"
+      ],
+      [
+        "System",
+        "Planeten"
+      ],
+      [
+        "Dynamik",
+        "Stabilität"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Zentralsterne": {
+      "gruppe": "Wissenschaft",
+      "icon": "✦",
+      "intro": "Zentralsterne von Trümmerband.",
+      "abschnitte": [
+        {
+          "titel": "Ashkor",
+          "text": [
+            "Ashkor ist ein orangefarbener Zwerg der Spektralklasse K5 V. Er bildet mit dem Braunen Zwerg Ashkor B ein weites Doppelsystem – dessen Schwerkraft wirbelt die äußeren Trümmergürtel auf und macht Anflüge gefährlich."
+          ],
+          "verweise": [
+            [
+              "Ashkor",
+              "inhalte/himmelskoerper/sterne/details/kompakter-orangefarbener-red-clump-stern/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Planeten": {
+      "gruppe": "Wissenschaft",
+      "icon": "◍",
+      "intro": "Planeten von Trümmerband.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Ashkor · Stern",
+              "Orangefarbener Zwerg (K5 V)"
+            ],
+            [
+              "Ferrum Prime · 0,45 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Ashkor II · 0,92 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Ashkor III · 4,1 AE",
+              "Gasriese"
+            ],
+            [
+              "Ashkor B · 85 AE",
+              "Brauner Zwerg"
+            ],
+            [
+              "Trümmerband · 1,3–2,8 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Staubschleier · 12–24 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Ashkor",
+              "inhalte/himmelskoerper/sterne/details/kompakter-orangefarbener-red-clump-stern/hauptseite/index.html"
+            ],
+            [
+              "Ferrum Prime",
+              "inhalte/himmelskoerper/planeten/details/rostiger-eisenplanet-mit-freiliegendem-metallkern/hauptseite/index.html"
+            ],
+            [
+              "Ashkor II",
+              "inhalte/himmelskoerper/planeten/details/gefrorener-planet-unter-kaltem-sternenlicht/hauptseite/index.html"
+            ],
+            [
+              "Ashkor III",
+              "inhalte/himmelskoerper/planeten/details/metallischer-gasriese-in-bronze-und-gold/hauptseite/index.html"
+            ],
+            [
+              "Ashkor B",
+              "inhalte/himmelskoerper/sterne/details/alter-brauner-zwerg-im-tiefen-all/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Bahnen": {
+      "gruppe": "Wissenschaft",
+      "icon": "◌",
+      "intro": "Bahnen von Trümmerband.",
+      "abschnitte": [
+        {
+          "titel": "Lage",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Ashkor"
+            ],
+            [
+              "Ausdehnung",
+              "1,3–2,8 AE"
+            ]
+          ]
+        }
+      ]
+    },
+    "Stabilität": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚖",
+      "intro": "Stabilität von Trümmerband.",
+      "abschnitte": [
+        {
+          "titel": "Stabilität",
+          "text": [
+            "Die Brocken von Trümmerband bewegen sich auf stabilen Bahnen zwischen den Planeten; Resonanzen mit den großen Planeten formen die Ränder des Gebiets."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Trümmerband auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Trümmerband",
+          "text": [
+            "Das Trümmerband zwischen 1,3 und 2,8 AE ist ungewöhnlich dicht und metallreich. Es ist der Hauptgrund, warum nur wenige sichere Anflugrouten nach Ferrum Prime existieren.",
+            "Trümmerband umgibt Ashkor im Ferrum-System."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Asteroidengürtel"
+            ],
+            [
+              "Sternsystem",
+              "Ferrum-System"
+            ],
+            [
+              "Zentralkörper",
+              "Ashkor"
+            ],
+            [
+              "Ausdehnung",
+              "1,3–2,8 AE"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Ferrum Prime",
+          "text": [
+            "Das Ferrum-System ist die Heimat der Syntheten: Ihr Planet Ferrum Prime umkreist Ashkor."
+          ],
+          "verweise": [
+            [
+              "Ferrum Prime",
+              "inhalte/himmelskoerper/planeten/details/rostiger-eisenplanet-mit-freiliegendem-metallkern/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Syntheten",
+              "inhalte/spezies/Technologische Lebensformen/Syntheten/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Trümmerband im Ferrum-System.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Ashkor · Stern",
+              "Orangefarbener Zwerg (K5 V)"
+            ],
+            [
+              "Ferrum Prime · 0,45 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Ashkor II · 0,92 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Ashkor III · 4,1 AE",
+              "Gasriese"
+            ],
+            [
+              "Ashkor B · 85 AE",
+              "Brauner Zwerg"
+            ],
+            [
+              "Trümmerband · 1,3–2,8 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Staubschleier · 12–24 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Ashkor",
+              "inhalte/himmelskoerper/sterne/details/kompakter-orangefarbener-red-clump-stern/hauptseite/index.html"
+            ],
+            [
+              "Ferrum Prime",
+              "inhalte/himmelskoerper/planeten/details/rostiger-eisenplanet-mit-freiliegendem-metallkern/hauptseite/index.html"
+            ],
+            [
+              "Ashkor II",
+              "inhalte/himmelskoerper/planeten/details/gefrorener-planet-unter-kaltem-sternenlicht/hauptseite/index.html"
+            ],
+            [
+              "Ashkor III",
+              "inhalte/himmelskoerper/planeten/details/metallischer-gasriese-in-bronze-und-gold/hauptseite/index.html"
+            ],
+            [
+              "Ashkor B",
+              "inhalte/himmelskoerper/sterne/details/alter-brauner-zwerg-im-tiefen-all/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Umgebung": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Umgebung von Trümmerband.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Ashkor · Stern",
+              "Orangefarbener Zwerg (K5 V)"
+            ],
+            [
+              "Ferrum Prime · 0,45 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Ashkor II · 0,92 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Ashkor III · 4,1 AE",
+              "Gasriese"
+            ],
+            [
+              "Ashkor B · 85 AE",
+              "Brauner Zwerg"
+            ],
+            [
+              "Trümmerband · 1,3–2,8 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Staubschleier · 12–24 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Ashkor",
+              "inhalte/himmelskoerper/sterne/details/kompakter-orangefarbener-red-clump-stern/hauptseite/index.html"
+            ],
+            [
+              "Ferrum Prime",
+              "inhalte/himmelskoerper/planeten/details/rostiger-eisenplanet-mit-freiliegendem-metallkern/hauptseite/index.html"
+            ],
+            [
+              "Ashkor II",
+              "inhalte/himmelskoerper/planeten/details/gefrorener-planet-unter-kaltem-sternenlicht/hauptseite/index.html"
+            ],
+            [
+              "Ashkor III",
+              "inhalte/himmelskoerper/planeten/details/metallischer-gasriese-in-bronze-und-gold/hauptseite/index.html"
+            ],
+            [
+              "Ashkor B",
+              "inhalte/himmelskoerper/sterne/details/alter-brauner-zwerg-im-tiefen-all/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Trümmerband.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Trümmerband besteht aus Material, das sich bei der Entstehung des Ferrum-Systems nicht zu einem Planeten vereinte."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Trümmerband.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Wie viel Masse enthält das Gebiet insgesamt?",
+            "Welche Resonanzen formen seine Ränder?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Trümmerband ist mit allen Bahndaten im Ferrum-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=ferrum-stern&objekt=ferrum-truemmerband"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Trümmerband.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Das Trümmerband zwischen 1,3 und 2,8 AE ist ungewöhnlich dicht und metallreich. Es ist der Hauptgrund, warum nur wenige sichere Anflugrouten nach Ferrum Prime existieren."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Trümmerband.",
+      "abschnitte": [
+        {
+          "titel": "Trümmerband – Archivbild",
+          "bild": true,
+          "bildtext": "Trümmerband"
+        }
+      ]
+    }
+  }
+}

@@ -119,3 +119,6 @@ if (cardGroups.length) {
     wide.addEventListener("change", schedulePacking);
     packCards();
 }
+
+// Heimatwelt-Kasten (Planetendossier + Sternenkarte) für Spezies mit Heimatwelt
+import "../../_gemeinsam/heimatwelt-verweis.js";

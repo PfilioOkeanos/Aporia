@@ -1,0 +1,627 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Aelyra",
+  "genitiv": "von Aelyra",
+  "dossierName": "Aelyra-Dossier",
+  "klasse": "Gelber Zwerg (G3 V)",
+  "intro": "Aelyra ist ein einzelner, sonnenähnlicher Hauptreihenstern der Spektralklasse G3 V mit 98 % der Sonnenmasse und 92 % ihrer Leuchtkraft – Zentralstern von Orvaya, der Heimat der Waldfeen. Aelyra ist der Zentralstern des Orvaya-Systems.",
+  "globusDaten": {
+    "planet": "goldene-sonne-mit-feiner-granulation",
+    "klasse": "Vulkan",
+    "radius": 674829000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=orvaya-stern",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-21588C253F"
+    ],
+    [
+      "Typ",
+      "Gelber Zwerg (G3 V)"
+    ],
+    [
+      "Sternsystem",
+      "Orvaya-System"
+    ],
+    [
+      "Masse",
+      "0,98 Sonnenmassen"
+    ],
+    [
+      "Radius",
+      "0,97 Sonnenradien"
+    ],
+    [
+      "Leuchtkraft",
+      "0,92 Sonnenleuchtkräfte"
+    ],
+    [
+      "Oberflächentemperatur",
+      "ca. 5.700 K"
+    ],
+    [
+      "Alter",
+      "ca. 5,1 Mrd. Jahre"
+    ],
+    [
+      "Monde",
+      "6 (Aelyra I, Aelyra II, Orvaya, Aelyra IV, Aelyra V, Nebelkomet)"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Orvaya-System"
+    ],
+    [
+      "Entfernung zur Sonne",
+      "19 Lichtjahre"
+    ],
+    [
+      "Nächste Nachbarsysteme",
+      "Osselyr-System (7,8 Lj), Seyvar-System (13,7 Lj)"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Aelyra im Orvaya-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=orvaya-stern",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Aelyra I",
+      "href": "inhalte/himmelskoerper/planeten/details/gluhender-heier-jupiter-am-hellen-stern/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Aelyra II",
+      "href": "inhalte/himmelskoerper/planeten/details/geschichteter-gasriese-mit-blauen-wolken/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Orvaya",
+      "href": "inhalte/himmelskoerper/planeten/details/orvaya/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Aelyra IV",
+      "href": "inhalte/himmelskoerper/planeten/details/dunkler-gasriese-mit-roten-sturmen/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Aelyra V",
+      "href": "inhalte/himmelskoerper/planeten/details/kobaltblauer-super-neptun-im-sternenmeer/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Nebelkomet",
+      "href": "inhalte/himmelskoerper/kometen/details/komet-im-sonnengegenlicht/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Waldfeen",
+      "titel": "Orvaya",
+      "href": "inhalte/himmelskoerper/planeten/details/orvaya/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Waldfeen",
+      "href": "inhalte/spezies/Biologische Spezies/WaldFeen/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Orvaya-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=orvaya-stern"
+    },
+    {
+      "titel": "Speziesdossier Waldfeen",
+      "href": "inhalte/spezies/Biologische Spezies/WaldFeen/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#0d0b09",
+      "tiefe": "#1c1914",
+      "akzent": "#ffeed1",
+      "sand": "#ffe5b3",
+      "moos": "#d9eca7",
+      "ozean": "#adcfc6",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#736753"
+    },
+    "schichten": [
+      [
+        "Strahlung",
+        "Leuchtkraft"
+      ],
+      [
+        "Hülle",
+        "Spektralklasse"
+      ],
+      [
+        "Kern",
+        "Fusion"
+      ],
+      [
+        "Zeit",
+        "Lebenszyklus"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Spektralklasse": {
+      "gruppe": "Wissenschaft",
+      "icon": "✦",
+      "intro": "Spektralklasse von Aelyra.",
+      "abschnitte": [
+        {
+          "titel": "Einordnung",
+          "daten": [
+            [
+              "Typ",
+              "Gelber Zwerg (G3 V)"
+            ],
+            [
+              "Oberflächentemperatur",
+              "ca. 5.700 K"
+            ],
+            [
+              "Farbe",
+              "gelb"
+            ]
+          ]
+        }
+      ]
+    },
+    "Fusion": {
+      "gruppe": "Wissenschaft",
+      "icon": "☀",
+      "intro": "Fusion von Aelyra.",
+      "abschnitte": [
+        {
+          "titel": "Energiequelle",
+          "text": [
+            "Im Kern von Aelyra verschmilzt Wasserstoff zu Helium."
+          ]
+        }
+      ]
+    },
+    "Leuchtkraft": {
+      "gruppe": "Wissenschaft",
+      "icon": "☀",
+      "intro": "Leuchtkraft von Aelyra.",
+      "abschnitte": [
+        {
+          "titel": "Strahlung",
+          "daten": [
+            [
+              "Leuchtkraft",
+              "0,92 Sonnenleuchtkräfte"
+            ],
+            [
+              "Habitable Zone",
+              "0,91–1,6 AE"
+            ]
+          ]
+        }
+      ]
+    },
+    "Lebenszyklus": {
+      "gruppe": "Wissenschaft",
+      "icon": "⧗",
+      "intro": "Lebenszyklus von Aelyra.",
+      "abschnitte": [
+        {
+          "titel": "Lebensdauer",
+          "text": [
+            "Ein Stern mit 0,98 Sonnenmassen bleibt rund 11 Milliarden Jahre auf der Hauptreihe; Aelyra ist etwa 5,1 Milliarden Jahre alt."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Aelyra auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Aelyra",
+          "text": [
+            "Aelyra ist ein einzelner, sonnenähnlicher Hauptreihenstern der Spektralklasse G3 V mit 98 % der Sonnenmasse und 92 % ihrer Leuchtkraft – Zentralstern von Orvaya, der Heimat der Waldfeen.",
+            "Aelyra ist der Zentralstern des Orvaya-Systems."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Gelber Zwerg (G3 V)"
+            ],
+            [
+              "Sternsystem",
+              "Orvaya-System"
+            ],
+            [
+              "Masse",
+              "0,98 Sonnenmassen"
+            ],
+            [
+              "Radius",
+              "0,97 Sonnenradien"
+            ],
+            [
+              "Leuchtkraft",
+              "0,92 Sonnenleuchtkräfte"
+            ],
+            [
+              "Oberflächentemperatur",
+              "ca. 5.700 K"
+            ],
+            [
+              "Alter",
+              "ca. 5,1 Mrd. Jahre"
+            ],
+            [
+              "Monde",
+              "6 (Aelyra I, Aelyra II, Orvaya, Aelyra IV, Aelyra V, Nebelkomet)"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Orvaya",
+          "text": [
+            "Das Orvaya-System ist die Heimat der Waldfeen: Ihr Planet Orvaya umkreist Aelyra."
+          ],
+          "verweise": [
+            [
+              "Orvaya",
+              "inhalte/himmelskoerper/planeten/details/orvaya/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Waldfeen",
+              "inhalte/spezies/Biologische Spezies/WaldFeen/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Aelyra im Raum.",
+      "abschnitte": [
+        {
+          "titel": "Lage im Raum",
+          "daten": [
+            [
+              "Entfernung zur Sonne",
+              "19 Lichtjahre"
+            ],
+            [
+              "Nächste Nachbarsysteme",
+              "Osselyr-System (7,8 Lj), Seyvar-System (13,7 Lj), Narev-System (14,3 Lj)"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Aelyra · Stern",
+              "Gelber Zwerg (G3 V)"
+            ],
+            [
+              "Aelyra I · 0,41 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Aelyra II · 0,68 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Orvaya · 1,01 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Aelyra IV · 5,3 AE",
+              "Gasriese"
+            ],
+            [
+              "Aelyra V · 12,5 AE",
+              "Eisriese"
+            ],
+            [
+              "Laubgürtel · 2,2–3 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 34–50 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Aelyra I",
+              "inhalte/himmelskoerper/planeten/details/gluhender-heier-jupiter-am-hellen-stern/hauptseite/index.html"
+            ],
+            [
+              "Aelyra II",
+              "inhalte/himmelskoerper/planeten/details/geschichteter-gasriese-mit-blauen-wolken/hauptseite/index.html"
+            ],
+            [
+              "Orvaya",
+              "inhalte/himmelskoerper/planeten/details/orvaya/hauptseite/index.html"
+            ],
+            [
+              "Aelyra IV",
+              "inhalte/himmelskoerper/planeten/details/dunkler-gasriese-mit-roten-sturmen/hauptseite/index.html"
+            ],
+            [
+              "Aelyra V",
+              "inhalte/himmelskoerper/planeten/details/kobaltblauer-super-neptun-im-sternenmeer/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Aelyra.",
+      "abschnitte": [
+        {
+          "titel": "Physik",
+          "daten": [
+            [
+              "Masse",
+              "0,98 Sonnenmassen"
+            ],
+            [
+              "Radius",
+              "0,97 Sonnenradien"
+            ],
+            [
+              "Leuchtkraft",
+              "0,92 Sonnenleuchtkräfte"
+            ],
+            [
+              "Oberflächentemperatur",
+              "ca. 5.700 K"
+            ],
+            [
+              "Alter",
+              "ca. 5,1 Mrd. Jahre"
+            ],
+            [
+              "Monde",
+              "6 (Aelyra I, Aelyra II, Orvaya, Aelyra IV, Aelyra V, Nebelkomet)"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Aelyra.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Aelyra entstand zusammen mit dem Orvaya-System vor rund 5,1 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Umgebung": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Umgebung von Aelyra.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Aelyra · Stern",
+              "Gelber Zwerg (G3 V)"
+            ],
+            [
+              "Aelyra I · 0,41 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Aelyra II · 0,68 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Orvaya · 1,01 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Aelyra IV · 5,3 AE",
+              "Gasriese"
+            ],
+            [
+              "Aelyra V · 12,5 AE",
+              "Eisriese"
+            ],
+            [
+              "Laubgürtel · 2,2–3 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 34–50 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Aelyra I",
+              "inhalte/himmelskoerper/planeten/details/gluhender-heier-jupiter-am-hellen-stern/hauptseite/index.html"
+            ],
+            [
+              "Aelyra II",
+              "inhalte/himmelskoerper/planeten/details/geschichteter-gasriese-mit-blauen-wolken/hauptseite/index.html"
+            ],
+            [
+              "Orvaya",
+              "inhalte/himmelskoerper/planeten/details/orvaya/hauptseite/index.html"
+            ],
+            [
+              "Aelyra IV",
+              "inhalte/himmelskoerper/planeten/details/dunkler-gasriese-mit-roten-sturmen/hauptseite/index.html"
+            ],
+            [
+              "Aelyra V",
+              "inhalte/himmelskoerper/planeten/details/kobaltblauer-super-neptun-im-sternenmeer/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Nachbarsysteme",
+          "liste": [
+            "Osselyr-System – 7,8 Lichtjahre",
+            "Seyvar-System – 13,7 Lichtjahre",
+            "Narev-System – 14,3 Lichtjahre",
+            "Velhar-System – 14,3 Lichtjahre",
+            "Kharuun-System – 15,4 Lichtjahre"
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Aelyra.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Wie stark schwankt die magnetische Aktivität?",
+            "Wie hat sich die Leuchtkraft seit der Entstehung verändert?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Aelyra ist mit allen Bahndaten im Orvaya-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=orvaya-stern"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Aelyra.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "6 Monde: Aelyra I, Aelyra II, Orvaya, Aelyra IV, Aelyra V, Nebelkomet"
+          ]
+        },
+        {
+          "titel": "Monde",
+          "karten": [
+            {
+              "titel": "Aelyra I",
+              "text": "6.600 km Durchmesser, Umlauf in 96,9 Tage. Aelyra I ist ein kleiner, sonnennaher Gesteinsplanet ohne Atmosphäre."
+            },
+            {
+              "titel": "Aelyra II",
+              "text": "12.200 km Durchmesser, Umlauf in 206,9 Tage. Aelyra II ist eine heiße Wolkenwelt mit dichter Atmosphäre – am Himmel Orvayas der hellste Wandelstern."
+            },
+            {
+              "titel": "Orvaya",
+              "text": "10.194 km Durchmesser, Umlauf in 374,5 Tage. Orvaya ist die Heimatwelt der Waldfeen: ein herbstlich geprägter Waldplanet mit drei Kontinenten, vielen Seen und Flüssen, Nebelwäldern und einer sauerstoffreichen Atmosphäre – aber ohne Ozeane."
+            },
+            {
+              "titel": "Aelyra IV",
+              "text": "132.000 km Durchmesser, Umlauf in 12,3 Jahre. Aelyra IV ist ein großer, bernsteinfarbener Gasriese, der das innere System vor vielen Kometen abschirmt."
+            },
+            {
+              "titel": "Aelyra V",
+              "text": "49.000 km Durchmesser, Umlauf in 44,6 Jahre. Aelyra V ist ein ferner, grünblauer Eisriese."
+            },
+            {
+              "titel": "Nebelkomet",
+              "text": "10 km Durchmesser, Umlauf in 77,1 Jahre. Ein heller Komet mit langem, schleierartigem Schweif, der rund alle 76 Jahre am Himmel Orvayas erscheint."
+            }
+          ],
+          "verweise": [
+            [
+              "Aelyra I",
+              "inhalte/himmelskoerper/planeten/details/gluhender-heier-jupiter-am-hellen-stern/hauptseite/index.html"
+            ],
+            [
+              "Aelyra II",
+              "inhalte/himmelskoerper/planeten/details/geschichteter-gasriese-mit-blauen-wolken/hauptseite/index.html"
+            ],
+            [
+              "Orvaya",
+              "inhalte/himmelskoerper/planeten/details/orvaya/hauptseite/index.html"
+            ],
+            [
+              "Aelyra IV",
+              "inhalte/himmelskoerper/planeten/details/dunkler-gasriese-mit-roten-sturmen/hauptseite/index.html"
+            ],
+            [
+              "Aelyra V",
+              "inhalte/himmelskoerper/planeten/details/kobaltblauer-super-neptun-im-sternenmeer/hauptseite/index.html"
+            ],
+            [
+              "Nebelkomet",
+              "inhalte/himmelskoerper/kometen/details/komet-im-sonnengegenlicht/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Aelyra.",
+      "abschnitte": [
+        {
+          "titel": "Aelyra – Archivbild",
+          "bild": true,
+          "bildtext": "Aelyra"
+        }
+      ]
+    }
+  }
+}

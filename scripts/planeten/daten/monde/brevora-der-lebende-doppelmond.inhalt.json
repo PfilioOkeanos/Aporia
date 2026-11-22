@@ -1,0 +1,456 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Brevora",
+  "genitiv": "von Brevora",
+  "dossierName": "Brevora-Dossier",
+  "klasse": "Mond",
+  "intro": "Der lebende Doppelmond Brevora aus dem Aporia-Archiv wird hier durch einen Körper auf der Bahn um Iovar II dargestellt. Brevora umkreist Iovar II in 13,8 Tage.",
+  "globusDaten": {
+    "planet": "brevora-der-lebende-doppelmond",
+    "klasse": "Gestein",
+    "radius": 1100000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=iovar-stern&objekt=iovar-brevora",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-D293AC1767"
+    ],
+    [
+      "Typ",
+      "Mond"
+    ],
+    [
+      "Sternsystem",
+      "Iovar-System"
+    ],
+    [
+      "Zentralkörper",
+      "Iovar II"
+    ],
+    [
+      "Große Halbachse",
+      "364.874 km"
+    ],
+    [
+      "Umlaufzeit",
+      "13,8 Tage"
+    ],
+    [
+      "Durchmesser",
+      "2.200 km"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -141 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Iovar-System"
+    ],
+    [
+      "Zentralstern",
+      "Iovar",
+      "inhalte/himmelskoerper/sterne/details/roter-zwerg-kosmische-enzyklopadie/hauptseite/index.html"
+    ],
+    [
+      "Umläuft",
+      "Iovar II",
+      "inhalte/himmelskoerper/planeten/details/ammoniak-ozeanplanet-mit-leuchtenden-rissen/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "364.874 km"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Brevora im Iovar-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=iovar-stern&objekt=iovar-brevora",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Iovar",
+      "href": "inhalte/himmelskoerper/sterne/details/roter-zwerg-kosmische-enzyklopadie/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◍",
+      "art": "Mutterplanet",
+      "titel": "Iovar II",
+      "href": "inhalte/himmelskoerper/planeten/details/ammoniak-ozeanplanet-mit-leuchtenden-rissen/hauptseite/index.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Iovar-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=iovar-stern&objekt=iovar-brevora"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#090606",
+      "tiefe": "#130d0d",
+      "akzent": "#caa4a7",
+      "sand": "#cea598",
+      "moos": "#a89683",
+      "ozean": "#868193",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#4e3436"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Astronomie"
+      ],
+      [
+        "Planet",
+        "Mutterplanet"
+      ],
+      [
+        "Kräfte",
+        "Gezeiten"
+      ],
+      [
+        "Tiefe",
+        "Geologie"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Mutterplanet": {
+      "gruppe": "Wissenschaft",
+      "icon": "◐",
+      "intro": "Mutterplanet von Brevora.",
+      "abschnitte": [
+        {
+          "titel": "Iovar II",
+          "text": [
+            "Iovar II ist in dieser Karte die Ammoniak-Ozeanwelt mit leuchtenden Rissen aus dem Aporia-Archiv."
+          ],
+          "daten": [
+            [
+              "Typ",
+              "Ozeanplanet"
+            ],
+            [
+              "Durchmesser",
+              "19.600 km"
+            ],
+            [
+              "Abstand des Mondes",
+              "364.874 km (37,2 Planetenradien)"
+            ]
+          ],
+          "verweise": [
+            [
+              "Iovar II",
+              "inhalte/himmelskoerper/planeten/details/ammoniak-ozeanplanet-mit-leuchtenden-rissen/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Gezeiten": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gezeiten von Brevora.",
+      "abschnitte": [
+        {
+          "titel": "Gezeitenkräfte",
+          "text": [
+            "Auf seiner Bahn in 364.874 km Abstand wirken starke Gezeitenkräfte von Iovar II auf Brevora."
+          ]
+        }
+      ]
+    },
+    "Gebundene Rotation": {
+      "gruppe": "Wissenschaft",
+      "icon": "↻",
+      "intro": "Gebundene Rotation von Brevora.",
+      "abschnitte": [
+        {
+          "titel": "Rotation",
+          "text": [
+            "Brevora wendet Iovar II vermutlich stets dieselbe Seite zu: Ein Tag dauert so lange wie ein Umlauf – 13,8 Tage."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Brevora auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Brevora",
+          "text": [
+            "Der lebende Doppelmond Brevora aus dem Aporia-Archiv wird hier durch einen Körper auf der Bahn um Iovar II dargestellt.",
+            "Brevora umkreist Iovar II in 13,8 Tage."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Mond"
+            ],
+            [
+              "Sternsystem",
+              "Iovar-System"
+            ],
+            [
+              "Zentralkörper",
+              "Iovar II"
+            ],
+            [
+              "Große Halbachse",
+              "364.874 km"
+            ],
+            [
+              "Umlaufzeit",
+              "13,8 Tage"
+            ],
+            [
+              "Durchmesser",
+              "2.200 km"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -141 °C"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Brevora im Iovar-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Iovar II"
+            ],
+            [
+              "Große Halbachse",
+              "364.874 km"
+            ],
+            [
+              "Exzentrizität",
+              "0"
+            ],
+            [
+              "Bahnneigung",
+              "0°"
+            ],
+            [
+              "Umlaufzeit",
+              "13,8 Tage"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Iovar · Stern",
+              "Roter Zwerg"
+            ],
+            [
+              "Iovar I · 0,22 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Iovar II · 0,41 AE",
+              "Ozeanplanet"
+            ],
+            [
+              "Iovar III · 0,84 AE",
+              "Gasriese"
+            ],
+            [
+              "Iovar IV · 1,17 AE",
+              "Eisplanet"
+            ],
+            [
+              "Iovars Zwergwelt · 1,4 AE",
+              "Zwergplanet"
+            ],
+            [
+              "Rostroter Asteroidengürtel · 0,5–0,7 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Kometengebiet Iovar · 1,5–1,6 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Iovar",
+              "inhalte/himmelskoerper/sterne/details/roter-zwerg-kosmische-enzyklopadie/hauptseite/index.html"
+            ],
+            [
+              "Iovar I",
+              "inhalte/himmelskoerper/planeten/details/ursprunglicher-gesteinsplanet-mit-einschlagkratern/hauptseite/index.html"
+            ],
+            [
+              "Iovar II",
+              "inhalte/himmelskoerper/planeten/details/ammoniak-ozeanplanet-mit-leuchtenden-rissen/hauptseite/index.html"
+            ],
+            [
+              "Iovar III",
+              "inhalte/himmelskoerper/planeten/details/saturnahnlicher-gasriese-mit-leuchtenden-eisringen/hauptseite/index.html"
+            ],
+            [
+              "Iovar IV",
+              "inhalte/himmelskoerper/planeten/details/blauweie-eiswelt-im-all/hauptseite/index.html"
+            ],
+            [
+              "Iovars Zwergwelt",
+              "inhalte/himmelskoerper/zwergplaneten/details/blaugrauer-zwergplanet-mit-eisring/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Brevora.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "1.100 km"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Brevora.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Brevora ist geologisch weitgehend erstarrt; Einschläge haben seine Oberfläche geformt."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Brevora.",
+      "abschnitte": [
+        {
+          "titel": "Gashülle",
+          "text": [
+            "Brevora besitzt keine nennenswerte Atmosphäre."
+          ]
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Brevora.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 0,407 AE Abstand zu Iovar liegt die Gleichgewichtstemperatur von Brevora bei rund -141 °C – eisig kalt."
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Brevora.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Brevora entstand zusammen mit dem Iovar-System."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Brevora.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Ist der Mond eingefangen oder mit seinem Planeten entstanden?",
+            "Welche Spuren tragen seine ältesten Krater?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Brevora ist mit allen Bahndaten im Iovar-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=iovar-stern&objekt=iovar-brevora"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Brevora.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Der lebende Doppelmond Brevora aus dem Aporia-Archiv wird hier durch einen Körper auf der Bahn um Iovar II dargestellt."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Brevora.",
+      "abschnitte": [
+        {
+          "titel": "Brevora – Archivbild",
+          "bild": true,
+          "bildtext": "Brevora"
+        }
+      ]
+    }
+  }
+}

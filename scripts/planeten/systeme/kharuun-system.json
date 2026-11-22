@@ -1,0 +1,284 @@
+{
+  "systemName": "Kharuun-System",
+  "praefix": "kharuun-",
+  "lage": {
+    "entfernungLj": 9.8,
+    "richtung": [
+      -0.62,
+      0.05,
+      0.783
+    ]
+  },
+  "einzelstern": true,
+  "stern": {
+    "id": "kharuun-stern",
+    "name": "Ushara",
+    "typ": "Orangefarbener Zwerg (K3 V)",
+    "masseSonne": 0.78,
+    "radiusSonne": 0.76,
+    "leuchtkraftSonne": 0.3,
+    "temperaturK": 4800,
+    "alterMrd": 5.1,
+    "farbe": [
+      1,
+      0.58,
+      0.26
+    ],
+    "emissionsfarbe": [
+      1,
+      0.62,
+      0.32
+    ],
+    "emission": 1.1,
+    "bild": {
+      "art": "sterne",
+      "slug": "orangefarbener-k-stern-im-all"
+    },
+    "beschreibung": "Ushara ist der orangefarbene Hauptreihenstern (K3 V) des Kharuun-Systems, Heimatstern der Pyronoiden. 0,78 Sonnenmassen, 0,76 Sonnenradien, 30 % der Sonnenleuchtkraft. Ein Einzelstern ohne stellaren Begleiter."
+  },
+  "koerper": [
+    {
+      "id": "kharuun-ushara-i",
+      "name": "Ushara I",
+      "typ": "Gesteinsplanet",
+      "um": "kharuun-stern",
+      "aAE": 0.016,
+      "e": 0.01,
+      "i": 1.5,
+      "knoten": 40,
+      "peri": 0,
+      "phase": 210,
+      "radiusKm": 3900,
+      "masseErde": 0.3,
+      "albedo": 0.1,
+      "farbe": [
+        0.95,
+        0.42,
+        0.18
+      ],
+      "bild": {
+        "art": "planeten",
+        "slug": "gluhender-exoplanet-mit-mineraldampfschweif"
+      },
+      "beschreibung": "Ushara I ist ein gebundener Glutplanet dicht am Stern. Seine Tagseite verdampft Gestein; ein Schweif aus Mineraldampf zieht hinter ihm her – die auffälligste Anomalie des Systems."
+    },
+    {
+      "id": "kharuun-planet",
+      "name": "Kharuun",
+      "typ": "Gesteinsplanet",
+      "um": "kharuun-stern",
+      "aAE": 0.36,
+      "e": 0.07,
+      "i": 0,
+      "knoten": 120,
+      "peri": 35,
+      "phase": 80,
+      "radiusKm": 7494,
+      "masseErde": 1.52,
+      "albedo": 0.3,
+      "zielTemperaturC": 190,
+      "farbe": [
+        0.78,
+        0.33,
+        0.16
+      ],
+      "bild": {
+        "art": "planeten",
+        "slug": "dammernder-vulkanplanet-mit-gluhenden-lavaseen"
+      },
+      "beschreibung": "Kharuun ist die vulkanisch hochaktive Heimatwelt der Pyronoiden. Er liegt innerhalb der inneren Grenze der habitablen Zone; eine dichte Kohlendioxid-Schwefel-Atmosphäre und starke innere Wärme machen ihn zur Glutwelt."
+    },
+    {
+      "id": "kharuun-thurak",
+      "name": "Thurak",
+      "typ": "Mond",
+      "um": "kharuun-planet",
+      "periodeTage": 3.6,
+      "e": 0.004,
+      "i": 0.4,
+      "knoten": 15,
+      "peri": 0,
+      "phase": 30,
+      "radiusKm": 950,
+      "masseErde": 0.012,
+      "farbe": [
+        0.83,
+        0.55,
+        0.28
+      ],
+      "bild": {
+        "art": "monde",
+        "slug": "stumpfer-vulkanmond-im-schwarzen-all"
+      },
+      "beschreibung": "Thurak ist der innere Mond Kharuuns. Er erzeugt die stärksten Gezeiten, hebt die Kruste um bis zu 30 Meter und ist selbst durch Gezeitenreibung vulkanisch aktiv."
+    },
+    {
+      "id": "kharuun-oskil",
+      "name": "Oskil",
+      "typ": "Mond",
+      "um": "kharuun-planet",
+      "periodeTage": 10.8,
+      "e": 0.012,
+      "i": 1.1,
+      "knoten": 200,
+      "peri": 0,
+      "phase": 140,
+      "radiusKm": 320,
+      "masseErde": 0.0006,
+      "farbe": [
+        0.62,
+        0.36,
+        0.28
+      ],
+      "bild": {
+        "art": "monde",
+        "slug": "rostroter-kratermond-im-all"
+      },
+      "beschreibung": "Oskil ist der äußere, rostrote Kratermond Kharuuns. Seine 1:3-Bahnresonanz mit Thurak hält dessen Bahn leicht elliptisch und damit die Gezeitenheizung dauerhaft in Gang."
+    },
+    {
+      "id": "kharuun-ushara-iii",
+      "name": "Ushara III",
+      "typ": "Gasriese",
+      "um": "kharuun-stern",
+      "aAE": 0.5715,
+      "e": 0.04,
+      "i": 1.1,
+      "knoten": 300,
+      "peri": 110,
+      "phase": 20,
+      "radiusKm": 69000,
+      "masseErde": 197,
+      "albedo": 0.35,
+      "farbe": [
+        0.86,
+        0.62,
+        0.42
+      ],
+      "bild": {
+        "art": "planeten",
+        "slug": "warmer-gestreifter-gasriese-im-all"
+      },
+      "beschreibung": "Ushara III ist ein warmer Gasriese mit 0,62 Jupitermassen. Er umläuft den Stern im Verhältnis 2:1 zu Kharuun; diese Bahnresonanz hält die Exzentrizität Kharuuns aufrecht und speist so dessen Gezeitenheizung."
+    },
+    {
+      "id": "kharuun-trojaner",
+      "name": "Trojaner von Ushara III",
+      "typ": "Asteroid",
+      "um": "kharuun-stern",
+      "aAE": 0.5715,
+      "e": 0.04,
+      "i": 4,
+      "knoten": 300,
+      "peri": 110,
+      "phase": 80,
+      "radiusKm": 60,
+      "masseErde": 0,
+      "farbe": [
+        0.55,
+        0.45,
+        0.38
+      ],
+      "bild": {
+        "art": "asteroiden",
+        "slug": "geteilter-asteroid-mit-lichtkante"
+      },
+      "beschreibung": "Am vorauseilenden Lagrange-Punkt L4 von Ushara III sammelt sich eine Gruppe von Trojaner-Asteroiden. Der größte Körper ist ein doppelköpfiger Kontaktasteroid von rund 120 km Länge."
+    },
+    {
+      "id": "kharuun-schlackenguertel",
+      "name": "Schlackengürtel",
+      "typ": "Asteroidengürtel",
+      "ringUm": "kharuun-stern",
+      "ringeAE": [
+        1.3,
+        1.5,
+        1.7,
+        1.9,
+        2.1
+      ],
+      "farbe": [
+        0.74,
+        0.42,
+        0.26
+      ],
+      "bild": {
+        "art": "sternensysteme",
+        "slug": "asteroidengurtel-um-einen-bernsteinfarbenen-stern"
+      },
+      "beschreibung": "Der Schlackengürtel zwischen 1,3 und 2,1 AE besteht aus dunklen, metall- und schwefelreichen Gesteinstrümmern. Pyronoidische Bergbauschiffe gewinnen hier hitzebeständige Erze.",
+      "anzahl": 320,
+      "groesseKm": 480,
+      "mindestPx": 7
+    },
+    {
+      "id": "kharuun-ushara-iv",
+      "name": "Ushara IV",
+      "typ": "Eisriese",
+      "um": "kharuun-stern",
+      "aAE": 4.8,
+      "e": 0.05,
+      "i": 2.3,
+      "knoten": 75,
+      "peri": 260,
+      "phase": 300,
+      "radiusKm": 24500,
+      "masseErde": 14,
+      "albedo": 0.3,
+      "farbe": [
+        0.4,
+        0.58,
+        0.82
+      ],
+      "bild": {
+        "art": "planeten",
+        "slug": "kalter-neptun-unter-fernem-sternlicht"
+      },
+      "beschreibung": "Ushara IV ist ein kalter Eisriese am Rand des Planetensystems. Für Pyronoiden lebensfeindlich kalt, wird er nur von unbemannten Sonden erforscht."
+    },
+    {
+      "id": "kharuun-feuerbote",
+      "name": "Feuerbote",
+      "typ": "Komet",
+      "um": "kharuun-stern",
+      "aAE": 8,
+      "e": 0.91,
+      "i": 18,
+      "knoten": 160,
+      "peri": 45,
+      "phase": 175,
+      "radiusKm": 5,
+      "masseErde": 0,
+      "farbe": [
+        0.8,
+        0.5,
+        0.42
+      ],
+      "bild": {
+        "art": "kometen",
+        "slug": "einsamer-komet-mit-rostrot-blauem-schweif"
+      },
+      "beschreibung": "Der Feuerbote ist ein periodischer Komet (rund 26 Jahre), der sich Ushara bis auf 0,72 AE nähert. Sein rostrot-blauer Schweif ist dann vom Kharuun-Orbit aus deutlich sichtbar; viele Traditionen deuten ihn als Vorzeichen."
+    },
+    {
+      "id": "kharuun-kometengebiet",
+      "name": "Äußeres Kometengebiet",
+      "typ": "Kometengebiet",
+      "ringUm": "kharuun-stern",
+      "ringeAE": [
+        30,
+        36,
+        42
+      ],
+      "farbe": [
+        0.42,
+        0.62,
+        0.86
+      ],
+      "beschreibung": "Ein ferner Gürtel aus Eiskörpern zwischen 30 und 42 AE – Herkunftsgebiet langperiodischer Kometen wie des Feuerboten.",
+      "anzahl": 260,
+      "groesseKm": 160,
+      "mindestPx": 5
+    }
+  ]
+}

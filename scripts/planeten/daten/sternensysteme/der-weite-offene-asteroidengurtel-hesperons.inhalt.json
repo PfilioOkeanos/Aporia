@@ -1,0 +1,499 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Laubgürtel",
+  "genitiv": "von Laubgürtel",
+  "dossierName": "Laubgürtel-Dossier",
+  "klasse": "Asteroidengürtel",
+  "intro": "Der Laubgürtel zwischen 2,2 und 2,95 AE besteht aus rötlich-braunen Gesteinsbrocken – der Name stammt aus dem Archiv und spielt auf ihre Herbstfarben an. Laubgürtel umgibt Aelyra im Orvaya-System.",
+  "globusDaten": {
+    "planet": "der-weite-offene-asteroidengurtel-hesperons",
+    "klasse": "Gestein",
+    "radius": 1000000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=orvaya-stern&objekt=orvaya-laubgurtel",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-06E1EE3E89"
+    ],
+    [
+      "Typ",
+      "Asteroidengürtel"
+    ],
+    [
+      "Sternsystem",
+      "Orvaya-System"
+    ],
+    [
+      "Zentralkörper",
+      "Aelyra"
+    ],
+    [
+      "Ausdehnung",
+      "2,2–2,95 AE"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Orvaya-System"
+    ],
+    [
+      "Zentralstern",
+      "Aelyra",
+      "inhalte/himmelskoerper/sterne/details/goldene-sonne-mit-feiner-granulation/hauptseite/index.html"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Laubgürtel im Orvaya-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=orvaya-stern&objekt=orvaya-laubgurtel",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Aelyra",
+      "href": "inhalte/himmelskoerper/sterne/details/goldene-sonne-mit-feiner-granulation/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Waldfeen",
+      "titel": "Orvaya",
+      "href": "inhalte/himmelskoerper/planeten/details/orvaya/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Waldfeen",
+      "href": "inhalte/spezies/Biologische Spezies/WaldFeen/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Orvaya-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=orvaya-stern&objekt=orvaya-laubgurtel"
+    },
+    {
+      "titel": "Speziesdossier Waldfeen",
+      "href": "inhalte/spezies/Biologische Spezies/WaldFeen/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#080605",
+      "tiefe": "#110e0b",
+      "akzent": "#bdac98",
+      "sand": "#c2ac8f",
+      "moos": "#9c9f76",
+      "ozean": "#7c8a81",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#45392c"
+    },
+    "schichten": [
+      [
+        "Lage",
+        "Bahnen"
+      ],
+      [
+        "System",
+        "Planeten"
+      ],
+      [
+        "Dynamik",
+        "Stabilität"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Zentralsterne": {
+      "gruppe": "Wissenschaft",
+      "icon": "✦",
+      "intro": "Zentralsterne von Laubgürtel.",
+      "abschnitte": [
+        {
+          "titel": "Aelyra",
+          "text": [
+            "Aelyra ist ein einzelner, sonnenähnlicher Hauptreihenstern der Spektralklasse G3 V mit 98 % der Sonnenmasse und 92 % ihrer Leuchtkraft – Zentralstern von Orvaya, der Heimat der Waldfeen."
+          ],
+          "verweise": [
+            [
+              "Aelyra",
+              "inhalte/himmelskoerper/sterne/details/goldene-sonne-mit-feiner-granulation/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Planeten": {
+      "gruppe": "Wissenschaft",
+      "icon": "◍",
+      "intro": "Planeten von Laubgürtel.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Aelyra · Stern",
+              "Gelber Zwerg (G3 V)"
+            ],
+            [
+              "Aelyra I · 0,41 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Aelyra II · 0,68 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Orvaya · 1,01 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Aelyra IV · 5,3 AE",
+              "Gasriese"
+            ],
+            [
+              "Aelyra V · 12,5 AE",
+              "Eisriese"
+            ],
+            [
+              "Laubgürtel · 2,2–3 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 34–50 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Aelyra",
+              "inhalte/himmelskoerper/sterne/details/goldene-sonne-mit-feiner-granulation/hauptseite/index.html"
+            ],
+            [
+              "Aelyra I",
+              "inhalte/himmelskoerper/planeten/details/gluhender-heier-jupiter-am-hellen-stern/hauptseite/index.html"
+            ],
+            [
+              "Aelyra II",
+              "inhalte/himmelskoerper/planeten/details/geschichteter-gasriese-mit-blauen-wolken/hauptseite/index.html"
+            ],
+            [
+              "Orvaya",
+              "inhalte/himmelskoerper/planeten/details/orvaya/hauptseite/index.html"
+            ],
+            [
+              "Aelyra IV",
+              "inhalte/himmelskoerper/planeten/details/dunkler-gasriese-mit-roten-sturmen/hauptseite/index.html"
+            ],
+            [
+              "Aelyra V",
+              "inhalte/himmelskoerper/planeten/details/kobaltblauer-super-neptun-im-sternenmeer/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Bahnen": {
+      "gruppe": "Wissenschaft",
+      "icon": "◌",
+      "intro": "Bahnen von Laubgürtel.",
+      "abschnitte": [
+        {
+          "titel": "Lage",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Aelyra"
+            ],
+            [
+              "Ausdehnung",
+              "2,2–2,95 AE"
+            ]
+          ]
+        }
+      ]
+    },
+    "Stabilität": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚖",
+      "intro": "Stabilität von Laubgürtel.",
+      "abschnitte": [
+        {
+          "titel": "Stabilität",
+          "text": [
+            "Die Brocken von Laubgürtel bewegen sich auf stabilen Bahnen zwischen den Planeten; Resonanzen mit den großen Planeten formen die Ränder des Gebiets."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Laubgürtel auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Laubgürtel",
+          "text": [
+            "Der Laubgürtel zwischen 2,2 und 2,95 AE besteht aus rötlich-braunen Gesteinsbrocken – der Name stammt aus dem Archiv und spielt auf ihre Herbstfarben an.",
+            "Laubgürtel umgibt Aelyra im Orvaya-System."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Asteroidengürtel"
+            ],
+            [
+              "Sternsystem",
+              "Orvaya-System"
+            ],
+            [
+              "Zentralkörper",
+              "Aelyra"
+            ],
+            [
+              "Ausdehnung",
+              "2,2–2,95 AE"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Orvaya",
+          "text": [
+            "Das Orvaya-System ist die Heimat der Waldfeen: Ihr Planet Orvaya umkreist Aelyra."
+          ],
+          "verweise": [
+            [
+              "Orvaya",
+              "inhalte/himmelskoerper/planeten/details/orvaya/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Waldfeen",
+              "inhalte/spezies/Biologische Spezies/WaldFeen/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Laubgürtel im Orvaya-System.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Aelyra · Stern",
+              "Gelber Zwerg (G3 V)"
+            ],
+            [
+              "Aelyra I · 0,41 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Aelyra II · 0,68 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Orvaya · 1,01 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Aelyra IV · 5,3 AE",
+              "Gasriese"
+            ],
+            [
+              "Aelyra V · 12,5 AE",
+              "Eisriese"
+            ],
+            [
+              "Laubgürtel · 2,2–3 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 34–50 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Aelyra",
+              "inhalte/himmelskoerper/sterne/details/goldene-sonne-mit-feiner-granulation/hauptseite/index.html"
+            ],
+            [
+              "Aelyra I",
+              "inhalte/himmelskoerper/planeten/details/gluhender-heier-jupiter-am-hellen-stern/hauptseite/index.html"
+            ],
+            [
+              "Aelyra II",
+              "inhalte/himmelskoerper/planeten/details/geschichteter-gasriese-mit-blauen-wolken/hauptseite/index.html"
+            ],
+            [
+              "Orvaya",
+              "inhalte/himmelskoerper/planeten/details/orvaya/hauptseite/index.html"
+            ],
+            [
+              "Aelyra IV",
+              "inhalte/himmelskoerper/planeten/details/dunkler-gasriese-mit-roten-sturmen/hauptseite/index.html"
+            ],
+            [
+              "Aelyra V",
+              "inhalte/himmelskoerper/planeten/details/kobaltblauer-super-neptun-im-sternenmeer/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Umgebung": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Umgebung von Laubgürtel.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Aelyra · Stern",
+              "Gelber Zwerg (G3 V)"
+            ],
+            [
+              "Aelyra I · 0,41 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Aelyra II · 0,68 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Orvaya · 1,01 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Aelyra IV · 5,3 AE",
+              "Gasriese"
+            ],
+            [
+              "Aelyra V · 12,5 AE",
+              "Eisriese"
+            ],
+            [
+              "Laubgürtel · 2,2–3 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 34–50 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Aelyra",
+              "inhalte/himmelskoerper/sterne/details/goldene-sonne-mit-feiner-granulation/hauptseite/index.html"
+            ],
+            [
+              "Aelyra I",
+              "inhalte/himmelskoerper/planeten/details/gluhender-heier-jupiter-am-hellen-stern/hauptseite/index.html"
+            ],
+            [
+              "Aelyra II",
+              "inhalte/himmelskoerper/planeten/details/geschichteter-gasriese-mit-blauen-wolken/hauptseite/index.html"
+            ],
+            [
+              "Orvaya",
+              "inhalte/himmelskoerper/planeten/details/orvaya/hauptseite/index.html"
+            ],
+            [
+              "Aelyra IV",
+              "inhalte/himmelskoerper/planeten/details/dunkler-gasriese-mit-roten-sturmen/hauptseite/index.html"
+            ],
+            [
+              "Aelyra V",
+              "inhalte/himmelskoerper/planeten/details/kobaltblauer-super-neptun-im-sternenmeer/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Laubgürtel.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Laubgürtel besteht aus Material, das sich bei der Entstehung des Orvaya-Systems nicht zu einem Planeten vereinte."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Laubgürtel.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Wie viel Masse enthält das Gebiet insgesamt?",
+            "Welche Resonanzen formen seine Ränder?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Laubgürtel ist mit allen Bahndaten im Orvaya-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=orvaya-stern&objekt=orvaya-laubgurtel"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Laubgürtel.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Der Laubgürtel zwischen 2,2 und 2,95 AE besteht aus rötlich-braunen Gesteinsbrocken – der Name stammt aus dem Archiv und spielt auf ihre Herbstfarben an."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Laubgürtel.",
+      "abschnitte": [
+        {
+          "titel": "Laubgürtel – Archivbild",
+          "bild": true,
+          "bildtext": "Laubgürtel"
+        }
+      ]
+    }
+  }
+}

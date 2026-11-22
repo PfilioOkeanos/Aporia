@@ -1,20 +1,2 @@
-@import url("../../../_gemeinsam/wissenslayout.css");
-body { margin: 0; background: #030d15; color: #e7f4fa; font: 1rem/1.55 Arial,sans-serif; }
-.species-detail-frame { display: flex; }
-main { flex: 1; min-width: 0; }
-a { color: #9be9f5; }
-.species-detail-hero {
-    min-height: 28rem; margin-top: 1rem; padding: clamp(1rem,3vw,2rem);
-    display: grid; 
-    align-items: end; gap: 1.5rem;
-    background: linear-gradient(90deg,#030d15f5,#030d1555 68%,#030d1599), var(--portrait) center / cover;
-    border: 1px solid #376575; border-radius: .6rem;
-}
-h1 { font-size: clamp(2rem,5vw,4.5rem); line-height: 1; overflow-wrap: anywhere; }
-h2 { color: #9be9f5; font-size: 1rem; letter-spacing: .08em; text-transform: uppercase; }
-dt { color: #9be9f5; }
-dd { margin: 0 0 .55rem; }
-.species-detail-panel { padding: 1rem; border: 1px solid #376575; border-radius: .6rem; background: #06141de8; }
-.species-detail-panel img { display: block; width: 100%; aspect-ratio: 16/9; object-fit: cover; border-radius: .35rem; }
-.species-detail-panel small { display: block; margin-top: .35rem; color: #b6d3df; }
-main section[id] { scroll-margin-top: 8rem; }
+/* Radikalen – Hauptseite · erzeugt vom Spezies-Baukasten (scripts/spezies)
+   Aufbau: inhalte/spezies/_gemeinsam/spezies-standard.css · Farben: ../radikalen-basis.css · eigene Anpassungen hier ergänzen. */

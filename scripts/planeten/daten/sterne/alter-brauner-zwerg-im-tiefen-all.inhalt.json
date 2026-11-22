@@ -1,0 +1,546 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Ashkor B",
+  "genitiv": "von Ashkor B",
+  "dossierName": "Ashkor B-Dossier",
+  "klasse": "Brauner Zwerg",
+  "intro": "Ashkor B ist ein Brauner Zwerg mit rund 40 Jupitermassen auf einer weiten, exzentrischen Bahn. Seine Schwerkraft stört die äußeren Gürtel und schleudert immer wieder Trümmer ins innere System. Ashkor B umkreist Ashkor in 85 AE Abstand und braucht für einen Umlauf 912,1 Jahre.",
+  "globusDaten": {
+    "planet": "alter-brauner-zwerg-im-tiefen-all",
+    "klasse": "Gestein",
+    "radius": 70000000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=ferrum-stern&objekt=ferrum-ashkor-b",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-68C7C631AC"
+    ],
+    [
+      "Typ",
+      "Brauner Zwerg"
+    ],
+    [
+      "Sternsystem",
+      "Ferrum-System"
+    ],
+    [
+      "Zentralkörper",
+      "Ashkor"
+    ],
+    [
+      "Große Halbachse",
+      "85 AE"
+    ],
+    [
+      "Umlaufzeit",
+      "912,1 Jahre"
+    ],
+    [
+      "Durchmesser",
+      "140.000 km"
+    ],
+    [
+      "Masse",
+      "12.700 Erdmassen"
+    ],
+    [
+      "Schwerkraft",
+      "105,2 g"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -255 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Ferrum-System"
+    ],
+    [
+      "Zentralstern",
+      "Ashkor",
+      "inhalte/himmelskoerper/sterne/details/kompakter-orangefarbener-red-clump-stern/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "85 AE"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Ashkor B im Ferrum-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=ferrum-stern&objekt=ferrum-ashkor-b",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Ashkor",
+      "href": "inhalte/himmelskoerper/sterne/details/kompakter-orangefarbener-red-clump-stern/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Syntheten",
+      "titel": "Ferrum Prime",
+      "href": "inhalte/himmelskoerper/planeten/details/rostiger-eisenplanet-mit-freiliegendem-metallkern/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Syntheten",
+      "href": "inhalte/spezies/Technologische Lebensformen/Syntheten/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Ferrum-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=ferrum-stern&objekt=ferrum-ashkor-b"
+    },
+    {
+      "titel": "Speziesdossier Syntheten",
+      "href": "inhalte/spezies/Technologische Lebensformen/Syntheten/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#080403",
+      "tiefe": "#110806",
+      "akzent": "#bd887a",
+      "sand": "#c28d7b",
+      "moos": "#9c755c",
+      "ozean": "#7c645c",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#452017"
+    }
+  },
+  "kapitel": {
+    "Spektralklasse": {
+      "gruppe": "Wissenschaft",
+      "icon": "✦",
+      "intro": "Spektralklasse von Ashkor B.",
+      "abschnitte": [
+        {
+          "titel": "Einordnung",
+          "daten": [
+            [
+              "Typ",
+              "Brauner Zwerg"
+            ],
+            [
+              "Oberflächentemperatur",
+              "ca. 4.400 K"
+            ],
+            [
+              "Farbe",
+              "orange"
+            ]
+          ]
+        }
+      ]
+    },
+    "Fusion": {
+      "gruppe": "Wissenschaft",
+      "icon": "☀",
+      "intro": "Fusion von Ashkor B.",
+      "abschnitte": [
+        {
+          "titel": "Energiequelle",
+          "text": [
+            "Im Kern von Ashkor B verschmilzt Wasserstoff zu Helium."
+          ]
+        }
+      ]
+    },
+    "Leuchtkraft": {
+      "gruppe": "Wissenschaft",
+      "icon": "☀",
+      "intro": "Leuchtkraft von Ashkor B.",
+      "abschnitte": [
+        {
+          "titel": "Strahlung",
+          "daten": [
+            [
+              "Leuchtkraft",
+              "0,16 Sonnenleuchtkräfte"
+            ],
+            [
+              "Habitable Zone",
+              "0,38–0,67 AE"
+            ]
+          ]
+        }
+      ]
+    },
+    "Lebenszyklus": {
+      "gruppe": "Wissenschaft",
+      "icon": "⧗",
+      "intro": "Lebenszyklus von Ashkor B.",
+      "abschnitte": [
+        {
+          "titel": "Lebensdauer",
+          "text": [
+            "Ein Stern mit 0,7 Sonnenmassen bleibt rund 24 Milliarden Jahre auf der Hauptreihe; Ashkor B ist etwa 6,8 Milliarden Jahre alt."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Ashkor B auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Ashkor B",
+          "text": [
+            "Ashkor B ist ein Brauner Zwerg mit rund 40 Jupitermassen auf einer weiten, exzentrischen Bahn. Seine Schwerkraft stört die äußeren Gürtel und schleudert immer wieder Trümmer ins innere System.",
+            "Ashkor B umkreist Ashkor in 85 AE Abstand und braucht für einen Umlauf 912,1 Jahre."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Brauner Zwerg"
+            ],
+            [
+              "Sternsystem",
+              "Ferrum-System"
+            ],
+            [
+              "Zentralkörper",
+              "Ashkor"
+            ],
+            [
+              "Große Halbachse",
+              "85 AE"
+            ],
+            [
+              "Umlaufzeit",
+              "912,1 Jahre"
+            ],
+            [
+              "Durchmesser",
+              "140.000 km"
+            ],
+            [
+              "Masse",
+              "12.700 Erdmassen"
+            ],
+            [
+              "Schwerkraft",
+              "105,2 g"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -255 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Ferrum Prime",
+          "text": [
+            "Das Ferrum-System ist die Heimat der Syntheten: Ihr Planet Ferrum Prime umkreist Ashkor."
+          ],
+          "verweise": [
+            [
+              "Ferrum Prime",
+              "inhalte/himmelskoerper/planeten/details/rostiger-eisenplanet-mit-freiliegendem-metallkern/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Syntheten",
+              "inhalte/spezies/Technologische Lebensformen/Syntheten/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Ashkor B im Ferrum-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Ashkor"
+            ],
+            [
+              "Große Halbachse",
+              "85 AE (12.716 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,3"
+            ],
+            [
+              "Bahnneigung",
+              "12°"
+            ],
+            [
+              "Umlaufzeit",
+              "912,1 Jahre"
+            ],
+            [
+              "Einstrahlung",
+              "0-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Am Himmel von Ashkor B",
+          "text": [
+            "Ashkor erscheint von hier aus etwa 0° groß (die Sonne von der Erde: 0,53°)."
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Ashkor · Stern",
+              "Orangefarbener Zwerg (K5 V)"
+            ],
+            [
+              "Ferrum Prime · 0,45 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Ashkor II · 0,92 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Ashkor III · 4,1 AE",
+              "Gasriese"
+            ],
+            [
+              "Ashkor B · 85 AE · dieses Dossier",
+              "Brauner Zwerg"
+            ],
+            [
+              "Trümmerband · 1,3–2,8 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Staubschleier · 12–24 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Ashkor",
+              "inhalte/himmelskoerper/sterne/details/kompakter-orangefarbener-red-clump-stern/hauptseite/index.html"
+            ],
+            [
+              "Ferrum Prime",
+              "inhalte/himmelskoerper/planeten/details/rostiger-eisenplanet-mit-freiliegendem-metallkern/hauptseite/index.html"
+            ],
+            [
+              "Ashkor II",
+              "inhalte/himmelskoerper/planeten/details/gefrorener-planet-unter-kaltem-sternenlicht/hauptseite/index.html"
+            ],
+            [
+              "Ashkor III",
+              "inhalte/himmelskoerper/planeten/details/metallischer-gasriese-in-bronze-und-gold/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Ashkor B.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "70.000 km"
+            ],
+            [
+              "Masse",
+              "12.700 Erdmassen"
+            ],
+            [
+              "Mittlere Dichte",
+              "52,8 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "1.032,03 m/s² (105,202 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "380,3 km/s"
+            ]
+          ],
+          "vergleich": {
+            "mit": "Erde",
+            "werte": [
+              [
+                "Durchmesser",
+                140000,
+                12742,
+                "km"
+              ],
+              [
+                "Masse",
+                12700,
+                1,
+                "Erdmassen"
+              ],
+              [
+                "Schwerkraft",
+                105.2,
+                1,
+                "g"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Ashkor B.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Ashkor B entstand zusammen mit dem Ferrum-System vor rund 6,8 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Umgebung": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Umgebung von Ashkor B.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Ashkor · Stern",
+              "Orangefarbener Zwerg (K5 V)"
+            ],
+            [
+              "Ferrum Prime · 0,45 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Ashkor II · 0,92 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Ashkor III · 4,1 AE",
+              "Gasriese"
+            ],
+            [
+              "Ashkor B · 85 AE · dieses Dossier",
+              "Brauner Zwerg"
+            ],
+            [
+              "Trümmerband · 1,3–2,8 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Staubschleier · 12–24 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Ashkor",
+              "inhalte/himmelskoerper/sterne/details/kompakter-orangefarbener-red-clump-stern/hauptseite/index.html"
+            ],
+            [
+              "Ferrum Prime",
+              "inhalte/himmelskoerper/planeten/details/rostiger-eisenplanet-mit-freiliegendem-metallkern/hauptseite/index.html"
+            ],
+            [
+              "Ashkor II",
+              "inhalte/himmelskoerper/planeten/details/gefrorener-planet-unter-kaltem-sternenlicht/hauptseite/index.html"
+            ],
+            [
+              "Ashkor III",
+              "inhalte/himmelskoerper/planeten/details/metallischer-gasriese-in-bronze-und-gold/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Ashkor B.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Was steckt hinter den Besonderheiten von Ashkor B?",
+            "Wie ist der innere Aufbau beschaffen?",
+            "Gab es früher eine dichtere Atmosphäre?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Ashkor B ist mit allen Bahndaten im Ferrum-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=ferrum-stern&objekt=ferrum-ashkor-b"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Ashkor B.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Äußerster Planet des Ferrum-Systems",
+            "Größter Planet des Ferrum-Systems",
+            "Als Anomalie in der Sternenkarte verzeichnet"
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Ashkor B.",
+      "abschnitte": [
+        {
+          "titel": "Ashkor B – Archivbild",
+          "bild": true,
+          "bildtext": "Ashkor B"
+        }
+      ]
+    }
+  }
+}

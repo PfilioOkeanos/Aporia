@@ -1,0 +1,1297 @@
+{
+  "name": "Orvaya",
+  "genitiv": "von Orvaya",
+  "dossierName": "Orvaya-Dossier",
+  "klasse": "Planet · Gesteinsplanet",
+  "intro": "Orvaya ist die Heimat der Waldfeen: ein herbstlich geprägter Waldplanet mit drei Kontinenten, unzähligen Seen und Flüssen, Nebelwäldern und einer besonders sauerstoffreichen Atmosphäre – aber ohne Ozeane.",
+  "globusDaten": {
+    "planet": "orvaya",
+    "klasse": "Gesteinsplanet",
+    "radius": 5097000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=orvaya-stern",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-BF1BED7374"
+    ],
+    [
+      "Klasse",
+      "Gesteinsplanet (Waldwelt ohne Ozeane)"
+    ],
+    [
+      "Durchmesser",
+      "10.194 km"
+    ],
+    [
+      "Radius",
+      "5.097 km"
+    ],
+    [
+      "Masse",
+      "0,54 Erdmassen"
+    ],
+    [
+      "Dichte",
+      "5,86 g/cm³"
+    ],
+    [
+      "Schwerkraft",
+      "0,85 g (8,3 m/s²)"
+    ],
+    [
+      "Mittlere Oberflächentemperatur",
+      "ca. 12 °C (Waldfeenregionen 10–20 °C)"
+    ],
+    [
+      "Ozeane",
+      "keine; 40 % Wasserfläche aus Seen und Flüssen"
+    ],
+    [
+      "Atmosphäre",
+      "66,8 % Stickstoff, 31 % Sauerstoff, 0,9 % Argon, 1,2 % Wasserdampf (im Mittel), 0,1 % Kohlendioxid und Spurengase"
+    ],
+    [
+      "Atmosphärendruck",
+      "ca. 1,15 bar"
+    ],
+    [
+      "Rotationsperiode",
+      "exakt 20 h"
+    ],
+    [
+      "Umlaufzeit",
+      "375 Erdtage"
+    ],
+    [
+      "Abstand zum Stern",
+      "1,01 AE"
+    ],
+    [
+      "Monde",
+      "2 (Neth, Silvaine)"
+    ],
+    [
+      "Zentralstern",
+      "Aelyra, Gelber Zwerg (G3 V)"
+    ],
+    [
+      "Einstrahlung",
+      "0,9-fach der Erde"
+    ],
+    [
+      "Achsneigung",
+      "13°"
+    ],
+    [
+      "Exzentrizität",
+      "0,03"
+    ],
+    [
+      "Fluchtgeschwindigkeit",
+      "9,2 km/s"
+    ],
+    [
+      "Alter",
+      "ca. 5,1 Mrd. Jahre"
+    ],
+    [
+      "Wasserbedeckung",
+      "40 % (keine Ozeane)"
+    ],
+    [
+      "Kontinente",
+      "drei, ungefähr gleich groß"
+    ],
+    [
+      "Landschaftsbild",
+      "herbstlich, häufig leichter Nebel"
+    ],
+    [
+      "Intelligente Spezies",
+      "Waldfeen"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Orvaya-System"
+    ],
+    [
+      "Zentralstern",
+      "Aelyra · G3 V, Einzelstern"
+    ],
+    [
+      "Bahnposition",
+      "3. von 5 Planeten"
+    ],
+    [
+      "Entfernung zur Sonne",
+      "19 Lichtjahre"
+    ],
+    [
+      "Nächste Nachbarsysteme",
+      "Osselyr-System (7,8 Lj), Seyvar-System (13,7 Lj)"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✿",
+      "art": "Heimische Spezies",
+      "titel": "Waldfeen",
+      "href": "inhalte/spezies/Biologische Spezies/WaldFeen/hauptseite/Spezies.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Heimatwelt",
+      "href": "inhalte/spezies/Biologische Spezies/WaldFeen/Unterseite/Heimatwelt/heimatwelt.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Politik und Fraktionen",
+      "href": "inhalte/spezies/Biologische Spezies/WaldFeen/Unterseite/Politik/politik.html",
+      "route": null
+    },
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Orvaya-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=orvaya-stern",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Speziesdossier Waldfeen · Heimatwelt",
+      "href": "inhalte/spezies/Biologische Spezies/WaldFeen/Unterseite/Heimatwelt/heimatwelt.html"
+    },
+    {
+      "titel": "Speziesdossier Waldfeen · Geschichte",
+      "href": "inhalte/spezies/Biologische Spezies/WaldFeen/Unterseite/Geschichte/geschichte.html"
+    },
+    {
+      "titel": "Speziesdossier Waldfeen · Gesellschaft",
+      "href": "inhalte/spezies/Biologische Spezies/WaldFeen/Unterseite/Gesellschaft/gesellschaft.html"
+    },
+    {
+      "titel": "Speziesdossier Waldfeen · Politik",
+      "href": "inhalte/spezies/Biologische Spezies/WaldFeen/Unterseite/Politik/politik.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#060d08",
+      "tiefe": "#0d1a10",
+      "akzent": "#e8b05a",
+      "sand": "#e9cf98",
+      "moos": "#8fbf6a",
+      "ozean": "#6aa9b8",
+      "glas": "rgba(14, 26, 16, .74)",
+      "glas-hell": "rgba(26, 42, 28, .8)",
+      "linie": "rgba(220, 190, 120, .17)",
+      "linie-hell": "rgba(235, 205, 140, .36)",
+      "text": "#f3efe2",
+      "leise": "#b0aa94",
+      "aporia-page-tint": "#5a6a2a"
+    }
+  },
+  "kapitel": {
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Orvaya auf einen Blick: Wälder, Seen, Nebel – und die Narben des Bruchs.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Orvaya – Waldwelt der Waldfeen",
+          "text": [
+            "Orvaya ist ein Gesteinsplanet mit rund 80 % des Erddurchmessers und 0,85 g Schwerkraft. Er umkreist den einzelnen, sonnenähnlichen Stern Aelyra; ein Tag dauert exakt 20 Stunden. Zwei Monde – Silvaine und Neth – begleiten ihn.",
+            "Wasser bedeckt 40 % der Oberfläche, verteilt auf sehr viele Seen und Flusssysteme statt auf Ozeane. Riesenbaumwälder mit mehreren Kronenschichten, Farn-, Moos- und Pilzlandschaften und leuchtende Pflanzen prägen die Lebensräume der Waldfeen."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Gesteinsplanet (Waldwelt ohne Ozeane)"
+            ],
+            [
+              "Zentralstern",
+              "Aelyra (Gelber Zwerg (G3 V))"
+            ],
+            [
+              "Schwerkraft",
+              "0,85 g"
+            ],
+            [
+              "Durchmesser",
+              "10.194 km"
+            ],
+            [
+              "Mittlere Temperatur",
+              "ca. 12 °C (Waldfeenregionen 10–20 °C)"
+            ],
+            [
+              "Atmosphäre",
+              "Besonders sauerstoffreich (ca. 31 % O₂)"
+            ],
+            [
+              "Wasser",
+              "keine; 40 % Wasserfläche aus Seen und Flüssen"
+            ],
+            [
+              "Intelligente Spezies",
+              "Waldfeen"
+            ]
+          ]
+        },
+        {
+          "titel": "Orvaya im Vergleich zur Erde",
+          "vergleich": {
+            "mit": "Erde",
+            "werte": [
+              [
+                "Durchmesser",
+                10194,
+                12742,
+                "km"
+              ],
+              [
+                "Schwerkraft",
+                0.85,
+                1,
+                "g"
+              ],
+              [
+                "Tageslänge",
+                20,
+                24,
+                "h"
+              ],
+              [
+                "Luftdruck (Mittel)",
+                1.15,
+                1,
+                "bar"
+              ],
+              [
+                "Mittlere Temperatur",
+                12,
+                15,
+                "°C"
+              ],
+              [
+                "Sauerstoffanteil",
+                31,
+                21,
+                "%"
+              ],
+              [
+                "Wasserbedeckung",
+                40,
+                71,
+                "%"
+              ]
+            ]
+          }
+        },
+        {
+          "titel": "Hauptmerkmale",
+          "karten": [
+            {
+              "titel": "Waldwelt",
+              "text": "Riesenbaumwälder mit mehreren Kronenschichten."
+            },
+            {
+              "titel": "Keine Ozeane",
+              "text": "40 % Wasser – verteilt auf Seen und Flüsse."
+            },
+            {
+              "titel": "Sauerstoffreich",
+              "text": "Rund 31 % Sauerstoff in der Luft."
+            },
+            {
+              "titel": "Herbstlich",
+              "text": "Milde Temperaturen und häufiger Nebel."
+            }
+          ]
+        },
+        {
+          "titel": "Name und Einordnung",
+          "text": [
+            "Orvaya ist der Name, den die Waldfeen ihrer Welt geben. Im Archiv zählt der Planet zu den Gesteinsplaneten; Stern und System wurden nach den Sternkatalogen als Aelyra und Orvaya-System verzeichnet."
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Ein sonnenähnlicher Stern und zwei Monde.",
+      "abschnitte": [
+        {
+          "titel": "Bahn und Position",
+          "text": [
+            "Orvaya ist der 3. von 5 Planeten im Orvaya-System. Er umkreist Aelyra in 1,01 AE Abstand – innerhalb der habitablen Zone (bei Aelyra zwischen 0,91 und 1,6 AE). Er erhält 0,9-mal so viel Sternlicht wie die Erde.",
+            "Ohne Atmosphäre läge seine Gleichgewichtstemperatur bei rund -24 °C. Wasserdampf und Spurengase heben die mittlere Temperatur um rund 36 K auf etwa 12 °C; in den Waldfeenregionen liegen die üblichen Werte zwischen 10 und 20 °C."
+          ],
+          "daten": [
+            [
+              "Sternsystem",
+              "Orvaya-System"
+            ],
+            [
+              "Bahnposition",
+              "3. von 5 Planeten"
+            ],
+            [
+              "Große Halbachse",
+              "1,01 AE (ca. 151,1 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,03"
+            ],
+            [
+              "Umlaufzeit",
+              "374,5 Erdtage"
+            ],
+            [
+              "Ortsjahr",
+              "ca. 449 Ortstage"
+            ],
+            [
+              "Einstrahlung",
+              "ca. 0,9-fach der Erde"
+            ],
+            [
+              "Habitable Zone von Aelyra",
+              "0,91–1,6 AE"
+            ]
+          ]
+        },
+        {
+          "titel": "Zentralstern",
+          "text": [
+            "Aelyra ist ein einzelner, sonnenähnlicher Hauptreihenstern der Spektralklasse G3 V mit 98 % der Sonnenmasse und 92 % ihrer Leuchtkraft – Zentralstern von Orvaya, der Heimat der Waldfeen."
+          ],
+          "daten": [
+            [
+              "Name",
+              "Aelyra"
+            ],
+            [
+              "Typ",
+              "Gelber Zwerg (G3 V)"
+            ],
+            [
+              "Masse",
+              "0,98 Sonnenmassen"
+            ],
+            [
+              "Radius",
+              "0,97 Sonnenradien"
+            ],
+            [
+              "Leuchtkraft",
+              "0,92 Sonnenleuchtkräfte"
+            ],
+            [
+              "Oberflächentemperatur",
+              "ca. 5.700 K"
+            ],
+            [
+              "Alter",
+              "ca. 5,1 Mrd. Jahre"
+            ],
+            [
+              "Begleitsterne",
+              "keine (Einzelstern)"
+            ]
+          ],
+          "verweise": [
+            [
+              "Aelyra",
+              "inhalte/himmelskoerper/sterne/details/goldene-sonne-mit-feiner-granulation/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Rotation und Achse",
+          "daten": [
+            [
+              "Rotationsperiode",
+              "exakt 20 h"
+            ],
+            [
+              "Achsneigung",
+              "13°"
+            ],
+            [
+              "Scheinbare Sterngröße",
+              "ca. 0,51° (Sonne von der Erde: 0,53°)"
+            ],
+            [
+              "Jahreszeiten",
+              "Gering ausgeprägt; regional unterschiedlich, nicht auf allen Kontinenten gleich"
+            ]
+          ]
+        },
+        {
+          "titel": "Monde",
+          "karten": [
+            {
+              "titel": "Neth",
+              "text": "420 km Durchmesser, Abstand 120.100 km, Umlauf in 6,5 Tagen. Neth ist der kleine, innere Mond Orvayas – unregelmäßig geformt und schnell über den Himmel ziehend."
+            },
+            {
+              "titel": "Silvaine",
+              "text": "1.760 km Durchmesser, Abstand 310.344 km, Umlauf in 27 Tagen. Silvaine ist der große, helle Mond Orvayas. Sein Licht beleuchtet in klaren Nächten die Nebelwälder."
+            }
+          ],
+          "verweise": [
+            [
+              "Neth",
+              "inhalte/himmelskoerper/monde/details/lebender-dreilappenmond-mit-goldenen-faden/hauptseite/index.html"
+            ],
+            [
+              "Silvaine",
+              "inhalte/himmelskoerper/monde/details/lebender-elfenbeinmond-mit-blauem-mantel/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Planeten des Systems",
+          "zeitleiste": [
+            [
+              "Aelyra I · 0,41 AE",
+              "Aelyra I ist ein kleiner, sonnennaher Gesteinsplanet ohne Atmosphäre.."
+            ],
+            [
+              "Aelyra II · 0,68 AE",
+              "Aelyra II ist eine heiße Wolkenwelt mit dichter Atmosphäre – am Himmel Orvayas der hellste Wandelstern.."
+            ],
+            [
+              "Orvaya · 1,01 AE",
+              "Orvaya ist die Heimatwelt der Waldfeen: ein herbstlich geprägter Waldplanet mit drei Kontinenten, vielen Seen und Flüssen, Nebelwäldern und einer sauerstoffreichen Atmosphäre – aber ohne Ozeane.."
+            ],
+            [
+              "Laubgürtel · 2,2–3 AE",
+              "Der Laubgürtel zwischen 2,2 und 2,95 AE besteht aus rötlich-braunen Gesteinsbrocken – der Name stammt aus dem Archiv und spielt auf ihre Herbstfarben an.."
+            ],
+            [
+              "Aelyra IV · 5,3 AE",
+              "Aelyra IV ist ein großer, bernsteinfarbener Gasriese, der das innere System vor vielen Kometen abschirmt.."
+            ],
+            [
+              "Aelyra V · 12,5 AE",
+              "Aelyra V ist ein ferner, grünblauer Eisriese.."
+            ],
+            [
+              "Äußeres Kometengebiet · 34–50 AE",
+              "Ein ferner Gürtel aus Eiskörpern zwischen 34 und 50 AE.."
+            ]
+          ],
+          "verweise": [
+            [
+              "Aelyra I",
+              "inhalte/himmelskoerper/planeten/details/gluhender-heier-jupiter-am-hellen-stern/hauptseite/index.html"
+            ],
+            [
+              "Aelyra II",
+              "inhalte/himmelskoerper/planeten/details/geschichteter-gasriese-mit-blauen-wolken/hauptseite/index.html"
+            ],
+            [
+              "Laubgürtel",
+              "inhalte/himmelskoerper/sternensysteme/details/der-weite-offene-asteroidengurtel-hesperons/hauptseite/index.html"
+            ],
+            [
+              "Aelyra IV",
+              "inhalte/himmelskoerper/planeten/details/dunkler-gasriese-mit-roten-sturmen/hauptseite/index.html"
+            ],
+            [
+              "Aelyra V",
+              "inhalte/himmelskoerper/planeten/details/kobaltblauer-super-neptun-im-sternenmeer/hauptseite/index.html"
+            ],
+            [
+              "Äußeres Kometengebiet",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=orvaya-stern&objekt=orvaya-kometengebiet"
+            ]
+          ]
+        },
+        {
+          "titel": "Nachbarschaft und Anomalien",
+          "karten": [
+            {
+              "titel": "Nebelkomet",
+              "text": "Ein heller Komet mit langem, schleierartigem Schweif, der rund alle 76 Jahre am Himmel Orvayas erscheint."
+            },
+            {
+              "titel": "Nachbarsysteme",
+              "text": "Osselyr-System (7,8 Lj), Seyvar-System (13,7 Lj), Narev-System (14,3 Lj) – alle weit außerhalb der gravitativen Einflusszone von Aelyra (rund 3,6 Lichtjahre)."
+            }
+          ],
+          "verweise": [
+            [
+              "Nebelkomet",
+              "inhalte/himmelskoerper/kometen/details/komet-im-sonnengegenlicht/hauptseite/index.html"
+            ],
+            [
+              "Orvaya-System in der Sternenkarte",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=orvaya-stern"
+            ]
+          ]
+        },
+        {
+          "titel": "Zeitrechnung",
+          "daten": [
+            [
+              "Ortstag",
+              "exakt 20 h"
+            ],
+            [
+              "Umlauf",
+              "375 Erdtage ≈ 449 Ortstage"
+            ],
+            [
+              "Mondzyklus",
+              "Silvaine: 27 Tage · Neth: 6,5 Tage"
+            ]
+          ]
+        },
+        {
+          "titel": "Am Himmel von Orvaya",
+          "text": [
+            "Aelyra erscheint ähnlich groß und hell wie die Sonne von der Erde. Nachts dominiert der helle Mond Silvaine; Neth zieht als kleiner, unregelmäßiger Lichtpunkt schnell über den Himmel. Der Nebelkomet erscheint etwa alle 76 Jahre."
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Orvaya.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "5.097 km"
+            ],
+            [
+              "Masse",
+              "0,54 Erdmassen"
+            ],
+            [
+              "Mittlere Dichte",
+              "5,86 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "8,3 m/s² (0,85 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "ca. 9,2 km/s"
+            ],
+            [
+              "Durchmesser im Vergleich",
+              "ca. 80 % der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Physikalische Werte im Vergleich",
+          "vergleich": {
+            "mit": "Erde",
+            "werte": [
+              [
+                "Masse",
+                0.544,
+                1,
+                "Erdmassen"
+              ],
+              [
+                "Dichte",
+                5.86,
+                5.51,
+                "g/cm³"
+              ],
+              [
+                "Fluchtgeschwindigkeit",
+                9.2,
+                11.2,
+                "km/s"
+              ],
+              [
+                "Magnetfeld",
+                0.8,
+                1,
+                "× Erde"
+              ]
+            ]
+          }
+        },
+        {
+          "titel": "Geringere Schwerkraft",
+          "text": [
+            "Mit 0,85 g ist die Schwerkraft etwas geringer als auf der Erde. Das erleichtert das Klettern, Balancieren und Gleiten der Waldfeen und begünstigt sehr hohe Bäume."
+          ]
+        }
+      ]
+    },
+    "Planetare Struktur": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Planetare Struktur von Orvaya.",
+      "abschnitte": [
+        {
+          "titel": "Schalenbau",
+          "text": [
+            "Orvaya ist ein erdähnlich aufgebauter Gesteinsplanet mit Eisenkern, Mantel und einer Kruste, die von unterirdischen Wasserreservoirs und Höhlensystemen durchzogen ist."
+          ],
+          "schichten": [
+            [
+              "Kruste",
+              "Fruchtbare Böden, Höhlen und Wasserreservoirs"
+            ],
+            [
+              "Mantel",
+              "Silikatgestein"
+            ],
+            [
+              "Äußerer Kern",
+              "Flüssiges Eisen, schwächeres Magnetfeld als die Erde"
+            ],
+            [
+              "Innerer Kern",
+              "Fester Eisen-Nickel-Kern"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geografie": {
+      "gruppe": "Natur",
+      "icon": "△",
+      "intro": "Drei Kontinente, viele Seen – und kein Ozean.",
+      "kopfbild": "assets/bilder/Alle Spezies+Übersicht/Biologische Spezies/WaldFeen/hauptseite/orvaya_wasserfaelle_und_taeler.jpg",
+      "bild": "assets/bilder/Alle Spezies+Übersicht/Biologische Spezies/WaldFeen/hauptseite/orvaya_wasserfaelle_und_taeler.jpg",
+      "abschnitte": [
+        {
+          "titel": "Kontinente",
+          "karten": [
+            {
+              "titel": "Zwei Waldkontinente",
+              "text": "Großflächig bewaldet und durch eine Landbrücke verbunden."
+            },
+            {
+              "titel": "Hochlandkontinent",
+              "text": "Getrennt, kühl, mit Gebirgen und Hochflächen; Schnee ist selten."
+            },
+            {
+              "titel": "Seen und Flüsse",
+              "text": "Sehr viele Gewässer, teils durch saisonales Überwasser verbunden."
+            }
+          ]
+        },
+        {
+          "titel": "Landschaftsformen",
+          "liste": [
+            "Ausgedehnte Waldgebiete und mehrschichtige Riesenbaumwälder",
+            "Hügelige Wälder",
+            "Täler und kleinere Schluchten",
+            "Natürliche Höhlensysteme",
+            "Weitläufige Wurzellandschaften",
+            "Flüsse und Wasserfälle",
+            "Seen und Feuchtgebiete",
+            "Nebelwälder"
+          ]
+        },
+        {
+          "titel": "Fluss, Schlucht und Wasserfall",
+          "text": [
+            "Ein großer Fluss entspringt in einem unterirdischen System und tritt vor einer Schlucht an die Oberfläche, die er über lange Zeit geformt hat. Von den Klippen stürzt er als Wasserfall in das Waldgebiet und verzweigt sich dahinter in Seitenarme und Becken."
+          ]
+        },
+        {
+          "titel": "Flächennutzung",
+          "balken": {
+            "werte": [
+              [
+                "Wälder",
+                46
+              ],
+              [
+                "Seen und Flüsse",
+                40
+              ],
+              [
+                "Hochland und Gebirge",
+                9
+              ],
+              [
+                "Feuchtgebiete",
+                3
+              ],
+              [
+                "Zerstörte Gebiete des Bruchs",
+                2
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Orvaya.",
+      "abschnitte": [
+        {
+          "titel": "Zusammensetzung",
+          "text": [
+            "Orvaya besitzt eine besonders sauerstoffreiche Atmosphäre, die an die Umweltbedingungen der irdischen Urzeit erinnert. Der hohe Sauerstoffanteil begünstigt große Pflanzen und Tiere – erhöht aber auch die Brandgefahr in trockenen Zeiten."
+          ],
+          "balken": {
+            "werte": [
+              [
+                "Stickstoff",
+                66.8
+              ],
+              [
+                "Sauerstoff",
+                31
+              ],
+              [
+                "Argon",
+                0.9
+              ],
+              [
+                "Wasserdampf (im Mittel)",
+                1.2
+              ],
+              [
+                "Kohlendioxid und Spurengase",
+                0.1
+              ]
+            ]
+          }
+        },
+        {
+          "titel": "Druck",
+          "daten": [
+            [
+              "Mittlerer Oberflächendruck",
+              "ca. 1,15 bar"
+            ],
+            [
+              "Tiefe Schluchten",
+              "ca. 1,2 bar"
+            ],
+            [
+              "Kühles Hochland",
+              "ca. 0,9 bar"
+            ]
+          ]
+        },
+        {
+          "titel": "Nebel",
+          "text": [
+            "In zahlreichen Waldregionen tritt regelmäßig leichter Nebel auf – durch die Verdunstung großer Wasserflächen, Seen, Flüsse und Wasserfälle sowie durch Temperaturunterschiede zwischen Tälern und höher gelegenen Landschaften."
+          ]
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Orvaya.",
+      "abschnitte": [
+        {
+          "titel": "Temperaturzonen",
+          "text": [
+            "Die Temperaturunterschiede zwischen den Jahreszeiten sind in vielen Regionen gering. Die Lebensräume der Waldfeen liegen fast alle im milden Bereich zwischen 10 und 20 °C – extreme Klimaregionen meiden sie."
+          ],
+          "skala": {
+            "einheit": "°C",
+            "min": -20,
+            "max": 35,
+            "bereiche": [
+              [
+                "Polargebiete",
+                -15,
+                0
+              ],
+              [
+                "Kühles Hochland",
+                -2,
+                10
+              ],
+              [
+                "Waldfeenregionen",
+                10,
+                20
+              ],
+              [
+                "Nebelwälder",
+                8,
+                16
+              ],
+              [
+                "Warme Tieflandwälder",
+                16,
+                28
+              ]
+            ]
+          }
+        },
+        {
+          "titel": "Wetter und Jahreszeiten",
+          "karten": [
+            {
+              "titel": "Dauerherbst",
+              "text": "Die Waldfeenregionen wirken das ganze Jahr herbstlich."
+            },
+            {
+              "titel": "Regionale Jahreszeiten",
+              "text": "Nicht auf allen Kontinenten gleich."
+            },
+            {
+              "titel": "Niederschlag",
+              "text": "Unterscheidet sich zwischen den Regionen erheblich."
+            },
+            {
+              "titel": "Nebel",
+              "text": "Häufig in Tälern und an Gewässern."
+            }
+          ]
+        }
+      ]
+    },
+    "Gewässer": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gewässer von Orvaya.",
+      "abschnitte": [
+        {
+          "titel": "Wasser ohne Ozeane",
+          "text": [
+            "Etwa 40 % der Oberfläche sind von Wasser bedeckt – anders als auf der Erde gibt es jedoch keine Ozeane. Das Wasser verteilt sich auf zahlreiche Seen und ausgedehnte Flusssysteme."
+          ]
+        },
+        {
+          "titel": "Wasserkreislauf",
+          "liste": [
+            "Höher gelegene Quellgebiete",
+            "Berge des Hochlandkontinents",
+            "Unterirdische Wasserreservoirs",
+            "Große Seen",
+            "Verbundene Flusssysteme und saisonal überlaufende Becken"
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Orvaya.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Orvaya ist geologisch ruhig. Flüsse haben Schluchten und Täler geformt, Wasser hat weitläufige Höhlensysteme ausgewaschen. Gebirge finden sich vor allem auf dem Hochlandkontinent."
+          ]
+        },
+        {
+          "titel": "Umweltgefahren",
+          "liste": [
+            "Unkontrollierte biologische Ausbreitungen und ökologische Kettenreaktionen",
+            "Regionen mit großen Raubtieren",
+            "Instabile und geschädigte Gebiete aus der Zeit des Bruchs",
+            "Extreme Klimaregionen außerhalb der Waldfeenlebensräume"
+          ]
+        }
+      ]
+    },
+    "Biosphäre": {
+      "gruppe": "Natur",
+      "icon": "❧",
+      "intro": "Vielschichtige Wälder, leuchtende Pflanzen und spezialisierte Bestäuber.",
+      "kopfbild": "assets/bilder/Alle Spezies+Übersicht/Biologische Spezies/WaldFeen/hauptseite/leuchtpilze_weisse_blueten.jpg",
+      "bild": "assets/bilder/Alle Spezies+Übersicht/Biologische Spezies/WaldFeen/hauptseite/leuchtpilze_weisse_blueten.jpg",
+      "abschnitte": [
+        {
+          "titel": "Pflanzenwelt",
+          "karten": [
+            {
+              "titel": "Riesenbaumwälder",
+              "text": "Mehrere Kronenschichten übereinander."
+            },
+            {
+              "titel": "Farn, Moos und Pilze",
+              "text": "Dichte Landschaften am Waldboden."
+            },
+            {
+              "titel": "Biolumineszenz",
+              "text": "Leuchtende Pflanzen zur Warnung und Signalgebung."
+            },
+            {
+              "titel": "Gefährliche Pflanzen",
+              "text": "Fleischfressende und giftige Arten."
+            },
+            {
+              "titel": "Ufervegetation",
+              "text": "Besondere Pflanzen der Feuchtgebiete."
+            }
+          ]
+        },
+        {
+          "titel": "Bekannte Arten",
+          "daten": [
+            [
+              "Mädesüß",
+              "Heilpflanze der Nebelwälder mit keimhemmendem Saft"
+            ],
+            [
+              "Ulmaäde",
+              "Kleiner fliegender Bestäuber, ernährt sich von Mädesüß"
+            ]
+          ]
+        },
+        {
+          "titel": "Biologische Vernetzung",
+          "text": [
+            "Die Ökosysteme besitzen mehrere biologische Netzwerksysteme. Spezialisierte symbiotische Mikroorganismen unterstützen die Beziehungen zwischen Lebewesen – ein einziges planetenweites Netzwerk gibt es jedoch nicht zwingend."
+          ]
+        },
+        {
+          "titel": "Tierwelt",
+          "liste": [
+            "Große landlebende Raubtiere",
+            "Giftige, parasitische oder krankheitsübertragende Kleintiere",
+            "Spezialisierte Bestäubertiere",
+            "Komplexe Nahrungsketten mit vielen spezialisierten Arten"
+          ]
+        }
+      ]
+    },
+    "Spezies": {
+      "gruppe": "Zivilisation",
+      "icon": "✿",
+      "intro": "Die Waldfeen – eng mit den Wäldern Orvayas verbunden.",
+      "abschnitte": [
+        {
+          "titel": "Waldfeen",
+          "bild": "assets/bilder/Alle Spezies+Übersicht/Biologische Spezies/WaldFeen/hauptseite/waldfee_portraet_hero.jpg",
+          "bildtext": "Waldfee",
+          "text": [
+            "Die Waldfeen sind die intelligente Spezies Orvayas. Ihre Zivilisation reicht vermutlich Hunderttausende Jahre zurück. Ihre verstärkte Regeneration hängt von geeigneter Vegetation ab – in oder nahe dichten Wäldern unterstützen biologische Signale ihre Heilung."
+          ],
+          "verweise": [
+            [
+              "Zum Speziesdossier",
+              "inhalte/spezies/Biologische Spezies/WaldFeen/hauptseite/Spezies.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Grenzen der Ausbreitung",
+          "liste": [
+            "Fehlende geeignete Vegetation",
+            "Extreme Temperaturen und ungeeignete Klimazonen",
+            "Gefährliche Tiere und Pflanzen",
+            "Krankheitserreger",
+            "Schwer zugängliche Landschaften",
+            "Begrenzte natürliche Ressourcen"
+          ]
+        }
+      ]
+    },
+    "Zivilisation": {
+      "gruppe": "Zivilisation",
+      "icon": "▥",
+      "intro": "Siedlungen in lebenden Strukturen.",
+      "kopfbild": "assets/bilder/Alle Spezies+Übersicht/Biologische Spezies/WaldFeen/Unterseite/Gesellschaft/Waldfeen_Gesellschaft_NUR_NEUE_BILDER_SPEC-0001/01_Hero/gesellschaft_weltbaum_terrassen_wasserfaelle.jpg",
+      "bild": "assets/bilder/Alle Spezies+Übersicht/Biologische Spezies/WaldFeen/Unterseite/Gesellschaft/Waldfeen_Gesellschaft_NUR_NEUE_BILDER_SPEC-0001/01_Hero/gesellschaft_weltbaum_terrassen_wasserfaelle.jpg",
+      "abschnitte": [
+        {
+          "titel": "Die drei Gemeinschaften",
+          "bild": "assets/bilder/Alle Spezies+Übersicht/Biologische Spezies/WaldFeen/Unterseite/Gesellschaft/Waldfeen_Gesellschaft_NUR_NEUE_BILDER_SPEC-0001/02_Inhalte/gesellschaft_drei_gemeinschaften_triptychon.png",
+          "bildtext": "Die drei Gemeinschaften",
+          "karten": [
+            {
+              "titel": "Abgelegene Waldgemeinschaft",
+              "text": "Hügeliges Waldgebiet; Siedlungen in verschiedenen Baumhöhen, verbunden durch schwer zugängliche Naturwege."
+            },
+            {
+              "titel": "Weltenbaumgemeinschaft",
+              "text": "Eine große Baumstruktur mit Wohnbereichen im Stamm, in Ästen und Wurzelregionen."
+            },
+            {
+              "titel": "Fluss- und Feuchtgebietsgemeinschaft",
+              "text": "Alltag und Wirtschaft eng mit den Wasserlandschaften verbunden."
+            }
+          ]
+        },
+        {
+          "titel": "Bewohnbare Großbäume",
+          "text": [
+            "Auf Orvaya gibt es mehrere außergewöhnlich große Bäume, die von Waldfeengemeinschaften bewohnt werden können. Ihre Wohnräume entstehen aus natürlichen Hohlräumen, gezielter biologischer Formung und teils künstlich gestalteten Räumen."
+          ],
+          "liste": [
+            "Außergewöhnlich stabile Holzstrukturen",
+            "Zusätzliche innere Hohlräume",
+            "Veränderte Wasser- und Nährstoffversorgung",
+            "Spezialisierte Wohn- und Wirtschaftsbereiche"
+          ]
+        },
+        {
+          "titel": "Verkehrswege",
+          "liste": [
+            "Natürliche Waldpfade und Kletterwege",
+            "Ausgebaute Wege und Brücken",
+            "Flüsse und Wasserwege"
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Orvaya.",
+      "kopfbild": "assets/bilder/Alle Spezies+Übersicht/Biologische Spezies/WaldFeen/hauptseite/der_bruch_ruinen.jpg",
+      "bild": "assets/bilder/Alle Spezies+Übersicht/Biologische Spezies/WaldFeen/hauptseite/der_bruch_ruinen.jpg",
+      "abschnitte": [
+        {
+          "titel": "Zeitleiste",
+          "zeitleiste": [
+            [
+              "Frühzeit",
+              "Älteste Spuren der Waldfeen – vermutlich Hunderttausende Jahre alt"
+            ],
+            [
+              "Erste Gemeinschaften",
+              "Familien- und Siedlungsverbände entstehen"
+            ],
+            [
+              "Großbäume",
+              "Große Baumstrukturen werden zu Siedlungszentren"
+            ],
+            [
+              "Vor 1.000–1.500 Jahren",
+              "Der Bruch: Konflikt um Forschungsfreiheit und Naturschutz"
+            ],
+            [
+              "Erste Katastrophe",
+              "Ein freigesetzter, veränderter Organismus löst eine Kettenreaktion aus"
+            ],
+            [
+              "Zweite Katastrophe",
+              "Eine Naturkatastrophe beendet den Konflikt"
+            ],
+            [
+              "Wiederbesiedlung",
+              "Rückkehr, Aufnahme Geflüchteter, Schutzvereinbarungen"
+            ],
+            [
+              "Gegenwart",
+              "Drei Gemeinschaften, fortbestehendes Misstrauen"
+            ]
+          ]
+        },
+        {
+          "titel": "Das Katastrophengebiet",
+          "text": [
+            "Das zentrale Gebiet des Bruchs ist bis heute weitgehend zerstört; Leben ist dort kaum möglich. Biologische Wiederherstellungsmaßnahmen haben einzelne Randgebiete verändert oder geheilt, andere Regionen blieben dauerhaft geschädigt."
+          ]
+        }
+      ]
+    },
+    "Fraktionen": {
+      "gruppe": "Zivilisation",
+      "icon": "◇",
+      "intro": "Fraktionen von Orvaya.",
+      "abschnitte": [
+        {
+          "titel": "Politische Ordnung",
+          "text": [
+            "Auf Orvaya gibt es keine gemeinsame Regierung. Jede Gemeinschaft organisiert sich selbst; nach dem Bruch entstanden Vereinbarungen zum Schutz empfindlicher Ökosysteme und eigene Regeln für biologische Technologien – ein einheitliches Kontrollsystem jedoch nicht."
+          ]
+        },
+        {
+          "titel": "Beziehungen",
+          "daten": [
+            [
+              "Zwischen den Gemeinschaften",
+              "Gemeinsame Projekte, Tauschhandel, Austausch ökologischen Wissens"
+            ],
+            [
+              "Konfliktlinien",
+              "Forschungsfreiheit, Traditionen, Erinnerung an den Bruch"
+            ],
+            [
+              "Außerirdische Spezies",
+              "Keine bestätigten Kenntnisse"
+            ],
+            [
+              "Interstellare Großmächte",
+              "Den Waldfeen bisher unbekannt"
+            ]
+          ]
+        }
+      ]
+    },
+    "Rohstoffe": {
+      "gruppe": "Weitere",
+      "icon": "⬡",
+      "intro": "Rohstoffe von Orvaya.",
+      "abschnitte": [
+        {
+          "titel": "Natürliche Ressourcen",
+          "karten": [
+            {
+              "titel": "Heilpflanzen",
+              "text": "Biologisch wirksame Stoffe wie aus dem Mädesüß."
+            },
+            {
+              "titel": "Wasser",
+              "text": "Reichlich in Seen und Flüssen."
+            },
+            {
+              "titel": "Fruchtbare Böden",
+              "text": "Grundlage für Nahrungspflanzen."
+            },
+            {
+              "titel": "Holz und Fasern",
+              "text": "Pflanzliche Werkstoffe."
+            }
+          ]
+        },
+        {
+          "titel": "Bewirtschaftung",
+          "text": [
+            "Gemeinschaften züchten und fördern nützliche Pflanzen gezielt und steuern einzelne Lebensräume mit biologischen oder künstlichen Maßnahmen. Empfindliche Ökosysteme werden nur eingeschränkt genutzt."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Orvaya.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Namen und Formen der drei Kontinente",
+            "Lage des Katastrophengebiets",
+            "Wer veränderte die großen Bäume – und wann?",
+            "Wie funktionieren die biologischen Netzwerke?",
+            "Was löste die zweite Katastrophe aus?"
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Orvaya.",
+      "abschnitte": [
+        {
+          "titel": "Rekorde",
+          "daten": [
+            [
+              "Größte Bäume",
+              "Bewohnbare Großbäume, Referenzwert ca. 500 m Höhe"
+            ],
+            [
+              "Bekanntester Wasserfall",
+              "Fall des großen Flusses aus der Schlucht ins Waldgebiet"
+            ],
+            [
+              "Lebensfeindlichste Region",
+              "Kerngebiet des Bruchs"
+            ],
+            [
+              "Höchste Region",
+              "Gebirge des kühlen Hochlandkontinents"
+            ]
+          ]
+        },
+        {
+          "titel": "Einzigartige Welt",
+          "liste": [
+            "Viel Wasser, aber keine Ozeane",
+            "Sauerstoffreiche Luft und riesige Bäume",
+            "Biolumineszente Wälder",
+            "Narben eines biologischen Krieges"
+          ]
+        },
+        {
+          "titel": "Hinweise für Besucher",
+          "liste": [
+            "Kein bestätigter Kontakt zu Außenweltlern – Begegnungen vorsichtig angehen",
+            "Offenes Feuer meiden (hoher Sauerstoffanteil)",
+            "Katastrophengebiet nicht betreten",
+            "Gefährliche Pflanzen und Raubtiere außerhalb der Siedlungen"
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Orvaya.",
+      "abschnitte": [
+        {
+          "titel": "Orvaya aus dem All",
+          "bild": true,
+          "bildtext": "Orvaya – Waldwelt der Waldfeen"
+        },
+        {
+          "titel": "Weltenbaum-Panorama",
+          "bild": "assets/bilder/Alle Spezies+Übersicht/Biologische Spezies/WaldFeen/hauptseite/weltenbaum_panorama.jpg",
+          "bildtext": "Weltenbaum-Panorama"
+        },
+        {
+          "titel": "Wasserfälle und Täler",
+          "bild": "assets/bilder/Alle Spezies+Übersicht/Biologische Spezies/WaldFeen/hauptseite/orvaya_wasserfaelle_und_taeler.jpg",
+          "bildtext": "Wasserfälle und Täler"
+        },
+        {
+          "titel": "Leuchtpilze und weiße Blüten",
+          "bild": "assets/bilder/Alle Spezies+Übersicht/Biologische Spezies/WaldFeen/hauptseite/leuchtpilze_weisse_blueten.jpg",
+          "bildtext": "Leuchtpilze und weiße Blüten"
+        },
+        {
+          "titel": "Traditioneller Wald",
+          "bild": "assets/bilder/Alle Spezies+Übersicht/Biologische Spezies/WaldFeen/hauptseite/gemeinschaft_01_traditioneller_wald.jpg",
+          "bildtext": "Traditioneller Wald"
+        },
+        {
+          "titel": "Fluss- und Feuchtgebiet",
+          "bild": "assets/bilder/Alle Spezies+Übersicht/Biologische Spezies/WaldFeen/hauptseite/gemeinschaft_03_fluss_feuchtgebiet.jpg",
+          "bildtext": "Fluss- und Feuchtgebiet"
+        },
+        {
+          "titel": "Ruinen des Bruchs",
+          "bild": "assets/bilder/Alle Spezies+Übersicht/Biologische Spezies/WaldFeen/hauptseite/der_bruch_ruinen.jpg",
+          "bildtext": "Ruinen des Bruchs"
+        },
+        {
+          "titel": "Waldfee",
+          "bild": "assets/bilder/Alle Spezies+Übersicht/Biologische Spezies/WaldFeen/hauptseite/waldfee_portraet_hero.jpg",
+          "bildtext": "Waldfee"
+        }
+      ]
+    }
+  }
+}

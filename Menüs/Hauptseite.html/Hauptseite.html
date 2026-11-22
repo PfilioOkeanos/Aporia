@@ -19,16 +19,38 @@
       <header class="home-hero">
         <img class="home-hero-art" data-media-image="kosmologie.kosmologie-galaxien" alt="" fetchpriority="high">
         <video class="home-hero-video" data-home-video="home.heroVideo" aria-hidden="true" muted loop playsinline preload="none"></video>
+        <canvas class="home-sterne" aria-hidden="true"></canvas>
         <div class="home-hero-copy">
           <p class="home-wordmark">Aporia <span>Weltenarchiv</span></p>
           <h1>Ein Universum zum Entdecken.</h1>
+          <p class="home-leitwort" aria-live="polite"><span data-home-leitwort>Fremde Welten erkunden</span></p>
+          <form class="home-suche" role="search" action="#" onsubmit="return false">
+            <label class="home-suche-feld">
+              <span class="home-suche-symbol" aria-hidden="true">⌕</span>
+              <input type="search" placeholder="Archiv durchsuchen – Spezies, Planeten, Sterne …" aria-label="Weltenarchiv durchsuchen" autocomplete="off">
+            </label>
+          </form>
+          <nav class="home-aktionen" aria-label="Einstiege">
+            <a class="home-knopf home-knopf--gold" href="../../inhalte/spezies/Spezies_%C3%BCbersicht/Spezies.html" data-route="spezies">Speziesarchiv</a>
+            <a class="home-knopf" href="#" data-route="sternenkarte">Sternenkarte</a>
+            <a class="home-knopf" href="#" data-route="forschung">Forschung</a>
+            <button class="home-knopf home-knopf--zufall" type="button" data-home-zufall disabled>✦ Zufällige Welt</button>
+          </nav>
         </div>
+        <a class="home-weiter" href="#home-zahlen" aria-label="Zum Archiv scrollen"><span aria-hidden="true">⌄</span></a>
         <button class="home-video-toggle" type="button" hidden aria-label="Hintergrundvideo abspielen">▶</button>
       </header>
-      <section class="home-universe" aria-label="Vier Welten im Aporia-Universum">
+      <section class="home-zahlen home-einblenden" id="home-zahlen" aria-label="Das Archiv in Zahlen">
+        <a class="home-zahl" href="../../inhalte/spezies/Spezies_%C3%BCbersicht/Spezies.html" data-route="spezies"><strong data-home-zahl="spezies">–</strong><span>Spezies</span></a>
+        <a class="home-zahl" href="#" data-route="planeten"><strong data-home-zahl="planeten">–</strong><span>Planeten</span></a>
+        <a class="home-zahl" href="#" data-route="monde"><strong data-home-zahl="monde">–</strong><span>Monde</span></a>
+        <a class="home-zahl" href="#" data-route="sterne"><strong data-home-zahl="sterne">–</strong><span>Sterne</span></a>
+      </section>
+      <section class="home-universe home-einblenden" aria-label="Vier Welten im Aporia-Universum">
         <img class="home-universe-galaxy" data-media-image="kosmologie.kosmologie-galaxien"
              alt="" loading="lazy" decoding="async">
-        <figure class="home-universe-art">
+        <figure class="home-universe-art" data-home-neigung>
+          <span class="home-emblem-ring" aria-hidden="true"></span>
           <img src="../../assets/bilder/hauptseite/Design%20ohne%20Titel(1).png"
                alt="Aporia Universum. Verschiedene Spezies, fremde Welten und Raumschiffe umgeben das Logo."
                width="2000" height="2000" decoding="async">
@@ -40,7 +62,7 @@
               <img src="../../assets/bilder/Himmelskörper/EisWelten/blauweie-eiswelt-im-all/hauptseite/blauweie-eiswelt-im-all-bee584865d-vorschau.webp"
                    alt="" width="373" height="560" loading="lazy" decoding="async">
             </div>
-            <div class="home-world-copy"><p>Eiswelt</p><h2>Blauweiße Eiswelt</h2></div>
+            <div class="home-world-copy"><p>Eiswelt</p><h2>Blauweiße Eiswelt</h2><span class="home-world-mehr">Dossier öffnen →</span></div>
           </a>
           <a class="home-world home-world--ocean" data-planet-dossier="biolumineszente-ozeanwelt-im-all"
              href="../../inhalte/himmelskoerper/planeten/details/biolumineszente-ozeanwelt-im-all/hauptseite/index.html">
@@ -48,7 +70,7 @@
               <img src="../../assets/bilder/Himmelskörper/OzeanWelt/biolumineszente-ozeanwelt-im-all/hauptseite/biolumineszente-ozeanwelt-im-all-c8684fc79e-vorschau.webp"
                    alt="" width="373" height="560" loading="lazy" decoding="async">
             </div>
-            <div class="home-world-copy"><p>Ozeanwelt</p><h2>Biolumineszenter Ozean</h2></div>
+            <div class="home-world-copy"><p>Ozeanwelt</p><h2>Biolumineszenter Ozean</h2><span class="home-world-mehr">Dossier öffnen →</span></div>
           </a>
         </div>
         <div class="home-worlds home-worlds--right">
@@ -58,7 +80,7 @@
               <img src="../../assets/bilder/Himmelskörper/Vulkanwelten/aschekrone-uber-dem-vulkanplaneten/hauptseite/aschekrone-uber-dem-vulkanplaneten-e730b41089-vorschau.webp"
                    alt="" width="373" height="560" loading="lazy" decoding="async">
             </div>
-            <div class="home-world-copy"><p>Vulkanwelt</p><h2>Aschekrone</h2></div>
+            <div class="home-world-copy"><p>Vulkanwelt</p><h2>Aschekrone</h2><span class="home-world-mehr">Dossier öffnen →</span></div>
           </a>
           <a class="home-world home-world--desert" data-planet-dossier="bernsteinwusten-unter-weier-sonne"
              href="../../inhalte/himmelskoerper/planeten/details/bernsteinwusten-unter-weier-sonne/hauptseite/index.html">
@@ -66,11 +88,43 @@
               <img src="../../assets/bilder/Himmelskörper/WüstenPlaneten/bernsteinwusten-unter-weier-sonne/hauptseite/bernsteinwusten-unter-weier-sonne-ec2c871b79-vorschau.webp"
                    alt="" width="373" height="560" loading="lazy" decoding="async">
             </div>
-            <div class="home-world-copy"><p>Wüstenplanet</p><h2>Bernsteinwüsten</h2></div>
+            <div class="home-world-copy"><p>Wüstenplanet</p><h2>Bernsteinwüsten</h2><span class="home-world-mehr">Dossier öffnen →</span></div>
           </a>
         </div>
       </section>
-      <section class="home-panorama" aria-label="Schauplätze und Leben im Aporia-Universum">
+      <section class="home-entdecken home-einblenden" aria-labelledby="home-entdecken-titel">
+        <div class="home-abschnitt-kopf">
+          <p class="home-kicker">Täglich neu entdecken</p>
+          <h2 id="home-entdecken-titel">Welt des Augenblicks</h2>
+        </div>
+        <article class="home-welt-zufall" data-home-welt aria-live="polite">
+          <a class="home-welt-bild" href="#" data-home-welt-link><img alt="" data-home-welt-bild decoding="async"></a>
+          <div class="home-welt-text">
+            <p class="home-kicker" data-home-welt-typ>Himmelskörper</p>
+            <h3 data-home-welt-name>Das Archiv wird geladen …</h3>
+            <p class="home-welt-hinweis">Eine zufällige Welt aus dem Himmelskörper-Archiv. Würfle neu, um weiterzureisen.</p>
+            <div class="home-welt-knoepfe">
+              <a class="home-knopf home-knopf--gold" href="#" data-home-welt-link>Dossier öffnen</a>
+              <button class="home-knopf" type="button" data-home-welt-neu disabled>⟳ Andere Welt</button>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section class="home-spezies home-einblenden" aria-labelledby="home-spezies-titel">
+        <div class="home-abschnitt-kopf">
+          <p class="home-kicker">Leben zwischen den Sternen</p>
+          <h2 id="home-spezies-titel">Spezies im Archiv</h2>
+          <div class="home-spezies-steuerung">
+            <button class="home-pfeil" type="button" data-home-spezies-schritt="-1" aria-label="Vorherige Spezies">‹</button>
+            <button class="home-pfeil" type="button" data-home-spezies-schritt="1" aria-label="Nächste Spezies">›</button>
+          </div>
+        </div>
+        <div class="home-spezies-spur" data-home-spezies tabindex="0" aria-label="Spezies-Dossiers – mit Pfeiltasten blättern">
+          <p class="home-spezies-status">Spezies werden geladen …</p>
+        </div>
+        <a class="home-mehr" href="../../inhalte/spezies/Spezies_%C3%BCbersicht/Spezies.html" data-route="spezies">Alle Spezies im Speziesarchiv →</a>
+      </section>
+      <section class="home-panorama home-einblenden" aria-label="Schauplätze und Leben im Aporia-Universum">
         <a class="home-scene home-scene--orvaya" href="../../inhalte/himmelskoerper/orvaya.html" data-route="orvaya">
           <img loading="lazy" decoding="async" data-media-image="home.panorama.orvaya" alt="">
           <div class="home-scene-copy">

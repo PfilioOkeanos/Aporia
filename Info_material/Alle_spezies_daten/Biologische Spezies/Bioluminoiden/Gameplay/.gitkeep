@@ -1,0 +1,488 @@
+# BIOLUMINOIDEN – GAMEPLAY
+**Dossierversion:** 2.2  
+**Spiel:** APORIA – Unter fremden Kronen  
+**Entwicklungsumgebung:** Unreal Engine  
+**Ziel:** Datengetriebene, erweiterbare Implementierung
+
+## 8.1 Rolle der Spezies
+
+Die Bioluminoiden sind eine eigenständige intelligente Spezies innerhalb des APORIA-Universums.
+
+Sie können als NPCs, Forscher, Händler, Diplomaten, Reisende, Techniker und Angehörige unterschiedlicher Organisationen auftreten.
+
+Ihre biologischen Besonderheiten beeinflussen Fortbewegung, Kommunikation, Sinneswahrnehmung und medizinische Versorgung.
+
+Die Spezies soll nicht auf Lichtkampffähigkeiten reduziert werden.
+
+## 8.2 Vier Körpermodelle
+
+Für die Selari werden vier grundlegende anatomische Modelle vorgesehen.
+
+### Thaleri
+
+Schlanke Körperform mit sechs Gliedmaßen und ausspannbaren Gleitmembranen.
+
+### Vorali
+
+Breite, flache Körperform mit acht Gliedmaßen.
+
+### Nemerai
+
+Amphibische Körperform mit paddelartigen Gliedmaßen und kräftigem Schwanz.
+
+### Serrathi
+
+Hochbeinige terrestrische Körperform mit widerstandsfähigen Schutzstrukturen.
+
+Alle Formen erhalten individuelle Erscheinungsvarianten.
+
+## 8.3 Fortbewegung
+
+### Thaleri
+
+- Klettern.
+- Balancieren.
+- Kontrolliertes Gleiten.
+- Fortbewegung auf großen Vegetationsstrukturen.
+
+### Vorali
+
+- Bewegung in engen Räumen.
+- Klettern auf geeigneten Oberflächen.
+- Stabile Bewegung auf unebenem Untergrund.
+- Orientierung durch mechanische Reize.
+
+### Nemerai
+
+- Schwimmen.
+- Tauchen.
+- Amphibische Fortbewegung.
+- Nutzung flacher Wasserwege.
+
+### Serrathi
+
+- Ausdauernde Landbewegung.
+- Trittsichere Bewegung auf felsigem Gelände.
+- Überwinden unterschiedlicher Höhenprofile.
+- Effiziente Fortbewegung auf offenen Flächen.
+
+## 8.4 Biologische Lichtkommunikation
+
+Die Selari besitzen eine eigene Lichtsprache.
+
+NPCs erzeugen Signale abhängig von Gespräch, Situation und individuellem Verhalten.
+
+Die optischen Muster werden aus wiederverwendbaren Signalbausteinen zusammengesetzt.
+
+Ein gemeinsames semantisches Signalsystem ermöglicht die Darstellung derselben Aussage durch unterschiedliche Körperformen.
+
+## 8.5 Lichtsignaturen
+
+Individuen besitzen unterschiedliche biologische Lichtmerkmale.
+
+Diese können zur visuellen Wiedererkennung verwendet werden.
+
+Die persönliche Signatur hängt von genetischen, entwicklungsbiologischen und erlernten Eigenschaften ab.
+
+Technische Nachahmung ist grundsätzlich möglich.
+
+Eine Lichtsignatur gilt deshalb nicht als vollständig sichere Identifikation.
+
+## 8.6 Spielerkommunikation
+
+Spieler können mithilfe geeigneter Geräte bioluminoide Signale übersetzen.
+
+Ohne Übersetzung sind zunächst nur einfache Signale verständlich.
+
+Durch Forschung und Lernen können weitere Bedeutungen erschlossen werden.
+
+Die vollständige Kommunikation soll nicht ausschließlich aus einem manuellen Entschlüsselungs-Minispiel bestehen.
+
+## 8.7 Biologische Fähigkeiten
+
+### Lichtkommunikation
+
+Übertragung visueller Informationen an geeignete Empfänger.
+
+### Signalanpassung
+
+Veränderung der Intensität und räumlichen Verteilung einzelner Lichtfelder.
+
+### Optische Ruhe
+
+Unterdrückung unnötiger Lichtemission.
+
+### Nahbereichsbeleuchtung
+
+Schwache Beleuchtung unmittelbar benachbarter Objekte.
+
+### Musterimitation
+
+Begrenzte Nachahmung bekannter Lichtsignale.
+
+### Besondere Signalwahrnehmung
+
+Verbesserte Erkennung bestimmter biolumineszenter Muster.
+
+## 8.8 Biologische Nachteile
+
+- Energieverbrauch durch starke Lichtemission.
+- Eingeschränkte Signalwirkung bei hellem Tageslicht.
+- Reduzierte Sichtweite bei Nebel und Hindernissen.
+- Verletzbarkeit bestimmter Lichtorgane.
+- Stoffwechselabhängigkeit.
+- Körperformspezifische Bewegungsgrenzen.
+- Mögliche Erkrankungen der Photocyten.
+
+Diese Nachteile können durch Technik teilweise ausgeglichen werden.
+
+## 8.9 Wahrnehmungssystem
+
+Die vier Körperformen besitzen unterschiedliche sensorische Schwerpunkte.
+
+Thaleri sind besonders auf räumliche Orientierung ausgelegt.
+
+Vorali besitzen eine ausgeprägte mechanische Wahrnehmung.
+
+Nemerai können Wasserbewegungen erfassen.
+
+Serrathi verfügen über eine gute terrestrische Bewegungskoordination.
+
+Alle Formen besitzen komplexe optische Wahrnehmung.
+
+## 8.10 Genetisches System
+
+Die genetischen Daten eines Individuums werden von seiner dargestellten Körperform getrennt gespeichert.
+
+Das System unterscheidet:
+
+**Genotyp:** Erbliche Eigenschaften.
+
+**Entwicklungsbedingungen:** Biologische und äußere Einflüsse während der Embryonalentwicklung.
+
+**Morphologie:** Resultierende Körperform.
+
+**Individuelle Variation:** Größe, Pigmentierung, Lichtorgane und andere Eigenschaften.
+
+Dadurch können unterschiedliche Körperformen innerhalb derselben Spezies simuliert werden.
+
+## 8.11 Fortpflanzung
+
+Die drei Fortpflanzungswege können in der Hintergrundsimulation berücksichtigt werden.
+
+### Sexuelle Fortpflanzung
+
+Genetische Rekombination zwischen zwei kompatiblen Individuen.
+
+### Parthenogenese
+
+Entwicklung aus einer unbefruchteten Eizelle mit besonderer Chromosomenregulation.
+
+### Knospung
+
+Entwicklung eines neuen Organismus aus spezialisierten reproduktiven Keimgeweben.
+
+Die Simulation muss physiologische Voraussetzungen, genetische Folgen und Entwicklungsbedingungen berücksichtigen.
+
+## 8.12 Nachwuchsentwicklung
+
+Die Körperform wird während der Embryonalentwicklung festgelegt.
+
+Nach dem Schlüpfen wachsen Organe, Muskulatur und Leuchtgewebe weiter.
+
+Die komplexe Lichtsprache entwickelt sich durch Lernen.
+
+Die Entwicklungsphasen können für wichtige Charaktere detailliert und für Hintergrundpopulationen vereinfacht simuliert werden.
+
+## 8.13 Medizin
+
+Verletzungen der Lichtorgane können die Kommunikation beeinträchtigen.
+
+Medizinische Geräte können biologische Funktionen unterstützen oder ersetzen.
+
+Die vier Körperformen benötigen angepasste Behandlungs- und Transportsysteme.
+
+Regeneration erfolgt nicht unmittelbar oder unbegrenzt.
+
+## 8.14 Forschungssystem
+
+Die wissenschaftlichen Besonderheiten der Spezies können mit dem APORIA-Forschungsbaum verbunden werden.
+
+Wichtige Forschungsgebiete sind:
+
+- Biologische Lichtproduktion.
+- Entwicklungsgenetik.
+- Polyphenismus.
+- Parthenogenese.
+- Knospung.
+- Regenerative Medizin.
+- Neurobiologie.
+- Xenolinguistik.
+- Optische Informationssicherheit.
+- Biologische Photonik.
+
+Forschungsergebnisse können Wissen, technische Verfahren und besondere Ausrüstung freischalten.
+
+## 8.15 Wissenschaftliche Untersuchungen
+
+Spieler können Lichtsignale und biologische Gewebe mit geeigneten Scannern untersuchen.
+
+Mögliche Messwerte sind:
+
+- Emissionsspektren.
+- Lichtintensität.
+- Signalfrequenz.
+- Räumliche Lichtverteilung.
+- Organstruktur.
+- Physiologischer Zustand.
+
+Komplexe genetische Untersuchungen benötigen spezialisierte Einrichtungen.
+
+## 8.16 Heimatwelt als Spielumgebung
+
+Nhalyss besitzt mehrere stark unterschiedliche erkundbare Lebensräume.
+
+Wichtige Regionen sind:
+
+- Hängende Wälder.
+- Spaltenwelten.
+- Tiefenbecken.
+- Höhlenlandschaften.
+- Spiegelmoore.
+- Hochländer.
+- Große Flusssysteme.
+- Historische Siedlungen.
+- Moderne Städte.
+- Forschungseinrichtungen.
+
+Die Körperformen können in diesen Umgebungen unterschiedliche Bewegungsmöglichkeiten besitzen.
+
+## 8.17 Ringsystem
+
+Der Scherbenkranz ist ein bedeutendes visuelles Merkmal des Planeten.
+
+Sein Erscheinungsbild verändert sich mit Tageszeit, Sonnenstand und geografischer Position.
+
+Unter geeigneten Bedingungen entstehen Ringschatten.
+
+Orbitalmissionen müssen gefährliche Ringregionen berücksichtigen.
+
+## 8.18 Siedlungen
+
+Bioluminoide Siedlungen besitzen besondere architektonische Anforderungen.
+
+Unterschiedliche Körperformen benötigen angepasste Verkehrswege.
+
+Einige Gebäude besitzen Kletterstrukturen, Wasserwege oder mehrere Höhenebenen.
+
+Öffentliche Kommunikationsräume verfügen über gezielt gestaltete Lichtverhältnisse.
+
+## 8.19 NPC-Verhalten
+
+NPCs können situationsabhängige Lichtsignale erzeugen.
+
+Einige körperliche Reaktionen sind unwillkürlich.
+
+Andere Signale dienen bewusst der Sprache.
+
+Die Körperform beeinflusst Fortbewegung und Haltung.
+
+Die individuelle Persönlichkeit bleibt davon unabhängig.
+
+## 8.20 Politische Interaktion
+
+Nhalyss ist politisch eigenständig.
+
+Spieler können verschiedenen Institutionen und Organisationen begegnen.
+
+Die Konföderation besitzt vertraglich geregelte Beziehungen zum Bund der Sichtlinien.
+
+Die unterschiedlichen politischen Interessen bieten Möglichkeiten für Diplomatie, Handel und wissenschaftliche Zusammenarbeit.
+
+## 8.21 Historische Inhalte
+
+Die lange Geschichte ermöglicht zahlreiche spätere Erkundungs- und Forschungsinhalte.
+
+Besonders relevant sind:
+
+- Frühe Lichtarchive.
+- Die Große Überflutung von Nereth.
+- Die Engpasskriege.
+- Die Spiegelwirren.
+- Die Moorkrise.
+- Der Formenstreit.
+- Die Gründung des Bundes.
+- Der Erste Kontakt.
+- Der Vertrag von Seyrath.
+- Die Tiefenarchive von Ildeth.
+
+Konkrete Missionen werden später im Story- und Questsystem ausgearbeitet.
+
+## 8.22 Ausrüstung
+
+Die vier Körperformen benötigen unterschiedliche Ausrüstung.
+
+### Thaleri
+
+Flexible Schutzsysteme, die Gleitmembranen freihalten.
+
+### Vorali
+
+Kompakte körpernahe Ausrüstung für enge Räume.
+
+### Nemerai
+
+Wasserbeständige Geräte und amphibische Schutzsysteme.
+
+### Serrathi
+
+Robuste Ausrüstung für längere terrestrische Fortbewegung.
+
+Für alle Formen können technische Systeme biologische Lichtkommunikation nach außen übertragen.
+
+## 8.23 Raumanzüge
+
+Raumanzüge berücksichtigen unterschiedliche Anatomien.
+
+Die Position der Lichtorgane ist für Kommunikation und Schutz wichtig.
+
+Verdeckte biologische Signale können über technische Displays wiedergegeben werden.
+
+Die Fortbewegung bei geringer Gravitation erfordert formabhängige Anpassungen.
+
+## 8.24 Materialdarstellung in Unreal Engine
+
+Die Lichtorgane werden hauptsächlich über Emissive-Materialien dargestellt.
+
+Geeignete Parameter steuern:
+
+- Farbe.
+- Helligkeit.
+- Lichtmuster.
+- Räumliche Signalverteilung.
+- Zeitliche Aktivierung.
+- Individuelle Lichtsignaturen.
+
+Nicht jedes Lichtfeld benötigt eine dynamische Lichtquelle.
+
+## 8.25 Animation
+
+Die vier Körperformen besitzen geeignete eigene Skelette beziehungsweise Rig-Systeme.
+
+Wichtige Animationen umfassen Fortbewegung, Ruhe, Werkzeuggebrauch und Kommunikation.
+
+Flexible Lichtorgane können zusätzlich animiert werden.
+
+Die Lichtmuster werden über ein gemeinsames Signalsystem gesteuert.
+
+## 8.26 Performance
+
+Entfernte Charaktere verwenden vereinfachte Animationen und Leuchtmuster.
+
+Die Detailstufe orientiert sich an Entfernung, Sichtbarkeit und Bedeutung.
+
+Komplexe dynamische Beleuchtung wird auf wichtige Szenen beschränkt.
+
+Die Daten der biologischen Sprache bleiben unabhängig von der Darstellung.
+
+## 8.27 Persistenz
+
+Individuen benötigen stabile Identitäten, die unabhängig von konkreten Actor-Instanzen bestehen.
+
+Genetische Eigenschaften, Körperform, individuelle Lichtsignatur und Entwicklungszustand gehören zu den persistenten Charakterdaten.
+
+Kurzfristige Lichtanimationen müssen nicht dauerhaft gespeichert werden, sofern sie aus dem aktuellen Zustand rekonstruiert werden können.
+
+## 8.28 Vorbereitung auf Unreal Engine 6
+
+Die grundlegenden Gameplaydaten werden von der Engine-spezifischen Darstellung getrennt.
+
+Speziesdaten, genetische Eigenschaften, Morphologien und Signalsemantik bleiben unabhängig von bestimmten Actor-Implementierungen.
+
+Die Darstellung kann später an neue Engine-Systeme angepasst werden.
+
+## 8.29 Bildmaterial
+
+Für die Bioluminoiden werden eigenständige visuelle Designreihen benötigt.
+
+Jede Körperform erhält:
+
+- Anatomische Referenzansichten.
+- Individuelle Körpervarianten.
+- Entwicklungsstadien.
+- Lichtorgandarstellungen.
+- Bewegungsreferenzen.
+- Kleidung und Ausrüstung.
+- Wissenschaftliche Querschnitte.
+
+## 8.30 Heimatwelt-Medien
+
+Wichtige Motive sind:
+
+- Planet Nhalyss aus dem Orbit.
+- Scherbenkranz.
+- Ringschatten.
+- Hängende Wälder.
+- Spaltenlandschaften.
+- Höhlensysteme.
+- Spiegelmoore.
+- Seyrath.
+- Ireth-Wache.
+- Historische Städte.
+- Forschungseinrichtungen.
+
+## 8.31 Sounddesign
+
+Jede Körperform erhält individuelle biologische Geräusche.
+
+Die Soundpakete sollen kurze, einzeln verwendbare WAV-Samples enthalten.
+
+Wichtige Geräuschtypen sind:
+
+- Körperbewegungen.
+- Kontaktgeräusche.
+- Atemgeräusche.
+- Ruhegeräusche.
+- Akustische Warnsignale.
+- Mechanische Bewegungen der Leuchtlamellen.
+- Kurze kulturelle Klangmotive.
+
+Biolumineszenz selbst erzeugt nicht automatisch einen hörbaren Klang.
+
+## 8.32 Musik und Unterhaltung
+
+Die Selari besitzen akustische Musik und optische Kunstformen.
+
+Einige Aufführungen kombinieren Licht, Bewegung und Klang.
+
+Für die audiovisuelle Darstellung können technische Übersetzungen verwendet werden.
+
+Diese sind von den natürlichen biologischen Lauten zu unterscheiden.
+
+## 8.33 Radio und Fernsehen
+
+Bioluminoide Medien besitzen optische und akustische Übertragungsformate.
+
+Radioähnliche Angebote verwenden nichtoptische Kommunikationsformen.
+
+Fernsehähnliche Systeme können biologische Lichtmuster technisch reproduzieren.
+
+Interstellare Medien verwenden Übersetzungssysteme für andere Spezies.
+
+## 8.34 Spätere Erweiterungen
+
+Weitere regionale Körpervarianten können ergänzt werden, sofern sie zum gemeinsamen genetischen Entwicklungsmodell passen.
+
+Neue biologische Fortpflanzungswege oder vollständig andere Körperbaupläne benötigen eine erneute Konsistenzprüfung.
+
+Die vier Hauptformen und drei Fortpflanzungswege bilden den aktuellen verbindlichen biologischen Grundbestand.
+
+## 8.35 Spielbalance
+
+Keine Körperform soll grundsätzlich allen anderen überlegen sein.
+
+Vorteile entstehen durch anatomische Eigenschaften und passende Umweltbedingungen.
+
+Technologie kann zahlreiche biologische Einschränkungen ausgleichen.
+
+Die Selari bleiben eine intelligente, gesellschaftlich vielfältige Spezies und werden nicht auf starre Klassen oder biologische Kasten reduziert.

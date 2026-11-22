@@ -1,0 +1,611 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Velhar",
+  "genitiv": "von Velhar",
+  "dossierName": "Velhar-Dossier",
+  "klasse": "Gelber Zwerg (G5 V)",
+  "intro": "Velhar ist ein sonnenähnlicher gelber Zwerg der Spektralklasse G5 V, Heimatstern der Symbionten. Ein ruhiger Einzelstern. Velhar ist der Zentralstern des Velhar-Systems.",
+  "globusDaten": {
+    "planet": "gelbweier-stern-hinter-dunkler-kohlenstoffwolke",
+    "klasse": "Vulkan",
+    "radius": 653958000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=nhalora-stern",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-C2C02191EC"
+    ],
+    [
+      "Typ",
+      "Gelber Zwerg (G5 V)"
+    ],
+    [
+      "Sternsystem",
+      "Velhar-System"
+    ],
+    [
+      "Masse",
+      "0,95 Sonnenmassen"
+    ],
+    [
+      "Radius",
+      "0,94 Sonnenradien"
+    ],
+    [
+      "Leuchtkraft",
+      "0,8 Sonnenleuchtkräfte"
+    ],
+    [
+      "Oberflächentemperatur",
+      "ca. 5.650 K"
+    ],
+    [
+      "Alter",
+      "ca. 4,9 Mrd. Jahre"
+    ],
+    [
+      "Monde",
+      "6 (Velhar I, Nhalora, Gebundenes Paar, Velhar III, Velhar IV, Wirtsschweif)"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Velhar-System"
+    ],
+    [
+      "Entfernung zur Sonne",
+      "27 Lichtjahre"
+    ],
+    [
+      "Nächste Nachbarsysteme",
+      "Seyvar-System (11,7 Lj), Orvaya-System (14,3 Lj)"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Velhar im Velhar-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=nhalora-stern",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Velhar I",
+      "href": "inhalte/himmelskoerper/planeten/details/narbenplanet-mit-freigelegtem-metallkern/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Nhalora",
+      "href": "inhalte/himmelskoerper/planeten/details/planet-der-blauen-binnenmeere/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Gebundenes Paar",
+      "href": "inhalte/himmelskoerper/asteroiden/details/roter-asteroid-mit-doppelkrater/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Velhar III",
+      "href": "inhalte/himmelskoerper/planeten/details/bronzener-gasriese-auf-rucklaufiger-bahn/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Velhar IV",
+      "href": "inhalte/himmelskoerper/planeten/details/blaugruner-eisriese-im-all/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Wirtsschweif",
+      "href": "inhalte/himmelskoerper/kometen/details/einsamer-komet-mit-zwei-ausbruchen/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Symbionten",
+      "titel": "Nhalora",
+      "href": "inhalte/himmelskoerper/planeten/details/planet-der-blauen-binnenmeere/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Symbionten",
+      "href": "inhalte/spezies/Biologische Spezies/Symbionten/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Velhar-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=nhalora-stern"
+    },
+    {
+      "titel": "Speziesdossier Symbionten",
+      "href": "inhalte/spezies/Biologische Spezies/Symbionten/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#0d0b08",
+      "tiefe": "#1c1913",
+      "akzent": "#ffeec7",
+      "sand": "#ffe5ad",
+      "moos": "#d9ec9e",
+      "ozean": "#adcfba",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#73674c"
+    },
+    "schichten": [
+      [
+        "Strahlung",
+        "Leuchtkraft"
+      ],
+      [
+        "Hülle",
+        "Spektralklasse"
+      ],
+      [
+        "Kern",
+        "Fusion"
+      ],
+      [
+        "Zeit",
+        "Lebenszyklus"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Spektralklasse": {
+      "gruppe": "Wissenschaft",
+      "icon": "✦",
+      "intro": "Spektralklasse von Velhar.",
+      "abschnitte": [
+        {
+          "titel": "Einordnung",
+          "daten": [
+            [
+              "Typ",
+              "Gelber Zwerg (G5 V)"
+            ],
+            [
+              "Oberflächentemperatur",
+              "ca. 5.650 K"
+            ],
+            [
+              "Farbe",
+              "gelb"
+            ]
+          ]
+        }
+      ]
+    },
+    "Fusion": {
+      "gruppe": "Wissenschaft",
+      "icon": "☀",
+      "intro": "Fusion von Velhar.",
+      "abschnitte": [
+        {
+          "titel": "Energiequelle",
+          "text": [
+            "Im Kern von Velhar verschmilzt Wasserstoff zu Helium."
+          ]
+        }
+      ]
+    },
+    "Leuchtkraft": {
+      "gruppe": "Wissenschaft",
+      "icon": "☀",
+      "intro": "Leuchtkraft von Velhar.",
+      "abschnitte": [
+        {
+          "titel": "Strahlung",
+          "daten": [
+            [
+              "Leuchtkraft",
+              "0,8 Sonnenleuchtkräfte"
+            ],
+            [
+              "Habitable Zone",
+              "0,85–1,49 AE"
+            ]
+          ]
+        }
+      ]
+    },
+    "Lebenszyklus": {
+      "gruppe": "Wissenschaft",
+      "icon": "⧗",
+      "intro": "Lebenszyklus von Velhar.",
+      "abschnitte": [
+        {
+          "titel": "Lebensdauer",
+          "text": [
+            "Ein Stern mit 0,95 Sonnenmassen bleibt rund 11 Milliarden Jahre auf der Hauptreihe; Velhar ist etwa 4,9 Milliarden Jahre alt."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Velhar auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Velhar",
+          "text": [
+            "Velhar ist ein sonnenähnlicher gelber Zwerg der Spektralklasse G5 V, Heimatstern der Symbionten. Ein ruhiger Einzelstern.",
+            "Velhar ist der Zentralstern des Velhar-Systems."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Gelber Zwerg (G5 V)"
+            ],
+            [
+              "Sternsystem",
+              "Velhar-System"
+            ],
+            [
+              "Masse",
+              "0,95 Sonnenmassen"
+            ],
+            [
+              "Radius",
+              "0,94 Sonnenradien"
+            ],
+            [
+              "Leuchtkraft",
+              "0,8 Sonnenleuchtkräfte"
+            ],
+            [
+              "Oberflächentemperatur",
+              "ca. 5.650 K"
+            ],
+            [
+              "Alter",
+              "ca. 4,9 Mrd. Jahre"
+            ],
+            [
+              "Monde",
+              "6 (Velhar I, Nhalora, Gebundenes Paar, Velhar III, Velhar IV, Wirtsschweif)"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Nhalora",
+          "text": [
+            "Das Velhar-System ist die Heimat der Symbionten: Ihr Planet Nhalora umkreist Velhar."
+          ],
+          "verweise": [
+            [
+              "Nhalora",
+              "inhalte/himmelskoerper/planeten/details/planet-der-blauen-binnenmeere/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Symbionten",
+              "inhalte/spezies/Biologische Spezies/Symbionten/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Velhar im Raum.",
+      "abschnitte": [
+        {
+          "titel": "Lage im Raum",
+          "daten": [
+            [
+              "Entfernung zur Sonne",
+              "27 Lichtjahre"
+            ],
+            [
+              "Nächste Nachbarsysteme",
+              "Seyvar-System (11,7 Lj), Orvaya-System (14,3 Lj), Halvorn-System (14,9 Lj)"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Velhar · Stern",
+              "Gelber Zwerg (G5 V)"
+            ],
+            [
+              "Velhar I · 0,42 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Nhalora · 0,95 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Velhar III · 3,6 AE",
+              "Gasriese"
+            ],
+            [
+              "Velhar IV · 9,4 AE",
+              "Eisriese"
+            ],
+            [
+              "Sporengürtel · 1,7–2,5 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 36–52 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Velhar I",
+              "inhalte/himmelskoerper/planeten/details/narbenplanet-mit-freigelegtem-metallkern/hauptseite/index.html"
+            ],
+            [
+              "Nhalora",
+              "inhalte/himmelskoerper/planeten/details/planet-der-blauen-binnenmeere/hauptseite/index.html"
+            ],
+            [
+              "Velhar III",
+              "inhalte/himmelskoerper/planeten/details/bronzener-gasriese-auf-rucklaufiger-bahn/hauptseite/index.html"
+            ],
+            [
+              "Velhar IV",
+              "inhalte/himmelskoerper/planeten/details/blaugruner-eisriese-im-all/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Velhar.",
+      "abschnitte": [
+        {
+          "titel": "Physik",
+          "daten": [
+            [
+              "Masse",
+              "0,95 Sonnenmassen"
+            ],
+            [
+              "Radius",
+              "0,94 Sonnenradien"
+            ],
+            [
+              "Leuchtkraft",
+              "0,8 Sonnenleuchtkräfte"
+            ],
+            [
+              "Oberflächentemperatur",
+              "ca. 5.650 K"
+            ],
+            [
+              "Alter",
+              "ca. 4,9 Mrd. Jahre"
+            ],
+            [
+              "Monde",
+              "6 (Velhar I, Nhalora, Gebundenes Paar, Velhar III, Velhar IV, Wirtsschweif)"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Velhar.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Velhar entstand zusammen mit dem Velhar-System vor rund 4,9 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Umgebung": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Umgebung von Velhar.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Velhar · Stern",
+              "Gelber Zwerg (G5 V)"
+            ],
+            [
+              "Velhar I · 0,42 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Nhalora · 0,95 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Velhar III · 3,6 AE",
+              "Gasriese"
+            ],
+            [
+              "Velhar IV · 9,4 AE",
+              "Eisriese"
+            ],
+            [
+              "Sporengürtel · 1,7–2,5 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 36–52 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Velhar I",
+              "inhalte/himmelskoerper/planeten/details/narbenplanet-mit-freigelegtem-metallkern/hauptseite/index.html"
+            ],
+            [
+              "Nhalora",
+              "inhalte/himmelskoerper/planeten/details/planet-der-blauen-binnenmeere/hauptseite/index.html"
+            ],
+            [
+              "Velhar III",
+              "inhalte/himmelskoerper/planeten/details/bronzener-gasriese-auf-rucklaufiger-bahn/hauptseite/index.html"
+            ],
+            [
+              "Velhar IV",
+              "inhalte/himmelskoerper/planeten/details/blaugruner-eisriese-im-all/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Nachbarsysteme",
+          "liste": [
+            "Seyvar-System – 11,7 Lichtjahre",
+            "Orvaya-System – 14,3 Lichtjahre",
+            "Halvorn-System – 14,9 Lichtjahre",
+            "Kharuun-System – 18,4 Lichtjahre",
+            "Osselyr-System – 18,9 Lichtjahre"
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Velhar.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Wie stark schwankt die magnetische Aktivität?",
+            "Wie hat sich die Leuchtkraft seit der Entstehung verändert?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Velhar ist mit allen Bahndaten im Velhar-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=nhalora-stern"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Velhar.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "6 Monde: Velhar I, Nhalora, Gebundenes Paar, Velhar III, Velhar IV, Wirtsschweif"
+          ]
+        },
+        {
+          "titel": "Monde",
+          "karten": [
+            {
+              "titel": "Velhar I",
+              "text": "8.400 km Durchmesser, Umlauf in 102 Tage. Velhar I ist eine kleine, heiße und vernarbte Gesteinswelt."
+            },
+            {
+              "titel": "Nhalora",
+              "text": "13.252 km Durchmesser, Umlauf in 347 Tage. Nhalora ist die warme, feuchte Heimatwelt der Symbionten mit ausgedehnten Feuchtgebieten, flachen Gewässern und dicht bewachsenen Ufern."
+            },
+            {
+              "titel": "Gebundenes Paar",
+              "text": "60 km Durchmesser, Umlauf in 3,2 Jahre. Ein Asteroid mit einem fest anhaftenden kleineren Begleiter – zwei Körper, die sich nicht mehr trennen lassen."
+            },
+            {
+              "titel": "Velhar III",
+              "text": "136.000 km Durchmesser, Umlauf in 7 Jahre. Velhar III ist ein Gasriese mit zwei Dritteln Jupitermasse und kräftigen Wolkenbändern."
+            },
+            {
+              "titel": "Velhar IV",
+              "text": "49.200 km Durchmesser, Umlauf in 29,6 Jahre. Velhar IV ist ein kalter Eisriese am Rand des Systems."
+            },
+            {
+              "titel": "Wirtsschweif",
+              "text": "12 km Durchmesser, Umlauf in 48,1 Jahre. Ein periodischer Komet (rund 48 Jahre), dessen Doppelschweif in der symbiontischen Kultur als Sinnbild der Verbindung von Symbiont und Wirt gilt."
+            }
+          ],
+          "verweise": [
+            [
+              "Velhar I",
+              "inhalte/himmelskoerper/planeten/details/narbenplanet-mit-freigelegtem-metallkern/hauptseite/index.html"
+            ],
+            [
+              "Nhalora",
+              "inhalte/himmelskoerper/planeten/details/planet-der-blauen-binnenmeere/hauptseite/index.html"
+            ],
+            [
+              "Gebundenes Paar",
+              "inhalte/himmelskoerper/asteroiden/details/roter-asteroid-mit-doppelkrater/hauptseite/index.html"
+            ],
+            [
+              "Velhar III",
+              "inhalte/himmelskoerper/planeten/details/bronzener-gasriese-auf-rucklaufiger-bahn/hauptseite/index.html"
+            ],
+            [
+              "Velhar IV",
+              "inhalte/himmelskoerper/planeten/details/blaugruner-eisriese-im-all/hauptseite/index.html"
+            ],
+            [
+              "Wirtsschweif",
+              "inhalte/himmelskoerper/kometen/details/einsamer-komet-mit-zwei-ausbruchen/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Velhar.",
+      "abschnitte": [
+        {
+          "titel": "Velhar – Archivbild",
+          "bild": true,
+          "bildtext": "Velhar"
+        }
+      ]
+    }
+  }
+}

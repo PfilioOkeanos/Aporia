@@ -1,0 +1,319 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Blauer Sternenschleier",
+  "genitiv": "von Blauer Sternenschleier",
+  "dossierName": "Blauer Sternenschleier-Dossier",
+  "klasse": "Reflexionsnebel",
+  "intro": "Der blaue Sternenschleier markiert ein Nebelgebiet neben dem äußeren Iovar-System. Über die Detailseite ist das vorhandene Motiv erreichbar. Blauer Sternenschleier umkreist Iovar in 0 AE Abstand und braucht für einen Umlauf 0 Stunden.",
+  "globusDaten": {
+    "planet": "blauer-sternenschleier-im-reflexionsnebel",
+    "klasse": "Gasriese",
+    "radius": 1000000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=iovar-stern&objekt=iovar-nebel",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-3BE2A45504"
+    ],
+    [
+      "Typ",
+      "Reflexionsnebel"
+    ],
+    [
+      "Sternsystem",
+      "Iovar-System"
+    ],
+    [
+      "Zentralkörper",
+      "Iovar"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Iovar-System"
+    ],
+    [
+      "Zentralstern",
+      "Iovar",
+      "inhalte/himmelskoerper/sterne/details/roter-zwerg-kosmische-enzyklopadie/hauptseite/index.html"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Blauer Sternenschleier im Iovar-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=iovar-stern&objekt=iovar-nebel",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Iovar",
+      "href": "inhalte/himmelskoerper/sterne/details/roter-zwerg-kosmische-enzyklopadie/hauptseite/index.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Iovar-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=iovar-stern&objekt=iovar-nebel"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#05060a",
+      "tiefe": "#0b0e17",
+      "akzent": "#98ace1",
+      "sand": "#a0acbe",
+      "moos": "#7a9fb5",
+      "ozean": "#628ada",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#2c395e"
+    }
+  },
+  "kapitel": {
+    "Gas": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Gas von Blauer Sternenschleier.",
+      "abschnitte": [
+        {
+          "titel": "Gas",
+          "text": [
+            "Der Nebel besteht überwiegend aus Wasserstoff und Helium."
+          ]
+        }
+      ]
+    },
+    "Staub": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Staub von Blauer Sternenschleier.",
+      "abschnitte": [
+        {
+          "titel": "Staub",
+          "text": [
+            "Feiner Staub streut das Licht benachbarter Sterne und lässt den Nebel bläulich leuchten."
+          ]
+        }
+      ]
+    },
+    "Ionisation": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Ionisation von Blauer Sternenschleier.",
+      "abschnitte": [
+        {
+          "titel": "Ionisation",
+          "text": [
+            "Ein Reflexionsnebel leuchtet nicht selbst, sondern streut das Licht naher Sterne."
+          ]
+        }
+      ]
+    },
+    "Sternentstehung": {
+      "gruppe": "Natur",
+      "icon": "✦",
+      "intro": "Sternentstehung von Blauer Sternenschleier.",
+      "abschnitte": [
+        {
+          "titel": "Sternentstehung",
+          "text": [
+            "Ob im Nebel neue Sterne entstehen, ist nicht bekannt."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Blauer Sternenschleier auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Blauer Sternenschleier",
+          "text": [
+            "Der blaue Sternenschleier markiert ein Nebelgebiet neben dem äußeren Iovar-System. Über die Detailseite ist das vorhandene Motiv erreichbar.",
+            "Blauer Sternenschleier umkreist Iovar in 0 AE Abstand und braucht für einen Umlauf 0 Stunden."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Reflexionsnebel"
+            ],
+            [
+              "Sternsystem",
+              "Iovar-System"
+            ],
+            [
+              "Zentralkörper",
+              "Iovar"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Blauer Sternenschleier im Iovar-System.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Iovar · Stern",
+              "Roter Zwerg"
+            ],
+            [
+              "Iovar I · 0,22 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Iovar II · 0,41 AE",
+              "Ozeanplanet"
+            ],
+            [
+              "Iovar III · 0,84 AE",
+              "Gasriese"
+            ],
+            [
+              "Iovar IV · 1,17 AE",
+              "Eisplanet"
+            ],
+            [
+              "Iovars Zwergwelt · 1,4 AE",
+              "Zwergplanet"
+            ],
+            [
+              "Rostroter Asteroidengürtel · 0,5–0,7 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Kometengebiet Iovar · 1,5–1,6 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Iovar",
+              "inhalte/himmelskoerper/sterne/details/roter-zwerg-kosmische-enzyklopadie/hauptseite/index.html"
+            ],
+            [
+              "Iovar I",
+              "inhalte/himmelskoerper/planeten/details/ursprunglicher-gesteinsplanet-mit-einschlagkratern/hauptseite/index.html"
+            ],
+            [
+              "Iovar II",
+              "inhalte/himmelskoerper/planeten/details/ammoniak-ozeanplanet-mit-leuchtenden-rissen/hauptseite/index.html"
+            ],
+            [
+              "Iovar III",
+              "inhalte/himmelskoerper/planeten/details/saturnahnlicher-gasriese-mit-leuchtenden-eisringen/hauptseite/index.html"
+            ],
+            [
+              "Iovar IV",
+              "inhalte/himmelskoerper/planeten/details/blauweie-eiswelt-im-all/hauptseite/index.html"
+            ],
+            [
+              "Iovars Zwergwelt",
+              "inhalte/himmelskoerper/zwergplaneten/details/blaugrauer-zwergplanet-mit-eisring/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Blauer Sternenschleier.",
+      "abschnitte": [
+        {
+          "titel": "Physik",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Iovar"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Blauer Sternenschleier.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Blauer Sternenschleier entstand zusammen mit dem Iovar-System."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Blauer Sternenschleier.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Welche Sterne beleuchten den Nebel?",
+            "Entstehen in ihm neue Sterne?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Blauer Sternenschleier ist mit allen Bahndaten im Iovar-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=iovar-stern&objekt=iovar-nebel"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Blauer Sternenschleier.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Der blaue Sternenschleier markiert ein Nebelgebiet neben dem äußeren Iovar-System. Über die Detailseite ist das vorhandene Motiv erreichbar."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Blauer Sternenschleier.",
+      "abschnitte": [
+        {
+          "titel": "Blauer Sternenschleier – Archivbild",
+          "bild": true,
+          "bildtext": "Blauer Sternenschleier"
+        }
+      ]
+    }
+  }
+}

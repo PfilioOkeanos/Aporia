@@ -1,0 +1,519 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Grünschweif",
+  "genitiv": "von Grünschweif",
+  "dossierName": "Grünschweif-Dossier",
+  "klasse": "Komet",
+  "intro": "Ein Komet mit grünlich leuchtender Koma, der alle 60 Jahre das innere System erreicht. Grünschweif umkreist Halvorn in 14 AE Abstand und braucht für einen Umlauf 55,8 Jahre.",
+  "globusDaten": {
+    "planet": "komet-mit-gebogenem-blauem-ionenschweif",
+    "klasse": "Eis",
+    "radius": 6000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=dravelon-stern&objekt=dravelon-grunschweif",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-5988E249B3"
+    ],
+    [
+      "Typ",
+      "Komet"
+    ],
+    [
+      "Sternsystem",
+      "Halvorn-System"
+    ],
+    [
+      "Zentralkörper",
+      "Halvorn"
+    ],
+    [
+      "Große Halbachse",
+      "14 AE"
+    ],
+    [
+      "Umlaufzeit",
+      "55,8 Jahre"
+    ],
+    [
+      "Durchmesser",
+      "12 km"
+    ],
+    [
+      "Masse",
+      "5,43 · 10^14 kg"
+    ],
+    [
+      "Schwerkraft",
+      "0,1 cm/s²"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -210 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Halvorn-System"
+    ],
+    [
+      "Zentralstern",
+      "Halvorn",
+      "inhalte/himmelskoerper/sterne/details/sonnenahnliche-akkretionsscheibe-mit-schmaler-ringlucke/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "14 AE"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Grünschweif im Halvorn-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=dravelon-stern&objekt=dravelon-grunschweif",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Halvorn",
+      "href": "inhalte/himmelskoerper/sterne/details/sonnenahnliche-akkretionsscheibe-mit-schmaler-ringlucke/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Dendroarchen",
+      "titel": "Dravelon",
+      "href": "inhalte/himmelskoerper/planeten/details/lebender-jadeplanet-mit-flussbecken/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Dendroarchen",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Dendroarchen/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Halvorn-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=dravelon-stern&objekt=dravelon-grunschweif"
+    },
+    {
+      "titel": "Speziesdossier Dendroarchen",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Dendroarchen/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#080b09",
+      "tiefe": "#111914",
+      "akzent": "#bdeecd",
+      "sand": "#c2e5b1",
+      "moos": "#9ceca4",
+      "ozean": "#7ccfc2",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#456750"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Umlaufbahn"
+      ],
+      [
+        "Hülle",
+        "Schweif"
+      ],
+      [
+        "Hülle",
+        "Koma"
+      ],
+      [
+        "Kern",
+        "Kern"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Kern": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Kern von Grünschweif.",
+      "abschnitte": [
+        {
+          "titel": "Kometenkern",
+          "text": [
+            "Der Kern von Grünschweif misst rund 12 km und besteht aus einem lockeren Gemenge aus Eis, Staub und Gestein."
+          ],
+          "schichten": [
+            [
+              "Staubkruste",
+              "Dunkle, kohlenstoffreiche Oberfläche"
+            ],
+            [
+              "Eis-Staub-Gemisch",
+              "Wassereis, Kohlendioxid und Staub"
+            ],
+            [
+              "Kern",
+              "Lockeres Eis-Gestein-Gemenge"
+            ]
+          ]
+        }
+      ]
+    },
+    "Koma": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Koma von Grünschweif.",
+      "abschnitte": [
+        {
+          "titel": "Koma",
+          "text": [
+            "Nähert sich Grünschweif dem Stern Halvorn, verdampft Eis und bildet eine leuchtende Gashülle um den Kern."
+          ]
+        }
+      ]
+    },
+    "Schweif": {
+      "gruppe": "Natur",
+      "icon": "☄",
+      "intro": "Schweif von Grünschweif.",
+      "abschnitte": [
+        {
+          "titel": "Schweif",
+          "text": [
+            "Ein Komet mit grünlich leuchtender Koma, der alle 60 Jahre das innere System erreicht."
+          ]
+        }
+      ]
+    },
+    "Umlaufbahn": {
+      "gruppe": "Wissenschaft",
+      "icon": "◌",
+      "intro": "Umlaufbahn von Grünschweif.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Halvorn"
+            ],
+            [
+              "Große Halbachse",
+              "14 AE (2.094,4 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,92"
+            ],
+            [
+              "Bahnneigung",
+              "30°"
+            ],
+            [
+              "Umlaufzeit",
+              "55,8 Jahre"
+            ],
+            [
+              "Einstrahlung",
+              "0,003-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Sternnächster und fernster Punkt",
+          "daten": [
+            [
+              "Perihel",
+              "1,12 AE"
+            ],
+            [
+              "Aphel",
+              "26,88 AE"
+            ]
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Grünschweif auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Grünschweif",
+          "text": [
+            "Ein Komet mit grünlich leuchtender Koma, der alle 60 Jahre das innere System erreicht.",
+            "Grünschweif umkreist Halvorn in 14 AE Abstand und braucht für einen Umlauf 55,8 Jahre."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Komet"
+            ],
+            [
+              "Sternsystem",
+              "Halvorn-System"
+            ],
+            [
+              "Zentralkörper",
+              "Halvorn"
+            ],
+            [
+              "Große Halbachse",
+              "14 AE"
+            ],
+            [
+              "Umlaufzeit",
+              "55,8 Jahre"
+            ],
+            [
+              "Durchmesser",
+              "12 km"
+            ],
+            [
+              "Masse",
+              "5,43 · 10^14 kg"
+            ],
+            [
+              "Schwerkraft",
+              "0,1 cm/s²"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -210 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Dravelon",
+          "text": [
+            "Das Halvorn-System ist die Heimat der Dendroarchen: Ihr Planet Dravelon umkreist Halvorn."
+          ],
+          "verweise": [
+            [
+              "Dravelon",
+              "inhalte/himmelskoerper/planeten/details/lebender-jadeplanet-mit-flussbecken/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Dendroarchen",
+              "inhalte/spezies/Gigantische Lebensformen/Dendroarchen/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Grünschweif im Halvorn-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Halvorn"
+            ],
+            [
+              "Große Halbachse",
+              "14 AE (2.094,4 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,92"
+            ],
+            [
+              "Bahnneigung",
+              "30°"
+            ],
+            [
+              "Umlaufzeit",
+              "55,8 Jahre"
+            ],
+            [
+              "Einstrahlung",
+              "0,003-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Halvorn · Stern",
+              "Orangefarbener Zwerg (K0 V)"
+            ],
+            [
+              "Halvorn I · 0,35 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Dravelon · 0,75 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Halvorn III · 1,42 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Halvorn IV · 4,8 AE",
+              "Gasriese"
+            ],
+            [
+              "Halvorn V · 12 AE",
+              "Eisriese"
+            ],
+            [
+              "Rindengürtel · 2,2–3 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 32–46 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Halvorn",
+              "inhalte/himmelskoerper/sterne/details/sonnenahnliche-akkretionsscheibe-mit-schmaler-ringlucke/hauptseite/index.html"
+            ],
+            [
+              "Halvorn I",
+              "inhalte/himmelskoerper/planeten/details/lebender-basaltplanet-im-orbitalen-dammerlicht/hauptseite/index.html"
+            ],
+            [
+              "Dravelon",
+              "inhalte/himmelskoerper/planeten/details/lebender-jadeplanet-mit-flussbecken/hauptseite/index.html"
+            ],
+            [
+              "Halvorn III",
+              "inhalte/himmelskoerper/planeten/details/lebender-felsplanet-im-all/hauptseite/index.html"
+            ],
+            [
+              "Halvorn IV",
+              "inhalte/himmelskoerper/planeten/details/gasriese-unter-zwei-sonnen/hauptseite/index.html"
+            ],
+            [
+              "Halvorn V",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=dravelon-stern&objekt=dravelon-halvorn-v"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Grünschweif.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "6 km"
+            ],
+            [
+              "Masse",
+              "5,43 · 10^14 kg"
+            ],
+            [
+              "Mittlere Dichte",
+              "0,6 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "0 m/s² (0 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "0 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Grünschweif.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Grünschweif stammt aus den kalten Außenbereichen des Halvorn-Systems und wurde auf seine heutige, langgestreckte Bahn gelenkt."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Grünschweif.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Was steckt hinter den Besonderheiten von Grünschweif?",
+            "Woher stammt der Komet genau?",
+            "Wie lange übersteht sein Kern noch die Annäherungen an den Stern?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Grünschweif ist mit allen Bahndaten im Halvorn-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=dravelon-stern&objekt=dravelon-grunschweif"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Grünschweif.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Als Anomalie in der Sternenkarte verzeichnet"
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Grünschweif.",
+      "abschnitte": [
+        {
+          "titel": "Grünschweif – Archivbild",
+          "bild": true,
+          "bildtext": "Grünschweif"
+        }
+      ]
+    }
+  }
+}

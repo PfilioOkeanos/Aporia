@@ -1,0 +1,596 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Ashkor",
+  "genitiv": "von Ashkor",
+  "dossierName": "Ashkor-Dossier",
+  "klasse": "Orangefarbener Zwerg (K5 V)",
+  "intro": "Ashkor ist ein orangefarbener Zwerg der Spektralklasse K5 V. Er bildet mit dem Braunen Zwerg Ashkor B ein weites Doppelsystem – dessen Schwerkraft wirbelt die äußeren Trümmergürtel auf und macht Anflüge gefährlich. Ashkor ist der Zentralstern des Ferrum-Systems.",
+  "globusDaten": {
+    "planet": "kompakter-orangefarbener-red-clump-stern",
+    "klasse": "Vulkan",
+    "radius": 473076000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=ferrum-stern",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-147C19268D"
+    ],
+    [
+      "Typ",
+      "Orangefarbener Zwerg (K5 V)"
+    ],
+    [
+      "Sternsystem",
+      "Ferrum-System"
+    ],
+    [
+      "Masse",
+      "0,7 Sonnenmassen"
+    ],
+    [
+      "Radius",
+      "0,68 Sonnenradien"
+    ],
+    [
+      "Leuchtkraft",
+      "0,16 Sonnenleuchtkräfte"
+    ],
+    [
+      "Oberflächentemperatur",
+      "ca. 4.400 K"
+    ],
+    [
+      "Alter",
+      "ca. 6,8 Mrd. Jahre"
+    ],
+    [
+      "Monde",
+      "5 (Ferrum Prime, Ashkor II, Ashkor III, Erzkomet, Ashkor B)"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Ferrum-System"
+    ],
+    [
+      "Entfernung zur Sonne",
+      "24 Lichtjahre"
+    ],
+    [
+      "Nächste Nachbarsysteme",
+      "Celeun-System (7,6 Lj), Thalor-System (14,1 Lj)"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Ashkor im Ferrum-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=ferrum-stern",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Ferrum Prime",
+      "href": "inhalte/himmelskoerper/planeten/details/rostiger-eisenplanet-mit-freiliegendem-metallkern/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Ashkor II",
+      "href": "inhalte/himmelskoerper/planeten/details/gefrorener-planet-unter-kaltem-sternenlicht/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Ashkor III",
+      "href": "inhalte/himmelskoerper/planeten/details/metallischer-gasriese-in-bronze-und-gold/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Erzkomet",
+      "href": "inhalte/himmelskoerper/kometen/details/kalter-komet-mit-langem-schweif/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Ashkor B",
+      "href": "inhalte/himmelskoerper/sterne/details/alter-brauner-zwerg-im-tiefen-all/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Syntheten",
+      "titel": "Ferrum Prime",
+      "href": "inhalte/himmelskoerper/planeten/details/rostiger-eisenplanet-mit-freiliegendem-metallkern/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Syntheten",
+      "href": "inhalte/spezies/Technologische Lebensformen/Syntheten/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Ferrum-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=ferrum-stern"
+    },
+    {
+      "titel": "Speziesdossier Syntheten",
+      "href": "inhalte/spezies/Technologische Lebensformen/Syntheten/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#0d0704",
+      "tiefe": "#1c0f08",
+      "akzent": "#ffb488",
+      "sand": "#ffb384",
+      "moos": "#d9a968",
+      "ozean": "#ad926c",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#733f20"
+    },
+    "schichten": [
+      [
+        "Strahlung",
+        "Leuchtkraft"
+      ],
+      [
+        "Hülle",
+        "Spektralklasse"
+      ],
+      [
+        "Kern",
+        "Fusion"
+      ],
+      [
+        "Zeit",
+        "Lebenszyklus"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Spektralklasse": {
+      "gruppe": "Wissenschaft",
+      "icon": "✦",
+      "intro": "Spektralklasse von Ashkor.",
+      "abschnitte": [
+        {
+          "titel": "Einordnung",
+          "daten": [
+            [
+              "Typ",
+              "Orangefarbener Zwerg (K5 V)"
+            ],
+            [
+              "Oberflächentemperatur",
+              "ca. 4.400 K"
+            ],
+            [
+              "Farbe",
+              "orange"
+            ]
+          ]
+        }
+      ]
+    },
+    "Fusion": {
+      "gruppe": "Wissenschaft",
+      "icon": "☀",
+      "intro": "Fusion von Ashkor.",
+      "abschnitte": [
+        {
+          "titel": "Energiequelle",
+          "text": [
+            "Im Kern von Ashkor verschmilzt Wasserstoff zu Helium."
+          ]
+        }
+      ]
+    },
+    "Leuchtkraft": {
+      "gruppe": "Wissenschaft",
+      "icon": "☀",
+      "intro": "Leuchtkraft von Ashkor.",
+      "abschnitte": [
+        {
+          "titel": "Strahlung",
+          "daten": [
+            [
+              "Leuchtkraft",
+              "0,16 Sonnenleuchtkräfte"
+            ],
+            [
+              "Habitable Zone",
+              "0,38–0,67 AE"
+            ]
+          ]
+        }
+      ]
+    },
+    "Lebenszyklus": {
+      "gruppe": "Wissenschaft",
+      "icon": "⧗",
+      "intro": "Lebenszyklus von Ashkor.",
+      "abschnitte": [
+        {
+          "titel": "Lebensdauer",
+          "text": [
+            "Ein Stern mit 0,7 Sonnenmassen bleibt rund 24 Milliarden Jahre auf der Hauptreihe; Ashkor ist etwa 6,8 Milliarden Jahre alt."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Ashkor auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Ashkor",
+          "text": [
+            "Ashkor ist ein orangefarbener Zwerg der Spektralklasse K5 V. Er bildet mit dem Braunen Zwerg Ashkor B ein weites Doppelsystem – dessen Schwerkraft wirbelt die äußeren Trümmergürtel auf und macht Anflüge gefährlich.",
+            "Ashkor ist der Zentralstern des Ferrum-Systems."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Orangefarbener Zwerg (K5 V)"
+            ],
+            [
+              "Sternsystem",
+              "Ferrum-System"
+            ],
+            [
+              "Masse",
+              "0,7 Sonnenmassen"
+            ],
+            [
+              "Radius",
+              "0,68 Sonnenradien"
+            ],
+            [
+              "Leuchtkraft",
+              "0,16 Sonnenleuchtkräfte"
+            ],
+            [
+              "Oberflächentemperatur",
+              "ca. 4.400 K"
+            ],
+            [
+              "Alter",
+              "ca. 6,8 Mrd. Jahre"
+            ],
+            [
+              "Monde",
+              "5 (Ferrum Prime, Ashkor II, Ashkor III, Erzkomet, Ashkor B)"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Ferrum Prime",
+          "text": [
+            "Das Ferrum-System ist die Heimat der Syntheten: Ihr Planet Ferrum Prime umkreist Ashkor."
+          ],
+          "verweise": [
+            [
+              "Ferrum Prime",
+              "inhalte/himmelskoerper/planeten/details/rostiger-eisenplanet-mit-freiliegendem-metallkern/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Syntheten",
+              "inhalte/spezies/Technologische Lebensformen/Syntheten/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Ashkor im Raum.",
+      "abschnitte": [
+        {
+          "titel": "Lage im Raum",
+          "daten": [
+            [
+              "Entfernung zur Sonne",
+              "24 Lichtjahre"
+            ],
+            [
+              "Nächste Nachbarsysteme",
+              "Celeun-System (7,6 Lj), Thalor-System (14,1 Lj), Iovar-System (20,9 Lj)"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Ashkor · Stern",
+              "Orangefarbener Zwerg (K5 V)"
+            ],
+            [
+              "Ferrum Prime · 0,45 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Ashkor II · 0,92 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Ashkor III · 4,1 AE",
+              "Gasriese"
+            ],
+            [
+              "Ashkor B · 85 AE",
+              "Brauner Zwerg"
+            ],
+            [
+              "Trümmerband · 1,3–2,8 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Staubschleier · 12–24 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Ferrum Prime",
+              "inhalte/himmelskoerper/planeten/details/rostiger-eisenplanet-mit-freiliegendem-metallkern/hauptseite/index.html"
+            ],
+            [
+              "Ashkor II",
+              "inhalte/himmelskoerper/planeten/details/gefrorener-planet-unter-kaltem-sternenlicht/hauptseite/index.html"
+            ],
+            [
+              "Ashkor III",
+              "inhalte/himmelskoerper/planeten/details/metallischer-gasriese-in-bronze-und-gold/hauptseite/index.html"
+            ],
+            [
+              "Ashkor B",
+              "inhalte/himmelskoerper/sterne/details/alter-brauner-zwerg-im-tiefen-all/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Ashkor.",
+      "abschnitte": [
+        {
+          "titel": "Physik",
+          "daten": [
+            [
+              "Masse",
+              "0,7 Sonnenmassen"
+            ],
+            [
+              "Radius",
+              "0,68 Sonnenradien"
+            ],
+            [
+              "Leuchtkraft",
+              "0,16 Sonnenleuchtkräfte"
+            ],
+            [
+              "Oberflächentemperatur",
+              "ca. 4.400 K"
+            ],
+            [
+              "Alter",
+              "ca. 6,8 Mrd. Jahre"
+            ],
+            [
+              "Monde",
+              "5 (Ferrum Prime, Ashkor II, Ashkor III, Erzkomet, Ashkor B)"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Ashkor.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Ashkor entstand zusammen mit dem Ferrum-System vor rund 6,8 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Umgebung": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Umgebung von Ashkor.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Ashkor · Stern",
+              "Orangefarbener Zwerg (K5 V)"
+            ],
+            [
+              "Ferrum Prime · 0,45 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Ashkor II · 0,92 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Ashkor III · 4,1 AE",
+              "Gasriese"
+            ],
+            [
+              "Ashkor B · 85 AE",
+              "Brauner Zwerg"
+            ],
+            [
+              "Trümmerband · 1,3–2,8 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Staubschleier · 12–24 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Ferrum Prime",
+              "inhalte/himmelskoerper/planeten/details/rostiger-eisenplanet-mit-freiliegendem-metallkern/hauptseite/index.html"
+            ],
+            [
+              "Ashkor II",
+              "inhalte/himmelskoerper/planeten/details/gefrorener-planet-unter-kaltem-sternenlicht/hauptseite/index.html"
+            ],
+            [
+              "Ashkor III",
+              "inhalte/himmelskoerper/planeten/details/metallischer-gasriese-in-bronze-und-gold/hauptseite/index.html"
+            ],
+            [
+              "Ashkor B",
+              "inhalte/himmelskoerper/sterne/details/alter-brauner-zwerg-im-tiefen-all/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Nachbarsysteme",
+          "liste": [
+            "Celeun-System – 7,6 Lichtjahre",
+            "Thalor-System – 14,1 Lichtjahre",
+            "Iovar-System – 20,9 Lichtjahre",
+            "Sonnensystem – 24 Lichtjahre",
+            "Aurenn-System – 25,4 Lichtjahre"
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Ashkor.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Wie stark schwankt die magnetische Aktivität?",
+            "Wie hat sich die Leuchtkraft seit der Entstehung verändert?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Ashkor ist mit allen Bahndaten im Ferrum-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=ferrum-stern"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Ashkor.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "5 Monde: Ferrum Prime, Ashkor II, Ashkor III, Erzkomet, Ashkor B"
+          ]
+        },
+        {
+          "titel": "Monde",
+          "karten": [
+            {
+              "titel": "Ferrum Prime",
+              "text": "15.290 km Durchmesser, Umlauf in 131,8 Tage. Ferrum Prime ist ein eisenreicher Bergbauplanet des Konsortiums mit giftiger Atmosphäre und heftigen Stürmen – Einsatzort der Syntheten."
+            },
+            {
+              "titel": "Ashkor II",
+              "text": "10.800 km Durchmesser, Umlauf in 385,2 Tage. Ashkor II ist eine kalte, staubbedeckte Gesteinswelt mit dünner Atmosphäre."
+            },
+            {
+              "titel": "Ashkor III",
+              "text": "122.000 km Durchmesser, Umlauf in 9,9 Jahre. Ashkor III ist ein Gasriese mit metallisch schimmernden Wolken auf einer durch den Begleiter leicht gestörten Bahn."
+            },
+            {
+              "titel": "Erzkomet",
+              "text": "10 km Durchmesser, Umlauf in 32,3 Jahre. Ein Komet mit ungewöhnlich hohem Metallanteil, vermutlich ein Trümmerstück, das Ashkor B ins innere System gelenkt hat."
+            },
+            {
+              "titel": "Ashkor B",
+              "text": "140.000 km Durchmesser, Umlauf in 912,1 Jahre. Ashkor B ist ein Brauner Zwerg mit rund 40 Jupitermassen auf einer weiten, exzentrischen Bahn. Seine Schwerkraft stört die äußeren Gürtel und schleudert immer wieder Trümmer ins innere System."
+            }
+          ],
+          "verweise": [
+            [
+              "Ferrum Prime",
+              "inhalte/himmelskoerper/planeten/details/rostiger-eisenplanet-mit-freiliegendem-metallkern/hauptseite/index.html"
+            ],
+            [
+              "Ashkor II",
+              "inhalte/himmelskoerper/planeten/details/gefrorener-planet-unter-kaltem-sternenlicht/hauptseite/index.html"
+            ],
+            [
+              "Ashkor III",
+              "inhalte/himmelskoerper/planeten/details/metallischer-gasriese-in-bronze-und-gold/hauptseite/index.html"
+            ],
+            [
+              "Erzkomet",
+              "inhalte/himmelskoerper/kometen/details/kalter-komet-mit-langem-schweif/hauptseite/index.html"
+            ],
+            [
+              "Ashkor B",
+              "inhalte/himmelskoerper/sterne/details/alter-brauner-zwerg-im-tiefen-all/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Ashkor.",
+      "abschnitte": [
+        {
+          "titel": "Ashkor – Archivbild",
+          "bild": true,
+          "bildtext": "Ashkor"
+        }
+      ]
+    }
+  }
+}

@@ -103,7 +103,7 @@ export function friereBahnstandEin(objekte, systemId, tageFuer) {
             phase: (objekt.orbit.phase + 360 * ((tageFuer(objekt) - (objekt.orbit.startTag ?? 0)) % objekt.orbit.tage) / objekt.orbit.tage) % 360
         }));
     for (const objekt of objekte) {
-        if (objekt.systemId === systemId && istAsteroidenguertel(objekt)) {
+        if (objekt.systemId === systemId && (istAsteroidenguertel(objekt) || objekt.koerperfeld === true)) {
             objekt.bahnStartTage = (objekt.bahnStartTage ?? 0) + tageFuer(objekt);
         }
     }

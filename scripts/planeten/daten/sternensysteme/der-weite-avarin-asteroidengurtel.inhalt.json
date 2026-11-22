@@ -1,0 +1,475 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Schleiergürtel",
+  "genitiv": "von Schleiergürtel",
+  "dossierName": "Schleiergürtel-Dossier",
+  "klasse": "Asteroidengürtel",
+  "intro": "Der Schleiergürtel zwischen 2,6 und 3,35 AE besteht aus hellen, staubbedeckten Gesteins- und Eisbrocken. Schleiergürtel umgibt Thyrrae im Thyrrae-System.",
+  "globusDaten": {
+    "planet": "der-weite-avarin-asteroidengurtel",
+    "klasse": "Gestein",
+    "radius": 1000000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=babiew-stern&objekt=babiew-schleiergurtel",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-5323F38F6E"
+    ],
+    [
+      "Typ",
+      "Asteroidengürtel"
+    ],
+    [
+      "Sternsystem",
+      "Thyrrae-System"
+    ],
+    [
+      "Zentralkörper",
+      "Thyrrae"
+    ],
+    [
+      "Ausdehnung",
+      "2,6–3,35 AE"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Thyrrae-System"
+    ],
+    [
+      "Zentralstern",
+      "Thyrrae",
+      "inhalte/himmelskoerper/sterne/details/goldene-sonne-im-sternennebel/hauptseite/index.html"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Schleiergürtel im Thyrrae-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=babiew-stern&objekt=babiew-schleiergurtel",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Thyrrae",
+      "href": "inhalte/himmelskoerper/sterne/details/goldene-sonne-im-sternennebel/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Aeromorphen",
+      "titel": "Babiew",
+      "href": "inhalte/himmelskoerper/planeten/details/gigantischer-sturm-auf-einem-gasriesen/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Aeromorphen",
+      "href": "inhalte/spezies/Biologische Spezies/Aeromorphen/Hauptseite_übersicht/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Thyrrae-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=babiew-stern&objekt=babiew-schleiergurtel"
+    },
+    {
+      "titel": "Speziesdossier Aeromorphen",
+      "href": "inhalte/spezies/Biologische Spezies/Aeromorphen/Hauptseite_übersicht/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#080706",
+      "tiefe": "#11100e",
+      "akzent": "#bdb6ac",
+      "sand": "#c2b59c",
+      "moos": "#9cab87",
+      "ozean": "#7c9499",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#454039"
+    },
+    "schichten": [
+      [
+        "Lage",
+        "Bahnen"
+      ],
+      [
+        "System",
+        "Planeten"
+      ],
+      [
+        "Dynamik",
+        "Stabilität"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Zentralsterne": {
+      "gruppe": "Wissenschaft",
+      "icon": "✦",
+      "intro": "Zentralsterne von Schleiergürtel.",
+      "abschnitte": [
+        {
+          "titel": "Thyrrae",
+          "text": [
+            "Thyrrae ist ein heller, gelbweißer Hauptreihenstern der Spektralklasse F9 V mit 108 % der Sonnenmasse und 135 % ihrer Leuchtkraft – ein ruhiger Einzelstern und Zentralstern der Gaswelt Babiew."
+          ],
+          "verweise": [
+            [
+              "Thyrrae",
+              "inhalte/himmelskoerper/sterne/details/goldene-sonne-im-sternennebel/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Planeten": {
+      "gruppe": "Wissenschaft",
+      "icon": "◍",
+      "intro": "Planeten von Schleiergürtel.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Thyrrae · Stern",
+              "Gelber Zwerg (F9 V)"
+            ],
+            [
+              "Thyrrae I · 0,38 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Thyrrae II · 0,72 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Babiew · 1,3 AE",
+              "Gasriese"
+            ],
+            [
+              "Thyrrae V · 9,4 AE",
+              "Eisriese"
+            ],
+            [
+              "Schleiergürtel · 2,6–3,4 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 36–52 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Thyrrae",
+              "inhalte/himmelskoerper/sterne/details/goldene-sonne-im-sternennebel/hauptseite/index.html"
+            ],
+            [
+              "Thyrrae I",
+              "inhalte/himmelskoerper/planeten/details/gluhende-silikatwolken-uber-dem-kupferplaneten/hauptseite/index.html"
+            ],
+            [
+              "Thyrrae II",
+              "inhalte/himmelskoerper/planeten/details/venusahnlicher-planet-unter-goldenen-wolken/hauptseite/index.html"
+            ],
+            [
+              "Babiew",
+              "inhalte/himmelskoerper/planeten/details/gigantischer-sturm-auf-einem-gasriesen/hauptseite/index.html"
+            ],
+            [
+              "Thyrrae V",
+              "inhalte/himmelskoerper/planeten/details/kobaltblauer-eisriese-mit-weien-sturmwolken/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Bahnen": {
+      "gruppe": "Wissenschaft",
+      "icon": "◌",
+      "intro": "Bahnen von Schleiergürtel.",
+      "abschnitte": [
+        {
+          "titel": "Lage",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Thyrrae"
+            ],
+            [
+              "Ausdehnung",
+              "2,6–3,35 AE"
+            ]
+          ]
+        }
+      ]
+    },
+    "Stabilität": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚖",
+      "intro": "Stabilität von Schleiergürtel.",
+      "abschnitte": [
+        {
+          "titel": "Stabilität",
+          "text": [
+            "Die Brocken von Schleiergürtel bewegen sich auf stabilen Bahnen zwischen den Planeten; Resonanzen mit den großen Planeten formen die Ränder des Gebiets."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Schleiergürtel auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Schleiergürtel",
+          "text": [
+            "Der Schleiergürtel zwischen 2,6 und 3,35 AE besteht aus hellen, staubbedeckten Gesteins- und Eisbrocken.",
+            "Schleiergürtel umgibt Thyrrae im Thyrrae-System."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Asteroidengürtel"
+            ],
+            [
+              "Sternsystem",
+              "Thyrrae-System"
+            ],
+            [
+              "Zentralkörper",
+              "Thyrrae"
+            ],
+            [
+              "Ausdehnung",
+              "2,6–3,35 AE"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Babiew",
+          "text": [
+            "Das Thyrrae-System ist die Heimat der Aeromorphen: Ihr Planet Babiew umkreist Thyrrae."
+          ],
+          "verweise": [
+            [
+              "Babiew",
+              "inhalte/himmelskoerper/planeten/details/gigantischer-sturm-auf-einem-gasriesen/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Aeromorphen",
+              "inhalte/spezies/Biologische Spezies/Aeromorphen/Hauptseite_übersicht/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Schleiergürtel im Thyrrae-System.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Thyrrae · Stern",
+              "Gelber Zwerg (F9 V)"
+            ],
+            [
+              "Thyrrae I · 0,38 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Thyrrae II · 0,72 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Babiew · 1,3 AE",
+              "Gasriese"
+            ],
+            [
+              "Thyrrae V · 9,4 AE",
+              "Eisriese"
+            ],
+            [
+              "Schleiergürtel · 2,6–3,4 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 36–52 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Thyrrae",
+              "inhalte/himmelskoerper/sterne/details/goldene-sonne-im-sternennebel/hauptseite/index.html"
+            ],
+            [
+              "Thyrrae I",
+              "inhalte/himmelskoerper/planeten/details/gluhende-silikatwolken-uber-dem-kupferplaneten/hauptseite/index.html"
+            ],
+            [
+              "Thyrrae II",
+              "inhalte/himmelskoerper/planeten/details/venusahnlicher-planet-unter-goldenen-wolken/hauptseite/index.html"
+            ],
+            [
+              "Babiew",
+              "inhalte/himmelskoerper/planeten/details/gigantischer-sturm-auf-einem-gasriesen/hauptseite/index.html"
+            ],
+            [
+              "Thyrrae V",
+              "inhalte/himmelskoerper/planeten/details/kobaltblauer-eisriese-mit-weien-sturmwolken/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Umgebung": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Umgebung von Schleiergürtel.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Thyrrae · Stern",
+              "Gelber Zwerg (F9 V)"
+            ],
+            [
+              "Thyrrae I · 0,38 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Thyrrae II · 0,72 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Babiew · 1,3 AE",
+              "Gasriese"
+            ],
+            [
+              "Thyrrae V · 9,4 AE",
+              "Eisriese"
+            ],
+            [
+              "Schleiergürtel · 2,6–3,4 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 36–52 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Thyrrae",
+              "inhalte/himmelskoerper/sterne/details/goldene-sonne-im-sternennebel/hauptseite/index.html"
+            ],
+            [
+              "Thyrrae I",
+              "inhalte/himmelskoerper/planeten/details/gluhende-silikatwolken-uber-dem-kupferplaneten/hauptseite/index.html"
+            ],
+            [
+              "Thyrrae II",
+              "inhalte/himmelskoerper/planeten/details/venusahnlicher-planet-unter-goldenen-wolken/hauptseite/index.html"
+            ],
+            [
+              "Babiew",
+              "inhalte/himmelskoerper/planeten/details/gigantischer-sturm-auf-einem-gasriesen/hauptseite/index.html"
+            ],
+            [
+              "Thyrrae V",
+              "inhalte/himmelskoerper/planeten/details/kobaltblauer-eisriese-mit-weien-sturmwolken/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Schleiergürtel.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Schleiergürtel besteht aus Material, das sich bei der Entstehung des Thyrrae-Systems nicht zu einem Planeten vereinte."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Schleiergürtel.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Wie viel Masse enthält das Gebiet insgesamt?",
+            "Welche Resonanzen formen seine Ränder?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Schleiergürtel ist mit allen Bahndaten im Thyrrae-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=babiew-stern&objekt=babiew-schleiergurtel"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Schleiergürtel.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Der Schleiergürtel zwischen 2,6 und 3,35 AE besteht aus hellen, staubbedeckten Gesteins- und Eisbrocken."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Schleiergürtel.",
+      "abschnitte": [
+        {
+          "titel": "Schleiergürtel – Archivbild",
+          "bild": true,
+          "bildtext": "Schleiergürtel"
+        }
+      ]
+    }
+  }
+}

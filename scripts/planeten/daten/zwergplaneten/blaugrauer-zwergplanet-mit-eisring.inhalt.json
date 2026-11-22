@@ -1,0 +1,424 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Iovars Zwergwelt",
+  "genitiv": "von Iovars Zwergwelt",
+  "dossierName": "Iovars Zwergwelt-Dossier",
+  "klasse": "Zwergplanet",
+  "intro": "Die blaugraue Zwergwelt mit Eisring markiert die äußere Zone von Iovar. Iovars Zwergwelt umkreist Iovar in 1,402 AE Abstand und braucht für einen Umlauf 3,3 Jahre.",
+  "globusDaten": {
+    "planet": "blaugrauer-zwergplanet-mit-eisring",
+    "klasse": "Eis",
+    "radius": 490000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=iovar-stern&objekt=iovar-zwergwelt",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-30BDBE0221"
+    ],
+    [
+      "Typ",
+      "Zwergplanet"
+    ],
+    [
+      "Sternsystem",
+      "Iovar-System"
+    ],
+    [
+      "Zentralkörper",
+      "Iovar"
+    ],
+    [
+      "Ausdehnung",
+      "0–0 AE"
+    ],
+    [
+      "Große Halbachse",
+      "1,402 AE"
+    ],
+    [
+      "Umlaufzeit",
+      "3,3 Jahre"
+    ],
+    [
+      "Durchmesser",
+      "980 km"
+    ],
+    [
+      "Masse",
+      "8,96 · 10^20 kg"
+    ],
+    [
+      "Schwerkraft",
+      "0,03 g"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -209 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Iovar-System"
+    ],
+    [
+      "Zentralstern",
+      "Iovar",
+      "inhalte/himmelskoerper/sterne/details/roter-zwerg-kosmische-enzyklopadie/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "1,402 AE"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Iovars Zwergwelt im Iovar-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=iovar-stern&objekt=iovar-zwergwelt",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Iovar",
+      "href": "inhalte/himmelskoerper/sterne/details/roter-zwerg-kosmische-enzyklopadie/hauptseite/index.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Iovar-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=iovar-stern&objekt=iovar-zwergwelt"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#08090a",
+      "tiefe": "#111315",
+      "akzent": "#becad6",
+      "sand": "#c3c6b6",
+      "moos": "#9dc2ab",
+      "ozean": "#7ea9cc",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#464e56"
+    }
+  },
+  "kapitel": {
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Iovars Zwergwelt auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Iovars Zwergwelt",
+          "text": [
+            "Die blaugraue Zwergwelt mit Eisring markiert die äußere Zone von Iovar.",
+            "Iovars Zwergwelt umkreist Iovar in 1,402 AE Abstand und braucht für einen Umlauf 3,3 Jahre."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Zwergplanet"
+            ],
+            [
+              "Sternsystem",
+              "Iovar-System"
+            ],
+            [
+              "Zentralkörper",
+              "Iovar"
+            ],
+            [
+              "Ausdehnung",
+              "0–0 AE"
+            ],
+            [
+              "Große Halbachse",
+              "1,402 AE"
+            ],
+            [
+              "Umlaufzeit",
+              "3,3 Jahre"
+            ],
+            [
+              "Durchmesser",
+              "980 km"
+            ],
+            [
+              "Masse",
+              "8,96 · 10^20 kg"
+            ],
+            [
+              "Schwerkraft",
+              "0,03 g"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -209 °C"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Iovars Zwergwelt im Iovar-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Iovar"
+            ],
+            [
+              "Große Halbachse",
+              "1,402 AE (209,7 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0"
+            ],
+            [
+              "Bahnneigung",
+              "0°"
+            ],
+            [
+              "Umlaufzeit",
+              "3,3 Jahre"
+            ],
+            [
+              "Einstrahlung",
+              "0,005-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Am Himmel von Iovars Zwergwelt",
+          "text": [
+            "Iovar erscheint von hier aus etwa 0,1° groß (die Sonne von der Erde: 0,53°)."
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Iovar · Stern",
+              "Roter Zwerg"
+            ],
+            [
+              "Iovar I · 0,22 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Iovar II · 0,41 AE",
+              "Ozeanplanet"
+            ],
+            [
+              "Iovar III · 0,84 AE",
+              "Gasriese"
+            ],
+            [
+              "Iovar IV · 1,17 AE",
+              "Eisplanet"
+            ],
+            [
+              "Iovars Zwergwelt · 1,4 AE · dieses Dossier",
+              "Zwergplanet"
+            ],
+            [
+              "Rostroter Asteroidengürtel · 0,5–0,7 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Kometengebiet Iovar · 1,5–1,6 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Iovar",
+              "inhalte/himmelskoerper/sterne/details/roter-zwerg-kosmische-enzyklopadie/hauptseite/index.html"
+            ],
+            [
+              "Iovar I",
+              "inhalte/himmelskoerper/planeten/details/ursprunglicher-gesteinsplanet-mit-einschlagkratern/hauptseite/index.html"
+            ],
+            [
+              "Iovar II",
+              "inhalte/himmelskoerper/planeten/details/ammoniak-ozeanplanet-mit-leuchtenden-rissen/hauptseite/index.html"
+            ],
+            [
+              "Iovar III",
+              "inhalte/himmelskoerper/planeten/details/saturnahnlicher-gasriese-mit-leuchtenden-eisringen/hauptseite/index.html"
+            ],
+            [
+              "Iovar IV",
+              "inhalte/himmelskoerper/planeten/details/blauweie-eiswelt-im-all/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Iovars Zwergwelt.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "490 km"
+            ],
+            [
+              "Masse",
+              "8,96 · 10^20 kg"
+            ],
+            [
+              "Mittlere Dichte",
+              "1,82 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "0,25 m/s² (0,025 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "0,49 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Planetare Struktur": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Planetare Struktur von Iovars Zwergwelt.",
+      "abschnitte": [
+        {
+          "titel": "Schalenbau",
+          "schichten": [
+            [
+              "Kruste",
+              "Silikatgestein"
+            ],
+            [
+              "Mantel",
+              "Dichteres Silikatgestein"
+            ],
+            [
+              "Kern",
+              "Eisen und Nickel"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Iovars Zwergwelt.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Iovars Zwergwelt ist geologisch weitgehend erstarrt; Einschläge haben seine Oberfläche geformt."
+          ]
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Iovars Zwergwelt.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 1,402 AE Abstand zu Iovar liegt die Gleichgewichtstemperatur von Iovars Zwergwelt bei rund -209 °C – eisig kalt."
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Iovars Zwergwelt.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Iovars Zwergwelt entstand zusammen mit dem Iovar-System."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Iovars Zwergwelt.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Wie ist der innere Aufbau beschaffen?",
+            "Gab es früher eine dichtere Atmosphäre?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Iovars Zwergwelt ist mit allen Bahndaten im Iovar-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=iovar-stern&objekt=iovar-zwergwelt"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Iovars Zwergwelt.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Äußerster Planet des Iovar-Systems"
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Iovars Zwergwelt.",
+      "abschnitte": [
+        {
+          "titel": "Iovars Zwergwelt – Archivbild",
+          "bild": true,
+          "bildtext": "Iovars Zwergwelt"
+        }
+      ]
+    }
+  }
+}

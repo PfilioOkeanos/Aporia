@@ -1,0 +1,611 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Khelar",
+  "genitiv": "von Khelar",
+  "dossierName": "Khelar-Dossier",
+  "klasse": "Orangefarbener Zwerg (K0 V)",
+  "intro": "Khelar ist ein Hauptreihenstern der Spektralklasse K0 V mit 83 % der Sonnenmasse und 60 % ihrer Leuchtkraft – Heimatstern der Chitinoiden und ein ruhiger Einzelstern. Khelar ist der Zentralstern des Khelar-Systems.",
+  "globusDaten": {
+    "planet": "gelbweier-unterriese-im-ubergang",
+    "klasse": "Vulkan",
+    "radius": 577431000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=veshkara-stern",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-C78DCC48BA"
+    ],
+    [
+      "Typ",
+      "Orangefarbener Zwerg (K0 V)"
+    ],
+    [
+      "Sternsystem",
+      "Khelar-System"
+    ],
+    [
+      "Masse",
+      "0,83 Sonnenmassen"
+    ],
+    [
+      "Radius",
+      "0,83 Sonnenradien"
+    ],
+    [
+      "Leuchtkraft",
+      "0,6 Sonnenleuchtkräfte"
+    ],
+    [
+      "Oberflächentemperatur",
+      "ca. 5.250 K"
+    ],
+    [
+      "Alter",
+      "ca. 4,7 Mrd. Jahre"
+    ],
+    [
+      "Monde",
+      "6 (Khelar I, Veshkara, Wurzelstein, Khelar III, Khelar IV, Panzerkomet)"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Khelar-System"
+    ],
+    [
+      "Entfernung zur Sonne",
+      "31 Lichtjahre"
+    ],
+    [
+      "Nächste Nachbarsysteme",
+      "Kharuun-System (22,6 Lj), Halvorn-System (23,7 Lj)"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Khelar im Khelar-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=veshkara-stern",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Khelar I",
+      "href": "inhalte/himmelskoerper/planeten/details/nickel-eisen-planet-mit-tiefen-einschlagsbecken/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Veshkara",
+      "href": "inhalte/himmelskoerper/planeten/details/tiefblauer-ozeanplanet-unter-weien-wolken/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Wurzelstein",
+      "href": "inhalte/himmelskoerper/asteroiden/details/asteroid-mit-tiefem-einschlagbecken/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Khelar III",
+      "href": "inhalte/himmelskoerper/planeten/details/champagnerfarbener-helium-gasriese-im-sternenlicht/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Khelar IV",
+      "href": "inhalte/himmelskoerper/planeten/details/heier-neptun-im-sternenlicht/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Panzerkomet",
+      "href": "inhalte/himmelskoerper/kometen/details/gruner-komet-mit-blauem-schweif/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Chitinoiden",
+      "titel": "Veshkara",
+      "href": "inhalte/himmelskoerper/planeten/details/tiefblauer-ozeanplanet-unter-weien-wolken/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Chitinoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Chitinnoiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Khelar-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=veshkara-stern"
+    },
+    {
+      "titel": "Speziesdossier Chitinoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Chitinnoiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#0d0a06",
+      "tiefe": "#1c150d",
+      "akzent": "#ffd7a9",
+      "sand": "#ffd199",
+      "moos": "#d9d185",
+      "ozean": "#adb795",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#735737"
+    },
+    "schichten": [
+      [
+        "Strahlung",
+        "Leuchtkraft"
+      ],
+      [
+        "Hülle",
+        "Spektralklasse"
+      ],
+      [
+        "Kern",
+        "Fusion"
+      ],
+      [
+        "Zeit",
+        "Lebenszyklus"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Spektralklasse": {
+      "gruppe": "Wissenschaft",
+      "icon": "✦",
+      "intro": "Spektralklasse von Khelar.",
+      "abschnitte": [
+        {
+          "titel": "Einordnung",
+          "daten": [
+            [
+              "Typ",
+              "Orangefarbener Zwerg (K0 V)"
+            ],
+            [
+              "Oberflächentemperatur",
+              "ca. 5.250 K"
+            ],
+            [
+              "Farbe",
+              "gelb"
+            ]
+          ]
+        }
+      ]
+    },
+    "Fusion": {
+      "gruppe": "Wissenschaft",
+      "icon": "☀",
+      "intro": "Fusion von Khelar.",
+      "abschnitte": [
+        {
+          "titel": "Energiequelle",
+          "text": [
+            "Im Kern von Khelar verschmilzt Wasserstoff zu Helium."
+          ]
+        }
+      ]
+    },
+    "Leuchtkraft": {
+      "gruppe": "Wissenschaft",
+      "icon": "☀",
+      "intro": "Leuchtkraft von Khelar.",
+      "abschnitte": [
+        {
+          "titel": "Strahlung",
+          "daten": [
+            [
+              "Leuchtkraft",
+              "0,6 Sonnenleuchtkräfte"
+            ],
+            [
+              "Habitable Zone",
+              "0,74–1,29 AE"
+            ]
+          ]
+        }
+      ]
+    },
+    "Lebenszyklus": {
+      "gruppe": "Wissenschaft",
+      "icon": "⧗",
+      "intro": "Lebenszyklus von Khelar.",
+      "abschnitte": [
+        {
+          "titel": "Lebensdauer",
+          "text": [
+            "Ein Stern mit 0,83 Sonnenmassen bleibt rund 16 Milliarden Jahre auf der Hauptreihe; Khelar ist etwa 4,7 Milliarden Jahre alt."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Khelar auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Khelar",
+          "text": [
+            "Khelar ist ein Hauptreihenstern der Spektralklasse K0 V mit 83 % der Sonnenmasse und 60 % ihrer Leuchtkraft – Heimatstern der Chitinoiden und ein ruhiger Einzelstern.",
+            "Khelar ist der Zentralstern des Khelar-Systems."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Orangefarbener Zwerg (K0 V)"
+            ],
+            [
+              "Sternsystem",
+              "Khelar-System"
+            ],
+            [
+              "Masse",
+              "0,83 Sonnenmassen"
+            ],
+            [
+              "Radius",
+              "0,83 Sonnenradien"
+            ],
+            [
+              "Leuchtkraft",
+              "0,6 Sonnenleuchtkräfte"
+            ],
+            [
+              "Oberflächentemperatur",
+              "ca. 5.250 K"
+            ],
+            [
+              "Alter",
+              "ca. 4,7 Mrd. Jahre"
+            ],
+            [
+              "Monde",
+              "6 (Khelar I, Veshkara, Wurzelstein, Khelar III, Khelar IV, Panzerkomet)"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Veshkara",
+          "text": [
+            "Das Khelar-System ist die Heimat der Chitinoiden: Ihr Planet Veshkara umkreist Khelar."
+          ],
+          "verweise": [
+            [
+              "Veshkara",
+              "inhalte/himmelskoerper/planeten/details/tiefblauer-ozeanplanet-unter-weien-wolken/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Chitinoiden",
+              "inhalte/spezies/Biologische Spezies/Chitinnoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Khelar im Raum.",
+      "abschnitte": [
+        {
+          "titel": "Lage im Raum",
+          "daten": [
+            [
+              "Entfernung zur Sonne",
+              "31 Lichtjahre"
+            ],
+            [
+              "Nächste Nachbarsysteme",
+              "Kharuun-System (22,6 Lj), Halvorn-System (23,7 Lj), Velhar-System (24,5 Lj)"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Khelar · Stern",
+              "Orangefarbener Zwerg (K0 V)"
+            ],
+            [
+              "Khelar I · 0,3 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Veshkara · 0,78 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Khelar III · 2,7 AE",
+              "Gasriese"
+            ],
+            [
+              "Khelar IV · 7,8 AE",
+              "Eisriese"
+            ],
+            [
+              "Harzgürtel · 1,4–2 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 33–47 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Khelar I",
+              "inhalte/himmelskoerper/planeten/details/nickel-eisen-planet-mit-tiefen-einschlagsbecken/hauptseite/index.html"
+            ],
+            [
+              "Veshkara",
+              "inhalte/himmelskoerper/planeten/details/tiefblauer-ozeanplanet-unter-weien-wolken/hauptseite/index.html"
+            ],
+            [
+              "Khelar III",
+              "inhalte/himmelskoerper/planeten/details/champagnerfarbener-helium-gasriese-im-sternenlicht/hauptseite/index.html"
+            ],
+            [
+              "Khelar IV",
+              "inhalte/himmelskoerper/planeten/details/heier-neptun-im-sternenlicht/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Khelar.",
+      "abschnitte": [
+        {
+          "titel": "Physik",
+          "daten": [
+            [
+              "Masse",
+              "0,83 Sonnenmassen"
+            ],
+            [
+              "Radius",
+              "0,83 Sonnenradien"
+            ],
+            [
+              "Leuchtkraft",
+              "0,6 Sonnenleuchtkräfte"
+            ],
+            [
+              "Oberflächentemperatur",
+              "ca. 5.250 K"
+            ],
+            [
+              "Alter",
+              "ca. 4,7 Mrd. Jahre"
+            ],
+            [
+              "Monde",
+              "6 (Khelar I, Veshkara, Wurzelstein, Khelar III, Khelar IV, Panzerkomet)"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Khelar.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Khelar entstand zusammen mit dem Khelar-System vor rund 4,7 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Umgebung": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Umgebung von Khelar.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Khelar · Stern",
+              "Orangefarbener Zwerg (K0 V)"
+            ],
+            [
+              "Khelar I · 0,3 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Veshkara · 0,78 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Khelar III · 2,7 AE",
+              "Gasriese"
+            ],
+            [
+              "Khelar IV · 7,8 AE",
+              "Eisriese"
+            ],
+            [
+              "Harzgürtel · 1,4–2 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 33–47 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Khelar I",
+              "inhalte/himmelskoerper/planeten/details/nickel-eisen-planet-mit-tiefen-einschlagsbecken/hauptseite/index.html"
+            ],
+            [
+              "Veshkara",
+              "inhalte/himmelskoerper/planeten/details/tiefblauer-ozeanplanet-unter-weien-wolken/hauptseite/index.html"
+            ],
+            [
+              "Khelar III",
+              "inhalte/himmelskoerper/planeten/details/champagnerfarbener-helium-gasriese-im-sternenlicht/hauptseite/index.html"
+            ],
+            [
+              "Khelar IV",
+              "inhalte/himmelskoerper/planeten/details/heier-neptun-im-sternenlicht/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Nachbarsysteme",
+          "liste": [
+            "Kharuun-System – 22,6 Lichtjahre",
+            "Halvorn-System – 23,7 Lichtjahre",
+            "Velhar-System – 24,5 Lichtjahre",
+            "Seryn-System – 26,8 Lichtjahre",
+            "Seyvar-System – 27,6 Lichtjahre"
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Khelar.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Wie stark schwankt die magnetische Aktivität?",
+            "Wie hat sich die Leuchtkraft seit der Entstehung verändert?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Khelar ist mit allen Bahndaten im Khelar-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=veshkara-stern"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Khelar.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "6 Monde: Khelar I, Veshkara, Wurzelstein, Khelar III, Khelar IV, Panzerkomet"
+          ]
+        },
+        {
+          "titel": "Monde",
+          "karten": [
+            {
+              "titel": "Khelar I",
+              "text": "9.800 km Durchmesser, Umlauf in 65,9 Tage. Khelar I ist ein heißer, eisenreicher Gesteinsplanet nahe am Stern."
+            },
+            {
+              "titel": "Veshkara",
+              "text": "11.978 km Durchmesser, Umlauf in 276,2 Tage. Veshkara ist die Heimatwelt der Chitinoiden: ein terrestrischer Planet mit Ozeanen, den Kontinenten Sereth und Vaul, großen Flusssystemen und Feuchtgebieten."
+            },
+            {
+              "titel": "Wurzelstein",
+              "text": "76 km Durchmesser, Umlauf in 2,5 Jahre. Ein Asteroid mit verzweigten, wurzelartigen Mineraladern an der Oberfläche – Gegenstand zahlreicher Legenden und wissenschaftlicher Expeditionen."
+            },
+            {
+              "titel": "Khelar III",
+              "text": "128.000 km Durchmesser, Umlauf in 4,9 Jahre. Khelar III ist ein goldgelber Gasriese mit 0,44 Jupitermassen."
+            },
+            {
+              "titel": "Khelar IV",
+              "text": "50.000 km Durchmesser, Umlauf in 23,9 Jahre. Khelar IV ist ein kalter, blaugrüner Eisriese."
+            },
+            {
+              "titel": "Panzerkomet",
+              "text": "18 km Durchmesser, Umlauf in 37,3 Jahre. Ein ungewöhnlich großer, dunkel verkrusteter Komet (rund 34 Jahre Umlaufzeit), dessen Schweif in einzelnen Schichten aufbricht – die Chitinoiden nennen ihn wegen seiner Kruste den Panzerkometen."
+            }
+          ],
+          "verweise": [
+            [
+              "Khelar I",
+              "inhalte/himmelskoerper/planeten/details/nickel-eisen-planet-mit-tiefen-einschlagsbecken/hauptseite/index.html"
+            ],
+            [
+              "Veshkara",
+              "inhalte/himmelskoerper/planeten/details/tiefblauer-ozeanplanet-unter-weien-wolken/hauptseite/index.html"
+            ],
+            [
+              "Wurzelstein",
+              "inhalte/himmelskoerper/asteroiden/details/asteroid-mit-tiefem-einschlagbecken/hauptseite/index.html"
+            ],
+            [
+              "Khelar III",
+              "inhalte/himmelskoerper/planeten/details/champagnerfarbener-helium-gasriese-im-sternenlicht/hauptseite/index.html"
+            ],
+            [
+              "Khelar IV",
+              "inhalte/himmelskoerper/planeten/details/heier-neptun-im-sternenlicht/hauptseite/index.html"
+            ],
+            [
+              "Panzerkomet",
+              "inhalte/himmelskoerper/kometen/details/gruner-komet-mit-blauem-schweif/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Khelar.",
+      "abschnitte": [
+        {
+          "titel": "Khelar – Archivbild",
+          "bild": true,
+          "bildtext": "Khelar"
+        }
+      ]
+    }
+  }
+}
