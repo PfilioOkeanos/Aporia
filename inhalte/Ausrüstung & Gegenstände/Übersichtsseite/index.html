@@ -2,75 +2,24 @@
 <html lang="de">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#07140f">
-  <meta name="description" content="Werkzeuge, Waffen, Rüstungen, Kleidung und besondere Gegenstände aus dem Aporia-Weltenarchiv.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ausrüstung &amp; Gegenstände | Aporia Weltenarchiv</title>
   <link rel="stylesheet" href="../../../Menüs/TopBar/Top_bar.css">
-  <link rel="stylesheet" href="./Ausrüstung.css">
+  <link rel="stylesheet" href="../../Archivansicht.css">
   <script type="module" src="./Ausrüstung.js"></script>
 </head>
-<body class="equipment-page" data-page="inhalt-ausrustung-und-gegenstande">
+<body data-page="inhalt-ausrustung-und-gegenstande">
   <div data-aporia-topbar></div>
-  <main class="equipment-main" id="inhalt">
-    <nav class="breadcrumb" aria-label="Brotkrumennavigation">
-      <a data-route="inhalte" href="#">Weltenarchiv</a><span aria-hidden="true">›</span>
-      <span aria-current="page">Ausrüstung &amp; Gegenstände</span>
+  <main id="inhalt">
+    <h1>Ausrüstung &amp; Gegenstände</h1>
+    <nav class="scene" aria-label="Ausrüstung &amp; Gegenstände" style="--art:url('../../../assets/bilder/Ausr%C3%BCstung%20%26%20Gegenst%C3%A4nde/%C3%9Cbersichtsseite/archivansicht.webp'); aspect-ratio:1672/890">
+      <a class="scene-link" id="werkzeuge" href="../Werkzeuge/index.html" data-route="inhalt-ausrustung-und-gegenstande-werkzeuge" style="left:23.923%; top:13.146%; width:37.141%; height:25.506%; --shape:polygon(1.45% 6.61%, 100.00% 0.00%, 98.71% 91.19%, 33.49% 100.00%, 0.00% 79.30%); background-size:269.2432% 392.0705%; background-position:38.0590% 17.6471%"><img src="../../../assets/bilder/Ausr%C3%BCstung%20%26%20Gegenst%C3%A4nde/%C3%9Cbersichtsseite/werkzeuge-detail.webp" alt="" loading="lazy"><span>Werkzeuge</span></a>
+      <a class="scene-link" id="waffen" href="../Waffen/index.html" data-route="inhalt-ausrustung-und-gegenstande-waffen" style="left:60.407%; top:11.910%; width:37.560%; height:31.573%; --shape:polygon(2.55% 1.78%, 95.70% 0.00%, 100.00% 91.81%, 16.56% 100.00%, 0.00% 80.07%); background-size:266.2420% 316.7260%; background-position:96.7433% 17.4056%"><img src="../../../assets/bilder/Ausr%C3%BCstung%20%26%20Gegenst%C3%A4nde/%C3%9Cbersichtsseite/waffen-detail.webp" alt="" loading="lazy"><span>Waffen</span></a>
+      <a class="scene-link" id="rustungen" href="../R%C3%BCstungen/index.html" data-route="inhalt-ausrustung-und-gegenstande-rustungen" style="left:2.811%; top:31.461%; width:33.911%; height:53.708%; --shape:polygon(3.17% 18.62%, 34.22% 0.00%, 66.49% 5.23%, 95.94% 21.13%, 100.00% 99.58%, 0.00% 100.00%); background-size:294.8854% 186.1925%; background-position:4.2534% 67.9612%"><img src="../../../assets/bilder/Ausr%C3%BCstung%20%26%20Gegenst%C3%A4nde/%C3%9Cbersichtsseite/rustungen-detail.webp" alt="" loading="lazy"><span>Rüstungen</span></a>
+      <a class="scene-link" id="kleidung" href="../Kleidung/index.html" data-route="inhalt-ausrustung-und-gegenstande-kleidung" style="left:37.201%; top:37.978%; width:32.715%; height:47.528%; --shape:polygon(0.00% 6.38%, 24.13% 0.00%, 91.22% 4.49%, 100.00% 21.99%, 100.00% 100.00%, 0.37% 100.00%); background-size:305.6673% 210.4019%; background-position:55.2889% 72.3769%"><img src="../../../assets/bilder/Ausr%C3%BCstung%20%26%20Gegenst%C3%A4nde/%C3%9Cbersichtsseite/kleidung-detail.webp" alt="" loading="lazy"><span>Kleidung</span></a>
+      <a class="scene-link" id="alltagsgegenstande" href="../Alltagsgegenst%C3%A4nde/index.html" data-route="inhalt-ausrustung-und-gegenstande-alltagsgegenstande" style="left:71.172%; top:44.719%; width:25.778%; height:40.562%; --shape:polygon(0.00% 1.66%, 100.00% 0.00%, 99.77% 100.00%, 0.23% 99.45%); background-size:387.9350% 246.5374%; background-position:95.8904% 75.2363%"><img src="../../../assets/bilder/Ausr%C3%BCstung%20%26%20Gegenst%C3%A4nde/%C3%9Cbersichtsseite/alltagsgegenstande-detail.webp" alt="" loading="lazy"><span>Alltagsgegenstände</span></a>
     </nav>
-
-    <header class="equipment-hero">
-      <div class="hero-copy">
-        <span class="hero-emblem" aria-hidden="true"><svg viewBox="0 0 100 100" fill="none"><circle cx="50" cy="50" r="45"/><circle cx="50" cy="50" r="36"/><path d="M32 43 37 28h26l5 15 8 5v31H24V48l8-5Z"/><path d="M37 28v15h26V28M36 57h28v22H36zM44 57v22m12-22v22M43 68h14"/></svg></span>
-        <p class="eyebrow">APORIA · WELTENARCHIV</p>
-        <h1>Ausrüstung &amp; Gegenstände</h1>
-        <p class="hero-subtitle">Ausrüstung, Werkzeuge, Hilfsmittel und besondere Gegenstände aus dem Universum Aporia.</p>
-        <span class="hero-rule" aria-hidden="true"><i>✦</i></span>
-      </div>
-      <div class="hero-display" aria-label="Auswahl besonderer Waffen aus dem Archiv">
-        <span class="display-grid" aria-hidden="true"></span>
-        <span class="display-label">AUSRÜSTUNG · ARCHIV 07</span>
-        <img class="hero-weapon hero-weapon-one" src="../../../assets/bilder/Ausr%C3%BCstung%20%26%20Gegenst%C3%A4nde/%C3%9Cbersichtsseite/unbekannte%20antriebe%20.png" alt="Verzierte Präzisionswaffen aus dem Ausrüstungsarchiv" fetchpriority="high">
-        <img class="hero-weapon hero-weapon-two" src="../../../assets/bilder/Ausr%C3%BCstung%20%26%20Gegenst%C3%A4nde/%C3%9Cbersichtsseite/unbekannte%20antriebe%20(1).png" alt="Klingen und Feuerwaffen aus dem Ausrüstungsarchiv" fetchpriority="high">
-        <span class="display-hud" aria-hidden="true"><span>INVENTAR</span><b>06</b><i></i><i></i><i></i></span>
-      </div>
-      <span class="hero-coordinate" aria-hidden="true">ARCHIVSEKTOR · A-07</span>
-    </header>
-
-    <section class="archive-section" aria-labelledby="categories-title">
-      <div class="section-heading">
-        <div><p class="eyebrow">AUSRÜSTUNGSARCHIV</p><h2 id="categories-title">Bereiche entdecken</h2></div>
-        <span class="section-line" aria-hidden="true"></span><span class="section-count">05 <small>BEREICHE</small></span>
-      </div>
-      <div class="equipment-grid">
-        <a class="equipment-card" data-route="inhalt-ausrustung-und-gegenstande-werkzeuge" href="#">
-          <span class="card-art art-tools"><span class="art-rune" aria-hidden="true">⚒</span><span class="art-caption">FELDWERKZEUGE</span></span>
-          <span class="card-copy"><span class="category-icon" aria-hidden="true">⚒</span><strong>Werkzeuge</strong><span class="card-arrow" aria-hidden="true">→</span></span>
-        </a>
-        <a class="equipment-card" data-route="inhalt-ausrustung-und-gegenstande-waffen" href="#">
-          <span class="card-art art-weapons"><img src="../../../assets/bilder/Ausr%C3%BCstung%20%26%20Gegenst%C3%A4nde/%C3%9Cbersichtsseite/unbekannte%20antriebe%20(1).png" alt="Verzierte Klingen und Feuerwaffen" loading="lazy" decoding="async"><span class="art-caption">WAFFENKAMMER</span></span>
-          <span class="card-copy"><span class="category-icon" aria-hidden="true">⌖</span><strong>Waffen</strong><span class="card-arrow" aria-hidden="true">→</span></span>
-        </a>
-        <a class="equipment-card" data-route="inhalt-ausrustung-und-gegenstande-rustungen" href="#">
-          <span class="card-art art-armor"><span class="armor-mark" aria-hidden="true"><svg viewBox="0 0 120 140" fill="none"><path d="m60 8 42 16v38c0 29-18 52-42 69C36 114 18 91 18 62V24L60 8Z"/><path d="M60 21 89 32v29c0 21-11 38-29 51C42 99 31 82 31 61V32l29-11Z"/><path d="m42 51 18-9 18 9-6 22-12 10-12-10-6-22Z"/></svg></span><span class="art-caption">SCHUTZ &amp; PANZERUNG</span></span>
-          <span class="card-copy"><span class="category-icon" aria-hidden="true">♢</span><strong>Rüstungen</strong><span class="card-arrow" aria-hidden="true">→</span></span>
-        </a>
-        <a class="equipment-card" data-route="inhalt-ausrustung-und-gegenstande-kleidung" href="#">
-          <span class="card-art art-clothing"><span class="cloak-mark" aria-hidden="true">♧</span><span class="art-caption">KLEIDUNG &amp; GEWEBE</span></span>
-          <span class="card-copy"><span class="category-icon" aria-hidden="true">♧</span><strong>Kleidung</strong><span class="card-arrow" aria-hidden="true">→</span></span>
-        </a>
-        <a class="equipment-card" data-route="inhalt-ausrustung-und-gegenstande-alltagsgegenstande" href="#">
-          <span class="card-art art-everyday"><span class="supply-mark" aria-hidden="true"><i>+</i><b></b><b></b></span><span class="art-caption">VERSORGUNG &amp; ALLTAG</span></span>
-          <span class="card-copy"><span class="category-icon" aria-hidden="true">⬡</span><strong>Alltagsgegenstände</strong><span class="card-arrow" aria-hidden="true">→</span></span>
-        </a>
-      </div>
-    </section>
-
-    <section class="linked-content" aria-label="Verknüpfte Inhalte">
-      <a class="linked-panel" data-route="inhalt-technologien" href="#"><span class="linked-icon" aria-hidden="true">⌘</span><span><small>TECHNIK &amp; ENTWICKLUNG</small><strong>Technologien</strong></span><span class="linked-arrow" aria-hidden="true">→</span></a>
-      <a class="linked-panel" data-route="inhalt-fahrzeuge-und-raumschiffe" href="#"><span class="linked-icon" aria-hidden="true">✧</span><span><small>TRANSPORT &amp; ERKUNDUNG</small><strong>Fahrzeuge &amp; Raumschiffe</strong></span><span class="linked-arrow" aria-hidden="true">→</span></a>
-      <a class="linked-panel" data-route="inhalt-werkstatt-und-herstellung" href="#"><span class="linked-icon" aria-hidden="true">⚒</span><span><small>BAUEN &amp; FERTIGEN</small><strong>Werkstatt &amp; Herstellung</strong></span><span class="linked-arrow" aria-hidden="true">→</span></a>
-    </section>
-    <footer class="archive-footer"><span>APORIA · WELTENARCHIV</span><span>AUSRÜSTUNG &amp; GEGENSTÄNDE</span></footer>
+    <nav class="related" aria-label="Verwandte Bereiche"><a href="#" data-route="inhalt-technologien">Technologien</a><a href="#" data-route="inhalt-fahrzeuge-und-raumschiffe">Fahrzeuge &amp; Raumschiffe</a><a href="#" data-route="inhalt-werkstatt-und-herstellung">Werkstatt &amp; Herstellung</a></nav>
   </main>
 </body>
 </html>

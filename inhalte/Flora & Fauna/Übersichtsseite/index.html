@@ -2,79 +2,25 @@
 <html lang="de">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#071714">
-  <meta name="description" content="Pflanzen, Tiere, Pilze, Lebensräume und ökologische Zusammenhänge im Aporia-Weltenarchiv.">
-  <title>Flora &amp; Fauna | Aporia Weltenarchiv</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Flora &amp; Fauna | APORIA Weltenarchiv</title>
   <link rel="stylesheet" href="../../../Menüs/TopBar/Top_bar.css">
+  <link rel="stylesheet" href="../../Archivansicht.css">
   <link rel="stylesheet" href="./Flora.css">
   <script type="module" src="./Flora.js"></script>
 </head>
-<body class="flora-page" data-page="inhalt-flora-und-fauna">
+<body data-page="inhalt-flora-und-fauna">
   <div data-aporia-topbar></div>
-  <main class="flora-main" id="inhalt">
-    <header class="flora-hero">
-      <img class="flora-hero-image" src="../../../assets/bilder/Alle%20Spezies%2B%C3%BCbersicht/Biologische%20Spezies/WaldFeen/hauptseite/waldfeen_hero_composite_ohne_text.jpg" alt="Üppige, fremdartige Waldlandschaft mit leuchtenden Pflanzen und Wasserfällen" fetchpriority="high">
-      <div class="flora-hero-shade"></div>
-      <div class="flora-emblem" aria-hidden="true"><span>❧</span><i>✦</i></div>
-      <div class="flora-hero-copy">
-        <p class="flora-eyebrow">APORIA · WELTENARCHIV</p>
-        <h1>Flora &amp; Fauna</h1>
-        <p>Pflanzen, Tiere und die vielfältigen Lebensräume des Universums Aporia.</p>
-        <div class="flora-rule" aria-hidden="true"><span>✧</span></div>
-      </div>
-      <span class="flora-coordinate" aria-hidden="true">BIOARCHIV · SEKTOR 07</span>
-    </header>
-
-    <nav class="flora-categories" aria-label="Flora und Fauna Kategorien">
-      <a class="flora-category" data-route="inhalt-flora-und-fauna-pflanzen" href="#"><img src="../../../assets/bilder/Alle%20Spezies%2B%C3%BCbersicht/Biologische%20Spezies/WaldFeen/Unterseite/biologie/assets/waldfeen_symbiose_pflanze_nah.jpg" alt="Leuchtende Pflanze im Wald" loading="lazy"><span class="flora-category-label"><i aria-hidden="true">❧</i><b>Pflanzen</b><span aria-hidden="true">→</span></span></a>
-      <a class="flora-category" data-route="inhalt-flora-und-fauna-tiere" href="#"><img src="../../../assets/bilder/Alle%20Spezies%2B%C3%BCbersicht/Biologische%20Spezies/Aeromorphen/Unterseiten/Heimatwelt/oeko_luftlebewesen.webp" alt="Lebewesen in einem fremdartigen Lebensraum" loading="lazy"><span class="flora-category-label"><i aria-hidden="true">♧</i><b>Tiere</b><span aria-hidden="true">→</span></span></a>
-      <a class="flora-category" data-route="inhalt-flora-und-fauna-pilze" href="#"><img src="../../../assets/bilder/Alle%20Spezies%2B%C3%BCbersicht/Biologische%20Spezies/WaldFeen/hauptseite/leuchtpilze_weisse_blueten.jpg" alt="Leuchtpilze und helle Blüten im Wald" loading="lazy"><span class="flora-category-label"><i aria-hidden="true">♙</i><b>Pilze</b><span aria-hidden="true">→</span></span></a>
-      <a class="flora-category" data-route="inhalt-flora-und-fauna-lebensraeume" href="#"><img src="../../../assets/bilder/Alle%20Spezies%2B%C3%BCbersicht/Biologische%20Spezies/WaldFeen/hauptseite/orvaya_wasserfaelle_und_taeler.jpg" alt="Wasserfälle und bewaldete Täler auf Orvaya" loading="lazy"><span class="flora-category-label"><i aria-hidden="true">♧</i><b>Lebensräume</b><span aria-hidden="true">→</span></span></a>
-      <a class="flora-category" data-route="inhalt-flora-und-fauna-nahrungsketten" href="#"><img src="../../../assets/bilder/Alle%20Spezies%2B%C3%BCbersicht/Biologische%20Spezies/WaldFeen/Unterseite/biologie/assets/bilder/ernaehrung/waldfeen_nahrung_pilze_beeren.jpg" alt="Pilze und Beeren als Teil des Nahrungsnetzes" loading="lazy"><span class="flora-category-label"><i aria-hidden="true">♧</i><b>Nahrungsketten</b><span aria-hidden="true">→</span></span></a>
+  <main id="inhalt">
+    <h1>Flora &amp; Fauna</h1>
+    <nav class="scene" aria-label="Flora und Fauna">
+      <a id="pflanzen" class="scene-link" href="../Pflanzen/index.html" data-route="inhalt-flora-und-fauna-pflanzen"><img src="../../../assets/bilder/Flora%20%26%20Fauna/Pflanzen/auwald-detail.webp" alt="" loading="lazy"><span>Pflanzen</span><i class="ink" aria-hidden="true"></i></a>
+      <a id="tiere" class="scene-link" href="../Tiere/index.html" data-route="inhalt-flora-und-fauna-tiere"><img src="../../../assets/bilder/Flora%20%26%20Fauna/Tiere/auwald-detail.webp" alt="" loading="lazy"><span>Tiere</span><i class="ink" aria-hidden="true"></i></a>
+      <a id="pilze" class="scene-link" href="../Pilze/index.html" data-route="inhalt-flora-und-fauna-pilze"><img src="../../../assets/bilder/Flora%20%26%20Fauna/Pilze/auwald-detail.webp" alt="" loading="lazy"><span>Pilze</span><i class="ink" aria-hidden="true"></i></a>
+      <a id="lebensraume" class="scene-link" href="../Lebensr%C3%A4ume/index.html" data-route="inhalt-flora-und-fauna-lebensraume"><img src="../../../assets/bilder/Flora%20%26%20Fauna/Lebensr%C3%A4ume/auwald-detail.webp" alt="" loading="lazy"><span>Lebensräume</span><i class="ink" aria-hidden="true"></i></a>
+      <a id="nahrungsketten" class="scene-link" href="../Nahrungsketten/index.html" data-route="inhalt-flora-und-fauna-nahrungsketten"><img src="../../../assets/bilder/Flora%20%26%20Fauna/Nahrungsketten/auwald-detail.webp" alt="" loading="lazy"><span>Nahrungsketten</span><i class="ink" aria-hidden="true"></i></a>
     </nav>
-
-    <section class="flora-content-grid" aria-label="Ökosysteme und Schnellzugriffe">
-      <article class="ecosystem-panel flora-panel">
-        <div class="flora-section-heading"><span class="heading-mark" aria-hidden="true">◎</span><div><p class="flora-eyebrow">ZUSAMMENHÄNGE DES LEBENS</p><h2>Ökosysteme im Überblick</h2></div><span class="heading-index">01 / 05</span></div>
-        <p class="ecosystem-intro">Erforsche die komplexen Beziehungen zwischen Flora, Fauna, Pilzen und ihren Lebensräumen – von stabilen Biotopen bis hin zu extremen, einzigartigen Ökosystemen.</p>
-        <div class="ecosystem-body">
-          <figure class="ecosystem-image"><img src="../../../assets/bilder/Alle%20Spezies%2B%C3%BCbersicht/Biologische%20Spezies/WaldFeen/hauptseite/gemeinschaft_03_fluss_feuchtgebiet.jpg" alt="Feuchtgebiet mit Flusslauf und dichter Vegetation" loading="lazy"><figcaption>Fluss- und Feuchtgebiete · Orvaya</figcaption></figure>
-          <ul class="ecosystem-topics">
-            <li><span aria-hidden="true">❧</span><div><b>Biodiversität</b><small>Vielfalt der Lebensformen</small></div></li>
-            <li><span aria-hidden="true">⟳</span><div><b>Ökologische Kreisläufe</b><small>Stoffe, Energie und Wandel</small></div></li>
-            <li><span aria-hidden="true">⌘</span><div><b>Anpassungen &amp; Evolution</b><small>Leben unter verschiedenen Bedingungen</small></div></li>
-            <li><span aria-hidden="true">✣</span><div><b>Symbiosen</b><small>Wechselwirkungen zwischen Arten</small></div></li>
-            <li><span aria-hidden="true">△</span><div><b>Gefahren &amp; Toxine</b><small>Schutz, Abwehr und Risiken</small></div></li>
-          </ul>
-        </div>
-      </article>
-
-      <aside class="quick-panel flora-panel">
-        <div class="flora-section-heading"><span class="heading-mark" aria-hidden="true">✥</span><div><p class="flora-eyebrow">DIREKT ZU DEN EINTRÄGEN</p><h2>Schnellzugriff</h2></div></div>
-        <div class="quick-links">
-          <a class="quick-link" data-route="flora-fauna-katalog" href="../Katalog/katalog.html"><img src="../../../assets/bilder/Alle%20Spezies%2B%C3%BCbersicht/Biologische%20Spezies/WaldFeen/hauptseite/orvaya_wasserfaelle_und_taeler.jpg" alt="" loading="lazy"><span>Artenkatalog · alle Welten</span><b aria-hidden="true">›</b></a>
-          <a class="quick-link" href="../Katalog/katalog.html?kategorie=Pflanzen"><img src="../../../assets/bilder/Alle%20Spezies%2B%C3%BCbersicht/Biologische%20Spezies/WaldFeen/Unterseite/biologie/assets/bilder/ernaehrung/waldfeen_pflanzliche_ernaehrung.jpg" alt="Blatt mit Wassertropfen" loading="lazy"><span>Pflanzenkatalog</span><b aria-hidden="true">›</b></a>
-          <a class="quick-link" href="../Katalog/katalog.html?kategorie=Tiere"><img src="../../../assets/bilder/Alle%20Spezies%2B%C3%BCbersicht/Biologische%20Spezies/Aeromorphen/Unterseiten/Heimatwelt/oeko_luftlebewesen.webp" alt="Tierisches Leben im Lebensraum" loading="lazy"><span>Tierkatalog</span><b aria-hidden="true">›</b></a>
-          <a class="quick-link" data-route="inhalt-flora-und-fauna-lebensraeume" href="#"><img src="../../../assets/bilder/Alle%20Spezies%2B%C3%BCbersicht/Biologische%20Spezies/WaldFeen/hauptseite/orvaya_wasserfaelle_und_taeler.jpg" alt="Landschaft mit Wasserfällen" loading="lazy"><span>Lebensraum-Karten</span><b aria-hidden="true">›</b></a>
-        </div>
-        <a class="all-ecosystems" data-route="inhalt-flora-und-fauna-lebensraeume" href="#">Alle Lebensräume ansehen <span aria-hidden="true">→</span></a>
-      </aside>
-    </section>
-
-    <section class="life-band" aria-label="Lebensräume im Archiv">
-      <img src="../../../assets/bilder/Alle%20Spezies%2B%C3%BCbersicht/Biologische%20Spezies/WaldFeen/hauptseite/orvaya_wasserfaelle_und_taeler.jpg" alt="Weitläufige Wasserfälle und grüne Täler" loading="lazy">
-      <div class="life-band-shade"></div>
-      <div class="life-band-copy"><p class="flora-eyebrow">LEBENSRÄUME · ARTEN · WECHSELWIRKUNGEN</p><h2>Jede Welt erzählt ihre eigene Geschichte des Lebens.</h2><p>Entdecke, wie Lebensformen entstehen, sich anpassen und miteinander verbunden sind.</p></div>
-      <a data-route="inhalt-flora-und-fauna-lebensraeume" href="#">Lebensräume erkunden <span aria-hidden="true">→</span></a>
-    </section>
-
-    <section class="flora-feature-row" aria-label="Weitere Forschungsbereiche">
-      <a class="flora-feature" data-route="inhalt-flora-und-fauna-pilze" href="#"><img src="../../../assets/bilder/Alle%20Spezies%2B%C3%BCbersicht/Biologische%20Spezies/Mykonoiden/Gesamtdarstellung/Biolumineszente%20Mykonoidin%20im%20Pilzwald.png" alt="Biolumineszentes Leben in einem Pilzwald" loading="lazy"><span><small>ARCHIVSCHWERPUNKT</small><b>Leuchtende Pilzwelten</b><i aria-hidden="true">↗</i></span></a>
-      <a class="flora-feature" data-route="inhalt-flora-und-fauna-nahrungsketten" href="#"><img src="../../../assets/bilder/Alle%20Spezies%2B%C3%BCbersicht/Biologische%20Spezies/WaldFeen/Unterseite/biologie/assets/bilder/ernaehrung/waldfeen_nahrung_pilze_beeren.jpg" alt="Beeren und Pilze als Nahrungsquellen" loading="lazy"><span><small>ÖKOLOGISCHE NETZE</small><b>Nahrung &amp; Kreisläufe</b><i aria-hidden="true">↗</i></span></a>
-      <a class="flora-feature" data-route="inhalt-flora-und-fauna-tiere" href="#"><img src="../../../assets/bilder/Alle%20Spezies%2B%C3%BCbersicht/Biologische%20Spezies/Aeromorphen/hauptseite/aeromorph_hero_flug.webp" alt="Fluglebewesen in einer fremdartigen Landschaft" loading="lazy"><span><small>LEBENSFORMEN</small><b>Artenvielfalt entdecken</b><i aria-hidden="true">↗</i></span></a>
-    </section>
-    <footer class="flora-footer"><span>APORIA · WELTENARCHIV</span><span>FLORA &amp; FAUNA</span></footer>
+    <nav class="related" aria-label="Weitere Inhalte"><a href="../Katalog/katalog.html" data-route="flora-fauna-katalog">Artenkatalog · alle Welten</a></nav>
   </main>
 </body>
 </html>

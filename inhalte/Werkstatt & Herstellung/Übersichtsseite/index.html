@@ -3,119 +3,22 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#07140f">
   <title>Werkstatt &amp; Herstellung | Aporia Weltenarchiv</title>
   <link rel="stylesheet" href="../../../Menüs/TopBar/Top_bar.css">
-  <link rel="stylesheet" href="./Werkstatt.css">
+  <link rel="stylesheet" href="../../Archivansicht.css">
   <script type="module" src="./Werkstatt.js"></script>
 </head>
-<body class="workshop-page" data-page="inhalt-werkstatt-und-herstellung">
+<body data-page="inhalt-werkstatt-und-herstellung">
   <div data-aporia-topbar></div>
-  <main id="inhalt" class="workshop-main">
-    <header class="workshop-heading">
-      <div>
-        <p class="workshop-breadcrumb"><a href="#" data-route="inhalte">Inhalte</a><span aria-hidden="true">/</span>Werkstatt &amp; Herstellung</p>
-        <p class="workshop-kicker">APORIA · WISSEN IN ARBEIT</p>
-        <h1>Werkstatt &amp; Herstellung</h1>
-        <p class="workshop-subtitle">Rezepte, Baupläne und Produktionsverfahren</p>
-      </div>
-      <div class="workshop-emblem" aria-hidden="true">
-        <svg viewBox="0 0 120 120" fill="none">
-          <circle cx="60" cy="60" r="49"/><circle cx="60" cy="60" r="38"/>
-          <path d="M60 12v96M12 60h96M26 26l68 68m0-68L26 94"/>
-          <path d="M60 31 69 51l20 9-20 9-9 20-9-20-20-9 20-9 9-20Z"/>
-          <circle cx="60" cy="60" r="4"/>
-        </svg>
-      </div>
-    </header>
-
-    <section class="atelier-intro" aria-labelledby="atelier-title">
-      <div class="atelier-copy">
-        <span class="atelier-label"><span></span> WERKSTATTARCHIV <span></span></span>
-        <h2 id="atelier-title">Wo Ideen Gestalt annehmen</h2>
-        <p>Wissen, Rohstoffe und Können verbinden sich hier zu Rezepturen, Entwürfen und gefertigten Dingen. Öffne einen Bereich, um seine Inhalte zu entdecken.</p>
-        <a class="atelier-jump" href="#werkstatt-bereiche">Zu den Werkstattbereichen <span aria-hidden="true">↓</span></a>
-      </div>
-      <div class="atelier-illustration" aria-hidden="true">
-        <div class="atelier-window"><i></i><i></i><i></i></div>
-        <div class="atelier-vine vine-one"></div><div class="atelier-vine vine-two"></div>
-        <div class="atelier-lamp"><span></span></div>
-        <div class="atelier-orbit orbit-one"></div><div class="atelier-orbit orbit-two"></div>
-        <div class="atelier-flask flask-one"><span></span></div>
-        <div class="atelier-flask flask-two"><span></span></div>
-        <div class="atelier-scroll"><span></span><span></span><span></span><span></span></div>
-        <div class="atelier-table"></div>
-        <div class="atelier-tool tool-one"></div><div class="atelier-tool tool-two"></div>
-        <div class="atelier-spark spark-one">✦</div><div class="atelier-spark spark-two">✧</div>
-      </div>
-      <div class="atelier-corner" aria-hidden="true"></div>
-    </section>
-
-    <section class="workshop-section" id="werkstatt-bereiche" aria-labelledby="bereiche-title">
-      <div class="section-heading">
-        <div><p class="workshop-kicker">DAS WERKSTATTARCHIV</p><h2 id="bereiche-title">Bereiche entdecken</h2></div>
-        <span class="section-rule" aria-hidden="true"></span>
-        <span class="section-count">05 <small>BEREICHE</small></span>
-      </div>
-
-      <div class="craft-grid">
-        <article class="craft-card craft-card--recipes" id="rezepte">
-          <a href="#" data-route="inhalt-werkstatt-und-herstellung-rezepte" aria-label="Rezepte öffnen">
-            <div class="craft-art" aria-hidden="true">
-              <img class="craft-image" src="../../../assets/bilder/Werkstatt%20%26%20Herstellung/%C3%9Cbersichtsseite/rezepte-atelier.png" alt="" loading="lazy" decoding="async">
-              <div class="recipe-bowl"><span></span></div><i class="recipe-leaf leaf-a"></i><i class="recipe-leaf leaf-b"></i>
-              <b class="recipe-bottle bottle-a"></b><b class="recipe-bottle bottle-b"></b><span class="art-glint">✧</span>
-            </div>
-            <div class="craft-copy"><span class="craft-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M9 24h30c0 10-6 17-15 17S9 34 9 24Z"/><path d="M5 22h38M24 22c0-8 5-12 11-13M21 21c-1-7-6-10-12-9M24 22v19M16 15l-4-5m23 3 4-5"/></svg></span><span class="craft-text"><strong>Rezepte</strong><small>Mischungen, Zubereitungen und Formeln für besondere Zwecke.</small></span><span class="craft-arrow" aria-hidden="true">↗</span></div>
-          </a>
-        </article>
-
-        <article class="craft-card craft-card--blueprints" id="bauplaene">
-          <a href="#" data-route="inhalt-werkstatt-und-herstellung-bauplane" aria-label="Baupläne öffnen">
-            <div class="craft-art" aria-hidden="true">
-              <img class="craft-image" src="../../../assets/bilder/Werkstatt%20%26%20Herstellung/%C3%9Cbersichtsseite/bauplaene-atelier.png" alt="" loading="lazy" decoding="async">
-              <div class="blueprint-grid"></div><div class="blueprint-sheet"><span></span><i></i><b></b><em></em></div>
-              <div class="blueprint-compass"></div><span class="art-glint">✧</span>
-            </div>
-            <div class="craft-copy"><span class="craft-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M9 39 29 9m-7 30L42 9M6 39h36M17 27h15M27 12l7 5M11 36l6 3M28 35l7 4"/><circle cx="29" cy="9" r="3"/></svg></span><span class="craft-text"><strong>Baupläne</strong><small>Konstruktionszeichnungen für Objekte, Anlagen und Technik.</small></span><span class="craft-arrow" aria-hidden="true">↗</span></div>
-          </a>
-        </article>
-
-        <article class="craft-card craft-card--process" id="produktionsverfahren">
-          <a href="#" data-route="inhalt-werkstatt-und-herstellung-produktionsverfahren" aria-label="Produktionsverfahren öffnen">
-            <div class="craft-art" aria-hidden="true">
-              <img class="craft-image" src="../../../assets/bilder/Werkstatt%20%26%20Herstellung/%C3%9Cbersichtsseite/produktionsverfahren-atelier.png" alt="" loading="lazy" decoding="async">
-              <div class="process-rail"></div><div class="process-machine machine-a"><i></i></div><div class="process-machine machine-b"><i></i></div>
-              <div class="process-crystal crystal-a"></div><div class="process-crystal crystal-b"></div><span class="process-glow"></span>
-            </div>
-            <div class="craft-copy"><span class="craft-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="m5 12 19-8 19 8-19 8-19-8Zm0 12 19 8 19-8M5 34l19 9 19-9"/><path d="M24 20v10"/></svg></span><span class="craft-text"><strong>Produktionsverfahren</strong><small>Abläufe, Methoden und Prozessketten zur Herstellung.</small></span><span class="craft-arrow" aria-hidden="true">↗</span></div>
-          </a>
-        </article>
-
-        <article class="craft-card craft-card--craft" id="handwerk">
-          <a href="#" data-route="inhalt-werkstatt-und-herstellung-handwerk" aria-label="Handwerk öffnen">
-            <div class="craft-art" aria-hidden="true">
-              <img class="craft-image" src="../../../assets/bilder/Werkstatt%20%26%20Herstellung/%C3%9Cbersichtsseite/handwerk-atelier.png" alt="" loading="lazy" decoding="async">
-              <div class="craft-hands"><i></i><b></b><span></span></div><div class="craft-anvil"></div><div class="craft-hammer"></div>
-              <span class="art-glint">✦</span>
-            </div>
-            <div class="craft-copy"><span class="craft-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M5 21h38v7H5zM11 28v12h26V28M17 21l7-15 7 15M20 12h8M15 40h18"/></svg></span><span class="craft-text"><strong>Handwerk</strong><small>Fertigkeiten, Werktechniken und überliefertes Können.</small></span><span class="craft-arrow" aria-hidden="true">↗</span></div>
-          </a>
-        </article>
-
-        <article class="craft-card craft-card--fabrication" id="fertigung">
-          <a href="#" data-route="inhalt-werkstatt-und-herstellung-fertigung" aria-label="Fertigung öffnen">
-            <div class="craft-art" aria-hidden="true">
-              <img class="craft-image" src="../../../assets/bilder/Werkstatt%20%26%20Herstellung/%C3%9Cbersichtsseite/fertigung-atelier.png" alt="" loading="lazy" decoding="async">
-              <div class="fabrication-core"><span></span><i></i></div><div class="fabrication-ring ring-a"></div><div class="fabrication-ring ring-b"></div>
-              <div class="fabrication-part part-a"></div><div class="fabrication-part part-b"></div><div class="fabrication-part part-c"></div>
-              <span class="art-glint">✧</span>
-            </div>
-            <div class="craft-copy"><span class="craft-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M19 5h10l2 6 5 2 6-3 5 9-5 4v5l5 4-5 9-6-3-5 2-2 6H19l-2-6-5-2-6 3-5-9 5-4v-5l-5-4 5-9 6 3 5-2 2-6Z" transform="translate(2 0) scale(.9)"/><circle cx="24" cy="24" r="7"/></svg></span><span class="craft-text"><strong>Fertigung</strong><small>Die praktische Umsetzung – vom Einzelteil bis zur Serie.</small></span><span class="craft-arrow" aria-hidden="true">↗</span></div>
-          </a>
-        </article>
-      </div>
-    </section>
+  <main id="inhalt">
+    <h1>Werkstatt &amp; Herstellung</h1>
+    <nav class="scene" aria-label="Werkstatt &amp; Herstellung" style="--art:url('../../../assets/bilder/Werkstatt%20%26%20Herstellung/%C3%9Cbersichtsseite/archivansicht.webp'); aspect-ratio:1672/876">
+      <a class="scene-link" id="rezepte" href="../Rezepte/index.html" data-route="inhalt-werkstatt-und-herstellung-rezepte" style="left:14.055%; top:7.078%; width:31.220%; height:34.475%; --shape:polygon(0.00% 74.17%, 38.31% 45.70%, 100.00% 0.00%, 66.28% 100.00%); background-size:320.3065% 290.0662%; background-position:20.4348% 10.8014%"><img src="../../../assets/bilder/Werkstatt%20%26%20Herstellung/%C3%9Cbersichtsseite/rezepte-detail.webp" alt="" loading="lazy"><span>Rezepte</span></a>
+      <a class="scene-link" id="produktionsverfahren" href="../Produktionsverfahren/index.html" data-route="inhalt-werkstatt-und-herstellung-produktionsverfahren" style="left:55.622%; top:3.539%; width:42.524%; height:30.822%; --shape:polygon(0.00% 54.81%, 8.30% 0.00%, 100.00% 6.30%, 89.31% 70.37%, 37.55% 100.00%); background-size:235.1617% 324.4444%; background-position:96.7742% 5.1155%"><img src="../../../assets/bilder/Werkstatt%20%26%20Herstellung/%C3%9Cbersichtsseite/produktionsverfahren-detail.webp" alt="" loading="lazy"><span>Produktionsverfahren</span></a>
+      <a class="scene-link" id="fertigung" href="../Fertigung/index.html" data-route="inhalt-werkstatt-und-herstellung-fertigung" style="left:63.696%; top:33.790%; width:34.031%; height:33.790%; --shape:polygon(0.00% 100.00%, 40.42% 0.00%, 100.00% 10.81%, 96.13% 60.47%); background-size:293.8489% 295.9459%; background-position:96.5549% 51.0345%"><img src="../../../assets/bilder/Werkstatt%20%26%20Herstellung/%C3%9Cbersichtsseite/fertigung-detail.webp" alt="" loading="lazy"><span>Fertigung</span></a>
+      <a class="scene-link" id="bauplane" href="../Baupl%C3%A4ne/index.html" data-route="inhalt-werkstatt-und-herstellung-bauplane" style="left:1.435%; top:49.658%; width:42.823%; height:46.804%; --shape:polygon(11.17% 12.93%, 47.77% 0.00%, 100.00% 75.12%, 0.00% 100.00%); background-size:233.5196% 213.6585%; background-position:2.5105% 93.3476%"><img src="../../../assets/bilder/Werkstatt%20%26%20Herstellung/%C3%9Cbersichtsseite/bauplane-detail.webp" alt="" loading="lazy"><span>Baupläne</span></a>
+      <a class="scene-link" id="handwerk" href="../Handwerk/index.html" data-route="inhalt-werkstatt-und-herstellung-handwerk" style="left:48.325%; top:62.900%; width:36.244%; height:33.447%; --shape:polygon(12.21% 43.34%, 97.69% 0.00%, 100.00% 75.43%, 0.00% 100.00%); background-size:275.9076% 298.9761%; background-position:75.7974% 94.5111%"><img src="../../../assets/bilder/Werkstatt%20%26%20Herstellung/%C3%9Cbersichtsseite/handwerk-detail.webp" alt="" loading="lazy"><span>Handwerk</span></a>
+    </nav>
   </main>
 </body>
 </html>

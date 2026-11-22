@@ -1,0 +1,456 @@
+# APORIA – REGENERANTEN
+# 07 – GAMEPLAY UND SPIELINTEGRATION
+
+**Version:** 4.0 – Abschlussfassung  
+**Schwerpunkte:** NPCs, Körperzonen, Regeneration, Verletzungen, medizinische Behandlung, Forschung, Animation und Save/Load
+
+---
+
+## 7.1 Grundlegende Spielrolle
+
+Die Regeneranten sind eine intelligente biologische Spezies des APORIA-Universums.
+
+Sie können unter anderem auftreten als:
+
+- NPCs.
+- Begleiter.
+- Forscher.
+- Mediziner.
+- Händler.
+- Expeditionsteilnehmer.
+- Angehörige verschiedener Fraktionen.
+- Bewohner Nalvyrs und interstellarer Siedlungen.
+
+Die menschliche Protagonistin bleibt die Hauptfigur der Kernkampagne.
+
+Regeneranten werden zunächst als NPC-Spezies integriert.
+
+Eine spätere spielbare Variante kann zusätzlich entwickelt werden.
+
+## 7.2 Besondere Gameplay-Identität
+
+Die größte Stärke der Regeneranten besteht in ihrer langfristigen Fähigkeit zur körperlichen Wiederherstellung.
+
+Ihre Fähigkeit ist kein Ersatz für eine vollständige Unverwundbarkeit.
+
+Schwere Verletzungen können unmittelbar zum Verlust wichtiger Körperfunktionen führen.
+
+Die Regeneration erfordert anschließend Zeit und Ressourcen.
+
+Dadurch besitzen Regeneranten besondere Vorteile im langfristigen Überleben, bleiben aber in akuten Gefahrensituationen verwundbar.
+
+## 7.3 Körperzonensystem
+
+Das Verletzungssystem verwendet mehrere anatomische Körperzonen.
+
+**Sechs Extremitäten**
+
+Jede Extremität besitzt einen eigenen Verletzungs- und Funktionszustand.
+
+**Zentralkörper**
+
+Enthält wichtige innere Organe und strukturelle Verbindungen.
+
+**Gehirnring**
+
+Trägt die wichtigsten neuronalen Funktionen.
+
+**Kreislauf und Atmung**
+
+Bestimmen die Versorgung lebenswichtiger Körperbereiche.
+
+**Sinnesregionen**
+
+Beeinflussen Wahrnehmung und Orientierung.
+
+**Regenerative Zellreservoirs**
+
+Bestimmen die verfügbare regenerative Leistungsfähigkeit.
+
+## 7.4 Zustandswerte
+
+Jede relevante Körperzone kann folgende Daten besitzen:
+
+- Strukturelle Integrität.
+- Funktionelle Leistungsfähigkeit.
+- Verletzungsschwere.
+- Durchblutungszustand.
+- Regenerationsphase.
+- Medizinische Behandlungen.
+- Komplikationen.
+- Langfristige Einschränkungen.
+
+Die äußerliche Wiederherstellung und die tatsächliche Funktion werden getrennt bewertet.
+
+## 7.5 Verletzungsarten
+
+Das Gameplay unterscheidet funktionelle Schadenskategorien.
+
+Dazu gehören:
+
+- Oberflächliche Verletzungen.
+- Tiefere Gewebeschäden.
+- Muskelverletzungen.
+- Schäden am Stützsystem.
+- Gefäßverletzungen.
+- Organverletzungen.
+- Nervenschäden.
+- Sensorische Schäden.
+- Vollständiger Verlust äußerer Körperteile.
+
+Die Auswirkungen ergeben sich aus Art, Umfang und Lage der Verletzung.
+
+## 7.6 Regenerationsphasen
+
+Ein Regenerationsvorgang durchläuft mehrere Zustände.
+
+**Akute Verletzung**
+
+Eine Körperregion ist beschädigt.
+
+**Notfallstabilisierung**
+
+Blutverlust und weitere Schäden werden begrenzt.
+
+**Wundverschluss**
+
+Die verletzte Region wird geschützt.
+
+**Regeneratives Wachstum**
+
+Neue Gewebestrukturen entstehen.
+
+**Anatomischer Wiederaufbau**
+
+Die ursprüngliche Körperstruktur wird schrittweise rekonstruiert.
+
+**Funktionelle Nachreifung**
+
+Das neue Gewebe erhält zunehmend seine Belastbarkeit und Koordinationsfähigkeit.
+
+## 7.7 Biologische Ressourcen
+
+Vier Ressourcenbereiche beeinflussen den Regenerationsprozess.
+
+### Stoffwechselenergie
+
+Energie für gewöhnliche Körperfunktionen und Gewebewachstum.
+
+### Wasserhaushalt
+
+Flüssigkeitsversorgung und Stofftransport.
+
+### Biologische Baustoffe
+
+Proteine, Lipide, Mineralien und weitere benötigte Stoffe.
+
+### Regenerative Zellkapazität
+
+Zustand der regenerativen Zellreservoirs und Kontrollmechanismen.
+
+Ein Mangel kann die Heilung verlangsamen oder verhindern.
+
+## 7.8 Regenerationspriorität
+
+Bei mehreren schweren Verletzungen werden lebenswichtige Systeme bevorzugt stabilisiert.
+
+Die Wiederherstellung äußerer Körperteile kann verzögert werden.
+
+Ein NPC mit schwerem Kreislaufschaden kann nicht gleichzeitig sämtliche verlorenen Gliedmaßen mit voller Geschwindigkeit regenerieren.
+
+Die Priorisierung ergibt sich aus dem biologischen Zustand.
+
+## 7.9 Kontrollierte Gliedmaßenabtrennung
+
+Bestimmte äußere Extremitätenabschnitte können an natürlichen Trennstellen abgestoßen werden.
+
+Im Gameplay ist dies beispielsweise zur Befreiung aus einer gefährlichen Fixierung möglich.
+
+Die Fähigkeit hat Nachteile:
+
+- Verlust einer Körperfunktion.
+- Zusätzlicher Ressourcenbedarf.
+- Längere Regenerationsphase.
+- Mögliche Komplikationen.
+
+Die kontrollierte Abtrennung ist nicht beliebig oft ohne Konsequenzen einsetzbar.
+
+## 7.10 Replantation
+
+Noch lebensfähige abgetrennte Körperteile können medizinisch wieder angeschlossen werden.
+
+Eine erfolgreiche Behandlung kann den vollständigen Neubau ersetzen.
+
+Dafür sind geeignete Gewebe und medizinische Versorgung notwendig.
+
+Der Heilungsprozess umfasst anschließend die funktionelle Integration.
+
+## 7.11 Kritische Zustände
+
+Das Gameplay unterscheidet zwischen:
+
+- Bewusstlosigkeit.
+- Kritischer Organversorgung.
+- Schwerem Nervenschaden.
+- Regenerativem Ruhezustand.
+- Medizinisch stabilisiertem Zustand.
+- Irreversiblem Tod.
+
+Ein regenerativer Ruhezustand kann das Überleben verlängern.
+
+Er verhindert nicht automatisch den Tod durch schwere Schäden oder fehlende Versorgung.
+
+## 7.12 NPC-Verhalten
+
+Die künstliche Intelligenz berücksichtigt den individuellen Verletzungszustand.
+
+Regeneranten können:
+
+- Schutz suchen.
+- Verletzte Extremitäten entlasten.
+- Die Fortbewegung anpassen.
+- Medizinische Hilfe anfordern.
+- Nahrung und Wasser benötigen.
+- Gefährliche Aufgaben unterbrechen.
+- Einen sicheren Regenerationsort aufsuchen.
+- Auf anhaltende Schmerzen reagieren.
+
+Die Entscheidung hängt zusätzlich von Persönlichkeit, Situation und Aufgabe ab.
+
+## 7.13 Langfristige NPC-Entwicklung
+
+Regenerationszustände bleiben über längere Zeit erhalten.
+
+Ein verletzter NPC kann über Tage oder Wochen eingeschränkte Funktionen besitzen.
+
+Sein Zustand kann sich abhängig von Versorgung und Behandlung verbessern.
+
+Schwere neuronale Schäden können langfristige Folgen verursachen.
+
+Diese Auswirkungen bleiben nicht auf unmittelbare Kampfhandlungen beschränkt.
+
+## 7.14 Medizinische Behandlungen
+
+Medizinische Einrichtungen können:
+
+- Verletzungen untersuchen.
+- Kreislauf und Atmung stabilisieren.
+- Infektionen behandeln.
+- Regenerationsfehler erkennen.
+- Replantationen durchführen.
+- Nährstoffversorgung verbessern.
+- Neurologische Rehabilitation unterstützen.
+- Komplikationen überwachen.
+
+Die Behandlung unterstützt die natürliche Regeneration.
+
+Sie ersetzt keine vollständige Wiederauferstehung.
+
+## 7.15 Forschungsfortschritt
+
+Vier übergeordnete Forschungsfelder sind spieltechnisch besonders relevant.
+
+**Wund- und Geweberegeneration**
+
+Behandlung äußerer Schäden.
+
+**Organregeneration**
+
+Wiederherstellung innerer Organfunktionen.
+
+**Neurologische Regeneration**
+
+Behandlung von Nerven- und Gehirnschäden.
+
+**Xenomedizin**
+
+Anpassung bestimmter medizinischer Verfahren an andere Spezies.
+
+Diese Felder werden in die bestehende APORIA-Forschungsstruktur eingeordnet.
+
+## 7.16 Forschungsabhängigkeiten
+
+Medizinische Technologien werden durch wissenschaftliche Fortschritte freigeschaltet.
+
+Ein komplexes Verfahren kann mehrere Voraussetzungen benötigen:
+
+- Biologische Grundlagen.
+- Mess- und Diagnosetechnik.
+- Geeignete medizinische Geräte.
+- Zulassungen.
+- Medizinische Materialien.
+- Spezialisierte Ausbildung.
+
+Forschungsergebnisse werden nicht automatisch zu sofort verfügbaren universellen Heilfähigkeiten.
+
+## 7.17 Charakterentwicklung
+
+Regeneranten können ihre medizinisch unterstützte Regenerationsleistung verbessern.
+
+Mögliche Fortschritte umfassen:
+
+- Effizientere Wundversorgung.
+- Verbesserte Behandlung von Komplikationen.
+- Geringere Stoffwechselverluste.
+- Schnellere funktionelle Rehabilitation.
+- Bessere Überwachung regenerativer Gewebe.
+- Erhöhte Belastbarkeit während der Heilung.
+
+Die natürlichen biologischen Grenzen bleiben erhalten.
+
+## 7.18 Balancing
+
+Die Regeneranten besitzen hohe langfristige Überlebensfähigkeit.
+
+Gleichzeitig gelten folgende Grenzen:
+
+1. Schwere Verletzungen verursachen echte Einschränkungen.
+2. Regeneration benötigt Zeit.
+3. Regeneration verbraucht Ressourcen.
+4. Komplikationen bleiben möglich.
+5. Kritische Schäden können tödlich sein.
+
+Die Fähigkeit ist deshalb nicht mit sofortiger vollständiger Heilung gleichzusetzen.
+
+## 7.19 Fortbewegungsanimation
+
+Die besondere sechsstrahlige Körperform benötigt eigene Animationen.
+
+Wichtige Bewegungsarten sind:
+
+- Normaler Dreibein-Wechselgang.
+- Langsame Mehrbein-Fortbewegung.
+- Richtungswechsel.
+- Werkzeuggebrauch.
+- Bewegung mit fehlenden Gliedmaßen.
+- Verletzungsbedingte Schonhaltung.
+- Regenerativer Ruhezustand.
+
+## 7.20 Kommunikationsanimation
+
+Die Kommunikation nutzt resonante Laute, Körperhaltungen und Vibrationen.
+
+Dazu können unterschiedliche animierte Ausdrucksformen verwendet werden.
+
+Die Körperbewegungen sollten nicht ausschließlich humanoide Gesten nachahmen.
+
+Die besondere Anatomie ermöglicht eigenständige Kommunikationsabläufe.
+
+## 7.21 Sichtbare Regeneration
+
+Die Darstellung der Heilung kann über mehrere technische Zustände erfolgen.
+
+Mögliche Verfahren sind:
+
+- Unterschiedliche Körpermesh-Zustände.
+- Materialparameter.
+- Sichtbare Gewebeschichten.
+- Kontrollierte Wachstumsanimationen.
+- Veränderungen der Körperhaltung.
+- Stufenweise Wiederherstellung fehlender Teile.
+
+Eine vollständige biologische Echtzeitsimulation ist nicht erforderlich.
+
+## 7.22 Medizinische Ausrüstung
+
+Mögliche Ausrüstungsgruppen sind:
+
+- Regenerationsscanner.
+- Gewebekartierungsgeräte.
+- Organunterstützungssysteme.
+- Medizinische Versorgungseinheiten.
+- Spezialisierte Replantationsgeräte.
+- Neurologische Rehabilitationssysteme.
+
+Die konkrete Gestaltung einzelner Geräte erfolgt innerhalb der allgemeinen APORIA-Ausrüstungs- und Forschungssysteme.
+
+## 7.23 Save/Load
+
+Die biologischen Zustände werden unabhängig von einer einzelnen geladenen Actor-Instanz gespeichert.
+
+Jeder Regenerant besitzt eine eindeutige Charakteridentität.
+
+Persistente Informationen können umfassen:
+
+- CharacterID.
+- Spezieskennung.
+- Körperzonen.
+- Verletzungszustände.
+- Regenerationsphasen.
+- Biologische Ressourcen.
+- Medizinische Behandlungen.
+- Dauerhafte Einschränkungen.
+- Relevante Zeitstempel.
+
+Die Daten müssen mit dem allgemeinen APORIA-Save/Load-System vereinbar sein.
+
+## 7.24 Regeneration bei ungeladenen Weltbereichen
+
+Regenerationsprozesse können außerhalb aktiv geladener Gebiete fortgeführt werden.
+
+Die Simulation berücksichtigt:
+
+- Verstrichene Spielzeit.
+- Verfügbare Ressourcen.
+- Medizinische Versorgung.
+- Verletzungszustände.
+- Biologische Grenzen.
+
+Es darf keine unbegrenzte Heilung ohne ausreichende Versorgung stattfinden.
+
+## 7.25 Technische Architektur
+
+Die Regenerationslogik wird von folgenden Bereichen getrennt:
+
+- Animation.
+- Visueller Darstellung.
+- Konkreten Actor-Instanzen.
+- Weltstreaming.
+- Persistenz.
+- NPC-Entscheidungssystemen.
+
+Die biologische Simulation bildet eine eigenständige Daten- und Logikebene.
+
+Dadurch bleibt sie für unterschiedliche NPCs und spätere technische Erweiterungen wiederverwendbar.
+
+## 7.26 Quests
+
+Mögliche Missionstypen sind:
+
+**Rettungsmissionen**
+
+Versorgung schwer verletzter Individuen.
+
+**Medizinische Forschungsmissionen**
+
+Untersuchung seltener Erkrankungen.
+
+**Historische Nachforschungen**
+
+Aufarbeitung der Gewebekrise.
+
+**Politische Missionen**
+
+Konflikte um Forschungsrechte.
+
+**Xenobiologische Expeditionen**
+
+Erforschung regenerativer Tiergruppen Nalvyrs.
+
+**Interstellare Forschungsprojekte**
+
+Anpassung medizinischer Verfahren an andere Lebensformen.
+
+## 7.27 Abschluss
+
+Die Regeneranten besitzen ein eigenständiges Verletzungs- und Regenerationssystem.
+
+Dieses verbindet biologische Glaubwürdigkeit mit langfristigen Gameplay-Konsequenzen.
+
+Die Regeneration ist leistungsfähig, aber ressourcenabhängig und begrenzt.
+
+Die technischen Grundlagen sind so organisiert, dass spätere Erweiterungen der APORIA-Spielsysteme möglich bleiben.
+
+---
+
+**ENDE – GAMEPLAY**

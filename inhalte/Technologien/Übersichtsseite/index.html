@@ -3,73 +3,23 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#07140f">
-  <meta name="description" content="Erfindungen, Maschinen, Geräte und technische Systeme aus dem Aporia-Weltenarchiv.">
   <title>Technologien | Aporia Weltenarchiv</title>
   <link rel="stylesheet" href="../../../Menüs/TopBar/Top_bar.css">
-  <link rel="stylesheet" href="./Technologien.css">
+  <link rel="stylesheet" href="../../Archivansicht.css">
   <script type="module" src="./Technologien.js"></script>
 </head>
-<body class="technology-page" data-page="inhalt-technologien">
+<body data-page="inhalt-technologien">
   <div data-aporia-topbar></div>
-  <main class="technology-main" id="inhalt">
-    <nav class="breadcrumb" aria-label="Brotkrumennavigation">
-      <a data-route="inhalte" href="#">Weltenarchiv</a><span aria-hidden="true">›</span>
-      <span aria-current="page">Technologien</span>
+  <main id="inhalt">
+    <h1>Technologien</h1>
+    <nav class="scene" aria-label="Technologien" style="--art:url('../../../assets/bilder/Technologien/%C3%9Cbersichtsseite/archivansicht.webp'); aspect-ratio:1672/881">
+      <a class="scene-link" id="erfindungen" href="../Erfindungen/index.html" data-route="inhalt-technologien-erfindungen" style="left:1.316%; top:58.683%; width:34.988%; height:37.117%; --shape:polygon(0.00% 43.43%, 20.34% 0.00%, 74.36% 7.34%, 100.00% 70.64%, 97.61% 85.02%, 12.31% 100.00%); background-size:285.8120% 269.4190%; background-position:2.0239% 93.3213%"><img src="../../../assets/bilder/Technologien/%C3%9Cbersichtsseite/erfindungen-detail.webp" alt="" loading="lazy"><span>Erfindungen</span></a>
+      <a class="scene-link" id="gerate" href="../Ger%C3%A4te/index.html" data-route="inhalt-technologien-gerate" style="left:2.333%; top:21.566%; width:25.478%; height:34.506%; --shape:polygon(0.00% 41.78%, 34.04% 0.00%, 100.00% 10.53%, 90.38% 84.21%, 16.67% 100.00%, 3.05% 87.83%); background-size:392.4883% 289.8026%; background-position:3.1300% 32.9289%"><img src="../../../assets/bilder/Technologien/%C3%9Cbersichtsseite/gerate-detail.webp" alt="" loading="lazy"><span>Geräte</span></a>
+      <a class="scene-link" id="maschinen" href="../Maschinen/index.html" data-route="inhalt-technologien-maschinen" style="left:60.885%; top:0.908%; width:37.679%; height:31.101%; --shape:polygon(0.00% 20.44%, 7.14% 13.50%, 77.46% 0.00%, 100.00% 39.78%, 86.19% 81.39%, 18.57% 100.00%); background-size:265.3968% 321.5328%; background-position:97.6967% 1.3180%"><img src="../../../assets/bilder/Technologien/%C3%9Cbersichtsseite/maschinen-detail.webp" alt="" loading="lazy"><span>Maschinen</span></a>
+      <a class="scene-link" id="freischaltungen" href="../Freischaltungen/index.html" data-route="inhalt-technologien-freischaltungen" style="left:67.524%; top:29.512%; width:30.562%; height:30.079%; --shape:polygon(0.00% 86.04%, 15.46% 18.49%, 96.67% 0.00%, 100.00% 82.26%, 7.24% 100.00%); background-size:327.2016% 332.4528%; background-position:97.2438% 42.2078%"><img src="../../../assets/bilder/Technologien/%C3%9Cbersichtsseite/freischaltungen-detail.webp" alt="" loading="lazy"><span>Freischaltungen</span></a>
+      <a class="scene-link" id="technische-systeme" href="../Technische%20Systeme/index.html" data-route="inhalt-technologien-technische-systeme" style="left:52.512%; top:58.002%; width:44.976%; height:35.074%; --shape:polygon(0.00% 98.71%, 27.26% 27.83%, 92.55% 0.00%, 100.00% 65.70%, 94.15% 82.52%, 39.63% 100.00%); background-size:222.3404% 285.1133%; background-position:95.4348% 89.3357%"><img src="../../../assets/bilder/Technologien/%C3%9Cbersichtsseite/technische-systeme-detail.webp" alt="" loading="lazy"><span>Technische Systeme</span></a>
     </nav>
-
-    <header class="technology-hero">
-      <img class="hero-image" src="../../../assets/bilder/Technologien/Übersichtsseite/Viktorianischer%20Laborarbeitsplatz%20mit%20grünen%20Hologrammen-2.png" alt="Historisch anmutendes Forschungslabor mit grünen holografischen Anzeigen" fetchpriority="high">
-      <div class="hero-shade"></div>
-      <div class="hero-copy">
-        <p class="eyebrow">APORIA · WELTENARCHIV</p>
-        <h1><span aria-hidden="true">✧</span> Technologien</h1>
-        <p>Erfindungen und technische Systeme. Entdecke die Ideen, Maschinen und Geräte, die das Leben in den Welten Aporias prägen.</p>
-        <span class="hero-rule" aria-hidden="true"><i>✦</i></span>
-      </div>
-      <span class="hero-coordinate" aria-hidden="true">ARCHIVSEKTOR · T-04</span>
-    </header>
-
-    <section class="archive-section" aria-labelledby="areas-title">
-      <div class="section-heading">
-        <div><p class="eyebrow">TECHNOLOGIEARCHIV</p><h2 id="areas-title">Forschungsfelder entdecken</h2></div>
-        <span class="section-line" aria-hidden="true"></span><span class="section-count">05 <small>BEREICHE</small></span>
-      </div>
-      <div class="technology-grid">
-        <a class="technology-card" data-route="inhalt-technologien-erfindungen" href="#">
-          <span class="card-art"><img src="../../../assets/bilder/Technologien/Übersichtsseite/Futuristische%20Präzisionsturbine%20mit%20smaragdgrünem%20Energiekern-3.png" alt="Präzisionsmaschine mit leuchtendem smaragdgrünem Energiekern" loading="lazy" decoding="async"></span>
-          <span class="card-copy"><span class="card-icon" aria-hidden="true">♧</span><strong>Erfindungen</strong><span class="card-arrow" aria-hidden="true">→</span></span>
-        </a>
-        <a class="technology-card" data-route="inhalt-technologien-maschinen" href="#">
-          <span class="card-art"><img src="../../../assets/bilder/Technologien/Übersichtsseite/Futuristische%20Präzisionsturbine%20mit%20smaragdgrünem%20Energiekern-3.png" alt="Detail einer präzisen technischen Anlage" loading="lazy" decoding="async"></span>
-          <span class="card-copy"><span class="card-icon" aria-hidden="true">⚙</span><strong>Maschinen</strong><span class="card-arrow" aria-hidden="true">→</span></span>
-        </a>
-        <a class="technology-card" data-route="inhalt-technologien-gerate" href="#">
-          <span class="card-art"><img src="../../../assets/bilder/Technologien/Übersichtsseite/Tragbarer%20Feldscanner%20mit%20holografischem%20Display-1.png" alt="Tragbarer Feldscanner mit grünem holografischem Display" loading="lazy" decoding="async"></span>
-          <span class="card-copy"><span class="card-icon" aria-hidden="true">⌖</span><strong>Geräte</strong><span class="card-arrow" aria-hidden="true">→</span></span>
-        </a>
-        <a class="technology-card" data-route="inhalt-technologien-technische-systeme" href="#">
-          <span class="card-art"><img src="../../../assets/bilder/Technologien/Übersichtsseite/Viktorianischer%20Laborarbeitsplatz%20mit%20grünen%20Hologrammen-2.png" alt="Forschungslabor mit vernetzten technischen Anzeigen" loading="lazy" decoding="async"></span>
-          <span class="card-copy"><span class="card-icon" aria-hidden="true">⌘</span><strong>Technische Systeme</strong><span class="card-arrow" aria-hidden="true">→</span></span>
-        </a>
-        <a class="technology-card" data-route="inhalt-technologien-freischaltungen" href="#">
-          <span class="card-art"><img src="../../../assets/bilder/Technologien/Übersichtsseite/Tragbarer%20Feldscanner%20mit%20holografischem%20Display-1.png" alt="Aktivierter tragbarer Scanner als Symbol für technische Freischaltungen" loading="lazy" decoding="async"></span>
-          <span class="card-copy"><span class="card-icon" aria-hidden="true">⏻</span><strong>Freischaltungen</strong><span class="card-arrow" aria-hidden="true">→</span></span>
-        </a>
-      </div>
-    </section>
-
-    <section class="archive-panels" aria-label="Weitere Technologieinhalte">
-      <a class="feature-panel" data-route="forschung" href="#">
-        <img src="../../../assets/bilder/Technologien/Übersichtsseite/Futuristische%20Präzisionsturbine%20mit%20smaragdgrünem%20Energiekern-3.png" alt="Technische Forschungsmaschine" loading="lazy" decoding="async">
-        <span class="panel-copy"><small>WISSEN &amp; ENTWICKLUNG</small><strong>Technologie-Schwerpunkte</strong></span><span class="panel-arrow" aria-hidden="true">→</span>
-      </a>
-      <a class="feature-panel" data-route="inhalt-fahrzeuge-und-raumschiffe" href="#">
-        <img src="../../../assets/bilder/Technologien/Übersichtsseite/Viktorianischer%20Laborarbeitsplatz%20mit%20grünen%20Hologrammen-2.png" alt="Technische Entwürfe im Forschungslabor" loading="lazy" decoding="async">
-        <span class="panel-copy"><small>VERBUNDENE ARCHIVE</small><strong>Verknüpfte Inhalte</strong></span><span class="panel-arrow" aria-hidden="true">→</span>
-      </a>
-    </section>
-    <footer class="archive-footer"><span>APORIA · WELTENARCHIV</span><span>TECHNOLOGIEN</span></footer>
+    <nav class="related" aria-label="Verwandte Bereiche"><a href="#" data-route="forschung">Forschung</a><a href="#" data-route="inhalt-fahrzeuge-und-raumschiffe">Fahrzeuge &amp; Raumschiffe</a></nav>
   </main>
 </body>
 </html>
