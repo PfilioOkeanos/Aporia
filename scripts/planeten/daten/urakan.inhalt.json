@@ -1,0 +1,821 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Urakan",
+  "genitiv": "von Urakan",
+  "dossierName": "Urakan-Dossier",
+  "klasse": "Gasriese",
+  "intro": "Urakan ist ein Gasriese mit 0,65 Jupitermassen, farbigen Wolkenbändern und dem langlebigen Großen Wirbel. Eine ausgedehnte Magnetosphäre, schmale Staub- und Gesteinsringe und vier größere Monde umgeben ihn. Urakan umkreist Terev in 4,4 AE Abstand und braucht für einen Umlauf 9,9 Jahre.",
+  "globusDaten": {
+    "planet": "warmer-jupiter-im-sanften-sternenlicht",
+    "klasse": "Gasriese",
+    "radius": 67200000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=nerath-stern&objekt=nerath-urakan",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-8AFE4F84A2"
+    ],
+    [
+      "Typ",
+      "Gasriese"
+    ],
+    [
+      "Sternsystem",
+      "Terev-System"
+    ],
+    [
+      "Zentralkörper",
+      "Terev"
+    ],
+    [
+      "Große Halbachse",
+      "4,4 AE"
+    ],
+    [
+      "Umlaufzeit",
+      "9,9 Jahre"
+    ],
+    [
+      "Durchmesser",
+      "134.400 km"
+    ],
+    [
+      "Masse",
+      "206,6 Erdmassen"
+    ],
+    [
+      "Schwerkraft",
+      "1,86 g"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -174 °C"
+    ],
+    [
+      "Monde",
+      "4 (Nair, Sirel, Valdor, Erym)"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Terev-System"
+    ],
+    [
+      "Zentralstern",
+      "Terev",
+      "inhalte/himmelskoerper/sterne/details/terev/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "4,4 AE"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Urakan im Terev-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=nerath-stern&objekt=nerath-urakan",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Terev",
+      "href": "inhalte/himmelskoerper/sterne/details/terev/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Nair",
+      "href": "inhalte/himmelskoerper/monde/details/nair/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Sirel",
+      "href": "inhalte/himmelskoerper/monde/details/sirel/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Valdor",
+      "href": "inhalte/himmelskoerper/monde/details/valdor/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Erym",
+      "href": "inhalte/himmelskoerper/monde/details/erym/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Synaptoiden",
+      "titel": "Nerath",
+      "href": "inhalte/himmelskoerper/planeten/details/nerath/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Synaptoiden",
+      "href": "inhalte/spezies/Mentale Spezies/Synaptoiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Terev-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=nerath-stern&objekt=nerath-urakan"
+    },
+    {
+      "titel": "Speziesdossier Synaptoiden",
+      "href": "inhalte/spezies/Mentale Spezies/Synaptoiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#0b0907",
+      "tiefe": "#18140f",
+      "akzent": "#e8cdaf",
+      "sand": "#eac99e",
+      "moos": "#c3c68a",
+      "ozean": "#9cac9d",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#63503c"
+    }
+  },
+  "kapitel": {
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Urakan auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Urakan",
+          "text": [
+            "Urakan ist ein Gasriese mit 0,65 Jupitermassen, farbigen Wolkenbändern und dem langlebigen Großen Wirbel. Eine ausgedehnte Magnetosphäre, schmale Staub- und Gesteinsringe und vier größere Monde umgeben ihn.",
+            "Urakan umkreist Terev in 4,4 AE Abstand und braucht für einen Umlauf 9,9 Jahre."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Gasriese"
+            ],
+            [
+              "Sternsystem",
+              "Terev-System"
+            ],
+            [
+              "Zentralkörper",
+              "Terev"
+            ],
+            [
+              "Große Halbachse",
+              "4,4 AE"
+            ],
+            [
+              "Umlaufzeit",
+              "9,9 Jahre"
+            ],
+            [
+              "Durchmesser",
+              "134.400 km"
+            ],
+            [
+              "Masse",
+              "206,6 Erdmassen"
+            ],
+            [
+              "Schwerkraft",
+              "1,86 g"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -174 °C"
+            ],
+            [
+              "Monde",
+              "4 (Nair, Sirel, Valdor, Erym)"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Nerath",
+          "text": [
+            "Das Terev-System ist die Heimat der Synaptoiden: Ihr Planet Nerath umkreist Terev."
+          ],
+          "verweise": [
+            [
+              "Nerath",
+              "inhalte/himmelskoerper/planeten/details/nerath/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Synaptoiden",
+              "inhalte/spezies/Mentale Spezies/Synaptoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Urakan im Terev-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Terev"
+            ],
+            [
+              "Große Halbachse",
+              "4,4 AE (658,2 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,034"
+            ],
+            [
+              "Bahnneigung",
+              "1,3°"
+            ],
+            [
+              "Umlaufzeit",
+              "9,9 Jahre"
+            ],
+            [
+              "Einstrahlung",
+              "0,032-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Am Himmel von Urakan",
+          "text": [
+            "Terev erscheint von hier aus etwa 0,11° groß (die Sonne von der Erde: 0,53°)."
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Terev · Stern",
+              "Orangegelber Zwerg (K0 V)"
+            ],
+            [
+              "Vaskir · 0,16 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Sereth · 0,42 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Nerath · 0,93 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Talvek · 1,57 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Urakan · 4,4 AE · dieses Dossier",
+              "Gasriese"
+            ],
+            [
+              "Oryss · 9,3 AE",
+              "Eisriese"
+            ],
+            [
+              "Veyl · 22,8 AE",
+              "Eisplanet"
+            ],
+            [
+              "Relt · 44 AE",
+              "Zwergplanet"
+            ],
+            [
+              "Othir · 52 AE",
+              "Zwergplanet"
+            ],
+            [
+              "Skalenband · 2,2–3,2 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Taren-Saum · 38–65 AE",
+              "Kleinkörpergürtel"
+            ],
+            [
+              "Terev-Fernwolke · 1.500–8.000 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Terev",
+              "inhalte/himmelskoerper/sterne/details/terev/hauptseite/index.html"
+            ],
+            [
+              "Vaskir",
+              "inhalte/himmelskoerper/planeten/details/vaskir/hauptseite/index.html"
+            ],
+            [
+              "Sereth",
+              "inhalte/himmelskoerper/planeten/details/sereth/hauptseite/index.html"
+            ],
+            [
+              "Nerath",
+              "inhalte/himmelskoerper/planeten/details/nerath/hauptseite/index.html"
+            ],
+            [
+              "Talvek",
+              "inhalte/himmelskoerper/planeten/details/talvek/hauptseite/index.html"
+            ],
+            [
+              "Oryss",
+              "inhalte/himmelskoerper/planeten/details/oryss/hauptseite/index.html"
+            ],
+            [
+              "Veyl",
+              "inhalte/himmelskoerper/planeten/details/veyl/hauptseite/index.html"
+            ],
+            [
+              "Relt",
+              "inhalte/himmelskoerper/zwergplaneten/details/relt/hauptseite/index.html"
+            ],
+            [
+              "Othir",
+              "inhalte/himmelskoerper/zwergplaneten/details/othir/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Urakan.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "67.200 km"
+            ],
+            [
+              "Masse",
+              "206,6 Erdmassen"
+            ],
+            [
+              "Mittlere Dichte",
+              "0,97 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "18,22 m/s² (1,857 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "49,51 km/s"
+            ]
+          ],
+          "vergleich": {
+            "mit": "Erde",
+            "werte": [
+              [
+                "Durchmesser",
+                134400,
+                12742,
+                "km"
+              ],
+              [
+                "Masse",
+                206.6,
+                1,
+                "Erdmassen"
+              ],
+              [
+                "Schwerkraft",
+                1.86,
+                1,
+                "g"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "Planetare Struktur": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Planetare Struktur von Urakan.",
+      "abschnitte": [
+        {
+          "titel": "Schalenbau",
+          "schichten": [
+            [
+              "Wolkendecke",
+              "Ammoniak- und Wasserwolken in Bändern"
+            ],
+            [
+              "Wasserstoffhülle",
+              "Molekularer Wasserstoff und Helium"
+            ],
+            [
+              "Metallischer Wasserstoff",
+              "Leitfähige Schicht unter extremem Druck – Ursprung des Magnetfelds"
+            ],
+            [
+              "Kern",
+              "Gestein und Eis"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geografie": {
+      "gruppe": "Natur",
+      "icon": "△",
+      "intro": "Geografie von Urakan.",
+      "abschnitte": [
+        {
+          "titel": "Oberfläche",
+          "text": [
+            "Urakan besitzt keine feste Oberfläche. Sichtbar sind Wolkenbänder, Wirbel und Stürme."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Urakan.",
+      "abschnitte": [
+        {
+          "titel": "Gashülle",
+          "text": [
+            "Urakan besitzt keine feste Oberfläche; die Hülle geht nach innen allmählich in dichtere Schichten über."
+          ],
+          "balken": {
+            "werte": [
+              [
+                "Wasserstoff",
+                86
+              ],
+              [
+                "Helium",
+                13
+              ],
+              [
+                "Methan und Spurengase",
+                1
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Urakan.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 4,4 AE Abstand zu Terev liegt die Gleichgewichtstemperatur von Urakan bei rund -174 °C – eisig kalt."
+          ]
+        }
+      ]
+    },
+    "Gewässer": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gewässer von Urakan.",
+      "abschnitte": [
+        {
+          "titel": "Wasser",
+          "text": [
+            "Wasser liegt in den Wolkenschichten und tief im Inneren unter hohem Druck vor."
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Urakan.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Ohne feste Oberfläche gibt es keine Geologie im engeren Sinn; im Inneren herrschen extreme Drücke und Temperaturen."
+          ]
+        }
+      ]
+    },
+    "Biosphäre": {
+      "gruppe": "Natur",
+      "icon": "❧",
+      "intro": "Biosphäre von Urakan.",
+      "abschnitte": [
+        {
+          "titel": "Leben",
+          "text": [
+            "Auf Urakan ist kein Leben verzeichnet."
+          ]
+        }
+      ]
+    },
+    "Spezies": {
+      "gruppe": "Zivilisation",
+      "icon": "✿",
+      "intro": "Spezies von Urakan.",
+      "abschnitte": [
+        {
+          "titel": "Bewohner",
+          "text": [
+            "Urakan ist keine Heimat einer intelligenten Spezies."
+          ]
+        },
+        {
+          "titel": "Im System von Nerath",
+          "text": [
+            "Das Terev-System ist die Heimat der Synaptoiden: Ihr Planet Nerath umkreist Terev."
+          ],
+          "verweise": [
+            [
+              "Nerath",
+              "inhalte/himmelskoerper/planeten/details/nerath/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Synaptoiden",
+              "inhalte/spezies/Mentale Spezies/Synaptoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Zivilisation": {
+      "gruppe": "Zivilisation",
+      "icon": "▥",
+      "intro": "Zivilisation von Urakan.",
+      "abschnitte": [
+        {
+          "titel": "Siedlungen",
+          "text": [
+            "Für Urakan sind keine dauerhaften Siedlungen verzeichnet."
+          ]
+        },
+        {
+          "titel": "Im System von Nerath",
+          "text": [
+            "Das Terev-System ist die Heimat der Synaptoiden: Ihr Planet Nerath umkreist Terev."
+          ],
+          "verweise": [
+            [
+              "Nerath",
+              "inhalte/himmelskoerper/planeten/details/nerath/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Synaptoiden",
+              "inhalte/spezies/Mentale Spezies/Synaptoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Urakan.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Urakan entstand zusammen mit dem Terev-System vor rund 5,6 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Fraktionen": {
+      "gruppe": "Zivilisation",
+      "icon": "◇",
+      "intro": "Fraktionen von Urakan.",
+      "abschnitte": [
+        {
+          "titel": "Ansprüche",
+          "text": [
+            "Für Urakan sind keine Fraktionsansprüche verzeichnet."
+          ]
+        }
+      ]
+    },
+    "Rohstoffe": {
+      "gruppe": "Weitere",
+      "icon": "⬡",
+      "intro": "Rohstoffe von Urakan.",
+      "abschnitte": [
+        {
+          "titel": "Rohstoffe",
+          "liste": [
+            "Wasserstoff",
+            "Helium-3",
+            "Ammoniak"
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Urakan.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Wie tief reichen die Wolkenbänder?",
+            "Wie groß ist der feste Kern?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Urakan ist mit allen Bahndaten im Terev-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=nerath-stern&objekt=nerath-urakan"
+            ]
+          ]
+        },
+        {
+          "titel": "Magnetosphäre",
+          "text": [
+            "Urakans ausgedehnte Magnetosphäre beeinflusst geladene Teilchen und die Umgebung seiner Monde; Strahlungsgürtel gefährden Raumfahrzeuge und empfindliche Elektronik. Von Nerath aus ist Urakan etwa alle 390 Erdtage in Opposition besonders gut sichtbar."
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Urakan.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Größter Planet des Terev-Systems",
+            "4 Monde: Nair, Sirel, Valdor, Erym"
+          ]
+        },
+        {
+          "titel": "Monde",
+          "karten": [
+            {
+              "titel": "Nair",
+              "text": "3.500 km Durchmesser, Umlauf in 36,5 Stunden. Nair ist der innerste der vier größeren Monde Urakans – ein vulkanisch aktiver Gesteinsmond mit Lavafeldern und schwefelhaltigen Ablagerungen. Die Resonanz mit Sirel und Valdor heizt sein Inneres durch Gezeitenverformung."
+            },
+            {
+              "titel": "Sirel",
+              "text": "3.000 km Durchmesser, Umlauf in 3 Tage. Sirel ist ein eisiger Ozeanmond mit großen Risssystemen. Unter der Eisoberfläche könnte ein salzhaltiger Ozean liegen – ein besonders interessanter Kandidat für mögliche unterirdische Lebensräume."
+            },
+            {
+              "titel": "Valdor",
+              "text": "4.800 km Durchmesser, Umlauf in 6,1 Tage. Valdor ist ein großer Eis-Gesteins-Mond mit alten Einschlagbecken und Eisregionen; ein tiefer Salzwasserozean ist möglich."
+            },
+            {
+              "titel": "Erym",
+              "text": "2.200 km Durchmesser, Umlauf in 19,5 Tage. Erym ist ein alter, stark verkraterter Außenmond Urakans mit geringer innerer Aktivität – wichtig für die Rekonstruktion der frühen Systemgeschichte."
+            }
+          ],
+          "verweise": [
+            [
+              "Nair",
+              "inhalte/himmelskoerper/monde/details/nair/hauptseite/index.html"
+            ],
+            [
+              "Sirel",
+              "inhalte/himmelskoerper/monde/details/sirel/hauptseite/index.html"
+            ],
+            [
+              "Valdor",
+              "inhalte/himmelskoerper/monde/details/valdor/hauptseite/index.html"
+            ],
+            [
+              "Erym",
+              "inhalte/himmelskoerper/monde/details/erym/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Der Große Wirbel",
+          "text": [
+            "Großräumige Jetstreams, Wirbelstürme und langlebige Wetterformationen prägen Urakans Atmosphäre. Ein besonders auffälliger langlebiger Sturm wird als Großer Wirbel bezeichnet; Größe und Erscheinung verändern sich über lange Zeiträume."
+          ]
+        },
+        {
+          "titel": "Resonanz der Monde",
+          "text": [
+            "Nair, Sirel und Valdor umlaufen Urakan in ungefähr 1,52, 3,04 und 6,09 Erdtagen – nahezu im Verhältnis 1:2:4. Die Resonanz erhält Bahnexzentrizitäten und damit Gezeitenverformung und innere Erwärmung der Monde."
+          ]
+        },
+        {
+          "titel": "Besondere Ereignisse",
+          "karten": [
+            {
+              "titel": "Großer Wirbel",
+              "text": "Langlebiges Sturmsystem."
+            },
+            {
+              "titel": "Mondschatten",
+              "text": "Schatten der großen Monde ziehen über die Wolkenbänder."
+            },
+            {
+              "titel": "Magnetosphärische Stürme",
+              "text": "Polarlichter und gefährliche Strahlungsregionen."
+            },
+            {
+              "titel": "Ringdurchgänge",
+              "text": "Wechselnde Staub- und Partikeldichten in der Ringebene."
+            }
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Urakan.",
+      "abschnitte": [
+        {
+          "titel": "Urakan – Archivbild",
+          "bild": true,
+          "bildtext": "Urakan"
+        }
+      ]
+    },
+    "Gaszusammensetzung": {
+      "gruppe": "Weitere",
+      "icon": "◆",
+      "intro": "Gaszusammensetzung von Urakan.",
+      "abschnitte": [
+        {
+          "titel": "Gaszusammensetzung",
+          "text": [
+            "Urakan ist ein Gasriese mit 0,65 Jupitermassen, farbigen Wolkenbändern und dem langlebigen Großen Wirbel. Eine ausgedehnte Magnetosphäre, schmale Staub- und Gesteinsringe und vier größere Monde umgeben ihn."
+          ]
+        }
+      ]
+    },
+    "Wolkenschichten": {
+      "gruppe": "Weitere",
+      "icon": "◆",
+      "intro": "Wolkenschichten von Urakan.",
+      "abschnitte": [
+        {
+          "titel": "Wolkenschichten",
+          "text": [
+            "Urakan ist ein Gasriese mit 0,65 Jupitermassen, farbigen Wolkenbändern und dem langlebigen Großen Wirbel. Eine ausgedehnte Magnetosphäre, schmale Staub- und Gesteinsringe und vier größere Monde umgeben ihn."
+          ]
+        }
+      ]
+    },
+    "Stürme": {
+      "gruppe": "Weitere",
+      "icon": "◆",
+      "intro": "Stürme von Urakan.",
+      "abschnitte": [
+        {
+          "titel": "Stürme",
+          "text": [
+            "Urakan ist ein Gasriese mit 0,65 Jupitermassen, farbigen Wolkenbändern und dem langlebigen Großen Wirbel. Eine ausgedehnte Magnetosphäre, schmale Staub- und Gesteinsringe und vier größere Monde umgeben ihn."
+          ]
+        }
+      ]
+    }
+  }
+}

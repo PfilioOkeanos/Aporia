@@ -1,0 +1,126 @@
+/* Synaptoiden – Hauptseite · erzeugt von scripts/spezies/eigene/synaptoiden.mjs (Vorlage: synaptoiden-hauptseite.css)
+   Gemeinsames Design: ../synaptoiden-basis.css · hier nur der Aufbau der Übersicht.
+   Farbwelt nach den Designtafeln: Moos-Schwarz, Bernstein (--sy-violett, glühende Fächer) und Lila (--sy-cyan, schillernde Lamellen); Leitmotiv „Kontaktfächer“. */
+
+.sy-hauptseite .sy-hero { min-height: clamp(22rem, 38cqi, 34rem); }
+.sy-hauptseite .sy-hero-bild { width: 70% !important; object-position: 50% 42%; }
+.sy-hauptseite .sy-hero h1 { letter-spacing: .06em; text-shadow: 0 0 28px #e8a05255, 0 2px 18px #000; }
+.sy-kicker--linie { display: flex; align-items: center; gap: .8rem; }
+.sy-kicker--linie::after { content: ""; width: 6rem; height: 1px; background: linear-gradient(90deg, var(--sy-violett), var(--sy-cyan), transparent); }
+.sy-unterzeile em { color: var(--sy-violett-hell); font-style: normal; }
+.sy-hero-links { display: flex; flex-wrap: wrap; gap: 1.4rem; margin-top: 1.3rem !important; }
+.sy-hero-links a { padding-bottom: .2rem; border-bottom: 1px solid var(--sy-linie-hell); color: var(--sy-text) !important; font: 500 1rem/1.3 var(--sy-serif); text-decoration: none; }
+.sy-hero-links a:hover { color: var(--sy-violett-hell) !important; border-color: var(--sy-violett); }
+
+/* Impuls: ein Signal läuft quer durch den Kopfbereich – zwischen zwei Individuen */
+.sy-impuls { position: absolute; left: 30%; right: 4%; top: 56%; z-index: -1; height: 2px; background: linear-gradient(90deg, transparent, #e8a05299 20%, #b896ec 50%, #e8a05299 80%, transparent); opacity: .5; pointer-events: none; }
+.sy-impuls::after { content: ""; position: absolute; top: -4px; left: 0; width: 10px; height: 10px; border-radius: 50%; background: #fbdcb4; box-shadow: 0 0 14px 4px #e8a052aa; animation: sy-lauf 4.5s ease-in-out infinite; }
+@keyframes sy-lauf { 0% { left: 0; opacity: 0; } 15%, 85% { opacity: 1; } 100% { left: calc(100% - 10px); opacity: 0; } }
+
+/* Kennzahlen */
+.sy-kennzahlen { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); margin: 0 0 var(--sy-raum); padding: .3rem; }
+.sy-kennzahlen > div { display: grid; gap: .1rem; padding: .7rem .9rem; text-align: center; }
+.sy-kennzahlen > div + div { border-left: 1px solid var(--sy-linie); }
+.sy-kennzahlen dt { color: var(--sy-leise); font: 600 .68rem/1.3 "Segoe UI", system-ui, sans-serif; letter-spacing: .14em; text-transform: uppercase; }
+.sy-kennzahlen dd { margin: 0; color: var(--sy-violett-hell); font: 600 clamp(1.2rem, 2.3cqi, 1.75rem)/1.15 var(--sy-serif); }
+.sy-kennzahlen dd a { color: inherit !important; text-decoration: none; }
+.sy-kennzahlen dd a:hover { color: var(--sy-cyan) !important; }
+.sy-kennzahlen span { color: var(--sy-leise); font-size: .78rem; }
+
+.sy-abschnitt { margin-top: calc(var(--sy-raum) * 1.6); }
+.sy-lead { max-width: 62rem; margin: -.3rem 0 var(--sy-raum) !important; color: var(--sy-leise); }
+.sy-kontakt, .sy-recht { display: grid; gap: .8rem; }
+.sy-recht strong, .sy-bau-text strong { color: var(--sy-violett-hell); }
+
+/* Fünf Verbindungsformen: zwei Fächer, fünf Kanäle */
+.sy-kontakt-raster { display: grid; grid-template-columns: minmax(16rem, 1.1fr) minmax(0, 1fr); gap: calc(var(--sy-raum) * 1.4); align-items: center; }
+.sy-faecher { width: 100%; max-width: 30rem; overflow: visible; }
+.sy-f-lamelle { stroke: var(--sy-violett); stroke-width: 3; stroke-linecap: round; opacity: .75; filter: drop-shadow(0 0 3px #e8a05288); animation: sy-fach 5s ease-in-out infinite; animation-delay: calc(var(--i) * .12s); transform-box: fill-box; }
+@keyframes sy-fach { 0%, 100% { opacity: .45; } 50% { opacity: 1; } }
+.sy-f-kern { fill: #1b211b; stroke: var(--sy-violett-hell); stroke-width: 2; }
+.sy-f-kanal { fill: none; stroke: var(--sy-cyan); stroke-width: 1.6; opacity: .55; stroke-dasharray: 4 5; }
+.sy-f-puls { fill: #fbdcb4; filter: drop-shadow(0 0 4px #b896ec); }
+.sy-f-text { fill: var(--sy-leise); font: 600 11px "Segoe UI", system-ui, sans-serif; text-anchor: middle; }
+.sy-formen-liste { display: grid; gap: .45rem; margin: 0; padding: 0; list-style: none; counter-reset: form; }
+.sy-formen-liste li { counter-increment: form; display: grid; gap: .1rem; padding: .55rem .7rem .55rem 2.4rem !important; position: relative; border: 1px solid var(--sy-linie); border-radius: 12px; background: #0e120eb3; animation: sy-auf .5s ease both; animation-delay: calc(var(--i) * .12s); }
+.sy-formen-liste li::before { content: counter(form) !important; position: absolute; left: .65rem; top: .6rem; display: grid !important; place-items: center; width: 1.3rem; height: 1.3rem; border-radius: 50%; background: var(--sy-cyan) !important; color: #170f24; font: 700 .7rem/1 ui-monospace, Consolas, monospace; box-shadow: none !important; }
+.sy-formen-liste strong { color: var(--sy-violett-hell); font: 600 .98rem/1.2 var(--sy-serif); }
+.sy-formen-liste span { color: var(--sy-leise); font-size: .82rem; line-height: 1.4; }
+@keyframes sy-auf { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+.sy-nicht { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .5rem; }
+.sy-nicht > div { display: grid; gap: .15rem; padding: .7rem .8rem; border: 1px solid #b896ec44; border-left: 3px solid var(--sy-cyan); border-radius: 10px; background: linear-gradient(90deg, #b896ec14, transparent); }
+.sy-nicht strong { color: var(--sy-cyan); font: 600 1rem/1.2 var(--sy-serif); }
+.sy-nicht span { font-size: .84rem; line-height: 1.4; }
+
+/* Körperbau */
+.sy-bau { display: grid; grid-template-columns: minmax(12rem, .7fr) minmax(0, 1.5fr); gap: calc(var(--sy-raum) * 1.4); align-items: center; }
+.sy-bau-bild { margin: 0; aspect-ratio: 4 / 5; overflow: hidden; border-radius: 14px; background: #050605; }
+.sy-bau-bild img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 45%; }
+.sy-bau-text { display: grid; gap: .7rem; }
+.sy-mini { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .35rem .7rem; margin: 0; }
+.sy-mini > div { min-width: 0; padding-top: .3rem; border-top: 1px solid #ffffff12; }
+.sy-mini dt { color: var(--sy-leise); font-size: .7rem; letter-spacing: .06em; text-transform: uppercase; }
+.sy-mini dd { margin: 0; font-size: .85rem; overflow-wrap: anywhere; }
+
+/* Entwicklungsstufen */
+.sy-stufen { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: var(--sy-raum); }
+.sy-stufe { display: grid; grid-template-rows: auto 1fr; overflow: hidden; color: var(--sy-text) !important; text-decoration: none; transition: border-color .25s, transform .25s; animation: sy-auf .6s ease both; animation-delay: calc(var(--i) * .15s); }
+.sy-stufe:hover { border-color: var(--sy-violett); transform: translateY(-2px); }
+.sy-stufe figure { margin: 0; aspect-ratio: 3 / 2; overflow: hidden; background: #050605; }
+.sy-stufe img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s ease; }
+.sy-stufe:hover img { transform: scale(1.06); }
+.sy-stufe > span { display: flex; gap: .5rem; align-items: center; padding: .6rem .75rem; font: 600 .95rem/1.2 var(--sy-serif); }
+.sy-stufe b { display: grid; place-items: center; flex: none; width: 1.5rem; height: 1.5rem; border: 1px solid var(--sy-violett); border-radius: 50%; color: var(--sy-violett-hell); font: 700 .75rem/1 ui-monospace, Consolas, monospace; }
+
+/* Geistige Selbstbestimmung */
+.sy-rechte { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .5rem; margin: 0; padding: 0; list-style: none; counter-reset: recht; }
+.sy-rechte li { counter-increment: recht; position: relative; padding: .7rem .75rem .7rem 2.4rem !important; border: 1px solid var(--sy-linie); border-radius: 12px; background: #0e120eb3; font: 600 .9rem/1.3 var(--sy-serif); }
+.sy-rechte li::before { content: counter(recht) !important; position: absolute; left: .7rem; top: .7rem; display: grid !important; place-items: center; width: 1.3rem; height: 1.3rem; border-radius: 50%; background: var(--sy-violett) !important; color: #1a0f06; font: 700 .72rem/1 ui-monospace, Consolas, monospace; box-shadow: none !important; }
+
+/* Steckbrief + Heimatwelt */
+.sy-zwei { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: var(--sy-raum); align-items: start; margin-top: calc(var(--sy-raum) * 1.6); }
+.sy-zwei .sy-dossier-steckbrief { margin-top: 0; }
+.sy-zwei .sy-dossier-raster { grid-template-columns: minmax(0, 1fr); }
+.sy-welt { overflow: hidden; }
+.sy-welt-bild { display: block; aspect-ratio: 16 / 10; overflow: hidden; background: #000; }
+.sy-welt-bild img { width: 100%; height: 100%; object-fit: cover; object-position: center 40%; transition: transform .8s ease; }
+.sy-welt-bild:hover img { transform: scale(1.04); }
+.sy-welt .sy-block { display: grid; gap: .7rem; }
+
+/* Themenbereiche */
+.sy-themen-raster { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--sy-raum); }
+.sy-thema { display: grid; align-content: end; gap: .25rem; min-height: 9.5rem; padding: .8rem; overflow: hidden; isolation: isolate; color: var(--sy-text) !important; text-decoration: none; }
+.sy-thema-bild { position: absolute !important; inset: 0; z-index: -2; width: 100% !important; height: 100% !important; object-fit: cover; object-position: center 35%; transition: transform .6s ease; }
+.sy-thema::before { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(0deg, #090b09 8%, #090b09cc 50%, #090b0926 100%); }
+.sy-thema:hover { border-color: var(--sy-violett); box-shadow: 0 0 1.1rem #e8a05244; }
+.sy-thema:hover .sy-thema-bild { transform: scale(1.05); }
+.sy-thema-kopf { display: flex; gap: .45rem; align-items: center; }
+.sy-thema-text { font-size: .82rem; line-height: 1.35; }
+.sy-layout--fuss { margin-top: var(--sy-raum); }
+
+@media (prefers-reduced-motion: reduce) {
+    .sy-impuls::after, .sy-f-lamelle, .sy-formen-liste li, .sy-stufe { animation: none; }
+}
+@container (max-width: 1100px) {
+    .sy-kontakt-raster, .sy-zwei { grid-template-columns: minmax(0, 1fr); }
+    .sy-faecher { justify-self: center; }
+    .sy-stufen { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .sy-rechte { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@container (max-width: 820px) {
+    .sy-kennzahlen { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .sy-kennzahlen > div:nth-child(4) { border-left: 0; }
+    .sy-bau { grid-template-columns: minmax(0, 1fr); }
+    .sy-bau-bild { aspect-ratio: 4 / 3; }
+    .sy-nicht { grid-template-columns: minmax(0, 1fr); }
+    .sy-themen-raster, .sy-stufen { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .sy-hauptseite .sy-hero-bild { width: 100% !important; }
+    .sy-impuls { left: 4%; }
+}
+@container (max-width: 560px) {
+    .sy-kennzahlen { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .sy-kennzahlen > div { border-left: 0 !important; border-top: 1px solid var(--sy-linie); }
+    .sy-kennzahlen > div:nth-child(-n+2) { border-top: 0; }
+    .sy-themen-raster, .sy-stufen, .sy-rechte { grid-template-columns: minmax(0, 1fr); }
+    .sy-mini { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}

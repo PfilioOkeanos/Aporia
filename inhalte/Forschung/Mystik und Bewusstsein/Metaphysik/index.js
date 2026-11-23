@@ -71,7 +71,7 @@ const knoten = [
         "belohnung": {
             "art": "gegenstand",
             "name": "Narben des kosmischen aufpralls",
-            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/Gesteinsplaneten/narben-des-kosmischen-aufpralls/hauptseite/narben-des-kosmischen-aufpralls-d886476967.webp"
+            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/Gesteinsplaneten/vaskir/hauptseite/narben-des-kosmischen-aufpralls-d886476967.webp"
         }
     },
     {
@@ -86,7 +86,7 @@ const knoten = [
         "belohnung": {
             "art": "gegenstand",
             "name": "Dunkler kern einer kosmischen sternenwiege",
-            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/Sterne/dunkler-kern-einer-kosmischen-sternenwiege/hauptseite/dunkler-kern-einer-kosmischen-sternenwiege-15281bde3b.webp"
+            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/Sterne/alaudon/hauptseite/dunkler-kern-einer-kosmischen-sternenwiege-15281bde3b.webp"
         }
     },
     {
@@ -101,7 +101,7 @@ const knoten = [
         "belohnung": {
             "art": "gegenstand",
             "name": "Kosmische Einordnung",
-            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/OzeanWelt/erde-im-sternenmeer/unterseiten/ERDE_BILDER/Astronomie/01%20%E2%80%93%20Kosmische%20Einordnung/01_Kosmische_Einordnung.jpg"
+            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/OzeanWelt/erde/unterseiten/ERDE_BILDER/Astronomie/01%20%E2%80%93%20Kosmische%20Einordnung/01_Kosmische_Einordnung.jpg"
         }
     }
 ];

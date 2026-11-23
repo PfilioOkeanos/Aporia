@@ -1,0 +1,452 @@
+{
+  "systemName": "Orelis-System",
+  "praefix": "veyruna-",
+  "lage": {
+    "entfernungLj": 38,
+    "richtung": [
+      0.4,
+      0.6,
+      -0.69
+    ]
+  },
+  "einzelstern": true,
+  "stern": {
+    "id": "veyruna-stern",
+    "name": "Orelis",
+    "typ": "Orangefarbener Zwerg (K1 V)",
+    "masseSonne": 0.8,
+    "radiusSonne": 0.85,
+    "leuchtkraftSonne": 0.42,
+    "temperaturK": 5030,
+    "alterMrd": 6,
+    "farbe": [
+      1,
+      0.72,
+      0.44
+    ],
+    "emissionsfarbe": [
+      1,
+      0.74,
+      0.48
+    ],
+    "emission": 1.15,
+    "bild": {
+      "art": "sterne",
+      "slug": "chatgpt-bild-11-nov-2026-15-47-33"
+    },
+    "beschreibung": "Orelis ist ein relativ langlebiger, orangegelber Hauptreihenstern der Spektralklasse K1 V mit 0,80 Sonnenmassen und 42 % der Sonnenleuchtkraft. Mit rund 6 Milliarden Jahren bot er Veyruna ausreichend Zeit für eine lange biologische Entwicklung; seine magnetische Aktivität ist gewöhnlich, Flares und koronale Ausbrüche bleiben möglich."
+  },
+  "koerper": [
+    {
+      "id": "veyruna-seran",
+      "name": "Seran",
+      "typ": "Gesteinsplanet",
+      "um": "veyruna-stern",
+      "aAE": 0.16,
+      "e": 0.04,
+      "i": 2.2,
+      "knoten": 30,
+      "peri": 80,
+      "phase": 70,
+      "radiusKm": 5300,
+      "masseErde": 0.6,
+      "albedo": 0.1,
+      "farbe": [
+        0.62,
+        0.34,
+        0.22
+      ],
+      "bild": {
+        "art": "planeten",
+        "slug": "gluhender-exoplanet-im-kalten-schatten"
+      },
+      "beschreibung": "Seran ist der innerste Planet des Orelis-Systems: eine überwiegend felsige, stark bestrahlte Welt mit sehr hohen Oberflächentemperaturen, ausgedehnten Kraterlandschaften, thermisch veränderten Gesteinen und möglicherweise alten vulkanischen Regionen."
+    },
+    {
+      "id": "veyruna-mirvek",
+      "name": "Mirvek",
+      "typ": "Gesteinsplanet",
+      "um": "veyruna-stern",
+      "aAE": 0.35,
+      "e": 0.03,
+      "i": 1.5,
+      "knoten": 120,
+      "peri": 210,
+      "phase": 190,
+      "radiusKm": 5900,
+      "masseErde": 0.78,
+      "albedo": 0.3,
+      "farbe": [
+        0.72,
+        0.54,
+        0.38
+      ],
+      "bild": {
+        "art": "planeten",
+        "slug": "gebirgswustenplanet-mit-schattigen-trockenbecken"
+      },
+      "beschreibung": "Mirvek ist eine heiße, vergleichsweise trockene Gesteinswelt mit Gebirgen, Sedimentregionen und ausgedehnten trockenen Becken. Spuren früherer geologischer und möglicherweise hydrologischer Entwicklungen sind denkbar."
+    },
+    {
+      "id": "veyruna-planet",
+      "name": "Veyruna",
+      "typ": "Gesteinsplanet",
+      "um": "veyruna-stern",
+      "aAE": 0.68,
+      "e": 0.025,
+      "i": 0,
+      "knoten": 0,
+      "peri": 40,
+      "phase": 300,
+      "radiusKm": 6881,
+      "masseErde": 1.22,
+      "albedo": 0.3,
+      "zielTemperaturC": 15,
+      "farbe": [
+        0.24,
+        0.5,
+        0.64
+      ],
+      "bild": {
+        "art": "planeten",
+        "slug": "aporia-blaue-inselwelt-im-all"
+      },
+      "beschreibung": "Veyruna ist die Heimatwelt der Echonoiden: ein felsiger, wasserreicher Planet mit dichter Atmosphäre, 62 % Wasserbedeckung, gezeitengeprägten Küsten, Inselbögen und Höhlenlandschaften, in denen sich eine Wahrnehmung aus mechanischen Schwingungen entwickelte."
+    },
+    {
+      "id": "veyruna-sivem",
+      "name": "Sivem",
+      "typ": "Mond",
+      "um": "veyruna-planet",
+      "periodeTage": 3.8,
+      "e": 0.01,
+      "i": 2.5,
+      "knoten": 0,
+      "peri": 0,
+      "phase": 40,
+      "radiusKm": 215,
+      "masseErde": 0.00002,
+      "farbe": [
+        0.6,
+        0.58,
+        0.56
+      ],
+      "bild": {
+        "art": "monde",
+        "slug": "flacher-mond-mit-asymmetrischem-auslaufer"
+      },
+      "beschreibung": "Sivem ist ein deutlich kleinerer innerer Mond Veyrunas – felsig, ohne bedeutende Atmosphäre, etwa 430 km groß in rund 110.000 km Abstand. Er bietet einen vergleichsweise gut erreichbaren Forschungsstandort."
+    },
+    {
+      "id": "veyruna-talar",
+      "name": "Talar",
+      "typ": "Mond",
+      "um": "veyruna-planet",
+      "periodeTage": 17,
+      "e": 0.03,
+      "i": 4.2,
+      "knoten": 80,
+      "peri": 0,
+      "phase": 200,
+      "radiusKm": 1700,
+      "masseErde": 0.0114,
+      "farbe": [
+        0.68,
+        0.66,
+        0.64
+      ],
+      "bild": {
+        "art": "monde",
+        "slug": "mond-mit-freigelegtem-inneren"
+      },
+      "beschreibung": "Talar ist der größte Mond Veyrunas: rund 3.400 km groß, überwiegend felsig, in etwa 300.000 km Abstand. Er beeinflusst die Gezeiten erheblich; seine Oberfläche zeigt Krater, alte Einschlagsbecken und unterschiedlich zusammengesetzte Regionen."
+    },
+    {
+      "id": "veyruna-koras",
+      "name": "Koras",
+      "typ": "Gesteinsplanet",
+      "um": "veyruna-stern",
+      "aAE": 1.18,
+      "e": 0.05,
+      "i": 1.7,
+      "knoten": 220,
+      "peri": 330,
+      "phase": 20,
+      "radiusKm": 5400,
+      "masseErde": 0.55,
+      "albedo": 0.45,
+      "farbe": [
+        0.74,
+        0.76,
+        0.8
+      ],
+      "bild": {
+        "art": "planeten",
+        "slug": "undifferenzierter-eisplanet-aus-fels-und-eis"
+      },
+      "beschreibung": "Koras ist eine kalte felsige Welt mit bedeutenden Eisvorkommen – gefrorene Ebenen, felsige Hochländer, Einschlagsbecken und alte vulkanische Formationen. Unterirdische Wasser- oder Salzreservoire sind eine offene Forschungsfrage."
+    },
+    {
+      "id": "veyruna-innerer-guertel",
+      "name": "Braeirtol-Gürtel",
+      "typ": "Asteroidengürtel",
+      "ringUm": "veyruna-stern",
+      "ringeAE": [
+        1.7,
+        1.88,
+        2.05,
+        2.22,
+        2.4
+      ],
+      "anzahl": 260,
+      "groesseKm": 360,
+      "mindestPx": 5.5,
+      "farbe": [
+        0.62,
+        0.6,
+        0.58
+      ],
+      "bild": {
+        "art": "sternensysteme",
+        "slug": "silberner-asteroidengurtel-im-sternenraum"
+      },
+      "beschreibung": "Zwischen Koras und Jandor liegt von etwa 1,7 bis 2,4 AE ein Gürtel aus kleineren felsigen und metallhaltigen Körpern – ein potenziell wichtiger Rohstoffraum, nicht gleichmäßig mit gefährlichen Asteroiden gefüllt."
+    },
+    {
+      "id": "veyruna-jandor",
+      "name": "Jandor",
+      "typ": "Gasriese",
+      "um": "veyruna-stern",
+      "aAE": 3.7,
+      "e": 0.04,
+      "i": 1.1,
+      "knoten": 300,
+      "peri": 60,
+      "phase": 110,
+      "radiusKm": 65000,
+      "masseErde": 190,
+      "albedo": 0.45,
+      "farbe": [
+        0.36,
+        0.66,
+        0.62
+      ],
+      "bild": {
+        "art": "planeten",
+        "slug": "magnetischer-gasriese-mit-polarlichtern"
+      },
+      "beschreibung": "Jandor ist ein großer äußerer Gasplanet mit Wasserstoff-Helium-Atmosphäre, mehreren Wolken- und Wetterschichten, starken Windströmungen und einem bedeutenden Magnetfeld mit hellen Polarlichtern. Feine Ringe und ein Mondsystem aus eisigen und felsigen Körpern umgeben ihn."
+    },
+    {
+      "id": "veyruna-jandor-ringe",
+      "name": "Ringe von Jandor",
+      "typ": "Planetenring",
+      "ringUm": "veyruna-jandor",
+      "ringeAE": [
+        0.0006,
+        0.00066,
+        0.00072
+      ],
+      "anzahl": 180,
+      "groesseKm": 2,
+      "mindestPx": 2,
+      "farbe": [
+        0.66,
+        0.78,
+        0.76
+      ],
+      "beschreibung": "Feine Ringstrukturen aus Staub und kleinen Eispartikeln, etwa 90.000 bis 108.000 km vom Zentrum Jandors entfernt."
+    },
+    {
+      "id": "veyruna-ithel",
+      "name": "Ithel",
+      "typ": "Mond",
+      "um": "veyruna-jandor",
+      "periodeTage": 4.2,
+      "e": 0.004,
+      "i": 0.3,
+      "knoten": 0,
+      "peri": 0,
+      "phase": 60,
+      "radiusKm": 1650,
+      "masseErde": 0.012,
+      "farbe": [
+        0.82,
+        0.86,
+        0.88
+      ],
+      "bild": {
+        "art": "zwergplaneten",
+        "slug": "eisiger-zwergplanet-mit-ozeanrissen"
+      },
+      "beschreibung": "Ithel ist der größte Eismond Jandors. Lange, bläuliche Risse durchziehen seine Eiskruste – Hinweise auf Spannungen über einem möglichen tiefen Wasserozean."
+    },
+    {
+      "id": "veyruna-orrund",
+      "name": "Orrund",
+      "typ": "Mond",
+      "um": "veyruna-jandor",
+      "periodeTage": 9.1,
+      "e": 0.006,
+      "i": 0.5,
+      "knoten": 40,
+      "peri": 0,
+      "phase": 230,
+      "radiusKm": 1100,
+      "masseErde": 0.004,
+      "farbe": [
+        0.6,
+        0.6,
+        0.6
+      ],
+      "bild": {
+        "art": "monde",
+        "slug": "mond-im-zerfall-unter-gezeitenkraften"
+      },
+      "beschreibung": "Orrund ist ein felsiger Mond Jandors mit tiefen Bruchzonen in seiner alten, kraterreichen Kruste."
+    },
+    {
+      "id": "veyruna-vasch",
+      "name": "Vasch",
+      "typ": "Mond",
+      "um": "veyruna-jandor",
+      "periodeTage": 160,
+      "e": 0.25,
+      "i": 150,
+      "knoten": 200,
+      "peri": 0,
+      "phase": 120,
+      "radiusKm": 30,
+      "masseErde": 0,
+      "farbe": [
+        0.6,
+        0.38,
+        0.3
+      ],
+      "bild": {
+        "art": "monde",
+        "slug": "gezeitenverformter-mond-mit-roten-rissen"
+      },
+      "beschreibung": "Vasch ist ein kleiner, länglicher und unregelmäßiger Mond auf weiter, rückläufiger Bahn – vermutlich ein eingefangener Kleinkörper."
+    },
+    {
+      "id": "veyruna-veltos",
+      "name": "Veltos",
+      "typ": "Eisriese",
+      "um": "veyruna-stern",
+      "aAE": 6.5,
+      "e": 0.05,
+      "i": 1.9,
+      "knoten": 160,
+      "peri": 250,
+      "phase": 250,
+      "radiusKm": 24500,
+      "masseErde": 18,
+      "albedo": 0.3,
+      "farbe": [
+        0.66,
+        0.68,
+        0.9
+      ],
+      "bild": {
+        "art": "planeten",
+        "slug": "gaszwerg-mit-blau-lavendelfarbener-atmosphare"
+      },
+      "beschreibung": "Veltos ist ein äußerer Eisriese mit tiefer Atmosphäre aus leichten Gasen, komplexen Wettersystemen, sehr tiefen Temperaturen und eigenem Magnetfeld. Kleine Monde und diffuse Ringe begleiten ihn."
+    },
+    {
+      "id": "veyruna-veltos-ringe",
+      "name": "Ringe von Veltos",
+      "typ": "Planetenring",
+      "ringUm": "veyruna-veltos",
+      "ringeAE": [
+        0.00025,
+        0.0003,
+        0.00034
+      ],
+      "anzahl": 140,
+      "groesseKm": 2,
+      "mindestPx": 2,
+      "farbe": [
+        0.7,
+        0.72,
+        0.86
+      ],
+      "beschreibung": "Diffuse Ringstrukturen aus feinen Eis- und Staubpartikeln, etwa 37.000 bis 51.000 km vom Zentrum des Veltos entfernt."
+    },
+    {
+      "id": "veyruna-nimra",
+      "name": "Nimra",
+      "typ": "Mond",
+      "um": "veyruna-veltos",
+      "periodeTage": 5.6,
+      "e": 0.008,
+      "i": 0.8,
+      "knoten": 0,
+      "peri": 0,
+      "phase": 300,
+      "radiusKm": 600,
+      "masseErde": 0.0002,
+      "farbe": [
+        0.76,
+        0.86,
+        0.9
+      ],
+      "bild": {
+        "art": "zwergplaneten",
+        "slug": "blauweier-methan-zwergplanet"
+      },
+      "beschreibung": "Nimra ist der größte der kleinen Monde des Veltos – ein blauweißer Eismond mit gefrorenem Methan an der Oberfläche."
+    },
+    {
+      "id": "veyruna-kleinkoerper",
+      "name": "Rhaeusor-Gürtel",
+      "typ": "Kleinkörpergürtel",
+      "ringUm": "veyruna-stern",
+      "ringeAE": [
+        15,
+        19.5,
+        24,
+        28.5,
+        33
+      ],
+      "anzahl": 300,
+      "groesseKm": 220,
+      "mindestPx": 4.5,
+      "farbe": [
+        0.72,
+        0.8,
+        0.88
+      ],
+      "bild": {
+        "art": "sternensysteme",
+        "slug": "gebrochener-kometenring-um-einen-stern"
+      },
+      "beschreibung": "Jenseits der großen Planeten liegt von etwa 15 bis 33 AE eine Population kalter, eisiger und felsiger Überreste der frühen Planetenentstehung; gestörte Körper gelangen von hier auf exzentrische Bahnen."
+    },
+    {
+      "id": "veyruna-ilvaren",
+      "name": "Ilvaren",
+      "typ": "Komet",
+      "um": "veyruna-stern",
+      "aAE": 12,
+      "e": 0.94,
+      "i": 24,
+      "knoten": 90,
+      "peri": 140,
+      "phase": 178,
+      "radiusKm": 5,
+      "masseErde": 0,
+      "farbe": [
+        0.74,
+        0.86,
+        0.9
+      ],
+      "bild": {
+        "art": "kometen",
+        "slug": "schillernder-komet-mit-schlankem-schweif"
+      },
+      "beschreibung": "Ilvaren ist ein periodischer Komet aus dem äußeren Kleinkörpergürtel. Alle rund 46 Jahre nähert er sich Orelis bis auf etwa 0,72 AE und ist dann lange am Nachthimmel Veyrunas sichtbar; sein Staubstrom erzeugt wiederkehrende Meteorschauer."
+    }
+  ]
+}

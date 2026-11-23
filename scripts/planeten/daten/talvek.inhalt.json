@@ -1,0 +1,734 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Talvek",
+  "genitiv": "von Talvek",
+  "dossierName": "Talvek-Dossier",
+  "klasse": "Gesteinsplanet",
+  "intro": "Talvek ist ein kalter Gesteinsplanet mit Hochländern, trockenen Becken und größeren Eisvorkommen. Spuren früherer Wasserbewegungen deuten auf eine einst dichtere Atmosphäre hin; früheres Leben ist nicht bestätigt. Talvek umkreist Terev in 1,57 AE Abstand und braucht für einen Umlauf 2,1 Jahre.",
+  "globusDaten": {
+    "planet": "blaugrauer-kaltewustenplanet-im-all",
+    "klasse": "Gestein",
+    "radius": 5097000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=nerath-stern&objekt=nerath-talvek",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-283A636FC0"
+    ],
+    [
+      "Typ",
+      "Gesteinsplanet"
+    ],
+    [
+      "Sternsystem",
+      "Terev-System"
+    ],
+    [
+      "Zentralkörper",
+      "Terev"
+    ],
+    [
+      "Große Halbachse",
+      "1,57 AE"
+    ],
+    [
+      "Umlaufzeit",
+      "2,1 Jahre"
+    ],
+    [
+      "Durchmesser",
+      "10.194 km"
+    ],
+    [
+      "Masse",
+      "0,5 Erdmassen"
+    ],
+    [
+      "Schwerkraft",
+      "0,78 g"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -90 °C"
+    ],
+    [
+      "Monde",
+      "2 (Rusk, Nemi)"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Terev-System"
+    ],
+    [
+      "Zentralstern",
+      "Terev",
+      "inhalte/himmelskoerper/sterne/details/terev/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "1,57 AE"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Talvek im Terev-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=nerath-stern&objekt=nerath-talvek",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Terev",
+      "href": "inhalte/himmelskoerper/sterne/details/terev/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Rusk",
+      "href": "inhalte/himmelskoerper/monde/details/rusk/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Nemi",
+      "href": "inhalte/himmelskoerper/monde/details/nemi/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Synaptoiden",
+      "titel": "Nerath",
+      "href": "inhalte/himmelskoerper/planeten/details/nerath/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Synaptoiden",
+      "href": "inhalte/spezies/Mentale Spezies/Synaptoiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Terev-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=nerath-stern&objekt=nerath-talvek"
+    },
+    {
+      "titel": "Speziesdossier Synaptoiden",
+      "href": "inhalte/spezies/Mentale Spezies/Synaptoiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#080808",
+      "tiefe": "#111113",
+      "akzent": "#bdc0c7",
+      "sand": "#c2bdad",
+      "moos": "#9cb69e",
+      "ozean": "#7c9fba",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#45474c"
+    }
+  },
+  "kapitel": {
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Talvek auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Talvek",
+          "text": [
+            "Talvek ist ein kalter Gesteinsplanet mit Hochländern, trockenen Becken und größeren Eisvorkommen. Spuren früherer Wasserbewegungen deuten auf eine einst dichtere Atmosphäre hin; früheres Leben ist nicht bestätigt.",
+            "Talvek umkreist Terev in 1,57 AE Abstand und braucht für einen Umlauf 2,1 Jahre."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Gesteinsplanet"
+            ],
+            [
+              "Sternsystem",
+              "Terev-System"
+            ],
+            [
+              "Zentralkörper",
+              "Terev"
+            ],
+            [
+              "Große Halbachse",
+              "1,57 AE"
+            ],
+            [
+              "Umlaufzeit",
+              "2,1 Jahre"
+            ],
+            [
+              "Durchmesser",
+              "10.194 km"
+            ],
+            [
+              "Masse",
+              "0,5 Erdmassen"
+            ],
+            [
+              "Schwerkraft",
+              "0,78 g"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -90 °C"
+            ],
+            [
+              "Monde",
+              "2 (Rusk, Nemi)"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Nerath",
+          "text": [
+            "Das Terev-System ist die Heimat der Synaptoiden: Ihr Planet Nerath umkreist Terev."
+          ],
+          "verweise": [
+            [
+              "Nerath",
+              "inhalte/himmelskoerper/planeten/details/nerath/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Synaptoiden",
+              "inhalte/spezies/Mentale Spezies/Synaptoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Talvek im Terev-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Terev"
+            ],
+            [
+              "Große Halbachse",
+              "1,57 AE (234,9 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,055"
+            ],
+            [
+              "Bahnneigung",
+              "1,6°"
+            ],
+            [
+              "Umlaufzeit",
+              "2,1 Jahre"
+            ],
+            [
+              "Einstrahlung",
+              "0,251-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Am Himmel von Talvek",
+          "text": [
+            "Terev erscheint von hier aus etwa 0,32° groß (die Sonne von der Erde: 0,53°)."
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Terev · Stern",
+              "Orangegelber Zwerg (K0 V)"
+            ],
+            [
+              "Vaskir · 0,16 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Sereth · 0,42 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Nerath · 0,93 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Talvek · 1,57 AE · dieses Dossier",
+              "Gesteinsplanet"
+            ],
+            [
+              "Urakan · 4,4 AE",
+              "Gasriese"
+            ],
+            [
+              "Oryss · 9,3 AE",
+              "Eisriese"
+            ],
+            [
+              "Veyl · 22,8 AE",
+              "Eisplanet"
+            ],
+            [
+              "Relt · 44 AE",
+              "Zwergplanet"
+            ],
+            [
+              "Othir · 52 AE",
+              "Zwergplanet"
+            ],
+            [
+              "Skalenband · 2,2–3,2 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Taren-Saum · 38–65 AE",
+              "Kleinkörpergürtel"
+            ],
+            [
+              "Terev-Fernwolke · 1.500–8.000 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Terev",
+              "inhalte/himmelskoerper/sterne/details/terev/hauptseite/index.html"
+            ],
+            [
+              "Vaskir",
+              "inhalte/himmelskoerper/planeten/details/vaskir/hauptseite/index.html"
+            ],
+            [
+              "Sereth",
+              "inhalte/himmelskoerper/planeten/details/sereth/hauptseite/index.html"
+            ],
+            [
+              "Nerath",
+              "inhalte/himmelskoerper/planeten/details/nerath/hauptseite/index.html"
+            ],
+            [
+              "Urakan",
+              "inhalte/himmelskoerper/planeten/details/urakan/hauptseite/index.html"
+            ],
+            [
+              "Oryss",
+              "inhalte/himmelskoerper/planeten/details/oryss/hauptseite/index.html"
+            ],
+            [
+              "Veyl",
+              "inhalte/himmelskoerper/planeten/details/veyl/hauptseite/index.html"
+            ],
+            [
+              "Relt",
+              "inhalte/himmelskoerper/zwergplaneten/details/relt/hauptseite/index.html"
+            ],
+            [
+              "Othir",
+              "inhalte/himmelskoerper/zwergplaneten/details/othir/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Talvek.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "5.097 km"
+            ],
+            [
+              "Masse",
+              "0,5 Erdmassen"
+            ],
+            [
+              "Mittlere Dichte",
+              "5,38 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "7,66 m/s² (0,781 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "8,84 km/s"
+            ]
+          ],
+          "vergleich": {
+            "mit": "Erde",
+            "werte": [
+              [
+                "Durchmesser",
+                10194,
+                12742,
+                "km"
+              ],
+              [
+                "Masse",
+                0.5,
+                1,
+                "Erdmassen"
+              ],
+              [
+                "Schwerkraft",
+                0.78,
+                1,
+                "g"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "Planetare Struktur": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Planetare Struktur von Talvek.",
+      "abschnitte": [
+        {
+          "titel": "Schalenbau",
+          "schichten": [
+            [
+              "Kruste",
+              "Silikatgestein"
+            ],
+            [
+              "Mantel",
+              "Dichteres Silikatgestein"
+            ],
+            [
+              "Kern",
+              "Eisen und Nickel"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geografie": {
+      "gruppe": "Natur",
+      "icon": "△",
+      "intro": "Geografie von Talvek.",
+      "abschnitte": [
+        {
+          "titel": "Oberfläche",
+          "text": [
+            "Die Oberfläche von Talvek ist kalt."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Talvek.",
+      "abschnitte": [
+        {
+          "titel": "Gashülle",
+          "text": [
+            "Talvek hält eine dünne, kalte Gashülle fest."
+          ],
+          "balken": {
+            "werte": [
+              [
+                "Kohlendioxid",
+                62
+              ],
+              [
+                "Stickstoff",
+                33
+              ],
+              [
+                "Argon",
+                5
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Talvek.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 1,57 AE Abstand zu Terev liegt die Gleichgewichtstemperatur von Talvek bei rund -90 °C – kalt."
+          ]
+        }
+      ]
+    },
+    "Gewässer": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gewässer von Talvek.",
+      "abschnitte": [
+        {
+          "titel": "Wasser",
+          "text": [
+            "Wasser gibt es höchstens als Eis in Kratern und im Untergrund."
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Talvek.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Talvek ist groß genug, um im Inneren noch Wärme zu speichern; Spuren alter vulkanischer Tätigkeit sind wahrscheinlich."
+          ]
+        }
+      ]
+    },
+    "Biosphäre": {
+      "gruppe": "Natur",
+      "icon": "❧",
+      "intro": "Biosphäre von Talvek.",
+      "abschnitte": [
+        {
+          "titel": "Leben",
+          "text": [
+            "Auf Talvek ist kein Leben verzeichnet."
+          ]
+        }
+      ]
+    },
+    "Spezies": {
+      "gruppe": "Zivilisation",
+      "icon": "✿",
+      "intro": "Spezies von Talvek.",
+      "abschnitte": [
+        {
+          "titel": "Bewohner",
+          "text": [
+            "Talvek ist keine Heimat einer intelligenten Spezies."
+          ]
+        },
+        {
+          "titel": "Im System von Nerath",
+          "text": [
+            "Das Terev-System ist die Heimat der Synaptoiden: Ihr Planet Nerath umkreist Terev."
+          ],
+          "verweise": [
+            [
+              "Nerath",
+              "inhalte/himmelskoerper/planeten/details/nerath/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Synaptoiden",
+              "inhalte/spezies/Mentale Spezies/Synaptoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Zivilisation": {
+      "gruppe": "Zivilisation",
+      "icon": "▥",
+      "intro": "Zivilisation von Talvek.",
+      "abschnitte": [
+        {
+          "titel": "Siedlungen",
+          "text": [
+            "Für Talvek sind keine dauerhaften Siedlungen verzeichnet."
+          ]
+        },
+        {
+          "titel": "Im System von Nerath",
+          "text": [
+            "Das Terev-System ist die Heimat der Synaptoiden: Ihr Planet Nerath umkreist Terev."
+          ],
+          "verweise": [
+            [
+              "Nerath",
+              "inhalte/himmelskoerper/planeten/details/nerath/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Synaptoiden",
+              "inhalte/spezies/Mentale Spezies/Synaptoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Talvek.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Talvek entstand zusammen mit dem Terev-System vor rund 5,6 Milliarden Jahren."
+          ]
+        },
+        {
+          "titel": "Frühere Klimageschichte",
+          "text": [
+            "Talvek könnte in seiner Frühzeit zeitweise günstigere Umweltbedingungen besessen haben. Ob damals langfristig flüssiges Oberflächenwasser existierte, wird untersucht; früheres oder gegenwärtiges Leben ist nicht bestätigt."
+          ]
+        }
+      ]
+    },
+    "Fraktionen": {
+      "gruppe": "Zivilisation",
+      "icon": "◇",
+      "intro": "Fraktionen von Talvek.",
+      "abschnitte": [
+        {
+          "titel": "Ansprüche",
+          "text": [
+            "Für Talvek sind keine Fraktionsansprüche verzeichnet."
+          ]
+        }
+      ]
+    },
+    "Rohstoffe": {
+      "gruppe": "Weitere",
+      "icon": "⬡",
+      "intro": "Rohstoffe von Talvek.",
+      "abschnitte": [
+        {
+          "titel": "Rohstoffe",
+          "liste": [
+            "Silikatgestein",
+            "Metallerze"
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Talvek.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Wie ist der innere Aufbau beschaffen?",
+            "Gab es früher eine dichtere Atmosphäre?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Talvek ist mit allen Bahndaten im Terev-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=nerath-stern&objekt=nerath-talvek"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Talvek.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "2 Monde: Rusk, Nemi"
+          ]
+        },
+        {
+          "titel": "Monde",
+          "karten": [
+            {
+              "titel": "Rusk",
+              "text": "28 km Durchmesser, Umlauf in 8,4 Stunden. Rusk ist ein kleiner, unregelmäßig geformter Gesteinsmond Talveks mit zahlreichen Einschlagspuren."
+            },
+            {
+              "titel": "Nemi",
+              "text": "16 km Durchmesser, Umlauf in 33,6 Stunden. Nemi ist ein weiter außen umlaufender kleiner Mond Talveks mit dunkler, stark verkraterter Oberfläche."
+            }
+          ],
+          "verweise": [
+            [
+              "Rusk",
+              "inhalte/himmelskoerper/monde/details/rusk/hauptseite/index.html"
+            ],
+            [
+              "Nemi",
+              "inhalte/himmelskoerper/monde/details/nemi/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Besondere Ereignisse",
+          "karten": [
+            {
+              "titel": "Staubstürme",
+              "text": "Winde transportieren lose Oberflächenpartikel."
+            },
+            {
+              "titel": "Frostveränderungen",
+              "text": "Flüchtige Stoffe wechseln saisonal zwischen Boden und Luft."
+            },
+            {
+              "titel": "Eisabbrüche",
+              "text": "Temperaturwechsel verändern örtliche Eisvorkommen."
+            },
+            {
+              "titel": "Einschläge",
+              "text": "Kleine Meteoriten erreichen die Oberfläche fast ungebremst."
+            }
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Talvek.",
+      "abschnitte": [
+        {
+          "titel": "Talvek – Archivbild",
+          "bild": true,
+          "bildtext": "Talvek"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,529 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Braeirtol-Gürtel",
+  "genitiv": "von Braeirtol-Gürtel",
+  "dossierName": "Braeirtol-Gürtel-Dossier",
+  "klasse": "Asteroidengürtel",
+  "intro": "Zwischen Koras und Jandor liegt von etwa 1,7 bis 2,4 AE ein Gürtel aus kleineren felsigen und metallhaltigen Körpern – ein potenziell wichtiger Rohstoffraum, nicht gleichmäßig mit gefährlichen Asteroiden gefüllt. Innerer Asteroidengürtel umgibt Orelis im Orelis-System.",
+  "globusDaten": {
+    "planet": "silberner-asteroidengurtel-im-sternenraum",
+    "klasse": "Gestein",
+    "radius": 1000000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=veyruna-stern&objekt=veyruna-innerer-guertel",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-F109217FED"
+    ],
+    [
+      "Typ",
+      "Asteroidengürtel"
+    ],
+    [
+      "Sternsystem",
+      "Orelis-System"
+    ],
+    [
+      "Zentralkörper",
+      "Orelis"
+    ],
+    [
+      "Ausdehnung",
+      "1,7–2,4 AE"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Orelis-System"
+    ],
+    [
+      "Zentralstern",
+      "Orelis",
+      "inhalte/himmelskoerper/sterne/details/orelis/hauptseite/index.html"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Innerer Asteroidengürtel im Orelis-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=veyruna-stern&objekt=veyruna-innerer-guertel",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Orelis",
+      "href": "inhalte/himmelskoerper/sterne/details/orelis/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Echonoiden",
+      "titel": "Veyruna",
+      "href": "inhalte/himmelskoerper/planeten/details/veyruna/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Echonoiden",
+      "href": "inhalte/spezies/Mentale Spezies/Echonoiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Orelis-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=veyruna-stern&objekt=veyruna-innerer-guertel"
+    },
+    {
+      "titel": "Speziesdossier Echonoiden",
+      "href": "inhalte/spezies/Mentale Spezies/Echonoiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#080807",
+      "tiefe": "#111110",
+      "akzent": "#c0bdb9",
+      "sand": "#c5baa4",
+      "moos": "#9fb393",
+      "ozean": "#7f9ba9",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#474543"
+    },
+    "schichten": [
+      [
+        "Lage",
+        "Bahnen"
+      ],
+      [
+        "System",
+        "Planeten"
+      ],
+      [
+        "Dynamik",
+        "Stabilität"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Zentralsterne": {
+      "gruppe": "Wissenschaft",
+      "icon": "✦",
+      "intro": "Zentralsterne von Innerer Asteroidengürtel.",
+      "abschnitte": [
+        {
+          "titel": "Orelis",
+          "text": [
+            "Orelis ist ein relativ langlebiger, orangegelber Hauptreihenstern der Spektralklasse K1 V mit 0,80 Sonnenmassen und 42 % der Sonnenleuchtkraft. Mit rund 6 Milliarden Jahren bot er Veyruna ausreichend Zeit für eine lange biologische Entwicklung; seine magnetische Aktivität ist gewöhnlich, Flares und koronale Ausbrüche bleiben möglich."
+          ],
+          "verweise": [
+            [
+              "Orelis",
+              "inhalte/himmelskoerper/sterne/details/orelis/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Planeten": {
+      "gruppe": "Wissenschaft",
+      "icon": "◍",
+      "intro": "Planeten von Innerer Asteroidengürtel.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Orelis · Stern",
+              "Orangefarbener Zwerg (K1 V)"
+            ],
+            [
+              "Seran · 0,16 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Mirvek · 0,35 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Veyruna · 0,68 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Koras · 1,18 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Jandor · 3,7 AE",
+              "Gasriese"
+            ],
+            [
+              "Veltos · 6,5 AE",
+              "Eisriese"
+            ],
+            [
+              "Innerer Asteroidengürtel · 1,7–2,4 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußerer Kleinkörpergürtel · 15–33 AE",
+              "Kleinkörpergürtel"
+            ]
+          ],
+          "verweise": [
+            [
+              "Orelis",
+              "inhalte/himmelskoerper/sterne/details/orelis/hauptseite/index.html"
+            ],
+            [
+              "Seran",
+              "inhalte/himmelskoerper/planeten/details/seran/hauptseite/index.html"
+            ],
+            [
+              "Mirvek",
+              "inhalte/himmelskoerper/planeten/details/mirvek/hauptseite/index.html"
+            ],
+            [
+              "Veyruna",
+              "inhalte/himmelskoerper/planeten/details/veyruna/hauptseite/index.html"
+            ],
+            [
+              "Koras",
+              "inhalte/himmelskoerper/planeten/details/koras/hauptseite/index.html"
+            ],
+            [
+              "Jandor",
+              "inhalte/himmelskoerper/planeten/details/jandor/hauptseite/index.html"
+            ],
+            [
+              "Veltos",
+              "inhalte/himmelskoerper/planeten/details/veltos/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Bahnen": {
+      "gruppe": "Wissenschaft",
+      "icon": "◌",
+      "intro": "Bahnen von Innerer Asteroidengürtel.",
+      "abschnitte": [
+        {
+          "titel": "Lage",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Orelis"
+            ],
+            [
+              "Ausdehnung",
+              "1,7–2,4 AE"
+            ]
+          ]
+        }
+      ]
+    },
+    "Stabilität": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚖",
+      "intro": "Stabilität von Innerer Asteroidengürtel.",
+      "abschnitte": [
+        {
+          "titel": "Stabilität",
+          "text": [
+            "Die Brocken von Innerer Asteroidengürtel bewegen sich auf stabilen Bahnen zwischen den Planeten; Resonanzen mit den großen Planeten formen die Ränder des Gebiets."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Innerer Asteroidengürtel auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Innerer Asteroidengürtel",
+          "text": [
+            "Zwischen Koras und Jandor liegt von etwa 1,7 bis 2,4 AE ein Gürtel aus kleineren felsigen und metallhaltigen Körpern – ein potenziell wichtiger Rohstoffraum, nicht gleichmäßig mit gefährlichen Asteroiden gefüllt.",
+            "Innerer Asteroidengürtel umgibt Orelis im Orelis-System."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Asteroidengürtel"
+            ],
+            [
+              "Sternsystem",
+              "Orelis-System"
+            ],
+            [
+              "Zentralkörper",
+              "Orelis"
+            ],
+            [
+              "Ausdehnung",
+              "1,7–2,4 AE"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Veyruna",
+          "text": [
+            "Das Orelis-System ist die Heimat der Echonoiden: Ihr Planet Veyruna umkreist Orelis."
+          ],
+          "verweise": [
+            [
+              "Veyruna",
+              "inhalte/himmelskoerper/planeten/details/veyruna/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Echonoiden",
+              "inhalte/spezies/Mentale Spezies/Echonoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Innerer Asteroidengürtel im Orelis-System.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Orelis · Stern",
+              "Orangefarbener Zwerg (K1 V)"
+            ],
+            [
+              "Seran · 0,16 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Mirvek · 0,35 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Veyruna · 0,68 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Koras · 1,18 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Jandor · 3,7 AE",
+              "Gasriese"
+            ],
+            [
+              "Veltos · 6,5 AE",
+              "Eisriese"
+            ],
+            [
+              "Innerer Asteroidengürtel · 1,7–2,4 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußerer Kleinkörpergürtel · 15–33 AE",
+              "Kleinkörpergürtel"
+            ]
+          ],
+          "verweise": [
+            [
+              "Orelis",
+              "inhalte/himmelskoerper/sterne/details/orelis/hauptseite/index.html"
+            ],
+            [
+              "Seran",
+              "inhalte/himmelskoerper/planeten/details/seran/hauptseite/index.html"
+            ],
+            [
+              "Mirvek",
+              "inhalte/himmelskoerper/planeten/details/mirvek/hauptseite/index.html"
+            ],
+            [
+              "Veyruna",
+              "inhalte/himmelskoerper/planeten/details/veyruna/hauptseite/index.html"
+            ],
+            [
+              "Koras",
+              "inhalte/himmelskoerper/planeten/details/koras/hauptseite/index.html"
+            ],
+            [
+              "Jandor",
+              "inhalte/himmelskoerper/planeten/details/jandor/hauptseite/index.html"
+            ],
+            [
+              "Veltos",
+              "inhalte/himmelskoerper/planeten/details/veltos/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Umgebung": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Umgebung von Innerer Asteroidengürtel.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Orelis · Stern",
+              "Orangefarbener Zwerg (K1 V)"
+            ],
+            [
+              "Seran · 0,16 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Mirvek · 0,35 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Veyruna · 0,68 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Koras · 1,18 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Jandor · 3,7 AE",
+              "Gasriese"
+            ],
+            [
+              "Veltos · 6,5 AE",
+              "Eisriese"
+            ],
+            [
+              "Innerer Asteroidengürtel · 1,7–2,4 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußerer Kleinkörpergürtel · 15–33 AE",
+              "Kleinkörpergürtel"
+            ]
+          ],
+          "verweise": [
+            [
+              "Orelis",
+              "inhalte/himmelskoerper/sterne/details/orelis/hauptseite/index.html"
+            ],
+            [
+              "Seran",
+              "inhalte/himmelskoerper/planeten/details/seran/hauptseite/index.html"
+            ],
+            [
+              "Mirvek",
+              "inhalte/himmelskoerper/planeten/details/mirvek/hauptseite/index.html"
+            ],
+            [
+              "Veyruna",
+              "inhalte/himmelskoerper/planeten/details/veyruna/hauptseite/index.html"
+            ],
+            [
+              "Koras",
+              "inhalte/himmelskoerper/planeten/details/koras/hauptseite/index.html"
+            ],
+            [
+              "Jandor",
+              "inhalte/himmelskoerper/planeten/details/jandor/hauptseite/index.html"
+            ],
+            [
+              "Veltos",
+              "inhalte/himmelskoerper/planeten/details/veltos/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Innerer Asteroidengürtel.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Innerer Asteroidengürtel besteht aus Material, das sich bei der Entstehung des Orelis-Systems nicht zu einem Planeten vereinte."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Innerer Asteroidengürtel.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Wie viel Masse enthält das Gebiet insgesamt?",
+            "Welche Resonanzen formen seine Ränder?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Innerer Asteroidengürtel ist mit allen Bahndaten im Orelis-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=veyruna-stern&objekt=veyruna-innerer-guertel"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Innerer Asteroidengürtel.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Zwischen Koras und Jandor liegt von etwa 1,7 bis 2,4 AE ein Gürtel aus kleineren felsigen und metallhaltigen Körpern – ein potenziell wichtiger Rohstoffraum, nicht gleichmäßig mit gefährlichen Asteroiden gefüllt."
+          ]
+        },
+        {
+          "titel": "Vielfältige Körper",
+          "text": [
+            "Die Körper des inneren Gürtels unterscheiden sich in Größe, Zusammensetzung, Kratergeschichte und innerem Aufbau. Typische Abstände zwischen größeren Körpern sind beträchtlich."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Innerer Asteroidengürtel.",
+      "abschnitte": [
+        {
+          "titel": "Innerer Asteroidengürtel – Archivbild",
+          "bild": true,
+          "bildtext": "Innerer Asteroidengürtel"
+        }
+      ]
+    }
+  }
+}

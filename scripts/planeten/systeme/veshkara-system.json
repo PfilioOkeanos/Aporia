@@ -1,50 +1,262 @@
 {
   "systemName": "Khelar-System",
   "praefix": "veshkara-",
-  "lage": { "entfernungLj": 31, "richtung": [-0.85, 0.25, 0.46] },
+  "lage": {
+    "entfernungLj": 31,
+    "richtung": [
+      -0.85,
+      0.25,
+      0.46
+    ]
+  },
   "einzelstern": true,
   "stern": {
-    "id": "veshkara-stern", "name": "Khelar", "typ": "Orangefarbener Zwerg (K0 V)",
-    "masseSonne": 0.83, "radiusSonne": 0.83, "leuchtkraftSonne": 0.6, "temperaturK": 5250, "alterMrd": 4.7,
-    "farbe": [1, 0.76, 0.48], "emissionsfarbe": [1, 0.78, 0.52], "emission": 1.1,
-    "bild": { "art": "sterne", "suche": "orange|K-Stern|gelb|Hauptreihe" },
+    "id": "veshkara-stern",
+    "name": "Khelar",
+    "typ": "Orangefarbener Zwerg (K0 V)",
+    "masseSonne": 0.83,
+    "radiusSonne": 0.83,
+    "leuchtkraftSonne": 0.6,
+    "temperaturK": 5250,
+    "alterMrd": 4.7,
+    "farbe": [
+      1,
+      0.76,
+      0.48
+    ],
+    "emissionsfarbe": [
+      1,
+      0.78,
+      0.52
+    ],
+    "emission": 1.1,
+    "bild": {
+      "art": "sterne",
+      "suche": "orange|K-Stern|gelb|Hauptreihe"
+    },
     "beschreibung": "Khelar ist ein Hauptreihenstern der Spektralklasse K0 V mit 83 % der Sonnenmasse und 60 % ihrer Leuchtkraft – Heimatstern der Chitinoiden und ein ruhiger Einzelstern."
   },
   "koerper": [
-    { "id": "veshkara-khelar-i", "name": "Khelar I", "typ": "Gesteinsplanet", "um": "veshkara-stern",
-      "aAE": 0.3, "e": 0.04, "i": 2.6, "knoten": 50, "peri": 20, "phase": 300, "radiusKm": 4900, "masseErde": 0.44, "albedo": 0.14, "farbe": [0.64, 0.48, 0.38],
-      "bild": { "art": "planeten", "suche": "Rostbrauner|freiliegendem Eisenkern|Nickel-Eisen" },
-      "beschreibung": "Khelar I ist ein heißer, eisenreicher Gesteinsplanet nahe am Stern." },
-    { "id": "veshkara-planet", "name": "Veshkara", "typ": "Gesteinsplanet", "um": "veshkara-stern",
-      "aAE": 0.78, "e": 0.05, "i": 0, "knoten": 330, "peri": 120, "phase": 90, "radiusKm": 5989, "masseErde": 0.81, "albedo": 0.3, "zielTemperaturC": 18, "farbe": [0.34, 0.56, 0.74],
-      "bild": { "art": "planeten", "slug": "tiefblauer-ozeanplanet-unter-weien-wolken" },
-      "beschreibung": "Veshkara ist die Heimatwelt der Chitinoiden: ein terrestrischer Planet mit Ozeanen, den Kontinenten Sereth und Vaul, großen Flusssystemen und Feuchtgebieten." },
-    { "id": "veshkara-rhaum", "name": "Rhaum", "typ": "Mond", "um": "veshkara-planet",
-      "periodeTage": 29, "e": 0.05, "i": 5.2, "knoten": 140, "peri": 0, "phase": 280, "radiusKm": 1500, "masseErde": 0.014, "farbe": [0.72, 0.7, 0.66],
-      "bild": { "art": "monde", "suche": "Krater|Mond|Fels" },
-      "beschreibung": "Rhaum ist der große Mond Veshkaras. Gemeinsam mit den saisonalen Überschwemmungen prägen seine Gezeiten die Küstendeltas." },
-    { "id": "veshkara-khelar-iii", "name": "Khelar III", "typ": "Gasriese", "um": "veshkara-stern",
-      "aAE": 2.7, "e": 0.06, "i": 1.4, "knoten": 260, "peri": 40, "phase": 200, "radiusKm": 64000, "masseErde": 140, "albedo": 0.4, "farbe": [0.84, 0.7, 0.5],
-      "bild": { "art": "planeten", "suche": "Schwefelgoldener|Goldener|Gasriese" },
-      "beschreibung": "Khelar III ist ein goldgelber Gasriese mit 0,44 Jupitermassen." },
-    { "id": "veshkara-harzguertel", "name": "Harzgürtel", "typ": "Asteroidengürtel", "ringUm": "veshkara-stern",
-      "ringeAE": [1.4, 1.55, 1.7, 1.85, 2.0], "anzahl": 260, "groesseKm": 380, "mindestPx": 6, "farbe": [0.62, 0.52, 0.4],
-      "bild": { "art": "sternensysteme", "suche": "Asteroidengürtel" },
-      "beschreibung": "Der Harzgürtel zwischen 1,4 und 2,0 AE besteht aus dunklen, kohlenstoff- und eisenreichen Asteroiden; sein Name stammt von ihrer bernsteinartigen Färbung im Sternlicht." },
-    { "id": "veshkara-khelar-iv", "name": "Khelar IV", "typ": "Eisriese", "um": "veshkara-stern",
-      "aAE": 7.8, "e": 0.03, "i": 2.2, "knoten": 110, "peri": 300, "phase": 60, "radiusKm": 25000, "masseErde": 16, "albedo": 0.3, "farbe": [0.42, 0.62, 0.84],
-      "bild": { "art": "planeten", "suche": "Eisriese|Neptun" },
-      "beschreibung": "Khelar IV ist ein kalter, blaugrüner Eisriese." },
-    { "id": "veshkara-panzerkomet", "name": "Panzerkomet", "typ": "Komet", "um": "veshkara-stern", "anomalie": true,
-      "aAE": 10.5, "e": 0.92, "i": 16, "knoten": 20, "peri": 200, "phase": 174, "radiusKm": 9, "masseErde": 0, "farbe": [0.66, 0.6, 0.52],
-      "bild": { "art": "kometen", "suche": "gebrochenem|geschichtetem|Komet" },
-      "beschreibung": "Ein ungewöhnlich großer, dunkel verkrusteter Komet (rund 34 Jahre Umlaufzeit), dessen Schweif in einzelnen Schichten aufbricht – die Chitinoiden nennen ihn wegen seiner Kruste den Panzerkometen." },
-    { "id": "veshkara-sporenstein", "name": "Wurzelstein", "typ": "Asteroid", "um": "veshkara-stern", "anomalie": true,
-      "aAE": 1.72, "e": 0.1, "i": 9, "knoten": 200, "peri": 60, "phase": 150, "radiusKm": 38, "masseErde": 0, "farbe": [0.56, 0.5, 0.44],
-      "bild": { "art": "asteroiden", "suche": "Kristallgrat|Asteroid" },
-      "beschreibung": "Ein Asteroid mit verzweigten, wurzelartigen Mineraladern an der Oberfläche – Gegenstand zahlreicher Legenden und wissenschaftlicher Expeditionen." },
-    { "id": "veshkara-kometengebiet", "name": "Äußeres Kometengebiet", "typ": "Kometengebiet", "ringUm": "veshkara-stern",
-      "ringeAE": [33, 40, 47], "anzahl": 220, "groesseKm": 150, "mindestPx": 4.5, "farbe": [0.52, 0.68, 0.86],
-      "beschreibung": "Ein ferner Gürtel aus Eiskörpern zwischen 33 und 47 AE." }
+    {
+      "id": "veshkara-khelar-i",
+      "name": "Khelar I",
+      "typ": "Gesteinsplanet",
+      "um": "veshkara-stern",
+      "aAE": 0.3,
+      "e": 0.04,
+      "i": 2.6,
+      "knoten": 50,
+      "peri": 20,
+      "phase": 300,
+      "radiusKm": 4900,
+      "masseErde": 0.44,
+      "albedo": 0.14,
+      "farbe": [
+        0.64,
+        0.48,
+        0.38
+      ],
+      "bild": {
+        "art": "planeten",
+        "suche": "Rostbrauner|freiliegendem Eisenkern|Nickel-Eisen"
+      },
+      "beschreibung": "Khelar I ist ein heißer, eisenreicher Gesteinsplanet nahe am Stern."
+    },
+    {
+      "id": "veshkara-planet",
+      "name": "Veshkara",
+      "typ": "Gesteinsplanet",
+      "um": "veshkara-stern",
+      "aAE": 0.78,
+      "e": 0.05,
+      "i": 0,
+      "knoten": 330,
+      "peri": 120,
+      "phase": 90,
+      "radiusKm": 5989,
+      "masseErde": 0.81,
+      "albedo": 0.3,
+      "zielTemperaturC": 18,
+      "farbe": [
+        0.34,
+        0.56,
+        0.74
+      ],
+      "bild": {
+        "art": "planeten",
+        "slug": "tiefblauer-ozeanplanet-unter-weien-wolken"
+      },
+      "beschreibung": "Veshkara ist die Heimatwelt der Chitinoiden: ein terrestrischer Planet mit Ozeanen, den Kontinenten Sereth und Vaul, großen Flusssystemen und Feuchtgebieten."
+    },
+    {
+      "id": "veshkara-rhaum",
+      "name": "Rhaum",
+      "typ": "Mond",
+      "um": "veshkara-planet",
+      "periodeTage": 29,
+      "e": 0.05,
+      "i": 5.2,
+      "knoten": 140,
+      "peri": 0,
+      "phase": 280,
+      "radiusKm": 1500,
+      "masseErde": 0.014,
+      "farbe": [
+        0.72,
+        0.7,
+        0.66
+      ],
+      "bild": {
+        "art": "monde",
+        "suche": "Krater|Mond|Fels"
+      },
+      "beschreibung": "Rhaum ist der große Mond Veshkaras. Gemeinsam mit den saisonalen Überschwemmungen prägen seine Gezeiten die Küstendeltas."
+    },
+    {
+      "id": "veshkara-khelar-iii",
+      "name": "Khelar III",
+      "typ": "Gasriese",
+      "um": "veshkara-stern",
+      "aAE": 2.7,
+      "e": 0.06,
+      "i": 1.4,
+      "knoten": 260,
+      "peri": 40,
+      "phase": 200,
+      "radiusKm": 64000,
+      "masseErde": 140,
+      "albedo": 0.4,
+      "farbe": [
+        0.84,
+        0.7,
+        0.5
+      ],
+      "bild": {
+        "art": "planeten",
+        "suche": "Schwefelgoldener|Goldener|Gasriese"
+      },
+      "beschreibung": "Khelar III ist ein goldgelber Gasriese mit 0,44 Jupitermassen."
+    },
+    {
+      "id": "veshkara-harzguertel",
+      "name": "Harzgürtel",
+      "typ": "Asteroidengürtel",
+      "ringUm": "veshkara-stern",
+      "ringeAE": [
+        1.4,
+        1.55,
+        1.7,
+        1.85,
+        2
+      ],
+      "anzahl": 260,
+      "groesseKm": 380,
+      "mindestPx": 6,
+      "farbe": [
+        0.62,
+        0.52,
+        0.4
+      ],
+      "bild": {
+        "art": "sternensysteme",
+        "suche": "Asteroidengürtel"
+      },
+      "beschreibung": "Der Harzgürtel zwischen 1,4 und 2,0 AE besteht aus dunklen, kohlenstoff- und eisenreichen Asteroiden; sein Name stammt von ihrer bernsteinartigen Färbung im Sternlicht."
+    },
+    {
+      "id": "veshkara-khelar-iv",
+      "name": "Khelar IV",
+      "typ": "Eisriese",
+      "um": "veshkara-stern",
+      "aAE": 7.8,
+      "e": 0.03,
+      "i": 2.2,
+      "knoten": 110,
+      "peri": 300,
+      "phase": 60,
+      "radiusKm": 25000,
+      "masseErde": 16,
+      "albedo": 0.3,
+      "farbe": [
+        0.42,
+        0.62,
+        0.84
+      ],
+      "bild": {
+        "art": "planeten",
+        "suche": "Eisriese|Neptun"
+      },
+      "beschreibung": "Khelar IV ist ein kalter, blaugrüner Eisriese."
+    },
+    {
+      "id": "veshkara-panzerkomet",
+      "name": "Panzerkomet",
+      "typ": "Komet",
+      "um": "veshkara-stern",
+      "anomalie": true,
+      "aAE": 10.5,
+      "e": 0.92,
+      "i": 16,
+      "knoten": 20,
+      "peri": 200,
+      "phase": 174,
+      "radiusKm": 9,
+      "masseErde": 0,
+      "farbe": [
+        0.66,
+        0.6,
+        0.52
+      ],
+      "bild": {
+        "art": "kometen",
+        "suche": "gebrochenem|geschichtetem|Komet"
+      },
+      "beschreibung": "Ein ungewöhnlich großer, dunkel verkrusteter Komet (rund 34 Jahre Umlaufzeit), dessen Schweif in einzelnen Schichten aufbricht – die Chitinoiden nennen ihn wegen seiner Kruste den Panzerkometen."
+    },
+    {
+      "id": "veshkara-sporenstein",
+      "name": "Wurzelstein",
+      "typ": "Asteroid",
+      "um": "veshkara-stern",
+      "anomalie": true,
+      "aAE": 1.72,
+      "e": 0.1,
+      "i": 9,
+      "knoten": 200,
+      "peri": 60,
+      "phase": 150,
+      "radiusKm": 38,
+      "masseErde": 0,
+      "farbe": [
+        0.56,
+        0.5,
+        0.44
+      ],
+      "bild": {
+        "art": "asteroiden",
+        "suche": "Kristallgrat|Asteroid"
+      },
+      "beschreibung": "Ein Asteroid mit verzweigten, wurzelartigen Mineraladern an der Oberfläche – Gegenstand zahlreicher Legenden und wissenschaftlicher Expeditionen."
+    },
+    {
+      "id": "veshkara-kometengebiet",
+      "name": "Zarenev-Kometenwolke",
+      "typ": "Kometengebiet",
+      "ringUm": "veshkara-stern",
+      "ringeAE": [
+        33,
+        40,
+        47
+      ],
+      "anzahl": 220,
+      "groesseKm": 150,
+      "mindestPx": 4.5,
+      "farbe": [
+        0.52,
+        0.68,
+        0.86
+      ],
+      "beschreibung": "Ein ferner Gürtel aus Eiskörpern zwischen 33 und 47 AE."
+    }
   ]
 }

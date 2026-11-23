@@ -1,54 +1,286 @@
 {
   "systemName": "Velhar-System",
   "praefix": "nhalora-",
-  "lage": { "entfernungLj": 27, "richtung": [-0.3, -0.15, 0.94] },
+  "lage": {
+    "entfernungLj": 27,
+    "richtung": [
+      -0.3,
+      -0.15,
+      0.94
+    ]
+  },
   "einzelstern": true,
   "stern": {
-    "id": "nhalora-stern", "name": "Velhar", "typ": "Gelber Zwerg (G5 V)",
-    "masseSonne": 0.95, "radiusSonne": 0.94, "leuchtkraftSonne": 0.8, "temperaturK": 5650, "alterMrd": 4.9,
-    "farbe": [1, 0.9, 0.66], "emissionsfarbe": [1, 0.92, 0.7], "emission": 1.15,
-    "bild": { "art": "sterne", "suche": "gelb|sonnenähnlich|G-Stern|Hauptreihe" },
+    "id": "nhalora-stern",
+    "name": "Velhar",
+    "typ": "Gelber Zwerg (G5 V)",
+    "masseSonne": 0.95,
+    "radiusSonne": 0.94,
+    "leuchtkraftSonne": 0.8,
+    "temperaturK": 5650,
+    "alterMrd": 4.9,
+    "farbe": [
+      1,
+      0.9,
+      0.66
+    ],
+    "emissionsfarbe": [
+      1,
+      0.92,
+      0.7
+    ],
+    "emission": 1.15,
+    "bild": {
+      "art": "sterne",
+      "suche": "gelb|sonnenähnlich|G-Stern|Hauptreihe"
+    },
     "beschreibung": "Velhar ist ein sonnenähnlicher gelber Zwerg der Spektralklasse G5 V, Heimatstern der Symbionten. Ein ruhiger Einzelstern."
   },
   "koerper": [
-    { "id": "nhalora-velhar-i", "name": "Velhar I", "typ": "Gesteinsplanet", "um": "nhalora-stern",
-      "aAE": 0.42, "e": 0.08, "i": 3.4, "knoten": 80, "peri": 30, "phase": 20, "radiusKm": 4200, "masseErde": 0.3, "albedo": 0.12, "farbe": [0.6, 0.48, 0.4],
-      "bild": { "art": "planeten", "suche": "Narbenplanet|Kraterplanet|Ursprünglicher" },
-      "beschreibung": "Velhar I ist eine kleine, heiße und vernarbte Gesteinswelt." },
-    { "id": "nhalora-planet", "name": "Nhalora", "typ": "Gesteinsplanet", "um": "nhalora-stern",
-      "aAE": 0.95, "e": 0.02, "i": 0, "knoten": 40, "peri": 100, "phase": 180, "radiusKm": 6626, "masseErde": 1.1, "albedo": 0.3, "zielTemperaturC": 22, "farbe": [0.4, 0.62, 0.54],
-      "bild": { "art": "planeten", "slug": "planet-der-blauen-binnenmeere" },
-      "beschreibung": "Nhalora ist die warme, feuchte Heimatwelt der Symbionten mit ausgedehnten Feuchtgebieten, flachen Gewässern und dicht bewachsenen Ufern." },
-    { "id": "nhalora-orra", "name": "Orra", "typ": "Mond", "um": "nhalora-planet",
-      "periodeTage": 20, "e": 0.04, "i": 5, "knoten": 120, "peri": 0, "phase": 60, "radiusKm": 1240, "masseErde": 0.011, "farbe": [0.74, 0.7, 0.66],
-      "bild": { "art": "monde", "suche": "Mond|Krater" },
-      "beschreibung": "Orra ist der größere der beiden Monde. Seine Gezeiten überfluten die flachen Uferlandschaften regelmäßig – ein Rhythmus, nach dem sich viele Brutgebiete richten." },
-    { "id": "nhalora-pell", "name": "Pell", "typ": "Mond", "um": "nhalora-planet",
-      "periodeTage": 4.5, "e": 0.01, "i": 1, "knoten": 260, "peri": 0, "phase": 200, "radiusKm": 160, "masseErde": 0.00002, "farbe": [0.5, 0.46, 0.44],
-      "bild": { "art": "monde", "suche": "dunkel|Kohlenstoff|Mond" },
-      "beschreibung": "Pell ist ein kleiner, dunkler Mond auf enger Bahn, der als schneller Punkt über den Nachthimmel zieht." },
-    { "id": "nhalora-velhar-iii", "name": "Velhar III", "typ": "Gasriese", "um": "nhalora-stern",
-      "aAE": 3.6, "e": 0.05, "i": 1.2, "knoten": 200, "peri": 60, "phase": 100, "radiusKm": 68000, "masseErde": 210, "albedo": 0.4, "farbe": [0.86, 0.72, 0.56],
-      "bild": { "art": "planeten", "suche": "Warmer Jupiter|Gasriese|Wolkenbändern" },
-      "beschreibung": "Velhar III ist ein Gasriese mit zwei Dritteln Jupitermasse und kräftigen Wolkenbändern." },
-    { "id": "nhalora-schlammguertel", "name": "Sporengürtel", "typ": "Asteroidengürtel", "ringUm": "nhalora-stern",
-      "ringeAE": [1.7, 1.9, 2.1, 2.3, 2.5], "anzahl": 280, "groesseKm": 380, "mindestPx": 6, "farbe": [0.56, 0.52, 0.46],
-      "bild": { "art": "sternensysteme", "suche": "Asteroidengürtel" },
-      "beschreibung": "Der Sporengürtel zwischen 1,7 und 2,5 AE besteht aus kohlenstoffreichen Asteroiden mit organischen Verbindungen – Ziel symbiontischer Forschung über die Ursprünge des Lebens." },
-    { "id": "nhalora-velhar-iv", "name": "Velhar IV", "typ": "Eisriese", "um": "nhalora-stern",
-      "aAE": 9.4, "e": 0.04, "i": 2.6, "knoten": 300, "peri": 170, "phase": 240, "radiusKm": 24600, "masseErde": 15, "albedo": 0.3, "farbe": [0.42, 0.6, 0.82],
-      "bild": { "art": "planeten", "suche": "Eisriese|Neptun" },
-      "beschreibung": "Velhar IV ist ein kalter Eisriese am Rand des Systems." },
-    { "id": "nhalora-schleier", "name": "Wirtsschweif", "typ": "Komet", "um": "nhalora-stern", "anomalie": true,
-      "aAE": 13, "e": 0.94, "i": 19, "knoten": 90, "peri": 140, "phase": 176, "radiusKm": 6, "masseErde": 0, "farbe": [0.68, 0.8, 0.86],
-      "bild": { "art": "kometen", "suche": "Komet|Schweif" },
-      "beschreibung": "Ein periodischer Komet (rund 48 Jahre), dessen Doppelschweif in der symbiontischen Kultur als Sinnbild der Verbindung von Symbiont und Wirt gilt." },
-    { "id": "nhalora-zwilling", "name": "Gebundenes Paar", "typ": "Asteroid", "um": "nhalora-stern", "anomalie": true,
-      "aAE": 2.12, "e": 0.07, "i": 6, "knoten": 330, "peri": 20, "phase": 120, "radiusKm": 30, "masseErde": 0, "farbe": [0.58, 0.54, 0.5],
-      "bild": { "art": "asteroiden", "suche": "anhaftendem|Bruchstück|Kontakt|Doppel" },
-      "beschreibung": "Ein Asteroid mit einem fest anhaftenden kleineren Begleiter – zwei Körper, die sich nicht mehr trennen lassen." },
-    { "id": "nhalora-kometengebiet", "name": "Äußeres Kometengebiet", "typ": "Kometengebiet", "ringUm": "nhalora-stern",
-      "ringeAE": [36, 44, 52], "anzahl": 220, "groesseKm": 160, "mindestPx": 4.5, "farbe": [0.52, 0.7, 0.86],
-      "beschreibung": "Ein ferner Gürtel aus Eiskörpern zwischen 36 und 52 AE." }
+    {
+      "id": "nhalora-velhar-i",
+      "name": "Velhar I",
+      "typ": "Gesteinsplanet",
+      "um": "nhalora-stern",
+      "aAE": 0.42,
+      "e": 0.08,
+      "i": 3.4,
+      "knoten": 80,
+      "peri": 30,
+      "phase": 20,
+      "radiusKm": 4200,
+      "masseErde": 0.3,
+      "albedo": 0.12,
+      "farbe": [
+        0.6,
+        0.48,
+        0.4
+      ],
+      "bild": {
+        "art": "planeten",
+        "suche": "Narbenplanet|Kraterplanet|Ursprünglicher"
+      },
+      "beschreibung": "Velhar I ist eine kleine, heiße und vernarbte Gesteinswelt."
+    },
+    {
+      "id": "nhalora-planet",
+      "name": "Nhalora",
+      "typ": "Gesteinsplanet",
+      "um": "nhalora-stern",
+      "aAE": 0.95,
+      "e": 0.02,
+      "i": 0,
+      "knoten": 40,
+      "peri": 100,
+      "phase": 180,
+      "radiusKm": 6626,
+      "masseErde": 1.1,
+      "albedo": 0.3,
+      "zielTemperaturC": 22,
+      "farbe": [
+        0.4,
+        0.62,
+        0.54
+      ],
+      "bild": {
+        "art": "planeten",
+        "slug": "planet-der-blauen-binnenmeere"
+      },
+      "beschreibung": "Nhalora ist die warme, feuchte Heimatwelt der Symbionten mit ausgedehnten Feuchtgebieten, flachen Gewässern und dicht bewachsenen Ufern."
+    },
+    {
+      "id": "nhalora-orra",
+      "name": "Orra",
+      "typ": "Mond",
+      "um": "nhalora-planet",
+      "periodeTage": 20,
+      "e": 0.04,
+      "i": 5,
+      "knoten": 120,
+      "peri": 0,
+      "phase": 60,
+      "radiusKm": 1240,
+      "masseErde": 0.011,
+      "farbe": [
+        0.74,
+        0.7,
+        0.66
+      ],
+      "bild": {
+        "art": "monde",
+        "suche": "Mond|Krater"
+      },
+      "beschreibung": "Orra ist der größere der beiden Monde. Seine Gezeiten überfluten die flachen Uferlandschaften regelmäßig – ein Rhythmus, nach dem sich viele Brutgebiete richten."
+    },
+    {
+      "id": "nhalora-pell",
+      "name": "Pell",
+      "typ": "Mond",
+      "um": "nhalora-planet",
+      "periodeTage": 4.5,
+      "e": 0.01,
+      "i": 1,
+      "knoten": 260,
+      "peri": 0,
+      "phase": 200,
+      "radiusKm": 160,
+      "masseErde": 0.00002,
+      "farbe": [
+        0.5,
+        0.46,
+        0.44
+      ],
+      "bild": {
+        "art": "monde",
+        "suche": "dunkel|Kohlenstoff|Mond"
+      },
+      "beschreibung": "Pell ist ein kleiner, dunkler Mond auf enger Bahn, der als schneller Punkt über den Nachthimmel zieht."
+    },
+    {
+      "id": "nhalora-velhar-iii",
+      "name": "Velhar III",
+      "typ": "Gasriese",
+      "um": "nhalora-stern",
+      "aAE": 3.6,
+      "e": 0.05,
+      "i": 1.2,
+      "knoten": 200,
+      "peri": 60,
+      "phase": 100,
+      "radiusKm": 68000,
+      "masseErde": 210,
+      "albedo": 0.4,
+      "farbe": [
+        0.86,
+        0.72,
+        0.56
+      ],
+      "bild": {
+        "art": "planeten",
+        "suche": "Warmer Jupiter|Gasriese|Wolkenbändern"
+      },
+      "beschreibung": "Velhar III ist ein Gasriese mit zwei Dritteln Jupitermasse und kräftigen Wolkenbändern."
+    },
+    {
+      "id": "nhalora-schlammguertel",
+      "name": "Sporengürtel von Velhar",
+      "typ": "Asteroidengürtel",
+      "ringUm": "nhalora-stern",
+      "ringeAE": [
+        1.7,
+        1.9,
+        2.1,
+        2.3,
+        2.5
+      ],
+      "anzahl": 280,
+      "groesseKm": 380,
+      "mindestPx": 6,
+      "farbe": [
+        0.56,
+        0.52,
+        0.46
+      ],
+      "bild": {
+        "art": "sternensysteme",
+        "suche": "Asteroidengürtel"
+      },
+      "beschreibung": "Der Sporengürtel zwischen 1,7 und 2,5 AE besteht aus kohlenstoffreichen Asteroiden mit organischen Verbindungen – Ziel symbiontischer Forschung über die Ursprünge des Lebens."
+    },
+    {
+      "id": "nhalora-velhar-iv",
+      "name": "Velhar IV",
+      "typ": "Eisriese",
+      "um": "nhalora-stern",
+      "aAE": 9.4,
+      "e": 0.04,
+      "i": 2.6,
+      "knoten": 300,
+      "peri": 170,
+      "phase": 240,
+      "radiusKm": 24600,
+      "masseErde": 15,
+      "albedo": 0.3,
+      "farbe": [
+        0.42,
+        0.6,
+        0.82
+      ],
+      "bild": {
+        "art": "planeten",
+        "suche": "Eisriese|Neptun"
+      },
+      "beschreibung": "Velhar IV ist ein kalter Eisriese am Rand des Systems."
+    },
+    {
+      "id": "nhalora-schleier",
+      "name": "Wirtsschweif",
+      "typ": "Komet",
+      "um": "nhalora-stern",
+      "anomalie": true,
+      "aAE": 13,
+      "e": 0.94,
+      "i": 19,
+      "knoten": 90,
+      "peri": 140,
+      "phase": 176,
+      "radiusKm": 6,
+      "masseErde": 0,
+      "farbe": [
+        0.68,
+        0.8,
+        0.86
+      ],
+      "bild": {
+        "art": "kometen",
+        "suche": "Komet|Schweif"
+      },
+      "beschreibung": "Ein periodischer Komet (rund 48 Jahre), dessen Doppelschweif in der symbiontischen Kultur als Sinnbild der Verbindung von Symbiont und Wirt gilt."
+    },
+    {
+      "id": "nhalora-zwilling",
+      "name": "Narioter",
+      "typ": "Asteroid",
+      "um": "nhalora-stern",
+      "anomalie": true,
+      "aAE": 2.12,
+      "e": 0.07,
+      "i": 6,
+      "knoten": 330,
+      "peri": 20,
+      "phase": 120,
+      "radiusKm": 30,
+      "masseErde": 0,
+      "farbe": [
+        0.58,
+        0.54,
+        0.5
+      ],
+      "bild": {
+        "art": "asteroiden",
+        "suche": "anhaftendem|Bruchstück|Kontakt|Doppel"
+      },
+      "beschreibung": "Ein Asteroid mit einem fest anhaftenden kleineren Begleiter – zwei Körper, die sich nicht mehr trennen lassen."
+    },
+    {
+      "id": "nhalora-kometengebiet",
+      "name": "Ravauter-Kometenwolke",
+      "typ": "Kometengebiet",
+      "ringUm": "nhalora-stern",
+      "ringeAE": [
+        36,
+        44,
+        52
+      ],
+      "anzahl": 220,
+      "groesseKm": 160,
+      "mindestPx": 4.5,
+      "farbe": [
+        0.52,
+        0.7,
+        0.86
+      ],
+      "beschreibung": "Ein ferner Gürtel aus Eiskörpern zwischen 36 und 52 AE."
+    }
   ]
 }

@@ -1,0 +1,557 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Teshil",
+  "genitiv": "von Teshil",
+  "dossierName": "Teshil-Dossier",
+  "klasse": "Fels-Eismond",
+  "intro": "Teshil ist ein kleiner gemischter Fels-Eismond auf einer mittleren Bahn um Ynderal. Teshil umkreist Ynderal in 8,8 Tage.",
+  "globusDaten": {
+    "planet": "teshil",
+    "klasse": "Eis",
+    "radius": 510000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=teryn-stern&objekt=teryn-teshil",
+  "grunddaten": [
+    [
+      "System-ID",
+      "teryn-teshil"
+    ],
+    [
+      "Archiv-ID",
+      "AP-TERYN-TESHIL"
+    ],
+    [
+      "Typ",
+      "Fels-Eismond"
+    ],
+    [
+      "Sternsystem",
+      "Teryn-System"
+    ],
+    [
+      "Zentralkörper",
+      "Ynderal"
+    ],
+    [
+      "Große Halbachse",
+      "570.426 km"
+    ],
+    [
+      "Umlaufzeit",
+      "8,8 Tage"
+    ],
+    [
+      "Durchmesser",
+      "1.020 km"
+    ],
+    [
+      "Masse",
+      "2,99 · 10^20 kg"
+    ],
+    [
+      "Schwerkraft",
+      "7,65 cm/s²"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -197 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Teryn-System"
+    ],
+    [
+      "Zentralstern",
+      "Teryn",
+      "inhalte/himmelskoerper/sterne/details/teryn/hauptseite/index.html"
+    ],
+    [
+      "Umläuft",
+      "Ynderal",
+      "inhalte/himmelskoerper/planeten/details/ynderal/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "570.426 km"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Teshil im Teryn-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=teryn-stern&objekt=teryn-teshil",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Teryn",
+      "href": "inhalte/himmelskoerper/sterne/details/teryn/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◍",
+      "art": "Mutterplanet",
+      "titel": "Ynderal",
+      "href": "inhalte/himmelskoerper/planeten/details/ynderal/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Solitiden",
+      "titel": "Iskara",
+      "href": "inhalte/himmelskoerper/planeten/details/iskara/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Solitiden",
+      "href": "inhalte/spezies/Mentale Spezies/Solitiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Teryn-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=teryn-stern&objekt=teryn-teshil"
+    },
+    {
+      "titel": "Speziesdossier Solitiden",
+      "href": "inhalte/spezies/Mentale Spezies/Solitiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#07090a",
+      "tiefe": "#101416",
+      "akzent": "#b9cddb",
+      "sand": "#bfc9ba",
+      "moos": "#98c6b0",
+      "ozean": "#7aacd2",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#43505a"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Astronomie"
+      ],
+      [
+        "Planet",
+        "Mutterplanet"
+      ],
+      [
+        "Kräfte",
+        "Gezeiten"
+      ],
+      [
+        "Tiefe",
+        "Geologie"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Mutterplanet": {
+      "gruppe": "Wissenschaft",
+      "icon": "◐",
+      "intro": "Mutterplanet von Teshil.",
+      "abschnitte": [
+        {
+          "titel": "Ynderal",
+          "text": [
+            "Ynderal ist ein kalter, eisreicher Riesenplanet mit wasserstoffreicher Atmosphäre und einem Ringsystem."
+          ],
+          "daten": [
+            [
+              "Typ",
+              "Eisreicher Riesenplanet"
+            ],
+            [
+              "Durchmesser",
+              "62.400 km"
+            ],
+            [
+              "Abstand des Mondes",
+              "570.426 km (18,3 Planetenradien)"
+            ]
+          ],
+          "verweise": [
+            [
+              "Ynderal",
+              "inhalte/himmelskoerper/planeten/details/ynderal/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Weitere Monde von Ynderal",
+          "liste": [
+            "Veraq – Umlauf in 3,4 Tage",
+            "Narim – Umlauf in 18,2 Tage"
+          ],
+          "verweise": [
+            [
+              "Veraq",
+              "inhalte/himmelskoerper/monde/details/veraq/hauptseite/index.html"
+            ],
+            [
+              "Narim",
+              "inhalte/himmelskoerper/monde/details/narim/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Gezeiten": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gezeiten von Teshil.",
+      "abschnitte": [
+        {
+          "titel": "Gezeitenkräfte",
+          "text": [
+            "Auf seiner Bahn in 570.426 km Abstand wirken starke Gezeitenkräfte von Ynderal auf Teshil."
+          ]
+        }
+      ]
+    },
+    "Gebundene Rotation": {
+      "gruppe": "Wissenschaft",
+      "icon": "↻",
+      "intro": "Gebundene Rotation von Teshil.",
+      "abschnitte": [
+        {
+          "titel": "Rotation",
+          "text": [
+            "Teshil wendet Ynderal vermutlich stets dieselbe Seite zu: Ein Tag dauert so lange wie ein Umlauf – 8,8 Tage."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Teshil auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Teshil",
+          "text": [
+            "Teshil ist ein kleiner gemischter Fels-Eismond auf einer mittleren Bahn um Ynderal.",
+            "Teshil umkreist Ynderal in 8,8 Tage."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Fels-Eismond"
+            ],
+            [
+              "Sternsystem",
+              "Teryn-System"
+            ],
+            [
+              "Zentralkörper",
+              "Ynderal"
+            ],
+            [
+              "Große Halbachse",
+              "570.426 km"
+            ],
+            [
+              "Umlaufzeit",
+              "8,8 Tage"
+            ],
+            [
+              "Durchmesser",
+              "1.020 km"
+            ],
+            [
+              "Masse",
+              "2,99 · 10^20 kg"
+            ],
+            [
+              "Schwerkraft",
+              "7,65 cm/s²"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -197 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Iskara",
+          "text": [
+            "Das Teryn-System ist die Heimat der Solitiden: Ihr Planet Iskara umkreist Teryn."
+          ],
+          "verweise": [
+            [
+              "Iskara",
+              "inhalte/himmelskoerper/planeten/details/iskara/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Solitiden",
+              "inhalte/spezies/Mentale Spezies/Solitiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Teshil im Teryn-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Ynderal"
+            ],
+            [
+              "Große Halbachse",
+              "570.426 km"
+            ],
+            [
+              "Exzentrizität",
+              "0,009"
+            ],
+            [
+              "Bahnneigung",
+              "0,8°"
+            ],
+            [
+              "Umlaufzeit",
+              "8,8 Tage"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Teryn · Stern",
+              "Orangefarbener Hauptreihenstern (K4 V)"
+            ],
+            [
+              "Dareth · 0,15 AE",
+              "Heißer Gesteinsplanet"
+            ],
+            [
+              "Nura · 0,34 AE",
+              "Heißer terrestrischer Planet"
+            ],
+            [
+              "Iskara · 0,61 AE",
+              "Bewohnter terrestrischer Silikatplanet"
+            ],
+            [
+              "Veldros · 1,08 AE",
+              "Kalte Supererde"
+            ],
+            [
+              "Saevor · 2,84 AE",
+              "Gasriese"
+            ],
+            [
+              "Ynderal · 5,9 AE",
+              "Eisreicher Riesenplanet"
+            ],
+            [
+              "Veylan-Asteroidengürtel · 1,7–2 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußere Kleinkörperregion · 14–38 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Teryn",
+              "inhalte/himmelskoerper/sterne/details/teryn/hauptseite/index.html"
+            ],
+            [
+              "Dareth",
+              "inhalte/himmelskoerper/planeten/details/dareth/hauptseite/index.html"
+            ],
+            [
+              "Nura",
+              "inhalte/himmelskoerper/planeten/details/nura/hauptseite/index.html"
+            ],
+            [
+              "Iskara",
+              "inhalte/himmelskoerper/planeten/details/iskara/hauptseite/index.html"
+            ],
+            [
+              "Veldros",
+              "inhalte/himmelskoerper/planeten/details/veldros/hauptseite/index.html"
+            ],
+            [
+              "Saevor",
+              "inhalte/himmelskoerper/planeten/details/saevor/hauptseite/index.html"
+            ],
+            [
+              "Ynderal",
+              "inhalte/himmelskoerper/planeten/details/ynderal/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Teshil.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "510 km"
+            ],
+            [
+              "Masse",
+              "2,99 · 10^20 kg"
+            ],
+            [
+              "Mittlere Dichte",
+              "0,54 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "0,08 m/s² (0,008 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "0,28 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Teshil.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Teshil ist geologisch weitgehend erstarrt; Einschläge haben seine Oberfläche geformt."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Teshil.",
+      "abschnitte": [
+        {
+          "titel": "Gashülle",
+          "text": [
+            "Teshil besitzt keine nennenswerte Atmosphäre – dafür ist die Schwerkraft zu gering."
+          ]
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Teshil.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 5,9 AE Abstand zu Teryn liegt die Gleichgewichtstemperatur von Teshil bei rund -197 °C – eisig kalt."
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Teshil.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Teshil entstand zusammen mit dem Teryn-System vor rund 6,1 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Teshil.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Ist der Mond eingefangen oder mit seinem Planeten entstanden?",
+            "Welche Spuren tragen seine ältesten Krater?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Teshil ist mit allen Bahndaten im Teryn-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=teryn-stern&objekt=teryn-teshil"
+            ]
+          ]
+        },
+        {
+          "titel": "Untersuchung im Teryn-System",
+          "text": [
+            "Konzentriert sich das Oberflächeneis in Kratern oder erstreckt es sich über größere Bereiche?"
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Teshil.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Teshil ist ein kleiner gemischter Fels-Eismond auf einer mittleren Bahn um Ynderal."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Teshil.",
+      "abschnitte": [
+        {
+          "titel": "Illustrationsmotiv",
+          "bild": true,
+          "bildtext": "Illustration anhand eines vorhandenen Motivs. Sie zeigt den Himmelskörpertyp und keine bestätigten Oberflächendetails."
+        }
+      ]
+    }
+  }
+}

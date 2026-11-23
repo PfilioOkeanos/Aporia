@@ -1,0 +1,695 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Sereth",
+  "genitiv": "von Sereth",
+  "dossierName": "Sereth-Dossier",
+  "klasse": "Gesteinsplanet",
+  "intro": "Sereth ist ein heißer, vulkanisch aktiver Gesteinsplanet mit Lavabecken, Calderen und vulkanischen Hochländern. Seine dichte, nicht atembare Atmosphäre enthält Kohlendioxid und schwefelhaltige Gase. Sereth umkreist Terev in 0,42 AE Abstand und braucht für einen Umlauf 106,8 Tage.",
+  "globusDaten": {
+    "planet": "vulkanplanet-unter-schwefelgelben-wolken",
+    "klasse": "Gestein",
+    "radius": 6116000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=nerath-stern&objekt=nerath-sereth",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-3E8A087B66"
+    ],
+    [
+      "Typ",
+      "Gesteinsplanet"
+    ],
+    [
+      "Sternsystem",
+      "Terev-System"
+    ],
+    [
+      "Zentralkörper",
+      "Terev"
+    ],
+    [
+      "Große Halbachse",
+      "0,42 AE"
+    ],
+    [
+      "Umlaufzeit",
+      "106,8 Tage"
+    ],
+    [
+      "Durchmesser",
+      "12.232 km"
+    ],
+    [
+      "Masse",
+      "0,82 Erdmassen"
+    ],
+    [
+      "Schwerkraft",
+      "0,89 g"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. 20 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Terev-System"
+    ],
+    [
+      "Zentralstern",
+      "Terev",
+      "inhalte/himmelskoerper/sterne/details/terev/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "0,42 AE"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Sereth im Terev-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=nerath-stern&objekt=nerath-sereth",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Terev",
+      "href": "inhalte/himmelskoerper/sterne/details/terev/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Synaptoiden",
+      "titel": "Nerath",
+      "href": "inhalte/himmelskoerper/planeten/details/nerath/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Synaptoiden",
+      "href": "inhalte/spezies/Mentale Spezies/Synaptoiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Terev-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=nerath-stern&objekt=nerath-sereth"
+    },
+    {
+      "titel": "Speziesdossier Synaptoiden",
+      "href": "inhalte/spezies/Mentale Spezies/Synaptoiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#0a0a05",
+      "tiefe": "#17150a",
+      "akzent": "#e1d795",
+      "sand": "#e3d18d",
+      "moos": "#bdd173",
+      "ozean": "#97b77c",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#5e5729"
+    }
+  },
+  "kapitel": {
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Sereth auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Sereth",
+          "text": [
+            "Sereth ist ein heißer, vulkanisch aktiver Gesteinsplanet mit Lavabecken, Calderen und vulkanischen Hochländern. Seine dichte, nicht atembare Atmosphäre enthält Kohlendioxid und schwefelhaltige Gase.",
+            "Sereth umkreist Terev in 0,42 AE Abstand und braucht für einen Umlauf 106,8 Tage."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Gesteinsplanet"
+            ],
+            [
+              "Sternsystem",
+              "Terev-System"
+            ],
+            [
+              "Zentralkörper",
+              "Terev"
+            ],
+            [
+              "Große Halbachse",
+              "0,42 AE"
+            ],
+            [
+              "Umlaufzeit",
+              "106,8 Tage"
+            ],
+            [
+              "Durchmesser",
+              "12.232 km"
+            ],
+            [
+              "Masse",
+              "0,82 Erdmassen"
+            ],
+            [
+              "Schwerkraft",
+              "0,89 g"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. 20 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Nerath",
+          "text": [
+            "Das Terev-System ist die Heimat der Synaptoiden: Ihr Planet Nerath umkreist Terev."
+          ],
+          "verweise": [
+            [
+              "Nerath",
+              "inhalte/himmelskoerper/planeten/details/nerath/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Synaptoiden",
+              "inhalte/spezies/Mentale Spezies/Synaptoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Sereth im Terev-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Terev"
+            ],
+            [
+              "Große Halbachse",
+              "0,42 AE (62,8 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,05"
+            ],
+            [
+              "Bahnneigung",
+              "1,2°"
+            ],
+            [
+              "Umlaufzeit",
+              "106,8 Tage"
+            ],
+            [
+              "Einstrahlung",
+              "3,509-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Am Himmel von Sereth",
+          "text": [
+            "Terev erscheint von hier aus etwa 1,19° groß (die Sonne von der Erde: 0,53°)."
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Terev · Stern",
+              "Orangegelber Zwerg (K0 V)"
+            ],
+            [
+              "Vaskir · 0,16 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Sereth · 0,42 AE · dieses Dossier",
+              "Gesteinsplanet"
+            ],
+            [
+              "Nerath · 0,93 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Talvek · 1,57 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Urakan · 4,4 AE",
+              "Gasriese"
+            ],
+            [
+              "Oryss · 9,3 AE",
+              "Eisriese"
+            ],
+            [
+              "Veyl · 22,8 AE",
+              "Eisplanet"
+            ],
+            [
+              "Relt · 44 AE",
+              "Zwergplanet"
+            ],
+            [
+              "Othir · 52 AE",
+              "Zwergplanet"
+            ],
+            [
+              "Skalenband · 2,2–3,2 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Taren-Saum · 38–65 AE",
+              "Kleinkörpergürtel"
+            ],
+            [
+              "Terev-Fernwolke · 1.500–8.000 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Terev",
+              "inhalte/himmelskoerper/sterne/details/terev/hauptseite/index.html"
+            ],
+            [
+              "Vaskir",
+              "inhalte/himmelskoerper/planeten/details/vaskir/hauptseite/index.html"
+            ],
+            [
+              "Nerath",
+              "inhalte/himmelskoerper/planeten/details/nerath/hauptseite/index.html"
+            ],
+            [
+              "Talvek",
+              "inhalte/himmelskoerper/planeten/details/talvek/hauptseite/index.html"
+            ],
+            [
+              "Urakan",
+              "inhalte/himmelskoerper/planeten/details/urakan/hauptseite/index.html"
+            ],
+            [
+              "Oryss",
+              "inhalte/himmelskoerper/planeten/details/oryss/hauptseite/index.html"
+            ],
+            [
+              "Veyl",
+              "inhalte/himmelskoerper/planeten/details/veyl/hauptseite/index.html"
+            ],
+            [
+              "Relt",
+              "inhalte/himmelskoerper/zwergplaneten/details/relt/hauptseite/index.html"
+            ],
+            [
+              "Othir",
+              "inhalte/himmelskoerper/zwergplaneten/details/othir/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Sereth.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "6.116 km"
+            ],
+            [
+              "Masse",
+              "0,82 Erdmassen"
+            ],
+            [
+              "Mittlere Dichte",
+              "5,11 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "8,73 m/s² (0,89 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "10,34 km/s"
+            ]
+          ],
+          "vergleich": {
+            "mit": "Erde",
+            "werte": [
+              [
+                "Durchmesser",
+                12232,
+                12742,
+                "km"
+              ],
+              [
+                "Masse",
+                0.82,
+                1,
+                "Erdmassen"
+              ],
+              [
+                "Schwerkraft",
+                0.89,
+                1,
+                "g"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "Planetare Struktur": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Planetare Struktur von Sereth.",
+      "abschnitte": [
+        {
+          "titel": "Schalenbau",
+          "schichten": [
+            [
+              "Kruste",
+              "Silikatgestein"
+            ],
+            [
+              "Mantel",
+              "Dichteres Silikatgestein"
+            ],
+            [
+              "Kern",
+              "Eisen und Nickel"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geografie": {
+      "gruppe": "Natur",
+      "icon": "△",
+      "intro": "Geografie von Sereth.",
+      "abschnitte": [
+        {
+          "titel": "Oberfläche",
+          "text": [
+            "Die Oberfläche von Sereth ist gemäßigt."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Sereth.",
+      "abschnitte": [
+        {
+          "titel": "Gashülle",
+          "text": [
+            "Sereth hält eine dünne, kalte Gashülle fest."
+          ],
+          "balken": {
+            "werte": [
+              [
+                "Kohlendioxid",
+                62
+              ],
+              [
+                "Stickstoff",
+                33
+              ],
+              [
+                "Argon",
+                5
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Sereth.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 0,42 AE Abstand zu Terev liegt die Gleichgewichtstemperatur von Sereth bei rund 20 °C – gemäßigt."
+          ]
+        }
+      ]
+    },
+    "Gewässer": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gewässer von Sereth.",
+      "abschnitte": [
+        {
+          "titel": "Wasser",
+          "text": [
+            "Offene Gewässer sind nicht verzeichnet."
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Sereth.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Sereth ist groß genug, um im Inneren noch Wärme zu speichern; Spuren alter vulkanischer Tätigkeit sind wahrscheinlich."
+          ]
+        },
+        {
+          "titel": "Vulkanismus",
+          "text": [
+            "Sereth besitzt mehrere aktive vulkanische Provinzen. Die innere Wärme stammt aus seiner thermischen Entwicklung und radioaktivem Zerfall; Gesteinsschmelzen steigen an Schwächezonen zur Oberfläche auf."
+          ]
+        }
+      ]
+    },
+    "Biosphäre": {
+      "gruppe": "Natur",
+      "icon": "❧",
+      "intro": "Biosphäre von Sereth.",
+      "abschnitte": [
+        {
+          "titel": "Leben",
+          "text": [
+            "Auf Sereth ist kein Leben verzeichnet."
+          ]
+        }
+      ]
+    },
+    "Spezies": {
+      "gruppe": "Zivilisation",
+      "icon": "✿",
+      "intro": "Spezies von Sereth.",
+      "abschnitte": [
+        {
+          "titel": "Bewohner",
+          "text": [
+            "Sereth ist keine Heimat einer intelligenten Spezies."
+          ]
+        },
+        {
+          "titel": "Im System von Nerath",
+          "text": [
+            "Das Terev-System ist die Heimat der Synaptoiden: Ihr Planet Nerath umkreist Terev."
+          ],
+          "verweise": [
+            [
+              "Nerath",
+              "inhalte/himmelskoerper/planeten/details/nerath/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Synaptoiden",
+              "inhalte/spezies/Mentale Spezies/Synaptoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Zivilisation": {
+      "gruppe": "Zivilisation",
+      "icon": "▥",
+      "intro": "Zivilisation von Sereth.",
+      "abschnitte": [
+        {
+          "titel": "Siedlungen",
+          "text": [
+            "Für Sereth sind keine dauerhaften Siedlungen verzeichnet."
+          ]
+        },
+        {
+          "titel": "Im System von Nerath",
+          "text": [
+            "Das Terev-System ist die Heimat der Synaptoiden: Ihr Planet Nerath umkreist Terev."
+          ],
+          "verweise": [
+            [
+              "Nerath",
+              "inhalte/himmelskoerper/planeten/details/nerath/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Synaptoiden",
+              "inhalte/spezies/Mentale Spezies/Synaptoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Sereth.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Sereth entstand zusammen mit dem Terev-System vor rund 5,6 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Fraktionen": {
+      "gruppe": "Zivilisation",
+      "icon": "◇",
+      "intro": "Fraktionen von Sereth.",
+      "abschnitte": [
+        {
+          "titel": "Ansprüche",
+          "text": [
+            "Für Sereth sind keine Fraktionsansprüche verzeichnet."
+          ]
+        }
+      ]
+    },
+    "Rohstoffe": {
+      "gruppe": "Weitere",
+      "icon": "⬡",
+      "intro": "Rohstoffe von Sereth.",
+      "abschnitte": [
+        {
+          "titel": "Rohstoffe",
+          "liste": [
+            "Silikatgestein",
+            "Metallerze"
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Sereth.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Wie ist der innere Aufbau beschaffen?",
+            "Gab es früher eine dichtere Atmosphäre?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Sereth ist mit allen Bahndaten im Terev-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=nerath-stern&objekt=nerath-sereth"
+            ]
+          ]
+        },
+        {
+          "titel": "Forschung",
+          "text": [
+            "Sereth ist ein wichtiges Ziel für Vulkanologie, Atmosphärenchemie und Hochtemperaturtechnik."
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Sereth.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Sereth ist ein heißer, vulkanisch aktiver Gesteinsplanet mit Lavabecken, Calderen und vulkanischen Hochländern. Seine dichte, nicht atembare Atmosphäre enthält Kohlendioxid und schwefelhaltige Gase."
+          ]
+        },
+        {
+          "titel": "Besondere Ereignisse",
+          "karten": [
+            {
+              "titel": "Große Eruptionsperioden",
+              "text": "Mehrere Vulkane einer Region bleiben lange aktiv."
+            },
+            {
+              "titel": "Schwefelhaltige Wolken",
+              "text": "Vulkanische Emissionen verändern die Atmosphäre regional."
+            },
+            {
+              "titel": "Vulkanische Blitze",
+              "text": "Aschewolken erzeugen elektrische Entladungen."
+            },
+            {
+              "titel": "Sturmgebiete",
+              "text": "Temperatur- und Druckunterschiede treiben starke Strömungen."
+            }
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Sereth.",
+      "abschnitte": [
+        {
+          "titel": "Sereth – Archivbild",
+          "bild": true,
+          "bildtext": "Sereth"
+        }
+      ]
+    }
+  }
+}

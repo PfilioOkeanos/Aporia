@@ -1,0 +1,78 @@
+.dossier-kapitelschalter {display:inline-flex;align-items:baseline;gap:.55em;border:0;background:transparent;color:inherit;font:inherit;letter-spacing:inherit;text-transform:inherit;text-align:start;padding:0;cursor:pointer}
+.dossier-kapitelschalter::after {content:"▸";font-size:.72em}
+.dossier-kapitelschalter[aria-expanded="true"]::after {transform:rotate(90deg)}
+.dossier-kapitelschalter:focus-visible {outline:2px solid currentColor;outline-offset:.2em}
+[data-dossier-geschlossen] {display:none!important}
+
+.dossier-medienfolge:has(> .dossier-medienbereich) { grid-template-columns:minmax(0,1fr); }
+.dossier-medienbereich.dossier-medien-zu { min-height:0; height:auto; align-self:start; }
+.dossier-medien-zu > :not(h2) { display:none!important; }
+.dossier-medien-zu > h2 { margin-block-end:0; }
+.dossier-medienbereich h2 button.dossier-medienschalter { display:flex; align-items:center; width:100%; text-align:start; color:inherit; font:inherit; background:transparent; border:0; }
+.dossier-medienschalter::after { margin-inline-start:auto; }
+
+/* Die Hauptleiste und der Inhaltsrahmen teilen sich die verfügbare Breite. */
+body:has(main.dossier-lesebereich) > .aporia-page-frame {
+    display:flex;
+    align-items:flex-start;
+    margin:0;
+    padding:0;
+    width:100%;
+    max-width:none;
+}
+.aporia-page-frame > main.dossier-lesebereich {
+    flex:1 1 0%;
+    box-sizing:border-box;
+    min-width:0;
+    width:auto;
+    max-width:none;
+    margin:0;
+    padding:0 clamp(.75rem,1.4vw,1.5rem) 2rem;
+}
+body:has(main nav.dossier-reiter) > .aporia-auto-page-frame:has(> .species-section-nav) {
+    display:flex;
+    align-items:flex-start;
+}
+body:has(main nav.dossier-reiter) .species-section-nav {display:none;}
+body > :is(.aporia-page-frame,.aporia-auto-page-frame) > main {
+    min-width:0;
+    max-width:none;
+}
+main nav:is([class$="-reiter"],.thl-reiterleiste,[class*="-reiter "]) {
+    max-width:100%;
+    box-sizing:border-box;
+    scroll-margin-block-start:.5rem;
+}
+html:has(main nav:is([class$="-reiter"],.thl-reiterleiste)) {
+    scroll-padding-block-start:calc(var(--aporia-topbar-height, 0px) + .5rem);
+}
+@media (min-width:761px) {
+    main nav:is([class$="-reiter"],.thl-reiterleiste,[class*="-reiter "]) {flex-wrap:wrap;}
+}
+@media (max-width:760px) {
+    body:has(main.dossier-lesebereich) > .aporia-page-frame,
+    body:has(main nav.dossier-reiter) > .aporia-auto-page-frame:has(> .species-section-nav) {display:block;}
+    body:has(main.dossier-lesebereich) > .aporia-page-frame > #aporia-sidebar-host {width:100%;height:auto;}
+    body:has(main.dossier-lesebereich) > .aporia-page-frame .aporia-sidebar {position:relative;top:0;max-height:42dvh;}
+}
+
+main:has(.dossier-seitennavigation) { min-height:calc(100dvh - var(--aporia-topbar-height, 0px)); box-sizing:border-box; }
+.dossier-seitenkopf {width:100%;min-width:0;grid-column:1/-1;position:relative;}
+main .dossier-seitenkopf > .dossier-seitennavigation { position:relative; inset:auto; width:100%; margin:0 0 1rem; }
+main .dossier-titelmotiv {display:block;width:100%;height:clamp(10rem,26vw,23rem);object-fit:cover;}
+.dossier-klappkarte:has(> .dossier-infokarte) {display:block;min-height:0;height:auto;align-self:start;}
+.dossier-infokarte {width:100%;box-sizing:border-box;}
+.dossier-infokarte > summary {display:list-item;cursor:pointer;padding:.55rem .7rem;}
+.dossier-infokarte > summary > :is(h2,h3,h4) {display:inline;margin:0;}
+.dossier-infokarte:not([open]) > :not(summary) {display:none!important;}
+.dossier-seitennavigation {min-width:0;}
+@media(max-width:760px){main nav.dossier-seitennavigation {display:flex;flex-wrap:nowrap;overflow-x:auto;max-width:100%;}main nav.dossier-seitennavigation a{flex-shrink:0;}}
+main .dossier-titelbereich:has(> .dossier-archivmotiv) {position:relative;isolation:isolate;overflow:hidden;min-height:clamp(10rem,24vw,21rem);}
+main .dossier-titelbereich > .dossier-archivmotiv {position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.24;z-index:-1;pointer-events:none;}
+
+
+/* Statischer Kopf der Humanoiden: Titelmotiv und Navigation bilden die erste Rasterzeile. */
+main > .human-seitenkopf { display:flex; flex-direction:column; grid-column:1/-1; grid-row:1; gap:0; }
+main .human-seitenkopf > .dossier-panorama { height:clamp(12rem,33vw,27rem); overflow:hidden; background:#101b25; }
+main .human-seitenkopf > .dossier-panorama img { width:100%; height:100%; object-fit:contain; display:block; }
+main .human-seitenkopf > nav { margin:0; }

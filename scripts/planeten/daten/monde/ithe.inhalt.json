@@ -1,0 +1,514 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Ithe",
+  "genitiv": "von Ithe",
+  "dossierName": "Ithe-Dossier",
+  "klasse": "Mond",
+  "intro": "Ithe ist der einzige Mond Lymaras, ein heller Eis-Gesteins-Mond. Seine schwachen Gezeiten bewegen die Lagunen und Deltas. Ithe umkreist Lymara in 18 Tage.",
+  "globusDaten": {
+    "planet": "cindovar-der-lebende-mond",
+    "klasse": "Gestein",
+    "radius": 870000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=lymara-stern&objekt=lymara-ithe",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-42A6C9278D"
+    ],
+    [
+      "Typ",
+      "Mond"
+    ],
+    [
+      "Sternsystem",
+      "Narev-System"
+    ],
+    [
+      "Zentralkörper",
+      "Lymara"
+    ],
+    [
+      "Große Halbachse",
+      "267.064 km"
+    ],
+    [
+      "Umlaufzeit",
+      "18 Tage"
+    ],
+    [
+      "Durchmesser",
+      "1.740 km"
+    ],
+    [
+      "Masse",
+      "0,325 Mondmassen"
+    ],
+    [
+      "Schwerkraft",
+      "0,21 g"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -21 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Narev-System"
+    ],
+    [
+      "Zentralstern",
+      "Narev",
+      "inhalte/himmelskoerper/sterne/details/narev/hauptseite/index.html"
+    ],
+    [
+      "Umläuft",
+      "Lymara",
+      "inhalte/himmelskoerper/planeten/details/lymara/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "267.064 km"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Ithe im Narev-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=lymara-stern&objekt=lymara-ithe",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Narev",
+      "href": "inhalte/himmelskoerper/sterne/details/narev/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◍",
+      "art": "Mutterplanet",
+      "titel": "Lymara",
+      "href": "inhalte/himmelskoerper/planeten/details/lymara/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Plasmoiden",
+      "titel": "Lymara",
+      "href": "inhalte/himmelskoerper/planeten/details/lymara/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Plasmoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Plasmoiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Narev-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=lymara-stern&objekt=lymara-ithe"
+    },
+    {
+      "titel": "Speziesdossier Plasmoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Plasmoiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#09090a",
+      "tiefe": "#141415",
+      "akzent": "#d1d1d7",
+      "sand": "#d4cbb7",
+      "moos": "#aec9ad",
+      "ozean": "#8bb0ce",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#535357"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Astronomie"
+      ],
+      [
+        "Planet",
+        "Mutterplanet"
+      ],
+      [
+        "Kräfte",
+        "Gezeiten"
+      ],
+      [
+        "Tiefe",
+        "Geologie"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Mutterplanet": {
+      "gruppe": "Wissenschaft",
+      "icon": "◐",
+      "intro": "Mutterplanet von Ithe.",
+      "abschnitte": [
+        {
+          "titel": "Lymara",
+          "text": [
+            "Lymara ist die wasserreiche Heimatwelt der Plasmoiden mit Flusslandschaften, Seen, Lagunen, Höhlengewässern und nebelreichen Hochländern."
+          ],
+          "daten": [
+            [
+              "Typ",
+              "Ozeanplanet"
+            ],
+            [
+              "Durchmesser",
+              "11.980 km"
+            ],
+            [
+              "Abstand des Mondes",
+              "267.064 km (44,6 Planetenradien)"
+            ]
+          ],
+          "verweise": [
+            [
+              "Lymara",
+              "inhalte/himmelskoerper/planeten/details/lymara/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Gezeiten": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gezeiten von Ithe.",
+      "abschnitte": [
+        {
+          "titel": "Gezeitenkräfte",
+          "text": [
+            "Auf seiner Bahn in 267.064 km Abstand wirken starke Gezeitenkräfte von Lymara auf Ithe. Die leicht exzentrische Bahn (e = 0,03) knetet das Innere bei jedem Umlauf."
+          ]
+        }
+      ]
+    },
+    "Gebundene Rotation": {
+      "gruppe": "Wissenschaft",
+      "icon": "↻",
+      "intro": "Gebundene Rotation von Ithe.",
+      "abschnitte": [
+        {
+          "titel": "Rotation",
+          "text": [
+            "Ithe wendet Lymara vermutlich stets dieselbe Seite zu: Ein Tag dauert so lange wie ein Umlauf – 18 Tage."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Ithe auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Ithe",
+          "text": [
+            "Ithe ist der einzige Mond Lymaras, ein heller Eis-Gesteins-Mond. Seine schwachen Gezeiten bewegen die Lagunen und Deltas.",
+            "Ithe umkreist Lymara in 18 Tage."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Mond"
+            ],
+            [
+              "Sternsystem",
+              "Narev-System"
+            ],
+            [
+              "Zentralkörper",
+              "Lymara"
+            ],
+            [
+              "Große Halbachse",
+              "267.064 km"
+            ],
+            [
+              "Umlaufzeit",
+              "18 Tage"
+            ],
+            [
+              "Durchmesser",
+              "1.740 km"
+            ],
+            [
+              "Masse",
+              "0,325 Mondmassen"
+            ],
+            [
+              "Schwerkraft",
+              "0,21 g"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -21 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Lymara",
+          "text": [
+            "Das Narev-System ist die Heimat der Plasmoiden: Ihr Planet Lymara umkreist Narev, und Ithe ist einer seiner Monde."
+          ],
+          "verweise": [
+            [
+              "Lymara",
+              "inhalte/himmelskoerper/planeten/details/lymara/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Plasmoiden",
+              "inhalte/spezies/Biologische Spezies/Plasmoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Ithe im Narev-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Lymara"
+            ],
+            [
+              "Große Halbachse",
+              "267.064 km"
+            ],
+            [
+              "Exzentrizität",
+              "0,03"
+            ],
+            [
+              "Bahnneigung",
+              "4°"
+            ],
+            [
+              "Umlaufzeit",
+              "18 Tage"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Narev · Stern",
+              "Orangefarbener Zwerg (K0 V)"
+            ],
+            [
+              "Narev I · 0,33 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Lymara · 0,85 AE",
+              "Ozeanplanet"
+            ],
+            [
+              "Narev III · 2,9 AE",
+              "Gasriese"
+            ],
+            [
+              "Narev IV · 8,2 AE",
+              "Eisriese"
+            ],
+            [
+              "Nebelgürtel · 1,5–2,3 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 32–46 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Narev",
+              "inhalte/himmelskoerper/sterne/details/narev/hauptseite/index.html"
+            ],
+            [
+              "Narev I",
+              "inhalte/himmelskoerper/planeten/details/narev-i/hauptseite/index.html"
+            ],
+            [
+              "Lymara",
+              "inhalte/himmelskoerper/planeten/details/lymara/hauptseite/index.html"
+            ],
+            [
+              "Narev III",
+              "inhalte/himmelskoerper/planeten/details/narev-iii/hauptseite/index.html"
+            ],
+            [
+              "Narev IV",
+              "inhalte/himmelskoerper/planeten/details/narev-iv/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Ithe.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "870 km"
+            ],
+            [
+              "Masse",
+              "0,325 Mondmassen"
+            ],
+            [
+              "Mittlere Dichte",
+              "8,66 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "2,1 m/s² (0,215 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "1,91 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Ithe.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Ithe ist geologisch weitgehend erstarrt; Einschläge haben seine Oberfläche geformt."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Ithe.",
+      "abschnitte": [
+        {
+          "titel": "Gashülle",
+          "text": [
+            "Ithe besitzt keine nennenswerte Atmosphäre – dafür ist die Schwerkraft zu gering."
+          ]
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Ithe.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 0,852 AE Abstand zu Narev liegt die Gleichgewichtstemperatur von Ithe bei rund -21 °C – kalt."
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Ithe.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Ithe entstand zusammen mit dem Narev-System vor rund 4,3 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Ithe.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Ist der Mond eingefangen oder mit seinem Planeten entstanden?",
+            "Welche Spuren tragen seine ältesten Krater?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Ithe ist mit allen Bahndaten im Narev-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=lymara-stern&objekt=lymara-ithe"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Ithe.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Ithe ist der einzige Mond Lymaras, ein heller Eis-Gesteins-Mond. Seine schwachen Gezeiten bewegen die Lagunen und Deltas."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Ithe.",
+      "abschnitte": [
+        {
+          "titel": "Ithe – Archivbild",
+          "bild": true,
+          "bildtext": "Ithe"
+        }
+      ]
+    }
+  }
+}

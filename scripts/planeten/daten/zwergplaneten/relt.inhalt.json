@@ -1,0 +1,486 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Relt",
+  "genitiv": "von Relt",
+  "dossierName": "Relt-Dossier",
+  "klasse": "Zwergplanet",
+  "intro": "Relt ist ein dunkler, eisreicher Zwergplanetkandidat im Taren-Saum mit stark verkraterter Oberfläche. Relt umkreist Terev in 44 AE Abstand und braucht für einen Umlauf 313,6 Jahre.",
+  "globusDaten": {
+    "planet": "dunkle-kraterwelt-im-all",
+    "klasse": "Gestein",
+    "radius": 640000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=nerath-stern&objekt=nerath-relt",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-4F9AC962E4"
+    ],
+    [
+      "Typ",
+      "Zwergplanet"
+    ],
+    [
+      "Sternsystem",
+      "Terev-System"
+    ],
+    [
+      "Zentralkörper",
+      "Terev"
+    ],
+    [
+      "Große Halbachse",
+      "44 AE"
+    ],
+    [
+      "Umlaufzeit",
+      "313,6 Jahre"
+    ],
+    [
+      "Durchmesser",
+      "1.280 km"
+    ],
+    [
+      "Masse",
+      "2,39 · 10^21 kg"
+    ],
+    [
+      "Schwerkraft",
+      "0,04 g"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -237 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Terev-System"
+    ],
+    [
+      "Zentralstern",
+      "Terev",
+      "inhalte/himmelskoerper/sterne/details/terev/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "44 AE"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Relt im Terev-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=nerath-stern&objekt=nerath-relt",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Terev",
+      "href": "inhalte/himmelskoerper/sterne/details/terev/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Synaptoiden",
+      "titel": "Nerath",
+      "href": "inhalte/himmelskoerper/planeten/details/nerath/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Synaptoiden",
+      "href": "inhalte/spezies/Mentale Spezies/Synaptoiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Terev-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=nerath-stern&objekt=nerath-relt"
+    },
+    {
+      "titel": "Speziesdossier Synaptoiden",
+      "href": "inhalte/spezies/Mentale Spezies/Synaptoiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#040404",
+      "tiefe": "#0a0909",
+      "akzent": "#928e8e",
+      "sand": "#9a9388",
+      "moos": "#747d6e",
+      "ozean": "#5d6a74",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#272525"
+    }
+  },
+  "kapitel": {
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Relt auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Relt",
+          "text": [
+            "Relt ist ein dunkler, eisreicher Zwergplanetkandidat im Taren-Saum mit stark verkraterter Oberfläche.",
+            "Relt umkreist Terev in 44 AE Abstand und braucht für einen Umlauf 313,6 Jahre."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Zwergplanet"
+            ],
+            [
+              "Sternsystem",
+              "Terev-System"
+            ],
+            [
+              "Zentralkörper",
+              "Terev"
+            ],
+            [
+              "Große Halbachse",
+              "44 AE"
+            ],
+            [
+              "Umlaufzeit",
+              "313,6 Jahre"
+            ],
+            [
+              "Durchmesser",
+              "1.280 km"
+            ],
+            [
+              "Masse",
+              "2,39 · 10^21 kg"
+            ],
+            [
+              "Schwerkraft",
+              "0,04 g"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -237 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Nerath",
+          "text": [
+            "Das Terev-System ist die Heimat der Synaptoiden: Ihr Planet Nerath umkreist Terev."
+          ],
+          "verweise": [
+            [
+              "Nerath",
+              "inhalte/himmelskoerper/planeten/details/nerath/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Synaptoiden",
+              "inhalte/spezies/Mentale Spezies/Synaptoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Relt im Terev-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Terev"
+            ],
+            [
+              "Große Halbachse",
+              "44 AE (6.582,4 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,1"
+            ],
+            [
+              "Bahnneigung",
+              "8°"
+            ],
+            [
+              "Umlaufzeit",
+              "313,6 Jahre"
+            ],
+            [
+              "Einstrahlung",
+              "0-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Am Himmel von Relt",
+          "text": [
+            "Terev erscheint von hier aus etwa 0,01° groß (die Sonne von der Erde: 0,53°)."
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Terev · Stern",
+              "Orangegelber Zwerg (K0 V)"
+            ],
+            [
+              "Vaskir · 0,16 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Sereth · 0,42 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Nerath · 0,93 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Talvek · 1,57 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Urakan · 4,4 AE",
+              "Gasriese"
+            ],
+            [
+              "Oryss · 9,3 AE",
+              "Eisriese"
+            ],
+            [
+              "Veyl · 22,8 AE",
+              "Eisplanet"
+            ],
+            [
+              "Relt · 44 AE · dieses Dossier",
+              "Zwergplanet"
+            ],
+            [
+              "Othir · 52 AE",
+              "Zwergplanet"
+            ],
+            [
+              "Skalenband · 2,2–3,2 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Taren-Saum · 38–65 AE",
+              "Kleinkörpergürtel"
+            ],
+            [
+              "Terev-Fernwolke · 1.500–8.000 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Terev",
+              "inhalte/himmelskoerper/sterne/details/terev/hauptseite/index.html"
+            ],
+            [
+              "Vaskir",
+              "inhalte/himmelskoerper/planeten/details/vaskir/hauptseite/index.html"
+            ],
+            [
+              "Sereth",
+              "inhalte/himmelskoerper/planeten/details/sereth/hauptseite/index.html"
+            ],
+            [
+              "Nerath",
+              "inhalte/himmelskoerper/planeten/details/nerath/hauptseite/index.html"
+            ],
+            [
+              "Talvek",
+              "inhalte/himmelskoerper/planeten/details/talvek/hauptseite/index.html"
+            ],
+            [
+              "Urakan",
+              "inhalte/himmelskoerper/planeten/details/urakan/hauptseite/index.html"
+            ],
+            [
+              "Oryss",
+              "inhalte/himmelskoerper/planeten/details/oryss/hauptseite/index.html"
+            ],
+            [
+              "Veyl",
+              "inhalte/himmelskoerper/planeten/details/veyl/hauptseite/index.html"
+            ],
+            [
+              "Othir",
+              "inhalte/himmelskoerper/zwergplaneten/details/othir/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Relt.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "640 km"
+            ],
+            [
+              "Masse",
+              "2,39 · 10^21 kg"
+            ],
+            [
+              "Mittlere Dichte",
+              "2,18 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "0,39 m/s² (0,04 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "0,71 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Planetare Struktur": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Planetare Struktur von Relt.",
+      "abschnitte": [
+        {
+          "titel": "Schalenbau",
+          "schichten": [
+            [
+              "Kruste",
+              "Silikatgestein"
+            ],
+            [
+              "Mantel",
+              "Dichteres Silikatgestein"
+            ],
+            [
+              "Kern",
+              "Eisen und Nickel"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Relt.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Relt ist geologisch weitgehend erstarrt; Einschläge haben seine Oberfläche geformt."
+          ]
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Relt.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 44 AE Abstand zu Terev liegt die Gleichgewichtstemperatur von Relt bei rund -237 °C – eisig kalt."
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Relt.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Relt entstand zusammen mit dem Terev-System vor rund 5,6 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Relt.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Wie ist der innere Aufbau beschaffen?",
+            "Gab es früher eine dichtere Atmosphäre?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Relt ist mit allen Bahndaten im Terev-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=nerath-stern&objekt=nerath-relt"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Relt.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Relt ist ein dunkler, eisreicher Zwergplanetkandidat im Taren-Saum mit stark verkraterter Oberfläche."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Relt.",
+      "abschnitte": [
+        {
+          "titel": "Relt – Archivbild",
+          "bild": true,
+          "bildtext": "Relt"
+        }
+      ]
+    }
+  }
+}

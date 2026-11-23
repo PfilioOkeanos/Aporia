@@ -1,0 +1,649 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Skalenband",
+  "genitiv": "von Skalenband",
+  "dossierName": "Skalenband-Dossier",
+  "klasse": "Asteroidengürtel",
+  "intro": "Das Skalenband zwischen 2,15 und 3,15 AE besteht aus Gesteins-, Metall- und kohlenstoffreichen Kleinkörpern. Urakans Gravitation prägte seine Entwicklung; es ist kein überall dicht gefülltes Asteroidenfeld. Skalenband umgibt Terev im Terev-System.",
+  "globusDaten": {
+    "planet": "rhovans-staubiger-asteroidengurtel",
+    "klasse": "Gestein",
+    "radius": 1000000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=nerath-stern&objekt=nerath-skalenband",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-4DAEB99C86"
+    ],
+    [
+      "Typ",
+      "Asteroidengürtel"
+    ],
+    [
+      "Sternsystem",
+      "Terev-System"
+    ],
+    [
+      "Zentralkörper",
+      "Terev"
+    ],
+    [
+      "Ausdehnung",
+      "2,15–3,15 AE"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Terev-System"
+    ],
+    [
+      "Zentralstern",
+      "Terev",
+      "inhalte/himmelskoerper/sterne/details/terev/hauptseite/index.html"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Skalenband im Terev-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=nerath-stern&objekt=nerath-skalenband",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Terev",
+      "href": "inhalte/himmelskoerper/sterne/details/terev/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Synaptoiden",
+      "titel": "Nerath",
+      "href": "inhalte/himmelskoerper/planeten/details/nerath/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Synaptoiden",
+      "href": "inhalte/spezies/Mentale Spezies/Synaptoiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Terev-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=nerath-stern&objekt=nerath-skalenband"
+    },
+    {
+      "titel": "Speziesdossier Synaptoiden",
+      "href": "inhalte/spezies/Mentale Spezies/Synaptoiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#080706",
+      "tiefe": "#12100d",
+      "akzent": "#c3b6a9",
+      "sand": "#c8b599",
+      "moos": "#a2ab85",
+      "ozean": "#819495",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#494037"
+    },
+    "schichten": [
+      [
+        "Lage",
+        "Bahnen"
+      ],
+      [
+        "System",
+        "Planeten"
+      ],
+      [
+        "Dynamik",
+        "Stabilität"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Zentralsterne": {
+      "gruppe": "Wissenschaft",
+      "icon": "✦",
+      "intro": "Zentralsterne von Skalenband.",
+      "abschnitte": [
+        {
+          "titel": "Terev",
+          "text": [
+            "Terev ist ein orangegelber Hauptreihenstern der Spektralklasse K0 V mit 0,866 Sonnenmassen und rund 62 % der Sonnenleuchtkraft. Mit etwa 5,6 Milliarden Jahren befindet er sich in einer langfristig stabilen Entwicklungsphase; seine magnetische Aktivität ist moderat und zeitlich variabel. Er ist Heimatstern der Synaptoiden (Tavari) und Zentrum eines alten Systems mit sieben großen Planeten."
+          ],
+          "verweise": [
+            [
+              "Terev",
+              "inhalte/himmelskoerper/sterne/details/terev/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Planeten": {
+      "gruppe": "Wissenschaft",
+      "icon": "◍",
+      "intro": "Planeten von Skalenband.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Terev · Stern",
+              "Orangegelber Zwerg (K0 V)"
+            ],
+            [
+              "Vaskir · 0,16 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Sereth · 0,42 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Nerath · 0,93 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Talvek · 1,57 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Urakan · 4,4 AE",
+              "Gasriese"
+            ],
+            [
+              "Oryss · 9,3 AE",
+              "Eisriese"
+            ],
+            [
+              "Veyl · 22,8 AE",
+              "Eisplanet"
+            ],
+            [
+              "Relt · 44 AE",
+              "Zwergplanet"
+            ],
+            [
+              "Othir · 52 AE",
+              "Zwergplanet"
+            ],
+            [
+              "Skalenband · 2,2–3,2 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Taren-Saum · 38–65 AE",
+              "Kleinkörpergürtel"
+            ],
+            [
+              "Terev-Fernwolke · 1.500–8.000 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Terev",
+              "inhalte/himmelskoerper/sterne/details/terev/hauptseite/index.html"
+            ],
+            [
+              "Vaskir",
+              "inhalte/himmelskoerper/planeten/details/vaskir/hauptseite/index.html"
+            ],
+            [
+              "Sereth",
+              "inhalte/himmelskoerper/planeten/details/sereth/hauptseite/index.html"
+            ],
+            [
+              "Nerath",
+              "inhalte/himmelskoerper/planeten/details/nerath/hauptseite/index.html"
+            ],
+            [
+              "Talvek",
+              "inhalte/himmelskoerper/planeten/details/talvek/hauptseite/index.html"
+            ],
+            [
+              "Urakan",
+              "inhalte/himmelskoerper/planeten/details/urakan/hauptseite/index.html"
+            ],
+            [
+              "Oryss",
+              "inhalte/himmelskoerper/planeten/details/oryss/hauptseite/index.html"
+            ],
+            [
+              "Veyl",
+              "inhalte/himmelskoerper/planeten/details/veyl/hauptseite/index.html"
+            ],
+            [
+              "Relt",
+              "inhalte/himmelskoerper/zwergplaneten/details/relt/hauptseite/index.html"
+            ],
+            [
+              "Othir",
+              "inhalte/himmelskoerper/zwergplaneten/details/othir/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Bahnen": {
+      "gruppe": "Wissenschaft",
+      "icon": "◌",
+      "intro": "Bahnen von Skalenband.",
+      "abschnitte": [
+        {
+          "titel": "Lage",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Terev"
+            ],
+            [
+              "Ausdehnung",
+              "2,15–3,15 AE"
+            ]
+          ]
+        }
+      ]
+    },
+    "Stabilität": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚖",
+      "intro": "Stabilität von Skalenband.",
+      "abschnitte": [
+        {
+          "titel": "Stabilität",
+          "text": [
+            "Die Brocken von Skalenband bewegen sich auf stabilen Bahnen zwischen den Planeten; Resonanzen mit den großen Planeten formen die Ränder des Gebiets."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Skalenband auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Skalenband",
+          "text": [
+            "Das Skalenband zwischen 2,15 und 3,15 AE besteht aus Gesteins-, Metall- und kohlenstoffreichen Kleinkörpern. Urakans Gravitation prägte seine Entwicklung; es ist kein überall dicht gefülltes Asteroidenfeld.",
+            "Skalenband umgibt Terev im Terev-System."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Asteroidengürtel"
+            ],
+            [
+              "Sternsystem",
+              "Terev-System"
+            ],
+            [
+              "Zentralkörper",
+              "Terev"
+            ],
+            [
+              "Ausdehnung",
+              "2,15–3,15 AE"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Nerath",
+          "text": [
+            "Das Terev-System ist die Heimat der Synaptoiden: Ihr Planet Nerath umkreist Terev."
+          ],
+          "verweise": [
+            [
+              "Nerath",
+              "inhalte/himmelskoerper/planeten/details/nerath/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Synaptoiden",
+              "inhalte/spezies/Mentale Spezies/Synaptoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Skalenband im Terev-System.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Terev · Stern",
+              "Orangegelber Zwerg (K0 V)"
+            ],
+            [
+              "Vaskir · 0,16 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Sereth · 0,42 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Nerath · 0,93 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Talvek · 1,57 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Urakan · 4,4 AE",
+              "Gasriese"
+            ],
+            [
+              "Oryss · 9,3 AE",
+              "Eisriese"
+            ],
+            [
+              "Veyl · 22,8 AE",
+              "Eisplanet"
+            ],
+            [
+              "Relt · 44 AE",
+              "Zwergplanet"
+            ],
+            [
+              "Othir · 52 AE",
+              "Zwergplanet"
+            ],
+            [
+              "Skalenband · 2,2–3,2 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Taren-Saum · 38–65 AE",
+              "Kleinkörpergürtel"
+            ],
+            [
+              "Terev-Fernwolke · 1.500–8.000 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Terev",
+              "inhalte/himmelskoerper/sterne/details/terev/hauptseite/index.html"
+            ],
+            [
+              "Vaskir",
+              "inhalte/himmelskoerper/planeten/details/vaskir/hauptseite/index.html"
+            ],
+            [
+              "Sereth",
+              "inhalte/himmelskoerper/planeten/details/sereth/hauptseite/index.html"
+            ],
+            [
+              "Nerath",
+              "inhalte/himmelskoerper/planeten/details/nerath/hauptseite/index.html"
+            ],
+            [
+              "Talvek",
+              "inhalte/himmelskoerper/planeten/details/talvek/hauptseite/index.html"
+            ],
+            [
+              "Urakan",
+              "inhalte/himmelskoerper/planeten/details/urakan/hauptseite/index.html"
+            ],
+            [
+              "Oryss",
+              "inhalte/himmelskoerper/planeten/details/oryss/hauptseite/index.html"
+            ],
+            [
+              "Veyl",
+              "inhalte/himmelskoerper/planeten/details/veyl/hauptseite/index.html"
+            ],
+            [
+              "Relt",
+              "inhalte/himmelskoerper/zwergplaneten/details/relt/hauptseite/index.html"
+            ],
+            [
+              "Othir",
+              "inhalte/himmelskoerper/zwergplaneten/details/othir/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Umgebung": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Umgebung von Skalenband.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Terev · Stern",
+              "Orangegelber Zwerg (K0 V)"
+            ],
+            [
+              "Vaskir · 0,16 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Sereth · 0,42 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Nerath · 0,93 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Talvek · 1,57 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Urakan · 4,4 AE",
+              "Gasriese"
+            ],
+            [
+              "Oryss · 9,3 AE",
+              "Eisriese"
+            ],
+            [
+              "Veyl · 22,8 AE",
+              "Eisplanet"
+            ],
+            [
+              "Relt · 44 AE",
+              "Zwergplanet"
+            ],
+            [
+              "Othir · 52 AE",
+              "Zwergplanet"
+            ],
+            [
+              "Skalenband · 2,2–3,2 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Taren-Saum · 38–65 AE",
+              "Kleinkörpergürtel"
+            ],
+            [
+              "Terev-Fernwolke · 1.500–8.000 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Terev",
+              "inhalte/himmelskoerper/sterne/details/terev/hauptseite/index.html"
+            ],
+            [
+              "Vaskir",
+              "inhalte/himmelskoerper/planeten/details/vaskir/hauptseite/index.html"
+            ],
+            [
+              "Sereth",
+              "inhalte/himmelskoerper/planeten/details/sereth/hauptseite/index.html"
+            ],
+            [
+              "Nerath",
+              "inhalte/himmelskoerper/planeten/details/nerath/hauptseite/index.html"
+            ],
+            [
+              "Talvek",
+              "inhalte/himmelskoerper/planeten/details/talvek/hauptseite/index.html"
+            ],
+            [
+              "Urakan",
+              "inhalte/himmelskoerper/planeten/details/urakan/hauptseite/index.html"
+            ],
+            [
+              "Oryss",
+              "inhalte/himmelskoerper/planeten/details/oryss/hauptseite/index.html"
+            ],
+            [
+              "Veyl",
+              "inhalte/himmelskoerper/planeten/details/veyl/hauptseite/index.html"
+            ],
+            [
+              "Relt",
+              "inhalte/himmelskoerper/zwergplaneten/details/relt/hauptseite/index.html"
+            ],
+            [
+              "Othir",
+              "inhalte/himmelskoerper/zwergplaneten/details/othir/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Skalenband.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Skalenband besteht aus Material, das sich bei der Entstehung des Terev-Systems nicht zu einem Planeten vereinte."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Skalenband.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Wie viel Masse enthält das Gebiet insgesamt?",
+            "Welche Resonanzen formen seine Ränder?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Skalenband ist mit allen Bahndaten im Terev-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=nerath-stern&objekt=nerath-skalenband"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Skalenband.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Das Skalenband zwischen 2,15 und 3,15 AE besteht aus Gesteins-, Metall- und kohlenstoffreichen Kleinkörpern. Urakans Gravitation prägte seine Entwicklung; es ist kein überall dicht gefülltes Asteroidenfeld."
+          ]
+        },
+        {
+          "titel": "Aufbau",
+          "daten": [
+            [
+              "Innere Regionen",
+              "Felsige, teils metallreiche Körper"
+            ],
+            [
+              "Mittlere Regionen",
+              "Gesteins- und Mischkörper"
+            ],
+            [
+              "Äußere Regionen",
+              "Kohlenstoffreiche, teils flüchtige Materialien"
+            ],
+            [
+              "Resonanzzonen",
+              "Urakan stört bestimmte Bahnen langfristig"
+            ]
+          ]
+        },
+        {
+          "titel": "Besondere Ereignisse",
+          "karten": [
+            {
+              "titel": "Asteroidenkollisionen",
+              "text": "Neue Trümmer und Asteroidenfamilien entstehen."
+            },
+            {
+              "titel": "Bahnänderungen",
+              "text": "Gravitative Störungen verschieben Bahnen."
+            },
+            {
+              "titel": "Seltene Einschläge",
+              "text": "Einzelne Körper geraten auf Kollisionsbahnen mit Planeten."
+            },
+            {
+              "titel": "Staubfreisetzung",
+              "text": "Kollisionen erzeugen lokale Staubwolken."
+            }
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Skalenband.",
+      "abschnitte": [
+        {
+          "titel": "Skalenband – Archivbild",
+          "bild": true,
+          "bildtext": "Skalenband"
+        }
+      ]
+    }
+  }
+}

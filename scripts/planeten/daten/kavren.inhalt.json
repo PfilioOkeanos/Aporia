@@ -1,0 +1,1176 @@
+{
+  "name": "Kavren",
+  "genitiv": "von Kavren",
+  "dossierName": "Kavren-Dossier",
+  "klasse": "Gesteinsplanet",
+  "intro": "Kavren ist der vierte Planet im Darynth-System und die Heimat der Technosymbionten. Eislandschaften und mineralreiche Hochländer prägen die Oberfläche. Geothermische Täler und unterirdische Lebensräume beherbergen eine natürliche Biosphäre und geschützte Siedlungen.",
+  "globusDaten": {
+    "planet": "kavren",
+    "klasse": "Gestein",
+    "radius": 4500000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=iravelle-stern&objekt=iravelle-kavren",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-FEF42F69DB"
+    ],
+    [
+      "Typ",
+      "Gesteinsplanet"
+    ],
+    [
+      "Sternsystem",
+      "Darynth-System"
+    ],
+    [
+      "Zentralkörper",
+      "Darynth"
+    ],
+    [
+      "Große Halbachse",
+      "1,12 AE"
+    ],
+    [
+      "Umlaufzeit",
+      "490,2 Tage"
+    ],
+    [
+      "Durchmesser",
+      "9.000 km"
+    ],
+    [
+      "Masse",
+      "0,4 Erdmassen"
+    ],
+    [
+      "Schwerkraft",
+      "0,8 g"
+    ],
+    [
+      "Mittlere Oberflächentemperatur (Arbeitsmodell)",
+      "ca. −65 °C"
+    ],
+    [
+      "Gleichgewichtstemperatur ohne Treibhauseffekt",
+      "ca. −92 °C"
+    ],
+    [
+      "Atmosphäre (Arbeitsmodell)",
+      "80,8 % Stickstoff, 17,0 % Sauerstoff, 1,6 % Argon, 0,6 % Kohlendioxid"
+    ],
+    [
+      "Atmosphärendruck (Arbeitsmodell)",
+      "1,25 bar"
+    ],
+    [
+      "Siderische Rotation (Arbeitsmodell)",
+      "30 Stunden"
+    ],
+    [
+      "Achsneigung (Arbeitsmodell)",
+      "19°"
+    ],
+    [
+      "Monde",
+      "Keine Einträge in der Sternenkarte"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Darynth-System"
+    ],
+    [
+      "Zentralstern",
+      "Darynth",
+      "inhalte/himmelskoerper/sterne/details/darynth/hauptseite/index.html"
+    ],
+    [
+      "Planetare Position",
+      "Vierter Planet"
+    ],
+    [
+      "Abstand",
+      "1,12 AE"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Kavren im Darynth-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=iravelle-stern&objekt=iravelle-kavren",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Darynth",
+      "href": "inhalte/himmelskoerper/sterne/details/darynth/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Heimatspezies",
+      "titel": "Technosymbionten",
+      "href": "inhalte/spezies/Technologische Lebensformen/Technosymbionten/hauptseite/Spezies.html",
+      "route": "spezies-technological-6"
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Oneiroiden",
+      "titel": "Iravelle",
+      "href": "inhalte/himmelskoerper/planeten/details/iravelle/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Oneiroiden",
+      "href": "inhalte/spezies/Mentale Spezies/Oneiroiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Technosymbionten · Heimatwelt Kavren",
+      "href": "inhalte/spezies/Technologische Lebensformen/Technosymbionten/Unterseiten/Heimatwelt/heimatwelt.html"
+    },
+    {
+      "titel": "Sternenkarte · Darynth-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=iravelle-stern&objekt=iravelle-kavren"
+    },
+    {
+      "titel": "Speziesdossier Oneiroiden",
+      "href": "inhalte/spezies/Mentale Spezies/Oneiroiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#090807",
+      "tiefe": "#14110f",
+      "akzent": "#cdc0af",
+      "sand": "#d1bd9e",
+      "moos": "#abb68a",
+      "ozean": "#899f9d",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#50473c"
+    }
+  },
+  "kapitel": {
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Kalte Gesteinswelt und Heimat der Technosymbionten.",
+      "abschnitte": [
+        {
+          "titel": "Allgemeines",
+          "text": [
+            "Kavren ist eine kalte, mineralreiche Gesteinswelt mit ausgedehnten Eislandschaften, Gebirgen, geologisch aktiven Regionen und geschützten biologischen Lebensräumen.",
+            "Die heutige technosymbiontische Zivilisation verbindet unterirdische Siedlungen mit großen Industriegebieten auf der Oberfläche."
+          ],
+          "daten": [
+            [
+              "Planet",
+              "Kavren"
+            ],
+            [
+              "Sternensystem",
+              "Darynth"
+            ],
+            [
+              "Planetare Position",
+              "Vierter Planet"
+            ],
+            [
+              "Himmelskörpertyp",
+              "Terrestrischer Gesteinsplanet"
+            ],
+            [
+              "Heimatspezies",
+              "Technosymbionten"
+            ],
+            [
+              "Entstehung der Spezies",
+              "Natürliche biologische Evolution mit späterer technischer Koevolution"
+            ]
+          ],
+          "bild": true,
+          "bildtext": "Kavren"
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Gesteinsplanet"
+            ],
+            [
+              "Sternsystem",
+              "Darynth-System"
+            ],
+            [
+              "Zentralkörper",
+              "Darynth"
+            ],
+            [
+              "Große Halbachse",
+              "1,12 AE"
+            ],
+            [
+              "Umlaufzeit",
+              "490,2 Tage"
+            ],
+            [
+              "Durchmesser",
+              "9.000 km"
+            ],
+            [
+              "Masse",
+              "0,4 Erdmassen"
+            ],
+            [
+              "Schwerkraft",
+              "0,8 g"
+            ],
+            [
+              "Mittlere Oberflächentemperatur (Arbeitsmodell)",
+              "ca. −65 °C"
+            ],
+            [
+              "Gleichgewichtstemperatur ohne Treibhauseffekt",
+              "ca. −92 °C"
+            ],
+            [
+              "Atmosphäre (Arbeitsmodell)",
+              "80,8 % Stickstoff, 17,0 % Sauerstoff, 1,6 % Argon, 0,6 % Kohlendioxid"
+            ],
+            [
+              "Atmosphärendruck (Arbeitsmodell)",
+              "1,25 bar"
+            ],
+            [
+              "Siderische Rotation (Arbeitsmodell)",
+              "30 Stunden"
+            ],
+            [
+              "Achsneigung (Arbeitsmodell)",
+              "19°"
+            ],
+            [
+              "Monde",
+              "Keine Einträge in der Sternenkarte"
+            ]
+          ]
+        },
+        {
+          "titel": "Stand der Planetendaten",
+          "text": [
+            "Masse, Radius und Bahndaten im Steckbrief entsprechen der Sternenkarte. Ergänzende Angaben aus dem Speziesdossier sind als Arbeitsmodell gekennzeichnet."
+          ]
+        },
+        {
+          "titel": "Zum Dossier der Heimatspezies",
+          "verweise": [
+            [
+              "Technosymbionten",
+              "inhalte/spezies/Technologische Lebensformen/Technosymbionten/hauptseite/Spezies.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Iravelle",
+          "text": [
+            "Die Oneiroiden leben auf Iravelle, der dritten Welt im Darynth-System. Beide Spezies haben sich unabhängig voneinander entwickelt."
+          ],
+          "verweise": [
+            [
+              "Iravelle",
+              "inhalte/himmelskoerper/planeten/details/iravelle/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Oneiroiden",
+              "inhalte/spezies/Mentale Spezies/Oneiroiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Kavren im Darynth-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Darynth"
+            ],
+            [
+              "Große Halbachse",
+              "1,12 AE (167,6 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,04"
+            ],
+            [
+              "Bahnneigung",
+              "1,8°"
+            ],
+            [
+              "Umlaufzeit",
+              "490,2 Tage"
+            ],
+            [
+              "Einstrahlung",
+              "0,295-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Ergänzendes Arbeitsmodell",
+          "text": [
+            "Die Exzentrizität in der laufenden Sternenkartensimulation beträgt 0,04. Das Speziesdossier schlägt 0,03 als Arbeitswert vor."
+          ],
+          "daten": [
+            [
+              "Planetare Position",
+              "Vierter Planet"
+            ],
+            [
+              "Achsneigung (Arbeitsmodell)",
+              "19°"
+            ],
+            [
+              "Siderische Rotation (Arbeitsmodell)",
+              "30 Stunden"
+            ]
+          ]
+        },
+        {
+          "titel": "Monde",
+          "text": [
+            "Für Kavren sind in der bisher übernommenen Darynth-Ausarbeitung keine Monde namentlich festgelegt.",
+            "Es werden daher keine zusätzlichen natürlichen Satelliten erfunden."
+          ]
+        },
+        {
+          "titel": "Am Himmel von Kavren",
+          "text": [
+            "Darynth erscheint von hier aus etwa 0,4° groß (die Sonne von der Erde: 0,53°)."
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Darynth · Stern",
+              "Orangefarbener Zwerg (K3 V)"
+            ],
+            [
+              "Ashken · 0,18 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Doriel · 0,39 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Iravelle · 0,65 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Kavren · 1,12 AE · dieses Dossier",
+              "Gesteinsplanet"
+            ],
+            [
+              "Torad · 2,9 AE",
+              "Gasriese"
+            ],
+            [
+              "Olyss · 6,1 AE",
+              "Eisriese"
+            ],
+            [
+              "Umbrel · 11,3 AE",
+              "Eisriese"
+            ],
+            [
+              "Darynth-Asteroidengürtel · 1,7–2,4 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußere Kleinkörperregion · 14–30 AE",
+              "Kleinkörpergürtel"
+            ]
+          ],
+          "verweise": [
+            [
+              "Darynth",
+              "inhalte/himmelskoerper/sterne/details/darynth/hauptseite/index.html"
+            ],
+            [
+              "Ashken",
+              "inhalte/himmelskoerper/planeten/details/ashken/hauptseite/index.html"
+            ],
+            [
+              "Doriel",
+              "inhalte/himmelskoerper/planeten/details/doriel/hauptseite/index.html"
+            ],
+            [
+              "Iravelle",
+              "inhalte/himmelskoerper/planeten/details/iravelle/hauptseite/index.html"
+            ],
+            [
+              "Torad",
+              "inhalte/himmelskoerper/planeten/details/torad/hauptseite/index.html"
+            ],
+            [
+              "Olyss",
+              "inhalte/himmelskoerper/planeten/details/olyss/hauptseite/index.html"
+            ],
+            [
+              "Umbrel",
+              "inhalte/himmelskoerper/planeten/details/umbrel/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Kavren.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "4.500 km"
+            ],
+            [
+              "Masse",
+              "0,4 Erdmassen"
+            ],
+            [
+              "Mittlere Dichte",
+              "6,26 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "7,87 m/s² (0,802 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "8,42 km/s"
+            ]
+          ],
+          "vergleich": {
+            "mit": "Erde",
+            "werte": [
+              [
+                "Durchmesser",
+                9000,
+                12742,
+                "km"
+              ],
+              [
+                "Masse",
+                0.4,
+                1,
+                "Erdmassen"
+              ],
+              [
+                "Schwerkraft",
+                0.8,
+                1,
+                "g"
+              ]
+            ]
+          }
+        },
+        {
+          "titel": "Alternatives physikalisches Arbeitsmodell des Speziesdossiers",
+          "text": [
+            "Dieses Arbeitsmodell weicht von den in der Sternenkarte verwendeten Kerndaten ab. Für die Karte gelten weiterhin 0,4 Erdmassen und 4.500 km Radius.",
+            "Arbeitsmodell:",
+            "Die Schwerkraft liegt geringfügig oberhalb des Erdwertes.",
+            "Der Planet kann dadurch eine relativ kompakte, metallreiche innere Struktur besitzen."
+          ],
+          "daten": [
+            [
+              "Masse",
+              "0,92 Erdmassen"
+            ],
+            [
+              "Radius",
+              "0,95 Erdradien"
+            ],
+            [
+              "Oberflächengravitation",
+              "Ca. 10,0 m/s²"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "Ca. 11,0 km/s"
+            ],
+            [
+              "Mittlere Dichte",
+              "Ca. 5,92 g/cm³"
+            ]
+          ]
+        }
+      ]
+    },
+    "Planetare Struktur": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Metallreicher Kern, silikatischer Mantel und regional geothermisch aktive Kruste.",
+      "abschnitte": [
+        {
+          "titel": "Innerer Aufbau",
+          "text": [
+            "Kavren besitzt einen differenzierten inneren Aufbau.",
+            "Vorgeschlagene Schichten:",
+            "Die geothermische Aktivität ist räumlich unterschiedlich."
+          ],
+          "liste": [
+            "Metallreicher Kern",
+            "Silikatischer Mantel",
+            "Starre äußere Gesteinskruste",
+            "Regionale tektonische Bruchzonen",
+            "Unterirdische Wasserreservoire",
+            "Lokal aktive Magmen- und Wärmeregionen"
+          ]
+        },
+        {
+          "titel": "Magnetfeld",
+          "text": [
+            "Ein aktiver metallischer Kern könnte ein schützendes Magnetfeld erzeugen.",
+            "Die konkrete Feldstärke bleibt offen.",
+            "Für die langfristige Entwicklung einer Oberflächenbiosphäre muss die Strahlungsgeschichte des Planeten berücksichtigt werden."
+          ]
+        }
+      ]
+    },
+    "Geografie": {
+      "gruppe": "Natur",
+      "icon": "△",
+      "intro": "Eisschilde, Basaltebenen und geothermische Bruchzonen formen Kavren.",
+      "abschnitte": [
+        {
+          "titel": "Geografie",
+          "text": [
+            "Die Oberfläche umfasst:"
+          ],
+          "liste": [
+            "Ausgedehnte Gebirgsketten",
+            "Dunkle Basaltebenen",
+            "Gefrorene Becken",
+            "Mineralreiche Hochländer",
+            "Tektonische Bruchzonen",
+            "Tiefe Felstäler",
+            "Gletscherlandschaften",
+            "Geothermische Quellgebiete",
+            "Unterirdische Höhlensysteme"
+          ]
+        },
+        {
+          "titel": "Besondere Regionen",
+          "text": [
+            "Für die Weiterentwicklung der Heimatwelt werden sechs benannte Landschaften als neue Arbeitsentwürfe vorgesehen.",
+            "A. Kelvras-Quellbruch",
+            "Ein geothermisch aktives Bruchsystem mit warmen Quellbecken und tiefen Felsspalten.",
+            "Die Region gilt als mögliches bedeutendes Gebiet früher biologischer Entwicklung.",
+            "B. Namar-Basaltterrassen",
+            "Gewaltige dunkle Gesteinsstufen mit metallreichen Schichten.",
+            "Heute befinden sich hier Industrieanlagen und Rohstoffabbaugebiete.",
+            "C. Serrix-Hochland",
+            "Ein ausgedehntes kaltes Hochplateau mit starken Winden und offenen Mineralflächen.",
+            "Das Gebiet wird für Materialforschung und technische Belastungsprüfungen genutzt.",
+            "D. Rhekal-Tiefenbogen",
+            "Ein weitreichendes unterirdisches Höhlen- und Störungssystem.",
+            "Geschützte Siedlungen und biologische Forschungsräume befinden sich in den tieferen Bereichen.",
+            "E. Vandorischer Eisschild",
+            "Eine riesige Vereisungszone mit mächtigen Gletschern, Bruchspalten und eingeschlossenen geologischen Schichten.",
+            "Wichtiger Forschungsstandort für Klima- und Planetengeschichte.",
+            "F. Orelth-Becken",
+            "Ein tiefliegendes Becken mit gefrorenen Oberflächen und geothermisch beeinflussten unterirdischen Gewässern.",
+            "Bedeutender Standort für hydrogeologische Untersuchungen.",
+            "Alle sechs Regionsnamen sind neue Arbeitsnamen und noch keine vorher bestehenden Sternenkarteneinträge."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Das Atmosphärenmodell sieht eine stickstoffreiche Gashülle mit 17 % Sauerstoff vor.",
+      "abschnitte": [
+        {
+          "titel": "Atmosphäre",
+          "text": [
+            "Vorgeschlagenes Atmosphärenmodell:",
+            "Die gerundeten Hauptbestandteile ergeben zusammen 100 %.",
+            "Kavren besitzt damit einen Sauerstoffpartialdruck von etwa 0,213 bar.",
+            "Das ist mit dem sauerstoffabhängigen Stoffwechsel der Technosymbionten vereinbar.",
+            "Die Atmosphäre enthält auch Wasserdampf und andere Spurengase, deren zeitlich variable Mengen in einem späteren Detailmodell berücksichtigt werden müssen."
+          ],
+          "daten": [
+            [
+              "Gesamtdruck",
+              "1,25 bar"
+            ],
+            [
+              "Stickstoff",
+              "80,8 %"
+            ],
+            [
+              "Sauerstoff",
+              "17,0 %"
+            ],
+            [
+              "Argon",
+              "1,6 %"
+            ],
+            [
+              "Kohlendioxid",
+              "0,6 %"
+            ]
+          ],
+          "balken": {
+            "werte": [
+              [
+                "Stickstoff",
+                80.8
+              ],
+              [
+                "Sauerstoff",
+                17
+              ],
+              [
+                "Argon",
+                1.6
+              ],
+              [
+                "Kohlendioxid",
+                0.6
+              ]
+            ]
+          }
+        },
+        {
+          "titel": "Wolken und Niederschläge",
+          "text": [
+            "Die Atmosphäre bildet regional Wolken und Eispartikel.",
+            "In besonders kalten Regionen ist der absolute Wasserdampfgehalt gering.",
+            "Geothermische Wärmeinseln können lokal stärkere Verdunstung und Kondensation erzeugen.",
+            "Mögliche Wettererscheinungen:"
+          ],
+          "liste": [
+            "Niedrige Nebel",
+            "Eiswolken",
+            "Lokale Schneefälle",
+            "Wasserdampffahnen",
+            "Frostablagerungen"
+          ]
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Kalte Hochländer und Eisschilde stehen lokal wärmeren Tälern gegenüber.",
+      "abschnitte": [
+        {
+          "titel": "Temperaturwerte",
+          "text": [
+            "Das Speziesdossier setzt als globales Mittel im Arbeitsmodell etwa −65 °C an. Die berechnete Gleichgewichtstemperatur ohne Treibhauseffekt liegt bei etwa −92 °C."
+          ]
+        },
+        {
+          "titel": "Klima",
+          "text": [
+            "Kavren ist eine überwiegend kalte Welt.",
+            "Vorgeschlagene globale Mitteltemperatur:",
+            "Etwa -65 °C.",
+            "Der Wert beschreibt ein Arbeitsklimamodell und keine abgeschlossene planetare Klimasimulation.",
+            "Große Teile des Planeten besitzen dauerhaft gefrorene Oberflächen.",
+            "Die lokale Temperatur kann stark abweichen.",
+            "Geschützte, geothermisch erwärmte Lebensräume sind deutlich wärmer."
+          ]
+        },
+        {
+          "titel": "Klimazonen",
+          "text": [
+            "A. Polare Eisschilde",
+            "Sehr kalte Regionen mit mächtigen Eisdecken.",
+            "B. Gefrorene Hochländer",
+            "Gesteinsplateaus mit Frostverwitterung und starken Winden.",
+            "C. Mineralische Kältewüsten",
+            "Weitgehend vegetationsarme, trockene Gesteinslandschaften.",
+            "D. Geothermische Täler",
+            "Regional wärmere Bereiche mit Wasser und biologischer Aktivität.",
+            "E. Unterirdische Feuchtgebiete",
+            "Geschützte Räume mit flüssigem Wasser und stabileren Temperaturen.",
+            "F. Vulkanische Störungsregionen",
+            "Lokale Wärmequellen, heiße Gase und geologische Aktivität."
+          ]
+        },
+        {
+          "titel": "Stürme",
+          "text": [
+            "Typische Wettergefahren:",
+            "Die stärksten Wetterereignisse treten nicht überall auf Kavren gleichermaßen auf."
+          ],
+          "liste": [
+            "Kaltluftstürme",
+            "Eis- und Schneeverwehungen",
+            "Staubstürme auf trockenen Hochflächen",
+            "Starke Fallwinde",
+            "Lokale Nebelbildung",
+            "Vereisung technischer Strukturen"
+          ]
+        }
+      ]
+    },
+    "Gewässer": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Wasser liegt vor allem als Eis vor und bleibt in geothermischen Gebieten lokal flüssig.",
+      "abschnitte": [
+        {
+          "titel": "Gewässer",
+          "text": [
+            "Ein großer Teil des Wassers befindet sich in gefrorener Form.",
+            "Wasservorkommen:",
+            "Der Gesamtwasseranteil und die genaue Verteilung bleiben bis zur planetaren Hydrologiesimulation offen."
+          ],
+          "liste": [
+            "Oberflächeneis",
+            "Gletscher",
+            "Gefrorene Seen",
+            "Unterirdisches Grundwasser",
+            "Subglaziale Gewässer",
+            "Geothermisch gespeiste Becken",
+            "Zeitweilige Schmelzwasserströme"
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Metallreiche Lagerstätten und regionaler Vulkanismus prägen die Gesteinswelt.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Kavren besitzt unterschiedliche mineralische Lagerstätten.",
+            "Besonders bedeutend sind:",
+            "Die industrielle Rohstoffnutzung beeinflusste die historische Entwicklung der Technosymbionten."
+          ],
+          "liste": [
+            "Eisenerze",
+            "Kupferhaltige Mineralien",
+            "Nickelhaltige Schichten",
+            "Silikate",
+            "Aluminiumhaltige Gesteine",
+            "Vulkanische Mineralien",
+            "Karbonatische und andere sedimentäre Ablagerungen"
+          ]
+        },
+        {
+          "titel": "Vulkanismus",
+          "text": [
+            "Der Planet besitzt regional begrenzten Vulkanismus.",
+            "Mögliche Erscheinungen:",
+            "Der Vulkanismus ist keine flächendeckende Eigenschaft der gesamten Oberfläche."
+          ],
+          "liste": [
+            "Geothermische Quellen",
+            "Warme Felsspalten",
+            "Magmatische Intrusionen",
+            "Lokale vulkanische Gase",
+            "Hydrothermale Systeme",
+            "Alte erkaltete Lavafelder"
+          ]
+        }
+      ]
+    },
+    "Biosphäre": {
+      "gruppe": "Natur",
+      "icon": "❧",
+      "intro": "Das einheimische Leben konzentriert sich heute auf geothermische und geschützte Lebensräume.",
+      "abschnitte": [
+        {
+          "titel": "Biosphäre",
+          "text": [
+            "Kavren besitzt eine eigenständige natürliche Biosphäre.",
+            "Die biologische Entwicklung begann lange vor der modernen technosymbiontischen Zivilisation.",
+            "Die heutige Biosphäre konzentriert sich besonders auf geschützte Lebensräume.",
+            "Wichtige ökologische Zonen:"
+          ],
+          "liste": [
+            "Geothermische Täler",
+            "Unterirdische Gewässer",
+            "Wärmeführende Felsspalten",
+            "Geschützte Gesteinsnischen",
+            "Subglaziale Seen",
+            "Einzelne saisonal wärmere Oberflächenregionen"
+          ]
+        },
+        {
+          "titel": "Flora",
+          "text": [
+            "Für Kavren werden mehrere natürliche Organismengruppen vorgesehen.",
+            "A. Kälteresistente phototrophe Lebensformen",
+            "Nutzen das verfügbare Sternenlicht in geeigneten Oberflächenregionen.",
+            "B. Untereisliche Phototrophe",
+            "Können in ausreichend lichtdurchlässigen Eis- und Wasserbereichen existieren.",
+            "C. Chemosynthetische Organismen",
+            "Gewinnen Energie aus chemischen Reaktionen mineralischer und hydrothermaler Stoffe.",
+            "D. Feuchtigkeitsliebende Höhlenflora-Analoga",
+            "Bewohnen geschützte unterirdische Habitate.",
+            "E. Wärmeliebende Quellorganismen",
+            "Besiedeln geothermisch aktive Regionen.",
+            "Die konkreten Arten werden im Flora-Dossier ausgearbeitet."
+          ]
+        },
+        {
+          "titel": "Fauna",
+          "text": [
+            "Kavren besitzt eigenständige nichtintelligente Tiergruppen.",
+            "Mögliche ökologische Rollen:",
+            "Diese Lebewesen besitzen keine notwendige Maschinenintegration."
+          ],
+          "liste": [
+            "Kleine Höhlenbewohner",
+            "Bodenlebende Nahrungssucher",
+            "Unterirdische Wasserorganismen",
+            "Kälteresistente Oberflächenbewohner",
+            "Räuber geothermischer Lebensräume",
+            "Organismen unter Eisdecken"
+          ]
+        }
+      ]
+    },
+    "Spezies": {
+      "gruppe": "Zivilisation",
+      "icon": "✿",
+      "intro": "Kavren ist der Ursprungsplanet der Technosymbionten.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung der Technosymbionten",
+          "text": [
+            "Die biologischen Vorfahren der Technosymbionten entwickelten sich ursprünglich in natürlichen Lebensräumen Kavrens.",
+            "Erst nach der Entstehung einer intelligenten Zivilisation begann die technologische Körperintegration.",
+            "Die heutige Form entstand durch langfristige biologische und technische Koevolution."
+          ]
+        },
+        {
+          "titel": "Spezies-Dossier",
+          "verweise": [
+            [
+              "Technosymbionten",
+              "inhalte/spezies/Technologische Lebensformen/Technosymbionten/hauptseite/Spezies.html"
+            ],
+            [
+              "Heimatwelt im Speziesdossier",
+              "inhalte/spezies/Technologische Lebensformen/Technosymbionten/Unterseiten/Heimatwelt/heimatwelt.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Iravelle",
+          "text": [
+            "Die Oneiroiden leben auf Iravelle, der dritten Welt im Darynth-System. Beide Spezies haben sich unabhängig voneinander entwickelt."
+          ],
+          "verweise": [
+            [
+              "Iravelle",
+              "inhalte/himmelskoerper/planeten/details/iravelle/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Oneiroiden",
+              "inhalte/spezies/Mentale Spezies/Oneiroiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Zivilisation": {
+      "gruppe": "Zivilisation",
+      "icon": "▥",
+      "intro": "Unterirdische Städte und oberirdische Industriegebiete sind durch Versorgungsnetze verbunden.",
+      "abschnitte": [
+        {
+          "titel": "Städte",
+          "text": [
+            "Typische Siedlungsformen:",
+            "Unterirdische Städte:",
+            "Geschützt vor Kälte und Oberflächenstürmen.",
+            "Geothermische Städte:",
+            "In der Nähe nutzbarer Wärmequellen.",
+            "Industriestädte:",
+            "An Rohstoffvorkommen und Transportwegen.",
+            "Forschungsstädte:",
+            "Mit medizinischen und wissenschaftlichen Einrichtungen.",
+            "Oberflächenaußenposten:",
+            "Für Erkundung, Bergbau und Infrastrukturwartung."
+          ]
+        },
+        {
+          "titel": "Architektur",
+          "text": [
+            "Die Architektur ist auf technische Versorgung und biologische Lebensbedingungen ausgerichtet.",
+            "Typische Merkmale:"
+          ],
+          "liste": [
+            "Geschützte Gebäudehüllen",
+            "Große Wärmeleitungen",
+            "Robuste Tragstrukturen",
+            "Energieversorgung",
+            "Wartungszugänge",
+            "Druck- und Luftschleusen",
+            "Mechanische Transportwege",
+            "Medizinische Stationen",
+            "Breite Verbindungstunnel"
+          ]
+        },
+        {
+          "titel": "Energie",
+          "text": [
+            "Wichtige Energiequellen:",
+            "Die konkrete historische Einführung einzelner Reaktortypen bleibt noch offen."
+          ],
+          "liste": [
+            "Geothermische Energie",
+            "Industrielle Reaktorsysteme",
+            "Elektrische Speicher",
+            "Regionale Energieverbünde",
+            "Andere physikalisch geeignete Energiegewinnung"
+          ]
+        },
+        {
+          "titel": "Umweltprobleme",
+          "text": [
+            "Wichtige ökologische Konfliktfelder:",
+            "Die Gesellschaft muss industrielle Produktion und biologische Lebensräume miteinander vereinbaren."
+          ],
+          "liste": [
+            "Bergbaufolgen",
+            "Industrieabwärme",
+            "Energieverbrauch",
+            "Veränderung geothermischer Lebensräume",
+            "Wasserverschmutzung",
+            "Materialabfälle",
+            "Zerstörung natürlicher Höhlensysteme"
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geologische Abkühlung und die Entwicklung der Technosymbionten.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Kavren entstand zusammen mit dem Darynth-System vor rund 6 Milliarden Jahren."
+          ]
+        },
+        {
+          "titel": "Klimageschichte",
+          "text": [
+            "Kavren besaß in früheren geologischen Epochen wahrscheinlich einen stärkeren natürlichen Treibhauseffekt.",
+            "Damals konnten größere Gebiete flüssiges Oberflächenwasser und mildere Temperaturen besitzen.",
+            "Eine langfristige Veränderung der Atmosphäre führte zu einer weitreichenden Abkühlung.",
+            "Die alten biologischen Lebensräume wurden dadurch eingeschränkt.",
+            "Geschützte und geothermisch aktive Regionen entwickelten sich zu wichtigen Rückzugsgebieten.",
+            "Die genaue geologische Datierung bleibt offen."
+          ]
+        },
+        {
+          "titel": "Entstehung der Technosymbionten",
+          "text": [
+            "Die biologischen Vorfahren der Technosymbionten entwickelten sich ursprünglich in natürlichen Lebensräumen Kavrens.",
+            "Erst nach der Entstehung einer intelligenten Zivilisation begann die technologische Körperintegration.",
+            "Die heutige Form entstand durch langfristige biologische und technische Koevolution."
+          ]
+        }
+      ]
+    },
+    "Fraktionen": {
+      "gruppe": "Zivilisation",
+      "icon": "◇",
+      "intro": "Fraktionen von Kavren.",
+      "abschnitte": [
+        {
+          "titel": "Ansprüche",
+          "text": [
+            "Für Kavren sind keine Fraktionsansprüche verzeichnet."
+          ]
+        }
+      ]
+    },
+    "Rohstoffe": {
+      "gruppe": "Weitere",
+      "icon": "⬡",
+      "intro": "Metalle, Silikate und Wasser sind wichtige Ressourcen Kavrens.",
+      "abschnitte": [
+        {
+          "titel": "Rohstoffe",
+          "text": [
+            "Besonders wichtig für die Spezies:",
+            "Seltene Spezialmaterialien können später durch interplanetaren Handel hinzugefügt werden."
+          ],
+          "liste": [
+            "Eisen",
+            "Kupfer",
+            "Nickel",
+            "Siliziumhaltige Materialien",
+            "Keramische Rohstoffe",
+            "Wasser",
+            "Industriell nutzbare Gase",
+            "Organische Nährstoffe"
+          ]
+        },
+        {
+          "titel": "Geologie",
+          "text": [
+            "Kavren besitzt unterschiedliche mineralische Lagerstätten.",
+            "Besonders bedeutend sind:",
+            "Die industrielle Rohstoffnutzung beeinflusste die historische Entwicklung der Technosymbionten."
+          ],
+          "liste": [
+            "Eisenerze",
+            "Kupferhaltige Mineralien",
+            "Nickelhaltige Schichten",
+            "Silikate",
+            "Aluminiumhaltige Gesteine",
+            "Vulkanische Mineralien",
+            "Karbonatische und andere sedimentäre Ablagerungen"
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Geothermie, Klimageschichte und die Entwicklung biologisch-technischer Systeme prägen die Forschung.",
+      "abschnitte": [
+        {
+          "titel": "Erforschung",
+          "text": [
+            "Kavren ist bedeutend für:"
+          ],
+          "liste": [
+            "Evolutionsbiologie",
+            "Geothermieforschung",
+            "Mineralogie",
+            "Klimageschichte",
+            "Neurobiologie",
+            "Medizin",
+            "Biokompatible Werkstoffe",
+            "Industrielle Fertigung",
+            "Künstliche Organsysteme"
+          ]
+        },
+        {
+          "titel": "Datenstatus",
+          "text": [
+            "Die astronomischen Grundwerte des Darynth-Systems wurden übernommen.",
+            "Zusätzliche Massen-, Atmosphären-, Klima- und Geologiewerte sind Arbeitsmodellwerte.",
+            "Eine vollständige Langzeit-Klima- und Orbitalvalidierung liegt noch nicht vor."
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Kavren ist mit allen Bahndaten im Darynth-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=iravelle-stern&objekt=iravelle-kavren"
+            ]
+          ]
+        },
+        {
+          "titel": "Forschungsdossier",
+          "verweise": [
+            [
+              "Forschung der Technosymbionten",
+              "inhalte/spezies/Technologische Lebensformen/Technosymbionten/Forschung/forschung.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Kavren vereint geschützte natürliche Lebensräume und ausgedehnte Industriegebiete.",
+      "abschnitte": [
+        {
+          "titel": "Planetare Besonderheit",
+          "text": [
+            "Kavren verbindet eine lebensgeschichtlich bedeutende biologische Vergangenheit mit einer hochentwickelten biologisch-technischen Gegenwart.",
+            "Seine kalten Landschaften, geschützten Lebensräume und großen Produktionsanlagen bilden eine eigenständige Umgebung im APORIA-Universum."
+          ]
+        },
+        {
+          "titel": "Gameplay",
+          "text": [
+            "Kavren bietet:"
+          ],
+          "liste": [
+            "Industriegebiete",
+            "Unterirdische Städte",
+            "Historische Ruinen",
+            "Natürliche geothermische Lebensräume",
+            "Eislandschaften",
+            "Forschungsanlagen",
+            "Bergbaugebiete",
+            "Medizinische Einrichtungen",
+            "Ressourcenhandel",
+            "Wissenschaftliche Expeditionen"
+          ]
+        },
+        {
+          "titel": "Spielintegration",
+          "verweise": [
+            [
+              "Technosymbionten im Spiel",
+              "inhalte/spezies/Technologische Lebensformen/Technosymbionten/Gameplay/gameplay.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Kavren.",
+      "abschnitte": [
+        {
+          "titel": "Kavren – Archivbild",
+          "bild": true,
+          "bildtext": "Kavren"
+        }
+      ]
+    }
+  }
+}

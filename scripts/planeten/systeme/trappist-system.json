@@ -1,29 +1,284 @@
 {
   "systemName": "TRAPPIST-1-System",
   "praefix": "trappist-",
-  "lage": { "entfernungLj": 40.66, "richtung": [0.9692, 0.0111, 0.2463] },
+  "lage": {
+    "entfernungLj": 40.66,
+    "richtung": [
+      0.9692,
+      0.0111,
+      0.2463
+    ]
+  },
   "einzelstern": true,
   "stern": {
-    "id": "trappist-stern", "name": "TRAPPIST-1", "typ": "Ultrakühler Roter Zwerg (M8 V)",
-    "masseSonne": 0.0898, "radiusSonne": 0.1192, "leuchtkraftSonne": 0.000553, "temperaturK": 2566, "alterMrd": 7.6,
-    "farbe": [1, 0.32, 0.16], "emissionsfarbe": [1, 0.34, 0.18], "emission": 1.2,
-    "bild": { "art": "sterne", "suche": "Roter Zwerg|roter Zwerg" },
+    "id": "trappist-stern",
+    "name": "TRAPPIST-1",
+    "typ": "Ultrakühler Roter Zwerg (M8 V)",
+    "masseSonne": 0.0898,
+    "radiusSonne": 0.1192,
+    "leuchtkraftSonne": 0.000553,
+    "temperaturK": 2566,
+    "alterMrd": 7.6,
+    "farbe": [
+      1,
+      0.32,
+      0.16
+    ],
+    "emissionsfarbe": [
+      1,
+      0.34,
+      0.18
+    ],
+    "emission": 1.2,
+    "bild": {
+      "art": "sterne",
+      "suche": "Roter Zwerg|roter Zwerg"
+    },
     "beschreibung": "TRAPPIST-1 ist ein ultrakühler Roter Zwerg (M8 V) in rund 40,7 Lichtjahren Entfernung – kaum größer als Jupiter, mit nur 9 % der Sonnenmasse. Seine Strahlungsausbrüche prägten die Umweltgeschichte seiner Planeten. Werte nach realen Messungen; die APORIA-Fassung ergänzt einen achten Planeten."
   },
   "koerper": [
-    { "id": "trappist-b", "name": "TRAPPIST-1b", "typ": "Gesteinsplanet", "um": "trappist-stern", "aAE": 0.01154, "e": 0.004, "i": 0.2, "knoten": 0, "peri": 0, "phase": 10, "radiusKm": 7110, "masseErde": 1.374, "albedo": 0.1, "farbe": [0.68, 0.44, 0.34], "bild": { "art": "planeten", "suche": "Glühender Felsplanet|Tag-Nacht|Lavaplanet" }, "beschreibung": "TRAPPIST-1b ist der innerste Planet, eine heiße, vermutlich atmosphärelose Felswelt." },
-    { "id": "trappist-c", "name": "TRAPPIST-1c", "typ": "Gesteinsplanet", "um": "trappist-stern", "aAE": 0.0158, "e": 0.007, "i": 0.1, "knoten": 0, "peri": 0, "phase": 70, "radiusKm": 6990, "masseErde": 1.308, "albedo": 0.12, "farbe": [0.6, 0.42, 0.36], "bild": { "art": "planeten", "suche": "Verbrannter|glühenden Rissen|Basaltische" }, "beschreibung": "TRAPPIST-1c ist eine heiße Gesteinswelt mit dünner oder fehlender Atmosphäre." },
-    { "id": "trappist-d", "name": "TRAPPIST-1d", "typ": "Gesteinsplanet", "um": "trappist-stern", "aAE": 0.02227, "e": 0.008, "i": 0.1, "knoten": 0, "peri": 0, "phase": 140, "radiusKm": 5020, "masseErde": 0.388, "albedo": 0.3, "farbe": [0.62, 0.56, 0.5], "bild": { "art": "planeten", "suche": "Dampfplanet|Heißer|Wasserwelt" }, "beschreibung": "TRAPPIST-1d ist ein kleiner Planet am inneren Rand der habitablen Zone." },
-    { "id": "trappist-e", "name": "TRAPPIST-1e", "typ": "Gesteinsplanet", "um": "trappist-stern", "aAE": 0.02925, "e": 0.005, "i": 0, "knoten": 0, "peri": 0, "phase": 200, "radiusKm": 5861, "masseErde": 0.85, "albedo": 0.3, "zielTemperaturC": 8, "farbe": [0.52, 0.42, 0.6], "bild": { "art": "planeten", "slug": "felsplanet-im-dichten-violetten-wolkenmantel" }, "beschreibung": "TRAPPIST-1e ist die Heimatwelt der Biomechnoiden: ein erdgroßer Gesteinsplanet mit dichter Atmosphäre, Klimagegensätzen und Kristallstürmen." },
-    { "id": "trappist-f", "name": "TRAPPIST-1f", "typ": "Gesteinsplanet", "um": "trappist-stern", "aAE": 0.03849, "e": 0.01, "i": 0.1, "knoten": 0, "peri": 0, "phase": 260, "radiusKm": 6660, "masseErde": 1.039, "albedo": 0.4, "farbe": [0.66, 0.74, 0.82], "bild": { "art": "planeten", "suche": "Eis-Ozeanplanet|Gefrorene Wasserwelt|Schneeball" }, "beschreibung": "TRAPPIST-1f ist eine kühle Welt am äußeren Rand der habitablen Zone, vermutlich mit vereister Oberfläche." },
-    { "id": "trappist-g", "name": "TRAPPIST-1g", "typ": "Eisplanet", "um": "trappist-stern", "aAE": 0.04683, "e": 0.002, "i": 0.1, "knoten": 0, "peri": 0, "phase": 320, "radiusKm": 7190, "masseErde": 1.321, "albedo": 0.45, "farbe": [0.74, 0.8, 0.88], "bild": { "art": "planeten", "suche": "Eis-Supererde|Gefrorene Supererde|Eisplanet" }, "beschreibung": "TRAPPIST-1g ist ein großer, kalter Planet, vermutlich mit dicker Eisschale." },
-    { "id": "trappist-h", "name": "TRAPPIST-1h", "typ": "Eisplanet", "um": "trappist-stern", "aAE": 0.06189, "e": 0.006, "i": 0.2, "knoten": 0, "peri": 0, "phase": 30, "radiusKm": 4810, "masseErde": 0.326, "albedo": 0.5, "farbe": [0.78, 0.82, 0.86], "bild": { "art": "planeten", "suche": "Eiszwerg|Tiefgefrorener|Eisplanet" }, "beschreibung": "TRAPPIST-1h ist der äußerste der real bekannten Planeten, eine kleine, eisige Welt." },
-    { "id": "trappist-i", "name": "TRAPPIST-1i", "typ": "Eisplanet", "um": "trappist-stern", "aAE": 0.0815, "e": 0.01, "i": 0.4, "knoten": 0, "peri": 0, "phase": 100, "radiusKm": 4300, "masseErde": 0.22, "albedo": 0.55, "farbe": [0.7, 0.76, 0.84], "bild": { "art": "planeten", "suche": "Stickstoff-Eisplanet|Vagabundierender|Eisplanet" }, "beschreibung": "TRAPPIST-1i ist der achte Planet der APORIA-Fassung: eine kleine, gefrorene Welt jenseits von TRAPPIST-1h, die die Resonanzkette fortsetzt." },
-    { "id": "trappist-staubring", "name": "Kalter Trümmerring", "typ": "Asteroidengürtel", "ringUm": "trappist-stern",
-      "ringeAE": [0.12, 0.14, 0.16, 0.18], "anzahl": 200, "groesseKm": 120, "mindestPx": 5, "farbe": [0.56, 0.5, 0.48],
-      "beschreibung": "Ein schmaler Ring aus Gesteins- und Eistrümmern jenseits der Planeten – Rest der Planetenentstehung." },
-    { "id": "trappist-flare", "name": "Flareschleier", "typ": "Kometengebiet", "ringUm": "trappist-stern", "anomalie": true,
-      "ringeAE": [0.4, 0.55, 0.7], "anzahl": 160, "groesseKm": 60, "mindestPx": 3.5, "farbe": [0.9, 0.45, 0.35],
-      "beschreibung": "Bei starken Strahlungsausbrüchen von TRAPPIST-1 leuchten ferne Staub- und Eiskörper kurz auf – ein schimmernder Schleier, der die Sternaktivität sichtbar macht." }
+    {
+      "id": "trappist-b",
+      "name": "TRAPPIST-1b",
+      "typ": "Gesteinsplanet",
+      "um": "trappist-stern",
+      "aAE": 0.01154,
+      "e": 0.004,
+      "i": 0.2,
+      "knoten": 0,
+      "peri": 0,
+      "phase": 10,
+      "radiusKm": 7110,
+      "masseErde": 1.374,
+      "albedo": 0.1,
+      "farbe": [
+        0.68,
+        0.44,
+        0.34
+      ],
+      "bild": {
+        "art": "planeten",
+        "suche": "Glühender Felsplanet|Tag-Nacht|Lavaplanet"
+      },
+      "beschreibung": "TRAPPIST-1b ist der innerste Planet, eine heiße, vermutlich atmosphärelose Felswelt."
+    },
+    {
+      "id": "trappist-c",
+      "name": "TRAPPIST-1c",
+      "typ": "Gesteinsplanet",
+      "um": "trappist-stern",
+      "aAE": 0.0158,
+      "e": 0.007,
+      "i": 0.1,
+      "knoten": 0,
+      "peri": 0,
+      "phase": 70,
+      "radiusKm": 6990,
+      "masseErde": 1.308,
+      "albedo": 0.12,
+      "farbe": [
+        0.6,
+        0.42,
+        0.36
+      ],
+      "bild": {
+        "art": "planeten",
+        "suche": "Verbrannter|glühenden Rissen|Basaltische"
+      },
+      "beschreibung": "TRAPPIST-1c ist eine heiße Gesteinswelt mit dünner oder fehlender Atmosphäre."
+    },
+    {
+      "id": "trappist-d",
+      "name": "TRAPPIST-1d",
+      "typ": "Gesteinsplanet",
+      "um": "trappist-stern",
+      "aAE": 0.02227,
+      "e": 0.008,
+      "i": 0.1,
+      "knoten": 0,
+      "peri": 0,
+      "phase": 140,
+      "radiusKm": 5020,
+      "masseErde": 0.388,
+      "albedo": 0.3,
+      "farbe": [
+        0.62,
+        0.56,
+        0.5
+      ],
+      "bild": {
+        "art": "planeten",
+        "suche": "Dampfplanet|Heißer|Wasserwelt"
+      },
+      "beschreibung": "TRAPPIST-1d ist ein kleiner Planet am inneren Rand der habitablen Zone."
+    },
+    {
+      "id": "trappist-e",
+      "name": "TRAPPIST-1e",
+      "typ": "Gesteinsplanet",
+      "um": "trappist-stern",
+      "aAE": 0.02925,
+      "e": 0.005,
+      "i": 0,
+      "knoten": 0,
+      "peri": 0,
+      "phase": 200,
+      "radiusKm": 5861,
+      "masseErde": 0.85,
+      "albedo": 0.3,
+      "zielTemperaturC": 8,
+      "farbe": [
+        0.52,
+        0.42,
+        0.6
+      ],
+      "bild": {
+        "art": "planeten",
+        "slug": "felsplanet-im-dichten-violetten-wolkenmantel"
+      },
+      "beschreibung": "TRAPPIST-1e ist die Heimatwelt der Biomechnoiden: ein erdgroßer Gesteinsplanet mit dichter Atmosphäre, Klimagegensätzen und Kristallstürmen."
+    },
+    {
+      "id": "trappist-f",
+      "name": "TRAPPIST-1f",
+      "typ": "Gesteinsplanet",
+      "um": "trappist-stern",
+      "aAE": 0.03849,
+      "e": 0.01,
+      "i": 0.1,
+      "knoten": 0,
+      "peri": 0,
+      "phase": 260,
+      "radiusKm": 6660,
+      "masseErde": 1.039,
+      "albedo": 0.4,
+      "farbe": [
+        0.66,
+        0.74,
+        0.82
+      ],
+      "bild": {
+        "art": "planeten",
+        "suche": "Eis-Ozeanplanet|Gefrorene Wasserwelt|Schneeball"
+      },
+      "beschreibung": "TRAPPIST-1f ist eine kühle Welt am äußeren Rand der habitablen Zone, vermutlich mit vereister Oberfläche."
+    },
+    {
+      "id": "trappist-g",
+      "name": "TRAPPIST-1g",
+      "typ": "Eisplanet",
+      "um": "trappist-stern",
+      "aAE": 0.04683,
+      "e": 0.002,
+      "i": 0.1,
+      "knoten": 0,
+      "peri": 0,
+      "phase": 320,
+      "radiusKm": 7190,
+      "masseErde": 1.321,
+      "albedo": 0.45,
+      "farbe": [
+        0.74,
+        0.8,
+        0.88
+      ],
+      "bild": {
+        "art": "planeten",
+        "suche": "Eis-Supererde|Gefrorene Supererde|Eisplanet"
+      },
+      "beschreibung": "TRAPPIST-1g ist ein großer, kalter Planet, vermutlich mit dicker Eisschale."
+    },
+    {
+      "id": "trappist-h",
+      "name": "TRAPPIST-1h",
+      "typ": "Eisplanet",
+      "um": "trappist-stern",
+      "aAE": 0.06189,
+      "e": 0.006,
+      "i": 0.2,
+      "knoten": 0,
+      "peri": 0,
+      "phase": 30,
+      "radiusKm": 4810,
+      "masseErde": 0.326,
+      "albedo": 0.5,
+      "farbe": [
+        0.78,
+        0.82,
+        0.86
+      ],
+      "bild": {
+        "art": "planeten",
+        "suche": "Eiszwerg|Tiefgefrorener|Eisplanet"
+      },
+      "beschreibung": "TRAPPIST-1h ist der äußerste der real bekannten Planeten, eine kleine, eisige Welt."
+    },
+    {
+      "id": "trappist-i",
+      "name": "TRAPPIST-1i",
+      "typ": "Eisplanet",
+      "um": "trappist-stern",
+      "aAE": 0.0815,
+      "e": 0.01,
+      "i": 0.4,
+      "knoten": 0,
+      "peri": 0,
+      "phase": 100,
+      "radiusKm": 4300,
+      "masseErde": 0.22,
+      "albedo": 0.55,
+      "farbe": [
+        0.7,
+        0.76,
+        0.84
+      ],
+      "bild": {
+        "art": "planeten",
+        "suche": "Stickstoff-Eisplanet|Vagabundierender|Eisplanet"
+      },
+      "beschreibung": "TRAPPIST-1i ist der achte Planet der APORIA-Fassung: eine kleine, gefrorene Welt jenseits von TRAPPIST-1h, die die Resonanzkette fortsetzt."
+    },
+    {
+      "id": "trappist-staubring",
+      "name": "Morenler-Gürtel",
+      "typ": "Asteroidengürtel",
+      "ringUm": "trappist-stern",
+      "ringeAE": [
+        0.12,
+        0.14,
+        0.16,
+        0.18
+      ],
+      "anzahl": 200,
+      "groesseKm": 120,
+      "mindestPx": 5,
+      "farbe": [
+        0.56,
+        0.5,
+        0.48
+      ],
+      "beschreibung": "Ein schmaler Ring aus Gesteins- und Eistrümmern jenseits der Planeten – Rest der Planetenentstehung."
+    },
+    {
+      "id": "trappist-flare",
+      "name": "Flareschleier",
+      "typ": "Kometengebiet",
+      "ringUm": "trappist-stern",
+      "anomalie": true,
+      "ringeAE": [
+        0.4,
+        0.55,
+        0.7
+      ],
+      "anzahl": 160,
+      "groesseKm": 60,
+      "mindestPx": 3.5,
+      "farbe": [
+        0.9,
+        0.45,
+        0.35
+      ],
+      "beschreibung": "Bei starken Strahlungsausbrüchen von TRAPPIST-1 leuchten ferne Staub- und Eiskörper kurz auf – ein schimmernder Schleier, der die Sternaktivität sichtbar macht."
+    }
   ]
 }

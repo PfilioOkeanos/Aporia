@@ -1,0 +1,588 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Varak",
+  "genitiv": "von Varak",
+  "dossierName": "Varak-Dossier",
+  "klasse": "Periodischer Komet",
+  "intro": "Eisreicher Komet auf exzentrischer Bahn. Bei der Annäherung an Elaris können eine Koma sowie Staub- und Ionenschweife entstehen.",
+  "globusDaten": {
+    "planet": "varak",
+    "klasse": "Eis",
+    "radius": 8000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=elaris-stern&objekt=elaris-varak",
+  "grunddaten": [
+    [
+      "System-ID",
+      "elaris-varak"
+    ],
+    [
+      "Archiv-ID",
+      "AP-ELARIS-VARAK"
+    ],
+    [
+      "Typ",
+      "Periodischer Komet"
+    ],
+    [
+      "Sternsystem",
+      "Elaris-System"
+    ],
+    [
+      "Zentralkörper",
+      "Elaris A"
+    ],
+    [
+      "Große Halbachse",
+      "13,5 AE"
+    ],
+    [
+      "Umlaufzeit",
+      "55,5 Jahre"
+    ],
+    [
+      "Durchmesser",
+      "16 km"
+    ],
+    [
+      "Masse",
+      "1,29 · 10^15 kg"
+    ],
+    [
+      "Schwerkraft",
+      "0,13 cm/s²"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -213 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Elaris-System"
+    ],
+    [
+      "Zentralstern",
+      "Elaris A",
+      "inhalte/himmelskoerper/sterne/details/elaris-a/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "13,5 AE"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Varak im Elaris-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=elaris-stern&objekt=elaris-varak",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Elaris A",
+      "href": "inhalte/himmelskoerper/sterne/details/elaris-a/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Neurofloren",
+      "titel": "Ilaruun",
+      "href": "inhalte/himmelskoerper/planeten/details/ilaruun/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Neurofloren",
+      "href": "inhalte/spezies/Mentale Spezies/Neurofloren/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Elaris-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=elaris-stern&objekt=elaris-varak"
+    },
+    {
+      "titel": "Speziesdossier Neurofloren",
+      "href": "inhalte/spezies/Mentale Spezies/Neurofloren/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#06080a",
+      "tiefe": "#0d1315",
+      "akzent": "#a7c7d7",
+      "sand": "#aec3b7",
+      "moos": "#88bead",
+      "ozean": "#6da5ce",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#364c57"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Umlaufbahn"
+      ],
+      [
+        "Hülle",
+        "Schweif"
+      ],
+      [
+        "Hülle",
+        "Koma"
+      ],
+      [
+        "Kern",
+        "Kern"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Kern": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Kern von Varak.",
+      "abschnitte": [
+        {
+          "titel": "Kometenkern",
+          "text": [
+            "Der Kern von Varak misst rund 16 km und besteht aus einem lockeren Gemenge aus Eis, Staub und Gestein."
+          ],
+          "schichten": [
+            [
+              "Staubkruste",
+              "Dunkle, kohlenstoffreiche Oberfläche"
+            ],
+            [
+              "Eis-Staub-Gemisch",
+              "Wassereis, Kohlendioxid und Staub"
+            ],
+            [
+              "Kern",
+              "Lockeres Eis-Gestein-Gemenge"
+            ]
+          ]
+        }
+      ]
+    },
+    "Koma": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Koma von Varak.",
+      "abschnitte": [
+        {
+          "titel": "Koma",
+          "text": [
+            "Nähert sich Varak dem Stern Elaris A, verdampft Eis und bildet eine leuchtende Gashülle um den Kern."
+          ]
+        }
+      ]
+    },
+    "Schweif": {
+      "gruppe": "Natur",
+      "icon": "☄",
+      "intro": "Schweif von Varak.",
+      "abschnitte": [
+        {
+          "titel": "Schweif",
+          "text": [
+            "Eisreicher Komet auf exzentrischer Bahn. Bei der Annäherung an Elaris können eine Koma sowie Staub- und Ionenschweife entstehen."
+          ]
+        }
+      ]
+    },
+    "Umlaufbahn": {
+      "gruppe": "Wissenschaft",
+      "icon": "◌",
+      "intro": "Umlaufbahn von Varak.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Elaris A"
+            ],
+            [
+              "Große Halbachse",
+              "13,5 AE (2.019,6 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,94"
+            ],
+            [
+              "Bahnneigung",
+              "44°"
+            ],
+            [
+              "Umlaufzeit",
+              "55,5 Jahre"
+            ],
+            [
+              "Einstrahlung",
+              "0,002-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Sternnächster und fernster Punkt",
+          "daten": [
+            [
+              "Perihel",
+              "0,81 AE"
+            ],
+            [
+              "Aphel",
+              "26,19 AE"
+            ]
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Varak auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Varak",
+          "text": [
+            "Eisreicher Komet auf exzentrischer Bahn. Bei der Annäherung an Elaris können eine Koma sowie Staub- und Ionenschweife entstehen.",
+            "Varak umkreist Elaris A in 13,5 AE Abstand und braucht für einen Umlauf 55,5 Jahre."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Periodischer Komet"
+            ],
+            [
+              "Sternsystem",
+              "Elaris-System"
+            ],
+            [
+              "Zentralkörper",
+              "Elaris A"
+            ],
+            [
+              "Große Halbachse",
+              "13,5 AE"
+            ],
+            [
+              "Umlaufzeit",
+              "55,5 Jahre"
+            ],
+            [
+              "Durchmesser",
+              "16 km"
+            ],
+            [
+              "Masse",
+              "1,29 · 10^15 kg"
+            ],
+            [
+              "Schwerkraft",
+              "0,13 cm/s²"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -213 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Ilaruun",
+          "text": [
+            "Das Elaris-System ist die Heimat der Neurofloren: Ihr Planet Ilaruun umkreist Elaris A."
+          ],
+          "verweise": [
+            [
+              "Ilaruun",
+              "inhalte/himmelskoerper/planeten/details/ilaruun/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Neurofloren",
+              "inhalte/spezies/Mentale Spezies/Neurofloren/hauptseite/Spezies.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Komet Varak",
+          "text": [
+            "Varak besitzt einen eisreichen Kern.",
+            "Während seiner Annäherung an Elaris können flüchtige Stoffe sublimieren.",
+            "Es entstehen eine Koma und unter geeigneten Bedingungen ein Staub- und Ionenschweif.",
+            "Der Komet durchquert die Entfernungsbereiche mehrerer Planeten.",
+            "Deshalb können gravitative Störungen seine Umlaufbahn langfristig verändern.",
+            "Die genannte Umlaufzeit ist eine gegenwärtige Modellperiode, keine über Milliarden Jahre unveränderliche Bahn."
+          ],
+          "daten": [
+            [
+              "Typ",
+              "Periodischer Komet"
+            ],
+            [
+              "Große Bahnhalbachse",
+              "13,5 AU"
+            ],
+            [
+              "Bahnexzentrizität",
+              "0,94"
+            ],
+            [
+              "Perihel",
+              "0,81 AU"
+            ],
+            [
+              "Aphel",
+              "26,19 AU"
+            ],
+            [
+              "Umlaufzeit",
+              "Etwa 55,5 Erdjahre"
+            ],
+            [
+              "Bahnneigung",
+              "Vorläufig 44°"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Varak im Elaris-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Elaris A"
+            ],
+            [
+              "Große Halbachse",
+              "13,5 AE (2.019,6 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,94"
+            ],
+            [
+              "Bahnneigung",
+              "44°"
+            ],
+            [
+              "Umlaufzeit",
+              "55,5 Jahre"
+            ],
+            [
+              "Einstrahlung",
+              "0,002-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Elaris A · Stern",
+              "Orangefarbener Hauptreihenstern (K2 V)"
+            ],
+            [
+              "Kessar · 0,19 AE",
+              "Heißer eisenreicher Gesteinsplanet"
+            ],
+            [
+              "Orveth · 0,38 AE",
+              "Heißer trockener Gesteinsplanet"
+            ],
+            [
+              "Ilaruun · 0,66 AE",
+              "Gemäßigter terrestrischer Gesteinsplanet"
+            ],
+            [
+              "Venyra · 1,17 AE",
+              "Kalter Gesteins- und Eisplanet"
+            ],
+            [
+              "Daragon · 3,2 AE",
+              "Gasriese"
+            ],
+            [
+              "Shyren · 5,9 AE",
+              "Blauer Eisriese"
+            ],
+            [
+              "Eivara · 12,8 AE",
+              "Eis-Gesteins-Zwergplanet"
+            ],
+            [
+              "Tiruun · 1,7–2,4 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Kaelor-Saum · 9,5–30 AE",
+              "Äußeres Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Elaris A",
+              "inhalte/himmelskoerper/sterne/details/elaris-a/hauptseite/index.html"
+            ],
+            [
+              "Kessar",
+              "inhalte/himmelskoerper/planeten/details/kessar/hauptseite/index.html"
+            ],
+            [
+              "Orveth",
+              "inhalte/himmelskoerper/planeten/details/orveth/hauptseite/index.html"
+            ],
+            [
+              "Ilaruun",
+              "inhalte/himmelskoerper/planeten/details/ilaruun/hauptseite/index.html"
+            ],
+            [
+              "Venyra",
+              "inhalte/himmelskoerper/planeten/details/venyra/hauptseite/index.html"
+            ],
+            [
+              "Daragon",
+              "inhalte/himmelskoerper/planeten/details/daragon/hauptseite/index.html"
+            ],
+            [
+              "Shyren",
+              "inhalte/himmelskoerper/planeten/details/shyren/hauptseite/index.html"
+            ],
+            [
+              "Eivara",
+              "inhalte/himmelskoerper/zwergplaneten/details/eivara/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Varak.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "8 km"
+            ],
+            [
+              "Masse",
+              "1,29 · 10^15 kg"
+            ],
+            [
+              "Mittlere Dichte",
+              "0,6 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "0 m/s² (0 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "0 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Varak.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Varak stammt aus den kalten Außenbereichen des Elaris-Systems und wurde auf seine heutige, langgestreckte Bahn gelenkt."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Varak.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Woher stammt der Komet genau?",
+            "Wie lange übersteht sein Kern noch die Annäherungen an den Stern?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Varak ist mit allen Bahndaten im Elaris-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=elaris-stern&objekt=elaris-varak"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Varak.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Eisreicher Komet auf exzentrischer Bahn. Bei der Annäherung an Elaris können eine Koma sowie Staub- und Ionenschweife entstehen."
+          ]
+        },
+        {
+          "titel": "Verwandte Dossiers",
+          "verweise": [
+            [
+              "Elaris-System",
+              "inhalte/himmelskoerper/sternensysteme/details/elaris-system/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Varak.",
+      "abschnitte": [
+        {
+          "titel": "Varak",
+          "bild": true,
+          "bildtext": "Varak"
+        }
+      ]
+    }
+  }
+}

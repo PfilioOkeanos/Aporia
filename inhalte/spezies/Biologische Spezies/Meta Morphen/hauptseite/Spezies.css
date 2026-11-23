@@ -1,2 +1,119 @@
-/* Meta Morphen – Hauptseite · erzeugt vom Spezies-Baukasten (scripts/spezies)
-   Aufbau: inhalte/spezies/_gemeinsam/spezies-standard.css · Farben: ../metamorphen-basis.css · eigene Anpassungen hier ergänzen. */
+/* Metamorphen – Hauptseite · erzeugt von scripts/spezies/eigene/metamorphen.mjs (Vorlage: metamorphen-hauptseite.css)
+   Gemeinsames Design: ../metamorphen-basis.css · hier nur der Aufbau der Übersicht.
+   Farbwelt: Pflaumenschwarz, Karmesinrosa (--mm-violett) und Knochenweiß (--mm-cyan); Leitmotiv „Doppelnaht“. */
+
+.mm-hauptseite .mm-hero { min-height: clamp(22rem, 38cqi, 34rem); }
+.mm-hauptseite .mm-hero-bild { width: 72% !important; object-position: 55% 40%; }
+.mm-hauptseite .mm-hero h1 { letter-spacing: .05em; text-shadow: 0 0 26px #e07a8f55, 0 2px 18px #000; }
+.mm-kicker--linie { display: flex; align-items: center; gap: .8rem; }
+.mm-kicker--linie::after { content: ""; width: 6rem; height: 1px; background: linear-gradient(90deg, var(--mm-violett), transparent); }
+.mm-unterzeile { color: var(--mm-cyan) !important; }
+.mm-hero-links { display: flex; flex-wrap: wrap; gap: 1.4rem; margin-top: 1.3rem !important; }
+.mm-hero-links a { padding-bottom: .2rem; border-bottom: 1px solid var(--mm-linie-hell); color: var(--mm-text) !important; font: 500 1rem/1.3 var(--mm-serif); text-decoration: none; }
+.mm-hero-links a:hover { color: var(--mm-violett-hell) !important; border-color: var(--mm-violett); }
+
+/* Doppelnaht: zwei leuchtende Linien, die langsam pulsieren */
+.mm-naht { position: absolute; inset: 0 0 0 auto; z-index: -1; width: 72%; pointer-events: none; }
+.mm-naht i { position: absolute; top: 6%; bottom: 6%; width: 2px; border-radius: 2px; background: linear-gradient(180deg, transparent, var(--mm-violett) 20%, var(--mm-cyan) 50%, var(--mm-violett) 80%, transparent); box-shadow: 0 0 .9rem .1rem #e07a8f66; opacity: .55; animation: mm-naht 6s ease-in-out infinite; }
+.mm-naht i:first-child { left: 38%; transform: rotate(4deg); }
+.mm-naht i:last-child { left: 41%; transform: rotate(4deg); animation-delay: 1.5s; }
+@keyframes mm-naht { 0%, 100% { opacity: .2; } 50% { opacity: .7; } }
+
+/* Kennzahlen */
+.mm-kennzahlen { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); margin: 0 0 var(--mm-raum); padding: .3rem; }
+.mm-kennzahlen > div { display: grid; gap: .1rem; padding: .7rem .9rem; text-align: center; }
+.mm-kennzahlen > div + div { border-left: 1px solid var(--mm-linie); }
+.mm-kennzahlen dt { color: var(--mm-leise); font: 600 .68rem/1.3 "Segoe UI", system-ui, sans-serif; letter-spacing: .14em; text-transform: uppercase; }
+.mm-kennzahlen dd { margin: 0; color: var(--mm-violett-hell); font: 600 clamp(1.3rem, 2.4cqi, 1.8rem)/1.15 var(--mm-serif); }
+.mm-kennzahlen dd a { color: inherit !important; text-decoration: none; }
+.mm-kennzahlen dd a:hover { color: var(--mm-cyan) !important; }
+.mm-kennzahlen span { color: var(--mm-leise); font-size: .78rem; }
+
+.mm-abschnitt { margin-top: calc(var(--mm-raum) * 1.6); }
+.mm-lead { max-width: 62rem; margin: -.3rem 0 var(--mm-raum) !important; color: var(--mm-leise); }
+
+/* Bewusstseinskern mit kreisenden Körpergruppen */
+.mm-kern { display: grid; grid-template-columns: minmax(15rem, .8fr) minmax(0, 1.4fr); gap: calc(var(--mm-raum) * 1.6); align-items: center; }
+.mm-kern-grafik { position: relative; aspect-ratio: 1; max-width: 22rem; width: 100%; margin: auto; border-radius: 50%; background: radial-gradient(circle, #e07a8f22 0 18%, transparent 19%), repeating-radial-gradient(circle, transparent 0 22%, #ec8ca024 22.4% 22.8%, transparent 23% 36%); }
+.mm-kern-grafik::before { content: ""; position: absolute; inset: 14%; border: 1px dashed var(--mm-linie-hell); border-radius: 50%; animation: mm-dreh 60s linear infinite; }
+.mm-kern-mitte { position: absolute; inset: 34%; display: grid; place-items: center; border-radius: 50%; background: radial-gradient(circle at 40% 35%, #ffd6de, #e07a8f 45%, #5a1f2c); color: #1a0a0f; font: 700 clamp(.62rem, 1.1cqi, .82rem)/1.1 "Segoe UI", system-ui, sans-serif; text-align: center; letter-spacing: .04em; box-shadow: 0 0 2rem #e07a8f88; animation: mm-puls 4s ease-in-out infinite; }
+.mm-kern-koerper { --w: calc(var(--i) * 60deg - 90deg); position: absolute; left: 50%; top: 50%; padding: .25rem .55rem; border: 1px solid var(--mm-linie-hell); border-radius: 999px; background: #150e11ee; color: var(--mm-cyan); font: 600 .68rem/1.2 "Segoe UI", system-ui, sans-serif; white-space: nowrap; transform: translate(-50%, -50%) rotate(var(--w)) translateX(min(9.5rem, 40cqi)) rotate(calc(var(--w) * -1)); }
+@keyframes mm-dreh { to { transform: rotate(360deg); } }
+@keyframes mm-puls { 0%, 100% { box-shadow: 0 0 1.4rem #e07a8f66; } 50% { box-shadow: 0 0 2.6rem #e07a8fbb; } }
+.mm-kern-text { display: grid; gap: .7rem; }
+.mm-kern-text strong { color: var(--mm-violett-hell); }
+.mm-fakten-liste { display: grid; gap: .45rem; margin: 0; padding: 0; list-style: none; }
+.mm-fakten-liste li { display: grid; gap: .1rem; padding: .55rem .75rem; border-left: 2px solid var(--mm-violett); border-radius: 0 10px 10px 0; background: #140d10b3; font-size: .88rem; }
+.mm-fakten-liste b { color: var(--mm-cyan); font: 600 .98rem/1.2 var(--mm-serif); }
+
+/* Sechs anatomische Hauptgruppen */
+.mm-gruppen { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--mm-raum); }
+.mm-gruppe { display: grid; grid-template-rows: auto 1fr; overflow: hidden; transition: border-color .25s, transform .25s; }
+.mm-gruppe:hover { border-color: var(--mm-violett); transform: translateY(-2px); }
+.mm-gruppe-bild { position: relative; margin: 0; aspect-ratio: 16 / 10; overflow: hidden; background: #060404; }
+.mm-gruppe-bild img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s ease; }
+.mm-gruppe:hover .mm-gruppe-bild img { transform: scale(1.05); }
+.mm-gruppe-nr { position: absolute; left: .6rem; top: .5rem; padding: .1rem .45rem; border: 1px solid var(--mm-linie-hell); border-radius: 6px; background: #0b0709cc; color: var(--mm-cyan); font: 600 .72rem/1.3 ui-monospace, Consolas, monospace; }
+.mm-gruppe-text { display: grid; align-content: start; gap: .45rem; padding: .8rem .95rem 1rem; }
+.mm-gruppe h3 { color: var(--mm-violett-hell); font: 600 1.25rem/1.15 var(--mm-serif); }
+.mm-gruppe p { font-size: .88rem; line-height: 1.5; }
+.mm-gruppe-mass { justify-self: start; padding: .15rem .55rem; border: 1px solid var(--mm-linie); border-radius: 999px; color: var(--mm-leise); font-size: .74rem; }
+
+/* Großgemeinschaften */
+.mm-buende-raster { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .55rem; }
+.mm-rat, .mm-bund { display: grid; gap: .25rem; padding: .75rem .85rem; border: 1px solid var(--mm-linie); border-radius: 12px; background: #140d10b3; }
+.mm-rat { grid-row: span 2; border-color: var(--mm-violett); background: linear-gradient(160deg, #5a1f2c66, #140d10cc); }
+.mm-rat strong, .mm-bund strong { color: var(--mm-violett-hell); font: 600 1.05rem/1.2 var(--mm-serif); }
+.mm-rat strong { color: var(--mm-cyan); font-size: 1.2rem; }
+.mm-rat p, .mm-bund p { font-size: .85rem; line-height: 1.45; }
+
+/* Steckbrief + Heimatwelt */
+.mm-zwei { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: var(--mm-raum); align-items: start; margin-top: calc(var(--mm-raum) * 1.6); }
+.mm-zwei .mm-dossier-steckbrief { margin-top: 0; }
+.mm-zwei .mm-dossier-raster { grid-template-columns: minmax(0, 1fr); }
+.mm-welt { overflow: hidden; }
+.mm-welt-bild { display: block; aspect-ratio: 16 / 10; overflow: hidden; background: #000; }
+.mm-welt-bild img { width: 100%; height: 100%; object-fit: cover; object-position: center 45%; transition: transform .8s ease; }
+.mm-welt-bild:hover img { transform: scale(1.04); }
+.mm-welt .mm-block { display: grid; gap: .7rem; }
+.mm-mini { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .35rem .7rem; margin: 0; }
+.mm-mini > div { min-width: 0; padding-top: .3rem; border-top: 1px solid #ffffff12; }
+.mm-mini dt { color: var(--mm-leise); font-size: .7rem; letter-spacing: .06em; text-transform: uppercase; }
+.mm-mini dd { margin: 0; font-size: .85rem; overflow-wrap: anywhere; }
+
+/* Themenbereiche */
+.mm-themen-raster { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--mm-raum); }
+.mm-thema { display: grid; align-content: end; gap: .25rem; min-height: 9.5rem; padding: .8rem; overflow: hidden; isolation: isolate; color: var(--mm-text) !important; text-decoration: none; }
+.mm-thema-bild { position: absolute !important; inset: 0; z-index: -2; width: 100% !important; height: 100% !important; object-fit: cover; object-position: center 35%; transition: transform .6s ease; }
+.mm-thema::before { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(0deg, #0b0709 8%, #0b0709cc 50%, #0b070926 100%); }
+.mm-thema:hover { border-color: var(--mm-violett); box-shadow: 0 0 1.1rem #e07a8f44; }
+.mm-thema:hover .mm-thema-bild { transform: scale(1.05); }
+.mm-thema-kopf { display: flex; gap: .45rem; align-items: center; }
+.mm-thema-text { font-size: .82rem; line-height: 1.35; }
+.mm-layout--fuss { margin-top: var(--mm-raum); }
+
+@media (prefers-reduced-motion: reduce) {
+    .mm-naht i, .mm-kern-grafik::before, .mm-kern-mitte { animation: none; }
+}
+@container (max-width: 1100px) {
+    .mm-gruppen, .mm-buende-raster { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .mm-zwei { grid-template-columns: minmax(0, 1fr); }
+}
+@container (max-width: 820px) {
+    .mm-kennzahlen { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .mm-kennzahlen > div:nth-child(4) { border-left: 0; }
+    .mm-kern { grid-template-columns: minmax(0, 1fr); }
+    .mm-themen-raster { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .mm-hauptseite .mm-hero-bild { width: 100% !important; }
+    .mm-naht { width: 100%; }
+}
+@container (max-width: 560px) {
+    .mm-kennzahlen { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .mm-kennzahlen > div { border-left: 0 !important; border-top: 1px solid var(--mm-linie); }
+    .mm-kennzahlen > div:nth-child(-n+2) { border-top: 0; }
+    .mm-gruppen, .mm-buende-raster, .mm-themen-raster { grid-template-columns: minmax(0, 1fr); }
+    .mm-rat { grid-row: auto; }
+    .mm-kern-grafik { max-width: 17rem; }
+    .mm-kern-koerper { transform: translate(-50%, -50%) rotate(var(--w)) translateX(7rem) rotate(calc(var(--w) * -1)); font-size: .6rem; }
+    .mm-welt .mm-mini { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}

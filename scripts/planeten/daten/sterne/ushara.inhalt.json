@@ -1,0 +1,611 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Ushara",
+  "genitiv": "von Ushara",
+  "dossierName": "Ushara-Dossier",
+  "klasse": "Orangefarbener Zwerg (K3 V)",
+  "intro": "Ushara ist der orangefarbene Hauptreihenstern (K3 V) des Kharuun-Systems, Heimatstern der Pyronoiden. 0,78 Sonnenmassen, 0,76 Sonnenradien, 30 % der Sonnenleuchtkraft. Ein Einzelstern ohne stellaren Begleiter. Ushara ist der Zentralstern des Kharuun-Systems.",
+  "globusDaten": {
+    "planet": "orangefarbener-k-stern-im-all",
+    "klasse": "Vulkan",
+    "radius": 528732000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=kharuun-stern",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-6E970FF7F7"
+    ],
+    [
+      "Typ",
+      "Orangefarbener Zwerg (K3 V)"
+    ],
+    [
+      "Sternsystem",
+      "Kharuun-System"
+    ],
+    [
+      "Masse",
+      "0,78 Sonnenmassen"
+    ],
+    [
+      "Radius",
+      "0,76 Sonnenradien"
+    ],
+    [
+      "Leuchtkraft",
+      "0,3 Sonnenleuchtkräfte"
+    ],
+    [
+      "Oberflächentemperatur",
+      "ca. 4.800 K"
+    ],
+    [
+      "Alter",
+      "ca. 5,1 Mrd. Jahre"
+    ],
+    [
+      "Monde",
+      "6 (Ushara I, Kharuun, Ushara III, Trojaner von Ushara III, Ushara IV, Feuerbote)"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Kharuun-System"
+    ],
+    [
+      "Entfernung zur Sonne",
+      "9,8 Lichtjahre"
+    ],
+    [
+      "Nächste Nachbarsysteme",
+      "Sonnensystem (9,8 Lj), Osselyr-System (11,2 Lj)"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Ushara im Kharuun-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=kharuun-stern",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Ushara I",
+      "href": "inhalte/himmelskoerper/planeten/details/ushara-i/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Kharuun",
+      "href": "inhalte/himmelskoerper/planeten/details/kharuun/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Ushara III",
+      "href": "inhalte/himmelskoerper/planeten/details/ushara-iii/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Trojaner von Ushara III",
+      "href": "inhalte/himmelskoerper/asteroiden/details/trojaner-von-ushara-iii/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Ushara IV",
+      "href": "inhalte/himmelskoerper/planeten/details/ushara-iv/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Feuerbote",
+      "href": "inhalte/himmelskoerper/kometen/details/feuerbote/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Pyronoiden",
+      "titel": "Kharuun",
+      "href": "inhalte/himmelskoerper/planeten/details/kharuun/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Pyronoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Pyronoiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Kharuun-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=kharuun-stern"
+    },
+    {
+      "titel": "Speziesdossier Pyronoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Pyronoiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#0d0703",
+      "tiefe": "#1c1007",
+      "akzent": "#ffb984",
+      "sand": "#ffb882",
+      "moos": "#d9af65",
+      "ozean": "#ad9868",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#73431e"
+    },
+    "schichten": [
+      [
+        "Strahlung",
+        "Leuchtkraft"
+      ],
+      [
+        "Hülle",
+        "Spektralklasse"
+      ],
+      [
+        "Kern",
+        "Fusion"
+      ],
+      [
+        "Zeit",
+        "Lebenszyklus"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Spektralklasse": {
+      "gruppe": "Wissenschaft",
+      "icon": "✦",
+      "intro": "Spektralklasse von Ushara.",
+      "abschnitte": [
+        {
+          "titel": "Einordnung",
+          "daten": [
+            [
+              "Typ",
+              "Orangefarbener Zwerg (K3 V)"
+            ],
+            [
+              "Oberflächentemperatur",
+              "ca. 4.800 K"
+            ],
+            [
+              "Farbe",
+              "orange"
+            ]
+          ]
+        }
+      ]
+    },
+    "Fusion": {
+      "gruppe": "Wissenschaft",
+      "icon": "☀",
+      "intro": "Fusion von Ushara.",
+      "abschnitte": [
+        {
+          "titel": "Energiequelle",
+          "text": [
+            "Im Kern von Ushara verschmilzt Wasserstoff zu Helium."
+          ]
+        }
+      ]
+    },
+    "Leuchtkraft": {
+      "gruppe": "Wissenschaft",
+      "icon": "☀",
+      "intro": "Leuchtkraft von Ushara.",
+      "abschnitte": [
+        {
+          "titel": "Strahlung",
+          "daten": [
+            [
+              "Leuchtkraft",
+              "0,3 Sonnenleuchtkräfte"
+            ],
+            [
+              "Habitable Zone",
+              "0,52–0,91 AE"
+            ]
+          ]
+        }
+      ]
+    },
+    "Lebenszyklus": {
+      "gruppe": "Wissenschaft",
+      "icon": "⧗",
+      "intro": "Lebenszyklus von Ushara.",
+      "abschnitte": [
+        {
+          "titel": "Lebensdauer",
+          "text": [
+            "Ein Stern mit 0,78 Sonnenmassen bleibt rund 19 Milliarden Jahre auf der Hauptreihe; Ushara ist etwa 5,1 Milliarden Jahre alt."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Ushara auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Ushara",
+          "text": [
+            "Ushara ist der orangefarbene Hauptreihenstern (K3 V) des Kharuun-Systems, Heimatstern der Pyronoiden. 0,78 Sonnenmassen, 0,76 Sonnenradien, 30 % der Sonnenleuchtkraft. Ein Einzelstern ohne stellaren Begleiter.",
+            "Ushara ist der Zentralstern des Kharuun-Systems."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Orangefarbener Zwerg (K3 V)"
+            ],
+            [
+              "Sternsystem",
+              "Kharuun-System"
+            ],
+            [
+              "Masse",
+              "0,78 Sonnenmassen"
+            ],
+            [
+              "Radius",
+              "0,76 Sonnenradien"
+            ],
+            [
+              "Leuchtkraft",
+              "0,3 Sonnenleuchtkräfte"
+            ],
+            [
+              "Oberflächentemperatur",
+              "ca. 4.800 K"
+            ],
+            [
+              "Alter",
+              "ca. 5,1 Mrd. Jahre"
+            ],
+            [
+              "Monde",
+              "6 (Ushara I, Kharuun, Ushara III, Trojaner von Ushara III, Ushara IV, Feuerbote)"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Kharuun",
+          "text": [
+            "Das Kharuun-System ist die Heimat der Pyronoiden: Ihr Planet Kharuun umkreist Ushara."
+          ],
+          "verweise": [
+            [
+              "Kharuun",
+              "inhalte/himmelskoerper/planeten/details/kharuun/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Pyronoiden",
+              "inhalte/spezies/Biologische Spezies/Pyronoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Ushara im Raum.",
+      "abschnitte": [
+        {
+          "titel": "Lage im Raum",
+          "daten": [
+            [
+              "Entfernung zur Sonne",
+              "9,8 Lichtjahre"
+            ],
+            [
+              "Nächste Nachbarsysteme",
+              "Sonnensystem (9,8 Lj), Osselyr-System (11,2 Lj), Seryn-System (11,4 Lj)"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Ushara · Stern",
+              "Orangefarbener Zwerg (K3 V)"
+            ],
+            [
+              "Ushara I · 0,02 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Kharuun · 0,36 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Ushara III · 0,57 AE",
+              "Gasriese"
+            ],
+            [
+              "Ushara IV · 4,8 AE",
+              "Eisriese"
+            ],
+            [
+              "Schlackengürtel · 1,3–2,1 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 30–42 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Ushara I",
+              "inhalte/himmelskoerper/planeten/details/ushara-i/hauptseite/index.html"
+            ],
+            [
+              "Kharuun",
+              "inhalte/himmelskoerper/planeten/details/kharuun/hauptseite/index.html"
+            ],
+            [
+              "Ushara III",
+              "inhalte/himmelskoerper/planeten/details/ushara-iii/hauptseite/index.html"
+            ],
+            [
+              "Ushara IV",
+              "inhalte/himmelskoerper/planeten/details/ushara-iv/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Ushara.",
+      "abschnitte": [
+        {
+          "titel": "Physik",
+          "daten": [
+            [
+              "Masse",
+              "0,78 Sonnenmassen"
+            ],
+            [
+              "Radius",
+              "0,76 Sonnenradien"
+            ],
+            [
+              "Leuchtkraft",
+              "0,3 Sonnenleuchtkräfte"
+            ],
+            [
+              "Oberflächentemperatur",
+              "ca. 4.800 K"
+            ],
+            [
+              "Alter",
+              "ca. 5,1 Mrd. Jahre"
+            ],
+            [
+              "Monde",
+              "6 (Ushara I, Kharuun, Ushara III, Trojaner von Ushara III, Ushara IV, Feuerbote)"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Ushara.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Ushara entstand zusammen mit dem Kharuun-System vor rund 5,1 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Umgebung": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Umgebung von Ushara.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Ushara · Stern",
+              "Orangefarbener Zwerg (K3 V)"
+            ],
+            [
+              "Ushara I · 0,02 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Kharuun · 0,36 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Ushara III · 0,57 AE",
+              "Gasriese"
+            ],
+            [
+              "Ushara IV · 4,8 AE",
+              "Eisriese"
+            ],
+            [
+              "Schlackengürtel · 1,3–2,1 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 30–42 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Ushara I",
+              "inhalte/himmelskoerper/planeten/details/ushara-i/hauptseite/index.html"
+            ],
+            [
+              "Kharuun",
+              "inhalte/himmelskoerper/planeten/details/kharuun/hauptseite/index.html"
+            ],
+            [
+              "Ushara III",
+              "inhalte/himmelskoerper/planeten/details/ushara-iii/hauptseite/index.html"
+            ],
+            [
+              "Ushara IV",
+              "inhalte/himmelskoerper/planeten/details/ushara-iv/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Nachbarsysteme",
+          "liste": [
+            "Sonnensystem – 9,8 Lichtjahre",
+            "Osselyr-System – 11,2 Lichtjahre",
+            "Seryn-System – 11,4 Lichtjahre",
+            "Iovar-System – 13,5 Lichtjahre",
+            "Halvorn-System – 14,1 Lichtjahre"
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Ushara.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Wie stark schwankt die magnetische Aktivität?",
+            "Wie hat sich die Leuchtkraft seit der Entstehung verändert?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Ushara ist mit allen Bahndaten im Kharuun-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=kharuun-stern"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Ushara.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "6 Monde: Ushara I, Kharuun, Ushara III, Trojaner von Ushara III, Ushara IV, Feuerbote"
+          ]
+        },
+        {
+          "titel": "Monde",
+          "karten": [
+            {
+              "titel": "Ushara I",
+              "text": "7.800 km Durchmesser, Umlauf in 20,1 Stunden. Ushara I ist ein gebundener Glutplanet dicht am Stern. Seine Tagseite verdampft Gestein; ein Schweif aus Mineraldampf zieht hinter ihm her – die auffälligste Anomalie des Systems."
+            },
+            {
+              "titel": "Kharuun",
+              "text": "14.988 km Durchmesser, Umlauf in 89,3 Tage. Kharuun ist die vulkanisch hochaktive Heimatwelt der Pyronoiden. Er liegt innerhalb der inneren Grenze der habitablen Zone; eine dichte Kohlendioxid-Schwefel-Atmosphäre und starke innere Wärme machen ihn zur Glutwelt."
+            },
+            {
+              "titel": "Ushara III",
+              "text": "138.000 km Durchmesser, Umlauf in 178,6 Tage. Ushara III ist ein warmer Gasriese mit 0,62 Jupitermassen. Er umläuft den Stern im Verhältnis 2:1 zu Kharuun; diese Bahnresonanz hält die Exzentrizität Kharuuns aufrecht und speist so dessen Gezeitenheizung."
+            },
+            {
+              "titel": "Trojaner von Ushara III",
+              "text": "120 km Durchmesser, Umlauf in 178,7 Tage. Am vorauseilenden Lagrange-Punkt L4 von Ushara III sammelt sich eine Gruppe von Trojaner-Asteroiden. Der größte Körper ist ein doppelköpfiger Kontaktasteroid von rund 120 km Länge."
+            },
+            {
+              "titel": "Ushara IV",
+              "text": "49.000 km Durchmesser, Umlauf in 11,9 Jahre. Ushara IV ist ein kalter Eisriese am Rand des Planetensystems. Für Pyronoiden lebensfeindlich kalt, wird er nur von unbemannten Sonden erforscht."
+            },
+            {
+              "titel": "Feuerbote",
+              "text": "10 km Durchmesser, Umlauf in 25,6 Jahre. Der Feuerbote ist ein periodischer Komet (rund 26 Jahre), der sich Ushara bis auf 0,72 AE nähert. Sein rostrot-blauer Schweif ist dann vom Kharuun-Orbit aus deutlich sichtbar; viele Traditionen deuten ihn als Vorzeichen."
+            }
+          ],
+          "verweise": [
+            [
+              "Ushara I",
+              "inhalte/himmelskoerper/planeten/details/ushara-i/hauptseite/index.html"
+            ],
+            [
+              "Kharuun",
+              "inhalte/himmelskoerper/planeten/details/kharuun/hauptseite/index.html"
+            ],
+            [
+              "Ushara III",
+              "inhalte/himmelskoerper/planeten/details/ushara-iii/hauptseite/index.html"
+            ],
+            [
+              "Trojaner von Ushara III",
+              "inhalte/himmelskoerper/asteroiden/details/trojaner-von-ushara-iii/hauptseite/index.html"
+            ],
+            [
+              "Ushara IV",
+              "inhalte/himmelskoerper/planeten/details/ushara-iv/hauptseite/index.html"
+            ],
+            [
+              "Feuerbote",
+              "inhalte/himmelskoerper/kometen/details/feuerbote/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Ushara.",
+      "abschnitte": [
+        {
+          "titel": "Ushara – Archivbild",
+          "bild": true,
+          "bildtext": "Ushara"
+        }
+      ]
+    }
+  }
+}

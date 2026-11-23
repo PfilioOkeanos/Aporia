@@ -1,2 +1,3 @@
-// Regeneranten – Heimatwelt · erzeugt vom Spezies-Baukasten (scripts/spezies) – Änderungen dort vornehmen
+// Regeneranten – Heimatwelt
+// Gemeinsame Funktionen (Topbar, Sidebar, Routen, Klappkapitel, Bildkarussell) kommen aus der Basis.
 import "../../regeneranten-basis.js";

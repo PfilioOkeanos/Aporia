@@ -10,7 +10,6 @@ if (matchMedia("(max-width: 760px)").matches) {
 }
 
 applyAporiaRoutes(document);
-document.querySelector('.li-reiter [aria-current="page"]')?.scrollIntoView({ block: "nearest", inline: "center" });
 
 // Kapitelleiste: aktives Kapitel hervorheben, Sprung öffnet eine geschlossene Karte
 const sprung = document.querySelector("[data-li-sprung]");

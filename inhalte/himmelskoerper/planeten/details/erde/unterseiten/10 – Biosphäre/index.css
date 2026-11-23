@@ -1,0 +1,9 @@
+@import url('../08%20%E2%80%93%20Gew%C3%A4sser/index.css');
+.earth-life-10 .earth-panel { background: linear-gradient(140deg,#154743,#08242b 79%); }
+.earth-life-10 .nature-layout section > img { display: block; width: 100%; height: 8.5rem; object-fit: cover; }
+.life-pyramid { display: grid; justify-items: center; gap: .24rem; list-style: none; padding: 0; margin: .65rem; }
+.life-pyramid li { padding: .37rem; border-radius: .25rem; border: 1px solid #7cbcb6; text-align: center; background: #17484a; }
+.life-pyramid li:nth-child(1) { width: 55%; }
+.life-pyramid li:nth-child(2) { width: 68%; }
+.life-pyramid li:nth-child(3) { width: 81%; }
+.life-pyramid li:nth-child(4) { width: 94%; }

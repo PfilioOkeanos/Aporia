@@ -1,0 +1,511 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Glimmspur",
+  "genitiv": "von Glimmspur",
+  "dossierName": "Glimmspur-Dossier",
+  "klasse": "Komet",
+  "intro": "Ein periodischer Komet (rund 31 Jahre), dessen grünlich leuchtender Schweif in den Nebelnächten Lymaras zu sehen ist. Glimmspur umkreist Narev in 9,5 AE Abstand und braucht für einen Umlauf 31,6 Jahre.",
+  "globusDaten": {
+    "planet": "gefleckter-komet-mit-grunweissem-schweif",
+    "klasse": "Eis",
+    "radius": 5000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=lymara-stern&objekt=lymara-glimmspur",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-B02FC49107"
+    ],
+    [
+      "Typ",
+      "Komet"
+    ],
+    [
+      "Sternsystem",
+      "Narev-System"
+    ],
+    [
+      "Zentralkörper",
+      "Narev"
+    ],
+    [
+      "Große Halbachse",
+      "9,5 AE"
+    ],
+    [
+      "Umlaufzeit",
+      "31,6 Jahre"
+    ],
+    [
+      "Durchmesser",
+      "10 km"
+    ],
+    [
+      "Masse",
+      "3,14 · 10^14 kg"
+    ],
+    [
+      "Schwerkraft",
+      "0,08 cm/s²"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -196 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Narev-System"
+    ],
+    [
+      "Zentralstern",
+      "Narev",
+      "inhalte/himmelskoerper/sterne/details/narev/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "9,5 AE"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Glimmspur im Narev-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=lymara-stern&objekt=lymara-glimmspur",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Narev",
+      "href": "inhalte/himmelskoerper/sterne/details/narev/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Plasmoiden",
+      "titel": "Lymara",
+      "href": "inhalte/himmelskoerper/planeten/details/lymara/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Plasmoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Plasmoiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Narev-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=lymara-stern&objekt=lymara-glimmspur"
+    },
+    {
+      "titel": "Speziesdossier Plasmoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Plasmoiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#070a0b",
+      "tiefe": "#101718",
+      "akzent": "#b6e1e8",
+      "sand": "#bcd9c2",
+      "moos": "#95ddbb",
+      "ozean": "#78c1e2",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#405e63"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Umlaufbahn"
+      ],
+      [
+        "Hülle",
+        "Schweif"
+      ],
+      [
+        "Hülle",
+        "Koma"
+      ],
+      [
+        "Kern",
+        "Kern"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Kern": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Kern von Glimmspur.",
+      "abschnitte": [
+        {
+          "titel": "Kometenkern",
+          "text": [
+            "Der Kern von Glimmspur misst rund 10 km und besteht aus einem lockeren Gemenge aus Eis, Staub und Gestein."
+          ],
+          "schichten": [
+            [
+              "Staubkruste",
+              "Dunkle, kohlenstoffreiche Oberfläche"
+            ],
+            [
+              "Eis-Staub-Gemisch",
+              "Wassereis, Kohlendioxid und Staub"
+            ],
+            [
+              "Kern",
+              "Lockeres Eis-Gestein-Gemenge"
+            ]
+          ]
+        }
+      ]
+    },
+    "Koma": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Koma von Glimmspur.",
+      "abschnitte": [
+        {
+          "titel": "Koma",
+          "text": [
+            "Nähert sich Glimmspur dem Stern Narev, verdampft Eis und bildet eine leuchtende Gashülle um den Kern."
+          ]
+        }
+      ]
+    },
+    "Schweif": {
+      "gruppe": "Natur",
+      "icon": "☄",
+      "intro": "Schweif von Glimmspur.",
+      "abschnitte": [
+        {
+          "titel": "Schweif",
+          "text": [
+            "Ein periodischer Komet (rund 31 Jahre), dessen grünlich leuchtender Schweif in den Nebelnächten Lymaras zu sehen ist."
+          ]
+        }
+      ]
+    },
+    "Umlaufbahn": {
+      "gruppe": "Wissenschaft",
+      "icon": "◌",
+      "intro": "Umlaufbahn von Glimmspur.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Narev"
+            ],
+            [
+              "Große Halbachse",
+              "9,5 AE (1.421,2 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,91"
+            ],
+            [
+              "Bahnneigung",
+              "27°"
+            ],
+            [
+              "Umlaufzeit",
+              "31,6 Jahre"
+            ],
+            [
+              "Einstrahlung",
+              "0,006-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Sternnächster und fernster Punkt",
+          "daten": [
+            [
+              "Perihel",
+              "0,85 AE"
+            ],
+            [
+              "Aphel",
+              "18,15 AE"
+            ]
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Glimmspur auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Glimmspur",
+          "text": [
+            "Ein periodischer Komet (rund 31 Jahre), dessen grünlich leuchtender Schweif in den Nebelnächten Lymaras zu sehen ist.",
+            "Glimmspur umkreist Narev in 9,5 AE Abstand und braucht für einen Umlauf 31,6 Jahre."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Komet"
+            ],
+            [
+              "Sternsystem",
+              "Narev-System"
+            ],
+            [
+              "Zentralkörper",
+              "Narev"
+            ],
+            [
+              "Große Halbachse",
+              "9,5 AE"
+            ],
+            [
+              "Umlaufzeit",
+              "31,6 Jahre"
+            ],
+            [
+              "Durchmesser",
+              "10 km"
+            ],
+            [
+              "Masse",
+              "3,14 · 10^14 kg"
+            ],
+            [
+              "Schwerkraft",
+              "0,08 cm/s²"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -196 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Lymara",
+          "text": [
+            "Das Narev-System ist die Heimat der Plasmoiden: Ihr Planet Lymara umkreist Narev."
+          ],
+          "verweise": [
+            [
+              "Lymara",
+              "inhalte/himmelskoerper/planeten/details/lymara/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Plasmoiden",
+              "inhalte/spezies/Biologische Spezies/Plasmoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Glimmspur im Narev-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Narev"
+            ],
+            [
+              "Große Halbachse",
+              "9,5 AE (1.421,2 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,91"
+            ],
+            [
+              "Bahnneigung",
+              "27°"
+            ],
+            [
+              "Umlaufzeit",
+              "31,6 Jahre"
+            ],
+            [
+              "Einstrahlung",
+              "0,006-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Narev · Stern",
+              "Orangefarbener Zwerg (K0 V)"
+            ],
+            [
+              "Narev I · 0,33 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Lymara · 0,85 AE",
+              "Ozeanplanet"
+            ],
+            [
+              "Narev III · 2,9 AE",
+              "Gasriese"
+            ],
+            [
+              "Narev IV · 8,2 AE",
+              "Eisriese"
+            ],
+            [
+              "Nebelgürtel · 1,5–2,3 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 32–46 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Narev",
+              "inhalte/himmelskoerper/sterne/details/narev/hauptseite/index.html"
+            ],
+            [
+              "Narev I",
+              "inhalte/himmelskoerper/planeten/details/narev-i/hauptseite/index.html"
+            ],
+            [
+              "Lymara",
+              "inhalte/himmelskoerper/planeten/details/lymara/hauptseite/index.html"
+            ],
+            [
+              "Narev III",
+              "inhalte/himmelskoerper/planeten/details/narev-iii/hauptseite/index.html"
+            ],
+            [
+              "Narev IV",
+              "inhalte/himmelskoerper/planeten/details/narev-iv/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Glimmspur.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "5 km"
+            ],
+            [
+              "Masse",
+              "3,14 · 10^14 kg"
+            ],
+            [
+              "Mittlere Dichte",
+              "0,6 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "0 m/s² (0 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "0 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Glimmspur.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Glimmspur stammt aus den kalten Außenbereichen des Narev-Systems und wurde auf seine heutige, langgestreckte Bahn gelenkt."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Glimmspur.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Was steckt hinter den Besonderheiten von Glimmspur?",
+            "Woher stammt der Komet genau?",
+            "Wie lange übersteht sein Kern noch die Annäherungen an den Stern?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Glimmspur ist mit allen Bahndaten im Narev-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=lymara-stern&objekt=lymara-glimmspur"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Glimmspur.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Als Anomalie in der Sternenkarte verzeichnet"
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Glimmspur.",
+      "abschnitte": [
+        {
+          "titel": "Glimmspur – Archivbild",
+          "bild": true,
+          "bildtext": "Glimmspur"
+        }
+      ]
+    }
+  }
+}

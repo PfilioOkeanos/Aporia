@@ -1,0 +1,815 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Ithrenn",
+  "genitiv": "von Ithrenn",
+  "dossierName": "Ithrenn-Dossier",
+  "klasse": "Eisriese",
+  "intro": "Der äußerste Hauptplanet ist ein Eisriese mit leichter Gashülle und flüchtigen Verbindungen. Ihn begleiten kleinere Monde.",
+  "globusDaten": {
+    "planet": "ithrenn",
+    "klasse": "Eisriese",
+    "radius": 24900000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=rhaelis-stern&objekt=rhaelis-ithrenn",
+  "grunddaten": [
+    [
+      "System-ID",
+      "rhaelis-ithrenn"
+    ],
+    [
+      "Archiv-ID",
+      "AP-RHAELIS-ITHRENN"
+    ],
+    [
+      "Typ",
+      "Eisriese"
+    ],
+    [
+      "Sternsystem",
+      "Rhaelis-System"
+    ],
+    [
+      "Zentralkörper",
+      "Rhaelis"
+    ],
+    [
+      "Große Halbachse",
+      "9,2 AE"
+    ],
+    [
+      "Umlaufzeit",
+      "31 Jahre"
+    ],
+    [
+      "Durchmesser",
+      "49.800 km"
+    ],
+    [
+      "Masse",
+      "17 Erdmassen"
+    ],
+    [
+      "Schwerkraft",
+      "1,11 g"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -207 °C"
+    ],
+    [
+      "Monde",
+      "2 (Palein, Ottel)"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Rhaelis-System"
+    ],
+    [
+      "Zentralstern",
+      "Rhaelis",
+      "inhalte/himmelskoerper/sterne/details/rhaelis/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "9,2 AE"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Ithrenn im Rhaelis-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=rhaelis-stern&objekt=rhaelis-ithrenn",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Rhaelis",
+      "href": "inhalte/himmelskoerper/sterne/details/rhaelis/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Palein",
+      "href": "inhalte/himmelskoerper/monde/details/palein/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Ottel",
+      "href": "inhalte/himmelskoerper/monde/details/ottel/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Memetiden",
+      "titel": "Tavoryn",
+      "href": "inhalte/himmelskoerper/planeten/details/tavoryn/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Memetiden",
+      "href": "inhalte/spezies/Mentale Spezies/Memetiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Rhaelis-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=rhaelis-stern&objekt=rhaelis-ithrenn"
+    },
+    {
+      "titel": "Speziesdossier Memetiden",
+      "href": "inhalte/spezies/Mentale Spezies/Memetiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#05090b",
+      "tiefe": "#0b1318",
+      "akzent": "#9cc8e4",
+      "sand": "#a3c4c0",
+      "moos": "#7dc0b8",
+      "ozean": "#64a7de",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#2e4d60"
+    }
+  },
+  "kapitel": {
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Ithrenn auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Ithrenn",
+          "text": [
+            "Der äußerste Hauptplanet ist ein Eisriese mit leichter Gashülle und flüchtigen Verbindungen. Ihn begleiten kleinere Monde.",
+            "Ithrenn umkreist Rhaelis in 9,2 AE Abstand und braucht für einen Umlauf 31 Jahre."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Eisriese"
+            ],
+            [
+              "Sternsystem",
+              "Rhaelis-System"
+            ],
+            [
+              "Zentralkörper",
+              "Rhaelis"
+            ],
+            [
+              "Große Halbachse",
+              "9,2 AE"
+            ],
+            [
+              "Umlaufzeit",
+              "31 Jahre"
+            ],
+            [
+              "Durchmesser",
+              "49.800 km"
+            ],
+            [
+              "Masse",
+              "17 Erdmassen"
+            ],
+            [
+              "Schwerkraft",
+              "1,11 g"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -207 °C"
+            ],
+            [
+              "Monde",
+              "2 (Palein, Ottel)"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Tavoryn",
+          "text": [
+            "Das Rhaelis-System ist die Heimat der Memetiden: Ihr Planet Tavoryn umkreist Rhaelis."
+          ],
+          "verweise": [
+            [
+              "Tavoryn",
+              "inhalte/himmelskoerper/planeten/details/tavoryn/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Memetiden",
+              "inhalte/spezies/Mentale Spezies/Memetiden/hauptseite/Spezies.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Planet Ithrenn",
+          "text": [
+            "Ithrenn ist der äußerste Hauptplanet des Systems.",
+            "Seine Atmosphäre besteht überwiegend aus leichten Gasen mit zusätzlichen schwereren flüchtigen Verbindungen.",
+            "Der Planet besitzt eine kalte äußere Atmosphäre und mehrere kleinere Begleiter.",
+            "Bedeutende Monde:"
+          ],
+          "daten": [
+            [
+              "Orbit",
+              "9,20 AE"
+            ],
+            [
+              "Umlaufzeit",
+              "Rund 31 Erdenjahre"
+            ],
+            [
+              "Masse",
+              "Ungefähr 17 Erdmassen"
+            ],
+            [
+              "Planetentyp",
+              "Eisriese"
+            ],
+            [
+              "Palein",
+              "Dunkler, eisreicher Mond."
+            ],
+            [
+              "Ottel",
+              "Kleiner, unregelmäßiger Mond mit stark verkraterter Oberfläche."
+            ],
+            [
+              "Forschungsschwerpunkte",
+              "Atmosphärenchemie, Eisphysik, Magnetfeld und äußere Planetensystemdynamik."
+            ],
+            [
+              "Spielintegration",
+              "Abgelegene Forschungsstationen, seltene Rohstoffvorkommen und Expeditionen an die Grenze des inneren Systems."
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Ithrenn im Rhaelis-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Rhaelis"
+            ],
+            [
+              "Große Halbachse",
+              "9,2 AE (1.376,3 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,033"
+            ],
+            [
+              "Bahnneigung",
+              "0°"
+            ],
+            [
+              "Umlaufzeit",
+              "31 Jahre"
+            ],
+            [
+              "Einstrahlung",
+              "0,005-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Am Himmel von Ithrenn",
+          "text": [
+            "Rhaelis erscheint von hier aus etwa 0,05° groß (die Sonne von der Erde: 0,53°)."
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Rhaelis · Stern",
+              "Orangefarbener Hauptreihenstern (K1 V)"
+            ],
+            [
+              "Kesvar · 0,18 AE",
+              "Heißer Gesteinsplanet"
+            ],
+            [
+              "Draoven · 0,33 AE",
+              "Heißer trockener Gesteinsplanet"
+            ],
+            [
+              "Tavoryn · 0,65 AE",
+              "Gemäßigter Ozean- und Gesteinsplanet"
+            ],
+            [
+              "Ossaryn · 1,2 AE",
+              "Kalter Gesteinsplanet"
+            ],
+            [
+              "Vaelkor · 2,45 AE",
+              "Gasriese"
+            ],
+            [
+              "Kelomar · 4,8 AE",
+              "Äußerer Gasriese"
+            ],
+            [
+              "Ithrenn · 9,2 AE · dieses Dossier",
+              "Eisriese"
+            ],
+            [
+              "Therys · 19 AE",
+              "Eisreicher Kleinkörper"
+            ],
+            [
+              "Veskar-9 · 31 AE",
+              "Dunkler Kleinkörper"
+            ],
+            [
+              "Saelith-Gürtel · 1,7–2,1 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußere Kleinkörperregion von Rhaelis · 12–43 AE",
+              "Eisreicher Kleinkörpergürtel"
+            ],
+            [
+              "Ferne Kometenpopulation von Rhaelis · 65–240 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Rhaelis",
+              "inhalte/himmelskoerper/sterne/details/rhaelis/hauptseite/index.html"
+            ],
+            [
+              "Kesvar",
+              "inhalte/himmelskoerper/planeten/details/kesvar/hauptseite/index.html"
+            ],
+            [
+              "Draoven",
+              "inhalte/himmelskoerper/planeten/details/draoven/hauptseite/index.html"
+            ],
+            [
+              "Tavoryn",
+              "inhalte/himmelskoerper/planeten/details/tavoryn/hauptseite/index.html"
+            ],
+            [
+              "Ossaryn",
+              "inhalte/himmelskoerper/planeten/details/ossaryn/hauptseite/index.html"
+            ],
+            [
+              "Vaelkor",
+              "inhalte/himmelskoerper/planeten/details/vaelkor/hauptseite/index.html"
+            ],
+            [
+              "Kelomar",
+              "inhalte/himmelskoerper/planeten/details/kelomar/hauptseite/index.html"
+            ],
+            [
+              "Therys",
+              "inhalte/himmelskoerper/asteroiden/details/therys/hauptseite/index.html"
+            ],
+            [
+              "Veskar-9",
+              "inhalte/himmelskoerper/asteroiden/details/veskar-9/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Ithrenn.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "24.900 km"
+            ],
+            [
+              "Masse",
+              "17 Erdmassen"
+            ],
+            [
+              "Mittlere Dichte",
+              "1,57 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "10,92 m/s² (1,113 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "23,33 km/s"
+            ]
+          ],
+          "vergleich": {
+            "mit": "Erde",
+            "werte": [
+              [
+                "Durchmesser",
+                49800,
+                12742,
+                "km"
+              ],
+              [
+                "Masse",
+                17,
+                1,
+                "Erdmassen"
+              ],
+              [
+                "Schwerkraft",
+                1.11,
+                1,
+                "g"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "Planetare Struktur": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Planetare Struktur von Ithrenn.",
+      "abschnitte": [
+        {
+          "titel": "Schalenbau",
+          "schichten": [
+            [
+              "Atmosphäre",
+              "Wasserstoff, Helium und Methan"
+            ],
+            [
+              "Eismantel",
+              "Wasser, Ammoniak und Methan unter hohem Druck"
+            ],
+            [
+              "Kern",
+              "Gestein und Metall"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geografie": {
+      "gruppe": "Natur",
+      "icon": "△",
+      "intro": "Geografie von Ithrenn.",
+      "abschnitte": [
+        {
+          "titel": "Oberfläche",
+          "text": [
+            "Ithrenn besitzt keine feste Oberfläche. Sichtbar sind Wolkenbänder, Wirbel und Stürme."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Ithrenn.",
+      "abschnitte": [
+        {
+          "titel": "Gashülle",
+          "text": [
+            "Ithrenn besitzt keine feste Oberfläche; die Hülle geht nach innen allmählich in dichtere Schichten über."
+          ],
+          "balken": {
+            "werte": [
+              [
+                "Wasserstoff",
+                80
+              ],
+              [
+                "Helium",
+                17
+              ],
+              [
+                "Methan",
+                2.3
+              ],
+              [
+                "Spurengase",
+                0.7
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Ithrenn.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 9,2 AE Abstand zu Rhaelis liegt die Gleichgewichtstemperatur von Ithrenn bei rund -207 °C – eisig kalt."
+          ]
+        }
+      ]
+    },
+    "Gewässer": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gewässer von Ithrenn.",
+      "abschnitte": [
+        {
+          "titel": "Wasser",
+          "text": [
+            "Wasser liegt in den Wolkenschichten und tief im Inneren unter hohem Druck vor."
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Ithrenn.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Ohne feste Oberfläche gibt es keine Geologie im engeren Sinn; im Inneren herrschen extreme Drücke und Temperaturen."
+          ]
+        }
+      ]
+    },
+    "Biosphäre": {
+      "gruppe": "Natur",
+      "icon": "❧",
+      "intro": "Biosphäre von Ithrenn.",
+      "abschnitte": [
+        {
+          "titel": "Leben",
+          "text": [
+            "Auf Ithrenn ist kein Leben verzeichnet."
+          ]
+        }
+      ]
+    },
+    "Spezies": {
+      "gruppe": "Zivilisation",
+      "icon": "✿",
+      "intro": "Spezies von Ithrenn.",
+      "abschnitte": [
+        {
+          "titel": "Bewohner",
+          "text": [
+            "Ithrenn ist keine Heimat einer intelligenten Spezies."
+          ]
+        },
+        {
+          "titel": "Im System von Tavoryn",
+          "text": [
+            "Das Rhaelis-System ist die Heimat der Memetiden: Ihr Planet Tavoryn umkreist Rhaelis."
+          ],
+          "verweise": [
+            [
+              "Tavoryn",
+              "inhalte/himmelskoerper/planeten/details/tavoryn/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Memetiden",
+              "inhalte/spezies/Mentale Spezies/Memetiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Zivilisation": {
+      "gruppe": "Zivilisation",
+      "icon": "▥",
+      "intro": "Zivilisation von Ithrenn.",
+      "abschnitte": [
+        {
+          "titel": "Siedlungen",
+          "text": [
+            "Für Ithrenn sind keine dauerhaften Siedlungen verzeichnet."
+          ]
+        },
+        {
+          "titel": "Im System von Tavoryn",
+          "text": [
+            "Das Rhaelis-System ist die Heimat der Memetiden: Ihr Planet Tavoryn umkreist Rhaelis."
+          ],
+          "verweise": [
+            [
+              "Tavoryn",
+              "inhalte/himmelskoerper/planeten/details/tavoryn/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Memetiden",
+              "inhalte/spezies/Mentale Spezies/Memetiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Ithrenn.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Ithrenn entstand zusammen mit dem Rhaelis-System vor rund 6,2 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Fraktionen": {
+      "gruppe": "Zivilisation",
+      "icon": "◇",
+      "intro": "Fraktionen von Ithrenn.",
+      "abschnitte": [
+        {
+          "titel": "Ansprüche",
+          "text": [
+            "Für Ithrenn sind keine Fraktionsansprüche verzeichnet."
+          ]
+        }
+      ]
+    },
+    "Rohstoffe": {
+      "gruppe": "Weitere",
+      "icon": "⬡",
+      "intro": "Rohstoffe von Ithrenn.",
+      "abschnitte": [
+        {
+          "titel": "Rohstoffe",
+          "liste": [
+            "Wasserstoff",
+            "Methan",
+            "Wassereis"
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Ithrenn.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Gibt es flüssige Schichten im Eismantel?",
+            "Wie entstand die Achslage?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Ithrenn ist mit allen Bahndaten im Rhaelis-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=rhaelis-stern&objekt=rhaelis-ithrenn"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Ithrenn.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "2 Monde: Palein, Ottel"
+          ]
+        },
+        {
+          "titel": "Monde",
+          "karten": [
+            {
+              "titel": "Palein",
+              "text": "1.040 km Durchmesser, Umlauf in 31,4 Stunden. Dunkler, eisreicher Mond Ithrenns."
+            },
+            {
+              "titel": "Ottel",
+              "text": "290 km Durchmesser, Umlauf in 4,5 Tage. Kleiner unregelmäßiger Mond Ithrenns mit stark verkraterter Oberfläche."
+            }
+          ],
+          "verweise": [
+            [
+              "Palein",
+              "inhalte/himmelskoerper/monde/details/palein/hauptseite/index.html"
+            ],
+            [
+              "Ottel",
+              "inhalte/himmelskoerper/monde/details/ottel/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Verwandte Dossiers",
+          "verweise": [
+            [
+              "Palein",
+              "inhalte/himmelskoerper/monde/details/palein/hauptseite/index.html"
+            ],
+            [
+              "Ottel",
+              "inhalte/himmelskoerper/monde/details/ottel/hauptseite/index.html"
+            ],
+            [
+              "Rhaelis-System",
+              "inhalte/himmelskoerper/sternensysteme/details/rhaelis-system/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Ithrenn.",
+      "abschnitte": [
+        {
+          "titel": "Ithrenn",
+          "bild": true,
+          "bildtext": "Illustration aus dem APORIA-Bildarchiv"
+        }
+      ]
+    },
+    "Gaszusammensetzung": {
+      "gruppe": "Weitere",
+      "icon": "◆",
+      "intro": "Gaszusammensetzung von Ithrenn.",
+      "abschnitte": [
+        {
+          "titel": "Gaszusammensetzung",
+          "text": [
+            "Leichte Gase dominieren. Dazu kommen schwerere flüchtige Verbindungen."
+          ]
+        }
+      ]
+    },
+    "Wolkenschichten": {
+      "gruppe": "Weitere",
+      "icon": "◆",
+      "intro": "Wolkenschichten von Ithrenn.",
+      "abschnitte": [
+        {
+          "titel": "Wolkenschichten",
+          "text": [
+            "Der Eisriese besitzt eine kalte äußere Atmosphäre. Details zur vertikalen Schichtung sind noch offen."
+          ]
+        }
+      ]
+    },
+    "Stürme": {
+      "gruppe": "Weitere",
+      "icon": "◆",
+      "intro": "Stürme von Ithrenn.",
+      "abschnitte": [
+        {
+          "titel": "Stürme",
+          "text": [
+            "Windgeschwindigkeiten und Lebensdauer einzelner Sturmsysteme sind im Dossier nicht festgelegt."
+          ]
+        }
+      ]
+    }
+  }
+}

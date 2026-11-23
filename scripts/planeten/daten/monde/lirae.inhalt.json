@@ -1,0 +1,534 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Lirae",
+  "genitiv": "von Lirae",
+  "dossierName": "Lirae-Dossier",
+  "klasse": "Mond",
+  "intro": "Lirae ist der große innere Mond Vessarins. Seine Gezeiten erzeugen kräftige Tiefenströmungen und Gezeitenbänder an den Inselbögen. Lirae umkreist Vessarin in 9,5 Tage.",
+  "globusDaten": {
+    "planet": "halbbeleuchteter-mond-mit-gewaltiger-einschlagsnarbe",
+    "klasse": "Gestein",
+    "radius": 1700000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=vessarin-stern&objekt=vessarin-lirae",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-404597A620"
+    ],
+    [
+      "Typ",
+      "Mond"
+    ],
+    [
+      "Sternsystem",
+      "Celeun-System"
+    ],
+    [
+      "Zentralkörper",
+      "Vessarin"
+    ],
+    [
+      "Große Halbachse",
+      "214.949 km"
+    ],
+    [
+      "Umlaufzeit",
+      "9,5 Tage"
+    ],
+    [
+      "Durchmesser",
+      "3.400 km"
+    ],
+    [
+      "Masse",
+      "0,976 Mondmassen"
+    ],
+    [
+      "Schwerkraft",
+      "0,17 g"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -7 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Celeun-System"
+    ],
+    [
+      "Zentralstern",
+      "Celeun",
+      "inhalte/himmelskoerper/sterne/details/celeun/hauptseite/index.html"
+    ],
+    [
+      "Umläuft",
+      "Vessarin",
+      "inhalte/himmelskoerper/planeten/details/vessarin/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "214.949 km"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Lirae im Celeun-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=vessarin-stern&objekt=vessarin-lirae",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Celeun",
+      "href": "inhalte/himmelskoerper/sterne/details/celeun/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◍",
+      "art": "Mutterplanet",
+      "titel": "Vessarin",
+      "href": "inhalte/himmelskoerper/planeten/details/vessarin/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Thalassoiden",
+      "titel": "Vessarin",
+      "href": "inhalte/himmelskoerper/planeten/details/vessarin/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Thalassoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Thalassoiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Celeun-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=vessarin-stern&objekt=vessarin-lirae"
+    },
+    {
+      "titel": "Speziesdossier Thalassoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Thalassoiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#0a0909",
+      "tiefe": "#151514",
+      "akzent": "#d7d4cd",
+      "sand": "#daceb1",
+      "moos": "#b4cda4",
+      "ozean": "#90b3c2",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#575550"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Astronomie"
+      ],
+      [
+        "Planet",
+        "Mutterplanet"
+      ],
+      [
+        "Kräfte",
+        "Gezeiten"
+      ],
+      [
+        "Tiefe",
+        "Geologie"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Mutterplanet": {
+      "gruppe": "Wissenschaft",
+      "icon": "◐",
+      "intro": "Mutterplanet von Lirae.",
+      "abschnitte": [
+        {
+          "titel": "Vessarin",
+          "text": [
+            "Vessarin ist die Heimatwelt der Thalassoiden: eine Ozeanwelt mit globalem, kilometertiefem Meer, wenigen Inselbögen und ausgedehnten hydrothermalen Feldern am Meeresboden."
+          ],
+          "daten": [
+            [
+              "Typ",
+              "Ozeanplanet"
+            ],
+            [
+              "Durchmesser",
+              "14.800 km"
+            ],
+            [
+              "Abstand des Mondes",
+              "214.949 km (29 Planetenradien)"
+            ]
+          ],
+          "verweise": [
+            [
+              "Vessarin",
+              "inhalte/himmelskoerper/planeten/details/vessarin/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Weitere Monde von Vessarin",
+          "liste": [
+            "Oun – Umlauf in 34 Tage"
+          ],
+          "verweise": [
+            [
+              "Oun",
+              "inhalte/himmelskoerper/monde/details/oun/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Gezeiten": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gezeiten von Lirae.",
+      "abschnitte": [
+        {
+          "titel": "Gezeitenkräfte",
+          "text": [
+            "Auf seiner Bahn in 214.949 km Abstand wirken starke Gezeitenkräfte von Vessarin auf Lirae."
+          ]
+        }
+      ]
+    },
+    "Gebundene Rotation": {
+      "gruppe": "Wissenschaft",
+      "icon": "↻",
+      "intro": "Gebundene Rotation von Lirae.",
+      "abschnitte": [
+        {
+          "titel": "Rotation",
+          "text": [
+            "Lirae wendet Vessarin vermutlich stets dieselbe Seite zu: Ein Tag dauert so lange wie ein Umlauf – 9,5 Tage."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Lirae auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Lirae",
+          "text": [
+            "Lirae ist der große innere Mond Vessarins. Seine Gezeiten erzeugen kräftige Tiefenströmungen und Gezeitenbänder an den Inselbögen.",
+            "Lirae umkreist Vessarin in 9,5 Tage."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Mond"
+            ],
+            [
+              "Sternsystem",
+              "Celeun-System"
+            ],
+            [
+              "Zentralkörper",
+              "Vessarin"
+            ],
+            [
+              "Große Halbachse",
+              "214.949 km"
+            ],
+            [
+              "Umlaufzeit",
+              "9,5 Tage"
+            ],
+            [
+              "Durchmesser",
+              "3.400 km"
+            ],
+            [
+              "Masse",
+              "0,976 Mondmassen"
+            ],
+            [
+              "Schwerkraft",
+              "0,17 g"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -7 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Vessarin",
+          "text": [
+            "Das Celeun-System ist die Heimat der Thalassoiden: Ihr Planet Vessarin umkreist Celeun, und Lirae ist einer seiner Monde."
+          ],
+          "verweise": [
+            [
+              "Vessarin",
+              "inhalte/himmelskoerper/planeten/details/vessarin/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Thalassoiden",
+              "inhalte/spezies/Biologische Spezies/Thalassoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Lirae im Celeun-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Vessarin"
+            ],
+            [
+              "Große Halbachse",
+              "214.949 km"
+            ],
+            [
+              "Exzentrizität",
+              "0,02"
+            ],
+            [
+              "Bahnneigung",
+              "2°"
+            ],
+            [
+              "Umlaufzeit",
+              "9,5 Tage"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Celeun · Stern",
+              "Gelber Zwerg (G6 V)"
+            ],
+            [
+              "Celeun I · 0,42 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Vessarin · 0,93 AE",
+              "Ozeanplanet"
+            ],
+            [
+              "Celeun III · 1,7 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Celeun IV · 6 AE",
+              "Gasriese"
+            ],
+            [
+              "Celeun V · 16 AE",
+              "Eisriese"
+            ],
+            [
+              "Perlgürtel · 2,5–3,3 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 40–56 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Celeun",
+              "inhalte/himmelskoerper/sterne/details/celeun/hauptseite/index.html"
+            ],
+            [
+              "Celeun I",
+              "inhalte/himmelskoerper/planeten/details/celeun-i/hauptseite/index.html"
+            ],
+            [
+              "Vessarin",
+              "inhalte/himmelskoerper/planeten/details/vessarin/hauptseite/index.html"
+            ],
+            [
+              "Celeun III",
+              "inhalte/himmelskoerper/planeten/details/celeun-iii/hauptseite/index.html"
+            ],
+            [
+              "Celeun IV",
+              "inhalte/himmelskoerper/planeten/details/celeun-iv/hauptseite/index.html"
+            ],
+            [
+              "Celeun V",
+              "inhalte/himmelskoerper/planeten/details/celeun-v/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Lirae.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "1.700 km"
+            ],
+            [
+              "Masse",
+              "0,976 Mondmassen"
+            ],
+            [
+              "Mittlere Dichte",
+              "3,48 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "1,65 m/s² (0,169 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "2,37 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Lirae.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Lirae ist geologisch weitgehend erstarrt; Einschläge haben seine Oberfläche geformt."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Lirae.",
+      "abschnitte": [
+        {
+          "titel": "Gashülle",
+          "text": [
+            "Lirae besitzt keine nennenswerte Atmosphäre – dafür ist die Schwerkraft zu gering."
+          ]
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Lirae.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 0,93 AE Abstand zu Celeun liegt die Gleichgewichtstemperatur von Lirae bei rund -7 °C – gemäßigt."
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Lirae.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Lirae entstand zusammen mit dem Celeun-System vor rund 4,1 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Lirae.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Ist der Mond eingefangen oder mit seinem Planeten entstanden?",
+            "Welche Spuren tragen seine ältesten Krater?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Lirae ist mit allen Bahndaten im Celeun-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=vessarin-stern&objekt=vessarin-lirae"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Lirae.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Größter Mond von Vessarin"
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Lirae.",
+      "abschnitte": [
+        {
+          "titel": "Lirae – Archivbild",
+          "bild": true,
+          "bildtext": "Lirae"
+        }
+      ]
+    }
+  }
+}

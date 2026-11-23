@@ -62,7 +62,7 @@ const knoten = [
         "belohnung": {
             "art": "gegenstand",
             "name": "Schwarzes loch im gluhenden akkretionsring",
-            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/SchwarzeL%C3%B6cher/schwarzes-loch-im-gluhenden-akkretionsring/hauptseite/schwarzes-loch-im-gluhenden-akkretionsring-b1c1f53b8cff.jpg"
+            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/SchwarzeL%C3%B6cher/veyaiven-singularitat/hauptseite/schwarzes-loch-im-gluhenden-akkretionsring-b1c1f53b8cff.jpg"
         }
     },
     {
@@ -93,7 +93,7 @@ const knoten = [
         "belohnung": {
             "art": "gegenstand",
             "name": "Asymmetrische akkretionsscheibe um ein schwarzes loch",
-            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/SchwarzeL%C3%B6cher/asymmetrische-akkretionsscheibe-um-ein-schwarzes-loch/hauptseite/asymmetrische-akkretionsscheibe-um-ein-schwarzes-loch-698cbd16419d.jpg"
+            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/SchwarzeL%C3%B6cher/elovden-singularitat/hauptseite/asymmetrische-akkretionsscheibe-um-ein-schwarzes-loch-698cbd16419d.jpg"
         }
     },
     {
@@ -109,7 +109,7 @@ const knoten = [
         "belohnung": {
             "art": "gegenstand",
             "name": "Junger akkretionsmond im schwarzen all",
-            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/Monde/junger-akkretionsmond-im-schwarzen-all/hauptseite/junger-akkretionsmond-im-schwarzen-all-c41afb8268.webp"
+            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/Monde/deyra/motive/motiv-02/hauptseite/junger-akkretionsmond-im-schwarzen-all-c41afb8268.webp"
         }
     }
 ];

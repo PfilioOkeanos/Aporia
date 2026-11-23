@@ -1,0 +1,586 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Seyran",
+  "genitiv": "von Seyran",
+  "dossierName": "Seyran-Dossier",
+  "klasse": "Komet",
+  "intro": "Seyran ist ein langperiodischer, eisig-staubiger Kleinkörper auf einer stark elliptischen und geneigten Bahn. Seine Aktivität nimmt erst in Sonnennähe zu.",
+  "globusDaten": {
+    "planet": "komet-mit-gefiedertem-schweif",
+    "klasse": "Eis",
+    "radius": 7000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=ilaren-stern&objekt=ilaren-komet",
+  "grunddaten": [
+    [
+      "System-ID",
+      "ilaren-komet"
+    ],
+    [
+      "Archiv-ID",
+      "AP-F75C9E6048"
+    ],
+    [
+      "Typ",
+      "Komet"
+    ],
+    [
+      "Sternsystem",
+      "Ilaren-System"
+    ],
+    [
+      "Zentralkörper",
+      "Ilaren"
+    ],
+    [
+      "Große Halbachse",
+      "24 AE"
+    ],
+    [
+      "Umlaufzeit",
+      "133,1 Jahre"
+    ],
+    [
+      "Durchmesser",
+      "14 km"
+    ],
+    [
+      "Masse",
+      "8,62 · 10^14 kg"
+    ],
+    [
+      "Schwerkraft",
+      "0,12 cm/s²"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -233 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Ilaren-System"
+    ],
+    [
+      "Zentralstern",
+      "Ilaren",
+      "inhalte/himmelskoerper/sterne/details/ilaren/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "24 AE"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Seyran im Ilaren-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=ilaren-stern&objekt=ilaren-komet",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Ilaren",
+      "href": "inhalte/himmelskoerper/sterne/details/ilaren/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Kollektiden (Tessari)",
+      "titel": "Khaluun",
+      "href": "inhalte/himmelskoerper/planeten/details/khaluun/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Kollektiden (Tessari)",
+      "href": "inhalte/spezies/Mentale Spezies/Kollektiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Ilaren-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=ilaren-stern&objekt=ilaren-komet"
+    },
+    {
+      "titel": "Speziesdossier Kollektiden (Tessari)",
+      "href": "inhalte/spezies/Mentale Spezies/Kollektiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#0a0908",
+      "tiefe": "#161411",
+      "akzent": "#d9cdbe",
+      "sand": "#dcc9a7",
+      "moos": "#b6c697",
+      "ozean": "#91acaf",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#585046"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Umlaufbahn"
+      ],
+      [
+        "Hülle",
+        "Schweif"
+      ],
+      [
+        "Hülle",
+        "Koma"
+      ],
+      [
+        "Kern",
+        "Kern"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Kern": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Kern von Seyran.",
+      "abschnitte": [
+        {
+          "titel": "Kometenkern",
+          "text": [
+            "Der Kern von Seyran misst rund 14 km und besteht aus einem lockeren Gemenge aus Eis, Staub und Gestein."
+          ],
+          "schichten": [
+            [
+              "Staubkruste",
+              "Dunkle, kohlenstoffreiche Oberfläche"
+            ],
+            [
+              "Eis-Staub-Gemisch",
+              "Wassereis, Kohlendioxid und Staub"
+            ],
+            [
+              "Kern",
+              "Lockeres Eis-Gestein-Gemenge"
+            ]
+          ]
+        },
+        {
+          "titel": "Poröser Mischkörper",
+          "daten": [
+            [
+              "Radius",
+              "ca. 7 km"
+            ],
+            [
+              "Durchmesser",
+              "ca. 14 km"
+            ]
+          ],
+          "text": [
+            "Der Kern besteht modellhaft aus Wassereis, weiteren flüchtigen Stoffen, Staub und silikatischem Material. Hohlräume und lose Bruchstücke ergeben eine geringere mittlere Dichte als massives Gestein."
+          ]
+        }
+      ]
+    },
+    "Koma": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Koma von Seyran.",
+      "abschnitte": [
+        {
+          "titel": "Koma",
+          "text": [
+            "Nähert sich Seyran dem Stern Ilaren, verdampft Eis und bildet eine leuchtende Gashülle um den Kern."
+          ]
+        },
+        {
+          "titel": "Aktivität nahe dem Perihel",
+          "text": [
+            "Bei Annäherung an Ilaren sublimieren oberflächennahe Eise. Eine temporäre Koma aus Gas und Staub entsteht; in großer Entfernung bleibt Seyran überwiegend inaktiv."
+          ]
+        }
+      ]
+    },
+    "Schweif": {
+      "gruppe": "Natur",
+      "icon": "☄",
+      "intro": "Schweif von Seyran.",
+      "abschnitte": [
+        {
+          "titel": "Schweif",
+          "text": [
+            "Seyran ist ein langperiodischer eisreicher Kleinkörper aus der äußeren Region des Systems. Seine stark geneigte, langgestreckte Bahn bleibt im Arbeitsmodell außerhalb der Planetenbahnen; bei sonnennahem Durchgang bildet sich eine Koma mit Schweif."
+          ]
+        },
+        {
+          "titel": "Zwei vom Stern geformte Schweife",
+          "text": [
+            "Gas wird durch ultraviolette Strahlung ionisiert und vom Sternwind weggetragen. Größere Staubteilchen folgen stärker der Bahn und bilden einen gekrümmten Staubschweif. Beide richten sich nicht dauerhaft entlang derselben Linie aus."
+          ]
+        }
+      ]
+    },
+    "Umlaufbahn": {
+      "gruppe": "Wissenschaft",
+      "icon": "◌",
+      "intro": "Umlaufbahn von Seyran.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Ilaren"
+            ],
+            [
+              "Große Halbachse",
+              "24 AE (3.590,4 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,72"
+            ],
+            [
+              "Bahnneigung",
+              "14°"
+            ],
+            [
+              "Umlaufzeit",
+              "133,1 Jahre"
+            ],
+            [
+              "Einstrahlung",
+              "0-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Sternnächster und fernster Punkt",
+          "daten": [
+            [
+              "Perihel",
+              "6,72 AE"
+            ],
+            [
+              "Aphel",
+              "41,28 AE"
+            ]
+          ]
+        },
+        {
+          "titel": "Langgestreckte Bahn",
+          "daten": [
+            [
+              "Halbachse",
+              "24 AE"
+            ],
+            [
+              "Exzentrizität",
+              "0,72"
+            ],
+            [
+              "Perihel",
+              "6,72 AE"
+            ],
+            [
+              "Aphel",
+              "41,28 AE"
+            ],
+            [
+              "Bahnneigung",
+              "14°"
+            ],
+            [
+              "Umlaufzeit",
+              "ca. 133 Jahre"
+            ]
+          ],
+          "text": [
+            "Seyrans Perihel liegt außerhalb von Ulmars modelliertem Aphel bei rund 6,17 AE. Die Bahnradien überschneiden sich daher nicht."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Seyran auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Seyran",
+          "text": [
+            "Seyran ist ein langperiodischer eisreicher Kleinkörper aus der äußeren Region des Systems. Seine stark geneigte, langgestreckte Bahn bleibt im Arbeitsmodell außerhalb der Planetenbahnen; bei sonnennahem Durchgang bildet sich eine Koma mit Schweif.",
+            "Seyran umkreist Ilaren in 24 AE Abstand und braucht für einen Umlauf 133,1 Jahre."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Komet"
+            ],
+            [
+              "Sternsystem",
+              "Ilaren-System"
+            ],
+            [
+              "Zentralkörper",
+              "Ilaren"
+            ],
+            [
+              "Große Halbachse",
+              "24 AE"
+            ],
+            [
+              "Umlaufzeit",
+              "133,1 Jahre"
+            ],
+            [
+              "Durchmesser",
+              "14 km"
+            ],
+            [
+              "Masse",
+              "8,62 · 10^14 kg"
+            ],
+            [
+              "Schwerkraft",
+              "0,12 cm/s²"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -233 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Khaluun",
+          "text": [
+            "Das Ilaren-System ist die Heimat der Kollektiden (Tessari): Ihr Planet Khaluun umkreist Ilaren."
+          ],
+          "verweise": [
+            [
+              "Khaluun",
+              "inhalte/himmelskoerper/planeten/details/khaluun/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Kollektiden (Tessari)",
+              "inhalte/spezies/Mentale Spezies/Kollektiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Seyran im Ilaren-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Ilaren"
+            ],
+            [
+              "Große Halbachse",
+              "24 AE (3.590,4 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,72"
+            ],
+            [
+              "Bahnneigung",
+              "14°"
+            ],
+            [
+              "Umlaufzeit",
+              "133,1 Jahre"
+            ],
+            [
+              "Einstrahlung",
+              "0-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Ilaren · Stern",
+              "Orangefarbener Hauptreihenstern (K3 V)"
+            ],
+            [
+              "Harrek · 0,15 AE",
+              "Heißer Gesteinsplanet"
+            ],
+            [
+              "Vosan · 0,31 AE",
+              "Trockener Gesteinsplanet"
+            ],
+            [
+              "Khaluun · 0,52 AE",
+              "Gemäßigter, wasserreicher Gesteinsplanet"
+            ],
+            [
+              "Meyt · 0,92 AE",
+              "Kalter Gesteinsplanet"
+            ],
+            [
+              "Daran · 2,45 AE",
+              "Gasriese"
+            ],
+            [
+              "Ulmar · 5,9 AE",
+              "Eisriese"
+            ],
+            [
+              "Ilaren-Asteroidengürtel · 1,3–1,9 AE",
+              "Asteroidengürtel"
+            ]
+          ],
+          "verweise": [
+            [
+              "Ilaren",
+              "inhalte/himmelskoerper/sterne/details/ilaren/hauptseite/index.html"
+            ],
+            [
+              "Harrek",
+              "inhalte/himmelskoerper/planeten/details/harrek/hauptseite/index.html"
+            ],
+            [
+              "Vosan",
+              "inhalte/himmelskoerper/planeten/details/vosan/hauptseite/index.html"
+            ],
+            [
+              "Khaluun",
+              "inhalte/himmelskoerper/planeten/details/khaluun/hauptseite/index.html"
+            ],
+            [
+              "Meyt",
+              "inhalte/himmelskoerper/planeten/details/meyt/hauptseite/index.html"
+            ],
+            [
+              "Daran",
+              "inhalte/himmelskoerper/planeten/details/daran/hauptseite/index.html"
+            ],
+            [
+              "Ulmar",
+              "inhalte/himmelskoerper/planeten/details/ulmar/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Seyran.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "7 km"
+            ],
+            [
+              "Masse",
+              "8,62 · 10^14 kg"
+            ],
+            [
+              "Mittlere Dichte",
+              "0,6 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "0 m/s² (0 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "0 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Seyran.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Seyran stammt aus den kalten Außenbereichen des Ilaren-Systems und wurde auf seine heutige, langgestreckte Bahn gelenkt."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Seyran.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Woher stammt der Komet genau?",
+            "Wie lange übersteht sein Kern noch die Annäherungen an den Stern?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Seyran ist mit allen Bahndaten im Ilaren-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=ilaren-stern&objekt=ilaren-komet"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Seyran.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Seyran ist ein langperiodischer eisreicher Kleinkörper aus der äußeren Region des Systems. Seine stark geneigte, langgestreckte Bahn bleibt im Arbeitsmodell außerhalb der Planetenbahnen; bei sonnennahem Durchgang bildet sich eine Koma mit Schweif."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Seyran.",
+      "abschnitte": [
+        {
+          "titel": "Seyran – Archivbild",
+          "bild": true,
+          "bildtext": "Seyran"
+        }
+      ]
+    }
+  }
+}

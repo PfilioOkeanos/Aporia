@@ -47,7 +47,7 @@ const knoten = [
         "belohnung": {
             "art": "gegenstand",
             "name": "Kruste Lithosphare",
-            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/OzeanWelt/erde-im-sternenmeer/unterseiten/ERDE_BILDER/Geologie/04%20%E2%80%93%20Kruste%20&%20Lithosph%C3%A4re/04_Kruste_Lithosphare.jpg"
+            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/OzeanWelt/erde/unterseiten/ERDE_BILDER/Geologie/04%20%E2%80%93%20Kruste%20&%20Lithosph%C3%A4re/04_Kruste_Lithosphare.jpg"
         }
     },
     {
@@ -61,7 +61,7 @@ const knoten = [
         "belohnung": {
             "art": "gegenstand",
             "name": "Evorath der planetengrosse krustentiergigant",
-            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/synthetische_planetenwesen/evorath-der-planetengrosse-krustentiergigant/hauptseite/evorath-der-planetengrosse-krustentiergigant-edb38bd48340.jpg"
+            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/synthetische_planetenwesen/evorath/hauptseite/evorath-der-planetengrosse-krustentiergigant-edb38bd48340.jpg"
         }
     },
     {
@@ -109,7 +109,7 @@ const knoten = [
         "belohnung": {
             "art": "gegenstand",
             "name": "Vulkanismus Magmatismus",
-            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/OzeanWelt/erde-im-sternenmeer/unterseiten/ERDE_BILDER/Geologie/06%20%E2%80%93%20Vulkanismus%20&%20Magmatismus/06_Vulkanismus_Magmatismus.jpg"
+            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/OzeanWelt/erde/unterseiten/ERDE_BILDER/Geologie/06%20%E2%80%93%20Vulkanismus%20&%20Magmatismus/06_Vulkanismus_Magmatismus.jpg"
         }
     }
 ];

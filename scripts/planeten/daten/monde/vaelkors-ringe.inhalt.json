@@ -1,0 +1,532 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Vaelkors Ringe",
+  "genitiv": "von Vaelkors Ringe",
+  "dossierName": "Vaelkors Ringe-Dossier",
+  "klasse": "Planetenring",
+  "intro": "Das Ringsystem um Vaelkor wirft je nach Beleuchtung Ringschatten auf die Atmosphäre.",
+  "globusDaten": {
+    "planet": "vaelkors-ringe",
+    "klasse": "Gestein",
+    "radius": 1000000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=rhaelis-stern&objekt=rhaelis-vaelkors-ringe",
+  "grunddaten": [
+    [
+      "System-ID",
+      "rhaelis-vaelkors-ringe"
+    ],
+    [
+      "Archiv-ID",
+      "AP-RHAELIS-VAELKORS-RINGE"
+    ],
+    [
+      "Typ",
+      "Planetenring"
+    ],
+    [
+      "Sternsystem",
+      "Rhaelis-System"
+    ],
+    [
+      "Zentralkörper",
+      "Vaelkor"
+    ],
+    [
+      "Ringbereich",
+      "86.136–130.950 km vom Zentrum"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -140 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Rhaelis-System"
+    ],
+    [
+      "Zentralstern",
+      "Rhaelis",
+      "inhalte/himmelskoerper/sterne/details/rhaelis/hauptseite/index.html"
+    ],
+    [
+      "Umläuft",
+      "Vaelkor",
+      "inhalte/himmelskoerper/planeten/details/vaelkor/hauptseite/index.html"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Vaelkors Ringe im Rhaelis-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=rhaelis-stern&objekt=rhaelis-vaelkors-ringe",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Rhaelis",
+      "href": "inhalte/himmelskoerper/sterne/details/rhaelis/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◍",
+      "art": "Planet",
+      "titel": "Vaelkor",
+      "href": "inhalte/himmelskoerper/planeten/details/vaelkor/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Memetiden",
+      "titel": "Tavoryn",
+      "href": "inhalte/himmelskoerper/planeten/details/tavoryn/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Memetiden",
+      "href": "inhalte/spezies/Mentale Spezies/Memetiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Rhaelis-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=rhaelis-stern&objekt=rhaelis-vaelkors-ringe"
+    },
+    {
+      "titel": "Speziesdossier Memetiden",
+      "href": "inhalte/spezies/Mentale Spezies/Memetiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#0a0908",
+      "tiefe": "#161411",
+      "akzent": "#ded1bb",
+      "sand": "#e0cba5",
+      "moos": "#bac994",
+      "ozean": "#95b0ab",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#5c5344"
+    },
+    "schichten": [
+      [
+        "Lage",
+        "Bahnen"
+      ],
+      [
+        "System",
+        "Planeten"
+      ],
+      [
+        "Dynamik",
+        "Stabilität"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Mutterplanet": {
+      "gruppe": "Wissenschaft",
+      "icon": "◐",
+      "intro": "Mutterplanet von Vaelkors Ringe.",
+      "abschnitte": [
+        {
+          "titel": "Vaelkor",
+          "text": [
+            "Gasriese mit ausgeprägten Wolkenbändern, großräumigen Stürmen und einem Ringsystem. Seine Gravitation prägt den benachbarten Saelith-Gürtel."
+          ],
+          "daten": [
+            [
+              "Typ",
+              "Gasriese"
+            ],
+            [
+              "Durchmesser",
+              "116.400 km"
+            ],
+            [
+              "Ringbereich",
+              "86.136–130.950 km vom Zentrum"
+            ]
+          ],
+          "verweise": [
+            [
+              "Vaelkor",
+              "inhalte/himmelskoerper/planeten/details/vaelkor/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Weitere Monde von Vaelkor",
+          "liste": [
+            "Styran – Umlauf in 26,8 Stunden",
+            "Numes – Umlauf in 2,4 Tage",
+            "Horai – Umlauf in 5,3 Tage"
+          ],
+          "verweise": [
+            [
+              "Styran",
+              "inhalte/himmelskoerper/monde/details/styran/hauptseite/index.html"
+            ],
+            [
+              "Numes",
+              "inhalte/himmelskoerper/monde/details/numes/hauptseite/index.html"
+            ],
+            [
+              "Horai",
+              "inhalte/himmelskoerper/monde/details/horai/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Gezeiten": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gezeiten von Vaelkors Ringe.",
+      "abschnitte": [
+        {
+          "titel": "Gezeitenkräfte",
+          "text": [
+            "Die Teilchen von Vaelkors Ringe kreisen innerhalb der Roche-Grenze von Vaelkor. Dort sind die Gezeitenkräfte stärker als die gegenseitige Anziehung der Brocken – sie können sich nicht zu einem Mond zusammenballen."
+          ]
+        }
+      ]
+    },
+    "Gebundene Rotation": {
+      "gruppe": "Wissenschaft",
+      "icon": "↻",
+      "intro": "Gebundene Rotation von Vaelkors Ringe.",
+      "abschnitte": [
+        {
+          "titel": "Bewegung der Teilchen",
+          "text": [
+            "Ein Ring dreht sich nicht als Ganzes: Jedes Teilchen von Vaelkors Ringe folgt seiner eigenen Bahn. Innen umrunden sie Vaelkor schneller als außen – nach den keplerschen Gesetzen."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Vaelkors Ringe auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Vaelkors Ringe",
+          "text": [
+            "Das Ringsystem um Vaelkor wirft je nach Beleuchtung Ringschatten auf die Atmosphäre.",
+            "Vaelkors Ringe umgibt Vaelkor im Rhaelis-System."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Planetenring"
+            ],
+            [
+              "Sternsystem",
+              "Rhaelis-System"
+            ],
+            [
+              "Zentralkörper",
+              "Vaelkor"
+            ],
+            [
+              "Ringbereich",
+              "86.136–130.950 km vom Zentrum"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -140 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Tavoryn",
+          "text": [
+            "Das Rhaelis-System ist die Heimat der Memetiden: Ihr Planet Tavoryn umkreist Rhaelis."
+          ],
+          "verweise": [
+            [
+              "Tavoryn",
+              "inhalte/himmelskoerper/planeten/details/tavoryn/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Memetiden",
+              "inhalte/spezies/Mentale Spezies/Memetiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Vaelkors Ringe im Rhaelis-System.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Rhaelis · Stern",
+              "Orangefarbener Hauptreihenstern (K1 V)"
+            ],
+            [
+              "Kesvar · 0,18 AE",
+              "Heißer Gesteinsplanet"
+            ],
+            [
+              "Draoven · 0,33 AE",
+              "Heißer trockener Gesteinsplanet"
+            ],
+            [
+              "Tavoryn · 0,65 AE",
+              "Gemäßigter Ozean- und Gesteinsplanet"
+            ],
+            [
+              "Ossaryn · 1,2 AE",
+              "Kalter Gesteinsplanet"
+            ],
+            [
+              "Vaelkor · 2,45 AE",
+              "Gasriese"
+            ],
+            [
+              "Kelomar · 4,8 AE",
+              "Äußerer Gasriese"
+            ],
+            [
+              "Ithrenn · 9,2 AE",
+              "Eisriese"
+            ],
+            [
+              "Therys · 19 AE",
+              "Eisreicher Kleinkörper"
+            ],
+            [
+              "Veskar-9 · 31 AE",
+              "Dunkler Kleinkörper"
+            ],
+            [
+              "Saelith-Gürtel · 1,7–2,1 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußere Kleinkörperregion von Rhaelis · 12–43 AE",
+              "Eisreicher Kleinkörpergürtel"
+            ],
+            [
+              "Ferne Kometenpopulation von Rhaelis · 65–240 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Rhaelis",
+              "inhalte/himmelskoerper/sterne/details/rhaelis/hauptseite/index.html"
+            ],
+            [
+              "Kesvar",
+              "inhalte/himmelskoerper/planeten/details/kesvar/hauptseite/index.html"
+            ],
+            [
+              "Draoven",
+              "inhalte/himmelskoerper/planeten/details/draoven/hauptseite/index.html"
+            ],
+            [
+              "Tavoryn",
+              "inhalte/himmelskoerper/planeten/details/tavoryn/hauptseite/index.html"
+            ],
+            [
+              "Ossaryn",
+              "inhalte/himmelskoerper/planeten/details/ossaryn/hauptseite/index.html"
+            ],
+            [
+              "Vaelkor",
+              "inhalte/himmelskoerper/planeten/details/vaelkor/hauptseite/index.html"
+            ],
+            [
+              "Kelomar",
+              "inhalte/himmelskoerper/planeten/details/kelomar/hauptseite/index.html"
+            ],
+            [
+              "Ithrenn",
+              "inhalte/himmelskoerper/planeten/details/ithrenn/hauptseite/index.html"
+            ],
+            [
+              "Therys",
+              "inhalte/himmelskoerper/asteroiden/details/therys/hauptseite/index.html"
+            ],
+            [
+              "Veskar-9",
+              "inhalte/himmelskoerper/asteroiden/details/veskar-9/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Vaelkors Ringe.",
+      "abschnitte": [
+        {
+          "titel": "Physik",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Vaelkor"
+            ],
+            [
+              "Ringbereich",
+              "86.136–130.950 km vom Zentrum"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -140 °C"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Vaelkors Ringe.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Vaelkors Ringe ist geologisch weitgehend erstarrt; Einschläge haben seine Oberfläche geformt."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Vaelkors Ringe.",
+      "abschnitte": [
+        {
+          "titel": "Gashülle",
+          "text": [
+            "Vaelkors Ringe besitzt keine nennenswerte Atmosphäre."
+          ]
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Vaelkors Ringe.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 2,45 AE Abstand zu Rhaelis liegt die Gleichgewichtstemperatur von Vaelkors Ringe bei rund -140 °C – eisig kalt."
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Vaelkors Ringe.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Vaelkors Ringe besteht aus Material, das sich bei der Entstehung des Rhaelis-Systems nicht zu einem Planeten vereinte."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Vaelkors Ringe.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Wie viel Masse enthält das Gebiet insgesamt?",
+            "Welche Resonanzen formen seine Ränder?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Vaelkors Ringe ist mit allen Bahndaten im Rhaelis-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=rhaelis-stern&objekt=rhaelis-vaelkors-ringe"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Vaelkors Ringe.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Das Ringsystem um Vaelkor wirft je nach Beleuchtung Ringschatten auf die Atmosphäre."
+          ]
+        },
+        {
+          "titel": "Verwandte Dossiers",
+          "verweise": [
+            [
+              "Rhaelis-System",
+              "inhalte/himmelskoerper/sternensysteme/details/rhaelis-system/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Ringschatten",
+          "text": [
+            "Das Ringsystem um Vaelkor wirft je nach Beleuchtung Ringschatten auf die Atmosphäre."
+          ],
+          "verweise": [
+            [
+              "Vaelkor",
+              "inhalte/himmelskoerper/planeten/details/vaelkor/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Vaelkors Ringe.",
+      "abschnitte": [
+        {
+          "titel": "Vaelkors Ringe",
+          "bild": true,
+          "bildtext": "Illustration aus dem APORIA-Bildarchiv"
+        }
+      ]
+    }
+  }
+}

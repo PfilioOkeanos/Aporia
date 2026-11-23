@@ -1,0 +1,586 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Nair",
+  "genitiv": "von Nair",
+  "dossierName": "Nair-Dossier",
+  "klasse": "Mond",
+  "intro": "Nair ist der innerste der vier größeren Monde Urakans – ein vulkanisch aktiver Gesteinsmond mit Lavafeldern und schwefelhaltigen Ablagerungen. Die Resonanz mit Sirel und Valdor heizt sein Inneres durch Gezeitenverformung. Nair umkreist Urakan in 36,5 Stunden.",
+  "globusDaten": {
+    "planet": "junger-mond-im-werden",
+    "klasse": "Gestein",
+    "radius": 1750000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=nerath-stern&objekt=nerath-nair",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-9D463EC1E7"
+    ],
+    [
+      "Typ",
+      "Mond"
+    ],
+    [
+      "Sternsystem",
+      "Terev-System"
+    ],
+    [
+      "Zentralkörper",
+      "Urakan"
+    ],
+    [
+      "Große Halbachse",
+      "330.122 km"
+    ],
+    [
+      "Umlaufzeit",
+      "36,5 Stunden"
+    ],
+    [
+      "Durchmesser",
+      "3.500 km"
+    ],
+    [
+      "Masse",
+      "1,057 Mondmassen"
+    ],
+    [
+      "Schwerkraft",
+      "0,17 g"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -159 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Terev-System"
+    ],
+    [
+      "Zentralstern",
+      "Terev",
+      "inhalte/himmelskoerper/sterne/details/terev/hauptseite/index.html"
+    ],
+    [
+      "Umläuft",
+      "Urakan",
+      "inhalte/himmelskoerper/planeten/details/urakan/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "330.122 km"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Nair im Terev-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=nerath-stern&objekt=nerath-nair",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Terev",
+      "href": "inhalte/himmelskoerper/sterne/details/terev/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◍",
+      "art": "Mutterplanet",
+      "titel": "Urakan",
+      "href": "inhalte/himmelskoerper/planeten/details/urakan/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Synaptoiden",
+      "titel": "Nerath",
+      "href": "inhalte/himmelskoerper/planeten/details/nerath/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Synaptoiden",
+      "href": "inhalte/spezies/Mentale Spezies/Synaptoiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Terev-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=nerath-stern&objekt=nerath-nair"
+    },
+    {
+      "titel": "Speziesdossier Synaptoiden",
+      "href": "inhalte/spezies/Mentale Spezies/Synaptoiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#0b0905",
+      "tiefe": "#18140a",
+      "akzent": "#e8d195",
+      "sand": "#eacb8d",
+      "moos": "#c3c973",
+      "ozean": "#9cb07c",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#635329"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Astronomie"
+      ],
+      [
+        "Planet",
+        "Mutterplanet"
+      ],
+      [
+        "Kräfte",
+        "Gezeiten"
+      ],
+      [
+        "Tiefe",
+        "Geologie"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Mutterplanet": {
+      "gruppe": "Wissenschaft",
+      "icon": "◐",
+      "intro": "Mutterplanet von Nair.",
+      "abschnitte": [
+        {
+          "titel": "Urakan",
+          "text": [
+            "Urakan ist ein Gasriese mit 0,65 Jupitermassen, farbigen Wolkenbändern und dem langlebigen Großen Wirbel. Eine ausgedehnte Magnetosphäre, schmale Staub- und Gesteinsringe und vier größere Monde umgeben ihn."
+          ],
+          "daten": [
+            [
+              "Typ",
+              "Gasriese"
+            ],
+            [
+              "Durchmesser",
+              "134.400 km"
+            ],
+            [
+              "Abstand des Mondes",
+              "330.122 km (4,9 Planetenradien)"
+            ]
+          ],
+          "verweise": [
+            [
+              "Urakan",
+              "inhalte/himmelskoerper/planeten/details/urakan/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Weitere Monde von Urakan",
+          "liste": [
+            "Sirel – Umlauf in 3 Tage",
+            "Valdor – Umlauf in 6,1 Tage",
+            "Erym – Umlauf in 19,5 Tage"
+          ],
+          "verweise": [
+            [
+              "Sirel",
+              "inhalte/himmelskoerper/monde/details/sirel/hauptseite/index.html"
+            ],
+            [
+              "Valdor",
+              "inhalte/himmelskoerper/monde/details/valdor/hauptseite/index.html"
+            ],
+            [
+              "Erym",
+              "inhalte/himmelskoerper/monde/details/erym/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Gezeiten": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gezeiten von Nair.",
+      "abschnitte": [
+        {
+          "titel": "Gezeitenkräfte",
+          "text": [
+            "Auf seiner Bahn in 330.122 km Abstand wirken starke Gezeitenkräfte von Urakan auf Nair."
+          ]
+        }
+      ]
+    },
+    "Gebundene Rotation": {
+      "gruppe": "Wissenschaft",
+      "icon": "↻",
+      "intro": "Gebundene Rotation von Nair.",
+      "abschnitte": [
+        {
+          "titel": "Rotation",
+          "text": [
+            "Nair wendet Urakan vermutlich stets dieselbe Seite zu: Ein Tag dauert so lange wie ein Umlauf – 36,5 Stunden."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Nair auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Nair",
+          "text": [
+            "Nair ist der innerste der vier größeren Monde Urakans – ein vulkanisch aktiver Gesteinsmond mit Lavafeldern und schwefelhaltigen Ablagerungen. Die Resonanz mit Sirel und Valdor heizt sein Inneres durch Gezeitenverformung.",
+            "Nair umkreist Urakan in 36,5 Stunden."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Mond"
+            ],
+            [
+              "Sternsystem",
+              "Terev-System"
+            ],
+            [
+              "Zentralkörper",
+              "Urakan"
+            ],
+            [
+              "Große Halbachse",
+              "330.122 km"
+            ],
+            [
+              "Umlaufzeit",
+              "36,5 Stunden"
+            ],
+            [
+              "Durchmesser",
+              "3.500 km"
+            ],
+            [
+              "Masse",
+              "1,057 Mondmassen"
+            ],
+            [
+              "Schwerkraft",
+              "0,17 g"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -159 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Nerath",
+          "text": [
+            "Das Terev-System ist die Heimat der Synaptoiden: Ihr Planet Nerath umkreist Terev."
+          ],
+          "verweise": [
+            [
+              "Nerath",
+              "inhalte/himmelskoerper/planeten/details/nerath/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Synaptoiden",
+              "inhalte/spezies/Mentale Spezies/Synaptoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Nair im Terev-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Urakan"
+            ],
+            [
+              "Große Halbachse",
+              "330.122 km"
+            ],
+            [
+              "Exzentrizität",
+              "0,006"
+            ],
+            [
+              "Bahnneigung",
+              "0,1°"
+            ],
+            [
+              "Umlaufzeit",
+              "36,5 Stunden"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Terev · Stern",
+              "Orangegelber Zwerg (K0 V)"
+            ],
+            [
+              "Vaskir · 0,16 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Sereth · 0,42 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Nerath · 0,93 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Talvek · 1,57 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Urakan · 4,4 AE",
+              "Gasriese"
+            ],
+            [
+              "Oryss · 9,3 AE",
+              "Eisriese"
+            ],
+            [
+              "Veyl · 22,8 AE",
+              "Eisplanet"
+            ],
+            [
+              "Relt · 44 AE",
+              "Zwergplanet"
+            ],
+            [
+              "Othir · 52 AE",
+              "Zwergplanet"
+            ],
+            [
+              "Skalenband · 2,2–3,2 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Taren-Saum · 38–65 AE",
+              "Kleinkörpergürtel"
+            ],
+            [
+              "Terev-Fernwolke · 1.500–8.000 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Terev",
+              "inhalte/himmelskoerper/sterne/details/terev/hauptseite/index.html"
+            ],
+            [
+              "Vaskir",
+              "inhalte/himmelskoerper/planeten/details/vaskir/hauptseite/index.html"
+            ],
+            [
+              "Sereth",
+              "inhalte/himmelskoerper/planeten/details/sereth/hauptseite/index.html"
+            ],
+            [
+              "Nerath",
+              "inhalte/himmelskoerper/planeten/details/nerath/hauptseite/index.html"
+            ],
+            [
+              "Talvek",
+              "inhalte/himmelskoerper/planeten/details/talvek/hauptseite/index.html"
+            ],
+            [
+              "Urakan",
+              "inhalte/himmelskoerper/planeten/details/urakan/hauptseite/index.html"
+            ],
+            [
+              "Oryss",
+              "inhalte/himmelskoerper/planeten/details/oryss/hauptseite/index.html"
+            ],
+            [
+              "Veyl",
+              "inhalte/himmelskoerper/planeten/details/veyl/hauptseite/index.html"
+            ],
+            [
+              "Relt",
+              "inhalte/himmelskoerper/zwergplaneten/details/relt/hauptseite/index.html"
+            ],
+            [
+              "Othir",
+              "inhalte/himmelskoerper/zwergplaneten/details/othir/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Nair.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "1.750 km"
+            ],
+            [
+              "Masse",
+              "1,057 Mondmassen"
+            ],
+            [
+              "Mittlere Dichte",
+              "3,46 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "1,69 m/s² (0,172 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "2,43 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Nair.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Nair ist geologisch weitgehend erstarrt; Einschläge haben seine Oberfläche geformt."
+          ]
+        },
+        {
+          "titel": "Gezeitenvulkanismus",
+          "text": [
+            "Aktive Vulkane, ausgedehnte Lavafelder und schwefelhaltige Ablagerungen prägen Nair. Einige Eruptionen schleudern Material weit über die Oberfläche; freigesetztes Material wechselwirkt mit Urakans Magnetosphäre. Nair ist ein wichtiger Forschungsort für Gezeitenheizung und die Dynamik von Planet-Mond-Systemen."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Nair.",
+      "abschnitte": [
+        {
+          "titel": "Gashülle",
+          "text": [
+            "Nair besitzt keine nennenswerte Atmosphäre – dafür ist die Schwerkraft zu gering."
+          ]
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Nair.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 4,4 AE Abstand zu Terev liegt die Gleichgewichtstemperatur von Nair bei rund -159 °C – eisig kalt."
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Nair.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Nair entstand zusammen mit dem Terev-System vor rund 5,6 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Nair.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Ist der Mond eingefangen oder mit seinem Planeten entstanden?",
+            "Welche Spuren tragen seine ältesten Krater?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Nair ist mit allen Bahndaten im Terev-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=nerath-stern&objekt=nerath-nair"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Nair.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Nair ist der innerste der vier größeren Monde Urakans – ein vulkanisch aktiver Gesteinsmond mit Lavafeldern und schwefelhaltigen Ablagerungen. Die Resonanz mit Sirel und Valdor heizt sein Inneres durch Gezeitenverformung."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Nair.",
+      "abschnitte": [
+        {
+          "titel": "Nair – Archivbild",
+          "bild": true,
+          "bildtext": "Nair"
+        }
+      ]
+    }
+  }
+}

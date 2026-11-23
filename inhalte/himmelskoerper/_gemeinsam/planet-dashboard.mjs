@@ -27,7 +27,7 @@ const chapterRoutes = new Set(["planeten", "zwergplaneten", "monde", "sterne", "
 export function celestialDashboard(record, chapters, options) {
     const { esc, url, links, id, mapHref, original, preserved = "", mapSystem, reference } = options;
     const { file, slug, data, art, group, title, category, known } = record;
-    const layout = "inhalte/himmelskoerper/planeten/details/erde-im-sternenmeer/hauptseite";
+    const layout = "inhalte/himmelskoerper/planeten/details/erde/hauptseite";
     const isPlanet = ["planeten", "zwergplaneten"].includes(category);
     const showGlobe = isPlanet || category === "monde";
     const parent = category === "galaxien" || mapSystem

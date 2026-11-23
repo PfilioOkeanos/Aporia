@@ -38,7 +38,7 @@ const knoten = [
         "belohnung": {
             "art": "gegenstand",
             "name": "Aussere Gestalt Abplattung",
-            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/OzeanWelt/erde-im-sternenmeer/unterseiten/ERDE_BILDER/Planetare%20Strukturen/02%20%E2%80%93%20%C3%84u%C3%9Fere%20Gestalt%20&%20Abplattung/02_Aussere_Gestalt_Abplattung.jpg"
+            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/OzeanWelt/erde/unterseiten/ERDE_BILDER/Planetare%20Strukturen/02%20%E2%80%93%20%C3%84u%C3%9Fere%20Gestalt%20&%20Abplattung/02_Aussere_Gestalt_Abplattung.jpg"
         }
     },
     {

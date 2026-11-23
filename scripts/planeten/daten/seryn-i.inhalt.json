@@ -1,0 +1,606 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Seryn I",
+  "genitiv": "von Seryn I",
+  "dossierName": "Seryn I-Dossier",
+  "klasse": "Gesteinsplanet",
+  "intro": "Seryn I ist eine sternnahe, luftlose Basaltwelt mit gebundener Rotation. Seryn I umkreist Seryn in 0,21 AE Abstand und braucht für einen Umlauf 40,6 Tage.",
+  "globusDaten": {
+    "planet": "basaltische-welt-mit-hauchdunner-kruste",
+    "klasse": "Gestein",
+    "radius": 4300000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=nivareth-stern&objekt=nivareth-seryn-i",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-2846412D51"
+    ],
+    [
+      "Typ",
+      "Gesteinsplanet"
+    ],
+    [
+      "Sternsystem",
+      "Seryn-System"
+    ],
+    [
+      "Zentralkörper",
+      "Seryn"
+    ],
+    [
+      "Große Halbachse",
+      "0,21 AE"
+    ],
+    [
+      "Umlaufzeit",
+      "40,6 Tage"
+    ],
+    [
+      "Durchmesser",
+      "8.600 km"
+    ],
+    [
+      "Masse",
+      "0,31 Erdmassen"
+    ],
+    [
+      "Schwerkraft",
+      "0,68 g"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. 146 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Seryn-System"
+    ],
+    [
+      "Zentralstern",
+      "Seryn",
+      "inhalte/himmelskoerper/sterne/details/seryn/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "0,21 AE"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Seryn I im Seryn-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=nivareth-stern&objekt=nivareth-seryn-i",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Seryn",
+      "href": "inhalte/himmelskoerper/sterne/details/seryn/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Kryonoiden",
+      "titel": "Nivareth",
+      "href": "inhalte/himmelskoerper/planeten/details/nivareth/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Kryonoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Kryonoiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Seryn-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=nivareth-stern&objekt=nivareth-seryn-i"
+    },
+    {
+      "titel": "Speziesdossier Kryonoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Kryonoiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#070504",
+      "tiefe": "#0f0c0a",
+      "akzent": "#b49f92",
+      "sand": "#baa18a",
+      "moos": "#949071",
+      "ozean": "#767c78",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#3f3027"
+    }
+  },
+  "kapitel": {
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Seryn I auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Seryn I",
+          "text": [
+            "Seryn I ist eine sternnahe, luftlose Basaltwelt mit gebundener Rotation.",
+            "Seryn I umkreist Seryn in 0,21 AE Abstand und braucht für einen Umlauf 40,6 Tage."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Gesteinsplanet"
+            ],
+            [
+              "Sternsystem",
+              "Seryn-System"
+            ],
+            [
+              "Zentralkörper",
+              "Seryn"
+            ],
+            [
+              "Große Halbachse",
+              "0,21 AE"
+            ],
+            [
+              "Umlaufzeit",
+              "40,6 Tage"
+            ],
+            [
+              "Durchmesser",
+              "8.600 km"
+            ],
+            [
+              "Masse",
+              "0,31 Erdmassen"
+            ],
+            [
+              "Schwerkraft",
+              "0,68 g"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. 146 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Nivareth",
+          "text": [
+            "Das Seryn-System ist die Heimat der Kryonoiden: Ihr Planet Nivareth umkreist Seryn."
+          ],
+          "verweise": [
+            [
+              "Nivareth",
+              "inhalte/himmelskoerper/planeten/details/nivareth/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Kryonoiden",
+              "inhalte/spezies/Biologische Spezies/Kryonoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Seryn I im Seryn-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Seryn"
+            ],
+            [
+              "Große Halbachse",
+              "0,21 AE (31,4 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,04"
+            ],
+            [
+              "Bahnneigung",
+              "1,8°"
+            ],
+            [
+              "Umlaufzeit",
+              "40,6 Tage"
+            ],
+            [
+              "Einstrahlung",
+              "5,669-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Am Himmel von Seryn I",
+          "text": [
+            "Seryn erscheint von hier aus etwa 1,82° groß (die Sonne von der Erde: 0,53°)."
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Seryn · Stern",
+              "Orangefarbener Zwerg (K4 V)"
+            ],
+            [
+              "Seryn I · 0,21 AE · dieses Dossier",
+              "Gesteinsplanet"
+            ],
+            [
+              "Nivareth · 0,85 AE",
+              "Eisplanet"
+            ],
+            [
+              "Seryn III · 3,9 AE",
+              "Gasriese"
+            ],
+            [
+              "Frostgürtel · 20–32 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Seryn",
+              "inhalte/himmelskoerper/sterne/details/seryn/hauptseite/index.html"
+            ],
+            [
+              "Nivareth",
+              "inhalte/himmelskoerper/planeten/details/nivareth/hauptseite/index.html"
+            ],
+            [
+              "Seryn III",
+              "inhalte/himmelskoerper/planeten/details/seryn-iii/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Seryn I.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "4.300 km"
+            ],
+            [
+              "Masse",
+              "0,31 Erdmassen"
+            ],
+            [
+              "Mittlere Dichte",
+              "5,56 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "6,68 m/s² (0,681 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "7,58 km/s"
+            ]
+          ],
+          "vergleich": {
+            "mit": "Erde",
+            "werte": [
+              [
+                "Durchmesser",
+                8600,
+                12742,
+                "km"
+              ],
+              [
+                "Masse",
+                0.31,
+                1,
+                "Erdmassen"
+              ],
+              [
+                "Schwerkraft",
+                0.68,
+                1,
+                "g"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "Planetare Struktur": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Planetare Struktur von Seryn I.",
+      "abschnitte": [
+        {
+          "titel": "Schalenbau",
+          "schichten": [
+            [
+              "Kruste",
+              "Silikatgestein"
+            ],
+            [
+              "Mantel",
+              "Dichteres Silikatgestein"
+            ],
+            [
+              "Kern",
+              "Eisen und Nickel"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geografie": {
+      "gruppe": "Natur",
+      "icon": "△",
+      "intro": "Geografie von Seryn I.",
+      "abschnitte": [
+        {
+          "titel": "Oberfläche",
+          "text": [
+            "Die Oberfläche von Seryn I ist sehr heiß."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Seryn I.",
+      "abschnitte": [
+        {
+          "titel": "Gashülle",
+          "text": [
+            "Eine dichte, kohlendioxidreiche Hülle staut die Wärme von Seryn I."
+          ],
+          "balken": {
+            "werte": [
+              [
+                "Kohlendioxid",
+                95
+              ],
+              [
+                "Stickstoff",
+                3.5
+              ],
+              [
+                "Argon und Spurengase",
+                1.5
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Seryn I.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 0,21 AE Abstand zu Seryn liegt die Gleichgewichtstemperatur von Seryn I bei rund 146 °C – sehr heiß. Die dichte Gashülle heizt die Oberfläche zusätzlich auf."
+          ]
+        }
+      ]
+    },
+    "Gewässer": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gewässer von Seryn I.",
+      "abschnitte": [
+        {
+          "titel": "Wasser",
+          "text": [
+            "Für flüssiges Wasser ist es viel zu heiß."
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Seryn I.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Seryn I ist groß genug, um im Inneren noch Wärme zu speichern; Spuren alter vulkanischer Tätigkeit sind wahrscheinlich."
+          ]
+        }
+      ]
+    },
+    "Biosphäre": {
+      "gruppe": "Natur",
+      "icon": "❧",
+      "intro": "Biosphäre von Seryn I.",
+      "abschnitte": [
+        {
+          "titel": "Leben",
+          "text": [
+            "Auf Seryn I ist kein Leben verzeichnet."
+          ]
+        }
+      ]
+    },
+    "Spezies": {
+      "gruppe": "Zivilisation",
+      "icon": "✿",
+      "intro": "Spezies von Seryn I.",
+      "abschnitte": [
+        {
+          "titel": "Bewohner",
+          "text": [
+            "Seryn I ist keine Heimat einer intelligenten Spezies."
+          ]
+        },
+        {
+          "titel": "Im System von Nivareth",
+          "text": [
+            "Das Seryn-System ist die Heimat der Kryonoiden: Ihr Planet Nivareth umkreist Seryn."
+          ],
+          "verweise": [
+            [
+              "Nivareth",
+              "inhalte/himmelskoerper/planeten/details/nivareth/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Kryonoiden",
+              "inhalte/spezies/Biologische Spezies/Kryonoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Zivilisation": {
+      "gruppe": "Zivilisation",
+      "icon": "▥",
+      "intro": "Zivilisation von Seryn I.",
+      "abschnitte": [
+        {
+          "titel": "Siedlungen",
+          "text": [
+            "Für Seryn I sind keine dauerhaften Siedlungen verzeichnet."
+          ]
+        },
+        {
+          "titel": "Im System von Nivareth",
+          "text": [
+            "Das Seryn-System ist die Heimat der Kryonoiden: Ihr Planet Nivareth umkreist Seryn."
+          ],
+          "verweise": [
+            [
+              "Nivareth",
+              "inhalte/himmelskoerper/planeten/details/nivareth/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Kryonoiden",
+              "inhalte/spezies/Biologische Spezies/Kryonoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Seryn I.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Seryn I entstand zusammen mit dem Seryn-System vor rund 6,2 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Fraktionen": {
+      "gruppe": "Zivilisation",
+      "icon": "◇",
+      "intro": "Fraktionen von Seryn I.",
+      "abschnitte": [
+        {
+          "titel": "Ansprüche",
+          "text": [
+            "Für Seryn I sind keine Fraktionsansprüche verzeichnet."
+          ]
+        }
+      ]
+    },
+    "Rohstoffe": {
+      "gruppe": "Weitere",
+      "icon": "⬡",
+      "intro": "Rohstoffe von Seryn I.",
+      "abschnitte": [
+        {
+          "titel": "Rohstoffe",
+          "liste": [
+            "Silikatgestein",
+            "Metallerze"
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Seryn I.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Wie ist der innere Aufbau beschaffen?",
+            "Gab es früher eine dichtere Atmosphäre?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Seryn I ist mit allen Bahndaten im Seryn-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=nivareth-stern&objekt=nivareth-seryn-i"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Seryn I.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Innerster Planet des Seryn-Systems"
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Seryn I.",
+      "abschnitte": [
+        {
+          "titel": "Seryn I – Archivbild",
+          "bild": true,
+          "bildtext": "Seryn I"
+        }
+      ]
+    }
+  }
+}

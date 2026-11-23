@@ -1,0 +1,475 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Sporengürtel von Velhar",
+  "genitiv": "von Sporengürtel von Velhar",
+  "dossierName": "Sporengürtel von Velhar-Dossier",
+  "klasse": "Asteroidengürtel",
+  "intro": "Der Sporengürtel zwischen 1,7 und 2,5 AE besteht aus kohlenstoffreichen Asteroiden mit organischen Verbindungen – Ziel symbiontischer Forschung über die Ursprünge des Lebens. Sporengürtel umgibt Velhar im Velhar-System.",
+  "globusDaten": {
+    "planet": "der-vollstandige-asteroidengurtel",
+    "klasse": "Gestein",
+    "radius": 1000000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=nhalora-stern&objekt=nhalora-schlammguertel",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-ECE5F9410E"
+    ],
+    [
+      "Typ",
+      "Asteroidengürtel"
+    ],
+    [
+      "Sternsystem",
+      "Velhar-System"
+    ],
+    [
+      "Zentralkörper",
+      "Velhar"
+    ],
+    [
+      "Ausdehnung",
+      "1,7–2,5 AE"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Velhar-System"
+    ],
+    [
+      "Zentralstern",
+      "Velhar",
+      "inhalte/himmelskoerper/sterne/details/velhar/hauptseite/index.html"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Sporengürtel im Velhar-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=nhalora-stern&objekt=nhalora-schlammguertel",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Velhar",
+      "href": "inhalte/himmelskoerper/sterne/details/velhar/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Symbionten",
+      "titel": "Nhalora",
+      "href": "inhalte/himmelskoerper/planeten/details/nhalora/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Symbionten",
+      "href": "inhalte/spezies/Biologische Spezies/Symbionten/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Velhar-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=nhalora-stern&objekt=nhalora-schlammguertel"
+    },
+    {
+      "titel": "Speziesdossier Symbionten",
+      "href": "inhalte/spezies/Biologische Spezies/Symbionten/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#070706",
+      "tiefe": "#100f0d",
+      "akzent": "#b6afa5",
+      "sand": "#bcaf97",
+      "moos": "#95a382",
+      "ozean": "#788d91",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#403c35"
+    },
+    "schichten": [
+      [
+        "Lage",
+        "Bahnen"
+      ],
+      [
+        "System",
+        "Planeten"
+      ],
+      [
+        "Dynamik",
+        "Stabilität"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Zentralsterne": {
+      "gruppe": "Wissenschaft",
+      "icon": "✦",
+      "intro": "Zentralsterne von Sporengürtel.",
+      "abschnitte": [
+        {
+          "titel": "Velhar",
+          "text": [
+            "Velhar ist ein sonnenähnlicher gelber Zwerg der Spektralklasse G5 V, Heimatstern der Symbionten. Ein ruhiger Einzelstern."
+          ],
+          "verweise": [
+            [
+              "Velhar",
+              "inhalte/himmelskoerper/sterne/details/velhar/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Planeten": {
+      "gruppe": "Wissenschaft",
+      "icon": "◍",
+      "intro": "Planeten von Sporengürtel.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Velhar · Stern",
+              "Gelber Zwerg (G5 V)"
+            ],
+            [
+              "Velhar I · 0,42 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Nhalora · 0,95 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Velhar III · 3,6 AE",
+              "Gasriese"
+            ],
+            [
+              "Velhar IV · 9,4 AE",
+              "Eisriese"
+            ],
+            [
+              "Sporengürtel · 1,7–2,5 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 36–52 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Velhar",
+              "inhalte/himmelskoerper/sterne/details/velhar/hauptseite/index.html"
+            ],
+            [
+              "Velhar I",
+              "inhalte/himmelskoerper/planeten/details/velhar-i/hauptseite/index.html"
+            ],
+            [
+              "Nhalora",
+              "inhalte/himmelskoerper/planeten/details/nhalora/hauptseite/index.html"
+            ],
+            [
+              "Velhar III",
+              "inhalte/himmelskoerper/planeten/details/velhar-iii/hauptseite/index.html"
+            ],
+            [
+              "Velhar IV",
+              "inhalte/himmelskoerper/planeten/details/velhar-iv/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Bahnen": {
+      "gruppe": "Wissenschaft",
+      "icon": "◌",
+      "intro": "Bahnen von Sporengürtel.",
+      "abschnitte": [
+        {
+          "titel": "Lage",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Velhar"
+            ],
+            [
+              "Ausdehnung",
+              "1,7–2,5 AE"
+            ]
+          ]
+        }
+      ]
+    },
+    "Stabilität": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚖",
+      "intro": "Stabilität von Sporengürtel.",
+      "abschnitte": [
+        {
+          "titel": "Stabilität",
+          "text": [
+            "Die Brocken von Sporengürtel bewegen sich auf stabilen Bahnen zwischen den Planeten; Resonanzen mit den großen Planeten formen die Ränder des Gebiets."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Sporengürtel auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Sporengürtel",
+          "text": [
+            "Der Sporengürtel zwischen 1,7 und 2,5 AE besteht aus kohlenstoffreichen Asteroiden mit organischen Verbindungen – Ziel symbiontischer Forschung über die Ursprünge des Lebens.",
+            "Sporengürtel umgibt Velhar im Velhar-System."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Asteroidengürtel"
+            ],
+            [
+              "Sternsystem",
+              "Velhar-System"
+            ],
+            [
+              "Zentralkörper",
+              "Velhar"
+            ],
+            [
+              "Ausdehnung",
+              "1,7–2,5 AE"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Nhalora",
+          "text": [
+            "Das Velhar-System ist die Heimat der Symbionten: Ihr Planet Nhalora umkreist Velhar."
+          ],
+          "verweise": [
+            [
+              "Nhalora",
+              "inhalte/himmelskoerper/planeten/details/nhalora/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Symbionten",
+              "inhalte/spezies/Biologische Spezies/Symbionten/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Sporengürtel im Velhar-System.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Velhar · Stern",
+              "Gelber Zwerg (G5 V)"
+            ],
+            [
+              "Velhar I · 0,42 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Nhalora · 0,95 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Velhar III · 3,6 AE",
+              "Gasriese"
+            ],
+            [
+              "Velhar IV · 9,4 AE",
+              "Eisriese"
+            ],
+            [
+              "Sporengürtel · 1,7–2,5 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 36–52 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Velhar",
+              "inhalte/himmelskoerper/sterne/details/velhar/hauptseite/index.html"
+            ],
+            [
+              "Velhar I",
+              "inhalte/himmelskoerper/planeten/details/velhar-i/hauptseite/index.html"
+            ],
+            [
+              "Nhalora",
+              "inhalte/himmelskoerper/planeten/details/nhalora/hauptseite/index.html"
+            ],
+            [
+              "Velhar III",
+              "inhalte/himmelskoerper/planeten/details/velhar-iii/hauptseite/index.html"
+            ],
+            [
+              "Velhar IV",
+              "inhalte/himmelskoerper/planeten/details/velhar-iv/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Umgebung": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Umgebung von Sporengürtel.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Velhar · Stern",
+              "Gelber Zwerg (G5 V)"
+            ],
+            [
+              "Velhar I · 0,42 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Nhalora · 0,95 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Velhar III · 3,6 AE",
+              "Gasriese"
+            ],
+            [
+              "Velhar IV · 9,4 AE",
+              "Eisriese"
+            ],
+            [
+              "Sporengürtel · 1,7–2,5 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 36–52 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Velhar",
+              "inhalte/himmelskoerper/sterne/details/velhar/hauptseite/index.html"
+            ],
+            [
+              "Velhar I",
+              "inhalte/himmelskoerper/planeten/details/velhar-i/hauptseite/index.html"
+            ],
+            [
+              "Nhalora",
+              "inhalte/himmelskoerper/planeten/details/nhalora/hauptseite/index.html"
+            ],
+            [
+              "Velhar III",
+              "inhalte/himmelskoerper/planeten/details/velhar-iii/hauptseite/index.html"
+            ],
+            [
+              "Velhar IV",
+              "inhalte/himmelskoerper/planeten/details/velhar-iv/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Sporengürtel.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Sporengürtel besteht aus Material, das sich bei der Entstehung des Velhar-Systems nicht zu einem Planeten vereinte."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Sporengürtel.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Wie viel Masse enthält das Gebiet insgesamt?",
+            "Welche Resonanzen formen seine Ränder?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Sporengürtel ist mit allen Bahndaten im Velhar-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=nhalora-stern&objekt=nhalora-schlammguertel"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Sporengürtel.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Der Sporengürtel zwischen 1,7 und 2,5 AE besteht aus kohlenstoffreichen Asteroiden mit organischen Verbindungen – Ziel symbiontischer Forschung über die Ursprünge des Lebens."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Sporengürtel.",
+      "abschnitte": [
+        {
+          "titel": "Sporengürtel – Archivbild",
+          "bild": true,
+          "bildtext": "Sporengürtel"
+        }
+      ]
+    }
+  }
+}

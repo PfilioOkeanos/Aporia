@@ -1,0 +1,433 @@
+{
+  "systemName": "Ysmeroth-System",
+  "praefix": "karynth-",
+  "lage": {
+    "entfernungLj": 37,
+    "richtung": [
+      0.9,
+      -0.15,
+      0.4
+    ]
+  },
+  "einzelstern": false,
+  "begleiterText": "Ein Roter Zwerg (Ysmeroth B) auf weiter, exzentrischer Bahn in rund 310 AE Abstand",
+  "stern": {
+    "id": "karynth-stern",
+    "name": "Ysmeroth",
+    "typ": "Orangefarbener Zwerg (K2 V)",
+    "masseSonne": 0.8,
+    "radiusSonne": 0.85,
+    "leuchtkraftSonne": 0.5,
+    "temperaturK": 5260,
+    "alterMrd": 5.2,
+    "farbe": [
+      1,
+      0.72,
+      0.44
+    ],
+    "emissionsfarbe": [
+      1,
+      0.74,
+      0.48
+    ],
+    "emission": 1.15,
+    "bild": {
+      "art": "sterne",
+      "slug": "feuriger-roter-stern-in-kosmischer-tiefe"
+    },
+    "beschreibung": "Ysmeroth ist ein orangefarbener Hauptreihenstern der Spektralklasse K2 V mit 80 % der Sonnenmasse und der halben Sonnenleuchtkraft. Sein Licht ist zu längeren Wellenlängen verschoben; Sternflecken und gelegentliche Strahlungsausbrüche gehören zu seiner normalen Aktivität. Er ist der Hauptstern eines weiten Doppelsternsystems und Zentralstern von Karynth, der Heimat der Metamorphen."
+  },
+  "koerper": [
+    {
+      "id": "karynth-ysmeroth-i",
+      "name": "Ysmeroth I",
+      "typ": "Gesteinsplanet",
+      "um": "karynth-stern",
+      "aAE": 0.092,
+      "e": 0.08,
+      "i": 3.4,
+      "knoten": 210,
+      "peri": 40,
+      "phase": 300,
+      "radiusKm": 4100,
+      "masseErde": 0.62,
+      "albedo": 0.08,
+      "farbe": [
+        0.66,
+        0.42,
+        0.3
+      ],
+      "bild": {
+        "art": "planeten",
+        "slug": "super-merkur-mit-gluhendem-eisenkern"
+      },
+      "beschreibung": "Ysmeroth I ist ein sternnaher, ungewöhnlich dichter Eisenplanet. Er rotiert gebunden; auf seiner Tagseite glühen Gesteinsebenen bei über 600 °C."
+    },
+    {
+      "id": "karynth-ysmeroth-ii",
+      "name": "Ysmeroth II",
+      "typ": "Gesteinsplanet",
+      "um": "karynth-stern",
+      "aAE": 0.4545,
+      "e": 0.022,
+      "i": 1.2,
+      "knoten": 75,
+      "peri": 160,
+      "phase": 20,
+      "radiusKm": 6050,
+      "masseErde": 0.86,
+      "albedo": 0.68,
+      "farbe": [
+        0.9,
+        0.74,
+        0.5
+      ],
+      "bild": {
+        "art": "planeten",
+        "slug": "bernsteinfarbener-planet-im-wolkenschleier"
+      },
+      "beschreibung": "Ysmeroth II ist eine Treibhauswelt unter einer geschlossenen, bernsteinfarbenen Wolkendecke. Sie umläuft den Stern genau doppelt so schnell wie Karynth – das erste Glied einer 1 : 2 : 4-Bahnresonanz."
+    },
+    {
+      "id": "karynth-planet",
+      "name": "Karynth",
+      "typ": "Gesteinsplanet",
+      "um": "karynth-stern",
+      "aAE": 0.72,
+      "e": 0.015,
+      "i": 0,
+      "knoten": 140,
+      "peri": 260,
+      "phase": 200,
+      "radiusKm": 6245,
+      "masseErde": 0.884,
+      "albedo": 0.3,
+      "zielTemperaturC": 15,
+      "farbe": [
+        0.22,
+        0.42,
+        0.36
+      ],
+      "bild": {
+        "art": "planeten",
+        "slug": "mineral-ozeanwelt-mit-kristallkusten"
+      },
+      "beschreibung": "Karynth ist die Heimatwelt der Metamorphen: eine alte, wasserreiche Gesteinswelt mit drei Kontinenten, Gezeitenlandschaften, gewaltigen Höhlensystemen und einer außergewöhnlich vielfältigen Biosphäre."
+    },
+    {
+      "id": "karynth-veyr",
+      "name": "Veyr",
+      "typ": "Mond",
+      "um": "karynth-planet",
+      "periodeTage": 14.37,
+      "e": 0.012,
+      "i": 2.1,
+      "knoten": 30,
+      "peri": 0,
+      "phase": 80,
+      "radiusKm": 1230,
+      "masseErde": 0.0043,
+      "farbe": [
+        0.72,
+        0.7,
+        0.66
+      ],
+      "bild": {
+        "art": "monde",
+        "slug": "junger-kugelmond-mit-zerklufteter-oberflache"
+      },
+      "beschreibung": "Veyr ist der größere Mond Karynths: eine felsige Welt mit Einschlagkratern, Hochländern und alten geologischen Strukturen. Er erzeugt die stärkste Gezeitenkomponente und bestimmt viele Kalender der Gezeitenbünde."
+    },
+    {
+      "id": "karynth-orun",
+      "name": "Orun",
+      "typ": "Mond",
+      "um": "karynth-planet",
+      "periodeTage": 31.56,
+      "e": 0.02,
+      "i": 3,
+      "knoten": 55,
+      "peri": 0,
+      "phase": 250,
+      "radiusKm": 740,
+      "masseErde": 0.00086,
+      "farbe": [
+        0.64,
+        0.6,
+        0.58
+      ],
+      "bild": {
+        "art": "monde",
+        "slug": "gezackter-sichelmond-vor-schwarzem-all"
+      },
+      "beschreibung": "Orun ist der kleinere, felsige Mond Karynths. Seine Gezeiten überlagern die von Veyr und erzeugen periodische Springzeiten, die auf vielen Inseln als besondere Zeichen gelten."
+    },
+    {
+      "id": "karynth-ysmeroth-iv",
+      "name": "Ysmeroth IV",
+      "typ": "Gesteinsplanet",
+      "um": "karynth-stern",
+      "aAE": 1.143,
+      "e": 0.035,
+      "i": 1.9,
+      "knoten": 300,
+      "peri": 80,
+      "phase": 110,
+      "radiusKm": 3950,
+      "masseErde": 0.24,
+      "albedo": 0.22,
+      "farbe": [
+        0.78,
+        0.56,
+        0.36
+      ],
+      "bild": {
+        "art": "planeten",
+        "slug": "ockerplanet-mit-blauen-binnenmeeren"
+      },
+      "beschreibung": "Ysmeroth IV ist eine kalte Ockerwelt mit dünner Kohlendioxidhülle und salzigen Laugenseen, die trotz Frost flüssig bleiben. Sie braucht genau doppelt so lange wie Karynth – das äußere Glied der 1 : 2 : 4-Resonanzkette."
+    },
+    {
+      "id": "karynth-ysmeroth-v",
+      "name": "Ysmeroth V",
+      "typ": "Gasriese",
+      "um": "karynth-stern",
+      "aAE": 2.9,
+      "e": 0.17,
+      "i": 2.6,
+      "knoten": 20,
+      "peri": 300,
+      "phase": 150,
+      "radiusKm": 70500,
+      "masseErde": 445,
+      "albedo": 0.38,
+      "farbe": [
+        0.8,
+        0.64,
+        0.5
+      ],
+      "bild": {
+        "art": "planeten",
+        "slug": "sturmischer-super-jupiter-im-all"
+      },
+      "beschreibung": "Ysmeroth V ist ein stürmischer Super-Jupiter auf deutlich elliptischer Bahn. Er hat das Gebiet zwischen 1,6 und 5 AE leergeräumt; statt eines Asteroidengürtels sammeln sich Trümmer nur in seinen Lagrange-Punkten."
+    },
+    {
+      "id": "karynth-thren",
+      "name": "Thren",
+      "typ": "Mond",
+      "um": "karynth-ysmeroth-v",
+      "periodeTage": 2.4,
+      "e": 0.006,
+      "i": 0.4,
+      "knoten": 0,
+      "peri": 0,
+      "phase": 30,
+      "radiusKm": 1650,
+      "masseErde": 0.012,
+      "farbe": [
+        0.8,
+        0.5,
+        0.36
+      ],
+      "bild": {
+        "art": "monde",
+        "slug": "gezeitenverformter-mond-mit-gluhenden-rissen"
+      },
+      "beschreibung": "Thren ist ein gezeitengeheizter Mond von Ysmeroth V. Glühende Risse durchziehen seine verformte Kruste."
+    },
+    {
+      "id": "karynth-askel",
+      "name": "Askel",
+      "typ": "Mond",
+      "um": "karynth-ysmeroth-v",
+      "periodeTage": 9.6,
+      "e": 0.004,
+      "i": 0.9,
+      "knoten": 120,
+      "peri": 0,
+      "phase": 200,
+      "radiusKm": 2200,
+      "masseErde": 0.024,
+      "farbe": [
+        0.78,
+        0.84,
+        0.9
+      ],
+      "bild": {
+        "art": "monde",
+        "slug": "eisrinde-uber-verborgenem-ozean"
+      },
+      "beschreibung": "Askel ist ein großer Eismond mit einer Eisrinde über einem verborgenen Ozean."
+    },
+    {
+      "id": "karynth-trojaner-l4",
+      "name": "Elioos",
+      "typ": "Asteroid",
+      "um": "karynth-stern",
+      "aAE": 2.9,
+      "e": 0.17,
+      "i": 5.5,
+      "knoten": 20,
+      "peri": 300,
+      "phase": 210,
+      "radiusKm": 46,
+      "masseErde": 0,
+      "farbe": [
+        0.4,
+        0.36,
+        0.34
+      ],
+      "bild": {
+        "art": "asteroiden",
+        "slug": "schwarzer-kohlenstoffasteroid-im-tiefen-all"
+      },
+      "beschreibung": "Ein Schwarm dunkler, kohlenstoffreicher Asteroiden im vorauseilenden Lagrange-Punkt L4 von Ysmeroth V – stabil gehalten von der Schwerkraft des Riesen und des Sterns."
+    },
+    {
+      "id": "karynth-trojaner-l5",
+      "name": "Carunir",
+      "typ": "Asteroid",
+      "um": "karynth-stern",
+      "aAE": 2.9,
+      "e": 0.17,
+      "i": 4.1,
+      "knoten": 20,
+      "peri": 300,
+      "phase": 90,
+      "radiusKm": 38,
+      "masseErde": 0,
+      "farbe": [
+        0.46,
+        0.4,
+        0.36
+      ],
+      "bild": {
+        "art": "asteroiden",
+        "slug": "kohliger-urasteroid-im-tiefen-all"
+      },
+      "beschreibung": "Der Schwarm im nachlaufenden Lagrange-Punkt L5 von Ysmeroth V. Seine Brocken gelten als nahezu unverändertes Material aus der Entstehungszeit des Systems."
+    },
+    {
+      "id": "karynth-ysmeroth-vi",
+      "name": "Ysmeroth VI",
+      "typ": "Eisriese",
+      "um": "karynth-stern",
+      "aAE": 13.8,
+      "e": 0.09,
+      "i": 11.5,
+      "knoten": 250,
+      "peri": 30,
+      "phase": 330,
+      "radiusKm": 23500,
+      "masseErde": 13,
+      "albedo": 0.3,
+      "farbe": [
+        0.36,
+        0.56,
+        0.86
+      ],
+      "bild": {
+        "art": "planeten",
+        "slug": "tiefblauer-methanwolken-gasriese-im-all"
+      },
+      "beschreibung": "Ysmeroth VI ist ein tiefblauer Eisriese auf einer um 11,5° geneigten Bahn – vermutlich eine Spur früher Begegnungen mit dem Begleitstern Ysmeroth B."
+    },
+    {
+      "id": "karynth-graumantel",
+      "name": "Graumantel",
+      "typ": "Kometengebiet",
+      "ringUm": "karynth-stern",
+      "ringeAE": [
+        40,
+        48,
+        56
+      ],
+      "anzahl": 180,
+      "groesseKm": 140,
+      "mindestPx": 4.5,
+      "farbe": [
+        0.6,
+        0.64,
+        0.72
+      ],
+      "beschreibung": "Ein Gürtel aus Eiskörpern zwischen 40 und 56 AE, dessen äußerer Rand vom Begleitstern Ysmeroth B scharf abgeschnitten wird."
+    },
+    {
+      "id": "karynth-schwellenlaeufer",
+      "name": "Schwellenläufer",
+      "typ": "Komet",
+      "um": "karynth-stern",
+      "anomalie": true,
+      "aAE": 62,
+      "e": 0.975,
+      "i": 38,
+      "knoten": 160,
+      "peri": 110,
+      "phase": 178,
+      "radiusKm": 9,
+      "masseErde": 0,
+      "farbe": [
+        0.82,
+        0.86,
+        0.94
+      ],
+      "bild": {
+        "art": "kometen",
+        "slug": "zerborstener-komet-mit-fragmenten-im-schweif"
+      },
+      "beschreibung": "Ein Langperioden-Komet, den Ysmeroth B aus dem Graumantel ins innere System gelenkt hat. Bei seiner letzten Sternannäherung vor rund 490 Jahren zerbrach er in mehrere Fragmente; die Metamorphen verbinden ihn mit dem Beginn der Ära der Verschlossenen Schwellen."
+    },
+    {
+      "id": "karynth-ysmeroth-b",
+      "name": "Ysmeroth B",
+      "typ": "Roter Zwerg (M4 V)",
+      "um": "karynth-stern",
+      "aAE": 310,
+      "e": 0.38,
+      "i": 7,
+      "knoten": 95,
+      "peri": 210,
+      "phase": 140,
+      "radiusKm": 160000,
+      "masseErde": 69900,
+      "leuchtkraftSonne": 0.0064,
+      "temperaturK": 3400,
+      "farbe": [
+        1,
+        0.42,
+        0.26
+      ],
+      "bild": {
+        "art": "sterne",
+        "slug": "m-zwergstern-im-weltraum"
+      },
+      "beschreibung": "Ysmeroth B ist ein Roter Zwerg mit 21 % der Sonnenmasse auf einer weiten, exzentrischen Bahn um Ysmeroth. Am Himmel Karynths erscheint er als heller, rötlicher Stern, der in einem Umlauf von rund 5.400 Jahren langsam zwischen den Sternbildern wandert."
+    },
+    {
+      "id": "karynth-ysmeroth-ba",
+      "name": "Ysmeroth Ba",
+      "typ": "Ozeanplanet",
+      "um": "karynth-ysmeroth-b",
+      "aAE": 0.08,
+      "e": 0.01,
+      "i": 1.5,
+      "knoten": 0,
+      "peri": 0,
+      "phase": 60,
+      "radiusKm": 6600,
+      "masseErde": 1.1,
+      "albedo": 0.32,
+      "farbe": [
+        0.5,
+        0.3,
+        0.32
+      ],
+      "bild": {
+        "art": "planeten",
+        "slug": "gluhende-wasserwelt-im-roten-sternenlicht"
+      },
+      "beschreibung": "Ysmeroth Ba ist eine gebunden rotierende Wasserwelt in der habitablen Zone des Roten Zwergs Ysmeroth B. Ihre Tagseite liegt unter einem dauernden roten Licht, die Nachtseite ist vereist."
+    }
+  ]
+}

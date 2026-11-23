@@ -1,0 +1,638 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Saelon B",
+  "genitiv": "von Saelon B",
+  "dossierName": "Saelon B-Dossier",
+  "klasse": "Weißer Zwerg",
+  "intro": "Saelon B ist ein Weißer Zwerg mit 62 % der Sonnenmasse, kaum größer als Nalvyr. Er ist der ausgebrannte Kern eines einst etwa 2,4-mal sonnenschweren Sterns, der vor über fünf Milliarden Jahren zum Roten Riesen wurde und das junge System mit schweren Elementen anreicherte. Am Himmel Nalvyrs erscheint er als heller, elfenbeinfarbener Stern. Saelon B ist ein Begleitstern von Saelon und umkreist ihn in rund 180 AE Abstand – ein Umlauf dauert 2.013,4 Jahre.",
+  "globusDaten": {
+    "planet": "weisser-zwerg-mit-warmem-elfenbeinglanz",
+    "klasse": "Vulkan",
+    "radius": 8400000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=nalvyr-stern&objekt=nalvyr-saelon-b",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-7D13C15464"
+    ],
+    [
+      "Typ",
+      "Weißer Zwerg"
+    ],
+    [
+      "Sternsystem",
+      "Saelon-System"
+    ],
+    [
+      "Masse",
+      "0,62 Sonnenmassen"
+    ],
+    [
+      "Radius",
+      "0,01 Sonnenradien"
+    ],
+    [
+      "Leuchtkraft",
+      "0,0008 Sonnenleuchtkräfte"
+    ],
+    [
+      "Oberflächentemperatur",
+      "ca. 7.400 K"
+    ],
+    [
+      "Alter",
+      "ca. 6,1 Mrd. Jahre"
+    ],
+    [
+      "Große Halbachse",
+      "180 AE"
+    ],
+    [
+      "Umlaufzeit",
+      "2.013,4 Jahre"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Saelon-System"
+    ],
+    [
+      "Zentralstern",
+      "Saelon",
+      "inhalte/himmelskoerper/sterne/details/saelon/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "180 AE"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Saelon B im Saelon-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=nalvyr-stern&objekt=nalvyr-saelon-b",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Saelon",
+      "href": "inhalte/himmelskoerper/sterne/details/saelon/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Regeneranten",
+      "titel": "Nalvyr",
+      "href": "inhalte/himmelskoerper/planeten/details/nalvyr/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Regeneranten",
+      "href": "inhalte/spezies/Biologische Spezies/Regeneranten/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Saelon-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=nalvyr-stern&objekt=nalvyr-saelon-b"
+    },
+    {
+      "titel": "Speziesdossier Regeneranten",
+      "href": "inhalte/spezies/Biologische Spezies/Regeneranten/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#0c0c0b",
+      "tiefe": "#1b1a18",
+      "akzent": "#f8f5e8",
+      "sand": "#f9eac2",
+      "moos": "#d3f4bb",
+      "ozean": "#a9d6e2",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#6e6c63"
+    },
+    "schichten": [
+      [
+        "Strahlung",
+        "Leuchtkraft"
+      ],
+      [
+        "Hülle",
+        "Spektralklasse"
+      ],
+      [
+        "Kern",
+        "Fusion"
+      ],
+      [
+        "Zeit",
+        "Lebenszyklus"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Spektralklasse": {
+      "gruppe": "Wissenschaft",
+      "icon": "✦",
+      "intro": "Spektralklasse von Saelon B.",
+      "abschnitte": [
+        {
+          "titel": "Einordnung",
+          "daten": [
+            [
+              "Typ",
+              "Weißer Zwerg"
+            ],
+            [
+              "Oberflächentemperatur",
+              "ca. 7.400 K"
+            ],
+            [
+              "Farbe",
+              "gelbweiß"
+            ]
+          ]
+        },
+        {
+          "titel": "Weißer Zwerg",
+          "daten": [
+            [
+              "Klasse",
+              "Weißer Zwerg (DA)"
+            ],
+            [
+              "Dichte",
+              "rund eine Tonne pro Kubikzentimeter"
+            ],
+            [
+              "Durchmesser",
+              "ca. 16.800 km"
+            ]
+          ]
+        }
+      ]
+    },
+    "Fusion": {
+      "gruppe": "Wissenschaft",
+      "icon": "☀",
+      "intro": "Fusion von Saelon B.",
+      "abschnitte": [
+        {
+          "titel": "Keine Fusion mehr",
+          "text": [
+            "Im Inneren von Saelon B findet keine Kernfusion mehr statt. Er besteht überwiegend aus Kohlenstoff und Sauerstoff, zusammengehalten vom Druck entarteter Elektronen, und strahlt nur noch gespeicherte Wärme ab."
+          ]
+        }
+      ]
+    },
+    "Leuchtkraft": {
+      "gruppe": "Wissenschaft",
+      "icon": "☀",
+      "intro": "Leuchtkraft von Saelon B.",
+      "abschnitte": [
+        {
+          "titel": "Strahlung",
+          "daten": [
+            [
+              "Leuchtkraft",
+              "0,0008 Sonnenleuchtkräfte"
+            ],
+            [
+              "Habitable Zone",
+              "0,03–0,05 AE"
+            ]
+          ]
+        }
+      ]
+    },
+    "Lebenszyklus": {
+      "gruppe": "Wissenschaft",
+      "icon": "⧗",
+      "intro": "Lebenszyklus von Saelon B.",
+      "abschnitte": [
+        {
+          "titel": "Ein ausgebrannter Stern",
+          "text": [
+            "Saelon B war einst ein etwa 2,4-mal sonnenschwerer Stern, der nur rund eine Milliarde Jahre auf der Hauptreihe blieb. Als Roter Riese stieß er seine äußeren Schichten ab; zurück blieb ein Kern mit 62 % der Sonnenmasse, kaum größer als Nalvyr.",
+            "Seither kühlt er langsam ab. Mit rund 7.400 K leuchtet er heute noch elfenbeinfarben – in Milliarden Jahren wird er zu einem dunklen, kalten Rest."
+          ]
+        },
+        {
+          "titel": "Folgen für das System",
+          "text": [
+            "Der Massenverlust in der Riesenphase weitete die Bahn des Paares und reicherte das junge System mit schweren Elementen an. Der metallreiche Saumgürtel und die stark elliptische Bahn von Saelon VI gelten als Spuren dieser Zeit."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Saelon B auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Saelon B",
+          "text": [
+            "Saelon B ist ein Weißer Zwerg mit 62 % der Sonnenmasse, kaum größer als Nalvyr. Er ist der ausgebrannte Kern eines einst etwa 2,4-mal sonnenschweren Sterns, der vor über fünf Milliarden Jahren zum Roten Riesen wurde und das junge System mit schweren Elementen anreicherte. Am Himmel Nalvyrs erscheint er als heller, elfenbeinfarbener Stern.",
+            "Saelon B ist ein Begleitstern von Saelon und umkreist ihn in rund 180 AE Abstand – ein Umlauf dauert 2.013,4 Jahre."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Weißer Zwerg"
+            ],
+            [
+              "Sternsystem",
+              "Saelon-System"
+            ],
+            [
+              "Masse",
+              "0,62 Sonnenmassen"
+            ],
+            [
+              "Radius",
+              "0,01 Sonnenradien"
+            ],
+            [
+              "Leuchtkraft",
+              "0,0008 Sonnenleuchtkräfte"
+            ],
+            [
+              "Oberflächentemperatur",
+              "ca. 7.400 K"
+            ],
+            [
+              "Alter",
+              "ca. 6,1 Mrd. Jahre"
+            ],
+            [
+              "Große Halbachse",
+              "180 AE"
+            ],
+            [
+              "Umlaufzeit",
+              "2.013,4 Jahre"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Nalvyr",
+          "text": [
+            "Das Saelon-System ist die Heimat der Regeneranten: Ihr Planet Nalvyr umkreist Saelon."
+          ],
+          "verweise": [
+            [
+              "Nalvyr",
+              "inhalte/himmelskoerper/planeten/details/nalvyr/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Regeneranten",
+              "inhalte/spezies/Biologische Spezies/Regeneranten/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Saelon B im Raum.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Saelon"
+            ],
+            [
+              "Große Halbachse",
+              "180 AE (26.928 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,22"
+            ],
+            [
+              "Bahnneigung",
+              "9°"
+            ],
+            [
+              "Umlaufzeit",
+              "2.013,4 Jahre"
+            ],
+            [
+              "Einstrahlung",
+              "0-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Saelon · Stern",
+              "Orangefarbener Zwerg (K2 V)"
+            ],
+            [
+              "Saelon B · Begleitstern in 180 AE · dieses Dossier",
+              "Weißer Zwerg"
+            ],
+            [
+              "Saelon I · 0,13 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Saelon II · 0,47 AE",
+              "Ozeanplanet"
+            ],
+            [
+              "Nalvyr · 0,76 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Saelon IVa · 1,32 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Kerythra · 2,68 AE",
+              "Zwergplanet"
+            ],
+            [
+              "Saelon V · 5,4 AE",
+              "Gasriese"
+            ],
+            [
+              "Saelon VI · 16 AE",
+              "Eisriese"
+            ],
+            [
+              "Saumgürtel · 2,3–3,1 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Weißschleier · 30–42 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Saelon",
+              "inhalte/himmelskoerper/sterne/details/saelon/hauptseite/index.html"
+            ],
+            [
+              "Saelon I",
+              "inhalte/himmelskoerper/planeten/details/saelon-i/hauptseite/index.html"
+            ],
+            [
+              "Saelon II",
+              "inhalte/himmelskoerper/planeten/details/saelon-ii/hauptseite/index.html"
+            ],
+            [
+              "Nalvyr",
+              "inhalte/himmelskoerper/planeten/details/nalvyr/hauptseite/index.html"
+            ],
+            [
+              "Saelon IVa",
+              "inhalte/himmelskoerper/planeten/details/saelon-iva/hauptseite/index.html"
+            ],
+            [
+              "Kerythra",
+              "inhalte/himmelskoerper/zwergplaneten/details/kerythra/hauptseite/index.html"
+            ],
+            [
+              "Saelon V",
+              "inhalte/himmelskoerper/planeten/details/saelon-v/hauptseite/index.html"
+            ],
+            [
+              "Saelon VI",
+              "inhalte/himmelskoerper/planeten/details/saelon-vi/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Saelon B.",
+      "abschnitte": [
+        {
+          "titel": "Physik",
+          "daten": [
+            [
+              "Masse",
+              "0,62 Sonnenmassen"
+            ],
+            [
+              "Radius",
+              "0,01 Sonnenradien"
+            ],
+            [
+              "Leuchtkraft",
+              "0,0008 Sonnenleuchtkräfte"
+            ],
+            [
+              "Oberflächentemperatur",
+              "ca. 7.400 K"
+            ],
+            [
+              "Alter",
+              "ca. 6,1 Mrd. Jahre"
+            ],
+            [
+              "Große Halbachse",
+              "180 AE"
+            ],
+            [
+              "Umlaufzeit",
+              "2.013,4 Jahre"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Saelon B.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Saelon B entstand zusammen mit dem Saelon-System vor rund 6,1 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Umgebung": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Umgebung von Saelon B.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Saelon · Stern",
+              "Orangefarbener Zwerg (K2 V)"
+            ],
+            [
+              "Saelon B · Begleitstern in 180 AE · dieses Dossier",
+              "Weißer Zwerg"
+            ],
+            [
+              "Saelon I · 0,13 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Saelon II · 0,47 AE",
+              "Ozeanplanet"
+            ],
+            [
+              "Nalvyr · 0,76 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Saelon IVa · 1,32 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Kerythra · 2,68 AE",
+              "Zwergplanet"
+            ],
+            [
+              "Saelon V · 5,4 AE",
+              "Gasriese"
+            ],
+            [
+              "Saelon VI · 16 AE",
+              "Eisriese"
+            ],
+            [
+              "Saumgürtel · 2,3–3,1 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Weißschleier · 30–42 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Saelon",
+              "inhalte/himmelskoerper/sterne/details/saelon/hauptseite/index.html"
+            ],
+            [
+              "Saelon I",
+              "inhalte/himmelskoerper/planeten/details/saelon-i/hauptseite/index.html"
+            ],
+            [
+              "Saelon II",
+              "inhalte/himmelskoerper/planeten/details/saelon-ii/hauptseite/index.html"
+            ],
+            [
+              "Nalvyr",
+              "inhalte/himmelskoerper/planeten/details/nalvyr/hauptseite/index.html"
+            ],
+            [
+              "Saelon IVa",
+              "inhalte/himmelskoerper/planeten/details/saelon-iva/hauptseite/index.html"
+            ],
+            [
+              "Kerythra",
+              "inhalte/himmelskoerper/zwergplaneten/details/kerythra/hauptseite/index.html"
+            ],
+            [
+              "Saelon V",
+              "inhalte/himmelskoerper/planeten/details/saelon-v/hauptseite/index.html"
+            ],
+            [
+              "Saelon VI",
+              "inhalte/himmelskoerper/planeten/details/saelon-vi/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Nachbarsysteme",
+          "liste": [
+            "Thyrrae-System – 16 Lichtjahre",
+            "Ixar-System – 19,4 Lichtjahre",
+            "Thalor-System – 25 Lichtjahre",
+            "Aurenn-System – 25,2 Lichtjahre",
+            "Seryn-System – 26,8 Lichtjahre"
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Saelon B.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Wie stark schwankt die magnetische Aktivität?",
+            "Wie hat sich die Leuchtkraft seit der Entstehung verändert?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Saelon B ist mit allen Bahndaten im Saelon-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=nalvyr-stern&objekt=nalvyr-saelon-b"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Saelon B.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Saelon B ist ein Weißer Zwerg mit 62 % der Sonnenmasse, kaum größer als Nalvyr. Er ist der ausgebrannte Kern eines einst etwa 2,4-mal sonnenschweren Sterns, der vor über fünf Milliarden Jahren zum Roten Riesen wurde und das junge System mit schweren Elementen anreicherte. Am Himmel Nalvyrs erscheint er als heller, elfenbeinfarbener Stern."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Saelon B.",
+      "abschnitte": [
+        {
+          "titel": "Saelon B – Archivbild",
+          "bild": true,
+          "bildtext": "Saelon B"
+        }
+      ]
+    }
+  }
+}

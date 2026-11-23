@@ -1,2 +1,3 @@
-// Synaptoiden – Heimatwelt · erzeugt vom Spezies-Baukasten (scripts/spezies) – Änderungen dort vornehmen
+// Synaptoiden – Heimatwelt
+// Gemeinsame Funktionen (Topbar, Sidebar, Routen, Klappkapitel, Bildkarussell) kommen aus der Basis.
 import "../../synaptoiden-basis.js";

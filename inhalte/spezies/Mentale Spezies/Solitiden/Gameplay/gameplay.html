@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#0b0811">
+    <meta name="theme-color" content="#080f11">
     <meta name="description" content="Spielintegration der Solitiden im APORIA-Weltenarchiv.">
     <title>Spielintegration · Solitiden · APORIA</title>
     <link rel="stylesheet" href="../../../../../Men%C3%BCs/TopBar/Top_bar.css">
@@ -19,7 +19,7 @@
         <div data-aporia-sidebar></div>
         <main class="st-dossier" id="inhalt">
             <header class="st-hero st-hero--reiter">
-                
+                <img class="st-hero-bild" src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Solitiden/Heimatplanet/Heimat_a2.png" alt="" fetchpriority="high" decoding="async">
                 <span class="st-glanz" aria-hidden="true"></span>
                 <div class="st-hero-text">
                     <nav class="st-pfad" aria-label="Archivpfad"><a data-route="spezies" href="../../../Spezies_%C3%BCbersicht/Spezies.html">Spezies</a><span aria-hidden="true">›</span><a data-route="spezies-mental" href="../../%C3%9Cbersichtsseite%20Mentale%20Spezies/Uebersicht.html">Mentale Spezies</a><span aria-hidden="true">›</span><a data-route="spezies-mental-8" href="../hauptseite/Spezies.html">Solitiden</a><span aria-hidden="true">›</span><span aria-current="page">Spielintegration</span></nav>
@@ -39,18 +39,156 @@
                 <a href="../Unterseiten/Geschichte/geschichte.html" data-route="spezies-mental-8-geschichte"><span aria-hidden="true">⧗</span>Geschichte</a>
                 <a href="gameplay.html" data-route="spezies-mental-8-gameplay" aria-current="page"><span aria-hidden="true">◈</span>Spielintegration</a>
                 <a href="../Forschung/forschung.html" data-route="spezies-mental-8-forschung"><span aria-hidden="true">⚗</span>Forschung</a>
+                <a href="../Unterseiten/Technologien/technologien.html" data-route="spezies-mental-8-technologien"><span aria-hidden="true">⚙</span>Technologien</a>
                 <a href="../Unterseiten/Medien/medien.html" data-route="spezies-mental-8-medien"><span aria-hidden="true">▣</span>Medien</a>
             </nav>
             <div class="st-layout">
                 <div class="st-inhalt">
-                    <details class="st-panel st-karte" id="noch-offen" open>
-                        <summary><span class="st-nr">…</span><h2>Spielintegration</h2><span class="st-chevron" aria-hidden="true"></span></summary>
+                    <details class="st-panel st-karte" id="k-steckbrief" open>
+                        <summary><span class="st-nr">◇</span><h2>Steckbrief</h2><span class="st-chevron" aria-hidden="true"></span></summary>
                         <div class="st-text">
-                            <p class="st-offen">Noch nicht ausgearbeitet.</p>
-                            <p class="st-quelle">Vorgesehene Infodateien (noch ohne Text): Gameplay/.gitkeep</p>
+                            <dl class="st-fakten"><div><dt>Version</dt><dd>V2.0</dd></div></dl>
+                            <p class="st-quelle">Quelle: Info_material · Solitiden · Gameplay/.gitkeep</p>
                         </div>
                     </details>
-                    
+                    <details class="st-panel st-karte" id="k-spielidentitat">
+                        <summary><span class="st-nr">◇</span><h2>Spielidentität</h2><span class="st-chevron" aria-hidden="true"></span></summary>
+                        <div class="st-text">
+                            <p>Solitiden sind intelligente, vollständig bindungsfreie NPCs und mögliche technisch spezialisierte Interaktionspartner.</p>
+                            <p>Sie besitzen eigene Ziele und Interessen, entwickeln aber keinerlei emotionale Beziehungen zu Spielercharakteren oder anderen NPCs.</p>
+                            <p class="st-quelle">Quelle: Info_material · Solitiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="st-panel st-karte" id="k-beziehungssystem">
+                        <summary><span class="st-nr">◇</span><h2>Beziehungssystem</h2><span class="st-chevron" aria-hidden="true"></span></summary>
+                        <div class="st-text">
+                            <p>Für Solitiden entfallen:</p>
+                            <ul><li>Freundschaftspunkte.</li><li>Romantische Beziehungen.</li><li>Sympathiewerte.</li><li>Persönliche Loyalität.</li><li>Emotionale Bindungsquests.</li><li>Freundschaftsabhängige Dialogoptionen.</li></ul>
+                            <p>Stattdessen existieren:</p>
+                            <ul><li>Vertragsstatus.</li><li>Dokumentierte Zuverlässigkeit.</li><li>Aktuelle Interessen.</li><li>Informationsstand.</li><li>Technische Zugangsrechte.</li><li>Sicherheitsbewertung.</li><li>Forschungsaustausch.</li><li>Individuelle Zielkonflikte.</li></ul>
+                            <p class="st-quelle">Quelle: Info_material · Solitiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="st-panel st-karte" id="k-dialogverhalten">
+                        <summary><span class="st-nr">◇</span><h2>Dialogverhalten</h2><span class="st-chevron" aria-hidden="true"></span></summary>
+                        <div class="st-text">
+                            <p>Solitiden reagieren auf Argumente, Informationen und Entscheidungen.</p>
+                            <p>Sie bewerten, ob eine Handlung ihren Interessen, Verpflichtungen oder allgemeinen Wertmaßstäben entspricht.</p>
+                            <p>Persönliche Komplimente, Liebesbekundungen und Appelle an Freundschaft erzeugen keine emotionale Wirkung.</p>
+                            <p class="st-quelle">Quelle: Info_material · Solitiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="st-panel st-karte" id="k-npc-interaktion">
+                        <summary><span class="st-nr">◇</span><h2>NPC-Interaktion</h2><span class="st-chevron" aria-hidden="true"></span></summary>
+                        <div class="st-text">
+                            <p>Ein Solitid kann den Spieler über Jahrhunderte hinweg kennen und wiedererkennen.</p>
+                            <p>Trotzdem besitzt er keine persönliche Bindung an den Spieler.</p>
+                            <p>Sein Verhalten kann durch gespeicherte Erfahrungen, Verträge oder konkrete Ziele beeinflusst werden.</p>
+                            <p class="st-quelle">Quelle: Info_material · Solitiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="st-panel st-karte" id="k-korper-und-mobilitat">
+                        <summary><span class="st-nr">◇</span><h2>Körper und Mobilität</h2><span class="st-chevron" aria-hidden="true"></span></summary>
+                        <div class="st-text">
+                            <p>Natürliche Solitiden sind ortsfeste mineralische Denkräume.</p>
+                            <p>Mobile NPCs besitzen abgeschirmte technische Kerngehäuse mit Robotik oder anderen Fahrzeugantrieben.</p>
+                            <p>Der eigentliche Denkraum bleibt materiell erhalten.</p>
+                            <p class="st-quelle">Quelle: Info_material · Solitiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="st-panel st-karte" id="k-kampfmechaniken">
+                        <summary><span class="st-nr">◇</span><h2>Kampfmechaniken</h2><span class="st-chevron" aria-hidden="true"></span></summary>
+                        <div class="st-text">
+                            <p>Mögliche Fähigkeiten:</p>
+                            <ul><li>Fernsteuerung von Robotern.</li><li>Einsatz autonomer Drohnen.</li><li>Elektronische Abwehr.</li><li>Stationäre Sicherheitsanlagen.</li><li>Komplexe Sensoranalyse.</li><li>Steuerung mehrerer technischer Geräte.</li></ul>
+                            <p class="st-quelle">Quelle: Info_material · Solitiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="st-panel st-karte" id="k-schwachen">
+                        <summary><span class="st-nr">◇</span><h2>Schwächen</h2><span class="st-chevron" aria-hidden="true"></span></summary>
+                        <div class="st-text">
+                            <ul><li>Hohe Abhängigkeit von Energieversorgung.</li><li>Empfindliche Denksubstrate.</li><li>Begrenzte natürliche Beweglichkeit.</li><li>Gefährdung durch chemische Störungen.</li><li>Anfälligkeit für bestimmte technische Ausfälle.</li></ul>
+                            <p class="st-quelle">Quelle: Info_material · Solitiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="st-panel st-karte" id="k-alter-und-erfahrung">
+                        <summary><span class="st-nr">◇</span><h2>Alter und Erfahrung</h2><span class="st-chevron" aria-hidden="true"></span></summary>
+                        <div class="st-text">
+                            <p>Solitidische NPCs können zwischen wenigen Jahrzehnten und ungefähr 2.000 Jahren alt sein.</p>
+                            <p>Jahrhundertealte Individuen können außergewöhnliche Erfahrungen besitzen.</p>
+                            <p>Alter allein garantiert jedoch keine bestimmte Intelligenz oder technische Überlegenheit.</p>
+                            <p class="st-quelle">Quelle: Info_material · Solitiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="st-panel st-karte" id="k-quests">
+                        <summary><span class="st-nr">◇</span><h2>Quests</h2><span class="st-chevron" aria-hidden="true"></span></summary>
+                        <div class="st-text">
+                            <dl class="st-fakten"><div><dt>Die verstummte Kammer</dt><dd>Rettung eines gefährdeten Denksubstrats.</dd></div><div><dt>Die Stille der Neun Becken</dt><dd>Untersuchung historischer Archive.</dd></div><div><dt>Der wandernde Kern</dt><dd>Reparatur einer mobilen Denkkammer.</dd></div><div><dt>Das Recht auf Isolation</dt><dd>Schutz individueller kognitiver Rechte.</dd></div><div><dt>Ein neues Bewusstsein</dt><dd>Untersuchung einer natürlichen Entstehungsstätte.</dd></div><div><dt>Der tausendjährige Vertrag</dt><dd>Ein jahrhundertealter Solitid fordert die Erfüllung einer dokumentierten Vereinbarung.</dd></div></dl>
+                            <p class="st-quelle">Quelle: Info_material · Solitiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="st-panel st-karte" id="k-questbelohnungen">
+                        <summary><span class="st-nr">◇</span><h2>Questbelohnungen</h2><span class="st-chevron" aria-hidden="true"></span></summary>
+                        <div class="st-text">
+                            <p>Mögliche Belohnungen:</p>
+                            <ul><li>Forschungsergebnisse.</li><li>Technologie.</li><li>Handelszugang.</li><li>Rohstoffe.</li><li>Technische Dienstleistungen.</li><li>Informationen.</li><li>Zugang zu Forschungsanlagen.</li></ul>
+                            <p>Es werden keine Freundschaftsbelohnungen vergeben.</p>
+                            <p class="st-quelle">Quelle: Info_material · Solitiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="st-panel st-karte" id="k-begleiter">
+                        <summary><span class="st-nr">◇</span><h2>Begleiter</h2><span class="st-chevron" aria-hidden="true"></span></summary>
+                        <div class="st-text">
+                            <p>Solitiden können zeitweilig als technische Begleiter eingesetzt werden.</p>
+                            <p>Die Zusammenarbeit ist vertraglich oder interessengebunden.</p>
+                            <p>Eine dauerhafte emotionale Begleiterbindung existiert nicht.</p>
+                            <p class="st-quelle">Quelle: Info_material · Solitiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="st-panel st-karte" id="k-zentrales-gameplaymerkmal">
+                        <summary><span class="st-nr">◇</span><h2>Zentrales Gameplaymerkmal</h2><span class="st-chevron" aria-hidden="true"></span></summary>
+                        <div class="st-text">
+                            <p>Der Spieler kann die Entscheidungen eines Solitiden beeinflussen, aber nicht durch klassische soziale Beziehungspflege seine emotionale Loyalität gewinnen.</p>
+                            <p class="st-quelle">Quelle: Info_material · Solitiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <section class="st-panel st-block st-karussell-block" id="galerie" aria-label="Bilder">
+                    <h2 class="st-h2">Bilder <small>6 Bilder · Bildarchiv</small></h2>
+                    <div class="bilder-karussell" data-karussell aria-roledescription="Karussell" aria-label="Bilder der Solitiden">
+                    <div class="karussell-spur" tabindex="0" aria-label="Bilder – mit Pfeiltasten blättern">
+                        <figure class="karussell-folie" data-kategorie="Gesamtdarstellung" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Solitiden design A3 in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Solitiden/gesamtdarstellung/Solitiden%20design%20_A3.png" alt="Solitiden design A3" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Solitiden design A3</strong><span>Gesamtdarstellung</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Heimatplanet" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Heimat a2 in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Solitiden/Heimatplanet/Heimat_a2.png" alt="Heimat a2" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Heimat a2</strong><span>Heimatplanet</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Heimatplanet" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Heimat a3 in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Solitiden/Heimatplanet/Heimat_a3.png" alt="Heimat a3" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Heimat a3</strong><span>Heimatplanet</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Heimatplanet" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Heimat a4 in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Solitiden/Heimatplanet/Heimat_a4.png" alt="Heimat a4" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Heimat a4</strong><span>Heimatplanet</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Heimatplanet" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Heimat a5 in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Solitiden/Heimatplanet/Heimat_a5.png" alt="Heimat a5" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Heimat a5</strong><span>Heimatplanet</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Technologie" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Gothischer Resonanzkern – Technischer Bauplan in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Solitiden/Technologie/Gothischer%20Resonanzkern%20%E2%80%93%20Technischer%20Bauplan-3.png" alt="Gothischer Resonanzkern – Technischer Bauplan" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Gothischer Resonanzkern – Technischer Bauplan</strong><span>Technologie</span></figcaption>
+                        </figure>
+                    </div>
+                    <div class="karussell-steuerung">
+                        <button type="button" data-karussell-schritt="-1" aria-label="Vorheriges Bild">‹</button>
+                        <div class="karussell-punkte" role="group" aria-label="Bild wählen"></div>
+                        <output class="karussell-zaehler" aria-live="polite"></output>
+                        <button type="button" data-karussell-schritt="1" aria-label="Nächstes Bild">›</button>
+                    </div>
+                </div>
+                </section>
                     <aside class="st-panel st-block st-links" aria-label="Verknüpfungen">
                     <h2 class="st-h2">Verknüpfungen</h2>
                     <ul>
@@ -66,7 +204,20 @@
                 <nav class="st-panel st-sprung" data-st-sprung aria-label="Kapitel dieser Seite">
                     <p class="st-kicker">Kapitel</p>
                     <button type="button" class="st-klappen" data-st-klappen aria-pressed="false">Alle aufklappen</button>
-                    <a href="#noch-offen"><span class="st-nr">…</span>Spielintegration</a>
+                    <a href="#k-steckbrief"><span class="st-nr">◇</span>Steckbrief</a>
+                    <a href="#k-spielidentitat"><span class="st-nr">◇</span>Spielidentität</a>
+                    <a href="#k-beziehungssystem"><span class="st-nr">◇</span>Beziehungssystem</a>
+                    <a href="#k-dialogverhalten"><span class="st-nr">◇</span>Dialogverhalten</a>
+                    <a href="#k-npc-interaktion"><span class="st-nr">◇</span>NPC-Interaktion</a>
+                    <a href="#k-korper-und-mobilitat"><span class="st-nr">◇</span>Körper und Mobilität</a>
+                    <a href="#k-kampfmechaniken"><span class="st-nr">◇</span>Kampfmechaniken</a>
+                    <a href="#k-schwachen"><span class="st-nr">◇</span>Schwächen</a>
+                    <a href="#k-alter-und-erfahrung"><span class="st-nr">◇</span>Alter und Erfahrung</a>
+                    <a href="#k-quests"><span class="st-nr">◇</span>Quests</a>
+                    <a href="#k-questbelohnungen"><span class="st-nr">◇</span>Questbelohnungen</a>
+                    <a href="#k-begleiter"><span class="st-nr">◇</span>Begleiter</a>
+                    <a href="#k-zentrales-gameplaymerkmal"><span class="st-nr">◇</span>Zentrales Gameplaymerkmal</a>
+                    <a href="#galerie"><span class="st-nr">▣</span>Bilder</a>
                 </nav>
             </div>
             <dialog class="st-zoom" aria-label="Bild in Großansicht"><div class="controls"><button class="control" type="button" data-step="-1" aria-label="Vorheriges Bild">←</button><output aria-live="polite"></output><button class="control" type="button" data-step="1" aria-label="Nächstes Bild">→</button></div><form method="dialog"><button class="control">Schließen</button></form><img alt=""></dialog>

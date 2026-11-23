@@ -1,0 +1,543 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Hevin",
+  "genitiv": "von Hevin",
+  "dossierName": "Hevin-Dossier",
+  "klasse": "Mond",
+  "intro": "Hevin ist ein kleiner ringnaher Mond des Oryss; seine Gravitation beeinflusst die Verteilung der Ringpartikel. Hevin umkreist Oryss in 21,6 Stunden.",
+  "globusDaten": {
+    "planet": "gezeitenverformter-mond-mit-spannungsrissen",
+    "klasse": "Gestein",
+    "radius": 25000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=nerath-stern&objekt=nerath-hevin",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-9DD84C8674"
+    ],
+    [
+      "Typ",
+      "Mond"
+    ],
+    [
+      "Sternsystem",
+      "Terev-System"
+    ],
+    [
+      "Zentralkörper",
+      "Oryss"
+    ],
+    [
+      "Große Halbachse",
+      "106.883 km"
+    ],
+    [
+      "Umlaufzeit",
+      "21,6 Stunden"
+    ],
+    [
+      "Durchmesser",
+      "50 km"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -195 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Terev-System"
+    ],
+    [
+      "Zentralstern",
+      "Terev",
+      "inhalte/himmelskoerper/sterne/details/terev/hauptseite/index.html"
+    ],
+    [
+      "Umläuft",
+      "Oryss",
+      "inhalte/himmelskoerper/planeten/details/oryss/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "106.883 km"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Hevin im Terev-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=nerath-stern&objekt=nerath-hevin",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Terev",
+      "href": "inhalte/himmelskoerper/sterne/details/terev/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◍",
+      "art": "Mutterplanet",
+      "titel": "Oryss",
+      "href": "inhalte/himmelskoerper/planeten/details/oryss/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Synaptoiden",
+      "titel": "Nerath",
+      "href": "inhalte/himmelskoerper/planeten/details/nerath/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Synaptoiden",
+      "href": "inhalte/spezies/Mentale Spezies/Synaptoiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Terev-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=nerath-stern&objekt=nerath-hevin"
+    },
+    {
+      "titel": "Speziesdossier Synaptoiden",
+      "href": "inhalte/spezies/Mentale Spezies/Synaptoiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#080808",
+      "tiefe": "#131312",
+      "akzent": "#c7c7c3",
+      "sand": "#cbc3ab",
+      "moos": "#a5be9c",
+      "ozean": "#84a5b6",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#4c4c49"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Astronomie"
+      ],
+      [
+        "Planet",
+        "Mutterplanet"
+      ],
+      [
+        "Kräfte",
+        "Gezeiten"
+      ],
+      [
+        "Tiefe",
+        "Geologie"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Mutterplanet": {
+      "gruppe": "Wissenschaft",
+      "icon": "◐",
+      "intro": "Mutterplanet von Hevin.",
+      "abschnitte": [
+        {
+          "titel": "Oryss",
+          "text": [
+            "Oryss ist ein türkis bis blaugrau erscheinender Eisriese mit rund 20 Erdmassen, starken Winden und mehreren schmalen, diffusen Ringen. Seine Achsneigung von etwa 31° führt zu langen saisonalen Veränderungen."
+          ],
+          "daten": [
+            [
+              "Typ",
+              "Eisriese"
+            ],
+            [
+              "Durchmesser",
+              "52.242 km"
+            ],
+            [
+              "Abstand des Mondes",
+              "106.883 km (4,1 Planetenradien)"
+            ]
+          ],
+          "verweise": [
+            [
+              "Oryss",
+              "inhalte/himmelskoerper/planeten/details/oryss/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Weitere Monde von Oryss",
+          "liste": [
+            "Thyl – Umlauf in 4,8 Tage",
+            "Vorra – Umlauf in 280 Tage"
+          ],
+          "verweise": [
+            [
+              "Thyl",
+              "inhalte/himmelskoerper/monde/details/thyl/hauptseite/index.html"
+            ],
+            [
+              "Vorra",
+              "inhalte/himmelskoerper/monde/details/vorra/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Gezeiten": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gezeiten von Hevin.",
+      "abschnitte": [
+        {
+          "titel": "Gezeitenkräfte",
+          "text": [
+            "Auf seiner Bahn in 106.883 km Abstand wirken starke Gezeitenkräfte von Oryss auf Hevin."
+          ]
+        }
+      ]
+    },
+    "Gebundene Rotation": {
+      "gruppe": "Wissenschaft",
+      "icon": "↻",
+      "intro": "Gebundene Rotation von Hevin.",
+      "abschnitte": [
+        {
+          "titel": "Rotation",
+          "text": [
+            "Hevin wendet Oryss vermutlich stets dieselbe Seite zu: Ein Tag dauert so lange wie ein Umlauf – 21,6 Stunden."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Hevin auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Hevin",
+          "text": [
+            "Hevin ist ein kleiner ringnaher Mond des Oryss; seine Gravitation beeinflusst die Verteilung der Ringpartikel.",
+            "Hevin umkreist Oryss in 21,6 Stunden."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Mond"
+            ],
+            [
+              "Sternsystem",
+              "Terev-System"
+            ],
+            [
+              "Zentralkörper",
+              "Oryss"
+            ],
+            [
+              "Große Halbachse",
+              "106.883 km"
+            ],
+            [
+              "Umlaufzeit",
+              "21,6 Stunden"
+            ],
+            [
+              "Durchmesser",
+              "50 km"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -195 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Nerath",
+          "text": [
+            "Das Terev-System ist die Heimat der Synaptoiden: Ihr Planet Nerath umkreist Terev."
+          ],
+          "verweise": [
+            [
+              "Nerath",
+              "inhalte/himmelskoerper/planeten/details/nerath/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Synaptoiden",
+              "inhalte/spezies/Mentale Spezies/Synaptoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Hevin im Terev-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Oryss"
+            ],
+            [
+              "Große Halbachse",
+              "106.883 km"
+            ],
+            [
+              "Exzentrizität",
+              "0,001"
+            ],
+            [
+              "Bahnneigung",
+              "0,1°"
+            ],
+            [
+              "Umlaufzeit",
+              "21,6 Stunden"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Terev · Stern",
+              "Orangegelber Zwerg (K0 V)"
+            ],
+            [
+              "Vaskir · 0,16 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Sereth · 0,42 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Nerath · 0,93 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Talvek · 1,57 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Urakan · 4,4 AE",
+              "Gasriese"
+            ],
+            [
+              "Oryss · 9,3 AE",
+              "Eisriese"
+            ],
+            [
+              "Veyl · 22,8 AE",
+              "Eisplanet"
+            ],
+            [
+              "Relt · 44 AE",
+              "Zwergplanet"
+            ],
+            [
+              "Othir · 52 AE",
+              "Zwergplanet"
+            ],
+            [
+              "Skalenband · 2,2–3,2 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Taren-Saum · 38–65 AE",
+              "Kleinkörpergürtel"
+            ],
+            [
+              "Terev-Fernwolke · 1.500–8.000 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Terev",
+              "inhalte/himmelskoerper/sterne/details/terev/hauptseite/index.html"
+            ],
+            [
+              "Vaskir",
+              "inhalte/himmelskoerper/planeten/details/vaskir/hauptseite/index.html"
+            ],
+            [
+              "Sereth",
+              "inhalte/himmelskoerper/planeten/details/sereth/hauptseite/index.html"
+            ],
+            [
+              "Nerath",
+              "inhalte/himmelskoerper/planeten/details/nerath/hauptseite/index.html"
+            ],
+            [
+              "Talvek",
+              "inhalte/himmelskoerper/planeten/details/talvek/hauptseite/index.html"
+            ],
+            [
+              "Urakan",
+              "inhalte/himmelskoerper/planeten/details/urakan/hauptseite/index.html"
+            ],
+            [
+              "Oryss",
+              "inhalte/himmelskoerper/planeten/details/oryss/hauptseite/index.html"
+            ],
+            [
+              "Veyl",
+              "inhalte/himmelskoerper/planeten/details/veyl/hauptseite/index.html"
+            ],
+            [
+              "Relt",
+              "inhalte/himmelskoerper/zwergplaneten/details/relt/hauptseite/index.html"
+            ],
+            [
+              "Othir",
+              "inhalte/himmelskoerper/zwergplaneten/details/othir/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Hevin.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "25 km"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Hevin.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Hevin ist geologisch weitgehend erstarrt; Einschläge haben seine Oberfläche geformt."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Hevin.",
+      "abschnitte": [
+        {
+          "titel": "Gashülle",
+          "text": [
+            "Hevin besitzt keine nennenswerte Atmosphäre."
+          ]
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Hevin.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 9,3 AE Abstand zu Terev liegt die Gleichgewichtstemperatur von Hevin bei rund -195 °C – eisig kalt."
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Hevin.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Hevin entstand zusammen mit dem Terev-System vor rund 5,6 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Hevin.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Ist der Mond eingefangen oder mit seinem Planeten entstanden?",
+            "Welche Spuren tragen seine ältesten Krater?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Hevin ist mit allen Bahndaten im Terev-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=nerath-stern&objekt=nerath-hevin"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Hevin.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Hevin ist ein kleiner ringnaher Mond des Oryss; seine Gravitation beeinflusst die Verteilung der Ringpartikel."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Hevin.",
+      "abschnitte": [
+        {
+          "titel": "Hevin – Archivbild",
+          "bild": true,
+          "bildtext": "Hevin"
+        }
+      ]
+    }
+  }
+}

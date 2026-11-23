@@ -1,0 +1,534 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Neth",
+  "genitiv": "von Neth",
+  "dossierName": "Neth-Dossier",
+  "klasse": "Mond",
+  "intro": "Neth ist der kleine, innere Mond Orvayas – unregelmäßig geformt und schnell über den Himmel ziehend. Neth umkreist Orvaya in 6,5 Tage.",
+  "globusDaten": {
+    "planet": "lebender-dreilappenmond-mit-goldenen-faden",
+    "klasse": "Gestein",
+    "radius": 210000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=orvaya-stern&objekt=orvaya-neth",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-48D4CF6B21"
+    ],
+    [
+      "Typ",
+      "Mond"
+    ],
+    [
+      "Sternsystem",
+      "Orvaya-System"
+    ],
+    [
+      "Zentralkörper",
+      "Orvaya"
+    ],
+    [
+      "Große Halbachse",
+      "120.100 km"
+    ],
+    [
+      "Umlaufzeit",
+      "6,5 Tage"
+    ],
+    [
+      "Durchmesser",
+      "420 km"
+    ],
+    [
+      "Masse",
+      "1,79 · 10^20 kg"
+    ],
+    [
+      "Schwerkraft",
+      "0,03 g"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -10 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Orvaya-System"
+    ],
+    [
+      "Zentralstern",
+      "Aelyra",
+      "inhalte/himmelskoerper/sterne/details/aelyra/hauptseite/index.html"
+    ],
+    [
+      "Umläuft",
+      "Orvaya",
+      "inhalte/himmelskoerper/planeten/details/orvaya/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "120.100 km"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Neth im Orvaya-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=orvaya-stern&objekt=orvaya-neth",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Aelyra",
+      "href": "inhalte/himmelskoerper/sterne/details/aelyra/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◍",
+      "art": "Mutterplanet",
+      "titel": "Orvaya",
+      "href": "inhalte/himmelskoerper/planeten/details/orvaya/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Waldfeen",
+      "titel": "Orvaya",
+      "href": "inhalte/himmelskoerper/planeten/details/orvaya/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Waldfeen",
+      "href": "inhalte/spezies/Biologische Spezies/WaldFeen/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Orvaya-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=orvaya-stern&objekt=orvaya-neth"
+    },
+    {
+      "titel": "Speziesdossier Waldfeen",
+      "href": "inhalte/spezies/Biologische Spezies/WaldFeen/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#080707",
+      "tiefe": "#11100f",
+      "akzent": "#bdb6af",
+      "sand": "#c2b59e",
+      "moos": "#9cab8a",
+      "ozean": "#7c949d",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#45403c"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Astronomie"
+      ],
+      [
+        "Planet",
+        "Mutterplanet"
+      ],
+      [
+        "Kräfte",
+        "Gezeiten"
+      ],
+      [
+        "Tiefe",
+        "Geologie"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Mutterplanet": {
+      "gruppe": "Wissenschaft",
+      "icon": "◐",
+      "intro": "Mutterplanet von Neth.",
+      "abschnitte": [
+        {
+          "titel": "Orvaya",
+          "text": [
+            "Orvaya ist die Heimatwelt der Waldfeen: ein herbstlich geprägter Waldplanet mit drei Kontinenten, vielen Seen und Flüssen, Nebelwäldern und einer sauerstoffreichen Atmosphäre – aber ohne Ozeane."
+          ],
+          "daten": [
+            [
+              "Typ",
+              "Gesteinsplanet"
+            ],
+            [
+              "Durchmesser",
+              "10.194 km"
+            ],
+            [
+              "Abstand des Mondes",
+              "120.100 km (23,6 Planetenradien)"
+            ]
+          ],
+          "verweise": [
+            [
+              "Orvaya",
+              "inhalte/himmelskoerper/planeten/details/orvaya/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Weitere Monde von Orvaya",
+          "liste": [
+            "Silvaine – Umlauf in 27 Tage"
+          ],
+          "verweise": [
+            [
+              "Silvaine",
+              "inhalte/himmelskoerper/monde/details/silvaine/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Gezeiten": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gezeiten von Neth.",
+      "abschnitte": [
+        {
+          "titel": "Gezeitenkräfte",
+          "text": [
+            "Auf seiner Bahn in 120.100 km Abstand wirken starke Gezeitenkräfte von Orvaya auf Neth."
+          ]
+        }
+      ]
+    },
+    "Gebundene Rotation": {
+      "gruppe": "Wissenschaft",
+      "icon": "↻",
+      "intro": "Gebundene Rotation von Neth.",
+      "abschnitte": [
+        {
+          "titel": "Rotation",
+          "text": [
+            "Neth wendet Orvaya vermutlich stets dieselbe Seite zu: Ein Tag dauert so lange wie ein Umlauf – 6,5 Tage."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Neth auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Neth",
+          "text": [
+            "Neth ist der kleine, innere Mond Orvayas – unregelmäßig geformt und schnell über den Himmel ziehend.",
+            "Neth umkreist Orvaya in 6,5 Tage."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Mond"
+            ],
+            [
+              "Sternsystem",
+              "Orvaya-System"
+            ],
+            [
+              "Zentralkörper",
+              "Orvaya"
+            ],
+            [
+              "Große Halbachse",
+              "120.100 km"
+            ],
+            [
+              "Umlaufzeit",
+              "6,5 Tage"
+            ],
+            [
+              "Durchmesser",
+              "420 km"
+            ],
+            [
+              "Masse",
+              "1,79 · 10^20 kg"
+            ],
+            [
+              "Schwerkraft",
+              "0,03 g"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -10 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Orvaya",
+          "text": [
+            "Das Orvaya-System ist die Heimat der Waldfeen: Ihr Planet Orvaya umkreist Aelyra, und Neth ist einer seiner Monde."
+          ],
+          "verweise": [
+            [
+              "Orvaya",
+              "inhalte/himmelskoerper/planeten/details/orvaya/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Waldfeen",
+              "inhalte/spezies/Biologische Spezies/WaldFeen/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Neth im Orvaya-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Orvaya"
+            ],
+            [
+              "Große Halbachse",
+              "120.100 km"
+            ],
+            [
+              "Exzentrizität",
+              "0,02"
+            ],
+            [
+              "Bahnneigung",
+              "3°"
+            ],
+            [
+              "Umlaufzeit",
+              "6,5 Tage"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Aelyra · Stern",
+              "Gelber Zwerg (G3 V)"
+            ],
+            [
+              "Aelyra I · 0,41 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Aelyra II · 0,68 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Orvaya · 1,01 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Aelyra IV · 5,3 AE",
+              "Gasriese"
+            ],
+            [
+              "Aelyra V · 12,5 AE",
+              "Eisriese"
+            ],
+            [
+              "Laubgürtel · 2,2–3 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 34–50 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Aelyra",
+              "inhalte/himmelskoerper/sterne/details/aelyra/hauptseite/index.html"
+            ],
+            [
+              "Aelyra I",
+              "inhalte/himmelskoerper/planeten/details/aelyra-i/hauptseite/index.html"
+            ],
+            [
+              "Aelyra II",
+              "inhalte/himmelskoerper/planeten/details/aelyra-ii/hauptseite/index.html"
+            ],
+            [
+              "Orvaya",
+              "inhalte/himmelskoerper/planeten/details/orvaya/hauptseite/index.html"
+            ],
+            [
+              "Aelyra IV",
+              "inhalte/himmelskoerper/planeten/details/aelyra-iv/hauptseite/index.html"
+            ],
+            [
+              "Aelyra V",
+              "inhalte/himmelskoerper/planeten/details/aelyra-v/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Neth.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "210 km"
+            ],
+            [
+              "Masse",
+              "1,79 · 10^20 kg"
+            ],
+            [
+              "Mittlere Dichte",
+              "4,62 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "0,27 m/s² (0,028 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "0,34 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Neth.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Neth ist geologisch weitgehend erstarrt; Einschläge haben seine Oberfläche geformt."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Neth.",
+      "abschnitte": [
+        {
+          "titel": "Gashülle",
+          "text": [
+            "Neth besitzt keine nennenswerte Atmosphäre – dafür ist die Schwerkraft zu gering."
+          ]
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Neth.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 1,01 AE Abstand zu Aelyra liegt die Gleichgewichtstemperatur von Neth bei rund -10 °C – gemäßigt."
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Neth.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Neth entstand zusammen mit dem Orvaya-System vor rund 5,1 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Neth.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Ist der Mond eingefangen oder mit seinem Planeten entstanden?",
+            "Welche Spuren tragen seine ältesten Krater?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Neth ist mit allen Bahndaten im Orvaya-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=orvaya-stern&objekt=orvaya-neth"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Neth.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Neth ist der kleine, innere Mond Orvayas – unregelmäßig geformt und schnell über den Himmel ziehend."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Neth.",
+      "abschnitte": [
+        {
+          "titel": "Neth – Archivbild",
+          "bild": true,
+          "bildtext": "Neth"
+        }
+      ]
+    }
+  }
+}

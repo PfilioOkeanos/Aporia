@@ -1,0 +1,554 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Talar",
+  "genitiv": "von Talar",
+  "dossierName": "Talar-Dossier",
+  "klasse": "Mond",
+  "intro": "Talar ist der größte Mond Veyrunas: rund 3.400 km groß, überwiegend felsig, in etwa 300.000 km Abstand. Er beeinflusst die Gezeiten erheblich; seine Oberfläche zeigt Krater, alte Einschlagsbecken und unterschiedlich zusammengesetzte Regionen. Talar umkreist Veyruna in 17 Tage.",
+  "globusDaten": {
+    "planet": "mond-mit-freigelegtem-inneren",
+    "klasse": "Gestein",
+    "radius": 1700000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=veyruna-stern&objekt=veyruna-talar",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-15535FC6D8"
+    ],
+    [
+      "Typ",
+      "Mond"
+    ],
+    [
+      "Sternsystem",
+      "Orelis-System"
+    ],
+    [
+      "Zentralkörper",
+      "Veyruna"
+    ],
+    [
+      "Große Halbachse",
+      "298.415 km"
+    ],
+    [
+      "Umlaufzeit",
+      "17 Tage"
+    ],
+    [
+      "Durchmesser",
+      "3.400 km"
+    ],
+    [
+      "Masse",
+      "0,927 Mondmassen"
+    ],
+    [
+      "Schwerkraft",
+      "0,16 g"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -10 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Orelis-System"
+    ],
+    [
+      "Zentralstern",
+      "Orelis",
+      "inhalte/himmelskoerper/sterne/details/orelis/hauptseite/index.html"
+    ],
+    [
+      "Umläuft",
+      "Veyruna",
+      "inhalte/himmelskoerper/planeten/details/veyruna/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "298.415 km"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Talar im Orelis-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=veyruna-stern&objekt=veyruna-talar",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Orelis",
+      "href": "inhalte/himmelskoerper/sterne/details/orelis/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◍",
+      "art": "Mutterplanet",
+      "titel": "Veyruna",
+      "href": "inhalte/himmelskoerper/planeten/details/veyruna/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Echonoiden",
+      "titel": "Veyruna",
+      "href": "inhalte/himmelskoerper/planeten/details/veyruna/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Echonoiden",
+      "href": "inhalte/spezies/Mentale Spezies/Echonoiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Orelis-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=veyruna-stern&objekt=veyruna-talar"
+    },
+    {
+      "titel": "Speziesdossier Echonoiden",
+      "href": "inhalte/spezies/Mentale Spezies/Echonoiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#090808",
+      "tiefe": "#131312",
+      "akzent": "#cac7c3",
+      "sand": "#cec3ab",
+      "moos": "#a8be9c",
+      "ozean": "#86a5b6",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#4e4c49"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Astronomie"
+      ],
+      [
+        "Planet",
+        "Mutterplanet"
+      ],
+      [
+        "Kräfte",
+        "Gezeiten"
+      ],
+      [
+        "Tiefe",
+        "Geologie"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Mutterplanet": {
+      "gruppe": "Wissenschaft",
+      "icon": "◐",
+      "intro": "Mutterplanet von Talar.",
+      "abschnitte": [
+        {
+          "titel": "Veyruna",
+          "text": [
+            "Veyruna ist die Heimatwelt der Echonoiden: ein felsiger, wasserreicher Planet mit dichter Atmosphäre, 62 % Wasserbedeckung, gezeitengeprägten Küsten, Inselbögen und Höhlenlandschaften, in denen sich eine Wahrnehmung aus mechanischen Schwingungen entwickelte."
+          ],
+          "daten": [
+            [
+              "Typ",
+              "Gesteinsplanet"
+            ],
+            [
+              "Durchmesser",
+              "13.762 km"
+            ],
+            [
+              "Abstand des Mondes",
+              "298.415 km (43,4 Planetenradien)"
+            ]
+          ],
+          "verweise": [
+            [
+              "Veyruna",
+              "inhalte/himmelskoerper/planeten/details/veyruna/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Weitere Monde von Veyruna",
+          "liste": [
+            "Sivem – Umlauf in 3,8 Tage"
+          ],
+          "verweise": [
+            [
+              "Sivem",
+              "inhalte/himmelskoerper/monde/details/sivem/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Gezeiten": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gezeiten von Talar.",
+      "abschnitte": [
+        {
+          "titel": "Gezeitenkräfte",
+          "text": [
+            "Auf seiner Bahn in 298.415 km Abstand wirken starke Gezeitenkräfte von Veyruna auf Talar. Die leicht exzentrische Bahn (e = 0,03) knetet das Innere bei jedem Umlauf."
+          ]
+        },
+        {
+          "titel": "Gezeitenkonstellationen",
+          "text": [
+            "Talar beeinflusst die Gezeiten Veyrunas erheblich. Seine unterschiedlichen Positionen relativ zu Orelis verändern die Gezeitenkonstellationen; gemeinsam mit dem schnelleren Sivem entstehen wiederkehrende besondere Himmelskonstellationen."
+          ]
+        }
+      ]
+    },
+    "Gebundene Rotation": {
+      "gruppe": "Wissenschaft",
+      "icon": "↻",
+      "intro": "Gebundene Rotation von Talar.",
+      "abschnitte": [
+        {
+          "titel": "Rotation",
+          "text": [
+            "Talar wendet Veyruna vermutlich stets dieselbe Seite zu: Ein Tag dauert so lange wie ein Umlauf – 17 Tage."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Talar auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Talar",
+          "text": [
+            "Talar ist der größte Mond Veyrunas: rund 3.400 km groß, überwiegend felsig, in etwa 300.000 km Abstand. Er beeinflusst die Gezeiten erheblich; seine Oberfläche zeigt Krater, alte Einschlagsbecken und unterschiedlich zusammengesetzte Regionen.",
+            "Talar umkreist Veyruna in 17 Tage."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Mond"
+            ],
+            [
+              "Sternsystem",
+              "Orelis-System"
+            ],
+            [
+              "Zentralkörper",
+              "Veyruna"
+            ],
+            [
+              "Große Halbachse",
+              "298.415 km"
+            ],
+            [
+              "Umlaufzeit",
+              "17 Tage"
+            ],
+            [
+              "Durchmesser",
+              "3.400 km"
+            ],
+            [
+              "Masse",
+              "0,927 Mondmassen"
+            ],
+            [
+              "Schwerkraft",
+              "0,16 g"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -10 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Veyruna",
+          "text": [
+            "Das Orelis-System ist die Heimat der Echonoiden: Ihr Planet Veyruna umkreist Orelis, und Talar ist einer seiner Monde."
+          ],
+          "verweise": [
+            [
+              "Veyruna",
+              "inhalte/himmelskoerper/planeten/details/veyruna/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Echonoiden",
+              "inhalte/spezies/Mentale Spezies/Echonoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Talar im Orelis-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Veyruna"
+            ],
+            [
+              "Große Halbachse",
+              "298.415 km"
+            ],
+            [
+              "Exzentrizität",
+              "0,03"
+            ],
+            [
+              "Bahnneigung",
+              "4,2°"
+            ],
+            [
+              "Umlaufzeit",
+              "17 Tage"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Orelis · Stern",
+              "Orangefarbener Zwerg (K1 V)"
+            ],
+            [
+              "Seran · 0,16 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Mirvek · 0,35 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Veyruna · 0,68 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Koras · 1,18 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Jandor · 3,7 AE",
+              "Gasriese"
+            ],
+            [
+              "Veltos · 6,5 AE",
+              "Eisriese"
+            ],
+            [
+              "Innerer Asteroidengürtel · 1,7–2,4 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußerer Kleinkörpergürtel · 15–33 AE",
+              "Kleinkörpergürtel"
+            ]
+          ],
+          "verweise": [
+            [
+              "Orelis",
+              "inhalte/himmelskoerper/sterne/details/orelis/hauptseite/index.html"
+            ],
+            [
+              "Seran",
+              "inhalte/himmelskoerper/planeten/details/seran/hauptseite/index.html"
+            ],
+            [
+              "Mirvek",
+              "inhalte/himmelskoerper/planeten/details/mirvek/hauptseite/index.html"
+            ],
+            [
+              "Veyruna",
+              "inhalte/himmelskoerper/planeten/details/veyruna/hauptseite/index.html"
+            ],
+            [
+              "Koras",
+              "inhalte/himmelskoerper/planeten/details/koras/hauptseite/index.html"
+            ],
+            [
+              "Jandor",
+              "inhalte/himmelskoerper/planeten/details/jandor/hauptseite/index.html"
+            ],
+            [
+              "Veltos",
+              "inhalte/himmelskoerper/planeten/details/veltos/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Talar.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "1.700 km"
+            ],
+            [
+              "Masse",
+              "0,927 Mondmassen"
+            ],
+            [
+              "Mittlere Dichte",
+              "3,31 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "1,57 m/s² (0,16 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "2,31 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Talar.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Talar ist geologisch weitgehend erstarrt; Einschläge haben seine Oberfläche geformt."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Talar.",
+      "abschnitte": [
+        {
+          "titel": "Gashülle",
+          "text": [
+            "Talar besitzt keine nennenswerte Atmosphäre – dafür ist die Schwerkraft zu gering."
+          ]
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Talar.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 0,68 AE Abstand zu Orelis liegt die Gleichgewichtstemperatur von Talar bei rund -10 °C – gemäßigt."
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Talar.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Talar entstand zusammen mit dem Orelis-System vor rund 6 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Talar.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Ist der Mond eingefangen oder mit seinem Planeten entstanden?",
+            "Welche Spuren tragen seine ältesten Krater?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Talar ist mit allen Bahndaten im Orelis-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=veyruna-stern&objekt=veyruna-talar"
+            ]
+          ]
+        },
+        {
+          "titel": "Raumfahrt",
+          "text": [
+            "Talar ist ein wichtiges Ziel für die Raumfahrt- und Planetengeschichte der Echonoiden. Sein genauer Ursprung – frühe Einschlags- oder Akkretionsprozesse – bleibt offen."
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Talar.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Größter Mond von Veyruna"
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Talar.",
+      "abschnitte": [
+        {
+          "titel": "Talar – Archivbild",
+          "bild": true,
+          "bildtext": "Talar"
+        }
+      ]
+    }
+  }
+}

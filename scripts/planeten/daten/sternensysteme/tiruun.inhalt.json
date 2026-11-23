@@ -1,0 +1,637 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Tiruun",
+  "genitiv": "von Tiruun",
+  "dossierName": "Tiruun-Dossier",
+  "klasse": "Asteroidengürtel",
+  "intro": "Der Hauptasteroidengürtel enthält Gestein, Metalle und kohlenstoffreiches Material. Daragons Gravitation prägt seine Resonanzzonen.",
+  "globusDaten": {
+    "planet": "tiruun",
+    "klasse": "Gestein",
+    "radius": 1000000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=elaris-stern&objekt=elaris-tiruun",
+  "grunddaten": [
+    [
+      "System-ID",
+      "elaris-tiruun"
+    ],
+    [
+      "Archiv-ID",
+      "AP-ELARIS-TIRUUN"
+    ],
+    [
+      "Typ",
+      "Asteroidengürtel"
+    ],
+    [
+      "Sternsystem",
+      "Elaris-System"
+    ],
+    [
+      "Zentralkörper",
+      "Elaris A"
+    ],
+    [
+      "Ausdehnung",
+      "1,65–2,4 AE"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Elaris-System"
+    ],
+    [
+      "Zentralstern",
+      "Elaris A",
+      "inhalte/himmelskoerper/sterne/details/elaris-a/hauptseite/index.html"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Tiruun im Elaris-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=elaris-stern&objekt=elaris-tiruun",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Elaris A",
+      "href": "inhalte/himmelskoerper/sterne/details/elaris-a/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Neurofloren",
+      "titel": "Ilaruun",
+      "href": "inhalte/himmelskoerper/planeten/details/ilaruun/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Neurofloren",
+      "href": "inhalte/spezies/Mentale Spezies/Neurofloren/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Elaris-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=elaris-stern&objekt=elaris-tiruun"
+    },
+    {
+      "titel": "Speziesdossier Neurofloren",
+      "href": "inhalte/spezies/Mentale Spezies/Neurofloren/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#090705",
+      "tiefe": "#130e0a",
+      "akzent": "#c8ae97",
+      "sand": "#cdae8e",
+      "moos": "#a6a175",
+      "ozean": "#858b7e",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#4d3b2a"
+    },
+    "schichten": [
+      [
+        "Lage",
+        "Bahnen"
+      ],
+      [
+        "System",
+        "Planeten"
+      ],
+      [
+        "Dynamik",
+        "Stabilität"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Zentralsterne": {
+      "gruppe": "Wissenschaft",
+      "icon": "✦",
+      "intro": "Zentralsterne von Tiruun.",
+      "abschnitte": [
+        {
+          "titel": "Elaris A",
+          "text": [
+            "Ein vergleichsweise ruhiger K2V-Einzelstern. Sternflecken und gelegentliche magnetische Ausbrüche prägen seinen Aktivitätszyklus."
+          ],
+          "verweise": [
+            [
+              "Elaris A",
+              "inhalte/himmelskoerper/sterne/details/elaris-a/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Planeten": {
+      "gruppe": "Wissenschaft",
+      "icon": "◍",
+      "intro": "Planeten von Tiruun.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Elaris A · Stern",
+              "Orangefarbener Hauptreihenstern (K2 V)"
+            ],
+            [
+              "Kessar · 0,19 AE",
+              "Heißer eisenreicher Gesteinsplanet"
+            ],
+            [
+              "Orveth · 0,38 AE",
+              "Heißer trockener Gesteinsplanet"
+            ],
+            [
+              "Ilaruun · 0,66 AE",
+              "Gemäßigter terrestrischer Gesteinsplanet"
+            ],
+            [
+              "Venyra · 1,17 AE",
+              "Kalter Gesteins- und Eisplanet"
+            ],
+            [
+              "Daragon · 3,2 AE",
+              "Gasriese"
+            ],
+            [
+              "Shyren · 5,9 AE",
+              "Blauer Eisriese"
+            ],
+            [
+              "Eivara · 12,8 AE",
+              "Eis-Gesteins-Zwergplanet"
+            ],
+            [
+              "Tiruun · 1,7–2,4 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Kaelor-Saum · 9,5–30 AE",
+              "Äußeres Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Elaris A",
+              "inhalte/himmelskoerper/sterne/details/elaris-a/hauptseite/index.html"
+            ],
+            [
+              "Kessar",
+              "inhalte/himmelskoerper/planeten/details/kessar/hauptseite/index.html"
+            ],
+            [
+              "Orveth",
+              "inhalte/himmelskoerper/planeten/details/orveth/hauptseite/index.html"
+            ],
+            [
+              "Ilaruun",
+              "inhalte/himmelskoerper/planeten/details/ilaruun/hauptseite/index.html"
+            ],
+            [
+              "Venyra",
+              "inhalte/himmelskoerper/planeten/details/venyra/hauptseite/index.html"
+            ],
+            [
+              "Daragon",
+              "inhalte/himmelskoerper/planeten/details/daragon/hauptseite/index.html"
+            ],
+            [
+              "Shyren",
+              "inhalte/himmelskoerper/planeten/details/shyren/hauptseite/index.html"
+            ],
+            [
+              "Eivara",
+              "inhalte/himmelskoerper/zwergplaneten/details/eivara/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Bahnen": {
+      "gruppe": "Wissenschaft",
+      "icon": "◌",
+      "intro": "Bahnen von Tiruun.",
+      "abschnitte": [
+        {
+          "titel": "Lage",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Elaris A"
+            ],
+            [
+              "Ausdehnung",
+              "1,65–2,4 AE"
+            ]
+          ]
+        }
+      ]
+    },
+    "Stabilität": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚖",
+      "intro": "Stabilität von Tiruun.",
+      "abschnitte": [
+        {
+          "titel": "Stabilität",
+          "text": [
+            "Die Brocken von Tiruun bewegen sich auf stabilen Bahnen zwischen den Planeten; Resonanzen mit den großen Planeten formen die Ränder des Gebiets."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Tiruun auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Tiruun",
+          "text": [
+            "Der Hauptasteroidengürtel enthält Gestein, Metalle und kohlenstoffreiches Material. Daragons Gravitation prägt seine Resonanzzonen.",
+            "Tiruun umgibt Elaris A im Elaris-System."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Asteroidengürtel"
+            ],
+            [
+              "Sternsystem",
+              "Elaris-System"
+            ],
+            [
+              "Zentralkörper",
+              "Elaris A"
+            ],
+            [
+              "Ausdehnung",
+              "1,65–2,4 AE"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Ilaruun",
+          "text": [
+            "Das Elaris-System ist die Heimat der Neurofloren: Ihr Planet Ilaruun umkreist Elaris A."
+          ],
+          "verweise": [
+            [
+              "Ilaruun",
+              "inhalte/himmelskoerper/planeten/details/ilaruun/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Neurofloren",
+              "inhalte/spezies/Mentale Spezies/Neurofloren/hauptseite/Spezies.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Asteroidengürtel Tiruun",
+          "text": [
+            "Der Tiruun-Gürtel besteht aus einer großen Population unterschiedlicher kleiner Himmelskörper.",
+            "Die Objekte sind über einen erheblichen Raumbereich verteilt.",
+            "Der Gürtel ist kein undurchdringliches Feld dicht nebeneinanderliegender Felsbrocken."
+          ],
+          "daten": [
+            [
+              "Typ",
+              "Hauptasteroidengürtel"
+            ],
+            [
+              "Lage",
+              "Ungefähr 1,65–2,40 AU"
+            ],
+            [
+              "Zusammensetzung",
+              "Gestein, Metalle und kohlenstoffreiche Materialien"
+            ]
+          ]
+        },
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Tiruun besteht überwiegend aus Material der ursprünglichen protoplanetaren Scheibe.",
+            "Die Gravitationswirkung Daragons beeinflusste die Entwicklung des Gürtels.",
+            "Bestimmte Bahnresonanzen verhinderten langfristig stabile Ansammlungen in einzelnen Bereichen oder entfernten dort Körper."
+          ]
+        },
+        {
+          "titel": "Resonanzlücken",
+          "text": [
+            "Besonders wichtige Resonanzbereiche mit Daragon befinden sich ungefähr bei:",
+            "Die Resonanzen können unterschiedliche Asteroidenpopulationen und Lücken erzeugen.",
+            "Die genaue Verteilung muss durch eine separate Teilchensimulation untersucht werden."
+          ],
+          "liste": [
+            "5:2-Resonanz: 1,74 AU",
+            "2:1-Resonanz: 2,02 AU",
+            "5:3-Resonanz: 2,28 AU",
+            "3:2-Resonanz: 2,44 AU"
+          ]
+        },
+        {
+          "titel": "Wirtschaftliche Bedeutung",
+          "text": [
+            "Die äußeren und inneren Kleinkörper enthalten wichtige Rohstoffe für die Zivilisation der Neurofloren.",
+            "Beispielsweise:",
+            "Die Rohstoffgewinnung erfolgt überwiegend mit automatisierten Maschinen und Raumfahrzeugen."
+          ],
+          "liste": [
+            "Eisen",
+            "Nickel",
+            "Silikate",
+            "Wassereis",
+            "Kohlenstoffverbindungen",
+            "Hydratisierte Minerale",
+            "Weitere industriell nutzbare Stoffe"
+          ]
+        },
+        {
+          "titel": "Forschungswert",
+          "text": [
+            "Der Tiruun-Gürtel und der Kaelor-Saum liefern Hinweise auf die Entstehung des Sternensystems.",
+            "Die Untersuchung ihrer chemischen Zusammensetzung ermöglicht Rückschlüsse auf die ursprüngliche Verteilung von Gestein, Eis und flüchtigen Stoffen innerhalb der protoplanetaren Scheibe.",
+            "Simulierte Bahnentwicklung Himmelskörper\tBeobachteter Bereich der großen Bahnhalbachse\tHöchste erfasste Exzentrizität Ilaruun\t0,6598–0,6601 AU\t0,0151 Daragon\t3,1995–3,2008 AU\t0,0216 Shyren\t5,8866–5,9093 AU\t0,0186 Verris\t199.327–200.839 km\t0,0148 Thaen\t338.454–355.835 km\t0,0715 Merath\t284.985–285.142 km\t0,0216 Oruun\t451.933–452.179 km\t0,0076 Kashel\t716.842–717.303 km\t0,0"
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Tiruun im Elaris-System.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Elaris A · Stern",
+              "Orangefarbener Hauptreihenstern (K2 V)"
+            ],
+            [
+              "Kessar · 0,19 AE",
+              "Heißer eisenreicher Gesteinsplanet"
+            ],
+            [
+              "Orveth · 0,38 AE",
+              "Heißer trockener Gesteinsplanet"
+            ],
+            [
+              "Ilaruun · 0,66 AE",
+              "Gemäßigter terrestrischer Gesteinsplanet"
+            ],
+            [
+              "Venyra · 1,17 AE",
+              "Kalter Gesteins- und Eisplanet"
+            ],
+            [
+              "Daragon · 3,2 AE",
+              "Gasriese"
+            ],
+            [
+              "Shyren · 5,9 AE",
+              "Blauer Eisriese"
+            ],
+            [
+              "Eivara · 12,8 AE",
+              "Eis-Gesteins-Zwergplanet"
+            ],
+            [
+              "Tiruun · 1,7–2,4 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Kaelor-Saum · 9,5–30 AE",
+              "Äußeres Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Elaris A",
+              "inhalte/himmelskoerper/sterne/details/elaris-a/hauptseite/index.html"
+            ],
+            [
+              "Kessar",
+              "inhalte/himmelskoerper/planeten/details/kessar/hauptseite/index.html"
+            ],
+            [
+              "Orveth",
+              "inhalte/himmelskoerper/planeten/details/orveth/hauptseite/index.html"
+            ],
+            [
+              "Ilaruun",
+              "inhalte/himmelskoerper/planeten/details/ilaruun/hauptseite/index.html"
+            ],
+            [
+              "Venyra",
+              "inhalte/himmelskoerper/planeten/details/venyra/hauptseite/index.html"
+            ],
+            [
+              "Daragon",
+              "inhalte/himmelskoerper/planeten/details/daragon/hauptseite/index.html"
+            ],
+            [
+              "Shyren",
+              "inhalte/himmelskoerper/planeten/details/shyren/hauptseite/index.html"
+            ],
+            [
+              "Eivara",
+              "inhalte/himmelskoerper/zwergplaneten/details/eivara/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Umgebung": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Umgebung von Tiruun.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Elaris A · Stern",
+              "Orangefarbener Hauptreihenstern (K2 V)"
+            ],
+            [
+              "Kessar · 0,19 AE",
+              "Heißer eisenreicher Gesteinsplanet"
+            ],
+            [
+              "Orveth · 0,38 AE",
+              "Heißer trockener Gesteinsplanet"
+            ],
+            [
+              "Ilaruun · 0,66 AE",
+              "Gemäßigter terrestrischer Gesteinsplanet"
+            ],
+            [
+              "Venyra · 1,17 AE",
+              "Kalter Gesteins- und Eisplanet"
+            ],
+            [
+              "Daragon · 3,2 AE",
+              "Gasriese"
+            ],
+            [
+              "Shyren · 5,9 AE",
+              "Blauer Eisriese"
+            ],
+            [
+              "Eivara · 12,8 AE",
+              "Eis-Gesteins-Zwergplanet"
+            ],
+            [
+              "Tiruun · 1,7–2,4 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Kaelor-Saum · 9,5–30 AE",
+              "Äußeres Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Elaris A",
+              "inhalte/himmelskoerper/sterne/details/elaris-a/hauptseite/index.html"
+            ],
+            [
+              "Kessar",
+              "inhalte/himmelskoerper/planeten/details/kessar/hauptseite/index.html"
+            ],
+            [
+              "Orveth",
+              "inhalte/himmelskoerper/planeten/details/orveth/hauptseite/index.html"
+            ],
+            [
+              "Ilaruun",
+              "inhalte/himmelskoerper/planeten/details/ilaruun/hauptseite/index.html"
+            ],
+            [
+              "Venyra",
+              "inhalte/himmelskoerper/planeten/details/venyra/hauptseite/index.html"
+            ],
+            [
+              "Daragon",
+              "inhalte/himmelskoerper/planeten/details/daragon/hauptseite/index.html"
+            ],
+            [
+              "Shyren",
+              "inhalte/himmelskoerper/planeten/details/shyren/hauptseite/index.html"
+            ],
+            [
+              "Eivara",
+              "inhalte/himmelskoerper/zwergplaneten/details/eivara/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Tiruun.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Tiruun besteht aus Material, das sich bei der Entstehung des Elaris-Systems nicht zu einem Planeten vereinte."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Tiruun.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Wie viel Masse enthält das Gebiet insgesamt?",
+            "Welche Resonanzen formen seine Ränder?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Tiruun ist mit allen Bahndaten im Elaris-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=elaris-stern&objekt=elaris-tiruun"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Tiruun.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Der Hauptasteroidengürtel enthält Gestein, Metalle und kohlenstoffreiches Material. Daragons Gravitation prägt seine Resonanzzonen."
+          ]
+        },
+        {
+          "titel": "Verwandte Dossiers",
+          "verweise": [
+            [
+              "Kallith",
+              "inhalte/himmelskoerper/asteroiden/details/kallith/hauptseite/index.html"
+            ],
+            [
+              "Serevin",
+              "inhalte/himmelskoerper/asteroiden/details/serevin/hauptseite/index.html"
+            ],
+            [
+              "Elaris-System",
+              "inhalte/himmelskoerper/sternensysteme/details/elaris-system/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Tiruun.",
+      "abschnitte": [
+        {
+          "titel": "Tiruun",
+          "bild": true,
+          "bildtext": "Tiruun"
+        }
+      ]
+    }
+  }
+}

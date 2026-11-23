@@ -1,0 +1,715 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Veltos",
+  "genitiv": "von Veltos",
+  "dossierName": "Veltos-Dossier",
+  "klasse": "Eisriese",
+  "intro": "Veltos ist ein äußerer Eisriese mit tiefer Atmosphäre aus leichten Gasen, komplexen Wettersystemen, sehr tiefen Temperaturen und eigenem Magnetfeld. Kleine Monde und diffuse Ringe begleiten ihn. Veltos umkreist Orelis in 6,5 AE Abstand und braucht für einen Umlauf 18,5 Jahre.",
+  "globusDaten": {
+    "planet": "gaszwerg-mit-blau-lavendelfarbener-atmosphare",
+    "klasse": "Eisriese",
+    "radius": 24500000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=veyruna-stern&objekt=veyruna-veltos",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-6E103FB4FF"
+    ],
+    [
+      "Typ",
+      "Eisriese"
+    ],
+    [
+      "Sternsystem",
+      "Orelis-System"
+    ],
+    [
+      "Zentralkörper",
+      "Orelis"
+    ],
+    [
+      "Große Halbachse",
+      "6,5 AE"
+    ],
+    [
+      "Umlaufzeit",
+      "18,5 Jahre"
+    ],
+    [
+      "Durchmesser",
+      "49.000 km"
+    ],
+    [
+      "Masse",
+      "18 Erdmassen"
+    ],
+    [
+      "Schwerkraft",
+      "1,22 g"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -193 °C"
+    ],
+    [
+      "Monde",
+      "1 (Nimra)"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Orelis-System"
+    ],
+    [
+      "Zentralstern",
+      "Orelis",
+      "inhalte/himmelskoerper/sterne/details/orelis/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "6,5 AE"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Veltos im Orelis-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=veyruna-stern&objekt=veyruna-veltos",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Orelis",
+      "href": "inhalte/himmelskoerper/sterne/details/orelis/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Nimra",
+      "href": "inhalte/himmelskoerper/zwergplaneten/details/nimra/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Echonoiden",
+      "titel": "Veyruna",
+      "href": "inhalte/himmelskoerper/planeten/details/veyruna/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Echonoiden",
+      "href": "inhalte/spezies/Mentale Spezies/Echonoiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Orelis-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=veyruna-stern&objekt=veyruna-veltos"
+    },
+    {
+      "titel": "Speziesdossier Echonoiden",
+      "href": "inhalte/spezies/Mentale Spezies/Echonoiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#08090b",
+      "tiefe": "#131319",
+      "akzent": "#c7caee",
+      "sand": "#cbc6c6",
+      "moos": "#a5c2c1",
+      "ozean": "#84a9eb",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#4c4e67"
+    }
+  },
+  "kapitel": {
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Veltos auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Veltos",
+          "text": [
+            "Veltos ist ein äußerer Eisriese mit tiefer Atmosphäre aus leichten Gasen, komplexen Wettersystemen, sehr tiefen Temperaturen und eigenem Magnetfeld. Kleine Monde und diffuse Ringe begleiten ihn.",
+            "Veltos umkreist Orelis in 6,5 AE Abstand und braucht für einen Umlauf 18,5 Jahre."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Eisriese"
+            ],
+            [
+              "Sternsystem",
+              "Orelis-System"
+            ],
+            [
+              "Zentralkörper",
+              "Orelis"
+            ],
+            [
+              "Große Halbachse",
+              "6,5 AE"
+            ],
+            [
+              "Umlaufzeit",
+              "18,5 Jahre"
+            ],
+            [
+              "Durchmesser",
+              "49.000 km"
+            ],
+            [
+              "Masse",
+              "18 Erdmassen"
+            ],
+            [
+              "Schwerkraft",
+              "1,22 g"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -193 °C"
+            ],
+            [
+              "Monde",
+              "1 (Nimra)"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Veyruna",
+          "text": [
+            "Das Orelis-System ist die Heimat der Echonoiden: Ihr Planet Veyruna umkreist Orelis."
+          ],
+          "verweise": [
+            [
+              "Veyruna",
+              "inhalte/himmelskoerper/planeten/details/veyruna/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Echonoiden",
+              "inhalte/spezies/Mentale Spezies/Echonoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Veltos im Orelis-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Orelis"
+            ],
+            [
+              "Große Halbachse",
+              "6,5 AE (972,4 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,05"
+            ],
+            [
+              "Bahnneigung",
+              "1,9°"
+            ],
+            [
+              "Umlaufzeit",
+              "18,5 Jahre"
+            ],
+            [
+              "Einstrahlung",
+              "0,01-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Am Himmel von Veltos",
+          "text": [
+            "Orelis erscheint von hier aus etwa 0,07° groß (die Sonne von der Erde: 0,53°)."
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Orelis · Stern",
+              "Orangefarbener Zwerg (K1 V)"
+            ],
+            [
+              "Seran · 0,16 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Mirvek · 0,35 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Veyruna · 0,68 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Koras · 1,18 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Jandor · 3,7 AE",
+              "Gasriese"
+            ],
+            [
+              "Veltos · 6,5 AE · dieses Dossier",
+              "Eisriese"
+            ],
+            [
+              "Innerer Asteroidengürtel · 1,7–2,4 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußerer Kleinkörpergürtel · 15–33 AE",
+              "Kleinkörpergürtel"
+            ]
+          ],
+          "verweise": [
+            [
+              "Orelis",
+              "inhalte/himmelskoerper/sterne/details/orelis/hauptseite/index.html"
+            ],
+            [
+              "Seran",
+              "inhalte/himmelskoerper/planeten/details/seran/hauptseite/index.html"
+            ],
+            [
+              "Mirvek",
+              "inhalte/himmelskoerper/planeten/details/mirvek/hauptseite/index.html"
+            ],
+            [
+              "Veyruna",
+              "inhalte/himmelskoerper/planeten/details/veyruna/hauptseite/index.html"
+            ],
+            [
+              "Koras",
+              "inhalte/himmelskoerper/planeten/details/koras/hauptseite/index.html"
+            ],
+            [
+              "Jandor",
+              "inhalte/himmelskoerper/planeten/details/jandor/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Veltos.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "24.500 km"
+            ],
+            [
+              "Masse",
+              "18 Erdmassen"
+            ],
+            [
+              "Mittlere Dichte",
+              "1,75 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "11,94 m/s² (1,217 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "24,2 km/s"
+            ]
+          ],
+          "vergleich": {
+            "mit": "Erde",
+            "werte": [
+              [
+                "Durchmesser",
+                49000,
+                12742,
+                "km"
+              ],
+              [
+                "Masse",
+                18,
+                1,
+                "Erdmassen"
+              ],
+              [
+                "Schwerkraft",
+                1.22,
+                1,
+                "g"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "Planetare Struktur": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Planetare Struktur von Veltos.",
+      "abschnitte": [
+        {
+          "titel": "Schalenbau",
+          "schichten": [
+            [
+              "Atmosphäre",
+              "Wasserstoff, Helium und Methan"
+            ],
+            [
+              "Eismantel",
+              "Wasser, Ammoniak und Methan unter hohem Druck"
+            ],
+            [
+              "Kern",
+              "Gestein und Metall"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geografie": {
+      "gruppe": "Natur",
+      "icon": "△",
+      "intro": "Geografie von Veltos.",
+      "abschnitte": [
+        {
+          "titel": "Oberfläche",
+          "text": [
+            "Veltos besitzt keine feste Oberfläche. Sichtbar sind Wolkenbänder, Wirbel und Stürme."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Veltos.",
+      "abschnitte": [
+        {
+          "titel": "Gashülle",
+          "text": [
+            "Veltos besitzt keine feste Oberfläche; die Hülle geht nach innen allmählich in dichtere Schichten über."
+          ],
+          "balken": {
+            "werte": [
+              [
+                "Wasserstoff",
+                80
+              ],
+              [
+                "Helium",
+                17
+              ],
+              [
+                "Methan",
+                2.3
+              ],
+              [
+                "Spurengase",
+                0.7
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Veltos.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 6,5 AE Abstand zu Orelis liegt die Gleichgewichtstemperatur von Veltos bei rund -193 °C – eisig kalt."
+          ]
+        }
+      ]
+    },
+    "Gewässer": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gewässer von Veltos.",
+      "abschnitte": [
+        {
+          "titel": "Wasser",
+          "text": [
+            "Wasser liegt in den Wolkenschichten und tief im Inneren unter hohem Druck vor."
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Veltos.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Ohne feste Oberfläche gibt es keine Geologie im engeren Sinn; im Inneren herrschen extreme Drücke und Temperaturen."
+          ]
+        }
+      ]
+    },
+    "Biosphäre": {
+      "gruppe": "Natur",
+      "icon": "❧",
+      "intro": "Biosphäre von Veltos.",
+      "abschnitte": [
+        {
+          "titel": "Leben",
+          "text": [
+            "Auf Veltos ist kein Leben verzeichnet."
+          ]
+        }
+      ]
+    },
+    "Spezies": {
+      "gruppe": "Zivilisation",
+      "icon": "✿",
+      "intro": "Spezies von Veltos.",
+      "abschnitte": [
+        {
+          "titel": "Bewohner",
+          "text": [
+            "Veltos ist keine Heimat einer intelligenten Spezies."
+          ]
+        },
+        {
+          "titel": "Im System von Veyruna",
+          "text": [
+            "Das Orelis-System ist die Heimat der Echonoiden: Ihr Planet Veyruna umkreist Orelis."
+          ],
+          "verweise": [
+            [
+              "Veyruna",
+              "inhalte/himmelskoerper/planeten/details/veyruna/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Echonoiden",
+              "inhalte/spezies/Mentale Spezies/Echonoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Zivilisation": {
+      "gruppe": "Zivilisation",
+      "icon": "▥",
+      "intro": "Zivilisation von Veltos.",
+      "abschnitte": [
+        {
+          "titel": "Siedlungen",
+          "text": [
+            "Für Veltos sind keine dauerhaften Siedlungen verzeichnet."
+          ]
+        },
+        {
+          "titel": "Im System von Veyruna",
+          "text": [
+            "Das Orelis-System ist die Heimat der Echonoiden: Ihr Planet Veyruna umkreist Orelis."
+          ],
+          "verweise": [
+            [
+              "Veyruna",
+              "inhalte/himmelskoerper/planeten/details/veyruna/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Echonoiden",
+              "inhalte/spezies/Mentale Spezies/Echonoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Veltos.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Veltos entstand zusammen mit dem Orelis-System vor rund 6 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Fraktionen": {
+      "gruppe": "Zivilisation",
+      "icon": "◇",
+      "intro": "Fraktionen von Veltos.",
+      "abschnitte": [
+        {
+          "titel": "Ansprüche",
+          "text": [
+            "Für Veltos sind keine Fraktionsansprüche verzeichnet."
+          ]
+        }
+      ]
+    },
+    "Rohstoffe": {
+      "gruppe": "Weitere",
+      "icon": "⬡",
+      "intro": "Rohstoffe von Veltos.",
+      "abschnitte": [
+        {
+          "titel": "Rohstoffe",
+          "liste": [
+            "Wasserstoff",
+            "Methan",
+            "Wassereis"
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Veltos.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Gibt es flüssige Schichten im Eismantel?",
+            "Wie entstand die Achslage?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Veltos ist mit allen Bahndaten im Orelis-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=veyruna-stern&objekt=veyruna-veltos"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Veltos.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Äußerster Planet des Orelis-Systems",
+            "Ein Mond: Nimra"
+          ]
+        },
+        {
+          "titel": "Monde",
+          "karten": [
+            {
+              "titel": "Nimra",
+              "text": "1.200 km Durchmesser, Umlauf in 5,6 Tage. Nimra ist der größte der kleinen Monde des Veltos – ein blauweißer Eismond mit gefrorenem Methan an der Oberfläche."
+            }
+          ],
+          "verweise": [
+            [
+              "Nimra",
+              "inhalte/himmelskoerper/zwergplaneten/details/nimra/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Äußere Systementwicklung",
+          "text": [
+            "Veltos besitzt ein Inneres mit höheren Anteilen schwererer Elemente und flüchtiger Verbindungen. Der Planet bildet einen wichtigen Bereich für Untersuchungen der äußeren Systementwicklung."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Veltos.",
+      "abschnitte": [
+        {
+          "titel": "Veltos – Archivbild",
+          "bild": true,
+          "bildtext": "Veltos"
+        }
+      ]
+    },
+    "Gaszusammensetzung": {
+      "gruppe": "Weitere",
+      "icon": "◆",
+      "intro": "Gaszusammensetzung von Veltos.",
+      "abschnitte": [
+        {
+          "titel": "Gaszusammensetzung",
+          "text": [
+            "Veltos ist ein äußerer Eisriese mit tiefer Atmosphäre aus leichten Gasen, komplexen Wettersystemen, sehr tiefen Temperaturen und eigenem Magnetfeld. Kleine Monde und diffuse Ringe begleiten ihn."
+          ]
+        }
+      ]
+    },
+    "Wolkenschichten": {
+      "gruppe": "Weitere",
+      "icon": "◆",
+      "intro": "Wolkenschichten von Veltos.",
+      "abschnitte": [
+        {
+          "titel": "Wolkenschichten",
+          "text": [
+            "Veltos ist ein äußerer Eisriese mit tiefer Atmosphäre aus leichten Gasen, komplexen Wettersystemen, sehr tiefen Temperaturen und eigenem Magnetfeld. Kleine Monde und diffuse Ringe begleiten ihn."
+          ]
+        }
+      ]
+    },
+    "Stürme": {
+      "gruppe": "Weitere",
+      "icon": "◆",
+      "intro": "Stürme von Veltos.",
+      "abschnitte": [
+        {
+          "titel": "Stürme",
+          "text": [
+            "Veltos ist ein äußerer Eisriese mit tiefer Atmosphäre aus leichten Gasen, komplexen Wettersystemen, sehr tiefen Temperaturen und eigenem Magnetfeld. Kleine Monde und diffuse Ringe begleiten ihn."
+          ]
+        }
+      ]
+    }
+  }
+}

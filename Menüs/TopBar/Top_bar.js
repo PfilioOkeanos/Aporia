@@ -415,7 +415,8 @@ function initializeSidebarToggle() {
     const sidebar = document.querySelector("[data-aporia-sidebar]");
     if (!button || !sidebar) return;
 
-    const preference = "aporia.sidebar.collapsed";
+    const compactDossier = matchMedia("(max-width: 760px)").matches && document.querySelector("main nav:is([class$='-reiter'], .thl-reiterleiste, .dossier-seitennavigation)");
+    const preference = compactDossier ? "aporia.sidebar.mobileDossier.collapsed" : "aporia.sidebar.collapsed";
     sidebar.id = "aporia-sidebar-host";
     function setExpanded(expanded) {
         sidebar.hidden = !expanded;
@@ -425,7 +426,7 @@ function initializeSidebarToggle() {
         button.title = label;
     }
 
-    let expanded = !sidebar.hasAttribute("data-sidebar-default-collapsed");
+    let expanded = !compactDossier && !sidebar.hasAttribute("data-sidebar-default-collapsed");
     try {
         const saved = window.localStorage.getItem(preference);
         if (saved !== null) expanded = saved !== "true";
@@ -592,4 +593,12 @@ function addStoryEditorMenuItem(navigation) {
     label.textContent = "StoryEditor";
     link.append(icon, label);
     navigation.append(link);
+}
+
+if (/\/inhalte\/spezies\/[^/]+\/[^/]+\/.+\.html$/i.test(location.pathname) && !/bersichtsseite/i.test(location.pathname)) {
+    const kapitelStil = document.createElement("link");
+    kapitelStil.rel = "stylesheet";
+    kapitelStil.href = new URL("../../inhalte/spezies/_gemeinsam/dossier-kapitel.css", import.meta.url).href;
+    document.head.append(kapitelStil);
+    import("../../inhalte/spezies/_gemeinsam/dossier-kapitel.js");
 }

@@ -1,2 +1,3 @@
-// Echonoiden – Geschichte · erzeugt vom Spezies-Baukasten (scripts/spezies) – Änderungen dort vornehmen
+// Echonoiden – Geschichte
+// Gemeinsame Funktionen (Topbar, Sidebar, Routen, Klappkapitel, Bildkarussell) kommen aus der Basis.
 import "../../echonoiden-basis.js";

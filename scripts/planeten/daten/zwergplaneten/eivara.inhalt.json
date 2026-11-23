@@ -1,0 +1,519 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Eivara",
+  "genitiv": "von Eivara",
+  "dossierName": "Eivara-Dossier",
+  "klasse": "Eis-Gesteins-Zwergplanet",
+  "intro": "Zwergplanet im Kaelor-Saum mit Wassereis, Gestein, dunklen organischen Stoffen und unterschiedlich hellen Frostregionen.",
+  "globusDaten": {
+    "planet": "eivara",
+    "klasse": "Eis",
+    "radius": 740000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=elaris-stern&objekt=elaris-eivara",
+  "grunddaten": [
+    [
+      "System-ID",
+      "elaris-eivara"
+    ],
+    [
+      "Archiv-ID",
+      "AP-ELARIS-EIVARA"
+    ],
+    [
+      "Typ",
+      "Eis-Gesteins-Zwergplanet"
+    ],
+    [
+      "Sternsystem",
+      "Elaris-System"
+    ],
+    [
+      "Zentralkörper",
+      "Elaris A"
+    ],
+    [
+      "Große Halbachse",
+      "12,8 AE"
+    ],
+    [
+      "Umlaufzeit",
+      "51,2 Jahre"
+    ],
+    [
+      "Durchmesser",
+      "1.480 km"
+    ],
+    [
+      "Masse",
+      "2,69 · 10^21 kg"
+    ],
+    [
+      "Schwerkraft",
+      "0,03 g"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -218 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Elaris-System"
+    ],
+    [
+      "Zentralstern",
+      "Elaris A",
+      "inhalte/himmelskoerper/sterne/details/elaris-a/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "12,8 AE"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Eivara im Elaris-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=elaris-stern&objekt=elaris-eivara",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Elaris A",
+      "href": "inhalte/himmelskoerper/sterne/details/elaris-a/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Neurofloren",
+      "titel": "Ilaruun",
+      "href": "inhalte/himmelskoerper/planeten/details/ilaruun/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Neurofloren",
+      "href": "inhalte/spezies/Mentale Spezies/Neurofloren/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Elaris-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=elaris-stern&objekt=elaris-eivara"
+    },
+    {
+      "titel": "Speziesdossier Neurofloren",
+      "href": "inhalte/spezies/Mentale Spezies/Neurofloren/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#07090a",
+      "tiefe": "#101315",
+      "akzent": "#b8ccd6",
+      "sand": "#bdc7b6",
+      "moos": "#97c4ab",
+      "ozean": "#79abcc",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#414f56"
+    }
+  },
+  "kapitel": {
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Eivara auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Eivara",
+          "text": [
+            "Zwergplanet im Kaelor-Saum mit Wassereis, Gestein, dunklen organischen Stoffen und unterschiedlich hellen Frostregionen.",
+            "Eivara umkreist Elaris A in 12,8 AE Abstand und braucht für einen Umlauf 51,2 Jahre."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Eis-Gesteins-Zwergplanet"
+            ],
+            [
+              "Sternsystem",
+              "Elaris-System"
+            ],
+            [
+              "Zentralkörper",
+              "Elaris A"
+            ],
+            [
+              "Große Halbachse",
+              "12,8 AE"
+            ],
+            [
+              "Umlaufzeit",
+              "51,2 Jahre"
+            ],
+            [
+              "Durchmesser",
+              "1.480 km"
+            ],
+            [
+              "Masse",
+              "2,69 · 10^21 kg"
+            ],
+            [
+              "Schwerkraft",
+              "0,03 g"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -218 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Ilaruun",
+          "text": [
+            "Das Elaris-System ist die Heimat der Neurofloren: Ihr Planet Ilaruun umkreist Elaris A."
+          ],
+          "verweise": [
+            [
+              "Ilaruun",
+              "inhalte/himmelskoerper/planeten/details/ilaruun/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Neurofloren",
+              "inhalte/spezies/Mentale Spezies/Neurofloren/hauptseite/Spezies.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Zwergplanet Eivara",
+          "text": [
+            "Eivara besitzt:",
+            "Eivara hat seine Bahnregion nicht von zahlreichen anderen Kleinkörpern freigeräumt und wird deshalb als Zwergplanet klassifiziert."
+          ],
+          "daten": [
+            [
+              "Typ",
+              "Eis-Gesteins-Zwergplanet"
+            ],
+            [
+              "Mittlerer Bahnradius",
+              "12,8 AU"
+            ],
+            [
+              "Radius",
+              "740 km"
+            ],
+            [
+              "Masse",
+              "Ungefähr 0,00045 Erdmassen"
+            ],
+            [
+              "Umlaufzeit",
+              "Etwa 51,2 Erdjahre"
+            ],
+            [
+              "Bahnexzentrizität",
+              "0,12"
+            ]
+          ],
+          "liste": [
+            "Wassereis",
+            "Gesteinsmaterial",
+            "Dunkle organische Oberflächenstoffe",
+            "Einschlagsbecken",
+            "Unterschiedlich helle Frostregionen"
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Eivara im Elaris-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Elaris A"
+            ],
+            [
+              "Große Halbachse",
+              "12,8 AE (1.914,9 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,12"
+            ],
+            [
+              "Bahnneigung",
+              "0°"
+            ],
+            [
+              "Umlaufzeit",
+              "51,2 Jahre"
+            ],
+            [
+              "Einstrahlung",
+              "0,003-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Am Himmel von Eivara",
+          "text": [
+            "Elaris A erscheint von hier aus etwa 0,03° groß (die Sonne von der Erde: 0,53°)."
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Elaris A · Stern",
+              "Orangefarbener Hauptreihenstern (K2 V)"
+            ],
+            [
+              "Kessar · 0,19 AE",
+              "Heißer eisenreicher Gesteinsplanet"
+            ],
+            [
+              "Orveth · 0,38 AE",
+              "Heißer trockener Gesteinsplanet"
+            ],
+            [
+              "Ilaruun · 0,66 AE",
+              "Gemäßigter terrestrischer Gesteinsplanet"
+            ],
+            [
+              "Venyra · 1,17 AE",
+              "Kalter Gesteins- und Eisplanet"
+            ],
+            [
+              "Daragon · 3,2 AE",
+              "Gasriese"
+            ],
+            [
+              "Shyren · 5,9 AE",
+              "Blauer Eisriese"
+            ],
+            [
+              "Eivara · 12,8 AE · dieses Dossier",
+              "Eis-Gesteins-Zwergplanet"
+            ],
+            [
+              "Tiruun · 1,7–2,4 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Kaelor-Saum · 9,5–30 AE",
+              "Äußeres Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Elaris A",
+              "inhalte/himmelskoerper/sterne/details/elaris-a/hauptseite/index.html"
+            ],
+            [
+              "Kessar",
+              "inhalte/himmelskoerper/planeten/details/kessar/hauptseite/index.html"
+            ],
+            [
+              "Orveth",
+              "inhalte/himmelskoerper/planeten/details/orveth/hauptseite/index.html"
+            ],
+            [
+              "Ilaruun",
+              "inhalte/himmelskoerper/planeten/details/ilaruun/hauptseite/index.html"
+            ],
+            [
+              "Venyra",
+              "inhalte/himmelskoerper/planeten/details/venyra/hauptseite/index.html"
+            ],
+            [
+              "Daragon",
+              "inhalte/himmelskoerper/planeten/details/daragon/hauptseite/index.html"
+            ],
+            [
+              "Shyren",
+              "inhalte/himmelskoerper/planeten/details/shyren/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Eivara.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "740 km"
+            ],
+            [
+              "Masse",
+              "2,69 · 10^21 kg"
+            ],
+            [
+              "Mittlere Dichte",
+              "1,58 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "0,33 m/s² (0,033 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "0,7 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Planetare Struktur": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Planetare Struktur von Eivara.",
+      "abschnitte": [
+        {
+          "titel": "Schalenbau",
+          "schichten": [
+            [
+              "Kruste",
+              "Silikatgestein"
+            ],
+            [
+              "Mantel",
+              "Dichteres Silikatgestein"
+            ],
+            [
+              "Kern",
+              "Eisen und Nickel"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Eivara.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Eivara ist geologisch weitgehend erstarrt; Einschläge haben seine Oberfläche geformt."
+          ]
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Eivara.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 12,8 AE Abstand zu Elaris A liegt die Gleichgewichtstemperatur von Eivara bei rund -218 °C – eisig kalt."
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Eivara.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Eivara entstand zusammen mit dem Elaris-System vor rund 5,9 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Eivara.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Wie ist der innere Aufbau beschaffen?",
+            "Gab es früher eine dichtere Atmosphäre?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Eivara ist mit allen Bahndaten im Elaris-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=elaris-stern&objekt=elaris-eivara"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Eivara.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Äußerster Planet des Elaris-Systems"
+          ]
+        },
+        {
+          "titel": "Verwandte Dossiers",
+          "verweise": [
+            [
+              "Elaris-System",
+              "inhalte/himmelskoerper/sternensysteme/details/elaris-system/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Eivara.",
+      "abschnitte": [
+        {
+          "titel": "Eivara",
+          "bild": true,
+          "bildtext": "Eivara"
+        }
+      ]
+    }
+  }
+}

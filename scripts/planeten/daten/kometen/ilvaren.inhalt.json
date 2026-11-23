@@ -1,0 +1,532 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Ilvaren",
+  "genitiv": "von Ilvaren",
+  "dossierName": "Ilvaren-Dossier",
+  "klasse": "Komet",
+  "intro": "Ilvaren ist ein periodischer Komet aus dem äußeren Kleinkörpergürtel. Alle rund 46 Jahre nähert er sich Orelis bis auf etwa 0,72 AE und ist dann lange am Nachthimmel Veyrunas sichtbar; sein Staubstrom erzeugt wiederkehrende Meteorschauer. Ilvaren umkreist Orelis in 12 AE Abstand und braucht für einen Umlauf 46,5 Jahre.",
+  "globusDaten": {
+    "planet": "schillernder-komet-mit-schlankem-schweif",
+    "klasse": "Eis",
+    "radius": 5000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=veyruna-stern&objekt=veyruna-ilvaren",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-09D2D93684"
+    ],
+    [
+      "Typ",
+      "Komet"
+    ],
+    [
+      "Sternsystem",
+      "Orelis-System"
+    ],
+    [
+      "Zentralkörper",
+      "Orelis"
+    ],
+    [
+      "Große Halbachse",
+      "12 AE"
+    ],
+    [
+      "Umlaufzeit",
+      "46,5 Jahre"
+    ],
+    [
+      "Durchmesser",
+      "10 km"
+    ],
+    [
+      "Masse",
+      "3,14 · 10^14 kg"
+    ],
+    [
+      "Schwerkraft",
+      "0,08 cm/s²"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -209 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Orelis-System"
+    ],
+    [
+      "Zentralstern",
+      "Orelis",
+      "inhalte/himmelskoerper/sterne/details/orelis/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "12 AE"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Ilvaren im Orelis-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=veyruna-stern&objekt=veyruna-ilvaren",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Orelis",
+      "href": "inhalte/himmelskoerper/sterne/details/orelis/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Echonoiden",
+      "titel": "Veyruna",
+      "href": "inhalte/himmelskoerper/planeten/details/veyruna/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Echonoiden",
+      "href": "inhalte/spezies/Mentale Spezies/Echonoiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Orelis-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=veyruna-stern&objekt=veyruna-ilvaren"
+    },
+    {
+      "titel": "Speziesdossier Echonoiden",
+      "href": "inhalte/spezies/Mentale Spezies/Echonoiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#090b0b",
+      "tiefe": "#151819",
+      "akzent": "#d4e8ee",
+      "sand": "#d7dfc6",
+      "moos": "#b1e4c1",
+      "ozean": "#8ec8eb",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#556367"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Umlaufbahn"
+      ],
+      [
+        "Hülle",
+        "Schweif"
+      ],
+      [
+        "Hülle",
+        "Koma"
+      ],
+      [
+        "Kern",
+        "Kern"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Kern": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Kern von Ilvaren.",
+      "abschnitte": [
+        {
+          "titel": "Kometenkern",
+          "text": [
+            "Der Kern von Ilvaren misst rund 10 km und besteht aus einem lockeren Gemenge aus Eis, Staub und Gestein."
+          ],
+          "schichten": [
+            [
+              "Staubkruste",
+              "Dunkle, kohlenstoffreiche Oberfläche"
+            ],
+            [
+              "Eis-Staub-Gemisch",
+              "Wassereis, Kohlendioxid und Staub"
+            ],
+            [
+              "Kern",
+              "Lockeres Eis-Gestein-Gemenge"
+            ]
+          ]
+        }
+      ]
+    },
+    "Koma": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Koma von Ilvaren.",
+      "abschnitte": [
+        {
+          "titel": "Koma",
+          "text": [
+            "Nähert sich Ilvaren dem Stern Orelis, verdampft Eis und bildet eine leuchtende Gashülle um den Kern."
+          ]
+        }
+      ]
+    },
+    "Schweif": {
+      "gruppe": "Natur",
+      "icon": "☄",
+      "intro": "Schweif von Ilvaren.",
+      "abschnitte": [
+        {
+          "titel": "Schweif",
+          "text": [
+            "Ilvaren ist ein periodischer Komet aus dem äußeren Kleinkörpergürtel. Alle rund 46 Jahre nähert er sich Orelis bis auf etwa 0,72 AE und ist dann lange am Nachthimmel Veyrunas sichtbar; sein Staubstrom erzeugt wiederkehrende Meteorschauer."
+          ]
+        }
+      ]
+    },
+    "Umlaufbahn": {
+      "gruppe": "Wissenschaft",
+      "icon": "◌",
+      "intro": "Umlaufbahn von Ilvaren.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Orelis"
+            ],
+            [
+              "Große Halbachse",
+              "12 AE (1.795,2 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,94"
+            ],
+            [
+              "Bahnneigung",
+              "24°"
+            ],
+            [
+              "Umlaufzeit",
+              "46,5 Jahre"
+            ],
+            [
+              "Einstrahlung",
+              "0,003-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Sternnächster und fernster Punkt",
+          "daten": [
+            [
+              "Perihel",
+              "0,72 AE"
+            ],
+            [
+              "Aphel",
+              "23,28 AE"
+            ]
+          ]
+        },
+        {
+          "titel": "Kometenannäherungen",
+          "text": [
+            "Größere Kometen wie Ilvaren können für längere Zeit am Nachthimmel Veyrunas sichtbar sein. Die Echonoiden erfassen sie nicht durch Schwingungen – astronomische Informationen erreichen sie über Licht, Radiowellen und technische Übersetzung."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Ilvaren auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Ilvaren",
+          "text": [
+            "Ilvaren ist ein periodischer Komet aus dem äußeren Kleinkörpergürtel. Alle rund 46 Jahre nähert er sich Orelis bis auf etwa 0,72 AE und ist dann lange am Nachthimmel Veyrunas sichtbar; sein Staubstrom erzeugt wiederkehrende Meteorschauer.",
+            "Ilvaren umkreist Orelis in 12 AE Abstand und braucht für einen Umlauf 46,5 Jahre."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Komet"
+            ],
+            [
+              "Sternsystem",
+              "Orelis-System"
+            ],
+            [
+              "Zentralkörper",
+              "Orelis"
+            ],
+            [
+              "Große Halbachse",
+              "12 AE"
+            ],
+            [
+              "Umlaufzeit",
+              "46,5 Jahre"
+            ],
+            [
+              "Durchmesser",
+              "10 km"
+            ],
+            [
+              "Masse",
+              "3,14 · 10^14 kg"
+            ],
+            [
+              "Schwerkraft",
+              "0,08 cm/s²"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -209 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Veyruna",
+          "text": [
+            "Das Orelis-System ist die Heimat der Echonoiden: Ihr Planet Veyruna umkreist Orelis."
+          ],
+          "verweise": [
+            [
+              "Veyruna",
+              "inhalte/himmelskoerper/planeten/details/veyruna/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Echonoiden",
+              "inhalte/spezies/Mentale Spezies/Echonoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Ilvaren im Orelis-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Orelis"
+            ],
+            [
+              "Große Halbachse",
+              "12 AE (1.795,2 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,94"
+            ],
+            [
+              "Bahnneigung",
+              "24°"
+            ],
+            [
+              "Umlaufzeit",
+              "46,5 Jahre"
+            ],
+            [
+              "Einstrahlung",
+              "0,003-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Orelis · Stern",
+              "Orangefarbener Zwerg (K1 V)"
+            ],
+            [
+              "Seran · 0,16 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Mirvek · 0,35 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Veyruna · 0,68 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Koras · 1,18 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Jandor · 3,7 AE",
+              "Gasriese"
+            ],
+            [
+              "Veltos · 6,5 AE",
+              "Eisriese"
+            ],
+            [
+              "Innerer Asteroidengürtel · 1,7–2,4 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußerer Kleinkörpergürtel · 15–33 AE",
+              "Kleinkörpergürtel"
+            ]
+          ],
+          "verweise": [
+            [
+              "Orelis",
+              "inhalte/himmelskoerper/sterne/details/orelis/hauptseite/index.html"
+            ],
+            [
+              "Seran",
+              "inhalte/himmelskoerper/planeten/details/seran/hauptseite/index.html"
+            ],
+            [
+              "Mirvek",
+              "inhalte/himmelskoerper/planeten/details/mirvek/hauptseite/index.html"
+            ],
+            [
+              "Veyruna",
+              "inhalte/himmelskoerper/planeten/details/veyruna/hauptseite/index.html"
+            ],
+            [
+              "Koras",
+              "inhalte/himmelskoerper/planeten/details/koras/hauptseite/index.html"
+            ],
+            [
+              "Jandor",
+              "inhalte/himmelskoerper/planeten/details/jandor/hauptseite/index.html"
+            ],
+            [
+              "Veltos",
+              "inhalte/himmelskoerper/planeten/details/veltos/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Ilvaren.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "5 km"
+            ],
+            [
+              "Masse",
+              "3,14 · 10^14 kg"
+            ],
+            [
+              "Mittlere Dichte",
+              "0,6 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "0 m/s² (0 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "0 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Ilvaren.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Ilvaren stammt aus den kalten Außenbereichen des Orelis-Systems und wurde auf seine heutige, langgestreckte Bahn gelenkt."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Ilvaren.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Woher stammt der Komet genau?",
+            "Wie lange übersteht sein Kern noch die Annäherungen an den Stern?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Ilvaren ist mit allen Bahndaten im Orelis-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=veyruna-stern&objekt=veyruna-ilvaren"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Ilvaren.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Ilvaren ist ein periodischer Komet aus dem äußeren Kleinkörpergürtel. Alle rund 46 Jahre nähert er sich Orelis bis auf etwa 0,72 AE und ist dann lange am Nachthimmel Veyrunas sichtbar; sein Staubstrom erzeugt wiederkehrende Meteorschauer."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Ilvaren.",
+      "abschnitte": [
+        {
+          "titel": "Ilvaren – Archivbild",
+          "bild": true,
+          "bildtext": "Ilvaren"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,546 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Veyr",
+  "genitiv": "von Veyr",
+  "dossierName": "Veyr-Dossier",
+  "klasse": "Mond",
+  "intro": "Veyr ist der größere Mond Karynths: eine felsige Welt mit Einschlagkratern, Hochländern und alten geologischen Strukturen. Er erzeugt die stärkste Gezeitenkomponente und bestimmt viele Kalender der Gezeitenbünde. Veyr umkreist Karynth in 14,4 Tage.",
+  "globusDaten": {
+    "planet": "junger-kugelmond-mit-zerklufteter-oberflache",
+    "klasse": "Gestein",
+    "radius": 1230000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=karynth-stern&objekt=karynth-veyr",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-EC83BDBDD3"
+    ],
+    [
+      "Typ",
+      "Mond"
+    ],
+    [
+      "Sternsystem",
+      "Ysmeroth-System"
+    ],
+    [
+      "Zentralkörper",
+      "Karynth"
+    ],
+    [
+      "Große Halbachse",
+      "239.620 km"
+    ],
+    [
+      "Umlaufzeit",
+      "14,4 Tage"
+    ],
+    [
+      "Durchmesser",
+      "2.460 km"
+    ],
+    [
+      "Masse",
+      "0,35 Mondmassen"
+    ],
+    [
+      "Schwerkraft",
+      "0,12 g"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -6 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Ysmeroth-System"
+    ],
+    [
+      "Zentralstern",
+      "Ysmeroth",
+      "inhalte/himmelskoerper/sterne/details/ysmeroth/hauptseite/index.html"
+    ],
+    [
+      "Umläuft",
+      "Karynth",
+      "inhalte/himmelskoerper/planeten/details/karynth/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "239.620 km"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Veyr im Ysmeroth-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=karynth-stern&objekt=karynth-veyr",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Ysmeroth",
+      "href": "inhalte/himmelskoerper/sterne/details/ysmeroth/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◍",
+      "art": "Mutterplanet",
+      "titel": "Karynth",
+      "href": "inhalte/himmelskoerper/planeten/details/karynth/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Metamorphen",
+      "titel": "Karynth",
+      "href": "inhalte/himmelskoerper/planeten/details/karynth/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Metamorphen",
+      "href": "inhalte/spezies/Biologische Spezies/Meta Morphen/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Ysmeroth-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=karynth-stern&objekt=karynth-veyr"
+    },
+    {
+      "titel": "Speziesdossier Metamorphen",
+      "href": "inhalte/spezies/Biologische Spezies/Meta Morphen/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#090908",
+      "tiefe": "#141413",
+      "akzent": "#d1cdc7",
+      "sand": "#d4c9ad",
+      "moos": "#aec69e",
+      "ozean": "#8bacba",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#53504c"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Astronomie"
+      ],
+      [
+        "Planet",
+        "Mutterplanet"
+      ],
+      [
+        "Kräfte",
+        "Gezeiten"
+      ],
+      [
+        "Tiefe",
+        "Geologie"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Mutterplanet": {
+      "gruppe": "Wissenschaft",
+      "icon": "◐",
+      "intro": "Mutterplanet von Veyr.",
+      "abschnitte": [
+        {
+          "titel": "Karynth",
+          "text": [
+            "Karynth ist die Heimatwelt der Metamorphen: eine alte, wasserreiche Gesteinswelt mit drei Kontinenten, Gezeitenlandschaften, gewaltigen Höhlensystemen und einer außergewöhnlich vielfältigen Biosphäre."
+          ],
+          "daten": [
+            [
+              "Typ",
+              "Gesteinsplanet"
+            ],
+            [
+              "Durchmesser",
+              "12.490 km"
+            ],
+            [
+              "Abstand des Mondes",
+              "239.620 km (38,4 Planetenradien)"
+            ]
+          ],
+          "verweise": [
+            [
+              "Karynth",
+              "inhalte/himmelskoerper/planeten/details/karynth/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Weitere Monde von Karynth",
+          "liste": [
+            "Orun – Umlauf in 31,6 Tage"
+          ],
+          "verweise": [
+            [
+              "Orun",
+              "inhalte/himmelskoerper/monde/details/orun/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Gezeiten": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gezeiten von Veyr.",
+      "abschnitte": [
+        {
+          "titel": "Gezeitenkräfte",
+          "text": [
+            "Auf seiner Bahn in 239.620 km Abstand wirken starke Gezeitenkräfte von Karynth auf Veyr."
+          ]
+        }
+      ]
+    },
+    "Gebundene Rotation": {
+      "gruppe": "Wissenschaft",
+      "icon": "↻",
+      "intro": "Gebundene Rotation von Veyr.",
+      "abschnitte": [
+        {
+          "titel": "Rotation",
+          "text": [
+            "Veyr wendet Karynth vermutlich stets dieselbe Seite zu: Ein Tag dauert so lange wie ein Umlauf – 14,4 Tage."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Veyr auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Veyr",
+          "text": [
+            "Veyr ist der größere Mond Karynths: eine felsige Welt mit Einschlagkratern, Hochländern und alten geologischen Strukturen. Er erzeugt die stärkste Gezeitenkomponente und bestimmt viele Kalender der Gezeitenbünde.",
+            "Veyr umkreist Karynth in 14,4 Tage."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Mond"
+            ],
+            [
+              "Sternsystem",
+              "Ysmeroth-System"
+            ],
+            [
+              "Zentralkörper",
+              "Karynth"
+            ],
+            [
+              "Große Halbachse",
+              "239.620 km"
+            ],
+            [
+              "Umlaufzeit",
+              "14,4 Tage"
+            ],
+            [
+              "Durchmesser",
+              "2.460 km"
+            ],
+            [
+              "Masse",
+              "0,35 Mondmassen"
+            ],
+            [
+              "Schwerkraft",
+              "0,12 g"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -6 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Karynth",
+          "text": [
+            "Das Ysmeroth-System ist die Heimat der Metamorphen: Ihr Planet Karynth umkreist Ysmeroth, und Veyr ist einer seiner Monde."
+          ],
+          "verweise": [
+            [
+              "Karynth",
+              "inhalte/himmelskoerper/planeten/details/karynth/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Metamorphen",
+              "inhalte/spezies/Biologische Spezies/Meta Morphen/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Veyr im Ysmeroth-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Karynth"
+            ],
+            [
+              "Große Halbachse",
+              "239.620 km"
+            ],
+            [
+              "Exzentrizität",
+              "0,012"
+            ],
+            [
+              "Bahnneigung",
+              "2,1°"
+            ],
+            [
+              "Umlaufzeit",
+              "14,4 Tage"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Ysmeroth · Stern",
+              "Orangefarbener Zwerg (K2 V)"
+            ],
+            [
+              "Ysmeroth B · Begleitstern in 310 AE",
+              "Roter Zwerg (M4 V)"
+            ],
+            [
+              "Ysmeroth I · 0,09 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Ysmeroth II · 0,45 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Karynth · 0,72 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Ysmeroth IV · 1,14 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Ysmeroth V · 2,9 AE",
+              "Gasriese"
+            ],
+            [
+              "Ysmeroth VI · 13,8 AE",
+              "Eisriese"
+            ],
+            [
+              "Graumantel · 40–56 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Ysmeroth",
+              "inhalte/himmelskoerper/sterne/details/ysmeroth/hauptseite/index.html"
+            ],
+            [
+              "Ysmeroth B",
+              "inhalte/himmelskoerper/sterne/details/ysmeroth-b/hauptseite/index.html"
+            ],
+            [
+              "Ysmeroth I",
+              "inhalte/himmelskoerper/planeten/details/ysmeroth-i/hauptseite/index.html"
+            ],
+            [
+              "Ysmeroth II",
+              "inhalte/himmelskoerper/planeten/details/ysmeroth-ii/hauptseite/index.html"
+            ],
+            [
+              "Karynth",
+              "inhalte/himmelskoerper/planeten/details/karynth/hauptseite/index.html"
+            ],
+            [
+              "Ysmeroth IV",
+              "inhalte/himmelskoerper/planeten/details/ysmeroth-iv/hauptseite/index.html"
+            ],
+            [
+              "Ysmeroth V",
+              "inhalte/himmelskoerper/planeten/details/ysmeroth-v/hauptseite/index.html"
+            ],
+            [
+              "Ysmeroth VI",
+              "inhalte/himmelskoerper/planeten/details/ysmeroth-vi/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Veyr.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "1.230 km"
+            ],
+            [
+              "Masse",
+              "0,35 Mondmassen"
+            ],
+            [
+              "Mittlere Dichte",
+              "3,29 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "1,13 m/s² (0,115 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "1,67 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Veyr.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Veyr ist geologisch weitgehend erstarrt; Einschläge haben seine Oberfläche geformt."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Veyr.",
+      "abschnitte": [
+        {
+          "titel": "Gashülle",
+          "text": [
+            "Veyr besitzt keine nennenswerte Atmosphäre – dafür ist die Schwerkraft zu gering."
+          ]
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Veyr.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 0,72 AE Abstand zu Ysmeroth liegt die Gleichgewichtstemperatur von Veyr bei rund -6 °C – gemäßigt."
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Veyr.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Veyr entstand zusammen mit dem Ysmeroth-System vor rund 5,2 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Veyr.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Ist der Mond eingefangen oder mit seinem Planeten entstanden?",
+            "Welche Spuren tragen seine ältesten Krater?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Veyr ist mit allen Bahndaten im Ysmeroth-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=karynth-stern&objekt=karynth-veyr"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Veyr.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Größter Mond von Karynth"
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Veyr.",
+      "abschnitte": [
+        {
+          "titel": "Veyr – Archivbild",
+          "bild": true,
+          "bildtext": "Veyr"
+        }
+      ]
+    }
+  }
+}

@@ -1,54 +1,286 @@
 {
   "systemName": "Seyvar-System",
   "praefix": "nhalyss-",
-  "lage": { "entfernungLj": 23, "richtung": [-0.35, -0.55, 0.76] },
+  "lage": {
+    "entfernungLj": 23,
+    "richtung": [
+      -0.35,
+      -0.55,
+      0.76
+    ]
+  },
   "einzelstern": true,
   "stern": {
-    "id": "nhalyss-stern", "name": "Seyvar", "typ": "Orangefarbener Zwerg (K2 V)",
-    "masseSonne": 0.82, "radiusSonne": 0.8, "leuchtkraftSonne": 0.47, "temperaturK": 5050, "alterMrd": 5.1,
-    "farbe": [1, 0.7, 0.42], "emissionsfarbe": [1, 0.72, 0.46], "emission": 1.12,
-    "bild": { "art": "sterne", "suche": "orange|K-Stern|Hauptreihe" },
+    "id": "nhalyss-stern",
+    "name": "Seyvar",
+    "typ": "Orangefarbener Zwerg (K2 V)",
+    "masseSonne": 0.82,
+    "radiusSonne": 0.8,
+    "leuchtkraftSonne": 0.47,
+    "temperaturK": 5050,
+    "alterMrd": 5.1,
+    "farbe": [
+      1,
+      0.7,
+      0.42
+    ],
+    "emissionsfarbe": [
+      1,
+      0.72,
+      0.46
+    ],
+    "emission": 1.12,
+    "bild": {
+      "art": "sterne",
+      "suche": "orange|K-Stern|Hauptreihe"
+    },
     "beschreibung": "Seyvar ist ein orangefarbener Hauptreihenstern der Spektralklasse K2 V mit 82 % der Sonnenmasse und 47 % ihrer Leuchtkraft. Er besitzt eine lange, stabile Hauptreihenphase, magnetische Aktivität und einen Sternwind – Zentralstern von Nhalyss, der Heimatwelt der Bioluminoiden."
   },
   "koerper": [
-    { "id": "nhalyss-seyvar-i", "name": "Seyvar I", "typ": "Gesteinsplanet", "um": "nhalyss-stern",
-      "aAE": 0.29, "e": 0.05, "i": 2.1, "knoten": 40, "peri": 80, "phase": 150, "radiusKm": 3300, "masseErde": 0.16, "albedo": 0.11, "farbe": [0.6, 0.5, 0.44],
-      "bild": { "art": "planeten", "slug": "luftloser-basaltplanet-im-harten-sonnenlicht" },
-      "beschreibung": "Seyvar I ist ein kleiner, sonnennaher Gesteinsplanet ohne nennenswerte Atmosphäre, dessen Tagseite stark aufgeheizt wird." },
-    { "id": "nhalyss-planet", "name": "Nhalyss", "typ": "Gesteinsplanet", "um": "nhalyss-stern",
-      "aAE": 0.72, "e": 0.03, "i": 0, "knoten": 120, "peri": 230, "phase": 40, "radiusKm": 5990, "masseErde": 0.82, "albedo": 0.3, "zielTemperaturC": 14, "farbe": [0.36, 0.5, 0.62],
-      "bild": { "art": "planeten", "slug": "imposante-supererde-mit-dunklen-kontinenten" },
-      "beschreibung": "Nhalyss ist die Heimatwelt der Bioluminoiden: ein geologisch aktiver Gesteinsplanet mit großen Ozeanen, vier Kontinenten, riesigen Spaltenlandschaften und dem Ringsystem Scherbenkranz." },
-    { "id": "nhalyss-ireth", "name": "Ireth", "typ": "Mond", "um": "nhalyss-planet",
-      "periodeTage": 18, "e": 0.02, "i": 4.2, "knoten": 60, "peri": 0, "phase": 220, "radiusKm": 1450, "masseErde": 0.007, "farbe": [0.72, 0.7, 0.66],
-      "bild": { "art": "monde", "slug": "erosionsmond-mit-uralten-einschlagbecken" },
-      "beschreibung": "Ireth ist der größte natürliche Mond von Nhalyss: ein Gesteinsmond mit Kraterlandschaften, Hochländern und Einschlagbecken. Hier liegt die Forschungs- und Versorgungsstation Ireth-Wache." },
-    { "id": "nhalyss-scherbenkranz", "name": "Scherbenkranz", "typ": "Planetenring", "ringUm": "nhalyss-planet",
-      "ringeAE": [0.0000602, 0.0000802, 0.0000969, 0.0001136], "anzahl": 320, "groesseKm": 4, "mindestPx": 2.6, "farbe": [0.74, 0.7, 0.64],
-      "bild": { "art": "monde", "slug": "proto-mond-mit-unruhigem-staubring" },
-      "beschreibung": "Der Scherbenkranz ist das Ringsystem von Nhalyss: silikatische Gesteinspartikel, Staub und metallhaltige Fragmente zwischen etwa 9.000 und 17.000 km vom Planetenzentrum – die Reste eines kleinen Mondes, der vor rund 73.000 Jahren zerbrach." },
-    { "id": "nhalyss-seyvar-iii", "name": "Seyvar III", "typ": "Gesteinsplanet", "um": "nhalyss-stern",
-      "aAE": 1.38, "e": 0.06, "i": 1.4, "knoten": 210, "peri": 30, "phase": 300, "radiusKm": 3900, "masseErde": 0.3, "albedo": 0.25, "farbe": [0.7, 0.52, 0.42],
-      "bild": { "art": "planeten", "suche": "Gefrorener Planet|kaltem Sternenlicht|Felsplanet|Wüste" },
-      "beschreibung": "Seyvar III ist eine kalte, trockene Gesteinswelt mit dünner Atmosphäre am äußeren Rand der habitablen Zone." },
-    { "id": "nhalyss-splittergurtel", "name": "Splittergürtel", "typ": "Asteroidengürtel", "ringUm": "nhalyss-stern",
-      "ringeAE": [2.1, 2.35, 2.6, 2.85], "anzahl": 200, "groesseKm": 320, "mindestPx": 5.5, "farbe": [0.6, 0.56, 0.52],
-      "bild": { "art": "sternensysteme", "suche": "Asteroidengürtel" },
-      "beschreibung": "Der Splittergürtel zwischen 2,1 und 2,85 AE besteht aus silikatischen und metallhaltigen Gesteinsbrocken." },
-    { "id": "nhalyss-seyvar-iv", "name": "Seyvar IV", "typ": "Gasriese", "um": "nhalyss-stern",
-      "aAE": 4.4, "e": 0.04, "i": 1.1, "knoten": 300, "peri": 160, "phase": 80, "radiusKm": 64000, "masseErde": 210, "albedo": 0.42, "farbe": [0.84, 0.74, 0.58],
-      "bild": { "art": "planeten", "suche": "Gasriese|Wolkenbänder|Jupiter" },
-      "beschreibung": "Seyvar IV ist ein großer Gasriese mit hellen Wolkenbändern, dessen Schwerkraft das innere System gegen viele Kometen abschirmt." },
-    { "id": "nhalyss-seyvar-v", "name": "Seyvar V", "typ": "Eisriese", "um": "nhalyss-stern",
-      "aAE": 11.5, "e": 0.05, "i": 2.3, "knoten": 80, "peri": 260, "phase": 200, "radiusKm": 25000, "masseErde": 16, "albedo": 0.3, "farbe": [0.5, 0.68, 0.84],
-      "bild": { "art": "planeten", "suche": "Eisriese|Neptun" },
-      "beschreibung": "Seyvar V ist ein ferner, blassblauer Eisriese." },
-    { "id": "nhalyss-prismenkomet", "name": "Prismenkomet", "typ": "Komet", "um": "nhalyss-stern", "anomalie": true,
-      "aAE": 15, "e": 0.92, "i": 31, "knoten": 140, "peri": 70, "phase": 173, "radiusKm": 5, "masseErde": 0, "farbe": [0.6, 0.92, 0.86],
-      "bild": { "art": "kometen", "suche": "blau|grün|Komet" },
-      "beschreibung": "Ein Komet, dessen Staubschweif im Licht von Seyvar in Cyan- und Bernsteintönen schimmert. Er kehrt alle 58 Jahre wieder; frühe Darstellungen des Ringhimmels zeigen ihn neben dem Scherbenkranz." },
-    { "id": "nhalyss-kometengebiet", "name": "Äußeres Kometengebiet", "typ": "Kometengebiet", "ringUm": "nhalyss-stern",
-      "ringeAE": [34, 41, 48], "anzahl": 200, "groesseKm": 150, "mindestPx": 4.5, "farbe": [0.56, 0.7, 0.86],
-      "beschreibung": "Ein ferner Gürtel aus Eiskörpern zwischen 34 und 48 AE." }
+    {
+      "id": "nhalyss-seyvar-i",
+      "name": "Seyvar I",
+      "typ": "Gesteinsplanet",
+      "um": "nhalyss-stern",
+      "aAE": 0.29,
+      "e": 0.05,
+      "i": 2.1,
+      "knoten": 40,
+      "peri": 80,
+      "phase": 150,
+      "radiusKm": 3300,
+      "masseErde": 0.16,
+      "albedo": 0.11,
+      "farbe": [
+        0.6,
+        0.5,
+        0.44
+      ],
+      "bild": {
+        "art": "planeten",
+        "slug": "luftloser-basaltplanet-im-harten-sonnenlicht"
+      },
+      "beschreibung": "Seyvar I ist ein kleiner, sonnennaher Gesteinsplanet ohne nennenswerte Atmosphäre, dessen Tagseite stark aufgeheizt wird."
+    },
+    {
+      "id": "nhalyss-planet",
+      "name": "Nhalyss",
+      "typ": "Gesteinsplanet",
+      "um": "nhalyss-stern",
+      "aAE": 0.72,
+      "e": 0.03,
+      "i": 0,
+      "knoten": 120,
+      "peri": 230,
+      "phase": 40,
+      "radiusKm": 5990,
+      "masseErde": 0.82,
+      "albedo": 0.3,
+      "zielTemperaturC": 14,
+      "farbe": [
+        0.36,
+        0.5,
+        0.62
+      ],
+      "bild": {
+        "art": "planeten",
+        "slug": "imposante-supererde-mit-dunklen-kontinenten"
+      },
+      "beschreibung": "Nhalyss ist die Heimatwelt der Bioluminoiden: ein geologisch aktiver Gesteinsplanet mit großen Ozeanen, vier Kontinenten, riesigen Spaltenlandschaften und dem Ringsystem Scherbenkranz."
+    },
+    {
+      "id": "nhalyss-ireth",
+      "name": "Ireth",
+      "typ": "Mond",
+      "um": "nhalyss-planet",
+      "periodeTage": 18,
+      "e": 0.02,
+      "i": 4.2,
+      "knoten": 60,
+      "peri": 0,
+      "phase": 220,
+      "radiusKm": 1450,
+      "masseErde": 0.007,
+      "farbe": [
+        0.72,
+        0.7,
+        0.66
+      ],
+      "bild": {
+        "art": "monde",
+        "slug": "erosionsmond-mit-uralten-einschlagbecken"
+      },
+      "beschreibung": "Ireth ist der größte natürliche Mond von Nhalyss: ein Gesteinsmond mit Kraterlandschaften, Hochländern und Einschlagbecken. Hier liegt die Forschungs- und Versorgungsstation Ireth-Wache."
+    },
+    {
+      "id": "nhalyss-scherbenkranz",
+      "name": "Scherbenkranz",
+      "typ": "Planetenring",
+      "ringUm": "nhalyss-planet",
+      "ringeAE": [
+        0.0000602,
+        0.0000802,
+        0.0000969,
+        0.0001136
+      ],
+      "anzahl": 320,
+      "groesseKm": 4,
+      "mindestPx": 2.6,
+      "farbe": [
+        0.74,
+        0.7,
+        0.64
+      ],
+      "bild": {
+        "art": "monde",
+        "slug": "proto-mond-mit-unruhigem-staubring"
+      },
+      "beschreibung": "Der Scherbenkranz ist das Ringsystem von Nhalyss: silikatische Gesteinspartikel, Staub und metallhaltige Fragmente zwischen etwa 9.000 und 17.000 km vom Planetenzentrum – die Reste eines kleinen Mondes, der vor rund 73.000 Jahren zerbrach."
+    },
+    {
+      "id": "nhalyss-seyvar-iii",
+      "name": "Seyvar III",
+      "typ": "Gesteinsplanet",
+      "um": "nhalyss-stern",
+      "aAE": 1.38,
+      "e": 0.06,
+      "i": 1.4,
+      "knoten": 210,
+      "peri": 30,
+      "phase": 300,
+      "radiusKm": 3900,
+      "masseErde": 0.3,
+      "albedo": 0.25,
+      "farbe": [
+        0.7,
+        0.52,
+        0.42
+      ],
+      "bild": {
+        "art": "planeten",
+        "suche": "Gefrorener Planet|kaltem Sternenlicht|Felsplanet|Wüste"
+      },
+      "beschreibung": "Seyvar III ist eine kalte, trockene Gesteinswelt mit dünner Atmosphäre am äußeren Rand der habitablen Zone."
+    },
+    {
+      "id": "nhalyss-splittergurtel",
+      "name": "Splittergürtel",
+      "typ": "Asteroidengürtel",
+      "ringUm": "nhalyss-stern",
+      "ringeAE": [
+        2.1,
+        2.35,
+        2.6,
+        2.85
+      ],
+      "anzahl": 200,
+      "groesseKm": 320,
+      "mindestPx": 5.5,
+      "farbe": [
+        0.6,
+        0.56,
+        0.52
+      ],
+      "bild": {
+        "art": "sternensysteme",
+        "suche": "Asteroidengürtel"
+      },
+      "beschreibung": "Der Splittergürtel zwischen 2,1 und 2,85 AE besteht aus silikatischen und metallhaltigen Gesteinsbrocken."
+    },
+    {
+      "id": "nhalyss-seyvar-iv",
+      "name": "Seyvar IV",
+      "typ": "Gasriese",
+      "um": "nhalyss-stern",
+      "aAE": 4.4,
+      "e": 0.04,
+      "i": 1.1,
+      "knoten": 300,
+      "peri": 160,
+      "phase": 80,
+      "radiusKm": 64000,
+      "masseErde": 210,
+      "albedo": 0.42,
+      "farbe": [
+        0.84,
+        0.74,
+        0.58
+      ],
+      "bild": {
+        "art": "planeten",
+        "suche": "Gasriese|Wolkenbänder|Jupiter"
+      },
+      "beschreibung": "Seyvar IV ist ein großer Gasriese mit hellen Wolkenbändern, dessen Schwerkraft das innere System gegen viele Kometen abschirmt."
+    },
+    {
+      "id": "nhalyss-seyvar-v",
+      "name": "Seyvar V",
+      "typ": "Eisriese",
+      "um": "nhalyss-stern",
+      "aAE": 11.5,
+      "e": 0.05,
+      "i": 2.3,
+      "knoten": 80,
+      "peri": 260,
+      "phase": 200,
+      "radiusKm": 25000,
+      "masseErde": 16,
+      "albedo": 0.3,
+      "farbe": [
+        0.5,
+        0.68,
+        0.84
+      ],
+      "bild": {
+        "art": "planeten",
+        "suche": "Eisriese|Neptun"
+      },
+      "beschreibung": "Seyvar V ist ein ferner, blassblauer Eisriese."
+    },
+    {
+      "id": "nhalyss-prismenkomet",
+      "name": "Prismenkomet",
+      "typ": "Komet",
+      "um": "nhalyss-stern",
+      "anomalie": true,
+      "aAE": 15,
+      "e": 0.92,
+      "i": 31,
+      "knoten": 140,
+      "peri": 70,
+      "phase": 173,
+      "radiusKm": 5,
+      "masseErde": 0,
+      "farbe": [
+        0.6,
+        0.92,
+        0.86
+      ],
+      "bild": {
+        "art": "kometen",
+        "suche": "blau|grün|Komet"
+      },
+      "beschreibung": "Ein Komet, dessen Staubschweif im Licht von Seyvar in Cyan- und Bernsteintönen schimmert. Er kehrt alle 58 Jahre wieder; frühe Darstellungen des Ringhimmels zeigen ihn neben dem Scherbenkranz."
+    },
+    {
+      "id": "nhalyss-kometengebiet",
+      "name": "Farirhar-Kometenwolke",
+      "typ": "Kometengebiet",
+      "ringUm": "nhalyss-stern",
+      "ringeAE": [
+        34,
+        41,
+        48
+      ],
+      "anzahl": 200,
+      "groesseKm": 150,
+      "mindestPx": 4.5,
+      "farbe": [
+        0.56,
+        0.7,
+        0.86
+      ],
+      "beschreibung": "Ein ferner Gürtel aus Eiskörpern zwischen 34 und 48 AE."
+    }
   ]
 }

@@ -1,0 +1,163 @@
+.species-group-page .species-category { scroll-margin-top: 14rem; }
+
+/* Die Karten übernehmen die Bildfläche der Noetiden und die Farben ihrer Motive. */
+.species-group-page .species-category[data-spezies-emblem] {
+    --emblem-haupt: #c8acd9;
+    --emblem-akzent: #9fccdb;
+    --karte-tief: #09101a;
+    --karte-linie: color-mix(in srgb, var(--emblem-haupt) 46%, #14202a);
+    --karte-richtung: 155deg;
+    position: relative;
+    isolation: isolate;
+    color: #f3edf0;
+    border: 1px solid var(--karte-linie);
+    border-radius: .55rem;
+    background: radial-gradient(ellipse at 96% 30%, color-mix(in srgb, var(--emblem-akzent) 19%, transparent), transparent 55%),
+        linear-gradient(var(--karte-richtung), color-mix(in srgb, var(--emblem-haupt) 15%, var(--karte-tief)), var(--karte-tief) 66%);
+    box-shadow: 0 .55rem 1.5rem #03080d4d;
+}
+
+.species-group-page .species-category[data-spezies-emblem]:hover,
+.species-group-page .species-category[data-spezies-emblem]:focus-within {
+    border-color: var(--emblem-haupt);
+    box-shadow: 0 .85rem 1.8rem #03080d9e, 0 0 .95rem color-mix(in srgb, var(--emblem-akzent) 24%, transparent);
+}
+
+.species-group-page .species-category[data-emblem-form="root"], .species-group-page .species-category[data-emblem-form="nest"] {
+    --karte-tief: #101b15;
+    --karte-richtung: 24deg;
+}
+
+.species-group-page .species-category[data-emblem-form="flame"], .species-group-page .species-category[data-emblem-form="terrain"], .species-group-page .species-category[data-emblem-form="shell"] {
+    --karte-tief: #1c1015;
+    --karte-richtung: 171deg;
+}
+
+.species-group-page .species-category[data-emblem-form="nebula"], .species-group-page .species-category[data-emblem-form="rift"], .species-group-page .species-category[data-emblem-form="crystal"] {
+    --karte-tief: #151025;
+    --karte-richtung: 132deg;
+}
+
+.species-group-page .species-category[data-emblem-form="wide"], .species-group-page .species-category[data-emblem-form="fluid"], .species-group-page .species-category[data-emblem-form="wind"] {
+    --karte-tief: #0a1820;
+    --karte-richtung: 207deg;
+}
+
+.species-group-page .species-category[data-emblem-form="mechanic"], .species-group-page .species-category[data-emblem-form="cells"], .species-group-page .species-category[data-emblem-form="woven"] {
+    --karte-tief: #101620;
+    --karte-richtung: 120deg;
+}
+
+.species-group-page .species-category[data-spezies-emblem] > img,
+.species-group-page .species-category[data-spezies-emblem] > a > img {
+    filter: brightness(.77) saturate(.89);
+}
+
+.species-category[data-spezies-emblem] > .spezies-emblem {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    display: block;
+    aspect-ratio: 550 / 200;
+    pointer-events: none;
+}
+
+.species-category-list .species-category[data-spezies-emblem] > .spezies-emblem {
+    width: max(110px, 25%);
+}
+
+.species-group-page .species-category[data-spezies-emblem] > div {
+    padding: 1rem;
+}
+
+.species-group-page .species-category[data-spezies-emblem] h2 {
+    position: relative;
+    margin: 0 0 .85rem;
+    padding: 0 0 .68rem;
+    color: #fff3e9;
+    font-size: clamp(1.18rem, 2cqi, 1.55rem);
+    border-bottom: 1px solid var(--karte-linie);
+}
+
+.species-category[data-spezies-emblem] h2::after {
+    content: "";
+    position: absolute;
+    width: min(4rem, 36%);
+    height: 2px;
+    left: 0;
+    bottom: -1px;
+    background: linear-gradient(90deg, var(--emblem-haupt), var(--emblem-akzent));
+}
+
+.species-group-page .species-category[data-spezies-emblem] .species-card-columns {
+    display: grid;
+    grid-template-columns: 1fr;
+    min-width: 0;
+    gap: .72rem;
+}
+
+.species-category[data-spezies-emblem] .species-card-columns dl {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 8rem), 1fr));
+    gap: .4rem;
+    margin: 0;
+}
+
+.species-category[data-spezies-emblem] .species-card-columns dl > div {
+    min-width: 0;
+    margin: 0;
+    padding: .45rem .55rem;
+    border-left: 2px solid var(--karte-linie);
+    background: color-mix(in srgb, var(--emblem-haupt) 7%, var(--karte-tief));
+}
+
+.species-category:is([data-spezies-emblem], [data-neurofloren]) .species-card-columns dt {
+    color: var(--emblem-haupt, #c4a7ed);
+    font-weight: 600;
+}
+
+.species-category[data-spezies-emblem] .species-card-columns dd {
+    overflow-wrap: break-word;
+}
+
+.species-group-page .species-category[data-spezies-emblem] .species-card-copy {
+    border: 0;
+    padding: 0;
+    line-height: 1.52;
+    color: #e0dae4;
+}
+
+.species-group-page .species-category[data-spezies-emblem] .species-card-copy a {
+    display: inline-block;
+    padding: .28rem .58rem;
+    border: 1px solid var(--karte-linie);
+    border-radius: .3rem;
+    color: var(--emblem-akzent);
+    text-decoration: none;
+}
+
+.species-group-page .species-category[data-spezies-emblem] .species-card-copy a:hover {
+    text-decoration: underline;
+}
+
+.species-category[data-spezies-emblem] .species-card-columns > dl:empty { display: none; }
+
+[data-neurofloren] .neurofloren-emblem i::after {
+    animation-duration: 9s;
+    animation-play-state: paused;
+}
+
+@media (any-hover: hover) {
+    [data-neurofloren]:hover .neurofloren-emblem i::after { animation-play-state: running; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    [data-neurofloren] .neurofloren-emblem i::after { animation: none; }
+}
+
+@media (forced-colors: active) {
+    .species-category > .spezies-emblem { forced-color-adjust: none; }
+}

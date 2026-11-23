@@ -111,7 +111,7 @@ const knoten = [
         "belohnung": {
             "art": "gegenstand",
             "name": "Sicherheit Verteidigung",
-            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/OzeanWelt/erde-im-sternenmeer/unterseiten/ERDE_BILDER/Zivilisation/17%20%E2%80%93%20Sicherheit%20&%20Verteidigung/17_Sicherheit_Verteidigung.jpg"
+            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/OzeanWelt/erde/unterseiten/ERDE_BILDER/Zivilisation/17%20%E2%80%93%20Sicherheit%20&%20Verteidigung/17_Sicherheit_Verteidigung.jpg"
         }
     }
 ];

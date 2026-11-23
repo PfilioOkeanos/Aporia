@@ -1,0 +1,737 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Olyss",
+  "genitiv": "von Olyss",
+  "dossierName": "Olyss-Dossier",
+  "klasse": "Eisriese",
+  "intro": "Olyss ist ein äußerer Riesenplanet mit höherem Anteil schwerer Elemente und flüchtiger Verbindungen als Torad. Methan und weitere Kohlenwasserstoffe bilden in seiner kalten Atmosphäre besondere, pastellfarbene Wolkenschichten. Olyss umkreist Darynth in 6,1 AE Abstand und braucht für einen Umlauf 17,1 Jahre.",
+  "globusDaten": {
+    "planet": "pastellfarbener-gasriese-mit-leuchtendem-atmospharenrand",
+    "klasse": "Eisriese",
+    "radius": 25500000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=iravelle-stern&objekt=iravelle-olyss",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-17C12243FE"
+    ],
+    [
+      "Typ",
+      "Eisriese"
+    ],
+    [
+      "Sternsystem",
+      "Darynth-System"
+    ],
+    [
+      "Zentralkörper",
+      "Darynth"
+    ],
+    [
+      "Große Halbachse",
+      "6,1 AE"
+    ],
+    [
+      "Umlaufzeit",
+      "17,1 Jahre"
+    ],
+    [
+      "Durchmesser",
+      "51.000 km"
+    ],
+    [
+      "Masse",
+      "22 Erdmassen"
+    ],
+    [
+      "Schwerkraft",
+      "1,37 g"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -193 °C"
+    ],
+    [
+      "Monde",
+      "2 (Pheris, Ondra)"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Darynth-System"
+    ],
+    [
+      "Zentralstern",
+      "Darynth",
+      "inhalte/himmelskoerper/sterne/details/darynth/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "6,1 AE"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Olyss im Darynth-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=iravelle-stern&objekt=iravelle-olyss",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Darynth",
+      "href": "inhalte/himmelskoerper/sterne/details/darynth/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Pheris",
+      "href": "inhalte/himmelskoerper/zwergplaneten/details/pheris/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Ondra",
+      "href": "inhalte/himmelskoerper/zwergplaneten/details/ondra/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Oneiroiden",
+      "titel": "Iravelle",
+      "href": "inhalte/himmelskoerper/planeten/details/iravelle/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Oneiroiden",
+      "href": "inhalte/spezies/Mentale Spezies/Oneiroiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Darynth-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=iravelle-stern&objekt=iravelle-olyss"
+    },
+    {
+      "titel": "Speziesdossier Oneiroiden",
+      "href": "inhalte/spezies/Mentale Spezies/Oneiroiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#0b090b",
+      "tiefe": "#181518",
+      "akzent": "#e4d4e8",
+      "sand": "#e7cec2",
+      "moos": "#c0cdbb",
+      "ozean": "#9ab3e2",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#605563"
+    }
+  },
+  "kapitel": {
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Olyss auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Olyss",
+          "text": [
+            "Olyss ist ein äußerer Riesenplanet mit höherem Anteil schwerer Elemente und flüchtiger Verbindungen als Torad. Methan und weitere Kohlenwasserstoffe bilden in seiner kalten Atmosphäre besondere, pastellfarbene Wolkenschichten.",
+            "Olyss umkreist Darynth in 6,1 AE Abstand und braucht für einen Umlauf 17,1 Jahre."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Eisriese"
+            ],
+            [
+              "Sternsystem",
+              "Darynth-System"
+            ],
+            [
+              "Zentralkörper",
+              "Darynth"
+            ],
+            [
+              "Große Halbachse",
+              "6,1 AE"
+            ],
+            [
+              "Umlaufzeit",
+              "17,1 Jahre"
+            ],
+            [
+              "Durchmesser",
+              "51.000 km"
+            ],
+            [
+              "Masse",
+              "22 Erdmassen"
+            ],
+            [
+              "Schwerkraft",
+              "1,37 g"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -193 °C"
+            ],
+            [
+              "Monde",
+              "2 (Pheris, Ondra)"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Iravelle",
+          "text": [
+            "Das Darynth-System ist die Heimat der Oneiroiden: Ihr Planet Iravelle umkreist Darynth."
+          ],
+          "verweise": [
+            [
+              "Iravelle",
+              "inhalte/himmelskoerper/planeten/details/iravelle/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Oneiroiden",
+              "inhalte/spezies/Mentale Spezies/Oneiroiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Olyss im Darynth-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Darynth"
+            ],
+            [
+              "Große Halbachse",
+              "6,1 AE (912,6 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,04"
+            ],
+            [
+              "Bahnneigung",
+              "1,7°"
+            ],
+            [
+              "Umlaufzeit",
+              "17,1 Jahre"
+            ],
+            [
+              "Einstrahlung",
+              "0,01-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Am Himmel von Olyss",
+          "text": [
+            "Darynth erscheint von hier aus etwa 0,07° groß (die Sonne von der Erde: 0,53°)."
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Darynth · Stern",
+              "Orangefarbener Zwerg (K3 V)"
+            ],
+            [
+              "Ashken · 0,18 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Doriel · 0,39 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Iravelle · 0,65 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Kavren · 1,12 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Torad · 2,9 AE",
+              "Gasriese"
+            ],
+            [
+              "Olyss · 6,1 AE · dieses Dossier",
+              "Eisriese"
+            ],
+            [
+              "Umbrel · 11,3 AE",
+              "Eisriese"
+            ],
+            [
+              "Darynth-Asteroidengürtel · 1,7–2,4 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußere Kleinkörperregion · 14–30 AE",
+              "Kleinkörpergürtel"
+            ]
+          ],
+          "verweise": [
+            [
+              "Darynth",
+              "inhalte/himmelskoerper/sterne/details/darynth/hauptseite/index.html"
+            ],
+            [
+              "Ashken",
+              "inhalte/himmelskoerper/planeten/details/ashken/hauptseite/index.html"
+            ],
+            [
+              "Doriel",
+              "inhalte/himmelskoerper/planeten/details/doriel/hauptseite/index.html"
+            ],
+            [
+              "Iravelle",
+              "inhalte/himmelskoerper/planeten/details/iravelle/hauptseite/index.html"
+            ],
+            [
+              "Kavren",
+              "inhalte/himmelskoerper/planeten/details/kavren/hauptseite/index.html"
+            ],
+            [
+              "Torad",
+              "inhalte/himmelskoerper/planeten/details/torad/hauptseite/index.html"
+            ],
+            [
+              "Umbrel",
+              "inhalte/himmelskoerper/planeten/details/umbrel/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Olyss.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "25.500 km"
+            ],
+            [
+              "Masse",
+              "22 Erdmassen"
+            ],
+            [
+              "Mittlere Dichte",
+              "1,89 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "13,47 m/s² (1,373 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "26,23 km/s"
+            ]
+          ],
+          "vergleich": {
+            "mit": "Erde",
+            "werte": [
+              [
+                "Durchmesser",
+                51000,
+                12742,
+                "km"
+              ],
+              [
+                "Masse",
+                22,
+                1,
+                "Erdmassen"
+              ],
+              [
+                "Schwerkraft",
+                1.37,
+                1,
+                "g"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "Planetare Struktur": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Planetare Struktur von Olyss.",
+      "abschnitte": [
+        {
+          "titel": "Schalenbau",
+          "schichten": [
+            [
+              "Atmosphäre",
+              "Wasserstoff, Helium und Methan"
+            ],
+            [
+              "Eismantel",
+              "Wasser, Ammoniak und Methan unter hohem Druck"
+            ],
+            [
+              "Kern",
+              "Gestein und Metall"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geografie": {
+      "gruppe": "Natur",
+      "icon": "△",
+      "intro": "Geografie von Olyss.",
+      "abschnitte": [
+        {
+          "titel": "Oberfläche",
+          "text": [
+            "Olyss besitzt keine feste Oberfläche. Sichtbar sind Wolkenbänder, Wirbel und Stürme."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Olyss.",
+      "abschnitte": [
+        {
+          "titel": "Gashülle",
+          "text": [
+            "Olyss besitzt keine feste Oberfläche; die Hülle geht nach innen allmählich in dichtere Schichten über."
+          ],
+          "balken": {
+            "werte": [
+              [
+                "Wasserstoff",
+                80
+              ],
+              [
+                "Helium",
+                17
+              ],
+              [
+                "Methan",
+                2.3
+              ],
+              [
+                "Spurengase",
+                0.7
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Olyss.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 6,1 AE Abstand zu Darynth liegt die Gleichgewichtstemperatur von Olyss bei rund -193 °C – eisig kalt."
+          ]
+        }
+      ]
+    },
+    "Gewässer": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gewässer von Olyss.",
+      "abschnitte": [
+        {
+          "titel": "Wasser",
+          "text": [
+            "Wasser liegt in den Wolkenschichten und tief im Inneren unter hohem Druck vor."
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Olyss.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Ohne feste Oberfläche gibt es keine Geologie im engeren Sinn; im Inneren herrschen extreme Drücke und Temperaturen."
+          ]
+        }
+      ]
+    },
+    "Biosphäre": {
+      "gruppe": "Natur",
+      "icon": "❧",
+      "intro": "Biosphäre von Olyss.",
+      "abschnitte": [
+        {
+          "titel": "Leben",
+          "text": [
+            "Auf Olyss ist kein Leben verzeichnet."
+          ]
+        }
+      ]
+    },
+    "Spezies": {
+      "gruppe": "Zivilisation",
+      "icon": "✿",
+      "intro": "Spezies von Olyss.",
+      "abschnitte": [
+        {
+          "titel": "Bewohner",
+          "text": [
+            "Olyss ist keine Heimat einer intelligenten Spezies."
+          ]
+        },
+        {
+          "titel": "Im System von Iravelle",
+          "text": [
+            "Das Darynth-System ist die Heimat der Oneiroiden: Ihr Planet Iravelle umkreist Darynth."
+          ],
+          "verweise": [
+            [
+              "Iravelle",
+              "inhalte/himmelskoerper/planeten/details/iravelle/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Oneiroiden",
+              "inhalte/spezies/Mentale Spezies/Oneiroiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Zivilisation": {
+      "gruppe": "Zivilisation",
+      "icon": "▥",
+      "intro": "Zivilisation von Olyss.",
+      "abschnitte": [
+        {
+          "titel": "Siedlungen",
+          "text": [
+            "Für Olyss sind keine dauerhaften Siedlungen verzeichnet."
+          ]
+        },
+        {
+          "titel": "Im System von Iravelle",
+          "text": [
+            "Das Darynth-System ist die Heimat der Oneiroiden: Ihr Planet Iravelle umkreist Darynth."
+          ],
+          "verweise": [
+            [
+              "Iravelle",
+              "inhalte/himmelskoerper/planeten/details/iravelle/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Oneiroiden",
+              "inhalte/spezies/Mentale Spezies/Oneiroiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Olyss.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Olyss entstand zusammen mit dem Darynth-System vor rund 6 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Fraktionen": {
+      "gruppe": "Zivilisation",
+      "icon": "◇",
+      "intro": "Fraktionen von Olyss.",
+      "abschnitte": [
+        {
+          "titel": "Ansprüche",
+          "text": [
+            "Für Olyss sind keine Fraktionsansprüche verzeichnet."
+          ]
+        }
+      ]
+    },
+    "Rohstoffe": {
+      "gruppe": "Weitere",
+      "icon": "⬡",
+      "intro": "Rohstoffe von Olyss.",
+      "abschnitte": [
+        {
+          "titel": "Rohstoffe",
+          "liste": [
+            "Wasserstoff",
+            "Methan",
+            "Wassereis"
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Olyss.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Gibt es flüssige Schichten im Eismantel?",
+            "Wie entstand die Achslage?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Olyss ist mit allen Bahndaten im Darynth-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=iravelle-stern&objekt=iravelle-olyss"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Olyss.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "2 Monde: Pheris, Ondra"
+          ]
+        },
+        {
+          "titel": "Monde",
+          "karten": [
+            {
+              "titel": "Pheris",
+              "text": "1.800 km Durchmesser, Umlauf in 3,2 Tage. Pheris ist ein türkisfarbener Eismond des Olyss. Dunkle Fissuren deuten auf ein mögliches unterirdisches Flüssigkeitsreservoir hin."
+            },
+            {
+              "titel": "Ondra",
+              "text": "1.400 km Durchmesser, Umlauf in 11 Tage. Ondra ist ein Eis-Gesteins-Mond des Olyss mit zerbrochenen, violett schimmernden Eisplatten."
+            }
+          ],
+          "verweise": [
+            [
+              "Pheris",
+              "inhalte/himmelskoerper/zwergplaneten/details/pheris/hauptseite/index.html"
+            ],
+            [
+              "Ondra",
+              "inhalte/himmelskoerper/zwergplaneten/details/ondra/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Eis- und Gesteinsmonde",
+          "text": [
+            "Olyss besitzt ein System aus Eis- und Gesteinsmonden. Einige von ihnen – etwa Pheris – können unter geeigneten Bedingungen unterirdische Flüssigkeitsreservoire besitzen. In seiner Atmosphäre entstehen großräumige Wolken- und Sturmstrukturen."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Olyss.",
+      "abschnitte": [
+        {
+          "titel": "Olyss – Archivbild",
+          "bild": true,
+          "bildtext": "Olyss"
+        }
+      ]
+    },
+    "Gaszusammensetzung": {
+      "gruppe": "Weitere",
+      "icon": "◆",
+      "intro": "Gaszusammensetzung von Olyss.",
+      "abschnitte": [
+        {
+          "titel": "Gaszusammensetzung",
+          "text": [
+            "Olyss ist ein äußerer Riesenplanet mit höherem Anteil schwerer Elemente und flüchtiger Verbindungen als Torad. Methan und weitere Kohlenwasserstoffe bilden in seiner kalten Atmosphäre besondere, pastellfarbene Wolkenschichten."
+          ]
+        }
+      ]
+    },
+    "Wolkenschichten": {
+      "gruppe": "Weitere",
+      "icon": "◆",
+      "intro": "Wolkenschichten von Olyss.",
+      "abschnitte": [
+        {
+          "titel": "Wolkenschichten",
+          "text": [
+            "Olyss ist ein äußerer Riesenplanet mit höherem Anteil schwerer Elemente und flüchtiger Verbindungen als Torad. Methan und weitere Kohlenwasserstoffe bilden in seiner kalten Atmosphäre besondere, pastellfarbene Wolkenschichten."
+          ]
+        }
+      ]
+    },
+    "Stürme": {
+      "gruppe": "Weitere",
+      "icon": "◆",
+      "intro": "Stürme von Olyss.",
+      "abschnitte": [
+        {
+          "titel": "Stürme",
+          "text": [
+            "Olyss ist ein äußerer Riesenplanet mit höherem Anteil schwerer Elemente und flüchtiger Verbindungen als Torad. Methan und weitere Kohlenwasserstoffe bilden in seiner kalten Atmosphäre besondere, pastellfarbene Wolkenschichten."
+          ]
+        }
+      ]
+    }
+  }
+}

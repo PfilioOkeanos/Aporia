@@ -1,0 +1,626 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Celeun I",
+  "genitiv": "von Celeun I",
+  "dossierName": "Celeun I-Dossier",
+  "klasse": "Gesteinsplanet",
+  "intro": "Celeun I ist ein heißer, luftloser Gesteinsplanet. Celeun I umkreist Celeun in 0,42 AE Abstand und braucht für einen Umlauf 102 Tage.",
+  "globusDaten": {
+    "planet": "roter-planet-mit-alten-kratern",
+    "klasse": "Gestein",
+    "radius": 4700000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=vessarin-stern&objekt=vessarin-celeun-i",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-0CC08A91D8"
+    ],
+    [
+      "Typ",
+      "Gesteinsplanet"
+    ],
+    [
+      "Sternsystem",
+      "Celeun-System"
+    ],
+    [
+      "Zentralkörper",
+      "Celeun"
+    ],
+    [
+      "Große Halbachse",
+      "0,42 AE"
+    ],
+    [
+      "Umlaufzeit",
+      "102 Tage"
+    ],
+    [
+      "Durchmesser",
+      "9.400 km"
+    ],
+    [
+      "Masse",
+      "0,4 Erdmassen"
+    ],
+    [
+      "Schwerkraft",
+      "0,73 g"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. 121 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Celeun-System"
+    ],
+    [
+      "Zentralstern",
+      "Celeun",
+      "inhalte/himmelskoerper/sterne/details/celeun/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "0,42 AE"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Celeun I im Celeun-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=vessarin-stern&objekt=vessarin-celeun-i",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Celeun",
+      "href": "inhalte/himmelskoerper/sterne/details/celeun/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Thalassoiden",
+      "titel": "Vessarin",
+      "href": "inhalte/himmelskoerper/planeten/details/vessarin/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Thalassoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Thalassoiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Celeun-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=vessarin-stern&objekt=vessarin-celeun-i"
+    },
+    {
+      "titel": "Speziesdossier Thalassoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Thalassoiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#080706",
+      "tiefe": "#110f0d",
+      "akzent": "#c0b3a5",
+      "sand": "#c5b297",
+      "moos": "#9fa782",
+      "ozean": "#7f9191",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#473e35"
+    }
+  },
+  "kapitel": {
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Celeun I auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Celeun I",
+          "text": [
+            "Celeun I ist ein heißer, luftloser Gesteinsplanet.",
+            "Celeun I umkreist Celeun in 0,42 AE Abstand und braucht für einen Umlauf 102 Tage."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Gesteinsplanet"
+            ],
+            [
+              "Sternsystem",
+              "Celeun-System"
+            ],
+            [
+              "Zentralkörper",
+              "Celeun"
+            ],
+            [
+              "Große Halbachse",
+              "0,42 AE"
+            ],
+            [
+              "Umlaufzeit",
+              "102 Tage"
+            ],
+            [
+              "Durchmesser",
+              "9.400 km"
+            ],
+            [
+              "Masse",
+              "0,4 Erdmassen"
+            ],
+            [
+              "Schwerkraft",
+              "0,73 g"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. 121 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Vessarin",
+          "text": [
+            "Das Celeun-System ist die Heimat der Thalassoiden: Ihr Planet Vessarin umkreist Celeun."
+          ],
+          "verweise": [
+            [
+              "Vessarin",
+              "inhalte/himmelskoerper/planeten/details/vessarin/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Thalassoiden",
+              "inhalte/spezies/Biologische Spezies/Thalassoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Celeun I im Celeun-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Celeun"
+            ],
+            [
+              "Große Halbachse",
+              "0,42 AE (62,8 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,04"
+            ],
+            [
+              "Bahnneigung",
+              "1,5°"
+            ],
+            [
+              "Umlaufzeit",
+              "102 Tage"
+            ],
+            [
+              "Einstrahlung",
+              "4,649-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Am Himmel von Celeun I",
+          "text": [
+            "Celeun erscheint von hier aus etwa 1,17° groß (die Sonne von der Erde: 0,53°)."
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Celeun · Stern",
+              "Gelber Zwerg (G6 V)"
+            ],
+            [
+              "Celeun I · 0,42 AE · dieses Dossier",
+              "Gesteinsplanet"
+            ],
+            [
+              "Vessarin · 0,93 AE",
+              "Ozeanplanet"
+            ],
+            [
+              "Celeun III · 1,7 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Celeun IV · 6 AE",
+              "Gasriese"
+            ],
+            [
+              "Celeun V · 16 AE",
+              "Eisriese"
+            ],
+            [
+              "Perlgürtel · 2,5–3,3 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 40–56 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Celeun",
+              "inhalte/himmelskoerper/sterne/details/celeun/hauptseite/index.html"
+            ],
+            [
+              "Vessarin",
+              "inhalte/himmelskoerper/planeten/details/vessarin/hauptseite/index.html"
+            ],
+            [
+              "Celeun III",
+              "inhalte/himmelskoerper/planeten/details/celeun-iii/hauptseite/index.html"
+            ],
+            [
+              "Celeun IV",
+              "inhalte/himmelskoerper/planeten/details/celeun-iv/hauptseite/index.html"
+            ],
+            [
+              "Celeun V",
+              "inhalte/himmelskoerper/planeten/details/celeun-v/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Celeun I.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "4.700 km"
+            ],
+            [
+              "Masse",
+              "0,4 Erdmassen"
+            ],
+            [
+              "Mittlere Dichte",
+              "5,49 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "7,21 m/s² (0,735 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "8,24 km/s"
+            ]
+          ],
+          "vergleich": {
+            "mit": "Erde",
+            "werte": [
+              [
+                "Durchmesser",
+                9400,
+                12742,
+                "km"
+              ],
+              [
+                "Masse",
+                0.4,
+                1,
+                "Erdmassen"
+              ],
+              [
+                "Schwerkraft",
+                0.73,
+                1,
+                "g"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "Planetare Struktur": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Planetare Struktur von Celeun I.",
+      "abschnitte": [
+        {
+          "titel": "Schalenbau",
+          "schichten": [
+            [
+              "Kruste",
+              "Silikatgestein"
+            ],
+            [
+              "Mantel",
+              "Dichteres Silikatgestein"
+            ],
+            [
+              "Kern",
+              "Eisen und Nickel"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geografie": {
+      "gruppe": "Natur",
+      "icon": "△",
+      "intro": "Geografie von Celeun I.",
+      "abschnitte": [
+        {
+          "titel": "Oberfläche",
+          "text": [
+            "Die Oberfläche von Celeun I ist sehr heiß."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Celeun I.",
+      "abschnitte": [
+        {
+          "titel": "Gashülle",
+          "text": [
+            "Eine dichte, kohlendioxidreiche Hülle staut die Wärme von Celeun I."
+          ],
+          "balken": {
+            "werte": [
+              [
+                "Kohlendioxid",
+                95
+              ],
+              [
+                "Stickstoff",
+                3.5
+              ],
+              [
+                "Argon und Spurengase",
+                1.5
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Celeun I.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 0,42 AE Abstand zu Celeun liegt die Gleichgewichtstemperatur von Celeun I bei rund 121 °C – sehr heiß. Die dichte Gashülle heizt die Oberfläche zusätzlich auf."
+          ]
+        }
+      ]
+    },
+    "Gewässer": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gewässer von Celeun I.",
+      "abschnitte": [
+        {
+          "titel": "Wasser",
+          "text": [
+            "Für flüssiges Wasser ist es viel zu heiß."
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Celeun I.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Celeun I ist groß genug, um im Inneren noch Wärme zu speichern; Spuren alter vulkanischer Tätigkeit sind wahrscheinlich."
+          ]
+        }
+      ]
+    },
+    "Biosphäre": {
+      "gruppe": "Natur",
+      "icon": "❧",
+      "intro": "Biosphäre von Celeun I.",
+      "abschnitte": [
+        {
+          "titel": "Leben",
+          "text": [
+            "Auf Celeun I ist kein Leben verzeichnet."
+          ]
+        }
+      ]
+    },
+    "Spezies": {
+      "gruppe": "Zivilisation",
+      "icon": "✿",
+      "intro": "Spezies von Celeun I.",
+      "abschnitte": [
+        {
+          "titel": "Bewohner",
+          "text": [
+            "Celeun I ist keine Heimat einer intelligenten Spezies."
+          ]
+        },
+        {
+          "titel": "Im System von Vessarin",
+          "text": [
+            "Das Celeun-System ist die Heimat der Thalassoiden: Ihr Planet Vessarin umkreist Celeun."
+          ],
+          "verweise": [
+            [
+              "Vessarin",
+              "inhalte/himmelskoerper/planeten/details/vessarin/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Thalassoiden",
+              "inhalte/spezies/Biologische Spezies/Thalassoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Zivilisation": {
+      "gruppe": "Zivilisation",
+      "icon": "▥",
+      "intro": "Zivilisation von Celeun I.",
+      "abschnitte": [
+        {
+          "titel": "Siedlungen",
+          "text": [
+            "Für Celeun I sind keine dauerhaften Siedlungen verzeichnet."
+          ]
+        },
+        {
+          "titel": "Im System von Vessarin",
+          "text": [
+            "Das Celeun-System ist die Heimat der Thalassoiden: Ihr Planet Vessarin umkreist Celeun."
+          ],
+          "verweise": [
+            [
+              "Vessarin",
+              "inhalte/himmelskoerper/planeten/details/vessarin/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Thalassoiden",
+              "inhalte/spezies/Biologische Spezies/Thalassoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Celeun I.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Celeun I entstand zusammen mit dem Celeun-System vor rund 4,1 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Fraktionen": {
+      "gruppe": "Zivilisation",
+      "icon": "◇",
+      "intro": "Fraktionen von Celeun I.",
+      "abschnitte": [
+        {
+          "titel": "Ansprüche",
+          "text": [
+            "Für Celeun I sind keine Fraktionsansprüche verzeichnet."
+          ]
+        }
+      ]
+    },
+    "Rohstoffe": {
+      "gruppe": "Weitere",
+      "icon": "⬡",
+      "intro": "Rohstoffe von Celeun I.",
+      "abschnitte": [
+        {
+          "titel": "Rohstoffe",
+          "liste": [
+            "Silikatgestein",
+            "Metallerze"
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Celeun I.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Wie ist der innere Aufbau beschaffen?",
+            "Gab es früher eine dichtere Atmosphäre?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Celeun I ist mit allen Bahndaten im Celeun-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=vessarin-stern&objekt=vessarin-celeun-i"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Celeun I.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Innerster Planet des Celeun-Systems"
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Celeun I.",
+      "abschnitte": [
+        {
+          "titel": "Celeun I – Archivbild",
+          "bild": true,
+          "bildtext": "Celeun I"
+        }
+      ]
+    }
+  }
+}

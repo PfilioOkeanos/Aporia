@@ -1,0 +1,557 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Veraq",
+  "genitiv": "von Veraq",
+  "dossierName": "Veraq-Dossier",
+  "klasse": "Eismond",
+  "intro": "Veraq ist ein innerer Eismond des Riesenplaneten Ynderal. Veraq umkreist Ynderal in 3,4 Tage.",
+  "globusDaten": {
+    "planet": "veraq",
+    "klasse": "Eis",
+    "radius": 680000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=teryn-stern&objekt=teryn-veraq",
+  "grunddaten": [
+    [
+      "System-ID",
+      "teryn-veraq"
+    ],
+    [
+      "Archiv-ID",
+      "AP-TERYN-VERAQ"
+    ],
+    [
+      "Typ",
+      "Eismond"
+    ],
+    [
+      "Sternsystem",
+      "Teryn-System"
+    ],
+    [
+      "Zentralkörper",
+      "Ynderal"
+    ],
+    [
+      "Große Halbachse",
+      "302.596 km"
+    ],
+    [
+      "Umlaufzeit",
+      "3,4 Tage"
+    ],
+    [
+      "Durchmesser",
+      "1.360 km"
+    ],
+    [
+      "Masse",
+      "5,97 · 10^20 kg"
+    ],
+    [
+      "Schwerkraft",
+      "8,61 cm/s²"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -201 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Teryn-System"
+    ],
+    [
+      "Zentralstern",
+      "Teryn",
+      "inhalte/himmelskoerper/sterne/details/teryn/hauptseite/index.html"
+    ],
+    [
+      "Umläuft",
+      "Ynderal",
+      "inhalte/himmelskoerper/planeten/details/ynderal/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "302.596 km"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Veraq im Teryn-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=teryn-stern&objekt=teryn-veraq",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Teryn",
+      "href": "inhalte/himmelskoerper/sterne/details/teryn/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◍",
+      "art": "Mutterplanet",
+      "titel": "Ynderal",
+      "href": "inhalte/himmelskoerper/planeten/details/ynderal/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Solitiden",
+      "titel": "Iskara",
+      "href": "inhalte/himmelskoerper/planeten/details/iskara/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Solitiden",
+      "href": "inhalte/spezies/Mentale Spezies/Solitiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Teryn-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=teryn-stern&objekt=teryn-veraq"
+    },
+    {
+      "titel": "Speziesdossier Solitiden",
+      "href": "inhalte/spezies/Mentale Spezies/Solitiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#080a0b",
+      "tiefe": "#121618",
+      "akzent": "#c5dbe9",
+      "sand": "#c9d4c3",
+      "moos": "#a3d5bd",
+      "ozean": "#83bae4",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#4b5a64"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Astronomie"
+      ],
+      [
+        "Planet",
+        "Mutterplanet"
+      ],
+      [
+        "Kräfte",
+        "Gezeiten"
+      ],
+      [
+        "Tiefe",
+        "Geologie"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Mutterplanet": {
+      "gruppe": "Wissenschaft",
+      "icon": "◐",
+      "intro": "Mutterplanet von Veraq.",
+      "abschnitte": [
+        {
+          "titel": "Ynderal",
+          "text": [
+            "Ynderal ist ein kalter, eisreicher Riesenplanet mit wasserstoffreicher Atmosphäre und einem Ringsystem."
+          ],
+          "daten": [
+            [
+              "Typ",
+              "Eisreicher Riesenplanet"
+            ],
+            [
+              "Durchmesser",
+              "62.400 km"
+            ],
+            [
+              "Abstand des Mondes",
+              "302.596 km (9,7 Planetenradien)"
+            ]
+          ],
+          "verweise": [
+            [
+              "Ynderal",
+              "inhalte/himmelskoerper/planeten/details/ynderal/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Weitere Monde von Ynderal",
+          "liste": [
+            "Teshil – Umlauf in 8,8 Tage",
+            "Narim – Umlauf in 18,2 Tage"
+          ],
+          "verweise": [
+            [
+              "Teshil",
+              "inhalte/himmelskoerper/monde/details/teshil/hauptseite/index.html"
+            ],
+            [
+              "Narim",
+              "inhalte/himmelskoerper/monde/details/narim/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Gezeiten": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gezeiten von Veraq.",
+      "abschnitte": [
+        {
+          "titel": "Gezeitenkräfte",
+          "text": [
+            "Auf seiner Bahn in 302.596 km Abstand wirken starke Gezeitenkräfte von Ynderal auf Veraq."
+          ]
+        }
+      ]
+    },
+    "Gebundene Rotation": {
+      "gruppe": "Wissenschaft",
+      "icon": "↻",
+      "intro": "Gebundene Rotation von Veraq.",
+      "abschnitte": [
+        {
+          "titel": "Rotation",
+          "text": [
+            "Veraq wendet Ynderal vermutlich stets dieselbe Seite zu: Ein Tag dauert so lange wie ein Umlauf – 3,4 Tage."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Veraq auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Veraq",
+          "text": [
+            "Veraq ist ein innerer Eismond des Riesenplaneten Ynderal.",
+            "Veraq umkreist Ynderal in 3,4 Tage."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Eismond"
+            ],
+            [
+              "Sternsystem",
+              "Teryn-System"
+            ],
+            [
+              "Zentralkörper",
+              "Ynderal"
+            ],
+            [
+              "Große Halbachse",
+              "302.596 km"
+            ],
+            [
+              "Umlaufzeit",
+              "3,4 Tage"
+            ],
+            [
+              "Durchmesser",
+              "1.360 km"
+            ],
+            [
+              "Masse",
+              "5,97 · 10^20 kg"
+            ],
+            [
+              "Schwerkraft",
+              "8,61 cm/s²"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -201 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Iskara",
+          "text": [
+            "Das Teryn-System ist die Heimat der Solitiden: Ihr Planet Iskara umkreist Teryn."
+          ],
+          "verweise": [
+            [
+              "Iskara",
+              "inhalte/himmelskoerper/planeten/details/iskara/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Solitiden",
+              "inhalte/spezies/Mentale Spezies/Solitiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Veraq im Teryn-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Ynderal"
+            ],
+            [
+              "Große Halbachse",
+              "302.596 km"
+            ],
+            [
+              "Exzentrizität",
+              "0,005"
+            ],
+            [
+              "Bahnneigung",
+              "0,5°"
+            ],
+            [
+              "Umlaufzeit",
+              "3,4 Tage"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Teryn · Stern",
+              "Orangefarbener Hauptreihenstern (K4 V)"
+            ],
+            [
+              "Dareth · 0,15 AE",
+              "Heißer Gesteinsplanet"
+            ],
+            [
+              "Nura · 0,34 AE",
+              "Heißer terrestrischer Planet"
+            ],
+            [
+              "Iskara · 0,61 AE",
+              "Bewohnter terrestrischer Silikatplanet"
+            ],
+            [
+              "Veldros · 1,08 AE",
+              "Kalte Supererde"
+            ],
+            [
+              "Saevor · 2,84 AE",
+              "Gasriese"
+            ],
+            [
+              "Ynderal · 5,9 AE",
+              "Eisreicher Riesenplanet"
+            ],
+            [
+              "Veylan-Asteroidengürtel · 1,7–2 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußere Kleinkörperregion · 14–38 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Teryn",
+              "inhalte/himmelskoerper/sterne/details/teryn/hauptseite/index.html"
+            ],
+            [
+              "Dareth",
+              "inhalte/himmelskoerper/planeten/details/dareth/hauptseite/index.html"
+            ],
+            [
+              "Nura",
+              "inhalte/himmelskoerper/planeten/details/nura/hauptseite/index.html"
+            ],
+            [
+              "Iskara",
+              "inhalte/himmelskoerper/planeten/details/iskara/hauptseite/index.html"
+            ],
+            [
+              "Veldros",
+              "inhalte/himmelskoerper/planeten/details/veldros/hauptseite/index.html"
+            ],
+            [
+              "Saevor",
+              "inhalte/himmelskoerper/planeten/details/saevor/hauptseite/index.html"
+            ],
+            [
+              "Ynderal",
+              "inhalte/himmelskoerper/planeten/details/ynderal/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Veraq.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "680 km"
+            ],
+            [
+              "Masse",
+              "5,97 · 10^20 kg"
+            ],
+            [
+              "Mittlere Dichte",
+              "0,45 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "0,09 m/s² (0,009 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "0,34 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Veraq.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Veraq ist geologisch weitgehend erstarrt; Einschläge haben seine Oberfläche geformt."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Veraq.",
+      "abschnitte": [
+        {
+          "titel": "Gashülle",
+          "text": [
+            "Veraq besitzt keine nennenswerte Atmosphäre – dafür ist die Schwerkraft zu gering."
+          ]
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Veraq.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 5,9 AE Abstand zu Teryn liegt die Gleichgewichtstemperatur von Veraq bei rund -201 °C – eisig kalt."
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Veraq.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Veraq entstand zusammen mit dem Teryn-System vor rund 6,1 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Veraq.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Ist der Mond eingefangen oder mit seinem Planeten entstanden?",
+            "Welche Spuren tragen seine ältesten Krater?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Veraq ist mit allen Bahndaten im Teryn-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=teryn-stern&objekt=teryn-veraq"
+            ]
+          ]
+        },
+        {
+          "titel": "Untersuchung im Teryn-System",
+          "text": [
+            "Zeigen Oberflächenstrukturen Spuren der Gezeitenbeanspruchung in Ynderals innerem Mondsystem?"
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Veraq.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Veraq ist ein innerer Eismond des Riesenplaneten Ynderal."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Veraq.",
+      "abschnitte": [
+        {
+          "titel": "Illustrationsmotiv",
+          "bild": true,
+          "bildtext": "Illustration anhand eines vorhandenen Motivs. Sie zeigt den Himmelskörpertyp und keine bestätigten Oberflächendetails."
+        }
+      ]
+    }
+  }
+}

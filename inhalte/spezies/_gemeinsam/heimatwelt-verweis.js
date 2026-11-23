@@ -60,13 +60,13 @@ function zeige() {
     if (schonVerlinkt) return;
     stil();
     const dossier = zuUrl(w.dossier);
-    const karte = zuUrl("Menüs/Sternenkarte/Sternenkarte.html") + "?system=" + encodeURIComponent(w.system);
+    const karte = zuUrl("Menüs/Sternenkarte/Sternenkarte.html") + "?system=" + encodeURIComponent(w.system) + (w.objekt ? "&objekt=" + encodeURIComponent(w.objekt) : "");
     const kasten = document.createElement("aside");
     kasten.className = "heimatwelt-verweis";
     kasten.setAttribute("aria-label", `Heimatwelt ${w.welt}`);
     kasten.innerHTML = `${w.bild ? `<a class="heimatwelt-verweis__bild" href="${dossier}" tabindex="-1" aria-hidden="true"><img src="${zuUrl(w.bild)}" alt="" loading="lazy" decoding="async"></a>` : ""}
         <span class="heimatwelt-verweis__text"><span class="heimatwelt-verweis__kicker">Heimatwelt</span><span class="heimatwelt-verweis__name"></span><span class="heimatwelt-verweis__system"></span></span>
-        <span class="heimatwelt-verweis__links"><a href="${dossier}">Planetendossier ›</a><a href="${karte}">Sternenkarte ›</a></span>`;
+        <span class="heimatwelt-verweis__links"><a href="${dossier}">${w.dossier.includes("/monde/") ? "Monddossier" : "Planetendossier"} ›</a><a href="${karte}">Sternenkarte ›</a></span>`;
     kasten.querySelector(".heimatwelt-verweis__name").textContent = w.welt;
     kasten.querySelector(".heimatwelt-verweis__system").textContent = `${w.systemName} · Stern ${w.stern}`;
     platziere(kasten);

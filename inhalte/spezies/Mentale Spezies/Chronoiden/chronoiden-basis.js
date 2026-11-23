@@ -11,10 +11,9 @@ if (matchMedia("(max-width: 760px)").matches) {
 }
 
 applyAporiaRoutes(document);
-document.querySelector('.st-reiter [aria-current="page"]')?.scrollIntoView({ block: "nearest", inline: "center" });
 
 // Kapitelleiste: aktives Kapitel hervorheben, Sprung öffnet eine geschlossene Karte
-const sprung = document.querySelector("[data-st-sprung]");
+const sprung = document.querySelector("[data-cn-sprung]");
 if (sprung) {
     const links = new Map([...sprung.querySelectorAll('a[href^="#"]')].map((a) => [a.getAttribute("href").slice(1), a]));
     if ("IntersectionObserver" in window) {
@@ -38,8 +37,8 @@ if (ziel instanceof HTMLDetailsElement) ziel.open = true;
 else if (ziel instanceof Element && ziel.closest("details")) ziel.closest("details").open = true;
 
 // Alle Kapitel auf- oder zuklappen
-const kapitel = [...document.querySelectorAll(".st-inhalt details.st-karte")];
-const klappKnopf = document.querySelector("[data-st-klappen]");
+const kapitel = [...document.querySelectorAll(".cn-inhalt details.cn-karte")];
+const klappKnopf = document.querySelector("[data-cn-klappen]");
 if (klappKnopf && kapitel.length) {
     const stand = () => {
         const alleOffen = kapitel.every((k) => k.open);
@@ -56,7 +55,7 @@ if (klappKnopf && kapitel.length) {
 } else klappKnopf?.remove();
 
 // Großansicht mit Zoom (gemeinsamer Adapter galerie-zoom.js) für alle Bildkarusselle
-const dialog = document.querySelector("dialog.st-zoom");
+const dialog = document.querySelector("dialog.cn-zoom");
 const karusselle = document.querySelectorAll("[data-karussell]");
 if (dialog && karusselle.length) {
     const vollbild = mountGalleryZoom(dialog);

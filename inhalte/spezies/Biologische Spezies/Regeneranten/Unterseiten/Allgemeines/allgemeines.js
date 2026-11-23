@@ -1,2 +1,3 @@
-// Regeneranten – Allgemeines · erzeugt vom Spezies-Baukasten (scripts/spezies) – Änderungen dort vornehmen
+// Regeneranten – Allgemeines
+// Gemeinsame Funktionen (Topbar, Sidebar, Routen, Klappkapitel, Bildkarussell) kommen aus der Basis.
 import "../../regeneranten-basis.js";

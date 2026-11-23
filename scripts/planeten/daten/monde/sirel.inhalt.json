@@ -1,0 +1,586 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Sirel",
+  "genitiv": "von Sirel",
+  "dossierName": "Sirel-Dossier",
+  "klasse": "Mond",
+  "intro": "Sirel ist ein eisiger Ozeanmond mit großen Risssystemen. Unter der Eisoberfläche könnte ein salzhaltiger Ozean liegen – ein besonders interessanter Kandidat für mögliche unterirdische Lebensräume. Sirel umkreist Urakan in 3 Tage.",
+  "globusDaten": {
+    "planet": "eisiger-rissmond-uber-blauen-eisweiten",
+    "klasse": "Eis",
+    "radius": 1500000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=nerath-stern&objekt=nerath-sirel",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-989303D629"
+    ],
+    [
+      "Typ",
+      "Mond"
+    ],
+    [
+      "Sternsystem",
+      "Terev-System"
+    ],
+    [
+      "Zentralkörper",
+      "Urakan"
+    ],
+    [
+      "Große Halbachse",
+      "524.036 km"
+    ],
+    [
+      "Umlaufzeit",
+      "3 Tage"
+    ],
+    [
+      "Durchmesser",
+      "3.000 km"
+    ],
+    [
+      "Masse",
+      "0,65 Mondmassen"
+    ],
+    [
+      "Schwerkraft",
+      "0,14 g"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -159 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Terev-System"
+    ],
+    [
+      "Zentralstern",
+      "Terev",
+      "inhalte/himmelskoerper/sterne/details/terev/hauptseite/index.html"
+    ],
+    [
+      "Umläuft",
+      "Urakan",
+      "inhalte/himmelskoerper/planeten/details/urakan/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "524.036 km"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Sirel im Terev-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=nerath-stern&objekt=nerath-sirel",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Terev",
+      "href": "inhalte/himmelskoerper/sterne/details/terev/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◍",
+      "art": "Mutterplanet",
+      "titel": "Urakan",
+      "href": "inhalte/himmelskoerper/planeten/details/urakan/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Synaptoiden",
+      "titel": "Nerath",
+      "href": "inhalte/himmelskoerper/planeten/details/nerath/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Synaptoiden",
+      "href": "inhalte/spezies/Mentale Spezies/Synaptoiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Terev-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=nerath-stern&objekt=nerath-sirel"
+    },
+    {
+      "titel": "Speziesdossier Synaptoiden",
+      "href": "inhalte/spezies/Mentale Spezies/Synaptoiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#0a0b0b",
+      "tiefe": "#161819",
+      "akzent": "#dbe8ee",
+      "sand": "#dddfc6",
+      "moos": "#b7e4c1",
+      "ozean": "#92c8eb",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#5a6367"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Astronomie"
+      ],
+      [
+        "Planet",
+        "Mutterplanet"
+      ],
+      [
+        "Kräfte",
+        "Gezeiten"
+      ],
+      [
+        "Tiefe",
+        "Geologie"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Mutterplanet": {
+      "gruppe": "Wissenschaft",
+      "icon": "◐",
+      "intro": "Mutterplanet von Sirel.",
+      "abschnitte": [
+        {
+          "titel": "Urakan",
+          "text": [
+            "Urakan ist ein Gasriese mit 0,65 Jupitermassen, farbigen Wolkenbändern und dem langlebigen Großen Wirbel. Eine ausgedehnte Magnetosphäre, schmale Staub- und Gesteinsringe und vier größere Monde umgeben ihn."
+          ],
+          "daten": [
+            [
+              "Typ",
+              "Gasriese"
+            ],
+            [
+              "Durchmesser",
+              "134.400 km"
+            ],
+            [
+              "Abstand des Mondes",
+              "524.036 km (7,8 Planetenradien)"
+            ]
+          ],
+          "verweise": [
+            [
+              "Urakan",
+              "inhalte/himmelskoerper/planeten/details/urakan/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Weitere Monde von Urakan",
+          "liste": [
+            "Nair – Umlauf in 36,5 Stunden",
+            "Valdor – Umlauf in 6,1 Tage",
+            "Erym – Umlauf in 19,5 Tage"
+          ],
+          "verweise": [
+            [
+              "Nair",
+              "inhalte/himmelskoerper/monde/details/nair/hauptseite/index.html"
+            ],
+            [
+              "Valdor",
+              "inhalte/himmelskoerper/monde/details/valdor/hauptseite/index.html"
+            ],
+            [
+              "Erym",
+              "inhalte/himmelskoerper/monde/details/erym/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Gezeiten": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gezeiten von Sirel.",
+      "abschnitte": [
+        {
+          "titel": "Gezeitenkräfte",
+          "text": [
+            "Auf seiner Bahn in 524.036 km Abstand wirken starke Gezeitenkräfte von Urakan auf Sirel."
+          ]
+        }
+      ]
+    },
+    "Gebundene Rotation": {
+      "gruppe": "Wissenschaft",
+      "icon": "↻",
+      "intro": "Gebundene Rotation von Sirel.",
+      "abschnitte": [
+        {
+          "titel": "Rotation",
+          "text": [
+            "Sirel wendet Urakan vermutlich stets dieselbe Seite zu: Ein Tag dauert so lange wie ein Umlauf – 3 Tage."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Sirel auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Sirel",
+          "text": [
+            "Sirel ist ein eisiger Ozeanmond mit großen Risssystemen. Unter der Eisoberfläche könnte ein salzhaltiger Ozean liegen – ein besonders interessanter Kandidat für mögliche unterirdische Lebensräume.",
+            "Sirel umkreist Urakan in 3 Tage."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Mond"
+            ],
+            [
+              "Sternsystem",
+              "Terev-System"
+            ],
+            [
+              "Zentralkörper",
+              "Urakan"
+            ],
+            [
+              "Große Halbachse",
+              "524.036 km"
+            ],
+            [
+              "Umlaufzeit",
+              "3 Tage"
+            ],
+            [
+              "Durchmesser",
+              "3.000 km"
+            ],
+            [
+              "Masse",
+              "0,65 Mondmassen"
+            ],
+            [
+              "Schwerkraft",
+              "0,14 g"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -159 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Nerath",
+          "text": [
+            "Das Terev-System ist die Heimat der Synaptoiden: Ihr Planet Nerath umkreist Terev."
+          ],
+          "verweise": [
+            [
+              "Nerath",
+              "inhalte/himmelskoerper/planeten/details/nerath/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Synaptoiden",
+              "inhalte/spezies/Mentale Spezies/Synaptoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Sirel im Terev-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Urakan"
+            ],
+            [
+              "Große Halbachse",
+              "524.036 km"
+            ],
+            [
+              "Exzentrizität",
+              "0,009"
+            ],
+            [
+              "Bahnneigung",
+              "0,4°"
+            ],
+            [
+              "Umlaufzeit",
+              "3 Tage"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Terev · Stern",
+              "Orangegelber Zwerg (K0 V)"
+            ],
+            [
+              "Vaskir · 0,16 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Sereth · 0,42 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Nerath · 0,93 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Talvek · 1,57 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Urakan · 4,4 AE",
+              "Gasriese"
+            ],
+            [
+              "Oryss · 9,3 AE",
+              "Eisriese"
+            ],
+            [
+              "Veyl · 22,8 AE",
+              "Eisplanet"
+            ],
+            [
+              "Relt · 44 AE",
+              "Zwergplanet"
+            ],
+            [
+              "Othir · 52 AE",
+              "Zwergplanet"
+            ],
+            [
+              "Skalenband · 2,2–3,2 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Taren-Saum · 38–65 AE",
+              "Kleinkörpergürtel"
+            ],
+            [
+              "Terev-Fernwolke · 1.500–8.000 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Terev",
+              "inhalte/himmelskoerper/sterne/details/terev/hauptseite/index.html"
+            ],
+            [
+              "Vaskir",
+              "inhalte/himmelskoerper/planeten/details/vaskir/hauptseite/index.html"
+            ],
+            [
+              "Sereth",
+              "inhalte/himmelskoerper/planeten/details/sereth/hauptseite/index.html"
+            ],
+            [
+              "Nerath",
+              "inhalte/himmelskoerper/planeten/details/nerath/hauptseite/index.html"
+            ],
+            [
+              "Talvek",
+              "inhalte/himmelskoerper/planeten/details/talvek/hauptseite/index.html"
+            ],
+            [
+              "Urakan",
+              "inhalte/himmelskoerper/planeten/details/urakan/hauptseite/index.html"
+            ],
+            [
+              "Oryss",
+              "inhalte/himmelskoerper/planeten/details/oryss/hauptseite/index.html"
+            ],
+            [
+              "Veyl",
+              "inhalte/himmelskoerper/planeten/details/veyl/hauptseite/index.html"
+            ],
+            [
+              "Relt",
+              "inhalte/himmelskoerper/zwergplaneten/details/relt/hauptseite/index.html"
+            ],
+            [
+              "Othir",
+              "inhalte/himmelskoerper/zwergplaneten/details/othir/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Sirel.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "1.500 km"
+            ],
+            [
+              "Masse",
+              "0,65 Mondmassen"
+            ],
+            [
+              "Mittlere Dichte",
+              "3,38 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "1,42 m/s² (0,144 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "2,06 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Sirel.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Sirel ist geologisch weitgehend erstarrt; Einschläge haben seine Oberfläche geformt."
+          ]
+        },
+        {
+          "titel": "Unterirdischer Ozean",
+          "text": [
+            "Unter der Eisoberfläche Sirels könnte ein salzhaltiger Wasserozean liegen, den Gezeitenreibung teilweise erwärmt. Eisfontänen entlang tiefer Risse sind eine wissenschaftliche Möglichkeit, aber kein bestätigtes Dauerereignis. Das Vorhandensein von Leben ist nicht festgelegt."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Sirel.",
+      "abschnitte": [
+        {
+          "titel": "Gashülle",
+          "text": [
+            "Sirel besitzt keine nennenswerte Atmosphäre – dafür ist die Schwerkraft zu gering."
+          ]
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Sirel.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 4,4 AE Abstand zu Terev liegt die Gleichgewichtstemperatur von Sirel bei rund -159 °C – eisig kalt."
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Sirel.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Sirel entstand zusammen mit dem Terev-System vor rund 5,6 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Sirel.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Ist der Mond eingefangen oder mit seinem Planeten entstanden?",
+            "Welche Spuren tragen seine ältesten Krater?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Sirel ist mit allen Bahndaten im Terev-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=nerath-stern&objekt=nerath-sirel"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Sirel.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Sirel ist ein eisiger Ozeanmond mit großen Risssystemen. Unter der Eisoberfläche könnte ein salzhaltiger Ozean liegen – ein besonders interessanter Kandidat für mögliche unterirdische Lebensräume."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Sirel.",
+      "abschnitte": [
+        {
+          "titel": "Sirel – Archivbild",
+          "bild": true,
+          "bildtext": "Sirel"
+        }
+      ]
+    }
+  }
+}

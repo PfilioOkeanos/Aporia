@@ -55,7 +55,7 @@ const knoten = [
         "belohnung": {
             "art": "gegenstand",
             "name": "Mechanische Eigenschaften Schwingungen",
-            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/OzeanWelt/erde-im-sternenmeer/unterseiten/ERDE_BILDER/Physik/12%20%E2%80%93%20Mechanische%20Eigenschaften%20&%20Schwingungen/12_Mechanische_Eigenschaften_Schwingungen.jpg"
+            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/OzeanWelt/erde/unterseiten/ERDE_BILDER/Physik/12%20%E2%80%93%20Mechanische%20Eigenschaften%20&%20Schwingungen/12_Mechanische_Eigenschaften_Schwingungen.jpg"
         }
     },
     {
@@ -69,7 +69,7 @@ const knoten = [
         "belohnung": {
             "art": "gegenstand",
             "name": "Cyrava die mechanische weltraumharfe",
-            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/synthetische_planetenwesen/cyrava-die-mechanische-weltraumharfe/hauptseite/cyrava-die-mechanische-weltraumharfe-75cb4d8c231f.jpg"
+            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/synthetische_planetenwesen/cyrava/hauptseite/cyrava-die-mechanische-weltraumharfe-75cb4d8c231f.jpg"
         }
     },
     {

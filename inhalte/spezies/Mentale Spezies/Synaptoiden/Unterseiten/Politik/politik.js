@@ -1,2 +1,3 @@
-// Synaptoiden – Politik · erzeugt vom Spezies-Baukasten (scripts/spezies) – Änderungen dort vornehmen
+// Synaptoiden – Politik
+// Gemeinsame Funktionen (Topbar, Sidebar, Routen, Klappkapitel, Bildkarussell) kommen aus der Basis.
 import "../../synaptoiden-basis.js";

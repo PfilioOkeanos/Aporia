@@ -1,0 +1,191 @@
+{
+  "systemName": "Esvar-System",
+  "praefix": "esvar-",
+  "lage": {
+    "entfernungLj": 47,
+    "richtung": [
+      0.54,
+      -0.82,
+      0.31
+    ]
+  },
+  "einzelstern": true,
+  "stern": {
+    "id": "esvar-stern",
+    "name": "Esvar",
+    "typ": "Orangefarbener Hauptreihenstern (K2 V)",
+    "masseSonne": 0.82,
+    "radiusSonne": 0.78,
+    "leuchtkraftSonne": 0.37,
+    "temperaturK": 5100,
+    "alterMrd": 5.4,
+    "farbe": [
+      1,
+      0.75,
+      0.48
+    ],
+    "emissionsfarbe": [
+      1,
+      0.78,
+      0.5
+    ],
+    "emission": 1.1,
+    "bild": {
+      "art": "sterne",
+      "slug": "uv-ceti-stern-mit-blauem-flare"
+    },
+    "beschreibung": "Esvar beleuchtet Neraveth mit rund 93 Prozent der Strahlungsleistung, die auf die Erde trifft. Kheravische Beobachter vergleichen die saisonale Rückkehr der Regenfronten mit dem örtlichen Sternjahr."
+  },
+  "koerper": [
+    {
+      "id": "esvar-vask",
+      "name": "Vask",
+      "typ": "Gesteinsplanet",
+      "um": "esvar-stern",
+      "aAE": 0.28,
+      "masseErde": 0.43,
+      "radiusKm": 4830,
+      "e": 0.01,
+      "i": 0,
+      "knoten": 0,
+      "peri": 0,
+      "phase": 0,
+      "albedo": 0.28,
+      "farbe": [
+        0.65,
+        0.45,
+        0.32
+      ],
+      "bild": {
+        "art": "planeten",
+        "slug": "wustenplanet-mit-uralten-flusskanalen"
+      },
+      "beschreibung": "Helle Salzpfannen zeichnen einstige Abflussbecken nach. Im Schatten der Kraterwände sind ältere Sedimentschichten erhalten, während Staub die offenen Hochflächen abschleift. Vask ist die Heimat- und Hauptwelt der Autokonstrukte. Ihr zentraler Werkstadtverbund Tessar liegt in den alten Rinnen."
+    },
+    {
+      "id": "esvar-neraveth",
+      "name": "Neraveth",
+      "typ": "Gesteinsplanet",
+      "um": "esvar-stern",
+      "aAE": 0.63,
+      "masseErde": 0.94,
+      "radiusKm": 6435,
+      "e": 0.01,
+      "i": 0.31,
+      "knoten": 18,
+      "peri": 32,
+      "phase": 47,
+      "albedo": 0.28,
+      "farbe": [
+        0.28,
+        0.59,
+        0.59
+      ],
+      "bild": {
+        "art": "planeten",
+        "slug": "blauer-ozeanplanet-mit-kleinem-kontinent"
+      },
+      "beschreibung": "Die Heimat der Kheravi besitzt ausgedehnte Schelfmeere und saisonal überflutete Ebenen. Regenfronten bestimmen, wann die großen Raukhen-Herden ihre Weidegründe wechseln."
+    },
+    {
+      "id": "esvar-ithrel",
+      "name": "Ithrel",
+      "typ": "Felsmond",
+      "um": "esvar-neraveth",
+      "periodeTage": 12,
+      "masseErde": 0.0031,
+      "radiusKm": 1170,
+      "e": 0.01,
+      "i": 0.62,
+      "knoten": 36,
+      "peri": 64,
+      "phase": 94,
+      "albedo": 0.28,
+      "farbe": [
+        0.62,
+        0.58,
+        0.53
+      ],
+      "bild": {
+        "art": "monde",
+        "slug": "aufgerissener-mond-mit-dunklem-metallkern"
+      },
+      "beschreibung": "Ein tiefer Einschlag legte dunkle metallreiche Schichten frei. Die helle Auswurfdecke bildet einen Bogen, den Beobachter auf Neraveth als Landmarke bei der Kartierung verwenden."
+    },
+    {
+      "id": "esvar-sovar",
+      "name": "Sovar",
+      "typ": "Asteroid",
+      "um": "esvar-stern",
+      "aAE": 1.48,
+      "masseErde": 1.1e-7,
+      "radiusKm": 36,
+      "e": 0.01,
+      "i": 0.9299999999999999,
+      "knoten": 54,
+      "peri": 96,
+      "phase": 141,
+      "albedo": 0.28,
+      "farbe": [
+        0.65,
+        0.44,
+        0.28
+      ],
+      "bild": {
+        "art": "asteroiden",
+        "slug": "facettierter-pyroxenasteroid-im-all"
+      },
+      "beschreibung": "An Sovars kantigen Bruchflächen tritt Pyroxen zutage. Seine geneigten Staubterrassen sammeln Material, das nach kleinen Einschlägen wieder auf die Oberfläche fällt."
+    },
+    {
+      "id": "esvar-velun",
+      "name": "Velun",
+      "typ": "Gasriese",
+      "um": "esvar-stern",
+      "aAE": 3.7,
+      "masseErde": 68,
+      "radiusKm": 43700,
+      "e": 0.01,
+      "i": 1.24,
+      "knoten": 72,
+      "peri": 128,
+      "phase": 188,
+      "albedo": 0.28,
+      "farbe": [
+        0.46,
+        0.44,
+        0.7
+      ],
+      "bild": {
+        "art": "planeten",
+        "slug": "kompakter-indigo-gasriese-mit-silberbandern"
+      },
+      "beschreibung": "Silberhelle Wolkenbänder rahmen die indigofarbenen Breiten ein. Ihre Verschiebung zwischen zwei Beobachtungen verrät die gegenläufigen Winde der oberen Atmosphäre."
+    },
+    {
+      "id": "esvar-nen",
+      "name": "Nen",
+      "typ": "Kleinmond",
+      "um": "esvar-velun",
+      "periodeTage": 5.5,
+      "masseErde": 2e-7,
+      "radiusKm": 54,
+      "e": 0.01,
+      "i": 1.55,
+      "knoten": 90,
+      "peri": 160,
+      "phase": 235,
+      "albedo": 0.28,
+      "farbe": [
+        0.65,
+        0.45,
+        0.32
+      ],
+      "bild": {
+        "art": "monde",
+        "slug": "doppellobiger-kontaktmond-im-all"
+      },
+      "beschreibung": "Zwei ungleiche Gesteinslappen berühren sich an einem schmalen Hals. Feinkörniger Staub sammelt sich in dieser Senke und zeichnet sie als helles Band nach."
+    }
+  ]
+}

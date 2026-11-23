@@ -1,0 +1,16 @@
+@import url("../Geschichte/geschichte.css");
+
+/* Waldfeen · Technologien – Aufbau wie Politik (geschichte.css), eigene Ergänzungen */
+.wf-technik-title, .wf-technik-intro { min-width: 0; }
+.wf-technik-intro { display: grid; grid-template-columns: minmax(0, 38%) minmax(0, 1fr); gap: 1rem; align-items: center; }
+.wf-technik-intro img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 10px; }
+.wf-history-page .wf-bio-card li { display: list-item; border: 0; padding: .1rem 0; }
+@media (max-width: 730px) {
+    .wf-technik-intro { grid-template-columns: minmax(0, 1fr); }
+}
+
+/* Karten ohne Bild: einspaltig; Titel und Schnelldaten ohne Worttrennung */
+.wf-technik-page .wf-bio-detail .wf-bio-card { display: block; }
+.wf-technik-page .wf-bio-detail .wf-bio-card h3 { margin: 0 0 .5rem; }
+.wf-technik-title h1 { font-size: clamp(2.2rem, 4.2vw, 3.4rem); overflow-wrap: normal; word-break: normal; }
+.wf-technik-page .wf-bio-facts dt, .wf-technik-page .wf-bio-facts dd { overflow-wrap: normal; word-break: normal; }

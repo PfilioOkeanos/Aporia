@@ -1,7 +1,7 @@
 @import url("../Biologie/biologie.css");
 
 .hh-layout {
-    grid-template-areas: "nav title title" "nav content side" "summary summary summary" "detail detail detail";
+    grid-template-areas: "kopf kopf kopf" "nav title title" "nav content side" "summary summary summary" "detail detail detail";
     background: radial-gradient(ellipse at 65% 15%, #17455b70, transparent 58%);
 }
 
@@ -81,10 +81,10 @@
 .hh-card li::marker, .hh-card dt { color: var(--archive-accent); }
 
 @media (max-width: 1050px) {
-    .hh-layout { grid-template-areas: "title title" "nav nav" "content side" "summary summary" "detail detail"; }
+    .hh-layout { grid-template-areas: "kopf kopf" "title title" "nav nav" "content side" "summary summary" "detail detail"; }
 }
 
 @media (max-width: 680px) {
-    .hh-layout { grid-template-areas: "title" "nav" "content" "side" "summary" "detail"; }
+    .hh-layout { grid-template-areas: "kopf" "title" "nav" "content" "side" "summary" "detail"; }
     .hh-title, .hh-detail-grid, .hh-detail-grid .hh-illustrated { grid-template-columns: minmax(0, 1fr); }
 }

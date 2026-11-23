@@ -1,0 +1,482 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Ithel",
+  "genitiv": "von Ithel",
+  "dossierName": "Ithel-Dossier",
+  "klasse": "Mond",
+  "intro": "Ithel ist der größte Eismond Jandors. Lange, bläuliche Risse durchziehen seine Eiskruste – Hinweise auf Spannungen über einem möglichen tiefen Wasserozean. Ithel umkreist Jandor in 4,2 Tage.",
+  "globusDaten": {
+    "planet": "eisiger-zwergplanet-mit-ozeanrissen",
+    "klasse": "Gestein",
+    "radius": 1650000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=veyruna-stern&objekt=veyruna-ithel",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-52BEADDE11"
+    ],
+    [
+      "Typ",
+      "Mond"
+    ],
+    [
+      "Sternsystem",
+      "Orelis-System"
+    ],
+    [
+      "Zentralkörper",
+      "Jandor"
+    ],
+    [
+      "Große Halbachse",
+      "632.149 km"
+    ],
+    [
+      "Umlaufzeit",
+      "4,2 Tage"
+    ],
+    [
+      "Durchmesser",
+      "3.300 km"
+    ],
+    [
+      "Masse",
+      "0,976 Mondmassen"
+    ],
+    [
+      "Schwerkraft",
+      "0,18 g"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -160 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Orelis-System"
+    ],
+    [
+      "Zentralstern",
+      "Orelis",
+      "inhalte/himmelskoerper/sterne/details/orelis/hauptseite/index.html"
+    ],
+    [
+      "Umläuft",
+      "Jandor",
+      "inhalte/himmelskoerper/planeten/details/jandor/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "632.149 km"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Ithel im Orelis-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=veyruna-stern&objekt=veyruna-ithel",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Orelis",
+      "href": "inhalte/himmelskoerper/sterne/details/orelis/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◍",
+      "art": "Mutterplanet",
+      "titel": "Jandor",
+      "href": "inhalte/himmelskoerper/planeten/details/jandor/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Echonoiden",
+      "titel": "Veyruna",
+      "href": "inhalte/himmelskoerper/planeten/details/veyruna/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Echonoiden",
+      "href": "inhalte/spezies/Mentale Spezies/Echonoiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Orelis-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=veyruna-stern&objekt=veyruna-ithel"
+    },
+    {
+      "titel": "Speziesdossier Echonoiden",
+      "href": "inhalte/spezies/Mentale Spezies/Echonoiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#0a0b0b",
+      "tiefe": "#171819",
+      "akzent": "#e1e8eb",
+      "sand": "#e3dfc4",
+      "moos": "#bde4be",
+      "ozean": "#97c8e7",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#5e6365"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Astronomie"
+      ],
+      [
+        "Planet",
+        "Mutterplanet"
+      ],
+      [
+        "Kräfte",
+        "Gezeiten"
+      ],
+      [
+        "Tiefe",
+        "Geologie"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Ithel auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Ithel",
+          "text": [
+            "Ithel ist der größte Eismond Jandors. Lange, bläuliche Risse durchziehen seine Eiskruste – Hinweise auf Spannungen über einem möglichen tiefen Wasserozean.",
+            "Ithel umkreist Jandor in 4,2 Tage."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Mond"
+            ],
+            [
+              "Sternsystem",
+              "Orelis-System"
+            ],
+            [
+              "Zentralkörper",
+              "Jandor"
+            ],
+            [
+              "Große Halbachse",
+              "632.149 km"
+            ],
+            [
+              "Umlaufzeit",
+              "4,2 Tage"
+            ],
+            [
+              "Durchmesser",
+              "3.300 km"
+            ],
+            [
+              "Masse",
+              "0,976 Mondmassen"
+            ],
+            [
+              "Schwerkraft",
+              "0,18 g"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -160 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Veyruna",
+          "text": [
+            "Das Orelis-System ist die Heimat der Echonoiden: Ihr Planet Veyruna umkreist Orelis."
+          ],
+          "verweise": [
+            [
+              "Veyruna",
+              "inhalte/himmelskoerper/planeten/details/veyruna/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Echonoiden",
+              "inhalte/spezies/Mentale Spezies/Echonoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Ithel im Orelis-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Jandor"
+            ],
+            [
+              "Große Halbachse",
+              "632.149 km"
+            ],
+            [
+              "Exzentrizität",
+              "0,004"
+            ],
+            [
+              "Bahnneigung",
+              "0,3°"
+            ],
+            [
+              "Umlaufzeit",
+              "4,2 Tage"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Orelis · Stern",
+              "Orangefarbener Zwerg (K1 V)"
+            ],
+            [
+              "Seran · 0,16 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Mirvek · 0,35 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Veyruna · 0,68 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Koras · 1,18 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Jandor · 3,7 AE",
+              "Gasriese"
+            ],
+            [
+              "Veltos · 6,5 AE",
+              "Eisriese"
+            ],
+            [
+              "Innerer Asteroidengürtel · 1,7–2,4 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußerer Kleinkörpergürtel · 15–33 AE",
+              "Kleinkörpergürtel"
+            ]
+          ],
+          "verweise": [
+            [
+              "Orelis",
+              "inhalte/himmelskoerper/sterne/details/orelis/hauptseite/index.html"
+            ],
+            [
+              "Seran",
+              "inhalte/himmelskoerper/planeten/details/seran/hauptseite/index.html"
+            ],
+            [
+              "Mirvek",
+              "inhalte/himmelskoerper/planeten/details/mirvek/hauptseite/index.html"
+            ],
+            [
+              "Veyruna",
+              "inhalte/himmelskoerper/planeten/details/veyruna/hauptseite/index.html"
+            ],
+            [
+              "Koras",
+              "inhalte/himmelskoerper/planeten/details/koras/hauptseite/index.html"
+            ],
+            [
+              "Jandor",
+              "inhalte/himmelskoerper/planeten/details/jandor/hauptseite/index.html"
+            ],
+            [
+              "Veltos",
+              "inhalte/himmelskoerper/planeten/details/veltos/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Ithel.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "1.650 km"
+            ],
+            [
+              "Masse",
+              "0,976 Mondmassen"
+            ],
+            [
+              "Mittlere Dichte",
+              "3,81 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "1,76 m/s² (0,179 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "2,41 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Planetare Struktur": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Planetare Struktur von Ithel.",
+      "abschnitte": [
+        {
+          "titel": "Schalenbau",
+          "schichten": [
+            [
+              "Kruste",
+              "Silikatgestein"
+            ],
+            [
+              "Mantel",
+              "Dichteres Silikatgestein"
+            ],
+            [
+              "Kern",
+              "Eisen und Nickel"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Ithel.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Ithel ist geologisch weitgehend erstarrt; Einschläge haben seine Oberfläche geformt."
+          ]
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Ithel.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 3,7 AE Abstand zu Orelis liegt die Gleichgewichtstemperatur von Ithel bei rund -160 °C – eisig kalt."
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Ithel.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Ithel entstand zusammen mit dem Orelis-System vor rund 6 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Ithel.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Ist der Mond eingefangen oder mit seinem Planeten entstanden?",
+            "Welche Spuren tragen seine ältesten Krater?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Ithel ist mit allen Bahndaten im Orelis-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=veyruna-stern&objekt=veyruna-ithel"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Ithel.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Größter Mond von Jandor"
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Ithel.",
+      "abschnitte": [
+        {
+          "titel": "Ithel – Archivbild",
+          "bild": true,
+          "bildtext": "Ithel"
+        }
+      ]
+    }
+  }
+}

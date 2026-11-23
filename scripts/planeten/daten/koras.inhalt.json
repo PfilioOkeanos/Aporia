@@ -1,0 +1,640 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Koras",
+  "genitiv": "von Koras",
+  "dossierName": "Koras-Dossier",
+  "klasse": "Gesteinsplanet",
+  "intro": "Koras ist eine kalte felsige Welt mit bedeutenden Eisvorkommen – gefrorene Ebenen, felsige Hochländer, Einschlagsbecken und alte vulkanische Formationen. Unterirdische Wasser- oder Salzreservoire sind eine offene Forschungsfrage. Koras umkreist Orelis in 1,18 AE Abstand und braucht für einen Umlauf 523,5 Tage.",
+  "globusDaten": {
+    "planet": "undifferenzierter-eisplanet-aus-fels-und-eis",
+    "klasse": "Gestein",
+    "radius": 5400000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=veyruna-stern&objekt=veyruna-koras",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-183415F7F9"
+    ],
+    [
+      "Typ",
+      "Gesteinsplanet"
+    ],
+    [
+      "Sternsystem",
+      "Orelis-System"
+    ],
+    [
+      "Zentralkörper",
+      "Orelis"
+    ],
+    [
+      "Große Halbachse",
+      "1,18 AE"
+    ],
+    [
+      "Umlaufzeit",
+      "523,5 Tage"
+    ],
+    [
+      "Durchmesser",
+      "10.800 km"
+    ],
+    [
+      "Masse",
+      "0,55 Erdmassen"
+    ],
+    [
+      "Schwerkraft",
+      "0,77 g"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -95 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Orelis-System"
+    ],
+    [
+      "Zentralstern",
+      "Orelis",
+      "inhalte/himmelskoerper/sterne/details/orelis/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "1,18 AE"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Koras im Orelis-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=veyruna-stern&objekt=veyruna-koras",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Orelis",
+      "href": "inhalte/himmelskoerper/sterne/details/orelis/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Echonoiden",
+      "titel": "Veyruna",
+      "href": "inhalte/himmelskoerper/planeten/details/veyruna/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Echonoiden",
+      "href": "inhalte/spezies/Mentale Spezies/Echonoiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Orelis-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=veyruna-stern&objekt=veyruna-koras"
+    },
+    {
+      "titel": "Speziesdossier Echonoiden",
+      "href": "inhalte/spezies/Mentale Spezies/Echonoiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#090a0a",
+      "tiefe": "#151516",
+      "akzent": "#d4d7de",
+      "sand": "#d7d1bc",
+      "moos": "#b1d1b3",
+      "ozean": "#8eb7d6",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#55575c"
+    }
+  },
+  "kapitel": {
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Koras auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Koras",
+          "text": [
+            "Koras ist eine kalte felsige Welt mit bedeutenden Eisvorkommen – gefrorene Ebenen, felsige Hochländer, Einschlagsbecken und alte vulkanische Formationen. Unterirdische Wasser- oder Salzreservoire sind eine offene Forschungsfrage.",
+            "Koras umkreist Orelis in 1,18 AE Abstand und braucht für einen Umlauf 523,5 Tage."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Gesteinsplanet"
+            ],
+            [
+              "Sternsystem",
+              "Orelis-System"
+            ],
+            [
+              "Zentralkörper",
+              "Orelis"
+            ],
+            [
+              "Große Halbachse",
+              "1,18 AE"
+            ],
+            [
+              "Umlaufzeit",
+              "523,5 Tage"
+            ],
+            [
+              "Durchmesser",
+              "10.800 km"
+            ],
+            [
+              "Masse",
+              "0,55 Erdmassen"
+            ],
+            [
+              "Schwerkraft",
+              "0,77 g"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -95 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Veyruna",
+          "text": [
+            "Das Orelis-System ist die Heimat der Echonoiden: Ihr Planet Veyruna umkreist Orelis."
+          ],
+          "verweise": [
+            [
+              "Veyruna",
+              "inhalte/himmelskoerper/planeten/details/veyruna/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Echonoiden",
+              "inhalte/spezies/Mentale Spezies/Echonoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Koras im Orelis-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Orelis"
+            ],
+            [
+              "Große Halbachse",
+              "1,18 AE (176,5 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,05"
+            ],
+            [
+              "Bahnneigung",
+              "1,7°"
+            ],
+            [
+              "Umlaufzeit",
+              "523,5 Tage"
+            ],
+            [
+              "Einstrahlung",
+              "0,302-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Am Himmel von Koras",
+          "text": [
+            "Orelis erscheint von hier aus etwa 0,38° groß (die Sonne von der Erde: 0,53°)."
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Orelis · Stern",
+              "Orangefarbener Zwerg (K1 V)"
+            ],
+            [
+              "Seran · 0,16 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Mirvek · 0,35 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Veyruna · 0,68 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Koras · 1,18 AE · dieses Dossier",
+              "Gesteinsplanet"
+            ],
+            [
+              "Jandor · 3,7 AE",
+              "Gasriese"
+            ],
+            [
+              "Veltos · 6,5 AE",
+              "Eisriese"
+            ],
+            [
+              "Innerer Asteroidengürtel · 1,7–2,4 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußerer Kleinkörpergürtel · 15–33 AE",
+              "Kleinkörpergürtel"
+            ]
+          ],
+          "verweise": [
+            [
+              "Orelis",
+              "inhalte/himmelskoerper/sterne/details/orelis/hauptseite/index.html"
+            ],
+            [
+              "Seran",
+              "inhalte/himmelskoerper/planeten/details/seran/hauptseite/index.html"
+            ],
+            [
+              "Mirvek",
+              "inhalte/himmelskoerper/planeten/details/mirvek/hauptseite/index.html"
+            ],
+            [
+              "Veyruna",
+              "inhalte/himmelskoerper/planeten/details/veyruna/hauptseite/index.html"
+            ],
+            [
+              "Jandor",
+              "inhalte/himmelskoerper/planeten/details/jandor/hauptseite/index.html"
+            ],
+            [
+              "Veltos",
+              "inhalte/himmelskoerper/planeten/details/veltos/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Koras.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "5.400 km"
+            ],
+            [
+              "Masse",
+              "0,55 Erdmassen"
+            ],
+            [
+              "Mittlere Dichte",
+              "4,98 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "7,51 m/s² (0,766 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "9,01 km/s"
+            ]
+          ],
+          "vergleich": {
+            "mit": "Erde",
+            "werte": [
+              [
+                "Durchmesser",
+                10800,
+                12742,
+                "km"
+              ],
+              [
+                "Masse",
+                0.55,
+                1,
+                "Erdmassen"
+              ],
+              [
+                "Schwerkraft",
+                0.77,
+                1,
+                "g"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "Planetare Struktur": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Planetare Struktur von Koras.",
+      "abschnitte": [
+        {
+          "titel": "Schalenbau",
+          "schichten": [
+            [
+              "Kruste",
+              "Silikatgestein"
+            ],
+            [
+              "Mantel",
+              "Dichteres Silikatgestein"
+            ],
+            [
+              "Kern",
+              "Eisen und Nickel"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geografie": {
+      "gruppe": "Natur",
+      "icon": "△",
+      "intro": "Geografie von Koras.",
+      "abschnitte": [
+        {
+          "titel": "Oberfläche",
+          "text": [
+            "Die Oberfläche von Koras ist kalt."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Koras.",
+      "abschnitte": [
+        {
+          "titel": "Gashülle",
+          "text": [
+            "Koras hält eine dünne, kalte Gashülle fest."
+          ],
+          "balken": {
+            "werte": [
+              [
+                "Kohlendioxid",
+                62
+              ],
+              [
+                "Stickstoff",
+                33
+              ],
+              [
+                "Argon",
+                5
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Koras.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 1,18 AE Abstand zu Orelis liegt die Gleichgewichtstemperatur von Koras bei rund -95 °C – kalt."
+          ]
+        }
+      ]
+    },
+    "Gewässer": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gewässer von Koras.",
+      "abschnitte": [
+        {
+          "titel": "Wasser",
+          "text": [
+            "Wasser gibt es höchstens als Eis in Kratern und im Untergrund."
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Koras.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Koras ist groß genug, um im Inneren noch Wärme zu speichern; Spuren alter vulkanischer Tätigkeit sind wahrscheinlich."
+          ]
+        }
+      ]
+    },
+    "Biosphäre": {
+      "gruppe": "Natur",
+      "icon": "❧",
+      "intro": "Biosphäre von Koras.",
+      "abschnitte": [
+        {
+          "titel": "Leben",
+          "text": [
+            "Auf Koras ist kein Leben verzeichnet."
+          ]
+        }
+      ]
+    },
+    "Spezies": {
+      "gruppe": "Zivilisation",
+      "icon": "✿",
+      "intro": "Spezies von Koras.",
+      "abschnitte": [
+        {
+          "titel": "Bewohner",
+          "text": [
+            "Koras ist keine Heimat einer intelligenten Spezies."
+          ]
+        },
+        {
+          "titel": "Im System von Veyruna",
+          "text": [
+            "Das Orelis-System ist die Heimat der Echonoiden: Ihr Planet Veyruna umkreist Orelis."
+          ],
+          "verweise": [
+            [
+              "Veyruna",
+              "inhalte/himmelskoerper/planeten/details/veyruna/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Echonoiden",
+              "inhalte/spezies/Mentale Spezies/Echonoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Zivilisation": {
+      "gruppe": "Zivilisation",
+      "icon": "▥",
+      "intro": "Zivilisation von Koras.",
+      "abschnitte": [
+        {
+          "titel": "Siedlungen",
+          "text": [
+            "Für Koras sind keine dauerhaften Siedlungen verzeichnet."
+          ]
+        },
+        {
+          "titel": "Im System von Veyruna",
+          "text": [
+            "Das Orelis-System ist die Heimat der Echonoiden: Ihr Planet Veyruna umkreist Orelis."
+          ],
+          "verweise": [
+            [
+              "Veyruna",
+              "inhalte/himmelskoerper/planeten/details/veyruna/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Echonoiden",
+              "inhalte/spezies/Mentale Spezies/Echonoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Koras.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Koras entstand zusammen mit dem Orelis-System vor rund 6 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Fraktionen": {
+      "gruppe": "Zivilisation",
+      "icon": "◇",
+      "intro": "Fraktionen von Koras.",
+      "abschnitte": [
+        {
+          "titel": "Ansprüche",
+          "text": [
+            "Für Koras sind keine Fraktionsansprüche verzeichnet."
+          ]
+        }
+      ]
+    },
+    "Rohstoffe": {
+      "gruppe": "Weitere",
+      "icon": "⬡",
+      "intro": "Rohstoffe von Koras.",
+      "abschnitte": [
+        {
+          "titel": "Rohstoffe",
+          "liste": [
+            "Silikatgestein",
+            "Metallerze"
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Koras.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Wie ist der innere Aufbau beschaffen?",
+            "Gab es früher eine dichtere Atmosphäre?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Koras ist mit allen Bahndaten im Orelis-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=veyruna-stern&objekt=veyruna-koras"
+            ]
+          ]
+        },
+        {
+          "titel": "Forschungsmissionen",
+          "text": [
+            "Die geringe Umweltfreundlichkeit von Koras erfordert technische Schutzräume für wissenschaftliche Missionen. Unterirdische Wasser- oder Salzreservoire sind als Forschungsfrage möglich, aber nicht bestätigt."
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Koras.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Koras ist eine kalte felsige Welt mit bedeutenden Eisvorkommen – gefrorene Ebenen, felsige Hochländer, Einschlagsbecken und alte vulkanische Formationen. Unterirdische Wasser- oder Salzreservoire sind eine offene Forschungsfrage."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Koras.",
+      "abschnitte": [
+        {
+          "titel": "Koras – Archivbild",
+          "bild": true,
+          "bildtext": "Koras"
+        }
+      ]
+    }
+  }
+}

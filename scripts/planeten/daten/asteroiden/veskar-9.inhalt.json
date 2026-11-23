@@ -1,0 +1,489 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Veskar-9",
+  "genitiv": "von Veskar-9",
+  "dossierName": "Veskar-9-Dossier",
+  "klasse": "Dunkler Kleinkörper",
+  "intro": "Ein kleiner dunkler Körper mit ungewöhnlich alter, wenig veränderter Oberfläche.",
+  "globusDaten": {
+    "planet": "veskar-9",
+    "klasse": "Eis",
+    "radius": 24000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=rhaelis-stern&objekt=rhaelis-veskar-9",
+  "grunddaten": [
+    [
+      "System-ID",
+      "rhaelis-veskar-9"
+    ],
+    [
+      "Archiv-ID",
+      "AP-RHAELIS-VESKAR-9"
+    ],
+    [
+      "Typ",
+      "Dunkler Kleinkörper"
+    ],
+    [
+      "Sternsystem",
+      "Rhaelis-System"
+    ],
+    [
+      "Zentralkörper",
+      "Rhaelis"
+    ],
+    [
+      "Große Halbachse",
+      "31 AE"
+    ],
+    [
+      "Umlaufzeit",
+      "191,8 Jahre"
+    ],
+    [
+      "Durchmesser",
+      "48 km"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -236 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Rhaelis-System"
+    ],
+    [
+      "Zentralstern",
+      "Rhaelis",
+      "inhalte/himmelskoerper/sterne/details/rhaelis/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "31 AE"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Veskar-9 im Rhaelis-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=rhaelis-stern&objekt=rhaelis-veskar-9",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Rhaelis",
+      "href": "inhalte/himmelskoerper/sterne/details/rhaelis/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Memetiden",
+      "titel": "Tavoryn",
+      "href": "inhalte/himmelskoerper/planeten/details/tavoryn/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Memetiden",
+      "href": "inhalte/spezies/Mentale Spezies/Memetiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Rhaelis-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=rhaelis-stern&objekt=rhaelis-veskar-9"
+    },
+    {
+      "titel": "Speziesdossier Memetiden",
+      "href": "inhalte/spezies/Mentale Spezies/Memetiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#050506",
+      "tiefe": "#0a0b0d",
+      "akzent": "#979ca7",
+      "sand": "#9f9e98",
+      "moos": "#788c83",
+      "ozean": "#607893",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#2a2e36"
+    }
+  },
+  "kapitel": {
+    "Zusammensetzung": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Zusammensetzung von Veskar-9.",
+      "abschnitte": [
+        {
+          "titel": "Material",
+          "liste": [
+            "Silikatgestein",
+            "Metallerze"
+          ]
+        }
+      ]
+    },
+    "Bahn": {
+      "gruppe": "Wissenschaft",
+      "icon": "◌",
+      "intro": "Bahn von Veskar-9.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Rhaelis"
+            ],
+            [
+              "Große Halbachse",
+              "31 AE (4.637,6 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,14"
+            ],
+            [
+              "Bahnneigung",
+              "0°"
+            ],
+            [
+              "Umlaufzeit",
+              "191,8 Jahre"
+            ],
+            [
+              "Einstrahlung",
+              "0-fach der Erde"
+            ]
+          ]
+        }
+      ]
+    },
+    "Herkunft": {
+      "gruppe": "Weitere",
+      "icon": "⧗",
+      "intro": "Herkunft von Veskar-9.",
+      "abschnitte": [
+        {
+          "titel": "Herkunft",
+          "text": [
+            "Veskar-9 ist ein Überrest aus der Entstehungszeit des Rhaelis-Systems."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Veskar-9 auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Veskar-9",
+          "text": [
+            "Ein kleiner dunkler Körper mit ungewöhnlich alter, wenig veränderter Oberfläche.",
+            "Veskar-9 umkreist Rhaelis in 31 AE Abstand und braucht für einen Umlauf 191,8 Jahre."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Dunkler Kleinkörper"
+            ],
+            [
+              "Sternsystem",
+              "Rhaelis-System"
+            ],
+            [
+              "Zentralkörper",
+              "Rhaelis"
+            ],
+            [
+              "Große Halbachse",
+              "31 AE"
+            ],
+            [
+              "Umlaufzeit",
+              "191,8 Jahre"
+            ],
+            [
+              "Durchmesser",
+              "48 km"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -236 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Tavoryn",
+          "text": [
+            "Das Rhaelis-System ist die Heimat der Memetiden: Ihr Planet Tavoryn umkreist Rhaelis."
+          ],
+          "verweise": [
+            [
+              "Tavoryn",
+              "inhalte/himmelskoerper/planeten/details/tavoryn/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Memetiden",
+              "inhalte/spezies/Mentale Spezies/Memetiden/hauptseite/Spezies.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Eintrag im astronomischen Dossier",
+          "daten": [
+            [
+              "Veskar-9",
+              "Ein kleiner, dunkler Körper mit ungewöhnlich alter, wenig veränderter Oberfläche."
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Veskar-9 im Rhaelis-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Rhaelis"
+            ],
+            [
+              "Große Halbachse",
+              "31 AE (4.637,6 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,14"
+            ],
+            [
+              "Bahnneigung",
+              "0°"
+            ],
+            [
+              "Umlaufzeit",
+              "191,8 Jahre"
+            ],
+            [
+              "Einstrahlung",
+              "0-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Am Himmel von Veskar-9",
+          "text": [
+            "Rhaelis erscheint von hier aus etwa 0,01° groß (die Sonne von der Erde: 0,53°)."
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Rhaelis · Stern",
+              "Orangefarbener Hauptreihenstern (K1 V)"
+            ],
+            [
+              "Kesvar · 0,18 AE",
+              "Heißer Gesteinsplanet"
+            ],
+            [
+              "Draoven · 0,33 AE",
+              "Heißer trockener Gesteinsplanet"
+            ],
+            [
+              "Tavoryn · 0,65 AE",
+              "Gemäßigter Ozean- und Gesteinsplanet"
+            ],
+            [
+              "Ossaryn · 1,2 AE",
+              "Kalter Gesteinsplanet"
+            ],
+            [
+              "Vaelkor · 2,45 AE",
+              "Gasriese"
+            ],
+            [
+              "Kelomar · 4,8 AE",
+              "Äußerer Gasriese"
+            ],
+            [
+              "Ithrenn · 9,2 AE",
+              "Eisriese"
+            ],
+            [
+              "Therys · 19 AE",
+              "Eisreicher Kleinkörper"
+            ],
+            [
+              "Veskar-9 · 31 AE · dieses Dossier",
+              "Dunkler Kleinkörper"
+            ],
+            [
+              "Saelith-Gürtel · 1,7–2,1 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußere Kleinkörperregion von Rhaelis · 12–43 AE",
+              "Eisreicher Kleinkörpergürtel"
+            ],
+            [
+              "Ferne Kometenpopulation von Rhaelis · 65–240 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Rhaelis",
+              "inhalte/himmelskoerper/sterne/details/rhaelis/hauptseite/index.html"
+            ],
+            [
+              "Kesvar",
+              "inhalte/himmelskoerper/planeten/details/kesvar/hauptseite/index.html"
+            ],
+            [
+              "Draoven",
+              "inhalte/himmelskoerper/planeten/details/draoven/hauptseite/index.html"
+            ],
+            [
+              "Tavoryn",
+              "inhalte/himmelskoerper/planeten/details/tavoryn/hauptseite/index.html"
+            ],
+            [
+              "Ossaryn",
+              "inhalte/himmelskoerper/planeten/details/ossaryn/hauptseite/index.html"
+            ],
+            [
+              "Vaelkor",
+              "inhalte/himmelskoerper/planeten/details/vaelkor/hauptseite/index.html"
+            ],
+            [
+              "Kelomar",
+              "inhalte/himmelskoerper/planeten/details/kelomar/hauptseite/index.html"
+            ],
+            [
+              "Ithrenn",
+              "inhalte/himmelskoerper/planeten/details/ithrenn/hauptseite/index.html"
+            ],
+            [
+              "Therys",
+              "inhalte/himmelskoerper/asteroiden/details/therys/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Veskar-9.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "24 km"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Veskar-9.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Veskar-9 entstand zusammen mit dem Rhaelis-System vor rund 6,2 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Veskar-9.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Wie ist der innere Aufbau beschaffen?",
+            "Gab es früher eine dichtere Atmosphäre?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Veskar-9 ist mit allen Bahndaten im Rhaelis-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=rhaelis-stern&objekt=rhaelis-veskar-9"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Veskar-9.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Äußerster Planet des Rhaelis-Systems"
+          ]
+        },
+        {
+          "titel": "Verwandte Dossiers",
+          "verweise": [
+            [
+              "Rhaelis-System",
+              "inhalte/himmelskoerper/sternensysteme/details/rhaelis-system/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Veskar-9.",
+      "abschnitte": [
+        {
+          "titel": "Veskar-9",
+          "bild": true,
+          "bildtext": "Illustration aus dem APORIA-Bildarchiv"
+        }
+      ]
+    }
+  }
+}

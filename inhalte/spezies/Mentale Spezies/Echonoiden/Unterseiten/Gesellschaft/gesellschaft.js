@@ -1,2 +1,3 @@
-// Echonoiden – Gesellschaft · erzeugt vom Spezies-Baukasten (scripts/spezies) – Änderungen dort vornehmen
+// Echonoiden – Gesellschaft
+// Gemeinsame Funktionen (Topbar, Sidebar, Routen, Klappkapitel, Bildkarussell) kommen aus der Basis.
 import "../../echonoiden-basis.js";

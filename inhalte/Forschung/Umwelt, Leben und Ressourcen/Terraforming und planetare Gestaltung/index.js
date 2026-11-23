@@ -80,7 +80,7 @@ const knoten = [
         "belohnung": {
             "art": "gegenstand",
             "name": "Lebender graphitplanet mit roten kolonien",
-            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/Lebende_planeten/lebender-graphitplanet-mit-roten-kolonien/hauptseite/lebender-graphitplanet-mit-roten-kolonien-05a2f285fd52.jpg"
+            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/Lebende_planeten/yelityn/hauptseite/lebender-graphitplanet-mit-roten-kolonien-05a2f285fd52.jpg"
         }
     },
     {
@@ -95,7 +95,7 @@ const knoten = [
         "belohnung": {
             "art": "gegenstand",
             "name": "Gefrorene bernstein kolonie im tiefraum",
-            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/Lebende_planeten/gefrorene-bernstein-kolonie-im-tiefraum/hauptseite/gefrorene-bernstein-kolonie-im-tiefraum-dbf901f18357.jpg"
+            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/Lebende_planeten/raelonol/hauptseite/gefrorene-bernstein-kolonie-im-tiefraum-dbf901f18357.jpg"
         }
     },
     {
@@ -110,7 +110,7 @@ const knoten = [
         "belohnung": {
             "art": "gegenstand",
             "name": "Kolonien Stutzpunkte",
-            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/OzeanWelt/erde-im-sternenmeer/unterseiten/ERDE_BILDER/Fraktionen/09%20%E2%80%93%20Kolonien%20&%20St%C3%BCtzpunkte/09_Kolonien_Stutzpunkte.jpg"
+            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/OzeanWelt/erde/unterseiten/ERDE_BILDER/Fraktionen/09%20%E2%80%93%20Kolonien%20&%20St%C3%BCtzpunkte/09_Kolonien_Stutzpunkte.jpg"
         }
     }
 ];

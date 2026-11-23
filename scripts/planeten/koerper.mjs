@@ -9,7 +9,7 @@ export const ROOT = fileURLToPath(new URL("../../", import.meta.url)).replace(/\
 export const HK = "inhalte/himmelskoerper";
 export const GEM = `${HK}/_gemeinsam`;
 // erde.css/erde.js sind die gemeinsame Grundlage aller Himmelskörper-Seiten (werden nicht verändert)
-export const KERN = `${HK}/planeten/details/erde-im-sternenmeer/hauptseite`;
+export const KERN = `${HK}/planeten/details/erde/hauptseite`;
 
 export function arten() {
     return fs.readdirSync(ROOT + HK, { withFileTypes: true })

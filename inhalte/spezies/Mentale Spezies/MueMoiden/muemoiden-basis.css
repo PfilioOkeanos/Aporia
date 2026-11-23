@@ -119,11 +119,11 @@
     align-items: start;
 }
 .mue-layout--index {
-    grid-template-columns: clamp(8.4rem, 11cqi, 11rem) minmax(0, 1fr) clamp(9rem, 11cqi, 11.5rem);
+    grid-template-columns: clamp(8.4rem, 11cqi, 11rem) minmax(0, 1fr);
     grid-template-areas:
-        "chapters hero rail"
-        "chapters core rail"
-        "topics topics topics";
+        "chapters hero"
+        "chapters core"
+        "topics topics";
 }
 .mue-chapters { grid-area: chapters; position: sticky; top: calc(var(--aporia-topbar-height, 78px) + .8rem); }
 .mue-rail { grid-area: rail; position: sticky; top: calc(var(--aporia-topbar-height, 78px) + .8rem); }
@@ -324,10 +324,10 @@
 
 /* ---------- Hauptreiter-Seiten ---------- */
 .mue-layout--reiter {
-    grid-template-columns: clamp(10rem, 15cqi, 14rem) minmax(0, 1fr) clamp(9rem, 11cqi, 11.5rem);
+    grid-template-columns: clamp(10rem, 15cqi, 14rem) minmax(0, 1fr);
     grid-template-areas:
-        "hero hero rail"
-        "jumps content rail";
+        "hero hero"
+        "jumps content";
 }
 .mue-jumps { grid-area: jumps; position: sticky; top: calc(var(--aporia-topbar-height, 78px) + .8rem); max-height: calc(100dvh - var(--aporia-topbar-height, 78px) - 2rem); overflow-y: auto; scrollbar-width: thin; scrollbar-color: #ffb54766 transparent; }
 .mue-jumps a { font-size: .8rem; }
@@ -440,12 +440,12 @@
 }
 @container (max-width: 980px) {
     .mue-layout--index {
-        grid-template-columns: minmax(0, 1fr) clamp(9rem, 22cqi, 11rem);
-        grid-template-areas: "hero rail" "chapters chapters" "core core" "topics topics";
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-areas: "hero" "chapters" "core" "topics";
     }
     .mue-layout--reiter {
-        grid-template-columns: minmax(0, 1fr) clamp(9rem, 22cqi, 11rem);
-        grid-template-areas: "hero rail" "jumps jumps" "content content";
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-areas: "hero" "jumps" "content";
     }
     .mue-chapters, .mue-jumps { position: static; max-height: none; display: flex; flex-wrap: wrap; align-items: center; gap: .25rem; }
     .mue-chapters > .mue-kicker, .mue-jumps > .mue-kicker { flex-basis: 100%; }
@@ -454,8 +454,8 @@
 }
 @container (max-width: 700px) {
     .mue-layout--index, .mue-layout--reiter { grid-template-columns: minmax(0, 1fr); }
-    .mue-layout--index { grid-template-areas: "rail" "hero" "chapters" "core" "topics"; }
-    .mue-layout--reiter { grid-template-areas: "rail" "hero" "jumps" "content"; }
+    .mue-layout--index { grid-template-areas: "hero" "chapters" "core" "topics"; }
+    .mue-layout--reiter { grid-template-areas: "hero" "jumps" "content"; }
     .mue-rail { position: static; }
     .mue-rail > .mue-kicker { display: none; }
     .mue-rail nav { display: flex; flex-wrap: wrap; justify-content: center; margin: 0; }

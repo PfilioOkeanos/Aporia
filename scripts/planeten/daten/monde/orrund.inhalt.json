@@ -1,0 +1,547 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Orrund",
+  "genitiv": "von Orrund",
+  "dossierName": "Orrund-Dossier",
+  "klasse": "Mond",
+  "intro": "Orrund ist ein felsiger Mond Jandors mit tiefen Bruchzonen in seiner alten, kraterreichen Kruste. Orrund umkreist Jandor in 9,1 Tage.",
+  "globusDaten": {
+    "planet": "mond-im-zerfall-unter-gezeitenkraften",
+    "klasse": "Gestein",
+    "radius": 1100000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=veyruna-stern&objekt=veyruna-orrund",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-BFC7DC579E"
+    ],
+    [
+      "Typ",
+      "Mond"
+    ],
+    [
+      "Sternsystem",
+      "Orelis-System"
+    ],
+    [
+      "Zentralkörper",
+      "Jandor"
+    ],
+    [
+      "Große Halbachse",
+      "1.058.475 km"
+    ],
+    [
+      "Umlaufzeit",
+      "9,1 Tage"
+    ],
+    [
+      "Durchmesser",
+      "2.200 km"
+    ],
+    [
+      "Masse",
+      "0,325 Mondmassen"
+    ],
+    [
+      "Schwerkraft",
+      "0,13 g"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -160 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Orelis-System"
+    ],
+    [
+      "Zentralstern",
+      "Orelis",
+      "inhalte/himmelskoerper/sterne/details/orelis/hauptseite/index.html"
+    ],
+    [
+      "Umläuft",
+      "Jandor",
+      "inhalte/himmelskoerper/planeten/details/jandor/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "1.058.475 km"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Orrund im Orelis-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=veyruna-stern&objekt=veyruna-orrund",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Orelis",
+      "href": "inhalte/himmelskoerper/sterne/details/orelis/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◍",
+      "art": "Mutterplanet",
+      "titel": "Jandor",
+      "href": "inhalte/himmelskoerper/planeten/details/jandor/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Echonoiden",
+      "titel": "Veyruna",
+      "href": "inhalte/himmelskoerper/planeten/details/veyruna/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Echonoiden",
+      "href": "inhalte/spezies/Mentale Spezies/Echonoiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Orelis-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=veyruna-stern&objekt=veyruna-orrund"
+    },
+    {
+      "titel": "Speziesdossier Echonoiden",
+      "href": "inhalte/spezies/Mentale Spezies/Echonoiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#080808",
+      "tiefe": "#111111",
+      "akzent": "#bdbdbd",
+      "sand": "#c2baa6",
+      "moos": "#9cb396",
+      "ozean": "#7c9bad",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#454545"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Astronomie"
+      ],
+      [
+        "Planet",
+        "Mutterplanet"
+      ],
+      [
+        "Kräfte",
+        "Gezeiten"
+      ],
+      [
+        "Tiefe",
+        "Geologie"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Mutterplanet": {
+      "gruppe": "Wissenschaft",
+      "icon": "◐",
+      "intro": "Mutterplanet von Orrund.",
+      "abschnitte": [
+        {
+          "titel": "Jandor",
+          "text": [
+            "Jandor ist ein großer äußerer Gasplanet mit Wasserstoff-Helium-Atmosphäre, mehreren Wolken- und Wetterschichten, starken Windströmungen und einem bedeutenden Magnetfeld mit hellen Polarlichtern. Feine Ringe und ein Mondsystem aus eisigen und felsigen Körpern umgeben ihn."
+          ],
+          "daten": [
+            [
+              "Typ",
+              "Gasriese"
+            ],
+            [
+              "Durchmesser",
+              "130.000 km"
+            ],
+            [
+              "Abstand des Mondes",
+              "1.058.475 km (16,3 Planetenradien)"
+            ]
+          ],
+          "verweise": [
+            [
+              "Jandor",
+              "inhalte/himmelskoerper/planeten/details/jandor/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Weitere Monde von Jandor",
+          "liste": [
+            "Ithel – Umlauf in 4,2 Tage",
+            "Vasch – Umlauf in 160 Tage"
+          ],
+          "verweise": [
+            [
+              "Ithel",
+              "inhalte/himmelskoerper/zwergplaneten/details/ithel/hauptseite/index.html"
+            ],
+            [
+              "Vasch",
+              "inhalte/himmelskoerper/monde/details/vasch/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Gezeiten": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gezeiten von Orrund.",
+      "abschnitte": [
+        {
+          "titel": "Gezeitenkräfte",
+          "text": [
+            "Auf seiner Bahn in 1.058.475 km Abstand wirken starke Gezeitenkräfte von Jandor auf Orrund."
+          ]
+        }
+      ]
+    },
+    "Gebundene Rotation": {
+      "gruppe": "Wissenschaft",
+      "icon": "↻",
+      "intro": "Gebundene Rotation von Orrund.",
+      "abschnitte": [
+        {
+          "titel": "Rotation",
+          "text": [
+            "Orrund wendet Jandor vermutlich stets dieselbe Seite zu: Ein Tag dauert so lange wie ein Umlauf – 9,1 Tage."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Orrund auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Orrund",
+          "text": [
+            "Orrund ist ein felsiger Mond Jandors mit tiefen Bruchzonen in seiner alten, kraterreichen Kruste.",
+            "Orrund umkreist Jandor in 9,1 Tage."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Mond"
+            ],
+            [
+              "Sternsystem",
+              "Orelis-System"
+            ],
+            [
+              "Zentralkörper",
+              "Jandor"
+            ],
+            [
+              "Große Halbachse",
+              "1.058.475 km"
+            ],
+            [
+              "Umlaufzeit",
+              "9,1 Tage"
+            ],
+            [
+              "Durchmesser",
+              "2.200 km"
+            ],
+            [
+              "Masse",
+              "0,325 Mondmassen"
+            ],
+            [
+              "Schwerkraft",
+              "0,13 g"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -160 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Veyruna",
+          "text": [
+            "Das Orelis-System ist die Heimat der Echonoiden: Ihr Planet Veyruna umkreist Orelis."
+          ],
+          "verweise": [
+            [
+              "Veyruna",
+              "inhalte/himmelskoerper/planeten/details/veyruna/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Echonoiden",
+              "inhalte/spezies/Mentale Spezies/Echonoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Orrund im Orelis-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Jandor"
+            ],
+            [
+              "Große Halbachse",
+              "1.058.475 km"
+            ],
+            [
+              "Exzentrizität",
+              "0,006"
+            ],
+            [
+              "Bahnneigung",
+              "0,5°"
+            ],
+            [
+              "Umlaufzeit",
+              "9,1 Tage"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Orelis · Stern",
+              "Orangefarbener Zwerg (K1 V)"
+            ],
+            [
+              "Seran · 0,16 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Mirvek · 0,35 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Veyruna · 0,68 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Koras · 1,18 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Jandor · 3,7 AE",
+              "Gasriese"
+            ],
+            [
+              "Veltos · 6,5 AE",
+              "Eisriese"
+            ],
+            [
+              "Innerer Asteroidengürtel · 1,7–2,4 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußerer Kleinkörpergürtel · 15–33 AE",
+              "Kleinkörpergürtel"
+            ]
+          ],
+          "verweise": [
+            [
+              "Orelis",
+              "inhalte/himmelskoerper/sterne/details/orelis/hauptseite/index.html"
+            ],
+            [
+              "Seran",
+              "inhalte/himmelskoerper/planeten/details/seran/hauptseite/index.html"
+            ],
+            [
+              "Mirvek",
+              "inhalte/himmelskoerper/planeten/details/mirvek/hauptseite/index.html"
+            ],
+            [
+              "Veyruna",
+              "inhalte/himmelskoerper/planeten/details/veyruna/hauptseite/index.html"
+            ],
+            [
+              "Koras",
+              "inhalte/himmelskoerper/planeten/details/koras/hauptseite/index.html"
+            ],
+            [
+              "Jandor",
+              "inhalte/himmelskoerper/planeten/details/jandor/hauptseite/index.html"
+            ],
+            [
+              "Veltos",
+              "inhalte/himmelskoerper/planeten/details/veltos/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Orrund.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "1.100 km"
+            ],
+            [
+              "Masse",
+              "0,325 Mondmassen"
+            ],
+            [
+              "Mittlere Dichte",
+              "4,29 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "1,32 m/s² (0,134 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "1,7 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Orrund.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Orrund ist geologisch weitgehend erstarrt; Einschläge haben seine Oberfläche geformt."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Orrund.",
+      "abschnitte": [
+        {
+          "titel": "Gashülle",
+          "text": [
+            "Orrund besitzt keine nennenswerte Atmosphäre – dafür ist die Schwerkraft zu gering."
+          ]
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Orrund.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 3,7 AE Abstand zu Orelis liegt die Gleichgewichtstemperatur von Orrund bei rund -160 °C – eisig kalt."
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Orrund.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Orrund entstand zusammen mit dem Orelis-System vor rund 6 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Orrund.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Ist der Mond eingefangen oder mit seinem Planeten entstanden?",
+            "Welche Spuren tragen seine ältesten Krater?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Orrund ist mit allen Bahndaten im Orelis-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=veyruna-stern&objekt=veyruna-orrund"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Orrund.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Orrund ist ein felsiger Mond Jandors mit tiefen Bruchzonen in seiner alten, kraterreichen Kruste."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Orrund.",
+      "abschnitte": [
+        {
+          "titel": "Orrund – Archivbild",
+          "bild": true,
+          "bildtext": "Orrund"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,519 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Gezeitenbote",
+  "genitiv": "von Gezeitenbote",
+  "dossierName": "Gezeitenbote-Dossier",
+  "klasse": "Komet",
+  "intro": "Ein periodischer Komet (rund 44 Jahre), der sich Aurenn bis auf 0,84 AE nähert – fast genau auf der Bahn von Namaris. Seine Wiederkehr wird seit den ersten Archiven aufgezeichnet. Gezeitenbote umkreist Aurenn in 12 AE Abstand und braucht für einen Umlauf 43,8 Jahre.",
+  "globusDaten": {
+    "planet": "einsamer-komet-mit-spiralformigem-schweif",
+    "klasse": "Eis",
+    "radius": 7000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=namaris-stern&objekt=namaris-gezeitenbote",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-8E02B5FF01"
+    ],
+    [
+      "Typ",
+      "Komet"
+    ],
+    [
+      "Sternsystem",
+      "Aurenn-System"
+    ],
+    [
+      "Zentralkörper",
+      "Aurenn"
+    ],
+    [
+      "Große Halbachse",
+      "12 AE"
+    ],
+    [
+      "Umlaufzeit",
+      "43,8 Jahre"
+    ],
+    [
+      "Durchmesser",
+      "14 km"
+    ],
+    [
+      "Masse",
+      "8,62 · 10^14 kg"
+    ],
+    [
+      "Schwerkraft",
+      "0,12 cm/s²"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -202 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Aurenn-System"
+    ],
+    [
+      "Zentralstern",
+      "Aurenn",
+      "inhalte/himmelskoerper/sterne/details/aurenn/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "12 AE"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Gezeitenbote im Aurenn-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=namaris-stern&objekt=namaris-gezeitenbote",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Aurenn",
+      "href": "inhalte/himmelskoerper/sterne/details/aurenn/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Kohäriden (Kolonialwesen)",
+      "titel": "Namaris",
+      "href": "inhalte/himmelskoerper/planeten/details/namaris/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Kohäriden (Kolonialwesen)",
+      "href": "inhalte/spezies/Biologische Spezies/Kolonialwesen/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Aurenn-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=namaris-stern&objekt=namaris-gezeitenbote"
+    },
+    {
+      "titel": "Speziesdossier Kohäriden (Kolonialwesen)",
+      "href": "inhalte/spezies/Biologische Spezies/Kolonialwesen/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#080a0b",
+      "tiefe": "#111518",
+      "akzent": "#bdd7e8",
+      "sand": "#c2d1c2",
+      "moos": "#9cd1bb",
+      "ozean": "#7cb7e2",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#455763"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Umlaufbahn"
+      ],
+      [
+        "Hülle",
+        "Schweif"
+      ],
+      [
+        "Hülle",
+        "Koma"
+      ],
+      [
+        "Kern",
+        "Kern"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Kern": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Kern von Gezeitenbote.",
+      "abschnitte": [
+        {
+          "titel": "Kometenkern",
+          "text": [
+            "Der Kern von Gezeitenbote misst rund 14 km und besteht aus einem lockeren Gemenge aus Eis, Staub und Gestein."
+          ],
+          "schichten": [
+            [
+              "Staubkruste",
+              "Dunkle, kohlenstoffreiche Oberfläche"
+            ],
+            [
+              "Eis-Staub-Gemisch",
+              "Wassereis, Kohlendioxid und Staub"
+            ],
+            [
+              "Kern",
+              "Lockeres Eis-Gestein-Gemenge"
+            ]
+          ]
+        }
+      ]
+    },
+    "Koma": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Koma von Gezeitenbote.",
+      "abschnitte": [
+        {
+          "titel": "Koma",
+          "text": [
+            "Nähert sich Gezeitenbote dem Stern Aurenn, verdampft Eis und bildet eine leuchtende Gashülle um den Kern."
+          ]
+        }
+      ]
+    },
+    "Schweif": {
+      "gruppe": "Natur",
+      "icon": "☄",
+      "intro": "Schweif von Gezeitenbote.",
+      "abschnitte": [
+        {
+          "titel": "Schweif",
+          "text": [
+            "Ein periodischer Komet (rund 44 Jahre), der sich Aurenn bis auf 0,84 AE nähert – fast genau auf der Bahn von Namaris. Seine Wiederkehr wird seit den ersten Archiven aufgezeichnet."
+          ]
+        }
+      ]
+    },
+    "Umlaufbahn": {
+      "gruppe": "Wissenschaft",
+      "icon": "◌",
+      "intro": "Umlaufbahn von Gezeitenbote.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Aurenn"
+            ],
+            [
+              "Große Halbachse",
+              "12 AE (1.795,2 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,93"
+            ],
+            [
+              "Bahnneigung",
+              "33°"
+            ],
+            [
+              "Umlaufzeit",
+              "43,8 Jahre"
+            ],
+            [
+              "Einstrahlung",
+              "0,004-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Sternnächster und fernster Punkt",
+          "daten": [
+            [
+              "Perihel",
+              "0,84 AE"
+            ],
+            [
+              "Aphel",
+              "23,16 AE"
+            ]
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Gezeitenbote auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Gezeitenbote",
+          "text": [
+            "Ein periodischer Komet (rund 44 Jahre), der sich Aurenn bis auf 0,84 AE nähert – fast genau auf der Bahn von Namaris. Seine Wiederkehr wird seit den ersten Archiven aufgezeichnet.",
+            "Gezeitenbote umkreist Aurenn in 12 AE Abstand und braucht für einen Umlauf 43,8 Jahre."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Komet"
+            ],
+            [
+              "Sternsystem",
+              "Aurenn-System"
+            ],
+            [
+              "Zentralkörper",
+              "Aurenn"
+            ],
+            [
+              "Große Halbachse",
+              "12 AE"
+            ],
+            [
+              "Umlaufzeit",
+              "43,8 Jahre"
+            ],
+            [
+              "Durchmesser",
+              "14 km"
+            ],
+            [
+              "Masse",
+              "8,62 · 10^14 kg"
+            ],
+            [
+              "Schwerkraft",
+              "0,12 cm/s²"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -202 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Namaris",
+          "text": [
+            "Das Aurenn-System ist die Heimat der Kohäriden (Kolonialwesen): Ihr Planet Namaris umkreist Aurenn."
+          ],
+          "verweise": [
+            [
+              "Namaris",
+              "inhalte/himmelskoerper/planeten/details/namaris/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Kohäriden (Kolonialwesen)",
+              "inhalte/spezies/Biologische Spezies/Kolonialwesen/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Gezeitenbote im Aurenn-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Aurenn"
+            ],
+            [
+              "Große Halbachse",
+              "12 AE (1.795,2 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,93"
+            ],
+            [
+              "Bahnneigung",
+              "33°"
+            ],
+            [
+              "Umlaufzeit",
+              "43,8 Jahre"
+            ],
+            [
+              "Einstrahlung",
+              "0,004-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Aurenn · Stern",
+              "Gelber Zwerg (G8 V)"
+            ],
+            [
+              "Aurenn I · 0,38 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Namaris · 0,85 AE",
+              "Ozeanplanet"
+            ],
+            [
+              "Aurenn III · 1,42 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Aurenn IV · 4,6 AE",
+              "Gasriese"
+            ],
+            [
+              "Aurenn V · 11,2 AE",
+              "Eisriese"
+            ],
+            [
+              "Strandgürtel · 2,2–3 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 36–50 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Aurenn",
+              "inhalte/himmelskoerper/sterne/details/aurenn/hauptseite/index.html"
+            ],
+            [
+              "Aurenn I",
+              "inhalte/himmelskoerper/planeten/details/aurenn-i/hauptseite/index.html"
+            ],
+            [
+              "Namaris",
+              "inhalte/himmelskoerper/planeten/details/namaris/hauptseite/index.html"
+            ],
+            [
+              "Aurenn III",
+              "inhalte/himmelskoerper/planeten/details/aurenn-iii/hauptseite/index.html"
+            ],
+            [
+              "Aurenn IV",
+              "inhalte/himmelskoerper/planeten/details/aurenn-iv/hauptseite/index.html"
+            ],
+            [
+              "Aurenn V",
+              "inhalte/himmelskoerper/planeten/details/aurenn-v/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Gezeitenbote.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "7 km"
+            ],
+            [
+              "Masse",
+              "8,62 · 10^14 kg"
+            ],
+            [
+              "Mittlere Dichte",
+              "0,6 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "0 m/s² (0 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "0 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Gezeitenbote.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Gezeitenbote stammt aus den kalten Außenbereichen des Aurenn-Systems und wurde auf seine heutige, langgestreckte Bahn gelenkt."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Gezeitenbote.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Was steckt hinter den Besonderheiten von Gezeitenbote?",
+            "Woher stammt der Komet genau?",
+            "Wie lange übersteht sein Kern noch die Annäherungen an den Stern?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Gezeitenbote ist mit allen Bahndaten im Aurenn-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=namaris-stern&objekt=namaris-gezeitenbote"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Gezeitenbote.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Als Anomalie in der Sternenkarte verzeichnet"
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Gezeitenbote.",
+      "abschnitte": [
+        {
+          "titel": "Gezeitenbote – Archivbild",
+          "bild": true,
+          "bildtext": "Gezeitenbote"
+        }
+      ]
+    }
+  }
+}

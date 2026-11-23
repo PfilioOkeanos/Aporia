@@ -1,0 +1,624 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Ysmeroth B",
+  "genitiv": "von Ysmeroth B",
+  "dossierName": "Ysmeroth B-Dossier",
+  "klasse": "Roter Zwerg (M4 V)",
+  "intro": "Ysmeroth B ist ein Roter Zwerg mit 21 % der Sonnenmasse auf einer weiten, exzentrischen Bahn um Ysmeroth. Am Himmel Karynths erscheint er als heller, rötlicher Stern, der in einem Umlauf von rund 5.400 Jahren langsam zwischen den Sternbildern wandert. Ysmeroth B ist ein Begleitstern von Ysmeroth und umkreist ihn in rund 310 AE Abstand – ein Umlauf dauert 5.431,3 Jahre.",
+  "globusDaten": {
+    "planet": "m-zwergstern-im-weltraum",
+    "klasse": "Vulkan",
+    "radius": 160000000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=karynth-stern&objekt=karynth-ysmeroth-b",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-D0B80B845A"
+    ],
+    [
+      "Typ",
+      "Roter Zwerg (M4 V)"
+    ],
+    [
+      "Sternsystem",
+      "Ysmeroth-System"
+    ],
+    [
+      "Masse",
+      "0,21 Sonnenmassen"
+    ],
+    [
+      "Radius",
+      "0,23 Sonnenradien"
+    ],
+    [
+      "Leuchtkraft",
+      "0,0064 Sonnenleuchtkräfte"
+    ],
+    [
+      "Oberflächentemperatur",
+      "ca. 3.400 K"
+    ],
+    [
+      "Alter",
+      "ca. 5,2 Mrd. Jahre"
+    ],
+    [
+      "Große Halbachse",
+      "310 AE"
+    ],
+    [
+      "Umlaufzeit",
+      "5.431,3 Jahre"
+    ],
+    [
+      "Planeten",
+      "1 (Ysmeroth Ba)"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Ysmeroth-System"
+    ],
+    [
+      "Zentralstern",
+      "Ysmeroth",
+      "inhalte/himmelskoerper/sterne/details/ysmeroth/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "310 AE"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Ysmeroth B im Ysmeroth-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=karynth-stern&objekt=karynth-ysmeroth-b",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Ysmeroth",
+      "href": "inhalte/himmelskoerper/sterne/details/ysmeroth/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Planet",
+      "titel": "Ysmeroth Ba",
+      "href": "inhalte/himmelskoerper/planeten/details/gluhende-wasserwelt-im-roten-sternenlicht/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Metamorphen",
+      "titel": "Karynth",
+      "href": "inhalte/himmelskoerper/planeten/details/karynth/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Metamorphen",
+      "href": "inhalte/spezies/Biologische Spezies/Meta Morphen/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Ysmeroth-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=karynth-stern&objekt=karynth-ysmeroth-b"
+    },
+    {
+      "titel": "Speziesdossier Metamorphen",
+      "href": "inhalte/spezies/Biologische Spezies/Meta Morphen/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#0d0503",
+      "tiefe": "#1c0c07",
+      "akzent": "#ff9f84",
+      "sand": "#ffa182",
+      "moos": "#d99065",
+      "ozean": "#ad7c68",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#73301e"
+    },
+    "schichten": [
+      [
+        "Strahlung",
+        "Leuchtkraft"
+      ],
+      [
+        "Hülle",
+        "Spektralklasse"
+      ],
+      [
+        "Kern",
+        "Fusion"
+      ],
+      [
+        "Zeit",
+        "Lebenszyklus"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Spektralklasse": {
+      "gruppe": "Wissenschaft",
+      "icon": "✦",
+      "intro": "Spektralklasse von Ysmeroth B.",
+      "abschnitte": [
+        {
+          "titel": "Einordnung",
+          "daten": [
+            [
+              "Typ",
+              "Roter Zwerg (M4 V)"
+            ],
+            [
+              "Oberflächentemperatur",
+              "ca. 3.400 K"
+            ],
+            [
+              "Farbe",
+              "rot"
+            ]
+          ]
+        }
+      ]
+    },
+    "Fusion": {
+      "gruppe": "Wissenschaft",
+      "icon": "☀",
+      "intro": "Fusion von Ysmeroth B.",
+      "abschnitte": [
+        {
+          "titel": "Energiequelle",
+          "text": [
+            "Im Kern von Ysmeroth B verschmilzt Wasserstoff zu Helium. Der Stern ist vollständig konvektiv und mischt seinen Brennstoff durch."
+          ]
+        }
+      ]
+    },
+    "Leuchtkraft": {
+      "gruppe": "Wissenschaft",
+      "icon": "☀",
+      "intro": "Leuchtkraft von Ysmeroth B.",
+      "abschnitte": [
+        {
+          "titel": "Strahlung",
+          "daten": [
+            [
+              "Leuchtkraft",
+              "0,0064 Sonnenleuchtkräfte"
+            ],
+            [
+              "Habitable Zone",
+              "0,08–0,13 AE"
+            ]
+          ]
+        }
+      ]
+    },
+    "Lebenszyklus": {
+      "gruppe": "Wissenschaft",
+      "icon": "⧗",
+      "intro": "Lebenszyklus von Ysmeroth B.",
+      "abschnitte": [
+        {
+          "titel": "Lebensdauer",
+          "text": [
+            "Ein Stern mit 0,21 Sonnenmassen bleibt rund 495 Milliarden Jahre auf der Hauptreihe; Ysmeroth B ist etwa 5,2 Milliarden Jahre alt."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Ysmeroth B auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Ysmeroth B",
+          "text": [
+            "Ysmeroth B ist ein Roter Zwerg mit 21 % der Sonnenmasse auf einer weiten, exzentrischen Bahn um Ysmeroth. Am Himmel Karynths erscheint er als heller, rötlicher Stern, der in einem Umlauf von rund 5.400 Jahren langsam zwischen den Sternbildern wandert.",
+            "Ysmeroth B ist ein Begleitstern von Ysmeroth und umkreist ihn in rund 310 AE Abstand – ein Umlauf dauert 5.431,3 Jahre."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Roter Zwerg (M4 V)"
+            ],
+            [
+              "Sternsystem",
+              "Ysmeroth-System"
+            ],
+            [
+              "Masse",
+              "0,21 Sonnenmassen"
+            ],
+            [
+              "Radius",
+              "0,23 Sonnenradien"
+            ],
+            [
+              "Leuchtkraft",
+              "0,0064 Sonnenleuchtkräfte"
+            ],
+            [
+              "Oberflächentemperatur",
+              "ca. 3.400 K"
+            ],
+            [
+              "Alter",
+              "ca. 5,2 Mrd. Jahre"
+            ],
+            [
+              "Große Halbachse",
+              "310 AE"
+            ],
+            [
+              "Umlaufzeit",
+              "5.431,3 Jahre"
+            ],
+            [
+              "Planeten",
+              "1 (Ysmeroth Ba)"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Karynth",
+          "text": [
+            "Das Ysmeroth-System ist die Heimat der Metamorphen: Ihr Planet Karynth umkreist Ysmeroth."
+          ],
+          "verweise": [
+            [
+              "Karynth",
+              "inhalte/himmelskoerper/planeten/details/karynth/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Metamorphen",
+              "inhalte/spezies/Biologische Spezies/Meta Morphen/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Ysmeroth B im Raum.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Ysmeroth"
+            ],
+            [
+              "Große Halbachse",
+              "310 AE (46.376 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,38"
+            ],
+            [
+              "Bahnneigung",
+              "7°"
+            ],
+            [
+              "Umlaufzeit",
+              "5.431,3 Jahre"
+            ],
+            [
+              "Einstrahlung",
+              "0-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Ysmeroth · Stern",
+              "Orangefarbener Zwerg (K2 V)"
+            ],
+            [
+              "Ysmeroth B · Begleitstern in 310 AE · dieses Dossier",
+              "Roter Zwerg (M4 V)"
+            ],
+            [
+              "Ysmeroth I · 0,09 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Ysmeroth II · 0,45 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Karynth · 0,72 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Ysmeroth IV · 1,14 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Ysmeroth V · 2,9 AE",
+              "Gasriese"
+            ],
+            [
+              "Ysmeroth VI · 13,8 AE",
+              "Eisriese"
+            ],
+            [
+              "Graumantel · 40–56 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Ysmeroth",
+              "inhalte/himmelskoerper/sterne/details/ysmeroth/hauptseite/index.html"
+            ],
+            [
+              "Ysmeroth I",
+              "inhalte/himmelskoerper/planeten/details/ysmeroth-i/hauptseite/index.html"
+            ],
+            [
+              "Ysmeroth II",
+              "inhalte/himmelskoerper/planeten/details/ysmeroth-ii/hauptseite/index.html"
+            ],
+            [
+              "Karynth",
+              "inhalte/himmelskoerper/planeten/details/karynth/hauptseite/index.html"
+            ],
+            [
+              "Ysmeroth IV",
+              "inhalte/himmelskoerper/planeten/details/ysmeroth-iv/hauptseite/index.html"
+            ],
+            [
+              "Ysmeroth V",
+              "inhalte/himmelskoerper/planeten/details/ysmeroth-v/hauptseite/index.html"
+            ],
+            [
+              "Ysmeroth VI",
+              "inhalte/himmelskoerper/planeten/details/ysmeroth-vi/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Ysmeroth B.",
+      "abschnitte": [
+        {
+          "titel": "Physik",
+          "daten": [
+            [
+              "Masse",
+              "0,21 Sonnenmassen"
+            ],
+            [
+              "Radius",
+              "0,23 Sonnenradien"
+            ],
+            [
+              "Leuchtkraft",
+              "0,0064 Sonnenleuchtkräfte"
+            ],
+            [
+              "Oberflächentemperatur",
+              "ca. 3.400 K"
+            ],
+            [
+              "Alter",
+              "ca. 5,2 Mrd. Jahre"
+            ],
+            [
+              "Große Halbachse",
+              "310 AE"
+            ],
+            [
+              "Umlaufzeit",
+              "5.431,3 Jahre"
+            ],
+            [
+              "Planeten",
+              "1 (Ysmeroth Ba)"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Ysmeroth B.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Ysmeroth B entstand zusammen mit dem Ysmeroth-System vor rund 5,2 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Umgebung": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Umgebung von Ysmeroth B.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Ysmeroth · Stern",
+              "Orangefarbener Zwerg (K2 V)"
+            ],
+            [
+              "Ysmeroth B · Begleitstern in 310 AE · dieses Dossier",
+              "Roter Zwerg (M4 V)"
+            ],
+            [
+              "Ysmeroth I · 0,09 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Ysmeroth II · 0,45 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Karynth · 0,72 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Ysmeroth IV · 1,14 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Ysmeroth V · 2,9 AE",
+              "Gasriese"
+            ],
+            [
+              "Ysmeroth VI · 13,8 AE",
+              "Eisriese"
+            ],
+            [
+              "Graumantel · 40–56 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Ysmeroth",
+              "inhalte/himmelskoerper/sterne/details/ysmeroth/hauptseite/index.html"
+            ],
+            [
+              "Ysmeroth I",
+              "inhalte/himmelskoerper/planeten/details/ysmeroth-i/hauptseite/index.html"
+            ],
+            [
+              "Ysmeroth II",
+              "inhalte/himmelskoerper/planeten/details/ysmeroth-ii/hauptseite/index.html"
+            ],
+            [
+              "Karynth",
+              "inhalte/himmelskoerper/planeten/details/karynth/hauptseite/index.html"
+            ],
+            [
+              "Ysmeroth IV",
+              "inhalte/himmelskoerper/planeten/details/ysmeroth-iv/hauptseite/index.html"
+            ],
+            [
+              "Ysmeroth V",
+              "inhalte/himmelskoerper/planeten/details/ysmeroth-v/hauptseite/index.html"
+            ],
+            [
+              "Ysmeroth VI",
+              "inhalte/himmelskoerper/planeten/details/ysmeroth-vi/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Nachbarsysteme",
+          "liste": [
+            "TRAPPIST-1-System – 9,8 Lichtjahre",
+            "Narev-System – 18,9 Lichtjahre",
+            "Ombrys-System – 21,2 Lichtjahre",
+            "Osselyr-System – 29,6 Lichtjahre",
+            "Orvaya-System – 29,8 Lichtjahre"
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Ysmeroth B.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Wie stark schwankt die magnetische Aktivität?",
+            "Wie hat sich die Leuchtkraft seit der Entstehung verändert?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Ysmeroth B ist mit allen Bahndaten im Ysmeroth-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=karynth-stern&objekt=karynth-ysmeroth-b"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Ysmeroth B.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Ein eigener Planet: Ysmeroth Ba"
+          ]
+        },
+        {
+          "titel": "Planeten",
+          "karten": [
+            {
+              "titel": "Ysmeroth Ba",
+              "text": "13.200 km Durchmesser, Umlauf in 18 Tage. Ysmeroth Ba ist eine gebunden rotierende Wasserwelt in der habitablen Zone des Roten Zwergs Ysmeroth B. Ihre Tagseite liegt unter einem dauernden roten Licht, die Nachtseite ist vereist."
+            }
+          ],
+          "verweise": [
+            [
+              "Ysmeroth Ba",
+              "inhalte/himmelskoerper/planeten/details/gluhende-wasserwelt-im-roten-sternenlicht/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Ysmeroth B.",
+      "abschnitte": [
+        {
+          "titel": "Ysmeroth B – Archivbild",
+          "bild": true,
+          "bildtext": "Ysmeroth B"
+        }
+      ]
+    }
+  }
+}

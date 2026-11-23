@@ -1,0 +1,17 @@
+
+/* Das Gesicht liegt im oberen Zehntel des hochformatigen Titelbilds. */
+.neurofloren.st-hauptseite .st-hero-bild {
+    object-position: 52% 0%;
+}
+@container (max-width: 640px) {
+    .neurofloren.st-hauptseite .st-hero {
+        padding-top: 12rem;
+    }
+    .neurofloren.st-hauptseite .st-hero-bild {
+        height: 16rem !important;
+        mask-image: linear-gradient(180deg, #000 68%, transparent);
+    }
+    .neurofloren.st-hauptseite .st-hero::after {
+        background: linear-gradient(180deg, transparent 8rem, #080c11 16rem);
+    }
+}

@@ -1,0 +1,570 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Ivera",
+  "genitiv": "von Ivera",
+  "dossierName": "Ivera-Dossier",
+  "klasse": "Mond",
+  "intro": "Ivera ist der große Gesteinsmond Neraths, vermutlich aus einem frühen Rieseneinschlag entstanden. Sein Gezeitenbeitrag ist etwa 2,7-mal so groß wie der des Erdmondes; er ermöglicht vollständige Sonnenfinsternisse und prägt die Kalender der Tavari. Ivera umkreist Nerath in 20 Tage.",
+  "globusDaten": {
+    "planet": "weitgehend-geformter-mond",
+    "klasse": "Gestein",
+    "radius": 1975000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=nerath-stern&objekt=nerath-ivera",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-31FE9D8689"
+    ],
+    [
+      "Typ",
+      "Mond"
+    ],
+    [
+      "Sternsystem",
+      "Terev-System"
+    ],
+    [
+      "Zentralkörper",
+      "Nerath"
+    ],
+    [
+      "Große Halbachse",
+      "313.296 km"
+    ],
+    [
+      "Umlaufzeit",
+      "20 Tage"
+    ],
+    [
+      "Durchmesser",
+      "3.950 km"
+    ],
+    [
+      "Masse",
+      "1,463 Mondmassen"
+    ],
+    [
+      "Schwerkraft",
+      "0,19 g"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -25 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Terev-System"
+    ],
+    [
+      "Zentralstern",
+      "Terev",
+      "inhalte/himmelskoerper/sterne/details/terev/hauptseite/index.html"
+    ],
+    [
+      "Umläuft",
+      "Nerath",
+      "inhalte/himmelskoerper/planeten/details/nerath/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "313.296 km"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Ivera im Terev-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=nerath-stern&objekt=nerath-ivera",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Terev",
+      "href": "inhalte/himmelskoerper/sterne/details/terev/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◍",
+      "art": "Mutterplanet",
+      "titel": "Nerath",
+      "href": "inhalte/himmelskoerper/planeten/details/nerath/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Synaptoiden",
+      "titel": "Nerath",
+      "href": "inhalte/himmelskoerper/planeten/details/nerath/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Synaptoiden",
+      "href": "inhalte/spezies/Mentale Spezies/Synaptoiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Terev-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=nerath-stern&objekt=nerath-ivera"
+    },
+    {
+      "titel": "Speziesdossier Synaptoiden",
+      "href": "inhalte/spezies/Mentale Spezies/Synaptoiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#090909",
+      "tiefe": "#141414",
+      "akzent": "#d1d1cd",
+      "sand": "#d4cbb1",
+      "moos": "#aec9a4",
+      "ozean": "#8bb0c2",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#535350"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Astronomie"
+      ],
+      [
+        "Planet",
+        "Mutterplanet"
+      ],
+      [
+        "Kräfte",
+        "Gezeiten"
+      ],
+      [
+        "Tiefe",
+        "Geologie"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Mutterplanet": {
+      "gruppe": "Wissenschaft",
+      "icon": "◐",
+      "intro": "Mutterplanet von Ivera.",
+      "abschnitte": [
+        {
+          "titel": "Nerath",
+          "text": [
+            "Nerath ist die Heimatwelt der Synaptoiden (Tavari): eine gezeitengeprägte Binnenmeer-, Flachwasser- und Feuchtgebietswelt mit zwei großen Kontinenten, dem Silven-Becken, ausgedehnten Gezeitenmarschen und dem großen Mond Ivera."
+          ],
+          "daten": [
+            [
+              "Typ",
+              "Gesteinsplanet"
+            ],
+            [
+              "Durchmesser",
+              "13.126 km"
+            ],
+            [
+              "Abstand des Mondes",
+              "313.296 km (47,7 Planetenradien)"
+            ]
+          ],
+          "verweise": [
+            [
+              "Nerath",
+              "inhalte/himmelskoerper/planeten/details/nerath/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Gezeiten": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gezeiten von Ivera.",
+      "abschnitte": [
+        {
+          "titel": "Gezeitenkräfte",
+          "text": [
+            "Auf seiner Bahn in 313.296 km Abstand wirken starke Gezeitenkräfte von Nerath auf Ivera. Die leicht exzentrische Bahn (e = 0,045) knetet das Innere bei jedem Umlauf."
+          ]
+        },
+        {
+          "titel": "Starke Gezeiten",
+          "text": [
+            "Iveras vergleichsweise große Masse und geringe Entfernung verursachen auf Nerath einen direkten lunaren Gezeitenbeitrag von ungefähr dem 2,7-Fachen des Erdmondes. Etwa alle 10,6 Erdtage entstehen Springtiden – ein Grundpfeiler der traditionellen Tavari-Kalender."
+          ]
+        }
+      ]
+    },
+    "Gebundene Rotation": {
+      "gruppe": "Wissenschaft",
+      "icon": "↻",
+      "intro": "Gebundene Rotation von Ivera.",
+      "abschnitte": [
+        {
+          "titel": "Rotation",
+          "text": [
+            "Ivera wendet Nerath vermutlich stets dieselbe Seite zu: Ein Tag dauert so lange wie ein Umlauf – 20 Tage."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Ivera auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Ivera",
+          "text": [
+            "Ivera ist der große Gesteinsmond Neraths, vermutlich aus einem frühen Rieseneinschlag entstanden. Sein Gezeitenbeitrag ist etwa 2,7-mal so groß wie der des Erdmondes; er ermöglicht vollständige Sonnenfinsternisse und prägt die Kalender der Tavari.",
+            "Ivera umkreist Nerath in 20 Tage."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Mond"
+            ],
+            [
+              "Sternsystem",
+              "Terev-System"
+            ],
+            [
+              "Zentralkörper",
+              "Nerath"
+            ],
+            [
+              "Große Halbachse",
+              "313.296 km"
+            ],
+            [
+              "Umlaufzeit",
+              "20 Tage"
+            ],
+            [
+              "Durchmesser",
+              "3.950 km"
+            ],
+            [
+              "Masse",
+              "1,463 Mondmassen"
+            ],
+            [
+              "Schwerkraft",
+              "0,19 g"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -25 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Nerath",
+          "text": [
+            "Das Terev-System ist die Heimat der Synaptoiden: Ihr Planet Nerath umkreist Terev, und Ivera ist einer seiner Monde."
+          ],
+          "verweise": [
+            [
+              "Nerath",
+              "inhalte/himmelskoerper/planeten/details/nerath/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Synaptoiden",
+              "inhalte/spezies/Mentale Spezies/Synaptoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Ivera im Terev-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Nerath"
+            ],
+            [
+              "Große Halbachse",
+              "313.296 km"
+            ],
+            [
+              "Exzentrizität",
+              "0,045"
+            ],
+            [
+              "Bahnneigung",
+              "5,1°"
+            ],
+            [
+              "Umlaufzeit",
+              "20 Tage"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Terev · Stern",
+              "Orangegelber Zwerg (K0 V)"
+            ],
+            [
+              "Vaskir · 0,16 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Sereth · 0,42 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Nerath · 0,93 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Talvek · 1,57 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Urakan · 4,4 AE",
+              "Gasriese"
+            ],
+            [
+              "Oryss · 9,3 AE",
+              "Eisriese"
+            ],
+            [
+              "Veyl · 22,8 AE",
+              "Eisplanet"
+            ],
+            [
+              "Relt · 44 AE",
+              "Zwergplanet"
+            ],
+            [
+              "Othir · 52 AE",
+              "Zwergplanet"
+            ],
+            [
+              "Skalenband · 2,2–3,2 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Taren-Saum · 38–65 AE",
+              "Kleinkörpergürtel"
+            ],
+            [
+              "Terev-Fernwolke · 1.500–8.000 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Terev",
+              "inhalte/himmelskoerper/sterne/details/terev/hauptseite/index.html"
+            ],
+            [
+              "Vaskir",
+              "inhalte/himmelskoerper/planeten/details/vaskir/hauptseite/index.html"
+            ],
+            [
+              "Sereth",
+              "inhalte/himmelskoerper/planeten/details/sereth/hauptseite/index.html"
+            ],
+            [
+              "Nerath",
+              "inhalte/himmelskoerper/planeten/details/nerath/hauptseite/index.html"
+            ],
+            [
+              "Talvek",
+              "inhalte/himmelskoerper/planeten/details/talvek/hauptseite/index.html"
+            ],
+            [
+              "Urakan",
+              "inhalte/himmelskoerper/planeten/details/urakan/hauptseite/index.html"
+            ],
+            [
+              "Oryss",
+              "inhalte/himmelskoerper/planeten/details/oryss/hauptseite/index.html"
+            ],
+            [
+              "Veyl",
+              "inhalte/himmelskoerper/planeten/details/veyl/hauptseite/index.html"
+            ],
+            [
+              "Relt",
+              "inhalte/himmelskoerper/zwergplaneten/details/relt/hauptseite/index.html"
+            ],
+            [
+              "Othir",
+              "inhalte/himmelskoerper/zwergplaneten/details/othir/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Ivera.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "1.975 km"
+            ],
+            [
+              "Masse",
+              "1,463 Mondmassen"
+            ],
+            [
+              "Mittlere Dichte",
+              "3,33 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "1,84 m/s² (0,187 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "2,7 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Ivera.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Ivera ist geologisch weitgehend erstarrt; Einschläge haben seine Oberfläche geformt."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Ivera.",
+      "abschnitte": [
+        {
+          "titel": "Gashülle",
+          "text": [
+            "Ivera besitzt keine nennenswerte Atmosphäre – dafür ist die Schwerkraft zu gering."
+          ]
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Ivera.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 0,93 AE Abstand zu Terev liegt die Gleichgewichtstemperatur von Ivera bei rund -25 °C – kalt."
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Ivera.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Ivera entstand zusammen mit dem Terev-System vor rund 5,6 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Ivera.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Ist der Mond eingefangen oder mit seinem Planeten entstanden?",
+            "Welche Spuren tragen seine ältesten Krater?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Ivera ist mit allen Bahndaten im Terev-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=nerath-stern&objekt=nerath-ivera"
+            ]
+          ]
+        },
+        {
+          "titel": "Raumfahrt",
+          "text": [
+            "Ivera war eines der ersten wichtigen Ziele der Tavari-Raumfahrt. Forschungsstationen untersuchen seine Geologie und die Entstehung des Nerath-Ivera-Systems aus einem frühen Rieseneinschlag."
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Ivera.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Ivera ist der große Gesteinsmond Neraths, vermutlich aus einem frühen Rieseneinschlag entstanden. Sein Gezeitenbeitrag ist etwa 2,7-mal so groß wie der des Erdmondes; er ermöglicht vollständige Sonnenfinsternisse und prägt die Kalender der Tavari."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Ivera.",
+      "abschnitte": [
+        {
+          "titel": "Ivera – Archivbild",
+          "bild": true,
+          "bildtext": "Ivera"
+        }
+      ]
+    }
+  }
+}

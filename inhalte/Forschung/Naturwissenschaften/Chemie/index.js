@@ -77,7 +77,7 @@ const knoten = [
         "belohnung": {
             "art": "gegenstand",
             "name": "Probenahme Materialanalysen",
-            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/OzeanWelt/erde-im-sternenmeer/unterseiten/ERDE_BILDER/Erforschung/07%20%E2%80%93%20Probenahme%20&%20Materialanalysen/07_Probenahme_Materialanalysen.jpg"
+            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/OzeanWelt/erde/unterseiten/ERDE_BILDER/Erforschung/07%20%E2%80%93%20Probenahme%20&%20Materialanalysen/07_Probenahme_Materialanalysen.jpg"
         }
     },
     {

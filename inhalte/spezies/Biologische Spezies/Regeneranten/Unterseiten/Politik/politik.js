@@ -1,2 +1,3 @@
-// Regeneranten – Politik · erzeugt vom Spezies-Baukasten (scripts/spezies) – Änderungen dort vornehmen
+// Regeneranten – Politik
+// Gemeinsame Funktionen (Topbar, Sidebar, Routen, Klappkapitel, Bildkarussell) kommen aus der Basis.
 import "../../regeneranten-basis.js";

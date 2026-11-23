@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#0c1108">
+    <meta name="theme-color" content="#060a0b">
     <meta name="description" content="Spielintegration der Echonoiden im APORIA-Weltenarchiv.">
     <title>Spielintegration · Echonoiden · APORIA</title>
     <link rel="stylesheet" href="../../../../../Men%C3%BCs/TopBar/Top_bar.css">
@@ -13,23 +13,23 @@
     <link rel="stylesheet" href="gameplay.css">
     <script type="module" src="gameplay.js"></script>
 </head>
-<body class="echonoiden st-gameplay" data-page="spezies-mental-5-gameplay" data-section="spezies">
+<body class="echonoiden ec-gameplay" data-page="spezies-mental-5-gameplay" data-section="spezies">
     <div data-aporia-topbar></div>
-    <div class="aporia-page-frame st-frame">
+    <div class="aporia-page-frame ec-frame">
         <div data-aporia-sidebar></div>
-        <main class="st-dossier" id="inhalt">
-            <header class="st-hero st-hero--reiter">
-                
-                <span class="st-glanz" aria-hidden="true"></span>
-                <div class="st-hero-text">
-                    <nav class="st-pfad" aria-label="Archivpfad"><a data-route="spezies" href="../../../Spezies_%C3%BCbersicht/Spezies.html">Spezies</a><span aria-hidden="true">›</span><a data-route="spezies-mental" href="../../%C3%9Cbersichtsseite%20Mentale%20Spezies/Uebersicht.html">Mentale Spezies</a><span aria-hidden="true">›</span><a data-route="spezies-mental-5" href="../hauptseite/Spezies.html">Echonoiden</a><span aria-hidden="true">›</span><span aria-current="page">Spielintegration</span></nav>
-                    <p class="st-kicker">Echonoiden · Hauptreiter</p>
+        <main class="ec-dossier" id="inhalt">
+            <header class="ec-hero ec-hero--reiter">
+                <img class="ec-hero-bild" src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Echonoiden/entwicklungsstadien/Echonoid_ent_A5.png" alt="" fetchpriority="high" decoding="async">
+                <span class="ec-glanz" aria-hidden="true"></span>
+                <div class="ec-hero-text">
+                    <nav class="ec-pfad" aria-label="Archivpfad"><a data-route="spezies" href="../../../Spezies_%C3%BCbersicht/Spezies.html">Spezies</a><span aria-hidden="true">›</span><a data-route="spezies-mental" href="../../%C3%9Cbersichtsseite%20Mentale%20Spezies/Uebersicht.html">Mentale Spezies</a><span aria-hidden="true">›</span><a data-route="spezies-mental-5" href="../hauptseite/Spezies.html">Echonoiden</a><span aria-hidden="true">›</span><span aria-current="page">Spielintegration</span></nav>
+                    <p class="ec-kicker">Echonoiden · Hauptreiter</p>
                     <h1>Spielintegration</h1>
-                    <p class="st-unterzeile">Spielmechaniken und Interaktion</p>
+                    <p class="ec-unterzeile">Resonanzmodus, Schleichen, Überlastung und Missionen</p>
                 </div>
             </header>
-            <nav class="st-reiter" aria-label="Hauptreiter der Echonoiden">
-                <a href="../hauptseite/Spezies.html" data-route="spezies-mental-5"><span aria-hidden="true">◆</span>Übersicht</a>
+            <nav class="ec-reiter" aria-label="Hauptreiter der Echonoiden">
+                <a href="../hauptseite/Spezies.html" data-route="spezies-mental-5"><span aria-hidden="true">✶</span>Übersicht</a>
                 <a href="../Unterseiten/Allgemeines/allgemeines.html" data-route="spezies-mental-5-allgemeines"><span aria-hidden="true">ⓘ</span>Allgemeines</a>
                 <a href="../Unterseiten/Biologie/biologie.html" data-route="spezies-mental-5-biologie"><span aria-hidden="true">⟡</span>Biologie</a>
                 <a href="../Unterseiten/Entwicklung/entwicklung.html" data-route="spezies-mental-5-entwicklung"><span aria-hidden="true">⤳</span>Entwicklung</a>
@@ -39,37 +39,235 @@
                 <a href="../Unterseiten/Geschichte/geschichte.html" data-route="spezies-mental-5-geschichte"><span aria-hidden="true">⧗</span>Geschichte</a>
                 <a href="gameplay.html" data-route="spezies-mental-5-gameplay" aria-current="page"><span aria-hidden="true">◈</span>Spielintegration</a>
                 <a href="../Forschung/forschung.html" data-route="spezies-mental-5-forschung"><span aria-hidden="true">⚗</span>Forschung</a>
+                <a href="../Unterseiten/Technologien/technologien.html" data-route="spezies-mental-5-technologien"><span aria-hidden="true">⚙</span>Technologien</a>
                 <a href="../Unterseiten/Medien/medien.html" data-route="spezies-mental-5-medien"><span aria-hidden="true">▣</span>Medien</a>
             </nav>
-            <div class="st-layout">
-                <div class="st-inhalt">
-                    <details class="st-panel st-karte" id="noch-offen" open>
-                        <summary><span class="st-nr">…</span><h2>Spielintegration</h2><span class="st-chevron" aria-hidden="true"></span></summary>
-                        <div class="st-text">
-                            <p class="st-offen">Noch nicht ausgearbeitet.</p>
-                            <p class="st-quelle">Vorgesehene Infodateien (noch ohne Text): Gameplay/.gitkeep</p>
+            <div class="ec-layout">
+                <div class="ec-inhalt">
+                    <details class="ec-panel ec-karte" id="k-steckbrief">
+                        <summary><span class="ec-nr">◇</span><h2>Steckbrief</h2><span class="ec-chevron" aria-hidden="true"></span></summary>
+                        <div class="ec-text">
+                            <dl class="ec-fakten"><div><dt>Speziesrolle</dt><dd>Intelligente NPC-Spezies mit einzigartiger Wahrnehmung</dd></div><div><dt>Spielwelt</dt><dd>APORIA – Unter fremden Kronen</dd></div><div><dt>Gameplay-Schwerpunkt</dt><dd>Resonanznavigation, Informationsanalyse, Kommunikation und räumliche Rätsel</dd></div></dl>
+                            <p class="ec-quelle">Quelle: Info_material · Echonoiden · Gameplay/.gitkeep</p>
                         </div>
                     </details>
-                    
-                    <aside class="st-panel st-block st-links" aria-label="Verknüpfungen">
-                    <h2 class="st-h2">Verknüpfungen</h2>
+                    <details class="ec-panel ec-karte" id="k-1-grundidee">
+                        <summary><span class="ec-nr">1</span><h2>Grundidee</h2><span class="ec-chevron" aria-hidden="true"></span></summary>
+                        <div class="ec-text">
+                            <p>Echonoiden besitzen eine besondere Fähigkeit zur Analyse mechanischer Schwingungen.</p>
+                            <p>Diese Fähigkeit wird im Gameplay als eigenständiges Wahrnehmungssystem umgesetzt.</p>
+                            <p>Sie unterscheidet sich deutlich von visueller Ortung, elektrischer Wahrnehmung, gewöhnlichem Sonar und mentalen Reisen.</p>
+                            <p>Die menschliche Protagonistin kann Echonoiden begegnen, mit ihnen zusammenarbeiten und bestimmte technische Schnittstellen nutzen.</p>
+                            <p>Eine automatische Festlegung der Echonoiden als von Spielbeginn an spielbare Spezies erfolgt nicht.</p>
+                            <p class="ec-quelle">Quelle: Info_material · Echonoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="ec-panel ec-karte" id="k-2-resonanzwahrnehmung">
+                        <summary><span class="ec-nr">2</span><h2>Resonanzwahrnehmung</h2><span class="ec-chevron" aria-hidden="true"></span></summary>
+                        <div class="ec-text">
+                            <p>Echonoiden-NPCs können Bewegungen, Materialantworten und bestimmte verdeckte Aktivitäten anhand geeigneter Signale erkennen.</p>
+                            <p>Die Präzision hängt ab von:</p>
+                            <ul><li>Entfernung</li><li>Signalstärke</li><li>Materialeigenschaften</li><li>Hindernissen</li><li>akustischen Bedingungen</li><li>Bewegung des Ziels</li><li>Störsignalen</li><li>Konzentration und Erfahrung</li></ul>
+                            <p>Die Wahrnehmung ist nicht allwissend.</p>
+                            <p class="ec-quelle">Quelle: Info_material · Echonoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="ec-panel ec-karte" id="k-3-der-resonanzmodus">
+                        <summary><span class="ec-nr">3</span><h2>Der Resonanzmodus</h2><span class="ec-chevron" aria-hidden="true"></span></summary>
+                        <div class="ec-text">
+                            <p>Als Spielmechanik kann ein technischer Resonanzmodus eingeführt werden.</p>
+                            <p>Dieser zeigt dem Spieler eine interpretierte Darstellung mechanischer Messungen.</p>
+                            <p>Mögliche visuelle Elemente sind:</p>
+                            <ul><li>sich ausbreitende Wellenfronten</li><li>zeitlich verzögerte Objektkonturen</li><li>erkennbare Bewegungsbahnen</li><li>Materialhinweise</li><li>Signalstörungen</li><li>farblich oder strukturell getrennte Frequenzgruppen</li></ul>
+                            <p>Diese Darstellung dient der Spielbarkeit.</p>
+                            <p>Sie muss nicht exakt der subjektiven Wahrnehmung eines Echonoiden entsprechen.</p>
+                            <p class="ec-quelle">Quelle: Info_material · Echonoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="ec-panel ec-karte" id="k-4-unterschiedliche-wahrnehmungsumgebungen">
+                        <summary><span class="ec-nr">4</span><h2>Unterschiedliche Wahrnehmungsumgebungen</h2><span class="ec-chevron" aria-hidden="true"></span></summary>
+                        <div class="ec-text">
+                            <dl class="ec-fakten"><div><dt>Offenes Gelände</dt><dd>Weniger starke Reflexionen, größere Bedeutung direkter Schallwege.</dd></div><div><dt>Höhlen</dt><dd>Viele Reflexionen und erhöhte Gefahr von Fehlinterpretationen.</dd></div><div><dt>Unterwassergebiete</dt><dd>Andere Laufzeiten, Signalreichweiten und technische Anforderungen.</dd></div><div><dt>Industriegebiete</dt><dd>Mechanische Störungen können schwache Signale überdecken.</dd></div><div><dt>Weltraum</dt><dd>Im Vakuum sind natürliche Luftschallsignale nicht verfügbar; technische Systeme übernehmen die Außenwahrnehmung.</dd></div></dl>
+                            <p class="ec-quelle">Quelle: Info_material · Echonoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="ec-panel ec-karte" id="k-5-kommunikation-und-dialogsysteme">
+                        <summary><span class="ec-nr">5</span><h2>Kommunikation und Dialogsysteme</h2><span class="ec-chevron" aria-hidden="true"></span></summary>
+                        <div class="ec-text">
+                            <p>Echonoiden besitzen eine mehrschichtige Resonanzsprache.</p>
+                            <p>Ohne geeignete Übersetzung kann ein Mensch nur einen Teil ihrer Signale verstehen.</p>
+                            <p>Ein Übersetzungsgerät kann zunächst einfache Bedeutungen übertragen.</p>
+                            <p>Durch technische Forschung, Sprachdaten und kulturelles Wissen können komplexere Kommunikationsformen freigeschaltet werden.</p>
+                            <p>Missverständnisse ergeben sich aus fehlenden Informationen, nicht aus einer willkürlichen magischen Sprachbarriere.</p>
+                            <p class="ec-quelle">Quelle: Info_material · Echonoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="ec-panel ec-karte" id="k-6-erkundung">
+                        <summary><span class="ec-nr">6</span><h2>Erkundung</h2><span class="ec-chevron" aria-hidden="true"></span></summary>
+                        <div class="ec-text">
+                            <p>Echonoiden eignen sich für Missionen, bei denen die Untersuchung von Oberflächen, mechanischen Strukturen und verborgenen Bewegungen wichtig ist.</p>
+                            <p>Beispiele:</p>
+                            <ul><li>Untersuchung instabiler Höhlen</li><li>Suche nach verdeckten Maschinenanlagen</li><li>Analyse ungewöhnlicher Gesteinsstrukturen</li><li>Rekonstruktion früherer Bewegungsabläufe aus vorhandenen Spuren</li><li>Erforschung alter akustischer Archive</li><li>sichere Navigation durch unterirdische Systeme</li></ul>
+                            <p>Eine vergangene Szene kann nicht allein durch das Hören beliebig lange verschwundener Schwingungen rekonstruiert werden.</p>
+                            <p>Dafür benötigt das Spiel erhaltene materielle Spuren oder Aufzeichnungen.</p>
+                            <p class="ec-quelle">Quelle: Info_material · Echonoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="ec-panel ec-karte" id="k-7-schleichen-und-tarnung">
+                        <summary><span class="ec-nr">7</span><h2>Schleichen und Tarnung</h2><span class="ec-chevron" aria-hidden="true"></span></summary>
+                        <div class="ec-text">
+                            <p>Gegen Echonoiden funktioniert Tarnung anders als gegen visuell orientierte Gegner.</p>
+                            <p>Dunkelheit allein bietet keinen vollständigen Schutz.</p>
+                            <p>Leise Bewegungen, geeignete Oberflächen, akustische Abschirmung und kontrollierte Störsignale können helfen.</p>
+                            <p>Gegner können Täuschsignale oder Schwingungsattrappen einsetzen.</p>
+                            <p>Erfahrene Echonoiden erkennen solche Täuschungen manchmal durch den Vergleich mehrerer Messverfahren.</p>
+                            <p class="ec-quelle">Quelle: Info_material · Echonoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="ec-panel ec-karte" id="k-8-kampf-und-verteidigung">
+                        <summary><span class="ec-nr">8</span><h2>Kampf und Verteidigung</h2><span class="ec-chevron" aria-hidden="true"></span></summary>
+                        <div class="ec-text">
+                            <p>Echonoiden sind keine übermächtigen Schallmagier.</p>
+                            <p>Ihre natürlichen Signalorgane dienen hauptsächlich Kommunikation und Orientierung.</p>
+                            <p>Im Kampf können sie ihre Wahrnehmung nutzen, um Bewegungen besser einzuschätzen und geeignete Deckung zu finden.</p>
+                            <p>Spezielle technische Geräte können begrenzte Desorientierungseffekte erzeugen.</p>
+                            <p>Gehörschutz, Dämpfungssysteme, geeignete Schutzkleidung und sensorische Ersatzsysteme wirken als Gegenmaßnahmen.</p>
+                            <p class="ec-quelle">Quelle: Info_material · Echonoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="ec-panel ec-karte" id="k-9-sensorische-uberlastung">
+                        <summary><span class="ec-nr">9</span><h2>Sensorische Überlastung</h2><span class="ec-chevron" aria-hidden="true"></span></summary>
+                        <div class="ec-text">
+                            <p>Starke Signale können die Wahrnehmung beeinträchtigen.</p>
+                            <p>Im Gameplay können daraus vorübergehende Effekte entstehen:</p>
+                            <ul><li>unpräzise Orientierung</li><li>verringerte Detektionsreichweite</li><li>falsche Signalzuordnung</li><li>verlangsamte Zielidentifizierung</li><li>Bedarf an Erholungszeit</li></ul>
+                            <p>Eine Überlastung führt nicht automatisch zum Verlust von Intelligenz oder Bewusstsein.</p>
+                            <p class="ec-quelle">Quelle: Info_material · Echonoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="ec-panel ec-karte" id="k-11-beispielhafte-missionskonzepte">
+                        <summary><span class="ec-nr">11</span><h2>Beispielhafte Missionskonzepte</h2><span class="ec-chevron" aria-hidden="true"></span></summary>
+                        <div class="ec-text">
+                            <dl class="ec-fakten"><div><dt>Die stumme Küste</dt><dd>Eine Region verliert durch technische Veränderungen wichtige akustische Orientierungssignale. Die Spielerin untersucht die Ursache.</dd></div><div><dt>Das falsche Echo</dt><dd>Eine unbekannte Anlage erzeugt mechanische Signaturen, die nicht zu ihrem sichtbaren Aufbau passen.</dd></div><div><dt>Archiv der Hohlbogenstädte</dt><dd>Alte materielle Aufzeichnungen müssen entschlüsselt und historisch eingeordnet werden.</dd></div><div><dt>Unter den Gezeiten</dt><dd>Ein Forschungsteam untersucht ein Höhlensystem, dessen Zugänge nur während bestimmter Wasserstände sicher erreichbar sind.</dd></div><div><dt>Stimmen im Maschinenfeld</dt><dd>Industrieanlagen verursachen gesundheitsschädigende Schwingungen; wirtschaftliche Interessen und Sicherheitsfragen geraten in Konflikt.</dd></div></dl>
+                            <p>Diese Missionen sind Vorschläge und keine bereits verbindlich in die Haupthandlung eingefügten Ereignisse.</p>
+                            <p class="ec-quelle">Quelle: Info_material · Echonoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="ec-panel ec-karte" id="k-12-begleiter-und-npc-verhalten">
+                        <summary><span class="ec-nr">12</span><h2>Begleiter und NPC-Verhalten</h2><span class="ec-chevron" aria-hidden="true"></span></summary>
+                        <div class="ec-text">
+                            <p>Ein Echonoiden-Begleiter kann vor geeigneten Umgebungsgefahren warnen, unbekannte Materialien untersuchen und alternative Navigationsinformationen liefern.</p>
+                            <p>Unterschiedliche NPCs besitzen verschiedene Fachkenntnisse.</p>
+                            <p>Ein medizinisch ausgebildeter Echonoid ist nicht automatisch ein guter Geologe.</p>
+                            <p>Ein erfahrener Navigator ist nicht zwangsläufig ein ausgezeichneter Übersetzer.</p>
+                            <p>Die individuellen Unterschiede fördern glaubwürdige Charaktere.</p>
+                            <p class="ec-quelle">Quelle: Info_material · Echonoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="ec-panel ec-karte" id="k-13-ausrustung-und-gegenstande">
+                        <summary><span class="ec-nr">13</span><h2>Ausrüstung und Gegenstände</h2><span class="ec-chevron" aria-hidden="true"></span></summary>
+                        <div class="ec-text">
+                            <p>Mögliche Gegenstände sind:</p>
+                            <ul><li>tragbarer Resonanzscanner</li><li>akustischer Mehrkanalübersetzer</li><li>mechanische Kontaktsonde</li><li>Sensorverstärker</li><li>Schwingungsdämpfer</li><li>medizinischer Membranprotektor</li><li>Oberflächenresonanzkartierer</li><li>akustisches Archivlesegerät</li><li>Resonanzsignal-Attrappe</li><li>Neuro-Sensorinterface</li></ul>
+                            <p>Jeder Gegenstand benötigt eine definierte Energieversorgung, Reichweite und geeignete Einsatzbedingungen.</p>
+                            <p class="ec-quelle">Quelle: Info_material · Echonoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="ec-panel ec-karte" id="k-14-integration-in-unreal-engine">
+                        <summary><span class="ec-nr">14</span><h2>Integration in Unreal Engine</h2><span class="ec-chevron" aria-hidden="true"></span></summary>
+                        <div class="ec-text">
+                            <p>Die Wahrnehmung kann als eigenständiges Sensorsystem ausgearbeitet werden.</p>
+                            <p>Es muss nicht die vollständige physikalische Schallausbreitung in Echtzeit berechnen.</p>
+                            <p>Geeignet sind abstrahierte Sensorabfragen mit Materialeigenschaften, Hindernisprüfung, Signalstärke, Entfernung und Störung.</p>
+                            <p>Wichtige Daten können als Gameplay-Tags, Komponenten und strukturierte Sensoreigenschaften verwaltet werden.</p>
+                            <p>Die visualisierte Resonanzansicht kann durch zeitlich animierte Materialeffekte, Partikelsysteme oder spezielle Nachbearbeitung umgesetzt werden.</p>
+                            <p class="ec-quelle">Quelle: Info_material · Echonoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="ec-panel ec-karte" id="k-15-balancing">
+                        <summary><span class="ec-nr">15</span><h2>Balancing</h2><span class="ec-chevron" aria-hidden="true"></span></summary>
+                        <div class="ec-text">
+                            <p>Die Echonoiden erhalten keine unbegrenzte Wahrnehmung.</p>
+                            <p>Ihre besonderen Vorteile müssen durch physikalische und biologische Grenzen ausbalanciert werden.</p>
+                            <p>Dazu gehören eingeschränkte Reichweite, Energiemangel, sensorische Überlastung, ungeeignete Materialien und fehlende Schallmedien.</p>
+                            <p class="ec-quelle">Quelle: Info_material · Echonoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="ec-panel ec-karte" id="k-16-langfristige-spielintegration">
+                        <summary><span class="ec-nr">16</span><h2>Langfristige Spielintegration</h2><span class="ec-chevron" aria-hidden="true"></span></summary>
+                        <div class="ec-text">
+                            <p>Die Echonoiden können in Forschung, Handel, Erkundung, Diplomatie und Umweltmissionen eingesetzt werden.</p>
+                            <p>Spätere Erweiterungen können ihre regionale Politik, Geschichte, Architektur und Kultur vertiefen.</p>
+                            <p>Ihr einzigartiger Gameplay-Kern bleibt die <strong>aktive und passive Rekonstruktion von Umgebungen durch komplexe mechanische Schwingungen</strong>.</p>
+                            <p class="ec-quelle">Quelle: Info_material · Echonoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <section class="ec-panel ec-block ec-karussell-block" id="galerie" aria-label="Bilder">
+                    <h2 class="ec-h2">Bilder <small>4 Bilder · Bildarchiv</small></h2>
+                    <div class="bilder-karussell" data-karussell aria-roledescription="Karussell" aria-label="Bilder der Echonoiden">
+                    <div class="karussell-spur" tabindex="0" aria-label="Bilder – mit Pfeiltasten blättern">
+                        <figure class="karussell-folie" data-kategorie="Lebensbilder" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Echonoid im Sprühregen in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Echonoiden/entwicklungsstadien/Echonoid_ent_A5.png" alt="Echonoid im Sprühregen" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Echonoid im Sprühregen</strong><span>Lebensbilder</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Lebensbilder" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Echonoid auf der Felskante in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Echonoiden/entwicklungsstadien/Echonoid_ent_A4.png" alt="Echonoid auf der Felskante" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Echonoid auf der Felskante</strong><span>Lebensbilder</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Veyruna" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Ihsarek-Spalten in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Echonoiden/Heimatplanet/Echonoiden_welt-A5.png" alt="Ihsarek-Spalten" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Ihsarek-Spalten</strong><span>Veyruna</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Exosuit- und Designstudien" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Dossier und Exosuit-Studien in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Echonoiden/entwicklungsstadien/Echonoiden_%20Spezies-Dossier%20und%20Exosuit-Studien-1.png" alt="Dossier und Exosuit-Studien" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Dossier und Exosuit-Studien</strong><span>Exosuit- und Designstudien</span></figcaption>
+                        </figure>
+                    </div>
+                    <div class="karussell-steuerung">
+                        <button type="button" data-karussell-schritt="-1" aria-label="Vorheriges Bild">‹</button>
+                        <div class="karussell-punkte" role="group" aria-label="Bild wählen"></div>
+                        <output class="karussell-zaehler" aria-live="polite"></output>
+                        <button type="button" data-karussell-schritt="1" aria-label="Nächstes Bild">›</button>
+                    </div>
+                </div>
+                </section>
+                    <aside class="ec-panel ec-block ec-links" aria-label="Verknüpfungen">
+                    <h2 class="ec-h2">Verknüpfungen</h2>
                     <ul>
-                        <li><a href="../Forschung/forschung.html" data-route="spezies-mental-5-forschung"><strong>Forschung</strong><span>Forschungsfelder zu den Echonoiden</span></a></li>
+                        <li><a href="../../../../himmelskoerper/planeten/details/veyruna/hauptseite/index.html" ><strong>Planetendossier Veyruna</strong><span>Heimatwelt im Planetenarchiv</span></a></li>
+                        <li><a href="../../../../himmelskoerper/sternensysteme/details/orelis-system/hauptseite/index.html" ><strong>Orelis-System</strong><span>Systemübersicht</span></a></li>
+                        <li><a href="../../../../../Men%C3%BCs/Sternenkarte/Sternenkarte.html?system=veyruna-stern" ><strong>Sternenkarte</strong><span>Orelis-System in der Karte ansehen</span></a></li>
+                        <li><a href="../Unterseiten/Technologien/technologien.html" data-route="spezies-mental-5-technologien"><strong>Technologien</strong><span>Technologien der Echonoiden</span></a></li>
+                        <li><a href="../../../../Technologien/%C3%9Cbersichtsseite/index.html" data-route="inhalt-technologien"><strong>Technologiearchiv</strong><span>Erfindungen, Maschinen und Geräte</span></a></li>
+                        <li><a href="../Forschung/forschung.html" data-route="spezies-mental-5-forschung"><strong>Forschung</strong><span>Forschung an den Echonoiden</span></a></li>
                         <li><a href="../../../../Forschung/%C3%9Cbersicht/Forschung.html" ><strong>Forschungsarchiv</strong><span>Alle Forschungszweige</span></a></li>
-                        <li><a href="../../%C3%9Cbersichtsseite%20Mentale%20Spezies/Uebersicht.html" data-route="spezies-mental"><strong>Mentale Spezies</strong><span>Alle Spezies dieser Gruppe</span></a></li>
-                        <li><a href="../../../Spezies_%C3%BCbersicht/Spezies.html" data-route="spezies"><strong>Speziesarchiv</strong><span>Alle Gruppen</span></a></li>
-                        <li><a href="../../../../himmelskoerper/planeten/planeten.html" data-route="planeten"><strong>Planetenarchiv</strong><span>Heimatwelten im Weltenarchiv</span></a></li>
                     </ul>
                 </aside>
-                    <nav class="st-blaettern" aria-label="Hauptreiter blättern"><a href="../Unterseiten/Geschichte/geschichte.html" data-route="spezies-mental-5-geschichte">← Geschichte</a><a href="../Forschung/forschung.html" data-route="spezies-mental-5-forschung">Forschung →</a></nav>
+                    <nav class="ec-blaettern" aria-label="Hauptreiter blättern"><a href="../Unterseiten/Geschichte/geschichte.html" data-route="spezies-mental-5-geschichte">← Geschichte</a><a href="../Forschung/forschung.html" data-route="spezies-mental-5-forschung">Forschung →</a></nav>
                 </div>
-                <nav class="st-panel st-sprung" data-st-sprung aria-label="Kapitel dieser Seite">
-                    <p class="st-kicker">Kapitel</p>
-                    <button type="button" class="st-klappen" data-st-klappen aria-pressed="false">Alle aufklappen</button>
-                    <a href="#noch-offen"><span class="st-nr">…</span>Spielintegration</a>
+                <nav class="ec-panel ec-sprung" data-ec-sprung aria-label="Kapitel dieser Seite">
+                    <p class="ec-kicker">Kapitel</p>
+                    <button type="button" class="ec-klappen" data-ec-klappen aria-pressed="false">Alle aufklappen</button>
+                    <a href="#k-steckbrief"><span class="ec-nr">◇</span>Steckbrief</a>
+                    <a href="#k-1-grundidee"><span class="ec-nr">1</span>Grundidee</a>
+                    <a href="#k-2-resonanzwahrnehmung"><span class="ec-nr">2</span>Resonanzwahrnehmung</a>
+                    <a href="#k-3-der-resonanzmodus"><span class="ec-nr">3</span>Der Resonanzmodus</a>
+                    <a href="#k-4-unterschiedliche-wahrnehmungsumgebungen"><span class="ec-nr">4</span>Unterschiedliche Wahrnehmungsumgebungen</a>
+                    <a href="#k-5-kommunikation-und-dialogsysteme"><span class="ec-nr">5</span>Kommunikation und Dialogsysteme</a>
+                    <a href="#k-6-erkundung"><span class="ec-nr">6</span>Erkundung</a>
+                    <a href="#k-7-schleichen-und-tarnung"><span class="ec-nr">7</span>Schleichen und Tarnung</a>
+                    <a href="#k-8-kampf-und-verteidigung"><span class="ec-nr">8</span>Kampf und Verteidigung</a>
+                    <a href="#k-9-sensorische-uberlastung"><span class="ec-nr">9</span>Sensorische Überlastung</a>
+                    <a href="#k-11-beispielhafte-missionskonzepte"><span class="ec-nr">11</span>Beispielhafte Missionskonzepte</a>
+                    <a href="#k-12-begleiter-und-npc-verhalten"><span class="ec-nr">12</span>Begleiter und NPC-Verhalten</a>
+                    <a href="#k-13-ausrustung-und-gegenstande"><span class="ec-nr">13</span>Ausrüstung und Gegenstände</a>
+                    <a href="#k-14-integration-in-unreal-engine"><span class="ec-nr">14</span>Integration in Unreal Engine</a>
+                    <a href="#k-15-balancing"><span class="ec-nr">15</span>Balancing</a>
+                    <a href="#k-16-langfristige-spielintegration"><span class="ec-nr">16</span>Langfristige Spielintegration</a>
+                    <a href="#galerie"><span class="ec-nr">▣</span>Bilder</a>
                 </nav>
             </div>
-            <dialog class="st-zoom" aria-label="Bild in Großansicht"><div class="controls"><button class="control" type="button" data-step="-1" aria-label="Vorheriges Bild">←</button><output aria-live="polite"></output><button class="control" type="button" data-step="1" aria-label="Nächstes Bild">→</button></div><form method="dialog"><button class="control">Schließen</button></form><img alt=""></dialog>
+            <dialog class="ec-zoom" aria-label="Bild in Großansicht"><div class="controls"><button class="control" type="button" data-step="-1" aria-label="Vorheriges Bild">←</button><output aria-live="polite"></output><button class="control" type="button" data-step="1" aria-label="Nächstes Bild">→</button></div><form method="dialog"><button class="control">Schließen</button></form><img alt=""></dialog>
         </main>
     </div>
 </body>

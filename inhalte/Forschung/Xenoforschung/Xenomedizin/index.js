@@ -47,7 +47,7 @@ const knoten = [
         "belohnung": {
             "art": "gegenstand",
             "name": "Anatomie Physiologie",
-            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/OzeanWelt/erde-im-sternenmeer/unterseiten/ERDE_BILDER/Flora%20&%20Fauna/14%20%E2%80%93%20Anatomie%20&%20Physiologie/14_Anatomie_Physiologie.jpg"
+            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/OzeanWelt/erde/unterseiten/ERDE_BILDER/Flora%20&%20Fauna/14%20%E2%80%93%20Anatomie%20&%20Physiologie/14_Anatomie_Physiologie.jpg"
         }
     },
     {

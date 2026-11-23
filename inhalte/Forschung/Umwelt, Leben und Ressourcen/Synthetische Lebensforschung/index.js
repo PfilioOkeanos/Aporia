@@ -55,7 +55,7 @@ const knoten = [
         "belohnung": {
             "art": "gegenstand",
             "name": "Kaeross die planetengrosse synthesekreatur",
-            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/synthetische_planetenwesen/kaeross-die-planetengrosse-synthesekreatur/hauptseite/kaeross-die-planetengrosse-synthesekreatur-6e98c8844bfc.jpg"
+            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/synthetische_planetenwesen/kaeross/hauptseite/kaeross-die-planetengrosse-synthesekreatur-6e98c8844bfc.jpg"
         }
     },
     {
@@ -69,7 +69,7 @@ const knoten = [
         "belohnung": {
             "art": "gegenstand",
             "name": "Jorvane das planetengrosse synthesewesen",
-            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/synthetische_planetenwesen/jorvane-das-planetengrosse-synthesewesen/hauptseite/jorvane-das-planetengrosse-synthesewesen-630028e7a940.jpg"
+            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/synthetische_planetenwesen/jorvane/hauptseite/jorvane-das-planetengrosse-synthesewesen-630028e7a940.jpg"
         }
     },
     {
@@ -101,7 +101,7 @@ const knoten = [
         "belohnung": {
             "art": "gegenstand",
             "name": "Glyrane der planetengrosse synthesekoloss",
-            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/synthetische_planetenwesen/glyrane-der-planetengrosse-synthesekoloss/hauptseite/glyrane-der-planetengrosse-synthesekoloss-858030f06c09.jpg"
+            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/synthetische_planetenwesen/glyrane/hauptseite/glyrane-der-planetengrosse-synthesekoloss-858030f06c09.jpg"
         }
     }
 ];

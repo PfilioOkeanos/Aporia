@@ -9,6 +9,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { ROOT, FZ, esc, rel, write, exists, slug, kapitel, erstelle, medienSetzen, klaengeFinden } from "./bibliothek.mjs";
+import { parasitoidenStart } from "./eigene/parasitoiden-start.mjs";
 import { baueBasis } from "./basis.mjs";
 
 export const GRUPPEN = {
@@ -28,8 +29,11 @@ const REITER = [
     ["geschichte", "Geschichte", "Unterseiten/Geschichte/geschichte.html", "⧗", "Wichtige Entwicklungsphasen und Wendepunkte"],
     ["gameplay", "Spielintegration", "Gameplay/gameplay.html", "◈", "Spielmechaniken und Interaktion"],
     ["forschung", "Forschung", "Forschung/forschung.html", "⚗", "Forschungsfelder und offene Fragen"],
+    // nur bei Spezies, die Technologien herstellen (Infoordner „Technologien“) – sonst entfällt der Reiter
+    ["technologien", "Technologien", "Unterseiten/Technologien/technologien.html", "⚙", "Erfindungen, Geräte und technische Systeme"],
     ["medien", "Medien", "Unterseiten/Medien/medien.html", "▣", "Bilder, Klänge, Bewegtbild und Modelle"],
 ];
+export const TECHNIK_REITER = REITER.find(([k]) => k === "technologien");
 // Zuordnung einer Info-Datei zu einem Reiter (Pfad relativ zum Speziesordner, Kleinschreibung)
 function reiterFuer(p) {
     if (/fragen templates|template/.test(p)) return null;
@@ -38,6 +42,7 @@ function reiterFuer(p) {
     if (/gameplay|spielintegration/.test(p)) return "gameplay";
     if (/heimatwelt|05_/.test(p)) return "heimatwelt";
     if (/politik|fraktion|04_/.test(p)) return "politik";
+    if (/(^|\/)technolog/.test(p)) return "technologien";
     if (/gesellschaft|kultur|technolog|03_/.test(p)) return "gesellschaft";
     if (/geschichte/.test(p)) return "geschichte";
     if (/entwicklung/.test(p)) return "entwicklung";
@@ -105,16 +110,24 @@ export function baueStandard(cfg) {
     const quellen = Object.fromEntries(REITER.map(([k]) => [k, []]));
     for (const d of infoDateien) { const k = reiterFuer(d.toLowerCase()); if (k) quellen[k].push(d); }
     Object.assign(quellen, cfg.quellen ?? {});
+    // aktive Reiter: Technologien nur, wenn Infotexte dafür vorliegen
+    const AKTIV = REITER.filter(([k]) => k !== "technologien" || quellen.technologien?.length);
     const bildDateien = walk(path.join(ROOT, A)).filter((f) => /\.(png|jpe?g|webp)$/i.test(f)).map((f) => path.relative(ROOT, f).replace(/\\/g, "/")).sort((a, b) => a.localeCompare(b, "de", { numeric: true }));
     const kategorie = (d) => { const o = d.slice(A.length + 1).split("/")[0]; return /^design/i.test(o) ? "Designtafeln" : /gesamt/i.test(o) ? "Gesamtdarstellung" : o.includes(".") ? "Bildarchiv" : o.replace(/[_-]+/g, " ").replace(/^\w/, (c) => c.toUpperCase()); };
     const BILDER = bildDateien.map((d) => ({ datei: d, titel: path.posix.basename(d).replace(/\.\w+$/, "").replace(/[_]+/g, " ").replace(/\s*-\d+$/, "").replace(/\s+/g, " ").trim(), kategorie: kategorie(d) }));
+    if (cfg.titelmotiv) BILDER.sort((a, b) => Number(b.datei.endsWith("/" + cfg.titelmotiv)) - Number(a.datei.endsWith("/" + cfg.titelmotiv)));
     const KLANG = klaengeFinden(AUDIO);
     const videos = walk(path.join(ROOT, VIDEO)).filter((f) => /\.(mp4|webm|mov)$/i.test(f)).map((f) => ({ title: path.basename(f).replace(/\.\w+$/, "").replace(/[_]+/g, " "), src: "../../" + path.relative(ROOT, f).replace(/\\/g, "/") }));
     if (KLANG.length || videos.length) medienSetzen(KLASSE, { videos: { animationen: { items: [] }, videos: { items: videos } }, audio: Object.fromEntries(KLANG.map((k) => [k.schluessel, { items: k.items }])) });
 
     const bildNr = (i) => BILDER.length ? BILDER[i % BILDER.length] : null;
     const SEITEN = [{ key: "hauptseite", suffix: "", label: "Übersicht", file: S + "/hauptseite/Spezies.html", icon: "◆" },
-        ...REITER.map(([key, label, datei, icon, text], i) => ({ key, suffix: "-" + key, label, file: S + "/" + datei, icon, text, quellen: quellen[key], titelbild: bildNr(i + 1), galerie: BILDER.length ? Array.from({ length: Math.min(6, BILDER.length) }, (_, j) => BILDER[(i + j) % BILDER.length]) : [] }))];
+        ...AKTIV.map(([key, label, datei, icon, text], i) => {
+            const bildordner = cfg.bildordnerJeReiter?.[key];
+            const reiterbilder = bildordner ? BILDER.filter((b) => b.datei.startsWith(A + "/" + bildordner + "/")) : [];
+            const galerie = reiterbilder.length ? reiterbilder : Array.from({ length: Math.min(6, BILDER.length) }, (_, j) => bildNr(i + j));
+            return { key, suffix: "-" + key, label, file: S + "/" + datei, icon, text, quellen: quellen[key], titelbild: reiterbilder[0] ?? bildNr(i + 1), galerie };
+        })];
     if (cfg.forschungszweige?.length) {
         const fs_ = SEITEN.find((s) => s.key === "forschung");
         fs_.design = [{ titel: "Forschungszweige im Weltenarchiv", quelle: cfg.forschungsquelle ?? "Info_material · " + NAME + " · Forschung", html: `<div class="${P}-zweige">${cfg.forschungszweige.map(([z, t]) => `<a href="${rel(fs_.file, FZ + "/" + z + "/index.html")}"><strong>${esc(t)}</strong><span>${esc(z.split("/")[1])}</span></a>`).join("")}</div>` }];
@@ -154,7 +167,7 @@ export function baueStandard(cfg) {
     const forschung = alleKap("forschung").slice(0, 24);
     const intro = (beschr?.html.match(/<p>[\s\S]*?<\/p>/g) ?? []).slice(0, 2).join("") || `<p>Dieses Dossier ist noch nicht ausgearbeitet.</p>`;
     const unterzeile = karte?.text?.replace(/<[^>]+>/g, "") || gruppe;
-    const stand = REITER.map(([k, label]) => [label, alleKap(k).length]);
+    const stand = AKTIV.map(([k, label]) => [label, alleKap(k).length]);
     const mitText = stand.filter(([, n]) => n).length;
     const klapp = (x, offen = false) => `<details class="${P}-klapp"${offen ? " open" : ""}><summary><strong>${esc(x.titel)}</strong><small>${esc(x.nr === "◇" ? "" : x.nr)}</small><span class="${P}-chevron" aria-hidden="true"></span></summary><div class="${P}-klapp-inhalt">${x.html}</div></details>`;
     const kachel = (key) => { const t = S_[key], b = t.titelbild; return `                    <a class="${P}-panel ${P}-thema${b ? "" : ` ${P}-thema--ohne-bild`}" ${L(key)}>${b ? `<img class="${P}-thema-bild" src="${rel(f, b.datei)}" alt="" loading="lazy" decoding="async">` : `<span class="${P}-thema-icon" aria-hidden="true">${t.icon}</span>`}<strong>${esc(t.label)}</strong><span class="${P}-thema-text">${esc(t.text)}</span></a>`; };
@@ -162,7 +175,7 @@ export function baueStandard(cfg) {
     const werte = karte?.werte?.length ? fuelleWerte(karte.werte, dossierFakten) : [];
     const kurz = werte.length ? `<dl class="${P}-fakten">${werte.map(([a, b]) => `<div><dt>${esc(a)}</dt><dd>${b}</dd></div>`).join("")}</dl>` : "";
     const fehlt = [
-        mitText < REITER.length ? [`Infotexte für ${REITER.length - mitText} von ${REITER.length} Reitern`, INFO] : null,
+        mitText < AKTIV.length ? [`Infotexte für ${AKTIV.length - mitText} von ${AKTIV.length} Reitern`, INFO] : null,
         !BILDER.length ? ["Bilder (Designtafel, Gesamtdarstellung)", A] : null,
         !KLANG.length ? ["Klänge (Unterordner je Kategorie)", AUDIO] : null,
         !videos.length ? ["Videos", VIDEO] : null,
@@ -208,7 +221,7 @@ ${BILDER.length ? `            <section class="${P}-panel ${P}-block ${P}-karuss
                 ${B.titel("Forschung", forschung.length + " Kapitel", "⚗", "forschung-titel")}
                 <div class="${P}-chips">${forschung.map((x) => `<a href="${rel(f, S_.forschung.file)}#${x.id}" data-route="${R0}-forschung" data-route-fragment="${x.id}">${x.nr === "◇" ? "" : `<b>${esc(x.nr)}</b> `}${esc(x.titel)}</a>`).join("")}</div>
             </section>\n` : ""}${fehlt.length ? `            <section class="${P}-panel ${P}-block ${P}-stand" aria-labelledby="stand-titel">
-                ${B.titel("Dossierstand", mitText + " von " + REITER.length + " Reitern mit Infotext", "◌", "stand-titel")}
+                ${B.titel("Dossierstand", mitText + " von " + AKTIV.length + " Reitern mit Infotext", "◌", "stand-titel")}
                 <p class="${P}-offen">Dieses Dossier wird automatisch aus dem Projekt erzeugt. Noch nicht vorhanden:</p>
                 <ul class="${P}-stand-liste">${fehlt.map(([was, wo]) => `<li><strong>${esc(was)}</strong><code>${esc(wo)}</code></li>`).join("")}</ul>
             </section>\n` : ""}            <div class="${P}-layout ${P}-layout--fuss">
@@ -219,17 +232,25 @@ ${BILDER.length ? `            <section class="${P}-panel ${P}-block ${P}-karuss
             </div>
 ` + B.fuss();
     html = html.replace(`<link rel="stylesheet" href="Spezies.css">`, `<link rel="stylesheet" href="${rel(f, "inhalte/spezies/_gemeinsam/spezies-standard.css")}">\n    <link rel="stylesheet" href="Spezies.css">`);
+    if (cfg.hauptseitenStil) {
+        const stil = rel(f, S + "/hauptseite/" + cfg.hauptseitenStil);
+        html = html.replace("</head>", `    <link rel="stylesheet" href="${esc(stil)}">\n</head>`);
+    }
+    if (ordner === "Parasitoiden") {
+        html = html.replace("</head>", '<link rel="stylesheet" href="kheravi.css"></head>').replace('<div class="st-start">', parasitoidenStart(f) + '<div class="st-start">');
+    }
     write(f, html);
     write(S + "/hauptseite/Spezies.js", `// ${NAME} – Hauptseite · erzeugt vom Spezies-Baukasten (scripts/spezies) – Änderungen dort vornehmen\nimport "../${KLASSE}-basis.js";\n`);
     write(S + "/hauptseite/Spezies.css", `/* ${NAME} – Hauptseite · erzeugt vom Spezies-Baukasten (scripts/spezies)\n   Aufbau: inhalte/spezies/_gemeinsam/spezies-standard.css · Farben: ../${KLASSE}-basis.css · eigene Anpassungen hier ergänzen. */\n`);
 
     // ---------- Routen, Übersichtskarte ----------
-    routenSetzen(R0, S);
+    routenSetzen(R0, S, AKTIV);
     if (karte) karteAktualisieren(gruppe, karte, { R0, S, bild: BILDER[0]?.datei, werte });
     return { NAME, seiten: SEITEN.length, info: infoDateien.length, kapitel: stand.reduce((n, [, x]) => n + x, 0), bilder: BILDER.length, klaenge: KLANG.reduce((n, k) => n + k.anzahl, 0), videos: videos.length };
 }
 
-function routenSetzen(R0, S) {
+// Fehlende Unterseiten-Routen in aporia-routes.js nach der Hauptroute einfügen (auch für eigene Bauskripte)
+export function routenSetzen(R0, S, liste = REITER) {
     const f = path.join(ROOT, "Menüs/adapter/aporia-routes.js");
     let t = fs.readFileSync(f, "utf8");
     const nl = t.includes("\r\n") ? "\r\n" : "\n";
@@ -237,7 +258,7 @@ function routenSetzen(R0, S) {
     const zeile = (k, p) => `    "${k}": new URL("../../${enc(S + "/" + p)}", import.meta.url).href,`;
     const kopf = t.split(nl).find((z) => z.includes(`"${R0}":`));
     if (!kopf) throw new Error("Hauptroute fehlt in aporia-routes.js: " + R0);
-    const neu = REITER.filter(([k]) => !t.includes(`"${R0}-${k}":`)).map(([k, , p]) => zeile(R0 + "-" + k, p));
+    const neu = liste.filter(([k]) => !t.includes(`"${R0}-${k}":`)).map(([k, , p]) => zeile(R0 + "-" + k, p));
     if (neu.length) { t = t.split(kopf).join([kopf, ...neu].join(nl)); fs.writeFileSync(f, t); }
 }
 // „Offen“-Werte des Kurzprofils aus den Steckbriefzeilen der Infotexte füllen (vorhandene Werte bleiben)

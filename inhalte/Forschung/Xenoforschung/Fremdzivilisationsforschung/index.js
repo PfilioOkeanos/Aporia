@@ -38,7 +38,7 @@ const knoten = [
         "belohnung": {
             "art": "gegenstand",
             "name": "Kultur Zivilisationsgeschichte",
-            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/OzeanWelt/erde-im-sternenmeer/unterseiten/ERDE_BILDER/Geschichte/09%20%E2%80%93%20Kultur-%20&%20Zivilisationsgeschichte/09_Kultur_Zivilisationsgeschichte.jpg"
+            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/OzeanWelt/erde/unterseiten/ERDE_BILDER/Geschichte/09%20%E2%80%93%20Kultur-%20&%20Zivilisationsgeschichte/09_Kultur_Zivilisationsgeschichte.jpg"
         }
     },
     {

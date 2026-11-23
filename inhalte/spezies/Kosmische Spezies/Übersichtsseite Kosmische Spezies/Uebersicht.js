@@ -28,10 +28,10 @@ const view = toolbar.querySelector("[data-view]");
 let page = 0;
 const pageSize = 8;
 
-for (const value of new Set(cards.map(card => card.dataset.habitat))) {
+for (const value of new Set(cards.map(card => card.dataset.habitat).filter(Boolean))) {
     habitat.add(new Option(value, value));
 }
-for (const value of new Set(cards.map(card => card.dataset.world))) {
+for (const value of new Set(cards.map(card => card.dataset.world).filter(Boolean))) {
     world.add(new Option(value, value));
 }
 
@@ -90,12 +90,19 @@ for (const logo of grid.querySelectorAll("[data-animated-src]")) {
     const poster = logo.getAttribute("src");
     const motion = matchMedia("(prefers-reduced-motion: reduce)");
     let visible = false;
+    let hovered = false;
+    const card = logo.closest(".species-category");
     function syncLogo() {
-        const source = visible && !motion.matches ? logo.dataset.animatedSrc : poster;
+        const source = visible && hovered && !motion.matches ? logo.dataset.animatedSrc : poster;
         if (logo.getAttribute("src") !== source) logo.src = source;
     }
+    card.addEventListener("pointerenter", event => { hovered = event.pointerType === "mouse"; syncLogo(); });
+    const stop = () => { hovered = false; syncLogo(); };
+    card.addEventListener("pointerleave", stop);
+    card.addEventListener("pointercancel", stop);
     observeMediaVisibility(logo, current => {
         visible = current;
+        if (!visible) hovered = false;
         syncLogo();
     });
     motion.addEventListener("change", syncLogo);

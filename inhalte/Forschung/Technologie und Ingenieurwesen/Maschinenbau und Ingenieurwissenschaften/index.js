@@ -23,7 +23,7 @@ const knoten = [
         "belohnung": {
             "art": "gegenstand",
             "name": "Hadrion der planetengrosse maschinenorganismus",
-            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/synthetische_planetenwesen/hadrion-der-planetengrosse-maschinenorganismus/hauptseite/hadrion-der-planetengrosse-maschinenorganismus-318f54f70625.jpg"
+            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/synthetische_planetenwesen/hadrion/hauptseite/hadrion-der-planetengrosse-maschinenorganismus-318f54f70625.jpg"
         }
     },
     {
@@ -87,7 +87,7 @@ const knoten = [
         "belohnung": {
             "art": "gegenstand",
             "name": "Gorvaxis der planetengrosse maschinenkoloss",
-            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/synthetische_planetenwesen/gorvaxis-der-planetengrosse-maschinenkoloss/hauptseite/gorvaxis-der-planetengrosse-maschinenkoloss-07b1d40fda1d.jpg"
+            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/synthetische_planetenwesen/gorvaxis/hauptseite/gorvaxis-der-planetengrosse-maschinenkoloss-07b1d40fda1d.jpg"
         }
     },
     {
@@ -120,7 +120,7 @@ const knoten = [
         "belohnung": {
             "art": "gegenstand",
             "name": "Elymara die geflugelte maschinenwelt",
-            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/synthetische_planetenwesen/elymara-die-geflugelte-maschinenwelt/hauptseite/elymara-die-geflugelte-maschinenwelt-830e8536f193.jpg"
+            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/synthetische_planetenwesen/elymara/hauptseite/elymara-die-geflugelte-maschinenwelt-830e8536f193.jpg"
         }
     }
 ];

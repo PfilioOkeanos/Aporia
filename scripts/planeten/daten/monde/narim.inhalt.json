@@ -1,0 +1,557 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Narim",
+  "genitiv": "von Narim",
+  "dossierName": "Narim-Dossier",
+  "klasse": "Eismond",
+  "intro": "Narim ist der größte der drei benannten Monde Ynderals und umkreist den Planeten auf einer äußeren Bahn. Narim umkreist Ynderal in 18,2 Tage.",
+  "globusDaten": {
+    "planet": "narim",
+    "klasse": "Eis",
+    "radius": 930000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=teryn-stern&objekt=teryn-narim",
+  "grunddaten": [
+    [
+      "System-ID",
+      "teryn-narim"
+    ],
+    [
+      "Archiv-ID",
+      "AP-TERYN-NARIM"
+    ],
+    [
+      "Typ",
+      "Eismond"
+    ],
+    [
+      "Sternsystem",
+      "Teryn-System"
+    ],
+    [
+      "Zentralkörper",
+      "Ynderal"
+    ],
+    [
+      "Große Halbachse",
+      "925.959 km"
+    ],
+    [
+      "Umlaufzeit",
+      "18,2 Tage"
+    ],
+    [
+      "Durchmesser",
+      "1.860 km"
+    ],
+    [
+      "Masse",
+      "1,19 · 10^21 kg"
+    ],
+    [
+      "Schwerkraft",
+      "9,21 cm/s²"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -200 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Teryn-System"
+    ],
+    [
+      "Zentralstern",
+      "Teryn",
+      "inhalte/himmelskoerper/sterne/details/teryn/hauptseite/index.html"
+    ],
+    [
+      "Umläuft",
+      "Ynderal",
+      "inhalte/himmelskoerper/planeten/details/ynderal/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "925.959 km"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Narim im Teryn-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=teryn-stern&objekt=teryn-narim",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Teryn",
+      "href": "inhalte/himmelskoerper/sterne/details/teryn/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◍",
+      "art": "Mutterplanet",
+      "titel": "Ynderal",
+      "href": "inhalte/himmelskoerper/planeten/details/ynderal/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Solitiden",
+      "titel": "Iskara",
+      "href": "inhalte/himmelskoerper/planeten/details/iskara/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Solitiden",
+      "href": "inhalte/spezies/Mentale Spezies/Solitiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Teryn-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=teryn-stern&objekt=teryn-narim"
+    },
+    {
+      "titel": "Speziesdossier Solitiden",
+      "href": "inhalte/spezies/Mentale Spezies/Solitiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#090a0b",
+      "tiefe": "#131617",
+      "akzent": "#cad9e3",
+      "sand": "#ced2bf",
+      "moos": "#a8d3b7",
+      "ozean": "#86b9dc",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#4e585f"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Astronomie"
+      ],
+      [
+        "Planet",
+        "Mutterplanet"
+      ],
+      [
+        "Kräfte",
+        "Gezeiten"
+      ],
+      [
+        "Tiefe",
+        "Geologie"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Mutterplanet": {
+      "gruppe": "Wissenschaft",
+      "icon": "◐",
+      "intro": "Mutterplanet von Narim.",
+      "abschnitte": [
+        {
+          "titel": "Ynderal",
+          "text": [
+            "Ynderal ist ein kalter, eisreicher Riesenplanet mit wasserstoffreicher Atmosphäre und einem Ringsystem."
+          ],
+          "daten": [
+            [
+              "Typ",
+              "Eisreicher Riesenplanet"
+            ],
+            [
+              "Durchmesser",
+              "62.400 km"
+            ],
+            [
+              "Abstand des Mondes",
+              "925.959 km (29,7 Planetenradien)"
+            ]
+          ],
+          "verweise": [
+            [
+              "Ynderal",
+              "inhalte/himmelskoerper/planeten/details/ynderal/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Weitere Monde von Ynderal",
+          "liste": [
+            "Veraq – Umlauf in 3,4 Tage",
+            "Teshil – Umlauf in 8,8 Tage"
+          ],
+          "verweise": [
+            [
+              "Veraq",
+              "inhalte/himmelskoerper/monde/details/veraq/hauptseite/index.html"
+            ],
+            [
+              "Teshil",
+              "inhalte/himmelskoerper/monde/details/teshil/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Gezeiten": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gezeiten von Narim.",
+      "abschnitte": [
+        {
+          "titel": "Gezeitenkräfte",
+          "text": [
+            "Auf seiner Bahn in 925.959 km Abstand wirken starke Gezeitenkräfte von Ynderal auf Narim."
+          ]
+        }
+      ]
+    },
+    "Gebundene Rotation": {
+      "gruppe": "Wissenschaft",
+      "icon": "↻",
+      "intro": "Gebundene Rotation von Narim.",
+      "abschnitte": [
+        {
+          "titel": "Rotation",
+          "text": [
+            "Narim wendet Ynderal vermutlich stets dieselbe Seite zu: Ein Tag dauert so lange wie ein Umlauf – 18,2 Tage."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Narim auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Narim",
+          "text": [
+            "Narim ist der größte der drei benannten Monde Ynderals und umkreist den Planeten auf einer äußeren Bahn.",
+            "Narim umkreist Ynderal in 18,2 Tage."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Eismond"
+            ],
+            [
+              "Sternsystem",
+              "Teryn-System"
+            ],
+            [
+              "Zentralkörper",
+              "Ynderal"
+            ],
+            [
+              "Große Halbachse",
+              "925.959 km"
+            ],
+            [
+              "Umlaufzeit",
+              "18,2 Tage"
+            ],
+            [
+              "Durchmesser",
+              "1.860 km"
+            ],
+            [
+              "Masse",
+              "1,19 · 10^21 kg"
+            ],
+            [
+              "Schwerkraft",
+              "9,21 cm/s²"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -200 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Iskara",
+          "text": [
+            "Das Teryn-System ist die Heimat der Solitiden: Ihr Planet Iskara umkreist Teryn."
+          ],
+          "verweise": [
+            [
+              "Iskara",
+              "inhalte/himmelskoerper/planeten/details/iskara/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Solitiden",
+              "inhalte/spezies/Mentale Spezies/Solitiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Narim im Teryn-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Ynderal"
+            ],
+            [
+              "Große Halbachse",
+              "925.959 km"
+            ],
+            [
+              "Exzentrizität",
+              "0,012"
+            ],
+            [
+              "Bahnneigung",
+              "1,2°"
+            ],
+            [
+              "Umlaufzeit",
+              "18,2 Tage"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Teryn · Stern",
+              "Orangefarbener Hauptreihenstern (K4 V)"
+            ],
+            [
+              "Dareth · 0,15 AE",
+              "Heißer Gesteinsplanet"
+            ],
+            [
+              "Nura · 0,34 AE",
+              "Heißer terrestrischer Planet"
+            ],
+            [
+              "Iskara · 0,61 AE",
+              "Bewohnter terrestrischer Silikatplanet"
+            ],
+            [
+              "Veldros · 1,08 AE",
+              "Kalte Supererde"
+            ],
+            [
+              "Saevor · 2,84 AE",
+              "Gasriese"
+            ],
+            [
+              "Ynderal · 5,9 AE",
+              "Eisreicher Riesenplanet"
+            ],
+            [
+              "Veylan-Asteroidengürtel · 1,7–2 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußere Kleinkörperregion · 14–38 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Teryn",
+              "inhalte/himmelskoerper/sterne/details/teryn/hauptseite/index.html"
+            ],
+            [
+              "Dareth",
+              "inhalte/himmelskoerper/planeten/details/dareth/hauptseite/index.html"
+            ],
+            [
+              "Nura",
+              "inhalte/himmelskoerper/planeten/details/nura/hauptseite/index.html"
+            ],
+            [
+              "Iskara",
+              "inhalte/himmelskoerper/planeten/details/iskara/hauptseite/index.html"
+            ],
+            [
+              "Veldros",
+              "inhalte/himmelskoerper/planeten/details/veldros/hauptseite/index.html"
+            ],
+            [
+              "Saevor",
+              "inhalte/himmelskoerper/planeten/details/saevor/hauptseite/index.html"
+            ],
+            [
+              "Ynderal",
+              "inhalte/himmelskoerper/planeten/details/ynderal/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Narim.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "930 km"
+            ],
+            [
+              "Masse",
+              "1,19 · 10^21 kg"
+            ],
+            [
+              "Mittlere Dichte",
+              "0,35 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "0,09 m/s² (0,009 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "0,41 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Narim.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Narim ist geologisch weitgehend erstarrt; Einschläge haben seine Oberfläche geformt."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Narim.",
+      "abschnitte": [
+        {
+          "titel": "Gashülle",
+          "text": [
+            "Narim besitzt keine nennenswerte Atmosphäre – dafür ist die Schwerkraft zu gering."
+          ]
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Narim.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 5,9 AE Abstand zu Teryn liegt die Gleichgewichtstemperatur von Narim bei rund -200 °C – eisig kalt."
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Narim.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Narim entstand zusammen mit dem Teryn-System vor rund 6,1 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Narim.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Ist der Mond eingefangen oder mit seinem Planeten entstanden?",
+            "Welche Spuren tragen seine ältesten Krater?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Narim ist mit allen Bahndaten im Teryn-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=teryn-stern&objekt=teryn-narim"
+            ]
+          ]
+        },
+        {
+          "titel": "Untersuchung im Teryn-System",
+          "text": [
+            "Wie stark unterscheiden sich Eisanteil und Gesteinsanteil von denen der beiden inneren Ynderal-Monde?"
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Narim.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Größter Mond von Ynderal"
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Narim.",
+      "abschnitte": [
+        {
+          "titel": "Illustrationsmotiv",
+          "bild": true,
+          "bildtext": "Illustration anhand eines vorhandenen Motivs. Sie zeigt den Himmelskörpertyp und keine bestätigten Oberflächendetails."
+        }
+      ]
+    }
+  }
+}

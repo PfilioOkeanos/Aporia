@@ -1,0 +1,662 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Khelar IV",
+  "genitiv": "von Khelar IV",
+  "dossierName": "Khelar IV-Dossier",
+  "klasse": "Eisriese",
+  "intro": "Khelar IV ist ein kalter, blaugrüner Eisriese. Khelar IV umkreist Khelar in 7,8 AE Abstand und braucht für einen Umlauf 23,9 Jahre.",
+  "globusDaten": {
+    "planet": "heier-neptun-im-sternenlicht",
+    "klasse": "Eisriese",
+    "radius": 25000000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=veshkara-stern&objekt=veshkara-khelar-iv",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-49472D81A2"
+    ],
+    [
+      "Typ",
+      "Eisriese"
+    ],
+    [
+      "Sternsystem",
+      "Khelar-System"
+    ],
+    [
+      "Zentralkörper",
+      "Khelar"
+    ],
+    [
+      "Große Halbachse",
+      "7,8 AE"
+    ],
+    [
+      "Umlaufzeit",
+      "23,9 Jahre"
+    ],
+    [
+      "Durchmesser",
+      "50.000 km"
+    ],
+    [
+      "Masse",
+      "16 Erdmassen"
+    ],
+    [
+      "Schwerkraft",
+      "1,04 g"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -193 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Khelar-System"
+    ],
+    [
+      "Zentralstern",
+      "Khelar",
+      "inhalte/himmelskoerper/sterne/details/khelar/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "7,8 AE"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Khelar IV im Khelar-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=veshkara-stern&objekt=veshkara-khelar-iv",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Khelar",
+      "href": "inhalte/himmelskoerper/sterne/details/khelar/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Chitinoiden",
+      "titel": "Veshkara",
+      "href": "inhalte/himmelskoerper/planeten/details/veshkara/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Chitinoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Chitinnoiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Khelar-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=veshkara-stern&objekt=veshkara-khelar-iv"
+    },
+    {
+      "titel": "Speziesdossier Chitinoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Chitinnoiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#05080b",
+      "tiefe": "#0c1118",
+      "akzent": "#9fc0e4",
+      "sand": "#a6bdc0",
+      "moos": "#80b6b8",
+      "ozean": "#669fde",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#304760"
+    }
+  },
+  "kapitel": {
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Khelar IV auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Khelar IV",
+          "text": [
+            "Khelar IV ist ein kalter, blaugrüner Eisriese.",
+            "Khelar IV umkreist Khelar in 7,8 AE Abstand und braucht für einen Umlauf 23,9 Jahre."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Eisriese"
+            ],
+            [
+              "Sternsystem",
+              "Khelar-System"
+            ],
+            [
+              "Zentralkörper",
+              "Khelar"
+            ],
+            [
+              "Große Halbachse",
+              "7,8 AE"
+            ],
+            [
+              "Umlaufzeit",
+              "23,9 Jahre"
+            ],
+            [
+              "Durchmesser",
+              "50.000 km"
+            ],
+            [
+              "Masse",
+              "16 Erdmassen"
+            ],
+            [
+              "Schwerkraft",
+              "1,04 g"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -193 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Veshkara",
+          "text": [
+            "Das Khelar-System ist die Heimat der Chitinoiden: Ihr Planet Veshkara umkreist Khelar."
+          ],
+          "verweise": [
+            [
+              "Veshkara",
+              "inhalte/himmelskoerper/planeten/details/veshkara/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Chitinoiden",
+              "inhalte/spezies/Biologische Spezies/Chitinnoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Khelar IV im Khelar-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Khelar"
+            ],
+            [
+              "Große Halbachse",
+              "7,8 AE (1.166,9 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,03"
+            ],
+            [
+              "Bahnneigung",
+              "2,2°"
+            ],
+            [
+              "Umlaufzeit",
+              "23,9 Jahre"
+            ],
+            [
+              "Einstrahlung",
+              "0,01-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Am Himmel von Khelar IV",
+          "text": [
+            "Khelar erscheint von hier aus etwa 0,06° groß (die Sonne von der Erde: 0,53°)."
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Khelar · Stern",
+              "Orangefarbener Zwerg (K0 V)"
+            ],
+            [
+              "Khelar I · 0,3 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Veshkara · 0,78 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Khelar III · 2,7 AE",
+              "Gasriese"
+            ],
+            [
+              "Khelar IV · 7,8 AE · dieses Dossier",
+              "Eisriese"
+            ],
+            [
+              "Harzgürtel · 1,4–2 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 33–47 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Khelar",
+              "inhalte/himmelskoerper/sterne/details/khelar/hauptseite/index.html"
+            ],
+            [
+              "Khelar I",
+              "inhalte/himmelskoerper/planeten/details/khelar-i/hauptseite/index.html"
+            ],
+            [
+              "Veshkara",
+              "inhalte/himmelskoerper/planeten/details/veshkara/hauptseite/index.html"
+            ],
+            [
+              "Khelar III",
+              "inhalte/himmelskoerper/planeten/details/khelar-iii/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Khelar IV.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "25.000 km"
+            ],
+            [
+              "Masse",
+              "16 Erdmassen"
+            ],
+            [
+              "Mittlere Dichte",
+              "1,46 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "10,19 m/s² (1,039 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "22,59 km/s"
+            ]
+          ],
+          "vergleich": {
+            "mit": "Erde",
+            "werte": [
+              [
+                "Durchmesser",
+                50000,
+                12742,
+                "km"
+              ],
+              [
+                "Masse",
+                16,
+                1,
+                "Erdmassen"
+              ],
+              [
+                "Schwerkraft",
+                1.04,
+                1,
+                "g"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "Planetare Struktur": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Planetare Struktur von Khelar IV.",
+      "abschnitte": [
+        {
+          "titel": "Schalenbau",
+          "schichten": [
+            [
+              "Atmosphäre",
+              "Wasserstoff, Helium und Methan"
+            ],
+            [
+              "Eismantel",
+              "Wasser, Ammoniak und Methan unter hohem Druck"
+            ],
+            [
+              "Kern",
+              "Gestein und Metall"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geografie": {
+      "gruppe": "Natur",
+      "icon": "△",
+      "intro": "Geografie von Khelar IV.",
+      "abschnitte": [
+        {
+          "titel": "Oberfläche",
+          "text": [
+            "Khelar IV besitzt keine feste Oberfläche. Sichtbar sind Wolkenbänder, Wirbel und Stürme."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Khelar IV.",
+      "abschnitte": [
+        {
+          "titel": "Gashülle",
+          "text": [
+            "Khelar IV besitzt keine feste Oberfläche; die Hülle geht nach innen allmählich in dichtere Schichten über."
+          ],
+          "balken": {
+            "werte": [
+              [
+                "Wasserstoff",
+                80
+              ],
+              [
+                "Helium",
+                17
+              ],
+              [
+                "Methan",
+                2.3
+              ],
+              [
+                "Spurengase",
+                0.7
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Khelar IV.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 7,8 AE Abstand zu Khelar liegt die Gleichgewichtstemperatur von Khelar IV bei rund -193 °C – eisig kalt."
+          ]
+        }
+      ]
+    },
+    "Gewässer": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gewässer von Khelar IV.",
+      "abschnitte": [
+        {
+          "titel": "Wasser",
+          "text": [
+            "Wasser liegt in den Wolkenschichten und tief im Inneren unter hohem Druck vor."
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Khelar IV.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Ohne feste Oberfläche gibt es keine Geologie im engeren Sinn; im Inneren herrschen extreme Drücke und Temperaturen."
+          ]
+        }
+      ]
+    },
+    "Biosphäre": {
+      "gruppe": "Natur",
+      "icon": "❧",
+      "intro": "Biosphäre von Khelar IV.",
+      "abschnitte": [
+        {
+          "titel": "Leben",
+          "text": [
+            "Auf Khelar IV ist kein Leben verzeichnet."
+          ]
+        }
+      ]
+    },
+    "Spezies": {
+      "gruppe": "Zivilisation",
+      "icon": "✿",
+      "intro": "Spezies von Khelar IV.",
+      "abschnitte": [
+        {
+          "titel": "Bewohner",
+          "text": [
+            "Khelar IV ist keine Heimat einer intelligenten Spezies."
+          ]
+        },
+        {
+          "titel": "Im System von Veshkara",
+          "text": [
+            "Das Khelar-System ist die Heimat der Chitinoiden: Ihr Planet Veshkara umkreist Khelar."
+          ],
+          "verweise": [
+            [
+              "Veshkara",
+              "inhalte/himmelskoerper/planeten/details/veshkara/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Chitinoiden",
+              "inhalte/spezies/Biologische Spezies/Chitinnoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Zivilisation": {
+      "gruppe": "Zivilisation",
+      "icon": "▥",
+      "intro": "Zivilisation von Khelar IV.",
+      "abschnitte": [
+        {
+          "titel": "Siedlungen",
+          "text": [
+            "Für Khelar IV sind keine dauerhaften Siedlungen verzeichnet."
+          ]
+        },
+        {
+          "titel": "Im System von Veshkara",
+          "text": [
+            "Das Khelar-System ist die Heimat der Chitinoiden: Ihr Planet Veshkara umkreist Khelar."
+          ],
+          "verweise": [
+            [
+              "Veshkara",
+              "inhalte/himmelskoerper/planeten/details/veshkara/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Chitinoiden",
+              "inhalte/spezies/Biologische Spezies/Chitinnoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Khelar IV.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Khelar IV entstand zusammen mit dem Khelar-System vor rund 4,7 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Fraktionen": {
+      "gruppe": "Zivilisation",
+      "icon": "◇",
+      "intro": "Fraktionen von Khelar IV.",
+      "abschnitte": [
+        {
+          "titel": "Ansprüche",
+          "text": [
+            "Für Khelar IV sind keine Fraktionsansprüche verzeichnet."
+          ]
+        }
+      ]
+    },
+    "Rohstoffe": {
+      "gruppe": "Weitere",
+      "icon": "⬡",
+      "intro": "Rohstoffe von Khelar IV.",
+      "abschnitte": [
+        {
+          "titel": "Rohstoffe",
+          "liste": [
+            "Wasserstoff",
+            "Methan",
+            "Wassereis"
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Khelar IV.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Gibt es flüssige Schichten im Eismantel?",
+            "Wie entstand die Achslage?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Khelar IV ist mit allen Bahndaten im Khelar-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=veshkara-stern&objekt=veshkara-khelar-iv"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Khelar IV.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Äußerster Planet des Khelar-Systems"
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Khelar IV.",
+      "abschnitte": [
+        {
+          "titel": "Khelar IV – Archivbild",
+          "bild": true,
+          "bildtext": "Khelar IV"
+        }
+      ]
+    },
+    "Gaszusammensetzung": {
+      "gruppe": "Weitere",
+      "icon": "◆",
+      "intro": "Gaszusammensetzung von Khelar IV.",
+      "abschnitte": [
+        {
+          "titel": "Gaszusammensetzung",
+          "text": [
+            "Khelar IV ist ein kalter, blaugrüner Eisriese."
+          ]
+        }
+      ]
+    },
+    "Wolkenschichten": {
+      "gruppe": "Weitere",
+      "icon": "◆",
+      "intro": "Wolkenschichten von Khelar IV.",
+      "abschnitte": [
+        {
+          "titel": "Wolkenschichten",
+          "text": [
+            "Khelar IV ist ein kalter, blaugrüner Eisriese."
+          ]
+        }
+      ]
+    },
+    "Stürme": {
+      "gruppe": "Weitere",
+      "icon": "◆",
+      "intro": "Stürme von Khelar IV.",
+      "abschnitte": [
+        {
+          "titel": "Stürme",
+          "text": [
+            "Khelar IV ist ein kalter, blaugrüner Eisriese."
+          ]
+        }
+      ]
+    }
+  }
+}

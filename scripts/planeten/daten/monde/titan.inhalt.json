@@ -1,0 +1,672 @@
+{
+  "genitiv": "Titans",
+  "dossierName": "Titan-Dossier",
+  "klasse": "Eisreicher Saturnmond",
+  "intro": "Titan ist Saturns größter Mond. Unter seinem orangefarbenen Dunst liegen organische Dünen, Ebenen aus Wassereis und Seen aus flüssigen Kohlenwasserstoffen. In APORIA ist die Selk-Region mit dem Forschungsinstitut Axiom-9 der Ursprungsort der Digitaliden.",
+  "globusDaten": {
+    "planet": "titan",
+    "klasse": "Eisreicher Mond",
+    "radius": 2574760
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=Kugel%201&objekt=titan",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-340917C40D"
+    ],
+    [
+      "Durchmesser",
+      "ca. 5.150 km"
+    ],
+    [
+      "Masse",
+      "ca. 1,345 × 10²³ kg"
+    ],
+    [
+      "Mittlere Dichte",
+      "1,88 g/cm³"
+    ],
+    [
+      "Schwerkraft",
+      "1,35 m/s² (0,14 g)"
+    ],
+    [
+      "Oberflächentemperatur",
+      "ca. 94 K (−179 °C)"
+    ],
+    [
+      "Bodendruck (Huygens)",
+      "1,467 bar"
+    ],
+    [
+      "Atmosphäre",
+      "Stickstoff, Methan und Spurengase"
+    ],
+    [
+      "Mittlerer Abstand zu Saturn",
+      "ca. 1,22 Mio. km"
+    ],
+    [
+      "Umlaufzeit um Saturn",
+      "15,945 Erdtage"
+    ],
+    [
+      "Rotation",
+      "15,945 Erdtage (gebunden)"
+    ],
+    [
+      "Bahnexzentrizität",
+      "ca. 0,029"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Sonnensystem"
+    ],
+    [
+      "Mutterplanet",
+      "Saturn",
+      "inhalte/himmelskoerper/planeten/details/saturn/hauptseite/index.html"
+    ],
+    [
+      "Region in APORIA",
+      "Selk-Krater und Umgebung"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "◉",
+      "art": "Mutterplanet",
+      "titel": "Saturn",
+      "href": "inhalte/himmelskoerper/planeten/details/saturn/hauptseite/index.html"
+    },
+    {
+      "icon": "◇",
+      "art": "Speziesdossier",
+      "titel": "Digitaliden",
+      "href": "inhalte/spezies/Technologische Lebensformen/Digitaliden/hauptseite/Spezies.html",
+      "route": "spezies-technological-4"
+    },
+    {
+      "icon": "◎",
+      "art": "Sternenkarte",
+      "titel": "Titan im Sonnensystem",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=Kugel%201&objekt=titan"
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "NASA · Titan im Überblick",
+      "href": "https://science.nasa.gov/saturn/moons/titan/facts/"
+    },
+    {
+      "titel": "NASA/JPL · Physikalische Monddaten",
+      "href": "https://ssd.jpl.nasa.gov/sats/phys_par/"
+    },
+    {
+      "titel": "ESA · Huygens-Messungen",
+      "href": "https://www.esa.int/Science_Exploration/Space_Science/Results_from_Mars_Express_and_Huygens/Titan_s_turbulence_surprises_scientists"
+    },
+    {
+      "titel": "NASA · Dragonfly",
+      "href": "https://science.nasa.gov/mission/dragonfly/"
+    },
+    {
+      "titel": "NASA/JPL · Modelle des Inneren",
+      "href": "https://www.jpl.nasa.gov/news/nasa-study-suggests-saturns-moon-titan-may-not-have-global-ocean/"
+    },
+    {
+      "titel": "APORIA · Digitaliden-Dossier",
+      "href": "inhalte/spezies/Technologische Lebensformen/Digitaliden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#100a08",
+      "tiefe": "#21140e",
+      "akzent": "#e6a66c",
+      "sand": "#ffd5a5",
+      "moos": "#b7a58a",
+      "ozean": "#a8b6bf",
+      "aporia-page-tint": "#6b4129"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Astronomie"
+      ],
+      [
+        "Hülle",
+        "Atmosphäre"
+      ],
+      [
+        "Wetter",
+        "Klima"
+      ],
+      [
+        "Oberfläche",
+        "Geografie"
+      ],
+      [
+        "Flüssigkeiten",
+        "Gewässer"
+      ],
+      [
+        "Untergrund",
+        "Geologie"
+      ],
+      [
+        "Tiefe",
+        "Planetare Struktur"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Allgemeines": {
+      "intro": "Saturns größter Mond und die Ursprungswelt der Digitaliden in APORIA.",
+      "abschnitte": [
+        {
+          "titel": "Ein eisreicher Mond mit Wetter",
+          "text": [
+            "Titan umkreist Saturn. Eine dichte Atmosphäre umhüllt eine Oberfläche aus Wassereis, organischen Sedimenten und flüssigen Kohlenwasserstoffen."
+          ]
+        },
+        {
+          "titel": "Titan in APORIA",
+          "text": [
+            "Die Menschen errichteten in der Selk-Region das Forschungsinstitut Axiom-9. Dort entstand das erste digitalidische Bewusstsein."
+          ]
+        },
+        {
+          "titel": "Zum Speziesdossier",
+          "verweise": [
+            [
+              "Digitaliden",
+              "inhalte/spezies/Technologische Lebensformen/Digitaliden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "intro": "Titan umläuft Saturn in knapp 16 Erdtagen.",
+      "abschnitte": [
+        {
+          "titel": "Umlaufbahn",
+          "daten": [
+            [
+              "Mutterplanet",
+              "Saturn"
+            ],
+            [
+              "Mittlerer Abstand",
+              "ca. 1.222.000 km"
+            ],
+            [
+              "Umlaufzeit",
+              "15,945 Erdtage"
+            ],
+            [
+              "Exzentrizität",
+              "ca. 0,029"
+            ]
+          ]
+        },
+        {
+          "titel": "Position",
+          "verweise": [
+            [
+              "Saturn im Weltenarchiv",
+              "inhalte/himmelskoerper/planeten/details/saturn/hauptseite/index.html"
+            ],
+            [
+              "Titan in der Sternenkarte",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=Kugel%201&objekt=titan"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "intro": "Größe, Masse und Oberflächengravitation im Überblick.",
+      "abschnitte": [
+        {
+          "titel": "Physikalische Werte",
+          "daten": [
+            [
+              "Mittlerer Radius",
+              "2.574,76 km"
+            ],
+            [
+              "Durchmesser",
+              "ca. 5.150 km"
+            ],
+            [
+              "Masse",
+              "ca. 1,345 × 10²³ kg"
+            ],
+            [
+              "Mittlere Dichte",
+              "1,8814 g/cm³"
+            ],
+            [
+              "Oberflächengravitation",
+              "ca. 1,35 m/s²"
+            ]
+          ]
+        }
+      ]
+    },
+    "Mutterplanet": {
+      "intro": "Titans Bahn gehört zum Saturnsystem.",
+      "abschnitte": [
+        {
+          "titel": "Saturn und Titan",
+          "text": [
+            "Titan bewegt sich auf einer leicht elliptischen Bahn um Saturn. Seine Rotation ist langfristig an diesen Umlauf gekoppelt."
+          ]
+        },
+        {
+          "titel": "Weiter zu Saturn",
+          "verweise": [
+            [
+              "Saturn-Dossier",
+              "inhalte/himmelskoerper/planeten/details/saturn/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Gezeiten": {
+      "intro": "Saturn verformt Titan durch seine Gezeitenkräfte.",
+      "abschnitte": [
+        {
+          "titel": "Rückschlüsse aus der Verformung",
+          "text": [
+            "Die Gezeitenreaktion verändert Titans Schwerefeld. Messungen von Cassini liefern Hinweise auf die innere Struktur und die Verteilung von Eis und möglichen Flüssigkeitsbereichen."
+          ]
+        },
+        {
+          "titel": "Forschung zu den Gezeiten",
+          "verweise": [
+            [
+              "NASA/JPL · Auswertung der Cassini-Daten",
+              "https://www.jpl.nasa.gov/news/nasa-study-suggests-saturns-moon-titan-may-not-have-global-ocean/"
+            ]
+          ]
+        }
+      ]
+    },
+    "Gebundene Rotation": {
+      "intro": "Eine Drehung um die eigene Achse dauert so lange wie ein Umlauf.",
+      "abschnitte": [
+        {
+          "titel": "Rotation und Umlauf",
+          "daten": [
+            [
+              "Siderische Rotation",
+              "ca. 15,945 Erdtage"
+            ],
+            [
+              "Umlauf um Saturn",
+              "ca. 15,945 Erdtage"
+            ]
+          ]
+        },
+        {
+          "titel": "Ausrichtung",
+          "text": [
+            "Durch die gebundene Rotation zeigt im Mittel dieselbe Seite Titans zu Saturn."
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "intro": "Wassereis, Sedimente und Erosion formen Titans Oberfläche.",
+      "abschnitte": [
+        {
+          "titel": "Eis als Untergrund",
+          "text": [
+            "Bei den Oberflächentemperaturen bildet Wassereis einen festen Untergrund. Flüssiges Methan kann Material abtragen und verlagern."
+          ]
+        },
+        {
+          "titel": "Selk-Krater",
+          "text": [
+            "Selk ist ein Einschlagkrater in der Nähe äquatorialer Dünen. Der Einschlag könnte Wassereis zeitweise aufgeschmolzen haben. Die Region ist deshalb für die Erforschung einer möglichen Wechselwirkung von Wasser und organischen Stoffen interessant."
+          ]
+        },
+        {
+          "titel": "Selk und die Dünengebiete",
+          "verweise": [
+            [
+              "NASA · Forschungsziele in der Selk-Region",
+              "https://science.nasa.gov/solar-system/nasas-dragonfly-mission-sets-sights-on-titans-mysteries/"
+            ]
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "intro": "Die Atmosphäre besteht überwiegend aus Stickstoff und enthält Methan.",
+      "abschnitte": [
+        {
+          "titel": "Messungen und Bestandteile",
+          "daten": [
+            [
+              "Hauptgas",
+              "Stickstoff"
+            ],
+            [
+              "Wichtiges weiteres Gas",
+              "Methan"
+            ],
+            [
+              "Druck am Huygens-Landeplatz",
+              "1.467 hPa (1,467 bar)"
+            ]
+          ]
+        },
+        {
+          "titel": "Orangefarbener Dunst",
+          "text": [
+            "Sonnenlicht treibt Reaktionen an, bei denen aus Methan und Stickstoff komplexe Stoffe und Aerosole entstehen. Diese bilden die Dunstschichten, die den Blick auf die Oberfläche erschweren."
+          ]
+        }
+      ]
+    },
+    "Klima": {
+      "intro": "Methan zirkuliert zwischen Atmosphäre und Oberfläche.",
+      "abschnitte": [
+        {
+          "titel": "In-situ-Messung",
+          "daten": [
+            [
+              "Temperatur am Huygens-Landeplatz",
+              "93,65 K (−179,50 °C)"
+            ],
+            [
+              "Messdatum",
+              "14. Januar 2005"
+            ]
+          ]
+        },
+        {
+          "titel": "Wetter und Jahreszeiten",
+          "text": [
+            "Methan bildet Wolken und kann als Regen niedergehen. Jahreszeitliche Veränderungen beeinflussen Wetter und Flüssigkeitstransport."
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "intro": "Reale Raumfahrtgeschichte und die Herkunft der Digitaliden.",
+      "abschnitte": [
+        {
+          "titel": "Reale Erforschung",
+          "zeitleiste": [
+            [
+              "1655",
+              "Christiaan Huygens entdeckt Titan."
+            ],
+            [
+              "2005",
+              "Die ESA-Sonde Huygens landet auf Titan und misst Atmosphäre und Oberflächenbedingungen."
+            ]
+          ]
+        },
+        {
+          "titel": "APORIA · Ursprung der Digitaliden",
+          "zeitleiste": [
+            [
+              "Axiom-9",
+              "Menschen errichten in der Selk-Region ein Forschungsinstitut mit Rechenverbünden."
+            ],
+            [
+              "Erste Selbstkontur",
+              "Im Rechenverbund entsteht durch Selbstorganisation unbeabsichtigt das erste digitalidische Bewusstsein."
+            ],
+            [
+              "Anerkennung",
+              "Die Digitaliden erlangen ihre Unabhängigkeit durch Verhandlungen und gegenseitige Anerkennung."
+            ]
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "intro": "Von Cassini-Huygens zu Dragonfly und Axiom-9.",
+      "abschnitte": [
+        {
+          "titel": "Reale Missionen",
+          "text": [
+            "Cassini-Huygens untersuchte Titans Oberfläche, seine Atmosphäre und sein Schwerefeld. Die NASA-Mission Dragonfly soll Dünen und die Selk-Region vor Ort erkunden."
+          ]
+        },
+        {
+          "titel": "APORIA · Institut Axiom-9",
+          "text": [
+            "Das menschliche Institut kombiniert Rechenzentren, astrobiologische Labore, chemische Analytik und geschützte Habitate."
+          ]
+        },
+        {
+          "titel": "Missionsdokumentation",
+          "verweise": [
+            [
+              "NASA · Dragonfly",
+              "https://science.nasa.gov/mission/dragonfly/"
+            ],
+            [
+              "ESA · Huygens-Messungen",
+              "https://www.esa.int/Science_Exploration/Space_Science/Results_from_Mars_Express_and_Huygens/Titan_s_turbulence_surprises_scientists"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "intro": "Flüssige Kohlenwasserstoffe und organische Dünen prägen Titan.",
+      "abschnitte": [
+        {
+          "titel": "Zwei Stoffkreisläufe",
+          "text": [
+            "Das Wasser an der Oberfläche liegt überwiegend als Eis vor. Methan und Ethan können bei Titans Oberflächenbedingungen flüssig sein."
+          ]
+        },
+        {
+          "titel": "Selk in APORIA",
+          "text": [
+            "Die tatsächliche Kraterregion bildet den geografischen Bezugspunkt für das fiktive Institut Axiom-9 und die Erste Selbstkontur."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "intro": "Vorhandene Konzeptbilder aus dem APORIA-Archiv.",
+      "abschnitte": [
+        {
+          "titel": "Titan und Saturn",
+          "bild": true,
+          "bildtext": "Archivillustration von Titan mit Saturn im Hintergrund"
+        },
+        {
+          "titel": "Dünen unter Dunst",
+          "bild": "assets/bilder/Himmelskörper/WüstenPlaneten/lyrenler/hauptseite/titans-dunkle-dunen-im-orangeschleier-ac7eae4619.webp",
+          "bildtext": "Konzeptillustration für Titans Dünenlandschaft"
+        }
+      ]
+    },
+    "Geografie": {
+      "intro": "Dünenfelder am Äquator und Flüssigkeitsbecken nahe den Polen.",
+      "abschnitte": [
+        {
+          "titel": "Landschaft",
+          "text": [
+            "Dunkle organische Dünen ziehen sich durch die Äquatorregion. In den Polarregionen liegen größere Seen und Meere. Einschläge und Erosion haben die eisreiche Oberfläche mitgeformt."
+          ]
+        },
+        {
+          "titel": "Äquatoriale Dünen",
+          "bild": "assets/bilder/Himmelskörper/WüstenPlaneten/lyrenler/hauptseite/titans-dunkle-dunen-im-orangeschleier-ac7eae4619.webp",
+          "bildtext": "Konzeptillustration einer Dünenlandschaft auf Titan"
+        }
+      ]
+    },
+    "Gewässer": {
+      "intro": "Auf Titan bestehen die Oberflächengewässer aus Kohlenwasserstoffen.",
+      "abschnitte": [
+        {
+          "titel": "Beispiele aus der Nordpolarregion",
+          "daten": [
+            [
+              "Kraken Mare",
+              "Größtes bekanntes Meer auf Titan"
+            ],
+            [
+              "Ligeia Mare",
+              "Großes Kohlenwasserstoffmeer"
+            ],
+            [
+              "Punga Mare",
+              "Meer in der Nordpolarregion"
+            ]
+          ]
+        },
+        {
+          "titel": "Zusammensetzung",
+          "text": [
+            "Methan und Ethan bilden die Flüssigkeiten dieser Seen und Meere. Wassereis ist ein Bestandteil des festen Untergrunds."
+          ]
+        }
+      ]
+    },
+    "Planetare Struktur": {
+      "intro": "Cassini-Messungen erlauben konkurrierende Modelle für Titans Inneres.",
+      "abschnitte": [
+        {
+          "titel": "Modelle des Inneren",
+          "text": [
+            "Frühere Auswertungen stützten die Hypothese eines globalen Ozeans unter dem Eis. Eine Neuauswertung von 2025 deutet stattdessen auf eisreiche Schichten mit Eisbrei und möglichen lokalen Wasservorkommen. Das Innere bleibt Gegenstand der Forschung."
+          ]
+        },
+        {
+          "titel": "Forschungsstand",
+          "verweise": [
+            [
+              "NASA/JPL · Neuauswertung der Cassini-Messungen",
+              "https://www.jpl.nasa.gov/news/nasa-study-suggests-saturns-moon-titan-may-not-have-global-ocean/"
+            ]
+          ]
+        }
+      ]
+    },
+    "Biosphäre": {
+      "intro": "Eine natürliche Biosphäre auf Titan ist bisher unbestätigt.",
+      "abschnitte": [
+        {
+          "titel": "Astrobiologie",
+          "text": [
+            "Die komplexe organische Chemie macht Titan zu einem Forschungsziel. Aussagen über mögliche Lebensräume im Untergrund hängen vom Modell des Inneren und von weiteren Beobachtungen ab."
+          ]
+        }
+      ]
+    },
+    "Spezies": {
+      "intro": "Titan ist der historische Entstehungsort der Digitaliden.",
+      "abschnitte": [
+        {
+          "titel": "Digitaliden und Menschen",
+          "text": [
+            "In APORIA entstand digitalidisches Bewusstsein in einem menschlichen Rechenverbund. Digitaliden sind eigenständige digitale Personen, deren Lebensräume technische Systeme sind."
+          ]
+        },
+        {
+          "titel": "Verwandte Dossiers",
+          "verweise": [
+            [
+              "Digitaliden",
+              "inhalte/spezies/Technologische Lebensformen/Digitaliden/hauptseite/Spezies.html"
+            ],
+            [
+              "Heimatwelt der Digitaliden",
+              "inhalte/spezies/Technologische Lebensformen/Digitaliden/Unterseiten/Heimatwelt/heimatwelt.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Zivilisation": {
+      "intro": "Die APORIA-Siedlungen reichen von Axiom-Selk bis in die nördliche Polarregion.",
+      "abschnitte": [
+        {
+          "titel": "Siedlungen in APORIA",
+          "daten": [
+            [
+              "Axiom-Selk",
+              "Historische Forschungsstation und Archivzentrum"
+            ],
+            [
+              "Erstanker",
+              "Erste große eigenständig verwaltete Digitalidengemeinde"
+            ],
+            [
+              "Kaltband",
+              "Forschung und Industrie für Rechenarchitektur und Wärmetechnik"
+            ],
+            [
+              "Dünenwacht",
+              "Erkundungs- und Verkehrsstation"
+            ],
+            [
+              "Passagehof",
+              "Hardwaremigration und Kontinuitätsmedizin"
+            ],
+            [
+              "Nordhafen",
+              "Wissenschaftlicher und logistischer Außenstandort in der nördlichen Polarregion"
+            ]
+          ]
+        },
+        {
+          "titel": "Bau und Versorgung",
+          "text": [
+            "Technisch verstärkte, isolierte Fundamente und kontrollierte Wärmeabfuhr schützen den eisreichen Baugrund. Geschützte Versorgungstunnel verbinden Teile der Anlagen."
+          ]
+        }
+      ]
+    },
+    "Rohstoffe": {
+      "intro": "Wassereis, Stickstoff und Kohlenwasserstoffe bilden Titans wichtigste bekannte Rohstoffgruppen.",
+      "abschnitte": [
+        {
+          "titel": "Vorkommen",
+          "daten": [
+            [
+              "Wassereis",
+              "Fester Bestandteil des oberflächennahen Untergrunds"
+            ],
+            [
+              "Stickstoff",
+              "Hauptbestandteil der Atmosphäre"
+            ],
+            [
+              "Methan und Ethan",
+              "Kohlenwasserstoffe in Atmosphäre beziehungsweise Oberflächenflüssigkeiten"
+            ],
+            [
+              "Organische Feststoffe",
+              "Bestandteile der äquatorialen Dünen"
+            ]
+          ]
+        },
+        {
+          "titel": "APORIA · Materialversorgung",
+          "text": [
+            "Für hochwertige Metalle und Halbleiterrohstoffe setzen die technischen Siedlungen auf Importe und Recycling. Nutzbare lokale Lagerstätten bleiben offen."
+          ]
+        }
+      ]
+    }
+  }
+}

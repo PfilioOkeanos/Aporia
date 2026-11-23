@@ -2,7 +2,7 @@
 
 .hp-layout {
     grid-template-areas:
-        "nav title title"
+        "kopf kopf kopf" "nav title title"
         "nav content side"
         "nav factions factions"
         "summary summary summary"
@@ -28,7 +28,7 @@
 
 @media (max-width: 1050px) {
     .hp-layout {
-        grid-template-areas: "title title" "nav nav" "content side" "factions factions"
+        grid-template-areas: "kopf kopf" "title title" "nav nav" "content side" "factions factions"
             "summary summary" "principle principle" "detail detail";
     }
     .hp-factions .hs-grid { grid-template-columns: repeat(auto-fit, minmax(min(100%, 11rem), 1fr)); }
@@ -37,7 +37,7 @@
 
 @media (max-width: 680px) {
     .hp-layout {
-        grid-template-areas: "title" "nav" "content" "side" "factions" "summary" "principle" "detail";
+        grid-template-areas: "kopf" "title" "nav" "content" "side" "factions" "summary" "principle" "detail";
     }
     .hp-summary, .hp-intro { grid-template-columns: minmax(0, 1fr); }
     .hp-intro > img { max-height: 15rem; }

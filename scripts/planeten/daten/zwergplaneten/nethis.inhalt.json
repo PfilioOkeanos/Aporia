@@ -1,0 +1,496 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Nethis",
+  "genitiv": "von Nethis",
+  "dossierName": "Nethis-Dossier",
+  "klasse": "Mond",
+  "intro": "Nethis ist der innere Mond Iravelles – überwiegend silikatisch, mit dunklen Gesteinsflächen und hellen Einschlagsstrukturen. Er trägt besonders stark zu den Gezeiten bei und wandert schnell über den Himmel. Nethis umkreist Iravelle in 10,4 Tage.",
+  "globusDaten": {
+    "planet": "dunkle-basaltmeere-auf-einem-zwergplaneten",
+    "klasse": "Gestein",
+    "radius": 1090000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=iravelle-stern&objekt=iravelle-nethis",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-7362BCE104"
+    ],
+    [
+      "Typ",
+      "Mond"
+    ],
+    [
+      "Sternsystem",
+      "Darynth-System"
+    ],
+    [
+      "Zentralkörper",
+      "Iravelle"
+    ],
+    [
+      "Große Halbachse",
+      "209.008 km"
+    ],
+    [
+      "Umlaufzeit",
+      "10,4 Tage"
+    ],
+    [
+      "Durchmesser",
+      "2.180 km"
+    ],
+    [
+      "Masse",
+      "0,244 Mondmassen"
+    ],
+    [
+      "Schwerkraft",
+      "0,1 g"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -12 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Darynth-System"
+    ],
+    [
+      "Zentralstern",
+      "Darynth",
+      "inhalte/himmelskoerper/sterne/details/darynth/hauptseite/index.html"
+    ],
+    [
+      "Umläuft",
+      "Iravelle",
+      "inhalte/himmelskoerper/planeten/details/iravelle/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "209.008 km"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Nethis im Darynth-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=iravelle-stern&objekt=iravelle-nethis",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Darynth",
+      "href": "inhalte/himmelskoerper/sterne/details/darynth/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◍",
+      "art": "Mutterplanet",
+      "titel": "Iravelle",
+      "href": "inhalte/himmelskoerper/planeten/details/iravelle/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Oneiroiden",
+      "titel": "Iravelle",
+      "href": "inhalte/himmelskoerper/planeten/details/iravelle/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Oneiroiden",
+      "href": "inhalte/spezies/Mentale Spezies/Oneiroiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Darynth-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=iravelle-stern&objekt=iravelle-nethis"
+    },
+    {
+      "titel": "Speziesdossier Oneiroiden",
+      "href": "inhalte/spezies/Mentale Spezies/Oneiroiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#060606",
+      "tiefe": "#0e0e0e",
+      "akzent": "#acacac",
+      "sand": "#b3ac9c",
+      "moos": "#8c9f87",
+      "ozean": "#708a99",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#393939"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Astronomie"
+      ],
+      [
+        "Planet",
+        "Mutterplanet"
+      ],
+      [
+        "Kräfte",
+        "Gezeiten"
+      ],
+      [
+        "Tiefe",
+        "Geologie"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Nethis auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Nethis",
+          "text": [
+            "Nethis ist der innere Mond Iravelles – überwiegend silikatisch, mit dunklen Gesteinsflächen und hellen Einschlagsstrukturen. Er trägt besonders stark zu den Gezeiten bei und wandert schnell über den Himmel.",
+            "Nethis umkreist Iravelle in 10,4 Tage."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Mond"
+            ],
+            [
+              "Sternsystem",
+              "Darynth-System"
+            ],
+            [
+              "Zentralkörper",
+              "Iravelle"
+            ],
+            [
+              "Große Halbachse",
+              "209.008 km"
+            ],
+            [
+              "Umlaufzeit",
+              "10,4 Tage"
+            ],
+            [
+              "Durchmesser",
+              "2.180 km"
+            ],
+            [
+              "Masse",
+              "0,244 Mondmassen"
+            ],
+            [
+              "Schwerkraft",
+              "0,1 g"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -12 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Iravelle",
+          "text": [
+            "Das Darynth-System ist die Heimat der Oneiroiden: Ihr Planet Iravelle umkreist Darynth, und Nethis ist einer seiner Monde."
+          ],
+          "verweise": [
+            [
+              "Iravelle",
+              "inhalte/himmelskoerper/planeten/details/iravelle/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Oneiroiden",
+              "inhalte/spezies/Mentale Spezies/Oneiroiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Nethis im Darynth-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Iravelle"
+            ],
+            [
+              "Große Halbachse",
+              "209.008 km"
+            ],
+            [
+              "Exzentrizität",
+              "0,02"
+            ],
+            [
+              "Bahnneigung",
+              "3°"
+            ],
+            [
+              "Umlaufzeit",
+              "10,4 Tage"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Darynth · Stern",
+              "Orangefarbener Zwerg (K3 V)"
+            ],
+            [
+              "Ashken · 0,18 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Doriel · 0,39 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Iravelle · 0,65 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Kavren · 1,12 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Torad · 2,9 AE",
+              "Gasriese"
+            ],
+            [
+              "Olyss · 6,1 AE",
+              "Eisriese"
+            ],
+            [
+              "Umbrel · 11,3 AE",
+              "Eisriese"
+            ],
+            [
+              "Darynth-Asteroidengürtel · 1,7–2,4 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußere Kleinkörperregion · 14–30 AE",
+              "Kleinkörpergürtel"
+            ]
+          ],
+          "verweise": [
+            [
+              "Darynth",
+              "inhalte/himmelskoerper/sterne/details/darynth/hauptseite/index.html"
+            ],
+            [
+              "Ashken",
+              "inhalte/himmelskoerper/planeten/details/ashken/hauptseite/index.html"
+            ],
+            [
+              "Doriel",
+              "inhalte/himmelskoerper/planeten/details/doriel/hauptseite/index.html"
+            ],
+            [
+              "Iravelle",
+              "inhalte/himmelskoerper/planeten/details/iravelle/hauptseite/index.html"
+            ],
+            [
+              "Kavren",
+              "inhalte/himmelskoerper/planeten/details/kavren/hauptseite/index.html"
+            ],
+            [
+              "Torad",
+              "inhalte/himmelskoerper/planeten/details/torad/hauptseite/index.html"
+            ],
+            [
+              "Olyss",
+              "inhalte/himmelskoerper/planeten/details/olyss/hauptseite/index.html"
+            ],
+            [
+              "Umbrel",
+              "inhalte/himmelskoerper/planeten/details/umbrel/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Stärkster Gezeitenbeitrag",
+          "text": [
+            "Nethis trägt besonders stark zu den Gezeiten Iravelles bei. Seine Nähe ermöglicht auffällige Mondphasen und relativ schnelle Veränderungen seiner Position am Himmel."
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Nethis.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "1.090 km"
+            ],
+            [
+              "Masse",
+              "0,244 Mondmassen"
+            ],
+            [
+              "Mittlere Dichte",
+              "3,3 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "1,01 m/s² (0,102 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "1,48 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Planetare Struktur": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Planetare Struktur von Nethis.",
+      "abschnitte": [
+        {
+          "titel": "Schalenbau",
+          "schichten": [
+            [
+              "Kruste",
+              "Silikatgestein"
+            ],
+            [
+              "Mantel",
+              "Dichteres Silikatgestein"
+            ],
+            [
+              "Kern",
+              "Eisen und Nickel"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Nethis.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Nethis ist geologisch weitgehend erstarrt; Einschläge haben seine Oberfläche geformt."
+          ]
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Nethis.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 0,65 AE Abstand zu Darynth liegt die Gleichgewichtstemperatur von Nethis bei rund -12 °C – gemäßigt."
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Nethis.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Nethis entstand zusammen mit dem Darynth-System vor rund 6 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Nethis.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Ist der Mond eingefangen oder mit seinem Planeten entstanden?",
+            "Welche Spuren tragen seine ältesten Krater?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Nethis ist mit allen Bahndaten im Darynth-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=iravelle-stern&objekt=iravelle-nethis"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Nethis.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Größter Mond von Iravelle"
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Nethis.",
+      "abschnitte": [
+        {
+          "titel": "Nethis – Archivbild",
+          "bild": true,
+          "bildtext": "Nethis"
+        }
+      ]
+    }
+  }
+}

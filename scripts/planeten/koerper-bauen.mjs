@@ -45,8 +45,9 @@ const systeme = wahl === "alle" ? sterne
 if (!systeme.length) throw new Error(`System „${wahl}“ nicht gefunden`);
 
 // ---------- Hilfen ----------
-const KAT = (o) => o.systemName ? "stern" : /mond/i.test(o.typ) ? "mond" : /komet/i.test(o.typ) && !/gebiet/i.test(o.typ) ? "komet" : /asteroid$/i.test(o.typ) ? "asteroid"
-    : /gürtel|ring|gebiet/i.test(o.typ) ? "guertel" : /nebel/i.test(o.typ) ? "nebel" : /gasriese/i.test(o.typ) ? "gas" : /eisriese/i.test(o.typ) ? "eisriese"
+const IST_STERN = /roter zwerg|brauner zwerg|weißer zwerg|hauptreihenstern|riesenstern/i;
+const KAT = (o) => o.systemName || IST_STERN.test(o.typ) ? "stern" : /mond/i.test(o.typ) ? "mond" : /komet/i.test(o.typ) && !/gebiet/i.test(o.typ) ? "komet" : /asteroid$/i.test(o.typ) ? "asteroid"
+    : /gürtel|ring|gebiet/i.test(o.typ) ? "guertel" : /nebel/i.test(o.typ) ? "nebel" : /gasriese/i.test(o.typ) ? "gas" : /eisriese|eisreicher riesenplanet|neptun/i.test(o.typ) ? "eisriese"
     : /zwerg/i.test(o.typ) ? "zwerg" : /eis/i.test(o.typ) ? "eis" : /ozean/i.test(o.typ) ? "ozean" : "gestein";
 const hex = (rgb, k = 1, weiss = 0) => "#" + rgb.map((c) => Math.round(Math.min(255, (c * k + (1 - c * k) * weiss) * 255)).toString(16).padStart(2, "0")).join("");
 const tageText = (t) => t > 730 ? `${f(t / 365.25, 1)} Jahre` : t > 2 ? `${f(t, 1)} Tage` : `${f(t * 24, 1)} Stunden`;
@@ -68,12 +69,17 @@ const GRUPPE = {
 function werte(o, star, sysDef) {
     const def = sysDef ? (o.id === star.id ? sysDef.stern : sysDef.koerper.find((k) => k.id === o.id)) ?? {} : {};
     const kat = KAT(o);
-    const M = star.gravitationMu / MU_SONNE, Rst = (star.radiusKm ?? 0) / R_SONNE;
-    const L = sysDef?.stern.leuchtkraftSonne ?? (M < 0.43 ? 0.23 * M ** 2.3 : M ** 4);
-    const T = sysDef?.stern.temperaturK ?? Math.round(5772 * (L / Math.max(Rst, 0.05) ** 2) ** 0.25);
+    const begleiter = kat === "stern" && !o.systemName;
+    const lum = (m) => m < 0.43 ? 0.23 * m ** 2.3 : m ** 4;
+    const quelle = begleiter ? o : star;
+    const M = quelle.gravitationMu / MU_SONNE, Rst = (quelle.radiusKm ?? 0) / R_SONNE;
+    const L = (begleiter ? def.leuchtkraftSonne : sysDef?.stern.leuchtkraftSonne) ?? lum(M);
+    const T = (begleiter ? def.temperaturK : sysDef?.stern.temperaturK) ?? Math.round(5772 * (L / Math.max(Rst, 0.05) ** 2) ** 0.25);
     const alter = sysDef?.stern.alterMrd ?? null;
     const elter = nachId.get(o.bahnUm ?? o.ringUm) ?? null;
-    const umStern = !elter || elter.id === star.id;
+    const umBegleiter = !!elter && elter.id !== star.id && KAT(elter) === "stern";   // Planet eines Begleitsterns
+    const umStern = !elter || elter.id === star.id || umBegleiter;
+    const Lwirt = umBegleiter ? (systemDateien.flatMap((s) => s.def.koerper).find((k) => k.id === elter.id)?.leuchtkraftSonne ?? lum(elter.gravitationMu / MU_SONNE)) : L;
     const aAE = o.orbit ? o.orbit.a / 100 : null;
     const abstandStern = umStern ? aAE : elter?.orbit ? elter.orbit.a / 100 : null;
     const rKm = o.radiusKm ?? def.radiusKm ?? null;
@@ -84,9 +90,9 @@ function werte(o, star, sysDef) {
     if (!(mE > 0) && rE && dichte) mE = dichte / 5.514 * rE ** 3;
     const g = mE > 0 && rE ? mE / rE ** 2 : null;
     const vEsc = mE > 0 && rE ? 11.186 * Math.sqrt(mE / rE) : null;
-    const teq = abstandStern ? 278.6 * L ** 0.25 / Math.sqrt(abstandStern) * (1 - albedo) ** 0.25 - 273.15 : null;
+    const teq = abstandStern ? 278.6 * Lwirt ** 0.25 / Math.sqrt(abstandStern) * (1 - albedo) ** 0.25 - 273.15 : null;
     const ringe = o.ringe ? o.ringe.map((r) => r / 100) : null;
-    return { def, kat, M, Rst, L, T, alter, elter, umStern, aAE, abstandStern, rKm, mE, dichte, g, vEsc, teq, ringe, albedo, tage: o.orbit?.tage ?? null, e: o.orbit?.e ?? def.e ?? 0, i: o.orbit?.i ?? def.i ?? 0 };
+    return { begleiter, umBegleiter, wirt: umBegleiter ? elter : star, Lwirt, def, kat, M, Rst, L, T, alter, elter, umStern, aAE, abstandStern, rKm, mE, dichte, g, vEsc, teq, ringe, albedo, tage: o.orbit?.tage ?? null, e: o.orbit?.e ?? def.e ?? 0, i: o.orbit?.i ?? def.i ?? 0 };
 }
 
 // ---------- Inhalte ----------
@@ -109,21 +115,22 @@ function baueInhalt(o, star, sysDef, K, basis) {
     if (!ist("stern")) daten.push(["Zentralkörper", w.elter?.name ?? star.name]);
     if (ist("stern")) daten.push(["Masse", `${f(w.M)} Sonnenmassen`], ["Radius", `${f(w.Rst)} Sonnenradien`], ["Leuchtkraft", `${f(w.L, 4)} Sonnenleuchtkräfte`], ["Oberflächentemperatur", `ca. ${f(w.T, 0)} K`], ...(w.alter ? [["Alter", `ca. ${f(w.alter, 1)} Mrd. Jahre`]] : []));
     if (w.ringe) daten.push([w.umStern ? "Ausdehnung" : "Ringbereich", w.umStern ? `${f(w.ringe[0], 2)}–${f(w.ringe.at(-1), 2)} AE` : `${f(w.ringe[0] * AU_KM, 0)}–${f(w.ringe.at(-1) * AU_KM, 0)} km vom Zentrum`]);
-    if (w.aAE && !ist("stern")) daten.push(["Große Halbachse", w.umStern ? `${f(w.aAE, 3)} AE` : `${f(w.aAE * AU_KM, 0)} km`]);
+    if (w.aAE && (!ist("stern") || w.begleiter)) daten.push(["Große Halbachse", w.umStern ? `${f(w.aAE, 3)} AE` : `${f(w.aAE * AU_KM, 0)} km`]);
     if (w.tage) daten.push(["Umlaufzeit", tageText(w.tage)]);
     if (w.rKm && !ist("stern", "guertel")) daten.push(["Durchmesser", `${f(w.rKm * 2, 0)} km`]);
     if (w.mE > 0 && !ist("stern", "guertel", "nebel")) daten.push(["Masse", masseText(w.mE)]);
     if (w.g && !ist("stern", "guertel", "nebel")) daten.push(["Schwerkraft", w.g >= 0.01 ? `${f(w.g, 2)} g` : `${f(w.g * 9.81 * 100, 2)} cm/s²`]);
     if (w.teq != null && !ist("stern", "nebel")) daten.push(["Gleichgewichtstemperatur", `ca. ${f(w.teq, 0)} °C`]);
-    if (monde.length) daten.push(["Monde", `${monde.length} (${monde.map((m) => m.name).join(", ")})`]);
+    if (monde.length) daten.push([ist("stern") ? "Planeten" : "Monde", `${monde.length} (${monde.map((m) => m.name).join(", ")})`]);
 
     // Bausteine
-    const satz = ist("stern") ? `${name} ist der Zentralstern des ${sysName}s.` : ist("guertel") ? `${name} umgibt ${w.elter?.name ?? star.name} im ${sysName}.`
+    const satz = w.begleiter ? `${name} ist ein Begleitstern von ${star.name} und umkreist ihn in rund ${f(w.aAE, 0)} AE Abstand – ein Umlauf dauert ${tageText(w.tage)}.` : ist("stern") ? `${name} ist der Zentralstern des ${sysName}s.` : w.umBegleiter ? `${name} umkreist den Begleitstern ${w.elter.name} in ${f(w.aAE, 3)} AE Abstand und braucht für einen Umlauf ${tageText(w.tage)}.` : ist("guertel") ? `${name} umgibt ${w.elter?.name ?? star.name} im ${sysName}.`
         : ist("mond") ? `${name} umkreist ${w.elter.name} in ${tageText(w.tage)}.` : `${name} umkreist ${star.name} in ${f(w.aAE, 3)} AE Abstand und braucht für einen Umlauf ${tageText(w.tage)}.`;
     const heimatHinweis = hw && hwObj?.id !== o.id ? { titel: `Im System von ${hw.welt}`, text: [`Das ${sysName} ist die Heimat der ${hw.spezies}: Ihr Planet ${hw.welt} umkreist ${star.name}${ist("mond") && w.elter?.id === hwObj.id ? `, und ${name} ist einer seiner Monde` : ""}.`], verweise: [L_(hwObj), [`Speziesdossier ${hw.spezies}`, hw.seite]] } : null;
-    const systemListe = { titel: "Körper des Systems", zeitleiste: [[`${star.name} · Stern`, star.typ], ...planeten.map((p) => [`${p.name} · ${f(p.orbit.a / 100, 2)} AE${p.id === o.id ? " · dieses Dossier" : ""}`, p.typ]), ...koerper.filter((x) => KAT(x) === "guertel" && x.ringUm === starId).map((x) => [`${x.name} · ${f(x.ringe[0] / 100, 1)}–${f(x.ringe.at(-1) / 100, 1)} AE`, x.typ])],
-        verweise: [star, ...planeten].filter((x) => x.id !== o.id).slice(0, 9).map((x) => L_(x)) };
-    const bahn = w.tage ? { titel: "Bahn", daten: [["Zentralkörper", w.elter?.name ?? star.name], ["Große Halbachse", w.umStern ? `${f(w.aAE, 4)} AE (${f(w.aAE * 149.6, 1)} Mio. km)` : `${f(w.aAE * AU_KM, 0)} km`], ["Exzentrizität", f(w.e, 3)], ["Bahnneigung", `${f(w.i, 1)}°`], ["Umlaufzeit", tageText(w.tage)], ...(w.umStern ? [["Einstrahlung", `${f(w.L / w.aAE ** 2, 3)}-fach der Erde`]] : [])] } : null;
+    const begleitsterne = koerper.filter((x) => KAT(x) === "stern");
+    const systemListe = { titel: "Körper des Systems", zeitleiste: [[`${star.name} · Stern`, star.typ], ...begleitsterne.map((b) => [`${b.name} · Begleitstern in ${f(b.orbit.a / 100, 0)} AE${b.id === o.id ? " · dieses Dossier" : ""}`, b.typ]), ...planeten.map((p) => [`${p.name} · ${f(p.orbit.a / 100, 2)} AE${p.id === o.id ? " · dieses Dossier" : ""}`, p.typ]), ...koerper.filter((x) => KAT(x) === "guertel" && x.ringUm === starId).map((x) => [`${x.name} · ${f(x.ringe[0] / 100, 1)}–${f(x.ringe.at(-1) / 100, 1)} AE`, x.typ])],
+        verweise: [star, ...begleitsterne, ...planeten].filter((x) => x.id !== o.id).slice(0, 10).map((x) => L_(x)) };
+    const bahn = w.tage ? { titel: "Bahn", daten: [["Zentralkörper", w.elter?.name ?? star.name], ["Große Halbachse", w.umStern ? `${f(w.aAE, 4)} AE (${f(w.aAE * 149.6, 1)} Mio. km)` : `${f(w.aAE * AU_KM, 0)} km`], ["Exzentrizität", f(w.e, 3)], ["Bahnneigung", `${f(w.i, 1)}°`], ["Umlaufzeit", tageText(w.tage)], ...(w.umStern ? [["Einstrahlung", `${f(w.Lwirt / w.aAE ** 2, 3)}-fach der Erde`]] : [])] } : null;
     const physik = w.rKm && !ist("stern", "guertel", "nebel") ? { titel: "Kerndaten", daten: [["Radius", `${f(w.rKm, 0)} km`], ...(w.mE > 0 ? [["Masse", masseText(w.mE)]] : []), ...(w.dichte ? [["Mittlere Dichte", `${f(w.dichte, 2)} g/cm³`]] : []), ...(w.g ? [["Oberflächenschwerkraft", `${f(w.g * 9.81, 2)} m/s² (${f(w.g, 3)} g)`]] : []), ...(w.vEsc ? [["Fluchtgeschwindigkeit", `${f(w.vEsc, 2)} km/s`]] : [])],
         ...(w.mE >= 0.05 && planetArt ? { vergleich: { mit: "Erde", werte: [["Durchmesser", Math.round(w.rKm * 2), 12742, "km"], ["Masse", +w.mE.toFixed(3), 1, "Erdmassen"], ["Schwerkraft", +w.g.toFixed(2), 1, "g"]] } } : {}) } : null;
     const schichten = {
@@ -147,9 +154,9 @@ function baueInhalt(o, star, sysDef, K, basis) {
     }
     if (ist("mond") && geschwister.length > 1 && [...geschwister].sort((a, b) => (b.radiusKm ?? 0) - (a.radiusKm ?? 0))[0].id === o.id) besonders.push(`Größter Mond von ${w.elter.name}`);
     if (o.anomalie || w.def.anomalie) besonders.push("Als Anomalie in der Sternenkarte verzeichnet");
-    if (monde.length) besonders.push(`${monde.length === 1 ? "Ein Mond" : monde.length + " Monde"}: ${monde.map((m) => m.name).join(", ")}`);
-    const mondKarten = monde.length ? { titel: "Monde", karten: monde.map((m) => ({ titel: m.name, text: `${m.radiusKm ? f(m.radiusKm * 2, 0) + " km Durchmesser, " : ""}Umlauf in ${tageText(m.orbit.tage)}. ${m.beschreibung ?? ""}`.trim() })), verweise: monde.map((m) => L_(m)) } : null;
-    const temp = w.teq != null ? { titel: "Temperatur", text: [`Bei ${f(w.abstandStern, 3)} AE Abstand zu ${star.name} liegt die Gleichgewichtstemperatur ${GEN} bei rund ${f(w.teq, 0)} °C – ${tempWort(w.teq)}.${atmo && !ist("gas", "eisriese") && w.teq > 60 ? " Die dichte Gashülle heizt die Oberfläche zusätzlich auf." : ""}`] } : null;
+    if (monde.length) besonders.push(`${ist("stern") ? (monde.length === 1 ? "Ein eigener Planet" : monde.length + " eigene Planeten") : monde.length === 1 ? "Ein Mond" : monde.length + " Monde"}: ${monde.map((m) => m.name).join(", ")}`);
+    const mondKarten = monde.length ? { titel: ist("stern") ? "Planeten" : "Monde", karten: monde.map((m) => ({ titel: m.name, text: `${m.radiusKm ? f(m.radiusKm * 2, 0) + " km Durchmesser, " : ""}Umlauf in ${tageText(m.orbit.tage)}. ${m.beschreibung ?? ""}`.trim() })), verweise: monde.map((m) => L_(m)) } : null;
+    const temp = w.teq != null ? { titel: "Temperatur", text: [`Bei ${f(w.abstandStern, 3)} AE Abstand zu ${w.wirt.name} liegt die Gleichgewichtstemperatur ${GEN} bei rund ${f(w.teq, 0)} °C – ${tempWort(w.teq)}.${atmo && !ist("gas", "eisriese") && w.teq > 60 ? " Die dichte Gashülle heizt die Oberfläche zusätzlich auf." : ""}`] } : null;
     const offen = { stern: ["Wie stark schwankt die magnetische Aktivität?", "Wie hat sich die Leuchtkraft seit der Entstehung verändert?"], gas: ["Wie tief reichen die Wolkenbänder?", "Wie groß ist der feste Kern?"], eisriese: ["Gibt es flüssige Schichten im Eismantel?", "Wie entstand die Achslage?"],
         mond: ["Ist der Mond eingefangen oder mit seinem Planeten entstanden?", "Welche Spuren tragen seine ältesten Krater?"], komet: ["Woher stammt der Komet genau?", "Wie lange übersteht sein Kern noch die Annäherungen an den Stern?"], asteroid: ["Ist der Körper ein Bruchstück eines größeren Körpers?", "Welche Rohstoffe birgt er?"],
         guertel: ["Wie viel Masse enthält das Gebiet insgesamt?", "Welche Resonanzen formen seine Ränder?"], nebel: ["Welche Sterne beleuchten den Nebel?", "Entstehen in ihm neue Sterne?"] }[w.kat] ?? ["Wie ist der innere Aufbau beschaffen?", "Gab es früher eine dichtere Atmosphäre?"];
@@ -159,8 +166,8 @@ function baueInhalt(o, star, sysDef, K, basis) {
 
     const A = {
         "Allgemeines": { intro: `${name} auf einen Blick.`, abschnitte: allgemeines },
-        "Astronomie": { intro: ist("stern") ? `${name} im Raum.` : `${name} im ${sysName}.`, abschnitte: [bahn, ist("stern") ? { titel: "Lage im Raum", daten: [["Entfernung zur Sonne", `${f(star.distanzLichtjahre ?? 0, 1)} Lichtjahre`], ["Nächste Nachbarsysteme", nachbarn(star).slice(0, 3).map((n) => `${n.name} (${f(n.lj, 1)} Lj)`).join(", ")]] } : null,
-            planetArt && w.umStern ? { titel: `Am Himmel ${GEN}`, text: [`${star.name} erscheint von hier aus etwa ${f(0.53 * w.Rst / w.aAE, 2)}° groß (die Sonne von der Erde: 0,53°).`] } : null, systemListe].filter(Boolean) },
+        "Astronomie": { intro: ist("stern") ? `${name} im Raum.` : `${name} im ${sysName}.`, abschnitte: [bahn, ist("stern") && !w.begleiter ? { titel: "Lage im Raum", daten: [["Entfernung zur Sonne", `${f(star.distanzLichtjahre ?? 0, 1)} Lichtjahre`], ["Nächste Nachbarsysteme", nachbarn(star).slice(0, 3).map((n) => `${n.name} (${f(n.lj, 1)} Lj)`).join(", ")]] } : null,
+            planetArt && w.umStern ? { titel: `Am Himmel ${GEN}`, text: [`${w.wirt.name} erscheint von hier aus etwa ${f(0.53 * (w.wirt.radiusKm ?? 0) / R_SONNE / w.aAE, 2)}° groß (die Sonne von der Erde: 0,53°).`] } : null, systemListe].filter(Boolean) },
         "Physik": { abschnitte: [physik ?? { titel: "Physik", daten: daten.slice(2) }] },
         "Planetare Struktur": { abschnitte: schichten ? [{ titel: "Schalenbau", schichten }] : [] },
         "Geografie": { abschnitte: [{ titel: "Oberfläche", text: [ist("gas", "eisriese") ? `${name} besitzt keine feste Oberfläche. Sichtbar sind Wolkenbänder, Wirbel und Stürme.` : `Die Oberfläche ${GEN} ist ${tempWort(w.teq ?? 0)}${w.mE > 0 && w.mE < 0.3 ? " und von Einschlagkratern geprägt" : ""}.`] }] },
@@ -214,12 +221,12 @@ function baueInhalt(o, star, sysDef, K, basis) {
     }
     const rgb = o.color ?? [0.6, 0.6, 0.65];
     const texturKlasse = { stern: "Vulkan", komet: "Eis", eis: "Eis", eisriese: "Eisriese", gas: "Gasriese", ozean: "Ozean", nebel: "Gasriese" }[w.kat] ?? (rgb[2] > rgb[0] + 0.08 ? "Eis" : "Gestein");
-    const position = [["Sternsystem", sysName], ...(ist("stern") ? [["Entfernung zur Sonne", `${f(star.distanzLichtjahre ?? 0, 1)} Lichtjahre`], ["Nächste Nachbarsysteme", nachbarn(star).slice(0, 2).map((n) => `${n.name} (${f(n.lj, 1)} Lj)`).join(", ")]] : [["Zentralstern", star.name, dossierPfad(star)], ...(w.elter && !w.umStern ? [["Umläuft", w.elter.name, dossierPfad(w.elter)]] : []), ...(w.aAE ? [["Abstand", w.umStern ? `${f(w.aAE, 3)} AE` : `${f(w.aAE * AU_KM, 0)} km`]] : [])])];
+    const position = [["Sternsystem", sysName], ...(ist("stern") && !w.begleiter ? [["Entfernung zur Sonne", `${f(star.distanzLichtjahre ?? 0, 1)} Lichtjahre`], ["Nächste Nachbarsysteme", nachbarn(star).slice(0, 2).map((n) => `${n.name} (${f(n.lj, 1)} Lj)`).join(", ")]] : [["Zentralstern", star.name, dossierPfad(star)], ...(w.elter && !w.umStern ? [["Umläuft", w.elter.name, dossierPfad(w.elter)]] : []), ...(w.aAE ? [["Abstand", w.umStern ? `${f(w.aAE, 3)} AE` : `${f(w.aAE * AU_KM, 0)} km`]] : [])])];
     const verweise = [
         { icon: "✦", art: "Sternenkarte", titel: `${name} im ${sysName}`, href: kartenLink(starId, o.id), route: null },
-        ...(!ist("stern") ? [{ icon: "☀", art: "Zentralstern", titel: star.name, href: L_(star)[1], route: null }] : []),
+        ...(!ist("stern") || w.begleiter ? [{ icon: "☀", art: "Zentralstern", titel: star.name, href: L_(star)[1], route: null }] : []),
         ...(w.elter && !w.umStern ? [{ icon: "◍", art: ist("guertel") ? "Planet" : "Mutterplanet", titel: w.elter.name, href: L_(w.elter)[1], route: null }] : []),
-        ...monde.map((m) => ({ icon: "◐", art: "Mond", titel: m.name, href: L_(m)[1], route: null })),
+        ...monde.map((m) => ({ icon: "◐", art: ist("stern") ? "Planet" : "Mond", titel: m.name, href: L_(m)[1], route: null })),
         ...(hw && hwObj.id !== o.id ? [{ icon: "✿", art: `Heimatwelt der ${hw.spezies}`, titel: hw.welt, href: L_(hwObj)[1], route: null }, { icon: "◈", art: "Spezies-Dossier", titel: hw.spezies, href: hw.seite, route: null }] : []),
     ];
     return {
@@ -227,8 +234,8 @@ function baueInhalt(o, star, sysDef, K, basis) {
         intro: extra?.intro ?? [o.beschreibung, satz].filter(Boolean).join(" "),
         globusDaten: { planet: K.slug, klasse: texturKlasse, radius: Math.round((w.rKm ?? 1000) * 1000) },
         sternenkarte: kartenLink(starId, o.id),
-        grunddaten: [["Archiv-ID", basis.grunddaten.find(([k]) => k === "Archiv-ID")?.[1] ?? "–"], ...daten],
-        position, verknuepfungen: verweise,
+        grunddaten: [["System-ID", o.id], ["Archiv-ID", basis.grunddaten.find(([k]) => k === "Archiv-ID")?.[1] ?? "-"], ...daten],
+        position, verknuepfungen: [...verweise, ...(extra?.verknuepfungen ?? [])],
         quellen: [{ titel: `Sternenkarte · ${sysName}`, href: kartenLink(starId, o.id) }, ...(hw ? [{ titel: `Speziesdossier ${hw.spezies}`, href: hw.seite }] : [])],
         design: { farben: { nacht: hex(rgb, 0.05), tiefe: hex(rgb, 0.11), akzent: hex(rgb, 1, 0.35), sand: hex([rgb[0], rgb[1] * 0.92, rgb[2] * 0.7], 1, 0.4), moos: hex([rgb[0] * 0.8, rgb[1], rgb[2] * 0.75], 1, 0.25), ozean: hex([rgb[0] * 0.6, rgb[1] * 0.85, rgb[2]], 1, 0.2), glas: "rgba(8, 12, 18, .76)", "glas-hell": "rgba(16, 22, 32, .82)", linie: "rgba(255, 255, 255, .12)", "linie-hell": "rgba(255, 255, 255, .3)", text: "#eef2f6", leise: "#a8b0bc", "aporia-page-tint": hex(rgb, 0.45) },
             ...(ist("komet") ? { schichten: [["Orbit", "Umlaufbahn"], ["Hülle", "Schweif"], ["Hülle", "Koma"], ["Kern", "Kern"]] } : ist("stern") ? { schichten: [["Strahlung", "Leuchtkraft"], ["Hülle", "Spektralklasse"], ["Kern", "Fusion"], ["Zeit", "Lebenszyklus"]] } : ist("asteroid") ? { schichten: [["Orbit", "Bahn"], ["Material", "Zusammensetzung"], ["Zeit", "Herkunft"]] } : ist("guertel") ? { schichten: [["Lage", "Bahnen"], ["System", "Planeten"], ["Dynamik", "Stabilität"]] } : ist("mond") ? { schichten: [["Orbit", "Astronomie"], ["Planet", "Mutterplanet"], ["Kräfte", "Gezeiten"], ["Tiefe", "Geologie"]] } : {}) },

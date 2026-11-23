@@ -1,0 +1,487 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Resonanzbrocken",
+  "genitiv": "von Resonanzbrocken",
+  "dossierName": "Resonanzbrocken-Dossier",
+  "klasse": "Asteroid",
+  "intro": "Ein metallreicher Asteroid im Erzgürtel, an dem Messungen ungewöhnlich lang anhaltende Schwingungsresonanzen zeigen. Die Ursache ist ungeklärt. Resonanzbrocken umkreist Morvath in 2,3 AE Abstand und braucht für einen Umlauf 3,8 Jahre.",
+  "globusDaten": {
+    "planet": "eisenreicher-asteroid-mit-gewaltigem-einschlagkrater",
+    "klasse": "Gestein",
+    "radius": 22000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=gorvhan-stern&objekt=gorvhan-resonanzbrocken",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-DE852E6DC2"
+    ],
+    [
+      "Typ",
+      "Asteroid"
+    ],
+    [
+      "Sternsystem",
+      "Morvath-System"
+    ],
+    [
+      "Zentralkörper",
+      "Morvath"
+    ],
+    [
+      "Große Halbachse",
+      "2,3 AE"
+    ],
+    [
+      "Umlaufzeit",
+      "3,8 Jahre"
+    ],
+    [
+      "Durchmesser",
+      "44 km"
+    ],
+    [
+      "Masse",
+      "1,2 · 10^17 kg"
+    ],
+    [
+      "Schwerkraft",
+      "1,66 cm/s²"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -123 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Morvath-System"
+    ],
+    [
+      "Zentralstern",
+      "Morvath",
+      "inhalte/himmelskoerper/sterne/details/morvath/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "2,3 AE"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Resonanzbrocken im Morvath-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=gorvhan-stern&objekt=gorvhan-resonanzbrocken",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Morvath",
+      "href": "inhalte/himmelskoerper/sterne/details/morvath/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Technoiden",
+      "titel": "Gorvhan",
+      "href": "inhalte/himmelskoerper/planeten/details/gorvhan/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Technoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Technoiden/Hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Morvath-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=gorvhan-stern&objekt=gorvhan-resonanzbrocken"
+    },
+    {
+      "titel": "Speziesdossier Technoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Technoiden/Hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#090705",
+      "tiefe": "#14100c",
+      "akzent": "#d1b69f",
+      "sand": "#d4b593",
+      "moos": "#aeab7c",
+      "ozean": "#8b9489",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#534030"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Bahn"
+      ],
+      [
+        "Material",
+        "Zusammensetzung"
+      ],
+      [
+        "Zeit",
+        "Herkunft"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Zusammensetzung": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Zusammensetzung von Resonanzbrocken.",
+      "abschnitte": [
+        {
+          "titel": "Material",
+          "liste": [
+            "Silikate",
+            "Eisen und Nickel",
+            "Seltene Metalle"
+          ],
+          "schichten": [
+            [
+              "Regolith",
+              "Staub und Gesteinsschutt"
+            ],
+            [
+              "Trümmerkörper",
+              "Lose zusammengehaltene Gesteinsbrocken"
+            ]
+          ]
+        }
+      ]
+    },
+    "Bahn": {
+      "gruppe": "Wissenschaft",
+      "icon": "◌",
+      "intro": "Bahn von Resonanzbrocken.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Morvath"
+            ],
+            [
+              "Große Halbachse",
+              "2,3 AE (344,1 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,08"
+            ],
+            [
+              "Bahnneigung",
+              "6°"
+            ],
+            [
+              "Umlaufzeit",
+              "3,8 Jahre"
+            ],
+            [
+              "Einstrahlung",
+              "0,095-fach der Erde"
+            ]
+          ]
+        }
+      ]
+    },
+    "Herkunft": {
+      "gruppe": "Weitere",
+      "icon": "⧗",
+      "intro": "Herkunft von Resonanzbrocken.",
+      "abschnitte": [
+        {
+          "titel": "Herkunft",
+          "text": [
+            "Resonanzbrocken ist ein Überrest aus der Entstehungszeit des Morvath-Systems."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Resonanzbrocken auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Resonanzbrocken",
+          "text": [
+            "Ein metallreicher Asteroid im Erzgürtel, an dem Messungen ungewöhnlich lang anhaltende Schwingungsresonanzen zeigen. Die Ursache ist ungeklärt.",
+            "Resonanzbrocken umkreist Morvath in 2,3 AE Abstand und braucht für einen Umlauf 3,8 Jahre."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Asteroid"
+            ],
+            [
+              "Sternsystem",
+              "Morvath-System"
+            ],
+            [
+              "Zentralkörper",
+              "Morvath"
+            ],
+            [
+              "Große Halbachse",
+              "2,3 AE"
+            ],
+            [
+              "Umlaufzeit",
+              "3,8 Jahre"
+            ],
+            [
+              "Durchmesser",
+              "44 km"
+            ],
+            [
+              "Masse",
+              "1,2 · 10^17 kg"
+            ],
+            [
+              "Schwerkraft",
+              "1,66 cm/s²"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -123 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Gorvhan",
+          "text": [
+            "Das Morvath-System ist die Heimat der Technoiden: Ihr Planet Gorvhan umkreist Morvath."
+          ],
+          "verweise": [
+            [
+              "Gorvhan",
+              "inhalte/himmelskoerper/planeten/details/gorvhan/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Technoiden",
+              "inhalte/spezies/Biologische Spezies/Technoiden/Hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Resonanzbrocken im Morvath-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Morvath"
+            ],
+            [
+              "Große Halbachse",
+              "2,3 AE (344,1 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,08"
+            ],
+            [
+              "Bahnneigung",
+              "6°"
+            ],
+            [
+              "Umlaufzeit",
+              "3,8 Jahre"
+            ],
+            [
+              "Einstrahlung",
+              "0,095-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Morvath · Stern",
+              "Orangefarbener Zwerg (K1 V)"
+            ],
+            [
+              "Morvath I · 0,3 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Gorvhan · 0,62 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Morvath III · 1,3 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Morvath IV · 4,1 AE",
+              "Gasriese"
+            ],
+            [
+              "Morvath V · 10 AE",
+              "Eisriese"
+            ],
+            [
+              "Erzgürtel · 1,9–2,7 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 30–44 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Morvath",
+              "inhalte/himmelskoerper/sterne/details/morvath/hauptseite/index.html"
+            ],
+            [
+              "Morvath I",
+              "inhalte/himmelskoerper/planeten/details/morvath-i/hauptseite/index.html"
+            ],
+            [
+              "Gorvhan",
+              "inhalte/himmelskoerper/planeten/details/gorvhan/hauptseite/index.html"
+            ],
+            [
+              "Morvath III",
+              "inhalte/himmelskoerper/planeten/details/morvath-iii/hauptseite/index.html"
+            ],
+            [
+              "Morvath IV",
+              "inhalte/himmelskoerper/planeten/details/morvath-iv/hauptseite/index.html"
+            ],
+            [
+              "Morvath V",
+              "inhalte/himmelskoerper/planeten/details/morvath-v/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Resonanzbrocken.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "22 km"
+            ],
+            [
+              "Masse",
+              "1,2 · 10^17 kg"
+            ],
+            [
+              "Mittlere Dichte",
+              "2,7 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "0,02 m/s² (0,002 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "0,03 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Resonanzbrocken.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Resonanzbrocken besteht aus Material, das sich bei der Entstehung des Morvath-Systems nicht zu einem Planeten vereinte."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Resonanzbrocken.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Was steckt hinter den Besonderheiten von Resonanzbrocken?",
+            "Ist der Körper ein Bruchstück eines größeren Körpers?",
+            "Welche Rohstoffe birgt er?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Resonanzbrocken ist mit allen Bahndaten im Morvath-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=gorvhan-stern&objekt=gorvhan-resonanzbrocken"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Resonanzbrocken.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Als Anomalie in der Sternenkarte verzeichnet"
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Resonanzbrocken.",
+      "abschnitte": [
+        {
+          "titel": "Resonanzbrocken – Archivbild",
+          "bild": true,
+          "bildtext": "Resonanzbrocken"
+        }
+      ]
+    }
+  }
+}

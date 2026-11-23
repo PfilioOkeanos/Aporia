@@ -1,0 +1,558 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Oris",
+  "genitiv": "von Oris",
+  "dossierName": "Oris-Dossier",
+  "klasse": "Mond",
+  "intro": "Oris ist der große Mond Nalvyrs. Gemeinsam mit Saelon erzeugt er halbtägige Gezeiten; in Trichterbuchten steigt das Wasser um bis zu 9 Meter – Lebensraum, in dem sich viele regenerative Tierlinien entwickelten. Oris umkreist Nalvyr in 19,9 Tage.",
+  "globusDaten": {
+    "planet": "abgerundeter-trummermond-im-schwarzen-all",
+    "klasse": "Gestein",
+    "radius": 1520000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=nalvyr-stern&objekt=nalvyr-oris",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-6944D04CBF"
+    ],
+    [
+      "Typ",
+      "Mond"
+    ],
+    [
+      "Sternsystem",
+      "Saelon-System"
+    ],
+    [
+      "Zentralkörper",
+      "Nalvyr"
+    ],
+    [
+      "Große Halbachse",
+      "297.706 km"
+    ],
+    [
+      "Umlaufzeit",
+      "19,9 Tage"
+    ],
+    [
+      "Durchmesser",
+      "3.040 km"
+    ],
+    [
+      "Masse",
+      "0,65 Mondmassen"
+    ],
+    [
+      "Schwerkraft",
+      "0,14 g"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -7 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Saelon-System"
+    ],
+    [
+      "Zentralstern",
+      "Saelon",
+      "inhalte/himmelskoerper/sterne/details/saelon/hauptseite/index.html"
+    ],
+    [
+      "Umläuft",
+      "Nalvyr",
+      "inhalte/himmelskoerper/planeten/details/nalvyr/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "297.706 km"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Oris im Saelon-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=nalvyr-stern&objekt=nalvyr-oris",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Saelon",
+      "href": "inhalte/himmelskoerper/sterne/details/saelon/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◍",
+      "art": "Mutterplanet",
+      "titel": "Nalvyr",
+      "href": "inhalte/himmelskoerper/planeten/details/nalvyr/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Regeneranten",
+      "titel": "Nalvyr",
+      "href": "inhalte/himmelskoerper/planeten/details/nalvyr/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Regeneranten",
+      "href": "inhalte/spezies/Biologische Spezies/Regeneranten/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Saelon-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=nalvyr-stern&objekt=nalvyr-oris"
+    },
+    {
+      "titel": "Speziesdossier Regeneranten",
+      "href": "inhalte/spezies/Biologische Spezies/Regeneranten/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#090909",
+      "tiefe": "#151413",
+      "akzent": "#d4d1ca",
+      "sand": "#d7cbaf",
+      "moos": "#b1c9a1",
+      "ozean": "#8eb0be",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#55534e"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Astronomie"
+      ],
+      [
+        "Planet",
+        "Mutterplanet"
+      ],
+      [
+        "Kräfte",
+        "Gezeiten"
+      ],
+      [
+        "Tiefe",
+        "Geologie"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Mutterplanet": {
+      "gruppe": "Wissenschaft",
+      "icon": "◐",
+      "intro": "Mutterplanet von Oris.",
+      "abschnitte": [
+        {
+          "titel": "Nalvyr",
+          "text": [
+            "Nalvyr ist die Heimatwelt der Regeneranten: eine alte, biologisch vielfältige Gesteinswelt mit zwei großen Kontinenten, dem Tessal-Archipel, großen Flussdeltas und ausgedehnten Meeresräumen."
+          ],
+          "daten": [
+            [
+              "Typ",
+              "Gesteinsplanet"
+            ],
+            [
+              "Durchmesser",
+              "12.488 km"
+            ],
+            [
+              "Abstand des Mondes",
+              "297.706 km (47,7 Planetenradien)"
+            ]
+          ],
+          "verweise": [
+            [
+              "Nalvyr",
+              "inhalte/himmelskoerper/planeten/details/nalvyr/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Weitere Monde von Nalvyr",
+          "liste": [
+            "Teshra – Umlauf in 4,1 Tage"
+          ],
+          "verweise": [
+            [
+              "Teshra",
+              "inhalte/himmelskoerper/monde/details/teshra/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Gezeiten": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gezeiten von Oris.",
+      "abschnitte": [
+        {
+          "titel": "Gezeitenkräfte",
+          "text": [
+            "Auf seiner Bahn in 297.706 km Abstand wirken starke Gezeitenkräfte von Nalvyr auf Oris. Die leicht exzentrische Bahn (e = 0,03) knetet das Innere bei jedem Umlauf."
+          ]
+        }
+      ]
+    },
+    "Gebundene Rotation": {
+      "gruppe": "Wissenschaft",
+      "icon": "↻",
+      "intro": "Gebundene Rotation von Oris.",
+      "abschnitte": [
+        {
+          "titel": "Rotation",
+          "text": [
+            "Oris wendet Nalvyr vermutlich stets dieselbe Seite zu: Ein Tag dauert so lange wie ein Umlauf – 19,9 Tage."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Oris auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Oris",
+          "text": [
+            "Oris ist der große Mond Nalvyrs. Gemeinsam mit Saelon erzeugt er halbtägige Gezeiten; in Trichterbuchten steigt das Wasser um bis zu 9 Meter – Lebensraum, in dem sich viele regenerative Tierlinien entwickelten.",
+            "Oris umkreist Nalvyr in 19,9 Tage."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Mond"
+            ],
+            [
+              "Sternsystem",
+              "Saelon-System"
+            ],
+            [
+              "Zentralkörper",
+              "Nalvyr"
+            ],
+            [
+              "Große Halbachse",
+              "297.706 km"
+            ],
+            [
+              "Umlaufzeit",
+              "19,9 Tage"
+            ],
+            [
+              "Durchmesser",
+              "3.040 km"
+            ],
+            [
+              "Masse",
+              "0,65 Mondmassen"
+            ],
+            [
+              "Schwerkraft",
+              "0,14 g"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -7 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Nalvyr",
+          "text": [
+            "Das Saelon-System ist die Heimat der Regeneranten: Ihr Planet Nalvyr umkreist Saelon, und Oris ist einer seiner Monde."
+          ],
+          "verweise": [
+            [
+              "Nalvyr",
+              "inhalte/himmelskoerper/planeten/details/nalvyr/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Regeneranten",
+              "inhalte/spezies/Biologische Spezies/Regeneranten/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Oris im Saelon-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Nalvyr"
+            ],
+            [
+              "Große Halbachse",
+              "297.706 km"
+            ],
+            [
+              "Exzentrizität",
+              "0,03"
+            ],
+            [
+              "Bahnneigung",
+              "2,2°"
+            ],
+            [
+              "Umlaufzeit",
+              "19,9 Tage"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Saelon · Stern",
+              "Orangefarbener Zwerg (K2 V)"
+            ],
+            [
+              "Saelon B · Begleitstern in 180 AE",
+              "Weißer Zwerg"
+            ],
+            [
+              "Saelon I · 0,13 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Saelon II · 0,47 AE",
+              "Ozeanplanet"
+            ],
+            [
+              "Nalvyr · 0,76 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Saelon IVa · 1,32 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Kerythra · 2,68 AE",
+              "Zwergplanet"
+            ],
+            [
+              "Saelon V · 5,4 AE",
+              "Gasriese"
+            ],
+            [
+              "Saelon VI · 16 AE",
+              "Eisriese"
+            ],
+            [
+              "Saumgürtel · 2,3–3,1 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Weißschleier · 30–42 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Saelon",
+              "inhalte/himmelskoerper/sterne/details/saelon/hauptseite/index.html"
+            ],
+            [
+              "Saelon B",
+              "inhalte/himmelskoerper/sterne/details/saelon-b/hauptseite/index.html"
+            ],
+            [
+              "Saelon I",
+              "inhalte/himmelskoerper/planeten/details/saelon-i/hauptseite/index.html"
+            ],
+            [
+              "Saelon II",
+              "inhalte/himmelskoerper/planeten/details/saelon-ii/hauptseite/index.html"
+            ],
+            [
+              "Nalvyr",
+              "inhalte/himmelskoerper/planeten/details/nalvyr/hauptseite/index.html"
+            ],
+            [
+              "Saelon IVa",
+              "inhalte/himmelskoerper/planeten/details/saelon-iva/hauptseite/index.html"
+            ],
+            [
+              "Kerythra",
+              "inhalte/himmelskoerper/zwergplaneten/details/kerythra/hauptseite/index.html"
+            ],
+            [
+              "Saelon V",
+              "inhalte/himmelskoerper/planeten/details/saelon-v/hauptseite/index.html"
+            ],
+            [
+              "Saelon VI",
+              "inhalte/himmelskoerper/planeten/details/saelon-vi/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Oris.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "1.520 km"
+            ],
+            [
+              "Masse",
+              "0,65 Mondmassen"
+            ],
+            [
+              "Mittlere Dichte",
+              "3,25 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "1,38 m/s² (0,141 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "2,05 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Oris.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Oris ist geologisch weitgehend erstarrt; Einschläge haben seine Oberfläche geformt."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Oris.",
+      "abschnitte": [
+        {
+          "titel": "Gashülle",
+          "text": [
+            "Oris besitzt keine nennenswerte Atmosphäre – dafür ist die Schwerkraft zu gering."
+          ]
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Oris.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 0,76 AE Abstand zu Saelon liegt die Gleichgewichtstemperatur von Oris bei rund -7 °C – gemäßigt."
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Oris.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Oris entstand zusammen mit dem Saelon-System vor rund 6,1 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Oris.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Ist der Mond eingefangen oder mit seinem Planeten entstanden?",
+            "Welche Spuren tragen seine ältesten Krater?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Oris ist mit allen Bahndaten im Saelon-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=nalvyr-stern&objekt=nalvyr-oris"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Oris.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Größter Mond von Nalvyr"
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Oris.",
+      "abschnitte": [
+        {
+          "titel": "Oris – Archivbild",
+          "bild": true,
+          "bildtext": "Oris"
+        }
+      ]
+    }
+  }
+}

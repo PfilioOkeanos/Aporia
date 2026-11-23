@@ -55,7 +55,7 @@ const knoten = [
         "belohnung": {
             "art": "gegenstand",
             "name": "Symbiosen okologische Beziehungen",
-            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/OzeanWelt/erde-im-sternenmeer/unterseiten/ERDE_BILDER/Biosph%C3%A4re/11%20%E2%80%93%20Symbiosen%20&%20%C3%B6kologische%20Beziehungen/11_Symbiosen_okologische_Beziehungen.jpg"
+            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/OzeanWelt/erde/unterseiten/ERDE_BILDER/Biosph%C3%A4re/11%20%E2%80%93%20Symbiosen%20&%20%C3%B6kologische%20Beziehungen/11_Symbiosen_okologische_Beziehungen.jpg"
         }
     },
     {

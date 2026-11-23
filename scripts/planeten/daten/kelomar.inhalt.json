@@ -1,0 +1,857 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Kelomar",
+  "genitiv": "von Kelomar",
+  "dossierName": "Kelomar-Dossier",
+  "klasse": "Äußerer Gasriese",
+  "intro": "Kühler Gasplanet mit Wasserstoff-Helium-Atmosphäre, ausgeprägten Wolkenschichten und großräumigen Sturmzonen.",
+  "globusDaten": {
+    "planet": "kelomar",
+    "klasse": "Gasriese",
+    "radius": 50000000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=rhaelis-stern&objekt=rhaelis-kelomar",
+  "grunddaten": [
+    [
+      "System-ID",
+      "rhaelis-kelomar"
+    ],
+    [
+      "Archiv-ID",
+      "AP-RHAELIS-KELOMAR"
+    ],
+    [
+      "Typ",
+      "Äußerer Gasriese"
+    ],
+    [
+      "Sternsystem",
+      "Rhaelis-System"
+    ],
+    [
+      "Zentralkörper",
+      "Rhaelis"
+    ],
+    [
+      "Große Halbachse",
+      "4,8 AE"
+    ],
+    [
+      "Umlaufzeit",
+      "11,7 Jahre"
+    ],
+    [
+      "Durchmesser",
+      "100.000 km"
+    ],
+    [
+      "Masse",
+      "79,458 Erdmassen"
+    ],
+    [
+      "Schwerkraft",
+      "1,29 g"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -184 °C"
+    ],
+    [
+      "Monde",
+      "4 (Neris, Vathel, Orr, Myr)"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Rhaelis-System"
+    ],
+    [
+      "Zentralstern",
+      "Rhaelis",
+      "inhalte/himmelskoerper/sterne/details/rhaelis/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "4,8 AE"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Kelomar im Rhaelis-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=rhaelis-stern&objekt=rhaelis-kelomar",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Rhaelis",
+      "href": "inhalte/himmelskoerper/sterne/details/rhaelis/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Neris",
+      "href": "inhalte/himmelskoerper/monde/details/neris/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Vathel",
+      "href": "inhalte/himmelskoerper/monde/details/vathel/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Orr",
+      "href": "inhalte/himmelskoerper/monde/details/orr/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Myr",
+      "href": "inhalte/himmelskoerper/monde/details/myr/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Memetiden",
+      "titel": "Tavoryn",
+      "href": "inhalte/himmelskoerper/planeten/details/tavoryn/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Memetiden",
+      "href": "inhalte/spezies/Mentale Spezies/Memetiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Rhaelis-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=rhaelis-stern&objekt=rhaelis-kelomar"
+    },
+    {
+      "titel": "Speziesdossier Memetiden",
+      "href": "inhalte/spezies/Mentale Spezies/Memetiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#08080a",
+      "tiefe": "#111215",
+      "akzent": "#bec2d7",
+      "sand": "#c3bfb7",
+      "moos": "#9db8ad",
+      "ozean": "#7ea0ce",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#464857"
+    }
+  },
+  "kapitel": {
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Kelomar auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Kelomar",
+          "text": [
+            "Kühler Gasplanet mit Wasserstoff-Helium-Atmosphäre, ausgeprägten Wolkenschichten und großräumigen Sturmzonen.",
+            "Kelomar umkreist Rhaelis in 4,8 AE Abstand und braucht für einen Umlauf 11,7 Jahre."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Äußerer Gasriese"
+            ],
+            [
+              "Sternsystem",
+              "Rhaelis-System"
+            ],
+            [
+              "Zentralkörper",
+              "Rhaelis"
+            ],
+            [
+              "Große Halbachse",
+              "4,8 AE"
+            ],
+            [
+              "Umlaufzeit",
+              "11,7 Jahre"
+            ],
+            [
+              "Durchmesser",
+              "100.000 km"
+            ],
+            [
+              "Masse",
+              "79,458 Erdmassen"
+            ],
+            [
+              "Schwerkraft",
+              "1,29 g"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -184 °C"
+            ],
+            [
+              "Monde",
+              "4 (Neris, Vathel, Orr, Myr)"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Tavoryn",
+          "text": [
+            "Das Rhaelis-System ist die Heimat der Memetiden: Ihr Planet Tavoryn umkreist Rhaelis."
+          ],
+          "verweise": [
+            [
+              "Tavoryn",
+              "inhalte/himmelskoerper/planeten/details/tavoryn/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Memetiden",
+              "inhalte/spezies/Mentale Spezies/Memetiden/hauptseite/Spezies.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Planet Kelomar",
+          "text": [
+            "Kelomar ist ein kühler Gasplanet mit ausgeprägten Wolkenschichten und mehreren Monden.",
+            "Seine Atmosphäre enthält Wasserstoff, Helium und verschiedene Spurenverbindungen.",
+            "Die oberen Wolkenregionen besitzen großräumige Sturmzonen.",
+            "Bedeutende Monde:"
+          ],
+          "daten": [
+            [
+              "Orbit",
+              "4,80 AE"
+            ],
+            [
+              "Umlaufzeit",
+              "Rund 4.268 Erdentage"
+            ],
+            [
+              "Masse",
+              "Ungefähr 0,25 Jupitermassen"
+            ],
+            [
+              "Planetentyp",
+              "Äußerer Gasplanet"
+            ],
+            [
+              "Neris",
+              "Ein vereister Mond mit möglicher innerer Flüssigkeitsschicht."
+            ],
+            [
+              "Vathel",
+              "Ein dichter Gesteins-Eis-Mond mit alten Einschlagbecken."
+            ],
+            [
+              "Orr",
+              "Kleiner, stark kraterbedeckter Mond."
+            ],
+            [
+              "Myr",
+              "Unregelmäßig geformter kleiner Begleiter."
+            ],
+            [
+              "Spielintegration",
+              "Kryotechnik, Tiefraumstationen, Kälteschutz, Mondforschung und Langstreckentransport."
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Kelomar im Rhaelis-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Rhaelis"
+            ],
+            [
+              "Große Halbachse",
+              "4,8 AE (718,1 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,023"
+            ],
+            [
+              "Bahnneigung",
+              "0°"
+            ],
+            [
+              "Umlaufzeit",
+              "11,7 Jahre"
+            ],
+            [
+              "Einstrahlung",
+              "0,017-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Am Himmel von Kelomar",
+          "text": [
+            "Rhaelis erscheint von hier aus etwa 0,09° groß (die Sonne von der Erde: 0,53°)."
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Rhaelis · Stern",
+              "Orangefarbener Hauptreihenstern (K1 V)"
+            ],
+            [
+              "Kesvar · 0,18 AE",
+              "Heißer Gesteinsplanet"
+            ],
+            [
+              "Draoven · 0,33 AE",
+              "Heißer trockener Gesteinsplanet"
+            ],
+            [
+              "Tavoryn · 0,65 AE",
+              "Gemäßigter Ozean- und Gesteinsplanet"
+            ],
+            [
+              "Ossaryn · 1,2 AE",
+              "Kalter Gesteinsplanet"
+            ],
+            [
+              "Vaelkor · 2,45 AE",
+              "Gasriese"
+            ],
+            [
+              "Kelomar · 4,8 AE · dieses Dossier",
+              "Äußerer Gasriese"
+            ],
+            [
+              "Ithrenn · 9,2 AE",
+              "Eisriese"
+            ],
+            [
+              "Therys · 19 AE",
+              "Eisreicher Kleinkörper"
+            ],
+            [
+              "Veskar-9 · 31 AE",
+              "Dunkler Kleinkörper"
+            ],
+            [
+              "Saelith-Gürtel · 1,7–2,1 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußere Kleinkörperregion von Rhaelis · 12–43 AE",
+              "Eisreicher Kleinkörpergürtel"
+            ],
+            [
+              "Ferne Kometenpopulation von Rhaelis · 65–240 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Rhaelis",
+              "inhalte/himmelskoerper/sterne/details/rhaelis/hauptseite/index.html"
+            ],
+            [
+              "Kesvar",
+              "inhalte/himmelskoerper/planeten/details/kesvar/hauptseite/index.html"
+            ],
+            [
+              "Draoven",
+              "inhalte/himmelskoerper/planeten/details/draoven/hauptseite/index.html"
+            ],
+            [
+              "Tavoryn",
+              "inhalte/himmelskoerper/planeten/details/tavoryn/hauptseite/index.html"
+            ],
+            [
+              "Ossaryn",
+              "inhalte/himmelskoerper/planeten/details/ossaryn/hauptseite/index.html"
+            ],
+            [
+              "Vaelkor",
+              "inhalte/himmelskoerper/planeten/details/vaelkor/hauptseite/index.html"
+            ],
+            [
+              "Ithrenn",
+              "inhalte/himmelskoerper/planeten/details/ithrenn/hauptseite/index.html"
+            ],
+            [
+              "Therys",
+              "inhalte/himmelskoerper/asteroiden/details/therys/hauptseite/index.html"
+            ],
+            [
+              "Veskar-9",
+              "inhalte/himmelskoerper/asteroiden/details/veskar-9/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Kelomar.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "50.000 km"
+            ],
+            [
+              "Masse",
+              "79,458 Erdmassen"
+            ],
+            [
+              "Mittlere Dichte",
+              "0,91 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "12,66 m/s² (1,29 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "35,59 km/s"
+            ]
+          ],
+          "vergleich": {
+            "mit": "Erde",
+            "werte": [
+              [
+                "Durchmesser",
+                100000,
+                12742,
+                "km"
+              ],
+              [
+                "Masse",
+                79.457,
+                1,
+                "Erdmassen"
+              ],
+              [
+                "Schwerkraft",
+                1.29,
+                1,
+                "g"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "Planetare Struktur": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Planetare Struktur von Kelomar.",
+      "abschnitte": [
+        {
+          "titel": "Schalenbau",
+          "schichten": [
+            [
+              "Wolkendecke",
+              "Ammoniak- und Wasserwolken in Bändern"
+            ],
+            [
+              "Wasserstoffhülle",
+              "Molekularer Wasserstoff und Helium"
+            ],
+            [
+              "Metallischer Wasserstoff",
+              "Leitfähige Schicht unter extremem Druck – Ursprung des Magnetfelds"
+            ],
+            [
+              "Kern",
+              "Gestein und Eis"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geografie": {
+      "gruppe": "Natur",
+      "icon": "△",
+      "intro": "Geografie von Kelomar.",
+      "abschnitte": [
+        {
+          "titel": "Oberfläche",
+          "text": [
+            "Kelomar besitzt keine feste Oberfläche. Sichtbar sind Wolkenbänder, Wirbel und Stürme."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Kelomar.",
+      "abschnitte": [
+        {
+          "titel": "Gashülle",
+          "text": [
+            "Kelomar besitzt keine feste Oberfläche; die Hülle geht nach innen allmählich in dichtere Schichten über."
+          ],
+          "balken": {
+            "werte": [
+              [
+                "Wasserstoff",
+                86
+              ],
+              [
+                "Helium",
+                13
+              ],
+              [
+                "Methan und Spurengase",
+                1
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Kelomar.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 4,8 AE Abstand zu Rhaelis liegt die Gleichgewichtstemperatur von Kelomar bei rund -184 °C – eisig kalt."
+          ]
+        }
+      ]
+    },
+    "Gewässer": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gewässer von Kelomar.",
+      "abschnitte": [
+        {
+          "titel": "Wasser",
+          "text": [
+            "Wasser liegt in den Wolkenschichten und tief im Inneren unter hohem Druck vor."
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Kelomar.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Ohne feste Oberfläche gibt es keine Geologie im engeren Sinn; im Inneren herrschen extreme Drücke und Temperaturen."
+          ]
+        }
+      ]
+    },
+    "Biosphäre": {
+      "gruppe": "Natur",
+      "icon": "❧",
+      "intro": "Biosphäre von Kelomar.",
+      "abschnitte": [
+        {
+          "titel": "Leben",
+          "text": [
+            "Auf Kelomar ist kein Leben verzeichnet."
+          ]
+        }
+      ]
+    },
+    "Spezies": {
+      "gruppe": "Zivilisation",
+      "icon": "✿",
+      "intro": "Spezies von Kelomar.",
+      "abschnitte": [
+        {
+          "titel": "Bewohner",
+          "text": [
+            "Kelomar ist keine Heimat einer intelligenten Spezies."
+          ]
+        },
+        {
+          "titel": "Im System von Tavoryn",
+          "text": [
+            "Das Rhaelis-System ist die Heimat der Memetiden: Ihr Planet Tavoryn umkreist Rhaelis."
+          ],
+          "verweise": [
+            [
+              "Tavoryn",
+              "inhalte/himmelskoerper/planeten/details/tavoryn/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Memetiden",
+              "inhalte/spezies/Mentale Spezies/Memetiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Zivilisation": {
+      "gruppe": "Zivilisation",
+      "icon": "▥",
+      "intro": "Zivilisation von Kelomar.",
+      "abschnitte": [
+        {
+          "titel": "Siedlungen",
+          "text": [
+            "Für Kelomar sind keine dauerhaften Siedlungen verzeichnet."
+          ]
+        },
+        {
+          "titel": "Im System von Tavoryn",
+          "text": [
+            "Das Rhaelis-System ist die Heimat der Memetiden: Ihr Planet Tavoryn umkreist Rhaelis."
+          ],
+          "verweise": [
+            [
+              "Tavoryn",
+              "inhalte/himmelskoerper/planeten/details/tavoryn/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Memetiden",
+              "inhalte/spezies/Mentale Spezies/Memetiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Kelomar.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Kelomar entstand zusammen mit dem Rhaelis-System vor rund 6,2 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Fraktionen": {
+      "gruppe": "Zivilisation",
+      "icon": "◇",
+      "intro": "Fraktionen von Kelomar.",
+      "abschnitte": [
+        {
+          "titel": "Ansprüche",
+          "text": [
+            "Für Kelomar sind keine Fraktionsansprüche verzeichnet."
+          ]
+        }
+      ]
+    },
+    "Rohstoffe": {
+      "gruppe": "Weitere",
+      "icon": "⬡",
+      "intro": "Rohstoffe von Kelomar.",
+      "abschnitte": [
+        {
+          "titel": "Rohstoffe",
+          "liste": [
+            "Wasserstoff",
+            "Helium-3",
+            "Ammoniak"
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Kelomar.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Wie tief reichen die Wolkenbänder?",
+            "Wie groß ist der feste Kern?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Kelomar ist mit allen Bahndaten im Rhaelis-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=rhaelis-stern&objekt=rhaelis-kelomar"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Kelomar.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "4 Monde: Neris, Vathel, Orr, Myr"
+          ]
+        },
+        {
+          "titel": "Monde",
+          "karten": [
+            {
+              "titel": "Neris",
+              "text": "2.080 km Durchmesser, Umlauf in 26,1 Stunden. Vereister Mond Kelomars. Unter seiner Eiskruste ist eine innere Flüssigkeitsschicht möglich."
+            },
+            {
+              "titel": "Vathel",
+              "text": "1.720 km Durchmesser, Umlauf in 2,3 Tage. Dichter Gesteins-Eis-Mond Kelomars mit alten Einschlagbecken."
+            },
+            {
+              "titel": "Orr",
+              "text": "740 km Durchmesser, Umlauf in 4,6 Tage. Kleiner, stark kraterbedeckter Mond Kelomars."
+            },
+            {
+              "titel": "Myr",
+              "text": "270 km Durchmesser, Umlauf in 9,1 Tage. Kleiner, unregelmäßig geformter äußerer Begleiter Kelomars."
+            }
+          ],
+          "verweise": [
+            [
+              "Neris",
+              "inhalte/himmelskoerper/monde/details/neris/hauptseite/index.html"
+            ],
+            [
+              "Vathel",
+              "inhalte/himmelskoerper/monde/details/vathel/hauptseite/index.html"
+            ],
+            [
+              "Orr",
+              "inhalte/himmelskoerper/monde/details/orr/hauptseite/index.html"
+            ],
+            [
+              "Myr",
+              "inhalte/himmelskoerper/monde/details/myr/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Verwandte Dossiers",
+          "verweise": [
+            [
+              "Neris",
+              "inhalte/himmelskoerper/monde/details/neris/hauptseite/index.html"
+            ],
+            [
+              "Vathel",
+              "inhalte/himmelskoerper/monde/details/vathel/hauptseite/index.html"
+            ],
+            [
+              "Orr",
+              "inhalte/himmelskoerper/monde/details/orr/hauptseite/index.html"
+            ],
+            [
+              "Myr",
+              "inhalte/himmelskoerper/monde/details/myr/hauptseite/index.html"
+            ],
+            [
+              "Rhaelis-System",
+              "inhalte/himmelskoerper/sternensysteme/details/rhaelis-system/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Kelomar.",
+      "abschnitte": [
+        {
+          "titel": "Kelomar",
+          "bild": true,
+          "bildtext": "Illustration aus dem APORIA-Bildarchiv"
+        }
+      ]
+    },
+    "Gaszusammensetzung": {
+      "gruppe": "Weitere",
+      "icon": "◆",
+      "intro": "Gaszusammensetzung von Kelomar.",
+      "abschnitte": [
+        {
+          "titel": "Gaszusammensetzung",
+          "text": [
+            "Wasserstoff und Helium dominieren, ergänzt durch Spurenverbindungen."
+          ]
+        }
+      ]
+    },
+    "Wolkenschichten": {
+      "gruppe": "Weitere",
+      "icon": "◆",
+      "intro": "Wolkenschichten von Kelomar.",
+      "abschnitte": [
+        {
+          "titel": "Wolkenschichten",
+          "text": [
+            "Kelomar besitzt ausgeprägte Wolkenschichten. Die chemische Zusammensetzung der einzelnen Lagen ist noch offen."
+          ]
+        }
+      ]
+    },
+    "Stürme": {
+      "gruppe": "Weitere",
+      "icon": "◆",
+      "intro": "Stürme von Kelomar.",
+      "abschnitte": [
+        {
+          "titel": "Stürme",
+          "text": [
+            "Die oberen Wolkenregionen besitzen großräumige Sturmzonen."
+          ]
+        }
+      ]
+    }
+  }
+}

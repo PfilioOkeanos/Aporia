@@ -1,0 +1,15 @@
+@import url('../05%20%E2%80%93%20Geografie/index.css');
+.earth-nature-06 .atmo-card { background: #e7f2f8; color: #142d40; border-color: #b19754; }
+.atmo-card h2 { background: linear-gradient(120deg,#12384f,#0a2339); color: #fff1c6; }
+.atmo-card dt { color: #214661; }
+.atmo-card .nature-cover { margin: .65rem; overflow: hidden; border-radius: .55rem; }
+.atmo-layers { list-style: none; padding: 0; margin: .65rem; border-radius: .65rem; overflow: hidden; color: #fff9e5; }
+.atmo-layers li { display: grid; gap: .2rem; padding: .65rem; min-height: 2.8rem; background: var(--layer); border-bottom: 1px solid #d1ebf65c; }
+.atmo-layers li span { font-size: .88rem; }
+.atmo-layers li:nth-child(1) { --layer:#07182e; }
+.atmo-layers li:nth-child(2) { --layer:#163c61; }
+.atmo-layers li:nth-child(3) { --layer:#205781; }
+.atmo-layers li:nth-child(4) { --layer:#256b9b; }
+.atmo-layers li:nth-child(5) { --layer:#2e759c; }
+.atmo-chart { margin: .75rem auto; display: grid; place-items: center; width: min(9rem,75%); aspect-ratio: 1; border-radius: 50%; background: conic-gradient(#0874c6 0 78.08%, #65c7fb 78.08% 99.03%, #7856b3 99.03% 99.96%, #54a063 99.96%); }
+.atmo-chart span { width: 60%; aspect-ratio: 1; display: grid; place-items: center; text-align: center; padding: .2rem; border-radius: 50%; background: #e7f2f8; color: #163750; font-size: .8rem; }

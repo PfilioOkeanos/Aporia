@@ -77,7 +77,7 @@ const knoten = [
         "belohnung": {
             "art": "gegenstand",
             "name": "Geteilter Asteroid mit Lichtkante",
-            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/Asteroiden/geteilter-asteroid-mit-lichtkante/hauptseite/Geteilter%20Asteroid%20mit%20Lichtkante-28.png"
+            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/Asteroiden/trojaner-von-ushara-iii/hauptseite/Geteilter%20Asteroid%20mit%20Lichtkante-28.png"
         }
     },
     {

@@ -1,0 +1,800 @@
+{
+  "name": "Vask",
+  "genitiv": "von Vask",
+  "dossierName": "Vask-Dossier",
+  "klasse": "Gesteinsplanet",
+  "intro": "Vask ist ein innerer Gesteinsplanet im Esvar-System und die Heimat- und Hauptwelt der Autokonstrukte. Helle Salzpfannen, alte Flusskanäle und der Werkstadtverbund Tessar prägen die bewohnte Welt.",
+  "globusDaten": {
+    "planet": "vask",
+    "klasse": "Gestein",
+    "radius": 4830000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=esvar-stern&objekt=esvar-vask",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-8652D38FD6"
+    ],
+    [
+      "Typ",
+      "Gesteinsplanet"
+    ],
+    [
+      "Sternsystem",
+      "Esvar-System"
+    ],
+    [
+      "Zentralkörper",
+      "Esvar"
+    ],
+    [
+      "Große Halbachse",
+      "0,28 AE"
+    ],
+    [
+      "Umlaufzeit",
+      "59,8 Tage"
+    ],
+    [
+      "Durchmesser",
+      "9.660 km"
+    ],
+    [
+      "Masse",
+      "0,43 Erdmassen"
+    ],
+    [
+      "Schwerkraft",
+      "0,75 g"
+    ],
+    [
+      "Mittlere Temperatur (Strahlungsgleichgewicht)",
+      "ca. 105 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Esvar-System"
+    ],
+    [
+      "Zentralstern",
+      "Esvar",
+      "inhalte/himmelskoerper/sterne/details/esvar/hauptseite/index.html"
+    ],
+    [
+      "Lage im System",
+      "Innerhalb der Umlaufbahn von Neraveth"
+    ],
+    [
+      "Abstand",
+      "0,28 AE"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Vask im Esvar-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=esvar-stern&objekt=esvar-vask",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Esvar",
+      "href": "inhalte/himmelskoerper/sterne/details/esvar/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Heimatspezies",
+      "titel": "Autokonstrukte",
+      "href": "inhalte/spezies/Technologische Lebensformen/Autokonstrukte/hauptseite/Spezies.html",
+      "route": "spezies-technological-5"
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Parasitoiden",
+      "titel": "Neraveth",
+      "href": "inhalte/himmelskoerper/planeten/details/neraveth/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Parasitoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Parasitoiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Autokonstrukte · Heimatwelt Vask",
+      "href": "inhalte/spezies/Technologische Lebensformen/Autokonstrukte/Unterseiten/Heimatwelt/heimatwelt.html"
+    },
+    {
+      "titel": "Sternenkarte · Esvar-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=esvar-stern&objekt=esvar-vask"
+    },
+    {
+      "titel": "Speziesdossier Parasitoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Parasitoiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#080604",
+      "tiefe": "#120d09",
+      "akzent": "#c5a48e",
+      "sand": "#c9a588",
+      "moos": "#a3966e",
+      "ozean": "#838174",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#4b3425"
+    }
+  },
+  "kapitel": {
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Salzpfannen, alte Flusskanäle und die Werkstädte der Autokonstrukte.",
+      "abschnitte": [
+        {
+          "titel": "Grunddaten",
+          "text": [
+            "Vask wurde bereits als eigener Planet im Esvar-System angelegt und wird nicht durch eine neu erfundene Welt ersetzt."
+          ],
+          "daten": [
+            [
+              "Planet",
+              "Vask"
+            ],
+            [
+              "Typ",
+              "Innerer Gesteinsplanet"
+            ],
+            [
+              "Sternensystem",
+              "Esvar-System"
+            ],
+            [
+              "Zentralstern",
+              "Esvar, K2V"
+            ],
+            [
+              "Gegenwärtige Hauptspezies",
+              "Autokonstrukte"
+            ],
+            [
+              "Bereits bekannte Landschaften",
+              "Salzpfannen und alte Flusskanäle"
+            ]
+          ],
+          "bild": true,
+          "bildtext": "Vask"
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Gesteinsplanet"
+            ],
+            [
+              "Sternsystem",
+              "Esvar-System"
+            ],
+            [
+              "Zentralkörper",
+              "Esvar"
+            ],
+            [
+              "Große Halbachse",
+              "0,28 AE"
+            ],
+            [
+              "Umlaufzeit",
+              "59,8 Tage"
+            ],
+            [
+              "Durchmesser",
+              "9.660 km"
+            ],
+            [
+              "Masse",
+              "0,43 Erdmassen"
+            ],
+            [
+              "Schwerkraft",
+              "0,75 g"
+            ],
+            [
+              "Mittlere Temperatur (Strahlungsgleichgewicht)",
+              "ca. 105 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Speziesdossier",
+          "verweise": [
+            [
+              "Autokonstrukte",
+              "inhalte/spezies/Technologische Lebensformen/Autokonstrukte/hauptseite/Spezies.html"
+            ],
+            [
+              "Heimatwelt im Speziesdossier",
+              "inhalte/spezies/Technologische Lebensformen/Autokonstrukte/Unterseiten/Heimatwelt/heimatwelt.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Neraveth",
+          "text": [
+            "Die Parasitoiden leben auf Neraveth. Vask ist die andere Speziesheimat im Esvar-System."
+          ],
+          "verweise": [
+            [
+              "Neraveth",
+              "inhalte/himmelskoerper/planeten/details/neraveth/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Parasitoiden",
+              "inhalte/spezies/Biologische Spezies/Parasitoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Vask umläuft Esvar in etwa 59,8 Erdtagen.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Esvar"
+            ],
+            [
+              "Große Halbachse",
+              "0,28 AE (41,9 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,01"
+            ],
+            [
+              "Bahnneigung",
+              "0°"
+            ],
+            [
+              "Umlaufzeit",
+              "59,8 Tage"
+            ],
+            [
+              "Einstrahlung",
+              "4,719-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Am Himmel von Vask",
+          "text": [
+            "Esvar erscheint von hier aus etwa 1,48° groß (die Sonne von der Erde: 0,53°)."
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Esvar · Stern",
+              "Orangefarbener Hauptreihenstern (K2 V)"
+            ],
+            [
+              "Vask · 0,28 AE · dieses Dossier",
+              "Gesteinsplanet"
+            ],
+            [
+              "Neraveth · 0,63 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Velun · 3,7 AE",
+              "Gasriese"
+            ]
+          ],
+          "verweise": [
+            [
+              "Esvar",
+              "inhalte/himmelskoerper/sterne/details/esvar/hauptseite/index.html"
+            ],
+            [
+              "Neraveth",
+              "inhalte/himmelskoerper/planeten/details/neraveth/hauptseite/index.html"
+            ],
+            [
+              "Velun",
+              "inhalte/himmelskoerper/planeten/details/velun/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Astronomische Einordnung",
+          "text": [
+            "Vask liegt innerhalb der Umlaufbahn von Neraveth.",
+            "In der Sternenkarte liegt Vasks große Bahnhalbachse bei 0,28 AE. Die Umlaufzeit beträgt rund 59,8 Erdtage, die Exzentrizität 0,01. Die tatsächliche Oberflächentemperatur bleibt offen.",
+            "Eine höhere Bestrahlung als auf Neraveth wäre bei vergleichbarer Ausrichtung und geeigneten Bahnbedingungen zu erwarten. Atmosphärische und oberflächenbedingte Einflüsse können die tatsächlichen Temperaturen erheblich verändern."
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Vask.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "4.830 km"
+            ],
+            [
+              "Masse",
+              "0,43 Erdmassen"
+            ],
+            [
+              "Mittlere Dichte",
+              "5,44 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "7,34 m/s² (0,748 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "8,42 km/s"
+            ]
+          ],
+          "vergleich": {
+            "mit": "Erde",
+            "werte": [
+              [
+                "Durchmesser",
+                9660,
+                12742,
+                "km"
+              ],
+              [
+                "Masse",
+                0.43,
+                1,
+                "Erdmassen"
+              ],
+              [
+                "Schwerkraft",
+                0.75,
+                1,
+                "g"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "Planetare Struktur": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Planetare Struktur von Vask.",
+      "abschnitte": [
+        {
+          "titel": "Schalenbau",
+          "schichten": [
+            [
+              "Kruste",
+              "Silikatgestein"
+            ],
+            [
+              "Mantel",
+              "Dichteres Silikatgestein"
+            ],
+            [
+              "Kern",
+              "Eisen und Nickel"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geografie": {
+      "gruppe": "Natur",
+      "icon": "△",
+      "intro": "Salzpfannen und fossile Kanäle prägen Vasks Oberfläche.",
+      "abschnitte": [
+        {
+          "titel": "Geografischer Charakter",
+          "text": [
+            "Vask ist eine felsige Welt mit auffälligen salzreichen Oberflächenregionen.",
+            "Großflächige Salzpfannen bilden helle, offene Landschaften. Alte Flusskanäle durchschneiden Teile des Terrains und erzeugen langgezogene Rinnen, Senken und natürliche Übergänge.",
+            "Das Gelände bietet unterschiedliche Voraussetzungen für den Bau technischer Siedlungen."
+          ]
+        },
+        {
+          "titel": "Die Salzpfannen",
+          "text": [
+            "Die Salzpfannen bilden weitläufige, teilweise schwer zugängliche Landschaften.",
+            "Feiner mineralischer Staub stellt besondere Anforderungen an bewegliche Maschinenkörper.",
+            "In ihren Randgebieten betreiben die Autokonstrukte Messstationen, Probennahmesysteme und abgeschirmte Forschungswerkstätten.",
+            "Die offenen Flächen eignen sich teilweise für große technische Anlagen, sofern Baugrund, Salzbewegungen und Untergrundtragfähigkeit berücksichtigt werden."
+          ]
+        },
+        {
+          "titel": "Alte Flusskanäle",
+          "text": [
+            "Die alten Kanäle dienen teilweise als natürliche Verkehrs- und Versorgungsachsen.",
+            "Schienensysteme, Förderstrecken und technische Übergänge verbinden verschiedene Industriestandorte.",
+            "Tiefere Abschnitte können Schutz vor bestimmten Oberflächeneinflüssen bieten, müssen jedoch auf geologische Stabilität untersucht werden."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Staub und chemisch aggressive Partikel sind für technische Anlagen relevant.",
+      "abschnitte": [
+        {
+          "titel": "Atmosphäre und Klima",
+          "text": [
+            "Die exakte Atmosphäre ist noch nicht physikalisch ausgearbeitet.",
+            "Für die autokonstruktische Besiedlung sind vor allem Staubtransport, Wärmebelastung, chemisch aggressive Partikel und mögliche Temperaturschwankungen von Bedeutung.",
+            "Die Siedlungen verwenden daher abgeschirmte Produktionsbereiche, temperaturgeregelte Anlagen und technische Luft- beziehungsweise Partikelfilter, wo diese benötigt werden."
+          ]
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Das Strahlungsgleichgewicht liegt bei rund 105 °C. Das Oberflächenklima ist noch offen.",
+      "abschnitte": [
+        {
+          "titel": "Temperaturmodell",
+          "text": [
+            "Die Sternenkartenwerte ergeben eine Gleichgewichtstemperatur von rund 105 °C. Die tatsächliche Oberflächentemperatur hängt unter anderem von der noch offenen Atmosphäre ab."
+          ]
+        },
+        {
+          "titel": "Atmosphäre und Klima",
+          "text": [
+            "Die exakte Atmosphäre ist noch nicht physikalisch ausgearbeitet.",
+            "Für die autokonstruktische Besiedlung sind vor allem Staubtransport, Wärmebelastung, chemisch aggressive Partikel und mögliche Temperaturschwankungen von Bedeutung.",
+            "Die Siedlungen verwenden daher abgeschirmte Produktionsbereiche, temperaturgeregelte Anlagen und technische Luft- beziehungsweise Partikelfilter, wo diese benötigt werden."
+          ]
+        }
+      ]
+    },
+    "Gewässer": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Alte Rinnen und Salzpfannen sind Zeugen einer ungeklärten Landschaftsgeschichte.",
+      "abschnitte": [
+        {
+          "titel": "Geologische Besonderheiten",
+          "text": [
+            "Die Salzablagerungen deuten auf eine komplexe geologische beziehungsweise chemische Entwicklung hin.",
+            "Frühere Flüssigkeitsbewegungen sind eine mögliche Erklärung bestimmter Landschaftsformen, müssen aber durch Materialanalysen bestätigt werden.",
+            "Die Entstehung und Veränderung der alten Rinnen bilden ein wichtiges Forschungsgebiet."
+          ]
+        },
+        {
+          "titel": "Heutige Gewässer",
+          "text": [
+            "Die hinterlegten Daten legen keine heutigen flüssigen Gewässer fest."
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Salzablagerungen und ältere Sedimente geben Hinweise auf die Entwicklung der Oberfläche.",
+      "abschnitte": [
+        {
+          "titel": "Geologische Besonderheiten",
+          "text": [
+            "Die Salzablagerungen deuten auf eine komplexe geologische beziehungsweise chemische Entwicklung hin.",
+            "Frühere Flüssigkeitsbewegungen sind eine mögliche Erklärung bestimmter Landschaftsformen, müssen aber durch Materialanalysen bestätigt werden.",
+            "Die Entstehung und Veränderung der alten Rinnen bilden ein wichtiges Forschungsgebiet."
+          ]
+        },
+        {
+          "titel": "Die Salzpfannen",
+          "text": [
+            "Die Salzpfannen bilden weitläufige, teilweise schwer zugängliche Landschaften.",
+            "Feiner mineralischer Staub stellt besondere Anforderungen an bewegliche Maschinenkörper.",
+            "In ihren Randgebieten betreiben die Autokonstrukte Messstationen, Probennahmesysteme und abgeschirmte Forschungswerkstätten.",
+            "Die offenen Flächen eignen sich teilweise für große technische Anlagen, sofern Baugrund, Salzbewegungen und Untergrundtragfähigkeit berücksichtigt werden."
+          ]
+        }
+      ]
+    },
+    "Biosphäre": {
+      "gruppe": "Natur",
+      "icon": "❧",
+      "intro": "Forschung zu Vasks Umwelt und ihren technischen Eingriffen.",
+      "abschnitte": [
+        {
+          "titel": "Stand der Daten",
+          "text": [
+            "Das Projektdossier trifft keine Festlegung zu einer natürlichen Biosphäre auf Vask. Die Autokonstrukte sind technologische Lebensformen."
+          ]
+        },
+        {
+          "titel": "Umweltfragen",
+          "text": [
+            "Eine technische Lebensform ist nicht grundsätzlich unabhängig von einem funktionierenden Planetensystem.",
+            "Unkontrollierter Bergbau, Abwärme, chemische Abfälle und mechanische Eingriffe können natürliche Landschaften dauerhaft verändern.",
+            "Innerhalb der Gesellschaft bestehen deshalb unterschiedliche Vorstellungen über Ressourcennutzung und Landschaftsschutz."
+          ]
+        }
+      ]
+    },
+    "Spezies": {
+      "gruppe": "Zivilisation",
+      "icon": "✿",
+      "intro": "Die Autokonstrukte haben auf Vask ihre Heimat- und Hauptwelt.",
+      "abschnitte": [
+        {
+          "titel": "Autokonstrukte auf Vask",
+          "text": [
+            "Ihre Werkverbände bauen und entwickeln eigene Körper. Vask ist ihre Hauptwelt. Der ursprüngliche Entstehungsort der Spezies ist nicht zweifelsfrei geklärt."
+          ]
+        },
+        {
+          "titel": "Speziesdossier",
+          "verweise": [
+            [
+              "Autokonstrukte",
+              "inhalte/spezies/Technologische Lebensformen/Autokonstrukte/hauptseite/Spezies.html"
+            ],
+            [
+              "Heimatwelt im Speziesdossier",
+              "inhalte/spezies/Technologische Lebensformen/Autokonstrukte/Unterseiten/Heimatwelt/heimatwelt.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Neraveth",
+          "text": [
+            "Die Parasitoiden leben auf Neraveth. Vask ist die andere Speziesheimat im Esvar-System."
+          ],
+          "verweise": [
+            [
+              "Neraveth",
+              "inhalte/himmelskoerper/planeten/details/neraveth/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Parasitoiden",
+              "inhalte/spezies/Biologische Spezies/Parasitoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Zivilisation": {
+      "gruppe": "Zivilisation",
+      "icon": "▥",
+      "intro": "Tessar ist der zentrale Werkstadtverbund der Autokonstrukte.",
+      "abschnitte": [
+        {
+          "titel": "Hauptsiedlung Tessar",
+          "text": [
+            "Tessar ist der zentrale Werkstadtverbund der Autokonstrukte auf Vask.",
+            "Die Siedlung liegt im Bereich weitläufiger alter Rinnenstrukturen.",
+            "Ihr Stadtbild wird durch abgestufte Montagehallen, mehrstöckige Fertigungssysteme, Transportschienen und große mechanische Baugerüste geprägt.",
+            "Tessar beherbergt Verwaltungseinrichtungen, Forschungsanlagen und gemeinsame Industriekomplexe."
+          ]
+        },
+        {
+          "titel": "Industriegebiete",
+          "text": [
+            "Die Industriegebiete bestehen aus Rohstoffaufbereitung, Rahmenfertigung, Werkzeugherstellung und Präzisionsmontage.",
+            "Große Materiallager und Energieverteilsysteme versorgen die Werkstätten.",
+            "Die Anlagen sind so gestaltet, dass Körper sehr unterschiedlicher Größen und Bewegungsformen sie benutzen können."
+          ]
+        },
+        {
+          "titel": "Wohngebiete",
+          "text": [
+            "Autokonstrukte benötigen keine klassischen biologischen Wohnräume.",
+            "Ihre privaten Bereiche enthalten geschützte Wartungsplätze, Energieladepunkte, Arbeitsflächen und Raum für persönliche Sammlungen.",
+            "Gemeinschaftliche Einrichtungen dienen der Begegnung, Ausbildung, Kunst und Forschung."
+          ]
+        },
+        {
+          "titel": "Energieversorgung",
+          "text": [
+            "Die Zivilisation verwendet ein Zusammenspiel stationärer Energieerzeugung, Speichersysteme und lokaler Verteilnetze.",
+            "Geeignete Technologien können Solarenergie, geothermische Anlagen und weitere technische Energiequellen umfassen.",
+            "Die konkrete Leistungsfähigkeit einzelner Energiequellen hängt von den noch festzulegenden Umweltparametern ab."
+          ]
+        },
+        {
+          "titel": "Verkehr",
+          "text": [
+            "Der Verkehr ist stark modular organisiert.",
+            "Schwere Lastplattformen, autonome Schienensysteme, mehrbeinige Transportmaschinen und kleinere persönliche Fahrzeuge erschließen die Siedlungen.",
+            "Für schwieriges Gelände werden Spezialfahrwerke und mobile Überbrückungssysteme eingesetzt."
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geologische Zeugnisse und die Entwicklung der Werkstadtlandschaft.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Vask entstand zusammen mit dem Esvar-System vor rund 5,4 Milliarden Jahren."
+          ]
+        },
+        {
+          "titel": "Geologische Besonderheiten",
+          "text": [
+            "Die Salzablagerungen deuten auf eine komplexe geologische beziehungsweise chemische Entwicklung hin.",
+            "Frühere Flüssigkeitsbewegungen sind eine mögliche Erklärung bestimmter Landschaftsformen, müssen aber durch Materialanalysen bestätigt werden.",
+            "Die Entstehung und Veränderung der alten Rinnen bilden ein wichtiges Forschungsgebiet."
+          ]
+        }
+      ]
+    },
+    "Fraktionen": {
+      "gruppe": "Zivilisation",
+      "icon": "◇",
+      "intro": "Dezentrale Werkverbände und planetare Selbstverwaltung.",
+      "abschnitte": [
+        {
+          "titel": "Organisation",
+          "text": [
+            "Die Werkverbände verwalten Vask dezentral. Die genaue politische Einordnung ist im Speziesdossier beschrieben."
+          ]
+        },
+        {
+          "titel": "Politisches Dossier",
+          "verweise": [
+            [
+              "Politik der Autokonstrukte",
+              "inhalte/spezies/Technologische Lebensformen/Autokonstrukte/Unterseiten/Politik/politik.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Rohstoffe": {
+      "gruppe": "Weitere",
+      "icon": "⬡",
+      "intro": "Metallhaltige Gesteine, Silikatminerale und Salze stehen im Fokus.",
+      "abschnitte": [
+        {
+          "titel": "Natürliche Ressourcen",
+          "text": [
+            "Für die technische Zivilisation sind metallhaltige Gesteine, Silikatminerale und chemisch nutzbare Salzablagerungen besonders wichtig.",
+            "Welche wirtschaftlich abbaubaren Lagerstätten tatsächlich auf Vask existieren, muss anhand des späteren Planetendossiers genauer festgelegt werden.",
+            "Die Autokonstrukte nutzen Rohstoffaufbereitung und Recycling, um den Bedarf an neu gefördertem Material zu senken."
+          ]
+        },
+        {
+          "titel": "Umweltfragen",
+          "text": [
+            "Eine technische Lebensform ist nicht grundsätzlich unabhängig von einem funktionierenden Planetensystem.",
+            "Unkontrollierter Bergbau, Abwärme, chemische Abfälle und mechanische Eingriffe können natürliche Landschaften dauerhaft verändern.",
+            "Innerhalb der Gesellschaft bestehen deshalb unterschiedliche Vorstellungen über Ressourcennutzung und Landschaftsschutz."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Expeditionen untersuchen Salzflächen, Rinnen und unbekannte Gesteinsformationen.",
+      "abschnitte": [
+        {
+          "titel": "Erkundung",
+          "text": [
+            "Große Teile von Vask sind nicht vollständig industriell erschlossen.",
+            "Autokonstruktische Expeditionen untersuchen die Zusammensetzung der Salzflächen, die Geschichte der alten Rinnen und unbekannte Gesteinsformationen.",
+            "Dabei kommen spezialisierte Forschungskörper und mobile Untersuchungslabore zum Einsatz."
+          ]
+        },
+        {
+          "titel": "Weiterführende Dossiers",
+          "verweise": [
+            [
+              "Forschung der Autokonstrukte",
+              "inhalte/spezies/Technologische Lebensformen/Autokonstrukte/Forschung/forschung.html"
+            ],
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=esvar-stern&objekt=esvar-vask"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Tessar, die Weißen Pfannen und die Alten Rinnen sind markante Spielregionen.",
+      "abschnitte": [
+        {
+          "titel": "Besondere Orte für die Spielwelt",
+          "text": [
+            "Diese Orte können als eigenständige Spielregionen weiter ausgearbeitet werden."
+          ],
+          "daten": [
+            [
+              "Tessar",
+              "Zentraler Werkstadtverbund mit Montagehallen und Forschungszentren."
+            ],
+            [
+              "Die Weißen Pfannen",
+              "Ausgedehnte Salzlandschaften mit Messstationen, mineralischen Staubstürmen und Erkundungsgebieten."
+            ],
+            [
+              "Die Alten Rinnen",
+              "Weitläufige fossile Kanalstrukturen, in denen Transporteinrichtungen und historische Anlagen liegen."
+            ],
+            [
+              "Die Kernwerften",
+              "Besonders geschützte Fertigungsstätten für Kernkomponenten und junge Autokonstrukte."
+            ],
+            [
+              "Die Freien Bauhöfe",
+              "Regionale Werkverbünde, die unabhängige Konstruktionstechnologien entwickeln."
+            ]
+          ]
+        },
+        {
+          "titel": "Bedeutung für APORIA",
+          "text": [
+            "Vask bietet eine eigenständige industrielle Spielwelt, die sich deutlich von der biologisch belebten Heimatwelt der Parasitoiden unterscheidet.",
+            "Der Planet verbindet mechanische Architektur, mineralische Landschaften, technische Forschung und eine Kultur der selbstständigen Körperkonstruktion."
+          ]
+        },
+        {
+          "titel": "Spielintegration",
+          "verweise": [
+            [
+              "Autokonstrukte im Spiel",
+              "inhalte/spezies/Technologische Lebensformen/Autokonstrukte/Gameplay/gameplay.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Vask.",
+      "abschnitte": [
+        {
+          "titel": "Vask – Archivbild",
+          "bild": true,
+          "bildtext": "Vask"
+        }
+      ]
+    }
+  }
+}

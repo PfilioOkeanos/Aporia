@@ -47,7 +47,7 @@ const knoten = [
         "belohnung": {
             "art": "gegenstand",
             "name": "Roter hyperriese im all",
-            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/Sterne/roter-hyperriese-im-all/hauptseite/roter-hyperriese-im-all-35d57a6ef9.webp"
+            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/Sterne/noraurian/hauptseite/roter-hyperriese-im-all-35d57a6ef9.webp"
         }
     },
     {
@@ -61,7 +61,7 @@ const knoten = [
         "belohnung": {
             "art": "gegenstand",
             "name": "Gelber hyperriese mit expandierender gashulle",
-            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/Sterne/gelber-hyperriese-mit-expandierender-gashulle/hauptseite/gelber-hyperriese-mit-expandierender-gashulle-e194354c3d.webp"
+            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/Sterne/aurenn/hauptseite/gelber-hyperriese-mit-expandierender-gashulle-e194354c3d.webp"
         }
     },
     {
@@ -110,7 +110,7 @@ const knoten = [
         "belohnung": {
             "art": "gegenstand",
             "name": "Blauer hyperriese im sternenwind",
-            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/Sterne/blauer-hyperriese-im-sternenwind/hauptseite/blauer-hyperriese-im-sternenwind-72ff6ba732.webp"
+            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/Sterne/sarenven/hauptseite/blauer-hyperriese-im-sternenwind-72ff6ba732.webp"
         }
     }
 ];

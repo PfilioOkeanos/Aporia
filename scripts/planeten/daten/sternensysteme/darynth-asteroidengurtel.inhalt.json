@@ -1,0 +1,557 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Darynth-Asteroidengürtel",
+  "genitiv": "von Darynth-Asteroidengürtel",
+  "dossierName": "Darynth-Asteroidengürtel-Dossier",
+  "klasse": "Asteroidengürtel",
+  "intro": "Zwischen Kavren und Torad liegt von etwa 1,7 bis 2,4 AE ein ungleichmäßiger Gürtel aus silikatischen, metallreichen und kohlenstoffhaltigen Körpern; Resonanzen mit Torad erzeugen Lücken. Eine bedeutende Rohstoff- und Forschungsregion. Darynth-Asteroidengürtel umgibt Darynth im Darynth-System.",
+  "globusDaten": {
+    "planet": "kobaltblauer-asteroidengurtel-mit-kupferspalte",
+    "klasse": "Gestein",
+    "radius": 1000000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=iravelle-stern&objekt=iravelle-guertel",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-C74F797C24"
+    ],
+    [
+      "Typ",
+      "Asteroidengürtel"
+    ],
+    [
+      "Sternsystem",
+      "Darynth-System"
+    ],
+    [
+      "Zentralkörper",
+      "Darynth"
+    ],
+    [
+      "Ausdehnung",
+      "1,7–2,4 AE"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Darynth-System"
+    ],
+    [
+      "Zentralstern",
+      "Darynth",
+      "inhalte/himmelskoerper/sterne/details/darynth/hauptseite/index.html"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Darynth-Asteroidengürtel im Darynth-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=iravelle-stern&objekt=iravelle-guertel",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Darynth",
+      "href": "inhalte/himmelskoerper/sterne/details/darynth/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Oneiroiden",
+      "titel": "Iravelle",
+      "href": "inhalte/himmelskoerper/planeten/details/iravelle/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Oneiroiden",
+      "href": "inhalte/spezies/Mentale Spezies/Oneiroiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Darynth-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=iravelle-stern&objekt=iravelle-guertel"
+    },
+    {
+      "titel": "Speziesdossier Oneiroiden",
+      "href": "inhalte/spezies/Mentale Spezies/Oneiroiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#080708",
+      "tiefe": "#111013",
+      "akzent": "#bdb9c7",
+      "sand": "#c2b8ad",
+      "moos": "#9caf9e",
+      "ozean": "#7c98ba",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#45434c"
+    },
+    "schichten": [
+      [
+        "Lage",
+        "Bahnen"
+      ],
+      [
+        "System",
+        "Planeten"
+      ],
+      [
+        "Dynamik",
+        "Stabilität"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Zentralsterne": {
+      "gruppe": "Wissenschaft",
+      "icon": "✦",
+      "intro": "Zentralsterne von Darynth-Asteroidengürtel.",
+      "abschnitte": [
+        {
+          "titel": "Darynth",
+          "text": [
+            "Darynth ist ein orange bis gelborange leuchtender K3-V-Hauptreihenstern mit 0,78 Sonnenmassen und 37 % der Sonnenleuchtkraft. Mit rund 6 Milliarden Jahren ist er stabil; seine Lebensdauer auf der Hauptreihe ist erheblich länger als die der Sonne. Er ist Heimatstern der Oneiroiden."
+          ],
+          "verweise": [
+            [
+              "Darynth",
+              "inhalte/himmelskoerper/sterne/details/darynth/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Planeten": {
+      "gruppe": "Wissenschaft",
+      "icon": "◍",
+      "intro": "Planeten von Darynth-Asteroidengürtel.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Darynth · Stern",
+              "Orangefarbener Zwerg (K3 V)"
+            ],
+            [
+              "Ashken · 0,18 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Doriel · 0,39 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Iravelle · 0,65 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Kavren · 1,12 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Torad · 2,9 AE",
+              "Gasriese"
+            ],
+            [
+              "Olyss · 6,1 AE",
+              "Eisriese"
+            ],
+            [
+              "Umbrel · 11,3 AE",
+              "Eisriese"
+            ],
+            [
+              "Darynth-Asteroidengürtel · 1,7–2,4 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußere Kleinkörperregion · 14–30 AE",
+              "Kleinkörpergürtel"
+            ]
+          ],
+          "verweise": [
+            [
+              "Darynth",
+              "inhalte/himmelskoerper/sterne/details/darynth/hauptseite/index.html"
+            ],
+            [
+              "Ashken",
+              "inhalte/himmelskoerper/planeten/details/ashken/hauptseite/index.html"
+            ],
+            [
+              "Doriel",
+              "inhalte/himmelskoerper/planeten/details/doriel/hauptseite/index.html"
+            ],
+            [
+              "Iravelle",
+              "inhalte/himmelskoerper/planeten/details/iravelle/hauptseite/index.html"
+            ],
+            [
+              "Kavren",
+              "inhalte/himmelskoerper/planeten/details/kavren/hauptseite/index.html"
+            ],
+            [
+              "Torad",
+              "inhalte/himmelskoerper/planeten/details/torad/hauptseite/index.html"
+            ],
+            [
+              "Olyss",
+              "inhalte/himmelskoerper/planeten/details/olyss/hauptseite/index.html"
+            ],
+            [
+              "Umbrel",
+              "inhalte/himmelskoerper/planeten/details/umbrel/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Bahnen": {
+      "gruppe": "Wissenschaft",
+      "icon": "◌",
+      "intro": "Bahnen von Darynth-Asteroidengürtel.",
+      "abschnitte": [
+        {
+          "titel": "Lage",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Darynth"
+            ],
+            [
+              "Ausdehnung",
+              "1,7–2,4 AE"
+            ]
+          ]
+        }
+      ]
+    },
+    "Stabilität": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚖",
+      "intro": "Stabilität von Darynth-Asteroidengürtel.",
+      "abschnitte": [
+        {
+          "titel": "Stabilität",
+          "text": [
+            "Die Brocken von Darynth-Asteroidengürtel bewegen sich auf stabilen Bahnen zwischen den Planeten; Resonanzen mit den großen Planeten formen die Ränder des Gebiets."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Darynth-Asteroidengürtel auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Darynth-Asteroidengürtel",
+          "text": [
+            "Zwischen Kavren und Torad liegt von etwa 1,7 bis 2,4 AE ein ungleichmäßiger Gürtel aus silikatischen, metallreichen und kohlenstoffhaltigen Körpern; Resonanzen mit Torad erzeugen Lücken. Eine bedeutende Rohstoff- und Forschungsregion.",
+            "Darynth-Asteroidengürtel umgibt Darynth im Darynth-System."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Asteroidengürtel"
+            ],
+            [
+              "Sternsystem",
+              "Darynth-System"
+            ],
+            [
+              "Zentralkörper",
+              "Darynth"
+            ],
+            [
+              "Ausdehnung",
+              "1,7–2,4 AE"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Iravelle",
+          "text": [
+            "Das Darynth-System ist die Heimat der Oneiroiden: Ihr Planet Iravelle umkreist Darynth."
+          ],
+          "verweise": [
+            [
+              "Iravelle",
+              "inhalte/himmelskoerper/planeten/details/iravelle/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Oneiroiden",
+              "inhalte/spezies/Mentale Spezies/Oneiroiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Darynth-Asteroidengürtel im Darynth-System.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Darynth · Stern",
+              "Orangefarbener Zwerg (K3 V)"
+            ],
+            [
+              "Ashken · 0,18 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Doriel · 0,39 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Iravelle · 0,65 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Kavren · 1,12 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Torad · 2,9 AE",
+              "Gasriese"
+            ],
+            [
+              "Olyss · 6,1 AE",
+              "Eisriese"
+            ],
+            [
+              "Umbrel · 11,3 AE",
+              "Eisriese"
+            ],
+            [
+              "Darynth-Asteroidengürtel · 1,7–2,4 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußere Kleinkörperregion · 14–30 AE",
+              "Kleinkörpergürtel"
+            ]
+          ],
+          "verweise": [
+            [
+              "Darynth",
+              "inhalte/himmelskoerper/sterne/details/darynth/hauptseite/index.html"
+            ],
+            [
+              "Ashken",
+              "inhalte/himmelskoerper/planeten/details/ashken/hauptseite/index.html"
+            ],
+            [
+              "Doriel",
+              "inhalte/himmelskoerper/planeten/details/doriel/hauptseite/index.html"
+            ],
+            [
+              "Iravelle",
+              "inhalte/himmelskoerper/planeten/details/iravelle/hauptseite/index.html"
+            ],
+            [
+              "Kavren",
+              "inhalte/himmelskoerper/planeten/details/kavren/hauptseite/index.html"
+            ],
+            [
+              "Torad",
+              "inhalte/himmelskoerper/planeten/details/torad/hauptseite/index.html"
+            ],
+            [
+              "Olyss",
+              "inhalte/himmelskoerper/planeten/details/olyss/hauptseite/index.html"
+            ],
+            [
+              "Umbrel",
+              "inhalte/himmelskoerper/planeten/details/umbrel/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Umgebung": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Umgebung von Darynth-Asteroidengürtel.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Darynth · Stern",
+              "Orangefarbener Zwerg (K3 V)"
+            ],
+            [
+              "Ashken · 0,18 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Doriel · 0,39 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Iravelle · 0,65 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Kavren · 1,12 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Torad · 2,9 AE",
+              "Gasriese"
+            ],
+            [
+              "Olyss · 6,1 AE",
+              "Eisriese"
+            ],
+            [
+              "Umbrel · 11,3 AE",
+              "Eisriese"
+            ],
+            [
+              "Darynth-Asteroidengürtel · 1,7–2,4 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußere Kleinkörperregion · 14–30 AE",
+              "Kleinkörpergürtel"
+            ]
+          ],
+          "verweise": [
+            [
+              "Darynth",
+              "inhalte/himmelskoerper/sterne/details/darynth/hauptseite/index.html"
+            ],
+            [
+              "Ashken",
+              "inhalte/himmelskoerper/planeten/details/ashken/hauptseite/index.html"
+            ],
+            [
+              "Doriel",
+              "inhalte/himmelskoerper/planeten/details/doriel/hauptseite/index.html"
+            ],
+            [
+              "Iravelle",
+              "inhalte/himmelskoerper/planeten/details/iravelle/hauptseite/index.html"
+            ],
+            [
+              "Kavren",
+              "inhalte/himmelskoerper/planeten/details/kavren/hauptseite/index.html"
+            ],
+            [
+              "Torad",
+              "inhalte/himmelskoerper/planeten/details/torad/hauptseite/index.html"
+            ],
+            [
+              "Olyss",
+              "inhalte/himmelskoerper/planeten/details/olyss/hauptseite/index.html"
+            ],
+            [
+              "Umbrel",
+              "inhalte/himmelskoerper/planeten/details/umbrel/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Darynth-Asteroidengürtel.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Darynth-Asteroidengürtel besteht aus Material, das sich bei der Entstehung des Darynth-Systems nicht zu einem Planeten vereinte."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Darynth-Asteroidengürtel.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Wie viel Masse enthält das Gebiet insgesamt?",
+            "Welche Resonanzen formen seine Ränder?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Darynth-Asteroidengürtel ist mit allen Bahndaten im Darynth-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=iravelle-stern&objekt=iravelle-guertel"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Darynth-Asteroidengürtel.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Zwischen Kavren und Torad liegt von etwa 1,7 bis 2,4 AE ein ungleichmäßiger Gürtel aus silikatischen, metallreichen und kohlenstoffhaltigen Körpern; Resonanzen mit Torad erzeugen Lücken. Eine bedeutende Rohstoff- und Forschungsregion."
+          ]
+        },
+        {
+          "titel": "Zusammensetzung",
+          "liste": [
+            "Silikatische Asteroiden",
+            "Metallreiche Körper",
+            "Kohlenstoffhaltige Kleinkörper",
+            "Kollisionsfamilien",
+            "Staubpopulationen"
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Darynth-Asteroidengürtel.",
+      "abschnitte": [
+        {
+          "titel": "Darynth-Asteroidengürtel – Archivbild",
+          "bild": true,
+          "bildtext": "Darynth-Asteroidengürtel"
+        }
+      ]
+    }
+  }
+}

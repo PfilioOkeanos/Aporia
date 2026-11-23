@@ -1,0 +1,716 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Daran",
+  "genitiv": "von Daran",
+  "dossierName": "Daran-Dossier",
+  "klasse": "Gasriese",
+  "intro": "Daran ist ein wasserstoffreicher Gasriese und der massereichste Planet des Ilaren-Systems. Seine Gravitation ordnet die äußeren Kleinkörper, ohne den inneren Gürtel aufzulösen.",
+  "globusDaten": {
+    "planet": "pfirsichfarbener-gasriese-im-tiefen-all",
+    "klasse": "Gasriese",
+    "radius": 53000000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=ilaren-stern&objekt=ilaren-daran",
+  "grunddaten": [
+    [
+      "System-ID",
+      "ilaren-daran"
+    ],
+    [
+      "Archiv-ID",
+      "AP-74F41C230D"
+    ],
+    [
+      "Typ",
+      "Gasriese"
+    ],
+    [
+      "Sternsystem",
+      "Ilaren-System"
+    ],
+    [
+      "Zentralkörper",
+      "Ilaren"
+    ],
+    [
+      "Große Halbachse",
+      "2,45 AE"
+    ],
+    [
+      "Umlaufzeit",
+      "4,3 Jahre"
+    ],
+    [
+      "Durchmesser",
+      "106.000 km"
+    ],
+    [
+      "Masse",
+      "85 Erdmassen"
+    ],
+    [
+      "Schwerkraft",
+      "1,23 g"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -159 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Ilaren-System"
+    ],
+    [
+      "Zentralstern",
+      "Ilaren",
+      "inhalte/himmelskoerper/sterne/details/ilaren/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "2,45 AE"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Daran im Ilaren-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=ilaren-stern&objekt=ilaren-daran",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Ilaren",
+      "href": "inhalte/himmelskoerper/sterne/details/ilaren/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Kollektiden (Tessari)",
+      "titel": "Khaluun",
+      "href": "inhalte/himmelskoerper/planeten/details/khaluun/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Kollektiden (Tessari)",
+      "href": "inhalte/spezies/Mentale Spezies/Kollektiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Ilaren-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=ilaren-stern&objekt=ilaren-daran"
+    },
+    {
+      "titel": "Speziesdossier Kollektiden (Tessari)",
+      "href": "inhalte/spezies/Mentale Spezies/Kollektiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#090705",
+      "tiefe": "#14100c",
+      "akzent": "#d2b99f",
+      "sand": "#d6b893",
+      "moos": "#afaf7c",
+      "ozean": "#8c9889",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#544330"
+    }
+  },
+  "kapitel": {
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Daran auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Daran",
+          "text": [
+            "Daran ist der größte Planet des Ilaren-Systems. Seine überwiegend leichten Gase bilden mehrere Wolken- und Druckschichten mit großräumigen Strömungen; zahlreiche Monde und ein mögliches schwaches Ringsystem sind Gegenstand weiterer Beobachtung.",
+            "Daran umkreist Ilaren in 2,45 AE Abstand und braucht für einen Umlauf 4,3 Jahre."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Gasriese"
+            ],
+            [
+              "Sternsystem",
+              "Ilaren-System"
+            ],
+            [
+              "Zentralkörper",
+              "Ilaren"
+            ],
+            [
+              "Große Halbachse",
+              "2,45 AE"
+            ],
+            [
+              "Umlaufzeit",
+              "4,3 Jahre"
+            ],
+            [
+              "Durchmesser",
+              "106.000 km"
+            ],
+            [
+              "Masse",
+              "85 Erdmassen"
+            ],
+            [
+              "Schwerkraft",
+              "1,23 g"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -159 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Khaluun",
+          "text": [
+            "Das Ilaren-System ist die Heimat der Kollektiden (Tessari): Ihr Planet Khaluun umkreist Ilaren."
+          ],
+          "verweise": [
+            [
+              "Khaluun",
+              "inhalte/himmelskoerper/planeten/details/khaluun/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Kollektiden (Tessari)",
+              "inhalte/spezies/Mentale Spezies/Kollektiden/hauptseite/Spezies.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Äußerer Gasriese",
+          "text": [
+            "Daran umläuft Ilaren in 2,45 AE Entfernung; ein Jahr dauert rund 1.586 Erdtage. Seine Gleichgewichtstemperatur liegt bei ungefähr −159 °C, während tiefe Atmosphärenschichten durch innere Wärme deutlich wärmer sind."
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Daran im Ilaren-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Ilaren"
+            ],
+            [
+              "Große Halbachse",
+              "2,45 AE (366,5 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,035"
+            ],
+            [
+              "Bahnneigung",
+              "1,1°"
+            ],
+            [
+              "Umlaufzeit",
+              "4,3 Jahre"
+            ],
+            [
+              "Einstrahlung",
+              "0,043-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Am Himmel von Daran",
+          "text": [
+            "Ilaren erscheint von hier aus etwa 0,16° groß (die Sonne von der Erde: 0,53°)."
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Ilaren · Stern",
+              "Orangefarbener Hauptreihenstern (K3 V)"
+            ],
+            [
+              "Harrek · 0,15 AE",
+              "Heißer Gesteinsplanet"
+            ],
+            [
+              "Vosan · 0,31 AE",
+              "Trockener Gesteinsplanet"
+            ],
+            [
+              "Khaluun · 0,52 AE",
+              "Gemäßigter, wasserreicher Gesteinsplanet"
+            ],
+            [
+              "Meyt · 0,92 AE",
+              "Kalter Gesteinsplanet"
+            ],
+            [
+              "Daran · 2,45 AE · dieses Dossier",
+              "Gasriese"
+            ],
+            [
+              "Ulmar · 5,9 AE",
+              "Eisriese"
+            ],
+            [
+              "Ilaren-Asteroidengürtel · 1,3–1,9 AE",
+              "Asteroidengürtel"
+            ]
+          ],
+          "verweise": [
+            [
+              "Ilaren",
+              "inhalte/himmelskoerper/sterne/details/ilaren/hauptseite/index.html"
+            ],
+            [
+              "Harrek",
+              "inhalte/himmelskoerper/planeten/details/harrek/hauptseite/index.html"
+            ],
+            [
+              "Vosan",
+              "inhalte/himmelskoerper/planeten/details/vosan/hauptseite/index.html"
+            ],
+            [
+              "Khaluun",
+              "inhalte/himmelskoerper/planeten/details/khaluun/hauptseite/index.html"
+            ],
+            [
+              "Meyt",
+              "inhalte/himmelskoerper/planeten/details/meyt/hauptseite/index.html"
+            ],
+            [
+              "Ulmar",
+              "inhalte/himmelskoerper/planeten/details/ulmar/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Daran.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "53.000 km"
+            ],
+            [
+              "Masse",
+              "85 Erdmassen"
+            ],
+            [
+              "Mittlere Dichte",
+              "0,81 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "12,05 m/s² (1,228 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "35,76 km/s"
+            ]
+          ],
+          "vergleich": {
+            "mit": "Erde",
+            "werte": [
+              [
+                "Durchmesser",
+                106000,
+                12742,
+                "km"
+              ],
+              [
+                "Masse",
+                85,
+                1,
+                "Erdmassen"
+              ],
+              [
+                "Schwerkraft",
+                1.23,
+                1,
+                "g"
+              ]
+            ]
+          }
+        },
+        {
+          "titel": "Leichter als Wasser",
+          "daten": [
+            [
+              "Masse",
+              "85 Erdmassen"
+            ],
+            [
+              "Radius",
+              "53.000 km"
+            ],
+            [
+              "Abgeleitete mittlere Dichte",
+              "ca. 0,81 g/cm³"
+            ]
+          ],
+          "text": [
+            "Die mittlere Dichte passt zu einer ausgedehnten Wasserstoff-Helium-Hülle. Der Radius und die Masse liegen unterhalb der typischen Werte eines stark aufgeblähten heißen Jupiters."
+          ]
+        }
+      ]
+    },
+    "Planetare Struktur": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Planetare Struktur von Daran.",
+      "abschnitte": [
+        {
+          "titel": "Schalenbau",
+          "schichten": [
+            [
+              "Wolkendecke",
+              "Ammoniak- und Wasserwolken in Bändern"
+            ],
+            [
+              "Wasserstoffhülle",
+              "Molekularer Wasserstoff und Helium"
+            ],
+            [
+              "Metallischer Wasserstoff",
+              "Leitfähige Schicht unter extremem Druck – Ursprung des Magnetfelds"
+            ],
+            [
+              "Kern",
+              "Gestein und Eis"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geografie": {
+      "gruppe": "Natur",
+      "icon": "△",
+      "intro": "Geografie von Daran.",
+      "abschnitte": [
+        {
+          "titel": "Oberfläche",
+          "text": [
+            "Daran besitzt keine feste Oberfläche. Sichtbar sind Wolkenbänder, Wirbel und Stürme."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Daran.",
+      "abschnitte": [
+        {
+          "titel": "Gashülle",
+          "text": [
+            "Daran besitzt keine feste Oberfläche; die Hülle geht nach innen allmählich in dichtere Schichten über."
+          ],
+          "balken": {
+            "werte": [
+              [
+                "Wasserstoff",
+                86
+              ],
+              [
+                "Helium",
+                13
+              ],
+              [
+                "Methan und Spurengase",
+                1
+              ]
+            ]
+          }
+        },
+        {
+          "titel": "Bänder, Wolken und tiefe Druckschichten",
+          "text": [
+            "Schnelle Rotation ordnet die Atmosphäre in breite Jetstreams und Wolkenbänder. Mit der Tiefe steigen Druck und Temperatur; feste Oberfläche gibt es nicht."
+          ]
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Daran.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 2,45 AE Abstand zu Ilaren liegt die Gleichgewichtstemperatur von Daran bei rund -159 °C – eisig kalt."
+          ]
+        }
+      ]
+    },
+    "Gewässer": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gewässer von Daran.",
+      "abschnitte": [
+        {
+          "titel": "Wasser",
+          "text": [
+            "Wasser liegt in den Wolkenschichten und tief im Inneren unter hohem Druck vor."
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Daran.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Ohne feste Oberfläche gibt es keine Geologie im engeren Sinn; im Inneren herrschen extreme Drücke und Temperaturen."
+          ]
+        }
+      ]
+    },
+    "Biosphäre": {
+      "gruppe": "Natur",
+      "icon": "❧",
+      "intro": "Biosphäre von Daran.",
+      "abschnitte": [
+        {
+          "titel": "Leben",
+          "text": [
+            "Auf Daran ist kein Leben verzeichnet."
+          ]
+        }
+      ]
+    },
+    "Spezies": {
+      "gruppe": "Zivilisation",
+      "icon": "✿",
+      "intro": "Spezies von Daran.",
+      "abschnitte": [
+        {
+          "titel": "Bewohner",
+          "text": [
+            "Daran ist keine Heimat einer intelligenten Spezies."
+          ]
+        },
+        {
+          "titel": "Im System von Khaluun",
+          "text": [
+            "Das Ilaren-System ist die Heimat der Kollektiden (Tessari): Ihr Planet Khaluun umkreist Ilaren."
+          ],
+          "verweise": [
+            [
+              "Khaluun",
+              "inhalte/himmelskoerper/planeten/details/khaluun/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Kollektiden (Tessari)",
+              "inhalte/spezies/Mentale Spezies/Kollektiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Zivilisation": {
+      "gruppe": "Zivilisation",
+      "icon": "▥",
+      "intro": "Zivilisation von Daran.",
+      "abschnitte": [
+        {
+          "titel": "Siedlungen",
+          "text": [
+            "Für Daran sind keine dauerhaften Siedlungen verzeichnet."
+          ]
+        },
+        {
+          "titel": "Im System von Khaluun",
+          "text": [
+            "Das Ilaren-System ist die Heimat der Kollektiden (Tessari): Ihr Planet Khaluun umkreist Ilaren."
+          ],
+          "verweise": [
+            [
+              "Khaluun",
+              "inhalte/himmelskoerper/planeten/details/khaluun/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Kollektiden (Tessari)",
+              "inhalte/spezies/Mentale Spezies/Kollektiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Daran.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Daran entstand zusammen mit dem Ilaren-System vor rund 5,6 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Fraktionen": {
+      "gruppe": "Zivilisation",
+      "icon": "◇",
+      "intro": "Fraktionen von Daran.",
+      "abschnitte": [
+        {
+          "titel": "Ansprüche",
+          "text": [
+            "Für Daran sind keine Fraktionsansprüche verzeichnet."
+          ]
+        }
+      ]
+    },
+    "Rohstoffe": {
+      "gruppe": "Weitere",
+      "icon": "⬡",
+      "intro": "Rohstoffe von Daran.",
+      "abschnitte": [
+        {
+          "titel": "Rohstoffe",
+          "liste": [
+            "Wasserstoff",
+            "Helium-3",
+            "Ammoniak"
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Daran.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Wie tief reichen die Wolkenbänder?",
+            "Wie groß ist der feste Kern?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Daran ist mit allen Bahndaten im Ilaren-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=ilaren-stern&objekt=ilaren-daran"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Daran.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Größter Planet des Ilaren-Systems"
+          ]
+        },
+        {
+          "titel": "Wärme und Magnetfeld",
+          "text": [
+            "Daran strahlt gespeicherte Entstehungswärme ab. Ein ausgedehntes Magnetfeld und ein schwaches Ringsystem sind plausible Modellmerkmale, deren genaue Stärke noch offen ist."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Daran.",
+      "abschnitte": [
+        {
+          "titel": "Daran – Archivbild",
+          "bild": true,
+          "bildtext": "Daran"
+        }
+      ]
+    },
+    "Gaszusammensetzung": {
+      "gruppe": "Weitere",
+      "icon": "◆",
+      "intro": "Gaszusammensetzung von Daran.",
+      "abschnitte": [
+        {
+          "titel": "Gaszusammensetzung",
+          "text": [
+            "Daran ist der größte Planet des Ilaren-Systems. Seine überwiegend leichten Gase bilden mehrere Wolken- und Druckschichten mit großräumigen Strömungen; zahlreiche Monde und ein mögliches schwaches Ringsystem sind Gegenstand weiterer Beobachtung."
+          ]
+        }
+      ]
+    },
+    "Wolkenschichten": {
+      "gruppe": "Weitere",
+      "icon": "◆",
+      "intro": "Wolkenschichten von Daran.",
+      "abschnitte": [
+        {
+          "titel": "Wolkenschichten",
+          "text": [
+            "Daran ist der größte Planet des Ilaren-Systems. Seine überwiegend leichten Gase bilden mehrere Wolken- und Druckschichten mit großräumigen Strömungen; zahlreiche Monde und ein mögliches schwaches Ringsystem sind Gegenstand weiterer Beobachtung."
+          ]
+        }
+      ]
+    },
+    "Stürme": {
+      "gruppe": "Weitere",
+      "icon": "◆",
+      "intro": "Stürme von Daran.",
+      "abschnitte": [
+        {
+          "titel": "Stürme",
+          "text": [
+            "Daran ist der größte Planet des Ilaren-Systems. Seine überwiegend leichten Gase bilden mehrere Wolken- und Druckschichten mit großräumigen Strömungen; zahlreiche Monde und ein mögliches schwaches Ringsystem sind Gegenstand weiterer Beobachtung."
+          ]
+        }
+      ]
+    }
+  }
+}

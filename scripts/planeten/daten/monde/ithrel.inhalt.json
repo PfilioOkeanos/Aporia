@@ -1,0 +1,498 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Ithrel",
+  "genitiv": "von Ithrel",
+  "dossierName": "Ithrel-Dossier",
+  "klasse": "Felsmond",
+  "intro": "Ein tiefer Einschlag legte dunkle metallreiche Schichten frei. Die helle Auswurfdecke bildet einen Bogen, den Beobachter auf Neraveth als Landmarke bei der Kartierung verwenden. Ithrel umkreist Neraveth in 12 Tage.",
+  "globusDaten": {
+    "planet": "aufgerissener-mond-mit-dunklem-metallkern",
+    "klasse": "Gestein",
+    "radius": 1170000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=esvar-stern&objekt=esvar-ithrel",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-C6D6A0B024"
+    ],
+    [
+      "Typ",
+      "Felsmond"
+    ],
+    [
+      "Sternsystem",
+      "Esvar-System"
+    ],
+    [
+      "Zentralkörper",
+      "Neraveth"
+    ],
+    [
+      "Große Halbachse",
+      "216.886 km"
+    ],
+    [
+      "Umlaufzeit",
+      "12 Tage"
+    ],
+    [
+      "Durchmesser",
+      "2.340 km"
+    ],
+    [
+      "Masse",
+      "0,252 Mondmassen"
+    ],
+    [
+      "Schwerkraft",
+      "0,09 g"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -21 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Esvar-System"
+    ],
+    [
+      "Zentralstern",
+      "Esvar",
+      "inhalte/himmelskoerper/sterne/details/esvar/hauptseite/index.html"
+    ],
+    [
+      "Umläuft",
+      "Neraveth",
+      "inhalte/himmelskoerper/planeten/details/neraveth/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "216.886 km"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Ithrel im Esvar-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=esvar-stern&objekt=esvar-ithrel",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Esvar",
+      "href": "inhalte/himmelskoerper/sterne/details/esvar/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◍",
+      "art": "Mutterplanet",
+      "titel": "Neraveth",
+      "href": "inhalte/himmelskoerper/planeten/details/neraveth/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Parasitoiden",
+      "titel": "Neraveth",
+      "href": "inhalte/himmelskoerper/planeten/details/neraveth/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Parasitoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Parasitoiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Esvar-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=esvar-stern&objekt=esvar-ithrel"
+    },
+    {
+      "titel": "Speziesdossier Parasitoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Parasitoiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#080707",
+      "tiefe": "#11100f",
+      "akzent": "#c0b9b1",
+      "sand": "#c5b89f",
+      "moos": "#9faf8c",
+      "ozean": "#7f989f",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#47433d"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Astronomie"
+      ],
+      [
+        "Planet",
+        "Mutterplanet"
+      ],
+      [
+        "Kräfte",
+        "Gezeiten"
+      ],
+      [
+        "Tiefe",
+        "Geologie"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Mutterplanet": {
+      "gruppe": "Wissenschaft",
+      "icon": "◐",
+      "intro": "Mutterplanet von Ithrel.",
+      "abschnitte": [
+        {
+          "titel": "Neraveth",
+          "text": [
+            "Die Heimat der Kheravi besitzt ausgedehnte Schelfmeere und saisonal überflutete Ebenen. Regenfronten bestimmen, wann die großen Raukhen-Herden ihre Weidegründe wechseln."
+          ],
+          "daten": [
+            [
+              "Typ",
+              "Gesteinsplanet"
+            ],
+            [
+              "Durchmesser",
+              "12.870 km"
+            ],
+            [
+              "Abstand des Mondes",
+              "216.886 km (33,7 Planetenradien)"
+            ]
+          ],
+          "verweise": [
+            [
+              "Neraveth",
+              "inhalte/himmelskoerper/planeten/details/neraveth/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Gezeiten": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gezeiten von Ithrel.",
+      "abschnitte": [
+        {
+          "titel": "Gezeitenkräfte",
+          "text": [
+            "Auf seiner Bahn in 216.886 km Abstand wirken starke Gezeitenkräfte von Neraveth auf Ithrel."
+          ]
+        }
+      ]
+    },
+    "Gebundene Rotation": {
+      "gruppe": "Wissenschaft",
+      "icon": "↻",
+      "intro": "Gebundene Rotation von Ithrel.",
+      "abschnitte": [
+        {
+          "titel": "Rotation",
+          "text": [
+            "Ithrel wendet Neraveth vermutlich stets dieselbe Seite zu: Ein Tag dauert so lange wie ein Umlauf – 12 Tage."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Ithrel auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Ithrel",
+          "text": [
+            "Ein tiefer Einschlag legte dunkle metallreiche Schichten frei. Die helle Auswurfdecke bildet einen Bogen, den Beobachter auf Neraveth als Landmarke bei der Kartierung verwenden.",
+            "Ithrel umkreist Neraveth in 12 Tage."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Felsmond"
+            ],
+            [
+              "Sternsystem",
+              "Esvar-System"
+            ],
+            [
+              "Zentralkörper",
+              "Neraveth"
+            ],
+            [
+              "Große Halbachse",
+              "216.886 km"
+            ],
+            [
+              "Umlaufzeit",
+              "12 Tage"
+            ],
+            [
+              "Durchmesser",
+              "2.340 km"
+            ],
+            [
+              "Masse",
+              "0,252 Mondmassen"
+            ],
+            [
+              "Schwerkraft",
+              "0,09 g"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -21 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Neraveth",
+          "text": [
+            "Das Esvar-System ist die Heimat der Parasitoiden: Ihr Planet Neraveth umkreist Esvar, und Ithrel ist einer seiner Monde."
+          ],
+          "verweise": [
+            [
+              "Neraveth",
+              "inhalte/himmelskoerper/planeten/details/neraveth/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Parasitoiden",
+              "inhalte/spezies/Biologische Spezies/Parasitoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Ithrel im Esvar-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Neraveth"
+            ],
+            [
+              "Große Halbachse",
+              "216.886 km"
+            ],
+            [
+              "Exzentrizität",
+              "0,01"
+            ],
+            [
+              "Bahnneigung",
+              "0,6°"
+            ],
+            [
+              "Umlaufzeit",
+              "12 Tage"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Esvar · Stern",
+              "Orangefarbener Hauptreihenstern (K2 V)"
+            ],
+            [
+              "Vask · 0,28 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Neraveth · 0,63 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Velun · 3,7 AE",
+              "Gasriese"
+            ]
+          ],
+          "verweise": [
+            [
+              "Esvar",
+              "inhalte/himmelskoerper/sterne/details/esvar/hauptseite/index.html"
+            ],
+            [
+              "Vask",
+              "inhalte/himmelskoerper/planeten/details/vask/hauptseite/index.html"
+            ],
+            [
+              "Neraveth",
+              "inhalte/himmelskoerper/planeten/details/neraveth/hauptseite/index.html"
+            ],
+            [
+              "Velun",
+              "inhalte/himmelskoerper/planeten/details/velun/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Ithrel.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "1.170 km"
+            ],
+            [
+              "Masse",
+              "0,252 Mondmassen"
+            ],
+            [
+              "Mittlere Dichte",
+              "2,76 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "0,9 m/s² (0,092 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "1,45 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Ithrel.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Ithrel ist geologisch weitgehend erstarrt; Einschläge haben seine Oberfläche geformt."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Ithrel.",
+      "abschnitte": [
+        {
+          "titel": "Gashülle",
+          "text": [
+            "Ithrel besitzt keine nennenswerte Atmosphäre – dafür ist die Schwerkraft zu gering."
+          ]
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Ithrel.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 0,63 AE Abstand zu Esvar liegt die Gleichgewichtstemperatur von Ithrel bei rund -21 °C – kalt."
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Ithrel.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Ithrel entstand zusammen mit dem Esvar-System vor rund 5,4 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Ithrel.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Ist der Mond eingefangen oder mit seinem Planeten entstanden?",
+            "Welche Spuren tragen seine ältesten Krater?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Ithrel ist mit allen Bahndaten im Esvar-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=esvar-stern&objekt=esvar-ithrel"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Ithrel.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Ein tiefer Einschlag legte dunkle metallreiche Schichten frei. Die helle Auswurfdecke bildet einen Bogen, den Beobachter auf Neraveth als Landmarke bei der Kartierung verwenden."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Ithrel.",
+      "abschnitte": [
+        {
+          "titel": "Ithrel – Archivbild",
+          "bild": true,
+          "bildtext": "Ithrel"
+        }
+      ]
+    }
+  }
+}

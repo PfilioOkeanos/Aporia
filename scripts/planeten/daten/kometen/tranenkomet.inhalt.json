@@ -1,0 +1,543 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Tränenkomet",
+  "genitiv": "von Tränenkomet",
+  "dossierName": "Tränenkomet-Dossier",
+  "klasse": "Komet",
+  "intro": "Ein periodischer Komet mit türkisblauem Schweifbogen, der alle 82 Jahre wiederkehrt. In alten Narethi-Archiven gilt er als „Träne, die heilt“ – seine Wiederkehr wurde mit großen Heilfesten verbunden. Tränenkomet umkreist Saelon in 17,6 AE Abstand und braucht für einen Umlauf 81,5 Jahre.",
+  "globusDaten": {
+    "planet": "komet-mit-turkisblauem-schweifbogen",
+    "klasse": "Eis",
+    "radius": 5000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=nalvyr-stern&objekt=nalvyr-heilerkomet",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-C869F16F0C"
+    ],
+    [
+      "Typ",
+      "Komet"
+    ],
+    [
+      "Sternsystem",
+      "Saelon-System"
+    ],
+    [
+      "Zentralkörper",
+      "Saelon"
+    ],
+    [
+      "Große Halbachse",
+      "17,6 AE"
+    ],
+    [
+      "Umlaufzeit",
+      "81,5 Jahre"
+    ],
+    [
+      "Durchmesser",
+      "10 km"
+    ],
+    [
+      "Masse",
+      "3,14 · 10^14 kg"
+    ],
+    [
+      "Schwerkraft",
+      "0,08 cm/s²"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -217 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Saelon-System"
+    ],
+    [
+      "Zentralstern",
+      "Saelon",
+      "inhalte/himmelskoerper/sterne/details/saelon/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "17,6 AE"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Tränenkomet im Saelon-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=nalvyr-stern&objekt=nalvyr-heilerkomet",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Saelon",
+      "href": "inhalte/himmelskoerper/sterne/details/saelon/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Regeneranten",
+      "titel": "Nalvyr",
+      "href": "inhalte/himmelskoerper/planeten/details/nalvyr/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Regeneranten",
+      "href": "inhalte/spezies/Biologische Spezies/Regeneranten/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Saelon-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=nalvyr-stern&objekt=nalvyr-heilerkomet"
+    },
+    {
+      "titel": "Speziesdossier Regeneranten",
+      "href": "inhalte/spezies/Biologische Spezies/Regeneranten/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#080b0b",
+      "tiefe": "#111819",
+      "akzent": "#bde8ee",
+      "sand": "#c2dfc6",
+      "moos": "#9ce4c1",
+      "ozean": "#7cc8eb",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#456367"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Umlaufbahn"
+      ],
+      [
+        "Hülle",
+        "Schweif"
+      ],
+      [
+        "Hülle",
+        "Koma"
+      ],
+      [
+        "Kern",
+        "Kern"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Kern": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Kern von Tränenkomet.",
+      "abschnitte": [
+        {
+          "titel": "Kometenkern",
+          "text": [
+            "Der Kern von Tränenkomet misst rund 10 km und besteht aus einem lockeren Gemenge aus Eis, Staub und Gestein."
+          ],
+          "schichten": [
+            [
+              "Staubkruste",
+              "Dunkle, kohlenstoffreiche Oberfläche"
+            ],
+            [
+              "Eis-Staub-Gemisch",
+              "Wassereis, Kohlendioxid und Staub"
+            ],
+            [
+              "Kern",
+              "Lockeres Eis-Gestein-Gemenge"
+            ]
+          ]
+        }
+      ]
+    },
+    "Koma": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Koma von Tränenkomet.",
+      "abschnitte": [
+        {
+          "titel": "Koma",
+          "text": [
+            "Nähert sich Tränenkomet dem Stern Saelon, verdampft Eis und bildet eine leuchtende Gashülle um den Kern."
+          ]
+        }
+      ]
+    },
+    "Schweif": {
+      "gruppe": "Natur",
+      "icon": "☄",
+      "intro": "Schweif von Tränenkomet.",
+      "abschnitte": [
+        {
+          "titel": "Schweif",
+          "text": [
+            "Ein periodischer Komet mit türkisblauem Schweifbogen, der alle 82 Jahre wiederkehrt. In alten Narethi-Archiven gilt er als „Träne, die heilt“ – seine Wiederkehr wurde mit großen Heilfesten verbunden."
+          ]
+        }
+      ]
+    },
+    "Umlaufbahn": {
+      "gruppe": "Wissenschaft",
+      "icon": "◌",
+      "intro": "Umlaufbahn von Tränenkomet.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Saelon"
+            ],
+            [
+              "Große Halbachse",
+              "17,6 AE (2.633 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,95"
+            ],
+            [
+              "Bahnneigung",
+              "22°"
+            ],
+            [
+              "Umlaufzeit",
+              "81,5 Jahre"
+            ],
+            [
+              "Einstrahlung",
+              "0,002-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Sternnächster und fernster Punkt",
+          "daten": [
+            [
+              "Perihel",
+              "0,88 AE"
+            ],
+            [
+              "Aphel",
+              "34,32 AE"
+            ]
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Tränenkomet auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Tränenkomet",
+          "text": [
+            "Ein periodischer Komet mit türkisblauem Schweifbogen, der alle 82 Jahre wiederkehrt. In alten Narethi-Archiven gilt er als „Träne, die heilt“ – seine Wiederkehr wurde mit großen Heilfesten verbunden.",
+            "Tränenkomet umkreist Saelon in 17,6 AE Abstand und braucht für einen Umlauf 81,5 Jahre."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Komet"
+            ],
+            [
+              "Sternsystem",
+              "Saelon-System"
+            ],
+            [
+              "Zentralkörper",
+              "Saelon"
+            ],
+            [
+              "Große Halbachse",
+              "17,6 AE"
+            ],
+            [
+              "Umlaufzeit",
+              "81,5 Jahre"
+            ],
+            [
+              "Durchmesser",
+              "10 km"
+            ],
+            [
+              "Masse",
+              "3,14 · 10^14 kg"
+            ],
+            [
+              "Schwerkraft",
+              "0,08 cm/s²"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -217 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Nalvyr",
+          "text": [
+            "Das Saelon-System ist die Heimat der Regeneranten: Ihr Planet Nalvyr umkreist Saelon."
+          ],
+          "verweise": [
+            [
+              "Nalvyr",
+              "inhalte/himmelskoerper/planeten/details/nalvyr/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Regeneranten",
+              "inhalte/spezies/Biologische Spezies/Regeneranten/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Tränenkomet im Saelon-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Saelon"
+            ],
+            [
+              "Große Halbachse",
+              "17,6 AE (2.633 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,95"
+            ],
+            [
+              "Bahnneigung",
+              "22°"
+            ],
+            [
+              "Umlaufzeit",
+              "81,5 Jahre"
+            ],
+            [
+              "Einstrahlung",
+              "0,002-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Saelon · Stern",
+              "Orangefarbener Zwerg (K2 V)"
+            ],
+            [
+              "Saelon B · Begleitstern in 180 AE",
+              "Weißer Zwerg"
+            ],
+            [
+              "Saelon I · 0,13 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Saelon II · 0,47 AE",
+              "Ozeanplanet"
+            ],
+            [
+              "Nalvyr · 0,76 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Saelon IVa · 1,32 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Kerythra · 2,68 AE",
+              "Zwergplanet"
+            ],
+            [
+              "Saelon V · 5,4 AE",
+              "Gasriese"
+            ],
+            [
+              "Saelon VI · 16 AE",
+              "Eisriese"
+            ],
+            [
+              "Saumgürtel · 2,3–3,1 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Weißschleier · 30–42 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Saelon",
+              "inhalte/himmelskoerper/sterne/details/saelon/hauptseite/index.html"
+            ],
+            [
+              "Saelon B",
+              "inhalte/himmelskoerper/sterne/details/saelon-b/hauptseite/index.html"
+            ],
+            [
+              "Saelon I",
+              "inhalte/himmelskoerper/planeten/details/saelon-i/hauptseite/index.html"
+            ],
+            [
+              "Saelon II",
+              "inhalte/himmelskoerper/planeten/details/saelon-ii/hauptseite/index.html"
+            ],
+            [
+              "Nalvyr",
+              "inhalte/himmelskoerper/planeten/details/nalvyr/hauptseite/index.html"
+            ],
+            [
+              "Saelon IVa",
+              "inhalte/himmelskoerper/planeten/details/saelon-iva/hauptseite/index.html"
+            ],
+            [
+              "Kerythra",
+              "inhalte/himmelskoerper/zwergplaneten/details/kerythra/hauptseite/index.html"
+            ],
+            [
+              "Saelon V",
+              "inhalte/himmelskoerper/planeten/details/saelon-v/hauptseite/index.html"
+            ],
+            [
+              "Saelon VI",
+              "inhalte/himmelskoerper/planeten/details/saelon-vi/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Tränenkomet.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "5 km"
+            ],
+            [
+              "Masse",
+              "3,14 · 10^14 kg"
+            ],
+            [
+              "Mittlere Dichte",
+              "0,6 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "0 m/s² (0 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "0 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Tränenkomet.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Tränenkomet stammt aus den kalten Außenbereichen des Saelon-Systems und wurde auf seine heutige, langgestreckte Bahn gelenkt."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Tränenkomet.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Was steckt hinter den Besonderheiten von Tränenkomet?",
+            "Woher stammt der Komet genau?",
+            "Wie lange übersteht sein Kern noch die Annäherungen an den Stern?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Tränenkomet ist mit allen Bahndaten im Saelon-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=nalvyr-stern&objekt=nalvyr-heilerkomet"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Tränenkomet.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Als Anomalie in der Sternenkarte verzeichnet"
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Tränenkomet.",
+      "abschnitte": [
+        {
+          "titel": "Tränenkomet – Archivbild",
+          "bild": true,
+          "bildtext": "Tränenkomet"
+        }
+      ]
+    }
+  }
+}

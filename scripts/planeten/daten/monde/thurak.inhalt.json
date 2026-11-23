@@ -1,0 +1,526 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Thurak",
+  "genitiv": "von Thurak",
+  "dossierName": "Thurak-Dossier",
+  "klasse": "Mond",
+  "intro": "Thurak ist der innere Mond Kharuuns. Er erzeugt die stärksten Gezeiten, hebt die Kruste um bis zu 30 Meter und ist selbst durch Gezeitenreibung vulkanisch aktiv. Thurak umkreist Kharuun in 3,6 Tage.",
+  "globusDaten": {
+    "planet": "stumpfer-vulkanmond-im-schwarzen-all",
+    "klasse": "Gestein",
+    "radius": 950000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=kharuun-stern&objekt=kharuun-thurak",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-E57AB4BC5E"
+    ],
+    [
+      "Typ",
+      "Mond"
+    ],
+    [
+      "Sternsystem",
+      "Kharuun-System"
+    ],
+    [
+      "Zentralkörper",
+      "Kharuun"
+    ],
+    [
+      "Große Halbachse",
+      "114.082 km"
+    ],
+    [
+      "Umlaufzeit",
+      "3,6 Tage"
+    ],
+    [
+      "Durchmesser",
+      "1.900 km"
+    ],
+    [
+      "Masse",
+      "0,976 Mondmassen"
+    ],
+    [
+      "Schwerkraft",
+      "0,54 g"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. 60 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Kharuun-System"
+    ],
+    [
+      "Zentralstern",
+      "Ushara",
+      "inhalte/himmelskoerper/sterne/details/ushara/hauptseite/index.html"
+    ],
+    [
+      "Umläuft",
+      "Kharuun",
+      "inhalte/himmelskoerper/planeten/details/kharuun/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "114.082 km"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Thurak im Kharuun-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=kharuun-stern&objekt=kharuun-thurak",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Ushara",
+      "href": "inhalte/himmelskoerper/sterne/details/ushara/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◍",
+      "art": "Mutterplanet",
+      "titel": "Kharuun",
+      "href": "inhalte/himmelskoerper/planeten/details/kharuun/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Pyronoiden",
+      "titel": "Kharuun",
+      "href": "inhalte/himmelskoerper/planeten/details/kharuun/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Pyronoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Pyronoiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Kharuun-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=kharuun-stern&objekt=kharuun-thurak"
+    },
+    {
+      "titel": "Speziesdossier Pyronoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Pyronoiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#0b0704",
+      "tiefe": "#170f08",
+      "akzent": "#e3b488",
+      "sand": "#e5b384",
+      "moos": "#bfa968",
+      "ozean": "#99926c",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#5f3f20"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Astronomie"
+      ],
+      [
+        "Planet",
+        "Mutterplanet"
+      ],
+      [
+        "Kräfte",
+        "Gezeiten"
+      ],
+      [
+        "Tiefe",
+        "Geologie"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Mutterplanet": {
+      "gruppe": "Wissenschaft",
+      "icon": "◐",
+      "intro": "Mutterplanet von Thurak.",
+      "abschnitte": [
+        {
+          "titel": "Kharuun",
+          "text": [
+            "Kharuun ist die vulkanisch hochaktive Heimatwelt der Pyronoiden. Er liegt innerhalb der inneren Grenze der habitablen Zone; eine dichte Kohlendioxid-Schwefel-Atmosphäre und starke innere Wärme machen ihn zur Glutwelt."
+          ],
+          "daten": [
+            [
+              "Typ",
+              "Gesteinsplanet"
+            ],
+            [
+              "Durchmesser",
+              "14.988 km"
+            ],
+            [
+              "Abstand des Mondes",
+              "114.082 km (15,2 Planetenradien)"
+            ]
+          ],
+          "verweise": [
+            [
+              "Kharuun",
+              "inhalte/himmelskoerper/planeten/details/kharuun/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Weitere Monde von Kharuun",
+          "liste": [
+            "Oskil – Umlauf in 10,8 Tage"
+          ],
+          "verweise": [
+            [
+              "Oskil",
+              "inhalte/himmelskoerper/monde/details/oskil/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Gezeiten": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gezeiten von Thurak.",
+      "abschnitte": [
+        {
+          "titel": "Gezeitenkräfte",
+          "text": [
+            "Auf seiner Bahn in 114.082 km Abstand wirken starke Gezeitenkräfte von Kharuun auf Thurak."
+          ]
+        }
+      ]
+    },
+    "Gebundene Rotation": {
+      "gruppe": "Wissenschaft",
+      "icon": "↻",
+      "intro": "Gebundene Rotation von Thurak.",
+      "abschnitte": [
+        {
+          "titel": "Rotation",
+          "text": [
+            "Thurak wendet Kharuun vermutlich stets dieselbe Seite zu: Ein Tag dauert so lange wie ein Umlauf – 3,6 Tage."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Thurak auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Thurak",
+          "text": [
+            "Thurak ist der innere Mond Kharuuns. Er erzeugt die stärksten Gezeiten, hebt die Kruste um bis zu 30 Meter und ist selbst durch Gezeitenreibung vulkanisch aktiv.",
+            "Thurak umkreist Kharuun in 3,6 Tage."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Mond"
+            ],
+            [
+              "Sternsystem",
+              "Kharuun-System"
+            ],
+            [
+              "Zentralkörper",
+              "Kharuun"
+            ],
+            [
+              "Große Halbachse",
+              "114.082 km"
+            ],
+            [
+              "Umlaufzeit",
+              "3,6 Tage"
+            ],
+            [
+              "Durchmesser",
+              "1.900 km"
+            ],
+            [
+              "Masse",
+              "0,976 Mondmassen"
+            ],
+            [
+              "Schwerkraft",
+              "0,54 g"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. 60 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Kharuun",
+          "text": [
+            "Das Kharuun-System ist die Heimat der Pyronoiden: Ihr Planet Kharuun umkreist Ushara, und Thurak ist einer seiner Monde."
+          ],
+          "verweise": [
+            [
+              "Kharuun",
+              "inhalte/himmelskoerper/planeten/details/kharuun/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Pyronoiden",
+              "inhalte/spezies/Biologische Spezies/Pyronoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Thurak im Kharuun-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Kharuun"
+            ],
+            [
+              "Große Halbachse",
+              "114.082 km"
+            ],
+            [
+              "Exzentrizität",
+              "0,004"
+            ],
+            [
+              "Bahnneigung",
+              "0,4°"
+            ],
+            [
+              "Umlaufzeit",
+              "3,6 Tage"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Ushara · Stern",
+              "Orangefarbener Zwerg (K3 V)"
+            ],
+            [
+              "Ushara I · 0,02 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Kharuun · 0,36 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Ushara III · 0,57 AE",
+              "Gasriese"
+            ],
+            [
+              "Ushara IV · 4,8 AE",
+              "Eisriese"
+            ],
+            [
+              "Schlackengürtel · 1,3–2,1 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 30–42 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Ushara",
+              "inhalte/himmelskoerper/sterne/details/ushara/hauptseite/index.html"
+            ],
+            [
+              "Ushara I",
+              "inhalte/himmelskoerper/planeten/details/ushara-i/hauptseite/index.html"
+            ],
+            [
+              "Kharuun",
+              "inhalte/himmelskoerper/planeten/details/kharuun/hauptseite/index.html"
+            ],
+            [
+              "Ushara III",
+              "inhalte/himmelskoerper/planeten/details/ushara-iii/hauptseite/index.html"
+            ],
+            [
+              "Ushara IV",
+              "inhalte/himmelskoerper/planeten/details/ushara-iv/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Thurak.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "950 km"
+            ],
+            [
+              "Masse",
+              "0,976 Mondmassen"
+            ],
+            [
+              "Mittlere Dichte",
+              "19,96 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "5,29 m/s² (0,54 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "3,17 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Thurak.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Thurak ist geologisch weitgehend erstarrt; Einschläge haben seine Oberfläche geformt."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Thurak.",
+      "abschnitte": [
+        {
+          "titel": "Gashülle",
+          "text": [
+            "Thurak besitzt keine nennenswerte Atmosphäre – dafür ist die Schwerkraft zu gering."
+          ]
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Thurak.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 0,36 AE Abstand zu Ushara liegt die Gleichgewichtstemperatur von Thurak bei rund 60 °C – heiß."
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Thurak.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Thurak entstand zusammen mit dem Kharuun-System vor rund 5,1 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Thurak.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Ist der Mond eingefangen oder mit seinem Planeten entstanden?",
+            "Welche Spuren tragen seine ältesten Krater?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Thurak ist mit allen Bahndaten im Kharuun-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=kharuun-stern&objekt=kharuun-thurak"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Thurak.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Größter Mond von Kharuun"
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Thurak.",
+      "abschnitte": [
+        {
+          "titel": "Thurak – Archivbild",
+          "bild": true,
+          "bildtext": "Thurak"
+        }
+      ]
+    }
+  }
+}

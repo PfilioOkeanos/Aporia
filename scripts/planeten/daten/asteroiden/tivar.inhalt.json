@@ -1,0 +1,498 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Tivar",
+  "genitiv": "von Tivar",
+  "dossierName": "Tivar-Dossier",
+  "klasse": "Asteroid",
+  "intro": "Tivar ist ein kleiner Trojaner, der Seyrath am vorauseilenden Lagrange-Punkt L4 begleitet. Sein glasig aufgeschmolzenes Gestein stammt vermutlich aus einem frühen Einschlag auf Seyrath selbst; chronoidische Forscher nutzen ihn als ungestörte Messplattform. Tivar umkreist Kelira in 0,66 AE Abstand und braucht für einen Umlauf 216,3 Tage.",
+  "globusDaten": {
+    "planet": "glasiger-impaktasteroid-im-tiefen-all",
+    "klasse": "Gestein",
+    "radius": 3000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=seyrath-stern&objekt=seyrath-tivar",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-FFE7D3ECA1"
+    ],
+    [
+      "Typ",
+      "Asteroid"
+    ],
+    [
+      "Sternsystem",
+      "Kelira-System"
+    ],
+    [
+      "Zentralkörper",
+      "Kelira"
+    ],
+    [
+      "Große Halbachse",
+      "0,66 AE"
+    ],
+    [
+      "Umlaufzeit",
+      "216,3 Tage"
+    ],
+    [
+      "Durchmesser",
+      "6 km"
+    ],
+    [
+      "Masse",
+      "3,05 · 10^14 kg"
+    ],
+    [
+      "Schwerkraft",
+      "0,23 cm/s²"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -9 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Kelira-System"
+    ],
+    [
+      "Zentralstern",
+      "Kelira",
+      "inhalte/himmelskoerper/sterne/details/kelira/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "0,66 AE"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Tivar im Kelira-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=seyrath-stern&objekt=seyrath-tivar",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Kelira",
+      "href": "inhalte/himmelskoerper/sterne/details/kelira/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Chronoiden",
+      "titel": "Seyrath",
+      "href": "inhalte/himmelskoerper/planeten/details/seyrath/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Chronoiden",
+      "href": "inhalte/spezies/Mentale Spezies/Chronoiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Kelira-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=seyrath-stern&objekt=seyrath-tivar"
+    },
+    {
+      "titel": "Speziesdossier Chronoiden",
+      "href": "inhalte/spezies/Mentale Spezies/Chronoiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#080808",
+      "tiefe": "#111313",
+      "akzent": "#bdc7c7",
+      "sand": "#c2c3ad",
+      "moos": "#9cbe9e",
+      "ozean": "#7ca5ba",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#454c4c"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Bahn"
+      ],
+      [
+        "Material",
+        "Zusammensetzung"
+      ],
+      [
+        "Zeit",
+        "Herkunft"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Zusammensetzung": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Zusammensetzung von Tivar.",
+      "abschnitte": [
+        {
+          "titel": "Material",
+          "liste": [
+            "Silikate",
+            "Eisen und Nickel",
+            "Seltene Metalle"
+          ],
+          "schichten": [
+            [
+              "Regolith",
+              "Staub und Gesteinsschutt"
+            ],
+            [
+              "Trümmerkörper",
+              "Lose zusammengehaltene Gesteinsbrocken"
+            ]
+          ]
+        }
+      ]
+    },
+    "Bahn": {
+      "gruppe": "Wissenschaft",
+      "icon": "◌",
+      "intro": "Bahn von Tivar.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Kelira"
+            ],
+            [
+              "Große Halbachse",
+              "0,66 AE (98,7 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,05"
+            ],
+            [
+              "Bahnneigung",
+              "6°"
+            ],
+            [
+              "Umlaufzeit",
+              "216,3 Tage"
+            ],
+            [
+              "Einstrahlung",
+              "0,895-fach der Erde"
+            ]
+          ]
+        }
+      ]
+    },
+    "Herkunft": {
+      "gruppe": "Weitere",
+      "icon": "⧗",
+      "intro": "Herkunft von Tivar.",
+      "abschnitte": [
+        {
+          "titel": "Herkunft",
+          "text": [
+            "Tivar ist ein Überrest aus der Entstehungszeit des Kelira-Systems."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Tivar auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Tivar",
+          "text": [
+            "Tivar ist ein kleiner Trojaner, der Seyrath am vorauseilenden Lagrange-Punkt L4 begleitet. Sein glasig aufgeschmolzenes Gestein stammt vermutlich aus einem frühen Einschlag auf Seyrath selbst; chronoidische Forscher nutzen ihn als ungestörte Messplattform.",
+            "Tivar umkreist Kelira in 0,66 AE Abstand und braucht für einen Umlauf 216,3 Tage."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Asteroid"
+            ],
+            [
+              "Sternsystem",
+              "Kelira-System"
+            ],
+            [
+              "Zentralkörper",
+              "Kelira"
+            ],
+            [
+              "Große Halbachse",
+              "0,66 AE"
+            ],
+            [
+              "Umlaufzeit",
+              "216,3 Tage"
+            ],
+            [
+              "Durchmesser",
+              "6 km"
+            ],
+            [
+              "Masse",
+              "3,05 · 10^14 kg"
+            ],
+            [
+              "Schwerkraft",
+              "0,23 cm/s²"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -9 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Seyrath",
+          "text": [
+            "Das Kelira-System ist die Heimat der Chronoiden: Ihr Planet Seyrath umkreist Kelira."
+          ],
+          "verweise": [
+            [
+              "Seyrath",
+              "inhalte/himmelskoerper/planeten/details/seyrath/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Chronoiden",
+              "inhalte/spezies/Mentale Spezies/Chronoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Tivar im Kelira-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Kelira"
+            ],
+            [
+              "Große Halbachse",
+              "0,66 AE (98,7 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,05"
+            ],
+            [
+              "Bahnneigung",
+              "6°"
+            ],
+            [
+              "Umlaufzeit",
+              "216,3 Tage"
+            ],
+            [
+              "Einstrahlung",
+              "0,895-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Kelira · Stern",
+              "Orangefarbener Zwerg (K3 V)"
+            ],
+            [
+              "Arun · 0,29 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Velth · 0,38 AE",
+              "Mini-Neptun"
+            ],
+            [
+              "Isaru · 0,5 AE",
+              "Ozeanplanet"
+            ],
+            [
+              "Seyrath · 0,66 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Doran · 0,86 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Ombrel · 1,05 AE",
+              "Mini-Neptun"
+            ],
+            [
+              "Halvek · 1,27 AE",
+              "Eisplanet"
+            ],
+            [
+              "Keliras Schleier · 22–42 AE",
+              "Trümmergürtel"
+            ]
+          ],
+          "verweise": [
+            [
+              "Kelira",
+              "inhalte/himmelskoerper/sterne/details/kelira/hauptseite/index.html"
+            ],
+            [
+              "Arun",
+              "inhalte/himmelskoerper/planeten/details/arun/hauptseite/index.html"
+            ],
+            [
+              "Velth",
+              "inhalte/himmelskoerper/planeten/details/velth/hauptseite/index.html"
+            ],
+            [
+              "Isaru",
+              "inhalte/himmelskoerper/planeten/details/isaru/hauptseite/index.html"
+            ],
+            [
+              "Seyrath",
+              "inhalte/himmelskoerper/planeten/details/seyrath/hauptseite/index.html"
+            ],
+            [
+              "Doran",
+              "inhalte/himmelskoerper/planeten/details/doran/hauptseite/index.html"
+            ],
+            [
+              "Ombrel",
+              "inhalte/himmelskoerper/planeten/details/ombrel/hauptseite/index.html"
+            ],
+            [
+              "Halvek",
+              "inhalte/himmelskoerper/planeten/details/halvek/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Tivar.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "3 km"
+            ],
+            [
+              "Masse",
+              "3,05 · 10^14 kg"
+            ],
+            [
+              "Mittlere Dichte",
+              "2,7 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "0 m/s² (0 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "0 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Tivar.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Tivar besteht aus Material, das sich bei der Entstehung des Kelira-Systems nicht zu einem Planeten vereinte."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Tivar.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Ist der Körper ein Bruchstück eines größeren Körpers?",
+            "Welche Rohstoffe birgt er?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Tivar ist mit allen Bahndaten im Kelira-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=seyrath-stern&objekt=seyrath-tivar"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Tivar.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Tivar ist ein kleiner Trojaner, der Seyrath am vorauseilenden Lagrange-Punkt L4 begleitet. Sein glasig aufgeschmolzenes Gestein stammt vermutlich aus einem frühen Einschlag auf Seyrath selbst; chronoidische Forscher nutzen ihn als ungestörte Messplattform."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Tivar.",
+      "abschnitte": [
+        {
+          "titel": "Tivar – Archivbild",
+          "bild": true,
+          "bildtext": "Tivar"
+        }
+      ]
+    }
+  }
+}

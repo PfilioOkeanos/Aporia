@@ -1,0 +1,602 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Vathel",
+  "genitiv": "von Vathel",
+  "dossierName": "Vathel-Dossier",
+  "klasse": "Gesteins-Eis-Mond",
+  "intro": "Dichter Gesteins-Eis-Mond Kelomars mit alten Einschlagbecken.",
+  "globusDaten": {
+    "planet": "vathel",
+    "klasse": "Eis",
+    "radius": 860000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=rhaelis-stern&objekt=rhaelis-vathel",
+  "grunddaten": [
+    [
+      "System-ID",
+      "rhaelis-vathel"
+    ],
+    [
+      "Archiv-ID",
+      "AP-RHAELIS-VATHEL"
+    ],
+    [
+      "Typ",
+      "Gesteins-Eis-Mond"
+    ],
+    [
+      "Sternsystem",
+      "Rhaelis-System"
+    ],
+    [
+      "Zentralkörper",
+      "Kelomar"
+    ],
+    [
+      "Große Halbachse",
+      "317.000 km"
+    ],
+    [
+      "Umlaufzeit",
+      "2,3 Tage"
+    ],
+    [
+      "Durchmesser",
+      "1.720 km"
+    ],
+    [
+      "Masse",
+      "0,089 Mondmassen"
+    ],
+    [
+      "Schwerkraft",
+      "0,06 g"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -176 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Rhaelis-System"
+    ],
+    [
+      "Zentralstern",
+      "Rhaelis",
+      "inhalte/himmelskoerper/sterne/details/rhaelis/hauptseite/index.html"
+    ],
+    [
+      "Umläuft",
+      "Kelomar",
+      "inhalte/himmelskoerper/planeten/details/kelomar/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "317.000 km"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Vathel im Rhaelis-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=rhaelis-stern&objekt=rhaelis-vathel",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Rhaelis",
+      "href": "inhalte/himmelskoerper/sterne/details/rhaelis/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◍",
+      "art": "Mutterplanet",
+      "titel": "Kelomar",
+      "href": "inhalte/himmelskoerper/planeten/details/kelomar/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Memetiden",
+      "titel": "Tavoryn",
+      "href": "inhalte/himmelskoerper/planeten/details/tavoryn/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Memetiden",
+      "href": "inhalte/spezies/Mentale Spezies/Memetiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Rhaelis-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=rhaelis-stern&objekt=rhaelis-vathel"
+    },
+    {
+      "titel": "Speziesdossier Memetiden",
+      "href": "inhalte/spezies/Mentale Spezies/Memetiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#070808",
+      "tiefe": "#101213",
+      "akzent": "#b6c2c7",
+      "sand": "#bcbfad",
+      "moos": "#95b89e",
+      "ozean": "#78a0ba",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#40484c"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Astronomie"
+      ],
+      [
+        "Planet",
+        "Mutterplanet"
+      ],
+      [
+        "Kräfte",
+        "Gezeiten"
+      ],
+      [
+        "Tiefe",
+        "Geologie"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Mutterplanet": {
+      "gruppe": "Wissenschaft",
+      "icon": "◐",
+      "intro": "Mutterplanet von Vathel.",
+      "abschnitte": [
+        {
+          "titel": "Kelomar",
+          "text": [
+            "Kühler Gasplanet mit Wasserstoff-Helium-Atmosphäre, ausgeprägten Wolkenschichten und großräumigen Sturmzonen."
+          ],
+          "daten": [
+            [
+              "Typ",
+              "Äußerer Gasriese"
+            ],
+            [
+              "Durchmesser",
+              "100.000 km"
+            ],
+            [
+              "Abstand des Mondes",
+              "317.000 km (6,3 Planetenradien)"
+            ]
+          ],
+          "verweise": [
+            [
+              "Kelomar",
+              "inhalte/himmelskoerper/planeten/details/kelomar/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Weitere Monde von Kelomar",
+          "liste": [
+            "Neris – Umlauf in 26,1 Stunden",
+            "Orr – Umlauf in 4,6 Tage",
+            "Myr – Umlauf in 9,1 Tage"
+          ],
+          "verweise": [
+            [
+              "Neris",
+              "inhalte/himmelskoerper/monde/details/neris/hauptseite/index.html"
+            ],
+            [
+              "Orr",
+              "inhalte/himmelskoerper/monde/details/orr/hauptseite/index.html"
+            ],
+            [
+              "Myr",
+              "inhalte/himmelskoerper/monde/details/myr/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Gezeiten": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gezeiten von Vathel.",
+      "abschnitte": [
+        {
+          "titel": "Gezeitenkräfte",
+          "text": [
+            "Auf seiner Bahn in 317.000 km Abstand wirken starke Gezeitenkräfte von Kelomar auf Vathel. Die leicht exzentrische Bahn (e = 0,021) knetet das Innere bei jedem Umlauf."
+          ]
+        }
+      ]
+    },
+    "Gebundene Rotation": {
+      "gruppe": "Wissenschaft",
+      "icon": "↻",
+      "intro": "Gebundene Rotation von Vathel.",
+      "abschnitte": [
+        {
+          "titel": "Rotation",
+          "text": [
+            "Vathel wendet Kelomar vermutlich stets dieselbe Seite zu: Ein Tag dauert so lange wie ein Umlauf – 2,3 Tage."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Vathel auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Vathel",
+          "text": [
+            "Dichter Gesteins-Eis-Mond Kelomars mit alten Einschlagbecken.",
+            "Vathel umkreist Kelomar in 2,3 Tage."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Gesteins-Eis-Mond"
+            ],
+            [
+              "Sternsystem",
+              "Rhaelis-System"
+            ],
+            [
+              "Zentralkörper",
+              "Kelomar"
+            ],
+            [
+              "Große Halbachse",
+              "317.000 km"
+            ],
+            [
+              "Umlaufzeit",
+              "2,3 Tage"
+            ],
+            [
+              "Durchmesser",
+              "1.720 km"
+            ],
+            [
+              "Masse",
+              "0,089 Mondmassen"
+            ],
+            [
+              "Schwerkraft",
+              "0,06 g"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -176 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Tavoryn",
+          "text": [
+            "Das Rhaelis-System ist die Heimat der Memetiden: Ihr Planet Tavoryn umkreist Rhaelis."
+          ],
+          "verweise": [
+            [
+              "Tavoryn",
+              "inhalte/himmelskoerper/planeten/details/tavoryn/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Memetiden",
+              "inhalte/spezies/Mentale Spezies/Memetiden/hauptseite/Spezies.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Eintrag im astronomischen Dossier",
+          "daten": [
+            [
+              "Vathel",
+              "Ein dichter Gesteins-Eis-Mond mit alten Einschlagbecken."
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Vathel im Rhaelis-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Kelomar"
+            ],
+            [
+              "Große Halbachse",
+              "317.000 km"
+            ],
+            [
+              "Exzentrizität",
+              "0,021"
+            ],
+            [
+              "Bahnneigung",
+              "0°"
+            ],
+            [
+              "Umlaufzeit",
+              "2,3 Tage"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Rhaelis · Stern",
+              "Orangefarbener Hauptreihenstern (K1 V)"
+            ],
+            [
+              "Kesvar · 0,18 AE",
+              "Heißer Gesteinsplanet"
+            ],
+            [
+              "Draoven · 0,33 AE",
+              "Heißer trockener Gesteinsplanet"
+            ],
+            [
+              "Tavoryn · 0,65 AE",
+              "Gemäßigter Ozean- und Gesteinsplanet"
+            ],
+            [
+              "Ossaryn · 1,2 AE",
+              "Kalter Gesteinsplanet"
+            ],
+            [
+              "Vaelkor · 2,45 AE",
+              "Gasriese"
+            ],
+            [
+              "Kelomar · 4,8 AE",
+              "Äußerer Gasriese"
+            ],
+            [
+              "Ithrenn · 9,2 AE",
+              "Eisriese"
+            ],
+            [
+              "Therys · 19 AE",
+              "Eisreicher Kleinkörper"
+            ],
+            [
+              "Veskar-9 · 31 AE",
+              "Dunkler Kleinkörper"
+            ],
+            [
+              "Saelith-Gürtel · 1,7–2,1 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußere Kleinkörperregion von Rhaelis · 12–43 AE",
+              "Eisreicher Kleinkörpergürtel"
+            ],
+            [
+              "Ferne Kometenpopulation von Rhaelis · 65–240 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Rhaelis",
+              "inhalte/himmelskoerper/sterne/details/rhaelis/hauptseite/index.html"
+            ],
+            [
+              "Kesvar",
+              "inhalte/himmelskoerper/planeten/details/kesvar/hauptseite/index.html"
+            ],
+            [
+              "Draoven",
+              "inhalte/himmelskoerper/planeten/details/draoven/hauptseite/index.html"
+            ],
+            [
+              "Tavoryn",
+              "inhalte/himmelskoerper/planeten/details/tavoryn/hauptseite/index.html"
+            ],
+            [
+              "Ossaryn",
+              "inhalte/himmelskoerper/planeten/details/ossaryn/hauptseite/index.html"
+            ],
+            [
+              "Vaelkor",
+              "inhalte/himmelskoerper/planeten/details/vaelkor/hauptseite/index.html"
+            ],
+            [
+              "Kelomar",
+              "inhalte/himmelskoerper/planeten/details/kelomar/hauptseite/index.html"
+            ],
+            [
+              "Ithrenn",
+              "inhalte/himmelskoerper/planeten/details/ithrenn/hauptseite/index.html"
+            ],
+            [
+              "Therys",
+              "inhalte/himmelskoerper/asteroiden/details/therys/hauptseite/index.html"
+            ],
+            [
+              "Veskar-9",
+              "inhalte/himmelskoerper/asteroiden/details/veskar-9/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Vathel.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "860 km"
+            ],
+            [
+              "Masse",
+              "0,089 Mondmassen"
+            ],
+            [
+              "Mittlere Dichte",
+              "2,47 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "0,59 m/s² (0,06 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "1,01 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Vathel.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Vathel ist geologisch weitgehend erstarrt; Einschläge haben seine Oberfläche geformt."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Vathel.",
+      "abschnitte": [
+        {
+          "titel": "Gashülle",
+          "text": [
+            "Vathel besitzt keine nennenswerte Atmosphäre – dafür ist die Schwerkraft zu gering."
+          ]
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Vathel.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 4,8 AE Abstand zu Rhaelis liegt die Gleichgewichtstemperatur von Vathel bei rund -176 °C – eisig kalt."
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Vathel.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Vathel entstand zusammen mit dem Rhaelis-System vor rund 6,2 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Vathel.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Ist der Mond eingefangen oder mit seinem Planeten entstanden?",
+            "Welche Spuren tragen seine ältesten Krater?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Vathel ist mit allen Bahndaten im Rhaelis-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=rhaelis-stern&objekt=rhaelis-vathel"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Vathel.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Dichter Gesteins-Eis-Mond Kelomars mit alten Einschlagbecken."
+          ]
+        },
+        {
+          "titel": "Verwandte Dossiers",
+          "verweise": [
+            [
+              "Rhaelis-System",
+              "inhalte/himmelskoerper/sternensysteme/details/rhaelis-system/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Vathel.",
+      "abschnitte": [
+        {
+          "titel": "Vathel",
+          "bild": true,
+          "bildtext": "Illustration aus dem APORIA-Bildarchiv"
+        }
+      ]
+    }
+  }
+}

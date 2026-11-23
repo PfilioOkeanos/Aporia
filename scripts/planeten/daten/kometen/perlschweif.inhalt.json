@@ -1,0 +1,519 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Perlschweif",
+  "genitiv": "von Perlschweif",
+  "dossierName": "Perlschweif-Dossier",
+  "klasse": "Komet",
+  "intro": "Ein wasserreicher Komet mit perlmuttfarben schimmerndem Staubschweif, der alle 58 Jahre das innere System durchquert. Perlschweif umkreist Celeun in 15 AE Abstand und braucht für einen Umlauf 59,6 Jahre.",
+  "globusDaten": {
+    "planet": "komet-mit-facherformigen-ausbruchen",
+    "klasse": "Eis",
+    "radius": 6000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=vessarin-stern&objekt=vessarin-perlschweif",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-483DAB6E1B"
+    ],
+    [
+      "Typ",
+      "Komet"
+    ],
+    [
+      "Sternsystem",
+      "Celeun-System"
+    ],
+    [
+      "Zentralkörper",
+      "Celeun"
+    ],
+    [
+      "Große Halbachse",
+      "15 AE"
+    ],
+    [
+      "Umlaufzeit",
+      "59,6 Jahre"
+    ],
+    [
+      "Durchmesser",
+      "12 km"
+    ],
+    [
+      "Masse",
+      "5,43 · 10^14 kg"
+    ],
+    [
+      "Schwerkraft",
+      "0,1 cm/s²"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -205 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Celeun-System"
+    ],
+    [
+      "Zentralstern",
+      "Celeun",
+      "inhalte/himmelskoerper/sterne/details/celeun/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "15 AE"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Perlschweif im Celeun-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=vessarin-stern&objekt=vessarin-perlschweif",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Celeun",
+      "href": "inhalte/himmelskoerper/sterne/details/celeun/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Thalassoiden",
+      "titel": "Vessarin",
+      "href": "inhalte/himmelskoerper/planeten/details/vessarin/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Thalassoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Thalassoiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Celeun-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=vessarin-stern&objekt=vessarin-perlschweif"
+    },
+    {
+      "titel": "Speziesdossier Thalassoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Thalassoiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#090b0c",
+      "tiefe": "#14181b",
+      "akzent": "#d1e8f8",
+      "sand": "#d4dfcd",
+      "moos": "#aee4c9",
+      "ozean": "#8bc8f7",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#53636e"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Umlaufbahn"
+      ],
+      [
+        "Hülle",
+        "Schweif"
+      ],
+      [
+        "Hülle",
+        "Koma"
+      ],
+      [
+        "Kern",
+        "Kern"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Kern": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Kern von Perlschweif.",
+      "abschnitte": [
+        {
+          "titel": "Kometenkern",
+          "text": [
+            "Der Kern von Perlschweif misst rund 12 km und besteht aus einem lockeren Gemenge aus Eis, Staub und Gestein."
+          ],
+          "schichten": [
+            [
+              "Staubkruste",
+              "Dunkle, kohlenstoffreiche Oberfläche"
+            ],
+            [
+              "Eis-Staub-Gemisch",
+              "Wassereis, Kohlendioxid und Staub"
+            ],
+            [
+              "Kern",
+              "Lockeres Eis-Gestein-Gemenge"
+            ]
+          ]
+        }
+      ]
+    },
+    "Koma": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Koma von Perlschweif.",
+      "abschnitte": [
+        {
+          "titel": "Koma",
+          "text": [
+            "Nähert sich Perlschweif dem Stern Celeun, verdampft Eis und bildet eine leuchtende Gashülle um den Kern."
+          ]
+        }
+      ]
+    },
+    "Schweif": {
+      "gruppe": "Natur",
+      "icon": "☄",
+      "intro": "Schweif von Perlschweif.",
+      "abschnitte": [
+        {
+          "titel": "Schweif",
+          "text": [
+            "Ein wasserreicher Komet mit perlmuttfarben schimmerndem Staubschweif, der alle 58 Jahre das innere System durchquert."
+          ]
+        }
+      ]
+    },
+    "Umlaufbahn": {
+      "gruppe": "Wissenschaft",
+      "icon": "◌",
+      "intro": "Umlaufbahn von Perlschweif.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Celeun"
+            ],
+            [
+              "Große Halbachse",
+              "15 AE (2.244 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,9"
+            ],
+            [
+              "Bahnneigung",
+              "22°"
+            ],
+            [
+              "Umlaufzeit",
+              "59,6 Jahre"
+            ],
+            [
+              "Einstrahlung",
+              "0,004-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Sternnächster und fernster Punkt",
+          "daten": [
+            [
+              "Perihel",
+              "1,5 AE"
+            ],
+            [
+              "Aphel",
+              "28,5 AE"
+            ]
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Perlschweif auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Perlschweif",
+          "text": [
+            "Ein wasserreicher Komet mit perlmuttfarben schimmerndem Staubschweif, der alle 58 Jahre das innere System durchquert.",
+            "Perlschweif umkreist Celeun in 15 AE Abstand und braucht für einen Umlauf 59,6 Jahre."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Komet"
+            ],
+            [
+              "Sternsystem",
+              "Celeun-System"
+            ],
+            [
+              "Zentralkörper",
+              "Celeun"
+            ],
+            [
+              "Große Halbachse",
+              "15 AE"
+            ],
+            [
+              "Umlaufzeit",
+              "59,6 Jahre"
+            ],
+            [
+              "Durchmesser",
+              "12 km"
+            ],
+            [
+              "Masse",
+              "5,43 · 10^14 kg"
+            ],
+            [
+              "Schwerkraft",
+              "0,1 cm/s²"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -205 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Vessarin",
+          "text": [
+            "Das Celeun-System ist die Heimat der Thalassoiden: Ihr Planet Vessarin umkreist Celeun."
+          ],
+          "verweise": [
+            [
+              "Vessarin",
+              "inhalte/himmelskoerper/planeten/details/vessarin/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Thalassoiden",
+              "inhalte/spezies/Biologische Spezies/Thalassoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Perlschweif im Celeun-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Celeun"
+            ],
+            [
+              "Große Halbachse",
+              "15 AE (2.244 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,9"
+            ],
+            [
+              "Bahnneigung",
+              "22°"
+            ],
+            [
+              "Umlaufzeit",
+              "59,6 Jahre"
+            ],
+            [
+              "Einstrahlung",
+              "0,004-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Celeun · Stern",
+              "Gelber Zwerg (G6 V)"
+            ],
+            [
+              "Celeun I · 0,42 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Vessarin · 0,93 AE",
+              "Ozeanplanet"
+            ],
+            [
+              "Celeun III · 1,7 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Celeun IV · 6 AE",
+              "Gasriese"
+            ],
+            [
+              "Celeun V · 16 AE",
+              "Eisriese"
+            ],
+            [
+              "Perlgürtel · 2,5–3,3 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 40–56 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Celeun",
+              "inhalte/himmelskoerper/sterne/details/celeun/hauptseite/index.html"
+            ],
+            [
+              "Celeun I",
+              "inhalte/himmelskoerper/planeten/details/celeun-i/hauptseite/index.html"
+            ],
+            [
+              "Vessarin",
+              "inhalte/himmelskoerper/planeten/details/vessarin/hauptseite/index.html"
+            ],
+            [
+              "Celeun III",
+              "inhalte/himmelskoerper/planeten/details/celeun-iii/hauptseite/index.html"
+            ],
+            [
+              "Celeun IV",
+              "inhalte/himmelskoerper/planeten/details/celeun-iv/hauptseite/index.html"
+            ],
+            [
+              "Celeun V",
+              "inhalte/himmelskoerper/planeten/details/celeun-v/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Perlschweif.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "6 km"
+            ],
+            [
+              "Masse",
+              "5,43 · 10^14 kg"
+            ],
+            [
+              "Mittlere Dichte",
+              "0,6 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "0 m/s² (0 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "0 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Perlschweif.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Perlschweif stammt aus den kalten Außenbereichen des Celeun-Systems und wurde auf seine heutige, langgestreckte Bahn gelenkt."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Perlschweif.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Was steckt hinter den Besonderheiten von Perlschweif?",
+            "Woher stammt der Komet genau?",
+            "Wie lange übersteht sein Kern noch die Annäherungen an den Stern?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Perlschweif ist mit allen Bahndaten im Celeun-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=vessarin-stern&objekt=vessarin-perlschweif"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Perlschweif.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Als Anomalie in der Sternenkarte verzeichnet"
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Perlschweif.",
+      "abschnitte": [
+        {
+          "titel": "Perlschweif – Archivbild",
+          "bild": true,
+          "bildtext": "Perlschweif"
+        }
+      ]
+    }
+  }
+}

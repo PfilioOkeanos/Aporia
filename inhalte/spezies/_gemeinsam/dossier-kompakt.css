@@ -1,0 +1,38 @@
+/* Ein Lesefluss für die älteren Dossiers. Farben, Typografie und Medien kommen aus der jeweiligen Speziesseite. */
+main[data-kompaktdossier] :is(.shell,.wf-content,.myko-content,.techno-content) {
+    box-sizing:border-box; min-width:0; width:100%; max-width:none; margin-inline:0;
+}
+main[data-kompaktdossier] :is(.myko-layout,.myko-content .topic-layout,.biology-layout,.wf-bio-layout,.techno-topic),
+main[data-kompaktdossier].ha-layout {
+    display:flex; flex-direction:column; align-items:stretch; gap:clamp(.5rem,1vw,.95rem);
+}
+main[data-kompaktdossier] :is(.myko-index,.biology-index,.ha-nav,.wf-bio-nav,.techno-chapters) {
+    position:static; display:block; width:100%; max-height:none; margin:0; padding:0; box-sizing:border-box;
+}
+.dossier-kapitelindex > summary {cursor:pointer;padding:.55rem .85rem;font-weight:600;}
+.dossier-kapitelindex > div {display:flex;flex-wrap:wrap;align-items:center;gap:.4rem 1rem;padding:.25rem .85rem .75rem;}
+main[data-kompaktdossier] :is(.myko-facts,.biology-facts,.ha-side,.wf-bio-facts) {
+    position:static; width:100%; min-width:0; max-height:none; margin:0; box-sizing:border-box;
+}
+main[data-kompaktdossier] :is(.myko-content .grid,.ha-grid,.techno-topic-grid,.wf-bio-detail-grid,.biology-overview,.human-grid,.techno-cards,.wf-grid) {
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,21rem),1fr));grid-auto-rows:auto;align-items:start;gap:.7rem;
+}
+main[data-kompaktdossier] :is(.human-grid,.wf-grid,.techno-cards,.ha-grid,.wf-bio-detail-grid,.biology-overview) > :has(> .dossier-infokarte:not([open])) {
+    grid-row:auto;grid-column:auto;min-height:0;height:auto;margin-block:0;
+}
+main[data-kompaktdossier] :is(.home-hero,.home-intro,.aero-hero,.dossier-titeltext) {min-height:0;}
+main.home-scene[data-kompaktdossier] .home-intro {display:block;width:100%;max-width:none;}
+main[data-kompaktdossier] .dossier-titeltext {padding-block:clamp(.65rem,1.4vw,1.25rem);}
+main[data-kompaktdossier] .dossier-infokarte {margin:0;min-width:0;}
+main[data-kompaktdossier] .dossier-infokarte > summary {line-height:1.35;}
+main[data-kompaktdossier] .dossier-infokarte[open] :is(.chapter-visual,.chapter-text) {min-width:0;}
+main[data-kompaktdossier] .myko-fact-grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,14rem),1fr));gap:.7rem;}
+main[data-kompaktdossier] :is(.myko-content .topic-aside,.myko-layout > .myko-facts) {margin:0;}
+@media(max-width:760px) {
+    main[data-kompaktdossier] :is(.techno-topic-overview,.wf-bio-lead,.feature,.topic-layout,.human-grid,.wf-grid,.techno-cards,.ha-grid,.wf-bio-detail-grid) {grid-template-columns:minmax(0,1fr);}
+}
+
+main[data-kompaktdossier] > .human-seitenkopf {display:flex;flex-direction:column;gap:0;}
+main[data-kompaktdossier] > .human-seitenkopf > nav.dossier-reiter {margin:0;}
+.waldfeen:has(main[data-kompaktdossier]) > .aporia-auto-page-frame {max-width:100%;box-sizing:border-box;overflow-x:clip;}
+main[data-kompaktdossier] .dossier-kapitelindex:not([open]) > :not(summary) {display:none;}

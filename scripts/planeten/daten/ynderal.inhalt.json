@@ -1,0 +1,696 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Ynderal",
+  "genitiv": "von Ynderal",
+  "dossierName": "Ynderal-Dossier",
+  "klasse": "Eisreicher Riesenplanet",
+  "intro": "Ynderal ist ein kalter, eisreicher Riesenplanet mit wasserstoffreicher Atmosphäre und einem Ringsystem. Ynderal umkreist Teryn in 5,9 AE Abstand und braucht für einen Umlauf 16,2 Jahre.",
+  "globusDaten": {
+    "planet": "ynderal",
+    "klasse": "Eisriese",
+    "radius": 31200000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=teryn-stern&objekt=teryn-ynderal",
+  "grunddaten": [
+    [
+      "System-ID",
+      "teryn-ynderal"
+    ],
+    [
+      "Archiv-ID",
+      "AP-TERYN-YNDERAL"
+    ],
+    [
+      "Typ",
+      "Eisreicher Riesenplanet"
+    ],
+    [
+      "Sternsystem",
+      "Teryn-System"
+    ],
+    [
+      "Zentralkörper",
+      "Teryn"
+    ],
+    [
+      "Große Halbachse",
+      "5,9 AE"
+    ],
+    [
+      "Umlaufzeit",
+      "16,2 Jahre"
+    ],
+    [
+      "Durchmesser",
+      "62.400 km"
+    ],
+    [
+      "Masse",
+      "31,8 Erdmassen"
+    ],
+    [
+      "Schwerkraft",
+      "1,33 g"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -201 °C"
+    ],
+    [
+      "Monde",
+      "3 (Veraq, Teshil, Narim)"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Teryn-System"
+    ],
+    [
+      "Zentralstern",
+      "Teryn",
+      "inhalte/himmelskoerper/sterne/details/teryn/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "5,9 AE"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Ynderal im Teryn-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=teryn-stern&objekt=teryn-ynderal",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Teryn",
+      "href": "inhalte/himmelskoerper/sterne/details/teryn/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Veraq",
+      "href": "inhalte/himmelskoerper/monde/details/veraq/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Teshil",
+      "href": "inhalte/himmelskoerper/monde/details/teshil/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Narim",
+      "href": "inhalte/himmelskoerper/monde/details/narim/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Solitiden",
+      "titel": "Iskara",
+      "href": "inhalte/himmelskoerper/planeten/details/iskara/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Solitiden",
+      "href": "inhalte/spezies/Mentale Spezies/Solitiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Teryn-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=teryn-stern&objekt=teryn-ynderal"
+    },
+    {
+      "titel": "Speziesdossier Solitiden",
+      "href": "inhalte/spezies/Mentale Spezies/Solitiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#06090a",
+      "tiefe": "#0d1317",
+      "akzent": "#a9cae1",
+      "sand": "#afc6be",
+      "moos": "#89c2b5",
+      "ozean": "#6ea9da",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#374e5e"
+    }
+  },
+  "kapitel": {
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Ynderal auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Ynderal",
+          "text": [
+            "Ynderal ist ein kalter, eisreicher Riesenplanet mit wasserstoffreicher Atmosphäre und einem Ringsystem.",
+            "Ynderal umkreist Teryn in 5,9 AE Abstand und braucht für einen Umlauf 16,2 Jahre."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Eisreicher Riesenplanet"
+            ],
+            [
+              "Sternsystem",
+              "Teryn-System"
+            ],
+            [
+              "Zentralkörper",
+              "Teryn"
+            ],
+            [
+              "Große Halbachse",
+              "5,9 AE"
+            ],
+            [
+              "Umlaufzeit",
+              "16,2 Jahre"
+            ],
+            [
+              "Durchmesser",
+              "62.400 km"
+            ],
+            [
+              "Masse",
+              "31,8 Erdmassen"
+            ],
+            [
+              "Schwerkraft",
+              "1,33 g"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -201 °C"
+            ],
+            [
+              "Monde",
+              "3 (Veraq, Teshil, Narim)"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Iskara",
+          "text": [
+            "Das Teryn-System ist die Heimat der Solitiden: Ihr Planet Iskara umkreist Teryn."
+          ],
+          "verweise": [
+            [
+              "Iskara",
+              "inhalte/himmelskoerper/planeten/details/iskara/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Solitiden",
+              "inhalte/spezies/Mentale Spezies/Solitiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Ynderal im Teryn-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Teryn"
+            ],
+            [
+              "Große Halbachse",
+              "5,9 AE (882,6 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,041"
+            ],
+            [
+              "Bahnneigung",
+              "2,7°"
+            ],
+            [
+              "Umlaufzeit",
+              "16,2 Jahre"
+            ],
+            [
+              "Einstrahlung",
+              "0,009-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Am Himmel von Ynderal",
+          "text": [
+            "Teryn erscheint von hier aus etwa 0,07° groß (die Sonne von der Erde: 0,53°)."
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Teryn · Stern",
+              "Orangefarbener Hauptreihenstern (K4 V)"
+            ],
+            [
+              "Dareth · 0,15 AE",
+              "Heißer Gesteinsplanet"
+            ],
+            [
+              "Nura · 0,34 AE",
+              "Heißer terrestrischer Planet"
+            ],
+            [
+              "Iskara · 0,61 AE",
+              "Bewohnter terrestrischer Silikatplanet"
+            ],
+            [
+              "Veldros · 1,08 AE",
+              "Kalte Supererde"
+            ],
+            [
+              "Saevor · 2,84 AE",
+              "Gasriese"
+            ],
+            [
+              "Ynderal · 5,9 AE · dieses Dossier",
+              "Eisreicher Riesenplanet"
+            ],
+            [
+              "Veylan-Asteroidengürtel · 1,7–2 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußere Kleinkörperregion · 14–38 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Teryn",
+              "inhalte/himmelskoerper/sterne/details/teryn/hauptseite/index.html"
+            ],
+            [
+              "Dareth",
+              "inhalte/himmelskoerper/planeten/details/dareth/hauptseite/index.html"
+            ],
+            [
+              "Nura",
+              "inhalte/himmelskoerper/planeten/details/nura/hauptseite/index.html"
+            ],
+            [
+              "Iskara",
+              "inhalte/himmelskoerper/planeten/details/iskara/hauptseite/index.html"
+            ],
+            [
+              "Veldros",
+              "inhalte/himmelskoerper/planeten/details/veldros/hauptseite/index.html"
+            ],
+            [
+              "Saevor",
+              "inhalte/himmelskoerper/planeten/details/saevor/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Ynderal.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "31.200 km"
+            ],
+            [
+              "Masse",
+              "31,8 Erdmassen"
+            ],
+            [
+              "Mittlere Dichte",
+              "1,49 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "13,01 m/s² (1,326 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "28,5 km/s"
+            ]
+          ],
+          "vergleich": {
+            "mit": "Erde",
+            "werte": [
+              [
+                "Durchmesser",
+                62400,
+                12742,
+                "km"
+              ],
+              [
+                "Masse",
+                31.8,
+                1,
+                "Erdmassen"
+              ],
+              [
+                "Schwerkraft",
+                1.33,
+                1,
+                "g"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "Planetare Struktur": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Planetare Struktur von Ynderal.",
+      "abschnitte": [
+        {
+          "titel": "Schalenbau",
+          "schichten": [
+            [
+              "Atmosphäre",
+              "Wasserstoff, Helium und Methan"
+            ],
+            [
+              "Eismantel",
+              "Wasser, Ammoniak und Methan unter hohem Druck"
+            ],
+            [
+              "Kern",
+              "Gestein und Metall"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geografie": {
+      "gruppe": "Natur",
+      "icon": "△",
+      "intro": "Geografie von Ynderal.",
+      "abschnitte": [
+        {
+          "titel": "Oberfläche",
+          "text": [
+            "Ynderal besitzt keine feste Oberfläche. Sichtbar sind Wolkenbänder, Wirbel und Stürme."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Ynderal.",
+      "abschnitte": [
+        {
+          "titel": "Wasserstoffreiche Hülle",
+          "text": [
+            "Das Systemmodell beschreibt eine wasserstoffreiche Hülle über tieferen Schichten unter hohem Druck. Der genaue Anteil von Helium, Methan und weiteren Stoffen ist offen."
+          ]
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Ynderal.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 5,9 AE Abstand zu Teryn liegt die Gleichgewichtstemperatur von Ynderal bei rund -201 °C – eisig kalt."
+          ]
+        }
+      ]
+    },
+    "Gewässer": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gewässer von Ynderal.",
+      "abschnitte": [
+        {
+          "titel": "Wasser",
+          "text": [
+            "Wasser liegt in den Wolkenschichten und tief im Inneren unter hohem Druck vor."
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Ynderal.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Ohne feste Oberfläche gibt es keine Geologie im engeren Sinn; im Inneren herrschen extreme Drücke und Temperaturen."
+          ]
+        }
+      ]
+    },
+    "Biosphäre": {
+      "gruppe": "Natur",
+      "icon": "❧",
+      "intro": "Biosphäre von Ynderal.",
+      "abschnitte": [
+        {
+          "titel": "Leben",
+          "text": [
+            "Auf Ynderal ist kein Leben verzeichnet."
+          ]
+        }
+      ]
+    },
+    "Spezies": {
+      "gruppe": "Zivilisation",
+      "icon": "✿",
+      "intro": "Spezies von Ynderal.",
+      "abschnitte": [
+        {
+          "titel": "Bewohner",
+          "text": [
+            "Ynderal ist keine Heimat einer intelligenten Spezies."
+          ]
+        },
+        {
+          "titel": "Im System von Iskara",
+          "text": [
+            "Das Teryn-System ist die Heimat der Solitiden: Ihr Planet Iskara umkreist Teryn."
+          ],
+          "verweise": [
+            [
+              "Iskara",
+              "inhalte/himmelskoerper/planeten/details/iskara/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Solitiden",
+              "inhalte/spezies/Mentale Spezies/Solitiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Zivilisation": {
+      "gruppe": "Zivilisation",
+      "icon": "▥",
+      "intro": "Zivilisation von Ynderal.",
+      "abschnitte": [
+        {
+          "titel": "Siedlungen",
+          "text": [
+            "Für Ynderal sind keine dauerhaften Siedlungen verzeichnet."
+          ]
+        },
+        {
+          "titel": "Im System von Iskara",
+          "text": [
+            "Das Teryn-System ist die Heimat der Solitiden: Ihr Planet Iskara umkreist Teryn."
+          ],
+          "verweise": [
+            [
+              "Iskara",
+              "inhalte/himmelskoerper/planeten/details/iskara/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Solitiden",
+              "inhalte/spezies/Mentale Spezies/Solitiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Ynderal.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Ynderal entstand zusammen mit dem Teryn-System vor rund 6,1 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Fraktionen": {
+      "gruppe": "Zivilisation",
+      "icon": "◇",
+      "intro": "Fraktionen von Ynderal.",
+      "abschnitte": [
+        {
+          "titel": "Ansprüche",
+          "text": [
+            "Für Ynderal sind keine Fraktionsansprüche verzeichnet."
+          ]
+        }
+      ]
+    },
+    "Rohstoffe": {
+      "gruppe": "Weitere",
+      "icon": "⬡",
+      "intro": "Rohstoffe von Ynderal.",
+      "abschnitte": [
+        {
+          "titel": "Rohstoffe",
+          "liste": [
+            "Wasserstoff",
+            "Methan",
+            "Wassereis"
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Ynderal.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Gibt es flüssige Schichten im Eismantel?",
+            "Wie entstand die Achslage?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Ynderal ist mit allen Bahndaten im Teryn-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=teryn-stern&objekt=teryn-ynderal"
+            ]
+          ]
+        },
+        {
+          "titel": "Untersuchung im Teryn-System",
+          "text": [
+            "Welche Teilchengrößen herrschen in Ynderals Ringsystem vor und wie unterscheiden sich die Atmosphärenschichten?"
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Ynderal.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Äußerster Planet des Teryn-Systems",
+            "3 Monde: Veraq, Teshil, Narim"
+          ]
+        },
+        {
+          "titel": "Monde",
+          "karten": [
+            {
+              "titel": "Veraq",
+              "text": "1.360 km Durchmesser, Umlauf in 3,4 Tage. Veraq ist ein innerer Eismond des Riesenplaneten Ynderal."
+            },
+            {
+              "titel": "Teshil",
+              "text": "1.020 km Durchmesser, Umlauf in 8,8 Tage. Teshil ist ein kleiner gemischter Fels-Eismond auf einer mittleren Bahn um Ynderal."
+            },
+            {
+              "titel": "Narim",
+              "text": "1.860 km Durchmesser, Umlauf in 18,2 Tage. Narim ist der größte der drei benannten Monde Ynderals und umkreist den Planeten auf einer äußeren Bahn."
+            }
+          ],
+          "verweise": [
+            [
+              "Veraq",
+              "inhalte/himmelskoerper/monde/details/veraq/hauptseite/index.html"
+            ],
+            [
+              "Teshil",
+              "inhalte/himmelskoerper/monde/details/teshil/hauptseite/index.html"
+            ],
+            [
+              "Narim",
+              "inhalte/himmelskoerper/monde/details/narim/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Ringsystem",
+          "text": [
+            "Die Ringe bilden ein eigenes Beobachtungsziel. Ihre Radien und Teilchengrößen sind im Systemmodell noch offen."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Ynderal.",
+      "abschnitte": [
+        {
+          "titel": "Illustrationsmotiv",
+          "bild": true,
+          "bildtext": "Illustration anhand eines vorhandenen Motivs. Sie zeigt den Himmelskörpertyp und keine bestätigten Oberflächendetails."
+        }
+      ]
+    }
+  }
+}

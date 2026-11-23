@@ -1,0 +1,826 @@
+{
+  "name": "Neraveth",
+  "genitiv": "von Neraveth",
+  "dossierName": "Neraveth-Dossier",
+  "klasse": "Planet · Terrestrischer Gesteinsplanet",
+  "intro": "Zwischen den Flussniederungen und den trockenen Hochebenen Neraveths ziehen die drei großen Wirtsarten der Kheravi.",
+  "globusDaten": {
+    "planet": "blauer-ozeanplanet-mit-kleinem-kontinent",
+    "klasse": "Ozeanwelt",
+    "radius": 6435000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=esvar-stern",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-8DD6F86E16"
+    ],
+    [
+      "Klasse",
+      "Terrestrischer Gesteinsplanet"
+    ],
+    [
+      "Durchmesser",
+      "12.870 km"
+    ],
+    [
+      "Radius",
+      "6.435 km"
+    ],
+    [
+      "Masse",
+      "0,94 Erdmassen"
+    ],
+    [
+      "Dichte",
+      "5,03 g/cm³"
+    ],
+    [
+      "Schwerkraft",
+      "0,92 g (9 m/s²)"
+    ],
+    [
+      "Mittlere Oberflächentemperatur",
+      "17 °C"
+    ],
+    [
+      "Ozeane",
+      "58 % Wasserbedeckung"
+    ],
+    [
+      "Atmosphäre",
+      "77,2 % Stickstoff, 21,8 % Sauerstoff, 0,9 % Argon, 0,1 % Kohlendioxid, 0 % Weitere Spurengase"
+    ],
+    [
+      "Atmosphärendruck",
+      "1,06 bar"
+    ],
+    [
+      "Rotationsperiode",
+      "28 h"
+    ],
+    [
+      "Umlaufzeit",
+      "202 Erdtage"
+    ],
+    [
+      "Abstand zum Stern",
+      "0,63 AE"
+    ],
+    [
+      "Monde",
+      "1 (Ithrel)"
+    ],
+    [
+      "Zentralstern",
+      "Esvar, Orangefarbener Hauptreihenstern (K2 V)"
+    ],
+    [
+      "Einstrahlung",
+      "0,93-fach der Erde"
+    ],
+    [
+      "Achsneigung",
+      "18°"
+    ],
+    [
+      "Exzentrizität",
+      "0,01"
+    ],
+    [
+      "Fluchtgeschwindigkeit",
+      "10,8 km/s"
+    ],
+    [
+      "Alter",
+      "ca. 5,4 Mrd. Jahre"
+    ],
+    [
+      "Intelligente Spezies",
+      "Parasitoiden"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Esvar-System"
+    ],
+    [
+      "Zentralstern",
+      "Esvar · K2 V, Einzelstern"
+    ],
+    [
+      "Bahnposition",
+      "2. von 3 Planeten"
+    ],
+    [
+      "Entfernung zur Sonne",
+      "47 Lichtjahre"
+    ],
+    [
+      "Nächste Nachbarsysteme",
+      "Ysmeroth-System (33,1 Lj), Kelira-System (36 Lj)"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✿",
+      "art": "Heimische Spezies",
+      "titel": "Parasitoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Parasitoiden/hauptseite/Spezies.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Heimatwelt",
+      "href": "inhalte/spezies/Biologische Spezies/Parasitoiden/Unterseiten/Heimatwelt/heimatwelt.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Politik und Fraktionen",
+      "href": "inhalte/spezies/Biologische Spezies/Parasitoiden/Unterseiten/Politik/politik.html",
+      "route": null
+    },
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Esvar-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=esvar-stern",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Speziesdossier Parasitoiden · Heimatwelt",
+      "href": "inhalte/spezies/Biologische Spezies/Parasitoiden/Unterseiten/Heimatwelt/heimatwelt.html"
+    },
+    {
+      "titel": "Speziesdossier Parasitoiden · Geschichte",
+      "href": "inhalte/spezies/Biologische Spezies/Parasitoiden/Unterseiten/Geschichte/geschichte.html"
+    },
+    {
+      "titel": "Speziesdossier Parasitoiden · Gesellschaft",
+      "href": "inhalte/spezies/Biologische Spezies/Parasitoiden/Unterseiten/Gesellschaft/gesellschaft.html"
+    },
+    {
+      "titel": "Speziesdossier Parasitoiden · Politik",
+      "href": "inhalte/spezies/Biologische Spezies/Parasitoiden/Unterseiten/Politik/politik.html"
+    },
+    {
+      "titel": "Speziesdossier Parasitoiden · Allgemeines",
+      "href": "inhalte/spezies/Biologische Spezies/Parasitoiden/Unterseiten/Allgemeines/allgemeines.html"
+    }
+  ],
+  "design": {},
+  "kapitel": {
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Allgemeines von Neraveth.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Neraveth aus dem Orbit",
+          "text": [
+            "Neraveth ist der zweite Planet Esvars. Wasser bedeckt 58 Prozent seiner Oberfläche. Saisonale Regenfälle verbinden Weideland und Überschwemmungsbecken zu Wanderkorridoren."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Terrestrischer Gesteinsplanet"
+            ],
+            [
+              "Zentralstern",
+              "Esvar (Orangefarbener Hauptreihenstern (K2 V))"
+            ],
+            [
+              "Schwerkraft",
+              "0,92 g"
+            ],
+            [
+              "Durchmesser",
+              "12.870 km"
+            ],
+            [
+              "Mittlere Temperatur",
+              "17 °C"
+            ],
+            [
+              "Atmosphäre",
+              "Stickstoff und Sauerstoff"
+            ],
+            [
+              "Wasser",
+              "58 % Wasserbedeckung"
+            ],
+            [
+              "Intelligente Spezies",
+              "Parasitoiden"
+            ]
+          ]
+        },
+        {
+          "titel": "Neraveth im Vergleich zur Erde",
+          "vergleich": {
+            "mit": "Erde",
+            "werte": [
+              [
+                "Durchmesser",
+                12870,
+                12742,
+                "km"
+              ],
+              [
+                "Schwerkraft",
+                0.92,
+                1,
+                "g"
+              ],
+              [
+                "Tageslänge",
+                28,
+                24,
+                "h"
+              ],
+              [
+                "Luftdruck (Mittel)",
+                1.06,
+                1,
+                "bar"
+              ],
+              [
+                "Mittlere Temperatur",
+                17,
+                15,
+                "°C"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Astronomie von Neraveth.",
+      "abschnitte": [
+        {
+          "titel": "Bahn und Position",
+          "text": [
+            "Neraveth ist der 2. von 3 Planeten im Esvar-System. Er umkreist Esvar in 0,63 AE Abstand – innerhalb der habitablen Zone (bei Esvar zwischen 0,58 und 1,01 AE). Er erhält 0,93-mal so viel Sternlicht wie die Erde.",
+            "Ohne Atmosphäre läge seine Gleichgewichtstemperatur bei rund -21 °C. "
+          ],
+          "daten": [
+            [
+              "Sternsystem",
+              "Esvar-System"
+            ],
+            [
+              "Bahnposition",
+              "2. von 3 Planeten"
+            ],
+            [
+              "Große Halbachse",
+              "0,63 AE (ca. 94,2 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,01"
+            ],
+            [
+              "Umlaufzeit",
+              "201,7 Erdtage"
+            ],
+            [
+              "Ortsjahr",
+              "ca. 173 Ortstage"
+            ],
+            [
+              "Einstrahlung",
+              "ca. 0,93-fach der Erde"
+            ],
+            [
+              "Habitable Zone von Esvar",
+              "0,58–1,01 AE"
+            ]
+          ]
+        },
+        {
+          "titel": "Zentralstern",
+          "text": [
+            "Esvar beleuchtet Neraveth mit rund 93 Prozent der Strahlungsleistung, die auf die Erde trifft. Kheravische Beobachter vergleichen die saisonale Rückkehr der Regenfronten mit dem örtlichen Sternjahr."
+          ],
+          "daten": [
+            [
+              "Name",
+              "Esvar"
+            ],
+            [
+              "Typ",
+              "Orangefarbener Hauptreihenstern (K2 V)"
+            ],
+            [
+              "Masse",
+              "0,82 Sonnenmassen"
+            ],
+            [
+              "Radius",
+              "0,78 Sonnenradien"
+            ],
+            [
+              "Leuchtkraft",
+              "0,37 Sonnenleuchtkräfte"
+            ],
+            [
+              "Oberflächentemperatur",
+              "ca. 5.100 K"
+            ],
+            [
+              "Alter",
+              "ca. 5,4 Mrd. Jahre"
+            ],
+            [
+              "Begleitsterne",
+              "keine (Einzelstern)"
+            ]
+          ],
+          "verweise": [
+            [
+              "Esvar",
+              "inhalte/himmelskoerper/sterne/details/esvar/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Rotation und Achse",
+          "daten": [
+            [
+              "Rotationsperiode",
+              "28 h"
+            ],
+            [
+              "Achsneigung",
+              "18°"
+            ],
+            [
+              "Scheinbare Sterngröße",
+              "ca. 0,66° (Sonne von der Erde: 0,53°)"
+            ],
+            [
+              "Jahreszeiten",
+              "Saisonale Niederschlagszonen und regionale Trockenzeiten"
+            ]
+          ]
+        },
+        {
+          "titel": "Monde",
+          "karten": [
+            {
+              "titel": "Ithrel",
+              "text": "2.340 km Durchmesser, Abstand 216.886 km, Umlauf in 12 Tagen. Ein tiefer Einschlag legte dunkle metallreiche Schichten frei. Die helle Auswurfdecke bildet einen Bogen, den Beobachter auf Neraveth als Landmarke bei der Kartierung verwenden."
+            }
+          ],
+          "verweise": [
+            [
+              "Ithrel",
+              "inhalte/himmelskoerper/monde/details/ithrel/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Planeten des Systems",
+          "zeitleiste": [
+            [
+              "Vask · 0,28 AE",
+              "Helle Salzpfannen zeichnen einstige Abflussbecken nach."
+            ],
+            [
+              "Neraveth · 0,63 AE",
+              "Die Heimat der Kheravi besitzt ausgedehnte Schelfmeere und saisonal überflutete Ebenen."
+            ],
+            [
+              "Velun · 3,7 AE",
+              "Silberhelle Wolkenbänder rahmen die indigofarbenen Breiten ein."
+            ]
+          ],
+          "verweise": [
+            [
+              "Vask",
+              "inhalte/himmelskoerper/planeten/details/vask/hauptseite/index.html"
+            ],
+            [
+              "Velun",
+              "inhalte/himmelskoerper/planeten/details/velun/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Nachbarschaft und Anomalien",
+          "karten": [
+            {
+              "titel": "Sovar",
+              "text": "An Sovars kantigen Bruchflächen tritt Pyroxen zutage. Seine geneigten Staubterrassen sammeln Material, das nach kleinen Einschlägen wieder auf die Oberfläche fällt."
+            },
+            {
+              "titel": "Nachbarsysteme",
+              "text": "Ysmeroth-System (33,1 Lj), Kelira-System (36 Lj), Orvaya-System (38,1 Lj) – alle weit außerhalb der gravitativen Einflusszone von Esvar (rund 3,4 Lichtjahre)."
+            }
+          ],
+          "verweise": [
+            [
+              "Sovar",
+              "inhalte/himmelskoerper/asteroiden/details/sovar/hauptseite/index.html"
+            ],
+            [
+              "Esvar-System in der Sternenkarte",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=esvar-stern"
+            ]
+          ]
+        },
+        {
+          "titel": "Astronomische Grundlagen",
+          "text": [
+            "Neraveth umkreist den orangefarbenen Hauptreihenstern Esvar.",
+            "Planetare Referenzdaten:",
+            "Die angegebenen Werte sind planetare Modellfestlegungen für APORIA."
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Neraveth.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "6.435 km"
+            ],
+            [
+              "Masse",
+              "0,94 Erdmassen"
+            ],
+            [
+              "Mittlere Dichte",
+              "5,03 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "9 m/s² (0,92 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "ca. 10,8 km/s"
+            ]
+          ]
+        },
+        {
+          "titel": "Physikalische Werte im Vergleich",
+          "vergleich": {
+            "mit": "Erde",
+            "werte": [
+              [
+                "Masse",
+                0.94,
+                1,
+                "Erdmassen"
+              ],
+              [
+                "Dichte",
+                5.03,
+                5.51,
+                "g/cm³"
+              ],
+              [
+                "Fluchtgeschwindigkeit",
+                10.8,
+                11.2,
+                "km/s"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "Planetare Struktur": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Planetare Struktur von Neraveth.",
+      "abschnitte": [
+        {
+          "titel": "Kontinentalschelfe",
+          "text": [
+            "Breite, flache Übergänge zwischen Festland und offenem Meer bieten Platz für wandernde Küstenlinien und ausgedehnte Feuchtgebiete."
+          ]
+        }
+      ]
+    },
+    "Geografie": {
+      "gruppe": "Natur",
+      "icon": "△",
+      "intro": "Geografie von Neraveth.",
+      "abschnitte": [
+        {
+          "titel": "Geografie",
+          "text": [
+            "Die Oberfläche setzt sich aus mehreren größeren Kontinentalregionen, Inselketten und flachen Meeresgebieten zusammen.",
+            "Die wichtigsten Landschaftstypen sind:",
+            "Feuchtgebiete: Große, biologisch produktive Landschaften mit saisonalen Überflutungen.",
+            "Küstenwälder: Dichte Vegetationszonen mit hoher Artenvielfalt.",
+            "Offene Ebenen: Weiträumige Landschaften, die von großen wandernden Tierbeständen genutzt werden.",
+            "Trockene Hochländer: Gebiete mit geringeren Niederschlägen und spezialisierten Pflanzenarten.",
+            "Gebirge: Tektonisch geprägte Regionen, welche die atmosphärische Zirkulation und natürliche Wanderkorridore beeinflussen."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Neraveth.",
+      "abschnitte": [
+        {
+          "titel": "Zusammensetzung",
+          "text": [],
+          "balken": {
+            "werte": [
+              [
+                "Stickstoff",
+                77.2
+              ],
+              [
+                "Sauerstoff",
+                21.8
+              ],
+              [
+                "Argon",
+                0.9
+              ],
+              [
+                "Kohlendioxid",
+                0.06
+              ],
+              [
+                "Weitere Spurengase",
+                0.04
+              ]
+            ]
+          }
+        },
+        {
+          "titel": "Druck",
+          "daten": [
+            [
+              "Mittlerer Oberflächendruck",
+              "1,06 bar"
+            ]
+          ]
+        },
+        {
+          "titel": "Atmosphäre",
+          "text": [
+            "Die Atmosphäre besitzt einen relativ erdähnlichen Grundaufbau.",
+            "Vorläufige mittlere Volumenanteile:",
+            "- Stickstoff: 77,2 %",
+            "- Sauerstoff: 21,8 %",
+            "- Argon: 0,9 %",
+            "- Kohlendioxid: 0,06 %",
+            "- Weitere Spurengase: 0,04 %",
+            "Diese Zusammensetzung ermöglicht eine sauerstoffbasierte Atmung.",
+            "Die tatsächliche Verträglichkeit für fremde Spezies hängt zusätzlich von Mikroorganismen, regionalen Aerosolen und biologischen Schadstoffen ab."
+          ]
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Neraveth.",
+      "abschnitte": [
+        {
+          "titel": "Klima",
+          "text": [
+            "Neraveth besitzt mehrere deutlich ausgeprägte Klimaräume.",
+            "Große Meeresgebiete beeinflussen die Niederschläge auf den Kontinenten.",
+            "Aufgrund der geografischen Verteilung von Landflächen, Gebirgen und Ozeanen bilden sich weitreichende saisonale Niederschlagszonen.",
+            "Diese sind besonders wichtig für die Fortpflanzungs- und Wanderzyklen großer heimischer Tierarten.",
+            "Die Jahreszeiten werden sowohl durch die Achsenneigung als auch durch regionale atmosphärische Zirkulationssysteme geprägt."
+          ]
+        }
+      ]
+    },
+    "Gewässer": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gewässer von Neraveth.",
+      "abschnitte": [
+        {
+          "titel": "Gewässer",
+          "text": [
+            "Ozeane, Binnenmeere, Flüsse und große Feuchtgebietssysteme bilden die hydrologische Grundlage des Planeten.",
+            "Mehrere Kontinente besitzen weitläufige saisonale Überschwemmungslandschaften.",
+            "Durch wiederkehrende Niederschlagszyklen verändern sich bestimmte Wasserläufe regelmäßig.",
+            "Diese hydrologischen Veränderungen beeinflussen die Verbreitung vieler Pflanzen- und Tierarten."
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Neraveth.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Neraveth besitzt eine aktive geologische Entwicklung mit regionaler Tektonik.",
+            "Gebirgsbildung, Erosion und Sedimentablagerungen beeinflussen die Landschaft.",
+            "Die geologische Aktivität ist nicht überall gleich stark.",
+            "Vulkanische Regionen existieren, sind jedoch nicht das dominierende biologische Merkmal des Planeten."
+          ]
+        }
+      ]
+    },
+    "Biosphäre": {
+      "gruppe": "Natur",
+      "icon": "❧",
+      "intro": "Biosphäre von Neraveth.",
+      "abschnitte": [
+        {
+          "titel": "Ursprüngliche Pflanzenwelt",
+          "text": [
+            "Die heimische Vegetation ist an die planetaren Niederschlags- und Temperaturzyklen angepasst.",
+            "Große Pflanzenbestände folgen saisonalen Wachstumsphasen.",
+            "In den feuchten Regionen existieren dichte, mehrschichtige Pflanzengemeinschaften.",
+            "Auf den offenen Ebenen dominieren andere robuste Pflanzenformen mit schneller Regeneration nach Regenzeiten.",
+            "Diese Pflanzen bilden die Nahrungsgrundlage der großen Wirtsarten."
+          ]
+        },
+        {
+          "titel": "Ökologische Bedeutung der Wirtsarten",
+          "text": [
+            "Die großen Wirtsarten beeinflussen die Vegetation und die Zusammensetzung zahlreicher Ökosysteme.",
+            "Durch Wanderung, Nahrungsaufnahme und Verteilung biologischer Materialien wirken sie auf weite Landschaften.",
+            "Die Kheravi waren ursprünglich selbst Bestandteil dieser ökologischen Beziehungen.",
+            "Ihre natürliche Fortpflanzung konnte unter günstigen Bedingungen regulierend auf bestimmte Wirtsbestände wirken.",
+            "Eine zu starke Nutzung gefährdete dagegen die langfristige Stabilität des gesamten Systems."
+          ]
+        }
+      ]
+    },
+    "Spezies": {
+      "gruppe": "Zivilisation",
+      "icon": "✿",
+      "intro": "Spezies von Neraveth.",
+      "abschnitte": [
+        {
+          "titel": "Die drei natürlichen Hauptwirtsarten",
+          "text": [
+            "Die ursprüngliche Fortpflanzung der Kheravi ist auf drei eng verwandte große Tierarten spezialisiert.",
+            "Raukhen",
+            "Der Raukhen ist die wichtigste traditionelle Wirtsart.",
+            "Er lebt in großen wandernden Beständen, erreicht gewöhnlich mehrere Hundert Kilogramm Körpermasse und ernährt sich überwiegend von heimischen Pflanzen.",
+            "Seine saisonalen Wanderungen bestimmten die Entwicklung vieler früher Kheravi-Siedlungen.",
+            "Sethren",
+            "Die Sethren sind stärker an feuchte Niederungen und zeitweise überflutete Landschaften angepasst.",
+            "Ihre Lebensräume überschneiden sich nur teilweise mit den wichtigsten Raukhen-Wandergebieten.",
+            "Vaulgen",
+            "Die Vaulgen besiedeln überwiegend offenere und trockenere Landschaften.",
+            "Sie besitzen eine höhere durchschnittliche Körpermasse und andere saisonale Fortpflanzungsmuster.",
+            "Alle drei Arten gehören zu einer eng verwandten Tiergruppe. Keine der drei Arten besitzt eine intelligente Zivilisation."
+          ]
+        }
+      ]
+    },
+    "Zivilisation": {
+      "gruppe": "Zivilisation",
+      "icon": "▥",
+      "intro": "Zivilisation von Neraveth.",
+      "abschnitte": [
+        {
+          "titel": "Moderne Naturschutzgebiete",
+          "text": [
+            "Auf Neraveth existieren große Schutzregionen für die natürlichen Wirtsarten.",
+            "Diese umfassen saisonale Wanderkorridore, Fortpflanzungsgebiete und besonders empfindliche Ökosysteme.",
+            "Einige Schutzgebiete verbieten die Nutzung natürlicher Wirte vollständig.",
+            "Andere erlauben begrenzte, wissenschaftlich überwachte Formen traditioneller Fortpflanzung."
+          ]
+        },
+        {
+          "titel": "Planetare Besiedlung",
+          "text": [
+            "Die moderne Kheravi-Zivilisation verfügt über mehrere größere Siedlungsräume.",
+            "Industrie- und Forschungszentren befinden sich nicht ausschließlich in den ursprünglichen Wirtsregionen.",
+            "Technologisch fortgeschrittene Städte besitzen künstliche Entwicklungsanlagen und können dadurch weitgehend unabhängig von direkten Tierwanderungen existieren.",
+            "Trotzdem beeinflusst der Schutz natürlicher Ökosysteme weiterhin die planetare Raumplanung."
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Neraveth.",
+      "abschnitte": [
+        {
+          "titel": "Die historischen Wirtswanderungen",
+          "text": [
+            "Große saisonale Wanderungsbewegungen gehören zu den charakteristischen Naturereignissen Neraveths.",
+            "Die Tierbestände folgen geeigneten Futterregionen und Veränderungen der Niederschlagsverteilung.",
+            "Diese Bewegungen bildeten die Grundlage alter Handelswege und kultureller Verbindungen.",
+            "Bestimmte historische Städte entstanden unmittelbar an wichtigen Wanderkorridoren."
+          ]
+        }
+      ]
+    },
+    "Fraktionen": {
+      "gruppe": "Zivilisation",
+      "icon": "◇",
+      "intro": "Fraktionen von Neraveth.",
+      "abschnitte": [
+        {
+          "titel": "Schutzgebiete und Landnutzung",
+          "text": [
+            "An den Wanderkorridoren überschneiden sich Siedlungsflächen und saisonale Weiden. Die örtliche Politik muss den Zugang zu Wasser und den Schutz der Herden miteinander vereinbaren."
+          ]
+        }
+      ]
+    },
+    "Rohstoffe": {
+      "gruppe": "Weitere",
+      "icon": "⬡",
+      "intro": "Rohstoffe von Neraveth.",
+      "abschnitte": [
+        {
+          "titel": "Sedimente der Niederungen",
+          "text": [
+            "In ehemaligen Flussarmen lassen sich Ton und feinkörnige Sande gewinnen. Aktive Überschwemmungsflächen sind zugleich wichtige Lebensräume der Sethren."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Neraveth.",
+      "abschnitte": [
+        {
+          "titel": "Wissenschaftliche Besonderheiten des Planeten",
+          "text": [
+            "Neraveth ist besonders interessant für:",
+            "- Vergleichende Ökosystemforschung",
+            "- Untersuchungen saisonaler Großtierwanderungen",
+            "- Evolution der Parasitoidie",
+            "- Wechselwirkungen zwischen Wirts- und Parasitoidenpopulationen",
+            "- Rekonstruktion historischer Umweltkatastrophen",
+            "- Naturschutzbiologie",
+            "- Langfristige Klimaforschung",
+            "Planetare Besonderheit: Die Heimatwelt besitzt ein komplexes, von großen saisonalen Tierwanderungen geprägtes Ökosystem, aus dem sich die einzigartige Fortpflanzungsbiologie und ein bedeutender Teil der Zivilisationsgeschichte der Kheravi entwickelt haben."
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Neraveth.",
+      "abschnitte": [
+        {
+          "titel": "Naturgefahren",
+          "text": [
+            "Die bedeutendsten großräumigen Gefahren sind:",
+            "- Langfristige klimatische Veränderungen",
+            "- Wiederkehrende Tierseuchen",
+            "- Regionale Überschwemmungen",
+            "- Veränderungen wichtiger Wanderkorridore",
+            "- Großräumige Vegetationskrisen",
+            "- Lokale tektonische Ereignisse",
+            "Besonders gefährlich sind kombinierte ökologische Krisen, bei denen mehrere Wirtsarten gleichzeitig betroffen werden."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Neraveth.",
+      "abschnitte": [
+        {
+          "titel": "Neraveth aus dem All",
+          "bild": true,
+          "bildtext": "Neraveth"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,576 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Ulmar (Rhaelis)",
+  "genitiv": "von Ulmar (Rhaelis)",
+  "dossierName": "Ulmar (Rhaelis)-Dossier",
+  "klasse": "Langperiodischer Komet",
+  "intro": "Ein langperiodischer Komet. Die aktuelle Bahn im Kartenmodell führt ihn aus der fernen Population bis in die Nähe der Gasplaneten.",
+  "globusDaten": {
+    "planet": "ulmar-rhaelis",
+    "klasse": "Eis",
+    "radius": 8000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=rhaelis-stern&objekt=rhaelis-ulmar-rhaelis",
+  "grunddaten": [
+    [
+      "System-ID",
+      "rhaelis-ulmar-rhaelis"
+    ],
+    [
+      "Archiv-ID",
+      "AP-RHAELIS-ULMAR-RHAELIS"
+    ],
+    [
+      "Typ",
+      "Langperiodischer Komet"
+    ],
+    [
+      "Sternsystem",
+      "Rhaelis-System"
+    ],
+    [
+      "Zentralkörper",
+      "Rhaelis"
+    ],
+    [
+      "Große Halbachse",
+      "105 AE"
+    ],
+    [
+      "Umlaufzeit",
+      "1.195,5 Jahre"
+    ],
+    [
+      "Durchmesser",
+      "16 km"
+    ],
+    [
+      "Masse",
+      "1,29 · 10^15 kg"
+    ],
+    [
+      "Schwerkraft",
+      "0,13 cm/s²"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -252 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Rhaelis-System"
+    ],
+    [
+      "Zentralstern",
+      "Rhaelis",
+      "inhalte/himmelskoerper/sterne/details/rhaelis/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "105 AE"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Ulmar (Rhaelis) im Rhaelis-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=rhaelis-stern&objekt=rhaelis-ulmar-rhaelis",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Rhaelis",
+      "href": "inhalte/himmelskoerper/sterne/details/rhaelis/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Memetiden",
+      "titel": "Tavoryn",
+      "href": "inhalte/himmelskoerper/planeten/details/tavoryn/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Memetiden",
+      "href": "inhalte/spezies/Mentale Spezies/Memetiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Rhaelis-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=rhaelis-stern&objekt=rhaelis-ulmar-rhaelis"
+    },
+    {
+      "titel": "Speziesdossier Memetiden",
+      "href": "inhalte/spezies/Mentale Spezies/Memetiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#06090a",
+      "tiefe": "#0d1316",
+      "akzent": "#a9c8db",
+      "sand": "#afc4ba",
+      "moos": "#89c0b0",
+      "ozean": "#6ea7d2",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#374d5a"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Umlaufbahn"
+      ],
+      [
+        "Hülle",
+        "Schweif"
+      ],
+      [
+        "Hülle",
+        "Koma"
+      ],
+      [
+        "Kern",
+        "Kern"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Kern": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Kern von Ulmar (Rhaelis).",
+      "abschnitte": [
+        {
+          "titel": "Kometenkern",
+          "text": [
+            "Der Kern von Ulmar (Rhaelis) misst rund 16 km und besteht aus einem lockeren Gemenge aus Eis, Staub und Gestein."
+          ],
+          "schichten": [
+            [
+              "Staubkruste",
+              "Dunkle, kohlenstoffreiche Oberfläche"
+            ],
+            [
+              "Eis-Staub-Gemisch",
+              "Wassereis, Kohlendioxid und Staub"
+            ],
+            [
+              "Kern",
+              "Lockeres Eis-Gestein-Gemenge"
+            ]
+          ]
+        }
+      ]
+    },
+    "Koma": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Koma von Ulmar (Rhaelis).",
+      "abschnitte": [
+        {
+          "titel": "Koma",
+          "text": [
+            "Nähert sich Ulmar (Rhaelis) dem Stern Rhaelis, verdampft Eis und bildet eine leuchtende Gashülle um den Kern."
+          ]
+        }
+      ]
+    },
+    "Schweif": {
+      "gruppe": "Natur",
+      "icon": "☄",
+      "intro": "Schweif von Ulmar (Rhaelis).",
+      "abschnitte": [
+        {
+          "titel": "Schweif",
+          "text": [
+            "Ein langperiodischer Komet. Die aktuelle Bahn im Kartenmodell führt ihn aus der fernen Population bis in die Nähe der Gasplaneten."
+          ]
+        }
+      ]
+    },
+    "Umlaufbahn": {
+      "gruppe": "Wissenschaft",
+      "icon": "◌",
+      "intro": "Umlaufbahn von Ulmar (Rhaelis).",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Rhaelis"
+            ],
+            [
+              "Große Halbachse",
+              "105 AE (15.708 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,96"
+            ],
+            [
+              "Bahnneigung",
+              "47°"
+            ],
+            [
+              "Umlaufzeit",
+              "1.195,5 Jahre"
+            ],
+            [
+              "Einstrahlung",
+              "0-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Sternnächster und fernster Punkt",
+          "daten": [
+            [
+              "Perihel",
+              "4,2 AE"
+            ],
+            [
+              "Aphel",
+              "205,8 AE"
+            ]
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Ulmar (Rhaelis) auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Ulmar (Rhaelis)",
+          "text": [
+            "Ein langperiodischer Komet. Die aktuelle Bahn im Kartenmodell führt ihn aus der fernen Population bis in die Nähe der Gasplaneten.",
+            "Ulmar (Rhaelis) umkreist Rhaelis in 105 AE Abstand und braucht für einen Umlauf 1.195,5 Jahre."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Langperiodischer Komet"
+            ],
+            [
+              "Sternsystem",
+              "Rhaelis-System"
+            ],
+            [
+              "Zentralkörper",
+              "Rhaelis"
+            ],
+            [
+              "Große Halbachse",
+              "105 AE"
+            ],
+            [
+              "Umlaufzeit",
+              "1.195,5 Jahre"
+            ],
+            [
+              "Durchmesser",
+              "16 km"
+            ],
+            [
+              "Masse",
+              "1,29 · 10^15 kg"
+            ],
+            [
+              "Schwerkraft",
+              "0,13 cm/s²"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -252 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Tavoryn",
+          "text": [
+            "Das Rhaelis-System ist die Heimat der Memetiden: Ihr Planet Tavoryn umkreist Rhaelis."
+          ],
+          "verweise": [
+            [
+              "Tavoryn",
+              "inhalte/himmelskoerper/planeten/details/tavoryn/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Memetiden",
+              "inhalte/spezies/Mentale Spezies/Memetiden/hauptseite/Spezies.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Eintrag im astronomischen Dossier",
+          "daten": [
+            [
+              "Ulmar",
+              "Ein langperiodisches Kometenobjekt."
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Ulmar (Rhaelis) im Rhaelis-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Rhaelis"
+            ],
+            [
+              "Große Halbachse",
+              "105 AE (15.708 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,96"
+            ],
+            [
+              "Bahnneigung",
+              "47°"
+            ],
+            [
+              "Umlaufzeit",
+              "1.195,5 Jahre"
+            ],
+            [
+              "Einstrahlung",
+              "0-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Rhaelis · Stern",
+              "Orangefarbener Hauptreihenstern (K1 V)"
+            ],
+            [
+              "Kesvar · 0,18 AE",
+              "Heißer Gesteinsplanet"
+            ],
+            [
+              "Draoven · 0,33 AE",
+              "Heißer trockener Gesteinsplanet"
+            ],
+            [
+              "Tavoryn · 0,65 AE",
+              "Gemäßigter Ozean- und Gesteinsplanet"
+            ],
+            [
+              "Ossaryn · 1,2 AE",
+              "Kalter Gesteinsplanet"
+            ],
+            [
+              "Vaelkor · 2,45 AE",
+              "Gasriese"
+            ],
+            [
+              "Kelomar · 4,8 AE",
+              "Äußerer Gasriese"
+            ],
+            [
+              "Ithrenn · 9,2 AE",
+              "Eisriese"
+            ],
+            [
+              "Therys · 19 AE",
+              "Eisreicher Kleinkörper"
+            ],
+            [
+              "Veskar-9 · 31 AE",
+              "Dunkler Kleinkörper"
+            ],
+            [
+              "Saelith-Gürtel · 1,7–2,1 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußere Kleinkörperregion von Rhaelis · 12–43 AE",
+              "Eisreicher Kleinkörpergürtel"
+            ],
+            [
+              "Ferne Kometenpopulation von Rhaelis · 65–240 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Rhaelis",
+              "inhalte/himmelskoerper/sterne/details/rhaelis/hauptseite/index.html"
+            ],
+            [
+              "Kesvar",
+              "inhalte/himmelskoerper/planeten/details/kesvar/hauptseite/index.html"
+            ],
+            [
+              "Draoven",
+              "inhalte/himmelskoerper/planeten/details/draoven/hauptseite/index.html"
+            ],
+            [
+              "Tavoryn",
+              "inhalte/himmelskoerper/planeten/details/tavoryn/hauptseite/index.html"
+            ],
+            [
+              "Ossaryn",
+              "inhalte/himmelskoerper/planeten/details/ossaryn/hauptseite/index.html"
+            ],
+            [
+              "Vaelkor",
+              "inhalte/himmelskoerper/planeten/details/vaelkor/hauptseite/index.html"
+            ],
+            [
+              "Kelomar",
+              "inhalte/himmelskoerper/planeten/details/kelomar/hauptseite/index.html"
+            ],
+            [
+              "Ithrenn",
+              "inhalte/himmelskoerper/planeten/details/ithrenn/hauptseite/index.html"
+            ],
+            [
+              "Therys",
+              "inhalte/himmelskoerper/asteroiden/details/therys/hauptseite/index.html"
+            ],
+            [
+              "Veskar-9",
+              "inhalte/himmelskoerper/asteroiden/details/veskar-9/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Ulmar (Rhaelis).",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "8 km"
+            ],
+            [
+              "Masse",
+              "1,29 · 10^15 kg"
+            ],
+            [
+              "Mittlere Dichte",
+              "0,6 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "0 m/s² (0 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "0 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Ulmar (Rhaelis).",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Ulmar (Rhaelis) stammt aus den kalten Außenbereichen des Rhaelis-Systems und wurde auf seine heutige, langgestreckte Bahn gelenkt."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Ulmar (Rhaelis).",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Woher stammt der Komet genau?",
+            "Wie lange übersteht sein Kern noch die Annäherungen an den Stern?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Ulmar (Rhaelis) ist mit allen Bahndaten im Rhaelis-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=rhaelis-stern&objekt=rhaelis-ulmar-rhaelis"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Ulmar (Rhaelis).",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Ein langperiodischer Komet. Die aktuelle Bahn im Kartenmodell führt ihn aus der fernen Population bis in die Nähe der Gasplaneten."
+          ]
+        },
+        {
+          "titel": "Verwandte Dossiers",
+          "verweise": [
+            [
+              "Rhaelis-System",
+              "inhalte/himmelskoerper/sternensysteme/details/rhaelis-system/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Ulmar (Rhaelis).",
+      "abschnitte": [
+        {
+          "titel": "Ulmar (Rhaelis)",
+          "bild": true,
+          "bildtext": "Illustration aus dem APORIA-Bildarchiv"
+        }
+      ]
+    }
+  }
+}

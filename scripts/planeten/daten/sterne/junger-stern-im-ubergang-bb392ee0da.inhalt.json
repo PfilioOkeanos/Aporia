@@ -1,0 +1,700 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Ilaren",
+  "genitiv": "von Ilaren",
+  "dossierName": "Ilaren-Dossier",
+  "klasse": "Orangefarbener Hauptreihenstern (K3 V)",
+  "intro": "Ilaren ist ein einzelner K3-V-Stern mittleren Alters. Seine ruhige orange Strahlung prägt ein kompaktes System mit einer gemäßigten Zone zwischen ungefähr 0,49 und 0,85 AE.",
+  "globusDaten": {
+    "planet": "junger-stern-im-ubergang-bb392ee0da",
+    "klasse": "Vulkan",
+    "radius": 528732000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=ilaren-stern",
+  "grunddaten": [
+    [
+      "System-ID",
+      "ilaren-stern"
+    ],
+    [
+      "Archiv-ID",
+      "AP-EC4493C9AD"
+    ],
+    [
+      "Typ",
+      "Orangefarbener Hauptreihenstern (K3 V)"
+    ],
+    [
+      "Sternsystem",
+      "Ilaren-System"
+    ],
+    [
+      "Masse",
+      "0,78 Sonnenmassen"
+    ],
+    [
+      "Radius",
+      "0,76 Sonnenradien"
+    ],
+    [
+      "Leuchtkraft",
+      "0,26 Sonnenleuchtkräfte"
+    ],
+    [
+      "Oberflächentemperatur",
+      "ca. 4.750 K"
+    ],
+    [
+      "Alter",
+      "ca. 5,6 Mrd. Jahre"
+    ],
+    [
+      "Planeten",
+      "7 (Harrek, Vosan, Khaluun, Meyt, Daran, Ulmar, Seyran)"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Ilaren-System"
+    ],
+    [
+      "Entfernung zur Sonne",
+      "143 Lichtjahre"
+    ],
+    [
+      "Nächste Nachbarsysteme",
+      "Esvar-System (100,2 Lj), Ysmeroth-System (122,6 Lj)"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Ilaren im Ilaren-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=ilaren-stern",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Planet",
+      "titel": "Harrek",
+      "href": "inhalte/himmelskoerper/planeten/details/harrek/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Planet",
+      "titel": "Vosan",
+      "href": "inhalte/himmelskoerper/planeten/details/vosan/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Planet",
+      "titel": "Khaluun",
+      "href": "inhalte/himmelskoerper/planeten/details/khaluun/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Planet",
+      "titel": "Meyt",
+      "href": "inhalte/himmelskoerper/planeten/details/meyt/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Planet",
+      "titel": "Daran",
+      "href": "inhalte/himmelskoerper/planeten/details/daran/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Planet",
+      "titel": "Ulmar",
+      "href": "inhalte/himmelskoerper/planeten/details/ulmar/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Planet",
+      "titel": "Seyran",
+      "href": "inhalte/himmelskoerper/kometen/details/seyran/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Kollektiden (Tessari)",
+      "titel": "Khaluun",
+      "href": "inhalte/himmelskoerper/planeten/details/khaluun/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Kollektiden (Tessari)",
+      "href": "inhalte/spezies/Mentale Spezies/Kollektiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Ilaren-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=ilaren-stern"
+    },
+    {
+      "titel": "Speziesdossier Kollektiden (Tessari)",
+      "href": "inhalte/spezies/Mentale Spezies/Kollektiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#0d0805",
+      "tiefe": "#1c120b",
+      "akzent": "#ffc29a",
+      "sand": "#ffbf90",
+      "moos": "#d9b878",
+      "ozean": "#ada083",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#73482d"
+    },
+    "schichten": [
+      [
+        "Strahlung",
+        "Leuchtkraft"
+      ],
+      [
+        "Hülle",
+        "Spektralklasse"
+      ],
+      [
+        "Kern",
+        "Fusion"
+      ],
+      [
+        "Zeit",
+        "Lebenszyklus"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Spektralklasse": {
+      "gruppe": "Wissenschaft",
+      "icon": "✦",
+      "intro": "Spektralklasse von Ilaren.",
+      "abschnitte": [
+        {
+          "titel": "Einordnung",
+          "daten": [
+            [
+              "Typ",
+              "Orangefarbener Hauptreihenstern (K3 V)"
+            ],
+            [
+              "Oberflächentemperatur",
+              "ca. 4.750 K"
+            ],
+            [
+              "Farbe",
+              "orange"
+            ]
+          ]
+        },
+        {
+          "titel": "K3-V-Hauptreihe",
+          "text": [
+            "Die Oberflächentemperatur von etwa 4.750 K und die orange Farbe passen zur Spektralklasse K3 V. Ilaren fusioniert Wasserstoff im Kern und ist kein roter M-Zwerg."
+          ]
+        }
+      ]
+    },
+    "Fusion": {
+      "gruppe": "Wissenschaft",
+      "icon": "☀",
+      "intro": "Fusion von Ilaren.",
+      "abschnitte": [
+        {
+          "titel": "Energiequelle",
+          "text": [
+            "Im Kern von Ilaren verschmilzt Wasserstoff zu Helium."
+          ]
+        }
+      ]
+    },
+    "Leuchtkraft": {
+      "gruppe": "Wissenschaft",
+      "icon": "☀",
+      "intro": "Leuchtkraft von Ilaren.",
+      "abschnitte": [
+        {
+          "titel": "Strahlung",
+          "daten": [
+            [
+              "Leuchtkraft",
+              "0,26 Sonnenleuchtkräfte"
+            ],
+            [
+              "Habitable Zone",
+              "0,49–0,85 AE"
+            ]
+          ]
+        },
+        {
+          "titel": "Energieabgabe",
+          "daten": [
+            [
+              "Leuchtkraft",
+              "0,26 L☉"
+            ],
+            [
+              "Masse",
+              "0,78 M☉"
+            ],
+            [
+              "Radius",
+              "0,76 R☉"
+            ],
+            [
+              "Effektivtemperatur",
+              "ca. 4.750 K"
+            ],
+            [
+              "Habitable Zone",
+              "ca. 0,49–0,85 AE"
+            ]
+          ],
+          "text": [
+            "Die Leuchtkraft ist mit Masse und Temperatur konsistent; dadurch kann Khaluun bei 0,52 AE annähernd erdähnliche Einstrahlung erhalten."
+          ]
+        }
+      ]
+    },
+    "Lebenszyklus": {
+      "gruppe": "Wissenschaft",
+      "icon": "⧗",
+      "intro": "Lebenszyklus von Ilaren.",
+      "abschnitte": [
+        {
+          "titel": "Lebensdauer",
+          "text": [
+            "Ein Stern mit 0,78 Sonnenmassen bleibt rund 19 Milliarden Jahre auf der Hauptreihe; Ilaren ist etwa 5,6 Milliarden Jahre alt."
+          ]
+        },
+        {
+          "titel": "Langlebiger Einzelstern",
+          "text": [
+            "Das Modellalter von rund 5,6 Milliarden Jahren liegt weit innerhalb der langen Hauptreihenphase eines K-Sterns. Es bleibt über Milliarden Jahre Zeit für eine stabile planetare Entwicklung."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Ilaren auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Ilaren",
+          "text": [
+            "Ilaren ist ein stabiler orangefarbener Hauptreihenstern der Spektralklasse K3 V. Mit 0,78 Sonnenmassen und rund 26 Prozent der Sonnenleuchtkraft liegt seine gemäßigte Zone näher am Stern als im Sonnensystem. Das Alter wird im Arbeitsmodell mit etwa 5,6 Milliarden Jahren angesetzt.",
+            "Ilaren ist der Zentralstern des Ilaren-Systems."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Orangefarbener Hauptreihenstern (K3 V)"
+            ],
+            [
+              "Sternsystem",
+              "Ilaren-System"
+            ],
+            [
+              "Masse",
+              "0,78 Sonnenmassen"
+            ],
+            [
+              "Radius",
+              "0,76 Sonnenradien"
+            ],
+            [
+              "Leuchtkraft",
+              "0,26 Sonnenleuchtkräfte"
+            ],
+            [
+              "Oberflächentemperatur",
+              "ca. 4.750 K"
+            ],
+            [
+              "Alter",
+              "ca. 5,6 Mrd. Jahre"
+            ],
+            [
+              "Planeten",
+              "7 (Harrek, Vosan, Khaluun, Meyt, Daran, Ulmar, Seyran)"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Khaluun",
+          "text": [
+            "Das Ilaren-System ist die Heimat der Kollektiden (Tessari): Ihr Planet Khaluun umkreist Ilaren."
+          ],
+          "verweise": [
+            [
+              "Khaluun",
+              "inhalte/himmelskoerper/planeten/details/khaluun/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Kollektiden (Tessari)",
+              "inhalte/spezies/Mentale Spezies/Kollektiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Ilaren im Raum.",
+      "abschnitte": [
+        {
+          "titel": "Lage im Raum",
+          "daten": [
+            [
+              "Entfernung zur Sonne",
+              "143 Lichtjahre"
+            ],
+            [
+              "Nächste Nachbarsysteme",
+              "Esvar-System (100,2 Lj), Ysmeroth-System (122,6 Lj), Terev-System (125,1 Lj)"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Ilaren · Stern",
+              "Orangefarbener Hauptreihenstern (K3 V)"
+            ],
+            [
+              "Harrek · 0,15 AE",
+              "Heißer Gesteinsplanet"
+            ],
+            [
+              "Vosan · 0,31 AE",
+              "Trockener Gesteinsplanet"
+            ],
+            [
+              "Khaluun · 0,52 AE",
+              "Gemäßigter, wasserreicher Gesteinsplanet"
+            ],
+            [
+              "Meyt · 0,92 AE",
+              "Kalter Gesteinsplanet"
+            ],
+            [
+              "Daran · 2,45 AE",
+              "Gasriese"
+            ],
+            [
+              "Ulmar · 5,9 AE",
+              "Eisriese"
+            ],
+            [
+              "Ilaren-Asteroidengürtel · 1,3–1,9 AE",
+              "Asteroidengürtel"
+            ]
+          ],
+          "verweise": [
+            [
+              "Harrek",
+              "inhalte/himmelskoerper/planeten/details/harrek/hauptseite/index.html"
+            ],
+            [
+              "Vosan",
+              "inhalte/himmelskoerper/planeten/details/vosan/hauptseite/index.html"
+            ],
+            [
+              "Khaluun",
+              "inhalte/himmelskoerper/planeten/details/khaluun/hauptseite/index.html"
+            ],
+            [
+              "Meyt",
+              "inhalte/himmelskoerper/planeten/details/meyt/hauptseite/index.html"
+            ],
+            [
+              "Daran",
+              "inhalte/himmelskoerper/planeten/details/daran/hauptseite/index.html"
+            ],
+            [
+              "Ulmar",
+              "inhalte/himmelskoerper/planeten/details/ulmar/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Ilaren.",
+      "abschnitte": [
+        {
+          "titel": "Physik",
+          "daten": [
+            [
+              "Masse",
+              "0,78 Sonnenmassen"
+            ],
+            [
+              "Radius",
+              "0,76 Sonnenradien"
+            ],
+            [
+              "Leuchtkraft",
+              "0,26 Sonnenleuchtkräfte"
+            ],
+            [
+              "Oberflächentemperatur",
+              "ca. 4.750 K"
+            ],
+            [
+              "Alter",
+              "ca. 5,6 Mrd. Jahre"
+            ],
+            [
+              "Planeten",
+              "7 (Harrek, Vosan, Khaluun, Meyt, Daran, Ulmar, Seyran)"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Ilaren.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Ilaren entstand zusammen mit dem Ilaren-System vor rund 5,6 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Umgebung": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Umgebung von Ilaren.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Ilaren · Stern",
+              "Orangefarbener Hauptreihenstern (K3 V)"
+            ],
+            [
+              "Harrek · 0,15 AE",
+              "Heißer Gesteinsplanet"
+            ],
+            [
+              "Vosan · 0,31 AE",
+              "Trockener Gesteinsplanet"
+            ],
+            [
+              "Khaluun · 0,52 AE",
+              "Gemäßigter, wasserreicher Gesteinsplanet"
+            ],
+            [
+              "Meyt · 0,92 AE",
+              "Kalter Gesteinsplanet"
+            ],
+            [
+              "Daran · 2,45 AE",
+              "Gasriese"
+            ],
+            [
+              "Ulmar · 5,9 AE",
+              "Eisriese"
+            ],
+            [
+              "Ilaren-Asteroidengürtel · 1,3–1,9 AE",
+              "Asteroidengürtel"
+            ]
+          ],
+          "verweise": [
+            [
+              "Harrek",
+              "inhalte/himmelskoerper/planeten/details/harrek/hauptseite/index.html"
+            ],
+            [
+              "Vosan",
+              "inhalte/himmelskoerper/planeten/details/vosan/hauptseite/index.html"
+            ],
+            [
+              "Khaluun",
+              "inhalte/himmelskoerper/planeten/details/khaluun/hauptseite/index.html"
+            ],
+            [
+              "Meyt",
+              "inhalte/himmelskoerper/planeten/details/meyt/hauptseite/index.html"
+            ],
+            [
+              "Daran",
+              "inhalte/himmelskoerper/planeten/details/daran/hauptseite/index.html"
+            ],
+            [
+              "Ulmar",
+              "inhalte/himmelskoerper/planeten/details/ulmar/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Nachbarsysteme",
+          "liste": [
+            "Esvar-System – 100,2 Lichtjahre",
+            "Ysmeroth-System – 122,6 Lichtjahre",
+            "Terev-System – 125,1 Lichtjahre",
+            "Seyvar-System – 127 Lichtjahre",
+            "Orvaya-System – 127,6 Lichtjahre"
+          ]
+        },
+        {
+          "titel": "Magnetische Aktivität",
+          "text": [
+            "Ilaren wird als mäßig aktiv angesetzt. Einzelne Flares und Sternwind verändern die Weltraumwetterlage, doch das System wird nicht von einer extremen Dauereruption dominiert. Ein stellarer Begleiter ist nicht vorhanden."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Ilaren.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Wie stark schwankt die magnetische Aktivität?",
+            "Wie hat sich die Leuchtkraft seit der Entstehung verändert?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Ilaren ist mit allen Bahndaten im Ilaren-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=ilaren-stern"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Ilaren.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "7 eigene Planeten: Harrek, Vosan, Khaluun, Meyt, Daran, Ulmar, Seyran"
+          ]
+        },
+        {
+          "titel": "Planeten",
+          "karten": [
+            {
+              "titel": "Harrek",
+              "text": "9.400 km Durchmesser, Umlauf in 24 Tage. Harrek ist der innerste Planet des Systems. Seine stark bestrahlte Oberfläche ist von alten Einschlagsbecken und thermisch beanspruchtem Gestein geprägt; eine komplexe Biosphäre ist nicht bekannt."
+            },
+            {
+              "titel": "Vosan",
+              "text": "13.000 km Durchmesser, Umlauf in 71,4 Tage. Vosan ist eine trockene innere Gesteinswelt mit starken Temperaturschwankungen. Weite Ebenen, alte Einschlagslandschaften und mögliche regionale tektonische Restaktivität machen ihn zu einem Ziel geologischer Forschung."
+            },
+            {
+              "titel": "Khaluun",
+              "text": "13.124 km Durchmesser, Umlauf in 155,1 Tage. Khaluun ist die wasserreiche Heimatwelt der Tessari (Kollektiden). Rund 61 Prozent seiner Oberfläche sind von Ozeanen bedeckt. Aktive Plattentektonik, weit verzweigte Flüsse, Wanderdeltas, Nebelwälder und zwei Monde prägen die Welt."
+            },
+            {
+              "titel": "Meyt",
+              "text": "12.000 km Durchmesser, Umlauf in 364,9 Tage. Meyt ist eine kalte Gesteinswelt jenseits der gemäßigten Zone. Frostablagerungen, alte Einschläge und mögliche unterirdische Salz- oder Wasservorkommen bestimmen sein Forschungsinteresse."
+            },
+            {
+              "titel": "Daran",
+              "text": "106.000 km Durchmesser, Umlauf in 4,3 Jahre. Daran ist der größte Planet des Ilaren-Systems. Seine überwiegend leichten Gase bilden mehrere Wolken- und Druckschichten mit großräumigen Strömungen; zahlreiche Monde und ein mögliches schwaches Ringsystem sind Gegenstand weiterer Beobachtung."
+            },
+            {
+              "titel": "Ulmar",
+              "text": "49.000 km Durchmesser, Umlauf in 16,2 Jahre. Ulmar ist ein äußerer Eisriese mit ausgedehnter Atmosphäre und Hochdruckmaterialien im Inneren. Mehrere kleine und mittelgroße Monde, dynamische Windsysteme und ein Magnetfeld bieten Forschungsziele für unbemannte Missionen."
+            },
+            {
+              "titel": "Seyran",
+              "text": "14 km Durchmesser, Umlauf in 133,1 Jahre. Seyran ist ein langperiodischer eisreicher Kleinkörper aus der äußeren Region des Systems. Seine stark geneigte, langgestreckte Bahn bleibt im Arbeitsmodell außerhalb der Planetenbahnen; bei sonnennahem Durchgang bildet sich eine Koma mit Schweif."
+            }
+          ],
+          "verweise": [
+            [
+              "Harrek",
+              "inhalte/himmelskoerper/planeten/details/harrek/hauptseite/index.html"
+            ],
+            [
+              "Vosan",
+              "inhalte/himmelskoerper/planeten/details/vosan/hauptseite/index.html"
+            ],
+            [
+              "Khaluun",
+              "inhalte/himmelskoerper/planeten/details/khaluun/hauptseite/index.html"
+            ],
+            [
+              "Meyt",
+              "inhalte/himmelskoerper/planeten/details/meyt/hauptseite/index.html"
+            ],
+            [
+              "Daran",
+              "inhalte/himmelskoerper/planeten/details/daran/hauptseite/index.html"
+            ],
+            [
+              "Ulmar",
+              "inhalte/himmelskoerper/planeten/details/ulmar/hauptseite/index.html"
+            ],
+            [
+              "Seyran",
+              "inhalte/himmelskoerper/kometen/details/seyran/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Ilaren.",
+      "abschnitte": [
+        {
+          "titel": "Ilaren – Archivbild",
+          "bild": true,
+          "bildtext": "Ilaren"
+        }
+      ]
+    }
+  }
+}

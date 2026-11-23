@@ -1,0 +1,546 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Vesh",
+  "genitiv": "von Vesh",
+  "dossierName": "Vesh-Dossier",
+  "klasse": "Mond",
+  "intro": "Vesh ist der große natürliche Mond Seyraths – rund 2.600 km im Durchmesser, in etwa 335.000 km Abstand. Er beeinflusst die Gezeiten und die langfristigen mechanischen Belastungszyklen der Kruste; ein gewaltiger Krustenbruch zieht sich über seine eigene Oberfläche. Vesh umkreist Seyrath in 24,1 Tage.",
+  "globusDaten": {
+    "planet": "gigantischer-krustenbruch-auf-dem-mond",
+    "klasse": "Gestein",
+    "radius": 1300000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=seyrath-stern&objekt=seyrath-vesh",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-5B0D65A55C"
+    ],
+    [
+      "Typ",
+      "Mond"
+    ],
+    [
+      "Sternsystem",
+      "Kelira-System"
+    ],
+    [
+      "Zentralkörper",
+      "Seyrath"
+    ],
+    [
+      "Große Halbachse",
+      "335.155 km"
+    ],
+    [
+      "Umlaufzeit",
+      "24,1 Tage"
+    ],
+    [
+      "Durchmesser",
+      "2.600 km"
+    ],
+    [
+      "Masse",
+      "0,415 Mondmassen"
+    ],
+    [
+      "Schwerkraft",
+      "0,12 g"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -11 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Kelira-System"
+    ],
+    [
+      "Zentralstern",
+      "Kelira",
+      "inhalte/himmelskoerper/sterne/details/kelira/hauptseite/index.html"
+    ],
+    [
+      "Umläuft",
+      "Seyrath",
+      "inhalte/himmelskoerper/planeten/details/seyrath/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "335.155 km"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Vesh im Kelira-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=seyrath-stern&objekt=seyrath-vesh",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Kelira",
+      "href": "inhalte/himmelskoerper/sterne/details/kelira/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◍",
+      "art": "Mutterplanet",
+      "titel": "Seyrath",
+      "href": "inhalte/himmelskoerper/planeten/details/seyrath/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Chronoiden",
+      "titel": "Seyrath",
+      "href": "inhalte/himmelskoerper/planeten/details/seyrath/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Chronoiden",
+      "href": "inhalte/spezies/Mentale Spezies/Chronoiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Kelira-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=seyrath-stern&objekt=seyrath-vesh"
+    },
+    {
+      "titel": "Speziesdossier Chronoiden",
+      "href": "inhalte/spezies/Mentale Spezies/Chronoiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#090909",
+      "tiefe": "#141414",
+      "akzent": "#cdcdd1",
+      "sand": "#d1c9b3",
+      "moos": "#abc6a7",
+      "ozean": "#89acc6",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#505053"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Astronomie"
+      ],
+      [
+        "Planet",
+        "Mutterplanet"
+      ],
+      [
+        "Kräfte",
+        "Gezeiten"
+      ],
+      [
+        "Tiefe",
+        "Geologie"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Mutterplanet": {
+      "gruppe": "Wissenschaft",
+      "icon": "◐",
+      "intro": "Mutterplanet von Vesh.",
+      "abschnitte": [
+        {
+          "titel": "Seyrath",
+          "text": [
+            "Seyrath ist die Heimatwelt der Chronoiden: ein wasserführender, geologisch aktiver Gesteinsplanet mit vier Kontinenten, mineralreichen hydrothermalen Gewässern und natürlichen mineralischen Resonanzsystemen, aus denen vor rund 420.000 Jahren die ersten bewussten Chronoiden hervorgingen."
+          ],
+          "daten": [
+            [
+              "Typ",
+              "Gesteinsplanet"
+            ],
+            [
+              "Durchmesser",
+              "12.104 km"
+            ],
+            [
+              "Abstand des Mondes",
+              "335.155 km (55,4 Planetenradien)"
+            ]
+          ],
+          "verweise": [
+            [
+              "Seyrath",
+              "inhalte/himmelskoerper/planeten/details/seyrath/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Gezeiten": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gezeiten von Vesh.",
+      "abschnitte": [
+        {
+          "titel": "Gezeitenkräfte",
+          "text": [
+            "Auf seiner Bahn in 335.155 km Abstand wirken starke Gezeitenkräfte von Seyrath auf Vesh. Die leicht exzentrische Bahn (e = 0,035) knetet das Innere bei jedem Umlauf."
+          ]
+        },
+        {
+          "titel": "Belastungszyklen",
+          "text": [
+            "Vesh beeinflusst die Gezeiten Seyraths und erzeugt langfristige mechanische Belastungszyklen in der Kruste. In mineralischen Kontaktzonen wechseln dadurch Druck und Spannung im Rhythmus des Mondumlaufs – für die Entstehung der Chronoiden ein möglicher zusätzlicher Umweltfaktor, jedoch keine zwingende alleinige Voraussetzung."
+          ]
+        }
+      ]
+    },
+    "Gebundene Rotation": {
+      "gruppe": "Wissenschaft",
+      "icon": "↻",
+      "intro": "Gebundene Rotation von Vesh.",
+      "abschnitte": [
+        {
+          "titel": "Rotation",
+          "text": [
+            "Vesh wendet Seyrath vermutlich stets dieselbe Seite zu: Ein Tag dauert so lange wie ein Umlauf – 24,1 Tage."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Vesh auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Vesh",
+          "text": [
+            "Vesh ist der große natürliche Mond Seyraths – rund 2.600 km im Durchmesser, in etwa 335.000 km Abstand. Er beeinflusst die Gezeiten und die langfristigen mechanischen Belastungszyklen der Kruste; ein gewaltiger Krustenbruch zieht sich über seine eigene Oberfläche.",
+            "Vesh umkreist Seyrath in 24,1 Tage."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Mond"
+            ],
+            [
+              "Sternsystem",
+              "Kelira-System"
+            ],
+            [
+              "Zentralkörper",
+              "Seyrath"
+            ],
+            [
+              "Große Halbachse",
+              "335.155 km"
+            ],
+            [
+              "Umlaufzeit",
+              "24,1 Tage"
+            ],
+            [
+              "Durchmesser",
+              "2.600 km"
+            ],
+            [
+              "Masse",
+              "0,415 Mondmassen"
+            ],
+            [
+              "Schwerkraft",
+              "0,12 g"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -11 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Seyrath",
+          "text": [
+            "Das Kelira-System ist die Heimat der Chronoiden: Ihr Planet Seyrath umkreist Kelira, und Vesh ist einer seiner Monde."
+          ],
+          "verweise": [
+            [
+              "Seyrath",
+              "inhalte/himmelskoerper/planeten/details/seyrath/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Chronoiden",
+              "inhalte/spezies/Mentale Spezies/Chronoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Vesh im Kelira-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Seyrath"
+            ],
+            [
+              "Große Halbachse",
+              "335.155 km"
+            ],
+            [
+              "Exzentrizität",
+              "0,035"
+            ],
+            [
+              "Bahnneigung",
+              "4,8°"
+            ],
+            [
+              "Umlaufzeit",
+              "24,1 Tage"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Kelira · Stern",
+              "Orangefarbener Zwerg (K3 V)"
+            ],
+            [
+              "Arun · 0,29 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Velth · 0,38 AE",
+              "Mini-Neptun"
+            ],
+            [
+              "Isaru · 0,5 AE",
+              "Ozeanplanet"
+            ],
+            [
+              "Seyrath · 0,66 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Doran · 0,86 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Ombrel · 1,05 AE",
+              "Mini-Neptun"
+            ],
+            [
+              "Halvek · 1,27 AE",
+              "Eisplanet"
+            ],
+            [
+              "Keliras Schleier · 22–42 AE",
+              "Trümmergürtel"
+            ]
+          ],
+          "verweise": [
+            [
+              "Kelira",
+              "inhalte/himmelskoerper/sterne/details/kelira/hauptseite/index.html"
+            ],
+            [
+              "Arun",
+              "inhalte/himmelskoerper/planeten/details/arun/hauptseite/index.html"
+            ],
+            [
+              "Velth",
+              "inhalte/himmelskoerper/planeten/details/velth/hauptseite/index.html"
+            ],
+            [
+              "Isaru",
+              "inhalte/himmelskoerper/planeten/details/isaru/hauptseite/index.html"
+            ],
+            [
+              "Seyrath",
+              "inhalte/himmelskoerper/planeten/details/seyrath/hauptseite/index.html"
+            ],
+            [
+              "Doran",
+              "inhalte/himmelskoerper/planeten/details/doran/hauptseite/index.html"
+            ],
+            [
+              "Ombrel",
+              "inhalte/himmelskoerper/planeten/details/ombrel/hauptseite/index.html"
+            ],
+            [
+              "Halvek",
+              "inhalte/himmelskoerper/planeten/details/halvek/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Vesh.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "1.300 km"
+            ],
+            [
+              "Masse",
+              "0,415 Mondmassen"
+            ],
+            [
+              "Mittlere Dichte",
+              "3,31 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "1,2 m/s² (0,122 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "1,77 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Vesh.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Vesh ist geologisch weitgehend erstarrt; Einschläge haben seine Oberfläche geformt."
+          ]
+        },
+        {
+          "titel": "Der große Krustenbruch",
+          "text": [
+            "Über Vesh zieht sich ein gewaltiger Krustenbruch. Er entstand vermutlich in der Frühzeit, als der junge Mond Seyrath noch deutlich näher stand und starke Gezeitenkräfte seine Kruste verformten, während seine Bahn sich langsam aufweitete."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Vesh.",
+      "abschnitte": [
+        {
+          "titel": "Gashülle",
+          "text": [
+            "Vesh besitzt keine nennenswerte Atmosphäre – dafür ist die Schwerkraft zu gering."
+          ]
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Vesh.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 0,66 AE Abstand zu Kelira liegt die Gleichgewichtstemperatur von Vesh bei rund -11 °C – gemäßigt."
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Vesh.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Vesh entstand zusammen mit dem Kelira-System vor rund 5,4 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Vesh.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Ist der Mond eingefangen oder mit seinem Planeten entstanden?",
+            "Welche Spuren tragen seine ältesten Krater?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Vesh ist mit allen Bahndaten im Kelira-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=seyrath-stern&objekt=seyrath-vesh"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Vesh.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Vesh ist der große natürliche Mond Seyraths – rund 2.600 km im Durchmesser, in etwa 335.000 km Abstand. Er beeinflusst die Gezeiten und die langfristigen mechanischen Belastungszyklen der Kruste; ein gewaltiger Krustenbruch zieht sich über seine eigene Oberfläche."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Vesh.",
+      "abschnitte": [
+        {
+          "titel": "Vesh – Archivbild",
+          "bild": true,
+          "bildtext": "Vesh"
+        }
+      ]
+    }
+  }
+}

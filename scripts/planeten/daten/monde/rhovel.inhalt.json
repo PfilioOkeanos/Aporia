@@ -1,0 +1,609 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Rhovel",
+  "genitiv": "von Rhovel",
+  "dossierName": "Rhovel-Dossier",
+  "klasse": "Gesteinsmond",
+  "intro": "Der große Mond Tavoryns prägt die Gezeiten der Heimatwelt. Auf seinen verkraterten Hochländern und in älteren Becken liegen Forschungsstationen der Memetiden.",
+  "globusDaten": {
+    "planet": "rhovel",
+    "klasse": "Gestein",
+    "radius": 1100000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=rhaelis-stern&objekt=rhaelis-rhovel",
+  "grunddaten": [
+    [
+      "System-ID",
+      "rhaelis-rhovel"
+    ],
+    [
+      "Archiv-ID",
+      "AP-RHAELIS-RHOVEL"
+    ],
+    [
+      "Typ",
+      "Gesteinsmond"
+    ],
+    [
+      "Sternsystem",
+      "Rhaelis-System"
+    ],
+    [
+      "Zentralkörper",
+      "Tavoryn"
+    ],
+    [
+      "Große Halbachse",
+      "225.000 km"
+    ],
+    [
+      "Umlaufzeit",
+      "13,1 Tage"
+    ],
+    [
+      "Durchmesser",
+      "2.200 km"
+    ],
+    [
+      "Masse",
+      "0,22 Mondmassen"
+    ],
+    [
+      "Schwerkraft",
+      "0,09 g"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -9 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Rhaelis-System"
+    ],
+    [
+      "Zentralstern",
+      "Rhaelis",
+      "inhalte/himmelskoerper/sterne/details/rhaelis/hauptseite/index.html"
+    ],
+    [
+      "Umläuft",
+      "Tavoryn",
+      "inhalte/himmelskoerper/planeten/details/tavoryn/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "225.000 km"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Rhovel im Rhaelis-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=rhaelis-stern&objekt=rhaelis-rhovel",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Rhaelis",
+      "href": "inhalte/himmelskoerper/sterne/details/rhaelis/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◍",
+      "art": "Mutterplanet",
+      "titel": "Tavoryn",
+      "href": "inhalte/himmelskoerper/planeten/details/tavoryn/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Memetiden",
+      "titel": "Tavoryn",
+      "href": "inhalte/himmelskoerper/planeten/details/tavoryn/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Memetiden",
+      "href": "inhalte/spezies/Mentale Spezies/Memetiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Rhaelis-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=rhaelis-stern&objekt=rhaelis-rhovel"
+    },
+    {
+      "titel": "Speziesdossier Memetiden",
+      "href": "inhalte/spezies/Mentale Spezies/Memetiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#070707",
+      "tiefe": "#100f0e",
+      "akzent": "#b8b1ae",
+      "sand": "#bdb19d",
+      "moos": "#97a589",
+      "ozean": "#798f9b",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#413d3b"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Astronomie"
+      ],
+      [
+        "Planet",
+        "Mutterplanet"
+      ],
+      [
+        "Kräfte",
+        "Gezeiten"
+      ],
+      [
+        "Tiefe",
+        "Geologie"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Mutterplanet": {
+      "gruppe": "Wissenschaft",
+      "icon": "◐",
+      "intro": "Mutterplanet von Rhovel.",
+      "abschnitte": [
+        {
+          "titel": "Tavoryn",
+          "text": [
+            "Heimatwelt der Memetiden mit ausgedehnten Meeren, fünf großen Landmassen und wandernden Gezeitenwäldern."
+          ],
+          "daten": [
+            [
+              "Typ",
+              "Gemäßigter Ozean- und Gesteinsplanet"
+            ],
+            [
+              "Durchmesser",
+              "12.360 km"
+            ],
+            [
+              "Abstand des Mondes",
+              "225.000 km (36,4 Planetenradien)"
+            ]
+          ],
+          "verweise": [
+            [
+              "Tavoryn",
+              "inhalte/himmelskoerper/planeten/details/tavoryn/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Gezeiten": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gezeiten von Rhovel.",
+      "abschnitte": [
+        {
+          "titel": "Gezeitenkräfte",
+          "text": [
+            "Auf seiner Bahn in 225.000 km Abstand wirken starke Gezeitenkräfte von Tavoryn auf Rhovel."
+          ]
+        }
+      ]
+    },
+    "Gebundene Rotation": {
+      "gruppe": "Wissenschaft",
+      "icon": "↻",
+      "intro": "Gebundene Rotation von Rhovel.",
+      "abschnitte": [
+        {
+          "titel": "Rotation",
+          "text": [
+            "Rhovel wendet Tavoryn vermutlich stets dieselbe Seite zu: Ein Tag dauert so lange wie ein Umlauf – 13,1 Tage."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Rhovel auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Rhovel",
+          "text": [
+            "Der große Mond Tavoryns prägt die Gezeiten der Heimatwelt. Auf seinen verkraterten Hochländern und in älteren Becken liegen Forschungsstationen der Memetiden.",
+            "Rhovel umkreist Tavoryn in 13,1 Tage."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Gesteinsmond"
+            ],
+            [
+              "Sternsystem",
+              "Rhaelis-System"
+            ],
+            [
+              "Zentralkörper",
+              "Tavoryn"
+            ],
+            [
+              "Große Halbachse",
+              "225.000 km"
+            ],
+            [
+              "Umlaufzeit",
+              "13,1 Tage"
+            ],
+            [
+              "Durchmesser",
+              "2.200 km"
+            ],
+            [
+              "Masse",
+              "0,22 Mondmassen"
+            ],
+            [
+              "Schwerkraft",
+              "0,09 g"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -9 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Tavoryn",
+          "text": [
+            "Das Rhaelis-System ist die Heimat der Memetiden: Ihr Planet Tavoryn umkreist Rhaelis, und Rhovel ist einer seiner Monde."
+          ],
+          "verweise": [
+            [
+              "Tavoryn",
+              "inhalte/himmelskoerper/planeten/details/tavoryn/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Memetiden",
+              "inhalte/spezies/Mentale Spezies/Memetiden/hauptseite/Spezies.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Mond Rhovel",
+          "text": [
+            "Rhovel beeinflusst zusammen mit Rhaelis die Gezeiten Tavoryns.",
+            "Seine Oberfläche besitzt alte Einschlagkrater, Gebirgsketten und große Becken.",
+            "Auf dem Mond existieren memetidische Forschungseinrichtungen und technische Stationen."
+          ],
+          "daten": [
+            [
+              "Zentralplanet",
+              "Tavoryn"
+            ],
+            [
+              "Bahnradius",
+              "Ungefähr 225.000 km"
+            ],
+            [
+              "Masse",
+              "Ungefähr 0,22 Mondmassen der Erde"
+            ],
+            [
+              "Umlaufzeit",
+              "Rund 13,1 Erdentage"
+            ],
+            [
+              "Typ",
+              "Gesteinsmond"
+            ],
+            [
+              "Forschungsschwerpunkte",
+              "Mondgeologie, Gezeitenentwicklung, Raumfahrttechnik und planetare Frühgeschichte."
+            ],
+            [
+              "Spielintegration",
+              "Niedriggravitation, Bergbau, historische Mondstationen, Forschungsmissionen."
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Rhovel im Rhaelis-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Tavoryn"
+            ],
+            [
+              "Große Halbachse",
+              "225.000 km"
+            ],
+            [
+              "Exzentrizität",
+              "0,017"
+            ],
+            [
+              "Bahnneigung",
+              "0°"
+            ],
+            [
+              "Umlaufzeit",
+              "13,1 Tage"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Rhaelis · Stern",
+              "Orangefarbener Hauptreihenstern (K1 V)"
+            ],
+            [
+              "Kesvar · 0,18 AE",
+              "Heißer Gesteinsplanet"
+            ],
+            [
+              "Draoven · 0,33 AE",
+              "Heißer trockener Gesteinsplanet"
+            ],
+            [
+              "Tavoryn · 0,65 AE",
+              "Gemäßigter Ozean- und Gesteinsplanet"
+            ],
+            [
+              "Ossaryn · 1,2 AE",
+              "Kalter Gesteinsplanet"
+            ],
+            [
+              "Vaelkor · 2,45 AE",
+              "Gasriese"
+            ],
+            [
+              "Kelomar · 4,8 AE",
+              "Äußerer Gasriese"
+            ],
+            [
+              "Ithrenn · 9,2 AE",
+              "Eisriese"
+            ],
+            [
+              "Therys · 19 AE",
+              "Eisreicher Kleinkörper"
+            ],
+            [
+              "Veskar-9 · 31 AE",
+              "Dunkler Kleinkörper"
+            ],
+            [
+              "Saelith-Gürtel · 1,7–2,1 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußere Kleinkörperregion von Rhaelis · 12–43 AE",
+              "Eisreicher Kleinkörpergürtel"
+            ],
+            [
+              "Ferne Kometenpopulation von Rhaelis · 65–240 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Rhaelis",
+              "inhalte/himmelskoerper/sterne/details/rhaelis/hauptseite/index.html"
+            ],
+            [
+              "Kesvar",
+              "inhalte/himmelskoerper/planeten/details/kesvar/hauptseite/index.html"
+            ],
+            [
+              "Draoven",
+              "inhalte/himmelskoerper/planeten/details/draoven/hauptseite/index.html"
+            ],
+            [
+              "Tavoryn",
+              "inhalte/himmelskoerper/planeten/details/tavoryn/hauptseite/index.html"
+            ],
+            [
+              "Ossaryn",
+              "inhalte/himmelskoerper/planeten/details/ossaryn/hauptseite/index.html"
+            ],
+            [
+              "Vaelkor",
+              "inhalte/himmelskoerper/planeten/details/vaelkor/hauptseite/index.html"
+            ],
+            [
+              "Kelomar",
+              "inhalte/himmelskoerper/planeten/details/kelomar/hauptseite/index.html"
+            ],
+            [
+              "Ithrenn",
+              "inhalte/himmelskoerper/planeten/details/ithrenn/hauptseite/index.html"
+            ],
+            [
+              "Therys",
+              "inhalte/himmelskoerper/asteroiden/details/therys/hauptseite/index.html"
+            ],
+            [
+              "Veskar-9",
+              "inhalte/himmelskoerper/asteroiden/details/veskar-9/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Rhovel.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "1.100 km"
+            ],
+            [
+              "Masse",
+              "0,22 Mondmassen"
+            ],
+            [
+              "Mittlere Dichte",
+              "2,9 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "0,89 m/s² (0,091 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "1,4 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Rhovel.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Rhovel ist geologisch weitgehend erstarrt; Einschläge haben seine Oberfläche geformt."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Rhovel.",
+      "abschnitte": [
+        {
+          "titel": "Gashülle",
+          "text": [
+            "Rhovel besitzt keine nennenswerte Atmosphäre – dafür ist die Schwerkraft zu gering."
+          ]
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Rhovel.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 0,65 AE Abstand zu Rhaelis liegt die Gleichgewichtstemperatur von Rhovel bei rund -9 °C – gemäßigt."
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Rhovel.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Rhovel entstand zusammen mit dem Rhaelis-System vor rund 6,2 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Rhovel.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Ist der Mond eingefangen oder mit seinem Planeten entstanden?",
+            "Welche Spuren tragen seine ältesten Krater?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Rhovel ist mit allen Bahndaten im Rhaelis-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=rhaelis-stern&objekt=rhaelis-rhovel"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Rhovel.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Der große Mond Tavoryns prägt die Gezeiten der Heimatwelt. Auf seinen verkraterten Hochländern und in älteren Becken liegen Forschungsstationen der Memetiden."
+          ]
+        },
+        {
+          "titel": "Verwandte Dossiers",
+          "verweise": [
+            [
+              "Rhaelis-System",
+              "inhalte/himmelskoerper/sternensysteme/details/rhaelis-system/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Rhovel.",
+      "abschnitte": [
+        {
+          "titel": "Rhovel",
+          "bild": true,
+          "bildtext": "Illustration aus dem APORIA-Bildarchiv"
+        }
+      ]
+    }
+  }
+}

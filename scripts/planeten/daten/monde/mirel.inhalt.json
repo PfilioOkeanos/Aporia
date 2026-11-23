@@ -1,0 +1,546 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Mirel",
+  "genitiv": "von Mirel",
+  "dossierName": "Mirel-Dossier",
+  "klasse": "Mond",
+  "intro": "Mirel ist der größte Mond von Saelon V, ein abgeplatteter Eismond mit einem breiten Eisgrat entlang des Äquators. Mirel umkreist Saelon V in 6,8 Tage.",
+  "globusDaten": {
+    "planet": "oblater-eismond-mit-breitem-eisgrat",
+    "klasse": "Eis",
+    "radius": 1900000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=nalvyr-stern&objekt=nalvyr-mirel",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-B34D7FBFF5"
+    ],
+    [
+      "Typ",
+      "Mond"
+    ],
+    [
+      "Sternsystem",
+      "Saelon-System"
+    ],
+    [
+      "Zentralkörper",
+      "Saelon V"
+    ],
+    [
+      "Große Halbachse",
+      "787.258 km"
+    ],
+    [
+      "Umlaufzeit",
+      "6,8 Tage"
+    ],
+    [
+      "Durchmesser",
+      "3.800 km"
+    ],
+    [
+      "Masse",
+      "1,463 Mondmassen"
+    ],
+    [
+      "Schwerkraft",
+      "0,2 g"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -173 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Saelon-System"
+    ],
+    [
+      "Zentralstern",
+      "Saelon",
+      "inhalte/himmelskoerper/sterne/details/saelon/hauptseite/index.html"
+    ],
+    [
+      "Umläuft",
+      "Saelon V",
+      "inhalte/himmelskoerper/planeten/details/saelon-v/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "787.258 km"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Mirel im Saelon-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=nalvyr-stern&objekt=nalvyr-mirel",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Saelon",
+      "href": "inhalte/himmelskoerper/sterne/details/saelon/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◍",
+      "art": "Mutterplanet",
+      "titel": "Saelon V",
+      "href": "inhalte/himmelskoerper/planeten/details/saelon-v/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Regeneranten",
+      "titel": "Nalvyr",
+      "href": "inhalte/himmelskoerper/planeten/details/nalvyr/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Regeneranten",
+      "href": "inhalte/spezies/Biologische Spezies/Regeneranten/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Saelon-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=nalvyr-stern&objekt=nalvyr-mirel"
+    },
+    {
+      "titel": "Speziesdossier Regeneranten",
+      "href": "inhalte/spezies/Biologische Spezies/Regeneranten/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#0b0b0c",
+      "tiefe": "#18191a",
+      "akzent": "#e4ebf2",
+      "sand": "#e7e2c9",
+      "moos": "#c0e8c4",
+      "ozean": "#9accef",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#60656a"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Astronomie"
+      ],
+      [
+        "Planet",
+        "Mutterplanet"
+      ],
+      [
+        "Kräfte",
+        "Gezeiten"
+      ],
+      [
+        "Tiefe",
+        "Geologie"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Mutterplanet": {
+      "gruppe": "Wissenschaft",
+      "icon": "◐",
+      "intro": "Mutterplanet von Mirel.",
+      "abschnitte": [
+        {
+          "titel": "Saelon V",
+          "text": [
+            "Saelon V ist ein kalter, saturnähnlicher Gasriese mit einem breiten Ringsystem aus Eis."
+          ],
+          "daten": [
+            [
+              "Typ",
+              "Gasriese"
+            ],
+            [
+              "Durchmesser",
+              "114.000 km"
+            ],
+            [
+              "Abstand des Mondes",
+              "787.258 km (13,8 Planetenradien)"
+            ]
+          ],
+          "verweise": [
+            [
+              "Saelon V",
+              "inhalte/himmelskoerper/planeten/details/saelon-v/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Gezeiten": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gezeiten von Mirel.",
+      "abschnitte": [
+        {
+          "titel": "Gezeitenkräfte",
+          "text": [
+            "Auf seiner Bahn in 787.258 km Abstand wirken starke Gezeitenkräfte von Saelon V auf Mirel."
+          ]
+        }
+      ]
+    },
+    "Gebundene Rotation": {
+      "gruppe": "Wissenschaft",
+      "icon": "↻",
+      "intro": "Gebundene Rotation von Mirel.",
+      "abschnitte": [
+        {
+          "titel": "Rotation",
+          "text": [
+            "Mirel wendet Saelon V vermutlich stets dieselbe Seite zu: Ein Tag dauert so lange wie ein Umlauf – 6,8 Tage."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Mirel auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Mirel",
+          "text": [
+            "Mirel ist der größte Mond von Saelon V, ein abgeplatteter Eismond mit einem breiten Eisgrat entlang des Äquators.",
+            "Mirel umkreist Saelon V in 6,8 Tage."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Mond"
+            ],
+            [
+              "Sternsystem",
+              "Saelon-System"
+            ],
+            [
+              "Zentralkörper",
+              "Saelon V"
+            ],
+            [
+              "Große Halbachse",
+              "787.258 km"
+            ],
+            [
+              "Umlaufzeit",
+              "6,8 Tage"
+            ],
+            [
+              "Durchmesser",
+              "3.800 km"
+            ],
+            [
+              "Masse",
+              "1,463 Mondmassen"
+            ],
+            [
+              "Schwerkraft",
+              "0,2 g"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -173 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Nalvyr",
+          "text": [
+            "Das Saelon-System ist die Heimat der Regeneranten: Ihr Planet Nalvyr umkreist Saelon."
+          ],
+          "verweise": [
+            [
+              "Nalvyr",
+              "inhalte/himmelskoerper/planeten/details/nalvyr/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Regeneranten",
+              "inhalte/spezies/Biologische Spezies/Regeneranten/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Mirel im Saelon-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Saelon V"
+            ],
+            [
+              "Große Halbachse",
+              "787.258 km"
+            ],
+            [
+              "Exzentrizität",
+              "0,004"
+            ],
+            [
+              "Bahnneigung",
+              "0,3°"
+            ],
+            [
+              "Umlaufzeit",
+              "6,8 Tage"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Saelon · Stern",
+              "Orangefarbener Zwerg (K2 V)"
+            ],
+            [
+              "Saelon B · Begleitstern in 180 AE",
+              "Weißer Zwerg"
+            ],
+            [
+              "Saelon I · 0,13 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Saelon II · 0,47 AE",
+              "Ozeanplanet"
+            ],
+            [
+              "Nalvyr · 0,76 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Saelon IVa · 1,32 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Kerythra · 2,68 AE",
+              "Zwergplanet"
+            ],
+            [
+              "Saelon V · 5,4 AE",
+              "Gasriese"
+            ],
+            [
+              "Saelon VI · 16 AE",
+              "Eisriese"
+            ],
+            [
+              "Saumgürtel · 2,3–3,1 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Weißschleier · 30–42 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Saelon",
+              "inhalte/himmelskoerper/sterne/details/saelon/hauptseite/index.html"
+            ],
+            [
+              "Saelon B",
+              "inhalte/himmelskoerper/sterne/details/saelon-b/hauptseite/index.html"
+            ],
+            [
+              "Saelon I",
+              "inhalte/himmelskoerper/planeten/details/saelon-i/hauptseite/index.html"
+            ],
+            [
+              "Saelon II",
+              "inhalte/himmelskoerper/planeten/details/saelon-ii/hauptseite/index.html"
+            ],
+            [
+              "Nalvyr",
+              "inhalte/himmelskoerper/planeten/details/nalvyr/hauptseite/index.html"
+            ],
+            [
+              "Saelon IVa",
+              "inhalte/himmelskoerper/planeten/details/saelon-iva/hauptseite/index.html"
+            ],
+            [
+              "Kerythra",
+              "inhalte/himmelskoerper/zwergplaneten/details/kerythra/hauptseite/index.html"
+            ],
+            [
+              "Saelon V",
+              "inhalte/himmelskoerper/planeten/details/saelon-v/hauptseite/index.html"
+            ],
+            [
+              "Saelon VI",
+              "inhalte/himmelskoerper/planeten/details/saelon-vi/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Mirel.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "1.900 km"
+            ],
+            [
+              "Masse",
+              "1,463 Mondmassen"
+            ],
+            [
+              "Mittlere Dichte",
+              "3,74 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "1,99 m/s² (0,202 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "2,75 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Mirel.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Mirel ist geologisch weitgehend erstarrt; Einschläge haben seine Oberfläche geformt."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Mirel.",
+      "abschnitte": [
+        {
+          "titel": "Gashülle",
+          "text": [
+            "Mirel besitzt keine nennenswerte Atmosphäre – dafür ist die Schwerkraft zu gering."
+          ]
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Mirel.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 5,4 AE Abstand zu Saelon liegt die Gleichgewichtstemperatur von Mirel bei rund -173 °C – eisig kalt."
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Mirel.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Mirel entstand zusammen mit dem Saelon-System vor rund 6,1 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Mirel.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Ist der Mond eingefangen oder mit seinem Planeten entstanden?",
+            "Welche Spuren tragen seine ältesten Krater?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Mirel ist mit allen Bahndaten im Saelon-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=nalvyr-stern&objekt=nalvyr-mirel"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Mirel.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Mirel ist der größte Mond von Saelon V, ein abgeplatteter Eismond mit einem breiten Eisgrat entlang des Äquators."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Mirel.",
+      "abschnitte": [
+        {
+          "titel": "Mirel – Archivbild",
+          "bild": true,
+          "bildtext": "Mirel"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,353 @@
+{
+  "slug": "erde",
+  "name": "Erde",
+  "klasse": "Planet · Klasse: Gesteinsplanet",
+  "intro": "Die Erde ist der dritte Planet der Sonne und die einzige bekannte Welt mit Leben. Ozeane, Kontinente und eine schützende Atmosphäre prägen ihre vielfältigen Lebensräume.",
+  "panorama": [
+    "assets/bilder/Alle Spezies+Übersicht/Biologische Spezies/Humanoide/Unterseiten/Heimatwelt/bilder/landschaften-erde.png",
+    "assets/bilder/Himmelskörper/OzeanWelt/erde/hauptseite/erde-im-sternenmeer-ea30323b42.webp"
+  ],
+  "globus": "assets/bilder/Himmelskörper/OzeanWelt/erde/hauptseite/erde-im-sternenmeer-ea30323b42.webp",
+  "grunddaten": [
+    [
+      "Typ",
+      "Gesteinsplanet"
+    ],
+    [
+      "Äquatordurchmesser",
+      "12.756 km"
+    ],
+    [
+      "Masse",
+      "5,97 × 10²⁴ kg"
+    ],
+    [
+      "Schwerkraft",
+      "ca. 9,81 m/s²"
+    ],
+    [
+      "Umlaufzeit",
+      "365,25 Tage"
+    ],
+    [
+      "Rotation relativ zu den Sternen",
+      "23 h 56 min"
+    ],
+    [
+      "Mittlerer Abstand zur Sonne",
+      "149,6 Mio. km"
+    ],
+    [
+      "Atmosphäre (trocken)",
+      "78 % Stickstoff, 21 % Sauerstoff, rund 1 % weitere Gase"
+    ],
+    [
+      "Mittlere Oberflächentemperatur",
+      "ca. 15 °C"
+    ],
+    [
+      "Monde",
+      "1 (Erdmond)"
+    ],
+    [
+      "Ozeanbedeckung",
+      "ca. 71 %"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Sonnensystem",
+      "inhalte/Kosmologie/Sternensysteme/details/sonnensystem/hauptseite/index.html"
+    ],
+    [
+      "Galaxie",
+      "Milchstraße"
+    ],
+    [
+      "Spiralarm",
+      "Orion-Spur"
+    ],
+    [
+      "Region",
+      "Lokale Interstellare Wolke"
+    ],
+    [
+      "Aporia-Sektor",
+      "02"
+    ]
+  ],
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=Kugel 1",
+  "verknuepfungen": [
+    {
+      "icon": "☉",
+      "art": "Stern",
+      "titel": "Sonne",
+      "href": "inhalte/himmelskoerper/sterne/details/sonne/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "☾",
+      "art": "Mond",
+      "titel": "Erdmond",
+      "href": "inhalte/himmelskoerper/monde/details/mond/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Spezies",
+      "titel": "Menschheit",
+      "href": "inhalte/spezies/Biologische Spezies/Humanoide/Hauptseite/Spezies.html",
+      "route": "spezies-biological-1"
+    },
+    {
+      "icon": "❧",
+      "art": "Biosphäre",
+      "titel": "Ökosysteme",
+      "href": "inhalte/himmelskoerper/planeten/details/erde/unterseiten/10 – Biosphäre/index.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "href": "https://science.nasa.gov/earth/facts/",
+      "titel": "NASA · Erdfakten"
+    },
+    {
+      "href": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+      "titel": "NASA · Planetary Fact Sheet"
+    }
+  ],
+  "lebenSlug": "erde-im-sternenmeer",
+  "kapitel": [
+    {
+      "nr": 1,
+      "titel": "Allgemeines",
+      "ordner": "01 – Allgemeines",
+      "datei": "inhalte/himmelskoerper/planeten/details/erde/unterseiten/01 – Allgemeines/index.html",
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Der dritte Planet der Sonne und der einzige, auf dem bisher Leben nachgewiesen wurde.",
+      "bild": "assets/bilder/Alle Spezies+Übersicht/Biologische Spezies/Humanoide/Unterseiten/Heimatwelt/bilder/landschaften-erde.png",
+      "kopfbild": null
+    },
+    {
+      "nr": 2,
+      "titel": "Astronomie",
+      "ordner": "02 – Astronomie",
+      "datei": "inhalte/himmelskoerper/planeten/details/erde/unterseiten/02 – Astronomie/index.html",
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "",
+      "bild": "assets/bilder/Kosmologie/Galaxien/rhoelrin-galaxie/hauptseite/Cyanblaue Staubgalaxie mit Goldkern-37.png",
+      "kopfbild": null
+    },
+    {
+      "nr": 3,
+      "titel": "Physik",
+      "ordner": "03 – Physik",
+      "datei": "inhalte/himmelskoerper/planeten/details/erde/unterseiten/03 – Physik/index.html",
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Größe, Masse, Dichte, Gravitation und Magnetfeld der Erde.",
+      "bild": "assets/bilder/Alle Spezies+Übersicht/Biologische Spezies/Humanoide/Unterseiten/Heimatwelt/bilder/erde-aus-dem-orbit.png",
+      "kopfbild": null
+    },
+    {
+      "nr": 4,
+      "titel": "Planetare Struktur",
+      "ordner": "04 – Planetare Struktur",
+      "datei": "inhalte/himmelskoerper/planeten/details/erde/unterseiten/04 – Planetare Struktur/index.html",
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Von der dünnen Erdkruste bis zum festen inneren Kern.",
+      "bild": "assets/bilder/Himmelskörper/Vulkanwelten/_Übersicht/vulkanwelt/hauptseite/vulkanwelt.webp",
+      "kopfbild": null
+    },
+    {
+      "nr": 5,
+      "titel": "Geografie",
+      "ordner": "05 – Geografie",
+      "datei": "inhalte/himmelskoerper/planeten/details/erde/unterseiten/05 – Geografie/index.html",
+      "gruppe": "Natur",
+      "icon": "△",
+      "intro": "Die räumliche Gestalt und Nutzung der Erdoberfläche.",
+      "bild": "assets/bilder/Alle Spezies+Übersicht/Biologische Spezies/Humanoide/Unterseiten/Heimatwelt/bilder/landschaften-erde.png",
+      "kopfbild": "assets/bilder/Alle Spezies+Übersicht/Biologische Spezies/Humanoide/Unterseiten/Heimatwelt/bilder/landschaften-erde.png"
+    },
+    {
+      "nr": 6,
+      "titel": "Atmosphäre",
+      "ordner": "06 – Atmosphäre",
+      "datei": "inhalte/himmelskoerper/planeten/details/erde/unterseiten/06 – Atmosphäre/index.html",
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Die gasförmige Hülle der Erde und der Schauplatz des Wetters.",
+      "bild": "assets/bilder/Alle Spezies+Übersicht/Biologische Spezies/Humanoide/Unterseiten/Heimatwelt/bilder/erde-aus-dem-orbit.png",
+      "kopfbild": "assets/bilder/Alle Spezies+Übersicht/Biologische Spezies/Humanoide/Unterseiten/Heimatwelt/bilder/erde-aus-dem-orbit.png"
+    },
+    {
+      "nr": 7,
+      "titel": "Klima",
+      "ordner": "07 – Klima",
+      "datei": "inhalte/himmelskoerper/planeten/details/erde/unterseiten/07 – Klima/index.html",
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Die langfristigen Wetterverhältnisse der Erde und ihr Wandel.",
+      "bild": "assets/bilder/Alle Spezies+Übersicht/Biologische Spezies/Humanoide/Unterseiten/Heimatwelt/bilder/erde-nacht.png",
+      "kopfbild": "assets/bilder/Alle Spezies+Übersicht/Biologische Spezies/Humanoide/Unterseiten/Heimatwelt/bilder/erde-aus-dem-orbit.png"
+    },
+    {
+      "nr": 8,
+      "titel": "Gewässer",
+      "ordner": "08 – Gewässer",
+      "datei": "inhalte/himmelskoerper/planeten/details/erde/unterseiten/08 – Gewässer/index.html",
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Ozeane, Flüsse, Seen, Grundwasser und Eis im globalen Wasserkreislauf.",
+      "bild": "assets/bilder/Himmelskörper/OzeanWelt/erde/hauptseite/erde-im-sternenmeer-ea30323b42.webp",
+      "kopfbild": "assets/bilder/Alle Spezies+Übersicht/Biologische Spezies/Humanoide/Unterseiten/Heimatwelt/bilder/erde-aus-dem-orbit.png"
+    },
+    {
+      "nr": 9,
+      "titel": "Geologie",
+      "ordner": "09 – Geologie",
+      "datei": "inhalte/himmelskoerper/planeten/details/erde/unterseiten/09 – Geologie/index.html",
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Plattentektonik, Gesteinskreislauf und die Veränderung der Erdoberfläche.",
+      "bild": "assets/bilder/Himmelskörper/Vulkanwelten/_Übersicht/vulkanwelt/hauptseite/vulkanwelt.webp",
+      "kopfbild": null
+    },
+    {
+      "nr": 10,
+      "titel": "Biosphäre",
+      "ordner": "10 – Biosphäre",
+      "datei": "inhalte/himmelskoerper/planeten/details/erde/unterseiten/10 – Biosphäre/index.html",
+      "gruppe": "Natur",
+      "icon": "❧",
+      "intro": "Lebensräume, Nahrungsnetze, Artenvielfalt und Stoffkreisläufe.",
+      "bild": "assets/bilder/Himmelskörper/Gesteinsplaneten/_Übersicht/waldwelt/hauptseite/waldwelt.webp",
+      "kopfbild": "assets/bilder/Alle Spezies+Übersicht/Biologische Spezies/Humanoide/Unterseiten/Heimatwelt/bilder/landschaften-erde.png"
+    },
+    {
+      "nr": 11,
+      "titel": "Spezies",
+      "ordner": "11 – Spezies",
+      "datei": "inhalte/himmelskoerper/planeten/details/erde/unterseiten/11 – Spezies/index.html",
+      "gruppe": "Zivilisation",
+      "icon": "✿",
+      "intro": "Reale Arten und Organismen der Erde im durchsuchbaren Dossier.",
+      "bild": "assets/bilder/Himmelskörper/Gesteinsplaneten/_Übersicht/waldwelt/hauptseite/waldwelt.webp",
+      "kopfbild": "assets/bilder/Alle Spezies+Übersicht/Biologische Spezies/Humanoide/Unterseiten/Heimatwelt/bilder/landschaften-erde.png"
+    },
+    {
+      "nr": 12,
+      "titel": "Zivilisation",
+      "ordner": "12 – Zivilisation",
+      "datei": "inhalte/himmelskoerper/planeten/details/erde/unterseiten/12 – Zivilisation/index.html",
+      "gruppe": "Zivilisation",
+      "icon": "▥",
+      "intro": "Menschliche Besiedlung, Gesellschaft und Kultur auf der Erde.",
+      "bild": "assets/bilder/Alle Spezies+Übersicht/Biologische Spezies/Humanoide/Unterseiten/Heimatwelt/bilder/erde-nacht.png",
+      "kopfbild": "assets/bilder/Alle Spezies+Übersicht/Biologische Spezies/Humanoide/Unterseiten/Heimatwelt/bilder/erde-nacht.png"
+    },
+    {
+      "nr": 13,
+      "titel": "Geschichte",
+      "ordner": "13 – Geschichte",
+      "datei": "inhalte/himmelskoerper/planeten/details/erde/unterseiten/13 – Geschichte/index.html",
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Von der Entstehung des Planeten bis zur Geschichte der Menschheit.",
+      "bild": "assets/bilder/Alle Spezies+Übersicht/Biologische Spezies/Humanoide/Unterseiten/Heimatwelt/bilder/landschaften-erde.png",
+      "kopfbild": "assets/bilder/Himmelskörper/OzeanWelt/erde/unterseiten/ERDE_BILDER/Geschichte/01 – Entstehung des Planeten/01_Entstehung_des_Planeten.jpg"
+    },
+    {
+      "nr": 14,
+      "titel": "Fraktionen",
+      "ordner": "14 – Fraktionen",
+      "datei": "inhalte/himmelskoerper/planeten/details/erde/unterseiten/14 – Fraktionen/index.html",
+      "gruppe": "Zivilisation",
+      "icon": "◇",
+      "intro": "Politische Ordnung der Erde und ihre Rolle unter den Großmächten von Aporia.",
+      "bild": "assets/bilder/Alle Spezies+Übersicht/Biologische Spezies/Humanoide/Unterseiten/Heimatwelt/bilder/erde-nacht.png",
+      "kopfbild": "assets/bilder/Alle Spezies+Übersicht/Biologische Spezies/Humanoide/Unterseiten/Heimatwelt/bilder/erde-aus-dem-orbit.png"
+    },
+    {
+      "nr": 15,
+      "titel": "Rohstoffe",
+      "ordner": "15 – Rohstoffe",
+      "datei": "inhalte/himmelskoerper/planeten/details/erde/unterseiten/15 – Rohstoffe/index.html",
+      "gruppe": "Weitere",
+      "icon": "⬡",
+      "intro": "Bodenschätze, Erze und Energierohstoffe der Erde.",
+      "bild": "assets/bilder/Himmelskörper/Vulkanwelten/_Übersicht/vulkanwelt/hauptseite/vulkanwelt.webp",
+      "kopfbild": "assets/bilder/Himmelskörper/OzeanWelt/erde/unterseiten/ERDE_BILDER/Rohstoffe/01 – Rohstoffübersicht & Vorkommen/01_Rohstoffubersicht_Vorkommen.jpg"
+    },
+    {
+      "nr": 16,
+      "titel": "Erforschung",
+      "ordner": "16 – Erforschung",
+      "datei": "inhalte/himmelskoerper/planeten/details/erde/unterseiten/16 – Erforschung/index.html",
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Wie die Erde vermessen, beobachtet und erforscht wird.",
+      "bild": "assets/bilder/Kosmologie/Galaxien/rhoelrin-galaxie/hauptseite/Cyanblaue Staubgalaxie mit Goldkern-37.png",
+      "kopfbild": "assets/bilder/Himmelskörper/OzeanWelt/erde/unterseiten/ERDE_BILDER/Erforschung/04 – Raumsonden & Orbitalmissionen/04_Raumsonden_Orbitalmissionen.jpg"
+    },
+    {
+      "nr": 17,
+      "titel": "Besonderheiten",
+      "ordner": "17 – Besonderheiten",
+      "datei": "inhalte/himmelskoerper/planeten/details/erde/unterseiten/17 – Besonderheiten/index.html",
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Was die Erde unter den bekannten Planeten einzigartig macht.",
+      "bild": "assets/bilder/Alle Spezies+Übersicht/Biologische Spezies/Humanoide/Unterseiten/Heimatwelt/bilder/erde-nacht.png",
+      "kopfbild": "assets/bilder/Alle Spezies+Übersicht/Biologische Spezies/Humanoide/Unterseiten/Heimatwelt/bilder/landschaften-erde.png"
+    },
+    {
+      "nr": 18,
+      "titel": "Medienarchiv",
+      "ordner": "18 – Medienarchiv",
+      "datei": "inhalte/himmelskoerper/planeten/details/erde/unterseiten/18 – Medienarchiv/index.html",
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Bilder, Wissensgrafiken, Videos und 3D-Ansicht der Erde.",
+      "bild": "assets/bilder/Alle Spezies+Übersicht/Biologische Spezies/Humanoide/Unterseiten/Heimatwelt/bilder/erde-aus-dem-orbit.png",
+      "kopfbild": "assets/bilder/Himmelskörper/OzeanWelt/erde/hauptseite/erde-im-sternenmeer-ea30323b42.webp"
+    }
+  ],
+  "design": {
+    "bildarchiv": "assets/bilder/Himmelskörper/OzeanWelt/erde/unterseiten/ERDE_BILDER",
+    "themenordner": {
+      "Planetare Struktur": "Planetare Strukturen",
+      "Allgemeines": "Geografie",
+      "Medienarchiv": "Erforschung"
+    },
+    "farben": {
+      "nacht": "#050d10"
+    },
+    "motive": {
+      "Allgemeines": "04",
+      "Astronomie": "12",
+      "Physik": "09",
+      "Planetare Struktur": "01",
+      "Geografie": "08",
+      "Atmosphäre": "03",
+      "Klima": "05",
+      "Gewässer": "18",
+      "Geologie": "03",
+      "Biosphäre": "09",
+      "Spezies": "01",
+      "Zivilisation": "01",
+      "Geschichte": "04",
+      "Fraktionen": "05",
+      "Rohstoffe": "07",
+      "Erforschung": "01",
+      "Besonderheiten": "10",
+      "Medienarchiv": "09"
+    }
+  }
+}

@@ -1,7 +1,7 @@
 @import url("../Biologie/biologie.css");
 
 .hd-layout {
-    grid-template-areas: "nav title title" "nav content side" "timeline timeline timeline" "detail detail detail";
+    grid-template-areas: "kopf kopf kopf" "nav title title" "nav content side" "timeline timeline timeline" "detail detail detail";
 }
 
 .hd-title {
@@ -32,13 +32,13 @@
 .hd-detail { grid-area: detail; }
 
 @media (max-width: 1050px) {
-    .hd-layout { grid-template-areas: "title title" "nav nav" "content side" "timeline timeline" "detail detail"; }
+    .hd-layout { grid-template-areas: "kopf kopf" "title title" "nav nav" "content side" "timeline timeline" "detail detail"; }
     .hd-intro { grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); }
     .hd-intro > img:last-child { grid-column: 1 / -1; max-height: 9rem; }
 }
 
 @media (max-width: 680px) {
-    .hd-layout { grid-template-areas: "title" "nav" "content" "side" "timeline" "detail"; }
+    .hd-layout { grid-template-areas: "kopf" "title" "nav" "content" "side" "timeline" "detail"; }
     .hd-intro, .hd-timeline { grid-template-columns: minmax(0, 1fr); }
     .hd-intro > img { max-height: 10rem; }
 }

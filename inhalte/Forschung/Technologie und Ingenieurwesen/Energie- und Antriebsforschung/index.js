@@ -77,7 +77,7 @@ const knoten = [
         "belohnung": {
             "art": "gegenstand",
             "name": "Gluhende fusionsnarbe eines jungen planeten",
-            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/Gesteinsplaneten/gluhende-fusionsnarbe-eines-jungen-planeten/hauptseite/gluhende-fusionsnarbe-eines-jungen-planeten-9b94da1622.webp"
+            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/Gesteinsplaneten/laearra/hauptseite/gluhende-fusionsnarbe-eines-jungen-planeten-9b94da1622.webp"
         }
     },
     {

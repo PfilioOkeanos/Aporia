@@ -1,2 +1,3 @@
-// Regeneranten – Forschung · erzeugt vom Spezies-Baukasten (scripts/spezies) – Änderungen dort vornehmen
+// Regeneranten – Forschung
+// Gemeinsame Funktionen (Topbar, Sidebar, Routen, Klappkapitel, Bildkarussell) kommen aus der Basis.
 import "../regeneranten-basis.js";

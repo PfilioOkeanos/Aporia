@@ -39,7 +39,12 @@ const vorschauVon = (b) => {
     // fest vorgegeben (für Körper ohne Bildarchiv-Eintrag): { vorschau: "<Medienschlüssel>", archivLink: "../../inhalte/…" }
     if (b.vorschau) return { vorschau: b.vorschau, ...(b.archivLink ? { archivLink: b.archivLink } : {}) };
     const archiv = JSON.parse(fs.readFileSync(`${ROOT}inhalte/himmelskoerper/${b.art}/bildarchiv.json`, "utf8"));
-    const link = (e) => `../../inhalte/himmelskoerper/${b.art}/details/${ordnerVon(e.slug)}/hauptseite/index.html`;
+    const link = (e) => {
+        // Archiveinträge mit gleichem Basisslug bleiben über ihren vollständigen Slug eindeutig.
+        const basis = `${ROOT}inhalte/himmelskoerper/${b.art}/details/`;
+        const ordner = fs.existsSync(`${basis}${e.slug}/hauptseite/index.html`) ? e.slug : ordnerVon(e.slug);
+        return `../../inhalte/himmelskoerper/${b.art}/details/${ordner}/hauptseite/index.html`;
+    };
     const e = b.slug ? archiv.find((x) => x.slug.startsWith(b.slug))
         : archiv.find((x) => new RegExp(b.suche, "i").test(x.title) && !vergeben.has(link(x)) && fs.existsSync(`${ROOT}inhalte/himmelskoerper/${b.art}/details/${ordnerVon(x.slug)}/hauptseite/index.html`));
     if (!e) { console.warn(`Hinweis: kein freies Bild für ${b.art}/${b.slug ?? b.suche}`); return {}; }
@@ -61,7 +66,9 @@ for (const k of def.koerper) {
     if (k.ringeAE) {   // Gürtel und Kometengebiete
         const mitte = nachId.get(k.ringUm).obj.position;
         const ringe = k.ringeAE.map((a) => a * EINHEITEN_PRO_AU);
-        const m = ringe[Math.floor(ringe.length / 2)];
+        // Ankerpunkt (Beschriftung, Link): mittlerer Ring; bei sehr weiten Gebieten (z. B. Kometenwolken) optional ankerAE,
+        // weil die Karte den Startausschnitt nach den Ankerpunkten bemisst und sonst die Planeten verschwinden
+        const m = k.ankerAE ? k.ankerAE * EINHEITEN_PRO_AU : ringe[Math.floor(ringe.length / 2)];
         // Gebiete sind keine Körper: kein sichtbarer Kugelkörper (form „guertel“, winziger Radius),
         // sichtbar werden nur die einzelnen unförmigen Brocken (Anzahl und Größe je Gebietstyp)
         // Ankerpunkt selbst ist ein unförmiger Brocken; steinMindestPx hält die Brocken auf dem Bildschirm sichtbar
@@ -106,7 +113,7 @@ for (const [id, e] of nachId) {
     }
 }
 // Abstände benachbarter Planeten in gegenseitigen Hill-Radien
-const planeten = [...nachId.values()].filter((e) => e.k && e.eltern === s.id && e.k.masseErde > 0.01).sort((x, y) => x.a - y.a);
+const planeten = [...nachId.values()].filter((e) => e.k && e.eltern === s.id && e.k.masseErde > 0.01 && !/roter zwerg|brauner zwerg|weißer zwerg/i.test(e.k.typ)).sort((x, y) => x.a - y.a);
 for (let i = 1; i < planeten.length; i++) {
     const [p, q] = [planeten[i - 1], planeten[i]];
     const rh = Math.cbrt(((p.k.masseErde + q.k.masseErde) * ERDE_IN_SONNEN) / (3 * s.masseSonne)) * (p.a + q.a) / 2;

@@ -1,0 +1,553 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Paelarnir-Gürtel",
+  "genitiv": "von Paelarnir-Gürtel",
+  "dossierName": "Paelarnir-Gürtel-Dossier",
+  "klasse": "Kleinkörpergürtel",
+  "intro": "Jenseits von Umbrel liegen eis- und gesteinsreiche Körper, teils auf stabilen Bahnen, teils durch gravitative Wechselwirkungen auf exzentrische Bahnen gelenkt – Herkunft von Kometen des inneren Systems. Äußere Kleinkörperregion umgibt Darynth im Darynth-System.",
+  "globusDaten": {
+    "planet": "gewellte-kometenscheibe-mit-kleinem-zentralstern",
+    "klasse": "Eis",
+    "radius": 1000000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=iravelle-stern&objekt=iravelle-kleinkoerper",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-2F7738805E"
+    ],
+    [
+      "Typ",
+      "Kleinkörpergürtel"
+    ],
+    [
+      "Sternsystem",
+      "Darynth-System"
+    ],
+    [
+      "Zentralkörper",
+      "Darynth"
+    ],
+    [
+      "Ausdehnung",
+      "14–30 AE"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Darynth-System"
+    ],
+    [
+      "Zentralstern",
+      "Darynth",
+      "inhalte/himmelskoerper/sterne/details/darynth/hauptseite/index.html"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Äußere Kleinkörperregion im Darynth-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=iravelle-stern&objekt=iravelle-kleinkoerper",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Darynth",
+      "href": "inhalte/himmelskoerper/sterne/details/darynth/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Oneiroiden",
+      "titel": "Iravelle",
+      "href": "inhalte/himmelskoerper/planeten/details/iravelle/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Oneiroiden",
+      "href": "inhalte/spezies/Mentale Spezies/Oneiroiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Darynth-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=iravelle-stern&objekt=iravelle-kleinkoerper"
+    },
+    {
+      "titel": "Speziesdossier Oneiroiden",
+      "href": "inhalte/spezies/Mentale Spezies/Oneiroiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#090a0b",
+      "tiefe": "#141619",
+      "akzent": "#d1deee",
+      "sand": "#d4d7c6",
+      "moos": "#aed9c1",
+      "ozean": "#8bbeeb",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#535c67"
+    },
+    "schichten": [
+      [
+        "Lage",
+        "Bahnen"
+      ],
+      [
+        "System",
+        "Planeten"
+      ],
+      [
+        "Dynamik",
+        "Stabilität"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Zentralsterne": {
+      "gruppe": "Wissenschaft",
+      "icon": "✦",
+      "intro": "Zentralsterne von Äußere Kleinkörperregion.",
+      "abschnitte": [
+        {
+          "titel": "Darynth",
+          "text": [
+            "Darynth ist ein orange bis gelborange leuchtender K3-V-Hauptreihenstern mit 0,78 Sonnenmassen und 37 % der Sonnenleuchtkraft. Mit rund 6 Milliarden Jahren ist er stabil; seine Lebensdauer auf der Hauptreihe ist erheblich länger als die der Sonne. Er ist Heimatstern der Oneiroiden."
+          ],
+          "verweise": [
+            [
+              "Darynth",
+              "inhalte/himmelskoerper/sterne/details/darynth/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Planeten": {
+      "gruppe": "Wissenschaft",
+      "icon": "◍",
+      "intro": "Planeten von Äußere Kleinkörperregion.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Darynth · Stern",
+              "Orangefarbener Zwerg (K3 V)"
+            ],
+            [
+              "Ashken · 0,18 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Doriel · 0,39 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Iravelle · 0,65 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Kavren · 1,12 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Torad · 2,9 AE",
+              "Gasriese"
+            ],
+            [
+              "Olyss · 6,1 AE",
+              "Eisriese"
+            ],
+            [
+              "Umbrel · 11,3 AE",
+              "Eisriese"
+            ],
+            [
+              "Darynth-Asteroidengürtel · 1,7–2,4 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußere Kleinkörperregion · 14–30 AE",
+              "Kleinkörpergürtel"
+            ]
+          ],
+          "verweise": [
+            [
+              "Darynth",
+              "inhalte/himmelskoerper/sterne/details/darynth/hauptseite/index.html"
+            ],
+            [
+              "Ashken",
+              "inhalte/himmelskoerper/planeten/details/ashken/hauptseite/index.html"
+            ],
+            [
+              "Doriel",
+              "inhalte/himmelskoerper/planeten/details/doriel/hauptseite/index.html"
+            ],
+            [
+              "Iravelle",
+              "inhalte/himmelskoerper/planeten/details/iravelle/hauptseite/index.html"
+            ],
+            [
+              "Kavren",
+              "inhalte/himmelskoerper/planeten/details/kavren/hauptseite/index.html"
+            ],
+            [
+              "Torad",
+              "inhalte/himmelskoerper/planeten/details/torad/hauptseite/index.html"
+            ],
+            [
+              "Olyss",
+              "inhalte/himmelskoerper/planeten/details/olyss/hauptseite/index.html"
+            ],
+            [
+              "Umbrel",
+              "inhalte/himmelskoerper/planeten/details/umbrel/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Bahnen": {
+      "gruppe": "Wissenschaft",
+      "icon": "◌",
+      "intro": "Bahnen von Äußere Kleinkörperregion.",
+      "abschnitte": [
+        {
+          "titel": "Lage",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Darynth"
+            ],
+            [
+              "Ausdehnung",
+              "14–30 AE"
+            ]
+          ]
+        }
+      ]
+    },
+    "Stabilität": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚖",
+      "intro": "Stabilität von Äußere Kleinkörperregion.",
+      "abschnitte": [
+        {
+          "titel": "Stabilität",
+          "text": [
+            "Die Brocken von Äußere Kleinkörperregion bewegen sich auf stabilen Bahnen zwischen den Planeten; Resonanzen mit den großen Planeten formen die Ränder des Gebiets."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Äußere Kleinkörperregion auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Äußere Kleinkörperregion",
+          "text": [
+            "Jenseits von Umbrel liegen eis- und gesteinsreiche Körper, teils auf stabilen Bahnen, teils durch gravitative Wechselwirkungen auf exzentrische Bahnen gelenkt – Herkunft von Kometen des inneren Systems.",
+            "Äußere Kleinkörperregion umgibt Darynth im Darynth-System."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Kleinkörpergürtel"
+            ],
+            [
+              "Sternsystem",
+              "Darynth-System"
+            ],
+            [
+              "Zentralkörper",
+              "Darynth"
+            ],
+            [
+              "Ausdehnung",
+              "14–30 AE"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Iravelle",
+          "text": [
+            "Das Darynth-System ist die Heimat der Oneiroiden: Ihr Planet Iravelle umkreist Darynth."
+          ],
+          "verweise": [
+            [
+              "Iravelle",
+              "inhalte/himmelskoerper/planeten/details/iravelle/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Oneiroiden",
+              "inhalte/spezies/Mentale Spezies/Oneiroiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Äußere Kleinkörperregion im Darynth-System.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Darynth · Stern",
+              "Orangefarbener Zwerg (K3 V)"
+            ],
+            [
+              "Ashken · 0,18 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Doriel · 0,39 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Iravelle · 0,65 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Kavren · 1,12 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Torad · 2,9 AE",
+              "Gasriese"
+            ],
+            [
+              "Olyss · 6,1 AE",
+              "Eisriese"
+            ],
+            [
+              "Umbrel · 11,3 AE",
+              "Eisriese"
+            ],
+            [
+              "Darynth-Asteroidengürtel · 1,7–2,4 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußere Kleinkörperregion · 14–30 AE",
+              "Kleinkörpergürtel"
+            ]
+          ],
+          "verweise": [
+            [
+              "Darynth",
+              "inhalte/himmelskoerper/sterne/details/darynth/hauptseite/index.html"
+            ],
+            [
+              "Ashken",
+              "inhalte/himmelskoerper/planeten/details/ashken/hauptseite/index.html"
+            ],
+            [
+              "Doriel",
+              "inhalte/himmelskoerper/planeten/details/doriel/hauptseite/index.html"
+            ],
+            [
+              "Iravelle",
+              "inhalte/himmelskoerper/planeten/details/iravelle/hauptseite/index.html"
+            ],
+            [
+              "Kavren",
+              "inhalte/himmelskoerper/planeten/details/kavren/hauptseite/index.html"
+            ],
+            [
+              "Torad",
+              "inhalte/himmelskoerper/planeten/details/torad/hauptseite/index.html"
+            ],
+            [
+              "Olyss",
+              "inhalte/himmelskoerper/planeten/details/olyss/hauptseite/index.html"
+            ],
+            [
+              "Umbrel",
+              "inhalte/himmelskoerper/planeten/details/umbrel/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Umgebung": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Umgebung von Äußere Kleinkörperregion.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Darynth · Stern",
+              "Orangefarbener Zwerg (K3 V)"
+            ],
+            [
+              "Ashken · 0,18 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Doriel · 0,39 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Iravelle · 0,65 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Kavren · 1,12 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Torad · 2,9 AE",
+              "Gasriese"
+            ],
+            [
+              "Olyss · 6,1 AE",
+              "Eisriese"
+            ],
+            [
+              "Umbrel · 11,3 AE",
+              "Eisriese"
+            ],
+            [
+              "Darynth-Asteroidengürtel · 1,7–2,4 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußere Kleinkörperregion · 14–30 AE",
+              "Kleinkörpergürtel"
+            ]
+          ],
+          "verweise": [
+            [
+              "Darynth",
+              "inhalte/himmelskoerper/sterne/details/darynth/hauptseite/index.html"
+            ],
+            [
+              "Ashken",
+              "inhalte/himmelskoerper/planeten/details/ashken/hauptseite/index.html"
+            ],
+            [
+              "Doriel",
+              "inhalte/himmelskoerper/planeten/details/doriel/hauptseite/index.html"
+            ],
+            [
+              "Iravelle",
+              "inhalte/himmelskoerper/planeten/details/iravelle/hauptseite/index.html"
+            ],
+            [
+              "Kavren",
+              "inhalte/himmelskoerper/planeten/details/kavren/hauptseite/index.html"
+            ],
+            [
+              "Torad",
+              "inhalte/himmelskoerper/planeten/details/torad/hauptseite/index.html"
+            ],
+            [
+              "Olyss",
+              "inhalte/himmelskoerper/planeten/details/olyss/hauptseite/index.html"
+            ],
+            [
+              "Umbrel",
+              "inhalte/himmelskoerper/planeten/details/umbrel/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Äußere Kleinkörperregion.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Äußere Kleinkörperregion besteht aus Material, das sich bei der Entstehung des Darynth-Systems nicht zu einem Planeten vereinte."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Äußere Kleinkörperregion.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Wie viel Masse enthält das Gebiet insgesamt?",
+            "Welche Resonanzen formen seine Ränder?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Äußere Kleinkörperregion ist mit allen Bahndaten im Darynth-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=iravelle-stern&objekt=iravelle-kleinkoerper"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Äußere Kleinkörperregion.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Jenseits von Umbrel liegen eis- und gesteinsreiche Körper, teils auf stabilen Bahnen, teils durch gravitative Wechselwirkungen auf exzentrische Bahnen gelenkt – Herkunft von Kometen des inneren Systems."
+          ]
+        },
+        {
+          "titel": "Kometenreservoir",
+          "text": [
+            "Noch weiter außen als die Kleinkörperregion ist eine ausgedehnte Population langperiodischer Kometenkörper möglich."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Äußere Kleinkörperregion.",
+      "abschnitte": [
+        {
+          "titel": "Äußere Kleinkörperregion – Archivbild",
+          "bild": true,
+          "bildtext": "Äußere Kleinkörperregion"
+        }
+      ]
+    }
+  }
+}

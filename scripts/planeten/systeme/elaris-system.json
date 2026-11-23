@@ -1,0 +1,511 @@
+{
+  "systemName": "Elaris-System",
+  "praefix": "elaris-",
+  "lage": {
+    "entfernungLj": 182,
+    "richtung": [
+      -0.51,
+      0.72,
+      0.47
+    ]
+  },
+  "einzelstern": true,
+  "einleitung": "Im Elaris-System leben die Neurofloren auf Ilaruun und die Nanomorphen auf Venyra. Sechs Hauptplaneten umkreisen den K2V-Stern Elaris A. Der Tiruun-Gürtel liegt zwischen Venyra und Daragon; jenseits von Shyren beginnt der Kaelor-Saum.",
+  "stern": {
+    "id": "elaris-stern",
+    "name": "Elaris A",
+    "typ": "Orangefarbener Hauptreihenstern (K2 V)",
+    "farbe": [
+      1,
+      0.7,
+      0.43
+    ],
+    "beschreibung": "Ein vergleichsweise ruhiger K2V-Einzelstern. Sternflecken und gelegentliche magnetische Ausbrüche prägen seinen Aktivitätszyklus.",
+    "bild": {
+      "vorschau": "himmelskoerper.bildarchiv.sterne-elaris-a",
+      "archivLink": "../../inhalte/himmelskoerper/sterne/details/elaris-a/hauptseite/index.html"
+    },
+    "masseSonne": 0.8,
+    "radiusSonne": 0.76,
+    "temperaturK": 5300,
+    "leuchtkraftSonne": 0.41,
+    "alterMrd": 5.9,
+    "emissionsfarbe": [
+      1,
+      0.74,
+      0.5
+    ],
+    "emission": 1
+  },
+  "koerper": [
+    {
+      "id": "elaris-kessar",
+      "name": "Kessar",
+      "typ": "Heißer eisenreicher Gesteinsplanet",
+      "um": "elaris-stern",
+      "aAE": 0.19,
+      "masseErde": 0.23,
+      "radiusKm": 3950,
+      "e": 0.07,
+      "albedo": 0.12,
+      "phase": 24,
+      "farbe": [
+        0.67,
+        0.39,
+        0.25
+      ],
+      "beschreibung": "Der innerste Planet besitzt eisenreiche Hochländer, dunkle Basaltflächen und eine sehr dünne Exosphäre. Er rotiert in einer 3:2-Resonanz.",
+      "bild": {
+        "vorschau": "himmelskoerper.bildarchiv.der-rostrote-eisenwustenplanet-316964b55a-vorschau",
+        "archivLink": "../../inhalte/himmelskoerper/planeten/details/kessar/hauptseite/index.html"
+      }
+    },
+    {
+      "id": "elaris-orveth",
+      "name": "Orveth",
+      "typ": "Heißer trockener Gesteinsplanet",
+      "um": "elaris-stern",
+      "aAE": 0.38,
+      "masseErde": 0.65,
+      "radiusKm": 5352,
+      "e": 0.035,
+      "albedo": 0.3,
+      "phase": 74,
+      "farbe": [
+        0.74,
+        0.44,
+        0.28
+      ],
+      "beschreibung": "Eine trockene Welt mit alten Uferlinien, hellen Salzbecken und wiederkehrenden Staubstürmen. Kiv und Renn umkreisen den Planeten.",
+      "bild": {
+        "vorschau": "himmelskoerper.bildarchiv.roter-wustenplanet-im-staubschleier-50e5a6f895-vorschau",
+        "archivLink": "../../inhalte/himmelskoerper/planeten/details/orveth/hauptseite/index.html"
+      }
+    },
+    {
+      "id": "elaris-kiv",
+      "name": "Kiv",
+      "typ": "Kleiner unregelmäßiger Gesteinsmond",
+      "um": "elaris-orveth",
+      "radiusKm": 22,
+      "periodeTage": 1.89,
+      "e": 0.005,
+      "phase": 35,
+      "farbe": [
+        0.48,
+        0.44,
+        0.39
+      ],
+      "beschreibung": "Kleiner, stark verkraterter innerer Gesteinsmond von Orveth.",
+      "bild": {
+        "vorschau": "himmelskoerper.bildarchiv.monde-kiv",
+        "archivLink": "../../inhalte/himmelskoerper/monde/details/kiv/hauptseite/index.html"
+      }
+    },
+    {
+      "id": "elaris-renn",
+      "name": "Renn",
+      "typ": "Kleiner unregelmäßiger Gesteinsmond",
+      "um": "elaris-orveth",
+      "radiusKm": 11,
+      "periodeTage": 5.35,
+      "e": 0.009,
+      "phase": 111,
+      "farbe": [
+        0.45,
+        0.4,
+        0.37
+      ],
+      "beschreibung": "Äußerer, unregelmäßig geformter Gesteinsmond von Orveth.",
+      "bild": {
+        "vorschau": "himmelskoerper.bildarchiv.monde-renn",
+        "archivLink": "../../inhalte/himmelskoerper/monde/details/renn/hauptseite/index.html"
+      }
+    },
+    {
+      "id": "elaris-ilaruun",
+      "name": "Ilaruun",
+      "typ": "Gemäßigter terrestrischer Gesteinsplanet",
+      "um": "elaris-stern",
+      "aAE": 0.66,
+      "masseErde": 1.08,
+      "radiusKm": 6562,
+      "e": 0.015,
+      "albedo": 0.3,
+      "phase": 130,
+      "zielTemperaturC": 15,
+      "farbe": [
+        0.3,
+        0.55,
+        0.64
+      ],
+      "beschreibung": "Heimatwelt der Neurofloren mit 58 Prozent Wasserbedeckung, lebhafter Tektonik und zwei größeren Monden.",
+      "bild": {
+        "vorschau": "himmelskoerper.bildarchiv.ozeanplanet-im-tiefen-sternenmeer-eb92f441fa-vorschau",
+        "archivLink": "../../inhalte/himmelskoerper/planeten/details/ilaruun/hauptseite/index.html"
+      }
+    },
+    {
+      "id": "elaris-verris",
+      "name": "Verris",
+      "typ": "Gesteinsmond",
+      "um": "elaris-ilaruun",
+      "radiusKm": 1000,
+      "periodeTage": 9.91,
+      "masseErde": 0.0018,
+      "e": 0.014,
+      "phase": 55,
+      "farbe": [
+        0.59,
+        0.56,
+        0.53
+      ],
+      "beschreibung": "Der größere, innere Mond Ilaruuns kann die sichtbare Sternscheibe fast vollständig bedecken und eine Bernsteinring-Finsternis auslösen.",
+      "bild": {
+        "vorschau": "himmelskoerper.bildarchiv.monde-verris",
+        "archivLink": "../../inhalte/himmelskoerper/monde/details/verris/hauptseite/index.html"
+      }
+    },
+    {
+      "id": "elaris-thaen",
+      "name": "Thaen",
+      "typ": "Gesteinsmond",
+      "um": "elaris-ilaruun",
+      "radiusKm": 650,
+      "periodeTage": 22.95,
+      "masseErde": 0.00045,
+      "e": 0.04,
+      "phase": 155,
+      "farbe": [
+        0.53,
+        0.5,
+        0.46
+      ],
+      "beschreibung": "Der kleinere, äußere Mond Ilaruuns könnte Eis in dauerhaft verschatteten Kratern bewahren.",
+      "bild": {
+        "vorschau": "himmelskoerper.bildarchiv.monde-thaen",
+        "archivLink": "../../inhalte/himmelskoerper/monde/details/thaen/hauptseite/index.html"
+      }
+    },
+    {
+      "id": "elaris-venyra",
+      "name": "Venyra",
+      "typ": "Kalter Gesteins- und Eisplanet",
+      "um": "elaris-stern",
+      "aAE": 1.17,
+      "masseErde": 0.58,
+      "radiusKm": 5288,
+      "e": 0.025,
+      "albedo": 0.38,
+      "phase": 194,
+      "farbe": [
+        0.58,
+        0.69,
+        0.78
+      ],
+      "beschreibung": "Kalter Gesteinsplanet mit ausgedehnten Eisflächen und Frostbrüchen. Unter mächtigen Eisschichten sind lokal geothermisch beeinflusste Zonen denkbar. Venyra ist die Siedlungswelt der Nanomorphen.",
+      "bild": {
+        "vorschau": "himmelskoerper.bildarchiv.frakturierter-eisplanet-mit-verborgenen-wasserreservoirs-a9bdb75a06-vorschau",
+        "archivLink": "../../inhalte/himmelskoerper/planeten/details/venyra/hauptseite/index.html"
+      }
+    },
+    {
+      "id": "elaris-kelun",
+      "name": "Kelun",
+      "typ": "Gesteins-Eis-Mond",
+      "um": "elaris-venyra",
+      "radiusKm": 320,
+      "periodeTage": 5,
+      "masseErde": 0.0000575,
+      "e": 0.006,
+      "phase": 72,
+      "farbe": [
+        0.56,
+        0.66,
+        0.7
+      ],
+      "beschreibung": "Ein stark verkraterter Mond Venyras mit Gesteins- und Eisablagerungen.",
+      "bild": {
+        "vorschau": "himmelskoerper.bildarchiv.monde-kelun",
+        "archivLink": "../../inhalte/himmelskoerper/monde/details/kelun/hauptseite/index.html"
+      }
+    },
+    {
+      "id": "elaris-tiruun",
+      "name": "Tiruun",
+      "typ": "Asteroidengürtel",
+      "ringUm": "elaris-stern",
+      "ringeAE": [
+        1.65,
+        2.4
+      ],
+      "ankerAE": 2.025,
+      "anzahl": 240,
+      "farbe": [
+        0.67,
+        0.51,
+        0.37
+      ],
+      "beschreibung": "Der Hauptasteroidengürtel enthält Gestein, Metalle und kohlenstoffreiches Material. Daragons Gravitation prägt seine Resonanzzonen.",
+      "bild": {
+        "vorschau": "himmelskoerper.bildarchiv.sternensysteme-vollstandiger-asteroidengurtel-im-all-9fa44d790caf",
+        "archivLink": "../../inhalte/himmelskoerper/sternensysteme/details/tiruun/hauptseite/index.html"
+      }
+    },
+    {
+      "id": "elaris-kallith",
+      "name": "Kallith",
+      "typ": "Differenzierter metallreicher Asteroid",
+      "um": "elaris-stern",
+      "aAE": 1.83,
+      "radiusKm": 180,
+      "e": 0.09,
+      "phase": 80,
+      "farbe": [
+        0.59,
+        0.51,
+        0.45
+      ],
+      "beschreibung": "Metallreicher Tiruun-Asteroid. Einschläge legten ältere Schichten aus metallischem und silikatischem Material frei.",
+      "bild": {
+        "vorschau": "himmelskoerper.bildarchiv.asteroiden-metallasteroid-mit-tiefem-einschlagkrater-d8693f77de11",
+        "archivLink": "../../inhalte/himmelskoerper/asteroiden/details/kallith/hauptseite/index.html"
+      }
+    },
+    {
+      "id": "elaris-serevin",
+      "name": "Serevin",
+      "typ": "Kohlenstoffreicher Asteroid",
+      "um": "elaris-stern",
+      "aAE": 2.21,
+      "radiusKm": 115,
+      "e": 0.07,
+      "phase": 170,
+      "farbe": [
+        0.34,
+        0.32,
+        0.31
+      ],
+      "beschreibung": "Dunkler Tiruun-Asteroid mit hydratisierten Mineralen, Kratern und unterschiedlich alten Einschlagstrümmern.",
+      "bild": {
+        "vorschau": "himmelskoerper.bildarchiv.asteroiden-kieseliger-rubble-asteroid-im-tiefenraum-9e499d66261e",
+        "archivLink": "../../inhalte/himmelskoerper/asteroiden/details/serevin/hauptseite/index.html"
+      }
+    },
+    {
+      "id": "elaris-daragon",
+      "name": "Daragon",
+      "typ": "Gasriese",
+      "um": "elaris-stern",
+      "aAE": 3.2,
+      "masseErde": 133.4886,
+      "radiusKm": 66415,
+      "e": 0.021,
+      "albedo": 0.45,
+      "phase": 245,
+      "farbe": [
+        0.81,
+        0.65,
+        0.46
+      ],
+      "beschreibung": "Gelblich gebänderter Gasriese mit Wasserstoff-Helium-Hülle, Eisringen und drei großen Monden in annähernder 1:2:4-Resonanz.",
+      "bild": {
+        "vorschau": "himmelskoerper.bildarchiv.heier-saturn-mit-gluhenden-wolken-5ba0ac0b8b-vorschau",
+        "archivLink": "../../inhalte/himmelskoerper/planeten/details/daragon/hauptseite/index.html"
+      }
+    },
+    {
+      "id": "elaris-scherbenkranz-daragon",
+      "name": "Scherbenkranz von Elaris A",
+      "typ": "Planetenring",
+      "ringUm": "elaris-daragon",
+      "ringeAE": [
+        0.0006659397926844957,
+        0.0009545137028477773
+      ],
+      "anzahl": 220,
+      "groesseKm": 1,
+      "farbe": [
+        0.79,
+        0.72,
+        0.58
+      ],
+      "beschreibung": "Daragons Eisringsystem aus Wassereis, Staub und dunklerem Gesteinsmaterial.",
+      "bild": {
+        "vorschau": "himmelskoerper.bildarchiv.monde-scherbenkranz-daragon",
+        "archivLink": "../../inhalte/himmelskoerper/monde/details/scherbenkranz-von-elaris-a/hauptseite/index.html"
+      }
+    },
+    {
+      "id": "elaris-merath",
+      "name": "Merath",
+      "typ": "Eis-Gesteins-Mond",
+      "um": "elaris-daragon",
+      "radiusKm": 1700,
+      "periodeTage": 1.52,
+      "masseErde": 0.007,
+      "e": 0.021,
+      "phase": 36,
+      "farbe": [
+        0.63,
+        0.74,
+        0.79
+      ],
+      "beschreibung": "Innerer großer Mond Daragons. Gezeitenheizung könnte unter seiner gebrochenen Eiskruste einen salzhaltigen Ozean erhalten.",
+      "bild": {
+        "vorschau": "himmelskoerper.bildarchiv.monde-merath",
+        "archivLink": "../../inhalte/himmelskoerper/monde/details/merath/hauptseite/index.html"
+      }
+    },
+    {
+      "id": "elaris-oruun",
+      "name": "Oruun",
+      "typ": "Gesteins-Eis-Mond",
+      "um": "elaris-daragon",
+      "radiusKm": 1350,
+      "periodeTage": 3.03,
+      "masseErde": 0.0035,
+      "e": 0.007,
+      "phase": 96,
+      "farbe": [
+        0.61,
+        0.66,
+        0.71
+      ],
+      "beschreibung": "Der mittlere der drei großen Daragon-Monde. Große Einschlagsbecken liegen zwischen helleren Eisregionen.",
+      "bild": {
+        "vorschau": "himmelskoerper.bildarchiv.monde-oruun",
+        "archivLink": "../../inhalte/himmelskoerper/monde/details/oruun/hauptseite/index.html"
+      }
+    },
+    {
+      "id": "elaris-kashel",
+      "name": "Kashel",
+      "typ": "Gesteins-Eis-Mond",
+      "um": "elaris-daragon",
+      "radiusKm": 950,
+      "periodeTage": 6.05,
+      "masseErde": 0.0015,
+      "e": 0.001,
+      "phase": 154,
+      "farbe": [
+        0.53,
+        0.59,
+        0.63
+      ],
+      "beschreibung": "Äußerer großer Mond Daragons mit alter, stark verkraterter Oberfläche.",
+      "bild": {
+        "vorschau": "himmelskoerper.bildarchiv.monde-kashel",
+        "archivLink": "../../inhalte/himmelskoerper/monde/details/kashel/hauptseite/index.html"
+      }
+    },
+    {
+      "id": "elaris-shyren",
+      "name": "Shyren",
+      "typ": "Blauer Eisriese",
+      "um": "elaris-stern",
+      "aAE": 5.9,
+      "masseErde": 23.84,
+      "radiusKm": 27714,
+      "e": 0.018,
+      "albedo": 0.45,
+      "phase": 310,
+      "farbe": [
+        0.28,
+        0.52,
+        0.83
+      ],
+      "beschreibung": "Der äußerste der sechs Hauptplaneten. Methan trägt zur blauen Färbung bei, und den Planeten umgeben schwache staubhaltige Ringe.",
+      "bild": {
+        "vorschau": "himmelskoerper.bildarchiv.komprimierter-gasriese-mit-blauem-rand-a1c963adbf-vorschau",
+        "archivLink": "../../inhalte/himmelskoerper/planeten/details/shyren/hauptseite/index.html"
+      }
+    },
+    {
+      "id": "elaris-nivessa",
+      "name": "Nivessa",
+      "typ": "Eisreicher Mond",
+      "um": "elaris-shyren",
+      "radiusKm": 1100,
+      "periodeTage": 4.07,
+      "masseErde": 0.0015,
+      "e": 0.006,
+      "phase": 123,
+      "farbe": [
+        0.62,
+        0.72,
+        0.81
+      ],
+      "beschreibung": "Großer eisreicher Mond Shyrens mit Kratern, Eisflächen und alten Bruchstrukturen.",
+      "bild": {
+        "vorschau": "himmelskoerper.bildarchiv.monde-nivessa",
+        "archivLink": "../../inhalte/himmelskoerper/monde/details/nivessa/hauptseite/index.html"
+      }
+    },
+    {
+      "id": "elaris-kaelor-saum",
+      "name": "Kaelor-Saum",
+      "typ": "Äußeres Kometengebiet",
+      "ringUm": "elaris-stern",
+      "ringeAE": [
+        9.5,
+        30
+      ],
+      "ankerAE": 17,
+      "anzahl": 140,
+      "groesseKm": 80,
+      "farbe": [
+        0.58,
+        0.71,
+        0.83
+      ],
+      "beschreibung": "Äußere eisreiche Kleinkörperpopulation jenseits von Shyren; im Dossier wird ihre Ausdehnung mit etwa 9,5 bis 30 AE angesetzt.",
+      "bild": {
+        "vorschau": "himmelskoerper.bildarchiv.sternensysteme-dunne-kometenwolke-um-einen-orangefarbenen-stern-353e32d5dce6",
+        "archivLink": "../../inhalte/himmelskoerper/sternensysteme/details/kaelor-saum/hauptseite/index.html"
+      }
+    },
+    {
+      "id": "elaris-eivara",
+      "name": "Eivara",
+      "typ": "Eis-Gesteins-Zwergplanet",
+      "um": "elaris-stern",
+      "aAE": 12.8,
+      "radiusKm": 740,
+      "masseErde": 0.00045,
+      "e": 0.12,
+      "phase": 90,
+      "farbe": [
+        0.57,
+        0.69,
+        0.75
+      ],
+      "beschreibung": "Zwergplanet im Kaelor-Saum mit Wassereis, Gestein, dunklen organischen Stoffen und unterschiedlich hellen Frostregionen.",
+      "bild": {
+        "vorschau": "himmelskoerper.bildarchiv.eisiger-zwergplanet-mit-polarer-risskrone-cd923ebb58-vorschau",
+        "archivLink": "../../inhalte/himmelskoerper/zwergplaneten/details/eivara/hauptseite/index.html"
+      }
+    },
+    {
+      "id": "elaris-varak",
+      "name": "Varak",
+      "typ": "Periodischer Komet",
+      "um": "elaris-stern",
+      "aAE": 13.5,
+      "radiusKm": 8,
+      "e": 0.94,
+      "i": 44,
+      "phase": 182,
+      "farbe": [
+        0.47,
+        0.66,
+        0.76
+      ],
+      "beschreibung": "Eisreicher Komet auf exzentrischer Bahn. Bei der Annäherung an Elaris können eine Koma sowie Staub- und Ionenschweife entstehen.",
+      "bild": {
+        "vorschau": "himmelskoerper.bildarchiv.kometen-komet-mit-staub-und-ionenschweif-b9d8951d4ecf",
+        "archivLink": "../../inhalte/himmelskoerper/kometen/details/varak/hauptseite/index.html"
+      }
+    }
+  ]
+}

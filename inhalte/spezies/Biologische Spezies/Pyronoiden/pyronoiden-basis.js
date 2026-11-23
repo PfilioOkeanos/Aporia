@@ -11,7 +11,6 @@ if (matchMedia("(max-width: 760px)").matches) {
 }
 
 applyAporiaRoutes(document);
-document.querySelector('.py-reiter [aria-current="page"]')?.scrollIntoView({ block: "nearest", inline: "center" });
 
 // Kapitelleiste: aktives Kapitel hervorheben, Sprung öffnet eine geschlossene Karte
 const sprung = document.querySelector("[data-py-sprung]");

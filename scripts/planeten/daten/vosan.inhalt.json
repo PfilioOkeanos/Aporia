@@ -1,0 +1,684 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Vosan",
+  "genitiv": "von Vosan",
+  "dossierName": "Vosan-Dossier",
+  "klasse": "Trockener Gesteinsplanet",
+  "intro": "Vosan ist eine trockene, staubige Gesteinswelt mit ausgedehnten Ebenen und alten Abflussformen. Anders als Harrek besitzt sie genug Abstand zu Ilaren für ein kühleres, geologisch ruhigeres Oberflächenregime.",
+  "globusDaten": {
+    "planet": "aschgrauer-wustenplanet-im-all",
+    "klasse": "Gestein",
+    "radius": 6500000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=ilaren-stern&objekt=ilaren-vosan",
+  "grunddaten": [
+    [
+      "System-ID",
+      "ilaren-vosan"
+    ],
+    [
+      "Archiv-ID",
+      "AP-0CD7F74429"
+    ],
+    [
+      "Typ",
+      "Trockener Gesteinsplanet"
+    ],
+    [
+      "Sternsystem",
+      "Ilaren-System"
+    ],
+    [
+      "Zentralkörper",
+      "Ilaren"
+    ],
+    [
+      "Große Halbachse",
+      "0,31 AE"
+    ],
+    [
+      "Umlaufzeit",
+      "71,4 Tage"
+    ],
+    [
+      "Durchmesser",
+      "13.000 km"
+    ],
+    [
+      "Masse",
+      "0,72 Erdmassen"
+    ],
+    [
+      "Schwerkraft",
+      "0,69 g"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. 59 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Ilaren-System"
+    ],
+    [
+      "Zentralstern",
+      "Ilaren",
+      "inhalte/himmelskoerper/sterne/details/ilaren/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "0,31 AE"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Vosan im Ilaren-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=ilaren-stern&objekt=ilaren-vosan",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Ilaren",
+      "href": "inhalte/himmelskoerper/sterne/details/ilaren/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Kollektiden (Tessari)",
+      "titel": "Khaluun",
+      "href": "inhalte/himmelskoerper/planeten/details/khaluun/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Kollektiden (Tessari)",
+      "href": "inhalte/spezies/Mentale Spezies/Kollektiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Ilaren-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=ilaren-stern&objekt=ilaren-vosan"
+    },
+    {
+      "titel": "Speziesdossier Kollektiden (Tessari)",
+      "href": "inhalte/spezies/Mentale Spezies/Kollektiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#090604",
+      "tiefe": "#140e0a",
+      "akzent": "#d2aa92",
+      "sand": "#d6ab8a",
+      "moos": "#af9d71",
+      "ozean": "#8c8878",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#543827"
+    }
+  },
+  "kapitel": {
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Vosan auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Vosan",
+          "text": [
+            "Vosan ist eine trockene innere Gesteinswelt mit starken Temperaturschwankungen. Weite Ebenen, alte Einschlagslandschaften und mögliche regionale tektonische Restaktivität machen ihn zu einem Ziel geologischer Forschung.",
+            "Vosan umkreist Ilaren in 0,31 AE Abstand und braucht für einen Umlauf 71,4 Tage."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Trockener Gesteinsplanet"
+            ],
+            [
+              "Sternsystem",
+              "Ilaren-System"
+            ],
+            [
+              "Zentralkörper",
+              "Ilaren"
+            ],
+            [
+              "Große Halbachse",
+              "0,31 AE"
+            ],
+            [
+              "Umlaufzeit",
+              "71,4 Tage"
+            ],
+            [
+              "Durchmesser",
+              "13.000 km"
+            ],
+            [
+              "Masse",
+              "0,72 Erdmassen"
+            ],
+            [
+              "Schwerkraft",
+              "0,69 g"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. 59 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Khaluun",
+          "text": [
+            "Das Ilaren-System ist die Heimat der Kollektiden (Tessari): Ihr Planet Khaluun umkreist Ilaren."
+          ],
+          "verweise": [
+            [
+              "Khaluun",
+              "inhalte/himmelskoerper/planeten/details/khaluun/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Kollektiden (Tessari)",
+              "inhalte/spezies/Mentale Spezies/Kollektiden/hauptseite/Spezies.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Innere Wüstenwelt",
+          "text": [
+            "Vosan liegt bei 0,31 AE. Die Einstrahlung erreicht etwa 2,7 Erden; die berechnete Gleichgewichtstemperatur beträgt rund 59 °C. Große Tag-Nacht-Spannen entstehen durch den dünnen Luftmantel."
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Vosan im Ilaren-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Ilaren"
+            ],
+            [
+              "Große Halbachse",
+              "0,31 AE (46,4 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,025"
+            ],
+            [
+              "Bahnneigung",
+              "1,4°"
+            ],
+            [
+              "Umlaufzeit",
+              "71,4 Tage"
+            ],
+            [
+              "Einstrahlung",
+              "2,706-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Am Himmel von Vosan",
+          "text": [
+            "Ilaren erscheint von hier aus etwa 1,3° groß (die Sonne von der Erde: 0,53°)."
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Ilaren · Stern",
+              "Orangefarbener Hauptreihenstern (K3 V)"
+            ],
+            [
+              "Harrek · 0,15 AE",
+              "Heißer Gesteinsplanet"
+            ],
+            [
+              "Vosan · 0,31 AE · dieses Dossier",
+              "Trockener Gesteinsplanet"
+            ],
+            [
+              "Khaluun · 0,52 AE",
+              "Gemäßigter, wasserreicher Gesteinsplanet"
+            ],
+            [
+              "Meyt · 0,92 AE",
+              "Kalter Gesteinsplanet"
+            ],
+            [
+              "Daran · 2,45 AE",
+              "Gasriese"
+            ],
+            [
+              "Ulmar · 5,9 AE",
+              "Eisriese"
+            ],
+            [
+              "Ilaren-Asteroidengürtel · 1,3–1,9 AE",
+              "Asteroidengürtel"
+            ]
+          ],
+          "verweise": [
+            [
+              "Ilaren",
+              "inhalte/himmelskoerper/sterne/details/ilaren/hauptseite/index.html"
+            ],
+            [
+              "Harrek",
+              "inhalte/himmelskoerper/planeten/details/harrek/hauptseite/index.html"
+            ],
+            [
+              "Khaluun",
+              "inhalte/himmelskoerper/planeten/details/khaluun/hauptseite/index.html"
+            ],
+            [
+              "Meyt",
+              "inhalte/himmelskoerper/planeten/details/meyt/hauptseite/index.html"
+            ],
+            [
+              "Daran",
+              "inhalte/himmelskoerper/planeten/details/daran/hauptseite/index.html"
+            ],
+            [
+              "Ulmar",
+              "inhalte/himmelskoerper/planeten/details/ulmar/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Vosan.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "6.500 km"
+            ],
+            [
+              "Masse",
+              "0,72 Erdmassen"
+            ],
+            [
+              "Mittlere Dichte",
+              "3,74 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "6,79 m/s² (0,692 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "9,4 km/s"
+            ]
+          ],
+          "vergleich": {
+            "mit": "Erde",
+            "werte": [
+              [
+                "Durchmesser",
+                13000,
+                12742,
+                "km"
+              ],
+              [
+                "Masse",
+                0.72,
+                1,
+                "Erdmassen"
+              ],
+              [
+                "Schwerkraft",
+                0.69,
+                1,
+                "g"
+              ]
+            ]
+          }
+        },
+        {
+          "titel": "Masse und Schwerkraft",
+          "daten": [
+            [
+              "Masse",
+              "0,72 Erdmassen"
+            ],
+            [
+              "Radius",
+              "6.500 km"
+            ],
+            [
+              "Abgeleitete Dichte",
+              "ca. 3,7 g/cm³"
+            ],
+            [
+              "Oberflächengravitation",
+              "ca. 6,8 m/s²"
+            ]
+          ],
+          "text": [
+            "Die relativ niedrige Gesteinsdichte ist ein Modellwert und spricht für einen silikatreichen, weniger metallreichen Aufbau als bei Harrek."
+          ]
+        }
+      ]
+    },
+    "Planetare Struktur": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Planetare Struktur von Vosan.",
+      "abschnitte": [
+        {
+          "titel": "Schalenbau",
+          "schichten": [
+            [
+              "Kruste",
+              "Silikatgestein"
+            ],
+            [
+              "Mantel",
+              "Dichteres Silikatgestein"
+            ],
+            [
+              "Kern",
+              "Eisen und Nickel"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geografie": {
+      "gruppe": "Natur",
+      "icon": "△",
+      "intro": "Geografie von Vosan.",
+      "abschnitte": [
+        {
+          "titel": "Oberfläche",
+          "text": [
+            "Die Oberfläche von Vosan ist heiß."
+          ]
+        },
+        {
+          "titel": "Erosionsbecken und alte Flussrinnen",
+          "text": [
+            "Windgeschliffene Plateaus, Kiesebenen und verzweigte Reliefrinnen bestimmen die Landschaft. Die Rinnen gelten als Relikte früherer episodischer Abflüsse; heute bestehen dort keine offenen Flüsse."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Vosan.",
+      "abschnitte": [
+        {
+          "titel": "Gashülle",
+          "text": [
+            "Vosan hält eine dünne, kalte Gashülle fest."
+          ],
+          "balken": {
+            "werte": [
+              [
+                "Kohlendioxid",
+                62
+              ],
+              [
+                "Stickstoff",
+                33
+              ],
+              [
+                "Argon",
+                5
+              ]
+            ]
+          }
+        },
+        {
+          "titel": "Dünner Kohlendioxidmantel",
+          "text": [
+            "Die Arbeitsannahme ist eine dünne, überwiegend aus Kohlendioxid bestehende Restatmosphäre mit Stickstoffanteilen und Staub. Ihr Druck und die genaue Zusammensetzung sind noch nicht gemessen und werden im Dossier als Modellwerte markiert."
+          ]
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Vosan.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 0,31 AE Abstand zu Ilaren liegt die Gleichgewichtstemperatur von Vosan bei rund 59 °C – heiß."
+          ]
+        }
+      ]
+    },
+    "Gewässer": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gewässer von Vosan.",
+      "abschnitte": [
+        {
+          "titel": "Wasser",
+          "text": [
+            "Offene Gewässer sind nicht verzeichnet."
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Vosan.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Vosan ist groß genug, um im Inneren noch Wärme zu speichern; Spuren alter vulkanischer Tätigkeit sind wahrscheinlich."
+          ]
+        }
+      ]
+    },
+    "Biosphäre": {
+      "gruppe": "Natur",
+      "icon": "❧",
+      "intro": "Biosphäre von Vosan.",
+      "abschnitte": [
+        {
+          "titel": "Leben",
+          "text": [
+            "Auf Vosan ist kein Leben verzeichnet."
+          ]
+        }
+      ]
+    },
+    "Spezies": {
+      "gruppe": "Zivilisation",
+      "icon": "✿",
+      "intro": "Spezies von Vosan.",
+      "abschnitte": [
+        {
+          "titel": "Bewohner",
+          "text": [
+            "Vosan ist keine Heimat einer intelligenten Spezies."
+          ]
+        },
+        {
+          "titel": "Im System von Khaluun",
+          "text": [
+            "Das Ilaren-System ist die Heimat der Kollektiden (Tessari): Ihr Planet Khaluun umkreist Ilaren."
+          ],
+          "verweise": [
+            [
+              "Khaluun",
+              "inhalte/himmelskoerper/planeten/details/khaluun/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Kollektiden (Tessari)",
+              "inhalte/spezies/Mentale Spezies/Kollektiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Zivilisation": {
+      "gruppe": "Zivilisation",
+      "icon": "▥",
+      "intro": "Zivilisation von Vosan.",
+      "abschnitte": [
+        {
+          "titel": "Siedlungen",
+          "text": [
+            "Für Vosan sind keine dauerhaften Siedlungen verzeichnet."
+          ]
+        },
+        {
+          "titel": "Im System von Khaluun",
+          "text": [
+            "Das Ilaren-System ist die Heimat der Kollektiden (Tessari): Ihr Planet Khaluun umkreist Ilaren."
+          ],
+          "verweise": [
+            [
+              "Khaluun",
+              "inhalte/himmelskoerper/planeten/details/khaluun/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Kollektiden (Tessari)",
+              "inhalte/spezies/Mentale Spezies/Kollektiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Vosan.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Vosan entstand zusammen mit dem Ilaren-System vor rund 5,6 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Fraktionen": {
+      "gruppe": "Zivilisation",
+      "icon": "◇",
+      "intro": "Fraktionen von Vosan.",
+      "abschnitte": [
+        {
+          "titel": "Ansprüche",
+          "text": [
+            "Für Vosan sind keine Fraktionsansprüche verzeichnet."
+          ]
+        }
+      ]
+    },
+    "Rohstoffe": {
+      "gruppe": "Weitere",
+      "icon": "⬡",
+      "intro": "Rohstoffe von Vosan.",
+      "abschnitte": [
+        {
+          "titel": "Rohstoffe",
+          "liste": [
+            "Silikatgestein",
+            "Metallerze"
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Vosan.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Wie ist der innere Aufbau beschaffen?",
+            "Gab es früher eine dichtere Atmosphäre?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Vosan ist mit allen Bahndaten im Ilaren-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=ilaren-stern&objekt=ilaren-vosan"
+            ]
+          ]
+        },
+        {
+          "titel": "Offene Messungen",
+          "liste": [
+            "Druck und jahreszeitliche Staubfracht der Atmosphäre bestimmen.",
+            "Nach unterirdischem Eis und salzhaltigen Reststoffen suchen.",
+            "Die Mineralogie der alten Abflussrinnen kartieren."
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Vosan.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Vosan ist eine trockene innere Gesteinswelt mit starken Temperaturschwankungen. Weite Ebenen, alte Einschlagslandschaften und mögliche regionale tektonische Restaktivität machen ihn zu einem Ziel geologischer Forschung."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Vosan.",
+      "abschnitte": [
+        {
+          "titel": "Vosan – Archivbild",
+          "bild": true,
+          "bildtext": "Vosan"
+        }
+      ]
+    }
+  }
+}

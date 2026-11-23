@@ -115,11 +115,11 @@
     align-items: start;
 }
 .syn-layout--index {
-    grid-template-columns: clamp(8.4rem, 11cqi, 11rem) minmax(0, 1fr) clamp(9rem, 11cqi, 11.5rem);
+    grid-template-columns: clamp(8.4rem, 11cqi, 11rem) minmax(0, 1fr);
     grid-template-areas:
-        "chapters hero rail"
-        "chapters core rail"
-        "topics topics topics";
+        "chapters hero"
+        "chapters core"
+        "topics topics";
 }
 .syn-chapters { grid-area: chapters; position: sticky; top: calc(var(--aporia-topbar-height, 78px) + .8rem); }
 .syn-rail { grid-area: rail; position: sticky; top: calc(var(--aporia-topbar-height, 78px) + .8rem); }
@@ -334,10 +334,10 @@
 
 /* ---------- Hauptreiter-Seiten ---------- */
 .syn-layout--reiter {
-    grid-template-columns: clamp(10rem, 15cqi, 14rem) minmax(0, 1fr) clamp(9rem, 11cqi, 11.5rem);
+    grid-template-columns: clamp(10rem, 15cqi, 14rem) minmax(0, 1fr);
     grid-template-areas:
-        "hero hero rail"
-        "jumps content rail";
+        "hero hero"
+        "jumps content";
 }
 .syn-jumps { grid-area: jumps; position: sticky; top: calc(var(--aporia-topbar-height, 78px) + .8rem); max-height: calc(100dvh - var(--aporia-topbar-height, 78px) - 2rem); overflow-y: auto; scrollbar-width: thin; scrollbar-color: #ffb54766 transparent; }
 .syn-jumps a { font-size: .8rem; }
@@ -450,12 +450,12 @@
 }
 @container (max-width: 980px) {
     .syn-layout--index {
-        grid-template-columns: minmax(0, 1fr) clamp(9rem, 22cqi, 11rem);
-        grid-template-areas: "hero rail" "chapters chapters" "core core" "topics topics";
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-areas: "hero" "chapters" "core" "topics";
     }
     .syn-layout--reiter {
-        grid-template-columns: minmax(0, 1fr) clamp(9rem, 22cqi, 11rem);
-        grid-template-areas: "hero rail" "jumps jumps" "content content";
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-areas: "hero" "jumps" "content";
     }
     .syn-chapters, .syn-jumps { position: static; max-height: none; display: flex; flex-wrap: wrap; align-items: center; gap: .25rem; }
     .syn-chapters > .syn-kicker, .syn-jumps > .syn-kicker { flex-basis: 100%; }
@@ -464,8 +464,8 @@
 }
 @container (max-width: 700px) {
     .syn-layout--index, .syn-layout--reiter { grid-template-columns: minmax(0, 1fr); }
-    .syn-layout--index { grid-template-areas: "rail" "hero" "chapters" "core" "topics"; }
-    .syn-layout--reiter { grid-template-areas: "rail" "hero" "jumps" "content"; }
+    .syn-layout--index { grid-template-areas: "hero" "chapters" "core" "topics"; }
+    .syn-layout--reiter { grid-template-areas: "hero" "jumps" "content"; }
     .syn-rail { position: static; }
     .syn-rail > .syn-kicker { display: none; }
     .syn-rail nav { display: flex; flex-wrap: wrap; justify-content: center; margin: 0; }

@@ -1,0 +1,571 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Saumgürtel",
+  "genitiv": "von Saumgürtel",
+  "dossierName": "Saumgürtel-Dossier",
+  "klasse": "Asteroidengürtel",
+  "intro": "Der Saumgürtel zwischen 2,3 und 3,05 AE ist auffallend reich an schweren Elementen – Material, das Saelon B in seiner Riesenphase einst ins System blies. Saumgürtel umgibt Saelon im Saelon-System.",
+  "globusDaten": {
+    "planet": "jassoras-weiter-asteroidengurtel",
+    "klasse": "Gestein",
+    "radius": 1000000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=nalvyr-stern&objekt=nalvyr-saumgurtel",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-0D3D411145"
+    ],
+    [
+      "Typ",
+      "Asteroidengürtel"
+    ],
+    [
+      "Sternsystem",
+      "Saelon-System"
+    ],
+    [
+      "Zentralkörper",
+      "Saelon"
+    ],
+    [
+      "Ausdehnung",
+      "2,3–3,05 AE"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Saelon-System"
+    ],
+    [
+      "Zentralstern",
+      "Saelon",
+      "inhalte/himmelskoerper/sterne/details/saelon/hauptseite/index.html"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Saumgürtel im Saelon-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=nalvyr-stern&objekt=nalvyr-saumgurtel",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Saelon",
+      "href": "inhalte/himmelskoerper/sterne/details/saelon/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Regeneranten",
+      "titel": "Nalvyr",
+      "href": "inhalte/himmelskoerper/planeten/details/nalvyr/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Regeneranten",
+      "href": "inhalte/spezies/Biologische Spezies/Regeneranten/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Saelon-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=nalvyr-stern&objekt=nalvyr-saumgurtel"
+    },
+    {
+      "titel": "Speziesdossier Regeneranten",
+      "href": "inhalte/spezies/Biologische Spezies/Regeneranten/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#080807",
+      "tiefe": "#13110f",
+      "akzent": "#c7bdb3",
+      "sand": "#cbbaa0",
+      "moos": "#a5b38d",
+      "ozean": "#849ba1",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#4c453e"
+    },
+    "schichten": [
+      [
+        "Lage",
+        "Bahnen"
+      ],
+      [
+        "System",
+        "Planeten"
+      ],
+      [
+        "Dynamik",
+        "Stabilität"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Zentralsterne": {
+      "gruppe": "Wissenschaft",
+      "icon": "✦",
+      "intro": "Zentralsterne von Saumgürtel.",
+      "abschnitte": [
+        {
+          "titel": "Saelon",
+          "text": [
+            "Saelon ist ein alter, orangefarbener Hauptreihenstern der Spektralklasse K2 V mit 82 % der Sonnenmasse und 55 % ihrer Leuchtkraft. Mit rund 6,1 Milliarden Jahren ist er deutlich älter als die Sonne; seine magnetische Aktivität ist moderat, gelegentlich treten stärkere Aktivitätsphasen auf. Er ist Heimatstern der Regeneranten und Hauptstern eines Doppelsternsystems mit einem Weißen Zwerg."
+          ],
+          "verweise": [
+            [
+              "Saelon",
+              "inhalte/himmelskoerper/sterne/details/saelon/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Planeten": {
+      "gruppe": "Wissenschaft",
+      "icon": "◍",
+      "intro": "Planeten von Saumgürtel.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Saelon · Stern",
+              "Orangefarbener Zwerg (K2 V)"
+            ],
+            [
+              "Saelon B · Begleitstern in 180 AE",
+              "Weißer Zwerg"
+            ],
+            [
+              "Saelon I · 0,13 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Saelon II · 0,47 AE",
+              "Ozeanplanet"
+            ],
+            [
+              "Nalvyr · 0,76 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Saelon IVa · 1,32 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Kerythra · 2,68 AE",
+              "Zwergplanet"
+            ],
+            [
+              "Saelon V · 5,4 AE",
+              "Gasriese"
+            ],
+            [
+              "Saelon VI · 16 AE",
+              "Eisriese"
+            ],
+            [
+              "Saumgürtel · 2,3–3,1 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Weißschleier · 30–42 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Saelon",
+              "inhalte/himmelskoerper/sterne/details/saelon/hauptseite/index.html"
+            ],
+            [
+              "Saelon B",
+              "inhalte/himmelskoerper/sterne/details/saelon-b/hauptseite/index.html"
+            ],
+            [
+              "Saelon I",
+              "inhalte/himmelskoerper/planeten/details/saelon-i/hauptseite/index.html"
+            ],
+            [
+              "Saelon II",
+              "inhalte/himmelskoerper/planeten/details/saelon-ii/hauptseite/index.html"
+            ],
+            [
+              "Nalvyr",
+              "inhalte/himmelskoerper/planeten/details/nalvyr/hauptseite/index.html"
+            ],
+            [
+              "Saelon IVa",
+              "inhalte/himmelskoerper/planeten/details/saelon-iva/hauptseite/index.html"
+            ],
+            [
+              "Kerythra",
+              "inhalte/himmelskoerper/zwergplaneten/details/kerythra/hauptseite/index.html"
+            ],
+            [
+              "Saelon V",
+              "inhalte/himmelskoerper/planeten/details/saelon-v/hauptseite/index.html"
+            ],
+            [
+              "Saelon VI",
+              "inhalte/himmelskoerper/planeten/details/saelon-vi/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Bahnen": {
+      "gruppe": "Wissenschaft",
+      "icon": "◌",
+      "intro": "Bahnen von Saumgürtel.",
+      "abschnitte": [
+        {
+          "titel": "Lage",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Saelon"
+            ],
+            [
+              "Ausdehnung",
+              "2,3–3,05 AE"
+            ]
+          ]
+        }
+      ]
+    },
+    "Stabilität": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚖",
+      "intro": "Stabilität von Saumgürtel.",
+      "abschnitte": [
+        {
+          "titel": "Stabilität",
+          "text": [
+            "Die Brocken von Saumgürtel bewegen sich auf stabilen Bahnen zwischen den Planeten; Resonanzen mit den großen Planeten formen die Ränder des Gebiets."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Saumgürtel auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Saumgürtel",
+          "text": [
+            "Der Saumgürtel zwischen 2,3 und 3,05 AE ist auffallend reich an schweren Elementen – Material, das Saelon B in seiner Riesenphase einst ins System blies.",
+            "Saumgürtel umgibt Saelon im Saelon-System."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Asteroidengürtel"
+            ],
+            [
+              "Sternsystem",
+              "Saelon-System"
+            ],
+            [
+              "Zentralkörper",
+              "Saelon"
+            ],
+            [
+              "Ausdehnung",
+              "2,3–3,05 AE"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Nalvyr",
+          "text": [
+            "Das Saelon-System ist die Heimat der Regeneranten: Ihr Planet Nalvyr umkreist Saelon."
+          ],
+          "verweise": [
+            [
+              "Nalvyr",
+              "inhalte/himmelskoerper/planeten/details/nalvyr/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Regeneranten",
+              "inhalte/spezies/Biologische Spezies/Regeneranten/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Saumgürtel im Saelon-System.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Saelon · Stern",
+              "Orangefarbener Zwerg (K2 V)"
+            ],
+            [
+              "Saelon B · Begleitstern in 180 AE",
+              "Weißer Zwerg"
+            ],
+            [
+              "Saelon I · 0,13 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Saelon II · 0,47 AE",
+              "Ozeanplanet"
+            ],
+            [
+              "Nalvyr · 0,76 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Saelon IVa · 1,32 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Kerythra · 2,68 AE",
+              "Zwergplanet"
+            ],
+            [
+              "Saelon V · 5,4 AE",
+              "Gasriese"
+            ],
+            [
+              "Saelon VI · 16 AE",
+              "Eisriese"
+            ],
+            [
+              "Saumgürtel · 2,3–3,1 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Weißschleier · 30–42 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Saelon",
+              "inhalte/himmelskoerper/sterne/details/saelon/hauptseite/index.html"
+            ],
+            [
+              "Saelon B",
+              "inhalte/himmelskoerper/sterne/details/saelon-b/hauptseite/index.html"
+            ],
+            [
+              "Saelon I",
+              "inhalte/himmelskoerper/planeten/details/saelon-i/hauptseite/index.html"
+            ],
+            [
+              "Saelon II",
+              "inhalte/himmelskoerper/planeten/details/saelon-ii/hauptseite/index.html"
+            ],
+            [
+              "Nalvyr",
+              "inhalte/himmelskoerper/planeten/details/nalvyr/hauptseite/index.html"
+            ],
+            [
+              "Saelon IVa",
+              "inhalte/himmelskoerper/planeten/details/saelon-iva/hauptseite/index.html"
+            ],
+            [
+              "Kerythra",
+              "inhalte/himmelskoerper/zwergplaneten/details/kerythra/hauptseite/index.html"
+            ],
+            [
+              "Saelon V",
+              "inhalte/himmelskoerper/planeten/details/saelon-v/hauptseite/index.html"
+            ],
+            [
+              "Saelon VI",
+              "inhalte/himmelskoerper/planeten/details/saelon-vi/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Umgebung": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Umgebung von Saumgürtel.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Saelon · Stern",
+              "Orangefarbener Zwerg (K2 V)"
+            ],
+            [
+              "Saelon B · Begleitstern in 180 AE",
+              "Weißer Zwerg"
+            ],
+            [
+              "Saelon I · 0,13 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Saelon II · 0,47 AE",
+              "Ozeanplanet"
+            ],
+            [
+              "Nalvyr · 0,76 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Saelon IVa · 1,32 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Kerythra · 2,68 AE",
+              "Zwergplanet"
+            ],
+            [
+              "Saelon V · 5,4 AE",
+              "Gasriese"
+            ],
+            [
+              "Saelon VI · 16 AE",
+              "Eisriese"
+            ],
+            [
+              "Saumgürtel · 2,3–3,1 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Weißschleier · 30–42 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Saelon",
+              "inhalte/himmelskoerper/sterne/details/saelon/hauptseite/index.html"
+            ],
+            [
+              "Saelon B",
+              "inhalte/himmelskoerper/sterne/details/saelon-b/hauptseite/index.html"
+            ],
+            [
+              "Saelon I",
+              "inhalte/himmelskoerper/planeten/details/saelon-i/hauptseite/index.html"
+            ],
+            [
+              "Saelon II",
+              "inhalte/himmelskoerper/planeten/details/saelon-ii/hauptseite/index.html"
+            ],
+            [
+              "Nalvyr",
+              "inhalte/himmelskoerper/planeten/details/nalvyr/hauptseite/index.html"
+            ],
+            [
+              "Saelon IVa",
+              "inhalte/himmelskoerper/planeten/details/saelon-iva/hauptseite/index.html"
+            ],
+            [
+              "Kerythra",
+              "inhalte/himmelskoerper/zwergplaneten/details/kerythra/hauptseite/index.html"
+            ],
+            [
+              "Saelon V",
+              "inhalte/himmelskoerper/planeten/details/saelon-v/hauptseite/index.html"
+            ],
+            [
+              "Saelon VI",
+              "inhalte/himmelskoerper/planeten/details/saelon-vi/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Saumgürtel.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Saumgürtel besteht aus Material, das sich bei der Entstehung des Saelon-Systems nicht zu einem Planeten vereinte."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Saumgürtel.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Wie viel Masse enthält das Gebiet insgesamt?",
+            "Welche Resonanzen formen seine Ränder?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Saumgürtel ist mit allen Bahndaten im Saelon-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=nalvyr-stern&objekt=nalvyr-saumgurtel"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Saumgürtel.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Der Saumgürtel zwischen 2,3 und 3,05 AE ist auffallend reich an schweren Elementen – Material, das Saelon B in seiner Riesenphase einst ins System blies."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Saumgürtel.",
+      "abschnitte": [
+        {
+          "titel": "Saumgürtel – Archivbild",
+          "bild": true,
+          "bildtext": "Saumgürtel"
+        }
+      ]
+    }
+  }
+}

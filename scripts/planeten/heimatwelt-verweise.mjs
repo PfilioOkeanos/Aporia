@@ -3,17 +3,22 @@
 // den Weg zum Planeten – das Gegenstück zum Speziesverweis im Planetendossier.
 // Quellen: scripts/planeten/heimatwelten/*.mjs + systeme/*-system.json, dazu EXTRA (Welten ohne Beschreibungsdatei).
 // Aufruf: node scripts/planeten/heimatwelt-verweise.mjs   (heimatwelt-bauen.mjs ruft es nach jedem Bau selbst auf)
+// Optional: Speziespfad als Argument aktualisiert nur diesen Eintrag.
 import fs from "node:fs";
 import { pathToFileURL } from "node:url";
 import { ROOT } from "./koerper.mjs";
 
 const P = "inhalte/himmelskoerper/planeten/details/";
 const EXTRA = [
+    { welt: "Vask", spezies: "Technologische Lebensformen/Autokonstrukte", ordner: "vask", systemDatei: "esvar-system", objekt: "esvar-vask" },
+    { welt: "Kavren", spezies: "Technologische Lebensformen/Technosymbionten", ordner: "kavren", systemDatei: "iravelle-system", objekt: "iravelle-kavren" },
+    { welt: "Titan", spezies: "Technologische Lebensformen/Digitaliden", ordner: "titan", dossier: "inhalte/himmelskoerper/monde/details/titan/hauptseite/index.html", system: "Kugel 1", systemName: "Sonnensystem", stern: "Sonne", objekt: "titan" },
+    { welt: "Venyra", spezies: "Technologische Lebensformen/Nanomorphen", ordner: "venyra", systemDatei: "elaris-system", objekt: "elaris-venyra" },
     { welt: "Erde", spezies: "Biologische Spezies/Humanoide", ordner: "erde-im-sternenmeer", system: "Kugel 1", systemName: "Sonnensystem", stern: "Sonne" },
     { welt: "Kharuun", spezies: "Biologische Spezies/Pyronoiden", ordner: "dammernder-vulkanplanet-mit-gluhenden-lavaseen", systemDatei: "kharuun-system" },
 ];
-const bildVon = (ordner) => {
-    const html = fs.readFileSync(`${ROOT}${P}${ordner}/hauptseite/index.html`, "utf8");
+const bildVon = (dossier) => {
+    const html = fs.readFileSync(ROOT + dossier, "utf8");
     const src = html.match(/assets\/bilder\/[^"]+\.(?:png|jpe?g|webp)/i)?.[0];
     return src ? decodeURIComponent(src) : null;
 };
@@ -28,12 +33,16 @@ for (const x of EXTRA) {
     if (x.systemDatei) { const sys = JSON.parse(fs.readFileSync(`${ROOT}scripts/planeten/systeme/${x.systemDatei}.json`, "utf8")); Object.assign(x, { system: sys.stern.id, systemName: sys.systemName, stern: sys.stern.name }); delete x.systemDatei; }
     eintraege.push(x);
 }
-const daten = {};
-for (const e of eintraege) {
-    if (!fs.existsSync(`${ROOT}${P}${e.ordner}/hauptseite/index.html`)) throw new Error("Planetendossier fehlt: " + e.ordner);
-    if (!fs.existsSync(`${ROOT}inhalte/spezies/${e.spezies}`)) throw new Error("Speziesordner fehlt: " + e.spezies);
-    daten[e.spezies] = { welt: e.welt, ordner: e.ordner, dossier: `${P}${e.ordner}/hauptseite/index.html`, bild: bildVon(e.ordner), system: e.system, systemName: e.systemName, stern: e.stern };
-}
 const ziel = `${ROOT}inhalte/spezies/_gemeinsam/heimatwelten.js`;
+const wahl = process.argv[2];
+const auswahl = wahl ? eintraege.filter((e) => e.spezies === wahl) : eintraege;
+if (!auswahl.length) throw new Error("Keine Heimatwelt für " + wahl);
+const daten = wahl && fs.existsSync(ziel) ? (await import(pathToFileURL(ziel).href)).HEIMATWELTEN : {};
+for (const e of auswahl) {
+    const dossier = e.dossier ?? `${P}${e.ordner}/hauptseite/index.html`;
+    if (!fs.existsSync(ROOT + dossier)) throw new Error("Planetendossier fehlt: " + e.ordner);
+    if (!fs.existsSync(`${ROOT}inhalte/spezies/${e.spezies}`)) throw new Error("Speziesordner fehlt: " + e.spezies);
+    daten[e.spezies] = { welt: e.welt, ordner: e.ordner, dossier, bild: bildVon(dossier), system: e.system, systemName: e.systemName, stern: e.stern, ...(e.objekt ? { objekt: e.objekt } : {}) };
+}
 fs.writeFileSync(ziel, `// Spezies → Heimatwelt · erzeugt von scripts/planeten/heimatwelt-verweise.mjs – nicht von Hand ändern.\n// Pfade relativ zum Projektordner. Verwendet von heimatwelt-verweis.js.\nexport const HEIMATWELTEN = ${JSON.stringify(daten, null, 4)};\n`);
 console.log(`heimatwelten.js: ${Object.keys(daten).length} Spezies mit Heimatwelt`);

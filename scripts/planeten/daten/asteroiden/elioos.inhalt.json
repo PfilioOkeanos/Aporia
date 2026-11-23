@@ -1,0 +1,498 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Elioos",
+  "genitiv": "von Elioos",
+  "dossierName": "Elioos-Dossier",
+  "klasse": "Asteroid",
+  "intro": "Ein Schwarm dunkler, kohlenstoffreicher Asteroiden im vorauseilenden Lagrange-Punkt L4 von Ysmeroth V – stabil gehalten von der Schwerkraft des Riesen und des Sterns. Vorlaufende Trojaner umkreist Ysmeroth in 2,9 AE Abstand und braucht für einen Umlauf 5,5 Jahre.",
+  "globusDaten": {
+    "planet": "schwarzer-kohlenstoffasteroid-im-tiefen-all",
+    "klasse": "Gestein",
+    "radius": 46000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=karynth-stern&objekt=karynth-trojaner-l4",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-CCC7C7A814"
+    ],
+    [
+      "Typ",
+      "Asteroid"
+    ],
+    [
+      "Sternsystem",
+      "Ysmeroth-System"
+    ],
+    [
+      "Zentralkörper",
+      "Ysmeroth"
+    ],
+    [
+      "Große Halbachse",
+      "2,9 AE"
+    ],
+    [
+      "Umlaufzeit",
+      "5,5 Jahre"
+    ],
+    [
+      "Durchmesser",
+      "92 km"
+    ],
+    [
+      "Masse",
+      "1,1 · 10^18 kg"
+    ],
+    [
+      "Schwerkraft",
+      "3,47 cm/s²"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -139 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Ysmeroth-System"
+    ],
+    [
+      "Zentralstern",
+      "Ysmeroth",
+      "inhalte/himmelskoerper/sterne/details/ysmeroth/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "2,9 AE"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Vorlaufende Trojaner im Ysmeroth-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=karynth-stern&objekt=karynth-trojaner-l4",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Ysmeroth",
+      "href": "inhalte/himmelskoerper/sterne/details/ysmeroth/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Metamorphen",
+      "titel": "Karynth",
+      "href": "inhalte/himmelskoerper/planeten/details/karynth/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Metamorphen",
+      "href": "inhalte/spezies/Biologische Spezies/Meta Morphen/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Ysmeroth-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=karynth-stern&objekt=karynth-trojaner-l4"
+    },
+    {
+      "titel": "Speziesdossier Metamorphen",
+      "href": "inhalte/spezies/Biologische Spezies/Meta Morphen/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#050504",
+      "tiefe": "#0b0a0a",
+      "akzent": "#9c9592",
+      "sand": "#a3998a",
+      "moos": "#7d8571",
+      "ozean": "#647178",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#2e2927"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Bahn"
+      ],
+      [
+        "Material",
+        "Zusammensetzung"
+      ],
+      [
+        "Zeit",
+        "Herkunft"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Zusammensetzung": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Zusammensetzung von Vorlaufende Trojaner.",
+      "abschnitte": [
+        {
+          "titel": "Material",
+          "liste": [
+            "Silikate",
+            "Eisen und Nickel",
+            "Seltene Metalle"
+          ],
+          "schichten": [
+            [
+              "Regolith",
+              "Staub und Gesteinsschutt"
+            ],
+            [
+              "Trümmerkörper",
+              "Lose zusammengehaltene Gesteinsbrocken"
+            ]
+          ]
+        }
+      ]
+    },
+    "Bahn": {
+      "gruppe": "Wissenschaft",
+      "icon": "◌",
+      "intro": "Bahn von Vorlaufende Trojaner.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Ysmeroth"
+            ],
+            [
+              "Große Halbachse",
+              "2,9 AE (433,8 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,17"
+            ],
+            [
+              "Bahnneigung",
+              "5,5°"
+            ],
+            [
+              "Umlaufzeit",
+              "5,5 Jahre"
+            ],
+            [
+              "Einstrahlung",
+              "0,059-fach der Erde"
+            ]
+          ]
+        }
+      ]
+    },
+    "Herkunft": {
+      "gruppe": "Weitere",
+      "icon": "⧗",
+      "intro": "Herkunft von Vorlaufende Trojaner.",
+      "abschnitte": [
+        {
+          "titel": "Herkunft",
+          "text": [
+            "Vorlaufende Trojaner ist ein Überrest aus der Entstehungszeit des Ysmeroth-Systems."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Vorlaufende Trojaner auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Vorlaufende Trojaner",
+          "text": [
+            "Ein Schwarm dunkler, kohlenstoffreicher Asteroiden im vorauseilenden Lagrange-Punkt L4 von Ysmeroth V – stabil gehalten von der Schwerkraft des Riesen und des Sterns.",
+            "Vorlaufende Trojaner umkreist Ysmeroth in 2,9 AE Abstand und braucht für einen Umlauf 5,5 Jahre."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Asteroid"
+            ],
+            [
+              "Sternsystem",
+              "Ysmeroth-System"
+            ],
+            [
+              "Zentralkörper",
+              "Ysmeroth"
+            ],
+            [
+              "Große Halbachse",
+              "2,9 AE"
+            ],
+            [
+              "Umlaufzeit",
+              "5,5 Jahre"
+            ],
+            [
+              "Durchmesser",
+              "92 km"
+            ],
+            [
+              "Masse",
+              "1,1 · 10^18 kg"
+            ],
+            [
+              "Schwerkraft",
+              "3,47 cm/s²"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -139 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Karynth",
+          "text": [
+            "Das Ysmeroth-System ist die Heimat der Metamorphen: Ihr Planet Karynth umkreist Ysmeroth."
+          ],
+          "verweise": [
+            [
+              "Karynth",
+              "inhalte/himmelskoerper/planeten/details/karynth/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Metamorphen",
+              "inhalte/spezies/Biologische Spezies/Meta Morphen/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Vorlaufende Trojaner im Ysmeroth-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Ysmeroth"
+            ],
+            [
+              "Große Halbachse",
+              "2,9 AE (433,8 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,17"
+            ],
+            [
+              "Bahnneigung",
+              "5,5°"
+            ],
+            [
+              "Umlaufzeit",
+              "5,5 Jahre"
+            ],
+            [
+              "Einstrahlung",
+              "0,059-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Ysmeroth · Stern",
+              "Orangefarbener Zwerg (K2 V)"
+            ],
+            [
+              "Ysmeroth B · Begleitstern in 310 AE",
+              "Roter Zwerg (M4 V)"
+            ],
+            [
+              "Ysmeroth I · 0,09 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Ysmeroth II · 0,45 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Karynth · 0,72 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Ysmeroth IV · 1,14 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Ysmeroth V · 2,9 AE",
+              "Gasriese"
+            ],
+            [
+              "Ysmeroth VI · 13,8 AE",
+              "Eisriese"
+            ],
+            [
+              "Graumantel · 40–56 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Ysmeroth",
+              "inhalte/himmelskoerper/sterne/details/ysmeroth/hauptseite/index.html"
+            ],
+            [
+              "Ysmeroth B",
+              "inhalte/himmelskoerper/sterne/details/ysmeroth-b/hauptseite/index.html"
+            ],
+            [
+              "Ysmeroth I",
+              "inhalte/himmelskoerper/planeten/details/ysmeroth-i/hauptseite/index.html"
+            ],
+            [
+              "Ysmeroth II",
+              "inhalte/himmelskoerper/planeten/details/ysmeroth-ii/hauptseite/index.html"
+            ],
+            [
+              "Karynth",
+              "inhalte/himmelskoerper/planeten/details/karynth/hauptseite/index.html"
+            ],
+            [
+              "Ysmeroth IV",
+              "inhalte/himmelskoerper/planeten/details/ysmeroth-iv/hauptseite/index.html"
+            ],
+            [
+              "Ysmeroth V",
+              "inhalte/himmelskoerper/planeten/details/ysmeroth-v/hauptseite/index.html"
+            ],
+            [
+              "Ysmeroth VI",
+              "inhalte/himmelskoerper/planeten/details/ysmeroth-vi/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Vorlaufende Trojaner.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "46 km"
+            ],
+            [
+              "Masse",
+              "1,1 · 10^18 kg"
+            ],
+            [
+              "Mittlere Dichte",
+              "2,7 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "0,03 m/s² (0,004 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "0,06 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Vorlaufende Trojaner.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Vorlaufende Trojaner besteht aus Material, das sich bei der Entstehung des Ysmeroth-Systems nicht zu einem Planeten vereinte."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Vorlaufende Trojaner.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Ist der Körper ein Bruchstück eines größeren Körpers?",
+            "Welche Rohstoffe birgt er?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Vorlaufende Trojaner ist mit allen Bahndaten im Ysmeroth-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=karynth-stern&objekt=karynth-trojaner-l4"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Vorlaufende Trojaner.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Ein Schwarm dunkler, kohlenstoffreicher Asteroiden im vorauseilenden Lagrange-Punkt L4 von Ysmeroth V – stabil gehalten von der Schwerkraft des Riesen und des Sterns."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Vorlaufende Trojaner.",
+      "abschnitte": [
+        {
+          "titel": "Vorlaufende Trojaner – Archivbild",
+          "bild": true,
+          "bildtext": "Vorlaufende Trojaner"
+        }
+      ]
+    }
+  }
+}

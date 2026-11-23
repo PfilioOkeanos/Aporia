@@ -1,0 +1,535 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Keliras Schleier",
+  "genitiv": "von Keliras Schleier",
+  "dossierName": "Keliras Schleier-Dossier",
+  "klasse": "Trümmergürtel",
+  "intro": "Keliras Schleier ist eine kalte Trümmerscheibe aus zwei Ringen – 22 bis 26 AE und 36 bis 42 AE – mit einer staubarmen Lücke dazwischen. Weil es im System keinen Gasriesen gibt, blieb die Urscheibe hier draußen weitgehend unberührt; aus ihr stammen die Kometen, die gelegentlich ins Innere fallen. Keliras Schleier umgibt Kelira im Kelira-System.",
+  "globusDaten": {
+    "planet": "versetzte-doppelringe-um-einen-stern",
+    "klasse": "Gestein",
+    "radius": 1000000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=seyrath-stern&objekt=seyrath-schleier",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-A12D902A91"
+    ],
+    [
+      "Typ",
+      "Trümmergürtel"
+    ],
+    [
+      "Sternsystem",
+      "Kelira-System"
+    ],
+    [
+      "Zentralkörper",
+      "Kelira"
+    ],
+    [
+      "Ausdehnung",
+      "22–42 AE"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Kelira-System"
+    ],
+    [
+      "Zentralstern",
+      "Kelira",
+      "inhalte/himmelskoerper/sterne/details/kelira/hauptseite/index.html"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Keliras Schleier im Kelira-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=seyrath-stern&objekt=seyrath-schleier",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Kelira",
+      "href": "inhalte/himmelskoerper/sterne/details/kelira/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Chronoiden",
+      "titel": "Seyrath",
+      "href": "inhalte/himmelskoerper/planeten/details/seyrath/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Chronoiden",
+      "href": "inhalte/spezies/Mentale Spezies/Chronoiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Kelira-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=seyrath-stern&objekt=seyrath-schleier"
+    },
+    {
+      "titel": "Speziesdossier Chronoiden",
+      "href": "inhalte/spezies/Mentale Spezies/Chronoiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#0b0907",
+      "tiefe": "#181410",
+      "akzent": "#e8d1b6",
+      "sand": "#eacba2",
+      "moos": "#c3c990",
+      "ozean": "#9cb0a5",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#635340"
+    },
+    "schichten": [
+      [
+        "Lage",
+        "Bahnen"
+      ],
+      [
+        "System",
+        "Planeten"
+      ],
+      [
+        "Dynamik",
+        "Stabilität"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Zentralsterne": {
+      "gruppe": "Wissenschaft",
+      "icon": "✦",
+      "intro": "Zentralsterne von Keliras Schleier.",
+      "abschnitte": [
+        {
+          "titel": "Kelira",
+          "text": [
+            "Kelira ist ein orangefarbener Hauptreihenstern der Spektralklasse K3 V mit rund 82 % der Sonnenmasse und 39 % ihrer Leuchtkraft. Seine lange Hauptreihenlebensdauer schuf günstige Bedingungen für die langfristige Entwicklung komplexer Lebensformen. Um Kelira kreisen sieben Planeten in einer geschlossenen Resonanzkette – ein seltenes, sehr ruhiges Planetensystem ohne Gasriesen."
+          ],
+          "verweise": [
+            [
+              "Kelira",
+              "inhalte/himmelskoerper/sterne/details/kelira/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Planeten": {
+      "gruppe": "Wissenschaft",
+      "icon": "◍",
+      "intro": "Planeten von Keliras Schleier.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Kelira · Stern",
+              "Orangefarbener Zwerg (K3 V)"
+            ],
+            [
+              "Arun · 0,29 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Velth · 0,38 AE",
+              "Mini-Neptun"
+            ],
+            [
+              "Isaru · 0,5 AE",
+              "Ozeanplanet"
+            ],
+            [
+              "Seyrath · 0,66 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Doran · 0,86 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Ombrel · 1,05 AE",
+              "Mini-Neptun"
+            ],
+            [
+              "Halvek · 1,27 AE",
+              "Eisplanet"
+            ],
+            [
+              "Keliras Schleier · 22–42 AE",
+              "Trümmergürtel"
+            ]
+          ],
+          "verweise": [
+            [
+              "Kelira",
+              "inhalte/himmelskoerper/sterne/details/kelira/hauptseite/index.html"
+            ],
+            [
+              "Arun",
+              "inhalte/himmelskoerper/planeten/details/arun/hauptseite/index.html"
+            ],
+            [
+              "Velth",
+              "inhalte/himmelskoerper/planeten/details/velth/hauptseite/index.html"
+            ],
+            [
+              "Isaru",
+              "inhalte/himmelskoerper/planeten/details/isaru/hauptseite/index.html"
+            ],
+            [
+              "Seyrath",
+              "inhalte/himmelskoerper/planeten/details/seyrath/hauptseite/index.html"
+            ],
+            [
+              "Doran",
+              "inhalte/himmelskoerper/planeten/details/doran/hauptseite/index.html"
+            ],
+            [
+              "Ombrel",
+              "inhalte/himmelskoerper/planeten/details/ombrel/hauptseite/index.html"
+            ],
+            [
+              "Halvek",
+              "inhalte/himmelskoerper/planeten/details/halvek/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Bahnen": {
+      "gruppe": "Wissenschaft",
+      "icon": "◌",
+      "intro": "Bahnen von Keliras Schleier.",
+      "abschnitte": [
+        {
+          "titel": "Lage",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Kelira"
+            ],
+            [
+              "Ausdehnung",
+              "22–42 AE"
+            ]
+          ]
+        }
+      ]
+    },
+    "Stabilität": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚖",
+      "intro": "Stabilität von Keliras Schleier.",
+      "abschnitte": [
+        {
+          "titel": "Stabilität",
+          "text": [
+            "Die Brocken von Keliras Schleier bewegen sich auf stabilen Bahnen zwischen den Planeten; Resonanzen mit den großen Planeten formen die Ränder des Gebiets."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Keliras Schleier auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Keliras Schleier",
+          "text": [
+            "Keliras Schleier ist eine kalte Trümmerscheibe aus zwei Ringen – 22 bis 26 AE und 36 bis 42 AE – mit einer staubarmen Lücke dazwischen. Weil es im System keinen Gasriesen gibt, blieb die Urscheibe hier draußen weitgehend unberührt; aus ihr stammen die Kometen, die gelegentlich ins Innere fallen.",
+            "Keliras Schleier umgibt Kelira im Kelira-System."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Trümmergürtel"
+            ],
+            [
+              "Sternsystem",
+              "Kelira-System"
+            ],
+            [
+              "Zentralkörper",
+              "Kelira"
+            ],
+            [
+              "Ausdehnung",
+              "22–42 AE"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Seyrath",
+          "text": [
+            "Das Kelira-System ist die Heimat der Chronoiden: Ihr Planet Seyrath umkreist Kelira."
+          ],
+          "verweise": [
+            [
+              "Seyrath",
+              "inhalte/himmelskoerper/planeten/details/seyrath/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Chronoiden",
+              "inhalte/spezies/Mentale Spezies/Chronoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Keliras Schleier im Kelira-System.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Kelira · Stern",
+              "Orangefarbener Zwerg (K3 V)"
+            ],
+            [
+              "Arun · 0,29 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Velth · 0,38 AE",
+              "Mini-Neptun"
+            ],
+            [
+              "Isaru · 0,5 AE",
+              "Ozeanplanet"
+            ],
+            [
+              "Seyrath · 0,66 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Doran · 0,86 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Ombrel · 1,05 AE",
+              "Mini-Neptun"
+            ],
+            [
+              "Halvek · 1,27 AE",
+              "Eisplanet"
+            ],
+            [
+              "Keliras Schleier · 22–42 AE",
+              "Trümmergürtel"
+            ]
+          ],
+          "verweise": [
+            [
+              "Kelira",
+              "inhalte/himmelskoerper/sterne/details/kelira/hauptseite/index.html"
+            ],
+            [
+              "Arun",
+              "inhalte/himmelskoerper/planeten/details/arun/hauptseite/index.html"
+            ],
+            [
+              "Velth",
+              "inhalte/himmelskoerper/planeten/details/velth/hauptseite/index.html"
+            ],
+            [
+              "Isaru",
+              "inhalte/himmelskoerper/planeten/details/isaru/hauptseite/index.html"
+            ],
+            [
+              "Seyrath",
+              "inhalte/himmelskoerper/planeten/details/seyrath/hauptseite/index.html"
+            ],
+            [
+              "Doran",
+              "inhalte/himmelskoerper/planeten/details/doran/hauptseite/index.html"
+            ],
+            [
+              "Ombrel",
+              "inhalte/himmelskoerper/planeten/details/ombrel/hauptseite/index.html"
+            ],
+            [
+              "Halvek",
+              "inhalte/himmelskoerper/planeten/details/halvek/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Umgebung": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Umgebung von Keliras Schleier.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Kelira · Stern",
+              "Orangefarbener Zwerg (K3 V)"
+            ],
+            [
+              "Arun · 0,29 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Velth · 0,38 AE",
+              "Mini-Neptun"
+            ],
+            [
+              "Isaru · 0,5 AE",
+              "Ozeanplanet"
+            ],
+            [
+              "Seyrath · 0,66 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Doran · 0,86 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Ombrel · 1,05 AE",
+              "Mini-Neptun"
+            ],
+            [
+              "Halvek · 1,27 AE",
+              "Eisplanet"
+            ],
+            [
+              "Keliras Schleier · 22–42 AE",
+              "Trümmergürtel"
+            ]
+          ],
+          "verweise": [
+            [
+              "Kelira",
+              "inhalte/himmelskoerper/sterne/details/kelira/hauptseite/index.html"
+            ],
+            [
+              "Arun",
+              "inhalte/himmelskoerper/planeten/details/arun/hauptseite/index.html"
+            ],
+            [
+              "Velth",
+              "inhalte/himmelskoerper/planeten/details/velth/hauptseite/index.html"
+            ],
+            [
+              "Isaru",
+              "inhalte/himmelskoerper/planeten/details/isaru/hauptseite/index.html"
+            ],
+            [
+              "Seyrath",
+              "inhalte/himmelskoerper/planeten/details/seyrath/hauptseite/index.html"
+            ],
+            [
+              "Doran",
+              "inhalte/himmelskoerper/planeten/details/doran/hauptseite/index.html"
+            ],
+            [
+              "Ombrel",
+              "inhalte/himmelskoerper/planeten/details/ombrel/hauptseite/index.html"
+            ],
+            [
+              "Halvek",
+              "inhalte/himmelskoerper/planeten/details/halvek/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Keliras Schleier.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Keliras Schleier besteht aus Material, das sich bei der Entstehung des Kelira-Systems nicht zu einem Planeten vereinte."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Keliras Schleier.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Wie viel Masse enthält das Gebiet insgesamt?",
+            "Welche Resonanzen formen seine Ränder?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Keliras Schleier ist mit allen Bahndaten im Kelira-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=seyrath-stern&objekt=seyrath-schleier"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Keliras Schleier.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Keliras Schleier ist eine kalte Trümmerscheibe aus zwei Ringen – 22 bis 26 AE und 36 bis 42 AE – mit einer staubarmen Lücke dazwischen. Weil es im System keinen Gasriesen gibt, blieb die Urscheibe hier draußen weitgehend unberührt; aus ihr stammen die Kometen, die gelegentlich ins Innere fallen."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Keliras Schleier.",
+      "abschnitte": [
+        {
+          "titel": "Keliras Schleier – Archivbild",
+          "bild": true,
+          "bildtext": "Keliras Schleier"
+        }
+      ]
+    }
+  }
+}

@@ -14,11 +14,11 @@
 //   bild: true | "projekt/pfad.webp", bildtext                           verweise: [["Text", "projekt/pfad"], …]
 import fs from "node:fs";
 import path from "node:path";
+import { fileURLToPath } from "node:url";
 import { ROOT, GEM, KERN, findeKoerper, ladeDaten } from "./koerper.mjs";
 import { symbolFuer } from "../../inhalte/himmelskoerper/_gemeinsam/dossier-symbole.js";
 
-const KOERPER = findeKoerper(process.argv[2]);
-const daten = ladeDaten(KOERPER);
+export function baueKapitel(KOERPER, daten = ladeDaten(KOERPER), { protokoll = true } = {}) {
 const FARBEN = ["erde-design.css", "dossier-farben.css"].map((n) => `${KOERPER.basis}/hauptseite/${n}`).find((f) => fs.existsSync(ROOT + f));
 const esc = (s) => String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 const enc = (p) => p.split("/").map((t) => (t === ".." || t === "." ? t : encodeURIComponent(t))).join("/");
@@ -83,6 +83,7 @@ ${GRUPPEN.map((g) => { const l = daten.kapitel.filter((x) => x.gruppe === g); re
                     </section>`;
     }).join("\n");
     const leer = !k.abschnitte?.length ? `                    <section class="earth-panel pd-g-abschnitt"><h2>${esc(k.titel)}</h2><div class="pd-g-inhalt"><p>Noch nicht ausgearbeitet.</p></div></section>` : "";
+    const status = daten.status ? `<p class="pd-status">${esc(daten.status)}</p>` : "";
     const quellen = (daten.quellen ?? []).map((q) => `<a href="${rel(q.href)}">${esc(q.titel)}</a>`).join(" ");
 
     return `<!doctype html>
@@ -115,9 +116,9 @@ ${GRUPPEN.map((g) => { const l = daten.kapitel.filter((x) => x.gruppe === g); re
                     </nav>
                     ${tabs}
                 </div>
-                <figure class="nature-hero-image">
+${bildPfad(k.kopfbild ?? true) ? `                <figure class="nature-hero-image">
                     <img src="${rel(bildPfad(k.kopfbild ?? true))}" alt="" fetchpriority="high" decoding="async">
-                </figure>
+                </figure>` : ""}
                 <div class="astro-intro general-intro nature-hero-copy">
                     <div><p class="astro-earth-name">${esc(daten.name)}</p><h1>${esc(k.titel)}</h1></div>
                     <p>${esc(k.untertitel ?? k.intro ?? "")}</p>
@@ -129,6 +130,7 @@ ${GRUPPEN.map((g) => { const l = daten.kapitel.filter((x) => x.gruppe === g); re
 ${daten.kapitel.map((x) => `                    <a data-sidebar-tab href="${rel(x.datei)}"${x === k ? ' aria-current="page"' : ""}>${esc(x.titel)}</a>`).join("\n")}
                 </nav>
                 <div class="nature-layout">
+                    ${status}
 ${abschnitte}${leer}
                 </div>
             </div>
@@ -146,4 +148,9 @@ for (const [i, k] of daten.kapitel.entries()) {
     fs.writeFileSync(ROOT + k.datei, seite(k, i));
     gebaut++;
 }
-console.log(`${daten.name}: ${gebaut} Kapitelseiten gebaut (${daten.kapitel.reduce((s, k) => s + (k.abschnitte?.length ?? 0), 0)} Abschnitte)`);
+if (protokoll) console.log(`${daten.name}: ${gebaut} Kapitelseiten gebaut (${daten.kapitel.reduce((s, k) => s + (k.abschnitte?.length ?? 0), 0)} Abschnitte)`);
+}
+
+if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+    baueKapitel(findeKoerper(process.argv[2]));
+}

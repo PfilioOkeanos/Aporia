@@ -39,7 +39,7 @@ const knoten = [
         "belohnung": {
             "art": "gegenstand",
             "name": "Junger Sternhaufen im blauvioletten Nebel",
-            "bild": "../../../../assets/bilder/Kosmologie/SternenEntsgehungsGebiete/junger-sternhaufen-im-blauvioletten-nebel/hauptseite/Junger%20Sternhaufen%20im%20blauvioletten%20Nebel-23.png"
+            "bild": "../../../../assets/bilder/Kosmologie/SternenEntsgehungsGebiete/korarthra/hauptseite/Junger%20Sternhaufen%20im%20blauvioletten%20Nebel-23.png"
         }
     },
     {
@@ -70,7 +70,7 @@ const knoten = [
         "belohnung": {
             "art": "gegenstand",
             "name": "Rosarote Nebelgalaxie im tiefen All",
-            "bild": "../../../../assets/bilder/Kosmologie/Galaxien/rosarote-nebelgalaxie-im-tiefen-all/hauptseite/Rosarote%20Nebelgalaxie%20im%20tiefen%20All-38.png"
+            "bild": "../../../../assets/bilder/Kosmologie/Galaxien/helarlen-galaxie/hauptseite/Rosarote%20Nebelgalaxie%20im%20tiefen%20All-38.png"
         }
     },
     {
@@ -117,7 +117,7 @@ const knoten = [
         "belohnung": {
             "art": "gegenstand",
             "name": "Junge kompakte Galaxie mit dichten Sternhaufen",
-            "bild": "../../../../assets/bilder/Kosmologie/Galaxien/junge-kompakte-galaxie-mit-dichten-sternhaufen/hauptseite/Junge%20kompakte%20Galaxie%20mit%20dichten%20Sternhaufen-39.png"
+            "bild": "../../../../assets/bilder/Kosmologie/Galaxien/alara-galaxie/hauptseite/Junge%20kompakte%20Galaxie%20mit%20dichten%20Sternhaufen-39.png"
         }
     }
 ];

@@ -1,0 +1,857 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Rhaelis",
+  "genitiv": "von Rhaelis",
+  "dossierName": "Rhaelis-Dossier",
+  "klasse": "Orangefarbener Hauptreihenstern (K1 V)",
+  "intro": "Stabiler K1V-Einzelstern mit magnetischer Aktivität und einer vergleichsweise ruhigen Hauptreihenphase.",
+  "globusDaten": {
+    "planet": "rhaelis",
+    "klasse": "Vulkan",
+    "radius": 577431000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=rhaelis-stern",
+  "grunddaten": [
+    [
+      "System-ID",
+      "rhaelis-stern"
+    ],
+    [
+      "Archiv-ID",
+      "AP-RHAELIS-STERN"
+    ],
+    [
+      "Typ",
+      "Orangefarbener Hauptreihenstern (K1 V)"
+    ],
+    [
+      "Sternsystem",
+      "Rhaelis-System"
+    ],
+    [
+      "Masse",
+      "0,81 Sonnenmassen"
+    ],
+    [
+      "Radius",
+      "0,83 Sonnenradien"
+    ],
+    [
+      "Leuchtkraft",
+      "0,39 Sonnenleuchtkräfte"
+    ],
+    [
+      "Oberflächentemperatur",
+      "ca. 5.000 K"
+    ],
+    [
+      "Alter",
+      "ca. 6,2 Mrd. Jahre"
+    ],
+    [
+      "Planeten",
+      "13 (Kesvar, Draoven, Tavoryn, Ossaryn, Saelith-Prime, Korven, Eshral, Vaelkor, Kelomar, Ithrenn, Therys, Veskar-9, Ulmar (Rhaelis))"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Rhaelis-System"
+    ],
+    [
+      "Entfernung zur Sonne",
+      "236 Lichtjahre"
+    ],
+    [
+      "Nächste Nachbarsysteme",
+      "Orelis-System (200,7 Lj), Darynth-System (211,2 Lj)"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Rhaelis im Rhaelis-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=rhaelis-stern",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Planet",
+      "titel": "Kesvar",
+      "href": "inhalte/himmelskoerper/planeten/details/kesvar/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Planet",
+      "titel": "Draoven",
+      "href": "inhalte/himmelskoerper/planeten/details/draoven/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Planet",
+      "titel": "Tavoryn",
+      "href": "inhalte/himmelskoerper/planeten/details/tavoryn/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Planet",
+      "titel": "Ossaryn",
+      "href": "inhalte/himmelskoerper/planeten/details/ossaryn/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Planet",
+      "titel": "Saelith-Prime",
+      "href": "inhalte/himmelskoerper/asteroiden/details/saelith-prime/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Planet",
+      "titel": "Korven",
+      "href": "inhalte/himmelskoerper/asteroiden/details/korven/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Planet",
+      "titel": "Eshral",
+      "href": "inhalte/himmelskoerper/asteroiden/details/eshral/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Planet",
+      "titel": "Vaelkor",
+      "href": "inhalte/himmelskoerper/planeten/details/vaelkor/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Planet",
+      "titel": "Kelomar",
+      "href": "inhalte/himmelskoerper/planeten/details/kelomar/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Planet",
+      "titel": "Ithrenn",
+      "href": "inhalte/himmelskoerper/planeten/details/ithrenn/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Planet",
+      "titel": "Therys",
+      "href": "inhalte/himmelskoerper/asteroiden/details/therys/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Planet",
+      "titel": "Veskar-9",
+      "href": "inhalte/himmelskoerper/asteroiden/details/veskar-9/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Planet",
+      "titel": "Ulmar (Rhaelis)",
+      "href": "inhalte/himmelskoerper/kometen/details/ulmar-rhaelis/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Memetiden",
+      "titel": "Tavoryn",
+      "href": "inhalte/himmelskoerper/planeten/details/tavoryn/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Memetiden",
+      "href": "inhalte/spezies/Mentale Spezies/Memetiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Rhaelis-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=rhaelis-stern"
+    },
+    {
+      "titel": "Speziesdossier Memetiden",
+      "href": "inhalte/spezies/Mentale Spezies/Memetiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#0d0906",
+      "tiefe": "#1c140c",
+      "akzent": "#ffcda2",
+      "sand": "#ffc995",
+      "moos": "#d9c67f",
+      "ozean": "#adac8d",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#735032"
+    },
+    "schichten": [
+      [
+        "Strahlung",
+        "Leuchtkraft"
+      ],
+      [
+        "Hülle",
+        "Spektralklasse"
+      ],
+      [
+        "Kern",
+        "Fusion"
+      ],
+      [
+        "Zeit",
+        "Lebenszyklus"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Spektralklasse": {
+      "gruppe": "Wissenschaft",
+      "icon": "✦",
+      "intro": "Spektralklasse von Rhaelis.",
+      "abschnitte": [
+        {
+          "titel": "Einordnung",
+          "daten": [
+            [
+              "Typ",
+              "Orangefarbener Hauptreihenstern (K1 V)"
+            ],
+            [
+              "Oberflächentemperatur",
+              "ca. 5.000 K"
+            ],
+            [
+              "Farbe",
+              "orange"
+            ]
+          ]
+        }
+      ]
+    },
+    "Fusion": {
+      "gruppe": "Wissenschaft",
+      "icon": "☀",
+      "intro": "Fusion von Rhaelis.",
+      "abschnitte": [
+        {
+          "titel": "Energiequelle",
+          "text": [
+            "Im Kern von Rhaelis verschmilzt Wasserstoff zu Helium."
+          ]
+        }
+      ]
+    },
+    "Leuchtkraft": {
+      "gruppe": "Wissenschaft",
+      "icon": "☀",
+      "intro": "Leuchtkraft von Rhaelis.",
+      "abschnitte": [
+        {
+          "titel": "Strahlung",
+          "daten": [
+            [
+              "Leuchtkraft",
+              "0,39 Sonnenleuchtkräfte"
+            ],
+            [
+              "Habitable Zone",
+              "0,6–1,04 AE"
+            ]
+          ]
+        }
+      ]
+    },
+    "Lebenszyklus": {
+      "gruppe": "Wissenschaft",
+      "icon": "⧗",
+      "intro": "Lebenszyklus von Rhaelis.",
+      "abschnitte": [
+        {
+          "titel": "Lebensdauer",
+          "text": [
+            "Ein Stern mit 0,81 Sonnenmassen bleibt rund 17 Milliarden Jahre auf der Hauptreihe; Rhaelis ist etwa 6,2 Milliarden Jahre alt."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Rhaelis auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Rhaelis",
+          "text": [
+            "Stabiler K1V-Einzelstern mit magnetischer Aktivität und einer vergleichsweise ruhigen Hauptreihenphase.",
+            "Rhaelis ist der Zentralstern des Rhaelis-Systems."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Orangefarbener Hauptreihenstern (K1 V)"
+            ],
+            [
+              "Sternsystem",
+              "Rhaelis-System"
+            ],
+            [
+              "Masse",
+              "0,81 Sonnenmassen"
+            ],
+            [
+              "Radius",
+              "0,83 Sonnenradien"
+            ],
+            [
+              "Leuchtkraft",
+              "0,39 Sonnenleuchtkräfte"
+            ],
+            [
+              "Oberflächentemperatur",
+              "ca. 5.000 K"
+            ],
+            [
+              "Alter",
+              "ca. 6,2 Mrd. Jahre"
+            ],
+            [
+              "Planeten",
+              "13 (Kesvar, Draoven, Tavoryn, Ossaryn, Saelith-Prime, Korven, Eshral, Vaelkor, Kelomar, Ithrenn, Therys, Veskar-9, Ulmar (Rhaelis))"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Tavoryn",
+          "text": [
+            "Das Rhaelis-System ist die Heimat der Memetiden: Ihr Planet Tavoryn umkreist Rhaelis."
+          ],
+          "verweise": [
+            [
+              "Tavoryn",
+              "inhalte/himmelskoerper/planeten/details/tavoryn/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Memetiden",
+              "inhalte/spezies/Mentale Spezies/Memetiden/hauptseite/Spezies.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Zentralstern Rhaelis",
+          "text": [
+            "Rhaelis ist ein einzelner Hauptreihenstern der Spektralklasse K1V.",
+            "Sternparameter:",
+            "Rhaelis besitzt eine niedrigere Leuchtkraft als die Sonne und eine längere zu erwartende Hauptreihenlebensdauer.",
+            "Der Stern weist magnetische Aktivität auf, befindet sich jedoch in einer vergleichsweise ruhigen Entwicklungsphase."
+          ],
+          "liste": [
+            "Spektralklasse: K1V",
+            "Masse: 0,81 Sonnenmassen",
+            "Radius: 0,83 Sonnenradien",
+            "Leuchtkraft: 0,39 Sonnenleuchtkräfte",
+            "Oberflächentemperatur: ungefähr 5.000 K",
+            "Alter: ungefähr 6,2 Milliarden Jahre",
+            "Entwicklungszustand: stabile Hauptreihe",
+            "Planetenzahl: sieben Hauptplaneten"
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Rhaelis im Raum.",
+      "abschnitte": [
+        {
+          "titel": "Lage im Raum",
+          "daten": [
+            [
+              "Entfernung zur Sonne",
+              "236 Lichtjahre"
+            ],
+            [
+              "Nächste Nachbarsysteme",
+              "Orelis-System (200,7 Lj), Darynth-System (211,2 Lj), Saelon-System (211,3 Lj)"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Rhaelis · Stern",
+              "Orangefarbener Hauptreihenstern (K1 V)"
+            ],
+            [
+              "Kesvar · 0,18 AE",
+              "Heißer Gesteinsplanet"
+            ],
+            [
+              "Draoven · 0,33 AE",
+              "Heißer trockener Gesteinsplanet"
+            ],
+            [
+              "Tavoryn · 0,65 AE",
+              "Gemäßigter Ozean- und Gesteinsplanet"
+            ],
+            [
+              "Ossaryn · 1,2 AE",
+              "Kalter Gesteinsplanet"
+            ],
+            [
+              "Vaelkor · 2,45 AE",
+              "Gasriese"
+            ],
+            [
+              "Kelomar · 4,8 AE",
+              "Äußerer Gasriese"
+            ],
+            [
+              "Ithrenn · 9,2 AE",
+              "Eisriese"
+            ],
+            [
+              "Therys · 19 AE",
+              "Eisreicher Kleinkörper"
+            ],
+            [
+              "Veskar-9 · 31 AE",
+              "Dunkler Kleinkörper"
+            ],
+            [
+              "Saelith-Gürtel · 1,7–2,1 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußere Kleinkörperregion von Rhaelis · 12–43 AE",
+              "Eisreicher Kleinkörpergürtel"
+            ],
+            [
+              "Ferne Kometenpopulation von Rhaelis · 65–240 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Kesvar",
+              "inhalte/himmelskoerper/planeten/details/kesvar/hauptseite/index.html"
+            ],
+            [
+              "Draoven",
+              "inhalte/himmelskoerper/planeten/details/draoven/hauptseite/index.html"
+            ],
+            [
+              "Tavoryn",
+              "inhalte/himmelskoerper/planeten/details/tavoryn/hauptseite/index.html"
+            ],
+            [
+              "Ossaryn",
+              "inhalte/himmelskoerper/planeten/details/ossaryn/hauptseite/index.html"
+            ],
+            [
+              "Vaelkor",
+              "inhalte/himmelskoerper/planeten/details/vaelkor/hauptseite/index.html"
+            ],
+            [
+              "Kelomar",
+              "inhalte/himmelskoerper/planeten/details/kelomar/hauptseite/index.html"
+            ],
+            [
+              "Ithrenn",
+              "inhalte/himmelskoerper/planeten/details/ithrenn/hauptseite/index.html"
+            ],
+            [
+              "Therys",
+              "inhalte/himmelskoerper/asteroiden/details/therys/hauptseite/index.html"
+            ],
+            [
+              "Veskar-9",
+              "inhalte/himmelskoerper/asteroiden/details/veskar-9/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Rhaelis.",
+      "abschnitte": [
+        {
+          "titel": "Physik",
+          "daten": [
+            [
+              "Masse",
+              "0,81 Sonnenmassen"
+            ],
+            [
+              "Radius",
+              "0,83 Sonnenradien"
+            ],
+            [
+              "Leuchtkraft",
+              "0,39 Sonnenleuchtkräfte"
+            ],
+            [
+              "Oberflächentemperatur",
+              "ca. 5.000 K"
+            ],
+            [
+              "Alter",
+              "ca. 6,2 Mrd. Jahre"
+            ],
+            [
+              "Planeten",
+              "13 (Kesvar, Draoven, Tavoryn, Ossaryn, Saelith-Prime, Korven, Eshral, Vaelkor, Kelomar, Ithrenn, Therys, Veskar-9, Ulmar (Rhaelis))"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Rhaelis.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Rhaelis entstand zusammen mit dem Rhaelis-System vor rund 6,2 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Umgebung": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Umgebung von Rhaelis.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Rhaelis · Stern",
+              "Orangefarbener Hauptreihenstern (K1 V)"
+            ],
+            [
+              "Kesvar · 0,18 AE",
+              "Heißer Gesteinsplanet"
+            ],
+            [
+              "Draoven · 0,33 AE",
+              "Heißer trockener Gesteinsplanet"
+            ],
+            [
+              "Tavoryn · 0,65 AE",
+              "Gemäßigter Ozean- und Gesteinsplanet"
+            ],
+            [
+              "Ossaryn · 1,2 AE",
+              "Kalter Gesteinsplanet"
+            ],
+            [
+              "Vaelkor · 2,45 AE",
+              "Gasriese"
+            ],
+            [
+              "Kelomar · 4,8 AE",
+              "Äußerer Gasriese"
+            ],
+            [
+              "Ithrenn · 9,2 AE",
+              "Eisriese"
+            ],
+            [
+              "Therys · 19 AE",
+              "Eisreicher Kleinkörper"
+            ],
+            [
+              "Veskar-9 · 31 AE",
+              "Dunkler Kleinkörper"
+            ],
+            [
+              "Saelith-Gürtel · 1,7–2,1 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußere Kleinkörperregion von Rhaelis · 12–43 AE",
+              "Eisreicher Kleinkörpergürtel"
+            ],
+            [
+              "Ferne Kometenpopulation von Rhaelis · 65–240 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Kesvar",
+              "inhalte/himmelskoerper/planeten/details/kesvar/hauptseite/index.html"
+            ],
+            [
+              "Draoven",
+              "inhalte/himmelskoerper/planeten/details/draoven/hauptseite/index.html"
+            ],
+            [
+              "Tavoryn",
+              "inhalte/himmelskoerper/planeten/details/tavoryn/hauptseite/index.html"
+            ],
+            [
+              "Ossaryn",
+              "inhalte/himmelskoerper/planeten/details/ossaryn/hauptseite/index.html"
+            ],
+            [
+              "Vaelkor",
+              "inhalte/himmelskoerper/planeten/details/vaelkor/hauptseite/index.html"
+            ],
+            [
+              "Kelomar",
+              "inhalte/himmelskoerper/planeten/details/kelomar/hauptseite/index.html"
+            ],
+            [
+              "Ithrenn",
+              "inhalte/himmelskoerper/planeten/details/ithrenn/hauptseite/index.html"
+            ],
+            [
+              "Therys",
+              "inhalte/himmelskoerper/asteroiden/details/therys/hauptseite/index.html"
+            ],
+            [
+              "Veskar-9",
+              "inhalte/himmelskoerper/asteroiden/details/veskar-9/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Nachbarsysteme",
+          "liste": [
+            "Orelis-System – 200,7 Lichtjahre",
+            "Darynth-System – 211,2 Lichtjahre",
+            "Saelon-System – 211,3 Lichtjahre",
+            "Ixar-System – 218,3 Lichtjahre",
+            "Thyrrae-System – 223,5 Lichtjahre"
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Rhaelis.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Wie stark schwankt die magnetische Aktivität?",
+            "Wie hat sich die Leuchtkraft seit der Entstehung verändert?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Rhaelis ist mit allen Bahndaten im Rhaelis-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=rhaelis-stern"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Rhaelis.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "13 eigene Planeten: Kesvar, Draoven, Tavoryn, Ossaryn, Saelith-Prime, Korven, Eshral, Vaelkor, Kelomar, Ithrenn, Therys, Veskar-9, Ulmar (Rhaelis)"
+          ]
+        },
+        {
+          "titel": "Planeten",
+          "karten": [
+            {
+              "titel": "Kesvar",
+              "text": "9.400 km Durchmesser, Umlauf in 31 Tage. Der innerste Planet besitzt verwitterte und vulkanisch veränderte Gesteinslandschaften, eine dünne Atmosphäre und eisenreiche Minerale."
+            },
+            {
+              "titel": "Draoven",
+              "text": "11.500 km Durchmesser, Umlauf in 76,9 Tage. Trockene Welt mit felsigen Ebenen, vulkanischen Hochländern, Einschlagbecken und mineralischen Ablagerungen."
+            },
+            {
+              "titel": "Tavoryn",
+              "text": "12.360 km Durchmesser, Umlauf in 212,7 Tage. Heimatwelt der Memetiden mit ausgedehnten Meeren, fünf großen Landmassen und wandernden Gezeitenwäldern."
+            },
+            {
+              "titel": "Ossaryn",
+              "text": "10.460 km Durchmesser, Umlauf in 533,5 Tage. Kalter Gesteinsplanet mit mineralischen Wüsten, gefrorenen Ablagerungen und alten Sedimentbecken."
+            },
+            {
+              "titel": "Saelith-Prime",
+              "text": "230 km Durchmesser, Umlauf in 2,5 Jahre. Ein großer unregelmäßiger Asteroid mit alten Bergbauanlagen."
+            },
+            {
+              "titel": "Korven",
+              "text": "164 km Durchmesser, Umlauf in 2,8 Jahre. Ein metallreicher Asteroid mit industriell interessanten Erzlagerstätten."
+            },
+            {
+              "titel": "Eshral",
+              "text": "126 km Durchmesser, Umlauf in 3,1 Jahre. Ein kohlenstoffhaltiger Asteroid für Untersuchungen zur chemischen Frühgeschichte des Systems."
+            },
+            {
+              "titel": "Vaelkor",
+              "text": "116.400 km Durchmesser, Umlauf in 4,3 Jahre. Gasriese mit ausgeprägten Wolkenbändern, großräumigen Stürmen und einem Ringsystem. Seine Gravitation prägt den benachbarten Saelith-Gürtel."
+            },
+            {
+              "titel": "Kelomar",
+              "text": "100.000 km Durchmesser, Umlauf in 11,7 Jahre. Kühler Gasplanet mit Wasserstoff-Helium-Atmosphäre, ausgeprägten Wolkenschichten und großräumigen Sturmzonen."
+            },
+            {
+              "titel": "Ithrenn",
+              "text": "49.800 km Durchmesser, Umlauf in 31 Jahre. Der äußerste Hauptplanet ist ein Eisriese mit leichter Gashülle und flüchtigen Verbindungen. Ihn begleiten kleinere Monde."
+            },
+            {
+              "titel": "Therys",
+              "text": "560 km Durchmesser, Umlauf in 92 Jahre. Ein großer eisreicher Kleinkörper im äußeren Rhaelis-System."
+            },
+            {
+              "titel": "Veskar-9",
+              "text": "48 km Durchmesser, Umlauf in 191,8 Jahre. Ein kleiner dunkler Körper mit ungewöhnlich alter, wenig veränderter Oberfläche."
+            },
+            {
+              "titel": "Ulmar (Rhaelis)",
+              "text": "16 km Durchmesser, Umlauf in 1.195,5 Jahre. Ein langperiodischer Komet. Die aktuelle Bahn im Kartenmodell führt ihn aus der fernen Population bis in die Nähe der Gasplaneten."
+            }
+          ],
+          "verweise": [
+            [
+              "Kesvar",
+              "inhalte/himmelskoerper/planeten/details/kesvar/hauptseite/index.html"
+            ],
+            [
+              "Draoven",
+              "inhalte/himmelskoerper/planeten/details/draoven/hauptseite/index.html"
+            ],
+            [
+              "Tavoryn",
+              "inhalte/himmelskoerper/planeten/details/tavoryn/hauptseite/index.html"
+            ],
+            [
+              "Ossaryn",
+              "inhalte/himmelskoerper/planeten/details/ossaryn/hauptseite/index.html"
+            ],
+            [
+              "Saelith-Prime",
+              "inhalte/himmelskoerper/asteroiden/details/saelith-prime/hauptseite/index.html"
+            ],
+            [
+              "Korven",
+              "inhalte/himmelskoerper/asteroiden/details/korven/hauptseite/index.html"
+            ],
+            [
+              "Eshral",
+              "inhalte/himmelskoerper/asteroiden/details/eshral/hauptseite/index.html"
+            ],
+            [
+              "Vaelkor",
+              "inhalte/himmelskoerper/planeten/details/vaelkor/hauptseite/index.html"
+            ],
+            [
+              "Kelomar",
+              "inhalte/himmelskoerper/planeten/details/kelomar/hauptseite/index.html"
+            ],
+            [
+              "Ithrenn",
+              "inhalte/himmelskoerper/planeten/details/ithrenn/hauptseite/index.html"
+            ],
+            [
+              "Therys",
+              "inhalte/himmelskoerper/asteroiden/details/therys/hauptseite/index.html"
+            ],
+            [
+              "Veskar-9",
+              "inhalte/himmelskoerper/asteroiden/details/veskar-9/hauptseite/index.html"
+            ],
+            [
+              "Ulmar (Rhaelis)",
+              "inhalte/himmelskoerper/kometen/details/ulmar-rhaelis/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Verwandte Dossiers",
+          "verweise": [
+            [
+              "Tavoryn",
+              "inhalte/himmelskoerper/planeten/details/tavoryn/hauptseite/index.html"
+            ],
+            [
+              "Rhaelis-System",
+              "inhalte/himmelskoerper/sternensysteme/details/rhaelis-system/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Astronomische Naturereignisse",
+          "text": [
+            "Im System treten folgende Naturereignisse auf:"
+          ],
+          "liste": [
+            "Planetare und lunare Finsternisse bei geeigneter Bahngeometrie.",
+            "Magnetische Aktivität des Zentralsterns.",
+            "Atmosphärische Polarlichter.",
+            "Periodische Kometenaktivität.",
+            "Einschlagereignisse auf atmosphärenarmen Himmelskörpern.",
+            "Starke Stürme in den Atmosphären der Gasplaneten.",
+            "Gezeitenbedingte Küstendynamik auf Tavoryn.",
+            "Ring- und Mondschatten auf den äußeren Gasplaneten.",
+            "Gravitative Resonanzstrukturen im Asteroidengürtel."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Rhaelis.",
+      "abschnitte": [
+        {
+          "titel": "Rhaelis",
+          "bild": true,
+          "bildtext": "Illustration aus dem APORIA-Bildarchiv"
+        }
+      ]
+    }
+  }
+}

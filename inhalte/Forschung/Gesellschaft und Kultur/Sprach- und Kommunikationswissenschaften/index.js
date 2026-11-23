@@ -53,7 +53,7 @@ const knoten = [
         "belohnung": {
             "art": "gegenstand",
             "name": "Verhalten Kommunikation",
-            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/OzeanWelt/erde-im-sternenmeer/unterseiten/ERDE_BILDER/Flora%20&%20Fauna/15%20%E2%80%93%20Verhalten%20&%20Kommunikation/15_Verhalten_Kommunikation.jpg"
+            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/OzeanWelt/erde/unterseiten/ERDE_BILDER/Flora%20&%20Fauna/15%20%E2%80%93%20Verhalten%20&%20Kommunikation/15_Verhalten_Kommunikation.jpg"
         }
     },
     {

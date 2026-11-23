@@ -9,8 +9,8 @@
     background: radial-gradient(ellipse at 55% 13%, #292136, transparent 70%), #14101b;
 }
 .arch-subpage .arch-layout {
-    grid-template-columns: minmax(0, 1fr) clamp(8.8rem, 10cqi, 10.3rem);
-    grid-template-areas: "content rail";
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas: "content";
 }
 .arch-sub-content { grid-area: content; min-width: 0; display: grid; gap: .8rem; }
 .arch-subpage .arch-panel {
@@ -145,7 +145,7 @@
 @container (max-width: 915px) {
     .arch-subpage .arch-layout {
         grid-template-columns: minmax(0, 1fr);
-        grid-template-areas: "rail" "content";
+        grid-template-areas: "content";
     }
 }
 @container (max-width: 585px) {

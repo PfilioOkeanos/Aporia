@@ -1,0 +1,654 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Isaru",
+  "genitiv": "von Isaru",
+  "dossierName": "Isaru-Dossier",
+  "klasse": "Ozeanplanet",
+  "intro": "Isaru ist eine heiße Wasserwelt am Rand des Treibhauskollapses: Ein dunkler Ozean liegt unter dichten, dampfgesättigten Wolken, die Keliras Licht bernsteinfarben streuen. Von Seyrath aus ist Isaru der hellste Wandelstern des Morgen- und Abendhimmels. Isaru umkreist Kelira in 0,504 AE Abstand und braucht für einen Umlauf 144,2 Tage.",
+  "globusDaten": {
+    "planet": "blauer-planet-mit-bernsteinfarbenem-leuchten",
+    "klasse": "Ozean",
+    "radius": 6900000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=seyrath-stern&objekt=seyrath-isaru",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-6774484873"
+    ],
+    [
+      "Typ",
+      "Ozeanplanet"
+    ],
+    [
+      "Sternsystem",
+      "Kelira-System"
+    ],
+    [
+      "Zentralkörper",
+      "Kelira"
+    ],
+    [
+      "Große Halbachse",
+      "0,504 AE"
+    ],
+    [
+      "Umlaufzeit",
+      "144,2 Tage"
+    ],
+    [
+      "Durchmesser",
+      "13.800 km"
+    ],
+    [
+      "Masse",
+      "1,25 Erdmassen"
+    ],
+    [
+      "Schwerkraft",
+      "1,07 g"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -12 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Kelira-System"
+    ],
+    [
+      "Zentralstern",
+      "Kelira",
+      "inhalte/himmelskoerper/sterne/details/kelira/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "0,504 AE"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Isaru im Kelira-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=seyrath-stern&objekt=seyrath-isaru",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Kelira",
+      "href": "inhalte/himmelskoerper/sterne/details/kelira/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Chronoiden",
+      "titel": "Seyrath",
+      "href": "inhalte/himmelskoerper/planeten/details/seyrath/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Chronoiden",
+      "href": "inhalte/spezies/Mentale Spezies/Chronoiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Kelira-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=seyrath-stern&objekt=seyrath-isaru"
+    },
+    {
+      "titel": "Speziesdossier Chronoiden",
+      "href": "inhalte/spezies/Mentale Spezies/Chronoiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#070809",
+      "tiefe": "#0f1114",
+      "akzent": "#afbdd1",
+      "sand": "#b6bab3",
+      "moos": "#8fb3a7",
+      "ozean": "#739bc6",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#3c4553"
+    }
+  },
+  "kapitel": {
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Isaru auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Isaru",
+          "text": [
+            "Isaru ist eine heiße Wasserwelt am Rand des Treibhauskollapses: Ein dunkler Ozean liegt unter dichten, dampfgesättigten Wolken, die Keliras Licht bernsteinfarben streuen. Von Seyrath aus ist Isaru der hellste Wandelstern des Morgen- und Abendhimmels.",
+            "Isaru umkreist Kelira in 0,504 AE Abstand und braucht für einen Umlauf 144,2 Tage."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Ozeanplanet"
+            ],
+            [
+              "Sternsystem",
+              "Kelira-System"
+            ],
+            [
+              "Zentralkörper",
+              "Kelira"
+            ],
+            [
+              "Große Halbachse",
+              "0,504 AE"
+            ],
+            [
+              "Umlaufzeit",
+              "144,2 Tage"
+            ],
+            [
+              "Durchmesser",
+              "13.800 km"
+            ],
+            [
+              "Masse",
+              "1,25 Erdmassen"
+            ],
+            [
+              "Schwerkraft",
+              "1,07 g"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -12 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Seyrath",
+          "text": [
+            "Das Kelira-System ist die Heimat der Chronoiden: Ihr Planet Seyrath umkreist Kelira."
+          ],
+          "verweise": [
+            [
+              "Seyrath",
+              "inhalte/himmelskoerper/planeten/details/seyrath/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Chronoiden",
+              "inhalte/spezies/Mentale Spezies/Chronoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Isaru im Kelira-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Kelira"
+            ],
+            [
+              "Große Halbachse",
+              "0,5037 AE (75,4 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,007"
+            ],
+            [
+              "Bahnneigung",
+              "0,3°"
+            ],
+            [
+              "Umlaufzeit",
+              "144,2 Tage"
+            ],
+            [
+              "Einstrahlung",
+              "1,537-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Am Himmel von Isaru",
+          "text": [
+            "Kelira erscheint von hier aus etwa 0,92° groß (die Sonne von der Erde: 0,53°)."
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Kelira · Stern",
+              "Orangefarbener Zwerg (K3 V)"
+            ],
+            [
+              "Arun · 0,29 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Velth · 0,38 AE",
+              "Mini-Neptun"
+            ],
+            [
+              "Isaru · 0,5 AE · dieses Dossier",
+              "Ozeanplanet"
+            ],
+            [
+              "Seyrath · 0,66 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Doran · 0,86 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Ombrel · 1,05 AE",
+              "Mini-Neptun"
+            ],
+            [
+              "Halvek · 1,27 AE",
+              "Eisplanet"
+            ],
+            [
+              "Keliras Schleier · 22–42 AE",
+              "Trümmergürtel"
+            ]
+          ],
+          "verweise": [
+            [
+              "Kelira",
+              "inhalte/himmelskoerper/sterne/details/kelira/hauptseite/index.html"
+            ],
+            [
+              "Arun",
+              "inhalte/himmelskoerper/planeten/details/arun/hauptseite/index.html"
+            ],
+            [
+              "Velth",
+              "inhalte/himmelskoerper/planeten/details/velth/hauptseite/index.html"
+            ],
+            [
+              "Seyrath",
+              "inhalte/himmelskoerper/planeten/details/seyrath/hauptseite/index.html"
+            ],
+            [
+              "Doran",
+              "inhalte/himmelskoerper/planeten/details/doran/hauptseite/index.html"
+            ],
+            [
+              "Ombrel",
+              "inhalte/himmelskoerper/planeten/details/ombrel/hauptseite/index.html"
+            ],
+            [
+              "Halvek",
+              "inhalte/himmelskoerper/planeten/details/halvek/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Isaru.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "6.900 km"
+            ],
+            [
+              "Masse",
+              "1,25 Erdmassen"
+            ],
+            [
+              "Mittlere Dichte",
+              "5,43 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "10,45 m/s² (1,066 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "12,02 km/s"
+            ]
+          ],
+          "vergleich": {
+            "mit": "Erde",
+            "werte": [
+              [
+                "Durchmesser",
+                13800,
+                12742,
+                "km"
+              ],
+              [
+                "Masse",
+                1.25,
+                1,
+                "Erdmassen"
+              ],
+              [
+                "Schwerkraft",
+                1.07,
+                1,
+                "g"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "Planetare Struktur": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Planetare Struktur von Isaru.",
+      "abschnitte": [
+        {
+          "titel": "Schalenbau",
+          "schichten": [
+            [
+              "Ozean",
+              "Globale Wasserschicht"
+            ],
+            [
+              "Meeresboden",
+              "Basaltische Kruste"
+            ],
+            [
+              "Mantel",
+              "Silikatgestein"
+            ],
+            [
+              "Kern",
+              "Eisen und Nickel"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geografie": {
+      "gruppe": "Natur",
+      "icon": "△",
+      "intro": "Geografie von Isaru.",
+      "abschnitte": [
+        {
+          "titel": "Oberfläche",
+          "text": [
+            "Die Oberfläche von Isaru ist gemäßigt."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Isaru.",
+      "abschnitte": [
+        {
+          "titel": "Gashülle",
+          "text": [
+            "Isaru hält eine dünne, kalte Gashülle fest."
+          ],
+          "balken": {
+            "werte": [
+              [
+                "Kohlendioxid",
+                62
+              ],
+              [
+                "Stickstoff",
+                33
+              ],
+              [
+                "Argon",
+                5
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Isaru.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 0,504 AE Abstand zu Kelira liegt die Gleichgewichtstemperatur von Isaru bei rund -12 °C – gemäßigt."
+          ]
+        },
+        {
+          "titel": "Am Rand des Treibhauskollapses",
+          "text": [
+            "Isaru erhält rund 1,5-mal so viel Sternenlicht wie die Erde und liegt damit innerhalb der inneren Grenze der habitablen Zone. Dichte, dampfgesättigte Wolken werfen einen großen Teil des Lichts zurück und halten den Ozean noch flüssig – doch Wasserdampf ist selbst ein starkes Treibhausgas. Planetologen sehen in Isaru eine Welt, die in ferner Zukunft in ein feucht-heißes Treibhausklima kippen kann."
+          ]
+        }
+      ]
+    },
+    "Gewässer": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gewässer von Isaru.",
+      "abschnitte": [
+        {
+          "titel": "Wasser",
+          "text": [
+            "Offene Gewässer sind nicht verzeichnet."
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Isaru.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Isaru ist groß genug, um im Inneren noch Wärme zu speichern; Spuren alter vulkanischer Tätigkeit sind wahrscheinlich."
+          ]
+        }
+      ]
+    },
+    "Biosphäre": {
+      "gruppe": "Natur",
+      "icon": "❧",
+      "intro": "Biosphäre von Isaru.",
+      "abschnitte": [
+        {
+          "titel": "Leben",
+          "text": [
+            "Auf Isaru ist kein Leben verzeichnet."
+          ]
+        }
+      ]
+    },
+    "Spezies": {
+      "gruppe": "Zivilisation",
+      "icon": "✿",
+      "intro": "Spezies von Isaru.",
+      "abschnitte": [
+        {
+          "titel": "Bewohner",
+          "text": [
+            "Isaru ist keine Heimat einer intelligenten Spezies."
+          ]
+        },
+        {
+          "titel": "Im System von Seyrath",
+          "text": [
+            "Das Kelira-System ist die Heimat der Chronoiden: Ihr Planet Seyrath umkreist Kelira."
+          ],
+          "verweise": [
+            [
+              "Seyrath",
+              "inhalte/himmelskoerper/planeten/details/seyrath/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Chronoiden",
+              "inhalte/spezies/Mentale Spezies/Chronoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Zivilisation": {
+      "gruppe": "Zivilisation",
+      "icon": "▥",
+      "intro": "Zivilisation von Isaru.",
+      "abschnitte": [
+        {
+          "titel": "Siedlungen",
+          "text": [
+            "Für Isaru sind keine dauerhaften Siedlungen verzeichnet."
+          ]
+        },
+        {
+          "titel": "Im System von Seyrath",
+          "text": [
+            "Das Kelira-System ist die Heimat der Chronoiden: Ihr Planet Seyrath umkreist Kelira."
+          ],
+          "verweise": [
+            [
+              "Seyrath",
+              "inhalte/himmelskoerper/planeten/details/seyrath/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Chronoiden",
+              "inhalte/spezies/Mentale Spezies/Chronoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Isaru.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Isaru entstand zusammen mit dem Kelira-System vor rund 5,4 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Fraktionen": {
+      "gruppe": "Zivilisation",
+      "icon": "◇",
+      "intro": "Fraktionen von Isaru.",
+      "abschnitte": [
+        {
+          "titel": "Ansprüche",
+          "text": [
+            "Für Isaru sind keine Fraktionsansprüche verzeichnet."
+          ]
+        }
+      ]
+    },
+    "Rohstoffe": {
+      "gruppe": "Weitere",
+      "icon": "⬡",
+      "intro": "Rohstoffe von Isaru.",
+      "abschnitte": [
+        {
+          "titel": "Rohstoffe",
+          "liste": [
+            "Silikatgestein",
+            "Metallerze"
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Isaru.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Wie ist der innere Aufbau beschaffen?",
+            "Gab es früher eine dichtere Atmosphäre?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Isaru ist mit allen Bahndaten im Kelira-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=seyrath-stern&objekt=seyrath-isaru"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Isaru.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Isaru ist eine heiße Wasserwelt am Rand des Treibhauskollapses: Ein dunkler Ozean liegt unter dichten, dampfgesättigten Wolken, die Keliras Licht bernsteinfarben streuen. Von Seyrath aus ist Isaru der hellste Wandelstern des Morgen- und Abendhimmels."
+          ]
+        },
+        {
+          "titel": "Hellster Wandelstern",
+          "text": [
+            "Von Seyrath aus erscheint Isaru als hellster Wandelstern des Morgen- und Abendhimmels, bernsteinfarben getönt durch Keliras Licht in seinen Wolken."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Isaru.",
+      "abschnitte": [
+        {
+          "titel": "Isaru – Archivbild",
+          "bild": true,
+          "bildtext": "Isaru"
+        }
+      ]
+    }
+  }
+}

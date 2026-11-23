@@ -1,0 +1,490 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Ondra",
+  "genitiv": "von Ondra",
+  "dossierName": "Ondra-Dossier",
+  "klasse": "Mond",
+  "intro": "Ondra ist ein Eis-Gesteins-Mond des Olyss mit zerbrochenen, violett schimmernden Eisplatten. Ondra umkreist Olyss in 11 Tage.",
+  "globusDaten": {
+    "planet": "violetter-zwergplanet-mit-eisplatten",
+    "klasse": "Eis",
+    "radius": 700000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=iravelle-stern&objekt=iravelle-ondra",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-A2D67FB016"
+    ],
+    [
+      "Typ",
+      "Mond"
+    ],
+    [
+      "Sternsystem",
+      "Darynth-System"
+    ],
+    [
+      "Zentralkörper",
+      "Olyss"
+    ],
+    [
+      "Große Halbachse",
+      "585.425 km"
+    ],
+    [
+      "Umlaufzeit",
+      "11 Tage"
+    ],
+    [
+      "Durchmesser",
+      "1.400 km"
+    ],
+    [
+      "Masse",
+      "0,057 Mondmassen"
+    ],
+    [
+      "Schwerkraft",
+      "0,06 g"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -188 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Darynth-System"
+    ],
+    [
+      "Zentralstern",
+      "Darynth",
+      "inhalte/himmelskoerper/sterne/details/darynth/hauptseite/index.html"
+    ],
+    [
+      "Umläuft",
+      "Olyss",
+      "inhalte/himmelskoerper/planeten/details/olyss/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "585.425 km"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Ondra im Darynth-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=iravelle-stern&objekt=iravelle-ondra",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Darynth",
+      "href": "inhalte/himmelskoerper/sterne/details/darynth/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◍",
+      "art": "Mutterplanet",
+      "titel": "Olyss",
+      "href": "inhalte/himmelskoerper/planeten/details/olyss/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Oneiroiden",
+      "titel": "Iravelle",
+      "href": "inhalte/himmelskoerper/planeten/details/iravelle/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Oneiroiden",
+      "href": "inhalte/spezies/Mentale Spezies/Oneiroiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Darynth-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=iravelle-stern&objekt=iravelle-ondra"
+    },
+    {
+      "titel": "Speziesdossier Oneiroiden",
+      "href": "inhalte/spezies/Mentale Spezies/Oneiroiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#080609",
+      "tiefe": "#110d14",
+      "akzent": "#bda9d1",
+      "sand": "#c2aab3",
+      "moos": "#9c9ca7",
+      "ozean": "#7c86c6",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#453753"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Astronomie"
+      ],
+      [
+        "Planet",
+        "Mutterplanet"
+      ],
+      [
+        "Kräfte",
+        "Gezeiten"
+      ],
+      [
+        "Tiefe",
+        "Geologie"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Ondra auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Ondra",
+          "text": [
+            "Ondra ist ein Eis-Gesteins-Mond des Olyss mit zerbrochenen, violett schimmernden Eisplatten.",
+            "Ondra umkreist Olyss in 11 Tage."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Mond"
+            ],
+            [
+              "Sternsystem",
+              "Darynth-System"
+            ],
+            [
+              "Zentralkörper",
+              "Olyss"
+            ],
+            [
+              "Große Halbachse",
+              "585.425 km"
+            ],
+            [
+              "Umlaufzeit",
+              "11 Tage"
+            ],
+            [
+              "Durchmesser",
+              "1.400 km"
+            ],
+            [
+              "Masse",
+              "0,057 Mondmassen"
+            ],
+            [
+              "Schwerkraft",
+              "0,06 g"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -188 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Iravelle",
+          "text": [
+            "Das Darynth-System ist die Heimat der Oneiroiden: Ihr Planet Iravelle umkreist Darynth."
+          ],
+          "verweise": [
+            [
+              "Iravelle",
+              "inhalte/himmelskoerper/planeten/details/iravelle/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Oneiroiden",
+              "inhalte/spezies/Mentale Spezies/Oneiroiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Ondra im Darynth-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Olyss"
+            ],
+            [
+              "Große Halbachse",
+              "585.425 km"
+            ],
+            [
+              "Exzentrizität",
+              "0,01"
+            ],
+            [
+              "Bahnneigung",
+              "1°"
+            ],
+            [
+              "Umlaufzeit",
+              "11 Tage"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Darynth · Stern",
+              "Orangefarbener Zwerg (K3 V)"
+            ],
+            [
+              "Ashken · 0,18 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Doriel · 0,39 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Iravelle · 0,65 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Kavren · 1,12 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Torad · 2,9 AE",
+              "Gasriese"
+            ],
+            [
+              "Olyss · 6,1 AE",
+              "Eisriese"
+            ],
+            [
+              "Umbrel · 11,3 AE",
+              "Eisriese"
+            ],
+            [
+              "Darynth-Asteroidengürtel · 1,7–2,4 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußere Kleinkörperregion · 14–30 AE",
+              "Kleinkörpergürtel"
+            ]
+          ],
+          "verweise": [
+            [
+              "Darynth",
+              "inhalte/himmelskoerper/sterne/details/darynth/hauptseite/index.html"
+            ],
+            [
+              "Ashken",
+              "inhalte/himmelskoerper/planeten/details/ashken/hauptseite/index.html"
+            ],
+            [
+              "Doriel",
+              "inhalte/himmelskoerper/planeten/details/doriel/hauptseite/index.html"
+            ],
+            [
+              "Iravelle",
+              "inhalte/himmelskoerper/planeten/details/iravelle/hauptseite/index.html"
+            ],
+            [
+              "Kavren",
+              "inhalte/himmelskoerper/planeten/details/kavren/hauptseite/index.html"
+            ],
+            [
+              "Torad",
+              "inhalte/himmelskoerper/planeten/details/torad/hauptseite/index.html"
+            ],
+            [
+              "Olyss",
+              "inhalte/himmelskoerper/planeten/details/olyss/hauptseite/index.html"
+            ],
+            [
+              "Umbrel",
+              "inhalte/himmelskoerper/planeten/details/umbrel/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Ondra.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "700 km"
+            ],
+            [
+              "Masse",
+              "0,057 Mondmassen"
+            ],
+            [
+              "Mittlere Dichte",
+              "2,91 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "0,57 m/s² (0,058 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "0,89 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Planetare Struktur": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Planetare Struktur von Ondra.",
+      "abschnitte": [
+        {
+          "titel": "Schalenbau",
+          "schichten": [
+            [
+              "Kruste",
+              "Silikatgestein"
+            ],
+            [
+              "Mantel",
+              "Dichteres Silikatgestein"
+            ],
+            [
+              "Kern",
+              "Eisen und Nickel"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Ondra.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Ondra ist geologisch weitgehend erstarrt; Einschläge haben seine Oberfläche geformt."
+          ]
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Ondra.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 6,1 AE Abstand zu Darynth liegt die Gleichgewichtstemperatur von Ondra bei rund -188 °C – eisig kalt."
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Ondra.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Ondra entstand zusammen mit dem Darynth-System vor rund 6 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Ondra.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Ist der Mond eingefangen oder mit seinem Planeten entstanden?",
+            "Welche Spuren tragen seine ältesten Krater?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Ondra ist mit allen Bahndaten im Darynth-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=iravelle-stern&objekt=iravelle-ondra"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Ondra.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Ondra ist ein Eis-Gesteins-Mond des Olyss mit zerbrochenen, violett schimmernden Eisplatten."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Ondra.",
+      "abschnitte": [
+        {
+          "titel": "Ondra – Archivbild",
+          "bild": true,
+          "bildtext": "Ondra"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,552 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Tovek",
+  "genitiv": "von Tovek",
+  "dossierName": "Tovek-Dossier",
+  "klasse": "Fels-Eismond",
+  "intro": "Tovek ist ein kleiner Fels-Eismond des kalten Planeten Veldros. Seine Zusammensetzung und inneren Reservoire sind Gegenstand planetologischer Untersuchung. Tovek umkreist Veldros in 3,8 Tage.",
+  "globusDaten": {
+    "planet": "tovek",
+    "klasse": "Eis",
+    "radius": 610000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=teryn-stern&objekt=teryn-tovek",
+  "grunddaten": [
+    [
+      "System-ID",
+      "teryn-tovek"
+    ],
+    [
+      "Archiv-ID",
+      "AP-TERYN-TOVEK"
+    ],
+    [
+      "Typ",
+      "Fels-Eismond"
+    ],
+    [
+      "Sternsystem",
+      "Teryn-System"
+    ],
+    [
+      "Zentralkörper",
+      "Veldros"
+    ],
+    [
+      "Große Halbachse",
+      "146.687 km"
+    ],
+    [
+      "Umlaufzeit",
+      "3,8 Tage"
+    ],
+    [
+      "Durchmesser",
+      "1.220 km"
+    ],
+    [
+      "Masse",
+      "4,78 · 10^20 kg"
+    ],
+    [
+      "Schwerkraft",
+      "8,56 cm/s²"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -97 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Teryn-System"
+    ],
+    [
+      "Zentralstern",
+      "Teryn",
+      "inhalte/himmelskoerper/sterne/details/teryn/hauptseite/index.html"
+    ],
+    [
+      "Umläuft",
+      "Veldros",
+      "inhalte/himmelskoerper/planeten/details/veldros/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "146.687 km"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Tovek im Teryn-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=teryn-stern&objekt=teryn-tovek",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Teryn",
+      "href": "inhalte/himmelskoerper/sterne/details/teryn/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◍",
+      "art": "Mutterplanet",
+      "titel": "Veldros",
+      "href": "inhalte/himmelskoerper/planeten/details/veldros/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Solitiden",
+      "titel": "Iskara",
+      "href": "inhalte/himmelskoerper/planeten/details/iskara/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Solitiden",
+      "href": "inhalte/spezies/Mentale Spezies/Solitiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Teryn-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=teryn-stern&objekt=teryn-tovek"
+    },
+    {
+      "titel": "Speziesdossier Solitiden",
+      "href": "inhalte/spezies/Mentale Spezies/Solitiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#08090a",
+      "tiefe": "#121416",
+      "akzent": "#c2d1de",
+      "sand": "#c6cbbc",
+      "moos": "#a0c9b3",
+      "ozean": "#80b0d6",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#48535c"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Astronomie"
+      ],
+      [
+        "Planet",
+        "Mutterplanet"
+      ],
+      [
+        "Kräfte",
+        "Gezeiten"
+      ],
+      [
+        "Tiefe",
+        "Geologie"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Mutterplanet": {
+      "gruppe": "Wissenschaft",
+      "icon": "◐",
+      "intro": "Mutterplanet von Tovek.",
+      "abschnitte": [
+        {
+          "titel": "Veldros",
+          "text": [
+            "Veldros ist eine kalte Supererde mit eisreichen Hochländern, mineralischen Tiefenstrukturen und möglichen unterirdischen Flüssigkeitsreservoirs."
+          ],
+          "daten": [
+            [
+              "Typ",
+              "Kalte Supererde"
+            ],
+            [
+              "Durchmesser",
+              "21.000 km"
+            ],
+            [
+              "Abstand des Mondes",
+              "146.687 km (14 Planetenradien)"
+            ]
+          ],
+          "verweise": [
+            [
+              "Veldros",
+              "inhalte/himmelskoerper/planeten/details/veldros/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Weitere Monde von Veldros",
+          "liste": [
+            "Phel – Umlauf in 9,6 Tage"
+          ],
+          "verweise": [
+            [
+              "Phel",
+              "inhalte/himmelskoerper/monde/details/phel/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Gezeiten": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gezeiten von Tovek.",
+      "abschnitte": [
+        {
+          "titel": "Gezeitenkräfte",
+          "text": [
+            "Auf seiner Bahn in 146.687 km Abstand wirken starke Gezeitenkräfte von Veldros auf Tovek."
+          ]
+        }
+      ]
+    },
+    "Gebundene Rotation": {
+      "gruppe": "Wissenschaft",
+      "icon": "↻",
+      "intro": "Gebundene Rotation von Tovek.",
+      "abschnitte": [
+        {
+          "titel": "Rotation",
+          "text": [
+            "Tovek wendet Veldros vermutlich stets dieselbe Seite zu: Ein Tag dauert so lange wie ein Umlauf – 3,8 Tage."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Tovek auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Tovek",
+          "text": [
+            "Tovek ist ein kleiner Fels-Eismond des kalten Planeten Veldros. Seine Zusammensetzung und inneren Reservoire sind Gegenstand planetologischer Untersuchung.",
+            "Tovek umkreist Veldros in 3,8 Tage."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Fels-Eismond"
+            ],
+            [
+              "Sternsystem",
+              "Teryn-System"
+            ],
+            [
+              "Zentralkörper",
+              "Veldros"
+            ],
+            [
+              "Große Halbachse",
+              "146.687 km"
+            ],
+            [
+              "Umlaufzeit",
+              "3,8 Tage"
+            ],
+            [
+              "Durchmesser",
+              "1.220 km"
+            ],
+            [
+              "Masse",
+              "4,78 · 10^20 kg"
+            ],
+            [
+              "Schwerkraft",
+              "8,56 cm/s²"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -97 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Iskara",
+          "text": [
+            "Das Teryn-System ist die Heimat der Solitiden: Ihr Planet Iskara umkreist Teryn."
+          ],
+          "verweise": [
+            [
+              "Iskara",
+              "inhalte/himmelskoerper/planeten/details/iskara/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Solitiden",
+              "inhalte/spezies/Mentale Spezies/Solitiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Tovek im Teryn-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Veldros"
+            ],
+            [
+              "Große Halbachse",
+              "146.687 km"
+            ],
+            [
+              "Exzentrizität",
+              "0,009"
+            ],
+            [
+              "Bahnneigung",
+              "0,8°"
+            ],
+            [
+              "Umlaufzeit",
+              "3,8 Tage"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Teryn · Stern",
+              "Orangefarbener Hauptreihenstern (K4 V)"
+            ],
+            [
+              "Dareth · 0,15 AE",
+              "Heißer Gesteinsplanet"
+            ],
+            [
+              "Nura · 0,34 AE",
+              "Heißer terrestrischer Planet"
+            ],
+            [
+              "Iskara · 0,61 AE",
+              "Bewohnter terrestrischer Silikatplanet"
+            ],
+            [
+              "Veldros · 1,08 AE",
+              "Kalte Supererde"
+            ],
+            [
+              "Saevor · 2,84 AE",
+              "Gasriese"
+            ],
+            [
+              "Ynderal · 5,9 AE",
+              "Eisreicher Riesenplanet"
+            ],
+            [
+              "Veylan-Asteroidengürtel · 1,7–2 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußere Kleinkörperregion · 14–38 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Teryn",
+              "inhalte/himmelskoerper/sterne/details/teryn/hauptseite/index.html"
+            ],
+            [
+              "Dareth",
+              "inhalte/himmelskoerper/planeten/details/dareth/hauptseite/index.html"
+            ],
+            [
+              "Nura",
+              "inhalte/himmelskoerper/planeten/details/nura/hauptseite/index.html"
+            ],
+            [
+              "Iskara",
+              "inhalte/himmelskoerper/planeten/details/iskara/hauptseite/index.html"
+            ],
+            [
+              "Veldros",
+              "inhalte/himmelskoerper/planeten/details/veldros/hauptseite/index.html"
+            ],
+            [
+              "Saevor",
+              "inhalte/himmelskoerper/planeten/details/saevor/hauptseite/index.html"
+            ],
+            [
+              "Ynderal",
+              "inhalte/himmelskoerper/planeten/details/ynderal/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Tovek.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "610 km"
+            ],
+            [
+              "Masse",
+              "4,78 · 10^20 kg"
+            ],
+            [
+              "Mittlere Dichte",
+              "0,5 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "0,09 m/s² (0,009 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "0,32 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Tovek.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Tovek ist geologisch weitgehend erstarrt; Einschläge haben seine Oberfläche geformt."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Tovek.",
+      "abschnitte": [
+        {
+          "titel": "Gashülle",
+          "text": [
+            "Tovek besitzt keine nennenswerte Atmosphäre – dafür ist die Schwerkraft zu gering."
+          ]
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Tovek.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 1,08 AE Abstand zu Teryn liegt die Gleichgewichtstemperatur von Tovek bei rund -97 °C – kalt."
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Tovek.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Tovek entstand zusammen mit dem Teryn-System vor rund 6,1 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Tovek.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Ist der Mond eingefangen oder mit seinem Planeten entstanden?",
+            "Welche Spuren tragen seine ältesten Krater?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Tovek ist mit allen Bahndaten im Teryn-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=teryn-stern&objekt=teryn-tovek"
+            ]
+          ]
+        },
+        {
+          "titel": "Untersuchung im Teryn-System",
+          "text": [
+            "Welche Risse im Oberflächeneis gehen auf Einschläge zurück und welche könnten durch Gezeitenkräfte entstanden sein?"
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Tovek.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Größter Mond von Veldros"
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Tovek.",
+      "abschnitte": [
+        {
+          "titel": "Illustrationsmotiv",
+          "bild": true,
+          "bildtext": "Illustration anhand eines vorhandenen Motivs. Sie zeigt den Himmelskörpertyp und keine bestätigten Oberflächendetails."
+        }
+      ]
+    }
+  }
+}

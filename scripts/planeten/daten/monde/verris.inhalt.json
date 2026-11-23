@@ -1,0 +1,576 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Verris",
+  "genitiv": "von Verris",
+  "dossierName": "Verris-Dossier",
+  "klasse": "Gesteinsmond",
+  "intro": "Der größere, innere Mond Ilaruuns kann die sichtbare Sternscheibe fast vollständig bedecken und eine Bernsteinring-Finsternis auslösen.",
+  "globusDaten": {
+    "planet": "verris",
+    "klasse": "Gestein",
+    "radius": 1000000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=elaris-stern&objekt=elaris-verris",
+  "grunddaten": [
+    [
+      "System-ID",
+      "elaris-verris"
+    ],
+    [
+      "Archiv-ID",
+      "AP-ELARIS-VERRIS"
+    ],
+    [
+      "Typ",
+      "Gesteinsmond"
+    ],
+    [
+      "Sternsystem",
+      "Elaris-System"
+    ],
+    [
+      "Zentralkörper",
+      "Ilaruun"
+    ],
+    [
+      "Große Halbachse",
+      "199.952 km"
+    ],
+    [
+      "Umlaufzeit",
+      "9,9 Tage"
+    ],
+    [
+      "Durchmesser",
+      "2.000 km"
+    ],
+    [
+      "Masse",
+      "0,146 Mondmassen"
+    ],
+    [
+      "Schwerkraft",
+      "0,07 g"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -7 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Elaris-System"
+    ],
+    [
+      "Zentralstern",
+      "Elaris A",
+      "inhalte/himmelskoerper/sterne/details/elaris-a/hauptseite/index.html"
+    ],
+    [
+      "Umläuft",
+      "Ilaruun",
+      "inhalte/himmelskoerper/planeten/details/ilaruun/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "199.952 km"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Verris im Elaris-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=elaris-stern&objekt=elaris-verris",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Elaris A",
+      "href": "inhalte/himmelskoerper/sterne/details/elaris-a/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◍",
+      "art": "Mutterplanet",
+      "titel": "Ilaruun",
+      "href": "inhalte/himmelskoerper/planeten/details/ilaruun/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Neurofloren",
+      "titel": "Ilaruun",
+      "href": "inhalte/himmelskoerper/planeten/details/ilaruun/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Neurofloren",
+      "href": "inhalte/spezies/Mentale Spezies/Neurofloren/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Elaris-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=elaris-stern&objekt=elaris-verris"
+    },
+    {
+      "titel": "Speziesdossier Neurofloren",
+      "href": "inhalte/spezies/Mentale Spezies/Neurofloren/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#080707",
+      "tiefe": "#11100f",
+      "akzent": "#bbb6b1",
+      "sand": "#c0b59f",
+      "moos": "#9aab8c",
+      "ozean": "#7b949f",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#44403d"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Astronomie"
+      ],
+      [
+        "Planet",
+        "Mutterplanet"
+      ],
+      [
+        "Kräfte",
+        "Gezeiten"
+      ],
+      [
+        "Tiefe",
+        "Geologie"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Mutterplanet": {
+      "gruppe": "Wissenschaft",
+      "icon": "◐",
+      "intro": "Mutterplanet von Verris.",
+      "abschnitte": [
+        {
+          "titel": "Ilaruun",
+          "text": [
+            "Heimatwelt der Neurofloren mit 58 Prozent Wasserbedeckung, lebhafter Tektonik und zwei größeren Monden."
+          ],
+          "daten": [
+            [
+              "Typ",
+              "Gemäßigter terrestrischer Gesteinsplanet"
+            ],
+            [
+              "Durchmesser",
+              "13.124 km"
+            ],
+            [
+              "Abstand des Mondes",
+              "199.952 km (30,5 Planetenradien)"
+            ]
+          ],
+          "verweise": [
+            [
+              "Ilaruun",
+              "inhalte/himmelskoerper/planeten/details/ilaruun/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Weitere Monde von Ilaruun",
+          "liste": [
+            "Thaen – Umlauf in 23 Tage"
+          ],
+          "verweise": [
+            [
+              "Thaen",
+              "inhalte/himmelskoerper/monde/details/thaen/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Gezeiten": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gezeiten von Verris.",
+      "abschnitte": [
+        {
+          "titel": "Gezeitenkräfte",
+          "text": [
+            "Auf seiner Bahn in 199.952 km Abstand wirken starke Gezeitenkräfte von Ilaruun auf Verris."
+          ]
+        }
+      ]
+    },
+    "Gebundene Rotation": {
+      "gruppe": "Wissenschaft",
+      "icon": "↻",
+      "intro": "Gebundene Rotation von Verris.",
+      "abschnitte": [
+        {
+          "titel": "Rotation",
+          "text": [
+            "Verris wendet Ilaruun vermutlich stets dieselbe Seite zu: Ein Tag dauert so lange wie ein Umlauf – 9,9 Tage."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Verris auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Verris",
+          "text": [
+            "Der größere, innere Mond Ilaruuns kann die sichtbare Sternscheibe fast vollständig bedecken und eine Bernsteinring-Finsternis auslösen.",
+            "Verris umkreist Ilaruun in 9,9 Tage."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Gesteinsmond"
+            ],
+            [
+              "Sternsystem",
+              "Elaris-System"
+            ],
+            [
+              "Zentralkörper",
+              "Ilaruun"
+            ],
+            [
+              "Große Halbachse",
+              "199.952 km"
+            ],
+            [
+              "Umlaufzeit",
+              "9,9 Tage"
+            ],
+            [
+              "Durchmesser",
+              "2.000 km"
+            ],
+            [
+              "Masse",
+              "0,146 Mondmassen"
+            ],
+            [
+              "Schwerkraft",
+              "0,07 g"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -7 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Ilaruun",
+          "text": [
+            "Das Elaris-System ist die Heimat der Neurofloren: Ihr Planet Ilaruun umkreist Elaris A, und Verris ist einer seiner Monde."
+          ],
+          "verweise": [
+            [
+              "Ilaruun",
+              "inhalte/himmelskoerper/planeten/details/ilaruun/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Neurofloren",
+              "inhalte/spezies/Mentale Spezies/Neurofloren/hauptseite/Spezies.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Kenndaten von Verris",
+          "text": [
+            "Der größere, innere Mond Ilaruuns kann die sichtbare Sternscheibe fast vollständig bedecken und eine Bernsteinring-Finsternis auslösen."
+          ],
+          "liste": [
+            "Radius: 1.000 km",
+            "Masse: 0,0018 Erdmassen",
+            "Bahnradius: 200.000 km",
+            "Umlaufzeit: 9,91 Erdtage",
+            "Mittlere Dichte: 2,57 g/cm³"
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Verris im Elaris-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Ilaruun"
+            ],
+            [
+              "Große Halbachse",
+              "199.952 km"
+            ],
+            [
+              "Exzentrizität",
+              "0,014"
+            ],
+            [
+              "Bahnneigung",
+              "0°"
+            ],
+            [
+              "Umlaufzeit",
+              "9,9 Tage"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Elaris A · Stern",
+              "Orangefarbener Hauptreihenstern (K2 V)"
+            ],
+            [
+              "Kessar · 0,19 AE",
+              "Heißer eisenreicher Gesteinsplanet"
+            ],
+            [
+              "Orveth · 0,38 AE",
+              "Heißer trockener Gesteinsplanet"
+            ],
+            [
+              "Ilaruun · 0,66 AE",
+              "Gemäßigter terrestrischer Gesteinsplanet"
+            ],
+            [
+              "Venyra · 1,17 AE",
+              "Kalter Gesteins- und Eisplanet"
+            ],
+            [
+              "Daragon · 3,2 AE",
+              "Gasriese"
+            ],
+            [
+              "Shyren · 5,9 AE",
+              "Blauer Eisriese"
+            ],
+            [
+              "Eivara · 12,8 AE",
+              "Eis-Gesteins-Zwergplanet"
+            ],
+            [
+              "Tiruun · 1,7–2,4 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Kaelor-Saum · 9,5–30 AE",
+              "Äußeres Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Elaris A",
+              "inhalte/himmelskoerper/sterne/details/elaris-a/hauptseite/index.html"
+            ],
+            [
+              "Kessar",
+              "inhalte/himmelskoerper/planeten/details/kessar/hauptseite/index.html"
+            ],
+            [
+              "Orveth",
+              "inhalte/himmelskoerper/planeten/details/orveth/hauptseite/index.html"
+            ],
+            [
+              "Ilaruun",
+              "inhalte/himmelskoerper/planeten/details/ilaruun/hauptseite/index.html"
+            ],
+            [
+              "Venyra",
+              "inhalte/himmelskoerper/planeten/details/venyra/hauptseite/index.html"
+            ],
+            [
+              "Daragon",
+              "inhalte/himmelskoerper/planeten/details/daragon/hauptseite/index.html"
+            ],
+            [
+              "Shyren",
+              "inhalte/himmelskoerper/planeten/details/shyren/hauptseite/index.html"
+            ],
+            [
+              "Eivara",
+              "inhalte/himmelskoerper/zwergplaneten/details/eivara/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Verris.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "1.000 km"
+            ],
+            [
+              "Masse",
+              "0,146 Mondmassen"
+            ],
+            [
+              "Mittlere Dichte",
+              "2,57 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "0,72 m/s² (0,073 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "1,2 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Verris.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Verris ist geologisch weitgehend erstarrt; Einschläge haben seine Oberfläche geformt."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Verris.",
+      "abschnitte": [
+        {
+          "titel": "Gashülle",
+          "text": [
+            "Verris besitzt keine nennenswerte Atmosphäre – dafür ist die Schwerkraft zu gering."
+          ]
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Verris.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 0,66 AE Abstand zu Elaris A liegt die Gleichgewichtstemperatur von Verris bei rund -7 °C – gemäßigt."
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Verris.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Verris entstand zusammen mit dem Elaris-System vor rund 5,9 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Verris.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Ist der Mond eingefangen oder mit seinem Planeten entstanden?",
+            "Welche Spuren tragen seine ältesten Krater?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Verris ist mit allen Bahndaten im Elaris-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=elaris-stern&objekt=elaris-verris"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Verris.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Größter Mond von Ilaruun"
+          ]
+        },
+        {
+          "titel": "Verwandte Dossiers",
+          "verweise": [
+            [
+              "Elaris-System",
+              "inhalte/himmelskoerper/sternensysteme/details/elaris-system/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Verris.",
+      "abschnitte": [
+        {
+          "titel": "Verris",
+          "bild": true,
+          "bildtext": "Verris"
+        }
+      ]
+    }
+  }
+}

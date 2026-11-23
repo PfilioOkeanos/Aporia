@@ -1,0 +1,506 @@
+{
+  "systemName": "Darynth-System",
+  "praefix": "iravelle-",
+  "lage": {
+    "entfernungLj": 44,
+    "richtung": [
+      -0.2,
+      0.95,
+      0.24
+    ]
+  },
+  "einzelstern": true,
+  "stern": {
+    "id": "iravelle-stern",
+    "name": "Darynth",
+    "typ": "Orangefarbener Zwerg (K3 V)",
+    "masseSonne": 0.78,
+    "radiusSonne": 0.85,
+    "leuchtkraftSonne": 0.37,
+    "temperaturK": 4900,
+    "alterMrd": 6,
+    "farbe": [
+      1,
+      0.62,
+      0.34
+    ],
+    "emissionsfarbe": [
+      1,
+      0.66,
+      0.38
+    ],
+    "emission": 1.1,
+    "bild": {
+      "art": "sterne",
+      "slug": "chatgpt-bild-11-nov-2026-15-42-17"
+    },
+    "beschreibung": "Darynth ist ein orange bis gelborange leuchtender K3-V-Hauptreihenstern mit 0,78 Sonnenmassen und 37 % der Sonnenleuchtkraft. Mit rund 6 Milliarden Jahren ist er stabil; seine Lebensdauer auf der Hauptreihe ist erheblich länger als die der Sonne. Er ist Heimatstern der Oneiroiden."
+  },
+  "koerper": [
+    {
+      "id": "iravelle-ashken",
+      "name": "Ashken",
+      "typ": "Gesteinsplanet",
+      "um": "iravelle-stern",
+      "aAE": 0.18,
+      "e": 0.03,
+      "i": 2.1,
+      "knoten": 40,
+      "peri": 90,
+      "phase": 30,
+      "radiusKm": 4800,
+      "masseErde": 0.45,
+      "albedo": 0.1,
+      "farbe": [
+        0.5,
+        0.36,
+        0.28
+      ],
+      "bild": {
+        "art": "planeten",
+        "slug": "rostbrauner-planet-mit-freiliegendem-eisenkern"
+      },
+      "beschreibung": "Ashken ist der innerste Hauptplanet: eine Welt aus Gestein und metallreichen Mineralien mit großen Einschlagsbecken, gebrochenen Plateaus und nur dünner, veränderlicher Atmosphäre – ein Ziel für automatisierten Bergbau."
+    },
+    {
+      "id": "iravelle-doriel",
+      "name": "Doriel",
+      "typ": "Gesteinsplanet",
+      "um": "iravelle-stern",
+      "aAE": 0.39,
+      "e": 0.02,
+      "i": 1.4,
+      "knoten": 130,
+      "peri": 210,
+      "phase": 160,
+      "radiusKm": 6200,
+      "masseErde": 0.85,
+      "albedo": 0.4,
+      "farbe": [
+        0.74,
+        0.5,
+        0.34
+      ],
+      "bild": {
+        "art": "planeten",
+        "slug": "kraterreicher-wustenplanet-im-all"
+      },
+      "beschreibung": "Doriel ist eine trockene, stark erwärmte Gesteinswelt mit dichterer Atmosphäre als Ashken, ausgedehnten Gesteinswüsten, alten Becken und mineralischen Ablagerungen – ohne dauerhaft stabile offene Ozeane."
+    },
+    {
+      "id": "iravelle-planet",
+      "name": "Iravelle",
+      "typ": "Gesteinsplanet",
+      "um": "iravelle-stern",
+      "aAE": 0.65,
+      "e": 0.02,
+      "i": 0,
+      "knoten": 0,
+      "peri": 50,
+      "phase": 280,
+      "radiusKm": 6626,
+      "masseErde": 1.12,
+      "albedo": 0.3,
+      "zielTemperaturC": 12,
+      "farbe": [
+        0.34,
+        0.5,
+        0.58
+      ],
+      "bild": {
+        "art": "planeten",
+        "slug": "teilvereister-planet-mit-dunklen-ozeanen"
+      },
+      "beschreibung": "Iravelle ist die Heimatwelt der Oneiroiden: ein terrestrischer Gesteinsplanet mit fünf großen Landmassen, Terrassensenken, Feuchtgebieten, Ozeanen und polaren Eisfeldern, umkreist von den Monden Nethis und Ruva."
+    },
+    {
+      "id": "iravelle-nethis",
+      "name": "Nethis",
+      "typ": "Mond",
+      "um": "iravelle-planet",
+      "periodeTage": 10.4,
+      "e": 0.02,
+      "i": 3,
+      "knoten": 30,
+      "peri": 0,
+      "phase": 80,
+      "radiusKm": 1090,
+      "masseErde": 0.003,
+      "farbe": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "bild": {
+        "art": "zwergplaneten",
+        "slug": "dunkle-basaltmeere-auf-einem-zwergplaneten"
+      },
+      "beschreibung": "Nethis ist der innere Mond Iravelles – überwiegend silikatisch, mit dunklen Gesteinsflächen und hellen Einschlagsstrukturen. Er trägt besonders stark zu den Gezeiten bei und wandert schnell über den Himmel."
+    },
+    {
+      "id": "iravelle-ruva",
+      "name": "Ruva",
+      "typ": "Mond",
+      "um": "iravelle-planet",
+      "periodeTage": 22.9,
+      "e": 0.03,
+      "i": 6,
+      "knoten": 120,
+      "peri": 0,
+      "phase": 250,
+      "radiusKm": 865,
+      "masseErde": 0.0015,
+      "farbe": [
+        0.78,
+        0.76,
+        0.74
+      ],
+      "bild": {
+        "art": "zwergplaneten",
+        "slug": "strahlender-zwergplanet-mit-dunklen-einschlagsspuren"
+      },
+      "beschreibung": "Ruva ist der kleinere äußere Mond mit hellen Hochländern und alten Einschlagsbecken. Seine wechselnde Stellung zu Nethis erzeugt komplexe, aber erklärbare Gezeitenmuster."
+    },
+    {
+      "id": "iravelle-kavren",
+      "name": "Kavren",
+      "typ": "Gesteinsplanet",
+      "um": "iravelle-stern",
+      "aAE": 1.12,
+      "e": 0.04,
+      "i": 1.8,
+      "knoten": 210,
+      "peri": 320,
+      "phase": 60,
+      "radiusKm": 4500,
+      "masseErde": 0.4,
+      "albedo": 0.4,
+      "farbe": [
+        0.7,
+        0.62,
+        0.52
+      ],
+      "bild": {
+        "art": "planeten",
+        "slug": "frostiger-polarwustenplanet"
+      },
+      "beschreibung": "Kavren ist der vierte Planet im Darynth-System und die Heimat der Technosymbionten. Eislandschaften und mineralreiche Hochländer prägen die Oberfläche. Geothermische Täler und unterirdische Lebensräume beherbergen eine natürliche Biosphäre und geschützte Siedlungen."
+    },
+    {
+      "id": "iravelle-guertel",
+      "name": "Darynth-Asteroidengürtel",
+      "typ": "Asteroidengürtel",
+      "ringUm": "iravelle-stern",
+      "ringeAE": [
+        1.7,
+        1.88,
+        2.05,
+        2.22,
+        2.4
+      ],
+      "anzahl": 280,
+      "groesseKm": 380,
+      "mindestPx": 5.5,
+      "farbe": [
+        0.6,
+        0.58,
+        0.66
+      ],
+      "bild": {
+        "art": "sternensysteme",
+        "slug": "kobaltblauer-asteroidengurtel-mit-kupferspalte"
+      },
+      "beschreibung": "Zwischen Kavren und Torad liegt von etwa 1,7 bis 2,4 AE ein ungleichmäßiger Gürtel aus silikatischen, metallreichen und kohlenstoffhaltigen Körpern; Resonanzen mit Torad erzeugen Lücken. Eine bedeutende Rohstoff- und Forschungsregion."
+    },
+    {
+      "id": "iravelle-torad",
+      "name": "Torad",
+      "typ": "Gasriese",
+      "um": "iravelle-stern",
+      "aAE": 2.9,
+      "e": 0.03,
+      "i": 1.2,
+      "knoten": 300,
+      "peri": 70,
+      "phase": 200,
+      "radiusKm": 69000,
+      "masseErde": 250,
+      "albedo": 0.5,
+      "farbe": [
+        0.88,
+        0.66,
+        0.4
+      ],
+      "bild": {
+        "art": "planeten",
+        "slug": "goldener-gasriese-mit-klaren-wolkenbandern"
+      },
+      "beschreibung": "Torad ist der erste große Gasplanet des Systems mit ausgeprägten Wolkenbändern, großen langlebigen Wirbelstürmen, kräftigem Magnetfeld, einem Ringsystem aus Staub und Eispartikeln und mehreren geologisch unterschiedlichen Monden."
+    },
+    {
+      "id": "iravelle-torad-ringe",
+      "name": "Ringe von Torad",
+      "typ": "Planetenring",
+      "ringUm": "iravelle-torad",
+      "ringeAE": [
+        0.00065,
+        0.00071,
+        0.00076,
+        0.0008
+      ],
+      "anzahl": 200,
+      "groesseKm": 2,
+      "mindestPx": 2,
+      "farbe": [
+        0.82,
+        0.76,
+        0.66
+      ],
+      "beschreibung": "Ein Ringsystem aus Staub und Eispartikeln, etwa 97.000 bis 120.000 km vom Zentrum Torads entfernt."
+    },
+    {
+      "id": "iravelle-valen",
+      "name": "Valen",
+      "typ": "Mond",
+      "um": "iravelle-torad",
+      "periodeTage": 1.8,
+      "e": 0.005,
+      "i": 0.1,
+      "knoten": 0,
+      "peri": 0,
+      "phase": 20,
+      "radiusKm": 1600,
+      "masseErde": 0.011,
+      "farbe": [
+        0.4,
+        0.3,
+        0.26
+      ],
+      "bild": {
+        "art": "zwergplaneten",
+        "slug": "basaltzwergplanet-mit-gluhenden-lavaadern"
+      },
+      "beschreibung": "Valen ist der innerste große Mond Torads. Starke Gezeitenwirkungen heizen sein Inneres; durch die dunkle Basaltkruste ziehen glühende Lavaadern."
+    },
+    {
+      "id": "iravelle-ithra",
+      "name": "Ithra",
+      "typ": "Mond",
+      "um": "iravelle-torad",
+      "periodeTage": 4.5,
+      "e": 0.004,
+      "i": 0.3,
+      "knoten": 0,
+      "peri": 0,
+      "phase": 150,
+      "radiusKm": 1300,
+      "masseErde": 0.006,
+      "farbe": [
+        0.86,
+        0.82,
+        0.76
+      ],
+      "bild": {
+        "art": "zwergplaneten",
+        "slug": "kryovulkanische-eiswelt-im-tiefen-all"
+      },
+      "beschreibung": "Ithra ist ein eisreicher Mond Torads, dessen helle Oberfläche von kryovulkanischen Ablagerungen überzogen ist."
+    },
+    {
+      "id": "iravelle-moradh",
+      "name": "Moradh",
+      "typ": "Mond",
+      "um": "iravelle-torad",
+      "periodeTage": 30,
+      "e": 0.02,
+      "i": 2,
+      "knoten": 80,
+      "peri": 0,
+      "phase": 300,
+      "radiusKm": 600,
+      "masseErde": 0.0005,
+      "farbe": [
+        0.3,
+        0.3,
+        0.32
+      ],
+      "bild": {
+        "art": "zwergplaneten",
+        "slug": "dunkler-kohlenstoffzwerg-im-tiefen-all"
+      },
+      "beschreibung": "Moradh ist ein weiter außen kreisender, dunkler Mond Torads mit kohlenstoffreicher, eisführender Kruste."
+    },
+    {
+      "id": "iravelle-olyss",
+      "name": "Olyss",
+      "typ": "Eisriese",
+      "um": "iravelle-stern",
+      "aAE": 6.1,
+      "e": 0.04,
+      "i": 1.7,
+      "knoten": 160,
+      "peri": 240,
+      "phase": 90,
+      "radiusKm": 25500,
+      "masseErde": 22,
+      "albedo": 0.32,
+      "farbe": [
+        0.84,
+        0.74,
+        0.86
+      ],
+      "bild": {
+        "art": "planeten",
+        "slug": "pastellfarbener-gasriese-mit-leuchtendem-atmospharenrand"
+      },
+      "beschreibung": "Olyss ist ein äußerer Riesenplanet mit höherem Anteil schwerer Elemente und flüchtiger Verbindungen als Torad. Methan und weitere Kohlenwasserstoffe bilden in seiner kalten Atmosphäre besondere, pastellfarbene Wolkenschichten."
+    },
+    {
+      "id": "iravelle-pheris",
+      "name": "Pheris",
+      "typ": "Mond",
+      "um": "iravelle-olyss",
+      "periodeTage": 3.2,
+      "e": 0.006,
+      "i": 0.4,
+      "knoten": 0,
+      "peri": 0,
+      "phase": 40,
+      "radiusKm": 900,
+      "masseErde": 0.001,
+      "farbe": [
+        0.46,
+        0.78,
+        0.76
+      ],
+      "bild": {
+        "art": "zwergplaneten",
+        "slug": "turkiser-eisplanet-mit-dunklen-fissuren"
+      },
+      "beschreibung": "Pheris ist ein türkisfarbener Eismond des Olyss. Dunkle Fissuren deuten auf ein mögliches unterirdisches Flüssigkeitsreservoir hin."
+    },
+    {
+      "id": "iravelle-ondra",
+      "name": "Ondra",
+      "typ": "Mond",
+      "um": "iravelle-olyss",
+      "periodeTage": 11,
+      "e": 0.01,
+      "i": 1,
+      "knoten": 60,
+      "peri": 0,
+      "phase": 210,
+      "radiusKm": 700,
+      "masseErde": 0.0007,
+      "farbe": [
+        0.6,
+        0.48,
+        0.72
+      ],
+      "bild": {
+        "art": "zwergplaneten",
+        "slug": "violetter-zwergplanet-mit-eisplatten"
+      },
+      "beschreibung": "Ondra ist ein Eis-Gesteins-Mond des Olyss mit zerbrochenen, violett schimmernden Eisplatten."
+    },
+    {
+      "id": "iravelle-umbrel",
+      "name": "Umbrel",
+      "typ": "Eisriese",
+      "um": "iravelle-stern",
+      "aAE": 11.3,
+      "e": 0.05,
+      "i": 2.5,
+      "knoten": 260,
+      "peri": 30,
+      "phase": 330,
+      "radiusKm": 23500,
+      "masseErde": 15,
+      "albedo": 0.3,
+      "farbe": [
+        0.82,
+        0.84,
+        0.86
+      ],
+      "bild": {
+        "art": "planeten",
+        "slug": "kleiner-gasriese-im-tiefen-all"
+      },
+      "beschreibung": "Umbrel ist eine sehr kalte äußere Riesenwelt in rund 11,3 AE Entfernung. Seine Atmosphäre enthält leichte Gase und flüchtige Verbindungen; er besitzt mehrere kleine Monde und beeinflusst die Bahnen äußerer Kleinkörper."
+    },
+    {
+      "id": "iravelle-ysel",
+      "name": "Ysel",
+      "typ": "Mond",
+      "um": "iravelle-umbrel",
+      "periodeTage": 2.6,
+      "e": 0.01,
+      "i": 0.8,
+      "knoten": 0,
+      "peri": 0,
+      "phase": 100,
+      "radiusKm": 180,
+      "masseErde": 0.00003,
+      "farbe": [
+        0.76,
+        0.8,
+        0.84
+      ],
+      "bild": {
+        "art": "zwergplaneten",
+        "slug": "schnellrotierender-ovalzwerg-im-all"
+      },
+      "beschreibung": "Ysel ist der größte der kleinen Monde Umbrels – ein schnell rotierender, oval verformter Eiskörper."
+    },
+    {
+      "id": "iravelle-kleinkoerper",
+      "name": "Paelarnir-Gürtel",
+      "typ": "Kleinkörpergürtel",
+      "ringUm": "iravelle-stern",
+      "ringeAE": [
+        14,
+        18,
+        22,
+        26,
+        30
+      ],
+      "anzahl": 300,
+      "groesseKm": 220,
+      "mindestPx": 4.5,
+      "farbe": [
+        0.72,
+        0.8,
+        0.9
+      ],
+      "bild": {
+        "art": "sternensysteme",
+        "slug": "gewellte-kometenscheibe-mit-kleinem-zentralstern"
+      },
+      "beschreibung": "Jenseits von Umbrel liegen eis- und gesteinsreiche Körper, teils auf stabilen Bahnen, teils durch gravitative Wechselwirkungen auf exzentrische Bahnen gelenkt – Herkunft von Kometen des inneren Systems."
+    },
+    {
+      "id": "iravelle-velmora",
+      "name": "Velmora",
+      "typ": "Komet",
+      "um": "iravelle-stern",
+      "aAE": 40,
+      "e": 0.985,
+      "i": 32,
+      "knoten": 200,
+      "peri": 110,
+      "phase": 179,
+      "radiusKm": 6,
+      "masseErde": 0,
+      "farbe": [
+        0.8,
+        0.86,
+        0.92
+      ],
+      "bild": {
+        "art": "kometen",
+        "slug": "komet-mit-langem-schweifbogen"
+      },
+      "beschreibung": "Velmora ist ein langperiodischer Komet mit weit geschwungenem Schweif. Bei seiner seltenen Annäherung bis auf etwa 0,6 AE erscheint er als langschweifiger Komet am Himmel Iravelles; seine Staubspur erzeugt wiederkehrende Meteorströme."
+    }
+  ]
+}

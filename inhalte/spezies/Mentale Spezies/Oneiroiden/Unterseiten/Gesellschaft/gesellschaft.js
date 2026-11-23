@@ -1,2 +1,3 @@
-// Oneiroiden – Gesellschaft · erzeugt vom Spezies-Baukasten (scripts/spezies) – Änderungen dort vornehmen
+// Oneiroiden – Gesellschaft
+// Gemeinsame Funktionen (Topbar, Sidebar, Routen, Klappkapitel, Bildkarussell) kommen aus der Basis.
 import "../../oneiroiden-basis.js";

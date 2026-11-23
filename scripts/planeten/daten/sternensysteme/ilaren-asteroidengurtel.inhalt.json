@@ -1,0 +1,547 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Ilaren-Asteroidengürtel",
+  "genitiv": "von Ilaren-Asteroidengürtel",
+  "dossierName": "Ilaren-Asteroidengürtel-Dossier",
+  "klasse": "Asteroidengürtel",
+  "intro": "Der Ilaren-Asteroidengürtel ist eine verteilte Population kleiner Körper zwischen Meyt und Daran, kein einzelner Himmelskörper.",
+  "globusDaten": {
+    "planet": "jorveks-weit-gespannter-asteroidengurtel",
+    "klasse": "Gestein",
+    "radius": 1000000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=ilaren-stern&objekt=ilaren-asteroidenguertel",
+  "grunddaten": [
+    [
+      "System-ID",
+      "ilaren-asteroidenguertel"
+    ],
+    [
+      "Archiv-ID",
+      "AP-7D5B5E79D9"
+    ],
+    [
+      "Typ",
+      "Asteroidengürtel"
+    ],
+    [
+      "Sternsystem",
+      "Ilaren-System"
+    ],
+    [
+      "Zentralkörper",
+      "Ilaren"
+    ],
+    [
+      "Ausdehnung",
+      "1,3–1,9 AE"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Ilaren-System"
+    ],
+    [
+      "Zentralstern",
+      "Ilaren",
+      "inhalte/himmelskoerper/sterne/details/ilaren/hauptseite/index.html"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Ilaren-Asteroidengürtel im Ilaren-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=ilaren-stern&objekt=ilaren-asteroidenguertel",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Ilaren",
+      "href": "inhalte/himmelskoerper/sterne/details/ilaren/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Kollektiden (Tessari)",
+      "titel": "Khaluun",
+      "href": "inhalte/himmelskoerper/planeten/details/khaluun/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Kollektiden (Tessari)",
+      "href": "inhalte/spezies/Mentale Spezies/Kollektiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Ilaren-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=ilaren-stern&objekt=ilaren-asteroidenguertel"
+    },
+    {
+      "titel": "Speziesdossier Kollektiden (Tessari)",
+      "href": "inhalte/spezies/Mentale Spezies/Kollektiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#090705",
+      "tiefe": "#130f0b",
+      "akzent": "#cab39a",
+      "sand": "#ceb290",
+      "moos": "#a8a778",
+      "ozean": "#869183",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#4e3e2d"
+    },
+    "schichten": [
+      [
+        "Lage",
+        "Bahnen"
+      ],
+      [
+        "System",
+        "Planeten"
+      ],
+      [
+        "Dynamik",
+        "Stabilität"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Zentralsterne": {
+      "gruppe": "Wissenschaft",
+      "icon": "✦",
+      "intro": "Zentralsterne von Ilaren-Asteroidengürtel.",
+      "abschnitte": [
+        {
+          "titel": "Ilaren",
+          "text": [
+            "Ilaren ist ein stabiler orangefarbener Hauptreihenstern der Spektralklasse K3 V. Mit 0,78 Sonnenmassen und rund 26 Prozent der Sonnenleuchtkraft liegt seine gemäßigte Zone näher am Stern als im Sonnensystem. Das Alter wird im Arbeitsmodell mit etwa 5,6 Milliarden Jahren angesetzt."
+          ],
+          "verweise": [
+            [
+              "Ilaren",
+              "inhalte/himmelskoerper/sterne/details/ilaren/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Planeten": {
+      "gruppe": "Wissenschaft",
+      "icon": "◍",
+      "intro": "Planeten von Ilaren-Asteroidengürtel.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Ilaren · Stern",
+              "Orangefarbener Hauptreihenstern (K3 V)"
+            ],
+            [
+              "Harrek · 0,15 AE",
+              "Heißer Gesteinsplanet"
+            ],
+            [
+              "Vosan · 0,31 AE",
+              "Trockener Gesteinsplanet"
+            ],
+            [
+              "Khaluun · 0,52 AE",
+              "Gemäßigter, wasserreicher Gesteinsplanet"
+            ],
+            [
+              "Meyt · 0,92 AE",
+              "Kalter Gesteinsplanet"
+            ],
+            [
+              "Daran · 2,45 AE",
+              "Gasriese"
+            ],
+            [
+              "Ulmar · 5,9 AE",
+              "Eisriese"
+            ],
+            [
+              "Ilaren-Asteroidengürtel · 1,3–1,9 AE",
+              "Asteroidengürtel"
+            ]
+          ],
+          "verweise": [
+            [
+              "Ilaren",
+              "inhalte/himmelskoerper/sterne/details/ilaren/hauptseite/index.html"
+            ],
+            [
+              "Harrek",
+              "inhalte/himmelskoerper/planeten/details/harrek/hauptseite/index.html"
+            ],
+            [
+              "Vosan",
+              "inhalte/himmelskoerper/planeten/details/vosan/hauptseite/index.html"
+            ],
+            [
+              "Khaluun",
+              "inhalte/himmelskoerper/planeten/details/khaluun/hauptseite/index.html"
+            ],
+            [
+              "Meyt",
+              "inhalte/himmelskoerper/planeten/details/meyt/hauptseite/index.html"
+            ],
+            [
+              "Daran",
+              "inhalte/himmelskoerper/planeten/details/daran/hauptseite/index.html"
+            ],
+            [
+              "Ulmar",
+              "inhalte/himmelskoerper/planeten/details/ulmar/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Bahnen": {
+      "gruppe": "Wissenschaft",
+      "icon": "◌",
+      "intro": "Bahnen von Ilaren-Asteroidengürtel.",
+      "abschnitte": [
+        {
+          "titel": "Lage",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Ilaren"
+            ],
+            [
+              "Ausdehnung",
+              "1,3–1,9 AE"
+            ]
+          ]
+        },
+        {
+          "titel": "Ausgedehnte Gürtelzone",
+          "daten": [
+            [
+              "Innere Grenze",
+              "1,3 AE"
+            ],
+            [
+              "Äußere Grenze",
+              "1,9 AE"
+            ],
+            [
+              "Größter angenommener Brocken",
+              "bis ca. 320 km"
+            ]
+          ],
+          "text": [
+            "Die 240 in der Sternenkarte dargestellten Brocken sind eine Visualisierung und keine Zählung der realen Population."
+          ]
+        }
+      ]
+    },
+    "Stabilität": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚖",
+      "intro": "Stabilität von Ilaren-Asteroidengürtel.",
+      "abschnitte": [
+        {
+          "titel": "Stabilität",
+          "text": [
+            "Die Brocken von Ilaren-Asteroidengürtel bewegen sich auf stabilen Bahnen zwischen den Planeten; Resonanzen mit den großen Planeten formen die Ränder des Gebiets."
+          ]
+        },
+        {
+          "titel": "Resonanzen am äußeren Rand",
+          "text": [
+            "Daran formt durch gravitative Resonanzen den äußeren Gürtelrand. Die Verteilung besitzt Lücken und Verdichtungen, aber keine zusätzliche planetengroße Masse."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Ilaren-Asteroidengürtel auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Ilaren-Asteroidengürtel",
+          "text": [
+            "Der Gürtel zwischen etwa 1,3 und 1,9 AE enthält metallreiche, silikatische und kohlenstoffhaltige Körper sowie Trümmer früherer Kollisionen. Er dient als Rohstoff- und Forschungsregion des Ilaren-Systems.",
+            "Ilaren-Asteroidengürtel umgibt Ilaren im Ilaren-System."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Asteroidengürtel"
+            ],
+            [
+              "Sternsystem",
+              "Ilaren-System"
+            ],
+            [
+              "Zentralkörper",
+              "Ilaren"
+            ],
+            [
+              "Ausdehnung",
+              "1,3–1,9 AE"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Khaluun",
+          "text": [
+            "Das Ilaren-System ist die Heimat der Kollektiden (Tessari): Ihr Planet Khaluun umkreist Ilaren."
+          ],
+          "verweise": [
+            [
+              "Khaluun",
+              "inhalte/himmelskoerper/planeten/details/khaluun/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Kollektiden (Tessari)",
+              "inhalte/spezies/Mentale Spezies/Kollektiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Ilaren-Asteroidengürtel im Ilaren-System.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Ilaren · Stern",
+              "Orangefarbener Hauptreihenstern (K3 V)"
+            ],
+            [
+              "Harrek · 0,15 AE",
+              "Heißer Gesteinsplanet"
+            ],
+            [
+              "Vosan · 0,31 AE",
+              "Trockener Gesteinsplanet"
+            ],
+            [
+              "Khaluun · 0,52 AE",
+              "Gemäßigter, wasserreicher Gesteinsplanet"
+            ],
+            [
+              "Meyt · 0,92 AE",
+              "Kalter Gesteinsplanet"
+            ],
+            [
+              "Daran · 2,45 AE",
+              "Gasriese"
+            ],
+            [
+              "Ulmar · 5,9 AE",
+              "Eisriese"
+            ],
+            [
+              "Ilaren-Asteroidengürtel · 1,3–1,9 AE",
+              "Asteroidengürtel"
+            ]
+          ],
+          "verweise": [
+            [
+              "Ilaren",
+              "inhalte/himmelskoerper/sterne/details/ilaren/hauptseite/index.html"
+            ],
+            [
+              "Harrek",
+              "inhalte/himmelskoerper/planeten/details/harrek/hauptseite/index.html"
+            ],
+            [
+              "Vosan",
+              "inhalte/himmelskoerper/planeten/details/vosan/hauptseite/index.html"
+            ],
+            [
+              "Khaluun",
+              "inhalte/himmelskoerper/planeten/details/khaluun/hauptseite/index.html"
+            ],
+            [
+              "Meyt",
+              "inhalte/himmelskoerper/planeten/details/meyt/hauptseite/index.html"
+            ],
+            [
+              "Daran",
+              "inhalte/himmelskoerper/planeten/details/daran/hauptseite/index.html"
+            ],
+            [
+              "Ulmar",
+              "inhalte/himmelskoerper/planeten/details/ulmar/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Umgebung": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Umgebung von Ilaren-Asteroidengürtel.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Ilaren · Stern",
+              "Orangefarbener Hauptreihenstern (K3 V)"
+            ],
+            [
+              "Harrek · 0,15 AE",
+              "Heißer Gesteinsplanet"
+            ],
+            [
+              "Vosan · 0,31 AE",
+              "Trockener Gesteinsplanet"
+            ],
+            [
+              "Khaluun · 0,52 AE",
+              "Gemäßigter, wasserreicher Gesteinsplanet"
+            ],
+            [
+              "Meyt · 0,92 AE",
+              "Kalter Gesteinsplanet"
+            ],
+            [
+              "Daran · 2,45 AE",
+              "Gasriese"
+            ],
+            [
+              "Ulmar · 5,9 AE",
+              "Eisriese"
+            ],
+            [
+              "Ilaren-Asteroidengürtel · 1,3–1,9 AE",
+              "Asteroidengürtel"
+            ]
+          ],
+          "verweise": [
+            [
+              "Ilaren",
+              "inhalte/himmelskoerper/sterne/details/ilaren/hauptseite/index.html"
+            ],
+            [
+              "Harrek",
+              "inhalte/himmelskoerper/planeten/details/harrek/hauptseite/index.html"
+            ],
+            [
+              "Vosan",
+              "inhalte/himmelskoerper/planeten/details/vosan/hauptseite/index.html"
+            ],
+            [
+              "Khaluun",
+              "inhalte/himmelskoerper/planeten/details/khaluun/hauptseite/index.html"
+            ],
+            [
+              "Meyt",
+              "inhalte/himmelskoerper/planeten/details/meyt/hauptseite/index.html"
+            ],
+            [
+              "Daran",
+              "inhalte/himmelskoerper/planeten/details/daran/hauptseite/index.html"
+            ],
+            [
+              "Ulmar",
+              "inhalte/himmelskoerper/planeten/details/ulmar/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Ilaren-Asteroidengürtel.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Ilaren-Asteroidengürtel besteht aus Material, das sich bei der Entstehung des Ilaren-Systems nicht zu einem Planeten vereinte."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Ilaren-Asteroidengürtel.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Wie viel Masse enthält das Gebiet insgesamt?",
+            "Welche Resonanzen formen seine Ränder?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Ilaren-Asteroidengürtel ist mit allen Bahndaten im Ilaren-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=ilaren-stern&objekt=ilaren-asteroidenguertel"
+            ]
+          ]
+        },
+        {
+          "titel": "Rohstoff- und Forschungsregion",
+          "text": [
+            "Fernerkundung trennt metallische, silikatische und kohlenstoffreiche Familien. Abbau muss kleine Körper einzeln erfassen; das Gürtelmodell selbst hat keine feste Oberfläche."
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Ilaren-Asteroidengürtel.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Der Gürtel zwischen etwa 1,3 und 1,9 AE enthält metallreiche, silikatische und kohlenstoffhaltige Körper sowie Trümmer früherer Kollisionen. Er dient als Rohstoff- und Forschungsregion des Ilaren-Systems."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Ilaren-Asteroidengürtel.",
+      "abschnitte": [
+        {
+          "titel": "Ilaren-Asteroidengürtel – Archivbild",
+          "bild": true,
+          "bildtext": "Ilaren-Asteroidengürtel"
+        }
+      ]
+    }
+  }
+}

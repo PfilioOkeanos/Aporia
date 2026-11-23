@@ -1,2 +1,3 @@
-// Meta Morphen – Entwicklung · erzeugt vom Spezies-Baukasten (scripts/spezies) – Änderungen dort vornehmen
+// Metamorphen – Entwicklung
+// Gemeinsame Funktionen (Topbar, Sidebar, Routen, Klappkapitel, Bildkarussell) kommen aus der Basis.
 import "../../metamorphen-basis.js";

@@ -1,0 +1,502 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Kaltor",
+  "genitiv": "von Kaltor",
+  "dossierName": "Kaltor-Dossier",
+  "klasse": "Asteroid",
+  "intro": "Kaltor ist ein größerer eis- und gesteinsreicher Körper im äußeren Bereich des Veylan-Asteroidengürtels. Kaltor umkreist Teryn in 1,91 AE Abstand und braucht für einen Umlauf 3 Jahre.",
+  "globusDaten": {
+    "planet": "eisiger-asteroid-im-blauen-randlicht",
+    "klasse": "Gestein",
+    "radius": 118000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=teryn-stern&objekt=teryn-kaltor",
+  "grunddaten": [
+    [
+      "System-ID",
+      "teryn-kaltor"
+    ],
+    [
+      "Archiv-ID",
+      "AP-CD0D6C7E64"
+    ],
+    [
+      "Typ",
+      "Asteroid"
+    ],
+    [
+      "Sternsystem",
+      "Teryn-System"
+    ],
+    [
+      "Zentralkörper",
+      "Teryn"
+    ],
+    [
+      "Große Halbachse",
+      "1,91 AE"
+    ],
+    [
+      "Umlaufzeit",
+      "3 Jahre"
+    ],
+    [
+      "Durchmesser",
+      "236 km"
+    ],
+    [
+      "Masse",
+      "2,39 · 10^17 kg"
+    ],
+    [
+      "Schwerkraft",
+      "0,11 cm/s²"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -125 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Teryn-System"
+    ],
+    [
+      "Zentralstern",
+      "Teryn",
+      null
+    ],
+    [
+      "Abstand",
+      "1,91 AE"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Kaltor im Teryn-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=teryn-stern&objekt=teryn-kaltor",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Teryn",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=teryn-stern",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Solitiden",
+      "titel": "Iskara",
+      "href": "inhalte/himmelskoerper/planeten/details/iskara/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Solitiden",
+      "href": "inhalte/spezies/Mentale Spezies/Solitiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Teryn-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=teryn-stern&objekt=teryn-kaltor"
+    },
+    {
+      "titel": "Speziesdossier Solitiden",
+      "href": "inhalte/spezies/Mentale Spezies/Solitiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#090807",
+      "tiefe": "#14120f",
+      "akzent": "#cdc3b4",
+      "sand": "#d1c0a1",
+      "moos": "#abba8f",
+      "ozean": "#89a2a3",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#50493f"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Bahn"
+      ],
+      [
+        "Material",
+        "Zusammensetzung"
+      ],
+      [
+        "Zeit",
+        "Herkunft"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Zusammensetzung": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Zusammensetzung von Kaltor.",
+      "abschnitte": [
+        {
+          "titel": "Material",
+          "liste": [
+            "Silikate",
+            "Eisen und Nickel",
+            "Seltene Metalle"
+          ],
+          "schichten": [
+            [
+              "Regolith",
+              "Staub und Gesteinsschutt"
+            ],
+            [
+              "Gesteinsmantel",
+              "Silikate und Metalle"
+            ],
+            [
+              "Kern",
+              "Metallreich"
+            ]
+          ]
+        }
+      ]
+    },
+    "Bahn": {
+      "gruppe": "Wissenschaft",
+      "icon": "◌",
+      "intro": "Bahn von Kaltor.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Teryn"
+            ],
+            [
+              "Große Halbachse",
+              "1,91 AE (285,7 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,035"
+            ],
+            [
+              "Bahnneigung",
+              "2,7°"
+            ],
+            [
+              "Umlaufzeit",
+              "3 Jahre"
+            ],
+            [
+              "Einstrahlung",
+              "0,088-fach der Erde"
+            ]
+          ]
+        }
+      ]
+    },
+    "Herkunft": {
+      "gruppe": "Weitere",
+      "icon": "⧗",
+      "intro": "Herkunft von Kaltor.",
+      "abschnitte": [
+        {
+          "titel": "Herkunft",
+          "text": [
+            "Kaltor ist ein Überrest aus der Entstehungszeit des Teryn-Systems."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Kaltor auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Kaltor",
+          "text": [
+            "Kaltor ist ein größerer eis- und gesteinsreicher Körper im äußeren Bereich des Veylan-Asteroidengürtels.",
+            "Kaltor umkreist Teryn in 1,91 AE Abstand und braucht für einen Umlauf 3 Jahre."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Asteroid"
+            ],
+            [
+              "Sternsystem",
+              "Teryn-System"
+            ],
+            [
+              "Zentralkörper",
+              "Teryn"
+            ],
+            [
+              "Große Halbachse",
+              "1,91 AE"
+            ],
+            [
+              "Umlaufzeit",
+              "3 Jahre"
+            ],
+            [
+              "Durchmesser",
+              "236 km"
+            ],
+            [
+              "Masse",
+              "2,39 · 10^17 kg"
+            ],
+            [
+              "Schwerkraft",
+              "0,11 cm/s²"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -125 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Iskara",
+          "text": [
+            "Das Teryn-System ist die Heimat der Solitiden: Ihr Planet Iskara umkreist Teryn."
+          ],
+          "verweise": [
+            [
+              "Iskara",
+              "inhalte/himmelskoerper/planeten/details/iskara/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Solitiden",
+              "inhalte/spezies/Mentale Spezies/Solitiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Kaltor im Teryn-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Teryn"
+            ],
+            [
+              "Große Halbachse",
+              "1,91 AE (285,7 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,035"
+            ],
+            [
+              "Bahnneigung",
+              "2,7°"
+            ],
+            [
+              "Umlaufzeit",
+              "3 Jahre"
+            ],
+            [
+              "Einstrahlung",
+              "0,088-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Teryn · Stern",
+              "Orangefarbener Hauptreihenstern (K4 V)"
+            ],
+            [
+              "Dareth · 0,15 AE",
+              "Heißer Gesteinsplanet"
+            ],
+            [
+              "Nura · 0,34 AE",
+              "Heißer terrestrischer Planet"
+            ],
+            [
+              "Iskara · 0,61 AE",
+              "Bewohnter terrestrischer Silikatplanet"
+            ],
+            [
+              "Veldros · 1,08 AE",
+              "Kalte Supererde"
+            ],
+            [
+              "Saevor · 2,84 AE",
+              "Gasriese"
+            ],
+            [
+              "Ynderal · 5,9 AE",
+              "Eisreicher Riesenplanet"
+            ],
+            [
+              "Veylan-Asteroidengürtel · 1,7–2 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußere Kleinkörperregion · 14–38 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Teryn",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=teryn-stern"
+            ],
+            [
+              "Dareth",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=teryn-stern&objekt=teryn-dareth"
+            ],
+            [
+              "Nura",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=teryn-stern&objekt=teryn-nura"
+            ],
+            [
+              "Iskara",
+              "inhalte/himmelskoerper/planeten/details/iskara/hauptseite/index.html"
+            ],
+            [
+              "Veldros",
+              "inhalte/himmelskoerper/planeten/details/veldros/hauptseite/index.html"
+            ],
+            [
+              "Saevor",
+              "inhalte/himmelskoerper/planeten/details/saevor/hauptseite/index.html"
+            ],
+            [
+              "Ynderal",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=teryn-stern&objekt=teryn-ynderal"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Kaltor.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "118 km"
+            ],
+            [
+              "Masse",
+              "2,39 · 10^17 kg"
+            ],
+            [
+              "Mittlere Dichte",
+              "0,03 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "0 m/s² (0 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "0,02 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Kaltor.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Kaltor besteht aus Material, das sich bei der Entstehung des Teryn-Systems nicht zu einem Planeten vereinte."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Kaltor.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Ist der Körper ein Bruchstück eines größeren Körpers?",
+            "Welche Rohstoffe birgt er?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Kaltor ist mit allen Bahndaten im Teryn-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=teryn-stern&objekt=teryn-kaltor"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Kaltor.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Kaltor ist ein größerer eis- und gesteinsreicher Körper im äußeren Bereich des Veylan-Asteroidengürtels."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Kaltor.",
+      "abschnitte": [
+        {
+          "titel": "Kaltor – Archivbild",
+          "bild": true,
+          "bildtext": "Kaltor"
+        }
+      ]
+    }
+  }
+}

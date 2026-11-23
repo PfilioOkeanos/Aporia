@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#111108">
+    <meta name="theme-color" content="#0d0811">
     <meta name="description" content="Memetiden im APORIA-Weltenarchiv: Geben kulturelle Informationsmuster biologisch weiter.">
     <title>Memetiden · APORIA Weltenarchiv</title>
     <link rel="stylesheet" href="../../../../../Men%C3%BCs/TopBar/Top_bar.css">
@@ -13,21 +13,22 @@
     <link rel="stylesheet" href="../../../_gemeinsam/spezies-standard.css">
     <link rel="stylesheet" href="Spezies.css">
     <script type="module" src="Spezies.js"></script>
+    <link rel="stylesheet" href="titelbild.css">
 </head>
 <body class="memetiden st-hauptseite" data-page="spezies-mental-10" data-section="spezies">
     <div data-aporia-topbar></div>
     <div class="aporia-page-frame st-frame">
         <div data-aporia-sidebar></div>
         <main class="st-dossier" id="inhalt">
-            <header class="st-hero st-hero--ohne-bild">
-                <span class="st-feld" aria-hidden="true"><i></i><i></i><i></i></span>
+            <header class="st-hero">
+                <img class="st-hero-bild" src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Memetiden/entwicklungsstadien/Memetide_%20Entwicklungsphase%20Juvenil-adaptiv.png" alt="" fetchpriority="high" decoding="async">
                 <span class="st-glanz" aria-hidden="true"></span>
                 <div class="st-hero-text">
                     <nav class="st-pfad" aria-label="Archivpfad"><a data-route="spezies" href="../../../Spezies_%C3%BCbersicht/Spezies.html">Spezies</a><span aria-hidden="true">›</span><a data-route="spezies-mental" href="../../%C3%9Cbersichtsseite%20Mentale%20Spezies/Uebersicht.html">Mentale Spezies</a><span aria-hidden="true">›</span><span aria-current="page">Memetiden</span></nav>
                     <p class="st-kicker">Mentale Spezies</p>
                     <h1>Memetiden</h1>
                     <p class="st-unterzeile">Geben kulturelle Informationsmuster biologisch weiter</p>
-                    <p class="st-intro">Dieses Dossier ist noch nicht ausgearbeitet.</p>
+                    <p class="st-intro">Die Memetiden sind eine intelligente Spezies, deren Evolution eine außergewöhnliche Verbindung zwischen Lernen und biologischer Vererbung hervorgebracht hat.</p><p class="st-intro">Durch spezielle DNA-Abschnitte, regulatorische RNA und Mechanismen der Genaktivierung können bestimmte kulturelle Muster über Generationen weitergegeben werden.</p>
                 </div>
             </header>
             <nav class="st-reiter" aria-label="Hauptreiter der Memetiden">
@@ -41,37 +42,277 @@
                 <a href="../Unterseiten/Geschichte/geschichte.html" data-route="spezies-mental-10-geschichte"><span aria-hidden="true">⧗</span>Geschichte</a>
                 <a href="../Gameplay/gameplay.html" data-route="spezies-mental-10-gameplay"><span aria-hidden="true">◈</span>Spielintegration</a>
                 <a href="../Forschung/forschung.html" data-route="spezies-mental-10-forschung"><span aria-hidden="true">⚗</span>Forschung</a>
+                <a href="../Unterseiten/Technologien/technologien.html" data-route="spezies-mental-10-technologien"><span aria-hidden="true">⚙</span>Technologien</a>
                 <a href="../Unterseiten/Medien/medien.html" data-route="spezies-mental-10-medien"><span aria-hidden="true">▣</span>Medien</a>
             </nav>
             <div class="st-start">
                 <section class="st-panel st-block" aria-labelledby="kurz-titel">
                     <h2 class="st-h2" id="kurz-titel"><span class="st-icon" aria-hidden="true">◆</span>Kurzprofil <small>Übersicht Mentale Spezies</small></h2>
-                    <dl class="st-fakten"><div><dt>Heimatwelt</dt><dd>Offen</dd></div><div><dt>Körpergröße</dt><dd>Offen</dd></div><div><dt>Lebensdauer</dt><dd>Offen</dd></div><div><dt>Lebensraum</dt><dd>Offen</dd></div></dl>
+                    <dl class="st-fakten"><div><dt>Heimatwelt</dt><dd>Tavoryn</dd></div><div><dt>Körpergröße</dt><dd>2,1–2,8 m Körperlänge</dd></div><div><dt>Lebensdauer</dt><dd>Ca. 110–160 Erdenjahre</dd></div><div><dt>Lebensraum</dt><dd>Küsten, Flussdeltas, Feuchtwälder und gemäßigte Tiefländer</dd></div></dl>
                     <a class="st-mehr" href="../Unterseiten/Allgemeines/allgemeines.html" data-route="spezies-mental-10-allgemeines">Zu Allgemeines →</a>
                 </section>
                 <section class="st-panel st-block" aria-labelledby="dossier-titel">
-                    <h2 class="st-h2" id="dossier-titel"><span class="st-icon" aria-hidden="true">✦</span>Dossier</h2>
-                    <p class="st-offen">Noch nicht ausgearbeitet. Sobald Infotexte vorliegen, erscheinen hier die wichtigsten Kapitel.</p>
+                    <h2 class="st-h2" id="dossier-titel"><span class="st-icon" aria-hidden="true">✦</span>Aus dem Dossier <small>Allgemeines</small></h2>
+                    <div class="st-klapp-liste"><details class="st-klapp" open><summary><strong>Äußere Erscheinung</strong><small>3</small><span class="st-chevron" aria-hidden="true"></span></summary><div class="st-klapp-inhalt"><p>Memetiden besitzen einen länglichen, horizontal getragenen Körper mit vier kräftigen Laufbeinen und zwei beweglichen Greifarmen.</p>
+<p>Ihr Kopf ist schmal und besitzt einen auffälligen dreiteiligen Stirnkamm. Bewegliche Hautfalten und strukturierte Schutzplatten entlang des Körpers verleihen ihnen eine unverwechselbare Silhouette.</p>
+<p>Die Körperoberfläche kann in Ocker-, Grau-, Kupfer-, Oliv-, Creme- und dunklen Violetttönen erscheinen. Regionale Populationen unterscheiden sich in Musterung und Körperproportionen.</p>
+<p>Die Memetiden sind keine humanoiden Wesen, können ihren Vorderkörper jedoch teilweise aufrichten, um zu arbeiten oder mit anderen Spezies zu kommunizieren.</p></div></details><details class="st-klapp"><summary><strong>Psychologie und Mentalität</strong><small>4</small><span class="st-chevron" aria-hidden="true"></span></summary><div class="st-klapp-inhalt"><p>Memetiden können gleichzeitig durch vererbte kulturelle Vorprägungen und persönliche Erfahrungen beeinflusst werden.</p>
+<p>Ihre Persönlichkeit wird nicht durch ihre Vorfahren festgelegt. Sie besitzen individuelle Wünsche, Gefühle, Ziele und Überzeugungen.</p>
+<p>Ein ausgeprägtes Merkmal vieler Memetiden ist die Fähigkeit, Beziehungen zwischen wiederkehrenden Abläufen, Symbolen und sozialen Handlungen zu erkennen.</p>
+<p>Diese Fähigkeit ist weder übernatürlich noch unfehlbar. Neue, unbekannte Situationen müssen weiterhin durch Beobachtung, Analyse und Erfahrung verstanden werden.</p></div></details><details class="st-klapp"><summary><strong>Zentrale kulturelle Besonderheit</strong><small>5</small><span class="st-chevron" aria-hidden="true"></span></summary><div class="st-klapp-inhalt"><p>Die Memetiden unterscheiden zwischen drei Formen der Überlieferung:</p>
+<ol><li><strong>Lebendige Überlieferung:</strong> Gewöhnliches Lernen von Eltern, Lehrern, Gemeinschaften und Medien.</li><li><strong>Gebundene Überlieferung:</strong> Biologisch vererbte Vorprägungen, die sich während der Entwicklung entfalten können.</li><li><strong>Äußere Überlieferung:</strong> Informationen in Schrift, Maschinen, Kunstwerken und Datenarchiven.</li></ol>
+<p>Erst das Zusammenwirken dieser drei Formen ermöglicht ihre hochentwickelte Zivilisation.</p></div></details><details class="st-klapp"><summary><strong>Verbreitung und Bevölkerung</strong><small>6</small><span class="st-chevron" aria-hidden="true"></span></summary><div class="st-klapp-inhalt"><p>Auf Tavoryn existieren mehrere unabhängige Kulturregionen mit unterschiedlichen Sprachen, Traditionen und politischen Institutionen.</p>
+<p>Für die aktuelle APORIA-Ära wird eine Heimatbevölkerung von ungefähr 2,8 Milliarden Individuen angenommen. Weitere rund 190 Millionen leben in orbitalen Einrichtungen, Kolonien, Handelsstationen und anderen Sternensystemen.</p>
+<p>Diese Zahlen bilden einen vorläufigen Bevölkerungsstand und können später an die interstellare Chronologie angepasst werden.</p></div></details></div>
                 </section>
             </div>
-            
+            <section class="st-panel st-block st-dossier-steckbrief" aria-labelledby="dossier-steckbrief-titel">
+                <h2 class="st-h2" id="dossier-steckbrief-titel"><span class="st-icon" aria-hidden="true">◆</span>Steckbrief aus dem Dossier <small>Identität und Einordnung</small></h2>
+                <div class="st-dossier-raster">
+                    <div class="st-text st-text--frei"><dl class="st-fakten"><div><dt>Speziesname</dt><dd>Memetiden</dd></div><div><dt>Eigenbezeichnung</dt><dd>Vaerathi</dd></div><div><dt>Wissenschaftliche Bezeichnung</dt><dd>*Vaerathis culturagens*</dd></div><div><dt>Speziesgruppe</dt><dd>Mentale Spezies</dd></div><div><dt>Lebensform</dt><dd>Organisch, intelligent, körpergebunden</dd></div><div><dt>Heimatplanet</dt><dd>Tavoryn</dd></div><div><dt>Heimatstern</dt><dd>Rhaelis</dd></div><div><dt>Sternensystem</dt><dd>Rhaelis-System</dd></div><div><dt>Zivilisationsstand</dt><dd>Hochentwickelte interstellare Gesellschaft</dd></div><div><dt>Besonderheit</dt><dd>Biologische Weitergabe kultureller Informationsmuster</dd></div><div><dt>Bewusstseinstyp</dt><dd>Eigenständiges, zentralnervöses Individualbewusstsein</dd></div><div><dt>Hauptlebensraum</dt><dd>Küsten, Flussdeltas, Feuchtwälder und gemäßigte Tiefländer</dd></div></dl></div>
+                    <details class="st-klapp" open><summary><strong>Grundlegende Beschreibung</strong><span class="st-chevron" aria-hidden="true"></span></summary><div class="st-klapp-inhalt"><p>Die Memetiden sind eine intelligente Spezies, deren Evolution eine außergewöhnliche Verbindung zwischen Lernen und biologischer Vererbung hervorgebracht hat.</p>
+<p>Durch spezielle DNA-Abschnitte, regulatorische RNA und Mechanismen der Genaktivierung können bestimmte kulturelle Muster über Generationen weitergegeben werden.</p>
+<p>Vererbt werden keine vollständigen Gedanken oder persönlichen Erinnerungen. Stattdessen erhalten Nachkommen neurologische Vorprägungen, die sie für bestimmte erlernte Muster empfänglicher machen.</p>
+<p>Dadurch können einzelne Populationen kulturelle Eigenheiten über sehr lange Zeiträume erhalten, selbst wenn schriftliche oder technische Aufzeichnungen verloren gehen.</p></div></details>
+                </div>
+                <p class="st-quelle">Quelle: Info_material · Memetiden · Allgemein/Allgemein.md · <a href="../Unterseiten/Allgemeines/allgemeines.html" data-route="spezies-mental-10-allgemeines">Mehr unter Allgemeines →</a></p>
+            </section>
             <section class="st-themen" aria-labelledby="themen-titel">
                 <h2 class="st-h2 st-h2--linie" id="themen-titel">Themenbereiche</h2>
                 <div class="st-themen-raster">
-                    <a class="st-panel st-thema st-thema--ohne-bild" href="../Unterseiten/Allgemeines/allgemeines.html" data-route="spezies-mental-10-allgemeines"><span class="st-thema-icon" aria-hidden="true">ⓘ</span><strong>Allgemeines</strong><span class="st-thema-text">Einordnung, Merkmale und Lebensweise</span></a>
-                    <a class="st-panel st-thema st-thema--ohne-bild" href="../Unterseiten/Biologie/biologie.html" data-route="spezies-mental-10-biologie"><span class="st-thema-icon" aria-hidden="true">⟡</span><strong>Biologie</strong><span class="st-thema-text">Körperbau, Sinne und Stoffwechsel</span></a>
-                    <a class="st-panel st-thema st-thema--ohne-bild" href="../Unterseiten/Entwicklung/entwicklung.html" data-route="spezies-mental-10-entwicklung"><span class="st-thema-icon" aria-hidden="true">⤳</span><strong>Entwicklung</strong><span class="st-thema-text">Evolution, Fortpflanzung und Lebensphasen</span></a>
-                    <a class="st-panel st-thema st-thema--ohne-bild" href="../Unterseiten/Heimatwelt/heimatwelt.html" data-route="spezies-mental-10-heimatwelt"><span class="st-thema-icon" aria-hidden="true">◍</span><strong>Heimatwelt</strong><span class="st-thema-text">Herkunft und Lebensräume</span></a>
-                    <a class="st-panel st-thema st-thema--ohne-bild" href="../Unterseiten/Gesellschaft/gesellschaft.html" data-route="spezies-mental-10-gesellschaft"><span class="st-thema-icon" aria-hidden="true">⁂</span><strong>Gesellschaft</strong><span class="st-thema-text">Gemeinschaft, Kultur und Alltag</span></a>
-                    <a class="st-panel st-thema st-thema--ohne-bild" href="../Unterseiten/Politik/politik.html" data-route="spezies-mental-10-politik"><span class="st-thema-icon" aria-hidden="true">⚖</span><strong>Politik</strong><span class="st-thema-text">Ordnung und Fraktionsbeziehungen</span></a>
-                    <a class="st-panel st-thema st-thema--ohne-bild" href="../Unterseiten/Geschichte/geschichte.html" data-route="spezies-mental-10-geschichte"><span class="st-thema-icon" aria-hidden="true">⧗</span><strong>Geschichte</strong><span class="st-thema-text">Wichtige Entwicklungsphasen und Wendepunkte</span></a>
-                    <a class="st-panel st-thema st-thema--ohne-bild" href="../Gameplay/gameplay.html" data-route="spezies-mental-10-gameplay"><span class="st-thema-icon" aria-hidden="true">◈</span><strong>Spielintegration</strong><span class="st-thema-text">Spielmechaniken und Interaktion</span></a>
+                    <a class="st-panel st-thema" href="../Unterseiten/Allgemeines/allgemeines.html" data-route="spezies-mental-10-allgemeines"><img class="st-thema-bild" src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Memetiden/gesamtdarstellung/APORIA_%20K%C3%BCstenkundschafter%20der%20Memetiden-5.png" alt="" loading="lazy" decoding="async"><strong>Allgemeines</strong><span class="st-thema-text">Einordnung, Merkmale und Lebensweise</span></a>
+                    <a class="st-panel st-thema" href="../Unterseiten/Biologie/biologie.html" data-route="spezies-mental-10-biologie"><img class="st-thema-bild" src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Memetiden/entwicklungsstadien/Memetiden%20%E2%80%93%20Evolution%20der%20Kulturwesen.png" alt="" loading="lazy" decoding="async"><strong>Biologie</strong><span class="st-thema-text">Körperbau, Sinne und Stoffwechsel</span></a>
+                    <a class="st-panel st-thema" href="../Unterseiten/Entwicklung/entwicklung.html" data-route="spezies-mental-10-entwicklung"><img class="st-thema-bild" src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Memetiden/entwicklungsstadien/Memetiden_%20Bio-memetische%20Lebensformen.png" alt="" loading="lazy" decoding="async"><strong>Entwicklung</strong><span class="st-thema-text">Evolution, Fortpflanzung und Lebensphasen</span></a>
+                    <a class="st-panel st-thema" href="../Unterseiten/Heimatwelt/heimatwelt.html" data-route="spezies-mental-10-heimatwelt"><img class="st-thema-bild" src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Memetiden/entwicklungsstadien/Memetiden_%20Biologische%20Speziesstudie.png" alt="" loading="lazy" decoding="async"><strong>Heimatwelt</strong><span class="st-thema-text">Herkunft und Lebensräume</span></a>
+                    <a class="st-panel st-thema" href="../Unterseiten/Gesellschaft/gesellschaft.html" data-route="spezies-mental-10-gesellschaft"><img class="st-thema-bild" src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Memetiden/entwicklungsstadien/Memetiden_%20Evolution%20einer%20mentalen%20Spezies.png" alt="" loading="lazy" decoding="async"><strong>Gesellschaft</strong><span class="st-thema-text">Gemeinschaft, Kultur und Alltag</span></a>
+                    <a class="st-panel st-thema" href="../Unterseiten/Politik/politik.html" data-route="spezies-mental-10-politik"><img class="st-thema-bild" src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Memetiden/entwicklungsstadien/Memetiden_%20Evolution%20in%20f%C3%BCnf%20Phasen.png" alt="" loading="lazy" decoding="async"><strong>Politik</strong><span class="st-thema-text">Ordnung und Fraktionsbeziehungen</span></a>
+                    <a class="st-panel st-thema" href="../Unterseiten/Geschichte/geschichte.html" data-route="spezies-mental-10-geschichte"><img class="st-thema-bild" src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Memetiden/entwicklungsstadien/Memetiden_%20Kultur%20als%20Erbgut.png" alt="" loading="lazy" decoding="async"><strong>Geschichte</strong><span class="st-thema-text">Wichtige Entwicklungsphasen und Wendepunkte</span></a>
+                    <a class="st-panel st-thema" href="../Gameplay/gameplay.html" data-route="spezies-mental-10-gameplay"><img class="st-thema-bild" src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Memetiden/Forschung/Memetiden_A1_forschung.png" alt="" loading="lazy" decoding="async"><strong>Spielintegration</strong><span class="st-thema-text">Spielmechaniken und Interaktion</span></a>
                 </div>
             </section>
+            <section class="st-panel st-block st-karussell-block" id="bildarchiv" aria-labelledby="bildarchiv-titel">
+                <h2 class="st-h2" id="bildarchiv-titel"><span class="st-icon" aria-hidden="true">▣</span>Bildarchiv <small>50 Bilder</small></h2>
+                <div class="bilder-karussell bilder-karussell--buehne" data-karussell data-autoplay="7000" aria-roledescription="Karussell" aria-label="Bildarchiv der Memetiden">
+                    <div class="karussell-filter" role="group" aria-label="Bilder filtern"><button type="button" data-filter="" aria-pressed="true">Alle (50)</button><button type="button" data-filter="Entwicklungsstadien" aria-pressed="false">Entwicklungsstadien (8)</button><button type="button" data-filter="Forschung" aria-pressed="false">Forschung (10)</button><button type="button" data-filter="Gesamtdarstellung" aria-pressed="false">Gesamtdarstellung (12)</button><button type="button" data-filter="Heimatplanet" aria-pressed="false">Heimatplanet (1)</button><button type="button" data-filter="Sternensystem" aria-pressed="false">Sternensystem (9)</button><button type="button" data-filter="Technologie" aria-pressed="false">Technologie (10)</button></div>
+                    <div class="karussell-spur" tabindex="0" aria-label="Bilder – mit Pfeiltasten blättern">
+                        <figure class="karussell-folie" data-kategorie="Entwicklungsstadien" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Memetide Entwicklungsphase Juvenil-adaptiv in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Memetiden/entwicklungsstadien/Memetide_%20Entwicklungsphase%20Juvenil-adaptiv.png" alt="Memetide Entwicklungsphase Juvenil-adaptiv" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Memetide Entwicklungsphase Juvenil-adaptiv</strong><span>Entwicklungsstadien</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Entwicklungsstadien" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Memetide – Biolumineszente Entwicklungsphase in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Memetiden/entwicklungsstadien/Memetide%20%E2%80%93%20Biolumineszente%20Entwicklungsphase.png" alt="Memetide – Biolumineszente Entwicklungsphase" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Memetide – Biolumineszente Entwicklungsphase</strong><span>Entwicklungsstadien</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Entwicklungsstadien" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Memetiden – Evolution der Kulturwesen in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Memetiden/entwicklungsstadien/Memetiden%20%E2%80%93%20Evolution%20der%20Kulturwesen.png" alt="Memetiden – Evolution der Kulturwesen" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Memetiden – Evolution der Kulturwesen</strong><span>Entwicklungsstadien</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Entwicklungsstadien" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Memetiden Bio-memetische Lebensformen in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Memetiden/entwicklungsstadien/Memetiden_%20Bio-memetische%20Lebensformen.png" alt="Memetiden Bio-memetische Lebensformen" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Memetiden Bio-memetische Lebensformen</strong><span>Entwicklungsstadien</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Entwicklungsstadien" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Memetiden Biologische Speziesstudie in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Memetiden/entwicklungsstadien/Memetiden_%20Biologische%20Speziesstudie.png" alt="Memetiden Biologische Speziesstudie" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Memetiden Biologische Speziesstudie</strong><span>Entwicklungsstadien</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Entwicklungsstadien" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Memetiden Evolution einer mentalen Spezies in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Memetiden/entwicklungsstadien/Memetiden_%20Evolution%20einer%20mentalen%20Spezies.png" alt="Memetiden Evolution einer mentalen Spezies" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Memetiden Evolution einer mentalen Spezies</strong><span>Entwicklungsstadien</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Entwicklungsstadien" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Memetiden Evolution in fünf Phasen in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Memetiden/entwicklungsstadien/Memetiden_%20Evolution%20in%20f%C3%BCnf%20Phasen.png" alt="Memetiden Evolution in fünf Phasen" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Memetiden Evolution in fünf Phasen</strong><span>Entwicklungsstadien</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Entwicklungsstadien" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Memetiden Kultur als Erbgut in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Memetiden/entwicklungsstadien/Memetiden_%20Kultur%20als%20Erbgut.png" alt="Memetiden Kultur als Erbgut" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Memetiden Kultur als Erbgut</strong><span>Entwicklungsstadien</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Forschung" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Memetiden A1 forschung in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Memetiden/Forschung/Memetiden_A1_forschung.png" alt="Memetiden A1 forschung" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Memetiden A1 forschung</strong><span>Forschung</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Forschung" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Memetiden A2 forschung in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Memetiden/Forschung/Memetiden_A2_forschung.png" alt="Memetiden A2 forschung" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Memetiden A2 forschung</strong><span>Forschung</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Forschung" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Memetiden A3 forschung in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Memetiden/Forschung/Memetiden_A3_forschung.png" alt="Memetiden A3 forschung" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Memetiden A3 forschung</strong><span>Forschung</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Forschung" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Memetiden A4 forschung in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Memetiden/Forschung/Memetiden_A4_forschung.png" alt="Memetiden A4 forschung" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Memetiden A4 forschung</strong><span>Forschung</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Forschung" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Memetiden A5 forschung in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Memetiden/Forschung/Memetiden_A5_forschung.png" alt="Memetiden A5 forschung" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Memetiden A5 forschung</strong><span>Forschung</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Forschung" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Memetiden A6 forschung in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Memetiden/Forschung/Memetiden_A6_forschung.png" alt="Memetiden A6 forschung" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Memetiden A6 forschung</strong><span>Forschung</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Forschung" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Memetiden A7 forschung in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Memetiden/Forschung/Memetiden_A7_forschung.png" alt="Memetiden A7 forschung" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Memetiden A7 forschung</strong><span>Forschung</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Forschung" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Memetiden A8 forschung in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Memetiden/Forschung/Memetiden_A8_forschung.png" alt="Memetiden A8 forschung" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Memetiden A8 forschung</strong><span>Forschung</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Forschung" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Memetiden A9 forschung in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Memetiden/Forschung/Memetiden_A9_forschung.png" alt="Memetiden A9 forschung" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Memetiden A9 forschung</strong><span>Forschung</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Forschung" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Memetiden A10 forschung in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Memetiden/Forschung/Memetiden_A10_forschung.png" alt="Memetiden A10 forschung" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Memetiden A10 forschung</strong><span>Forschung</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Gesamtdarstellung" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="APORIA Küstenkundschafter der Memetiden in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Memetiden/gesamtdarstellung/APORIA_%20K%C3%BCstenkundschafter%20der%20Memetiden-5.png" alt="APORIA Küstenkundschafter der Memetiden" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>APORIA Küstenkundschafter der Memetiden</strong><span>Gesamtdarstellung</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Gesamtdarstellung" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Memetiden – Brutlinien-Seher Konzepttafel in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Memetiden/gesamtdarstellung/Memetiden%20%E2%80%93%20Brutlinien-Seher%20Konzepttafel-8.png" alt="Memetiden – Brutlinien-Seher Konzepttafel" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Memetiden – Brutlinien-Seher Konzepttafel</strong><span>Gesamtdarstellung</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Gesamtdarstellung" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Memetiden – Träger lebendiger Kultur in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Memetiden/gesamtdarstellung/Memetiden%20%E2%80%93%20Tr%C3%A4ger%20lebendiger%20Kultur-1.png" alt="Memetiden – Träger lebendiger Kultur" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Memetiden – Träger lebendiger Kultur</strong><span>Gesamtdarstellung</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Gesamtdarstellung" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Memetiden Archivare der Lebensweisheit in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Memetiden/gesamtdarstellung/Memetiden_%20Archivare%20der%20Lebensweisheit-11.png" alt="Memetiden Archivare der Lebensweisheit" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Memetiden Archivare der Lebensweisheit</strong><span>Gesamtdarstellung</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Gesamtdarstellung" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Memetiden Das Kulturträger-Kompendium in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Memetiden/gesamtdarstellung/Memetiden_%20Das%20Kulturtr%C3%A4ger-Kompendium-3.png" alt="Memetiden Das Kulturträger-Kompendium" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Memetiden Das Kulturträger-Kompendium</strong><span>Gesamtdarstellung</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Gesamtdarstellung" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Memetiden Die lebenden Archive in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Memetiden/gesamtdarstellung/Memetiden_%20Die%20lebenden%20Archive-4.png" alt="Memetiden Die lebenden Archive" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Memetiden Die lebenden Archive</strong><span>Gesamtdarstellung</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Gesamtdarstellung" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Memetiden Grenzwächter-Konzepttafel in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Memetiden/gesamtdarstellung/Memetiden_%20Grenzw%C3%A4chter-Konzepttafel-6.png" alt="Memetiden Grenzwächter-Konzepttafel" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Memetiden Grenzwächter-Konzepttafel</strong><span>Gesamtdarstellung</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Gesamtdarstellung" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Memetiden Träger lebender Kultur in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Memetiden/gesamtdarstellung/Memetiden_%20Tr%C3%A4ger%20lebender%20Kultur-2.png" alt="Memetiden Träger lebender Kultur" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Memetiden Träger lebender Kultur</strong><span>Gesamtdarstellung</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Gesamtdarstellung" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Memetiden-Genomtechniker im Labor in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Memetiden/gesamtdarstellung/Memetiden-Genomtechniker%20im%20Labor-12.png" alt="Memetiden-Genomtechniker im Labor" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Memetiden-Genomtechniker im Labor</strong><span>Gesamtdarstellung</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Gesamtdarstellung" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Memetiden-Grenzwächter Archivkrieger mit Resonanzstab in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Memetiden/gesamtdarstellung/Memetiden-Grenzw%C3%A4chter_%20Archivkrieger%20mit%20Resonanzstab-9.png" alt="Memetiden-Grenzwächter Archivkrieger mit Resonanzstab" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Memetiden-Grenzwächter Archivkrieger mit Resonanzstab</strong><span>Gesamtdarstellung</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Gesamtdarstellung" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Memetiden-Kulturbiotechniker-Dossier in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Memetiden/gesamtdarstellung/Memetiden-Kulturbiotechniker-Dossier-7.png" alt="Memetiden-Kulturbiotechniker-Dossier" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Memetiden-Kulturbiotechniker-Dossier</strong><span>Gesamtdarstellung</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Gesamtdarstellung" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Memetiden-Küstenkundschafter Charakterdesignbogen in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Memetiden/gesamtdarstellung/Memetiden-K%C3%BCstenkundschafter_%20Charakterdesignbogen-10.png" alt="Memetiden-Küstenkundschafter Charakterdesignbogen" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Memetiden-Küstenkundschafter Charakterdesignbogen</strong><span>Gesamtdarstellung</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Heimatplanet" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Fremde Welt unter kosmischem Licht in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Memetiden/Heimatplanet/Fremde%20Welt%20unter%20kosmischem%20Licht-1.png" alt="Fremde Welt unter kosmischem Licht" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Fremde Welt unter kosmischem Licht</strong><span>Heimatplanet</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Sternensystem" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Außerirdische Welt im kosmischen Sturm in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Memetiden/Sternensystem/Au%C3%9Ferirdische%20Welt%20im%20kosmischen%20Sturm-7.png" alt="Außerirdische Welt im kosmischen Sturm" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Außerirdische Welt im kosmischen Sturm</strong><span>Sternensystem</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Sternensystem" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Außerirdische Welt mit leuchtenden Netzwerken in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Memetiden/Sternensystem/Au%C3%9Ferirdische%20Welt%20mit%20leuchtenden%20Netzwerken-8.png" alt="Außerirdische Welt mit leuchtenden Netzwerken" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Außerirdische Welt mit leuchtenden Netzwerken</strong><span>Sternensystem</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Sternensystem" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Außerirdische Welt mit Spiralwolken in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Memetiden/Sternensystem/Au%C3%9Ferirdische%20Welt%20mit%20Spiralwolken-5.png" alt="Außerirdische Welt mit Spiralwolken" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Außerirdische Welt mit Spiralwolken</strong><span>Sternensystem</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Sternensystem" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Fremde Welt mit leuchtenden Monolithen in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Memetiden/Sternensystem/Fremde%20Welt%20mit%20leuchtenden%20Monolithen-3.png" alt="Fremde Welt mit leuchtenden Monolithen" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Fremde Welt mit leuchtenden Monolithen</strong><span>Sternensystem</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Sternensystem" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Fünf Welten des Memetiden-Systems in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Memetiden/Sternensystem/F%C3%BCnf%20Welten%20des%20Memetiden-Systems-10.png" alt="Fünf Welten des Memetiden-Systems" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Fünf Welten des Memetiden-Systems</strong><span>Sternensystem</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Sternensystem" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Leuchtender Alienplanet mit Pilzplateaus in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Memetiden/Sternensystem/Leuchtender%20Alienplanet%20mit%20Pilzplateaus-4.png" alt="Leuchtender Alienplanet mit Pilzplateaus" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Leuchtender Alienplanet mit Pilzplateaus</strong><span>Sternensystem</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Sternensystem" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Memetiden Spiralenwelt im All in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Memetiden/Sternensystem/Memetiden_%20Spiralenwelt%20im%20All-2.png" alt="Memetiden Spiralenwelt im All" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Memetiden Spiralenwelt im All</strong><span>Sternensystem</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Sternensystem" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Memetidens leuchtende Spiralwelt in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Memetiden/Sternensystem/Memetidens%20leuchtende%20Spiralwelt-6.png" alt="Memetidens leuchtende Spiralwelt" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Memetidens leuchtende Spiralwelt</strong><span>Sternensystem</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Sternensystem" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Uralte Kreisringe auf einem fremden Planeten in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Memetiden/Sternensystem/Uralte%20Kreisringe%20auf%20einem%20fremden%20Planeten-9.png" alt="Uralte Kreisringe auf einem fremden Planeten" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Uralte Kreisringe auf einem fremden Planeten</strong><span>Sternensystem</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Technologie" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Memetiden tech A1 in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Memetiden/Technologie/Memetiden_tech_A1.png" alt="Memetiden tech A1" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Memetiden tech A1</strong><span>Technologie</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Technologie" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Memetiden tech A2 in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Memetiden/Technologie/Memetiden_tech_A2.png" alt="Memetiden tech A2" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Memetiden tech A2</strong><span>Technologie</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Technologie" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Memetiden tech A3 in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Memetiden/Technologie/Memetiden_tech_A3.png" alt="Memetiden tech A3" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Memetiden tech A3</strong><span>Technologie</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Technologie" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Memetiden tech A4 in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Memetiden/Technologie/Memetiden_tech_A4.png" alt="Memetiden tech A4" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Memetiden tech A4</strong><span>Technologie</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Technologie" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Memetiden tech A5 in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Memetiden/Technologie/Memetiden_tech_A5.png" alt="Memetiden tech A5" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Memetiden tech A5</strong><span>Technologie</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Technologie" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Memetiden tech A6 in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Memetiden/Technologie/Memetiden_tech_A6.png" alt="Memetiden tech A6" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Memetiden tech A6</strong><span>Technologie</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Technologie" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Memetiden tech A7 in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Memetiden/Technologie/Memetiden_tech_A7.png" alt="Memetiden tech A7" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Memetiden tech A7</strong><span>Technologie</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Technologie" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Memetiden tech A8 in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Memetiden/Technologie/Memetiden_tech_A8.png" alt="Memetiden tech A8" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Memetiden tech A8</strong><span>Technologie</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Technologie" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Memetiden tech A9 in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Memetiden/Technologie/Memetiden_tech_A9.png" alt="Memetiden tech A9" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Memetiden tech A9</strong><span>Technologie</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Technologie" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Memetiden tech A10 in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Memetiden/Technologie/Memetiden_tech_A10.png" alt="Memetiden tech A10" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Memetiden tech A10</strong><span>Technologie</span></figcaption>
+                        </figure>
+                    </div>
+                    <div class="karussell-steuerung">
+                        <button type="button" data-karussell-schritt="-1" aria-label="Vorheriges Bild">‹</button>
+                        <div class="karussell-punkte" role="group" aria-label="Bild wählen"></div>
+                        <output class="karussell-zaehler" aria-live="polite"></output>
+                        <button type="button" data-karussell-pause aria-pressed="false">❚❚ Pause</button>
+                        <button type="button" data-karussell-schritt="1" aria-label="Nächstes Bild">›</button>
+                    </div>
+                </div>
+            </section>
+            <section class="st-panel st-block st-leiste" aria-labelledby="forschung-titel">
+                <h2 class="st-h2" id="forschung-titel"><span class="st-icon" aria-hidden="true">⚗</span>Forschung <small>15 Kapitel</small></h2>
+                <div class="st-chips"><a href="../Forschung/forschung.html#k-1-allgemeines-forschungsprofil" data-route="spezies-mental-10-forschung" data-route-fragment="k-1-allgemeines-forschungsprofil"><b>1</b> Allgemeines Forschungsprofil</a><a href="../Forschung/forschung.html#k-2-memetische-molekulargenetik" data-route="spezies-mental-10-forschung" data-route-fragment="k-2-memetische-molekulargenetik"><b>2</b> Memetische Molekulargenetik</a><a href="../Forschung/forschung.html#k-3-transgenerationale-entwicklungsbiologie" data-route="spezies-mental-10-forschung" data-route-fragment="k-3-transgenerationale-entwicklungsbiologie"><b>3</b> Transgenerationale Entwicklungsbiologie</a><a href="../Forschung/forschung.html#k-4-neurokulturelle-musterforschung" data-route="spezies-mental-10-forschung" data-route-fragment="k-4-neurokulturelle-musterforschung"><b>4</b> Neurokulturelle Musterforschung</a><a href="../Forschung/forschung.html#k-5-forschung-zur-erbarchiv-stabilitat" data-route="spezies-mental-10-forschung" data-route-fragment="k-5-forschung-zur-erbarchiv-stabilitat"><b>5</b> Forschung zur Erbarchiv-Stabilität</a><a href="../Forschung/forschung.html#k-6-palaomemetik" data-route="spezies-mental-10-forschung" data-route-fragment="k-6-palaomemetik"><b>6</b> Paläomemetik</a><a href="../Forschung/forschung.html#k-7-vergleichende-xenogenetik" data-route="spezies-mental-10-forschung" data-route-fragment="k-7-vergleichende-xenogenetik"><b>7</b> Vergleichende Xenogenetik</a><a href="../Forschung/forschung.html#k-8-biologische-informationsspeicherung" data-route="spezies-mental-10-forschung" data-route-fragment="k-8-biologische-informationsspeicherung"><b>8</b> Biologische Informationsspeicherung</a><a href="../Forschung/forschung.html#k-9-prazisionszelltechnik" data-route="spezies-mental-10-forschung" data-route-fragment="k-9-prazisionszelltechnik"><b>9</b> Präzisionszelltechnik</a><a href="../Forschung/forschung.html#k-10-umweltmusterforschung" data-route="spezies-mental-10-forschung" data-route-fragment="k-10-umweltmusterforschung"><b>10</b> Umweltmusterforschung</a><a href="../Forschung/forschung.html#k-11-kulturinformatik" data-route="spezies-mental-10-forschung" data-route-fragment="k-11-kulturinformatik"><b>11</b> Kulturinformatik</a><a href="../Forschung/forschung.html#k-12-bioethik-und-gesellschaftsforschung" data-route="spezies-mental-10-forschung" data-route-fragment="k-12-bioethik-und-gesellschaftsforschung"><b>12</b> Bioethik und Gesellschaftsforschung</a><a href="../Forschung/forschung.html#k-13-planetare-gezeitenforschung" data-route="spezies-mental-10-forschung" data-route-fragment="k-13-planetare-gezeitenforschung"><b>13</b> Planetare Gezeitenforschung</a><a href="../Forschung/forschung.html#k-14-forschung-im-rhaelis-system" data-route="spezies-mental-10-forschung" data-route-fragment="k-14-forschung-im-rhaelis-system"><b>14</b> Forschung im Rhaelis-System</a><a href="../Forschung/forschung.html#k-15-langfristige-forschungsziele" data-route="spezies-mental-10-forschung" data-route-fragment="k-15-langfristige-forschungsziele"><b>15</b> Langfristige Forschungsziele</a></div>
+            </section>
             <section class="st-panel st-block st-stand" aria-labelledby="stand-titel">
-                <h2 class="st-h2" id="stand-titel"><span class="st-icon" aria-hidden="true">◌</span>Dossierstand <small>0 von 10 Reitern mit Infotext</small></h2>
+                <h2 class="st-h2" id="stand-titel"><span class="st-icon" aria-hidden="true">◌</span>Dossierstand <small>10 von 11 Reitern mit Infotext</small></h2>
                 <p class="st-offen">Dieses Dossier wird automatisch aus dem Projekt erzeugt. Noch nicht vorhanden:</p>
-                <ul class="st-stand-liste"><li><strong>Infotexte für 10 von 10 Reitern</strong><code>Info_material/Alle_spezies_daten/Mentale Spezies/Memetiden</code></li><li><strong>Bilder (Designtafel, Gesamtdarstellung)</strong><code>assets/bilder/Alle Spezies+Übersicht/Mentale Spezies/Memetiden</code></li><li><strong>Klänge (Unterordner je Kategorie)</strong><code>assets/audio/Alle Spezies+Übersicht/Mentale Spezies/Memetiden</code></li><li><strong>Videos</strong><code>assets/videos/Alle Spezies+Übersicht/Mentale Spezies/Memetiden</code></li></ul>
+                <ul class="st-stand-liste"><li><strong>Infotexte für 1 von 11 Reitern</strong><code>Info_material/Alle_spezies_daten/Mentale Spezies/Memetiden</code></li><li><strong>Klänge (Unterordner je Kategorie)</strong><code>assets/audio/Alle Spezies+Übersicht/Mentale Spezies/Memetiden</code></li><li><strong>Videos</strong><code>assets/videos/Alle Spezies+Übersicht/Mentale Spezies/Memetiden</code></li></ul>
             </section>
             <div class="st-layout st-layout--fuss">
                 <div class="st-inhalt">

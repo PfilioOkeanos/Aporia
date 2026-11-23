@@ -1,2 +1,134 @@
-/* Regeneranten – Hauptseite · erzeugt vom Spezies-Baukasten (scripts/spezies)
-   Aufbau: inhalte/spezies/_gemeinsam/spezies-standard.css · Farben: ../regeneranten-basis.css · eigene Anpassungen hier ergänzen. */
+/* Regeneranten – Hauptseite · erzeugt von scripts/spezies/eigene/regeneranten.mjs (Vorlage: regeneranten-hauptseite.css)
+   Gemeinsames Design: ../regeneranten-basis.css · hier nur der Aufbau der Übersicht.
+   Farbwelt: Schiefer, Kupfer (--rg-violett) und Moosgrün (--rg-cyan); Leitmotiv „Kupfernarbe“. */
+
+.rg-hauptseite .rg-hero { min-height: clamp(22rem, 38cqi, 34rem); }
+.rg-hauptseite .rg-hero-bild { width: 72% !important; object-position: 50% 45%; }
+.rg-hauptseite .rg-hero h1 { letter-spacing: .05em; text-shadow: 0 0 26px #d98a4e55, 0 2px 18px #000; }
+.rg-kicker--linie { display: flex; align-items: center; gap: .8rem; }
+.rg-kicker--linie::after { content: ""; width: 6rem; height: 1px; background: linear-gradient(90deg, var(--rg-violett), transparent); }
+.rg-unterzeile em { color: var(--rg-violett-hell); font-style: normal; }
+.rg-unterzeile i { color: var(--rg-cyan); }
+.rg-hero-links { display: flex; flex-wrap: wrap; gap: 1.4rem; margin-top: 1.3rem !important; }
+.rg-hero-links a { padding-bottom: .2rem; border-bottom: 1px solid var(--rg-linie-hell); color: var(--rg-text) !important; font: 500 1rem/1.3 var(--rg-serif); text-decoration: none; }
+.rg-hero-links a:hover { color: var(--rg-violett-hell) !important; border-color: var(--rg-violett); }
+
+/* Kupfernarbe: eine leuchtende Linie, die sich langsam „schließt“ */
+.rg-narbe { position: absolute; left: 44%; top: 12%; z-index: -1; width: 2px; height: 76%; border-radius: 2px; background: linear-gradient(180deg, transparent, var(--rg-violett) 25%, #f7d2b2 50%, var(--rg-violett) 75%, transparent); box-shadow: 0 0 1rem .15rem #d98a4e66; transform: rotate(-8deg); transform-origin: top; animation: rg-narbe 7s ease-in-out infinite; pointer-events: none; }
+@keyframes rg-narbe { 0%, 100% { opacity: .2; clip-path: inset(0 0 60% 0); } 50% { opacity: .75; clip-path: inset(0 0 0 0); } }
+
+/* Kennzahlen */
+.rg-kennzahlen { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); margin: 0 0 var(--rg-raum); padding: .3rem; }
+.rg-kennzahlen > div { display: grid; gap: .1rem; padding: .7rem .9rem; text-align: center; }
+.rg-kennzahlen > div + div { border-left: 1px solid var(--rg-linie); }
+.rg-kennzahlen dt { color: var(--rg-leise); font: 600 .68rem/1.3 "Segoe UI", system-ui, sans-serif; letter-spacing: .14em; text-transform: uppercase; }
+.rg-kennzahlen dd { margin: 0; color: var(--rg-violett-hell); font: 600 clamp(1.2rem, 2.3cqi, 1.75rem)/1.15 var(--rg-serif); }
+.rg-kennzahlen dd a { color: inherit !important; text-decoration: none; }
+.rg-kennzahlen dd a:hover { color: var(--rg-cyan) !important; }
+.rg-kennzahlen span { color: var(--rg-leise); font-size: .78rem; }
+
+.rg-abschnitt { margin-top: calc(var(--rg-raum) * 1.6); }
+.rg-lead { max-width: 62rem; margin: -.3rem 0 var(--rg-raum) !important; color: var(--rg-leise); }
+
+/* Körperkarte */
+.rg-bau { display: grid; grid-template-columns: minmax(14rem, .75fr) minmax(0, 1.4fr); gap: calc(var(--rg-raum) * 1.6); align-items: center; }
+.rg-bau-grafik { display: grid; gap: .6rem; justify-items: center; }
+.rg-koerperkarte { width: 100%; max-width: 20rem; overflow: visible; }
+.rg-k-rumpf { fill: #1d2420; stroke: var(--rg-linie-hell); stroke-width: 1; }
+.rg-k-arm { fill: none; stroke: var(--rg-violett); stroke-width: 11; stroke-linecap: round; opacity: .85; filter: drop-shadow(0 0 4px #d98a4e55); animation: rg-arm 6s ease-in-out infinite; animation-delay: calc(var(--i) * .5s); }
+.rg-k-arm:nth-of-type(6) { stroke: #f7d2b2; stroke-dasharray: 120; animation: rg-wachs 6s ease-in-out infinite; }
+.rg-k-ring { fill: none; stroke: var(--rg-cyan); stroke-width: 4; }
+.rg-k-knoten { fill: var(--rg-cyan); }
+.rg-k-auge { fill: #fff6ee; opacity: .85; animation: rg-auge 4s ease-in-out infinite; animation-delay: calc(var(--i) * .3s); }
+@keyframes rg-arm { 0%, 100% { opacity: .75; } 50% { opacity: 1; } }
+@keyframes rg-wachs { 0% { stroke-dashoffset: 120; } 60%, 100% { stroke-dashoffset: 0; } }
+@keyframes rg-auge { 0%, 100% { opacity: .4; } 50% { opacity: 1; } }
+.rg-legende { display: flex; flex-wrap: wrap; justify-content: center; gap: .3rem .9rem; margin: 0; padding: 0; list-style: none; color: var(--rg-leise); font-size: .75rem; }
+.rg-legende i { display: inline-block; width: .8rem; height: .5rem; margin-right: .35rem; border-radius: 3px; vertical-align: middle; }
+.rg-l-arm { background: var(--rg-violett); } .rg-l-ring { border: 2px solid var(--rg-cyan); } .rg-l-knoten { background: var(--rg-cyan); border-radius: 50% !important; width: .5rem !important; } .rg-l-auge { background: #fff6ee; border-radius: 50% !important; width: .5rem !important; }
+.rg-bau-text { display: grid; gap: .7rem; }
+.rg-bau-text strong { color: var(--rg-violett-hell); }
+.rg-mini { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .35rem .7rem; margin: 0; }
+.rg-mini > div { min-width: 0; padding-top: .3rem; border-top: 1px solid #ffffff12; }
+.rg-mini dt { color: var(--rg-leise); font-size: .7rem; letter-spacing: .06em; text-transform: uppercase; }
+.rg-mini dd { margin: 0; font-size: .85rem; overflow-wrap: anywhere; }
+
+/* Sechs Phasen der Regeneration */
+.rg-phasen-liste { position: relative; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: .6rem; margin: .4rem 0 1rem; padding: 0; list-style: none; counter-reset: none; }
+.rg-phasen-liste::before { content: ""; position: absolute; left: 1.1rem; right: 1.1rem; top: 1.05rem; height: 2px; background: linear-gradient(90deg, var(--rg-violett), #f7d2b2, var(--rg-cyan)); box-shadow: 0 0 .7rem #d98a4e66; transform-origin: left; animation: rg-linie 5s ease-out both; }
+@keyframes rg-linie { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+.rg-phasen-liste li { position: relative; display: grid; gap: .3rem; align-content: start; padding: 0 !important; }
+.rg-phasen-liste li::before { display: none !important; }
+.rg-phase-nr { position: relative; z-index: 1; display: grid; place-items: center; width: 2.1rem; height: 2.1rem; border: 2px solid var(--rg-violett); border-radius: 50%; background: #121614; color: var(--rg-violett-hell); font: 700 .9rem/1 var(--rg-serif); box-shadow: 0 0 .8rem #d98a4e44; animation: rg-auf .6s ease both; animation-delay: calc(var(--i) * .6s); }
+@keyframes rg-auf { from { opacity: 0; transform: scale(.6); } to { opacity: 1; transform: none; } }
+.rg-phasen-liste strong { color: var(--rg-text); font: 600 .98rem/1.2 var(--rg-serif); }
+.rg-phasen-liste p { color: var(--rg-leise); font-size: .8rem; line-height: 1.4; }
+.rg-zeiten { display: grid; gap: .35rem; padding: .8rem .9rem; border: 1px solid var(--rg-linie); border-radius: 12px; background: #0f1311b3; }
+.rg-zeiten h3 { margin-bottom: .2rem; color: var(--rg-cyan); font: 600 .95rem/1.2 var(--rg-serif); }
+.rg-zeit { display: grid; grid-template-columns: minmax(9rem, 1fr) minmax(0, 2fr) minmax(8rem, auto); gap: .7rem; align-items: center; font-size: .84rem; }
+.rg-zeit i { height: .45rem; border-radius: 999px; background: linear-gradient(90deg, var(--rg-violett), #f7d2b2) 0 0 / var(--w) 100% no-repeat, #ffffff12; }
+.rg-zeit b { color: var(--rg-violett-hell); font-weight: 600; }
+
+/* Haltungen */
+.rg-haltungen { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--rg-raum); }
+.rg-haltung { display: grid; grid-template-rows: auto 1fr; overflow: hidden; transition: border-color .25s, transform .25s; }
+.rg-haltung:hover { border-color: var(--rg-violett); transform: translateY(-2px); }
+.rg-haltung figure { margin: 0; aspect-ratio: 4 / 3; overflow: hidden; background: #050605; }
+.rg-haltung img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s ease; }
+.rg-haltung:hover img { transform: scale(1.05); }
+.rg-haltung > div { display: grid; gap: .4rem; padding: .8rem .95rem 1rem; }
+.rg-haltung h3 { color: var(--rg-violett-hell); font: 600 1.3rem/1.15 var(--rg-serif); }
+.rg-haltung p { font-size: .88rem; line-height: 1.5; }
+
+/* Charta */
+.rg-charta { display: grid; gap: .7rem; }
+.rg-charta-liste { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .5rem; margin: 0; padding: 0; list-style: none; counter-reset: charta; }
+.rg-charta-liste li { counter-increment: charta; position: relative; padding: .7rem .75rem .7rem 2.4rem !important; border: 1px solid var(--rg-linie); border-radius: 12px; background: #0f1311b3; font: 600 .92rem/1.3 var(--rg-serif); }
+.rg-charta-liste li::before { content: counter(charta) !important; position: absolute; left: .7rem; top: .7rem; display: grid !important; place-items: center; width: 1.3rem; height: 1.3rem; border-radius: 50%; background: var(--rg-violett) !important; color: #1a0f08; font: 700 .72rem/1 ui-monospace, Consolas, monospace; box-shadow: none !important; }
+
+/* Steckbrief + Heimatwelt */
+.rg-zwei { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: var(--rg-raum); align-items: start; margin-top: calc(var(--rg-raum) * 1.6); }
+.rg-zwei .rg-dossier-steckbrief { margin-top: 0; }
+.rg-zwei .rg-dossier-raster { grid-template-columns: minmax(0, 1fr); }
+.rg-welt { overflow: hidden; }
+.rg-welt-bild { display: block; aspect-ratio: 16 / 10; overflow: hidden; background: #000; }
+.rg-welt-bild img { width: 100%; height: 100%; object-fit: cover; object-position: center 45%; transition: transform .8s ease; }
+.rg-welt-bild:hover img { transform: scale(1.04); }
+.rg-welt .rg-block { display: grid; gap: .7rem; }
+
+/* Themenbereiche */
+.rg-themen-raster { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--rg-raum); }
+.rg-thema { display: grid; align-content: end; gap: .25rem; min-height: 9.5rem; padding: .8rem; overflow: hidden; isolation: isolate; color: var(--rg-text) !important; text-decoration: none; }
+.rg-thema-bild { position: absolute !important; inset: 0; z-index: -2; width: 100% !important; height: 100% !important; object-fit: cover; object-position: center 35%; transition: transform .6s ease; }
+.rg-thema::before { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(0deg, #090b0a 8%, #090b0acc 50%, #090b0a26 100%); }
+.rg-thema:hover { border-color: var(--rg-violett); box-shadow: 0 0 1.1rem #d98a4e44; }
+.rg-thema:hover .rg-thema-bild { transform: scale(1.05); }
+.rg-thema-kopf { display: flex; gap: .45rem; align-items: center; }
+.rg-thema-text { font-size: .82rem; line-height: 1.35; }
+.rg-layout--fuss { margin-top: var(--rg-raum); }
+
+@media (prefers-reduced-motion: reduce) {
+    .rg-narbe, .rg-k-arm, .rg-k-auge, .rg-phasen-liste::before, .rg-phase-nr { animation: none; }
+}
+@container (max-width: 1100px) {
+    .rg-phasen-liste { grid-template-columns: repeat(3, minmax(0, 1fr)); row-gap: 1rem; }
+    .rg-phasen-liste::before { display: none; }
+    .rg-charta-liste { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .rg-zwei { grid-template-columns: minmax(0, 1fr); }
+}
+@container (max-width: 820px) {
+    .rg-kennzahlen { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .rg-kennzahlen > div:nth-child(4) { border-left: 0; }
+    .rg-bau { grid-template-columns: minmax(0, 1fr); }
+    .rg-haltungen { grid-template-columns: minmax(0, 1fr); }
+    .rg-themen-raster { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .rg-hauptseite .rg-hero-bild { width: 100% !important; }
+    .rg-zeit { grid-template-columns: minmax(0, 1fr); gap: .2rem; }
+}
+@container (max-width: 560px) {
+    .rg-kennzahlen { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .rg-kennzahlen > div { border-left: 0 !important; border-top: 1px solid var(--rg-linie); }
+    .rg-kennzahlen > div:nth-child(-n+2) { border-top: 0; }
+    .rg-phasen-liste, .rg-charta-liste, .rg-themen-raster { grid-template-columns: minmax(0, 1fr); }
+    .rg-mini { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}

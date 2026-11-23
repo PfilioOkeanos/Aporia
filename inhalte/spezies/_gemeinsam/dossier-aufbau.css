@@ -1,0 +1,12 @@
+.dossier-reiter { display:flex; flex-wrap:wrap; align-items:center; gap:.35rem; margin:1rem auto; padding:.5rem; max-width:92rem; border-block:1px solid currentColor; position:relative; z-index:1; }
+.dossier-reiter a { color:inherit; font:inherit; padding:.4em .65em; text-decoration:none; }
+.dossier-reiter a:is(:hover,:focus-visible,[aria-current="page"]) { text-decoration:underline; text-underline-offset:.3em; }
+.dossier-lesebereich { width:min(92%,80rem); margin:2rem auto; }
+.dossier-lesebereich details { padding:1rem; margin-block:1rem; border:1px solid currentColor; border-radius:.65rem; }
+.dossier-lesebereich summary { cursor:pointer; }
+.dossier-lesebereich summary h2 { display:inline; font-size:1.2rem; }
+.dossier-lesebereich p { max-width:85ch; line-height:1.6; }
+@media(max-width:760px){.dossier-reiter {flex-wrap:nowrap;overflow-x:auto}.dossier-reiter a {white-space:nowrap}}
+
+.dossier-kopfbild { width:100%; max-height:24rem; object-fit:cover; }
+body:has(main .dossier-reiter) .archive-bar nav { display:none; }

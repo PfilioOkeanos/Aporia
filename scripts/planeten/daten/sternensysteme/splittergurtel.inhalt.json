@@ -1,0 +1,499 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Splittergürtel",
+  "genitiv": "von Splittergürtel",
+  "dossierName": "Splittergürtel-Dossier",
+  "klasse": "Asteroidengürtel",
+  "intro": "Der Splittergürtel zwischen 2,1 und 2,85 AE besteht aus silikatischen und metallhaltigen Gesteinsbrocken. Splittergürtel umgibt Seyvar im Seyvar-System.",
+  "globusDaten": {
+    "planet": "drei-staubbander-im-weiten-asteroidengurtel",
+    "klasse": "Gestein",
+    "radius": 1000000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=nhalyss-stern&objekt=nhalyss-splittergurtel",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-B73491500B"
+    ],
+    [
+      "Typ",
+      "Asteroidengürtel"
+    ],
+    [
+      "Sternsystem",
+      "Seyvar-System"
+    ],
+    [
+      "Zentralkörper",
+      "Seyvar"
+    ],
+    [
+      "Ausdehnung",
+      "2,1–2,85 AE"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Seyvar-System"
+    ],
+    [
+      "Zentralstern",
+      "Seyvar",
+      "inhalte/himmelskoerper/sterne/details/seyvar/hauptseite/index.html"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Splittergürtel im Seyvar-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=nhalyss-stern&objekt=nhalyss-splittergurtel",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Seyvar",
+      "href": "inhalte/himmelskoerper/sterne/details/seyvar/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Bioluminoiden",
+      "titel": "Nhalyss",
+      "href": "inhalte/himmelskoerper/planeten/details/nhalyss/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Bioluminoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Bioluminoiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Seyvar-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=nhalyss-stern&objekt=nhalyss-splittergurtel"
+    },
+    {
+      "titel": "Speziesdossier Bioluminoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Bioluminoiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#080707",
+      "tiefe": "#11100f",
+      "akzent": "#bdb6af",
+      "sand": "#c2b59e",
+      "moos": "#9cab8a",
+      "ozean": "#7c949d",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#45403c"
+    },
+    "schichten": [
+      [
+        "Lage",
+        "Bahnen"
+      ],
+      [
+        "System",
+        "Planeten"
+      ],
+      [
+        "Dynamik",
+        "Stabilität"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Zentralsterne": {
+      "gruppe": "Wissenschaft",
+      "icon": "✦",
+      "intro": "Zentralsterne von Splittergürtel.",
+      "abschnitte": [
+        {
+          "titel": "Seyvar",
+          "text": [
+            "Seyvar ist ein orangefarbener Hauptreihenstern der Spektralklasse K2 V mit 82 % der Sonnenmasse und 47 % ihrer Leuchtkraft. Er besitzt eine lange, stabile Hauptreihenphase, magnetische Aktivität und einen Sternwind – Zentralstern von Nhalyss, der Heimatwelt der Bioluminoiden."
+          ],
+          "verweise": [
+            [
+              "Seyvar",
+              "inhalte/himmelskoerper/sterne/details/seyvar/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Planeten": {
+      "gruppe": "Wissenschaft",
+      "icon": "◍",
+      "intro": "Planeten von Splittergürtel.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Seyvar · Stern",
+              "Orangefarbener Zwerg (K2 V)"
+            ],
+            [
+              "Seyvar I · 0,29 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Nhalyss · 0,72 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Seyvar III · 1,38 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Seyvar IV · 4,4 AE",
+              "Gasriese"
+            ],
+            [
+              "Seyvar V · 11,5 AE",
+              "Eisriese"
+            ],
+            [
+              "Splittergürtel · 2,1–2,9 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 34–48 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Seyvar",
+              "inhalte/himmelskoerper/sterne/details/seyvar/hauptseite/index.html"
+            ],
+            [
+              "Seyvar I",
+              "inhalte/himmelskoerper/planeten/details/seyvar-i/hauptseite/index.html"
+            ],
+            [
+              "Nhalyss",
+              "inhalte/himmelskoerper/planeten/details/nhalyss/hauptseite/index.html"
+            ],
+            [
+              "Seyvar III",
+              "inhalte/himmelskoerper/planeten/details/seyvar-iii/hauptseite/index.html"
+            ],
+            [
+              "Seyvar IV",
+              "inhalte/himmelskoerper/planeten/details/seyvar-iv/hauptseite/index.html"
+            ],
+            [
+              "Seyvar V",
+              "inhalte/himmelskoerper/planeten/details/seyvar-v/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Bahnen": {
+      "gruppe": "Wissenschaft",
+      "icon": "◌",
+      "intro": "Bahnen von Splittergürtel.",
+      "abschnitte": [
+        {
+          "titel": "Lage",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Seyvar"
+            ],
+            [
+              "Ausdehnung",
+              "2,1–2,85 AE"
+            ]
+          ]
+        }
+      ]
+    },
+    "Stabilität": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚖",
+      "intro": "Stabilität von Splittergürtel.",
+      "abschnitte": [
+        {
+          "titel": "Stabilität",
+          "text": [
+            "Die Brocken von Splittergürtel bewegen sich auf stabilen Bahnen zwischen den Planeten; Resonanzen mit den großen Planeten formen die Ränder des Gebiets."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Splittergürtel auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Splittergürtel",
+          "text": [
+            "Der Splittergürtel zwischen 2,1 und 2,85 AE besteht aus silikatischen und metallhaltigen Gesteinsbrocken.",
+            "Splittergürtel umgibt Seyvar im Seyvar-System."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Asteroidengürtel"
+            ],
+            [
+              "Sternsystem",
+              "Seyvar-System"
+            ],
+            [
+              "Zentralkörper",
+              "Seyvar"
+            ],
+            [
+              "Ausdehnung",
+              "2,1–2,85 AE"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Nhalyss",
+          "text": [
+            "Das Seyvar-System ist die Heimat der Bioluminoiden: Ihr Planet Nhalyss umkreist Seyvar."
+          ],
+          "verweise": [
+            [
+              "Nhalyss",
+              "inhalte/himmelskoerper/planeten/details/nhalyss/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Bioluminoiden",
+              "inhalte/spezies/Biologische Spezies/Bioluminoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Splittergürtel im Seyvar-System.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Seyvar · Stern",
+              "Orangefarbener Zwerg (K2 V)"
+            ],
+            [
+              "Seyvar I · 0,29 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Nhalyss · 0,72 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Seyvar III · 1,38 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Seyvar IV · 4,4 AE",
+              "Gasriese"
+            ],
+            [
+              "Seyvar V · 11,5 AE",
+              "Eisriese"
+            ],
+            [
+              "Splittergürtel · 2,1–2,9 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 34–48 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Seyvar",
+              "inhalte/himmelskoerper/sterne/details/seyvar/hauptseite/index.html"
+            ],
+            [
+              "Seyvar I",
+              "inhalte/himmelskoerper/planeten/details/seyvar-i/hauptseite/index.html"
+            ],
+            [
+              "Nhalyss",
+              "inhalte/himmelskoerper/planeten/details/nhalyss/hauptseite/index.html"
+            ],
+            [
+              "Seyvar III",
+              "inhalte/himmelskoerper/planeten/details/seyvar-iii/hauptseite/index.html"
+            ],
+            [
+              "Seyvar IV",
+              "inhalte/himmelskoerper/planeten/details/seyvar-iv/hauptseite/index.html"
+            ],
+            [
+              "Seyvar V",
+              "inhalte/himmelskoerper/planeten/details/seyvar-v/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Umgebung": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Umgebung von Splittergürtel.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Seyvar · Stern",
+              "Orangefarbener Zwerg (K2 V)"
+            ],
+            [
+              "Seyvar I · 0,29 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Nhalyss · 0,72 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Seyvar III · 1,38 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Seyvar IV · 4,4 AE",
+              "Gasriese"
+            ],
+            [
+              "Seyvar V · 11,5 AE",
+              "Eisriese"
+            ],
+            [
+              "Splittergürtel · 2,1–2,9 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 34–48 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Seyvar",
+              "inhalte/himmelskoerper/sterne/details/seyvar/hauptseite/index.html"
+            ],
+            [
+              "Seyvar I",
+              "inhalte/himmelskoerper/planeten/details/seyvar-i/hauptseite/index.html"
+            ],
+            [
+              "Nhalyss",
+              "inhalte/himmelskoerper/planeten/details/nhalyss/hauptseite/index.html"
+            ],
+            [
+              "Seyvar III",
+              "inhalte/himmelskoerper/planeten/details/seyvar-iii/hauptseite/index.html"
+            ],
+            [
+              "Seyvar IV",
+              "inhalte/himmelskoerper/planeten/details/seyvar-iv/hauptseite/index.html"
+            ],
+            [
+              "Seyvar V",
+              "inhalte/himmelskoerper/planeten/details/seyvar-v/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Splittergürtel.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Splittergürtel besteht aus Material, das sich bei der Entstehung des Seyvar-Systems nicht zu einem Planeten vereinte."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Splittergürtel.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Wie viel Masse enthält das Gebiet insgesamt?",
+            "Welche Resonanzen formen seine Ränder?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Splittergürtel ist mit allen Bahndaten im Seyvar-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=nhalyss-stern&objekt=nhalyss-splittergurtel"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Splittergürtel.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Der Splittergürtel zwischen 2,1 und 2,85 AE besteht aus silikatischen und metallhaltigen Gesteinsbrocken."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Splittergürtel.",
+      "abschnitte": [
+        {
+          "titel": "Splittergürtel – Archivbild",
+          "bild": true,
+          "bildtext": "Splittergürtel"
+        }
+      ]
+    }
+  }
+}

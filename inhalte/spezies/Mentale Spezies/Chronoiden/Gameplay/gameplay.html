@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#11080a">
+    <meta name="theme-color" content="#07090c">
     <meta name="description" content="Spielintegration der Chronoiden im APORIA-Weltenarchiv.">
     <title>Spielintegration · Chronoiden · APORIA</title>
     <link rel="stylesheet" href="../../../../../Men%C3%BCs/TopBar/Top_bar.css">
@@ -13,63 +13,410 @@
     <link rel="stylesheet" href="gameplay.css">
     <script type="module" src="gameplay.js"></script>
 </head>
-<body class="chronoiden st-gameplay" data-page="spezies-mental-3-gameplay" data-section="spezies">
+<body class="chronoiden cn-gameplay" data-page="spezies-mental-3-gameplay" data-section="spezies">
     <div data-aporia-topbar></div>
-    <div class="aporia-page-frame st-frame">
+    <div class="aporia-page-frame cn-frame">
         <div data-aporia-sidebar></div>
-        <main class="st-dossier" id="inhalt">
-            <header class="st-hero st-hero--reiter">
-                
-                <span class="st-glanz" aria-hidden="true"></span>
-                <div class="st-hero-text">
-                    <nav class="st-pfad" aria-label="Archivpfad"><a data-route="spezies" href="../../../Spezies_%C3%BCbersicht/Spezies.html">Spezies</a><span aria-hidden="true">›</span><a data-route="spezies-mental" href="../../%C3%9Cbersichtsseite%20Mentale%20Spezies/Uebersicht.html">Mentale Spezies</a><span aria-hidden="true">›</span><a data-route="spezies-mental-3" href="../hauptseite/Spezies.html">Chronoiden</a><span aria-hidden="true">›</span><span aria-current="page">Spielintegration</span></nav>
-                    <p class="st-kicker">Chronoiden · Hauptreiter</p>
+        <main class="cn-dossier" id="inhalt">
+            <header class="cn-hero cn-hero--reiter">
+                <img class="cn-hero-bild" src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Chronoiden/Heimatwelt/Au%C3%9Ferirdisches%20Tal%20mit%20leuchtenden%20Ringportalen-2.png" alt="" fetchpriority="high" decoding="async">
+                <span class="cn-glanz" aria-hidden="true"></span>
+                <div class="cn-hero-text">
+                    <nav class="cn-pfad" aria-label="Archivpfad"><a data-route="spezies" href="../../../Spezies_%C3%BCbersicht/Spezies.html">Spezies</a><span aria-hidden="true">›</span><a data-route="spezies-mental" href="../../%C3%9Cbersichtsseite%20Mentale%20Spezies/Uebersicht.html">Mentale Spezies</a><span aria-hidden="true">›</span><a data-route="spezies-mental-3" href="../hauptseite/Spezies.html">Chronoiden</a><span aria-hidden="true">›</span><span aria-current="page">Spielintegration</span></nav>
+                    <p class="cn-kicker">Chronoiden · Hauptreiter</p>
                     <h1>Spielintegration</h1>
-                    <p class="st-unterzeile">Spielmechaniken und Interaktion</p>
+                    <p class="cn-unterzeile">Begegnung, Kommunikationsmechanik, Missionen und Seyrath als Spielgebiet</p>
                 </div>
             </header>
-            <nav class="st-reiter" aria-label="Hauptreiter der Chronoiden">
-                <a href="../hauptseite/Spezies.html" data-route="spezies-mental-3"><span aria-hidden="true">◆</span>Übersicht</a>
+            <nav class="cn-reiter" aria-label="Hauptreiter der Chronoiden">
+                <a href="../hauptseite/Spezies.html" data-route="spezies-mental-3"><span aria-hidden="true">✶</span>Übersicht</a>
                 <a href="../Unterseiten/Allgemeines/allgemeines.html" data-route="spezies-mental-3-allgemeines"><span aria-hidden="true">ⓘ</span>Allgemeines</a>
-                <a href="../Unterseiten/Biologie/biologie.html" data-route="spezies-mental-3-biologie"><span aria-hidden="true">⟡</span>Biologie</a>
+                <a href="../Unterseiten/Biologie/biologie.html" data-route="spezies-mental-3-biologie"><span aria-hidden="true">⧗</span>Bewusstsein</a>
                 <a href="../Unterseiten/Entwicklung/entwicklung.html" data-route="spezies-mental-3-entwicklung"><span aria-hidden="true">⤳</span>Entwicklung</a>
                 <a href="../Unterseiten/Heimatwelt/heimatwelt.html" data-route="spezies-mental-3-heimatwelt"><span aria-hidden="true">◍</span>Heimatwelt</a>
                 <a href="../Unterseiten/Gesellschaft/gesellschaft.html" data-route="spezies-mental-3-gesellschaft"><span aria-hidden="true">⁂</span>Gesellschaft</a>
                 <a href="../Unterseiten/Politik/politik.html" data-route="spezies-mental-3-politik"><span aria-hidden="true">⚖</span>Politik</a>
-                <a href="../Unterseiten/Geschichte/geschichte.html" data-route="spezies-mental-3-geschichte"><span aria-hidden="true">⧗</span>Geschichte</a>
+                <a href="../Unterseiten/Geschichte/geschichte.html" data-route="spezies-mental-3-geschichte"><span aria-hidden="true">⌛</span>Geschichte</a>
                 <a href="gameplay.html" data-route="spezies-mental-3-gameplay" aria-current="page"><span aria-hidden="true">◈</span>Spielintegration</a>
                 <a href="../Forschung/forschung.html" data-route="spezies-mental-3-forschung"><span aria-hidden="true">⚗</span>Forschung</a>
                 <a href="../Unterseiten/Medien/medien.html" data-route="spezies-mental-3-medien"><span aria-hidden="true">▣</span>Medien</a>
-            </nav>
-            <div class="st-layout">
-                <div class="st-inhalt">
-                    <details class="st-panel st-karte" id="noch-offen" open>
-                        <summary><span class="st-nr">…</span><h2>Spielintegration</h2><span class="st-chevron" aria-hidden="true"></span></summary>
-                        <div class="st-text">
-                            <p class="st-offen">Noch nicht ausgearbeitet.</p>
-                            <p class="st-quelle">Vorgesehene Infodateien (noch ohne Text): Gameplay/.gitkeep</p>
+            <a href="../Unterseiten/Technologien/technologien.html" data-route="spezies-mental-3-technologien">Technologien</a>
+</nav>
+            <div class="cn-layout">
+                <div class="cn-inhalt">
+                    <details class="cn-panel cn-karte" id="k-8-1-grundlegende-spielrolle">
+                        <summary><span class="cn-nr">8.1</span><h2>Grundlegende Spielrolle</h2><span class="cn-chevron" aria-hidden="true"></span></summary>
+                        <div class="cn-text">
+                            <p>Die Chronoiden sind eine eigenständige intelligente Spezies.</p>
+                            <p>Sie dienen nicht ausschließlich als Gegner oder als Quelle besonderer Fähigkeiten.</p>
+                            <p>Ihre Existenz ermöglicht wissenschaftliche, gesellschaftliche, diplomatische und technische Spielmechaniken.</p>
+                            <p>Die Spielerfigur begegnet unterschiedlichen Individuen mit eigenen Interessen, Beziehungen und Lebensgeschichten.</p>
+                            <p class="cn-quelle">Quelle: Info_material · Chronoiden · Gameplay/.gitkeep</p>
                         </div>
                     </details>
-                    
-                    <aside class="st-panel st-block st-links" aria-label="Verknüpfungen">
-                    <h2 class="st-h2">Verknüpfungen</h2>
+                    <details class="cn-panel cn-karte" id="k-8-2-erscheinungsformen-im-spiel">
+                        <summary><span class="cn-nr">8.2</span><h2>Erscheinungsformen im Spiel</h2><span class="cn-chevron" aria-hidden="true"></span></summary>
+                        <div class="cn-text">
+                            <p>Chronoiden können in unterschiedlichen Darstellungen auftreten.</p>
+                            <dl class="cn-fakten"><div><dt>Natürlicher Chronoid</dt><dd>Ein Individuum innerhalb einer mineralischen Resonanzstruktur.</dd></div><div><dt>Stationärer technischer Chronoid</dt><dd>Ein Individuum in einem geschützten künstlichen Träger.</dd></div><div><dt>Mobiler Chronoid</dt><dd>Ein Individuum, das geeignete technische Bewegungsplattformen verwendet.</dd></div><div><dt>Ferne Kommunikation</dt><dd>Ein Chronoid, der über Kommunikationsanlagen Kontakt aufnimmt, ohne physisch anwesend zu sein.</dd></div><div><dt>Sichtbare Manifestation</dt><dd>Eine technisch oder physikalisch erzeugte Darstellung des Individuums.</dd></div></dl>
+                            <p>Diese Erscheinungsformen sind nicht automatisch unterschiedliche Spezies.</p>
+                            <p class="cn-quelle">Quelle: Info_material · Chronoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="cn-panel cn-karte" id="k-8-3-erste-begegnung">
+                        <summary><span class="cn-nr">8.3</span><h2>Erste Begegnung</h2><span class="cn-chevron" aria-hidden="true"></span></summary>
+                        <div class="cn-text">
+                            <p>Ein Chronoid muss nicht als sichtbarer Charakter erscheinen.</p>
+                            <p>Die Spielerfigur kann zunächst lediglich ungewöhnliche Messwerte entdecken.</p>
+                            <p>Wiederkehrende Signalstrukturen oder gezielte Reaktionen können Hinweise auf Intelligenz liefern.</p>
+                            <p>Die sichere Identifikation erfordert geeignete Geräte, Untersuchungen und gegebenenfalls Kommunikationsversuche.</p>
+                            <p class="cn-quelle">Quelle: Info_material · Chronoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="cn-panel cn-karte" id="k-8-4-wissenschaftliche-erkundung">
+                        <summary><span class="cn-nr">8.4</span><h2>Wissenschaftliche Erkundung</h2><span class="cn-chevron" aria-hidden="true"></span></summary>
+                        <div class="cn-text">
+                            <p>Die Erkundung natürlicher Resonanzregionen wird zu einer eigenständigen Spielaktivität.</p>
+                            <p>Die Spielerfigur untersucht mineralische Formationen, elektrische Muster und geologische Zusammenhänge.</p>
+                            <p>Dabei muss zwischen gewöhnlichen Anomalien, natürlichen Informationssystemen und bewussten Individuen unterschieden werden.</p>
+                            <p>Fehlerhafte Eingriffe können Schäden verursachen.</p>
+                            <p class="cn-quelle">Quelle: Info_material · Chronoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="cn-panel cn-karte" id="k-8-5-kommunikationsmechanik">
+                        <summary><span class="cn-nr">8.5</span><h2>Kommunikationsmechanik</h2><span class="cn-chevron" aria-hidden="true"></span></summary>
+                        <div class="cn-text">
+                            <p>Die Kommunikation mit Chronoiden wird schrittweise erschlossen.</p>
+                            <p>Anfangs können Signale unverständlich sein.</p>
+                            <p>Durch Forschung werden grundlegende Bedeutungen, Zeitprotokolle und komplexere Übersetzungen verfügbar.</p>
+                            <p>Mit fortschreitender Forschung können differenzierte Dialoge und diplomatische Beziehungen entstehen.</p>
+                            <p class="cn-quelle">Quelle: Info_material · Chronoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="cn-panel cn-karte" id="k-8-6-unterschiedliche-zeitwahrnehmung">
+                        <summary><span class="cn-nr">8.6</span><h2>Unterschiedliche Zeitwahrnehmung</h2><span class="cn-chevron" aria-hidden="true"></span></summary>
+                        <div class="cn-text">
+                            <p>Chronoiden können Informationen unterschiedlich schnell verarbeiten.</p>
+                            <p>Im Gameplay wird dies durch Analyseleistungen, Kommunikationszustände und besondere Entscheidungen dargestellt.</p>
+                            <p>Ein Chronoid kann beispielsweise umfangreiche Daten auswerten, während die Spielerfigur auf eine Antwort wartet.</p>
+                            <p>Die physikalische Welt wird dabei nicht automatisch verlangsamt.</p>
+                            <p class="cn-quelle">Quelle: Info_material · Chronoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="cn-panel cn-karte" id="k-8-7-tiefenruhe">
+                        <summary><span class="cn-nr">8.7</span><h2>Tiefenruhe</h2><span class="cn-chevron" aria-hidden="true"></span></summary>
+                        <div class="cn-text">
+                            <p>Ein Chronoid kann sich in einem stark verlangsamten Zustand befinden.</p>
+                            <p>Die Spielerfigur muss unter Umständen geeignete Kommunikationsverfahren oder sichere Weckprotokolle verwenden.</p>
+                            <p>Ein unkontrollierter Eingriff kann gefährlich sein.</p>
+                            <p>Lange Ruhephasen können außerdem besondere historische Geschichten ermöglichen.</p>
+                            <p class="cn-quelle">Quelle: Info_material · Chronoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="cn-panel cn-karte" id="k-8-10-technologische-belohnungen">
+                        <summary><span class="cn-nr">8.10</span><h2>Technologische Belohnungen</h2><span class="cn-chevron" aria-hidden="true"></span></summary>
+                        <div class="cn-text">
+                            <p>Die Spielerfigur kann verbesserte Analyse- und Kommunikationssysteme erhalten.</p>
+                            <p>Mögliche Effekte umfassen:</p>
+                            <ul><li>Schnellere Auswertung von Messdaten.</li><li>Präzisere Erkennung technischer Fehler.</li><li>Verbesserte Musteranalyse.</li><li>Übersetzung komplexer Chronoidensignale.</li><li>Bessere Langzeitüberwachung.</li><li>Unterstützte wissenschaftliche Prognosen.</li><li>Verbesserte Diagnose empfindlicher Informationssysteme.</li></ul>
+                            <p>Keine dieser Technologien bietet automatisch unbegrenzte Zukunftssicht.</p>
+                            <p class="cn-quelle">Quelle: Info_material · Chronoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="cn-panel cn-karte" id="k-8-11-herstellung">
+                        <summary><span class="cn-nr">8.11</span><h2>Herstellung</h2><span class="cn-chevron" aria-hidden="true"></span></summary>
+                        <div class="cn-text">
+                            <p>Chronoidische Technologie nutzt spezialisierte Werkstoffe und komplexe Fertigungsverfahren.</p>
+                            <p>Herstellbare Produkte können Sensoren, Kommunikationssysteme, Speicher, Schutzvorrichtungen und technische Trägerkomponenten sein.</p>
+                            <p>Ein vollständiger bewusstseinstragender Träger ist jedoch nicht mit einem gewöhnlichen herstellbaren Gegenstand gleichzusetzen.</p>
+                            <p class="cn-quelle">Quelle: Info_material · Chronoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="cn-panel cn-karte" id="k-8-12-resonanzmedizin-im-gameplay">
+                        <summary><span class="cn-nr">8.12</span><h2>Resonanzmedizin im Gameplay</h2><span class="cn-chevron" aria-hidden="true"></span></summary>
+                        <div class="cn-text">
+                            <p>Die Spielerfigur kann geschädigte Chronoiden untersuchen und unterstützen.</p>
+                            <p>Dafür müssen relevante Zustände gemessen werden.</p>
+                            <p>Mögliche Aufgaben umfassen die Wiederherstellung von Energieversorgung, thermische Stabilisierung, Schutz vor Störungen und kontrollierte Reparatur.</p>
+                            <p>Nicht jeder Schaden ist vollständig heilbar.</p>
+                            <p class="cn-quelle">Quelle: Info_material · Chronoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="cn-panel cn-karte" id="k-8-13-rettungsmissionen">
+                        <summary><span class="cn-nr">8.13</span><h2>Rettungsmissionen</h2><span class="cn-chevron" aria-hidden="true"></span></summary>
+                        <div class="cn-text">
+                            <p>Einige Chronoiden können durch Naturkatastrophen oder technische Ausfälle gefährdet sein.</p>
+                            <p>Mögliche Missionsziele sind:</p>
+                            <ul><li>Energieversorgung wiederherstellen.</li><li>Beschädigte Leitungen reparieren.</li><li>Überhitzung verhindern.</li><li>Einen Träger stabilisieren.</li><li>Kommunikation herstellen.</li><li>Historische Daten sichern.</li><li>Einen kontrollierten Transport vorbereiten.</li></ul>
+                            <p class="cn-quelle">Quelle: Info_material · Chronoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="cn-panel cn-karte" id="k-8-14-historische-missionen">
+                        <summary><span class="cn-nr">8.14</span><h2>Historische Missionen</h2><span class="cn-chevron" aria-hidden="true"></span></summary>
+                        <div class="cn-text">
+                            <p>Die Vergangenheit Seyraths bietet umfangreiche Forschungsgeschichten.</p>
+                            <p>Besonders wichtige Ereignisse sind der Große Versatz und die Stille Fuge.</p>
+                            <p>Die Spielerfigur kann historische Archive untersuchen und widersprüchliche Überlieferungen vergleichen.</p>
+                            <p>Die Vergangenheit wird durch vorhandene Daten rekonstruiert.</p>
+                            <p>Eine tatsächliche Zeitreise ist dafür nicht notwendig.</p>
+                            <p class="cn-quelle">Quelle: Info_material · Chronoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="cn-panel cn-karte" id="k-8-15-gesellschaftliche-missionen">
+                        <summary><span class="cn-nr">8.15</span><h2>Gesellschaftliche Missionen</h2><span class="cn-chevron" aria-hidden="true"></span></summary>
+                        <div class="cn-text">
+                            <p>Missionskonflikte können entstehen durch:</p>
+                            <ul><li>Unterschiedliche Synchronisationsrechte.</li><li>Energiemangel.</li><li>Politische Vertretung.</li><li>Schutz junger Chronoiden.</li><li>Rohstoffabbau.</li><li>Trägerwechsel.</li><li>Unbefugten Datenzugriff.</li><li>Gefährdete historische Archive.</li></ul>
+                            <p>Der Spieler kann unterschiedliche Positionen kennenlernen und Entscheidungen treffen.</p>
+                            <p class="cn-quelle">Quelle: Info_material · Chronoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="cn-panel cn-karte" id="k-8-16-diplomatische-missionen">
+                        <summary><span class="cn-nr">8.16</span><h2>Diplomatische Missionen</h2><span class="cn-chevron" aria-hidden="true"></span></summary>
+                        <div class="cn-text">
+                            <p>Die Chronoiden besitzen Kontakte zu mehreren APORIA-Fraktionen.</p>
+                            <p>Daraus entstehen mögliche Verhandlungen, Konflikte und wissenschaftliche Kooperationen.</p>
+                            <p>Besonders wichtig ist die Übersetzung fremder Vorstellungen von Bewusstsein, Zeit und persönlicher Identität.</p>
+                            <p class="cn-quelle">Quelle: Info_material · Chronoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="cn-panel cn-karte" id="k-8-17-raumtransport">
+                        <summary><span class="cn-nr">8.17</span><h2>Raumtransport</h2><span class="cn-chevron" aria-hidden="true"></span></summary>
+                        <div class="cn-text">
+                            <p>Transportmissionen erfordern geeignete materielle Trägersysteme.</p>
+                            <p>Die Spielerfigur kann Energieversorgung, Abschirmung und die Stabilität eines Transportträgers überwachen.</p>
+                            <p>Ein bloßes Kopieren von Informationsdaten darf nicht unbemerkt als vollständige Rettung eines Individuums behandelt werden.</p>
+                            <p class="cn-quelle">Quelle: Info_material · Chronoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="cn-panel cn-karte" id="k-8-18-individuelle-npcs">
+                        <summary><span class="cn-nr">8.18</span><h2>Individuelle NPCs</h2><span class="cn-chevron" aria-hidden="true"></span></summary>
+                        <div class="cn-text">
+                            <p>Chronoiden-NPCs besitzen eigene Identitäten.</p>
+                            <p>Zu ihren möglichen Eigenschaften gehören:</p>
+                            <ul><li>Individuelle Herkunft.</li><li>Aktueller Träger.</li><li>Persönliche Erinnerungen.</li><li>Beziehungsstatus.</li><li>Politische Zugehörigkeit.</li><li>Forschungsinteressen.</li><li>Aktueller Zeitwahrnehmungsmodus.</li><li>Energie- und Stabilitätszustand.</li><li>Kommunikationsfähigkeit.</li><li>Historische Erfahrungen.</li></ul>
+                            <p>Diese Eigenschaften müssen nicht sämtlich in Echtzeit simuliert werden.</p>
+                            <p class="cn-quelle">Quelle: Info_material · Chronoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="cn-panel cn-karte" id="k-8-19-kampf">
+                        <summary><span class="cn-nr">8.19</span><h2>Kampf</h2><span class="cn-chevron" aria-hidden="true"></span></summary>
+                        <div class="cn-text">
+                            <p>Feindliche Chronoiden können technische Verteidigungsanlagen und mobile Plattformen verwenden.</p>
+                            <p>Sie besitzen keine automatische Fähigkeit zur direkten Zeitmanipulation.</p>
+                            <p>Ihre taktische Stärke kann auf Sensorik, Informationsverarbeitung und vorbereiteten technischen Maßnahmen beruhen.</p>
+                            <p>Physikalische Bewegungen und Reaktionen der eingesetzten Maschinen bleiben begrenzt.</p>
+                            <p class="cn-quelle">Quelle: Info_material · Chronoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="cn-panel cn-karte" id="k-8-20-gefahren">
+                        <summary><span class="cn-nr">8.20</span><h2>Gefahren</h2><span class="cn-chevron" aria-hidden="true"></span></summary>
+                        <div class="cn-text">
+                            <p>Mögliche Gefahren sind:</p>
+                            <ul><li>Energieausfall.</li><li>Trägerbeschädigung.</li><li>Überhitzung.</li><li>Elektromagnetische Störungen.</li><li>Informationsverlust.</li><li>Desynchronisation.</li><li>Unsichere Trägerwechsel.</li><li>Geologische Katastrophen.</li></ul>
+                            <p>Die Anfälligkeit hängt vom Individuum und seinem Träger ab.</p>
+                            <p class="cn-quelle">Quelle: Info_material · Chronoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="cn-panel cn-karte" id="k-8-21-moralische-entscheidungen">
+                        <summary><span class="cn-nr">8.21</span><h2>Moralische Entscheidungen</h2><span class="cn-chevron" aria-hidden="true"></span></summary>
+                        <div class="cn-text">
+                            <p>Besonders interessante Entscheidungen entstehen beim Schutz empfindungsfähiger Informationssysteme.</p>
+                            <p>Der Spieler könnte beispielsweise zwischen wirtschaftlichem Nutzen und dem Erhalt einer möglicherweise bewussten natürlichen Struktur abwägen müssen.</p>
+                            <p>Solche Konflikte sollen nicht zwangsläufig eine einfache eindeutig richtige Lösung besitzen.</p>
+                            <p class="cn-quelle">Quelle: Info_material · Chronoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="cn-panel cn-karte" id="k-8-22-beziehungen-und-vertrauen">
+                        <summary><span class="cn-nr">8.22</span><h2>Beziehungen und Vertrauen</h2><span class="cn-chevron" aria-hidden="true"></span></summary>
+                        <div class="cn-text">
+                            <p>Chronoiden können individuelle Beziehungen zur Spielerfigur entwickeln.</p>
+                            <p>Vertrauen hängt von Entscheidungen, Kommunikation, wissenschaftlichem Umgang und der Achtung persönlicher Rechte ab.</p>
+                            <p>Einzelne Individuen können aufgrund unterschiedlicher Erfahrungen sehr verschieden auf dieselben Handlungen reagieren.</p>
+                            <p class="cn-quelle">Quelle: Info_material · Chronoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="cn-panel cn-karte" id="k-8-23-heimatplanet-als-spielgebiet">
+                        <summary><span class="cn-nr">8.23</span><h2>Heimatplanet als Spielgebiet</h2><span class="cn-chevron" aria-hidden="true"></span></summary>
+                        <div class="cn-text">
+                            <p>Seyrath bietet eigenständige Erkundungsregionen.</p>
+                            <p>Wichtige Orte sind:</p>
+                            <dl class="cn-fakten"><div><dt>Arel-Tor</dt><dd>Natürliche Ursprungsforschung und geschützte Resonanzgebiete.</dd></div><div><dt>Tiral</dt><dd>Politische Institutionen und technische Zentren.</dd></div><div><dt>Varenn</dt><dd>Historische Archive und alte Trägersysteme.</dd></div><div><dt>Oshavar</dt><dd>Geothermische und tektonisch gefährliche Gebiete.</dd></div><div><dt>Telyss</dt><dd>Mineralreiche Küsten und Gewässer.</dd></div><div><dt>Eryd</dt><dd>Hochländer, Staubstürme und spezialisierte Resonanzformen.</dd></div></dl>
+                            <p class="cn-quelle">Quelle: Info_material · Chronoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="cn-panel cn-karte" id="k-8-24-flora-und-fauna">
+                        <summary><span class="cn-nr">8.24</span><h2>Flora und Fauna</h2><span class="cn-chevron" aria-hidden="true"></span></summary>
+                        <div class="cn-text">
+                            <p>Neben den Chronoiden besitzt Seyrath organische Ökosysteme.</p>
+                            <p>Die Spielerfigur kann deren Lebensformen gesondert untersuchen.</p>
+                            <p>Die natürlichen Chronoiden werden nicht mit gewöhnlichen mineralischen Rohstoffen verwechselt, sobald ihre Bewusstseinsfähigkeit erkannt ist.</p>
+                            <p class="cn-quelle">Quelle: Info_material · Chronoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="cn-panel cn-karte" id="k-8-25-herstellung-und-ressourcen">
+                        <summary><span class="cn-nr">8.25</span><h2>Herstellung und Ressourcen</h2><span class="cn-chevron" aria-hidden="true"></span></summary>
+                        <div class="cn-text">
+                            <p>Seyraths Rohstoffe können für spezialisierte Technik verwendet werden.</p>
+                            <p>Rohstoffabbau benötigt in geschützten Regionen besondere Genehmigungen oder alternative Lösungen.</p>
+                            <p>Die Spielerfigur kann durch Forschung erfahren, welche Gebiete gefahrlos industriell genutzt werden können.</p>
+                            <p class="cn-quelle">Quelle: Info_material · Chronoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="cn-panel cn-karte" id="k-8-26-persistenz-und-speicherung">
+                        <summary><span class="cn-nr">8.26</span><h2>Persistenz und Speicherung</h2><span class="cn-chevron" aria-hidden="true"></span></summary>
+                        <div class="cn-text">
+                            <p>Chronoiden besitzen dauerhafte individuelle Identitäten.</p>
+                            <p>Ein Chronoid kann unterschiedliche technische Darstellungen oder Träger verwenden.</p>
+                            <p>Der Spielzustand muss deshalb die Identität vom jeweiligen geladenen sichtbaren Objekt trennen.</p>
+                            <p>Wichtige persistente Daten sind:</p>
+                            <ul><li>ChronoidID beziehungsweise eine geeignete dauerhafte CharacterID.</li><li>Aktueller Träger.</li><li>Zugeordnete Welt und Standort.</li><li>Bewusstseinszustand.</li><li>Zeitverarbeitungsmodus.</li><li>Energiezustand.</li><li>Schäden.</li><li>Kommunikation und Beziehungen.</li><li>Wichtige Erinnerungs- und Missionszustände.</li><li>Trägerwechselhistorie.</li><li>Politische und gesellschaftliche Zugehörigkeit.</li></ul>
+                            <p class="cn-quelle">Quelle: Info_material · Chronoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="cn-panel cn-karte" id="k-8-27-verhalten-bei-nicht-geladener-spielwelt">
+                        <summary><span class="cn-nr">8.27</span><h2>Verhalten bei nicht geladener Spielwelt</h2><span class="cn-chevron" aria-hidden="true"></span></summary>
+                        <div class="cn-text">
+                            <p>Chronoiden dürfen nicht davon abhängig sein, dass ihre sichtbaren Unreal-Objekte dauerhaft geladen bleiben.</p>
+                            <p>Relevante Zustandsänderungen können über persistente Daten, ereignisbasierte Fortschreibung und geeignete Simulationen erfasst werden.</p>
+                            <p>Die extreme subjektive Zeitverarbeitung muss nicht durch tausende oder zehntausende zusätzliche NPC-Ticks pro Spielsekunde berechnet werden.</p>
+                            <p>Für große Spielwelten sind abstrahierte Zustandsmodelle wesentlich geeigneter.</p>
+                            <p class="cn-quelle">Quelle: Info_material · Chronoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="cn-panel cn-karte" id="k-8-28-unreal-engine-integration">
+                        <summary><span class="cn-nr">8.28</span><h2>Unreal-Engine-Integration</h2><span class="cn-chevron" aria-hidden="true"></span></summary>
+                        <div class="cn-text">
+                            <p>Die konkrete technische Implementierung kann später aus eigenständigen Systemen bestehen:</p>
+                            <ul><li>Identitätsregistrierung.</li><li>Zustandsspeicherung.</li><li>Kommunikationskomponente.</li><li>Trägerzuordnung.</li><li>Energie- und Stabilitätsmodell.</li><li>Zeitverarbeitungszustände.</li><li>Forschungs- und Interaktionssystem.</li><li>Visuelle Darstellungsadapter.</li></ul>
+                            <p>Die grundlegenden Datenmodelle sollten unabhängig von einer bestimmten Actor- oder Renderingimplementierung bleiben.</p>
+                            <p class="cn-quelle">Quelle: Info_material · Chronoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="cn-panel cn-karte" id="k-8-29-sounddesign">
+                        <summary><span class="cn-nr">8.29</span><h2>Sounddesign</h2><span class="cn-chevron" aria-hidden="true"></span></summary>
+                        <div class="cn-text">
+                            <p>Chronoidische Kommunikation kann durch kurze eigens entwickelte Soundeffekte dargestellt werden.</p>
+                            <p>Geeignete Geräuschgruppen sind:</p>
+                            <ul><li>Niedrige Resonanzimpulse.</li><li>Kurze modulierte Signaltöne.</li><li>Zeitlich verschachtelte Klangmuster.</li><li>Elektrische Kopplungsgeräusche.</li><li>Langsame Archivsignale.</li><li>Beschleunigte Informationssequenzen.</li><li>Störungs- und Desynchronisationssignale.</li><li>Beruhigende Stabilisierungsklänge.</li></ul>
+                            <p>Die Soundeffekte sind technische Übersetzungen und keine notwendigen natürlichen Stimmen.</p>
+                            <p class="cn-quelle">Quelle: Info_material · Chronoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="cn-panel cn-karte" id="k-8-30-visuelle-darstellung">
+                        <summary><span class="cn-nr">8.30</span><h2>Visuelle Darstellung</h2><span class="cn-chevron" aria-hidden="true"></span></summary>
+                        <div class="cn-text">
+                            <p>Chronoiden sollen sich deutlich von humanoiden Spezies unterscheiden.</p>
+                            <p>Ihr Design verwendet mineralische Träger, kontrollierte Felderscheinungen und komplexe geometrische Signalstrukturen.</p>
+                            <p>Die sichtbaren Effekte können sich je nach Kommunikation, Energieversorgung oder Wahrnehmungszustand verändern.</p>
+                            <p>Eine starke Verarbeitungsgeschwindigkeit muss nicht zwingend als riesiger heller Effekt dargestellt werden.</p>
+                            <p class="cn-quelle">Quelle: Info_material · Chronoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="cn-panel cn-karte" id="k-8-31-langfristige-spielintegration">
+                        <summary><span class="cn-nr">8.31</span><h2>Langfristige Spielintegration</h2><span class="cn-chevron" aria-hidden="true"></span></summary>
+                        <div class="cn-text">
+                            <p>Die Chronoiden bieten eigenständige Mechaniken für:</p>
+                            <ul><li>Planetare Forschung.</li><li>Kommunikation mit fremdartiger Intelligenz.</li><li>Historische Rekonstruktion.</li><li>Forschungsfortschritt.</li><li>Diplomatie.</li><li>Trägertransport.</li><li>Medizin und Rettung.</li><li>Ressourcenethik.</li><li>Wissenschaftliche Anomalien.</li><li>Langfristige Beziehungen.</li></ul>
+                            <p class="cn-quelle">Quelle: Info_material · Chronoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="cn-panel cn-karte" id="k-8-32-grundlegende-gameplay-regel">
+                        <summary><span class="cn-nr">8.32</span><h2>Grundlegende Gameplay-Regel</h2><span class="cn-chevron" aria-hidden="true"></span></summary>
+                        <div class="cn-text">
+                            <p>Die Chronoiden müssen als eigenständige intelligente Individuen behandelt werden.</p>
+                            <p>Ihre besondere Zeitwahrnehmung erweitert Analyse, Kommunikation und Entscheidungsfindung.</p>
+                            <p>Sie darf nicht unbemerkt in unbegrenzte Zeitmanipulation, automatische Unsterblichkeit oder kostenlose Vervielfältigung von Persönlichkeiten umgewandelt werden.</p>
+                            <p class="cn-quelle">Quelle: Info_material · Chronoiden · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <section class="cn-panel cn-block cn-karussell-block" id="galerie" aria-label="Bilder">
+                    <h2 class="cn-h2">Bilder <small>6 Bilder · Bildarchiv</small></h2>
+                    <div class="bilder-karussell" data-karussell aria-roledescription="Karussell" aria-label="Bilder der Chronoiden">
+                    <div class="karussell-spur" tabindex="0" aria-label="Bilder – mit Pfeiltasten blättern">
+                        <figure class="karussell-folie" data-kategorie="Formstudien" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Formstudie 5 in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Chronoiden/gesamtdarstellung/Chronoid_design_A10.png" alt="Formstudie 5" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Formstudie 5</strong><span>Formstudien</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Formstudien" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Formstudie 6 in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Chronoiden/gesamtdarstellung/Chronoid_design_A11.png" alt="Formstudie 6" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Formstudie 6</strong><span>Formstudien</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Formstudien" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Formstudie 7 in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Chronoiden/gesamtdarstellung/Chronoid_design_A12.png" alt="Formstudie 7" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Formstudie 7</strong><span>Formstudien</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Formstudien" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Formstudie 8 in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Chronoiden/gesamtdarstellung/Chronoid_design_A13.png" alt="Formstudie 8" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Formstudie 8</strong><span>Formstudien</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Formstudien" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Formstudie 9 in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Chronoiden/gesamtdarstellung/Chronoid_design_A14.png" alt="Formstudie 9" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Formstudie 9</strong><span>Formstudien</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Formstudien" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Formstudie 10 in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Chronoiden/gesamtdarstellung/Chronoid_design_A15.png" alt="Formstudie 10" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Formstudie 10</strong><span>Formstudien</span></figcaption>
+                        </figure>
+                    </div>
+                    <div class="karussell-steuerung">
+                        <button type="button" data-karussell-schritt="-1" aria-label="Vorheriges Bild">‹</button>
+                        <div class="karussell-punkte" role="group" aria-label="Bild wählen"></div>
+                        <output class="karussell-zaehler" aria-live="polite"></output>
+                        <button type="button" data-karussell-schritt="1" aria-label="Nächstes Bild">›</button>
+                    </div>
+                </div>
+                </section>
+                    <aside class="cn-panel cn-block cn-links" aria-label="Verknüpfungen">
+                    <h2 class="cn-h2">Verknüpfungen</h2>
                     <ul>
-                        <li><a href="../Forschung/forschung.html" data-route="spezies-mental-3-forschung"><strong>Forschung</strong><span>Forschungsfelder zu den Chronoiden</span></a></li>
+                        <li><a href="../../../../himmelskoerper/planeten/details/seyrath/hauptseite/index.html" ><strong>Planetendossier Seyrath</strong><span>Heimatwelt im Planetenarchiv</span></a></li>
+                        <li><a href="../../../../himmelskoerper/sternensysteme/details/kelira-system/hauptseite/index.html" ><strong>Kelira-System</strong><span>Systemübersicht</span></a></li>
+                        <li><a href="../../../../../Men%C3%BCs/Sternenkarte/Sternenkarte.html?system=seyrath-stern" ><strong>Sternenkarte</strong><span>Kelira-System in der Karte ansehen</span></a></li>
+                        <li><a href="../Forschung/forschung.html" data-route="spezies-mental-3-forschung"><strong>Forschung</strong><span>Forschung an den Chronoiden</span></a></li>
+                        <li><a href="../../../../Forschung/Mystik%20und%20Bewusstsein/Bewusstseinsforschung/index.html" ><strong>Bewusstseinsforschung</strong><span>Forschungszweig</span></a></li>
                         <li><a href="../../../../Forschung/%C3%9Cbersicht/Forschung.html" ><strong>Forschungsarchiv</strong><span>Alle Forschungszweige</span></a></li>
-                        <li><a href="../../%C3%9Cbersichtsseite%20Mentale%20Spezies/Uebersicht.html" data-route="spezies-mental"><strong>Mentale Spezies</strong><span>Alle Spezies dieser Gruppe</span></a></li>
-                        <li><a href="../../../Spezies_%C3%BCbersicht/Spezies.html" data-route="spezies"><strong>Speziesarchiv</strong><span>Alle Gruppen</span></a></li>
-                        <li><a href="../../../../himmelskoerper/planeten/planeten.html" data-route="planeten"><strong>Planetenarchiv</strong><span>Heimatwelten im Weltenarchiv</span></a></li>
                     </ul>
                 </aside>
-                    <nav class="st-blaettern" aria-label="Hauptreiter blättern"><a href="../Unterseiten/Geschichte/geschichte.html" data-route="spezies-mental-3-geschichte">← Geschichte</a><a href="../Forschung/forschung.html" data-route="spezies-mental-3-forschung">Forschung →</a></nav>
+                    <nav class="cn-blaettern" aria-label="Hauptreiter blättern"><a href="../Unterseiten/Geschichte/geschichte.html" data-route="spezies-mental-3-geschichte">← Geschichte</a><a href="../Forschung/forschung.html" data-route="spezies-mental-3-forschung">Forschung →</a></nav>
                 </div>
-                <nav class="st-panel st-sprung" data-st-sprung aria-label="Kapitel dieser Seite">
-                    <p class="st-kicker">Kapitel</p>
-                    <button type="button" class="st-klappen" data-st-klappen aria-pressed="false">Alle aufklappen</button>
-                    <a href="#noch-offen"><span class="st-nr">…</span>Spielintegration</a>
+                <nav class="cn-panel cn-sprung" data-cn-sprung aria-label="Kapitel dieser Seite">
+                    <p class="cn-kicker">Kapitel</p>
+                    <button type="button" class="cn-klappen" data-cn-klappen aria-pressed="false">Alle aufklappen</button>
+                    <a href="#k-8-1-grundlegende-spielrolle"><span class="cn-nr">8.1</span>Grundlegende Spielrolle</a>
+                    <a href="#k-8-2-erscheinungsformen-im-spiel"><span class="cn-nr">8.2</span>Erscheinungsformen im Spiel</a>
+                    <a href="#k-8-3-erste-begegnung"><span class="cn-nr">8.3</span>Erste Begegnung</a>
+                    <a href="#k-8-4-wissenschaftliche-erkundung"><span class="cn-nr">8.4</span>Wissenschaftliche Erkundung</a>
+                    <a href="#k-8-5-kommunikationsmechanik"><span class="cn-nr">8.5</span>Kommunikationsmechanik</a>
+                    <a href="#k-8-6-unterschiedliche-zeitwahrnehmung"><span class="cn-nr">8.6</span>Unterschiedliche Zeitwahrnehmung</a>
+                    <a href="#k-8-7-tiefenruhe"><span class="cn-nr">8.7</span>Tiefenruhe</a>
+                    <a href="#k-8-10-technologische-belohnungen"><span class="cn-nr">8.10</span>Technologische Belohnungen</a>
+                    <a href="#k-8-11-herstellung"><span class="cn-nr">8.11</span>Herstellung</a>
+                    <a href="#k-8-12-resonanzmedizin-im-gameplay"><span class="cn-nr">8.12</span>Resonanzmedizin im Gameplay</a>
+                    <a href="#k-8-13-rettungsmissionen"><span class="cn-nr">8.13</span>Rettungsmissionen</a>
+                    <a href="#k-8-14-historische-missionen"><span class="cn-nr">8.14</span>Historische Missionen</a>
+                    <a href="#k-8-15-gesellschaftliche-missionen"><span class="cn-nr">8.15</span>Gesellschaftliche Missionen</a>
+                    <a href="#k-8-16-diplomatische-missionen"><span class="cn-nr">8.16</span>Diplomatische Missionen</a>
+                    <a href="#k-8-17-raumtransport"><span class="cn-nr">8.17</span>Raumtransport</a>
+                    <a href="#k-8-18-individuelle-npcs"><span class="cn-nr">8.18</span>Individuelle NPCs</a>
+                    <a href="#k-8-19-kampf"><span class="cn-nr">8.19</span>Kampf</a>
+                    <a href="#k-8-20-gefahren"><span class="cn-nr">8.20</span>Gefahren</a>
+                    <a href="#k-8-21-moralische-entscheidungen"><span class="cn-nr">8.21</span>Moralische Entscheidungen</a>
+                    <a href="#k-8-22-beziehungen-und-vertrauen"><span class="cn-nr">8.22</span>Beziehungen und Vertrauen</a>
+                    <a href="#k-8-23-heimatplanet-als-spielgebiet"><span class="cn-nr">8.23</span>Heimatplanet als Spielgebiet</a>
+                    <a href="#k-8-24-flora-und-fauna"><span class="cn-nr">8.24</span>Flora und Fauna</a>
+                    <a href="#k-8-25-herstellung-und-ressourcen"><span class="cn-nr">8.25</span>Herstellung und Ressourcen</a>
+                    <a href="#k-8-26-persistenz-und-speicherung"><span class="cn-nr">8.26</span>Persistenz und Speicherung</a>
+                    <a href="#k-8-27-verhalten-bei-nicht-geladener-spielwelt"><span class="cn-nr">8.27</span>Verhalten bei nicht geladener Spielwelt</a>
+                    <a href="#k-8-28-unreal-engine-integration"><span class="cn-nr">8.28</span>Unreal-Engine-Integration</a>
+                    <a href="#k-8-29-sounddesign"><span class="cn-nr">8.29</span>Sounddesign</a>
+                    <a href="#k-8-30-visuelle-darstellung"><span class="cn-nr">8.30</span>Visuelle Darstellung</a>
+                    <a href="#k-8-31-langfristige-spielintegration"><span class="cn-nr">8.31</span>Langfristige Spielintegration</a>
+                    <a href="#k-8-32-grundlegende-gameplay-regel"><span class="cn-nr">8.32</span>Grundlegende Gameplay-Regel</a>
+                    <a href="#galerie"><span class="cn-nr">▣</span>Bilder</a>
                 </nav>
             </div>
-            <dialog class="st-zoom" aria-label="Bild in Großansicht"><div class="controls"><button class="control" type="button" data-step="-1" aria-label="Vorheriges Bild">←</button><output aria-live="polite"></output><button class="control" type="button" data-step="1" aria-label="Nächstes Bild">→</button></div><form method="dialog"><button class="control">Schließen</button></form><img alt=""></dialog>
+            <dialog class="cn-zoom" aria-label="Bild in Großansicht"><div class="controls"><button class="control" type="button" data-step="-1" aria-label="Vorheriges Bild">←</button><output aria-live="polite"></output><button class="control" type="button" data-step="1" aria-label="Nächstes Bild">→</button></div><form method="dialog"><button class="control">Schließen</button></form><img alt=""></dialog>
         </main>
     </div>
 </body>

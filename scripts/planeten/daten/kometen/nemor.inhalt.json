@@ -1,0 +1,536 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Nemor",
+  "genitiv": "von Nemor",
+  "dossierName": "Nemor-Dossier",
+  "klasse": "Kometenkern",
+  "intro": "Nemor ist ein benannter eisreicher Kleinkörper aus der äußeren Region des Teryn-Systems. Seine Bahnparameter sind Modellwerte für die Sternenkarte. Nemor umkreist Teryn in 24 AE Abstand und braucht für einen Umlauf 133,1 Jahre.",
+  "globusDaten": {
+    "planet": "nemor",
+    "klasse": "Eis",
+    "radius": 72000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=teryn-stern&objekt=teryn-nemor",
+  "grunddaten": [
+    [
+      "System-ID",
+      "teryn-nemor"
+    ],
+    [
+      "Archiv-ID",
+      "AP-TERYN-NEMOR"
+    ],
+    [
+      "Typ",
+      "Kometenkern"
+    ],
+    [
+      "Sternsystem",
+      "Teryn-System"
+    ],
+    [
+      "Zentralkörper",
+      "Teryn"
+    ],
+    [
+      "Große Halbachse",
+      "24 AE"
+    ],
+    [
+      "Umlaufzeit",
+      "133,1 Jahre"
+    ],
+    [
+      "Durchmesser",
+      "144 km"
+    ],
+    [
+      "Masse",
+      "5,97 · 10^16 kg"
+    ],
+    [
+      "Schwerkraft",
+      "0,08 cm/s²"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -231 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Teryn-System"
+    ],
+    [
+      "Zentralstern",
+      "Teryn",
+      "inhalte/himmelskoerper/sterne/details/teryn/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "24 AE"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Nemor im Teryn-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=teryn-stern&objekt=teryn-nemor",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Teryn",
+      "href": "inhalte/himmelskoerper/sterne/details/teryn/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Solitiden",
+      "titel": "Iskara",
+      "href": "inhalte/himmelskoerper/planeten/details/iskara/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Solitiden",
+      "href": "inhalte/spezies/Mentale Spezies/Solitiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Teryn-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=teryn-stern&objekt=teryn-nemor"
+    },
+    {
+      "titel": "Speziesdossier Solitiden",
+      "href": "inhalte/spezies/Mentale Spezies/Solitiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#08090a",
+      "tiefe": "#111416",
+      "akzent": "#c0cfdc",
+      "sand": "#c5cabb",
+      "moos": "#9fc8b1",
+      "ozean": "#7faed4",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#47515b"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Umlaufbahn"
+      ],
+      [
+        "Hülle",
+        "Schweif"
+      ],
+      [
+        "Hülle",
+        "Koma"
+      ],
+      [
+        "Kern",
+        "Kern"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Kern": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Kern von Nemor.",
+      "abschnitte": [
+        {
+          "titel": "Kometenkern",
+          "text": [
+            "Der Kern von Nemor misst rund 144 km und besteht aus einem lockeren Gemenge aus Eis, Staub und Gestein."
+          ],
+          "schichten": [
+            [
+              "Staubkruste",
+              "Dunkle, kohlenstoffreiche Oberfläche"
+            ],
+            [
+              "Eis-Staub-Gemisch",
+              "Wassereis, Kohlendioxid und Staub"
+            ],
+            [
+              "Kern",
+              "Lockeres Eis-Gestein-Gemenge"
+            ]
+          ]
+        }
+      ]
+    },
+    "Koma": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Koma von Nemor.",
+      "abschnitte": [
+        {
+          "titel": "Mögliche Koma",
+          "text": [
+            "Auf Nemors modellierter Bahn bleibt der Kern weit vom Stern entfernt. Eine dauerhafte Koma ist nicht belegt."
+          ]
+        }
+      ]
+    },
+    "Schweif": {
+      "gruppe": "Natur",
+      "icon": "☄",
+      "intro": "Schweif von Nemor.",
+      "abschnitte": [
+        {
+          "titel": "Aktivität",
+          "text": [
+            "Ein Schweif wurde im Systemmodell nicht angesetzt. Schwache Ausgasung besonders flüchtiger Stoffe bleibt eine offene Möglichkeit."
+          ]
+        }
+      ]
+    },
+    "Umlaufbahn": {
+      "gruppe": "Wissenschaft",
+      "icon": "◌",
+      "intro": "Umlaufbahn von Nemor.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Teryn"
+            ],
+            [
+              "Große Halbachse",
+              "24 AE (3.590,4 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,22"
+            ],
+            [
+              "Bahnneigung",
+              "9,5°"
+            ],
+            [
+              "Umlaufzeit",
+              "133,1 Jahre"
+            ],
+            [
+              "Einstrahlung",
+              "0,001-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Sternnächster und fernster Punkt",
+          "daten": [
+            [
+              "Perihel",
+              "18,72 AE"
+            ],
+            [
+              "Aphel",
+              "29,28 AE"
+            ]
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Nemor auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Nemor",
+          "text": [
+            "Nemor ist ein benannter eisreicher Kleinkörper aus der äußeren Region des Teryn-Systems. Seine Bahnparameter sind Modellwerte für die Sternenkarte.",
+            "Nemor umkreist Teryn in 24 AE Abstand und braucht für einen Umlauf 133,1 Jahre."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Kometenkern"
+            ],
+            [
+              "Sternsystem",
+              "Teryn-System"
+            ],
+            [
+              "Zentralkörper",
+              "Teryn"
+            ],
+            [
+              "Große Halbachse",
+              "24 AE"
+            ],
+            [
+              "Umlaufzeit",
+              "133,1 Jahre"
+            ],
+            [
+              "Durchmesser",
+              "144 km"
+            ],
+            [
+              "Masse",
+              "5,97 · 10^16 kg"
+            ],
+            [
+              "Schwerkraft",
+              "0,08 cm/s²"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -231 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Iskara",
+          "text": [
+            "Das Teryn-System ist die Heimat der Solitiden: Ihr Planet Iskara umkreist Teryn."
+          ],
+          "verweise": [
+            [
+              "Iskara",
+              "inhalte/himmelskoerper/planeten/details/iskara/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Solitiden",
+              "inhalte/spezies/Mentale Spezies/Solitiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Nemor im Teryn-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Teryn"
+            ],
+            [
+              "Große Halbachse",
+              "24 AE (3.590,4 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,22"
+            ],
+            [
+              "Bahnneigung",
+              "9,5°"
+            ],
+            [
+              "Umlaufzeit",
+              "133,1 Jahre"
+            ],
+            [
+              "Einstrahlung",
+              "0,001-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Teryn · Stern",
+              "Orangefarbener Hauptreihenstern (K4 V)"
+            ],
+            [
+              "Dareth · 0,15 AE",
+              "Heißer Gesteinsplanet"
+            ],
+            [
+              "Nura · 0,34 AE",
+              "Heißer terrestrischer Planet"
+            ],
+            [
+              "Iskara · 0,61 AE",
+              "Bewohnter terrestrischer Silikatplanet"
+            ],
+            [
+              "Veldros · 1,08 AE",
+              "Kalte Supererde"
+            ],
+            [
+              "Saevor · 2,84 AE",
+              "Gasriese"
+            ],
+            [
+              "Ynderal · 5,9 AE",
+              "Eisreicher Riesenplanet"
+            ],
+            [
+              "Veylan-Asteroidengürtel · 1,7–2 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußere Kleinkörperregion · 14–38 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Teryn",
+              "inhalte/himmelskoerper/sterne/details/teryn/hauptseite/index.html"
+            ],
+            [
+              "Dareth",
+              "inhalte/himmelskoerper/planeten/details/dareth/hauptseite/index.html"
+            ],
+            [
+              "Nura",
+              "inhalte/himmelskoerper/planeten/details/nura/hauptseite/index.html"
+            ],
+            [
+              "Iskara",
+              "inhalte/himmelskoerper/planeten/details/iskara/hauptseite/index.html"
+            ],
+            [
+              "Veldros",
+              "inhalte/himmelskoerper/planeten/details/veldros/hauptseite/index.html"
+            ],
+            [
+              "Saevor",
+              "inhalte/himmelskoerper/planeten/details/saevor/hauptseite/index.html"
+            ],
+            [
+              "Ynderal",
+              "inhalte/himmelskoerper/planeten/details/ynderal/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Nemor.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "72 km"
+            ],
+            [
+              "Masse",
+              "5,97 · 10^16 kg"
+            ],
+            [
+              "Mittlere Dichte",
+              "0,04 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "0 m/s² (0 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "0,01 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Nemor.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Nemor stammt aus den kalten Außenbereichen des Teryn-Systems und wurde auf seine heutige, langgestreckte Bahn gelenkt."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Nemor.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Woher stammt der Komet genau?",
+            "Wie lange übersteht sein Kern noch die Annäherungen an den Stern?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Nemor ist mit allen Bahndaten im Teryn-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=teryn-stern&objekt=teryn-nemor"
+            ]
+          ]
+        },
+        {
+          "titel": "Untersuchung im Teryn-System",
+          "text": [
+            "Welche Eisarten bleiben auf Nemors kalter Bahn erhalten und lässt sich schwache Aktivität nahe dem Perihel messen?"
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Nemor.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Nemor ist ein benannter eisreicher Kleinkörper aus der äußeren Region des Teryn-Systems. Seine Bahnparameter sind Modellwerte für die Sternenkarte."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Nemor.",
+      "abschnitte": [
+        {
+          "titel": "Illustrationsmotiv",
+          "bild": true,
+          "bildtext": "Illustration anhand eines vorhandenen Motivs. Sie zeigt den Himmelskörpertyp und keine bestätigten Oberflächendetails."
+        }
+      ]
+    }
+  }
+}

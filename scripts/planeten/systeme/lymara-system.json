@@ -1,50 +1,262 @@
 {
   "systemName": "Narev-System",
   "praefix": "lymara-",
-  "lage": { "entfernungLj": 21, "richtung": [0.75, 0.05, 0.66] },
+  "lage": {
+    "entfernungLj": 21,
+    "richtung": [
+      0.75,
+      0.05,
+      0.66
+    ]
+  },
   "einzelstern": true,
   "stern": {
-    "id": "lymara-stern", "name": "Narev", "typ": "Orangefarbener Zwerg (K0 V)",
-    "masseSonne": 0.86, "radiusSonne": 0.82, "leuchtkraftSonne": 0.55, "temperaturK": 5200, "alterMrd": 4.3,
-    "farbe": [1, 0.74, 0.46], "emissionsfarbe": [1, 0.76, 0.5], "emission": 1.1,
-    "bild": { "art": "sterne", "suche": "orange|K-Stern|Hauptreihe|gelb" },
+    "id": "lymara-stern",
+    "name": "Narev",
+    "typ": "Orangefarbener Zwerg (K0 V)",
+    "masseSonne": 0.86,
+    "radiusSonne": 0.82,
+    "leuchtkraftSonne": 0.55,
+    "temperaturK": 5200,
+    "alterMrd": 4.3,
+    "farbe": [
+      1,
+      0.74,
+      0.46
+    ],
+    "emissionsfarbe": [
+      1,
+      0.76,
+      0.5
+    ],
+    "emission": 1.1,
+    "bild": {
+      "art": "sterne",
+      "suche": "orange|K-Stern|Hauptreihe|gelb"
+    },
     "beschreibung": "Narev ist ein orangefarbener Hauptreihenstern der Spektralklasse K0 V, Heimatstern der Plasmoiden. Ein ruhiger Einzelstern mit warmem, goldorangem Licht."
   },
   "koerper": [
-    { "id": "lymara-narev-i", "name": "Narev I", "typ": "Gesteinsplanet", "um": "lymara-stern",
-      "aAE": 0.33, "e": 0.05, "i": 2.2, "knoten": 30, "peri": 40, "phase": 60, "radiusKm": 4400, "masseErde": 0.35, "albedo": 0.12, "farbe": [0.6, 0.46, 0.38],
-      "bild": { "art": "planeten", "suche": "Kernloser|Silikatplanet|Einschlagbecken" },
-      "beschreibung": "Narev I ist eine heiße, luftlose Gesteinswelt mit großen Einschlagbecken." },
-    { "id": "lymara-planet", "name": "Lymara", "typ": "Ozeanplanet", "um": "lymara-stern",
-      "aAE": 0.852, "e": 0.02, "i": 0, "knoten": 180, "peri": 70, "phase": 40, "radiusKm": 5990, "masseErde": 0.78, "albedo": 0.3, "zielTemperaturC": 19, "farbe": [0.3, 0.6, 0.78],
-      "bild": { "art": "planeten", "slug": "biolumineszente-ozeanwelt-im-all" },
-      "beschreibung": "Lymara ist die wasserreiche Heimatwelt der Plasmoiden mit Flusslandschaften, Seen, Lagunen, Höhlengewässern und nebelreichen Hochländern." },
-    { "id": "lymara-ithe", "name": "Ithe", "typ": "Mond", "um": "lymara-planet",
-      "periodeTage": 18, "e": 0.03, "i": 4, "knoten": 90, "peri": 0, "phase": 150, "radiusKm": 870, "masseErde": 0.004, "farbe": [0.72, 0.72, 0.76],
-      "bild": { "art": "monde", "suche": "Mond|Krater" },
-      "beschreibung": "Ithe ist der einzige Mond Lymaras, ein heller Eis-Gesteins-Mond. Seine schwachen Gezeiten bewegen die Lagunen und Deltas." },
-    { "id": "lymara-narev-iii", "name": "Narev III", "typ": "Gasriese", "um": "lymara-stern",
-      "aAE": 2.9, "e": 0.04, "i": 1.5, "knoten": 290, "peri": 150, "phase": 260, "radiusKm": 60000, "masseErde": 110, "albedo": 0.4, "farbe": [0.66, 0.74, 0.86],
-      "bild": { "art": "planeten", "suche": "blauen Wolken|Geschichteter|Kompakter Indigo|Gasriese" },
-      "beschreibung": "Narev III ist ein blaugrauer Gasriese mit einem Drittel Jupitermasse und mehreren Eismonden." },
-    { "id": "lymara-nebelguertel", "name": "Nebelgürtel", "typ": "Asteroidengürtel", "ringUm": "lymara-stern",
-      "ringeAE": [1.5, 1.7, 1.9, 2.1, 2.3], "anzahl": 260, "groesseKm": 380, "mindestPx": 6, "farbe": [0.58, 0.6, 0.62],
-      "bild": { "art": "sternensysteme", "suche": "Asteroidengürtel" },
-      "beschreibung": "Der Nebelgürtel zwischen 1,5 und 2,3 AE besteht aus wasser- und tonmineralreichen Asteroiden." },
-    { "id": "lymara-narev-iv", "name": "Narev IV", "typ": "Eisriese", "um": "lymara-stern",
-      "aAE": 8.2, "e": 0.05, "i": 2.4, "knoten": 60, "peri": 220, "phase": 30, "radiusKm": 24800, "masseErde": 16, "albedo": 0.3, "farbe": [0.4, 0.6, 0.82],
-      "bild": { "art": "planeten", "suche": "Eisriese|Neptun|Methan" },
-      "beschreibung": "Narev IV ist ein kalter Eisriese am Rand des Systems." },
-    { "id": "lymara-glimmspur", "name": "Glimmspur", "typ": "Komet", "um": "lymara-stern", "anomalie": true,
-      "aAE": 9.5, "e": 0.91, "i": 27, "knoten": 140, "peri": 330, "phase": 172, "radiusKm": 5, "masseErde": 0, "farbe": [0.56, 0.82, 0.86],
-      "bild": { "art": "kometen", "suche": "grünlich|blau|Schweif" },
-      "beschreibung": "Ein periodischer Komet (rund 31 Jahre), dessen grünlich leuchtender Schweif in den Nebelnächten Lymaras zu sehen ist." },
-    { "id": "lymara-schwammstein", "name": "Schwammstein", "typ": "Asteroid", "um": "lymara-stern", "anomalie": true,
-      "aAE": 1.88, "e": 0.11, "i": 8, "knoten": 250, "peri": 70, "phase": 300, "radiusKm": 40, "masseErde": 0, "farbe": [0.6, 0.6, 0.6],
-      "bild": { "art": "asteroiden", "suche": "Einschlagbecken|tiefem|porös|Asteroid" },
-      "beschreibung": "Ein poröser, extrem wasserreicher Asteroid, der beim Annähern an Narev feine Dampffahnen abgibt – halb Asteroid, halb Komet." },
-    { "id": "lymara-kometengebiet", "name": "Äußeres Kometengebiet", "typ": "Kometengebiet", "ringUm": "lymara-stern",
-      "ringeAE": [32, 39, 46], "anzahl": 220, "groesseKm": 150, "mindestPx": 4.5, "farbe": [0.52, 0.7, 0.86],
-      "beschreibung": "Ein ferner Gürtel aus Eiskörpern zwischen 32 und 46 AE." }
+    {
+      "id": "lymara-narev-i",
+      "name": "Narev I",
+      "typ": "Gesteinsplanet",
+      "um": "lymara-stern",
+      "aAE": 0.33,
+      "e": 0.05,
+      "i": 2.2,
+      "knoten": 30,
+      "peri": 40,
+      "phase": 60,
+      "radiusKm": 4400,
+      "masseErde": 0.35,
+      "albedo": 0.12,
+      "farbe": [
+        0.6,
+        0.46,
+        0.38
+      ],
+      "bild": {
+        "art": "planeten",
+        "suche": "Kernloser|Silikatplanet|Einschlagbecken"
+      },
+      "beschreibung": "Narev I ist eine heiße, luftlose Gesteinswelt mit großen Einschlagbecken."
+    },
+    {
+      "id": "lymara-planet",
+      "name": "Lymara",
+      "typ": "Ozeanplanet",
+      "um": "lymara-stern",
+      "aAE": 0.852,
+      "e": 0.02,
+      "i": 0,
+      "knoten": 180,
+      "peri": 70,
+      "phase": 40,
+      "radiusKm": 5990,
+      "masseErde": 0.78,
+      "albedo": 0.3,
+      "zielTemperaturC": 19,
+      "farbe": [
+        0.3,
+        0.6,
+        0.78
+      ],
+      "bild": {
+        "art": "planeten",
+        "slug": "biolumineszente-ozeanwelt-im-all"
+      },
+      "beschreibung": "Lymara ist die wasserreiche Heimatwelt der Plasmoiden mit Flusslandschaften, Seen, Lagunen, Höhlengewässern und nebelreichen Hochländern."
+    },
+    {
+      "id": "lymara-ithe",
+      "name": "Ithe",
+      "typ": "Mond",
+      "um": "lymara-planet",
+      "periodeTage": 18,
+      "e": 0.03,
+      "i": 4,
+      "knoten": 90,
+      "peri": 0,
+      "phase": 150,
+      "radiusKm": 870,
+      "masseErde": 0.004,
+      "farbe": [
+        0.72,
+        0.72,
+        0.76
+      ],
+      "bild": {
+        "art": "monde",
+        "suche": "Mond|Krater"
+      },
+      "beschreibung": "Ithe ist der einzige Mond Lymaras, ein heller Eis-Gesteins-Mond. Seine schwachen Gezeiten bewegen die Lagunen und Deltas."
+    },
+    {
+      "id": "lymara-narev-iii",
+      "name": "Narev III",
+      "typ": "Gasriese",
+      "um": "lymara-stern",
+      "aAE": 2.9,
+      "e": 0.04,
+      "i": 1.5,
+      "knoten": 290,
+      "peri": 150,
+      "phase": 260,
+      "radiusKm": 60000,
+      "masseErde": 110,
+      "albedo": 0.4,
+      "farbe": [
+        0.66,
+        0.74,
+        0.86
+      ],
+      "bild": {
+        "art": "planeten",
+        "suche": "blauen Wolken|Geschichteter|Kompakter Indigo|Gasriese"
+      },
+      "beschreibung": "Narev III ist ein blaugrauer Gasriese mit einem Drittel Jupitermasse und mehreren Eismonden."
+    },
+    {
+      "id": "lymara-nebelguertel",
+      "name": "Nebelgürtel",
+      "typ": "Asteroidengürtel",
+      "ringUm": "lymara-stern",
+      "ringeAE": [
+        1.5,
+        1.7,
+        1.9,
+        2.1,
+        2.3
+      ],
+      "anzahl": 260,
+      "groesseKm": 380,
+      "mindestPx": 6,
+      "farbe": [
+        0.58,
+        0.6,
+        0.62
+      ],
+      "bild": {
+        "art": "sternensysteme",
+        "suche": "Asteroidengürtel"
+      },
+      "beschreibung": "Der Nebelgürtel zwischen 1,5 und 2,3 AE besteht aus wasser- und tonmineralreichen Asteroiden."
+    },
+    {
+      "id": "lymara-narev-iv",
+      "name": "Narev IV",
+      "typ": "Eisriese",
+      "um": "lymara-stern",
+      "aAE": 8.2,
+      "e": 0.05,
+      "i": 2.4,
+      "knoten": 60,
+      "peri": 220,
+      "phase": 30,
+      "radiusKm": 24800,
+      "masseErde": 16,
+      "albedo": 0.3,
+      "farbe": [
+        0.4,
+        0.6,
+        0.82
+      ],
+      "bild": {
+        "art": "planeten",
+        "suche": "Eisriese|Neptun|Methan"
+      },
+      "beschreibung": "Narev IV ist ein kalter Eisriese am Rand des Systems."
+    },
+    {
+      "id": "lymara-glimmspur",
+      "name": "Glimmspur",
+      "typ": "Komet",
+      "um": "lymara-stern",
+      "anomalie": true,
+      "aAE": 9.5,
+      "e": 0.91,
+      "i": 27,
+      "knoten": 140,
+      "peri": 330,
+      "phase": 172,
+      "radiusKm": 5,
+      "masseErde": 0,
+      "farbe": [
+        0.56,
+        0.82,
+        0.86
+      ],
+      "bild": {
+        "art": "kometen",
+        "suche": "grünlich|blau|Schweif"
+      },
+      "beschreibung": "Ein periodischer Komet (rund 31 Jahre), dessen grünlich leuchtender Schweif in den Nebelnächten Lymaras zu sehen ist."
+    },
+    {
+      "id": "lymara-schwammstein",
+      "name": "Schwammstein",
+      "typ": "Asteroid",
+      "um": "lymara-stern",
+      "anomalie": true,
+      "aAE": 1.88,
+      "e": 0.11,
+      "i": 8,
+      "knoten": 250,
+      "peri": 70,
+      "phase": 300,
+      "radiusKm": 40,
+      "masseErde": 0,
+      "farbe": [
+        0.6,
+        0.6,
+        0.6
+      ],
+      "bild": {
+        "art": "asteroiden",
+        "suche": "Einschlagbecken|tiefem|porös|Asteroid"
+      },
+      "beschreibung": "Ein poröser, extrem wasserreicher Asteroid, der beim Annähern an Narev feine Dampffahnen abgibt – halb Asteroid, halb Komet."
+    },
+    {
+      "id": "lymara-kometengebiet",
+      "name": "Aelynkal-Kometenwolke",
+      "typ": "Kometengebiet",
+      "ringUm": "lymara-stern",
+      "ringeAE": [
+        32,
+        39,
+        46
+      ],
+      "anzahl": 220,
+      "groesseKm": 150,
+      "mindestPx": 4.5,
+      "farbe": [
+        0.52,
+        0.7,
+        0.86
+      ],
+      "beschreibung": "Ein ferner Gürtel aus Eiskörpern zwischen 32 und 46 AE."
+    }
   ]
 }

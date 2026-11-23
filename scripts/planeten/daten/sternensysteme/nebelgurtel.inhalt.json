@@ -1,0 +1,475 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Nebelgürtel",
+  "genitiv": "von Nebelgürtel",
+  "dossierName": "Nebelgürtel-Dossier",
+  "klasse": "Asteroidengürtel",
+  "intro": "Der Nebelgürtel zwischen 1,5 und 2,3 AE besteht aus wasser- und tonmineralreichen Asteroiden. Nebelgürtel umgibt Narev im Narev-System.",
+  "globusDaten": {
+    "planet": "delyrons-ferner-asteroidengurtel",
+    "klasse": "Gestein",
+    "radius": 1000000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=lymara-stern&objekt=lymara-nebelguertel",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-30DD062014"
+    ],
+    [
+      "Typ",
+      "Asteroidengürtel"
+    ],
+    [
+      "Sternsystem",
+      "Narev-System"
+    ],
+    [
+      "Zentralkörper",
+      "Narev"
+    ],
+    [
+      "Ausdehnung",
+      "1,5–2,3 AE"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Narev-System"
+    ],
+    [
+      "Zentralstern",
+      "Narev",
+      "inhalte/himmelskoerper/sterne/details/narev/hauptseite/index.html"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Nebelgürtel im Narev-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=lymara-stern&objekt=lymara-nebelguertel",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Narev",
+      "href": "inhalte/himmelskoerper/sterne/details/narev/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Plasmoiden",
+      "titel": "Lymara",
+      "href": "inhalte/himmelskoerper/planeten/details/lymara/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Plasmoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Plasmoiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Narev-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=lymara-stern&objekt=lymara-nebelguertel"
+    },
+    {
+      "titel": "Speziesdossier Plasmoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Plasmoiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#070808",
+      "tiefe": "#101111",
+      "akzent": "#b9bdc0",
+      "sand": "#bfbaa8",
+      "moos": "#98b399",
+      "ozean": "#7a9bb1",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#434547"
+    },
+    "schichten": [
+      [
+        "Lage",
+        "Bahnen"
+      ],
+      [
+        "System",
+        "Planeten"
+      ],
+      [
+        "Dynamik",
+        "Stabilität"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Zentralsterne": {
+      "gruppe": "Wissenschaft",
+      "icon": "✦",
+      "intro": "Zentralsterne von Nebelgürtel.",
+      "abschnitte": [
+        {
+          "titel": "Narev",
+          "text": [
+            "Narev ist ein orangefarbener Hauptreihenstern der Spektralklasse K0 V, Heimatstern der Plasmoiden. Ein ruhiger Einzelstern mit warmem, goldorangem Licht."
+          ],
+          "verweise": [
+            [
+              "Narev",
+              "inhalte/himmelskoerper/sterne/details/narev/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Planeten": {
+      "gruppe": "Wissenschaft",
+      "icon": "◍",
+      "intro": "Planeten von Nebelgürtel.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Narev · Stern",
+              "Orangefarbener Zwerg (K0 V)"
+            ],
+            [
+              "Narev I · 0,33 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Lymara · 0,85 AE",
+              "Ozeanplanet"
+            ],
+            [
+              "Narev III · 2,9 AE",
+              "Gasriese"
+            ],
+            [
+              "Narev IV · 8,2 AE",
+              "Eisriese"
+            ],
+            [
+              "Nebelgürtel · 1,5–2,3 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 32–46 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Narev",
+              "inhalte/himmelskoerper/sterne/details/narev/hauptseite/index.html"
+            ],
+            [
+              "Narev I",
+              "inhalte/himmelskoerper/planeten/details/narev-i/hauptseite/index.html"
+            ],
+            [
+              "Lymara",
+              "inhalte/himmelskoerper/planeten/details/lymara/hauptseite/index.html"
+            ],
+            [
+              "Narev III",
+              "inhalte/himmelskoerper/planeten/details/narev-iii/hauptseite/index.html"
+            ],
+            [
+              "Narev IV",
+              "inhalte/himmelskoerper/planeten/details/narev-iv/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Bahnen": {
+      "gruppe": "Wissenschaft",
+      "icon": "◌",
+      "intro": "Bahnen von Nebelgürtel.",
+      "abschnitte": [
+        {
+          "titel": "Lage",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Narev"
+            ],
+            [
+              "Ausdehnung",
+              "1,5–2,3 AE"
+            ]
+          ]
+        }
+      ]
+    },
+    "Stabilität": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚖",
+      "intro": "Stabilität von Nebelgürtel.",
+      "abschnitte": [
+        {
+          "titel": "Stabilität",
+          "text": [
+            "Die Brocken von Nebelgürtel bewegen sich auf stabilen Bahnen zwischen den Planeten; Resonanzen mit den großen Planeten formen die Ränder des Gebiets."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Nebelgürtel auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Nebelgürtel",
+          "text": [
+            "Der Nebelgürtel zwischen 1,5 und 2,3 AE besteht aus wasser- und tonmineralreichen Asteroiden.",
+            "Nebelgürtel umgibt Narev im Narev-System."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Asteroidengürtel"
+            ],
+            [
+              "Sternsystem",
+              "Narev-System"
+            ],
+            [
+              "Zentralkörper",
+              "Narev"
+            ],
+            [
+              "Ausdehnung",
+              "1,5–2,3 AE"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Lymara",
+          "text": [
+            "Das Narev-System ist die Heimat der Plasmoiden: Ihr Planet Lymara umkreist Narev."
+          ],
+          "verweise": [
+            [
+              "Lymara",
+              "inhalte/himmelskoerper/planeten/details/lymara/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Plasmoiden",
+              "inhalte/spezies/Biologische Spezies/Plasmoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Nebelgürtel im Narev-System.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Narev · Stern",
+              "Orangefarbener Zwerg (K0 V)"
+            ],
+            [
+              "Narev I · 0,33 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Lymara · 0,85 AE",
+              "Ozeanplanet"
+            ],
+            [
+              "Narev III · 2,9 AE",
+              "Gasriese"
+            ],
+            [
+              "Narev IV · 8,2 AE",
+              "Eisriese"
+            ],
+            [
+              "Nebelgürtel · 1,5–2,3 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 32–46 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Narev",
+              "inhalte/himmelskoerper/sterne/details/narev/hauptseite/index.html"
+            ],
+            [
+              "Narev I",
+              "inhalte/himmelskoerper/planeten/details/narev-i/hauptseite/index.html"
+            ],
+            [
+              "Lymara",
+              "inhalte/himmelskoerper/planeten/details/lymara/hauptseite/index.html"
+            ],
+            [
+              "Narev III",
+              "inhalte/himmelskoerper/planeten/details/narev-iii/hauptseite/index.html"
+            ],
+            [
+              "Narev IV",
+              "inhalte/himmelskoerper/planeten/details/narev-iv/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Umgebung": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Umgebung von Nebelgürtel.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Narev · Stern",
+              "Orangefarbener Zwerg (K0 V)"
+            ],
+            [
+              "Narev I · 0,33 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Lymara · 0,85 AE",
+              "Ozeanplanet"
+            ],
+            [
+              "Narev III · 2,9 AE",
+              "Gasriese"
+            ],
+            [
+              "Narev IV · 8,2 AE",
+              "Eisriese"
+            ],
+            [
+              "Nebelgürtel · 1,5–2,3 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 32–46 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Narev",
+              "inhalte/himmelskoerper/sterne/details/narev/hauptseite/index.html"
+            ],
+            [
+              "Narev I",
+              "inhalte/himmelskoerper/planeten/details/narev-i/hauptseite/index.html"
+            ],
+            [
+              "Lymara",
+              "inhalte/himmelskoerper/planeten/details/lymara/hauptseite/index.html"
+            ],
+            [
+              "Narev III",
+              "inhalte/himmelskoerper/planeten/details/narev-iii/hauptseite/index.html"
+            ],
+            [
+              "Narev IV",
+              "inhalte/himmelskoerper/planeten/details/narev-iv/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Nebelgürtel.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Nebelgürtel besteht aus Material, das sich bei der Entstehung des Narev-Systems nicht zu einem Planeten vereinte."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Nebelgürtel.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Wie viel Masse enthält das Gebiet insgesamt?",
+            "Welche Resonanzen formen seine Ränder?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Nebelgürtel ist mit allen Bahndaten im Narev-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=lymara-stern&objekt=lymara-nebelguertel"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Nebelgürtel.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Der Nebelgürtel zwischen 1,5 und 2,3 AE besteht aus wasser- und tonmineralreichen Asteroiden."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Nebelgürtel.",
+      "abschnitte": [
+        {
+          "titel": "Nebelgürtel – Archivbild",
+          "bild": true,
+          "bildtext": "Nebelgürtel"
+        }
+      ]
+    }
+  }
+}

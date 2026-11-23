@@ -1,0 +1,514 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Splitter",
+  "genitiv": "von Splitter",
+  "dossierName": "Splitter-Dossier",
+  "klasse": "Mond",
+  "intro": "Splitter ist ein kleiner, eingefangener Metallasteroid auf enger Bahn. Das Konsortium nutzt ihn als Umschlagplatz für Erzfrachter. Splitter umkreist Ferrum Prime in 2,8 Tage.",
+  "globusDaten": {
+    "planet": "jovaryn-der-lebende-mond",
+    "klasse": "Gestein",
+    "radius": 90000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=ferrum-stern&objekt=ferrum-splitter",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-06DC5B7EAA"
+    ],
+    [
+      "Typ",
+      "Mond"
+    ],
+    [
+      "Sternsystem",
+      "Ferrum-System"
+    ],
+    [
+      "Zentralkörper",
+      "Ferrum Prime"
+    ],
+    [
+      "Große Halbachse",
+      "112.351 km"
+    ],
+    [
+      "Umlaufzeit",
+      "2,8 Tage"
+    ],
+    [
+      "Durchmesser",
+      "180 km"
+    ],
+    [
+      "Masse",
+      "1,79 · 10^19 kg"
+    ],
+    [
+      "Schwerkraft",
+      "0,02 g"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -19 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Ferrum-System"
+    ],
+    [
+      "Zentralstern",
+      "Ashkor",
+      "inhalte/himmelskoerper/sterne/details/ashkor/hauptseite/index.html"
+    ],
+    [
+      "Umläuft",
+      "Ferrum Prime",
+      "inhalte/himmelskoerper/planeten/details/ferrum-prime/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "112.351 km"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Splitter im Ferrum-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=ferrum-stern&objekt=ferrum-splitter",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Ashkor",
+      "href": "inhalte/himmelskoerper/sterne/details/ashkor/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◍",
+      "art": "Mutterplanet",
+      "titel": "Ferrum Prime",
+      "href": "inhalte/himmelskoerper/planeten/details/ferrum-prime/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Syntheten",
+      "titel": "Ferrum Prime",
+      "href": "inhalte/himmelskoerper/planeten/details/ferrum-prime/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Syntheten",
+      "href": "inhalte/spezies/Technologische Lebensformen/Syntheten/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Ferrum-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=ferrum-stern&objekt=ferrum-splitter"
+    },
+    {
+      "titel": "Speziesdossier Syntheten",
+      "href": "inhalte/spezies/Technologische Lebensformen/Syntheten/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#060505",
+      "tiefe": "#0e0c0b",
+      "akzent": "#ac9f98",
+      "sand": "#b3a18f",
+      "moos": "#8c9076",
+      "ozean": "#707c81",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#39302c"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Astronomie"
+      ],
+      [
+        "Planet",
+        "Mutterplanet"
+      ],
+      [
+        "Kräfte",
+        "Gezeiten"
+      ],
+      [
+        "Tiefe",
+        "Geologie"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Mutterplanet": {
+      "gruppe": "Wissenschaft",
+      "icon": "◐",
+      "intro": "Mutterplanet von Splitter.",
+      "abschnitte": [
+        {
+          "titel": "Ferrum Prime",
+          "text": [
+            "Ferrum Prime ist ein eisenreicher Bergbauplanet des Konsortiums mit giftiger Atmosphäre und heftigen Stürmen – Einsatzort der Syntheten."
+          ],
+          "daten": [
+            [
+              "Typ",
+              "Gesteinsplanet"
+            ],
+            [
+              "Durchmesser",
+              "15.290 km"
+            ],
+            [
+              "Abstand des Mondes",
+              "112.351 km (14,7 Planetenradien)"
+            ]
+          ],
+          "verweise": [
+            [
+              "Ferrum Prime",
+              "inhalte/himmelskoerper/planeten/details/ferrum-prime/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Gezeiten": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gezeiten von Splitter.",
+      "abschnitte": [
+        {
+          "titel": "Gezeitenkräfte",
+          "text": [
+            "Auf seiner Bahn in 112.351 km Abstand wirken starke Gezeitenkräfte von Ferrum Prime auf Splitter."
+          ]
+        }
+      ]
+    },
+    "Gebundene Rotation": {
+      "gruppe": "Wissenschaft",
+      "icon": "↻",
+      "intro": "Gebundene Rotation von Splitter.",
+      "abschnitte": [
+        {
+          "titel": "Rotation",
+          "text": [
+            "Splitter wendet Ferrum Prime vermutlich stets dieselbe Seite zu: Ein Tag dauert so lange wie ein Umlauf – 2,8 Tage."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Splitter auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Splitter",
+          "text": [
+            "Splitter ist ein kleiner, eingefangener Metallasteroid auf enger Bahn. Das Konsortium nutzt ihn als Umschlagplatz für Erzfrachter.",
+            "Splitter umkreist Ferrum Prime in 2,8 Tage."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Mond"
+            ],
+            [
+              "Sternsystem",
+              "Ferrum-System"
+            ],
+            [
+              "Zentralkörper",
+              "Ferrum Prime"
+            ],
+            [
+              "Große Halbachse",
+              "112.351 km"
+            ],
+            [
+              "Umlaufzeit",
+              "2,8 Tage"
+            ],
+            [
+              "Durchmesser",
+              "180 km"
+            ],
+            [
+              "Masse",
+              "1,79 · 10^19 kg"
+            ],
+            [
+              "Schwerkraft",
+              "0,02 g"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -19 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Ferrum Prime",
+          "text": [
+            "Das Ferrum-System ist die Heimat der Syntheten: Ihr Planet Ferrum Prime umkreist Ashkor, und Splitter ist einer seiner Monde."
+          ],
+          "verweise": [
+            [
+              "Ferrum Prime",
+              "inhalte/himmelskoerper/planeten/details/ferrum-prime/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Syntheten",
+              "inhalte/spezies/Technologische Lebensformen/Syntheten/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Splitter im Ferrum-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Ferrum Prime"
+            ],
+            [
+              "Große Halbachse",
+              "112.351 km"
+            ],
+            [
+              "Exzentrizität",
+              "0,02"
+            ],
+            [
+              "Bahnneigung",
+              "7°"
+            ],
+            [
+              "Umlaufzeit",
+              "2,8 Tage"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Ashkor · Stern",
+              "Orangefarbener Zwerg (K5 V)"
+            ],
+            [
+              "Ferrum Prime · 0,45 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Ashkor II · 0,92 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Ashkor III · 4,1 AE",
+              "Gasriese"
+            ],
+            [
+              "Ashkor B · 85 AE",
+              "Brauner Zwerg"
+            ],
+            [
+              "Trümmerband · 1,3–2,8 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Staubschleier · 12–24 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Ashkor",
+              "inhalte/himmelskoerper/sterne/details/ashkor/hauptseite/index.html"
+            ],
+            [
+              "Ferrum Prime",
+              "inhalte/himmelskoerper/planeten/details/ferrum-prime/hauptseite/index.html"
+            ],
+            [
+              "Ashkor II",
+              "inhalte/himmelskoerper/planeten/details/ashkor-ii/hauptseite/index.html"
+            ],
+            [
+              "Ashkor III",
+              "inhalte/himmelskoerper/planeten/details/ashkor-iii/hauptseite/index.html"
+            ],
+            [
+              "Ashkor B",
+              "inhalte/himmelskoerper/sterne/details/ashkor-b/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Splitter.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "90 km"
+            ],
+            [
+              "Masse",
+              "1,79 · 10^19 kg"
+            ],
+            [
+              "Mittlere Dichte",
+              "5,87 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "0,15 m/s² (0,015 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "0,16 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Splitter.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Splitter ist geologisch weitgehend erstarrt; Einschläge haben seine Oberfläche geformt."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Splitter.",
+      "abschnitte": [
+        {
+          "titel": "Gashülle",
+          "text": [
+            "Splitter besitzt keine nennenswerte Atmosphäre – dafür ist die Schwerkraft zu gering."
+          ]
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Splitter.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 0,45 AE Abstand zu Ashkor liegt die Gleichgewichtstemperatur von Splitter bei rund -19 °C – gemäßigt."
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Splitter.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Splitter entstand zusammen mit dem Ferrum-System vor rund 6,8 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Splitter.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Ist der Mond eingefangen oder mit seinem Planeten entstanden?",
+            "Welche Spuren tragen seine ältesten Krater?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Splitter ist mit allen Bahndaten im Ferrum-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=ferrum-stern&objekt=ferrum-splitter"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Splitter.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Splitter ist ein kleiner, eingefangener Metallasteroid auf enger Bahn. Das Konsortium nutzt ihn als Umschlagplatz für Erzfrachter."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Splitter.",
+      "abschnitte": [
+        {
+          "titel": "Splitter – Archivbild",
+          "bild": true,
+          "bildtext": "Splitter"
+        }
+      ]
+    }
+  }
+}

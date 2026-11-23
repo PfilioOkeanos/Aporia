@@ -55,7 +55,7 @@ const knoten = [
         "belohnung": {
             "art": "gegenstand",
             "name": "Chemische exotische Sturme",
-            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/OzeanWelt/erde-im-sternenmeer/unterseiten/ERDE_BILDER/St%C3%BCrme/11%20%E2%80%93%20Chemische%20&%20exotische%20St%C3%BCrme/11_Chemische_exotische_Sturme.jpg"
+            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/OzeanWelt/erde/unterseiten/ERDE_BILDER/St%C3%BCrme/11%20%E2%80%93%20Chemische%20&%20exotische%20St%C3%BCrme/11_Chemische_exotische_Sturme.jpg"
         }
     },
     {
@@ -120,7 +120,7 @@ const knoten = [
         "belohnung": {
             "art": "gegenstand",
             "name": "Seltene exotische Materialien",
-            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/OzeanWelt/erde-im-sternenmeer/unterseiten/ERDE_BILDER/Rohstoffe/13%20%E2%80%93%20Seltene%20&%20exotische%20Materialien/13_Seltene_exotische_Materialien.jpg"
+            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/OzeanWelt/erde/unterseiten/ERDE_BILDER/Rohstoffe/13%20%E2%80%93%20Seltene%20&%20exotische%20Materialien/13_Seltene_exotische_Materialien.jpg"
         }
     }
 ];

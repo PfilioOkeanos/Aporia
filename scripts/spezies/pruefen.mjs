@@ -25,7 +25,7 @@ for (const { g, s: art } of arten) {
     for (const f of walk(INFO + art)) {
         const rel = path.relative(INFO + art, f).replace(/\\/g, "/");
         const zeilen = fs.readFileSync(f, "utf8").split(/\r?\n/);
-        const ebene = zeilen.filter((z) => /^##\s/.test(z.trim())).length <= 1 && zeilen.filter((z) => /^###\s/.test(z.trim())).length >= 2 ? 3 : 2;
+        const ebene = zeilen.filter((z) => /^#\s+\d+\.\d+/.test(z.trim())).length >= 3 ? 1 : zeilen.filter((z) => /^##\s/.test(z.trim())).length <= 1 && zeilen.filter((z) => /^###\s/.test(z.trim())).length >= 2 ? 3 : 2;
         let imKapitel = false;
         for (const roh of zeilen) {
             let z = roh.trim();
@@ -33,6 +33,7 @@ for (const { g, s: art } of arten) {
             // Dateititel (Überschriften oberhalb der Kapitelebene) und fette Dokumentkennungen vor dem ersten Kapitel sind keine Inhalte
             const h = z.match(/^(#{1,6})\s/);
             if (h && h[1].length < ebene) continue;
+            if (ebene === 1 && h && h[1].length === 1 && !/^#\s+\d+\.\d+/.test(z)) continue;   // Dateititel ohne Kapitelnummer
             if (h && h[1].length === ebene) imKapitel = true;
             if (!imKapitel && /^\*\*[^*]+\*\*$/.test(z)) continue;
             z = z.replace(/^#{1,6}\s+/, "").replace(/^[-*]\s+/, "").replace(/^\d+\.\s+(?=\D)/, "").replace(/\*\*/g, "").replace(/^\|/, "").replace(/\|$/, "");

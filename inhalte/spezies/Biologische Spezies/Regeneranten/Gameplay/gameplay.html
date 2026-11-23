@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#111008">
+    <meta name="theme-color" content="#090b0a">
     <meta name="description" content="Spielintegration der Regeneranten im APORIA-Weltenarchiv.">
     <title>Spielintegration · Regeneranten · APORIA</title>
     <link rel="stylesheet" href="../../../../../Men%C3%BCs/TopBar/Top_bar.css">
@@ -13,23 +13,23 @@
     <link rel="stylesheet" href="gameplay.css">
     <script type="module" src="gameplay.js"></script>
 </head>
-<body class="regeneranten st-gameplay" data-page="spezies-biological-19-gameplay" data-section="spezies">
+<body class="regeneranten rg-gameplay" data-page="spezies-biological-19-gameplay" data-section="spezies">
     <div data-aporia-topbar></div>
-    <div class="aporia-page-frame st-frame">
+    <div class="aporia-page-frame rg-frame">
         <div data-aporia-sidebar></div>
-        <main class="st-dossier" id="inhalt">
-            <header class="st-hero st-hero--reiter">
-                
-                <span class="st-glanz" aria-hidden="true"></span>
-                <div class="st-hero-text">
-                    <nav class="st-pfad" aria-label="Archivpfad"><a data-route="spezies" href="../../../Spezies_%C3%BCbersicht/Spezies.html">Spezies</a><span aria-hidden="true">›</span><a data-route="spezies-biological" href="../../%C3%9Cbersichtsseite%20biologische%20spezies/Uebersicht.html">Biologische Spezies</a><span aria-hidden="true">›</span><a data-route="spezies-biological-19" href="../hauptseite/Spezies.html">Regeneranten</a><span aria-hidden="true">›</span><span aria-current="page">Spielintegration</span></nav>
-                    <p class="st-kicker">Regeneranten · Hauptreiter</p>
+        <main class="rg-dossier" id="inhalt">
+            <header class="rg-hero rg-hero--reiter">
+                <img class="rg-hero-bild" src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Regeneranten/gesamtdarstellung/RegenerantA1%281%29.png" alt="" fetchpriority="high" decoding="async">
+                <span class="rg-glanz" aria-hidden="true"></span>
+                <div class="rg-hero-text">
+                    <nav class="rg-pfad" aria-label="Archivpfad"><a data-route="spezies" href="../../../Spezies_%C3%BCbersicht/Spezies.html">Spezies</a><span aria-hidden="true">›</span><a data-route="spezies-biological" href="../../%C3%9Cbersichtsseite%20biologische%20spezies/Uebersicht.html">Biologische Spezies</a><span aria-hidden="true">›</span><a data-route="spezies-biological-19" href="../hauptseite/Spezies.html">Regeneranten</a><span aria-hidden="true">›</span><span aria-current="page">Spielintegration</span></nav>
+                    <p class="rg-kicker">Regeneranten · Hauptreiter</p>
                     <h1>Spielintegration</h1>
-                    <p class="st-unterzeile">Spielmechaniken und Interaktion</p>
+                    <p class="rg-unterzeile">Körperzonen, Regenerationsressourcen und Quests</p>
                 </div>
             </header>
-            <nav class="st-reiter" aria-label="Hauptreiter der Regeneranten">
-                <a href="../hauptseite/Spezies.html" data-route="spezies-biological-19"><span aria-hidden="true">◆</span>Übersicht</a>
+            <nav class="rg-reiter" aria-label="Hauptreiter der Regeneranten">
+                <a href="../hauptseite/Spezies.html" data-route="spezies-biological-19"><span aria-hidden="true">✶</span>Übersicht</a>
                 <a href="../Unterseiten/Allgemeines/allgemeines.html" data-route="spezies-biological-19-allgemeines"><span aria-hidden="true">ⓘ</span>Allgemeines</a>
                 <a href="../Unterseiten/Biologie/biologie.html" data-route="spezies-biological-19-biologie"><span aria-hidden="true">⟡</span>Biologie</a>
                 <a href="../Unterseiten/Entwicklung/entwicklung.html" data-route="spezies-biological-19-entwicklung"><span aria-hidden="true">⤳</span>Entwicklung</a>
@@ -40,36 +40,386 @@
                 <a href="gameplay.html" data-route="spezies-biological-19-gameplay" aria-current="page"><span aria-hidden="true">◈</span>Spielintegration</a>
                 <a href="../Forschung/forschung.html" data-route="spezies-biological-19-forschung"><span aria-hidden="true">⚗</span>Forschung</a>
                 <a href="../Unterseiten/Medien/medien.html" data-route="spezies-biological-19-medien"><span aria-hidden="true">▣</span>Medien</a>
-            </nav>
-            <div class="st-layout">
-                <div class="st-inhalt">
-                    <details class="st-panel st-karte" id="noch-offen" open>
-                        <summary><span class="st-nr">…</span><h2>Spielintegration</h2><span class="st-chevron" aria-hidden="true"></span></summary>
-                        <div class="st-text">
-                            <p class="st-offen">Noch nicht ausgearbeitet.</p>
-                            <p class="st-quelle">Vorgesehene Infodateien (noch ohne Text): Gameplay/.gitkeep</p>
+            <a href="../Unterseiten/Technologien/technologien.html" data-route="spezies-biological-19-technologien">Technologien</a>
+</nav>
+            <div class="rg-layout">
+                <div class="rg-inhalt">
+                    <details class="rg-panel rg-karte" id="k-steckbrief">
+                        <summary><span class="rg-nr">◇</span><h2>Steckbrief</h2><span class="rg-chevron" aria-hidden="true"></span></summary>
+                        <div class="rg-text">
+                            <dl class="rg-fakten"><div><dt>Version</dt><dd>4.0 – Abschlussfassung</dd></div><div><dt>Schwerpunkte</dt><dd>NPCs, Körperzonen, Regeneration, Verletzungen, medizinische Behandlung, Forschung, Animation und Save/Load</dd></div></dl>
+                            <p class="rg-quelle">Quelle: Info_material · Regeneranten · Gameplay/.gitkeep</p>
                         </div>
                     </details>
-                    
-                    <aside class="st-panel st-block st-links" aria-label="Verknüpfungen">
-                    <h2 class="st-h2">Verknüpfungen</h2>
+                    <details class="rg-panel rg-karte" id="k-7-1-grundlegende-spielrolle">
+                        <summary><span class="rg-nr">7.1</span><h2>Grundlegende Spielrolle</h2><span class="rg-chevron" aria-hidden="true"></span></summary>
+                        <div class="rg-text">
+                            <p>Die Regeneranten sind eine intelligente biologische Spezies des APORIA-Universums.</p>
+                            <p>Sie können unter anderem auftreten als:</p>
+                            <ul><li>NPCs.</li><li>Begleiter.</li><li>Forscher.</li><li>Mediziner.</li><li>Händler.</li><li>Expeditionsteilnehmer.</li><li>Angehörige verschiedener Fraktionen.</li><li>Bewohner Nalvyrs und interstellarer Siedlungen.</li></ul>
+                            <p>Die menschliche Protagonistin bleibt die Hauptfigur der Kernkampagne.</p>
+                            <p>Regeneranten werden zunächst als NPC-Spezies integriert.</p>
+                            <p>Eine spätere spielbare Variante kann zusätzlich entwickelt werden.</p>
+                            <p class="rg-quelle">Quelle: Info_material · Regeneranten · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="rg-panel rg-karte" id="k-7-2-besondere-gameplay-identitat">
+                        <summary><span class="rg-nr">7.2</span><h2>Besondere Gameplay-Identität</h2><span class="rg-chevron" aria-hidden="true"></span></summary>
+                        <div class="rg-text">
+                            <p>Die größte Stärke der Regeneranten besteht in ihrer langfristigen Fähigkeit zur körperlichen Wiederherstellung.</p>
+                            <p>Ihre Fähigkeit ist kein Ersatz für eine vollständige Unverwundbarkeit.</p>
+                            <p>Schwere Verletzungen können unmittelbar zum Verlust wichtiger Körperfunktionen führen.</p>
+                            <p>Die Regeneration erfordert anschließend Zeit und Ressourcen.</p>
+                            <p>Dadurch besitzen Regeneranten besondere Vorteile im langfristigen Überleben, bleiben aber in akuten Gefahrensituationen verwundbar.</p>
+                            <p class="rg-quelle">Quelle: Info_material · Regeneranten · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="rg-panel rg-karte" id="k-7-3-korperzonensystem">
+                        <summary><span class="rg-nr">7.3</span><h2>Körperzonensystem</h2><span class="rg-chevron" aria-hidden="true"></span></summary>
+                        <div class="rg-text">
+                            <p>Das Verletzungssystem verwendet mehrere anatomische Körperzonen.</p>
+                            <h3>Sechs Extremitäten</h3>
+                            <p>Jede Extremität besitzt einen eigenen Verletzungs- und Funktionszustand.</p>
+                            <h3>Zentralkörper</h3>
+                            <p>Enthält wichtige innere Organe und strukturelle Verbindungen.</p>
+                            <h3>Gehirnring</h3>
+                            <p>Trägt die wichtigsten neuronalen Funktionen.</p>
+                            <h3>Kreislauf und Atmung</h3>
+                            <p>Bestimmen die Versorgung lebenswichtiger Körperbereiche.</p>
+                            <h3>Sinnesregionen</h3>
+                            <p>Beeinflussen Wahrnehmung und Orientierung.</p>
+                            <h3>Regenerative Zellreservoirs</h3>
+                            <p>Bestimmen die verfügbare regenerative Leistungsfähigkeit.</p>
+                            <p class="rg-quelle">Quelle: Info_material · Regeneranten · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="rg-panel rg-karte" id="k-7-4-zustandswerte">
+                        <summary><span class="rg-nr">7.4</span><h2>Zustandswerte</h2><span class="rg-chevron" aria-hidden="true"></span></summary>
+                        <div class="rg-text">
+                            <p>Jede relevante Körperzone kann folgende Daten besitzen:</p>
+                            <ul><li>Strukturelle Integrität.</li><li>Funktionelle Leistungsfähigkeit.</li><li>Verletzungsschwere.</li><li>Durchblutungszustand.</li><li>Regenerationsphase.</li><li>Medizinische Behandlungen.</li><li>Komplikationen.</li><li>Langfristige Einschränkungen.</li></ul>
+                            <p>Die äußerliche Wiederherstellung und die tatsächliche Funktion werden getrennt bewertet.</p>
+                            <p class="rg-quelle">Quelle: Info_material · Regeneranten · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="rg-panel rg-karte" id="k-7-5-verletzungsarten">
+                        <summary><span class="rg-nr">7.5</span><h2>Verletzungsarten</h2><span class="rg-chevron" aria-hidden="true"></span></summary>
+                        <div class="rg-text">
+                            <p>Das Gameplay unterscheidet funktionelle Schadenskategorien.</p>
+                            <p>Dazu gehören:</p>
+                            <ul><li>Oberflächliche Verletzungen.</li><li>Tiefere Gewebeschäden.</li><li>Muskelverletzungen.</li><li>Schäden am Stützsystem.</li><li>Gefäßverletzungen.</li><li>Organverletzungen.</li><li>Nervenschäden.</li><li>Sensorische Schäden.</li><li>Vollständiger Verlust äußerer Körperteile.</li></ul>
+                            <p>Die Auswirkungen ergeben sich aus Art, Umfang und Lage der Verletzung.</p>
+                            <p class="rg-quelle">Quelle: Info_material · Regeneranten · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="rg-panel rg-karte" id="k-7-6-regenerationsphasen">
+                        <summary><span class="rg-nr">7.6</span><h2>Regenerationsphasen</h2><span class="rg-chevron" aria-hidden="true"></span></summary>
+                        <div class="rg-text">
+                            <p>Ein Regenerationsvorgang durchläuft mehrere Zustände.</p>
+                            <h3>Akute Verletzung</h3>
+                            <p>Eine Körperregion ist beschädigt.</p>
+                            <h3>Notfallstabilisierung</h3>
+                            <p>Blutverlust und weitere Schäden werden begrenzt.</p>
+                            <h3>Wundverschluss</h3>
+                            <p>Die verletzte Region wird geschützt.</p>
+                            <h3>Regeneratives Wachstum</h3>
+                            <p>Neue Gewebestrukturen entstehen.</p>
+                            <h3>Anatomischer Wiederaufbau</h3>
+                            <p>Die ursprüngliche Körperstruktur wird schrittweise rekonstruiert.</p>
+                            <h3>Funktionelle Nachreifung</h3>
+                            <p>Das neue Gewebe erhält zunehmend seine Belastbarkeit und Koordinationsfähigkeit.</p>
+                            <p class="rg-quelle">Quelle: Info_material · Regeneranten · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="rg-panel rg-karte" id="k-7-7-biologische-ressourcen">
+                        <summary><span class="rg-nr">7.7</span><h2>Biologische Ressourcen</h2><span class="rg-chevron" aria-hidden="true"></span></summary>
+                        <div class="rg-text">
+                            <p>Vier Ressourcenbereiche beeinflussen den Regenerationsprozess.</p>
+                            <h3>Stoffwechselenergie</h3>
+                            <p>Energie für gewöhnliche Körperfunktionen und Gewebewachstum.</p>
+                            <h3>Wasserhaushalt</h3>
+                            <p>Flüssigkeitsversorgung und Stofftransport.</p>
+                            <h3>Biologische Baustoffe</h3>
+                            <p>Proteine, Lipide, Mineralien und weitere benötigte Stoffe.</p>
+                            <h3>Regenerative Zellkapazität</h3>
+                            <p>Zustand der regenerativen Zellreservoirs und Kontrollmechanismen.</p>
+                            <p>Ein Mangel kann die Heilung verlangsamen oder verhindern.</p>
+                            <p class="rg-quelle">Quelle: Info_material · Regeneranten · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="rg-panel rg-karte" id="k-7-8-regenerationsprioritat">
+                        <summary><span class="rg-nr">7.8</span><h2>Regenerationspriorität</h2><span class="rg-chevron" aria-hidden="true"></span></summary>
+                        <div class="rg-text">
+                            <p>Bei mehreren schweren Verletzungen werden lebenswichtige Systeme bevorzugt stabilisiert.</p>
+                            <p>Die Wiederherstellung äußerer Körperteile kann verzögert werden.</p>
+                            <p>Ein NPC mit schwerem Kreislaufschaden kann nicht gleichzeitig sämtliche verlorenen Gliedmaßen mit voller Geschwindigkeit regenerieren.</p>
+                            <p>Die Priorisierung ergibt sich aus dem biologischen Zustand.</p>
+                            <p class="rg-quelle">Quelle: Info_material · Regeneranten · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="rg-panel rg-karte" id="k-7-9-kontrollierte-gliedmassenabtrennung">
+                        <summary><span class="rg-nr">7.9</span><h2>Kontrollierte Gliedmaßenabtrennung</h2><span class="rg-chevron" aria-hidden="true"></span></summary>
+                        <div class="rg-text">
+                            <p>Bestimmte äußere Extremitätenabschnitte können an natürlichen Trennstellen abgestoßen werden.</p>
+                            <p>Im Gameplay ist dies beispielsweise zur Befreiung aus einer gefährlichen Fixierung möglich.</p>
+                            <p>Die Fähigkeit hat Nachteile:</p>
+                            <ul><li>Verlust einer Körperfunktion.</li><li>Zusätzlicher Ressourcenbedarf.</li><li>Längere Regenerationsphase.</li><li>Mögliche Komplikationen.</li></ul>
+                            <p>Die kontrollierte Abtrennung ist nicht beliebig oft ohne Konsequenzen einsetzbar.</p>
+                            <p class="rg-quelle">Quelle: Info_material · Regeneranten · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="rg-panel rg-karte" id="k-7-10-replantation">
+                        <summary><span class="rg-nr">7.10</span><h2>Replantation</h2><span class="rg-chevron" aria-hidden="true"></span></summary>
+                        <div class="rg-text">
+                            <p>Noch lebensfähige abgetrennte Körperteile können medizinisch wieder angeschlossen werden.</p>
+                            <p>Eine erfolgreiche Behandlung kann den vollständigen Neubau ersetzen.</p>
+                            <p>Dafür sind geeignete Gewebe und medizinische Versorgung notwendig.</p>
+                            <p>Der Heilungsprozess umfasst anschließend die funktionelle Integration.</p>
+                            <p class="rg-quelle">Quelle: Info_material · Regeneranten · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="rg-panel rg-karte" id="k-7-11-kritische-zustande">
+                        <summary><span class="rg-nr">7.11</span><h2>Kritische Zustände</h2><span class="rg-chevron" aria-hidden="true"></span></summary>
+                        <div class="rg-text">
+                            <p>Das Gameplay unterscheidet zwischen:</p>
+                            <ul><li>Bewusstlosigkeit.</li><li>Kritischer Organversorgung.</li><li>Schwerem Nervenschaden.</li><li>Regenerativem Ruhezustand.</li><li>Medizinisch stabilisiertem Zustand.</li><li>Irreversiblem Tod.</li></ul>
+                            <p>Ein regenerativer Ruhezustand kann das Überleben verlängern.</p>
+                            <p>Er verhindert nicht automatisch den Tod durch schwere Schäden oder fehlende Versorgung.</p>
+                            <p class="rg-quelle">Quelle: Info_material · Regeneranten · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="rg-panel rg-karte" id="k-7-12-npc-verhalten">
+                        <summary><span class="rg-nr">7.12</span><h2>NPC-Verhalten</h2><span class="rg-chevron" aria-hidden="true"></span></summary>
+                        <div class="rg-text">
+                            <p>Die künstliche Intelligenz berücksichtigt den individuellen Verletzungszustand.</p>
+                            <p>Regeneranten können:</p>
+                            <ul><li>Schutz suchen.</li><li>Verletzte Extremitäten entlasten.</li><li>Die Fortbewegung anpassen.</li><li>Medizinische Hilfe anfordern.</li><li>Nahrung und Wasser benötigen.</li><li>Gefährliche Aufgaben unterbrechen.</li><li>Einen sicheren Regenerationsort aufsuchen.</li><li>Auf anhaltende Schmerzen reagieren.</li></ul>
+                            <p>Die Entscheidung hängt zusätzlich von Persönlichkeit, Situation und Aufgabe ab.</p>
+                            <p class="rg-quelle">Quelle: Info_material · Regeneranten · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="rg-panel rg-karte" id="k-7-13-langfristige-npc-entwicklung">
+                        <summary><span class="rg-nr">7.13</span><h2>Langfristige NPC-Entwicklung</h2><span class="rg-chevron" aria-hidden="true"></span></summary>
+                        <div class="rg-text">
+                            <p>Regenerationszustände bleiben über längere Zeit erhalten.</p>
+                            <p>Ein verletzter NPC kann über Tage oder Wochen eingeschränkte Funktionen besitzen.</p>
+                            <p>Sein Zustand kann sich abhängig von Versorgung und Behandlung verbessern.</p>
+                            <p>Schwere neuronale Schäden können langfristige Folgen verursachen.</p>
+                            <p>Diese Auswirkungen bleiben nicht auf unmittelbare Kampfhandlungen beschränkt.</p>
+                            <p class="rg-quelle">Quelle: Info_material · Regeneranten · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="rg-panel rg-karte" id="k-7-14-medizinische-behandlungen">
+                        <summary><span class="rg-nr">7.14</span><h2>Medizinische Behandlungen</h2><span class="rg-chevron" aria-hidden="true"></span></summary>
+                        <div class="rg-text">
+                            <p>Medizinische Einrichtungen können:</p>
+                            <ul><li>Verletzungen untersuchen.</li><li>Kreislauf und Atmung stabilisieren.</li><li>Infektionen behandeln.</li><li>Regenerationsfehler erkennen.</li><li>Replantationen durchführen.</li><li>Nährstoffversorgung verbessern.</li><li>Neurologische Rehabilitation unterstützen.</li><li>Komplikationen überwachen.</li></ul>
+                            <p>Die Behandlung unterstützt die natürliche Regeneration.</p>
+                            <p>Sie ersetzt keine vollständige Wiederauferstehung.</p>
+                            <p class="rg-quelle">Quelle: Info_material · Regeneranten · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="rg-panel rg-karte" id="k-7-17-charakterentwicklung">
+                        <summary><span class="rg-nr">7.17</span><h2>Charakterentwicklung</h2><span class="rg-chevron" aria-hidden="true"></span></summary>
+                        <div class="rg-text">
+                            <p>Regeneranten können ihre medizinisch unterstützte Regenerationsleistung verbessern.</p>
+                            <p>Mögliche Fortschritte umfassen:</p>
+                            <ul><li>Effizientere Wundversorgung.</li><li>Verbesserte Behandlung von Komplikationen.</li><li>Geringere Stoffwechselverluste.</li><li>Schnellere funktionelle Rehabilitation.</li><li>Bessere Überwachung regenerativer Gewebe.</li><li>Erhöhte Belastbarkeit während der Heilung.</li></ul>
+                            <p>Die natürlichen biologischen Grenzen bleiben erhalten.</p>
+                            <p class="rg-quelle">Quelle: Info_material · Regeneranten · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="rg-panel rg-karte" id="k-7-18-balancing">
+                        <summary><span class="rg-nr">7.18</span><h2>Balancing</h2><span class="rg-chevron" aria-hidden="true"></span></summary>
+                        <div class="rg-text">
+                            <p>Die Regeneranten besitzen hohe langfristige Überlebensfähigkeit.</p>
+                            <p>Gleichzeitig gelten folgende Grenzen:</p>
+                            <ol><li>Schwere Verletzungen verursachen echte Einschränkungen.</li><li>Regeneration benötigt Zeit.</li><li>Regeneration verbraucht Ressourcen.</li><li>Komplikationen bleiben möglich.</li><li>Kritische Schäden können tödlich sein.</li></ol>
+                            <p>Die Fähigkeit ist deshalb nicht mit sofortiger vollständiger Heilung gleichzusetzen.</p>
+                            <p class="rg-quelle">Quelle: Info_material · Regeneranten · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="rg-panel rg-karte" id="k-7-19-fortbewegungsanimation">
+                        <summary><span class="rg-nr">7.19</span><h2>Fortbewegungsanimation</h2><span class="rg-chevron" aria-hidden="true"></span></summary>
+                        <div class="rg-text">
+                            <p>Die besondere sechsstrahlige Körperform benötigt eigene Animationen.</p>
+                            <p>Wichtige Bewegungsarten sind:</p>
+                            <ul><li>Normaler Dreibein-Wechselgang.</li><li>Langsame Mehrbein-Fortbewegung.</li><li>Richtungswechsel.</li><li>Werkzeuggebrauch.</li><li>Bewegung mit fehlenden Gliedmaßen.</li><li>Verletzungsbedingte Schonhaltung.</li><li>Regenerativer Ruhezustand.</li></ul>
+                            <p class="rg-quelle">Quelle: Info_material · Regeneranten · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="rg-panel rg-karte" id="k-7-20-kommunikationsanimation">
+                        <summary><span class="rg-nr">7.20</span><h2>Kommunikationsanimation</h2><span class="rg-chevron" aria-hidden="true"></span></summary>
+                        <div class="rg-text">
+                            <p>Die Kommunikation nutzt resonante Laute, Körperhaltungen und Vibrationen.</p>
+                            <p>Dazu können unterschiedliche animierte Ausdrucksformen verwendet werden.</p>
+                            <p>Die Körperbewegungen sollten nicht ausschließlich humanoide Gesten nachahmen.</p>
+                            <p>Die besondere Anatomie ermöglicht eigenständige Kommunikationsabläufe.</p>
+                            <p class="rg-quelle">Quelle: Info_material · Regeneranten · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="rg-panel rg-karte" id="k-7-21-sichtbare-regeneration">
+                        <summary><span class="rg-nr">7.21</span><h2>Sichtbare Regeneration</h2><span class="rg-chevron" aria-hidden="true"></span></summary>
+                        <div class="rg-text">
+                            <p>Die Darstellung der Heilung kann über mehrere technische Zustände erfolgen.</p>
+                            <p>Mögliche Verfahren sind:</p>
+                            <ul><li>Unterschiedliche Körpermesh-Zustände.</li><li>Materialparameter.</li><li>Sichtbare Gewebeschichten.</li><li>Kontrollierte Wachstumsanimationen.</li><li>Veränderungen der Körperhaltung.</li><li>Stufenweise Wiederherstellung fehlender Teile.</li></ul>
+                            <p>Eine vollständige biologische Echtzeitsimulation ist nicht erforderlich.</p>
+                            <p class="rg-quelle">Quelle: Info_material · Regeneranten · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="rg-panel rg-karte" id="k-7-22-medizinische-ausrustung">
+                        <summary><span class="rg-nr">7.22</span><h2>Medizinische Ausrüstung</h2><span class="rg-chevron" aria-hidden="true"></span></summary>
+                        <div class="rg-text">
+                            <p>Mögliche Ausrüstungsgruppen sind:</p>
+                            <ul><li>Regenerationsscanner.</li><li>Gewebekartierungsgeräte.</li><li>Organunterstützungssysteme.</li><li>Medizinische Versorgungseinheiten.</li><li>Spezialisierte Replantationsgeräte.</li><li>Neurologische Rehabilitationssysteme.</li></ul>
+                            <p>Die konkrete Gestaltung einzelner Geräte erfolgt innerhalb der allgemeinen APORIA-Ausrüstungs- und Forschungssysteme.</p>
+                            <p class="rg-quelle">Quelle: Info_material · Regeneranten · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="rg-panel rg-karte" id="k-7-23-save-load">
+                        <summary><span class="rg-nr">7.23</span><h2>Save/Load</h2><span class="rg-chevron" aria-hidden="true"></span></summary>
+                        <div class="rg-text">
+                            <p>Die biologischen Zustände werden unabhängig von einer einzelnen geladenen Actor-Instanz gespeichert.</p>
+                            <p>Jeder Regenerant besitzt eine eindeutige Charakteridentität.</p>
+                            <p>Persistente Informationen können umfassen:</p>
+                            <ul><li>CharacterID.</li><li>Spezieskennung.</li><li>Körperzonen.</li><li>Verletzungszustände.</li><li>Regenerationsphasen.</li><li>Biologische Ressourcen.</li><li>Medizinische Behandlungen.</li><li>Dauerhafte Einschränkungen.</li><li>Relevante Zeitstempel.</li></ul>
+                            <p>Die Daten müssen mit dem allgemeinen APORIA-Save/Load-System vereinbar sein.</p>
+                            <p class="rg-quelle">Quelle: Info_material · Regeneranten · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="rg-panel rg-karte" id="k-7-24-regeneration-bei-ungeladenen-weltbereichen">
+                        <summary><span class="rg-nr">7.24</span><h2>Regeneration bei ungeladenen Weltbereichen</h2><span class="rg-chevron" aria-hidden="true"></span></summary>
+                        <div class="rg-text">
+                            <p>Regenerationsprozesse können außerhalb aktiv geladener Gebiete fortgeführt werden.</p>
+                            <p>Die Simulation berücksichtigt:</p>
+                            <ul><li>Verstrichene Spielzeit.</li><li>Verfügbare Ressourcen.</li><li>Medizinische Versorgung.</li><li>Verletzungszustände.</li><li>Biologische Grenzen.</li></ul>
+                            <p>Es darf keine unbegrenzte Heilung ohne ausreichende Versorgung stattfinden.</p>
+                            <p class="rg-quelle">Quelle: Info_material · Regeneranten · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="rg-panel rg-karte" id="k-7-25-technische-architektur">
+                        <summary><span class="rg-nr">7.25</span><h2>Technische Architektur</h2><span class="rg-chevron" aria-hidden="true"></span></summary>
+                        <div class="rg-text">
+                            <p>Die Regenerationslogik wird von folgenden Bereichen getrennt:</p>
+                            <ul><li>Animation.</li><li>Visueller Darstellung.</li><li>Konkreten Actor-Instanzen.</li><li>Weltstreaming.</li><li>Persistenz.</li><li>NPC-Entscheidungssystemen.</li></ul>
+                            <p>Die biologische Simulation bildet eine eigenständige Daten- und Logikebene.</p>
+                            <p>Dadurch bleibt sie für unterschiedliche NPCs und spätere technische Erweiterungen wiederverwendbar.</p>
+                            <p class="rg-quelle">Quelle: Info_material · Regeneranten · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="rg-panel rg-karte" id="k-7-26-quests">
+                        <summary><span class="rg-nr">7.26</span><h2>Quests</h2><span class="rg-chevron" aria-hidden="true"></span></summary>
+                        <div class="rg-text">
+                            <p>Mögliche Missionstypen sind:</p>
+                            <h3>Rettungsmissionen</h3>
+                            <p>Versorgung schwer verletzter Individuen.</p>
+                            <h3>Medizinische Forschungsmissionen</h3>
+                            <p>Untersuchung seltener Erkrankungen.</p>
+                            <h3>Historische Nachforschungen</h3>
+                            <p>Aufarbeitung der Gewebekrise.</p>
+                            <h3>Politische Missionen</h3>
+                            <p>Konflikte um Forschungsrechte.</p>
+                            <h3>Xenobiologische Expeditionen</h3>
+                            <p>Erforschung regenerativer Tiergruppen Nalvyrs.</p>
+                            <h3>Interstellare Forschungsprojekte</h3>
+                            <p>Anpassung medizinischer Verfahren an andere Lebensformen.</p>
+                            <p class="rg-quelle">Quelle: Info_material · Regeneranten · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="rg-panel rg-karte" id="k-7-27-abschluss">
+                        <summary><span class="rg-nr">7.27</span><h2>Abschluss</h2><span class="rg-chevron" aria-hidden="true"></span></summary>
+                        <div class="rg-text">
+                            <p>Die Regeneranten besitzen ein eigenständiges Verletzungs- und Regenerationssystem.</p>
+                            <p>Dieses verbindet biologische Glaubwürdigkeit mit langfristigen Gameplay-Konsequenzen.</p>
+                            <p>Die Regeneration ist leistungsfähig, aber ressourcenabhängig und begrenzt.</p>
+                            <p>Die technischen Grundlagen sind so organisiert, dass spätere Erweiterungen der APORIA-Spielsysteme möglich bleiben.</p>
+                            <h3>ENDE – GAMEPLAY</h3>
+                            <p class="rg-quelle">Quelle: Info_material · Regeneranten · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <section class="rg-panel rg-block rg-karussell-block" id="galerie" aria-label="Bilder">
+                    <h2 class="rg-h2">Bilder <small>6 Bilder · Bildarchiv</small></h2>
+                    <div class="bilder-karussell" data-karussell aria-roledescription="Karussell" aria-label="Bilder der Regeneranten">
+                    <div class="karussell-spur" tabindex="0" aria-label="Bilder – mit Pfeiltasten blättern">
+                        <figure class="karussell-folie" data-kategorie="Designtafeln" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Designtafel 1 in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Regeneranten/gesamtdarstellung/RegenerantA1.png" alt="Designtafel 1" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Designtafel 1</strong><span>Designtafeln</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Designtafeln" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Designtafel 2 in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Regeneranten/gesamtdarstellung/RegenerantA1%281%29.png" alt="Designtafel 2" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Designtafel 2</strong><span>Designtafeln</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Designtafeln" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Designtafel 3 in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Regeneranten/gesamtdarstellung/RegenerantA1%282%29.png" alt="Designtafel 3" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Designtafel 3</strong><span>Designtafeln</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Designtafeln" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Designtafel 4 in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Regeneranten/gesamtdarstellung/RegenerantA1%283%29.png" alt="Designtafel 4" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Designtafel 4</strong><span>Designtafeln</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Designtafeln" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Designtafel 5 in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Regeneranten/gesamtdarstellung/RegenerantA1%284%29.png" alt="Designtafel 5" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Designtafel 5</strong><span>Designtafeln</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Designtafeln" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Designtafel 6 in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Regeneranten/gesamtdarstellung/RegenerantA1%285%29.png" alt="Designtafel 6" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Designtafel 6</strong><span>Designtafeln</span></figcaption>
+                        </figure>
+                    </div>
+                    <div class="karussell-steuerung">
+                        <button type="button" data-karussell-schritt="-1" aria-label="Vorheriges Bild">‹</button>
+                        <div class="karussell-punkte" role="group" aria-label="Bild wählen"></div>
+                        <output class="karussell-zaehler" aria-live="polite"></output>
+                        <button type="button" data-karussell-schritt="1" aria-label="Nächstes Bild">›</button>
+                    </div>
+                </div>
+                </section>
+                    <aside class="rg-panel rg-block rg-links" aria-label="Verknüpfungen">
+                    <h2 class="rg-h2">Verknüpfungen</h2>
                     <ul>
-                        <li><a href="../Forschung/forschung.html" data-route="spezies-biological-19-forschung"><strong>Forschung</strong><span>Forschungsfelder zu den Regeneranten</span></a></li>
+                        <li><a href="../../../../himmelskoerper/planeten/details/nalvyr/hauptseite/index.html" ><strong>Planetendossier Nalvyr</strong><span>Heimatwelt im Planetenarchiv</span></a></li>
+                        <li><a href="../../../../../Men%C3%BCs/Sternenkarte/Sternenkarte.html?system=nalvyr-stern" ><strong>Saelon-System</strong><span>In der Sternenkarte ansehen</span></a></li>
+                        <li><a href="../Forschung/forschung.html" data-route="spezies-biological-19-forschung"><strong>Forschung</strong><span>Forschung an den Regeneranten</span></a></li>
+                        <li><a href="../../../../Forschung/Naturwissenschaften/Medizin/index.html" ><strong>Medizin</strong><span>Forschungszweig</span></a></li>
                         <li><a href="../../../../Forschung/%C3%9Cbersicht/Forschung.html" ><strong>Forschungsarchiv</strong><span>Alle Forschungszweige</span></a></li>
-                        <li><a href="../../%C3%9Cbersichtsseite%20biologische%20spezies/Uebersicht.html" data-route="spezies-biological"><strong>Biologische Spezies</strong><span>Alle Spezies dieser Gruppe</span></a></li>
-                        <li><a href="../../../Spezies_%C3%BCbersicht/Spezies.html" data-route="spezies"><strong>Speziesarchiv</strong><span>Alle Gruppen</span></a></li>
-                        <li><a href="../../../../himmelskoerper/planeten/planeten.html" data-route="planeten"><strong>Planetenarchiv</strong><span>Heimatwelten im Weltenarchiv</span></a></li>
                     </ul>
                 </aside>
-                    <nav class="st-blaettern" aria-label="Hauptreiter blättern"><a href="../Unterseiten/Geschichte/geschichte.html" data-route="spezies-biological-19-geschichte">← Geschichte</a><a href="../Forschung/forschung.html" data-route="spezies-biological-19-forschung">Forschung →</a></nav>
+                    <nav class="rg-blaettern" aria-label="Hauptreiter blättern"><a href="../Unterseiten/Geschichte/geschichte.html" data-route="spezies-biological-19-geschichte">← Geschichte</a><a href="../Forschung/forschung.html" data-route="spezies-biological-19-forschung">Forschung →</a></nav>
                 </div>
-                <nav class="st-panel st-sprung" data-st-sprung aria-label="Kapitel dieser Seite">
-                    <p class="st-kicker">Kapitel</p>
-                    <button type="button" class="st-klappen" data-st-klappen aria-pressed="false">Alle aufklappen</button>
-                    <a href="#noch-offen"><span class="st-nr">…</span>Spielintegration</a>
+                <nav class="rg-panel rg-sprung" data-rg-sprung aria-label="Kapitel dieser Seite">
+                    <p class="rg-kicker">Kapitel</p>
+                    <button type="button" class="rg-klappen" data-rg-klappen aria-pressed="false">Alle aufklappen</button>
+                    <a href="#k-steckbrief"><span class="rg-nr">◇</span>Steckbrief</a>
+                    <a href="#k-7-1-grundlegende-spielrolle"><span class="rg-nr">7.1</span>Grundlegende Spielrolle</a>
+                    <a href="#k-7-2-besondere-gameplay-identitat"><span class="rg-nr">7.2</span>Besondere Gameplay-Identität</a>
+                    <a href="#k-7-3-korperzonensystem"><span class="rg-nr">7.3</span>Körperzonensystem</a>
+                    <a href="#k-7-4-zustandswerte"><span class="rg-nr">7.4</span>Zustandswerte</a>
+                    <a href="#k-7-5-verletzungsarten"><span class="rg-nr">7.5</span>Verletzungsarten</a>
+                    <a href="#k-7-6-regenerationsphasen"><span class="rg-nr">7.6</span>Regenerationsphasen</a>
+                    <a href="#k-7-7-biologische-ressourcen"><span class="rg-nr">7.7</span>Biologische Ressourcen</a>
+                    <a href="#k-7-8-regenerationsprioritat"><span class="rg-nr">7.8</span>Regenerationspriorität</a>
+                    <a href="#k-7-9-kontrollierte-gliedmassenabtrennung"><span class="rg-nr">7.9</span>Kontrollierte Gliedmaßenabtrennung</a>
+                    <a href="#k-7-10-replantation"><span class="rg-nr">7.10</span>Replantation</a>
+                    <a href="#k-7-11-kritische-zustande"><span class="rg-nr">7.11</span>Kritische Zustände</a>
+                    <a href="#k-7-12-npc-verhalten"><span class="rg-nr">7.12</span>NPC-Verhalten</a>
+                    <a href="#k-7-13-langfristige-npc-entwicklung"><span class="rg-nr">7.13</span>Langfristige NPC-Entwicklung</a>
+                    <a href="#k-7-14-medizinische-behandlungen"><span class="rg-nr">7.14</span>Medizinische Behandlungen</a>
+                    <a href="#k-7-17-charakterentwicklung"><span class="rg-nr">7.17</span>Charakterentwicklung</a>
+                    <a href="#k-7-18-balancing"><span class="rg-nr">7.18</span>Balancing</a>
+                    <a href="#k-7-19-fortbewegungsanimation"><span class="rg-nr">7.19</span>Fortbewegungsanimation</a>
+                    <a href="#k-7-20-kommunikationsanimation"><span class="rg-nr">7.20</span>Kommunikationsanimation</a>
+                    <a href="#k-7-21-sichtbare-regeneration"><span class="rg-nr">7.21</span>Sichtbare Regeneration</a>
+                    <a href="#k-7-22-medizinische-ausrustung"><span class="rg-nr">7.22</span>Medizinische Ausrüstung</a>
+                    <a href="#k-7-23-save-load"><span class="rg-nr">7.23</span>Save/Load</a>
+                    <a href="#k-7-24-regeneration-bei-ungeladenen-weltbereichen"><span class="rg-nr">7.24</span>Regeneration bei ungeladenen Weltbereichen</a>
+                    <a href="#k-7-25-technische-architektur"><span class="rg-nr">7.25</span>Technische Architektur</a>
+                    <a href="#k-7-26-quests"><span class="rg-nr">7.26</span>Quests</a>
+                    <a href="#k-7-27-abschluss"><span class="rg-nr">7.27</span>Abschluss</a>
+                    <a href="#galerie"><span class="rg-nr">▣</span>Bilder</a>
                 </nav>
             </div>
-            <dialog class="st-zoom" aria-label="Bild in Großansicht"><div class="controls"><button class="control" type="button" data-step="-1" aria-label="Vorheriges Bild">←</button><output aria-live="polite"></output><button class="control" type="button" data-step="1" aria-label="Nächstes Bild">→</button></div><form method="dialog"><button class="control">Schließen</button></form><img alt=""></dialog>
+            <dialog class="rg-zoom" aria-label="Bild in Großansicht"><div class="controls"><button class="control" type="button" data-step="-1" aria-label="Vorheriges Bild">←</button><output aria-live="polite"></output><button class="control" type="button" data-step="1" aria-label="Nächstes Bild">→</button></div><form method="dialog"><button class="control">Schließen</button></form><img alt=""></dialog>
         </main>
     </div>
 </body>

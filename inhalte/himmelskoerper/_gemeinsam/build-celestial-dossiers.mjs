@@ -217,6 +217,9 @@ function artwork(file, html) {
 const stats = { detail: 0, overview: 0, chapters: 0, images: 0, extras: 0, known: 0, skippedAuthored: 0, missing: [], brokenLinks: [] };
 const checking = process.argv.includes("--check");
 const onlyMap = process.argv.includes("--kartenobjekte");
+const objectArg = process.argv.indexOf("--objekt");
+const onlyObject = objectArg < 0 ? null : process.argv[objectArg + 1];
+if (objectArg >= 0 && !mapById.has(onlyObject)) throw new Error("Kartenobjekt fehlt: " + onlyObject);
 const onlyPlanetLayout = process.argv.includes("--planeten-layout");
 const onlyOtherLayout = process.argv.includes("--himmelskoerper-layout");
 const onlySolarPilot = process.argv.includes("--sonnensystem-pilot");
@@ -377,6 +380,17 @@ function buildChapter(record, entries, chapter, index) {
         '</div></main></div>\n<script type="module" src="./index.js"></script>\n</body>\n</html>\n');
 }
 
+const mapDossierDetails = {
+    titan: {
+        related: [["inhalte/spezies/Technologische Lebensformen/Digitaliden/hauptseite/Spezies.html", "Digitaliden · Speziesdossier"]],
+        topics: {
+            geschichte: "In APORIA errichteten Menschen das Forschungsinstitut Axiom-9 in der Selk-Region. In einem seiner Rechenverbünde entstand durch Selbstorganisation unbeabsichtigt das erste Bewusstsein der Digitaliden. Ihre Unabhängigkeit folgte aus Verhandlungen und gegenseitiger Anerkennung.",
+            erforschung: "Axiom-9 ist das menschliche Forschungsinstitut am historischen Entstehungsort der Digitaliden. Die Einrichtung liegt in der weiteren Selk-Region nahe den äquatorialen Dünenfeldern.",
+            besonderheiten: "Der Selk-Krater und die benachbarten Dünen dienen als geografische Bezugspunkte. Axiom-9 gehört zur fiktiven Geschichte von APORIA."
+        }
+    }
+};
+
 function build(file, category, overview = false, slug = path.basename(path.dirname(path.dirname(file))), curated = {}) {
     if (onlySolarPilot && !Object.hasOwn(solarReferences, slug) &&
         !["saturn", "uranus", "sonnensystem"].includes(slug)) return;
@@ -384,6 +398,8 @@ function build(file, category, overview = false, slug = path.basename(path.dirna
     if (onlyPlanetLayout && !planet) return;
     if (onlyOtherLayout && (planet || overview)) return;
     const known = mapByFile.get(path.resolve(file));
+    if (onlyObject && known?.id !== onlyObject) return;
+    const details = mapDossierDetails[known?.id];
     if (onlyMap && !known && !curated.mapSystem) return;
     const html = exists(file) ? read(file) : curated.template;
     if (/<body\b[^>]*\bdata-custom-dossier\b/.test(html)) return;
@@ -405,6 +421,7 @@ function build(file, category, overview = false, slug = path.basename(path.dirna
     }
     const record = { file, title, group, category, overview, slug, known, art, extras, body: source.match(/<body\b([^>]*)>/)?.[1].trim() ?? "" };
     record.data = curated.data ?? profile(record);
+    if (details) Object.assign(record.data.topics, details.topics);
     if (reference?.sources) {
         Object.assign(record.data.facts, reference.facts);
         record.data.status = "Quellengeprüfte Grunddaten · NASA / JPL und Sternenkarte";
@@ -414,7 +431,7 @@ function build(file, category, overview = false, slug = path.basename(path.dirna
     const id = "AP-" + createHash("sha256").update(file.split(path.sep).join("/")).digest("hex").slice(0, 10).toUpperCase();
     const systemId = known?.systemId ?? (known?.systemName ? known.id : null);
     if (!overview) {
-        const links = [...(curated.related ?? [])];
+        const links = [...(curated.related ?? []), ...(details?.related ?? [])];
         const connections = [mapById.get(known?.bahnUm), ...map.filter(item => known && item.bahnUm === known.id)];
         for (const item of connections) {
             if (!item?.archivLink?.startsWith("../")) continue;
@@ -427,7 +444,7 @@ function build(file, category, overview = false, slug = path.basename(path.dirna
         const preserved = orvayaNotes ? '<details class="planet-original"><summary>Weltenbau-Notizen</summary><!-- orvaya-notes:start -->' +
             orvayaNotes + '<!-- orvaya-notes:end --></details>' : "";
         const mapHref = known ? url(file, path.join(sky, "Sternenkarte.html")) +
-            (systemId ? "?system=" + encodeURIComponent(systemId) : "") : "";
+            (systemId ? "?system=" + encodeURIComponent(systemId) : "") + (details && systemId ? "&objekt=" + encodeURIComponent(known.id) : "") : "";
         const updated = celestialDashboard(record, entries, {
             esc, url, links, id, mapHref, original, preserved, mapSystem: curated.mapSystem, reference
         });

@@ -1,0 +1,797 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Oryss",
+  "genitiv": "von Oryss",
+  "dossierName": "Oryss-Dossier",
+  "klasse": "Eisriese",
+  "intro": "Oryss ist ein türkis bis blaugrau erscheinender Eisriese mit rund 20 Erdmassen, starken Winden und mehreren schmalen, diffusen Ringen. Seine Achsneigung von etwa 31° führt zu langen saisonalen Veränderungen. Oryss umkreist Terev in 9,3 AE Abstand und braucht für einen Umlauf 30,5 Jahre.",
+  "globusDaten": {
+    "planet": "zarter-gasriese-im-sternenfeld",
+    "klasse": "Eisriese",
+    "radius": 26121000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=nerath-stern&objekt=nerath-oryss",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-DA09E556E9"
+    ],
+    [
+      "Typ",
+      "Eisriese"
+    ],
+    [
+      "Sternsystem",
+      "Terev-System"
+    ],
+    [
+      "Zentralkörper",
+      "Terev"
+    ],
+    [
+      "Große Halbachse",
+      "9,3 AE"
+    ],
+    [
+      "Umlaufzeit",
+      "30,5 Jahre"
+    ],
+    [
+      "Durchmesser",
+      "52.242 km"
+    ],
+    [
+      "Masse",
+      "20 Erdmassen"
+    ],
+    [
+      "Schwerkraft",
+      "1,19 g"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -199 °C"
+    ],
+    [
+      "Monde",
+      "3 (Hevin, Thyl, Vorra)"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Terev-System"
+    ],
+    [
+      "Zentralstern",
+      "Terev",
+      "inhalte/himmelskoerper/sterne/details/terev/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "9,3 AE"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Oryss im Terev-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=nerath-stern&objekt=nerath-oryss",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Terev",
+      "href": "inhalte/himmelskoerper/sterne/details/terev/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Hevin",
+      "href": "inhalte/himmelskoerper/monde/details/hevin/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Thyl",
+      "href": "inhalte/himmelskoerper/monde/details/thyl/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Vorra",
+      "href": "inhalte/himmelskoerper/monde/details/vorra/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Synaptoiden",
+      "titel": "Nerath",
+      "href": "inhalte/himmelskoerper/planeten/details/nerath/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Synaptoiden",
+      "href": "inhalte/spezies/Mentale Spezies/Synaptoiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Terev-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=nerath-stern&objekt=nerath-oryss"
+    },
+    {
+      "titel": "Speziesdossier Synaptoiden",
+      "href": "inhalte/spezies/Mentale Spezies/Synaptoiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#070a0a",
+      "tiefe": "#101716",
+      "akzent": "#b9e1de",
+      "sand": "#bfd9bc",
+      "moos": "#98ddb3",
+      "ozean": "#7ac1d6",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#435e5c"
+    }
+  },
+  "kapitel": {
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Oryss auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Oryss",
+          "text": [
+            "Oryss ist ein türkis bis blaugrau erscheinender Eisriese mit rund 20 Erdmassen, starken Winden und mehreren schmalen, diffusen Ringen. Seine Achsneigung von etwa 31° führt zu langen saisonalen Veränderungen.",
+            "Oryss umkreist Terev in 9,3 AE Abstand und braucht für einen Umlauf 30,5 Jahre."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Eisriese"
+            ],
+            [
+              "Sternsystem",
+              "Terev-System"
+            ],
+            [
+              "Zentralkörper",
+              "Terev"
+            ],
+            [
+              "Große Halbachse",
+              "9,3 AE"
+            ],
+            [
+              "Umlaufzeit",
+              "30,5 Jahre"
+            ],
+            [
+              "Durchmesser",
+              "52.242 km"
+            ],
+            [
+              "Masse",
+              "20 Erdmassen"
+            ],
+            [
+              "Schwerkraft",
+              "1,19 g"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -199 °C"
+            ],
+            [
+              "Monde",
+              "3 (Hevin, Thyl, Vorra)"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Nerath",
+          "text": [
+            "Das Terev-System ist die Heimat der Synaptoiden: Ihr Planet Nerath umkreist Terev."
+          ],
+          "verweise": [
+            [
+              "Nerath",
+              "inhalte/himmelskoerper/planeten/details/nerath/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Synaptoiden",
+              "inhalte/spezies/Mentale Spezies/Synaptoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Oryss im Terev-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Terev"
+            ],
+            [
+              "Große Halbachse",
+              "9,3 AE (1.391,3 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,042"
+            ],
+            [
+              "Bahnneigung",
+              "1,8°"
+            ],
+            [
+              "Umlaufzeit",
+              "30,5 Jahre"
+            ],
+            [
+              "Einstrahlung",
+              "0,007-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Am Himmel von Oryss",
+          "text": [
+            "Terev erscheint von hier aus etwa 0,05° groß (die Sonne von der Erde: 0,53°)."
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Terev · Stern",
+              "Orangegelber Zwerg (K0 V)"
+            ],
+            [
+              "Vaskir · 0,16 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Sereth · 0,42 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Nerath · 0,93 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Talvek · 1,57 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Urakan · 4,4 AE",
+              "Gasriese"
+            ],
+            [
+              "Oryss · 9,3 AE · dieses Dossier",
+              "Eisriese"
+            ],
+            [
+              "Veyl · 22,8 AE",
+              "Eisplanet"
+            ],
+            [
+              "Relt · 44 AE",
+              "Zwergplanet"
+            ],
+            [
+              "Othir · 52 AE",
+              "Zwergplanet"
+            ],
+            [
+              "Skalenband · 2,2–3,2 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Taren-Saum · 38–65 AE",
+              "Kleinkörpergürtel"
+            ],
+            [
+              "Terev-Fernwolke · 1.500–8.000 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Terev",
+              "inhalte/himmelskoerper/sterne/details/terev/hauptseite/index.html"
+            ],
+            [
+              "Vaskir",
+              "inhalte/himmelskoerper/planeten/details/vaskir/hauptseite/index.html"
+            ],
+            [
+              "Sereth",
+              "inhalte/himmelskoerper/planeten/details/sereth/hauptseite/index.html"
+            ],
+            [
+              "Nerath",
+              "inhalte/himmelskoerper/planeten/details/nerath/hauptseite/index.html"
+            ],
+            [
+              "Talvek",
+              "inhalte/himmelskoerper/planeten/details/talvek/hauptseite/index.html"
+            ],
+            [
+              "Urakan",
+              "inhalte/himmelskoerper/planeten/details/urakan/hauptseite/index.html"
+            ],
+            [
+              "Veyl",
+              "inhalte/himmelskoerper/planeten/details/veyl/hauptseite/index.html"
+            ],
+            [
+              "Relt",
+              "inhalte/himmelskoerper/zwergplaneten/details/relt/hauptseite/index.html"
+            ],
+            [
+              "Othir",
+              "inhalte/himmelskoerper/zwergplaneten/details/othir/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Oryss.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "26.121 km"
+            ],
+            [
+              "Masse",
+              "20 Erdmassen"
+            ],
+            [
+              "Mittlere Dichte",
+              "1,6 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "11,67 m/s² (1,19 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "24,71 km/s"
+            ]
+          ],
+          "vergleich": {
+            "mit": "Erde",
+            "werte": [
+              [
+                "Durchmesser",
+                52242,
+                12742,
+                "km"
+              ],
+              [
+                "Masse",
+                20,
+                1,
+                "Erdmassen"
+              ],
+              [
+                "Schwerkraft",
+                1.19,
+                1,
+                "g"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "Planetare Struktur": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Planetare Struktur von Oryss.",
+      "abschnitte": [
+        {
+          "titel": "Schalenbau",
+          "schichten": [
+            [
+              "Atmosphäre",
+              "Wasserstoff, Helium und Methan"
+            ],
+            [
+              "Eismantel",
+              "Wasser, Ammoniak und Methan unter hohem Druck"
+            ],
+            [
+              "Kern",
+              "Gestein und Metall"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geografie": {
+      "gruppe": "Natur",
+      "icon": "△",
+      "intro": "Geografie von Oryss.",
+      "abschnitte": [
+        {
+          "titel": "Oberfläche",
+          "text": [
+            "Oryss besitzt keine feste Oberfläche. Sichtbar sind Wolkenbänder, Wirbel und Stürme."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Oryss.",
+      "abschnitte": [
+        {
+          "titel": "Gashülle",
+          "text": [
+            "Oryss besitzt keine feste Oberfläche; die Hülle geht nach innen allmählich in dichtere Schichten über."
+          ],
+          "balken": {
+            "werte": [
+              [
+                "Wasserstoff",
+                80
+              ],
+              [
+                "Helium",
+                17
+              ],
+              [
+                "Methan",
+                2.3
+              ],
+              [
+                "Spurengase",
+                0.7
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Oryss.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 9,3 AE Abstand zu Terev liegt die Gleichgewichtstemperatur von Oryss bei rund -199 °C – eisig kalt."
+          ]
+        }
+      ]
+    },
+    "Gewässer": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gewässer von Oryss.",
+      "abschnitte": [
+        {
+          "titel": "Wasser",
+          "text": [
+            "Wasser liegt in den Wolkenschichten und tief im Inneren unter hohem Druck vor."
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Oryss.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Ohne feste Oberfläche gibt es keine Geologie im engeren Sinn; im Inneren herrschen extreme Drücke und Temperaturen."
+          ]
+        }
+      ]
+    },
+    "Biosphäre": {
+      "gruppe": "Natur",
+      "icon": "❧",
+      "intro": "Biosphäre von Oryss.",
+      "abschnitte": [
+        {
+          "titel": "Leben",
+          "text": [
+            "Auf Oryss ist kein Leben verzeichnet."
+          ]
+        }
+      ]
+    },
+    "Spezies": {
+      "gruppe": "Zivilisation",
+      "icon": "✿",
+      "intro": "Spezies von Oryss.",
+      "abschnitte": [
+        {
+          "titel": "Bewohner",
+          "text": [
+            "Oryss ist keine Heimat einer intelligenten Spezies."
+          ]
+        },
+        {
+          "titel": "Im System von Nerath",
+          "text": [
+            "Das Terev-System ist die Heimat der Synaptoiden: Ihr Planet Nerath umkreist Terev."
+          ],
+          "verweise": [
+            [
+              "Nerath",
+              "inhalte/himmelskoerper/planeten/details/nerath/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Synaptoiden",
+              "inhalte/spezies/Mentale Spezies/Synaptoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Zivilisation": {
+      "gruppe": "Zivilisation",
+      "icon": "▥",
+      "intro": "Zivilisation von Oryss.",
+      "abschnitte": [
+        {
+          "titel": "Siedlungen",
+          "text": [
+            "Für Oryss sind keine dauerhaften Siedlungen verzeichnet."
+          ]
+        },
+        {
+          "titel": "Im System von Nerath",
+          "text": [
+            "Das Terev-System ist die Heimat der Synaptoiden: Ihr Planet Nerath umkreist Terev."
+          ],
+          "verweise": [
+            [
+              "Nerath",
+              "inhalte/himmelskoerper/planeten/details/nerath/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Synaptoiden",
+              "inhalte/spezies/Mentale Spezies/Synaptoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Oryss.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Oryss entstand zusammen mit dem Terev-System vor rund 5,6 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Fraktionen": {
+      "gruppe": "Zivilisation",
+      "icon": "◇",
+      "intro": "Fraktionen von Oryss.",
+      "abschnitte": [
+        {
+          "titel": "Ansprüche",
+          "text": [
+            "Für Oryss sind keine Fraktionsansprüche verzeichnet."
+          ]
+        }
+      ]
+    },
+    "Rohstoffe": {
+      "gruppe": "Weitere",
+      "icon": "⬡",
+      "intro": "Rohstoffe von Oryss.",
+      "abschnitte": [
+        {
+          "titel": "Rohstoffe",
+          "liste": [
+            "Wasserstoff",
+            "Methan",
+            "Wassereis"
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Oryss.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Gibt es flüssige Schichten im Eismantel?",
+            "Wie entstand die Achslage?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Oryss ist mit allen Bahndaten im Terev-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=nerath-stern&objekt=nerath-oryss"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Oryss.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "3 Monde: Hevin, Thyl, Vorra"
+          ]
+        },
+        {
+          "titel": "Monde",
+          "karten": [
+            {
+              "titel": "Hevin",
+              "text": "50 km Durchmesser, Umlauf in 21,6 Stunden. Hevin ist ein kleiner ringnaher Mond des Oryss; seine Gravitation beeinflusst die Verteilung der Ringpartikel."
+            },
+            {
+              "titel": "Thyl",
+              "text": "1.560 km Durchmesser, Umlauf in 4,8 Tage. Thyl ist ein eisreicher größerer Mond des Oryss mit alter, kraterreicher Oberfläche; tief liegende Flüssigkeitsschichten sind möglich."
+            },
+            {
+              "titel": "Vorra",
+              "text": "90 km Durchmesser, Umlauf in 280 Tage. Vorra ist ein kleiner, unregelmäßiger Mond mit dunkler Oberfläche auf weiter, rückläufiger Bahn – vermutlich ein eingefangener Kleinkörper."
+            }
+          ],
+          "verweise": [
+            [
+              "Hevin",
+              "inhalte/himmelskoerper/monde/details/hevin/hauptseite/index.html"
+            ],
+            [
+              "Thyl",
+              "inhalte/himmelskoerper/monde/details/thyl/hauptseite/index.html"
+            ],
+            [
+              "Vorra",
+              "inhalte/himmelskoerper/monde/details/vorra/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Ein Eisriese",
+          "text": [
+            "Oryss enthält einen hohen Anteil schwererer flüchtiger Stoffe; im Inneren herrschen hohe Drücke und Temperaturen. Die Bezeichnung Eisriese bedeutet nicht, dass er eine feste Eisoberfläche besitzt. Methan färbt ihn türkis bis blaugrau; die Achsneigung von etwa 31° bewirkt lange Jahreszeiten."
+          ]
+        },
+        {
+          "titel": "Besondere Ereignisse",
+          "karten": [
+            {
+              "titel": "Polare Jahreszeiten",
+              "text": "Langfristige Änderungen der Einstrahlung."
+            },
+            {
+              "titel": "Magnetische Leuchterscheinungen",
+              "text": "Polarlichter durch geladene Teilchen."
+            },
+            {
+              "titel": "Große Wirbel",
+              "text": "Unregelmäßige Sturmsysteme."
+            },
+            {
+              "titel": "Ringveränderungen",
+              "text": "Kollisionen und Gravitation formen die Ringe."
+            },
+            {
+              "titel": "Ringwenden",
+              "text": "Die Ringe erscheinen je nach Blickrichtung stark verändert."
+            }
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Oryss.",
+      "abschnitte": [
+        {
+          "titel": "Oryss – Archivbild",
+          "bild": true,
+          "bildtext": "Oryss"
+        }
+      ]
+    },
+    "Gaszusammensetzung": {
+      "gruppe": "Weitere",
+      "icon": "◆",
+      "intro": "Gaszusammensetzung von Oryss.",
+      "abschnitte": [
+        {
+          "titel": "Gaszusammensetzung",
+          "text": [
+            "Oryss ist ein türkis bis blaugrau erscheinender Eisriese mit rund 20 Erdmassen, starken Winden und mehreren schmalen, diffusen Ringen. Seine Achsneigung von etwa 31° führt zu langen saisonalen Veränderungen."
+          ]
+        }
+      ]
+    },
+    "Wolkenschichten": {
+      "gruppe": "Weitere",
+      "icon": "◆",
+      "intro": "Wolkenschichten von Oryss.",
+      "abschnitte": [
+        {
+          "titel": "Wolkenschichten",
+          "text": [
+            "Oryss ist ein türkis bis blaugrau erscheinender Eisriese mit rund 20 Erdmassen, starken Winden und mehreren schmalen, diffusen Ringen. Seine Achsneigung von etwa 31° führt zu langen saisonalen Veränderungen."
+          ]
+        }
+      ]
+    },
+    "Stürme": {
+      "gruppe": "Weitere",
+      "icon": "◆",
+      "intro": "Stürme von Oryss.",
+      "abschnitte": [
+        {
+          "titel": "Stürme",
+          "text": [
+            "Oryss ist ein türkis bis blaugrau erscheinender Eisriese mit rund 20 Erdmassen, starken Winden und mehreren schmalen, diffusen Ringen. Seine Achsneigung von etwa 31° führt zu langen saisonalen Veränderungen."
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,676 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Harrek",
+  "genitiv": "von Harrek",
+  "dossierName": "Harrek-Dossier",
+  "klasse": "Heißer Gesteinsplanet",
+  "intro": "Harrek ist eine kompakte, stark bestrahlte Gesteinswelt. Seine alte Krateroberfläche und thermisch beanspruchte Kruste unterscheiden ihn von der trockenen Wüstenwelt Vosan.",
+  "globusDaten": {
+    "planet": "gluhender-lavaplanet-mit-flieenden-magmastromen",
+    "klasse": "Gestein",
+    "radius": 4700000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=ilaren-stern&objekt=ilaren-harrek",
+  "grunddaten": [
+    [
+      "System-ID",
+      "ilaren-harrek"
+    ],
+    [
+      "Archiv-ID",
+      "AP-51A5CFF56A"
+    ],
+    [
+      "Typ",
+      "Heißer Gesteinsplanet"
+    ],
+    [
+      "Sternsystem",
+      "Ilaren-System"
+    ],
+    [
+      "Zentralkörper",
+      "Ilaren"
+    ],
+    [
+      "Große Halbachse",
+      "0,15 AE"
+    ],
+    [
+      "Umlaufzeit",
+      "24 Tage"
+    ],
+    [
+      "Durchmesser",
+      "9.400 km"
+    ],
+    [
+      "Masse",
+      "0,36 Erdmassen"
+    ],
+    [
+      "Schwerkraft",
+      "0,66 g"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. 216 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Ilaren-System"
+    ],
+    [
+      "Zentralstern",
+      "Ilaren",
+      "inhalte/himmelskoerper/sterne/details/ilaren/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "0,15 AE"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Harrek im Ilaren-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=ilaren-stern&objekt=ilaren-harrek",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Ilaren",
+      "href": "inhalte/himmelskoerper/sterne/details/ilaren/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Kollektiden (Tessari)",
+      "titel": "Khaluun",
+      "href": "inhalte/himmelskoerper/planeten/details/khaluun/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Kollektiden (Tessari)",
+      "href": "inhalte/spezies/Mentale Spezies/Kollektiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Ilaren-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=ilaren-stern&objekt=ilaren-harrek"
+    },
+    {
+      "titel": "Speziesdossier Kollektiden (Tessari)",
+      "href": "inhalte/spezies/Mentale Spezies/Kollektiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#090503",
+      "tiefe": "#130a08",
+      "akzent": "#ca9786",
+      "sand": "#ce9a83",
+      "moos": "#a88766",
+      "ozean": "#86736a",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#4e2a1f"
+    }
+  },
+  "kapitel": {
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Harrek auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Harrek",
+          "text": [
+            "Harrek ist der innerste Planet des Systems. Seine stark bestrahlte Oberfläche ist von alten Einschlagsbecken und thermisch beanspruchtem Gestein geprägt; eine komplexe Biosphäre ist nicht bekannt.",
+            "Harrek umkreist Ilaren in 0,15 AE Abstand und braucht für einen Umlauf 24 Tage."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Heißer Gesteinsplanet"
+            ],
+            [
+              "Sternsystem",
+              "Ilaren-System"
+            ],
+            [
+              "Zentralkörper",
+              "Ilaren"
+            ],
+            [
+              "Große Halbachse",
+              "0,15 AE"
+            ],
+            [
+              "Umlaufzeit",
+              "24 Tage"
+            ],
+            [
+              "Durchmesser",
+              "9.400 km"
+            ],
+            [
+              "Masse",
+              "0,36 Erdmassen"
+            ],
+            [
+              "Schwerkraft",
+              "0,66 g"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. 216 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Khaluun",
+          "text": [
+            "Das Ilaren-System ist die Heimat der Kollektiden (Tessari): Ihr Planet Khaluun umkreist Ilaren."
+          ],
+          "verweise": [
+            [
+              "Khaluun",
+              "inhalte/himmelskoerper/planeten/details/khaluun/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Kollektiden (Tessari)",
+              "inhalte/spezies/Mentale Spezies/Kollektiden/hauptseite/Spezies.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Innerste Welt",
+          "text": [
+            "Harrek umläuft Ilaren in 0,15 AE Entfernung. Das Bahnmodell ergibt rund 24 Erdtage und eine Einstrahlung von etwa 11,6 Erden. Die Gleichgewichtstemperatur von rund 216 °C ist ein globaler Strahlungswert, kein einheitlicher Oberflächenmesswert."
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Harrek im Ilaren-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Ilaren"
+            ],
+            [
+              "Große Halbachse",
+              "0,15 AE (22,4 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,015"
+            ],
+            [
+              "Bahnneigung",
+              "2,1°"
+            ],
+            [
+              "Umlaufzeit",
+              "24 Tage"
+            ],
+            [
+              "Einstrahlung",
+              "11,556-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Am Himmel von Harrek",
+          "text": [
+            "Ilaren erscheint von hier aus etwa 2,69° groß (die Sonne von der Erde: 0,53°)."
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Ilaren · Stern",
+              "Orangefarbener Hauptreihenstern (K3 V)"
+            ],
+            [
+              "Harrek · 0,15 AE · dieses Dossier",
+              "Heißer Gesteinsplanet"
+            ],
+            [
+              "Vosan · 0,31 AE",
+              "Trockener Gesteinsplanet"
+            ],
+            [
+              "Khaluun · 0,52 AE",
+              "Gemäßigter, wasserreicher Gesteinsplanet"
+            ],
+            [
+              "Meyt · 0,92 AE",
+              "Kalter Gesteinsplanet"
+            ],
+            [
+              "Daran · 2,45 AE",
+              "Gasriese"
+            ],
+            [
+              "Ulmar · 5,9 AE",
+              "Eisriese"
+            ],
+            [
+              "Ilaren-Asteroidengürtel · 1,3–1,9 AE",
+              "Asteroidengürtel"
+            ]
+          ],
+          "verweise": [
+            [
+              "Ilaren",
+              "inhalte/himmelskoerper/sterne/details/ilaren/hauptseite/index.html"
+            ],
+            [
+              "Vosan",
+              "inhalte/himmelskoerper/planeten/details/vosan/hauptseite/index.html"
+            ],
+            [
+              "Khaluun",
+              "inhalte/himmelskoerper/planeten/details/khaluun/hauptseite/index.html"
+            ],
+            [
+              "Meyt",
+              "inhalte/himmelskoerper/planeten/details/meyt/hauptseite/index.html"
+            ],
+            [
+              "Daran",
+              "inhalte/himmelskoerper/planeten/details/daran/hauptseite/index.html"
+            ],
+            [
+              "Ulmar",
+              "inhalte/himmelskoerper/planeten/details/ulmar/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Harrek.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "4.700 km"
+            ],
+            [
+              "Masse",
+              "0,36 Erdmassen"
+            ],
+            [
+              "Mittlere Dichte",
+              "4,94 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "6,49 m/s² (0,661 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "7,81 km/s"
+            ]
+          ],
+          "vergleich": {
+            "mit": "Erde",
+            "werte": [
+              [
+                "Durchmesser",
+                9400,
+                12742,
+                "km"
+              ],
+              [
+                "Masse",
+                0.36,
+                1,
+                "Erdmassen"
+              ],
+              [
+                "Schwerkraft",
+                0.66,
+                1,
+                "g"
+              ]
+            ]
+          }
+        },
+        {
+          "titel": "Kompakter Gesteinskörper",
+          "daten": [
+            [
+              "Masse",
+              "0,36 Erdmassen"
+            ],
+            [
+              "Radius",
+              "4.700 km"
+            ],
+            [
+              "Mittlere Dichte",
+              "ca. 4,95 g/cm³"
+            ],
+            [
+              "Oberflächengravitation",
+              "ca. 6,5 m/s²"
+            ]
+          ],
+          "text": [
+            "Die Dichte ist für einen differenzierten Silikat- und Metallkörper plausibel. Die geringere Gravitation als auf der Erde erschwert das langfristige Halten einer dichten Atmosphäre."
+          ]
+        }
+      ]
+    },
+    "Planetare Struktur": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Planetare Struktur von Harrek.",
+      "abschnitte": [
+        {
+          "titel": "Schalenbau",
+          "schichten": [
+            [
+              "Kruste",
+              "Silikatgestein"
+            ],
+            [
+              "Mantel",
+              "Dichteres Silikatgestein"
+            ],
+            [
+              "Kern",
+              "Eisen und Nickel"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geografie": {
+      "gruppe": "Natur",
+      "icon": "△",
+      "intro": "Geografie von Harrek.",
+      "abschnitte": [
+        {
+          "titel": "Oberfläche",
+          "text": [
+            "Die Oberfläche von Harrek ist sehr heiß."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Harrek.",
+      "abschnitte": [
+        {
+          "titel": "Gashülle",
+          "text": [
+            "Eine dichte, kohlendioxidreiche Hülle staut die Wärme von Harrek."
+          ],
+          "balken": {
+            "werte": [
+              [
+                "Kohlendioxid",
+                95
+              ],
+              [
+                "Stickstoff",
+                3.5
+              ],
+              [
+                "Argon und Spurengase",
+                1.5
+              ]
+            ]
+          }
+        },
+        {
+          "titel": "Dünne Exosphäre",
+          "text": [
+            "Als Arbeitsmodell gilt eine sehr dünne, durch Sonnenwind und Einschläge ständig erneuerte Exosphäre. Eine dichte, atembare Atmosphäre ist mit Größe, Hitze und Sternwind nicht vereinbar."
+          ]
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Harrek.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 0,15 AE Abstand zu Ilaren liegt die Gleichgewichtstemperatur von Harrek bei rund 216 °C – sehr heiß. Die dichte Gashülle heizt die Oberfläche zusätzlich auf."
+          ]
+        }
+      ]
+    },
+    "Gewässer": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gewässer von Harrek.",
+      "abschnitte": [
+        {
+          "titel": "Wasser",
+          "text": [
+            "Für flüssiges Wasser ist es viel zu heiß."
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Harrek.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Harrek ist groß genug, um im Inneren noch Wärme zu speichern; Spuren alter vulkanischer Tätigkeit sind wahrscheinlich."
+          ]
+        },
+        {
+          "titel": "Thermisch geprägte Kruste",
+          "text": [
+            "Alte Einschlagsbecken, glasige Schmelzflächen und ausgedehnte Schrumpfungsrisse kennzeichnen Harreks Oberfläche. Starke Temperaturwechsel verursachen mechanische Verwitterung; aktive globale Plattentektonik wird nicht vorausgesetzt."
+          ]
+        }
+      ]
+    },
+    "Biosphäre": {
+      "gruppe": "Natur",
+      "icon": "❧",
+      "intro": "Biosphäre von Harrek.",
+      "abschnitte": [
+        {
+          "titel": "Leben",
+          "text": [
+            "Auf Harrek ist kein Leben verzeichnet."
+          ]
+        }
+      ]
+    },
+    "Spezies": {
+      "gruppe": "Zivilisation",
+      "icon": "✿",
+      "intro": "Spezies von Harrek.",
+      "abschnitte": [
+        {
+          "titel": "Bewohner",
+          "text": [
+            "Harrek ist keine Heimat einer intelligenten Spezies."
+          ]
+        },
+        {
+          "titel": "Im System von Khaluun",
+          "text": [
+            "Das Ilaren-System ist die Heimat der Kollektiden (Tessari): Ihr Planet Khaluun umkreist Ilaren."
+          ],
+          "verweise": [
+            [
+              "Khaluun",
+              "inhalte/himmelskoerper/planeten/details/khaluun/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Kollektiden (Tessari)",
+              "inhalte/spezies/Mentale Spezies/Kollektiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Zivilisation": {
+      "gruppe": "Zivilisation",
+      "icon": "▥",
+      "intro": "Zivilisation von Harrek.",
+      "abschnitte": [
+        {
+          "titel": "Siedlungen",
+          "text": [
+            "Für Harrek sind keine dauerhaften Siedlungen verzeichnet."
+          ]
+        },
+        {
+          "titel": "Im System von Khaluun",
+          "text": [
+            "Das Ilaren-System ist die Heimat der Kollektiden (Tessari): Ihr Planet Khaluun umkreist Ilaren."
+          ],
+          "verweise": [
+            [
+              "Khaluun",
+              "inhalte/himmelskoerper/planeten/details/khaluun/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Kollektiden (Tessari)",
+              "inhalte/spezies/Mentale Spezies/Kollektiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Harrek.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Harrek entstand zusammen mit dem Ilaren-System vor rund 5,6 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Fraktionen": {
+      "gruppe": "Zivilisation",
+      "icon": "◇",
+      "intro": "Fraktionen von Harrek.",
+      "abschnitte": [
+        {
+          "titel": "Ansprüche",
+          "text": [
+            "Für Harrek sind keine Fraktionsansprüche verzeichnet."
+          ]
+        }
+      ]
+    },
+    "Rohstoffe": {
+      "gruppe": "Weitere",
+      "icon": "⬡",
+      "intro": "Rohstoffe von Harrek.",
+      "abschnitte": [
+        {
+          "titel": "Rohstoffe",
+          "liste": [
+            "Silikatgestein",
+            "Metallerze"
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Harrek.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Wie ist der innere Aufbau beschaffen?",
+            "Gab es früher eine dichtere Atmosphäre?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Harrek ist mit allen Bahndaten im Ilaren-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=ilaren-stern&objekt=ilaren-harrek"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Harrek.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Innerster Planet des Ilaren-Systems"
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Harrek.",
+      "abschnitte": [
+        {
+          "titel": "Harrek – Archivbild",
+          "bild": true,
+          "bildtext": "Harrek"
+        }
+      ]
+    }
+  }
+}

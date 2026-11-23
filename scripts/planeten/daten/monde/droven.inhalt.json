@@ -1,0 +1,562 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Droven",
+  "genitiv": "von Droven",
+  "dossierName": "Droven-Dossier",
+  "klasse": "Fels-Eismond",
+  "intro": "Droven ist der äußerste der vier benannten Saevor-Monde und besitzt eine gemischte Gesteins-Eis-Oberfläche. Droven umkreist Saevor in 21,3 Tage.",
+  "globusDaten": {
+    "planet": "droven",
+    "klasse": "Eis",
+    "radius": 760000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=teryn-stern&objekt=teryn-droven",
+  "grunddaten": [
+    [
+      "System-ID",
+      "teryn-droven"
+    ],
+    [
+      "Archiv-ID",
+      "AP-TERYN-DROVEN"
+    ],
+    [
+      "Typ",
+      "Fels-Eismond"
+    ],
+    [
+      "Sternsystem",
+      "Teryn-System"
+    ],
+    [
+      "Zentralkörper",
+      "Saevor"
+    ],
+    [
+      "Große Halbachse",
+      "1.947.780 km"
+    ],
+    [
+      "Umlaufzeit",
+      "21,3 Tage"
+    ],
+    [
+      "Durchmesser",
+      "1.520 km"
+    ],
+    [
+      "Masse",
+      "7,76 · 10^20 kg"
+    ],
+    [
+      "Schwerkraft",
+      "8,96 cm/s²"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -163 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Teryn-System"
+    ],
+    [
+      "Zentralstern",
+      "Teryn",
+      "inhalte/himmelskoerper/sterne/details/teryn/hauptseite/index.html"
+    ],
+    [
+      "Umläuft",
+      "Saevor",
+      "inhalte/himmelskoerper/planeten/details/saevor/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "1.947.780 km"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Droven im Teryn-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=teryn-stern&objekt=teryn-droven",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Teryn",
+      "href": "inhalte/himmelskoerper/sterne/details/teryn/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◍",
+      "art": "Mutterplanet",
+      "titel": "Saevor",
+      "href": "inhalte/himmelskoerper/planeten/details/saevor/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Solitiden",
+      "titel": "Iskara",
+      "href": "inhalte/himmelskoerper/planeten/details/iskara/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Solitiden",
+      "href": "inhalte/spezies/Mentale Spezies/Solitiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Teryn-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=teryn-stern&objekt=teryn-droven"
+    },
+    {
+      "titel": "Speziesdossier Solitiden",
+      "href": "inhalte/spezies/Mentale Spezies/Solitiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#070809",
+      "tiefe": "#101213",
+      "akzent": "#b9c5ca",
+      "sand": "#bfc1af",
+      "moos": "#98bca1",
+      "ozean": "#7aa4be",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#434b4e"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Astronomie"
+      ],
+      [
+        "Planet",
+        "Mutterplanet"
+      ],
+      [
+        "Kräfte",
+        "Gezeiten"
+      ],
+      [
+        "Tiefe",
+        "Geologie"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Mutterplanet": {
+      "gruppe": "Wissenschaft",
+      "icon": "◐",
+      "intro": "Mutterplanet von Droven.",
+      "abschnitte": [
+        {
+          "titel": "Saevor",
+          "text": [
+            "Saevor ist ein Gasriese von etwa 0,68 Jupitermassen mit ausgeprägten Wolkenbändern, ausgedehnten Sturmsystemen und einem modellierten Ringsystem."
+          ],
+          "daten": [
+            [
+              "Typ",
+              "Gasriese"
+            ],
+            [
+              "Durchmesser",
+              "134.000 km"
+            ],
+            [
+              "Abstand des Mondes",
+              "1.947.780 km (29,1 Planetenradien)"
+            ]
+          ],
+          "verweise": [
+            [
+              "Saevor",
+              "inhalte/himmelskoerper/planeten/details/saevor/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Weitere Monde von Saevor",
+          "liste": [
+            "Rhal – Umlauf in 2,1 Tage",
+            "Orima – Umlauf in 4,8 Tage",
+            "Kesth – Umlauf in 10,4 Tage"
+          ],
+          "verweise": [
+            [
+              "Rhal",
+              "inhalte/himmelskoerper/monde/details/rhal/hauptseite/index.html"
+            ],
+            [
+              "Orima",
+              "inhalte/himmelskoerper/monde/details/orima/hauptseite/index.html"
+            ],
+            [
+              "Kesth",
+              "inhalte/himmelskoerper/monde/details/kesth/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Gezeiten": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gezeiten von Droven.",
+      "abschnitte": [
+        {
+          "titel": "Gezeitenkräfte",
+          "text": [
+            "Auf seiner Bahn in 1.947.780 km Abstand wirken starke Gezeitenkräfte von Saevor auf Droven."
+          ]
+        }
+      ]
+    },
+    "Gebundene Rotation": {
+      "gruppe": "Wissenschaft",
+      "icon": "↻",
+      "intro": "Gebundene Rotation von Droven.",
+      "abschnitte": [
+        {
+          "titel": "Rotation",
+          "text": [
+            "Droven wendet Saevor vermutlich stets dieselbe Seite zu: Ein Tag dauert so lange wie ein Umlauf – 21,3 Tage."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Droven auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Droven",
+          "text": [
+            "Droven ist der äußerste der vier benannten Saevor-Monde und besitzt eine gemischte Gesteins-Eis-Oberfläche.",
+            "Droven umkreist Saevor in 21,3 Tage."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Fels-Eismond"
+            ],
+            [
+              "Sternsystem",
+              "Teryn-System"
+            ],
+            [
+              "Zentralkörper",
+              "Saevor"
+            ],
+            [
+              "Große Halbachse",
+              "1.947.780 km"
+            ],
+            [
+              "Umlaufzeit",
+              "21,3 Tage"
+            ],
+            [
+              "Durchmesser",
+              "1.520 km"
+            ],
+            [
+              "Masse",
+              "7,76 · 10^20 kg"
+            ],
+            [
+              "Schwerkraft",
+              "8,96 cm/s²"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -163 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Iskara",
+          "text": [
+            "Das Teryn-System ist die Heimat der Solitiden: Ihr Planet Iskara umkreist Teryn."
+          ],
+          "verweise": [
+            [
+              "Iskara",
+              "inhalte/himmelskoerper/planeten/details/iskara/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Solitiden",
+              "inhalte/spezies/Mentale Spezies/Solitiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Droven im Teryn-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Saevor"
+            ],
+            [
+              "Große Halbachse",
+              "1.947.780 km"
+            ],
+            [
+              "Exzentrizität",
+              "0,013"
+            ],
+            [
+              "Bahnneigung",
+              "1,1°"
+            ],
+            [
+              "Umlaufzeit",
+              "21,3 Tage"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Teryn · Stern",
+              "Orangefarbener Hauptreihenstern (K4 V)"
+            ],
+            [
+              "Dareth · 0,15 AE",
+              "Heißer Gesteinsplanet"
+            ],
+            [
+              "Nura · 0,34 AE",
+              "Heißer terrestrischer Planet"
+            ],
+            [
+              "Iskara · 0,61 AE",
+              "Bewohnter terrestrischer Silikatplanet"
+            ],
+            [
+              "Veldros · 1,08 AE",
+              "Kalte Supererde"
+            ],
+            [
+              "Saevor · 2,84 AE",
+              "Gasriese"
+            ],
+            [
+              "Ynderal · 5,9 AE",
+              "Eisreicher Riesenplanet"
+            ],
+            [
+              "Veylan-Asteroidengürtel · 1,7–2 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußere Kleinkörperregion · 14–38 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Teryn",
+              "inhalte/himmelskoerper/sterne/details/teryn/hauptseite/index.html"
+            ],
+            [
+              "Dareth",
+              "inhalte/himmelskoerper/planeten/details/dareth/hauptseite/index.html"
+            ],
+            [
+              "Nura",
+              "inhalte/himmelskoerper/planeten/details/nura/hauptseite/index.html"
+            ],
+            [
+              "Iskara",
+              "inhalte/himmelskoerper/planeten/details/iskara/hauptseite/index.html"
+            ],
+            [
+              "Veldros",
+              "inhalte/himmelskoerper/planeten/details/veldros/hauptseite/index.html"
+            ],
+            [
+              "Saevor",
+              "inhalte/himmelskoerper/planeten/details/saevor/hauptseite/index.html"
+            ],
+            [
+              "Ynderal",
+              "inhalte/himmelskoerper/planeten/details/ynderal/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Droven.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "760 km"
+            ],
+            [
+              "Masse",
+              "7,76 · 10^20 kg"
+            ],
+            [
+              "Mittlere Dichte",
+              "0,42 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "0,09 m/s² (0,009 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "0,37 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Droven.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Droven ist geologisch weitgehend erstarrt; Einschläge haben seine Oberfläche geformt."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Droven.",
+      "abschnitte": [
+        {
+          "titel": "Gashülle",
+          "text": [
+            "Droven besitzt keine nennenswerte Atmosphäre – dafür ist die Schwerkraft zu gering."
+          ]
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Droven.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 2,84 AE Abstand zu Teryn liegt die Gleichgewichtstemperatur von Droven bei rund -163 °C – eisig kalt."
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Droven.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Droven entstand zusammen mit dem Teryn-System vor rund 6,1 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Droven.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Ist der Mond eingefangen oder mit seinem Planeten entstanden?",
+            "Welche Spuren tragen seine ältesten Krater?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Droven ist mit allen Bahndaten im Teryn-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=teryn-stern&objekt=teryn-droven"
+            ]
+          ]
+        },
+        {
+          "titel": "Untersuchung im Teryn-System",
+          "text": [
+            "Wie unterscheiden sich die eisreichen und felsigen Gebiete auf Saevors äußerstem katalogisierten Mond?"
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Droven.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Droven ist der äußerste der vier benannten Saevor-Monde und besitzt eine gemischte Gesteins-Eis-Oberfläche."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Droven.",
+      "abschnitte": [
+        {
+          "titel": "Illustrationsmotiv",
+          "bild": true,
+          "bildtext": "Illustration anhand eines vorhandenen Motivs. Sie zeigt den Himmelskörpertyp und keine bestätigten Oberflächendetails."
+        }
+      ]
+    }
+  }
+}

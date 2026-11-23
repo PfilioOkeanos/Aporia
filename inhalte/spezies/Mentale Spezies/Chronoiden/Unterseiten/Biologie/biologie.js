@@ -1,2 +1,3 @@
-// Chronoiden – Biologie · erzeugt vom Spezies-Baukasten (scripts/spezies) – Änderungen dort vornehmen
+// Chronoiden – Bewusstsein
+// Gemeinsame Funktionen (Topbar, Sidebar, Routen, Klappkapitel, Bildkarussell) kommen aus der Basis.
 import "../../chronoiden-basis.js";

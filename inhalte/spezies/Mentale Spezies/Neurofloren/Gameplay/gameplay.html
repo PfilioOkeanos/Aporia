@@ -19,7 +19,7 @@
         <div data-aporia-sidebar></div>
         <main class="st-dossier" id="inhalt">
             <header class="st-hero st-hero--reiter">
-                
+                <img class="st-hero-bild" src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Neurofloren/Forschung/APORIA_%20Neurofloren-Terraforming-Labor-3.png" alt="" fetchpriority="high" decoding="async">
                 <span class="st-glanz" aria-hidden="true"></span>
                 <div class="st-hero-text">
                     <nav class="st-pfad" aria-label="Archivpfad"><a data-route="spezies" href="../../../Spezies_%C3%BCbersicht/Spezies.html">Spezies</a><span aria-hidden="true">›</span><a data-route="spezies-mental" href="../../%C3%9Cbersichtsseite%20Mentale%20Spezies/Uebersicht.html">Mentale Spezies</a><span aria-hidden="true">›</span><a data-route="spezies-mental-9" href="../hauptseite/Spezies.html">Neurofloren</a><span aria-hidden="true">›</span><span aria-current="page">Spielintegration</span></nav>
@@ -39,18 +39,236 @@
                 <a href="../Unterseiten/Geschichte/geschichte.html" data-route="spezies-mental-9-geschichte"><span aria-hidden="true">⧗</span>Geschichte</a>
                 <a href="gameplay.html" data-route="spezies-mental-9-gameplay" aria-current="page"><span aria-hidden="true">◈</span>Spielintegration</a>
                 <a href="../Forschung/forschung.html" data-route="spezies-mental-9-forschung"><span aria-hidden="true">⚗</span>Forschung</a>
+                <a href="../Unterseiten/Technologien/technologien.html" data-route="spezies-mental-9-technologien"><span aria-hidden="true">⚙</span>Technologien</a>
                 <a href="../Unterseiten/Medien/medien.html" data-route="spezies-mental-9-medien"><span aria-hidden="true">▣</span>Medien</a>
             </nav>
             <div class="st-layout">
                 <div class="st-inhalt">
-                    <details class="st-panel st-karte" id="noch-offen" open>
-                        <summary><span class="st-nr">…</span><h2>Spielintegration</h2><span class="st-chevron" aria-hidden="true"></span></summary>
+                    <details class="st-panel st-karte" id="k-steckbrief" open>
+                        <summary><span class="st-nr">◇</span><h2>Steckbrief</h2><span class="st-chevron" aria-hidden="true"></span></summary>
                         <div class="st-text">
-                            <p class="st-offen">Noch nicht ausgearbeitet.</p>
-                            <p class="st-quelle">Vorgesehene Infodateien (noch ohne Text): Gameplay/.gitkeep</p>
+                            <dl class="st-fakten"><div><dt>Version</dt><dd>2.0</dd></div><div><dt>Spieluniversum</dt><dd>APORIA</dd></div><div><dt>Spiel</dt><dd>Unter fremden Kronen</dd></div></dl>
+                            <p class="st-quelle">Quelle: Info_material · Neurofloren · Gameplay/.gitkeep</p>
                         </div>
                     </details>
-                    
+                    <details class="st-panel st-karte" id="k-1-gameplay-grundkonzept">
+                        <summary><span class="st-nr">1</span><h2>Gameplay-Grundkonzept</h2><span class="st-chevron" aria-hidden="true"></span></summary>
+                        <div class="st-text">
+                            <p>Neurofloren besitzen ein eigenständiges Gameplay-System.</p>
+                            <p>Im Mittelpunkt stehen:</p>
+                            <ul><li>Kontrolle biologischer Netzwerke</li><li>Versorgung des Hauptkörpers</li><li>Fernsteuerung von Maschinen</li><li>Parallele Aufgabenbearbeitung</li><li>Ausbau von Infrastruktur</li><li>Forschung</li><li>Neurologische Entwicklung</li><li>Strategische Planung</li></ul>
+                            <p>Ihr Spielstil unterscheidet sich grundlegend von humanoiden Kämpfern.</p>
+                            <p class="st-quelle">Quelle: Info_material · Neurofloren · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="st-panel st-karte" id="k-2-spielbarer-charakter">
+                        <summary><span class="st-nr">2</span><h2>Spielbarer Charakter</h2><span class="st-chevron" aria-hidden="true"></span></summary>
+                        <div class="st-text">
+                            <p>Der eigentliche Charakter ist ein lebendiger Neuroflor.</p>
+                            <p>Der Spieler kontrolliert den Hauptkörper und kann kompatible Maschinen bedienen.</p>
+                            <p>Der Neuroflor bleibt ein einziges Individuum.</p>
+                            <p>Roboter und Fahrzeuge besitzen getrennte technische Identitäten und sind keine zusätzlichen biologischen Charaktere.</p>
+                            <p class="st-quelle">Quelle: Info_material · Neurofloren · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="st-panel st-karte" id="k-3-spielstart">
+                        <summary><span class="st-nr">3</span><h2>Spielstart</h2><span class="st-chevron" aria-hidden="true"></span></summary>
+                        <div class="st-text">
+                            <p>Eine mögliche neuroflorische Startkampagne beginnt während der späten Jugendphase.</p>
+                            <p>Der Spieler verfügt über:</p>
+                            <ul><li>Einen begrenzten biologischen Körperbereich</li><li>Mehrere einfache Ganglien</li><li>Grundlegende Sinnesorgane</li><li>Einfache Steuerungsfähigkeiten</li><li>Begrenzte Ressourcen</li><li>Einen geschützten Lebensraum</li></ul>
+                            <p>Der Einstieg vermittelt Ernährung, Wachstum, Versorgung, Kommunikation und den Umgang mit Maschinen.</p>
+                            <p class="st-quelle">Quelle: Info_material · Neurofloren · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="st-panel st-karte" id="k-4-steuerungsmodi">
+                        <summary><span class="st-nr">4</span><h2>Steuerungsmodi</h2><span class="st-chevron" aria-hidden="true"></span></summary>
+                        <div class="st-text">
+                            <dl class="st-fakten"><div><dt>Biologischer Modus</dt><dd>Verwaltung von Ganglien, Nervenbahnen und Körperregionen.</dd></div><div><dt>Sensorischer Modus</dt><dd>Wahrnehmung über ausgewählte Sinnesfelder.</dd></div><div><dt>Maschinenmodus</dt><dd>Steuerung einzelner Roboter oder Fahrzeuge.</dd></div><div><dt>Strategischer Modus</dt><dd>Übersicht über mehrere technische und biologische Systeme.</dd></div></dl>
+                            <p class="st-quelle">Quelle: Info_material · Neurofloren · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="st-panel st-karte" id="k-5-bewegung">
+                        <summary><span class="st-nr">5</span><h2>Bewegung</h2><span class="st-chevron" aria-hidden="true"></span></summary>
+                        <div class="st-text">
+                            <p>Der biologische Körper kann sich langsam bewegen.</p>
+                            <p>Dazu gehören:</p>
+                            <ul><li>Kriechen</li><li>Verankerung</li><li>Strecken</li><li>Zusammenziehen</li><li>Verlagerung einzelner Körperbereiche</li></ul>
+                            <p>Für schnellere Bewegungen werden Fahrzeuge, Roboter oder Transportplattformen verwendet.</p>
+                            <p class="st-quelle">Quelle: Info_material · Neurofloren · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="st-panel st-karte" id="k-6-fahigkeitenentwicklung">
+                        <summary><span class="st-nr">6</span><h2>Fähigkeitenentwicklung</h2><span class="st-chevron" aria-hidden="true"></span></summary>
+                        <div class="st-text">
+                            <p>Ein spezieller Entwicklungsbaum kann folgende Zweige enthalten:</p>
+                            <dl class="st-fakten"><div><dt>Sensorik</dt><dd>Verbesserte Wahrnehmung lokaler Umweltveränderungen.</dd></div><div><dt>Neuronale Koordination</dt><dd>Bessere Abstimmung mehrerer Ganglien.</dd></div><div><dt>Gedächtnisorganisation</dt><dd>Effizientere Nutzung erlernter Informationen.</dd></div><div><dt>Technische Steuerung</dt><dd>Gleichzeitige Bedienung zusätzlicher Maschinen.</dd></div><div><dt>Biologische Widerstandsfähigkeit</dt><dd>Besserer Schutz gegenüber begrenzten Schäden.</dd></div><div><dt>Versorgungsoptimierung</dt><dd>Effizientere Nutzung von Energie und Nährstoffen.</dd></div></dl>
+                            <p class="st-quelle">Quelle: Info_material · Neurofloren · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="st-panel st-karte" id="k-7-wachstumssystem">
+                        <summary><span class="st-nr">7</span><h2>Wachstumssystem</h2><span class="st-chevron" aria-hidden="true"></span></summary>
+                        <div class="st-text">
+                            <p>Der Spieler kann innerhalb geeigneter Grenzen neue biologische Strukturen entwickeln.</p>
+                            <p>Dafür benötigt er:</p>
+                            <ul><li>Organische Nährstoffe</li><li>Energie</li><li>Wasser</li><li>Sauerstoff</li><li>Geeigneten Lebensraum</li><li>Entwicklungszeit</li></ul>
+                            <p>Neue Ganglien und Verbindungen benötigen ausreichend Versorgung.</p>
+                            <p>Unkontrolliertes Wachstum kann Nachteile verursachen.</p>
+                            <p class="st-quelle">Quelle: Info_material · Neurofloren · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="st-panel st-karte" id="k-8-fernsteuerung">
+                        <summary><span class="st-nr">8</span><h2>Fernsteuerung</h2><span class="st-chevron" aria-hidden="true"></span></summary>
+                        <div class="st-text">
+                            <p>Neurofloren können mehrere Maschinen in einem technischen Netzwerk betreiben.</p>
+                            <p>Dabei wird zwischen aktiver Direktsteuerung und automatisierten Aufgaben unterschieden.</p>
+                            <p>Ein Spieler kann nicht beliebig viele anspruchsvolle Maschinen gleichzeitig manuell kontrollieren.</p>
+                            <p>Verfügbare Bandbreite, Signallaufzeit, Rechenleistung und biologische Aufmerksamkeit begrenzen die Steuerung.</p>
+                            <p class="st-quelle">Quelle: Info_material · Neurofloren · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="st-panel st-karte" id="k-9-kampf">
+                        <summary><span class="st-nr">9</span><h2>Kampf</h2><span class="st-chevron" aria-hidden="true"></span></summary>
+                        <div class="st-text">
+                            <p>Neurofloren verwenden bevorzugt:</p>
+                            <ul><li>Verteidigungsdrohnen</li><li>Ferngesteuerte Roboter</li><li>Gepanzerte Fahrzeuge</li><li>Sensoranlagen</li><li>Automatische Geschütze</li><li>Technische Sperrsysteme</li><li>Elektronische Sicherheitsmaßnahmen</li></ul>
+                            <p>Direkter Kampf mit empfindlichem Nervengewebe ist gefährlich.</p>
+                            <p class="st-quelle">Quelle: Info_material · Neurofloren · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="st-panel st-karte" id="k-10-schadenssystem">
+                        <summary><span class="st-nr">10</span><h2>Schadenssystem</h2><span class="st-chevron" aria-hidden="true"></span></summary>
+                        <div class="st-text">
+                            <p>Schäden können verschiedene Körperfunktionen beeinträchtigen.</p>
+                            <dl class="st-fakten"><div><dt>Gewebeschäden</dt><dd>Verlust von Körpermasse und lokalen Funktionen.</dd></div><div><dt>Versorgungsschäden</dt><dd>Reduzierte Sauerstoff- oder Nährstoffversorgung.</dd></div><div><dt>Leitungsschäden</dt><dd>Verlangsamte oder unterbrochene Signalwege.</dd></div><div><dt>Ganglienschäden</dt><dd>Verlust bestimmter Fähigkeiten oder Erinnerungen.</dd></div><div><dt>Systemschäden</dt><dd>Übergreifende Störung der biologischen Koordination.</dd></div></dl>
+                            <p class="st-quelle">Quelle: Info_material · Neurofloren · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="st-panel st-karte" id="k-11-heilung">
+                        <summary><span class="st-nr">11</span><h2>Heilung</h2><span class="st-chevron" aria-hidden="true"></span></summary>
+                        <div class="st-text">
+                            <p>Medizinische Systeme ermöglichen:</p>
+                            <ul><li>Wundverschluss</li><li>Reparatur von Kreisläufen</li><li>Wiederherstellung von Leitungswegen</li><li>Behandlung von Infektionen</li><li>Gewebeersatz</li><li>Implantation technischer Überbrückungen</li></ul>
+                            <p>Schwere neurologische Schäden können bleibende Folgen haben.</p>
+                            <p class="st-quelle">Quelle: Info_material · Neurofloren · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="st-panel st-karte" id="k-12-bauen-und-herstellung">
+                        <summary><span class="st-nr">12</span><h2>Bauen und Herstellung</h2><span class="st-chevron" aria-hidden="true"></span></summary>
+                        <div class="st-text">
+                            <p>Neurofloren können große technische Anlagen errichten.</p>
+                            <p>Geeignete Bauwerke:</p>
+                            <ul><li>Biohabitate</li><li>Werkstätten</li><li>Wasseraufbereitungsanlagen</li><li>Forschungsstationen</li><li>Transportkanäle</li><li>Roboterfabriken</li><li>Medizinische Einrichtungen</li><li>Raumfahrtanlagen</li></ul>
+                            <p class="st-quelle">Quelle: Info_material · Neurofloren · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="st-panel st-karte" id="k-13-raumfahrt">
+                        <summary><span class="st-nr">13</span><h2>Raumfahrt</h2><span class="st-chevron" aria-hidden="true"></span></summary>
+                        <div class="st-text">
+                            <p>Für außerplanetare Missionen stehen unterschiedliche Möglichkeiten zur Verfügung.</p>
+                            <dl class="st-fakten"><div><dt>Robotische Missionen</dt><dd>Der Hauptkörper bleibt auf dem Heimatplaneten oder in einem Habitat.</dd></div><div><dt>Mobile Biohabitate</dt><dd>Der lebendige Körper wird in einem geschützten System transportiert.</dd></div><div><dt>Raumstationskolonien</dt><dd>Neurofloren leben in speziell ausgestatteten stationären Einrichtungen.</dd></div></dl>
+                            <p class="st-quelle">Quelle: Info_material · Neurofloren · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="st-panel st-karte" id="k-14-missionstypen">
+                        <summary><span class="st-nr">14</span><h2>Missionstypen</h2><span class="st-chevron" aria-hidden="true"></span></summary>
+                        <div class="st-text">
+                            <ul><li>Rettung beschädigter Ganglien</li><li>Wiederherstellung einer zerstörten Wasserversorgung</li><li>Erkundung gefährlicher Höhlen</li><li>Reparatur außerplanetarer Forschungsanlagen</li><li>Untersuchung historischer Nervengewebe</li><li>Entwicklung neuartiger Roboter</li><li>Aufbau einer ersten Kolonie</li><li>Aufklärung illegaler neuronaler Experimente</li></ul>
+                            <p class="st-quelle">Quelle: Info_material · Neurofloren · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="st-panel st-karte" id="k-15-mehrspieler">
+                        <summary><span class="st-nr">15</span><h2>Mehrspieler</h2><span class="st-chevron" aria-hidden="true"></span></summary>
+                        <div class="st-text">
+                            <p>Mehrere Spieler können gemeinsame technische Infrastruktur nutzen.</p>
+                            <p>Sie können:</p>
+                            <ul><li>Maschinen gemeinsam betreiben</li><li>Ressourcen handeln</li><li>Forschungsprojekte durchführen</li><li>Biohabitate errichten</li><li>Kolonien gründen</li><li>Gemeinsam kämpfen</li></ul>
+                            <p>Ihre biologischen Nervennetze verschmelzen dabei nicht.</p>
+                            <p class="st-quelle">Quelle: Info_material · Neurofloren · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="st-panel st-karte" id="k-16-spielbalance">
+                        <summary><span class="st-nr">16</span><h2>Spielbalance</h2><span class="st-chevron" aria-hidden="true"></span></summary>
+                        <div class="st-text">
+                            <h3>Stärken:</h3>
+                            <ul><li>Strategische Kontrolle</li><li>Parallele Systemüberwachung</li><li>Technische Spezialisierung</li><li>Große Forschungspotenziale</li><li>Leistungsfähige Infrastruktur</li></ul>
+                            <h3>Schwächen:</h3>
+                            <ul><li>Geringe natürliche Mobilität</li><li>Empfindlicher Hauptkörper</li><li>Hohe Versorgungskosten</li><li>Abhängigkeit von Maschinen</li><li>Verwundbare Kommunikationswege</li></ul>
+                            <p class="st-quelle">Quelle: Info_material · Neurofloren · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="st-panel st-karte" id="k-17-technische-umsetzung-im-spiel">
+                        <summary><span class="st-nr">17</span><h2>Technische Umsetzung im Spiel</h2><span class="st-chevron" aria-hidden="true"></span></summary>
+                        <div class="st-text">
+                            <p>Für die spätere Implementierung können biologische Körperbereiche und Maschinen getrennt verwaltet werden.</p>
+                            <p>Jeder Neuroflor benötigt eine dauerhafte Charakteridentität.</p>
+                            <p>Jedes Ganglion und jede relevante biologische Verbindung kann eigene persistente Zustandsdaten besitzen.</p>
+                            <p>Maschinen werden unabhängig gespeichert und ihrer jeweiligen steuernden Person zugeordnet.</p>
+                            <p>Wichtige Speicherzustände sind:</p>
+                            <ul><li>Charakteridentität</li><li>Körperarchitektur</li><li>Ganglienzustände</li><li>Versorgung</li><li>Schäden</li><li>Fähigkeiten</li><li>Maschinenzuordnungen</li><li>Aktive Steuerverbindungen</li><li>Standort</li><li>Entwicklungsfortschritt</li></ul>
+                            <p>Die vollständige Simulation jeder einzelnen Nervenzelle ist für das Gameplay nicht erforderlich.</p>
+                            <p>Eine abstrahierte Netzwerk-Simulation genügt für spielrelevante Fähigkeiten.</p>
+                            <p class="st-quelle">Quelle: Info_material · Neurofloren · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="st-panel st-karte" id="k-18-neue-pruffragen-gameplay">
+                        <summary><span class="st-nr">18</span><h2>Neue Prüffragen – Gameplay</h2><span class="st-chevron" aria-hidden="true"></span></summary>
+                        <div class="st-text">
+                            <h3>NF265 – Kann ein Spieler gewöhnliche Abenteuer auf fremden Planeten erleben?</h3>
+                            <p>Ja. Über mobile Roboter, Fahrzeuge und geeignete technische Stellvertreter kann ein Neuroflor große Teile der Spielwelt erkunden.</p>
+                            <h3>NF266 – Kann ein Neuroflor einen humanoiden Kampfroboter verwenden?</h3>
+                            <p>Ja. Dies ist eine technische Maschine, keine biologische Verwandlung.</p>
+                            <h3>NF267 – Muss jede Nervenzelle einzeln simuliert werden?</h3>
+                            <p>Nein. Ganglien, Leitungswege und Versorgungsbereiche können als abstrahierte Gameplay-Einheiten behandelt werden.</p>
+                            <h3>NF268 – Was passiert bei Verlust der Verbindung zu einer Maschine?</h3>
+                            <p>Die Direktsteuerung endet. Je nach Ausstattung führt die Maschine eine Sicherheitsroutine aus oder setzt erlaubte autonome Aufgaben fort.</p>
+                            <p class="st-quelle">Quelle: Info_material · Neurofloren · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="st-panel st-karte" id="k-19-gameplay-fazit">
+                        <summary><span class="st-nr">19</span><h2>Gameplay-Fazit</h2><span class="st-chevron" aria-hidden="true"></span></summary>
+                        <div class="st-text">
+                            <p>Neurofloren bieten einen ungewöhnlichen Spielstil zwischen biologischer Charakterentwicklung, technischer Fernsteuerung, strategischer Infrastruktur und klassischem Abenteuer über Maschinenkörper.</p>
+                            <p class="st-quelle">Quelle: Info_material · Neurofloren · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <section class="st-panel st-block st-karussell-block" id="galerie" aria-label="Bilder">
+                    <h2 class="st-h2">Bilder <small>6 Bilder · Bildarchiv</small></h2>
+                    <div class="bilder-karussell" data-karussell aria-roledescription="Karussell" aria-label="Bilder der Neurofloren">
+                    <div class="karussell-spur" tabindex="0" aria-label="Bilder – mit Pfeiltasten blättern">
+                        <figure class="karussell-folie" data-kategorie="Forschung" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="APORIA Bioenergie-Forschungsanlage Chloris-Nexus in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Neurofloren/Forschung/APORIA_%20Bioenergie-Forschungsanlage%20Chloris-Nexus-6.png" alt="APORIA Bioenergie-Forschungsanlage Chloris-Nexus" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>APORIA Bioenergie-Forschungsanlage Chloris-Nexus</strong><span>Forschung</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Forschung" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="APORIA Neurofloren-Terraforming-Labor in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Neurofloren/Forschung/APORIA_%20Neurofloren-Terraforming-Labor-3.png" alt="APORIA Neurofloren-Terraforming-Labor" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>APORIA Neurofloren-Terraforming-Labor</strong><span>Forschung</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Forschung" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="GenforschungsgebäudeA1 in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Neurofloren/Forschung/Genforschungsgeb%C3%A4udeA1.png" alt="GenforschungsgebäudeA1" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>GenforschungsgebäudeA1</strong><span>Forschung</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Forschung" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="GenforschungsgebäudeA2 in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Neurofloren/Forschung/Genforschungsgeb%C3%A4udeA2.png" alt="GenforschungsgebäudeA2" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>GenforschungsgebäudeA2</strong><span>Forschung</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Forschung" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="GenforschungsgebäudeA3 in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Neurofloren/Forschung/Genforschungsgeb%C3%A4udeA3.png" alt="GenforschungsgebäudeA3" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>GenforschungsgebäudeA3</strong><span>Forschung</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Forschung" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="GenforschungsgebäudeA4 in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Mentale%20Spezies/Neurofloren/Forschung/Genforschungsgeb%C3%A4udeA4.png" alt="GenforschungsgebäudeA4" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>GenforschungsgebäudeA4</strong><span>Forschung</span></figcaption>
+                        </figure>
+                    </div>
+                    <div class="karussell-steuerung">
+                        <button type="button" data-karussell-schritt="-1" aria-label="Vorheriges Bild">‹</button>
+                        <div class="karussell-punkte" role="group" aria-label="Bild wählen"></div>
+                        <output class="karussell-zaehler" aria-live="polite"></output>
+                        <button type="button" data-karussell-schritt="1" aria-label="Nächstes Bild">›</button>
+                    </div>
+                </div>
+                </section>
                     <aside class="st-panel st-block st-links" aria-label="Verknüpfungen">
                     <h2 class="st-h2">Verknüpfungen</h2>
                     <ul>
@@ -66,7 +284,27 @@
                 <nav class="st-panel st-sprung" data-st-sprung aria-label="Kapitel dieser Seite">
                     <p class="st-kicker">Kapitel</p>
                     <button type="button" class="st-klappen" data-st-klappen aria-pressed="false">Alle aufklappen</button>
-                    <a href="#noch-offen"><span class="st-nr">…</span>Spielintegration</a>
+                    <a href="#k-steckbrief"><span class="st-nr">◇</span>Steckbrief</a>
+                    <a href="#k-1-gameplay-grundkonzept"><span class="st-nr">1</span>Gameplay-Grundkonzept</a>
+                    <a href="#k-2-spielbarer-charakter"><span class="st-nr">2</span>Spielbarer Charakter</a>
+                    <a href="#k-3-spielstart"><span class="st-nr">3</span>Spielstart</a>
+                    <a href="#k-4-steuerungsmodi"><span class="st-nr">4</span>Steuerungsmodi</a>
+                    <a href="#k-5-bewegung"><span class="st-nr">5</span>Bewegung</a>
+                    <a href="#k-6-fahigkeitenentwicklung"><span class="st-nr">6</span>Fähigkeitenentwicklung</a>
+                    <a href="#k-7-wachstumssystem"><span class="st-nr">7</span>Wachstumssystem</a>
+                    <a href="#k-8-fernsteuerung"><span class="st-nr">8</span>Fernsteuerung</a>
+                    <a href="#k-9-kampf"><span class="st-nr">9</span>Kampf</a>
+                    <a href="#k-10-schadenssystem"><span class="st-nr">10</span>Schadenssystem</a>
+                    <a href="#k-11-heilung"><span class="st-nr">11</span>Heilung</a>
+                    <a href="#k-12-bauen-und-herstellung"><span class="st-nr">12</span>Bauen und Herstellung</a>
+                    <a href="#k-13-raumfahrt"><span class="st-nr">13</span>Raumfahrt</a>
+                    <a href="#k-14-missionstypen"><span class="st-nr">14</span>Missionstypen</a>
+                    <a href="#k-15-mehrspieler"><span class="st-nr">15</span>Mehrspieler</a>
+                    <a href="#k-16-spielbalance"><span class="st-nr">16</span>Spielbalance</a>
+                    <a href="#k-17-technische-umsetzung-im-spiel"><span class="st-nr">17</span>Technische Umsetzung im Spiel</a>
+                    <a href="#k-18-neue-pruffragen-gameplay"><span class="st-nr">18</span>Neue Prüffragen – Gameplay</a>
+                    <a href="#k-19-gameplay-fazit"><span class="st-nr">19</span>Gameplay-Fazit</a>
+                    <a href="#galerie"><span class="st-nr">▣</span>Bilder</a>
                 </nav>
             </div>
             <dialog class="st-zoom" aria-label="Bild in Großansicht"><div class="controls"><button class="control" type="button" data-step="-1" aria-label="Vorheriges Bild">←</button><output aria-live="polite"></output><button class="control" type="button" data-step="1" aria-label="Nächstes Bild">→</button></div><form method="dialog"><button class="control">Schließen</button></form><img alt=""></dialog>

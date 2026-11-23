@@ -1,0 +1,572 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Seryn",
+  "genitiv": "von Seryn",
+  "dossierName": "Seryn-Dossier",
+  "klasse": "Orangefarbener Zwerg (K4 V)",
+  "intro": "Seryn ist ein orangefarbener Hauptreihenstern (K4 V) mit etwa einem Viertel der Sonnenleuchtkraft. Sein schwaches Licht lässt Nivareth dauerhaft gefrieren. Ein alter, ruhiger Einzelstern. Seryn ist der Zentralstern des Seryn-Systems.",
+  "globusDaten": {
+    "planet": "junger-orange-roter-t-tauri-stern",
+    "klasse": "Vulkan",
+    "radius": 500904000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=nivareth-stern",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-128750D1D3"
+    ],
+    [
+      "Typ",
+      "Orangefarbener Zwerg (K4 V)"
+    ],
+    [
+      "Sternsystem",
+      "Seryn-System"
+    ],
+    [
+      "Masse",
+      "0,75 Sonnenmassen"
+    ],
+    [
+      "Radius",
+      "0,72 Sonnenradien"
+    ],
+    [
+      "Leuchtkraft",
+      "0,25 Sonnenleuchtkräfte"
+    ],
+    [
+      "Oberflächentemperatur",
+      "ca. 4.600 K"
+    ],
+    [
+      "Alter",
+      "ca. 6,2 Mrd. Jahre"
+    ],
+    [
+      "Monde",
+      "5 (Seryn I, Nivareth, Seryn III, Gletscherbote, Zwillingseis)"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Seryn-System"
+    ],
+    [
+      "Entfernung zur Sonne",
+      "8,6 Lichtjahre"
+    ],
+    [
+      "Nächste Nachbarsysteme",
+      "Sonnensystem (8,6 Lj), Kharuun-System (11,4 Lj)"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Seryn im Seryn-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=nivareth-stern",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Seryn I",
+      "href": "inhalte/himmelskoerper/planeten/details/seryn-i/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Nivareth",
+      "href": "inhalte/himmelskoerper/planeten/details/nivareth/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Seryn III",
+      "href": "inhalte/himmelskoerper/planeten/details/seryn-iii/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Gletscherbote",
+      "href": "inhalte/himmelskoerper/kometen/details/gletscherbote/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Zwillingseis",
+      "href": "inhalte/himmelskoerper/asteroiden/details/zwillingseis/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Kryonoiden",
+      "titel": "Nivareth",
+      "href": "inhalte/himmelskoerper/planeten/details/nivareth/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Kryonoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Kryonoiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Seryn-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=nivareth-stern"
+    },
+    {
+      "titel": "Speziesdossier Kryonoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Kryonoiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#0d0804",
+      "tiefe": "#1c1108",
+      "akzent": "#ffbd8b",
+      "sand": "#ffba86",
+      "moos": "#d9b36b",
+      "ozean": "#ad9b70",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#734522"
+    },
+    "schichten": [
+      [
+        "Strahlung",
+        "Leuchtkraft"
+      ],
+      [
+        "Hülle",
+        "Spektralklasse"
+      ],
+      [
+        "Kern",
+        "Fusion"
+      ],
+      [
+        "Zeit",
+        "Lebenszyklus"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Spektralklasse": {
+      "gruppe": "Wissenschaft",
+      "icon": "✦",
+      "intro": "Spektralklasse von Seryn.",
+      "abschnitte": [
+        {
+          "titel": "Einordnung",
+          "daten": [
+            [
+              "Typ",
+              "Orangefarbener Zwerg (K4 V)"
+            ],
+            [
+              "Oberflächentemperatur",
+              "ca. 4.600 K"
+            ],
+            [
+              "Farbe",
+              "orange"
+            ]
+          ]
+        }
+      ]
+    },
+    "Fusion": {
+      "gruppe": "Wissenschaft",
+      "icon": "☀",
+      "intro": "Fusion von Seryn.",
+      "abschnitte": [
+        {
+          "titel": "Energiequelle",
+          "text": [
+            "Im Kern von Seryn verschmilzt Wasserstoff zu Helium."
+          ]
+        }
+      ]
+    },
+    "Leuchtkraft": {
+      "gruppe": "Wissenschaft",
+      "icon": "☀",
+      "intro": "Leuchtkraft von Seryn.",
+      "abschnitte": [
+        {
+          "titel": "Strahlung",
+          "daten": [
+            [
+              "Leuchtkraft",
+              "0,25 Sonnenleuchtkräfte"
+            ],
+            [
+              "Habitable Zone",
+              "0,48–0,83 AE"
+            ]
+          ]
+        }
+      ]
+    },
+    "Lebenszyklus": {
+      "gruppe": "Wissenschaft",
+      "icon": "⧗",
+      "intro": "Lebenszyklus von Seryn.",
+      "abschnitte": [
+        {
+          "titel": "Lebensdauer",
+          "text": [
+            "Ein Stern mit 0,75 Sonnenmassen bleibt rund 21 Milliarden Jahre auf der Hauptreihe; Seryn ist etwa 6,2 Milliarden Jahre alt."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Seryn auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Seryn",
+          "text": [
+            "Seryn ist ein orangefarbener Hauptreihenstern (K4 V) mit etwa einem Viertel der Sonnenleuchtkraft. Sein schwaches Licht lässt Nivareth dauerhaft gefrieren. Ein alter, ruhiger Einzelstern.",
+            "Seryn ist der Zentralstern des Seryn-Systems."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Orangefarbener Zwerg (K4 V)"
+            ],
+            [
+              "Sternsystem",
+              "Seryn-System"
+            ],
+            [
+              "Masse",
+              "0,75 Sonnenmassen"
+            ],
+            [
+              "Radius",
+              "0,72 Sonnenradien"
+            ],
+            [
+              "Leuchtkraft",
+              "0,25 Sonnenleuchtkräfte"
+            ],
+            [
+              "Oberflächentemperatur",
+              "ca. 4.600 K"
+            ],
+            [
+              "Alter",
+              "ca. 6,2 Mrd. Jahre"
+            ],
+            [
+              "Monde",
+              "5 (Seryn I, Nivareth, Seryn III, Gletscherbote, Zwillingseis)"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Nivareth",
+          "text": [
+            "Das Seryn-System ist die Heimat der Kryonoiden: Ihr Planet Nivareth umkreist Seryn."
+          ],
+          "verweise": [
+            [
+              "Nivareth",
+              "inhalte/himmelskoerper/planeten/details/nivareth/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Kryonoiden",
+              "inhalte/spezies/Biologische Spezies/Kryonoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Seryn im Raum.",
+      "abschnitte": [
+        {
+          "titel": "Lage im Raum",
+          "daten": [
+            [
+              "Entfernung zur Sonne",
+              "8,6 Lichtjahre"
+            ],
+            [
+              "Nächste Nachbarsysteme",
+              "Sonnensystem (8,6 Lj), Kharuun-System (11,4 Lj), Iovar-System (12,5 Lj)"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Seryn · Stern",
+              "Orangefarbener Zwerg (K4 V)"
+            ],
+            [
+              "Seryn I · 0,21 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Nivareth · 0,85 AE",
+              "Eisplanet"
+            ],
+            [
+              "Seryn III · 3,9 AE",
+              "Gasriese"
+            ],
+            [
+              "Frostgürtel · 20–32 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Seryn I",
+              "inhalte/himmelskoerper/planeten/details/seryn-i/hauptseite/index.html"
+            ],
+            [
+              "Nivareth",
+              "inhalte/himmelskoerper/planeten/details/nivareth/hauptseite/index.html"
+            ],
+            [
+              "Seryn III",
+              "inhalte/himmelskoerper/planeten/details/seryn-iii/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Seryn.",
+      "abschnitte": [
+        {
+          "titel": "Physik",
+          "daten": [
+            [
+              "Masse",
+              "0,75 Sonnenmassen"
+            ],
+            [
+              "Radius",
+              "0,72 Sonnenradien"
+            ],
+            [
+              "Leuchtkraft",
+              "0,25 Sonnenleuchtkräfte"
+            ],
+            [
+              "Oberflächentemperatur",
+              "ca. 4.600 K"
+            ],
+            [
+              "Alter",
+              "ca. 6,2 Mrd. Jahre"
+            ],
+            [
+              "Monde",
+              "5 (Seryn I, Nivareth, Seryn III, Gletscherbote, Zwillingseis)"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Seryn.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Seryn entstand zusammen mit dem Seryn-System vor rund 6,2 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Umgebung": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Umgebung von Seryn.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Seryn · Stern",
+              "Orangefarbener Zwerg (K4 V)"
+            ],
+            [
+              "Seryn I · 0,21 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Nivareth · 0,85 AE",
+              "Eisplanet"
+            ],
+            [
+              "Seryn III · 3,9 AE",
+              "Gasriese"
+            ],
+            [
+              "Frostgürtel · 20–32 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Seryn I",
+              "inhalte/himmelskoerper/planeten/details/seryn-i/hauptseite/index.html"
+            ],
+            [
+              "Nivareth",
+              "inhalte/himmelskoerper/planeten/details/nivareth/hauptseite/index.html"
+            ],
+            [
+              "Seryn III",
+              "inhalte/himmelskoerper/planeten/details/seryn-iii/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Nachbarsysteme",
+          "liste": [
+            "Sonnensystem – 8,6 Lichtjahre",
+            "Kharuun-System – 11,4 Lichtjahre",
+            "Iovar-System – 12,5 Lichtjahre",
+            "Aurenn-System – 13,2 Lichtjahre",
+            "Thalor-System – 14,7 Lichtjahre"
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Seryn.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Wie stark schwankt die magnetische Aktivität?",
+            "Wie hat sich die Leuchtkraft seit der Entstehung verändert?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Seryn ist mit allen Bahndaten im Seryn-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=nivareth-stern"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Seryn.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "5 Monde: Seryn I, Nivareth, Seryn III, Gletscherbote, Zwillingseis"
+          ]
+        },
+        {
+          "titel": "Monde",
+          "karten": [
+            {
+              "titel": "Seryn I",
+              "text": "8.600 km Durchmesser, Umlauf in 40,6 Tage. Seryn I ist eine sternnahe, luftlose Basaltwelt mit gebundener Rotation."
+            },
+            {
+              "titel": "Nivareth",
+              "text": "12.232 km Durchmesser, Umlauf in 330,5 Tage. Nivareth ist die gefrorene Heimatwelt der Kryonoiden: eine kalte terrestrische Welt mit kilometerdicker Kryosphäre, Kältesolreservoiren und geothermischen Spalten."
+            },
+            {
+              "titel": "Seryn III",
+              "text": "116.000 km Durchmesser, Umlauf in 8,9 Jahre. Seryn III ist ein kalter, silberblauer Gasriese mit mehreren Eismonden – das wichtigste Ziel der kryonoidischen Raumfahrt."
+            },
+            {
+              "titel": "Gletscherbote",
+              "text": "12 km Durchmesser, Umlauf in 31,2 Jahre. Ein periodischer Komet (rund 31 Jahre), der bei seiner Annäherung bis auf 0,9 AE einen langen blauen Ionenschweif bildet – am Himmel Nivareths das hellste Ereignis."
+            },
+            {
+              "titel": "Zwillingseis",
+              "text": "160 km Durchmesser, Umlauf in 153,1 Jahre. Ein ungewöhnlich heller, kristalliner Eiskörper im Frostgürtel, dessen Oberfläche in regelmäßigen Abständen aufleuchtet – vermutlich durch Kryovulkanismus. Seine Ursache ist noch umstritten."
+            }
+          ],
+          "verweise": [
+            [
+              "Seryn I",
+              "inhalte/himmelskoerper/planeten/details/seryn-i/hauptseite/index.html"
+            ],
+            [
+              "Nivareth",
+              "inhalte/himmelskoerper/planeten/details/nivareth/hauptseite/index.html"
+            ],
+            [
+              "Seryn III",
+              "inhalte/himmelskoerper/planeten/details/seryn-iii/hauptseite/index.html"
+            ],
+            [
+              "Gletscherbote",
+              "inhalte/himmelskoerper/kometen/details/gletscherbote/hauptseite/index.html"
+            ],
+            [
+              "Zwillingseis",
+              "inhalte/himmelskoerper/asteroiden/details/zwillingseis/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Seryn.",
+      "abschnitte": [
+        {
+          "titel": "Seryn – Archivbild",
+          "bild": true,
+          "bildtext": "Seryn"
+        }
+      ]
+    }
+  }
+}

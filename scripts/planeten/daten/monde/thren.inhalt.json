@@ -1,0 +1,546 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Thren",
+  "genitiv": "von Thren",
+  "dossierName": "Thren-Dossier",
+  "klasse": "Mond",
+  "intro": "Thren ist ein gezeitengeheizter Mond von Ysmeroth V. Glühende Risse durchziehen seine verformte Kruste. Thren umkreist Ysmeroth V in 2,4 Tage.",
+  "globusDaten": {
+    "planet": "gezeitenverformter-mond-mit-gluhenden-rissen",
+    "klasse": "Gestein",
+    "radius": 1650000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=karynth-stern&objekt=karynth-thren",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-5C95B288CE"
+    ],
+    [
+      "Typ",
+      "Mond"
+    ],
+    [
+      "Sternsystem",
+      "Ysmeroth-System"
+    ],
+    [
+      "Zentralkörper",
+      "Ysmeroth V"
+    ],
+    [
+      "Große Halbachse",
+      "578.091 km"
+    ],
+    [
+      "Umlaufzeit",
+      "2,4 Tage"
+    ],
+    [
+      "Durchmesser",
+      "3.300 km"
+    ],
+    [
+      "Masse",
+      "0,976 Mondmassen"
+    ],
+    [
+      "Schwerkraft",
+      "0,18 g"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -140 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Ysmeroth-System"
+    ],
+    [
+      "Zentralstern",
+      "Ysmeroth",
+      "inhalte/himmelskoerper/sterne/details/ysmeroth/hauptseite/index.html"
+    ],
+    [
+      "Umläuft",
+      "Ysmeroth V",
+      "inhalte/himmelskoerper/planeten/details/ysmeroth-v/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "578.091 km"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Thren im Ysmeroth-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=karynth-stern&objekt=karynth-thren",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Ysmeroth",
+      "href": "inhalte/himmelskoerper/sterne/details/ysmeroth/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◍",
+      "art": "Mutterplanet",
+      "titel": "Ysmeroth V",
+      "href": "inhalte/himmelskoerper/planeten/details/ysmeroth-v/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Metamorphen",
+      "titel": "Karynth",
+      "href": "inhalte/himmelskoerper/planeten/details/karynth/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Metamorphen",
+      "href": "inhalte/spezies/Biologische Spezies/Meta Morphen/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Ysmeroth-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=karynth-stern&objekt=karynth-thren"
+    },
+    {
+      "titel": "Speziesdossier Metamorphen",
+      "href": "inhalte/spezies/Biologische Spezies/Meta Morphen/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#0a0605",
+      "tiefe": "#160e0a",
+      "akzent": "#deac95",
+      "sand": "#e0ac8d",
+      "moos": "#ba9f73",
+      "ozean": "#958a7c",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#5c3929"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Astronomie"
+      ],
+      [
+        "Planet",
+        "Mutterplanet"
+      ],
+      [
+        "Kräfte",
+        "Gezeiten"
+      ],
+      [
+        "Tiefe",
+        "Geologie"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Mutterplanet": {
+      "gruppe": "Wissenschaft",
+      "icon": "◐",
+      "intro": "Mutterplanet von Thren.",
+      "abschnitte": [
+        {
+          "titel": "Ysmeroth V",
+          "text": [
+            "Ysmeroth V ist ein stürmischer Super-Jupiter auf deutlich elliptischer Bahn. Er hat das Gebiet zwischen 1,6 und 5 AE leergeräumt; statt eines Asteroidengürtels sammeln sich Trümmer nur in seinen Lagrange-Punkten."
+          ],
+          "daten": [
+            [
+              "Typ",
+              "Gasriese"
+            ],
+            [
+              "Durchmesser",
+              "141.000 km"
+            ],
+            [
+              "Abstand des Mondes",
+              "578.091 km (8,2 Planetenradien)"
+            ]
+          ],
+          "verweise": [
+            [
+              "Ysmeroth V",
+              "inhalte/himmelskoerper/planeten/details/ysmeroth-v/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Weitere Monde von Ysmeroth V",
+          "liste": [
+            "Askel – Umlauf in 9,6 Tage"
+          ],
+          "verweise": [
+            [
+              "Askel",
+              "inhalte/himmelskoerper/monde/details/askel/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Gezeiten": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gezeiten von Thren.",
+      "abschnitte": [
+        {
+          "titel": "Gezeitenkräfte",
+          "text": [
+            "Auf seiner Bahn in 578.091 km Abstand wirken starke Gezeitenkräfte von Ysmeroth V auf Thren."
+          ]
+        }
+      ]
+    },
+    "Gebundene Rotation": {
+      "gruppe": "Wissenschaft",
+      "icon": "↻",
+      "intro": "Gebundene Rotation von Thren.",
+      "abschnitte": [
+        {
+          "titel": "Rotation",
+          "text": [
+            "Thren wendet Ysmeroth V vermutlich stets dieselbe Seite zu: Ein Tag dauert so lange wie ein Umlauf – 2,4 Tage."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Thren auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Thren",
+          "text": [
+            "Thren ist ein gezeitengeheizter Mond von Ysmeroth V. Glühende Risse durchziehen seine verformte Kruste.",
+            "Thren umkreist Ysmeroth V in 2,4 Tage."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Mond"
+            ],
+            [
+              "Sternsystem",
+              "Ysmeroth-System"
+            ],
+            [
+              "Zentralkörper",
+              "Ysmeroth V"
+            ],
+            [
+              "Große Halbachse",
+              "578.091 km"
+            ],
+            [
+              "Umlaufzeit",
+              "2,4 Tage"
+            ],
+            [
+              "Durchmesser",
+              "3.300 km"
+            ],
+            [
+              "Masse",
+              "0,976 Mondmassen"
+            ],
+            [
+              "Schwerkraft",
+              "0,18 g"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -140 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Karynth",
+          "text": [
+            "Das Ysmeroth-System ist die Heimat der Metamorphen: Ihr Planet Karynth umkreist Ysmeroth."
+          ],
+          "verweise": [
+            [
+              "Karynth",
+              "inhalte/himmelskoerper/planeten/details/karynth/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Metamorphen",
+              "inhalte/spezies/Biologische Spezies/Meta Morphen/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Thren im Ysmeroth-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Ysmeroth V"
+            ],
+            [
+              "Große Halbachse",
+              "578.091 km"
+            ],
+            [
+              "Exzentrizität",
+              "0,006"
+            ],
+            [
+              "Bahnneigung",
+              "0,4°"
+            ],
+            [
+              "Umlaufzeit",
+              "2,4 Tage"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Ysmeroth · Stern",
+              "Orangefarbener Zwerg (K2 V)"
+            ],
+            [
+              "Ysmeroth B · Begleitstern in 310 AE",
+              "Roter Zwerg (M4 V)"
+            ],
+            [
+              "Ysmeroth I · 0,09 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Ysmeroth II · 0,45 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Karynth · 0,72 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Ysmeroth IV · 1,14 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Ysmeroth V · 2,9 AE",
+              "Gasriese"
+            ],
+            [
+              "Ysmeroth VI · 13,8 AE",
+              "Eisriese"
+            ],
+            [
+              "Graumantel · 40–56 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Ysmeroth",
+              "inhalte/himmelskoerper/sterne/details/ysmeroth/hauptseite/index.html"
+            ],
+            [
+              "Ysmeroth B",
+              "inhalte/himmelskoerper/sterne/details/ysmeroth-b/hauptseite/index.html"
+            ],
+            [
+              "Ysmeroth I",
+              "inhalte/himmelskoerper/planeten/details/ysmeroth-i/hauptseite/index.html"
+            ],
+            [
+              "Ysmeroth II",
+              "inhalte/himmelskoerper/planeten/details/ysmeroth-ii/hauptseite/index.html"
+            ],
+            [
+              "Karynth",
+              "inhalte/himmelskoerper/planeten/details/karynth/hauptseite/index.html"
+            ],
+            [
+              "Ysmeroth IV",
+              "inhalte/himmelskoerper/planeten/details/ysmeroth-iv/hauptseite/index.html"
+            ],
+            [
+              "Ysmeroth V",
+              "inhalte/himmelskoerper/planeten/details/ysmeroth-v/hauptseite/index.html"
+            ],
+            [
+              "Ysmeroth VI",
+              "inhalte/himmelskoerper/planeten/details/ysmeroth-vi/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Thren.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "1.650 km"
+            ],
+            [
+              "Masse",
+              "0,976 Mondmassen"
+            ],
+            [
+              "Mittlere Dichte",
+              "3,81 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "1,76 m/s² (0,179 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "2,41 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Thren.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Thren ist geologisch weitgehend erstarrt; Einschläge haben seine Oberfläche geformt."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Thren.",
+      "abschnitte": [
+        {
+          "titel": "Gashülle",
+          "text": [
+            "Thren besitzt keine nennenswerte Atmosphäre – dafür ist die Schwerkraft zu gering."
+          ]
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Thren.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 2,9 AE Abstand zu Ysmeroth liegt die Gleichgewichtstemperatur von Thren bei rund -140 °C – eisig kalt."
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Thren.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Thren entstand zusammen mit dem Ysmeroth-System vor rund 5,2 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Thren.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Ist der Mond eingefangen oder mit seinem Planeten entstanden?",
+            "Welche Spuren tragen seine ältesten Krater?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Thren ist mit allen Bahndaten im Ysmeroth-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=karynth-stern&objekt=karynth-thren"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Thren.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Thren ist ein gezeitengeheizter Mond von Ysmeroth V. Glühende Risse durchziehen seine verformte Kruste."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Thren.",
+      "abschnitte": [
+        {
+          "titel": "Thren – Archivbild",
+          "bild": true,
+          "bildtext": "Thren"
+        }
+      ]
+    }
+  }
+}

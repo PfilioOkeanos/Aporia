@@ -1,0 +1,498 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Nen",
+  "genitiv": "von Nen",
+  "dossierName": "Nen-Dossier",
+  "klasse": "Kleinmond",
+  "intro": "Zwei ungleiche Gesteinslappen berühren sich an einem schmalen Hals. Feinkörniger Staub sammelt sich in dieser Senke und zeichnet sie als helles Band nach. Nen umkreist Velun in 5,5 Tage.",
+  "globusDaten": {
+    "planet": "doppellobiger-kontaktmond-im-all",
+    "klasse": "Gestein",
+    "radius": 54000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=esvar-stern&objekt=esvar-nen",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-4192A66E4B"
+    ],
+    [
+      "Typ",
+      "Kleinmond"
+    ],
+    [
+      "Sternsystem",
+      "Esvar-System"
+    ],
+    [
+      "Zentralkörper",
+      "Velun"
+    ],
+    [
+      "Große Halbachse",
+      "537.213 km"
+    ],
+    [
+      "Umlaufzeit",
+      "5,5 Tage"
+    ],
+    [
+      "Durchmesser",
+      "108 km"
+    ],
+    [
+      "Masse",
+      "1,19 · 10^18 kg"
+    ],
+    [
+      "Schwerkraft",
+      "2,73 cm/s²"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -169 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Esvar-System"
+    ],
+    [
+      "Zentralstern",
+      "Esvar",
+      "inhalte/himmelskoerper/sterne/details/esvar/hauptseite/index.html"
+    ],
+    [
+      "Umläuft",
+      "Velun",
+      "inhalte/himmelskoerper/planeten/details/velun/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "537.213 km"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Nen im Esvar-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=esvar-stern&objekt=esvar-nen",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Esvar",
+      "href": "inhalte/himmelskoerper/sterne/details/esvar/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◍",
+      "art": "Mutterplanet",
+      "titel": "Velun",
+      "href": "inhalte/himmelskoerper/planeten/details/velun/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Parasitoiden",
+      "titel": "Neraveth",
+      "href": "inhalte/himmelskoerper/planeten/details/neraveth/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Parasitoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Parasitoiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Esvar-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=esvar-stern&objekt=esvar-nen"
+    },
+    {
+      "titel": "Speziesdossier Parasitoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Parasitoiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#080604",
+      "tiefe": "#120d09",
+      "akzent": "#c5a48e",
+      "sand": "#c9a588",
+      "moos": "#a3966e",
+      "ozean": "#838174",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#4b3425"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Astronomie"
+      ],
+      [
+        "Planet",
+        "Mutterplanet"
+      ],
+      [
+        "Kräfte",
+        "Gezeiten"
+      ],
+      [
+        "Tiefe",
+        "Geologie"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Mutterplanet": {
+      "gruppe": "Wissenschaft",
+      "icon": "◐",
+      "intro": "Mutterplanet von Nen.",
+      "abschnitte": [
+        {
+          "titel": "Velun",
+          "text": [
+            "Silberhelle Wolkenbänder rahmen die indigofarbenen Breiten ein. Ihre Verschiebung zwischen zwei Beobachtungen verrät die gegenläufigen Winde der oberen Atmosphäre."
+          ],
+          "daten": [
+            [
+              "Typ",
+              "Gasriese"
+            ],
+            [
+              "Durchmesser",
+              "87.400 km"
+            ],
+            [
+              "Abstand des Mondes",
+              "537.213 km (12,3 Planetenradien)"
+            ]
+          ],
+          "verweise": [
+            [
+              "Velun",
+              "inhalte/himmelskoerper/planeten/details/velun/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Gezeiten": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gezeiten von Nen.",
+      "abschnitte": [
+        {
+          "titel": "Gezeitenkräfte",
+          "text": [
+            "Auf seiner Bahn in 537.213 km Abstand wirken starke Gezeitenkräfte von Velun auf Nen."
+          ]
+        }
+      ]
+    },
+    "Gebundene Rotation": {
+      "gruppe": "Wissenschaft",
+      "icon": "↻",
+      "intro": "Gebundene Rotation von Nen.",
+      "abschnitte": [
+        {
+          "titel": "Rotation",
+          "text": [
+            "Nen wendet Velun vermutlich stets dieselbe Seite zu: Ein Tag dauert so lange wie ein Umlauf – 5,5 Tage."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Nen auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Nen",
+          "text": [
+            "Zwei ungleiche Gesteinslappen berühren sich an einem schmalen Hals. Feinkörniger Staub sammelt sich in dieser Senke und zeichnet sie als helles Band nach.",
+            "Nen umkreist Velun in 5,5 Tage."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Kleinmond"
+            ],
+            [
+              "Sternsystem",
+              "Esvar-System"
+            ],
+            [
+              "Zentralkörper",
+              "Velun"
+            ],
+            [
+              "Große Halbachse",
+              "537.213 km"
+            ],
+            [
+              "Umlaufzeit",
+              "5,5 Tage"
+            ],
+            [
+              "Durchmesser",
+              "108 km"
+            ],
+            [
+              "Masse",
+              "1,19 · 10^18 kg"
+            ],
+            [
+              "Schwerkraft",
+              "2,73 cm/s²"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -169 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Neraveth",
+          "text": [
+            "Das Esvar-System ist die Heimat der Parasitoiden: Ihr Planet Neraveth umkreist Esvar."
+          ],
+          "verweise": [
+            [
+              "Neraveth",
+              "inhalte/himmelskoerper/planeten/details/neraveth/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Parasitoiden",
+              "inhalte/spezies/Biologische Spezies/Parasitoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Nen im Esvar-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Velun"
+            ],
+            [
+              "Große Halbachse",
+              "537.213 km"
+            ],
+            [
+              "Exzentrizität",
+              "0,01"
+            ],
+            [
+              "Bahnneigung",
+              "1,6°"
+            ],
+            [
+              "Umlaufzeit",
+              "5,5 Tage"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Esvar · Stern",
+              "Orangefarbener Hauptreihenstern (K2 V)"
+            ],
+            [
+              "Vask · 0,28 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Neraveth · 0,63 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Velun · 3,7 AE",
+              "Gasriese"
+            ]
+          ],
+          "verweise": [
+            [
+              "Esvar",
+              "inhalte/himmelskoerper/sterne/details/esvar/hauptseite/index.html"
+            ],
+            [
+              "Vask",
+              "inhalte/himmelskoerper/planeten/details/vask/hauptseite/index.html"
+            ],
+            [
+              "Neraveth",
+              "inhalte/himmelskoerper/planeten/details/neraveth/hauptseite/index.html"
+            ],
+            [
+              "Velun",
+              "inhalte/himmelskoerper/planeten/details/velun/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Nen.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "54 km"
+            ],
+            [
+              "Masse",
+              "1,19 · 10^18 kg"
+            ],
+            [
+              "Mittlere Dichte",
+              "1,81 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "0,03 m/s² (0,003 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "0,05 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Nen.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Nen ist geologisch weitgehend erstarrt; Einschläge haben seine Oberfläche geformt."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Nen.",
+      "abschnitte": [
+        {
+          "titel": "Gashülle",
+          "text": [
+            "Nen besitzt keine nennenswerte Atmosphäre – dafür ist die Schwerkraft zu gering."
+          ]
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Nen.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 3,7 AE Abstand zu Esvar liegt die Gleichgewichtstemperatur von Nen bei rund -169 °C – eisig kalt."
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Nen.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Nen entstand zusammen mit dem Esvar-System vor rund 5,4 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Nen.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Ist der Mond eingefangen oder mit seinem Planeten entstanden?",
+            "Welche Spuren tragen seine ältesten Krater?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Nen ist mit allen Bahndaten im Esvar-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=esvar-stern&objekt=esvar-nen"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Nen.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Zwei ungleiche Gesteinslappen berühren sich an einem schmalen Hals. Feinkörniger Staub sammelt sich in dieser Senke und zeichnet sie als helles Band nach."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Nen.",
+      "abschnitte": [
+        {
+          "titel": "Nen – Archivbild",
+          "bild": true,
+          "bildtext": "Nen"
+        }
+      ]
+    }
+  }
+}

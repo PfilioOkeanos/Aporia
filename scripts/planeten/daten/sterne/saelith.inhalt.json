@@ -1,0 +1,611 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Saelith",
+  "genitiv": "von Saelith",
+  "dossierName": "Saelith-Dossier",
+  "klasse": "Orangefarbener Zwerg (K1 V)",
+  "intro": "Saelith ist der orangefarbene Hauptreihenstern (K1 V) des Osselyr-Systems. Sein gegenüber der Sonne ins Rötliche verschobenes Licht prägte die Pigmente aller Pflanzen Osselyrs – auch die der Floranoiden. Ein ruhiger Einzelstern mit langer, stabiler Lebensdauer. Saelith ist der Zentralstern des Osselyr-Systems.",
+  "globusDaten": {
+    "planet": "gasstrom-vom-orangefarbenen-zum-blauweien-stern",
+    "klasse": "Vulkan",
+    "radius": 556560000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=osselyr-stern",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-5E7F8E539F"
+    ],
+    [
+      "Typ",
+      "Orangefarbener Zwerg (K1 V)"
+    ],
+    [
+      "Sternsystem",
+      "Osselyr-System"
+    ],
+    [
+      "Masse",
+      "0,84 Sonnenmassen"
+    ],
+    [
+      "Radius",
+      "0,8 Sonnenradien"
+    ],
+    [
+      "Leuchtkraft",
+      "0,54 Sonnenleuchtkräfte"
+    ],
+    [
+      "Oberflächentemperatur",
+      "ca. 5.100 K"
+    ],
+    [
+      "Alter",
+      "ca. 4,6 Mrd. Jahre"
+    ],
+    [
+      "Monde",
+      "6 (Saelith I, Osselyr, Doppelstein von Saelith, Saelith III, Saelith IV, Lichtfaden)"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Osselyr-System"
+    ],
+    [
+      "Entfernung zur Sonne",
+      "12,4 Lichtjahre"
+    ],
+    [
+      "Nächste Nachbarsysteme",
+      "Orvaya-System (7,8 Lj), Kharuun-System (11,2 Lj)"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Saelith im Osselyr-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=osselyr-stern",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Saelith I",
+      "href": "inhalte/himmelskoerper/planeten/details/saelith-i/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Osselyr",
+      "href": "inhalte/himmelskoerper/planeten/details/osselyr/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Doppelstein von Saelith",
+      "href": "inhalte/himmelskoerper/asteroiden/details/doppelstein-von-saelith/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Saelith III",
+      "href": "inhalte/himmelskoerper/planeten/details/saelith-iii/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Saelith IV",
+      "href": "inhalte/himmelskoerper/planeten/details/saelith-iv/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Lichtfaden",
+      "href": "inhalte/himmelskoerper/kometen/details/lichtfaden/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Floranoiden",
+      "titel": "Osselyr",
+      "href": "inhalte/himmelskoerper/planeten/details/osselyr/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Floranoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Floranoiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Osselyr-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=osselyr-stern"
+    },
+    {
+      "titel": "Speziesdossier Floranoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Floranoiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#0d0905",
+      "tiefe": "#1c140b",
+      "akzent": "#ffcd9c",
+      "sand": "#ffc991",
+      "moos": "#d9c679",
+      "ozean": "#adac85",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#73502e"
+    },
+    "schichten": [
+      [
+        "Strahlung",
+        "Leuchtkraft"
+      ],
+      [
+        "Hülle",
+        "Spektralklasse"
+      ],
+      [
+        "Kern",
+        "Fusion"
+      ],
+      [
+        "Zeit",
+        "Lebenszyklus"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Spektralklasse": {
+      "gruppe": "Wissenschaft",
+      "icon": "✦",
+      "intro": "Spektralklasse von Saelith.",
+      "abschnitte": [
+        {
+          "titel": "Einordnung",
+          "daten": [
+            [
+              "Typ",
+              "Orangefarbener Zwerg (K1 V)"
+            ],
+            [
+              "Oberflächentemperatur",
+              "ca. 5.100 K"
+            ],
+            [
+              "Farbe",
+              "orange"
+            ]
+          ]
+        }
+      ]
+    },
+    "Fusion": {
+      "gruppe": "Wissenschaft",
+      "icon": "☀",
+      "intro": "Fusion von Saelith.",
+      "abschnitte": [
+        {
+          "titel": "Energiequelle",
+          "text": [
+            "Im Kern von Saelith verschmilzt Wasserstoff zu Helium."
+          ]
+        }
+      ]
+    },
+    "Leuchtkraft": {
+      "gruppe": "Wissenschaft",
+      "icon": "☀",
+      "intro": "Leuchtkraft von Saelith.",
+      "abschnitte": [
+        {
+          "titel": "Strahlung",
+          "daten": [
+            [
+              "Leuchtkraft",
+              "0,54 Sonnenleuchtkräfte"
+            ],
+            [
+              "Habitable Zone",
+              "0,7–1,22 AE"
+            ]
+          ]
+        }
+      ]
+    },
+    "Lebenszyklus": {
+      "gruppe": "Wissenschaft",
+      "icon": "⧗",
+      "intro": "Lebenszyklus von Saelith.",
+      "abschnitte": [
+        {
+          "titel": "Lebensdauer",
+          "text": [
+            "Ein Stern mit 0,84 Sonnenmassen bleibt rund 15 Milliarden Jahre auf der Hauptreihe; Saelith ist etwa 4,6 Milliarden Jahre alt."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Saelith auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Saelith",
+          "text": [
+            "Saelith ist der orangefarbene Hauptreihenstern (K1 V) des Osselyr-Systems. Sein gegenüber der Sonne ins Rötliche verschobenes Licht prägte die Pigmente aller Pflanzen Osselyrs – auch die der Floranoiden. Ein ruhiger Einzelstern mit langer, stabiler Lebensdauer.",
+            "Saelith ist der Zentralstern des Osselyr-Systems."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Orangefarbener Zwerg (K1 V)"
+            ],
+            [
+              "Sternsystem",
+              "Osselyr-System"
+            ],
+            [
+              "Masse",
+              "0,84 Sonnenmassen"
+            ],
+            [
+              "Radius",
+              "0,8 Sonnenradien"
+            ],
+            [
+              "Leuchtkraft",
+              "0,54 Sonnenleuchtkräfte"
+            ],
+            [
+              "Oberflächentemperatur",
+              "ca. 5.100 K"
+            ],
+            [
+              "Alter",
+              "ca. 4,6 Mrd. Jahre"
+            ],
+            [
+              "Monde",
+              "6 (Saelith I, Osselyr, Doppelstein von Saelith, Saelith III, Saelith IV, Lichtfaden)"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Osselyr",
+          "text": [
+            "Das Osselyr-System ist die Heimat der Floranoiden: Ihr Planet Osselyr umkreist Saelith."
+          ],
+          "verweise": [
+            [
+              "Osselyr",
+              "inhalte/himmelskoerper/planeten/details/osselyr/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Floranoiden",
+              "inhalte/spezies/Biologische Spezies/Floranoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Saelith im Raum.",
+      "abschnitte": [
+        {
+          "titel": "Lage im Raum",
+          "daten": [
+            [
+              "Entfernung zur Sonne",
+              "12,4 Lichtjahre"
+            ],
+            [
+              "Nächste Nachbarsysteme",
+              "Orvaya-System (7,8 Lj), Kharuun-System (11,2 Lj), Narev-System (11,8 Lj)"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Saelith · Stern",
+              "Orangefarbener Zwerg (K1 V)"
+            ],
+            [
+              "Saelith I · 0,29 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Osselyr · 0,75 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Saelith III · 2,6 AE",
+              "Gasriese"
+            ],
+            [
+              "Saelith IV · 7,4 AE",
+              "Eisriese"
+            ],
+            [
+              "Brachgürtel · 1,4–2 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 34–46 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Saelith I",
+              "inhalte/himmelskoerper/planeten/details/saelith-i/hauptseite/index.html"
+            ],
+            [
+              "Osselyr",
+              "inhalte/himmelskoerper/planeten/details/osselyr/hauptseite/index.html"
+            ],
+            [
+              "Saelith III",
+              "inhalte/himmelskoerper/planeten/details/saelith-iii/hauptseite/index.html"
+            ],
+            [
+              "Saelith IV",
+              "inhalte/himmelskoerper/planeten/details/saelith-iv/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Saelith.",
+      "abschnitte": [
+        {
+          "titel": "Physik",
+          "daten": [
+            [
+              "Masse",
+              "0,84 Sonnenmassen"
+            ],
+            [
+              "Radius",
+              "0,8 Sonnenradien"
+            ],
+            [
+              "Leuchtkraft",
+              "0,54 Sonnenleuchtkräfte"
+            ],
+            [
+              "Oberflächentemperatur",
+              "ca. 5.100 K"
+            ],
+            [
+              "Alter",
+              "ca. 4,6 Mrd. Jahre"
+            ],
+            [
+              "Monde",
+              "6 (Saelith I, Osselyr, Doppelstein von Saelith, Saelith III, Saelith IV, Lichtfaden)"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Saelith.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Saelith entstand zusammen mit dem Osselyr-System vor rund 4,6 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Umgebung": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Umgebung von Saelith.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Saelith · Stern",
+              "Orangefarbener Zwerg (K1 V)"
+            ],
+            [
+              "Saelith I · 0,29 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Osselyr · 0,75 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Saelith III · 2,6 AE",
+              "Gasriese"
+            ],
+            [
+              "Saelith IV · 7,4 AE",
+              "Eisriese"
+            ],
+            [
+              "Brachgürtel · 1,4–2 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 34–46 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Saelith I",
+              "inhalte/himmelskoerper/planeten/details/saelith-i/hauptseite/index.html"
+            ],
+            [
+              "Osselyr",
+              "inhalte/himmelskoerper/planeten/details/osselyr/hauptseite/index.html"
+            ],
+            [
+              "Saelith III",
+              "inhalte/himmelskoerper/planeten/details/saelith-iii/hauptseite/index.html"
+            ],
+            [
+              "Saelith IV",
+              "inhalte/himmelskoerper/planeten/details/saelith-iv/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Nachbarsysteme",
+          "liste": [
+            "Orvaya-System – 7,8 Lichtjahre",
+            "Kharuun-System – 11,2 Lichtjahre",
+            "Narev-System – 11,8 Lichtjahre",
+            "Sonnensystem – 12,4 Lichtjahre",
+            "Iovar-System – 12,4 Lichtjahre"
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Saelith.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Wie stark schwankt die magnetische Aktivität?",
+            "Wie hat sich die Leuchtkraft seit der Entstehung verändert?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Saelith ist mit allen Bahndaten im Osselyr-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=osselyr-stern"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Saelith.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "6 Monde: Saelith I, Osselyr, Doppelstein von Saelith, Saelith III, Saelith IV, Lichtfaden"
+          ]
+        },
+        {
+          "titel": "Monde",
+          "karten": [
+            {
+              "titel": "Saelith I",
+              "text": "9.600 km Durchmesser, Umlauf in 62,2 Tage. Saelith I ist eine heiße, luftlose Felswelt nahe am Stern, von Einschlagkratern übersät."
+            },
+            {
+              "titel": "Osselyr",
+              "text": "12.232 km Durchmesser, Umlauf in 258,9 Tage. Osselyr ist die Heimatwelt der Floranoiden: ein bewohnbarer Gesteinsplanet mit Küstenebenen, Flussdeltas, Feuchtgebieten und mineralreichen Hochflächen."
+            },
+            {
+              "titel": "Doppelstein von Saelith",
+              "text": "90 km Durchmesser, Umlauf in 2,2 Jahre. Ein Doppelasteroid im Brachgürtel: zwei rund 90 km große Körper umkreisen einander in nur 31 Stunden – beliebtes Ziel floranoidischer Forschungsmissionen."
+            },
+            {
+              "titel": "Saelith III",
+              "text": "124.000 km Durchmesser, Umlauf in 4,6 Jahre. Saelith III ist ein goldfarbener Gasriese mit 0,38 Jupitermassen und einem hellen Ringsystem. Er schützt das innere System, indem er viele Kometen ablenkt."
+            },
+            {
+              "titel": "Saelith IV",
+              "text": "50.400 km Durchmesser, Umlauf in 22 Jahre. Saelith IV ist ein kalter, blaugrüner Eisriese am Rand des Planetensystems."
+            },
+            {
+              "titel": "Lichtfaden",
+              "text": "8 km Durchmesser, Umlauf in 39,8 Jahre. Der Lichtfaden ist ein periodischer Komet (rund 40 Jahre), der Osselyrs Bahn kreuzt. Sein grünlicher Schweif steht dann wochenlang am Nachthimmel und wird in vielen floranoidischen Kulturen als Zeichen des Neuaustriebs gefeiert."
+            }
+          ],
+          "verweise": [
+            [
+              "Saelith I",
+              "inhalte/himmelskoerper/planeten/details/saelith-i/hauptseite/index.html"
+            ],
+            [
+              "Osselyr",
+              "inhalte/himmelskoerper/planeten/details/osselyr/hauptseite/index.html"
+            ],
+            [
+              "Doppelstein von Saelith",
+              "inhalte/himmelskoerper/asteroiden/details/doppelstein-von-saelith/hauptseite/index.html"
+            ],
+            [
+              "Saelith III",
+              "inhalte/himmelskoerper/planeten/details/saelith-iii/hauptseite/index.html"
+            ],
+            [
+              "Saelith IV",
+              "inhalte/himmelskoerper/planeten/details/saelith-iv/hauptseite/index.html"
+            ],
+            [
+              "Lichtfaden",
+              "inhalte/himmelskoerper/kometen/details/lichtfaden/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Saelith.",
+      "abschnitte": [
+        {
+          "titel": "Saelith – Archivbild",
+          "bild": true,
+          "bildtext": "Saelith"
+        }
+      ]
+    }
+  }
+}

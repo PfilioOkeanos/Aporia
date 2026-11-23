@@ -1,0 +1,638 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Doran",
+  "genitiv": "von Doran",
+  "dossierName": "Doran-Dossier",
+  "klasse": "Gesteinsplanet",
+  "intro": "Doran ist eine kalte Quarzsandwelt: Helle Dünenmeere umfließen dunkle, zerklüftete Hochländer. Eine dünne Kohlendioxidhülle treibt Staubstürme über die Ebenen. Als äußerer 3:2-Nachbar Seyraths prägt er dessen Bahn seit Milliarden Jahren mit. Doran umkreist Kelira in 0,865 AE Abstand und braucht für einen Umlauf 324,4 Tage.",
+  "globusDaten": {
+    "planet": "quarzsandplanet-mit-dunklen-kontinenten",
+    "klasse": "Gestein",
+    "radius": 5300000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=seyrath-stern&objekt=seyrath-doran",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-020F23A2EC"
+    ],
+    [
+      "Typ",
+      "Gesteinsplanet"
+    ],
+    [
+      "Sternsystem",
+      "Kelira-System"
+    ],
+    [
+      "Zentralkörper",
+      "Kelira"
+    ],
+    [
+      "Große Halbachse",
+      "0,865 AE"
+    ],
+    [
+      "Umlaufzeit",
+      "324,4 Tage"
+    ],
+    [
+      "Durchmesser",
+      "10.600 km"
+    ],
+    [
+      "Masse",
+      "0,62 Erdmassen"
+    ],
+    [
+      "Schwerkraft",
+      "0,9 g"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -60 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Kelira-System"
+    ],
+    [
+      "Zentralstern",
+      "Kelira",
+      "inhalte/himmelskoerper/sterne/details/kelira/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "0,865 AE"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Doran im Kelira-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=seyrath-stern&objekt=seyrath-doran",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Kelira",
+      "href": "inhalte/himmelskoerper/sterne/details/kelira/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Chronoiden",
+      "titel": "Seyrath",
+      "href": "inhalte/himmelskoerper/planeten/details/seyrath/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Chronoiden",
+      "href": "inhalte/spezies/Mentale Spezies/Chronoiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Kelira-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=seyrath-stern&objekt=seyrath-doran"
+    },
+    {
+      "titel": "Speziesdossier Chronoiden",
+      "href": "inhalte/spezies/Mentale Spezies/Chronoiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#0b0a08",
+      "tiefe": "#181511",
+      "akzent": "#e4d7c0",
+      "sand": "#e7d1a8",
+      "moos": "#c0d199",
+      "ozean": "#9ab7b1",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#605747"
+    }
+  },
+  "kapitel": {
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Doran auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Doran",
+          "text": [
+            "Doran ist eine kalte Quarzsandwelt: Helle Dünenmeere umfließen dunkle, zerklüftete Hochländer. Eine dünne Kohlendioxidhülle treibt Staubstürme über die Ebenen. Als äußerer 3:2-Nachbar Seyraths prägt er dessen Bahn seit Milliarden Jahren mit.",
+            "Doran umkreist Kelira in 0,865 AE Abstand und braucht für einen Umlauf 324,4 Tage."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Gesteinsplanet"
+            ],
+            [
+              "Sternsystem",
+              "Kelira-System"
+            ],
+            [
+              "Zentralkörper",
+              "Kelira"
+            ],
+            [
+              "Große Halbachse",
+              "0,865 AE"
+            ],
+            [
+              "Umlaufzeit",
+              "324,4 Tage"
+            ],
+            [
+              "Durchmesser",
+              "10.600 km"
+            ],
+            [
+              "Masse",
+              "0,62 Erdmassen"
+            ],
+            [
+              "Schwerkraft",
+              "0,9 g"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -60 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Seyrath",
+          "text": [
+            "Das Kelira-System ist die Heimat der Chronoiden: Ihr Planet Seyrath umkreist Kelira."
+          ],
+          "verweise": [
+            [
+              "Seyrath",
+              "inhalte/himmelskoerper/planeten/details/seyrath/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Chronoiden",
+              "inhalte/spezies/Mentale Spezies/Chronoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Doran im Kelira-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Kelira"
+            ],
+            [
+              "Große Halbachse",
+              "0,8648 AE (129,4 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,021"
+            ],
+            [
+              "Bahnneigung",
+              "0,5°"
+            ],
+            [
+              "Umlaufzeit",
+              "324,4 Tage"
+            ],
+            [
+              "Einstrahlung",
+              "0,521-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Am Himmel von Doran",
+          "text": [
+            "Kelira erscheint von hier aus etwa 0,53° groß (die Sonne von der Erde: 0,53°)."
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Kelira · Stern",
+              "Orangefarbener Zwerg (K3 V)"
+            ],
+            [
+              "Arun · 0,29 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Velth · 0,38 AE",
+              "Mini-Neptun"
+            ],
+            [
+              "Isaru · 0,5 AE",
+              "Ozeanplanet"
+            ],
+            [
+              "Seyrath · 0,66 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Doran · 0,86 AE · dieses Dossier",
+              "Gesteinsplanet"
+            ],
+            [
+              "Ombrel · 1,05 AE",
+              "Mini-Neptun"
+            ],
+            [
+              "Halvek · 1,27 AE",
+              "Eisplanet"
+            ],
+            [
+              "Keliras Schleier · 22–42 AE",
+              "Trümmergürtel"
+            ]
+          ],
+          "verweise": [
+            [
+              "Kelira",
+              "inhalte/himmelskoerper/sterne/details/kelira/hauptseite/index.html"
+            ],
+            [
+              "Arun",
+              "inhalte/himmelskoerper/planeten/details/arun/hauptseite/index.html"
+            ],
+            [
+              "Velth",
+              "inhalte/himmelskoerper/planeten/details/velth/hauptseite/index.html"
+            ],
+            [
+              "Isaru",
+              "inhalte/himmelskoerper/planeten/details/isaru/hauptseite/index.html"
+            ],
+            [
+              "Seyrath",
+              "inhalte/himmelskoerper/planeten/details/seyrath/hauptseite/index.html"
+            ],
+            [
+              "Ombrel",
+              "inhalte/himmelskoerper/planeten/details/ombrel/hauptseite/index.html"
+            ],
+            [
+              "Halvek",
+              "inhalte/himmelskoerper/planeten/details/halvek/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Doran.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "5.300 km"
+            ],
+            [
+              "Masse",
+              "0,62 Erdmassen"
+            ],
+            [
+              "Mittlere Dichte",
+              "5,94 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "8,79 m/s² (0,896 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "9,66 km/s"
+            ]
+          ],
+          "vergleich": {
+            "mit": "Erde",
+            "werte": [
+              [
+                "Durchmesser",
+                10600,
+                12742,
+                "km"
+              ],
+              [
+                "Masse",
+                0.62,
+                1,
+                "Erdmassen"
+              ],
+              [
+                "Schwerkraft",
+                0.9,
+                1,
+                "g"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "Planetare Struktur": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Planetare Struktur von Doran.",
+      "abschnitte": [
+        {
+          "titel": "Schalenbau",
+          "schichten": [
+            [
+              "Kruste",
+              "Silikatgestein"
+            ],
+            [
+              "Mantel",
+              "Dichteres Silikatgestein"
+            ],
+            [
+              "Kern",
+              "Eisen und Nickel"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geografie": {
+      "gruppe": "Natur",
+      "icon": "△",
+      "intro": "Geografie von Doran.",
+      "abschnitte": [
+        {
+          "titel": "Oberfläche",
+          "text": [
+            "Die Oberfläche von Doran ist kalt."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Doran.",
+      "abschnitte": [
+        {
+          "titel": "Gashülle",
+          "text": [
+            "Doran hält eine dünne, kalte Gashülle fest."
+          ],
+          "balken": {
+            "werte": [
+              [
+                "Kohlendioxid",
+                62
+              ],
+              [
+                "Stickstoff",
+                33
+              ],
+              [
+                "Argon",
+                5
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Doran.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 0,865 AE Abstand zu Kelira liegt die Gleichgewichtstemperatur von Doran bei rund -60 °C – kalt."
+          ]
+        }
+      ]
+    },
+    "Gewässer": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gewässer von Doran.",
+      "abschnitte": [
+        {
+          "titel": "Wasser",
+          "text": [
+            "Wasser gibt es höchstens als Eis in Kratern und im Untergrund."
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Doran.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Doran ist groß genug, um im Inneren noch Wärme zu speichern; Spuren alter vulkanischer Tätigkeit sind wahrscheinlich."
+          ]
+        }
+      ]
+    },
+    "Biosphäre": {
+      "gruppe": "Natur",
+      "icon": "❧",
+      "intro": "Biosphäre von Doran.",
+      "abschnitte": [
+        {
+          "titel": "Leben",
+          "text": [
+            "Auf Doran ist kein Leben verzeichnet."
+          ]
+        }
+      ]
+    },
+    "Spezies": {
+      "gruppe": "Zivilisation",
+      "icon": "✿",
+      "intro": "Spezies von Doran.",
+      "abschnitte": [
+        {
+          "titel": "Bewohner",
+          "text": [
+            "Doran ist keine Heimat einer intelligenten Spezies."
+          ]
+        },
+        {
+          "titel": "Im System von Seyrath",
+          "text": [
+            "Das Kelira-System ist die Heimat der Chronoiden: Ihr Planet Seyrath umkreist Kelira."
+          ],
+          "verweise": [
+            [
+              "Seyrath",
+              "inhalte/himmelskoerper/planeten/details/seyrath/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Chronoiden",
+              "inhalte/spezies/Mentale Spezies/Chronoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Zivilisation": {
+      "gruppe": "Zivilisation",
+      "icon": "▥",
+      "intro": "Zivilisation von Doran.",
+      "abschnitte": [
+        {
+          "titel": "Siedlungen",
+          "text": [
+            "Für Doran sind keine dauerhaften Siedlungen verzeichnet."
+          ]
+        },
+        {
+          "titel": "Im System von Seyrath",
+          "text": [
+            "Das Kelira-System ist die Heimat der Chronoiden: Ihr Planet Seyrath umkreist Kelira."
+          ],
+          "verweise": [
+            [
+              "Seyrath",
+              "inhalte/himmelskoerper/planeten/details/seyrath/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Chronoiden",
+              "inhalte/spezies/Mentale Spezies/Chronoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Doran.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Doran entstand zusammen mit dem Kelira-System vor rund 5,4 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Fraktionen": {
+      "gruppe": "Zivilisation",
+      "icon": "◇",
+      "intro": "Fraktionen von Doran.",
+      "abschnitte": [
+        {
+          "titel": "Ansprüche",
+          "text": [
+            "Für Doran sind keine Fraktionsansprüche verzeichnet."
+          ]
+        }
+      ]
+    },
+    "Rohstoffe": {
+      "gruppe": "Weitere",
+      "icon": "⬡",
+      "intro": "Rohstoffe von Doran.",
+      "abschnitte": [
+        {
+          "titel": "Rohstoffe",
+          "liste": [
+            "Silikatgestein",
+            "Metallerze"
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Doran.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Wie ist der innere Aufbau beschaffen?",
+            "Gab es früher eine dichtere Atmosphäre?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Doran ist mit allen Bahndaten im Kelira-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=seyrath-stern&objekt=seyrath-doran"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Doran.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Doran ist eine kalte Quarzsandwelt: Helle Dünenmeere umfließen dunkle, zerklüftete Hochländer. Eine dünne Kohlendioxidhülle treibt Staubstürme über die Ebenen. Als äußerer 3:2-Nachbar Seyraths prägt er dessen Bahn seit Milliarden Jahren mit."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Doran.",
+      "abschnitte": [
+        {
+          "titel": "Doran – Archivbild",
+          "bild": true,
+          "bildtext": "Doran"
+        }
+      ]
+    }
+  }
+}

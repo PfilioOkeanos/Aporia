@@ -1,0 +1,731 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Kessar",
+  "genitiv": "von Kessar",
+  "dossierName": "Kessar-Dossier",
+  "klasse": "Heißer eisenreicher Gesteinsplanet",
+  "intro": "Der innerste Planet besitzt eisenreiche Hochländer, dunkle Basaltflächen und eine sehr dünne Exosphäre. Er rotiert in einer 3:2-Resonanz.",
+  "globusDaten": {
+    "planet": "kessar",
+    "klasse": "Eis",
+    "radius": 3950000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=elaris-stern&objekt=elaris-kessar",
+  "grunddaten": [
+    [
+      "System-ID",
+      "elaris-kessar"
+    ],
+    [
+      "Archiv-ID",
+      "AP-ELARIS-KESSAR"
+    ],
+    [
+      "Typ",
+      "Heißer eisenreicher Gesteinsplanet"
+    ],
+    [
+      "Sternsystem",
+      "Elaris-System"
+    ],
+    [
+      "Zentralkörper",
+      "Elaris A"
+    ],
+    [
+      "Große Halbachse",
+      "0,19 AE"
+    ],
+    [
+      "Umlaufzeit",
+      "33,8 Tage"
+    ],
+    [
+      "Durchmesser",
+      "7.900 km"
+    ],
+    [
+      "Masse",
+      "0,23 Erdmassen"
+    ],
+    [
+      "Schwerkraft",
+      "0,6 g"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. 222 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Elaris-System"
+    ],
+    [
+      "Zentralstern",
+      "Elaris A",
+      "inhalte/himmelskoerper/sterne/details/elaris-a/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "0,19 AE"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Kessar im Elaris-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=elaris-stern&objekt=elaris-kessar",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Elaris A",
+      "href": "inhalte/himmelskoerper/sterne/details/elaris-a/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Neurofloren",
+      "titel": "Ilaruun",
+      "href": "inhalte/himmelskoerper/planeten/details/ilaruun/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Neurofloren",
+      "href": "inhalte/spezies/Mentale Spezies/Neurofloren/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Elaris-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=elaris-stern&objekt=elaris-kessar"
+    },
+    {
+      "titel": "Speziesdossier Neurofloren",
+      "href": "inhalte/spezies/Mentale Spezies/Neurofloren/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#090503",
+      "tiefe": "#130b07",
+      "akzent": "#c89a83",
+      "sand": "#cd9d81",
+      "moos": "#a68a64",
+      "ozean": "#857766",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#4d2d1d"
+    }
+  },
+  "kapitel": {
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Kessar auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Kessar",
+          "text": [
+            "Der innerste Planet besitzt eisenreiche Hochländer, dunkle Basaltflächen und eine sehr dünne Exosphäre. Er rotiert in einer 3:2-Resonanz.",
+            "Kessar umkreist Elaris A in 0,19 AE Abstand und braucht für einen Umlauf 33,8 Tage."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Heißer eisenreicher Gesteinsplanet"
+            ],
+            [
+              "Sternsystem",
+              "Elaris-System"
+            ],
+            [
+              "Zentralkörper",
+              "Elaris A"
+            ],
+            [
+              "Große Halbachse",
+              "0,19 AE"
+            ],
+            [
+              "Umlaufzeit",
+              "33,8 Tage"
+            ],
+            [
+              "Durchmesser",
+              "7.900 km"
+            ],
+            [
+              "Masse",
+              "0,23 Erdmassen"
+            ],
+            [
+              "Schwerkraft",
+              "0,6 g"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. 222 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Ilaruun",
+          "text": [
+            "Das Elaris-System ist die Heimat der Neurofloren: Ihr Planet Ilaruun umkreist Elaris A."
+          ],
+          "verweise": [
+            [
+              "Ilaruun",
+              "inhalte/himmelskoerper/planeten/details/ilaruun/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Neurofloren",
+              "inhalte/spezies/Mentale Spezies/Neurofloren/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Kessar im Elaris-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Elaris A"
+            ],
+            [
+              "Große Halbachse",
+              "0,19 AE (28,4 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,07"
+            ],
+            [
+              "Bahnneigung",
+              "0°"
+            ],
+            [
+              "Umlaufzeit",
+              "33,8 Tage"
+            ],
+            [
+              "Einstrahlung",
+              "11,357-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Am Himmel von Kessar",
+          "text": [
+            "Elaris A erscheint von hier aus etwa 2,12° groß (die Sonne von der Erde: 0,53°)."
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Elaris A · Stern",
+              "Orangefarbener Hauptreihenstern (K2 V)"
+            ],
+            [
+              "Kessar · 0,19 AE · dieses Dossier",
+              "Heißer eisenreicher Gesteinsplanet"
+            ],
+            [
+              "Orveth · 0,38 AE",
+              "Heißer trockener Gesteinsplanet"
+            ],
+            [
+              "Ilaruun · 0,66 AE",
+              "Gemäßigter terrestrischer Gesteinsplanet"
+            ],
+            [
+              "Venyra · 1,17 AE",
+              "Kalter Gesteins- und Eisplanet"
+            ],
+            [
+              "Daragon · 3,2 AE",
+              "Gasriese"
+            ],
+            [
+              "Shyren · 5,9 AE",
+              "Blauer Eisriese"
+            ],
+            [
+              "Eivara · 12,8 AE",
+              "Eis-Gesteins-Zwergplanet"
+            ],
+            [
+              "Tiruun · 1,7–2,4 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Kaelor-Saum · 9,5–30 AE",
+              "Äußeres Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Elaris A",
+              "inhalte/himmelskoerper/sterne/details/elaris-a/hauptseite/index.html"
+            ],
+            [
+              "Orveth",
+              "inhalte/himmelskoerper/planeten/details/orveth/hauptseite/index.html"
+            ],
+            [
+              "Ilaruun",
+              "inhalte/himmelskoerper/planeten/details/ilaruun/hauptseite/index.html"
+            ],
+            [
+              "Venyra",
+              "inhalte/himmelskoerper/planeten/details/venyra/hauptseite/index.html"
+            ],
+            [
+              "Daragon",
+              "inhalte/himmelskoerper/planeten/details/daragon/hauptseite/index.html"
+            ],
+            [
+              "Shyren",
+              "inhalte/himmelskoerper/planeten/details/shyren/hauptseite/index.html"
+            ],
+            [
+              "Eivara",
+              "inhalte/himmelskoerper/zwergplaneten/details/eivara/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Rotation",
+          "text": [
+            "Für Kessar wird eine 3:2-Spin-Bahn-Resonanz angesetzt.",
+            "Der Planet vollführt ungefähr drei Eigendrehungen während zweier Sternumläufe.",
+            "Seine exzentrische Umlaufbahn ermöglicht eine solche Rotationskonfiguration.",
+            "Es existiert keine normale, gleichmäßige Tag-Nacht-Abfolge wie auf Ilaruun."
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Kessar.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "3.950 km"
+            ],
+            [
+              "Masse",
+              "0,23 Erdmassen"
+            ],
+            [
+              "Mittlere Dichte",
+              "5,32 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "5,87 m/s² (0,598 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "6,81 km/s"
+            ]
+          ],
+          "vergleich": {
+            "mit": "Erde",
+            "werte": [
+              [
+                "Durchmesser",
+                7900,
+                12742,
+                "km"
+              ],
+              [
+                "Masse",
+                0.23,
+                1,
+                "Erdmassen"
+              ],
+              [
+                "Schwerkraft",
+                0.6,
+                1,
+                "g"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "Planetare Struktur": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Planetare Struktur von Kessar.",
+      "abschnitte": [
+        {
+          "titel": "Schalenbau",
+          "schichten": [
+            [
+              "Eiskruste",
+              "Gefrorenes Wasser und flüchtige Stoffe"
+            ],
+            [
+              "Eismantel",
+              "Hochdruckeis, eventuell mit flüssigen Schichten"
+            ],
+            [
+              "Kern",
+              "Gestein"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geografie": {
+      "gruppe": "Natur",
+      "icon": "△",
+      "intro": "Geografie von Kessar.",
+      "abschnitte": [
+        {
+          "titel": "Oberfläche",
+          "text": [
+            "Die Oberfläche von Kessar ist sehr heiß und von Einschlagkratern geprägt."
+          ]
+        },
+        {
+          "titel": "Besondere Orte",
+          "daten": [
+            [
+              "Die Schwarze Narbe",
+              "Ein langes System gewaltiger Bruchstufen, entstanden durch tektonische Spannungen und frühere Abkühlungsprozesse."
+            ],
+            [
+              "Das Becken von Rhak",
+              "Ein großer Einschlagskomplex mit ringförmigen Gebirgsketten und erstarrten Schmelzflächen."
+            ],
+            [
+              "Die Eisenstufen",
+              "Dunkle, metallreiche Hochländer mit zahlreichen steilen Geländekanten."
+            ],
+            [
+              "Die Kalten Krater",
+              "Dauerhaft verschattete Bereiche nahe der Pole, deren Temperaturen erheblich unter den Temperaturen der umliegenden Oberflächen liegen können."
+            ]
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Kessar.",
+      "abschnitte": [
+        {
+          "titel": "Exosphäre",
+          "text": [
+            "Kessar besitzt nur eine sehr dünne Exosphäre. Bei Sternwind oder Mikrometeoriteneinschlägen kann vorübergehend eine schwache Natriumfahne entstehen."
+          ]
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Kessar.",
+      "abschnitte": [
+        {
+          "titel": "Umwelt",
+          "text": [
+            "Kessar erhält ungefähr 11,36-mal so viel Sternenstrahlung wie die Erde.",
+            "Seine globale Strahlungsgleichgewichtstemperatur liegt bei angesetztem Bond-Albedo-Wert von 0,12 bei etwa 495 K.",
+            "Dies entspricht ungefähr 222 °C.",
+            "Da der Planet nahezu keine Atmosphäre besitzt, schwanken lokale Oberflächentemperaturen erheblich.",
+            "Die sonnenbeschienenen Bereiche können deutlich heißer sein als die globale Gleichgewichtstemperatur."
+          ]
+        }
+      ]
+    },
+    "Gewässer": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gewässer von Kessar.",
+      "abschnitte": [
+        {
+          "titel": "Wasser",
+          "text": [
+            "Wasser kommt von Kessar gefroren vor; unter dem Eis sind flüssige Schichten möglich."
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Kessar.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Kessar ist geologisch weitgehend erstarrt; Einschläge haben seine Oberfläche geformt."
+          ]
+        },
+        {
+          "titel": "Geologie",
+          "text": [
+            "Kessar besitzt:",
+            "Der Planet ist heute überwiegend geologisch ruhig.",
+            "Große Bruchkanten können durch die langfristige Abkühlung und Kontraktion des Inneren entstanden sein."
+          ],
+          "liste": [
+            "Große Einschlagskrater",
+            "Eisenreiche Gesteinsformationen",
+            "Dunkle Basaltflächen",
+            "Alte erstarrte Lavaströme",
+            "Lange tektonische Bruchkanten",
+            "Einschlagsbedingte Schmelzbecken",
+            "Ausgedehnte Regolithlandschaften"
+          ]
+        }
+      ]
+    },
+    "Biosphäre": {
+      "gruppe": "Natur",
+      "icon": "❧",
+      "intro": "Biosphäre von Kessar.",
+      "abschnitte": [
+        {
+          "titel": "Leben",
+          "text": [
+            "Auf Kessar ist kein Leben verzeichnet."
+          ]
+        }
+      ]
+    },
+    "Spezies": {
+      "gruppe": "Zivilisation",
+      "icon": "✿",
+      "intro": "Spezies von Kessar.",
+      "abschnitte": [
+        {
+          "titel": "Bewohner",
+          "text": [
+            "Kessar ist keine Heimat einer intelligenten Spezies."
+          ]
+        },
+        {
+          "titel": "Im System von Ilaruun",
+          "text": [
+            "Das Elaris-System ist die Heimat der Neurofloren: Ihr Planet Ilaruun umkreist Elaris A."
+          ],
+          "verweise": [
+            [
+              "Ilaruun",
+              "inhalte/himmelskoerper/planeten/details/ilaruun/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Neurofloren",
+              "inhalte/spezies/Mentale Spezies/Neurofloren/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Zivilisation": {
+      "gruppe": "Zivilisation",
+      "icon": "▥",
+      "intro": "Zivilisation von Kessar.",
+      "abschnitte": [
+        {
+          "titel": "Siedlungen",
+          "text": [
+            "Für Kessar sind keine dauerhaften Siedlungen verzeichnet."
+          ]
+        },
+        {
+          "titel": "Im System von Ilaruun",
+          "text": [
+            "Das Elaris-System ist die Heimat der Neurofloren: Ihr Planet Ilaruun umkreist Elaris A."
+          ],
+          "verweise": [
+            [
+              "Ilaruun",
+              "inhalte/himmelskoerper/planeten/details/ilaruun/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Neurofloren",
+              "inhalte/spezies/Mentale Spezies/Neurofloren/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Kessar.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Kessar entstand zusammen mit dem Elaris-System vor rund 5,9 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Fraktionen": {
+      "gruppe": "Zivilisation",
+      "icon": "◇",
+      "intro": "Fraktionen von Kessar.",
+      "abschnitte": [
+        {
+          "titel": "Ansprüche",
+          "text": [
+            "Für Kessar sind keine Fraktionsansprüche verzeichnet."
+          ]
+        }
+      ]
+    },
+    "Rohstoffe": {
+      "gruppe": "Weitere",
+      "icon": "⬡",
+      "intro": "Rohstoffe von Kessar.",
+      "abschnitte": [
+        {
+          "titel": "Rohstoffe",
+          "liste": [
+            "Wassereis",
+            "Flüchtige Stoffe"
+          ]
+        },
+        {
+          "titel": "Rohstoffe",
+          "liste": [
+            "Eisenreiche Minerale",
+            "Nickelerze",
+            "Basalt",
+            "Silikate",
+            "Sulfide",
+            "Einschlagsbedingte Metallkonzentrationen"
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Kessar.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Wie ist der innere Aufbau beschaffen?",
+            "Gab es früher eine dichtere Atmosphäre?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Kessar ist mit allen Bahndaten im Elaris-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=elaris-stern&objekt=elaris-kessar"
+            ]
+          ]
+        },
+        {
+          "titel": "Forschung",
+          "text": [
+            "Kessar eignet sich für:"
+          ],
+          "liste": [
+            "Untersuchungen früher planetarer Differentiation",
+            "Analyse von Einschlagsereignissen",
+            "Untersuchung der Rotationsresonanz",
+            "Hochtemperaturtechnik",
+            "Automatisierte Rohstofferkundung"
+          ]
+        },
+        {
+          "titel": "Raumfahrt",
+          "text": [
+            "Dauerhafte biologische Außenposten sind nur in stark geschützten künstlichen Habitaten möglich.",
+            "Unbemannte Roboter übernehmen die meisten Arbeiten.",
+            "Die wichtigste technische Herausforderung ist der Schutz vor thermischer Belastung und intensiver Sternstrahlung."
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Kessar.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Innerster Planet des Elaris-Systems"
+          ]
+        },
+        {
+          "titel": "Besonderes Naturereignis",
+          "text": [
+            "Kessar besitzt eine extrem dünne, veränderliche Exosphäre.",
+            "Unter bestimmten Bedingungen können Sternwind, Oberflächenbeschuss und Mikrometeoriteneinschläge Atome aus dem Gestein freisetzen.",
+            "Dadurch ist eine sehr schwache, vorübergehende Natriumfahne physikalisch denkbar.",
+            "Sie ist kein gewöhnlicher atmosphärischer Schweif."
+          ]
+        },
+        {
+          "titel": "Verwandte Dossiers",
+          "verweise": [
+            [
+              "Elaris-System",
+              "inhalte/himmelskoerper/sternensysteme/details/elaris-system/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Kessar.",
+      "abschnitte": [
+        {
+          "titel": "Kessar",
+          "bild": true,
+          "bildtext": "Kessar"
+        }
+      ]
+    }
+  }
+}

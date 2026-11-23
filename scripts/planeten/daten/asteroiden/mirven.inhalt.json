@@ -1,0 +1,508 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Mirven",
+  "genitiv": "von Mirven",
+  "dossierName": "Mirven-Dossier",
+  "klasse": "Asteroid",
+  "intro": "Mirven ist ein größerer kartierter Körper im inneren Bereich des Veylan-Asteroidengürtels. Mirven umkreist Teryn in 1,69 AE Abstand und braucht für einen Umlauf 2,5 Jahre.",
+  "globusDaten": {
+    "planet": "mirven",
+    "klasse": "Gestein",
+    "radius": 92000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=teryn-stern&objekt=teryn-mirven",
+  "grunddaten": [
+    [
+      "System-ID",
+      "teryn-mirven"
+    ],
+    [
+      "Archiv-ID",
+      "AP-TERYN-MIRVEN"
+    ],
+    [
+      "Typ",
+      "Asteroid"
+    ],
+    [
+      "Sternsystem",
+      "Teryn-System"
+    ],
+    [
+      "Zentralkörper",
+      "Teryn"
+    ],
+    [
+      "Große Halbachse",
+      "1,69 AE"
+    ],
+    [
+      "Umlaufzeit",
+      "2,5 Jahre"
+    ],
+    [
+      "Durchmesser",
+      "184 km"
+    ],
+    [
+      "Masse",
+      "1,19 · 10^17 kg"
+    ],
+    [
+      "Schwerkraft",
+      "0,09 cm/s²"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -116 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Teryn-System"
+    ],
+    [
+      "Zentralstern",
+      "Teryn",
+      "inhalte/himmelskoerper/sterne/details/teryn/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "1,69 AE"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Mirven im Teryn-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=teryn-stern&objekt=teryn-mirven",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Teryn",
+      "href": "inhalte/himmelskoerper/sterne/details/teryn/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Solitiden",
+      "titel": "Iskara",
+      "href": "inhalte/himmelskoerper/planeten/details/iskara/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Solitiden",
+      "href": "inhalte/spezies/Mentale Spezies/Solitiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Teryn-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=teryn-stern&objekt=teryn-mirven"
+    },
+    {
+      "titel": "Speziesdossier Solitiden",
+      "href": "inhalte/spezies/Mentale Spezies/Solitiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#070605",
+      "tiefe": "#100d0b",
+      "akzent": "#b9a99c",
+      "sand": "#bfaa91",
+      "moos": "#989c79",
+      "ozean": "#7a8685",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#43372e"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Bahn"
+      ],
+      [
+        "Material",
+        "Zusammensetzung"
+      ],
+      [
+        "Zeit",
+        "Herkunft"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Zusammensetzung": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Zusammensetzung von Mirven.",
+      "abschnitte": [
+        {
+          "titel": "Material",
+          "liste": [
+            "Silikate",
+            "Eisen und Nickel",
+            "Seltene Metalle"
+          ],
+          "schichten": [
+            [
+              "Regolith",
+              "Staub und Gesteinsschutt"
+            ],
+            [
+              "Gesteinsmantel",
+              "Silikate und Metalle"
+            ],
+            [
+              "Kern",
+              "Metallreich"
+            ]
+          ]
+        }
+      ]
+    },
+    "Bahn": {
+      "gruppe": "Wissenschaft",
+      "icon": "◌",
+      "intro": "Bahn von Mirven.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Teryn"
+            ],
+            [
+              "Große Halbachse",
+              "1,69 AE (252,8 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,04"
+            ],
+            [
+              "Bahnneigung",
+              "3,1°"
+            ],
+            [
+              "Umlaufzeit",
+              "2,5 Jahre"
+            ],
+            [
+              "Einstrahlung",
+              "0,112-fach der Erde"
+            ]
+          ]
+        }
+      ]
+    },
+    "Herkunft": {
+      "gruppe": "Weitere",
+      "icon": "⧗",
+      "intro": "Herkunft von Mirven.",
+      "abschnitte": [
+        {
+          "titel": "Herkunft",
+          "text": [
+            "Mirven ist ein Überrest aus der Entstehungszeit des Teryn-Systems."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Mirven auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Mirven",
+          "text": [
+            "Mirven ist ein größerer kartierter Körper im inneren Bereich des Veylan-Asteroidengürtels.",
+            "Mirven umkreist Teryn in 1,69 AE Abstand und braucht für einen Umlauf 2,5 Jahre."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Asteroid"
+            ],
+            [
+              "Sternsystem",
+              "Teryn-System"
+            ],
+            [
+              "Zentralkörper",
+              "Teryn"
+            ],
+            [
+              "Große Halbachse",
+              "1,69 AE"
+            ],
+            [
+              "Umlaufzeit",
+              "2,5 Jahre"
+            ],
+            [
+              "Durchmesser",
+              "184 km"
+            ],
+            [
+              "Masse",
+              "1,19 · 10^17 kg"
+            ],
+            [
+              "Schwerkraft",
+              "0,09 cm/s²"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -116 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Iskara",
+          "text": [
+            "Das Teryn-System ist die Heimat der Solitiden: Ihr Planet Iskara umkreist Teryn."
+          ],
+          "verweise": [
+            [
+              "Iskara",
+              "inhalte/himmelskoerper/planeten/details/iskara/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Solitiden",
+              "inhalte/spezies/Mentale Spezies/Solitiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Mirven im Teryn-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Teryn"
+            ],
+            [
+              "Große Halbachse",
+              "1,69 AE (252,8 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,04"
+            ],
+            [
+              "Bahnneigung",
+              "3,1°"
+            ],
+            [
+              "Umlaufzeit",
+              "2,5 Jahre"
+            ],
+            [
+              "Einstrahlung",
+              "0,112-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Teryn · Stern",
+              "Orangefarbener Hauptreihenstern (K4 V)"
+            ],
+            [
+              "Dareth · 0,15 AE",
+              "Heißer Gesteinsplanet"
+            ],
+            [
+              "Nura · 0,34 AE",
+              "Heißer terrestrischer Planet"
+            ],
+            [
+              "Iskara · 0,61 AE",
+              "Bewohnter terrestrischer Silikatplanet"
+            ],
+            [
+              "Veldros · 1,08 AE",
+              "Kalte Supererde"
+            ],
+            [
+              "Saevor · 2,84 AE",
+              "Gasriese"
+            ],
+            [
+              "Ynderal · 5,9 AE",
+              "Eisreicher Riesenplanet"
+            ],
+            [
+              "Veylan-Asteroidengürtel · 1,7–2 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußere Kleinkörperregion · 14–38 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Teryn",
+              "inhalte/himmelskoerper/sterne/details/teryn/hauptseite/index.html"
+            ],
+            [
+              "Dareth",
+              "inhalte/himmelskoerper/planeten/details/dareth/hauptseite/index.html"
+            ],
+            [
+              "Nura",
+              "inhalte/himmelskoerper/planeten/details/nura/hauptseite/index.html"
+            ],
+            [
+              "Iskara",
+              "inhalte/himmelskoerper/planeten/details/iskara/hauptseite/index.html"
+            ],
+            [
+              "Veldros",
+              "inhalte/himmelskoerper/planeten/details/veldros/hauptseite/index.html"
+            ],
+            [
+              "Saevor",
+              "inhalte/himmelskoerper/planeten/details/saevor/hauptseite/index.html"
+            ],
+            [
+              "Ynderal",
+              "inhalte/himmelskoerper/planeten/details/ynderal/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Mirven.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "92 km"
+            ],
+            [
+              "Masse",
+              "1,19 · 10^17 kg"
+            ],
+            [
+              "Mittlere Dichte",
+              "0,04 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "0 m/s² (0 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "0,01 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Mirven.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Mirven besteht aus Material, das sich bei der Entstehung des Teryn-Systems nicht zu einem Planeten vereinte."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Mirven.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Ist der Körper ein Bruchstück eines größeren Körpers?",
+            "Welche Rohstoffe birgt er?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Mirven ist mit allen Bahndaten im Teryn-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=teryn-stern&objekt=teryn-mirven"
+            ]
+          ]
+        },
+        {
+          "titel": "Untersuchung im Teryn-System",
+          "text": [
+            "Ist Mirven ein kompakter Körper oder ein lockerer Verbund aus Gesteinsbruchstücken?"
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Mirven.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Mirven ist ein größerer kartierter Körper im inneren Bereich des Veylan-Asteroidengürtels."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Mirven.",
+      "abschnitte": [
+        {
+          "titel": "Illustrationsmotiv",
+          "bild": true,
+          "bildtext": "Illustration anhand eines vorhandenen Motivs. Sie zeigt den Himmelskörpertyp und keine bestätigten Oberflächendetails."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,753 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Torad",
+  "genitiv": "von Torad",
+  "dossierName": "Torad-Dossier",
+  "klasse": "Gasriese",
+  "intro": "Torad ist der erste große Gasplanet des Systems mit ausgeprägten Wolkenbändern, großen langlebigen Wirbelstürmen, kräftigem Magnetfeld, einem Ringsystem aus Staub und Eispartikeln und mehreren geologisch unterschiedlichen Monden. Torad umkreist Darynth in 2,9 AE Abstand und braucht für einen Umlauf 5,6 Jahre.",
+  "globusDaten": {
+    "planet": "goldener-gasriese-mit-klaren-wolkenbandern",
+    "klasse": "Gasriese",
+    "radius": 69000000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=iravelle-stern&objekt=iravelle-torad",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-17DE93B40F"
+    ],
+    [
+      "Typ",
+      "Gasriese"
+    ],
+    [
+      "Sternsystem",
+      "Darynth-System"
+    ],
+    [
+      "Zentralkörper",
+      "Darynth"
+    ],
+    [
+      "Große Halbachse",
+      "2,9 AE"
+    ],
+    [
+      "Umlaufzeit",
+      "5,6 Jahre"
+    ],
+    [
+      "Durchmesser",
+      "138.000 km"
+    ],
+    [
+      "Masse",
+      "250 Erdmassen"
+    ],
+    [
+      "Schwerkraft",
+      "2,13 g"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -166 °C"
+    ],
+    [
+      "Monde",
+      "3 (Valen, Ithra, Moradh)"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Darynth-System"
+    ],
+    [
+      "Zentralstern",
+      "Darynth",
+      "inhalte/himmelskoerper/sterne/details/darynth/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "2,9 AE"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Torad im Darynth-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=iravelle-stern&objekt=iravelle-torad",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Darynth",
+      "href": "inhalte/himmelskoerper/sterne/details/darynth/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Valen",
+      "href": "inhalte/himmelskoerper/zwergplaneten/details/valen/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Ithra",
+      "href": "inhalte/himmelskoerper/zwergplaneten/details/ithra/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Moradh",
+      "href": "inhalte/himmelskoerper/zwergplaneten/details/moradh/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Oneiroiden",
+      "titel": "Iravelle",
+      "href": "inhalte/himmelskoerper/planeten/details/iravelle/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Oneiroiden",
+      "href": "inhalte/spezies/Mentale Spezies/Oneiroiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Darynth-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=iravelle-stern&objekt=iravelle-torad"
+    },
+    {
+      "titel": "Speziesdossier Oneiroiden",
+      "href": "inhalte/spezies/Mentale Spezies/Oneiroiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#0b0805",
+      "tiefe": "#19130b",
+      "akzent": "#ebc79c",
+      "sand": "#edc391",
+      "moos": "#c6be79",
+      "ozean": "#9fa585",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#654c2e"
+    }
+  },
+  "kapitel": {
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Torad auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Torad",
+          "text": [
+            "Torad ist der erste große Gasplanet des Systems mit ausgeprägten Wolkenbändern, großen langlebigen Wirbelstürmen, kräftigem Magnetfeld, einem Ringsystem aus Staub und Eispartikeln und mehreren geologisch unterschiedlichen Monden.",
+            "Torad umkreist Darynth in 2,9 AE Abstand und braucht für einen Umlauf 5,6 Jahre."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Gasriese"
+            ],
+            [
+              "Sternsystem",
+              "Darynth-System"
+            ],
+            [
+              "Zentralkörper",
+              "Darynth"
+            ],
+            [
+              "Große Halbachse",
+              "2,9 AE"
+            ],
+            [
+              "Umlaufzeit",
+              "5,6 Jahre"
+            ],
+            [
+              "Durchmesser",
+              "138.000 km"
+            ],
+            [
+              "Masse",
+              "250 Erdmassen"
+            ],
+            [
+              "Schwerkraft",
+              "2,13 g"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -166 °C"
+            ],
+            [
+              "Monde",
+              "3 (Valen, Ithra, Moradh)"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Iravelle",
+          "text": [
+            "Das Darynth-System ist die Heimat der Oneiroiden: Ihr Planet Iravelle umkreist Darynth."
+          ],
+          "verweise": [
+            [
+              "Iravelle",
+              "inhalte/himmelskoerper/planeten/details/iravelle/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Oneiroiden",
+              "inhalte/spezies/Mentale Spezies/Oneiroiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Torad im Darynth-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Darynth"
+            ],
+            [
+              "Große Halbachse",
+              "2,9 AE (433,8 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,03"
+            ],
+            [
+              "Bahnneigung",
+              "1,2°"
+            ],
+            [
+              "Umlaufzeit",
+              "5,6 Jahre"
+            ],
+            [
+              "Einstrahlung",
+              "0,044-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Am Himmel von Torad",
+          "text": [
+            "Darynth erscheint von hier aus etwa 0,16° groß (die Sonne von der Erde: 0,53°)."
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Darynth · Stern",
+              "Orangefarbener Zwerg (K3 V)"
+            ],
+            [
+              "Ashken · 0,18 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Doriel · 0,39 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Iravelle · 0,65 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Kavren · 1,12 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Torad · 2,9 AE · dieses Dossier",
+              "Gasriese"
+            ],
+            [
+              "Olyss · 6,1 AE",
+              "Eisriese"
+            ],
+            [
+              "Umbrel · 11,3 AE",
+              "Eisriese"
+            ],
+            [
+              "Darynth-Asteroidengürtel · 1,7–2,4 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußere Kleinkörperregion · 14–30 AE",
+              "Kleinkörpergürtel"
+            ]
+          ],
+          "verweise": [
+            [
+              "Darynth",
+              "inhalte/himmelskoerper/sterne/details/darynth/hauptseite/index.html"
+            ],
+            [
+              "Ashken",
+              "inhalte/himmelskoerper/planeten/details/ashken/hauptseite/index.html"
+            ],
+            [
+              "Doriel",
+              "inhalte/himmelskoerper/planeten/details/doriel/hauptseite/index.html"
+            ],
+            [
+              "Iravelle",
+              "inhalte/himmelskoerper/planeten/details/iravelle/hauptseite/index.html"
+            ],
+            [
+              "Kavren",
+              "inhalte/himmelskoerper/planeten/details/kavren/hauptseite/index.html"
+            ],
+            [
+              "Olyss",
+              "inhalte/himmelskoerper/planeten/details/olyss/hauptseite/index.html"
+            ],
+            [
+              "Umbrel",
+              "inhalte/himmelskoerper/planeten/details/umbrel/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Torad.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "69.000 km"
+            ],
+            [
+              "Masse",
+              "250 Erdmassen"
+            ],
+            [
+              "Mittlere Dichte",
+              "1,09 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "20,91 m/s² (2,131 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "53,74 km/s"
+            ]
+          ],
+          "vergleich": {
+            "mit": "Erde",
+            "werte": [
+              [
+                "Durchmesser",
+                138000,
+                12742,
+                "km"
+              ],
+              [
+                "Masse",
+                250,
+                1,
+                "Erdmassen"
+              ],
+              [
+                "Schwerkraft",
+                2.13,
+                1,
+                "g"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "Planetare Struktur": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Planetare Struktur von Torad.",
+      "abschnitte": [
+        {
+          "titel": "Schalenbau",
+          "schichten": [
+            [
+              "Wolkendecke",
+              "Ammoniak- und Wasserwolken in Bändern"
+            ],
+            [
+              "Wasserstoffhülle",
+              "Molekularer Wasserstoff und Helium"
+            ],
+            [
+              "Metallischer Wasserstoff",
+              "Leitfähige Schicht unter extremem Druck – Ursprung des Magnetfelds"
+            ],
+            [
+              "Kern",
+              "Gestein und Eis"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geografie": {
+      "gruppe": "Natur",
+      "icon": "△",
+      "intro": "Geografie von Torad.",
+      "abschnitte": [
+        {
+          "titel": "Oberfläche",
+          "text": [
+            "Torad besitzt keine feste Oberfläche. Sichtbar sind Wolkenbänder, Wirbel und Stürme."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Torad.",
+      "abschnitte": [
+        {
+          "titel": "Gashülle",
+          "text": [
+            "Torad besitzt keine feste Oberfläche; die Hülle geht nach innen allmählich in dichtere Schichten über."
+          ],
+          "balken": {
+            "werte": [
+              [
+                "Wasserstoff",
+                86
+              ],
+              [
+                "Helium",
+                13
+              ],
+              [
+                "Methan und Spurengase",
+                1
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Torad.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 2,9 AE Abstand zu Darynth liegt die Gleichgewichtstemperatur von Torad bei rund -166 °C – eisig kalt."
+          ]
+        }
+      ]
+    },
+    "Gewässer": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gewässer von Torad.",
+      "abschnitte": [
+        {
+          "titel": "Wasser",
+          "text": [
+            "Wasser liegt in den Wolkenschichten und tief im Inneren unter hohem Druck vor."
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Torad.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Ohne feste Oberfläche gibt es keine Geologie im engeren Sinn; im Inneren herrschen extreme Drücke und Temperaturen."
+          ]
+        }
+      ]
+    },
+    "Biosphäre": {
+      "gruppe": "Natur",
+      "icon": "❧",
+      "intro": "Biosphäre von Torad.",
+      "abschnitte": [
+        {
+          "titel": "Leben",
+          "text": [
+            "Auf Torad ist kein Leben verzeichnet."
+          ]
+        }
+      ]
+    },
+    "Spezies": {
+      "gruppe": "Zivilisation",
+      "icon": "✿",
+      "intro": "Spezies von Torad.",
+      "abschnitte": [
+        {
+          "titel": "Bewohner",
+          "text": [
+            "Torad ist keine Heimat einer intelligenten Spezies."
+          ]
+        },
+        {
+          "titel": "Im System von Iravelle",
+          "text": [
+            "Das Darynth-System ist die Heimat der Oneiroiden: Ihr Planet Iravelle umkreist Darynth."
+          ],
+          "verweise": [
+            [
+              "Iravelle",
+              "inhalte/himmelskoerper/planeten/details/iravelle/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Oneiroiden",
+              "inhalte/spezies/Mentale Spezies/Oneiroiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Zivilisation": {
+      "gruppe": "Zivilisation",
+      "icon": "▥",
+      "intro": "Zivilisation von Torad.",
+      "abschnitte": [
+        {
+          "titel": "Siedlungen",
+          "text": [
+            "Für Torad sind keine dauerhaften Siedlungen verzeichnet."
+          ]
+        },
+        {
+          "titel": "Im System von Iravelle",
+          "text": [
+            "Das Darynth-System ist die Heimat der Oneiroiden: Ihr Planet Iravelle umkreist Darynth."
+          ],
+          "verweise": [
+            [
+              "Iravelle",
+              "inhalte/himmelskoerper/planeten/details/iravelle/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Oneiroiden",
+              "inhalte/spezies/Mentale Spezies/Oneiroiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Torad.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Torad entstand zusammen mit dem Darynth-System vor rund 6 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Fraktionen": {
+      "gruppe": "Zivilisation",
+      "icon": "◇",
+      "intro": "Fraktionen von Torad.",
+      "abschnitte": [
+        {
+          "titel": "Ansprüche",
+          "text": [
+            "Für Torad sind keine Fraktionsansprüche verzeichnet."
+          ]
+        }
+      ]
+    },
+    "Rohstoffe": {
+      "gruppe": "Weitere",
+      "icon": "⬡",
+      "intro": "Rohstoffe von Torad.",
+      "abschnitte": [
+        {
+          "titel": "Rohstoffe",
+          "liste": [
+            "Wasserstoff",
+            "Helium-3",
+            "Ammoniak"
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Torad.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Wie tief reichen die Wolkenbänder?",
+            "Wie groß ist der feste Kern?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Torad ist mit allen Bahndaten im Darynth-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=iravelle-stern&objekt=iravelle-torad"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Torad.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Größter Planet des Darynth-Systems",
+            "3 Monde: Valen, Ithra, Moradh"
+          ]
+        },
+        {
+          "titel": "Monde",
+          "karten": [
+            {
+              "titel": "Valen",
+              "text": "3.200 km Durchmesser, Umlauf in 43,2 Stunden. Valen ist der innerste große Mond Torads. Starke Gezeitenwirkungen heizen sein Inneres; durch die dunkle Basaltkruste ziehen glühende Lavaadern."
+            },
+            {
+              "titel": "Ithra",
+              "text": "2.600 km Durchmesser, Umlauf in 4,5 Tage. Ithra ist ein eisreicher Mond Torads, dessen helle Oberfläche von kryovulkanischen Ablagerungen überzogen ist."
+            },
+            {
+              "titel": "Moradh",
+              "text": "1.200 km Durchmesser, Umlauf in 30 Tage. Moradh ist ein weiter außen kreisender, dunkler Mond Torads mit kohlenstoffreicher, eisführender Kruste."
+            }
+          ],
+          "verweise": [
+            [
+              "Valen",
+              "inhalte/himmelskoerper/zwergplaneten/details/valen/hauptseite/index.html"
+            ],
+            [
+              "Ithra",
+              "inhalte/himmelskoerper/zwergplaneten/details/ithra/hauptseite/index.html"
+            ],
+            [
+              "Moradh",
+              "inhalte/himmelskoerper/zwergplaneten/details/moradh/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Unterschiedliche Monde",
+          "text": [
+            "Torads Monde können geologisch sehr unterschiedlich sein: Innere Monde wie Valen erfahren starke Gezeitenwirkungen, weiter entfernte Körper wie Moradh besitzen eisreiche Oberflächen. Gravitative Resonanzen Torads erzeugen Lücken im Asteroidengürtel."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Torad.",
+      "abschnitte": [
+        {
+          "titel": "Torad – Archivbild",
+          "bild": true,
+          "bildtext": "Torad"
+        }
+      ]
+    },
+    "Gaszusammensetzung": {
+      "gruppe": "Weitere",
+      "icon": "◆",
+      "intro": "Gaszusammensetzung von Torad.",
+      "abschnitte": [
+        {
+          "titel": "Gaszusammensetzung",
+          "text": [
+            "Torad ist der erste große Gasplanet des Systems mit ausgeprägten Wolkenbändern, großen langlebigen Wirbelstürmen, kräftigem Magnetfeld, einem Ringsystem aus Staub und Eispartikeln und mehreren geologisch unterschiedlichen Monden."
+          ]
+        }
+      ]
+    },
+    "Wolkenschichten": {
+      "gruppe": "Weitere",
+      "icon": "◆",
+      "intro": "Wolkenschichten von Torad.",
+      "abschnitte": [
+        {
+          "titel": "Wolkenschichten",
+          "text": [
+            "Torad ist der erste große Gasplanet des Systems mit ausgeprägten Wolkenbändern, großen langlebigen Wirbelstürmen, kräftigem Magnetfeld, einem Ringsystem aus Staub und Eispartikeln und mehreren geologisch unterschiedlichen Monden."
+          ]
+        }
+      ]
+    },
+    "Stürme": {
+      "gruppe": "Weitere",
+      "icon": "◆",
+      "intro": "Stürme von Torad.",
+      "abschnitte": [
+        {
+          "titel": "Stürme",
+          "text": [
+            "Torad ist der erste große Gasplanet des Systems mit ausgeprägten Wolkenbändern, großen langlebigen Wirbelstürmen, kräftigem Magnetfeld, einem Ringsystem aus Staub und Eispartikeln und mehreren geologisch unterschiedlichen Monden."
+          ]
+        }
+      ]
+    }
+  }
+}

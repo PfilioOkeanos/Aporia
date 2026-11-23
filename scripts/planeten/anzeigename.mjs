@@ -8,7 +8,8 @@ const K = findeKoerper(ordner);
 const datei = `${ROOT}inhalte/himmelskoerper/${K.art}/bildarchiv.json`;
 const roh = fs.readFileSync(datei, "utf8");
 const archiv = JSON.parse(roh);
-const eintrag = archiv.find((e) => e.slug.replace(/-[0-9a-f]{10,12}$/i, "") === K.slug);
+const eintrag = archiv.find((e) => e.slug === K.slug)
+    ?? archiv.find((e) => e.slug.replace(/-[0-9a-f]{10,12}$/i, "") === K.slug);
 if (!eintrag) throw new Error(`Kein Bildarchiv-Eintrag für ${K.slug}`);
 const alt = eintrag.title;
 eintrag.title = name;

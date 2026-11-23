@@ -45,7 +45,7 @@ const knoten = [
         "belohnung": {
             "art": "gegenstand",
             "name": "Kultur Traditionen",
-            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/OzeanWelt/erde-im-sternenmeer/unterseiten/ERDE_BILDER/Zivilisation/07%20%E2%80%93%20Kultur%20&%20Traditionen/07_Kultur_Traditionen.jpg"
+            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/OzeanWelt/erde/unterseiten/ERDE_BILDER/Zivilisation/07%20%E2%80%93%20Kultur%20&%20Traditionen/07_Kultur_Traditionen.jpg"
         }
     },
     {

@@ -1,0 +1,510 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Feuerbote",
+  "genitiv": "von Feuerbote",
+  "dossierName": "Feuerbote-Dossier",
+  "klasse": "Komet",
+  "intro": "Der Feuerbote ist ein periodischer Komet (rund 26 Jahre), der sich Ushara bis auf 0,72 AE nähert. Sein rostrot-blauer Schweif ist dann vom Kharuun-Orbit aus deutlich sichtbar; viele Traditionen deuten ihn als Vorzeichen. Feuerbote umkreist Ushara in 8 AE Abstand und braucht für einen Umlauf 25,6 Jahre.",
+  "globusDaten": {
+    "planet": "einsamer-komet-mit-rostrot-blauem-schweif",
+    "klasse": "Eis",
+    "radius": 5000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=kharuun-stern&objekt=kharuun-feuerbote",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-8230EF47A9"
+    ],
+    [
+      "Typ",
+      "Komet"
+    ],
+    [
+      "Sternsystem",
+      "Kharuun-System"
+    ],
+    [
+      "Zentralkörper",
+      "Ushara"
+    ],
+    [
+      "Große Halbachse",
+      "8 AE"
+    ],
+    [
+      "Umlaufzeit",
+      "25,6 Jahre"
+    ],
+    [
+      "Durchmesser",
+      "10 km"
+    ],
+    [
+      "Masse",
+      "3,14 · 10^14 kg"
+    ],
+    [
+      "Schwerkraft",
+      "0,08 cm/s²"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -201 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Kharuun-System"
+    ],
+    [
+      "Zentralstern",
+      "Ushara",
+      "inhalte/himmelskoerper/sterne/details/ushara/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "8 AE"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Feuerbote im Kharuun-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=kharuun-stern&objekt=kharuun-feuerbote",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Ushara",
+      "href": "inhalte/himmelskoerper/sterne/details/ushara/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Pyronoiden",
+      "titel": "Kharuun",
+      "href": "inhalte/himmelskoerper/planeten/details/kharuun/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Pyronoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Pyronoiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Kharuun-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=kharuun-stern&objekt=kharuun-feuerbote"
+    },
+    {
+      "titel": "Speziesdossier Pyronoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Pyronoiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#0a0605",
+      "tiefe": "#160e0c",
+      "akzent": "#deac9f",
+      "sand": "#e0ac93",
+      "moos": "#ba9f7c",
+      "ozean": "#958a89",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#5c3930"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Umlaufbahn"
+      ],
+      [
+        "Hülle",
+        "Schweif"
+      ],
+      [
+        "Hülle",
+        "Koma"
+      ],
+      [
+        "Kern",
+        "Kern"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Kern": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Kern von Feuerbote.",
+      "abschnitte": [
+        {
+          "titel": "Kometenkern",
+          "text": [
+            "Der Kern von Feuerbote misst rund 10 km und besteht aus einem lockeren Gemenge aus Eis, Staub und Gestein."
+          ],
+          "schichten": [
+            [
+              "Staubkruste",
+              "Dunkle, kohlenstoffreiche Oberfläche"
+            ],
+            [
+              "Eis-Staub-Gemisch",
+              "Wassereis, Kohlendioxid und Staub"
+            ],
+            [
+              "Kern",
+              "Lockeres Eis-Gestein-Gemenge"
+            ]
+          ]
+        }
+      ]
+    },
+    "Koma": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Koma von Feuerbote.",
+      "abschnitte": [
+        {
+          "titel": "Koma",
+          "text": [
+            "Nähert sich Feuerbote dem Stern Ushara, verdampft Eis und bildet eine leuchtende Gashülle um den Kern."
+          ]
+        }
+      ]
+    },
+    "Schweif": {
+      "gruppe": "Natur",
+      "icon": "☄",
+      "intro": "Schweif von Feuerbote.",
+      "abschnitte": [
+        {
+          "titel": "Schweif",
+          "text": [
+            "Der Feuerbote ist ein periodischer Komet (rund 26 Jahre), der sich Ushara bis auf 0,72 AE nähert. Sein rostrot-blauer Schweif ist dann vom Kharuun-Orbit aus deutlich sichtbar; viele Traditionen deuten ihn als Vorzeichen."
+          ]
+        }
+      ]
+    },
+    "Umlaufbahn": {
+      "gruppe": "Wissenschaft",
+      "icon": "◌",
+      "intro": "Umlaufbahn von Feuerbote.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Ushara"
+            ],
+            [
+              "Große Halbachse",
+              "8 AE (1.196,8 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,91"
+            ],
+            [
+              "Bahnneigung",
+              "18°"
+            ],
+            [
+              "Umlaufzeit",
+              "25,6 Jahre"
+            ],
+            [
+              "Einstrahlung",
+              "0,005-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Sternnächster und fernster Punkt",
+          "daten": [
+            [
+              "Perihel",
+              "0,72 AE"
+            ],
+            [
+              "Aphel",
+              "15,28 AE"
+            ]
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Feuerbote auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Feuerbote",
+          "text": [
+            "Der Feuerbote ist ein periodischer Komet (rund 26 Jahre), der sich Ushara bis auf 0,72 AE nähert. Sein rostrot-blauer Schweif ist dann vom Kharuun-Orbit aus deutlich sichtbar; viele Traditionen deuten ihn als Vorzeichen.",
+            "Feuerbote umkreist Ushara in 8 AE Abstand und braucht für einen Umlauf 25,6 Jahre."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Komet"
+            ],
+            [
+              "Sternsystem",
+              "Kharuun-System"
+            ],
+            [
+              "Zentralkörper",
+              "Ushara"
+            ],
+            [
+              "Große Halbachse",
+              "8 AE"
+            ],
+            [
+              "Umlaufzeit",
+              "25,6 Jahre"
+            ],
+            [
+              "Durchmesser",
+              "10 km"
+            ],
+            [
+              "Masse",
+              "3,14 · 10^14 kg"
+            ],
+            [
+              "Schwerkraft",
+              "0,08 cm/s²"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -201 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Kharuun",
+          "text": [
+            "Das Kharuun-System ist die Heimat der Pyronoiden: Ihr Planet Kharuun umkreist Ushara."
+          ],
+          "verweise": [
+            [
+              "Kharuun",
+              "inhalte/himmelskoerper/planeten/details/kharuun/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Pyronoiden",
+              "inhalte/spezies/Biologische Spezies/Pyronoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Feuerbote im Kharuun-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Ushara"
+            ],
+            [
+              "Große Halbachse",
+              "8 AE (1.196,8 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,91"
+            ],
+            [
+              "Bahnneigung",
+              "18°"
+            ],
+            [
+              "Umlaufzeit",
+              "25,6 Jahre"
+            ],
+            [
+              "Einstrahlung",
+              "0,005-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Ushara · Stern",
+              "Orangefarbener Zwerg (K3 V)"
+            ],
+            [
+              "Ushara I · 0,02 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Kharuun · 0,36 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Ushara III · 0,57 AE",
+              "Gasriese"
+            ],
+            [
+              "Ushara IV · 4,8 AE",
+              "Eisriese"
+            ],
+            [
+              "Schlackengürtel · 1,3–2,1 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 30–42 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Ushara",
+              "inhalte/himmelskoerper/sterne/details/ushara/hauptseite/index.html"
+            ],
+            [
+              "Ushara I",
+              "inhalte/himmelskoerper/planeten/details/ushara-i/hauptseite/index.html"
+            ],
+            [
+              "Kharuun",
+              "inhalte/himmelskoerper/planeten/details/kharuun/hauptseite/index.html"
+            ],
+            [
+              "Ushara III",
+              "inhalte/himmelskoerper/planeten/details/ushara-iii/hauptseite/index.html"
+            ],
+            [
+              "Ushara IV",
+              "inhalte/himmelskoerper/planeten/details/ushara-iv/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Feuerbote.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "5 km"
+            ],
+            [
+              "Masse",
+              "3,14 · 10^14 kg"
+            ],
+            [
+              "Mittlere Dichte",
+              "0,6 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "0 m/s² (0 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "0 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Feuerbote.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Feuerbote stammt aus den kalten Außenbereichen des Kharuun-Systems und wurde auf seine heutige, langgestreckte Bahn gelenkt."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Feuerbote.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Woher stammt der Komet genau?",
+            "Wie lange übersteht sein Kern noch die Annäherungen an den Stern?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Feuerbote ist mit allen Bahndaten im Kharuun-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=kharuun-stern&objekt=kharuun-feuerbote"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Feuerbote.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Der Feuerbote ist ein periodischer Komet (rund 26 Jahre), der sich Ushara bis auf 0,72 AE nähert. Sein rostrot-blauer Schweif ist dann vom Kharuun-Orbit aus deutlich sichtbar; viele Traditionen deuten ihn als Vorzeichen."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Feuerbote.",
+      "abschnitte": [
+        {
+          "titel": "Feuerbote – Archivbild",
+          "bild": true,
+          "bildtext": "Feuerbote"
+        }
+      ]
+    }
+  }
+}

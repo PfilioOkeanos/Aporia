@@ -109,7 +109,7 @@ const knoten = [
         "belohnung": {
             "art": "gegenstand",
             "name": "Datenqualitat Unsicherheiten",
-            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/OzeanWelt/erde-im-sternenmeer/unterseiten/ERDE_BILDER/Erforschung/15%20%E2%80%93%20Datenqualit%C3%A4t%20&%20Unsicherheiten/15_Datenqualitat_Unsicherheiten.jpg"
+            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/OzeanWelt/erde/unterseiten/ERDE_BILDER/Erforschung/15%20%E2%80%93%20Datenqualit%C3%A4t%20&%20Unsicherheiten/15_Datenqualitat_Unsicherheiten.jpg"
         }
     }
 ];

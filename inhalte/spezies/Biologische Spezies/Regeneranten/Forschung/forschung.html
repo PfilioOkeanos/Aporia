@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#111008">
+    <meta name="theme-color" content="#090b0a">
     <meta name="description" content="Forschung der Regeneranten im APORIA-Weltenarchiv.">
     <title>Forschung · Regeneranten · APORIA</title>
     <link rel="stylesheet" href="../../../../../Men%C3%BCs/TopBar/Top_bar.css">
@@ -13,23 +13,23 @@
     <link rel="stylesheet" href="forschung.css">
     <script type="module" src="forschung.js"></script>
 </head>
-<body class="regeneranten st-forschung" data-page="spezies-biological-19-forschung" data-section="spezies">
+<body class="regeneranten rg-forschung" data-page="spezies-biological-19-forschung" data-section="spezies">
     <div data-aporia-topbar></div>
-    <div class="aporia-page-frame st-frame">
+    <div class="aporia-page-frame rg-frame">
         <div data-aporia-sidebar></div>
-        <main class="st-dossier" id="inhalt">
-            <header class="st-hero st-hero--reiter">
-                
-                <span class="st-glanz" aria-hidden="true"></span>
-                <div class="st-hero-text">
-                    <nav class="st-pfad" aria-label="Archivpfad"><a data-route="spezies" href="../../../Spezies_%C3%BCbersicht/Spezies.html">Spezies</a><span aria-hidden="true">›</span><a data-route="spezies-biological" href="../../%C3%9Cbersichtsseite%20biologische%20spezies/Uebersicht.html">Biologische Spezies</a><span aria-hidden="true">›</span><a data-route="spezies-biological-19" href="../hauptseite/Spezies.html">Regeneranten</a><span aria-hidden="true">›</span><span aria-current="page">Forschung</span></nav>
-                    <p class="st-kicker">Regeneranten · Hauptreiter</p>
+        <main class="rg-dossier" id="inhalt">
+            <header class="rg-hero rg-hero--reiter">
+                <img class="rg-hero-bild" src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Regeneranten/entwicklungsstadien/Sechsbeiniger%20Regenerant%20im%20Kartenarchiv-7.png" alt="" fetchpriority="high" decoding="async">
+                <span class="rg-glanz" aria-hidden="true"></span>
+                <div class="rg-hero-text">
+                    <nav class="rg-pfad" aria-label="Archivpfad"><a data-route="spezies" href="../../../Spezies_%C3%BCbersicht/Spezies.html">Spezies</a><span aria-hidden="true">›</span><a data-route="spezies-biological" href="../../%C3%9Cbersichtsseite%20biologische%20spezies/Uebersicht.html">Biologische Spezies</a><span aria-hidden="true">›</span><a data-route="spezies-biological-19" href="../hauptseite/Spezies.html">Regeneranten</a><span aria-hidden="true">›</span><span aria-current="page">Forschung</span></nav>
+                    <p class="rg-kicker">Regeneranten · Hauptreiter</p>
                     <h1>Forschung</h1>
-                    <p class="st-unterzeile">Forschungsfelder und offene Fragen</p>
+                    <p class="rg-unterzeile">Gewebekartierung, Neuroregeneration und Xenomedizin</p>
                 </div>
             </header>
-            <nav class="st-reiter" aria-label="Hauptreiter der Regeneranten">
-                <a href="../hauptseite/Spezies.html" data-route="spezies-biological-19"><span aria-hidden="true">◆</span>Übersicht</a>
+            <nav class="rg-reiter" aria-label="Hauptreiter der Regeneranten">
+                <a href="../hauptseite/Spezies.html" data-route="spezies-biological-19"><span aria-hidden="true">✶</span>Übersicht</a>
                 <a href="../Unterseiten/Allgemeines/allgemeines.html" data-route="spezies-biological-19-allgemeines"><span aria-hidden="true">ⓘ</span>Allgemeines</a>
                 <a href="../Unterseiten/Biologie/biologie.html" data-route="spezies-biological-19-biologie"><span aria-hidden="true">⟡</span>Biologie</a>
                 <a href="../Unterseiten/Entwicklung/entwicklung.html" data-route="spezies-biological-19-entwicklung"><span aria-hidden="true">⤳</span>Entwicklung</a>
@@ -40,36 +40,614 @@
                 <a href="../Gameplay/gameplay.html" data-route="spezies-biological-19-gameplay"><span aria-hidden="true">◈</span>Spielintegration</a>
                 <a href="forschung.html" data-route="spezies-biological-19-forschung" aria-current="page"><span aria-hidden="true">⚗</span>Forschung</a>
                 <a href="../Unterseiten/Medien/medien.html" data-route="spezies-biological-19-medien"><span aria-hidden="true">▣</span>Medien</a>
-            </nav>
-            <div class="st-layout">
-                <div class="st-inhalt">
-                    <details class="st-panel st-karte" id="noch-offen" open>
-                        <summary><span class="st-nr">…</span><h2>Forschung</h2><span class="st-chevron" aria-hidden="true"></span></summary>
-                        <div class="st-text">
-                            <p class="st-offen">Noch nicht ausgearbeitet.</p>
-                            <p class="st-quelle">Vorgesehene Infodateien (noch ohne Text): Forschung/.gitkeep</p>
+            <a href="../Unterseiten/Technologien/technologien.html" data-route="spezies-biological-19-technologien">Technologien</a>
+</nav>
+            <div class="rg-layout">
+                <div class="rg-inhalt">
+                    <details class="rg-panel rg-karte" id="d-einordnung-in-den-forschungsbaum">
+                        <summary><span class="rg-nr">◆</span><h2>Einordnung in den Forschungsbaum</h2><span class="rg-chevron" aria-hidden="true"></span></summary>
+                        <div class="rg-text">
+                            <p>Die wissenschaftlich bedeutenden Bereiche der Regeneranten gehören zu diesen vorhandenen Forschungszweigen:</p>
+                            <ul class="rg-zweig-liste"><li><a href="../../../../Forschung/Naturwissenschaften/Biologie/index.html"><strong>Biologie &amp; Zellforschung</strong><span>8.7, 8.25</span></a></li><li><a href="../../../../Forschung/Naturwissenschaften/Medizin/index.html"><strong>Medizin &amp; Alterung</strong><span>8.12, 8.21, 8.23</span></a></li><li><a href="../../../../Forschung/Naturwissenschaften/Genetik%20und%20Biotechnologie/index.html"><strong>Genetik &amp; Biotechnologie</strong><span>8.8, 8.9, 8.11</span></a></li><li><a href="../../../../Forschung/Spezialisierte%20und%20erweiterte%20Forschung/Bewusstseins-%20und%20neuronale%20Vernetzungsforschung/index.html"><strong>Neurobiologie</strong><span>8.18–8.20</span></a></li><li><a href="../../../../Forschung/Spezialisierte%20und%20erweiterte%20Forschung/Morphologie%20und%20Transformationsforschung/index.html"><strong>Morphologische Regeneration</strong><span>8.10</span></a></li><li><a href="../../../../Forschung/Xenoforschung/Xenobiologie/index.html"><strong>Xenobiologie</strong><span>8.27</span></a></li><li><a href="../../../../Forschung/Xenoforschung/Xenomedizin/index.html"><strong>Xenomedizin</strong><span>8.28, 8.39</span></a></li><li><a href="../../../../Forschung/Umwelt%2C%20Leben%20und%20Ressourcen/Umwelt-%20und%20%C3%96kosystemforschung/index.html"><strong>Ökologische Regeneration</strong><span>8.26</span></a></li><li><a href="../../../../Forschung/Gesellschaft%20und%20Kultur/Kultur-%20und%20Geisteswissenschaften/index.html"><strong>Medizinische Ethik</strong><span>8.33, 8.34</span></a></li></ul>
+                            <p class="rg-quelle rg-quelle-design">Quelle: Info_material · Regeneranten · Allgemein 1.16 · Forschung 8.x</p>
+                        </div>
+                    </details>
+                    <details class="rg-panel rg-karte" id="k-steckbrief">
+                        <summary><span class="rg-nr">◇</span><h2>Steckbrief</h2><span class="rg-chevron" aria-hidden="true"></span></summary>
+                        <div class="rg-text">
+                            <dl class="rg-fakten"><div><dt>Version</dt><dd>4.0 – Abschlussfassung</dd></div><div><dt>Spezies</dt><dd>Regeneranten / Narethi</dd></div><div><dt>Heimatplanet</dt><dd>Nalvyr</dd></div><div><dt>Wissenschaftlicher Schwerpunkt</dt><dd>Regenerative Biologie und Medizin</dd></div><div><dt>Forschungsprofil</dt><dd>Zellbiologie, Genetik, Organregeneration, Neurobiologie, Immunologie, Xenomedizin und medizinische Biotechnologie</dd></div></dl>
+                            <p class="rg-quelle">Quelle: Info_material · Regeneranten · Forschung/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="rg-panel rg-karte" id="k-8-1-allgemeine-wissenschaftliche-bedeutung">
+                        <summary><span class="rg-nr">8.1</span><h2>ALLGEMEINE WISSENSCHAFTLICHE BEDEUTUNG</h2><span class="rg-chevron" aria-hidden="true"></span></summary>
+                        <div class="rg-text">
+                            <p>Die Regeneranten besitzen eine hochentwickelte wissenschaftliche Tradition.</p>
+                            <p>Ihre außergewöhnliche natürliche Regeneration führte über viele Jahrtausende zur Entwicklung spezialisierter biologischer Forschungsrichtungen.</p>
+                            <p>Die moderne Wissenschaft untersucht insbesondere, wie beschädigte Körperstrukturen zuverlässig wiederhergestellt werden.</p>
+                            <p>Zu den zentralen Forschungsproblemen gehören:</p>
+                            <ul><li>Kontrollierte Zellteilung.</li><li>Erhaltung regenerativer Zellreservoirs.</li><li>Bildung korrekter anatomischer Strukturen.</li><li>Wiederherstellung komplexer Organe.</li><li>Integration von Blutgefäßen und Nervengewebe.</li><li>Kontrolle von Tumorbildung.</li><li>Regeneration geschädigter Nervensysteme.</li><li>Biologische Alterung.</li><li>Übertragung geeigneter medizinischer Erkenntnisse auf andere Spezies.</li></ul>
+                            <p>Die natürliche Regeneration der Narethi ist außergewöhnlich, aber nicht unbegrenzt.</p>
+                            <p>Ihre Erforschung setzt die physikalischen und biologischen Grenzen nicht außer Kraft.</p>
+                            <p class="rg-quelle">Quelle: Info_material · Regeneranten · Forschung/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="rg-panel rg-karte" id="k-8-2-forschungsstruktur">
+                        <summary><span class="rg-nr">8.2</span><h2>FORSCHUNGSSTRUKTUR</h2><span class="rg-chevron" aria-hidden="true"></span></summary>
+                        <div class="rg-text">
+                            <p>Die regenerative Forschung ist ein interdisziplinäres Forschungsfeld.</p>
+                            <p>Sie wird in die bereits bestehenden APORIA-Forschungszweige eingeordnet.</p>
+                            <div class="rg-tabelle"><table><thead><tr><th>Forschungszweig</th><th>Bedeutung</th></tr></thead><tbody><tr><td>Biologie</td><td>Zellstruktur, Organismen und Entwicklung</td></tr><tr><td>Medizin</td><td>Diagnostik und Behandlung</td></tr><tr><td>Genetik und Biotechnologie</td><td>Erbinformation und Zellregulation</td></tr><tr><td>Neurobiologie</td><td>Nervensystem und neuronale Regeneration</td></tr><tr><td>Xenobiologie</td><td>Vergleich fremder biologischer Systeme</td></tr><tr><td>Ökologie</td><td>Regeneration im evolutionären Zusammenhang</td></tr><tr><td>Werkstoffkunde</td><td>Biologische Stütz- und Schutzmaterialien</td></tr><tr><td>Nanotechnologie</td><td>Unterstützende medizinische Technologien</td></tr><tr><td>KI-Forschung</td><td>Biologische Datenauswertung</td></tr><tr><td>Messsysteme</td><td>Untersuchung biologischer Zustände</td></tr><tr><td>Simulationen</td><td>Modellierung von Regenerationsprozessen</td></tr><tr><td>Datenbanken</td><td>Verwaltung wissenschaftlicher Referenzdaten</td></tr><tr><td>Ethik</td><td>Verantwortung und Schutz von Versuchspersonen</td></tr><tr><td>Rechts- und Politikforschung</td><td>Medizinrecht und Forschungsregulierung</td></tr></tbody></table></div>
+                            <p>Es wird kein zusätzlicher, von der übrigen APORIA-Forschungsstruktur isolierter Hauptbereich benötigt.</p>
+                            <p class="rg-quelle">Quelle: Info_material · Regeneranten · Forschung/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="rg-panel rg-karte" id="k-8-3-historische-entwicklung">
+                        <summary><span class="rg-nr">8.3</span><h2>HISTORISCHE ENTWICKLUNG</h2><span class="rg-chevron" aria-hidden="true"></span></summary>
+                        <div class="rg-text">
+                            <h3>Frühe Heiltraditionen</h3>
+                            <p>Bereits frühe Narethi-Gemeinschaften beobachteten natürliche Regenerationsprozesse.</p>
+                            <p>Die Behandlung konzentrierte sich auf Wundversorgung, Ernährung und den Schutz schwer verletzter Individuen.</p>
+                            <h3>Entstehung systematischer Medizin</h3>
+                            <p>Mit dem Wachstum von Städten und Bildungseinrichtungen entstanden wissenschaftlich organisierte medizinische Traditionen.</p>
+                            <h3>Gewebekartierungsdurchbruch</h3>
+                            <p>Vor ungefähr 3.200 Erdjahren gelang ein wichtiger Fortschritt bei der systematischen Erfassung regenerativer Gewebestrukturen.</p>
+                            <p>Dieser Durchbruch schuf neue Möglichkeiten der medizinischen Forschung.</p>
+                            <h3>Gewebekrise</h3>
+                            <p>Zwischen ungefähr 2.430 und 2.360 Erdjahren vor der Spielgegenwart führten problematische Experimente, medizinischer Machtmissbrauch und schwere Zwischenfälle zur Gewebekrise.</p>
+                            <h3>Reformphase</h3>
+                            <p>Vor ungefähr 2.310 Erdjahren wurde die Charta der Unversehrtheit beschlossen.</p>
+                            <p>Sie bildet eine wichtige Grundlage medizinischer Schutzrechte.</p>
+                            <h3>Interstellare Forschungsphase</h3>
+                            <p>Ab ungefähr 640 Erdjahren vor der Gegenwart entstanden größere Kontakte zu außerirdischen Zivilisationen.</p>
+                            <p>Die spätere wissenschaftliche Zusammenarbeit eröffnete neue xenobiologische Forschungsgebiete.</p>
+                            <p class="rg-quelle">Quelle: Info_material · Regeneranten · Forschung/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="rg-panel rg-karte" id="k-8-4-wissenschaftliche-institute">
+                        <summary><span class="rg-nr">8.4</span><h2>WISSENSCHAFTLICHE INSTITUTE</h2><span class="rg-chevron" aria-hidden="true"></span></summary>
+                        <div class="rg-text">
+                            <h3>Institut für Gewebearchitektur Lethar</h3>
+                            <dl class="rg-fakten"><div><dt>Standort</dt><dd>Lethar, Vaelor, Nalvyr</dd></div></dl>
+                            <p>Wichtigste Fachbereiche:</p>
+                            <ul><li>Regenerative Zellnischen.</li><li>Zellbiologie.</li><li>Räumliche Musterbildung.</li><li>Organregeneration.</li><li>Gewebekarten.</li><li>Biologische Stützstrukturen.</li><li>Regenerative Gewebeintegration.</li></ul>
+                            <p>Das Institut untersucht besonders die strukturellen Grundlagen der Wiederherstellung komplexer Körperteile.</p>
+                            <h3>Ringneurozentrum Darsen</h3>
+                            <dl class="rg-fakten"><div><dt>Standort</dt><dd>Darsen, Ishkar, Nalvyr</dd></div></dl>
+                            <p>Wichtigste Fachbereiche:</p>
+                            <ul><li>Neuroregeneration.</li><li>Nervenzellbildung.</li><li>Neuronale Verbindungen.</li><li>Gehirnring-Funktion.</li><li>Erinnerungsverlust.</li><li>Sensorische Rehabilitation.</li><li>Langfristige neurologische Veränderungen.</li></ul>
+                            <p>Das Zentrum untersucht die Grenzen der körperlichen und neuronalen Wiederherstellung.</p>
+                            <h3>Ökologische Forschungsstation Tessal</h3>
+                            <dl class="rg-fakten"><div><dt>Standort</dt><dd>Tessal-Archipel, Nalvyr</dd></div></dl>
+                            <p>Wichtigste Fachbereiche:</p>
+                            <ul><li>Regenerative Tiergruppen.</li><li>Gezeitenökologie.</li><li>Evolution.</li><li>Umweltanpassung.</li><li>Vergleichende Biologie.</li><li>Küstenlebensräume.</li><li>Paläobiologie.</li></ul>
+                            <p>Die Forschungsstation untersucht die regenerativen Fähigkeiten unterschiedlicher Tierlinien Nalvyrs.</p>
+                            <p class="rg-quelle">Quelle: Info_material · Regeneranten · Forschung/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="rg-panel rg-karte" id="k-8-5-wissenschaftliche-methoden">
+                        <summary><span class="rg-nr">8.5</span><h2>WISSENSCHAFTLICHE METHODEN</h2><span class="rg-chevron" aria-hidden="true"></span></summary>
+                        <div class="rg-text">
+                            <p>Die Forschung verwendet unterschiedliche Untersuchungsverfahren.</p>
+                            <p>Dazu gehören:</p>
+                            <ul><li>Biologische Bildgebung.</li><li>Mikroskopische Gewebeanalysen.</li><li>Zellkulturen.</li><li>Genetische Untersuchungen.</li><li>Messung von Stoffwechselparametern.</li><li>Elektrische und chemische Gewebesensorik.</li><li>Untersuchung neuronaler Signalverbindungen.</li><li>Mechanische Belastungstests.</li><li>Computergestützte Simulationen.</li><li>Langzeitbeobachtungen.</li></ul>
+                            <p>Forschungsergebnisse müssen nachvollziehbar dokumentiert werden.</p>
+                            <p>Geeignete Untersuchungen werden unabhängig überprüft.</p>
+                            <p>Die Sicherheit und Einwilligung betroffener Individuen bleiben wesentliche Voraussetzungen.</p>
+                            <p class="rg-quelle">Quelle: Info_material · Regeneranten · Forschung/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="rg-panel rg-karte" id="k-8-6-gewebekartierung">
+                        <summary><span class="rg-nr">8.6</span><h2>GEWEBEKARTIERUNG</h2><span class="rg-chevron" aria-hidden="true"></span></summary>
+                        <div class="rg-text">
+                            <p>Die moderne Medizin verwendet individuelle Gewebekarten.</p>
+                            <p>Diese können Informationen enthalten über:</p>
+                            <ul><li>Anatomische Strukturen.</li><li>Regenerative Zellreservoirs.</li><li>Blutversorgung.</li><li>Gewebefunktionen.</li><li>Wichtige Nervenverbindungen.</li><li>Medizinisch relevante Veränderungen.</li></ul>
+                            <p>Gewebekarten unterstützen Diagnostik und Behandlungsplanung.</p>
+                            <p>Sie stellen keine vollständigen Bewusstseinskopien dar.</p>
+                            <p class="rg-quelle">Quelle: Info_material · Regeneranten · Forschung/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="rg-panel rg-karte" id="k-8-7-regenerative-zellbiologie">
+                        <summary><span class="rg-nr">8.7</span><h2>REGENERATIVE ZELLBIOLOGIE</h2><span class="rg-chevron" aria-hidden="true"></span></summary>
+                        <div class="rg-text">
+                            <p>Die Regeneranten besitzen spezialisierte Zellnischen, die bei Verletzungen aktiviert werden.</p>
+                            <p>Die Forschung untersucht:</p>
+                            <ul><li>Entstehung regenerativer Zellpopulationen.</li><li>Langfristige Selbsterhaltung.</li><li>Aktivierung bei Verletzungen.</li><li>Gewebespezifische Differenzierung.</li><li>Kontrolle der Zellteilung.</li><li>Altersbedingte Veränderungen.</li><li>Fehlfunktionen regenerativer Zellreservoirs.</li></ul>
+                            <p>Ein wichtiges Ziel ist die Erklärung, wie über mehrere Jahrhunderte leistungsfähige regenerative Zellpopulationen erhalten bleiben.</p>
+                            <p class="rg-quelle">Quelle: Info_material · Regeneranten · Forschung/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="rg-panel rg-karte" id="k-8-8-genetik">
+                        <summary><span class="rg-nr">8.8</span><h2>GENETIK</h2><span class="rg-chevron" aria-hidden="true"></span></summary>
+                        <div class="rg-text">
+                            <p>Die Regeneration beruht auf einem komplexen Netzwerk zahlreicher Gene.</p>
+                            <p>Die Forschung untersucht besonders:</p>
+                            <ul><li>DNA-Reparatur.</li><li>Genregulation.</li><li>Zellteilung.</li><li>Gewebedifferenzierung.</li><li>Anatomische Musterbildung.</li><li>Immunabwehr.</li><li>Tumorunterdrückung.</li><li>Stoffwechselkontrolle.</li></ul>
+                            <p>Die Fähigkeit wird nicht durch ein einzelnes universelles Gen gesteuert.</p>
+                            <p>Genetische Unterschiede beeinflussen die regenerative Leistungsfähigkeit einzelner Individuen.</p>
+                            <p class="rg-quelle">Quelle: Info_material · Regeneranten · Forschung/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="rg-panel rg-karte" id="k-8-9-epigenetik">
+                        <summary><span class="rg-nr">8.9</span><h2>EPIGENETIK</h2><span class="rg-chevron" aria-hidden="true"></span></summary>
+                        <div class="rg-text">
+                            <p>Epigenetische Mechanismen beeinflussen die Aktivität verschiedener Gene.</p>
+                            <p>Sie können auf Umweltbedingungen, Ernährung, Alter und körperliche Belastung reagieren.</p>
+                            <p>Die Forschung untersucht, welche Veränderungen langfristig stabil bleiben.</p>
+                            <p>Einige regulatorische Eigenschaften können begrenzt zwischen Generationen weitergegeben werden.</p>
+                            <p>Erworbene Erinnerungen werden dadurch nicht automatisch genetisch gespeichert.</p>
+                            <p class="rg-quelle">Quelle: Info_material · Regeneranten · Forschung/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="rg-panel rg-karte" id="k-8-10-morphologische-regeneration">
+                        <summary><span class="rg-nr">8.10</span><h2>MORPHOLOGISCHE REGENERATION</h2><span class="rg-chevron" aria-hidden="true"></span></summary>
+                        <div class="rg-text">
+                            <p>Dieses Forschungsgebiet untersucht die Entstehung anatomisch korrekter Gewebestrukturen.</p>
+                            <p>Besonders wichtig sind:</p>
+                            <ul><li>Genetische Entwicklungsprogramme.</li><li>Biochemische Signalgradienten.</li><li>Bioelektrische Gewebezustände.</li><li>Mechanische Rückmeldungen.</li><li>Räumliche Positionsinformationen.</li><li>Kommunikation zwischen Zellgruppen.</li></ul>
+                            <p>Die Forschung erklärt, wie ein Körperteil seine ursprüngliche Struktur wiedererlangen kann.</p>
+                            <p>Fehler in den Regulationsmechanismen können zu Fehlregenerationen führen.</p>
+                            <p class="rg-quelle">Quelle: Info_material · Regeneranten · Forschung/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="rg-panel rg-karte" id="k-8-11-kunstliche-gewebemodelle">
+                        <summary><span class="rg-nr">8.11</span><h2>KÜNSTLICHE GEWEBEMODELLE</h2><span class="rg-chevron" aria-hidden="true"></span></summary>
+                        <div class="rg-text">
+                            <p>Die Wissenschaft verwendet unterschiedliche biologische Modelle.</p>
+                            <h3>Zellmodelle</h3>
+                            <p>Untersuchung einzelner Zellpopulationen.</p>
+                            <h3>Gewebemodelle</h3>
+                            <p>Untersuchung des Zusammenwirkens mehrerer Zelltypen.</p>
+                            <h3>Organmodelle</h3>
+                            <p>Nachbildung ausgewählter Eigenschaften komplexerer Organe.</p>
+                            <h3>Systemmodelle</h3>
+                            <p>Computergestützte Simulation biologischer Regulationsnetzwerke.</p>
+                            <p>Solche Modelle ermöglichen wissenschaftliche Untersuchungen, ohne sämtliche Versuche an vollständigen lebenden Individuen durchführen zu müssen.</p>
+                            <p>Sie ersetzen jedoch nicht automatisch sämtliche Funktionen natürlicher Organe.</p>
+                            <p class="rg-quelle">Quelle: Info_material · Regeneranten · Forschung/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="rg-panel rg-karte" id="k-8-12-organregeneration">
+                        <summary><span class="rg-nr">8.12</span><h2>ORGANREGENERATION</h2><span class="rg-chevron" aria-hidden="true"></span></summary>
+                        <div class="rg-text">
+                            <p>Die Organregeneration untersucht die Wiederherstellung komplexer innerer Körperstrukturen.</p>
+                            <p>Dazu müssen mehrere Prozesse zusammenwirken:</p>
+                            <ol><li>Zellvermehrung.</li><li>Differenzierung.</li><li>Räumliche Gewebeorganisation.</li><li>Aufbau der Blutversorgung.</li><li>Stoffwechselintegration.</li><li>Neuronale Verbindung.</li><li>Funktionelle Nachreifung.</li></ol>
+                            <p>Der Wiederaufbau eines Organs ist deshalb deutlich komplexer als der Verschluss einer Wunde.</p>
+                            <p class="rg-quelle">Quelle: Info_material · Regeneranten · Forschung/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="rg-panel rg-karte" id="k-8-13-gewebeversorgung">
+                        <summary><span class="rg-nr">8.13</span><h2>GEWEBEVERSORGUNG</h2><span class="rg-chevron" aria-hidden="true"></span></summary>
+                        <div class="rg-text">
+                            <p>Wachsende Gewebe benötigen ausreichend:</p>
+                            <ul><li>Sauerstoff.</li><li>Wasser.</li><li>Energie.</li><li>Organische Baustoffe.</li><li>Mineralstoffe.</li><li>Funktionierende Blutversorgung.</li></ul>
+                            <p>Die Forschung untersucht, wie die Versorgung während großer Regenerationsvorgänge zuverlässig aufrechterhalten werden kann.</p>
+                            <p>Ein wichtiger begrenzender Faktor ist der Aufbau funktionierender Gefäßsysteme.</p>
+                            <p>Ohne ausreichende Versorgung können neu gebildete Gewebe geschädigt werden.</p>
+                            <p class="rg-quelle">Quelle: Info_material · Regeneranten · Forschung/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="rg-panel rg-karte" id="k-8-14-regenerativer-stoffwechsel">
+                        <summary><span class="rg-nr">8.14</span><h2>REGENERATIVER STOFFWECHSEL</h2><span class="rg-chevron" aria-hidden="true"></span></summary>
+                        <div class="rg-text">
+                            <p>Große Regenerationsprozesse benötigen erhebliche biologische Ressourcen.</p>
+                            <p>Die Forschung untersucht:</p>
+                            <ul><li>Energieverbrauch.</li><li>Nährstoffbedarf.</li><li>Wasserhaushalt.</li><li>Mineralstoffverteilung.</li><li>Gewebewachstum.</li><li>Stoffwechsel während Ruhephasen.</li><li>Auswirkungen von Nahrungsmangel.</li></ul>
+                            <p>Die Regeneration erzeugt keine Materie aus dem Nichts.</p>
+                            <p>Eine erhöhte Versorgung kann den Heilungsprozess unterstützen, ersetzt aber keine funktionierenden Zellreservoirs.</p>
+                            <p class="rg-quelle">Quelle: Info_material · Regeneranten · Forschung/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="rg-panel rg-karte" id="k-8-15-regenerationszeiten">
+                        <summary><span class="rg-nr">8.15</span><h2>REGENERATIONSZEITEN</h2><span class="rg-chevron" aria-hidden="true"></span></summary>
+                        <div class="rg-text">
+                            <p>Die medizinische Forschung untersucht die unterschiedlichen Zeiträume regenerativer Vorgänge.</p>
+                            <div class="rg-tabelle"><table><thead><tr><th>Vorgang</th><th>Typischer Zeitraum</th></tr></thead><tbody><tr><td>Kleine Wunden</td><td>Minuten bis Stunden</td></tr><tr><td>Größere Gewebeschäden</td><td>Stunden bis Tage</td></tr><tr><td>Komplexe Organschäden</td><td>Tage bis Wochen</td></tr><tr><td>Vollständige Gliedmaßen</td><td>Wochen bis Monate</td></tr><tr><td>Schwere neuronale Schäden</td><td>Monate oder länger</td></tr></tbody></table></div>
+                            <p>Die tatsächlichen Werte hängen stark vom individuellen biologischen Zustand ab.</p>
+                            <p class="rg-quelle">Quelle: Info_material · Regeneranten · Forschung/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="rg-panel rg-karte" id="k-8-16-regenerative-immunologie">
+                        <summary><span class="rg-nr">8.16</span><h2>REGENERATIVE IMMUNOLOGIE</h2><span class="rg-chevron" aria-hidden="true"></span></summary>
+                        <div class="rg-text">
+                            <p>Das Immunsystem beteiligt sich an der Regeneration.</p>
+                            <p>Seine Aufgaben umfassen:</p>
+                            <ul><li>Erkennung von Krankheitserregern.</li><li>Entfernung beschädigter Zellen.</li><li>Steuerung entzündlicher Prozesse.</li><li>Überwachung auffälliger Zellgruppen.</li><li>Unterstützung geeigneter Gewebereaktionen.</li></ul>
+                            <p>Eine fehlgeleitete Immunreaktion kann die Regeneration behindern.</p>
+                            <p class="rg-quelle">Quelle: Info_material · Regeneranten · Forschung/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="rg-panel rg-karte" id="k-8-17-krebsforschung">
+                        <summary><span class="rg-nr">8.17</span><h2>KREBSFORSCHUNG</h2><span class="rg-chevron" aria-hidden="true"></span></summary>
+                        <div class="rg-text">
+                            <p>Die Regeneranten besitzen leistungsfähige Schutzmechanismen gegen unkontrollierte Zellteilung.</p>
+                            <p>Diese Mechanismen sind notwendig, weil die Regeneration mit erheblicher Zellaktivität verbunden sein kann.</p>
+                            <p>Die Forschung untersucht:</p>
+                            <ul><li>Mutationen.</li><li>Fehlerhafte Zellregulation.</li><li>Tumorentstehung.</li><li>Immunologische Tumorerkennung.</li><li>Altersbedingte Risiken.</li><li>Regenerationsbedingte Wachstumsstörungen.</li></ul>
+                            <p>Regeneranten sind nicht vollständig krebsimmun.</p>
+                            <p class="rg-quelle">Quelle: Info_material · Regeneranten · Forschung/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="rg-panel rg-karte" id="k-8-18-neurobiologische-regeneration">
+                        <summary><span class="rg-nr">8.18</span><h2>NEUROBIOLOGISCHE REGENERATION</h2><span class="rg-chevron" aria-hidden="true"></span></summary>
+                        <div class="rg-text">
+                            <p>Das Nervensystem besitzt eine außergewöhnliche Fähigkeit zur Wiederherstellung bestimmter beschädigter Strukturen.</p>
+                            <p>Die Forschung untersucht:</p>
+                            <ul><li>Nervenzellbildung.</li><li>Wiederherstellung neuronaler Verbindungen.</li><li>Funktionelle Integration.</li><li>Sensorische Regeneration.</li><li>Motorische Rehabilitation.</li><li>Langfristige Gedächtnisstörungen.</li></ul>
+                            <p>Die Wiederherstellung biologischen Nervengewebes ist nicht mit einer vollständigen Rekonstruktion aller früheren Erinnerungen gleichzusetzen.</p>
+                            <p class="rg-quelle">Quelle: Info_material · Regeneranten · Forschung/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="rg-panel rg-karte" id="k-8-19-erinnerungen-und-personale-identitat">
+                        <summary><span class="rg-nr">8.19</span><h2>ERINNERUNGEN UND PERSONALE IDENTITÄT</h2><span class="rg-chevron" aria-hidden="true"></span></summary>
+                        <div class="rg-text">
+                            <p>Schwere Gehirnverletzungen können zum Verlust individueller Informationen führen.</p>
+                            <p>Die Forschung untersucht:</p>
+                            <ul><li>Neuronale Kontinuität.</li><li>Erinnerungsbildung.</li><li>Informationsverlust.</li><li>Persönlichkeitsveränderungen.</li><li>Funktionelle Rehabilitation.</li><li>Langfristige Auswirkungen neuronaler Schäden.</li></ul>
+                            <p>Eine vollständige Kopie des Bewusstseins wird durch gewöhnliche medizinische Gewebekartierung nicht erzeugt.</p>
+                            <p>Die Frage nach personaler Kontinuität besitzt auch gesellschaftliche und rechtliche Bedeutung.</p>
+                            <p class="rg-quelle">Quelle: Info_material · Regeneranten · Forschung/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="rg-panel rg-karte" id="k-8-20-neurologische-rehabilitation">
+                        <summary><span class="rg-nr">8.20</span><h2>NEUROLOGISCHE REHABILITATION</h2><span class="rg-chevron" aria-hidden="true"></span></summary>
+                        <div class="rg-text">
+                            <p>Rehabilitation unterstützt die Wiederherstellung beziehungsweise erneute Erlernung bestimmter Funktionen.</p>
+                            <p>Mögliche Verfahren umfassen:</p>
+                            <ul><li>Sensorisches Training.</li><li>Motorisches Training.</li><li>Medizinische Überwachung.</li><li>Unterstützung vorhandener neuronaler Verbindungen.</li><li>Psychologische Betreuung.</li><li>Wiedererlernen bestimmter Fähigkeiten.</li></ul>
+                            <p>Die Behandlung kann Funktionseinschränkungen verringern.</p>
+                            <p>Sie rekonstruiert nicht automatisch vollständig verlorene Erinnerungen.</p>
+                            <p class="rg-quelle">Quelle: Info_material · Regeneranten · Forschung/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="rg-panel rg-karte" id="k-8-21-replantation">
+                        <summary><span class="rg-nr">8.21</span><h2>REPLANTATION</h2><span class="rg-chevron" aria-hidden="true"></span></summary>
+                        <div class="rg-text">
+                            <p>Lebensfähige abgetrennte Körperteile können unter geeigneten medizinischen Bedingungen wieder angeschlossen werden.</p>
+                            <p>Die Behandlung umfasst:</p>
+                            <ul><li>Mechanische Stabilisierung.</li><li>Wiederherstellung der Durchblutung.</li><li>Verbindung geeigneter Nervenstrukturen.</li><li>Regenerative Gewebeintegration.</li><li>Funktionelle Rehabilitation.</li></ul>
+                            <p>Eine erfolgreiche Replantation kann den vollständigen Neubau eines Körperteils teilweise ersetzen.</p>
+                            <p class="rg-quelle">Quelle: Info_material · Regeneranten · Forschung/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="rg-panel rg-karte" id="k-8-22-regenerativer-ruhezustand">
+                        <summary><span class="rg-nr">8.22</span><h2>REGENERATIVER RUHEZUSTAND</h2><span class="rg-chevron" aria-hidden="true"></span></summary>
+                        <div class="rg-text">
+                            <p>Bei extremen Verletzungen kann die Stoffwechselaktivität stark reduziert werden.</p>
+                            <p>Die Forschung untersucht:</p>
+                            <ul><li>Energiebedarf.</li><li>Organstabilität.</li><li>Sauerstoffversorgung.</li><li>Temperaturabhängigkeit.</li><li>Stoffwechselregulation.</li><li>Dauer des Zustands.</li><li>Medizinische Stabilisierung.</li></ul>
+                            <p>Der Ruhezustand kann Tage bis Wochen überdauern.</p>
+                            <p>Er ermöglicht keine unbegrenzte Existenz ohne Stoff- und Energieaustausch.</p>
+                            <p class="rg-quelle">Quelle: Info_material · Regeneranten · Forschung/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="rg-panel rg-karte" id="k-8-23-alterungsforschung">
+                        <summary><span class="rg-nr">8.23</span><h2>ALTERUNGSFORSCHUNG</h2><span class="rg-chevron" aria-hidden="true"></span></summary>
+                        <div class="rg-text">
+                            <p>Die Narethi besitzen eine sehr lange Lebensspanne.</p>
+                            <p>Die Forschung untersucht insbesondere:</p>
+                            <ul><li>DNA-Schäden.</li><li>Epigenetische Veränderungen.</li><li>Langfristige Zellstabilität.</li><li>Erschöpfung regenerativer Reserven.</li><li>Neuronale Alterung.</li><li>Immunologische Veränderungen.</li><li>Tumorentwicklung.</li></ul>
+                            <p>Ziel ist die Verbesserung der Gesundheit und der langfristigen Regenerationsfähigkeit.</p>
+                            <p>Eine vollständige Abschaffung biologischer Alterung gilt nicht als erreicht.</p>
+                            <p class="rg-quelle">Quelle: Info_material · Regeneranten · Forschung/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="rg-panel rg-karte" id="k-8-24-langzeitstudien">
+                        <summary><span class="rg-nr">8.24</span><h2>LANGZEITSTUDIEN</h2><span class="rg-chevron" aria-hidden="true"></span></summary>
+                        <div class="rg-text">
+                            <p>Die hohe Lebensdauer ermöglicht medizinische Langzeitbeobachtungen über mehrere Jahrhunderte.</p>
+                            <p>Dazu werden wissenschaftliche Kohorten und langfristige Datensysteme verwendet.</p>
+                            <p>Beobachtet werden beispielsweise:</p>
+                            <ul><li>Altersveränderungen.</li><li>Regenerationsleistung.</li><li>Krankheitsverläufe.</li><li>Genetische Veränderungen.</li><li>Medizinische Behandlungen.</li><li>Langfristige neurologische Folgen.</li></ul>
+                            <p>Die Untersuchungen werden institutionell weitergeführt.</p>
+                            <p>Sie hängen nicht vom unbegrenzten Fortbestehen eines einzelnen Forschers ab.</p>
+                            <p class="rg-quelle">Quelle: Info_material · Regeneranten · Forschung/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="rg-panel rg-karte" id="k-8-25-vergleichende-evolutionsforschung">
+                        <summary><span class="rg-nr">8.25</span><h2>VERGLEICHENDE EVOLUTIONSFORSCHUNG</h2><span class="rg-chevron" aria-hidden="true"></span></summary>
+                        <div class="rg-text">
+                            <p>Die Tierwelt Nalvyrs besitzt unterschiedliche Formen biologischer Regeneration.</p>
+                            <p>Mehrere verwandte Tierlinien teilen grundlegende Mechanismen.</p>
+                            <p>Andere Organismen entwickelten einfachere Formen unabhängig.</p>
+                            <p>Die Forschung untersucht:</p>
+                            <ul><li>Gemeinsame Vorfahren.</li><li>Genetische Übereinstimmungen.</li><li>Unterschiede regenerativer Zelltypen.</li><li>Evolution der Organregeneration.</li><li>Umweltbedingte Selektionsfaktoren.</li><li>Grenzen regenerativer Fähigkeiten.</li></ul>
+                            <p>Die Elarin-Fossilterrassen und die Tessal-Küstenregionen besitzen besondere wissenschaftliche Bedeutung.</p>
+                            <p class="rg-quelle">Quelle: Info_material · Regeneranten · Forschung/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="rg-panel rg-karte" id="k-8-26-okologische-regenerationsforschung">
+                        <summary><span class="rg-nr">8.26</span><h2>ÖKOLOGISCHE REGENERATIONSFORSCHUNG</h2><span class="rg-chevron" aria-hidden="true"></span></summary>
+                        <div class="rg-text">
+                            <p>Regeneration ist nicht nur ein medizinischer Vorgang, sondern eine ökologische Anpassung.</p>
+                            <p>Die Forschung untersucht deshalb:</p>
+                            <ul><li>Überlebensvorteile regenerativer Fähigkeiten.</li><li>Kosten durch erhöhten Ressourcenverbrauch.</li><li>Auswirkungen auf Fortpflanzung.</li><li>Unterschiede zwischen Lebensräumen.</li><li>Beziehungen zwischen Räubern und Beutetieren.</li><li>Natürliche Selektionsprozesse.</li></ul>
+                            <p>Die Forschung erklärt, warum nicht sämtliche Tierarten Nalvyrs dieselbe Regenerationsleistung besitzen.</p>
+                            <p class="rg-quelle">Quelle: Info_material · Regeneranten · Forschung/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="rg-panel rg-karte" id="k-8-27-xenobiologie">
+                        <summary><span class="rg-nr">8.27</span><h2>XENOBIOLOGIE</h2><span class="rg-chevron" aria-hidden="true"></span></summary>
+                        <div class="rg-text">
+                            <p>Die Xenobiologie untersucht die biologischen Mechanismen fremder Lebensformen.</p>
+                            <p>Die Regenerantenforschung vergleicht:</p>
+                            <ul><li>Regenerative Zellen.</li><li>Wundheilungsprozesse.</li><li>Organstrukturen.</li><li>Immunmechanismen.</li><li>Genregulation.</li><li>Stoffwechsel.</li><li>Neurologische Regeneration.</li></ul>
+                            <p>Die biologische Vielfalt anderer APORIA-Spezies erfordert jeweils eigene Untersuchungen.</p>
+                            <p class="rg-quelle">Quelle: Info_material · Regeneranten · Forschung/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="rg-panel rg-karte" id="k-8-28-xenomedizinische-stufen">
+                        <summary><span class="rg-nr">8.28</span><h2>XENOMEDIZINISCHE STUFEN</h2><span class="rg-chevron" aria-hidden="true"></span></summary>
+                        <div class="rg-text">
+                            <h3>Stufe 1 – Unterstützende Medizin</h3>
+                            <p>Anpassung geeigneter Diagnostik, Wundversorgung und Medikamente.</p>
+                            <h3>Stufe 2 – Spezialisierte Gewebetherapie</h3>
+                            <p>Anpassung bestimmter Zell- und Gewebetechnologien an biologisch kompatible andere Organismen.</p>
+                            <h3>Stufe 3 – Experimentelle komplexe Regeneration</h3>
+                            <p>Forschung zur möglichen Übertragung ausgewählter Organ- und Neuroregenerationsmechanismen.</p>
+                            <p>Die dritte Stufe besitzt besondere wissenschaftliche Risiken und Einschränkungen.</p>
+                            <p>Eine universelle Übertragung der vollständigen Narethi-Regeneration existiert nicht.</p>
+                            <p class="rg-quelle">Quelle: Info_material · Regeneranten · Forschung/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="rg-panel rg-karte" id="k-8-29-medizinische-technologien">
+                        <summary><span class="rg-nr">8.29</span><h2>MEDIZINISCHE TECHNOLOGIEN</h2><span class="rg-chevron" aria-hidden="true"></span></summary>
+                        <div class="rg-text">
+                            <p>Wichtige Technologien sind:</p>
+                            <h3>Gewebekartierung</h3>
+                            <p>Erfassung anatomischer und funktioneller Gewebestrukturen.</p>
+                            <h3>Regenerationsdiagnostik</h3>
+                            <p>Überwachung biologischer Heilungszustände.</p>
+                            <h3>Zellkulturen</h3>
+                            <p>Untersuchung regenerativer Zellpopulationen.</p>
+                            <h3>Organmodelle</h3>
+                            <p>Nachbildung ausgewählter Organfunktionen.</p>
+                            <h3>Organunterstützung</h3>
+                            <p>Stabilisierung lebenswichtiger Funktionen während schwerer Verletzungen.</p>
+                            <h3>Neurologische Rehabilitation</h3>
+                            <p>Unterstützung der Wiederherstellung beziehungsweise des Wiedererlernens neuronaler Funktionen.</p>
+                            <h3>Regenerative Versorgungssysteme</h3>
+                            <p>Gezielte Unterstützung von Ernährung und Stoffwechsel.</p>
+                            <h3>Biologische Simulation</h3>
+                            <p>Computergestützte Untersuchung komplexer Entwicklungsprozesse.</p>
+                            <p class="rg-quelle">Quelle: Info_material · Regeneranten · Forschung/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="rg-panel rg-karte" id="k-8-30-technologische-reife">
+                        <summary><span class="rg-nr">8.30</span><h2>TECHNOLOGISCHE REIFE</h2><span class="rg-chevron" aria-hidden="true"></span></summary>
+                        <div class="rg-text">
+                            <p>Forschungstechnologien werden in drei Entwicklungsstände eingeordnet.</p>
+                            <div class="rg-tabelle"><table><thead><tr><th>Stufe</th><th>Bedeutung</th></tr></thead><tbody><tr><td>Etabliert</td><td>Ausreichend untersuchte Verfahren mit bekannten Anwendungsbedingungen</td></tr><tr><td>Fortgeschritten</td><td>Nachgewiesene Funktionen mit verbleibenden Einschränkungen</td></tr><tr><td>Experimentell</td><td>Verfahren mit noch ungeklärten Risiken oder Wirkungen</td></tr></tbody></table></div>
+                            <h3>Etablierte Beispiele</h3>
+                            <ul><li>Regenerative Grunddiagnostik.</li><li>Medizinische Stabilisierung.</li><li>Bestimmte Replantationstechniken.</li><li>Individuelle Gewebekarten.</li><li>Unterstützende medizinische Ernährung.</li></ul>
+                            <h3>Fortgeschrittene Beispiele</h3>
+                            <ul><li>Spezialisierte Organbehandlungen.</li><li>Erweiterte Gewebemodelle.</li><li>Komplexere neurologische Therapien.</li><li>Bestimmte angepasste xenomedizinische Anwendungen.</li></ul>
+                            <h3>Experimentelle Beispiele</h3>
+                            <ul><li>Weitreichende Regeneration fremder Organsysteme.</li><li>Neuartige neuronale Rekonstruktionsverfahren.</li><li>Umfassende Eingriffe in langfristige Alterungsmechanismen.</li></ul>
+                            <p>Die Reife wird für das konkrete Verfahren bestimmt.</p>
+                            <p class="rg-quelle">Quelle: Info_material · Regeneranten · Forschung/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="rg-panel rg-karte" id="k-8-31-forschungsdatenbanken">
+                        <summary><span class="rg-nr">8.31</span><h2>FORSCHUNGSDATENBANKEN</h2><span class="rg-chevron" aria-hidden="true"></span></summary>
+                        <div class="rg-text">
+                            <p>Die moderne Forschung verwendet umfangreiche Referenzdaten.</p>
+                            <p>Diese umfassen:</p>
+                            <ul><li>Genetische Daten.</li><li>Zelltypkataloge.</li><li>Anatomische Modelle.</li><li>Regenerationsverläufe.</li><li>Krankheitsdaten.</li><li>Langzeitstudien.</li><li>Evolutionsbiologische Stammbäume.</li><li>Xenobiologische Vergleichsdaten.</li></ul>
+                            <p>Persönliche medizinische Informationen unterliegen besonderen Schutzrechten.</p>
+                            <p>Nicht sämtliche Daten dürfen frei an andere Organisationen weitergegeben werden.</p>
+                            <p class="rg-quelle">Quelle: Info_material · Regeneranten · Forschung/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="rg-panel rg-karte" id="k-8-32-forschungsqualitat">
+                        <summary><span class="rg-nr">8.32</span><h2>FORSCHUNGSQUALITÄT</h2><span class="rg-chevron" aria-hidden="true"></span></summary>
+                        <div class="rg-text">
+                            <p>Wissenschaftliche Ergebnisse müssen nachvollziehbar dokumentiert werden.</p>
+                            <p>Zu den wichtigsten Qualitätsanforderungen gehören:</p>
+                            <ul><li>Reproduzierbarkeit.</li><li>Methodische Transparenz.</li><li>Unabhängige Begutachtung.</li><li>Dokumentation von Risiken.</li><li>Geeignete Vergleichsgruppen.</li><li>Langzeitüberwachung, soweit erforderlich.</li><li>Schutz von Forschungsteilnehmenden.</li></ul>
+                            <p>Die außergewöhnliche Biologie der Narethi hebt diese Anforderungen nicht auf.</p>
+                            <p class="rg-quelle">Quelle: Info_material · Regeneranten · Forschung/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="rg-panel rg-karte" id="k-8-33-forschungsethik">
+                        <summary><span class="rg-nr">8.33</span><h2>FORSCHUNGSETHIK</h2><span class="rg-chevron" aria-hidden="true"></span></summary>
+                        <div class="rg-text">
+                            <p>Die Charta der Unversehrtheit bildet eine wichtige Grundlage der medizinischen Forschungsethik.</p>
+                            <p>Besonders geschützt sind:</p>
+                            <ul><li>Körperliche Selbstbestimmung.</li><li>Informierte Einwilligung.</li><li>Biologische Gewebeproben.</li><li>Persönliche Daten.</li><li>Neurologische Integrität.</li><li>Schutz vor erzwungenen Experimenten.</li></ul>
+                            <p>Die Möglichkeit, Verletzungen später zu regenerieren, rechtfertigt keine unzulässigen Eingriffe.</p>
+                            <p class="rg-quelle">Quelle: Info_material · Regeneranten · Forschung/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="rg-panel rg-karte" id="k-8-34-historische-verantwortung">
+                        <summary><span class="rg-nr">8.34</span><h2>HISTORISCHE VERANTWORTUNG</h2><span class="rg-chevron" aria-hidden="true"></span></summary>
+                        <div class="rg-text">
+                            <p>Die Gewebekrise beeinflusst die moderne Forschungskultur.</p>
+                            <p>Sie machte deutlich, dass medizinischer Fortschritt und wissenschaftliche Macht nicht automatisch verantwortungsvoll eingesetzt werden.</p>
+                            <p>Heute existieren unabhängige Kontrollverfahren.</p>
+                            <p>Dennoch bleiben Konflikte zwischen wissenschaftlichen, wirtschaftlichen und politischen Interessen möglich.</p>
+                            <p>Die historische Aufarbeitung ist Teil der modernen gesellschaftlichen und wissenschaftlichen Identität.</p>
+                            <p class="rg-quelle">Quelle: Info_material · Regeneranten · Forschung/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="rg-panel rg-karte" id="k-8-35-interstellare-forschung">
+                        <summary><span class="rg-nr">8.35</span><h2>INTERSTELLARE FORSCHUNG</h2><span class="rg-chevron" aria-hidden="true"></span></summary>
+                        <div class="rg-text">
+                            <p>Die Regeneranten können mit wissenschaftlichen Einrichtungen verschiedener APORIA-Fraktionen zusammenarbeiten.</p>
+                            <p>Dabei entstehen Möglichkeiten für:</p>
+                            <ul><li>Gemeinsame medizinische Forschung.</li><li>Xenobiologische Untersuchungen.</li><li>Wissenschaftliche Expeditionen.</li><li>Austausch technischer Verfahren.</li><li>Behandlung biologisch fremder Organismen.</li></ul>
+                            <p>Die Zusammenarbeit unterliegt jeweils geltenden rechtlichen Vereinbarungen.</p>
+                            <p class="rg-quelle">Quelle: Info_material · Regeneranten · Forschung/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="rg-panel rg-karte" id="k-8-36-forschungsprogramm-i-neuronale-kontinuitat">
+                        <summary><span class="rg-nr">8.36</span><h2>FORSCHUNGSPROGRAMM I – NEURONALE KONTINUITÄT</h2><span class="rg-chevron" aria-hidden="true"></span></summary>
+                        <div class="rg-text">
+                            <p>Dieses langfristige Programm untersucht die Wiederherstellung komplexer Nervensystemfunktionen.</p>
+                            <h3>Ziele</h3>
+                            <ul><li>Verbesserung der Nervenzellregeneration.</li><li>Verringerung fehlerhafter neuronaler Verbindungen.</li><li>Schutz vorhandener Erinnerungsstrukturen.</li><li>Verbesserte Rehabilitation.</li><li>Untersuchung langfristiger neuronaler Veränderungen.</li></ul>
+                            <h3>Grenzen</h3>
+                            <p>Vollständig verlorene individuelle Erinnerungsinformationen können nicht automatisch neu erzeugt werden.</p>
+                            <p class="rg-quelle">Quelle: Info_material · Regeneranten · Forschung/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="rg-panel rg-karte" id="k-8-37-forschungsprogramm-ii-zellstabilitat">
+                        <summary><span class="rg-nr">8.37</span><h2>FORSCHUNGSPROGRAMM II – ZELLSTABILITÄT</h2><span class="rg-chevron" aria-hidden="true"></span></summary>
+                        <div class="rg-text">
+                            <p>Dieses Programm untersucht die langfristige Erhaltung regenerativer Zellreservoirs.</p>
+                            <h3>Ziele</h3>
+                            <ul><li>Verbesserte Zellkontrolle.</li><li>Verringerung altersbedingter Funktionsverluste.</li><li>Krebsprävention.</li><li>Stabilisierung regenerativer Vorläuferzellen.</li><li>Untersuchung langfristiger genetischer Veränderungen.</li></ul>
+                            <h3>Grenzen</h3>
+                            <p>Eine vollständige Abschaffung biologischer Alterung gilt nicht als erreicht.</p>
+                            <p class="rg-quelle">Quelle: Info_material · Regeneranten · Forschung/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="rg-panel rg-karte" id="k-8-38-forschungsprogramm-iii-ressourceneffizienz">
+                        <summary><span class="rg-nr">8.38</span><h2>FORSCHUNGSPROGRAMM III – RESSOURCENEFFIZIENZ</h2><span class="rg-chevron" aria-hidden="true"></span></summary>
+                        <div class="rg-text">
+                            <p>Dieses Programm untersucht die energetischen und materiellen Kosten komplexer Regeneration.</p>
+                            <h3>Ziele</h3>
+                            <ul><li>Verbesserte Stoffversorgung.</li><li>Verringerung unnötiger Stoffwechselverluste.</li><li>Stabilere Organversorgung.</li><li>Effizientere Gewebeintegration.</li><li>Verbesserte medizinische Ernährung.</li></ul>
+                            <h3>Grenzen</h3>
+                            <p>Gewebewachstum benötigt weiterhin Energie und materielle Baustoffe.</p>
+                            <p class="rg-quelle">Quelle: Info_material · Regeneranten · Forschung/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="rg-panel rg-karte" id="k-8-39-forschungsprogramm-iv-xenomedizin">
+                        <summary><span class="rg-nr">8.39</span><h2>FORSCHUNGSPROGRAMM IV – XENOMEDIZIN</h2><span class="rg-chevron" aria-hidden="true"></span></summary>
+                        <div class="rg-text">
+                            <p>Dieses Programm erforscht die Übertragbarkeit ausgewählter regenerativer Erkenntnisse auf andere Spezies.</p>
+                            <h3>Ziele</h3>
+                            <ul><li>Biologische Vergleichsforschung.</li><li>Identifikation kompatibler Mechanismen.</li><li>Neue Behandlungsmethoden.</li><li>Untersuchung immunologischer Grenzen.</li><li>Sicherere interspezifische Medizin.</li></ul>
+                            <h3>Grenzen</h3>
+                            <p>Es existiert keine universell anwendbare vollständige Übertragung sämtlicher Regenerationsfähigkeiten.</p>
+                            <p class="rg-quelle">Quelle: Info_material · Regeneranten · Forschung/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="rg-panel rg-karte" id="k-8-40-zukunftige-forschungsfragen">
+                        <summary><span class="rg-nr">8.40</span><h2>ZUKÜNFTIGE FORSCHUNGSFRAGEN</h2><span class="rg-chevron" aria-hidden="true"></span></summary>
+                        <div class="rg-text">
+                            <p>Wichtige ungelöste Herausforderungen sind:</p>
+                            <ol><li>Wie lassen sich komplexe Regenerationssignale noch zuverlässiger steuern?</li><li>Welche Ursachen begrenzen die Lebensdauer regenerativer Zellreservoirs?</li><li>Wie können fehlerhafte Zellwucherungen weiter reduziert werden?</li><li>Wie lässt sich der Erhalt neuronaler Informationsstrukturen verbessern?</li><li>Welche Organregenerationen lassen sich sicherer behandeln?</li><li>Wie können Stoffwechselkosten verringert werden?</li><li>Welche Methoden sind mit fremden biologischen Systemen kompatibel?</li><li>Welche Risiken entstehen durch experimentelle Wachstumsförderung?</li><li>Wie können Langzeitfolgen medizinischer Eingriffe zuverlässiger erkannt werden?</li><li>Welche grundlegenden Evolutionsmechanismen führten zur außergewöhnlichen Regeneration der Narethi?</li></ol>
+                            <p class="rg-quelle">Quelle: Info_material · Regeneranten · Forschung/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="rg-panel rg-karte" id="k-8-41-wissenschaftliche-grenzen">
+                        <summary><span class="rg-nr">8.41</span><h2>WISSENSCHAFTLICHE GRENZEN</h2><span class="rg-chevron" aria-hidden="true"></span></summary>
+                        <div class="rg-text">
+                            <p>Auch die fortgeschrittene Regenerantenforschung besitzt grundlegende Grenzen.</p>
+                            <p>Nicht möglich beziehungsweise nicht als erreicht festgelegt sind:</p>
+                            <ul><li>Natürliche Wiederbelebung nach irreversiblem Tod.</li><li>Beliebige Erzeugung von Körpermasse ohne Stoffzufuhr.</li><li>Vollständige Wiederherstellung sämtlicher zerstörter Erinnerungen.</li><li>Universelle Regeneration aller fremden Lebensformen.</li><li>Vollständige Krebsimmunität.</li><li>Unbegrenzte Unterbrechung des Stoffwechsels.</li><li>Vollständige biologische Unsterblichkeit.</li></ul>
+                            <p>Die wissenschaftliche Entwicklung muss diese Grenzen berücksichtigen.</p>
+                            <p class="rg-quelle">Quelle: Info_material · Regeneranten · Forschung/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="rg-panel rg-karte" id="k-8-42-abschlussbilanz-der-forschung">
+                        <summary><span class="rg-nr">8.42</span><h2>ABSCHLUSSBILANZ DER FORSCHUNG</h2><span class="rg-chevron" aria-hidden="true"></span></summary>
+                        <div class="rg-text">
+                            <p>Die regenerative Wissenschaft der Narethi verbindet:</p>
+                            <ul><li>Zellbiologie.</li><li>Medizin.</li><li>Genetik.</li><li>Neurobiologie.</li><li>Immunologie.</li><li>Evolutionsforschung.</li><li>Xenobiologie.</li><li>Biotechnologie.</li><li>Simulation.</li><li>Medizinische Ethik.</li></ul>
+                            <p>Ihre besondere Stärke liegt im Verständnis und in der Unterstützung natürlich kontrollierter Geweberegeneration.</p>
+                            <p>Die Forschung ermöglicht erhebliche medizinische Fortschritte.</p>
+                            <p>Sie kann jedoch nicht sämtliche biologischen und physikalischen Grenzen aufheben.</p>
+                            <p>Die wissenschaftliche Entwicklung der Regeneranten ist eng mit ihrer gesellschaftlichen Geschichte, ihren politischen Schutzrechten und der Evolution ihrer Heimatwelt Nalvyr verbunden.</p>
+                            <h3>ENDE – FORSCHUNG</h3>
+                            <p class="rg-quelle">Quelle: Info_material · Regeneranten · Forschung/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="rg-panel rg-karte" id="k-7-15-forschungsfortschritt">
+                        <summary><span class="rg-nr">7.15</span><h2>Forschungsfortschritt</h2><span class="rg-chevron" aria-hidden="true"></span></summary>
+                        <div class="rg-text">
+                            <p>Vier übergeordnete Forschungsfelder sind spieltechnisch besonders relevant.</p>
+                            <h3>Wund- und Geweberegeneration</h3>
+                            <p>Behandlung äußerer Schäden.</p>
+                            <h3>Organregeneration</h3>
+                            <p>Wiederherstellung innerer Organfunktionen.</p>
+                            <h3>Neurologische Regeneration</h3>
+                            <p>Behandlung von Nerven- und Gehirnschäden.</p>
+                            <h3>Xenomedizin</h3>
+                            <p>Anpassung bestimmter medizinischer Verfahren an andere Spezies.</p>
+                            <p>Diese Felder werden in die bestehende APORIA-Forschungsstruktur eingeordnet.</p>
+                            <p class="rg-quelle">Quelle: Info_material · Regeneranten · Gameplay/.gitkeep · Spielintegration</p>
+                        </div>
+                    </details>
+                    <details class="rg-panel rg-karte" id="k-7-16-forschungsabhangigkeiten">
+                        <summary><span class="rg-nr">7.16</span><h2>Forschungsabhängigkeiten</h2><span class="rg-chevron" aria-hidden="true"></span></summary>
+                        <div class="rg-text">
+                            <p>Medizinische Technologien werden durch wissenschaftliche Fortschritte freigeschaltet.</p>
+                            <p>Ein komplexes Verfahren kann mehrere Voraussetzungen benötigen:</p>
+                            <ul><li>Biologische Grundlagen.</li><li>Mess- und Diagnosetechnik.</li><li>Geeignete medizinische Geräte.</li><li>Zulassungen.</li><li>Medizinische Materialien.</li><li>Spezialisierte Ausbildung.</li></ul>
+                            <p>Forschungsergebnisse werden nicht automatisch zu sofort verfügbaren universellen Heilfähigkeiten.</p>
+                            <p class="rg-quelle">Quelle: Info_material · Regeneranten · Gameplay/.gitkeep · Spielintegration</p>
                         </div>
                     </details>
                     
-                    <aside class="st-panel st-block st-links" aria-label="Verknüpfungen">
-                    <h2 class="st-h2">Verknüpfungen</h2>
+                    <aside class="rg-panel rg-block rg-links" aria-label="Verknüpfungen">
+                    <h2 class="rg-h2">Verknüpfungen</h2>
                     <ul>
-                        <li><a href="forschung.html" data-route="spezies-biological-19-forschung"><strong>Forschung</strong><span>Forschungsfelder zu den Regeneranten</span></a></li>
+                        <li><a href="../../../../himmelskoerper/planeten/details/nalvyr/hauptseite/index.html" ><strong>Planetendossier Nalvyr</strong><span>Heimatwelt im Planetenarchiv</span></a></li>
+                        <li><a href="../../../../../Men%C3%BCs/Sternenkarte/Sternenkarte.html?system=nalvyr-stern" ><strong>Saelon-System</strong><span>In der Sternenkarte ansehen</span></a></li>
+                        <li><a href="forschung.html" data-route="spezies-biological-19-forschung"><strong>Forschung</strong><span>Forschung an den Regeneranten</span></a></li>
+                        <li><a href="../../../../Forschung/Naturwissenschaften/Medizin/index.html" ><strong>Medizin</strong><span>Forschungszweig</span></a></li>
                         <li><a href="../../../../Forschung/%C3%9Cbersicht/Forschung.html" ><strong>Forschungsarchiv</strong><span>Alle Forschungszweige</span></a></li>
-                        <li><a href="../../%C3%9Cbersichtsseite%20biologische%20spezies/Uebersicht.html" data-route="spezies-biological"><strong>Biologische Spezies</strong><span>Alle Spezies dieser Gruppe</span></a></li>
-                        <li><a href="../../../Spezies_%C3%BCbersicht/Spezies.html" data-route="spezies"><strong>Speziesarchiv</strong><span>Alle Gruppen</span></a></li>
-                        <li><a href="../../../../himmelskoerper/planeten/planeten.html" data-route="planeten"><strong>Planetenarchiv</strong><span>Heimatwelten im Weltenarchiv</span></a></li>
                     </ul>
                 </aside>
-                    <nav class="st-blaettern" aria-label="Hauptreiter blättern"><a href="../Gameplay/gameplay.html" data-route="spezies-biological-19-gameplay">← Spielintegration</a><a href="../Unterseiten/Medien/medien.html" data-route="spezies-biological-19-medien">Medien →</a></nav>
+                    <nav class="rg-blaettern" aria-label="Hauptreiter blättern"><a href="../Gameplay/gameplay.html" data-route="spezies-biological-19-gameplay">← Spielintegration</a><a href="../Unterseiten/Medien/medien.html" data-route="spezies-biological-19-medien">Medien →</a></nav>
                 </div>
-                <nav class="st-panel st-sprung" data-st-sprung aria-label="Kapitel dieser Seite">
-                    <p class="st-kicker">Kapitel</p>
-                    <button type="button" class="st-klappen" data-st-klappen aria-pressed="false">Alle aufklappen</button>
-                    <a href="#noch-offen"><span class="st-nr">…</span>Forschung</a>
+                <nav class="rg-panel rg-sprung" data-rg-sprung aria-label="Kapitel dieser Seite">
+                    <p class="rg-kicker">Kapitel</p>
+                    <button type="button" class="rg-klappen" data-rg-klappen aria-pressed="false">Alle aufklappen</button>
+                    <a href="#d-einordnung-in-den-forschungsbaum"><span class="rg-nr">◆</span>Einordnung in den Forschungsbaum</a>
+                    <a href="#k-steckbrief"><span class="rg-nr">◇</span>Steckbrief</a>
+                    <a href="#k-8-1-allgemeine-wissenschaftliche-bedeutung"><span class="rg-nr">8.1</span>ALLGEMEINE WISSENSCHAFTLICHE BEDEUTUNG</a>
+                    <a href="#k-8-2-forschungsstruktur"><span class="rg-nr">8.2</span>FORSCHUNGSSTRUKTUR</a>
+                    <a href="#k-8-3-historische-entwicklung"><span class="rg-nr">8.3</span>HISTORISCHE ENTWICKLUNG</a>
+                    <a href="#k-8-4-wissenschaftliche-institute"><span class="rg-nr">8.4</span>WISSENSCHAFTLICHE INSTITUTE</a>
+                    <a href="#k-8-5-wissenschaftliche-methoden"><span class="rg-nr">8.5</span>WISSENSCHAFTLICHE METHODEN</a>
+                    <a href="#k-8-6-gewebekartierung"><span class="rg-nr">8.6</span>GEWEBEKARTIERUNG</a>
+                    <a href="#k-8-7-regenerative-zellbiologie"><span class="rg-nr">8.7</span>REGENERATIVE ZELLBIOLOGIE</a>
+                    <a href="#k-8-8-genetik"><span class="rg-nr">8.8</span>GENETIK</a>
+                    <a href="#k-8-9-epigenetik"><span class="rg-nr">8.9</span>EPIGENETIK</a>
+                    <a href="#k-8-10-morphologische-regeneration"><span class="rg-nr">8.10</span>MORPHOLOGISCHE REGENERATION</a>
+                    <a href="#k-8-11-kunstliche-gewebemodelle"><span class="rg-nr">8.11</span>KÜNSTLICHE GEWEBEMODELLE</a>
+                    <a href="#k-8-12-organregeneration"><span class="rg-nr">8.12</span>ORGANREGENERATION</a>
+                    <a href="#k-8-13-gewebeversorgung"><span class="rg-nr">8.13</span>GEWEBEVERSORGUNG</a>
+                    <a href="#k-8-14-regenerativer-stoffwechsel"><span class="rg-nr">8.14</span>REGENERATIVER STOFFWECHSEL</a>
+                    <a href="#k-8-15-regenerationszeiten"><span class="rg-nr">8.15</span>REGENERATIONSZEITEN</a>
+                    <a href="#k-8-16-regenerative-immunologie"><span class="rg-nr">8.16</span>REGENERATIVE IMMUNOLOGIE</a>
+                    <a href="#k-8-17-krebsforschung"><span class="rg-nr">8.17</span>KREBSFORSCHUNG</a>
+                    <a href="#k-8-18-neurobiologische-regeneration"><span class="rg-nr">8.18</span>NEUROBIOLOGISCHE REGENERATION</a>
+                    <a href="#k-8-19-erinnerungen-und-personale-identitat"><span class="rg-nr">8.19</span>ERINNERUNGEN UND PERSONALE IDENTITÄT</a>
+                    <a href="#k-8-20-neurologische-rehabilitation"><span class="rg-nr">8.20</span>NEUROLOGISCHE REHABILITATION</a>
+                    <a href="#k-8-21-replantation"><span class="rg-nr">8.21</span>REPLANTATION</a>
+                    <a href="#k-8-22-regenerativer-ruhezustand"><span class="rg-nr">8.22</span>REGENERATIVER RUHEZUSTAND</a>
+                    <a href="#k-8-23-alterungsforschung"><span class="rg-nr">8.23</span>ALTERUNGSFORSCHUNG</a>
+                    <a href="#k-8-24-langzeitstudien"><span class="rg-nr">8.24</span>LANGZEITSTUDIEN</a>
+                    <a href="#k-8-25-vergleichende-evolutionsforschung"><span class="rg-nr">8.25</span>VERGLEICHENDE EVOLUTIONSFORSCHUNG</a>
+                    <a href="#k-8-26-okologische-regenerationsforschung"><span class="rg-nr">8.26</span>ÖKOLOGISCHE REGENERATIONSFORSCHUNG</a>
+                    <a href="#k-8-27-xenobiologie"><span class="rg-nr">8.27</span>XENOBIOLOGIE</a>
+                    <a href="#k-8-28-xenomedizinische-stufen"><span class="rg-nr">8.28</span>XENOMEDIZINISCHE STUFEN</a>
+                    <a href="#k-8-29-medizinische-technologien"><span class="rg-nr">8.29</span>MEDIZINISCHE TECHNOLOGIEN</a>
+                    <a href="#k-8-30-technologische-reife"><span class="rg-nr">8.30</span>TECHNOLOGISCHE REIFE</a>
+                    <a href="#k-8-31-forschungsdatenbanken"><span class="rg-nr">8.31</span>FORSCHUNGSDATENBANKEN</a>
+                    <a href="#k-8-32-forschungsqualitat"><span class="rg-nr">8.32</span>FORSCHUNGSQUALITÄT</a>
+                    <a href="#k-8-33-forschungsethik"><span class="rg-nr">8.33</span>FORSCHUNGSETHIK</a>
+                    <a href="#k-8-34-historische-verantwortung"><span class="rg-nr">8.34</span>HISTORISCHE VERANTWORTUNG</a>
+                    <a href="#k-8-35-interstellare-forschung"><span class="rg-nr">8.35</span>INTERSTELLARE FORSCHUNG</a>
+                    <a href="#k-8-36-forschungsprogramm-i-neuronale-kontinuitat"><span class="rg-nr">8.36</span>FORSCHUNGSPROGRAMM I – NEURONALE KONTINUITÄT</a>
+                    <a href="#k-8-37-forschungsprogramm-ii-zellstabilitat"><span class="rg-nr">8.37</span>FORSCHUNGSPROGRAMM II – ZELLSTABILITÄT</a>
+                    <a href="#k-8-38-forschungsprogramm-iii-ressourceneffizienz"><span class="rg-nr">8.38</span>FORSCHUNGSPROGRAMM III – RESSOURCENEFFIZIENZ</a>
+                    <a href="#k-8-39-forschungsprogramm-iv-xenomedizin"><span class="rg-nr">8.39</span>FORSCHUNGSPROGRAMM IV – XENOMEDIZIN</a>
+                    <a href="#k-8-40-zukunftige-forschungsfragen"><span class="rg-nr">8.40</span>ZUKÜNFTIGE FORSCHUNGSFRAGEN</a>
+                    <a href="#k-8-41-wissenschaftliche-grenzen"><span class="rg-nr">8.41</span>WISSENSCHAFTLICHE GRENZEN</a>
+                    <a href="#k-8-42-abschlussbilanz-der-forschung"><span class="rg-nr">8.42</span>ABSCHLUSSBILANZ DER FORSCHUNG</a>
+                    <a href="#k-7-15-forschungsfortschritt"><span class="rg-nr">7.15</span>Forschungsfortschritt</a>
+                    <a href="#k-7-16-forschungsabhangigkeiten"><span class="rg-nr">7.16</span>Forschungsabhängigkeiten</a>
                 </nav>
             </div>
-            <dialog class="st-zoom" aria-label="Bild in Großansicht"><div class="controls"><button class="control" type="button" data-step="-1" aria-label="Vorheriges Bild">←</button><output aria-live="polite"></output><button class="control" type="button" data-step="1" aria-label="Nächstes Bild">→</button></div><form method="dialog"><button class="control">Schließen</button></form><img alt=""></dialog>
+            <dialog class="rg-zoom" aria-label="Bild in Großansicht"><div class="controls"><button class="control" type="button" data-step="-1" aria-label="Vorheriges Bild">←</button><output aria-live="polite"></output><button class="control" type="button" data-step="1" aria-label="Nächstes Bild">→</button></div><form method="dialog"><button class="control">Schließen</button></form><img alt=""></dialog>
         </main>
     </div>
 </body>

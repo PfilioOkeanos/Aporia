@@ -37,7 +37,7 @@ const hzInnen = Math.sqrt(L / 1.1), hzAussen = Math.sqrt(L / 0.36);
 const lage = a < hzInnen ? "innerhalb der inneren Grenze der habitablen Zone" : a > hzAussen ? "jenseits der äußeren Grenze der habitablen Zone" : "innerhalb der habitablen Zone";
 const ortsjahr = tageUmlauf * 24 / W.rotationH;
 const monde = sys.koerper.filter((k) => k.um === spec.planetId).map((m) => ({ ...m, aKm: Math.cbrt(398600.4418 * mE * (m.periodeTage * 86400) ** 2 / (4 * Math.PI ** 2)) }));
-const planetenSys = sys.koerper.filter((k) => k.um === stern.id && k.masseErde > 0.01).sort((x, y) => x.aAE - y.aAE);
+const planetenSys = sys.koerper.filter((k) => k.um === stern.id && k.masseErde > 0.01 && !/roter zwerg|brauner zwerg|weißer zwerg/i.test(k.typ)).sort((x, y) => x.aAE - y.aAE);
 const bahnNr = planetenSys.findIndex((k) => k.id === planet.id) + 1;
 const sternDurchm = 0.53 * stern.radiusSonne / a;
 // Nachbarsysteme
@@ -132,6 +132,7 @@ for (const k of basis.kapitel) {
     };
 }
 const verweise = [
+    ...(spec.systemseite ? [{ icon: "✦", art: "Systemübersicht", titel: sys.systemName, href: spec.systemseite, route: null }] : []),
     { icon: "✿", art: "Heimische Spezies", titel: spec.spezies.name, href: speziesSeite, route: null },
     ...[["Heimatwelt", "Heimatwelt", "heimatwelt.html"], ["Politik", "Politik und Fraktionen", "politik.html"]].map(([o, t, d]) => sub(o, d) ? { icon: "◈", art: "Spezies-Dossier", titel: t, href: sub(o, d), route: null } : null).filter(Boolean),
     { icon: "✦", art: "Sternenkarte", titel: sys.systemName, href: `Menüs/Sternenkarte/Sternenkarte.html?system=${stern.id}`, route: null },

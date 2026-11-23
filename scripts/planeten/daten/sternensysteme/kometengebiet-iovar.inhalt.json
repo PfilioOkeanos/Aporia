@@ -1,0 +1,522 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Kometengebiet Iovar",
+  "genitiv": "von Kometengebiet Iovar",
+  "dossierName": "Kometengebiet Iovar-Dossier",
+  "klasse": "Kometengebiet",
+  "intro": "Das äußere Kometengebiet übernimmt das Archivmotiv eines roten Zwergs mit schmalem Kometenring. Kometengebiet Iovar umgibt Iovar im Iovar-System.",
+  "globusDaten": {
+    "planet": "roter-zwerg-mit-schmalem-kometenring",
+    "klasse": "Eis",
+    "radius": 1000000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=iovar-stern&objekt=iovar-kometenring",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-8F1C3435F8"
+    ],
+    [
+      "Typ",
+      "Kometengebiet"
+    ],
+    [
+      "Sternsystem",
+      "Iovar-System"
+    ],
+    [
+      "Zentralkörper",
+      "Iovar"
+    ],
+    [
+      "Ausdehnung",
+      "1,49–1,6 AE"
+    ],
+    [
+      "Große Halbachse",
+      "1,543 AE"
+    ],
+    [
+      "Umlaufzeit",
+      "3,8 Jahre"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -207 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Iovar-System"
+    ],
+    [
+      "Zentralstern",
+      "Iovar",
+      "inhalte/himmelskoerper/sterne/details/iovar/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "1,543 AE"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Kometengebiet Iovar im Iovar-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=iovar-stern&objekt=iovar-kometenring",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Iovar",
+      "href": "inhalte/himmelskoerper/sterne/details/iovar/hauptseite/index.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Iovar-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=iovar-stern&objekt=iovar-kometenring"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#04090b",
+      "tiefe": "#0a1319",
+      "akzent": "#93c8ed",
+      "sand": "#9cc4c5",
+      "moos": "#75c0bf",
+      "ozean": "#5ea7e9",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#284d66"
+    },
+    "schichten": [
+      [
+        "Lage",
+        "Bahnen"
+      ],
+      [
+        "System",
+        "Planeten"
+      ],
+      [
+        "Dynamik",
+        "Stabilität"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Zentralsterne": {
+      "gruppe": "Wissenschaft",
+      "icon": "✦",
+      "intro": "Zentralsterne von Kometengebiet Iovar.",
+      "abschnitte": [
+        {
+          "titel": "Iovar",
+          "text": [
+            "Iovar ist ein fiktiver Roter Zwerg im Aporia-Atlas, 4,5 Lichtjahre von der Sonne entfernt. Das Modell verwendet 0,25 Sonnenmassen und 0,26 Sonnenradien. Körper und Bahnen sind im gleichen Maßstab wie im Sonnensystem."
+          ],
+          "verweise": [
+            [
+              "Iovar",
+              "inhalte/himmelskoerper/sterne/details/iovar/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Planeten": {
+      "gruppe": "Wissenschaft",
+      "icon": "◍",
+      "intro": "Planeten von Kometengebiet Iovar.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Iovar · Stern",
+              "Roter Zwerg"
+            ],
+            [
+              "Iovar I · 0,22 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Iovar II · 0,41 AE",
+              "Ozeanplanet"
+            ],
+            [
+              "Iovar III · 0,84 AE",
+              "Gasriese"
+            ],
+            [
+              "Iovar IV · 1,17 AE",
+              "Eisplanet"
+            ],
+            [
+              "Iovars Zwergwelt · 1,4 AE",
+              "Zwergplanet"
+            ],
+            [
+              "Rostroter Asteroidengürtel · 0,5–0,7 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Kometengebiet Iovar · 1,5–1,6 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Iovar",
+              "inhalte/himmelskoerper/sterne/details/iovar/hauptseite/index.html"
+            ],
+            [
+              "Iovar I",
+              "inhalte/himmelskoerper/planeten/details/iovar-i/hauptseite/index.html"
+            ],
+            [
+              "Iovar II",
+              "inhalte/himmelskoerper/planeten/details/iovar-ii/hauptseite/index.html"
+            ],
+            [
+              "Iovar III",
+              "inhalte/himmelskoerper/planeten/details/iovar-iii/hauptseite/index.html"
+            ],
+            [
+              "Iovar IV",
+              "inhalte/himmelskoerper/planeten/details/iovar-iv/hauptseite/index.html"
+            ],
+            [
+              "Iovars Zwergwelt",
+              "inhalte/himmelskoerper/zwergplaneten/details/iovars-zwergwelt/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Bahnen": {
+      "gruppe": "Wissenschaft",
+      "icon": "◌",
+      "intro": "Bahnen von Kometengebiet Iovar.",
+      "abschnitte": [
+        {
+          "titel": "Lage",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Iovar"
+            ],
+            [
+              "Ausdehnung",
+              "1,49–1,6 AE"
+            ]
+          ]
+        }
+      ]
+    },
+    "Stabilität": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚖",
+      "intro": "Stabilität von Kometengebiet Iovar.",
+      "abschnitte": [
+        {
+          "titel": "Stabilität",
+          "text": [
+            "Die Brocken von Kometengebiet Iovar bewegen sich auf stabilen Bahnen zwischen den Planeten; Resonanzen mit den großen Planeten formen die Ränder des Gebiets."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Kometengebiet Iovar auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Kometengebiet Iovar",
+          "text": [
+            "Das äußere Kometengebiet übernimmt das Archivmotiv eines roten Zwergs mit schmalem Kometenring.",
+            "Kometengebiet Iovar umgibt Iovar im Iovar-System."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Kometengebiet"
+            ],
+            [
+              "Sternsystem",
+              "Iovar-System"
+            ],
+            [
+              "Zentralkörper",
+              "Iovar"
+            ],
+            [
+              "Ausdehnung",
+              "1,49–1,6 AE"
+            ],
+            [
+              "Große Halbachse",
+              "1,543 AE"
+            ],
+            [
+              "Umlaufzeit",
+              "3,8 Jahre"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -207 °C"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Kometengebiet Iovar im Iovar-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Iovar"
+            ],
+            [
+              "Große Halbachse",
+              "1,5433 AE (230,9 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0"
+            ],
+            [
+              "Bahnneigung",
+              "0°"
+            ],
+            [
+              "Umlaufzeit",
+              "3,8 Jahre"
+            ],
+            [
+              "Einstrahlung",
+              "0,004-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Iovar · Stern",
+              "Roter Zwerg"
+            ],
+            [
+              "Iovar I · 0,22 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Iovar II · 0,41 AE",
+              "Ozeanplanet"
+            ],
+            [
+              "Iovar III · 0,84 AE",
+              "Gasriese"
+            ],
+            [
+              "Iovar IV · 1,17 AE",
+              "Eisplanet"
+            ],
+            [
+              "Iovars Zwergwelt · 1,4 AE",
+              "Zwergplanet"
+            ],
+            [
+              "Rostroter Asteroidengürtel · 0,5–0,7 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Kometengebiet Iovar · 1,5–1,6 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Iovar",
+              "inhalte/himmelskoerper/sterne/details/iovar/hauptseite/index.html"
+            ],
+            [
+              "Iovar I",
+              "inhalte/himmelskoerper/planeten/details/iovar-i/hauptseite/index.html"
+            ],
+            [
+              "Iovar II",
+              "inhalte/himmelskoerper/planeten/details/iovar-ii/hauptseite/index.html"
+            ],
+            [
+              "Iovar III",
+              "inhalte/himmelskoerper/planeten/details/iovar-iii/hauptseite/index.html"
+            ],
+            [
+              "Iovar IV",
+              "inhalte/himmelskoerper/planeten/details/iovar-iv/hauptseite/index.html"
+            ],
+            [
+              "Iovars Zwergwelt",
+              "inhalte/himmelskoerper/zwergplaneten/details/iovars-zwergwelt/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Umgebung": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Umgebung von Kometengebiet Iovar.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Iovar · Stern",
+              "Roter Zwerg"
+            ],
+            [
+              "Iovar I · 0,22 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Iovar II · 0,41 AE",
+              "Ozeanplanet"
+            ],
+            [
+              "Iovar III · 0,84 AE",
+              "Gasriese"
+            ],
+            [
+              "Iovar IV · 1,17 AE",
+              "Eisplanet"
+            ],
+            [
+              "Iovars Zwergwelt · 1,4 AE",
+              "Zwergplanet"
+            ],
+            [
+              "Rostroter Asteroidengürtel · 0,5–0,7 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Kometengebiet Iovar · 1,5–1,6 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Iovar",
+              "inhalte/himmelskoerper/sterne/details/iovar/hauptseite/index.html"
+            ],
+            [
+              "Iovar I",
+              "inhalte/himmelskoerper/planeten/details/iovar-i/hauptseite/index.html"
+            ],
+            [
+              "Iovar II",
+              "inhalte/himmelskoerper/planeten/details/iovar-ii/hauptseite/index.html"
+            ],
+            [
+              "Iovar III",
+              "inhalte/himmelskoerper/planeten/details/iovar-iii/hauptseite/index.html"
+            ],
+            [
+              "Iovar IV",
+              "inhalte/himmelskoerper/planeten/details/iovar-iv/hauptseite/index.html"
+            ],
+            [
+              "Iovars Zwergwelt",
+              "inhalte/himmelskoerper/zwergplaneten/details/iovars-zwergwelt/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Kometengebiet Iovar.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Kometengebiet Iovar besteht aus Material, das sich bei der Entstehung des Iovar-Systems nicht zu einem Planeten vereinte."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Kometengebiet Iovar.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Wie viel Masse enthält das Gebiet insgesamt?",
+            "Welche Resonanzen formen seine Ränder?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Kometengebiet Iovar ist mit allen Bahndaten im Iovar-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=iovar-stern&objekt=iovar-kometenring"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Kometengebiet Iovar.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Das äußere Kometengebiet übernimmt das Archivmotiv eines roten Zwergs mit schmalem Kometenring."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Kometengebiet Iovar.",
+      "abschnitte": [
+        {
+          "titel": "Kometengebiet Iovar – Archivbild",
+          "bild": true,
+          "bildtext": "Kometengebiet Iovar"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,777 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Shyren",
+  "genitiv": "von Shyren",
+  "dossierName": "Shyren-Dossier",
+  "klasse": "Blauer Eisriese",
+  "intro": "Der äußerste der sechs Hauptplaneten. Methan trägt zur blauen Färbung bei, und den Planeten umgeben schwache staubhaltige Ringe.",
+  "globusDaten": {
+    "planet": "shyren",
+    "klasse": "Eisriese",
+    "radius": 27714000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=elaris-stern&objekt=elaris-shyren",
+  "grunddaten": [
+    [
+      "System-ID",
+      "elaris-shyren"
+    ],
+    [
+      "Archiv-ID",
+      "AP-ELARIS-SHYREN"
+    ],
+    [
+      "Typ",
+      "Blauer Eisriese"
+    ],
+    [
+      "Sternsystem",
+      "Elaris-System"
+    ],
+    [
+      "Zentralkörper",
+      "Elaris A"
+    ],
+    [
+      "Große Halbachse",
+      "5,9 AE"
+    ],
+    [
+      "Umlaufzeit",
+      "16 Jahre"
+    ],
+    [
+      "Durchmesser",
+      "55.428 km"
+    ],
+    [
+      "Masse",
+      "23,84 Erdmassen"
+    ],
+    [
+      "Schwerkraft",
+      "1,26 g"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -194 °C"
+    ],
+    [
+      "Monde",
+      "1 (Nivessa)"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Elaris-System"
+    ],
+    [
+      "Zentralstern",
+      "Elaris A",
+      "inhalte/himmelskoerper/sterne/details/elaris-a/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "5,9 AE"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Shyren im Elaris-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=elaris-stern&objekt=elaris-shyren",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Elaris A",
+      "href": "inhalte/himmelskoerper/sterne/details/elaris-a/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Nivessa",
+      "href": "inhalte/himmelskoerper/monde/details/nivessa/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Neurofloren",
+      "titel": "Ilaruun",
+      "href": "inhalte/himmelskoerper/planeten/details/ilaruun/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Neurofloren",
+      "href": "inhalte/spezies/Mentale Spezies/Neurofloren/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Elaris-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=elaris-stern&objekt=elaris-shyren"
+    },
+    {
+      "titel": "Speziesdossier Neurofloren",
+      "href": "inhalte/spezies/Mentale Spezies/Neurofloren/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#04070b",
+      "tiefe": "#080f17",
+      "akzent": "#88afe3",
+      "sand": "#91afbf",
+      "moos": "#6ba3b7",
+      "ozean": "#558ddc",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#203c5f"
+    }
+  },
+  "kapitel": {
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Shyren auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Shyren",
+          "text": [
+            "Der äußerste der sechs Hauptplaneten. Methan trägt zur blauen Färbung bei, und den Planeten umgeben schwache staubhaltige Ringe.",
+            "Shyren umkreist Elaris A in 5,9 AE Abstand und braucht für einen Umlauf 16 Jahre."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Blauer Eisriese"
+            ],
+            [
+              "Sternsystem",
+              "Elaris-System"
+            ],
+            [
+              "Zentralkörper",
+              "Elaris A"
+            ],
+            [
+              "Große Halbachse",
+              "5,9 AE"
+            ],
+            [
+              "Umlaufzeit",
+              "16 Jahre"
+            ],
+            [
+              "Durchmesser",
+              "55.428 km"
+            ],
+            [
+              "Masse",
+              "23,84 Erdmassen"
+            ],
+            [
+              "Schwerkraft",
+              "1,26 g"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -194 °C"
+            ],
+            [
+              "Monde",
+              "1 (Nivessa)"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Ilaruun",
+          "text": [
+            "Das Elaris-System ist die Heimat der Neurofloren: Ihr Planet Ilaruun umkreist Elaris A."
+          ],
+          "verweise": [
+            [
+              "Ilaruun",
+              "inhalte/himmelskoerper/planeten/details/ilaruun/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Neurofloren",
+              "inhalte/spezies/Mentale Spezies/Neurofloren/hauptseite/Spezies.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Allgemeines",
+          "text": [
+            "Shyren ist ein kalter äußerer Planet mit einem dichten Gas- und Flüssigkeitsinneren.",
+            "Seine sichtbare Atmosphäre zeigt bläuliche Farbtöne.",
+            "Diese können durch die Absorption bestimmter Lichtanteile durch atmosphärisches Methan entstehen."
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Shyren im Elaris-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Elaris A"
+            ],
+            [
+              "Große Halbachse",
+              "5,9 AE (882,6 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,018"
+            ],
+            [
+              "Bahnneigung",
+              "0°"
+            ],
+            [
+              "Umlaufzeit",
+              "16 Jahre"
+            ],
+            [
+              "Einstrahlung",
+              "0,012-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Am Himmel von Shyren",
+          "text": [
+            "Elaris A erscheint von hier aus etwa 0,07° groß (die Sonne von der Erde: 0,53°)."
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Elaris A · Stern",
+              "Orangefarbener Hauptreihenstern (K2 V)"
+            ],
+            [
+              "Kessar · 0,19 AE",
+              "Heißer eisenreicher Gesteinsplanet"
+            ],
+            [
+              "Orveth · 0,38 AE",
+              "Heißer trockener Gesteinsplanet"
+            ],
+            [
+              "Ilaruun · 0,66 AE",
+              "Gemäßigter terrestrischer Gesteinsplanet"
+            ],
+            [
+              "Venyra · 1,17 AE",
+              "Kalter Gesteins- und Eisplanet"
+            ],
+            [
+              "Daragon · 3,2 AE",
+              "Gasriese"
+            ],
+            [
+              "Shyren · 5,9 AE · dieses Dossier",
+              "Blauer Eisriese"
+            ],
+            [
+              "Eivara · 12,8 AE",
+              "Eis-Gesteins-Zwergplanet"
+            ],
+            [
+              "Tiruun · 1,7–2,4 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Kaelor-Saum · 9,5–30 AE",
+              "Äußeres Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Elaris A",
+              "inhalte/himmelskoerper/sterne/details/elaris-a/hauptseite/index.html"
+            ],
+            [
+              "Kessar",
+              "inhalte/himmelskoerper/planeten/details/kessar/hauptseite/index.html"
+            ],
+            [
+              "Orveth",
+              "inhalte/himmelskoerper/planeten/details/orveth/hauptseite/index.html"
+            ],
+            [
+              "Ilaruun",
+              "inhalte/himmelskoerper/planeten/details/ilaruun/hauptseite/index.html"
+            ],
+            [
+              "Venyra",
+              "inhalte/himmelskoerper/planeten/details/venyra/hauptseite/index.html"
+            ],
+            [
+              "Daragon",
+              "inhalte/himmelskoerper/planeten/details/daragon/hauptseite/index.html"
+            ],
+            [
+              "Eivara",
+              "inhalte/himmelskoerper/zwergplaneten/details/eivara/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Weitere Begleiter",
+          "text": [
+            "Neben Nivessa existieren mehrere kleine unregelmäßige Monde.",
+            "Diese Körper können aus eingefangenem Material oder Überresten früherer Kollisionen stammen.",
+            "Ihre genauen Bahnen und Namen sind für spätere Einzeldossiers vorgesehen."
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Shyren.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "27.714 km"
+            ],
+            [
+              "Masse",
+              "23,84 Erdmassen"
+            ],
+            [
+              "Mittlere Dichte",
+              "1,6 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "12,36 m/s² (1,26 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "26,19 km/s"
+            ]
+          ],
+          "vergleich": {
+            "mit": "Erde",
+            "werte": [
+              [
+                "Durchmesser",
+                55428,
+                12742,
+                "km"
+              ],
+              [
+                "Masse",
+                23.84,
+                1,
+                "Erdmassen"
+              ],
+              [
+                "Schwerkraft",
+                1.26,
+                1,
+                "g"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "Planetare Struktur": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Planetare Struktur von Shyren.",
+      "abschnitte": [
+        {
+          "titel": "Schalenbau",
+          "schichten": [
+            [
+              "Atmosphäre",
+              "Wasserstoff, Helium und Methan"
+            ],
+            [
+              "Eismantel",
+              "Wasser, Ammoniak und Methan unter hohem Druck"
+            ],
+            [
+              "Kern",
+              "Gestein und Metall"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geografie": {
+      "gruppe": "Natur",
+      "icon": "△",
+      "intro": "Geografie von Shyren.",
+      "abschnitte": [
+        {
+          "titel": "Oberfläche",
+          "text": [
+            "Shyren besitzt keine feste Oberfläche. Sichtbar sind Wolkenbänder, Wirbel und Stürme."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Shyren.",
+      "abschnitte": [
+        {
+          "titel": "Atmosphärische Struktur",
+          "text": [
+            "Die oberen Schichten bestehen hauptsächlich aus Wasserstoff und Helium mit weiteren Spurstoffen.",
+            "In unterschiedlichen Tiefen können Wolken aus kondensierten Stoffen auftreten.",
+            "Starke Winde und Temperaturunterschiede beeinflussen die Wolkenentwicklung."
+          ]
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Shyren.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 5,9 AE Abstand zu Elaris A liegt die Gleichgewichtstemperatur von Shyren bei rund -194 °C – eisig kalt."
+          ]
+        }
+      ]
+    },
+    "Gewässer": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gewässer von Shyren.",
+      "abschnitte": [
+        {
+          "titel": "Wasser",
+          "text": [
+            "Wasser liegt in den Wolkenschichten und tief im Inneren unter hohem Druck vor."
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Shyren.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Ohne feste Oberfläche gibt es keine Geologie im engeren Sinn; im Inneren herrschen extreme Drücke und Temperaturen."
+          ]
+        }
+      ]
+    },
+    "Biosphäre": {
+      "gruppe": "Natur",
+      "icon": "❧",
+      "intro": "Biosphäre von Shyren.",
+      "abschnitte": [
+        {
+          "titel": "Leben",
+          "text": [
+            "Auf Shyren ist kein Leben verzeichnet."
+          ]
+        }
+      ]
+    },
+    "Spezies": {
+      "gruppe": "Zivilisation",
+      "icon": "✿",
+      "intro": "Spezies von Shyren.",
+      "abschnitte": [
+        {
+          "titel": "Bewohner",
+          "text": [
+            "Shyren ist keine Heimat einer intelligenten Spezies."
+          ]
+        },
+        {
+          "titel": "Im System von Ilaruun",
+          "text": [
+            "Das Elaris-System ist die Heimat der Neurofloren: Ihr Planet Ilaruun umkreist Elaris A."
+          ],
+          "verweise": [
+            [
+              "Ilaruun",
+              "inhalte/himmelskoerper/planeten/details/ilaruun/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Neurofloren",
+              "inhalte/spezies/Mentale Spezies/Neurofloren/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Zivilisation": {
+      "gruppe": "Zivilisation",
+      "icon": "▥",
+      "intro": "Zivilisation von Shyren.",
+      "abschnitte": [
+        {
+          "titel": "Siedlungen",
+          "text": [
+            "Für Shyren sind keine dauerhaften Siedlungen verzeichnet."
+          ]
+        },
+        {
+          "titel": "Im System von Ilaruun",
+          "text": [
+            "Das Elaris-System ist die Heimat der Neurofloren: Ihr Planet Ilaruun umkreist Elaris A."
+          ],
+          "verweise": [
+            [
+              "Ilaruun",
+              "inhalte/himmelskoerper/planeten/details/ilaruun/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Neurofloren",
+              "inhalte/spezies/Mentale Spezies/Neurofloren/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Shyren.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Shyren entstand zusammen mit dem Elaris-System vor rund 5,9 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Fraktionen": {
+      "gruppe": "Zivilisation",
+      "icon": "◇",
+      "intro": "Fraktionen von Shyren.",
+      "abschnitte": [
+        {
+          "titel": "Ansprüche",
+          "text": [
+            "Für Shyren sind keine Fraktionsansprüche verzeichnet."
+          ]
+        }
+      ]
+    },
+    "Rohstoffe": {
+      "gruppe": "Weitere",
+      "icon": "⬡",
+      "intro": "Rohstoffe von Shyren.",
+      "abschnitte": [
+        {
+          "titel": "Rohstoffe",
+          "liste": [
+            "Wasserstoff",
+            "Methan",
+            "Wassereis"
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Shyren.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Gibt es flüssige Schichten im Eismantel?",
+            "Wie entstand die Achslage?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Shyren ist mit allen Bahndaten im Elaris-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=elaris-stern&objekt=elaris-shyren"
+            ]
+          ]
+        },
+        {
+          "titel": "Forschung",
+          "text": [
+            "Shyren ist ein wichtiges Ziel für:",
+            "Die meisten wissenschaftlichen Missionen erfolgen robotisch."
+          ],
+          "liste": [
+            "Eisriesenphysik",
+            "Atmosphärenentwicklung",
+            "Magnetosphärenforschung",
+            "Dynamik kleiner Monde",
+            "Entstehung äußerer Planetensysteme",
+            "Ringdynamik",
+            "Fernerkundung"
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Shyren.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Ein Mond: Nivessa"
+          ]
+        },
+        {
+          "titel": "Monde",
+          "karten": [
+            {
+              "titel": "Nivessa",
+              "text": "2.200 km Durchmesser, Umlauf in 4,1 Tage. Großer eisreicher Mond Shyrens mit Kratern, Eisflächen und alten Bruchstrukturen."
+            }
+          ],
+          "verweise": [
+            [
+              "Nivessa",
+              "inhalte/himmelskoerper/monde/details/nivessa/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Besonderheiten",
+          "daten": [
+            [
+              "Der Dunkelwirbel",
+              "Ein großer, langlebiger, aber nicht unveränderlicher atmosphärischer Wirbel."
+            ],
+            [
+              "Die Blauen Schleier",
+              "Helle und dunkle Wolkenbänder mit unterschiedlichen optischen Eigenschaften."
+            ],
+            [
+              "Die Schmalen Ringe",
+              "Ein schwaches Ringsystem aus Staub und kleineren Partikeln."
+            ],
+            [
+              "Polare Leuchterscheinungen",
+              "Lichtemissionen durch geladene Teilchen in der Magnetosphäre."
+            ]
+          ]
+        },
+        {
+          "titel": "Besondere Umgebung",
+          "text": [
+            "Aus der unmittelbaren Nähe erscheint Shyren als riesige blau getönte Kugel mit wechselnden Wolkenformationen.",
+            "Auf seinem Mond Nivessa dominiert eine kalte, dunkle Umgebung.",
+            "Der Stern Elaris ist deutlich kleiner und lichtschwächer als am Himmel Ilaruuns.",
+            "Dennoch ist der Stern dort weiterhin eine intensive Lichtquelle im Vergleich zum übrigen Weltraum."
+          ]
+        },
+        {
+          "titel": "Verwandte Dossiers",
+          "verweise": [
+            [
+              "Nivessa",
+              "inhalte/himmelskoerper/monde/details/nivessa/hauptseite/index.html"
+            ],
+            [
+              "Elaris-System",
+              "inhalte/himmelskoerper/sternensysteme/details/elaris-system/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Shyren.",
+      "abschnitte": [
+        {
+          "titel": "Shyren",
+          "bild": true,
+          "bildtext": "Shyren"
+        }
+      ]
+    },
+    "Gaszusammensetzung": {
+      "gruppe": "Weitere",
+      "icon": "◆",
+      "intro": "Gaszusammensetzung von Shyren.",
+      "abschnitte": [
+        {
+          "titel": "Gaszusammensetzung",
+          "text": [
+            "Die oberen Schichten bestehen überwiegend aus Wasserstoff und Helium. Methan absorbiert Teile des einfallenden Lichts und trägt zur blauen Färbung bei. Genaue Mischungsverhältnisse sind offen."
+          ]
+        }
+      ]
+    },
+    "Wolkenschichten": {
+      "gruppe": "Weitere",
+      "icon": "◆",
+      "intro": "Wolkenschichten von Shyren.",
+      "abschnitte": [
+        {
+          "titel": "Wolkenschichten",
+          "text": [
+            "In unterschiedlichen Tiefen können Stoffe kondensieren und Wolken bilden. Druck, Temperatur und vertikaler Transport bestimmen ihre Höhe. Eine feste Oberfläche gibt es bei diesem Eisriesen nicht."
+          ]
+        }
+      ]
+    },
+    "Stürme": {
+      "gruppe": "Weitere",
+      "icon": "◆",
+      "intro": "Stürme von Shyren.",
+      "abschnitte": [
+        {
+          "titel": "Stürme",
+          "text": [
+            "Das Dossier beschreibt atmosphärische Sturmwirbel. Ihre Entstehung und Lebensdauer hängen unter anderem von innerer Wärme und schnellen Strömungen ab. Konkrete Windgeschwindigkeiten sind im Modell nicht festgelegt."
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,531 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Pheyra",
+  "genitiv": "von Pheyra",
+  "dossierName": "Pheyra-Dossier",
+  "klasse": "Mond",
+  "intro": "Pheyra ist ein dunkler, verkraterter Mond auf weiter Bahn. Das Konsortium unterhält hier eine Relaisstation für den Verkehr nach Babiew. Pheyra umkreist Babiew in 26 Tage.",
+  "globusDaten": {
+    "planet": "lebender-dreilappenmond-im-rosa-staubschleier",
+    "klasse": "Gestein",
+    "radius": 780000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=babiew-stern&objekt=babiew-pheyra",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-216E60E51B"
+    ],
+    [
+      "Typ",
+      "Mond"
+    ],
+    [
+      "Sternsystem",
+      "Thyrrae-System"
+    ],
+    [
+      "Zentralkörper",
+      "Babiew"
+    ],
+    [
+      "Große Halbachse",
+      "1.451.336 km"
+    ],
+    [
+      "Umlaufzeit",
+      "26 Tage"
+    ],
+    [
+      "Durchmesser",
+      "1.560 km"
+    ],
+    [
+      "Masse",
+      "0,13 Mondmassen"
+    ],
+    [
+      "Schwerkraft",
+      "0,11 g"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -18 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Thyrrae-System"
+    ],
+    [
+      "Zentralstern",
+      "Thyrrae",
+      "inhalte/himmelskoerper/sterne/details/thyrrae/hauptseite/index.html"
+    ],
+    [
+      "Umläuft",
+      "Babiew",
+      "inhalte/himmelskoerper/planeten/details/babiew/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "1.451.336 km"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Pheyra im Thyrrae-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=babiew-stern&objekt=babiew-pheyra",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Thyrrae",
+      "href": "inhalte/himmelskoerper/sterne/details/thyrrae/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◍",
+      "art": "Mutterplanet",
+      "titel": "Babiew",
+      "href": "inhalte/himmelskoerper/planeten/details/babiew/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Aeromorphen",
+      "titel": "Babiew",
+      "href": "inhalte/himmelskoerper/planeten/details/babiew/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Aeromorphen",
+      "href": "inhalte/spezies/Biologische Spezies/Aeromorphen/Hauptseite_übersicht/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Thyrrae-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=babiew-stern&objekt=babiew-pheyra"
+    },
+    {
+      "titel": "Speziesdossier Aeromorphen",
+      "href": "inhalte/spezies/Biologische Spezies/Aeromorphen/Hauptseite_übersicht/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#080707",
+      "tiefe": "#11100f",
+      "akzent": "#bdb6b3",
+      "sand": "#c2b5a0",
+      "moos": "#9cab8d",
+      "ozean": "#7c94a1",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#45403e"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Astronomie"
+      ],
+      [
+        "Planet",
+        "Mutterplanet"
+      ],
+      [
+        "Kräfte",
+        "Gezeiten"
+      ],
+      [
+        "Tiefe",
+        "Geologie"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Mutterplanet": {
+      "gruppe": "Wissenschaft",
+      "icon": "◐",
+      "intro": "Mutterplanet von Pheyra.",
+      "abschnitte": [
+        {
+          "titel": "Babiew",
+          "text": [
+            "Babiew ist die Heimatwelt der Aeromorphen: eine Gaswelt mit mächtiger, extrem bewegter Atmosphäre, dauerhaften Sturmsystemen und Winden bis 1.000 km/h."
+          ],
+          "daten": [
+            [
+              "Typ",
+              "Gasriese"
+            ],
+            [
+              "Durchmesser",
+              "104.000 km"
+            ],
+            [
+              "Abstand des Mondes",
+              "1.451.336 km (27,9 Planetenradien)"
+            ]
+          ],
+          "verweise": [
+            [
+              "Babiew",
+              "inhalte/himmelskoerper/planeten/details/babiew/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Weitere Monde von Babiew",
+          "liste": [
+            "Ayel – Umlauf in 3,1 Tage",
+            "Corrun – Umlauf in 8,4 Tage"
+          ],
+          "verweise": [
+            [
+              "Ayel",
+              "inhalte/himmelskoerper/monde/details/ayel/hauptseite/index.html"
+            ],
+            [
+              "Corrun",
+              "inhalte/himmelskoerper/monde/details/corrun/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Gezeiten": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gezeiten von Pheyra.",
+      "abschnitte": [
+        {
+          "titel": "Gezeitenkräfte",
+          "text": [
+            "Auf seiner Bahn in 1.451.336 km Abstand wirken starke Gezeitenkräfte von Babiew auf Pheyra. Die leicht exzentrische Bahn (e = 0,03) knetet das Innere bei jedem Umlauf."
+          ]
+        }
+      ]
+    },
+    "Gebundene Rotation": {
+      "gruppe": "Wissenschaft",
+      "icon": "↻",
+      "intro": "Gebundene Rotation von Pheyra.",
+      "abschnitte": [
+        {
+          "titel": "Rotation",
+          "text": [
+            "Pheyra wendet Babiew vermutlich stets dieselbe Seite zu: Ein Tag dauert so lange wie ein Umlauf – 26 Tage."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Pheyra auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Pheyra",
+          "text": [
+            "Pheyra ist ein dunkler, verkraterter Mond auf weiter Bahn. Das Konsortium unterhält hier eine Relaisstation für den Verkehr nach Babiew.",
+            "Pheyra umkreist Babiew in 26 Tage."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Mond"
+            ],
+            [
+              "Sternsystem",
+              "Thyrrae-System"
+            ],
+            [
+              "Zentralkörper",
+              "Babiew"
+            ],
+            [
+              "Große Halbachse",
+              "1.451.336 km"
+            ],
+            [
+              "Umlaufzeit",
+              "26 Tage"
+            ],
+            [
+              "Durchmesser",
+              "1.560 km"
+            ],
+            [
+              "Masse",
+              "0,13 Mondmassen"
+            ],
+            [
+              "Schwerkraft",
+              "0,11 g"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -18 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Babiew",
+          "text": [
+            "Das Thyrrae-System ist die Heimat der Aeromorphen: Ihr Planet Babiew umkreist Thyrrae, und Pheyra ist einer seiner Monde."
+          ],
+          "verweise": [
+            [
+              "Babiew",
+              "inhalte/himmelskoerper/planeten/details/babiew/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Aeromorphen",
+              "inhalte/spezies/Biologische Spezies/Aeromorphen/Hauptseite_übersicht/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Pheyra im Thyrrae-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Babiew"
+            ],
+            [
+              "Große Halbachse",
+              "1.451.336 km"
+            ],
+            [
+              "Exzentrizität",
+              "0,03"
+            ],
+            [
+              "Bahnneigung",
+              "2,4°"
+            ],
+            [
+              "Umlaufzeit",
+              "26 Tage"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Thyrrae · Stern",
+              "Gelber Zwerg (F9 V)"
+            ],
+            [
+              "Thyrrae I · 0,38 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Thyrrae II · 0,72 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Babiew · 1,3 AE",
+              "Gasriese"
+            ],
+            [
+              "Thyrrae V · 9,4 AE",
+              "Eisriese"
+            ],
+            [
+              "Schleiergürtel · 2,6–3,4 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 36–52 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Thyrrae",
+              "inhalte/himmelskoerper/sterne/details/thyrrae/hauptseite/index.html"
+            ],
+            [
+              "Thyrrae I",
+              "inhalte/himmelskoerper/planeten/details/thyrrae-i/hauptseite/index.html"
+            ],
+            [
+              "Thyrrae II",
+              "inhalte/himmelskoerper/planeten/details/thyrrae-ii/hauptseite/index.html"
+            ],
+            [
+              "Babiew",
+              "inhalte/himmelskoerper/planeten/details/babiew/hauptseite/index.html"
+            ],
+            [
+              "Thyrrae V",
+              "inhalte/himmelskoerper/planeten/details/thyrrae-v/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Pheyra.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "780 km"
+            ],
+            [
+              "Masse",
+              "0,13 Mondmassen"
+            ],
+            [
+              "Mittlere Dichte",
+              "4,81 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "1,05 m/s² (0,107 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "1,28 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Pheyra.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Pheyra ist geologisch weitgehend erstarrt; Einschläge haben seine Oberfläche geformt."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Pheyra.",
+      "abschnitte": [
+        {
+          "titel": "Gashülle",
+          "text": [
+            "Pheyra besitzt keine nennenswerte Atmosphäre – dafür ist die Schwerkraft zu gering."
+          ]
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Pheyra.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 1,3 AE Abstand zu Thyrrae liegt die Gleichgewichtstemperatur von Pheyra bei rund -18 °C – gemäßigt."
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Pheyra.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Pheyra entstand zusammen mit dem Thyrrae-System vor rund 3,4 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Pheyra.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Ist der Mond eingefangen oder mit seinem Planeten entstanden?",
+            "Welche Spuren tragen seine ältesten Krater?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Pheyra ist mit allen Bahndaten im Thyrrae-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=babiew-stern&objekt=babiew-pheyra"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Pheyra.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Pheyra ist ein dunkler, verkraterter Mond auf weiter Bahn. Das Konsortium unterhält hier eine Relaisstation für den Verkehr nach Babiew."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Pheyra.",
+      "abschnitte": [
+        {
+          "titel": "Pheyra – Archivbild",
+          "bild": true,
+          "bildtext": "Pheyra"
+        }
+      ]
+    }
+  }
+}

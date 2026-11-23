@@ -1,0 +1,515 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Vasch",
+  "genitiv": "von Vasch",
+  "dossierName": "Vasch-Dossier",
+  "klasse": "Mond",
+  "intro": "Vasch ist ein kleiner, länglicher und unregelmäßiger Mond auf weiter, rückläufiger Bahn – vermutlich ein eingefangener Kleinkörper. Vasch umkreist Jandor in 160 Tage.",
+  "globusDaten": {
+    "planet": "gezeitenverformter-mond-mit-roten-rissen",
+    "klasse": "Gestein",
+    "radius": 30000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=veyruna-stern&objekt=veyruna-vasch",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-30C2F86492"
+    ],
+    [
+      "Typ",
+      "Mond"
+    ],
+    [
+      "Sternsystem",
+      "Orelis-System"
+    ],
+    [
+      "Zentralkörper",
+      "Jandor"
+    ],
+    [
+      "Große Halbachse",
+      "7.157.033 km"
+    ],
+    [
+      "Umlaufzeit",
+      "160 Tage"
+    ],
+    [
+      "Durchmesser",
+      "60 km"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -160 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Orelis-System"
+    ],
+    [
+      "Zentralstern",
+      "Orelis",
+      "inhalte/himmelskoerper/sterne/details/orelis/hauptseite/index.html"
+    ],
+    [
+      "Umläuft",
+      "Jandor",
+      "inhalte/himmelskoerper/planeten/details/jandor/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "7.157.033 km"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Vasch im Orelis-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=veyruna-stern&objekt=veyruna-vasch",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Orelis",
+      "href": "inhalte/himmelskoerper/sterne/details/orelis/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◍",
+      "art": "Mutterplanet",
+      "titel": "Jandor",
+      "href": "inhalte/himmelskoerper/planeten/details/jandor/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Echonoiden",
+      "titel": "Veyruna",
+      "href": "inhalte/himmelskoerper/planeten/details/veyruna/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Echonoiden",
+      "href": "inhalte/spezies/Mentale Spezies/Echonoiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Orelis-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=veyruna-stern&objekt=veyruna-vasch"
+    },
+    {
+      "titel": "Speziesdossier Echonoiden",
+      "href": "inhalte/spezies/Mentale Spezies/Echonoiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#080504",
+      "tiefe": "#110b08",
+      "akzent": "#bd988b",
+      "sand": "#c29b86",
+      "moos": "#9c886b",
+      "ozean": "#7c7570",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#452c22"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Astronomie"
+      ],
+      [
+        "Planet",
+        "Mutterplanet"
+      ],
+      [
+        "Kräfte",
+        "Gezeiten"
+      ],
+      [
+        "Tiefe",
+        "Geologie"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Mutterplanet": {
+      "gruppe": "Wissenschaft",
+      "icon": "◐",
+      "intro": "Mutterplanet von Vasch.",
+      "abschnitte": [
+        {
+          "titel": "Jandor",
+          "text": [
+            "Jandor ist ein großer äußerer Gasplanet mit Wasserstoff-Helium-Atmosphäre, mehreren Wolken- und Wetterschichten, starken Windströmungen und einem bedeutenden Magnetfeld mit hellen Polarlichtern. Feine Ringe und ein Mondsystem aus eisigen und felsigen Körpern umgeben ihn."
+          ],
+          "daten": [
+            [
+              "Typ",
+              "Gasriese"
+            ],
+            [
+              "Durchmesser",
+              "130.000 km"
+            ],
+            [
+              "Abstand des Mondes",
+              "7.157.033 km (110,1 Planetenradien)"
+            ]
+          ],
+          "verweise": [
+            [
+              "Jandor",
+              "inhalte/himmelskoerper/planeten/details/jandor/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Weitere Monde von Jandor",
+          "liste": [
+            "Ithel – Umlauf in 4,2 Tage",
+            "Orrund – Umlauf in 9,1 Tage"
+          ],
+          "verweise": [
+            [
+              "Ithel",
+              "inhalte/himmelskoerper/zwergplaneten/details/ithel/hauptseite/index.html"
+            ],
+            [
+              "Orrund",
+              "inhalte/himmelskoerper/monde/details/orrund/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Gezeiten": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gezeiten von Vasch.",
+      "abschnitte": [
+        {
+          "titel": "Gezeitenkräfte",
+          "text": [
+            "Auf seiner Bahn in 7.157.033 km Abstand wirken starke Gezeitenkräfte von Jandor auf Vasch. Die leicht exzentrische Bahn (e = 0,25) knetet das Innere bei jedem Umlauf."
+          ]
+        }
+      ]
+    },
+    "Gebundene Rotation": {
+      "gruppe": "Wissenschaft",
+      "icon": "↻",
+      "intro": "Gebundene Rotation von Vasch.",
+      "abschnitte": [
+        {
+          "titel": "Rotation",
+          "text": [
+            "Vasch wendet Jandor vermutlich stets dieselbe Seite zu: Ein Tag dauert so lange wie ein Umlauf – 160 Tage."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Vasch auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Vasch",
+          "text": [
+            "Vasch ist ein kleiner, länglicher und unregelmäßiger Mond auf weiter, rückläufiger Bahn – vermutlich ein eingefangener Kleinkörper.",
+            "Vasch umkreist Jandor in 160 Tage."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Mond"
+            ],
+            [
+              "Sternsystem",
+              "Orelis-System"
+            ],
+            [
+              "Zentralkörper",
+              "Jandor"
+            ],
+            [
+              "Große Halbachse",
+              "7.157.033 km"
+            ],
+            [
+              "Umlaufzeit",
+              "160 Tage"
+            ],
+            [
+              "Durchmesser",
+              "60 km"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -160 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Veyruna",
+          "text": [
+            "Das Orelis-System ist die Heimat der Echonoiden: Ihr Planet Veyruna umkreist Orelis."
+          ],
+          "verweise": [
+            [
+              "Veyruna",
+              "inhalte/himmelskoerper/planeten/details/veyruna/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Echonoiden",
+              "inhalte/spezies/Mentale Spezies/Echonoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Vasch im Orelis-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Jandor"
+            ],
+            [
+              "Große Halbachse",
+              "7.157.033 km"
+            ],
+            [
+              "Exzentrizität",
+              "0,25"
+            ],
+            [
+              "Bahnneigung",
+              "150°"
+            ],
+            [
+              "Umlaufzeit",
+              "160 Tage"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Orelis · Stern",
+              "Orangefarbener Zwerg (K1 V)"
+            ],
+            [
+              "Seran · 0,16 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Mirvek · 0,35 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Veyruna · 0,68 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Koras · 1,18 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Jandor · 3,7 AE",
+              "Gasriese"
+            ],
+            [
+              "Veltos · 6,5 AE",
+              "Eisriese"
+            ],
+            [
+              "Innerer Asteroidengürtel · 1,7–2,4 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußerer Kleinkörpergürtel · 15–33 AE",
+              "Kleinkörpergürtel"
+            ]
+          ],
+          "verweise": [
+            [
+              "Orelis",
+              "inhalte/himmelskoerper/sterne/details/orelis/hauptseite/index.html"
+            ],
+            [
+              "Seran",
+              "inhalte/himmelskoerper/planeten/details/seran/hauptseite/index.html"
+            ],
+            [
+              "Mirvek",
+              "inhalte/himmelskoerper/planeten/details/mirvek/hauptseite/index.html"
+            ],
+            [
+              "Veyruna",
+              "inhalte/himmelskoerper/planeten/details/veyruna/hauptseite/index.html"
+            ],
+            [
+              "Koras",
+              "inhalte/himmelskoerper/planeten/details/koras/hauptseite/index.html"
+            ],
+            [
+              "Jandor",
+              "inhalte/himmelskoerper/planeten/details/jandor/hauptseite/index.html"
+            ],
+            [
+              "Veltos",
+              "inhalte/himmelskoerper/planeten/details/veltos/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Vasch.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "30 km"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Vasch.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Vasch ist geologisch weitgehend erstarrt; Einschläge haben seine Oberfläche geformt."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Vasch.",
+      "abschnitte": [
+        {
+          "titel": "Gashülle",
+          "text": [
+            "Vasch besitzt keine nennenswerte Atmosphäre."
+          ]
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Vasch.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 3,7 AE Abstand zu Orelis liegt die Gleichgewichtstemperatur von Vasch bei rund -160 °C – eisig kalt."
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Vasch.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Vasch entstand zusammen mit dem Orelis-System vor rund 6 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Vasch.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Ist der Mond eingefangen oder mit seinem Planeten entstanden?",
+            "Welche Spuren tragen seine ältesten Krater?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Vasch ist mit allen Bahndaten im Orelis-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=veyruna-stern&objekt=veyruna-vasch"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Vasch.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Vasch ist ein kleiner, länglicher und unregelmäßiger Mond auf weiter, rückläufiger Bahn – vermutlich ein eingefangener Kleinkörper."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Vasch.",
+      "abschnitte": [
+        {
+          "titel": "Vasch – Archivbild",
+          "bild": true,
+          "bildtext": "Vasch"
+        }
+      ]
+    }
+  }
+}

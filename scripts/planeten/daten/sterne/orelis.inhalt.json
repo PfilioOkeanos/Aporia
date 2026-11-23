@@ -1,0 +1,670 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Orelis",
+  "genitiv": "von Orelis",
+  "dossierName": "Orelis-Dossier",
+  "klasse": "Orangefarbener Zwerg (K1 V)",
+  "intro": "Orelis ist ein relativ langlebiger, orangegelber Hauptreihenstern der Spektralklasse K1 V mit 0,80 Sonnenmassen und 42 % der Sonnenleuchtkraft. Mit rund 6 Milliarden Jahren bot er Veyruna ausreichend Zeit für eine lange biologische Entwicklung; seine magnetische Aktivität ist gewöhnlich, Flares und koronale Ausbrüche bleiben möglich. Orelis ist der Zentralstern des Orelis-Systems.",
+  "globusDaten": {
+    "planet": "chatgpt-bild-11-nov-2026-15-47-33",
+    "klasse": "Vulkan",
+    "radius": 591345000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=veyruna-stern",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-55235C4447"
+    ],
+    [
+      "Typ",
+      "Orangefarbener Zwerg (K1 V)"
+    ],
+    [
+      "Sternsystem",
+      "Orelis-System"
+    ],
+    [
+      "Masse",
+      "0,8 Sonnenmassen"
+    ],
+    [
+      "Radius",
+      "0,85 Sonnenradien"
+    ],
+    [
+      "Leuchtkraft",
+      "0,42 Sonnenleuchtkräfte"
+    ],
+    [
+      "Oberflächentemperatur",
+      "ca. 5.030 K"
+    ],
+    [
+      "Alter",
+      "ca. 6 Mrd. Jahre"
+    ],
+    [
+      "Planeten",
+      "7 (Seran, Mirvek, Veyruna, Koras, Jandor, Veltos, Ilvaren)"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Orelis-System"
+    ],
+    [
+      "Entfernung zur Sonne",
+      "38 Lichtjahre"
+    ],
+    [
+      "Nächste Nachbarsysteme",
+      "Ixar-System (24,2 Lj), Saelon-System (25,7 Lj)"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Orelis im Orelis-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=veyruna-stern",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Planet",
+      "titel": "Seran",
+      "href": "inhalte/himmelskoerper/planeten/details/seran/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Planet",
+      "titel": "Mirvek",
+      "href": "inhalte/himmelskoerper/planeten/details/mirvek/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Planet",
+      "titel": "Veyruna",
+      "href": "inhalte/himmelskoerper/planeten/details/veyruna/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Planet",
+      "titel": "Koras",
+      "href": "inhalte/himmelskoerper/planeten/details/koras/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Planet",
+      "titel": "Jandor",
+      "href": "inhalte/himmelskoerper/planeten/details/jandor/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Planet",
+      "titel": "Veltos",
+      "href": "inhalte/himmelskoerper/planeten/details/veltos/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Planet",
+      "titel": "Ilvaren",
+      "href": "inhalte/himmelskoerper/kometen/details/ilvaren/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Echonoiden",
+      "titel": "Veyruna",
+      "href": "inhalte/himmelskoerper/planeten/details/veyruna/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Echonoiden",
+      "href": "inhalte/spezies/Mentale Spezies/Echonoiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Orelis-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=veyruna-stern"
+    },
+    {
+      "titel": "Speziesdossier Echonoiden",
+      "href": "inhalte/spezies/Mentale Spezies/Echonoiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#0d0906",
+      "tiefe": "#1c140c",
+      "akzent": "#ffd1a2",
+      "sand": "#ffcb95",
+      "moos": "#d9c97f",
+      "ozean": "#adb08d",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#735332"
+    },
+    "schichten": [
+      [
+        "Strahlung",
+        "Leuchtkraft"
+      ],
+      [
+        "Hülle",
+        "Spektralklasse"
+      ],
+      [
+        "Kern",
+        "Fusion"
+      ],
+      [
+        "Zeit",
+        "Lebenszyklus"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Spektralklasse": {
+      "gruppe": "Wissenschaft",
+      "icon": "✦",
+      "intro": "Spektralklasse von Orelis.",
+      "abschnitte": [
+        {
+          "titel": "Einordnung",
+          "daten": [
+            [
+              "Typ",
+              "Orangefarbener Zwerg (K1 V)"
+            ],
+            [
+              "Oberflächentemperatur",
+              "ca. 5.030 K"
+            ],
+            [
+              "Farbe",
+              "orange"
+            ]
+          ]
+        }
+      ]
+    },
+    "Fusion": {
+      "gruppe": "Wissenschaft",
+      "icon": "☀",
+      "intro": "Fusion von Orelis.",
+      "abschnitte": [
+        {
+          "titel": "Energiequelle",
+          "text": [
+            "Im Kern von Orelis verschmilzt Wasserstoff zu Helium."
+          ]
+        }
+      ]
+    },
+    "Leuchtkraft": {
+      "gruppe": "Wissenschaft",
+      "icon": "☀",
+      "intro": "Leuchtkraft von Orelis.",
+      "abschnitte": [
+        {
+          "titel": "Strahlung",
+          "daten": [
+            [
+              "Leuchtkraft",
+              "0,42 Sonnenleuchtkräfte"
+            ],
+            [
+              "Habitable Zone",
+              "0,62–1,08 AE"
+            ]
+          ]
+        }
+      ]
+    },
+    "Lebenszyklus": {
+      "gruppe": "Wissenschaft",
+      "icon": "⧗",
+      "intro": "Lebenszyklus von Orelis.",
+      "abschnitte": [
+        {
+          "titel": "Lebensdauer",
+          "text": [
+            "Ein Stern mit 0,8 Sonnenmassen bleibt rund 17 Milliarden Jahre auf der Hauptreihe; Orelis ist etwa 6 Milliarden Jahre alt."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Orelis auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Orelis",
+          "text": [
+            "Orelis ist ein relativ langlebiger, orangegelber Hauptreihenstern der Spektralklasse K1 V mit 0,80 Sonnenmassen und 42 % der Sonnenleuchtkraft. Mit rund 6 Milliarden Jahren bot er Veyruna ausreichend Zeit für eine lange biologische Entwicklung; seine magnetische Aktivität ist gewöhnlich, Flares und koronale Ausbrüche bleiben möglich.",
+            "Orelis ist der Zentralstern des Orelis-Systems."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Orangefarbener Zwerg (K1 V)"
+            ],
+            [
+              "Sternsystem",
+              "Orelis-System"
+            ],
+            [
+              "Masse",
+              "0,8 Sonnenmassen"
+            ],
+            [
+              "Radius",
+              "0,85 Sonnenradien"
+            ],
+            [
+              "Leuchtkraft",
+              "0,42 Sonnenleuchtkräfte"
+            ],
+            [
+              "Oberflächentemperatur",
+              "ca. 5.030 K"
+            ],
+            [
+              "Alter",
+              "ca. 6 Mrd. Jahre"
+            ],
+            [
+              "Planeten",
+              "7 (Seran, Mirvek, Veyruna, Koras, Jandor, Veltos, Ilvaren)"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Veyruna",
+          "text": [
+            "Das Orelis-System ist die Heimat der Echonoiden: Ihr Planet Veyruna umkreist Orelis."
+          ],
+          "verweise": [
+            [
+              "Veyruna",
+              "inhalte/himmelskoerper/planeten/details/veyruna/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Echonoiden",
+              "inhalte/spezies/Mentale Spezies/Echonoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Orelis im Raum.",
+      "abschnitte": [
+        {
+          "titel": "Lage im Raum",
+          "daten": [
+            [
+              "Entfernung zur Sonne",
+              "38 Lichtjahre"
+            ],
+            [
+              "Nächste Nachbarsysteme",
+              "Ixar-System (24,2 Lj), Saelon-System (25,7 Lj), Thalor-System (27,5 Lj)"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Orelis · Stern",
+              "Orangefarbener Zwerg (K1 V)"
+            ],
+            [
+              "Seran · 0,16 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Mirvek · 0,35 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Veyruna · 0,68 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Koras · 1,18 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Jandor · 3,7 AE",
+              "Gasriese"
+            ],
+            [
+              "Veltos · 6,5 AE",
+              "Eisriese"
+            ],
+            [
+              "Innerer Asteroidengürtel · 1,7–2,4 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußerer Kleinkörpergürtel · 15–33 AE",
+              "Kleinkörpergürtel"
+            ]
+          ],
+          "verweise": [
+            [
+              "Seran",
+              "inhalte/himmelskoerper/planeten/details/seran/hauptseite/index.html"
+            ],
+            [
+              "Mirvek",
+              "inhalte/himmelskoerper/planeten/details/mirvek/hauptseite/index.html"
+            ],
+            [
+              "Veyruna",
+              "inhalte/himmelskoerper/planeten/details/veyruna/hauptseite/index.html"
+            ],
+            [
+              "Koras",
+              "inhalte/himmelskoerper/planeten/details/koras/hauptseite/index.html"
+            ],
+            [
+              "Jandor",
+              "inhalte/himmelskoerper/planeten/details/jandor/hauptseite/index.html"
+            ],
+            [
+              "Veltos",
+              "inhalte/himmelskoerper/planeten/details/veltos/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Orelis.",
+      "abschnitte": [
+        {
+          "titel": "Physik",
+          "daten": [
+            [
+              "Masse",
+              "0,8 Sonnenmassen"
+            ],
+            [
+              "Radius",
+              "0,85 Sonnenradien"
+            ],
+            [
+              "Leuchtkraft",
+              "0,42 Sonnenleuchtkräfte"
+            ],
+            [
+              "Oberflächentemperatur",
+              "ca. 5.030 K"
+            ],
+            [
+              "Alter",
+              "ca. 6 Mrd. Jahre"
+            ],
+            [
+              "Planeten",
+              "7 (Seran, Mirvek, Veyruna, Koras, Jandor, Veltos, Ilvaren)"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Orelis.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Orelis entstand zusammen mit dem Orelis-System vor rund 6 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Umgebung": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Umgebung von Orelis.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Orelis · Stern",
+              "Orangefarbener Zwerg (K1 V)"
+            ],
+            [
+              "Seran · 0,16 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Mirvek · 0,35 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Veyruna · 0,68 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Koras · 1,18 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Jandor · 3,7 AE",
+              "Gasriese"
+            ],
+            [
+              "Veltos · 6,5 AE",
+              "Eisriese"
+            ],
+            [
+              "Innerer Asteroidengürtel · 1,7–2,4 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußerer Kleinkörpergürtel · 15–33 AE",
+              "Kleinkörpergürtel"
+            ]
+          ],
+          "verweise": [
+            [
+              "Seran",
+              "inhalte/himmelskoerper/planeten/details/seran/hauptseite/index.html"
+            ],
+            [
+              "Mirvek",
+              "inhalte/himmelskoerper/planeten/details/mirvek/hauptseite/index.html"
+            ],
+            [
+              "Veyruna",
+              "inhalte/himmelskoerper/planeten/details/veyruna/hauptseite/index.html"
+            ],
+            [
+              "Koras",
+              "inhalte/himmelskoerper/planeten/details/koras/hauptseite/index.html"
+            ],
+            [
+              "Jandor",
+              "inhalte/himmelskoerper/planeten/details/jandor/hauptseite/index.html"
+            ],
+            [
+              "Veltos",
+              "inhalte/himmelskoerper/planeten/details/veltos/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Nachbarsysteme",
+          "liste": [
+            "Ixar-System – 24,2 Lichtjahre",
+            "Saelon-System – 25,7 Lichtjahre",
+            "Thalor-System – 27,5 Lichtjahre",
+            "Ferrum-System – 28,7 Lichtjahre",
+            "Thyrrae-System – 32,8 Lichtjahre"
+          ]
+        },
+        {
+          "titel": "Sternphysikalische Ereignisse",
+          "text": [
+            "Orelis besitzt gewöhnliche stellare Aktivität: Sternflecken, Flares und geladene Teilchenströme. Die langfristige Entwicklung des Sterns verändert seine Leuchtkraft über astronomische Zeiträume; extreme kurzfristige Ereignisse sind nicht erforderlich."
+          ]
+        },
+        {
+          "titel": "Entwicklung des Systems",
+          "text": [
+            "Orelis und seine Planeten entstanden aus einer rotierenden protoplanetaren Gas- und Staubscheibe. Die inneren Planeten bildeten sich überwiegend aus felsigen Materialien, weiter außen wurden größere Mengen flüchtiger Stoffe und Gase eingebunden. Einschläge, gravitative Migration und geologische Differenzierung prägten die weitere Entwicklung."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Orelis.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Wie stark schwankt die magnetische Aktivität?",
+            "Wie hat sich die Leuchtkraft seit der Entstehung verändert?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Orelis ist mit allen Bahndaten im Orelis-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=veyruna-stern"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Orelis.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "7 eigene Planeten: Seran, Mirvek, Veyruna, Koras, Jandor, Veltos, Ilvaren"
+          ]
+        },
+        {
+          "titel": "Planeten",
+          "karten": [
+            {
+              "titel": "Seran",
+              "text": "10.600 km Durchmesser, Umlauf in 26,1 Tage. Seran ist der innerste Planet des Orelis-Systems: eine überwiegend felsige, stark bestrahlte Welt mit sehr hohen Oberflächentemperaturen, ausgedehnten Kraterlandschaften, thermisch veränderten Gesteinen und möglicherweise alten vulkanischen Regionen."
+            },
+            {
+              "titel": "Mirvek",
+              "text": "11.800 km Durchmesser, Umlauf in 84,6 Tage. Mirvek ist eine heiße, vergleichsweise trockene Gesteinswelt mit Gebirgen, Sedimentregionen und ausgedehnten trockenen Becken. Spuren früherer geologischer und möglicherweise hydrologischer Entwicklungen sind denkbar."
+            },
+            {
+              "titel": "Veyruna",
+              "text": "13.762 km Durchmesser, Umlauf in 229 Tage. Veyruna ist die Heimatwelt der Echonoiden: ein felsiger, wasserreicher Planet mit dichter Atmosphäre, 62 % Wasserbedeckung, gezeitengeprägten Küsten, Inselbögen und Höhlenlandschaften, in denen sich eine Wahrnehmung aus mechanischen Schwingungen entwickelte."
+            },
+            {
+              "titel": "Koras",
+              "text": "10.800 km Durchmesser, Umlauf in 523,5 Tage. Koras ist eine kalte felsige Welt mit bedeutenden Eisvorkommen – gefrorene Ebenen, felsige Hochländer, Einschlagsbecken und alte vulkanische Formationen. Unterirdische Wasser- oder Salzreservoire sind eine offene Forschungsfrage."
+            },
+            {
+              "titel": "Jandor",
+              "text": "130.000 km Durchmesser, Umlauf in 8 Jahre. Jandor ist ein großer äußerer Gasplanet mit Wasserstoff-Helium-Atmosphäre, mehreren Wolken- und Wetterschichten, starken Windströmungen und einem bedeutenden Magnetfeld mit hellen Polarlichtern. Feine Ringe und ein Mondsystem aus eisigen und felsigen Körpern umgeben ihn."
+            },
+            {
+              "titel": "Veltos",
+              "text": "49.000 km Durchmesser, Umlauf in 18,5 Jahre. Veltos ist ein äußerer Eisriese mit tiefer Atmosphäre aus leichten Gasen, komplexen Wettersystemen, sehr tiefen Temperaturen und eigenem Magnetfeld. Kleine Monde und diffuse Ringe begleiten ihn."
+            },
+            {
+              "titel": "Ilvaren",
+              "text": "10 km Durchmesser, Umlauf in 46,5 Jahre. Ilvaren ist ein periodischer Komet aus dem äußeren Kleinkörpergürtel. Alle rund 46 Jahre nähert er sich Orelis bis auf etwa 0,72 AE und ist dann lange am Nachthimmel Veyrunas sichtbar; sein Staubstrom erzeugt wiederkehrende Meteorschauer."
+            }
+          ],
+          "verweise": [
+            [
+              "Seran",
+              "inhalte/himmelskoerper/planeten/details/seran/hauptseite/index.html"
+            ],
+            [
+              "Mirvek",
+              "inhalte/himmelskoerper/planeten/details/mirvek/hauptseite/index.html"
+            ],
+            [
+              "Veyruna",
+              "inhalte/himmelskoerper/planeten/details/veyruna/hauptseite/index.html"
+            ],
+            [
+              "Koras",
+              "inhalte/himmelskoerper/planeten/details/koras/hauptseite/index.html"
+            ],
+            [
+              "Jandor",
+              "inhalte/himmelskoerper/planeten/details/jandor/hauptseite/index.html"
+            ],
+            [
+              "Veltos",
+              "inhalte/himmelskoerper/planeten/details/veltos/hauptseite/index.html"
+            ],
+            [
+              "Ilvaren",
+              "inhalte/himmelskoerper/kometen/details/ilvaren/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Orelis.",
+      "abschnitte": [
+        {
+          "titel": "Orelis – Archivbild",
+          "bild": true,
+          "bildtext": "Orelis"
+        }
+      ]
+    }
+  }
+}

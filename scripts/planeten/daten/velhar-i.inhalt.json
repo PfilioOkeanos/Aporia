@@ -1,0 +1,618 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Velhar I",
+  "genitiv": "von Velhar I",
+  "dossierName": "Velhar I-Dossier",
+  "klasse": "Gesteinsplanet",
+  "intro": "Velhar I ist eine kleine, heiße und vernarbte Gesteinswelt. Velhar I umkreist Velhar in 0,42 AE Abstand und braucht für einen Umlauf 102 Tage.",
+  "globusDaten": {
+    "planet": "narbenplanet-mit-freigelegtem-metallkern",
+    "klasse": "Gestein",
+    "radius": 4200000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=nhalora-stern&objekt=nhalora-velhar-i",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-4DC0B46A68"
+    ],
+    [
+      "Typ",
+      "Gesteinsplanet"
+    ],
+    [
+      "Sternsystem",
+      "Velhar-System"
+    ],
+    [
+      "Zentralkörper",
+      "Velhar"
+    ],
+    [
+      "Große Halbachse",
+      "0,42 AE"
+    ],
+    [
+      "Umlaufzeit",
+      "102 Tage"
+    ],
+    [
+      "Durchmesser",
+      "8.400 km"
+    ],
+    [
+      "Masse",
+      "0,3 Erdmassen"
+    ],
+    [
+      "Schwerkraft",
+      "0,69 g"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. 121 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Velhar-System"
+    ],
+    [
+      "Zentralstern",
+      "Velhar",
+      "inhalte/himmelskoerper/sterne/details/velhar/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "0,42 AE"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Velhar I im Velhar-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=nhalora-stern&objekt=nhalora-velhar-i",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Velhar",
+      "href": "inhalte/himmelskoerper/sterne/details/velhar/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Symbionten",
+      "titel": "Nhalora",
+      "href": "inhalte/himmelskoerper/planeten/details/nhalora/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Symbionten",
+      "href": "inhalte/spezies/Biologische Spezies/Symbionten/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Velhar-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=nhalora-stern&objekt=nhalora-velhar-i"
+    },
+    {
+      "titel": "Speziesdossier Symbionten",
+      "href": "inhalte/spezies/Biologische Spezies/Symbionten/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#080605",
+      "tiefe": "#110d0b",
+      "akzent": "#bda99c",
+      "sand": "#c2aa91",
+      "moos": "#9c9c79",
+      "ozean": "#7c8685",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#45372e"
+    }
+  },
+  "kapitel": {
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Velhar I auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Velhar I",
+          "text": [
+            "Velhar I ist eine kleine, heiße und vernarbte Gesteinswelt.",
+            "Velhar I umkreist Velhar in 0,42 AE Abstand und braucht für einen Umlauf 102 Tage."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Gesteinsplanet"
+            ],
+            [
+              "Sternsystem",
+              "Velhar-System"
+            ],
+            [
+              "Zentralkörper",
+              "Velhar"
+            ],
+            [
+              "Große Halbachse",
+              "0,42 AE"
+            ],
+            [
+              "Umlaufzeit",
+              "102 Tage"
+            ],
+            [
+              "Durchmesser",
+              "8.400 km"
+            ],
+            [
+              "Masse",
+              "0,3 Erdmassen"
+            ],
+            [
+              "Schwerkraft",
+              "0,69 g"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. 121 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Nhalora",
+          "text": [
+            "Das Velhar-System ist die Heimat der Symbionten: Ihr Planet Nhalora umkreist Velhar."
+          ],
+          "verweise": [
+            [
+              "Nhalora",
+              "inhalte/himmelskoerper/planeten/details/nhalora/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Symbionten",
+              "inhalte/spezies/Biologische Spezies/Symbionten/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Velhar I im Velhar-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Velhar"
+            ],
+            [
+              "Große Halbachse",
+              "0,42 AE (62,8 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,08"
+            ],
+            [
+              "Bahnneigung",
+              "3,4°"
+            ],
+            [
+              "Umlaufzeit",
+              "102 Tage"
+            ],
+            [
+              "Einstrahlung",
+              "4,535-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Am Himmel von Velhar I",
+          "text": [
+            "Velhar erscheint von hier aus etwa 1,19° groß (die Sonne von der Erde: 0,53°)."
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Velhar · Stern",
+              "Gelber Zwerg (G5 V)"
+            ],
+            [
+              "Velhar I · 0,42 AE · dieses Dossier",
+              "Gesteinsplanet"
+            ],
+            [
+              "Nhalora · 0,95 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Velhar III · 3,6 AE",
+              "Gasriese"
+            ],
+            [
+              "Velhar IV · 9,4 AE",
+              "Eisriese"
+            ],
+            [
+              "Sporengürtel · 1,7–2,5 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 36–52 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Velhar",
+              "inhalte/himmelskoerper/sterne/details/velhar/hauptseite/index.html"
+            ],
+            [
+              "Nhalora",
+              "inhalte/himmelskoerper/planeten/details/nhalora/hauptseite/index.html"
+            ],
+            [
+              "Velhar III",
+              "inhalte/himmelskoerper/planeten/details/velhar-iii/hauptseite/index.html"
+            ],
+            [
+              "Velhar IV",
+              "inhalte/himmelskoerper/planeten/details/velhar-iv/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Velhar I.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "4.200 km"
+            ],
+            [
+              "Masse",
+              "0,3 Erdmassen"
+            ],
+            [
+              "Mittlere Dichte",
+              "5,77 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "6,77 m/s² (0,69 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "7,55 km/s"
+            ]
+          ],
+          "vergleich": {
+            "mit": "Erde",
+            "werte": [
+              [
+                "Durchmesser",
+                8400,
+                12742,
+                "km"
+              ],
+              [
+                "Masse",
+                0.3,
+                1,
+                "Erdmassen"
+              ],
+              [
+                "Schwerkraft",
+                0.69,
+                1,
+                "g"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "Planetare Struktur": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Planetare Struktur von Velhar I.",
+      "abschnitte": [
+        {
+          "titel": "Schalenbau",
+          "schichten": [
+            [
+              "Kruste",
+              "Silikatgestein"
+            ],
+            [
+              "Mantel",
+              "Dichteres Silikatgestein"
+            ],
+            [
+              "Kern",
+              "Eisen und Nickel"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geografie": {
+      "gruppe": "Natur",
+      "icon": "△",
+      "intro": "Geografie von Velhar I.",
+      "abschnitte": [
+        {
+          "titel": "Oberfläche",
+          "text": [
+            "Die Oberfläche von Velhar I ist sehr heiß."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Velhar I.",
+      "abschnitte": [
+        {
+          "titel": "Gashülle",
+          "text": [
+            "Eine dichte, kohlendioxidreiche Hülle staut die Wärme von Velhar I."
+          ],
+          "balken": {
+            "werte": [
+              [
+                "Kohlendioxid",
+                95
+              ],
+              [
+                "Stickstoff",
+                3.5
+              ],
+              [
+                "Argon und Spurengase",
+                1.5
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Velhar I.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 0,42 AE Abstand zu Velhar liegt die Gleichgewichtstemperatur von Velhar I bei rund 121 °C – sehr heiß. Die dichte Gashülle heizt die Oberfläche zusätzlich auf."
+          ]
+        }
+      ]
+    },
+    "Gewässer": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gewässer von Velhar I.",
+      "abschnitte": [
+        {
+          "titel": "Wasser",
+          "text": [
+            "Für flüssiges Wasser ist es viel zu heiß."
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Velhar I.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Velhar I ist geologisch weitgehend erstarrt; Einschläge haben seine Oberfläche geformt."
+          ]
+        }
+      ]
+    },
+    "Biosphäre": {
+      "gruppe": "Natur",
+      "icon": "❧",
+      "intro": "Biosphäre von Velhar I.",
+      "abschnitte": [
+        {
+          "titel": "Leben",
+          "text": [
+            "Auf Velhar I ist kein Leben verzeichnet."
+          ]
+        }
+      ]
+    },
+    "Spezies": {
+      "gruppe": "Zivilisation",
+      "icon": "✿",
+      "intro": "Spezies von Velhar I.",
+      "abschnitte": [
+        {
+          "titel": "Bewohner",
+          "text": [
+            "Velhar I ist keine Heimat einer intelligenten Spezies."
+          ]
+        },
+        {
+          "titel": "Im System von Nhalora",
+          "text": [
+            "Das Velhar-System ist die Heimat der Symbionten: Ihr Planet Nhalora umkreist Velhar."
+          ],
+          "verweise": [
+            [
+              "Nhalora",
+              "inhalte/himmelskoerper/planeten/details/nhalora/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Symbionten",
+              "inhalte/spezies/Biologische Spezies/Symbionten/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Zivilisation": {
+      "gruppe": "Zivilisation",
+      "icon": "▥",
+      "intro": "Zivilisation von Velhar I.",
+      "abschnitte": [
+        {
+          "titel": "Siedlungen",
+          "text": [
+            "Für Velhar I sind keine dauerhaften Siedlungen verzeichnet."
+          ]
+        },
+        {
+          "titel": "Im System von Nhalora",
+          "text": [
+            "Das Velhar-System ist die Heimat der Symbionten: Ihr Planet Nhalora umkreist Velhar."
+          ],
+          "verweise": [
+            [
+              "Nhalora",
+              "inhalte/himmelskoerper/planeten/details/nhalora/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Symbionten",
+              "inhalte/spezies/Biologische Spezies/Symbionten/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Velhar I.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Velhar I entstand zusammen mit dem Velhar-System vor rund 4,9 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Fraktionen": {
+      "gruppe": "Zivilisation",
+      "icon": "◇",
+      "intro": "Fraktionen von Velhar I.",
+      "abschnitte": [
+        {
+          "titel": "Ansprüche",
+          "text": [
+            "Für Velhar I sind keine Fraktionsansprüche verzeichnet."
+          ]
+        }
+      ]
+    },
+    "Rohstoffe": {
+      "gruppe": "Weitere",
+      "icon": "⬡",
+      "intro": "Rohstoffe von Velhar I.",
+      "abschnitte": [
+        {
+          "titel": "Rohstoffe",
+          "liste": [
+            "Silikatgestein",
+            "Metallerze"
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Velhar I.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Wie ist der innere Aufbau beschaffen?",
+            "Gab es früher eine dichtere Atmosphäre?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Velhar I ist mit allen Bahndaten im Velhar-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=nhalora-stern&objekt=nhalora-velhar-i"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Velhar I.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Innerster Planet des Velhar-Systems"
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Velhar I.",
+      "abschnitte": [
+        {
+          "titel": "Velhar I – Archivbild",
+          "bild": true,
+          "bildtext": "Velhar I"
+        }
+      ]
+    }
+  }
+}

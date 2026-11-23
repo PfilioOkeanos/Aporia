@@ -1,0 +1,549 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Esvar",
+  "genitiv": "von Esvar",
+  "dossierName": "Esvar-Dossier",
+  "klasse": "Orangefarbener Hauptreihenstern (K2 V)",
+  "intro": "Esvar beleuchtet Neraveth mit rund 93 Prozent der Strahlungsleistung, die auf die Erde trifft. Kheravische Beobachter vergleichen die saisonale Rückkehr der Regenfronten mit dem örtlichen Sternjahr. Esvar ist der Zentralstern des Esvar-Systems.",
+  "globusDaten": {
+    "planet": "uv-ceti-stern-mit-blauem-flare",
+    "klasse": "Vulkan",
+    "radius": 542646000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=esvar-stern",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-DA07A24C1B"
+    ],
+    [
+      "Typ",
+      "Orangefarbener Hauptreihenstern (K2 V)"
+    ],
+    [
+      "Sternsystem",
+      "Esvar-System"
+    ],
+    [
+      "Masse",
+      "0,82 Sonnenmassen"
+    ],
+    [
+      "Radius",
+      "0,78 Sonnenradien"
+    ],
+    [
+      "Leuchtkraft",
+      "0,37 Sonnenleuchtkräfte"
+    ],
+    [
+      "Oberflächentemperatur",
+      "ca. 5.100 K"
+    ],
+    [
+      "Alter",
+      "ca. 5,4 Mrd. Jahre"
+    ],
+    [
+      "Planeten",
+      "4 (Vask, Neraveth, Sovar, Velun)"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Esvar-System"
+    ],
+    [
+      "Entfernung zur Sonne",
+      "47 Lichtjahre"
+    ],
+    [
+      "Nächste Nachbarsysteme",
+      "Ysmeroth-System (33,1 Lj), Orvaya-System (38,1 Lj)"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Esvar im Esvar-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=esvar-stern",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Planet",
+      "titel": "Vask",
+      "href": "inhalte/himmelskoerper/planeten/details/vask/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Planet",
+      "titel": "Neraveth",
+      "href": "inhalte/himmelskoerper/planeten/details/neraveth/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Planet",
+      "titel": "Sovar",
+      "href": "inhalte/himmelskoerper/asteroiden/details/sovar/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Planet",
+      "titel": "Velun",
+      "href": "inhalte/himmelskoerper/planeten/details/velun/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Parasitoiden",
+      "titel": "Neraveth",
+      "href": "inhalte/himmelskoerper/planeten/details/neraveth/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Parasitoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Parasitoiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Esvar-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=esvar-stern"
+    },
+    {
+      "titel": "Speziesdossier Parasitoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Parasitoiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#0d0a06",
+      "tiefe": "#1c150d",
+      "akzent": "#ffd6a9",
+      "sand": "#ffd099",
+      "moos": "#d9cf85",
+      "ozean": "#adb595",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#735637"
+    },
+    "schichten": [
+      [
+        "Strahlung",
+        "Leuchtkraft"
+      ],
+      [
+        "Hülle",
+        "Spektralklasse"
+      ],
+      [
+        "Kern",
+        "Fusion"
+      ],
+      [
+        "Zeit",
+        "Lebenszyklus"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Spektralklasse": {
+      "gruppe": "Wissenschaft",
+      "icon": "✦",
+      "intro": "Spektralklasse von Esvar.",
+      "abschnitte": [
+        {
+          "titel": "Einordnung",
+          "daten": [
+            [
+              "Typ",
+              "Orangefarbener Hauptreihenstern (K2 V)"
+            ],
+            [
+              "Oberflächentemperatur",
+              "ca. 5.100 K"
+            ],
+            [
+              "Farbe",
+              "orange"
+            ]
+          ]
+        }
+      ]
+    },
+    "Fusion": {
+      "gruppe": "Wissenschaft",
+      "icon": "☀",
+      "intro": "Fusion von Esvar.",
+      "abschnitte": [
+        {
+          "titel": "Energiequelle",
+          "text": [
+            "Im Kern von Esvar verschmilzt Wasserstoff zu Helium."
+          ]
+        }
+      ]
+    },
+    "Leuchtkraft": {
+      "gruppe": "Wissenschaft",
+      "icon": "☀",
+      "intro": "Leuchtkraft von Esvar.",
+      "abschnitte": [
+        {
+          "titel": "Strahlung",
+          "daten": [
+            [
+              "Leuchtkraft",
+              "0,37 Sonnenleuchtkräfte"
+            ],
+            [
+              "Habitable Zone",
+              "0,58–1,01 AE"
+            ]
+          ]
+        }
+      ]
+    },
+    "Lebenszyklus": {
+      "gruppe": "Wissenschaft",
+      "icon": "⧗",
+      "intro": "Lebenszyklus von Esvar.",
+      "abschnitte": [
+        {
+          "titel": "Lebensdauer",
+          "text": [
+            "Ein Stern mit 0,82 Sonnenmassen bleibt rund 16 Milliarden Jahre auf der Hauptreihe; Esvar ist etwa 5,4 Milliarden Jahre alt."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Esvar auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Esvar",
+          "text": [
+            "Esvar beleuchtet Neraveth mit rund 93 Prozent der Strahlungsleistung, die auf die Erde trifft. Kheravische Beobachter vergleichen die saisonale Rückkehr der Regenfronten mit dem örtlichen Sternjahr.",
+            "Esvar ist der Zentralstern des Esvar-Systems."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Orangefarbener Hauptreihenstern (K2 V)"
+            ],
+            [
+              "Sternsystem",
+              "Esvar-System"
+            ],
+            [
+              "Masse",
+              "0,82 Sonnenmassen"
+            ],
+            [
+              "Radius",
+              "0,78 Sonnenradien"
+            ],
+            [
+              "Leuchtkraft",
+              "0,37 Sonnenleuchtkräfte"
+            ],
+            [
+              "Oberflächentemperatur",
+              "ca. 5.100 K"
+            ],
+            [
+              "Alter",
+              "ca. 5,4 Mrd. Jahre"
+            ],
+            [
+              "Planeten",
+              "4 (Vask, Neraveth, Sovar, Velun)"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Neraveth",
+          "text": [
+            "Das Esvar-System ist die Heimat der Parasitoiden: Ihr Planet Neraveth umkreist Esvar."
+          ],
+          "verweise": [
+            [
+              "Neraveth",
+              "inhalte/himmelskoerper/planeten/details/neraveth/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Parasitoiden",
+              "inhalte/spezies/Biologische Spezies/Parasitoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Esvar im Raum.",
+      "abschnitte": [
+        {
+          "titel": "Lage im Raum",
+          "daten": [
+            [
+              "Entfernung zur Sonne",
+              "47 Lichtjahre"
+            ],
+            [
+              "Nächste Nachbarsysteme",
+              "Ysmeroth-System (33,1 Lj), Orvaya-System (38,1 Lj), Narev-System (39,5 Lj)"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Esvar · Stern",
+              "Orangefarbener Hauptreihenstern (K2 V)"
+            ],
+            [
+              "Vask · 0,28 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Neraveth · 0,63 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Velun · 3,7 AE",
+              "Gasriese"
+            ]
+          ],
+          "verweise": [
+            [
+              "Vask",
+              "inhalte/himmelskoerper/planeten/details/vask/hauptseite/index.html"
+            ],
+            [
+              "Neraveth",
+              "inhalte/himmelskoerper/planeten/details/neraveth/hauptseite/index.html"
+            ],
+            [
+              "Velun",
+              "inhalte/himmelskoerper/planeten/details/velun/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Esvar.",
+      "abschnitte": [
+        {
+          "titel": "Physik",
+          "daten": [
+            [
+              "Masse",
+              "0,82 Sonnenmassen"
+            ],
+            [
+              "Radius",
+              "0,78 Sonnenradien"
+            ],
+            [
+              "Leuchtkraft",
+              "0,37 Sonnenleuchtkräfte"
+            ],
+            [
+              "Oberflächentemperatur",
+              "ca. 5.100 K"
+            ],
+            [
+              "Alter",
+              "ca. 5,4 Mrd. Jahre"
+            ],
+            [
+              "Planeten",
+              "4 (Vask, Neraveth, Sovar, Velun)"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Esvar.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Esvar entstand zusammen mit dem Esvar-System vor rund 5,4 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Umgebung": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Umgebung von Esvar.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Esvar · Stern",
+              "Orangefarbener Hauptreihenstern (K2 V)"
+            ],
+            [
+              "Vask · 0,28 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Neraveth · 0,63 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Velun · 3,7 AE",
+              "Gasriese"
+            ]
+          ],
+          "verweise": [
+            [
+              "Vask",
+              "inhalte/himmelskoerper/planeten/details/vask/hauptseite/index.html"
+            ],
+            [
+              "Neraveth",
+              "inhalte/himmelskoerper/planeten/details/neraveth/hauptseite/index.html"
+            ],
+            [
+              "Velun",
+              "inhalte/himmelskoerper/planeten/details/velun/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Nachbarsysteme",
+          "liste": [
+            "Ysmeroth-System – 33,1 Lichtjahre",
+            "Orvaya-System – 38,1 Lichtjahre",
+            "Narev-System – 39,5 Lichtjahre",
+            "TRAPPIST-1-System – 40,9 Lichtjahre",
+            "Seyvar-System – 41,2 Lichtjahre"
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Esvar.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Wie stark schwankt die magnetische Aktivität?",
+            "Wie hat sich die Leuchtkraft seit der Entstehung verändert?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Esvar ist mit allen Bahndaten im Esvar-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=esvar-stern"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Esvar.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "4 eigene Planeten: Vask, Neraveth, Sovar, Velun"
+          ]
+        },
+        {
+          "titel": "Planeten",
+          "karten": [
+            {
+              "titel": "Vask",
+              "text": "9.660 km Durchmesser, Umlauf in 59,8 Tage. Helle Salzpfannen zeichnen einstige Abflussbecken nach. Im Schatten der Kraterwände sind ältere Sedimentschichten erhalten, während Staub die offenen Hochflächen abschleift."
+            },
+            {
+              "titel": "Neraveth",
+              "text": "12.870 km Durchmesser, Umlauf in 201,7 Tage. Die Heimat der Kheravi besitzt ausgedehnte Schelfmeere und saisonal überflutete Ebenen. Regenfronten bestimmen, wann die großen Raukhen-Herden ihre Weidegründe wechseln."
+            },
+            {
+              "titel": "Sovar",
+              "text": "72 km Durchmesser, Umlauf in 726,2 Tage. An Sovars kantigen Bruchflächen tritt Pyroxen zutage. Seine geneigten Staubterrassen sammeln Material, das nach kleinen Einschlägen wieder auf die Oberfläche fällt."
+            },
+            {
+              "titel": "Velun",
+              "text": "87.400 km Durchmesser, Umlauf in 7,9 Jahre. Silberhelle Wolkenbänder rahmen die indigofarbenen Breiten ein. Ihre Verschiebung zwischen zwei Beobachtungen verrät die gegenläufigen Winde der oberen Atmosphäre."
+            }
+          ],
+          "verweise": [
+            [
+              "Vask",
+              "inhalte/himmelskoerper/planeten/details/vask/hauptseite/index.html"
+            ],
+            [
+              "Neraveth",
+              "inhalte/himmelskoerper/planeten/details/neraveth/hauptseite/index.html"
+            ],
+            [
+              "Sovar",
+              "inhalte/himmelskoerper/asteroiden/details/sovar/hauptseite/index.html"
+            ],
+            [
+              "Velun",
+              "inhalte/himmelskoerper/planeten/details/velun/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Esvar.",
+      "abschnitte": [
+        {
+          "titel": "Esvar – Archivbild",
+          "bild": true,
+          "bildtext": "Esvar"
+        }
+      ]
+    }
+  }
+}

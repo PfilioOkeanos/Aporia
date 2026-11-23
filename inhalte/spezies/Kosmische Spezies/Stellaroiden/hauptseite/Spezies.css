@@ -5,13 +5,13 @@
 .ste-hauptseite .ste-dossier .ste-hero img { object-position: 50% 42%; }
 
 /* Kapitelleiste breiter, damit lange Kapitelnamen nicht abgeschnitten werden */
-.ste-hauptseite .ste-layout--index { grid-template-columns: clamp(10.5rem, 14cqi, 13.5rem) minmax(0, 1fr) clamp(9rem, 11cqi, 11.5rem); }
+.ste-hauptseite .ste-layout--index { grid-template-columns: clamp(10.5rem, 14cqi, 13.5rem) minmax(0, 1fr); }
 .ste-hauptseite .ste-chapters a { font-size: .8rem; hyphens: auto; overflow-wrap: anywhere; }
 .ste-hauptseite .ste-chapters .ste-code { margin-inline-end: .35rem; }
 .ste-hauptseite .ste-core { align-items: start; }
 .ste-hauptseite .ste-topics { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 @container (max-width: 980px) {
-    .ste-hauptseite .ste-layout--index { grid-template-columns: minmax(0, 1fr) clamp(9rem, 22cqi, 11rem); }
+    .ste-hauptseite .ste-layout--index { grid-template-columns: minmax(0, 1fr); }
 }
 @container (max-width: 700px) {
     .ste-hauptseite .ste-layout--index { grid-template-columns: minmax(0, 1fr); }

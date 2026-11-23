@@ -1,2 +1,3 @@
-// Chronoiden – Geschichte · erzeugt vom Spezies-Baukasten (scripts/spezies) – Änderungen dort vornehmen
+// Chronoiden – Geschichte
+// Gemeinsame Funktionen (Topbar, Sidebar, Routen, Klappkapitel, Bildkarussell) kommen aus der Basis.
 import "../../chronoiden-basis.js";

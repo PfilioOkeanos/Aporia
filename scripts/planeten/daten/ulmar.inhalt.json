@@ -1,0 +1,689 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Ulmar",
+  "genitiv": "von Ulmar",
+  "dossierName": "Ulmar-Dossier",
+  "klasse": "Eisriese",
+  "intro": "Ulmar ist der weit außen kreisende Eisriese des Systems. Seine kalte Methanwolken-Atmosphäre und flüchtigenreichen Tiefenschichten unterscheiden ihn vom wasserstoffreichen Gasriesen Daran.",
+  "globusDaten": {
+    "planet": "tiefblauer-methan-eisplanet-im-all",
+    "klasse": "Eisriese",
+    "radius": 24500000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=ilaren-stern&objekt=ilaren-ulmar",
+  "grunddaten": [
+    [
+      "System-ID",
+      "ilaren-ulmar"
+    ],
+    [
+      "Archiv-ID",
+      "AP-849111D785"
+    ],
+    [
+      "Typ",
+      "Eisriese"
+    ],
+    [
+      "Sternsystem",
+      "Ilaren-System"
+    ],
+    [
+      "Zentralkörper",
+      "Ilaren"
+    ],
+    [
+      "Große Halbachse",
+      "5,9 AE"
+    ],
+    [
+      "Umlaufzeit",
+      "16,2 Jahre"
+    ],
+    [
+      "Durchmesser",
+      "49.000 km"
+    ],
+    [
+      "Masse",
+      "16 Erdmassen"
+    ],
+    [
+      "Schwerkraft",
+      "1,08 g"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -199 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Ilaren-System"
+    ],
+    [
+      "Zentralstern",
+      "Ilaren",
+      "inhalte/himmelskoerper/sterne/details/ilaren/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "5,9 AE"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Ulmar im Ilaren-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=ilaren-stern&objekt=ilaren-ulmar",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Ilaren",
+      "href": "inhalte/himmelskoerper/sterne/details/ilaren/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Kollektiden (Tessari)",
+      "titel": "Khaluun",
+      "href": "inhalte/himmelskoerper/planeten/details/khaluun/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Kollektiden (Tessari)",
+      "href": "inhalte/spezies/Mentale Spezies/Kollektiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Ilaren-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=ilaren-stern&objekt=ilaren-ulmar"
+    },
+    {
+      "titel": "Speziesdossier Kollektiden (Tessari)",
+      "href": "inhalte/spezies/Mentale Spezies/Kollektiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#05080a",
+      "tiefe": "#0c1116",
+      "akzent": "#a1bbdb",
+      "sand": "#a8b9ba",
+      "moos": "#82b1b0",
+      "ozean": "#6899d2",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#31445a"
+    }
+  },
+  "kapitel": {
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Ulmar auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Ulmar",
+          "text": [
+            "Ulmar ist ein äußerer Eisriese mit ausgedehnter Atmosphäre und Hochdruckmaterialien im Inneren. Mehrere kleine und mittelgroße Monde, dynamische Windsysteme und ein Magnetfeld bieten Forschungsziele für unbemannte Missionen.",
+            "Ulmar umkreist Ilaren in 5,9 AE Abstand und braucht für einen Umlauf 16,2 Jahre."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Eisriese"
+            ],
+            [
+              "Sternsystem",
+              "Ilaren-System"
+            ],
+            [
+              "Zentralkörper",
+              "Ilaren"
+            ],
+            [
+              "Große Halbachse",
+              "5,9 AE"
+            ],
+            [
+              "Umlaufzeit",
+              "16,2 Jahre"
+            ],
+            [
+              "Durchmesser",
+              "49.000 km"
+            ],
+            [
+              "Masse",
+              "16 Erdmassen"
+            ],
+            [
+              "Schwerkraft",
+              "1,08 g"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -199 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Khaluun",
+          "text": [
+            "Das Ilaren-System ist die Heimat der Kollektiden (Tessari): Ihr Planet Khaluun umkreist Ilaren."
+          ],
+          "verweise": [
+            [
+              "Khaluun",
+              "inhalte/himmelskoerper/planeten/details/khaluun/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Kollektiden (Tessari)",
+              "inhalte/spezies/Mentale Spezies/Kollektiden/hauptseite/Spezies.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Äußerer Eisriese",
+          "text": [
+            "Ulmar liegt bei 5,9 AE und benötigt rund 5.927 Erdtage für einen Umlauf. Die geringe Einstrahlung ergibt eine Gleichgewichtstemperatur um −199 °C."
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Ulmar im Ilaren-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Ilaren"
+            ],
+            [
+              "Große Halbachse",
+              "5,9 AE (882,6 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,045"
+            ],
+            [
+              "Bahnneigung",
+              "2,2°"
+            ],
+            [
+              "Umlaufzeit",
+              "16,2 Jahre"
+            ],
+            [
+              "Einstrahlung",
+              "0,007-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Am Himmel von Ulmar",
+          "text": [
+            "Ilaren erscheint von hier aus etwa 0,07° groß (die Sonne von der Erde: 0,53°)."
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Ilaren · Stern",
+              "Orangefarbener Hauptreihenstern (K3 V)"
+            ],
+            [
+              "Harrek · 0,15 AE",
+              "Heißer Gesteinsplanet"
+            ],
+            [
+              "Vosan · 0,31 AE",
+              "Trockener Gesteinsplanet"
+            ],
+            [
+              "Khaluun · 0,52 AE",
+              "Gemäßigter, wasserreicher Gesteinsplanet"
+            ],
+            [
+              "Meyt · 0,92 AE",
+              "Kalter Gesteinsplanet"
+            ],
+            [
+              "Daran · 2,45 AE",
+              "Gasriese"
+            ],
+            [
+              "Ulmar · 5,9 AE · dieses Dossier",
+              "Eisriese"
+            ],
+            [
+              "Ilaren-Asteroidengürtel · 1,3–1,9 AE",
+              "Asteroidengürtel"
+            ]
+          ],
+          "verweise": [
+            [
+              "Ilaren",
+              "inhalte/himmelskoerper/sterne/details/ilaren/hauptseite/index.html"
+            ],
+            [
+              "Harrek",
+              "inhalte/himmelskoerper/planeten/details/harrek/hauptseite/index.html"
+            ],
+            [
+              "Vosan",
+              "inhalte/himmelskoerper/planeten/details/vosan/hauptseite/index.html"
+            ],
+            [
+              "Khaluun",
+              "inhalte/himmelskoerper/planeten/details/khaluun/hauptseite/index.html"
+            ],
+            [
+              "Meyt",
+              "inhalte/himmelskoerper/planeten/details/meyt/hauptseite/index.html"
+            ],
+            [
+              "Daran",
+              "inhalte/himmelskoerper/planeten/details/daran/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Ulmar.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "24.500 km"
+            ],
+            [
+              "Masse",
+              "16 Erdmassen"
+            ],
+            [
+              "Mittlere Dichte",
+              "1,55 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "10,61 m/s² (1,082 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "22,82 km/s"
+            ]
+          ],
+          "vergleich": {
+            "mit": "Erde",
+            "werte": [
+              [
+                "Durchmesser",
+                49000,
+                12742,
+                "km"
+              ],
+              [
+                "Masse",
+                16,
+                1,
+                "Erdmassen"
+              ],
+              [
+                "Schwerkraft",
+                1.08,
+                1,
+                "g"
+              ]
+            ]
+          }
+        },
+        {
+          "titel": "Ausgedehnte Hülle",
+          "daten": [
+            [
+              "Masse",
+              "16 Erdmassen"
+            ],
+            [
+              "Radius",
+              "24.500 km"
+            ],
+            [
+              "Abgeleitete mittlere Dichte",
+              "ca. 1,55 g/cm³"
+            ],
+            [
+              "Oberflächengravitation",
+              "ca. 10,6 m/s²"
+            ]
+          ],
+          "text": [
+            "Die mittlere Dichte passt zu einem neptunähnlichen Eisriesen mit flüchtigenreichen inneren Schichten. Ulmar besitzt keine feste Oberfläche, auf der gelandet werden könnte."
+          ]
+        }
+      ]
+    },
+    "Planetare Struktur": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Planetare Struktur von Ulmar.",
+      "abschnitte": [
+        {
+          "titel": "Schalenbau",
+          "schichten": [
+            [
+              "Atmosphäre",
+              "Wasserstoff, Helium und Methan"
+            ],
+            [
+              "Eismantel",
+              "Wasser, Ammoniak und Methan unter hohem Druck"
+            ],
+            [
+              "Kern",
+              "Gestein und Metall"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geografie": {
+      "gruppe": "Natur",
+      "icon": "△",
+      "intro": "Geografie von Ulmar.",
+      "abschnitte": [
+        {
+          "titel": "Oberfläche",
+          "text": [
+            "Ulmar besitzt keine feste Oberfläche. Sichtbar sind Wolkenbänder, Wirbel und Stürme."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Ulmar.",
+      "abschnitte": [
+        {
+          "titel": "Gashülle",
+          "text": [
+            "Ulmar besitzt keine feste Oberfläche; die Hülle geht nach innen allmählich in dichtere Schichten über."
+          ],
+          "balken": {
+            "werte": [
+              [
+                "Wasserstoff",
+                80
+              ],
+              [
+                "Helium",
+                17
+              ],
+              [
+                "Methan",
+                2.3
+              ],
+              [
+                "Spurengase",
+                0.7
+              ]
+            ]
+          }
+        },
+        {
+          "titel": "Methan und Hochdruckwolken",
+          "text": [
+            "Wasserstoff und Helium bilden den äußeren Atmosphärenmantel; Methan absorbiert rotes Licht und prägt die blaue Farbe. Wasser, Ammoniak und Methan liegen tiefer als Hochdruckgemische vor."
+          ]
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Ulmar.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 5,9 AE Abstand zu Ilaren liegt die Gleichgewichtstemperatur von Ulmar bei rund -199 °C – eisig kalt."
+          ]
+        }
+      ]
+    },
+    "Gewässer": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gewässer von Ulmar.",
+      "abschnitte": [
+        {
+          "titel": "Wasser",
+          "text": [
+            "Wasser liegt in den Wolkenschichten und tief im Inneren unter hohem Druck vor."
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Ulmar.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Ohne feste Oberfläche gibt es keine Geologie im engeren Sinn; im Inneren herrschen extreme Drücke und Temperaturen."
+          ]
+        }
+      ]
+    },
+    "Biosphäre": {
+      "gruppe": "Natur",
+      "icon": "❧",
+      "intro": "Biosphäre von Ulmar.",
+      "abschnitte": [
+        {
+          "titel": "Leben",
+          "text": [
+            "Auf Ulmar ist kein Leben verzeichnet."
+          ]
+        }
+      ]
+    },
+    "Spezies": {
+      "gruppe": "Zivilisation",
+      "icon": "✿",
+      "intro": "Spezies von Ulmar.",
+      "abschnitte": [
+        {
+          "titel": "Bewohner",
+          "text": [
+            "Ulmar ist keine Heimat einer intelligenten Spezies."
+          ]
+        },
+        {
+          "titel": "Im System von Khaluun",
+          "text": [
+            "Das Ilaren-System ist die Heimat der Kollektiden (Tessari): Ihr Planet Khaluun umkreist Ilaren."
+          ],
+          "verweise": [
+            [
+              "Khaluun",
+              "inhalte/himmelskoerper/planeten/details/khaluun/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Kollektiden (Tessari)",
+              "inhalte/spezies/Mentale Spezies/Kollektiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Zivilisation": {
+      "gruppe": "Zivilisation",
+      "icon": "▥",
+      "intro": "Zivilisation von Ulmar.",
+      "abschnitte": [
+        {
+          "titel": "Siedlungen",
+          "text": [
+            "Für Ulmar sind keine dauerhaften Siedlungen verzeichnet."
+          ]
+        },
+        {
+          "titel": "Im System von Khaluun",
+          "text": [
+            "Das Ilaren-System ist die Heimat der Kollektiden (Tessari): Ihr Planet Khaluun umkreist Ilaren."
+          ],
+          "verweise": [
+            [
+              "Khaluun",
+              "inhalte/himmelskoerper/planeten/details/khaluun/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Kollektiden (Tessari)",
+              "inhalte/spezies/Mentale Spezies/Kollektiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Ulmar.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Ulmar entstand zusammen mit dem Ilaren-System vor rund 5,6 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Fraktionen": {
+      "gruppe": "Zivilisation",
+      "icon": "◇",
+      "intro": "Fraktionen von Ulmar.",
+      "abschnitte": [
+        {
+          "titel": "Ansprüche",
+          "text": [
+            "Für Ulmar sind keine Fraktionsansprüche verzeichnet."
+          ]
+        }
+      ]
+    },
+    "Rohstoffe": {
+      "gruppe": "Weitere",
+      "icon": "⬡",
+      "intro": "Rohstoffe von Ulmar.",
+      "abschnitte": [
+        {
+          "titel": "Rohstoffe",
+          "liste": [
+            "Wasserstoff",
+            "Methan",
+            "Wassereis"
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Ulmar.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Gibt es flüssige Schichten im Eismantel?",
+            "Wie entstand die Achslage?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Ulmar ist mit allen Bahndaten im Ilaren-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=ilaren-stern&objekt=ilaren-ulmar"
+            ]
+          ]
+        },
+        {
+          "titel": "Fernerkundung",
+          "liste": [
+            "Wolkenbewegung und Rotationsdauer bestimmen.",
+            "Magnetfeld und mögliche Auroren kartieren.",
+            "Größe und Bahnen der tatsächlich nachgewiesenen Monde erfassen."
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Ulmar.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Äußerster Planet des Ilaren-Systems"
+          ]
+        },
+        {
+          "titel": "Dynamische äußere Atmosphäre",
+          "text": [
+            "Lange Umlaufzeiten und geringe Sonnenwärme erzeugen kalte Wolkenschichten. Starke interne Wärme oder ein großflächiges Ringsystem werden nicht ohne Beobachtungsdaten behauptet."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Ulmar.",
+      "abschnitte": [
+        {
+          "titel": "Ulmar – Archivbild",
+          "bild": true,
+          "bildtext": "Ulmar"
+        }
+      ]
+    }
+  }
+}

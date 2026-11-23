@@ -1,58 +1,309 @@
 {
   "systemName": "Thyrrae-System",
   "praefix": "babiew-",
-  "lage": { "entfernungLj": 28, "richtung": [-0.5, 0.3, -0.81] },
+  "lage": {
+    "entfernungLj": 28,
+    "richtung": [
+      -0.5,
+      0.3,
+      -0.81
+    ]
+  },
   "einzelstern": true,
   "stern": {
-    "id": "babiew-stern", "name": "Thyrrae", "typ": "Gelber Zwerg (F9 V)",
-    "masseSonne": 1.08, "radiusSonne": 1.1, "leuchtkraftSonne": 1.35, "temperaturK": 6000, "alterMrd": 3.4,
-    "farbe": [1, 0.96, 0.86], "emissionsfarbe": [1, 0.97, 0.9], "emission": 1.25,
-    "bild": { "art": "sterne", "suche": "gelb|G-Stern|Hauptreihe|Sonne" },
+    "id": "babiew-stern",
+    "name": "Thyrrae",
+    "typ": "Gelber Zwerg (F9 V)",
+    "masseSonne": 1.08,
+    "radiusSonne": 1.1,
+    "leuchtkraftSonne": 1.35,
+    "temperaturK": 6000,
+    "alterMrd": 3.4,
+    "farbe": [
+      1,
+      0.96,
+      0.86
+    ],
+    "emissionsfarbe": [
+      1,
+      0.97,
+      0.9
+    ],
+    "emission": 1.25,
+    "bild": {
+      "art": "sterne",
+      "suche": "gelb|G-Stern|Hauptreihe|Sonne"
+    },
     "beschreibung": "Thyrrae ist ein heller, gelbweißer Hauptreihenstern der Spektralklasse F9 V mit 108 % der Sonnenmasse und 135 % ihrer Leuchtkraft – ein ruhiger Einzelstern und Zentralstern der Gaswelt Babiew."
   },
   "koerper": [
-    { "id": "babiew-saelith-i", "name": "Thyrrae I", "typ": "Gesteinsplanet", "um": "babiew-stern",
-      "aAE": 0.38, "e": 0.03, "i": 1.8, "knoten": 80, "peri": 10, "phase": 30, "radiusKm": 3900, "masseErde": 0.28, "albedo": 0.12, "farbe": [0.62, 0.5, 0.42],
-      "bild": { "art": "planeten", "suche": "glühend|Lava|heißer Felsplanet|Felsplanet" },
-      "beschreibung": "Thyrrae I ist ein kleiner, glühend heißer Gesteinsplanet ohne nennenswerte Atmosphäre." },
-    { "id": "babiew-saelith-ii", "name": "Thyrrae II", "typ": "Gesteinsplanet", "um": "babiew-stern",
-      "aAE": 0.72, "e": 0.02, "i": 1.1, "knoten": 160, "peri": 70, "phase": 200, "radiusKm": 6900, "masseErde": 1.4, "albedo": 0.6, "farbe": [0.92, 0.84, 0.66],
-      "bild": { "art": "planeten", "suche": "Venus|Treibhaus|Schwefelwolken|Wolkenplanet" },
-      "beschreibung": "Thyrrae II ist eine heiße Treibhauswelt unter einer geschlossenen, hellen Wolkendecke." },
-    { "id": "babiew-planet", "name": "Babiew", "typ": "Gasriese", "um": "babiew-stern",
-      "aAE": 1.3, "e": 0.04, "i": 0, "knoten": 20, "peri": 140, "phase": 110, "radiusKm": 52000, "masseErde": 60, "albedo": 0.34, "zielTemperaturC": 18, "farbe": [0.78, 0.66, 0.52],
-      "bild": { "art": "planeten", "slug": "gigantischer-sturm-auf-einem-gasriesen" },
-      "beschreibung": "Babiew ist die Heimatwelt der Aeromorphen: eine Gaswelt mit mächtiger, extrem bewegter Atmosphäre, dauerhaften Sturmsystemen und Winden bis 1.000 km/h." },
-    { "id": "babiew-ayel", "name": "Ayel", "typ": "Mond", "um": "babiew-planet",
-      "periodeTage": 3.1, "e": 0.004, "i": 0.3, "knoten": 0, "peri": 0, "phase": 40, "radiusKm": 1250, "masseErde": 0.009, "farbe": [0.86, 0.6, 0.38],
-      "bild": { "art": "monde", "suche": "Vulkan|Schwefel|Io|Mond" },
-      "beschreibung": "Ayel ist der innerste große Mond, durch Gezeitenkräfte vulkanisch aktiv. Sein Material färbt einen schwachen Plasmatorus um Babiew." },
-    { "id": "babiew-corrun", "name": "Corrun", "typ": "Mond", "um": "babiew-planet",
-      "periodeTage": 8.4, "e": 0.01, "i": 0.6, "knoten": 100, "peri": 0, "phase": 190, "radiusKm": 2100, "masseErde": 0.022, "farbe": [0.78, 0.82, 0.88],
-      "bild": { "art": "monde", "suche": "Eis|gefroren|Eismond|Mond" },
-      "beschreibung": "Corrun ist ein großer Eismond mit glatter, von Rissen durchzogener Kruste – vermutlich mit verborgenem Ozean." },
-    { "id": "babiew-pheyra", "name": "Pheyra", "typ": "Mond", "um": "babiew-planet",
-      "periodeTage": 26, "e": 0.03, "i": 2.4, "knoten": 250, "peri": 0, "phase": 300, "radiusKm": 780, "masseErde": 0.0016, "farbe": [0.6, 0.56, 0.54],
-      "bild": { "art": "monde", "suche": "Krater|Mond|Fels" },
-      "beschreibung": "Pheyra ist ein dunkler, verkraterter Mond auf weiter Bahn. Das Konsortium unterhält hier eine Relaisstation für den Verkehr nach Babiew." },
-    { "id": "babiew-schleiergurtel", "name": "Schleiergürtel", "typ": "Asteroidengürtel", "ringUm": "babiew-stern",
-      "ringeAE": [2.6, 2.85, 3.1, 3.35], "anzahl": 220, "groesseKm": 360, "mindestPx": 5.5, "farbe": [0.6, 0.56, 0.5],
-      "bild": { "art": "sternensysteme", "suche": "Asteroidengürtel" },
-      "beschreibung": "Der Schleiergürtel zwischen 2,6 und 3,35 AE besteht aus hellen, staubbedeckten Gesteins- und Eisbrocken." },
-    { "id": "babiew-saelith-v", "name": "Thyrrae V", "typ": "Eisriese", "um": "babiew-stern",
-      "aAE": 9.4, "e": 0.05, "i": 1.9, "knoten": 310, "peri": 220, "phase": 70, "radiusKm": 24000, "masseErde": 15, "albedo": 0.3, "farbe": [0.5, 0.7, 0.86],
-      "bild": { "art": "planeten", "suche": "Eisriese|Neptun" },
-      "beschreibung": "Thyrrae V ist ein ferner, blassblauer Eisriese." },
-    { "id": "babiew-raumzeitnarbe", "name": "Raumzeitnarbe", "typ": "Asteroid", "um": "babiew-stern", "anomalie": true,
-      "aAE": 1.3, "e": 0.05, "i": 0.4, "knoten": 20, "peri": 140, "phase": 170, "radiusKm": 15, "masseErde": 0, "farbe": [0.66, 0.78, 0.96],
-      "bild": { "art": "asteroiden", "suche": "Kristall|leuchtend|Asteroid" },
-      "beschreibung": "Ein kleiner, schwach leuchtender Körper im nachlaufenden Lagrange-Punkt von Babiew. Messungen zeigen Spuren von Datoralium – möglicherweise ein Rest der Raumzeitanomalie, aus der die Aeromorphen hervorgingen." },
-    { "id": "babiew-sturmkomet", "name": "Windkomet", "typ": "Komet", "um": "babiew-stern", "anomalie": true,
-      "aAE": 14, "e": 0.91, "i": 28, "knoten": 60, "peri": 260, "phase": 172, "radiusKm": 6, "masseErde": 0, "farbe": [0.74, 0.84, 0.94],
-      "bild": { "art": "kometen", "suche": "blau|Komet" },
-      "beschreibung": "Ein Komet mit gewundenem, mehrfach geteiltem Schweif, der alle 52 Jahre das innere System durchquert. Die Aeromorphen deuten seine Wiederkehr als Zeichen großer Strömungswechsel." },
-    { "id": "babiew-kometengebiet", "name": "Äußeres Kometengebiet", "typ": "Kometengebiet", "ringUm": "babiew-stern",
-      "ringeAE": [36, 44, 52], "anzahl": 220, "groesseKm": 150, "mindestPx": 4.5, "farbe": [0.56, 0.7, 0.88],
-      "beschreibung": "Ein ferner Gürtel aus Eiskörpern zwischen 36 und 52 AE." }
+    {
+      "id": "babiew-saelith-i",
+      "name": "Thyrrae I",
+      "typ": "Gesteinsplanet",
+      "um": "babiew-stern",
+      "aAE": 0.38,
+      "e": 0.03,
+      "i": 1.8,
+      "knoten": 80,
+      "peri": 10,
+      "phase": 30,
+      "radiusKm": 3900,
+      "masseErde": 0.28,
+      "albedo": 0.12,
+      "farbe": [
+        0.62,
+        0.5,
+        0.42
+      ],
+      "bild": {
+        "art": "planeten",
+        "suche": "glühend|Lava|heißer Felsplanet|Felsplanet"
+      },
+      "beschreibung": "Thyrrae I ist ein kleiner, glühend heißer Gesteinsplanet ohne nennenswerte Atmosphäre."
+    },
+    {
+      "id": "babiew-saelith-ii",
+      "name": "Thyrrae II",
+      "typ": "Gesteinsplanet",
+      "um": "babiew-stern",
+      "aAE": 0.72,
+      "e": 0.02,
+      "i": 1.1,
+      "knoten": 160,
+      "peri": 70,
+      "phase": 200,
+      "radiusKm": 6900,
+      "masseErde": 1.4,
+      "albedo": 0.6,
+      "farbe": [
+        0.92,
+        0.84,
+        0.66
+      ],
+      "bild": {
+        "art": "planeten",
+        "suche": "Venus|Treibhaus|Schwefelwolken|Wolkenplanet"
+      },
+      "beschreibung": "Thyrrae II ist eine heiße Treibhauswelt unter einer geschlossenen, hellen Wolkendecke."
+    },
+    {
+      "id": "babiew-planet",
+      "name": "Babiew",
+      "typ": "Gasriese",
+      "um": "babiew-stern",
+      "aAE": 1.3,
+      "e": 0.04,
+      "i": 0,
+      "knoten": 20,
+      "peri": 140,
+      "phase": 110,
+      "radiusKm": 52000,
+      "masseErde": 60,
+      "albedo": 0.34,
+      "zielTemperaturC": 18,
+      "farbe": [
+        0.78,
+        0.66,
+        0.52
+      ],
+      "bild": {
+        "art": "planeten",
+        "slug": "gigantischer-sturm-auf-einem-gasriesen"
+      },
+      "beschreibung": "Babiew ist die Heimatwelt der Aeromorphen: eine Gaswelt mit mächtiger, extrem bewegter Atmosphäre, dauerhaften Sturmsystemen und Winden bis 1.000 km/h."
+    },
+    {
+      "id": "babiew-ayel",
+      "name": "Ayel",
+      "typ": "Mond",
+      "um": "babiew-planet",
+      "periodeTage": 3.1,
+      "e": 0.004,
+      "i": 0.3,
+      "knoten": 0,
+      "peri": 0,
+      "phase": 40,
+      "radiusKm": 1250,
+      "masseErde": 0.009,
+      "farbe": [
+        0.86,
+        0.6,
+        0.38
+      ],
+      "bild": {
+        "art": "monde",
+        "suche": "Vulkan|Schwefel|Io|Mond"
+      },
+      "beschreibung": "Ayel ist der innerste große Mond, durch Gezeitenkräfte vulkanisch aktiv. Sein Material färbt einen schwachen Plasmatorus um Babiew."
+    },
+    {
+      "id": "babiew-corrun",
+      "name": "Corrun",
+      "typ": "Mond",
+      "um": "babiew-planet",
+      "periodeTage": 8.4,
+      "e": 0.01,
+      "i": 0.6,
+      "knoten": 100,
+      "peri": 0,
+      "phase": 190,
+      "radiusKm": 2100,
+      "masseErde": 0.022,
+      "farbe": [
+        0.78,
+        0.82,
+        0.88
+      ],
+      "bild": {
+        "art": "monde",
+        "suche": "Eis|gefroren|Eismond|Mond"
+      },
+      "beschreibung": "Corrun ist ein großer Eismond mit glatter, von Rissen durchzogener Kruste – vermutlich mit verborgenem Ozean."
+    },
+    {
+      "id": "babiew-pheyra",
+      "name": "Pheyra",
+      "typ": "Mond",
+      "um": "babiew-planet",
+      "periodeTage": 26,
+      "e": 0.03,
+      "i": 2.4,
+      "knoten": 250,
+      "peri": 0,
+      "phase": 300,
+      "radiusKm": 780,
+      "masseErde": 0.0016,
+      "farbe": [
+        0.6,
+        0.56,
+        0.54
+      ],
+      "bild": {
+        "art": "monde",
+        "suche": "Krater|Mond|Fels"
+      },
+      "beschreibung": "Pheyra ist ein dunkler, verkraterter Mond auf weiter Bahn. Das Konsortium unterhält hier eine Relaisstation für den Verkehr nach Babiew."
+    },
+    {
+      "id": "babiew-schleiergurtel",
+      "name": "Schleiergürtel",
+      "typ": "Asteroidengürtel",
+      "ringUm": "babiew-stern",
+      "ringeAE": [
+        2.6,
+        2.85,
+        3.1,
+        3.35
+      ],
+      "anzahl": 220,
+      "groesseKm": 360,
+      "mindestPx": 5.5,
+      "farbe": [
+        0.6,
+        0.56,
+        0.5
+      ],
+      "bild": {
+        "art": "sternensysteme",
+        "suche": "Asteroidengürtel"
+      },
+      "beschreibung": "Der Schleiergürtel zwischen 2,6 und 3,35 AE besteht aus hellen, staubbedeckten Gesteins- und Eisbrocken."
+    },
+    {
+      "id": "babiew-saelith-v",
+      "name": "Thyrrae V",
+      "typ": "Eisriese",
+      "um": "babiew-stern",
+      "aAE": 9.4,
+      "e": 0.05,
+      "i": 1.9,
+      "knoten": 310,
+      "peri": 220,
+      "phase": 70,
+      "radiusKm": 24000,
+      "masseErde": 15,
+      "albedo": 0.3,
+      "farbe": [
+        0.5,
+        0.7,
+        0.86
+      ],
+      "bild": {
+        "art": "planeten",
+        "suche": "Eisriese|Neptun"
+      },
+      "beschreibung": "Thyrrae V ist ein ferner, blassblauer Eisriese."
+    },
+    {
+      "id": "babiew-raumzeitnarbe",
+      "name": "Raumzeitnarbe",
+      "typ": "Asteroid",
+      "um": "babiew-stern",
+      "anomalie": true,
+      "aAE": 1.3,
+      "e": 0.05,
+      "i": 0.4,
+      "knoten": 20,
+      "peri": 140,
+      "phase": 170,
+      "radiusKm": 15,
+      "masseErde": 0,
+      "farbe": [
+        0.66,
+        0.78,
+        0.96
+      ],
+      "bild": {
+        "art": "asteroiden",
+        "suche": "Kristall|leuchtend|Asteroid"
+      },
+      "beschreibung": "Ein kleiner, schwach leuchtender Körper im nachlaufenden Lagrange-Punkt von Babiew. Messungen zeigen Spuren von Datoralium – möglicherweise ein Rest der Raumzeitanomalie, aus der die Aeromorphen hervorgingen."
+    },
+    {
+      "id": "babiew-sturmkomet",
+      "name": "Windkomet",
+      "typ": "Komet",
+      "um": "babiew-stern",
+      "anomalie": true,
+      "aAE": 14,
+      "e": 0.91,
+      "i": 28,
+      "knoten": 60,
+      "peri": 260,
+      "phase": 172,
+      "radiusKm": 6,
+      "masseErde": 0,
+      "farbe": [
+        0.74,
+        0.84,
+        0.94
+      ],
+      "bild": {
+        "art": "kometen",
+        "suche": "blau|Komet"
+      },
+      "beschreibung": "Ein Komet mit gewundenem, mehrfach geteiltem Schweif, der alle 52 Jahre das innere System durchquert. Die Aeromorphen deuten seine Wiederkehr als Zeichen großer Strömungswechsel."
+    },
+    {
+      "id": "babiew-kometengebiet",
+      "name": "Garovfeth-Kometenwolke",
+      "typ": "Kometengebiet",
+      "ringUm": "babiew-stern",
+      "ringeAE": [
+        36,
+        44,
+        52
+      ],
+      "anzahl": 220,
+      "groesseKm": 150,
+      "mindestPx": 4.5,
+      "farbe": [
+        0.56,
+        0.7,
+        0.88
+      ],
+      "beschreibung": "Ein ferner Gürtel aus Eiskörpern zwischen 36 und 52 AE."
+    }
   ]
 }

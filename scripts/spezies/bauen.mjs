@@ -12,6 +12,10 @@ if (wahl.length && auswahl.length !== wahl.length) console.warn("Nicht in spezie
 const fehler = [];
 for (const s of auswahl) {
     try {
+        if (s.bauskript) {
+            await import(new URL("./eigene/" + s.bauskript, import.meta.url));
+            continue;
+        }
         const r = baueStandard(s);
         console.log(`${r.NAME.padEnd(18)} ${String(r.seiten).padStart(2)} Seiten · ${String(r.kapitel).padStart(3)} Kapitel aus ${r.info} Dateien · ${r.bilder} Bilder · ${r.klaenge} Klänge · ${r.videos} Videos`);
     } catch (e) {

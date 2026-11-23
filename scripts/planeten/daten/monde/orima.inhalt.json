@@ -1,0 +1,562 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Orima",
+  "genitiv": "von Orima",
+  "dossierName": "Orima-Dossier",
+  "klasse": "Eismond",
+  "intro": "Orima ist ein heller Eismond Saevors; Oberflächeneis und Gezeitenwärme sind mögliche Forschungsziele. Orima umkreist Saevor in 4,8 Tage.",
+  "globusDaten": {
+    "planet": "orima",
+    "klasse": "Eis",
+    "radius": 1240000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=teryn-stern&objekt=teryn-orima",
+  "grunddaten": [
+    [
+      "System-ID",
+      "teryn-orima"
+    ],
+    [
+      "Archiv-ID",
+      "AP-TERYN-ORIMA"
+    ],
+    [
+      "Typ",
+      "Eismond"
+    ],
+    [
+      "Sternsystem",
+      "Teryn-System"
+    ],
+    [
+      "Zentralkörper",
+      "Saevor"
+    ],
+    [
+      "Große Halbachse",
+      "721.297 km"
+    ],
+    [
+      "Umlaufzeit",
+      "4,8 Tage"
+    ],
+    [
+      "Durchmesser",
+      "2.480 km"
+    ],
+    [
+      "Masse",
+      "0,045 Mondmassen"
+    ],
+    [
+      "Schwerkraft",
+      "0,01 g"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -171 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Teryn-System"
+    ],
+    [
+      "Zentralstern",
+      "Teryn",
+      "inhalte/himmelskoerper/sterne/details/teryn/hauptseite/index.html"
+    ],
+    [
+      "Umläuft",
+      "Saevor",
+      "inhalte/himmelskoerper/planeten/details/saevor/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "721.297 km"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Orima im Teryn-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=teryn-stern&objekt=teryn-orima",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Teryn",
+      "href": "inhalte/himmelskoerper/sterne/details/teryn/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◍",
+      "art": "Mutterplanet",
+      "titel": "Saevor",
+      "href": "inhalte/himmelskoerper/planeten/details/saevor/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Solitiden",
+      "titel": "Iskara",
+      "href": "inhalte/himmelskoerper/planeten/details/iskara/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Solitiden",
+      "href": "inhalte/spezies/Mentale Spezies/Solitiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Teryn-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=teryn-stern&objekt=teryn-orima"
+    },
+    {
+      "titel": "Speziesdossier Solitiden",
+      "href": "inhalte/spezies/Mentale Spezies/Solitiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#090a0b",
+      "tiefe": "#131618",
+      "akzent": "#c8dbe8",
+      "sand": "#cdd4c2",
+      "moos": "#a6d5bb",
+      "ozean": "#85bae2",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#4d5a63"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Astronomie"
+      ],
+      [
+        "Planet",
+        "Mutterplanet"
+      ],
+      [
+        "Kräfte",
+        "Gezeiten"
+      ],
+      [
+        "Tiefe",
+        "Geologie"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Mutterplanet": {
+      "gruppe": "Wissenschaft",
+      "icon": "◐",
+      "intro": "Mutterplanet von Orima.",
+      "abschnitte": [
+        {
+          "titel": "Saevor",
+          "text": [
+            "Saevor ist ein Gasriese von etwa 0,68 Jupitermassen mit ausgeprägten Wolkenbändern, ausgedehnten Sturmsystemen und einem modellierten Ringsystem."
+          ],
+          "daten": [
+            [
+              "Typ",
+              "Gasriese"
+            ],
+            [
+              "Durchmesser",
+              "134.000 km"
+            ],
+            [
+              "Abstand des Mondes",
+              "721.297 km (10,8 Planetenradien)"
+            ]
+          ],
+          "verweise": [
+            [
+              "Saevor",
+              "inhalte/himmelskoerper/planeten/details/saevor/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Weitere Monde von Saevor",
+          "liste": [
+            "Rhal – Umlauf in 2,1 Tage",
+            "Kesth – Umlauf in 10,4 Tage",
+            "Droven – Umlauf in 21,3 Tage"
+          ],
+          "verweise": [
+            [
+              "Rhal",
+              "inhalte/himmelskoerper/monde/details/rhal/hauptseite/index.html"
+            ],
+            [
+              "Kesth",
+              "inhalte/himmelskoerper/monde/details/kesth/hauptseite/index.html"
+            ],
+            [
+              "Droven",
+              "inhalte/himmelskoerper/monde/details/droven/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Gezeiten": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gezeiten von Orima.",
+      "abschnitte": [
+        {
+          "titel": "Gezeitenkräfte",
+          "text": [
+            "Auf seiner Bahn in 721.297 km Abstand wirken starke Gezeitenkräfte von Saevor auf Orima."
+          ]
+        }
+      ]
+    },
+    "Gebundene Rotation": {
+      "gruppe": "Wissenschaft",
+      "icon": "↻",
+      "intro": "Gebundene Rotation von Orima.",
+      "abschnitte": [
+        {
+          "titel": "Rotation",
+          "text": [
+            "Orima wendet Saevor vermutlich stets dieselbe Seite zu: Ein Tag dauert so lange wie ein Umlauf – 4,8 Tage."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Orima auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Orima",
+          "text": [
+            "Orima ist ein heller Eismond Saevors; Oberflächeneis und Gezeitenwärme sind mögliche Forschungsziele.",
+            "Orima umkreist Saevor in 4,8 Tage."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Eismond"
+            ],
+            [
+              "Sternsystem",
+              "Teryn-System"
+            ],
+            [
+              "Zentralkörper",
+              "Saevor"
+            ],
+            [
+              "Große Halbachse",
+              "721.297 km"
+            ],
+            [
+              "Umlaufzeit",
+              "4,8 Tage"
+            ],
+            [
+              "Durchmesser",
+              "2.480 km"
+            ],
+            [
+              "Masse",
+              "0,045 Mondmassen"
+            ],
+            [
+              "Schwerkraft",
+              "0,01 g"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -171 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Iskara",
+          "text": [
+            "Das Teryn-System ist die Heimat der Solitiden: Ihr Planet Iskara umkreist Teryn."
+          ],
+          "verweise": [
+            [
+              "Iskara",
+              "inhalte/himmelskoerper/planeten/details/iskara/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Solitiden",
+              "inhalte/spezies/Mentale Spezies/Solitiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Orima im Teryn-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Saevor"
+            ],
+            [
+              "Große Halbachse",
+              "721.297 km"
+            ],
+            [
+              "Exzentrizität",
+              "0,006"
+            ],
+            [
+              "Bahnneigung",
+              "0,6°"
+            ],
+            [
+              "Umlaufzeit",
+              "4,8 Tage"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Teryn · Stern",
+              "Orangefarbener Hauptreihenstern (K4 V)"
+            ],
+            [
+              "Dareth · 0,15 AE",
+              "Heißer Gesteinsplanet"
+            ],
+            [
+              "Nura · 0,34 AE",
+              "Heißer terrestrischer Planet"
+            ],
+            [
+              "Iskara · 0,61 AE",
+              "Bewohnter terrestrischer Silikatplanet"
+            ],
+            [
+              "Veldros · 1,08 AE",
+              "Kalte Supererde"
+            ],
+            [
+              "Saevor · 2,84 AE",
+              "Gasriese"
+            ],
+            [
+              "Ynderal · 5,9 AE",
+              "Eisreicher Riesenplanet"
+            ],
+            [
+              "Veylan-Asteroidengürtel · 1,7–2 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußere Kleinkörperregion · 14–38 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Teryn",
+              "inhalte/himmelskoerper/sterne/details/teryn/hauptseite/index.html"
+            ],
+            [
+              "Dareth",
+              "inhalte/himmelskoerper/planeten/details/dareth/hauptseite/index.html"
+            ],
+            [
+              "Nura",
+              "inhalte/himmelskoerper/planeten/details/nura/hauptseite/index.html"
+            ],
+            [
+              "Iskara",
+              "inhalte/himmelskoerper/planeten/details/iskara/hauptseite/index.html"
+            ],
+            [
+              "Veldros",
+              "inhalte/himmelskoerper/planeten/details/veldros/hauptseite/index.html"
+            ],
+            [
+              "Saevor",
+              "inhalte/himmelskoerper/planeten/details/saevor/hauptseite/index.html"
+            ],
+            [
+              "Ynderal",
+              "inhalte/himmelskoerper/planeten/details/ynderal/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Orima.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "1.240 km"
+            ],
+            [
+              "Masse",
+              "0,045 Mondmassen"
+            ],
+            [
+              "Mittlere Dichte",
+              "0,41 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "0,14 m/s² (0,015 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "0,59 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Orima.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Orima ist geologisch weitgehend erstarrt; Einschläge haben seine Oberfläche geformt."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Orima.",
+      "abschnitte": [
+        {
+          "titel": "Gashülle",
+          "text": [
+            "Orima besitzt keine nennenswerte Atmosphäre – dafür ist die Schwerkraft zu gering."
+          ]
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Orima.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 2,84 AE Abstand zu Teryn liegt die Gleichgewichtstemperatur von Orima bei rund -171 °C – eisig kalt."
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Orima.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Orima entstand zusammen mit dem Teryn-System vor rund 6,1 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Orima.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Ist der Mond eingefangen oder mit seinem Planeten entstanden?",
+            "Welche Spuren tragen seine ältesten Krater?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Orima ist mit allen Bahndaten im Teryn-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=teryn-stern&objekt=teryn-orima"
+            ]
+          ]
+        },
+        {
+          "titel": "Untersuchung im Teryn-System",
+          "text": [
+            "Ist die helle Eisoberfläche durch jüngere Prozesse erneuert worden? Hinweise auf flüssiges Wasser wären separat zu prüfen."
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Orima.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Größter Mond von Saevor"
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Orima.",
+      "abschnitte": [
+        {
+          "titel": "Illustrationsmotiv",
+          "bild": true,
+          "bildtext": "Illustration anhand eines vorhandenen Motivs. Sie zeigt den Himmelskörpertyp und keine bestätigten Oberflächendetails."
+        }
+      ]
+    }
+  }
+}

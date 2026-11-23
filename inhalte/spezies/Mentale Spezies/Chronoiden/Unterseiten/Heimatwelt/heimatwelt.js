@@ -1,2 +1,3 @@
-// Chronoiden – Heimatwelt · erzeugt vom Spezies-Baukasten (scripts/spezies) – Änderungen dort vornehmen
+// Chronoiden – Heimatwelt
+// Gemeinsame Funktionen (Topbar, Sidebar, Routen, Klappkapitel, Bildkarussell) kommen aus der Basis.
 import "../../chronoiden-basis.js";

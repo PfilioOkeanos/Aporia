@@ -1,0 +1,638 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Halvek",
+  "genitiv": "von Halvek",
+  "dossierName": "Halvek-Dossier",
+  "klasse": "Eisplanet",
+  "intro": "Halvek ist das äußerste Glied der Kette: eine eisreiche Supererde, deren Mantel aus Hochdruckeis einen Gesteinskern umhüllt. Mit 577 Tagen Umlaufzeit vollendet er genau neun Umläufe, wenn Arun 144 vollendet – der „Große Takt“ der Kette dauert 24 Seyrath-Jahre. Halvek umkreist Kelira in 1,269 AE Abstand und braucht für einen Umlauf 576,9 Tage.",
+  "globusDaten": {
+    "planet": "eis-supererde-im-all",
+    "klasse": "Eis",
+    "radius": 11400000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=seyrath-stern&objekt=seyrath-halvek",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-6BC7A36BFA"
+    ],
+    [
+      "Typ",
+      "Eisplanet"
+    ],
+    [
+      "Sternsystem",
+      "Kelira-System"
+    ],
+    [
+      "Zentralkörper",
+      "Kelira"
+    ],
+    [
+      "Große Halbachse",
+      "1,269 AE"
+    ],
+    [
+      "Umlaufzeit",
+      "576,9 Tage"
+    ],
+    [
+      "Durchmesser",
+      "22.800 km"
+    ],
+    [
+      "Masse",
+      "6,8 Erdmassen"
+    ],
+    [
+      "Schwerkraft",
+      "2,12 g"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -113 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Kelira-System"
+    ],
+    [
+      "Zentralstern",
+      "Kelira",
+      "inhalte/himmelskoerper/sterne/details/kelira/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "1,269 AE"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Halvek im Kelira-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=seyrath-stern&objekt=seyrath-halvek",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Kelira",
+      "href": "inhalte/himmelskoerper/sterne/details/kelira/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Chronoiden",
+      "titel": "Seyrath",
+      "href": "inhalte/himmelskoerper/planeten/details/seyrath/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Chronoiden",
+      "href": "inhalte/spezies/Mentale Spezies/Chronoiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Kelira-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=seyrath-stern&objekt=seyrath-halvek"
+    },
+    {
+      "titel": "Speziesdossier Chronoiden",
+      "href": "inhalte/spezies/Mentale Spezies/Chronoiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#0a0b0c",
+      "tiefe": "#16181a",
+      "akzent": "#dee8f2",
+      "sand": "#e0dfc9",
+      "moos": "#bae4c4",
+      "ozean": "#95c8ef",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#5c636a"
+    }
+  },
+  "kapitel": {
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Halvek auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Halvek",
+          "text": [
+            "Halvek ist das äußerste Glied der Kette: eine eisreiche Supererde, deren Mantel aus Hochdruckeis einen Gesteinskern umhüllt. Mit 577 Tagen Umlaufzeit vollendet er genau neun Umläufe, wenn Arun 144 vollendet – der „Große Takt“ der Kette dauert 24 Seyrath-Jahre.",
+            "Halvek umkreist Kelira in 1,269 AE Abstand und braucht für einen Umlauf 576,9 Tage."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Eisplanet"
+            ],
+            [
+              "Sternsystem",
+              "Kelira-System"
+            ],
+            [
+              "Zentralkörper",
+              "Kelira"
+            ],
+            [
+              "Große Halbachse",
+              "1,269 AE"
+            ],
+            [
+              "Umlaufzeit",
+              "576,9 Tage"
+            ],
+            [
+              "Durchmesser",
+              "22.800 km"
+            ],
+            [
+              "Masse",
+              "6,8 Erdmassen"
+            ],
+            [
+              "Schwerkraft",
+              "2,12 g"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -113 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Seyrath",
+          "text": [
+            "Das Kelira-System ist die Heimat der Chronoiden: Ihr Planet Seyrath umkreist Kelira."
+          ],
+          "verweise": [
+            [
+              "Seyrath",
+              "inhalte/himmelskoerper/planeten/details/seyrath/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Chronoiden",
+              "inhalte/spezies/Mentale Spezies/Chronoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Halvek im Kelira-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Kelira"
+            ],
+            [
+              "Große Halbachse",
+              "1,2694 AE (189,9 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,017"
+            ],
+            [
+              "Bahnneigung",
+              "0,9°"
+            ],
+            [
+              "Umlaufzeit",
+              "576,9 Tage"
+            ],
+            [
+              "Einstrahlung",
+              "0,242-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Am Himmel von Halvek",
+          "text": [
+            "Kelira erscheint von hier aus etwa 0,36° groß (die Sonne von der Erde: 0,53°)."
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Kelira · Stern",
+              "Orangefarbener Zwerg (K3 V)"
+            ],
+            [
+              "Arun · 0,29 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Velth · 0,38 AE",
+              "Mini-Neptun"
+            ],
+            [
+              "Isaru · 0,5 AE",
+              "Ozeanplanet"
+            ],
+            [
+              "Seyrath · 0,66 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Doran · 0,86 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Ombrel · 1,05 AE",
+              "Mini-Neptun"
+            ],
+            [
+              "Halvek · 1,27 AE · dieses Dossier",
+              "Eisplanet"
+            ],
+            [
+              "Keliras Schleier · 22–42 AE",
+              "Trümmergürtel"
+            ]
+          ],
+          "verweise": [
+            [
+              "Kelira",
+              "inhalte/himmelskoerper/sterne/details/kelira/hauptseite/index.html"
+            ],
+            [
+              "Arun",
+              "inhalte/himmelskoerper/planeten/details/arun/hauptseite/index.html"
+            ],
+            [
+              "Velth",
+              "inhalte/himmelskoerper/planeten/details/velth/hauptseite/index.html"
+            ],
+            [
+              "Isaru",
+              "inhalte/himmelskoerper/planeten/details/isaru/hauptseite/index.html"
+            ],
+            [
+              "Seyrath",
+              "inhalte/himmelskoerper/planeten/details/seyrath/hauptseite/index.html"
+            ],
+            [
+              "Doran",
+              "inhalte/himmelskoerper/planeten/details/doran/hauptseite/index.html"
+            ],
+            [
+              "Ombrel",
+              "inhalte/himmelskoerper/planeten/details/ombrel/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Halvek.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "11.400 km"
+            ],
+            [
+              "Masse",
+              "6,8 Erdmassen"
+            ],
+            [
+              "Mittlere Dichte",
+              "6,54 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "20,83 m/s² (2,124 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "21,81 km/s"
+            ]
+          ],
+          "vergleich": {
+            "mit": "Erde",
+            "werte": [
+              [
+                "Durchmesser",
+                22800,
+                12742,
+                "km"
+              ],
+              [
+                "Masse",
+                6.8,
+                1,
+                "Erdmassen"
+              ],
+              [
+                "Schwerkraft",
+                2.12,
+                1,
+                "g"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "Planetare Struktur": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Planetare Struktur von Halvek.",
+      "abschnitte": [
+        {
+          "titel": "Schalenbau",
+          "schichten": [
+            [
+              "Eiskruste",
+              "Gefrorenes Wasser und flüchtige Stoffe"
+            ],
+            [
+              "Eismantel",
+              "Hochdruckeis, eventuell mit flüssigen Schichten"
+            ],
+            [
+              "Kern",
+              "Gestein"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geografie": {
+      "gruppe": "Natur",
+      "icon": "△",
+      "intro": "Geografie von Halvek.",
+      "abschnitte": [
+        {
+          "titel": "Oberfläche",
+          "text": [
+            "Die Oberfläche von Halvek ist kalt."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Halvek.",
+      "abschnitte": [
+        {
+          "titel": "Gashülle",
+          "text": [
+            "Halvek hält eine dünne, kalte Gashülle fest."
+          ],
+          "balken": {
+            "werte": [
+              [
+                "Kohlendioxid",
+                62
+              ],
+              [
+                "Stickstoff",
+                33
+              ],
+              [
+                "Argon",
+                5
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Halvek.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 1,269 AE Abstand zu Kelira liegt die Gleichgewichtstemperatur von Halvek bei rund -113 °C – kalt."
+          ]
+        }
+      ]
+    },
+    "Gewässer": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gewässer von Halvek.",
+      "abschnitte": [
+        {
+          "titel": "Wasser",
+          "text": [
+            "Wasser kommt von Halvek gefroren vor; unter dem Eis sind flüssige Schichten möglich."
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Halvek.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Halvek ist groß genug, um im Inneren noch Wärme zu speichern; Spuren alter vulkanischer Tätigkeit sind wahrscheinlich."
+          ]
+        }
+      ]
+    },
+    "Biosphäre": {
+      "gruppe": "Natur",
+      "icon": "❧",
+      "intro": "Biosphäre von Halvek.",
+      "abschnitte": [
+        {
+          "titel": "Leben",
+          "text": [
+            "Auf Halvek ist kein Leben verzeichnet."
+          ]
+        }
+      ]
+    },
+    "Spezies": {
+      "gruppe": "Zivilisation",
+      "icon": "✿",
+      "intro": "Spezies von Halvek.",
+      "abschnitte": [
+        {
+          "titel": "Bewohner",
+          "text": [
+            "Halvek ist keine Heimat einer intelligenten Spezies."
+          ]
+        },
+        {
+          "titel": "Im System von Seyrath",
+          "text": [
+            "Das Kelira-System ist die Heimat der Chronoiden: Ihr Planet Seyrath umkreist Kelira."
+          ],
+          "verweise": [
+            [
+              "Seyrath",
+              "inhalte/himmelskoerper/planeten/details/seyrath/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Chronoiden",
+              "inhalte/spezies/Mentale Spezies/Chronoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Zivilisation": {
+      "gruppe": "Zivilisation",
+      "icon": "▥",
+      "intro": "Zivilisation von Halvek.",
+      "abschnitte": [
+        {
+          "titel": "Siedlungen",
+          "text": [
+            "Für Halvek sind keine dauerhaften Siedlungen verzeichnet."
+          ]
+        },
+        {
+          "titel": "Im System von Seyrath",
+          "text": [
+            "Das Kelira-System ist die Heimat der Chronoiden: Ihr Planet Seyrath umkreist Kelira."
+          ],
+          "verweise": [
+            [
+              "Seyrath",
+              "inhalte/himmelskoerper/planeten/details/seyrath/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Chronoiden",
+              "inhalte/spezies/Mentale Spezies/Chronoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Halvek.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Halvek entstand zusammen mit dem Kelira-System vor rund 5,4 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Fraktionen": {
+      "gruppe": "Zivilisation",
+      "icon": "◇",
+      "intro": "Fraktionen von Halvek.",
+      "abschnitte": [
+        {
+          "titel": "Ansprüche",
+          "text": [
+            "Für Halvek sind keine Fraktionsansprüche verzeichnet."
+          ]
+        }
+      ]
+    },
+    "Rohstoffe": {
+      "gruppe": "Weitere",
+      "icon": "⬡",
+      "intro": "Rohstoffe von Halvek.",
+      "abschnitte": [
+        {
+          "titel": "Rohstoffe",
+          "liste": [
+            "Wassereis",
+            "Flüchtige Stoffe"
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Halvek.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Wie ist der innere Aufbau beschaffen?",
+            "Gab es früher eine dichtere Atmosphäre?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Halvek ist mit allen Bahndaten im Kelira-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=seyrath-stern&objekt=seyrath-halvek"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Halvek.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Äußerster Planet des Kelira-Systems"
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Halvek.",
+      "abschnitte": [
+        {
+          "titel": "Halvek – Archivbild",
+          "bild": true,
+          "bildtext": "Halvek"
+        }
+      ]
+    }
+  }
+}

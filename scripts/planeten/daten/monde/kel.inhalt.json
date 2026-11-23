@@ -1,0 +1,558 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Kel",
+  "genitiv": "von Kel",
+  "dossierName": "Kel-Dossier",
+  "klasse": "Mond",
+  "intro": "Kel ist ein kleiner eisiger Mond Veyls mit geringer Schwerkraft, zahlreichen Einschlagspuren und einer Oberfläche aus Eis und mineralischem Material. Kel umkreist Veyl in 3,5 Tage.",
+  "globusDaten": {
+    "planet": "salzkrustenmond-im-schwarzen-all",
+    "klasse": "Gestein",
+    "radius": 180000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=nerath-stern&objekt=nerath-kel",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-67B1368EBC"
+    ],
+    [
+      "Typ",
+      "Mond"
+    ],
+    [
+      "Sternsystem",
+      "Terev-System"
+    ],
+    [
+      "Zentralkörper",
+      "Veyl"
+    ],
+    [
+      "Große Halbachse",
+      "130.372 km"
+    ],
+    [
+      "Umlaufzeit",
+      "3,5 Tage"
+    ],
+    [
+      "Durchmesser",
+      "360 km"
+    ],
+    [
+      "Masse",
+      "1,19 · 10^20 kg"
+    ],
+    [
+      "Schwerkraft",
+      "0,03 g"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -223 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Terev-System"
+    ],
+    [
+      "Zentralstern",
+      "Terev",
+      "inhalte/himmelskoerper/sterne/details/terev/hauptseite/index.html"
+    ],
+    [
+      "Umläuft",
+      "Veyl",
+      "inhalte/himmelskoerper/planeten/details/veyl/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "130.372 km"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Kel im Terev-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=nerath-stern&objekt=nerath-kel",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Terev",
+      "href": "inhalte/himmelskoerper/sterne/details/terev/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◍",
+      "art": "Mutterplanet",
+      "titel": "Veyl",
+      "href": "inhalte/himmelskoerper/planeten/details/veyl/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Synaptoiden",
+      "titel": "Nerath",
+      "href": "inhalte/himmelskoerper/planeten/details/nerath/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Synaptoiden",
+      "href": "inhalte/spezies/Mentale Spezies/Synaptoiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Terev-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=nerath-stern&objekt=nerath-kel"
+    },
+    {
+      "titel": "Speziesdossier Synaptoiden",
+      "href": "inhalte/spezies/Mentale Spezies/Synaptoiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#090909",
+      "tiefe": "#151514",
+      "akzent": "#d4d4d1",
+      "sand": "#d7ceb3",
+      "moos": "#b1cda7",
+      "ozean": "#8eb3c6",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#555553"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Astronomie"
+      ],
+      [
+        "Planet",
+        "Mutterplanet"
+      ],
+      [
+        "Kräfte",
+        "Gezeiten"
+      ],
+      [
+        "Tiefe",
+        "Geologie"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Mutterplanet": {
+      "gruppe": "Wissenschaft",
+      "icon": "◐",
+      "intro": "Mutterplanet von Kel.",
+      "abschnitte": [
+        {
+          "titel": "Veyl",
+          "text": [
+            "Veyl ist ein äußerer eisreicher Planet mit Wassereis, mineralischen Ablagerungen und gefrorenen flüchtigen Stoffen. Seine exzentrische, um 14° geneigte Bahn verändert den Abstand zu Terev deutlich; die sehr kalte Atmosphäre wechselt saisonal ihre Dichte."
+          ],
+          "daten": [
+            [
+              "Typ",
+              "Eisplanet"
+            ],
+            [
+              "Durchmesser",
+              "18.476 km"
+            ],
+            [
+              "Abstand des Mondes",
+              "130.372 km (14,1 Planetenradien)"
+            ]
+          ],
+          "verweise": [
+            [
+              "Veyl",
+              "inhalte/himmelskoerper/planeten/details/veyl/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Gezeiten": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gezeiten von Kel.",
+      "abschnitte": [
+        {
+          "titel": "Gezeitenkräfte",
+          "text": [
+            "Auf seiner Bahn in 130.372 km Abstand wirken starke Gezeitenkräfte von Veyl auf Kel."
+          ]
+        }
+      ]
+    },
+    "Gebundene Rotation": {
+      "gruppe": "Wissenschaft",
+      "icon": "↻",
+      "intro": "Gebundene Rotation von Kel.",
+      "abschnitte": [
+        {
+          "titel": "Rotation",
+          "text": [
+            "Kel wendet Veyl vermutlich stets dieselbe Seite zu: Ein Tag dauert so lange wie ein Umlauf – 3,5 Tage."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Kel auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Kel",
+          "text": [
+            "Kel ist ein kleiner eisiger Mond Veyls mit geringer Schwerkraft, zahlreichen Einschlagspuren und einer Oberfläche aus Eis und mineralischem Material.",
+            "Kel umkreist Veyl in 3,5 Tage."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Mond"
+            ],
+            [
+              "Sternsystem",
+              "Terev-System"
+            ],
+            [
+              "Zentralkörper",
+              "Veyl"
+            ],
+            [
+              "Große Halbachse",
+              "130.372 km"
+            ],
+            [
+              "Umlaufzeit",
+              "3,5 Tage"
+            ],
+            [
+              "Durchmesser",
+              "360 km"
+            ],
+            [
+              "Masse",
+              "1,19 · 10^20 kg"
+            ],
+            [
+              "Schwerkraft",
+              "0,03 g"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -223 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Nerath",
+          "text": [
+            "Das Terev-System ist die Heimat der Synaptoiden: Ihr Planet Nerath umkreist Terev."
+          ],
+          "verweise": [
+            [
+              "Nerath",
+              "inhalte/himmelskoerper/planeten/details/nerath/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Synaptoiden",
+              "inhalte/spezies/Mentale Spezies/Synaptoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Kel im Terev-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Veyl"
+            ],
+            [
+              "Große Halbachse",
+              "130.372 km"
+            ],
+            [
+              "Exzentrizität",
+              "0,02"
+            ],
+            [
+              "Bahnneigung",
+              "2°"
+            ],
+            [
+              "Umlaufzeit",
+              "3,5 Tage"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Terev · Stern",
+              "Orangegelber Zwerg (K0 V)"
+            ],
+            [
+              "Vaskir · 0,16 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Sereth · 0,42 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Nerath · 0,93 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Talvek · 1,57 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Urakan · 4,4 AE",
+              "Gasriese"
+            ],
+            [
+              "Oryss · 9,3 AE",
+              "Eisriese"
+            ],
+            [
+              "Veyl · 22,8 AE",
+              "Eisplanet"
+            ],
+            [
+              "Relt · 44 AE",
+              "Zwergplanet"
+            ],
+            [
+              "Othir · 52 AE",
+              "Zwergplanet"
+            ],
+            [
+              "Skalenband · 2,2–3,2 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Taren-Saum · 38–65 AE",
+              "Kleinkörpergürtel"
+            ],
+            [
+              "Terev-Fernwolke · 1.500–8.000 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Terev",
+              "inhalte/himmelskoerper/sterne/details/terev/hauptseite/index.html"
+            ],
+            [
+              "Vaskir",
+              "inhalte/himmelskoerper/planeten/details/vaskir/hauptseite/index.html"
+            ],
+            [
+              "Sereth",
+              "inhalte/himmelskoerper/planeten/details/sereth/hauptseite/index.html"
+            ],
+            [
+              "Nerath",
+              "inhalte/himmelskoerper/planeten/details/nerath/hauptseite/index.html"
+            ],
+            [
+              "Talvek",
+              "inhalte/himmelskoerper/planeten/details/talvek/hauptseite/index.html"
+            ],
+            [
+              "Urakan",
+              "inhalte/himmelskoerper/planeten/details/urakan/hauptseite/index.html"
+            ],
+            [
+              "Oryss",
+              "inhalte/himmelskoerper/planeten/details/oryss/hauptseite/index.html"
+            ],
+            [
+              "Veyl",
+              "inhalte/himmelskoerper/planeten/details/veyl/hauptseite/index.html"
+            ],
+            [
+              "Relt",
+              "inhalte/himmelskoerper/zwergplaneten/details/relt/hauptseite/index.html"
+            ],
+            [
+              "Othir",
+              "inhalte/himmelskoerper/zwergplaneten/details/othir/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Kel.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "180 km"
+            ],
+            [
+              "Masse",
+              "1,19 · 10^20 kg"
+            ],
+            [
+              "Mittlere Dichte",
+              "4,89 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "0,25 m/s² (0,025 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "0,3 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Kel.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Kel ist geologisch weitgehend erstarrt; Einschläge haben seine Oberfläche geformt."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Kel.",
+      "abschnitte": [
+        {
+          "titel": "Gashülle",
+          "text": [
+            "Kel besitzt keine nennenswerte Atmosphäre – dafür ist die Schwerkraft zu gering."
+          ]
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Kel.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 22,8 AE Abstand zu Terev liegt die Gleichgewichtstemperatur von Kel bei rund -223 °C – eisig kalt."
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Kel.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Kel entstand zusammen mit dem Terev-System vor rund 5,6 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Kel.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Ist der Mond eingefangen oder mit seinem Planeten entstanden?",
+            "Welche Spuren tragen seine ältesten Krater?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Kel ist mit allen Bahndaten im Terev-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=nerath-stern&objekt=nerath-kel"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Kel.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Kel ist ein kleiner eisiger Mond Veyls mit geringer Schwerkraft, zahlreichen Einschlagspuren und einer Oberfläche aus Eis und mineralischem Material."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Kel.",
+      "abschnitte": [
+        {
+          "titel": "Kel – Archivbild",
+          "bild": true,
+          "bildtext": "Kel"
+        }
+      ]
+    }
+  }
+}

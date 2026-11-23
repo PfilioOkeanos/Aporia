@@ -1,0 +1,19 @@
+@import url('../05%20%E2%80%93%20Geografie/index.css');
+body.earth-page.earth-nature-07 { background: radial-gradient(ellipse at 55% 20%, #144851, #061b20 77%); }
+.earth-nature-07 .earth-panel { background: linear-gradient(140deg, #15424c, #09242b 76%); }
+.nature-zones { grid-column: 1 / 3; }
+.nature-zones .nature-cards { grid-template-columns: repeat(auto-fit,minmax(8rem,1fr)); }
+.nature-zones .nature-cards img { height: 5.6rem; }
+.earth-nature-07 .climate-change { background: linear-gradient(138deg, #674528, #342618 74%); }
+.climate-globe { position: relative; isolation: isolate; margin: 0 auto; width: min(90%, 12rem); aspect-ratio: 1; border-radius: 50%; overflow: hidden; box-shadow: 0 0 1.3rem #48b7ea65; }
+.climate-globe img, .climate-globe::after { position: absolute; inset: 0; width: 100%; height: 100%; }
+.climate-globe img { object-fit: cover; }
+.climate-globe::after { content: ""; background: linear-gradient(#8ad9fb 0 10%,#3184a1 10% 20%,#7ec355 20% 32%,#f3cc57 32% 43%,#dc773d 43% 57%,#f3cc57 57% 68%,#7ec355 68% 80%,#3184a1 80% 90%,#8ad9fb 90%); opacity: .54; }
+.climate-legend { display: flex; flex-wrap: wrap; list-style: none; gap: .35rem .65rem; margin: .35rem .65rem .65rem; padding: 0; font-size: .78rem; }
+.climate-legend li::before { content: ""; width: .6rem; height: .6rem; display: inline-block; border-radius: 2px; margin-right: .25rem; background: var(--zone); }
+.climate-legend li:nth-child(1) { --zone:#8ad9fb; }
+.climate-legend li:nth-child(2) { --zone:#3184a1; }
+.climate-legend li:nth-child(3) { --zone:#7ec355; }
+.climate-legend li:nth-child(4) { --zone:#f3cc57; }
+.climate-legend li:nth-child(5) { --zone:#dc773d; }
+@media (max-width: 1150px) { .nature-zones, .climate-change { grid-column: 1 / -1; } }

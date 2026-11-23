@@ -1,0 +1,580 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Orim",
+  "genitiv": "von Orim",
+  "dossierName": "Orim-Dossier",
+  "klasse": "Mond",
+  "intro": "Orim ist der kleinere äußere Mond Khaluuns. Seine lange Umlaufzeit und lokal begrenzten salzigen Tiefenbrüche unterscheiden ihn von Deyra.",
+  "globusDaten": {
+    "planet": "lebender-mond-mit-blauen-atemrohren",
+    "klasse": "Gestein",
+    "radius": 790000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=ilaren-stern&objekt=ilaren-orim",
+  "grunddaten": [
+    [
+      "System-ID",
+      "ilaren-orim"
+    ],
+    [
+      "Archiv-ID",
+      "AP-B4816FEC86"
+    ],
+    [
+      "Typ",
+      "Mond"
+    ],
+    [
+      "Sternsystem",
+      "Ilaren-System"
+    ],
+    [
+      "Zentralkörper",
+      "Khaluun"
+    ],
+    [
+      "Große Halbachse",
+      "335.099 km"
+    ],
+    [
+      "Umlaufzeit",
+      "21,5 Tage"
+    ],
+    [
+      "Durchmesser",
+      "1.580 km"
+    ],
+    [
+      "Masse",
+      "0,163 Mondmassen"
+    ],
+    [
+      "Schwerkraft",
+      "0,13 g"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -6 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Ilaren-System"
+    ],
+    [
+      "Zentralstern",
+      "Ilaren",
+      "inhalte/himmelskoerper/sterne/details/ilaren/hauptseite/index.html"
+    ],
+    [
+      "Umläuft",
+      "Khaluun",
+      "inhalte/himmelskoerper/planeten/details/khaluun/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "335.099 km"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Orim im Ilaren-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=ilaren-stern&objekt=ilaren-orim",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Ilaren",
+      "href": "inhalte/himmelskoerper/sterne/details/ilaren/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◍",
+      "art": "Mutterplanet",
+      "titel": "Khaluun",
+      "href": "inhalte/himmelskoerper/planeten/details/khaluun/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Kollektiden (Tessari)",
+      "titel": "Khaluun",
+      "href": "inhalte/himmelskoerper/planeten/details/khaluun/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Kollektiden (Tessari)",
+      "href": "inhalte/spezies/Mentale Spezies/Kollektiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Ilaren-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=ilaren-stern&objekt=ilaren-orim"
+    },
+    {
+      "titel": "Speziesdossier Kollektiden (Tessari)",
+      "href": "inhalte/spezies/Mentale Spezies/Kollektiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#070606",
+      "tiefe": "#0f0e0c",
+      "akzent": "#b4aaa2",
+      "sand": "#baab95",
+      "moos": "#949d7f",
+      "ozean": "#76888d",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#3f3832"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Astronomie"
+      ],
+      [
+        "Planet",
+        "Mutterplanet"
+      ],
+      [
+        "Kräfte",
+        "Gezeiten"
+      ],
+      [
+        "Tiefe",
+        "Geologie"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Mutterplanet": {
+      "gruppe": "Wissenschaft",
+      "icon": "◐",
+      "intro": "Mutterplanet von Orim.",
+      "abschnitte": [
+        {
+          "titel": "Khaluun",
+          "text": [
+            "Khaluun ist die wasserreiche Heimatwelt der Tessari (Kollektiden). Rund 61 Prozent seiner Oberfläche sind von Ozeanen bedeckt. Aktive Plattentektonik, weit verzweigte Flüsse, Wanderdeltas, Nebelwälder und zwei Monde prägen die Welt."
+          ],
+          "daten": [
+            [
+              "Typ",
+              "Gemäßigter, wasserreicher Gesteinsplanet"
+            ],
+            [
+              "Durchmesser",
+              "13.124 km"
+            ],
+            [
+              "Abstand des Mondes",
+              "335.099 km (51,1 Planetenradien)"
+            ]
+          ],
+          "verweise": [
+            [
+              "Khaluun",
+              "inhalte/himmelskoerper/planeten/details/khaluun/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Weitere Monde von Khaluun",
+          "liste": [
+            "Deyra – Umlauf in 8,8 Tage"
+          ],
+          "verweise": [
+            [
+              "Deyra",
+              "inhalte/himmelskoerper/monde/details/deyra/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Gebundener Begleiter",
+          "text": [
+            "Khaluun ist Orims Mutterplanet. Orim ist kleiner und weiter entfernt als Deyra und beeinflusst die Gezeiten deshalb schwächer."
+          ]
+        }
+      ]
+    },
+    "Gezeiten": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gezeiten von Orim.",
+      "abschnitte": [
+        {
+          "titel": "Gezeitenkräfte",
+          "text": [
+            "Auf seiner Bahn in 335.099 km Abstand wirken starke Gezeitenkräfte von Khaluun auf Orim."
+          ]
+        },
+        {
+          "titel": "Schwacher zusätzlicher Gezeitenrhythmus",
+          "text": [
+            "Orims Beitrag überlagert Deyras stärkeren Zyklus mit einer zweiten, langsameren Komponente. Eine starke innere Erwärmung durch die Bahn wird nicht angenommen."
+          ]
+        }
+      ]
+    },
+    "Gebundene Rotation": {
+      "gruppe": "Wissenschaft",
+      "icon": "↻",
+      "intro": "Gebundene Rotation von Orim.",
+      "abschnitte": [
+        {
+          "titel": "Rotation",
+          "text": [
+            "Orim wendet Khaluun vermutlich stets dieselbe Seite zu: Ein Tag dauert so lange wie ein Umlauf – 21,5 Tage."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Orim auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Orim",
+          "text": [
+            "Orim ist der kleinere äußere Mond Khaluuns. In rund 335.000 Kilometern Entfernung überlagert seine Gravitation die stärkeren Deyra-Gezeiten und erzeugt wechselnde, aber nicht planetenweit katastrophale Tidenzyklen.",
+            "Orim umkreist Khaluun in 21,5 Tage."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Mond"
+            ],
+            [
+              "Sternsystem",
+              "Ilaren-System"
+            ],
+            [
+              "Zentralkörper",
+              "Khaluun"
+            ],
+            [
+              "Große Halbachse",
+              "335.099 km"
+            ],
+            [
+              "Umlaufzeit",
+              "21,5 Tage"
+            ],
+            [
+              "Durchmesser",
+              "1.580 km"
+            ],
+            [
+              "Masse",
+              "0,163 Mondmassen"
+            ],
+            [
+              "Schwerkraft",
+              "0,13 g"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -6 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Khaluun",
+          "text": [
+            "Das Ilaren-System ist die Heimat der Kollektiden (Tessari): Ihr Planet Khaluun umkreist Ilaren, und Orim ist einer seiner Monde."
+          ],
+          "verweise": [
+            [
+              "Khaluun",
+              "inhalte/himmelskoerper/planeten/details/khaluun/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Kollektiden (Tessari)",
+              "inhalte/spezies/Mentale Spezies/Kollektiden/hauptseite/Spezies.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Äußerer Mond",
+          "text": [
+            "Orim kreist im Mittel rund 335.100 km von Khaluun entfernt und vollendet einen Umlauf in etwa 21,48 Tagen. Die Bahn liegt innerhalb des gravitativen Einflussbereichs Khaluuns."
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Orim im Ilaren-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Khaluun"
+            ],
+            [
+              "Große Halbachse",
+              "335.099 km"
+            ],
+            [
+              "Exzentrizität",
+              "0,009"
+            ],
+            [
+              "Bahnneigung",
+              "0,8°"
+            ],
+            [
+              "Umlaufzeit",
+              "21,5 Tage"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Ilaren · Stern",
+              "Orangefarbener Hauptreihenstern (K3 V)"
+            ],
+            [
+              "Harrek · 0,15 AE",
+              "Heißer Gesteinsplanet"
+            ],
+            [
+              "Vosan · 0,31 AE",
+              "Trockener Gesteinsplanet"
+            ],
+            [
+              "Khaluun · 0,52 AE",
+              "Gemäßigter, wasserreicher Gesteinsplanet"
+            ],
+            [
+              "Meyt · 0,92 AE",
+              "Kalter Gesteinsplanet"
+            ],
+            [
+              "Daran · 2,45 AE",
+              "Gasriese"
+            ],
+            [
+              "Ulmar · 5,9 AE",
+              "Eisriese"
+            ],
+            [
+              "Ilaren-Asteroidengürtel · 1,3–1,9 AE",
+              "Asteroidengürtel"
+            ]
+          ],
+          "verweise": [
+            [
+              "Ilaren",
+              "inhalte/himmelskoerper/sterne/details/ilaren/hauptseite/index.html"
+            ],
+            [
+              "Harrek",
+              "inhalte/himmelskoerper/planeten/details/harrek/hauptseite/index.html"
+            ],
+            [
+              "Vosan",
+              "inhalte/himmelskoerper/planeten/details/vosan/hauptseite/index.html"
+            ],
+            [
+              "Khaluun",
+              "inhalte/himmelskoerper/planeten/details/khaluun/hauptseite/index.html"
+            ],
+            [
+              "Meyt",
+              "inhalte/himmelskoerper/planeten/details/meyt/hauptseite/index.html"
+            ],
+            [
+              "Daran",
+              "inhalte/himmelskoerper/planeten/details/daran/hauptseite/index.html"
+            ],
+            [
+              "Ulmar",
+              "inhalte/himmelskoerper/planeten/details/ulmar/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Orim.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "790 km"
+            ],
+            [
+              "Masse",
+              "0,163 Mondmassen"
+            ],
+            [
+              "Mittlere Dichte",
+              "5,78 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "1,28 m/s² (0,13 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "1,42 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Orim.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Orim ist geologisch weitgehend erstarrt; Einschläge haben seine Oberfläche geformt."
+          ]
+        },
+        {
+          "titel": "Kompakter kleiner Mond",
+          "daten": [
+            [
+              "Radius",
+              "790 km"
+            ],
+            [
+              "Masse",
+              "0,002 Erdmassen"
+            ],
+            [
+              "Abgeleitete Dichte",
+              "ca. 5,8 g/cm³"
+            ]
+          ],
+          "text": [
+            "Die hohe Modell-Dichte deutet auf einen kompakten silikatischen Körper mit metallreichem Kern. Oberflächenmerkmale sind dunkle Krater und einzelne salzhaltige Bruchzonen."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Orim.",
+      "abschnitte": [
+        {
+          "titel": "Gashülle",
+          "text": [
+            "Orim besitzt keine nennenswerte Atmosphäre – dafür ist die Schwerkraft zu gering."
+          ]
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Orim.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 0,52 AE Abstand zu Ilaren liegt die Gleichgewichtstemperatur von Orim bei rund -6 °C – gemäßigt."
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Orim.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Orim entstand zusammen mit dem Ilaren-System vor rund 5,6 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Orim.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Ist der Mond eingefangen oder mit seinem Planeten entstanden?",
+            "Welche Spuren tragen seine ältesten Krater?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Orim ist mit allen Bahndaten im Ilaren-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=ilaren-stern&objekt=ilaren-orim"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Orim.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Orim ist der kleinere äußere Mond Khaluuns. In rund 335.000 Kilometern Entfernung überlagert seine Gravitation die stärkeren Deyra-Gezeiten und erzeugt wechselnde, aber nicht planetenweit katastrophale Tidenzyklen."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Orim.",
+      "abschnitte": [
+        {
+          "titel": "Orim – Archivbild",
+          "bild": true,
+          "bildtext": "Orim"
+        }
+      ]
+    }
+  }
+}

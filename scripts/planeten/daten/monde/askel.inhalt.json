@@ -1,0 +1,546 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Askel",
+  "genitiv": "von Askel",
+  "dossierName": "Askel-Dossier",
+  "klasse": "Mond",
+  "intro": "Askel ist ein großer Eismond mit einer Eisrinde über einem verborgenen Ozean. Askel umkreist Ysmeroth V in 9,6 Tage.",
+  "globusDaten": {
+    "planet": "eisrinde-uber-verborgenem-ozean",
+    "klasse": "Eis",
+    "radius": 2200000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=karynth-stern&objekt=karynth-askel",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-2010896FFB"
+    ],
+    [
+      "Typ",
+      "Mond"
+    ],
+    [
+      "Sternsystem",
+      "Ysmeroth-System"
+    ],
+    [
+      "Zentralkörper",
+      "Ysmeroth V"
+    ],
+    [
+      "Große Halbachse",
+      "1.456.697 km"
+    ],
+    [
+      "Umlaufzeit",
+      "9,6 Tage"
+    ],
+    [
+      "Durchmesser",
+      "4.400 km"
+    ],
+    [
+      "Masse",
+      "1,951 Mondmassen"
+    ],
+    [
+      "Schwerkraft",
+      "0,2 g"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -140 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Ysmeroth-System"
+    ],
+    [
+      "Zentralstern",
+      "Ysmeroth",
+      "inhalte/himmelskoerper/sterne/details/ysmeroth/hauptseite/index.html"
+    ],
+    [
+      "Umläuft",
+      "Ysmeroth V",
+      "inhalte/himmelskoerper/planeten/details/ysmeroth-v/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "1.456.697 km"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Askel im Ysmeroth-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=karynth-stern&objekt=karynth-askel",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Ysmeroth",
+      "href": "inhalte/himmelskoerper/sterne/details/ysmeroth/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◍",
+      "art": "Mutterplanet",
+      "titel": "Ysmeroth V",
+      "href": "inhalte/himmelskoerper/planeten/details/ysmeroth-v/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Metamorphen",
+      "titel": "Karynth",
+      "href": "inhalte/himmelskoerper/planeten/details/karynth/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Metamorphen",
+      "href": "inhalte/spezies/Biologische Spezies/Meta Morphen/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Ysmeroth-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=karynth-stern&objekt=karynth-askel"
+    },
+    {
+      "titel": "Speziesdossier Metamorphen",
+      "href": "inhalte/spezies/Biologische Spezies/Meta Morphen/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#0a0b0b",
+      "tiefe": "#161819",
+      "akzent": "#dbe4ee",
+      "sand": "#dddcc6",
+      "moos": "#b7e0c1",
+      "ozean": "#92c5eb",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#5a6067"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Astronomie"
+      ],
+      [
+        "Planet",
+        "Mutterplanet"
+      ],
+      [
+        "Kräfte",
+        "Gezeiten"
+      ],
+      [
+        "Tiefe",
+        "Geologie"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Mutterplanet": {
+      "gruppe": "Wissenschaft",
+      "icon": "◐",
+      "intro": "Mutterplanet von Askel.",
+      "abschnitte": [
+        {
+          "titel": "Ysmeroth V",
+          "text": [
+            "Ysmeroth V ist ein stürmischer Super-Jupiter auf deutlich elliptischer Bahn. Er hat das Gebiet zwischen 1,6 und 5 AE leergeräumt; statt eines Asteroidengürtels sammeln sich Trümmer nur in seinen Lagrange-Punkten."
+          ],
+          "daten": [
+            [
+              "Typ",
+              "Gasriese"
+            ],
+            [
+              "Durchmesser",
+              "141.000 km"
+            ],
+            [
+              "Abstand des Mondes",
+              "1.456.697 km (20,7 Planetenradien)"
+            ]
+          ],
+          "verweise": [
+            [
+              "Ysmeroth V",
+              "inhalte/himmelskoerper/planeten/details/ysmeroth-v/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Weitere Monde von Ysmeroth V",
+          "liste": [
+            "Thren – Umlauf in 2,4 Tage"
+          ],
+          "verweise": [
+            [
+              "Thren",
+              "inhalte/himmelskoerper/monde/details/thren/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Gezeiten": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gezeiten von Askel.",
+      "abschnitte": [
+        {
+          "titel": "Gezeitenkräfte",
+          "text": [
+            "Auf seiner Bahn in 1.456.697 km Abstand wirken starke Gezeitenkräfte von Ysmeroth V auf Askel."
+          ]
+        }
+      ]
+    },
+    "Gebundene Rotation": {
+      "gruppe": "Wissenschaft",
+      "icon": "↻",
+      "intro": "Gebundene Rotation von Askel.",
+      "abschnitte": [
+        {
+          "titel": "Rotation",
+          "text": [
+            "Askel wendet Ysmeroth V vermutlich stets dieselbe Seite zu: Ein Tag dauert so lange wie ein Umlauf – 9,6 Tage."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Askel auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Askel",
+          "text": [
+            "Askel ist ein großer Eismond mit einer Eisrinde über einem verborgenen Ozean.",
+            "Askel umkreist Ysmeroth V in 9,6 Tage."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Mond"
+            ],
+            [
+              "Sternsystem",
+              "Ysmeroth-System"
+            ],
+            [
+              "Zentralkörper",
+              "Ysmeroth V"
+            ],
+            [
+              "Große Halbachse",
+              "1.456.697 km"
+            ],
+            [
+              "Umlaufzeit",
+              "9,6 Tage"
+            ],
+            [
+              "Durchmesser",
+              "4.400 km"
+            ],
+            [
+              "Masse",
+              "1,951 Mondmassen"
+            ],
+            [
+              "Schwerkraft",
+              "0,2 g"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -140 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Karynth",
+          "text": [
+            "Das Ysmeroth-System ist die Heimat der Metamorphen: Ihr Planet Karynth umkreist Ysmeroth."
+          ],
+          "verweise": [
+            [
+              "Karynth",
+              "inhalte/himmelskoerper/planeten/details/karynth/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Metamorphen",
+              "inhalte/spezies/Biologische Spezies/Meta Morphen/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Askel im Ysmeroth-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Ysmeroth V"
+            ],
+            [
+              "Große Halbachse",
+              "1.456.697 km"
+            ],
+            [
+              "Exzentrizität",
+              "0,004"
+            ],
+            [
+              "Bahnneigung",
+              "0,9°"
+            ],
+            [
+              "Umlaufzeit",
+              "9,6 Tage"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Ysmeroth · Stern",
+              "Orangefarbener Zwerg (K2 V)"
+            ],
+            [
+              "Ysmeroth B · Begleitstern in 310 AE",
+              "Roter Zwerg (M4 V)"
+            ],
+            [
+              "Ysmeroth I · 0,09 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Ysmeroth II · 0,45 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Karynth · 0,72 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Ysmeroth IV · 1,14 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Ysmeroth V · 2,9 AE",
+              "Gasriese"
+            ],
+            [
+              "Ysmeroth VI · 13,8 AE",
+              "Eisriese"
+            ],
+            [
+              "Graumantel · 40–56 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Ysmeroth",
+              "inhalte/himmelskoerper/sterne/details/ysmeroth/hauptseite/index.html"
+            ],
+            [
+              "Ysmeroth B",
+              "inhalte/himmelskoerper/sterne/details/ysmeroth-b/hauptseite/index.html"
+            ],
+            [
+              "Ysmeroth I",
+              "inhalte/himmelskoerper/planeten/details/ysmeroth-i/hauptseite/index.html"
+            ],
+            [
+              "Ysmeroth II",
+              "inhalte/himmelskoerper/planeten/details/ysmeroth-ii/hauptseite/index.html"
+            ],
+            [
+              "Karynth",
+              "inhalte/himmelskoerper/planeten/details/karynth/hauptseite/index.html"
+            ],
+            [
+              "Ysmeroth IV",
+              "inhalte/himmelskoerper/planeten/details/ysmeroth-iv/hauptseite/index.html"
+            ],
+            [
+              "Ysmeroth V",
+              "inhalte/himmelskoerper/planeten/details/ysmeroth-v/hauptseite/index.html"
+            ],
+            [
+              "Ysmeroth VI",
+              "inhalte/himmelskoerper/planeten/details/ysmeroth-vi/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Askel.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "2.200 km"
+            ],
+            [
+              "Masse",
+              "1,951 Mondmassen"
+            ],
+            [
+              "Mittlere Dichte",
+              "3,21 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "1,97 m/s² (0,201 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "2,95 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Askel.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Askel ist geologisch weitgehend erstarrt; Einschläge haben seine Oberfläche geformt."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Askel.",
+      "abschnitte": [
+        {
+          "titel": "Gashülle",
+          "text": [
+            "Askel besitzt keine nennenswerte Atmosphäre – dafür ist die Schwerkraft zu gering."
+          ]
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Askel.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 2,9 AE Abstand zu Ysmeroth liegt die Gleichgewichtstemperatur von Askel bei rund -140 °C – eisig kalt."
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Askel.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Askel entstand zusammen mit dem Ysmeroth-System vor rund 5,2 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Askel.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Ist der Mond eingefangen oder mit seinem Planeten entstanden?",
+            "Welche Spuren tragen seine ältesten Krater?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Askel ist mit allen Bahndaten im Ysmeroth-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=karynth-stern&objekt=karynth-askel"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Askel.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Größter Mond von Ysmeroth V"
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Askel.",
+      "abschnitte": [
+        {
+          "titel": "Askel – Archivbild",
+          "bild": true,
+          "bildtext": "Askel"
+        }
+      ]
+    }
+  }
+}

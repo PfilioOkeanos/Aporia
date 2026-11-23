@@ -1,0 +1,566 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Deyra",
+  "genitiv": "von Deyra",
+  "dossierName": "Deyra-Dossier",
+  "klasse": "Mond",
+  "intro": "Deyra ist der innere, größere der beiden Khaluun-Monde. Seine kompakte Gesteinszusammensetzung und stärkere Gezeitenwirkung prägen ihn stärker als den weiter außen kreisenden Orim.",
+  "globusDaten": {
+    "planet": "junger-akkretionsmond-im-schwarzen-all",
+    "klasse": "Gestein",
+    "radius": 1010000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=ilaren-stern&objekt=ilaren-deyra",
+  "grunddaten": [
+    [
+      "System-ID",
+      "ilaren-deyra"
+    ],
+    [
+      "Archiv-ID",
+      "AP-77B0B1A826"
+    ],
+    [
+      "Typ",
+      "Mond"
+    ],
+    [
+      "Sternsystem",
+      "Ilaren-System"
+    ],
+    [
+      "Zentralkörper",
+      "Khaluun"
+    ],
+    [
+      "Große Halbachse",
+      "185.501 km"
+    ],
+    [
+      "Umlaufzeit",
+      "8,8 Tage"
+    ],
+    [
+      "Durchmesser",
+      "2.020 km"
+    ],
+    [
+      "Masse",
+      "0,325 Mondmassen"
+    ],
+    [
+      "Schwerkraft",
+      "0,16 g"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -6 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Ilaren-System"
+    ],
+    [
+      "Zentralstern",
+      "Ilaren",
+      "inhalte/himmelskoerper/sterne/details/ilaren/hauptseite/index.html"
+    ],
+    [
+      "Umläuft",
+      "Khaluun",
+      "inhalte/himmelskoerper/planeten/details/khaluun/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "185.501 km"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Deyra im Ilaren-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=ilaren-stern&objekt=ilaren-deyra",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Ilaren",
+      "href": "inhalte/himmelskoerper/sterne/details/ilaren/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◍",
+      "art": "Mutterplanet",
+      "titel": "Khaluun",
+      "href": "inhalte/himmelskoerper/planeten/details/khaluun/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Kollektiden (Tessari)",
+      "titel": "Khaluun",
+      "href": "inhalte/himmelskoerper/planeten/details/khaluun/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Kollektiden (Tessari)",
+      "href": "inhalte/spezies/Mentale Spezies/Kollektiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Ilaren-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=ilaren-stern&objekt=ilaren-deyra"
+    },
+    {
+      "titel": "Speziesdossier Kollektiden (Tessari)",
+      "href": "inhalte/spezies/Mentale Spezies/Kollektiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#080807",
+      "tiefe": "#131110",
+      "akzent": "#c7c0b6",
+      "sand": "#cbbda2",
+      "moos": "#a5b690",
+      "ozean": "#849fa5",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#4c4740"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Astronomie"
+      ],
+      [
+        "Planet",
+        "Mutterplanet"
+      ],
+      [
+        "Kräfte",
+        "Gezeiten"
+      ],
+      [
+        "Tiefe",
+        "Geologie"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Mutterplanet": {
+      "gruppe": "Wissenschaft",
+      "icon": "◐",
+      "intro": "Mutterplanet von Deyra.",
+      "abschnitte": [
+        {
+          "titel": "Khaluun",
+          "text": [
+            "Khaluun ist die wasserreiche Heimatwelt der Tessari (Kollektiden). Rund 61 Prozent seiner Oberfläche sind von Ozeanen bedeckt. Aktive Plattentektonik, weit verzweigte Flüsse, Wanderdeltas, Nebelwälder und zwei Monde prägen die Welt."
+          ],
+          "daten": [
+            [
+              "Typ",
+              "Gemäßigter, wasserreicher Gesteinsplanet"
+            ],
+            [
+              "Durchmesser",
+              "13.124 km"
+            ],
+            [
+              "Abstand des Mondes",
+              "185.501 km (28,3 Planetenradien)"
+            ]
+          ],
+          "verweise": [
+            [
+              "Khaluun",
+              "inhalte/himmelskoerper/planeten/details/khaluun/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Weitere Monde von Khaluun",
+          "liste": [
+            "Orim – Umlauf in 21,5 Tage"
+          ],
+          "verweise": [
+            [
+              "Orim",
+              "inhalte/himmelskoerper/monde/details/orim/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Khaluun als Bezugskörper",
+          "text": [
+            "Khaluun ist Deyras Zentral- und Mutterplanet. Seine größere Masse hält Deyra gravitativ gebunden; die beiden Körper sind keine Doppelplaneten."
+          ]
+        }
+      ]
+    },
+    "Gezeiten": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gezeiten von Deyra.",
+      "abschnitte": [
+        {
+          "titel": "Gezeitenkräfte",
+          "text": [
+            "Auf seiner Bahn in 185.501 km Abstand wirken starke Gezeitenkräfte von Khaluun auf Deyra."
+          ]
+        },
+        {
+          "titel": "Gezeitenkopplung",
+          "text": [
+            "Deyras größere Masse und kürzere Entfernung machen ihn zum stärkeren Einzelbeitrag zu den Khaluun-Gezeiten. Die regelmäßige Bahn erzeugt wiederkehrende Küstenzyklen, aber keine planetenweite Katastrophenflut."
+          ]
+        }
+      ]
+    },
+    "Gebundene Rotation": {
+      "gruppe": "Wissenschaft",
+      "icon": "↻",
+      "intro": "Gebundene Rotation von Deyra.",
+      "abschnitte": [
+        {
+          "titel": "Rotation",
+          "text": [
+            "Deyra wendet Khaluun vermutlich stets dieselbe Seite zu: Ein Tag dauert so lange wie ein Umlauf – 8,8 Tage."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Deyra auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Deyra",
+          "text": [
+            "Deyra ist Khaluuns größerer und gezeitenwirksamerer Mond. Seine kraterreiche Gesteinsoberfläche bewahrt unterschiedlich alte Einschlagsbecken. Die Bahn liegt bei rund 185.000 Kilometern; die Umlaufzeit beträgt im Modell etwa 8,7 Tage.",
+            "Deyra umkreist Khaluun in 8,8 Tage."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Mond"
+            ],
+            [
+              "Sternsystem",
+              "Ilaren-System"
+            ],
+            [
+              "Zentralkörper",
+              "Khaluun"
+            ],
+            [
+              "Große Halbachse",
+              "185.501 km"
+            ],
+            [
+              "Umlaufzeit",
+              "8,8 Tage"
+            ],
+            [
+              "Durchmesser",
+              "2.020 km"
+            ],
+            [
+              "Masse",
+              "0,325 Mondmassen"
+            ],
+            [
+              "Schwerkraft",
+              "0,16 g"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -6 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Khaluun",
+          "text": [
+            "Das Ilaren-System ist die Heimat der Kollektiden (Tessari): Ihr Planet Khaluun umkreist Ilaren, und Deyra ist einer seiner Monde."
+          ],
+          "verweise": [
+            [
+              "Khaluun",
+              "inhalte/himmelskoerper/planeten/details/khaluun/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Kollektiden (Tessari)",
+              "inhalte/spezies/Mentale Spezies/Kollektiden/hauptseite/Spezies.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Innerer Mond",
+          "text": [
+            "Deyra umrundet Khaluun in durchschnittlich rund 185.500 km Entfernung. Ein Umlauf dauert 8,84 Tage. Die Bahn ist nahezu kreisförmig und liegt deutlich innerhalb der Hill-Sphäre Khaluuns."
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Deyra im Ilaren-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Khaluun"
+            ],
+            [
+              "Große Halbachse",
+              "185.501 km"
+            ],
+            [
+              "Exzentrizität",
+              "0,006"
+            ],
+            [
+              "Bahnneigung",
+              "0,4°"
+            ],
+            [
+              "Umlaufzeit",
+              "8,8 Tage"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Ilaren · Stern",
+              "Orangefarbener Hauptreihenstern (K3 V)"
+            ],
+            [
+              "Harrek · 0,15 AE",
+              "Heißer Gesteinsplanet"
+            ],
+            [
+              "Vosan · 0,31 AE",
+              "Trockener Gesteinsplanet"
+            ],
+            [
+              "Khaluun · 0,52 AE",
+              "Gemäßigter, wasserreicher Gesteinsplanet"
+            ],
+            [
+              "Meyt · 0,92 AE",
+              "Kalter Gesteinsplanet"
+            ],
+            [
+              "Daran · 2,45 AE",
+              "Gasriese"
+            ],
+            [
+              "Ulmar · 5,9 AE",
+              "Eisriese"
+            ],
+            [
+              "Ilaren-Asteroidengürtel · 1,3–1,9 AE",
+              "Asteroidengürtel"
+            ]
+          ],
+          "verweise": [
+            [
+              "Ilaren",
+              "inhalte/himmelskoerper/sterne/details/ilaren/hauptseite/index.html"
+            ],
+            [
+              "Harrek",
+              "inhalte/himmelskoerper/planeten/details/harrek/hauptseite/index.html"
+            ],
+            [
+              "Vosan",
+              "inhalte/himmelskoerper/planeten/details/vosan/hauptseite/index.html"
+            ],
+            [
+              "Khaluun",
+              "inhalte/himmelskoerper/planeten/details/khaluun/hauptseite/index.html"
+            ],
+            [
+              "Meyt",
+              "inhalte/himmelskoerper/planeten/details/meyt/hauptseite/index.html"
+            ],
+            [
+              "Daran",
+              "inhalte/himmelskoerper/planeten/details/daran/hauptseite/index.html"
+            ],
+            [
+              "Ulmar",
+              "inhalte/himmelskoerper/planeten/details/ulmar/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Deyra.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "1.010 km"
+            ],
+            [
+              "Masse",
+              "0,325 Mondmassen"
+            ],
+            [
+              "Mittlere Dichte",
+              "5,54 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "1,56 m/s² (0,159 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "1,78 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Deyra.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Deyra ist geologisch weitgehend erstarrt; Einschläge haben seine Oberfläche geformt."
+          ]
+        },
+        {
+          "titel": "Differenzierter Kratermond",
+          "text": [
+            "Bei 1.010 km Radius und 0,004 Erdmassen ergibt sich eine mittlere Dichte von etwa 5,5 g/cm³. Das passt zu einem kompakten, teilweise differenzierten Silikatkörper mit metallreicherem Inneren. Alte Einschlagsbecken und jüngere Bruchzonen werden als Oberflächenmerkmale angenommen."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Deyra.",
+      "abschnitte": [
+        {
+          "titel": "Gashülle",
+          "text": [
+            "Deyra besitzt keine nennenswerte Atmosphäre – dafür ist die Schwerkraft zu gering."
+          ]
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Deyra.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 0,52 AE Abstand zu Ilaren liegt die Gleichgewichtstemperatur von Deyra bei rund -6 °C – gemäßigt."
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Deyra.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Deyra entstand zusammen mit dem Ilaren-System vor rund 5,6 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Deyra.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Ist der Mond eingefangen oder mit seinem Planeten entstanden?",
+            "Welche Spuren tragen seine ältesten Krater?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Deyra ist mit allen Bahndaten im Ilaren-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=ilaren-stern&objekt=ilaren-deyra"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Deyra.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Größter Mond von Khaluun"
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Deyra.",
+      "abschnitte": [
+        {
+          "titel": "Deyra – Archivbild",
+          "bild": true,
+          "bildtext": "Deyra"
+        }
+      ]
+    }
+  }
+}

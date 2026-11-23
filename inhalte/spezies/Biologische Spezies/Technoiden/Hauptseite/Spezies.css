@@ -214,3 +214,8 @@
     .techno-frame .aporia-sidebar { position: relative; top: auto; max-height: 42dvh; }
     .techno-frame .aporia-sidebar::after { display: none; }
 }
+
+.techno-dossier .techno-layout {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas: "hero" "content";
+}

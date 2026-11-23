@@ -24,9 +24,10 @@ export function kapitel(datei, P) {
     if (!exists(datei)) return out;
     const zeilen = read(datei).split("\n");
     const anzahl = (re) => zeilen.filter((z) => re.test(z.trim())).length;
-    const ebene = anzahl(/^##\s/) <= 1 && anzahl(/^###\s/) >= 2 ? 3 : 2;
+    // Kapitelebene: „# 6.1 …“ (mind. drei nummerierte H1) → 1; sonst ##, oder ### wenn ## nur der Dateititel ist
+    const ebene = anzahl(/^#\s+\d+\.\d+/) >= 3 ? 1 : anzahl(/^##\s/) <= 1 && anzahl(/^###\s/) >= 2 ? 3 : 2;
     const KAP = new RegExp(`^#{${ebene}}\\s+(?:(\\d+(?:\\.\\d+)*)\\.?\\s+|([A-ZÄÖÜ]{1,6}\\d{1,3})\\s+[–-]\\s+)?(.+)$`);
-    const TITEL = new RegExp(`^#{1,${ebene - 1}}\\s`);
+    const TITEL = ebene === 1 ? /^#\s+(?!\d+\.\d+)/ : new RegExp(`^#{1,${ebene - 1}}\\s`);
     const UNTER = new RegExp(`^#{${ebene + 1},6}\\s+(.+)$`);
     let cur = null, liste = null, ol = null, dl = null, tabelle = null;
     const zu = () => { liste = ol = dl = tabelle = null; };

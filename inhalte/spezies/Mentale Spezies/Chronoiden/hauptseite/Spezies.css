@@ -1,2 +1,158 @@
-/* Chronoiden – Hauptseite · erzeugt vom Spezies-Baukasten (scripts/spezies)
-   Aufbau: inhalte/spezies/_gemeinsam/spezies-standard.css · Farben: ../chronoiden-basis.css · eigene Anpassungen hier ergänzen. */
+/* Chronoiden – Hauptseite · erzeugt von scripts/spezies/eigene/chronoiden.mjs (Vorlage: chronoiden-hauptseite.css)
+   Gemeinsames Design: ../chronoiden-basis.css · hier nur der Aufbau der Übersicht.
+   Farbwelt: Graphitnacht, Resonanzgold (--cn-violett) und Kristallcyan (--cn-cyan); Leitmotiv „Zeitringe“. */
+
+.cn-hauptseite .cn-hero { min-height: clamp(22rem, 38cqi, 34rem); }
+.cn-hauptseite .cn-hero-bild { width: 74% !important; object-position: 50% 40%; }
+.cn-hauptseite .cn-hero h1 { letter-spacing: .08em; text-shadow: 0 0 28px #e3a64a55, 0 2px 18px #000; }
+.cn-kicker--linie { display: flex; align-items: center; gap: .8rem; }
+.cn-kicker--linie::after { content: ""; width: 6rem; height: 1px; background: linear-gradient(90deg, var(--cn-violett), var(--cn-cyan), transparent); }
+.cn-unterzeile em { color: var(--cn-violett-hell); font-style: normal; }
+.cn-hero-links { display: flex; flex-wrap: wrap; gap: 1.4rem; margin-top: 1.3rem !important; }
+.cn-hero-links a { padding-bottom: .2rem; border-bottom: 1px solid var(--cn-linie-hell); color: var(--cn-text) !important; font: 500 1rem/1.3 var(--cn-serif); text-decoration: none; }
+.cn-hero-links a:hover { color: var(--cn-violett-hell) !important; border-color: var(--cn-violett); }
+
+/* Zeitringe: vier Ringe drehen sich unterschiedlich schnell um denselben Mittelpunkt */
+.cn-ringe { position: absolute; right: 12%; top: 50%; z-index: -1; width: clamp(14rem, 30cqi, 24rem); aspect-ratio: 1; transform: translateY(-50%); pointer-events: none; }
+.cn-ringe i { position: absolute; inset: calc(var(--n, 0) * 12%); border: 1px solid #e3a64a80; border-radius: 50%; border-top-color: #f8dcae; border-left-color: transparent; box-shadow: 0 0 1rem #e3a64a22 inset; animation: cn-dreh var(--t, 30s) linear infinite; }
+.cn-ringe i:nth-child(2) { --n: 1; --t: 12s; border-color: #5fd3cc70; border-top-color: #bff3ef; border-left-color: transparent; animation-direction: reverse; }
+.cn-ringe i:nth-child(3) { --n: 2; --t: 4s; }
+.cn-ringe i:nth-child(4) { --n: 3; --t: 1.2s; border-color: #5fd3cc90; border-top-color: #fff; border-left-color: transparent; }
+@keyframes cn-dreh { to { transform: rotate(360deg); } }
+
+/* Kennzahlen */
+.cn-kennzahlen { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); margin: 0 0 var(--cn-raum); padding: .3rem; }
+.cn-kennzahlen > div { display: grid; gap: .1rem; padding: .7rem .9rem; text-align: center; }
+.cn-kennzahlen > div + div { border-left: 1px solid var(--cn-linie); }
+.cn-kennzahlen dt { color: var(--cn-leise); font: 600 .68rem/1.3 "Segoe UI", system-ui, sans-serif; letter-spacing: .14em; text-transform: uppercase; }
+.cn-kennzahlen dd { margin: 0; color: var(--cn-violett-hell); font: 600 clamp(1.2rem, 2.3cqi, 1.75rem)/1.15 var(--cn-serif); }
+.cn-kennzahlen dd a { color: inherit !important; text-decoration: none; }
+.cn-kennzahlen dd a:hover { color: var(--cn-cyan) !important; }
+.cn-kennzahlen span { color: var(--cn-leise); font-size: .78rem; }
+
+.cn-abschnitt { margin-top: calc(var(--cn-raum) * 1.6); }
+.cn-lead { max-width: 62rem; margin: -.3rem 0 var(--cn-raum) !important; color: var(--cn-leise); }
+.cn-zeit, .cn-sync, .cn-zeitachse { display: grid; gap: .8rem; }
+.cn-zeit strong, .cn-sync strong { color: var(--cn-violett-hell); }
+
+/* Ein Takt, viele Zeiten: Zifferblätter + logarithmische Skala */
+.cn-zeit-raster { display: grid; grid-template-columns: minmax(15rem, .8fr) minmax(0, 1.6fr); gap: calc(var(--cn-raum) * 1.4); align-items: center; }
+.cn-uhren { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .6rem; }
+.cn-uhr { display: grid; gap: .35rem; justify-items: center; margin: 0; text-align: center; }
+.cn-uhr svg { width: 100%; max-width: 7.5rem; overflow: visible; }
+.cn-uhr-rand { fill: #0c1015; stroke: var(--cn-linie-hell); stroke-width: 1.5; }
+.cn-uhr-strich { stroke: #e3a64a99; stroke-width: 2; stroke-linecap: round; }
+.cn-uhr-takt { fill: none; stroke: #5fd3cc33; stroke-width: 6; stroke-dasharray: 2 6; }
+.cn-uhr-zeiger { stroke: var(--cn-cyan); stroke-width: 3; stroke-linecap: round; transform-origin: 60px 60px; filter: drop-shadow(0 0 4px #5fd3cc99); animation: cn-dreh var(--dauer) linear infinite; }
+.cn-uhr-mitte { fill: var(--cn-violett-hell); }
+.cn-uhr figcaption { display: grid; line-height: 1.2; }
+.cn-uhr figcaption strong { color: var(--cn-cyan) !important; font: 700 1rem/1.2 ui-monospace, Consolas, monospace; }
+.cn-uhr figcaption span { color: var(--cn-leise); font-size: .74rem; }
+.cn-skala { display: grid; gap: .45rem; }
+.cn-rate { display: grid; grid-template-columns: minmax(9.5rem, 1fr) minmax(0, 2.4fr) minmax(7.5rem, auto); gap: .7rem; align-items: center; font-size: .84rem; }
+.cn-rate i { position: relative; height: .55rem; border-radius: 999px; background: repeating-linear-gradient(90deg, #ffffff14 0 1px, transparent 1px 12.5%), #ffffff0a; }
+.cn-rate i::after { content: ""; position: absolute; top: 0; bottom: 0; left: var(--l); width: var(--b); border-radius: 999px; background: linear-gradient(90deg, var(--cn-cyan), var(--cn-violett)); box-shadow: 0 0 .7rem #e3a64a66; transform-origin: left; animation: cn-wachs .9s ease-out both; animation-delay: calc(var(--i) * .15s); }
+@keyframes cn-wachs { from { transform: scaleX(0); opacity: 0; } to { transform: none; opacity: 1; } }
+.cn-rate b { color: var(--cn-violett-hell); font: 600 .8rem/1.2 ui-monospace, Consolas, monospace; }
+.cn-achse { display: flex; justify-content: space-between; margin-left: calc(9.5rem + .7rem); margin-right: calc(7.5rem + .7rem); color: var(--cn-leise); font: 600 .68rem/1 ui-monospace, Consolas, monospace; }
+.cn-beispiel { padding: .75rem .9rem; border: 1px solid var(--cn-linie); border-left: 3px solid var(--cn-cyan); border-radius: 10px; background: #0c1015b3; }
+
+/* Formgruppen */
+.cn-formen { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--cn-raum); }
+.cn-form { display: grid; grid-template-rows: auto 1fr; overflow: hidden; transition: border-color .25s, transform .25s; }
+.cn-form:hover { border-color: var(--cn-violett); transform: translateY(-2px); }
+.cn-form figure { margin: 0; aspect-ratio: 4 / 5; overflow: hidden; background: #040507; }
+.cn-form img { width: 100%; height: 100%; object-fit: cover; object-position: center 30%; transition: transform .6s ease; }
+.cn-form:hover img { transform: scale(1.05); }
+.cn-form > div { display: grid; gap: .35rem; padding: .8rem .95rem 1rem; }
+.cn-form small { color: var(--cn-cyan); font: 600 .72rem/1.2 ui-monospace, Consolas, monospace; letter-spacing: .06em; text-transform: uppercase; }
+.cn-form h3 { color: var(--cn-violett-hell); font: 600 1.3rem/1.15 var(--cn-serif); }
+.cn-form p { font-size: .88rem; line-height: 1.5; }
+
+/* Synchronisationsrechte */
+.cn-sync-raster { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: calc(var(--cn-raum) * 1.4); }
+.cn-sync-raster > div { display: grid; gap: .7rem; align-content: start; }
+.cn-sync h3 { color: var(--cn-cyan); font: 600 1rem/1.2 var(--cn-serif); }
+.cn-zitat { margin: 0; padding: .8rem 1rem; border-left: 3px solid var(--cn-violett); background: linear-gradient(90deg, #e3a64a1c, transparent); color: var(--cn-h1, #fff7ea); font: italic 500 1.12rem/1.4 var(--cn-serif); }
+.cn-anker { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .4rem; margin: 0; padding: 0; list-style: none; counter-reset: anker; }
+.cn-anker li { counter-increment: anker; position: relative; padding: .55rem .6rem .55rem 2.2rem !important; border: 1px solid var(--cn-linie); border-radius: 10px; background: #0c1015b3; font-size: .86rem; line-height: 1.3; }
+.cn-anker li::before { content: counter(anker) !important; position: absolute; left: .6rem; top: .55rem; display: grid !important; place-items: center; width: 1.2rem; height: 1.2rem; border-radius: 50%; background: var(--cn-cyan) !important; color: #041514; font: 700 .68rem/1 ui-monospace, Consolas, monospace; box-shadow: none !important; }
+
+/* Zeitachse (logarithmisch) */
+.cn-achse-liste { position: relative; height: 11.5rem; margin: .4rem 4.2rem 0 !important; padding: 0 !important; list-style: none; }
+.cn-achse-liste::before { content: ""; position: absolute; left: 0; right: 0; top: 50%; height: 2px; background: linear-gradient(90deg, #5fd3cc33, var(--cn-cyan), var(--cn-violett)); box-shadow: 0 0 .7rem #5fd3cc55; }
+.cn-achse-liste li { position: absolute; left: var(--x); top: 50%; width: 7.5rem; padding: 0 !important; transform: translateX(-50%); text-align: center; animation: cn-auf .6s ease both; animation-delay: calc(var(--i) * .12s); }
+.cn-achse-liste li::before { content: "" !important; position: absolute !important; left: 50% !important; top: -.4rem !important; width: .8rem !important; height: .8rem !important; border-radius: 50%; background: var(--cn-cyan) !important; box-shadow: 0 0 .6rem var(--cn-cyan) !important; transform: translateX(-50%); }
+.cn-achse-liste li:nth-child(odd) { transform: translate(-50%, calc(-100% - .9rem)); }
+.cn-achse-liste li:nth-child(odd)::before { top: auto !important; bottom: -1.3rem !important; }
+.cn-achse-liste li:nth-child(even) { padding-top: .9rem !important; }
+.cn-achse-liste li:nth-child(even)::before { top: -.4rem !important; }
+.cn-achse-liste b { display: block; color: var(--cn-violett-hell); font: 700 .85rem/1.2 ui-monospace, Consolas, monospace; }
+.cn-achse-liste span { display: block; color: var(--cn-text); font-size: .76rem; line-height: 1.25; }
+.cn-achse-liste .cn-krise b { color: #ff9b7a; }
+.cn-achse-liste li.cn-krise::before { background: #ff9b7a !important; box-shadow: 0 0 .6rem #ff9b7a !important; }
+@keyframes cn-auf { from { opacity: 0; } to { opacity: 1; } }
+
+/* Steckbrief + Heimatwelt */
+.cn-zwei { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: var(--cn-raum); align-items: start; margin-top: calc(var(--cn-raum) * 1.6); }
+.cn-zwei .cn-dossier-steckbrief { margin-top: 0; }
+.cn-zwei .cn-dossier-raster { grid-template-columns: minmax(0, 1fr); }
+.cn-welt { overflow: hidden; }
+.cn-welt-bild { display: block; aspect-ratio: 16 / 10; overflow: hidden; background: #000; }
+.cn-welt-bild img { width: 100%; height: 100%; object-fit: cover; object-position: center 40%; transition: transform .8s ease; }
+.cn-welt-bild:hover img { transform: scale(1.04); }
+.cn-welt .cn-block { display: grid; gap: .7rem; }
+.cn-mini { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .35rem .7rem; margin: 0; }
+.cn-mini > div { min-width: 0; padding-top: .3rem; border-top: 1px solid #ffffff12; }
+.cn-mini dt { color: var(--cn-leise); font-size: .7rem; letter-spacing: .06em; text-transform: uppercase; }
+.cn-mini dd { margin: 0; font-size: .85rem; overflow-wrap: anywhere; }
+
+/* Themenbereiche */
+.cn-themen-raster { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--cn-raum); }
+.cn-thema { display: grid; align-content: end; gap: .25rem; min-height: 9.5rem; padding: .8rem; overflow: hidden; isolation: isolate; color: var(--cn-text) !important; text-decoration: none; }
+.cn-thema-bild { position: absolute !important; inset: 0; z-index: -2; width: 100% !important; height: 100% !important; object-fit: cover; object-position: center 35%; transition: transform .6s ease; }
+.cn-thema::before { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(0deg, #07090c 8%, #07090ccc 50%, #07090c26 100%); }
+.cn-thema:hover { border-color: var(--cn-violett); box-shadow: 0 0 1.1rem #e3a64a44; }
+.cn-thema:hover .cn-thema-bild { transform: scale(1.05); }
+.cn-thema-kopf { display: flex; gap: .45rem; align-items: center; }
+.cn-thema-text { font-size: .82rem; line-height: 1.35; }
+.cn-layout--fuss { margin-top: var(--cn-raum); }
+
+@media (prefers-reduced-motion: reduce) {
+    .cn-ringe i, .cn-uhr-zeiger, .cn-rate i::after, .cn-achse-liste li { animation: none; }
+}
+@container (max-width: 1100px) {
+    .cn-zeit-raster { grid-template-columns: minmax(0, 1fr); }
+    .cn-uhren { max-width: 30rem; }
+    .cn-zwei, .cn-sync-raster { grid-template-columns: minmax(0, 1fr); }
+}
+@container (max-width: 820px) {
+    .cn-kennzahlen { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .cn-kennzahlen > div:nth-child(4) { border-left: 0; }
+    .cn-formen { grid-template-columns: minmax(0, 1fr); }
+    .cn-form { grid-template-columns: minmax(8rem, .6fr) minmax(0, 1fr); grid-template-rows: none; }
+    .cn-form figure { aspect-ratio: auto; height: 100%; }
+    .cn-themen-raster { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .cn-hauptseite .cn-hero-bild { width: 100% !important; }
+    .cn-ringe { right: 4%; opacity: .55; }
+    .cn-rate { grid-template-columns: minmax(0, 1fr) auto; gap: .2rem .6rem; }
+    .cn-rate i { grid-column: 1 / -1; grid-row: 2; }
+    .cn-achse { margin: 0; }
+    /* Zeitachse senkrecht */
+    .cn-achse-liste { height: auto; display: grid; gap: .55rem; margin: .3rem 0 0 .6rem !important; padding-left: 1.3rem !important; }
+    .cn-achse-liste::before { left: 0; right: auto; top: 0; bottom: 0; width: 2px; height: auto; background: linear-gradient(180deg, #5fd3cc33, var(--cn-cyan), var(--cn-violett)); }
+    .cn-achse-liste li, .cn-achse-liste li:nth-child(odd), .cn-achse-liste li:nth-child(even) { position: relative; left: auto; top: auto; width: auto; padding: 0 !important; transform: none; text-align: left; }
+    .cn-achse-liste li::before, .cn-achse-liste li:nth-child(odd)::before, .cn-achse-liste li:nth-child(even)::before { left: -1.7rem !important; top: .3rem !important; bottom: auto !important; transform: none; }
+    .cn-achse-liste b, .cn-achse-liste span { display: inline; }
+    .cn-achse-liste b::after { content: " · "; color: var(--cn-leise); }
+}
+@container (max-width: 560px) {
+    .cn-kennzahlen { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .cn-kennzahlen > div { border-left: 0 !important; border-top: 1px solid var(--cn-linie); }
+    .cn-kennzahlen > div:nth-child(-n+2) { border-top: 0; }
+    .cn-themen-raster, .cn-anker { grid-template-columns: minmax(0, 1fr); }
+    .cn-form { grid-template-columns: minmax(0, 1fr); }
+    .cn-form figure { aspect-ratio: 4 / 3; }
+    .cn-mini { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .cn-uhren { gap: .3rem; }
+}

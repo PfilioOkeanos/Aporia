@@ -1,0 +1,627 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Seyvar",
+  "genitiv": "von Seyvar",
+  "dossierName": "Seyvar-Dossier",
+  "klasse": "Orangefarbener Zwerg (K2 V)",
+  "intro": "Seyvar ist ein orangefarbener Hauptreihenstern der Spektralklasse K2 V mit 82 % der Sonnenmasse und 47 % ihrer Leuchtkraft. Er besitzt eine lange, stabile Hauptreihenphase, magnetische Aktivität und einen Sternwind – Zentralstern von Nhalyss, der Heimatwelt der Bioluminoiden. Seyvar ist der Zentralstern des Seyvar-Systems.",
+  "globusDaten": {
+    "planet": "pulsierender-orange-roter-riesenstern",
+    "klasse": "Vulkan",
+    "radius": 556560000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=nhalyss-stern",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-8887597BE7"
+    ],
+    [
+      "Typ",
+      "Orangefarbener Zwerg (K2 V)"
+    ],
+    [
+      "Sternsystem",
+      "Seyvar-System"
+    ],
+    [
+      "Masse",
+      "0,82 Sonnenmassen"
+    ],
+    [
+      "Radius",
+      "0,8 Sonnenradien"
+    ],
+    [
+      "Leuchtkraft",
+      "0,47 Sonnenleuchtkräfte"
+    ],
+    [
+      "Oberflächentemperatur",
+      "ca. 5.050 K"
+    ],
+    [
+      "Alter",
+      "ca. 5,1 Mrd. Jahre"
+    ],
+    [
+      "Monde",
+      "6 (Seyvar I, Nhalyss, Seyvar III, Seyvar IV, Seyvar V, Prismenkomet)"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Seyvar-System"
+    ],
+    [
+      "Entfernung zur Sonne",
+      "23 Lichtjahre"
+    ],
+    [
+      "Nächste Nachbarsysteme",
+      "Velhar-System (11,7 Lj), Orvaya-System (13,7 Lj)"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Seyvar im Seyvar-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=nhalyss-stern",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Seyvar I",
+      "href": "inhalte/himmelskoerper/planeten/details/seyvar-i/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Nhalyss",
+      "href": "inhalte/himmelskoerper/planeten/details/nhalyss/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Seyvar III",
+      "href": "inhalte/himmelskoerper/planeten/details/seyvar-iii/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Seyvar IV",
+      "href": "inhalte/himmelskoerper/planeten/details/seyvar-iv/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Seyvar V",
+      "href": "inhalte/himmelskoerper/planeten/details/seyvar-v/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Prismenkomet",
+      "href": "inhalte/himmelskoerper/kometen/details/prismenkomet/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Bioluminoiden",
+      "titel": "Nhalyss",
+      "href": "inhalte/himmelskoerper/planeten/details/nhalyss/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Bioluminoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Bioluminoiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Seyvar-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=nhalyss-stern"
+    },
+    {
+      "titel": "Speziesdossier Bioluminoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Bioluminoiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#0d0905",
+      "tiefe": "#1c140c",
+      "akzent": "#ffcd9f",
+      "sand": "#ffc993",
+      "moos": "#d9c67c",
+      "ozean": "#adac89",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#735030"
+    },
+    "schichten": [
+      [
+        "Strahlung",
+        "Leuchtkraft"
+      ],
+      [
+        "Hülle",
+        "Spektralklasse"
+      ],
+      [
+        "Kern",
+        "Fusion"
+      ],
+      [
+        "Zeit",
+        "Lebenszyklus"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Spektralklasse": {
+      "gruppe": "Wissenschaft",
+      "icon": "✦",
+      "intro": "Spektralklasse von Seyvar.",
+      "abschnitte": [
+        {
+          "titel": "Einordnung",
+          "daten": [
+            [
+              "Typ",
+              "Orangefarbener Zwerg (K2 V)"
+            ],
+            [
+              "Oberflächentemperatur",
+              "ca. 5.050 K"
+            ],
+            [
+              "Farbe",
+              "orange"
+            ]
+          ]
+        }
+      ]
+    },
+    "Fusion": {
+      "gruppe": "Wissenschaft",
+      "icon": "☀",
+      "intro": "Fusion von Seyvar.",
+      "abschnitte": [
+        {
+          "titel": "Energiequelle",
+          "text": [
+            "Im Kern von Seyvar verschmilzt Wasserstoff zu Helium."
+          ]
+        }
+      ]
+    },
+    "Leuchtkraft": {
+      "gruppe": "Wissenschaft",
+      "icon": "☀",
+      "intro": "Leuchtkraft von Seyvar.",
+      "abschnitte": [
+        {
+          "titel": "Strahlung",
+          "daten": [
+            [
+              "Leuchtkraft",
+              "0,47 Sonnenleuchtkräfte"
+            ],
+            [
+              "Habitable Zone",
+              "0,65–1,14 AE"
+            ]
+          ]
+        }
+      ]
+    },
+    "Lebenszyklus": {
+      "gruppe": "Wissenschaft",
+      "icon": "⧗",
+      "intro": "Lebenszyklus von Seyvar.",
+      "abschnitte": [
+        {
+          "titel": "Lebensdauer",
+          "text": [
+            "Ein Stern mit 0,82 Sonnenmassen bleibt rund 16 Milliarden Jahre auf der Hauptreihe; Seyvar ist etwa 5,1 Milliarden Jahre alt."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Seyvar auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Seyvar",
+          "text": [
+            "Seyvar ist ein orangefarbener Hauptreihenstern der Spektralklasse K2 V mit 82 % der Sonnenmasse und 47 % ihrer Leuchtkraft. Er besitzt eine lange, stabile Hauptreihenphase, magnetische Aktivität und einen Sternwind – Zentralstern von Nhalyss, der Heimatwelt der Bioluminoiden.",
+            "Seyvar ist der Zentralstern des Seyvar-Systems."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Orangefarbener Zwerg (K2 V)"
+            ],
+            [
+              "Sternsystem",
+              "Seyvar-System"
+            ],
+            [
+              "Masse",
+              "0,82 Sonnenmassen"
+            ],
+            [
+              "Radius",
+              "0,8 Sonnenradien"
+            ],
+            [
+              "Leuchtkraft",
+              "0,47 Sonnenleuchtkräfte"
+            ],
+            [
+              "Oberflächentemperatur",
+              "ca. 5.050 K"
+            ],
+            [
+              "Alter",
+              "ca. 5,1 Mrd. Jahre"
+            ],
+            [
+              "Monde",
+              "6 (Seyvar I, Nhalyss, Seyvar III, Seyvar IV, Seyvar V, Prismenkomet)"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Nhalyss",
+          "text": [
+            "Das Seyvar-System ist die Heimat der Bioluminoiden: Ihr Planet Nhalyss umkreist Seyvar."
+          ],
+          "verweise": [
+            [
+              "Nhalyss",
+              "inhalte/himmelskoerper/planeten/details/nhalyss/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Bioluminoiden",
+              "inhalte/spezies/Biologische Spezies/Bioluminoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Seyvar im Raum.",
+      "abschnitte": [
+        {
+          "titel": "Lage im Raum",
+          "daten": [
+            [
+              "Entfernung zur Sonne",
+              "23 Lichtjahre"
+            ],
+            [
+              "Nächste Nachbarsysteme",
+              "Velhar-System (11,7 Lj), Orvaya-System (13,7 Lj), Kharuun-System (16,5 Lj)"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Seyvar · Stern",
+              "Orangefarbener Zwerg (K2 V)"
+            ],
+            [
+              "Seyvar I · 0,29 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Nhalyss · 0,72 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Seyvar III · 1,38 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Seyvar IV · 4,4 AE",
+              "Gasriese"
+            ],
+            [
+              "Seyvar V · 11,5 AE",
+              "Eisriese"
+            ],
+            [
+              "Splittergürtel · 2,1–2,9 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 34–48 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Seyvar I",
+              "inhalte/himmelskoerper/planeten/details/seyvar-i/hauptseite/index.html"
+            ],
+            [
+              "Nhalyss",
+              "inhalte/himmelskoerper/planeten/details/nhalyss/hauptseite/index.html"
+            ],
+            [
+              "Seyvar III",
+              "inhalte/himmelskoerper/planeten/details/seyvar-iii/hauptseite/index.html"
+            ],
+            [
+              "Seyvar IV",
+              "inhalte/himmelskoerper/planeten/details/seyvar-iv/hauptseite/index.html"
+            ],
+            [
+              "Seyvar V",
+              "inhalte/himmelskoerper/planeten/details/seyvar-v/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Seyvar.",
+      "abschnitte": [
+        {
+          "titel": "Physik",
+          "daten": [
+            [
+              "Masse",
+              "0,82 Sonnenmassen"
+            ],
+            [
+              "Radius",
+              "0,8 Sonnenradien"
+            ],
+            [
+              "Leuchtkraft",
+              "0,47 Sonnenleuchtkräfte"
+            ],
+            [
+              "Oberflächentemperatur",
+              "ca. 5.050 K"
+            ],
+            [
+              "Alter",
+              "ca. 5,1 Mrd. Jahre"
+            ],
+            [
+              "Monde",
+              "6 (Seyvar I, Nhalyss, Seyvar III, Seyvar IV, Seyvar V, Prismenkomet)"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Seyvar.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Seyvar entstand zusammen mit dem Seyvar-System vor rund 5,1 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Umgebung": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Umgebung von Seyvar.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Seyvar · Stern",
+              "Orangefarbener Zwerg (K2 V)"
+            ],
+            [
+              "Seyvar I · 0,29 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Nhalyss · 0,72 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Seyvar III · 1,38 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Seyvar IV · 4,4 AE",
+              "Gasriese"
+            ],
+            [
+              "Seyvar V · 11,5 AE",
+              "Eisriese"
+            ],
+            [
+              "Splittergürtel · 2,1–2,9 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 34–48 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Seyvar I",
+              "inhalte/himmelskoerper/planeten/details/seyvar-i/hauptseite/index.html"
+            ],
+            [
+              "Nhalyss",
+              "inhalte/himmelskoerper/planeten/details/nhalyss/hauptseite/index.html"
+            ],
+            [
+              "Seyvar III",
+              "inhalte/himmelskoerper/planeten/details/seyvar-iii/hauptseite/index.html"
+            ],
+            [
+              "Seyvar IV",
+              "inhalte/himmelskoerper/planeten/details/seyvar-iv/hauptseite/index.html"
+            ],
+            [
+              "Seyvar V",
+              "inhalte/himmelskoerper/planeten/details/seyvar-v/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Nachbarsysteme",
+          "liste": [
+            "Velhar-System – 11,7 Lichtjahre",
+            "Orvaya-System – 13,7 Lichtjahre",
+            "Kharuun-System – 16,5 Lichtjahre",
+            "Osselyr-System – 18 Lichtjahre",
+            "Halvorn-System – 21,7 Lichtjahre"
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Seyvar.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Wie stark schwankt die magnetische Aktivität?",
+            "Wie hat sich die Leuchtkraft seit der Entstehung verändert?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Seyvar ist mit allen Bahndaten im Seyvar-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=nhalyss-stern"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Seyvar.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "6 Monde: Seyvar I, Nhalyss, Seyvar III, Seyvar IV, Seyvar V, Prismenkomet"
+          ]
+        },
+        {
+          "titel": "Monde",
+          "karten": [
+            {
+              "titel": "Seyvar I",
+              "text": "6.600 km Durchmesser, Umlauf in 63 Tage. Seyvar I ist ein kleiner, sonnennaher Gesteinsplanet ohne nennenswerte Atmosphäre, dessen Tagseite stark aufgeheizt wird."
+            },
+            {
+              "titel": "Nhalyss",
+              "text": "11.980 km Durchmesser, Umlauf in 246,4 Tage. Nhalyss ist die Heimatwelt der Bioluminoiden: ein geologisch aktiver Gesteinsplanet mit großen Ozeanen, vier Kontinenten, riesigen Spaltenlandschaften und dem Ringsystem Scherbenkranz."
+            },
+            {
+              "titel": "Seyvar III",
+              "text": "7.800 km Durchmesser, Umlauf in 653,9 Tage. Seyvar III ist eine kalte, trockene Gesteinswelt mit dünner Atmosphäre am äußeren Rand der habitablen Zone."
+            },
+            {
+              "titel": "Seyvar IV",
+              "text": "128.000 km Durchmesser, Umlauf in 10,2 Jahre. Seyvar IV ist ein großer Gasriese mit hellen Wolkenbändern, dessen Schwerkraft das innere System gegen viele Kometen abschirmt."
+            },
+            {
+              "titel": "Seyvar V",
+              "text": "50.000 km Durchmesser, Umlauf in 43,1 Jahre. Seyvar V ist ein ferner, blassblauer Eisriese."
+            },
+            {
+              "titel": "Prismenkomet",
+              "text": "10 km Durchmesser, Umlauf in 64,2 Jahre. Ein Komet, dessen Staubschweif im Licht von Seyvar in Cyan- und Bernsteintönen schimmert. Er kehrt alle 58 Jahre wieder; frühe Darstellungen des Ringhimmels zeigen ihn neben dem Scherbenkranz."
+            }
+          ],
+          "verweise": [
+            [
+              "Seyvar I",
+              "inhalte/himmelskoerper/planeten/details/seyvar-i/hauptseite/index.html"
+            ],
+            [
+              "Nhalyss",
+              "inhalte/himmelskoerper/planeten/details/nhalyss/hauptseite/index.html"
+            ],
+            [
+              "Seyvar III",
+              "inhalte/himmelskoerper/planeten/details/seyvar-iii/hauptseite/index.html"
+            ],
+            [
+              "Seyvar IV",
+              "inhalte/himmelskoerper/planeten/details/seyvar-iv/hauptseite/index.html"
+            ],
+            [
+              "Seyvar V",
+              "inhalte/himmelskoerper/planeten/details/seyvar-v/hauptseite/index.html"
+            ],
+            [
+              "Prismenkomet",
+              "inhalte/himmelskoerper/kometen/details/prismenkomet/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Seyvar.",
+      "abschnitte": [
+        {
+          "titel": "Seyvar – Archivbild",
+          "bild": true,
+          "bildtext": "Seyvar"
+        }
+      ]
+    }
+  }
+}

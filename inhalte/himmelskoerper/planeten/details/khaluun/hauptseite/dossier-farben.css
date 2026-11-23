@@ -1,0 +1,31 @@
+/* Khaluun – Farbwelt im Planetendossier-Design (Werte nach Bedarf anpassen, Vorgabe aus design.farben) */
+body.planetendossier {
+    --pd-nacht: #071019;
+    --pd-tiefe: #0b1b27;
+    --pd-akzent: #63c8c4;
+    --pd-sand: #d6bf91;
+    --pd-moos: #8eb18d;
+    --pd-ozean: #318da9;
+    --pd-glas: rgba(8, 20, 27, .82);
+    --pd-glas-hell: rgba(13, 31, 39, .9);
+    --pd-linie: rgba(99, 200, 196, .2);
+    --pd-linie-hell: rgba(214, 191, 145, .42);
+    --pd-text: #edf5f1;
+    --pd-leise: #a8beb9;
+    --aporia-page-tint: #287b86;
+}
+
+/* Das eigens erstellte Orbitmotiv zeigt den vollständigen Planeten; im breiten Hero nicht beschneiden. */
+.planetendossier .pd-hero-bild img {
+    object-fit: contain;
+    object-position: right center;
+    transform: none;
+    animation: none;
+}
+
+.planetendossier.pd-kapitel .earth-hero .nature-hero-image img {
+    object-fit: contain;
+    object-position: center;
+    background: var(--pd-nacht);
+    animation: none;
+}

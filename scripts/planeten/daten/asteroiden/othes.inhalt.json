@@ -1,0 +1,502 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Othes",
+  "genitiv": "von Othes",
+  "dossierName": "Othes-Dossier",
+  "klasse": "Asteroid",
+  "intro": "Othes ist ein mittelgroßer silikatischer Kleinkörper im Veylan-Gürtel. Seine Bahn liegt zwischen Mirven und Kaltor. Othes umkreist Teryn in 1,79 AE Abstand und braucht für einen Umlauf 2,7 Jahre.",
+  "globusDaten": {
+    "planet": "rostgrauer-asteroid-mit-bogenformiger-furche",
+    "klasse": "Gestein",
+    "radius": 67000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=teryn-stern&objekt=teryn-othes",
+  "grunddaten": [
+    [
+      "System-ID",
+      "teryn-othes"
+    ],
+    [
+      "Archiv-ID",
+      "AP-8A3B020D95"
+    ],
+    [
+      "Typ",
+      "Asteroid"
+    ],
+    [
+      "Sternsystem",
+      "Teryn-System"
+    ],
+    [
+      "Zentralkörper",
+      "Teryn"
+    ],
+    [
+      "Große Halbachse",
+      "1,79 AE"
+    ],
+    [
+      "Umlaufzeit",
+      "2,7 Jahre"
+    ],
+    [
+      "Durchmesser",
+      "134 km"
+    ],
+    [
+      "Masse",
+      "4,78 · 10^16 kg"
+    ],
+    [
+      "Schwerkraft",
+      "0,07 cm/s²"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -121 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Teryn-System"
+    ],
+    [
+      "Zentralstern",
+      "Teryn",
+      null
+    ],
+    [
+      "Abstand",
+      "1,79 AE"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Othes im Teryn-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=teryn-stern&objekt=teryn-othes",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Teryn",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=teryn-stern",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Solitiden",
+      "titel": "Iskara",
+      "href": "inhalte/himmelskoerper/planeten/details/iskara/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Solitiden",
+      "href": "inhalte/spezies/Mentale Spezies/Solitiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Teryn-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=teryn-stern&objekt=teryn-othes"
+    },
+    {
+      "titel": "Speziesdossier Solitiden",
+      "href": "inhalte/spezies/Mentale Spezies/Solitiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#060707",
+      "tiefe": "#0e0f10",
+      "akzent": "#acb4b9",
+      "sand": "#b3b3a4",
+      "moos": "#8ca993",
+      "ozean": "#7092a9",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#393f43"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Bahn"
+      ],
+      [
+        "Material",
+        "Zusammensetzung"
+      ],
+      [
+        "Zeit",
+        "Herkunft"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Zusammensetzung": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Zusammensetzung von Othes.",
+      "abschnitte": [
+        {
+          "titel": "Material",
+          "liste": [
+            "Silikate",
+            "Eisen und Nickel",
+            "Seltene Metalle"
+          ],
+          "schichten": [
+            [
+              "Regolith",
+              "Staub und Gesteinsschutt"
+            ],
+            [
+              "Gesteinsmantel",
+              "Silikate und Metalle"
+            ],
+            [
+              "Kern",
+              "Metallreich"
+            ]
+          ]
+        }
+      ]
+    },
+    "Bahn": {
+      "gruppe": "Wissenschaft",
+      "icon": "◌",
+      "intro": "Bahn von Othes.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Teryn"
+            ],
+            [
+              "Große Halbachse",
+              "1,79 AE (267,8 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,055"
+            ],
+            [
+              "Bahnneigung",
+              "4,4°"
+            ],
+            [
+              "Umlaufzeit",
+              "2,7 Jahre"
+            ],
+            [
+              "Einstrahlung",
+              "0,1-fach der Erde"
+            ]
+          ]
+        }
+      ]
+    },
+    "Herkunft": {
+      "gruppe": "Weitere",
+      "icon": "⧗",
+      "intro": "Herkunft von Othes.",
+      "abschnitte": [
+        {
+          "titel": "Herkunft",
+          "text": [
+            "Othes ist ein Überrest aus der Entstehungszeit des Teryn-Systems."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Othes auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Othes",
+          "text": [
+            "Othes ist ein mittelgroßer silikatischer Kleinkörper im Veylan-Gürtel. Seine Bahn liegt zwischen Mirven und Kaltor.",
+            "Othes umkreist Teryn in 1,79 AE Abstand und braucht für einen Umlauf 2,7 Jahre."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Asteroid"
+            ],
+            [
+              "Sternsystem",
+              "Teryn-System"
+            ],
+            [
+              "Zentralkörper",
+              "Teryn"
+            ],
+            [
+              "Große Halbachse",
+              "1,79 AE"
+            ],
+            [
+              "Umlaufzeit",
+              "2,7 Jahre"
+            ],
+            [
+              "Durchmesser",
+              "134 km"
+            ],
+            [
+              "Masse",
+              "4,78 · 10^16 kg"
+            ],
+            [
+              "Schwerkraft",
+              "0,07 cm/s²"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -121 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Iskara",
+          "text": [
+            "Das Teryn-System ist die Heimat der Solitiden: Ihr Planet Iskara umkreist Teryn."
+          ],
+          "verweise": [
+            [
+              "Iskara",
+              "inhalte/himmelskoerper/planeten/details/iskara/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Solitiden",
+              "inhalte/spezies/Mentale Spezies/Solitiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Othes im Teryn-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Teryn"
+            ],
+            [
+              "Große Halbachse",
+              "1,79 AE (267,8 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,055"
+            ],
+            [
+              "Bahnneigung",
+              "4,4°"
+            ],
+            [
+              "Umlaufzeit",
+              "2,7 Jahre"
+            ],
+            [
+              "Einstrahlung",
+              "0,1-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Teryn · Stern",
+              "Orangefarbener Hauptreihenstern (K4 V)"
+            ],
+            [
+              "Dareth · 0,15 AE",
+              "Heißer Gesteinsplanet"
+            ],
+            [
+              "Nura · 0,34 AE",
+              "Heißer terrestrischer Planet"
+            ],
+            [
+              "Iskara · 0,61 AE",
+              "Bewohnter terrestrischer Silikatplanet"
+            ],
+            [
+              "Veldros · 1,08 AE",
+              "Kalte Supererde"
+            ],
+            [
+              "Saevor · 2,84 AE",
+              "Gasriese"
+            ],
+            [
+              "Ynderal · 5,9 AE",
+              "Eisreicher Riesenplanet"
+            ],
+            [
+              "Veylan-Asteroidengürtel · 1,7–2 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußere Kleinkörperregion · 14–38 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Teryn",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=teryn-stern"
+            ],
+            [
+              "Dareth",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=teryn-stern&objekt=teryn-dareth"
+            ],
+            [
+              "Nura",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=teryn-stern&objekt=teryn-nura"
+            ],
+            [
+              "Iskara",
+              "inhalte/himmelskoerper/planeten/details/iskara/hauptseite/index.html"
+            ],
+            [
+              "Veldros",
+              "inhalte/himmelskoerper/planeten/details/veldros/hauptseite/index.html"
+            ],
+            [
+              "Saevor",
+              "inhalte/himmelskoerper/planeten/details/saevor/hauptseite/index.html"
+            ],
+            [
+              "Ynderal",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=teryn-stern&objekt=teryn-ynderal"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Othes.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "67 km"
+            ],
+            [
+              "Masse",
+              "4,78 · 10^16 kg"
+            ],
+            [
+              "Mittlere Dichte",
+              "0,04 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "0 m/s² (0 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "0,01 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Othes.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Othes besteht aus Material, das sich bei der Entstehung des Teryn-Systems nicht zu einem Planeten vereinte."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Othes.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Ist der Körper ein Bruchstück eines größeren Körpers?",
+            "Welche Rohstoffe birgt er?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Othes ist mit allen Bahndaten im Teryn-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=teryn-stern&objekt=teryn-othes"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Othes.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Othes ist ein mittelgroßer silikatischer Kleinkörper im Veylan-Gürtel. Seine Bahn liegt zwischen Mirven und Kaltor."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Othes.",
+      "abschnitte": [
+        {
+          "titel": "Othes – Archivbild",
+          "bild": true,
+          "bildtext": "Othes"
+        }
+      ]
+    }
+  }
+}

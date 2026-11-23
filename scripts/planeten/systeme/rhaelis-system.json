@@ -1,0 +1,620 @@
+{
+  "systemName": "Rhaelis-System",
+  "praefix": "rhaelis-",
+  "lage": {
+    "entfernungLj": 236,
+    "richtung": [
+      0.28,
+      0.84,
+      -0.47
+    ]
+  },
+  "einzelstern": true,
+  "einleitung": "Rhaelis ist der Zentralstern von sieben Hauptplaneten. Auf der Heimatwelt Tavoryn leben die Memetiden. Zwischen Ossaryn und Vaelkor liegt der Saelith-Gürtel, jenseits von Ithrenn liegen die äußeren Kleinkörperregionen.",
+  "stern": {
+    "id": "rhaelis-stern",
+    "name": "Rhaelis",
+    "typ": "Orangefarbener Hauptreihenstern (K1 V)",
+    "farbe": [
+      1,
+      0.7,
+      0.44
+    ],
+    "beschreibung": "Stabiler K1V-Einzelstern mit magnetischer Aktivität und einer vergleichsweise ruhigen Hauptreihenphase.",
+    "bild": {
+      "archivLink": "../../inhalte/himmelskoerper/sterne/details/rhaelis/hauptseite/index.html",
+      "vorschau": "himmelskoerper.bildarchiv.sterne-rhaelis"
+    },
+    "masseSonne": 0.81,
+    "radiusSonne": 0.83,
+    "temperaturK": 5000,
+    "leuchtkraftSonne": 0.39,
+    "alterMrd": 6.2,
+    "emissionsfarbe": [
+      1,
+      0.78,
+      0.52
+    ],
+    "emission": 1
+  },
+  "koerper": [
+    {
+      "id": "rhaelis-kesvar",
+      "name": "Kesvar",
+      "typ": "Heißer Gesteinsplanet",
+      "um": "rhaelis-stern",
+      "aAE": 0.18,
+      "radiusKm": 4700,
+      "masseErde": 0.38,
+      "e": 0.041,
+      "phase": 26,
+      "albedo": 0.16,
+      "farbe": [
+        0.68,
+        0.39,
+        0.28
+      ],
+      "beschreibung": "Der innerste Planet besitzt verwitterte und vulkanisch veränderte Gesteinslandschaften, eine dünne Atmosphäre und eisenreiche Minerale.",
+      "bild": {
+        "archivLink": "../../inhalte/himmelskoerper/planeten/details/kesvar/hauptseite/index.html",
+        "vorschau": "himmelskoerper.bildarchiv.basaltmeer-unter-kaltem-sternenlicht-da8fce4019-vorschau"
+      }
+    },
+    {
+      "id": "rhaelis-draoven",
+      "name": "Draoven",
+      "typ": "Heißer trockener Gesteinsplanet",
+      "um": "rhaelis-stern",
+      "aAE": 0.33,
+      "radiusKm": 5750,
+      "masseErde": 0.72,
+      "e": 0.027,
+      "phase": 89,
+      "albedo": 0.27,
+      "farbe": [
+        0.72,
+        0.45,
+        0.32
+      ],
+      "beschreibung": "Trockene Welt mit felsigen Ebenen, vulkanischen Hochländern, Einschlagbecken und mineralischen Ablagerungen.",
+      "bild": {
+        "archivLink": "../../inhalte/himmelskoerper/planeten/details/draoven/hauptseite/index.html",
+        "vorschau": "himmelskoerper.bildarchiv.kupferfarbener-mineralwustenplanet-im-all-afee16c21a-vorschau"
+      }
+    },
+    {
+      "id": "rhaelis-tavoryn",
+      "name": "Tavoryn",
+      "typ": "Gemäßigter Ozean- und Gesteinsplanet",
+      "um": "rhaelis-stern",
+      "aAE": 0.65,
+      "radiusKm": 6180,
+      "masseErde": 0.88,
+      "e": 0.026,
+      "phase": 143,
+      "albedo": 0.29,
+      "zielTemperaturC": 16,
+      "farbe": [
+        0.3,
+        0.53,
+        0.66
+      ],
+      "beschreibung": "Heimatwelt der Memetiden mit ausgedehnten Meeren, fünf großen Landmassen und wandernden Gezeitenwäldern.",
+      "bild": {
+        "archivLink": "../../inhalte/himmelskoerper/planeten/details/tavoryn/hauptseite/index.html",
+        "vorschau": "himmelskoerper.bildarchiv.tiefer-ozeanplanet-im-sternenmeer-e848d66c1a-vorschau"
+      }
+    },
+    {
+      "id": "rhaelis-rhovel",
+      "name": "Rhovel",
+      "typ": "Gesteinsmond",
+      "um": "rhaelis-tavoryn",
+      "radiusKm": 1100,
+      "masseErde": 0.002706,
+      "periodeTage": 13.104778328268383,
+      "e": 0.017,
+      "phase": 56,
+      "farbe": [
+        0.57,
+        0.53,
+        0.51
+      ],
+      "beschreibung": "Der große Mond Tavoryns prägt die Gezeiten der Heimatwelt. Auf seinen verkraterten Hochländern und in älteren Becken liegen Forschungsstationen der Memetiden.",
+      "bild": {
+        "archivLink": "../../inhalte/himmelskoerper/monde/details/rhovel/hauptseite/index.html",
+        "vorschau": "himmelskoerper.bildarchiv.monde-rhovel"
+      }
+    },
+    {
+      "id": "rhaelis-ossaryn",
+      "name": "Ossaryn",
+      "typ": "Kalter Gesteinsplanet",
+      "um": "rhaelis-stern",
+      "aAE": 1.2,
+      "radiusKm": 5230,
+      "masseErde": 0.55,
+      "e": 0.032,
+      "phase": 190,
+      "albedo": 0.34,
+      "farbe": [
+        0.53,
+        0.61,
+        0.69
+      ],
+      "beschreibung": "Kalter Gesteinsplanet mit mineralischen Wüsten, gefrorenen Ablagerungen und alten Sedimentbecken.",
+      "bild": {
+        "archivLink": "../../inhalte/himmelskoerper/planeten/details/ossaryn/hauptseite/index.html",
+        "vorschau": "himmelskoerper.bildarchiv.blauliche-methaneiswuste-mit-dunklen-bergen-96c1ccff0a-vorschau"
+      }
+    },
+    {
+      "id": "rhaelis-saelith-gurtel",
+      "name": "Saelith-Gürtel",
+      "typ": "Asteroidengürtel",
+      "ringUm": "rhaelis-stern",
+      "ringeAE": [
+        1.65,
+        2.05
+      ],
+      "ankerAE": 1.84,
+      "groesseKm": 180,
+      "anzahl": 160,
+      "farbe": [
+        0.67,
+        0.55,
+        0.46
+      ],
+      "beschreibung": "Metall- und silikatreicher Gürtel zwischen Ossaryn und Vaelkor. Resonanzen mit den Hauptplaneten erzeugen Lücken und Verdichtungen.",
+      "bild": {
+        "archivLink": "../../inhalte/himmelskoerper/sternensysteme/details/saelith-gurtel/hauptseite/index.html",
+        "vorschau": "himmelskoerper.bildarchiv.sternensysteme-kryvens-weiter-asteroidengurtel-980fe0974358"
+      }
+    },
+    {
+      "id": "rhaelis-saelith-prime",
+      "name": "Saelith-Prime",
+      "typ": "Unregelmäßiger Asteroid",
+      "um": "rhaelis-stern",
+      "aAE": 1.73,
+      "radiusKm": 115,
+      "e": 0.043,
+      "phase": 85,
+      "farbe": [
+        0.6,
+        0.49,
+        0.43
+      ],
+      "beschreibung": "Ein großer unregelmäßiger Asteroid mit alten Bergbauanlagen.",
+      "bild": {
+        "archivLink": "../../inhalte/himmelskoerper/asteroiden/details/saelith-prime/hauptseite/index.html",
+        "vorschau": "himmelskoerper.bildarchiv.asteroiden-gestapelter-trummerkern-im-all-573d0cfc7f83"
+      }
+    },
+    {
+      "id": "rhaelis-korven",
+      "name": "Korven",
+      "typ": "Metallreicher Asteroid",
+      "um": "rhaelis-stern",
+      "aAE": 1.86,
+      "radiusKm": 82,
+      "e": 0.033,
+      "phase": 153,
+      "farbe": [
+        0.66,
+        0.57,
+        0.45
+      ],
+      "beschreibung": "Ein metallreicher Asteroid mit industriell interessanten Erzlagerstätten.",
+      "bild": {
+        "archivLink": "../../inhalte/himmelskoerper/asteroiden/details/korven/hauptseite/index.html",
+        "vorschau": "himmelskoerper.bildarchiv.asteroiden-spiegelnder-eisenasteroid-im-tiefen-all-e66528bd1368"
+      }
+    },
+    {
+      "id": "rhaelis-eshral",
+      "name": "Eshral",
+      "typ": "Kohlenstoffhaltiger Asteroid",
+      "um": "rhaelis-stern",
+      "aAE": 1.97,
+      "radiusKm": 63,
+      "e": 0.027,
+      "phase": 215,
+      "farbe": [
+        0.38,
+        0.35,
+        0.37
+      ],
+      "beschreibung": "Ein kohlenstoffhaltiger Asteroid für Untersuchungen zur chemischen Frühgeschichte des Systems.",
+      "bild": {
+        "archivLink": "../../inhalte/himmelskoerper/asteroiden/details/eshral/hauptseite/index.html",
+        "vorschau": "himmelskoerper.bildarchiv.asteroiden-eshral"
+      }
+    },
+    {
+      "id": "rhaelis-vaelkor",
+      "name": "Vaelkor",
+      "typ": "Gasriese",
+      "um": "rhaelis-stern",
+      "aAE": 2.45,
+      "radiusKm": 58200,
+      "masseErde": 120.77539999999999,
+      "e": 0.018,
+      "phase": 233,
+      "albedo": 0.42,
+      "farbe": [
+        0.81,
+        0.62,
+        0.47
+      ],
+      "beschreibung": "Gasriese mit ausgeprägten Wolkenbändern, großräumigen Stürmen und einem Ringsystem. Seine Gravitation prägt den benachbarten Saelith-Gürtel.",
+      "bild": {
+        "archivLink": "../../inhalte/himmelskoerper/planeten/details/vaelkor/hauptseite/index.html",
+        "vorschau": "himmelskoerper.bildarchiv.ultraheier-saturn-mit-leuchtender-kupferatmosphare-c10c6e6a03-vorschau"
+      }
+    },
+    {
+      "id": "rhaelis-vaelkors-ringe",
+      "name": "Vaelkors Ringe",
+      "typ": "Planetenring",
+      "ringUm": "rhaelis-vaelkor",
+      "ringeAE": [
+        0.0005757835963637149,
+        0.000875346683661053
+      ],
+      "ankerAE": 0.0007197294954546436,
+      "groesseKm": 1,
+      "anzahl": 160,
+      "farbe": [
+        0.8,
+        0.72,
+        0.59
+      ],
+      "beschreibung": "Das Ringsystem um Vaelkor wirft je nach Beleuchtung Ringschatten auf die Atmosphäre.",
+      "bild": {
+        "archivLink": "../../inhalte/himmelskoerper/monde/details/vaelkors-ringe/hauptseite/index.html",
+        "vorschau": "himmelskoerper.bildarchiv.monde-vaelkors-ringe"
+      }
+    },
+    {
+      "id": "rhaelis-styran",
+      "name": "Styran",
+      "typ": "Eisreicher Mond",
+      "um": "rhaelis-vaelkor",
+      "radiusKm": 1180,
+      "masseErde": 0.0022,
+      "periodeTage": 1.1186179214943146,
+      "e": 0.01,
+      "phase": 31,
+      "farbe": [
+        0.7,
+        0.79,
+        0.86
+      ],
+      "beschreibung": "Ein eisreicher Mond Vaelkors mit alten Einschlagstrukturen.",
+      "bild": {
+        "archivLink": "../../inhalte/himmelskoerper/monde/details/styran/hauptseite/index.html",
+        "vorschau": "himmelskoerper.bildarchiv.monde-styran"
+      }
+    },
+    {
+      "id": "rhaelis-numes",
+      "name": "Numes",
+      "typ": "Gesteins-Eis-Mond",
+      "um": "rhaelis-vaelkor",
+      "radiusKm": 920,
+      "masseErde": 0.0013,
+      "periodeTage": 2.4454951773752005,
+      "e": 0.021,
+      "phase": 121,
+      "farbe": [
+        0.6,
+        0.63,
+        0.66
+      ],
+      "beschreibung": "Gesteins- und Eismond Vaelkors mit geologisch interessanten Bruchzonen.",
+      "bild": {
+        "archivLink": "../../inhalte/himmelskoerper/monde/details/numes/hauptseite/index.html",
+        "vorschau": "himmelskoerper.bildarchiv.monde-numes"
+      }
+    },
+    {
+      "id": "rhaelis-horai",
+      "name": "Horai",
+      "typ": "Unregelmäßiger Kratermond",
+      "um": "rhaelis-vaelkor",
+      "radiusKm": 194,
+      "masseErde": 0.00001,
+      "periodeTage": 5.2535398952116585,
+      "e": 0.044,
+      "phase": 240,
+      "farbe": [
+        0.44,
+        0.44,
+        0.47
+      ],
+      "beschreibung": "Kleiner, stark zerklüfteter Mond Vaelkors mit zahlreichen Kratern.",
+      "bild": {
+        "archivLink": "../../inhalte/himmelskoerper/monde/details/horai/hauptseite/index.html",
+        "vorschau": "himmelskoerper.bildarchiv.monde-horai"
+      }
+    },
+    {
+      "id": "rhaelis-kelomar",
+      "name": "Kelomar",
+      "typ": "Äußerer Gasriese",
+      "um": "rhaelis-stern",
+      "aAE": 4.8,
+      "radiusKm": 50000,
+      "masseErde": 79.4575,
+      "e": 0.023,
+      "phase": 288,
+      "albedo": 0.38,
+      "farbe": [
+        0.61,
+        0.63,
+        0.76
+      ],
+      "beschreibung": "Kühler Gasplanet mit Wasserstoff-Helium-Atmosphäre, ausgeprägten Wolkenschichten und großräumigen Sturmzonen.",
+      "bild": {
+        "archivLink": "../../inhalte/himmelskoerper/planeten/details/kelomar/hauptseite/index.html",
+        "vorschau": "himmelskoerper.bildarchiv.schnell-rotierender-gasriese-mit-spiralwolken-c6bb028a37-vorschau"
+      }
+    },
+    {
+      "id": "rhaelis-neris",
+      "name": "Neris",
+      "typ": "Eismond",
+      "um": "rhaelis-kelomar",
+      "radiusKm": 1040,
+      "masseErde": 0.0018,
+      "periodeTage": 1.087130381145376,
+      "e": 0.017,
+      "phase": 30,
+      "farbe": [
+        0.63,
+        0.77,
+        0.85
+      ],
+      "beschreibung": "Vereister Mond Kelomars. Unter seiner Eiskruste ist eine innere Flüssigkeitsschicht möglich.",
+      "bild": {
+        "archivLink": "../../inhalte/himmelskoerper/monde/details/neris/hauptseite/index.html",
+        "vorschau": "himmelskoerper.bildarchiv.monde-neris"
+      }
+    },
+    {
+      "id": "rhaelis-vathel",
+      "name": "Vathel",
+      "typ": "Gesteins-Eis-Mond",
+      "um": "rhaelis-kelomar",
+      "radiusKm": 860,
+      "masseErde": 0.0011,
+      "periodeTage": 2.306315315699789,
+      "e": 0.021,
+      "phase": 99,
+      "farbe": [
+        0.56,
+        0.63,
+        0.66
+      ],
+      "beschreibung": "Dichter Gesteins-Eis-Mond Kelomars mit alten Einschlagbecken.",
+      "bild": {
+        "archivLink": "../../inhalte/himmelskoerper/monde/details/vathel/hauptseite/index.html",
+        "vorschau": "himmelskoerper.bildarchiv.monde-vathel"
+      }
+    },
+    {
+      "id": "rhaelis-orr",
+      "name": "Orr",
+      "typ": "Kratermond",
+      "um": "rhaelis-kelomar",
+      "radiusKm": 370,
+      "masseErde": 0.00011,
+      "periodeTage": 4.5549184738625845,
+      "e": 0.033,
+      "phase": 162,
+      "farbe": [
+        0.47,
+        0.5,
+        0.54
+      ],
+      "beschreibung": "Kleiner, stark kraterbedeckter Mond Kelomars.",
+      "bild": {
+        "archivLink": "../../inhalte/himmelskoerper/monde/details/orr/hauptseite/index.html",
+        "vorschau": "himmelskoerper.bildarchiv.monde-orr"
+      }
+    },
+    {
+      "id": "rhaelis-myr",
+      "name": "Myr",
+      "typ": "Unregelmäßiger Gesteinsmond",
+      "um": "rhaelis-kelomar",
+      "radiusKm": 135,
+      "masseErde": 0.000004,
+      "periodeTage": 9.073407720424983,
+      "e": 0.049,
+      "phase": 269,
+      "farbe": [
+        0.4,
+        0.42,
+        0.46
+      ],
+      "beschreibung": "Kleiner, unregelmäßig geformter äußerer Begleiter Kelomars.",
+      "bild": {
+        "archivLink": "../../inhalte/himmelskoerper/monde/details/myr/hauptseite/index.html",
+        "vorschau": "himmelskoerper.bildarchiv.monde-myr"
+      }
+    },
+    {
+      "id": "rhaelis-ithrenn",
+      "name": "Ithrenn",
+      "typ": "Eisriese",
+      "um": "rhaelis-stern",
+      "aAE": 9.2,
+      "radiusKm": 24900,
+      "masseErde": 17,
+      "e": 0.033,
+      "phase": 323,
+      "albedo": 0.32,
+      "farbe": [
+        0.4,
+        0.67,
+        0.84
+      ],
+      "beschreibung": "Der äußerste Hauptplanet ist ein Eisriese mit leichter Gashülle und flüchtigen Verbindungen. Ihn begleiten kleinere Monde.",
+      "bild": {
+        "archivLink": "../../inhalte/himmelskoerper/planeten/details/ithrenn/hauptseite/index.html",
+        "vorschau": "himmelskoerper.bildarchiv.planeten-ithrenn"
+      }
+    },
+    {
+      "id": "rhaelis-palein",
+      "name": "Palein",
+      "typ": "Dunkler Eismond",
+      "um": "rhaelis-ithrenn",
+      "radiusKm": 520,
+      "masseErde": 0.00026,
+      "periodeTage": 1.3094466405470195,
+      "e": 0.026,
+      "phase": 89,
+      "farbe": [
+        0.42,
+        0.54,
+        0.64
+      ],
+      "beschreibung": "Dunkler, eisreicher Mond Ithrenns.",
+      "bild": {
+        "archivLink": "../../inhalte/himmelskoerper/monde/details/palein/hauptseite/index.html",
+        "vorschau": "himmelskoerper.bildarchiv.monde-palein"
+      }
+    },
+    {
+      "id": "rhaelis-ottel",
+      "name": "Ottel",
+      "typ": "Unregelmäßiger Kratermond",
+      "um": "rhaelis-ithrenn",
+      "radiusKm": 145,
+      "masseErde": 0.000005,
+      "periodeTage": 4.498941477926611,
+      "e": 0.055,
+      "phase": 214,
+      "farbe": [
+        0.47,
+        0.48,
+        0.54
+      ],
+      "beschreibung": "Kleiner unregelmäßiger Mond Ithrenns mit stark verkraterter Oberfläche.",
+      "bild": {
+        "archivLink": "../../inhalte/himmelskoerper/monde/details/ottel/hauptseite/index.html",
+        "vorschau": "himmelskoerper.bildarchiv.monde-ottel"
+      }
+    },
+    {
+      "id": "rhaelis-aussere-kleinkorperregion-von-rhaelis",
+      "name": "Äußere Kleinkörperregion von Rhaelis",
+      "typ": "Eisreicher Kleinkörpergürtel",
+      "ringUm": "rhaelis-stern",
+      "ringeAE": [
+        12,
+        43
+      ],
+      "ankerAE": 21,
+      "groesseKm": 90,
+      "anzahl": 160,
+      "farbe": [
+        0.53,
+        0.68,
+        0.82
+      ],
+      "beschreibung": "Weit verstreute eisreiche Kleinkörper jenseits der Bahnen der großen Planeten.",
+      "bild": {
+        "archivLink": "../../inhalte/himmelskoerper/sternensysteme/details/aussere-kleinkorperregion-von-rhaelis/hauptseite/index.html",
+        "vorschau": "himmelskoerper.bildarchiv.sternensysteme-flach-geneigter-kometengurtel-um-einen-stern-75912a1b7110"
+      }
+    },
+    {
+      "id": "rhaelis-therys",
+      "name": "Therys",
+      "typ": "Eisreicher Kleinkörper",
+      "um": "rhaelis-stern",
+      "aAE": 19,
+      "radiusKm": 280,
+      "e": 0.12,
+      "phase": 110,
+      "farbe": [
+        0.57,
+        0.68,
+        0.74
+      ],
+      "beschreibung": "Ein großer eisreicher Kleinkörper im äußeren Rhaelis-System.",
+      "bild": {
+        "archivLink": "../../inhalte/himmelskoerper/asteroiden/details/therys/hauptseite/index.html",
+        "vorschau": "himmelskoerper.bildarchiv.asteroiden-weisser-eiskern-unter-dunkler-felskruste-17ad9f0d583b"
+      }
+    },
+    {
+      "id": "rhaelis-veskar-9",
+      "name": "Veskar-9",
+      "typ": "Dunkler Kleinkörper",
+      "um": "rhaelis-stern",
+      "aAE": 31,
+      "radiusKm": 24,
+      "e": 0.14,
+      "phase": 171,
+      "farbe": [
+        0.37,
+        0.4,
+        0.47
+      ],
+      "beschreibung": "Ein kleiner dunkler Körper mit ungewöhnlich alter, wenig veränderter Oberfläche.",
+      "bild": {
+        "archivLink": "../../inhalte/himmelskoerper/asteroiden/details/veskar-9/hauptseite/index.html",
+        "vorschau": "himmelskoerper.bildarchiv.asteroiden-veskar-9"
+      }
+    },
+    {
+      "id": "rhaelis-ferne-kometenpopulation-von-rhaelis",
+      "name": "Ferne Kometenpopulation von Rhaelis",
+      "typ": "Kometengebiet",
+      "ringUm": "rhaelis-stern",
+      "ringeAE": [
+        65,
+        240
+      ],
+      "ankerAE": 70,
+      "groesseKm": 60,
+      "anzahl": 160,
+      "farbe": [
+        0.55,
+        0.63,
+        0.82
+      ],
+      "beschreibung": "Entfernte Population auf langperiodischen Bahnen; Ulmar ist ein benanntes Forschungsobjekt dieses Reservoirs.",
+      "bild": {
+        "archivLink": "../../inhalte/himmelskoerper/sternensysteme/details/ferne-kometenpopulation-von-rhaelis/hauptseite/index.html",
+        "vorschau": "himmelskoerper.bildarchiv.sternensysteme-kometenwolke-um-einen-warmen-stern-33bb7f5e3bfa"
+      }
+    },
+    {
+      "id": "rhaelis-ulmar-rhaelis",
+      "name": "Ulmar (Rhaelis)",
+      "typ": "Langperiodischer Komet",
+      "um": "rhaelis-stern",
+      "aAE": 105,
+      "radiusKm": 8,
+      "e": 0.96,
+      "phase": 1,
+      "i": 47,
+      "farbe": [
+        0.48,
+        0.67,
+        0.78
+      ],
+      "beschreibung": "Ein langperiodischer Komet. Die aktuelle Bahn im Kartenmodell führt ihn aus der fernen Population bis in die Nähe der Gasplaneten.",
+      "bild": {
+        "archivLink": "../../inhalte/himmelskoerper/kometen/details/ulmar-rhaelis/hauptseite/index.html",
+        "vorschau": "himmelskoerper.bildarchiv.kometen-komet-mit-schrager-staubfahne-96d6891a182c"
+      }
+    }
+  ]
+}

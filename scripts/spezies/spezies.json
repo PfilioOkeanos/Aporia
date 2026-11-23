@@ -1,7 +1,7 @@
 {
   "hinweis": "Spezies, die mit der Standardvorlage gebaut werden. Pro Spezies genügt { gruppe, ordner }. Optional: farbton (0–360), zweitton, name, quellen (Info-Dateien je Reiter), forschungszweige ([Pfad unter inhalte/Forschung, Bezeichnung]). Aufruf: npm run spezies  ·  einzelne: npm run spezies -- Kolonialwesen",
   "standard": [
-    { "gruppe": "Biologische Spezies", "ordner": "Kolonialwesen", "farbton": 318, "zweitton": 175 },
+    { "gruppe": "Biologische Spezies", "ordner": "Kolonialwesen", "quellen": {"entwicklung":["02_Geschichte_Entwicklung/entwicklung.md"],"geschichte":["02_Geschichte_Entwicklung/geschichte.md"]}, "farbton": 318, "zweitton": 175 },
     {
       "gruppe": "Biologische Spezies", "ordner": "Elektrozoiden", "farbton": 210, "zweitton": 265,
       "quellen": {
@@ -23,10 +23,8 @@
         ["Technologie und Ingenieurwesen/Elektrotechnik und Elektronik", "Messsysteme"]
       ]
     },
-    { "gruppe": "Biologische Spezies", "ordner": "Astralizes" },
-    { "gruppe": "Biologische Spezies", "ordner": "Meta Morphen" },
-    { "gruppe": "Biologische Spezies", "ordner": "Parasitoiden" },
-    { "gruppe": "Biologische Spezies", "ordner": "Regeneranten" },
+    { "gruppe": "Biologische Spezies", "ordner": "Astralizes", "quellen": {"entwicklung":["02_Geschichte_Entwicklung/entwicklung.md"],"geschichte":["02_Geschichte_Entwicklung/geschichte.md"]} },
+    { "gruppe": "Biologische Spezies", "ordner": "Parasitoiden", "quellen": {"entwicklung":["02_Geschichte_Entwicklung/entwicklung.md"],"geschichte":["02_Geschichte_Entwicklung/geschichte.md"]}, "farbton": 330, "zweitton": 32, "titelmotiv": "Fadenkronen-Bote im Pflaumenmantel-1.png" },
     { "gruppe": "Gigantische Lebensformen", "ordner": "Aerothanen" },
     { "gruppe": "Gigantische Lebensformen", "ordner": "Biophäriden" },
     { "gruppe": "Gigantische Lebensformen", "ordner": "Gravanten" },
@@ -52,20 +50,277 @@
     { "gruppe": "Kosmische Spezies", "ordner": "Plasmaastriden" },
     { "gruppe": "Kosmische Spezies", "ordner": "Radiotrophen" },
     { "gruppe": "Kosmische Spezies", "ordner": "Vacuoiden" },
-    { "gruppe": "Mentale Spezies", "ordner": "Chronoiden" },
-    { "gruppe": "Mentale Spezies", "ordner": "Echonoiden" },
     { "gruppe": "Mentale Spezies", "ordner": "Kollektiden" },
-    { "gruppe": "Mentale Spezies", "ordner": "Memetiden" },
-    { "gruppe": "Mentale Spezies", "ordner": "Neurofloren" },
-    { "gruppe": "Mentale Spezies", "ordner": "Oneiroiden" },
-    { "gruppe": "Mentale Spezies", "ordner": "Solitiden" },
-    { "gruppe": "Mentale Spezies", "ordner": "Synaptoiden" },
-    { "gruppe": "Technologische Lebensformen", "ordner": "Autokonstrukte" },
-    { "gruppe": "Technologische Lebensformen", "ordner": "Digitaliden" },
+    {
+      "gruppe": "Mentale Spezies",
+      "ordner": "Memetiden",
+      "farbton": 270,
+      "zweitton": 202,
+      "titelmotiv": "Memetide_ Entwicklungsphase Juvenil-adaptiv.png",
+      "hauptseitenStil": "titelbild.css",
+      "bildordnerJeReiter": {
+        "allgemeines": "gesamtdarstellung",
+        "forschung": "Forschung",
+        "technologien": "Technologie"
+      },
+      "quellen": {
+        "allgemeines": [
+          "Allgemein/Allgemein.md"
+        ],
+        "biologie": [
+          "Biologie/Biologie.md"
+        ],
+        "entwicklung": [
+          "02_Geschichte_Entwicklung/entwicklung.md"
+        ],
+        "geschichte": [
+          "02_Geschichte_Entwicklung/geschichte.md"
+        ],
+        "gesellschaft": [
+          "03_Gesellschaft_Kultur/gesellschaft.md"
+        ],
+        "politik": [
+          "04_Politik_Fraktionsbeziehungen/politik.md"
+        ],
+        "heimatwelt": [
+          "05_Heimatwelt/heimatwelt-referenz.md",
+          "Sternensystem/Sternensystem.md"
+        ],
+        "forschung": [
+          "Forschung/.gitkeep"
+        ],
+        "gameplay": [
+          "Gameplay/.gitkeep"
+        ],
+        "technologien": [
+          "technologien/Technologien.md"
+        ]
+      }
+    },
+    {
+      "gruppe": "Mentale Spezies",
+      "ordner": "Neurofloren",
+      "hauptseitenStil": "titelbild.css",
+      "titelmotiv": "Neuroflor mit leuchtender Datentafel-5.png",
+      "quellen": {
+        "allgemeines": [
+          "Allgemein/Allgemein.md"
+        ],
+        "biologie": [
+          "Biologie/Biologie.md"
+        ],
+        "entwicklung": [
+          "02_Geschichte_Entwicklung/entwicklung.md"
+        ],
+        "geschichte": [
+          "02_Geschichte_Entwicklung/geschichte.md"
+        ],
+        "gesellschaft": [
+          "03_Gesellschaft_Kultur/gesellschaft.md"
+        ],
+        "politik": [
+          "04_Politik_Fraktionsbeziehungen/politik.md"
+        ],
+        "heimatwelt": [
+          "05_Heimatwelt/heimatwelt-referenz.md",
+          "Sternensystem/Sternensystem.md"
+        ],
+        "forschung": [
+          "Forschung/.gitkeep"
+        ],
+        "gameplay": [
+          "Gameplay/.gitkeep"
+        ],
+        "medien": [
+          "Medien/Medien.md"
+        ],
+        "technologien": [
+          "technologien/Technologien.md"
+        ]
+      }
+    },
+    { "gruppe": "Mentale Spezies", "ordner": "Oneiroiden", "bauskript": "oneiroiden.mjs" },
+    {
+      "gruppe": "Mentale Spezies", "ordner": "Solitiden", "farbton": 195, "zweitton": 42,
+      "quellen": {
+        "allgemeines": ["Allgemein/Allgemein.md"],
+        "biologie": ["Biologie/Biologie.md"],
+        "entwicklung": ["02_Geschichte_Entwicklung/entwicklung.md"],
+        "heimatwelt": ["05_Heimatwelt/heimatwelt-referenz.md", "Sternensystem/Sternensystem.md"],
+        "gesellschaft": ["03_Gesellschaft_Kultur/gesellschaft.md", "03_Gesellschaft_Kultur/kultur.md"],
+        "politik": ["04_Politik_Fraktionsbeziehungen/politik.md", "04_Politik_Fraktionsbeziehungen/fraktionsbeziehungen.md"],
+        "geschichte": ["02_Geschichte_Entwicklung/geschichte.md"],
+        "gameplay": ["Gameplay/.gitkeep"],
+        "forschung": ["Forschung/.gitkeep"],
+        "technologien": ["technologien/Technologien.md"]
+      },
+      "titelmotiv": "Heimatplanet/Heimat_a1.png"
+    },
+    {
+      "gruppe": "Technologische Lebensformen",
+      "ordner": "Autokonstrukte",
+      "quellen": {
+        "allgemeines": [
+          "Allgemein/Allgemein.md"
+        ],
+        "biologie": [
+          "Biologie/Biologie.md"
+        ],
+        "entwicklung": [
+          "02_Geschichte_Entwicklung/entwicklung.md"
+        ],
+        "geschichte": [
+          "02_Geschichte_Entwicklung/geschichte.md"
+        ],
+        "gesellschaft": [
+          "03_Gesellschaft_Kultur/gesellschaft.md"
+        ],
+        "politik": [
+          "04_Politik_Fraktionsbeziehungen/politik.md"
+        ],
+        "heimatwelt": [
+          "05_Heimatwelt/heimatwelt-referenz.md",
+          "Sternensystem/sternensystem.md"
+        ],
+        "gameplay": [
+          "Gameplay/.gitkeep"
+        ],
+        "forschung": [
+          "Forschung/.gitkeep"
+        ],
+        "technologien": [
+          "technologien/Technologien.md"
+        ]
+      }
+    },
+    {
+      "gruppe": "Technologische Lebensformen",
+      "ordner": "Digitaliden",
+      "farbton": 195,
+      "zweitton": 269,
+      "quellen": {
+        "allgemeines": [
+          "Allgemein/Allgemein.md"
+        ],
+        "biologie": [
+          "Biologie/Biologie.md"
+        ],
+        "entwicklung": [
+          "02_Geschichte_Entwicklung/entwicklung.md"
+        ],
+        "geschichte": [
+          "02_Geschichte_Entwicklung/geschichte.md"
+        ],
+        "gesellschaft": [
+          "03_Gesellschaft_Kultur/gesellschaft.md"
+        ],
+        "politik": [
+          "04_Politik_Fraktionsbeziehungen/politik.md"
+        ],
+        "heimatwelt": [
+          "05_Heimatwelt/heimatwelt-referenz.md",
+          "Sternensystem/Sternensystem.md"
+        ],
+        "forschung": [
+          "Forschung/.gitkeep"
+        ],
+        "gameplay": [
+          "Gameplay/.gitkeep"
+        ],
+        "technologien": [
+          "technologien/Technologien.md"
+        ]
+      }
+    },
     { "gruppe": "Technologische Lebensformen", "ordner": "Hybriden" },
-    { "gruppe": "Technologische Lebensformen", "ordner": "Nanomorphen" },
+    {
+      "gruppe": "Technologische Lebensformen",
+      "ordner": "Nanomorphen",
+      "farbton": 196,
+      "zweitton": 32,
+      "titelmotiv": "Nanomorph im industriellen Forschungshangar-8.png",
+      "bildordnerJeReiter": {
+        "allgemeines": "gesamtdarstellung",
+        "biologie": "entwicklungsstadien",
+        "entwicklung": "entwicklungsstadien",
+        "heimatwelt": "Heimatplanet",
+        "technologien": "Technologie"
+      },
+      "quellen": {
+        "allgemeines": [
+          "Allgemein/Allgemein.md"
+        ],
+        "biologie": [
+          "Biologie/Biologie.md"
+        ],
+        "entwicklung": [
+          "02_Geschichte_Entwicklung/entwicklung.md"
+        ],
+        "geschichte": [
+          "02_Geschichte_Entwicklung/geschichte.md"
+        ],
+        "gesellschaft": [
+          "03_Gesellschaft_Kultur/gesellschaft.md"
+        ],
+        "politik": [
+          "04_Politik_Fraktionsbeziehungen/politik.md"
+        ],
+        "heimatwelt": [
+          "05_Heimatwelt/heimatwelt-referenz.md",
+          "Sternensystem/Sternensystem.md"
+        ],
+        "forschung": [
+          "Forschung/.gitkeep"
+        ],
+        "gameplay": [
+          "Gameplay/.gitkeep"
+        ],
+        "technologien": [
+          "technologien/Technologien.md"
+        ]
+      }
+    },
     { "gruppe": "Technologische Lebensformen", "ordner": "Protokoliden" },
     { "gruppe": "Technologische Lebensformen", "ordner": "Rekombinanten" },
-    { "gruppe": "Technologische Lebensformen", "ordner": "Technosymbionten" }
+    {
+      "gruppe": "Technologische Lebensformen",
+      "ordner": "Technosymbionten",
+      "quellen": {
+        "allgemeines": [
+          "Allgemein/Allgemein.md"
+        ],
+        "biologie": [
+          "Biologie/Biologie.md"
+        ],
+        "entwicklung": [
+          "02_Geschichte_Entwicklung/entwicklung.md"
+        ],
+        "geschichte": [
+          "02_Geschichte_Entwicklung/geschichte.md"
+        ],
+        "gesellschaft": [
+          "03_Gesellschaft_Kultur/gesellschaft.md"
+        ],
+        "politik": [
+          "04_Politik_Fraktionsbeziehungen/politik.md"
+        ],
+        "heimatwelt": [
+          "05_Heimatwelt/heimatwelt-referenz.md",
+          "Sternensystem/sternensystem.md"
+        ],
+        "forschung": [
+          "Forschung/.gitkeep"
+        ],
+        "gameplay": [
+          "Gameplay/.gitkeep"
+        ],
+        "technologien": [
+          "technologien/Technologien.md"
+        ],
+        "medien": [
+          "Medien/medien.md"
+        ]
+      }
+    }
   ]
 }

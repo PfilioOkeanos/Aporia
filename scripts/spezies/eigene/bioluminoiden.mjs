@@ -10,8 +10,8 @@ const NAME = "Bioluminoiden", KLASSE = "bioluminoiden", P = "bl", R0 = "spezies-
 const S = "inhalte/spezies/Biologische Spezies/Bioluminoiden";
 const INFO = "Info_material/Alle_spezies_daten/Biologische Spezies/Bioluminoiden";
 const A = "assets/bilder/Alle Spezies+Übersicht/Biologische Spezies/Bioluminoiden";
-const PLANET = "inhalte/himmelskoerper/planeten/details/imposante-supererde-mit-dunklen-kontinenten/hauptseite/index.html";
-const PLANETBILD = "assets/bilder/Himmelskörper/Gesteinsplaneten/imposante-supererde-mit-dunklen-kontinenten/hauptseite/imposante-supererde-mit-dunklen-kontinenten-09729b2234.webp";
+const PLANET = "inhalte/himmelskoerper/planeten/details/nhalyss/hauptseite/index.html";
+const PLANETBILD = "assets/bilder/Himmelskörper/Gesteinsplaneten/nhalyss/hauptseite/imposante-supererde-mit-dunklen-kontinenten-09729b2234.webp";
 const KARTE = "Menüs/Sternenkarte/Sternenkarte.html", SYSTEM = "?system=nhalyss-stern";
 const UEBERSICHT = "inhalte/spezies/Biologische Spezies/Übersichtsseite biologische spezies/Uebersicht.html";
 for (const f of [PLANET, PLANETBILD, KARTE]) if (!exists(f)) throw new Error("Fehlt: " + f);

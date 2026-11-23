@@ -1,0 +1,292 @@
+{
+  "systemName": "Ilaren-System",
+  "praefix": "ilaren-",
+  "lage": {
+    "entfernungLj": 143,
+    "richtung": [
+      0.327,
+      -0.741,
+      0.586
+    ]
+  },
+  "einzelstern": true,
+  "einleitung": "Das Ilaren-System ist die Heimat der Tessari und ihrer zeitweiligen Verbundpersonen, der Veya. Sechs Planeten umkreisen den orangefarbenen K3V-Stern Ilaren; der wasserreiche dritte Planet Khaluun liegt in der gemäßigten Zone.",
+  "stern": {
+    "id": "ilaren-stern",
+    "name": "Ilaren",
+    "typ": "Orangefarbener Hauptreihenstern (K3 V)",
+    "masseSonne": 0.78,
+    "radiusSonne": 0.76,
+    "leuchtkraftSonne": 0.26,
+    "temperaturK": 4750,
+    "alterMrd": 5.6,
+    "farbe": [
+      1,
+      0.63,
+      0.39
+    ],
+    "emissionsfarbe": [
+      1,
+      0.69,
+      0.46
+    ],
+    "emission": 1,
+    "beschreibung": "Ilaren ist ein stabiler orangefarbener Hauptreihenstern der Spektralklasse K3 V. Mit 0,78 Sonnenmassen und rund 26 Prozent der Sonnenleuchtkraft liegt seine gemäßigte Zone näher am Stern als im Sonnensystem. Das Alter wird im Arbeitsmodell mit etwa 5,6 Milliarden Jahren angesetzt.",
+    "bild": {
+      "art": "sterne",
+      "slug": "junger-stern-im-ubergang-bb392ee0da"
+    }
+  },
+  "koerper": [
+    {
+      "id": "ilaren-harrek",
+      "name": "Harrek",
+      "typ": "Heißer Gesteinsplanet",
+      "um": "ilaren-stern",
+      "aAE": 0.15,
+      "e": 0.015,
+      "i": 2.1,
+      "knoten": 28,
+      "peri": 73,
+      "phase": 210,
+      "radiusKm": 4700,
+      "masseErde": 0.36,
+      "albedo": 0.18,
+      "farbe": [
+        0.68,
+        0.37,
+        0.27
+      ],
+      "beschreibung": "Harrek ist der innerste Planet des Systems. Seine stark bestrahlte Oberfläche ist von alten Einschlagsbecken und thermisch beanspruchtem Gestein geprägt; eine komplexe Biosphäre ist nicht bekannt.",
+      "bild": {
+        "art": "planeten",
+        "slug": "gluhender-lavaplanet-mit-flieenden-magmastromen-941d9e0bd6"
+      }
+    },
+    {
+      "id": "ilaren-vosan",
+      "name": "Vosan",
+      "typ": "Trockener Gesteinsplanet",
+      "um": "ilaren-stern",
+      "aAE": 0.31,
+      "e": 0.025,
+      "i": 1.4,
+      "knoten": 141,
+      "peri": 211,
+      "phase": 45,
+      "radiusKm": 6500,
+      "masseErde": 0.72,
+      "albedo": 0.25,
+      "farbe": [
+        0.73,
+        0.49,
+        0.34
+      ],
+      "beschreibung": "Vosan ist eine trockene innere Gesteinswelt mit starken Temperaturschwankungen. Weite Ebenen, alte Einschlagslandschaften und mögliche regionale tektonische Restaktivität machen ihn zu einem Ziel geologischer Forschung.",
+      "bild": {
+        "art": "planeten",
+        "slug": "aschgrauer-wustenplanet-im-all-445698a4db"
+      }
+    },
+    {
+      "id": "ilaren-khaluun",
+      "name": "Khaluun",
+      "typ": "Gemäßigter, wasserreicher Gesteinsplanet",
+      "um": "ilaren-stern",
+      "aAE": 0.52,
+      "e": 0.012,
+      "i": 0.7,
+      "knoten": 48,
+      "peri": 126,
+      "phase": 315,
+      "radiusKm": 6562,
+      "masseErde": 1.08,
+      "albedo": 0.3,
+      "zielTemperaturC": 14,
+      "farbe": [
+        0.19,
+        0.55,
+        0.68
+      ],
+      "bild": {
+        "vorschau": "himmelskoerper.bildarchiv.khaluun-vorschau",
+        "archivLink": "../../inhalte/himmelskoerper/planeten/details/khaluun/hauptseite/index.html"
+      },
+      "beschreibung": "Khaluun ist die wasserreiche Heimatwelt der Tessari (Kollektiden). Rund 61 Prozent seiner Oberfläche sind von Ozeanen bedeckt. Aktive Plattentektonik, weit verzweigte Flüsse, Wanderdeltas, Nebelwälder und zwei Monde prägen die Welt."
+    },
+    {
+      "id": "ilaren-deyra",
+      "name": "Deyra",
+      "typ": "Mond",
+      "um": "ilaren-khaluun",
+      "aAE": 0.00124,
+      "e": 0.006,
+      "i": 0.35,
+      "knoten": 31,
+      "peri": 67,
+      "phase": 12,
+      "radiusKm": 1010,
+      "masseErde": 0.004,
+      "farbe": [
+        0.66,
+        0.62,
+        0.56
+      ],
+      "beschreibung": "Deyra ist Khaluuns größerer und gezeitenwirksamerer Mond. Seine kraterreiche Gesteinsoberfläche bewahrt unterschiedlich alte Einschlagsbecken. Die Bahn liegt bei rund 185.000 Kilometern; die Umlaufzeit beträgt im Modell etwa 8,7 Tage.",
+      "bild": {
+        "art": "monde",
+        "slug": "junger-akkretionsmond-im-schwarzen-all-c41afb8268"
+      }
+    },
+    {
+      "id": "ilaren-orim",
+      "name": "Orim",
+      "typ": "Mond",
+      "um": "ilaren-khaluun",
+      "aAE": 0.00224,
+      "e": 0.009,
+      "i": 0.82,
+      "knoten": 154,
+      "peri": 240,
+      "phase": 188,
+      "radiusKm": 790,
+      "masseErde": 0.002,
+      "farbe": [
+        0.55,
+        0.49,
+        0.44
+      ],
+      "beschreibung": "Orim ist der kleinere äußere Mond Khaluuns. In rund 335.000 Kilometern Entfernung überlagert seine Gravitation die stärkeren Deyra-Gezeiten und erzeugt wechselnde, aber nicht planetenweit katastrophale Tidenzyklen.",
+      "bild": {
+        "art": "monde",
+        "slug": "lebender-mond-mit-blauen-atemrohren-c92ed9e23a88"
+      }
+    },
+    {
+      "id": "ilaren-meyt",
+      "name": "Meyt",
+      "typ": "Kalter Gesteinsplanet",
+      "um": "ilaren-stern",
+      "aAE": 0.92,
+      "e": 0.035,
+      "i": 1.8,
+      "knoten": 265,
+      "peri": 49,
+      "phase": 120,
+      "radiusKm": 6000,
+      "masseErde": 0.78,
+      "albedo": 0.42,
+      "farbe": [
+        0.55,
+        0.62,
+        0.68
+      ],
+      "beschreibung": "Meyt ist eine kalte Gesteinswelt jenseits der gemäßigten Zone. Frostablagerungen, alte Einschläge und mögliche unterirdische Salz- oder Wasservorkommen bestimmen sein Forschungsinteresse.",
+      "bild": {
+        "art": "planeten",
+        "slug": "tiefgefrorener-eisplanet-im-fernen-sternenlicht-7207b2e0e6"
+      }
+    },
+    {
+      "id": "ilaren-asteroidenguertel",
+      "name": "Ilaren-Asteroidengürtel",
+      "typ": "Asteroidengürtel",
+      "ringUm": "ilaren-stern",
+      "ringeAE": [
+        1.3,
+        1.45,
+        1.6,
+        1.75,
+        1.9
+      ],
+      "ankerAE": 1.6,
+      "farbe": [
+        0.68,
+        0.54,
+        0.39
+      ],
+      "beschreibung": "Der Gürtel zwischen etwa 1,3 und 1,9 AE enthält metallreiche, silikatische und kohlenstoffhaltige Körper sowie Trümmer früherer Kollisionen. Er dient als Rohstoff- und Forschungsregion des Ilaren-Systems.",
+      "anzahl": 240,
+      "groesseKm": 320,
+      "mindestPx": 4,
+      "bild": {
+        "art": "sternensysteme",
+        "slug": "jorveks-weit-gespannter-asteroidengurtel-ccd7dd1ff7fb"
+      }
+    },
+    {
+      "id": "ilaren-daran",
+      "name": "Daran",
+      "typ": "Gasriese",
+      "um": "ilaren-stern",
+      "aAE": 2.45,
+      "e": 0.035,
+      "i": 1.1,
+      "knoten": 19,
+      "peri": 307,
+      "phase": 272,
+      "radiusKm": 53000,
+      "masseErde": 85,
+      "albedo": 0.36,
+      "farbe": [
+        0.73,
+        0.58,
+        0.42
+      ],
+      "beschreibung": "Daran ist der größte Planet des Ilaren-Systems. Seine überwiegend leichten Gase bilden mehrere Wolken- und Druckschichten mit großräumigen Strömungen; zahlreiche Monde und ein mögliches schwaches Ringsystem sind Gegenstand weiterer Beobachtung.",
+      "bild": {
+        "art": "planeten",
+        "slug": "pfirsichfarbener-gasriese-im-tiefen-all-6bd0c79aa4"
+      }
+    },
+    {
+      "id": "ilaren-ulmar",
+      "name": "Ulmar",
+      "typ": "Eisriese",
+      "um": "ilaren-stern",
+      "aAE": 5.9,
+      "e": 0.045,
+      "i": 2.2,
+      "knoten": 194,
+      "peri": 81,
+      "phase": 73,
+      "radiusKm": 24500,
+      "masseErde": 16,
+      "albedo": 0.34,
+      "farbe": [
+        0.43,
+        0.59,
+        0.78
+      ],
+      "beschreibung": "Ulmar ist ein äußerer Eisriese mit ausgedehnter Atmosphäre und Hochdruckmaterialien im Inneren. Mehrere kleine und mittelgroße Monde, dynamische Windsysteme und ein Magnetfeld bieten Forschungsziele für unbemannte Missionen.",
+      "bild": {
+        "art": "planeten",
+        "slug": "tiefblauer-methan-eisplanet-im-all-ddd08d6382"
+      }
+    },
+    {
+      "id": "ilaren-komet",
+      "name": "Seyran",
+      "typ": "Komet",
+      "um": "ilaren-stern",
+      "aAE": 24,
+      "e": 0.72,
+      "i": 14,
+      "knoten": 208,
+      "peri": 45,
+      "phase": 98,
+      "radiusKm": 7,
+      "masseErde": 0,
+      "farbe": [
+        0.77,
+        0.7,
+        0.61
+      ],
+      "beschreibung": "Seyran ist ein langperiodischer eisreicher Kleinkörper aus der äußeren Region des Systems. Seine stark geneigte, langgestreckte Bahn bleibt im Arbeitsmodell außerhalb der Planetenbahnen; bei sonnennahem Durchgang bildet sich eine Koma mit Schweif.",
+      "bild": {
+        "art": "kometen",
+        "slug": "komet-mit-gefiedertem-schweif-f9ea43f7ee27"
+      }
+    }
+  ]
+}

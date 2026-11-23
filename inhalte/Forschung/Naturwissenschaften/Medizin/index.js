@@ -102,7 +102,7 @@ const knoten = [
         "belohnung": {
             "art": "gegenstand",
             "name": "Handel Versorgungsnetze",
-            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/OzeanWelt/erde-im-sternenmeer/unterseiten/ERDE_BILDER/Zivilisation/14%20%E2%80%93%20Handel%20&%20Versorgungsnetze/14_Handel_Versorgungsnetze.jpg"
+            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/OzeanWelt/erde/unterseiten/ERDE_BILDER/Zivilisation/14%20%E2%80%93%20Handel%20&%20Versorgungsnetze/14_Handel_Versorgungsnetze.jpg"
         }
     },
     {
@@ -117,7 +117,7 @@ const knoten = [
         "belohnung": {
             "art": "gegenstand",
             "name": "Medizin Gesundheitswesen",
-            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/OzeanWelt/erde-im-sternenmeer/unterseiten/ERDE_BILDER/Zivilisation/16%20%E2%80%93%20Medizin%20&%20Gesundheitswesen/16_Medizin_Gesundheitswesen.jpg"
+            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/OzeanWelt/erde/unterseiten/ERDE_BILDER/Zivilisation/16%20%E2%80%93%20Medizin%20&%20Gesundheitswesen/16_Medizin_Gesundheitswesen.jpg"
         }
     }
 ];

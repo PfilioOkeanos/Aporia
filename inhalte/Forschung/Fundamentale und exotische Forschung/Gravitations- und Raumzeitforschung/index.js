@@ -45,7 +45,7 @@ const knoten = [
         "belohnung": {
             "art": "gegenstand",
             "name": "Gravitationsbeziehungen Resonanzen",
-            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/OzeanWelt/erde-im-sternenmeer/unterseiten/ERDE_BILDER/Astronomie/08%20%E2%80%93%20Gravitationsbeziehungen%20&%20Resonanzen/08_Gravitationsbeziehungen_Resonanzen.jpg"
+            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/OzeanWelt/erde/unterseiten/ERDE_BILDER/Astronomie/08%20%E2%80%93%20Gravitationsbeziehungen%20&%20Resonanzen/08_Gravitationsbeziehungen_Resonanzen.jpg"
         }
     },
     {
@@ -60,7 +60,7 @@ const knoten = [
         "belohnung": {
             "art": "gegenstand",
             "name": "Schwarzes loch mit leuchtendem gravitationsbogen",
-            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/SchwarzeL%C3%B6cher/schwarzes-loch-mit-leuchtendem-gravitationsbogen/hauptseite/schwarzes-loch-mit-leuchtendem-gravitationsbogen-0b75cb8f39e1.jpg"
+            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/SchwarzeL%C3%B6cher/dalugan-singularitat/hauptseite/schwarzes-loch-mit-leuchtendem-gravitationsbogen-0b75cb8f39e1.jpg"
         }
     },
     {

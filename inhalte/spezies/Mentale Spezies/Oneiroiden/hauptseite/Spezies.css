@@ -1,2 +1,180 @@
-/* Oneiroiden – Hauptseite · erzeugt vom Spezies-Baukasten (scripts/spezies)
-   Aufbau: inhalte/spezies/_gemeinsam/spezies-standard.css · Farben: ../oneiroiden-basis.css · eigene Anpassungen hier ergänzen. */
+/* Oneiroiden – Hauptseite · erzeugt von scripts/spezies/eigene/oneiroiden.mjs (Vorlage: oneiroiden-hauptseite.css)
+   Gemeinsames Design: ../oneiroiden-basis.css · hier nur der Aufbau der Übersicht.
+   Farbwelt nach den Bildern: Nacht-Violett, Lila (--on-violett) der Traumwelten, Bronze (--on-cyan) der Körper; Leitmotiv „Zwei Zustände“. */
+
+.on-hauptseite .on-hero { min-height: clamp(22rem, 38cqi, 34rem); }
+.on-hauptseite .on-hero-bild { width: 66% !important; object-position: 50% 45%; }
+.on-hauptseite .on-hero h1 { letter-spacing: .07em; text-shadow: 0 0 30px #c39cf266, 0 2px 18px #000; }
+.on-kicker--linie { display: flex; align-items: center; gap: .8rem; }
+.on-kicker--linie::after { content: ""; width: 6rem; height: 1px; background: linear-gradient(90deg, var(--on-violett), var(--on-cyan), transparent); }
+.on-unterzeile em { color: var(--on-violett-hell); font-style: normal; }
+.on-hero-links { display: flex; flex-wrap: wrap; gap: 1.4rem; margin-top: 1.3rem !important; }
+.on-hero-links a { padding-bottom: .2rem; border-bottom: 1px solid var(--on-linie-hell); color: var(--on-text) !important; font: 500 1rem/1.3 var(--on-serif); text-decoration: none; }
+.on-hero-links a:hover { color: var(--on-violett-hell) !important; border-color: var(--on-violett); }
+
+/* Funkelnde Traumsterne im Kopfbereich */
+.on-sterne { position: absolute; inset: 0; z-index: -1; pointer-events: none; }
+.on-sterne i { position: absolute; width: 4px; height: 4px; border-radius: 50%; background: #ede0ff; box-shadow: 0 0 10px 3px #c39cf2aa; opacity: 0; animation: on-funkeln 6s ease-in-out infinite; }
+.on-sterne i:nth-child(1) { left: 58%; top: 18%; }
+.on-sterne i:nth-child(2) { left: 72%; top: 34%; animation-delay: 1s; }
+.on-sterne i:nth-child(3) { left: 86%; top: 22%; animation-delay: 2s; background: #f6d6b0; box-shadow: 0 0 10px 3px #e3b07aaa; }
+.on-sterne i:nth-child(4) { left: 64%; top: 70%; animation-delay: 3s; }
+.on-sterne i:nth-child(5) { left: 90%; top: 62%; animation-delay: 4s; }
+.on-sterne i:nth-child(6) { left: 78%; top: 82%; animation-delay: 5s; background: #f6d6b0; box-shadow: 0 0 10px 3px #e3b07aaa; }
+@keyframes on-funkeln { 0%, 100% { opacity: 0; transform: scale(.6); } 50% { opacity: 1; transform: scale(1.2); } }
+
+/* Kennzahlen */
+.on-kennzahlen { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); margin: 0 0 var(--on-raum); padding: .3rem; }
+.on-kennzahlen > div { display: grid; gap: .1rem; padding: .7rem .9rem; text-align: center; }
+.on-kennzahlen > div + div { border-left: 1px solid var(--on-linie); }
+.on-kennzahlen dt { color: var(--on-leise); font: 600 .68rem/1.3 "Segoe UI", system-ui, sans-serif; letter-spacing: .14em; text-transform: uppercase; }
+.on-kennzahlen dd { margin: 0; color: var(--on-violett-hell); font: 600 clamp(1.2rem, 2.3cqi, 1.75rem)/1.15 var(--on-serif); }
+.on-kennzahlen dd a { color: inherit !important; text-decoration: none; }
+.on-kennzahlen dd a:hover { color: var(--on-cyan) !important; }
+.on-kennzahlen span { color: var(--on-leise); font-size: .78rem; }
+
+.on-abschnitt { margin-top: calc(var(--on-raum) * 1.6); }
+.on-traumblock, .on-recht, .on-technik { display: grid; gap: .8rem; }
+.on-recht strong, .on-bau-text strong, .on-tag-text strong { color: var(--on-violett-hell); }
+
+/* Gemeinsam träumen: drei überlappende Traumräume */
+.on-traum-raster { display: grid; grid-template-columns: minmax(16rem, 1fr) minmax(0, 1.1fr); gap: calc(var(--on-raum) * 1.4); align-items: center; }
+.on-traum { width: 100%; max-width: 28rem; overflow: visible; }
+.on-t-raum { fill: #c39cf21f; stroke: var(--on-violett); stroke-width: 1.4; mix-blend-mode: screen; transform-box: fill-box; transform-origin: center; animation: on-atmen 7s ease-in-out infinite; animation-delay: calc(var(--i) * -2.3s); }
+.on-t-raum:nth-child(2) { fill: #e3b07a1c; stroke: var(--on-cyan); }
+.on-t-raum:nth-child(3) { fill: #7ab6e01a; stroke: #7ab6e0; }
+@keyframes on-atmen { 0%, 100% { transform: scale(.94); opacity: .75; } 50% { transform: scale(1.04); opacity: 1; } }
+.on-t-mitte { fill: #ede0ff; filter: drop-shadow(0 0 10px #c39cf2); animation: on-puls 3.5s ease-in-out infinite; }
+@keyframes on-puls { 0%, 100% { opacity: .55; } 50% { opacity: 1; } }
+.on-traum text { fill: #1a1226; font: 700 9px "Segoe UI", system-ui, sans-serif; text-anchor: middle; }
+.on-t-schlaefer circle { fill: #2a2038; stroke: var(--on-violett-hell); stroke-width: 1.5; }
+.on-t-schlaefer path { fill: none; stroke: var(--on-cyan); stroke-width: 1.5; stroke-linecap: round; opacity: .8; }
+.on-signale { position: relative; display: grid; gap: .45rem; margin: 0; padding: 0 0 0 1.4rem !important; list-style: none; counter-reset: sig; }
+.on-signale::before { content: ""; position: absolute; left: .45rem; top: .6rem; bottom: .6rem; width: 2px; background: linear-gradient(180deg, var(--on-violett), var(--on-cyan)); }
+.on-signale li { counter-increment: sig; position: relative; display: grid; gap: .1rem; padding: .5rem .7rem !important; border: 1px solid var(--on-linie); border-radius: 12px; background: #0f0b16b3; animation: on-auf .5s ease both; animation-delay: calc(var(--i) * .12s); }
+.on-signale li::before { content: counter(sig) !important; position: absolute; left: -1.45rem; top: .55rem; display: grid !important; place-items: center; width: 1.2rem; height: 1.2rem; border-radius: 50%; background: var(--on-violett) !important; color: #170e24; font: 700 .68rem/1 ui-monospace, Consolas, monospace; box-shadow: none !important; }
+.on-signale strong { color: var(--on-violett-hell); font: 600 .98rem/1.2 var(--on-serif); }
+.on-signale span { color: var(--on-leise); font-size: .82rem; line-height: 1.4; }
+@keyframes on-auf { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+.on-hinweis { padding: .75rem .9rem; border: 1px solid var(--on-linie); border-left: 3px solid var(--on-cyan); border-radius: 10px; background: #0f0b16b3; }
+
+/* Fähigkeiten und Grenzen */
+.on-faehig { display: grid; grid-template-columns: minmax(0, 2fr) minmax(14rem, 1fr); gap: var(--on-raum); align-items: start; }
+.on-faehig-liste { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .5rem; margin: 0; padding: 0; list-style: none; }
+.on-faehig-liste li { display: grid; gap: .2rem; padding: .75rem .85rem !important; animation: on-auf .5s ease both; animation-delay: calc(var(--i) * .08s); }
+.on-faehig-liste li::before { display: none !important; }
+.on-faehig-liste strong { color: var(--on-violett-hell); font: 600 1rem/1.2 var(--on-serif); }
+.on-faehig-liste span { font-size: .84rem; line-height: 1.4; }
+.on-grenzen { padding: .9rem 1rem; border-color: #e3b07a55 !important; }
+.on-grenzen h3 { margin-bottom: .4rem; color: var(--on-cyan); font: 600 1rem/1.2 var(--on-serif); }
+.on-grenzen ul { display: grid; gap: .3rem; margin: 0; padding: 0; list-style: none; }
+.on-grenzen li { padding-left: 1.2rem !important; position: relative; font-size: .88rem; }
+.on-grenzen li::before { content: "×" !important; position: absolute; left: 0; top: 0; color: var(--on-cyan); font-weight: 700; background: none !important; box-shadow: none !important; width: auto !important; height: auto !important; }
+
+/* Ein Tag auf Iravelle */
+.on-tag { display: grid; grid-template-columns: minmax(12rem, .6fr) minmax(0, 1.5fr); gap: calc(var(--on-raum) * 1.4); align-items: center; }
+.on-tag-grafik { display: grid; gap: .6rem; justify-items: center; }
+.on-tagring { position: relative; display: grid; place-items: center; width: min(100%, 13rem); aspect-ratio: 1; border-radius: 50%; background: conic-gradient(from -90deg, var(--on-cyan) 0 66.66%, var(--on-violett) 66.66% 100%); box-shadow: 0 0 2rem #c39cf233; animation: on-dreh 60s linear infinite; }
+.on-tagring::after { content: ""; position: absolute; inset: 16%; border-radius: 50%; background: var(--on-glas, #120e1b); }
+.on-tagring span { position: relative; z-index: 1; display: grid; text-align: center; color: var(--on-leise); font-size: .8rem; animation: on-dreh 60s linear infinite reverse; }
+.on-tagring b { color: var(--on-violett-hell); font: 600 1.8rem/1 var(--on-serif); }
+@keyframes on-dreh { to { transform: rotate(360deg); } }
+.on-legende { display: flex; flex-wrap: wrap; justify-content: center; gap: .3rem .9rem; margin: 0; padding: 0; list-style: none; color: var(--on-leise); font-size: .78rem; }
+.on-legende li { padding: 0 !important; }
+.on-legende li::before { display: none !important; }
+.on-legende i { display: inline-block; width: .8rem; height: .5rem; margin-right: .35rem; border-radius: 3px; vertical-align: middle; }
+.on-l-wach { background: var(--on-cyan); } .on-l-ruhe { background: var(--on-violett); }
+.on-tag-text { display: grid; gap: .7rem; }
+.on-schichten { display: grid; gap: .4rem; padding: .7rem .85rem; border: 1px solid var(--on-linie); border-radius: 12px; background: #0f0b16b3; }
+.on-schichten > div { display: grid; grid-template-columns: 5.5rem minmax(0, 1fr); gap: .6rem; align-items: center; font-size: .84rem; }
+.on-schichten i { height: .55rem; border-radius: 999px; background: linear-gradient(90deg, var(--on-cyan) 0 0) calc(var(--s) / 20 * 100%) 0 / 66.66% 100% no-repeat, linear-gradient(90deg, var(--on-violett), var(--on-violett)); }
+.on-schichten > div:nth-child(1) i { background: linear-gradient(90deg, var(--on-cyan) 0 66.66%, var(--on-violett) 66.66% 100%); }
+.on-schichten > div:nth-child(2) i { background: linear-gradient(90deg, var(--on-violett) 0 0%, var(--on-cyan) 0% 33.33%, var(--on-violett) 33.33% 66.66%, var(--on-cyan) 66.66% 100%); }
+.on-schichten > div:nth-child(3) i { background: linear-gradient(90deg, var(--on-cyan) 0 33.33%, var(--on-cyan) 33.33% 66.66%, var(--on-violett) 66.66% 100%); }
+.on-schichten > div:nth-child(2) i { background: linear-gradient(90deg, var(--on-cyan) 0 33.33%, var(--on-violett) 33.33% 66.66%, var(--on-cyan) 66.66% 100%); }
+.on-schichten > div:nth-child(3) i { background: linear-gradient(90deg, var(--on-violett) 0 33.33%, var(--on-cyan) 33.33% 100%); }
+.on-skala { display: flex !important; justify-content: space-between; margin-left: 6.1rem; color: var(--on-leise); font: 600 .66rem/1 ui-monospace, Consolas, monospace; }
+
+/* Körperbau */
+.on-bau { display: grid; grid-template-columns: minmax(12rem, .7fr) minmax(0, 1.5fr); gap: calc(var(--on-raum) * 1.4); align-items: center; }
+.on-bau-bild { margin: 0; aspect-ratio: 4 / 5; overflow: hidden; border-radius: 14px; background: #050407; }
+.on-bau-bild img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 45%; }
+.on-bau-text { display: grid; gap: .7rem; }
+.on-mini { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .35rem .7rem; margin: 0; }
+.on-mini > div { min-width: 0; padding-top: .3rem; border-top: 1px solid #ffffff12; }
+.on-mini dt { color: var(--on-leise); font-size: .7rem; letter-spacing: .06em; text-transform: uppercase; }
+.on-mini dd { margin: 0; font-size: .85rem; overflow-wrap: anywhere; }
+
+/* Entwicklungsstufen */
+.on-stufen { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: var(--on-raum); }
+.on-stufe { display: grid; grid-template-rows: auto 1fr; overflow: hidden; color: var(--on-text) !important; text-decoration: none; transition: border-color .25s, transform .25s; animation: on-auf .6s ease both; animation-delay: calc(var(--i) * .12s); }
+.on-stufe:hover { border-color: var(--on-violett); transform: translateY(-2px); }
+.on-stufe figure { margin: 0; aspect-ratio: 4 / 5; overflow: hidden; background: #050407; }
+.on-stufe img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 60%; transition: transform .6s ease; }
+.on-stufe:hover img { transform: scale(1.06); }
+.on-stufe > span { display: flex; gap: .5rem; align-items: center; padding: .55rem .7rem; font: 600 .9rem/1.2 var(--on-serif); }
+.on-stufe b { display: grid; place-items: center; flex: none; width: 1.45rem; height: 1.45rem; border: 1px solid var(--on-violett); border-radius: 50%; color: var(--on-violett-hell); font: 700 .72rem/1 ui-monospace, Consolas, monospace; }
+
+/* Traumrecht */
+.on-rechte { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .5rem; margin: 0; padding: 0; list-style: none; counter-reset: recht; }
+.on-rechte li { counter-increment: recht; position: relative; padding: .7rem .75rem .7rem 2.4rem !important; border: 1px solid var(--on-linie); border-radius: 12px; background: #0f0b16b3; font: 600 .9rem/1.3 var(--on-serif); }
+.on-rechte li::before { content: counter(recht) !important; position: absolute; left: .7rem; top: .7rem; display: grid !important; place-items: center; width: 1.3rem; height: 1.3rem; border-radius: 50%; background: var(--on-cyan) !important; color: #1f1306; font: 700 .72rem/1 ui-monospace, Consolas, monospace; box-shadow: none !important; }
+
+/* Technologie-Raster */
+.on-technik-raster { display: grid; grid-template-columns: repeat(auto-fill, minmax(12.5rem, 1fr)); gap: .45rem; margin: 0; padding: 0; list-style: none; }
+.on-technik-raster li { padding: 0 !important; }
+.on-technik-raster li::before { display: none !important; }
+.on-technik-raster a { display: grid; gap: .15rem; height: 100%; padding: .6rem .75rem; border: 1px solid var(--on-linie); border-radius: 12px; background: linear-gradient(135deg, #c39cf214, #0f0b16b3 60%); color: var(--on-text) !important; text-decoration: none; transition: border-color .2s, transform .2s; }
+.on-technik-raster a:hover { border-color: var(--on-cyan); transform: translateY(-2px); }
+.on-technik-raster b { color: var(--on-cyan); font: 700 .74rem/1.2 ui-monospace, Consolas, monospace; }
+.on-technik-raster span { font: 600 .92rem/1.25 var(--on-serif); }
+
+/* Steckbrief + Heimatwelt */
+.on-zwei { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: var(--on-raum); align-items: start; margin-top: calc(var(--on-raum) * 1.6); }
+.on-zwei .on-dossier-steckbrief { margin-top: 0; }
+.on-zwei .on-dossier-raster { grid-template-columns: minmax(0, 1fr); }
+.on-welt { overflow: hidden; }
+.on-welt-bild { display: block; aspect-ratio: 16 / 10; overflow: hidden; background: #000; }
+.on-welt-bild img { width: 100%; height: 100%; object-fit: cover; object-position: center 45%; transition: transform .8s ease; }
+.on-welt-bild:hover img { transform: scale(1.04); }
+.on-welt .on-block { display: grid; gap: .7rem; }
+
+/* Themenbereiche (zehn Reiter) */
+.on-themen-raster { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: var(--on-raum); }
+.on-thema { display: grid; align-content: end; gap: .25rem; min-height: 9.5rem; padding: .8rem; overflow: hidden; isolation: isolate; color: var(--on-text) !important; text-decoration: none; }
+.on-thema-bild { position: absolute !important; inset: 0; z-index: -2; width: 100% !important; height: 100% !important; object-fit: cover; object-position: center 35%; transition: transform .6s ease; }
+.on-thema::before { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(0deg, #09070f 8%, #09070fcc 50%, #09070f26 100%); }
+.on-thema:hover { border-color: var(--on-violett); box-shadow: 0 0 1.1rem #c39cf244; }
+.on-thema:hover .on-thema-bild { transform: scale(1.05); }
+.on-thema-kopf { display: flex; gap: .45rem; align-items: center; }
+.on-thema-text { font-size: .82rem; line-height: 1.35; }
+.on-layout--fuss { margin-top: var(--on-raum); }
+
+@media (prefers-reduced-motion: reduce) {
+    .on-sterne i, .on-t-raum, .on-t-mitte, .on-signale li, .on-faehig-liste li, .on-tagring, .on-tagring span, .on-stufe { animation: none; }
+    .on-sterne i { opacity: .6; }
+}
+@container (max-width: 1100px) {
+    .on-traum-raster, .on-zwei, .on-faehig { grid-template-columns: minmax(0, 1fr); }
+    .on-traum { justify-self: center; }
+    .on-stufen { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .on-rechte { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .on-themen-raster { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+@container (max-width: 820px) {
+    .on-kennzahlen { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .on-kennzahlen > div:nth-child(4) { border-left: 0; }
+    .on-bau, .on-tag { grid-template-columns: minmax(0, 1fr); }
+    .on-bau-bild { aspect-ratio: 4 / 3; }
+    .on-faehig-liste { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .on-themen-raster { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .on-hauptseite .on-hero-bild { width: 100% !important; }
+}
+@container (max-width: 560px) {
+    .on-kennzahlen { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .on-kennzahlen > div { border-left: 0 !important; border-top: 1px solid var(--on-linie); }
+    .on-kennzahlen > div:nth-child(-n+2) { border-top: 0; }
+    .on-themen-raster, .on-rechte, .on-faehig-liste { grid-template-columns: minmax(0, 1fr); }
+    .on-stufen { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .on-mini { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}

@@ -1,0 +1,526 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Teshra",
+  "genitiv": "von Teshra",
+  "dossierName": "Teshra-Dossier",
+  "klasse": "Mond",
+  "intro": "Teshra ist ein winziger, unregelmäßiger Zweitmond – ein eingefangener Asteroid auf geneigter Bahn, mit bloßem Auge von Nalvyr aus nicht zu sehen. Teshra umkreist Nalvyr in 4,1 Tage.",
+  "globusDaten": {
+    "planet": "der-kleine-eingefangene-kartoffelmond",
+    "klasse": "Gestein",
+    "radius": 6000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=nalvyr-stern&objekt=nalvyr-teshra",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-B6735B4CE3"
+    ],
+    [
+      "Typ",
+      "Mond"
+    ],
+    [
+      "Sternsystem",
+      "Saelon-System"
+    ],
+    [
+      "Zentralkörper",
+      "Nalvyr"
+    ],
+    [
+      "Große Halbachse",
+      "103.850 km"
+    ],
+    [
+      "Umlaufzeit",
+      "4,1 Tage"
+    ],
+    [
+      "Durchmesser",
+      "12 km"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -7 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Saelon-System"
+    ],
+    [
+      "Zentralstern",
+      "Saelon",
+      "inhalte/himmelskoerper/sterne/details/saelon/hauptseite/index.html"
+    ],
+    [
+      "Umläuft",
+      "Nalvyr",
+      "inhalte/himmelskoerper/planeten/details/nalvyr/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "103.850 km"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Teshra im Saelon-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=nalvyr-stern&objekt=nalvyr-teshra",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Saelon",
+      "href": "inhalte/himmelskoerper/sterne/details/saelon/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◍",
+      "art": "Mutterplanet",
+      "titel": "Nalvyr",
+      "href": "inhalte/himmelskoerper/planeten/details/nalvyr/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Regeneranten",
+      "titel": "Nalvyr",
+      "href": "inhalte/himmelskoerper/planeten/details/nalvyr/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Regeneranten",
+      "href": "inhalte/spezies/Biologische Spezies/Regeneranten/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Saelon-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=nalvyr-stern&objekt=nalvyr-teshra"
+    },
+    {
+      "titel": "Speziesdossier Regeneranten",
+      "href": "inhalte/spezies/Biologische Spezies/Regeneranten/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#060605",
+      "tiefe": "#0e0c0b",
+      "akzent": "#aca29c",
+      "sand": "#b3a491",
+      "moos": "#8c9479",
+      "ozean": "#707f85",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#39322e"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Astronomie"
+      ],
+      [
+        "Planet",
+        "Mutterplanet"
+      ],
+      [
+        "Kräfte",
+        "Gezeiten"
+      ],
+      [
+        "Tiefe",
+        "Geologie"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Mutterplanet": {
+      "gruppe": "Wissenschaft",
+      "icon": "◐",
+      "intro": "Mutterplanet von Teshra.",
+      "abschnitte": [
+        {
+          "titel": "Nalvyr",
+          "text": [
+            "Nalvyr ist die Heimatwelt der Regeneranten: eine alte, biologisch vielfältige Gesteinswelt mit zwei großen Kontinenten, dem Tessal-Archipel, großen Flussdeltas und ausgedehnten Meeresräumen."
+          ],
+          "daten": [
+            [
+              "Typ",
+              "Gesteinsplanet"
+            ],
+            [
+              "Durchmesser",
+              "12.488 km"
+            ],
+            [
+              "Abstand des Mondes",
+              "103.850 km (16,6 Planetenradien)"
+            ]
+          ],
+          "verweise": [
+            [
+              "Nalvyr",
+              "inhalte/himmelskoerper/planeten/details/nalvyr/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Weitere Monde von Nalvyr",
+          "liste": [
+            "Oris – Umlauf in 19,9 Tage"
+          ],
+          "verweise": [
+            [
+              "Oris",
+              "inhalte/himmelskoerper/monde/details/oris/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Gezeiten": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gezeiten von Teshra.",
+      "abschnitte": [
+        {
+          "titel": "Gezeitenkräfte",
+          "text": [
+            "Auf seiner Bahn in 103.850 km Abstand wirken starke Gezeitenkräfte von Nalvyr auf Teshra. Die leicht exzentrische Bahn (e = 0,07) knetet das Innere bei jedem Umlauf."
+          ]
+        }
+      ]
+    },
+    "Gebundene Rotation": {
+      "gruppe": "Wissenschaft",
+      "icon": "↻",
+      "intro": "Gebundene Rotation von Teshra.",
+      "abschnitte": [
+        {
+          "titel": "Rotation",
+          "text": [
+            "Teshra wendet Nalvyr vermutlich stets dieselbe Seite zu: Ein Tag dauert so lange wie ein Umlauf – 4,1 Tage."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Teshra auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Teshra",
+          "text": [
+            "Teshra ist ein winziger, unregelmäßiger Zweitmond – ein eingefangener Asteroid auf geneigter Bahn, mit bloßem Auge von Nalvyr aus nicht zu sehen.",
+            "Teshra umkreist Nalvyr in 4,1 Tage."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Mond"
+            ],
+            [
+              "Sternsystem",
+              "Saelon-System"
+            ],
+            [
+              "Zentralkörper",
+              "Nalvyr"
+            ],
+            [
+              "Große Halbachse",
+              "103.850 km"
+            ],
+            [
+              "Umlaufzeit",
+              "4,1 Tage"
+            ],
+            [
+              "Durchmesser",
+              "12 km"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -7 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Nalvyr",
+          "text": [
+            "Das Saelon-System ist die Heimat der Regeneranten: Ihr Planet Nalvyr umkreist Saelon, und Teshra ist einer seiner Monde."
+          ],
+          "verweise": [
+            [
+              "Nalvyr",
+              "inhalte/himmelskoerper/planeten/details/nalvyr/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Regeneranten",
+              "inhalte/spezies/Biologische Spezies/Regeneranten/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Teshra im Saelon-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Nalvyr"
+            ],
+            [
+              "Große Halbachse",
+              "103.850 km"
+            ],
+            [
+              "Exzentrizität",
+              "0,07"
+            ],
+            [
+              "Bahnneigung",
+              "9°"
+            ],
+            [
+              "Umlaufzeit",
+              "4,1 Tage"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Saelon · Stern",
+              "Orangefarbener Zwerg (K2 V)"
+            ],
+            [
+              "Saelon B · Begleitstern in 180 AE",
+              "Weißer Zwerg"
+            ],
+            [
+              "Saelon I · 0,13 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Saelon II · 0,47 AE",
+              "Ozeanplanet"
+            ],
+            [
+              "Nalvyr · 0,76 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Saelon IVa · 1,32 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Kerythra · 2,68 AE",
+              "Zwergplanet"
+            ],
+            [
+              "Saelon V · 5,4 AE",
+              "Gasriese"
+            ],
+            [
+              "Saelon VI · 16 AE",
+              "Eisriese"
+            ],
+            [
+              "Saumgürtel · 2,3–3,1 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Weißschleier · 30–42 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Saelon",
+              "inhalte/himmelskoerper/sterne/details/saelon/hauptseite/index.html"
+            ],
+            [
+              "Saelon B",
+              "inhalte/himmelskoerper/sterne/details/saelon-b/hauptseite/index.html"
+            ],
+            [
+              "Saelon I",
+              "inhalte/himmelskoerper/planeten/details/saelon-i/hauptseite/index.html"
+            ],
+            [
+              "Saelon II",
+              "inhalte/himmelskoerper/planeten/details/saelon-ii/hauptseite/index.html"
+            ],
+            [
+              "Nalvyr",
+              "inhalte/himmelskoerper/planeten/details/nalvyr/hauptseite/index.html"
+            ],
+            [
+              "Saelon IVa",
+              "inhalte/himmelskoerper/planeten/details/saelon-iva/hauptseite/index.html"
+            ],
+            [
+              "Kerythra",
+              "inhalte/himmelskoerper/zwergplaneten/details/kerythra/hauptseite/index.html"
+            ],
+            [
+              "Saelon V",
+              "inhalte/himmelskoerper/planeten/details/saelon-v/hauptseite/index.html"
+            ],
+            [
+              "Saelon VI",
+              "inhalte/himmelskoerper/planeten/details/saelon-vi/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Teshra.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "6 km"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Teshra.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Teshra ist geologisch weitgehend erstarrt; Einschläge haben seine Oberfläche geformt."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Teshra.",
+      "abschnitte": [
+        {
+          "titel": "Gashülle",
+          "text": [
+            "Teshra besitzt keine nennenswerte Atmosphäre."
+          ]
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Teshra.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 0,76 AE Abstand zu Saelon liegt die Gleichgewichtstemperatur von Teshra bei rund -7 °C – gemäßigt."
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Teshra.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Teshra entstand zusammen mit dem Saelon-System vor rund 6,1 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Teshra.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Ist der Mond eingefangen oder mit seinem Planeten entstanden?",
+            "Welche Spuren tragen seine ältesten Krater?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Teshra ist mit allen Bahndaten im Saelon-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=nalvyr-stern&objekt=nalvyr-teshra"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Teshra.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Teshra ist ein winziger, unregelmäßiger Zweitmond – ein eingefangener Asteroid auf geneigter Bahn, mit bloßem Auge von Nalvyr aus nicht zu sehen."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Teshra.",
+      "abschnitte": [
+        {
+          "titel": "Teshra – Archivbild",
+          "bild": true,
+          "bildtext": "Teshra"
+        }
+      ]
+    }
+  }
+}

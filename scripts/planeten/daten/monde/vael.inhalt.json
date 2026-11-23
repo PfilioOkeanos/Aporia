@@ -1,0 +1,514 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Vael",
+  "genitiv": "von Vael",
+  "dossierName": "Vael-Dossier",
+  "klasse": "Mond",
+  "intro": "Vael ist der einzige große Mond Mypzlas. Seine Gezeiten bewegen die flachen Binnenmeere und die feuchten Senken der Pilztiefländer. Vael umkreist Mypzla in 19 Tage.",
+  "globusDaten": {
+    "planet": "lebender-halbmond-mit-bernsteinfarbenen-klappen",
+    "klasse": "Gestein",
+    "radius": 1100000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=mypzla-stern&objekt=mypzla-vael",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-AE19926E7F"
+    ],
+    [
+      "Typ",
+      "Mond"
+    ],
+    [
+      "Sternsystem",
+      "Ombrys-System"
+    ],
+    [
+      "Zentralkörper",
+      "Mypzla"
+    ],
+    [
+      "Große Halbachse",
+      "328.261 km"
+    ],
+    [
+      "Umlaufzeit",
+      "19 Tage"
+    ],
+    [
+      "Durchmesser",
+      "2.200 km"
+    ],
+    [
+      "Masse",
+      "0,569 Mondmassen"
+    ],
+    [
+      "Schwerkraft",
+      "0,23 g"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -16 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Ombrys-System"
+    ],
+    [
+      "Zentralstern",
+      "Ombrys",
+      "inhalte/himmelskoerper/sterne/details/ombrys/hauptseite/index.html"
+    ],
+    [
+      "Umläuft",
+      "Mypzla",
+      "inhalte/himmelskoerper/planeten/details/mypzla/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "328.261 km"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Vael im Ombrys-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=mypzla-stern&objekt=mypzla-vael",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Ombrys",
+      "href": "inhalte/himmelskoerper/sterne/details/ombrys/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◍",
+      "art": "Mutterplanet",
+      "titel": "Mypzla",
+      "href": "inhalte/himmelskoerper/planeten/details/mypzla/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Mykonoiden",
+      "titel": "Mypzla",
+      "href": "inhalte/himmelskoerper/planeten/details/mypzla/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Mykonoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Mykonoiden/hauptseite/hauptseite.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Ombrys-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=mypzla-stern&objekt=mypzla-vael"
+    },
+    {
+      "titel": "Speziesdossier Mykonoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Mykonoiden/hauptseite/hauptseite.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#0a0908",
+      "tiefe": "#151412",
+      "akzent": "#d7d1c3",
+      "sand": "#dacbab",
+      "moos": "#b4c99c",
+      "ozean": "#90b0b6",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#575349"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Astronomie"
+      ],
+      [
+        "Planet",
+        "Mutterplanet"
+      ],
+      [
+        "Kräfte",
+        "Gezeiten"
+      ],
+      [
+        "Tiefe",
+        "Geologie"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Mutterplanet": {
+      "gruppe": "Wissenschaft",
+      "icon": "◐",
+      "intro": "Mutterplanet von Vael.",
+      "abschnitte": [
+        {
+          "titel": "Mypzla",
+          "text": [
+            "Mypzla ist die Ursprungswelt der Mykonoiden: eine warme, feuchte Super-Erde mit goldfarbenen Myzelteppichen, riesigen Pilzplateaus und einem schimmernden Sporendunst in der Luft."
+          ],
+          "daten": [
+            [
+              "Typ",
+              "Gesteinsplanet"
+            ],
+            [
+              "Durchmesser",
+              "13.800 km"
+            ],
+            [
+              "Abstand des Mondes",
+              "328.261 km (47,6 Planetenradien)"
+            ]
+          ],
+          "verweise": [
+            [
+              "Mypzla",
+              "inhalte/himmelskoerper/planeten/details/mypzla/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Gezeiten": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gezeiten von Vael.",
+      "abschnitte": [
+        {
+          "titel": "Gezeitenkräfte",
+          "text": [
+            "Auf seiner Bahn in 328.261 km Abstand wirken starke Gezeitenkräfte von Mypzla auf Vael. Die leicht exzentrische Bahn (e = 0,03) knetet das Innere bei jedem Umlauf."
+          ]
+        }
+      ]
+    },
+    "Gebundene Rotation": {
+      "gruppe": "Wissenschaft",
+      "icon": "↻",
+      "intro": "Gebundene Rotation von Vael.",
+      "abschnitte": [
+        {
+          "titel": "Rotation",
+          "text": [
+            "Vael wendet Mypzla vermutlich stets dieselbe Seite zu: Ein Tag dauert so lange wie ein Umlauf – 19 Tage."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Vael auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Vael",
+          "text": [
+            "Vael ist der einzige große Mond Mypzlas. Seine Gezeiten bewegen die flachen Binnenmeere und die feuchten Senken der Pilztiefländer.",
+            "Vael umkreist Mypzla in 19 Tage."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Mond"
+            ],
+            [
+              "Sternsystem",
+              "Ombrys-System"
+            ],
+            [
+              "Zentralkörper",
+              "Mypzla"
+            ],
+            [
+              "Große Halbachse",
+              "328.261 km"
+            ],
+            [
+              "Umlaufzeit",
+              "19 Tage"
+            ],
+            [
+              "Durchmesser",
+              "2.200 km"
+            ],
+            [
+              "Masse",
+              "0,569 Mondmassen"
+            ],
+            [
+              "Schwerkraft",
+              "0,23 g"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -16 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Mypzla",
+          "text": [
+            "Das Ombrys-System ist die Heimat der Mykonoiden: Ihr Planet Mypzla umkreist Ombrys, und Vael ist einer seiner Monde."
+          ],
+          "verweise": [
+            [
+              "Mypzla",
+              "inhalte/himmelskoerper/planeten/details/mypzla/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Mykonoiden",
+              "inhalte/spezies/Biologische Spezies/Mykonoiden/hauptseite/hauptseite.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Vael im Ombrys-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Mypzla"
+            ],
+            [
+              "Große Halbachse",
+              "328.261 km"
+            ],
+            [
+              "Exzentrizität",
+              "0,03"
+            ],
+            [
+              "Bahnneigung",
+              "4,5°"
+            ],
+            [
+              "Umlaufzeit",
+              "19 Tage"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Ombrys · Stern",
+              "Orangefarbener Zwerg (K2 V)"
+            ],
+            [
+              "Ombrys I · 0,24 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Mypzla · 0,66 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Ombrys III · 1,25 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Ombrys IV · 4,6 AE",
+              "Gasriese"
+            ],
+            [
+              "Sporengürtel · 1,8–2,4 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 30–44 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Ombrys",
+              "inhalte/himmelskoerper/sterne/details/ombrys/hauptseite/index.html"
+            ],
+            [
+              "Ombrys I",
+              "inhalte/himmelskoerper/planeten/details/ombrys-i/hauptseite/index.html"
+            ],
+            [
+              "Mypzla",
+              "inhalte/himmelskoerper/planeten/details/mypzla/hauptseite/index.html"
+            ],
+            [
+              "Ombrys III",
+              "inhalte/himmelskoerper/planeten/details/ombrys-iii/hauptseite/index.html"
+            ],
+            [
+              "Ombrys IV",
+              "inhalte/himmelskoerper/planeten/details/ombrys-iv/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Vael.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "1.100 km"
+            ],
+            [
+              "Masse",
+              "0,569 Mondmassen"
+            ],
+            [
+              "Mittlere Dichte",
+              "7,5 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "2,3 m/s² (0,235 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "2,25 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Vael.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Vael ist geologisch weitgehend erstarrt; Einschläge haben seine Oberfläche geformt."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Vael.",
+      "abschnitte": [
+        {
+          "titel": "Gashülle",
+          "text": [
+            "Vael besitzt keine nennenswerte Atmosphäre – dafür ist die Schwerkraft zu gering."
+          ]
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Vael.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 0,66 AE Abstand zu Ombrys liegt die Gleichgewichtstemperatur von Vael bei rund -16 °C – gemäßigt."
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Vael.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Vael entstand zusammen mit dem Ombrys-System vor rund 6,2 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Vael.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Ist der Mond eingefangen oder mit seinem Planeten entstanden?",
+            "Welche Spuren tragen seine ältesten Krater?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Vael ist mit allen Bahndaten im Ombrys-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=mypzla-stern&objekt=mypzla-vael"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Vael.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Vael ist der einzige große Mond Mypzlas. Seine Gezeiten bewegen die flachen Binnenmeere und die feuchten Senken der Pilztiefländer."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Vael.",
+      "abschnitte": [
+        {
+          "titel": "Vael – Archivbild",
+          "bild": true,
+          "bildtext": "Vael"
+        }
+      ]
+    }
+  }
+}

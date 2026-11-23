@@ -5,13 +5,13 @@
 .den-hauptseite .den-dossier .den-hero img { object-position: 55% 35%; }
 
 /* Kapitelleiste breiter, damit lange Kapitelnamen nicht abgeschnitten werden */
-.den-hauptseite .den-layout--index { grid-template-columns: clamp(10.5rem, 14cqi, 13.5rem) minmax(0, 1fr) clamp(9rem, 11cqi, 11.5rem); }
+.den-hauptseite .den-layout--index { grid-template-columns: clamp(10.5rem, 14cqi, 13.5rem) minmax(0, 1fr); }
 .den-hauptseite .den-chapters a { font-size: .8rem; hyphens: auto; overflow-wrap: anywhere; }
 .den-hauptseite .den-chapters .den-code { margin-inline-end: .35rem; }
 .den-hauptseite .den-core { align-items: start; }
 .den-hauptseite .den-topics { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 @container (max-width: 980px) {
-    .den-hauptseite .den-layout--index { grid-template-columns: minmax(0, 1fr) clamp(9rem, 22cqi, 11rem); }
+    .den-hauptseite .den-layout--index { grid-template-columns: minmax(0, 1fr); }
 }
 @container (max-width: 700px) {
     .den-hauptseite .den-layout--index { grid-template-columns: minmax(0, 1fr); }

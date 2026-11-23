@@ -1,54 +1,287 @@
 {
   "systemName": "Aurenn-System",
   "praefix": "namaris-",
-  "lage": { "entfernungLj": 19.5, "richtung": [-0.55, -0.1, -0.83] },
+  "lage": {
+    "entfernungLj": 19.5,
+    "richtung": [
+      -0.55,
+      -0.1,
+      -0.83
+    ]
+  },
   "einzelstern": true,
   "stern": {
-    "id": "namaris-stern", "name": "Aurenn", "typ": "Gelber Zwerg (G8 V)",
-    "masseSonne": 0.9, "radiusSonne": 0.92, "leuchtkraftSonne": 0.64, "temperaturK": 5500, "alterMrd": 5.0,
-    "farbe": [1, 0.86, 0.6], "emissionsfarbe": [1, 0.88, 0.64], "emission": 1.15,
-    "bild": { "art": "sterne", "suche": "gelb|sonnenähnlich|G-Stern|Hauptreihe" },
+    "id": "namaris-stern",
+    "name": "Aurenn",
+    "typ": "Gelber Zwerg (G8 V)",
+    "masseSonne": 0.9,
+    "radiusSonne": 0.92,
+    "leuchtkraftSonne": 0.64,
+    "temperaturK": 5500,
+    "alterMrd": 5,
+    "farbe": [
+      1,
+      0.86,
+      0.6
+    ],
+    "emissionsfarbe": [
+      1,
+      0.88,
+      0.64
+    ],
+    "emission": 1.15,
+    "bild": {
+      "art": "sterne",
+      "suche": "gelb|sonnenähnlich|G-Stern|Hauptreihe"
+    },
     "beschreibung": "Aurenn ist ein sonnenähnlicher gelber Zwerg der Spektralklasse G8 V, etwas kühler und schwächer als die Sonne. Heimatstern der Kohäriden und ein ruhiger Einzelstern."
   },
   "koerper": [
-    { "id": "namaris-aurenn-i", "name": "Aurenn I", "typ": "Gesteinsplanet", "um": "namaris-stern",
-      "aAE": 0.38, "e": 0.06, "i": 3, "knoten": 20, "peri": 50, "phase": 10, "radiusKm": 4600, "masseErde": 0.38, "albedo": 0.15, "farbe": [0.62, 0.5, 0.4],
-      "bild": { "art": "planeten", "suche": "Venusähnlich|goldenen Wolken|Schwefelplanet" },
-      "beschreibung": "Aurenn I ist ein heißer, venusähnlicher Gesteinsplanet unter einer dichten, goldgelben Wolkendecke." },
-    { "id": "namaris-planet", "name": "Namaris", "typ": "Ozeanplanet", "um": "namaris-stern",
-      "aAE": 0.847, "e": 0.02, "i": 0, "knoten": 260, "peri": 90, "phase": 300, "radiusKm": 6180, "masseErde": 0.875, "albedo": 0.3, "zielTemperaturC": 18, "farbe": [0.32, 0.62, 0.74],
-      "bild": { "art": "planeten", "slug": "turkisblauer-inselplanet-im-all" },
-      "beschreibung": "Namaris ist die wasserreiche Heimatwelt der Kohäriden mit Meeresbecken, Flussdeltas, flachen Binnenmeeren und Feuchtwäldern." },
-    { "id": "namaris-selun", "name": "Selun", "typ": "Mond", "um": "namaris-planet",
-      "periodeTage": 22, "e": 0.04, "i": 5, "knoten": 70, "peri": 0, "phase": 30, "radiusKm": 1600, "masseErde": 0.016, "farbe": [0.78, 0.76, 0.72],
-      "bild": { "art": "monde", "suche": "Krater|Kontrast|Fels" },
-      "beschreibung": "Selun ist der große Mond von Namaris. Seine Gezeiten setzen die Küstenebenen und Lagunen regelmäßig unter Wasser – die Wiege der ersten Kolonien." },
-    { "id": "namaris-aurenn-iii", "name": "Aurenn III", "typ": "Gesteinsplanet", "um": "namaris-stern",
-      "aAE": 1.42, "e": 0.07, "i": 1.8, "knoten": 120, "peri": 200, "phase": 150, "radiusKm": 4100, "masseErde": 0.28, "albedo": 0.25, "farbe": [0.72, 0.48, 0.38],
-      "bild": { "art": "planeten", "suche": "Roter Planet|Rostroter|marsrot" },
-      "beschreibung": "Aurenn III ist eine kalte, rostrote Wüstenwelt mit dünner Atmosphäre – erstes Ziel kohäridischer Außenposten." },
-    { "id": "namaris-strandguertel", "name": "Strandgürtel", "typ": "Asteroidengürtel", "ringUm": "namaris-stern",
-      "ringeAE": [2.2, 2.4, 2.6, 2.8, 3.0], "anzahl": 280, "groesseKm": 400, "mindestPx": 6, "farbe": [0.6, 0.56, 0.5],
-      "bild": { "art": "sternensysteme", "suche": "Asteroidengürtel" },
-      "beschreibung": "Der Strandgürtel zwischen 2,2 und 3,0 AE besteht aus kohlenstoff- und wasserreichen Asteroiden – Rohstoffquelle für die kohäridische Raumfahrt." },
-    { "id": "namaris-aurenn-iv", "name": "Aurenn IV", "typ": "Gasriese", "um": "namaris-stern",
-      "aAE": 4.6, "e": 0.05, "i": 1.3, "knoten": 330, "peri": 20, "phase": 80, "radiusKm": 70000, "masseErde": 260, "albedo": 0.4, "farbe": [0.86, 0.78, 0.62],
-      "bild": { "art": "planeten", "suche": "Saturnähnlich|Ringen|Gasriese" },
-      "beschreibung": "Aurenn IV ist ein großer Gasriese mit 0,8 Jupitermassen und einem breiten, hellen Ringsystem." },
-    { "id": "namaris-aurenn-v", "name": "Aurenn V", "typ": "Eisriese", "um": "namaris-stern",
-      "aAE": 11.2, "e": 0.04, "i": 2.1, "knoten": 80, "peri": 130, "phase": 230, "radiusKm": 25500, "masseErde": 18, "albedo": 0.3, "farbe": [0.42, 0.62, 0.84],
-      "bild": { "art": "planeten", "suche": "Eisriese|Neptun" },
-      "beschreibung": "Aurenn V ist ein ferner, tiefblauer Eisriese." },
-    { "id": "namaris-gezeitenbote", "name": "Gezeitenbote", "typ": "Komet", "um": "namaris-stern", "anomalie": true,
-      "aAE": 12, "e": 0.93, "i": 33, "knoten": 210, "peri": 300, "phase": 175, "radiusKm": 7, "masseErde": 0, "farbe": [0.6, 0.76, 0.86],
-      "bild": { "art": "kometen", "suche": "Schweif|Komet" },
-      "beschreibung": "Ein periodischer Komet (rund 44 Jahre), der sich Aurenn bis auf 0,84 AE nähert – fast genau auf der Bahn von Namaris. Seine Wiederkehr wird seit den ersten Archiven aufgezeichnet." },
-    { "id": "namaris-hohlkoerper", "name": "Hohlkörper von Aurenn", "typ": "Asteroid", "um": "namaris-stern", "anomalie": true,
-      "aAE": 2.63, "e": 0.09, "i": 12, "knoten": 40, "peri": 110, "phase": 260, "radiusKm": 28, "masseErde": 0, "farbe": [0.55, 0.52, 0.48],
-      "bild": { "art": "asteroiden", "suche": "offenem Inneren|abgebrochen|Becken" },
-      "beschreibung": "Ein aufgebrochener Asteroid mit offenem, hohlem Inneren. Seine ungewöhnlich geringe Dichte gibt Forschern bis heute Rätsel auf." },
-    { "id": "namaris-kometengebiet", "name": "Äußeres Kometengebiet", "typ": "Kometengebiet", "ringUm": "namaris-stern",
-      "ringeAE": [36, 43, 50], "anzahl": 220, "groesseKm": 160, "mindestPx": 4.5, "farbe": [0.52, 0.68, 0.86],
-      "beschreibung": "Ein ferner Gürtel aus Eiskörpern zwischen 36 und 50 AE." }
+    {
+      "id": "namaris-aurenn-i",
+      "name": "Aurenn I",
+      "typ": "Gesteinsplanet",
+      "um": "namaris-stern",
+      "aAE": 0.38,
+      "e": 0.06,
+      "i": 3,
+      "knoten": 20,
+      "peri": 50,
+      "phase": 10,
+      "radiusKm": 4600,
+      "masseErde": 0.38,
+      "albedo": 0.15,
+      "farbe": [
+        0.62,
+        0.5,
+        0.4
+      ],
+      "bild": {
+        "art": "planeten",
+        "suche": "Venusähnlich|goldenen Wolken|Schwefelplanet"
+      },
+      "beschreibung": "Aurenn I ist ein heißer, venusähnlicher Gesteinsplanet unter einer dichten, goldgelben Wolkendecke."
+    },
+    {
+      "id": "namaris-planet",
+      "name": "Namaris",
+      "typ": "Ozeanplanet",
+      "um": "namaris-stern",
+      "aAE": 0.847,
+      "e": 0.02,
+      "i": 0,
+      "knoten": 260,
+      "peri": 90,
+      "phase": 300,
+      "radiusKm": 6180,
+      "masseErde": 0.875,
+      "albedo": 0.3,
+      "zielTemperaturC": 18,
+      "farbe": [
+        0.32,
+        0.62,
+        0.74
+      ],
+      "bild": {
+        "art": "planeten",
+        "slug": "turkisblauer-inselplanet-im-all"
+      },
+      "beschreibung": "Namaris ist die wasserreiche Heimatwelt der Kohäriden mit Meeresbecken, Flussdeltas, flachen Binnenmeeren und Feuchtwäldern."
+    },
+    {
+      "id": "namaris-selun",
+      "name": "Selun",
+      "typ": "Mond",
+      "um": "namaris-planet",
+      "periodeTage": 22,
+      "e": 0.04,
+      "i": 5,
+      "knoten": 70,
+      "peri": 0,
+      "phase": 30,
+      "radiusKm": 1600,
+      "masseErde": 0.016,
+      "farbe": [
+        0.78,
+        0.76,
+        0.72
+      ],
+      "bild": {
+        "art": "monde",
+        "suche": "Krater|Kontrast|Fels"
+      },
+      "beschreibung": "Selun ist der große Mond von Namaris. Seine Gezeiten setzen die Küstenebenen und Lagunen regelmäßig unter Wasser – die Wiege der ersten Kolonien."
+    },
+    {
+      "id": "namaris-aurenn-iii",
+      "name": "Aurenn III",
+      "typ": "Gesteinsplanet",
+      "um": "namaris-stern",
+      "aAE": 1.42,
+      "e": 0.07,
+      "i": 1.8,
+      "knoten": 120,
+      "peri": 200,
+      "phase": 150,
+      "radiusKm": 4100,
+      "masseErde": 0.28,
+      "albedo": 0.25,
+      "farbe": [
+        0.72,
+        0.48,
+        0.38
+      ],
+      "bild": {
+        "art": "planeten",
+        "suche": "Roter Planet|Rostroter|marsrot"
+      },
+      "beschreibung": "Aurenn III ist eine kalte, rostrote Wüstenwelt mit dünner Atmosphäre – erstes Ziel kohäridischer Außenposten."
+    },
+    {
+      "id": "namaris-strandguertel",
+      "name": "Strandgürtel",
+      "typ": "Asteroidengürtel",
+      "ringUm": "namaris-stern",
+      "ringeAE": [
+        2.2,
+        2.4,
+        2.6,
+        2.8,
+        3
+      ],
+      "anzahl": 280,
+      "groesseKm": 400,
+      "mindestPx": 6,
+      "farbe": [
+        0.6,
+        0.56,
+        0.5
+      ],
+      "bild": {
+        "art": "sternensysteme",
+        "suche": "Asteroidengürtel"
+      },
+      "beschreibung": "Der Strandgürtel zwischen 2,2 und 3,0 AE besteht aus kohlenstoff- und wasserreichen Asteroiden – Rohstoffquelle für die kohäridische Raumfahrt."
+    },
+    {
+      "id": "namaris-aurenn-iv",
+      "name": "Aurenn IV",
+      "typ": "Gasriese",
+      "um": "namaris-stern",
+      "aAE": 4.6,
+      "e": 0.05,
+      "i": 1.3,
+      "knoten": 330,
+      "peri": 20,
+      "phase": 80,
+      "radiusKm": 70000,
+      "masseErde": 260,
+      "albedo": 0.4,
+      "farbe": [
+        0.86,
+        0.78,
+        0.62
+      ],
+      "bild": {
+        "art": "planeten",
+        "suche": "Saturnähnlich|Ringen|Gasriese"
+      },
+      "beschreibung": "Aurenn IV ist ein großer Gasriese mit 0,8 Jupitermassen und einem breiten, hellen Ringsystem."
+    },
+    {
+      "id": "namaris-aurenn-v",
+      "name": "Aurenn V",
+      "typ": "Eisriese",
+      "um": "namaris-stern",
+      "aAE": 11.2,
+      "e": 0.04,
+      "i": 2.1,
+      "knoten": 80,
+      "peri": 130,
+      "phase": 230,
+      "radiusKm": 25500,
+      "masseErde": 18,
+      "albedo": 0.3,
+      "farbe": [
+        0.42,
+        0.62,
+        0.84
+      ],
+      "bild": {
+        "art": "planeten",
+        "suche": "Eisriese|Neptun"
+      },
+      "beschreibung": "Aurenn V ist ein ferner, tiefblauer Eisriese."
+    },
+    {
+      "id": "namaris-gezeitenbote",
+      "name": "Gezeitenbote",
+      "typ": "Komet",
+      "um": "namaris-stern",
+      "anomalie": true,
+      "aAE": 12,
+      "e": 0.93,
+      "i": 33,
+      "knoten": 210,
+      "peri": 300,
+      "phase": 175,
+      "radiusKm": 7,
+      "masseErde": 0,
+      "farbe": [
+        0.6,
+        0.76,
+        0.86
+      ],
+      "bild": {
+        "art": "kometen",
+        "suche": "Schweif|Komet"
+      },
+      "beschreibung": "Ein periodischer Komet (rund 44 Jahre), der sich Aurenn bis auf 0,84 AE nähert – fast genau auf der Bahn von Namaris. Seine Wiederkehr wird seit den ersten Archiven aufgezeichnet."
+    },
+    {
+      "id": "namaris-hohlkoerper",
+      "name": "Hohlkörper von Aurenn",
+      "typ": "Asteroid",
+      "um": "namaris-stern",
+      "anomalie": true,
+      "aAE": 2.63,
+      "e": 0.09,
+      "i": 12,
+      "knoten": 40,
+      "peri": 110,
+      "phase": 260,
+      "radiusKm": 28,
+      "masseErde": 0,
+      "farbe": [
+        0.55,
+        0.52,
+        0.48
+      ],
+      "bild": {
+        "art": "asteroiden",
+        "suche": "offenem Inneren|abgebrochen|Becken"
+      },
+      "beschreibung": "Ein aufgebrochener Asteroid mit offenem, hohlem Inneren. Seine ungewöhnlich geringe Dichte gibt Forschern bis heute Rätsel auf."
+    },
+    {
+      "id": "namaris-kometengebiet",
+      "name": "Naeirdar-Kometenwolke",
+      "typ": "Kometengebiet",
+      "ringUm": "namaris-stern",
+      "ringeAE": [
+        36,
+        43,
+        50
+      ],
+      "anzahl": 220,
+      "groesseKm": 160,
+      "mindestPx": 4.5,
+      "farbe": [
+        0.52,
+        0.68,
+        0.86
+      ],
+      "beschreibung": "Ein ferner Gürtel aus Eiskörpern zwischen 36 und 50 AE."
+    }
   ]
 }

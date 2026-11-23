@@ -1,2 +1,3 @@
-// Meta Morphen – Gesellschaft · erzeugt vom Spezies-Baukasten (scripts/spezies) – Änderungen dort vornehmen
+// Metamorphen – Gesellschaft
+// Gemeinsame Funktionen (Topbar, Sidebar, Routen, Klappkapitel, Bildkarussell) kommen aus der Basis.
 import "../../metamorphen-basis.js";

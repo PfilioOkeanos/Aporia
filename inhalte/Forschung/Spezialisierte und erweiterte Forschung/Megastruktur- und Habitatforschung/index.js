@@ -39,7 +39,7 @@ const knoten = [
         "belohnung": {
             "art": "gegenstand",
             "name": "Kalter saturn mit eisigen ringen",
-            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/GasPlaneten/kalter-saturn-mit-eisigen-ringen/hauptseite/kalter-saturn-mit-eisigen-ringen-8aeeeccff8.webp"
+            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/GasPlaneten/saelon-v/hauptseite/kalter-saturn-mit-eisigen-ringen-8aeeeccff8.webp"
         }
     },
     {
@@ -69,7 +69,7 @@ const knoten = [
         "belohnung": {
             "art": "gegenstand",
             "name": "Tiefblauer eisriese mit zarten ringen",
-            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/EisWelten/tiefblauer-eisriese-mit-zarten-ringen/hauptseite/tiefblauer-eisriese-mit-zarten-ringen-e8937eae71.webp"
+            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/EisWelten/thalor-iv/hauptseite/tiefblauer-eisriese-mit-zarten-ringen-e8937eae71.webp"
         }
     },
     {

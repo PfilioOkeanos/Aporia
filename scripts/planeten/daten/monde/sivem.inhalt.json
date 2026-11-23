@@ -1,0 +1,548 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Sivem",
+  "genitiv": "von Sivem",
+  "dossierName": "Sivem-Dossier",
+  "klasse": "Mond",
+  "intro": "Sivem ist ein deutlich kleinerer innerer Mond Veyrunas – felsig, ohne bedeutende Atmosphäre, etwa 430 km groß in rund 110.000 km Abstand. Er bietet einen vergleichsweise gut erreichbaren Forschungsstandort. Sivem umkreist Veyruna in 3,8 Tage.",
+  "globusDaten": {
+    "planet": "flacher-mond-mit-asymmetrischem-auslaufer",
+    "klasse": "Gestein",
+    "radius": 215000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=veyruna-stern&objekt=veyruna-sivem",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-E7DB70F4D2"
+    ],
+    [
+      "Typ",
+      "Mond"
+    ],
+    [
+      "Sternsystem",
+      "Orelis-System"
+    ],
+    [
+      "Zentralkörper",
+      "Veyruna"
+    ],
+    [
+      "Große Halbachse",
+      "109.912 km"
+    ],
+    [
+      "Umlaufzeit",
+      "3,8 Tage"
+    ],
+    [
+      "Durchmesser",
+      "430 km"
+    ],
+    [
+      "Masse",
+      "1,19 · 10^20 kg"
+    ],
+    [
+      "Schwerkraft",
+      "0,02 g"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -10 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Orelis-System"
+    ],
+    [
+      "Zentralstern",
+      "Orelis",
+      "inhalte/himmelskoerper/sterne/details/orelis/hauptseite/index.html"
+    ],
+    [
+      "Umläuft",
+      "Veyruna",
+      "inhalte/himmelskoerper/planeten/details/veyruna/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "109.912 km"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Sivem im Orelis-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=veyruna-stern&objekt=veyruna-sivem",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Orelis",
+      "href": "inhalte/himmelskoerper/sterne/details/orelis/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◍",
+      "art": "Mutterplanet",
+      "titel": "Veyruna",
+      "href": "inhalte/himmelskoerper/planeten/details/veyruna/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Echonoiden",
+      "titel": "Veyruna",
+      "href": "inhalte/himmelskoerper/planeten/details/veyruna/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Echonoiden",
+      "href": "inhalte/spezies/Mentale Spezies/Echonoiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Orelis-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=veyruna-stern&objekt=veyruna-sivem"
+    },
+    {
+      "titel": "Speziesdossier Echonoiden",
+      "href": "inhalte/spezies/Mentale Spezies/Echonoiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#080707",
+      "tiefe": "#111010",
+      "akzent": "#bdb9b6",
+      "sand": "#c2b8a2",
+      "moos": "#9caf90",
+      "ozean": "#7c98a5",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#454340"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Astronomie"
+      ],
+      [
+        "Planet",
+        "Mutterplanet"
+      ],
+      [
+        "Kräfte",
+        "Gezeiten"
+      ],
+      [
+        "Tiefe",
+        "Geologie"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Mutterplanet": {
+      "gruppe": "Wissenschaft",
+      "icon": "◐",
+      "intro": "Mutterplanet von Sivem.",
+      "abschnitte": [
+        {
+          "titel": "Veyruna",
+          "text": [
+            "Veyruna ist die Heimatwelt der Echonoiden: ein felsiger, wasserreicher Planet mit dichter Atmosphäre, 62 % Wasserbedeckung, gezeitengeprägten Küsten, Inselbögen und Höhlenlandschaften, in denen sich eine Wahrnehmung aus mechanischen Schwingungen entwickelte."
+          ],
+          "daten": [
+            [
+              "Typ",
+              "Gesteinsplanet"
+            ],
+            [
+              "Durchmesser",
+              "13.762 km"
+            ],
+            [
+              "Abstand des Mondes",
+              "109.912 km (16 Planetenradien)"
+            ]
+          ],
+          "verweise": [
+            [
+              "Veyruna",
+              "inhalte/himmelskoerper/planeten/details/veyruna/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Weitere Monde von Veyruna",
+          "liste": [
+            "Talar – Umlauf in 17 Tage"
+          ],
+          "verweise": [
+            [
+              "Talar",
+              "inhalte/himmelskoerper/monde/details/talar/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Gezeiten": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gezeiten von Sivem.",
+      "abschnitte": [
+        {
+          "titel": "Gezeitenkräfte",
+          "text": [
+            "Auf seiner Bahn in 109.912 km Abstand wirken starke Gezeitenkräfte von Veyruna auf Sivem."
+          ]
+        },
+        {
+          "titel": "Kleiner Gezeitenbeitrag",
+          "text": [
+            "Sivems Beitrag zu den Gezeiten ist wesentlich kleiner als der von Talar. Er bietet einen vergleichsweise gut erreichbaren Forschungsstandort."
+          ]
+        }
+      ]
+    },
+    "Gebundene Rotation": {
+      "gruppe": "Wissenschaft",
+      "icon": "↻",
+      "intro": "Gebundene Rotation von Sivem.",
+      "abschnitte": [
+        {
+          "titel": "Rotation",
+          "text": [
+            "Sivem wendet Veyruna vermutlich stets dieselbe Seite zu: Ein Tag dauert so lange wie ein Umlauf – 3,8 Tage."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Sivem auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Sivem",
+          "text": [
+            "Sivem ist ein deutlich kleinerer innerer Mond Veyrunas – felsig, ohne bedeutende Atmosphäre, etwa 430 km groß in rund 110.000 km Abstand. Er bietet einen vergleichsweise gut erreichbaren Forschungsstandort.",
+            "Sivem umkreist Veyruna in 3,8 Tage."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Mond"
+            ],
+            [
+              "Sternsystem",
+              "Orelis-System"
+            ],
+            [
+              "Zentralkörper",
+              "Veyruna"
+            ],
+            [
+              "Große Halbachse",
+              "109.912 km"
+            ],
+            [
+              "Umlaufzeit",
+              "3,8 Tage"
+            ],
+            [
+              "Durchmesser",
+              "430 km"
+            ],
+            [
+              "Masse",
+              "1,19 · 10^20 kg"
+            ],
+            [
+              "Schwerkraft",
+              "0,02 g"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -10 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Veyruna",
+          "text": [
+            "Das Orelis-System ist die Heimat der Echonoiden: Ihr Planet Veyruna umkreist Orelis, und Sivem ist einer seiner Monde."
+          ],
+          "verweise": [
+            [
+              "Veyruna",
+              "inhalte/himmelskoerper/planeten/details/veyruna/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Echonoiden",
+              "inhalte/spezies/Mentale Spezies/Echonoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Sivem im Orelis-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Veyruna"
+            ],
+            [
+              "Große Halbachse",
+              "109.912 km"
+            ],
+            [
+              "Exzentrizität",
+              "0,01"
+            ],
+            [
+              "Bahnneigung",
+              "2,5°"
+            ],
+            [
+              "Umlaufzeit",
+              "3,8 Tage"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Orelis · Stern",
+              "Orangefarbener Zwerg (K1 V)"
+            ],
+            [
+              "Seran · 0,16 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Mirvek · 0,35 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Veyruna · 0,68 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Koras · 1,18 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Jandor · 3,7 AE",
+              "Gasriese"
+            ],
+            [
+              "Veltos · 6,5 AE",
+              "Eisriese"
+            ],
+            [
+              "Innerer Asteroidengürtel · 1,7–2,4 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußerer Kleinkörpergürtel · 15–33 AE",
+              "Kleinkörpergürtel"
+            ]
+          ],
+          "verweise": [
+            [
+              "Orelis",
+              "inhalte/himmelskoerper/sterne/details/orelis/hauptseite/index.html"
+            ],
+            [
+              "Seran",
+              "inhalte/himmelskoerper/planeten/details/seran/hauptseite/index.html"
+            ],
+            [
+              "Mirvek",
+              "inhalte/himmelskoerper/planeten/details/mirvek/hauptseite/index.html"
+            ],
+            [
+              "Veyruna",
+              "inhalte/himmelskoerper/planeten/details/veyruna/hauptseite/index.html"
+            ],
+            [
+              "Koras",
+              "inhalte/himmelskoerper/planeten/details/koras/hauptseite/index.html"
+            ],
+            [
+              "Jandor",
+              "inhalte/himmelskoerper/planeten/details/jandor/hauptseite/index.html"
+            ],
+            [
+              "Veltos",
+              "inhalte/himmelskoerper/planeten/details/veltos/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Sivem.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "215 km"
+            ],
+            [
+              "Masse",
+              "1,19 · 10^20 kg"
+            ],
+            [
+              "Mittlere Dichte",
+              "2,87 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "0,17 m/s² (0,018 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "0,27 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Sivem.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Sivem ist geologisch weitgehend erstarrt; Einschläge haben seine Oberfläche geformt."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Sivem.",
+      "abschnitte": [
+        {
+          "titel": "Gashülle",
+          "text": [
+            "Sivem besitzt keine nennenswerte Atmosphäre – dafür ist die Schwerkraft zu gering."
+          ]
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Sivem.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 0,68 AE Abstand zu Orelis liegt die Gleichgewichtstemperatur von Sivem bei rund -10 °C – gemäßigt."
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Sivem.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Sivem entstand zusammen mit dem Orelis-System vor rund 6 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Sivem.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Ist der Mond eingefangen oder mit seinem Planeten entstanden?",
+            "Welche Spuren tragen seine ältesten Krater?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Sivem ist mit allen Bahndaten im Orelis-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=veyruna-stern&objekt=veyruna-sivem"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Sivem.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Sivem ist ein deutlich kleinerer innerer Mond Veyrunas – felsig, ohne bedeutende Atmosphäre, etwa 430 km groß in rund 110.000 km Abstand. Er bietet einen vergleichsweise gut erreichbaren Forschungsstandort."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Sivem.",
+      "abschnitte": [
+        {
+          "titel": "Sivem – Archivbild",
+          "bild": true,
+          "bildtext": "Sivem"
+        }
+      ]
+    }
+  }
+}

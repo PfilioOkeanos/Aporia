@@ -1,46 +1,236 @@
 {
   "systemName": "Ombrys-System",
   "praefix": "mypzla-",
-  "lage": { "entfernungLj": 26, "richtung": [0.7, 0.35, 0.62] },
+  "lage": {
+    "entfernungLj": 26,
+    "richtung": [
+      0.7,
+      0.35,
+      0.62
+    ]
+  },
   "einzelstern": true,
   "stern": {
-    "id": "mypzla-stern", "name": "Ombrys", "typ": "Orangefarbener Zwerg (K2 V)",
-    "masseSonne": 0.78, "radiusSonne": 0.76, "leuchtkraftSonne": 0.36, "temperaturK": 4950, "alterMrd": 6.2,
-    "farbe": [1, 0.68, 0.38], "emissionsfarbe": [1, 0.7, 0.42], "emission": 1.1,
-    "bild": { "art": "sterne", "suche": "orange|K-Stern|Hauptreihe" },
+    "id": "mypzla-stern",
+    "name": "Ombrys",
+    "typ": "Orangefarbener Zwerg (K2 V)",
+    "masseSonne": 0.78,
+    "radiusSonne": 0.76,
+    "leuchtkraftSonne": 0.36,
+    "temperaturK": 4950,
+    "alterMrd": 6.2,
+    "farbe": [
+      1,
+      0.68,
+      0.38
+    ],
+    "emissionsfarbe": [
+      1,
+      0.7,
+      0.42
+    ],
+    "emission": 1.1,
+    "bild": {
+      "art": "sterne",
+      "suche": "orange|K-Stern|Hauptreihe"
+    },
     "beschreibung": "Ombrys ist ein ruhiger, orangefarbener Zwerg der Spektralklasse K2 V mit 78 % der Sonnenmasse und 36 % ihrer Leuchtkraft – Zentralstern von Mypzla, der Ursprungswelt der Mykonoiden."
   },
   "koerper": [
-    { "id": "mypzla-ombrys-i", "name": "Ombrys I", "typ": "Gesteinsplanet", "um": "mypzla-stern",
-      "aAE": 0.24, "e": 0.04, "i": 2.2, "knoten": 30, "peri": 60, "phase": 210, "radiusKm": 3600, "masseErde": 0.2, "albedo": 0.1, "farbe": [0.6, 0.48, 0.4],
-      "bild": { "art": "planeten", "suche": "glühend|heißer Felsplanet|Felsplanet|Krater" },
-      "beschreibung": "Ombrys I ist ein kleiner, sonnennaher Gesteinsplanet mit gebundener Rotation." },
-    { "id": "mypzla-planet", "name": "Mypzla", "typ": "Gesteinsplanet", "um": "mypzla-stern",
-      "aAE": 0.66, "e": 0.02, "i": 0, "knoten": 100, "peri": 200, "phase": 320, "radiusKm": 6900, "masseErde": 1.3, "albedo": 0.32, "zielTemperaturC": 26, "farbe": [0.82, 0.66, 0.3],
-      "bild": { "art": "planeten", "slug": "lebender-goldplanet-mit-pilzplateaus" },
-      "beschreibung": "Mypzla ist die Ursprungswelt der Mykonoiden: eine warme, feuchte Super-Erde mit goldfarbenen Myzelteppichen, riesigen Pilzplateaus und einem schimmernden Sporendunst in der Luft." },
-    { "id": "mypzla-vael", "name": "Vael", "typ": "Mond", "um": "mypzla-planet",
-      "periodeTage": 19, "e": 0.03, "i": 4.5, "knoten": 80, "peri": 0, "phase": 60, "radiusKm": 1100, "masseErde": 0.007, "farbe": [0.76, 0.72, 0.64],
-      "bild": { "art": "monde", "suche": "Krater|Mond|Fels" },
-      "beschreibung": "Vael ist der einzige große Mond Mypzlas. Seine Gezeiten bewegen die flachen Binnenmeere und die feuchten Senken der Pilztiefländer." },
-    { "id": "mypzla-ombrys-iii", "name": "Ombrys III", "typ": "Gesteinsplanet", "um": "mypzla-stern",
-      "aAE": 1.25, "e": 0.06, "i": 1.6, "knoten": 240, "peri": 110, "phase": 140, "radiusKm": 4700, "masseErde": 0.4, "albedo": 0.3, "farbe": [0.66, 0.58, 0.52],
-      "bild": { "art": "planeten", "suche": "Gefrorener Planet|kaltem Sternenlicht|Felsplanet|Wüste" },
-      "beschreibung": "Ombrys III ist eine kalte, trockene Gesteinswelt mit dünner Atmosphäre." },
-    { "id": "mypzla-sporengurtel", "name": "Sporengürtel", "typ": "Asteroidengürtel", "ringUm": "mypzla-stern",
-      "ringeAE": [1.8, 2.0, 2.2, 2.4], "anzahl": 200, "groesseKm": 320, "mindestPx": 5.5, "farbe": [0.62, 0.54, 0.4],
-      "bild": { "art": "sternensysteme", "suche": "Asteroidengürtel" },
-      "beschreibung": "Der Sporengürtel zwischen 1,8 und 2,4 AE besteht aus dunklen, kohlenstoffreichen Brocken; sein Name verweist auf die fein verteilte, goldbraune Staubwolke um ihn." },
-    { "id": "mypzla-ombrys-iv", "name": "Ombrys IV", "typ": "Gasriese", "um": "mypzla-stern",
-      "aAE": 4.6, "e": 0.05, "i": 1.3, "knoten": 20, "peri": 300, "phase": 260, "radiusKm": 62000, "masseErde": 180, "albedo": 0.4, "farbe": [0.86, 0.72, 0.5],
-      "bild": { "art": "planeten", "suche": "Gasriese|Wolkenbänder|Jupiter|Goldener" },
-      "beschreibung": "Ombrys IV ist ein ockerfarbener Gasriese mit breiten Wolkenbändern." },
-    { "id": "mypzla-myzelkomet", "name": "Goldschweif", "typ": "Komet", "um": "mypzla-stern", "anomalie": true,
-      "aAE": 12, "e": 0.93, "i": 24, "knoten": 310, "peri": 40, "phase": 171, "radiusKm": 7, "masseErde": 0, "farbe": [0.86, 0.74, 0.46],
-      "bild": { "art": "kometen", "suche": "gold|Komet" },
-      "beschreibung": "Ein Komet mit ungewöhnlich goldfarbenem Schweif, dessen Staub organische Verbindungen enthält. Ob solche Kometen einst Bausteine des Lebens nach Mypzla brachten, wird erforscht." },
-    { "id": "mypzla-kometengebiet", "name": "Äußeres Kometengebiet", "typ": "Kometengebiet", "ringUm": "mypzla-stern",
-      "ringeAE": [30, 37, 44], "anzahl": 200, "groesseKm": 150, "mindestPx": 4.5, "farbe": [0.6, 0.66, 0.8],
-      "beschreibung": "Ein ferner Gürtel aus Eiskörpern zwischen 30 und 44 AE." }
+    {
+      "id": "mypzla-ombrys-i",
+      "name": "Ombrys I",
+      "typ": "Gesteinsplanet",
+      "um": "mypzla-stern",
+      "aAE": 0.24,
+      "e": 0.04,
+      "i": 2.2,
+      "knoten": 30,
+      "peri": 60,
+      "phase": 210,
+      "radiusKm": 3600,
+      "masseErde": 0.2,
+      "albedo": 0.1,
+      "farbe": [
+        0.6,
+        0.48,
+        0.4
+      ],
+      "bild": {
+        "art": "planeten",
+        "suche": "glühend|heißer Felsplanet|Felsplanet|Krater"
+      },
+      "beschreibung": "Ombrys I ist ein kleiner, sonnennaher Gesteinsplanet mit gebundener Rotation."
+    },
+    {
+      "id": "mypzla-planet",
+      "name": "Mypzla",
+      "typ": "Gesteinsplanet",
+      "um": "mypzla-stern",
+      "aAE": 0.66,
+      "e": 0.02,
+      "i": 0,
+      "knoten": 100,
+      "peri": 200,
+      "phase": 320,
+      "radiusKm": 6900,
+      "masseErde": 1.3,
+      "albedo": 0.32,
+      "zielTemperaturC": 26,
+      "farbe": [
+        0.82,
+        0.66,
+        0.3
+      ],
+      "bild": {
+        "art": "planeten",
+        "slug": "lebender-goldplanet-mit-pilzplateaus"
+      },
+      "beschreibung": "Mypzla ist die Ursprungswelt der Mykonoiden: eine warme, feuchte Super-Erde mit goldfarbenen Myzelteppichen, riesigen Pilzplateaus und einem schimmernden Sporendunst in der Luft."
+    },
+    {
+      "id": "mypzla-vael",
+      "name": "Vael",
+      "typ": "Mond",
+      "um": "mypzla-planet",
+      "periodeTage": 19,
+      "e": 0.03,
+      "i": 4.5,
+      "knoten": 80,
+      "peri": 0,
+      "phase": 60,
+      "radiusKm": 1100,
+      "masseErde": 0.007,
+      "farbe": [
+        0.76,
+        0.72,
+        0.64
+      ],
+      "bild": {
+        "art": "monde",
+        "suche": "Krater|Mond|Fels"
+      },
+      "beschreibung": "Vael ist der einzige große Mond Mypzlas. Seine Gezeiten bewegen die flachen Binnenmeere und die feuchten Senken der Pilztiefländer."
+    },
+    {
+      "id": "mypzla-ombrys-iii",
+      "name": "Ombrys III",
+      "typ": "Gesteinsplanet",
+      "um": "mypzla-stern",
+      "aAE": 1.25,
+      "e": 0.06,
+      "i": 1.6,
+      "knoten": 240,
+      "peri": 110,
+      "phase": 140,
+      "radiusKm": 4700,
+      "masseErde": 0.4,
+      "albedo": 0.3,
+      "farbe": [
+        0.66,
+        0.58,
+        0.52
+      ],
+      "bild": {
+        "art": "planeten",
+        "suche": "Gefrorener Planet|kaltem Sternenlicht|Felsplanet|Wüste"
+      },
+      "beschreibung": "Ombrys III ist eine kalte, trockene Gesteinswelt mit dünner Atmosphäre."
+    },
+    {
+      "id": "mypzla-sporengurtel",
+      "name": "Sporengürtel",
+      "typ": "Asteroidengürtel",
+      "ringUm": "mypzla-stern",
+      "ringeAE": [
+        1.8,
+        2,
+        2.2,
+        2.4
+      ],
+      "anzahl": 200,
+      "groesseKm": 320,
+      "mindestPx": 5.5,
+      "farbe": [
+        0.62,
+        0.54,
+        0.4
+      ],
+      "bild": {
+        "art": "sternensysteme",
+        "suche": "Asteroidengürtel"
+      },
+      "beschreibung": "Der Sporengürtel zwischen 1,8 und 2,4 AE besteht aus dunklen, kohlenstoffreichen Brocken; sein Name verweist auf die fein verteilte, goldbraune Staubwolke um ihn."
+    },
+    {
+      "id": "mypzla-ombrys-iv",
+      "name": "Ombrys IV",
+      "typ": "Gasriese",
+      "um": "mypzla-stern",
+      "aAE": 4.6,
+      "e": 0.05,
+      "i": 1.3,
+      "knoten": 20,
+      "peri": 300,
+      "phase": 260,
+      "radiusKm": 62000,
+      "masseErde": 180,
+      "albedo": 0.4,
+      "farbe": [
+        0.86,
+        0.72,
+        0.5
+      ],
+      "bild": {
+        "art": "planeten",
+        "suche": "Gasriese|Wolkenbänder|Jupiter|Goldener"
+      },
+      "beschreibung": "Ombrys IV ist ein ockerfarbener Gasriese mit breiten Wolkenbändern."
+    },
+    {
+      "id": "mypzla-myzelkomet",
+      "name": "Goldschweif",
+      "typ": "Komet",
+      "um": "mypzla-stern",
+      "anomalie": true,
+      "aAE": 12,
+      "e": 0.93,
+      "i": 24,
+      "knoten": 310,
+      "peri": 40,
+      "phase": 171,
+      "radiusKm": 7,
+      "masseErde": 0,
+      "farbe": [
+        0.86,
+        0.74,
+        0.46
+      ],
+      "bild": {
+        "art": "kometen",
+        "suche": "gold|Komet"
+      },
+      "beschreibung": "Ein Komet mit ungewöhnlich goldfarbenem Schweif, dessen Staub organische Verbindungen enthält. Ob solche Kometen einst Bausteine des Lebens nach Mypzla brachten, wird erforscht."
+    },
+    {
+      "id": "mypzla-kometengebiet",
+      "name": "Corures-Kometenwolke",
+      "typ": "Kometengebiet",
+      "ringUm": "mypzla-stern",
+      "ringeAE": [
+        30,
+        37,
+        44
+      ],
+      "anzahl": 200,
+      "groesseKm": 150,
+      "mindestPx": 4.5,
+      "farbe": [
+        0.6,
+        0.66,
+        0.8
+      ],
+      "beschreibung": "Ein ferner Gürtel aus Eiskörpern zwischen 30 und 44 AE."
+    }
   ]
 }

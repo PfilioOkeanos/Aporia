@@ -1,0 +1,843 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Vaelkor",
+  "genitiv": "von Vaelkor",
+  "dossierName": "Vaelkor-Dossier",
+  "klasse": "Gasriese",
+  "intro": "Gasriese mit ausgeprägten Wolkenbändern, großräumigen Stürmen und einem Ringsystem. Seine Gravitation prägt den benachbarten Saelith-Gürtel.",
+  "globusDaten": {
+    "planet": "vaelkor",
+    "klasse": "Gasriese",
+    "radius": 58200000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=rhaelis-stern&objekt=rhaelis-vaelkor",
+  "grunddaten": [
+    [
+      "System-ID",
+      "rhaelis-vaelkor"
+    ],
+    [
+      "Archiv-ID",
+      "AP-RHAELIS-VAELKOR"
+    ],
+    [
+      "Typ",
+      "Gasriese"
+    ],
+    [
+      "Sternsystem",
+      "Rhaelis-System"
+    ],
+    [
+      "Zentralkörper",
+      "Rhaelis"
+    ],
+    [
+      "Große Halbachse",
+      "2,45 AE"
+    ],
+    [
+      "Umlaufzeit",
+      "4,3 Jahre"
+    ],
+    [
+      "Durchmesser",
+      "116.400 km"
+    ],
+    [
+      "Masse",
+      "120,775 Erdmassen"
+    ],
+    [
+      "Schwerkraft",
+      "1,45 g"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -150 °C"
+    ],
+    [
+      "Monde",
+      "3 (Styran, Numes, Horai)"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Rhaelis-System"
+    ],
+    [
+      "Zentralstern",
+      "Rhaelis",
+      "inhalte/himmelskoerper/sterne/details/rhaelis/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "2,45 AE"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Vaelkor im Rhaelis-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=rhaelis-stern&objekt=rhaelis-vaelkor",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Rhaelis",
+      "href": "inhalte/himmelskoerper/sterne/details/rhaelis/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Styran",
+      "href": "inhalte/himmelskoerper/monde/details/styran/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Numes",
+      "href": "inhalte/himmelskoerper/monde/details/numes/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Horai",
+      "href": "inhalte/himmelskoerper/monde/details/horai/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Memetiden",
+      "titel": "Tavoryn",
+      "href": "inhalte/himmelskoerper/planeten/details/tavoryn/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Memetiden",
+      "href": "inhalte/spezies/Mentale Spezies/Memetiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Rhaelis-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=rhaelis-stern&objekt=rhaelis-vaelkor"
+    },
+    {
+      "titel": "Speziesdossier Memetiden",
+      "href": "inhalte/spezies/Mentale Spezies/Memetiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#0a0806",
+      "tiefe": "#17110d",
+      "akzent": "#e0c0a7",
+      "sand": "#e2bd98",
+      "moos": "#bcb683",
+      "ozean": "#969f93",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#5d4736"
+    }
+  },
+  "kapitel": {
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Vaelkor auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Vaelkor",
+          "text": [
+            "Gasriese mit ausgeprägten Wolkenbändern, großräumigen Stürmen und einem Ringsystem. Seine Gravitation prägt den benachbarten Saelith-Gürtel.",
+            "Vaelkor umkreist Rhaelis in 2,45 AE Abstand und braucht für einen Umlauf 4,3 Jahre."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Gasriese"
+            ],
+            [
+              "Sternsystem",
+              "Rhaelis-System"
+            ],
+            [
+              "Zentralkörper",
+              "Rhaelis"
+            ],
+            [
+              "Große Halbachse",
+              "2,45 AE"
+            ],
+            [
+              "Umlaufzeit",
+              "4,3 Jahre"
+            ],
+            [
+              "Durchmesser",
+              "116.400 km"
+            ],
+            [
+              "Masse",
+              "120,775 Erdmassen"
+            ],
+            [
+              "Schwerkraft",
+              "1,45 g"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -150 °C"
+            ],
+            [
+              "Monde",
+              "3 (Styran, Numes, Horai)"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Tavoryn",
+          "text": [
+            "Das Rhaelis-System ist die Heimat der Memetiden: Ihr Planet Tavoryn umkreist Rhaelis."
+          ],
+          "verweise": [
+            [
+              "Tavoryn",
+              "inhalte/himmelskoerper/planeten/details/tavoryn/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Memetiden",
+              "inhalte/spezies/Mentale Spezies/Memetiden/hauptseite/Spezies.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Planet Vaelkor",
+          "text": [
+            "Vaelkor besitzt eine ausgedehnte Atmosphäre mit Wolkenbändern, großräumigen Sturmsystemen und einem Ringsystem.",
+            "Der Planet beeinflusst die Dynamik des Saelith-Gürtels.",
+            "Mehrere Monde befinden sich innerhalb seiner gravitativen Einflusssphäre.",
+            "Bedeutende Monde:"
+          ],
+          "daten": [
+            [
+              "Orbit",
+              "2,45 AE"
+            ],
+            [
+              "Umlaufzeit",
+              "Rund 1.556 Erdentage"
+            ],
+            [
+              "Masse",
+              "Ungefähr 0,38 Jupitermassen"
+            ],
+            [
+              "Planetentyp",
+              "Gasriese"
+            ],
+            [
+              "Styran",
+              "Eisreicher Mond mit alten Einschlagstrukturen."
+            ],
+            [
+              "Numes",
+              "Gesteins- und Eismond mit geologisch interessanten Bruchzonen."
+            ],
+            [
+              "Horai",
+              "Kleiner, stark zerklüfteter Mond mit zahlreichen Kratern."
+            ],
+            [
+              "Forschungsschwerpunkte",
+              "Atmosphärenphysik, Magnetfeld, Ringsysteme, Monde und Gravitation."
+            ],
+            [
+              "Spielintegration",
+              "Atmosphärensonden, orbitale Stationen, Gasgewinnung und Monde mit unterschiedlichen Umweltbedingungen."
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Vaelkor im Rhaelis-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Rhaelis"
+            ],
+            [
+              "Große Halbachse",
+              "2,45 AE (366,5 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,018"
+            ],
+            [
+              "Bahnneigung",
+              "0°"
+            ],
+            [
+              "Umlaufzeit",
+              "4,3 Jahre"
+            ],
+            [
+              "Einstrahlung",
+              "0,065-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Am Himmel von Vaelkor",
+          "text": [
+            "Rhaelis erscheint von hier aus etwa 0,18° groß (die Sonne von der Erde: 0,53°)."
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Rhaelis · Stern",
+              "Orangefarbener Hauptreihenstern (K1 V)"
+            ],
+            [
+              "Kesvar · 0,18 AE",
+              "Heißer Gesteinsplanet"
+            ],
+            [
+              "Draoven · 0,33 AE",
+              "Heißer trockener Gesteinsplanet"
+            ],
+            [
+              "Tavoryn · 0,65 AE",
+              "Gemäßigter Ozean- und Gesteinsplanet"
+            ],
+            [
+              "Ossaryn · 1,2 AE",
+              "Kalter Gesteinsplanet"
+            ],
+            [
+              "Vaelkor · 2,45 AE · dieses Dossier",
+              "Gasriese"
+            ],
+            [
+              "Kelomar · 4,8 AE",
+              "Äußerer Gasriese"
+            ],
+            [
+              "Ithrenn · 9,2 AE",
+              "Eisriese"
+            ],
+            [
+              "Therys · 19 AE",
+              "Eisreicher Kleinkörper"
+            ],
+            [
+              "Veskar-9 · 31 AE",
+              "Dunkler Kleinkörper"
+            ],
+            [
+              "Saelith-Gürtel · 1,7–2,1 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußere Kleinkörperregion von Rhaelis · 12–43 AE",
+              "Eisreicher Kleinkörpergürtel"
+            ],
+            [
+              "Ferne Kometenpopulation von Rhaelis · 65–240 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Rhaelis",
+              "inhalte/himmelskoerper/sterne/details/rhaelis/hauptseite/index.html"
+            ],
+            [
+              "Kesvar",
+              "inhalte/himmelskoerper/planeten/details/kesvar/hauptseite/index.html"
+            ],
+            [
+              "Draoven",
+              "inhalte/himmelskoerper/planeten/details/draoven/hauptseite/index.html"
+            ],
+            [
+              "Tavoryn",
+              "inhalte/himmelskoerper/planeten/details/tavoryn/hauptseite/index.html"
+            ],
+            [
+              "Ossaryn",
+              "inhalte/himmelskoerper/planeten/details/ossaryn/hauptseite/index.html"
+            ],
+            [
+              "Kelomar",
+              "inhalte/himmelskoerper/planeten/details/kelomar/hauptseite/index.html"
+            ],
+            [
+              "Ithrenn",
+              "inhalte/himmelskoerper/planeten/details/ithrenn/hauptseite/index.html"
+            ],
+            [
+              "Therys",
+              "inhalte/himmelskoerper/asteroiden/details/therys/hauptseite/index.html"
+            ],
+            [
+              "Veskar-9",
+              "inhalte/himmelskoerper/asteroiden/details/veskar-9/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Vaelkor.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "58.200 km"
+            ],
+            [
+              "Masse",
+              "120,775 Erdmassen"
+            ],
+            [
+              "Mittlere Dichte",
+              "0,87 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "14,2 m/s² (1,447 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "40,67 km/s"
+            ]
+          ],
+          "vergleich": {
+            "mit": "Erde",
+            "werte": [
+              [
+                "Durchmesser",
+                116400,
+                12742,
+                "km"
+              ],
+              [
+                "Masse",
+                120.775,
+                1,
+                "Erdmassen"
+              ],
+              [
+                "Schwerkraft",
+                1.45,
+                1,
+                "g"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "Planetare Struktur": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Planetare Struktur von Vaelkor.",
+      "abschnitte": [
+        {
+          "titel": "Schalenbau",
+          "schichten": [
+            [
+              "Wolkendecke",
+              "Ammoniak- und Wasserwolken in Bändern"
+            ],
+            [
+              "Wasserstoffhülle",
+              "Molekularer Wasserstoff und Helium"
+            ],
+            [
+              "Metallischer Wasserstoff",
+              "Leitfähige Schicht unter extremem Druck – Ursprung des Magnetfelds"
+            ],
+            [
+              "Kern",
+              "Gestein und Eis"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geografie": {
+      "gruppe": "Natur",
+      "icon": "△",
+      "intro": "Geografie von Vaelkor.",
+      "abschnitte": [
+        {
+          "titel": "Oberfläche",
+          "text": [
+            "Vaelkor besitzt keine feste Oberfläche. Sichtbar sind Wolkenbänder, Wirbel und Stürme."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Vaelkor.",
+      "abschnitte": [
+        {
+          "titel": "Gashülle",
+          "text": [
+            "Vaelkor besitzt keine feste Oberfläche; die Hülle geht nach innen allmählich in dichtere Schichten über."
+          ],
+          "balken": {
+            "werte": [
+              [
+                "Wasserstoff",
+                86
+              ],
+              [
+                "Helium",
+                13
+              ],
+              [
+                "Methan und Spurengase",
+                1
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Vaelkor.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 2,45 AE Abstand zu Rhaelis liegt die Gleichgewichtstemperatur von Vaelkor bei rund -150 °C – eisig kalt."
+          ]
+        }
+      ]
+    },
+    "Gewässer": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gewässer von Vaelkor.",
+      "abschnitte": [
+        {
+          "titel": "Wasser",
+          "text": [
+            "Wasser liegt in den Wolkenschichten und tief im Inneren unter hohem Druck vor."
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Vaelkor.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Ohne feste Oberfläche gibt es keine Geologie im engeren Sinn; im Inneren herrschen extreme Drücke und Temperaturen."
+          ]
+        }
+      ]
+    },
+    "Biosphäre": {
+      "gruppe": "Natur",
+      "icon": "❧",
+      "intro": "Biosphäre von Vaelkor.",
+      "abschnitte": [
+        {
+          "titel": "Leben",
+          "text": [
+            "Auf Vaelkor ist kein Leben verzeichnet."
+          ]
+        }
+      ]
+    },
+    "Spezies": {
+      "gruppe": "Zivilisation",
+      "icon": "✿",
+      "intro": "Spezies von Vaelkor.",
+      "abschnitte": [
+        {
+          "titel": "Bewohner",
+          "text": [
+            "Vaelkor ist keine Heimat einer intelligenten Spezies."
+          ]
+        },
+        {
+          "titel": "Im System von Tavoryn",
+          "text": [
+            "Das Rhaelis-System ist die Heimat der Memetiden: Ihr Planet Tavoryn umkreist Rhaelis."
+          ],
+          "verweise": [
+            [
+              "Tavoryn",
+              "inhalte/himmelskoerper/planeten/details/tavoryn/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Memetiden",
+              "inhalte/spezies/Mentale Spezies/Memetiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Zivilisation": {
+      "gruppe": "Zivilisation",
+      "icon": "▥",
+      "intro": "Zivilisation von Vaelkor.",
+      "abschnitte": [
+        {
+          "titel": "Siedlungen",
+          "text": [
+            "Für Vaelkor sind keine dauerhaften Siedlungen verzeichnet."
+          ]
+        },
+        {
+          "titel": "Im System von Tavoryn",
+          "text": [
+            "Das Rhaelis-System ist die Heimat der Memetiden: Ihr Planet Tavoryn umkreist Rhaelis."
+          ],
+          "verweise": [
+            [
+              "Tavoryn",
+              "inhalte/himmelskoerper/planeten/details/tavoryn/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Memetiden",
+              "inhalte/spezies/Mentale Spezies/Memetiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Vaelkor.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Vaelkor entstand zusammen mit dem Rhaelis-System vor rund 6,2 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Fraktionen": {
+      "gruppe": "Zivilisation",
+      "icon": "◇",
+      "intro": "Fraktionen von Vaelkor.",
+      "abschnitte": [
+        {
+          "titel": "Ansprüche",
+          "text": [
+            "Für Vaelkor sind keine Fraktionsansprüche verzeichnet."
+          ]
+        }
+      ]
+    },
+    "Rohstoffe": {
+      "gruppe": "Weitere",
+      "icon": "⬡",
+      "intro": "Rohstoffe von Vaelkor.",
+      "abschnitte": [
+        {
+          "titel": "Rohstoffe",
+          "liste": [
+            "Wasserstoff",
+            "Helium-3",
+            "Ammoniak"
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Vaelkor.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Wie tief reichen die Wolkenbänder?",
+            "Wie groß ist der feste Kern?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Vaelkor ist mit allen Bahndaten im Rhaelis-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=rhaelis-stern&objekt=rhaelis-vaelkor"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Vaelkor.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Größter Planet des Rhaelis-Systems",
+            "3 Monde: Styran, Numes, Horai"
+          ]
+        },
+        {
+          "titel": "Monde",
+          "karten": [
+            {
+              "titel": "Styran",
+              "text": "2.360 km Durchmesser, Umlauf in 26,8 Stunden. Ein eisreicher Mond Vaelkors mit alten Einschlagstrukturen."
+            },
+            {
+              "titel": "Numes",
+              "text": "1.840 km Durchmesser, Umlauf in 2,4 Tage. Gesteins- und Eismond Vaelkors mit geologisch interessanten Bruchzonen."
+            },
+            {
+              "titel": "Horai",
+              "text": "388 km Durchmesser, Umlauf in 5,3 Tage. Kleiner, stark zerklüfteter Mond Vaelkors mit zahlreichen Kratern."
+            }
+          ],
+          "verweise": [
+            [
+              "Styran",
+              "inhalte/himmelskoerper/monde/details/styran/hauptseite/index.html"
+            ],
+            [
+              "Numes",
+              "inhalte/himmelskoerper/monde/details/numes/hauptseite/index.html"
+            ],
+            [
+              "Horai",
+              "inhalte/himmelskoerper/monde/details/horai/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Verwandte Dossiers",
+          "verweise": [
+            [
+              "Vaelkors Ringe",
+              "inhalte/himmelskoerper/monde/details/vaelkors-ringe/hauptseite/index.html"
+            ],
+            [
+              "Styran",
+              "inhalte/himmelskoerper/monde/details/styran/hauptseite/index.html"
+            ],
+            [
+              "Numes",
+              "inhalte/himmelskoerper/monde/details/numes/hauptseite/index.html"
+            ],
+            [
+              "Horai",
+              "inhalte/himmelskoerper/monde/details/horai/hauptseite/index.html"
+            ],
+            [
+              "Rhaelis-System",
+              "inhalte/himmelskoerper/sternensysteme/details/rhaelis-system/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Vaelkor.",
+      "abschnitte": [
+        {
+          "titel": "Vaelkor",
+          "bild": true,
+          "bildtext": "Illustration aus dem APORIA-Bildarchiv"
+        }
+      ]
+    },
+    "Gaszusammensetzung": {
+      "gruppe": "Weitere",
+      "icon": "◆",
+      "intro": "Gaszusammensetzung von Vaelkor.",
+      "abschnitte": [
+        {
+          "titel": "Gaszusammensetzung",
+          "text": [
+            "Die genaue chemische Zusammensetzung ist noch offen."
+          ]
+        }
+      ]
+    },
+    "Wolkenschichten": {
+      "gruppe": "Weitere",
+      "icon": "◆",
+      "intro": "Wolkenschichten von Vaelkor.",
+      "abschnitte": [
+        {
+          "titel": "Wolkenschichten",
+          "text": [
+            "Das Dossier beschreibt ausgeprägte Wolkenbänder und temperaturabhängige Schichten."
+          ]
+        }
+      ]
+    },
+    "Stürme": {
+      "gruppe": "Weitere",
+      "icon": "◆",
+      "intro": "Stürme von Vaelkor.",
+      "abschnitte": [
+        {
+          "titel": "Stürme",
+          "text": [
+            "Großräumige Stürme und wechselnde Ringschatten prägen Vaelkors sichtbare Atmosphäre."
+          ]
+        }
+      ]
+    }
+  }
+}

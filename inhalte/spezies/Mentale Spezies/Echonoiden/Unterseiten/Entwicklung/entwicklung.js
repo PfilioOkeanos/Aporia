@@ -1,2 +1,3 @@
-// Echonoiden – Entwicklung · erzeugt vom Spezies-Baukasten (scripts/spezies) – Änderungen dort vornehmen
+// Echonoiden – Entwicklung
+// Gemeinsame Funktionen (Topbar, Sidebar, Routen, Klappkapitel, Bildkarussell) kommen aus der Basis.
 import "../../echonoiden-basis.js";

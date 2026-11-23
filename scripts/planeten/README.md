@@ -40,7 +40,7 @@ Aufruf jeweils mit `<slug>` oder eindeutig mit `<art>/<slug>`, z. B. `monde/abge
 
 ## Neue Inhalte für einen Himmelskörper (z. B. Heimatwelten aus den Spezies-Dossiers)
 
-Vorbild ist Kharuun (`scripts/planeten/daten/dammernder-vulkanplanet-mit-gluhenden-lavaseen.inhalt.json`).
+Vorbild ist Kharuun (`scripts/planeten/daten/kharuun.inhalt.json`).
 
 1. `daten-auslesen.mjs <slug>` einmal vor dem Umbau ausführen. Das liest die alte, generierte Seite: Bilder, Archiv-ID und Kapitelpfade.
 2. `<slug>.inhalt.json` daneben anlegen. Sie hat Vorrang vor der ausgelesenen Datei und enthält:
@@ -113,14 +113,27 @@ Alle gebauten Seiten tragen `data-custom-dossier`. Der Atlas-Generator (`build-c
   Abschnitte werden angehängt; mit `ersetzen: true` ersetzen sie die berechneten. Danach das System mit `--bauen` neu bauen.
 - **Schutz**: Erzeugte Inhaltsdateien tragen `"_erzeugt": "koerper-bauen"`. Dateien ohne diese Kennung (von Hand gepflegt) überschreibt das Skript nie.
 - Heimatwelt-Planeten und das Sonnensystem werden übersprungen; Körper ohne Archivbild (z. B. Kometengebiete) bekommen kein Dossier.
+- Typen mit „Neptun“ im Namen (z. B. `Mini-Neptun`) zählen als Hüllenplaneten ohne feste Oberfläche (wie Eisriesen).
 - Ablauf nach Änderungen an einem System: `sternsystem-bauen.mjs <name>-system` → `koerper-bauen.mjs <name>-system --bauen` → bei Heimatwelten `heimatwelt-bauen.mjs <name> --bauen`.
+
+## Systemübersicht (eine Seite je System)
+
+`node scripts/planeten/systemseite-bauen.mjs <name>-system <ordner> [--heimatwelt <name>]`
+
+- Schreibt `inhalte/himmelskoerper/sternensysteme/details/<ordner>/hauptseite/index.html`: Stern und alle Körper als Karten mit Link auf ihr Dossier (sonst auf die Sternenkarte), oben Sternenkarte, Heimatwelt und Spezies.
+- Texte kommen aus der Systemdatei (`beschreibung`, optional `einleitung`); das Kopfbild ist das Archivbild der Heimatwelt.
+- Seiten ohne die Kennung `data-systemseite-erzeugt` werden nie überschrieben (z. B. `saelon-system`, das `scripts/spezies/eigene/regeneranten.mjs` selbst schreibt).
+- In der Heimatwelt-Beschreibung verlinkt `systemseite: "<Pfad>"` die Übersicht als Verknüpfung.
 
 ## Stand
 
 - **Erde:** komplett umgestellt (Hauptseite und 18 Kapitel).
-- **Heimatwelten:** 18 Welten im Dossier-Aufbau, je mit Sternsystem in der Sternenkarte.
-- **Körper der ausgedachten Systeme:** alle mit Archivbild als eigenes Dossier gebaut (Stand 2026-11-22: 165).
-- **Übrige Archiveinträge** (nicht in der Sternenkarte): weiter Platzhalter im Atlas-Format.
+- **Heimatwelten:** 21 Welten im Dossier-Aufbau, je mit Sternsystem in der Sternenkarte (zuletzt Seyrath / Kelira-System, Chronoiden).
+- **Körper der ausgedachten Systeme:** alle mit Archivbild als eigenes Dossier gebaut (Stand 2026-11-22: 212).
+- **Systemübersichten:** `kelira-system`, `terev-system`, `orelis-system` (erzeugt), `saelon-system` (von regeneranten.mjs geschrieben).
+- **Sehr weite Gebiete** (z. B. die Terev-Fernwolke bei 1.500–8.000 AE): In der Systemdatei `ankerAE` setzen. Die Karte bemisst den Startausschnitt nach den Ankerpunkten; ohne `ankerAE` verschwinden die Planeten im Bild.
+- **Eigene Texte für viele Körper eines Systems** lassen sich zentral pflegen: `koerper/nerath-texte.mjs` mit einer kleinen Datei `koerper/<id>.mjs` je Körper, die daraus importiert.
+- **Archiveinträge aus dem alten Atlas:** `node scripts/planeten/atlas-migrieren.mjs` übernimmt bestehende Haupt- und Kapitelseiten in das Planetendossier-Design. Mit `--pruefen` lässt sich die Auswahl ohne Änderungen prüfen. Die bisherige Kennzeichnung von Entwürfen bleibt auf Haupt- und Kapitelseiten erhalten.
 
 ## Hinweise
 

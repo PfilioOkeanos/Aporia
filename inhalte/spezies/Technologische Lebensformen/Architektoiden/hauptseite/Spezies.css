@@ -29,13 +29,13 @@
 }
 .arch-layout {
     display: grid;
-    grid-template-columns: clamp(8rem, 10cqi, 10.2rem) minmax(0, 1fr) clamp(8.4rem, 10cqi, 10.3rem);
+    grid-template-columns: clamp(8rem, 10cqi, 10.2rem) minmax(0, 1fr);
     grid-template-areas:
-        "chapters hero rail"
-        "chapters core rail"
-        "topics topics topics"
-        "concept concept concept"
-        "variants variants variants";
+        "chapters hero"
+        "chapters core"
+        "topics topics"
+        "concept concept"
+        "variants variants";
     align-items: start;
     gap: .8rem;
 }
@@ -192,7 +192,7 @@
 @container (max-width: 915px) {
     .arch-layout {
         grid-template-columns: minmax(0, 1fr);
-        grid-template-areas: "rail" "hero" "chapters" "core" "topics" "concept" "variants";
+        grid-template-areas: "hero" "chapters" "core" "topics" "concept" "variants";
     }
     .arch-rail > .arch-kicker { display: none; }
     .arch-chapters, .arch-rail nav { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; }

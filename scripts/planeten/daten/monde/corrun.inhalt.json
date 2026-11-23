@@ -1,0 +1,531 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Corrun",
+  "genitiv": "von Corrun",
+  "dossierName": "Corrun-Dossier",
+  "klasse": "Mond",
+  "intro": "Corrun ist ein großer Eismond mit glatter, von Rissen durchzogener Kruste – vermutlich mit verborgenem Ozean. Corrun umkreist Babiew in 8,4 Tage.",
+  "globusDaten": {
+    "planet": "lebender-alienmond-mit-orangefarbenen-schalenkolonien",
+    "klasse": "Eis",
+    "radius": 2100000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=babiew-stern&objekt=babiew-corrun",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-A0F97589AB"
+    ],
+    [
+      "Typ",
+      "Mond"
+    ],
+    [
+      "Sternsystem",
+      "Thyrrae-System"
+    ],
+    [
+      "Zentralkörper",
+      "Babiew"
+    ],
+    [
+      "Große Halbachse",
+      "683.343 km"
+    ],
+    [
+      "Umlaufzeit",
+      "8,4 Tage"
+    ],
+    [
+      "Durchmesser",
+      "4.200 km"
+    ],
+    [
+      "Masse",
+      "1,789 Mondmassen"
+    ],
+    [
+      "Schwerkraft",
+      "0,2 g"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -18 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Thyrrae-System"
+    ],
+    [
+      "Zentralstern",
+      "Thyrrae",
+      "inhalte/himmelskoerper/sterne/details/thyrrae/hauptseite/index.html"
+    ],
+    [
+      "Umläuft",
+      "Babiew",
+      "inhalte/himmelskoerper/planeten/details/babiew/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "683.343 km"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Corrun im Thyrrae-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=babiew-stern&objekt=babiew-corrun",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Thyrrae",
+      "href": "inhalte/himmelskoerper/sterne/details/thyrrae/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◍",
+      "art": "Mutterplanet",
+      "titel": "Babiew",
+      "href": "inhalte/himmelskoerper/planeten/details/babiew/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Aeromorphen",
+      "titel": "Babiew",
+      "href": "inhalte/himmelskoerper/planeten/details/babiew/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Aeromorphen",
+      "href": "inhalte/spezies/Biologische Spezies/Aeromorphen/Hauptseite_übersicht/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Thyrrae-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=babiew-stern&objekt=babiew-corrun"
+    },
+    {
+      "titel": "Speziesdossier Aeromorphen",
+      "href": "inhalte/spezies/Biologische Spezies/Aeromorphen/Hauptseite_übersicht/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#0a0a0b",
+      "tiefe": "#161719",
+      "akzent": "#dbe1eb",
+      "sand": "#ddd9c4",
+      "moos": "#b7ddbe",
+      "ozean": "#92c1e7",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#5a5e65"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Astronomie"
+      ],
+      [
+        "Planet",
+        "Mutterplanet"
+      ],
+      [
+        "Kräfte",
+        "Gezeiten"
+      ],
+      [
+        "Tiefe",
+        "Geologie"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Mutterplanet": {
+      "gruppe": "Wissenschaft",
+      "icon": "◐",
+      "intro": "Mutterplanet von Corrun.",
+      "abschnitte": [
+        {
+          "titel": "Babiew",
+          "text": [
+            "Babiew ist die Heimatwelt der Aeromorphen: eine Gaswelt mit mächtiger, extrem bewegter Atmosphäre, dauerhaften Sturmsystemen und Winden bis 1.000 km/h."
+          ],
+          "daten": [
+            [
+              "Typ",
+              "Gasriese"
+            ],
+            [
+              "Durchmesser",
+              "104.000 km"
+            ],
+            [
+              "Abstand des Mondes",
+              "683.343 km (13,1 Planetenradien)"
+            ]
+          ],
+          "verweise": [
+            [
+              "Babiew",
+              "inhalte/himmelskoerper/planeten/details/babiew/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Weitere Monde von Babiew",
+          "liste": [
+            "Ayel – Umlauf in 3,1 Tage",
+            "Pheyra – Umlauf in 26 Tage"
+          ],
+          "verweise": [
+            [
+              "Ayel",
+              "inhalte/himmelskoerper/monde/details/ayel/hauptseite/index.html"
+            ],
+            [
+              "Pheyra",
+              "inhalte/himmelskoerper/monde/details/pheyra/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Gezeiten": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gezeiten von Corrun.",
+      "abschnitte": [
+        {
+          "titel": "Gezeitenkräfte",
+          "text": [
+            "Auf seiner Bahn in 683.343 km Abstand wirken starke Gezeitenkräfte von Babiew auf Corrun."
+          ]
+        }
+      ]
+    },
+    "Gebundene Rotation": {
+      "gruppe": "Wissenschaft",
+      "icon": "↻",
+      "intro": "Gebundene Rotation von Corrun.",
+      "abschnitte": [
+        {
+          "titel": "Rotation",
+          "text": [
+            "Corrun wendet Babiew vermutlich stets dieselbe Seite zu: Ein Tag dauert so lange wie ein Umlauf – 8,4 Tage."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Corrun auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Corrun",
+          "text": [
+            "Corrun ist ein großer Eismond mit glatter, von Rissen durchzogener Kruste – vermutlich mit verborgenem Ozean.",
+            "Corrun umkreist Babiew in 8,4 Tage."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Mond"
+            ],
+            [
+              "Sternsystem",
+              "Thyrrae-System"
+            ],
+            [
+              "Zentralkörper",
+              "Babiew"
+            ],
+            [
+              "Große Halbachse",
+              "683.343 km"
+            ],
+            [
+              "Umlaufzeit",
+              "8,4 Tage"
+            ],
+            [
+              "Durchmesser",
+              "4.200 km"
+            ],
+            [
+              "Masse",
+              "1,789 Mondmassen"
+            ],
+            [
+              "Schwerkraft",
+              "0,2 g"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -18 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Babiew",
+          "text": [
+            "Das Thyrrae-System ist die Heimat der Aeromorphen: Ihr Planet Babiew umkreist Thyrrae, und Corrun ist einer seiner Monde."
+          ],
+          "verweise": [
+            [
+              "Babiew",
+              "inhalte/himmelskoerper/planeten/details/babiew/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Aeromorphen",
+              "inhalte/spezies/Biologische Spezies/Aeromorphen/Hauptseite_übersicht/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Corrun im Thyrrae-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Babiew"
+            ],
+            [
+              "Große Halbachse",
+              "683.343 km"
+            ],
+            [
+              "Exzentrizität",
+              "0,01"
+            ],
+            [
+              "Bahnneigung",
+              "0,6°"
+            ],
+            [
+              "Umlaufzeit",
+              "8,4 Tage"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Thyrrae · Stern",
+              "Gelber Zwerg (F9 V)"
+            ],
+            [
+              "Thyrrae I · 0,38 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Thyrrae II · 0,72 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Babiew · 1,3 AE",
+              "Gasriese"
+            ],
+            [
+              "Thyrrae V · 9,4 AE",
+              "Eisriese"
+            ],
+            [
+              "Schleiergürtel · 2,6–3,4 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 36–52 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Thyrrae",
+              "inhalte/himmelskoerper/sterne/details/thyrrae/hauptseite/index.html"
+            ],
+            [
+              "Thyrrae I",
+              "inhalte/himmelskoerper/planeten/details/thyrrae-i/hauptseite/index.html"
+            ],
+            [
+              "Thyrrae II",
+              "inhalte/himmelskoerper/planeten/details/thyrrae-ii/hauptseite/index.html"
+            ],
+            [
+              "Babiew",
+              "inhalte/himmelskoerper/planeten/details/babiew/hauptseite/index.html"
+            ],
+            [
+              "Thyrrae V",
+              "inhalte/himmelskoerper/planeten/details/thyrrae-v/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Corrun.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "2.100 km"
+            ],
+            [
+              "Masse",
+              "1,789 Mondmassen"
+            ],
+            [
+              "Mittlere Dichte",
+              "3,39 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "1,99 m/s² (0,202 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "2,89 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Corrun.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Corrun ist geologisch weitgehend erstarrt; Einschläge haben seine Oberfläche geformt."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Corrun.",
+      "abschnitte": [
+        {
+          "titel": "Gashülle",
+          "text": [
+            "Corrun besitzt keine nennenswerte Atmosphäre – dafür ist die Schwerkraft zu gering."
+          ]
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Corrun.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 1,3 AE Abstand zu Thyrrae liegt die Gleichgewichtstemperatur von Corrun bei rund -18 °C – gemäßigt."
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Corrun.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Corrun entstand zusammen mit dem Thyrrae-System vor rund 3,4 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Corrun.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Ist der Mond eingefangen oder mit seinem Planeten entstanden?",
+            "Welche Spuren tragen seine ältesten Krater?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Corrun ist mit allen Bahndaten im Thyrrae-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=babiew-stern&objekt=babiew-corrun"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Corrun.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Größter Mond von Babiew"
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Corrun.",
+      "abschnitte": [
+        {
+          "titel": "Corrun – Archivbild",
+          "bild": true,
+          "bildtext": "Corrun"
+        }
+      ]
+    }
+  }
+}

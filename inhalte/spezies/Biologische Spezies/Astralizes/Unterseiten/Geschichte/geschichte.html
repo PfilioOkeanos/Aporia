@@ -19,7 +19,7 @@
         <div data-aporia-sidebar></div>
         <main class="st-dossier" id="inhalt">
             <header class="st-hero st-hero--reiter">
-                
+                <img class="st-hero-bild" src="../../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Astralizes/hauptseite/Aporia%2C%20die%20Delle%20im%20Sternenmeer-40.png" alt="" fetchpriority="high" decoding="async">
                 <span class="st-glanz" aria-hidden="true"></span>
                 <div class="st-hero-text">
                     <nav class="st-pfad" aria-label="Archivpfad"><a data-route="spezies" href="../../../../Spezies_%C3%BCbersicht/Spezies.html">Spezies</a><span aria-hidden="true">›</span><a data-route="spezies-biological" href="../../../%C3%9Cbersichtsseite%20biologische%20spezies/Uebersicht.html">Biologische Spezies</a><span aria-hidden="true">›</span><a data-route="spezies-biological-4" href="../../hauptseite/Spezies.html">Astralizes</a><span aria-hidden="true">›</span><span aria-current="page">Geschichte</span></nav>
@@ -40,17 +40,42 @@
                 <a href="../../Gameplay/gameplay.html" data-route="spezies-biological-4-gameplay"><span aria-hidden="true">◈</span>Spielintegration</a>
                 <a href="../../Forschung/forschung.html" data-route="spezies-biological-4-forschung"><span aria-hidden="true">⚗</span>Forschung</a>
                 <a href="../Medien/medien.html" data-route="spezies-biological-4-medien"><span aria-hidden="true">▣</span>Medien</a>
-            </nav>
+            <a href="../Technologien/technologien.html" data-route="spezies-biological-4-technologien">Technologien</a>
+</nav>
             <div class="st-layout">
                 <div class="st-inhalt">
-                    <details class="st-panel st-karte" id="noch-offen" open>
-                        <summary><span class="st-nr">…</span><h2>Geschichte</h2><span class="st-chevron" aria-hidden="true"></span></summary>
+                    <details class="st-panel st-karte" id="k-dossierentwurf">
+                        <summary><span class="st-nr">◇</span><h2>Dossierentwurf</h2><span class="st-chevron" aria-hidden="true"></span></summary>
                         <div class="st-text">
-                            <p class="st-offen">Noch nicht ausgearbeitet.</p>
-                            <p class="st-quelle">Vorgesehene Infodateien (noch ohne Text): 02_Geschichte_Entwicklung/entwicklung.md · 02_Geschichte_Entwicklung/geschichte.md</p>
+                            <p>Als früheste Zeugnisse sieht der Entwurf Bildpaare desselben Himmelsausschnitts vor. Wiederkehrende Unterbrechungen vor denselben Sternen geben den Archivaren einen ersten Anhaltspunkt für die Rekonstruktion alter Begegnungen.</p>
+                            <p class="st-quelle">Quelle: Info_material · Astralizes · 02_Geschichte_Entwicklung/geschichte.md</p>
                         </div>
                     </details>
-                    
+                    <section class="st-panel st-block st-karussell-block" id="galerie" aria-label="Bilder">
+                    <h2 class="st-h2">Bilder <small>3 Bilder · Bildarchiv</small></h2>
+                    <div class="bilder-karussell" data-karussell aria-roledescription="Karussell" aria-label="Bilder der Astralizes">
+                    <div class="karussell-spur" tabindex="0" aria-label="Bilder – mit Pfeiltasten blättern">
+                        <figure class="karussell-folie" data-kategorie="Hauptseite" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Aporia Kern aus gefrorenen Augenblicken in Großansicht öffnen"><img src="../../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Astralizes/hauptseite/Aporia_%20Kern%20aus%20gefrorenen%20Augenblicken-7.png" alt="Aporia Kern aus gefrorenen Augenblicken" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Aporia Kern aus gefrorenen Augenblicken</strong><span>Hauptseite</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Hauptseite" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Aporia, die Delle im Sternenmeer in Großansicht öffnen"><img src="../../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Astralizes/hauptseite/Aporia%2C%20die%20Delle%20im%20Sternenmeer-40.png" alt="Aporia, die Delle im Sternenmeer" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Aporia, die Delle im Sternenmeer</strong><span>Hauptseite</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Hauptseite" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Aporias sieben Ohren in Großansicht öffnen"><img src="../../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Astralizes/hauptseite/Aporias%20sieben%20Ohren-20.png" alt="Aporias sieben Ohren" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Aporias sieben Ohren</strong><span>Hauptseite</span></figcaption>
+                        </figure>
+                    </div>
+                    <div class="karussell-steuerung">
+                        <button type="button" data-karussell-schritt="-1" aria-label="Vorheriges Bild">‹</button>
+                        <div class="karussell-punkte" role="group" aria-label="Bild wählen"></div>
+                        <output class="karussell-zaehler" aria-live="polite"></output>
+                        <button type="button" data-karussell-schritt="1" aria-label="Nächstes Bild">›</button>
+                    </div>
+                </div>
+                </section>
                     <aside class="st-panel st-block st-links" aria-label="Verknüpfungen">
                     <h2 class="st-h2">Verknüpfungen</h2>
                     <ul>
@@ -66,7 +91,8 @@
                 <nav class="st-panel st-sprung" data-st-sprung aria-label="Kapitel dieser Seite">
                     <p class="st-kicker">Kapitel</p>
                     <button type="button" class="st-klappen" data-st-klappen aria-pressed="false">Alle aufklappen</button>
-                    <a href="#noch-offen"><span class="st-nr">…</span>Geschichte</a>
+                    <a href="#k-dossierentwurf"><span class="st-nr">◇</span>Dossierentwurf</a>
+                    <a href="#galerie"><span class="st-nr">▣</span>Bilder</a>
                 </nav>
             </div>
             <dialog class="st-zoom" aria-label="Bild in Großansicht"><div class="controls"><button class="control" type="button" data-step="-1" aria-label="Vorheriges Bild">←</button><output aria-live="polite"></output><button class="control" type="button" data-step="1" aria-label="Nächstes Bild">→</button></div><form method="dialog"><button class="control">Schließen</button></form><img alt=""></dialog>

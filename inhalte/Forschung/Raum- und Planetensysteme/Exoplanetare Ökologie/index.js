@@ -55,7 +55,7 @@ const knoten = [
         "belohnung": {
             "art": "gegenstand",
             "name": "Ammoniak ozeanplanet mit leuchtenden rissen",
-            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/EisWelten/ammoniak-ozeanplanet-mit-leuchtenden-rissen/hauptseite/ammoniak-ozeanplanet-mit-leuchtenden-rissen-61740e8a1c.webp"
+            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/EisWelten/iovar-ii/hauptseite/ammoniak-ozeanplanet-mit-leuchtenden-rissen-61740e8a1c.webp"
         }
     },
     {
@@ -69,7 +69,7 @@ const knoten = [
         "belohnung": {
             "art": "gegenstand",
             "name": "Dampfplanet mit gluhendem ozean",
-            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/EisWelten/dampfplanet-mit-gluhendem-ozean/hauptseite/dampfplanet-mit-gluhendem-ozean-ace7e0a834.webp"
+            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/EisWelten/thalor-i/hauptseite/dampfplanet-mit-gluhendem-ozean-ace7e0a834.webp"
         }
     },
     {
@@ -116,7 +116,7 @@ const knoten = [
         "belohnung": {
             "art": "gegenstand",
             "name": "Rissige eiswelt mit verborgenem ozean",
-            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/OzeanWelt/rissige-eiswelt-mit-verborgenem-ozean/hauptseite/rissige-eiswelt-mit-verborgenem-ozean-707d78b12a.webp"
+            "bild": "../../../../assets/bilder/Himmelsk%C3%B6rper/OzeanWelt/haeauven/hauptseite/rissige-eiswelt-mit-verborgenem-ozean-707d78b12a.webp"
         }
     }
 ];

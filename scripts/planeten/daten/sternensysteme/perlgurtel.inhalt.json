@@ -1,0 +1,499 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Perlgürtel",
+  "genitiv": "von Perlgürtel",
+  "dossierName": "Perlgürtel-Dossier",
+  "klasse": "Asteroidengürtel",
+  "intro": "Der Perlgürtel zwischen 2,5 und 3,25 AE enthält viele helle, wasserreiche Brocken. Perlgürtel umgibt Celeun im Celeun-System.",
+  "globusDaten": {
+    "planet": "goldener-asteroidengurtel-mit-dunklem-zentrum",
+    "klasse": "Gestein",
+    "radius": 1000000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=vessarin-stern&objekt=vessarin-perlgurtel",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-F14BD2A8B5"
+    ],
+    [
+      "Typ",
+      "Asteroidengürtel"
+    ],
+    [
+      "Sternsystem",
+      "Celeun-System"
+    ],
+    [
+      "Zentralkörper",
+      "Celeun"
+    ],
+    [
+      "Ausdehnung",
+      "2,5–3,25 AE"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Celeun-System"
+    ],
+    [
+      "Zentralstern",
+      "Celeun",
+      "inhalte/himmelskoerper/sterne/details/celeun/hauptseite/index.html"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Perlgürtel im Celeun-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=vessarin-stern&objekt=vessarin-perlgurtel",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Celeun",
+      "href": "inhalte/himmelskoerper/sterne/details/celeun/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Thalassoiden",
+      "titel": "Vessarin",
+      "href": "inhalte/himmelskoerper/planeten/details/vessarin/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Thalassoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Thalassoiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Celeun-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=vessarin-stern&objekt=vessarin-perlgurtel"
+    },
+    {
+      "titel": "Speziesdossier Thalassoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Thalassoiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#080808",
+      "tiefe": "#131211",
+      "akzent": "#c7c3bd",
+      "sand": "#cbc0a6",
+      "moos": "#a5ba96",
+      "ozean": "#84a2ad",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#4c4945"
+    },
+    "schichten": [
+      [
+        "Lage",
+        "Bahnen"
+      ],
+      [
+        "System",
+        "Planeten"
+      ],
+      [
+        "Dynamik",
+        "Stabilität"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Zentralsterne": {
+      "gruppe": "Wissenschaft",
+      "icon": "✦",
+      "intro": "Zentralsterne von Perlgürtel.",
+      "abschnitte": [
+        {
+          "titel": "Celeun",
+          "text": [
+            "Celeun ist ein gelber Zwerg der Spektralklasse G6 V mit 95 % der Sonnenmasse und 82 % ihrer Leuchtkraft – Zentralstern von Vessarin, der Heimatwelt der Thalassoiden."
+          ],
+          "verweise": [
+            [
+              "Celeun",
+              "inhalte/himmelskoerper/sterne/details/celeun/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Planeten": {
+      "gruppe": "Wissenschaft",
+      "icon": "◍",
+      "intro": "Planeten von Perlgürtel.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Celeun · Stern",
+              "Gelber Zwerg (G6 V)"
+            ],
+            [
+              "Celeun I · 0,42 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Vessarin · 0,93 AE",
+              "Ozeanplanet"
+            ],
+            [
+              "Celeun III · 1,7 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Celeun IV · 6 AE",
+              "Gasriese"
+            ],
+            [
+              "Celeun V · 16 AE",
+              "Eisriese"
+            ],
+            [
+              "Perlgürtel · 2,5–3,3 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 40–56 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Celeun",
+              "inhalte/himmelskoerper/sterne/details/celeun/hauptseite/index.html"
+            ],
+            [
+              "Celeun I",
+              "inhalte/himmelskoerper/planeten/details/celeun-i/hauptseite/index.html"
+            ],
+            [
+              "Vessarin",
+              "inhalte/himmelskoerper/planeten/details/vessarin/hauptseite/index.html"
+            ],
+            [
+              "Celeun III",
+              "inhalte/himmelskoerper/planeten/details/celeun-iii/hauptseite/index.html"
+            ],
+            [
+              "Celeun IV",
+              "inhalte/himmelskoerper/planeten/details/celeun-iv/hauptseite/index.html"
+            ],
+            [
+              "Celeun V",
+              "inhalte/himmelskoerper/planeten/details/celeun-v/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Bahnen": {
+      "gruppe": "Wissenschaft",
+      "icon": "◌",
+      "intro": "Bahnen von Perlgürtel.",
+      "abschnitte": [
+        {
+          "titel": "Lage",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Celeun"
+            ],
+            [
+              "Ausdehnung",
+              "2,5–3,25 AE"
+            ]
+          ]
+        }
+      ]
+    },
+    "Stabilität": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚖",
+      "intro": "Stabilität von Perlgürtel.",
+      "abschnitte": [
+        {
+          "titel": "Stabilität",
+          "text": [
+            "Die Brocken von Perlgürtel bewegen sich auf stabilen Bahnen zwischen den Planeten; Resonanzen mit den großen Planeten formen die Ränder des Gebiets."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Perlgürtel auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Perlgürtel",
+          "text": [
+            "Der Perlgürtel zwischen 2,5 und 3,25 AE enthält viele helle, wasserreiche Brocken.",
+            "Perlgürtel umgibt Celeun im Celeun-System."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Asteroidengürtel"
+            ],
+            [
+              "Sternsystem",
+              "Celeun-System"
+            ],
+            [
+              "Zentralkörper",
+              "Celeun"
+            ],
+            [
+              "Ausdehnung",
+              "2,5–3,25 AE"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Vessarin",
+          "text": [
+            "Das Celeun-System ist die Heimat der Thalassoiden: Ihr Planet Vessarin umkreist Celeun."
+          ],
+          "verweise": [
+            [
+              "Vessarin",
+              "inhalte/himmelskoerper/planeten/details/vessarin/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Thalassoiden",
+              "inhalte/spezies/Biologische Spezies/Thalassoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Perlgürtel im Celeun-System.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Celeun · Stern",
+              "Gelber Zwerg (G6 V)"
+            ],
+            [
+              "Celeun I · 0,42 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Vessarin · 0,93 AE",
+              "Ozeanplanet"
+            ],
+            [
+              "Celeun III · 1,7 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Celeun IV · 6 AE",
+              "Gasriese"
+            ],
+            [
+              "Celeun V · 16 AE",
+              "Eisriese"
+            ],
+            [
+              "Perlgürtel · 2,5–3,3 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 40–56 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Celeun",
+              "inhalte/himmelskoerper/sterne/details/celeun/hauptseite/index.html"
+            ],
+            [
+              "Celeun I",
+              "inhalte/himmelskoerper/planeten/details/celeun-i/hauptseite/index.html"
+            ],
+            [
+              "Vessarin",
+              "inhalte/himmelskoerper/planeten/details/vessarin/hauptseite/index.html"
+            ],
+            [
+              "Celeun III",
+              "inhalte/himmelskoerper/planeten/details/celeun-iii/hauptseite/index.html"
+            ],
+            [
+              "Celeun IV",
+              "inhalte/himmelskoerper/planeten/details/celeun-iv/hauptseite/index.html"
+            ],
+            [
+              "Celeun V",
+              "inhalte/himmelskoerper/planeten/details/celeun-v/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Umgebung": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Umgebung von Perlgürtel.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Celeun · Stern",
+              "Gelber Zwerg (G6 V)"
+            ],
+            [
+              "Celeun I · 0,42 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Vessarin · 0,93 AE",
+              "Ozeanplanet"
+            ],
+            [
+              "Celeun III · 1,7 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Celeun IV · 6 AE",
+              "Gasriese"
+            ],
+            [
+              "Celeun V · 16 AE",
+              "Eisriese"
+            ],
+            [
+              "Perlgürtel · 2,5–3,3 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 40–56 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Celeun",
+              "inhalte/himmelskoerper/sterne/details/celeun/hauptseite/index.html"
+            ],
+            [
+              "Celeun I",
+              "inhalte/himmelskoerper/planeten/details/celeun-i/hauptseite/index.html"
+            ],
+            [
+              "Vessarin",
+              "inhalte/himmelskoerper/planeten/details/vessarin/hauptseite/index.html"
+            ],
+            [
+              "Celeun III",
+              "inhalte/himmelskoerper/planeten/details/celeun-iii/hauptseite/index.html"
+            ],
+            [
+              "Celeun IV",
+              "inhalte/himmelskoerper/planeten/details/celeun-iv/hauptseite/index.html"
+            ],
+            [
+              "Celeun V",
+              "inhalte/himmelskoerper/planeten/details/celeun-v/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Perlgürtel.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Perlgürtel besteht aus Material, das sich bei der Entstehung des Celeun-Systems nicht zu einem Planeten vereinte."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Perlgürtel.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Wie viel Masse enthält das Gebiet insgesamt?",
+            "Welche Resonanzen formen seine Ränder?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Perlgürtel ist mit allen Bahndaten im Celeun-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=vessarin-stern&objekt=vessarin-perlgurtel"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Perlgürtel.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Der Perlgürtel zwischen 2,5 und 3,25 AE enthält viele helle, wasserreiche Brocken."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Perlgürtel.",
+      "abschnitte": [
+        {
+          "titel": "Perlgürtel – Archivbild",
+          "bild": true,
+          "bildtext": "Perlgürtel"
+        }
+      ]
+    }
+  }
+}

@@ -3,9 +3,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#0a1108">
-    <meta name="description" content="Spielintegration der Meta Morphen im APORIA-Weltenarchiv.">
-    <title>Spielintegration · Meta Morphen · APORIA</title>
+    <meta name="theme-color" content="#0b0709">
+    <meta name="description" content="Spielintegration der Metamorphen im APORIA-Weltenarchiv.">
+    <title>Spielintegration · Metamorphen · APORIA</title>
     <link rel="stylesheet" href="../../../../../Men%C3%BCs/TopBar/Top_bar.css">
     <link rel="stylesheet" href="../../../../../Men%C3%BCs/Side_bar/Side_bar.css">
     <link rel="stylesheet" href="../../../_gemeinsam/bilder-karussell.css">
@@ -13,23 +13,23 @@
     <link rel="stylesheet" href="gameplay.css">
     <script type="module" src="gameplay.js"></script>
 </head>
-<body class="metamorphen st-gameplay" data-page="spezies-biological-18-gameplay" data-section="spezies">
+<body class="metamorphen mm-gameplay" data-page="spezies-biological-18-gameplay" data-section="spezies">
     <div data-aporia-topbar></div>
-    <div class="aporia-page-frame st-frame">
+    <div class="aporia-page-frame mm-frame">
         <div data-aporia-sidebar></div>
-        <main class="st-dossier" id="inhalt">
-            <header class="st-hero st-hero--reiter">
-                
-                <span class="st-glanz" aria-hidden="true"></span>
-                <div class="st-hero-text">
-                    <nav class="st-pfad" aria-label="Archivpfad"><a data-route="spezies" href="../../../Spezies_%C3%BCbersicht/Spezies.html">Spezies</a><span aria-hidden="true">›</span><a data-route="spezies-biological" href="../../%C3%9Cbersichtsseite%20biologische%20spezies/Uebersicht.html">Biologische Spezies</a><span aria-hidden="true">›</span><a data-route="spezies-biological-18" href="../hauptseite/Spezies.html">Meta Morphen</a><span aria-hidden="true">›</span><span aria-current="page">Spielintegration</span></nav>
-                    <p class="st-kicker">Meta Morphen · Hauptreiter</p>
+        <main class="mm-dossier" id="inhalt">
+            <header class="mm-hero mm-hero--reiter">
+                <img class="mm-hero-bild" src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Meta%20Morphen/gesamtdarstellung/MetamorphendesignA4%281%29.png" alt="" fetchpriority="high" decoding="async">
+                <span class="mm-glanz" aria-hidden="true"></span>
+                <div class="mm-hero-text">
+                    <nav class="mm-pfad" aria-label="Archivpfad"><a data-route="spezies" href="../../../Spezies_%C3%BCbersicht/Spezies.html">Spezies</a><span aria-hidden="true">›</span><a data-route="spezies-biological" href="../../%C3%9Cbersichtsseite%20biologische%20spezies/Uebersicht.html">Biologische Spezies</a><span aria-hidden="true">›</span><a data-route="spezies-biological-18" href="../hauptseite/Spezies.html">Metamorphen</a><span aria-hidden="true">›</span><span aria-current="page">Spielintegration</span></nav>
+                    <p class="mm-kicker">Metamorphen · Hauptreiter</p>
                     <h1>Spielintegration</h1>
-                    <p class="st-unterzeile">Spielmechaniken und Interaktion</p>
+                    <p class="mm-unterzeile">Körperinventar, Körperwechsel und Fremdkopplung im Spiel</p>
                 </div>
             </header>
-            <nav class="st-reiter" aria-label="Hauptreiter der Meta Morphen">
-                <a href="../hauptseite/Spezies.html" data-route="spezies-biological-18"><span aria-hidden="true">◆</span>Übersicht</a>
+            <nav class="mm-reiter" aria-label="Hauptreiter der Metamorphen">
+                <a href="../hauptseite/Spezies.html" data-route="spezies-biological-18"><span aria-hidden="true">◎</span>Übersicht</a>
                 <a href="../Unterseiten/Allgemeines/allgemeines.html" data-route="spezies-biological-18-allgemeines"><span aria-hidden="true">ⓘ</span>Allgemeines</a>
                 <a href="../Unterseiten/Biologie/biologie.html" data-route="spezies-biological-18-biologie"><span aria-hidden="true">⟡</span>Biologie</a>
                 <a href="../Unterseiten/Entwicklung/entwicklung.html" data-route="spezies-biological-18-entwicklung"><span aria-hidden="true">⤳</span>Entwicklung</a>
@@ -40,36 +40,565 @@
                 <a href="gameplay.html" data-route="spezies-biological-18-gameplay" aria-current="page"><span aria-hidden="true">◈</span>Spielintegration</a>
                 <a href="../Forschung/forschung.html" data-route="spezies-biological-18-forschung"><span aria-hidden="true">⚗</span>Forschung</a>
                 <a href="../Unterseiten/Medien/medien.html" data-route="spezies-biological-18-medien"><span aria-hidden="true">▣</span>Medien</a>
-            </nav>
-            <div class="st-layout">
-                <div class="st-inhalt">
-                    <details class="st-panel st-karte" id="noch-offen" open>
-                        <summary><span class="st-nr">…</span><h2>Spielintegration</h2><span class="st-chevron" aria-hidden="true"></span></summary>
-                        <div class="st-text">
-                            <p class="st-offen">Noch nicht ausgearbeitet.</p>
-                            <p class="st-quelle">Vorgesehene Infodateien (noch ohne Text): Gameplay/.gitkeep</p>
+            <a href="../Unterseiten/Technologien/technologien.html" data-route="spezies-biological-18-technologien">Technologien</a>
+</nav>
+            <div class="mm-layout">
+                <div class="mm-inhalt">
+                    <details class="mm-panel mm-karte" id="k-8-1-grundlegende-spielrolle">
+                        <summary><span class="mm-nr">8.1</span><h2>Grundlegende Spielrolle</h2><span class="mm-chevron" aria-hidden="true"></span></summary>
+                        <div class="mm-text">
+                            <p>Die Metamorphen sind eine intelligente, gesellschaftlich eigenständige Spezies innerhalb des APORIA-Universums.</p>
+                            <p>In „Unter fremden Kronen“ können sie als Bewohner, Wissenschaftler, Händler, politische Vertreter, Begleiter, Verbündete oder Gegner auftreten.</p>
+                            <p>Ihre besondere Fähigkeit besteht im Wechsel zwischen verschiedenen biologischen Körpern.</p>
+                            <p>Die äußere Gestalt bestimmt nicht automatisch ihre gesellschaftliche oder spielerische Rolle.</p>
+                            <p>Ein riesiges, monströs wirkendes Individuum kann ein friedlicher Wissenschaftler sein.</p>
+                            <p>Ein kleiner und unauffälliger Körper kann dagegen von einem gefährlichen Charakter verwendet werden.</p>
+                            <p class="mm-quelle">Quelle: Info_material · Metamorphen · Gameplay/.gitkeep</p>
                         </div>
                     </details>
-                    
-                    <aside class="st-panel st-block st-links" aria-label="Verknüpfungen">
-                    <h2 class="st-h2">Verknüpfungen</h2>
+                    <details class="mm-panel mm-karte" id="k-8-2-personliche-identitat">
+                        <summary><span class="mm-nr">8.2</span><h2>Persönliche Identität</h2><span class="mm-chevron" aria-hidden="true"></span></summary>
+                        <div class="mm-text">
+                            <p>Jeder Metamorph besitzt eine dauerhafte individuelle Identität.</p>
+                            <p>Diese bleibt unabhängig vom verwendeten Körper erhalten.</p>
+                            <p>Ein Körperwechsel verändert weder die Persönlichkeit noch bereits erworbenes Wissen.</p>
+                            <p>Bestehende Beziehungen, politische Zugehörigkeiten und Questzustände bleiben mit der Person verbunden.</p>
+                            <p>Ein einzelner Metamorph kann dadurch im Spiel in sehr unterschiedlichen Erscheinungsformen auftreten.</p>
+                            <p class="mm-quelle">Quelle: Info_material · Metamorphen · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="mm-panel mm-karte" id="k-8-3-eigenkorperwechsel">
+                        <summary><span class="mm-nr">8.3</span><h2>Eigenkörperwechsel</h2><span class="mm-chevron" aria-hidden="true"></span></summary>
+                        <div class="mm-text">
+                            <p>Der Körperwechsel ermöglicht die Steuerung verschiedener eigener biologischer Körper.</p>
+                            <p>Jeder Körper besitzt eigene physische Eigenschaften.</p>
+                            <p>Dazu gehören Bewegungsart, Widerstandsfähigkeit, Körpermasse, Sinnesorgane und Umweltverträglichkeit.</p>
+                            <p>Der Wechsel benötigt einen vorhandenen funktionsfähigen Zielkörper.</p>
+                            <p>Zusätzlich muss eine geeignete neurologische Verbindung bestehen.</p>
+                            <p class="mm-quelle">Quelle: Info_material · Metamorphen · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="mm-panel mm-karte" id="k-8-4-biologischer-korperwechsel">
+                        <summary><span class="mm-nr">8.4</span><h2>Biologischer Körperwechsel</h2><span class="mm-chevron" aria-hidden="true"></span></summary>
+                        <div class="mm-text">
+                            <p>Ohne moderne technische Unterstützung funktioniert der Körperwechsel vor allem über geeignete biologische Kontakte.</p>
+                            <p>Der Bewusstseinskern kann einen vorbereiteten Eigenkörper übernehmen, wenn dessen neurologische Schnittstelle erreichbar ist.</p>
+                            <p>Natürliche Verbindungen besitzen begrenzte Reichweiten.</p>
+                            <p>Für räumlich entfernte Körper sind technische Kommunikationssysteme erforderlich.</p>
+                            <p class="mm-quelle">Quelle: Info_material · Metamorphen · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="mm-panel mm-karte" id="k-8-5-technische-fernsteuerung">
+                        <summary><span class="mm-nr">8.5</span><h2>Technische Fernsteuerung</h2><span class="mm-chevron" aria-hidden="true"></span></summary>
+                        <div class="mm-text">
+                            <p>Fortgeschrittene Metamorphen können entfernte Eigenkörper über technische Relais steuern.</p>
+                            <p>Die Verbindung muss ausreichend stabil sein.</p>
+                            <p>Signalverzögerungen können die Bewegungssteuerung beeinträchtigen.</p>
+                            <p>Bei größeren Distanzen übernehmen lokale Nervensysteme oder technische Assistenzsysteme bestimmte Aufgaben selbstständig.</p>
+                            <p>Eine unmittelbare interstellare Echtzeitsteuerung ist keine natürliche Fähigkeit.</p>
+                            <p class="mm-quelle">Quelle: Info_material · Metamorphen · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="mm-panel mm-karte" id="k-8-6-korpergruppen">
+                        <summary><span class="mm-nr">8.6</span><h2>Körpergruppen</h2><span class="mm-chevron" aria-hidden="true"></span></summary>
+                        <div class="mm-text">
+                            <h3>Bewegungsformen</h3>
+                            <p>Vielseitige Körper für alltägliche Tätigkeiten.</p>
+                            <p>Sie ermöglichen unterschiedliche Bewegungsarten und allgemeine Interaktion.</p>
+                            <h3>Panzerformen</h3>
+                            <p>Körper mit hoher Widerstandsfähigkeit und großer körperlicher Kraft.</p>
+                            <p>Sie besitzen hohen Energiebedarf und benötigen viel Platz.</p>
+                            <h3>Radialformen</h3>
+                            <p>Körper mit mehreren Greif- und Bewegungsorganen.</p>
+                            <p>Sie ermöglichen komplexe Interaktionen mit ihrer Umgebung.</p>
+                            <h3>Langgliedformen</h3>
+                            <p>Körper für erhöhte Landschaftsbereiche und stark gegliedertes Gelände.</p>
+                            <p>Sie können Hindernisse auf besondere Weise überwinden.</p>
+                            <h3>Aquatische Formen</h3>
+                            <p>Wasserangepasste Körper für Unterwassererkundung.</p>
+                            <p>Ihre Nutzung hängt von Wasserchemie und Umweltbedingungen ab.</p>
+                            <h3>Klein- und Sensorformen</h3>
+                            <p>Kompakte Körper mit spezialisierten Sinnesleistungen.</p>
+                            <p>Sie eignen sich besonders für Forschung, Erkundung und präzise Aufgaben.</p>
+                            <p class="mm-quelle">Quelle: Info_material · Metamorphen · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="mm-panel mm-karte" id="k-8-7-monstrose-grosskorper">
+                        <summary><span class="mm-nr">8.7</span><h2>Monströse Großkörper</h2><span class="mm-chevron" aria-hidden="true"></span></summary>
+                        <div class="mm-text">
+                            <p>Einige Metamorphen besitzen außergewöhnlich große Eigenkörper.</p>
+                            <p>Diese können erhebliche mechanische Kräfte ausüben und schwere Belastungen ertragen.</p>
+                            <p>Sie benötigen jedoch viel Nahrung, geeignete Infrastruktur und ausreichend große Bewegungsräume.</p>
+                            <p>In engen Gebäuden oder Höhlen sind sie häufig nicht einsetzbar.</p>
+                            <p>Auch der Transport großer Körper ist aufwendig.</p>
+                            <p>Ein Großkörper stellt deshalb keine universell überlegene Körperform dar.</p>
+                            <p class="mm-quelle">Quelle: Info_material · Metamorphen · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="mm-panel mm-karte" id="k-8-8-korperinventar">
+                        <summary><span class="mm-nr">8.8</span><h2>Körperinventar</h2><span class="mm-chevron" aria-hidden="true"></span></summary>
+                        <div class="mm-text">
+                            <p>Ein Metamorph besitzt ein eigenes biologisches Körperinventar.</p>
+                            <p>Dieses enthält Informationen über sämtliche verfügbaren Eigenkörper.</p>
+                            <p>Wichtige Eigenschaften sind:</p>
+                            <ul><li>Körperidentität.</li><li>Anatomischer Bauplan.</li><li>Körpergröße.</li><li>Körpermasse.</li><li>Gesundheitszustand.</li><li>Stoffwechselzustand.</li><li>Verbindungsqualität.</li><li>Räumlicher Standort.</li><li>Entwicklungszustand.</li><li>Verfügbare Sinnesleistungen.</li><li>Bewegungsfähigkeiten.</li><li>Benötigte Umweltbedingungen.</li></ul>
+                            <p class="mm-quelle">Quelle: Info_material · Metamorphen · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="mm-panel mm-karte" id="k-8-9-korperentwicklung">
+                        <summary><span class="mm-nr">8.9</span><h2>Körperentwicklung</h2><span class="mm-chevron" aria-hidden="true"></span></summary>
+                        <div class="mm-text">
+                            <p>Neue Eigenkörper entstehen aus Somakeimen.</p>
+                            <p>Sie benötigen eine biologische Wachstumsphase.</p>
+                            <p>Kleine Körper können vergleichsweise schnell entstehen.</p>
+                            <p>Große Körper benötigen wesentlich längere Entwicklungszeiten.</p>
+                            <p>Der Wachstumsprozess kann durch medizinische Versorgung und Forschung unterstützt werden.</p>
+                            <p>Vollständig beliebige neue Körperformen können nicht erzeugt werden.</p>
+                            <p class="mm-quelle">Quelle: Info_material · Metamorphen · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="mm-panel mm-karte" id="k-8-10-korperversorgung">
+                        <summary><span class="mm-nr">8.10</span><h2>Körperversorgung</h2><span class="mm-chevron" aria-hidden="true"></span></summary>
+                        <div class="mm-text">
+                            <p>Alle Eigenkörper benötigen eine angemessene Versorgung.</p>
+                            <p>Aktive Körper verbrauchen abhängig von Tätigkeit und Anatomie unterschiedliche Energiemengen.</p>
+                            <p>Ruhende Körper benötigen weiterhin grundlegende Stoffwechselressourcen.</p>
+                            <p>Wird die Versorgung unterbrochen, können gesundheitliche Schäden entstehen.</p>
+                            <p>Große Körper benötigen entsprechend umfangreiche Versorgungseinrichtungen.</p>
+                            <p class="mm-quelle">Quelle: Info_material · Metamorphen · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="mm-panel mm-karte" id="k-8-11-der-bewusstseinskern">
+                        <summary><span class="mm-nr">8.11</span><h2>Der Bewusstseinskern</h2><span class="mm-chevron" aria-hidden="true"></span></summary>
+                        <div class="mm-text">
+                            <p>Der Bewusstseinskern ist die wichtigste lebenswichtige Struktur des Metamorphen.</p>
+                            <p>Er muss dauerhaft geschützt und versorgt werden.</p>
+                            <p>Der Kern kann sich in einem natürlichen Trägerkörper, einem mobilen Kernträger oder einer stationären Versorgungseinrichtung befinden.</p>
+                            <p>Ein Körperwechsel allein verlagert den Bewusstseinskern nicht.</p>
+                            <p>Ein physischer Ortswechsel des Kerns benötigt einen geeigneten Transport.</p>
+                            <p class="mm-quelle">Quelle: Info_material · Metamorphen · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="mm-panel mm-karte" id="k-8-12-kernhauser">
+                        <summary><span class="mm-nr">8.12</span><h2>Kernhäuser</h2><span class="mm-chevron" aria-hidden="true"></span></summary>
+                        <div class="mm-text">
+                            <p>Kernhäuser dienen als besonders geschützte Standorte für Bewusstseinskerne.</p>
+                            <p>Sie besitzen biologische Versorgungssysteme, medizinische Einrichtungen und neurologische Kommunikationsanlagen.</p>
+                            <p>Einige sind öffentlich zugänglich.</p>
+                            <p>Andere werden von Familien, Gemeinschaften oder politischen Institutionen betrieben.</p>
+                            <p>Im Gameplay können Kernhäuser wichtige soziale, wirtschaftliche und medizinische Einrichtungen darstellen.</p>
+                            <p class="mm-quelle">Quelle: Info_material · Metamorphen · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="mm-panel mm-karte" id="k-8-13-mobile-kerntrager">
+                        <summary><span class="mm-nr">8.13</span><h2>Mobile Kernträger</h2><span class="mm-chevron" aria-hidden="true"></span></summary>
+                        <div class="mm-text">
+                            <p>Mobile Kernträger ermöglichen Reisen mit dem zentralen Bewusstseinskern.</p>
+                            <p>Sie benötigen Energie, Nährstoffversorgung und geeignete Schutzsysteme.</p>
+                            <p>Ein beschädigter Kernträger kann die Überlebensfähigkeit des Metamorphen gefährden.</p>
+                            <p>Die Nutzung mobiler Kernträger ermöglicht unterschiedliche Lebensweisen und besondere Erkundungsmechaniken.</p>
+                            <p class="mm-quelle">Quelle: Info_material · Metamorphen · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="mm-panel mm-karte" id="k-8-14-verlust-eines-eigenkorpers">
+                        <summary><span class="mm-nr">8.14</span><h2>Verlust eines Eigenkörpers</h2><span class="mm-chevron" aria-hidden="true"></span></summary>
+                        <div class="mm-text">
+                            <p>Wird ein Eigenkörper zerstört, bleibt der Metamorph unter geeigneten Bedingungen am Leben.</p>
+                            <p>Der Verlust kann jedoch neurologische Stressreaktionen und andere gesundheitliche Folgen verursachen.</p>
+                            <p>Ein neuer Körper muss anschließend aus einem Somakeim entwickelt werden.</p>
+                            <p>Der Ersatz erfolgt nicht unmittelbar.</p>
+                            <p>Die Verluste können außerdem wirtschaftliche und emotionale Bedeutung besitzen.</p>
+                            <p class="mm-quelle">Quelle: Info_material · Metamorphen · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="mm-panel mm-karte" id="k-8-15-tod-des-bewusstseinskerns">
+                        <summary><span class="mm-nr">8.15</span><h2>Tod des Bewusstseinskerns</h2><span class="mm-chevron" aria-hidden="true"></span></summary>
+                        <div class="mm-text">
+                            <p>Wird der zentrale Bewusstseinskern irreversibel zerstört, stirbt der Metamorph.</p>
+                            <p>Die Existenz zusätzlicher Eigenkörper verhindert diesen Tod nicht.</p>
+                            <p>Diese Regel ist entscheidend, um die Spezies trotz ihrer ungewöhnlichen Körperorganisation sterblich zu halten.</p>
+                            <p class="mm-quelle">Quelle: Info_material · Metamorphen · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="mm-panel mm-karte" id="k-8-16-fremdkorperubernahme">
+                        <summary><span class="mm-nr">8.16</span><h2>Fremdkörperübernahme</h2><span class="mm-chevron" aria-hidden="true"></span></summary>
+                        <div class="mm-text">
+                            <p>Metamorphen können geeignete fremde biologische Organismen neurologisch steuern.</p>
+                            <p>Dafür müssen passende Schnittstellen bestehen.</p>
+                            <p>Natürlich kompatible Organismen können unter geeigneten Bedingungen direkt gekoppelt werden.</p>
+                            <p>Bei anderen Organismen sind technische oder medizinische Anpassungen notwendig.</p>
+                            <p>Die Nutzung fremder Körper bleibt biologisch begrenzt.</p>
+                            <p class="mm-quelle">Quelle: Info_material · Metamorphen · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="mm-panel mm-karte" id="k-8-17-freiwillige-fremdkopplung">
+                        <summary><span class="mm-nr">8.17</span><h2>Freiwillige Fremdkopplung</h2><span class="mm-chevron" aria-hidden="true"></span></summary>
+                        <div class="mm-text">
+                            <p>Bei bewusstseinsfähigen Wirten ist freiwillige Kooperation möglich.</p>
+                            <p>Die beteiligten Individuen können bestimmte Sinnes- oder Bewegungsfunktionen gemeinsam nutzen.</p>
+                            <p>Beide bleiben rechtlich und biologisch eigenständige Personen.</p>
+                            <p>Solche Verbindungen können bei medizinischen Behandlungen, Forschung und besonderen gemeinsamen Aufgaben vorkommen.</p>
+                            <p class="mm-quelle">Quelle: Info_material · Metamorphen · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="mm-panel mm-karte" id="k-8-18-erzwungene-ubernahmen">
+                        <summary><span class="mm-nr">8.18</span><h2>Erzwungene Übernahmen</h2><span class="mm-chevron" aria-hidden="true"></span></summary>
+                        <div class="mm-text">
+                            <p>Illegale neurologische Übernahmen können als seltene kriminelle Handlungen oder erzählerische Ereignisse vorkommen.</p>
+                            <p>Sie setzen besondere biologische oder technische Voraussetzungen voraus.</p>
+                            <p>Der ursprüngliche Wirt wird nicht automatisch bewusstlos oder willenlos.</p>
+                            <p>Eine gewaltsame Kontrolle kann medizinische Schäden verursachen.</p>
+                            <p>Die Fähigkeit ist deshalb keine gewöhnliche unbegrenzt verfügbare Standardhandlung.</p>
+                            <p class="mm-quelle">Quelle: Info_material · Metamorphen · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="mm-panel mm-karte" id="k-8-19-neurologische-kompatibilitat">
+                        <summary><span class="mm-nr">8.19</span><h2>Neurologische Kompatibilität</h2><span class="mm-chevron" aria-hidden="true"></span></summary>
+                        <div class="mm-text">
+                            <p>Nicht jeder fremde Organismus ist für eine Kopplung geeignet.</p>
+                            <p>Entscheidende Faktoren sind:</p>
+                            <ul><li>Aufbau des Nervensystems.</li><li>Signalverarbeitung.</li><li>Biochemische Verträglichkeit.</li><li>Vorhandene Kontaktorgane.</li><li>Immunologische Reaktionen.</li><li>Erforderliche Steuerungsbandbreite.</li><li>Stabilität der Verbindung.</li></ul>
+                            <p>Eine hohe wissenschaftliche Kenntnis des Zielorganismus kann die Anpassung erleichtern.</p>
+                            <p class="mm-quelle">Quelle: Info_material · Metamorphen · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="mm-panel mm-karte" id="k-8-20-sensorische-besonderheiten">
+                        <summary><span class="mm-nr">8.20</span><h2>Sensorische Besonderheiten</h2><span class="mm-chevron" aria-hidden="true"></span></summary>
+                        <div class="mm-text">
+                            <p>Unterschiedliche Körperformen ermöglichen verschiedene Wahrnehmungsarten.</p>
+                            <p>Ein aquatischer Körper kann Strömungen erkennen.</p>
+                            <p>Ein Grabkörper kann über Vibrationsrezeptoren Bewegungen im Untergrund wahrnehmen.</p>
+                            <p>Ein spezialisierter Sensorkörper kann bestimmte chemische oder elektrische Signale erfassen.</p>
+                            <p>Diese Wahrnehmungen sind an die jeweiligen biologischen Organe gebunden.</p>
+                            <p class="mm-quelle">Quelle: Info_material · Metamorphen · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="mm-panel mm-karte" id="k-8-21-neurologische-eingewohnung">
+                        <summary><span class="mm-nr">8.21</span><h2>Neurologische Eingewöhnung</h2><span class="mm-chevron" aria-hidden="true"></span></summary>
+                        <div class="mm-text">
+                            <p>Ein neuer Körper muss nicht sofort vollständig beherrscht werden.</p>
+                            <p>Besonders ungewöhnliche Bewegungs- und Sinnesorgane benötigen Training.</p>
+                            <p>Ein Metamorph kann sich im Laufe der Zeit an unterschiedliche Körperformen gewöhnen.</p>
+                            <p>Die Geschwindigkeit dieser Anpassung hängt von individueller Erfahrung und neurologischer Leistungsfähigkeit ab.</p>
+                            <p class="mm-quelle">Quelle: Info_material · Metamorphen · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="mm-panel mm-karte" id="k-8-22-krankheiten-und-verletzungen">
+                        <summary><span class="mm-nr">8.22</span><h2>Krankheiten und Verletzungen</h2><span class="mm-chevron" aria-hidden="true"></span></summary>
+                        <div class="mm-text">
+                            <p>Metamorphen können unterschiedliche körperliche und neurologische Erkrankungen entwickeln.</p>
+                            <p>Einzelne Eigenkörper können verletzt werden.</p>
+                            <p>Auch Kopplungsorgane können beschädigt sein.</p>
+                            <p>Besonders gefährlich sind Erkrankungen des Bewusstseinskerns.</p>
+                            <p>Medizinische Forschung und Versorgung spielen deshalb im Gameplay eine wichtige Rolle.</p>
+                            <p class="mm-quelle">Quelle: Info_material · Metamorphen · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="mm-panel mm-karte" id="k-8-23-gesellschaftliches-verhalten">
+                        <summary><span class="mm-nr">8.23</span><h2>Gesellschaftliches Verhalten</h2><span class="mm-chevron" aria-hidden="true"></span></summary>
+                        <div class="mm-text">
+                            <p>Metamorphen-NPCs sollen sich entsprechend ihrer Persönlichkeit, Kultur und Situation verhalten.</p>
+                            <p>Monströse Körperformen sind nicht automatisch aggressiv.</p>
+                            <p>Ein großer Panzerkörper kann friedlich mit anderen Bewohnern interagieren.</p>
+                            <p>Ein kleiner Körper kann dagegen feindselige Absichten besitzen.</p>
+                            <p>Die tatsächliche Gesinnung muss unabhängig von der Anatomie bestimmt werden.</p>
+                            <p class="mm-quelle">Quelle: Info_material · Metamorphen · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="mm-panel mm-karte" id="k-8-24-npc-korperwechsel">
+                        <summary><span class="mm-nr">8.24</span><h2>NPC-Körperwechsel</h2><span class="mm-chevron" aria-hidden="true"></span></summary>
+                        <div class="mm-text">
+                            <p>NPCs können situationsabhängig andere Eigenkörper verwenden.</p>
+                            <p>Ein Händler kann beispielsweise in einer Stadt einen vielseitigen Bewegungs- oder Kommunikationskörper nutzen.</p>
+                            <p>Später kann derselbe Charakter mit einem anderen Körper eine Expedition begleiten.</p>
+                            <p>Die persönliche Identität bleibt erhalten.</p>
+                            <p>Beziehungen und Questzustände dürfen durch den Körperwechsel nicht verloren gehen.</p>
+                            <p class="mm-quelle">Quelle: Info_material · Metamorphen · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="mm-panel mm-karte" id="k-8-25-wiedererkennung">
+                        <summary><span class="mm-nr">8.25</span><h2>Wiedererkennung</h2><span class="mm-chevron" aria-hidden="true"></span></summary>
+                        <div class="mm-text">
+                            <p>Die äußere Körperform eines Metamorphen kann sich vollständig verändern.</p>
+                            <p>Deshalb können Spieler dieselbe Person in unterschiedlichen Gestalten antreffen.</p>
+                            <p>Eine Wiedererkennung kann über persönliche Verhaltensweisen, Kommunikation oder technische Identitätsprüfung erfolgen.</p>
+                            <p>Diese Besonderheit ermöglicht ungewöhnliche Begegnungen und erzählerische Situationen.</p>
+                            <p class="mm-quelle">Quelle: Info_material · Metamorphen · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="mm-panel mm-karte" id="k-8-26-gesellschaftliche-interaktionen">
+                        <summary><span class="mm-nr">8.26</span><h2>Gesellschaftliche Interaktionen</h2><span class="mm-chevron" aria-hidden="true"></span></summary>
+                        <div class="mm-text">
+                            <p>Die unterschiedlichen politischen Großgemeinschaften besitzen eigene Regeln und kulturelle Besonderheiten.</p>
+                            <p>Spieler können in Kernstädten, Gezeitensiedlungen, Hochlandregionen und unterirdischen Gemeinschaften auf unterschiedliche gesellschaftliche Strukturen treffen.</p>
+                            <p>Einige Regionen erlauben offene Handelsbeziehungen.</p>
+                            <p>Andere besitzen strenge Zugangsbeschränkungen.</p>
+                            <p class="mm-quelle">Quelle: Info_material · Metamorphen · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="mm-panel mm-karte" id="k-8-27-heimatwelt-erkundung">
+                        <summary><span class="mm-nr">8.27</span><h2>Heimatwelt-Erkundung</h2><span class="mm-chevron" aria-hidden="true"></span></summary>
+                        <div class="mm-text">
+                            <p>Karynth bietet umfangreiche Erkundungsmöglichkeiten.</p>
+                            <p>Dazu gehören:</p>
+                            <ul><li>Große Gezeitenlandschaften.</li><li>Dichte fremdartige Wälder.</li><li>Ausgedehnte Höhlensysteme.</li><li>Unterirdische Seen.</li><li>Vulkanische Inselketten.</li><li>Zerklüftete Hochländer.</li><li>Geschützte Ursprungsgebiete.</li><li>Alte Kernstädte.</li><li>Ruinen früherer Hochgesellschaften.</li><li>Historische Körperkriegsgebiete.</li></ul>
+                            <p class="mm-quelle">Quelle: Info_material · Metamorphen · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="mm-panel mm-karte" id="k-8-28-biologische-umweltgefahren">
+                        <summary><span class="mm-nr">8.28</span><h2>Biologische Umweltgefahren</h2><span class="mm-chevron" aria-hidden="true"></span></summary>
+                        <div class="mm-text">
+                            <p>Einige Regionen Karynths besitzen besondere Gefahren.</p>
+                            <p>Dazu gehören Stürme, Überschwemmungen, instabile Höhlen, Vulkanismus und gefährliche Tierarten.</p>
+                            <p>Nicht jede Tierart stellt automatisch eine Bedrohung dar.</p>
+                            <p>Die Gefährlichkeit ergibt sich aus Umweltbedingungen, Verhalten und biologischen Eigenschaften.</p>
+                            <p>Geeignete Körperformen können bei der Erkundung Vorteile bieten.</p>
+                            <p class="mm-quelle">Quelle: Info_material · Metamorphen · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="mm-panel mm-karte" id="k-8-30-historische-missionen">
+                        <summary><span class="mm-nr">8.30</span><h2>Historische Missionen</h2><span class="mm-chevron" aria-hidden="true"></span></summary>
+                        <div class="mm-text">
+                            <p>Die lange Geschichte Karynths ermöglicht zahlreiche historische Missionen.</p>
+                            <p>Besonders bedeutend sind die Körperkriege und die Stille der Netze.</p>
+                            <p>Alte Kommunikationsanlagen, aufgegebene Kernhäuser und zerstörte Städte können erkundet werden.</p>
+                            <p>Historische Archive liefern Informationen über die Entwicklung der Metamorphen-Zivilisation.</p>
+                            <p class="mm-quelle">Quelle: Info_material · Metamorphen · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="mm-panel mm-karte" id="k-8-31-biologische-expeditionen">
+                        <summary><span class="mm-nr">8.31</span><h2>Biologische Expeditionen</h2><span class="mm-chevron" aria-hidden="true"></span></summary>
+                        <div class="mm-text">
+                            <p>Spieler können an Expeditionen zur Erforschung der Neurokontaktfauna teilnehmen.</p>
+                            <p>Dabei werden seltene Arten untersucht und besondere biologische Anpassungen dokumentiert.</p>
+                            <p>Einige Forschungsgebiete befinden sich in geschützten Ursprungsregionen.</p>
+                            <p>Die Erkundung kann besondere Genehmigungen oder diplomatische Beziehungen erfordern.</p>
+                            <p class="mm-quelle">Quelle: Info_material · Metamorphen · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="mm-panel mm-karte" id="k-8-32-politische-missionen">
+                        <summary><span class="mm-nr">8.32</span><h2>Politische Missionen</h2><span class="mm-chevron" aria-hidden="true"></span></summary>
+                        <div class="mm-text">
+                            <p>Die weitgehend abgeschottete Heimatwelt eröffnet diplomatische Spielinhalte.</p>
+                            <p>Spieler können mit unterschiedlichen Großgemeinschaften in Kontakt treten.</p>
+                            <p>Dabei entstehen Konflikte zwischen Außenpolitik, Naturschutz, wissenschaftlicher Zusammenarbeit und regionaler Unabhängigkeit.</p>
+                            <p>Entscheidungen können das Verhältnis zu einzelnen Gemeinschaften verändern.</p>
+                            <p class="mm-quelle">Quelle: Info_material · Metamorphen · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="mm-panel mm-karte" id="k-8-33-missionsbeispiele">
+                        <summary><span class="mm-nr">8.33</span><h2>Missionsbeispiele</h2><span class="mm-chevron" aria-hidden="true"></span></summary>
+                        <div class="mm-text">
+                            <dl class="mm-fakten"><div><dt>Der verlorene Kern</dt><dd>Ein Bewusstseinskern befindet sich in einer beschädigten Kernanlage und muss gerettet werden.</dd></div><div><dt>Die unterbrochene Verbindung</dt><dd>Ein Metamorph hat den Zugriff auf einen entfernten Eigenkörper verloren.</dd></div><div><dt>Die verbotene Kopplung</dt><dd>Ein fremdes bewusstseinsfähiges Individuum wurde gegen seinen Willen neurologisch manipuliert.</dd></div><div><dt>Die alten Körperkriege</dt><dd>Historische Ruinen enthalten Hinweise auf bislang unbekannte Ereignisse.</dd></div><div><dt>Die Stille der Netze</dt><dd>Eine alte Kommunikationsanlage wird untersucht.</dd></div><div><dt>Die unbekannte Körperform</dt><dd>Eine seltene natürliche Entwicklungsvariante wird wissenschaftlich dokumentiert.</dd></div><div><dt>Die Ursprungsbecken</dt><dd>Ein besonders geschütztes Gebiet enthält bedeutende evolutionäre Funde.</dd></div><div><dt>Die Schwellenverhandlungen</dt><dd>Unterschiedliche politische Gemeinschaften müssen eine gemeinsame Entscheidung treffen.</dd></div></dl>
+                            <p class="mm-quelle">Quelle: Info_material · Metamorphen · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="mm-panel mm-karte" id="k-8-34-wirtschaftliches-gameplay">
+                        <summary><span class="mm-nr">8.34</span><h2>Wirtschaftliches Gameplay</h2><span class="mm-chevron" aria-hidden="true"></span></summary>
+                        <div class="mm-text">
+                            <p>Körpergärten, medizinische Versorgung und biologische Rohstoffe besitzen wirtschaftliche Bedeutung.</p>
+                            <p>Die Herstellung großer Eigenkörper ist ressourcenintensiv.</p>
+                            <p>Spieler können mit medizinischen Einrichtungen, Forschungsstationen und Handelsgemeinschaften interagieren.</p>
+                            <p>Auch der Transport empfindlicher biologischer Materialien kann besondere Aufgaben ermöglichen.</p>
+                            <p class="mm-quelle">Quelle: Info_material · Metamorphen · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="mm-panel mm-karte" id="k-8-35-fahrzeuge-und-infrastruktur">
+                        <summary><span class="mm-nr">8.35</span><h2>Fahrzeuge und Infrastruktur</h2><span class="mm-chevron" aria-hidden="true"></span></summary>
+                        <div class="mm-text">
+                            <p>Nicht alle Körperformen können dieselben Fahrzeuge benutzen.</p>
+                            <p>Große Panzerkörper benötigen besondere Transportmöglichkeiten.</p>
+                            <p>Kleine Eigenkörper können kompaktere Fahrzeuge verwenden.</p>
+                            <p>Aquatische Formen benötigen geeignete Wasserzugänge.</p>
+                            <p>Die Infrastruktur der Metamorphen berücksichtigt diese unterschiedlichen Anforderungen.</p>
+                            <p class="mm-quelle">Quelle: Info_material · Metamorphen · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="mm-panel mm-karte" id="k-8-36-fahigkeiten-und-fortschritt">
+                        <summary><span class="mm-nr">8.36</span><h2>Fähigkeiten und Fortschritt</h2><span class="mm-chevron" aria-hidden="true"></span></summary>
+                        <div class="mm-text">
+                            <p>Die Entwicklung eines Metamorphen wird durch biologische Reifung, Erfahrung und Forschung beeinflusst.</p>
+                            <p>Neue Möglichkeiten können entstehen durch:</p>
+                            <ul><li>Verbesserte Körpersteuerung.</li><li>Sicherere neurologische Verbindungen.</li><li>Erweiterte medizinische Behandlung.</li><li>Effizientere Körperversorgung.</li><li>Zusätzliche natürliche Eigenkörper.</li><li>Bessere sensorische Auswertung.</li><li>Fortschrittliche technische Kommunikationssysteme.</li></ul>
+                            <p>Die Entwicklung bleibt klassenfrei und an die biologischen Möglichkeiten der Spezies gebunden.</p>
+                            <p class="mm-quelle">Quelle: Info_material · Metamorphen · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="mm-panel mm-karte" id="k-8-37-gameplay-balancing">
+                        <summary><span class="mm-nr">8.37</span><h2>Gameplay-Balancing</h2><span class="mm-chevron" aria-hidden="true"></span></summary>
+                        <div class="mm-text">
+                            <p>Die Metamorphen besitzen eine große körperliche Flexibilität.</p>
+                            <p>Diese wird durch klare Grenzen ausgeglichen.</p>
+                            <ul><li>Jeder Eigenkörper benötigt Ressourcen.</li><li>Neue Körper benötigen Entwicklungszeit.</li><li>Nicht jede Körperform steht jedem Individuum zur Verfügung.</li><li>Sehr große Körper benötigen geeignete Infrastruktur.</li><li>Fremdkörperübernahmen setzen Kompatibilität voraus.</li><li>Natürliche Verbindungen besitzen begrenzte Reichweiten.</li><li>Technische Verbindungen können ausfallen.</li><li>Ein Bewusstseinskern kann normalerweise nur einen Körper vollständig bewusst steuern.</li><li>Der Bewusstseinskern bleibt biologisch verwundbar.</li><li>Ein Körperwechsel heilt den Bewusstseinskern nicht automatisch.</li></ul>
+                            <p>Dadurch bleibt die Spezies vielseitig, ohne sämtliche Fähigkeiten anderer Spezies zu ersetzen.</p>
+                            <p class="mm-quelle">Quelle: Info_material · Metamorphen · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="mm-panel mm-karte" id="k-8-38-technische-identitat">
+                        <summary><span class="mm-nr">8.38</span><h2>Technische Identität</h2><span class="mm-chevron" aria-hidden="true"></span></summary>
+                        <div class="mm-text">
+                            <p>Für die technische Umsetzung werden persönliche Identität und Körperidentität getrennt.</p>
+                            <dl class="mm-fakten"><div><dt>CharacterID</dt><dd>Dauerhafte Identität des Metamorphen.</dd></div><div><dt>CoreID</dt><dd>Eindeutige Identität seines Bewusstseinskerns.</dd></div><div><dt>BodyID</dt><dd>Identität eines bestimmten Eigenkörpers.</dd></div><div><dt>ActiveBodyID</dt><dd>Aktuell bewusst gesteuerter Körper.</dd></div><div><dt>HostCharacterID</dt><dd>Identität eines fremden bewusstseinsfähigen Wirts.</dd></div><div><dt>ConnectionID</dt><dd>Neurologische Verbindung zwischen Kern und Körper.</dd></div><div><dt>BodyCondition</dt><dd>Zustand eines Eigenkörpers.</dd></div><div><dt>CoreCondition</dt><dd>Zustand des Bewusstseinskerns.</dd></div><div><dt>BodyLocation</dt><dd>Räumliche Position eines Eigenkörpers.</dd></div><div><dt>ConnectionState</dt><dd>Verfügbarkeit und Zustand der Körperverbindung.</dd></div></dl>
+                            <p class="mm-quelle">Quelle: Info_material · Metamorphen · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="mm-panel mm-karte" id="k-8-39-persistenz-und-save-load">
+                        <summary><span class="mm-nr">8.39</span><h2>Persistenz und Save/Load</h2><span class="mm-chevron" aria-hidden="true"></span></summary>
+                        <div class="mm-text">
+                            <p>Die Personendaten müssen unabhängig vom verwendeten Körper gespeichert werden.</p>
+                            <p>Ein Körperwechsel darf keine neue CharacterID erzeugen.</p>
+                            <p>Die vorhandenen Eigenkörper besitzen jeweils eigene persistente Kennungen.</p>
+                            <p>Auch ruhende Körper müssen unabhängig vom aktiven Spielweltbereich gespeichert werden.</p>
+                            <p>Bei einer Fremdkörperübernahme bleibt die Identität des ursprünglichen Wirts erhalten.</p>
+                            <p>Die Kopplung wird separat verwaltet.</p>
+                            <p class="mm-quelle">Quelle: Info_material · Metamorphen · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="mm-panel mm-karte" id="k-8-40-integration-in-grosse-spielwelten">
+                        <summary><span class="mm-nr">8.40</span><h2>Integration in große Spielwelten</h2><span class="mm-chevron" aria-hidden="true"></span></summary>
+                        <div class="mm-text">
+                            <p>Die Metamorphen können mehrere Körper an unterschiedlichen Standorten besitzen.</p>
+                            <p>Nicht alle diese Standorte müssen gleichzeitig geladen sein.</p>
+                            <p>Deshalb müssen Körperzustände unabhängig von den jeweils aktiven Unreal-Actors gespeichert werden.</p>
+                            <p>World Partition kann einzelne Regionen laden und entladen, ohne die grundlegende Personendatenstruktur zu verändern.</p>
+                            <p>Die Körperidentität bleibt über das Speichersystem erhalten.</p>
+                            <p class="mm-quelle">Quelle: Info_material · Metamorphen · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="mm-panel mm-karte" id="k-8-41-npc-simulation">
+                        <summary><span class="mm-nr">8.41</span><h2>NPC-Simulation</h2><span class="mm-chevron" aria-hidden="true"></span></summary>
+                        <div class="mm-text">
+                            <p>Metamorphen-NPCs können abhängig von Beruf, Tagesablauf und gesellschaftlicher Situation unterschiedliche Körper verwenden.</p>
+                            <p>Ihre ruhenden Körper können in Versorgungsanlagen verbleiben.</p>
+                            <p>Für weit entfernte, nicht geladene Körper werden nur die für den persistenten Zustand notwendigen Daten verwaltet.</p>
+                            <p>Beim Laden der entsprechenden Spielweltregion wird der aktuelle Zustand des Körpers wiederhergestellt.</p>
+                            <p class="mm-quelle">Quelle: Info_material · Metamorphen · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="mm-panel mm-karte" id="k-8-42-fraktionsintegration">
+                        <summary><span class="mm-nr">8.42</span><h2>Fraktionsintegration</h2><span class="mm-chevron" aria-hidden="true"></span></summary>
+                        <div class="mm-text">
+                            <p>Metamorphen können Mitglieder oder Partner unterschiedlicher APORIA-Fraktionen sein.</p>
+                            <p>Ihre Heimatwelt bleibt jedoch überwiegend unabhängig.</p>
+                            <p>Einzelne NPCs können unterschiedliche politische Loyalitäten besitzen.</p>
+                            <p>Diese Zugehörigkeiten bleiben beim Körperwechsel unverändert.</p>
+                            <p class="mm-quelle">Quelle: Info_material · Metamorphen · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <details class="mm-panel mm-karte" id="k-8-43-langfristige-spielrolle">
+                        <summary><span class="mm-nr">8.43</span><h2>Langfristige Spielrolle</h2><span class="mm-chevron" aria-hidden="true"></span></summary>
+                        <div class="mm-text">
+                            <p>Die Metamorphen erweitern APORIA um eine Spezies, deren Körperorganisation, Gesellschaft und Geschichte eng miteinander verbunden sind.</p>
+                            <p>Sie ermöglichen ungewöhnliche soziale Begegnungen, biologische Forschung, Körperwechsel und komplexe politische Beziehungen.</p>
+                            <p>Ihre monströsen Erscheinungsformen sollen nicht ausschließlich als Kampfgegner dienen.</p>
+                            <p>Vielmehr bilden sie einen normalen Bestandteil einer alten, intelligenten und kulturell vielseitigen Zivilisation.</p>
+                            <p>Karynth ergänzt diese Spezies durch eine fremdartige, biologisch reiche und historisch tief entwickelte Heimatwelt.</p>
+                            <p>Die Verbindung aus natürlicher Körpervielfalt, neurologischer Fremdkopplung und gesellschaftlicher Selbstbestimmung bildet die zentrale Besonderheit der Metamorphen innerhalb von APORIA.</p>
+                            <p class="mm-quelle">Quelle: Info_material · Metamorphen · Gameplay/.gitkeep</p>
+                        </div>
+                    </details>
+                    <section class="mm-panel mm-block mm-karussell-block" id="galerie" aria-label="Bilder">
+                    <h2 class="mm-h2">Bilder <small>7 Bilder · Bildarchiv</small></h2>
+                    <div class="bilder-karussell" data-karussell aria-roledescription="Karussell" aria-label="Bilder der Metamorphen">
+                    <div class="karussell-spur" tabindex="0" aria-label="Bilder – mit Pfeiltasten blättern">
+                        <figure class="karussell-folie" data-kategorie="Designtafeln" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Designtafel A4 · 1 in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Meta%20Morphen/gesamtdarstellung/MetamorphendesignA4.png" alt="Designtafel A4 · 1" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Designtafel A4 · 1</strong><span>Designtafeln</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Designtafeln" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Designtafel A4 · 2 in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Meta%20Morphen/gesamtdarstellung/MetamorphendesignA4%281%29.png" alt="Designtafel A4 · 2" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Designtafel A4 · 2</strong><span>Designtafeln</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Designtafeln" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Designtafel A4 · 3 in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Meta%20Morphen/gesamtdarstellung/MetamorphendesignA4%282%29.png" alt="Designtafel A4 · 3" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Designtafel A4 · 3</strong><span>Designtafeln</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Designtafeln" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Designtafel A4 · 4 in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Meta%20Morphen/gesamtdarstellung/MetamorphendesignA4%283%29.png" alt="Designtafel A4 · 4" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Designtafel A4 · 4</strong><span>Designtafeln</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Designtafeln" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Designtafel A4 · 5 in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Meta%20Morphen/gesamtdarstellung/MetamorphendesignA4%284%29.png" alt="Designtafel A4 · 5" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Designtafel A4 · 5</strong><span>Designtafeln</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Designtafeln" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Designtafel A4 · 6 in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Meta%20Morphen/gesamtdarstellung/MetamorphendesignA4%285%29.png" alt="Designtafel A4 · 6" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Designtafel A4 · 6</strong><span>Designtafeln</span></figcaption>
+                        </figure>
+                        <figure class="karussell-folie" data-kategorie="Designtafeln" aria-roledescription="Folie">
+                            <button type="button" class="karussell-bild" aria-label="Designtafel A4 · 7 in Großansicht öffnen"><img src="../../../../../assets/bilder/Alle%20Spezies%2B%C3%9Cbersicht/Biologische%20Spezies/Meta%20Morphen/gesamtdarstellung/MetamorphendesignA4%286%29.png" alt="Designtafel A4 · 7" loading="lazy" decoding="async"></button>
+                            <figcaption><strong>Designtafel A4 · 7</strong><span>Designtafeln</span></figcaption>
+                        </figure>
+                    </div>
+                    <div class="karussell-steuerung">
+                        <button type="button" data-karussell-schritt="-1" aria-label="Vorheriges Bild">‹</button>
+                        <div class="karussell-punkte" role="group" aria-label="Bild wählen"></div>
+                        <output class="karussell-zaehler" aria-live="polite"></output>
+                        <button type="button" data-karussell-schritt="1" aria-label="Nächstes Bild">›</button>
+                    </div>
+                </div>
+                </section>
+                    <aside class="mm-panel mm-block mm-links" aria-label="Verknüpfungen">
+                    <h2 class="mm-h2">Verknüpfungen</h2>
                     <ul>
-                        <li><a href="../Forschung/forschung.html" data-route="spezies-biological-18-forschung"><strong>Forschung</strong><span>Forschungsfelder zu den Meta Morphen</span></a></li>
+                        <li><a href="../../../../himmelskoerper/planeten/details/karynth/hauptseite/index.html" ><strong>Planetendossier Karynth</strong><span>Heimatwelt im Planetenarchiv</span></a></li>
+                        <li><a href="../../../../../Men%C3%BCs/Sternenkarte/Sternenkarte.html?system=karynth-stern" ><strong>Ysmeroth-System</strong><span>In der Sternenkarte ansehen</span></a></li>
+                        <li><a href="../Forschung/forschung.html" data-route="spezies-biological-18-forschung"><strong>Forschung</strong><span>Forschung an den Metamorphen</span></a></li>
+                        <li><a href="../../../../Forschung/Spezialisierte%20und%20erweiterte%20Forschung/Morphologie%20und%20Transformationsforschung/index.html" ><strong>Morphologie</strong><span>Forschungszweig</span></a></li>
                         <li><a href="../../../../Forschung/%C3%9Cbersicht/Forschung.html" ><strong>Forschungsarchiv</strong><span>Alle Forschungszweige</span></a></li>
-                        <li><a href="../../%C3%9Cbersichtsseite%20biologische%20spezies/Uebersicht.html" data-route="spezies-biological"><strong>Biologische Spezies</strong><span>Alle Spezies dieser Gruppe</span></a></li>
-                        <li><a href="../../../Spezies_%C3%BCbersicht/Spezies.html" data-route="spezies"><strong>Speziesarchiv</strong><span>Alle Gruppen</span></a></li>
-                        <li><a href="../../../../himmelskoerper/planeten/planeten.html" data-route="planeten"><strong>Planetenarchiv</strong><span>Heimatwelten im Weltenarchiv</span></a></li>
                     </ul>
                 </aside>
-                    <nav class="st-blaettern" aria-label="Hauptreiter blättern"><a href="../Unterseiten/Geschichte/geschichte.html" data-route="spezies-biological-18-geschichte">← Geschichte</a><a href="../Forschung/forschung.html" data-route="spezies-biological-18-forschung">Forschung →</a></nav>
+                    <nav class="mm-blaettern" aria-label="Hauptreiter blättern"><a href="../Unterseiten/Geschichte/geschichte.html" data-route="spezies-biological-18-geschichte">← Geschichte</a><a href="../Forschung/forschung.html" data-route="spezies-biological-18-forschung">Forschung →</a></nav>
                 </div>
-                <nav class="st-panel st-sprung" data-st-sprung aria-label="Kapitel dieser Seite">
-                    <p class="st-kicker">Kapitel</p>
-                    <button type="button" class="st-klappen" data-st-klappen aria-pressed="false">Alle aufklappen</button>
-                    <a href="#noch-offen"><span class="st-nr">…</span>Spielintegration</a>
+                <nav class="mm-panel mm-sprung" data-mm-sprung aria-label="Kapitel dieser Seite">
+                    <p class="mm-kicker">Kapitel</p>
+                    <button type="button" class="mm-klappen" data-mm-klappen aria-pressed="false">Alle aufklappen</button>
+                    <a href="#k-8-1-grundlegende-spielrolle"><span class="mm-nr">8.1</span>Grundlegende Spielrolle</a>
+                    <a href="#k-8-2-personliche-identitat"><span class="mm-nr">8.2</span>Persönliche Identität</a>
+                    <a href="#k-8-3-eigenkorperwechsel"><span class="mm-nr">8.3</span>Eigenkörperwechsel</a>
+                    <a href="#k-8-4-biologischer-korperwechsel"><span class="mm-nr">8.4</span>Biologischer Körperwechsel</a>
+                    <a href="#k-8-5-technische-fernsteuerung"><span class="mm-nr">8.5</span>Technische Fernsteuerung</a>
+                    <a href="#k-8-6-korpergruppen"><span class="mm-nr">8.6</span>Körpergruppen</a>
+                    <a href="#k-8-7-monstrose-grosskorper"><span class="mm-nr">8.7</span>Monströse Großkörper</a>
+                    <a href="#k-8-8-korperinventar"><span class="mm-nr">8.8</span>Körperinventar</a>
+                    <a href="#k-8-9-korperentwicklung"><span class="mm-nr">8.9</span>Körperentwicklung</a>
+                    <a href="#k-8-10-korperversorgung"><span class="mm-nr">8.10</span>Körperversorgung</a>
+                    <a href="#k-8-11-der-bewusstseinskern"><span class="mm-nr">8.11</span>Der Bewusstseinskern</a>
+                    <a href="#k-8-12-kernhauser"><span class="mm-nr">8.12</span>Kernhäuser</a>
+                    <a href="#k-8-13-mobile-kerntrager"><span class="mm-nr">8.13</span>Mobile Kernträger</a>
+                    <a href="#k-8-14-verlust-eines-eigenkorpers"><span class="mm-nr">8.14</span>Verlust eines Eigenkörpers</a>
+                    <a href="#k-8-15-tod-des-bewusstseinskerns"><span class="mm-nr">8.15</span>Tod des Bewusstseinskerns</a>
+                    <a href="#k-8-16-fremdkorperubernahme"><span class="mm-nr">8.16</span>Fremdkörperübernahme</a>
+                    <a href="#k-8-17-freiwillige-fremdkopplung"><span class="mm-nr">8.17</span>Freiwillige Fremdkopplung</a>
+                    <a href="#k-8-18-erzwungene-ubernahmen"><span class="mm-nr">8.18</span>Erzwungene Übernahmen</a>
+                    <a href="#k-8-19-neurologische-kompatibilitat"><span class="mm-nr">8.19</span>Neurologische Kompatibilität</a>
+                    <a href="#k-8-20-sensorische-besonderheiten"><span class="mm-nr">8.20</span>Sensorische Besonderheiten</a>
+                    <a href="#k-8-21-neurologische-eingewohnung"><span class="mm-nr">8.21</span>Neurologische Eingewöhnung</a>
+                    <a href="#k-8-22-krankheiten-und-verletzungen"><span class="mm-nr">8.22</span>Krankheiten und Verletzungen</a>
+                    <a href="#k-8-23-gesellschaftliches-verhalten"><span class="mm-nr">8.23</span>Gesellschaftliches Verhalten</a>
+                    <a href="#k-8-24-npc-korperwechsel"><span class="mm-nr">8.24</span>NPC-Körperwechsel</a>
+                    <a href="#k-8-25-wiedererkennung"><span class="mm-nr">8.25</span>Wiedererkennung</a>
+                    <a href="#k-8-26-gesellschaftliche-interaktionen"><span class="mm-nr">8.26</span>Gesellschaftliche Interaktionen</a>
+                    <a href="#k-8-27-heimatwelt-erkundung"><span class="mm-nr">8.27</span>Heimatwelt-Erkundung</a>
+                    <a href="#k-8-28-biologische-umweltgefahren"><span class="mm-nr">8.28</span>Biologische Umweltgefahren</a>
+                    <a href="#k-8-30-historische-missionen"><span class="mm-nr">8.30</span>Historische Missionen</a>
+                    <a href="#k-8-31-biologische-expeditionen"><span class="mm-nr">8.31</span>Biologische Expeditionen</a>
+                    <a href="#k-8-32-politische-missionen"><span class="mm-nr">8.32</span>Politische Missionen</a>
+                    <a href="#k-8-33-missionsbeispiele"><span class="mm-nr">8.33</span>Missionsbeispiele</a>
+                    <a href="#k-8-34-wirtschaftliches-gameplay"><span class="mm-nr">8.34</span>Wirtschaftliches Gameplay</a>
+                    <a href="#k-8-35-fahrzeuge-und-infrastruktur"><span class="mm-nr">8.35</span>Fahrzeuge und Infrastruktur</a>
+                    <a href="#k-8-36-fahigkeiten-und-fortschritt"><span class="mm-nr">8.36</span>Fähigkeiten und Fortschritt</a>
+                    <a href="#k-8-37-gameplay-balancing"><span class="mm-nr">8.37</span>Gameplay-Balancing</a>
+                    <a href="#k-8-38-technische-identitat"><span class="mm-nr">8.38</span>Technische Identität</a>
+                    <a href="#k-8-39-persistenz-und-save-load"><span class="mm-nr">8.39</span>Persistenz und Save/Load</a>
+                    <a href="#k-8-40-integration-in-grosse-spielwelten"><span class="mm-nr">8.40</span>Integration in große Spielwelten</a>
+                    <a href="#k-8-41-npc-simulation"><span class="mm-nr">8.41</span>NPC-Simulation</a>
+                    <a href="#k-8-42-fraktionsintegration"><span class="mm-nr">8.42</span>Fraktionsintegration</a>
+                    <a href="#k-8-43-langfristige-spielrolle"><span class="mm-nr">8.43</span>Langfristige Spielrolle</a>
+                    <a href="#galerie"><span class="mm-nr">▣</span>Bilder</a>
                 </nav>
             </div>
-            <dialog class="st-zoom" aria-label="Bild in Großansicht"><div class="controls"><button class="control" type="button" data-step="-1" aria-label="Vorheriges Bild">←</button><output aria-live="polite"></output><button class="control" type="button" data-step="1" aria-label="Nächstes Bild">→</button></div><form method="dialog"><button class="control">Schließen</button></form><img alt=""></dialog>
+            <dialog class="mm-zoom" aria-label="Bild in Großansicht"><div class="controls"><button class="control" type="button" data-step="-1" aria-label="Vorheriges Bild">←</button><output aria-live="polite"></output><button class="control" type="button" data-step="1" aria-label="Nächstes Bild">→</button></div><form method="dialog"><button class="control">Schließen</button></form><img alt=""></dialog>
         </main>
     </div>
 </body>

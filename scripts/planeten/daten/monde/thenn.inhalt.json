@@ -1,0 +1,552 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Thenn",
+  "genitiv": "von Thenn",
+  "dossierName": "Thenn-Dossier",
+  "klasse": "Felsmond",
+  "intro": "Thenn ist der kleinere innere Felsmond Iskaras. Sein Bahnradius beträgt rund 91.000 km; aus dieser Distanz und der Systemmasse folgt eine Umlaufzeit von etwa 2,99 Tagen. Thenn umkreist Iskara in 3 Tage.",
+  "globusDaten": {
+    "planet": "thenn",
+    "klasse": "Gestein",
+    "radius": 350000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=teryn-stern&objekt=teryn-thenn",
+  "grunddaten": [
+    [
+      "System-ID",
+      "teryn-thenn"
+    ],
+    [
+      "Archiv-ID",
+      "AP-TERYN-THENN"
+    ],
+    [
+      "Typ",
+      "Felsmond"
+    ],
+    [
+      "Sternsystem",
+      "Teryn-System"
+    ],
+    [
+      "Zentralkörper",
+      "Iskara"
+    ],
+    [
+      "Große Halbachse",
+      "91.045 km"
+    ],
+    [
+      "Umlaufzeit",
+      "3 Tage"
+    ],
+    [
+      "Durchmesser",
+      "700 km"
+    ],
+    [
+      "Masse",
+      "2 · 10^20 kg"
+    ],
+    [
+      "Schwerkraft",
+      "0,01 g"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -13 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Teryn-System"
+    ],
+    [
+      "Zentralstern",
+      "Teryn",
+      "inhalte/himmelskoerper/sterne/details/teryn/hauptseite/index.html"
+    ],
+    [
+      "Umläuft",
+      "Iskara",
+      "inhalte/himmelskoerper/planeten/details/iskara/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "91.045 km"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Thenn im Teryn-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=teryn-stern&objekt=teryn-thenn",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Teryn",
+      "href": "inhalte/himmelskoerper/sterne/details/teryn/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◍",
+      "art": "Mutterplanet",
+      "titel": "Iskara",
+      "href": "inhalte/himmelskoerper/planeten/details/iskara/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Solitiden",
+      "titel": "Iskara",
+      "href": "inhalte/himmelskoerper/planeten/details/iskara/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Solitiden",
+      "href": "inhalte/spezies/Mentale Spezies/Solitiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Teryn-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=teryn-stern&objekt=teryn-thenn"
+    },
+    {
+      "titel": "Speziesdossier Solitiden",
+      "href": "inhalte/spezies/Mentale Spezies/Solitiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#090808",
+      "tiefe": "#131311",
+      "akzent": "#cac7c0",
+      "sand": "#cec3a8",
+      "moos": "#a8be99",
+      "ozean": "#86a5b1",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#4e4c47"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Astronomie"
+      ],
+      [
+        "Planet",
+        "Mutterplanet"
+      ],
+      [
+        "Kräfte",
+        "Gezeiten"
+      ],
+      [
+        "Tiefe",
+        "Geologie"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Mutterplanet": {
+      "gruppe": "Wissenschaft",
+      "icon": "◐",
+      "intro": "Mutterplanet von Thenn.",
+      "abschnitte": [
+        {
+          "titel": "Iskara",
+          "text": [
+            "Iskara ist die Heimatwelt der Solitiden: ein geologisch aktiver Silikatplanet mit 48 Prozent Wasserflächen, hydrothermalen Bruchsystemen und einer gewöhnlichen kohlenstoffbasierten Biosphäre. Seltene mineralische Formationen tragen die natürlich entstandenen Solitiden. Die globale Mitteltemperatur von etwa 12 °C ist ein Dossiermodellwert."
+          ],
+          "daten": [
+            [
+              "Typ",
+              "Bewohnter terrestrischer Silikatplanet"
+            ],
+            [
+              "Durchmesser",
+              "13.380 km"
+            ],
+            [
+              "Abstand des Mondes",
+              "91.045 km (13,6 Planetenradien)"
+            ]
+          ],
+          "verweise": [
+            [
+              "Iskara",
+              "inhalte/himmelskoerper/planeten/details/iskara/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Weitere Monde von Iskara",
+          "liste": [
+            "Elvar – Umlauf in 14,9 Tage"
+          ],
+          "verweise": [
+            [
+              "Elvar",
+              "inhalte/himmelskoerper/monde/details/elvar/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Gezeiten": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gezeiten von Thenn.",
+      "abschnitte": [
+        {
+          "titel": "Gezeitenkräfte",
+          "text": [
+            "Auf seiner Bahn in 91.045 km Abstand wirken starke Gezeitenkräfte von Iskara auf Thenn."
+          ]
+        }
+      ]
+    },
+    "Gebundene Rotation": {
+      "gruppe": "Wissenschaft",
+      "icon": "↻",
+      "intro": "Gebundene Rotation von Thenn.",
+      "abschnitte": [
+        {
+          "titel": "Rotation",
+          "text": [
+            "Thenn wendet Iskara vermutlich stets dieselbe Seite zu: Ein Tag dauert so lange wie ein Umlauf – 3 Tage."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Thenn auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Thenn",
+          "text": [
+            "Thenn ist der kleinere innere Felsmond Iskaras. Sein Bahnradius beträgt rund 91.000 km; aus dieser Distanz und der Systemmasse folgt eine Umlaufzeit von etwa 2,99 Tagen.",
+            "Thenn umkreist Iskara in 3 Tage."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Felsmond"
+            ],
+            [
+              "Sternsystem",
+              "Teryn-System"
+            ],
+            [
+              "Zentralkörper",
+              "Iskara"
+            ],
+            [
+              "Große Halbachse",
+              "91.045 km"
+            ],
+            [
+              "Umlaufzeit",
+              "3 Tage"
+            ],
+            [
+              "Durchmesser",
+              "700 km"
+            ],
+            [
+              "Masse",
+              "2 · 10^20 kg"
+            ],
+            [
+              "Schwerkraft",
+              "0,01 g"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -13 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Iskara",
+          "text": [
+            "Das Teryn-System ist die Heimat der Solitiden: Ihr Planet Iskara umkreist Teryn, und Thenn ist einer seiner Monde."
+          ],
+          "verweise": [
+            [
+              "Iskara",
+              "inhalte/himmelskoerper/planeten/details/iskara/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Solitiden",
+              "inhalte/spezies/Mentale Spezies/Solitiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Thenn im Teryn-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Iskara"
+            ],
+            [
+              "Große Halbachse",
+              "91.045 km"
+            ],
+            [
+              "Exzentrizität",
+              "0,004"
+            ],
+            [
+              "Bahnneigung",
+              "0,6°"
+            ],
+            [
+              "Umlaufzeit",
+              "3 Tage"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Teryn · Stern",
+              "Orangefarbener Hauptreihenstern (K4 V)"
+            ],
+            [
+              "Dareth · 0,15 AE",
+              "Heißer Gesteinsplanet"
+            ],
+            [
+              "Nura · 0,34 AE",
+              "Heißer terrestrischer Planet"
+            ],
+            [
+              "Iskara · 0,61 AE",
+              "Bewohnter terrestrischer Silikatplanet"
+            ],
+            [
+              "Veldros · 1,08 AE",
+              "Kalte Supererde"
+            ],
+            [
+              "Saevor · 2,84 AE",
+              "Gasriese"
+            ],
+            [
+              "Ynderal · 5,9 AE",
+              "Eisreicher Riesenplanet"
+            ],
+            [
+              "Veylan-Asteroidengürtel · 1,7–2 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußere Kleinkörperregion · 14–38 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Teryn",
+              "inhalte/himmelskoerper/sterne/details/teryn/hauptseite/index.html"
+            ],
+            [
+              "Dareth",
+              "inhalte/himmelskoerper/planeten/details/dareth/hauptseite/index.html"
+            ],
+            [
+              "Nura",
+              "inhalte/himmelskoerper/planeten/details/nura/hauptseite/index.html"
+            ],
+            [
+              "Iskara",
+              "inhalte/himmelskoerper/planeten/details/iskara/hauptseite/index.html"
+            ],
+            [
+              "Veldros",
+              "inhalte/himmelskoerper/planeten/details/veldros/hauptseite/index.html"
+            ],
+            [
+              "Saevor",
+              "inhalte/himmelskoerper/planeten/details/saevor/hauptseite/index.html"
+            ],
+            [
+              "Ynderal",
+              "inhalte/himmelskoerper/planeten/details/ynderal/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Thenn.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "350 km"
+            ],
+            [
+              "Masse",
+              "2 · 10^20 kg"
+            ],
+            [
+              "Mittlere Dichte",
+              "1,11 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "0,11 m/s² (0,011 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "0,28 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Thenn.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Thenn ist geologisch weitgehend erstarrt; Einschläge haben seine Oberfläche geformt."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Thenn.",
+      "abschnitte": [
+        {
+          "titel": "Gashülle",
+          "text": [
+            "Thenn besitzt keine nennenswerte Atmosphäre – dafür ist die Schwerkraft zu gering."
+          ]
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Thenn.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 0,61 AE Abstand zu Teryn liegt die Gleichgewichtstemperatur von Thenn bei rund -13 °C – gemäßigt."
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Thenn.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Thenn entstand zusammen mit dem Teryn-System vor rund 6,1 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Thenn.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Ist der Mond eingefangen oder mit seinem Planeten entstanden?",
+            "Welche Spuren tragen seine ältesten Krater?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Thenn ist mit allen Bahndaten im Teryn-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=teryn-stern&objekt=teryn-thenn"
+            ]
+          ]
+        },
+        {
+          "titel": "Untersuchung im Teryn-System",
+          "text": [
+            "Wie weit hat die Nähe zu Iskara die Rotation und die Gestalt von Thenn beeinflusst?"
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Thenn.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Thenn ist der kleinere innere Felsmond Iskaras. Sein Bahnradius beträgt rund 91.000 km; aus dieser Distanz und der Systemmasse folgt eine Umlaufzeit von etwa 2,99 Tagen."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Thenn.",
+      "abschnitte": [
+        {
+          "titel": "Illustrationsmotiv",
+          "bild": true,
+          "bildtext": "Illustration anhand eines vorhandenen Motivs. Sie zeigt den Himmelskörpertyp und keine bestätigten Oberflächendetails."
+        }
+      ]
+    }
+  }
+}

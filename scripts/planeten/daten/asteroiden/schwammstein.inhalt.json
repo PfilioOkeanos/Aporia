@@ -1,0 +1,479 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Schwammstein",
+  "genitiv": "von Schwammstein",
+  "dossierName": "Schwammstein-Dossier",
+  "klasse": "Asteroid",
+  "intro": "Ein poröser, extrem wasserreicher Asteroid, der beim Annähern an Narev feine Dampffahnen abgibt – halb Asteroid, halb Komet. Schwammstein umkreist Narev in 1,88 AE Abstand und braucht für einen Umlauf 2,8 Jahre.",
+  "globusDaten": {
+    "planet": "asteroid-mit-anhaftendem-bruchstuck",
+    "klasse": "Gestein",
+    "radius": 40000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=lymara-stern&objekt=lymara-schwammstein",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-27461A811F"
+    ],
+    [
+      "Typ",
+      "Asteroid"
+    ],
+    [
+      "Sternsystem",
+      "Narev-System"
+    ],
+    [
+      "Zentralkörper",
+      "Narev"
+    ],
+    [
+      "Große Halbachse",
+      "1,88 AE"
+    ],
+    [
+      "Umlaufzeit",
+      "2,8 Jahre"
+    ],
+    [
+      "Durchmesser",
+      "80 km"
+    ],
+    [
+      "Masse",
+      "7,24 · 10^17 kg"
+    ],
+    [
+      "Schwerkraft",
+      "3,02 cm/s²"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -103 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Narev-System"
+    ],
+    [
+      "Zentralstern",
+      "Narev",
+      "inhalte/himmelskoerper/sterne/details/narev/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "1,88 AE"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Schwammstein im Narev-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=lymara-stern&objekt=lymara-schwammstein",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Narev",
+      "href": "inhalte/himmelskoerper/sterne/details/narev/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Plasmoiden",
+      "titel": "Lymara",
+      "href": "inhalte/himmelskoerper/planeten/details/lymara/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Plasmoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Plasmoiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Narev-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=lymara-stern&objekt=lymara-schwammstein"
+    },
+    {
+      "titel": "Speziesdossier Plasmoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Plasmoiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#080808",
+      "tiefe": "#111111",
+      "akzent": "#bdbdbd",
+      "sand": "#c2baa6",
+      "moos": "#9cb396",
+      "ozean": "#7c9bad",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#454545"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Bahn"
+      ],
+      [
+        "Material",
+        "Zusammensetzung"
+      ],
+      [
+        "Zeit",
+        "Herkunft"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Zusammensetzung": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Zusammensetzung von Schwammstein.",
+      "abschnitte": [
+        {
+          "titel": "Material",
+          "liste": [
+            "Silikate",
+            "Eisen und Nickel",
+            "Seltene Metalle"
+          ],
+          "schichten": [
+            [
+              "Regolith",
+              "Staub und Gesteinsschutt"
+            ],
+            [
+              "Trümmerkörper",
+              "Lose zusammengehaltene Gesteinsbrocken"
+            ]
+          ]
+        }
+      ]
+    },
+    "Bahn": {
+      "gruppe": "Wissenschaft",
+      "icon": "◌",
+      "intro": "Bahn von Schwammstein.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Narev"
+            ],
+            [
+              "Große Halbachse",
+              "1,88 AE (281,2 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,11"
+            ],
+            [
+              "Bahnneigung",
+              "8°"
+            ],
+            [
+              "Umlaufzeit",
+              "2,8 Jahre"
+            ],
+            [
+              "Einstrahlung",
+              "0,156-fach der Erde"
+            ]
+          ]
+        }
+      ]
+    },
+    "Herkunft": {
+      "gruppe": "Weitere",
+      "icon": "⧗",
+      "intro": "Herkunft von Schwammstein.",
+      "abschnitte": [
+        {
+          "titel": "Herkunft",
+          "text": [
+            "Schwammstein ist ein Überrest aus der Entstehungszeit des Narev-Systems."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Schwammstein auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Schwammstein",
+          "text": [
+            "Ein poröser, extrem wasserreicher Asteroid, der beim Annähern an Narev feine Dampffahnen abgibt – halb Asteroid, halb Komet.",
+            "Schwammstein umkreist Narev in 1,88 AE Abstand und braucht für einen Umlauf 2,8 Jahre."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Asteroid"
+            ],
+            [
+              "Sternsystem",
+              "Narev-System"
+            ],
+            [
+              "Zentralkörper",
+              "Narev"
+            ],
+            [
+              "Große Halbachse",
+              "1,88 AE"
+            ],
+            [
+              "Umlaufzeit",
+              "2,8 Jahre"
+            ],
+            [
+              "Durchmesser",
+              "80 km"
+            ],
+            [
+              "Masse",
+              "7,24 · 10^17 kg"
+            ],
+            [
+              "Schwerkraft",
+              "3,02 cm/s²"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -103 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Lymara",
+          "text": [
+            "Das Narev-System ist die Heimat der Plasmoiden: Ihr Planet Lymara umkreist Narev."
+          ],
+          "verweise": [
+            [
+              "Lymara",
+              "inhalte/himmelskoerper/planeten/details/lymara/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Plasmoiden",
+              "inhalte/spezies/Biologische Spezies/Plasmoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Schwammstein im Narev-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Narev"
+            ],
+            [
+              "Große Halbachse",
+              "1,88 AE (281,2 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,11"
+            ],
+            [
+              "Bahnneigung",
+              "8°"
+            ],
+            [
+              "Umlaufzeit",
+              "2,8 Jahre"
+            ],
+            [
+              "Einstrahlung",
+              "0,156-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Narev · Stern",
+              "Orangefarbener Zwerg (K0 V)"
+            ],
+            [
+              "Narev I · 0,33 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Lymara · 0,85 AE",
+              "Ozeanplanet"
+            ],
+            [
+              "Narev III · 2,9 AE",
+              "Gasriese"
+            ],
+            [
+              "Narev IV · 8,2 AE",
+              "Eisriese"
+            ],
+            [
+              "Nebelgürtel · 1,5–2,3 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 32–46 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Narev",
+              "inhalte/himmelskoerper/sterne/details/narev/hauptseite/index.html"
+            ],
+            [
+              "Narev I",
+              "inhalte/himmelskoerper/planeten/details/narev-i/hauptseite/index.html"
+            ],
+            [
+              "Lymara",
+              "inhalte/himmelskoerper/planeten/details/lymara/hauptseite/index.html"
+            ],
+            [
+              "Narev III",
+              "inhalte/himmelskoerper/planeten/details/narev-iii/hauptseite/index.html"
+            ],
+            [
+              "Narev IV",
+              "inhalte/himmelskoerper/planeten/details/narev-iv/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Schwammstein.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "40 km"
+            ],
+            [
+              "Masse",
+              "7,24 · 10^17 kg"
+            ],
+            [
+              "Mittlere Dichte",
+              "2,7 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "0,03 m/s² (0,003 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "0,05 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Schwammstein.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Schwammstein besteht aus Material, das sich bei der Entstehung des Narev-Systems nicht zu einem Planeten vereinte."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Schwammstein.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Was steckt hinter den Besonderheiten von Schwammstein?",
+            "Ist der Körper ein Bruchstück eines größeren Körpers?",
+            "Welche Rohstoffe birgt er?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Schwammstein ist mit allen Bahndaten im Narev-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=lymara-stern&objekt=lymara-schwammstein"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Schwammstein.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Als Anomalie in der Sternenkarte verzeichnet"
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Schwammstein.",
+      "abschnitte": [
+        {
+          "titel": "Schwammstein – Archivbild",
+          "bild": true,
+          "bildtext": "Schwammstein"
+        }
+      ]
+    }
+  }
+}

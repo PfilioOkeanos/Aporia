@@ -22,6 +22,10 @@ Erzeugt die Dossierseiten der Spezies aus dem, was im Projekt liegt. Wer Texte, 
 | Videos | `assets/videos/Alle Spezies+Übersicht/<Gruppe>/<Spezies>/` | Eintrag in `medien.json` → Videoplayer |
 | Kurzprofil | Karte auf der Übersichtsseite der Gruppe | Untertitel, Steckbriefwerte, Route |
 
+**Unterseite „Technologien“:** Spezies, die Technologien herstellen, bekommen einen zusätzlichen Reiter `Unterseiten/Technologien/technologien.html`, sobald im Infomaterial ein Ordner `Technologien` liegt (sonst entfällt er). Die Standardvorlage erledigt das automatisch; eigene Bauskripte nutzen `TECHNIK_REITER` und `routenSetzen()` aus `standard.mjs` (Beispiel: `eigene/echonoiden.mjs`). Von Hand gebaute Seiten (WaldFeen) haben die Seite in ihrem eigenen Aufbau.
+
+**Sternsystem im Infomaterial:** Ein Ordner `Sternensystem`/`SternenSystem` fließt in die Heimatwelt-Seite der Spezies ein und ist Grundlage für `scripts/planeten/systeme/<name>-system.json`. Bestehende Namen im Archiv haben Vorrang: Doppelte Namen werden zuerst im Infomaterial umbenannt.
+
 Markdown-Regeln: Kapitel mit `##` (oder `###`, wenn `##` nur der Dateititel ist); Nummern wie `3.1` oder Kürzel wie `A01 –` werden zur Kapitelnummer; `**Begriff:** Wert` und `Begriff: Wert` werden zu Steckbriefzeilen.
 
 ## Neue Spezies auf die Standardvorlage setzen

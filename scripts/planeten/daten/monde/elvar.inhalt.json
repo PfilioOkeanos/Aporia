@@ -1,0 +1,552 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Elvar",
+  "genitiv": "von Elvar",
+  "dossierName": "Elvar-Dossier",
+  "klasse": "Felsmond",
+  "intro": "Elvar ist der größere äußere Felsmond Iskaras. Seine Umlaufbahn liegt bei ungefähr 265.000 km; die angesetzte Masse beträgt rund 9,6 × 10²⁰ kg. Elvar umkreist Iskara in 14,9 Tage.",
+  "globusDaten": {
+    "planet": "elvar",
+    "klasse": "Gestein",
+    "radius": 820000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=teryn-stern&objekt=teryn-elvar",
+  "grunddaten": [
+    [
+      "System-ID",
+      "teryn-elvar"
+    ],
+    [
+      "Archiv-ID",
+      "AP-TERYN-ELVAR"
+    ],
+    [
+      "Typ",
+      "Felsmond"
+    ],
+    [
+      "Sternsystem",
+      "Teryn-System"
+    ],
+    [
+      "Zentralkörper",
+      "Iskara"
+    ],
+    [
+      "Große Halbachse",
+      "265.028 km"
+    ],
+    [
+      "Umlaufzeit",
+      "14,9 Tage"
+    ],
+    [
+      "Durchmesser",
+      "1.640 km"
+    ],
+    [
+      "Masse",
+      "9,56 · 10^20 kg"
+    ],
+    [
+      "Schwerkraft",
+      "9,47 cm/s²"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -16 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Teryn-System"
+    ],
+    [
+      "Zentralstern",
+      "Teryn",
+      "inhalte/himmelskoerper/sterne/details/teryn/hauptseite/index.html"
+    ],
+    [
+      "Umläuft",
+      "Iskara",
+      "inhalte/himmelskoerper/planeten/details/iskara/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "265.028 km"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Elvar im Teryn-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=teryn-stern&objekt=teryn-elvar",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Teryn",
+      "href": "inhalte/himmelskoerper/sterne/details/teryn/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◍",
+      "art": "Mutterplanet",
+      "titel": "Iskara",
+      "href": "inhalte/himmelskoerper/planeten/details/iskara/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Solitiden",
+      "titel": "Iskara",
+      "href": "inhalte/himmelskoerper/planeten/details/iskara/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Solitiden",
+      "href": "inhalte/spezies/Mentale Spezies/Solitiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Teryn-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=teryn-stern&objekt=teryn-elvar"
+    },
+    {
+      "titel": "Speziesdossier Solitiden",
+      "href": "inhalte/spezies/Mentale Spezies/Solitiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#080808",
+      "tiefe": "#111112",
+      "akzent": "#bec0c3",
+      "sand": "#c3bdab",
+      "moos": "#9db69c",
+      "ozean": "#7e9fb6",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#464749"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Astronomie"
+      ],
+      [
+        "Planet",
+        "Mutterplanet"
+      ],
+      [
+        "Kräfte",
+        "Gezeiten"
+      ],
+      [
+        "Tiefe",
+        "Geologie"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Mutterplanet": {
+      "gruppe": "Wissenschaft",
+      "icon": "◐",
+      "intro": "Mutterplanet von Elvar.",
+      "abschnitte": [
+        {
+          "titel": "Iskara",
+          "text": [
+            "Iskara ist die Heimatwelt der Solitiden: ein geologisch aktiver Silikatplanet mit 48 Prozent Wasserflächen, hydrothermalen Bruchsystemen und einer gewöhnlichen kohlenstoffbasierten Biosphäre. Seltene mineralische Formationen tragen die natürlich entstandenen Solitiden. Die globale Mitteltemperatur von etwa 12 °C ist ein Dossiermodellwert."
+          ],
+          "daten": [
+            [
+              "Typ",
+              "Bewohnter terrestrischer Silikatplanet"
+            ],
+            [
+              "Durchmesser",
+              "13.380 km"
+            ],
+            [
+              "Abstand des Mondes",
+              "265.028 km (39,6 Planetenradien)"
+            ]
+          ],
+          "verweise": [
+            [
+              "Iskara",
+              "inhalte/himmelskoerper/planeten/details/iskara/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Weitere Monde von Iskara",
+          "liste": [
+            "Thenn – Umlauf in 3 Tage"
+          ],
+          "verweise": [
+            [
+              "Thenn",
+              "inhalte/himmelskoerper/monde/details/thenn/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Gezeiten": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gezeiten von Elvar.",
+      "abschnitte": [
+        {
+          "titel": "Gezeitenkräfte",
+          "text": [
+            "Auf seiner Bahn in 265.028 km Abstand wirken starke Gezeitenkräfte von Iskara auf Elvar."
+          ]
+        }
+      ]
+    },
+    "Gebundene Rotation": {
+      "gruppe": "Wissenschaft",
+      "icon": "↻",
+      "intro": "Gebundene Rotation von Elvar.",
+      "abschnitte": [
+        {
+          "titel": "Rotation",
+          "text": [
+            "Elvar wendet Iskara vermutlich stets dieselbe Seite zu: Ein Tag dauert so lange wie ein Umlauf – 14,9 Tage."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Elvar auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Elvar",
+          "text": [
+            "Elvar ist der größere äußere Felsmond Iskaras. Seine Umlaufbahn liegt bei ungefähr 265.000 km; die angesetzte Masse beträgt rund 9,6 × 10²⁰ kg.",
+            "Elvar umkreist Iskara in 14,9 Tage."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Felsmond"
+            ],
+            [
+              "Sternsystem",
+              "Teryn-System"
+            ],
+            [
+              "Zentralkörper",
+              "Iskara"
+            ],
+            [
+              "Große Halbachse",
+              "265.028 km"
+            ],
+            [
+              "Umlaufzeit",
+              "14,9 Tage"
+            ],
+            [
+              "Durchmesser",
+              "1.640 km"
+            ],
+            [
+              "Masse",
+              "9,56 · 10^20 kg"
+            ],
+            [
+              "Schwerkraft",
+              "9,47 cm/s²"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -16 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Iskara",
+          "text": [
+            "Das Teryn-System ist die Heimat der Solitiden: Ihr Planet Iskara umkreist Teryn, und Elvar ist einer seiner Monde."
+          ],
+          "verweise": [
+            [
+              "Iskara",
+              "inhalte/himmelskoerper/planeten/details/iskara/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Solitiden",
+              "inhalte/spezies/Mentale Spezies/Solitiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Elvar im Teryn-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Iskara"
+            ],
+            [
+              "Große Halbachse",
+              "265.028 km"
+            ],
+            [
+              "Exzentrizität",
+              "0,006"
+            ],
+            [
+              "Bahnneigung",
+              "1,1°"
+            ],
+            [
+              "Umlaufzeit",
+              "14,9 Tage"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Teryn · Stern",
+              "Orangefarbener Hauptreihenstern (K4 V)"
+            ],
+            [
+              "Dareth · 0,15 AE",
+              "Heißer Gesteinsplanet"
+            ],
+            [
+              "Nura · 0,34 AE",
+              "Heißer terrestrischer Planet"
+            ],
+            [
+              "Iskara · 0,61 AE",
+              "Bewohnter terrestrischer Silikatplanet"
+            ],
+            [
+              "Veldros · 1,08 AE",
+              "Kalte Supererde"
+            ],
+            [
+              "Saevor · 2,84 AE",
+              "Gasriese"
+            ],
+            [
+              "Ynderal · 5,9 AE",
+              "Eisreicher Riesenplanet"
+            ],
+            [
+              "Veylan-Asteroidengürtel · 1,7–2 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußere Kleinkörperregion · 14–38 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Teryn",
+              "inhalte/himmelskoerper/sterne/details/teryn/hauptseite/index.html"
+            ],
+            [
+              "Dareth",
+              "inhalte/himmelskoerper/planeten/details/dareth/hauptseite/index.html"
+            ],
+            [
+              "Nura",
+              "inhalte/himmelskoerper/planeten/details/nura/hauptseite/index.html"
+            ],
+            [
+              "Iskara",
+              "inhalte/himmelskoerper/planeten/details/iskara/hauptseite/index.html"
+            ],
+            [
+              "Veldros",
+              "inhalte/himmelskoerper/planeten/details/veldros/hauptseite/index.html"
+            ],
+            [
+              "Saevor",
+              "inhalte/himmelskoerper/planeten/details/saevor/hauptseite/index.html"
+            ],
+            [
+              "Ynderal",
+              "inhalte/himmelskoerper/planeten/details/ynderal/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Elvar.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "820 km"
+            ],
+            [
+              "Masse",
+              "9,56 · 10^20 kg"
+            ],
+            [
+              "Mittlere Dichte",
+              "0,41 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "0,09 m/s² (0,01 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "0,39 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geologie": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Geologie von Elvar.",
+      "abschnitte": [
+        {
+          "titel": "Geologie",
+          "text": [
+            "Elvar ist geologisch weitgehend erstarrt; Einschläge haben seine Oberfläche geformt."
+          ]
+        }
+      ]
+    },
+    "Atmosphäre": {
+      "gruppe": "Natur",
+      "icon": "☁",
+      "intro": "Atmosphäre von Elvar.",
+      "abschnitte": [
+        {
+          "titel": "Gashülle",
+          "text": [
+            "Elvar besitzt keine nennenswerte Atmosphäre – dafür ist die Schwerkraft zu gering."
+          ]
+        }
+      ]
+    },
+    "Klima": {
+      "gruppe": "Natur",
+      "icon": "☀",
+      "intro": "Klima von Elvar.",
+      "abschnitte": [
+        {
+          "titel": "Temperatur",
+          "text": [
+            "Bei 0,61 AE Abstand zu Teryn liegt die Gleichgewichtstemperatur von Elvar bei rund -16 °C – gemäßigt."
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Elvar.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Elvar entstand zusammen mit dem Teryn-System vor rund 6,1 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Elvar.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Ist der Mond eingefangen oder mit seinem Planeten entstanden?",
+            "Welche Spuren tragen seine ältesten Krater?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Elvar ist mit allen Bahndaten im Teryn-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=teryn-stern&objekt=teryn-elvar"
+            ]
+          ]
+        },
+        {
+          "titel": "Untersuchung im Teryn-System",
+          "text": [
+            "Welche Folgen hatten die größten Einschläge für die Kruste dieses äußeren Iskara-Mondes?"
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Elvar.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Größter Mond von Iskara"
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Elvar.",
+      "abschnitte": [
+        {
+          "titel": "Illustrationsmotiv",
+          "bild": true,
+          "bildtext": "Illustration anhand eines vorhandenen Motivs. Sie zeigt den Himmelskörpertyp und keine bestätigten Oberflächendetails."
+        }
+      ]
+    }
+  }
+}

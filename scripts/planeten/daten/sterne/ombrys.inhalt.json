@@ -1,0 +1,596 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Ombrys",
+  "genitiv": "von Ombrys",
+  "dossierName": "Ombrys-Dossier",
+  "klasse": "Orangefarbener Zwerg (K2 V)",
+  "intro": "Ombrys ist ein ruhiger, orangefarbener Zwerg der Spektralklasse K2 V mit 78 % der Sonnenmasse und 36 % ihrer Leuchtkraft – Zentralstern von Mypzla, der Ursprungswelt der Mykonoiden. Ombrys ist der Zentralstern des Ombrys-Systems.",
+  "globusDaten": {
+    "planet": "leuchtender-orangefarbener-riesenstern",
+    "klasse": "Vulkan",
+    "radius": 528732000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=mypzla-stern",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-5C40C103B9"
+    ],
+    [
+      "Typ",
+      "Orangefarbener Zwerg (K2 V)"
+    ],
+    [
+      "Sternsystem",
+      "Ombrys-System"
+    ],
+    [
+      "Masse",
+      "0,78 Sonnenmassen"
+    ],
+    [
+      "Radius",
+      "0,76 Sonnenradien"
+    ],
+    [
+      "Leuchtkraft",
+      "0,36 Sonnenleuchtkräfte"
+    ],
+    [
+      "Oberflächentemperatur",
+      "ca. 4.950 K"
+    ],
+    [
+      "Alter",
+      "ca. 6,2 Mrd. Jahre"
+    ],
+    [
+      "Monde",
+      "5 (Ombrys I, Mypzla, Ombrys III, Ombrys IV, Goldschweif)"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Ombrys-System"
+    ],
+    [
+      "Entfernung zur Sonne",
+      "26 Lichtjahre"
+    ],
+    [
+      "Nächste Nachbarsysteme",
+      "Narev-System (8,7 Lj), Osselyr-System (17,8 Lj)"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Ombrys im Ombrys-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=mypzla-stern",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Ombrys I",
+      "href": "inhalte/himmelskoerper/planeten/details/ombrys-i/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Mypzla",
+      "href": "inhalte/himmelskoerper/planeten/details/mypzla/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Ombrys III",
+      "href": "inhalte/himmelskoerper/planeten/details/ombrys-iii/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Ombrys IV",
+      "href": "inhalte/himmelskoerper/planeten/details/ombrys-iv/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◐",
+      "art": "Mond",
+      "titel": "Goldschweif",
+      "href": "inhalte/himmelskoerper/kometen/details/goldschweif/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Mykonoiden",
+      "titel": "Mypzla",
+      "href": "inhalte/himmelskoerper/planeten/details/mypzla/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Mykonoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Mykonoiden/hauptseite/hauptseite.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Ombrys-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=mypzla-stern"
+    },
+    {
+      "titel": "Speziesdossier Mykonoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Mykonoiden/hauptseite/hauptseite.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#0d0905",
+      "tiefe": "#1c130b",
+      "akzent": "#ffca98",
+      "sand": "#ffc68f",
+      "moos": "#d9c276",
+      "ozean": "#ada981",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#734e2c"
+    },
+    "schichten": [
+      [
+        "Strahlung",
+        "Leuchtkraft"
+      ],
+      [
+        "Hülle",
+        "Spektralklasse"
+      ],
+      [
+        "Kern",
+        "Fusion"
+      ],
+      [
+        "Zeit",
+        "Lebenszyklus"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Spektralklasse": {
+      "gruppe": "Wissenschaft",
+      "icon": "✦",
+      "intro": "Spektralklasse von Ombrys.",
+      "abschnitte": [
+        {
+          "titel": "Einordnung",
+          "daten": [
+            [
+              "Typ",
+              "Orangefarbener Zwerg (K2 V)"
+            ],
+            [
+              "Oberflächentemperatur",
+              "ca. 4.950 K"
+            ],
+            [
+              "Farbe",
+              "orange"
+            ]
+          ]
+        }
+      ]
+    },
+    "Fusion": {
+      "gruppe": "Wissenschaft",
+      "icon": "☀",
+      "intro": "Fusion von Ombrys.",
+      "abschnitte": [
+        {
+          "titel": "Energiequelle",
+          "text": [
+            "Im Kern von Ombrys verschmilzt Wasserstoff zu Helium."
+          ]
+        }
+      ]
+    },
+    "Leuchtkraft": {
+      "gruppe": "Wissenschaft",
+      "icon": "☀",
+      "intro": "Leuchtkraft von Ombrys.",
+      "abschnitte": [
+        {
+          "titel": "Strahlung",
+          "daten": [
+            [
+              "Leuchtkraft",
+              "0,36 Sonnenleuchtkräfte"
+            ],
+            [
+              "Habitable Zone",
+              "0,57–1 AE"
+            ]
+          ]
+        }
+      ]
+    },
+    "Lebenszyklus": {
+      "gruppe": "Wissenschaft",
+      "icon": "⧗",
+      "intro": "Lebenszyklus von Ombrys.",
+      "abschnitte": [
+        {
+          "titel": "Lebensdauer",
+          "text": [
+            "Ein Stern mit 0,78 Sonnenmassen bleibt rund 19 Milliarden Jahre auf der Hauptreihe; Ombrys ist etwa 6,2 Milliarden Jahre alt."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Ombrys auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Ombrys",
+          "text": [
+            "Ombrys ist ein ruhiger, orangefarbener Zwerg der Spektralklasse K2 V mit 78 % der Sonnenmasse und 36 % ihrer Leuchtkraft – Zentralstern von Mypzla, der Ursprungswelt der Mykonoiden.",
+            "Ombrys ist der Zentralstern des Ombrys-Systems."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Orangefarbener Zwerg (K2 V)"
+            ],
+            [
+              "Sternsystem",
+              "Ombrys-System"
+            ],
+            [
+              "Masse",
+              "0,78 Sonnenmassen"
+            ],
+            [
+              "Radius",
+              "0,76 Sonnenradien"
+            ],
+            [
+              "Leuchtkraft",
+              "0,36 Sonnenleuchtkräfte"
+            ],
+            [
+              "Oberflächentemperatur",
+              "ca. 4.950 K"
+            ],
+            [
+              "Alter",
+              "ca. 6,2 Mrd. Jahre"
+            ],
+            [
+              "Monde",
+              "5 (Ombrys I, Mypzla, Ombrys III, Ombrys IV, Goldschweif)"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Mypzla",
+          "text": [
+            "Das Ombrys-System ist die Heimat der Mykonoiden: Ihr Planet Mypzla umkreist Ombrys."
+          ],
+          "verweise": [
+            [
+              "Mypzla",
+              "inhalte/himmelskoerper/planeten/details/mypzla/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Mykonoiden",
+              "inhalte/spezies/Biologische Spezies/Mykonoiden/hauptseite/hauptseite.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Ombrys im Raum.",
+      "abschnitte": [
+        {
+          "titel": "Lage im Raum",
+          "daten": [
+            [
+              "Entfernung zur Sonne",
+              "26 Lichtjahre"
+            ],
+            [
+              "Nächste Nachbarsysteme",
+              "Narev-System (8,7 Lj), Osselyr-System (17,8 Lj), Orvaya-System (20,7 Lj)"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Ombrys · Stern",
+              "Orangefarbener Zwerg (K2 V)"
+            ],
+            [
+              "Ombrys I · 0,24 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Mypzla · 0,66 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Ombrys III · 1,25 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Ombrys IV · 4,6 AE",
+              "Gasriese"
+            ],
+            [
+              "Sporengürtel · 1,8–2,4 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 30–44 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Ombrys I",
+              "inhalte/himmelskoerper/planeten/details/ombrys-i/hauptseite/index.html"
+            ],
+            [
+              "Mypzla",
+              "inhalte/himmelskoerper/planeten/details/mypzla/hauptseite/index.html"
+            ],
+            [
+              "Ombrys III",
+              "inhalte/himmelskoerper/planeten/details/ombrys-iii/hauptseite/index.html"
+            ],
+            [
+              "Ombrys IV",
+              "inhalte/himmelskoerper/planeten/details/ombrys-iv/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Ombrys.",
+      "abschnitte": [
+        {
+          "titel": "Physik",
+          "daten": [
+            [
+              "Masse",
+              "0,78 Sonnenmassen"
+            ],
+            [
+              "Radius",
+              "0,76 Sonnenradien"
+            ],
+            [
+              "Leuchtkraft",
+              "0,36 Sonnenleuchtkräfte"
+            ],
+            [
+              "Oberflächentemperatur",
+              "ca. 4.950 K"
+            ],
+            [
+              "Alter",
+              "ca. 6,2 Mrd. Jahre"
+            ],
+            [
+              "Monde",
+              "5 (Ombrys I, Mypzla, Ombrys III, Ombrys IV, Goldschweif)"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Ombrys.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Ombrys entstand zusammen mit dem Ombrys-System vor rund 6,2 Milliarden Jahren."
+          ]
+        }
+      ]
+    },
+    "Umgebung": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Umgebung von Ombrys.",
+      "abschnitte": [
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Ombrys · Stern",
+              "Orangefarbener Zwerg (K2 V)"
+            ],
+            [
+              "Ombrys I · 0,24 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Mypzla · 0,66 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Ombrys III · 1,25 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Ombrys IV · 4,6 AE",
+              "Gasriese"
+            ],
+            [
+              "Sporengürtel · 1,8–2,4 AE",
+              "Asteroidengürtel"
+            ],
+            [
+              "Äußeres Kometengebiet · 30–44 AE",
+              "Kometengebiet"
+            ]
+          ],
+          "verweise": [
+            [
+              "Ombrys I",
+              "inhalte/himmelskoerper/planeten/details/ombrys-i/hauptseite/index.html"
+            ],
+            [
+              "Mypzla",
+              "inhalte/himmelskoerper/planeten/details/mypzla/hauptseite/index.html"
+            ],
+            [
+              "Ombrys III",
+              "inhalte/himmelskoerper/planeten/details/ombrys-iii/hauptseite/index.html"
+            ],
+            [
+              "Ombrys IV",
+              "inhalte/himmelskoerper/planeten/details/ombrys-iv/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Nachbarsysteme",
+          "liste": [
+            "Narev-System – 8,7 Lichtjahre",
+            "Osselyr-System – 17,8 Lichtjahre",
+            "Orvaya-System – 20,7 Lichtjahre",
+            "Halvorn-System – 21,6 Lichtjahre",
+            "TRAPPIST-1-System – 23,7 Lichtjahre"
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Ombrys.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Wie stark schwankt die magnetische Aktivität?",
+            "Wie hat sich die Leuchtkraft seit der Entstehung verändert?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Ombrys ist mit allen Bahndaten im Ombrys-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=mypzla-stern"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Ombrys.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "5 Monde: Ombrys I, Mypzla, Ombrys III, Ombrys IV, Goldschweif"
+          ]
+        },
+        {
+          "titel": "Monde",
+          "karten": [
+            {
+              "titel": "Ombrys I",
+              "text": "7.200 km Durchmesser, Umlauf in 48,6 Tage. Ombrys I ist ein kleiner, sonnennaher Gesteinsplanet mit gebundener Rotation."
+            },
+            {
+              "titel": "Mypzla",
+              "text": "13.800 km Durchmesser, Umlauf in 221,8 Tage. Mypzla ist die Ursprungswelt der Mykonoiden: eine warme, feuchte Super-Erde mit goldfarbenen Myzelteppichen, riesigen Pilzplateaus und einem schimmernden Sporendunst in der Luft."
+            },
+            {
+              "titel": "Ombrys III",
+              "text": "9.400 km Durchmesser, Umlauf in 578 Tage. Ombrys III ist eine kalte, trockene Gesteinswelt mit dünner Atmosphäre."
+            },
+            {
+              "titel": "Ombrys IV",
+              "text": "124.000 km Durchmesser, Umlauf in 11,2 Jahre. Ombrys IV ist ein ockerfarbener Gasriese mit breiten Wolkenbändern."
+            },
+            {
+              "titel": "Goldschweif",
+              "text": "14 km Durchmesser, Umlauf in 47,1 Jahre. Ein Komet mit ungewöhnlich goldfarbenem Schweif, dessen Staub organische Verbindungen enthält. Ob solche Kometen einst Bausteine des Lebens nach Mypzla brachten, wird erforscht."
+            }
+          ],
+          "verweise": [
+            [
+              "Ombrys I",
+              "inhalte/himmelskoerper/planeten/details/ombrys-i/hauptseite/index.html"
+            ],
+            [
+              "Mypzla",
+              "inhalte/himmelskoerper/planeten/details/mypzla/hauptseite/index.html"
+            ],
+            [
+              "Ombrys III",
+              "inhalte/himmelskoerper/planeten/details/ombrys-iii/hauptseite/index.html"
+            ],
+            [
+              "Ombrys IV",
+              "inhalte/himmelskoerper/planeten/details/ombrys-iv/hauptseite/index.html"
+            ],
+            [
+              "Goldschweif",
+              "inhalte/himmelskoerper/kometen/details/goldschweif/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Ombrys.",
+      "abschnitte": [
+        {
+          "titel": "Ombrys – Archivbild",
+          "bild": true,
+          "bildtext": "Ombrys"
+        }
+      ]
+    }
+  }
+}

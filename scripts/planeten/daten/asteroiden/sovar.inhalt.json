@@ -1,0 +1,462 @@
+{
+  "_erzeugt": "koerper-bauen",
+  "name": "Sovar",
+  "genitiv": "von Sovar",
+  "dossierName": "Sovar-Dossier",
+  "klasse": "Asteroid",
+  "intro": "An Sovars kantigen Bruchflächen tritt Pyroxen zutage. Seine geneigten Staubterrassen sammeln Material, das nach kleinen Einschlägen wieder auf die Oberfläche fällt. Sovar umkreist Esvar in 1,48 AE Abstand und braucht für einen Umlauf 726,2 Tage.",
+  "globusDaten": {
+    "planet": "facettierter-pyroxenasteroid-im-all",
+    "klasse": "Gestein",
+    "radius": 36000
+  },
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=esvar-stern&objekt=esvar-sovar",
+  "grunddaten": [
+    [
+      "Archiv-ID",
+      "AP-CEDA8D64C2"
+    ],
+    [
+      "Typ",
+      "Asteroid"
+    ],
+    [
+      "Sternsystem",
+      "Esvar-System"
+    ],
+    [
+      "Zentralkörper",
+      "Esvar"
+    ],
+    [
+      "Große Halbachse",
+      "1,48 AE"
+    ],
+    [
+      "Umlaufzeit",
+      "726,2 Tage"
+    ],
+    [
+      "Durchmesser",
+      "72 km"
+    ],
+    [
+      "Masse",
+      "6,57 · 10^17 kg"
+    ],
+    [
+      "Schwerkraft",
+      "3,38 cm/s²"
+    ],
+    [
+      "Gleichgewichtstemperatur",
+      "ca. -109 °C"
+    ]
+  ],
+  "position": [
+    [
+      "Sternsystem",
+      "Esvar-System"
+    ],
+    [
+      "Zentralstern",
+      "Esvar",
+      "inhalte/himmelskoerper/sterne/details/esvar/hauptseite/index.html"
+    ],
+    [
+      "Abstand",
+      "1,48 AE"
+    ]
+  ],
+  "verknuepfungen": [
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Sovar im Esvar-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=esvar-stern&objekt=esvar-sovar",
+      "route": null
+    },
+    {
+      "icon": "☀",
+      "art": "Zentralstern",
+      "titel": "Esvar",
+      "href": "inhalte/himmelskoerper/sterne/details/esvar/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "✿",
+      "art": "Heimatwelt der Parasitoiden",
+      "titel": "Neraveth",
+      "href": "inhalte/himmelskoerper/planeten/details/neraveth/hauptseite/index.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Parasitoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Parasitoiden/hauptseite/Spezies.html",
+      "route": null
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "Sternenkarte · Esvar-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=esvar-stern&objekt=esvar-sovar"
+    },
+    {
+      "titel": "Speziesdossier Parasitoiden",
+      "href": "inhalte/spezies/Biologische Spezies/Parasitoiden/hauptseite/Spezies.html"
+    }
+  ],
+  "design": {
+    "farben": {
+      "nacht": "#080604",
+      "tiefe": "#120c08",
+      "akzent": "#c5a288",
+      "sand": "#c9a484",
+      "moos": "#a39468",
+      "ozean": "#837f6c",
+      "glas": "rgba(8, 12, 18, .76)",
+      "glas-hell": "rgba(16, 22, 32, .82)",
+      "linie": "rgba(255, 255, 255, .12)",
+      "linie-hell": "rgba(255, 255, 255, .3)",
+      "text": "#eef2f6",
+      "leise": "#a8b0bc",
+      "aporia-page-tint": "#4b3220"
+    },
+    "schichten": [
+      [
+        "Orbit",
+        "Bahn"
+      ],
+      [
+        "Material",
+        "Zusammensetzung"
+      ],
+      [
+        "Zeit",
+        "Herkunft"
+      ]
+    ]
+  },
+  "kapitel": {
+    "Zusammensetzung": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Zusammensetzung von Sovar.",
+      "abschnitte": [
+        {
+          "titel": "Material",
+          "liste": [
+            "Silikate",
+            "Eisen und Nickel",
+            "Seltene Metalle"
+          ],
+          "schichten": [
+            [
+              "Regolith",
+              "Staub und Gesteinsschutt"
+            ],
+            [
+              "Trümmerkörper",
+              "Lose zusammengehaltene Gesteinsbrocken"
+            ]
+          ]
+        }
+      ]
+    },
+    "Bahn": {
+      "gruppe": "Wissenschaft",
+      "icon": "◌",
+      "intro": "Bahn von Sovar.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Esvar"
+            ],
+            [
+              "Große Halbachse",
+              "1,48 AE (221,4 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,01"
+            ],
+            [
+              "Bahnneigung",
+              "0,9°"
+            ],
+            [
+              "Umlaufzeit",
+              "726,2 Tage"
+            ],
+            [
+              "Einstrahlung",
+              "0,169-fach der Erde"
+            ]
+          ]
+        }
+      ]
+    },
+    "Herkunft": {
+      "gruppe": "Weitere",
+      "icon": "⧗",
+      "intro": "Herkunft von Sovar.",
+      "abschnitte": [
+        {
+          "titel": "Herkunft",
+          "text": [
+            "Sovar ist ein Überrest aus der Entstehungszeit des Esvar-Systems."
+          ]
+        }
+      ]
+    },
+    "Allgemeines": {
+      "gruppe": "Weitere",
+      "icon": "▤",
+      "intro": "Sovar auf einen Blick.",
+      "abschnitte": [
+        {
+          "titel": "Kurzprofil",
+          "bild": true,
+          "bildtext": "Sovar",
+          "text": [
+            "An Sovars kantigen Bruchflächen tritt Pyroxen zutage. Seine geneigten Staubterrassen sammeln Material, das nach kleinen Einschlägen wieder auf die Oberfläche fällt.",
+            "Sovar umkreist Esvar in 1,48 AE Abstand und braucht für einen Umlauf 726,2 Tage."
+          ]
+        },
+        {
+          "titel": "Steckbrief",
+          "daten": [
+            [
+              "Typ",
+              "Asteroid"
+            ],
+            [
+              "Sternsystem",
+              "Esvar-System"
+            ],
+            [
+              "Zentralkörper",
+              "Esvar"
+            ],
+            [
+              "Große Halbachse",
+              "1,48 AE"
+            ],
+            [
+              "Umlaufzeit",
+              "726,2 Tage"
+            ],
+            [
+              "Durchmesser",
+              "72 km"
+            ],
+            [
+              "Masse",
+              "6,57 · 10^17 kg"
+            ],
+            [
+              "Schwerkraft",
+              "3,38 cm/s²"
+            ],
+            [
+              "Gleichgewichtstemperatur",
+              "ca. -109 °C"
+            ]
+          ]
+        },
+        {
+          "titel": "Im System von Neraveth",
+          "text": [
+            "Das Esvar-System ist die Heimat der Parasitoiden: Ihr Planet Neraveth umkreist Esvar."
+          ],
+          "verweise": [
+            [
+              "Neraveth",
+              "inhalte/himmelskoerper/planeten/details/neraveth/hauptseite/index.html"
+            ],
+            [
+              "Speziesdossier Parasitoiden",
+              "inhalte/spezies/Biologische Spezies/Parasitoiden/hauptseite/Spezies.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Astronomie": {
+      "gruppe": "Wissenschaft",
+      "icon": "✧",
+      "intro": "Sovar im Esvar-System.",
+      "abschnitte": [
+        {
+          "titel": "Bahn",
+          "daten": [
+            [
+              "Zentralkörper",
+              "Esvar"
+            ],
+            [
+              "Große Halbachse",
+              "1,48 AE (221,4 Mio. km)"
+            ],
+            [
+              "Exzentrizität",
+              "0,01"
+            ],
+            [
+              "Bahnneigung",
+              "0,9°"
+            ],
+            [
+              "Umlaufzeit",
+              "726,2 Tage"
+            ],
+            [
+              "Einstrahlung",
+              "0,169-fach der Erde"
+            ]
+          ]
+        },
+        {
+          "titel": "Körper des Systems",
+          "zeitleiste": [
+            [
+              "Esvar · Stern",
+              "Orangefarbener Hauptreihenstern (K2 V)"
+            ],
+            [
+              "Vask · 0,28 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Neraveth · 0,63 AE",
+              "Gesteinsplanet"
+            ],
+            [
+              "Velun · 3,7 AE",
+              "Gasriese"
+            ]
+          ],
+          "verweise": [
+            [
+              "Esvar",
+              "inhalte/himmelskoerper/sterne/details/esvar/hauptseite/index.html"
+            ],
+            [
+              "Vask",
+              "inhalte/himmelskoerper/planeten/details/vask/hauptseite/index.html"
+            ],
+            [
+              "Neraveth",
+              "inhalte/himmelskoerper/planeten/details/neraveth/hauptseite/index.html"
+            ],
+            [
+              "Velun",
+              "inhalte/himmelskoerper/planeten/details/velun/hauptseite/index.html"
+            ]
+          ]
+        }
+      ]
+    },
+    "Physik": {
+      "gruppe": "Wissenschaft",
+      "icon": "⚛",
+      "intro": "Physik von Sovar.",
+      "abschnitte": [
+        {
+          "titel": "Kerndaten",
+          "daten": [
+            [
+              "Radius",
+              "36 km"
+            ],
+            [
+              "Masse",
+              "6,57 · 10^17 kg"
+            ],
+            [
+              "Mittlere Dichte",
+              "3,36 g/cm³"
+            ],
+            [
+              "Oberflächenschwerkraft",
+              "0,03 m/s² (0,003 g)"
+            ],
+            [
+              "Fluchtgeschwindigkeit",
+              "0,05 km/s"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geschichte": {
+      "gruppe": "Zivilisation",
+      "icon": "▤",
+      "intro": "Geschichte von Sovar.",
+      "abschnitte": [
+        {
+          "titel": "Entstehung",
+          "text": [
+            "Sovar besteht aus Material, das sich bei der Entstehung des Esvar-Systems nicht zu einem Planeten vereinte."
+          ]
+        }
+      ]
+    },
+    "Erforschung": {
+      "gruppe": "Weitere",
+      "icon": "✧",
+      "intro": "Erforschung von Sovar.",
+      "abschnitte": [
+        {
+          "titel": "Offene Fragen",
+          "liste": [
+            "Ist der Körper ein Bruchstück eines größeren Körpers?",
+            "Welche Rohstoffe birgt er?"
+          ]
+        },
+        {
+          "titel": "In der Sternenkarte",
+          "text": [
+            "Sovar ist mit allen Bahndaten im Esvar-System der Sternenkarte eingetragen."
+          ],
+          "verweise": [
+            [
+              "In der Sternenkarte zeigen",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=esvar-stern&objekt=esvar-sovar"
+            ]
+          ]
+        }
+      ]
+    },
+    "Besonderheiten": {
+      "gruppe": "Weitere",
+      "icon": "✺",
+      "intro": "Besonderheiten von Sovar.",
+      "abschnitte": [
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "An Sovars kantigen Bruchflächen tritt Pyroxen zutage. Seine geneigten Staubterrassen sammeln Material, das nach kleinen Einschlägen wieder auf die Oberfläche fällt."
+          ]
+        }
+      ]
+    },
+    "Medienarchiv": {
+      "gruppe": "Weitere",
+      "icon": "▣",
+      "intro": "Medienarchiv von Sovar.",
+      "abschnitte": [
+        {
+          "titel": "Sovar – Archivbild",
+          "bild": true,
+          "bildtext": "Sovar"
+        }
+      ]
+    }
+  }
+}
