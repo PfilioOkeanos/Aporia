@@ -1,5 +1,50 @@
 # Gravanten – Forschung
+# Gravanten – Forschung
 
-**Stand** – Konzeptgrundlage mit Ausarbeitungsideen.
+## GR-F01 – Biologische Statik
 
-klCcqnE9ye2C91mujLeAKHTpPmJ4GIGocx0Rv3uxqWUJbQtwvDrcyH18Ij2vRCgFLizxCaAEnxcMFTXFQ505rTk7vzaV2XNjcBQfZ29gFqLxStGYq1JDQy5Bg27kUhwQwI8RptI2upG4wo-aNL7zfiS9ijgNeILAUVHGu4JwpoY
+- Untersuchung natürlicher Tragwerke und dynamischer Lastverteilung innerhalb gigantischer Organismen
+
+## GR-F02 – Biologische Verbundwerkstoffe
+
+- Erforschung leichter, belastbarer und selbstregenerierender mineralisch-organischer Materialien
+
+## GR-F03 – Gravitationsbiologie
+
+- Untersuchung der Auswirkungen unterschiedlicher Schwerkraft auf Körperwachstum, Organe und Fortbewegung
+
+## GR-F04 – Verteilte Organversorgung
+
+- Erforschung regionaler Kreislaufsysteme zur Versorgung außergewöhnlich großer Körperstrukturen
+
+## GR-F05 – Gigantische Nervensysteme
+
+- Untersuchung der Signalübertragung über große körperliche Entfernungen
+
+## GR-F06 – Bewegungsmechanik
+
+- Erforschung energieeffizienter mehrbeiniger Fortbewegung und adaptiver Skelettspannung
+
+## GR-F07 – Seismische Kommunikation
+
+- Analyse und technische Übertragung kontrollierter Bodenerschütterungen als Informationsmedium
+
+## GR-F08 – Landschaftsstatik
+
+- Untersuchung der Tragfähigkeit natürlicher Geländeformationen und planetarer Oberflächen
+
+## GR-F09 – Makroökologie
+
+- Erforschung der Wechselwirkungen gigantischer Einzelorganismen mit komplexen Ökosystemen
+
+## GR-F10 – Regenerative Skelettmedizin
+
+- Entwicklung biologischer Reparaturverfahren für großdimensionierte tragende Körperstrukturen
+
+## GR-F11 – Gravitationsentlastung
+
+- Forschung an technischen Unterstützungssystemen für Aufenthalte unter erhöhter Schwerkraft, ohne eine funktionierende künstliche Gravitationskontrolle vorauszusetzen
+
+## GR-F12 – Speziesübergreifende Kommunikation
+
+- Entwicklung universeller Schnittstellen zwischen gravantischen Kommunikationsformen und anderen intelligenten Lebensformen

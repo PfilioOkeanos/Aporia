@@ -1,0 +1,146 @@
+# Biophäriden – Spielintegration
+
+## Grundlegende Spielintegration
+
+Biophäriden stellen eine besondere Form intelligenter NPCs dar. Ein einzelner Charakter kann über mehrere Kontinente verteilt sein und an zahlreichen geografischen Standorten mit dem Spieler interagieren.
+
+Der gesamte Biophärid besitzt eine gemeinsame Persönlichkeit, während regionale Schnittstellen unterschiedliche lokale Informationen und Funktionen bereitstellen.
+
+## Begegnungen
+
+- Persönliche Gespräche über biologische Kommunikationsorgane.
+- Kontakt über technische Terminals.
+- Begegnungen mit ferngesteuerten Vertretungssystemen.
+- Kommunikation innerhalb wissenschaftlicher Einrichtungen.
+- Interaktion an unterschiedlichen Körperregionen desselben Individuums.
+- Diplomatische Gespräche über interstellare Kommunikationsnetze.
+
+## Erkundung
+
+- Erkundung gigantischer lebender Organlandschaften.
+- Untersuchung neuronaler Zentren.
+- Reisen entlang biologischer Verbindungskorridore.
+- Erkundung abgestorbener Körperregionen.
+- Untersuchung regenerierender Gewebe.
+- Erforschung eigenständiger Ökosysteme zwischen Körperregionen.
+- Zugang zu geschützten biologischen Hohlräumen.
+- Entdeckung historisch bedeutender Narbenlandschaften.
+
+## Medizinische Missionen
+
+- Untersuchung beschädigter Organsysteme.
+- Identifikation unbekannter Krankheitserreger.
+- Wiederherstellung biologischer Transportkanäle.
+- Behandlung regionaler Stoffwechselstörungen.
+- Stabilisierung geschädigter Nervengewebe.
+- Reparatur technischer Versorgungsanlagen.
+- Schutz regenerierender Körperregionen.
+- Wiederherstellung unterbrochener Kommunikationswege.
+
+## Erinnerungsmissionen
+
+- Untersuchung verlorener neuronaler Regionen.
+- Rekonstruktion beschädigter historischer Erinnerungen.
+- Vergleich biologischer Erinnerungen mit externen Archiven.
+- Aufklärung widersprüchlicher historischer Überlieferungen.
+- Wiederherstellung alter Kommunikationsschnittstellen.
+- Untersuchung unbekannter früherer Kontakte mit anderen Spezies.
+
+Der Spieler kann Erinnerungen nicht automatisch oder ohne Zustimmung auslesen.
+
+## Diplomatische Missionen
+
+- Vermittlung zwischen Biophäriden und planetaren Siedlungen.
+- Aushandlung gemeinsamer Ressourcennutzung.
+- Verhandlung über biologische Wachstumsgebiete.
+- Untersuchung illegaler Gewebeentnahmen.
+- Schutz individueller Rechte.
+- Vermittlung zwischen beteiligten Fraktionen.
+- Aushandlung wissenschaftlicher Kooperationen.
+
+## Fortpflanzungsmissionen
+
+- Suche nach geeigneten Entwicklungsgebieten.
+- Untersuchung potenzieller Kolonisationswelten.
+- Transport genetischer Fortpflanzungskapseln.
+- Aufbau geschützter Aufzuchtstationen.
+- Schutz junger Biophäriden.
+- Überwachung geeigneter Umweltbedingungen.
+
+## Gefahren
+
+- Aggressive parasitäre Organismen.
+- Instabile biologische Hohlräume.
+- Freisetzung von Stoffwechselgasen.
+- Überschwemmte Versorgungskanäle.
+- Infizierte Körperregionen.
+- Zusammenbrechende Gewebestrukturen.
+- Biologische Abwehrreaktionen.
+- Beschädigte technische Anlagen.
+- Konflikte mit illegal operierenden Unternehmen.
+
+## Kampfsystem
+
+Aufgrund ihrer Größe können ausgewachsene Biophäriden nicht wie gewöhnliche NPCs bekämpft werden.
+
+Konflikte betreffen stattdessen einzelne Organe, regionale Abwehrsysteme, technische Sicherheitseinrichtungen oder lokale Körperregionen.
+
+Beschädigungen werden abhängig von ihrer Art und Position unterschiedlich bewertet.
+
+- Oberflächliche Verletzungen.
+- Lokale Gewebezerstörung.
+- Unterbrechung von Transportkanälen.
+- Beschädigung neuronaler Strukturen.
+- Beeinträchtigung regionaler Sinnesorgane.
+- Langfristige Folgen für den Gesamtorganismus.
+
+## Ressourcen
+
+- Abgestoßene Schutzmembranen.
+- Regenerative Biomaterialien.
+- Biologische Filtergewebe.
+- Spezialisierte Stoffwechselprodukte.
+- Organische Isolationsmaterialien.
+- Biologisch erzeugte Polymerverbindungen.
+- Kontrolliert produzierte medizinische Substanzen.
+- Abgestorbene strukturelle Gewebefasern.
+
+Die Entnahme lebender Körperbestandteile ist nicht grundsätzlich erlaubt.
+
+## Reputationssystem
+
+Der Spieler kann innerhalb derselben Welt sowohl regionale als auch individuumsweite Auswirkungen seiner Handlungen erleben.
+
+- Vertrauen.
+- Medizinische Unterstützung.
+- Wirtschaftliche Zusammenarbeit.
+- Zugang zu geschützten Körperregionen.
+- Wissenschaftliche Berechtigungen.
+- Diplomatische Beziehungen.
+- Feindseligkeit.
+- Langfristige Folgen biologischer Beschädigungen.
+
+## Langfristige Spielweltveränderungen
+
+- Wachstum neuer Körperregionen.
+- Rückbildung beschädigter Organe.
+- Regeneration früherer Verletzungen.
+- Wiederherstellung biologischer Verbindungskorridore.
+- Veränderung lokaler Ökosysteme.
+- Entwicklung neuer technischer Anlagen.
+- Veränderungen planetarer Schutzgebiete.
+
+Langfristige biologische Prozesse können durch verschiedene Spielzeitabschnitte und Handlungsfortschritte dargestellt werden.
+
+## Technische Spielintegration
+
+- Ein ausgewachsener Biophärid besitzt eine übergeordnete CharacterID.
+- Einzelne Organe und Körperregionen besitzen zusätzliche persistente Identitäten.
+- Regionale Gesundheitszustände werden getrennt gespeichert.
+- Globale Beziehungen und Persönlichkeit bleiben dem Gesamtindividuum zugeordnet.
+- Körperregionen können unabhängig voneinander geladen und dargestellt werden.
+- Das gesamte Lebewesen muss nicht gleichzeitig vollständig simuliert werden.
+- Biologische Veränderungen werden regional gespeichert und später wiederhergestellt.
+- Entfernte Regionen werden durch vereinfachte Zustandsmodelle simuliert.
+
+Damit können Biophäriden innerhalb einer sehr großen offenen Spielwelt als zusammenhängende Charaktere existieren, ohne dass ihre vollständige Anatomie jederzeit aktiv geladen sein muss.

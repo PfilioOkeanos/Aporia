@@ -1,0 +1,24 @@
+# Subterraner – Allgemeines
+
+- **Speziesname:** Subterraner
+- **Bezeichnung:** Die Tiefenwanderer
+- **Speziesgruppe:** Gigantische Lebensformen
+- **Lebensform:** Organische, hochintelligente Großlebewesen
+- **Körperlänge:** 200–800 Meter bei ausgewachsenen Individuen
+- **Körperbau:** Langgestreckter, mehrgliedriger Körper mit aufrichtbaren Körperabschnitten.
+- **Körperhaltung:** Überwiegend horizontal, mit teilweise vertikal aufgerichtetem Vorderkörper.
+- **Lebensraum:** Gewaltige natürliche und künstlich erweiterte Höhlensysteme.
+- **Umgebungsbedingungen:** Dunkelheit, erhöhte Luftfeuchtigkeit, geothermische Aktivität und regional unterschiedliche Druckverhältnisse.
+- **Bewusstsein:** Jedes Individuum besitzt eine eigenständige Persönlichkeit.
+- **Intelligenzform:** Stark ausgeprägtes räumliches, analytisches und langfristiges Denken.
+- **Wahrnehmung:** Mechanische Schwingungen, Druckveränderungen, Temperaturunterschiede und akustische Signale.
+- **Gedächtnis:** Außergewöhnlich leistungsfähiges räumliches Langzeitgedächtnis.
+- **Lebenserwartung:** Ungefähr 2.000–6.000 Jahre.
+- **Lebensweise:** Wandernd, territorial flexibel und an unterirdische Wanderkorridore gebunden.
+- **Ernährung:** Organische Substanzen, Mikroorganismen und nährstoffreiche mineralische Ablagerungen.
+- **Kommunikation:** Körperschwingungen, gerichtete Schallimpulse und unmittelbare Kontaktkommunikation.
+- **Zivilisationsform:** Dezentrale unterirdische Zivilisation mit spezialisierten Versorgungseinrichtungen.
+- **Technologischer Schwerpunkt:** Geotechnik, Strukturstabilisierung, seismische Sensorik und Informationsspeicherung.
+- **Besonderheit:** Individuen können geologische Veränderungen über Jahrtausende beobachten und miteinander vergleichen.
+- **Heimatplanet:** Noch nicht zugeordnet.
+- **Fraktionszugehörigkeit:** Noch nicht festgelegt.
