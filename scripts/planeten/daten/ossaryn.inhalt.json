@@ -1,60 +1,123 @@
 {
-  "_erzeugt": "koerper-bauen",
   "name": "Ossaryn",
   "genitiv": "von Ossaryn",
   "dossierName": "Ossaryn-Dossier",
-  "klasse": "Kalter Gesteinsplanet",
-  "intro": "Kalter Gesteinsplanet mit mineralischen Wüsten, gefrorenen Ablagerungen und alten Sedimentbecken.",
+  "klasse": "Planet · Gesteinsplanet",
+  "intro": "Ossaryn ist eine kalte Welt aus mineralischen Kältewüsten, schwarzen Basaltebenen und Spiegelwüsten aus Salz und Eis. In gigantischen, geothermisch erwärmten Kavernen unter der Oberfläche leben die Radikalen: anomal-biologische Intelligenzen ohne Hauptkörper, deren verzweigte Anatomie sich über fünf bis vierzig Kilometer erstreckt – getragen von natürlichen Resonanzfeldern.",
   "globusDaten": {
     "planet": "ossaryn",
-    "klasse": "Eis",
+    "klasse": "Kalte Gesteinswelt",
     "radius": 5230000
   },
-  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=rhaelis-stern&objekt=rhaelis-ossaryn",
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=rhaelis-stern",
   "grunddaten": [
-    [
-      "System-ID",
-      "rhaelis-ossaryn"
-    ],
     [
       "Archiv-ID",
       "AP-RHAELIS-OSSARYN"
     ],
     [
-      "Typ",
-      "Kalter Gesteinsplanet"
-    ],
-    [
-      "Sternsystem",
-      "Rhaelis-System"
-    ],
-    [
-      "Zentralkörper",
-      "Rhaelis"
-    ],
-    [
-      "Große Halbachse",
-      "1,2 AE"
-    ],
-    [
-      "Umlaufzeit",
-      "533,5 Tage"
+      "Klasse",
+      "Kalter terrestrischer Gesteinsplanet · geothermische Tiefenbiosphärenwelt"
     ],
     [
       "Durchmesser",
       "10.460 km"
     ],
     [
+      "Radius",
+      "5.230 km"
+    ],
+    [
       "Masse",
       "0,55 Erdmassen"
     ],
     [
-      "Schwerkraft",
-      "0,82 g"
+      "Dichte",
+      "5,48 g/cm³"
     ],
     [
-      "Gleichgewichtstemperatur",
-      "ca. -92 °C"
+      "Schwerkraft",
+      "0,82 g (8 m/s²)"
+    ],
+    [
+      "Mittlere Oberflächentemperatur",
+      "ca. −75 °C an der Oberfläche · +15 bis +35 °C in den Tiefenbiosphären"
+    ],
+    [
+      "Ozeane",
+      "Keine offenen Ozeane; gefrorene Becken und gigantische unterirdische Reservoirs"
+    ],
+    [
+      "Atmosphäre",
+      "83 % Stickstoff, 10 % Sauerstoff, 4,5 % Kohlendioxid, 2,2 % Argon, 0,3 % Spurengase"
+    ],
+    [
+      "Atmosphärendruck",
+      "ca. 0,42 bar"
+    ],
+    [
+      "Rotationsperiode",
+      "31 h"
+    ],
+    [
+      "Umlaufzeit",
+      "533 Erdtage"
+    ],
+    [
+      "Abstand zum Stern",
+      "1,2 AE"
+    ],
+    [
+      "Monde",
+      "keine"
+    ],
+    [
+      "Zentralstern",
+      "Rhaelis, Orangefarbener Hauptreihenstern (K1 V)"
+    ],
+    [
+      "Einstrahlung",
+      "0,27-fach der Erde"
+    ],
+    [
+      "Achsneigung",
+      "14,8°"
+    ],
+    [
+      "Exzentrizität",
+      "0,032"
+    ],
+    [
+      "Fluchtgeschwindigkeit",
+      "9,2 km/s"
+    ],
+    [
+      "Alter",
+      "ca. 6,2 Mrd. Jahre"
+    ],
+    [
+      "Archiv-ID",
+      "AP-RHAELIS-OSSARYN"
+    ],
+    [
+      "Untertyp",
+      "Geothermische Tiefenbiosphärenwelt"
+    ],
+    [
+      "Planetare Besonderheit",
+      "Natürliche Resonanzanomalien"
+    ],
+    [
+      "Monde und Ringe",
+      "Keine bekannt"
+    ],
+    [
+      "Fraktionszugehörigkeit",
+      "Noch nicht festgelegt"
+    ],
+    [
+      "Intelligente Spezies",
+      "Radikalen"
     ]
   ],
   "position": [
@@ -64,84 +127,110 @@
     ],
     [
       "Zentralstern",
-      "Rhaelis",
-      "inhalte/himmelskoerper/sterne/details/rhaelis/hauptseite/index.html"
+      "Rhaelis · K1 V, Einzelstern"
     ],
     [
-      "Abstand",
-      "1,2 AE"
+      "Bahnposition",
+      "4. von 7 Planeten"
+    ],
+    [
+      "Entfernung zur Sonne",
+      "236 Lichtjahre"
+    ],
+    [
+      "Nächste Nachbarsysteme",
+      "Orelis-System (200,7 Lj), Darynth-System (211,2 Lj)"
     ]
   ],
   "verknuepfungen": [
     {
       "icon": "✦",
-      "art": "Sternenkarte",
-      "titel": "Ossaryn im Rhaelis-System",
-      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=rhaelis-stern&objekt=rhaelis-ossaryn",
-      "route": null
-    },
-    {
-      "icon": "☀",
-      "art": "Zentralstern",
-      "titel": "Rhaelis",
-      "href": "inhalte/himmelskoerper/sterne/details/rhaelis/hauptseite/index.html",
+      "art": "Systemübersicht",
+      "titel": "Rhaelis-System",
+      "href": "inhalte/himmelskoerper/sternensysteme/details/rhaelis-system/hauptseite/index.html",
       "route": null
     },
     {
       "icon": "✿",
-      "art": "Heimatwelt der Memetiden",
-      "titel": "Tavoryn",
-      "href": "inhalte/himmelskoerper/planeten/details/tavoryn/hauptseite/index.html",
+      "art": "Heimische Spezies",
+      "titel": "Radikalen",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Radikalen/hauptseite/Spezies.html",
       "route": null
     },
     {
       "icon": "◈",
       "art": "Spezies-Dossier",
-      "titel": "Memetiden",
-      "href": "inhalte/spezies/Mentale Spezies/Memetiden/hauptseite/Spezies.html",
+      "titel": "Heimatwelt",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Radikalen/Unterseiten/Heimatwelt/heimatwelt.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Politik und Fraktionen",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Radikalen/Unterseiten/Politik/politik.html",
+      "route": null
+    },
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Rhaelis-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=rhaelis-stern",
       "route": null
     }
   ],
   "quellen": [
     {
-      "titel": "Sternenkarte · Rhaelis-System",
-      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=rhaelis-stern&objekt=rhaelis-ossaryn"
+      "titel": "Speziesdossier Radikalen · Heimatwelt",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Radikalen/Unterseiten/Heimatwelt/heimatwelt.html"
     },
     {
-      "titel": "Speziesdossier Memetiden",
-      "href": "inhalte/spezies/Mentale Spezies/Memetiden/hauptseite/Spezies.html"
+      "titel": "Speziesdossier Radikalen · Geschichte",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Radikalen/Unterseiten/Geschichte/geschichte.html"
+    },
+    {
+      "titel": "Speziesdossier Radikalen · Gesellschaft",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Radikalen/Unterseiten/Gesellschaft/gesellschaft.html"
+    },
+    {
+      "titel": "Speziesdossier Radikalen · Politik",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Radikalen/Unterseiten/Politik/politik.html"
+    },
+    {
+      "titel": "Speziesdossier Radikalen · Allgemeines",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Radikalen/Unterseiten/Allgemeines/allgemeines.html"
     }
   ],
   "design": {
     "farben": {
-      "nacht": "#070809",
-      "tiefe": "#0f1113",
-      "akzent": "#b1becc",
-      "sand": "#b7bcb0",
-      "moos": "#91b4a3",
-      "ozean": "#749dc0",
-      "glas": "rgba(8, 12, 18, .76)",
-      "glas-hell": "rgba(16, 22, 32, .82)",
-      "linie": "rgba(255, 255, 255, .12)",
-      "linie-hell": "rgba(255, 255, 255, .3)",
-      "text": "#eef2f6",
-      "leise": "#a8b0bc",
-      "aporia-page-tint": "#3d464f"
+      "nacht": "#06060c",
+      "tiefe": "#0e0e18",
+      "akzent": "#b48cff",
+      "sand": "#c8c0d8",
+      "moos": "#7fd0c8",
+      "ozean": "#4f6fd0",
+      "glas": "rgba(14, 14, 24, .8)",
+      "glas-hell": "rgba(24, 24, 38, .86)",
+      "linie": "rgba(180, 140, 255, .16)",
+      "linie-hell": "rgba(190, 170, 255, .36)",
+      "text": "#efeef8",
+      "leise": "#a9a6c2",
+      "aporia-page-tint": "#3a2a6a"
     }
   },
   "kapitel": {
     "Allgemeines": {
       "gruppe": "Weitere",
       "icon": "▤",
-      "intro": "Ossaryn auf einen Blick.",
+      "intro": "Ossaryn auf einen Blick: Kältewüste über klingenden Kavernen.",
       "abschnitte": [
         {
           "titel": "Kurzprofil",
           "bild": true,
-          "bildtext": "Ossaryn",
+          "bildtext": "Ossaryn – die Welt der Resonanzkathedralen",
           "text": [
-            "Kalter Gesteinsplanet mit mineralischen Wüsten, gefrorenen Ablagerungen und alten Sedimentbecken.",
-            "Ossaryn umkreist Rhaelis in 1,2 AE Abstand und braucht für einen Umlauf 533,5 Tage."
+            "Ossaryn ist der vierte Hauptplanet des Rhaelis-Systems und umkreist den orangefarbenen Zwerg Rhaelis in 1,20 AE Abstand. Mit 10.460 Kilometern Durchmesser und 0,55 Erdmassen ist er kleiner als die Erde (0,82 g). Die Gleichgewichtstemperatur liegt bei etwa −92 °C, die mittlere Oberflächentemperatur bei rund −75 °C.",
+            "Die komplexe Biosphäre lebt unter der Oberfläche: in kilometerweiten Höhlensystemen, Tiefenseen und hydrothermalen Kammern mit +15 bis +35 °C. Lokal treten natürliche Resonanzanomalien auf – anomale physikalische Felder, die mit bestimmten Mineralen wechselwirken und die Evolution der Radikalen ermöglichten. Energie aus dem Nichts erzeugen sie nicht."
           ]
         },
         {
@@ -149,89 +238,119 @@
           "daten": [
             [
               "Typ",
-              "Kalter Gesteinsplanet"
+              "Kalter terrestrischer Gesteinsplanet · geothermische Tiefenbiosphärenwelt"
             ],
             [
-              "Sternsystem",
-              "Rhaelis-System"
-            ],
-            [
-              "Zentralkörper",
-              "Rhaelis"
-            ],
-            [
-              "Große Halbachse",
-              "1,2 AE"
-            ],
-            [
-              "Umlaufzeit",
-              "533,5 Tage"
-            ],
-            [
-              "Durchmesser",
-              "10.460 km"
-            ],
-            [
-              "Masse",
-              "0,55 Erdmassen"
+              "Zentralstern",
+              "Rhaelis (Orangefarbener Hauptreihenstern (K1 V))"
             ],
             [
               "Schwerkraft",
               "0,82 g"
             ],
             [
-              "Gleichgewichtstemperatur",
-              "ca. -92 °C"
-            ]
-          ]
-        },
-        {
-          "titel": "Im System von Tavoryn",
-          "text": [
-            "Das Rhaelis-System ist die Heimat der Memetiden: Ihr Planet Tavoryn umkreist Rhaelis."
-          ],
-          "verweise": [
-            [
-              "Tavoryn",
-              "inhalte/himmelskoerper/planeten/details/tavoryn/hauptseite/index.html"
+              "Durchmesser",
+              "10.460 km"
             ],
             [
-              "Speziesdossier Memetiden",
-              "inhalte/spezies/Mentale Spezies/Memetiden/hauptseite/Spezies.html"
+              "Mittlere Temperatur",
+              "ca. −75 °C an der Oberfläche · +15 bis +35 °C in den Tiefenbiosphären"
+            ],
+            [
+              "Atmosphäre",
+              "Kalt, stickstoffreich, ca. 0,42 bar"
+            ],
+            [
+              "Wasser",
+              "Keine offenen Ozeane; gefrorene Becken und gigantische unterirdische Reservoirs"
+            ],
+            [
+              "Intelligente Spezies",
+              "Radikalen"
             ]
           ]
         },
         {
-          "titel": "Planet Ossaryn",
-          "text": [
-            "Ossaryn besitzt ausgedehnte mineralische Wüsten, gefrorene Ablagerungen und stark verwitterte Einschlaglandschaften.",
-            "Unterirdische Wassereisvorkommen sind möglich.",
-            "In einigen Gebieten befinden sich große Sedimentbecken, deren Entstehung auf eine frühere geologische Aktivität hinweist."
-          ],
+          "titel": "Ossaryn im Vergleich zur Erde",
+          "vergleich": {
+            "mit": "Erde",
+            "werte": [
+              [
+                "Durchmesser",
+                10460,
+                12742,
+                "km"
+              ],
+              [
+                "Schwerkraft",
+                0.82,
+                1,
+                "g"
+              ],
+              [
+                "Tageslänge",
+                31,
+                24,
+                "h"
+              ],
+              [
+                "Luftdruck (Mittel)",
+                0.42,
+                1,
+                "bar"
+              ],
+              [
+                "Mittlere Temperatur",
+                -75,
+                15,
+                "°C"
+              ]
+            ]
+          }
+        },
+        {
+          "titel": "Hauptmerkmale",
+          "karten": [
+            {
+              "titel": "Mineralische Kältewüste",
+              "text": "Basaltebenen, Spiegelwüsten und polare Eisflächen."
+            },
+            {
+              "titel": "Tiefenbiosphäre",
+              "text": "Komplexes Leben in geothermischen Kavernen und Tiefenseen."
+            },
+            {
+              "titel": "Resonanzanomalien",
+              "text": "Natürliche anomale Felder in bestimmten Mineralformationen."
+            },
+            {
+              "titel": "Kilometerweite Wesen",
+              "text": "Radikalen ohne zentralen Hauptkörper."
+            }
+          ]
+        },
+        {
+          "titel": "Einordnung",
           "daten": [
             [
-              "Orbit",
-              "1,20 AE"
+              "System-ID",
+              "rhaelis-ossaryn"
             ],
             [
-              "Umlaufzeit",
-              "Rund 533,5 Erdentage"
+              "Position",
+              "Vierter Hauptplanet"
             ],
             [
-              "Masse",
-              "Etwa 0,55 Erdmassen"
+              "Heimatspezies",
+              "Radikalen (Gigantische Lebensformen)"
             ],
             [
-              "Planetentyp",
-              "Kalter Gesteinsplanet"
+              "Biologische Besonderheit",
+              "Anomal-biologische Tiefenbiosphäre"
             ],
             [
-              "Rohstoffe",
-              "Wassereis, Silikate, Metallerze und chemische Salze."
-            ],
-            [
-              "Spielintegration",
-              "Überlebensexpeditionen, Rohstoffstationen, geologische Bohrungen und unterirdische Forschungsanlagen."
+              "Nachbarwelt",
+              "Tavoryn, Heimat der Memetiden"
             ]
           ]
         }
@@ -240,104 +359,191 @@
     "Astronomie": {
       "gruppe": "Wissenschaft",
       "icon": "✧",
-      "intro": "Ossaryn im Rhaelis-System.",
+      "intro": "Der vierte Planet um den orangefarbenen Zwerg Rhaelis.",
       "abschnitte": [
         {
-          "titel": "Bahn",
+          "titel": "Bahn und Position",
+          "text": [
+            "Ossaryn ist der 4. von 7 Planeten im Rhaelis-System. Er umkreist Rhaelis in 1,2 AE Abstand – jenseits der äußeren Grenze der habitablen Zone (bei Rhaelis zwischen 0,6 und 1,04 AE). Er erhält 0,27-mal so viel Sternlicht wie die Erde.",
+            "Ohne Atmosphäre läge seine Gleichgewichtstemperatur bei rund -92 °C. Die dünne Atmosphäre hebt die Oberflächentemperatur nur um rund 17 K über das Gleichgewicht. Lebensräume entstehen allein durch geothermische Wärme im Untergrund."
+          ],
           "daten": [
             [
-              "Zentralkörper",
-              "Rhaelis"
+              "Sternsystem",
+              "Rhaelis-System"
+            ],
+            [
+              "Bahnposition",
+              "4. von 7 Planeten"
             ],
             [
               "Große Halbachse",
-              "1,2 AE (179,5 Mio. km)"
+              "1,2 AE (ca. 179,5 Mio. km)"
             ],
             [
               "Exzentrizität",
               "0,032"
             ],
             [
-              "Bahnneigung",
-              "0°"
+              "Umlaufzeit",
+              "533,5 Erdtage"
             ],
             [
-              "Umlaufzeit",
-              "533,5 Tage"
+              "Ortsjahr",
+              "ca. 413 Ortstage"
             ],
             [
               "Einstrahlung",
-              "0,271-fach der Erde"
+              "ca. 0,27-fach der Erde"
+            ],
+            [
+              "Habitable Zone von Rhaelis",
+              "0,6–1,04 AE"
             ]
           ]
         },
         {
-          "titel": "Am Himmel von Ossaryn",
+          "titel": "Zentralstern",
           "text": [
-            "Rhaelis erscheint von hier aus etwa 0,37° groß (die Sonne von der Erde: 0,53°)."
-          ]
-        },
-        {
-          "titel": "Körper des Systems",
-          "zeitleiste": [
+            "Stabiler K1V-Einzelstern mit magnetischer Aktivität und einer vergleichsweise ruhigen Hauptreihenphase."
+          ],
+          "daten": [
             [
-              "Rhaelis · Stern",
+              "Name",
+              "Rhaelis"
+            ],
+            [
+              "Typ",
               "Orangefarbener Hauptreihenstern (K1 V)"
             ],
             [
-              "Kesvar · 0,18 AE",
-              "Heißer Gesteinsplanet"
+              "Masse",
+              "0,81 Sonnenmassen"
             ],
             [
-              "Draoven · 0,33 AE",
-              "Heißer trockener Gesteinsplanet"
+              "Radius",
+              "0,83 Sonnenradien"
             ],
             [
-              "Tavoryn · 0,65 AE",
-              "Gemäßigter Ozean- und Gesteinsplanet"
+              "Leuchtkraft",
+              "0,39 Sonnenleuchtkräfte"
             ],
             [
-              "Ossaryn · 1,2 AE · dieses Dossier",
-              "Kalter Gesteinsplanet"
+              "Oberflächentemperatur",
+              "ca. 5.000 K"
             ],
             [
-              "Vaelkor · 2,45 AE",
-              "Gasriese"
+              "Alter",
+              "ca. 6,2 Mrd. Jahre"
             ],
             [
-              "Kelomar · 4,8 AE",
-              "Äußerer Gasriese"
-            ],
-            [
-              "Ithrenn · 9,2 AE",
-              "Eisriese"
-            ],
-            [
-              "Therys · 19 AE",
-              "Eisreicher Kleinkörper"
-            ],
-            [
-              "Veskar-9 · 31 AE",
-              "Dunkler Kleinkörper"
-            ],
-            [
-              "Saelith-Gürtel · 1,7–2,1 AE",
-              "Asteroidengürtel"
-            ],
-            [
-              "Äußere Kleinkörperregion von Rhaelis · 12–43 AE",
-              "Eisreicher Kleinkörpergürtel"
-            ],
-            [
-              "Ferne Kometenpopulation von Rhaelis · 65–240 AE",
-              "Kometengebiet"
+              "Begleitsterne",
+              "keine (Einzelstern)"
             ]
           ],
           "verweise": [
             [
               "Rhaelis",
               "inhalte/himmelskoerper/sterne/details/rhaelis/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Rotation und Achse",
+          "daten": [
+            [
+              "Rotationsperiode",
+              "31 h"
             ],
+            [
+              "Achsneigung",
+              "14,8°"
+            ],
+            [
+              "Scheinbare Sterngröße",
+              "ca. 0,37° (Sonne von der Erde: 0,53°)"
+            ],
+            [
+              "Jahreszeiten",
+              "Schwach, aber lang"
+            ]
+          ]
+        },
+        {
+          "titel": "Monde",
+          "text": [
+            "Ossaryn besitzt keine Monde."
+          ]
+        },
+        {
+          "titel": "Planeten des Systems",
+          "zeitleiste": [
+            [
+              "Kesvar · 0,18 AE",
+              "Der innerste Planet besitzt verwitterte und vulkanisch veränderte Gesteinslandschaften, eine dünne Atmosphäre und eisenreiche Minerale."
+            ],
+            [
+              "Draoven · 0,33 AE",
+              "Trockene Welt mit felsigen Ebenen, vulkanischen Hochländern, Einschlagbecken und mineralischen Ablagerungen."
+            ],
+            [
+              "Tavoryn · 0,65 AE",
+              "Heimatwelt der Memetiden mit ausgedehnten Meeren, fünf großen Landmassen und wandernden Gezeitenwäldern."
+            ],
+            [
+              "Ossaryn · 1,2 AE",
+              "Ossaryn ist eine kalte Gesteinswelt aus mineralischen Kältewüsten und schwarzen Basaltebenen."
+            ],
+            [
+              "Saelith-Gürtel · 1,7–2,1 AE",
+              "Metall- und silikatreicher Gürtel zwischen Ossaryn und Vaelkor."
+            ],
+            [
+              "Saelith-Prime · 1,73 AE",
+              "Ein großer unregelmäßiger Asteroid mit alten Bergbauanlagen."
+            ],
+            [
+              "Korven · 1,86 AE",
+              "Ein metallreicher Asteroid mit industriell interessanten Erzlagerstätten."
+            ],
+            [
+              "Eshral · 1,97 AE",
+              "Ein kohlenstoffhaltiger Asteroid für Untersuchungen zur chemischen Frühgeschichte des Systems."
+            ],
+            [
+              "Vaelkor · 2,45 AE",
+              "Gasriese mit ausgeprägten Wolkenbändern, großräumigen Stürmen und einem Ringsystem."
+            ],
+            [
+              "Kelomar · 4,8 AE",
+              "Kühler Gasplanet mit Wasserstoff-Helium-Atmosphäre, ausgeprägten Wolkenschichten und großräumigen Sturmzonen."
+            ],
+            [
+              "Ithrenn · 9,2 AE",
+              "Der äußerste Hauptplanet ist ein Eisriese mit leichter Gashülle und flüchtigen Verbindungen."
+            ],
+            [
+              "Äußere Kleinkörperregion von Rhaelis · 12–43 AE",
+              "Weit verstreute eisreiche Kleinkörper jenseits der Bahnen der großen Planeten."
+            ],
+            [
+              "Therys · 19 AE",
+              "Ein großer eisreicher Kleinkörper im äußeren Rhaelis-System."
+            ],
+            [
+              "Veskar-9 · 31 AE",
+              "Ein kleiner dunkler Körper mit ungewöhnlich alter, wenig veränderter Oberfläche."
+            ],
+            [
+              "Ferne Kometenpopulation von Rhaelis · 65–240 AE",
+              "Entfernte Population auf langperiodischen Bahnen; Ulmar ist ein benanntes Forschungsobjekt dieses Reservoirs."
+            ],
+            [
+              "Ulmar (Rhaelis) · 105 AE",
+              "Ein langperiodischer Komet."
+            ]
+          ],
+          "verweise": [
             [
               "Kesvar",
               "inhalte/himmelskoerper/planeten/details/kesvar/hauptseite/index.html"
@@ -349,6 +555,22 @@
             [
               "Tavoryn",
               "inhalte/himmelskoerper/planeten/details/tavoryn/hauptseite/index.html"
+            ],
+            [
+              "Saelith-Gürtel",
+              "inhalte/himmelskoerper/sternensysteme/details/saelith-gurtel/hauptseite/index.html"
+            ],
+            [
+              "Saelith-Prime",
+              "inhalte/himmelskoerper/asteroiden/details/saelith-prime/hauptseite/index.html"
+            ],
+            [
+              "Korven",
+              "inhalte/himmelskoerper/asteroiden/details/korven/hauptseite/index.html"
+            ],
+            [
+              "Eshral",
+              "inhalte/himmelskoerper/asteroiden/details/eshral/hauptseite/index.html"
             ],
             [
               "Vaelkor",
@@ -363,13 +585,71 @@
               "inhalte/himmelskoerper/planeten/details/ithrenn/hauptseite/index.html"
             ],
             [
+              "Äußere Kleinkörperregion von Rhaelis",
+              "inhalte/himmelskoerper/sternensysteme/details/aussere-kleinkorperregion-von-rhaelis/hauptseite/index.html"
+            ],
+            [
               "Therys",
               "inhalte/himmelskoerper/asteroiden/details/therys/hauptseite/index.html"
             ],
             [
               "Veskar-9",
               "inhalte/himmelskoerper/asteroiden/details/veskar-9/hauptseite/index.html"
+            ],
+            [
+              "Ferne Kometenpopulation von Rhaelis",
+              "inhalte/himmelskoerper/sternensysteme/details/ferne-kometenpopulation-von-rhaelis/hauptseite/index.html"
+            ],
+            [
+              "Ulmar (Rhaelis)",
+              "inhalte/himmelskoerper/kometen/details/ulmar-rhaelis/hauptseite/index.html"
             ]
+          ]
+        },
+        {
+          "titel": "Nachbarschaft und Anomalien",
+          "karten": [
+            {
+              "titel": "Nachbarsysteme",
+              "text": "Orelis-System (200,7 Lj), Darynth-System (211,2 Lj), Saelon-System (211,3 Lj) – alle weit außerhalb der gravitativen Einflusszone von Rhaelis (rund 3,4 Lichtjahre)."
+            }
+          ],
+          "verweise": [
+            [
+              "Rhaelis-System in der Sternenkarte",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=rhaelis-stern"
+            ]
+          ]
+        },
+        {
+          "titel": "Bahndaten",
+          "daten": [
+            [
+              "Entfernung zum Stern",
+              "ca. 179,5 Mio. km"
+            ],
+            [
+              "Periapsis",
+              "ca. 1,162 AE"
+            ],
+            [
+              "Apoapsis",
+              "ca. 1,238 AE"
+            ],
+            [
+              "Rotation",
+              "Nicht gebunden"
+            ],
+            [
+              "Umlaufbahn",
+              "Langfristig stabil"
+            ]
+          ]
+        },
+        {
+          "titel": "Am Himmel von Ossaryn",
+          "text": [
+            "Rhaelis steht als kleine, orangefarbene Scheibe über den frostigen Ebenen; das Licht ist schwach und wird über den Spiegelwüsten oft seltsam verzerrt. Nachts leuchtet Tavoryn, die Ozeanwelt der Memetiden, als heller Wandelstern."
           ]
         }
       ]
@@ -396,22 +676,35 @@
             ],
             [
               "Oberflächenschwerkraft",
-              "8,01 m/s² (0,816 g)"
+              "8 m/s² (0,82 g)"
             ],
             [
               "Fluchtgeschwindigkeit",
-              "9,16 km/s"
+              "ca. 9,2 km/s"
+            ],
+            [
+              "Mittlere Dichte",
+              "ca. 5,5 g/cm³"
+            ],
+            [
+              "Oberfläche",
+              "ca. 344 Mio. km²"
+            ],
+            [
+              "Magnetfeld",
+              "Moderat, mit regionalen Anomalien"
+            ],
+            [
+              "Alter",
+              "ca. 6,1 Mrd. Jahre"
             ]
-          ],
+          ]
+        },
+        {
+          "titel": "Physikalische Werte im Vergleich",
           "vergleich": {
             "mit": "Erde",
             "werte": [
-              [
-                "Durchmesser",
-                10460,
-                12742,
-                "km"
-              ],
               [
                 "Masse",
                 0.55,
@@ -419,13 +712,31 @@
                 "Erdmassen"
               ],
               [
-                "Schwerkraft",
-                0.82,
+                "Dichte",
+                5.48,
+                5.51,
+                "g/cm³"
+              ],
+              [
+                "Fluchtgeschwindigkeit",
+                9.2,
+                11.2,
+                "km/s"
+              ],
+              [
+                "Magnetfeld",
+                0.6,
                 1,
-                "g"
+                "× Erde"
               ]
             ]
           }
+        },
+        {
+          "titel": "Gesteinswelt mit Restwärme",
+          "text": [
+            "Ossaryn ist gesteinsdominiert, mit einer Oberflächengravitation von rund 8,0 m/s² und einer Fluchtgeschwindigkeit von etwa 9,15 km/s. Geothermische Restenergie im Inneren sorgt für unregelmäßige regionale Wärmeflüsse – die Grundlage aller Lebensräume."
+          ]
         }
       ]
     },
@@ -435,19 +746,26 @@
       "intro": "Planetare Struktur von Ossaryn.",
       "abschnitte": [
         {
-          "titel": "Schalenbau",
+          "titel": "Aufbau",
+          "text": [
+            "Die alte, stabile Kruste enthält Sedimentformationen, große Spaltensysteme, gefrorene wasserführende Ablagerungen, vulkanisch entstandene und chemisch erweiterte Kavernen sowie resonanzaktive Mineralformationen."
+          ],
           "schichten": [
             [
               "Kruste",
-              "Silikatgestein"
+              "Alt, stabil, Kavernen und resonanzaktive Minerale"
             ],
             [
               "Mantel",
-              "Dichteres Silikatgestein"
+              "Silikatreich, langsame Konvektion, einzelne Magmakammern"
             ],
             [
-              "Kern",
-              "Eisen und Nickel"
+              "Äußerer Kern",
+              "Teilweise flüssig, Magnetfelderzeugung"
+            ],
+            [
+              "Innerer Kern",
+              "Eisen- und nickelreich, fest"
             ]
           ]
         }
@@ -456,12 +774,81 @@
     "Geografie": {
       "gruppe": "Natur",
       "icon": "△",
-      "intro": "Geografie von Ossaryn.",
+      "intro": "Kältewüsten oben, Kathedralen unten.",
       "abschnitte": [
         {
-          "titel": "Oberfläche",
-          "text": [
-            "Die Oberfläche von Ossaryn ist kalt."
+          "titel": "Oberflächenverteilung",
+          "balken": {
+            "werte": [
+              [
+                "Mineralische Kältewüsten",
+                44
+              ],
+              [
+                "Eis- und Frostlandschaften",
+                26
+              ],
+              [
+                "Felsige Hochländer",
+                17
+              ],
+              [
+                "Einschlag- und Sedimentbecken",
+                8
+              ],
+              [
+                "Tektonische und geothermische Regionen",
+                5
+              ]
+            ]
+          }
+        },
+        {
+          "titel": "Landschaftliche Besonderheiten",
+          "liste": [
+            "Dunkle Gesteine mit perlmuttartigen Mineraladern",
+            "Tiefreichende schwarze Schluchten",
+            "Austretender geothermischer Wasserdampf",
+            "Leuchtende Mineralablagerungen",
+            "Farbige Lichtphänomene in Bruchregionen",
+            "Natürliche Zugänge zu unterirdischen Biosphären"
+          ]
+        },
+        {
+          "titel": "Regionen",
+          "karten": [
+            {
+              "titel": "Schwarze Ebenen",
+              "text": "Dunkle Basaltlandschaften mit gefrorenen Ablagerungen und vereinzelten geothermischen Austritten."
+            },
+            {
+              "titel": "Spiegelwüsten",
+              "text": "Stark reflektierende Salz- und Eisflächen mit optischen Verzerrungen."
+            },
+            {
+              "titel": "Tiefe Bruchlandschaften",
+              "text": "Kilometerlange Schluchten mit Dampfströmen und freiliegenden Körperregionen der Radikalen."
+            },
+            {
+              "titel": "Resonanzkathedralen",
+              "text": "Monumentale Kavernen mit ringförmigen Organen, schwebenden Membranen und mehrschichtigen Resonanzklängen."
+            },
+            {
+              "titel": "Schwebende Schleierkammern",
+              "text": "Große Hohlräume mit beweglichen Sinnesmembranen und anomaler Kraftkopplung."
+            },
+            {
+              "titel": "Tiefenseen",
+              "text": "Dunkle Gewässer mit hydrothermaler Energie und leuchtenden Organismen."
+            },
+            {
+              "titel": "Stille Kavernen",
+              "text": "Regionen geringer Resonanz und kaum besiedelt – natürliche Grenze radikalischer Lebensräume."
+            },
+            {
+              "titel": "Erinnerungsregionen",
+              "text": "Geschützte kulturelle Räume mit Licht- und Klangkompositionen und freiwillig hinterlassenen Erinnerungen."
+            }
           ]
         }
       ]
@@ -472,9 +859,53 @@
       "intro": "Atmosphäre von Ossaryn.",
       "abschnitte": [
         {
-          "titel": "Atmosphärenmodell",
+          "titel": "Zusammensetzung",
           "text": [
-            "Für den kalten Gesteinsplaneten sind atmosphärische Zusammensetzung und Bodendruck nicht angegeben."
+            "Die kalte, stickstoffreiche Atmosphäre hat einen mittleren Oberflächendruck von etwa 0,42 bar: 83 % Stickstoff, 10 % Sauerstoff, 4,5 % Kohlendioxid, 2,2 % Argon und Spurengase wie Methan, Wasserdampf, Wasserstoff, Kohlenmonoxid und Schwefelverbindungen. Für Menschen ist sie ohne technische Unterstützung nicht geeignet. Über geothermischen Regionen und offenen Höhlen tauscht sie Gase mit dem Untergrund aus."
+          ],
+          "balken": {
+            "werte": [
+              [
+                "Stickstoff",
+                83
+              ],
+              [
+                "Sauerstoff",
+                10
+              ],
+              [
+                "Kohlendioxid",
+                4.5
+              ],
+              [
+                "Argon",
+                2.2
+              ],
+              [
+                "Spurengase",
+                0.3
+              ]
+            ]
+          }
+        },
+        {
+          "titel": "Druck",
+          "daten": [
+            [
+              "Mittlerer Oberflächendruck",
+              "ca. 0,42 bar"
+            ]
+          ]
+        },
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Kalte bodennahe Luftschichten und Frostnebel",
+            "Mineralischer Staub",
+            "Lokale Inversionsschichten",
+            "Warme Gasströmungen über geothermischen Regionen",
+            "Gasaustausch mit offenen Höhlensystemen",
+            "Keine global geschlossene Wolkendecke, regionale elektrische Entladungen"
           ]
         }
       ]
@@ -485,10 +916,52 @@
       "intro": "Klima von Ossaryn.",
       "abschnitte": [
         {
-          "titel": "Temperatur",
+          "titel": "Temperaturzonen",
           "text": [
-            "Bei 1,2 AE Abstand zu Rhaelis liegt die Gleichgewichtstemperatur von Ossaryn bei rund -92 °C – kalt."
-          ]
+            "Ossaryn hat ein kaltes Trockenklima mit geringer Verdunstung und regionaler Frostbildung. Zwischen Oberfläche und Untergrund liegen enorme Temperaturunterschiede: Oberflächennahe Höhlen bleiben meist gefroren, mittlere geothermische Höhlen erreichen +5 bis +25 °C, aktive Tiefenbiosphären +15 bis +35 °C und hydrothermale Quellen lokal über +60 °C."
+          ],
+          "skala": {
+            "einheit": "°C",
+            "min": -130,
+            "max": 65,
+            "bereiche": [
+              [
+                "Polare Extremregionen",
+                -130,
+                -95
+              ],
+              [
+                "Hochländer",
+                -105,
+                -65
+              ],
+              [
+                "Mineralische Ebenen",
+                -80,
+                -35
+              ],
+              [
+                "Geothermische Täler",
+                -20,
+                15
+              ],
+              [
+                "Mittlere Höhlen",
+                5,
+                25
+              ],
+              [
+                "Aktive Tiefenbiosphären",
+                15,
+                35
+              ],
+              [
+                "Hydrothermale Quellen",
+                35,
+                60
+              ]
+            ]
+          }
         }
       ]
     },
@@ -498,9 +971,19 @@
       "intro": "Gewässer von Ossaryn.",
       "abschnitte": [
         {
-          "titel": "Wasser",
+          "titel": "Unterirdische Gewässer",
+          "liste": [
+            "Gigantische natürliche Wasserreservoirs",
+            "Mineralreiche unterirdische Seen und Flussläufe",
+            "Hydrothermale Quellensysteme",
+            "Salzreiche Tiefengewässer und Kondensationsgewässer",
+            "Regional verbundene Flüssigkeitssysteme"
+          ]
+        },
+        {
+          "titel": "Wasserkreislauf",
           "text": [
-            "Wasser gibt es höchstens als Eis in Kratern und im Untergrund."
+            "Wasser verdunstet in warmen Tiefenkammern, kondensiert an kühleren Höhlendecken und fließt über unterirdische Läufe zurück. Nahe der Oberfläche gefriert es, geothermische Wärme schmilzt es wieder – überwiegend lokal geschlossene Kreisläufe. An der Oberfläche gibt es nur gefrorene Becken und kleine, stark mineralhaltige Warmwasserquellen."
           ]
         }
       ]
@@ -511,9 +994,40 @@
       "intro": "Geologie von Ossaryn.",
       "abschnitte": [
         {
-          "titel": "Geologie",
-          "text": [
-            "Ossaryn ist groß genug, um im Inneren noch Wärme zu speichern; Spuren alter vulkanischer Tätigkeit sind wahrscheinlich."
+          "titel": "Gesteine und Prozesse",
+          "liste": [
+            "Dunkle basaltische Ebenen und silikatreiche Hochländer",
+            "Eisenhaltige Mineralwüsten und große Sedimentbecken",
+            "Tektonische Bruchzonen und tiefe Spalten",
+            "Hydrothermale Ablagerungen und Salzformationen",
+            "Lavakanäle und chemisch entstandene Höhlen",
+            "Gigantische verbundene Kavernen",
+            "Heute überwiegend moderate Aktivität"
+          ]
+        },
+        {
+          "titel": "Anomalien",
+          "karten": [
+            {
+              "titel": "Resonanzzonen",
+              "text": "Lokale anomale Felder, zeitlich veränderlich, nicht planetenweit verteilt."
+            },
+            {
+              "titel": "Lichtverzerrungen",
+              "text": "Ungewöhnliche Lichtbrechung und verschobene Reflexionen in aktiven Regionen."
+            },
+            {
+              "titel": "Resonanzklänge",
+              "text": "Tieffrequente Schwingungen, teils über große Entfernungen hörbar."
+            },
+            {
+              "titel": "Biologische Feldkopplung",
+              "text": "Begrenzte Kraftübertragung mit hohem Energieverbrauch – keine Aufhebung physikalischer Gesetze."
+            },
+            {
+              "titel": "Resonanzstürme",
+              "text": "Überlagerte Felder stören Sensoren und Resonanzorgane; regional begrenzt, mit Ruhephasen."
+            }
           ]
         }
       ]
@@ -521,12 +1035,29 @@
     "Biosphäre": {
       "gruppe": "Natur",
       "icon": "❧",
-      "intro": "Biosphäre von Ossaryn.",
+      "intro": "Leben aus Gestein, Wasser und Resonanz.",
       "abschnitte": [
         {
-          "titel": "Leben",
+          "titel": "Tiefenbiosphäre",
           "text": [
-            "Auf Ossaryn ist kein Leben verzeichnet."
+            "Chemosynthetische Primärproduzenten nutzen Reaktionen zwischen Wasser und Gestein, wasserstoffhaltige Quellen sowie Schwefel- und Eisenstoffwechsel. Die Biosphäre hängt nicht von Photosynthese ab; räumlich getrennte Ökosysteme stehen auf unterschiedlichen Entwicklungsstufen. Manche Organismen entwickelten resonanzfähige Gewebe, die anomale Felder zur Informationsübertragung nutzen – immer unter Energieaufwand."
+          ]
+        },
+        {
+          "titel": "Organismen",
+          "liste": [
+            "Kälteresistente Mikroorganismen und Biofilme an der Oberfläche",
+            "Chemosynthetische Membranorganismen und mikrobielle Matten",
+            "Halbtransparente stationäre Lebensformen",
+            "Schwebend wirkende Membranlebewesen und transparente Schwimmer",
+            "Elektrisch sensible Höhlenjäger und Räuber mit Schwingungswahrnehmung",
+            "Spezialisierte Symbiosepartner der Radikalen"
+          ]
+        },
+        {
+          "titel": "Abgrenzung",
+          "text": [
+            "Radikalen sind weder Pflanzen noch eine planetenweite kollektive Biosphäre, sondern eigenständige Individuen. Andere Organismen bleiben biologisch unabhängig; konkrete Arten werden separat ausgearbeitet."
           ]
         }
       ]
@@ -534,28 +1065,38 @@
     "Spezies": {
       "gruppe": "Zivilisation",
       "icon": "✿",
-      "intro": "Spezies von Ossaryn.",
+      "intro": "Die Radikalen – verzweigte Intelligenzen der Tiefe.",
       "abschnitte": [
         {
-          "titel": "Bewohner",
+          "titel": "Radikalen",
           "text": [
-            "Ossaryn ist keine Heimat einer intelligenten Spezies."
+            "Radikalen sind anomal-biologische Makroorganismen ohne zentralen Hauptkörper. Transparente Verbindungsstränge, ring- und spiralförmige Organe, bewegliche Sinnesmembranen und biologisch erzeugte Resonanzfelder bilden ihre räumlich verzweigte Anatomie. Ihr Bewusstsein ist verteilt, ihre Persönlichkeit individuell; zeitweise bilden sie Erscheinungsorgane aus."
+          ],
+          "daten": [
+            [
+              "Körperausdehnung",
+              "gewöhnlich 5–40 km"
+            ],
+            [
+              "Außergewöhnliche Individuen",
+              "bis zu 150 km"
+            ],
+            [
+              "Bewusstsein",
+              "Verteilt, individuell"
+            ],
+            [
+              "Evolution",
+              "Natürlich, in der Tiefenbiosphäre"
+            ]
           ]
         },
         {
-          "titel": "Im System von Tavoryn",
-          "text": [
-            "Das Rhaelis-System ist die Heimat der Memetiden: Ihr Planet Tavoryn umkreist Rhaelis."
-          ],
-          "verweise": [
-            [
-              "Tavoryn",
-              "inhalte/himmelskoerper/planeten/details/tavoryn/hauptseite/index.html"
-            ],
-            [
-              "Speziesdossier Memetiden",
-              "inhalte/spezies/Mentale Spezies/Memetiden/hauptseite/Spezies.html"
-            ]
+          "titel": "Weitere Spezies",
+          "liste": [
+            "Keine weitere natürliche intelligente Heimatspezies",
+            "Außerplanetare Besucher möglich",
+            "Forschungskooperationen mit den Memetiden denkbar"
           ]
         }
       ]
@@ -566,25 +1107,32 @@
       "intro": "Zivilisation von Ossaryn.",
       "abschnitte": [
         {
-          "titel": "Siedlungen",
-          "text": [
-            "Für Ossaryn sind keine dauerhaften Siedlungen verzeichnet."
+          "titel": "Unter der Oberfläche",
+          "liste": [
+            "Eigenständige regionale Gemeinschaften und Kulturzentren",
+            "Individuell kontrollierte Körperregionen und gemeinsame Hohlräume",
+            "Technisch stabilisierte Resonanzkammern",
+            "Geothermische Versorgung, Forschung und Medizin",
+            "Kulturelle Erinnerungsarchive",
+            "Resonanzbasierte Kommunikation",
+            "Ferngesteuerte Industrie und geschützte Nachwuchsregionen"
           ]
         },
         {
-          "titel": "Im System von Tavoryn",
+          "titel": "An der Oberfläche",
+          "liste": [
+            "Geschützte Raumhäfen",
+            "Wärmeisolierte Forschungsstationen",
+            "Zugangsschleusen zum Untergrund",
+            "Geologische Messstationen und Anomalieüberwachung",
+            "Rohstoffumschlag und automatisierter Transport",
+            "Mögliche Besucherzentren"
+          ]
+        },
+        {
+          "titel": "Hinweis",
           "text": [
-            "Das Rhaelis-System ist die Heimat der Memetiden: Ihr Planet Tavoryn umkreist Rhaelis."
-          ],
-          "verweise": [
-            [
-              "Tavoryn",
-              "inhalte/himmelskoerper/planeten/details/tavoryn/hauptseite/index.html"
-            ],
-            [
-              "Speziesdossier Memetiden",
-              "inhalte/spezies/Mentale Spezies/Memetiden/hauptseite/Spezies.html"
-            ]
+            "Konkrete Siedlungen erhalten später eigene Namen, Standorte und Dossiers."
           ]
         }
       ]
@@ -595,9 +1143,42 @@
       "intro": "Geschichte von Ossaryn.",
       "abschnitte": [
         {
-          "titel": "Entstehung",
+          "titel": "Zeitleiste",
+          "zeitleiste": [
+            [
+              "vor ca. 6,1 Mrd. Jahren",
+              "Entstehung, differenziertes Inneres, starke frühe Aktivität"
+            ],
+            [
+              "Frühe Geologie",
+              "Vulkanische Regionen, hydrothermale Systeme, erste Hohlräume"
+            ],
+            [
+              "Frühe Biosphäre",
+              "Mikroben mit chemischer Energie, unterirdische Nahrungsketten"
+            ],
+            [
+              "Kältewelt",
+              "Wasser bindet sich in Eis, Leben zieht sich in geothermische Refugien zurück"
+            ],
+            [
+              "Anomal-biologische Evolution",
+              "Resonanzgewebe, wachsende Ausdehnung, frühe Radikalen"
+            ],
+            [
+              "Zivilisation",
+              "Persönlichkeiten, Resonanzsprachen, Kulturen, technische Resonanzsysteme"
+            ],
+            [
+              "Erschließung",
+              "Tiefenregionen, Oberflächenstationen, Astronomie, außerplanetare Lebensräume"
+            ]
+          ]
+        },
+        {
+          "titel": "Hinweis",
           "text": [
-            "Ossaryn entstand zusammen mit dem Rhaelis-System vor rund 6,2 Milliarden Jahren."
+            "Historische Jahreszahlen und der Zeitpunkt des Erstkontakts bleiben vorerst offen."
           ]
         }
       ]
@@ -608,9 +1189,14 @@
       "intro": "Fraktionen von Ossaryn.",
       "abschnitte": [
         {
-          "titel": "Ansprüche",
-          "text": [
-            "Für Ossaryn sind keine Fraktionsansprüche verzeichnet."
+          "titel": "Politik",
+          "liste": [
+            "Regionale Selbstverwaltung, keine biologisch vorgegebene Zentralregierung",
+            "Dreidimensionale territoriale Organisation",
+            "Schutz persönlicher Körperregionen und Resonanzräume",
+            "Regulierung des Bergbaus",
+            "Kontrolle gefährlicher Resonanzexperimente",
+            "Fraktionszugehörigkeit noch nicht festgelegt"
           ]
         }
       ]
@@ -622,9 +1208,33 @@
       "abschnitte": [
         {
           "titel": "Rohstoffe",
-          "liste": [
-            "Silikatgestein",
-            "Metallerze"
+          "karten": [
+            {
+              "titel": "Metalle",
+              "text": "Eisen, Nickel, Kupfer, Titan, Aluminiumminerale, seltene Metalle."
+            },
+            {
+              "titel": "Nichtmetalle",
+              "text": "Silikate, Quarz, Basalt, Salze, Schwefel, Kohlenstoff, Phosphate."
+            },
+            {
+              "titel": "Flüchtige Stoffe",
+              "text": "Wassereis, Kohlendioxid, Stickstoff, Methan, geochemischer Wasserstoff."
+            },
+            {
+              "titel": "Biologisch",
+              "text": "Membranwerkstoffe, transparente Verbundmaterialien, medizinische Verbindungen – nur freiwillig oder kontrolliert bereitgestellt."
+            },
+            {
+              "titel": "Anomale Rohstoffe",
+              "text": "Resonanzaktive, feldstabilisierende, lichtleitende und resonanzisolierende Minerale."
+            }
+          ]
+        },
+        {
+          "titel": "Hinweis",
+          "text": [
+            "Namen neuer anomaler Rohstoffe werden erst nach Abgleich mit dem Rohstoffarchiv vergeben."
           ]
         }
       ]
@@ -635,22 +1245,14 @@
       "intro": "Erforschung von Ossaryn.",
       "abschnitte": [
         {
-          "titel": "Offene Fragen",
+          "titel": "Forschungsfelder",
           "liste": [
-            "Wie ist der innere Aufbau beschaffen?",
-            "Gab es früher eine dichtere Atmosphäre?"
-          ]
-        },
-        {
-          "titel": "In der Sternenkarte",
-          "text": [
-            "Ossaryn ist mit allen Bahndaten im Rhaelis-System der Sternenkarte eingetragen."
-          ],
-          "verweise": [
-            [
-              "In der Sternenkarte zeigen",
-              "Menüs/Sternenkarte/Sternenkarte.html?system=rhaelis-stern&objekt=rhaelis-ossaryn"
-            ]
+            "Natürliche Resonanzanomalien und ihre Mineralien",
+            "Resonanzaktive Biologie",
+            "Verteilte Bewusstseinsstrukturen",
+            "Geothermische Tiefenbiosphären",
+            "Lichtverzerrungen und Resonanzklänge",
+            "Resonanzstürme und Sensorschutz"
           ]
         }
       ]
@@ -661,18 +1263,37 @@
       "intro": "Besonderheiten von Ossaryn.",
       "abschnitte": [
         {
-          "titel": "Besonderheiten",
-          "liste": [
-            "Kalter Gesteinsplanet mit mineralischen Wüsten, gefrorenen Ablagerungen und alten Sedimentbecken."
+          "titel": "Rekorde",
+          "daten": [
+            [
+              "Größte Lebensformen",
+              "Radikalen, gewöhnlich 5–40 km, Einzelne bis 150 km"
+            ],
+            [
+              "Größte Kavernen",
+              "Resonanzkathedralen"
+            ],
+            [
+              "Älteste Landschaften",
+              "Über Milliarden Jahre entwickelte Tiefenlandschaften"
+            ]
           ]
         },
         {
-          "titel": "Verwandte Dossiers",
-          "verweise": [
-            [
-              "Rhaelis-System",
-              "inhalte/himmelskoerper/sternensysteme/details/rhaelis-system/hauptseite/index.html"
-            ]
+          "titel": "Einzigartige Welt",
+          "liste": [
+            "Natürliche Resonanzfelder als Grundlage einer Spezies",
+            "Intelligenzen von bis zu 150 km Ausdehnung",
+            "Monumentale Resonanzkathedralen",
+            "Erinnerungsregionen – ohne nachgewiesene körperlose Persönlichkeiten"
+          ]
+        },
+        {
+          "titel": "Hinweise für Besucher",
+          "liste": [
+            "Atemunterstützung erforderlich, extreme Kälte",
+            "Resonanzsturm-Warnungen beachten",
+            "Persönliche Körperregionen der Radikalen nicht betreten"
           ]
         }
       ]
@@ -683,9 +1304,9 @@
       "intro": "Medienarchiv von Ossaryn.",
       "abschnitte": [
         {
-          "titel": "Ossaryn",
+          "titel": "Ossaryn aus dem All",
           "bild": true,
-          "bildtext": "Illustration aus dem APORIA-Bildarchiv"
+          "bildtext": "Ossaryn – die Welt der Resonanzkathedralen"
         }
       ]
     }

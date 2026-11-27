@@ -1,56 +1,123 @@
 {
-  "_erzeugt": "koerper-bauen",
   "name": "Doran",
   "genitiv": "von Doran",
   "dossierName": "Doran-Dossier",
-  "klasse": "Gesteinsplanet",
-  "intro": "Doran ist eine kalte Quarzsandwelt: Helle Dünenmeere umfließen dunkle, zerklüftete Hochländer. Eine dünne Kohlendioxidhülle treibt Staubstürme über die Ebenen. Als äußerer 3:2-Nachbar Seyraths prägt er dessen Bahn seit Milliarden Jahren mit. Doran umkreist Kelira in 0,865 AE Abstand und braucht für einen Umlauf 324,4 Tage.",
+  "klasse": "Planet · Gesteinsplanet",
+  "intro": "Doran ist eine kalte, mineralreiche Welt: helle Quarzsandwüsten umfließen dunkle Basaltterrassen, Eis bedeckt ein Fünftel der Oberfläche. Wo geothermische Wärme und Wasser zusammenkommen, wachsen die Megakolonien – lebende Großstrukturen von bis zu 30 Kilometern, gemeinsam erzeugt von Hunderten bis Millionen eigenständiger Bewohner.",
   "globusDaten": {
     "planet": "quarzsandplanet-mit-dunklen-kontinenten",
-    "klasse": "Gestein",
+    "klasse": "Kalte Wüstenwelt",
     "radius": 5300000
   },
-  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=seyrath-stern&objekt=seyrath-doran",
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=seyrath-stern",
   "grunddaten": [
     [
       "Archiv-ID",
       "AP-020F23A2EC"
     ],
     [
-      "Typ",
-      "Gesteinsplanet"
-    ],
-    [
-      "Sternsystem",
-      "Kelira-System"
-    ],
-    [
-      "Zentralkörper",
-      "Kelira"
-    ],
-    [
-      "Große Halbachse",
-      "0,865 AE"
-    ],
-    [
-      "Umlaufzeit",
-      "324,4 Tage"
+      "Klasse",
+      "Terrestrischer Gesteinsplanet · mineralreiche geothermale Kolonialwelt"
     ],
     [
       "Durchmesser",
       "10.600 km"
     ],
     [
+      "Radius",
+      "5.300 km"
+    ],
+    [
       "Masse",
       "0,62 Erdmassen"
     ],
     [
-      "Schwerkraft",
-      "0,9 g"
+      "Dichte",
+      "5,94 g/cm³"
     ],
     [
-      "Gleichgewichtstemperatur",
-      "ca. -60 °C"
+      "Schwerkraft",
+      "0,9 g (8,8 m/s²)"
+    ],
+    [
+      "Mittlere Oberflächentemperatur",
+      "ca. −25 °C (Kolonialinnenräume +18 bis +26 °C)"
+    ],
+    [
+      "Ozeane",
+      "ca. 8 % offene Gewässer, 22 % Eisflächen"
+    ],
+    [
+      "Atmosphäre",
+      "83 % Stickstoff, 15,5 % Sauerstoff, 0,9 % Argon, 0,5 % Kohlendioxid, 0,1 % Spurengase"
+    ],
+    [
+      "Atmosphärendruck",
+      "ca. 1,8 bar"
+    ],
+    [
+      "Rotationsperiode",
+      "29 h"
+    ],
+    [
+      "Umlaufzeit",
+      "324 Erdtage"
+    ],
+    [
+      "Abstand zum Stern",
+      "0,865 AE"
+    ],
+    [
+      "Monde",
+      "keine"
+    ],
+    [
+      "Zentralstern",
+      "Kelira, Orangefarbener Zwerg (K3 V)"
+    ],
+    [
+      "Einstrahlung",
+      "0,52-fach der Erde"
+    ],
+    [
+      "Achsneigung",
+      "16,8°"
+    ],
+    [
+      "Exzentrizität",
+      "0,021"
+    ],
+    [
+      "Fluchtgeschwindigkeit",
+      "9,7 km/s"
+    ],
+    [
+      "Alter",
+      "ca. 5,4 Mrd. Jahre"
+    ],
+    [
+      "Archiv-ID",
+      "AP-020F23A2EC"
+    ],
+    [
+      "Planetenalter",
+      "ca. 5,2 Mrd. Jahre"
+    ],
+    [
+      "Resonanzen",
+      "3:2 mit Seyrath, 4:3 mit Ombrel"
+    ],
+    [
+      "Festlandmassen",
+      "Drei große"
+    ],
+    [
+      "Fraktionszugehörigkeit",
+      "Noch nicht festgelegt"
+    ],
+    [
+      "Intelligente Spezies",
+      "Megakolonien"
     ]
   ],
   "position": [
@@ -60,84 +127,110 @@
     ],
     [
       "Zentralstern",
-      "Kelira",
-      "inhalte/himmelskoerper/sterne/details/kelira/hauptseite/index.html"
+      "Kelira · K3 V, Einzelstern"
     ],
     [
-      "Abstand",
-      "0,865 AE"
+      "Bahnposition",
+      "5. von 7 Planeten"
+    ],
+    [
+      "Entfernung zur Sonne",
+      "34 Lichtjahre"
+    ],
+    [
+      "Nächste Nachbarsysteme",
+      "Celeun-System (26,3 Lj), Morvath-System (27,3 Lj)"
     ]
   ],
   "verknuepfungen": [
     {
       "icon": "✦",
-      "art": "Sternenkarte",
-      "titel": "Doran im Kelira-System",
-      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=seyrath-stern&objekt=seyrath-doran",
-      "route": null
-    },
-    {
-      "icon": "☀",
-      "art": "Zentralstern",
-      "titel": "Kelira",
-      "href": "inhalte/himmelskoerper/sterne/details/kelira/hauptseite/index.html",
+      "art": "Systemübersicht",
+      "titel": "Kelira-System",
+      "href": "inhalte/himmelskoerper/sternensysteme/details/kelira-system/hauptseite/index.html",
       "route": null
     },
     {
       "icon": "✿",
-      "art": "Heimatwelt der Chronoiden",
-      "titel": "Seyrath",
-      "href": "inhalte/himmelskoerper/planeten/details/seyrath/hauptseite/index.html",
+      "art": "Heimische Spezies",
+      "titel": "Megakolonien",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Megakolonien/hauptseite/Spezies.html",
       "route": null
     },
     {
       "icon": "◈",
       "art": "Spezies-Dossier",
-      "titel": "Chronoiden",
-      "href": "inhalte/spezies/Mentale Spezies/Chronoiden/hauptseite/Spezies.html",
+      "titel": "Heimatwelt",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Megakolonien/Unterseiten/Heimatwelt/heimatwelt.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Politik und Fraktionen",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Megakolonien/Unterseiten/Politik/politik.html",
+      "route": null
+    },
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Kelira-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=seyrath-stern",
       "route": null
     }
   ],
   "quellen": [
     {
-      "titel": "Sternenkarte · Kelira-System",
-      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=seyrath-stern&objekt=seyrath-doran"
+      "titel": "Speziesdossier Megakolonien · Heimatwelt",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Megakolonien/Unterseiten/Heimatwelt/heimatwelt.html"
     },
     {
-      "titel": "Speziesdossier Chronoiden",
-      "href": "inhalte/spezies/Mentale Spezies/Chronoiden/hauptseite/Spezies.html"
+      "titel": "Speziesdossier Megakolonien · Geschichte",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Megakolonien/Unterseiten/Geschichte/geschichte.html"
+    },
+    {
+      "titel": "Speziesdossier Megakolonien · Gesellschaft",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Megakolonien/Unterseiten/Gesellschaft/gesellschaft.html"
+    },
+    {
+      "titel": "Speziesdossier Megakolonien · Politik",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Megakolonien/Unterseiten/Politik/politik.html"
+    },
+    {
+      "titel": "Speziesdossier Megakolonien · Allgemeines",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Megakolonien/Unterseiten/Allgemeines/allgemeines.html"
     }
   ],
   "design": {
     "farben": {
-      "nacht": "#0b0a08",
-      "tiefe": "#181511",
-      "akzent": "#e4d7c0",
-      "sand": "#e7d1a8",
-      "moos": "#c0d199",
-      "ozean": "#9ab7b1",
-      "glas": "rgba(8, 12, 18, .76)",
-      "glas-hell": "rgba(16, 22, 32, .82)",
-      "linie": "rgba(255, 255, 255, .12)",
-      "linie-hell": "rgba(255, 255, 255, .3)",
-      "text": "#eef2f6",
-      "leise": "#a8b0bc",
-      "aporia-page-tint": "#605747"
+      "nacht": "#07080a",
+      "tiefe": "#101216",
+      "akzent": "#e8c28a",
+      "sand": "#e6dcc4",
+      "moos": "#7fc8b8",
+      "ozean": "#3fa8b8",
+      "glas": "rgba(16, 18, 22, .8)",
+      "glas-hell": "rgba(26, 29, 35, .86)",
+      "linie": "rgba(232, 194, 138, .16)",
+      "linie-hell": "rgba(127, 200, 184, .36)",
+      "text": "#f2f1ee",
+      "leise": "#adaaa2",
+      "aporia-page-tint": "#3a3a2a"
     }
   },
   "kapitel": {
     "Allgemeines": {
       "gruppe": "Weitere",
       "icon": "▤",
-      "intro": "Doran auf einen Blick.",
+      "intro": "Doran auf einen Blick: kalter Sand, warme Kolonien.",
       "abschnitte": [
         {
           "titel": "Kurzprofil",
           "bild": true,
-          "bildtext": "Doran",
+          "bildtext": "Doran – Welt der lebenden Kolonien",
           "text": [
-            "Doran ist eine kalte Quarzsandwelt: Helle Dünenmeere umfließen dunkle, zerklüftete Hochländer. Eine dünne Kohlendioxidhülle treibt Staubstürme über die Ebenen. Als äußerer 3:2-Nachbar Seyraths prägt er dessen Bahn seit Milliarden Jahren mit.",
-            "Doran umkreist Kelira in 0,865 AE Abstand und braucht für einen Umlauf 324,4 Tage."
+            "Doran ist der fünfte Planet des Kelira-Systems und umkreist den orangefarbenen Zwerg Kelira in 0,8648 AE Abstand, in 3:2-Resonanz mit Seyrath und 4:3-Resonanz mit Ombrel. Er erhält rund 52 % der irdischen Einstrahlung; trotz einer dichten Atmosphäre von 1,8 bar liegt die mittlere Temperatur bei etwa −25 °C.",
+            "Mit 10.600 Kilometern Durchmesser und 0,62 Erdmassen ist Doran etwas kleiner als die Erde; die Schwerkraft beträgt rund 0,9 g. 70 % der Oberfläche sind trockenes Land, 22 % Eis, nur 8 % offene Gewässer. Leben konzentriert sich in geothermischen Senken – große Teile des Planeten bleiben unbesiedelt."
           ]
         },
         {
@@ -145,55 +238,119 @@
           "daten": [
             [
               "Typ",
-              "Gesteinsplanet"
+              "Terrestrischer Gesteinsplanet · mineralreiche geothermale Kolonialwelt"
             ],
             [
-              "Sternsystem",
-              "Kelira-System"
-            ],
-            [
-              "Zentralkörper",
-              "Kelira"
-            ],
-            [
-              "Große Halbachse",
-              "0,865 AE"
-            ],
-            [
-              "Umlaufzeit",
-              "324,4 Tage"
-            ],
-            [
-              "Durchmesser",
-              "10.600 km"
-            ],
-            [
-              "Masse",
-              "0,62 Erdmassen"
+              "Zentralstern",
+              "Kelira (Orangefarbener Zwerg (K3 V))"
             ],
             [
               "Schwerkraft",
               "0,9 g"
             ],
             [
-              "Gleichgewichtstemperatur",
-              "ca. -60 °C"
+              "Durchmesser",
+              "10.600 km"
+            ],
+            [
+              "Mittlere Temperatur",
+              "ca. −25 °C (Kolonialinnenräume +18 bis +26 °C)"
+            ],
+            [
+              "Atmosphäre",
+              "Stickstoff-Sauerstoff, ca. 1,8 bar"
+            ],
+            [
+              "Wasser",
+              "ca. 8 % offene Gewässer, 22 % Eisflächen"
+            ],
+            [
+              "Intelligente Spezies",
+              "Megakolonien"
             ]
           ]
         },
         {
-          "titel": "Im System von Seyrath",
-          "text": [
-            "Das Kelira-System ist die Heimat der Chronoiden: Ihr Planet Seyrath umkreist Kelira."
-          ],
-          "verweise": [
+          "titel": "Doran im Vergleich zur Erde",
+          "vergleich": {
+            "mit": "Erde",
+            "werte": [
+              [
+                "Durchmesser",
+                10600,
+                12742,
+                "km"
+              ],
+              [
+                "Schwerkraft",
+                0.9,
+                1,
+                "g"
+              ],
+              [
+                "Tageslänge",
+                29,
+                24,
+                "h"
+              ],
+              [
+                "Luftdruck (Mittel)",
+                1.8,
+                1,
+                "bar"
+              ],
+              [
+                "Mittlere Temperatur",
+                -25,
+                15,
+                "°C"
+              ]
+            ]
+          }
+        },
+        {
+          "titel": "Hauptmerkmale",
+          "karten": [
+            {
+              "titel": "Quarzsandwüsten",
+              "text": "Helle Dünenmeere bis zum Horizont."
+            },
+            {
+              "titel": "Basaltterrassen",
+              "text": "Dunkle Hochländer mit warmen Schluchten."
+            },
+            {
+              "titel": "Lebende Großstrukturen",
+              "text": "Kilometerweite, gemeinsam erzeugte Kolonialgewebe."
+            },
+            {
+              "titel": "Geothermische Oasen",
+              "text": "Wärme, Wasser und Minerale als Grundlage des Lebens."
+            }
+          ]
+        },
+        {
+          "titel": "Einordnung",
+          "daten": [
             [
-              "Seyrath",
-              "inhalte/himmelskoerper/planeten/details/seyrath/hauptseite/index.html"
+              "Objekt-ID",
+              "seyrath-doran"
             ],
             [
-              "Speziesdossier Chronoiden",
-              "inhalte/spezies/Mentale Spezies/Chronoiden/hauptseite/Spezies.html"
+              "Position",
+              "Fünfter Planet"
+            ],
+            [
+              "Heimatspezies",
+              "Megakolonien (Gigantische Lebensformen)"
+            ],
+            [
+              "Monde und Ringe",
+              "Keine"
+            ],
+            [
+              "Nachbarwelt",
+              "Seyrath, Heimat der Chronoiden"
             ]
           ]
         }
@@ -202,88 +359,159 @@
     "Astronomie": {
       "gruppe": "Wissenschaft",
       "icon": "✧",
-      "intro": "Doran im Kelira-System.",
+      "intro": "Ein Resonanzpartner Seyraths.",
       "abschnitte": [
         {
-          "titel": "Bahn",
+          "titel": "Bahn und Position",
+          "text": [
+            "Doran ist der 5. von 7 Planeten im Kelira-System. Er umkreist Kelira in 0,865 AE Abstand – innerhalb der habitablen Zone (bei Kelira zwischen 0,6 und 1,04 AE). Er erhält 0,52-mal so viel Sternlicht wie die Erde.",
+            "Ohne Atmosphäre läge seine Gleichgewichtstemperatur bei rund -57 °C. Die dichte Atmosphäre hebt die Temperatur um rund 32 K über die Gleichgewichtstemperatur von etwa −57 °C – für ein mildes Klima reicht das nicht, dafür sorgen geothermische Wärme und die Kolonien selbst."
+          ],
           "daten": [
             [
-              "Zentralkörper",
-              "Kelira"
+              "Sternsystem",
+              "Kelira-System"
+            ],
+            [
+              "Bahnposition",
+              "5. von 7 Planeten"
             ],
             [
               "Große Halbachse",
-              "0,8648 AE (129,4 Mio. km)"
+              "0,865 AE (ca. 129,4 Mio. km)"
             ],
             [
               "Exzentrizität",
               "0,021"
             ],
             [
-              "Bahnneigung",
-              "0,5°"
+              "Umlaufzeit",
+              "324,4 Erdtage"
             ],
             [
-              "Umlaufzeit",
-              "324,4 Tage"
+              "Ortsjahr",
+              "ca. 268 Ortstage"
             ],
             [
               "Einstrahlung",
-              "0,521-fach der Erde"
+              "ca. 0,52-fach der Erde"
+            ],
+            [
+              "Habitable Zone von Kelira",
+              "0,6–1,04 AE"
             ]
           ]
         },
         {
-          "titel": "Am Himmel von Doran",
+          "titel": "Zentralstern",
           "text": [
-            "Kelira erscheint von hier aus etwa 0,53° groß (die Sonne von der Erde: 0,53°)."
-          ]
-        },
-        {
-          "titel": "Körper des Systems",
-          "zeitleiste": [
+            "Kelira ist ein orangefarbener Hauptreihenstern der Spektralklasse K3 V mit rund 82 % der Sonnenmasse und 39 % ihrer Leuchtkraft. Seine lange Hauptreihenlebensdauer schuf günstige Bedingungen für die langfristige Entwicklung komplexer Lebensformen. Um Kelira kreisen sieben Planeten in einer geschlossenen Resonanzkette – ein seltenes, sehr ruhiges Planetensystem ohne Gasriesen."
+          ],
+          "daten": [
             [
-              "Kelira · Stern",
+              "Name",
+              "Kelira"
+            ],
+            [
+              "Typ",
               "Orangefarbener Zwerg (K3 V)"
             ],
             [
-              "Arun · 0,29 AE",
-              "Gesteinsplanet"
+              "Masse",
+              "0,82 Sonnenmassen"
             ],
             [
-              "Velth · 0,38 AE",
-              "Mini-Neptun"
+              "Radius",
+              "0,87 Sonnenradien"
             ],
             [
-              "Isaru · 0,5 AE",
-              "Ozeanplanet"
+              "Leuchtkraft",
+              "0,39 Sonnenleuchtkräfte"
             ],
             [
-              "Seyrath · 0,66 AE",
-              "Gesteinsplanet"
+              "Oberflächentemperatur",
+              "ca. 4.900 K"
             ],
             [
-              "Doran · 0,86 AE · dieses Dossier",
-              "Gesteinsplanet"
+              "Alter",
+              "ca. 5,4 Mrd. Jahre"
             ],
             [
-              "Ombrel · 1,05 AE",
-              "Mini-Neptun"
-            ],
-            [
-              "Halvek · 1,27 AE",
-              "Eisplanet"
-            ],
-            [
-              "Keliras Schleier · 22–42 AE",
-              "Trümmergürtel"
+              "Begleitsterne",
+              "keine (Einzelstern)"
             ]
           ],
           "verweise": [
             [
               "Kelira",
               "inhalte/himmelskoerper/sterne/details/kelira/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Rotation und Achse",
+          "daten": [
+            [
+              "Rotationsperiode",
+              "29 h"
             ],
+            [
+              "Achsneigung",
+              "16,8°"
+            ],
+            [
+              "Scheinbare Sterngröße",
+              "ca. 0,53° (Sonne von der Erde: 0,53°)"
+            ],
+            [
+              "Jahreszeiten",
+              "Vorhanden, mit saisonalen Niederschlagsperioden"
+            ]
+          ]
+        },
+        {
+          "titel": "Monde",
+          "text": [
+            "Doran besitzt keine Monde."
+          ]
+        },
+        {
+          "titel": "Planeten des Systems",
+          "zeitleiste": [
+            [
+              "Arun · 0,293 AE",
+              "Arun ist das innerste Glied der Kelira-Kette: eine heiße, gebunden rotierende Supererde."
+            ],
+            [
+              "Velth · 0,385 AE",
+              "Velth ist ein aufgeblähter Mini-Neptun mit sehr geringer Dichte: Eine kleine Gesteinsmasse trägt eine weit ausgedehnte, lavendelfarben schimmernde Wasserstoffhülle."
+            ],
+            [
+              "Isaru · 0,504 AE",
+              "Isaru ist eine heiße Wasserwelt am Rand des Treibhauskollapses: Ein dunkler Ozean liegt unter dichten, dampfgesättigten Wolken, die Keliras Licht bernsteinfarben streuen."
+            ],
+            [
+              "Seyrath · 0,66 AE",
+              "Seyrath ist die Heimatwelt der Chronoiden: ein wasserführender, geologisch aktiver Gesteinsplanet mit vier Kontinenten, mineralreichen hydrothermalen Gewässern und natürlichen mineralischen Resonanzsystemen, aus denen vor rund 420.000 Jahren die ersten bewussten Chronoiden hervorgingen."
+            ],
+            [
+              "Doran · 0,865 AE",
+              "Doran ist eine kalte, mineralreiche Welt mit hellen Quarzsandwüsten und dunklen Basaltterrassen."
+            ],
+            [
+              "Ombrel · 1,048 AE",
+              "Ombrel ist ein indigoblauer Mini-Neptun mit klarer, fast wolkenloser Hochatmosphäre."
+            ],
+            [
+              "Halvek · 1,269 AE",
+              "Halvek ist das äußerste Glied der Kette: eine eisreiche Supererde, deren Mantel aus Hochdruckeis einen Gesteinskern umhüllt."
+            ],
+            [
+              "Keliras Schleier · 22–42 AE",
+              "Keliras Schleier ist eine kalte Trümmerscheibe aus zwei Ringen – 22 bis 26 AE und 36 bis 42 AE – mit einer staubarmen Lücke dazwischen."
+            ]
+          ],
+          "verweise": [
             [
               "Arun",
               "inhalte/himmelskoerper/planeten/details/arun/hauptseite/index.html"
@@ -307,6 +535,62 @@
             [
               "Halvek",
               "inhalte/himmelskoerper/planeten/details/halvek/hauptseite/index.html"
+            ],
+            [
+              "Keliras Schleier",
+              "inhalte/himmelskoerper/sternensysteme/details/keliras-schleier/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Nachbarschaft und Anomalien",
+          "karten": [
+            {
+              "titel": "Tivar",
+              "text": "Tivar ist ein kleiner Trojaner, der Seyrath am vorauseilenden Lagrange-Punkt L4 begleitet. Sein glasig aufgeschmolzenes Gestein stammt vermutlich aus einem frühen Einschlag auf Seyrath selbst; chronoidische Forscher nutzen ihn als ungestörte Messplattform."
+            },
+            {
+              "titel": "Lichtfuge",
+              "text": "Die Lichtfuge ist ein periodischer Komet mit goldenem Staubknoten und blauem Ionenschweif. Alle rund 33 Jahre nähert sie sich Kelira bis auf 0,67 AE – fast bis auf Seyraths Bahn. Für die Chronoiden ist ihr Erscheinen ein Fixpunkt gemeinsamer Zeitrechnung über alle Wahrnehmungsgeschwindigkeiten hinweg."
+            },
+            {
+              "titel": "Nachbarsysteme",
+              "text": "Celeun-System (26,3 Lj), Morvath-System (27,3 Lj), Ferrum-System (30 Lj) – alle weit außerhalb der gravitativen Einflusszone von Kelira (rund 3,4 Lichtjahre)."
+            }
+          ],
+          "verweise": [
+            [
+              "Tivar",
+              "inhalte/himmelskoerper/asteroiden/details/tivar/hauptseite/index.html"
+            ],
+            [
+              "Lichtfuge",
+              "inhalte/himmelskoerper/kometen/details/lichtfuge/hauptseite/index.html"
+            ],
+            [
+              "Kelira-System in der Sternenkarte",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=seyrath-stern"
+            ]
+          ]
+        },
+        {
+          "titel": "Bahndaten",
+          "daten": [
+            [
+              "Mittlere Sternentfernung",
+              "ca. 129,4 Mio. km"
+            ],
+            [
+              "Bahnneigung",
+              "0,5°"
+            ],
+            [
+              "Gebundene Rotation",
+              "Nein"
+            ],
+            [
+              "Orbitalresonanzen",
+              "3:2 mit Seyrath, 4:3 mit Ombrel"
             ]
           ]
         }
@@ -334,22 +618,31 @@
             ],
             [
               "Oberflächenschwerkraft",
-              "8,79 m/s² (0,896 g)"
+              "8,8 m/s² (0,9 g)"
             ],
             [
               "Fluchtgeschwindigkeit",
-              "9,66 km/s"
+              "ca. 9,7 km/s"
+            ],
+            [
+              "Mittlere Dichte",
+              "ca. 5,9 g/cm³"
+            ],
+            [
+              "Gesamtoberfläche",
+              "ca. 353 Mio. km²"
+            ],
+            [
+              "Magnetfeld",
+              "Vorhanden, regional ca. 25–45 µT"
             ]
-          ],
+          ]
+        },
+        {
+          "titel": "Physikalische Werte im Vergleich",
           "vergleich": {
             "mit": "Erde",
             "werte": [
-              [
-                "Durchmesser",
-                10600,
-                12742,
-                "km"
-              ],
               [
                 "Masse",
                 0.62,
@@ -357,13 +650,31 @@
                 "Erdmassen"
               ],
               [
-                "Schwerkraft",
-                0.9,
+                "Dichte",
+                5.94,
+                5.51,
+                "g/cm³"
+              ],
+              [
+                "Fluchtgeschwindigkeit",
+                9.7,
+                11.2,
+                "km/s"
+              ],
+              [
+                "Magnetfeld",
+                0.7,
                 1,
-                "g"
+                "× Erde"
               ]
             ]
           }
+        },
+        {
+          "titel": "Fast erdschwer",
+          "text": [
+            "Mit rund 8,8 m/s² erreicht die Schwerkraft fast 90 % der irdischen; die Fluchtgeschwindigkeit liegt bei etwa 9,7 km/s. Die geologische Aktivität ist regional stark ausgeprägt."
+          ]
         }
       ]
     },
@@ -373,19 +684,26 @@
       "intro": "Planetare Struktur von Doran.",
       "abschnitte": [
         {
-          "titel": "Schalenbau",
+          "titel": "Aufbau",
+          "text": [
+            "Radioaktiver Zerfall im eisenreichen Kern liefert innere Wärme; der teilweise flüssige äußere Kern erzeugt das Magnetfeld. Im silikatreichen Mantel steigen regional Wärmeströme auf. Die Kruste besteht aus quarzreichen Schichten, Basalt, Sedimentbecken und porösem Gestein mit Wasserreservoirs."
+          ],
           "schichten": [
             [
               "Kruste",
-              "Silikatgestein"
+              "Quarz, Basalt, Sedimente, poröses Gestein, Grundwasser"
             ],
             [
               "Mantel",
-              "Dichteres Silikatgestein"
+              "Silikatreich, langsame Konvektion, Wärmeströme"
             ],
             [
-              "Kern",
-              "Eisen und Nickel"
+              "Äußerer Kern",
+              "Teilweise flüssig, Magnetfeld"
+            ],
+            [
+              "Innerer Kern",
+              "Eisenreich, radioaktive Wärme"
             ]
           ]
         }
@@ -394,12 +712,58 @@
     "Geografie": {
       "gruppe": "Natur",
       "icon": "△",
-      "intro": "Geografie von Doran.",
+      "intro": "Quarzmeere, Terrassen und Perlmuttbecken.",
       "abschnitte": [
         {
           "titel": "Oberfläche",
-          "text": [
-            "Die Oberfläche von Doran ist kalt."
+          "balken": {
+            "werte": [
+              [
+                "Land und trockene Gesteinsflächen",
+                70
+              ],
+              [
+                "Eisflächen",
+                22
+              ],
+              [
+                "Offene Gewässer",
+                8
+              ]
+            ]
+          }
+        },
+        {
+          "titel": "Regionen",
+          "karten": [
+            {
+              "titel": "Die Weißen Quarzmeere",
+              "text": "Gewaltige helle Dünenfelder mit extremen Temperaturschwankungen, Staubstürmen und verlassenen Kolonialstrukturen."
+            },
+            {
+              "titel": "Die Schwarzen Terrassen",
+              "text": "Basaltische Hochländer mit warmen Schluchten – große Kolonien und organische Brücken zwischen Felsformationen."
+            },
+            {
+              "titel": "Die Perlmuttbecken",
+              "text": "Feuchtwarme geothermische Senken mit perlmuttfarbenen Kolonialkörpern – einer der Ursprungsräume der Megakolonien."
+            },
+            {
+              "titel": "Die Türkisadern",
+              "text": "Mineralreiche warme Flüsse mit lebenden Flüssigkeitsleitungen und vielen kleineren Kolonien."
+            },
+            {
+              "titel": "Die Kalte Bruchzone",
+              "text": "Tiefes Grabensystem zwischen Eis und Thermalquellen, geologisch instabil."
+            },
+            {
+              "titel": "Die Versteinerten Kolonien",
+              "text": "Mineralisierte Überreste uralter Megakolonien – archäologische Forschungsgebiete."
+            },
+            {
+              "titel": "Die Membranhochebenen",
+              "text": "Lebende Überdachungen zwischen Felsplateaus mit selbst regulierten Innenlandschaften – gesellschaftliche Zentren."
+            }
           ]
         }
       ]
@@ -410,26 +774,53 @@
       "intro": "Atmosphäre von Doran.",
       "abschnitte": [
         {
-          "titel": "Gashülle",
+          "titel": "Zusammensetzung",
           "text": [
-            "Doran hält eine dünne, kalte Gashülle fest."
+            "Die Stickstoff-Sauerstoff-Atmosphäre ist mit etwa 1,8 bar vergleichsweise dicht: 83 % Stickstoff, 15,5 % Sauerstoff (Partialdruck etwa 0,28 bar), 0,9 % Argon und 0,5 % Kohlendioxid. Regional ist sie feucht, über trockenen Regionen staubig, und Nebel bildet sich häufig. Für die Megakolonien ist sie natürlich atembar; Menschen benötigen langfristig eine atmosphärische Prüfung und gegebenenfalls Atemunterstützung."
           ],
           "balken": {
             "werte": [
               [
-                "Kohlendioxid",
-                62
+                "Stickstoff",
+                83
               ],
               [
-                "Stickstoff",
-                33
+                "Sauerstoff",
+                15.5
               ],
               [
                 "Argon",
-                5
+                0.9
+              ],
+              [
+                "Kohlendioxid",
+                0.5
+              ],
+              [
+                "Spurengase",
+                0.1
               ]
             ]
           }
+        },
+        {
+          "titel": "Druck",
+          "daten": [
+            [
+              "Mittlerer Oberflächendruck",
+              "ca. 1,8 bar"
+            ]
+          ]
+        },
+        {
+          "titel": "Wolkenschichten",
+          "liste": [
+            "Nebel- und Kondensationsschichten über warmen Becken",
+            "Schichtwolken über offenen Gewässern",
+            "Staubhaltige mittlere Schichten und hohe Eiswolken",
+            "Dichte lokale Wolken über großen Megakolonien",
+            "Dunkle Staubfronten bei saisonalen Stürmen"
+          ]
         }
       ]
     },
@@ -439,9 +830,54 @@
       "intro": "Klima von Doran.",
       "abschnitte": [
         {
-          "titel": "Temperatur",
+          "titel": "Temperaturzonen",
           "text": [
-            "Bei 0,865 AE Abstand zu Kelira liegt die Gleichgewichtstemperatur von Doran bei rund -60 °C – kalt."
+            "Doran ist überwiegend kalt, mit starken regionalen Unterschieden. Natürliche Lebensräume liegen dort, wo geothermische Wärme, flüssiges Wasser und Minerale zusammenkommen; in biologischen Oasen erreicht die Luftfeuchtigkeit 70–95 %. Große Megakolonien erzeugen mit ihrer Wärmeregulation eigene Mikroklimate."
+          ],
+          "skala": {
+            "einheit": "°C",
+            "min": -85,
+            "max": 35,
+            "bereiche": [
+              [
+                "Polare Regionen",
+                -80,
+                -35
+              ],
+              [
+                "Kalte Mineralwüsten",
+                -40,
+                5
+              ],
+              [
+                "Äquatoriale Becken",
+                -5,
+                18
+              ],
+              [
+                "Geothermische Lebensräume",
+                12,
+                30
+              ],
+              [
+                "Kolonialinnenräume",
+                18,
+                26
+              ]
+            ]
+          }
+        },
+        {
+          "titel": "Stürme",
+          "liste": [
+            "Großflächige Quarzstaubstürme",
+            "Kalte Fronten und Schneestürme in Hochlagen",
+            "Kondensationsstürme über geothermischen Becken",
+            "Fallwinde an Gebirgszügen",
+            "Elektrische Entladungen in mineralreichen Staubwolken"
+          ],
+          "text": [
+            "Megakolonien schließen bei extremem Wetter bewegliche Schutzmembranen und schirmen Außenbereiche ab."
           ]
         }
       ]
@@ -452,9 +888,15 @@
       "intro": "Gewässer von Doran.",
       "abschnitte": [
         {
-          "titel": "Wasser",
-          "text": [
-            "Wasser gibt es höchstens als Eis in Kratern und im Untergrund."
+          "titel": "Gewässer",
+          "liste": [
+            "Kalte Binnenmeere und eisüberdeckte Seen",
+            "Grundwasserreservoirs und unterirdische Kanäle",
+            "Geothermisch erwärmte Becken und Thermalquellen",
+            "Flüsse in geschützten Schluchten",
+            "Saisonale Schmelzwassergebiete",
+            "Wasserkreisläufe innerhalb der Megakolonien",
+            "Kein zusammenhängender Ozean"
           ]
         }
       ]
@@ -466,8 +908,15 @@
       "abschnitte": [
         {
           "titel": "Geologie",
+          "liste": [
+            "Ausgedehnte Quarzsandformationen",
+            "Basaltische Hochländer und eisenhaltige Gebirge",
+            "Mineralische Ausfällungen um Thermalquellen",
+            "Unterirdische Wärmespeicher und regionaler Vulkanismus",
+            "Poröse Gesteinsbecken und Höhlensysteme"
+          ],
           "text": [
-            "Doran ist groß genug, um im Inneren noch Wärme zu speichern; Spuren alter vulkanischer Tätigkeit sind wahrscheinlich."
+            "Stabile Felsformationen dienen den Megakolonien als natürliche Fundamente ihrer Großstrukturen."
           ]
         }
       ]
@@ -475,12 +924,66 @@
     "Biosphäre": {
       "gruppe": "Natur",
       "icon": "❧",
-      "intro": "Biosphäre von Doran.",
+      "intro": "Leben in Oasen.",
       "abschnitte": [
         {
-          "titel": "Leben",
+          "titel": "Biosphäre",
           "text": [
-            "Auf Doran ist kein Leben verzeichnet."
+            "Photosynthetische und chemosynthetische Organismen, kälteresistente Mikroben und Mineralverwerter bilden eine regional stark konzentrierte Biosphäre; dazwischen liegen große, kaum besiedelte Landschaften. Viele Organismen leben in Symbiose mit dem Kolonialgewebe. Ein gemeinsames Bewusstsein besitzt die Biosphäre nicht."
+          ]
+        },
+        {
+          "titel": "Flora",
+          "karten": [
+            {
+              "titel": "Mineralfächer",
+              "text": "Halbtransparente Fächer auf mineralreichen Terrassen."
+            },
+            {
+              "titel": "Thermalschleier",
+              "text": "Durchscheinende Membranen über warmen Becken."
+            },
+            {
+              "titel": "Quarzpolster",
+              "text": "Kälteresistente Polster mit eingelagerten Mineralen."
+            },
+            {
+              "titel": "Kondensationskronen",
+              "text": "Mehrere Meter hohe Fächer, die Feuchtigkeit sammeln."
+            },
+            {
+              "titel": "Bernsteinmatten",
+              "text": "Flache Teppiche, an Keliras orangefarbenes Licht angepasst."
+            }
+          ]
+        },
+        {
+          "titel": "Fauna",
+          "karten": [
+            {
+              "titel": "Terrassenläufer",
+              "text": "Mehrgliedrig, mit mineralisierten Schutzplatten."
+            },
+            {
+              "titel": "Wärmesammler",
+              "text": "Wandern langsam zwischen Thermalquellen."
+            },
+            {
+              "titel": "Membrangleiter",
+              "text": "Nutzen warme Aufwinde."
+            },
+            {
+              "titel": "Quarzgräber",
+              "text": "Leben unterirdisch."
+            },
+            {
+              "titel": "Kanalbewohner",
+              "text": "Amphibisch, teils symbiotisch mit den Kolonien."
+            },
+            {
+              "titel": "Frostwanderer",
+              "text": "Ziehen saisonal zwischen Oasen."
+            }
           ]
         }
       ]
@@ -488,27 +991,29 @@
     "Spezies": {
       "gruppe": "Zivilisation",
       "icon": "✿",
-      "intro": "Spezies von Doran.",
+      "intro": "Die Megakolonien – viele Individuen, ein lebendes Bauwerk.",
       "abschnitte": [
         {
-          "titel": "Bewohner",
+          "titel": "Megakolonien",
           "text": [
-            "Doran ist keine Heimat einer intelligenten Spezies."
-          ]
-        },
-        {
-          "titel": "Im System von Seyrath",
-          "text": [
-            "Das Kelira-System ist die Heimat der Chronoiden: Ihr Planet Seyrath umkreist Kelira."
+            "Die Bewohner der Megakolonien sind Einzelindividuen mit unabhängigem Bewusstsein: 1,20 bis 3,50 Meter groß, mit sechs beweglichen Gliedmaßen, dreilappigem nicht humanoidem Körper, mineralisierten Schutzlamellen und biolumineszenten Kommunikationsfeldern. Gemeinsam erzeugen sie lebende Gewebestrukturen von bis zu 30 Kilometern – ohne Schwarmintelligenz, ohne Königin und ohne übergeordnete Persönlichkeit des Kolonialkörpers."
           ],
-          "verweise": [
+          "daten": [
             [
-              "Seyrath",
-              "inhalte/himmelskoerper/planeten/details/seyrath/hauptseite/index.html"
+              "Körpergröße",
+              "1,20–3,50 m"
             ],
             [
-              "Speziesdossier Chronoiden",
-              "inhalte/spezies/Mentale Spezies/Chronoiden/hauptseite/Spezies.html"
+              "Gliedmaßen",
+              "Sechs"
+            ],
+            [
+              "Kolonialausdehnung",
+              "bis ca. 30 km"
+            ],
+            [
+              "Bewusstsein",
+              "Individuell, kein Schwarm"
             ]
           ]
         }
@@ -520,25 +1025,17 @@
       "intro": "Zivilisation von Doran.",
       "abschnitte": [
         {
-          "titel": "Siedlungen",
+          "titel": "Zivilisation",
           "text": [
-            "Für Doran sind keine dauerhaften Siedlungen verzeichnet."
-          ]
-        },
-        {
-          "titel": "Im System von Seyrath",
-          "text": [
-            "Das Kelira-System ist die Heimat der Chronoiden: Ihr Planet Seyrath umkreist Kelira."
+            "Zahlreiche unabhängige Megakolonien mit Hunderten bis Millionen Bewohnern besitzen unterschiedliche Gesellschaftssysteme. Die Zivilisation konzentriert sich auf geothermische Regionen."
           ],
-          "verweise": [
-            [
-              "Seyrath",
-              "inhalte/himmelskoerper/planeten/details/seyrath/hauptseite/index.html"
-            ],
-            [
-              "Speziesdossier Chronoiden",
-              "inhalte/spezies/Mentale Spezies/Chronoiden/hauptseite/Spezies.html"
-            ]
+          "liste": [
+            "Biologische Infrastruktur und organische Verkehrswege",
+            "Gemeinschaftliche Wasseraufbereitung",
+            "Biologische Energie- und Wärmeregulierung",
+            "Forschungsanlagen und industrielle Fertigung",
+            "Individuelle Wohnräume und Handelszentren",
+            "Politisch selbstverwaltete Kolonialbezirke"
           ]
         }
       ]
@@ -549,9 +1046,24 @@
       "intro": "Geschichte von Doran.",
       "abschnitte": [
         {
-          "titel": "Entstehung",
-          "text": [
-            "Doran entstand zusammen mit dem Kelira-System vor rund 5,4 Milliarden Jahren."
+          "titel": "Zeitleiste",
+          "zeitleiste": [
+            [
+              "vor ca. 5,2 Mrd. Jahren",
+              "Entstehung, eisenreicher Kern, mineralische Kruste"
+            ],
+            [
+              "Leben",
+              "Entwicklung in geothermischen Oasen wie den Perlmuttbecken"
+            ],
+            [
+              "Kolonien",
+              "Gemeinschaftlich erzeugte lebende Großstrukturen"
+            ],
+            [
+              "Gegenwart",
+              "Zahlreiche unabhängige Megakolonien; versteinerte Überreste älterer Kolonien"
+            ]
           ]
         }
       ]
@@ -560,14 +1072,7 @@
       "gruppe": "Zivilisation",
       "icon": "◇",
       "intro": "Fraktionen von Doran.",
-      "abschnitte": [
-        {
-          "titel": "Ansprüche",
-          "text": [
-            "Für Doran sind keine Fraktionsansprüche verzeichnet."
-          ]
-        }
-      ]
+      "abschnitte": []
     },
     "Rohstoffe": {
       "gruppe": "Weitere",
@@ -576,9 +1081,19 @@
       "abschnitte": [
         {
           "titel": "Rohstoffe",
-          "liste": [
-            "Silikatgestein",
-            "Metallerze"
+          "karten": [
+            {
+              "titel": "Mineralisch",
+              "text": "Quarz, Silikate, Eisen, Kupfer, Magnesium, Calcium, Phosphate, Schwefel, seltene Metalle."
+            },
+            {
+              "titel": "Biologisch",
+              "text": "Gewebekulturen, Membranen, mineralisierte Fasern, Verbundstoffe, Filter, Enzyme, Dichtungsmaterialien."
+            },
+            {
+              "titel": "Energie",
+              "text": "Geothermie, Sternlicht, biologische Energieträger, technische Anlagen."
+            }
           ]
         }
       ]
@@ -587,27 +1102,7 @@
       "gruppe": "Weitere",
       "icon": "✧",
       "intro": "Erforschung von Doran.",
-      "abschnitte": [
-        {
-          "titel": "Offene Fragen",
-          "liste": [
-            "Wie ist der innere Aufbau beschaffen?",
-            "Gab es früher eine dichtere Atmosphäre?"
-          ]
-        },
-        {
-          "titel": "In der Sternenkarte",
-          "text": [
-            "Doran ist mit allen Bahndaten im Kelira-System der Sternenkarte eingetragen."
-          ],
-          "verweise": [
-            [
-              "In der Sternenkarte zeigen",
-              "Menüs/Sternenkarte/Sternenkarte.html?system=seyrath-stern&objekt=seyrath-doran"
-            ]
-          ]
-        }
-      ]
+      "abschnitte": []
     },
     "Besonderheiten": {
       "gruppe": "Weitere",
@@ -615,9 +1110,29 @@
       "intro": "Besonderheiten von Doran.",
       "abschnitte": [
         {
-          "titel": "Besonderheiten",
+          "titel": "Rekorde",
+          "daten": [
+            [
+              "Größte Strukturen",
+              "Megakolonien bis ca. 30 km Ausdehnung"
+            ],
+            [
+              "Bevölkerung einer Kolonie",
+              "Hunderte bis Millionen Bewohner"
+            ],
+            [
+              "Größte Wüsten",
+              "Die Weißen Quarzmeere"
+            ]
+          ]
+        },
+        {
+          "titel": "Hinweise für Besucher",
           "liste": [
-            "Doran ist eine kalte Quarzsandwelt: Helle Dünenmeere umfließen dunkle, zerklüftete Hochländer. Eine dünne Kohlendioxidhülle treibt Staubstürme über die Ebenen. Als äußerer 3:2-Nachbar Seyraths prägt er dessen Bahn seit Milliarden Jahren mit."
+            "Atmosphäre vor längerem Aufenthalt prüfen, ggf. Atemunterstützung",
+            "Extreme Kälte außerhalb der Oasen",
+            "Staubsturm-Warnungen beachten",
+            "Kolonialgewebe nicht beschädigen"
           ]
         }
       ]
@@ -628,9 +1143,9 @@
       "intro": "Medienarchiv von Doran.",
       "abschnitte": [
         {
-          "titel": "Doran – Archivbild",
+          "titel": "Doran aus dem All",
           "bild": true,
-          "bildtext": "Doran"
+          "bildtext": "Doran – Welt der lebenden Kolonien"
         }
       ]
     }

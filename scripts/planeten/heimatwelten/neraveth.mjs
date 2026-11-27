@@ -12,7 +12,7 @@ for (const [fach,titel,text] of [
     ["Fraktionen","Schutzgebiete und Landnutzung","An den Wanderkorridoren überschneiden sich Siedlungsflächen und saisonale Weiden. Die örtliche Politik muss den Zugang zu Wasser und den Schutz der Herden miteinander vereinbaren."],
     ["Rohstoffe","Sedimente der Niederungen","In ehemaligen Flussarmen lassen sich Ton und feinkörnige Sande gewinnen. Aktive Überschwemmungsflächen sind zugleich wichtige Lebensräume der Sethren."]]) kapitel[fach]={abschnitte:[{titel,text:[text]}]};
 export default {
-    ordner:"blauer-ozeanplanet-mit-kleinem-kontinent",system:"esvar-system",planetId:"esvar-neraveth",name:"Neraveth",genitiv:"von Neraveth",klasse:"Terrestrischer Gesteinsplanet",
+    ordner:"neraveth",system:"esvar-system",planetId:"esvar-neraveth",name:"Neraveth",genitiv:"von Neraveth",klasse:"Terrestrischer Gesteinsplanet",
     spezies:{name:"Parasitoiden",gruppe:"Biologische Spezies",ordner:"Parasitoiden"},
     intro:"Zwischen den Flussniederungen und den trockenen Hochebenen Neraveths ziehen die drei großen Wirtsarten der Kheravi.",
     kurzprofil:["Neraveth ist der zweite Planet Esvars. Wasser bedeckt 58 Prozent seiner Oberfläche. Saisonale Regenfälle verbinden Weideland und Überschwemmungsbecken zu Wanderkorridoren."],

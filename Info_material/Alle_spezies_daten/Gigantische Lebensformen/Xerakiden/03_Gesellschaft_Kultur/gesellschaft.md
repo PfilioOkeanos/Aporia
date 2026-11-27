@@ -1,105 +1,135 @@
-# Xerakiden – Gesellschaft
-
-# Xerakiden – Gesellschaft
+# Xerakiden – Gesellschaft V2.0
 
 ## Gesellschaftsstruktur
 
-- Xerakiden bilden hochentwickelte, dauerhaft organisierte Zivilisationen.
-- Einzelne Individuen besitzen eigenständige Persönlichkeiten und Interessen.
-- Gesellschaften bestehen aus Haushalten, Gemeinschaften, regionalen Verbänden und größeren Siedlungsnetzwerken.
-- Gemeinschaftliche Zusammenarbeit dient insbesondere der Ressourcenversorgung und Infrastruktur.
-- Es existiert kein übergeordnetes Schwarmbewusstsein.
+- Hochentwickelte technische Zivilisation.
+- Eigenständige Individuen mit persönlichen Interessen und Emotionen.
+- Haushalte, Familien, Gemeinschaften und regionale Verbände.
+- Arbeitsteilige Gesellschaft.
+- Individuelle Berufswahl.
+- Gemeinschaftliche Organisation wichtiger Versorgungssysteme.
 - Körpergröße bestimmt nicht automatisch den gesellschaftlichen Rang.
-- Individuen können unterschiedliche Berufe und Lebensweisen wählen.
-- Gesellschaftliche Strukturen unterscheiden sich regional.
+- Unterschiedliche regionale Kulturen und Lebensweisen.
 
 ## Familien und Beziehungen
 
-- Dauerhafte und zeitlich begrenzte Partnerschaften sind möglich.
-- Familien können aus mehreren Generationen bestehen.
-- Nachwuchs wird sowohl familiär als auch gemeinschaftlich betreut.
-- Freundschaften und emotionale Bindungen besitzen gesellschaftliche Bedeutung.
-- Körperkontakt kann Vertrauen, Zuneigung oder andere emotionale Zustände ausdrücken.
-- Die Berührung besonders empfindlicher Sinnesorgane unterliegt persönlichen Grenzen.
-- Nicht jedes Individuum bevorzugt intensive soziale Kontakte.
+- Dauerhafte und zeitlich begrenzte Partnerschaften.
+- Mehrgenerationengemeinschaften.
+- Familiäre und gemeinschaftliche Betreuung des Nachwuchses.
+- Freundschaften und persönliche Bindungen.
+- Berührung und mechanische Signalübertragung als Formen sozialer Kommunikation.
+- Schutz persönlicher Grenzen und empfindlicher Sinnesorgane.
+- Individuell unterschiedliche soziale Bedürfnisse.
 
-## Siedlungen
+## Siedlungen und Architektur
 
-- Siedlungen besitzen eine außergewöhnlich große räumliche Ausdehnung.
-- Gebäude und technische Anlagen werden an die Dimensionen der Bewohner angepasst.
-- Offene Architektur ist gegenüber vollständig geschlossenen Gebäuden verbreitet.
-- Massive Schutzanlagen dienen als Rückzugsorte bei extremen Wetterbedingungen.
-- Breite, tragfähige Verkehrsflächen verbinden unterschiedliche Siedlungsbereiche.
-- Ruheplätze verfügen über Stütz- und Wartungseinrichtungen.
-- Unterirdische Anlagen dienen der Wasser-, Energie- und Materialversorgung.
-- Wohnbereiche enthalten geschützte Zonen für jüngere Individuen.
-- Kleinere Spezies erhalten separat gesicherte Verkehrswege und Aufenthaltsbereiche.
+- Gebäude und Infrastruktur werden für Bewohner mit 6–18 Metern Körpergröße ausgelegt.
+- Monumentale, überwiegend offene Architektur.
+- Breite Straßen und tragfähige Verkehrsflächen.
+- Geschlossene Wohnbereiche und geschützte Ruheanlagen.
+- Mineralisch-organische und synthetische Baumaterialien.
+- Individuelle Wohnräume.
+- Gemeinschaftliche Versorgungsanlagen.
+- Industrielle Fertigungsbereiche.
+- Spezialisierte Forschungseinrichtungen.
+- Geschützte Bereiche für Nachwuchs.
+- Kleinmaßstäbliche Gebäudebereiche für andere Spezies.
+- Erhöhte Plattformen ermöglichen direkte Kommunikation mit kleineren Besuchern.
+- Gemeinsam nutzbare diplomatische, wirtschaftliche und wissenschaftliche Einrichtungen.
 
 ## Ressourcenversorgung
 
-- Wasser besitzt einen besonderen wirtschaftlichen und gesellschaftlichen Stellenwert.
-- Große Wasserspeicher sichern die Versorgung während Trockenperioden.
-- Ressourcenbestände werden kontinuierlich überwacht.
-- Verschwendung lebensnotwendiger Ressourcen wird in vielen Gemeinschaften gesellschaftlich missbilligt.
-- Nahrung wird unter anderem in geschützten biologischen Produktionsanlagen erzeugt.
-- Mineralien und organische Materialien werden möglichst vollständig wiederverwertet.
-- Versorgungsnetze verbinden mehrere Siedlungen miteinander.
-- Gemeinschaftliche Reserven dienen der Bewältigung von Umweltkatastrophen.
+- Wassergewinnung und Wasserrückgewinnung besitzen einen hohen Stellenwert.
+- Landwirtschaftliche und industrielle Erzeugung biologischer Nahrung.
+- Nutzung natürlicher mineralischer Rohstoffe.
+- Verarbeitung biologischer Verbundwerkstoffe.
+- Regionale Energiesysteme.
+- Automatisierte Produktionsanlagen.
+- Langfristige Lagerhaltung.
+- Gemeinschaftliche Notfallreserven.
+- Wiederverwertung technischer und biologischer Materialien.
 
-## Kommunikation
+## Beziehung zu den Wüstenkolossen
 
-- Kommunikation erfolgt über Luftschall, Bodenschwingungen, visuelle Signale und Berührungsmuster.
-- Unterschiedliche Signalfolgen besitzen sprachliche Bedeutungen.
-- Mechanische Signale können durch geeignete feste Materialien übertragen werden.
-- Xerakiden verwenden mehrere regionale Sprachen.
-- Technische Übersetzungssysteme ermöglichen Gespräche mit anderen Spezies.
-- Schriftliche Informationen können sowohl visuell als auch taktil dargestellt werden.
-- Übertragungssysteme verhindern eine unbeabsichtigte Überlagerung wichtiger Signale.
+Die Xerakiden leben seit ihrer frühen zivilisatorischen Entwicklung in unmittelbarer Nachbarschaft zu den verwandten Xera-Wüstenkolossen.
+
+- Anerkennung der Wüstenkolosse als eigenständige Tierart.
+- Wissenschaftliche Erforschung ihrer Biologie.
+- Untersuchung natürlicher Wanderwege.
+- Sammlung abgestoßener Panzerplatten.
+- Nutzung natürlicher biologischer Rohstoffe.
+- Regional kontrollierte Jagd.
+- Einrichtung geschützter Lebensräume.
+- Beobachtung und medizinische Versorgung ausgewählter Tierpopulationen.
+- Erforschung langfristiger Haltungs- und Zuchtmöglichkeiten.
+- Unterschiedliche kulturelle Einstellungen gegenüber der Rohstoffgewinnung.
+- Keine einheitliche Verehrung oder religiöse Bedeutung der Wüstenkolosse.
+
+Einige Gemeinschaften betreiben eine intensive wirtschaftliche Nutzung der Tiere, während andere vorwiegend abgestoßene Panzerplatten sammeln und natürliche Lebensräume schützen.
+
+## Kommunikation und Sprache
+
+- Komplexe akustische Sprache.
+- Bodenschwingungskommunikation.
+- Mechanische Berührungssignale.
+- Visuelle Ausdrucksformen.
+- Technisch verstärkte Kommunikationssysteme.
+- Automatische Übersetzung für andere Spezies.
+- Schriftliche, digitale und taktile Informationsspeicherung.
 
 ## Kultur und Kunst
 
-- Schwingungskompositionen bilden eine eigenständige Kunstform.
-- Kunstwerke können durch Berührung statt ausschließlich durch Betrachtung erlebt werden.
-- Materialien mit unterschiedlichen mechanischen Eigenschaften werden zu komplexen Klangstrukturen kombiniert.
-- Große begehbare Resonanzanlagen dienen kulturellen Veranstaltungen.
-- Architektonische Kunst berücksichtigt Materialspannungen, Oberflächen und mechanische Eigenschaften.
-- Individuelle Panzerverzierungen sind verbreitet.
-- Erinnerungen an historische Ereignisse werden in mehrschichtigen materiellen Archiven bewahrt.
-- Geistige und philosophische Traditionen unterscheiden sich zwischen Gemeinschaften.
-- Es existiert keine verpflichtende einheitliche Religion.
+- Schwingungskompositionen.
+- Mechanisch wahrnehmbare Kunstwerke.
+- Monumentale Architektur.
+- Bearbeitung mineralischer und organischer Materialien.
+- Individuelle Panzerverzierungen.
+- Historische Informationsarchive.
+- Regionale Musik- und Ausdrucksformen.
+- Unterschiedliche religiöse und philosophische Traditionen.
+- Keine einheitlich vorgeschriebene Weltanschauung.
 
 ## Bildung
 
-- Ausbildungszeiten können mehrere Jahrzehnte umfassen.
-- Praktische Materialerfahrung besitzt einen hohen Stellenwert.
-- Biologie, Technik, Ressourcenwirtschaft und Umweltbeobachtung sind wichtige Ausbildungsbereiche.
-- Nachwuchs lernt die kontrollierte Nutzung seiner komplexen Sinnesorgane.
-- Individuen können sich während ihres langen Lebens mehrfach beruflich umorientieren.
-- Zusammenarbeit mit kleineren Spezies erweitert den Zugang zu feinmechanischen Technologien.
+- Langjährige theoretische und praktische Ausbildung.
+- Materialwissenschaftliche Grundlagen.
+- Kontrollierte Nutzung biologischer Sinnesorgane.
+- Technische und wissenschaftliche Spezialisierung.
+- Xenobiologie und interstellare Kommunikation.
+- Möglichkeit mehrfacher beruflicher Neuorientierung während des Lebens.
+- Gemeinsame Forschung mit anderen intelligenten Spezies.
 
-## Berufe
+## Berufsfelder
 
 - Materialforscher
+- Resonanzingenieure
 - Strukturprüfer
 - Wassertechniker
-- Infrastrukturplaner
-- Wüstenökologen
-- Biopanzerungsmediziner
-- Resonanzingenieure
 - Maschinenkonstrukteure
-- Siedlungsarchitekten
-- Historiker
-- Signaltechniker
-- Ressourcenverwalter
-- Atmosphärenforscher
+- Raumschiffbauer
+- Raumfahrer
+- Bergbauingenieure
+- Biopanzerungsmediziner
+- Wüstenökologen
+- Kolossforscher
+- Tierpfleger
+- Rohstoffsammler
+- Wildtierjäger
+- Händler
+- Architekten
 - Diplomaten
-- Künstler
 
-## Umgang mit anderen Spezies
+## Interstellare Gesellschaft
 
-- Körpergrößenunterschiede werden bei gemeinsamer Infrastruktur berücksichtigt.
-- Kleinere Spezies gelten nicht automatisch als weniger intelligent oder bedeutend.
-- Austausch von Wissen und technologischen Fähigkeiten ist möglich.
-- Xerakiden können bei großen Bauvorhaben außergewöhnliche Fähigkeiten einbringen.
-- Kleinere Spezies unterstützen unter anderem feinmechanische Wartungsarbeiten.
-- Zwischenartliche Zusammenarbeit kann wirtschaftliche, wissenschaftliche und persönliche Beziehungen umfassen.
+- Xerakiden können Halvorn I persönlich verlassen.
+- Spezialisierte Raumschiffe berücksichtigen ihre Körperdimensionen.
+- Raumstationen besitzen entsprechend dimensionierte Aufenthaltsbereiche.
+- Fahrzeuge und Werkzeuge werden in unterschiedlichen Größenklassen hergestellt.
+- Xerakidische Technologien können für andere Spezies angepasst werden.
+- Interstellare Handels- und Forschungsbeziehungen sind möglich.
+- Dauerhafte außerplanetare Siedlungen benötigen geeignete Umweltbedingungen oder Lebenserhaltungssysteme.
+
+
+Die dunkle seite 
+
+Rücksichtslose Kolossjäger und mächtige Materialmonopole

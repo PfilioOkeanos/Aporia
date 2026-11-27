@@ -1,56 +1,123 @@
 {
-  "_erzeugt": "koerper-bauen",
   "name": "Ombrys III",
   "genitiv": "von Ombrys III",
   "dossierName": "Ombrys III-Dossier",
-  "klasse": "Gesteinsplanet",
-  "intro": "Ombrys III ist eine kalte, trockene Gesteinswelt mit dünner Atmosphäre. Ombrys III umkreist Ombrys in 1,25 AE Abstand und braucht für einen Umlauf 578 Tage.",
+  "klasse": "Planet · Gesteinsplanet",
+  "intro": "Ombrys III – die Welt der ewigen Tiefen. Von außen kalt, trocken und lebensfeindlich, verbirgt der Planet unter seiner Kruste gigantische, geothermisch erwärmte Höhlensysteme. Dort leben die Subterraner: 200 bis 800 Meter lange intelligente Tiefenbewohner, deren Gedächtnis die geologische Geschichte ihrer Welt bewahrt.",
   "globusDaten": {
     "planet": "der-stille-eiswustenplanet",
-    "klasse": "Gestein",
+    "klasse": "Kalte Gesteinswelt",
     "radius": 4700000
   },
-  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=mypzla-stern&objekt=mypzla-ombrys-iii",
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=mypzla-stern",
   "grunddaten": [
     [
       "Archiv-ID",
       "AP-F192F54381"
     ],
     [
-      "Typ",
-      "Gesteinsplanet"
-    ],
-    [
-      "Sternsystem",
-      "Ombrys-System"
-    ],
-    [
-      "Zentralkörper",
-      "Ombrys"
-    ],
-    [
-      "Große Halbachse",
-      "1,25 AE"
-    ],
-    [
-      "Umlaufzeit",
-      "578 Tage"
+      "Klasse",
+      "Kalter terrestrischer Gesteinsplanet mit gigantischer unterirdischer Biosphäre"
     ],
     [
       "Durchmesser",
       "9.400 km"
     ],
     [
+      "Radius",
+      "4.700 km"
+    ],
+    [
       "Masse",
       "0,4 Erdmassen"
     ],
     [
-      "Schwerkraft",
-      "0,73 g"
+      "Dichte",
+      "5,49 g/cm³"
     ],
     [
-      "Gleichgewichtstemperatur",
-      "ca. -97 °C"
+      "Schwerkraft",
+      "0,73 g (7,2 m/s²)"
+    ],
+    [
+      "Mittlere Oberflächentemperatur",
+      "ca. −85 °C an der Oberfläche · 10–35 °C in den bewohnten Tiefen"
+    ],
+    [
+      "Ozeane",
+      "Keine offenen Ozeane; gefrorene Reservoirs und unterirdische Seen"
+    ],
+    [
+      "Atmosphäre",
+      "67 % Stickstoff, 27 % Sauerstoff, 5 % Argon, 1 % Kohlendioxid"
+    ],
+    [
+      "Atmosphärendruck",
+      "ca. 0,32 bar (Oberfläche) · 0,35–0,48 bar (Lebensräume in der Tiefe)"
+    ],
+    [
+      "Rotationsperiode",
+      "36 h"
+    ],
+    [
+      "Umlaufzeit",
+      "578 Erdtage"
+    ],
+    [
+      "Abstand zum Stern",
+      "1,25 AE"
+    ],
+    [
+      "Monde",
+      "keine"
+    ],
+    [
+      "Zentralstern",
+      "Ombrys, Orangefarbener Zwerg (K2 V)"
+    ],
+    [
+      "Einstrahlung",
+      "0,23-fach der Erde"
+    ],
+    [
+      "Achsneigung",
+      "14°"
+    ],
+    [
+      "Exzentrizität",
+      "0,06"
+    ],
+    [
+      "Fluchtgeschwindigkeit",
+      "8,2 km/s"
+    ],
+    [
+      "Alter",
+      "ca. 6,2 Mrd. Jahre"
+    ],
+    [
+      "Beiname",
+      "Die Welt der ewigen Tiefen"
+    ],
+    [
+      "Oberflächenbiosphäre",
+      "Schwach ausgeprägt"
+    ],
+    [
+      "Unterirdische Biosphäre",
+      "Hoch entwickelt"
+    ],
+    [
+      "Höhlennetze",
+      "Hunderte bis Tausende Kilometer Gesamtlänge"
+    ],
+    [
+      "Fraktionszugehörigkeit",
+      "Noch nicht festgelegt"
+    ],
+    [
+      "Intelligente Spezies",
+      "Subterranen"
     ]
   ],
   "position": [
@@ -60,84 +127,103 @@
     ],
     [
       "Zentralstern",
-      "Ombrys",
-      "inhalte/himmelskoerper/sterne/details/ombrys/hauptseite/index.html"
+      "Ombrys · K2 V, Einzelstern"
     ],
     [
-      "Abstand",
-      "1,25 AE"
+      "Bahnposition",
+      "3. von 4 Planeten"
+    ],
+    [
+      "Entfernung zur Sonne",
+      "26 Lichtjahre"
+    ],
+    [
+      "Nächste Nachbarsysteme",
+      "Narev-System (8,7 Lj), Osselyr-System (17,8 Lj)"
     ]
   ],
   "verknuepfungen": [
     {
-      "icon": "✦",
-      "art": "Sternenkarte",
-      "titel": "Ombrys III im Ombrys-System",
-      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=mypzla-stern&objekt=mypzla-ombrys-iii",
-      "route": null
-    },
-    {
-      "icon": "☀",
-      "art": "Zentralstern",
-      "titel": "Ombrys",
-      "href": "inhalte/himmelskoerper/sterne/details/ombrys/hauptseite/index.html",
-      "route": null
-    },
-    {
       "icon": "✿",
-      "art": "Heimatwelt der Mykonoiden",
-      "titel": "Mypzla",
-      "href": "inhalte/himmelskoerper/planeten/details/mypzla/hauptseite/index.html",
+      "art": "Heimische Spezies",
+      "titel": "Subterranen",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Subterranen/hauptseite/Spezies.html",
       "route": null
     },
     {
       "icon": "◈",
       "art": "Spezies-Dossier",
-      "titel": "Mykonoiden",
-      "href": "inhalte/spezies/Biologische Spezies/Mykonoiden/hauptseite/hauptseite.html",
+      "titel": "Heimatwelt",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Subterranen/Unterseiten/Heimatwelt/heimatwelt.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Politik und Fraktionen",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Subterranen/Unterseiten/Politik/politik.html",
+      "route": null
+    },
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Ombrys-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=mypzla-stern",
       "route": null
     }
   ],
   "quellen": [
     {
-      "titel": "Sternenkarte · Ombrys-System",
-      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=mypzla-stern&objekt=mypzla-ombrys-iii"
+      "titel": "Speziesdossier Subterranen · Heimatwelt",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Subterranen/Unterseiten/Heimatwelt/heimatwelt.html"
     },
     {
-      "titel": "Speziesdossier Mykonoiden",
-      "href": "inhalte/spezies/Biologische Spezies/Mykonoiden/hauptseite/hauptseite.html"
+      "titel": "Speziesdossier Subterranen · Geschichte",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Subterranen/Unterseiten/Geschichte/geschichte.html"
+    },
+    {
+      "titel": "Speziesdossier Subterranen · Gesellschaft",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Subterranen/Unterseiten/Gesellschaft/gesellschaft.html"
+    },
+    {
+      "titel": "Speziesdossier Subterranen · Politik",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Subterranen/Unterseiten/Politik/politik.html"
+    },
+    {
+      "titel": "Speziesdossier Subterranen · Allgemeines",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Subterranen/Unterseiten/Allgemeines/allgemeines.html"
     }
   ],
   "design": {
     "farben": {
-      "nacht": "#080707",
-      "tiefe": "#13100f",
-      "akzent": "#c7b9af",
-      "sand": "#cbb89e",
-      "moos": "#a5af8a",
-      "ozean": "#84989d",
-      "glas": "rgba(8, 12, 18, .76)",
-      "glas-hell": "rgba(16, 22, 32, .82)",
-      "linie": "rgba(255, 255, 255, .12)",
-      "linie-hell": "rgba(255, 255, 255, .3)",
-      "text": "#eef2f6",
-      "leise": "#a8b0bc",
-      "aporia-page-tint": "#4c433c"
+      "nacht": "#05080b",
+      "tiefe": "#0b1218",
+      "akzent": "#e0a35c",
+      "sand": "#c8a27a",
+      "moos": "#6fc4b0",
+      "ozean": "#3fb7c2",
+      "glas": "rgba(10, 16, 22, .8)",
+      "glas-hell": "rgba(18, 26, 34, .86)",
+      "linie": "rgba(224, 163, 92, .16)",
+      "linie-hell": "rgba(111, 196, 176, .36)",
+      "text": "#ecf2f4",
+      "leise": "#9fb0b8",
+      "aporia-page-tint": "#1f4a52"
     }
   },
   "kapitel": {
     "Allgemeines": {
       "gruppe": "Weitere",
       "icon": "▤",
-      "intro": "Ombrys III auf einen Blick.",
+      "intro": "Ombrys III auf einen Blick: Eis oben, Leben unten.",
       "abschnitte": [
         {
           "titel": "Kurzprofil",
           "bild": true,
-          "bildtext": "Ombrys III",
+          "bildtext": "Ombrys III – Welt der ewigen Tiefen",
           "text": [
-            "Ombrys III ist eine kalte, trockene Gesteinswelt mit dünner Atmosphäre.",
-            "Ombrys III umkreist Ombrys in 1,25 AE Abstand und braucht für einen Umlauf 578 Tage."
+            "Ombrys III ist der dritte Planet des Ombrys-Systems und umkreist den orangefarbenen Zwerg Ombrys in 1,25 AE Abstand – außerhalb der habitablen Zone. Er erhält nur rund 23 % der irdischen Einstrahlung; an der Oberfläche herrschen im Mittel etwa −85 °C bei einem Luftdruck von 0,32 bar.",
+            "Die eigentliche Welt liegt unter der Oberfläche: Lavaröhren, Karsthöhlen und geothermische Großkammern bilden zusammenhängende Höhlennetze von Hunderten bis Tausenden Kilometern Länge. In der Hauptbiosphäre zwischen 800 und 3.000 Metern Tiefe herrschen 10–35 °C. Ombrys III ist dabei kein hohler Planet – Kern und Mantel bleiben kompakt."
           ]
         },
         {
@@ -145,56 +231,127 @@
           "daten": [
             [
               "Typ",
-              "Gesteinsplanet"
+              "Kalter terrestrischer Gesteinsplanet mit gigantischer unterirdischer Biosphäre"
             ],
             [
-              "Sternsystem",
-              "Ombrys-System"
-            ],
-            [
-              "Zentralkörper",
-              "Ombrys"
-            ],
-            [
-              "Große Halbachse",
-              "1,25 AE"
-            ],
-            [
-              "Umlaufzeit",
-              "578 Tage"
-            ],
-            [
-              "Durchmesser",
-              "9.400 km"
-            ],
-            [
-              "Masse",
-              "0,4 Erdmassen"
+              "Zentralstern",
+              "Ombrys (Orangefarbener Zwerg (K2 V))"
             ],
             [
               "Schwerkraft",
               "0,73 g"
             ],
             [
-              "Gleichgewichtstemperatur",
-              "ca. -97 °C"
+              "Durchmesser",
+              "9.400 km"
+            ],
+            [
+              "Mittlere Temperatur",
+              "ca. −85 °C an der Oberfläche · 10–35 °C in den bewohnten Tiefen"
+            ],
+            [
+              "Atmosphäre",
+              "Dünn, kalt, trocken, 0,32 bar (Höhlen 0,35–0,48 bar)"
+            ],
+            [
+              "Wasser",
+              "Keine offenen Ozeane; gefrorene Reservoirs und unterirdische Seen"
+            ],
+            [
+              "Intelligente Spezies",
+              "Subterranen"
             ]
           ]
         },
         {
-          "titel": "Im System von Mypzla",
-          "text": [
-            "Das Ombrys-System ist die Heimat der Mykonoiden: Ihr Planet Mypzla umkreist Ombrys."
-          ],
-          "verweise": [
+          "titel": "Ombrys III im Vergleich zur Erde",
+          "vergleich": {
+            "mit": "Erde",
+            "werte": [
+              [
+                "Durchmesser",
+                9400,
+                12742,
+                "km"
+              ],
+              [
+                "Schwerkraft",
+                0.73,
+                1,
+                "g"
+              ],
+              [
+                "Tageslänge",
+                36,
+                24,
+                "h"
+              ],
+              [
+                "Luftdruck (Mittel)",
+                0.32,
+                1,
+                "bar"
+              ],
+              [
+                "Mittlere Temperatur",
+                -85,
+                15,
+                "°C"
+              ]
+            ]
+          }
+        },
+        {
+          "titel": "Hauptmerkmale",
+          "karten": [
+            {
+              "titel": "Kalte Oberfläche",
+              "text": "Basaltische Ebenen, gefrorene Steinwüsten und Salzebenen bei rund −85 °C."
+            },
+            {
+              "titel": "Gigantische Höhlen",
+              "text": "Natürliche und künstlich erweiterte Höhlensysteme über Tausende Kilometer."
+            },
+            {
+              "titel": "Geothermische Wärme",
+              "text": "Grundlage der warmen unterirdischen Lebensräume."
+            },
+            {
+              "titel": "Lebendes Gedächtnis",
+              "text": "Die Erinnerungen der Subterraner bewahren verschwundene Landschaften."
+            }
+          ]
+        },
+        {
+          "titel": "Einordnung",
+          "daten": [
             [
-              "Mypzla",
-              "inhalte/himmelskoerper/planeten/details/mypzla/hauptseite/index.html"
+              "Archiv-ID",
+              "AP-F192F54381"
             ],
             [
-              "Speziesdossier Mykonoiden",
-              "inhalte/spezies/Biologische Spezies/Mykonoiden/hauptseite/hauptseite.html"
+              "Sternenkarten-ID",
+              "mypzla-ombrys-iii"
+            ],
+            [
+              "Heimatspezies",
+              "Subterraner (Gigantische Lebensformen)"
+            ],
+            [
+              "Zivilisation",
+              "Überwiegend unterirdisch"
+            ],
+            [
+              "Nachbarwelt",
+              "Mypzla, Heimat der Mykonoiden"
             ]
+          ]
+        },
+        {
+          "titel": "Alleinstellungsmerkmal",
+          "text": [
+            "Ombrys III erscheint von außen als kalte, trockene und weitgehend lebensfeindliche Gesteinswelt. Tief unter seiner Oberfläche existiert jedoch eine hochentwickelte Biosphäre mit gigantischen natürlichen Höhlensystemen und einer eigenständigen intelligenten Zivilisation.",
+            "Die Subterraner bewohnen diese Tiefen seit zahlreichen Generationen. Ihre außergewöhnlichen Erinnerungsfähigkeiten machen sie zu lebenden Zeugen der geologischen Geschichte ihrer Heimatwelt. Ganze verschwundene Landschaften können anhand ihrer Erinnerungen rekonstruiert werden."
           ]
         }
       ]
@@ -202,80 +359,151 @@
     "Astronomie": {
       "gruppe": "Wissenschaft",
       "icon": "✧",
-      "intro": "Ombrys III im Ombrys-System.",
+      "intro": "Der dritte Planet des Ombrys-Systems.",
       "abschnitte": [
         {
-          "titel": "Bahn",
+          "titel": "Bahn und Position",
+          "text": [
+            "Ombrys III ist der 3. von 4 Planeten im Ombrys-System. Er umkreist Ombrys in 1,25 AE Abstand – jenseits der äußeren Grenze der habitablen Zone (bei Ombrys zwischen 0,57 und 1 AE). Er erhält 0,23-mal so viel Sternlicht wie die Erde.",
+            "Ohne Atmosphäre läge seine Gleichgewichtstemperatur bei rund -97 °C. Die dünne Atmosphäre hebt die Oberflächentemperatur nur wenig über die Gleichgewichtstemperatur von etwa −97 °C. Lebensfreundlich wird Ombrys III erst durch die geothermische Wärme des Untergrundes."
+          ],
           "daten": [
             [
-              "Zentralkörper",
-              "Ombrys"
+              "Sternsystem",
+              "Ombrys-System"
+            ],
+            [
+              "Bahnposition",
+              "3. von 4 Planeten"
             ],
             [
               "Große Halbachse",
-              "1,25 AE (187 Mio. km)"
+              "1,25 AE (ca. 187 Mio. km)"
             ],
             [
               "Exzentrizität",
               "0,06"
             ],
             [
-              "Bahnneigung",
-              "1,6°"
+              "Umlaufzeit",
+              "578 Erdtage"
             ],
             [
-              "Umlaufzeit",
-              "578 Tage"
+              "Ortsjahr",
+              "ca. 385 Ortstage"
             ],
             [
               "Einstrahlung",
-              "0,23-fach der Erde"
+              "ca. 0,23-fach der Erde"
+            ],
+            [
+              "Habitable Zone von Ombrys",
+              "0,57–1 AE"
             ]
           ]
         },
         {
-          "titel": "Am Himmel von Ombrys III",
+          "titel": "Zentralstern",
           "text": [
-            "Ombrys erscheint von hier aus etwa 0,32° groß (die Sonne von der Erde: 0,53°)."
-          ]
-        },
-        {
-          "titel": "Körper des Systems",
-          "zeitleiste": [
+            "Ombrys ist ein ruhiger, orangefarbener Zwerg der Spektralklasse K2 V mit 78 % der Sonnenmasse und 36 % ihrer Leuchtkraft – Zentralstern von Mypzla, der Ursprungswelt der Mykonoiden."
+          ],
+          "daten": [
             [
-              "Ombrys · Stern",
+              "Name",
+              "Ombrys"
+            ],
+            [
+              "Typ",
               "Orangefarbener Zwerg (K2 V)"
             ],
             [
-              "Ombrys I · 0,24 AE",
-              "Gesteinsplanet"
+              "Masse",
+              "0,78 Sonnenmassen"
             ],
             [
-              "Mypzla · 0,66 AE",
-              "Gesteinsplanet"
+              "Radius",
+              "0,76 Sonnenradien"
             ],
             [
-              "Ombrys III · 1,25 AE · dieses Dossier",
-              "Gesteinsplanet"
+              "Leuchtkraft",
+              "0,36 Sonnenleuchtkräfte"
             ],
             [
-              "Ombrys IV · 4,6 AE",
-              "Gasriese"
+              "Oberflächentemperatur",
+              "ca. 4.950 K"
             ],
             [
-              "Sporengürtel · 1,8–2,4 AE",
-              "Asteroidengürtel"
+              "Alter",
+              "ca. 6,2 Mrd. Jahre"
             ],
             [
-              "Äußeres Kometengebiet · 30–44 AE",
-              "Kometengebiet"
+              "Begleitsterne",
+              "keine (Einzelstern)"
             ]
           ],
           "verweise": [
             [
               "Ombrys",
               "inhalte/himmelskoerper/sterne/details/ombrys/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Rotation und Achse",
+          "daten": [
+            [
+              "Rotationsperiode",
+              "36 h"
             ],
+            [
+              "Achsneigung",
+              "14°"
+            ],
+            [
+              "Scheinbare Sterngröße",
+              "ca. 0,32° (Sonne von der Erde: 0,53°)"
+            ],
+            [
+              "Jahreszeiten",
+              "Moderat; in der Tiefe kaum spürbar"
+            ]
+          ]
+        },
+        {
+          "titel": "Monde",
+          "text": [
+            "Ombrys III besitzt keine Monde."
+          ]
+        },
+        {
+          "titel": "Planeten des Systems",
+          "zeitleiste": [
+            [
+              "Ombrys I · 0,24 AE",
+              "Ombrys I ist ein kleiner, sonnennaher Gesteinsplanet mit gebundener Rotation."
+            ],
+            [
+              "Mypzla · 0,66 AE",
+              "Mypzla ist die Ursprungswelt der Mykonoiden: eine warme, feuchte Super-Erde mit goldfarbenen Myzelteppichen, riesigen Pilzplateaus und einem schimmernden Sporendunst in der Luft."
+            ],
+            [
+              "Ombrys III · 1,25 AE",
+              "Ombrys III wirkt von außen kalt, trocken und lebensfeindlich."
+            ],
+            [
+              "Sporengürtel · 1,8–2,4 AE",
+              "Der Sporengürtel zwischen 1,8 und 2,4 AE besteht aus dunklen, kohlenstoffreichen Brocken; sein Name verweist auf die fein verteilte, goldbraune Staubwolke um ihn."
+            ],
+            [
+              "Ombrys IV · 4,6 AE",
+              "Ombrys IV ist ein ockerfarbener Gasriese mit breiten Wolkenbändern."
+            ],
+            [
+              "Corures-Kometenwolke · 30–44 AE",
+              "Ein ferner Gürtel aus Eiskörpern zwischen 30 und 44 AE."
+            ]
+          ],
+          "verweise": [
             [
               "Ombrys I",
               "inhalte/himmelskoerper/planeten/details/ombrys-i/hauptseite/index.html"
@@ -285,9 +513,75 @@
               "inhalte/himmelskoerper/planeten/details/mypzla/hauptseite/index.html"
             ],
             [
+              "Sporengürtel",
+              "inhalte/himmelskoerper/sternensysteme/details/sporengurtel/hauptseite/index.html"
+            ],
+            [
               "Ombrys IV",
               "inhalte/himmelskoerper/planeten/details/ombrys-iv/hauptseite/index.html"
+            ],
+            [
+              "Corures-Kometenwolke",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=mypzla-stern&objekt=mypzla-kometengebiet"
             ]
+          ]
+        },
+        {
+          "titel": "Nachbarschaft und Anomalien",
+          "karten": [
+            {
+              "titel": "Goldschweif",
+              "text": "Ein Komet mit ungewöhnlich goldfarbenem Schweif, dessen Staub organische Verbindungen enthält. Ob solche Kometen einst Bausteine des Lebens nach Mypzla brachten, wird erforscht."
+            },
+            {
+              "titel": "Nachbarsysteme",
+              "text": "Narev-System (8,7 Lj), Osselyr-System (17,8 Lj), Orvaya-System (20,7 Lj) – alle weit außerhalb der gravitativen Einflusszone von Ombrys (rund 3,3 Lichtjahre)."
+            }
+          ],
+          "verweise": [
+            [
+              "Goldschweif",
+              "inhalte/himmelskoerper/kometen/details/goldschweif/hauptseite/index.html"
+            ],
+            [
+              "Ombrys-System in der Sternenkarte",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=mypzla-stern"
+            ]
+          ]
+        },
+        {
+          "titel": "Bahndaten",
+          "daten": [
+            [
+              "Mittlere Sternentfernung",
+              "ca. 187 Mio. km"
+            ],
+            [
+              "Sternnächster Punkt",
+              "1,175 AE"
+            ],
+            [
+              "Sternfernster Punkt",
+              "1,325 AE"
+            ],
+            [
+              "Bahnneigung",
+              "1,6°"
+            ],
+            [
+              "Monde",
+              "Keine bislang zugeordnet"
+            ],
+            [
+              "Ringsystem",
+              "Keines"
+            ]
+          ]
+        },
+        {
+          "titel": "Am Himmel von Ombrys III",
+          "text": [
+            "Ombrys erscheint als kleine, orangefarbene Scheibe über einer frostigen Landschaft. Mypzla, die warme Nachbarwelt der Mykonoiden, ist als heller Wandelstern zu sehen. Für die Subterraner in der Tiefe spielt der Himmel kaum eine Rolle – ihre Welt wird von Wärme, Druck und Schwingungen bestimmt."
           ]
         }
       ]
@@ -314,22 +608,31 @@
             ],
             [
               "Oberflächenschwerkraft",
-              "7,21 m/s² (0,735 g)"
+              "7,2 m/s² (0,73 g)"
             ],
             [
               "Fluchtgeschwindigkeit",
-              "8,24 km/s"
+              "ca. 8,2 km/s"
+            ],
+            [
+              "Masse in Kilogramm",
+              "ca. 2,39 · 10²⁴ kg"
+            ],
+            [
+              "Gesamtoberfläche",
+              "ca. 277,6 Mio. km²"
+            ],
+            [
+              "Magnetfeld",
+              "Schwach bis moderat"
             ]
-          ],
+          ]
+        },
+        {
+          "titel": "Physikalische Werte im Vergleich",
           "vergleich": {
             "mit": "Erde",
             "werte": [
-              [
-                "Durchmesser",
-                9400,
-                12742,
-                "km"
-              ],
               [
                 "Masse",
                 0.4,
@@ -337,13 +640,31 @@
                 "Erdmassen"
               ],
               [
-                "Schwerkraft",
-                0.73,
+                "Dichte",
+                5.49,
+                5.51,
+                "g/cm³"
+              ],
+              [
+                "Fluchtgeschwindigkeit",
+                8.2,
+                11.2,
+                "km/s"
+              ],
+              [
+                "Magnetfeld",
+                0.4,
                 1,
-                "g"
+                "× Erde"
               ]
             ]
           }
+        },
+        {
+          "titel": "Kompakter Gesteinsplanet",
+          "text": [
+            "Mit 0,73 g und einer Dichte von rund 5,5 g/cm³ ist Ombrys III ein kompakter, metallreicher Gesteinsplanet. Die gegenüber der Erde verringerte Schwerkraft erleichtert die Bewegung sehr langer Körper – die Subterraner sind biologisch daran angepasst."
+          ]
         }
       ]
     },
@@ -353,19 +674,34 @@
       "intro": "Planetare Struktur von Ombrys III.",
       "abschnitte": [
         {
-          "titel": "Schalenbau",
+          "titel": "Aufbau",
+          "text": [
+            "Ein metallreicher Kern, ein überwiegend silikatischer Mantel und eine regional unterschiedlich dicke Kruste bilden den Planeten. Hohlräume konzentrieren sich auf geeignete Bereiche der Kruste – alte vulkanische Provinzen, Karst- und Lösungsgesteine, Lavaröhren und tiefe Bruchzonen. Ombrys III ist kein hohler Himmelskörper; Kern und Mantel bleiben überwiegend kompakt."
+          ],
           "schichten": [
             [
-              "Kruste",
-              "Silikatgestein"
+              "Oberflächenkruste (0–200 m)",
+              "Gefrorene, trockene Hohlräume, Zugangsschächte"
             ],
             [
-              "Mantel",
-              "Dichteres Silikatgestein"
+              "Übergangshöhlen (200–800 m)",
+              "Stabilere Temperaturen, erstes flüssiges Wasser"
             ],
             [
-              "Kern",
-              "Eisen und Nickel"
+              "Hauptbiosphäre (800–3.000 m)",
+              "Großkammern, Wanderkorridore, Flüsse und Seen"
+            ],
+            [
+              "Geothermische Tiefen (3.000–8.000 m)",
+              "Heiße, mineralreiche Flüssigkeiten, Industrie"
+            ],
+            [
+              "Extreme Tiefen (über 8.000 m)",
+              "Hohe Drücke, kompaktes Gestein"
+            ],
+            [
+              "Mantel und Kern",
+              "Silikatisch bzw. metallreich, kompakt"
             ]
           ]
         }
@@ -374,12 +710,90 @@
     "Geografie": {
       "gruppe": "Natur",
       "icon": "△",
-      "intro": "Geografie von Ombrys III.",
+      "intro": "Zwei Welten übereinander: Frostwüste und Tiefenwelt.",
       "abschnitte": [
         {
-          "titel": "Oberfläche",
-          "text": [
-            "Die Oberfläche von Ombrys III ist kalt."
+          "titel": "Oberflächenregionen",
+          "liste": [
+            "Dunkle basaltische Ebenen",
+            "Weitläufige gefrorene Steinwüsten",
+            "Alte Einschlagsbecken und vulkanische Krater",
+            "Zerklüftete Hochländer und mineralische Gebirgszüge",
+            "Tiefreichende Oberflächenspalten",
+            "Gefrorene Salzebenen und polare Eisablagerungen",
+            "Vereinzelte geothermische Oasen",
+            "Seltene natürliche Eingänge in die Tiefenwelt"
+          ]
+        },
+        {
+          "titel": "Unterirdische Regionen",
+          "liste": [
+            "Kilometerlange natürliche Lavaröhren",
+            "Ausgedehnte Karsthöhlensysteme und Säulenlandschaften",
+            "Unterirdische Schluchten und mehrstöckige Hohlräume",
+            "Geothermisch erwärmte Großkammern",
+            "Unterirdische Seen, Flüsse und Wasserfälle",
+            "Kristallformationen und gigantische Gesteinsbrücken",
+            "Biologisch bewachsene Höhlenwände",
+            "Historische, teils verschüttete Wanderwege"
+          ]
+        },
+        {
+          "titel": "Dimensionen der Höhlen",
+          "daten": [
+            [
+              "Kleinere Gänge",
+              "Wenige bis mehrere Dutzend Meter"
+            ],
+            [
+              "Große Wanderkorridore",
+              "ca. 50–250 m breit"
+            ],
+            [
+              "Natürliche Großkammern",
+              "ca. 100–600 m freie Spannweite"
+            ],
+            [
+              "Größte Höhlenregionen",
+              "Mehrere Kilometer Ausdehnung"
+            ],
+            [
+              "Regionale Höhlennetze",
+              "Hunderte bis Tausende Kilometer"
+            ]
+          ]
+        },
+        {
+          "titel": "Besondere Orte",
+          "karten": [
+            {
+              "titel": "Das Ewige Gewölbe",
+              "text": "Gewaltige Großkammer mit natürlichen Säulen – zentrales Gemeinschaftsgebiet der Subterraner."
+            },
+            {
+              "titel": "Das Untere Meer",
+              "text": "Geothermisch erwärmtes Seensystem mit eigenen aquatischen Ökosystemen und Gesteinsinseln."
+            },
+            {
+              "titel": "Der Gebrochene Horizont",
+              "text": "Gewaltige Spaltenregion, die mehrere Tiefenebenen verbindet."
+            },
+            {
+              "titel": "Das Resonanzarchiv",
+              "text": "Historisches Wissenszentrum mit aufgezeichneten Erinnerungen und Rekonstruktionen verschwundener Höhlen."
+            },
+            {
+              "titel": "Die Glühenden Tiefen",
+              "text": "Hydrothermale Region mit Heißwasserbecken, Dampfaustritten und Energiegewinnung."
+            },
+            {
+              "titel": "Die Verlorenen Korridore",
+              "text": "Netz historischer, teils verschütteter Wanderwege – rekonstruierbar aus alten Erinnerungen."
+            },
+            {
+              "titel": "Das Tor zur Oberfläche",
+              "text": "Technisch stabilisierter Zugangskomplex zur Raumfahrt, mit Handelsstationen für andere Spezies."
+            }
           ]
         }
       ]
@@ -390,26 +804,63 @@
       "intro": "Atmosphäre von Ombrys III.",
       "abschnitte": [
         {
-          "titel": "Gashülle",
+          "titel": "Zusammensetzung",
           "text": [
-            "Ombrys III hält eine dünne, kalte Gashülle fest."
+            "Die Oberflächenatmosphäre ist dünn, kalt und trocken: durchschnittlich 0,32 bar mit rund 67 % Stickstoff, 27 % Sauerstoff, 5 % Argon und 1 % Kohlendioxid. Für Menschen reicht sie ohne Atemunterstützung nicht aus. In tieferen, verbundenen Höhlen steigt der Druck durch die darüberliegende Luftsäule auf typischerweise 0,35–0,48 bar; technisch kontrollierte Siedlungsbereiche erreichen höhere Werte."
           ],
           "balken": {
             "werte": [
               [
-                "Kohlendioxid",
-                62
+                "Stickstoff",
+                67
               ],
               [
-                "Stickstoff",
-                33
+                "Sauerstoff",
+                27
               ],
               [
                 "Argon",
                 5
+              ],
+              [
+                "Kohlendioxid",
+                1
               ]
             ]
           }
+        },
+        {
+          "titel": "Druck",
+          "daten": [
+            [
+              "Mittlerer Oberflächendruck",
+              "ca. 0,32 bar"
+            ],
+            [
+              "Natürliche Lebensräume in der Tiefe",
+              "0,35–0,48 bar"
+            ],
+            [
+              "Technisch kontrollierte Siedlungen",
+              "höher, je nach Anlage"
+            ]
+          ]
+        },
+        {
+          "titel": "Unterirdische Atmosphäre",
+          "text": [
+            "Die Luft in den Höhlen unterscheidet sich von Region zu Region. Natürliche Luftströmungen verbinden viele Höhlensysteme mit der Oberfläche; Sauerstoff entsteht lokal durch biologische und technische Prozesse. Geothermische Aktivität verändert die Gaszusammensetzung – in gefährlichen Bereichen sammeln sich Kohlendioxid, Schwefelverbindungen oder andere Gase."
+          ]
+        },
+        {
+          "titel": "Wolkenschichten",
+          "liste": [
+            "Überwiegend geringe Wolkenbedeckung",
+            "Dünne Eispartikelwolken und Staubschichten",
+            "Lokale Wasserdampfwolken über geothermischen Regionen",
+            "Keine dauerhaft geschlossene globale Wolkendecke",
+            "Unterirdischer Nebel in warmen, wasserreichen Großkammern"
+          ]
         }
       ]
     },
@@ -419,9 +870,58 @@
       "intro": "Klima von Ombrys III.",
       "abschnitte": [
         {
-          "titel": "Temperatur",
+          "titel": "Temperaturzonen",
           "text": [
-            "Bei 1,25 AE Abstand zu Ombrys liegt die Gleichgewichtstemperatur von Ombrys III bei rund -97 °C – kalt."
+            "Die Oberfläche ist eisig: Polarregionen fallen unter −130 °C, die wärmsten Äquatorgebiete erreichen −60 bis −30 °C. Unter der Erde kehrt sich das Bild um – oberflächennahe Höhlen bleiben oft unter dem Gefrierpunkt, die bewohnbaren Tiefenregionen liegen stabil bei 10–35 °C, hydrothermale Zonen werden lokal wesentlich heißer."
+          ],
+          "skala": {
+            "einheit": "°C",
+            "min": -140,
+            "max": 60,
+            "bereiche": [
+              [
+                "Polarregionen",
+                -140,
+                -130
+              ],
+              [
+                "Oberfläche (Mittel)",
+                -100,
+                -70
+              ],
+              [
+                "Äquatoriale Regionen",
+                -60,
+                -30
+              ],
+              [
+                "Oberflächennahe Höhlen",
+                -30,
+                0
+              ],
+              [
+                "Bewohnte Tiefen",
+                10,
+                35
+              ],
+              [
+                "Hydrothermale Regionen",
+                35,
+                60
+              ]
+            ]
+          }
+        },
+        {
+          "titel": "Oberfläche",
+          "text": [
+            "Niederschläge sind selten; Frost, Eisstaub und mineralischer Staub prägen die Oberfläche. Flüssiges Wasser gibt es nur an geschützten Wärmequellen. Wegen der geringen Achsneigung sind die Jahreszeiten moderat."
+          ]
+        },
+        {
+          "titel": "Untergrund",
+          "text": [
+            "Größere, abgeschirmte Hohlräume bieten stabile Bedingungen mit hoher Luftfeuchtigkeit in wasserreichen Höhlen. Temperatur- und Druckunterschiede erzeugen lokale Luftströmungen. Die geothermische Wärme bildet die Grundlage der unterirdischen Lebensräume."
           ]
         }
       ]
@@ -432,9 +932,21 @@
       "intro": "Gewässer von Ombrys III.",
       "abschnitte": [
         {
-          "titel": "Wasser",
+          "titel": "Wasser in der Tiefe",
           "text": [
-            "Wasser gibt es höchstens als Eis in Kratern und im Untergrund."
+            "Offene Oberflächenozeane gibt es nicht. Nahe der Oberfläche liegen gefrorene Wasserreservoirs; in der Tiefe fließen Flüsse durch verbundene Höhlensysteme, stürzen unterirdische Wasserfälle und sammeln sich Süß- und Salzwasserseen. Zwischen gefrorenen Oberflächenablagerungen und flüssigen Tiefenreservoirs bestehen Kreisläufe."
+          ]
+        },
+        {
+          "titel": "Gewässertypen",
+          "liste": [
+            "Gefrorene Reservoirs nahe der Oberfläche",
+            "Wasserreiche Gesteinsschichten und Grundwasserströmungen",
+            "Unterirdische Süß- und Salzseen",
+            "Hydrothermale Flüssigkeitsreservoirs und heiße Quellen",
+            "Tiefenflüsse und unterirdische Wasserfälle",
+            "Zeitweilige Schmelzwasserbildung in geothermischen Oberflächenregionen",
+            "Künstliche Wasserversorgung größerer Siedlungen"
           ]
         }
       ]
@@ -445,9 +957,30 @@
       "intro": "Geologie von Ombrys III.",
       "abschnitte": [
         {
-          "titel": "Geologie",
+          "titel": "Wie die Höhlen entstehen",
           "text": [
-            "Ombrys III ist groß genug, um im Inneren noch Wärme zu speichern; Spuren alter vulkanischer Tätigkeit sind wahrscheinlich."
+            "Gigantische Höhlen entstehen vor allem dort, wo mehrere Prozesse zusammenwirken: frühere Lavaströme hinterließen Röhrensysteme, chemische Gesteinslösung und unterirdische Wasserströmungen weiten Hohlräume, thermisch bedingte Brüche öffnen Spalten. Besonders stabile Hohlräume besitzen natürliche Bögen, Gewölbe und tragende Säulen. Die Subterraner haben zahlreiche Hohlräume technisch erweitert und stabilisiert."
+          ]
+        },
+        {
+          "titel": "Naturgefahren",
+          "karten": [
+            {
+              "titel": "Oberfläche",
+              "text": "Staub- und Eisstaubstürme, starke Winde, frostbedingte Gesteinsbrüche, extreme Kälte."
+            },
+            {
+              "titel": "Höhleneinstürze",
+              "text": "Natürliche Einstürze verändern langfristig die bewohnbaren Regionen."
+            },
+            {
+              "titel": "Gas und Druck",
+              "text": "Plötzliche Gasaustritte, lokale Druckveränderungen, hydrothermale Ausbrüche."
+            },
+            {
+              "titel": "Wasser und Beben",
+              "text": "Unterirdische Überschwemmungen, Erschütterungen, blockierte Wanderkorridore, Ausfall künstlicher Stützen."
+            }
           ]
         }
       ]
@@ -455,12 +988,35 @@
     "Biosphäre": {
       "gruppe": "Natur",
       "icon": "❧",
-      "intro": "Biosphäre von Ombrys III.",
+      "intro": "Leben aus der Wärme der Tiefe.",
       "abschnitte": [
         {
-          "titel": "Leben",
+          "titel": "Unterirdische Nahrungsnetze",
           "text": [
-            "Auf Ombrys III ist kein Leben verzeichnet."
+            "Chemosynthetische Mikroorganismen und hydrothermale Bakterien nutzen geochemische Energie und bilden die Grundlage der Nahrungsnetze. In Wärmeoasen an der Oberfläche erzeugen fotosynthetische Organismen zusätzliche Biomasse, die über Wasserströmungen in die Tiefe gelangt. Die natürliche Zahl gigantischer Lebensformen bleibt durch Energie und Nahrung begrenzt; moderne Versorgungsanlagen erhöhen die Tragfähigkeit erheblich."
+          ]
+        },
+        {
+          "titel": "Flora und floraähnliche Organismen",
+          "liste": [
+            "Chemosynthetische Bodenmatten",
+            "Mineralstoffverarbeitende Kolonieorganismen",
+            "Biolumineszierende Fasergewächse",
+            "Röhrenförmige Nährstoffabsorber",
+            "Organische Höhlenwandbewüchse",
+            "Geothermisch versorgte Biomassefelder",
+            "Lichtnutzende Organismen in Wärmeoasen"
+          ]
+        },
+        {
+          "titel": "Fauna",
+          "liste": [
+            "Segmentierte Höhlenbewohner und druckempfindliche Bodentiere",
+            "Wasserbewohnende Tiefen- und Filterorganismen",
+            "Biolumineszierende Höhlenorganismen",
+            "Wandernde Biomassefresser",
+            "Spezialisierte unterirdische Jäger und Aasverwerter",
+            "Symbiotische Begleitorganismen der Subterraner"
           ]
         }
       ]
@@ -468,27 +1024,41 @@
     "Spezies": {
       "gruppe": "Zivilisation",
       "icon": "✿",
-      "intro": "Spezies von Ombrys III.",
+      "intro": "Die Subterraner – lebende Archive der Tiefe.",
       "abschnitte": [
         {
-          "titel": "Bewohner",
+          "titel": "Subterraner",
           "text": [
-            "Ombrys III ist keine Heimat einer intelligenten Spezies."
-          ]
-        },
-        {
-          "titel": "Im System von Mypzla",
-          "text": [
-            "Das Ombrys-System ist die Heimat der Mykonoiden: Ihr Planet Mypzla umkreist Ombrys."
+            "Die Subterraner sind langgestreckte, segmentierte und mehrgliedrige Giganten von 200 bis 800 Metern Länge. Sie leben 2.000 bis 6.000 Jahre, nehmen Druck und Vibrationen äußerst fein wahr und besitzen komplexe räumliche Langzeitgedächtnisse – viele erinnern sich an geologische Veränderungen, die Jahrhunderte zurückliegen. Ihr Stoffwechsel ist langsam und energiesparend."
           ],
-          "verweise": [
+          "daten": [
             [
-              "Mypzla",
-              "inhalte/himmelskoerper/planeten/details/mypzla/hauptseite/index.html"
+              "Körperlänge",
+              "200–800 m"
             ],
             [
-              "Speziesdossier Mykonoiden",
-              "inhalte/spezies/Biologische Spezies/Mykonoiden/hauptseite/hauptseite.html"
+              "Lebenserwartung",
+              "2.000–6.000 Jahre"
+            ],
+            [
+              "Körperbau",
+              "Langgestreckt, segmentiert, mehrgliedrig"
+            ],
+            [
+              "Sinne",
+              "Druck- und Vibrationswahrnehmung"
+            ],
+            [
+              "Gedächtnis",
+              "Räumliches Langzeitgedächtnis"
+            ],
+            [
+              "Hauptlebensraum",
+              "Großkammern und Wanderkorridore"
+            ],
+            [
+              "Verwandtschaft",
+              "Keine gemeinsame Abstammung mit den Mykonoiden"
             ]
           ]
         }
@@ -500,25 +1070,35 @@
       "intro": "Zivilisation von Ombrys III.",
       "abschnitte": [
         {
-          "titel": "Siedlungen",
+          "titel": "Leben in der Tiefe",
           "text": [
-            "Für Ombrys III sind keine dauerhaften Siedlungen verzeichnet."
+            "Die Gemeinschaften der Subterraner sind dezentral über verbundene Tiefenregionen verteilt. Gigantische natürliche Siedlungskammern werden künstlich erweitert; Energieversorgung, Nährstoffproduktion und geotechnische Industrie liegen unter der Erde. Eine flächendeckende Urbanisierung des Planeten ist nicht nötig."
           ]
         },
         {
-          "titel": "Im System von Mypzla",
-          "text": [
-            "Das Ombrys-System ist die Heimat der Mykonoiden: Ihr Planet Mypzla umkreist Ombrys."
-          ],
-          "verweise": [
-            [
-              "Mypzla",
-              "inhalte/himmelskoerper/planeten/details/mypzla/hauptseite/index.html"
-            ],
-            [
-              "Speziesdossier Mykonoiden",
-              "inhalte/spezies/Biologische Spezies/Mykonoiden/hauptseite/hauptseite.html"
-            ]
+          "titel": "Infrastruktur",
+          "liste": [
+            "Automatisierte Wartung von Wanderkorridoren",
+            "Hochentwickelte seismische Frühwarnsysteme",
+            "Unterirdische Kommunikationsnetze",
+            "Historische Gedächtnisarchive",
+            "Oberflächenstationen für Raumfahrt und Handel",
+            "Ferngesteuerte Transport- und Fertigungssysteme",
+            "Angepasste Einrichtungen für kleinere Spezies"
+          ]
+        },
+        {
+          "titel": "Technologien",
+          "liste": [
+            "Seismische Tiefenscanner und autonome Tiefensonden",
+            "Adaptive Höhlenstützen und Druckausgleichsanlagen",
+            "Resonanz-Tunnelbohrmaschinen",
+            "Mobile Hohlraumkartierungsfahrzeuge",
+            "Geothermische Tiefenstationen",
+            "Biologische Langzeitarchive und Raumrekonstruktionssysteme",
+            "Vibrationsübersetzer und akustische Kommunikationsstationen",
+            "Unterirdische Schwerlastbahnen",
+            "Modulare Tiefenhabitate für kleinere Spezies"
           ]
         }
       ]
@@ -529,9 +1109,46 @@
       "intro": "Geschichte von Ombrys III.",
       "abschnitte": [
         {
-          "titel": "Entstehung",
+          "titel": "Zeitleiste",
+          "zeitleiste": [
+            [
+              "Frühgeschichte",
+              "Entstehung mit dem Ombrys-System, frühe vulkanische Aktivität, große Lavaröhren"
+            ],
+            [
+              "Wasser und Wärme",
+              "Wasserführende Gesteinsschichten, hydrothermale Lebensräume"
+            ],
+            [
+              "Biologische Entwicklung",
+              "Mikrobielles Leben, unterirdische Nahrungsnetze, mehrzellige Höhlenorganismen"
+            ],
+            [
+              "Tiefenbewohner",
+              "Mechanisch empfindliche Sinnesorgane, segmentierte und schließlich gigantische Körperformen"
+            ],
+            [
+              "Intelligenz",
+              "Entstehung der Subterraner und ihres räumlichen Langzeitgedächtnisses"
+            ],
+            [
+              "Vernetzung",
+              "Verbindung isolierter Höhlenregionen, gemeinsame Wanderkorridore"
+            ],
+            [
+              "Technik",
+              "Strukturstabilisierung, geothermische Versorgung, automatisierte Industrie"
+            ],
+            [
+              "Gegenwart",
+              "Erschließung der Oberfläche durch Technik, außerplanetare Kontakte"
+            ]
+          ]
+        },
+        {
+          "titel": "Hinweis",
           "text": [
-            "Ombrys III entstand zusammen mit dem Ombrys-System vor rund 6,2 Milliarden Jahren."
+            "Konkrete Jahreszahlen bleiben bis zur gemeinsamen historischen Ausarbeitung offen."
           ]
         }
       ]
@@ -542,9 +1159,14 @@
       "intro": "Fraktionen von Ombrys III.",
       "abschnitte": [
         {
-          "titel": "Ansprüche",
-          "text": [
-            "Für Ombrys III sind keine Fraktionsansprüche verzeichnet."
+          "titel": "Politik",
+          "liste": [
+            "Regionale politische Gemeinschaften",
+            "Überregionale Zusammenarbeit zur Sicherung gemeinsamer Infrastruktur",
+            "Eigenständige planetare Interessen",
+            "Zugehörigkeit zu einer der großen Fraktionen: noch offen",
+            "Außerplanetare Bergbaurechte nach regionalen Vereinbarungen",
+            "Zusammenarbeit mit den Mykonoiden möglich – keine politische Unterordnung unter Mypzla"
           ]
         }
       ]
@@ -556,9 +1178,29 @@
       "abschnitte": [
         {
           "titel": "Rohstoffe",
-          "liste": [
-            "Silikatgestein",
-            "Metallerze"
+          "karten": [
+            {
+              "titel": "Erze",
+              "text": "Eisen-, Nickel- und Kupfererze, seltene Spurenelemente."
+            },
+            {
+              "titel": "Minerale",
+              "text": "Silikate, Karbonatgesteine, kristalline Mineralstoffe, Schwefelverbindungen, Kohlenstoffablagerungen."
+            },
+            {
+              "titel": "Wasser und Energie",
+              "text": "Gefrorene Reservoirs, unterirdische Salzlösungen, geothermische Energie."
+            },
+            {
+              "titel": "Biologische Werkstoffe",
+              "text": "Faserstoffe, mineralisierte organische Verbundmaterialien, Biomasse aus unterirdischen Anlagen."
+            }
+          ]
+        },
+        {
+          "titel": "Hinweis",
+          "text": [
+            "Exotische APORIA-Rohstoffe werden später gezielt zugeordnet."
           ]
         }
       ]
@@ -569,22 +1211,18 @@
       "intro": "Erforschung von Ombrys III.",
       "abschnitte": [
         {
-          "titel": "Offene Fragen",
+          "titel": "Forschungsfelder",
           "liste": [
-            "Wie ist der innere Aufbau beschaffen?",
-            "Gab es früher eine dichtere Atmosphäre?"
-          ]
-        },
-        {
-          "titel": "In der Sternenkarte",
-          "text": [
-            "Ombrys III ist mit allen Bahndaten im Ombrys-System der Sternenkarte eingetragen."
-          ],
-          "verweise": [
-            [
-              "In der Sternenkarte zeigen",
-              "Menüs/Sternenkarte/Sternenkarte.html?system=mypzla-stern&objekt=mypzla-ombrys-iii"
-            ]
+            "Geologische Langzeitbeobachtung und Frühwarnsysteme",
+            "Gigantische biologische Tragstrukturen",
+            "Planetare Hohlraumbildung",
+            "Stabile unterirdische Ökosysteme",
+            "Druck- und Vibrationssinne",
+            "Biologische Langzeitspeicher",
+            "Rekonstruktion historischer Höhlenlandschaften",
+            "Geothermische Energiegewinnung",
+            "Druckbeständige Maschinen",
+            "Unterirdische Wasser- und Stoffkreisläufe"
           ]
         }
       ]
@@ -595,9 +1233,55 @@
       "intro": "Besonderheiten von Ombrys III.",
       "abschnitte": [
         {
-          "titel": "Besonderheiten",
+          "titel": "Rekorde",
+          "daten": [
+            [
+              "Größte Lebensformen",
+              "Subterraner, 200–800 m Körperlänge"
+            ],
+            [
+              "Lebenserwartung der Subterraner",
+              "2.000–6.000 Jahre"
+            ],
+            [
+              "Größte Kammern",
+              "100–600 m freie Spannweite, Höhlenregionen mehrere Kilometer"
+            ],
+            [
+              "Zentrales Gemeinschaftsgebiet",
+              "Das Ewige Gewölbe"
+            ]
+          ]
+        },
+        {
+          "titel": "Im Spiel",
           "liste": [
-            "Ombrys III ist eine kalte, trockene Gesteinswelt mit dünner Atmosphäre."
+            "Mehrschichtige Open World aus gefrorener Oberfläche und warmer Tiefenbiosphäre",
+            "Vertikale Erkundung der Tiefenzonen",
+            "Gigantische NPCs mit eigenen Persönlichkeiten",
+            "Historische Erinnerungen untersuchen und verschwundene Höhlen rekonstruieren",
+            "Dynamische Veränderungen durch geologische Ereignisse",
+            "Eigene Tiefenstationen aufbauen, unterirdischer Fahrzeugverkehr",
+            "Handelsmissionen mit Mypzla"
+          ]
+        },
+        {
+          "titel": "Visueller Stil",
+          "liste": [
+            "Dunkle basaltische, graublaue Oberfläche mit vereisten Schluchten",
+            "Säulenlandschaften und dunkles Gestein mit kupferfarbenen Mineraladern",
+            "Türkisfarbene unterirdische Seen",
+            "Amberfarbene und bläuliche Biolumineszenz, geothermischer Nebel",
+            "Monumentale technische Stützkonstruktionen",
+            "Keine rein mittelalterliche Höhlenarchitektur, kein hohler Planet"
+          ]
+        },
+        {
+          "titel": "Hinweise für Besucher",
+          "liste": [
+            "An der Oberfläche Atemunterstützung nötig",
+            "Gaswarnungen in geothermischen Regionen beachten",
+            "Seismische Warnsysteme ernst nehmen"
           ]
         }
       ]
@@ -608,9 +1292,69 @@
       "intro": "Medienarchiv von Ombrys III.",
       "abschnitte": [
         {
-          "titel": "Ombrys III – Archivbild",
+          "titel": "Ombrys III aus dem All",
           "bild": true,
-          "bildtext": "Ombrys III"
+          "bildtext": "Ombrys III – Welt der ewigen Tiefen"
+        },
+        {
+          "titel": "Heimatwelt der Subterraner – Entwurf A",
+          "bild": "assets/bilder/Alle Spezies+Übersicht/Gigantische Lebensformen/Subterranen/Heimatplanet/subterranerHeimatwelt_designA-1.png",
+          "bildtext": "Heimatwelt der Subterraner – Entwurf A"
+        },
+        {
+          "titel": "Unterwelten im Panorama",
+          "bild": "assets/bilder/Alle Spezies+Übersicht/Gigantische Lebensformen/Subterranen/Heimatplanet/Außerirdische Unterwelten im Panorama-2.png",
+          "bildtext": "Unterwelten im Panorama"
+        },
+        {
+          "titel": "Zehn Welten von Ombrys III",
+          "bild": "assets/bilder/Alle Spezies+Übersicht/Gigantische Lebensformen/Subterranen/Heimatplanet/Zehn Welten von Ombrys III-5.png",
+          "bildtext": "Zehn Welten von Ombrys III"
+        },
+        {
+          "titel": "Szenen der Unterwelt",
+          "bild": "assets/bilder/Alle Spezies+Übersicht/Gigantische Lebensformen/Subterranen/Heimatplanet/Zehn Szenen einer außerirdischen Unterwelt-4.png",
+          "bildtext": "Szenen der Unterwelt"
+        },
+        {
+          "titel": "Welten unter der Erde",
+          "bild": "assets/bilder/Alle Spezies+Übersicht/Gigantische Lebensformen/Subterranen/Heimatplanet/Zehn Welten unter der Erde-3.png",
+          "bildtext": "Welten unter der Erde"
+        },
+        {
+          "titel": "Eiswelten unter der Erde",
+          "bild": "assets/bilder/Alle Spezies+Übersicht/Gigantische Lebensformen/Subterranen/Heimatplanet/Zehn Eiswelten unter der Erde-1.png",
+          "bildtext": "Eiswelten unter der Erde"
+        },
+        {
+          "titel": "Licht und Schatten",
+          "bild": "assets/bilder/Alle Spezies+Übersicht/Gigantische Lebensformen/Subterranen/Heimatplanet/Zehn außerirdische Welten in Licht und Schatten-6.png",
+          "bildtext": "Licht und Schatten"
+        },
+        {
+          "titel": "Heimatplanet 1",
+          "bild": "assets/bilder/Alle Spezies+Übersicht/Gigantische Lebensformen/Subterranen/Heimatplanet/HeimatPlanet_Subterranerb1.png",
+          "bildtext": "Heimatplanet 1"
+        },
+        {
+          "titel": "Heimatplanet 2",
+          "bild": "assets/bilder/Alle Spezies+Übersicht/Gigantische Lebensformen/Subterranen/Heimatplanet/HeimatPlanet_Subterranerb2.png",
+          "bildtext": "Heimatplanet 2"
+        },
+        {
+          "titel": "Heimatplanet 3",
+          "bild": "assets/bilder/Alle Spezies+Übersicht/Gigantische Lebensformen/Subterranen/Heimatplanet/HeimatPlanet_Subterranerb3.png",
+          "bildtext": "Heimatplanet 3"
+        },
+        {
+          "titel": "Heimatplanet 4",
+          "bild": "assets/bilder/Alle Spezies+Übersicht/Gigantische Lebensformen/Subterranen/Heimatplanet/HeimatPlanet_Subterranerb4.png",
+          "bildtext": "Heimatplanet 4"
+        },
+        {
+          "titel": "Heimatplanet 5",
+          "bild": "assets/bilder/Alle Spezies+Übersicht/Gigantische Lebensformen/Subterranen/Heimatplanet/HeimatPlanet_Subterranerb5.png",
+          "bildtext": "Heimatplanet 5"
         }
       ]
     }

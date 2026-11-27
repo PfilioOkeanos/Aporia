@@ -1,7 +1,7 @@
 // Osselyr · Heimatwelt der Floranoiden (Quelle: Info_material/…/Floranoiden, Heimatwelt V1.1)
 const B = "assets/bilder/Alle Spezies+Übersicht/Biologische Spezies/Floranoiden/gesamtdarstellung/";
 export default {
-    ordner: "aporia-zwischen-grun-und-gold", system: "osselyr-system", planetId: "osselyr-planet",
+    ordner: "osselyr", system: "osselyr-system", planetId: "osselyr-planet",
     name: "Osselyr", genitiv: "Osselyrs", klasse: "Gesteinsplanet", klasseLang: "Bewohnbarer terrestrischer Gesteinsplanet",
     intro: "Osselyr ist die Heimatwelt der Floranoiden: ein bewohnbarer Gesteinsplanet unter dem orangefarbenen Licht Saeliths, geprägt von Küstenebenen, großen Flussdeltas, Feuchtgebieten und mineralreichen Hochflächen.",
     bildtext: "Osselyr zwischen Grün und Gold",

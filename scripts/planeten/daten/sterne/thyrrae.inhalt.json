@@ -6,12 +6,16 @@
   "klasse": "Gelber Zwerg (F9 V)",
   "intro": "Thyrrae ist ein heller, gelbweißer Hauptreihenstern der Spektralklasse F9 V mit 108 % der Sonnenmasse und 135 % ihrer Leuchtkraft – ein ruhiger Einzelstern und Zentralstern der Gaswelt Babiew. Thyrrae ist der Zentralstern des Thyrrae-Systems.",
   "globusDaten": {
-    "planet": "goldene-sonne-im-sternennebel",
+    "planet": "thyrrae",
     "klasse": "Vulkan",
     "radius": 765270000
   },
   "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=babiew-stern",
   "grunddaten": [
+    [
+      "System-ID",
+      "babiew-stern"
+    ],
     [
       "Archiv-ID",
       "AP-9E770E0F02"
@@ -45,7 +49,7 @@
       "ca. 3,4 Mrd. Jahre"
     ],
     [
-      "Monde",
+      "Planeten",
       "6 (Thyrrae I, Thyrrae II, Babiew, Raumzeitnarbe, Thyrrae V, Windkomet)"
     ]
   ],
@@ -60,7 +64,7 @@
     ],
     [
       "Nächste Nachbarsysteme",
-      "Aurenn-System (12,7 Lj), Thalor-System (20,2 Lj)"
+      "Aurenn-System (12,7 Lj), Saelon-System (16 Lj)"
     ]
   ],
   "verknuepfungen": [
@@ -73,42 +77,42 @@
     },
     {
       "icon": "◐",
-      "art": "Mond",
+      "art": "Planet",
       "titel": "Thyrrae I",
       "href": "inhalte/himmelskoerper/planeten/details/thyrrae-i/hauptseite/index.html",
       "route": null
     },
     {
       "icon": "◐",
-      "art": "Mond",
+      "art": "Planet",
       "titel": "Thyrrae II",
       "href": "inhalte/himmelskoerper/planeten/details/thyrrae-ii/hauptseite/index.html",
       "route": null
     },
     {
       "icon": "◐",
-      "art": "Mond",
+      "art": "Planet",
       "titel": "Babiew",
       "href": "inhalte/himmelskoerper/planeten/details/babiew/hauptseite/index.html",
       "route": null
     },
     {
       "icon": "◐",
-      "art": "Mond",
+      "art": "Planet",
       "titel": "Raumzeitnarbe",
       "href": "inhalte/himmelskoerper/asteroiden/details/raumzeitnarbe/hauptseite/index.html",
       "route": null
     },
     {
       "icon": "◐",
-      "art": "Mond",
+      "art": "Planet",
       "titel": "Thyrrae V",
       "href": "inhalte/himmelskoerper/planeten/details/thyrrae-v/hauptseite/index.html",
       "route": null
     },
     {
       "icon": "◐",
-      "art": "Mond",
+      "art": "Planet",
       "titel": "Windkomet",
       "href": "inhalte/himmelskoerper/kometen/details/windkomet/hauptseite/index.html",
       "route": null
@@ -290,7 +294,7 @@
               "ca. 3,4 Mrd. Jahre"
             ],
             [
-              "Monde",
+              "Planeten",
               "6 (Thyrrae I, Thyrrae II, Babiew, Raumzeitnarbe, Thyrrae V, Windkomet)"
             ]
           ]
@@ -327,7 +331,7 @@
             ],
             [
               "Nächste Nachbarsysteme",
-              "Aurenn-System (12,7 Lj), Thalor-System (20,2 Lj), Seryn-System (21,5 Lj)"
+              "Aurenn-System (12,7 Lj), Saelon-System (16 Lj), Thalor-System (20,2 Lj)"
             ]
           ]
         },
@@ -359,7 +363,7 @@
               "Asteroidengürtel"
             ],
             [
-              "Äußeres Kometengebiet · 36–52 AE",
+              "Garovfeth-Kometenwolke · 36–52 AE",
               "Kometengebiet"
             ]
           ],
@@ -413,7 +417,7 @@
               "ca. 3,4 Mrd. Jahre"
             ],
             [
-              "Monde",
+              "Planeten",
               "6 (Thyrrae I, Thyrrae II, Babiew, Raumzeitnarbe, Thyrrae V, Windkomet)"
             ]
           ]
@@ -466,7 +470,7 @@
               "Asteroidengürtel"
             ],
             [
-              "Äußeres Kometengebiet · 36–52 AE",
+              "Garovfeth-Kometenwolke · 36–52 AE",
               "Kometengebiet"
             ]
           ],
@@ -493,10 +497,10 @@
           "titel": "Nachbarsysteme",
           "liste": [
             "Aurenn-System – 12,7 Lichtjahre",
+            "Saelon-System – 16 Lichtjahre",
             "Thalor-System – 20,2 Lichtjahre",
             "Seryn-System – 21,5 Lichtjahre",
-            "Ixar-System – 25,9 Lichtjahre",
-            "Sonnensystem – 28 Lichtjahre"
+            "Ixar-System – 25,9 Lichtjahre"
           ]
         }
       ]
@@ -535,15 +539,15 @@
         {
           "titel": "Besonderheiten",
           "liste": [
-            "6 Monde: Thyrrae I, Thyrrae II, Babiew, Raumzeitnarbe, Thyrrae V, Windkomet"
+            "6 eigene Planeten: Thyrrae I, Thyrrae II, Babiew, Raumzeitnarbe, Thyrrae V, Windkomet"
           ]
         },
         {
-          "titel": "Monde",
+          "titel": "Planeten",
           "karten": [
             {
               "titel": "Thyrrae I",
-              "text": "7.800 km Durchmesser, Umlauf in 82,3 Tage. Thyrrae I ist ein kleiner, glühend heißer Gesteinsplanet ohne nennenswerte Atmosphäre."
+              "text": "7.800 km Durchmesser, Umlauf in 82,3 Tage. Thyrrae I, die Welt der Vulkanriesen, ist ein heißer, vulkanisch aktiver Gesteinsplanet mit basaltischen Hochländern, gewaltigen Calderen und schwefelhaltiger Atmosphäre – die Heimat der Pyrokariden, aufrecht gehender Giganten von 250 bis 800 Metern Höhe."
             },
             {
               "titel": "Thyrrae II",

@@ -6,12 +6,16 @@
   "klasse": "Asteroidengürtel",
   "intro": "Der Harzgürtel zwischen 1,4 und 2,0 AE besteht aus dunklen, kohlenstoff- und eisenreichen Asteroiden; sein Name stammt von ihrer bernsteinartigen Färbung im Sternlicht. Harzgürtel umgibt Khelar im Khelar-System.",
   "globusDaten": {
-    "planet": "der-weite-asteroidengurtel-von-lotharis",
+    "planet": "harzgurtel",
     "klasse": "Gestein",
     "radius": 1000000
   },
   "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=veshkara-stern&objekt=veshkara-harzguertel",
   "grunddaten": [
+    [
+      "System-ID",
+      "veshkara-harzguertel"
+    ],
     [
       "Archiv-ID",
       "AP-5685B1239B"
@@ -61,16 +65,16 @@
     },
     {
       "icon": "✿",
-      "art": "Heimatwelt der Chitinoiden",
-      "titel": "Veshkara",
-      "href": "inhalte/himmelskoerper/planeten/details/veshkara/hauptseite/index.html",
+      "art": "Heimatwelt der Velorithen",
+      "titel": "Rhaum",
+      "href": "inhalte/himmelskoerper/monde/details/rhaum/hauptseite/index.html",
       "route": null
     },
     {
       "icon": "◈",
       "art": "Spezies-Dossier",
-      "titel": "Chitinoiden",
-      "href": "inhalte/spezies/Biologische Spezies/Chitinnoiden/hauptseite/Spezies.html",
+      "titel": "Velorithen",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Velorithen/hauptseite/Spezies.html",
       "route": null
     }
   ],
@@ -80,8 +84,8 @@
       "href": "Menüs/Sternenkarte/Sternenkarte.html?system=veshkara-stern&objekt=veshkara-harzguertel"
     },
     {
-      "titel": "Speziesdossier Chitinoiden",
-      "href": "inhalte/spezies/Biologische Spezies/Chitinnoiden/hauptseite/Spezies.html"
+      "titel": "Speziesdossier Velorithen",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Velorithen/hauptseite/Spezies.html"
     }
   ],
   "design": {
@@ -168,7 +172,7 @@
               "Asteroidengürtel"
             ],
             [
-              "Äußeres Kometengebiet · 33–47 AE",
+              "Zarenev-Kometenwolke · 33–47 AE",
               "Kometengebiet"
             ]
           ],
@@ -266,18 +270,18 @@
           ]
         },
         {
-          "titel": "Im System von Veshkara",
+          "titel": "Im System von Rhaum",
           "text": [
-            "Das Khelar-System ist die Heimat der Chitinoiden: Ihr Planet Veshkara umkreist Khelar."
+            "Das Khelar-System ist die Heimat der Velorithen: Ihr Planet Rhaum umkreist Khelar."
           ],
           "verweise": [
             [
-              "Veshkara",
-              "inhalte/himmelskoerper/planeten/details/veshkara/hauptseite/index.html"
+              "Rhaum",
+              "inhalte/himmelskoerper/monde/details/rhaum/hauptseite/index.html"
             ],
             [
-              "Speziesdossier Chitinoiden",
-              "inhalte/spezies/Biologische Spezies/Chitinnoiden/hauptseite/Spezies.html"
+              "Speziesdossier Velorithen",
+              "inhalte/spezies/Gigantische Lebensformen/Velorithen/hauptseite/Spezies.html"
             ]
           ]
         }
@@ -316,7 +320,7 @@
               "Asteroidengürtel"
             ],
             [
-              "Äußeres Kometengebiet · 33–47 AE",
+              "Zarenev-Kometenwolke · 33–47 AE",
               "Kometengebiet"
             ]
           ],
@@ -378,7 +382,7 @@
               "Asteroidengürtel"
             ],
             [
-              "Äußeres Kometengebiet · 33–47 AE",
+              "Zarenev-Kometenwolke · 33–47 AE",
               "Kometengebiet"
             ]
           ],

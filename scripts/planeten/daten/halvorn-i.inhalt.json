@@ -1,56 +1,123 @@
 {
-  "_erzeugt": "koerper-bauen",
   "name": "Halvorn I",
   "genitiv": "von Halvorn I",
   "dossierName": "Halvorn I-Dossier",
-  "klasse": "Gesteinsplanet",
-  "intro": "Halvorn I ist ein kleiner, heißer Gesteinsplanet. Halvorn I umkreist Halvorn in 0,35 AE Abstand und braucht für einen Umlauf 80,6 Tage.",
+  "klasse": "Planet · Gesteinsplanet",
+  "intro": "Halvorn I ist die Heimatwelt der Xerakiden: eine heiße, trockene Welt aus Felswüsten, tiefen Schluchten, Salzebenen und schwarzen Mineralplateaus. Unter der ariden Oberfläche liegen gewaltige Wassergewölbe – die Lebensader einer technisch hochentwickelten Zivilisation von 60 bis 180 Meter großen Giganten.",
   "globusDaten": {
-    "planet": "lebender-basaltplanet-im-orbitalen-dammerlicht",
-    "klasse": "Gestein",
+    "planet": "halvorn-i",
+    "klasse": "Wüstenwelt",
     "radius": 3900000
   },
-  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=dravelon-stern&objekt=dravelon-halvorn-i",
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=dravelon-stern",
   "grunddaten": [
     [
       "Archiv-ID",
       "AP-4EF9A9C00A"
     ],
     [
-      "Typ",
-      "Gesteinsplanet"
-    ],
-    [
-      "Sternsystem",
-      "Halvorn-System"
-    ],
-    [
-      "Zentralkörper",
-      "Halvorn"
-    ],
-    [
-      "Große Halbachse",
-      "0,35 AE"
-    ],
-    [
-      "Umlaufzeit",
-      "80,6 Tage"
+      "Klasse",
+      "Terrestrischer Wüstenplanet · aride mineralische Biosphärenwelt"
     ],
     [
       "Durchmesser",
       "7.800 km"
     ],
     [
+      "Radius",
+      "3.900 km"
+    ],
+    [
       "Masse",
-      "0,3 Erdmassen"
+      "0,14 Erdmassen"
+    ],
+    [
+      "Dichte",
+      "3,37 g/cm³"
     ],
     [
       "Schwerkraft",
-      "0,8 g"
+      "0,37 g (3,7 m/s²)"
     ],
     [
-      "Gleichgewichtstemperatur",
-      "ca. 120 °C"
+      "Mittlere Oberflächentemperatur",
+      "ca. 31 °C"
+    ],
+    [
+      "Ozeane",
+      "ca. 4 % offene Gewässer (Binnenmeere, Salz- und Süßwasserseen)"
+    ],
+    [
+      "Atmosphäre",
+      "77 % Stickstoff, 21 % Sauerstoff, 1,9 % Argon und Spurengase, 0,1 % Kohlendioxid"
+    ],
+    [
+      "Atmosphärendruck",
+      "ca. 1,1 bar"
+    ],
+    [
+      "Rotationsperiode",
+      "28 h (Sonnentag ca. 28,2 h)"
+    ],
+    [
+      "Umlaufzeit",
+      "159 Erdtage"
+    ],
+    [
+      "Abstand zum Stern",
+      "0,55 AE"
+    ],
+    [
+      "Monde",
+      "keine"
+    ],
+    [
+      "Zentralstern",
+      "Halvorn, Orangefarbener Zwerg (K0 V)"
+    ],
+    [
+      "Einstrahlung",
+      "1,82-fach der Erde"
+    ],
+    [
+      "Achsneigung",
+      "12°"
+    ],
+    [
+      "Exzentrizität",
+      "0,04"
+    ],
+    [
+      "Fluchtgeschwindigkeit",
+      "5,3 km/s"
+    ],
+    [
+      "Alter",
+      "ca. 6 Mrd. Jahre"
+    ],
+    [
+      "Planetare Albedo",
+      "0,35"
+    ],
+    [
+      "Ringsystem",
+      "keines"
+    ],
+    [
+      "Dominierende Landschaften",
+      "Felswüsten, Schluchten, Salzebenen, mineralische Hochländer"
+    ],
+    [
+      "Zivilisationsstand",
+      "Technologisch fortgeschritten"
+    ],
+    [
+      "Fraktionszugehörigkeit",
+      "Noch nicht festgelegt"
+    ],
+    [
+      "Intelligente Spezies",
+      "Xerakiden"
     ]
   ],
   "position": [
@@ -60,84 +127,103 @@
     ],
     [
       "Zentralstern",
-      "Halvorn",
-      "inhalte/himmelskoerper/sterne/details/halvorn/hauptseite/index.html"
+      "Halvorn · K0 V, Einzelstern"
     ],
     [
-      "Abstand",
-      "0,35 AE"
+      "Bahnposition",
+      "1. von 5 Planeten"
+    ],
+    [
+      "Entfernung zur Sonne",
+      "21 Lichtjahre"
+    ],
+    [
+      "Nächste Nachbarsysteme",
+      "Kharuun-System (14,1 Lj), Osselyr-System (14,1 Lj)"
     ]
   ],
   "verknuepfungen": [
     {
-      "icon": "✦",
-      "art": "Sternenkarte",
-      "titel": "Halvorn I im Halvorn-System",
-      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=dravelon-stern&objekt=dravelon-halvorn-i",
-      "route": null
-    },
-    {
-      "icon": "☀",
-      "art": "Zentralstern",
-      "titel": "Halvorn",
-      "href": "inhalte/himmelskoerper/sterne/details/halvorn/hauptseite/index.html",
-      "route": null
-    },
-    {
       "icon": "✿",
-      "art": "Heimatwelt der Dendroarchen",
-      "titel": "Dravelon",
-      "href": "inhalte/himmelskoerper/planeten/details/dravelon/hauptseite/index.html",
+      "art": "Heimische Spezies",
+      "titel": "Xerakiden",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Xerakiden/hauptseite/Spezies.html",
       "route": null
     },
     {
       "icon": "◈",
       "art": "Spezies-Dossier",
-      "titel": "Dendroarchen",
-      "href": "inhalte/spezies/Gigantische Lebensformen/Dendroarchen/hauptseite/Spezies.html",
+      "titel": "Heimatwelt",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Xerakiden/Unterseiten/Heimatwelt/heimatwelt.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Politik und Fraktionen",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Xerakiden/Unterseiten/Politik/politik.html",
+      "route": null
+    },
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Halvorn-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=dravelon-stern",
       "route": null
     }
   ],
   "quellen": [
     {
-      "titel": "Sternenkarte · Halvorn-System",
-      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=dravelon-stern&objekt=dravelon-halvorn-i"
+      "titel": "Speziesdossier Xerakiden · Heimatwelt",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Xerakiden/Unterseiten/Heimatwelt/heimatwelt.html"
     },
     {
-      "titel": "Speziesdossier Dendroarchen",
-      "href": "inhalte/spezies/Gigantische Lebensformen/Dendroarchen/hauptseite/Spezies.html"
+      "titel": "Speziesdossier Xerakiden · Geschichte",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Xerakiden/Unterseiten/Geschichte/geschichte.html"
+    },
+    {
+      "titel": "Speziesdossier Xerakiden · Gesellschaft",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Xerakiden/Unterseiten/Gesellschaft/gesellschaft.html"
+    },
+    {
+      "titel": "Speziesdossier Xerakiden · Politik",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Xerakiden/Unterseiten/Politik/politik.html"
+    },
+    {
+      "titel": "Speziesdossier Xerakiden · Allgemeines",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Xerakiden/Unterseiten/Allgemeines/allgemeines.html"
     }
   ],
   "design": {
     "farben": {
-      "nacht": "#080605",
-      "tiefe": "#110e0c",
-      "akzent": "#bdac9f",
-      "sand": "#c2ac93",
-      "moos": "#9c9f7c",
-      "ozean": "#7c8a89",
-      "glas": "rgba(8, 12, 18, .76)",
-      "glas-hell": "rgba(16, 22, 32, .82)",
-      "linie": "rgba(255, 255, 255, .12)",
-      "linie-hell": "rgba(255, 255, 255, .3)",
-      "text": "#eef2f6",
-      "leise": "#a8b0bc",
-      "aporia-page-tint": "#453930"
+      "nacht": "#0c0805",
+      "tiefe": "#1a120b",
+      "akzent": "#e8a35a",
+      "sand": "#d9b27a",
+      "moos": "#7fb59a",
+      "ozean": "#3fa6a0",
+      "glas": "rgba(26, 18, 11, .78)",
+      "glas-hell": "rgba(40, 28, 17, .84)",
+      "linie": "rgba(232, 163, 90, .18)",
+      "linie-hell": "rgba(240, 190, 130, .38)",
+      "text": "#f6eee4",
+      "leise": "#bba891",
+      "aporia-page-tint": "#7a4a1f"
     }
   },
   "kapitel": {
     "Allgemeines": {
       "gruppe": "Weitere",
       "icon": "▤",
-      "intro": "Halvorn I auf einen Blick.",
+      "intro": "Halvorn I auf einen Blick: Wüsten, Schluchten und Giganten.",
       "abschnitte": [
         {
           "titel": "Kurzprofil",
           "bild": true,
-          "bildtext": "Halvorn I",
+          "bildtext": "Halvorn I – Welt der Schichtwüsten",
           "text": [
-            "Halvorn I ist ein kleiner, heißer Gesteinsplanet.",
-            "Halvorn I umkreist Halvorn in 0,35 AE Abstand und braucht für einen Umlauf 80,6 Tage."
+            "Halvorn I ist der innerste der fünf Hauptplaneten des Halvorn-Systems. Mit 7.800 Kilometern Durchmesser und nur 0,37 g ist er deutlich kleiner und leichter als die Erde. Er erhält rund 182 % der irdischen Sternstrahlung; die mittlere Temperatur liegt bei etwa 31 °C.",
+            "Rund 96 % der Oberfläche sind Land und Eis, nur etwa 4 % offene Gewässer in getrennten Binnenmeeren. Das Wasser des Planeten liegt vor allem unter der Oberfläche – in Grundwasserschichten, geothermischen Quellen und den großen Wassergewölben, die die Xerakiden erschlossen haben."
           ]
         },
         {
@@ -145,55 +231,129 @@
           "daten": [
             [
               "Typ",
-              "Gesteinsplanet"
+              "Terrestrischer Wüstenplanet · aride mineralische Biosphärenwelt"
             ],
             [
-              "Sternsystem",
-              "Halvorn-System"
+              "Zentralstern",
+              "Halvorn (Orangefarbener Zwerg (K0 V))"
             ],
             [
-              "Zentralkörper",
-              "Halvorn"
-            ],
-            [
-              "Große Halbachse",
-              "0,35 AE"
-            ],
-            [
-              "Umlaufzeit",
-              "80,6 Tage"
+              "Schwerkraft",
+              "0,37 g"
             ],
             [
               "Durchmesser",
               "7.800 km"
             ],
             [
-              "Masse",
-              "0,3 Erdmassen"
+              "Mittlere Temperatur",
+              "ca. 31 °C"
             ],
             [
-              "Schwerkraft",
-              "0,8 g"
+              "Atmosphäre",
+              "Stickstoff-Sauerstoff, trocken, staubreich, ca. 1,1 bar"
             ],
             [
-              "Gleichgewichtstemperatur",
-              "ca. 120 °C"
+              "Wasser",
+              "ca. 4 % offene Gewässer (Binnenmeere, Salz- und Süßwasserseen)"
+            ],
+            [
+              "Intelligente Spezies",
+              "Xerakiden"
             ]
           ]
         },
         {
-          "titel": "Im System von Dravelon",
-          "text": [
-            "Das Halvorn-System ist die Heimat der Dendroarchen: Ihr Planet Dravelon umkreist Halvorn."
-          ],
-          "verweise": [
+          "titel": "Halvorn I im Vergleich zur Erde",
+          "vergleich": {
+            "mit": "Erde",
+            "werte": [
+              [
+                "Durchmesser",
+                7800,
+                12742,
+                "km"
+              ],
+              [
+                "Schwerkraft",
+                0.37,
+                1,
+                "g"
+              ],
+              [
+                "Tageslänge",
+                28,
+                24,
+                "h"
+              ],
+              [
+                "Luftdruck (Mittel)",
+                1.1,
+                1,
+                "bar"
+              ],
+              [
+                "Mittlere Temperatur",
+                31,
+                15,
+                "°C"
+              ],
+              [
+                "Offene Wasserfläche",
+                4,
+                71,
+                "%"
+              ]
+            ]
+          }
+        },
+        {
+          "titel": "Hauptmerkmale",
+          "karten": [
+            {
+              "titel": "Aride Wüstenwelt",
+              "text": "Fels-, Sand- und Salzwüsten auf großen zusammenhängenden Landmassen."
+            },
+            {
+              "titel": "Geringe Schwerkraft",
+              "text": "Rund 0,37 g – Grundlage für aufrecht gehende Giganten."
+            },
+            {
+              "titel": "Wasser unter der Erde",
+              "text": "Wassergewölbe, Grundwasserschichten und geothermische Quellen."
+            },
+            {
+              "titel": "Resonanzlandschaften",
+              "text": "Wind und Gesteinsgeometrie erzeugen in den Schluchten komplexe Schwingungen."
+            }
+          ]
+        },
+        {
+          "titel": "Einordnung",
+          "daten": [
             [
-              "Dravelon",
-              "inhalte/himmelskoerper/planeten/details/dravelon/hauptseite/index.html"
+              "Planetare Klassifikation",
+              "Aride mineralische Biosphärenwelt"
             ],
             [
-              "Speziesdossier Dendroarchen",
-              "inhalte/spezies/Gigantische Lebensformen/Dendroarchen/hauptseite/Spezies.html"
+              "Alter",
+              "ca. 5,8 Mrd. Jahre"
+            ],
+            [
+              "Archiv-ID",
+              "AP-4EF9A9C00A"
+            ],
+            [
+              "Sternenkarten-ID",
+              "dravelon-halvorn-i"
+            ],
+            [
+              "Heimatintelligenz",
+              "Xerakiden (Gigantische Lebensformen)"
+            ],
+            [
+              "Nachbarwelt",
+              "Dravelon, Heimat der Dendroarchen"
             ]
           ]
         }
@@ -202,84 +362,155 @@
     "Astronomie": {
       "gruppe": "Wissenschaft",
       "icon": "✧",
-      "intro": "Halvorn I im Halvorn-System.",
+      "intro": "Der innerste Planet des Halvorn-Systems.",
       "abschnitte": [
         {
-          "titel": "Bahn",
+          "titel": "Bahn und Position",
+          "text": [
+            "Halvorn I ist der 1. von 5 Planeten im Halvorn-System. Er umkreist Halvorn in 0,55 AE Abstand – innerhalb der inneren Grenze der habitablen Zone (bei Halvorn zwischen 0,71 und 1,24 AE). Er erhält 1,82-mal so viel Sternlicht wie die Erde.",
+            "Ohne Atmosphäre läge seine Gleichgewichtstemperatur bei rund 17 °C. Stickstoff, Wasserdampf und Kohlendioxid heben die Mitteltemperatur um rund 14 K auf etwa 31 °C."
+          ],
           "daten": [
             [
-              "Zentralkörper",
-              "Halvorn"
+              "Sternsystem",
+              "Halvorn-System"
+            ],
+            [
+              "Bahnposition",
+              "1. von 5 Planeten"
             ],
             [
               "Große Halbachse",
-              "0,35 AE (52,4 Mio. km)"
+              "0,55 AE (ca. 82,3 Mio. km)"
             ],
             [
               "Exzentrizität",
               "0,04"
             ],
             [
-              "Bahnneigung",
-              "1,5°"
+              "Umlaufzeit",
+              "158,8 Erdtage"
             ],
             [
-              "Umlaufzeit",
-              "80,6 Tage"
+              "Ortsjahr",
+              "ca. 136 Ortstage"
             ],
             [
               "Einstrahlung",
-              "4,49-fach der Erde"
+              "ca. 1,82-fach der Erde"
+            ],
+            [
+              "Habitable Zone von Halvorn",
+              "0,71–1,24 AE"
             ]
           ]
         },
         {
-          "titel": "Am Himmel von Halvorn I",
+          "titel": "Zentralstern",
           "text": [
-            "Halvorn erscheint von hier aus etwa 1,3° groß (die Sonne von der Erde: 0,53°)."
-          ]
-        },
-        {
-          "titel": "Körper des Systems",
-          "zeitleiste": [
+            "Halvorn ist ein orangefarbener Zwerg der Spektralklasse K0 V mit 88 % der Sonnenmasse und 55 % ihrer Leuchtkraft – Zentralstern von Dravelon, dem Ursprungsplaneten der Dendroarchen."
+          ],
+          "daten": [
             [
-              "Halvorn · Stern",
+              "Name",
+              "Halvorn"
+            ],
+            [
+              "Typ",
               "Orangefarbener Zwerg (K0 V)"
             ],
             [
-              "Halvorn I · 0,35 AE · dieses Dossier",
-              "Gesteinsplanet"
+              "Masse",
+              "0,88 Sonnenmassen"
             ],
             [
-              "Dravelon · 0,75 AE",
-              "Gesteinsplanet"
+              "Radius",
+              "0,86 Sonnenradien"
             ],
             [
-              "Halvorn III · 1,42 AE",
-              "Gesteinsplanet"
+              "Leuchtkraft",
+              "0,55 Sonnenleuchtkräfte"
             ],
             [
-              "Halvorn IV · 4,8 AE",
-              "Gasriese"
+              "Oberflächentemperatur",
+              "ca. 5.250 K"
             ],
             [
-              "Halvorn V · 12 AE",
-              "Eisriese"
+              "Alter",
+              "ca. 6 Mrd. Jahre"
             ],
             [
-              "Rindengürtel · 2,2–3 AE",
-              "Asteroidengürtel"
-            ],
-            [
-              "Äußeres Kometengebiet · 32–46 AE",
-              "Kometengebiet"
+              "Begleitsterne",
+              "keine (Einzelstern)"
             ]
           ],
           "verweise": [
             [
               "Halvorn",
               "inhalte/himmelskoerper/sterne/details/halvorn/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Rotation und Achse",
+          "daten": [
+            [
+              "Rotationsperiode",
+              "28 h (Sonnentag ca. 28,2 h)"
             ],
+            [
+              "Achsneigung",
+              "12°"
+            ],
+            [
+              "Scheinbare Sterngröße",
+              "ca. 0,83° (Sonne von der Erde: 0,53°)"
+            ],
+            [
+              "Jahreszeiten",
+              "Regionale und saisonale Unterschiede der Einstrahlung, großräumige saisonale Staubbewegungen"
+            ]
+          ]
+        },
+        {
+          "titel": "Monde",
+          "text": [
+            "Halvorn I besitzt keine Monde."
+          ]
+        },
+        {
+          "titel": "Planeten des Systems",
+          "zeitleiste": [
+            [
+              "Halvorn I · 0,55 AE",
+              "Halvorn I ist eine heiße, aride Wüstenwelt aus Felswüsten, Schluchten, Salzebenen und schwarzen Mineralplateaus – die Heimatwelt der Xerakiden, gigantischer, aufrecht gehender Lebensformen von 60 bis 180 Metern Größe."
+            ],
+            [
+              "Dravelon · 0,75 AE",
+              "Dravelon ist der Ursprungsplanet der Dendroarchen: eine feuchte, leicht gebaute Welt mit geringer Schwerkraft, endlosen Wald- und Sumpflandschaften und weit verzweigten Flussbecken."
+            ],
+            [
+              "Halvorn III · 1,42 AE",
+              "Halvorn III ist eine kalte, trockene Gesteinswelt."
+            ],
+            [
+              "Rindengürtel · 2,2–3 AE",
+              "Der Rindengürtel zwischen 2,2 und 2,95 AE besteht aus dunklen, kohlenstoffreichen Gesteinsbrocken."
+            ],
+            [
+              "Halvorn IV · 4,8 AE",
+              "Halvorn IV ist ein Gasriese mit zahlreichen kleinen Monden."
+            ],
+            [
+              "Halvorn V · 12 AE",
+              "Halvorn V ist ein ferner, blassblauer Eisriese."
+            ],
+            [
+              "Emovtar-Kometenwolke · 32–46 AE",
+              "Ein ferner Gürtel aus Eiskörpern zwischen 32 und 46 AE."
+            ]
+          ],
+          "verweise": [
             [
               "Dravelon",
               "inhalte/himmelskoerper/planeten/details/dravelon/hauptseite/index.html"
@@ -289,13 +520,71 @@
               "inhalte/himmelskoerper/planeten/details/halvorn-iii/hauptseite/index.html"
             ],
             [
+              "Rindengürtel",
+              "inhalte/himmelskoerper/sternensysteme/details/rindengurtel/hauptseite/index.html"
+            ],
+            [
               "Halvorn IV",
               "inhalte/himmelskoerper/planeten/details/halvorn-iv/hauptseite/index.html"
             ],
             [
               "Halvorn V",
               "Menüs/Sternenkarte/Sternenkarte.html?system=dravelon-stern&objekt=dravelon-halvorn-v"
+            ],
+            [
+              "Emovtar-Kometenwolke",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=dravelon-stern&objekt=dravelon-kometengebiet"
             ]
+          ]
+        },
+        {
+          "titel": "Nachbarschaft und Anomalien",
+          "karten": [
+            {
+              "titel": "Grünschweif",
+              "text": "Ein Komet mit grünlich leuchtender Koma, der alle 60 Jahre das innere System erreicht."
+            },
+            {
+              "titel": "Nachbarsysteme",
+              "text": "Kharuun-System (14,1 Lj), Osselyr-System (14,1 Lj), Velhar-System (14,9 Lj) – alle weit außerhalb der gravitativen Einflusszone von Halvorn (rund 3,4 Lichtjahre)."
+            }
+          ],
+          "verweise": [
+            [
+              "Grünschweif",
+              "inhalte/himmelskoerper/kometen/details/grunschweif/hauptseite/index.html"
+            ],
+            [
+              "Halvorn-System in der Sternenkarte",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=dravelon-stern"
+            ]
+          ]
+        },
+        {
+          "titel": "Zeitrechnung",
+          "daten": [
+            [
+              "Rotationsperiode",
+              "28 h"
+            ],
+            [
+              "Planetarer Sonnentag",
+              "ca. 28,2 h"
+            ],
+            [
+              "Umlauf",
+              "ca. 159 Erdtage"
+            ],
+            [
+              "Mittlerer Sternabstand",
+              "ca. 82,3 Mio. km"
+            ]
+          ]
+        },
+        {
+          "titel": "Am Himmel von Halvorn I",
+          "text": [
+            "Halvorn steht als große, warme orangegelbe Scheibe am meist wolkenlosen Himmel. Große natürliche Monde fehlen; nachts ist Dravelon als hellster Planet zu sehen – die grüne Nachbarwelt der Dendroarchen."
           ]
         }
       ]
@@ -314,44 +603,75 @@
             ],
             [
               "Masse",
-              "0,3 Erdmassen"
+              "0,14 Erdmassen"
             ],
             [
               "Mittlere Dichte",
-              "7,21 g/cm³"
+              "3,37 g/cm³"
             ],
             [
               "Oberflächenschwerkraft",
-              "7,85 m/s² (0,801 g)"
+              "3,7 m/s² (0,37 g)"
             ],
             [
               "Fluchtgeschwindigkeit",
-              "7,83 km/s"
+              "ca. 5,3 km/s"
+            ],
+            [
+              "Masse in Kilogramm",
+              "ca. 8,36 · 10²³ kg"
+            ],
+            [
+              "Gesamtoberfläche",
+              "ca. 191,1 Mio. km²"
+            ],
+            [
+              "Land- und Eisoberfläche",
+              "ca. 96 %"
+            ],
+            [
+              "Magnetfeld",
+              "Global vorhanden, Langzeitentwicklung noch zu untersuchen"
             ]
-          ],
+          ]
+        },
+        {
+          "titel": "Physikalische Werte im Vergleich",
           "vergleich": {
             "mit": "Erde",
             "werte": [
               [
-                "Durchmesser",
-                7800,
-                12742,
-                "km"
-              ],
-              [
                 "Masse",
-                0.3,
+                0.14,
                 1,
                 "Erdmassen"
               ],
               [
-                "Schwerkraft",
-                0.8,
+                "Dichte",
+                3.37,
+                5.51,
+                "g/cm³"
+              ],
+              [
+                "Fluchtgeschwindigkeit",
+                5.3,
+                11.2,
+                "km/s"
+              ],
+              [
+                "Magnetfeld",
+                0.4,
                 1,
-                "g"
+                "× Erde"
               ]
             ]
           }
+        },
+        {
+          "titel": "Leichte Welt, gewaltige Körper",
+          "text": [
+            "Mit rund 3,67 m/s² ist die Oberflächenschwerkraft kaum mehr als ein Drittel der irdischen. Tragende Strukturen werden weniger belastet – eine Voraussetzung dafür, dass sich auf Halvorn I aufrecht gehende Lebensformen von über hundert Metern Größe entwickeln konnten. Die mittlere Dichte liegt bei etwa 3,36 g/cm³."
+          ]
         }
       ]
     },
@@ -361,19 +681,26 @@
       "intro": "Planetare Struktur von Halvorn I.",
       "abschnitte": [
         {
-          "titel": "Schalenbau",
+          "titel": "Aufbau",
+          "text": [
+            "Halvorn I besitzt einen vergleichsweise kleinen metallischen Kern, einen überwiegend silikatischen Mantel und eine mineralreiche äußere Kruste. Große, stabile Gesteinsformationen, alte vulkanische Regionen und regional ausgeprägte Sedimentschichten prägen den Untergrund. Ein flächendeckender gegenwärtiger Vulkanismus fehlt; große Oberflächenbereiche wandeln sich nur langsam."
+          ],
           "schichten": [
             [
               "Kruste",
-              "Silikatgestein"
+              "Mineralreich, große stabile Gesteinsformationen, Sedimentschichten"
+            ],
+            [
+              "Hohlräume",
+              "Umfangreiche unterirdische Hohlräume und tiefe Grundwassersysteme"
             ],
             [
               "Mantel",
-              "Dichteres Silikatgestein"
+              "Überwiegend silikatisch, regionale geothermische Aktivität"
             ],
             [
               "Kern",
-              "Eisen und Nickel"
+              "Vergleichsweise klein, metallisch"
             ]
           ]
         }
@@ -382,12 +709,87 @@
     "Geografie": {
       "gruppe": "Natur",
       "icon": "△",
-      "intro": "Geografie von Halvorn I.",
+      "intro": "Große Landmassen, Binnenmeere und tiefe Schluchten.",
       "abschnitte": [
         {
-          "titel": "Oberfläche",
-          "text": [
-            "Die Oberfläche von Halvorn I ist sehr heiß."
+          "titel": "Kontinentale Struktur",
+          "liste": [
+            "Große zusammenhängende Landmassen",
+            "Kaum ausgedehnte offene Ozeane",
+            "Mehrere voneinander getrennte Binnenmeere",
+            "Weitläufige mineralische Hochländer",
+            "Gewaltige trockene Sedimentbecken",
+            "Tiefe, durch frühere Wasserbewegungen geformte Schluchten",
+            "Regionale Gebirgssysteme",
+            "Ausgedehnte Fels- und Sandwüsten"
+          ]
+        },
+        {
+          "titel": "Oberflächenverteilung",
+          "balken": {
+            "werte": [
+              [
+                "Fels- und Geröllwüsten",
+                30
+              ],
+              [
+                "Mineralische Hochplateaus",
+                22
+              ],
+              [
+                "Sand- und Dünenlandschaften",
+                17
+              ],
+              [
+                "Sedimentbecken und Salzebenen",
+                13
+              ],
+              [
+                "Gebirgsregionen",
+                8
+              ],
+              [
+                "Feuchtigkeitsregionen",
+                4
+              ],
+              [
+                "Offene Gewässer",
+                4
+              ],
+              [
+                "Eis- und Kälteregionen",
+                2
+              ]
+            ]
+          }
+        },
+        {
+          "titel": "Besondere Landschaftsregionen",
+          "karten": [
+            {
+              "titel": "Die Schichtwüsten",
+              "text": "Mineralische Ebenen mit sichtbar unterschiedlich gefärbten Sedimentschichten, terrassenartige Erosionslandschaften, bedeutende Rohstoffvorkommen."
+            },
+            {
+              "titel": "Die singenden Schluchten",
+              "text": "Gewaltige Schluchtensysteme, in denen Wind und Gesteinsgeometrie Resonanzen erzeugen; die Xerakiden nehmen die Schwingungsmuster wahr. Geschützte Feuchtigkeitsregionen in der Tiefe."
+            },
+            {
+              "titel": "Die Wassergewölbe",
+              "text": "Große unterirdische Höhlen- und Reservoirsysteme mit mineralreichem Grundwasser und eigenen Ökosystemen – die wichtigsten Versorgungsgebiete der Zivilisation."
+            },
+            {
+              "titel": "Die schwarzen Mineralplateaus",
+              "text": "Dunkle basaltische Hochländer mit sehr tragfähigem Untergrund und starker Erwärmung – Standorte gigantischer Industrieanlagen."
+            },
+            {
+              "titel": "Die wandernden Salzmeere",
+              "text": "Saisonal veränderliche Salzbecken mit wechselnden Wasserständen, kristallinen Formationen und regional instabilem Untergrund."
+            },
+            {
+              "titel": "Die Nebeltäler",
+              "text": "Tiefe, geschützte Schluchtenregionen, in denen sich zeitweise Feuchtigkeit niederschlägt – hohe biologische Produktivität."
+            }
           ]
         }
       ]
@@ -398,26 +800,56 @@
       "intro": "Atmosphäre von Halvorn I.",
       "abschnitte": [
         {
-          "titel": "Gashülle",
+          "titel": "Zusammensetzung",
           "text": [
-            "Eine dichte, kohlendioxidreiche Hülle staut die Wärme von Halvorn I."
+            "Halvorn I besitzt eine Stickstoff-Sauerstoff-Atmosphäre mit rund 1,1 bar auf mittlerem Referenzniveau (Angaben für trockene Luft). Die Luftfeuchtigkeit ist meist gering, mineralischer Staub ist regional stark konzentriert. Wegen der geringen Schwerkraft ist die atmosphärische Skalenhöhe vergleichsweise groß. Die Gaszusammensetzung ist für Menschen grundsätzlich atembar – vorbehaltlich biologischer und chemischer Sicherheitsprüfung; in staubreichen Regionen sind Atemfilter nötig."
           ],
           "balken": {
             "werte": [
               [
-                "Kohlendioxid",
-                95
+                "Stickstoff",
+                77
               ],
               [
-                "Stickstoff",
-                3.5
+                "Sauerstoff",
+                21
               ],
               [
                 "Argon und Spurengase",
-                1.5
+                1.9
+              ],
+              [
+                "Kohlendioxid",
+                0.1
               ]
             ]
           }
+        },
+        {
+          "titel": "Druck",
+          "daten": [
+            [
+              "Mittlerer Oberflächendruck",
+              "ca. 1,1 bar"
+            ]
+          ]
+        },
+        {
+          "titel": "Wolkenschichten",
+          "liste": [
+            "Überwiegend geringe Wolkenbedeckung, keine geschlossene Wolkendecke",
+            "Dünne, hoch liegende Wolkenstrukturen",
+            "Lokale Wolkenbildung über Binnenmeeren",
+            "Mineralische Staubschleier",
+            "Kondensationswolken über kühleren Hochländern",
+            "Saisonale Gewitterwolken in begrenzten Feuchtigkeitsregionen"
+          ]
+        },
+        {
+          "titel": "Grenzschichten",
+          "text": [
+            "Über erhitzten Landmassen bilden sich ausgeprägte atmosphärische Grenzschichten. Die langfristige Stabilität der Atmosphäre setzt ausreichend geringe Verlustraten und eine natürliche Regeneration voraus – ein Forschungsfeld der Xerakiden."
+          ]
         }
       ]
     },
@@ -427,9 +859,68 @@
       "intro": "Klima von Halvorn I.",
       "abschnitte": [
         {
-          "titel": "Temperatur",
+          "titel": "Temperaturzonen",
           "text": [
-            "Bei 0,35 AE Abstand zu Halvorn liegt die Gleichgewichtstemperatur von Halvorn I bei rund 120 °C – sehr heiß. Die dichte Gashülle heizt die Oberfläche zusätzlich auf."
+            "Überwiegend arid bis hyperarid. In warmen Tieflandwüsten steigen die Tageswerte auf 35–65 °C, nachts fallen sie auf 10–25 °C. Höher gelegene Regionen sind deutlich kühler, in den Polarregionen sinken die Temperaturen teils unter den Gefrierpunkt. Trotz der Trockenheit ist keine Region vollständig wasserlos oder biologisch steril."
+          ],
+          "skala": {
+            "einheit": "°C",
+            "min": -20,
+            "max": 65,
+            "bereiche": [
+              [
+                "Polarregionen",
+                -15,
+                2
+              ],
+              [
+                "Hochländer",
+                5,
+                22
+              ],
+              [
+                "Nebeltäler",
+                15,
+                30
+              ],
+              [
+                "Tieflandwüsten (Nacht)",
+                10,
+                25
+              ],
+              [
+                "Tieflandwüsten (Tag)",
+                35,
+                65
+              ]
+            ]
+          }
+        },
+        {
+          "titel": "Stürme",
+          "karten": [
+            {
+              "titel": "Staubstürme",
+              "text": "Großräumige mineralische Staub- und regionale Sandstürme."
+            },
+            {
+              "titel": "Elektrostatische Staubfronten",
+              "text": "Aufgeladene Staubwände schränken die Sicht stark ein."
+            },
+            {
+              "titel": "Fallwinde",
+              "text": "Thermisch verursachte Fallwinde und lokale Staubwirbel."
+            },
+            {
+              "titel": "Niederschlagsfronten",
+              "text": "Selten, aber intensiv – sie lösen regionale Erosionsereignisse aus."
+            }
+          ]
+        },
+        {
+          "titel": "Orientierung im Sturm",
+          "text": [
+            "Bei eingeschränkter Sicht orientieren sich Xerakiden teilweise über ihre mechanische Wahrnehmung. Extreme Stürme erfordern aber auch für sie geschützte Rückzugsbereiche."
           ]
         }
       ]
@@ -440,9 +931,22 @@
       "intro": "Gewässer von Halvorn I.",
       "abschnitte": [
         {
-          "titel": "Wasser",
+          "titel": "Wasserhaushalt",
           "text": [
-            "Für flüssiges Wasser ist es viel zu heiß."
+            "Dauerhaft offene Wasserflächen bedecken nur rund 7,6 Millionen Quadratkilometer – mehrere getrennte, salzhaltige Binnenmeere, regionale Süßwasserseen und mineralreiche Salzseen. Weit wichtiger sind die unterirdischen Speicher: Grundwasserreservoirs, wasserführende Gesteinsschichten und geothermisch erwärmte Quellen."
+          ]
+        },
+        {
+          "titel": "Wasserquellen",
+          "liste": [
+            "Salzhaltige Binnenmeere und Salzseen",
+            "Regionale Süßwasserseen",
+            "Unterirdische Grundwasserreservoirs und Feuchtigkeitskorridore",
+            "Geothermisch erwärmte Quellen",
+            "Saisonale Wasserläufe nach Niederschlägen",
+            "Zeitweise überflutete Sedimentbecken",
+            "Regionale Eisvorkommen",
+            "Technologisch unterstützte Wasserrückgewinnung in besiedelten Regionen"
           ]
         }
       ]
@@ -453,9 +957,22 @@
       "intro": "Geologie von Halvorn I.",
       "abschnitte": [
         {
-          "titel": "Geologie",
+          "titel": "Gesteine",
+          "liste": [
+            "Weit verbreitete Silikatgesteine",
+            "Basaltische Hochländer und alte erstarrte Lavafelder",
+            "Eisenhaltige Sedimentschichten",
+            "Quarzreiche Ebenen",
+            "Tonmineral- und Salzformationen",
+            "Kalkhaltige Sedimente früherer Gewässer",
+            "Regionale metallische Erzlagerstätten",
+            "Gewaltige Erosionsformationen"
+          ]
+        },
+        {
+          "titel": "Untergrund und Siedlung",
           "text": [
-            "Halvorn I ist geologisch weitgehend erstarrt; Einschläge haben seine Oberfläche geformt."
+            "Geologisch stabile Gebiete sind die bevorzugten Lebensräume der Xerakiden. Die mechanischen Eigenschaften des Untergrundes bestimmen, wo ihre gewaltigen Bauwerke und Verkehrsflächen entstehen können."
           ]
         }
       ]
@@ -463,12 +980,40 @@
     "Biosphäre": {
       "gruppe": "Natur",
       "icon": "❧",
-      "intro": "Biosphäre von Halvorn I.",
+      "intro": "Eine eigenständige Wüstenbiosphäre.",
       "abschnitte": [
         {
-          "titel": "Leben",
+          "titel": "Leben in der Trockenheit",
           "text": [
-            "Auf Halvorn I ist kein Leben verzeichnet."
+            "Die Organismen von Halvorn I sind überwiegend an Trockenheit angepasst. Biologische Aktivität konzentriert sich in produktiven Landschaftskorridoren, an Wasser- und Nährstoffquellen; in den extrem trockenen Kernwüsten ist die Organismendichte gering. Gigantische Organismen machen nur einen kleinen Teil der Biosphäre aus."
+          ]
+        },
+        {
+          "titel": "Flora",
+          "liste": [
+            "Wasserspeichernde Großorganismen",
+            "Mineralisch geschützte photosynthetische Organismen",
+            "Flächige lichtabsorbierende Bodenbewuchsformen",
+            "Tief reichende biologische Versorgungssysteme",
+            "Feuchtigkeitsabsorbierende Oberflächenstrukturen",
+            "Zeitweise ruhende Vegetationsformen"
+          ]
+        },
+        {
+          "titel": "Fauna",
+          "liste": [
+            "Kleine mineralisch gepanzerte Bodenbewohner",
+            "Grabende und nachtaktive Lebensformen",
+            "Mobile Weideorganismen",
+            "Schwingungsempfindliche Wüstenbewohner",
+            "Fliegende und gleitende Organismen",
+            "Größere terrestrische Organismen in produktiven Regionen"
+          ]
+        },
+        {
+          "titel": "Hinweis",
+          "text": [
+            "Konkrete Tier- und Pflanzenarten werden später separat definiert. Xerakiden sind nicht die einzigen großen biologischen Organismen des Planeten."
           ]
         }
       ]
@@ -476,28 +1021,46 @@
     "Spezies": {
       "gruppe": "Zivilisation",
       "icon": "✿",
-      "intro": "Spezies von Halvorn I.",
+      "intro": "Die Xerakiden – aufrecht gehende Giganten der Wüste.",
       "abschnitte": [
         {
-          "titel": "Bewohner",
+          "titel": "Xerakiden",
           "text": [
-            "Halvorn I ist keine Heimat einer intelligenten Spezies."
+            "Xerakiden sind die einheimische intelligente Lebensform von Halvorn I. Ausgewachsen erreichen sie 60 bis 180 Meter, im Mittel etwa 110 Meter, und leben rund 1.200 bis 3.000 Jahre. Sie bewegen sich überwiegend aufrecht auf sechs anatomisch spezialisierten Gliedmaßen und tragen eine lebende, mineralisch-organische Panzerung. Komplexe mechanische Sinnesorgane erlauben ihnen, Schwingungen in Gestein und Luft wahrzunehmen."
+          ],
+          "daten": [
+            [
+              "Körpergröße",
+              "60–180 m (Mittel ca. 110 m)"
+            ],
+            [
+              "Lebenserwartung",
+              "ca. 1.200–3.000 Jahre"
+            ],
+            [
+              "Gliedmaßen",
+              "Sechs, anatomisch spezialisiert"
+            ],
+            [
+              "Bewusstsein",
+              "Eigenständig, individuell"
+            ],
+            [
+              "Spezialgebiete",
+              "Materialwissenschaften, Wassertechnologie, Strukturdiagnostik"
+            ],
+            [
+              "Bevölkerungsdichte",
+              "Vergleichsweise gering"
+            ]
           ]
         },
         {
-          "titel": "Im System von Dravelon",
-          "text": [
-            "Das Halvorn-System ist die Heimat der Dendroarchen: Ihr Planet Dravelon umkreist Halvorn."
-          ],
-          "verweise": [
-            [
-              "Dravelon",
-              "inhalte/himmelskoerper/planeten/details/dravelon/hauptseite/index.html"
-            ],
-            [
-              "Speziesdossier Dendroarchen",
-              "inhalte/spezies/Gigantische Lebensformen/Dendroarchen/hauptseite/Spezies.html"
-            ]
+          "titel": "Anpassungen",
+          "liste": [
+            "Geringer Flüssigkeitsverlust durch biologische Rückgewinnungssysteme",
+            "Hoher absoluter Ressourcenbedarf wegen der Körpergröße",
+            "Orientierung über mechanische Wahrnehmung bei Staub und Dunkelheit"
           ]
         }
       ]
@@ -508,25 +1071,21 @@
       "intro": "Zivilisation von Halvorn I.",
       "abschnitte": [
         {
-          "titel": "Siedlungen",
+          "titel": "Siedlungen der Giganten",
           "text": [
-            "Für Halvorn I sind keine dauerhaften Siedlungen verzeichnet."
+            "Die urbanen Regionen der Xerakiden sind großräumig verteilt. Monumentale, offene Architektur steht auf tragfähigen mineralischen Fundamenten, verbunden durch gigantische Verkehrsflächen und unterirdische Wasserverteilungssysteme."
           ]
         },
         {
-          "titel": "Im System von Dravelon",
-          "text": [
-            "Das Halvorn-System ist die Heimat der Dendroarchen: Ihr Planet Dravelon umkreist Halvorn."
-          ],
-          "verweise": [
-            [
-              "Dravelon",
-              "inhalte/himmelskoerper/planeten/details/dravelon/hauptseite/index.html"
-            ],
-            [
-              "Speziesdossier Dendroarchen",
-              "inhalte/spezies/Gigantische Lebensformen/Dendroarchen/hauptseite/Spezies.html"
-            ]
+          "titel": "Infrastruktur",
+          "liste": [
+            "Geschützte Ruhe- und Regenerationsanlagen",
+            "Großdimensionierte Nahrungsmittelproduktion",
+            "Automatisierte Fertigungseinrichtungen",
+            "Medizinische Einrichtungen für gigantische Lebensformen",
+            "Regionale wissenschaftliche Zentren und Kommunikationsanlagen",
+            "Geschützte Besucherbereiche und eigene kleinmaßstäbliche Infrastruktur für kleinere Spezies",
+            "Orbitale und planetare Transportanbindungen"
           ]
         }
       ]
@@ -537,9 +1096,46 @@
       "intro": "Geschichte von Halvorn I.",
       "abschnitte": [
         {
-          "titel": "Entstehung",
+          "titel": "Zeitleiste",
+          "zeitleiste": [
+            [
+              "Planetare Entstehung",
+              "Bildung während der frühen Entwicklung des Halvorn-Systems, silikatreiche Kruste, erste Atmosphäre und Gewässer"
+            ],
+            [
+              "Feuchtere Frühzeit",
+              "Phasen größerer Wasserverfügbarkeit, Ausformung der Schluchten"
+            ],
+            [
+              "Austrocknung",
+              "Langfristige Entwicklung trockener Landschaftsregionen"
+            ],
+            [
+              "Biologische Entwicklung",
+              "Mikrobielles Leben, trockenheitsangepasste und mineralisch geschützte Organismen, mechanische Sinnesorgane"
+            ],
+            [
+              "Evolution der Xerakiden",
+              "Entstehung gigantischer biologischer Lebensformen"
+            ],
+            [
+              "Zivilisation",
+              "Frühe Gemeinschaften, dauerhafte Wasserreservoirs, Siedlungssysteme, Materialforschung"
+            ],
+            [
+              "Industrialisierung",
+              "Industrielle Infrastruktur und regionale Versorgungsnetzwerke"
+            ],
+            [
+              "Gegenwart",
+              "Interplanetare Zivilisation und Kontakt zu außerplanetaren Lebensformen"
+            ]
+          ]
+        },
+        {
+          "titel": "Hinweis",
           "text": [
-            "Halvorn I entstand zusammen mit dem Halvorn-System vor rund 6 Milliarden Jahren."
+            "Konkrete historische Zeitpunkte und Ereignisse werden separat definiert."
           ]
         }
       ]
@@ -550,9 +1146,27 @@
       "intro": "Fraktionen von Halvorn I.",
       "abschnitte": [
         {
-          "titel": "Ansprüche",
-          "text": [
-            "Für Halvorn I sind keine Fraktionsansprüche verzeichnet."
+          "titel": "Politik",
+          "liste": [
+            "Mehrere regionale politische Gemeinschaften möglich",
+            "Gemeinsame Verwaltung wichtiger Versorgungsnetze",
+            "Besondere Bedeutung der Wasserpolitik",
+            "Schutz geologisch stabiler und biologisch produktiver Regionen",
+            "Regelung des Rohstoffabbaus und langfristige Katastrophenvorsorge",
+            "Interplanetare diplomatische Beziehungen"
+          ]
+        },
+        {
+          "titel": "Beziehungen",
+          "daten": [
+            [
+              "Fraktionszugehörigkeit",
+              "Noch nicht verbindlich festgelegt"
+            ],
+            [
+              "Dendroarchen (Dravelon)",
+              "Unabhängiger Ursprung; Austausch, Handel und Kooperation bei Wasser- und Materialforschung möglich – Details werden separat ausgearbeitet"
+            ]
           ]
         }
       ]
@@ -564,9 +1178,29 @@
       "abschnitte": [
         {
           "titel": "Rohstoffe",
-          "liste": [
-            "Silikatgestein",
-            "Metallerze"
+          "karten": [
+            {
+              "titel": "Erze",
+              "text": "Eisenhaltige Erze, Kupfererze, aluminium- und magnesiumhaltige Mineralien."
+            },
+            {
+              "titel": "Gesteine und Salze",
+              "text": "Silikate, Quarz, Basalt, Calciumsalze."
+            },
+            {
+              "titel": "Biologische Werkstoffe",
+              "text": "Strukturfasern, organische Panzerwerkstoffe, mineralisch-organische Verbundmaterialien."
+            },
+            {
+              "titel": "Wasser und Energie",
+              "text": "Unterirdische Wasserressourcen, geothermische Quellen, großflächig nutzbare Solarenergie."
+            }
+          ]
+        },
+        {
+          "titel": "Hinweis",
+          "text": [
+            "Besondere exotische APORIA-Rohstoffe werden erst nach einer weiteren Abstimmung integriert."
           ]
         }
       ]
@@ -577,22 +1211,15 @@
       "intro": "Erforschung von Halvorn I.",
       "abschnitte": [
         {
-          "titel": "Offene Fragen",
+          "titel": "Forschungsfelder",
           "liste": [
-            "Wie ist der innere Aufbau beschaffen?",
-            "Gab es früher eine dichtere Atmosphäre?"
-          ]
-        },
-        {
-          "titel": "In der Sternenkarte",
-          "text": [
-            "Halvorn I ist mit allen Bahndaten im Halvorn-System der Sternenkarte eingetragen."
-          ],
-          "verweise": [
-            [
-              "In der Sternenkarte zeigen",
-              "Menüs/Sternenkarte/Sternenkarte.html?system=dravelon-stern&objekt=dravelon-halvorn-i"
-            ]
+            "Biomechanik gigantischer Organismen",
+            "Biologische Panzerbildung und Regeneration mineralisch-organischer Verbundmaterialien",
+            "Mechanische Schwingungswahrnehmung und geologische Resonanzsysteme",
+            "Langfristige atmosphärische Stabilität",
+            "Unterirdische Wasserreservoirs und trockene Biosphären",
+            "Biologische Anpassung an geringe Schwerkraft",
+            "Vergleichende Xenobiologie mit den Dendroarchen"
           ]
         }
       ]
@@ -603,9 +1230,54 @@
       "intro": "Besonderheiten von Halvorn I.",
       "abschnitte": [
         {
-          "titel": "Besonderheiten",
+          "titel": "Rekorde",
+          "daten": [
+            [
+              "Größte Lebensformen",
+              "Xerakiden, 60–180 m (Mittel ca. 110 m)"
+            ],
+            [
+              "Lebenserwartung der Xerakiden",
+              "ca. 1.200–3.000 Jahre"
+            ],
+            [
+              "Größte Resonanzlandschaft",
+              "Die singenden Schluchten"
+            ],
+            [
+              "Wichtigste Wasserreserve",
+              "Die Wassergewölbe"
+            ]
+          ]
+        },
+        {
+          "titel": "Einzigartige Welt",
           "liste": [
-            "Innerster Planet des Halvorn-Systems"
+            "Heimat aufrecht gehender gigantischer intelligenter Lebensformen",
+            "Große unterirdische Wasserreservoirs trotz trockener Oberfläche",
+            "Außergewöhnliche natürliche Resonanzlandschaften",
+            "Unterschiedliche Größenebenen innerhalb gemeinsamer Siedlungen",
+            "Zweite intelligente Heimatzivilisation im Halvorn-System"
+          ]
+        },
+        {
+          "titel": "Im Spiel",
+          "liste": [
+            "Monumentale Wüstenlandschaften und gigantische Siedlungen erkunden",
+            "Unterirdische Wassergewölbe und historische Siedlungsruinen untersuchen",
+            "Expeditionen durch Staubstürme",
+            "Biologische Panzerplatten und Resonanzphänomene erforschen",
+            "Eigene Wassergewinnungsanlagen aufbauen",
+            "Mit xerakidischen Forschern zusammenarbeiten",
+            "Interplanetare Reisen nach Dravelon"
+          ]
+        },
+        {
+          "titel": "Hinweise für Besucher",
+          "liste": [
+            "Atemfilter in staubreichen Regionen",
+            "Sturmwarnungen beachten",
+            "Besucherbereiche für kleinere Spezies nutzen"
           ]
         }
       ]
@@ -616,9 +1288,39 @@
       "intro": "Medienarchiv von Halvorn I.",
       "abschnitte": [
         {
-          "titel": "Halvorn I – Archivbild",
+          "titel": "Halvorn I aus dem All",
           "bild": true,
-          "bildtext": "Halvorn I"
+          "bildtext": "Halvorn I – Welt der Schichtwüsten"
+        },
+        {
+          "titel": "Wüstenwelt – Gestaltungsentwurf",
+          "bild": "assets/bilder/Alle Spezies+Übersicht/Gigantische Lebensformen/Xerakiden/Heimatplanet/10worlddessertdesign.png",
+          "bildtext": "Wüstenwelt – Gestaltungsentwurf"
+        },
+        {
+          "titel": "Beckenlandschaft – Gestaltungsentwurf",
+          "bild": "assets/bilder/Alle Spezies+Übersicht/Gigantische Lebensformen/Xerakiden/Heimatplanet/beckendesigndessert.png",
+          "bildtext": "Beckenlandschaft – Gestaltungsentwurf"
+        },
+        {
+          "titel": "Planetenentwurf Halvorn I",
+          "bild": "assets/bilder/Alle Spezies+Übersicht/Gigantische Lebensformen/Xerakiden/Heimatplanet/Greatplantedeisgn.png",
+          "bildtext": "Planetenentwurf Halvorn I"
+        },
+        {
+          "titel": "Bogenfelsen über der Wüste",
+          "bild": "assets/bilder/Alle Spezies+Übersicht/Gigantische Lebensformen/Xerakiden/Heimatplanet/Fantastic Sci-fi landscape of a spaceship on a sunny day, flying over a desert with amazing arch-shaped rock formations.jpg",
+          "bildtext": "Bogenfelsen über der Wüste"
+        },
+        {
+          "titel": "Siedlung in der Wüste",
+          "bild": "assets/bilder/Alle Spezies+Übersicht/Gigantische Lebensformen/Xerakiden/Heimatplanet/Midjourney prompt_ a futuristic colony on Mars, a big city build in A.jpg",
+          "bildtext": "Siedlung in der Wüste"
+        },
+        {
+          "titel": "Wüstenszene",
+          "bild": "assets/bilder/Alle Spezies+Übersicht/Gigantische Lebensformen/Xerakiden/Heimatplanet/AI Desert Filter Online Free _ Turn Photos Into Desert Scenes - Media.io.jpg",
+          "bildtext": "Wüstenszene"
         }
       ]
     }

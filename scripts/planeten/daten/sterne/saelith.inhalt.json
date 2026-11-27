@@ -6,12 +6,16 @@
   "klasse": "Orangefarbener Zwerg (K1 V)",
   "intro": "Saelith ist der orangefarbene Hauptreihenstern (K1 V) des Osselyr-Systems. Sein gegenüber der Sonne ins Rötliche verschobenes Licht prägte die Pigmente aller Pflanzen Osselyrs – auch die der Floranoiden. Ein ruhiger Einzelstern mit langer, stabiler Lebensdauer. Saelith ist der Zentralstern des Osselyr-Systems.",
   "globusDaten": {
-    "planet": "gasstrom-vom-orangefarbenen-zum-blauweien-stern",
+    "planet": "saelith",
     "klasse": "Vulkan",
     "radius": 556560000
   },
   "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=osselyr-stern",
   "grunddaten": [
+    [
+      "System-ID",
+      "osselyr-stern"
+    ],
     [
       "Archiv-ID",
       "AP-5E7F8E539F"
@@ -45,7 +49,7 @@
       "ca. 4,6 Mrd. Jahre"
     ],
     [
-      "Monde",
+      "Planeten",
       "6 (Saelith I, Osselyr, Doppelstein von Saelith, Saelith III, Saelith IV, Lichtfaden)"
     ]
   ],
@@ -73,42 +77,42 @@
     },
     {
       "icon": "◐",
-      "art": "Mond",
+      "art": "Planet",
       "titel": "Saelith I",
       "href": "inhalte/himmelskoerper/planeten/details/saelith-i/hauptseite/index.html",
       "route": null
     },
     {
       "icon": "◐",
-      "art": "Mond",
+      "art": "Planet",
       "titel": "Osselyr",
       "href": "inhalte/himmelskoerper/planeten/details/osselyr/hauptseite/index.html",
       "route": null
     },
     {
       "icon": "◐",
-      "art": "Mond",
+      "art": "Planet",
       "titel": "Doppelstein von Saelith",
       "href": "inhalte/himmelskoerper/asteroiden/details/doppelstein-von-saelith/hauptseite/index.html",
       "route": null
     },
     {
       "icon": "◐",
-      "art": "Mond",
+      "art": "Planet",
       "titel": "Saelith III",
       "href": "inhalte/himmelskoerper/planeten/details/saelith-iii/hauptseite/index.html",
       "route": null
     },
     {
       "icon": "◐",
-      "art": "Mond",
+      "art": "Planet",
       "titel": "Saelith IV",
       "href": "inhalte/himmelskoerper/planeten/details/saelith-iv/hauptseite/index.html",
       "route": null
     },
     {
       "icon": "◐",
-      "art": "Mond",
+      "art": "Planet",
       "titel": "Lichtfaden",
       "href": "inhalte/himmelskoerper/kometen/details/lichtfaden/hauptseite/index.html",
       "route": null
@@ -290,7 +294,7 @@
               "ca. 4,6 Mrd. Jahre"
             ],
             [
-              "Monde",
+              "Planeten",
               "6 (Saelith I, Osselyr, Doppelstein von Saelith, Saelith III, Saelith IV, Lichtfaden)"
             ]
           ]
@@ -359,7 +363,7 @@
               "Asteroidengürtel"
             ],
             [
-              "Äußeres Kometengebiet · 34–46 AE",
+              "Kalenyn-Kometenwolke · 34–46 AE",
               "Kometengebiet"
             ]
           ],
@@ -413,7 +417,7 @@
               "ca. 4,6 Mrd. Jahre"
             ],
             [
-              "Monde",
+              "Planeten",
               "6 (Saelith I, Osselyr, Doppelstein von Saelith, Saelith III, Saelith IV, Lichtfaden)"
             ]
           ]
@@ -466,7 +470,7 @@
               "Asteroidengürtel"
             ],
             [
-              "Äußeres Kometengebiet · 34–46 AE",
+              "Kalenyn-Kometenwolke · 34–46 AE",
               "Kometengebiet"
             ]
           ],
@@ -535,11 +539,11 @@
         {
           "titel": "Besonderheiten",
           "liste": [
-            "6 Monde: Saelith I, Osselyr, Doppelstein von Saelith, Saelith III, Saelith IV, Lichtfaden"
+            "6 eigene Planeten: Saelith I, Osselyr, Doppelstein von Saelith, Saelith III, Saelith IV, Lichtfaden"
           ]
         },
         {
-          "titel": "Monde",
+          "titel": "Planeten",
           "karten": [
             {
               "titel": "Saelith I",
@@ -555,7 +559,7 @@
             },
             {
               "titel": "Saelith III",
-              "text": "124.000 km Durchmesser, Umlauf in 4,6 Jahre. Saelith III ist ein goldfarbener Gasriese mit 0,38 Jupitermassen und einem hellen Ringsystem. Er schützt das innere System, indem er viele Kometen ablenkt."
+              "text": "124.000 km Durchmesser, Umlauf in 4,6 Jahre. Saelith III, die Welt der Himmelsriesen, ist ein gold-blauer Gasriese mit hellem Ringsystem. In seiner gemäßigten Schwebezone bei 5–12 bar leben die Aerothanen, bis zu drei Kilometer hohe intelligente Lebensformen."
             },
             {
               "titel": "Saelith IV",

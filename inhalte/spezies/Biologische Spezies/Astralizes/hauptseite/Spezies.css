@@ -1,2 +1,32 @@
-/* Astralizes – Hauptseite · erzeugt vom Spezies-Baukasten (scripts/spezies)
-   Aufbau: inhalte/spezies/_gemeinsam/spezies-standard.css · Farben: ../astralizes-basis.css · eigene Anpassungen hier ergänzen. */
+/* Saal 0 · Die Schwelle – schwarzes Foyer, Werke als atmender Reigen, Gravitationslinse folgt dem Blick */
+.az-foyer { position: relative; min-height: calc(100vh - 3.5rem); display: grid; place-items: center; overflow: hidden; isolation: isolate; text-align: center; }
+.az-reigen span { position: absolute; inset: -6%; z-index: -3; background: var(--bild) center/cover; opacity: 0; filter: blur(2px) brightness(.72) saturate(1.25); animation: az-reigen 48s infinite; animation-delay: calc(var(--i) * 8s); }
+@keyframes az-reigen { 0% { opacity: 0; transform: scale(1.12) rotate(-1deg); } 5%, 16% { opacity: 1; } 22%, 100% { opacity: 0; transform: scale(1) rotate(1deg); } }
+.az-foyer::after { content: ""; position: absolute; inset: 0; z-index: -2; background: radial-gradient(ellipse at center, transparent 0 25%, #030304 78%), linear-gradient(#0000 60%, #030304); }
+.az-linse { position: absolute; z-index: -1; width: 34vmin; aspect-ratio: 1; border-radius: 50%; left: var(--x, 50%); top: var(--y, 40%); translate: -50% -50%; backdrop-filter: brightness(1.8) saturate(1.8) contrast(1.2) blur(1px); box-shadow: 0 0 0 1px #ffffff22, 0 0 60px #d9b87844 inset, 0 0 120px #6c4aa855; opacity: 0; transition: opacity 1.2s, left .9s cubic-bezier(.2,.7,.2,1), top .9s cubic-bezier(.2,.7,.2,1); pointer-events: none; }
+.az-foyer.az-aktiv .az-linse { opacity: 1; }
+.az-foyer-mitte { position: relative; padding: 2rem 1rem 6rem; max-width: 60rem; }
+.az-emblem { position: relative; width: clamp(9rem, 20vw, 14rem); aspect-ratio: 1; margin: 0 auto 1.5rem; }
+.az-sphaere { position: absolute; inset: 18%; width: 64%; height: 64%; border-radius: 50%; object-fit: cover; box-shadow: 0 0 60px #b9a6ff88, 0 0 140px #d9b87844; animation: az-drehen 90s linear infinite; }
+.az-krone { position: absolute; left: -45%; top: -32%; width: 190%; mix-blend-mode: screen; -webkit-mask: radial-gradient(ellipse at 50% 55%, #000 30%, transparent 70%); mask: radial-gradient(ellipse at 50% 55%, #000 30%, transparent 70%); animation: az-atmen 9s ease-in-out infinite; }
+.az-titel { font-size: clamp(2.8rem, 9.5vw, 9rem); line-height: .9; letter-spacing: .05em; text-transform: uppercase; background: var(--bild) 0 50%/180% auto, linear-gradient(90deg, #8f7ad6, #f3e6c8 45%, #9fd8ff); background-blend-mode: screen; -webkit-background-clip: text; background-clip: text; color: transparent; animation: az-titel 30s ease-in-out infinite alternate; filter: drop-shadow(0 0 40px #6c4aa866); }
+@keyframes az-titel { to { background-position: 100% 50%; } }
+.az-motto { font: italic 300 clamp(1.3rem, 3vw, 2.2rem)/1.2 var(--az-serif); margin: .8rem 0 1.4rem; color: var(--az-gold); }
+.az-foyer-text { max-width: 40rem; margin: 0 auto 2rem; font: 300 1.2rem/1.6 var(--az-serif); color: #d9d2e6; }
+.az-eintritt { display: inline-block; padding: 1rem 2.6rem; border: 1px solid var(--az-gold); border-radius: 999px; text-decoration: none; letter-spacing: .3em; text-transform: uppercase; font-size: .8rem; background: #0006; transition: background .4s, color .4s; }
+.az-eintritt:hover { background: var(--az-gold); color: #000; }
+.az-plan { padding: clamp(3rem, 8vw, 7rem) clamp(1rem, 4vw, 4rem); }
+.az-plan-raster { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 17rem), 1fr)); gap: 2px; }
+.az-plan-saal { position: relative; display: grid; align-content: end; gap: .2rem; min-height: 22rem; padding: 1.4rem; text-decoration: none; overflow: hidden; isolation: isolate; }
+.az-plan-saal::before { content: ""; position: absolute; inset: 0; z-index: -2; background: var(--saalbild) center/cover; filter: grayscale(1) brightness(.45); transition: filter .8s, transform 1.4s cubic-bezier(.2,.7,.2,1); }
+.az-plan-saal::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(#0000 35%, #000d); }
+.az-plan-saal:hover::before, .az-plan-saal:focus-visible::before { filter: none; transform: scale(1.07); }
+.az-plan-saal b { font: 300 4rem/1 var(--az-serif); color: var(--az-gold); }
+.az-plan-saal strong { font: 400 1.6rem/1.15 var(--az-serif); }
+.az-plan-saal span { font-size: .72rem; letter-spacing: .2em; text-transform: uppercase; color: var(--az-leise); }
+.az-prozession { overflow: hidden; padding: 2rem 0 0; -webkit-mask: linear-gradient(90deg, transparent, #000 10% 90%, transparent); mask: linear-gradient(90deg, transparent, #000 10% 90%, transparent); }
+.az-prozession-band { display: flex; gap: 1.2rem; width: max-content; animation: az-prozession 120s linear infinite; }
+.az-prozession:hover .az-prozession-band { animation-play-state: paused; }
+.az-prozession .az-werk-bild { width: auto; height: 15rem; aspect-ratio: auto; background: none; }
+.az-prozession .az-werk-bild img { width: auto; height: 100%; }
+@keyframes az-prozession { to { transform: translateX(-50%); } }

@@ -344,3 +344,6 @@ Nach der Ergänzungsrunde SG01–SG25 bleiben insbesondere folgende Punkte offen
 **Dokumentationsregel:** Gemeinsam gewählte Antwortmöglichkeiten gelten als nebeneinander existierende gesellschaftliche Eigenschaften, soweit sie sich miteinander vereinbaren lassen. Sie werden nicht automatisch zu universell geltenden Regeln für die gesamte Spezies.
 
 **Abgrenzung:** Die konkreten Regierungssysteme werden im Bereich „Politik“, die vollständigen Produktions- und Handelsstrukturen im Wirtschaftsarchiv und einzelne Forschungsprojekte im Bereich „Forschung / Technologien“ dokumentiert.
+
+Die dunkle seite 
+Einflussreiche Älteste unterdrücken jüngere Generationen

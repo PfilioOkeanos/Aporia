@@ -4,7 +4,7 @@ const G = "assets/bilder/Alle Spezies+Übersicht/Biologische Spezies/Regenerante
 const E = "assets/bilder/Alle Spezies+Übersicht/Biologische Spezies/Regeneranten/entwicklungsstadien/";
 export default {
     systemseite: "inhalte/himmelskoerper/sternensysteme/details/saelon-system/hauptseite/index.html",
-    ordner: "turkisfarbener-planet-mit-unterwasser-schelfen", system: "nalvyr-system", planetId: "nalvyr-planet",
+    ordner: "nalvyr", system: "nalvyr-system", planetId: "nalvyr-planet",
     name: "Nalvyr", genitiv: "von Nalvyr", klasse: "Gesteinsplanet", klasseLang: "Alte, biologisch vielfältige terrestrische Welt",
     spezies: { name: "Regeneranten", gruppe: "Biologische Spezies", ordner: "Regeneranten", seite: "inhalte/spezies/Biologische Spezies/Regeneranten/hauptseite/Spezies.html" },
     intro: "Nalvyr ist die Heimatwelt der Regeneranten – der Narethi. Eine alte, biologisch vielfältige Welt mit zwei großen Kontinenten, dem Tessal-Archipel, großen Flussdeltas und Gezeitenküsten, in denen sich zahlreiche Tierlinien mit erstaunlichen Regenerationsfähigkeiten entwickelten.",

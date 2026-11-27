@@ -18,7 +18,7 @@ const B = {
 };
 export default {
     systemseite: "inhalte/himmelskoerper/sternensysteme/details/kelira-system/hauptseite/index.html",
-    ordner: "turkis-bernsteinfarbene-ozeanwelt", system: "seyrath-system", planetId: "seyrath-planet",
+    ordner: "seyrath", system: "seyrath-system", planetId: "seyrath-planet",
     name: "Seyrath", genitiv: "von Seyrath", klasse: "Gesteinsplanet", klasseLang: "Wasserführender, geologisch aktiver terrestrischer Gesteinsplanet",
     spezies: { name: "Chronoiden", gruppe: "Mentale Spezies", ordner: "Chronoiden", seite: "inhalte/spezies/Mentale Spezies/Chronoiden/hauptseite/Spezies.html" },
     intro: "Seyrath ist die Heimatwelt der Chronoiden – der Eshari. Ein wasserführender, geologisch aktiver Gesteinsplanet mit vier Kontinenten, mineralreichen hydrothermalen Gewässern und natürlichen mineralischen Resonanzsystemen, aus denen nichtbiologisches Bewusstsein hervorging.",

@@ -1,59 +1,316 @@
 {
   "systemName": "Kelira-System",
   "praefix": "seyrath-",
-  "lage": { "entfernungLj": 34, "richtung": [0.05, -0.92, -0.38] },
+  "lage": {
+    "entfernungLj": 34,
+    "richtung": [
+      0.05,
+      -0.92,
+      -0.38
+    ]
+  },
   "einzelstern": true,
   "stern": {
-    "id": "seyrath-stern", "name": "Kelira", "typ": "Orangefarbener Zwerg (K3 V)",
-    "masseSonne": 0.82, "radiusSonne": 0.87, "leuchtkraftSonne": 0.39, "temperaturK": 4900, "alterMrd": 5.4,
-    "farbe": [1, 0.66, 0.38], "emissionsfarbe": [1, 0.7, 0.42], "emission": 1.1,
-    "bild": { "art": "sterne", "slug": "chatgpt-bild-11-nov-2026-16-44-50" },
+    "id": "seyrath-stern",
+    "name": "Kelira",
+    "typ": "Orangefarbener Zwerg (K3 V)",
+    "masseSonne": 0.82,
+    "radiusSonne": 0.87,
+    "leuchtkraftSonne": 0.39,
+    "temperaturK": 4900,
+    "alterMrd": 5.4,
+    "farbe": [
+      1,
+      0.66,
+      0.38
+    ],
+    "emissionsfarbe": [
+      1,
+      0.7,
+      0.42
+    ],
+    "emission": 1.1,
+    "bild": {
+      "art": "sterne",
+      "slug": "chatgpt-bild-11-nov-2026-16-44-50"
+    },
     "beschreibung": "Kelira ist ein orangefarbener Hauptreihenstern der Spektralklasse K3 V mit rund 82 % der Sonnenmasse und 39 % ihrer Leuchtkraft. Seine lange Hauptreihenlebensdauer schuf günstige Bedingungen für die langfristige Entwicklung komplexer Lebensformen. Um Kelira kreisen sieben Planeten in einer geschlossenen Resonanzkette – ein seltenes, sehr ruhiges Planetensystem ohne Gasriesen."
   },
   "koerper": [
-    { "id": "seyrath-arun", "name": "Arun", "typ": "Gesteinsplanet", "um": "seyrath-stern",
-      "aAE": 0.2934, "e": 0.012, "i": 0.6, "knoten": 40, "peri": 90, "phase": 20, "radiusKm": 8300, "masseErde": 2.4, "albedo": 0.12, "farbe": [0.62, 0.36, 0.26],
-      "bild": { "art": "planeten", "slug": "gezeitengebundener-exoplanet-zwischen-feuer-und-eis" },
-      "beschreibung": "Arun ist das innerste Glied der Kelira-Kette: eine heiße, gebunden rotierende Supererde. Ihre Tagseite glüht unter dem nahen Stern, auf der ewigen Nachtseite frieren Gase aus. Alle 64 Tage umrundet sie Kelira – genau 16 Takte des Kettenrhythmus." },
-    { "id": "seyrath-velth", "name": "Velth", "typ": "Mini-Neptun", "um": "seyrath-stern",
-      "aAE": 0.3845, "e": 0.009, "i": 0.4, "knoten": 120, "peri": 200, "phase": 250, "radiusKm": 21500, "masseErde": 4.1, "albedo": 0.42, "farbe": [0.74, 0.66, 0.86],
-      "bild": { "art": "planeten", "slug": "lavendelfarbener-super-puff-planet-im-all" },
-      "beschreibung": "Velth ist ein aufgeblähter Mini-Neptun mit sehr geringer Dichte: Eine kleine Gesteinsmasse trägt eine weit ausgedehnte, lavendelfarben schimmernde Wasserstoffhülle. Er steht mit Arun und Isaru jeweils im Periodenverhältnis 3:2." },
-    { "id": "seyrath-isaru", "name": "Isaru", "typ": "Ozeanplanet", "um": "seyrath-stern",
-      "aAE": 0.5037, "e": 0.007, "i": 0.3, "knoten": 200, "peri": 330, "phase": 130, "radiusKm": 6900, "masseErde": 1.25, "albedo": 0.5, "farbe": [0.52, 0.6, 0.72],
-      "bild": { "art": "planeten", "slug": "blauer-planet-mit-bernsteinfarbenem-leuchten" },
-      "beschreibung": "Isaru ist eine heiße Wasserwelt am Rand des Treibhauskollapses: Ein dunkler Ozean liegt unter dichten, dampfgesättigten Wolken, die Keliras Licht bernsteinfarben streuen. Von Seyrath aus ist Isaru der hellste Wandelstern des Morgen- und Abendhimmels." },
-    { "id": "seyrath-planet", "name": "Seyrath", "typ": "Gesteinsplanet", "um": "seyrath-stern",
-      "aAE": 0.66, "e": 0.018, "i": 0, "knoten": 0, "peri": 60, "phase": 310, "radiusKm": 6052, "masseErde": 0.86, "albedo": 0.29, "zielTemperaturC": 10, "farbe": [0.36, 0.56, 0.54],
-      "bild": { "art": "planeten", "slug": "turkis-bernsteinfarbene-ozeanwelt" },
-      "beschreibung": "Seyrath ist die Heimatwelt der Chronoiden: ein wasserführender, geologisch aktiver Gesteinsplanet mit vier Kontinenten, mineralreichen hydrothermalen Gewässern und natürlichen mineralischen Resonanzsystemen, aus denen vor rund 420.000 Jahren die ersten bewussten Chronoiden hervorgingen." },
-    { "id": "seyrath-vesh", "name": "Vesh", "typ": "Mond", "um": "seyrath-planet",
-      "periodeTage": 24.1, "e": 0.035, "i": 4.8, "knoten": 70, "peri": 0, "phase": 200, "radiusKm": 1300, "masseErde": 0.0051, "farbe": [0.7, 0.7, 0.72],
-      "bild": { "art": "monde", "slug": "gigantischer-krustenbruch-auf-dem-mond" },
-      "beschreibung": "Vesh ist der große natürliche Mond Seyraths – rund 2.600 km im Durchmesser, in etwa 335.000 km Abstand. Er beeinflusst die Gezeiten und die langfristigen mechanischen Belastungszyklen der Kruste; ein gewaltiger Krustenbruch zieht sich über seine eigene Oberfläche." },
-    { "id": "seyrath-tivar", "name": "Tivar", "typ": "Asteroid", "um": "seyrath-stern",
-      "aAE": 0.66, "e": 0.05, "i": 6, "knoten": 30, "peri": 40, "phase": 0, "radiusKm": 3, "masseErde": 0, "farbe": [0.6, 0.66, 0.66],
-      "bild": { "art": "asteroiden", "slug": "glasiger-impaktasteroid-im-tiefen-all" },
-      "beschreibung": "Tivar ist ein kleiner Trojaner, der Seyrath am vorauseilenden Lagrange-Punkt L4 begleitet. Sein glasig aufgeschmolzenes Gestein stammt vermutlich aus einem frühen Einschlag auf Seyrath selbst; chronoidische Forscher nutzen ihn als ungestörte Messplattform." },
-    { "id": "seyrath-doran", "name": "Doran", "typ": "Gesteinsplanet", "um": "seyrath-stern",
-      "aAE": 0.8648, "e": 0.021, "i": 0.5, "knoten": 260, "peri": 150, "phase": 75, "radiusKm": 5300, "masseErde": 0.62, "albedo": 0.34, "farbe": [0.84, 0.76, 0.62],
-      "bild": { "art": "planeten", "slug": "quarzsandplanet-mit-dunklen-kontinenten" },
-      "beschreibung": "Doran ist eine kalte Quarzsandwelt: Helle Dünenmeere umfließen dunkle, zerklüftete Hochländer. Eine dünne Kohlendioxidhülle treibt Staubstürme über die Ebenen. Als äußerer 3:2-Nachbar Seyraths prägt er dessen Bahn seit Milliarden Jahren mit." },
-    { "id": "seyrath-ombrel", "name": "Ombrel", "typ": "Mini-Neptun", "um": "seyrath-stern",
-      "aAE": 1.0477, "e": 0.014, "i": 0.7, "knoten": 330, "peri": 20, "phase": 190, "radiusKm": 17200, "masseErde": 5.6, "albedo": 0.36, "farbe": [0.34, 0.36, 0.66],
-      "bild": { "art": "planeten", "slug": "wolkenarmer-indigo-gasriese-im-sternenraum" },
-      "beschreibung": "Ombrel ist ein indigoblauer Mini-Neptun mit klarer, fast wolkenloser Hochatmosphäre. Mit Doran und Halvek bildet er die äußeren 4:3-Glieder der Kelira-Kette." },
-    { "id": "seyrath-halvek", "name": "Halvek", "typ": "Eisplanet", "um": "seyrath-stern",
-      "aAE": 1.2694, "e": 0.017, "i": 0.9, "knoten": 80, "peri": 270, "phase": 330, "radiusKm": 11400, "masseErde": 6.8, "albedo": 0.55, "farbe": [0.8, 0.86, 0.92],
-      "bild": { "art": "planeten", "slug": "eis-supererde-im-all" },
-      "beschreibung": "Halvek ist das äußerste Glied der Kette: eine eisreiche Supererde, deren Mantel aus Hochdruckeis einen Gesteinskern umhüllt. Mit 577 Tagen Umlaufzeit vollendet er genau neun Umläufe, wenn Arun 144 vollendet – der „Große Takt“ der Kette dauert 24 Seyrath-Jahre." },
-    { "id": "seyrath-schleier", "name": "Keliras Schleier", "typ": "Trümmergürtel", "ringUm": "seyrath-stern",
-      "ringeAE": [22, 24, 26, 36, 39, 42], "anzahl": 300, "groesseKm": 180, "mindestPx": 4.5, "farbe": [0.86, 0.72, 0.56],
-      "bild": { "art": "sternensysteme", "slug": "versetzte-doppelringe-um-einen-stern" },
-      "beschreibung": "Keliras Schleier ist eine kalte Trümmerscheibe aus zwei Ringen – 22 bis 26 AE und 36 bis 42 AE – mit einer staubarmen Lücke dazwischen. Weil es im System keinen Gasriesen gibt, blieb die Urscheibe hier draußen weitgehend unberührt; aus ihr stammen die Kometen, die gelegentlich ins Innere fallen." },
-    { "id": "seyrath-lichtfuge", "name": "Lichtfuge", "typ": "Komet", "um": "seyrath-stern",
-      "aAE": 9.6, "e": 0.93, "i": 12, "knoten": 150, "peri": 300, "phase": 178, "radiusKm": 4, "masseErde": 0, "farbe": [0.86, 0.78, 0.56],
-      "bild": { "art": "kometen", "slug": "komet-mit-goldenem-staubknoten-und-blauem-ionenschweif" },
-      "beschreibung": "Die Lichtfuge ist ein periodischer Komet mit goldenem Staubknoten und blauem Ionenschweif. Alle rund 33 Jahre nähert sie sich Kelira bis auf 0,67 AE – fast bis auf Seyraths Bahn. Für die Chronoiden ist ihr Erscheinen ein Fixpunkt gemeinsamer Zeitrechnung über alle Wahrnehmungsgeschwindigkeiten hinweg." }
+    {
+      "id": "seyrath-arun",
+      "name": "Arun",
+      "typ": "Gesteinsplanet",
+      "um": "seyrath-stern",
+      "aAE": 0.2934,
+      "e": 0.012,
+      "i": 0.6,
+      "knoten": 40,
+      "peri": 90,
+      "phase": 20,
+      "radiusKm": 8300,
+      "masseErde": 2.4,
+      "albedo": 0.12,
+      "farbe": [
+        0.62,
+        0.36,
+        0.26
+      ],
+      "bild": {
+        "art": "planeten",
+        "slug": "gezeitengebundener-exoplanet-zwischen-feuer-und-eis"
+      },
+      "beschreibung": "Arun ist das innerste Glied der Kelira-Kette: eine heiße, gebunden rotierende Supererde. Ihre Tagseite glüht unter dem nahen Stern, auf der ewigen Nachtseite frieren Gase aus. Alle 64 Tage umrundet sie Kelira – genau 16 Takte des Kettenrhythmus."
+    },
+    {
+      "id": "seyrath-velth",
+      "name": "Velth",
+      "typ": "Mini-Neptun",
+      "um": "seyrath-stern",
+      "aAE": 0.3845,
+      "e": 0.009,
+      "i": 0.4,
+      "knoten": 120,
+      "peri": 200,
+      "phase": 250,
+      "radiusKm": 21500,
+      "masseErde": 4.1,
+      "albedo": 0.42,
+      "farbe": [
+        0.74,
+        0.66,
+        0.86
+      ],
+      "bild": {
+        "art": "planeten",
+        "slug": "lavendelfarbener-super-puff-planet-im-all"
+      },
+      "beschreibung": "Velth ist ein aufgeblähter Mini-Neptun mit sehr geringer Dichte: Eine kleine Gesteinsmasse trägt eine weit ausgedehnte, lavendelfarben schimmernde Wasserstoffhülle. Er steht mit Arun und Isaru jeweils im Periodenverhältnis 3:2."
+    },
+    {
+      "id": "seyrath-isaru",
+      "name": "Isaru",
+      "typ": "Ozeanplanet",
+      "um": "seyrath-stern",
+      "aAE": 0.5037,
+      "e": 0.007,
+      "i": 0.3,
+      "knoten": 200,
+      "peri": 330,
+      "phase": 130,
+      "radiusKm": 6900,
+      "masseErde": 1.25,
+      "albedo": 0.5,
+      "farbe": [
+        0.52,
+        0.6,
+        0.72
+      ],
+      "bild": {
+        "art": "planeten",
+        "slug": "blauer-planet-mit-bernsteinfarbenem-leuchten"
+      },
+      "beschreibung": "Isaru ist eine heiße Wasserwelt am Rand des Treibhauskollapses: Ein dunkler Ozean liegt unter dichten, dampfgesättigten Wolken, die Keliras Licht bernsteinfarben streuen. Von Seyrath aus ist Isaru der hellste Wandelstern des Morgen- und Abendhimmels."
+    },
+    {
+      "id": "seyrath-planet",
+      "name": "Seyrath",
+      "typ": "Gesteinsplanet",
+      "um": "seyrath-stern",
+      "aAE": 0.66,
+      "e": 0.018,
+      "i": 0,
+      "knoten": 0,
+      "peri": 60,
+      "phase": 310,
+      "radiusKm": 6052,
+      "masseErde": 0.86,
+      "albedo": 0.29,
+      "zielTemperaturC": 10,
+      "farbe": [
+        0.36,
+        0.56,
+        0.54
+      ],
+      "bild": {
+        "art": "planeten",
+        "slug": "turkis-bernsteinfarbene-ozeanwelt"
+      },
+      "beschreibung": "Seyrath ist die Heimatwelt der Chronoiden: ein wasserführender, geologisch aktiver Gesteinsplanet mit vier Kontinenten, mineralreichen hydrothermalen Gewässern und natürlichen mineralischen Resonanzsystemen, aus denen vor rund 420.000 Jahren die ersten bewussten Chronoiden hervorgingen."
+    },
+    {
+      "id": "seyrath-vesh",
+      "name": "Vesh",
+      "typ": "Mond",
+      "um": "seyrath-planet",
+      "periodeTage": 24.1,
+      "e": 0.035,
+      "i": 4.8,
+      "knoten": 70,
+      "peri": 0,
+      "phase": 200,
+      "radiusKm": 1300,
+      "masseErde": 0.0051,
+      "farbe": [
+        0.7,
+        0.7,
+        0.72
+      ],
+      "bild": {
+        "art": "monde",
+        "slug": "gigantischer-krustenbruch-auf-dem-mond"
+      },
+      "beschreibung": "Vesh ist der große natürliche Mond Seyraths – rund 2.600 km im Durchmesser, in etwa 335.000 km Abstand. Er beeinflusst die Gezeiten und die langfristigen mechanischen Belastungszyklen der Kruste; ein gewaltiger Krustenbruch zieht sich über seine eigene Oberfläche."
+    },
+    {
+      "id": "seyrath-tivar",
+      "name": "Tivar",
+      "typ": "Asteroid",
+      "um": "seyrath-stern",
+      "aAE": 0.66,
+      "e": 0.05,
+      "i": 6,
+      "knoten": 30,
+      "peri": 40,
+      "phase": 0,
+      "radiusKm": 3,
+      "masseErde": 0,
+      "farbe": [
+        0.6,
+        0.66,
+        0.66
+      ],
+      "bild": {
+        "art": "asteroiden",
+        "slug": "glasiger-impaktasteroid-im-tiefen-all"
+      },
+      "beschreibung": "Tivar ist ein kleiner Trojaner, der Seyrath am vorauseilenden Lagrange-Punkt L4 begleitet. Sein glasig aufgeschmolzenes Gestein stammt vermutlich aus einem frühen Einschlag auf Seyrath selbst; chronoidische Forscher nutzen ihn als ungestörte Messplattform."
+    },
+    {
+      "id": "seyrath-doran",
+      "name": "Doran",
+      "typ": "Gesteinsplanet",
+      "um": "seyrath-stern",
+      "aAE": 0.8648,
+      "e": 0.021,
+      "i": 0.5,
+      "knoten": 260,
+      "peri": 150,
+      "phase": 75,
+      "radiusKm": 5300,
+      "masseErde": 0.62,
+      "albedo": 0.3,
+      "farbe": [
+        0.84,
+        0.76,
+        0.62
+      ],
+      "bild": {
+        "art": "planeten",
+        "slug": "quarzsandplanet-mit-dunklen-kontinenten"
+      },
+      "beschreibung": "Doran ist eine kalte, mineralreiche Welt mit hellen Quarzsandwüsten und dunklen Basaltterrassen. In geothermischen Senken bauen die Megakolonien gemeinschaftlich lebende Großstrukturen von bis zu 30 Kilometern Ausdehnung."
+    },
+    {
+      "id": "seyrath-ombrel",
+      "name": "Ombrel",
+      "typ": "Mini-Neptun",
+      "um": "seyrath-stern",
+      "aAE": 1.0477,
+      "e": 0.014,
+      "i": 0.7,
+      "knoten": 330,
+      "peri": 20,
+      "phase": 190,
+      "radiusKm": 17200,
+      "masseErde": 5.6,
+      "albedo": 0.36,
+      "farbe": [
+        0.34,
+        0.36,
+        0.66
+      ],
+      "bild": {
+        "art": "planeten",
+        "slug": "wolkenarmer-indigo-gasriese-im-sternenraum"
+      },
+      "beschreibung": "Ombrel ist ein indigoblauer Mini-Neptun mit klarer, fast wolkenloser Hochatmosphäre. Mit Doran und Halvek bildet er die äußeren 4:3-Glieder der Kelira-Kette."
+    },
+    {
+      "id": "seyrath-halvek",
+      "name": "Halvek",
+      "typ": "Eisplanet",
+      "um": "seyrath-stern",
+      "aAE": 1.2694,
+      "e": 0.017,
+      "i": 0.9,
+      "knoten": 80,
+      "peri": 270,
+      "phase": 330,
+      "radiusKm": 11400,
+      "masseErde": 6.8,
+      "albedo": 0.55,
+      "farbe": [
+        0.8,
+        0.86,
+        0.92
+      ],
+      "bild": {
+        "art": "planeten",
+        "slug": "eis-supererde-im-all"
+      },
+      "beschreibung": "Halvek ist das äußerste Glied der Kette: eine eisreiche Supererde, deren Mantel aus Hochdruckeis einen Gesteinskern umhüllt. Mit 577 Tagen Umlaufzeit vollendet er genau neun Umläufe, wenn Arun 144 vollendet – der „Große Takt“ der Kette dauert 24 Seyrath-Jahre."
+    },
+    {
+      "id": "seyrath-schleier",
+      "name": "Keliras Schleier",
+      "typ": "Trümmergürtel",
+      "ringUm": "seyrath-stern",
+      "ringeAE": [
+        22,
+        24,
+        26,
+        36,
+        39,
+        42
+      ],
+      "anzahl": 300,
+      "groesseKm": 180,
+      "mindestPx": 4.5,
+      "farbe": [
+        0.86,
+        0.72,
+        0.56
+      ],
+      "bild": {
+        "art": "sternensysteme",
+        "slug": "versetzte-doppelringe-um-einen-stern"
+      },
+      "beschreibung": "Keliras Schleier ist eine kalte Trümmerscheibe aus zwei Ringen – 22 bis 26 AE und 36 bis 42 AE – mit einer staubarmen Lücke dazwischen. Weil es im System keinen Gasriesen gibt, blieb die Urscheibe hier draußen weitgehend unberührt; aus ihr stammen die Kometen, die gelegentlich ins Innere fallen."
+    },
+    {
+      "id": "seyrath-lichtfuge",
+      "name": "Lichtfuge",
+      "typ": "Komet",
+      "um": "seyrath-stern",
+      "aAE": 9.6,
+      "e": 0.93,
+      "i": 12,
+      "knoten": 150,
+      "peri": 300,
+      "phase": 178,
+      "radiusKm": 4,
+      "masseErde": 0,
+      "farbe": [
+        0.86,
+        0.78,
+        0.56
+      ],
+      "bild": {
+        "art": "kometen",
+        "slug": "komet-mit-goldenem-staubknoten-und-blauem-ionenschweif"
+      },
+      "beschreibung": "Die Lichtfuge ist ein periodischer Komet mit goldenem Staubknoten und blauem Ionenschweif. Alle rund 33 Jahre nähert sie sich Kelira bis auf 0,67 AE – fast bis auf Seyraths Bahn. Für die Chronoiden ist ihr Erscheinen ein Fixpunkt gemeinsamer Zeitrechnung über alle Wahrnehmungsgeschwindigkeiten hinweg."
+    }
   ]
 }

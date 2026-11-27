@@ -14,7 +14,29 @@ const name = process.argv[2];
 const spec = (await import(pathToFileURL(`${ROOT}scripts/planeten/heimatwelten/${name}.mjs`).href)).default;
 const K = findeKoerper(spec.ordner);
 const basis = JSON.parse(fs.readFileSync(ROOT + K.datenDatei, "utf8"));
-const sys = JSON.parse(fs.readFileSync(`${ROOT}scripts/planeten/systeme/${spec.system}.json`, "utf8"));
+// kapitelErgaenzen: Kapitel der Beschreibung, die die Vorlage des Körpers nicht kennt (z. B. Geografie oder Spezies bei Monden),
+// werden als eigene Kapitelseiten vor dem Medienarchiv angelegt (Ordner und Eintrag in der Grunddatei)
+if (spec.kapitelErgaenzen) {
+    const vorhanden = new Set(basis.kapitel.map((k) => k.titel));
+    const fehlend = Object.keys(spec.kapitel).filter((t) => !vorhanden.has(t));
+    if (fehlend.length) {
+        let nr = Math.max(...basis.kapitel.map((k) => k.nr || 0));
+        const vorlage = basis.kapitel[0] ? `${ROOT}${K.unterseiten}/${basis.kapitel[0].ordner}` : null;
+        const neu = fehlend.map((titel) => {
+            nr++;
+            const ordner = `${String(nr).padStart(2, "0")} – ${titel}`;
+            const pfad = `${ROOT}${K.unterseiten}/${ordner}`;
+            fs.mkdirSync(pfad, { recursive: true });
+            for (const d of ["index.css", "index.js"]) if (vorlage && fs.existsSync(`${vorlage}/${d}`) && !fs.existsSync(`${pfad}/${d}`)) fs.copyFileSync(`${vorlage}/${d}`, `${pfad}/${d}`);
+            return { nr, titel, ordner, datei: `${K.unterseiten}/${ordner}/index.html`, gruppe: "Weitere", icon: "◆", intro: "", bild: null, kopfbild: null };
+        });
+        const medien = basis.kapitel.findIndex((k) => k.titel === "Medienarchiv");
+        basis.kapitel.splice(medien < 0 ? basis.kapitel.length : medien, 0, ...neu);
+        fs.writeFileSync(ROOT + K.datenDatei, JSON.stringify(basis, null, 2) + "\n");
+        console.log(`${spec.name}: ${neu.length} Kapitel ergänzt (${fehlend.join(", ")})`);
+    }
+}
+const sys =JSON.parse(fs.readFileSync(`${ROOT}scripts/planeten/systeme/${spec.system}.json`, "utf8"));
 const karte = JSON.parse(fs.readFileSync(`${ROOT}Menüs/adapter/Sternenkarte/Kartendaten/objekte.json`, "utf8"));
 const W = spec.werte;
 // Verweise auf die Dossiers der übrigen Körper des Systems (Stern, Monde, Planeten, Gürtel, Kometen)
@@ -24,12 +46,19 @@ const f = (n, d = 2) => Number(n).toLocaleString("de-DE", { maximumFractionDigit
 const LJ_AE = 63241.077, E_KM = 6371;
 
 // ---------- Physik aus System und Werten ----------
-const stern = sys.stern;
 const planet = sys.koerper.find((k) => k.id === spec.planetId);
+// Begleitstern als Zentralstern (z. B. Ysmeroth Ba um Ysmeroth B): Licht, Bahn und Zone kommen von diesem Stern
+const begleit = sys.koerper.find((k) => k.id === planet.um && k.leuchtkraftSonne);
+const stern = begleit ? { ...sys.stern, id: begleit.id, name: begleit.name, typ: begleit.typ, masseSonne: begleit.masseErde / 332946, radiusSonne: begleit.radiusKm / 695700, leuchtkraftSonne: begleit.leuchtkraftSonne, temperaturK: begleit.temperaturK ?? sys.stern.temperaturK, beschreibung: begleit.beschreibung } : sys.stern;
 const rE = planet.radiusKm / E_KM, mE = planet.masseErde;
 const g = mE / rE ** 2, dichte = 5.514 * mE / rE ** 3, vEsc = 11.186 * Math.sqrt(mE / rE);
 const L = stern.leuchtkraftSonne, M = stern.masseSonne;
-const a = planet.aAE, e = planet.e ?? 0;
+// Monde als Heimatwelt: Sternabstand, Umlauf und Bahnposition kommen vom Mutterplaneten
+const mutter = planet.um !== stern.id ? sys.koerper.find((k) => k.id === planet.um) : null;
+const bahn = mutter ?? planet;
+const a = bahn.aAE, e = bahn.e ?? 0;
+const mondAKm = mutter ? Math.cbrt(398600.4418 * mutter.masseErde * (planet.periodeTage * 86400) ** 2 / (4 * Math.PI ** 2)) : 0;
+const art = mutter ? "Mond" : "Planet";
 const tageUmlauf = 365.25 * Math.sqrt(a ** 3 / M);
 const einstr = L / a ** 2;
 const teq = 278.6 * L ** 0.25 / Math.sqrt(a) * (1 - (planet.albedo ?? 0.3)) ** 0.25 - 273.15;
@@ -38,7 +67,8 @@ const lage = a < hzInnen ? "innerhalb der inneren Grenze der habitablen Zone" : 
 const ortsjahr = tageUmlauf * 24 / W.rotationH;
 const monde = sys.koerper.filter((k) => k.um === spec.planetId).map((m) => ({ ...m, aKm: Math.cbrt(398600.4418 * mE * (m.periodeTage * 86400) ** 2 / (4 * Math.PI ** 2)) }));
 const planetenSys = sys.koerper.filter((k) => k.um === stern.id && k.masseErde > 0.01 && !/roter zwerg|brauner zwerg|weißer zwerg/i.test(k.typ)).sort((x, y) => x.aAE - y.aAE);
-const bahnNr = planetenSys.findIndex((k) => k.id === planet.id) + 1;
+const bahnNr = planetenSys.findIndex((k) => k.id === bahn.id) + 1;
+const mutterDaten = mutter ? [["Mutterplanet", `${mutter.name} (${mutter.typ})`], ["Abstand zum Mutterplaneten", `ca. ${f(mondAKm, 0)} km`], [`Umlauf um ${mutter.name}`, `${f(planet.periodeTage, 1)} Erdtage`]] : [];
 const sternDurchm = 0.53 * stern.radiusSonne / a;
 // Nachbarsysteme
 const r = sys.lage.richtung, lg = Math.hypot(...r), pos = r.map((x) => x / lg * sys.lage.entfernungLj);
@@ -65,6 +95,7 @@ const grunddaten = [
     ["Rotationsperiode", W.rotationText ?? `${f(W.rotationH, 1)} h`],
     ["Umlaufzeit", `${f(tageUmlauf, 0)} Erdtage`],
     ["Abstand zum Stern", `${f(a, 3)} AE`],
+    ...mutterDaten,
     ["Monde", monde.length ? `${monde.length} (${monde.map((m) => m.name).join(", ")})` : "keine"],
     ["Zentralstern", `${stern.name}, ${stern.typ}`],
     ["Einstrahlung", `${f(einstr)}-fach der Erde`],
@@ -87,17 +118,17 @@ const auto = {
         { titel: `${spec.name} im Vergleich zur Erde`, vergleich: { mit: "Erde", werte: [["Durchmesser", Math.round(planet.radiusKm * 2), 12742, "km"], ["Schwerkraft", +g.toFixed(2), 1, "g"], ["Tageslänge", +W.rotationH.toFixed(1), 24, "h"], ["Luftdruck (Mittel)", W.druckMittel, 1, "bar"], ["Mittlere Temperatur", W.temperaturMittel, 15, "°C"], ...(W.vergleichExtra ?? [])] } },
     ],
     "Astronomie": [
-        { titel: "Bahn und Position", text: [`${spec.name} ist der ${bahnNr}. von ${planetenSys.length} Planeten im ${sys.systemName}. Er umkreist ${stern.name} in ${f(a, 3)} AE Abstand – ${lage} (bei ${stern.name} zwischen ${f(hzInnen)} und ${f(hzAussen)} AE). Er erhält ${f(einstr)}-mal so viel Sternlicht wie die Erde.`, `Ohne Atmosphäre läge seine Gleichgewichtstemperatur bei rund ${f(teq, 0)} °C. ${W.treibhausText ?? ""}`].filter(Boolean),
-          daten: [["Sternsystem", sys.systemName], ["Bahnposition", `${bahnNr}. von ${planetenSys.length} Planeten`], ["Große Halbachse", `${f(a, 3)} AE (ca. ${f(a * 149.6, 1)} Mio. km)`], ["Exzentrizität", f(e, 3)], ["Umlaufzeit", `${f(tageUmlauf, 1)} Erdtage`], ["Ortsjahr", `ca. ${f(ortsjahr, 0)} Ortstage`], ["Einstrahlung", `ca. ${f(einstr)}-fach der Erde`], [`Habitable Zone von ${stern.name}`, `${f(hzInnen)}–${f(hzAussen)} AE`], ...(W.bahnExtra ?? [])] },
+        { titel: "Bahn und Position", text: [`${mutter ? `${spec.name} ist ein Mond von ${mutter.name}, dem ${bahnNr}. von ${planetenSys.length} Planeten im ${sys.systemName}. Er umläuft ${mutter.name} in rund ${f(mondAKm, 0)} km Abstand alle ${f(planet.periodeTage, 1)} Tage; gemeinsam umkreisen beide` : `${spec.name} ist der ${bahnNr}. von ${planetenSys.length} Planeten im ${sys.systemName}. Er umkreist`} ${stern.name} in ${f(a, 3)} AE Abstand – ${lage} (bei ${stern.name} zwischen ${f(hzInnen)} und ${f(hzAussen)} AE). Er erhält ${f(einstr)}-mal so viel Sternlicht wie die Erde.`, `Ohne Atmosphäre läge seine Gleichgewichtstemperatur bei rund ${f(teq, 0)} °C. ${W.treibhausText ?? ""}`].filter(Boolean),
+          daten: [["Sternsystem", sys.systemName], ["Bahnposition", `${mutter ? `Mond von ${mutter.name} · ` : ""}${bahnNr}. von ${planetenSys.length} Planeten`], ...mutterDaten, ["Große Halbachse", `${f(a, 3)} AE (ca. ${f(a * 149.6, 1)} Mio. km)`], ["Exzentrizität", f(e, 3)], ["Umlaufzeit", `${f(tageUmlauf, 1)} Erdtage`], ["Ortsjahr", `ca. ${f(ortsjahr, 0)} Ortstage`], ["Einstrahlung", `ca. ${f(einstr)}-fach der Erde`], [`Habitable Zone von ${stern.name}`, `${f(hzInnen)}–${f(hzAussen)} AE`], ...(W.bahnExtra ?? [])] },
         { titel: "Zentralstern", text: [stern.beschreibung], daten: [["Name", stern.name], ["Typ", stern.typ], ["Masse", `${f(M)} Sonnenmassen`], ["Radius", `${f(stern.radiusSonne)} Sonnenradien`], ["Leuchtkraft", `${f(L, 4)} Sonnenleuchtkräfte`], ["Oberflächentemperatur", `ca. ${f(stern.temperaturK, 0)} K`], ["Alter", `ca. ${f(stern.alterMrd, 1)} Mrd. Jahre`], ["Begleitsterne", sys.einzelstern ? "keine (Einzelstern)" : sys.begleiterText ?? "Mehrfachsystem"]], verweise: verweiseAuf([stern.id]) },
         { titel: "Rotation und Achse", daten: [["Rotationsperiode", W.rotationText ?? `${f(W.rotationH, 1)} h`], ["Achsneigung", `${f(W.achsneigung, 1)}°`], ["Scheinbare Sterngröße", `ca. ${f(sternDurchm, 2)}° (Sonne von der Erde: 0,53°)`], ["Jahreszeiten", W.jahreszeiten]] },
         ...(monde.length ? [{ titel: "Monde", karten: monde.map((m) => ({ titel: `${m.name}`, text: `${f(m.radiusKm * 2, 0)} km Durchmesser, Abstand ${f(m.aKm, 0)} km, Umlauf in ${f(m.periodeTage, 1)} Tagen. ${m.beschreibung}` })), verweise: verweiseAuf(monde.map((m) => m.id)) }] : [{ titel: "Monde", text: [`${spec.name} besitzt keine Monde.`] }]),
         { titel: "Planeten des Systems", zeitleiste: [...sys.koerper.filter((k) => k.um === stern.id || k.ringUm === stern.id).filter((k) => k.typ !== "Komet" && k.typ !== "Asteroid")
-            .map((k) => [`${k.name} · ${k.ringeAE ? `${f(k.ringeAE[0], 1)}–${f(k.ringeAE.at(-1), 1)}` : f(k.aAE, 3)} AE`, k.beschreibung.split(". ")[0] + "."])],
+            .map((k) => [`${k.name} · ${k.ringeAE ? `${f(k.ringeAE[0], 1)}–${f(k.ringeAE.at(-1), 1)}` : f(k.aAE, 3)} AE`, k.beschreibung.split(". ")[0].replace(/\.$/, "") + "."])],
           verweise: verweiseAuf(sys.koerper.filter((k) => (k.um === stern.id || k.ringUm === stern.id || k.ringUm === planet.id) && k.typ !== "Komet" && k.typ !== "Asteroid" && k.id !== planet.id).map((k) => k.id)) },
         { titel: "Nachbarschaft und Anomalien", karten: [...sys.koerper.filter((k) => k.anomalie || k.typ === "Komet" || k.typ === "Asteroid").map((k) => ({ titel: k.name, text: k.beschreibung })),
             { titel: "Nachbarsysteme", text: `${nachbarn.slice(0, 3).map((n) => `${n.name} (${f(n.lj, 1)} Lj)`).join(", ")} – alle weit außerhalb der gravitativen Einflusszone von ${stern.name} (rund ${f(einfluss, 1)} Lichtjahre).` }],
-          verweise: [...verweiseAuf(sys.koerper.filter((k) => k.anomalie || k.typ === "Komet" || k.typ === "Asteroid").map((k) => k.id)), [`${sys.systemName} in der Sternenkarte`, `Menüs/Sternenkarte/Sternenkarte.html?system=${stern.id}`]] },
+          verweise: [...verweiseAuf(sys.koerper.filter((k) => k.anomalie || k.typ === "Komet" || k.typ === "Asteroid").map((k) => k.id)), [`${sys.systemName} in der Sternenkarte`, `Menüs/Sternenkarte/Sternenkarte.html?system=${sys.stern.id}`]] },
     ],
     "Physik": [
         { titel: "Kerndaten", daten: [["Radius", `${f(planet.radiusKm, 0)} km`], ["Masse", `${f(mE)} Erdmassen`], ["Mittlere Dichte", `${f(dichte)} g/cm³`], ["Oberflächenschwerkraft", `${f(g * 9.81, 1)} m/s² (${f(g)} g)`], ["Fluchtgeschwindigkeit", `ca. ${f(vEsc, 1)} km/s`], ...(W.physikExtra ?? [])] },
@@ -135,17 +166,20 @@ const verweise = [
     ...(spec.systemseite ? [{ icon: "✦", art: "Systemübersicht", titel: sys.systemName, href: spec.systemseite, route: null }] : []),
     { icon: "✿", art: "Heimische Spezies", titel: spec.spezies.name, href: speziesSeite, route: null },
     ...[["Heimatwelt", "Heimatwelt", "heimatwelt.html"], ["Politik", "Politik und Fraktionen", "politik.html"]].map(([o, t, d]) => sub(o, d) ? { icon: "◈", art: "Spezies-Dossier", titel: t, href: sub(o, d), route: null } : null).filter(Boolean),
-    { icon: "✦", art: "Sternenkarte", titel: sys.systemName, href: `Menüs/Sternenkarte/Sternenkarte.html?system=${stern.id}`, route: null },
+    { icon: "✦", art: "Sternenkarte", titel: sys.systemName, href: `Menüs/Sternenkarte/Sternenkarte.html?system=${sys.stern.id}`, route: null },
 ];
 const quellen = [["Heimatwelt", "heimatwelt.html"], ["Geschichte", "geschichte.html"], ["Gesellschaft", "gesellschaft.html"], ["Politik", "politik.html"], ["Allgemeines", "allgemeines.html"]]
     .map(([o, d]) => sub(o, d) ? { titel: `Speziesdossier ${spec.spezies.name} · ${o}`, href: sub(o, d) } : null).filter(Boolean);
 if (!quellen.length) quellen.push({ titel: `Speziesdossier ${spec.spezies.name}`, href: speziesSeite });
 
+// Globus-Motiv (Zufallssaat) der bisherigen Inhaltsdatei behalten, damit der Planet gleich aussieht
+const inhaltPfad = ROOT + K.datenDatei.replace(/.json$/, ".inhalt.json");
+const altGlobus = fs.existsSync(inhaltPfad) ? JSON.parse(fs.readFileSync(inhaltPfad, "utf8")).globusDaten?.planet : null;
 const inhalt = {
-    name: spec.name, genitiv: spec.genitiv, dossierName: spec.dossierName ?? `${spec.name}-Dossier`, klasse: `Planet · ${spec.klasse}`,
+    name: spec.name, genitiv: spec.genitiv, dossierName: spec.dossierName ?? `${spec.name}-Dossier`, klasse: `${art} · ${spec.klasse}`,
     intro: spec.intro,
-    globusDaten: { planet: K.slug, klasse: basis.klasse || spec.klasse, radius: planet.radiusKm * 1000 },
-    sternenkarte: `Menüs/Sternenkarte/Sternenkarte.html?system=${stern.id}`,
+    globusDaten: { planet: altGlobus ?? K.slug, klasse: spec.globusKlasse ?? (basis.klasse || spec.klasse), radius: planet.radiusKm * 1000 },
+    sternenkarte: `Menüs/Sternenkarte/Sternenkarte.html?system=${sys.stern.id}`,
     grunddaten,
     position: [["Sternsystem", sys.systemName], ["Zentralstern", `${stern.name} · ${stern.typ.replace(/^.*\((.*)\)$/, "$1")}${sys.einzelstern ? ", Einzelstern" : ""}`], ["Bahnposition", `${bahnNr}. von ${planetenSys.length} Planeten`], ["Entfernung zur Sonne", `${f(nachbarn.find((n) => n.name === "Sonnensystem")?.lj ?? sys.lage.entfernungLj, 1)} Lichtjahre`], ["Nächste Nachbarsysteme", nachbarn.slice(0, 2).map((n) => `${n.name} (${f(n.lj, 1)} Lj)`).join(", ")]],
     verknuepfungen: verweise, quellen,

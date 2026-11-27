@@ -1,7 +1,7 @@
 // Nhemara · Heimatwelt der Lithoiden (Quelle: Info_material/…/Lithoiden, 04 Heimatwelt)
 const B = "assets/bilder/Alle Spezies+Übersicht/Biologische Spezies/Lithoiden/";
 export default {
-    ordner: "planet-der-gewaltigen-verwerfungen", system: "nhemara-system", planetId: "nhemara-planet",
+    ordner: "nhemara", system: "nhemara-system", planetId: "nhemara-planet",
     name: "Nhemara", genitiv: "Nhemaras", klasse: "Gesteinsplanet", klasseLang: "Geologisch aktiver terrestrischer Gesteinsplanet",
     intro: "Nhemara ist die Heimatwelt der Lithoiden: eine geologisch aktive Gesteinswelt mit kristallinen Hochländern, mineralreichen Binnenmeeren und hydrothermalen Quellterrassen, auf der sich Leben aus Mineralen entwickelte.",
     bildtext: "Nhemara – Planet der gewaltigen Verwerfungen",

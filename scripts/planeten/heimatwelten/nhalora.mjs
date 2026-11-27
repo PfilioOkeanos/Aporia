@@ -2,7 +2,7 @@
 const B = "assets/bilder/Alle Spezies+Übersicht/Biologische Spezies/Symbionten/";
 const G = B + "gesamtdarstellung/";
 export default {
-    ordner: "planet-der-blauen-binnenmeere", system: "nhalora-system", planetId: "nhalora-planet",
+    ordner: "nhalora", system: "nhalora-system", planetId: "nhalora-planet",
     name: "Nhalora", genitiv: "Nhaloras", klasse: "Gesteinsplanet", klasseLang: "Terrestrischer Lebensplanet",
     intro: "Nhalora ist die Heimatwelt der Symbionten: ein warmer, feuchter Lebensplanet mit Binnenmeeren, Feuchtgebieten, Sümpfen und dicht bewachsenen Ufern, in deren Mikrohabitaten winzige intelligente Wesen lernten, mit größeren Lebewesen zu leben.",
     bildtext: "Nhalora – Planet der blauen Binnenmeere",

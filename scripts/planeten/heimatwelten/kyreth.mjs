@@ -3,7 +3,7 @@
 const G = "assets/bilder/Alle Spezies+Übersicht/Biologische Spezies/Elektrozoiden/gesamtdarstellung/";
 const D = (n) => G + `Elektrozoiden _designA2${n ? `(${n})` : ""}.png`;
 export default {
-    ordner: "lebender-planet-mit-grunen-wetterswirbeln", system: "kyreth-system", planetId: "kyreth-planet",
+    ordner: "kyreth", system: "kyreth-system", planetId: "kyreth-planet",
     name: "Kyreth", genitiv: "von Kyreth", klasse: "Gesteinsplanet", klasseLang: "Feuchtwarme terrestrische Welt mit leitfähigen Böden",
     spezies: { name: "Elektrozoiden", gruppe: "Biologische Spezies", ordner: "Elektrozoiden", seite: "inhalte/spezies/Biologische Spezies/Elektrozoiden/hauptseite/Spezies.html" },
     intro: "Kyreth ist die Heimatwelt der Elektrozoiden: eine feuchtwarme Landwelt, deren Böden aus Erzen, Salzen, Tonen und Graphitschiefern elektrisch völlig unterschiedlich leiten. Gewitter ziehen fast täglich über die grünen Ebenen – eine Welt voller elektrischer Felder.",

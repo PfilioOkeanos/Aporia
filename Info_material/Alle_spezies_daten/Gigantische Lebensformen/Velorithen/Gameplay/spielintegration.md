@@ -143,4 +143,37 @@ MACRO-EBENE
 • Verletzungen und Heilungsprozesse werden gespeichert.
 • Persönliche Beziehungen zum Spieler bleiben erhalten.
 • Gesellschaftliche Aufgaben können außerhalb des aktiven Spielerbereichs fortgesetzt werden.
-• Das Entladen eines grafischen Modells bedeutet nicht das Verschwinden des Individuums aus der Spielwelt.
+• Das Entladen eines grafischen Modells bedeutet nicht das Verschwinden des Individuums aus der Spielwelt.#
+#
+### Dynamische Speziesentwicklung
+
+Der Spieler kann durch wissenschaftliche Forschung aktiv Einfluss auf die weitere Entwicklung der Velorithen nehmen.
+
+Die Spezies besitzt keinen zwingend vorgegebenen technologischen oder evolutionären Endzustand.
+
+Mögliche Spielmechaniken:
+
+- Erforschung der natürlichen gigantischen Urform.
+- Sammlung biologischer und genetischer Forschungsdaten.
+- Untersuchung natürlicher Entwicklungsstadien.
+- Durchführung biotechnologischer Experimente.
+- Entwicklung kompakterer Körperformen.
+- Verbesserung kognitiver Fähigkeiten.
+- Freischaltung neuer biologischer Eigenschaften.
+- Erforschung neuer Technologien anhand biologischer Erkenntnisse.
+- Aufbau spezialisierter Forschungseinrichtungen.
+- Zusammenarbeit mit höherentwickelten Velorithen.
+- Eigenständige Forschungsaktivitäten intelligenter NPCs.
+- Weitergabe wissenschaftlicher Erkenntnisse.
+- Gemeinsame technologische Entwicklungsprojekte.
+- Entstehung unterschiedlicher evolutionärer Entwicklungslinien.
+
+Höherentwickelte Velorithen können mit zunehmender wissenschaftlicher Leistungsfähigkeit selbst als Forscher, Techniker, Konstrukteure, Händler oder Wissenschaftler innerhalb der Spielwelt auftreten.
+
+Die gigantische Urform bleibt als eigenständige natürliche Entwicklungsform erhalten.
+
+Experimentelle Entwicklungsformen intelligenter Individuen setzen deren Zustimmung voraus.
+
+Der Spieler entscheidet durch seine Handlungen, welche Forschungsrichtungen unterstützt und welche technologischen Möglichkeiten erschlossen werden.
+
+Dadurch können unterschiedliche Spielverläufe zu unterschiedlichen biologischen und technologischen Entwicklungsständen derselben Spezies führen.

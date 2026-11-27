@@ -6,12 +6,16 @@
   "klasse": "Komet",
   "intro": "Die Lichtfuge ist ein periodischer Komet mit goldenem Staubknoten und blauem Ionenschweif. Alle rund 33 Jahre nähert sie sich Kelira bis auf 0,67 AE – fast bis auf Seyraths Bahn. Für die Chronoiden ist ihr Erscheinen ein Fixpunkt gemeinsamer Zeitrechnung über alle Wahrnehmungsgeschwindigkeiten hinweg. Lichtfuge umkreist Kelira in 9,6 AE Abstand und braucht für einen Umlauf 32,8 Jahre.",
   "globusDaten": {
-    "planet": "komet-mit-goldenem-staubknoten-und-blauem-ionenschweif",
+    "planet": "lichtfuge",
     "klasse": "Eis",
     "radius": 4000
   },
   "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=seyrath-stern&objekt=seyrath-lichtfuge",
   "grunddaten": [
+    [
+      "System-ID",
+      "seyrath-lichtfuge"
+    ],
     [
       "Archiv-ID",
       "AP-EF3E544578"
@@ -85,16 +89,16 @@
     },
     {
       "icon": "✿",
-      "art": "Heimatwelt der Chronoiden",
-      "titel": "Seyrath",
-      "href": "inhalte/himmelskoerper/planeten/details/seyrath/hauptseite/index.html",
+      "art": "Heimatwelt der Megakolonien",
+      "titel": "Doran",
+      "href": "inhalte/himmelskoerper/planeten/details/doran/hauptseite/index.html",
       "route": null
     },
     {
       "icon": "◈",
       "art": "Spezies-Dossier",
-      "titel": "Chronoiden",
-      "href": "inhalte/spezies/Mentale Spezies/Chronoiden/hauptseite/Spezies.html",
+      "titel": "Megakolonien",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Megakolonien/hauptseite/Spezies.html",
       "route": null
     }
   ],
@@ -104,8 +108,8 @@
       "href": "Menüs/Sternenkarte/Sternenkarte.html?system=seyrath-stern&objekt=seyrath-lichtfuge"
     },
     {
-      "titel": "Speziesdossier Chronoiden",
-      "href": "inhalte/spezies/Mentale Spezies/Chronoiden/hauptseite/Spezies.html"
+      "titel": "Speziesdossier Megakolonien",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Megakolonien/hauptseite/Spezies.html"
     }
   ],
   "design": {
@@ -308,18 +312,18 @@
           ]
         },
         {
-          "titel": "Im System von Seyrath",
+          "titel": "Im System von Doran",
           "text": [
-            "Das Kelira-System ist die Heimat der Chronoiden: Ihr Planet Seyrath umkreist Kelira."
+            "Das Kelira-System ist die Heimat der Megakolonien: Ihr Planet Doran umkreist Kelira."
           ],
           "verweise": [
             [
-              "Seyrath",
-              "inhalte/himmelskoerper/planeten/details/seyrath/hauptseite/index.html"
+              "Doran",
+              "inhalte/himmelskoerper/planeten/details/doran/hauptseite/index.html"
             ],
             [
-              "Speziesdossier Chronoiden",
-              "inhalte/spezies/Mentale Spezies/Chronoiden/hauptseite/Spezies.html"
+              "Speziesdossier Megakolonien",
+              "inhalte/spezies/Gigantische Lebensformen/Megakolonien/hauptseite/Spezies.html"
             ]
           ]
         }

@@ -1,2 +1,15 @@
-/* Astralizes – Allgemeines · erzeugt vom Spezies-Baukasten (scripts/spezies)
-   Gemeinsames Design: astralizes-basis.css · eigene Anpassungen dieser Seite hier ergänzen. */
+/* Saal I · Die wandernde Verzerrung – heller White Cube; jedes Werk wirft eine wandernde Verdopplung */
+.az-saal-allgemeines { background: #efece5; color: #15131a; --az-leise: #6b6574; --az-gold: #8a6a2a; }
+.az-saal-allgemeines .az-saalplan { background: #efece5d9; border-color: #00000014; }
+.az-weiss-kopf { min-height: 0; padding-bottom: 1rem; align-content: start; }
+.az-wort { position: relative; height: .82em; margin: 1.5rem 0 0; font: 300 clamp(3rem, 10.5vw, 11rem)/.8 var(--az-serif); letter-spacing: -.01em; pointer-events: none; overflow: hidden; }
+.az-wort span { position: absolute; left: 0; bottom: 0; background: var(--bild) center/cover; -webkit-background-clip: text; background-clip: text; color: transparent; }
+.az-wort span + span { mix-blend-mode: multiply; opacity: .55; animation: az-verdopplung 7s ease-in-out infinite; }
+@keyframes az-verdopplung { 0%, 100% { transform: translate(0, 0); } 50% { transform: translate(1.4%, -2%); } }
+.az-weiss-kopf h1 { position: relative; z-index: 2; color: #15131a; }
+.az-wand { display: grid; grid-auto-flow: dense; grid-template-columns: repeat(auto-fill, minmax(min(100%, 16rem), 1fr)); gap: clamp(3rem, 7vw, 7rem) clamp(2rem, 5vw, 5rem); padding: 0 clamp(1.5rem, 6vw, 7rem); align-items: end; }
+.az-wand .az-gross-werk { grid-column: span 2; }
+.az-wand .az-werk-bild { box-shadow: 0 30px 60px -30px #0007; max-height: 72vh; }
+.az-wand .az-werk::after { content: ""; position: absolute; inset: 0 0 auto; aspect-ratio: var(--ar); background: var(--bild) center/cover; mix-blend-mode: multiply; opacity: 0; transform: translate(0, 0); pointer-events: none; transition: opacity .5s, transform 1.4s cubic-bezier(.2,.7,.2,1); }
+.az-wand .az-werk:hover::after { opacity: .5; transform: translate(14px, -10px); }
+@media (max-width: 760px) { .az-wand .az-gross-werk { grid-column: auto; } }

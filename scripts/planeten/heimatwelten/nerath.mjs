@@ -9,7 +9,7 @@ const B = {
 };
 export default {
     systemseite: "inhalte/himmelskoerper/sternensysteme/details/terev-system/hauptseite/index.html",
-    ordner: "turkisfarbene-flachmeerwelt-im-all", system: "nerath-system", planetId: "nerath-planet",
+    ordner: "nerath", system: "nerath-system", planetId: "nerath-planet",
     name: "Nerath", genitiv: "von Nerath", klasse: "Gesteinsplanet", klasseLang: "Gezeitengeprägte Binnenmeer-, Flachwasser- und Feuchtgebietswelt",
     spezies: { name: "Synaptoiden", gruppe: "Mentale Spezies", ordner: "Synaptoiden", seite: "inhalte/spezies/Mentale Spezies/Synaptoiden/hauptseite/Spezies.html" },
     intro: "Nerath ist die Heimatwelt der Synaptoiden – der Tavari. Eine geologisch aktive, langfristig bewohnbare Welt mit zwei großen Kontinenten, zahlreichen Inselgruppen, flachen Binnenmeeren und ausgedehnten Feuchtgebieten, deren Übergänge zwischen Land und Wasser durch Gezeiten ständig verändert werden.",

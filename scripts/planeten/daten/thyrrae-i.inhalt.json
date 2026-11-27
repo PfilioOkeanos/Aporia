@@ -1,56 +1,123 @@
 {
-  "_erzeugt": "koerper-bauen",
   "name": "Thyrrae I",
   "genitiv": "von Thyrrae I",
   "dossierName": "Thyrrae I-Dossier",
-  "klasse": "Gesteinsplanet",
-  "intro": "Thyrrae I ist ein kleiner, glühend heißer Gesteinsplanet ohne nennenswerte Atmosphäre. Thyrrae I umkreist Thyrrae in 0,38 AE Abstand und braucht für einen Umlauf 82,3 Tage.",
+  "klasse": "Planet · Gesteinsplanet",
+  "intro": "Thyrrae I – die Welt der Vulkanriesen. Ein heißer, leichter Gesteinsplanet nahe seinem Stern, mit basaltischen Hochländern, Calderen von Hunderten Kilometern und einer schwefelhaltigen Atmosphäre. Hier entstand eine eigenständige thermobiologische Biosphäre – und mit ihr die Pyrokariden, aufrecht gehende Giganten von 250 bis 800 Metern Höhe.",
   "globusDaten": {
     "planet": "gluhende-silikatwolken-uber-dem-kupferplaneten",
-    "klasse": "Gestein",
+    "klasse": "Vulkanwelt",
     "radius": 3900000
   },
-  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=babiew-stern&objekt=babiew-saelith-i",
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=babiew-stern",
   "grunddaten": [
     [
       "Archiv-ID",
       "AP-2511D61399"
     ],
     [
-      "Typ",
-      "Gesteinsplanet"
-    ],
-    [
-      "Sternsystem",
-      "Thyrrae-System"
-    ],
-    [
-      "Zentralkörper",
-      "Thyrrae"
-    ],
-    [
-      "Große Halbachse",
-      "0,38 AE"
-    ],
-    [
-      "Umlaufzeit",
-      "82,3 Tage"
+      "Klasse",
+      "Vulkanisch aktiver terrestrischer Gesteinsplanet"
     ],
     [
       "Durchmesser",
       "7.800 km"
     ],
     [
+      "Radius",
+      "3.900 km"
+    ],
+    [
       "Masse",
-      "0,28 Erdmassen"
+      "0,12 Erdmassen"
+    ],
+    [
+      "Dichte",
+      "2,88 g/cm³"
     ],
     [
       "Schwerkraft",
-      "0,75 g"
+      "0,32 g (3,1 m/s²)"
     ],
     [
-      "Gleichgewichtstemperatur",
-      "ca. 199 °C"
+      "Mittlere Oberflächentemperatur",
+      "ca. 115 °C (Mittel)"
+    ],
+    [
+      "Ozeane",
+      "Höchstens 1 % offene Flüssigkeitsflächen; Magmaseen und Salzgewässer"
+    ],
+    [
+      "Atmosphäre",
+      "60 % Kohlendioxid, 30 % Stickstoff, 5 % Schwefeldioxid, 4 % Argon, 1 % Weitere Gase"
+    ],
+    [
+      "Atmosphärendruck",
+      "ca. 0,55 bar"
+    ],
+    [
+      "Rotationsperiode",
+      "ca. 48 h"
+    ],
+    [
+      "Umlaufzeit",
+      "82 Erdtage"
+    ],
+    [
+      "Abstand zum Stern",
+      "0,38 AE"
+    ],
+    [
+      "Monde",
+      "keine"
+    ],
+    [
+      "Zentralstern",
+      "Thyrrae, Gelber Zwerg (F9 V)"
+    ],
+    [
+      "Einstrahlung",
+      "9,35-fach der Erde"
+    ],
+    [
+      "Achsneigung",
+      "7°"
+    ],
+    [
+      "Exzentrizität",
+      "0,03"
+    ],
+    [
+      "Fluchtgeschwindigkeit",
+      "5 km/s"
+    ],
+    [
+      "Alter",
+      "ca. 3,4 Mrd. Jahre"
+    ],
+    [
+      "Beiname",
+      "Welt der Vulkanriesen"
+    ],
+    [
+      "Archiv-ID",
+      "AP-2511D61399"
+    ],
+    [
+      "Bond-Albedo",
+      "ca. 0,70"
+    ],
+    [
+      "Festlandanteil",
+      "ca. 99 %"
+    ],
+    [
+      "Fraktionszugehörigkeit",
+      "Nicht festgelegt"
+    ],
+    [
+      "Intelligente Spezies",
+      "Pyrokariden"
     ]
   ],
   "position": [
@@ -60,84 +127,103 @@
     ],
     [
       "Zentralstern",
-      "Thyrrae",
-      "inhalte/himmelskoerper/sterne/details/thyrrae/hauptseite/index.html"
+      "Thyrrae · F9 V, Einzelstern"
     ],
     [
-      "Abstand",
-      "0,38 AE"
+      "Bahnposition",
+      "1. von 4 Planeten"
+    ],
+    [
+      "Entfernung zur Sonne",
+      "28 Lichtjahre"
+    ],
+    [
+      "Nächste Nachbarsysteme",
+      "Aurenn-System (12,7 Lj), Saelon-System (16 Lj)"
     ]
   ],
   "verknuepfungen": [
     {
-      "icon": "✦",
-      "art": "Sternenkarte",
-      "titel": "Thyrrae I im Thyrrae-System",
-      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=babiew-stern&objekt=babiew-saelith-i",
-      "route": null
-    },
-    {
-      "icon": "☀",
-      "art": "Zentralstern",
-      "titel": "Thyrrae",
-      "href": "inhalte/himmelskoerper/sterne/details/thyrrae/hauptseite/index.html",
-      "route": null
-    },
-    {
       "icon": "✿",
-      "art": "Heimatwelt der Aeromorphen",
-      "titel": "Babiew",
-      "href": "inhalte/himmelskoerper/planeten/details/babiew/hauptseite/index.html",
+      "art": "Heimische Spezies",
+      "titel": "Pyrokariden",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Pyrokariden/hauptseite/Spezies.html",
       "route": null
     },
     {
       "icon": "◈",
       "art": "Spezies-Dossier",
-      "titel": "Aeromorphen",
-      "href": "inhalte/spezies/Biologische Spezies/Aeromorphen/Hauptseite_übersicht/Spezies.html",
+      "titel": "Heimatwelt",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Pyrokariden/Unterseiten/Heimatwelt/heimatwelt.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Politik und Fraktionen",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Pyrokariden/Unterseiten/Politik/politik.html",
+      "route": null
+    },
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Thyrrae-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=babiew-stern",
       "route": null
     }
   ],
   "quellen": [
     {
-      "titel": "Sternenkarte · Thyrrae-System",
-      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=babiew-stern&objekt=babiew-saelith-i"
+      "titel": "Speziesdossier Pyrokariden · Heimatwelt",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Pyrokariden/Unterseiten/Heimatwelt/heimatwelt.html"
     },
     {
-      "titel": "Speziesdossier Aeromorphen",
-      "href": "inhalte/spezies/Biologische Spezies/Aeromorphen/Hauptseite_übersicht/Spezies.html"
+      "titel": "Speziesdossier Pyrokariden · Geschichte",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Pyrokariden/Unterseiten/Geschichte/geschichte.html"
+    },
+    {
+      "titel": "Speziesdossier Pyrokariden · Gesellschaft",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Pyrokariden/Unterseiten/Gesellschaft/gesellschaft.html"
+    },
+    {
+      "titel": "Speziesdossier Pyrokariden · Politik",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Pyrokariden/Unterseiten/Politik/politik.html"
+    },
+    {
+      "titel": "Speziesdossier Pyrokariden · Allgemeines",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Pyrokariden/Unterseiten/Allgemeines/allgemeines.html"
     }
   ],
   "design": {
     "farben": {
-      "nacht": "#080605",
-      "tiefe": "#110e0c",
-      "akzent": "#c0ac9f",
-      "sand": "#c5ac93",
-      "moos": "#9f9f7c",
-      "ozean": "#7f8a89",
-      "glas": "rgba(8, 12, 18, .76)",
-      "glas-hell": "rgba(16, 22, 32, .82)",
-      "linie": "rgba(255, 255, 255, .12)",
-      "linie-hell": "rgba(255, 255, 255, .3)",
-      "text": "#eef2f6",
-      "leise": "#a8b0bc",
-      "aporia-page-tint": "#473930"
+      "nacht": "#0d0604",
+      "tiefe": "#1c0d07",
+      "akzent": "#f08a3c",
+      "sand": "#e0c070",
+      "moos": "#c8b45a",
+      "ozean": "#b0543a",
+      "glas": "rgba(28, 13, 7, .8)",
+      "glas-hell": "rgba(44, 22, 12, .86)",
+      "linie": "rgba(240, 138, 60, .18)",
+      "linie-hell": "rgba(240, 180, 110, .38)",
+      "text": "#f8ede4",
+      "leise": "#c3a593",
+      "aporia-page-tint": "#7a2e12"
     }
   },
   "kapitel": {
     "Allgemeines": {
       "gruppe": "Weitere",
       "icon": "▤",
-      "intro": "Thyrrae I auf einen Blick.",
+      "intro": "Thyrrae I auf einen Blick: Hitze, Basalt und Vulkanriesen.",
       "abschnitte": [
         {
           "titel": "Kurzprofil",
           "bild": true,
-          "bildtext": "Thyrrae I",
+          "bildtext": "Thyrrae I – Welt der Vulkanriesen",
           "text": [
-            "Thyrrae I ist ein kleiner, glühend heißer Gesteinsplanet ohne nennenswerte Atmosphäre.",
-            "Thyrrae I umkreist Thyrrae in 0,38 AE Abstand und braucht für einen Umlauf 82,3 Tage."
+            "Thyrrae I ist der innerste Planet des Thyrrae-Systems und umkreist den gelben Zwerg Thyrrae in nur 0,38 AE Abstand. Er erhält rund 9,35-mal so viel Strahlung wie die Erde; stark reflektierende Wolken und Aerosole (Bond-Albedo etwa 0,70) senken die aufgenommene Energie. Die mittlere Oberflächentemperatur liegt bei etwa 115 °C.",
+            "Mit 7.800 Kilometern Durchmesser und nur 0,12 Erdmassen ist der Planet leicht gebaut: Die Schwerkraft beträgt 0,32 g. Rund 99 % der Oberfläche sind Festland. Radiogene Wärme und die verbliebene Planetenwärme speisen einen ausgeprägten regionalen Vulkanismus – ohne dass der Planet global von Magma bedeckt wäre."
           ]
         },
         {
@@ -145,55 +231,125 @@
           "daten": [
             [
               "Typ",
-              "Gesteinsplanet"
+              "Vulkanisch aktiver terrestrischer Gesteinsplanet"
             ],
             [
-              "Sternsystem",
-              "Thyrrae-System"
+              "Zentralstern",
+              "Thyrrae (Gelber Zwerg (F9 V))"
             ],
             [
-              "Zentralkörper",
-              "Thyrrae"
-            ],
-            [
-              "Große Halbachse",
-              "0,38 AE"
-            ],
-            [
-              "Umlaufzeit",
-              "82,3 Tage"
+              "Schwerkraft",
+              "0,32 g"
             ],
             [
               "Durchmesser",
               "7.800 km"
             ],
             [
-              "Masse",
-              "0,28 Erdmassen"
+              "Mittlere Temperatur",
+              "ca. 115 °C (Mittel)"
             ],
             [
-              "Schwerkraft",
-              "0,75 g"
+              "Atmosphäre",
+              "Vulkanische Sekundäratmosphäre, ca. 0,55 bar, nicht atembar"
             ],
             [
-              "Gleichgewichtstemperatur",
-              "ca. 199 °C"
+              "Wasser",
+              "Höchstens 1 % offene Flüssigkeitsflächen; Magmaseen und Salzgewässer"
+            ],
+            [
+              "Intelligente Spezies",
+              "Pyrokariden"
             ]
           ]
         },
         {
-          "titel": "Im System von Babiew",
-          "text": [
-            "Das Thyrrae-System ist die Heimat der Aeromorphen: Ihr Planet Babiew umkreist Thyrrae."
-          ],
-          "verweise": [
+          "titel": "Thyrrae I im Vergleich zur Erde",
+          "vergleich": {
+            "mit": "Erde",
+            "werte": [
+              [
+                "Durchmesser",
+                7800,
+                12742,
+                "km"
+              ],
+              [
+                "Schwerkraft",
+                0.32,
+                1,
+                "g"
+              ],
+              [
+                "Tageslänge",
+                48,
+                24,
+                "h"
+              ],
+              [
+                "Luftdruck (Mittel)",
+                0.55,
+                1,
+                "bar"
+              ],
+              [
+                "Mittlere Temperatur",
+                115,
+                15,
+                "°C"
+              ],
+              [
+                "Festlandanteil",
+                99,
+                29,
+                "%"
+              ]
+            ]
+          }
+        },
+        {
+          "titel": "Hauptmerkmale",
+          "karten": [
+            {
+              "titel": "Vulkanische Hochländer",
+              "text": "Schildvulkane, Calderen und erstarrte Lavameere."
+            },
+            {
+              "titel": "Leichte Welt",
+              "text": "0,32 g – Voraussetzung für aufrechte Giganten."
+            },
+            {
+              "titel": "Reflektierende Wolken",
+              "text": "Schwefelhaltige Aerosole mindern die starke Einstrahlung."
+            },
+            {
+              "titel": "Thermobiologie",
+              "text": "Eine eigenständige, an Hitze angepasste Biosphäre."
+            }
+          ]
+        },
+        {
+          "titel": "Einordnung",
+          "daten": [
             [
-              "Babiew",
-              "inhalte/himmelskoerper/planeten/details/babiew/hauptseite/index.html"
+              "Sternenkarten-ID",
+              "babiew-saelith-i"
             ],
             [
-              "Speziesdossier Aeromorphen",
-              "inhalte/spezies/Biologische Spezies/Aeromorphen/Hauptseite_übersicht/Spezies.html"
+              "Position",
+              "Erster Planet"
+            ],
+            [
+              "Heimatspezies",
+              "Pyrokariden (Gigantische Lebensformen)"
+            ],
+            [
+              "Monde und Ringe",
+              "Keine"
+            ],
+            [
+              "Nachbarwelt",
+              "Babiew, Gasriese der Aeromorphen"
             ]
           ]
         }
@@ -202,80 +358,151 @@
     "Astronomie": {
       "gruppe": "Wissenschaft",
       "icon": "✧",
-      "intro": "Thyrrae I im Thyrrae-System.",
+      "intro": "Der innerste Planet um den gelben Zwerg Thyrrae.",
       "abschnitte": [
         {
-          "titel": "Bahn",
+          "titel": "Bahn und Position",
+          "text": [
+            "Thyrrae I ist der 1. von 4 Planeten im Thyrrae-System. Er umkreist Thyrrae in 0,38 AE Abstand – innerhalb der inneren Grenze der habitablen Zone (bei Thyrrae zwischen 1,11 und 1,94 AE). Er erhält 9,35-mal so viel Sternlicht wie die Erde.",
+            "Ohne Atmosphäre läge seine Gleichgewichtstemperatur bei rund 87 °C. Kohlendioxid und Schwefelverbindungen heben die Temperatur um rund 28 K über die Gleichgewichtstemperatur von etwa 87 °C."
+          ],
           "daten": [
             [
-              "Zentralkörper",
-              "Thyrrae"
+              "Sternsystem",
+              "Thyrrae-System"
+            ],
+            [
+              "Bahnposition",
+              "1. von 4 Planeten"
             ],
             [
               "Große Halbachse",
-              "0,38 AE (56,8 Mio. km)"
+              "0,38 AE (ca. 56,8 Mio. km)"
             ],
             [
               "Exzentrizität",
               "0,03"
             ],
             [
-              "Bahnneigung",
-              "1,8°"
+              "Umlaufzeit",
+              "82,3 Erdtage"
             ],
             [
-              "Umlaufzeit",
-              "82,3 Tage"
+              "Ortsjahr",
+              "ca. 41 Ortstage"
             ],
             [
               "Einstrahlung",
-              "9,349-fach der Erde"
+              "ca. 9,35-fach der Erde"
+            ],
+            [
+              "Habitable Zone von Thyrrae",
+              "1,11–1,94 AE"
             ]
           ]
         },
         {
-          "titel": "Am Himmel von Thyrrae I",
+          "titel": "Zentralstern",
           "text": [
-            "Thyrrae erscheint von hier aus etwa 1,53° groß (die Sonne von der Erde: 0,53°)."
-          ]
-        },
-        {
-          "titel": "Körper des Systems",
-          "zeitleiste": [
+            "Thyrrae ist ein heller, gelbweißer Hauptreihenstern der Spektralklasse F9 V mit 108 % der Sonnenmasse und 135 % ihrer Leuchtkraft – ein ruhiger Einzelstern und Zentralstern der Gaswelt Babiew."
+          ],
+          "daten": [
             [
-              "Thyrrae · Stern",
+              "Name",
+              "Thyrrae"
+            ],
+            [
+              "Typ",
               "Gelber Zwerg (F9 V)"
             ],
             [
-              "Thyrrae I · 0,38 AE · dieses Dossier",
-              "Gesteinsplanet"
+              "Masse",
+              "1,08 Sonnenmassen"
             ],
             [
-              "Thyrrae II · 0,72 AE",
-              "Gesteinsplanet"
+              "Radius",
+              "1,1 Sonnenradien"
             ],
             [
-              "Babiew · 1,3 AE",
-              "Gasriese"
+              "Leuchtkraft",
+              "1,35 Sonnenleuchtkräfte"
             ],
             [
-              "Thyrrae V · 9,4 AE",
-              "Eisriese"
+              "Oberflächentemperatur",
+              "ca. 6.000 K"
             ],
             [
-              "Schleiergürtel · 2,6–3,4 AE",
-              "Asteroidengürtel"
+              "Alter",
+              "ca. 3,4 Mrd. Jahre"
             ],
             [
-              "Äußeres Kometengebiet · 36–52 AE",
-              "Kometengebiet"
+              "Begleitsterne",
+              "keine (Einzelstern)"
             ]
           ],
           "verweise": [
             [
               "Thyrrae",
               "inhalte/himmelskoerper/sterne/details/thyrrae/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Rotation und Achse",
+          "daten": [
+            [
+              "Rotationsperiode",
+              "ca. 48 h"
             ],
+            [
+              "Achsneigung",
+              "7°"
+            ],
+            [
+              "Scheinbare Sterngröße",
+              "ca. 1,53° (Sonne von der Erde: 0,53°)"
+            ],
+            [
+              "Jahreszeiten",
+              "Schwach (geringe Achsneigung)"
+            ]
+          ]
+        },
+        {
+          "titel": "Monde",
+          "text": [
+            "Thyrrae I besitzt keine Monde."
+          ]
+        },
+        {
+          "titel": "Planeten des Systems",
+          "zeitleiste": [
+            [
+              "Thyrrae I · 0,38 AE",
+              "Thyrrae I, die Welt der Vulkanriesen, ist ein heißer, vulkanisch aktiver Gesteinsplanet mit basaltischen Hochländern, gewaltigen Calderen und schwefelhaltiger Atmosphäre – die Heimat der Pyrokariden, aufrecht gehender Giganten von 250 bis 800 Metern Höhe."
+            ],
+            [
+              "Thyrrae II · 0,72 AE",
+              "Thyrrae II ist eine heiße Treibhauswelt unter einer geschlossenen, hellen Wolkendecke."
+            ],
+            [
+              "Babiew · 1,3 AE",
+              "Babiew ist die Heimatwelt der Aeromorphen: eine Gaswelt mit mächtiger, extrem bewegter Atmosphäre, dauerhaften Sturmsystemen und Winden bis 1.000 km/h."
+            ],
+            [
+              "Schleiergürtel · 2,6–3,4 AE",
+              "Der Schleiergürtel zwischen 2,6 und 3,35 AE besteht aus hellen, staubbedeckten Gesteins- und Eisbrocken."
+            ],
+            [
+              "Thyrrae V · 9,4 AE",
+              "Thyrrae V ist ein ferner, blassblauer Eisriese."
+            ],
+            [
+              "Garovfeth-Kometenwolke · 36–52 AE",
+              "Ein ferner Gürtel aus Eiskörpern zwischen 36 und 52 AE."
+            ]
+          ],
+          "verweise": [
             [
               "Thyrrae II",
               "inhalte/himmelskoerper/planeten/details/thyrrae-ii/hauptseite/index.html"
@@ -285,9 +512,75 @@
               "inhalte/himmelskoerper/planeten/details/babiew/hauptseite/index.html"
             ],
             [
+              "Schleiergürtel",
+              "inhalte/himmelskoerper/sternensysteme/details/schleiergurtel/hauptseite/index.html"
+            ],
+            [
               "Thyrrae V",
               "inhalte/himmelskoerper/planeten/details/thyrrae-v/hauptseite/index.html"
+            ],
+            [
+              "Garovfeth-Kometenwolke",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=babiew-stern&objekt=babiew-kometengebiet"
             ]
+          ]
+        },
+        {
+          "titel": "Nachbarschaft und Anomalien",
+          "karten": [
+            {
+              "titel": "Raumzeitnarbe",
+              "text": "Ein kleiner, schwach leuchtender Körper im nachlaufenden Lagrange-Punkt von Babiew. Messungen zeigen Spuren von Datoralium – möglicherweise ein Rest der Raumzeitanomalie, aus der die Aeromorphen hervorgingen."
+            },
+            {
+              "titel": "Windkomet",
+              "text": "Ein Komet mit gewundenem, mehrfach geteiltem Schweif, der alle 52 Jahre das innere System durchquert. Die Aeromorphen deuten seine Wiederkehr als Zeichen großer Strömungswechsel."
+            },
+            {
+              "titel": "Nachbarsysteme",
+              "text": "Aurenn-System (12,7 Lj), Saelon-System (16 Lj), Thalor-System (20,2 Lj) – alle weit außerhalb der gravitativen Einflusszone von Thyrrae (rund 3,7 Lichtjahre)."
+            }
+          ],
+          "verweise": [
+            [
+              "Raumzeitnarbe",
+              "inhalte/himmelskoerper/asteroiden/details/raumzeitnarbe/hauptseite/index.html"
+            ],
+            [
+              "Windkomet",
+              "inhalte/himmelskoerper/kometen/details/windkomet/hauptseite/index.html"
+            ],
+            [
+              "Thyrrae-System in der Sternenkarte",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=babiew-stern"
+            ]
+          ]
+        },
+        {
+          "titel": "Bahndaten",
+          "daten": [
+            [
+              "Mittlere Entfernung",
+              "ca. 56,85 Mio. km"
+            ],
+            [
+              "Periapsis",
+              "0,3686 AE"
+            ],
+            [
+              "Apoapsis",
+              "0,3914 AE"
+            ],
+            [
+              "Bahnneigung",
+              "1,8°"
+            ]
+          ]
+        },
+        {
+          "titel": "Am Himmel von Thyrrae I",
+          "text": [
+            "Thyrrae steht als große, gleißende Scheibe am Himmel, oft gefiltert durch gelbliche Aerosolschleier. Nachts leuchten Thyrrae II und der Gasriese Babiew mit seinen Monden – Ziele pyrokaridischer Raumfahrt."
           ]
         }
       ]
@@ -306,44 +599,75 @@
             ],
             [
               "Masse",
-              "0,28 Erdmassen"
+              "0,12 Erdmassen"
             ],
             [
               "Mittlere Dichte",
-              "6,73 g/cm³"
+              "2,88 g/cm³"
             ],
             [
               "Oberflächenschwerkraft",
-              "7,33 m/s² (0,747 g)"
+              "3,1 m/s² (0,32 g)"
             ],
             [
               "Fluchtgeschwindigkeit",
-              "7,57 km/s"
+              "ca. 5 km/s"
+            ],
+            [
+              "Absolute Masse",
+              "ca. 7,17 · 10²³ kg"
+            ],
+            [
+              "Gesamtoberfläche",
+              "ca. 191 Mio. km²"
+            ],
+            [
+              "Zusammensetzung",
+              "Überwiegend silikatisch, kleiner Metallkern"
+            ],
+            [
+              "Magnetfeld",
+              "Schwach bis regional ausgeprägt"
             ]
-          ],
+          ]
+        },
+        {
+          "titel": "Physikalische Werte im Vergleich",
           "vergleich": {
             "mit": "Erde",
             "werte": [
               [
-                "Durchmesser",
-                7800,
-                12742,
-                "km"
-              ],
-              [
                 "Masse",
-                0.28,
+                0.12,
                 1,
                 "Erdmassen"
               ],
               [
-                "Schwerkraft",
-                0.75,
+                "Dichte",
+                2.88,
+                5.51,
+                "g/cm³"
+              ],
+              [
+                "Fluchtgeschwindigkeit",
+                5,
+                11.2,
+                "km/s"
+              ],
+              [
+                "Magnetfeld",
+                0.2,
                 1,
-                "g"
+                "× Erde"
               ]
             ]
           }
+        },
+        {
+          "titel": "Leicht und silikatreich",
+          "text": [
+            "Mit einer mittleren Dichte von etwa 2,88 g/cm³ besitzt Thyrrae I nur wenig dichtes Kernmaterial. Die Oberflächengravitation beträgt rund 3,14 m/s², die Fluchtgeschwindigkeit etwa 4,95 km/s. Die geringe Schwerkraft verringert die mechanische Belastung der gigantischen Körper der Pyrokariden."
+          ]
         }
       ]
     },
@@ -353,19 +677,26 @@
       "intro": "Planetare Struktur von Thyrrae I.",
       "abschnitte": [
         {
-          "titel": "Schalenbau",
+          "titel": "Aufbau",
+          "text": [
+            "Ein vergleichsweise kleiner, eisen- und schwefelhaltiger Kern mit möglicherweise teils flüssigen Bereichen erzeugt nur schwache magnetische Aktivität. Im silikatischen Mantel sorgen radioaktive Elemente für Wärme und langlebige Aufstiegsregionen. Die basaltische Kruste wechselt zwischen stabilen Hochflächen und aktiven Bruchsystemen."
+          ],
           "schichten": [
             [
               "Kruste",
-              "Silikatgestein"
+              "Basaltisch, erstarrte Lava, stabile Plattformen, tiefe Spalten"
+            ],
+            [
+              "Magmakammern",
+              "Regional, unter aktiven Provinzen"
             ],
             [
               "Mantel",
-              "Dichteres Silikatgestein"
+              "Silikatisch, Konvektion, thermische Aufstiegsregionen"
             ],
             [
               "Kern",
-              "Eisen und Nickel"
+              "Klein, eisen- und schwefelhaltig, teils flüssig"
             ]
           ]
         }
@@ -374,12 +705,50 @@
     "Geografie": {
       "gruppe": "Natur",
       "icon": "△",
-      "intro": "Geografie von Thyrrae I.",
+      "intro": "Fünf große Landregionen ohne Ozeane.",
       "abschnitte": [
         {
-          "titel": "Oberfläche",
+          "titel": "Landschaften",
+          "liste": [
+            "Ausgedehnte vulkanische Hochländer",
+            "Gewaltige Calderen und erstarrte Lavameere",
+            "Mineralische Schluchten und großflächige Krustenbrüche",
+            "Schwefelreiche Tiefebenen",
+            "Geothermisch erwärmte Plateaus",
+            "Tektonisch stabile Wanderkorridore",
+            "Kühlere Gebirgshochlagen",
+            "Asche- und Mineralwüsten"
+          ]
+        },
+        {
+          "titel": "Hauptregionen",
+          "karten": [
+            {
+              "titel": "Kharavel-Hochland",
+              "text": "Basaltisches Hochplateau mit tragfähigem Gestein – bedeutendes Siedlungsgebiet mit geothermischen Versorgungsfeldern und Wanderwegen."
+            },
+            {
+              "titel": "Varketh-Calderen",
+              "text": "Zusammenhängende Vulkankessel mit aktiven Magmakammern und reichen Ablagerungen – Forschungsgebiet."
+            },
+            {
+              "titel": "Theravan-Gebirge",
+              "text": "Kühlere mineralische Hochregion zur Wärmeabgabe – Brut- und Regenerationsstätten."
+            },
+            {
+              "titel": "Sulvarische Tiefebenen",
+              "text": "Schwefelreiches Tiefland mit dichten Gasansammlungen und thermophiler Biosphäre – gefährlich für fremde Spezies."
+            },
+            {
+              "titel": "Orthek-Bruchland",
+              "text": "Gewaltige Krustenbrüche, Schluchten und aufsteigende Gase – geothermische Industriegebiete."
+            }
+          ]
+        },
+        {
+          "titel": "Hinweis",
           "text": [
-            "Die Oberfläche von Thyrrae I ist sehr heiß und von Einschlagkratern geprägt."
+            "Die Namen der Hauptregionen sind neue Entwurfsfestlegungen."
           ]
         }
       ]
@@ -390,9 +759,53 @@
       "intro": "Atmosphäre von Thyrrae I.",
       "abschnitte": [
         {
-          "titel": "Gashülle",
+          "titel": "Zusammensetzung",
           "text": [
-            "Thyrrae I besitzt keine nennenswerte Atmosphäre – dafür ist die Schwerkraft zu gering."
+            "Die Atmosphäre ist eine vulkanisch geprägte Sekundäratmosphäre mit etwa 0,55 bar: rund 60 % Kohlendioxid, 30 % Stickstoff, 5 % Schwefeldioxid, 4 % Argon und 1 % weitere Gase, regional stark schwankend. Sauerstoff gibt es nur in Spuren. Ausgasungen erneuern die Atmosphäre fortlaufend und gleichen Verluste teilweise aus; ihre langfristige Stabilität ist eine fiktionale planetologische Modellannahme. Menschen benötigen geschlossene Atem- und Schutzsysteme."
+          ],
+          "balken": {
+            "werte": [
+              [
+                "Kohlendioxid",
+                60
+              ],
+              [
+                "Stickstoff",
+                30
+              ],
+              [
+                "Schwefeldioxid",
+                5
+              ],
+              [
+                "Argon",
+                4
+              ],
+              [
+                "Weitere Gase",
+                1
+              ]
+            ]
+          }
+        },
+        {
+          "titel": "Druck",
+          "daten": [
+            [
+              "Mittlerer Oberflächendruck",
+              "ca. 0,55 bar"
+            ]
+          ]
+        },
+        {
+          "titel": "Wolkenschichten",
+          "liste": [
+            "Schwefelhaltige Aerosolschichten",
+            "Gelbliche und weißliche Mineralwolken",
+            "Dunkle Aschewolken über aktiven Vulkanprovinzen",
+            "Hochreichende Eruptionswolken",
+            "Reflektierende obere Atmosphärenschichten",
+            "Wolkenbildung entlang thermischer Auftriebszonen"
           ]
         }
       ]
@@ -403,9 +816,55 @@
       "intro": "Klima von Thyrrae I.",
       "abschnitte": [
         {
-          "titel": "Temperatur",
+          "titel": "Temperaturzonen",
           "text": [
-            "Bei 0,38 AE Abstand zu Thyrrae liegt die Gleichgewichtstemperatur von Thyrrae I bei rund 199 °C – sehr heiß."
+            "Thyrrae I ist eine heiße Vulkanwelt mit starken regionalen Gegensätzen. Kühlere Hochländer erreichen 25–70 °C, gewöhnliche Ebenen 80–160 °C, geothermisch aktive Flächen lokal 200–500 °C; unmittelbare Magmabereiche sind 700–1.250 °C heiß. Thermische Luftströmungen sind stark, und nach vulkanischen Ereignissen ändern sich die Bedingungen lokal schnell."
+          ],
+          "skala": {
+            "einheit": "°C",
+            "min": 0,
+            "max": 600,
+            "bereiche": [
+              [
+                "Kühlere Hochländer",
+                25,
+                70
+              ],
+              [
+                "Mineralische Ebenen",
+                80,
+                160
+              ],
+              [
+                "Geothermisch aktive Oberflächen",
+                200,
+                500
+              ]
+            ]
+          }
+        },
+        {
+          "titel": "Stürme",
+          "karten": [
+            {
+              "titel": "Staub- und Aschestürme",
+              "text": "Mineralischer Staub und vulkanische Asche."
+            },
+            {
+              "titel": "Gasfronten",
+              "text": "Schwefelhaltige Gasfronten und aufsteigende Heißgaswirbel."
+            },
+            {
+              "titel": "Blitze",
+              "text": "Elektrische Entladungen in dichten Aschewolken."
+            },
+            {
+              "titel": "Temperaturgrenzen",
+              "text": "Sturmsysteme entlang großer Temperaturgrenzen."
+            }
+          ],
+          "text": [
+            "Gewöhnlichen Stürmen widerstehen die Pyrokariden dank ihrer Körpermasse und Schutzstruktur; kleinere Lebewesen und ungeschützte Infrastruktur sind gefährdet."
           ]
         }
       ]
@@ -416,9 +875,15 @@
       "intro": "Gewässer von Thyrrae I.",
       "abschnitte": [
         {
-          "titel": "Wasser",
-          "text": [
-            "Für flüssiges Wasser ist es viel zu heiß."
+          "titel": "Flüssigkeiten",
+          "liste": [
+            "Keine globalen Wasserozeane",
+            "Salzreiche Gewässer in kühleren Gebieten",
+            "Unterirdische Reservoire unter erhöhtem Druck",
+            "Schwefelreiche Flüssigkeitsbecken",
+            "Mineralisch gesättigte hydrothermale Lösungen",
+            "Magmaseen als eigene Landschaftsform",
+            "Wasser überwiegend in Reservoiren und Mineralen gebunden"
           ]
         }
       ]
@@ -429,9 +894,41 @@
       "intro": "Geologie von Thyrrae I.",
       "abschnitte": [
         {
-          "titel": "Geologie",
-          "text": [
-            "Thyrrae I ist geologisch weitgehend erstarrt; Einschläge haben seine Oberfläche geformt."
+          "titel": "Vulkanismus",
+          "liste": [
+            "Gewaltige Schildvulkane",
+            "Calderen von Dutzenden bis Hunderten Kilometern",
+            "Lavakanäle und unterirdische Magmakammern",
+            "Schwefelreiche hydrothermale Felder",
+            "Großflächige basaltische Plateaus",
+            "Wiederkehrende regionale Erdbeben",
+            "Langlebige Mantelaufstiegszonen",
+            "Stabile Regionen für die Bewegung gigantischer Organismen"
+          ]
+        },
+        {
+          "titel": "Besondere Landschaften",
+          "karten": [
+            {
+              "titel": "Thermische Terrassen",
+              "text": "Stufen unterschiedlicher Temperatur zur Wärmeaufnahme und -abgabe."
+            },
+            {
+              "titel": "Basaltsäulenfelder",
+              "text": "Hunderte Meter hohe Säulen, teils Teil pyrokaridischer Siedlungen."
+            },
+            {
+              "titel": "Wandernde Wärmegrenzen",
+              "text": "Aktive Regionen verlagern sich über Jahrzehnte und Jahrhunderte."
+            },
+            {
+              "titel": "Mineralische Nebelmeere",
+              "text": "Becken mit gelblichen, weißen und rötlichen Aerosolschichten."
+            },
+            {
+              "titel": "Regenerationsfelder",
+              "text": "Kontrollierbare Temperaturgradienten für Ruhe, Wachstum und Heilung."
+            }
           ]
         }
       ]
@@ -439,12 +936,30 @@
     "Biosphäre": {
       "gruppe": "Natur",
       "icon": "❧",
-      "intro": "Biosphäre von Thyrrae I.",
+      "intro": "Eine Biosphäre aus Hitze und Mineralen.",
       "abschnitte": [
         {
-          "titel": "Leben",
+          "titel": "Thermophile Biosphäre",
           "text": [
-            "Auf Thyrrae I ist kein Leben verzeichnet."
+            "Chemosynthetische Primärproduzenten und mineralverarbeitende Mikroorganismen bilden die Basis. Mehrzellige Organismen mit keramisch verstärkten Oberflächen besiedeln hydrothermale Spalten, erkaltete Lavafelder und kühlere Hochländer. Die Biosphäre entwickelte sich ohne Verbindung zu anderen APORIA-Spezies; die Pyrokariden sind nicht ihre einzigen Bewohner."
+          ]
+        },
+        {
+          "titel": "Floraanaloge Lebensformen",
+          "liste": [
+            "Mineralabscheidende Flächenorganismen",
+            "Thermochemisch aktive Kolonien",
+            "Hochtemperaturbeständige Faserorganismen",
+            "Nährstoffspeichernde mineralisch-biologische Strukturen"
+          ]
+        },
+        {
+          "titel": "Faunaanaloge Lebensformen",
+          "liste": [
+            "Thermophile Spaltenbewohner",
+            "Mineralgepanzerte und schwefelverarbeitende Organismen",
+            "Lebewesen mit regulierbaren Wärmeabgabeflächen",
+            "Schwebende oder gleitende Formen in thermischen Auftriebsgebieten"
           ]
         }
       ]
@@ -452,28 +967,41 @@
     "Spezies": {
       "gruppe": "Zivilisation",
       "icon": "✿",
-      "intro": "Spezies von Thyrrae I.",
+      "intro": "Die Pyrokariden – die Vulkanriesen.",
       "abschnitte": [
         {
-          "titel": "Bewohner",
+          "titel": "Pyrokariden",
           "text": [
-            "Thyrrae I ist keine Heimat einer intelligenten Spezies."
+            "Pyrokariden gehen aufrecht auf zwei Beinen und besitzen vier manipulierende Arme. Mineralisch-biologische Tragstrukturen und hochtemperaturbeständige keramische Schutzschichten halten ihre gewaltigen Körper zusammen; ein eigener Wärmekreislauf und geothermisch-chemische Energieversorgung treiben sie an."
+          ],
+          "daten": [
+            [
+              "Körperhöhe",
+              "250–800 m"
+            ],
+            [
+              "Lebenserwartung",
+              "vorgeschlagen 8.000–30.000 Jahre"
+            ],
+            [
+              "Gliedmaßen",
+              "Zwei Beine, vier Arme"
+            ],
+            [
+              "Energie",
+              "Geothermisch und chemisch"
+            ]
           ]
         },
         {
-          "titel": "Im System von Babiew",
-          "text": [
-            "Das Thyrrae-System ist die Heimat der Aeromorphen: Ihr Planet Babiew umkreist Thyrrae."
-          ],
-          "verweise": [
-            [
-              "Babiew",
-              "inhalte/himmelskoerper/planeten/details/babiew/hauptseite/index.html"
-            ],
-            [
-              "Speziesdossier Aeromorphen",
-              "inhalte/spezies/Biologische Spezies/Aeromorphen/Hauptseite_übersicht/Spezies.html"
-            ]
+          "titel": "Anpassungen",
+          "liste": [
+            "Geringe Schwerkraft und hochfeste Tragmaterialien",
+            "Große Standflächen verteilen das Gewicht",
+            "Kühlere Höhen unterstützen die Wärmeabgabe",
+            "Mineralreiche Umwelt liefert Material für Wachstum und Regeneration",
+            "Große thermische Speicher ermöglichen Wanderungen",
+            "Aktive Magmabereiche werden nicht dauerhaft betreten"
           ]
         }
       ]
@@ -484,25 +1012,25 @@
       "intro": "Zivilisation von Thyrrae I.",
       "abschnitte": [
         {
-          "titel": "Siedlungen",
-          "text": [
-            "Für Thyrrae I sind keine dauerhaften Siedlungen verzeichnet."
+          "titel": "Gesellschaften",
+          "liste": [
+            "Mehrere regionale Gesellschaften mit Selbstverwaltung",
+            "Gigantische Siedlungsgebiete",
+            "Geothermische Energieversorgung und große Industrie",
+            "Medizinische Regenerationsanlagen und geschützte Brutstätten",
+            "Wärme-Andockstationen",
+            "Kontaktstationen für kleinere Spezies"
           ]
         },
         {
-          "titel": "Im System von Babiew",
-          "text": [
-            "Das Thyrrae-System ist die Heimat der Aeromorphen: Ihr Planet Babiew umkreist Thyrrae."
-          ],
-          "verweise": [
-            [
-              "Babiew",
-              "inhalte/himmelskoerper/planeten/details/babiew/hauptseite/index.html"
-            ],
-            [
-              "Speziesdossier Aeromorphen",
-              "inhalte/spezies/Biologische Spezies/Aeromorphen/Hauptseite_übersicht/Spezies.html"
-            ]
+          "titel": "Architektur",
+          "liste": [
+            "Monumentale offene Bauwerke und Aufenthaltsplattformen",
+            "Gigantische Traggestelle und Wärmeversorgungstürme",
+            "Keramische Verbundkonstruktionen aus vulkanischem Material",
+            "Geothermische Kraftwerke und Tiefenextraktion",
+            "Kleine technische Bedienbereiche in gigantischen Komplexen",
+            "Keine vergrößerten Menschenstädte – Architektur folgt der Thermobiologie"
           ]
         }
       ]
@@ -513,9 +1041,32 @@
       "intro": "Geschichte von Thyrrae I.",
       "abschnitte": [
         {
-          "titel": "Entstehung",
-          "text": [
-            "Thyrrae I entstand zusammen mit dem Thyrrae-System vor rund 3,4 Milliarden Jahren."
+          "titel": "Zeitleiste",
+          "zeitleiste": [
+            [
+              "Anfänge",
+              "Thermophile Organismen in geothermischen Regionen"
+            ],
+            [
+              "Evolution",
+              "Mineralische Schutzstrukturen, wachsende Körper, aktive Wärmekreisläufe"
+            ],
+            [
+              "Aufrechter Gang",
+              "Entwicklung aufrechter Fortbewegung"
+            ],
+            [
+              "Intelligenz",
+              "Intelligente Gemeinschaften, erste versorgte Siedlungen"
+            ],
+            [
+              "Industrie",
+              "Geothermische Energietechnik, Rohstoffabbau, planetenweite Kommunikation"
+            ],
+            [
+              "Gegenwart",
+              "Automatisierte Raumfahrt; Kontakt mit den Aeromorphen wird ausgearbeitet"
+            ]
           ]
         }
       ]
@@ -526,9 +1077,12 @@
       "intro": "Fraktionen von Thyrrae I.",
       "abschnitte": [
         {
-          "titel": "Ansprüche",
-          "text": [
-            "Für Thyrrae I sind keine Fraktionsansprüche verzeichnet."
+          "titel": "Politik",
+          "liste": [
+            "Keine übergeordnete interstellare Fraktionszugehörigkeit",
+            "Mehrere eigenständige politische Gemeinschaften",
+            "Mögliche Kontakte zum Konsortium über Babiew und Pheyra",
+            "Wirtschaftliche Zusammenarbeit bedeutet keine politische Mitgliedschaft"
           ]
         }
       ]
@@ -540,9 +1094,23 @@
       "abschnitte": [
         {
           "titel": "Rohstoffe",
-          "liste": [
-            "Silikatgestein",
-            "Metallerze"
+          "karten": [
+            {
+              "titel": "Gesteine",
+              "text": "Basalt, Silikate, vulkanisches Glas, kristalline Formationen."
+            },
+            {
+              "titel": "Erze und Oxide",
+              "text": "Eisen-, Titan- und Kupferverbindungen, Aluminiumoxide, Magnesium."
+            },
+            {
+              "titel": "Schwefel",
+              "text": "Schwefel, Sulfide und Sulfate."
+            },
+            {
+              "titel": "Energie",
+              "text": "Geothermie, thermochemische Speicher, radioaktive Minerale, keramische Ausgangsstoffe."
+            }
           ]
         }
       ]
@@ -553,22 +1121,15 @@
       "intro": "Erforschung von Thyrrae I.",
       "abschnitte": [
         {
-          "titel": "Offene Fragen",
+          "titel": "Forschungsfelder",
           "liste": [
-            "Wie ist der innere Aufbau beschaffen?",
-            "Gab es früher eine dichtere Atmosphäre?"
-          ]
-        },
-        {
-          "titel": "In der Sternenkarte",
-          "text": [
-            "Thyrrae I ist mit allen Bahndaten im Thyrrae-System der Sternenkarte eingetragen."
-          ],
-          "verweise": [
-            [
-              "In der Sternenkarte zeigen",
-              "Menüs/Sternenkarte/Sternenkarte.html?system=babiew-stern&objekt=babiew-saelith-i"
-            ]
+            "Planetare Wärmeentwicklung und atmosphärische Verluste",
+            "Gigantische thermobiologische Organismen und ihre Evolution",
+            "Biologisch erzeugte Hochtemperaturkeramiken",
+            "Geothermische Energieumwandlung",
+            "Hitzebeständige Elektronik",
+            "Biologische Wärmetransportsysteme",
+            "Kartierung unterirdischer Reservoire"
           ]
         }
       ]
@@ -579,9 +1140,46 @@
       "intro": "Besonderheiten von Thyrrae I.",
       "abschnitte": [
         {
-          "titel": "Besonderheiten",
+          "titel": "Rekorde",
+          "daten": [
+            [
+              "Größte Lebensformen",
+              "Pyrokariden, 250–800 m hoch"
+            ],
+            [
+              "Lebenserwartung der Pyrokariden",
+              "vorgeschlagen 8.000–30.000 Jahre"
+            ],
+            [
+              "Größte Calderen",
+              "mehrere Hundert Kilometer Durchmesser"
+            ],
+            [
+              "Basaltsäulen",
+              "mehrere Hundert Meter hoch"
+            ]
+          ]
+        },
+        {
+          "titel": "Im Spiel",
           "liste": [
-            "Innerster Planet des Thyrrae-Systems"
+            "Gigantische Siedlungen und bis zu 800 m große Bewohner",
+            "Hitzebeständige Spezialfahrzeuge",
+            "Geothermische Anlagen reparieren, neue Werkstoffe erforschen",
+            "Verletzte Pyrokariden medizinisch unterstützen",
+            "Expeditionen in geothermische Tiefenspalten",
+            "Interplanetare Missionen nach Babiew und Ayel"
+          ]
+        },
+        {
+          "titel": "Gefahren",
+          "liste": [
+            "Extreme Temperaturen und giftige Atmosphäre",
+            "Vulkanische Asche und aggressive Aerosole",
+            "Seismische Aktivität, Gesteinsabbrüche, instabile Lava",
+            "Industrielle Hochtemperaturbereiche",
+            "Mechanische Gefahren durch gigantische Organismen",
+            "Erhöhte Strahlung – nur mit Schutzausrüstung"
           ]
         }
       ]
@@ -592,50 +1190,29 @@
       "intro": "Medienarchiv von Thyrrae I.",
       "abschnitte": [
         {
-          "titel": "Thyrrae I – Archivbild",
+          "titel": "Thyrrae I aus dem All",
           "bild": true,
-          "bildtext": "Thyrrae I"
+          "bildtext": "Thyrrae I – Welt der Vulkanriesen"
         }
       ]
     },
     "Gaszusammensetzung": {
-      "gruppe": "Weitere",
-      "icon": "◆",
+      "gruppe": "Natur",
+      "icon": "☁",
       "intro": "Gaszusammensetzung von Thyrrae I.",
-      "abschnitte": [
-        {
-          "titel": "Gaszusammensetzung",
-          "text": [
-            "Thyrrae I ist ein kleiner, glühend heißer Gesteinsplanet ohne nennenswerte Atmosphäre."
-          ]
-        }
-      ]
+      "abschnitte": []
     },
     "Wolkenschichten": {
-      "gruppe": "Weitere",
-      "icon": "◆",
+      "gruppe": "Natur",
+      "icon": "☁",
       "intro": "Wolkenschichten von Thyrrae I.",
-      "abschnitte": [
-        {
-          "titel": "Wolkenschichten",
-          "text": [
-            "Thyrrae I ist ein kleiner, glühend heißer Gesteinsplanet ohne nennenswerte Atmosphäre."
-          ]
-        }
-      ]
+      "abschnitte": []
     },
     "Stürme": {
-      "gruppe": "Weitere",
-      "icon": "◆",
+      "gruppe": "Natur",
+      "icon": "☀",
       "intro": "Stürme von Thyrrae I.",
-      "abschnitte": [
-        {
-          "titel": "Stürme",
-          "text": [
-            "Thyrrae I ist ein kleiner, glühend heißer Gesteinsplanet ohne nennenswerte Atmosphäre."
-          ]
-        }
-      ]
+      "abschnitte": []
     }
   }
 }

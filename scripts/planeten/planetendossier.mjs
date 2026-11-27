@@ -129,7 +129,8 @@ const html = `<!doctype html>
 ${daten.globusAusblenden ? "" : `                <div class="pd-globus">
                     <span class="pd-orbit pd-orbit--1" aria-hidden="true"></span><span class="pd-orbit pd-orbit--2" aria-hidden="true"><i></i></span>
                     <div class="earth-player pd-player" data-earth-player${globusAttr}>
-                        <canvas width="320" height="320" tabindex="0" aria-label="${esc(daten.name)}-Globus. Mit Pfeiltasten oder Ziehen drehen, mit Mausrad, Plus oder Minus zoomen." hidden></canvas>
+${daten.globus ? `                        <img src="${rel(daten.globus)}" alt="Illustration: ${esc(daten.name)}" decoding="async">
+` : ""}                        <canvas width="320" height="320" tabindex="0" aria-label="${esc(daten.name)}-Globus. Mit Pfeiltasten oder Ziehen drehen, mit Mausrad, Plus oder Minus zoomen." hidden></canvas>
                         <div class="earth-controls" role="group" aria-label="Globussteuerung" hidden>
                             <button type="button" data-turn="-1" aria-label="Nach links drehen">‹</button>
                             <button type="button" data-turn="1" aria-label="Nach rechts drehen">›</button>

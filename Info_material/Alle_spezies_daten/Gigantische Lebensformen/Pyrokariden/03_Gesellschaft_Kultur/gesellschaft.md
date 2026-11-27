@@ -73,3 +73,7 @@
 - Erhalt persönlicher Aufzeichnungen und wissenschaftlicher Leistungen.
 - Kontrollierte Rückführung mineralischer Körperbestandteile in natürliche Stoffkreisläufe ist möglich.
 - Angehörige entscheiden über den Umgang mit den Überresten innerhalb der jeweiligen gesetzlichen Bestimmungen.
+
+DIe dunkle seite
+
+Gleichgültigkeit gegenüber hitzeempfindlichen Lebensformen

@@ -2,7 +2,7 @@
 const B = "assets/bilder/Alle Spezies+Übersicht/Biologische Spezies/Aeromorphen/";
 const H = B + "Unterseiten/Heimatwelt/", GE = B + "Unterseiten/Geschichte/", GS = B + "Unterseiten/Gesellschaft/", EN = B + "Unterseiten/Entwicklung/", PO = B + "Unterseiten/Politik/", ME = B + "Unterseiten/Medien/", BI = B + "Unterseiten/biologie/";
 export default {
-    ordner: "gigantischer-sturm-auf-einem-gasriesen", system: "babiew-system", planetId: "babiew-planet",
+    ordner: "babiew", system: "babiew-system", planetId: "babiew-planet",
     name: "Babiew", genitiv: "von Babiew", klasse: "Gasplanet", klasseLang: "Gaswelt mit Dauerstürmen (Saturn-Klasse)",
     spezies: { name: "Aeromorphen", gruppe: "Biologische Spezies", ordner: "Aeromorphen", seite: "inhalte/spezies/Biologische Spezies/Aeromorphen/Hauptseite_übersicht/Spezies.html" },
     intro: "Babiew ist die Heimatwelt der Aeromorphen: eine Gaswelt ohne erreichbare feste Oberfläche, deren mächtige Atmosphäre von dauerhaften Sturmsystemen mit Winden bis 1.000 km/h durchzogen ist. In ihren Wolkenschichten leben ganze Ökosysteme – und irgendwo in ihnen entstand vor über einer Million Jahren der erste Aeromorph.",

@@ -1,56 +1,135 @@
 {
-  "_erzeugt": "koerper-bauen",
   "name": "Oris",
   "genitiv": "von Oris",
   "dossierName": "Oris-Dossier",
-  "klasse": "Mond",
-  "intro": "Oris ist der große Mond Nalvyrs. Gemeinsam mit Saelon erzeugt er halbtägige Gezeiten; in Trichterbuchten steigt das Wasser um bis zu 9 Meter – Lebensraum, in dem sich viele regenerative Tierlinien entwickelten. Oris umkreist Nalvyr in 19,9 Tage.",
+  "klasse": "Mond · Terrestrischer Mond",
+  "intro": "Oris – die Welt der wandernden Giganten. Auf diesem kleinen Mond Nalvyrs beträgt die Schwerkraft nur 14 % der irdischen. Über tausende Kilometer lange Steppen ziehen die Gravanten: intelligente, vier- bis sechsbeinige Riesen von 100 bis 300 Metern Länge, getragen von mineralisch-organischen Skeletten.",
   "globusDaten": {
     "planet": "abgerundeter-trummermond-im-schwarzen-all",
-    "klasse": "Gestein",
+    "klasse": "Organisch geprägte Mondwelt",
     "radius": 1520000
   },
-  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=nalvyr-stern&objekt=nalvyr-oris",
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=nalvyr-stern",
   "grunddaten": [
     [
       "Archiv-ID",
       "AP-6944D04CBF"
     ],
     [
-      "Typ",
-      "Mond"
-    ],
-    [
-      "Sternsystem",
-      "Saelon-System"
-    ],
-    [
-      "Zentralkörper",
-      "Nalvyr"
-    ],
-    [
-      "Große Halbachse",
-      "297.706 km"
-    ],
-    [
-      "Umlaufzeit",
-      "19,9 Tage"
+      "Klasse",
+      "Terrestrischer Mond · biologisch aktive Niedriggravitationswelt"
     ],
     [
       "Durchmesser",
       "3.040 km"
     ],
     [
+      "Radius",
+      "1.520 km"
+    ],
+    [
       "Masse",
-      "0,65 Mondmassen"
+      "0,01 Erdmassen"
+    ],
+    [
+      "Dichte",
+      "3,25 g/cm³"
     ],
     [
       "Schwerkraft",
-      "0,14 g"
+      "0,14 g (1,4 m/s²)"
     ],
     [
-      "Gleichgewichtstemperatur",
-      "ca. -7 °C"
+      "Mittlere Oberflächentemperatur",
+      "ca. 6 °C"
+    ],
+    [
+      "Ozeane",
+      "ca. 25 % Gewässer und permanente Eisflächen"
+    ],
+    [
+      "Atmosphäre",
+      "74 % Stickstoff, 23 % Sauerstoff, 2 % Argon, 0,8 % Weitere Gase, 0,2 % Kohlendioxid"
+    ],
+    [
+      "Atmosphärendruck",
+      "ca. 0,8 bar"
+    ],
+    [
+      "Rotation (gebunden)",
+      "19,9 Erdtage (gebunden; Sonnentag ca. 21,5 Erdtage)"
+    ],
+    [
+      "Umlaufzeit",
+      "267 Erdtage"
+    ],
+    [
+      "Abstand zum Stern",
+      "0,76 AE"
+    ],
+    [
+      "Mutterplanet",
+      "Nalvyr (Gesteinsplanet)"
+    ],
+    [
+      "Abstand zum Mutterplaneten",
+      "ca. 297.706 km"
+    ],
+    [
+      "Umlauf um Nalvyr",
+      "19,9 Erdtage"
+    ],
+    [
+      "Monde",
+      "keine"
+    ],
+    [
+      "Zentralstern",
+      "Saelon, Orangefarbener Zwerg (K2 V)"
+    ],
+    [
+      "Einstrahlung",
+      "0,95-fach der Erde"
+    ],
+    [
+      "Achsneigung",
+      "0°"
+    ],
+    [
+      "Exzentrizität",
+      "0,035"
+    ],
+    [
+      "Fluchtgeschwindigkeit",
+      "2 km/s"
+    ],
+    [
+      "Alter",
+      "ca. 6,1 Mrd. Jahre"
+    ],
+    [
+      "Beiname",
+      "Welt der wandernden Giganten"
+    ],
+    [
+      "Archiv-ID",
+      "AP-6944D04CBF"
+    ],
+    [
+      "Rotation",
+      "Gebunden an Nalvyr"
+    ],
+    [
+      "Landmassen",
+      "Drei große zusammenhängende"
+    ],
+    [
+      "Fraktionszugehörigkeit",
+      "Noch nicht festgelegt"
+    ],
+    [
+      "Intelligente Spezies",
+      "Gravanten"
     ]
   ],
   "position": [
@@ -60,185 +139,128 @@
     ],
     [
       "Zentralstern",
-      "Saelon",
-      "inhalte/himmelskoerper/sterne/details/saelon/hauptseite/index.html"
+      "Saelon · K2 V"
     ],
     [
-      "Umläuft",
-      "Nalvyr",
-      "inhalte/himmelskoerper/planeten/details/nalvyr/hauptseite/index.html"
+      "Bahnposition",
+      "3. von 6 Planeten"
     ],
     [
-      "Abstand",
-      "297.706 km"
+      "Entfernung zur Sonne",
+      "31 Lichtjahre"
+    ],
+    [
+      "Nächste Nachbarsysteme",
+      "Thyrrae-System (16 Lj), Ixar-System (19,4 Lj)"
     ]
   ],
   "verknuepfungen": [
     {
       "icon": "✦",
-      "art": "Sternenkarte",
-      "titel": "Oris im Saelon-System",
-      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=nalvyr-stern&objekt=nalvyr-oris",
-      "route": null
-    },
-    {
-      "icon": "☀",
-      "art": "Zentralstern",
-      "titel": "Saelon",
-      "href": "inhalte/himmelskoerper/sterne/details/saelon/hauptseite/index.html",
-      "route": null
-    },
-    {
-      "icon": "◍",
-      "art": "Mutterplanet",
-      "titel": "Nalvyr",
-      "href": "inhalte/himmelskoerper/planeten/details/nalvyr/hauptseite/index.html",
+      "art": "Systemübersicht",
+      "titel": "Saelon-System",
+      "href": "inhalte/himmelskoerper/sternensysteme/details/saelon-system/hauptseite/index.html",
       "route": null
     },
     {
       "icon": "✿",
-      "art": "Heimatwelt der Regeneranten",
-      "titel": "Nalvyr",
-      "href": "inhalte/himmelskoerper/planeten/details/nalvyr/hauptseite/index.html",
+      "art": "Heimische Spezies",
+      "titel": "Gravanten",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Gravanten/hauptseite/Spezies.html",
       "route": null
     },
     {
       "icon": "◈",
       "art": "Spezies-Dossier",
-      "titel": "Regeneranten",
-      "href": "inhalte/spezies/Biologische Spezies/Regeneranten/hauptseite/Spezies.html",
+      "titel": "Heimatwelt",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Gravanten/Unterseiten/Heimatwelt/heimatwelt.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Politik und Fraktionen",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Gravanten/Unterseiten/Politik/politik.html",
+      "route": null
+    },
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Saelon-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=nalvyr-stern",
       "route": null
     }
   ],
   "quellen": [
     {
-      "titel": "Sternenkarte · Saelon-System",
-      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=nalvyr-stern&objekt=nalvyr-oris"
+      "titel": "Speziesdossier Gravanten · Heimatwelt",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Gravanten/Unterseiten/Heimatwelt/heimatwelt.html"
     },
     {
-      "titel": "Speziesdossier Regeneranten",
-      "href": "inhalte/spezies/Biologische Spezies/Regeneranten/hauptseite/Spezies.html"
+      "titel": "Speziesdossier Gravanten · Geschichte",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Gravanten/Unterseiten/Geschichte/geschichte.html"
+    },
+    {
+      "titel": "Speziesdossier Gravanten · Gesellschaft",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Gravanten/Unterseiten/Gesellschaft/gesellschaft.html"
+    },
+    {
+      "titel": "Speziesdossier Gravanten · Politik",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Gravanten/Unterseiten/Politik/politik.html"
+    },
+    {
+      "titel": "Speziesdossier Gravanten · Allgemeines",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Gravanten/Unterseiten/Allgemeines/allgemeines.html"
     }
   ],
   "design": {
     "farben": {
-      "nacht": "#090909",
-      "tiefe": "#151413",
-      "akzent": "#d4d1ca",
-      "sand": "#d7cbaf",
-      "moos": "#b1c9a1",
-      "ozean": "#8eb0be",
-      "glas": "rgba(8, 12, 18, .76)",
-      "glas-hell": "rgba(16, 22, 32, .82)",
-      "linie": "rgba(255, 255, 255, .12)",
-      "linie-hell": "rgba(255, 255, 255, .3)",
-      "text": "#eef2f6",
-      "leise": "#a8b0bc",
-      "aporia-page-tint": "#55534e"
-    },
-    "schichten": [
-      [
-        "Orbit",
-        "Astronomie"
-      ],
-      [
-        "Planet",
-        "Mutterplanet"
-      ],
-      [
-        "Kräfte",
-        "Gezeiten"
-      ],
-      [
-        "Tiefe",
-        "Geologie"
-      ]
-    ]
+      "nacht": "#060906",
+      "tiefe": "#0e140d",
+      "akzent": "#d8c27a",
+      "sand": "#d9c9a0",
+      "moos": "#9cc47a",
+      "ozean": "#4f86a6",
+      "glas": "rgba(14, 20, 13, .8)",
+      "glas-hell": "rgba(24, 32, 22, .86)",
+      "linie": "rgba(216, 194, 122, .16)",
+      "linie-hell": "rgba(220, 210, 150, .36)",
+      "text": "#f1f2e8",
+      "leise": "#b0b49c",
+      "aporia-page-tint": "#4f5a28"
+    }
   },
   "kapitel": {
     "Mutterplanet": {
-      "gruppe": "Wissenschaft",
-      "icon": "◐",
+      "gruppe": "Weitere",
+      "icon": "◆",
       "intro": "Mutterplanet von Oris.",
-      "abschnitte": [
-        {
-          "titel": "Nalvyr",
-          "text": [
-            "Nalvyr ist die Heimatwelt der Regeneranten: eine alte, biologisch vielfältige Gesteinswelt mit zwei großen Kontinenten, dem Tessal-Archipel, großen Flussdeltas und ausgedehnten Meeresräumen."
-          ],
-          "daten": [
-            [
-              "Typ",
-              "Gesteinsplanet"
-            ],
-            [
-              "Durchmesser",
-              "12.488 km"
-            ],
-            [
-              "Abstand des Mondes",
-              "297.706 km (47,7 Planetenradien)"
-            ]
-          ],
-          "verweise": [
-            [
-              "Nalvyr",
-              "inhalte/himmelskoerper/planeten/details/nalvyr/hauptseite/index.html"
-            ]
-          ]
-        },
-        {
-          "titel": "Weitere Monde von Nalvyr",
-          "liste": [
-            "Teshra – Umlauf in 4,1 Tage"
-          ],
-          "verweise": [
-            [
-              "Teshra",
-              "inhalte/himmelskoerper/monde/details/teshra/hauptseite/index.html"
-            ]
-          ]
-        }
-      ]
+      "abschnitte": []
     },
     "Gezeiten": {
-      "gruppe": "Natur",
-      "icon": "≈",
+      "gruppe": "Weitere",
+      "icon": "◆",
       "intro": "Gezeiten von Oris.",
-      "abschnitte": [
-        {
-          "titel": "Gezeitenkräfte",
-          "text": [
-            "Auf seiner Bahn in 297.706 km Abstand wirken starke Gezeitenkräfte von Nalvyr auf Oris. Die leicht exzentrische Bahn (e = 0,03) knetet das Innere bei jedem Umlauf."
-          ]
-        }
-      ]
+      "abschnitte": []
     },
     "Gebundene Rotation": {
-      "gruppe": "Wissenschaft",
-      "icon": "↻",
+      "gruppe": "Weitere",
+      "icon": "◆",
       "intro": "Gebundene Rotation von Oris.",
-      "abschnitte": [
-        {
-          "titel": "Rotation",
-          "text": [
-            "Oris wendet Nalvyr vermutlich stets dieselbe Seite zu: Ein Tag dauert so lange wie ein Umlauf – 19,9 Tage."
-          ]
-        }
-      ]
+      "abschnitte": []
     },
     "Allgemeines": {
       "gruppe": "Weitere",
       "icon": "▤",
-      "intro": "Oris auf einen Blick.",
+      "intro": "Oris auf einen Blick: leichter Mond, weite Steppen, wandernde Riesen.",
       "abschnitte": [
         {
           "titel": "Kurzprofil",
           "bild": true,
-          "bildtext": "Oris",
+          "bildtext": "Oris – Welt der wandernden Giganten",
           "text": [
-            "Oris ist der große Mond Nalvyrs. Gemeinsam mit Saelon erzeugt er halbtägige Gezeiten; in Trichterbuchten steigt das Wasser um bis zu 9 Meter – Lebensraum, in dem sich viele regenerative Tierlinien entwickelten.",
-            "Oris umkreist Nalvyr in 19,9 Tage."
+            "Oris ist ein terrestrischer Mond von 3.040 Kilometern Durchmesser und etwa 0,65 Erdmondmassen. Er umläuft Nalvyr in 297.706 km Abstand alle 19,9 Tage und zeigt ihm stets dieselbe Seite; ein Sonnentag dauert rund 21,5 Erdtage. Auf der zugewandten Seite steht Nalvyr als gewaltiger Himmelskörper am Himmel.",
+            "Eine biologisch aktive Stickstoff-Sauerstoff-Atmosphäre von 0,8 bar reicht wegen der geringen Schwerkraft weit hinauf. Geologische und biologische Gasnachlieferung sowie ein atmosphärenstabilisierender APORIA-Effekt in den äußeren Schichten gleichen Verluste aus. 75 % der Oberfläche sind Land; die mittlere Temperatur liegt bei etwa 6 °C."
           ]
         },
         {
@@ -246,55 +268,121 @@
           "daten": [
             [
               "Typ",
-              "Mond"
+              "Terrestrischer Mond · biologisch aktive Niedriggravitationswelt"
             ],
             [
-              "Sternsystem",
-              "Saelon-System"
-            ],
-            [
-              "Zentralkörper",
-              "Nalvyr"
-            ],
-            [
-              "Große Halbachse",
-              "297.706 km"
-            ],
-            [
-              "Umlaufzeit",
-              "19,9 Tage"
-            ],
-            [
-              "Durchmesser",
-              "3.040 km"
-            ],
-            [
-              "Masse",
-              "0,65 Mondmassen"
+              "Zentralstern",
+              "Saelon (Orangefarbener Zwerg (K2 V))"
             ],
             [
               "Schwerkraft",
               "0,14 g"
             ],
             [
-              "Gleichgewichtstemperatur",
-              "ca. -7 °C"
+              "Durchmesser",
+              "3.040 km"
+            ],
+            [
+              "Mittlere Temperatur",
+              "ca. 6 °C"
+            ],
+            [
+              "Atmosphäre",
+              "Stickstoff-Sauerstoff, ca. 0,8 bar, weit ausgedehnt"
+            ],
+            [
+              "Wasser",
+              "ca. 25 % Gewässer und permanente Eisflächen"
+            ],
+            [
+              "Intelligente Spezies",
+              "Gravanten"
             ]
           ]
         },
         {
-          "titel": "Im System von Nalvyr",
-          "text": [
-            "Das Saelon-System ist die Heimat der Regeneranten: Ihr Planet Nalvyr umkreist Saelon, und Oris ist einer seiner Monde."
-          ],
-          "verweise": [
+          "titel": "Oris im Vergleich zur Erde",
+          "vergleich": {
+            "mit": "Erde",
+            "werte": [
+              [
+                "Durchmesser",
+                3040,
+                12742,
+                "km"
+              ],
+              [
+                "Schwerkraft",
+                0.14,
+                1,
+                "g"
+              ],
+              [
+                "Tageslänge",
+                477.6,
+                24,
+                "h"
+              ],
+              [
+                "Luftdruck (Mittel)",
+                0.8,
+                1,
+                "bar"
+              ],
+              [
+                "Mittlere Temperatur",
+                6,
+                15,
+                "°C"
+              ],
+              [
+                "Landfläche",
+                75,
+                29,
+                "%"
+              ]
+            ]
+          }
+        },
+        {
+          "titel": "Hauptmerkmale",
+          "karten": [
+            {
+              "titel": "Niedrige Schwerkraft",
+              "text": "0,14 g – ideale Bedingungen für gigantische Landlebewesen."
+            },
+            {
+              "titel": "Endlose Steppen",
+              "text": "Tausende Kilometer lange Wanderlandschaften."
+            },
+            {
+              "titel": "Stabilisierte Atmosphäre",
+              "text": "0,8 bar, weit ausgedehnt, mit APORIA-Effekt."
+            },
+            {
+              "titel": "Nalvyr am Himmel",
+              "text": "Der Mutterplanet beherrscht die zugewandte Seite."
+            }
+          ]
+        },
+        {
+          "titel": "Einordnung",
+          "daten": [
             [
-              "Nalvyr",
-              "inhalte/himmelskoerper/planeten/details/nalvyr/hauptseite/index.html"
+              "Sternenkarten-ID",
+              "nalvyr-oris"
             ],
             [
-              "Speziesdossier Regeneranten",
-              "inhalte/spezies/Biologische Spezies/Regeneranten/hauptseite/Spezies.html"
+              "Mutterplanet",
+              "Nalvyr, Heimat der Regeneranten"
+            ],
+            [
+              "Himmelskörpertyp",
+              "Terrestrischer Mond"
+            ],
+            [
+              "Heimatspezies",
+              "Gravanten (Gigantische Lebensformen)"
             ]
           ]
         }
@@ -303,90 +391,179 @@
     "Astronomie": {
       "gruppe": "Wissenschaft",
       "icon": "✧",
-      "intro": "Oris im Saelon-System.",
+      "intro": "Ein Mond mit eigener Zivilisation.",
       "abschnitte": [
         {
-          "titel": "Bahn",
+          "titel": "Bahn und Position",
+          "text": [
+            "Oris ist ein Mond von Nalvyr, dem 3. von 6 Planeten im Saelon-System. Er umläuft Nalvyr in rund 297.706 km Abstand alle 19,9 Tage; gemeinsam umkreisen beide Saelon in 0,76 AE Abstand – innerhalb der habitablen Zone (bei Saelon zwischen 0,71 und 1,24 AE). Er erhält 0,95-mal so viel Sternlicht wie die Erde.",
+            "Ohne Atmosphäre läge seine Gleichgewichtstemperatur bei rund -7 °C. Die Atmosphäre hebt die mittlere Temperatur von rund −7 °C (Gleichgewicht) auf etwa 6 °C; Wärmespeicherung und Luftströmungen dämpfen die Gegensätze zwischen langem Tag und langer Nacht."
+          ],
           "daten": [
             [
-              "Zentralkörper",
-              "Nalvyr"
+              "Sternsystem",
+              "Saelon-System"
+            ],
+            [
+              "Bahnposition",
+              "Mond von Nalvyr · 3. von 6 Planeten"
+            ],
+            [
+              "Mutterplanet",
+              "Nalvyr (Gesteinsplanet)"
+            ],
+            [
+              "Abstand zum Mutterplaneten",
+              "ca. 297.706 km"
+            ],
+            [
+              "Umlauf um Nalvyr",
+              "19,9 Erdtage"
             ],
             [
               "Große Halbachse",
-              "297.706 km"
+              "0,76 AE (ca. 113,7 Mio. km)"
             ],
             [
               "Exzentrizität",
-              "0,03"
-            ],
-            [
-              "Bahnneigung",
-              "2,2°"
+              "0,035"
             ],
             [
               "Umlaufzeit",
-              "19,9 Tage"
+              "267,2 Erdtage"
+            ],
+            [
+              "Ortsjahr",
+              "ca. 13 Ortstage"
+            ],
+            [
+              "Einstrahlung",
+              "ca. 0,95-fach der Erde"
+            ],
+            [
+              "Habitable Zone von Saelon",
+              "0,71–1,24 AE"
             ]
           ]
         },
         {
-          "titel": "Körper des Systems",
-          "zeitleiste": [
+          "titel": "Zentralstern",
+          "text": [
+            "Saelon ist ein alter, orangefarbener Hauptreihenstern der Spektralklasse K2 V mit 82 % der Sonnenmasse und 55 % ihrer Leuchtkraft. Mit rund 6,1 Milliarden Jahren ist er deutlich älter als die Sonne; seine magnetische Aktivität ist moderat, gelegentlich treten stärkere Aktivitätsphasen auf. Er ist Heimatstern der Regeneranten und Hauptstern eines Doppelsternsystems mit einem Weißen Zwerg."
+          ],
+          "daten": [
             [
-              "Saelon · Stern",
+              "Name",
+              "Saelon"
+            ],
+            [
+              "Typ",
               "Orangefarbener Zwerg (K2 V)"
             ],
             [
-              "Saelon B · Begleitstern in 180 AE",
-              "Weißer Zwerg"
+              "Masse",
+              "0,82 Sonnenmassen"
             ],
             [
-              "Saelon I · 0,13 AE",
-              "Gesteinsplanet"
+              "Radius",
+              "0,93 Sonnenradien"
             ],
             [
-              "Saelon II · 0,47 AE",
-              "Ozeanplanet"
+              "Leuchtkraft",
+              "0,55 Sonnenleuchtkräfte"
             ],
             [
-              "Nalvyr · 0,76 AE",
-              "Gesteinsplanet"
+              "Oberflächentemperatur",
+              "ca. 5.150 K"
             ],
             [
-              "Saelon IVa · 1,32 AE",
-              "Gesteinsplanet"
+              "Alter",
+              "ca. 6,1 Mrd. Jahre"
             ],
             [
-              "Kerythra · 2,68 AE",
-              "Zwergplanet"
-            ],
-            [
-              "Saelon V · 5,4 AE",
-              "Gasriese"
-            ],
-            [
-              "Saelon VI · 16 AE",
-              "Eisriese"
-            ],
-            [
-              "Saumgürtel · 2,3–3,1 AE",
-              "Asteroidengürtel"
-            ],
-            [
-              "Weißschleier · 30–42 AE",
-              "Kometengebiet"
+              "Begleitsterne",
+              "Ein Weißer Zwerg (Saelon B) – der ausgebrannte Rest eines einst massereicheren Sterns – in rund 180 AE Abstand"
             ]
           ],
           "verweise": [
             [
               "Saelon",
               "inhalte/himmelskoerper/sterne/details/saelon/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Rotation und Achse",
+          "daten": [
+            [
+              "Rotation (gebunden)",
+              "19,9 Erdtage (gebunden; Sonnentag ca. 21,5 Erdtage)"
             ],
             [
-              "Saelon B",
-              "inhalte/himmelskoerper/sterne/details/saelon-b/hauptseite/index.html"
+              "Achsneigung",
+              "0°"
             ],
+            [
+              "Scheinbare Sterngröße",
+              "ca. 0,65° (Sonne von der Erde: 0,53°)"
+            ],
+            [
+              "Jahreszeiten",
+              "Lange Tag- und Nachtphasen statt ausgeprägter Jahreszeiten"
+            ]
+          ]
+        },
+        {
+          "titel": "Monde",
+          "text": [
+            "Oris besitzt keine Monde."
+          ]
+        },
+        {
+          "titel": "Planeten des Systems",
+          "zeitleiste": [
+            [
+              "Saelon I · 0,13 AE",
+              "Saelon I ist eine sternnahe Obsidianwelt: Ihre einst geschmolzene Oberfläche ist zu dunklem, glasartigem Gestein erstarrt, durch das auf der Tagseite glühende Risse ziehen."
+            ],
+            [
+              "Saelon II · 0,47 AE",
+              "Saelon II ist eine heiße Dampfwelt: Ein tiefer, über 200 °C heißer Ozean liegt unter einer dichten, weißen Wasserdampfhülle, die nur der hohe Druck flüssig hält."
+            ],
+            [
+              "Nalvyr · 0,76 AE",
+              "Nalvyr ist die Heimatwelt der Regeneranten: eine alte, biologisch vielfältige Gesteinswelt mit zwei großen Kontinenten, dem Tessal-Archipel, großen Flussdeltas und ausgedehnten Meeresräumen."
+            ],
+            [
+              "Saelon IVa · 1,32 AE",
+              "Saelon IVa ist die größere Hälfte eines Doppelplaneten: Gemeinsam mit Saelon IVb umkreist sie einen Schwerpunkt, der außerhalb beider Körper liegt."
+            ],
+            [
+              "Saumgürtel · 2,3–3,1 AE",
+              "Der Saumgürtel zwischen 2,3 und 3,05 AE ist auffallend reich an schweren Elementen – Material, das Saelon B in seiner Riesenphase einst ins System blies."
+            ],
+            [
+              "Kerythra · 2,68 AE",
+              "Kerythra ist der größte Körper des Saumgürtels: ein basaltischer Zwergplanet, dessen dunkle Kruste auf frühe Aufschmelzung hindeutet."
+            ],
+            [
+              "Saelon V · 5,4 AE",
+              "Saelon V ist ein kalter, saturnähnlicher Gasriese mit einem breiten Ringsystem aus Eis."
+            ],
+            [
+              "Saelon VI · 16 AE",
+              "Saelon VI ist ein silberblauer Eisriese auf einer stark elliptischen, um 14° geneigten Bahn – ein Planet, den die Schwerkraft von Saelon B über Milliarden Jahre aus seiner ursprünglichen Bahn gezogen hat."
+            ],
+            [
+              "Weißschleier · 30–42 AE",
+              "Ein Staub- und Eisgürtel zwischen 30 und 42 AE, dessen äußerer Rand vom Weißen Zwerg Saelon B begrenzt wird."
+            ],
+            [
+              "Saelon B · 180 AE",
+              "Saelon B ist ein Weißer Zwerg mit 62 % der Sonnenmasse, kaum größer als Nalvyr."
+            ]
+          ],
+          "verweise": [
             [
               "Saelon I",
               "inhalte/himmelskoerper/planeten/details/saelon-i/hauptseite/index.html"
@@ -404,6 +581,10 @@
               "inhalte/himmelskoerper/planeten/details/saelon-iva/hauptseite/index.html"
             ],
             [
+              "Saumgürtel",
+              "inhalte/himmelskoerper/sternensysteme/details/saumgurtel/hauptseite/index.html"
+            ],
+            [
               "Kerythra",
               "inhalte/himmelskoerper/zwergplaneten/details/kerythra/hauptseite/index.html"
             ],
@@ -414,7 +595,61 @@
             [
               "Saelon VI",
               "inhalte/himmelskoerper/planeten/details/saelon-vi/hauptseite/index.html"
+            ],
+            [
+              "Weißschleier",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=nalvyr-stern&objekt=nalvyr-weissschleier"
+            ],
+            [
+              "Saelon B",
+              "inhalte/himmelskoerper/sterne/details/saelon-b/hauptseite/index.html"
             ]
+          ]
+        },
+        {
+          "titel": "Nachbarschaft und Anomalien",
+          "karten": [
+            {
+              "titel": "Tränenkomet",
+              "text": "Ein periodischer Komet mit türkisblauem Schweifbogen, der alle 82 Jahre wiederkehrt. In alten Narethi-Archiven gilt er als „Träne, die heilt“ – seine Wiederkehr wurde mit großen Heilfesten verbunden."
+            },
+            {
+              "titel": "Nachbarsysteme",
+              "text": "Thyrrae-System (16 Lj), Ixar-System (19,4 Lj), Thalor-System (25 Lj) – alle weit außerhalb der gravitativen Einflusszone von Saelon (rund 3,4 Lichtjahre)."
+            }
+          ],
+          "verweise": [
+            [
+              "Tränenkomet",
+              "inhalte/himmelskoerper/kometen/details/tranenkomet/hauptseite/index.html"
+            ],
+            [
+              "Saelon-System in der Sternenkarte",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=nalvyr-stern"
+            ]
+          ]
+        },
+        {
+          "titel": "Bahn um Nalvyr",
+          "daten": [
+            [
+              "Exzentrizität der Mondbahn",
+              "0,03"
+            ],
+            [
+              "Bahnneigung",
+              "2,2°"
+            ],
+            [
+              "Gebundene Rotation",
+              "Ja – gegenüber Nalvyr"
+            ]
+          ]
+        },
+        {
+          "titel": "Am Himmel von Oris",
+          "text": [
+            "Auf der Nalvyr zugewandten Seite füllt der Mutterplanet einen großen Teil des Himmels. Mit der Umlaufbewegung ändert sich die Beleuchtung regelmäßig, und gelegentlich verfinstert Nalvyr die Sonne Saelon. Im Spiegelbecken spiegelt sich Nalvyr auf der Wasseroberfläche."
           ]
         }
       ]
@@ -433,7 +668,7 @@
             ],
             [
               "Masse",
-              "0,65 Mondmassen"
+              "0,01 Erdmassen"
             ],
             [
               "Mittlere Dichte",
@@ -441,12 +676,62 @@
             ],
             [
               "Oberflächenschwerkraft",
-              "1,38 m/s² (0,141 g)"
+              "1,4 m/s² (0,14 g)"
             ],
             [
               "Fluchtgeschwindigkeit",
-              "2,05 km/s"
+              "ca. 2 km/s"
+            ],
+            [
+              "Masse in Erdmondmassen",
+              "ca. 0,65"
+            ],
+            [
+              "Masse in Kilogramm",
+              "ca. 4,78 · 10²² kg"
+            ],
+            [
+              "Gesamtoberfläche",
+              "ca. 29 Mio. km²"
             ]
+          ]
+        },
+        {
+          "titel": "Physikalische Werte im Vergleich",
+          "vergleich": {
+            "mit": "Erde",
+            "werte": [
+              [
+                "Masse",
+                0.008,
+                1,
+                "Erdmassen"
+              ],
+              [
+                "Dichte",
+                3.25,
+                5.51,
+                "g/cm³"
+              ],
+              [
+                "Fluchtgeschwindigkeit",
+                2,
+                11.2,
+                "km/s"
+              ],
+              [
+                "Magnetfeld",
+                0.1,
+                1,
+                "× Erde"
+              ]
+            ]
+          }
+        },
+        {
+          "titel": "Kleiner, leichter Mond",
+          "text": [
+            "Mit einer Fallbeschleunigung von nur 1,38 m/s², einer mittleren Dichte von etwa 3,25 g/cm³ und einer Fluchtgeschwindigkeit von rund 2,05 km/s bietet Oris außergewöhnlich günstige mechanische Bedingungen für gigantische terrestrische Lebensformen."
           ]
         }
       ]
@@ -457,9 +742,15 @@
       "intro": "Geologie von Oris.",
       "abschnitte": [
         {
-          "titel": "Geologie",
-          "text": [
-            "Oris ist geologisch weitgehend erstarrt; Einschläge haben seine Oberfläche geformt."
+          "titel": "Gesteine",
+          "liste": [
+            "Überwiegend silikatische Kruste",
+            "Eisen- und magnesiumhaltige Formationen",
+            "Mineralreiche Sedimentbecken",
+            "Überreste früher Einschläge",
+            "Regionale geothermische Aktivität und Entgasung",
+            "Mineralien für den Aufbau biologischer Skelette",
+            "Erosion durch Wind, Wasser und biologische Aktivität"
           ]
         }
       ]
@@ -470,9 +761,42 @@
       "intro": "Atmosphäre von Oris.",
       "abschnitte": [
         {
-          "titel": "Gashülle",
+          "titel": "Zusammensetzung",
           "text": [
-            "Oris besitzt keine nennenswerte Atmosphäre – dafür ist die Schwerkraft zu gering."
+            "Oris besitzt eine biologisch aktive Stickstoff-Sauerstoff-Atmosphäre mit etwa 0,8 bar: 74 % Stickstoff, 23 % Sauerstoff, 2 % Argon, rund 0,2 % Kohlendioxid und 0,8 % weitere Gase, dazu wechselnder Wasserdampf. Wegen der geringen Schwerkraft reicht sie sehr weit hinauf. Die geringe Fluchtgeschwindigkeit führt zu langfristigen Verlusten, die durch geologische und biologische Nachlieferung und einen zusätzlichen APORIA-Effekt in den äußeren Schichten ausgeglichen werden – dessen Herkunft wird noch erforscht."
+          ],
+          "balken": {
+            "werte": [
+              [
+                "Stickstoff",
+                74
+              ],
+              [
+                "Sauerstoff",
+                23
+              ],
+              [
+                "Argon",
+                2
+              ],
+              [
+                "Weitere Gase",
+                0.8
+              ],
+              [
+                "Kohlendioxid",
+                0.2
+              ]
+            ]
+          }
+        },
+        {
+          "titel": "Druck",
+          "daten": [
+            [
+              "Mittlerer Oberflächendruck",
+              "ca. 0,8 bar"
+            ]
           ]
         }
       ]
@@ -483,10 +807,32 @@
       "intro": "Klima von Oris.",
       "abschnitte": [
         {
-          "titel": "Temperatur",
+          "titel": "Temperaturzonen",
           "text": [
-            "Bei 0,76 AE Abstand zu Saelon liegt die Gleichgewichtstemperatur von Oris bei rund -7 °C – gemäßigt."
-          ]
+            "Während des langen Sonnentages erwärmen sich die Ebenen lange, in der langen Nacht kühlen sie deutlich ab. Wandernde Wettersysteme ziehen über die Steppen, bodennahe Nebelfelder sind häufig, regional gibt es Frostperioden. Niederschlag fällt als Regen, Nebelkondensation und regionaler Schnee."
+          ],
+          "skala": {
+            "einheit": "°C",
+            "min": -40,
+            "max": 30,
+            "bereiche": [
+              [
+                "Polar- und Hochregionen",
+                -35,
+                -5
+              ],
+              [
+                "Nachtseite der Ebenen",
+                -10,
+                5
+              ],
+              [
+                "Gemäßigte Regionen",
+                5,
+                25
+              ]
+            ]
+          }
         }
       ]
     },
@@ -496,9 +842,32 @@
       "intro": "Geschichte von Oris.",
       "abschnitte": [
         {
-          "titel": "Entstehung",
-          "text": [
-            "Oris entstand zusammen mit dem Saelon-System vor rund 6,1 Milliarden Jahren."
+          "titel": "Zeitleiste",
+          "zeitleiste": [
+            [
+              "Entstehung",
+              "Bildung des Mondes während der Entwicklung Nalvyrs"
+            ],
+            [
+              "Kreisläufe",
+              "Geologische und atmosphärische Kreisläufe, erste Mikroben"
+            ],
+            [
+              "Evolution",
+              "Photosynthese, mehrzellige Landlebewesen, immer größere Körper, adaptive Skelette"
+            ],
+            [
+              "Intelligenz",
+              "Individuelle Intelligenz und Wanderkultur der Gravanten"
+            ],
+            [
+              "Technik",
+              "Biomechanische Technologien"
+            ],
+            [
+              "Gegenwart",
+              "Kontakt mit anderen Spezies, Beziehungen zu Nalvyr"
+            ]
           ]
         }
       ]
@@ -509,22 +878,15 @@
       "intro": "Erforschung von Oris.",
       "abschnitte": [
         {
-          "titel": "Offene Fragen",
+          "titel": "Forschungsfelder",
           "liste": [
-            "Ist der Mond eingefangen oder mit seinem Planeten entstanden?",
-            "Welche Spuren tragen seine ältesten Krater?"
-          ]
-        },
-        {
-          "titel": "In der Sternenkarte",
-          "text": [
-            "Oris ist mit allen Bahndaten im Saelon-System der Sternenkarte eingetragen."
-          ],
-          "verweise": [
-            [
-              "In der Sternenkarte zeigen",
-              "Menüs/Sternenkarte/Sternenkarte.html?system=nalvyr-stern&objekt=nalvyr-oris"
-            ]
+            "Biologische Statik gigantischer Organismen",
+            "Niedriggravitationsbiologie",
+            "Atmosphärenerhaltung kleiner Himmelskörper und der APORIA-Effekt von Oris",
+            "Regenerative Skelettmedizin",
+            "Hochbelastbare organische Verbundwerkstoffe",
+            "Seismische Kommunikation",
+            "Ökologische Wirkung großer Wanderer"
           ]
         }
       ]
@@ -535,9 +897,296 @@
       "intro": "Besonderheiten von Oris.",
       "abschnitte": [
         {
-          "titel": "Besonderheiten",
+          "titel": "Rekorde",
+          "daten": [
+            [
+              "Schwerkraft",
+              "nur 0,14 g"
+            ],
+            [
+              "Größte Lebensformen",
+              "Gravanten, 100–300 m Körperlänge"
+            ],
+            [
+              "Lebensdauer der Gravanten",
+              "ca. 1.500–3.500 Jahre"
+            ]
+          ]
+        },
+        {
+          "titel": "Einzigartige Welt",
           "liste": [
-            "Größter Mond von Nalvyr"
+            "Nur 14 % der Erdgravitation",
+            "Intelligente Landlebewesen bis 300 m Länge",
+            "Gigantische natürliche Skelettformationen",
+            "Lange Hell- und Dunkelphasen",
+            "Gewaltiger Mutterplanet am Himmel",
+            "Ungewöhnlich ausgedehnte, stabilisierte Atmosphäre"
+          ]
+        },
+        {
+          "titel": "Im Spiel",
+          "liste": [
+            "Begegnungen mit wandernden Gravanten",
+            "Kilometerlange Wanderkorridore und Versammlungsplätze",
+            "Expeditionen zu den Alten Knochenfeldern",
+            "Mineralreiche Tiefenbrüche erkunden"
+          ]
+        }
+      ]
+    },
+    "Planetare Struktur": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Planetare Struktur von Oris.",
+      "abschnitte": [
+        {
+          "titel": "Aufbau",
+          "text": [
+            "Die überwiegend silikatische Kruste mit eisen- und magnesiumhaltigen Formationen bildet weiträumige, stabile Gesteinsplatten. Regionale geothermische Aktivität und Entgasung aus tieferen Schichten liefern Gase nach; langfristig wirkt Nalvyrs Gezeitenkraft auf das Innere."
+          ],
+          "schichten": [
+            [
+              "Atmosphäre",
+              "0,8 bar, weit ausgedehnt"
+            ],
+            [
+              "Kruste",
+              "Silikatisch, stabile Platten, Sedimentbecken"
+            ],
+            [
+              "Mantel",
+              "Gesteinsmantel mit regionaler Wärme"
+            ],
+            [
+              "Kern",
+              "Klein"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geografie": {
+      "gruppe": "Natur",
+      "icon": "△",
+      "intro": "Steppen, Hochebenen und flache Binnenmeere.",
+      "abschnitte": [
+        {
+          "titel": "Oberfläche",
+          "balken": {
+            "werte": [
+              [
+                "Land",
+                75
+              ],
+              [
+                "Gewässer und Eis",
+                25
+              ]
+            ]
+          },
+          "liste": [
+            "Drei große zusammenhängende Landmassen",
+            "Gewaltige mineralreiche Hochebenen",
+            "Tausende Kilometer lange Steppen",
+            "Vegetationsreiche Senken und flache Binnenmeere",
+            "Breite Flusslandschaften und Wanderkorridore",
+            "Gigantische alte Einschlagsbecken",
+            "Landschaften mit geringer Hangneigung, Gesteinsbögen und Schluchten"
+          ]
+        },
+        {
+          "titel": "Besondere Regionen",
+          "karten": [
+            {
+              "titel": "Die Ewigen Wanderfelder",
+              "text": "Steppen mit über Jahrtausende entstandenen Wanderrouten und regenerierenden Vegetationsmatten."
+            },
+            {
+              "titel": "Die Tragenden Ebenen",
+              "text": "Kompakte, besonders tragfähige Gesteinsschichten – Ruhe- und Versammlungsgebiete."
+            },
+            {
+              "titel": "Das Spiegelbecken",
+              "text": "Flaches Binnenmeer mit mineralreicher Ufervegetation, in dem sich Nalvyr spiegelt."
+            },
+            {
+              "titel": "Die Alten Knochenfelder",
+              "text": "Ablagerungsgebiete verstorbener Gravanten – mineralisierte Skelettbögen als neue Lebensräume und Fundstätten."
+            },
+            {
+              "titel": "Die Nebelterrassen",
+              "text": "Stufenförmiges, feuchtes Hochland – Lebensraum jüngerer Gravanten."
+            },
+            {
+              "titel": "Die Tiefenbrüche",
+              "text": "Spaltensysteme mit hydrothermalen Quellen – gefährlich für besonders große Individuen."
+            }
+          ]
+        }
+      ]
+    },
+    "Gewässer": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gewässer von Oris.",
+      "abschnitte": [
+        {
+          "titel": "Gewässer",
+          "liste": [
+            "Mehrere große Binnenmeere und flache mineralreiche Seen",
+            "Weitverzweigte Flüsse und breite Feuchtgebiete",
+            "Unterirdische Reservoire und geothermale Quellen",
+            "Dauerhafte polare Eisvorkommen",
+            "Geringere Druckzunahme in der Tiefe als auf der Erde",
+            "Wasserstände schwanken durch Klima und Gezeiten"
+          ]
+        }
+      ]
+    },
+    "Biosphäre": {
+      "gruppe": "Natur",
+      "icon": "❧",
+      "intro": "Leichte Pflanzen, schwere Wanderer.",
+      "abschnitte": [
+        {
+          "titel": "Biosphäre",
+          "text": [
+            "Die eigenständig entstandene, kohlenstoffbasierte Biosphäre ist in den gemäßigten Regionen sehr produktiv. Pflanzen sind leicht und flexibel, an geringe Schwerkraft und lange Hell- und Dunkelphasen angepasst und speichern tagsüber Energie. Beanspruchte Vegetationsflächen regenerieren sich schnell."
+          ]
+        },
+        {
+          "titel": "Flora",
+          "karten": [
+            {
+              "titel": "Tragwurzelgewächse",
+              "text": "Verzweigte Verankerungen stabilisieren den Boden der Wanderrouten."
+            },
+            {
+              "titel": "Flächengräser",
+              "text": "Dichte Decken, die nach dem Abweiden schnell nachwachsen."
+            },
+            {
+              "titel": "Membranbäume",
+              "text": "Hohe, leichte Pflanzen mit großen photosynthetischen Membranen."
+            },
+            {
+              "titel": "Mineralpolster",
+              "text": "Mineralstoffreiche Nahrung für den Skelettaufbau der Gravanten."
+            },
+            {
+              "titel": "Leuchtsenkenflora",
+              "text": "Biolumineszent in feuchten Senken während der langen Nacht."
+            }
+          ]
+        },
+        {
+          "titel": "Fauna",
+          "liste": [
+            "Kleinere und mittelgroße Landtiere",
+            "Großdimensionierte Pflanzenfresser",
+            "Flugorganismen mit außergewöhnlichen Spannweiten",
+            "Begleitorganismen auf den Körpern der Gravanten",
+            "Aasfresser und Zersetzer in den Knochenfeldern",
+            "Raubtiere für kleinere und junge Großlebewesen – gesunde erwachsene Gravanten haben keine natürlichen Feinde"
+          ]
+        }
+      ]
+    },
+    "Spezies": {
+      "gruppe": "Zivilisation",
+      "icon": "✿",
+      "intro": "Die Gravanten – die wandernden Giganten.",
+      "abschnitte": [
+        {
+          "titel": "Gravanten",
+          "text": [
+            "Die Gravanten entstanden natürlich auf Oris. Sie tragen ihre gewaltigen Körper auf vier bis sechs Beinen und mineralisch-organischen Skelettstrukturen, ernähren sich überwiegend von Pflanzen und Mikroorganismen und folgen ausgedehnten Wanderrouten. Wegen ihres hohen Ressourcenbedarfs leben sie in geringer Dichte und organisieren sich dezentral."
+          ],
+          "daten": [
+            [
+              "Körperlänge",
+              "100–300 m"
+            ],
+            [
+              "Beine",
+              "Vier bis sechs"
+            ],
+            [
+              "Lebensdauer",
+              "ca. 1.500–3.500 Jahre"
+            ],
+            [
+              "Bewusstsein",
+              "Individuell, eigenständig"
+            ]
+          ]
+        }
+      ]
+    },
+    "Zivilisation": {
+      "gruppe": "Zivilisation",
+      "icon": "▥",
+      "intro": "Zivilisation von Oris.",
+      "abschnitte": [
+        {
+          "titel": "Offene Landschaften statt Städte",
+          "text": [
+            "Für ausgewachsene Gravanten gibt es keine dicht bebauten Großstädte. Ihre Zivilisation besteht aus offenen Versammlungslandschaften, natürlichen und künstlichen Ruheformationen und mechanisch stabilisierten Wanderwegen; Infrastruktur konzentriert sich auf ausgewählte Bereiche."
+          ]
+        },
+        {
+          "titel": "Einrichtungen und Technologien",
+          "liste": [
+            "Großdimensionierte medizinische Einrichtungen und Stützsysteme",
+            "Seismische Kommunikationsmasten und Schwingungsübersetzer",
+            "Forschungsstationen für biologische Statik",
+            "Adaptive Tragwerksbrücken und Bodenstabilisierung",
+            "Biomechanische Gelenkorthesen und Mehrbeinfahrwerke",
+            "Biologische Verbundwerkstoffdrucker",
+            "Kontaktanlagen und kleine Siedlungen für Besucher"
+          ]
+        }
+      ]
+    },
+    "Fraktionen": {
+      "gruppe": "Zivilisation",
+      "icon": "◇",
+      "intro": "Fraktionen von Oris.",
+      "abschnitte": [
+        {
+          "titel": "Politik",
+          "liste": [
+            "Dezentrale Selbstverwaltung",
+            "Schutz natürlicher Wanderrouten",
+            "Politisch unabhängig von Nalvyr",
+            "Mögliche Forschungsabkommen mit den Regeneranten",
+            "Regulierung außerplanetarer Infrastruktur",
+            "Fraktionszugehörigkeit noch nicht festgelegt"
+          ]
+        }
+      ]
+    },
+    "Rohstoffe": {
+      "gruppe": "Weitere",
+      "icon": "⬡",
+      "intro": "Rohstoffe von Oris.",
+      "abschnitte": [
+        {
+          "titel": "Rohstoffe",
+          "karten": [
+            {
+              "titel": "Gesteine und Minerale",
+              "text": "Silikate, Eisen-, Magnesium- und Calciumminerale, Phosphate, Sedimente."
+            },
+            {
+              "titel": "Biologisch",
+              "text": "Verbundmaterialien, organische Fasern, elastische Materialien."
+            },
+            {
+              "titel": "Wasser",
+              "text": "Wassereis."
+            }
           ]
         }
       ]
@@ -548,9 +1197,9 @@
       "intro": "Medienarchiv von Oris.",
       "abschnitte": [
         {
-          "titel": "Oris – Archivbild",
+          "titel": "Oris aus dem All",
           "bild": true,
-          "bildtext": "Oris"
+          "bildtext": "Oris – Welt der wandernden Giganten"
         }
       ]
     }

@@ -6,12 +6,16 @@
   "klasse": "Komet",
   "intro": "Ein wasserreicher Komet mit perlmuttfarben schimmerndem Staubschweif, der alle 58 Jahre das innere System durchquert. Perlschweif umkreist Celeun in 15 AE Abstand und braucht für einen Umlauf 59,6 Jahre.",
   "globusDaten": {
-    "planet": "komet-mit-facherformigen-ausbruchen",
+    "planet": "perlschweif",
     "klasse": "Eis",
     "radius": 6000
   },
   "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=vessarin-stern&objekt=vessarin-perlschweif",
   "grunddaten": [
+    [
+      "System-ID",
+      "vessarin-perlschweif"
+    ],
     [
       "Archiv-ID",
       "AP-483DAB6E1B"
@@ -85,16 +89,16 @@
     },
     {
       "icon": "✿",
-      "art": "Heimatwelt der Thalassoiden",
-      "titel": "Vessarin",
-      "href": "inhalte/himmelskoerper/planeten/details/vessarin/hauptseite/index.html",
+      "art": "Heimatwelt der Hydronetzwerke",
+      "titel": "Celeun III",
+      "href": "inhalte/himmelskoerper/planeten/details/celeun-iii/hauptseite/index.html",
       "route": null
     },
     {
       "icon": "◈",
       "art": "Spezies-Dossier",
-      "titel": "Thalassoiden",
-      "href": "inhalte/spezies/Biologische Spezies/Thalassoiden/hauptseite/Spezies.html",
+      "titel": "Hydronetzwerke",
+      "href": "inhalte/spezies/Gigantische Lebensformen/hydronetzwerke/hauptseite/Spezies.html",
       "route": null
     }
   ],
@@ -104,8 +108,8 @@
       "href": "Menüs/Sternenkarte/Sternenkarte.html?system=vessarin-stern&objekt=vessarin-perlschweif"
     },
     {
-      "titel": "Speziesdossier Thalassoiden",
-      "href": "inhalte/spezies/Biologische Spezies/Thalassoiden/hauptseite/Spezies.html"
+      "titel": "Speziesdossier Hydronetzwerke",
+      "href": "inhalte/spezies/Gigantische Lebensformen/hydronetzwerke/hauptseite/Spezies.html"
     }
   ],
   "design": {
@@ -302,18 +306,18 @@
           ]
         },
         {
-          "titel": "Im System von Vessarin",
+          "titel": "Im System von Celeun III",
           "text": [
-            "Das Celeun-System ist die Heimat der Thalassoiden: Ihr Planet Vessarin umkreist Celeun."
+            "Das Celeun-System ist die Heimat der Hydronetzwerke: Ihr Planet Celeun III umkreist Celeun."
           ],
           "verweise": [
             [
-              "Vessarin",
-              "inhalte/himmelskoerper/planeten/details/vessarin/hauptseite/index.html"
+              "Celeun III",
+              "inhalte/himmelskoerper/planeten/details/celeun-iii/hauptseite/index.html"
             ],
             [
-              "Speziesdossier Thalassoiden",
-              "inhalte/spezies/Biologische Spezies/Thalassoiden/hauptseite/Spezies.html"
+              "Speziesdossier Hydronetzwerke",
+              "inhalte/spezies/Gigantische Lebensformen/hydronetzwerke/hauptseite/Spezies.html"
             ]
           ]
         }
@@ -369,7 +373,7 @@
               "Ozeanplanet"
             ],
             [
-              "Celeun III · 1,7 AE",
+              "Celeun III · 1,2 AE",
               "Gesteinsplanet"
             ],
             [
@@ -385,7 +389,7 @@
               "Asteroidengürtel"
             ],
             [
-              "Äußeres Kometengebiet · 40–56 AE",
+              "Zaruzen-Kometenwolke · 40–56 AE",
               "Kometengebiet"
             ]
           ],

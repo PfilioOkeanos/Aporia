@@ -112,3 +112,8 @@ Fremde Besucher werden über technische Kommunikationsschnittstellen empfangen.
 Roboter können als physische Vertreter einzelner Lithonetzwerke auftreten.
 
 Diese Roboter sind Werkzeuge oder ferngesteuerte Repräsentanten und besitzen nicht automatisch das Bewusstsein des jeweiligen Lithonetzwerks.
+
+
+DIe dunkle seite#
+
+Bewusste Einschließung von Bergbauarbeitern

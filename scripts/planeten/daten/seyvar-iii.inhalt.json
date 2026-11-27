@@ -1,56 +1,119 @@
 {
-  "_erzeugt": "koerper-bauen",
   "name": "Seyvar III",
   "genitiv": "von Seyvar III",
   "dossierName": "Seyvar III-Dossier",
-  "klasse": "Gesteinsplanet",
-  "intro": "Seyvar III ist eine kalte, trockene Gesteinswelt mit dünner Atmosphäre am äußeren Rand der habitablen Zone. Seyvar III umkreist Seyvar in 1,38 AE Abstand und braucht für einen Umlauf 653,9 Tage.",
+  "klasse": "Planet · Gesteinsplanet",
+  "intro": "Seyvar III ist eine kleine, biologisch vielfältige Gesteinswelt mit dichter, feuchter Atmosphäre. Hier leben die Biophäriden: anatomisch zusammenhängende Individuen, deren Organlandschaften, Membranflächen und Verbindungskorridore sich über ganze Regionen und sogar Kontinente erstrecken – vom Weltraum aus sichtbar. Der Planet selbst ist kein lebender Organismus.",
   "globusDaten": {
     "planet": "kompakter-felsplanet-im-schwarzen-all",
-    "klasse": "Gestein",
+    "klasse": "Organisch geprägte Welt",
     "radius": 3900000
   },
-  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=nhalyss-stern&objekt=nhalyss-seyvar-iii",
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=nhalyss-stern",
   "grunddaten": [
     [
       "Archiv-ID",
       "AP-7DC37C55C0"
     ],
     [
-      "Typ",
-      "Gesteinsplanet"
-    ],
-    [
-      "Sternsystem",
-      "Seyvar-System"
-    ],
-    [
-      "Zentralkörper",
-      "Seyvar"
-    ],
-    [
-      "Große Halbachse",
-      "1,38 AE"
-    ],
-    [
-      "Umlaufzeit",
-      "653,9 Tage"
+      "Klasse",
+      "Terrestrischer Biosphärenplanet"
     ],
     [
       "Durchmesser",
       "7.800 km"
     ],
     [
+      "Radius",
+      "3.900 km"
+    ],
+    [
       "Masse",
       "0,3 Erdmassen"
     ],
     [
-      "Schwerkraft",
-      "0,8 g"
+      "Dichte",
+      "7,21 g/cm³"
     ],
     [
-      "Gleichgewichtstemperatur",
-      "ca. -90 °C"
+      "Schwerkraft",
+      "0,8 g (7,9 m/s²)"
+    ],
+    [
+      "Mittlere Oberflächentemperatur",
+      "ca. 13 °C"
+    ],
+    [
+      "Ozeane",
+      "ca. 43 % (Meeresbecken, Binnenmeere, Schelfmeere)"
+    ],
+    [
+      "Atmosphäre",
+      "79 % Stickstoff, 15 % Sauerstoff, 3 % Kohlendioxid, 2,8 % Argon, 0,2 % Weitere Gase"
+    ],
+    [
+      "Atmosphärendruck",
+      "ca. 1,8 bar"
+    ],
+    [
+      "Rotationsperiode",
+      "28 h"
+    ],
+    [
+      "Umlaufzeit",
+      "333 Erdtage"
+    ],
+    [
+      "Abstand zum Stern",
+      "0,88 AE"
+    ],
+    [
+      "Monde",
+      "keine"
+    ],
+    [
+      "Zentralstern",
+      "Seyvar, Orangefarbener Zwerg (K2 V)"
+    ],
+    [
+      "Einstrahlung",
+      "0,61-fach der Erde"
+    ],
+    [
+      "Achsneigung",
+      "19,5°"
+    ],
+    [
+      "Exzentrizität",
+      "0,035"
+    ],
+    [
+      "Fluchtgeschwindigkeit",
+      "7,8 km/s"
+    ],
+    [
+      "Alter",
+      "ca. 5,1 Mrd. Jahre"
+    ],
+    [
+      "Archiv-ID",
+      "AP-7DC37C55C0"
+    ],
+    [
+      "Alter",
+      "ca. 5 Mrd. Jahre"
+    ],
+    [
+      "Kontinente",
+      "Vaelora, Theravon, Orelvara, Kharavel"
+    ],
+    [
+      "Technologische Infrastruktur",
+      "Regional vorhanden"
+    ],
+    [
+      "Intelligente Spezies",
+      "Biophäriden"
     ]
   ],
   "position": [
@@ -60,84 +123,103 @@
     ],
     [
       "Zentralstern",
-      "Seyvar",
-      "inhalte/himmelskoerper/sterne/details/seyvar/hauptseite/index.html"
+      "Seyvar · K2 V, Einzelstern"
     ],
     [
-      "Abstand",
-      "1,38 AE"
+      "Bahnposition",
+      "3. von 5 Planeten"
+    ],
+    [
+      "Entfernung zur Sonne",
+      "23 Lichtjahre"
+    ],
+    [
+      "Nächste Nachbarsysteme",
+      "Velhar-System (11,7 Lj), Orvaya-System (13,7 Lj)"
     ]
   ],
   "verknuepfungen": [
     {
-      "icon": "✦",
-      "art": "Sternenkarte",
-      "titel": "Seyvar III im Seyvar-System",
-      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=nhalyss-stern&objekt=nhalyss-seyvar-iii",
-      "route": null
-    },
-    {
-      "icon": "☀",
-      "art": "Zentralstern",
-      "titel": "Seyvar",
-      "href": "inhalte/himmelskoerper/sterne/details/seyvar/hauptseite/index.html",
-      "route": null
-    },
-    {
       "icon": "✿",
-      "art": "Heimatwelt der Bioluminoiden",
-      "titel": "Nhalyss",
-      "href": "inhalte/himmelskoerper/planeten/details/nhalyss/hauptseite/index.html",
+      "art": "Heimische Spezies",
+      "titel": "Biophäriden",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Biophäriden/hauptseite/Spezies.html",
       "route": null
     },
     {
       "icon": "◈",
       "art": "Spezies-Dossier",
-      "titel": "Bioluminoiden",
-      "href": "inhalte/spezies/Biologische Spezies/Bioluminoiden/hauptseite/Spezies.html",
+      "titel": "Heimatwelt",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Biophäriden/Unterseiten/Heimatwelt/heimatwelt.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Politik und Fraktionen",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Biophäriden/Unterseiten/Politik/politik.html",
+      "route": null
+    },
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Seyvar-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=nhalyss-stern",
       "route": null
     }
   ],
   "quellen": [
     {
-      "titel": "Sternenkarte · Seyvar-System",
-      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=nhalyss-stern&objekt=nhalyss-seyvar-iii"
+      "titel": "Speziesdossier Biophäriden · Heimatwelt",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Biophäriden/Unterseiten/Heimatwelt/heimatwelt.html"
     },
     {
-      "titel": "Speziesdossier Bioluminoiden",
-      "href": "inhalte/spezies/Biologische Spezies/Bioluminoiden/hauptseite/Spezies.html"
+      "titel": "Speziesdossier Biophäriden · Geschichte",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Biophäriden/Unterseiten/Geschichte/geschichte.html"
+    },
+    {
+      "titel": "Speziesdossier Biophäriden · Gesellschaft",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Biophäriden/Unterseiten/Gesellschaft/gesellschaft.html"
+    },
+    {
+      "titel": "Speziesdossier Biophäriden · Politik",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Biophäriden/Unterseiten/Politik/politik.html"
+    },
+    {
+      "titel": "Speziesdossier Biophäriden · Allgemeines",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Biophäriden/Unterseiten/Allgemeines/allgemeines.html"
     }
   ],
   "design": {
     "farben": {
-      "nacht": "#090705",
-      "tiefe": "#140f0c",
-      "akzent": "#cdaf9f",
-      "sand": "#d1af93",
-      "moos": "#aba37c",
-      "ozean": "#898d89",
-      "glas": "rgba(8, 12, 18, .76)",
-      "glas-hell": "rgba(16, 22, 32, .82)",
-      "linie": "rgba(255, 255, 255, .12)",
-      "linie-hell": "rgba(255, 255, 255, .3)",
-      "text": "#eef2f6",
-      "leise": "#a8b0bc",
-      "aporia-page-tint": "#503c30"
+      "nacht": "#07050b",
+      "tiefe": "#120d18",
+      "akzent": "#c78ae0",
+      "sand": "#cdb8a0",
+      "moos": "#6fae7a",
+      "ozean": "#4a74b8",
+      "glas": "rgba(18, 13, 24, .8)",
+      "glas-hell": "rgba(30, 22, 40, .86)",
+      "linie": "rgba(199, 138, 224, .16)",
+      "linie-hell": "rgba(210, 170, 230, .36)",
+      "text": "#f2eef6",
+      "leise": "#b2a6bf",
+      "aporia-page-tint": "#4a2a5a"
     }
   },
   "kapitel": {
     "Allgemeines": {
       "gruppe": "Weitere",
       "icon": "▤",
-      "intro": "Seyvar III auf einen Blick.",
+      "intro": "Seyvar III auf einen Blick: Kontinente voller lebender Organe.",
       "abschnitte": [
         {
           "titel": "Kurzprofil",
           "bild": true,
-          "bildtext": "Seyvar III",
+          "bildtext": "Seyvar III – Welt der Organlandschaften",
           "text": [
-            "Seyvar III ist eine kalte, trockene Gesteinswelt mit dünner Atmosphäre am äußeren Rand der habitablen Zone.",
-            "Seyvar III umkreist Seyvar in 1,38 AE Abstand und braucht für einen Umlauf 653,9 Tage."
+            "Seyvar III ist der dritte Planet des Seyvar-Systems und umkreist den orangefarbenen Zwerg Seyvar in 0,88 AE Abstand – innerhalb der habitablen Zone. Er erhält rund 61 % der irdischen Einstrahlung; eine dichte, wärmespeichernde Atmosphäre von etwa 1,8 bar hält die mittlere Temperatur bei rund 13 °C.",
+            "Mit 7.800 Kilometern Durchmesser und 0,3 Erdmassen ist der Planet klein, aber dank eines großen Metallkerns sehr dicht; die Schwerkraft beträgt 0,8 g. 57 % der Oberfläche sind Land auf vier Kontinenten, getrennt von flachen Schelfmeeren und Inselketten – ideale Bedingungen für interkontinentale biologische Verbindungsgewebe."
           ]
         },
         {
@@ -145,55 +227,125 @@
           "daten": [
             [
               "Typ",
-              "Gesteinsplanet"
+              "Terrestrischer Biosphärenplanet"
             ],
             [
-              "Sternsystem",
-              "Seyvar-System"
-            ],
-            [
-              "Zentralkörper",
-              "Seyvar"
-            ],
-            [
-              "Große Halbachse",
-              "1,38 AE"
-            ],
-            [
-              "Umlaufzeit",
-              "653,9 Tage"
-            ],
-            [
-              "Durchmesser",
-              "7.800 km"
-            ],
-            [
-              "Masse",
-              "0,3 Erdmassen"
+              "Zentralstern",
+              "Seyvar (Orangefarbener Zwerg (K2 V))"
             ],
             [
               "Schwerkraft",
               "0,8 g"
             ],
             [
-              "Gleichgewichtstemperatur",
-              "ca. -90 °C"
+              "Durchmesser",
+              "7.800 km"
+            ],
+            [
+              "Mittlere Temperatur",
+              "ca. 13 °C"
+            ],
+            [
+              "Atmosphäre",
+              "Dicht, feucht, CO₂-reich, ca. 1,8 bar"
+            ],
+            [
+              "Wasser",
+              "ca. 43 % (Meeresbecken, Binnenmeere, Schelfmeere)"
+            ],
+            [
+              "Intelligente Spezies",
+              "Biophäriden"
             ]
           ]
         },
         {
-          "titel": "Im System von Nhalyss",
-          "text": [
-            "Das Seyvar-System ist die Heimat der Bioluminoiden: Ihr Planet Nhalyss umkreist Seyvar."
-          ],
-          "verweise": [
+          "titel": "Seyvar III im Vergleich zur Erde",
+          "vergleich": {
+            "mit": "Erde",
+            "werte": [
+              [
+                "Durchmesser",
+                7800,
+                12742,
+                "km"
+              ],
+              [
+                "Schwerkraft",
+                0.8,
+                1,
+                "g"
+              ],
+              [
+                "Tageslänge",
+                28,
+                24,
+                "h"
+              ],
+              [
+                "Luftdruck (Mittel)",
+                1.8,
+                1,
+                "bar"
+              ],
+              [
+                "Mittlere Temperatur",
+                13,
+                15,
+                "°C"
+              ],
+              [
+                "Wasserbedeckung",
+                43,
+                71,
+                "%"
+              ]
+            ]
+          }
+        },
+        {
+          "titel": "Hauptmerkmale",
+          "karten": [
+            {
+              "titel": "Organlandschaften",
+              "text": "Lebende Membranen, Geweberippen und Organe – vom Weltraum sichtbar."
+            },
+            {
+              "titel": "Dichte, feuchte Luft",
+              "text": "1,8 bar, Nebel und Regenfronten."
+            },
+            {
+              "titel": "Vier Kontinente",
+              "text": "Verbunden durch Schelfmeere, Inselketten und Gewebekorridore."
+            },
+            {
+              "titel": "Kein lebender Planet",
+              "text": "Die Biophäriden sind Teil der Biosphäre, nicht der Planet selbst."
+            }
+          ]
+        },
+        {
+          "titel": "Einordnung",
+          "daten": [
             [
-              "Nhalyss",
-              "inhalte/himmelskoerper/planeten/details/nhalyss/hauptseite/index.html"
+              "Karten-ID",
+              "nhalyss-seyvar-iii"
             ],
             [
-              "Speziesdossier Bioluminoiden",
-              "inhalte/spezies/Biologische Spezies/Bioluminoiden/hauptseite/Spezies.html"
+              "Position",
+              "Dritter Planet"
+            ],
+            [
+              "Heimatspezies",
+              "Biophäriden (Gigantische Lebensformen)"
+            ],
+            [
+              "Monde und Ringe",
+              "Keine"
+            ],
+            [
+              "Nachbarwelt",
+              "Nhalyss, Heimat der Bioluminoiden"
             ]
           ]
         }
@@ -202,84 +354,155 @@
     "Astronomie": {
       "gruppe": "Wissenschaft",
       "icon": "✧",
-      "intro": "Seyvar III im Seyvar-System.",
+      "intro": "Der dritte Planet um den orangefarbenen Zwerg Seyvar.",
       "abschnitte": [
         {
-          "titel": "Bahn",
+          "titel": "Bahn und Position",
+          "text": [
+            "Seyvar III ist der 3. von 5 Planeten im Seyvar-System. Er umkreist Seyvar in 0,88 AE Abstand – innerhalb der habitablen Zone (bei Seyvar zwischen 0,65 und 1,14 AE). Er erhält 0,61-mal so viel Sternlicht wie die Erde.",
+            "Ohne Atmosphäre läge seine Gleichgewichtstemperatur bei rund -44 °C. Die dichte, kohlendioxidreiche Atmosphäre gleicht die schwächere Einstrahlung mit einem Treibhauseffekt von rund 57 K aus; der Mittelwert ist noch durch eine Klimasimulation zu bestätigen."
+          ],
           "daten": [
             [
-              "Zentralkörper",
-              "Seyvar"
+              "Sternsystem",
+              "Seyvar-System"
+            ],
+            [
+              "Bahnposition",
+              "3. von 5 Planeten"
             ],
             [
               "Große Halbachse",
-              "1,38 AE (206,4 Mio. km)"
+              "0,88 AE (ca. 131,6 Mio. km)"
             ],
             [
               "Exzentrizität",
-              "0,06"
-            ],
-            [
-              "Bahnneigung",
-              "1,4°"
+              "0,035"
             ],
             [
               "Umlaufzeit",
-              "653,9 Tage"
+              "333 Erdtage"
+            ],
+            [
+              "Ortsjahr",
+              "ca. 285 Ortstage"
             ],
             [
               "Einstrahlung",
-              "0,247-fach der Erde"
+              "ca. 0,61-fach der Erde"
+            ],
+            [
+              "Habitable Zone von Seyvar",
+              "0,65–1,14 AE"
             ]
           ]
         },
         {
-          "titel": "Am Himmel von Seyvar III",
+          "titel": "Zentralstern",
           "text": [
-            "Seyvar erscheint von hier aus etwa 0,31° groß (die Sonne von der Erde: 0,53°)."
-          ]
-        },
-        {
-          "titel": "Körper des Systems",
-          "zeitleiste": [
+            "Seyvar ist ein orangefarbener Hauptreihenstern der Spektralklasse K2 V mit 82 % der Sonnenmasse und 47 % ihrer Leuchtkraft. Er besitzt eine lange, stabile Hauptreihenphase, magnetische Aktivität und einen Sternwind – Zentralstern von Nhalyss, der Heimatwelt der Bioluminoiden."
+          ],
+          "daten": [
             [
-              "Seyvar · Stern",
+              "Name",
+              "Seyvar"
+            ],
+            [
+              "Typ",
               "Orangefarbener Zwerg (K2 V)"
             ],
             [
-              "Seyvar I · 0,29 AE",
-              "Gesteinsplanet"
+              "Masse",
+              "0,82 Sonnenmassen"
             ],
             [
-              "Nhalyss · 0,72 AE",
-              "Gesteinsplanet"
+              "Radius",
+              "0,8 Sonnenradien"
             ],
             [
-              "Seyvar III · 1,38 AE · dieses Dossier",
-              "Gesteinsplanet"
+              "Leuchtkraft",
+              "0,47 Sonnenleuchtkräfte"
             ],
             [
-              "Seyvar IV · 4,4 AE",
-              "Gasriese"
+              "Oberflächentemperatur",
+              "ca. 5.050 K"
             ],
             [
-              "Seyvar V · 11,5 AE",
-              "Eisriese"
+              "Alter",
+              "ca. 5,1 Mrd. Jahre"
             ],
             [
-              "Splittergürtel · 2,1–2,9 AE",
-              "Asteroidengürtel"
-            ],
-            [
-              "Äußeres Kometengebiet · 34–48 AE",
-              "Kometengebiet"
+              "Begleitsterne",
+              "keine (Einzelstern)"
             ]
           ],
           "verweise": [
             [
               "Seyvar",
               "inhalte/himmelskoerper/sterne/details/seyvar/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Rotation und Achse",
+          "daten": [
+            [
+              "Rotationsperiode",
+              "28 h"
             ],
+            [
+              "Achsneigung",
+              "19,5°"
+            ],
+            [
+              "Scheinbare Sterngröße",
+              "ca. 0,48° (Sonne von der Erde: 0,53°)"
+            ],
+            [
+              "Jahreszeiten",
+              "Gemäßigt ausgeprägt"
+            ]
+          ]
+        },
+        {
+          "titel": "Monde",
+          "text": [
+            "Seyvar III besitzt keine Monde."
+          ]
+        },
+        {
+          "titel": "Planeten des Systems",
+          "zeitleiste": [
+            [
+              "Seyvar I · 0,29 AE",
+              "Seyvar I ist ein kleiner, sonnennaher Gesteinsplanet ohne nennenswerte Atmosphäre, dessen Tagseite stark aufgeheizt wird."
+            ],
+            [
+              "Nhalyss · 0,72 AE",
+              "Nhalyss ist die Heimatwelt der Bioluminoiden: ein geologisch aktiver Gesteinsplanet mit großen Ozeanen, vier Kontinenten, riesigen Spaltenlandschaften und dem Ringsystem Scherbenkranz."
+            ],
+            [
+              "Seyvar III · 0,88 AE",
+              "Seyvar III ist eine kleine, biologisch vielfältige Gesteinswelt mit dichter, feuchter Atmosphäre und vier Kontinenten – die Heimat der Biophäriden, deren zusammenhängende Körper sich über ganze Regionen erstrecken."
+            ],
+            [
+              "Splittergürtel · 2,1–2,9 AE",
+              "Der Splittergürtel zwischen 2,1 und 2,85 AE besteht aus silikatischen und metallhaltigen Gesteinsbrocken."
+            ],
+            [
+              "Seyvar IV · 4,4 AE",
+              "Seyvar IV ist ein großer Gasriese mit hellen Wolkenbändern, dessen Schwerkraft das innere System gegen viele Kometen abschirmt."
+            ],
+            [
+              "Seyvar V · 11,5 AE",
+              "Seyvar V ist ein ferner, blassblauer Eisriese."
+            ],
+            [
+              "Farirhar-Kometenwolke · 34–48 AE",
+              "Ein ferner Gürtel aus Eiskörpern zwischen 34 und 48 AE."
+            ]
+          ],
+          "verweise": [
             [
               "Seyvar I",
               "inhalte/himmelskoerper/planeten/details/seyvar-i/hauptseite/index.html"
@@ -289,13 +512,70 @@
               "inhalte/himmelskoerper/planeten/details/nhalyss/hauptseite/index.html"
             ],
             [
+              "Splittergürtel",
+              "inhalte/himmelskoerper/sternensysteme/details/splittergurtel/hauptseite/index.html"
+            ],
+            [
               "Seyvar IV",
               "inhalte/himmelskoerper/planeten/details/seyvar-iv/hauptseite/index.html"
             ],
             [
               "Seyvar V",
               "inhalte/himmelskoerper/planeten/details/seyvar-v/hauptseite/index.html"
+            ],
+            [
+              "Farirhar-Kometenwolke",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=nhalyss-stern&objekt=nhalyss-kometengebiet"
             ]
+          ]
+        },
+        {
+          "titel": "Nachbarschaft und Anomalien",
+          "karten": [
+            {
+              "titel": "Prismenkomet",
+              "text": "Ein Komet, dessen Staubschweif im Licht von Seyvar in Cyan- und Bernsteintönen schimmert. Er kehrt alle 58 Jahre wieder; frühe Darstellungen des Ringhimmels zeigen ihn neben dem Scherbenkranz."
+            },
+            {
+              "titel": "Nachbarsysteme",
+              "text": "Velhar-System (11,7 Lj), Orvaya-System (13,7 Lj), Kharuun-System (16,5 Lj) – alle weit außerhalb der gravitativen Einflusszone von Seyvar (rund 3,4 Lichtjahre)."
+            }
+          ],
+          "verweise": [
+            [
+              "Prismenkomet",
+              "inhalte/himmelskoerper/kometen/details/prismenkomet/hauptseite/index.html"
+            ],
+            [
+              "Seyvar-System in der Sternenkarte",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=nhalyss-stern"
+            ]
+          ]
+        },
+        {
+          "titel": "Bahndaten",
+          "daten": [
+            [
+              "Mittlere Entfernung",
+              "ca. 131,65 Mio. km"
+            ],
+            [
+              "Bahnneigung",
+              "1,4°"
+            ],
+            [
+              "Bisherige Umlaufbahn",
+              "1,38 AE (auf 0,88 AE verlegt)"
+            ]
+          ]
+        },
+        {
+          "titel": "Magnetfeld",
+          "liste": [
+            "Globales Magnetfeld von etwa 25–45 µT",
+            "Wechselwirkung mit dem Sternwind Seyvars",
+            "Natürliche Polarlichter und regionale Anomalien",
+            "Schutz vor geladenen stellaren Teilchen"
           ]
         }
       ]
@@ -322,22 +602,31 @@
             ],
             [
               "Oberflächenschwerkraft",
-              "7,85 m/s² (0,801 g)"
+              "7,9 m/s² (0,8 g)"
             ],
             [
               "Fluchtgeschwindigkeit",
-              "7,83 km/s"
+              "ca. 7,8 km/s"
+            ],
+            [
+              "Mittlere Dichte",
+              "ca. 7,2 g/cm³ (großer Metallkern)"
+            ],
+            [
+              "Gesamtoberfläche",
+              "ca. 191 Mio. km²"
+            ],
+            [
+              "Magnetfeld",
+              "Global, ca. 25–45 µT, Polarlichter"
             ]
-          ],
+          ]
+        },
+        {
+          "titel": "Physikalische Werte im Vergleich",
           "vergleich": {
             "mit": "Erde",
             "werte": [
-              [
-                "Durchmesser",
-                7800,
-                12742,
-                "km"
-              ],
               [
                 "Masse",
                 0.3,
@@ -345,13 +634,31 @@
                 "Erdmassen"
               ],
               [
-                "Schwerkraft",
-                0.8,
+                "Dichte",
+                7.21,
+                5.51,
+                "g/cm³"
+              ],
+              [
+                "Fluchtgeschwindigkeit",
+                7.8,
+                11.2,
+                "km/s"
+              ],
+              [
+                "Magnetfeld",
+                0.7,
                 1,
-                "g"
+                "× Erde"
               ]
             ]
           }
+        },
+        {
+          "titel": "Klein und dicht",
+          "text": [
+            "Die hohe mittlere Dichte von etwa 7,2 g/cm³ erklärt ein vergleichsweise großer, metallreicher Kern. Die Oberflächengravitation beträgt rund 7,85 m/s², die Fluchtgeschwindigkeit etwa 7,8 km/s. Die geringere Schwerkraft begünstigt großflächige biologische Gewebe und massive Organstrukturen."
+          ]
         }
       ]
     },
@@ -361,19 +668,22 @@
       "intro": "Planetare Struktur von Seyvar III.",
       "abschnitte": [
         {
-          "titel": "Schalenbau",
+          "titel": "Aufbau",
+          "text": [
+            "Seyvar III besitzt einen dichten Eisen-Nickel-Kern mit Magnetfelddynamo, einen silikatischen Mantel und eine regional unterschiedlich dicke Kruste mit geothermischen Regionen, Bruchsystemen und Sedimentbecken."
+          ],
           "schichten": [
             [
               "Kruste",
-              "Silikatgestein"
+              "Unterschiedlich dick, Sedimentbecken, Bruchsysteme"
             ],
             [
               "Mantel",
-              "Dichteres Silikatgestein"
+              "Silikatisch, geothermisch aktiv"
             ],
             [
               "Kern",
-              "Eisen und Nickel"
+              "Groß, eisen- und nickelreich, Dynamo"
             ]
           ]
         }
@@ -382,12 +692,93 @@
     "Geografie": {
       "gruppe": "Natur",
       "icon": "△",
-      "intro": "Geografie von Seyvar III.",
+      "intro": "Vier Kontinente, verbunden durch Leben.",
       "abschnitte": [
         {
           "titel": "Oberfläche",
-          "text": [
-            "Die Oberfläche von Seyvar III ist kalt."
+          "balken": {
+            "werte": [
+              [
+                "Land",
+                57
+              ],
+              [
+                "Wasser",
+                43
+              ]
+            ]
+          },
+          "daten": [
+            [
+              "Landfläche",
+              "ca. 109 Mio. km²"
+            ],
+            [
+              "Wasserfläche",
+              "ca. 82 Mio. km²"
+            ]
+          ]
+        },
+        {
+          "titel": "Kontinente",
+          "karten": [
+            {
+              "titel": "Vaelora",
+              "text": "Größte Landmasse mit feuchten Ebenen, großen Flüssen und Wäldern – viele Energieorgane und juvenile Biophäriden."
+            },
+            {
+              "titel": "Theravon",
+              "text": "Gebirgsreich, mineralreiche Hochländer und Geothermie – geschützte neuronale Großorgane."
+            },
+            {
+              "titel": "Orelvara",
+              "text": "Gegliederte Küsten, Flachmeere und Feuchtgebiete – Filterregionen und interkontinentale Korridore."
+            },
+            {
+              "titel": "Kharavel",
+              "text": "Kühler Südkontinent mit Gletschern und Wasserspeichern – Speicherorgane und ruhende Körperregionen."
+            }
+          ]
+        },
+        {
+          "titel": "Biologische Landschaften",
+          "karten": [
+            {
+              "titel": "Organebenen",
+              "text": "Lebende Membranen, Geweberippen und spezialisierte Organe."
+            },
+            {
+              "titel": "Pulsationsfelder",
+              "text": "Pulsierende Regionen, durch die Flüssigkeiten und Nährstoffe strömen."
+            },
+            {
+              "titel": "Lichtabsorptionslandschaften",
+              "text": "Dunkelviolette bis schwarze Membranflächen zur Energiegewinnung."
+            },
+            {
+              "titel": "Neuronale Hochländer",
+              "text": "Gewaltige neuronale Organe, teils in Gesteinsformationen geschützt."
+            },
+            {
+              "titel": "Verbindungskorridore",
+              "text": "Kilometerlange, teils interkontinentale Gewebestrukturen."
+            },
+            {
+              "titel": "Lebende Küsten",
+              "text": "Biologische Filter und Wasseraufnahmeorgane."
+            },
+            {
+              "titel": "Regenerationsbecken",
+              "text": "Abgeschirmte Regionen für neues Gewebe."
+            },
+            {
+              "titel": "Narben- und Totlandschaften",
+              "text": "Alte Verletzungen und Körperregionen verstorbener Individuen, neu besiedelt."
+            },
+            {
+              "titel": "Juvenile Entwicklungsgebiete",
+              "text": "Geschützte Regionen junger Biophäriden."
+            }
           ]
         }
       ]
@@ -398,26 +789,68 @@
       "intro": "Atmosphäre von Seyvar III.",
       "abschnitte": [
         {
-          "titel": "Gashülle",
+          "titel": "Zusammensetzung",
           "text": [
-            "Seyvar III hält eine dünne, kalte Gashülle fest."
+            "Auf Meereshöhe herrschen etwa 1,8 bar. Die trockene Luft besteht aus 79 % Stickstoff, 15 % Sauerstoff, 3 % Kohlendioxid und 2,8 % Argon; Wasserdampf kommt regional und saisonal hinzu. Der erhöhte Kohlendioxidgehalt unterstützt Wärmespeicherung und biologische Primärproduktion – für Menschen ist die Luft deshalb nicht ohne Atemtechnik verträglich. Biologische Gasaustauschorgane beeinflussen die Zusammensetzung."
           ],
           "balken": {
             "werte": [
               [
-                "Kohlendioxid",
-                62
+                "Stickstoff",
+                79
               ],
               [
-                "Stickstoff",
-                33
+                "Sauerstoff",
+                15
+              ],
+              [
+                "Kohlendioxid",
+                3
               ],
               [
                 "Argon",
-                5
+                2.8
+              ],
+              [
+                "Weitere Gase",
+                0.2
               ]
             ]
           }
+        },
+        {
+          "titel": "Druck",
+          "daten": [
+            [
+              "Mittlerer Oberflächendruck",
+              "ca. 1,8 bar"
+            ]
+          ]
+        },
+        {
+          "titel": "Wolkenschichten",
+          "daten": [
+            [
+              "Bodennaher Nebel",
+              "häufig in Feuchtgebieten und Organlandschaften"
+            ],
+            [
+              "Niedrige Schichtwolken",
+              "ca. 0,5–3 km"
+            ],
+            [
+              "Mittlere Wolken",
+              "ca. 3–8 km"
+            ],
+            [
+              "Hohe Eiswolken",
+              "ca. 8–15 km"
+            ],
+            [
+              "Gewitterwolken",
+              "regional bis ca. 18 km"
+            ]
+          ]
         }
       ]
     },
@@ -427,9 +860,48 @@
       "intro": "Klima von Seyvar III.",
       "abschnitte": [
         {
-          "titel": "Temperatur",
+          "titel": "Temperaturzonen",
           "text": [
-            "Bei 1,38 AE Abstand zu Seyvar liegt die Gleichgewichtstemperatur von Seyvar III bei rund -90 °C – kalt."
+            "Überwiegend gemäßigt und feucht, mit ausgedehnten Nebelregionen, regelmäßigen Regenfronten und starken regionalen Wasserkreisläufen. Von feuchtwarmen Äquatorregionen über gemäßigte Wälder bis zu Tundra und Polareis reichen die Klimazonen – die Biophäriden besitzen für jede eigene Anpassungen."
+          ],
+          "skala": {
+            "einheit": "°C",
+            "min": -40,
+            "max": 40,
+            "bereiche": [
+              [
+                "Polare Regionen",
+                -40,
+                -20
+              ],
+              [
+                "Subpolare Regionen",
+                -15,
+                5
+              ],
+              [
+                "Gemäßigte Regionen",
+                5,
+                24
+              ],
+              [
+                "Tropische Tiefländer",
+                25,
+                35
+              ]
+            ]
+          }
+        },
+        {
+          "titel": "Stürme",
+          "liste": [
+            "Regelmäßige Gewitterfronten und Starkregen",
+            "Küstenstürme und tropische Wirbelstürme",
+            "Gebirgsbedingte Fallwinde",
+            "Regionale Überschwemmungen"
+          ],
+          "text": [
+            "Die dichte Luft verursacht bei starkem Wind hohe mechanische Belastungen; die Körpermembranen der Biophäriden besitzen flexible Schutz- und Entlastungsstrukturen."
           ]
         }
       ]
@@ -440,9 +912,34 @@
       "intro": "Gewässer von Seyvar III.",
       "abschnitte": [
         {
-          "titel": "Wasser",
-          "text": [
-            "Wasser gibt es höchstens als Eis in Kratern und im Untergrund."
+          "titel": "Gewässer",
+          "liste": [
+            "Verbundene Meeresbecken und große Binnenmeere",
+            "Süßwasserseen und Flusslandschaften",
+            "Flache Schelfregionen",
+            "Unterirdische Speicher und geothermische Gewässer",
+            "Saisonal überflutete Niederungen"
+          ]
+        },
+        {
+          "titel": "Besondere Gewässer",
+          "karten": [
+            {
+              "titel": "Vaeloranisches Binnenmeer",
+              "text": "Nährstoffreiche Küsten und vielfältige Ökosysteme."
+            },
+            {
+              "titel": "Theravon-Tiefenbecken",
+              "text": "Tiefer Speicher mit mineralreichen Quellen."
+            },
+            {
+              "titel": "Orelvara-Schelfmeer",
+              "text": "Flachmeer zwischen Landmassen – wichtig für interkontinentale Verbindungen."
+            },
+            {
+              "titel": "Kharavel-Eisreservoire",
+              "text": "Süßwasser in Gletschern, Hochlandseen und unterirdischen Becken."
+            }
           ]
         }
       ]
@@ -454,8 +951,15 @@
       "abschnitte": [
         {
           "titel": "Geologie",
+          "liste": [
+            "Aktive Plattentektonik",
+            "Metallreiche Gesteine und basaltische Hochländer",
+            "Sedimentschichten und mineralreiche Flüsse",
+            "Hydrothermale Quellen und regionaler Vulkanismus",
+            "Höhlen- und Spaltensysteme"
+          ],
           "text": [
-            "Seyvar III ist geologisch weitgehend erstarrt; Einschläge haben seine Oberfläche geformt."
+            "Verbindungsstrukturen der Biophäriden wachsen bevorzugt entlang stabiler Gesteinsformationen; aktive tektonische Regionen gefährden langfristig zusammenhängende Körper."
           ]
         }
       ]
@@ -463,12 +967,37 @@
     "Biosphäre": {
       "gruppe": "Natur",
       "icon": "❧",
-      "intro": "Biosphäre von Seyvar III.",
+      "intro": "Eine vielfältige Biosphäre, in der Giganten nur ein Teil sind.",
       "abschnitte": [
         {
-          "titel": "Leben",
+          "titel": "Biosphäre",
           "text": [
-            "Auf Seyvar III ist kein Leben verzeichnet."
+            "Seyvar III besitzt eine eigenständige kohlenstoffbasierte Biosphäre mit Pflanzen, Tieren, pilzartigen Zersetzern, Mikroben, aquatischen und unterirdischen Gemeinschaften, Symbionten und Parasiten. Energie gewinnt sie über Licht und chemische Stoffwechselwege."
+          ]
+        },
+        {
+          "titel": "Flora",
+          "liste": [
+            "Dunkelgrüne und violette Vegetation, an das orangefarbene Licht angepasst",
+            "Feuchtigkeitsliebende Wälder und elastische Pflanzenstrukturen",
+            "Wasserspeichernde Gewächse und schwimmende Pflanzenmatten",
+            "Flechtenartige Organismen",
+            "Vegetation auf abgestorbenen Biophäridengeweben",
+            "Regional biolumineszierende Pflanzen"
+          ]
+        },
+        {
+          "titel": "Fauna",
+          "liste": [
+            "Große Pflanzenfresser und Flugorganismen",
+            "Amphibische und unterirdische Tiere",
+            "Aquatische Räuber",
+            "Gewebeverwertende Aasfresser und Reinigungssymbionten",
+            "Parasitäre Gewebebewohner",
+            "Wandernde Populationen zwischen Körperregionen"
+          ],
+          "text": [
+            "Die Fauna besitzt keine geistige Verbindung zu den Biophäriden."
           ]
         }
       ]
@@ -476,27 +1005,29 @@
     "Spezies": {
       "gruppe": "Zivilisation",
       "icon": "✿",
-      "intro": "Spezies von Seyvar III.",
+      "intro": "Die Biophäriden – Individuen von der Größe ganzer Regionen.",
       "abschnitte": [
         {
-          "titel": "Bewohner",
+          "titel": "Biophäriden",
           "text": [
-            "Seyvar III ist keine Heimat einer intelligenten Spezies."
-          ]
-        },
-        {
-          "titel": "Im System von Nhalyss",
-          "text": [
-            "Das Seyvar-System ist die Heimat der Bioluminoiden: Ihr Planet Nhalyss umkreist Seyvar."
+            "Biophäriden sind anatomisch zusammenhängende Individuen mit regional spezialisierten Organsystemen und einem dezentralen, individuellen Bewusstsein. Sie leben überwiegend stationär, pflanzen sich natürlich fort und kommunizieren technologisch unterstützt auch interplanetar. Mehrere kleinere und wenige besonders große Individuen bewohnen verschiedene Regionen – keines bedeckt die gesamte Oberfläche."
           ],
-          "verweise": [
+          "daten": [
             [
-              "Nhalyss",
-              "inhalte/himmelskoerper/planeten/details/nhalyss/hauptseite/index.html"
+              "Ausdehnung",
+              "Planetenweit geografisch verteilt"
             ],
             [
-              "Speziesdossier Bioluminoiden",
-              "inhalte/spezies/Biologische Spezies/Bioluminoiden/hauptseite/Spezies.html"
+              "Lebensdauer",
+              "bis ca. 2 Millionen Jahre"
+            ],
+            [
+              "Bewusstsein",
+              "Dezentral, individuell"
+            ],
+            [
+              "Lebensweise",
+              "Überwiegend stationär"
             ]
           ]
         }
@@ -508,25 +1039,21 @@
       "intro": "Zivilisation von Seyvar III.",
       "abschnitte": [
         {
-          "titel": "Siedlungen",
+          "titel": "Zivilisation",
           "text": [
-            "Für Seyvar III sind keine dauerhaften Siedlungen verzeichnet."
+            "Technologische Infrastruktur ist regional vorhanden und ergänzt die biologischen Strukturen der Biophäriden; orbitale Beobachtungsstationen umkreisen den Planeten."
           ]
         },
         {
-          "titel": "Im System von Nhalyss",
-          "text": [
-            "Das Seyvar-System ist die Heimat der Bioluminoiden: Ihr Planet Nhalyss umkreist Seyvar."
-          ],
-          "verweise": [
-            [
-              "Nhalyss",
-              "inhalte/himmelskoerper/planeten/details/nhalyss/hauptseite/index.html"
-            ],
-            [
-              "Speziesdossier Bioluminoiden",
-              "inhalte/spezies/Biologische Spezies/Bioluminoiden/hauptseite/Spezies.html"
-            ]
+          "titel": "Planetare Besonderheiten",
+          "liste": [
+            "Vom Weltraum sichtbare Organregionen",
+            "Über Kontinente verlaufende Verbindungsstrukturen",
+            "Gewaltige Gasaustauschflächen",
+            "Pulsierende Landschaften",
+            "Biolumineszierende Körperstrukturen auf der Nachtseite",
+            "Wälder zwischen gigantischen Organen",
+            "Biologisch beeinflusste Niederschlagsmuster"
           ]
         }
       ]
@@ -535,27 +1062,13 @@
       "gruppe": "Zivilisation",
       "icon": "▤",
       "intro": "Geschichte von Seyvar III.",
-      "abschnitte": [
-        {
-          "titel": "Entstehung",
-          "text": [
-            "Seyvar III entstand zusammen mit dem Seyvar-System vor rund 5,1 Milliarden Jahren."
-          ]
-        }
-      ]
+      "abschnitte": []
     },
     "Fraktionen": {
       "gruppe": "Zivilisation",
       "icon": "◇",
       "intro": "Fraktionen von Seyvar III.",
-      "abschnitte": [
-        {
-          "titel": "Ansprüche",
-          "text": [
-            "Für Seyvar III sind keine Fraktionsansprüche verzeichnet."
-          ]
-        }
-      ]
+      "abschnitte": []
     },
     "Rohstoffe": {
       "gruppe": "Weitere",
@@ -563,10 +1076,13 @@
       "intro": "Rohstoffe von Seyvar III.",
       "abschnitte": [
         {
-          "titel": "Rohstoffe",
+          "titel": "Mineralische Rohstoffe",
           "liste": [
-            "Silikatgestein",
-            "Metallerze"
+            "Eisen, Nickel und Kupfer",
+            "Silikate",
+            "Phosphathaltige Minerale",
+            "Schwefelverbindungen",
+            "Calcium- und magnesiumhaltige Gesteine"
           ]
         }
       ]
@@ -575,27 +1091,7 @@
       "gruppe": "Weitere",
       "icon": "✧",
       "intro": "Erforschung von Seyvar III.",
-      "abschnitte": [
-        {
-          "titel": "Offene Fragen",
-          "liste": [
-            "Wie ist der innere Aufbau beschaffen?",
-            "Gab es früher eine dichtere Atmosphäre?"
-          ]
-        },
-        {
-          "titel": "In der Sternenkarte",
-          "text": [
-            "Seyvar III ist mit allen Bahndaten im Seyvar-System der Sternenkarte eingetragen."
-          ],
-          "verweise": [
-            [
-              "In der Sternenkarte zeigen",
-              "Menüs/Sternenkarte/Sternenkarte.html?system=nhalyss-stern&objekt=nhalyss-seyvar-iii"
-            ]
-          ]
-        }
-      ]
+      "abschnitte": []
     },
     "Besonderheiten": {
       "gruppe": "Weitere",
@@ -603,9 +1099,28 @@
       "intro": "Besonderheiten von Seyvar III.",
       "abschnitte": [
         {
-          "titel": "Besonderheiten",
+          "titel": "Rekorde",
+          "daten": [
+            [
+              "Größte Lebewesen",
+              "Biophäriden mit planetenweiter geografischer Ausdehnung"
+            ],
+            [
+              "Lebensdauer der Biophäriden",
+              "bis ca. 2 Millionen Jahre"
+            ],
+            [
+              "Größter Kontinent",
+              "Vaelora"
+            ]
+          ]
+        },
+        {
+          "titel": "Hinweise für Besucher",
           "liste": [
-            "Seyvar III ist eine kalte, trockene Gesteinswelt mit dünner Atmosphäre am äußeren Rand der habitablen Zone."
+            "Atemtechnik erforderlich (erhöhter CO₂-Gehalt)",
+            "Organlandschaften nicht beschädigen",
+            "Sturm- und Hochwasserwarnungen beachten"
           ]
         }
       ]
@@ -616,9 +1131,9 @@
       "intro": "Medienarchiv von Seyvar III.",
       "abschnitte": [
         {
-          "titel": "Seyvar III – Archivbild",
+          "titel": "Seyvar III aus dem All",
           "bild": true,
-          "bildtext": "Seyvar III"
+          "bildtext": "Seyvar III – Welt der Organlandschaften"
         }
       ]
     }

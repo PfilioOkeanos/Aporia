@@ -1,2 +1,20 @@
-/* Astralizes – Geschichte · erzeugt vom Spezies-Baukasten (scripts/spezies)
-   Gemeinsames Design: astralizes-basis.css · eigene Anpassungen dieser Seite hier ergänzen. */
+/* Saal VII · Bildpaare – Fotoplatten im Blinkvergleich: zwei Aufnahmen wechseln sich vor demselben Himmel ab */
+.az-saal-geschichte { background: #0d0c0a; }
+.az-platten-kopf { min-height: 62vh; background: repeating-linear-gradient(90deg, #0000 0 38px, #ffffff08 38px 40px); }
+.az-platten-kopf::before { content: ""; position: absolute; inset: 6% 5% 6% 40%; z-index: -1; background: var(--bild) center/cover; filter: grayscale(1) contrast(1.2) sepia(.3); border: 12px solid #1a1814; outline: 1px solid #3a352b; animation: az-plattenblink 2.4s steps(1) infinite; }
+@keyframes az-plattenblink { 50% { filter: grayscale(1) invert(1) contrast(1.1); } }
+.az-blinken-aus .az-platten-kopf::before { animation: none; }
+.az-blink-knopf { justify-self: start; margin-top: 1.5rem; padding: .7rem 1.4rem; border: 1px solid #c8b89a; background: none; color: #e8dcc4; font: 500 .75rem var(--az-grotesk); letter-spacing: .25em; text-transform: uppercase; cursor: pointer; }
+.az-blink-knopf[aria-pressed="false"] { opacity: .6; }
+.az-platten { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 30rem), 1fr)); gap: 3rem; padding: 0 clamp(1rem, 5vw, 5rem); }
+.az-platte { padding: 1.2rem; background: #1a1814; border: 1px solid #3a352b; box-shadow: inset 0 0 0 10px #12110e; }
+.az-plattennr { font: 500 .7rem var(--az-grotesk); letter-spacing: .2em; color: #b8a98a; margin: 0 0 1rem; }
+.az-blink { position: relative; display: grid; }
+.az-blink .az-werk { grid-area: 1 / 1; }
+.az-blink .az-werk-bild { aspect-ratio: 4/3; }
+.az-blink .az-werk-bild img { filter: grayscale(1) contrast(1.25) sepia(.25); }
+.az-blink .az-werk + .az-werk .az-werk-bild img { filter: grayscale(1) invert(1) contrast(1.1); }
+.az-blink .az-werk + .az-werk { animation: az-blink 2.4s steps(1) infinite; }
+.az-blinken-aus .az-blink .az-werk + .az-werk { animation: none; opacity: 0; pointer-events: none; }
+.az-blink .az-schild { background: #1a1814; }
+@keyframes az-blink { 0% { opacity: 0; pointer-events: none; } 50% { opacity: 1; pointer-events: auto; } }

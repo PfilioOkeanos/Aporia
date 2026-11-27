@@ -6,12 +6,16 @@
   "klasse": "Orangefarbener Zwerg (K1 V)",
   "intro": "Morvath ist ein alter orangefarbener Zwerg der Spektralklasse K1 V mit 85 % der Sonnenmasse und 50 % ihrer Leuchtkraft – Zentralstern von Gorvhan, der Heimatwelt der Technoiden. Morvath ist der Zentralstern des Morvath-Systems.",
   "globusDaten": {
-    "planet": "portrat-eines-gelben-riesensterns",
+    "planet": "morvath",
     "klasse": "Vulkan",
     "radius": 570474000
   },
   "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=gorvhan-stern",
   "grunddaten": [
+    [
+      "System-ID",
+      "gorvhan-stern"
+    ],
     [
       "Archiv-ID",
       "AP-4281CECD6E"
@@ -45,7 +49,7 @@
       "ca. 7,8 Mrd. Jahre"
     ],
     [
-      "Monde",
+      "Planeten",
       "6 (Morvath I, Gorvhan, Morvath III, Resonanzbrocken, Morvath IV, Morvath V)"
     ]
   ],
@@ -73,42 +77,42 @@
     },
     {
       "icon": "◐",
-      "art": "Mond",
+      "art": "Planet",
       "titel": "Morvath I",
       "href": "inhalte/himmelskoerper/planeten/details/morvath-i/hauptseite/index.html",
       "route": null
     },
     {
       "icon": "◐",
-      "art": "Mond",
+      "art": "Planet",
       "titel": "Gorvhan",
       "href": "inhalte/himmelskoerper/planeten/details/gorvhan/hauptseite/index.html",
       "route": null
     },
     {
       "icon": "◐",
-      "art": "Mond",
+      "art": "Planet",
       "titel": "Morvath III",
       "href": "inhalte/himmelskoerper/planeten/details/morvath-iii/hauptseite/index.html",
       "route": null
     },
     {
       "icon": "◐",
-      "art": "Mond",
+      "art": "Planet",
       "titel": "Resonanzbrocken",
       "href": "inhalte/himmelskoerper/asteroiden/details/resonanzbrocken/hauptseite/index.html",
       "route": null
     },
     {
       "icon": "◐",
-      "art": "Mond",
+      "art": "Planet",
       "titel": "Morvath IV",
       "href": "inhalte/himmelskoerper/planeten/details/morvath-iv/hauptseite/index.html",
       "route": null
     },
     {
       "icon": "◐",
-      "art": "Mond",
+      "art": "Planet",
       "titel": "Morvath V",
       "href": "inhalte/himmelskoerper/planeten/details/morvath-v/hauptseite/index.html",
       "route": null
@@ -290,7 +294,7 @@
               "ca. 7,8 Mrd. Jahre"
             ],
             [
-              "Monde",
+              "Planeten",
               "6 (Morvath I, Gorvhan, Morvath III, Resonanzbrocken, Morvath IV, Morvath V)"
             ]
           ]
@@ -327,7 +331,7 @@
             ],
             [
               "Nächste Nachbarsysteme",
-              "Aurenn-System (21,8 Lj), Seryn-System (27,3 Lj), Thyrrae-System (31 Lj)"
+              "Aurenn-System (21,8 Lj), Seryn-System (27,3 Lj), Kelira-System (27,3 Lj)"
             ]
           ]
         },
@@ -363,7 +367,7 @@
               "Asteroidengürtel"
             ],
             [
-              "Äußeres Kometengebiet · 30–44 AE",
+              "Uelirdon-Kometenwolke · 30–44 AE",
               "Kometengebiet"
             ]
           ],
@@ -421,7 +425,7 @@
               "ca. 7,8 Mrd. Jahre"
             ],
             [
-              "Monde",
+              "Planeten",
               "6 (Morvath I, Gorvhan, Morvath III, Resonanzbrocken, Morvath IV, Morvath V)"
             ]
           ]
@@ -478,7 +482,7 @@
               "Asteroidengürtel"
             ],
             [
-              "Äußeres Kometengebiet · 30–44 AE",
+              "Uelirdon-Kometenwolke · 30–44 AE",
               "Kometengebiet"
             ]
           ],
@@ -510,9 +514,9 @@
           "liste": [
             "Aurenn-System – 21,8 Lichtjahre",
             "Seryn-System – 27,3 Lichtjahre",
-            "Thyrrae-System – 31 Lichtjahre",
-            "Sonnensystem – 33 Lichtjahre",
-            "Thalor-System – 33,6 Lichtjahre"
+            "Kelira-System – 27,3 Lichtjahre",
+            "Terev-System – 30,8 Lichtjahre",
+            "Thyrrae-System – 31 Lichtjahre"
           ]
         }
       ]
@@ -551,11 +555,11 @@
         {
           "titel": "Besonderheiten",
           "liste": [
-            "6 Monde: Morvath I, Gorvhan, Morvath III, Resonanzbrocken, Morvath IV, Morvath V"
+            "6 eigene Planeten: Morvath I, Gorvhan, Morvath III, Resonanzbrocken, Morvath IV, Morvath V"
           ]
         },
         {
-          "titel": "Monde",
+          "titel": "Planeten",
           "karten": [
             {
               "titel": "Morvath I",
@@ -567,7 +571,7 @@
             },
             {
               "titel": "Morvath III",
-              "text": "15.200 km Durchmesser, Umlauf in 587,2 Tage. Morvath III ist eine kalte Super-Erde mit dichter, gefrorener Kruste."
+              "text": "15.200 km Durchmesser, Umlauf in 587,2 Tage. Morvath III ist eine Supererde unter einer 6 bis 14 Kilometer dicken Eiskruste. Darunter liegt ein nahezu globaler, dunkler Ozean – die Heimat der Kryotharen, 150 bis 500 Meter langer, biolumineszenter Tiefseeriesen."
             },
             {
               "titel": "Resonanzbrocken",

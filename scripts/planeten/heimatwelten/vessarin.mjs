@@ -2,7 +2,7 @@
 // Werte aus den Vorgaben abgeleitet: aquatische Evolution, Süß-/Salzwasser und mineralisierte/saure Gewässer, Druck- und Tiefenzonen, unterseeische Täler, Felsformationen, Höhlen, Geothermie)
 const G = "assets/bilder/Alle Spezies+Übersicht/Biologische Spezies/Thalassoiden/gesamtdarstellung/Designvorschläge/";
 export default {
-    ordner: "hydrothermale-ozeanwelt-im-all", system: "vessarin-system", planetId: "vessarin-planet",
+    ordner: "vessarin", system: "vessarin-system", planetId: "vessarin-planet",
     name: "Vessarin", genitiv: "von Vessarin", klasse: "Ozeanplanet", klasseLang: "Ozeanwelt mit globalem Tiefenmeer und Hydrothermalfeldern",
     spezies: { name: "Thalassoiden", gruppe: "Biologische Spezies", ordner: "Thalassoiden", seite: "inhalte/spezies/Biologische Spezies/Thalassoiden/hauptseite/Spezies.html" },
     intro: "Vessarin ist die Heimatwelt der Thalassoiden: ein Planet, dessen Oberfläche fast vollständig von einem kilometertiefen Ozean bedeckt ist. Am Meeresboden ziehen sich unterseeische Täler, Felsformationen, Höhlensysteme und leuchtende Hydrothermalfelder entlang – die Wiege der thalassoiden Entwicklungslinien.",

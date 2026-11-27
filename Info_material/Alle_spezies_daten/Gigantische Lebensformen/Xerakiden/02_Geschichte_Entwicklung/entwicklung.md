@@ -1,90 +1,120 @@
-# Xerakiden – Entwicklung
+# Xerakiden – Entwicklung V2.0
 
-# Xerakiden – Entwicklung
+## Gemeinsamer evolutionärer Ursprung
 
-## Evolutionärer Ursprung
+Die Xerakiden und die Xera-Wüstenkolosse entwickelten sich aus einer gemeinsamen Gruppe mineralisch gepanzerter terrestrischer Organismen auf Halvorn I.
 
-- Xerakiden entwickelten sich aus wesentlich kleineren terrestrischen Organismen.
-- Ihre Vorfahren besaßen mehrere tragende und manipulierende Gliedmaßen.
-- Zunehmende Trockenheit begünstigte Organismen mit geringerem Flüssigkeitsverlust.
-- Mineralisierte Körperoberflächen entwickelten sich ursprünglich als Schutz vor Staub, abrasivem Sand und Sonneneinstrahlung.
-- Mechanische Sinnesorgane ermöglichten das Erkennen von Wasserstellen, Bodengefahren und anderen Lebewesen.
-- Die zunehmende Spezialisierung der Gliedmaßen führte zur überwiegend aufrechten Fortbewegung.
-- Die seitlichen Gliedmaßen entwickelten sich von Fortbewegungsorganen zu Stützorganen.
-- Obere Gliedmaßen spezialisierten sich auf Manipulation und Werkzeugnutzung.
-- Niedrige Gravitationsbelastungen und geeignete Umweltbedingungen begünstigten die Entstehung gigantischer Körpergrößen.
-- Intelligenz entwickelte sich unter anderem durch langfristige Ressourcenplanung und kooperative Problemlösung.
+Ihre frühen Vorfahren besaßen sechs Gliedmaßen, mineralisch verstärkte Körperstrukturen und spezialisierte Sinnesorgane zur Orientierung in trockenen Landschaften.
 
-## Fortpflanzung
+- Entwicklung mineralischer Schutzschichten.
+- Anpassung an zunehmende Trockenheit.
+- Ausbildung effizienter biologischer Wasserkreisläufe.
+- Entwicklung mechanischer Sinnesorgane.
+- Zunehmende Spezialisierung einzelner Gliedmaßen.
+- Anpassung an unterschiedliche mineralische Lebensräume.
+
+## Evolutionäre Aufspaltung
+
+Im Verlauf der Evolution entstanden zwei unterschiedliche Entwicklungslinien.
+
+### Entwicklungslinie der Xerakiden
+
+- Spezialisierung auf komplexe Wahrnehmung.
+- Zunehmende Beweglichkeit der Manipulationsgliedmaßen.
+- Entwicklung präziserer Greiforgane.
+- Ausbildung komplexer sozialer Strukturen.
+- Zunehmende Werkzeugnutzung.
+- Entwicklung abstrakter Intelligenz.
+- Begrenzung des Körperwachstums zugunsten höherer Beweglichkeit.
+- Verbesserte neuronale Verarbeitung.
+- Entstehung einer technischen Zivilisation.
+
+### Entwicklungslinie der Wüstenkolosse
+
+- Zunehmende Körpergröße.
+- Ausbildung besonders massiver Panzerplatten.
+- Verstärkung der inneren Tragstrukturen.
+- Entwicklung großer Flüssigkeits- und Energiereserven.
+- Anpassung an weitläufige Wanderbewegungen.
+- Zunehmende Spezialisierung auf mechanischen Schutz.
+- Überwiegend instinktive und erlernte Verhaltensweisen.
+- Keine Entwicklung komplexer technischer Zivilisationen.
+
+Die evolutionäre Trennung führte langfristig zur Entstehung zweier eigenständiger Arten.
+
+## Fortpflanzung der Xerakiden
 
 - Biologische Fortpflanzung durch genetische Kombination kompatibler Individuen.
 - Entwicklung des Nachwuchses innerhalb geschützter biologischer Entwicklungskapseln.
-- Entwicklungskapseln werden in klimatisch stabilisierten Bereichen abgelegt.
-- Eltern oder gemeinschaftliche Betreuungseinrichtungen sichern die Versorgung.
-- Die Kapseln besitzen eine widerstandsfähige, regenerierbare Außenmembran.
-- Fortpflanzung erfordert erhebliche Energie- und Materialreserven.
-- Geburten beziehungsweise Schlupfereignisse finden vergleichsweise selten statt.
-- Die Fortpflanzung ist nicht an eine einzige gesellschaftliche Familienform gebunden.
-- Individuelle Fortpflanzungsentscheidungen besitzen gesellschaftlichen und rechtlichen Schutz.
+- Hoher Nährstoffbedarf während der Entwicklungsphase.
+- Geschützte und klimatisch stabilisierte Aufzuchtbereiche.
+- Betreuung durch Eltern und weitere Gemeinschaftsmitglieder.
+- Vergleichsweise lange Fortpflanzungszyklen.
+- Geringe durchschnittliche Geburtenrate.
+- Fortpflanzung zwischen Xerakiden und Wüstenkolossen ist auf natürlichem Weg nicht möglich.
 
 ## Lebensphasen
 
 ### Entwicklungsphase
 
-- Geschützte Entwicklung innerhalb einer biologischen Kapsel.
-- Ausbildung erster Skelett- und Nervensystemstrukturen.
-- Entstehung grundlegender Sinnesorgane.
+- Ausbildung grundlegender Organsysteme innerhalb der Entwicklungskapsel.
+- Entstehung der sechs Gliedmaßen.
+- Entwicklung erster Sinnesorgane.
+- Bildung elastischer Skelettstrukturen.
 - Abhängigkeit von stabiler Feuchtigkeits- und Nährstoffversorgung.
 
 ### Jungphase
 
-- Körpergröße nach dem Schlupf: ungefähr 2–5 Meter.
-- Die Panzerung ist zunächst vergleichsweise weich und elastisch.
-- Schnelleres Wachstum als bei erwachsenen Individuen.
-- Entwicklung grundlegender Bewegungs- und Kommunikationsfähigkeiten.
-- Betreuung durch erfahrene Individuen.
-- Besonders hohe Empfindlichkeit gegenüber Umweltbelastungen.
+- Körpergröße nach dem Schlupf: ungefähr 20–50 Zentimeter.
+- Relativ weiche und elastische Körperpanzerung.
+- Vergleichsweise schnelle körperliche Entwicklung.
+- Erlernen grundlegender Bewegungsmuster.
+- Ausbildung der Kommunikation.
+- Hohe Abhängigkeit von Betreuung und Versorgung.
 
-### Jugendphase
+### Kindheits- und Jugendphase
 
-- Körpergröße ungefähr 10–60 Meter.
-- Zunehmende Spezialisierung der Sinnesorgane.
-- Verstärkung des inneren Traggerüsts.
-- Erlernen differenzierter Werkzeugnutzung.
-- Teilnahme an gesellschaftlichen Ausbildungsprogrammen.
-- Allmähliche Übernahme eigenständiger Verantwortung.
+- Allmähliches Wachstum auf mehrere Meter Körpergröße.
+- Zunehmende Mineralisierung der Panzerplatten.
+- Entwicklung komplexer motorischer Fähigkeiten.
+- Erlernen differenzierter Sinneswahrnehmung.
+- Ausbildung sozialer und sprachlicher Fähigkeiten.
+- Beginn wissenschaftlicher, technischer oder gesellschaftlicher Ausbildung.
+- Zunehmende persönliche Unabhängigkeit.
 
 ### Erwachsenenphase
 
 - Körperliche und gesellschaftliche Reife ungefähr zwischen 160 und 250 Jahren.
-- Körpergröße zwischen 60 und 180 Metern.
-- Vollständig ausgebildete Panzer- und Sinnesstrukturen.
-- Eigenständige Lebensführung und Berufsausübung.
+- Körpergröße zwischen 6 und 18 Metern.
+- Durchschnittliche Körpergröße ungefähr 12 Meter.
+- Vollständig entwickelte Panzer- und Sinnesstrukturen.
+- Eigenständige Lebensführung.
 - Fortpflanzungsfähigkeit.
-- Weiterhin langsames individuelles Wachstum und anatomischer Umbau.
+- Ausgeprägte individuelle Spezialisierung.
+- Körperwachstum verlangsamt sich erheblich.
 
 ### Altersphase
 
-- Zunehmende Veränderungen der Panzeroberfläche.
-- Verlangsamte Regeneration beschädigter Körperstrukturen.
-- Teilweise Abnahme sensorischer Empfindlichkeit.
-- Ältere Individuen verwenden häufiger technische Stützsysteme.
-- Umfangreiche Lebenserfahrung bei individuell unterschiedlicher Gedächtnisleistung.
-- Keine verpflichtende Übernahme politischer oder gesellschaftlicher Ämter.
-
-## Anpassungsfähigkeit
-
-- Unterschiedliche Körperproportionen innerhalb der Spezies.
-- Regionale Varianten der Panzerzusammensetzung.
-- Unterschiedliche Toleranzen gegenüber Hitze und Trockenheit.
-- Anpassung des Wasserhaushalts an langfristige Umweltbedingungen.
-- Unterschiedliche Sinnesleistungen zwischen Populationen.
-- Technologische Unterstützung ermöglicht die Besiedlung weiterer geeigneter Umgebungen.
-- Keine spontane vollständige Anpassung an beliebige planetare Bedingungen.
+- Zunehmende Veränderungen der Panzerstruktur.
+- Verlangsamte körperliche Regeneration.
+- Teilweise Abnahme der sensorischen Leistungsfähigkeit.
+- Nutzung medizinischer und technischer Gelenkunterstützung.
+- Individuell unterschiedliche Gedächtnisleistung.
+- Umfangreiche gesellschaftliche und berufliche Erfahrung.
 
 ## Lebenserwartung
 
-- Typische Lebenserwartung ungefähr 1.200–3.000 Jahre.
-- Individuelle Abweichungen durch Umwelt, Genetik und medizinische Versorgung.
-- Alter und Körpergröße stehen nicht in einem vollständig festen Verhältnis.
+- Ungefähr 1.200–3.000 Jahre.
+- Unterschiede durch Genetik, Lebensweise und medizinische Versorgung.
+- Körpergröße ist kein zuverlässiger Indikator des Alters.
 - Xerakiden sind nicht unsterblich.
+- Wüstenkolosse stellen keine spätere Entwicklungsphase der Xerakiden dar.
+
+## Anpassungsfähigkeit
+
+- Regionale Unterschiede der Panzerzusammensetzung.
+- Individuelle Unterschiede der Körpergröße.
+- Unterschiedliche Pigmentierung des mineralisch-organischen Gewebes.
+- Anpassung an verschiedene trockene Klimazonen.
+- Technologisch unterstützte Besiedlung anderer Planeten.
+- Nutzung künstlicher Lebenserhaltungssysteme bei ungeeigneten Umweltbedingungen.

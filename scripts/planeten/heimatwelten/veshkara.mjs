@@ -2,7 +2,7 @@
 const B = "assets/bilder/Alle Spezies+Übersicht/Biologische Spezies/Chitinnoiden/";
 const G = B + "gesamtdarstellung/", E = B + "entwicklungsstadien/";
 export default {
-    ordner: "tiefblauer-ozeanplanet-unter-weien-wolken", system: "veshkara-system", planetId: "veshkara-planet",
+    ordner: "veshkara", system: "veshkara-system", planetId: "veshkara-planet",
     name: "Veshkara", genitiv: "Veshkaras", klasse: "Gesteinsplanet", klasseLang: "Terrestrischer Planet mit Ozeanen und Kontinenten",
     intro: "Veshkara ist die Heimatwelt der Chitinoiden: ein terrestrischer Planet mit Ozeanen, den Kontinenten Sereth und Vaul, großen Flusssystemen, Küstendeltas und Wurzelwäldern, in denen sich gepanzerte, vielgliedrige Wesen zu einer technischen Zivilisation entwickelten.",
     bildtext: "Veshkara – tiefblauer Ozeanplanet unter weißen Wolken",

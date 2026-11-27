@@ -1,79 +1,436 @@
 {
   "systemName": "Saelon-System",
   "praefix": "nalvyr-",
-  "lage": { "entfernungLj": 31, "richtung": [-0.3, 0.75, -0.6] },
+  "lage": {
+    "entfernungLj": 31,
+    "richtung": [
+      -0.3,
+      0.75,
+      -0.6
+    ]
+  },
   "einzelstern": false,
   "begleiterText": "Ein Weißer Zwerg (Saelon B) – der ausgebrannte Rest eines einst massereicheren Sterns – in rund 180 AE Abstand",
   "stern": {
-    "id": "nalvyr-stern", "name": "Saelon", "typ": "Orangefarbener Zwerg (K2 V)",
-    "masseSonne": 0.82, "radiusSonne": 0.93, "leuchtkraftSonne": 0.55, "temperaturK": 5150, "alterMrd": 6.1,
-    "farbe": [1, 0.74, 0.46], "emissionsfarbe": [1, 0.76, 0.5], "emission": 1.15,
-    "bild": { "art": "sterne", "slug": "aktiver-fk-comae-stern-mit-hellen-flares" },
+    "id": "nalvyr-stern",
+    "name": "Saelon",
+    "typ": "Orangefarbener Zwerg (K2 V)",
+    "masseSonne": 0.82,
+    "radiusSonne": 0.93,
+    "leuchtkraftSonne": 0.55,
+    "temperaturK": 5150,
+    "alterMrd": 6.1,
+    "farbe": [
+      1,
+      0.74,
+      0.46
+    ],
+    "emissionsfarbe": [
+      1,
+      0.76,
+      0.5
+    ],
+    "emission": 1.15,
+    "bild": {
+      "art": "sterne",
+      "slug": "aktiver-fk-comae-stern-mit-hellen-flares"
+    },
     "beschreibung": "Saelon ist ein alter, orangefarbener Hauptreihenstern der Spektralklasse K2 V mit 82 % der Sonnenmasse und 55 % ihrer Leuchtkraft. Mit rund 6,1 Milliarden Jahren ist er deutlich älter als die Sonne; seine magnetische Aktivität ist moderat, gelegentlich treten stärkere Aktivitätsphasen auf. Er ist Heimatstern der Regeneranten und Hauptstern eines Doppelsternsystems mit einem Weißen Zwerg."
   },
   "koerper": [
-    { "id": "nalvyr-saelon-i", "name": "Saelon I", "typ": "Gesteinsplanet", "um": "nalvyr-stern",
-      "aAE": 0.13, "e": 0.06, "i": 2.8, "knoten": 60, "peri": 200, "phase": 80, "radiusKm": 4600, "masseErde": 0.42, "albedo": 0.07, "farbe": [0.28, 0.2, 0.2],
-      "bild": { "art": "planeten", "slug": "obsidianplanet-mit-gluhenden-rissen" },
-      "beschreibung": "Saelon I ist eine sternnahe Obsidianwelt: Ihre einst geschmolzene Oberfläche ist zu dunklem, glasartigem Gestein erstarrt, durch das auf der Tagseite glühende Risse ziehen." },
-    { "id": "nalvyr-saelon-ii", "name": "Saelon II", "typ": "Ozeanplanet", "um": "nalvyr-stern",
-      "aAE": 0.47, "e": 0.02, "i": 1.4, "knoten": 150, "peri": 70, "phase": 300, "radiusKm": 6700, "masseErde": 1.12, "albedo": 0.55, "farbe": [0.86, 0.88, 0.9],
-      "bild": { "art": "planeten", "slug": "heie-ozeanwelt-im-weien-dampf" },
-      "beschreibung": "Saelon II ist eine heiße Dampfwelt: Ein tiefer, über 200 °C heißer Ozean liegt unter einer dichten, weißen Wasserdampfhülle, die nur der hohe Druck flüssig hält." },
-    { "id": "nalvyr-planet", "name": "Nalvyr", "typ": "Gesteinsplanet", "um": "nalvyr-stern",
-      "aAE": 0.76, "e": 0.035, "i": 0, "knoten": 30, "peri": 120, "phase": 160, "radiusKm": 6244, "masseErde": 0.884, "albedo": 0.29, "zielTemperaturC": 15, "farbe": [0.3, 0.52, 0.48],
-      "bild": { "art": "planeten", "slug": "turkisfarbener-planet-mit-unterwasser-schelfen" },
-      "beschreibung": "Nalvyr ist die Heimatwelt der Regeneranten: eine alte, biologisch vielfältige Gesteinswelt mit zwei großen Kontinenten, dem Tessal-Archipel, großen Flussdeltas und ausgedehnten Meeresräumen." },
-    { "id": "nalvyr-oris", "name": "Oris", "typ": "Mond", "um": "nalvyr-planet",
-      "periodeTage": 19.9, "e": 0.03, "i": 2.2, "knoten": 40, "peri": 0, "phase": 120, "radiusKm": 1520, "masseErde": 0.008, "farbe": [0.74, 0.72, 0.68],
-      "bild": { "art": "monde", "slug": "abgerundeter-trummermond-im-schwarzen-all" },
-      "beschreibung": "Oris ist der große Mond Nalvyrs. Gemeinsam mit Saelon erzeugt er halbtägige Gezeiten; in Trichterbuchten steigt das Wasser um bis zu 9 Meter – Lebensraum, in dem sich viele regenerative Tierlinien entwickelten." },
-    { "id": "nalvyr-teshra", "name": "Teshra", "typ": "Mond", "um": "nalvyr-planet",
-      "periodeTage": 4.1, "e": 0.07, "i": 9, "knoten": 200, "peri": 0, "phase": 30, "radiusKm": 6, "masseErde": 0, "farbe": [0.5, 0.44, 0.4],
-      "bild": { "art": "monde", "slug": "der-kleine-eingefangene-kartoffelmond" },
-      "beschreibung": "Teshra ist ein winziger, unregelmäßiger Zweitmond – ein eingefangener Asteroid auf geneigter Bahn, mit bloßem Auge von Nalvyr aus nicht zu sehen." },
-    { "id": "nalvyr-saelon-iva", "name": "Saelon IVa", "typ": "Gesteinsplanet", "um": "nalvyr-stern",
-      "aAE": 1.32, "e": 0.04, "i": 1.8, "knoten": 260, "peri": 30, "phase": 40, "radiusKm": 4800, "masseErde": 0.35, "albedo": 0.24, "farbe": [0.66, 0.5, 0.4],
-      "bild": { "art": "planeten", "slug": "doppelplanet-aus-zerklufteten-welten" },
-      "beschreibung": "Saelon IVa ist die größere Hälfte eines Doppelplaneten: Gemeinsam mit Saelon IVb umkreist sie einen Schwerpunkt, der außerhalb beider Körper liegt. Ihre zerklüftete Kruste trägt Spuren gewaltiger Gezeitenkräfte aus der Frühzeit." },
-    { "id": "nalvyr-saelon-ivb", "name": "Saelon IVb", "typ": "Mond", "um": "nalvyr-saelon-iva",
-      "periodeTage": 1.5, "e": 0.01, "i": 0.5, "knoten": 0, "peri": 0, "phase": 200, "radiusKm": 4000, "masseErde": 0.2, "farbe": [0.6, 0.46, 0.4],
-      "bild": { "art": "planeten", "slug": "eisenreiche-kraterwelt-im-all" },
-      "beschreibung": "Saelon IVb ist die kleinere Hälfte des Doppelplaneten – mit mehr als der halben Masse von IVa zu schwer für einen gewöhnlichen Mond. Beide wenden einander stets dieselbe Seite zu." },
-    { "id": "nalvyr-saumgurtel", "name": "Saumgürtel", "typ": "Asteroidengürtel", "ringUm": "nalvyr-stern",
-      "ringeAE": [2.3, 2.55, 2.8, 3.05], "anzahl": 220, "groesseKm": 300, "mindestPx": 5.5, "farbe": [0.66, 0.6, 0.54],
-      "bild": { "art": "sternensysteme", "suche": "Asteroidengürtel" },
-      "beschreibung": "Der Saumgürtel zwischen 2,3 und 3,05 AE ist auffallend reich an schweren Elementen – Material, das Saelon B in seiner Riesenphase einst ins System blies." },
-    { "id": "nalvyr-kerythra", "name": "Kerythra", "typ": "Zwergplanet", "um": "nalvyr-stern",
-      "aAE": 2.68, "e": 0.08, "i": 6.5, "knoten": 110, "peri": 250, "phase": 230, "radiusKm": 520, "masseErde": 0.00011, "albedo": 0.12, "farbe": [0.5, 0.46, 0.44],
-      "bild": { "art": "zwergplaneten", "slug": "basaltische-zwergwelt-im-all" },
-      "beschreibung": "Kerythra ist der größte Körper des Saumgürtels: ein basaltischer Zwergplanet, dessen dunkle Kruste auf frühe Aufschmelzung hindeutet." },
-    { "id": "nalvyr-saelon-v", "name": "Saelon V", "typ": "Gasriese", "um": "nalvyr-stern",
-      "aAE": 5.4, "e": 0.05, "i": 1.6, "knoten": 330, "peri": 140, "phase": 260, "radiusKm": 57000, "masseErde": 140, "albedo": 0.45, "farbe": [0.86, 0.8, 0.68],
-      "bild": { "art": "planeten", "slug": "kalter-saturn-mit-eisigen-ringen" },
-      "beschreibung": "Saelon V ist ein kalter, saturnähnlicher Gasriese mit einem breiten Ringsystem aus Eis." },
-    { "id": "nalvyr-saelon-v-ringe", "name": "Ringe von Saelon V", "typ": "Planetenring", "ringUm": "nalvyr-saelon-v",
-      "ringeAE": [0.00048, 0.00062, 0.00078, 0.00092], "anzahl": 300, "groesseKm": 3, "mindestPx": 2.4, "farbe": [0.86, 0.84, 0.78],
-      "bild": { "art": "monde", "slug": "gebrochener-ringrest" },
-      "beschreibung": "Die Ringe von Saelon V reichen von etwa 72.000 bis 138.000 km über dem Zentrum – Eisbrocken und Staub innerhalb der Roche-Grenze des Riesen." },
-    { "id": "nalvyr-mirel", "name": "Mirel", "typ": "Mond", "um": "nalvyr-saelon-v",
-      "periodeTage": 6.8, "e": 0.004, "i": 0.3, "knoten": 0, "peri": 0, "phase": 70, "radiusKm": 1900, "masseErde": 0.018, "farbe": [0.84, 0.88, 0.92],
-      "bild": { "art": "monde", "slug": "oblater-eismond-mit-breitem-eisgrat" },
-      "beschreibung": "Mirel ist der größte Mond von Saelon V, ein abgeplatteter Eismond mit einem breiten Eisgrat entlang des Äquators." },
-    { "id": "nalvyr-saelon-vi", "name": "Saelon VI", "typ": "Eisriese", "um": "nalvyr-stern",
-      "aAE": 16, "e": 0.36, "i": 14, "knoten": 70, "peri": 300, "phase": 20, "radiusKm": 24500, "masseErde": 16, "albedo": 0.3, "farbe": [0.66, 0.78, 0.9],
-      "bild": { "art": "planeten", "slug": "silberblauer-eiswolken-gasriese-im-all" },
-      "beschreibung": "Saelon VI ist ein silberblauer Eisriese auf einer stark elliptischen, um 14° geneigten Bahn – ein Planet, den die Schwerkraft von Saelon B über Milliarden Jahre aus seiner ursprünglichen Bahn gezogen hat." },
-    { "id": "nalvyr-weissschleier", "name": "Weißschleier", "typ": "Kometengebiet", "ringUm": "nalvyr-stern",
-      "ringeAE": [30, 36, 42], "anzahl": 180, "groesseKm": 140, "mindestPx": 4.5, "farbe": [0.78, 0.8, 0.86],
-      "beschreibung": "Ein Staub- und Eisgürtel zwischen 30 und 42 AE, dessen äußerer Rand vom Weißen Zwerg Saelon B begrenzt wird." },
-    { "id": "nalvyr-heilerkomet", "name": "Tränenkomet", "typ": "Komet", "um": "nalvyr-stern", "anomalie": true,
-      "aAE": 17.6, "e": 0.95, "i": 22, "knoten": 210, "peri": 60, "phase": 175, "radiusKm": 5, "masseErde": 0, "farbe": [0.6, 0.86, 0.9],
-      "bild": { "art": "kometen", "slug": "komet-mit-turkisblauem-schweifbogen" },
-      "beschreibung": "Ein periodischer Komet mit türkisblauem Schweifbogen, der alle 82 Jahre wiederkehrt. In alten Narethi-Archiven gilt er als „Träne, die heilt“ – seine Wiederkehr wurde mit großen Heilfesten verbunden." },
-    { "id": "nalvyr-saelon-b", "name": "Saelon B", "typ": "Weißer Zwerg", "um": "nalvyr-stern",
-      "aAE": 180, "e": 0.22, "i": 9, "knoten": 120, "peri": 40, "phase": 300, "radiusKm": 8400, "masseErde": 206000, "leuchtkraftSonne": 0.0008, "temperaturK": 7400, "farbe": [0.96, 0.94, 0.86],
-      "bild": { "art": "sterne", "slug": "weisser-zwerg-mit-warmem-elfenbeinglanz" },
-      "beschreibung": "Saelon B ist ein Weißer Zwerg mit 62 % der Sonnenmasse, kaum größer als Nalvyr. Er ist der ausgebrannte Kern eines einst etwa 2,4-mal sonnenschweren Sterns, der vor über fünf Milliarden Jahren zum Roten Riesen wurde und das junge System mit schweren Elementen anreicherte. Am Himmel Nalvyrs erscheint er als heller, elfenbeinfarbener Stern." }
+    {
+      "id": "nalvyr-saelon-i",
+      "name": "Saelon I",
+      "typ": "Gesteinsplanet",
+      "um": "nalvyr-stern",
+      "aAE": 0.13,
+      "e": 0.06,
+      "i": 2.8,
+      "knoten": 60,
+      "peri": 200,
+      "phase": 80,
+      "radiusKm": 4600,
+      "masseErde": 0.42,
+      "albedo": 0.07,
+      "farbe": [
+        0.28,
+        0.2,
+        0.2
+      ],
+      "bild": {
+        "art": "planeten",
+        "slug": "obsidianplanet-mit-gluhenden-rissen"
+      },
+      "beschreibung": "Saelon I ist eine sternnahe Obsidianwelt: Ihre einst geschmolzene Oberfläche ist zu dunklem, glasartigem Gestein erstarrt, durch das auf der Tagseite glühende Risse ziehen."
+    },
+    {
+      "id": "nalvyr-saelon-ii",
+      "name": "Saelon II",
+      "typ": "Ozeanplanet",
+      "um": "nalvyr-stern",
+      "aAE": 0.47,
+      "e": 0.02,
+      "i": 1.4,
+      "knoten": 150,
+      "peri": 70,
+      "phase": 300,
+      "radiusKm": 6700,
+      "masseErde": 1.12,
+      "albedo": 0.55,
+      "farbe": [
+        0.86,
+        0.88,
+        0.9
+      ],
+      "bild": {
+        "art": "planeten",
+        "slug": "heie-ozeanwelt-im-weien-dampf"
+      },
+      "beschreibung": "Saelon II ist eine heiße Dampfwelt: Ein tiefer, über 200 °C heißer Ozean liegt unter einer dichten, weißen Wasserdampfhülle, die nur der hohe Druck flüssig hält."
+    },
+    {
+      "id": "nalvyr-planet",
+      "name": "Nalvyr",
+      "typ": "Gesteinsplanet",
+      "um": "nalvyr-stern",
+      "aAE": 0.76,
+      "e": 0.035,
+      "i": 0,
+      "knoten": 30,
+      "peri": 120,
+      "phase": 160,
+      "radiusKm": 6244,
+      "masseErde": 0.884,
+      "albedo": 0.29,
+      "zielTemperaturC": 15,
+      "farbe": [
+        0.3,
+        0.52,
+        0.48
+      ],
+      "bild": {
+        "art": "planeten",
+        "slug": "turkisfarbener-planet-mit-unterwasser-schelfen"
+      },
+      "beschreibung": "Nalvyr ist die Heimatwelt der Regeneranten: eine alte, biologisch vielfältige Gesteinswelt mit zwei großen Kontinenten, dem Tessal-Archipel, großen Flussdeltas und ausgedehnten Meeresräumen."
+    },
+    {
+      "id": "nalvyr-oris",
+      "name": "Oris",
+      "typ": "Mond",
+      "um": "nalvyr-planet",
+      "periodeTage": 19.9,
+      "e": 0.03,
+      "i": 2.2,
+      "knoten": 40,
+      "peri": 0,
+      "phase": 120,
+      "radiusKm": 1520,
+      "masseErde": 0.008,
+      "farbe": [
+        0.74,
+        0.72,
+        0.68
+      ],
+      "bild": {
+        "art": "monde",
+        "slug": "abgerundeter-trummermond-im-schwarzen-all"
+      },
+      "beschreibung": "Oris, die Welt der wandernden Giganten, ist ein terrestrischer Mond Nalvyrs mit nur 0,14 g und einer stabilisierten Stickstoff-Sauerstoff-Atmosphäre – die Heimat der Gravanten, 100 bis 300 Meter langer Wanderriesen.",
+      "albedo": 0.13
+    },
+    {
+      "id": "nalvyr-teshra",
+      "name": "Teshra",
+      "typ": "Mond",
+      "um": "nalvyr-planet",
+      "periodeTage": 4.1,
+      "e": 0.07,
+      "i": 9,
+      "knoten": 200,
+      "peri": 0,
+      "phase": 30,
+      "radiusKm": 6,
+      "masseErde": 0,
+      "farbe": [
+        0.5,
+        0.44,
+        0.4
+      ],
+      "bild": {
+        "art": "monde",
+        "slug": "der-kleine-eingefangene-kartoffelmond"
+      },
+      "beschreibung": "Teshra ist ein winziger, unregelmäßiger Zweitmond – ein eingefangener Asteroid auf geneigter Bahn, mit bloßem Auge von Nalvyr aus nicht zu sehen."
+    },
+    {
+      "id": "nalvyr-saelon-iva",
+      "name": "Saelon IVa",
+      "typ": "Gesteinsplanet",
+      "um": "nalvyr-stern",
+      "aAE": 1.32,
+      "e": 0.04,
+      "i": 1.8,
+      "knoten": 260,
+      "peri": 30,
+      "phase": 40,
+      "radiusKm": 4800,
+      "masseErde": 0.35,
+      "albedo": 0.24,
+      "farbe": [
+        0.66,
+        0.5,
+        0.4
+      ],
+      "bild": {
+        "art": "planeten",
+        "slug": "doppelplanet-aus-zerklufteten-welten"
+      },
+      "beschreibung": "Saelon IVa ist die größere Hälfte eines Doppelplaneten: Gemeinsam mit Saelon IVb umkreist sie einen Schwerpunkt, der außerhalb beider Körper liegt. Ihre zerklüftete Kruste trägt Spuren gewaltiger Gezeitenkräfte aus der Frühzeit."
+    },
+    {
+      "id": "nalvyr-saelon-ivb",
+      "name": "Saelon IVb",
+      "typ": "Mond",
+      "um": "nalvyr-saelon-iva",
+      "periodeTage": 1.5,
+      "e": 0.01,
+      "i": 0.5,
+      "knoten": 0,
+      "peri": 0,
+      "phase": 200,
+      "radiusKm": 4000,
+      "masseErde": 0.2,
+      "farbe": [
+        0.6,
+        0.46,
+        0.4
+      ],
+      "bild": {
+        "art": "planeten",
+        "slug": "eisenreiche-kraterwelt-im-all"
+      },
+      "beschreibung": "Saelon IVb ist die kleinere Hälfte des Doppelplaneten – mit mehr als der halben Masse von IVa zu schwer für einen gewöhnlichen Mond. Beide wenden einander stets dieselbe Seite zu."
+    },
+    {
+      "id": "nalvyr-saumgurtel",
+      "name": "Saumgürtel",
+      "typ": "Asteroidengürtel",
+      "ringUm": "nalvyr-stern",
+      "ringeAE": [
+        2.3,
+        2.55,
+        2.8,
+        3.05
+      ],
+      "anzahl": 220,
+      "groesseKm": 300,
+      "mindestPx": 5.5,
+      "farbe": [
+        0.66,
+        0.6,
+        0.54
+      ],
+      "bild": {
+        "art": "sternensysteme",
+        "suche": "Asteroidengürtel"
+      },
+      "beschreibung": "Der Saumgürtel zwischen 2,3 und 3,05 AE ist auffallend reich an schweren Elementen – Material, das Saelon B in seiner Riesenphase einst ins System blies."
+    },
+    {
+      "id": "nalvyr-kerythra",
+      "name": "Kerythra",
+      "typ": "Zwergplanet",
+      "um": "nalvyr-stern",
+      "aAE": 2.68,
+      "e": 0.08,
+      "i": 6.5,
+      "knoten": 110,
+      "peri": 250,
+      "phase": 230,
+      "radiusKm": 520,
+      "masseErde": 0.00011,
+      "albedo": 0.12,
+      "farbe": [
+        0.5,
+        0.46,
+        0.44
+      ],
+      "bild": {
+        "art": "zwergplaneten",
+        "slug": "basaltische-zwergwelt-im-all"
+      },
+      "beschreibung": "Kerythra ist der größte Körper des Saumgürtels: ein basaltischer Zwergplanet, dessen dunkle Kruste auf frühe Aufschmelzung hindeutet."
+    },
+    {
+      "id": "nalvyr-saelon-v",
+      "name": "Saelon V",
+      "typ": "Gasriese",
+      "um": "nalvyr-stern",
+      "aAE": 5.4,
+      "e": 0.05,
+      "i": 1.6,
+      "knoten": 330,
+      "peri": 140,
+      "phase": 260,
+      "radiusKm": 57000,
+      "masseErde": 140,
+      "albedo": 0.45,
+      "farbe": [
+        0.86,
+        0.8,
+        0.68
+      ],
+      "bild": {
+        "art": "planeten",
+        "slug": "kalter-saturn-mit-eisigen-ringen"
+      },
+      "beschreibung": "Saelon V ist ein kalter, saturnähnlicher Gasriese mit einem breiten Ringsystem aus Eis."
+    },
+    {
+      "id": "nalvyr-saelon-v-ringe",
+      "name": "Ringe von Saelon V",
+      "typ": "Planetenring",
+      "ringUm": "nalvyr-saelon-v",
+      "ringeAE": [
+        0.00048,
+        0.00062,
+        0.00078,
+        0.00092
+      ],
+      "anzahl": 300,
+      "groesseKm": 3,
+      "mindestPx": 2.4,
+      "farbe": [
+        0.86,
+        0.84,
+        0.78
+      ],
+      "bild": {
+        "art": "monde",
+        "slug": "gebrochener-ringrest"
+      },
+      "beschreibung": "Die Ringe von Saelon V reichen von etwa 72.000 bis 138.000 km über dem Zentrum – Eisbrocken und Staub innerhalb der Roche-Grenze des Riesen."
+    },
+    {
+      "id": "nalvyr-mirel",
+      "name": "Mirel",
+      "typ": "Mond",
+      "um": "nalvyr-saelon-v",
+      "periodeTage": 6.8,
+      "e": 0.004,
+      "i": 0.3,
+      "knoten": 0,
+      "peri": 0,
+      "phase": 70,
+      "radiusKm": 1900,
+      "masseErde": 0.018,
+      "farbe": [
+        0.84,
+        0.88,
+        0.92
+      ],
+      "bild": {
+        "art": "monde",
+        "slug": "oblater-eismond-mit-breitem-eisgrat"
+      },
+      "beschreibung": "Mirel ist der größte Mond von Saelon V, ein abgeplatteter Eismond mit einem breiten Eisgrat entlang des Äquators."
+    },
+    {
+      "id": "nalvyr-saelon-vi",
+      "name": "Saelon VI",
+      "typ": "Eisriese",
+      "um": "nalvyr-stern",
+      "aAE": 16,
+      "e": 0.36,
+      "i": 14,
+      "knoten": 70,
+      "peri": 300,
+      "phase": 20,
+      "radiusKm": 24500,
+      "masseErde": 16,
+      "albedo": 0.3,
+      "farbe": [
+        0.66,
+        0.78,
+        0.9
+      ],
+      "bild": {
+        "art": "planeten",
+        "slug": "silberblauer-eiswolken-gasriese-im-all"
+      },
+      "beschreibung": "Saelon VI ist ein silberblauer Eisriese auf einer stark elliptischen, um 14° geneigten Bahn – ein Planet, den die Schwerkraft von Saelon B über Milliarden Jahre aus seiner ursprünglichen Bahn gezogen hat."
+    },
+    {
+      "id": "nalvyr-weissschleier",
+      "name": "Weißschleier",
+      "typ": "Kometengebiet",
+      "ringUm": "nalvyr-stern",
+      "ringeAE": [
+        30,
+        36,
+        42
+      ],
+      "anzahl": 180,
+      "groesseKm": 140,
+      "mindestPx": 4.5,
+      "farbe": [
+        0.78,
+        0.8,
+        0.86
+      ],
+      "beschreibung": "Ein Staub- und Eisgürtel zwischen 30 und 42 AE, dessen äußerer Rand vom Weißen Zwerg Saelon B begrenzt wird."
+    },
+    {
+      "id": "nalvyr-heilerkomet",
+      "name": "Tränenkomet",
+      "typ": "Komet",
+      "um": "nalvyr-stern",
+      "anomalie": true,
+      "aAE": 17.6,
+      "e": 0.95,
+      "i": 22,
+      "knoten": 210,
+      "peri": 60,
+      "phase": 175,
+      "radiusKm": 5,
+      "masseErde": 0,
+      "farbe": [
+        0.6,
+        0.86,
+        0.9
+      ],
+      "bild": {
+        "art": "kometen",
+        "slug": "komet-mit-turkisblauem-schweifbogen"
+      },
+      "beschreibung": "Ein periodischer Komet mit türkisblauem Schweifbogen, der alle 82 Jahre wiederkehrt. In alten Narethi-Archiven gilt er als „Träne, die heilt“ – seine Wiederkehr wurde mit großen Heilfesten verbunden."
+    },
+    {
+      "id": "nalvyr-saelon-b",
+      "name": "Saelon B",
+      "typ": "Weißer Zwerg",
+      "um": "nalvyr-stern",
+      "aAE": 180,
+      "e": 0.22,
+      "i": 9,
+      "knoten": 120,
+      "peri": 40,
+      "phase": 300,
+      "radiusKm": 8400,
+      "masseErde": 206000,
+      "leuchtkraftSonne": 0.0008,
+      "temperaturK": 7400,
+      "farbe": [
+        0.96,
+        0.94,
+        0.86
+      ],
+      "bild": {
+        "art": "sterne",
+        "slug": "weisser-zwerg-mit-warmem-elfenbeinglanz"
+      },
+      "beschreibung": "Saelon B ist ein Weißer Zwerg mit 62 % der Sonnenmasse, kaum größer als Nalvyr. Er ist der ausgebrannte Kern eines einst etwa 2,4-mal sonnenschweren Sterns, der vor über fünf Milliarden Jahren zum Roten Riesen wurde und das junge System mit schweren Elementen anreicherte. Am Himmel Nalvyrs erscheint er als heller, elfenbeinfarbener Stern."
+    }
   ]
 }

@@ -17,7 +17,7 @@ export function arten() {
         .map((e) => e.name);
 }
 
-export function findeKoerper(arg = "erde-im-sternenmeer") {
+export function findeKoerper(arg = "erde") {
     const [a, b] = arg.includes("/") ? arg.split("/") : [null, arg];
     const kandidaten = (a ? [a] : arten()).filter((art) => fs.existsSync(`${ROOT}${HK}/${art}/details/${b}`));
     if (!kandidaten.length) throw new Error(`Himmelskörper „${arg}“ nicht gefunden (gesucht in: ${(a ? [a] : arten()).join(", ")})`);

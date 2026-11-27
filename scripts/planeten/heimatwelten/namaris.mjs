@@ -1,7 +1,7 @@
 // Namaris · Heimatwelt der Kohäriden / Kolonialwesen (Quelle: Info_material/…/Kolonialwesen, 04 Heimatwelt)
 const B = "assets/bilder/Alle Spezies+Übersicht/Biologische Spezies/Kolonialwesen/gesamtdarstellung/";
 export default {
-    ordner: "turkisblauer-inselplanet-im-all", system: "namaris-system", planetId: "namaris-planet",
+    ordner: "namaris", system: "namaris-system", planetId: "namaris-planet",
     name: "Namaris", genitiv: "von Namaris", klasse: "Ozeanwelt", klasseLang: "Terrestrischer, wasserreicher Gesteinsplanet",
     intro: "Namaris ist die Heimatwelt der Kohäriden, der Kolonialwesen: ein wasserreicher Gesteinsplanet unter einem sonnenähnlichen Stern, mit Meeresbecken, Flussdeltas, flachen Binnenmeeren und Feuchtwäldern, in deren Uferzonen aus vielen Zooiden einzelne Persönlichkeiten wurden.",
     bildtext: "Namaris – türkisblaue Inselwelt",

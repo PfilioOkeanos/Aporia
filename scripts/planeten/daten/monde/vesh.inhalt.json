@@ -6,12 +6,16 @@
   "klasse": "Mond",
   "intro": "Vesh ist der große natürliche Mond Seyraths – rund 2.600 km im Durchmesser, in etwa 335.000 km Abstand. Er beeinflusst die Gezeiten und die langfristigen mechanischen Belastungszyklen der Kruste; ein gewaltiger Krustenbruch zieht sich über seine eigene Oberfläche. Vesh umkreist Seyrath in 24,1 Tage.",
   "globusDaten": {
-    "planet": "gigantischer-krustenbruch-auf-dem-mond",
+    "planet": "vesh",
     "klasse": "Gestein",
     "radius": 1300000
   },
   "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=seyrath-stern&objekt=seyrath-vesh",
   "grunddaten": [
+    [
+      "System-ID",
+      "seyrath-vesh"
+    ],
     [
       "Archiv-ID",
       "AP-5B0D65A55C"
@@ -97,16 +101,16 @@
     },
     {
       "icon": "✿",
-      "art": "Heimatwelt der Chronoiden",
-      "titel": "Seyrath",
-      "href": "inhalte/himmelskoerper/planeten/details/seyrath/hauptseite/index.html",
+      "art": "Heimatwelt der Megakolonien",
+      "titel": "Doran",
+      "href": "inhalte/himmelskoerper/planeten/details/doran/hauptseite/index.html",
       "route": null
     },
     {
       "icon": "◈",
       "art": "Spezies-Dossier",
-      "titel": "Chronoiden",
-      "href": "inhalte/spezies/Mentale Spezies/Chronoiden/hauptseite/Spezies.html",
+      "titel": "Megakolonien",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Megakolonien/hauptseite/Spezies.html",
       "route": null
     }
   ],
@@ -116,8 +120,8 @@
       "href": "Menüs/Sternenkarte/Sternenkarte.html?system=seyrath-stern&objekt=seyrath-vesh"
     },
     {
-      "titel": "Speziesdossier Chronoiden",
-      "href": "inhalte/spezies/Mentale Spezies/Chronoiden/hauptseite/Spezies.html"
+      "titel": "Speziesdossier Megakolonien",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Megakolonien/hauptseite/Spezies.html"
     }
   ],
   "design": {
@@ -277,18 +281,18 @@
           ]
         },
         {
-          "titel": "Im System von Seyrath",
+          "titel": "Im System von Doran",
           "text": [
-            "Das Kelira-System ist die Heimat der Chronoiden: Ihr Planet Seyrath umkreist Kelira, und Vesh ist einer seiner Monde."
+            "Das Kelira-System ist die Heimat der Megakolonien: Ihr Planet Doran umkreist Kelira."
           ],
           "verweise": [
             [
-              "Seyrath",
-              "inhalte/himmelskoerper/planeten/details/seyrath/hauptseite/index.html"
+              "Doran",
+              "inhalte/himmelskoerper/planeten/details/doran/hauptseite/index.html"
             ],
             [
-              "Speziesdossier Chronoiden",
-              "inhalte/spezies/Mentale Spezies/Chronoiden/hauptseite/Spezies.html"
+              "Speziesdossier Megakolonien",
+              "inhalte/spezies/Gigantische Lebensformen/Megakolonien/hauptseite/Spezies.html"
             ]
           ]
         }

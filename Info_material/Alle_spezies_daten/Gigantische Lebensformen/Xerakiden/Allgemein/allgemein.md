@@ -1,38 +1,69 @@
-# Xerakiden – Allgemeines
+# Xerakiden – Allgemeines V2.0
+
+## Grunddaten
 
 - Speziesname: Xerakiden
 - Speziesgruppe: Gigantische Lebensformen
-- Alternative Bezeichnung: Wüstenkolosse
 - Lebensform: Intelligenter, mobiler, vielzelliger Großorganismus
-- Körpergröße ausgewachsener Individuen: 60–180 Meter
-- Durchschnittliche Körpergröße: ungefähr 110 Meter
+- Körpergröße erwachsener Individuen: 6–18 Meter
+- Durchschnittliche Körpergröße: ungefähr 12 Meter
+- Maximale reguläre Körpergröße: 18 Meter
 - Lebenserwartung: ungefähr 1.200–3.000 Jahre
 - Fortbewegung: überwiegend aufrecht und zweibeinig
 - Anzahl der Gliedmaßen: sechs
 - Körperarchitektur: nicht humanoid
-- Lebensraum: aride und hyperaride Planetenregionen
-- Bevorzugte Umgebung: Felswüsten, Mineralebenen, Trockentäler und Hochebenen
+- Körperoberfläche: bewegliche mineralisch-organische Panzerplatten
+- Charakteristische Panzerung: Xera-Platten
+- Lebensraum: aride und hyperaride Regionen
+- Heimatwelt: Halvorn I
+- Sternensystem: Halvorn-System
+- Weitere intelligente Spezies des Sternensystems: Dendroarchen auf Dravelon
 - Intelligenz: hochentwickelt
 - Bewusstsein: individuell und eigenständig
-- Sozialverhalten: gemeinschaftlich bei ausgeprägter persönlicher Unabhängigkeit
-- Zivilisationsform: technologisch fortgeschrittene Großgesellschaften
-- Stoffwechsel: langsam, regulierbar und ressourcensparend
-- Körperoberfläche: mehrschichtige, bewegliche Biopanzerung
-- Energieversorgung: chemischer Stoffwechsel mit ergänzender solarer Energiegewinnung
-- Kommunikation: Bodenschwingungen, Berührungsmuster, Luftschall und visuelle Signale
-- Besondere Sinnesleistungen: Wahrnehmung mechanischer Spannungen, Erschütterungen, Wärmegradienten und elektrischer Felder
-- Technologische Schwerpunkte: Materialwissenschaften, Wassergewinnung, Strukturdiagnostik, Sensorik und Wüsteninfrastruktur
-- Heimatwelt: noch nicht festgelegt
-- Sternensystem: noch nicht festgelegt
+- Zivilisation: technologisch fortgeschritten und interstellar handlungsfähig
 - Fraktionszugehörigkeit: noch nicht festgelegt
 
-## Identität der Spezies
+## Biologische Eigenschaften
 
-- Xerakiden sind weder lebende Gesteinsformationen noch mineralische Bewusstseinsstrukturen.
-- Jedes Individuum besitzt einen vollständigen biologischen Körper.
-- Die Panzerung wird durch lebendes Gewebe erzeugt, versorgt und regeneriert.
-- Die Spezies ist weder ein Schwarmbewusstsein noch ein verteilter Organismus.
-- Xerakiden besitzen Persönlichkeit, Erinnerungen, Emotionen und individuelle Interessen.
-- Ihre enorme Körpergröße bestimmt ihre Architektur, Infrastruktur, Gesellschaft und Technologie.
-- Ihre Zivilisation beruht insbesondere auf dem Verständnis physischer Materialeigenschaften und dem kontrollierten Umgang mit knappen Ressourcen.
-- Xerakiden sind nicht grundsätzlich aggressiv oder friedlich. Verhalten und Persönlichkeit unterscheiden sich zwischen Individuen.
+- Organisches Körpergewebe mit mineralischen Einlagerungen.
+- Lebende, regenerierbare Körperpanzerung.
+- Segmentierte innere Tragstrukturen.
+- Komplexe mechanische, optische und thermische Sinnesorgane.
+- Hocheffizienter Wasserhaushalt.
+- Regulierbarer, vergleichsweise langsamer Stoffwechsel.
+- Widerstandsfähigkeit gegenüber trockenen und staubreichen Umweltbedingungen.
+- Ausgeprägte Wahrnehmung von Materialeigenschaften und Bodenschwingungen.
+
+## Evolutionäre Verwandtschaft
+
+Auf Halvorn I existiert neben den intelligenten Xerakiden eine eigenständige verwandte Tierart, die als Xera-Wüstenkolosse bezeichnet wird.
+
+Beide Arten gehen auf einen gemeinsamen biologischen Vorfahren zurück. Ihre evolutionären Entwicklungslinien trennten sich jedoch vor langer Zeit.
+
+Während sich die Xerakiden auf komplexe Wahrnehmung, Werkzeugnutzung, soziale Zusammenarbeit und Intelligenz spezialisierten, entwickelten die Xera-Wüstenkolosse wesentlich größere Körperstrukturen und eine auf das Überleben in abgelegenen Wüstenregionen ausgerichtete Biologie.
+
+- Xerakiden: intelligente Zivilisation, 6–18 Meter Körpergröße.
+- Xera-Wüstenkolosse: wildlebende Megafauna, 60–180 Meter Körpergröße.
+- Beide Arten besitzen charakteristische mineralisch-organische Panzerplatten.
+- Die Wüstenkolosse sind keine besonders großen Xerakiden.
+- Xerakiden können sich nicht zu Wüstenkolossen entwickeln.
+- Beide Arten bilden eigenständige Fortpflanzungsgemeinschaften.
+- Die Wüstenkolosse besitzen keine technische Zivilisation.
+
+## Technologische Identität
+
+- Materialwissenschaften
+- Resonanzwissenschaften
+- Wassergewinnung
+- Biologische Verbundwerkstoffe
+- Strukturdiagnostik
+- Mechanische Sensorik
+- Wüsteninfrastruktur
+- Fahrzeugtechnik
+- Raumfahrttechnik
+
+## Besonderheit
+
+Die Xerakiden verbinden gigantische biologische Körperstrukturen mit einer eigenständigen technischen Zivilisation.
+
+Ihre Werkstoffe und Technologien beruhen sowohl auf der Erforschung ihrer eigenen Biologie als auch auf der Untersuchung der verwandten Xera-Wüstenkolosse.

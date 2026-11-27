@@ -2,7 +2,7 @@
 // Werte aus den Vorgaben abgeleitet: feuchte Wald- und Sumpflandschaften, Wasser, Mineralien, geringe Schwerkraft begünstigt riesige Strukturen, Symbiosen)
 const G = "assets/bilder/Alle Spezies+Übersicht/Gigantische Lebensformen/Dendroarchen/gesamtdarstellung/";
 export default {
-    ordner: "lebender-jadeplanet-mit-flussbecken", system: "dravelon-system", planetId: "dravelon-planet",
+    ordner: "dravelon", system: "dravelon-system", planetId: "dravelon-planet",
     name: "Dravelon", genitiv: "von Dravelon", klasse: "Gesteinsplanet", klasseLang: "Feuchte Wald- und Sumpfwelt mit geringer Schwerkraft",
     spezies: { name: "Dendroarchen", gruppe: "Gigantische Lebensformen", ordner: "Dendroarchen", seite: "inhalte/spezies/Gigantische Lebensformen/Dendroarchen/hauptseite/Spezies.html" },
     intro: "Dravelon ist der Ursprungsplanet der Dendroarchen: eine feuchte, grüne Welt aus endlosen Wäldern, Sumpfbecken und weit verzweigten Flussdeltas. Die geringe Schwerkraft ließ hier Lebensformen von mehr als zehn Kilometern Ausdehnung entstehen.",

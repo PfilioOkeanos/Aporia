@@ -3,7 +3,7 @@ const H = "assets/bilder/Alle Spezies+Übersicht/Mentale Spezies/Solitiden/Heima
 const B = { kluft: H + "Heimat_a1.png", becken: H + "Heimat_a2.png", terrassen: H + "Heimat_a3.png", kueste: H + "Heimat_a4.png", hochland: H + "Heimat_a5.png" };
 export default {
     systemseite: "inhalte/himmelskoerper/sternensysteme/details/teryn-system/hauptseite/index.html",
-    ordner: "aporia-die-blaue-ozeanwelt", system: "teryn-system", planetId: "teryn-iskara",
+    ordner: "iskara", system: "teryn-system", planetId: "teryn-iskara",
     name: "Iskara", genitiv: "von Iskara", klasse: "Silikat-Gesteinsplanet",
     klasseLang: "Terrestrischer, geologisch aktiver Silikat-Gesteinsplanet mit 48 % Wasserflächen",
     spezies: { name: "Solitiden", gruppe: "Mentale Spezies", ordner: "Solitiden", seite: "inhalte/spezies/Mentale Spezies/Solitiden/hauptseite/Spezies.html" },

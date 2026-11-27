@@ -6,12 +6,16 @@
   "klasse": "Ultrakühler Roter Zwerg (M8 V)",
   "intro": "TRAPPIST-1 ist ein ultrakühler Roter Zwerg (M8 V) in rund 40,7 Lichtjahren Entfernung – kaum größer als Jupiter, mit nur 9 % der Sonnenmasse. Seine Strahlungsausbrüche prägten die Umweltgeschichte seiner Planeten. Werte nach realen Messungen; die APORIA-Fassung ergänzt einen achten Planeten. TRAPPIST-1 ist der Zentralstern des TRAPPIST-1-Systems.",
   "globusDaten": {
-    "planet": "aporia-roter-zwerg-bild",
+    "planet": "trappist-1",
     "klasse": "Vulkan",
     "radius": 82927000
   },
   "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=trappist-stern",
   "grunddaten": [
+    [
+      "System-ID",
+      "trappist-stern"
+    ],
     [
       "Archiv-ID",
       "AP-939916E5CB"
@@ -45,7 +49,7 @@
       "ca. 7,6 Mrd. Jahre"
     ],
     [
-      "Monde",
+      "Planeten",
       "8 (TRAPPIST-1b, TRAPPIST-1c, TRAPPIST-1d, TRAPPIST-1e, TRAPPIST-1f, TRAPPIST-1g, TRAPPIST-1h, TRAPPIST-1i)"
     ]
   ],
@@ -60,7 +64,7 @@
     ],
     [
       "Nächste Nachbarsysteme",
-      "Ombrys-System (23,7 Lj), Narev-System (24 Lj)"
+      "Ysmeroth-System (9,8 Lj), Ombrys-System (23,7 Lj)"
     ]
   ],
   "verknuepfungen": [
@@ -73,72 +77,72 @@
     },
     {
       "icon": "◐",
-      "art": "Mond",
+      "art": "Planet",
       "titel": "TRAPPIST-1b",
       "href": "inhalte/himmelskoerper/planeten/details/trappist-1b/hauptseite/index.html",
       "route": null
     },
     {
       "icon": "◐",
-      "art": "Mond",
+      "art": "Planet",
       "titel": "TRAPPIST-1c",
       "href": "inhalte/himmelskoerper/planeten/details/trappist-1c/hauptseite/index.html",
       "route": null
     },
     {
       "icon": "◐",
-      "art": "Mond",
+      "art": "Planet",
       "titel": "TRAPPIST-1d",
       "href": "inhalte/himmelskoerper/planeten/details/trappist-1d/hauptseite/index.html",
       "route": null
     },
     {
       "icon": "◐",
-      "art": "Mond",
+      "art": "Planet",
       "titel": "TRAPPIST-1e",
       "href": "inhalte/himmelskoerper/planeten/details/trappist-1e/hauptseite/index.html",
       "route": null
     },
     {
       "icon": "◐",
-      "art": "Mond",
+      "art": "Planet",
       "titel": "TRAPPIST-1f",
       "href": "inhalte/himmelskoerper/planeten/details/trappist-1f/hauptseite/index.html",
       "route": null
     },
     {
       "icon": "◐",
-      "art": "Mond",
+      "art": "Planet",
       "titel": "TRAPPIST-1g",
       "href": "inhalte/himmelskoerper/planeten/details/trappist-1g/hauptseite/index.html",
       "route": null
     },
     {
       "icon": "◐",
-      "art": "Mond",
+      "art": "Planet",
       "titel": "TRAPPIST-1h",
       "href": "inhalte/himmelskoerper/planeten/details/trappist-1h/hauptseite/index.html",
       "route": null
     },
     {
       "icon": "◐",
-      "art": "Mond",
+      "art": "Planet",
       "titel": "TRAPPIST-1i",
       "href": "inhalte/himmelskoerper/planeten/details/trappist-1i/hauptseite/index.html",
       "route": null
     },
     {
       "icon": "✿",
-      "art": "Heimatwelt der Biomechnoiden",
-      "titel": "TRAPPIST-1e",
-      "href": "inhalte/himmelskoerper/planeten/details/trappist-1e/hauptseite/index.html",
+      "art": "Heimatwelt der Kontinentaliden",
+      "titel": "TRAPPIST-1d",
+      "href": "inhalte/himmelskoerper/planeten/details/trappist-1d/hauptseite/index.html",
       "route": null
     },
     {
       "icon": "◈",
       "art": "Spezies-Dossier",
-      "titel": "Biomechnoiden",
-      "href": "inhalte/spezies/Technologische Lebensformen/Biomechnoiden/hauptseite/Spezies.html",
+      "titel": "Kontinentaliden",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Kontinentaliden/hauptseite/Spezies.html",
       "route": null
     }
   ],
@@ -148,8 +152,8 @@
       "href": "Menüs/Sternenkarte/Sternenkarte.html?system=trappist-stern"
     },
     {
-      "titel": "Speziesdossier Biomechnoiden",
-      "href": "inhalte/spezies/Technologische Lebensformen/Biomechnoiden/hauptseite/Spezies.html"
+      "titel": "Speziesdossier Kontinentaliden",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Kontinentaliden/hauptseite/Spezies.html"
     }
   ],
   "design": {
@@ -304,24 +308,24 @@
               "ca. 7,6 Mrd. Jahre"
             ],
             [
-              "Monde",
+              "Planeten",
               "8 (TRAPPIST-1b, TRAPPIST-1c, TRAPPIST-1d, TRAPPIST-1e, TRAPPIST-1f, TRAPPIST-1g, TRAPPIST-1h, TRAPPIST-1i)"
             ]
           ]
         },
         {
-          "titel": "Im System von TRAPPIST-1e",
+          "titel": "Im System von TRAPPIST-1d",
           "text": [
-            "Das TRAPPIST-1-System ist die Heimat der Biomechnoiden: Ihr Planet TRAPPIST-1e umkreist TRAPPIST-1."
+            "Das TRAPPIST-1-System ist die Heimat der Kontinentaliden: Ihr Planet TRAPPIST-1d umkreist TRAPPIST-1."
           ],
           "verweise": [
             [
-              "TRAPPIST-1e",
-              "inhalte/himmelskoerper/planeten/details/trappist-1e/hauptseite/index.html"
+              "TRAPPIST-1d",
+              "inhalte/himmelskoerper/planeten/details/trappist-1d/hauptseite/index.html"
             ],
             [
-              "Speziesdossier Biomechnoiden",
-              "inhalte/spezies/Technologische Lebensformen/Biomechnoiden/hauptseite/Spezies.html"
+              "Speziesdossier Kontinentaliden",
+              "inhalte/spezies/Gigantische Lebensformen/Kontinentaliden/hauptseite/Spezies.html"
             ]
           ]
         }
@@ -341,7 +345,7 @@
             ],
             [
               "Nächste Nachbarsysteme",
-              "Ombrys-System (23,7 Lj), Narev-System (24 Lj), Osselyr-System (35,1 Lj)"
+              "Ysmeroth-System (9,8 Lj), Ombrys-System (23,7 Lj), Narev-System (24 Lj)"
             ]
           ]
         },
@@ -385,7 +389,7 @@
               "Eisplanet"
             ],
             [
-              "Kalter Trümmerring · 0,1–0,2 AE",
+              "Morenler-Gürtel · 0,1–0,2 AE",
               "Asteroidengürtel"
             ],
             [
@@ -459,7 +463,7 @@
               "ca. 7,6 Mrd. Jahre"
             ],
             [
-              "Monde",
+              "Planeten",
               "8 (TRAPPIST-1b, TRAPPIST-1c, TRAPPIST-1d, TRAPPIST-1e, TRAPPIST-1f, TRAPPIST-1g, TRAPPIST-1h, TRAPPIST-1i)"
             ]
           ]
@@ -524,7 +528,7 @@
               "Eisplanet"
             ],
             [
-              "Kalter Trümmerring · 0,1–0,2 AE",
+              "Morenler-Gürtel · 0,1–0,2 AE",
               "Asteroidengürtel"
             ],
             [
@@ -570,11 +574,11 @@
         {
           "titel": "Nachbarsysteme",
           "liste": [
+            "Ysmeroth-System – 9,8 Lichtjahre",
             "Ombrys-System – 23,7 Lichtjahre",
             "Narev-System – 24 Lichtjahre",
             "Osselyr-System – 35,1 Lichtjahre",
-            "Iovar-System – 36,6 Lichtjahre",
-            "Orvaya-System – 36,9 Lichtjahre"
+            "Iovar-System – 36,6 Lichtjahre"
           ]
         }
       ]
@@ -613,11 +617,11 @@
         {
           "titel": "Besonderheiten",
           "liste": [
-            "8 Monde: TRAPPIST-1b, TRAPPIST-1c, TRAPPIST-1d, TRAPPIST-1e, TRAPPIST-1f, TRAPPIST-1g, TRAPPIST-1h, TRAPPIST-1i"
+            "8 eigene Planeten: TRAPPIST-1b, TRAPPIST-1c, TRAPPIST-1d, TRAPPIST-1e, TRAPPIST-1f, TRAPPIST-1g, TRAPPIST-1h, TRAPPIST-1i"
           ]
         },
         {
-          "titel": "Monde",
+          "titel": "Planeten",
           "karten": [
             {
               "titel": "TRAPPIST-1b",
@@ -629,7 +633,7 @@
             },
             {
               "titel": "TRAPPIST-1d",
-              "text": "10.040 km Durchmesser, Umlauf in 4,1 Tage. TRAPPIST-1d ist ein kleiner Planet am inneren Rand der habitablen Zone."
+              "text": "10.040 km Durchmesser, Umlauf in 4,1 Tage. TRAPPIST-1d ist eine gebunden rotierende Kontinentalwelt mit fünf großen Kontinenten, Binnenmeeren und dunkelroter Vegetation – die Heimat der Kontinentaliden, deren Körper sich über bis zu 8.000 Kilometer erstrecken."
             },
             {
               "titel": "TRAPPIST-1e",

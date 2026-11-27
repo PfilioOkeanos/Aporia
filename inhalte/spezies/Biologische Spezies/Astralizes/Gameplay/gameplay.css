@@ -1,2 +1,17 @@
-/* Astralizes – Spielintegration · erzeugt vom Spezies-Baukasten (scripts/spezies)
-   Gemeinsames Design: astralizes-basis.css · eigene Anpassungen dieser Seite hier ergänzen. */
+/* Saal VIII · Zwei Aussichtsplattformen – Peilung: zwei Linien kreuzen sich dort, wo der Blick ruht */
+.az-saal-gameplay { background: #020a0b; --az-gold: #6ff0d8; }
+.az-hud-kopf { min-height: 82vh; cursor: crosshair; }
+.az-hud-kopf::before { content: ""; position: absolute; inset: 0; z-index: -2; background: var(--bild) center/cover; filter: saturate(.6) brightness(.7) hue-rotate(-20deg); }
+.az-hud-kopf::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(#6ff0d80d 1px, transparent 1px) 0 0/100% 48px, linear-gradient(90deg, #6ff0d80d 1px, transparent 1px) 0 0/48px 100%, radial-gradient(ellipse, transparent 40%, #020a0be0); }
+.az-peilung { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 1; pointer-events: none; }
+.az-peilung line { stroke: #6ff0d8; stroke-width: 1; stroke-dasharray: 6 6; animation: az-strich 1s linear infinite; }
+.az-peil-ziel { fill: none; stroke: #6ff0d8; stroke-width: 1.5; }
+@keyframes az-strich { to { stroke-dashoffset: -12; } }
+.az-plattform { position: absolute; bottom: 1rem; font: 500 .7rem var(--az-grotesk); letter-spacing: .25em; text-transform: uppercase; color: #6ff0d8; z-index: 2; }
+.az-plattform--a { left: 1rem; } .az-plattform--b { right: 1rem; }
+.az-koordinate { display: block; margin-top: 1rem; font: 500 .85rem var(--az-grotesk); letter-spacing: .15em; color: #6ff0d8; }
+.az-ziele { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr)); gap: 2.5rem; padding: 0 clamp(1rem, 5vw, 5rem); }
+.az-ziele .az-werk-bild { position: relative; outline: 1px solid #6ff0d833; outline-offset: 8px; }
+.az-ziele .az-werk-bild::after { content: ""; position: absolute; inset: 0; background: linear-gradient(#6ff0d8, #6ff0d8) center/1px 34% no-repeat, linear-gradient(#6ff0d8, #6ff0d8) center/34% 1px no-repeat; opacity: 0; transition: opacity .3s; mix-blend-mode: screen; }
+.az-ziele .az-werk-bild:hover::after { opacity: .8; }
+.az-ziele .az-werk-bild img { filter: saturate(.85); }

@@ -34,7 +34,10 @@ const sternMu = s.masseSonne * MU_SONNE;
 // Bild: { art, slug } fest oder { art, suche: "Regex" } → erstes passendes Archivmotiv, das in der Karte noch frei ist
 const vergeben = new Set(objekte.filter((o) => !o.id.startsWith(def.praefix)).map((o) => o.archivLink).filter(Boolean));
 const ordnerVon = (slug) => slug.replace(/-[0-9a-f]{10,12}$/i, "");
-const vorschauVon = (b) => {
+const vorschauVon = (b, id) => {
+    // bestehende Zuordnung in der Karte behalten, solange ihr Dossier existiert (Ordner tragen inzwischen den Namen des Körpers)
+    const alt = objekte.find((o) => o.id === id);
+    if (alt?.archivLink && fs.existsSync(ROOT + alt.archivLink.replace(/^(\.\.\/)+/, ""))) { vergeben.add(alt.archivLink); return { ...(alt.vorschau ? { vorschau: alt.vorschau } : {}), archivLink: alt.archivLink }; }
     if (!b) return {};
     // fest vorgegeben (für Körper ohne Bildarchiv-Eintrag): { vorschau: "<Medienschlüssel>", archivLink: "../../inhalte/…" }
     if (b.vorschau) return { vorschau: b.vorschau, ...(b.archivLink ? { archivLink: b.archivLink } : {}) };
@@ -53,7 +56,7 @@ const vorschauVon = (b) => {
 };
 const link = (id) => `./Sternsysteme/Sternsysteme.html?id=${encodeURIComponent(id)}`;
 const neu = [{
-    id: s.id, name: s.name, typ: s.typ, link: link(s.id), ...vorschauVon(s.bild), systemName: def.systemName,
+    id: s.id, name: s.name, typ: s.typ, link: link(s.id), ...vorschauVon(s.bild, s.id), systemName: def.systemName,
     position: sternPos, radius: km(s.radiusSonne * R_SONNE_KM), color: s.farbe, emissionsfarbe: s.emissionsfarbe, emission: s.emission,
     beschreibung: s.beschreibung, gravitationMu: sternMu, radiusKm: Math.round(s.radiusSonne * R_SONNE_KM), distanzLichtjahre: def.lage.entfernungLj, kameraRevision: 1,
 }];
@@ -62,7 +65,7 @@ const neu = [{
 const nachId = new Map([[s.id, { obj: neu[0], mu: sternMu, masseSonne: s.masseSonne }]]);
 const bericht = [];
 for (const k of def.koerper) {
-    const basis = { id: k.id, name: k.name, typ: k.typ, link: link(k.id), ...vorschauVon(k.bild), color: k.farbe, systemId: s.id, beschreibung: k.beschreibung };
+    const basis = { id: k.id, name: k.name, typ: k.typ, link: link(k.id), ...vorschauVon(k.bild, k.id), color: k.farbe, systemId: s.id, beschreibung: k.beschreibung };
     if (k.ringeAE) {   // Gürtel und Kometengebiete
         const mitte = nachId.get(k.ringUm).obj.position;
         const ringe = k.ringeAE.map((a) => a * EINHEITEN_PRO_AU);

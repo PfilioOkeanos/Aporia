@@ -1,56 +1,119 @@
 {
-  "_erzeugt": "koerper-bauen",
   "name": "TRAPPIST-1d",
   "genitiv": "von TRAPPIST-1d",
   "dossierName": "TRAPPIST-1d-Dossier",
-  "klasse": "Gesteinsplanet",
-  "intro": "TRAPPIST-1d ist ein kleiner Planet am inneren Rand der habitablen Zone. TRAPPIST-1d umkreist TRAPPIST-1 in 0,022 AE Abstand und braucht für einen Umlauf 4,1 Tage.",
+  "klasse": "Planet · Gesteinsplanet",
+  "intro": "TRAPPIST-1d ist eine gebunden rotierende Kontinentalwelt im kompakten TRAPPIST-1-System: fünf große Kontinente, Binnenmeere, dunkelrote und violette Vegetation unter einem roten Zwerg. Ihre Landschaften durchziehen die Kontinentaliden – Einzelorganismen, deren Körpernetzwerke sich bei sehr alten Individuen über bis zu 8.000 Kilometer erstrecken.",
   "globusDaten": {
     "planet": "gefrorene-wasserwelt-im-tiefen-all",
-    "klasse": "Gestein",
+    "klasse": "Organisch geprägte Welt",
     "radius": 5020000
   },
-  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=trappist-stern&objekt=trappist-d",
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=trappist-stern",
   "grunddaten": [
     [
       "Archiv-ID",
       "AP-EBCBD3F510"
     ],
     [
-      "Typ",
-      "Gesteinsplanet"
-    ],
-    [
-      "Sternsystem",
-      "TRAPPIST-1-System"
-    ],
-    [
-      "Zentralkörper",
-      "TRAPPIST-1"
-    ],
-    [
-      "Große Halbachse",
-      "0,022 AE"
-    ],
-    [
-      "Umlaufzeit",
-      "4,1 Tage"
+      "Klasse",
+      "Terrestrischer Kontinentalplanet mit gebundener Rotation"
     ],
     [
       "Durchmesser",
       "10.040 km"
     ],
     [
+      "Radius",
+      "5.020 km"
+    ],
+    [
       "Masse",
-      "0,388 Erdmassen"
+      "0,39 Erdmassen"
+    ],
+    [
+      "Dichte",
+      "4,37 g/cm³"
     ],
     [
       "Schwerkraft",
-      "0,62 g"
+      "0,62 g (6,1 m/s²)"
     ],
     [
-      "Gleichgewichtstemperatur",
-      "ca. -11 °C"
+      "Mittlere Oberflächentemperatur",
+      "ca. 8 °C"
+    ],
+    [
+      "Ozeane",
+      "ca. 32 % Wasserbecken einschließlich vereister Flächen"
+    ],
+    [
+      "Atmosphäre",
+      "76,5 % Stickstoff, 21,5 % Sauerstoff, 1,5 % Argon, 0,4 % Kohlendioxid, 0,1 % Spurengase"
+    ],
+    [
+      "Atmosphärendruck",
+      "ca. 1,35 bar"
+    ],
+    [
+      "Rotation (gebunden)",
+      "ca. 97,2 h (gebunden)"
+    ],
+    [
+      "Umlaufzeit",
+      "4 Erdtage"
+    ],
+    [
+      "Abstand zum Stern",
+      "0,022 AE"
+    ],
+    [
+      "Monde",
+      "keine"
+    ],
+    [
+      "Zentralstern",
+      "TRAPPIST-1, Ultrakühler Roter Zwerg (M8 V)"
+    ],
+    [
+      "Einstrahlung",
+      "1,12-fach der Erde"
+    ],
+    [
+      "Achsneigung",
+      "0°"
+    ],
+    [
+      "Exzentrizität",
+      "0,008"
+    ],
+    [
+      "Fluchtgeschwindigkeit",
+      "7,8 km/s"
+    ],
+    [
+      "Alter",
+      "ca. 7,6 Mrd. Jahre"
+    ],
+    [
+      "Archiv-ID",
+      "AP-EBCBD3F510"
+    ],
+    [
+      "Planetenalter",
+      "ca. 7,6 Mrd. Jahre"
+    ],
+    [
+      "Kontinente",
+      "Velkaris, Tharoven, Naevora, Korvath, Isvaron"
+    ],
+    [
+      "Resonanzkette",
+      "Teil der TRAPPIST-1-Bahnresonanzen"
+    ],
+    [
+      "Intelligente Spezies",
+      "Kontinentaliden"
     ]
   ],
   "position": [
@@ -60,84 +123,103 @@
     ],
     [
       "Zentralstern",
-      "TRAPPIST-1",
-      "inhalte/himmelskoerper/sterne/details/trappist-1/hauptseite/index.html"
+      "TRAPPIST-1 · M8 V, Einzelstern"
     ],
     [
-      "Abstand",
-      "0,022 AE"
+      "Bahnposition",
+      "3. von 8 Planeten"
+    ],
+    [
+      "Entfernung zur Sonne",
+      "40,7 Lichtjahre"
+    ],
+    [
+      "Nächste Nachbarsysteme",
+      "Ysmeroth-System (9,8 Lj), Ombrys-System (23,7 Lj)"
     ]
   ],
   "verknuepfungen": [
     {
-      "icon": "✦",
-      "art": "Sternenkarte",
-      "titel": "TRAPPIST-1d im TRAPPIST-1-System",
-      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=trappist-stern&objekt=trappist-d",
-      "route": null
-    },
-    {
-      "icon": "☀",
-      "art": "Zentralstern",
-      "titel": "TRAPPIST-1",
-      "href": "inhalte/himmelskoerper/sterne/details/trappist-1/hauptseite/index.html",
-      "route": null
-    },
-    {
       "icon": "✿",
-      "art": "Heimatwelt der Biomechnoiden",
-      "titel": "TRAPPIST-1e",
-      "href": "inhalte/himmelskoerper/planeten/details/trappist-1e/hauptseite/index.html",
+      "art": "Heimische Spezies",
+      "titel": "Kontinentaliden",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Kontinentaliden/hauptseite/Spezies.html",
       "route": null
     },
     {
       "icon": "◈",
       "art": "Spezies-Dossier",
-      "titel": "Biomechnoiden",
-      "href": "inhalte/spezies/Technologische Lebensformen/Biomechnoiden/hauptseite/Spezies.html",
+      "titel": "Heimatwelt",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Kontinentaliden/Unterseiten/Heimatwelt/heimatwelt.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Politik und Fraktionen",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Kontinentaliden/Unterseiten/Politik/politik.html",
+      "route": null
+    },
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "TRAPPIST-1-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=trappist-stern",
       "route": null
     }
   ],
   "quellen": [
     {
-      "titel": "Sternenkarte · TRAPPIST-1-System",
-      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=trappist-stern&objekt=trappist-d"
+      "titel": "Speziesdossier Kontinentaliden · Heimatwelt",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Kontinentaliden/Unterseiten/Heimatwelt/heimatwelt.html"
     },
     {
-      "titel": "Speziesdossier Biomechnoiden",
-      "href": "inhalte/spezies/Technologische Lebensformen/Biomechnoiden/hauptseite/Spezies.html"
+      "titel": "Speziesdossier Kontinentaliden · Geschichte",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Kontinentaliden/Unterseiten/Geschichte/geschichte.html"
+    },
+    {
+      "titel": "Speziesdossier Kontinentaliden · Gesellschaft",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Kontinentaliden/Unterseiten/Gesellschaft/gesellschaft.html"
+    },
+    {
+      "titel": "Speziesdossier Kontinentaliden · Politik",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Kontinentaliden/Unterseiten/Politik/politik.html"
+    },
+    {
+      "titel": "Speziesdossier Kontinentaliden · Allgemeines",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Kontinentaliden/Unterseiten/Allgemeines/allgemeines.html"
     }
   ],
   "design": {
     "farben": {
-      "nacht": "#080706",
-      "tiefe": "#11100e",
-      "akzent": "#c0b6ac",
-      "sand": "#c5b59c",
-      "moos": "#9fab87",
-      "ozean": "#7f9499",
-      "glas": "rgba(8, 12, 18, .76)",
-      "glas-hell": "rgba(16, 22, 32, .82)",
-      "linie": "rgba(255, 255, 255, .12)",
-      "linie-hell": "rgba(255, 255, 255, .3)",
-      "text": "#eef2f6",
-      "leise": "#a8b0bc",
-      "aporia-page-tint": "#474039"
+      "nacht": "#0b0506",
+      "tiefe": "#170a0c",
+      "akzent": "#e07a5a",
+      "sand": "#d8b48a",
+      "moos": "#a0506a",
+      "ozean": "#4a5fa0",
+      "glas": "rgba(23, 10, 12, .8)",
+      "glas-hell": "rgba(36, 18, 22, .86)",
+      "linie": "rgba(224, 122, 90, .16)",
+      "linie-hell": "rgba(230, 160, 130, .36)",
+      "text": "#f6eeee",
+      "leise": "#c0a6a6",
+      "aporia-page-tint": "#6a2a24"
     }
   },
   "kapitel": {
     "Allgemeines": {
       "gruppe": "Weitere",
       "icon": "▤",
-      "intro": "TRAPPIST-1d auf einen Blick.",
+      "intro": "TRAPPIST-1d auf einen Blick: Licht, Dämmerung und Nacht – für immer.",
       "abschnitte": [
         {
           "titel": "Kurzprofil",
           "bild": true,
-          "bildtext": "TRAPPIST-1d",
+          "bildtext": "TRAPPIST-1d – Welt der lebenden Kontinente",
           "text": [
-            "TRAPPIST-1d ist ein kleiner Planet am inneren Rand der habitablen Zone.",
-            "TRAPPIST-1d umkreist TRAPPIST-1 in 0,022 AE Abstand und braucht für einen Umlauf 4,1 Tage."
+            "TRAPPIST-1d umkreist den ultrakühlen roten Zwerg TRAPPIST-1 in nur 0,02227 AE Abstand und benötigt dafür 4,05 Erdtage. Er rotiert gebunden: Eine Hemisphäre liegt dauerhaft im Licht, die andere in ewiger Nacht, dazwischen erstrecken sich breite Dämmerungsregionen. Die dichte Atmosphäre von 1,35 bar verteilt die Wärme; die mittlere Temperatur liegt bei etwa 8 °C.",
+            "Mit 10.040 Kilometern Durchmesser und 0,388 Erdmassen ist der Planet kleiner als die Erde; die Schwerkraft beträgt 0,63 g. 68 % der Oberfläche sind Land auf fünf großen Kontinenten. Die Biosphäre ist an das rötliche, infrarotreiche Licht angepasst – mit dunklen Pigmenten und strahlungsresistenten Geweben."
           ]
         },
         {
@@ -145,55 +227,125 @@
           "daten": [
             [
               "Typ",
-              "Gesteinsplanet"
+              "Terrestrischer Kontinentalplanet mit gebundener Rotation"
             ],
             [
-              "Sternsystem",
-              "TRAPPIST-1-System"
-            ],
-            [
-              "Zentralkörper",
-              "TRAPPIST-1"
-            ],
-            [
-              "Große Halbachse",
-              "0,022 AE"
-            ],
-            [
-              "Umlaufzeit",
-              "4,1 Tage"
-            ],
-            [
-              "Durchmesser",
-              "10.040 km"
-            ],
-            [
-              "Masse",
-              "0,388 Erdmassen"
+              "Zentralstern",
+              "TRAPPIST-1 (Ultrakühler Roter Zwerg (M8 V))"
             ],
             [
               "Schwerkraft",
               "0,62 g"
             ],
             [
-              "Gleichgewichtstemperatur",
-              "ca. -11 °C"
+              "Durchmesser",
+              "10.040 km"
+            ],
+            [
+              "Mittlere Temperatur",
+              "ca. 8 °C"
+            ],
+            [
+              "Atmosphäre",
+              "Dicht, sauerstoffhaltig, ca. 1,35 bar"
+            ],
+            [
+              "Wasser",
+              "ca. 32 % Wasserbecken einschließlich vereister Flächen"
+            ],
+            [
+              "Intelligente Spezies",
+              "Kontinentaliden"
             ]
           ]
         },
         {
-          "titel": "Im System von TRAPPIST-1e",
-          "text": [
-            "Das TRAPPIST-1-System ist die Heimat der Biomechnoiden: Ihr Planet TRAPPIST-1e umkreist TRAPPIST-1."
-          ],
-          "verweise": [
+          "titel": "TRAPPIST-1d im Vergleich zur Erde",
+          "vergleich": {
+            "mit": "Erde",
+            "werte": [
+              [
+                "Durchmesser",
+                10040,
+                12742,
+                "km"
+              ],
+              [
+                "Schwerkraft",
+                0.62,
+                1,
+                "g"
+              ],
+              [
+                "Tageslänge",
+                97.2,
+                24,
+                "h"
+              ],
+              [
+                "Luftdruck (Mittel)",
+                1.35,
+                1,
+                "bar"
+              ],
+              [
+                "Mittlere Temperatur",
+                8,
+                15,
+                "°C"
+              ],
+              [
+                "Landfläche",
+                68,
+                29,
+                "%"
+              ]
+            ]
+          }
+        },
+        {
+          "titel": "Hauptmerkmale",
+          "karten": [
+            {
+              "titel": "Gebundene Rotation",
+              "text": "Ewiger Tag, ewige Nacht und breite Dämmerungsregionen."
+            },
+            {
+              "titel": "Fünf Kontinente",
+              "text": "Große zusammenhängende Landmassen und Binnenmeere."
+            },
+            {
+              "titel": "Rotes Licht",
+              "text": "Dunkelrote, violette und schwarzgrüne Vegetation."
+            },
+            {
+              "titel": "Lebende Netzwerke",
+              "text": "Kontinentaliden mit bis zu 8.000 km Ausdehnung."
+            }
+          ]
+        },
+        {
+          "titel": "Einordnung",
+          "daten": [
             [
-              "TRAPPIST-1e",
-              "inhalte/himmelskoerper/planeten/details/trappist-1e/hauptseite/index.html"
+              "Position",
+              "Dritter Planet"
             ],
             [
-              "Speziesdossier Biomechnoiden",
-              "inhalte/spezies/Technologische Lebensformen/Biomechnoiden/hauptseite/Spezies.html"
+              "Heimatspezies",
+              "Kontinentaliden (Gigantische Lebensformen)"
+            ],
+            [
+              "Zivilisationsform",
+              "Geografisch verteilte biologische Einzelorganismen"
+            ],
+            [
+              "Monde und Ringe",
+              "Keine"
+            ],
+            [
+              "Nachbarwelt",
+              "TRAPPIST-1e, Heimat der Biomechnoiden"
             ]
           ]
         }
@@ -202,96 +354,167 @@
     "Astronomie": {
       "gruppe": "Wissenschaft",
       "icon": "✧",
-      "intro": "TRAPPIST-1d im TRAPPIST-1-System.",
+      "intro": "Ein Planet in einer Resonanzkette.",
       "abschnitte": [
         {
-          "titel": "Bahn",
+          "titel": "Bahn und Position",
+          "text": [
+            "TRAPPIST-1d ist der 3. von 8 Planeten im TRAPPIST-1-System. Er umkreist TRAPPIST-1 in 0,022 AE Abstand – innerhalb der inneren Grenze der habitablen Zone (bei TRAPPIST-1 zwischen 0,02 und 0,04 AE). Er erhält 1,12-mal so viel Sternlicht wie die Erde.",
+            "Ohne Atmosphäre läge seine Gleichgewichtstemperatur bei rund -11 °C. Die dichte Atmosphäre hebt die mittlere Temperatur um rund 19 K über die Gleichgewichtstemperatur und verteilt die Wärme in die Nachtseite."
+          ],
           "daten": [
             [
-              "Zentralkörper",
-              "TRAPPIST-1"
+              "Sternsystem",
+              "TRAPPIST-1-System"
+            ],
+            [
+              "Bahnposition",
+              "3. von 8 Planeten"
             ],
             [
               "Große Halbachse",
-              "0,0223 AE (3,3 Mio. km)"
+              "0,022 AE (ca. 3,3 Mio. km)"
             ],
             [
               "Exzentrizität",
               "0,008"
             ],
             [
-              "Bahnneigung",
-              "0,1°"
+              "Umlaufzeit",
+              "4,1 Erdtage"
             ],
             [
-              "Umlaufzeit",
-              "4,1 Tage"
+              "Ortsjahr",
+              "ca. 1 Ortstage"
             ],
             [
               "Einstrahlung",
-              "1,115-fach der Erde"
+              "ca. 1,12-fach der Erde"
+            ],
+            [
+              "Habitable Zone von TRAPPIST-1",
+              "0,02–0,04 AE"
             ]
           ]
         },
         {
-          "titel": "Am Himmel von TRAPPIST-1d",
+          "titel": "Zentralstern",
           "text": [
-            "TRAPPIST-1 erscheint von hier aus etwa 2,84° groß (die Sonne von der Erde: 0,53°)."
-          ]
-        },
-        {
-          "titel": "Körper des Systems",
-          "zeitleiste": [
+            "TRAPPIST-1 ist ein ultrakühler Roter Zwerg (M8 V) in rund 40,7 Lichtjahren Entfernung – kaum größer als Jupiter, mit nur 9 % der Sonnenmasse. Seine Strahlungsausbrüche prägten die Umweltgeschichte seiner Planeten. Werte nach realen Messungen; die APORIA-Fassung ergänzt einen achten Planeten."
+          ],
+          "daten": [
             [
-              "TRAPPIST-1 · Stern",
+              "Name",
+              "TRAPPIST-1"
+            ],
+            [
+              "Typ",
               "Ultrakühler Roter Zwerg (M8 V)"
             ],
             [
-              "TRAPPIST-1b · 0,01 AE",
-              "Gesteinsplanet"
+              "Masse",
+              "0,09 Sonnenmassen"
             ],
             [
-              "TRAPPIST-1c · 0,02 AE",
-              "Gesteinsplanet"
+              "Radius",
+              "0,12 Sonnenradien"
             ],
             [
-              "TRAPPIST-1d · 0,02 AE · dieses Dossier",
-              "Gesteinsplanet"
+              "Leuchtkraft",
+              "0,0006 Sonnenleuchtkräfte"
             ],
             [
-              "TRAPPIST-1e · 0,03 AE",
-              "Gesteinsplanet"
+              "Oberflächentemperatur",
+              "ca. 2.566 K"
             ],
             [
-              "TRAPPIST-1f · 0,04 AE",
-              "Gesteinsplanet"
+              "Alter",
+              "ca. 7,6 Mrd. Jahre"
             ],
             [
-              "TRAPPIST-1g · 0,05 AE",
-              "Eisplanet"
-            ],
-            [
-              "TRAPPIST-1h · 0,06 AE",
-              "Eisplanet"
-            ],
-            [
-              "TRAPPIST-1i · 0,08 AE",
-              "Eisplanet"
-            ],
-            [
-              "Kalter Trümmerring · 0,1–0,2 AE",
-              "Asteroidengürtel"
-            ],
-            [
-              "Flareschleier · 0,4–0,7 AE",
-              "Kometengebiet"
+              "Begleitsterne",
+              "keine (Einzelstern)"
             ]
           ],
           "verweise": [
             [
               "TRAPPIST-1",
               "inhalte/himmelskoerper/sterne/details/trappist-1/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Rotation und Achse",
+          "daten": [
+            [
+              "Rotation (gebunden)",
+              "ca. 97,2 h (gebunden)"
             ],
+            [
+              "Achsneigung",
+              "0°"
+            ],
+            [
+              "Scheinbare Sterngröße",
+              "ca. 2,84° (Sonne von der Erde: 0,53°)"
+            ],
+            [
+              "Jahreszeiten",
+              "Keine – dauerhafte Klimazonen durch gebundene Rotation"
+            ]
+          ]
+        },
+        {
+          "titel": "Monde",
+          "text": [
+            "TRAPPIST-1d besitzt keine Monde."
+          ]
+        },
+        {
+          "titel": "Planeten des Systems",
+          "zeitleiste": [
+            [
+              "TRAPPIST-1b · 0,012 AE",
+              "TRAPPIST-1b ist der innerste Planet, eine heiße, vermutlich atmosphärelose Felswelt."
+            ],
+            [
+              "TRAPPIST-1c · 0,016 AE",
+              "TRAPPIST-1c ist eine heiße Gesteinswelt mit dünner oder fehlender Atmosphäre."
+            ],
+            [
+              "TRAPPIST-1d · 0,022 AE",
+              "TRAPPIST-1d ist eine gebunden rotierende Kontinentalwelt mit fünf großen Kontinenten, Binnenmeeren und dunkelroter Vegetation – die Heimat der Kontinentaliden, deren Körper sich über bis zu 8.000 Kilometer erstrecken."
+            ],
+            [
+              "TRAPPIST-1e · 0,029 AE",
+              "TRAPPIST-1e ist die Heimatwelt der Biomechnoiden: ein erdgroßer Gesteinsplanet mit dichter Atmosphäre, Klimagegensätzen und Kristallstürmen."
+            ],
+            [
+              "TRAPPIST-1f · 0,038 AE",
+              "TRAPPIST-1f ist eine kühle Welt am äußeren Rand der habitablen Zone, vermutlich mit vereister Oberfläche."
+            ],
+            [
+              "TRAPPIST-1g · 0,047 AE",
+              "TRAPPIST-1g ist ein großer, kalter Planet, vermutlich mit dicker Eisschale."
+            ],
+            [
+              "TRAPPIST-1h · 0,062 AE",
+              "TRAPPIST-1h ist der äußerste der real bekannten Planeten, eine kleine, eisige Welt."
+            ],
+            [
+              "TRAPPIST-1i · 0,082 AE",
+              "TRAPPIST-1i ist der achte Planet der APORIA-Fassung: eine kleine, gefrorene Welt jenseits von TRAPPIST-1h, die die Resonanzkette fortsetzt."
+            ],
+            [
+              "Morenler-Gürtel · 0,1–0,2 AE",
+              "Ein schmaler Ring aus Gesteins- und Eistrümmern jenseits der Planeten – Rest der Planetenentstehung."
+            ],
+            [
+              "Flareschleier · 0,4–0,7 AE",
+              "Bei starken Strahlungsausbrüchen von TRAPPIST-1 leuchten ferne Staub- und Eiskörper kurz auf – ein schimmernder Schleier, der die Sternaktivität sichtbar macht."
+            ]
+          ],
+          "verweise": [
             [
               "TRAPPIST-1b",
               "inhalte/himmelskoerper/planeten/details/trappist-1b/hauptseite/index.html"
@@ -319,7 +542,61 @@
             [
               "TRAPPIST-1i",
               "inhalte/himmelskoerper/planeten/details/trappist-1i/hauptseite/index.html"
+            ],
+            [
+              "Morenler-Gürtel",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=trappist-stern&objekt=trappist-staubring"
+            ],
+            [
+              "Flareschleier",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=trappist-stern&objekt=trappist-flare"
             ]
+          ]
+        },
+        {
+          "titel": "Nachbarschaft und Anomalien",
+          "karten": [
+            {
+              "titel": "Flareschleier",
+              "text": "Bei starken Strahlungsausbrüchen von TRAPPIST-1 leuchten ferne Staub- und Eiskörper kurz auf – ein schimmernder Schleier, der die Sternaktivität sichtbar macht."
+            },
+            {
+              "titel": "Nachbarsysteme",
+              "text": "Ysmeroth-System (9,8 Lj), Ombrys-System (23,7 Lj), Narev-System (24 Lj) – alle weit außerhalb der gravitativen Einflusszone von TRAPPIST-1 (rund 1,6 Lichtjahre)."
+            }
+          ],
+          "verweise": [
+            [
+              "Flareschleier",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=trappist-stern&objekt=trappist-flare"
+            ],
+            [
+              "TRAPPIST-1-System in der Sternenkarte",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=trappist-stern"
+            ]
+          ]
+        },
+        {
+          "titel": "Bahndaten",
+          "daten": [
+            [
+              "Rotationsverhalten",
+              "Gebunden"
+            ],
+            [
+              "Bahnneigung",
+              "ca. 0,1°"
+            ],
+            [
+              "Lage",
+              "Innerhalb der habitablen Zone"
+            ]
+          ]
+        },
+        {
+          "titel": "Am Himmel von TRAPPIST-1d",
+          "text": [
+            "Über der Tagseite steht TRAPPIST-1 unbeweglich als große, tiefrote Scheibe. Die Nachbarplaneten des kompakten Systems ziehen als helle Scheiben über den Himmel – oft größer als der Erdmond von der Erde aus."
           ]
         }
       ]
@@ -338,7 +615,7 @@
             ],
             [
               "Masse",
-              "0,388 Erdmassen"
+              "0,39 Erdmassen"
             ],
             [
               "Mittlere Dichte",
@@ -346,22 +623,31 @@
             ],
             [
               "Oberflächenschwerkraft",
-              "6,13 m/s² (0,625 g)"
+              "6,1 m/s² (0,62 g)"
             ],
             [
               "Fluchtgeschwindigkeit",
-              "7,85 km/s"
+              "ca. 7,8 km/s"
+            ],
+            [
+              "Mittlere Dichte",
+              "ca. 4,37 g/cm³"
+            ],
+            [
+              "Gesamtoberfläche",
+              "ca. 316,7 Mio. km²"
+            ],
+            [
+              "Magnetfeld",
+              "Vorhanden"
             ]
-          ],
+          ]
+        },
+        {
+          "titel": "Physikalische Werte im Vergleich",
           "vergleich": {
             "mit": "Erde",
             "werte": [
-              [
-                "Durchmesser",
-                10040,
-                12742,
-                "km"
-              ],
               [
                 "Masse",
                 0.388,
@@ -369,13 +655,31 @@
                 "Erdmassen"
               ],
               [
-                "Schwerkraft",
-                0.62,
+                "Dichte",
+                4.37,
+                5.51,
+                "g/cm³"
+              ],
+              [
+                "Fluchtgeschwindigkeit",
+                7.8,
+                11.2,
+                "km/s"
+              ],
+              [
+                "Magnetfeld",
+                0.5,
                 1,
-                "g"
+                "× Erde"
               ]
             ]
           }
+        },
+        {
+          "titel": "Leichter Gesteinsplanet",
+          "text": [
+            "Mit rund 6,14 m/s² Oberflächengravitation und einer Fluchtgeschwindigkeit von etwa 7,85 km/s ist TRAPPIST-1d leichter als die Erde. Die geringe Schwerkraft begünstigt große oberirdische Organstrukturen und senkt die mechanische Belastung ausgedehnter Körpernetzwerke."
+          ]
         }
       ]
     },
@@ -385,19 +689,26 @@
       "intro": "Planetare Struktur von TRAPPIST-1d.",
       "abschnitte": [
         {
-          "titel": "Schalenbau",
+          "titel": "Aufbau",
+          "text": [
+            "Ein Eisen-Nickel-Kern mit flüssigen Bereichen erzeugt das Magnetfeld. Der silikatische Mantel trägt eine feste kontinentale Kruste mit Sedimenten, geothermischen Regionen, Hohlräumen und wasserführenden Schichten. Die Kontinentaliden nutzen überwiegend die oberflächennahen Schichten."
+          ],
           "schichten": [
             [
               "Kruste",
-              "Silikatgestein"
+              "Kontinental, Sedimente, wasserführende Schichten"
             ],
             [
               "Mantel",
-              "Dichteres Silikatgestein"
+              "Silikatisch, langsame Tektonik"
             ],
             [
-              "Kern",
-              "Eisen und Nickel"
+              "Äußerer Kern",
+              "Flüssige metallische Bereiche"
+            ],
+            [
+              "Innerer Kern",
+              "Eisen-Nickel"
             ]
           ]
         }
@@ -406,12 +717,97 @@
     "Geografie": {
       "gruppe": "Natur",
       "icon": "△",
-      "intro": "Geografie von TRAPPIST-1d.",
+      "intro": "Fünf Kontinente unter rotem Licht.",
       "abschnitte": [
         {
           "titel": "Oberfläche",
-          "text": [
-            "Die Oberfläche von TRAPPIST-1d ist gemäßigt."
+          "balken": {
+            "werte": [
+              [
+                "Land",
+                68
+              ],
+              [
+                "Wasserbecken und Eis",
+                32
+              ]
+            ]
+          },
+          "daten": [
+            [
+              "Landfläche",
+              "ca. 215,4 Mio. km²"
+            ],
+            [
+              "Wasserbecken",
+              "ca. 101,3 Mio. km²"
+            ]
+          ]
+        },
+        {
+          "titel": "Kontinente",
+          "karten": [
+            {
+              "titel": "Velkaris (ca. 67 Mio. km²)",
+              "text": "Größter Kontinent: gemäßigte Ebenen, gewaltige Flüsse, dunkle Vegetation – Heimat besonders alter Kontinentaliden mit Netzwerken über Tausende Kilometer."
+            },
+            {
+              "titel": "Tharoven (ca. 45 Mio. km²)",
+              "text": "Gebirgsreich mit Hochplateaus, Schluchten und geothermischen Tälern."
+            },
+            {
+              "titel": "Naevora (ca. 38 Mio. km²)",
+              "text": "Feucht, in der Dämmerungsregion, mit Deltas und Seen – Entwicklungsgebiet junger Kontinentaliden."
+            },
+            {
+              "titel": "Korvath (ca. 31 Mio. km²)",
+              "text": "Trockene Steinsteppen und Wüsten über großen unterirdischen Wasservorkommen."
+            },
+            {
+              "titel": "Isvaron (ca. 27 Mio. km²)",
+              "text": "Überwiegend auf der Nachtseite: Eislandschaften, geothermische Senken, kälteangepasste Körperregionen."
+            },
+            {
+              "titel": "Weitere Landmassen (ca. 7,4 Mio. km²)",
+              "text": "Inselgruppen, Kontinentalfragmente und vulkanische Inseln."
+            }
+          ]
+        },
+        {
+          "titel": "Besondere Landschaften",
+          "karten": [
+            {
+              "titel": "Die Großen Organebenen",
+              "text": "Abgeflachte Organhügel und verbundene Gewebebänder."
+            },
+            {
+              "titel": "Die Bernsteinadern",
+              "text": "Oberirdische Versorgungskanäle mit bernsteinfarbener Biolumineszenz."
+            },
+            {
+              "titel": "Die Nervenschluchten",
+              "text": "Freigelegte Teile kontinentaler Nervennetzwerke."
+            },
+            {
+              "titel": "Die Lebenden Terrassen",
+              "text": "Stufenförmige organische Strukturen zur Energieaufnahme."
+            },
+            {
+              "titel": "Die Versteinerten Netzwerke",
+              "text": "Mineralisierte Körperstrukturen verstorbener Kontinentaliden."
+            },
+            {
+              "titel": "Die Ewigen Dämmerungsfelder",
+              "text": "Dauerhaft tief stehende Sonne, höchste Vielfalt."
+            },
+            {
+              "titel": "Die Nachtgärten",
+              "text": "Geothermisch und chemisch versorgte Ökosysteme der Nachtseite."
+            },
+            {
+              "titel": "Die Keimebenen",
+              "text": "Geschützte Landschaften junger Kontinentaliden."
+            }
           ]
         }
       ]
@@ -422,26 +818,53 @@
       "intro": "Atmosphäre von TRAPPIST-1d.",
       "abschnitte": [
         {
-          "titel": "Gashülle",
+          "titel": "Zusammensetzung",
           "text": [
-            "TRAPPIST-1d hält eine dünne, kalte Gashülle fest."
+            "Die dichte, sauerstoffhaltige Atmosphäre hat einen mittleren Druck von etwa 1,35 bar: 76,5 % Stickstoff, 21,5 % Sauerstoff, 1,5 % Argon und 0,4 % Kohlendioxid. Sie transportiert Wärme zwischen Tag- und Nachtseite, schützt vor einem Teil der stellaren Strahlung und wird von der Biosphäre stabil gehalten. Wegen des hohen Sauerstoffpartialdrucks sind Brände in trockenen Regionen eine besondere Gefahr."
           ],
           "balken": {
             "werte": [
               [
-                "Kohlendioxid",
-                62
+                "Stickstoff",
+                76.5
               ],
               [
-                "Stickstoff",
-                33
+                "Sauerstoff",
+                21.5
               ],
               [
                 "Argon",
-                5
+                1.5
+              ],
+              [
+                "Kohlendioxid",
+                0.4
+              ],
+              [
+                "Spurengase",
+                0.1
               ]
             ]
           }
+        },
+        {
+          "titel": "Druck",
+          "daten": [
+            [
+              "Mittlerer Oberflächendruck",
+              "ca. 1,35 bar"
+            ]
+          ]
+        },
+        {
+          "titel": "Wolkenschichten",
+          "liste": [
+            "Tiefe Wasserwolken über Binnenmeeren",
+            "Dauerhafte Wolkenansammlungen am Punkt stärkster Einstrahlung",
+            "Bodennebel in den Übergangsregionen",
+            "Hohe Eiswolken und Aerosolschichten",
+            "Wolkenbänder entlang planetarer Hauptströmungen"
+          ]
         }
       ]
     },
@@ -451,9 +874,46 @@
       "intro": "Klima von TRAPPIST-1d.",
       "abschnitte": [
         {
-          "titel": "Temperatur",
+          "titel": "Temperaturzonen",
           "text": [
-            "Bei 0,022 AE Abstand zu TRAPPIST-1 liegt die Gleichgewichtstemperatur von TRAPPIST-1d bei rund -11 °C – gemäßigt."
+            "Die gebundene Rotation erzeugt dauerhafte Klimaregionen. Die zentrale Tagseite ist heiß und wolkenreich, die gemäßigte Tagseite trägt große zusammenhängende Lebensräume, die feuchte Dämmerungsregion mit tief stehender Sonne ist ideal für Fortpflanzung und Entwicklung. Die Nachtseite liegt in ewiger Dunkelheit mit Eisfeldern und geothermischen Lebensräumen."
+          ],
+          "skala": {
+            "einheit": "°C",
+            "min": -50,
+            "max": 50,
+            "bereiche": [
+              [
+                "Nachtseite",
+                -45,
+                0
+              ],
+              [
+                "Dämmerungsregion",
+                5,
+                25
+              ],
+              [
+                "Gemäßigte Tagseite",
+                15,
+                30
+              ],
+              [
+                "Zentrale Tagseite",
+                25,
+                45
+              ]
+            ]
+          }
+        },
+        {
+          "titel": "Wetter",
+          "liste": [
+            "Beständige großräumige Windsysteme",
+            "Starkregen und Gewitter über feuchten Regionen",
+            "Staubstürme in trockenen Gebieten",
+            "Schneestürme auf der Nachtseite",
+            "Magnetosphärische Störungen bei stellaren Strahlungsausbrüchen"
           ]
         }
       ]
@@ -464,9 +924,16 @@
       "intro": "Gewässer von TRAPPIST-1d.",
       "abschnitte": [
         {
-          "titel": "Wasser",
+          "titel": "Gewässer",
+          "liste": [
+            "Drei große Meeresbecken und zahlreiche Binnenmeere",
+            "Süßwasserseen und gewaltige Flusssysteme",
+            "Geothermisch erwärmte Seen und Thermalquellen",
+            "Dauerhaft vereiste Gewässer",
+            "Kontinentale Grundwasserreservoirs und unterirdische Seen"
+          ],
           "text": [
-            "Offene Gewässer sind nicht verzeichnet."
+            "Die umfangreichen Süßwasservorkommen sind eine wesentliche Grundlage für die Entwicklung der Kontinentaliden."
           ]
         }
       ]
@@ -478,8 +945,16 @@
       "abschnitte": [
         {
           "titel": "Geologie",
+          "liste": [
+            "Überwiegend silikatische Gesteine und Basaltregionen",
+            "Mineralreiche Sedimente und eisenhaltige Hochländer",
+            "Kristalline Formationen und alte Vulkangebiete",
+            "Tektonische Bruchzonen und geothermische Quellen",
+            "Stabile kontinentale Kerngebiete",
+            "Biologisch beeinflusste Bodenentwicklung"
+          ],
           "text": [
-            "TRAPPIST-1d ist groß genug, um im Inneren noch Wärme zu speichern; Spuren alter vulkanischer Tätigkeit sind wahrscheinlich."
+            "Abgestorbene Körperstrukturen alter Kontinentaliden können mineralisieren und außergewöhnliche geologische Ablagerungen bilden."
           ]
         }
       ]
@@ -487,12 +962,34 @@
     "Biosphäre": {
       "gruppe": "Natur",
       "icon": "❧",
-      "intro": "Biosphäre von TRAPPIST-1d.",
+      "intro": "Leben im roten Licht.",
       "abschnitte": [
         {
-          "titel": "Leben",
+          "titel": "Biosphäre",
           "text": [
-            "Auf TRAPPIST-1d ist kein Leben verzeichnet."
+            "Die Biosphäre entwickelte sich unter dem rötlichen, infrarotreichen Licht des Zentralsterns: dunkle Pigmente, leistungsfähige Zellreparatur, strahlungsresistente Gewebe, unterirdische Nahrungsketten und große Symbiosen. Die Kontinentaliden sind Teil dieser Biosphäre, kontrollieren sie aber nicht."
+          ]
+        },
+        {
+          "titel": "Flora",
+          "liste": [
+            "Dunkelrote Vegetationsfelder",
+            "Violette und schwarzgrüne Wälder",
+            "Fächerpflanzen mit großen lichtabsorbierenden Blättern",
+            "Strahlungsresistente Steppengewächse",
+            "Kälteangepasste Pflanzen der Dämmerungsregion",
+            "Chemosynthetische Organismen in dunklen Lebensräumen"
+          ]
+        },
+        {
+          "titel": "Fauna",
+          "liste": [
+            "Große Pflanzenfresser und wandernde Herden",
+            "Bodenbewohnende Raubtiere",
+            "Flugorganismen mit großen Tragflächen",
+            "Tiere mit Schwingungswahrnehmung",
+            "Gewebereinigende Symbiosepartner und Keimzellverbreiter",
+            "Parasiten biologischer Netzwerke"
           ]
         }
       ]
@@ -500,27 +997,29 @@
     "Spezies": {
       "gruppe": "Zivilisation",
       "icon": "✿",
-      "intro": "Spezies von TRAPPIST-1d.",
+      "intro": "Die Kontinentaliden – lebende Netzwerke über ganze Kontinente.",
       "abschnitte": [
         {
-          "titel": "Bewohner",
+          "titel": "Kontinentaliden",
           "text": [
-            "TRAPPIST-1d ist keine Heimat einer intelligenten Spezies."
-          ]
-        },
-        {
-          "titel": "Im System von TRAPPIST-1e",
-          "text": [
-            "Das TRAPPIST-1-System ist die Heimat der Biomechnoiden: Ihr Planet TRAPPIST-1e umkreist TRAPPIST-1."
+            "Kontinentaliden sind gigantische biologische Einzelorganismen mit unterirdischen Versorgungssystemen, oberirdischen Organfeldern und verteilten Nervensystemen. Sie besitzen individuelles Selbstbewusstsein und ein langfristiges geografisches Gedächtnis. Die meisten großen Individuen leben auf Velkaris, Tharoven und Naevora; zwischen ihren Körpern liegen natürliche Grenzgebiete."
           ],
-          "verweise": [
+          "daten": [
             [
-              "TRAPPIST-1e",
-              "inhalte/himmelskoerper/planeten/details/trappist-1e/hauptseite/index.html"
+              "Körperausdehnung",
+              "wenige Meter (jung) bis ca. 8.000 km (sehr alt)"
             ],
             [
-              "Speziesdossier Biomechnoiden",
-              "inhalte/spezies/Technologische Lebensformen/Biomechnoiden/hauptseite/Spezies.html"
+              "Lebenserwartung",
+              "mehrere Zehntausend bis Hunderttausend Jahre"
+            ],
+            [
+              "Nervensystem",
+              "Verteilt"
+            ],
+            [
+              "Gedächtnis",
+              "Langfristig, geografisch"
             ]
           ]
         }
@@ -532,25 +1031,17 @@
       "intro": "Zivilisation von TRAPPIST-1d.",
       "abschnitte": [
         {
-          "titel": "Siedlungen",
+          "titel": "Zivilisation",
           "text": [
-            "Für TRAPPIST-1d sind keine dauerhaften Siedlungen verzeichnet."
-          ]
-        },
-        {
-          "titel": "Im System von TRAPPIST-1e",
-          "text": [
-            "Das TRAPPIST-1-System ist die Heimat der Biomechnoiden: Ihr Planet TRAPPIST-1e umkreist TRAPPIST-1."
+            "Konventionelle Städte für die eigene Bevölkerung gibt es nicht. Die Zivilisation besteht aus Individuen mit großräumigen Körpergebieten, verbunden durch natürliche und technische Strukturen. Siedlungen anderer Spezies können später in genehmigten Gebieten entstehen."
           ],
-          "verweise": [
-            [
-              "TRAPPIST-1e",
-              "inhalte/himmelskoerper/planeten/details/trappist-1e/hauptseite/index.html"
-            ],
-            [
-              "Speziesdossier Biomechnoiden",
-              "inhalte/spezies/Technologische Lebensformen/Biomechnoiden/hauptseite/Spezies.html"
-            ]
+          "liste": [
+            "Neurotransit-Stationen und biologische Kommunikationsfelder",
+            "Grundwasser-Verteileranlagen",
+            "Medizinische Regenerationszentren und Gewebereparaturwerkstätten",
+            "Biologische Gedächtnisschnittstellen",
+            "Automatisierte Fertigung und Forschungsstationen",
+            "Interplanetare Kommunikation und Landestationen für Besucher"
           ]
         }
       ]
@@ -561,9 +1052,24 @@
       "intro": "Geschichte von TRAPPIST-1d.",
       "abschnitte": [
         {
-          "titel": "Entstehung",
-          "text": [
-            "TRAPPIST-1d entstand zusammen mit dem TRAPPIST-1-System vor rund 7,6 Milliarden Jahren."
+          "titel": "Zeitleiste",
+          "zeitleiste": [
+            [
+              "vor ca. 7,6 Mrd. Jahren",
+              "Entstehung des Planeten"
+            ],
+            [
+              "Frühzeit",
+              "Feste Kruste, stabile hydrologische Prozesse"
+            ],
+            [
+              "Leben",
+              "Mikrobielle Lebensformen, Anpassung an rotes Licht"
+            ],
+            [
+              "Gegenwart",
+              "Kontinentaliden als intelligente Heimatspezies"
+            ]
           ]
         }
       ]
@@ -572,14 +1078,7 @@
       "gruppe": "Zivilisation",
       "icon": "◇",
       "intro": "Fraktionen von TRAPPIST-1d.",
-      "abschnitte": [
-        {
-          "titel": "Ansprüche",
-          "text": [
-            "Für TRAPPIST-1d sind keine Fraktionsansprüche verzeichnet."
-          ]
-        }
-      ]
+      "abschnitte": []
     },
     "Rohstoffe": {
       "gruppe": "Weitere",
@@ -588,9 +1087,18 @@
       "abschnitte": [
         {
           "titel": "Rohstoffe",
-          "liste": [
-            "Silikatgestein",
-            "Metallerze"
+          "karten": [
+            {
+              "titel": "Mineralisch",
+              "text": "Eisen, Nickel, Kupfer, Silikate, Aluminium- und Magnesiumminerale, Phosphate, Schwefel- und Kohlenstoffverbindungen."
+            },
+            {
+              "titel": "Biologisch",
+              "text": "Regenerative Gewebematrizen, elastische Fasern, Verbundwerkstoffe, Strahlungsschutzpigmente, Filtermembranen, Isolationsstoffe."
+            }
+          ],
+          "text": [
+            "Die Entnahme von Geweben intelligenter Individuen erfordert deren Zustimmung."
           ]
         }
       ]
@@ -599,27 +1107,7 @@
       "gruppe": "Weitere",
       "icon": "✧",
       "intro": "Erforschung von TRAPPIST-1d.",
-      "abschnitte": [
-        {
-          "titel": "Offene Fragen",
-          "liste": [
-            "Wie ist der innere Aufbau beschaffen?",
-            "Gab es früher eine dichtere Atmosphäre?"
-          ]
-        },
-        {
-          "titel": "In der Sternenkarte",
-          "text": [
-            "TRAPPIST-1d ist mit allen Bahndaten im TRAPPIST-1-System der Sternenkarte eingetragen."
-          ],
-          "verweise": [
-            [
-              "In der Sternenkarte zeigen",
-              "Menüs/Sternenkarte/Sternenkarte.html?system=trappist-stern&objekt=trappist-d"
-            ]
-          ]
-        }
-      ]
+      "abschnitte": []
     },
     "Besonderheiten": {
       "gruppe": "Weitere",
@@ -627,9 +1115,28 @@
       "intro": "Besonderheiten von TRAPPIST-1d.",
       "abschnitte": [
         {
-          "titel": "Besonderheiten",
+          "titel": "Rekorde",
+          "daten": [
+            [
+              "Größte Lebewesen",
+              "Kontinentaliden bis ca. 8.000 km Ausdehnung"
+            ],
+            [
+              "Lebenserwartung",
+              "mehrere Zehntausend bis Hunderttausend Jahre"
+            ],
+            [
+              "Größter Kontinent",
+              "Velkaris, ca. 67 Mio. km²"
+            ]
+          ]
+        },
+        {
+          "titel": "Hinweise für Besucher",
           "liste": [
-            "TRAPPIST-1d ist ein kleiner Planet am inneren Rand der habitablen Zone."
+            "Brandgefahr durch hohen Sauerstoffpartialdruck",
+            "Stellare Strahlungsausbrüche beachten",
+            "Körpergebiete der Kontinentaliden nur mit Genehmigung betreten"
           ]
         }
       ]
@@ -640,9 +1147,9 @@
       "intro": "Medienarchiv von TRAPPIST-1d.",
       "abschnitte": [
         {
-          "titel": "TRAPPIST-1d – Archivbild",
+          "titel": "TRAPPIST-1d aus dem All",
           "bild": true,
-          "bildtext": "TRAPPIST-1d"
+          "bildtext": "TRAPPIST-1d – Welt der lebenden Kontinente"
         }
       ]
     }

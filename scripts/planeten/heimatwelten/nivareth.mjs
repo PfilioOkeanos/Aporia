@@ -1,7 +1,7 @@
 // Nivareth · Heimatwelt der Kryonoiden (Quelle: Info_material/…/Kryonoiden, Heimatwelt)
 const B = "assets/bilder/Alle Spezies+Übersicht/Biologische Spezies/Kryonoiden/gesamtdarstellung/";
 export default {
-    ordner: "kristallweier-eisplanet-mit-blauen-gletscherspalten", system: "nivareth-system", planetId: "nivareth-planet",
+    ordner: "nivareth", system: "nivareth-system", planetId: "nivareth-planet",
     name: "Nivareth", genitiv: "Nivareths", klasse: "Eiswelt", klasseLang: "Kalter, vereister terrestrischer Planet",
     intro: "Nivareth ist die gefrorene Heimatwelt der Kryonoiden: Eisebenen, Bruchwände und Spaltensysteme an der Oberfläche, Kältesolreservoire und geothermische Wärmeinseln in der Tiefe – eine Welt, auf der Kälte Lebensgrundlage ist.",
     bildtext: "Nivareth – kristallweißes Eis mit blauen Gletscherspalten",

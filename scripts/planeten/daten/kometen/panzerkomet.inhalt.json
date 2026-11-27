@@ -6,12 +6,16 @@
   "klasse": "Komet",
   "intro": "Ein ungewöhnlich großer, dunkel verkrusteter Komet (rund 34 Jahre Umlaufzeit), dessen Schweif in einzelnen Schichten aufbricht – die Chitinoiden nennen ihn wegen seiner Kruste den Panzerkometen. Panzerkomet umkreist Khelar in 10,5 AE Abstand und braucht für einen Umlauf 37,3 Jahre.",
   "globusDaten": {
-    "planet": "gruner-komet-mit-blauem-schweif",
+    "planet": "panzerkomet",
     "klasse": "Eis",
     "radius": 9000
   },
   "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=veshkara-stern&objekt=veshkara-panzerkomet",
   "grunddaten": [
+    [
+      "System-ID",
+      "veshkara-panzerkomet"
+    ],
     [
       "Archiv-ID",
       "AP-88A36E54C1"
@@ -85,16 +89,16 @@
     },
     {
       "icon": "✿",
-      "art": "Heimatwelt der Chitinoiden",
-      "titel": "Veshkara",
-      "href": "inhalte/himmelskoerper/planeten/details/veshkara/hauptseite/index.html",
+      "art": "Heimatwelt der Velorithen",
+      "titel": "Rhaum",
+      "href": "inhalte/himmelskoerper/monde/details/rhaum/hauptseite/index.html",
       "route": null
     },
     {
       "icon": "◈",
       "art": "Spezies-Dossier",
-      "titel": "Chitinoiden",
-      "href": "inhalte/spezies/Biologische Spezies/Chitinnoiden/hauptseite/Spezies.html",
+      "titel": "Velorithen",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Velorithen/hauptseite/Spezies.html",
       "route": null
     }
   ],
@@ -104,8 +108,8 @@
       "href": "Menüs/Sternenkarte/Sternenkarte.html?system=veshkara-stern&objekt=veshkara-panzerkomet"
     },
     {
-      "titel": "Speziesdossier Chitinoiden",
-      "href": "inhalte/spezies/Biologische Spezies/Chitinnoiden/hauptseite/Spezies.html"
+      "titel": "Speziesdossier Velorithen",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Velorithen/hauptseite/Spezies.html"
     }
   ],
   "design": {
@@ -302,18 +306,18 @@
           ]
         },
         {
-          "titel": "Im System von Veshkara",
+          "titel": "Im System von Rhaum",
           "text": [
-            "Das Khelar-System ist die Heimat der Chitinoiden: Ihr Planet Veshkara umkreist Khelar."
+            "Das Khelar-System ist die Heimat der Velorithen: Ihr Planet Rhaum umkreist Khelar."
           ],
           "verweise": [
             [
-              "Veshkara",
-              "inhalte/himmelskoerper/planeten/details/veshkara/hauptseite/index.html"
+              "Rhaum",
+              "inhalte/himmelskoerper/monde/details/rhaum/hauptseite/index.html"
             ],
             [
-              "Speziesdossier Chitinoiden",
-              "inhalte/spezies/Biologische Spezies/Chitinnoiden/hauptseite/Spezies.html"
+              "Speziesdossier Velorithen",
+              "inhalte/spezies/Gigantische Lebensformen/Velorithen/hauptseite/Spezies.html"
             ]
           ]
         }
@@ -381,7 +385,7 @@
               "Asteroidengürtel"
             ],
             [
-              "Äußeres Kometengebiet · 33–47 AE",
+              "Zarenev-Kometenwolke · 33–47 AE",
               "Kometengebiet"
             ]
           ],

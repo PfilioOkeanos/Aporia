@@ -6,12 +6,16 @@
   "klasse": "Mond",
   "intro": "Ulm ist ein kleiner, unregelmäßiger Mond auf enger Bahn – vermutlich ein eingefangener Asteroid. Ulm umkreist Kyreth in 5,5 Tage.",
   "globusDaten": {
-    "planet": "dunkler-kohlenstoffreicher-mond-mit-eisigen-kratern",
+    "planet": "ulm",
     "klasse": "Gestein",
     "radius": 210000
   },
   "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=kyreth-stern&objekt=kyreth-ulm",
   "grunddaten": [
+    [
+      "System-ID",
+      "kyreth-ulm"
+    ],
     [
       "Archiv-ID",
       "AP-C74DD556F9"
@@ -97,16 +101,16 @@
     },
     {
       "icon": "✿",
-      "art": "Heimatwelt der Elektrozoiden",
-      "titel": "Kyreth",
-      "href": "inhalte/himmelskoerper/planeten/details/kyreth/hauptseite/index.html",
+      "art": "Heimatwelt der Schwarmarchen",
+      "titel": "Ixar III",
+      "href": "inhalte/himmelskoerper/planeten/details/ixar-iii/hauptseite/index.html",
       "route": null
     },
     {
       "icon": "◈",
       "art": "Spezies-Dossier",
-      "titel": "Elektrozoiden",
-      "href": "inhalte/spezies/Biologische Spezies/Elektrozoiden/hauptseite/Spezies.html",
+      "titel": "Schwarmarchen",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Schwarmarchen/hauptseite/Spezies.html",
       "route": null
     }
   ],
@@ -116,8 +120,8 @@
       "href": "Menüs/Sternenkarte/Sternenkarte.html?system=kyreth-stern&objekt=kyreth-ulm"
     },
     {
-      "titel": "Speziesdossier Elektrozoiden",
-      "href": "inhalte/spezies/Biologische Spezies/Elektrozoiden/hauptseite/Spezies.html"
+      "titel": "Speziesdossier Schwarmarchen",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Schwarmarchen/hauptseite/Spezies.html"
     }
   ],
   "design": {
@@ -283,18 +287,18 @@
           ]
         },
         {
-          "titel": "Im System von Kyreth",
+          "titel": "Im System von Ixar III",
           "text": [
-            "Das Ixar-System ist die Heimat der Elektrozoiden: Ihr Planet Kyreth umkreist Ixar, und Ulm ist einer seiner Monde."
+            "Das Ixar-System ist die Heimat der Schwarmarchen: Ihr Planet Ixar III umkreist Ixar."
           ],
           "verweise": [
             [
-              "Kyreth",
-              "inhalte/himmelskoerper/planeten/details/kyreth/hauptseite/index.html"
+              "Ixar III",
+              "inhalte/himmelskoerper/planeten/details/ixar-iii/hauptseite/index.html"
             ],
             [
-              "Speziesdossier Elektrozoiden",
-              "inhalte/spezies/Biologische Spezies/Elektrozoiden/hauptseite/Spezies.html"
+              "Speziesdossier Schwarmarchen",
+              "inhalte/spezies/Gigantische Lebensformen/Schwarmarchen/hauptseite/Spezies.html"
             ]
           ]
         }
@@ -346,7 +350,7 @@
               "Gesteinsplanet"
             ],
             [
-              "Ixar III · 1,6 AE",
+              "Ixar III · 1,03 AE",
               "Gesteinsplanet"
             ],
             [
@@ -362,7 +366,7 @@
               "Asteroidengürtel"
             ],
             [
-              "Äußeres Kometengebiet · 38–52 AE",
+              "Kaelaigan-Kometenwolke · 38–52 AE",
               "Kometengebiet"
             ]
           ],

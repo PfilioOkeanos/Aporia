@@ -1,56 +1,119 @@
 {
-  "_erzeugt": "koerper-bauen",
   "name": "Celeun III",
   "genitiv": "von Celeun III",
   "dossierName": "Celeun III-Dossier",
-  "klasse": "Gesteinsplanet",
-  "intro": "Celeun III ist eine kalte Gesteinswelt mit Polkappen aus Wassereis. Celeun III umkreist Celeun in 1,7 AE Abstand und braucht für einen Umlauf 2,3 Jahre.",
+  "klasse": "Planet · Gesteinsplanet",
+  "intro": "Celeun III ist ein wasserreicher, kühlgemäßigter Gesteinsplanet ohne zusammenhängenden Ozean: gigantische Seenketten, Flussbecken, Feuchtgebiete und geflutete Höhlen durchziehen vier Kontinente. In diesen vernetzten Süßwassersystemen entstanden die Hydronetzwerke – Lebewesen mit einem über ganze Gewässer verteilten Bewusstsein.",
   "globusDaten": {
     "planet": "eisplanet-mit-dunklen-felskontinenten",
-    "klasse": "Gestein",
+    "klasse": "Ozean- und Seenwelt",
     "radius": 5100000
   },
-  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=vessarin-stern&objekt=vessarin-celeun-iii",
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=vessarin-stern",
   "grunddaten": [
     [
       "Archiv-ID",
       "AP-C6F329545D"
     ],
     [
-      "Typ",
-      "Gesteinsplanet"
-    ],
-    [
-      "Sternsystem",
-      "Celeun-System"
-    ],
-    [
-      "Zentralkörper",
-      "Celeun"
-    ],
-    [
-      "Große Halbachse",
-      "1,7 AE"
-    ],
-    [
-      "Umlaufzeit",
-      "2,3 Jahre"
+      "Klasse",
+      "Kühlgemäßigter terrestrischer Gewässerplanet"
     ],
     [
       "Durchmesser",
       "10.200 km"
     ],
     [
+      "Radius",
+      "5.100 km"
+    ],
+    [
       "Masse",
       "0,9 Erdmassen"
     ],
     [
-      "Schwerkraft",
-      "1,4 g"
+      "Dichte",
+      "9,67 g/cm³"
     ],
     [
-      "Gleichgewichtstemperatur",
-      "ca. -87 °C"
+      "Schwerkraft",
+      "1,4 g (13,8 m/s²)"
+    ],
+    [
+      "Mittlere Oberflächentemperatur",
+      "ca. 8 °C"
+    ],
+    [
+      "Ozeane",
+      "ca. 42 % (18 % Meeresbecken, 24 % Seen und Flüsse) – kein zusammenhängender Ozean"
+    ],
+    [
+      "Atmosphäre",
+      "80 % Stickstoff, 15 % Sauerstoff, 4 % Kohlendioxid, 1 % Argon und Edelgase"
+    ],
+    [
+      "Atmosphärendruck",
+      "ca. 1,8 bar"
+    ],
+    [
+      "Rotationsperiode",
+      "31 h"
+    ],
+    [
+      "Umlaufzeit",
+      "493 Erdtage"
+    ],
+    [
+      "Abstand zum Stern",
+      "1,2 AE"
+    ],
+    [
+      "Monde",
+      "keine"
+    ],
+    [
+      "Zentralstern",
+      "Celeun, Gelber Zwerg (G6 V)"
+    ],
+    [
+      "Einstrahlung",
+      "0,57-fach der Erde"
+    ],
+    [
+      "Achsneigung",
+      "16,8°"
+    ],
+    [
+      "Exzentrizität",
+      "0,04"
+    ],
+    [
+      "Fluchtgeschwindigkeit",
+      "11,9 km/s"
+    ],
+    [
+      "Alter",
+      "ca. 4,1 Mrd. Jahre"
+    ],
+    [
+      "Kontinente",
+      "Vier große Kontinentalregionen"
+    ],
+    [
+      "Prägende Landschaften",
+      "Seenketten, Flussbecken, Feuchtgebiete, Höhlengewässer"
+    ],
+    [
+      "Monde",
+      "Bisher keine erfasst"
+    ],
+    [
+      "Biologische Besonderheit",
+      "Gigantische, hydrologisch vernetzte Organismen"
+    ],
+    [
+      "Intelligente Spezies",
+      "Hydronetzwerke"
     ]
   ],
   "position": [
@@ -60,84 +123,103 @@
     ],
     [
       "Zentralstern",
-      "Celeun",
-      "inhalte/himmelskoerper/sterne/details/celeun/hauptseite/index.html"
+      "Celeun · G6 V, Einzelstern"
     ],
     [
-      "Abstand",
-      "1,7 AE"
+      "Bahnposition",
+      "3. von 5 Planeten"
+    ],
+    [
+      "Entfernung zur Sonne",
+      "29 Lichtjahre"
+    ],
+    [
+      "Nächste Nachbarsysteme",
+      "Ferrum-System (7,6 Lj), Thalor-System (18,7 Lj)"
     ]
   ],
   "verknuepfungen": [
     {
-      "icon": "✦",
-      "art": "Sternenkarte",
-      "titel": "Celeun III im Celeun-System",
-      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=vessarin-stern&objekt=vessarin-celeun-iii",
-      "route": null
-    },
-    {
-      "icon": "☀",
-      "art": "Zentralstern",
-      "titel": "Celeun",
-      "href": "inhalte/himmelskoerper/sterne/details/celeun/hauptseite/index.html",
-      "route": null
-    },
-    {
       "icon": "✿",
-      "art": "Heimatwelt der Thalassoiden",
-      "titel": "Vessarin",
-      "href": "inhalte/himmelskoerper/planeten/details/vessarin/hauptseite/index.html",
+      "art": "Heimische Spezies",
+      "titel": "Hydronetzwerke",
+      "href": "inhalte/spezies/Gigantische Lebensformen/hydronetzwerke/hauptseite/Spezies.html",
       "route": null
     },
     {
       "icon": "◈",
       "art": "Spezies-Dossier",
-      "titel": "Thalassoiden",
-      "href": "inhalte/spezies/Biologische Spezies/Thalassoiden/hauptseite/Spezies.html",
+      "titel": "Heimatwelt",
+      "href": "inhalte/spezies/Gigantische Lebensformen/hydronetzwerke/Unterseiten/Heimatwelt/heimatwelt.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Politik und Fraktionen",
+      "href": "inhalte/spezies/Gigantische Lebensformen/hydronetzwerke/Unterseiten/Politik/politik.html",
+      "route": null
+    },
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Celeun-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=vessarin-stern",
       "route": null
     }
   ],
   "quellen": [
     {
-      "titel": "Sternenkarte · Celeun-System",
-      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=vessarin-stern&objekt=vessarin-celeun-iii"
+      "titel": "Speziesdossier Hydronetzwerke · Heimatwelt",
+      "href": "inhalte/spezies/Gigantische Lebensformen/hydronetzwerke/Unterseiten/Heimatwelt/heimatwelt.html"
     },
     {
-      "titel": "Speziesdossier Thalassoiden",
-      "href": "inhalte/spezies/Biologische Spezies/Thalassoiden/hauptseite/Spezies.html"
+      "titel": "Speziesdossier Hydronetzwerke · Geschichte",
+      "href": "inhalte/spezies/Gigantische Lebensformen/hydronetzwerke/Unterseiten/Geschichte/geschichte.html"
+    },
+    {
+      "titel": "Speziesdossier Hydronetzwerke · Gesellschaft",
+      "href": "inhalte/spezies/Gigantische Lebensformen/hydronetzwerke/Unterseiten/Gesellschaft/gesellschaft.html"
+    },
+    {
+      "titel": "Speziesdossier Hydronetzwerke · Politik",
+      "href": "inhalte/spezies/Gigantische Lebensformen/hydronetzwerke/Unterseiten/Politik/politik.html"
+    },
+    {
+      "titel": "Speziesdossier Hydronetzwerke · Allgemeines",
+      "href": "inhalte/spezies/Gigantische Lebensformen/hydronetzwerke/Unterseiten/Allgemeines/allgemeines.html"
     }
   ],
   "design": {
     "farben": {
-      "nacht": "#080807",
-      "tiefe": "#121110",
-      "akzent": "#c3bdb9",
-      "sand": "#c8baa4",
-      "moos": "#a2b393",
-      "ozean": "#819ba9",
-      "glas": "rgba(8, 12, 18, .76)",
-      "glas-hell": "rgba(16, 22, 32, .82)",
-      "linie": "rgba(255, 255, 255, .12)",
-      "linie-hell": "rgba(255, 255, 255, .3)",
-      "text": "#eef2f6",
-      "leise": "#a8b0bc",
-      "aporia-page-tint": "#494543"
+      "nacht": "#040a0d",
+      "tiefe": "#08161b",
+      "akzent": "#5fd6c8",
+      "sand": "#c9c3a0",
+      "moos": "#8fc4a2",
+      "ozean": "#3a9ad0",
+      "glas": "rgba(8, 20, 26, .8)",
+      "glas-hell": "rgba(14, 30, 38, .86)",
+      "linie": "rgba(95, 214, 200, .16)",
+      "linie-hell": "rgba(130, 225, 210, .36)",
+      "text": "#eaf6f6",
+      "leise": "#9fb9bb",
+      "aporia-page-tint": "#1d5a63"
     }
   },
   "kapitel": {
     "Allgemeines": {
       "gruppe": "Weitere",
       "icon": "▤",
-      "intro": "Celeun III auf einen Blick.",
+      "intro": "Celeun III auf einen Blick: Seen, Flüsse und vernetztes Leben.",
       "abschnitte": [
         {
           "titel": "Kurzprofil",
           "bild": true,
-          "bildtext": "Celeun III",
+          "bildtext": "Celeun III – Welt der Seenketten",
           "text": [
-            "Celeun III ist eine kalte Gesteinswelt mit Polkappen aus Wassereis.",
-            "Celeun III umkreist Celeun in 1,7 AE Abstand und braucht für einen Umlauf 2,3 Jahre."
+            "Celeun III ist der dritte Planet des Celeun-Systems und umkreist den gelben Zwerg Celeun in 1,20 AE Abstand. Er erhält nur rund 57 % der irdischen Einstrahlung; eine dichte, wasserdampfreiche Atmosphäre von etwa 1,8 bar hält die mittlere Temperatur dennoch bei rund 8 °C.",
+            "Mit 10.200 Kilometern Durchmesser ist der Planet kleiner als die Erde, wegen seines ungewöhnlich metallreichen Inneren aber deutlich dichter: Die Schwerkraft beträgt rund 1,41 g. 42 % der Oberfläche sind offene Gewässer – 18 % salzhaltige Meeresbecken, 24 % Seen, Binnengewässer und Flusslandschaften."
           ]
         },
         {
@@ -145,56 +227,128 @@
           "daten": [
             [
               "Typ",
-              "Gesteinsplanet"
+              "Kühlgemäßigter terrestrischer Gewässerplanet"
             ],
             [
-              "Sternsystem",
-              "Celeun-System"
-            ],
-            [
-              "Zentralkörper",
-              "Celeun"
-            ],
-            [
-              "Große Halbachse",
-              "1,7 AE"
-            ],
-            [
-              "Umlaufzeit",
-              "2,3 Jahre"
-            ],
-            [
-              "Durchmesser",
-              "10.200 km"
-            ],
-            [
-              "Masse",
-              "0,9 Erdmassen"
+              "Zentralstern",
+              "Celeun (Gelber Zwerg (G6 V))"
             ],
             [
               "Schwerkraft",
               "1,4 g"
             ],
             [
-              "Gleichgewichtstemperatur",
-              "ca. -87 °C"
+              "Durchmesser",
+              "10.200 km"
+            ],
+            [
+              "Mittlere Temperatur",
+              "ca. 8 °C"
+            ],
+            [
+              "Atmosphäre",
+              "Dicht, feucht, wärmespeichernd, ca. 1,8 bar"
+            ],
+            [
+              "Wasser",
+              "ca. 42 % (18 % Meeresbecken, 24 % Seen und Flüsse) – kein zusammenhängender Ozean"
+            ],
+            [
+              "Intelligente Spezies",
+              "Hydronetzwerke"
             ]
           ]
         },
         {
-          "titel": "Im System von Vessarin",
-          "text": [
-            "Das Celeun-System ist die Heimat der Thalassoiden: Ihr Planet Vessarin umkreist Celeun."
-          ],
-          "verweise": [
+          "titel": "Celeun III im Vergleich zur Erde",
+          "vergleich": {
+            "mit": "Erde",
+            "werte": [
+              [
+                "Durchmesser",
+                10200,
+                12742,
+                "km"
+              ],
+              [
+                "Schwerkraft",
+                1.4,
+                1,
+                "g"
+              ],
+              [
+                "Tageslänge",
+                31,
+                24,
+                "h"
+              ],
+              [
+                "Luftdruck (Mittel)",
+                1.8,
+                1,
+                "bar"
+              ],
+              [
+                "Mittlere Temperatur",
+                8,
+                15,
+                "°C"
+              ],
+              [
+                "Offene Gewässer",
+                42,
+                71,
+                "%"
+              ]
+            ]
+          }
+        },
+        {
+          "titel": "Hauptmerkmale",
+          "karten": [
+            {
+              "titel": "Kontinentale Seenketten",
+              "text": "Seen, verbunden durch Flüsse, Engstellen und unterirdische Wasserläufe."
+            },
+            {
+              "titel": "Kein Weltozean",
+              "text": "Das Wasser liegt in Senken, Becken, Flusstälern und geologischen Speichern."
+            },
+            {
+              "titel": "Hohe Schwerkraft",
+              "text": "Rund 1,41 g – flache Landschaften, niedrige Gebirge."
+            },
+            {
+              "titel": "Leuchtende Gewässerböden",
+              "text": "Biolumineszente Körperorgane der Hydronetzwerke."
+            }
+          ]
+        },
+        {
+          "titel": "Einordnung",
+          "daten": [
             [
-              "Vessarin",
-              "inhalte/himmelskoerper/planeten/details/vessarin/hauptseite/index.html"
+              "Planeten-ID",
+              "vessarin-celeun-iii"
             ],
             [
-              "Speziesdossier Thalassoiden",
-              "inhalte/spezies/Biologische Spezies/Thalassoiden/hauptseite/Spezies.html"
+              "Intelligente Heimatspezies",
+              "Hydronetzwerke"
+            ],
+            [
+              "Nachbarwelt",
+              "Vessarin, Heimat der Thalassoiden"
+            ],
+            [
+              "Verwandtschaft",
+              "Biosphäre unabhängig von Vessarin entstanden"
             ]
+          ]
+        },
+        {
+          "titel": "Zusammenfassung",
+          "text": [
+            "Celeun III ist ein wasserreicher, kühlgemäßigter Gesteinsplanet mit außergewöhnlich umfangreichen kontinentalen Gewässersystemen. Seine Flüsse, Seen und unterirdischen Wasserkorridore ermöglichten die Entstehung der Hydronetzwerke. Durch seine hydrologisch vernetzten Landschaften unterscheidet er sich grundlegend von klassischen Ozeanplaneten."
           ]
         }
       ]
@@ -202,84 +356,155 @@
     "Astronomie": {
       "gruppe": "Wissenschaft",
       "icon": "✧",
-      "intro": "Celeun III im Celeun-System.",
+      "intro": "Der dritte Planet des Celeun-Systems.",
       "abschnitte": [
         {
-          "titel": "Bahn",
+          "titel": "Bahn und Position",
+          "text": [
+            "Celeun III ist der 3. von 5 Planeten im Celeun-System. Er umkreist Celeun in 1,2 AE Abstand – innerhalb der habitablen Zone (bei Celeun zwischen 0,86 und 1,51 AE). Er erhält 0,57-mal so viel Sternlicht wie die Erde.",
+            "Ohne Atmosphäre läge seine Gleichgewichtstemperatur bei rund -52 °C. Die dichte Atmosphäre und ihr Kohlendioxid- und Wasserdampfgehalt erzeugen einen Treibhauseffekt von rund 60 K – genug für flüssige Oberflächengewässer trotz der geringen Einstrahlung."
+          ],
           "daten": [
             [
-              "Zentralkörper",
-              "Celeun"
+              "Sternsystem",
+              "Celeun-System"
+            ],
+            [
+              "Bahnposition",
+              "3. von 5 Planeten"
             ],
             [
               "Große Halbachse",
-              "1,7 AE (254,3 Mio. km)"
+              "1,2 AE (ca. 179,5 Mio. km)"
             ],
             [
               "Exzentrizität",
               "0,04"
             ],
             [
-              "Bahnneigung",
-              "1,5°"
+              "Umlaufzeit",
+              "492,6 Erdtage"
             ],
             [
-              "Umlaufzeit",
-              "2,3 Jahre"
+              "Ortsjahr",
+              "ca. 381 Ortstage"
             ],
             [
               "Einstrahlung",
-              "0,284-fach der Erde"
+              "ca. 0,57-fach der Erde"
+            ],
+            [
+              "Habitable Zone von Celeun",
+              "0,86–1,51 AE"
             ]
           ]
         },
         {
-          "titel": "Am Himmel von Celeun III",
+          "titel": "Zentralstern",
           "text": [
-            "Celeun erscheint von hier aus etwa 0,29° groß (die Sonne von der Erde: 0,53°)."
-          ]
-        },
-        {
-          "titel": "Körper des Systems",
-          "zeitleiste": [
+            "Celeun ist ein gelber Zwerg der Spektralklasse G6 V mit 95 % der Sonnenmasse und 82 % ihrer Leuchtkraft – Zentralstern von Vessarin, der Heimatwelt der Thalassoiden."
+          ],
+          "daten": [
             [
-              "Celeun · Stern",
+              "Name",
+              "Celeun"
+            ],
+            [
+              "Typ",
               "Gelber Zwerg (G6 V)"
             ],
             [
-              "Celeun I · 0,42 AE",
-              "Gesteinsplanet"
+              "Masse",
+              "0,95 Sonnenmassen"
             ],
             [
-              "Vessarin · 0,93 AE",
-              "Ozeanplanet"
+              "Radius",
+              "0,93 Sonnenradien"
             ],
             [
-              "Celeun III · 1,7 AE · dieses Dossier",
-              "Gesteinsplanet"
+              "Leuchtkraft",
+              "0,82 Sonnenleuchtkräfte"
             ],
             [
-              "Celeun IV · 6 AE",
-              "Gasriese"
+              "Oberflächentemperatur",
+              "ca. 5.600 K"
             ],
             [
-              "Celeun V · 16 AE",
-              "Eisriese"
+              "Alter",
+              "ca. 4,1 Mrd. Jahre"
             ],
             [
-              "Perlgürtel · 2,5–3,3 AE",
-              "Asteroidengürtel"
-            ],
-            [
-              "Äußeres Kometengebiet · 40–56 AE",
-              "Kometengebiet"
+              "Begleitsterne",
+              "keine (Einzelstern)"
             ]
           ],
           "verweise": [
             [
               "Celeun",
               "inhalte/himmelskoerper/sterne/details/celeun/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Rotation und Achse",
+          "daten": [
+            [
+              "Rotationsperiode",
+              "31 h"
             ],
+            [
+              "Achsneigung",
+              "16,8°"
+            ],
+            [
+              "Scheinbare Sterngröße",
+              "ca. 0,41° (Sonne von der Erde: 0,53°)"
+            ],
+            [
+              "Jahreszeiten",
+              "Ausgeprägt; Schneeschmelze und saisonale Wasserstandsänderungen"
+            ]
+          ]
+        },
+        {
+          "titel": "Monde",
+          "text": [
+            "Celeun III besitzt keine Monde."
+          ]
+        },
+        {
+          "titel": "Planeten des Systems",
+          "zeitleiste": [
+            [
+              "Celeun I · 0,42 AE",
+              "Celeun I ist ein heißer, luftloser Gesteinsplanet."
+            ],
+            [
+              "Vessarin · 0,93 AE",
+              "Vessarin ist die Heimatwelt der Thalassoiden: eine Ozeanwelt mit globalem, kilometertiefem Meer, wenigen Inselbögen und ausgedehnten hydrothermalen Feldern am Meeresboden."
+            ],
+            [
+              "Celeun III · 1,2 AE",
+              "Celeun III ist ein kühlgemäßigter, wasserreicher Gesteinsplanet mit gigantischen Seenketten, Flussbecken und unterirdischen Wasserkorridoren – der Ursprungsplanet der Hydronetzwerke."
+            ],
+            [
+              "Perlgürtel · 2,5–3,3 AE",
+              "Der Perlgürtel zwischen 2,5 und 3,25 AE enthält viele helle, wasserreiche Brocken."
+            ],
+            [
+              "Celeun IV · 6 AE",
+              "Celeun IV ist ein großer Gasriese mit hellen Wolkenbändern."
+            ],
+            [
+              "Celeun V · 16 AE",
+              "Celeun V ist ein ferner, tiefblauer Eisriese."
+            ],
+            [
+              "Zaruzen-Kometenwolke · 40–56 AE",
+              "Ein ferner Gürtel aus Eiskörpern zwischen 40 und 56 AE."
+            ]
+          ],
+          "verweise": [
             [
               "Celeun I",
               "inhalte/himmelskoerper/planeten/details/celeun-i/hauptseite/index.html"
@@ -289,13 +514,67 @@
               "inhalte/himmelskoerper/planeten/details/vessarin/hauptseite/index.html"
             ],
             [
+              "Perlgürtel",
+              "inhalte/himmelskoerper/sternensysteme/details/perlgurtel/hauptseite/index.html"
+            ],
+            [
               "Celeun IV",
               "inhalte/himmelskoerper/planeten/details/celeun-iv/hauptseite/index.html"
             ],
             [
               "Celeun V",
               "inhalte/himmelskoerper/planeten/details/celeun-v/hauptseite/index.html"
+            ],
+            [
+              "Zaruzen-Kometenwolke",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=vessarin-stern&objekt=vessarin-kometengebiet"
             ]
+          ]
+        },
+        {
+          "titel": "Nachbarschaft und Anomalien",
+          "karten": [
+            {
+              "titel": "Perlschweif",
+              "text": "Ein wasserreicher Komet mit perlmuttfarben schimmerndem Staubschweif, der alle 58 Jahre das innere System durchquert."
+            },
+            {
+              "titel": "Nachbarsysteme",
+              "text": "Ferrum-System (7,6 Lj), Thalor-System (18,7 Lj), Kelira-System (26,3 Lj) – alle weit außerhalb der gravitativen Einflusszone von Celeun (rund 3,5 Lichtjahre)."
+            }
+          ],
+          "verweise": [
+            [
+              "Perlschweif",
+              "inhalte/himmelskoerper/kometen/details/perlschweif/hauptseite/index.html"
+            ],
+            [
+              "Celeun-System in der Sternenkarte",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=vessarin-stern"
+            ]
+          ]
+        },
+        {
+          "titel": "Bahndaten",
+          "daten": [
+            [
+              "Bahnneigung",
+              "1,5°"
+            ],
+            [
+              "Bisherige Umlaufbahn",
+              "1,70 AE (auf 1,20 AE verlegt)"
+            ],
+            [
+              "Monde",
+              "Bisher keine erfasst"
+            ]
+          ]
+        },
+        {
+          "titel": "Am Himmel von Celeun III",
+          "text": [
+            "Celeun erscheint kleiner und schwächer als die Sonne von der Erde aus, oft gedämpft durch Nebel und Wolken. Nachts ist Vessarin, die Ozeanwelt der Thalassoiden, als heller Wandelstern zu sehen."
           ]
         }
       ]
@@ -322,22 +601,35 @@
             ],
             [
               "Oberflächenschwerkraft",
-              "13,78 m/s² (1,404 g)"
+              "13,8 m/s² (1,4 g)"
             ],
             [
               "Fluchtgeschwindigkeit",
-              "11,86 km/s"
+              "ca. 11,9 km/s"
+            ],
+            [
+              "Mittlere Dichte (Speziesdaten)",
+              "ca. 9,7 g/cm³ – ungewöhnlich hoher Metallanteil"
+            ],
+            [
+              "Planetenkern",
+              "Aktiv, metallisch"
+            ],
+            [
+              "Magnetfeld",
+              "Vorhanden"
+            ],
+            [
+              "Tektonik",
+              "Regional aktiv, geothermische Energiequellen"
             ]
-          ],
+          ]
+        },
+        {
+          "titel": "Physikalische Werte im Vergleich",
           "vergleich": {
             "mit": "Erde",
             "werte": [
-              [
-                "Durchmesser",
-                10200,
-                12742,
-                "km"
-              ],
               [
                 "Masse",
                 0.9,
@@ -345,13 +637,31 @@
                 "Erdmassen"
               ],
               [
-                "Schwerkraft",
-                1.4,
+                "Dichte",
+                9.67,
+                5.51,
+                "g/cm³"
+              ],
+              [
+                "Fluchtgeschwindigkeit",
+                11.9,
+                11.2,
+                "km/s"
+              ],
+              [
+                "Magnetfeld",
+                1.2,
                 1,
-                "g"
+                "× Erde"
               ]
             ]
           }
+        },
+        {
+          "titel": "Kleine, dichte Welt",
+          "text": [
+            "Celeun III ist kleiner als die Erde, aber wegen seines außergewöhnlich metallreichen Inneren sehr dicht. Daraus ergeben sich die hohe Oberflächenschwerkraft von etwa 1,41 g und eine Fluchtgeschwindigkeit von rund 11,9 km/s. Die hohe Dichte wird als Besonderheit der inneren Zusammensetzung übernommen."
+          ]
         }
       ]
     },
@@ -361,19 +671,30 @@
       "intro": "Planetare Struktur von Celeun III.",
       "abschnitte": [
         {
-          "titel": "Schalenbau",
+          "titel": "Aufbau",
+          "text": [
+            "Ein großer, aktiver metallischer Kern erzeugt das Magnetfeld und liefert geothermische Wärme. Darüber liegen eisenreiche Gesteine, basaltische Hochländer und kalkhaltige Sedimente mit ausgeprägten Karstlandschaften."
+          ],
           "schichten": [
             [
+              "Gewässer und Sedimente",
+              "Seen, Flüsse, Fluss- und Seenablagerungen"
+            ],
+            [
               "Kruste",
-              "Silikatgestein"
+              "Eisenreiche Gesteine, Basalt, Kalk und Karst"
+            ],
+            [
+              "Grundwasser",
+              "Tiefe Reservoirs, geflutete Kammern"
             ],
             [
               "Mantel",
-              "Dichteres Silikatgestein"
+              "Silikatisch, geothermisch aktiv"
             ],
             [
               "Kern",
-              "Eisen und Nickel"
+              "Groß, metallreich, aktiv"
             ]
           ]
         }
@@ -382,12 +703,69 @@
     "Geografie": {
       "gruppe": "Natur",
       "icon": "△",
-      "intro": "Geografie von Celeun III.",
+      "intro": "Vier Kontinente voller Wasser.",
       "abschnitte": [
         {
-          "titel": "Oberfläche",
+          "titel": "Landschaften",
+          "liste": [
+            "Vier große Kontinentalregionen",
+            "Ausgedehnte flache Tiefländer und Sedimentebenen",
+            "Gigantische Flussbecken und weit verzweigte Seenketten",
+            "Mineralreiche Gebirgszüge und Hochlandquellen",
+            "Gletscherlandschaften",
+            "Wasserführende Karstgebiete und unterirdische Flusslandschaften",
+            "Terrassenförmige Beckenlandschaften",
+            "Umfangreiche natürliche Überschwemmungsgebiete"
+          ]
+        },
+        {
+          "titel": "Oberflächenverteilung",
+          "balken": {
+            "werte": [
+              [
+                "Land",
+                58
+              ],
+              [
+                "Seen, Binnengewässer, Flüsse",
+                24
+              ],
+              [
+                "Salzhaltige Meeresbecken",
+                18
+              ]
+            ]
+          }
+        },
+        {
+          "titel": "Planetare Besonderheiten",
+          "karten": [
+            {
+              "titel": "Kontinentale Seenketten",
+              "text": "Seenlandschaften über Hunderte bis Tausend Kilometer – die wichtigsten Lebensräume der Hydronetzwerke."
+            },
+            {
+              "titel": "Unterirdische Wasserkorridore",
+              "text": "Wasserführende Höhlen verbinden Gewässerregionen und ermöglichen Kommunikation auch bei starken saisonalen Veränderungen."
+            },
+            {
+              "titel": "Geothermische Wasserlandschaften",
+              "text": "Warme Quellen verhindern das Gefrieren – ganzjährig aktive Ökosysteme selbst in subpolaren Gebieten."
+            },
+            {
+              "titel": "Leuchtende Gewässerböden",
+              "text": "Biolumineszente Körperorgane erzeugen Lichtmuster auf Fluss- und Seeböden; das Wasser selbst leuchtet nicht."
+            },
+            {
+              "titel": "Wandernde Gewässergrenzen",
+              "text": "Schneeschmelze, Regen und Überschwemmungen verändern Wasserverbindungen regelmäßig."
+            }
+          ]
+        },
+        {
+          "titel": "Schwerkraft und Relief",
           "text": [
-            "Die Oberfläche von Celeun III ist kalt."
+            "Die vergleichsweise hohe Oberflächengravitation begünstigt flachere Landschaftsformen und begrenzt die Höhe vieler Gebirge."
           ]
         }
       ]
@@ -398,26 +776,50 @@
       "intro": "Atmosphäre von Celeun III.",
       "abschnitte": [
         {
-          "titel": "Gashülle",
+          "titel": "Zusammensetzung",
           "text": [
-            "Celeun III hält eine dünne, kalte Gashülle fest."
+            "Die Atmosphäre ist dicht und wärmespeichernd: rund 1,8 bar mit einem hohen Wasserdampfanteil in den unteren Luftschichten. Die trockene Luft besteht aus etwa 80 % Stickstoff, 15 % Sauerstoff, 4 % Kohlendioxid und 1 % Edelgasen. Nebel und große Wolkensysteme sind häufig. Für Menschen ist die Luft ohne Atemschutz nicht geeignet."
           ],
           "balken": {
             "werte": [
               [
-                "Kohlendioxid",
-                62
-              ],
-              [
                 "Stickstoff",
-                33
+                80
               ],
               [
-                "Argon",
-                5
+                "Sauerstoff",
+                15
+              ],
+              [
+                "Kohlendioxid",
+                4
+              ],
+              [
+                "Argon und Edelgase",
+                1
               ]
             ]
           }
+        },
+        {
+          "titel": "Druck",
+          "daten": [
+            [
+              "Mittlerer Oberflächendruck",
+              "ca. 1,8 bar"
+            ]
+          ]
+        },
+        {
+          "titel": "Wolkenschichten",
+          "liste": [
+            "Tiefliegende Nebel- und Schichtwolken",
+            "Ausgedehnte Regenwolkensysteme",
+            "Mittelhohe Feuchtigkeitsschichten",
+            "Hochliegende Eiswolken",
+            "Regionale Konvektionswolken",
+            "Geothermisch beeinflusste lokale Wolkenbildung"
+          ]
         }
       ]
     },
@@ -427,9 +829,61 @@
       "intro": "Klima von Celeun III.",
       "abschnitte": [
         {
-          "titel": "Temperatur",
+          "titel": "Temperaturzonen",
           "text": [
-            "Bei 1,7 AE Abstand zu Celeun liegt die Gleichgewichtstemperatur von Celeun III bei rund -87 °C – kalt."
+            "Die Klimawerte sind ein planetares Entwicklungsmodell und noch nicht durch eine Klimasimulation bestätigt. An den Polen liegen dauerhafte Eisflächen; in den wasserreichen Tiefländern fällt häufig Niederschlag, Nebelfelder sind alltäglich. Geothermisch erwärmte Gewässer bleiben selbst in subpolaren Gebieten ganzjährig eisfrei."
+          ],
+          "skala": {
+            "einheit": "°C",
+            "min": -45,
+            "max": 30,
+            "bereiche": [
+              [
+                "Polare Regionen",
+                -45,
+                -10
+              ],
+              [
+                "Subpolare Regionen",
+                -15,
+                5
+              ],
+              [
+                "Gemäßigte Regionen",
+                4,
+                18
+              ],
+              [
+                "Äquatoriale Tiefländer",
+                15,
+                26
+              ]
+            ]
+          }
+        },
+        {
+          "titel": "Wetter",
+          "karten": [
+            {
+              "titel": "Regenfronten",
+              "text": "Großflächig, mit starken Niederschlägen an Gebirgsflanken."
+            },
+            {
+              "titel": "Nebelperioden",
+              "text": "Langanhaltend, auch geothermisch erzeugt."
+            },
+            {
+              "titel": "Hochwasser",
+              "text": "Saisonal, nach Schneeschmelze und Regen."
+            },
+            {
+              "titel": "Kälte",
+              "text": "Schneestürme in Hochländern, polare Kaltluftströmungen."
+            },
+            {
+              "titel": "Trockenperioden",
+              "text": "Regional und langfristig – Gefahr für isolierte Gewässer."
+            }
           ]
         }
       ]
@@ -440,9 +894,30 @@
       "intro": "Gewässer von Celeun III.",
       "abschnitte": [
         {
-          "titel": "Wasser",
+          "titel": "Oberflächengewässer",
+          "liste": [
+            "Gigantische Süßwasserseen und mehrstufige Seenketten",
+            "Große zusammenhängende Flusssysteme und breite Deltas",
+            "Flache Binnenmeere",
+            "Natürliche Verbindungskanäle",
+            "Saisonale Überschwemmungsebenen",
+            "Gletscherabflüsse und mineralreiche Quellbecken"
+          ]
+        },
+        {
+          "titel": "Unterirdische Gewässer",
+          "liste": [
+            "Wasserführende Höhlensysteme und unterirdische Flüsse",
+            "Tiefe Grundwasserreservoirs",
+            "Geflutete und geothermisch erwärmte Gesteinskammern",
+            "Natürliche Verbindungen zwischen Oberflächengewässern",
+            "Geschützte biologische Rückzugsräume"
+          ]
+        },
+        {
+          "titel": "Wasserchemie",
           "text": [
-            "Wasser gibt es höchstens als Eis in Kratern und im Untergrund."
+            "Die Binnengewässer sind überwiegend süßwassergeprägt, unterscheiden sich aber stark in Mineralstoff- und Sauerstoffgehalt sowie im pH-Wert. Geothermische Zuflüsse bringen Minerale, viele Gewässer enthalten viel gelöste organische Substanz und produktive mikrobielle Ökosysteme."
           ]
         }
       ]
@@ -453,9 +928,26 @@
       "intro": "Geologie von Celeun III.",
       "abschnitte": [
         {
-          "titel": "Geologie",
-          "text": [
-            "Celeun III ist groß genug, um im Inneren noch Wärme zu speichern; Spuren alter vulkanischer Tätigkeit sind wahrscheinlich."
+          "titel": "Gesteine und Prozesse",
+          "liste": [
+            "Eisenreiche Gesteinsformationen und basaltische Hochländer",
+            "Kalkhaltige Sedimente und wasserlösliche Mineralformationen",
+            "Ausgeprägte Karstlandschaften",
+            "Tiefreichende Gesteinsbrüche",
+            "Geothermische Quellsysteme und regionale Vulkanaktivität",
+            "Mineralreiche Wasseraustritte",
+            "Langfristige Erosion und Ablagerungen in Fluss- und Seenbecken"
+          ]
+        },
+        {
+          "titel": "Planetare Gefahren",
+          "liste": [
+            "Austrocknung einzelner Gewässer und unterbrochene Wasserverbindungen",
+            "Schwere Überschwemmungen und Erdrutsche",
+            "Veränderte unterirdische Wasserläufe und geologische Einbrüche",
+            "Sauerstoffmangel in tiefen Gewässern",
+            "Extreme Frostperioden und Sedimentverschüttungen",
+            "Gefährdung isolierter Körperorgane"
           ]
         }
       ]
@@ -463,12 +955,39 @@
     "Biosphäre": {
       "gruppe": "Natur",
       "icon": "❧",
-      "intro": "Biosphäre von Celeun III.",
+      "intro": "Leben in vernetzten Gewässern.",
       "abschnitte": [
         {
-          "titel": "Leben",
+          "titel": "Biosphäre",
           "text": [
-            "Auf Celeun III ist kein Leben verzeichnet."
+            "Aquatische Mikroorganismen, photosynthetisch aktive Wasserorganismen und ausgedehnte Unterwasserpflanzenlandschaften bilden die Grundlage. Dazu kommen Sedimentbewohner, amphibische Organismen, geothermisch und kälteangepasste Lebensformen und terrestrische Feuchtgebietsökosysteme. Die Biosphäre entwickelte sich unabhängig von Vessarin und den Thalassoiden."
+          ]
+        },
+        {
+          "titel": "Flora (vorgesehene Gruppen)",
+          "liste": [
+            "Großflächige Unterwasserpflanzen und schwimmende Pflanzenverbände",
+            "Flexible Strömungspflanzen",
+            "Kältebeständige Uferpflanzen und großblättrige Feuchtgebietspflanzen",
+            "Biolumineszente Höhlenflora",
+            "Sedimentstabilisierende Wurzelorganismen"
+          ]
+        },
+        {
+          "titel": "Fauna (vorgesehene Gruppen)",
+          "liste": [
+            "Große Süßwasserlebewesen und flache Bodenbewohner",
+            "Aquatische Filterorganismen",
+            "Amphibische Land- und Wasserlebewesen",
+            "Strömungsangepasste Schwimmer und Höhlenbewohner",
+            "Kälteangepasste aquatische Räuber",
+            "Geothermisch lebende Wirbellose"
+          ]
+        },
+        {
+          "titel": "Körperformen",
+          "text": [
+            "Die hohe Gravitation begünstigt kompakte terrestrische Körperformen. Im Wasser wird die mechanische Belastung durch den Auftrieb teilweise ausgeglichen."
           ]
         }
       ]
@@ -476,28 +995,28 @@
     "Spezies": {
       "gruppe": "Zivilisation",
       "icon": "✿",
-      "intro": "Spezies von Celeun III.",
+      "intro": "Die Hydronetzwerke – Bewusstsein in vernetzten Gewässern.",
       "abschnitte": [
         {
-          "titel": "Bewohner",
+          "titel": "Entstehung",
           "text": [
-            "Celeun III ist keine Heimat einer intelligenten Spezies."
+            "Celeun III ist der natürliche Ursprungsplanet der Hydronetzwerke. Die Spezies entstand in langfristig stabilen Süßwassersystemen, deren Abschnitte über natürliche Wasserläufe verbunden waren. Weil biologische Ressourcen räumlich verteilt waren, entstanden spezialisierte Körperorgane an unterschiedlichen Standorten, die über evolutionäre Zeiträume immer komplexer miteinander kommunizierten – daraus erwuchs das dezentrale Bewusstsein der heutigen Hydronetzwerke."
           ]
         },
         {
-          "titel": "Im System von Vessarin",
+          "titel": "Verbreitung",
+          "liste": [
+            "Große Seenketten und Flussdeltas",
+            "Geschützte Tiefwasserbecken",
+            "Wasserführende Höhlen und unterirdische Verbindungssysteme",
+            "Geothermische Quellgebiete",
+            "Kontinentale Feuchtgebiete und dauerhaft wasserführende Flüsse"
+          ]
+        },
+        {
+          "titel": "Hinweis",
           "text": [
-            "Das Celeun-System ist die Heimat der Thalassoiden: Ihr Planet Vessarin umkreist Celeun."
-          ],
-          "verweise": [
-            [
-              "Vessarin",
-              "inhalte/himmelskoerper/planeten/details/vessarin/hauptseite/index.html"
-            ],
-            [
-              "Speziesdossier Thalassoiden",
-              "inhalte/spezies/Biologische Spezies/Thalassoiden/hauptseite/Spezies.html"
-            ]
+            "Nicht alle Gewässer sind besiedelt; verschiedene Individuen können im selben Gewässersystem leben."
           ]
         }
       ]
@@ -508,25 +1027,31 @@
       "intro": "Zivilisation von Celeun III.",
       "abschnitte": [
         {
-          "titel": "Siedlungen",
+          "titel": "Verteilte Zivilisation",
           "text": [
-            "Für Celeun III sind keine dauerhaften Siedlungen verzeichnet."
+            "Die Hydronetzwerke errichten keine humanoid geprägten Städte. Ihre Zivilisation besteht aus verteilten biologischen und technologischen Strukturen; Arbeiten außerhalb der ortsfesten Körperorgane übernehmen biologische Arbeitsstrukturen, ferngesteuerte Maschinen und automatisierte Systeme."
           ]
         },
         {
-          "titel": "Im System von Vessarin",
-          "text": [
-            "Das Celeun-System ist die Heimat der Thalassoiden: Ihr Planet Vessarin umkreist Celeun."
-          ],
-          "verweise": [
-            [
-              "Vessarin",
-              "inhalte/himmelskoerper/planeten/details/vessarin/hauptseite/index.html"
-            ],
-            [
-              "Speziesdossier Thalassoiden",
-              "inhalte/spezies/Biologische Spezies/Thalassoiden/hauptseite/Spezies.html"
-            ]
+          "titel": "Zivilisationselemente",
+          "liste": [
+            "Kognitive Organfelder und geschützte Gedächtnisregionen",
+            "Biologische Regenerationsgebiete und Fortpflanzungsbecken",
+            "Unterwasserforschungsstationen und Kommunikationsrelais",
+            "Hydrologische Verbindungskanäle und Wasseraufbereitung",
+            "Technologische Archive und automatisierte Wartung",
+            "Diplomatische Kontaktstationen"
+          ]
+        },
+        {
+          "titel": "Architektur",
+          "liste": [
+            "In Gewässerböden integrierte Bauwerke",
+            "Terrassenförmige Unterwasseranlagen",
+            "Druckbeständige mineralische Gehäuse und transparente biologische Schutzkammern",
+            "Ringförmige Kommunikationsstationen",
+            "Große Wasserleitungen und mechanische Schleusen",
+            "Biologisch-technologische Verbundstrukturen"
           ]
         }
       ]
@@ -537,9 +1062,30 @@
       "intro": "Geschichte von Celeun III.",
       "abschnitte": [
         {
-          "titel": "Entstehung",
+          "titel": "Zeitleiste",
+          "zeitleiste": [
+            [
+              "Evolution",
+              "Entwicklung in kontinentalen Gewässersystemen über lange Zeiträume"
+            ],
+            [
+              "Getrennte Anfänge",
+              "Frühe intelligente Individuen durch Wasserscheiden voneinander getrennt"
+            ],
+            [
+              "Hydrologische Technik",
+              "Künstliche Verbindungen zwischen zuvor isolierten Gesellschaften"
+            ],
+            [
+              "Gegenwart",
+              "Pflege und Kontrolle der Gewässerverbindungen als Kern der Zivilisation"
+            ]
+          ]
+        },
+        {
+          "titel": "Hinweis",
           "text": [
-            "Celeun III entstand zusammen mit dem Celeun-System vor rund 4,1 Milliarden Jahren."
+            "Jahreszahlen, Erstkontakte und interplanetare Ereignisse werden später gemeinsam mit der Geschichte des Celeun-Systems festgelegt."
           ]
         }
       ]
@@ -550,9 +1096,9 @@
       "intro": "Fraktionen von Celeun III.",
       "abschnitte": [
         {
-          "titel": "Ansprüche",
+          "titel": "Beziehungen zu Vessarin",
           "text": [
-            "Für Celeun III sind keine Fraktionsansprüche verzeichnet."
+            "Celeun III und Vessarin besitzen unabhängig entstandene intelligente Lebensformen ohne gemeinsame Abstammung. Gemeinsame Interessen liegen in aquatischer Forschung, Biotechnologie, Unterwasserinfrastruktur, Wasseraufbereitung, Evolutions-, Umwelt- und Klimaforschung sowie im Ressourcenaustausch. Die Geschichte ihrer diplomatischen Beziehungen bleibt zunächst offen."
           ]
         }
       ]
@@ -564,9 +1110,33 @@
       "abschnitte": [
         {
           "titel": "Rohstoffe",
+          "karten": [
+            {
+              "titel": "Wasser",
+              "text": "Trink- und Prozesswasser, Wassereis."
+            },
+            {
+              "titel": "Metalle",
+              "text": "Eisen, Nickel, Kupfer."
+            },
+            {
+              "titel": "Minerale",
+              "text": "Silikate, kalkhaltige Minerale, Magnesiumverbindungen, Phosphate, geothermisch abgelagerte Minerale."
+            },
+            {
+              "titel": "Biologisch",
+              "text": "Organische Sedimente und biologische Filtermaterialien."
+            }
+          ]
+        },
+        {
+          "titel": "Wirtschaft",
           "liste": [
-            "Silikatgestein",
-            "Metallerze"
+            "Biologische Filtersysteme und Wasseraufbereitung",
+            "Hydrologische Messtechnik und Umweltüberwachung",
+            "Unterwassertechnologien und wasserbeständige Werkstoffe",
+            "Geothermische Energiegewinnung",
+            "Planetare Wasserversorgungssysteme"
           ]
         }
       ]
@@ -577,22 +1147,15 @@
       "intro": "Erforschung von Celeun III.",
       "abschnitte": [
         {
-          "titel": "Offene Fragen",
+          "titel": "Forschungsfelder",
           "liste": [
-            "Wie ist der innere Aufbau beschaffen?",
-            "Gab es früher eine dichtere Atmosphäre?"
-          ]
-        },
-        {
-          "titel": "In der Sternenkarte",
-          "text": [
-            "Celeun III ist mit allen Bahndaten im Celeun-System der Sternenkarte eingetragen."
-          ],
-          "verweise": [
-            [
-              "In der Sternenkarte zeigen",
-              "Menüs/Sternenkarte/Sternenkarte.html?system=vessarin-stern&objekt=vessarin-celeun-iii"
-            ]
+            "Hydrokognitive Bewusstseinsforschung",
+            "Aquatische Xenobiologie und Gewässerökologie",
+            "Hydrologische Simulation und planetare Wasserkreisläufe",
+            "Biologische Informationsübertragung",
+            "Aquatische Regenerationsmedizin",
+            "Unterirdische Gewässererkundung",
+            "Klimaforschung und Terraforming"
           ]
         }
       ]
@@ -603,9 +1166,50 @@
       "intro": "Besonderheiten von Celeun III.",
       "abschnitte": [
         {
-          "titel": "Besonderheiten",
+          "titel": "Rekorde",
+          "daten": [
+            [
+              "Größte Lebensräume",
+              "Kontinentale Seenketten über mehrere Hundert bis Tausend Kilometer"
+            ],
+            [
+              "Bewusstsein",
+              "Über ganze Gewässersysteme verteilt"
+            ],
+            [
+              "Dichtester Planet des Systems",
+              "ca. 9,7 g/cm³"
+            ]
+          ]
+        },
+        {
+          "titel": "Im Spiel",
           "liste": [
-            "Celeun III ist eine kalte Gesteinswelt mit Polkappen aus Wassereis."
+            "Gigantische Seenlandschaften und geflutete Höhlen erkunden",
+            "Mit räumlich verteilten intelligenten Organismen kommunizieren",
+            "Unterbrochene Gewässerverbindungen wiederherstellen",
+            "Beschädigte Gedächtnisorgane retten, junge Hydronetzwerke unterstützen",
+            "Wasseraufbereitungsanlagen aufbauen",
+            "Diplomatische Konflikte um Wasserressourcen",
+            "Dynamische Überschwemmungen und Dürreperioden"
+          ]
+        },
+        {
+          "titel": "Visuelle Identität",
+          "liste": [
+            "Türkisfarbene Seenketten und tiefblaue unterirdische Gewässer",
+            "Silbergrüne Feuchtgebiete und weitläufige Nebelebenen",
+            "Dunkle mineralreiche Gebirge und helle polare Eislandschaften",
+            "Leuchtende Gewässerböden",
+            "Geothermische Wasserterrassen"
+          ]
+        },
+        {
+          "titel": "Hinweise für Besucher",
+          "liste": [
+            "Atemschutz erforderlich",
+            "Hochwasser- und Frostwarnungen beachten",
+            "Körperorgane der Hydronetzwerke nicht beschädigen"
           ]
         }
       ]
@@ -616,9 +1220,9 @@
       "intro": "Medienarchiv von Celeun III.",
       "abschnitte": [
         {
-          "titel": "Celeun III – Archivbild",
+          "titel": "Celeun III aus dem All",
           "bild": true,
-          "bildtext": "Celeun III"
+          "bildtext": "Celeun III – Welt der Seenketten"
         }
       ]
     }

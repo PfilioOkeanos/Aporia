@@ -1,7 +1,7 @@
 // Nhalyss · Heimatwelt der Bioluminoiden (Quelle: Info_material/…/Bioluminoiden/05_Heimatwelt/heimatwelt-referenz.md, Dossierversion 2.2)
 const G = "assets/bilder/Alle Spezies+Übersicht/Biologische Spezies/Bioluminoiden/gesamtdarstellung/";
 export default {
-    ordner: "imposante-supererde-mit-dunklen-kontinenten", system: "nhalyss-system", planetId: "nhalyss-planet",
+    ordner: "nhalyss", system: "nhalyss-system", planetId: "nhalyss-planet",
     name: "Nhalyss", genitiv: "von Nhalyss", klasse: "Gesteinsplanet", klasseLang: "Terrestrischer Gesteinsplanet mit Ringsystem",
     spezies: { name: "Bioluminoiden", gruppe: "Biologische Spezies", ordner: "Bioluminoiden", seite: "inhalte/spezies/Biologische Spezies/Bioluminoiden/hauptseite/Spezies.html" },
     intro: "Nhalyss ist die Heimatwelt der Bioluminoiden – der Selari. Eine geologisch aktive Welt mit großen Ozeanen, vier Kontinenten und gewaltigen Spaltenlandschaften, über der sich der Scherbenkranz spannt: ein Ringsystem aus den Trümmern eines zerbrochenen Mondes.",

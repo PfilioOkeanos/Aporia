@@ -89,4 +89,36 @@ Phase 07 – Hochalter
 • Nicht jedes Individuum unternimmt regelmäßig interkontinentale Wanderungen.
 • Körpergröße ist kein unmittelbarer Maßstab für Intelligenz oder gesellschaftlichen Rang.
 • Flugunfähige Individuen bleiben vollständige Mitglieder der Gesellschaft.
-• Kulturelles Wissen wird erlernt und nicht vollständig genetisch weitergegeben.
+• Kulturelles Wissen wird erlernt und nicht vollständig genetisch weitergegeben.#
+#
+#
+### Experimentelle evolutionäre Weiterentwicklung
+
+Die bisher bekannten gigantischen Velorithen stellen die natürliche evolutionäre Urform der Spezies dar. Ihre außergewöhnliche Körpergröße entstand durch die besonderen Umweltbedingungen ihrer Heimatwelt Rhaum.
+
+Die natürliche Entwicklung stellt jedoch nicht zwangsläufig die endgültige evolutionäre Form der Spezies dar.
+
+Durch genetische Forschung, biotechnologische Experimente und gezielte Veränderungen biologischer Entwicklungsprozesse können höherentwickelte Formen der Velorithen entstehen.
+
+Mögliche Entwicklungsziele:
+
+- Deutliche Verringerung der Körpergröße.
+- Steigerung der kognitiven Leistungsfähigkeit.
+- Erhöhung der neurologischen Informationsverarbeitung.
+- Verbesserung der Feinmotorik.
+- Effizientere biologische Energieversorgung.
+- Optimierung der Tragflächenstruktur.
+- Reduzierung des Ressourcenverbrauchs.
+- Verbesserung der technologischen Interaktionsfähigkeit.
+- Erweiterung der Anpassungsfähigkeit an fremde Planeten.
+- Verringerung der Abhängigkeit von natürlicher geringer Gravitation.
+- Entwicklung kompakterer Sinnesorgane.
+- Verbesserung der wissenschaftlichen und konstruktiven Fähigkeiten.
+
+Die höherentwickelten Formen behalten ihre grundlegende biologische Identität. Charakteristische Tragflächen, Membranstrukturen, Körpersegmente und Sinneskomplexe bleiben erkennbar.
+
+Eine geringere Körpergröße führt nicht zu einer Änderung der grundlegenden Speziesklassifikation. Die Velorithen bleiben aufgrund ihrer natürlichen Abstammung weiterhin der Hauptgruppe der gigantischen Lebensformen zugeordnet.
+
+Die gigantische Urform und die höherentwickelten kompakten Formen können gleichzeitig existieren.
+
+Die Weiterentwicklung ist kein verpflichtender evolutionärer Prozess, sondern eine mögliche Entwicklungsrichtung, die durch Forschung und experimentelle Eingriffe erschlossen werden kann.

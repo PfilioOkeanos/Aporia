@@ -1,56 +1,123 @@
 {
-  "_erzeugt": "koerper-bauen",
   "name": "Ixar III",
   "genitiv": "von Ixar III",
   "dossierName": "Ixar III-Dossier",
-  "klasse": "Gesteinsplanet",
-  "intro": "Ixar III ist eine kalte, trockene Gesteinswelt am äußeren Rand der habitablen Zone. Ixar III umkreist Ixar in 1,6 AE Abstand und braucht für einen Umlauf 2,1 Jahre.",
+  "klasse": "Planet · Gesteinsplanet",
+  "intro": "Ixar III ist eine gemäßigte Steppen- und Flusswelt mit dichter Atmosphäre und geringer Schwerkraft. Auf weiten Graslandschaften, entlang gigantischer Flussnetze, entstanden die Schwarmarchen: Wesen, deren individuelle Persönlichkeit aus Millionen vernetzter Teilorganismen besteht – und deren Wanderformationen kilometerweit über das Land ziehen.",
   "globusDaten": {
     "planet": "ockerfarbener-wustenplanet-mit-windgeformten-tafelbergen",
-    "klasse": "Gestein",
+    "klasse": "Organisch geprägte Steppenwelt",
     "radius": 4400000
   },
-  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=kyreth-stern&objekt=kyreth-ixar-iii",
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=kyreth-stern",
   "grunddaten": [
     [
       "Archiv-ID",
       "AP-806646DEAC"
     ],
     [
-      "Typ",
-      "Gesteinsplanet"
-    ],
-    [
-      "Sternsystem",
-      "Ixar-System"
-    ],
-    [
-      "Zentralkörper",
-      "Ixar"
-    ],
-    [
-      "Große Halbachse",
-      "1,6 AE"
-    ],
-    [
-      "Umlaufzeit",
-      "2,1 Jahre"
+      "Klasse",
+      "Biologisch belebter Gesteinsplanet · gemäßigte Steppen- und Flusswelt"
     ],
     [
       "Durchmesser",
       "8.800 km"
     ],
     [
+      "Radius",
+      "4.400 km"
+    ],
+    [
       "Masse",
       "0,35 Erdmassen"
     ],
     [
-      "Schwerkraft",
-      "0,73 g"
+      "Dichte",
+      "5,86 g/cm³"
     ],
     [
-      "Gleichgewichtstemperatur",
-      "ca. -89 °C"
+      "Schwerkraft",
+      "0,73 g (7,2 m/s²)"
+    ],
+    [
+      "Mittlere Oberflächentemperatur",
+      "ca. 12 °C"
+    ],
+    [
+      "Ozeane",
+      "ca. 28 % (Randmeere, Binnenmeere, Seen und Flüsse)"
+    ],
+    [
+      "Atmosphäre",
+      "76 % Stickstoff, 14 % Sauerstoff, 5 % Kohlendioxid, 4,7 % Argon, 0,3 % Spurengase"
+    ],
+    [
+      "Atmosphärendruck",
+      "ca. 1,65 bar"
+    ],
+    [
+      "Rotationsperiode",
+      "30 h"
+    ],
+    [
+      "Umlaufzeit",
+      "402 Erdtage"
+    ],
+    [
+      "Abstand zum Stern",
+      "1,03 AE"
+    ],
+    [
+      "Monde",
+      "keine"
+    ],
+    [
+      "Zentralstern",
+      "Ixar, Gelber Zwerg (G9 V)"
+    ],
+    [
+      "Einstrahlung",
+      "0,64-fach der Erde"
+    ],
+    [
+      "Achsneigung",
+      "16°"
+    ],
+    [
+      "Exzentrizität",
+      "0,04"
+    ],
+    [
+      "Fluchtgeschwindigkeit",
+      "8 km/s"
+    ],
+    [
+      "Alter",
+      "ca. 4,6 Mrd. Jahre"
+    ],
+    [
+      "Archiv-ID",
+      "AP-806646DEAC"
+    ],
+    [
+      "Planetare Albedo",
+      "ca. 0,24"
+    ],
+    [
+      "Kontinente",
+      "3 große, zahlreiche kleinere"
+    ],
+    [
+      "Lokales Jahr",
+      "ca. 322 Ortstage"
+    ],
+    [
+      "Fraktionszugehörigkeit",
+      "Noch nicht festgelegt"
+    ],
+    [
+      "Intelligente Spezies",
+      "Schwarmarchen"
     ]
   ],
   "position": [
@@ -60,84 +127,103 @@
     ],
     [
       "Zentralstern",
-      "Ixar",
-      "inhalte/himmelskoerper/sterne/details/ixar/hauptseite/index.html"
+      "Ixar · G9 V, Einzelstern"
     ],
     [
-      "Abstand",
-      "1,6 AE"
+      "Bahnposition",
+      "3. von 5 Planeten"
+    ],
+    [
+      "Entfernung zur Sonne",
+      "18 Lichtjahre"
+    ],
+    [
+      "Nächste Nachbarsysteme",
+      "Thalor-System (16,9 Lj), Iovar-System (17,3 Lj)"
     ]
   ],
   "verknuepfungen": [
     {
-      "icon": "✦",
-      "art": "Sternenkarte",
-      "titel": "Ixar III im Ixar-System",
-      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=kyreth-stern&objekt=kyreth-ixar-iii",
-      "route": null
-    },
-    {
-      "icon": "☀",
-      "art": "Zentralstern",
-      "titel": "Ixar",
-      "href": "inhalte/himmelskoerper/sterne/details/ixar/hauptseite/index.html",
-      "route": null
-    },
-    {
       "icon": "✿",
-      "art": "Heimatwelt der Elektrozoiden",
-      "titel": "Kyreth",
-      "href": "inhalte/himmelskoerper/planeten/details/kyreth/hauptseite/index.html",
+      "art": "Heimische Spezies",
+      "titel": "Schwarmarchen",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Schwarmarchen/hauptseite/Spezies.html",
       "route": null
     },
     {
       "icon": "◈",
       "art": "Spezies-Dossier",
-      "titel": "Elektrozoiden",
-      "href": "inhalte/spezies/Biologische Spezies/Elektrozoiden/hauptseite/Spezies.html",
+      "titel": "Heimatwelt",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Schwarmarchen/Unterseiten/Heimatwelt/heimatwelt.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Politik und Fraktionen",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Schwarmarchen/Unterseiten/Politik/politik.html",
+      "route": null
+    },
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Ixar-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=kyreth-stern",
       "route": null
     }
   ],
   "quellen": [
     {
-      "titel": "Sternenkarte · Ixar-System",
-      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=kyreth-stern&objekt=kyreth-ixar-iii"
+      "titel": "Speziesdossier Schwarmarchen · Heimatwelt",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Schwarmarchen/Unterseiten/Heimatwelt/heimatwelt.html"
     },
     {
-      "titel": "Speziesdossier Elektrozoiden",
-      "href": "inhalte/spezies/Biologische Spezies/Elektrozoiden/hauptseite/Spezies.html"
+      "titel": "Speziesdossier Schwarmarchen · Geschichte",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Schwarmarchen/Unterseiten/Geschichte/geschichte.html"
+    },
+    {
+      "titel": "Speziesdossier Schwarmarchen · Gesellschaft",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Schwarmarchen/Unterseiten/Gesellschaft/gesellschaft.html"
+    },
+    {
+      "titel": "Speziesdossier Schwarmarchen · Politik",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Schwarmarchen/Unterseiten/Politik/politik.html"
+    },
+    {
+      "titel": "Speziesdossier Schwarmarchen · Allgemeines",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Schwarmarchen/Unterseiten/Allgemeines/allgemeines.html"
     }
   ],
   "design": {
     "farben": {
-      "nacht": "#080706",
-      "tiefe": "#130f0d",
-      "akzent": "#c7b3a5",
-      "sand": "#cbb297",
-      "moos": "#a5a782",
-      "ozean": "#849191",
-      "glas": "rgba(8, 12, 18, .76)",
-      "glas-hell": "rgba(16, 22, 32, .82)",
-      "linie": "rgba(255, 255, 255, .12)",
-      "linie-hell": "rgba(255, 255, 255, .3)",
-      "text": "#eef2f6",
-      "leise": "#a8b0bc",
-      "aporia-page-tint": "#4c3e35"
+      "nacht": "#060906",
+      "tiefe": "#0e150d",
+      "akzent": "#c8d26a",
+      "sand": "#d8c98a",
+      "moos": "#8cbf5e",
+      "ozean": "#3f6fa6",
+      "glas": "rgba(14, 21, 13, .8)",
+      "glas-hell": "rgba(24, 34, 22, .86)",
+      "linie": "rgba(200, 210, 106, .16)",
+      "linie-hell": "rgba(200, 220, 140, .36)",
+      "text": "#f0f3e8",
+      "leise": "#adb69c",
+      "aporia-page-tint": "#4a5a1f"
     }
   },
   "kapitel": {
     "Allgemeines": {
       "gruppe": "Weitere",
       "icon": "▤",
-      "intro": "Ixar III auf einen Blick.",
+      "intro": "Ixar III auf einen Blick: Steppen, Flüsse und Schwärme.",
       "abschnitte": [
         {
           "titel": "Kurzprofil",
           "bild": true,
-          "bildtext": "Ixar III",
+          "bildtext": "Ixar III – Welt der Schwärme",
           "text": [
-            "Ixar III ist eine kalte, trockene Gesteinswelt am äußeren Rand der habitablen Zone.",
-            "Ixar III umkreist Ixar in 1,6 AE Abstand und braucht für einen Umlauf 2,1 Jahre."
+            "Ixar III ist der dritte Planet des Ixar-Systems und umkreist den gelben Zwerg Ixar in 1,03 AE Abstand – innerhalb der habitablen Zone. Er erhält rund 64 % der irdischen Einstrahlung; eine dichte Atmosphäre von 1,65 bar mit erhöhtem Kohlendioxidanteil hält die mittlere Temperatur bei etwa 12 °C.",
+            "Mit 8.800 Kilometern Durchmesser und 0,35 Erdmassen ist der Planet klein, aber metallreich und dicht; die Schwerkraft beträgt 0,73 g. 72 % der Oberfläche sind Land – drei große Kontinente mit Steppen, offenen Niederwäldern, Flussdeltas und Feuchtgebieten. Geringe Gravitation und dichte Luft begünstigen fliegende Teilorganismen."
           ]
         },
         {
@@ -145,55 +231,125 @@
           "daten": [
             [
               "Typ",
-              "Gesteinsplanet"
+              "Biologisch belebter Gesteinsplanet · gemäßigte Steppen- und Flusswelt"
             ],
             [
-              "Sternsystem",
-              "Ixar-System"
-            ],
-            [
-              "Zentralkörper",
-              "Ixar"
-            ],
-            [
-              "Große Halbachse",
-              "1,6 AE"
-            ],
-            [
-              "Umlaufzeit",
-              "2,1 Jahre"
-            ],
-            [
-              "Durchmesser",
-              "8.800 km"
-            ],
-            [
-              "Masse",
-              "0,35 Erdmassen"
+              "Zentralstern",
+              "Ixar (Gelber Zwerg (G9 V))"
             ],
             [
               "Schwerkraft",
               "0,73 g"
             ],
             [
-              "Gleichgewichtstemperatur",
-              "ca. -89 °C"
+              "Durchmesser",
+              "8.800 km"
+            ],
+            [
+              "Mittlere Temperatur",
+              "ca. 12 °C"
+            ],
+            [
+              "Atmosphäre",
+              "Dicht, CO₂-reich, ca. 1,65 bar – für Menschen nicht atembar"
+            ],
+            [
+              "Wasser",
+              "ca. 28 % (Randmeere, Binnenmeere, Seen und Flüsse)"
+            ],
+            [
+              "Intelligente Spezies",
+              "Schwarmarchen"
             ]
           ]
         },
         {
-          "titel": "Im System von Kyreth",
-          "text": [
-            "Das Ixar-System ist die Heimat der Elektrozoiden: Ihr Planet Kyreth umkreist Ixar."
-          ],
-          "verweise": [
+          "titel": "Ixar III im Vergleich zur Erde",
+          "vergleich": {
+            "mit": "Erde",
+            "werte": [
+              [
+                "Durchmesser",
+                8800,
+                12742,
+                "km"
+              ],
+              [
+                "Schwerkraft",
+                0.73,
+                1,
+                "g"
+              ],
+              [
+                "Tageslänge",
+                30,
+                24,
+                "h"
+              ],
+              [
+                "Luftdruck (Mittel)",
+                1.65,
+                1,
+                "bar"
+              ],
+              [
+                "Mittlere Temperatur",
+                12,
+                15,
+                "°C"
+              ],
+              [
+                "Landfläche",
+                72,
+                29,
+                "%"
+              ]
+            ]
+          }
+        },
+        {
+          "titel": "Hauptmerkmale",
+          "karten": [
+            {
+              "titel": "Steppen und Flüsse",
+              "text": "Weite Graslandschaften, Deltas und Feuchtgebiete."
+            },
+            {
+              "titel": "Dichte Luft",
+              "text": "1,65 bar – ideale Bedingungen für kleine Flugorganismen."
+            },
+            {
+              "titel": "Schwarmbewusstsein",
+              "text": "Persönlichkeiten aus Millionen Teilorganismen."
+            },
+            {
+              "titel": "Lichtermeere",
+              "text": "Nächtliche Leuchtmuster der Schwarmarchen."
+            }
+          ]
+        },
+        {
+          "titel": "Einordnung",
+          "daten": [
             [
-              "Kyreth",
-              "inhalte/himmelskoerper/planeten/details/kyreth/hauptseite/index.html"
+              "Sternenkarten-ID",
+              "kyreth-ixar-iii"
             ],
             [
-              "Speziesdossier Elektrozoiden",
-              "inhalte/spezies/Biologische Spezies/Elektrozoiden/hauptseite/Spezies.html"
+              "Biologische Entwicklung",
+              "Natürlich"
+            ],
+            [
+              "Zivilisationsstatus",
+              "Technologisch entwickelt"
+            ],
+            [
+              "Monde und Ringe",
+              "Keine"
+            ],
+            [
+              "Interplanetarer Nachbar",
+              "Elektrozoiden auf Kyreth"
             ]
           ]
         }
@@ -202,84 +358,155 @@
     "Astronomie": {
       "gruppe": "Wissenschaft",
       "icon": "✧",
-      "intro": "Ixar III im Ixar-System.",
+      "intro": "Der dritte Planet um den gelben Zwerg Ixar.",
       "abschnitte": [
         {
-          "titel": "Bahn",
+          "titel": "Bahn und Position",
+          "text": [
+            "Ixar III ist der 3. von 5 Planeten im Ixar-System. Er umkreist Ixar in 1,03 AE Abstand – innerhalb der habitablen Zone (bei Ixar zwischen 0,79 und 1,37 AE). Er erhält 0,64-mal so viel Sternlicht wie die Erde.",
+            "Ohne Atmosphäre läge seine Gleichgewichtstemperatur bei rund -40 °C. Die dichte, kohlendioxidreiche Atmosphäre erzeugt einen Treibhauseffekt von rund 52 K und gleicht die Tagesschwankungen aus."
+          ],
           "daten": [
             [
-              "Zentralkörper",
-              "Ixar"
+              "Sternsystem",
+              "Ixar-System"
+            ],
+            [
+              "Bahnposition",
+              "3. von 5 Planeten"
             ],
             [
               "Große Halbachse",
-              "1,6 AE (239,4 Mio. km)"
+              "1,03 AE (ca. 154,1 Mio. km)"
             ],
             [
               "Exzentrizität",
               "0,04"
             ],
             [
-              "Bahnneigung",
-              "1,5°"
+              "Umlaufzeit",
+              "402,5 Erdtage"
             ],
             [
-              "Umlaufzeit",
-              "2,1 Jahre"
+              "Ortsjahr",
+              "ca. 322 Ortstage"
             ],
             [
               "Einstrahlung",
-              "0,266-fach der Erde"
+              "ca. 0,64-fach der Erde"
+            ],
+            [
+              "Habitable Zone von Ixar",
+              "0,79–1,37 AE"
             ]
           ]
         },
         {
-          "titel": "Am Himmel von Ixar III",
+          "titel": "Zentralstern",
           "text": [
-            "Ixar erscheint von hier aus etwa 0,3° groß (die Sonne von der Erde: 0,53°)."
-          ]
-        },
-        {
-          "titel": "Körper des Systems",
-          "zeitleiste": [
+            "Ixar ist ein ruhiger gelber Zwerg der Spektralklasse G9 V mit 90 % der Sonnenmasse und 68 % ihrer Leuchtkraft – Zentralstern von Kyreth, der Heimatwelt der Elektrozoiden."
+          ],
+          "daten": [
             [
-              "Ixar · Stern",
+              "Name",
+              "Ixar"
+            ],
+            [
+              "Typ",
               "Gelber Zwerg (G9 V)"
             ],
             [
-              "Ixar I · 0,38 AE",
-              "Gesteinsplanet"
+              "Masse",
+              "0,9 Sonnenmassen"
             ],
             [
-              "Kyreth · 0,83 AE",
-              "Gesteinsplanet"
+              "Radius",
+              "0,92 Sonnenradien"
             ],
             [
-              "Ixar III · 1,6 AE · dieses Dossier",
-              "Gesteinsplanet"
+              "Leuchtkraft",
+              "0,68 Sonnenleuchtkräfte"
             ],
             [
-              "Ixar IV · 5,6 AE",
-              "Gasriese"
+              "Oberflächentemperatur",
+              "ca. 5.400 K"
             ],
             [
-              "Ixar V · 14 AE",
-              "Eisriese"
+              "Alter",
+              "ca. 4,6 Mrd. Jahre"
             ],
             [
-              "Glimmergürtel · 2,4–3,2 AE",
-              "Asteroidengürtel"
-            ],
-            [
-              "Äußeres Kometengebiet · 38–52 AE",
-              "Kometengebiet"
+              "Begleitsterne",
+              "keine (Einzelstern)"
             ]
           ],
           "verweise": [
             [
               "Ixar",
               "inhalte/himmelskoerper/sterne/details/ixar/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Rotation und Achse",
+          "daten": [
+            [
+              "Rotationsperiode",
+              "30 h"
             ],
+            [
+              "Achsneigung",
+              "16°"
+            ],
+            [
+              "Scheinbare Sterngröße",
+              "ca. 0,47° (Sonne von der Erde: 0,53°)"
+            ],
+            [
+              "Jahreszeiten",
+              "Moderat, durch Atmosphäre und Wasserkreisläufe abgeschwächt"
+            ]
+          ]
+        },
+        {
+          "titel": "Monde",
+          "text": [
+            "Ixar III besitzt keine Monde."
+          ]
+        },
+        {
+          "titel": "Planeten des Systems",
+          "zeitleiste": [
+            [
+              "Ixar I · 0,38 AE",
+              "Ixar I ist ein heißer, trockener Gesteinsplanet mit dünner Atmosphäre."
+            ],
+            [
+              "Kyreth · 0,83 AE",
+              "Kyreth ist die Heimatwelt der Elektrozoiden: eine feuchtwarme Landwelt mit mineralisch vielfältigen Böden, ausgedehnter Vegetation und ungewöhnlich gewitterreichem Wetter."
+            ],
+            [
+              "Ixar III · 1,03 AE",
+              "Ixar III ist eine gemäßigte Steppen- und Flusswelt mit dichter Atmosphäre, goldgrünen Kontinenten und weit verzweigten Flussnetzen – die Heimat der Schwarmarchen, deren Persönlichkeit aus Millionen Teilorganismen besteht."
+            ],
+            [
+              "Glimmergürtel · 2,4–3,2 AE",
+              "Der Glimmergürtel zwischen 2,4 und 3,15 AE besteht aus silikatischen und metallreichen Gesteinsbrocken."
+            ],
+            [
+              "Ixar IV · 5,6 AE",
+              "Ixar IV ist ein großer Gasriese mit kräftigen Wolkenbändern und einer starken Magnetosphäre."
+            ],
+            [
+              "Ixar V · 14 AE",
+              "Ixar V ist ein ferner, blassblauer Eisriese."
+            ],
+            [
+              "Kaelaigan-Kometenwolke · 38–52 AE",
+              "Ein ferner Gürtel aus Eiskörpern zwischen 38 und 52 AE."
+            ]
+          ],
+          "verweise": [
             [
               "Ixar I",
               "inhalte/himmelskoerper/planeten/details/ixar-i/hauptseite/index.html"
@@ -289,13 +516,71 @@
               "inhalte/himmelskoerper/planeten/details/kyreth/hauptseite/index.html"
             ],
             [
+              "Glimmergürtel",
+              "inhalte/himmelskoerper/sternensysteme/details/glimmergurtel/hauptseite/index.html"
+            ],
+            [
               "Ixar IV",
               "inhalte/himmelskoerper/planeten/details/ixar-iv/hauptseite/index.html"
             ],
             [
               "Ixar V",
               "inhalte/himmelskoerper/planeten/details/ixar-v/hauptseite/index.html"
+            ],
+            [
+              "Kaelaigan-Kometenwolke",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=kyreth-stern&objekt=kyreth-kometengebiet"
             ]
+          ]
+        },
+        {
+          "titel": "Nachbarschaft und Anomalien",
+          "karten": [
+            {
+              "titel": "Ladungsschweif",
+              "text": "Ein Komet mit ungewöhnlich hellem, verzweigtem Ionenschweif, der alle 49 Jahre das innere System erreicht. Elektrozoiden registrieren bei seiner Wiederkehr verstärkte Störungen der atmosphärischen Felder."
+            },
+            {
+              "titel": "Nachbarsysteme",
+              "text": "Thalor-System (16,9 Lj), Iovar-System (17,3 Lj), Sonnensystem (18 Lj) – alle weit außerhalb der gravitativen Einflusszone von Ixar (rund 3,5 Lichtjahre)."
+            }
+          ],
+          "verweise": [
+            [
+              "Ladungsschweif",
+              "inhalte/himmelskoerper/kometen/details/ladungsschweif/hauptseite/index.html"
+            ],
+            [
+              "Ixar-System in der Sternenkarte",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=kyreth-stern"
+            ]
+          ]
+        },
+        {
+          "titel": "Bahndaten",
+          "daten": [
+            [
+              "Mittlerer Sternabstand",
+              "ca. 154 Mio. km"
+            ],
+            [
+              "Bahnneigung",
+              "1,5°"
+            ],
+            [
+              "Rotation",
+              "Nicht gebunden"
+            ],
+            [
+              "Bisherige Umlaufbahn",
+              "1,60 AE (auf 1,03 AE verlegt)"
+            ]
+          ]
+        },
+        {
+          "titel": "Am Himmel von Ixar III",
+          "text": [
+            "Ixar erscheint etwas kleiner und wärmer getönt als die Sonne, oft gedämpft durch silbrige Wolkenfelder. Nachts leuchtet Kyreth, die Welt der Elektrozoiden, als hellster Wandelstern – und über den Ebenen die Lichtermeere der Schwarmarchen."
           ]
         }
       ]
@@ -322,22 +607,31 @@
             ],
             [
               "Oberflächenschwerkraft",
-              "7,2 m/s² (0,734 g)"
+              "7,2 m/s² (0,73 g)"
             ],
             [
               "Fluchtgeschwindigkeit",
-              "7,96 km/s"
+              "ca. 8 km/s"
+            ],
+            [
+              "Mittlere Dichte",
+              "ca. 5,85 g/cm³ (metallreich)"
+            ],
+            [
+              "Gesamtoberfläche",
+              "ca. 243 Mio. km²"
+            ],
+            [
+              "Magnetfeld",
+              "Vorhanden, ca. 20–40 µT"
             ]
-          ],
+          ]
+        },
+        {
+          "titel": "Physikalische Werte im Vergleich",
           "vergleich": {
             "mit": "Erde",
             "werte": [
-              [
-                "Durchmesser",
-                8800,
-                12742,
-                "km"
-              ],
               [
                 "Masse",
                 0.35,
@@ -345,13 +639,31 @@
                 "Erdmassen"
               ],
               [
-                "Schwerkraft",
-                0.73,
+                "Dichte",
+                5.86,
+                5.51,
+                "g/cm³"
+              ],
+              [
+                "Fluchtgeschwindigkeit",
+                8,
+                11.2,
+                "km/s"
+              ],
+              [
+                "Magnetfeld",
+                0.6,
                 1,
-                "g"
+                "× Erde"
               ]
             ]
           }
+        },
+        {
+          "titel": "Klein und dicht",
+          "text": [
+            "Der metallreiche innere Aufbau erklärt die hohe mittlere Dichte des kleinen Planeten. Die Oberflächengravitation beträgt rund 7,2 m/s², die Fluchtgeschwindigkeit etwa 8 km/s. Die geringe Gravitation senkt den Energieaufwand vieler Bewegungsformen und begünstigt fliegende Teilorganismen."
+          ]
         }
       ]
     },
@@ -361,19 +673,26 @@
       "intro": "Planetare Struktur von Ixar III.",
       "abschnitte": [
         {
-          "titel": "Schalenbau",
+          "titel": "Aufbau",
+          "text": [
+            "Ixar III ist differenziert aufgebaut, mit langsamer Plattentektonik, regionaler geothermischer Aktivität und vulkanischen Zonen."
+          ],
           "schichten": [
             [
               "Kruste",
-              "Silikatgestein"
+              "Mineralreich kontinental und ozeanisch, Sedimentschichten, Grundwasser"
             ],
             [
               "Mantel",
-              "Dichteres Silikatgestein"
+              "Silikatisch"
             ],
             [
-              "Kern",
-              "Eisen und Nickel"
+              "Äußerer Kern",
+              "Teilweise flüssig"
+            ],
+            [
+              "Innerer Kern",
+              "Fest, metallisch"
             ]
           ]
         }
@@ -382,12 +701,72 @@
     "Geografie": {
       "gruppe": "Natur",
       "icon": "△",
-      "intro": "Geografie von Ixar III.",
+      "intro": "Drei Kontinente aus Steppen und Flusstälern.",
       "abschnitte": [
         {
-          "titel": "Oberfläche",
-          "text": [
-            "Die Oberfläche von Ixar III ist kalt."
+          "titel": "Oberflächenverteilung",
+          "balken": {
+            "werte": [
+              [
+                "Land",
+                72
+              ],
+              [
+                "Wasser",
+                28
+              ]
+            ]
+          },
+          "daten": [
+            [
+              "Landfläche",
+              "ca. 175 Mio. km²"
+            ],
+            [
+              "Wasserfläche",
+              "ca. 68 Mio. km²"
+            ],
+            [
+              "Höhenlagen",
+              "Überwiegend niedrig bis mittel"
+            ]
+          ]
+        },
+        {
+          "titel": "Landschaften",
+          "liste": [
+            "Großflächige Steppen und Graslandschaften",
+            "Offene Niederwälder",
+            "Flussdeltas und saisonale Überschwemmungsebenen",
+            "Feuchtgebiete und vegetationsreiche Flusstäler",
+            "Flache Hochplateaus und Felsformationen",
+            "Kühle Hochländer und polare Kältezonen",
+            "Große Binnenmeere"
+          ]
+        },
+        {
+          "titel": "Besonderheiten",
+          "karten": [
+            {
+              "titel": "Gigantische Wanderformationen",
+              "text": "Kilometerlange Bewegungsformationen aus Millionen Teilorganismen."
+            },
+            {
+              "titel": "Biologische Lichtermeere",
+              "text": "Nächtliche Leuchtmuster, aus großer Entfernung sichtbar."
+            },
+            {
+              "titel": "Lebendige Landschaftsveränderungen",
+              "text": "Schwärme verändern zeitweise Farbe und Struktur ganzer Vegetationsflächen – die Landschaft selbst ist nicht intelligent."
+            },
+            {
+              "titel": "Gigantische Flusskorridore",
+              "text": "Verbindungen zwischen Klimaregionen für Versorgung und Wanderung."
+            },
+            {
+              "titel": "Biologische Schutzlandschaften",
+              "text": "Senken, Felslabyrinthe und Vegetation als Rückzugsorte bei Unwettern."
+            }
           ]
         }
       ]
@@ -398,26 +777,62 @@
       "intro": "Atmosphäre von Ixar III.",
       "abschnitte": [
         {
-          "titel": "Gashülle",
+          "titel": "Zusammensetzung",
           "text": [
-            "Ixar III hält eine dünne, kalte Gashülle fest."
+            "Die Atmosphäre ist vergleichsweise dicht: rund 1,65 bar mit 76 % Stickstoff, 14 % Sauerstoff, 5 % Kohlendioxid und 4,7 % Argon (trockene Luft). Der Sauerstoffpartialdruck liegt in Bodennähe bei etwa 0,23 bar. Die einheimischen Lebensformen sind an den hohen Kohlendioxidanteil angepasst; für Menschen ist die Luft deshalb nicht direkt atembar."
           ],
           "balken": {
             "werte": [
               [
-                "Kohlendioxid",
-                62
+                "Stickstoff",
+                76
               ],
               [
-                "Stickstoff",
-                33
+                "Sauerstoff",
+                14
+              ],
+              [
+                "Kohlendioxid",
+                5
               ],
               [
                 "Argon",
-                5
+                4.7
+              ],
+              [
+                "Spurengase",
+                0.3
               ]
             ]
           }
+        },
+        {
+          "titel": "Druck",
+          "daten": [
+            [
+              "Mittlerer Oberflächendruck",
+              "ca. 1,65 bar"
+            ]
+          ]
+        },
+        {
+          "titel": "Eigenschaften",
+          "liste": [
+            "Erhöhter Treibhauseffekt und hohe Wärmespeicherung",
+            "Ausgeglichene Tagestemperaturen",
+            "Regional hohe Luftfeuchtigkeit",
+            "Gute aerodynamische Bedingungen für kleine Flugorganismen",
+            "Ausgedehnte bodennahe Luftströmungen"
+          ]
+        },
+        {
+          "titel": "Wolkenschichten",
+          "liste": [
+            "Bodennaher Nebel und Nebelbänke in Flussniederungen",
+            "Flache Schichtwolken über Flussregionen",
+            "Mittelhohe Wolkenfelder und hohe Eiswolken",
+            "Saisonale Regen- und konvektive Wolken"
+          ]
         }
       ]
     },
@@ -427,9 +842,60 @@
       "intro": "Klima von Ixar III.",
       "abschnitte": [
         {
-          "titel": "Temperatur",
+          "titel": "Temperaturzonen",
           "text": [
-            "Bei 1,6 AE Abstand zu Ixar liegt die Gleichgewichtstemperatur von Ixar III bei rund -89 °C – kalt."
+            "Ixar III ist eine gemäßigte Landwelt mit ausgeprägten Feuchtigkeitszonen. Die große Landfläche sorgt trotz dichter Atmosphäre für regionale Temperatur- und Niederschlagsunterschiede; Flusssysteme tragen Wasser in sonst trockene Regionen. Die Temperaturen sind Zielwerte für die weitere Planetensimulation."
+          ],
+          "skala": {
+            "einheit": "°C",
+            "min": -40,
+            "max": 35,
+            "bereiche": [
+              [
+                "Polare Regionen",
+                -40,
+                -20
+              ],
+              [
+                "Kühle Hochländer",
+                -10,
+                12
+              ],
+              [
+                "Gemäßigte Hauptlebensräume",
+                10,
+                25
+              ],
+              [
+                "Warme Niederungen",
+                20,
+                32
+              ]
+            ]
+          }
+        },
+        {
+          "titel": "Wetter",
+          "karten": [
+            {
+              "titel": "Regenfronten und Gewitter",
+              "text": "Lang anhaltend und regional."
+            },
+            {
+              "titel": "Feuchtigkeitsstürme",
+              "text": "Können Teilorganismen trennen und Kommunikationsketten unterbrechen."
+            },
+            {
+              "titel": "Nebel und Wind",
+              "text": "Dichte Bodennebel, starke saisonale Winde."
+            },
+            {
+              "titel": "Extreme",
+              "text": "Staubstürme, Überschwemmungen, seltene Kälteeinbrüche."
+            }
+          ],
+          "text": [
+            "Gegen starke Stürme entwickelten die Schwarmarchen natürliche Schutzmechanismen und später technische Rückzugsanlagen."
           ]
         }
       ]
@@ -440,9 +906,16 @@
       "intro": "Gewässer von Ixar III.",
       "abschnitte": [
         {
-          "titel": "Wasser",
+          "titel": "Gewässer",
+          "liste": [
+            "Flache Randmeere und große Binnenmeere",
+            "Süßwasserseen und langgestreckte Flussnetze",
+            "Saisonale Feuchtgebiete und Küstendeltas",
+            "Unterirdische Reservoire, Mineralquellen, geothermische Seen",
+            "Polare Eisspeicher"
+          ],
           "text": [
-            "Wasser gibt es höchstens als Eis in Kratern und im Untergrund."
+            "Die Flüsse bilden weitreichende biologische Korridore; viele Siedlungen liegen an dauerhaft verfügbaren Wasserquellen."
           ]
         }
       ]
@@ -453,9 +926,16 @@
       "intro": "Geologie von Ixar III.",
       "abschnitte": [
         {
-          "titel": "Geologie",
+          "titel": "Gesteine",
+          "liste": [
+            "Eisenreiche Formationen und basaltische Hochländer",
+            "Silikatische Sedimente und kalkähnliche Ablagerungen",
+            "Mineralreiche Flusstäler und große Sedimentbecken",
+            "Regionale Vulkanfelder und geothermische Bruchzonen",
+            "Unterirdische Höhlen und Erosionslandschaften"
+          ],
           "text": [
-            "Ixar III ist groß genug, um im Inneren noch Wärme zu speichern; Spuren alter vulkanischer Tätigkeit sind wahrscheinlich."
+            "Erosion und Ablagerung schufen nährstoffreiche Ebenen – entscheidend für die Versorgung gigantischer Schwarmindividuen."
           ]
         }
       ]
@@ -463,12 +943,52 @@
     "Biosphäre": {
       "gruppe": "Natur",
       "icon": "❧",
-      "intro": "Biosphäre von Ixar III.",
+      "intro": "Eine Welt der Zusammenarbeit kleiner Organismen.",
       "abschnitte": [
         {
-          "titel": "Leben",
+          "titel": "Biosphäre",
           "text": [
-            "Auf Ixar III ist kein Leben verzeichnet."
+            "Die Biosphäre entwickelte sich unabhängig von Kyreth. Ihr auffälligstes Merkmal ist die Evolution biologischer Zusammenarbeit: Neben Einzelorganismen gibt es vielfältige nicht intelligente Kolonial- und Schwarmlebensformen. Die Schwarmarchen sind ihre bislang komplexeste Form – nicht jede Schwarmstruktur besitzt Bewusstsein."
+          ]
+        },
+        {
+          "titel": "Flora",
+          "karten": [
+            {
+              "titel": "Bodenvegetation",
+              "text": "Flexible, regenerationsstarke Halme, an Beweidung angepasst."
+            },
+            {
+              "titel": "Membranpflanzen",
+              "text": "Dünne, teils transparente Blätter für diffuses Licht."
+            },
+            {
+              "titel": "Kissenvegetation",
+              "text": "Wasserspeichernde Polster in trockenen Steppen."
+            },
+            {
+              "titel": "Flussfächerpflanzen",
+              "text": "Stabilisieren feuchte Sedimentböden."
+            },
+            {
+              "titel": "Leuchtvegetation",
+              "text": "Biolumineszenz für Bestäubung, Symbiose und Abwehr."
+            },
+            {
+              "titel": "Niedrige Wälder",
+              "text": "Offene Baumlandschaften mit Raum für Schwarmbewegungen."
+            }
+          ]
+        },
+        {
+          "titel": "Fauna",
+          "liste": [
+            "Kleine, nicht intelligente Schwarmtiere",
+            "Wandernde Großflächenweidetiere",
+            "Gleit- und Fluglebewesen mit großen Flugmembranen",
+            "Bodenjäger, teils auf Schwarmorganismen spezialisiert",
+            "Filterorganismen und grabende Lebewesen",
+            "Spezialisierte Parasiten als Selektionsfaktor"
           ]
         }
       ]
@@ -476,27 +996,32 @@
     "Spezies": {
       "gruppe": "Zivilisation",
       "icon": "✿",
-      "intro": "Spezies von Ixar III.",
+      "intro": "Die Schwarmarchen – Persönlichkeiten aus Millionen.",
       "abschnitte": [
         {
-          "titel": "Bewohner",
+          "titel": "Entstehung",
           "text": [
-            "Ixar III ist keine Heimat einer intelligenten Spezies."
+            "Die Vorfahren der Schwarmarchen entstanden vermutlich in den Übergangszonen zwischen Flussniederungen und offenen Vegetationsflächen. Reichlich Nahrung, geringe Gravitation, dichte Luft, saisonale Überschwemmungen, Fressfeinde und die Notwendigkeit koordinierter Wanderungen begünstigten spezialisierte Teilorganismen – deren zunehmende Vernetzung schließlich komplexe individuelle Persönlichkeiten hervorbrachte."
           ]
         },
         {
-          "titel": "Im System von Kyreth",
-          "text": [
-            "Das Ixar-System ist die Heimat der Elektrozoiden: Ihr Planet Kyreth umkreist Ixar."
-          ],
-          "verweise": [
+          "titel": "Steckbrief",
+          "daten": [
             [
-              "Kyreth",
-              "inhalte/himmelskoerper/planeten/details/kyreth/hauptseite/index.html"
+              "Körperbau",
+              "Verteilter biologischer Schwarm"
             ],
             [
-              "Speziesdossier Elektrozoiden",
-              "inhalte/spezies/Biologische Spezies/Elektrozoiden/hauptseite/Spezies.html"
+              "Bewusstsein",
+              "Individuelle Persönlichkeit aus Millionen Teilorganismen"
+            ],
+            [
+              "Lebensdauer",
+              "400–1.200 Jahre"
+            ],
+            [
+              "Zivilisation",
+              "Technologisch entwickelt"
             ]
           ]
         }
@@ -508,25 +1033,44 @@
       "intro": "Zivilisation von Ixar III.",
       "abschnitte": [
         {
-          "titel": "Siedlungen",
+          "titel": "Dezentrale Städte",
           "text": [
-            "Für Ixar III sind keine dauerhaften Siedlungen verzeichnet."
+            "Die Städte unterscheiden sich stark von humanoiden Siedlungen: offene Bewegungslandschaften, mehrstöckige Schwarmplattformen, überdachte Korridore, Regenerationsanlagen und Kommunikationsmasten. Viele Siedlungen gehen unmittelbar in die Landschaft über und besitzen keine kompakten Zentren."
           ]
         },
         {
-          "titel": "Im System von Kyreth",
-          "text": [
-            "Das Ixar-System ist die Heimat der Elektrozoiden: Ihr Planet Kyreth umkreist Ixar."
-          ],
-          "verweise": [
-            [
-              "Kyreth",
-              "inhalte/himmelskoerper/planeten/details/kyreth/hauptseite/index.html"
-            ],
-            [
-              "Speziesdossier Elektrozoiden",
-              "inhalte/spezies/Biologische Spezies/Elektrozoiden/hauptseite/Spezies.html"
-            ]
+          "titel": "Siedlungsarten",
+          "karten": [
+            {
+              "titel": "Flussstädte",
+              "text": "Wasser, Landwirtschaft, Transport, biologische Entwicklung."
+            },
+            {
+              "titel": "Ebenenmetropolen",
+              "text": "Modulare Wirtschafts- und Forschungszentren."
+            },
+            {
+              "titel": "Wanderstationen",
+              "text": "Versorgung entlang großer Bewegungsrouten."
+            },
+            {
+              "titel": "Hochlandstationen",
+              "text": "Forschung und Beobachtung in kühlen Regionen."
+            },
+            {
+              "titel": "Regenerationssiedlungen",
+              "text": "Medizinische Wiederherstellung von Schwarmstrukturen."
+            }
+          ]
+        },
+        {
+          "titel": "Landwirtschaft und Energie",
+          "liste": [
+            "Großflächiger Anbau energiereicher und schnell regenerierender Pflanzen",
+            "Nährstoffkonzentrate und Zucht kleiner Nahrungsorganismen",
+            "Dezentrale Wasserverteilung und automatisierte Ernte",
+            "Solar-, Wind-, Wasser-, Erdwärme- und Bioenergie",
+            "Viele verbundene Versorgungsstationen statt weniger Großanlagen"
           ]
         }
       ]
@@ -537,9 +1081,34 @@
       "intro": "Geschichte von Ixar III.",
       "abschnitte": [
         {
-          "titel": "Entstehung",
+          "titel": "Zeitleiste",
+          "zeitleiste": [
+            [
+              "Frühe Biosphäre",
+              "Zahlreiche kleine bewegliche Lebensformen"
+            ],
+            [
+              "Gemeinschaften",
+              "Einfache biologische Gemeinschaften werden zu spezialisierten Schwärmen"
+            ],
+            [
+              "Persönlichkeit",
+              "Beginn der kulturellen Geschichte der Schwarmarchen"
+            ],
+            [
+              "Zivilisation",
+              "Landwirtschaft, Siedlungen, Kommunikation, Industrie"
+            ],
+            [
+              "Gegenwart",
+              "Raumfahrttechnologie"
+            ]
+          ]
+        },
+        {
+          "titel": "Hinweis",
           "text": [
-            "Ixar III entstand zusammen mit dem Ixar-System vor rund 4,6 Milliarden Jahren."
+            "Konkrete Jahreszahlen und Persönlichkeiten werden separat ausgearbeitet."
           ]
         }
       ]
@@ -550,9 +1119,24 @@
       "intro": "Fraktionen von Ixar III.",
       "abschnitte": [
         {
-          "titel": "Ansprüche",
-          "text": [
-            "Für Ixar III sind keine Fraktionsansprüche verzeichnet."
+          "titel": "Politik",
+          "daten": [
+            [
+              "Organisation",
+              "Eigenständige Gemeinschaften, regionale Verwaltungen"
+            ],
+            [
+              "Überregionale Vertretung",
+              "Vorhanden"
+            ],
+            [
+              "Fraktionszugehörigkeit",
+              "Noch nicht festgelegt"
+            ],
+            [
+              "Nachbarn",
+              "Elektrozoiden auf Kyreth"
+            ]
           ]
         }
       ]
@@ -564,9 +1148,19 @@
       "abschnitte": [
         {
           "titel": "Rohstoffe",
-          "liste": [
-            "Silikatgestein",
-            "Metallerze"
+          "karten": [
+            {
+              "titel": "Metalle",
+              "text": "Eisen, Nickel, Kupfer, Aluminium-, Titan-, Magnesium- und Manganminerale."
+            },
+            {
+              "titel": "Nichtmetalle",
+              "text": "Silikate, Quarz, Kalk- und Tonminerale, Salze, Phosphate, Schwefel."
+            },
+            {
+              "titel": "Biologisch",
+              "text": "Pflanzenfasern, Harze, Farbstoffe, Energiespeicher, Schutzmaterialien."
+            }
           ]
         }
       ]
@@ -577,22 +1171,18 @@
       "intro": "Erforschung von Ixar III.",
       "abschnitte": [
         {
-          "titel": "Offene Fragen",
+          "titel": "Forschungsfelder",
           "liste": [
-            "Wie ist der innere Aufbau beschaffen?",
-            "Gab es früher eine dichtere Atmosphäre?"
-          ]
-        },
-        {
-          "titel": "In der Sternenkarte",
-          "text": [
-            "Ixar III ist mit allen Bahndaten im Ixar-System der Sternenkarte eingetragen."
+            "Verteiltes biologisches Bewusstsein",
+            "Evolution komplexer Schwarmlebewesen",
+            "Biologische Kommunikation und dezentrale neuronale Systeme",
+            "Regenerative Medizin",
+            "Flugbiologie unter geringer Gravitation",
+            "Ökosystemmanagement und Landwirtschaft",
+            "Roboterkoordination und dezentrale Fertigung"
           ],
-          "verweise": [
-            [
-              "In der Sternenkarte zeigen",
-              "Menüs/Sternenkarte/Sternenkarte.html?system=kyreth-stern&objekt=kyreth-ixar-iii"
-            ]
+          "text": [
+            "Ixar III ist ein bedeutendes Forschungsgebiet für Bewusstsein ohne zusammenhängendes Zentralnervensystem."
           ]
         }
       ]
@@ -603,9 +1193,48 @@
       "intro": "Besonderheiten von Ixar III.",
       "abschnitte": [
         {
-          "titel": "Besonderheiten",
+          "titel": "Rekorde",
+          "daten": [
+            [
+              "Größte Formationen",
+              "Kilometerlange Wanderformationen aus Millionen Teilorganismen"
+            ],
+            [
+              "Lebensdauer der Schwarmarchen",
+              "400–1.200 Jahre"
+            ],
+            [
+              "Nächtliches Schauspiel",
+              "Biologische Lichtermeere"
+            ]
+          ]
+        },
+        {
+          "titel": "Im Spiel",
           "liste": [
-            "Ixar III ist eine kalte, trockene Gesteinswelt am äußeren Rand der habitablen Zone."
+            "Wandernden Schwarmarchen begegnen",
+            "Dezentrale Städte besuchen",
+            "Beschädigte Schwarmindividuen unterstützen und Kommunikationsketten wiederherstellen",
+            "Medizinische und landwirtschaftliche Missionen",
+            "Extreme Wetterbedingungen untersuchen",
+            "Nächtliche Lichtermeere beobachten"
+          ]
+        },
+        {
+          "titel": "Aussehen",
+          "liste": [
+            "Goldgrüne und olivfarbene Kontinente, dunkelblaue Meere",
+            "Verzweigte Flussnetze und silbrige Wolkenfelder",
+            "Weiße Polarkappen",
+            "Sanfte Hügel, Bodennebel und bewegliche Schwarmwolken"
+          ]
+        },
+        {
+          "titel": "Hinweise für Besucher",
+          "liste": [
+            "Atemschutz erforderlich (hoher CO₂-Anteil)",
+            "Sturmwarnungen beachten",
+            "Schwarmformationen nicht durchqueren"
           ]
         }
       ]
@@ -616,9 +1245,9 @@
       "intro": "Medienarchiv von Ixar III.",
       "abschnitte": [
         {
-          "titel": "Ixar III – Archivbild",
+          "titel": "Ixar III aus dem All",
           "bild": true,
-          "bildtext": "Ixar III"
+          "bildtext": "Ixar III – Welt der Schwärme"
         }
       ]
     }

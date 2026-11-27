@@ -416,3 +416,9 @@ Sie können als Produktionsreferenz für Gesellschaftsdarstellung, NPCs, Siedlun
 Die detaillierte Ausgestaltung kultureller Rituale und Feste ist nicht Bestandteil dieses Gesellschaftsdokuments.
 
 **Ende – Mykonoiden / Gesellschaft V1.0**
+
+
+
+Die dunkle seite 
+
+Illegale biologische Experimente und Kontrolle wertvoller Pilzkulturen

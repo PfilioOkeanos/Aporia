@@ -138,3 +138,10 @@ Noch nicht entschieden sind:
 - Welche Pflichten Besitzer gegenüber lebenden Bauwerken besitzen.
 - Wie unterschiedliche Zivilisationen den Umgang mit ihnen bewerten.
 - Ob besondere gesellschaftliche Traditionen im Zusammenleben mit Architektoiden entstehen.
+
+
+
+
+die dunkle seite 
+
+Gebäude verweigern Bewohnern absichtlich den Ausgang

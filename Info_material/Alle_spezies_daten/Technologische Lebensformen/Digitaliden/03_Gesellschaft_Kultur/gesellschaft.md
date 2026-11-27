@@ -230,3 +230,8 @@ Die ursprünglichen Titan-Gemeinschaften besitzen eine Geschichte der technische
 Spätere Orbitalgemeinschaften entwickelten andere Lebensweisen.
 
 Mobile Digitaliden legen häufig stärkeren Wert auf persönliche Bewegungsfreiheit als Bewohner großer stationärer Rechenstädte.
+
+
+Die dunkle seite 
+
+Diebstahl und Manipulation fremder Erinnerungen

@@ -6,12 +6,16 @@
   "klasse": "Orangefarbener Zwerg (K2 V)",
   "intro": "Seyvar ist ein orangefarbener Hauptreihenstern der Spektralklasse K2 V mit 82 % der Sonnenmasse und 47 % ihrer Leuchtkraft. Er besitzt eine lange, stabile Hauptreihenphase, magnetische Aktivität und einen Sternwind – Zentralstern von Nhalyss, der Heimatwelt der Bioluminoiden. Seyvar ist der Zentralstern des Seyvar-Systems.",
   "globusDaten": {
-    "planet": "pulsierender-orange-roter-riesenstern",
+    "planet": "seyvar",
     "klasse": "Vulkan",
     "radius": 556560000
   },
   "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=nhalyss-stern",
   "grunddaten": [
+    [
+      "System-ID",
+      "nhalyss-stern"
+    ],
     [
       "Archiv-ID",
       "AP-8887597BE7"
@@ -45,7 +49,7 @@
       "ca. 5,1 Mrd. Jahre"
     ],
     [
-      "Monde",
+      "Planeten",
       "6 (Seyvar I, Nhalyss, Seyvar III, Seyvar IV, Seyvar V, Prismenkomet)"
     ]
   ],
@@ -73,42 +77,42 @@
     },
     {
       "icon": "◐",
-      "art": "Mond",
+      "art": "Planet",
       "titel": "Seyvar I",
       "href": "inhalte/himmelskoerper/planeten/details/seyvar-i/hauptseite/index.html",
       "route": null
     },
     {
       "icon": "◐",
-      "art": "Mond",
+      "art": "Planet",
       "titel": "Nhalyss",
       "href": "inhalte/himmelskoerper/planeten/details/nhalyss/hauptseite/index.html",
       "route": null
     },
     {
       "icon": "◐",
-      "art": "Mond",
+      "art": "Planet",
       "titel": "Seyvar III",
       "href": "inhalte/himmelskoerper/planeten/details/seyvar-iii/hauptseite/index.html",
       "route": null
     },
     {
       "icon": "◐",
-      "art": "Mond",
+      "art": "Planet",
       "titel": "Seyvar IV",
       "href": "inhalte/himmelskoerper/planeten/details/seyvar-iv/hauptseite/index.html",
       "route": null
     },
     {
       "icon": "◐",
-      "art": "Mond",
+      "art": "Planet",
       "titel": "Seyvar V",
       "href": "inhalte/himmelskoerper/planeten/details/seyvar-v/hauptseite/index.html",
       "route": null
     },
     {
       "icon": "◐",
-      "art": "Mond",
+      "art": "Planet",
       "titel": "Prismenkomet",
       "href": "inhalte/himmelskoerper/kometen/details/prismenkomet/hauptseite/index.html",
       "route": null
@@ -290,7 +294,7 @@
               "ca. 5,1 Mrd. Jahre"
             ],
             [
-              "Monde",
+              "Planeten",
               "6 (Seyvar I, Nhalyss, Seyvar III, Seyvar IV, Seyvar V, Prismenkomet)"
             ]
           ]
@@ -347,7 +351,7 @@
               "Gesteinsplanet"
             ],
             [
-              "Seyvar III · 1,38 AE",
+              "Seyvar III · 0,88 AE",
               "Gesteinsplanet"
             ],
             [
@@ -363,7 +367,7 @@
               "Asteroidengürtel"
             ],
             [
-              "Äußeres Kometengebiet · 34–48 AE",
+              "Farirhar-Kometenwolke · 34–48 AE",
               "Kometengebiet"
             ]
           ],
@@ -421,7 +425,7 @@
               "ca. 5,1 Mrd. Jahre"
             ],
             [
-              "Monde",
+              "Planeten",
               "6 (Seyvar I, Nhalyss, Seyvar III, Seyvar IV, Seyvar V, Prismenkomet)"
             ]
           ]
@@ -462,7 +466,7 @@
               "Gesteinsplanet"
             ],
             [
-              "Seyvar III · 1,38 AE",
+              "Seyvar III · 0,88 AE",
               "Gesteinsplanet"
             ],
             [
@@ -478,7 +482,7 @@
               "Asteroidengürtel"
             ],
             [
-              "Äußeres Kometengebiet · 34–48 AE",
+              "Farirhar-Kometenwolke · 34–48 AE",
               "Kometengebiet"
             ]
           ],
@@ -551,11 +555,11 @@
         {
           "titel": "Besonderheiten",
           "liste": [
-            "6 Monde: Seyvar I, Nhalyss, Seyvar III, Seyvar IV, Seyvar V, Prismenkomet"
+            "6 eigene Planeten: Seyvar I, Nhalyss, Seyvar III, Seyvar IV, Seyvar V, Prismenkomet"
           ]
         },
         {
-          "titel": "Monde",
+          "titel": "Planeten",
           "karten": [
             {
               "titel": "Seyvar I",
@@ -567,7 +571,7 @@
             },
             {
               "titel": "Seyvar III",
-              "text": "7.800 km Durchmesser, Umlauf in 653,9 Tage. Seyvar III ist eine kalte, trockene Gesteinswelt mit dünner Atmosphäre am äußeren Rand der habitablen Zone."
+              "text": "7.800 km Durchmesser, Umlauf in 333 Tage. Seyvar III ist eine kleine, biologisch vielfältige Gesteinswelt mit dichter, feuchter Atmosphäre und vier Kontinenten – die Heimat der Biophäriden, deren zusammenhängende Körper sich über ganze Regionen erstrecken."
             },
             {
               "titel": "Seyvar IV",

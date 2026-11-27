@@ -6,12 +6,16 @@
   "klasse": "Gelber Zwerg (G9 V)",
   "intro": "Ixar ist ein ruhiger gelber Zwerg der Spektralklasse G9 V mit 90 % der Sonnenmasse und 68 % ihrer Leuchtkraft – Zentralstern von Kyreth, der Heimatwelt der Elektrozoiden. Ixar ist der Zentralstern des Ixar-Systems.",
   "globusDaten": {
-    "planet": "oszillierender-sonnenahnlicher-stern",
+    "planet": "ixar",
     "klasse": "Vulkan",
     "radius": 640044000
   },
   "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=kyreth-stern",
   "grunddaten": [
+    [
+      "System-ID",
+      "kyreth-stern"
+    ],
     [
       "Archiv-ID",
       "AP-E2A1AD2B53"
@@ -45,7 +49,7 @@
       "ca. 4,6 Mrd. Jahre"
     ],
     [
-      "Monde",
+      "Planeten",
       "6 (Ixar I, Kyreth, Ixar III, Ixar IV, Ladungsschweif, Ixar V)"
     ]
   ],
@@ -73,58 +77,58 @@
     },
     {
       "icon": "◐",
-      "art": "Mond",
+      "art": "Planet",
       "titel": "Ixar I",
       "href": "inhalte/himmelskoerper/planeten/details/ixar-i/hauptseite/index.html",
       "route": null
     },
     {
       "icon": "◐",
-      "art": "Mond",
+      "art": "Planet",
       "titel": "Kyreth",
       "href": "inhalte/himmelskoerper/planeten/details/kyreth/hauptseite/index.html",
       "route": null
     },
     {
       "icon": "◐",
-      "art": "Mond",
+      "art": "Planet",
       "titel": "Ixar III",
       "href": "inhalte/himmelskoerper/planeten/details/ixar-iii/hauptseite/index.html",
       "route": null
     },
     {
       "icon": "◐",
-      "art": "Mond",
+      "art": "Planet",
       "titel": "Ixar IV",
       "href": "inhalte/himmelskoerper/planeten/details/ixar-iv/hauptseite/index.html",
       "route": null
     },
     {
       "icon": "◐",
-      "art": "Mond",
+      "art": "Planet",
       "titel": "Ladungsschweif",
       "href": "inhalte/himmelskoerper/kometen/details/ladungsschweif/hauptseite/index.html",
       "route": null
     },
     {
       "icon": "◐",
-      "art": "Mond",
+      "art": "Planet",
       "titel": "Ixar V",
       "href": "inhalte/himmelskoerper/planeten/details/ixar-v/hauptseite/index.html",
       "route": null
     },
     {
       "icon": "✿",
-      "art": "Heimatwelt der Elektrozoiden",
-      "titel": "Kyreth",
-      "href": "inhalte/himmelskoerper/planeten/details/kyreth/hauptseite/index.html",
+      "art": "Heimatwelt der Schwarmarchen",
+      "titel": "Ixar III",
+      "href": "inhalte/himmelskoerper/planeten/details/ixar-iii/hauptseite/index.html",
       "route": null
     },
     {
       "icon": "◈",
       "art": "Spezies-Dossier",
-      "titel": "Elektrozoiden",
-      "href": "inhalte/spezies/Biologische Spezies/Elektrozoiden/hauptseite/Spezies.html",
+      "titel": "Schwarmarchen",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Schwarmarchen/hauptseite/Spezies.html",
       "route": null
     }
   ],
@@ -134,8 +138,8 @@
       "href": "Menüs/Sternenkarte/Sternenkarte.html?system=kyreth-stern"
     },
     {
-      "titel": "Speziesdossier Elektrozoiden",
-      "href": "inhalte/spezies/Biologische Spezies/Elektrozoiden/hauptseite/Spezies.html"
+      "titel": "Speziesdossier Schwarmarchen",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Schwarmarchen/hauptseite/Spezies.html"
     }
   ],
   "design": {
@@ -290,24 +294,24 @@
               "ca. 4,6 Mrd. Jahre"
             ],
             [
-              "Monde",
+              "Planeten",
               "6 (Ixar I, Kyreth, Ixar III, Ixar IV, Ladungsschweif, Ixar V)"
             ]
           ]
         },
         {
-          "titel": "Im System von Kyreth",
+          "titel": "Im System von Ixar III",
           "text": [
-            "Das Ixar-System ist die Heimat der Elektrozoiden: Ihr Planet Kyreth umkreist Ixar."
+            "Das Ixar-System ist die Heimat der Schwarmarchen: Ihr Planet Ixar III umkreist Ixar."
           ],
           "verweise": [
             [
-              "Kyreth",
-              "inhalte/himmelskoerper/planeten/details/kyreth/hauptseite/index.html"
+              "Ixar III",
+              "inhalte/himmelskoerper/planeten/details/ixar-iii/hauptseite/index.html"
             ],
             [
-              "Speziesdossier Elektrozoiden",
-              "inhalte/spezies/Biologische Spezies/Elektrozoiden/hauptseite/Spezies.html"
+              "Speziesdossier Schwarmarchen",
+              "inhalte/spezies/Gigantische Lebensformen/Schwarmarchen/hauptseite/Spezies.html"
             ]
           ]
         }
@@ -347,7 +351,7 @@
               "Gesteinsplanet"
             ],
             [
-              "Ixar III · 1,6 AE",
+              "Ixar III · 1,03 AE",
               "Gesteinsplanet"
             ],
             [
@@ -363,7 +367,7 @@
               "Asteroidengürtel"
             ],
             [
-              "Äußeres Kometengebiet · 38–52 AE",
+              "Kaelaigan-Kometenwolke · 38–52 AE",
               "Kometengebiet"
             ]
           ],
@@ -421,7 +425,7 @@
               "ca. 4,6 Mrd. Jahre"
             ],
             [
-              "Monde",
+              "Planeten",
               "6 (Ixar I, Kyreth, Ixar III, Ixar IV, Ladungsschweif, Ixar V)"
             ]
           ]
@@ -462,7 +466,7 @@
               "Gesteinsplanet"
             ],
             [
-              "Ixar III · 1,6 AE",
+              "Ixar III · 1,03 AE",
               "Gesteinsplanet"
             ],
             [
@@ -478,7 +482,7 @@
               "Asteroidengürtel"
             ],
             [
-              "Äußeres Kometengebiet · 38–52 AE",
+              "Kaelaigan-Kometenwolke · 38–52 AE",
               "Kometengebiet"
             ]
           ],
@@ -511,8 +515,8 @@
             "Thalor-System – 16,9 Lichtjahre",
             "Iovar-System – 17,3 Lichtjahre",
             "Sonnensystem – 18 Lichtjahre",
-            "Seryn-System – 19,7 Lichtjahre",
-            "Kharuun-System – 23,3 Lichtjahre"
+            "Saelon-System – 19,4 Lichtjahre",
+            "Seryn-System – 19,7 Lichtjahre"
           ]
         }
       ]
@@ -551,11 +555,11 @@
         {
           "titel": "Besonderheiten",
           "liste": [
-            "6 Monde: Ixar I, Kyreth, Ixar III, Ixar IV, Ladungsschweif, Ixar V"
+            "6 eigene Planeten: Ixar I, Kyreth, Ixar III, Ixar IV, Ladungsschweif, Ixar V"
           ]
         },
         {
-          "titel": "Monde",
+          "titel": "Planeten",
           "karten": [
             {
               "titel": "Ixar I",
@@ -567,7 +571,7 @@
             },
             {
               "titel": "Ixar III",
-              "text": "8.800 km Durchmesser, Umlauf in 2,1 Jahre. Ixar III ist eine kalte, trockene Gesteinswelt am äußeren Rand der habitablen Zone."
+              "text": "8.800 km Durchmesser, Umlauf in 402,5 Tage. Ixar III ist eine gemäßigte Steppen- und Flusswelt mit dichter Atmosphäre, goldgrünen Kontinenten und weit verzweigten Flussnetzen – die Heimat der Schwarmarchen, deren Persönlichkeit aus Millionen Teilorganismen besteht."
             },
             {
               "titel": "Ixar IV",

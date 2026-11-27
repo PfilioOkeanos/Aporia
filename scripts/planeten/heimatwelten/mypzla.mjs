@@ -2,7 +2,7 @@
 const M = "assets/bilder/Alle Spezies+Übersicht/Biologische Spezies/Mykonoiden/";
 const G = M + "Gesamtdarstellung/", B = M + "Biologie/";
 export default {
-    ordner: "lebender-goldplanet-mit-pilzplateaus", system: "mypzla-system", planetId: "mypzla-planet",
+    ordner: "mypzla", system: "mypzla-system", planetId: "mypzla-planet",
     name: "Mypzla", genitiv: "von Mypzla", klasse: "Gesteinsplanet", klasseLang: "Feuchtwarme Super-Erde mit Myzelbiosphäre",
     spezies: { name: "Mykonoiden", gruppe: "Biologische Spezies", ordner: "Mykonoiden", seite: "inhalte/spezies/Biologische Spezies/Mykonoiden/hauptseite/hauptseite.html" },
     intro: "Mypzla ist die Ursprungswelt der Mykonoiden: eine warme, feuchte Welt, deren Kontinente von goldfarbenen Myzelteppichen und riesigen Pilzplateaus überzogen sind. Ein feiner Sporendunst lässt den Himmel golden schimmern.",

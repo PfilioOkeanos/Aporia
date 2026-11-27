@@ -1,60 +1,119 @@
 {
-  "_erzeugt": "koerper-bauen",
   "name": "Talvek",
   "genitiv": "von Talvek",
   "dossierName": "Talvek-Dossier",
-  "klasse": "Gesteinsplanet",
-  "intro": "Talvek ist ein kalter Gesteinsplanet mit Hochländern, trockenen Becken und größeren Eisvorkommen. Spuren früherer Wasserbewegungen deuten auf eine einst dichtere Atmosphäre hin; früheres Leben ist nicht bestätigt. Talvek umkreist Terev in 1,57 AE Abstand und braucht für einen Umlauf 2,1 Jahre.",
+  "klasse": "Planet · Gesteinsplanet",
+  "intro": "Talvek wirkt bei oberflächlicher Betrachtung wie ein lebloser, kalter Gesteinsplanet. Doch zwei bis fünfzehn Kilometer tief in seiner Kruste leben die Lithonetzwerke – gigantische, im Gestein verwurzelte Intelligenzen. Ein einzelnes Gebirge kann Lebensraum mehrerer eigenständiger Individuen sein.",
   "globusDaten": {
     "planet": "blaugrauer-kaltewustenplanet-im-all",
-    "klasse": "Gestein",
+    "klasse": "Kalte Gesteinswelt",
     "radius": 5097000
   },
-  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=nerath-stern&objekt=nerath-talvek",
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=nerath-stern",
   "grunddaten": [
     [
       "Archiv-ID",
       "AP-283A636FC0"
     ],
     [
-      "Typ",
-      "Gesteinsplanet"
-    ],
-    [
-      "Sternsystem",
-      "Terev-System"
-    ],
-    [
-      "Zentralkörper",
-      "Terev"
-    ],
-    [
-      "Große Halbachse",
-      "1,57 AE"
-    ],
-    [
-      "Umlaufzeit",
-      "2,1 Jahre"
+      "Klasse",
+      "Kalter terrestrischer Gesteinsplanet mit unterirdischer Biosphäre"
     ],
     [
       "Durchmesser",
       "10.194 km"
     ],
     [
+      "Radius",
+      "5.097 km"
+    ],
+    [
       "Masse",
       "0,5 Erdmassen"
     ],
     [
-      "Schwerkraft",
-      "0,78 g"
+      "Dichte",
+      "5,38 g/cm³"
     ],
     [
-      "Gleichgewichtstemperatur",
-      "ca. -90 °C"
+      "Schwerkraft",
+      "0,78 g (7,7 m/s²)"
+    ],
+    [
+      "Mittlere Oberflächentemperatur",
+      "ca. −75 °C (Arbeitsmodell)"
+    ],
+    [
+      "Ozeane",
+      "Keine offenen Meere; Polareis, Eisschichten und tiefe Salzlösungen"
+    ],
+    [
+      "Atmosphäre",
+      "72 % Kohlendioxid, 25 % Stickstoff, 2,5 % Argon, 0,5 % Sonstige Gase"
+    ],
+    [
+      "Atmosphärendruck",
+      "ca. 0,12 bar"
+    ],
+    [
+      "Rotationsperiode",
+      "ca. 31 h"
+    ],
+    [
+      "Umlaufzeit",
+      "772 Erdtage"
+    ],
+    [
+      "Abstand zum Stern",
+      "1,57 AE"
     ],
     [
       "Monde",
       "2 (Rusk, Nemi)"
+    ],
+    [
+      "Zentralstern",
+      "Terev, Orangegelber Zwerg (K0 V)"
+    ],
+    [
+      "Einstrahlung",
+      "0,25-fach der Erde"
+    ],
+    [
+      "Achsneigung",
+      "19°"
+    ],
+    [
+      "Exzentrizität",
+      "0,055"
+    ],
+    [
+      "Fluchtgeschwindigkeit",
+      "8,8 km/s"
+    ],
+    [
+      "Alter",
+      "ca. 5,6 Mrd. Jahre"
+    ],
+    [
+      "Archiv-ID",
+      "AP-283A636FC0"
+    ],
+    [
+      "Hauptlebensraum",
+      "Planetare Kruste, 2–15 km (regional bis ca. 25 km)"
+    ],
+    [
+      "Oberflächenbiosphäre",
+      "Nicht vorausgesetzt"
+    ],
+    [
+      "Fraktionszugehörigkeit",
+      "Offen"
+    ],
+    [
+      "Intelligente Spezies",
+      "Lithonetzwerke"
     ]
   ],
   "position": [
@@ -64,98 +123,110 @@
     ],
     [
       "Zentralstern",
-      "Terev",
-      "inhalte/himmelskoerper/sterne/details/terev/hauptseite/index.html"
+      "Terev · K0 V, Einzelstern"
     ],
     [
-      "Abstand",
-      "1,57 AE"
+      "Bahnposition",
+      "4. von 7 Planeten"
+    ],
+    [
+      "Entfernung zur Sonne",
+      "42 Lichtjahre"
+    ],
+    [
+      "Nächste Nachbarsysteme",
+      "Seyvar-System (24,1 Lj), Morvath-System (30,8 Lj)"
     ]
   ],
   "verknuepfungen": [
     {
       "icon": "✦",
-      "art": "Sternenkarte",
-      "titel": "Talvek im Terev-System",
-      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=nerath-stern&objekt=nerath-talvek",
-      "route": null
-    },
-    {
-      "icon": "☀",
-      "art": "Zentralstern",
-      "titel": "Terev",
-      "href": "inhalte/himmelskoerper/sterne/details/terev/hauptseite/index.html",
-      "route": null
-    },
-    {
-      "icon": "◐",
-      "art": "Mond",
-      "titel": "Rusk",
-      "href": "inhalte/himmelskoerper/monde/details/rusk/hauptseite/index.html",
-      "route": null
-    },
-    {
-      "icon": "◐",
-      "art": "Mond",
-      "titel": "Nemi",
-      "href": "inhalte/himmelskoerper/monde/details/nemi/hauptseite/index.html",
+      "art": "Systemübersicht",
+      "titel": "Terev-System",
+      "href": "inhalte/himmelskoerper/sternensysteme/details/terev-system/hauptseite/index.html",
       "route": null
     },
     {
       "icon": "✿",
-      "art": "Heimatwelt der Synaptoiden",
-      "titel": "Nerath",
-      "href": "inhalte/himmelskoerper/planeten/details/nerath/hauptseite/index.html",
+      "art": "Heimische Spezies",
+      "titel": "Lithonetzwerke",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Lithonetzwerke/hauptseite/Spezies.html",
       "route": null
     },
     {
       "icon": "◈",
       "art": "Spezies-Dossier",
-      "titel": "Synaptoiden",
-      "href": "inhalte/spezies/Mentale Spezies/Synaptoiden/hauptseite/Spezies.html",
+      "titel": "Heimatwelt",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Lithonetzwerke/Unterseiten/Heimatwelt/heimatwelt.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Politik und Fraktionen",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Lithonetzwerke/Unterseiten/Politik/politik.html",
+      "route": null
+    },
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Terev-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=nerath-stern",
       "route": null
     }
   ],
   "quellen": [
     {
-      "titel": "Sternenkarte · Terev-System",
-      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=nerath-stern&objekt=nerath-talvek"
+      "titel": "Speziesdossier Lithonetzwerke · Heimatwelt",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Lithonetzwerke/Unterseiten/Heimatwelt/heimatwelt.html"
     },
     {
-      "titel": "Speziesdossier Synaptoiden",
-      "href": "inhalte/spezies/Mentale Spezies/Synaptoiden/hauptseite/Spezies.html"
+      "titel": "Speziesdossier Lithonetzwerke · Geschichte",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Lithonetzwerke/Unterseiten/Geschichte/geschichte.html"
+    },
+    {
+      "titel": "Speziesdossier Lithonetzwerke · Gesellschaft",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Lithonetzwerke/Unterseiten/Gesellschaft/gesellschaft.html"
+    },
+    {
+      "titel": "Speziesdossier Lithonetzwerke · Politik",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Lithonetzwerke/Unterseiten/Politik/politik.html"
+    },
+    {
+      "titel": "Speziesdossier Lithonetzwerke · Allgemeines",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Lithonetzwerke/Unterseiten/Allgemeines/allgemeines.html"
     }
   ],
   "design": {
     "farben": {
-      "nacht": "#080808",
-      "tiefe": "#111113",
-      "akzent": "#bdc0c7",
-      "sand": "#c2bdad",
-      "moos": "#9cb69e",
-      "ozean": "#7c9fba",
-      "glas": "rgba(8, 12, 18, .76)",
-      "glas-hell": "rgba(16, 22, 32, .82)",
-      "linie": "rgba(255, 255, 255, .12)",
-      "linie-hell": "rgba(255, 255, 255, .3)",
-      "text": "#eef2f6",
-      "leise": "#a8b0bc",
-      "aporia-page-tint": "#45474c"
+      "nacht": "#07070a",
+      "tiefe": "#111117",
+      "akzent": "#c98a5a",
+      "sand": "#b9a28a",
+      "moos": "#8fb0a8",
+      "ozean": "#5a86a8",
+      "glas": "rgba(17, 17, 23, .8)",
+      "glas-hell": "rgba(28, 28, 36, .86)",
+      "linie": "rgba(201, 138, 90, .16)",
+      "linie-hell": "rgba(210, 170, 130, .36)",
+      "text": "#efecea",
+      "leise": "#aba49c",
+      "aporia-page-tint": "#4a3324"
     }
   },
   "kapitel": {
     "Allgemeines": {
       "gruppe": "Weitere",
       "icon": "▤",
-      "intro": "Talvek auf einen Blick.",
+      "intro": "Talvek auf einen Blick: leblos an der Oberfläche, lebendig im Gestein.",
       "abschnitte": [
         {
           "titel": "Kurzprofil",
           "bild": true,
-          "bildtext": "Talvek",
+          "bildtext": "Talvek – die stille Welt der Tiefen",
           "text": [
-            "Talvek ist ein kalter Gesteinsplanet mit Hochländern, trockenen Becken und größeren Eisvorkommen. Spuren früherer Wasserbewegungen deuten auf eine einst dichtere Atmosphäre hin; früheres Leben ist nicht bestätigt.",
-            "Talvek umkreist Terev in 1,57 AE Abstand und braucht für einen Umlauf 2,1 Jahre."
+            "Talvek ist der vierte Hauptplanet des Terev-Systems und umkreist den orangegelben Zwerg Terev in 1,57 AE Abstand – außerhalb der habitablen Zone. Mit 10.194 Kilometern Durchmesser und 0,5 Erdmassen ist er kleiner als die Erde; die Schwerkraft beträgt 0,78 g. Die dünne Kohlendioxid-Atmosphäre hat nur 0,12 bar, die Oberfläche liegt im Mittel bei etwa −75 °C.",
+            "In seiner Frühgeschichte war Talvek wärmer und besaß mehr Wasser nahe der Oberfläche. Mit der Abkühlung verlagerten sich geeignete Lebensräume in den Untergrund, wo Salzlösungen, hydrothermale Bruchzonen und chemische Energiequellen eine Tiefenbiosphäre tragen. Dort entstand die Zivilisation der Lithonetzwerke."
           ]
         },
         {
@@ -163,59 +234,115 @@
           "daten": [
             [
               "Typ",
-              "Gesteinsplanet"
+              "Kalter terrestrischer Gesteinsplanet mit unterirdischer Biosphäre"
             ],
             [
-              "Sternsystem",
-              "Terev-System"
-            ],
-            [
-              "Zentralkörper",
-              "Terev"
-            ],
-            [
-              "Große Halbachse",
-              "1,57 AE"
-            ],
-            [
-              "Umlaufzeit",
-              "2,1 Jahre"
-            ],
-            [
-              "Durchmesser",
-              "10.194 km"
-            ],
-            [
-              "Masse",
-              "0,5 Erdmassen"
+              "Zentralstern",
+              "Terev (Orangegelber Zwerg (K0 V))"
             ],
             [
               "Schwerkraft",
               "0,78 g"
             ],
             [
-              "Gleichgewichtstemperatur",
-              "ca. -90 °C"
+              "Durchmesser",
+              "10.194 km"
             ],
             [
-              "Monde",
-              "2 (Rusk, Nemi)"
+              "Mittlere Temperatur",
+              "ca. −75 °C (Arbeitsmodell)"
+            ],
+            [
+              "Atmosphäre",
+              "Dünn, kalt, nicht atembar, ca. 0,12 bar"
+            ],
+            [
+              "Wasser",
+              "Keine offenen Meere; Polareis, Eisschichten und tiefe Salzlösungen"
+            ],
+            [
+              "Intelligente Spezies",
+              "Lithonetzwerke"
             ]
           ]
         },
         {
-          "titel": "Im System von Nerath",
-          "text": [
-            "Das Terev-System ist die Heimat der Synaptoiden: Ihr Planet Nerath umkreist Terev."
-          ],
-          "verweise": [
+          "titel": "Talvek im Vergleich zur Erde",
+          "vergleich": {
+            "mit": "Erde",
+            "werte": [
+              [
+                "Durchmesser",
+                10194,
+                12742,
+                "km"
+              ],
+              [
+                "Schwerkraft",
+                0.78,
+                1,
+                "g"
+              ],
+              [
+                "Tageslänge",
+                31,
+                24,
+                "h"
+              ],
+              [
+                "Luftdruck (Mittel)",
+                0.12,
+                1,
+                "bar"
+              ],
+              [
+                "Mittlere Temperatur",
+                -75,
+                15,
+                "°C"
+              ]
+            ]
+          }
+        },
+        {
+          "titel": "Hauptmerkmale",
+          "karten": [
+            {
+              "titel": "Kalte Gesteinswelt",
+              "text": "Dunkle Gebirge, eisenhaltige Hochländer und gefrorene Salzebenen."
+            },
+            {
+              "titel": "Leben in der Kruste",
+              "text": "Die Biosphäre liegt fast vollständig unter der Oberfläche."
+            },
+            {
+              "titel": "Verborgene Zivilisation",
+              "text": "Die sichtbare Besiedlung entspricht nicht der wahren Größe der Zivilisation."
+            },
+            {
+              "titel": "Zwei kleine Monde",
+              "text": "Rusk und Nemi."
+            }
+          ]
+        },
+        {
+          "titel": "Einordnung",
+          "daten": [
             [
-              "Nerath",
-              "inhalte/himmelskoerper/planeten/details/nerath/hauptseite/index.html"
+              "Sternenkarten-ID",
+              "nerath-talvek"
             ],
             [
-              "Speziesdossier Synaptoiden",
-              "inhalte/spezies/Mentale Spezies/Synaptoiden/hauptseite/Spezies.html"
+              "Position",
+              "Vierter Hauptplanet"
+            ],
+            [
+              "Heimatspezies",
+              "Lithonetzwerke (Gigantische Lebensformen)"
+            ],
+            [
+              "Nachbarwelt",
+              "Nerath, Heimat der Synaptoiden"
             ]
           ]
         }
@@ -224,104 +351,192 @@
     "Astronomie": {
       "gruppe": "Wissenschaft",
       "icon": "✧",
-      "intro": "Talvek im Terev-System.",
+      "intro": "Der vierte Planet des Terev-Systems.",
       "abschnitte": [
         {
-          "titel": "Bahn",
+          "titel": "Bahn und Position",
+          "text": [
+            "Talvek ist der 4. von 7 Planeten im Terev-System. Er umkreist Terev in 1,57 AE Abstand – jenseits der äußeren Grenze der habitablen Zone (bei Terev zwischen 0,75 und 1,31 AE). Er erhält 0,25-mal so viel Sternlicht wie die Erde.",
+            "Ohne Atmosphäre läge seine Gleichgewichtstemperatur bei rund -90 °C. Die dünne Kohlendioxid-Atmosphäre hebt die Oberflächentemperatur nur um rund 15 K über die Gleichgewichtstemperatur von etwa −90 °C."
+          ],
           "daten": [
             [
-              "Zentralkörper",
-              "Terev"
+              "Sternsystem",
+              "Terev-System"
+            ],
+            [
+              "Bahnposition",
+              "4. von 7 Planeten"
             ],
             [
               "Große Halbachse",
-              "1,57 AE (234,9 Mio. km)"
+              "1,57 AE (ca. 234,9 Mio. km)"
             ],
             [
               "Exzentrizität",
               "0,055"
             ],
             [
-              "Bahnneigung",
-              "1,6°"
+              "Umlaufzeit",
+              "772,1 Erdtage"
             ],
             [
-              "Umlaufzeit",
-              "2,1 Jahre"
+              "Ortsjahr",
+              "ca. 598 Ortstage"
             ],
             [
               "Einstrahlung",
-              "0,251-fach der Erde"
+              "ca. 0,25-fach der Erde"
+            ],
+            [
+              "Habitable Zone von Terev",
+              "0,75–1,31 AE"
             ]
           ]
         },
         {
-          "titel": "Am Himmel von Talvek",
+          "titel": "Zentralstern",
           "text": [
-            "Terev erscheint von hier aus etwa 0,32° groß (die Sonne von der Erde: 0,53°)."
-          ]
-        },
-        {
-          "titel": "Körper des Systems",
-          "zeitleiste": [
+            "Terev ist ein orangegelber Hauptreihenstern der Spektralklasse K0 V mit 0,866 Sonnenmassen und rund 62 % der Sonnenleuchtkraft. Mit etwa 5,6 Milliarden Jahren befindet er sich in einer langfristig stabilen Entwicklungsphase; seine magnetische Aktivität ist moderat und zeitlich variabel. Er ist Heimatstern der Synaptoiden (Tavari) und Zentrum eines alten Systems mit sieben großen Planeten."
+          ],
+          "daten": [
             [
-              "Terev · Stern",
+              "Name",
+              "Terev"
+            ],
+            [
+              "Typ",
               "Orangegelber Zwerg (K0 V)"
             ],
             [
-              "Vaskir · 0,16 AE",
-              "Gesteinsplanet"
+              "Masse",
+              "0,87 Sonnenmassen"
             ],
             [
-              "Sereth · 0,42 AE",
-              "Gesteinsplanet"
+              "Radius",
+              "0,94 Sonnenradien"
             ],
             [
-              "Nerath · 0,93 AE",
-              "Gesteinsplanet"
+              "Leuchtkraft",
+              "0,619 Sonnenleuchtkräfte"
             ],
             [
-              "Talvek · 1,57 AE · dieses Dossier",
-              "Gesteinsplanet"
+              "Oberflächentemperatur",
+              "ca. 5.280 K"
             ],
             [
-              "Urakan · 4,4 AE",
-              "Gasriese"
+              "Alter",
+              "ca. 5,6 Mrd. Jahre"
             ],
             [
-              "Oryss · 9,3 AE",
-              "Eisriese"
-            ],
-            [
-              "Veyl · 22,8 AE",
-              "Eisplanet"
-            ],
-            [
-              "Relt · 44 AE",
-              "Zwergplanet"
-            ],
-            [
-              "Othir · 52 AE",
-              "Zwergplanet"
-            ],
-            [
-              "Skalenband · 2,2–3,2 AE",
-              "Asteroidengürtel"
-            ],
-            [
-              "Taren-Saum · 38–65 AE",
-              "Kleinkörpergürtel"
-            ],
-            [
-              "Terev-Fernwolke · 1.500–8.000 AE",
-              "Kometengebiet"
+              "Begleitsterne",
+              "keine (Einzelstern)"
             ]
           ],
           "verweise": [
             [
               "Terev",
               "inhalte/himmelskoerper/sterne/details/terev/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Rotation und Achse",
+          "daten": [
+            [
+              "Rotationsperiode",
+              "ca. 31 h"
             ],
+            [
+              "Achsneigung",
+              "19°"
+            ],
+            [
+              "Scheinbare Sterngröße",
+              "ca. 0,32° (Sonne von der Erde: 0,53°)"
+            ],
+            [
+              "Jahreszeiten",
+              "Stark – große regionale und jahreszeitliche Schwankungen"
+            ]
+          ]
+        },
+        {
+          "titel": "Monde",
+          "karten": [
+            {
+              "titel": "Rusk",
+              "text": "28 km Durchmesser, Abstand 16.651 km, Umlauf in 0,4 Tagen. Rusk ist ein kleiner, unregelmäßig geformter Gesteinsmond Talveks mit zahlreichen Einschlagspuren."
+            },
+            {
+              "titel": "Nemi",
+              "text": "16 km Durchmesser, Abstand 41.958 km, Umlauf in 1,4 Tagen. Nemi ist ein weiter außen umlaufender kleiner Mond Talveks mit dunkler, stark verkraterter Oberfläche."
+            }
+          ],
+          "verweise": [
+            [
+              "Rusk",
+              "inhalte/himmelskoerper/monde/details/rusk/hauptseite/index.html"
+            ],
+            [
+              "Nemi",
+              "inhalte/himmelskoerper/monde/details/nemi/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Planeten des Systems",
+          "zeitleiste": [
+            [
+              "Vaskir · 0,16 AE",
+              "Vaskir ist eine heiße, trockene Gesteinswelt mit zahlreichen Einschlagkratern, alten Lavabecken und mineralischen Hochländern."
+            ],
+            [
+              "Sereth · 0,42 AE",
+              "Sereth ist ein heißer, vulkanisch aktiver Gesteinsplanet mit Lavabecken, Calderen und vulkanischen Hochländern."
+            ],
+            [
+              "Nerath · 0,93 AE",
+              "Nerath ist die Heimatwelt der Synaptoiden (Tavari): eine gezeitengeprägte Binnenmeer-, Flachwasser- und Feuchtgebietswelt mit zwei großen Kontinenten, dem Silven-Becken, ausgedehnten Gezeitenmarschen und dem großen Mond Ivera."
+            ],
+            [
+              "Talvek · 1,57 AE",
+              "Talvek ist eine kalte, mineralreiche Gesteinswelt mit dunklen Gebirgen und gefrorenen Salzebenen."
+            ],
+            [
+              "Skalenband · 2,2–3,2 AE",
+              "Das Skalenband zwischen 2,15 und 3,15 AE besteht aus Gesteins-, Metall- und kohlenstoffreichen Kleinkörpern."
+            ],
+            [
+              "Urakan · 4,4 AE",
+              "Urakan ist ein Gasriese mit 0,65 Jupitermassen, farbigen Wolkenbändern und dem langlebigen Großen Wirbel."
+            ],
+            [
+              "Oryss · 9,3 AE",
+              "Oryss ist ein türkis bis blaugrau erscheinender Eisriese mit rund 20 Erdmassen, starken Winden und mehreren schmalen, diffusen Ringen."
+            ],
+            [
+              "Veyl · 22,8 AE",
+              "Veyl ist ein äußerer eisreicher Planet mit Wassereis, mineralischen Ablagerungen und gefrorenen flüchtigen Stoffen."
+            ],
+            [
+              "Taren-Saum · 38–65 AE",
+              "Der Taren-Saum zwischen 38 und 65 AE ist ein äußerer Kleinkörpergürtel aus eis- und gesteinsreichen Körpern, organischen Verbindungen und primitiven Mischkörpern – vergleichbar mit einem transneptunischen Gürtel."
+            ],
+            [
+              "Relt · 44 AE",
+              "Relt ist ein dunkler, eisreicher Zwergplanetkandidat im Taren-Saum mit stark verkraterter Oberfläche."
+            ],
+            [
+              "Othir · 52 AE",
+              "Othir ist ein größerer eisreicher Körper des Taren-Saums mit Hinweisen auf mehrere geologische Entwicklungsphasen."
+            ],
+            [
+              "Terev-Fernwolke · 1.500–8.000 AE",
+              "Die Terev-Fernwolke ist eine vermutete, weit entfernte Population eisreicher Kleinkörper auf sehr langen Umlaufbahnen – mehrere Tausend bis Zehntausende AE vom Stern entfernt."
+            ]
+          ],
+          "verweise": [
             [
               "Vaskir",
               "inhalte/himmelskoerper/planeten/details/vaskir/hauptseite/index.html"
@@ -333,6 +548,10 @@
             [
               "Nerath",
               "inhalte/himmelskoerper/planeten/details/nerath/hauptseite/index.html"
+            ],
+            [
+              "Skalenband",
+              "inhalte/himmelskoerper/sternensysteme/details/skalenband/hauptseite/index.html"
             ],
             [
               "Urakan",
@@ -347,13 +566,62 @@
               "inhalte/himmelskoerper/planeten/details/veyl/hauptseite/index.html"
             ],
             [
+              "Taren-Saum",
+              "inhalte/himmelskoerper/sternensysteme/details/taren-saum/hauptseite/index.html"
+            ],
+            [
               "Relt",
               "inhalte/himmelskoerper/zwergplaneten/details/relt/hauptseite/index.html"
             ],
             [
               "Othir",
               "inhalte/himmelskoerper/zwergplaneten/details/othir/hauptseite/index.html"
+            ],
+            [
+              "Terev-Fernwolke",
+              "inhalte/himmelskoerper/sternensysteme/details/terev-fernwolke/hauptseite/index.html"
             ]
+          ]
+        },
+        {
+          "titel": "Nachbarschaft und Anomalien",
+          "karten": [
+            {
+              "titel": "Nachbarsysteme",
+              "text": "Seyvar-System (24,1 Lj), Morvath-System (30,8 Lj), Velhar-System (32,1 Lj) – alle weit außerhalb der gravitativen Einflusszone von Terev (rund 3,4 Lichtjahre)."
+            }
+          ],
+          "verweise": [
+            [
+              "Terev-System in der Sternenkarte",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=nerath-stern"
+            ]
+          ]
+        },
+        {
+          "titel": "Bahndaten",
+          "daten": [
+            [
+              "Bahnneigung",
+              "1,6°"
+            ],
+            [
+              "Bestehende Umlaufbahn",
+              "unverändert übernommen"
+            ]
+          ]
+        },
+        {
+          "titel": "Monde",
+          "karten": [
+            {
+              "titel": "Rusk",
+              "text": "Kleiner, unregelmäßiger, stark verkraterter Gesteinsmond von etwa 28 km; Umlauf in rund 0,35 Tagen."
+            },
+            {
+              "titel": "Nemi",
+              "text": "Kleiner äußerer Mond von etwa 16 km mit dunkler mineralischer Oberfläche; Umlauf in rund 1,4 Tagen."
+            }
           ]
         }
       ]
@@ -380,22 +648,27 @@
             ],
             [
               "Oberflächenschwerkraft",
-              "7,66 m/s² (0,781 g)"
+              "7,7 m/s² (0,78 g)"
             ],
             [
               "Fluchtgeschwindigkeit",
-              "8,84 km/s"
+              "ca. 8,8 km/s"
+            ],
+            [
+              "Zusammensetzung",
+              "Überwiegend Silikate, Eisenverbindungen, metallische Minerale"
+            ],
+            [
+              "Krustendicke",
+              "ca. 35–70 km"
             ]
-          ],
+          ]
+        },
+        {
+          "titel": "Physikalische Werte im Vergleich",
           "vergleich": {
             "mit": "Erde",
             "werte": [
-              [
-                "Durchmesser",
-                10194,
-                12742,
-                "km"
-              ],
               [
                 "Masse",
                 0.5,
@@ -403,13 +676,31 @@
                 "Erdmassen"
               ],
               [
-                "Schwerkraft",
-                0.78,
+                "Dichte",
+                5.38,
+                5.51,
+                "g/cm³"
+              ],
+              [
+                "Fluchtgeschwindigkeit",
+                8.8,
+                11.2,
+                "km/s"
+              ],
+              [
+                "Magnetfeld",
+                0.3,
                 1,
-                "g"
+                "× Erde"
               ]
             ]
           }
+        },
+        {
+          "titel": "Kleiner Gesteinsplanet",
+          "text": [
+            "Talvek besteht überwiegend aus Silikaten, Eisenverbindungen und weiteren metallischen Mineralien. Mit 0,78 g ist die Schwerkraft etwas geringer als auf der Erde."
+          ]
         }
       ]
     },
@@ -419,19 +710,34 @@
       "intro": "Planetare Struktur von Talvek.",
       "abschnitte": [
         {
-          "titel": "Schalenbau",
+          "titel": "Aufbau",
+          "text": [
+            "Ein eisenreicher Kern, ein silikatreicher Mantel und eine regional unterschiedlich mächtige Kruste von durchschnittlich 35–70 km bilden den Planeten. Alte Hochländer, umfangreiche Bruchsysteme, mineralreiche Tiefenformationen und regional erhaltene geothermische Wärmequellen prägen die Kruste."
+          ],
           "schichten": [
             [
-              "Kruste",
-              "Silikatgestein"
+              "Oberfläche",
+              "Gefroren, trocken, Staubstürme"
+            ],
+            [
+              "Lebenszone (2–15 km)",
+              "Lithonetzwerke, Salzlösungen, Bruchzonen"
+            ],
+            [
+              "Tiefe Kruste (bis ca. 25 km)",
+              "Regionale Lebenstiefen, hydrothermale Zonen"
+            ],
+            [
+              "Untere Kruste",
+              "35–70 km mächtig"
             ],
             [
               "Mantel",
-              "Dichteres Silikatgestein"
+              "Silikatreich"
             ],
             [
               "Kern",
-              "Eisen und Nickel"
+              "Eisenreich"
             ]
           ]
         }
@@ -440,12 +746,40 @@
     "Geografie": {
       "gruppe": "Natur",
       "icon": "△",
-      "intro": "Geografie von Talvek.",
+      "intro": "Gebirge, Schluchten und Salzebenen.",
       "abschnitte": [
         {
-          "titel": "Oberfläche",
-          "text": [
-            "Die Oberfläche von Talvek ist kalt."
+          "titel": "Landschaften",
+          "liste": [
+            "Gewaltige dunkle Gebirge",
+            "Eisenhaltige Hochländer",
+            "Tiefe tektonische Schluchten",
+            "Ausgetrocknete Flussläufe und alte Sedimentbecken",
+            "Gefrorene Salzebenen",
+            "Große Einschlagskrater",
+            "Freiliegende mineralische Schichtformationen",
+            "Unterirdische Kristallhöhlen"
+          ]
+        },
+        {
+          "titel": "Bevorzugte Lebensräume",
+          "liste": [
+            "Alte kontinentale Gesteinsformationen und eisenreiche Gebirge",
+            "Unterirdische Salzreservoire",
+            "Hydrothermale Bruchzonen",
+            "Mineralreiche Sedimentschichten",
+            "Geologisch stabile Hochländer und tiefe Gesteinsbecken",
+            "Übergänge zwischen unterschiedlichen Mineralformationen"
+          ]
+        },
+        {
+          "titel": "Ungeeignete Lebensräume",
+          "liste": [
+            "Flüssiges Magma und zu heiße Regionen",
+            "Dauerhaft gefrorene Schichten ohne nutzbare Flüssigkeiten",
+            "Chemisch ungeeignete Mineralformationen",
+            "Extrem instabile tektonische Regionen",
+            "Isolierte Schichten ohne Energieversorgung"
           ]
         }
       ]
@@ -456,26 +790,39 @@
       "intro": "Atmosphäre von Talvek.",
       "abschnitte": [
         {
-          "titel": "Gashülle",
+          "titel": "Zusammensetzung",
           "text": [
-            "Talvek hält eine dünne, kalte Gashülle fest."
+            "Talvek besitzt eine dünne, kalte und für Menschen nicht atembare Atmosphäre von etwa 0,12 bar – vorgeschlagen sind 72 % Kohlendioxid, 25 % Stickstoff, 2,5 % Argon und 0,5 % sonstige Gase. Die genaue Zusammensetzung kann bei der späteren Planetensimulation angepasst werden."
           ],
           "balken": {
             "werte": [
               [
                 "Kohlendioxid",
-                62
+                72
               ],
               [
                 "Stickstoff",
-                33
+                25
               ],
               [
                 "Argon",
-                5
+                2.5
+              ],
+              [
+                "Sonstige Gase",
+                0.5
               ]
             ]
           }
+        },
+        {
+          "titel": "Druck",
+          "daten": [
+            [
+              "Mittlerer Oberflächendruck",
+              "ca. 0,12 bar"
+            ]
+          ]
         }
       ]
     },
@@ -485,9 +832,46 @@
       "intro": "Klima von Talvek.",
       "abschnitte": [
         {
-          "titel": "Temperatur",
+          "titel": "Temperaturzonen",
           "text": [
-            "Bei 1,57 AE Abstand zu Terev liegt die Gleichgewichtstemperatur von Talvek bei rund -90 °C – kalt."
+            "Die Oberfläche ist kalt, trocken und weit lebensfeindlicher als die geeigneten Tiefenregionen. Polare Frostgebiete sind dauerhaft gefroren, regionale Staubstürme häufig, Niederschlag selten. Mit der Tiefe steigen Wärme und Flüssigkeitsangebot – Lithonetzwerke meiden dabei Regionen mit zu hohen Temperaturen."
+          ],
+          "skala": {
+            "einheit": "°C",
+            "min": -130,
+            "max": 60,
+            "bereiche": [
+              [
+                "Polare Frostgebiete",
+                -125,
+                -95
+              ],
+              [
+                "Oberfläche (Mittel)",
+                -95,
+                -55
+              ],
+              [
+                "Geothermische Regionen",
+                -30,
+                10
+              ],
+              [
+                "Lebenstiefen der Lithonetzwerke",
+                0,
+                60
+              ]
+            ]
+          }
+        },
+        {
+          "titel": "Klima",
+          "liste": [
+            "Überwiegend kalt und trocken",
+            "Dauerhafte polare Frostgebiete",
+            "Regionale Staubstürme",
+            "Geringe Niederschläge",
+            "Lokale Erwärmung in geothermischen Regionen"
           ]
         }
       ]
@@ -498,9 +882,9 @@
       "intro": "Gewässer von Talvek.",
       "abschnitte": [
         {
-          "titel": "Wasser",
+          "titel": "Wasser im Untergrund",
           "text": [
-            "Wasser gibt es höchstens als Eis in Kratern und im Untergrund."
+            "Offene Oberflächenmeere gibt es nicht. Wasser findet sich in den Polarregionen, in unterirdischen Eisschichten, porösem Gestein, gefrorenen ehemaligen Becken, tiefen Salzlösungsreservoiren und geothermisch erwärmten Flüssigkeitssystemen. Die unterirdischen Reservoire sind besonders wichtig für die Biosphäre."
           ]
         }
       ]
@@ -511,9 +895,21 @@
       "intro": "Geologie von Talvek.",
       "abschnitte": [
         {
-          "titel": "Geologie",
+          "titel": "Alte, stabile Kruste",
+          "liste": [
+            "Langfristig stabile Bruchsysteme",
+            "Metallreiche Mineraladern",
+            "Tief liegende Salzlagerstätten",
+            "Hydrothermale Reaktionszonen",
+            "Überreste früherer vulkanischer Aktivität",
+            "Gigantische kristalline Formationen",
+            "Biologisch veränderte Gesteinsbereiche"
+          ]
+        },
+        {
+          "titel": "Einfluss der Lithonetzwerke",
           "text": [
-            "Talvek ist groß genug, um im Inneren noch Wärme zu speichern; Spuren alter vulkanischer Tätigkeit sind wahrscheinlich."
+            "Lithonetzwerke lagern Minerale um, verändern Flüssigkeitsströme, bilden neue Ablagerungen, stabilisieren oder schwächen Gestein und verändern dessen chemische Zusammensetzung. So entstehen biologisch geprägte Tiefenlandschaften – die Plattentektonik des Planeten kontrollieren sie jedoch nicht."
           ]
         }
       ]
@@ -521,12 +917,30 @@
     "Biosphäre": {
       "gruppe": "Natur",
       "icon": "❧",
-      "intro": "Biosphäre von Talvek.",
+      "intro": "Leben aus chemischer Energie.",
       "abschnitte": [
         {
-          "titel": "Leben",
+          "titel": "Tiefenbiosphäre",
           "text": [
-            "Auf Talvek ist kein Leben verzeichnet."
+            "Die komplexe Biosphäre liegt nahezu vollständig unter der Oberfläche und basiert überwiegend auf chemischen Energiequellen. Klassische Wälder und tierische Ökosysteme fehlen weitgehend; die spätere Ausarbeitung konzentriert sich auf unterirdische Organismen mit mineralischen und chemischen Lebensgrundlagen."
+          ]
+        },
+        {
+          "titel": "Lebensformen",
+          "liste": [
+            "Mineralverarbeitende und mineralisch-biologische Mikroorganismen",
+            "Chemosynthetische Kolonien und Tiefenorganismen",
+            "Salzlösungsbewohnende Kleinstlebewesen",
+            "Kristallbildende Organismen",
+            "Parasitäre mineralische Lebensformen",
+            "Symbiotische Reaktionsorganismen",
+            "Gigantische Lithonetzwerke"
+          ]
+        },
+        {
+          "titel": "Hinweis",
+          "text": [
+            "Neben den Lithonetzwerken gibt es keine weiteren intelligenten Spezies."
           ]
         }
       ]
@@ -534,28 +948,32 @@
     "Spezies": {
       "gruppe": "Zivilisation",
       "icon": "✿",
-      "intro": "Spezies von Talvek.",
+      "intro": "Die Lithonetzwerke – Intelligenz im Gestein.",
       "abschnitte": [
         {
-          "titel": "Bewohner",
+          "titel": "Lithonetzwerke",
           "text": [
-            "Talvek ist keine Heimat einer intelligenten Spezies."
+            "Die Lithonetzwerke leben in geeigneten Gesteinsformationen verschiedener Tiefen. Die meisten Individuen haben keinen sichtbaren Körperbereich an der Oberfläche; natürliche Körperstrukturen zeigen sich höchstens in tiefen Schluchten und Höhlen."
+          ],
+          "daten": [
+            [
+              "Natürliche Lebenstiefe",
+              "2–15 km"
+            ],
+            [
+              "Maximale Lebenstiefe",
+              "ca. 25 km"
+            ],
+            [
+              "Lebensraum",
+              "Planetare Kruste"
+            ]
           ]
         },
         {
-          "titel": "Im System von Nerath",
+          "titel": "Außerplanetare Ansiedlung",
           "text": [
-            "Das Terev-System ist die Heimat der Synaptoiden: Ihr Planet Nerath umkreist Terev."
-          ],
-          "verweise": [
-            [
-              "Nerath",
-              "inhalte/himmelskoerper/planeten/details/nerath/hauptseite/index.html"
-            ],
-            [
-              "Speziesdossier Synaptoiden",
-              "inhalte/spezies/Mentale Spezies/Synaptoiden/hauptseite/Spezies.html"
-            ]
+            "Nachkommen können mit technischen Transportsystemen auf geeigneten Planeten angesiedelt werden; ein ausgewachsenes Individuum lässt sich dagegen nicht ohne Weiteres von seinem Heimatgestein trennen. Eine Ansiedlung erfordert umfangreiche geologische Untersuchungen, geeignete Minerale, verfügbare Flüssigkeiten und langfristig nutzbare Energiequellen."
           ]
         }
       ]
@@ -566,25 +984,24 @@
       "intro": "Zivilisation von Talvek.",
       "abschnitte": [
         {
-          "titel": "Siedlungen",
-          "text": [
-            "Für Talvek sind keine dauerhaften Siedlungen verzeichnet."
+          "titel": "Was man sieht",
+          "liste": [
+            "Geologische Messstationen",
+            "Automatisierte Förderanlagen",
+            "Kommunikationsantennen",
+            "Forschungseinrichtungen",
+            "Transportzugänge und geschützte Wartungsschächte"
           ]
         },
         {
-          "titel": "Im System von Nerath",
-          "text": [
-            "Das Terev-System ist die Heimat der Synaptoiden: Ihr Planet Nerath umkreist Terev."
-          ],
-          "verweise": [
-            [
-              "Nerath",
-              "inhalte/himmelskoerper/planeten/details/nerath/hauptseite/index.html"
-            ],
-            [
-              "Speziesdossier Synaptoiden",
-              "inhalte/spezies/Mentale Spezies/Synaptoiden/hauptseite/Spezies.html"
-            ]
+          "titel": "Was darunter liegt",
+          "liste": [
+            "Unterirdische Lebensgebiete",
+            "Geologische Forschungszentren",
+            "Automatisierte Industrieanlagen",
+            "Technische Transportsysteme und planetare Kommunikation",
+            "Geschützte Nachwuchsregionen",
+            "Raumfahrtanlagen für automatisierte Missionen"
           ]
         }
       ]
@@ -595,15 +1012,20 @@
       "intro": "Geschichte von Talvek.",
       "abschnitte": [
         {
-          "titel": "Entstehung",
-          "text": [
-            "Talvek entstand zusammen mit dem Terev-System vor rund 5,6 Milliarden Jahren."
-          ]
-        },
-        {
-          "titel": "Frühere Klimageschichte",
-          "text": [
-            "Talvek könnte in seiner Frühzeit zeitweise günstigere Umweltbedingungen besessen haben. Ob damals langfristig flüssiges Oberflächenwasser existierte, wird untersucht; früheres oder gegenwärtiges Leben ist nicht bestätigt."
+          "titel": "Zeitleiste",
+          "zeitleiste": [
+            [
+              "Frühgeschichte",
+              "Wärmer, mit größeren oberflächennahen Wasservorkommen"
+            ],
+            [
+              "Abkühlung",
+              "Geeignete Lebensräume verlagern sich in den Untergrund"
+            ],
+            [
+              "Gegenwart",
+              "Intelligente Zivilisation der Lithonetzwerke in der Kruste"
+            ]
           ]
         }
       ]
@@ -614,9 +1036,9 @@
       "intro": "Fraktionen von Talvek.",
       "abschnitte": [
         {
-          "titel": "Ansprüche",
+          "titel": "Fraktionen",
           "text": [
-            "Für Talvek sind keine Fraktionsansprüche verzeichnet."
+            "Eine verbindliche planetare Großfraktionszugehörigkeit bleibt bis zur weiteren politischen und historischen Ausarbeitung offen."
           ]
         }
       ]
@@ -628,9 +1050,29 @@
       "abschnitte": [
         {
           "titel": "Rohstoffe",
-          "liste": [
-            "Silikatgestein",
-            "Metallerze"
+          "karten": [
+            {
+              "titel": "Metalle",
+              "text": "Eisen, Kupfer, Nickel, Spurenelemente."
+            },
+            {
+              "titel": "Minerale",
+              "text": "Magnesiumverbindungen, Silikate, Schwefelverbindungen, Salzlagerstätten."
+            },
+            {
+              "titel": "Kristalle",
+              "text": "Funktionelle Kristallminerale."
+            },
+            {
+              "titel": "Biologisch",
+              "text": "Biologisch erzeugte Mineralverbünde."
+            }
+          ]
+        },
+        {
+          "titel": "Hinweis",
+          "text": [
+            "Seltene APORIA-Rohstoffe werden später mit dem Rohstoffarchiv abgeglichen."
           ]
         }
       ]
@@ -639,27 +1081,7 @@
       "gruppe": "Weitere",
       "icon": "✧",
       "intro": "Erforschung von Talvek.",
-      "abschnitte": [
-        {
-          "titel": "Offene Fragen",
-          "liste": [
-            "Wie ist der innere Aufbau beschaffen?",
-            "Gab es früher eine dichtere Atmosphäre?"
-          ]
-        },
-        {
-          "titel": "In der Sternenkarte",
-          "text": [
-            "Talvek ist mit allen Bahndaten im Terev-System der Sternenkarte eingetragen."
-          ],
-          "verweise": [
-            [
-              "In der Sternenkarte zeigen",
-              "Menüs/Sternenkarte/Sternenkarte.html?system=nerath-stern&objekt=nerath-talvek"
-            ]
-          ]
-        }
-      ]
+      "abschnitte": []
     },
     "Besonderheiten": {
       "gruppe": "Weitere",
@@ -667,53 +1089,39 @@
       "intro": "Besonderheiten von Talvek.",
       "abschnitte": [
         {
-          "titel": "Besonderheiten",
-          "liste": [
-            "2 Monde: Rusk, Nemi"
-          ]
-        },
-        {
-          "titel": "Monde",
-          "karten": [
-            {
-              "titel": "Rusk",
-              "text": "28 km Durchmesser, Umlauf in 8,4 Stunden. Rusk ist ein kleiner, unregelmäßig geformter Gesteinsmond Talveks mit zahlreichen Einschlagspuren."
-            },
-            {
-              "titel": "Nemi",
-              "text": "16 km Durchmesser, Umlauf in 33,6 Stunden. Nemi ist ein weiter außen umlaufender kleiner Mond Talveks mit dunkler, stark verkraterter Oberfläche."
-            }
-          ],
-          "verweise": [
+          "titel": "Rekorde",
+          "daten": [
             [
-              "Rusk",
-              "inhalte/himmelskoerper/monde/details/rusk/hauptseite/index.html"
+              "Lebenstiefe",
+              "2–15 km, regional bis ca. 25 km"
             ],
             [
-              "Nemi",
-              "inhalte/himmelskoerper/monde/details/nemi/hauptseite/index.html"
+              "Größte Lebensformen",
+              "Lithonetzwerke – ganze Gebirge als Lebensraum"
+            ],
+            [
+              "Kleinster Mond",
+              "Nemi, ca. 16 km"
             ]
           ]
         },
         {
-          "titel": "Besondere Ereignisse",
-          "karten": [
-            {
-              "titel": "Staubstürme",
-              "text": "Winde transportieren lose Oberflächenpartikel."
-            },
-            {
-              "titel": "Frostveränderungen",
-              "text": "Flüchtige Stoffe wechseln saisonal zwischen Boden und Luft."
-            },
-            {
-              "titel": "Eisabbrüche",
-              "text": "Temperaturwechsel verändern örtliche Eisvorkommen."
-            },
-            {
-              "titel": "Einschläge",
-              "text": "Kleine Meteoriten erreichen die Oberfläche fast ungebremst."
-            }
+          "titel": "Besonderheiten",
+          "liste": [
+            "Wirkt bei oberflächlicher Untersuchung leblos",
+            "Ausgedehnte intelligente Zivilisation unter der Oberfläche",
+            "Ein Gebirge kann mehrere eigenständige Lithonetzwerke beherbergen"
+          ]
+        },
+        {
+          "titel": "Im Spiel",
+          "liste": [
+            "Tiefenerkundung und unterirdische Missionen",
+            "Geologische Forschung und Bergbau",
+            "Diplomatie mit den Lithonetzwerken",
+            "Lebende mineralische Strukturen erkunden",
+            "Medizinische und technische Reparaturaufgaben",
+            "Vergangene Zivilisationsphasen erforschen"
           ]
         }
       ]
@@ -724,9 +1132,9 @@
       "intro": "Medienarchiv von Talvek.",
       "abschnitte": [
         {
-          "titel": "Talvek – Archivbild",
+          "titel": "Talvek aus dem All",
           "bild": true,
-          "bildtext": "Talvek"
+          "bildtext": "Talvek – die stille Welt der Tiefen"
         }
       ]
     }

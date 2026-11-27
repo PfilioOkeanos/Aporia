@@ -11,7 +11,7 @@ const B = {
 };
 export default {
     systemseite: "inhalte/himmelskoerper/sternensysteme/details/darynth-system/hauptseite/index.html",
-    ordner: "teilvereister-planet-mit-dunklen-ozeanen", system: "iravelle-system", planetId: "iravelle-planet",
+    ordner: "iravelle", system: "iravelle-system", planetId: "iravelle-planet",
     name: "Iravelle", genitiv: "von Iravelle", klasse: "Gesteinsplanet", klasseLang: "Terrestrischer Gesteinsplanet mit Terrassensenken, Feuchtgebieten und zwei Monden",
     spezies: { name: "Oneiroiden", gruppe: "Mentale Spezies", ordner: "Oneiroiden", seite: "inhalte/spezies/Mentale Spezies/Oneiroiden/hauptseite/Spezies.html" },
     intro: "Iravelle ist die Heimatwelt der Oneiroiden – der Arunai. Ein terrestrischer Gesteinsplanet mit fünf großen Landmassen, Terrassensenken, Feuchtgebieten, Ozeanen und polaren Eisfeldern. Lange Nächte, geschützte Bodenlandschaften und nachtaktive Fressfeinde begünstigten hier das gemeinsame Schlafen – den Ursprung koordinierten Träumens.",

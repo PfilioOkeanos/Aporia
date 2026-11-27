@@ -6,12 +6,16 @@
   "klasse": "Gelber Zwerg (G6 V)",
   "intro": "Celeun ist ein gelber Zwerg der Spektralklasse G6 V mit 95 % der Sonnenmasse und 82 % ihrer Leuchtkraft – Zentralstern von Vessarin, der Heimatwelt der Thalassoiden. Celeun ist der Zentralstern des Celeun-Systems.",
   "globusDaten": {
-    "planet": "junge-sonne-im-blauen-sternnebel",
+    "planet": "celeun",
     "klasse": "Vulkan",
     "radius": 647001000
   },
   "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=vessarin-stern",
   "grunddaten": [
+    [
+      "System-ID",
+      "vessarin-stern"
+    ],
     [
       "Archiv-ID",
       "AP-A7AC48CA2E"
@@ -45,7 +49,7 @@
       "ca. 4,1 Mrd. Jahre"
     ],
     [
-      "Monde",
+      "Planeten",
       "6 (Celeun I, Vessarin, Celeun III, Celeun IV, Perlschweif, Celeun V)"
     ]
   ],
@@ -73,58 +77,58 @@
     },
     {
       "icon": "◐",
-      "art": "Mond",
+      "art": "Planet",
       "titel": "Celeun I",
       "href": "inhalte/himmelskoerper/planeten/details/celeun-i/hauptseite/index.html",
       "route": null
     },
     {
       "icon": "◐",
-      "art": "Mond",
+      "art": "Planet",
       "titel": "Vessarin",
       "href": "inhalte/himmelskoerper/planeten/details/vessarin/hauptseite/index.html",
       "route": null
     },
     {
       "icon": "◐",
-      "art": "Mond",
+      "art": "Planet",
       "titel": "Celeun III",
       "href": "inhalte/himmelskoerper/planeten/details/celeun-iii/hauptseite/index.html",
       "route": null
     },
     {
       "icon": "◐",
-      "art": "Mond",
+      "art": "Planet",
       "titel": "Celeun IV",
       "href": "inhalte/himmelskoerper/planeten/details/celeun-iv/hauptseite/index.html",
       "route": null
     },
     {
       "icon": "◐",
-      "art": "Mond",
+      "art": "Planet",
       "titel": "Perlschweif",
       "href": "inhalte/himmelskoerper/kometen/details/perlschweif/hauptseite/index.html",
       "route": null
     },
     {
       "icon": "◐",
-      "art": "Mond",
+      "art": "Planet",
       "titel": "Celeun V",
       "href": "inhalte/himmelskoerper/planeten/details/celeun-v/hauptseite/index.html",
       "route": null
     },
     {
       "icon": "✿",
-      "art": "Heimatwelt der Thalassoiden",
-      "titel": "Vessarin",
-      "href": "inhalte/himmelskoerper/planeten/details/vessarin/hauptseite/index.html",
+      "art": "Heimatwelt der Hydronetzwerke",
+      "titel": "Celeun III",
+      "href": "inhalte/himmelskoerper/planeten/details/celeun-iii/hauptseite/index.html",
       "route": null
     },
     {
       "icon": "◈",
       "art": "Spezies-Dossier",
-      "titel": "Thalassoiden",
-      "href": "inhalte/spezies/Biologische Spezies/Thalassoiden/hauptseite/Spezies.html",
+      "titel": "Hydronetzwerke",
+      "href": "inhalte/spezies/Gigantische Lebensformen/hydronetzwerke/hauptseite/Spezies.html",
       "route": null
     }
   ],
@@ -134,8 +138,8 @@
       "href": "Menüs/Sternenkarte/Sternenkarte.html?system=vessarin-stern"
     },
     {
-      "titel": "Speziesdossier Thalassoiden",
-      "href": "inhalte/spezies/Biologische Spezies/Thalassoiden/hauptseite/Spezies.html"
+      "titel": "Speziesdossier Hydronetzwerke",
+      "href": "inhalte/spezies/Gigantische Lebensformen/hydronetzwerke/hauptseite/Spezies.html"
     }
   ],
   "design": {
@@ -272,24 +276,24 @@
               "ca. 4,1 Mrd. Jahre"
             ],
             [
-              "Monde",
+              "Planeten",
               "6 (Celeun I, Vessarin, Celeun III, Celeun IV, Perlschweif, Celeun V)"
             ]
           ]
         },
         {
-          "titel": "Im System von Vessarin",
+          "titel": "Im System von Celeun III",
           "text": [
-            "Das Celeun-System ist die Heimat der Thalassoiden: Ihr Planet Vessarin umkreist Celeun."
+            "Das Celeun-System ist die Heimat der Hydronetzwerke: Ihr Planet Celeun III umkreist Celeun."
           ],
           "verweise": [
             [
-              "Vessarin",
-              "inhalte/himmelskoerper/planeten/details/vessarin/hauptseite/index.html"
+              "Celeun III",
+              "inhalte/himmelskoerper/planeten/details/celeun-iii/hauptseite/index.html"
             ],
             [
-              "Speziesdossier Thalassoiden",
-              "inhalte/spezies/Biologische Spezies/Thalassoiden/hauptseite/Spezies.html"
+              "Speziesdossier Hydronetzwerke",
+              "inhalte/spezies/Gigantische Lebensformen/hydronetzwerke/hauptseite/Spezies.html"
             ]
           ]
         }
@@ -309,7 +313,7 @@
             ],
             [
               "Nächste Nachbarsysteme",
-              "Ferrum-System (7,6 Lj), Thalor-System (18,7 Lj), Aurenn-System (26,5 Lj)"
+              "Ferrum-System (7,6 Lj), Thalor-System (18,7 Lj), Kelira-System (26,3 Lj)"
             ]
           ]
         },
@@ -329,7 +333,7 @@
               "Ozeanplanet"
             ],
             [
-              "Celeun III · 1,7 AE",
+              "Celeun III · 1,2 AE",
               "Gesteinsplanet"
             ],
             [
@@ -345,7 +349,7 @@
               "Asteroidengürtel"
             ],
             [
-              "Äußeres Kometengebiet · 40–56 AE",
+              "Zaruzen-Kometenwolke · 40–56 AE",
               "Kometengebiet"
             ]
           ],
@@ -403,7 +407,7 @@
               "ca. 4,1 Mrd. Jahre"
             ],
             [
-              "Monde",
+              "Planeten",
               "6 (Celeun I, Vessarin, Celeun III, Celeun IV, Perlschweif, Celeun V)"
             ]
           ]
@@ -514,7 +518,7 @@
               "Ozeanplanet"
             ],
             [
-              "Celeun III · 1,7 AE",
+              "Celeun III · 1,2 AE",
               "Gesteinsplanet"
             ],
             [
@@ -530,7 +534,7 @@
               "Asteroidengürtel"
             ],
             [
-              "Äußeres Kometengebiet · 40–56 AE",
+              "Zaruzen-Kometenwolke · 40–56 AE",
               "Kometengebiet"
             ]
           ],
@@ -562,9 +566,9 @@
           "liste": [
             "Ferrum-System – 7,6 Lichtjahre",
             "Thalor-System – 18,7 Lichtjahre",
+            "Kelira-System – 26,3 Lichtjahre",
             "Aurenn-System – 26,5 Lichtjahre",
-            "Iovar-System – 26,5 Lichtjahre",
-            "Sonnensystem – 29 Lichtjahre"
+            "Iovar-System – 26,5 Lichtjahre"
           ]
         }
       ]
@@ -603,11 +607,11 @@
         {
           "titel": "Besonderheiten",
           "liste": [
-            "6 Monde: Celeun I, Vessarin, Celeun III, Celeun IV, Perlschweif, Celeun V"
+            "6 eigene Planeten: Celeun I, Vessarin, Celeun III, Celeun IV, Perlschweif, Celeun V"
           ]
         },
         {
-          "titel": "Monde",
+          "titel": "Planeten",
           "karten": [
             {
               "titel": "Celeun I",
@@ -619,7 +623,7 @@
             },
             {
               "titel": "Celeun III",
-              "text": "10.200 km Durchmesser, Umlauf in 2,3 Jahre. Celeun III ist eine kalte Gesteinswelt mit Polkappen aus Wassereis."
+              "text": "10.200 km Durchmesser, Umlauf in 492,6 Tage. Celeun III ist ein kühlgemäßigter, wasserreicher Gesteinsplanet mit gigantischen Seenketten, Flussbecken und unterirdischen Wasserkorridoren – der Ursprungsplanet der Hydronetzwerke."
             },
             {
               "titel": "Celeun IV",

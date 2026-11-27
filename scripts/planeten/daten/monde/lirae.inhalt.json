@@ -6,12 +6,16 @@
   "klasse": "Mond",
   "intro": "Lirae ist der große innere Mond Vessarins. Seine Gezeiten erzeugen kräftige Tiefenströmungen und Gezeitenbänder an den Inselbögen. Lirae umkreist Vessarin in 9,5 Tage.",
   "globusDaten": {
-    "planet": "halbbeleuchteter-mond-mit-gewaltiger-einschlagsnarbe",
+    "planet": "lirae",
     "klasse": "Gestein",
     "radius": 1700000
   },
   "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=vessarin-stern&objekt=vessarin-lirae",
   "grunddaten": [
+    [
+      "System-ID",
+      "vessarin-lirae"
+    ],
     [
       "Archiv-ID",
       "AP-404597A620"
@@ -97,16 +101,16 @@
     },
     {
       "icon": "✿",
-      "art": "Heimatwelt der Thalassoiden",
-      "titel": "Vessarin",
-      "href": "inhalte/himmelskoerper/planeten/details/vessarin/hauptseite/index.html",
+      "art": "Heimatwelt der Hydronetzwerke",
+      "titel": "Celeun III",
+      "href": "inhalte/himmelskoerper/planeten/details/celeun-iii/hauptseite/index.html",
       "route": null
     },
     {
       "icon": "◈",
       "art": "Spezies-Dossier",
-      "titel": "Thalassoiden",
-      "href": "inhalte/spezies/Biologische Spezies/Thalassoiden/hauptseite/Spezies.html",
+      "titel": "Hydronetzwerke",
+      "href": "inhalte/spezies/Gigantische Lebensformen/hydronetzwerke/hauptseite/Spezies.html",
       "route": null
     }
   ],
@@ -116,8 +120,8 @@
       "href": "Menüs/Sternenkarte/Sternenkarte.html?system=vessarin-stern&objekt=vessarin-lirae"
     },
     {
-      "titel": "Speziesdossier Thalassoiden",
-      "href": "inhalte/spezies/Biologische Spezies/Thalassoiden/hauptseite/Spezies.html"
+      "titel": "Speziesdossier Hydronetzwerke",
+      "href": "inhalte/spezies/Gigantische Lebensformen/hydronetzwerke/hauptseite/Spezies.html"
     }
   ],
   "design": {
@@ -283,18 +287,18 @@
           ]
         },
         {
-          "titel": "Im System von Vessarin",
+          "titel": "Im System von Celeun III",
           "text": [
-            "Das Celeun-System ist die Heimat der Thalassoiden: Ihr Planet Vessarin umkreist Celeun, und Lirae ist einer seiner Monde."
+            "Das Celeun-System ist die Heimat der Hydronetzwerke: Ihr Planet Celeun III umkreist Celeun."
           ],
           "verweise": [
             [
-              "Vessarin",
-              "inhalte/himmelskoerper/planeten/details/vessarin/hauptseite/index.html"
+              "Celeun III",
+              "inhalte/himmelskoerper/planeten/details/celeun-iii/hauptseite/index.html"
             ],
             [
-              "Speziesdossier Thalassoiden",
-              "inhalte/spezies/Biologische Spezies/Thalassoiden/hauptseite/Spezies.html"
+              "Speziesdossier Hydronetzwerke",
+              "inhalte/spezies/Gigantische Lebensformen/hydronetzwerke/hauptseite/Spezies.html"
             ]
           ]
         }
@@ -346,7 +350,7 @@
               "Ozeanplanet"
             ],
             [
-              "Celeun III · 1,7 AE",
+              "Celeun III · 1,2 AE",
               "Gesteinsplanet"
             ],
             [
@@ -362,7 +366,7 @@
               "Asteroidengürtel"
             ],
             [
-              "Äußeres Kometengebiet · 40–56 AE",
+              "Zaruzen-Kometenwolke · 40–56 AE",
               "Kometengebiet"
             ]
           ],

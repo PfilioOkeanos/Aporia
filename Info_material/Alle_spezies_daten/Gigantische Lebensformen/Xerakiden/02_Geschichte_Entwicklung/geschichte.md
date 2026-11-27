@@ -1,82 +1,100 @@
-# Xerakiden – Geschichte
-
-# Xerakiden – Geschichte
+# Xerakiden – Geschichte V2.0
 
 ## Frühe biologische Epoche
 
-- Entstehung kleinerer terrestrischer Vorfahren in trockenen planetaren Regionen.
-- Entwicklung widerstandsfähiger mineralisch-organischer Körperoberflächen.
-- Entstehung spezialisierter mechanischer Sinnesorgane.
-- Zunehmende Anpassung an schwankende Ressourcenverfügbarkeit.
-- Entwicklung größerer Körperformen unter geeigneten Umweltbedingungen.
-- Spezialisierung der Gliedmaßen auf Fortbewegung, Stabilisierung und Manipulation.
+- Entstehung mineralisch gepanzerter terrestrischer Vorfahren auf Halvorn I.
+- Entwicklung komplexer mechanischer Sinnesorgane.
+- Anpassung an zunehmend trockene Umweltbedingungen.
+- Evolution mehrerer verwandter Lebensformen.
+- Langfristige Trennung der Entwicklungslinien von Xerakiden und Wüstenkolossen.
+- Entwicklung komplexer Intelligenz bei den Xerakiden.
+- Zunehmendes gigantisches Körperwachstum bei den Wüstenkolossen.
 
 ## Frühgesellschaftliche Epoche
 
-- Bildung kleiner, kooperierender Gemeinschaften.
-- Austausch von Informationen über Wasserquellen und gefährliche Bodenregionen.
-- Entstehung komplexer Schwingungskommunikation.
-- Entwicklung erster bearbeiteter Werkzeuge.
+- Bildung kooperierender xerakidischer Gemeinschaften.
+- Entwicklung differenzierter Kommunikation.
+- Entstehung früher Werkzeuge.
+- Gemeinsame Erschließung von Wasserquellen.
 - Einrichtung geschützter Aufzuchtbereiche.
-- Gemeinschaftliche Lagerung lebensnotwendiger Ressourcen.
-- Weitergabe langfristiger Umwelterfahrungen.
+- Beobachtung der Wanderbewegungen von Wüstenkolossen.
+- Sammlung natürlich abgestoßener Koloss-Panzerplatten.
+- Erste Verarbeitung mineralisch-organischer Rohstoffe.
+
+## Frühe Materialtechnologie
+
+Die natürlichen Panzerplatten der Wüstenkolosse gehörten zu den frühen biologischen Werkstoffen der xerakidischen Zivilisation.
+
+- Herstellung widerstandsfähiger Werkzeuge.
+- Entwicklung mineralisch-organischer Schutzstrukturen.
+- Untersuchung unterschiedlicher Materialhärten.
+- Bearbeitung elastischer Verbindungsgewebe.
+- Kombination biologischer und mineralischer Materialien.
+- Entwicklung standardisierter Materialprüfungen.
+- Aufbau erster spezialisierter Produktionsstätten.
 
 ## Entstehung dauerhafter Siedlungen
 
-- Aufbau erster dauerhafter Versorgungspunkte.
-- Konstruktion künstlicher Wasserspeicher.
-- Entwicklung belastbarer Verkehrsflächen.
-- Entstehung größerer technischer Arbeitsgemeinschaften.
-- Systematische Untersuchung verschiedener Werkstoffe.
-- Aufbau erster materieller Informationsarchive.
-- Entwicklung regional unterschiedlicher Gesellschaftsformen.
+- Entwicklung künstlicher Wasserspeicher.
+- Errichtung dauerhaft nutzbarer Wohnbereiche.
+- Bau tragfähiger Verkehrsflächen.
+- Entstehung regionaler Gemeinschaften.
+- Nutzung natürlicher Ressourcenlagerstätten.
+- Aufbau kontrollierter Produktions- und Versorgungssysteme.
+- Entwicklung erster organisierter Regeln zur Nutzung der Wüstenkolosse.
 
 ## Wissenschaftliche Epoche
 
-- Übergang von subjektiver Materialwahrnehmung zu standardisierten Messverfahren.
-- Untersuchung mechanischer Schwingungsausbreitung.
-- Entwicklung reproduzierbarer Materialprüfungen.
-- Konstruktion kontrollierbarer Wasseraufbereitungsanlagen.
-- Weiterentwicklung der Energiegewinnung.
-- Erforschung der eigenen Panzerung und ihres biologischen Wachstums.
-- Entstehung spezialisierter wissenschaftlicher Einrichtungen.
+- Systematische Erforschung der eigenen Anatomie.
+- Vergleichende Untersuchung der Wüstenkolosse.
+- Entwicklung moderner Materialwissenschaften.
+- Erforschung regenerierbarer Verbundwerkstoffe.
+- Untersuchung mechanischer Resonanzphänomene.
+- Entwicklung effizienter Wassergewinnungssysteme.
+- Entstehung spezialisierter Forschungsinstitute.
 
 ## Industrielle Epoche
 
-- Aufbau großräumiger Versorgungsnetze.
-- Entwicklung modularer Schwerlastkonstruktionen.
-- Entstehung automatisierter Fertigungsanlagen.
-- Herstellung technischer Werkstoffe nach biologischen Vorbildern.
-- Entwicklung leistungsfähiger Strukturüberwachungssysteme.
-- Erschließung neuer Siedlungsregionen.
-- Zunehmende Zusammenarbeit zwischen unterschiedlichen technischen Fachgebieten.
+- Aufbau automatisierter Produktionsanlagen.
+- Entwicklung synthetischer Xera-Verbundmaterialien.
+- Zunehmende Unabhängigkeit von natürlichen Rohstoffquellen.
+- Weiterentwicklung der Fahrzeugtechnik.
+- Konstruktion großdimensionierter Maschinen.
+- Ausbau regionaler Energie- und Wassernetze.
+- Aufbau biologischer Gewebekulturen.
+- Entwicklung wissenschaftlich kontrollierter Tierhaltung.
 
 ## Historische Herausforderungen
 
-- Wiederkehrende Wasserknappheit.
-- Zusammenbruch einzelner regionaler Versorgungssysteme.
-- Zerstörung von Infrastruktur durch extreme Wetterereignisse.
-- Konflikte über die Nutzung begrenzter Ressourcen.
-- Technologische Fehlschläge bei großräumigen Bauvorhaben.
-- Gesellschaftliche Auseinandersetzungen über Eigentum und gemeinschaftliche Versorgung.
-- Entwicklung verbesserter Sicherheitsstandards und Notfallreserven.
+- Wiederkehrende Trockenperioden.
+- Regionale Versorgungskrisen.
+- Konflikte um Wasserressourcen.
+- Rückgang einzelner Wüstenkoloss-Populationen durch übermäßige Nutzung.
+- Entwicklung geschützter Rückzugsgebiete.
+- Gesellschaftliche Debatten über Jagd und Rohstoffgewinnung.
+- Technologische Fehlschläge bei großdimensionierten Bauvorhaben.
+- Verbesserung von Infrastruktur- und Sicherheitsstandards.
 
-## Interplanetare Epoche
+## Raumfahrtepoche
 
-- Entwicklung beziehungsweise Übernahme geeigneter Raumfahrttechnologien.
-- Konstruktion spezialisierter Transport- und Versorgungssysteme für gigantische Lebensformen.
-- Nutzung kleinerer autonomer Sonden und ferngesteuerter Maschinen.
-- Aufbau wissenschaftlicher Kontakte außerhalb der Heimatwelt.
-- Austausch von Material-, Wasser- und Sensortechnologien mit anderen Zivilisationen.
-- Persönliche interplanetare Reisen bleiben aufgrund der Körpergröße aufwendig.
+- Entwicklung und Übernahme geeigneter Raumfahrttechnologien.
+- Konstruktion eigener großdimensionierter Raumfahrzeuge.
+- Aufbau orbitaler Infrastruktur.
+- Automatisierte Rohstoffgewinnung außerhalb der Heimatwelt.
+- Entwicklung interstellarer Transportmöglichkeiten.
+- Kontakt zu weiteren intelligenten Lebensformen.
+- Export spezialisierter xerakidischer Technologien.
+- Aufbau wissenschaftlicher und wirtschaftlicher Beziehungen.
 
-## Noch festzulegende historische Daten
+## Offene historische Festlegungen
 
-- Alter der Spezies.
+- Alter der intelligenten Xerakiden.
+- Zeitpunkt der evolutionären Artentrennung.
 - Absolute historische Jahreszahlen.
-- Namen bedeutender Persönlichkeiten.
+- Namen historischer Persönlichkeiten.
 - Historische Staaten und Zivilisationen.
-- Zeitpunkt des ersten außerplanetaren Kontakts.
-- Konkrete historische Konflikte.
-- Zeitpunkt einer möglichen Fraktionsaufnahme.
-- Gegenwärtige politische und wirtschaftliche Lage.
+- Zeitpunkt der ersten interstellaren Reise.
+- Zeitpunkt des ersten Kontakts mit den Dendroarchen.
+- Historische Fraktionszugehörigkeiten.
+
+Diese Angaben werden erst während der weiterführenden historischen und politischen Ausarbeitung festgelegt.

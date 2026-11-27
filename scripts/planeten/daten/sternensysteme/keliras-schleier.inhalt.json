@@ -6,12 +6,16 @@
   "klasse": "Trümmergürtel",
   "intro": "Keliras Schleier ist eine kalte Trümmerscheibe aus zwei Ringen – 22 bis 26 AE und 36 bis 42 AE – mit einer staubarmen Lücke dazwischen. Weil es im System keinen Gasriesen gibt, blieb die Urscheibe hier draußen weitgehend unberührt; aus ihr stammen die Kometen, die gelegentlich ins Innere fallen. Keliras Schleier umgibt Kelira im Kelira-System.",
   "globusDaten": {
-    "planet": "versetzte-doppelringe-um-einen-stern",
+    "planet": "keliras-schleier",
     "klasse": "Gestein",
     "radius": 1000000
   },
   "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=seyrath-stern&objekt=seyrath-schleier",
   "grunddaten": [
+    [
+      "System-ID",
+      "seyrath-schleier"
+    ],
     [
       "Archiv-ID",
       "AP-A12D902A91"
@@ -61,16 +65,16 @@
     },
     {
       "icon": "✿",
-      "art": "Heimatwelt der Chronoiden",
-      "titel": "Seyrath",
-      "href": "inhalte/himmelskoerper/planeten/details/seyrath/hauptseite/index.html",
+      "art": "Heimatwelt der Megakolonien",
+      "titel": "Doran",
+      "href": "inhalte/himmelskoerper/planeten/details/doran/hauptseite/index.html",
       "route": null
     },
     {
       "icon": "◈",
       "art": "Spezies-Dossier",
-      "titel": "Chronoiden",
-      "href": "inhalte/spezies/Mentale Spezies/Chronoiden/hauptseite/Spezies.html",
+      "titel": "Megakolonien",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Megakolonien/hauptseite/Spezies.html",
       "route": null
     }
   ],
@@ -80,8 +84,8 @@
       "href": "Menüs/Sternenkarte/Sternenkarte.html?system=seyrath-stern&objekt=seyrath-schleier"
     },
     {
-      "titel": "Speziesdossier Chronoiden",
-      "href": "inhalte/spezies/Mentale Spezies/Chronoiden/hauptseite/Spezies.html"
+      "titel": "Speziesdossier Megakolonien",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Megakolonien/hauptseite/Spezies.html"
     }
   ],
   "design": {
@@ -286,18 +290,18 @@
           ]
         },
         {
-          "titel": "Im System von Seyrath",
+          "titel": "Im System von Doran",
           "text": [
-            "Das Kelira-System ist die Heimat der Chronoiden: Ihr Planet Seyrath umkreist Kelira."
+            "Das Kelira-System ist die Heimat der Megakolonien: Ihr Planet Doran umkreist Kelira."
           ],
           "verweise": [
             [
-              "Seyrath",
-              "inhalte/himmelskoerper/planeten/details/seyrath/hauptseite/index.html"
+              "Doran",
+              "inhalte/himmelskoerper/planeten/details/doran/hauptseite/index.html"
             ],
             [
-              "Speziesdossier Chronoiden",
-              "inhalte/spezies/Mentale Spezies/Chronoiden/hauptseite/Spezies.html"
+              "Speziesdossier Megakolonien",
+              "inhalte/spezies/Gigantische Lebensformen/Megakolonien/hauptseite/Spezies.html"
             ]
           ]
         }

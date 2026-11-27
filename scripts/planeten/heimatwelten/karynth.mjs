@@ -2,7 +2,7 @@
 // Offen und hier ergänzt: Name des Sterns (Ysmeroth), übrige Körper des Systems (Doppelstern, Resonanzkette, Trojaner).
 const G = "assets/bilder/Alle Spezies+Übersicht/Biologische Spezies/Meta Morphen/gesamtdarstellung/";
 export default {
-    ordner: "mineral-ozeanwelt-mit-kristallkusten", system: "karynth-system", planetId: "karynth-planet",
+    ordner: "karynth", system: "karynth-system", planetId: "karynth-planet",
     name: "Karynth", genitiv: "von Karynth", klasse: "Gesteinsplanet", klasseLang: "Alte, wasserreiche Gesteinswelt mit Gezeitenlandschaften",
     spezies: { name: "Metamorphen", gruppe: "Biologische Spezies", ordner: "Meta Morphen", seite: "inhalte/spezies/Biologische Spezies/Meta Morphen/hauptseite/Spezies.html" },
     intro: "Karynth ist die Heimatwelt der Metamorphen: eine alte, wasserreiche Gesteinswelt mit drei Kontinenten, nebelreichen Gezeitenlandschaften, gewaltigen Höhlensystemen und einer außergewöhnlich vielfältigen Biosphäre. Am Himmel stehen zwei Monde – und ein ferner roter Begleitstern.",

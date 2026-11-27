@@ -1,0 +1,66 @@
+// Seyvar III · Heimatwelt der Biophäriden (Quelle: Info_material/…/Gigantische Lebensformen/Biophäriden/05_Heimatwelt/heimatwelt-referenz.md
+// und Sternensystem/Sternensystem.md – Bahn von 1,38 auf 0,88 AE verlegt; 3.900 km, 0,3 Erdmassen, e 0,035, i 1,4°)
+export default {
+    ordner: "seyvar-iii", system: "nhalyss-system", planetId: "nhalyss-seyvar-iii",
+    name: "Seyvar III", genitiv: "von Seyvar III", klasse: "Gesteinsplanet", globusKlasse: "Organisch geprägte Welt",
+    klasseLang: "Terrestrischer Biosphärenplanet",
+    spezies: { name: "Biophäriden", gruppe: "Gigantische Lebensformen", ordner: "Biophäriden" },
+    intro: "Seyvar III ist eine kleine, biologisch vielfältige Gesteinswelt mit dichter, feuchter Atmosphäre. Hier leben die Biophäriden: anatomisch zusammenhängende Individuen, deren Organlandschaften, Membranflächen und Verbindungskorridore sich über ganze Regionen und sogar Kontinente erstrecken – vom Weltraum aus sichtbar. Der Planet selbst ist kein lebender Organismus.",
+    bildtext: "Seyvar III – Welt der Organlandschaften",
+    kurzprofil: [
+        "Seyvar III ist der dritte Planet des Seyvar-Systems und umkreist den orangefarbenen Zwerg Seyvar in 0,88 AE Abstand – innerhalb der habitablen Zone. Er erhält rund 61 % der irdischen Einstrahlung; eine dichte, wärmespeichernde Atmosphäre von etwa 1,8 bar hält die mittlere Temperatur bei rund 13 °C.",
+        "Mit 7.800 Kilometern Durchmesser und 0,3 Erdmassen ist der Planet klein, aber dank eines großen Metallkerns sehr dicht; die Schwerkraft beträgt 0,8 g. 57 % der Oberfläche sind Land auf vier Kontinenten, getrennt von flachen Schelfmeeren und Inselketten – ideale Bedingungen für interkontinentale biologische Verbindungsgewebe.",
+    ],
+    farben: { nacht: "#07050b", tiefe: "#120d18", akzent: "#c78ae0", sand: "#cdb8a0", moos: "#6fae7a", ozean: "#4a74b8", glas: "rgba(18, 13, 24, .8)", "glas-hell": "rgba(30, 22, 40, .86)", linie: "rgba(199, 138, 224, .16)", "linie-hell": "rgba(210, 170, 230, .36)", text: "#f2eef6", leise: "#b2a6bf", "aporia-page-tint": "#4a2a5a" },
+    werte: {
+        temperatur: "ca. 13 °C", temperaturMittel: 13, ozeane: "ca. 43 % (Meeresbecken, Binnenmeere, Schelfmeere)",
+        atmosphaere: [["Stickstoff", 79], ["Sauerstoff", 15], ["Kohlendioxid", 3], ["Argon", 2.8], ["Weitere Gase", 0.2]],
+        atmoKurz: "Dicht, feucht, CO₂-reich, ca. 1,8 bar",
+        atmoText: "Auf Meereshöhe herrschen etwa 1,8 bar. Die trockene Luft besteht aus 79 % Stickstoff, 15 % Sauerstoff, 3 % Kohlendioxid und 2,8 % Argon; Wasserdampf kommt regional und saisonal hinzu. Der erhöhte Kohlendioxidgehalt unterstützt Wärmespeicherung und biologische Primärproduktion – für Menschen ist die Luft deshalb nicht ohne Atemtechnik verträglich. Biologische Gasaustauschorgane beeinflussen die Zusammensetzung.",
+        druck: "ca. 1,8 bar", druckMittel: 1.8,
+        rotationH: 28, rotationText: "28 h", achsneigung: 19.5, jahreszeiten: "Gemäßigt ausgeprägt",
+        treibhausText: "Die dichte, kohlendioxidreiche Atmosphäre gleicht die schwächere Einstrahlung mit einem Treibhauseffekt von rund 57 K aus; der Mittelwert ist noch durch eine Klimasimulation zu bestätigen.",
+        magnetfeldFaktor: 0.7,
+        physikExtra: [["Mittlere Dichte", "ca. 7,2 g/cm³ (großer Metallkern)"], ["Gesamtoberfläche", "ca. 191 Mio. km²"], ["Magnetfeld", "Global, ca. 25–45 µT, Polarlichter"]],
+        extra: [["Archiv-ID", "AP-7DC37C55C0"], ["Alter", "ca. 5 Mrd. Jahre"], ["Kontinente", "Vaelora, Theravon, Orelvara, Kharavel"], ["Technologische Infrastruktur", "Regional vorhanden"]],
+        vergleichExtra: [["Wasserbedeckung", 43, 71, "%"]],
+        zonen: { einheit: "°C", min: -40, max: 40, bereiche: [["Polare Regionen", -40, -20], ["Subpolare Regionen", -15, 5], ["Gemäßigte Regionen", 5, 24], ["Tropische Tiefländer", 25, 35]] },
+        zonenText: "Überwiegend gemäßigt und feucht, mit ausgedehnten Nebelregionen, regelmäßigen Regenfronten und starken regionalen Wasserkreisläufen. Von feuchtwarmen Äquatorregionen über gemäßigte Wälder bis zu Tundra und Polareis reichen die Klimazonen – die Biophäriden besitzen für jede eigene Anpassungen.",
+        rekorde: [["Größte Lebewesen", "Biophäriden mit planetenweiter geografischer Ausdehnung"], ["Lebensdauer der Biophäriden", "bis ca. 2 Millionen Jahre"], ["Größter Kontinent", "Vaelora"]],
+    },
+    kapitel: {
+        "Allgemeines": { intro: "Seyvar III auf einen Blick: Kontinente voller lebender Organe.", abschnitte: [
+            { titel: "Hauptmerkmale", karten: [{ titel: "Organlandschaften", text: "Lebende Membranen, Geweberippen und Organe – vom Weltraum sichtbar." }, { titel: "Dichte, feuchte Luft", text: "1,8 bar, Nebel und Regenfronten." }, { titel: "Vier Kontinente", text: "Verbunden durch Schelfmeere, Inselketten und Gewebekorridore." }, { titel: "Kein lebender Planet", text: "Die Biophäriden sind Teil der Biosphäre, nicht der Planet selbst." }] },
+            { titel: "Einordnung", daten: [["Karten-ID", "nhalyss-seyvar-iii"], ["Position", "Dritter Planet"], ["Heimatspezies", "Biophäriden (Gigantische Lebensformen)"], ["Monde und Ringe", "Keine"], ["Nachbarwelt", "Nhalyss, Heimat der Bioluminoiden"]] }] },
+        "Astronomie": { intro: "Der dritte Planet um den orangefarbenen Zwerg Seyvar.", abschnitte: [
+            { titel: "Bahndaten", daten: [["Mittlere Entfernung", "ca. 131,65 Mio. km"], ["Bahnneigung", "1,4°"], ["Bisherige Umlaufbahn", "1,38 AE (auf 0,88 AE verlegt)"]] },
+            { titel: "Magnetfeld", liste: ["Globales Magnetfeld von etwa 25–45 µT", "Wechselwirkung mit dem Sternwind Seyvars", "Natürliche Polarlichter und regionale Anomalien", "Schutz vor geladenen stellaren Teilchen"] }] },
+        "Physik": { abschnitte: [{ titel: "Klein und dicht", text: ["Die hohe mittlere Dichte von etwa 7,2 g/cm³ erklärt ein vergleichsweise großer, metallreicher Kern. Die Oberflächengravitation beträgt rund 7,85 m/s², die Fluchtgeschwindigkeit etwa 7,8 km/s. Die geringere Schwerkraft begünstigt großflächige biologische Gewebe und massive Organstrukturen."] }] },
+        "Planetare Struktur": { abschnitte: [{ titel: "Aufbau", text: ["Seyvar III besitzt einen dichten Eisen-Nickel-Kern mit Magnetfelddynamo, einen silikatischen Mantel und eine regional unterschiedlich dicke Kruste mit geothermischen Regionen, Bruchsystemen und Sedimentbecken."], schichten: [["Kruste", "Unterschiedlich dick, Sedimentbecken, Bruchsysteme"], ["Mantel", "Silikatisch, geothermisch aktiv"], ["Kern", "Groß, eisen- und nickelreich, Dynamo"]] }] },
+        "Geografie": { intro: "Vier Kontinente, verbunden durch Leben.", abschnitte: [
+            { titel: "Oberfläche", balken: { werte: [["Land", 57], ["Wasser", 43]] }, daten: [["Landfläche", "ca. 109 Mio. km²"], ["Wasserfläche", "ca. 82 Mio. km²"]] },
+            { titel: "Kontinente", karten: [
+                { titel: "Vaelora", text: "Größte Landmasse mit feuchten Ebenen, großen Flüssen und Wäldern – viele Energieorgane und juvenile Biophäriden." },
+                { titel: "Theravon", text: "Gebirgsreich, mineralreiche Hochländer und Geothermie – geschützte neuronale Großorgane." },
+                { titel: "Orelvara", text: "Gegliederte Küsten, Flachmeere und Feuchtgebiete – Filterregionen und interkontinentale Korridore." },
+                { titel: "Kharavel", text: "Kühler Südkontinent mit Gletschern und Wasserspeichern – Speicherorgane und ruhende Körperregionen." }] },
+            { titel: "Biologische Landschaften", karten: [{ titel: "Organebenen", text: "Lebende Membranen, Geweberippen und spezialisierte Organe." }, { titel: "Pulsationsfelder", text: "Pulsierende Regionen, durch die Flüssigkeiten und Nährstoffe strömen." }, { titel: "Lichtabsorptionslandschaften", text: "Dunkelviolette bis schwarze Membranflächen zur Energiegewinnung." }, { titel: "Neuronale Hochländer", text: "Gewaltige neuronale Organe, teils in Gesteinsformationen geschützt." }, { titel: "Verbindungskorridore", text: "Kilometerlange, teils interkontinentale Gewebestrukturen." }, { titel: "Lebende Küsten", text: "Biologische Filter und Wasseraufnahmeorgane." }, { titel: "Regenerationsbecken", text: "Abgeschirmte Regionen für neues Gewebe." }, { titel: "Narben- und Totlandschaften", text: "Alte Verletzungen und Körperregionen verstorbener Individuen, neu besiedelt." }, { titel: "Juvenile Entwicklungsgebiete", text: "Geschützte Regionen junger Biophäriden." }] }] },
+        "Atmosphäre": { abschnitte: [{ titel: "Wolkenschichten", daten: [["Bodennaher Nebel", "häufig in Feuchtgebieten und Organlandschaften"], ["Niedrige Schichtwolken", "ca. 0,5–3 km"], ["Mittlere Wolken", "ca. 3–8 km"], ["Hohe Eiswolken", "ca. 8–15 km"], ["Gewitterwolken", "regional bis ca. 18 km"]] }] },
+        "Klima": { abschnitte: [{ titel: "Stürme", liste: ["Regelmäßige Gewitterfronten und Starkregen", "Küstenstürme und tropische Wirbelstürme", "Gebirgsbedingte Fallwinde", "Regionale Überschwemmungen"], text: ["Die dichte Luft verursacht bei starkem Wind hohe mechanische Belastungen; die Körpermembranen der Biophäriden besitzen flexible Schutz- und Entlastungsstrukturen."] }] },
+        "Gewässer": { abschnitte: [
+            { titel: "Gewässer", liste: ["Verbundene Meeresbecken und große Binnenmeere", "Süßwasserseen und Flusslandschaften", "Flache Schelfregionen", "Unterirdische Speicher und geothermische Gewässer", "Saisonal überflutete Niederungen"] },
+            { titel: "Besondere Gewässer", karten: [{ titel: "Vaeloranisches Binnenmeer", text: "Nährstoffreiche Küsten und vielfältige Ökosysteme." }, { titel: "Theravon-Tiefenbecken", text: "Tiefer Speicher mit mineralreichen Quellen." }, { titel: "Orelvara-Schelfmeer", text: "Flachmeer zwischen Landmassen – wichtig für interkontinentale Verbindungen." }, { titel: "Kharavel-Eisreservoire", text: "Süßwasser in Gletschern, Hochlandseen und unterirdischen Becken." }] }] },
+        "Geologie": { abschnitte: [{ titel: "Geologie", liste: ["Aktive Plattentektonik", "Metallreiche Gesteine und basaltische Hochländer", "Sedimentschichten und mineralreiche Flüsse", "Hydrothermale Quellen und regionaler Vulkanismus", "Höhlen- und Spaltensysteme"], text: ["Verbindungsstrukturen der Biophäriden wachsen bevorzugt entlang stabiler Gesteinsformationen; aktive tektonische Regionen gefährden langfristig zusammenhängende Körper."] }] },
+        "Biosphäre": { intro: "Eine vielfältige Biosphäre, in der Giganten nur ein Teil sind.", abschnitte: [
+            { titel: "Biosphäre", text: ["Seyvar III besitzt eine eigenständige kohlenstoffbasierte Biosphäre mit Pflanzen, Tieren, pilzartigen Zersetzern, Mikroben, aquatischen und unterirdischen Gemeinschaften, Symbionten und Parasiten. Energie gewinnt sie über Licht und chemische Stoffwechselwege."] },
+            { titel: "Flora", liste: ["Dunkelgrüne und violette Vegetation, an das orangefarbene Licht angepasst", "Feuchtigkeitsliebende Wälder und elastische Pflanzenstrukturen", "Wasserspeichernde Gewächse und schwimmende Pflanzenmatten", "Flechtenartige Organismen", "Vegetation auf abgestorbenen Biophäridengeweben", "Regional biolumineszierende Pflanzen"] },
+            { titel: "Fauna", liste: ["Große Pflanzenfresser und Flugorganismen", "Amphibische und unterirdische Tiere", "Aquatische Räuber", "Gewebeverwertende Aasfresser und Reinigungssymbionten", "Parasitäre Gewebebewohner", "Wandernde Populationen zwischen Körperregionen"], text: ["Die Fauna besitzt keine geistige Verbindung zu den Biophäriden."] }] },
+        "Spezies": { intro: "Die Biophäriden – Individuen von der Größe ganzer Regionen.", abschnitte: [
+            { titel: "Biophäriden", text: ["Biophäriden sind anatomisch zusammenhängende Individuen mit regional spezialisierten Organsystemen und einem dezentralen, individuellen Bewusstsein. Sie leben überwiegend stationär, pflanzen sich natürlich fort und kommunizieren technologisch unterstützt auch interplanetar. Mehrere kleinere und wenige besonders große Individuen bewohnen verschiedene Regionen – keines bedeckt die gesamte Oberfläche."], daten: [["Ausdehnung", "Planetenweit geografisch verteilt"], ["Lebensdauer", "bis ca. 2 Millionen Jahre"], ["Bewusstsein", "Dezentral, individuell"], ["Lebensweise", "Überwiegend stationär"]] }] },
+        "Zivilisation": { abschnitte: [{ titel: "Zivilisation", text: ["Technologische Infrastruktur ist regional vorhanden und ergänzt die biologischen Strukturen der Biophäriden; orbitale Beobachtungsstationen umkreisen den Planeten."] },
+            { titel: "Planetare Besonderheiten", liste: ["Vom Weltraum sichtbare Organregionen", "Über Kontinente verlaufende Verbindungsstrukturen", "Gewaltige Gasaustauschflächen", "Pulsierende Landschaften", "Biolumineszierende Körperstrukturen auf der Nachtseite", "Wälder zwischen gigantischen Organen", "Biologisch beeinflusste Niederschlagsmuster"] }] },
+        "Rohstoffe": { abschnitte: [{ titel: "Mineralische Rohstoffe", liste: ["Eisen, Nickel und Kupfer", "Silikate", "Phosphathaltige Minerale", "Schwefelverbindungen", "Calcium- und magnesiumhaltige Gesteine"] }] },
+        "Besonderheiten": { abschnitte: [{ titel: "Hinweise für Besucher", liste: ["Atemtechnik erforderlich (erhöhter CO₂-Gehalt)", "Organlandschaften nicht beschädigen", "Sturm- und Hochwasserwarnungen beachten"] }] },
+        "Medienarchiv": { abschnitte: [] },
+    },
+};

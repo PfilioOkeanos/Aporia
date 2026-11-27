@@ -1,56 +1,123 @@
 {
-  "_erzeugt": "koerper-bauen",
   "name": "Morvath III",
   "genitiv": "von Morvath III",
   "dossierName": "Morvath III-Dossier",
-  "klasse": "Gesteinsplanet",
-  "intro": "Morvath III ist eine kalte Super-Erde mit dichter, gefrorener Kruste. Morvath III umkreist Morvath in 1,3 AE Abstand und braucht für einen Umlauf 587,2 Tage.",
+  "klasse": "Planet · Gesteinsplanet",
+  "intro": "Morvath III ist eine Supererde unter einer geschlossenen Eiskruste. Darunter liegt ein nahezu globaler, lichtloser Ozean von fünf bis fünfzehn Kilometern Tiefe – erwärmt von der Glut des Planeteninneren. Hier leben die Kryotharen, die Eisweltriesen: 150 bis 500 Meter lange, biolumineszente Tiefseebewohner mit einer akustisch-thermischen Hochzivilisation.",
   "globusDaten": {
     "planet": "verwitterter-felsplanet-im-sternenlicht",
-    "klasse": "Gestein",
+    "klasse": "Eis-Ozeanwelt",
     "radius": 7600000
   },
-  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=gorvhan-stern&objekt=gorvhan-morvath-iii",
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=gorvhan-stern",
   "grunddaten": [
     [
       "Archiv-ID",
       "AP-2107B3DA6E"
     ],
     [
-      "Typ",
-      "Gesteinsplanet"
-    ],
-    [
-      "Sternsystem",
-      "Morvath-System"
-    ],
-    [
-      "Zentralkörper",
-      "Morvath"
-    ],
-    [
-      "Große Halbachse",
-      "1,3 AE"
-    ],
-    [
-      "Umlaufzeit",
-      "587,2 Tage"
+      "Klasse",
+      "Globaler Eis-Ozeanplanet · Supererde"
     ],
     [
       "Durchmesser",
       "15.200 km"
     ],
     [
+      "Radius",
+      "7.600 km"
+    ],
+    [
       "Masse",
       "2,1 Erdmassen"
     ],
     [
-      "Schwerkraft",
-      "1,48 g"
+      "Dichte",
+      "6,82 g/cm³"
     ],
     [
-      "Gleichgewichtstemperatur",
-      "ca. -85 °C"
+      "Schwerkraft",
+      "1,48 g (14,5 m/s²)"
+    ],
+    [
+      "Mittlere Oberflächentemperatur",
+      "−140 bis −55 °C an der Oberfläche · −2 bis +8 °C im Ozean"
+    ],
+    [
+      "Ozeane",
+      "Nahezu global – subglazialer Weltozean unter der Eiskruste"
+    ],
+    [
+      "Atmosphäre",
+      "88 % Stickstoff, 8 % Argon, 3 % Kohlendioxid, 1 % Weitere Bestandteile"
+    ],
+    [
+      "Atmosphärendruck",
+      "ca. 0,08 bar (Oberfläche) · 80–190 MPa an der Eisunterseite"
+    ],
+    [
+      "Rotationsperiode",
+      "ca. 32 h"
+    ],
+    [
+      "Umlaufzeit",
+      "587 Erdtage"
+    ],
+    [
+      "Abstand zum Stern",
+      "1,3 AE"
+    ],
+    [
+      "Monde",
+      "keine"
+    ],
+    [
+      "Zentralstern",
+      "Morvath, Orangefarbener Zwerg (K1 V)"
+    ],
+    [
+      "Einstrahlung",
+      "0,3-fach der Erde"
+    ],
+    [
+      "Achsneigung",
+      "11°"
+    ],
+    [
+      "Exzentrizität",
+      "0,04"
+    ],
+    [
+      "Fluchtgeschwindigkeit",
+      "14,8 km/s"
+    ],
+    [
+      "Alter",
+      "ca. 7,8 Mrd. Jahre"
+    ],
+    [
+      "Beiname der Spezies",
+      "Die Eisweltriesen"
+    ],
+    [
+      "Archiv-ID",
+      "AP-2107B3DA6E"
+    ],
+    [
+      "Primäre Biosphäre",
+      "Unterhalb der Eiskruste"
+    ],
+    [
+      "Salzgehalt des Ozeans",
+      "ca. 30–50 g/kg"
+    ],
+    [
+      "Fraktionszugehörigkeit",
+      "Offen"
+    ],
+    [
+      "Intelligente Spezies",
+      "Kryotharen"
     ]
   ],
   "position": [
@@ -60,84 +127,103 @@
     ],
     [
       "Zentralstern",
-      "Morvath",
-      "inhalte/himmelskoerper/sterne/details/morvath/hauptseite/index.html"
+      "Morvath · K1 V, Einzelstern"
     ],
     [
-      "Abstand",
-      "1,3 AE"
+      "Bahnposition",
+      "3. von 5 Planeten"
+    ],
+    [
+      "Entfernung zur Sonne",
+      "33 Lichtjahre"
+    ],
+    [
+      "Nächste Nachbarsysteme",
+      "Aurenn-System (21,8 Lj), Seryn-System (27,3 Lj)"
     ]
   ],
   "verknuepfungen": [
     {
-      "icon": "✦",
-      "art": "Sternenkarte",
-      "titel": "Morvath III im Morvath-System",
-      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=gorvhan-stern&objekt=gorvhan-morvath-iii",
-      "route": null
-    },
-    {
-      "icon": "☀",
-      "art": "Zentralstern",
-      "titel": "Morvath",
-      "href": "inhalte/himmelskoerper/sterne/details/morvath/hauptseite/index.html",
-      "route": null
-    },
-    {
       "icon": "✿",
-      "art": "Heimatwelt der Technoiden",
-      "titel": "Gorvhan",
-      "href": "inhalte/himmelskoerper/planeten/details/gorvhan/hauptseite/index.html",
+      "art": "Heimische Spezies",
+      "titel": "Kryotharen",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Kryotharen/hauptseite/Spezies.html",
       "route": null
     },
     {
       "icon": "◈",
       "art": "Spezies-Dossier",
-      "titel": "Technoiden",
-      "href": "inhalte/spezies/Biologische Spezies/Technoiden/Hauptseite/Spezies.html",
+      "titel": "Heimatwelt",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Kryotharen/Unterseiten/Heimatwelt/heimatwelt.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Politik und Fraktionen",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Kryotharen/Unterseiten/Politik/politik.html",
+      "route": null
+    },
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Morvath-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=gorvhan-stern",
       "route": null
     }
   ],
   "quellen": [
     {
-      "titel": "Sternenkarte · Morvath-System",
-      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=gorvhan-stern&objekt=gorvhan-morvath-iii"
+      "titel": "Speziesdossier Kryotharen · Heimatwelt",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Kryotharen/Unterseiten/Heimatwelt/heimatwelt.html"
     },
     {
-      "titel": "Speziesdossier Technoiden",
-      "href": "inhalte/spezies/Biologische Spezies/Technoiden/Hauptseite/Spezies.html"
+      "titel": "Speziesdossier Kryotharen · Geschichte",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Kryotharen/Unterseiten/Geschichte/geschichte.html"
+    },
+    {
+      "titel": "Speziesdossier Kryotharen · Gesellschaft",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Kryotharen/Unterseiten/Gesellschaft/gesellschaft.html"
+    },
+    {
+      "titel": "Speziesdossier Kryotharen · Politik",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Kryotharen/Unterseiten/Politik/politik.html"
+    },
+    {
+      "titel": "Speziesdossier Kryotharen · Allgemeines",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Kryotharen/Unterseiten/Allgemeines/allgemeines.html"
     }
   ],
   "design": {
     "farben": {
-      "nacht": "#080808",
-      "tiefe": "#111113",
-      "akzent": "#bdc0c7",
-      "sand": "#c2bdad",
-      "moos": "#9cb69e",
-      "ozean": "#7c9fba",
-      "glas": "rgba(8, 12, 18, .76)",
-      "glas-hell": "rgba(16, 22, 32, .82)",
-      "linie": "rgba(255, 255, 255, .12)",
-      "linie-hell": "rgba(255, 255, 255, .3)",
-      "text": "#eef2f6",
-      "leise": "#a8b0bc",
-      "aporia-page-tint": "#45474c"
+      "nacht": "#03070d",
+      "tiefe": "#07101c",
+      "akzent": "#5cc8f0",
+      "sand": "#cfd8e2",
+      "moos": "#5fd6c0",
+      "ozean": "#2f6fb8",
+      "glas": "rgba(7, 14, 26, .8)",
+      "glas-hell": "rgba(12, 22, 38, .86)",
+      "linie": "rgba(92, 200, 240, .16)",
+      "linie-hell": "rgba(130, 215, 245, .36)",
+      "text": "#eaf3fa",
+      "leise": "#9fb3c6",
+      "aporia-page-tint": "#163f6a"
     }
   },
   "kapitel": {
     "Allgemeines": {
       "gruppe": "Weitere",
       "icon": "▤",
-      "intro": "Morvath III auf einen Blick.",
+      "intro": "Morvath III auf einen Blick: Eis oben, Ozean darunter.",
       "abschnitte": [
         {
           "titel": "Kurzprofil",
           "bild": true,
-          "bildtext": "Morvath III",
+          "bildtext": "Morvath III – die Eiswelt über dem Ozean",
           "text": [
-            "Morvath III ist eine kalte Super-Erde mit dichter, gefrorener Kruste.",
-            "Morvath III umkreist Morvath in 1,3 AE Abstand und braucht für einen Umlauf 587,2 Tage."
+            "Morvath III ist der dritte Hauptplanet des Morvath-Systems. Mit 15.200 Kilometern Durchmesser und 2,1 Erdmassen ist er deutlich größer und schwerer als die Erde; die Schwerkraft beträgt rund 1,48 g. In 1,30 AE Abstand erhält er nur etwa 30 % der irdischen Einstrahlung – die Oberfläche liegt bei −140 bis −55 °C.",
+            "Unter einer 6 bis 14 Kilometer dicken Wassereiskruste liegt ein zusammenhängender Weltozean mit −2 bis +8 °C, an hydrothermalen Feldern bis +45 °C. Sternenlicht erreicht ihn nicht: Chemosynthese an Thermalquellen bildet die Grundlage aller Nahrungsketten. Radioaktiver Zerfall und Restwärme verhindern, dass der Ozean erstarrt."
           ]
         },
         {
@@ -145,56 +231,132 @@
           "daten": [
             [
               "Typ",
-              "Gesteinsplanet"
+              "Globaler Eis-Ozeanplanet · Supererde"
             ],
             [
-              "Sternsystem",
-              "Morvath-System"
-            ],
-            [
-              "Zentralkörper",
-              "Morvath"
-            ],
-            [
-              "Große Halbachse",
-              "1,3 AE"
-            ],
-            [
-              "Umlaufzeit",
-              "587,2 Tage"
-            ],
-            [
-              "Durchmesser",
-              "15.200 km"
-            ],
-            [
-              "Masse",
-              "2,1 Erdmassen"
+              "Zentralstern",
+              "Morvath (Orangefarbener Zwerg (K1 V))"
             ],
             [
               "Schwerkraft",
               "1,48 g"
             ],
             [
-              "Gleichgewichtstemperatur",
-              "ca. -85 °C"
+              "Durchmesser",
+              "15.200 km"
+            ],
+            [
+              "Mittlere Temperatur",
+              "−140 bis −55 °C an der Oberfläche · −2 bis +8 °C im Ozean"
+            ],
+            [
+              "Atmosphäre",
+              "Dünn, kalt, nicht atembar, ca. 0,08 bar"
+            ],
+            [
+              "Wasser",
+              "Nahezu global – subglazialer Weltozean unter der Eiskruste"
+            ],
+            [
+              "Intelligente Spezies",
+              "Kryotharen"
             ]
           ]
         },
         {
-          "titel": "Im System von Gorvhan",
-          "text": [
-            "Das Morvath-System ist die Heimat der Technoiden: Ihr Planet Gorvhan umkreist Morvath."
-          ],
-          "verweise": [
+          "titel": "Morvath III im Vergleich zur Erde",
+          "vergleich": {
+            "mit": "Erde",
+            "werte": [
+              [
+                "Durchmesser",
+                15200,
+                12742,
+                "km"
+              ],
+              [
+                "Schwerkraft",
+                1.48,
+                1,
+                "g"
+              ],
+              [
+                "Tageslänge",
+                32,
+                24,
+                "h"
+              ],
+              [
+                "Luftdruck (Mittel)",
+                0.08,
+                1,
+                "bar"
+              ],
+              [
+                "Mittlere Temperatur",
+                -85,
+                15,
+                "°C"
+              ]
+            ]
+          }
+        },
+        {
+          "titel": "Hauptmerkmale",
+          "karten": [
+            {
+              "titel": "Geschlossene Eiskruste",
+              "text": "6–14 km dickes Wassereis, regional dünner über geothermischen Gebieten."
+            },
+            {
+              "titel": "Lichtloser Weltozean",
+              "text": "Nahezu global, 5–15 km tief, durch innere Wärme flüssig."
+            },
+            {
+              "titel": "Thermalwälder",
+              "text": "Hydrothermale Schlote als biologische Hotspots."
+            },
+            {
+              "titel": "Eisweltriesen",
+              "text": "Biolumineszente, akustisch kommunizierende Giganten."
+            }
+          ]
+        },
+        {
+          "titel": "Einordnung",
+          "daten": [
             [
-              "Gorvhan",
-              "inhalte/himmelskoerper/planeten/details/gorvhan/hauptseite/index.html"
+              "Sternenkarten-ID",
+              "gorvhan-morvath-iii"
             ],
             [
-              "Speziesdossier Technoiden",
-              "inhalte/spezies/Biologische Spezies/Technoiden/Hauptseite/Spezies.html"
+              "Erweiterte Klassifikation",
+              "Globaler Eis-Ozeanplanet"
+            ],
+            [
+              "Heimatspezies",
+              "Kryotharen (Gigantische Lebensformen)"
+            ],
+            [
+              "Monde",
+              "Bisher keine eingetragen"
+            ],
+            [
+              "Nachbarwelt",
+              "Gorvhan, vulkanische Heimat der Technoiden"
             ]
+          ]
+        },
+        {
+          "titel": "Planetare Besonderheiten",
+          "liste": [
+            "Nahezu globaler Ozean ohne natürliches Sternenlicht",
+            "Mehrere Kilometer hohe Wassersäulen bei sehr hohem Druck",
+            "Gewaltige untermeerische Resonanzräume",
+            "Biolumineszente Tiefseelandschaften",
+            "Intelligente Zivilisation ohne ursprüngliche Nutzung offenen Feuers",
+            "Zwei vollkommen unterschiedliche Umgebungen auf derselben Welt",
+            "Technologischer Gegensatz zur vulkanischen Nachbarwelt Gorvhan"
           ]
         }
       ]
@@ -202,84 +364,155 @@
     "Astronomie": {
       "gruppe": "Wissenschaft",
       "icon": "✧",
-      "intro": "Morvath III im Morvath-System.",
+      "intro": "Der dritte Planet um den orangefarbenen Zwerg Morvath.",
       "abschnitte": [
         {
-          "titel": "Bahn",
+          "titel": "Bahn und Position",
+          "text": [
+            "Morvath III ist der 3. von 5 Planeten im Morvath-System. Er umkreist Morvath in 1,3 AE Abstand – jenseits der äußeren Grenze der habitablen Zone (bei Morvath zwischen 0,67 und 1,18 AE). Er erhält 0,3-mal so viel Sternlicht wie die Erde.",
+            "Ohne Atmosphäre läge seine Gleichgewichtstemperatur bei rund -85 °C. Die dünne Atmosphäre speichert kaum Wärme – die Oberfläche bleibt nahe der Gleichgewichtstemperatur. Lebensfreundlich ist allein der Ozean, den innere Wärme und die isolierende Eiskruste flüssig halten."
+          ],
           "daten": [
             [
-              "Zentralkörper",
-              "Morvath"
+              "Sternsystem",
+              "Morvath-System"
+            ],
+            [
+              "Bahnposition",
+              "3. von 5 Planeten"
             ],
             [
               "Große Halbachse",
-              "1,3 AE (194,5 Mio. km)"
+              "1,3 AE (ca. 194,5 Mio. km)"
             ],
             [
               "Exzentrizität",
               "0,04"
             ],
             [
-              "Bahnneigung",
-              "1,5°"
+              "Umlaufzeit",
+              "587,2 Erdtage"
             ],
             [
-              "Umlaufzeit",
-              "587,2 Tage"
+              "Ortsjahr",
+              "ca. 440 Ortstage"
             ],
             [
               "Einstrahlung",
-              "0,296-fach der Erde"
+              "ca. 0,3-fach der Erde"
+            ],
+            [
+              "Habitable Zone von Morvath",
+              "0,67–1,18 AE"
             ]
           ]
         },
         {
-          "titel": "Am Himmel von Morvath III",
+          "titel": "Zentralstern",
           "text": [
-            "Morvath erscheint von hier aus etwa 0,33° groß (die Sonne von der Erde: 0,53°)."
-          ]
-        },
-        {
-          "titel": "Körper des Systems",
-          "zeitleiste": [
+            "Morvath ist ein alter orangefarbener Zwerg der Spektralklasse K1 V mit 85 % der Sonnenmasse und 50 % ihrer Leuchtkraft – Zentralstern von Gorvhan, der Heimatwelt der Technoiden."
+          ],
+          "daten": [
             [
-              "Morvath · Stern",
+              "Name",
+              "Morvath"
+            ],
+            [
+              "Typ",
               "Orangefarbener Zwerg (K1 V)"
             ],
             [
-              "Morvath I · 0,3 AE",
-              "Gesteinsplanet"
+              "Masse",
+              "0,85 Sonnenmassen"
             ],
             [
-              "Gorvhan · 0,62 AE",
-              "Gesteinsplanet"
+              "Radius",
+              "0,82 Sonnenradien"
             ],
             [
-              "Morvath III · 1,3 AE · dieses Dossier",
-              "Gesteinsplanet"
+              "Leuchtkraft",
+              "0,5 Sonnenleuchtkräfte"
             ],
             [
-              "Morvath IV · 4,1 AE",
-              "Gasriese"
+              "Oberflächentemperatur",
+              "ca. 5.150 K"
             ],
             [
-              "Morvath V · 10 AE",
-              "Eisriese"
+              "Alter",
+              "ca. 7,8 Mrd. Jahre"
             ],
             [
-              "Erzgürtel · 1,9–2,7 AE",
-              "Asteroidengürtel"
-            ],
-            [
-              "Äußeres Kometengebiet · 30–44 AE",
-              "Kometengebiet"
+              "Begleitsterne",
+              "keine (Einzelstern)"
             ]
           ],
           "verweise": [
             [
               "Morvath",
               "inhalte/himmelskoerper/sterne/details/morvath/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Rotation und Achse",
+          "daten": [
+            [
+              "Rotationsperiode",
+              "ca. 32 h"
             ],
+            [
+              "Achsneigung",
+              "11°"
+            ],
+            [
+              "Scheinbare Sterngröße",
+              "ca. 0,33° (Sonne von der Erde: 0,53°)"
+            ],
+            [
+              "Jahreszeiten",
+              "Gering; im Ozean nicht spürbar"
+            ]
+          ]
+        },
+        {
+          "titel": "Monde",
+          "text": [
+            "Morvath III besitzt keine Monde."
+          ]
+        },
+        {
+          "titel": "Planeten des Systems",
+          "zeitleiste": [
+            [
+              "Morvath I · 0,3 AE",
+              "Morvath I ist ein kleiner, glühend heißer Gesteinsplanet ohne Atmosphäre."
+            ],
+            [
+              "Gorvhan · 0,62 AE",
+              "Gorvhan ist die Heimatwelt der Technoiden: eine geologisch extrem aktive Welt aus Vulkangebirgen, Lavafeldern, Erzebenen und tiefen Höhlensystemen, mit wenig freiem Wasser."
+            ],
+            [
+              "Morvath III · 1,3 AE",
+              "Morvath III ist eine Supererde unter einer 6 bis 14 Kilometer dicken Eiskruste."
+            ],
+            [
+              "Erzgürtel · 1,9–2,7 AE",
+              "Der Erzgürtel zwischen 1,9 und 2,65 AE ist auffallend reich an metallischen Brocken."
+            ],
+            [
+              "Morvath IV · 4,1 AE",
+              "Morvath IV ist ein ockerfarbener Gasriese mit breiten Wolkenbändern."
+            ],
+            [
+              "Morvath V · 10 AE",
+              "Morvath V ist ein ferner Eisriese."
+            ],
+            [
+              "Uelirdon-Kometenwolke · 30–44 AE",
+              "Ein ferner Gürtel aus Eiskörpern zwischen 30 und 44 AE."
+            ]
+          ],
+          "verweise": [
             [
               "Morvath I",
               "inhalte/himmelskoerper/planeten/details/morvath-i/hauptseite/index.html"
@@ -289,13 +522,67 @@
               "inhalte/himmelskoerper/planeten/details/gorvhan/hauptseite/index.html"
             ],
             [
+              "Erzgürtel",
+              "inhalte/himmelskoerper/sternensysteme/details/erzgurtel/hauptseite/index.html"
+            ],
+            [
               "Morvath IV",
               "inhalte/himmelskoerper/planeten/details/morvath-iv/hauptseite/index.html"
             ],
             [
               "Morvath V",
               "inhalte/himmelskoerper/planeten/details/morvath-v/hauptseite/index.html"
+            ],
+            [
+              "Uelirdon-Kometenwolke",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=gorvhan-stern&objekt=gorvhan-kometengebiet"
             ]
+          ]
+        },
+        {
+          "titel": "Nachbarschaft und Anomalien",
+          "karten": [
+            {
+              "titel": "Resonanzbrocken",
+              "text": "Ein metallreicher Asteroid im Erzgürtel, an dem Messungen ungewöhnlich lang anhaltende Schwingungsresonanzen zeigen. Die Ursache ist ungeklärt."
+            },
+            {
+              "titel": "Nachbarsysteme",
+              "text": "Aurenn-System (21,8 Lj), Seryn-System (27,3 Lj), Kelira-System (27,3 Lj) – alle weit außerhalb der gravitativen Einflusszone von Morvath (rund 3,4 Lichtjahre)."
+            }
+          ],
+          "verweise": [
+            [
+              "Resonanzbrocken",
+              "inhalte/himmelskoerper/asteroiden/details/resonanzbrocken/hauptseite/index.html"
+            ],
+            [
+              "Morvath-System in der Sternenkarte",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=gorvhan-stern"
+            ]
+          ]
+        },
+        {
+          "titel": "Bahndaten",
+          "daten": [
+            [
+              "Bahnneigung",
+              "1,5°"
+            ],
+            [
+              "Sterneneinstrahlung",
+              "ca. 30 % der Erde"
+            ],
+            [
+              "Bestehende Umlaufbahn",
+              "unverändert"
+            ]
+          ]
+        },
+        {
+          "titel": "Am Himmel von Morvath III",
+          "text": [
+            "Über den Eisfeldern steht Morvath als schwache, orangefarbene Scheibe. Im Ozean darunter ist der Himmel unbekannt – die Kryotharen entdeckten den Weltraum erst instrumentell, mit Observatorien an der Oberfläche."
           ]
         }
       ]
@@ -322,22 +609,35 @@
             ],
             [
               "Oberflächenschwerkraft",
-              "14,48 m/s² (1,476 g)"
+              "14,5 m/s² (1,48 g)"
             ],
             [
               "Fluchtgeschwindigkeit",
-              "14,84 km/s"
+              "ca. 14,8 km/s"
+            ],
+            [
+              "Größenklasse",
+              "Supererde"
+            ],
+            [
+              "Gesamtoberfläche",
+              "ca. 726 Mio. km²"
+            ],
+            [
+              "Eiskrustendicke",
+              "6–14 km"
+            ],
+            [
+              "Ozeantiefe",
+              "5–15 km, lokal tiefer"
             ]
-          ],
+          ]
+        },
+        {
+          "titel": "Physikalische Werte im Vergleich",
           "vergleich": {
             "mit": "Erde",
             "werte": [
-              [
-                "Durchmesser",
-                15200,
-                12742,
-                "km"
-              ],
               [
                 "Masse",
                 2.1,
@@ -345,13 +645,31 @@
                 "Erdmassen"
               ],
               [
-                "Schwerkraft",
-                1.48,
+                "Dichte",
+                6.82,
+                5.51,
+                "g/cm³"
+              ],
+              [
+                "Fluchtgeschwindigkeit",
+                14.8,
+                11.2,
+                "km/s"
+              ],
+              [
+                "Magnetfeld",
+                1.1,
                 1,
-                "g"
+                "× Erde"
               ]
             ]
           }
+        },
+        {
+          "titel": "Schwere Welt, tragendes Wasser",
+          "text": [
+            "Mit rund 14,5 m/s² ist die Schwerkraft fast anderthalbmal so groß wie auf der Erde; die mittlere Dichte liegt bei etwa 6,5 g/cm³, die Fluchtgeschwindigkeit bei rund 14,8 km/s. Im Ozean gleicht der Auftrieb die Gewichtsbelastung aus – Kryotharen regulieren ihren Auftrieb annähernd neutral. Außerhalb des Wassers können ausgewachsene Individuen ihren Körper nicht tragen."
+          ]
         }
       ]
     },
@@ -361,19 +679,34 @@
       "intro": "Planetare Struktur von Morvath III.",
       "abschnitte": [
         {
-          "titel": "Schalenbau",
+          "titel": "Aufbau",
+          "text": [
+            "Unter der Wassereiskruste liegt der globale Ozean, der in biologisch produktiven Regionen direkt an mineralisches Gestein grenzt. In extrem tiefen Becken können Hochdruck-Eisphasen auftreten. Die genaue Wärmebilanz bleibt Gegenstand weiterer planetologischer Ausarbeitung."
+          ],
           "schichten": [
             [
-              "Kruste",
-              "Silikatgestein"
+              "Eiskruste",
+              "Wassereis, 6–14 km, kryotektonisch bewegt"
+            ],
+            [
+              "Subglazialer Ozean",
+              "5–15 km, Salzwasser, −2 bis +8 °C"
+            ],
+            [
+              "Hochdruck-Eis",
+              "Nur in extrem tiefen Becken"
+            ],
+            [
+              "Gesteinsschichten",
+              "Geologisch aktiv, hydrothermal"
             ],
             [
               "Mantel",
-              "Dichteres Silikatgestein"
+              "Dichtes mineralisches Gestein"
             ],
             [
               "Kern",
-              "Eisen und Nickel"
+              "Metallreich"
             ]
           ]
         }
@@ -382,12 +715,66 @@
     "Geografie": {
       "gruppe": "Natur",
       "icon": "△",
-      "intro": "Geografie von Morvath III.",
+      "intro": "Eisfelder oben, Gebirge und Becken im Ozean.",
       "abschnitte": [
         {
           "titel": "Oberfläche",
-          "text": [
-            "Die Oberfläche von Morvath III ist kalt."
+          "liste": [
+            "Fast geschlossene globale Eislandschaft",
+            "Gewaltige Gletscher und Eisgebirge an Belastungszonen",
+            "Bruchsysteme bis Kontinentgröße",
+            "Tiefe Spalten mit bläulich schimmernden Eiswänden",
+            "Alte Einschlagkrater und gefrorene Becken",
+            "Kryovulkanische Landschaften mit Eisfontänen",
+            "Kein dauerhaft offener Oberflächenozean"
+          ]
+        },
+        {
+          "titel": "Unterirdischer Ozean",
+          "liste": [
+            "Untermeerische Gebirgsketten und kontinentgroße Tiefseebecken",
+            "Flache mineralische Schelfregionen",
+            "Hydrothermale Felder und Vulkangebiete",
+            "Natürliche Resonanzkammern",
+            "Herabhängende Eisformationen an der Krustenunterseite",
+            "Natürliche Schallkanäle zwischen Ozeanregionen"
+          ]
+        },
+        {
+          "titel": "Regionen",
+          "karten": [
+            {
+              "titel": "Die Ewigen Eisfelder",
+              "text": "Gefrorene Oberflächenlandschaften mit Eisgebirgen, Stürmen und tiefen Spalten."
+            },
+            {
+              "titel": "Die Krustenunterseite",
+              "text": "Herabhängendes Eis, kälteangepasste Organismen, technische Anlagen."
+            },
+            {
+              "titel": "Die Thermalwälder",
+              "text": "Dichte hydrothermale Schlote, hohe Produktivität, biolumineszente Kolonien."
+            },
+            {
+              "titel": "Die Schwarzen Tiefen",
+              "text": "Dunkle Ozeanbecken unter extremem Druck."
+            },
+            {
+              "titel": "Die Resonanzgebirge",
+              "text": "Mineralformationen mit natürlichen akustischen Resonanzräumen."
+            },
+            {
+              "titel": "Die Gigantenstädte",
+              "text": "Siedlungsgebiete mit Thermalenergie und akustischen Kommunikationsanlagen."
+            },
+            {
+              "titel": "Die Brutmeere",
+              "text": "Geschützte, thermisch stabile Aufzuchtregionen."
+            },
+            {
+              "titel": "Die Oberflächenschächte",
+              "text": "Technische Zugänge durch das Eis zur orbitalen Infrastruktur."
+            }
           ]
         }
       ]
@@ -398,26 +785,56 @@
       "intro": "Atmosphäre von Morvath III.",
       "abschnitte": [
         {
-          "titel": "Gashülle",
+          "titel": "Zusammensetzung",
           "text": [
-            "Morvath III hält eine dünne, kalte Gashülle fest."
+            "Die Oberflächenatmosphäre ist dünn, kalt und nicht atembar: rund 0,08 bar, vorläufig 88 % Stickstoff, 8 % Argon, 3 % Kohlendioxid und 1 % weitere Bestandteile. Wasserdampf kommt nur in geringen, regional schwankenden Mengen vor; an kryovulkanischen Zonen gast die Kruste zeitweise aus. Die aquatische Biosphäre ist von der Außenatmosphäre weitgehend getrennt."
           ],
           "balken": {
             "werte": [
               [
-                "Kohlendioxid",
-                62
-              ],
-              [
                 "Stickstoff",
-                33
+                88
               ],
               [
                 "Argon",
-                5
+                8
+              ],
+              [
+                "Kohlendioxid",
+                3
+              ],
+              [
+                "Weitere Bestandteile",
+                1
               ]
             ]
           }
+        },
+        {
+          "titel": "Druck",
+          "daten": [
+            [
+              "Mittlerer Oberflächendruck",
+              "ca. 0,08 bar"
+            ],
+            [
+              "Übergang Eiskruste–Ozean",
+              "ca. 80–190 MPa"
+            ],
+            [
+              "Tiefe Ozeanregionen",
+              "mehrere hundert MPa"
+            ]
+          ]
+        },
+        {
+          "titel": "Wolken und Stürme",
+          "liste": [
+            "Dünne Eispartikelwolken",
+            "Aufsteigende Gas- und Wasserdampffahnen",
+            "Eisstaubstürme und Frostnebel",
+            "Lokale Wolkensysteme durch kryovulkanische Ausbrüche"
+          ]
         }
       ]
     },
@@ -427,9 +844,37 @@
       "intro": "Klima von Morvath III.",
       "abschnitte": [
         {
-          "titel": "Temperatur",
+          "titel": "Temperaturzonen",
           "text": [
-            "Bei 1,3 AE Abstand zu Morvath liegt die Gleichgewichtstemperatur von Morvath III bei rund -85 °C – kalt."
+            "Oberfläche und Ozean sind zwei getrennte Klimawelten. Oben herrschen dauerhaft Frost, Eisstaubstürme und Frostnebel; unten bestimmen Strömungen, thermische Verwirbelungen und Druckwellen das „Wetter“. Unmittelbar an aktiven Thermalquellen wird es noch heißer – die Kryotharen meiden diese extremen Austrittstemperaturen."
+          ],
+          "skala": {
+            "einheit": "°C",
+            "min": -145,
+            "max": 50,
+            "bereiche": [
+              [
+                "Oberfläche",
+                -140,
+                -55
+              ],
+              [
+                "Freies Ozeanwasser",
+                -2,
+                8
+              ],
+              [
+                "Hydrothermale Lebensräume",
+                10,
+                45
+              ]
+            ]
+          }
+        },
+        {
+          "titel": "Strömungen statt Stürme",
+          "text": [
+            "Im Ozean gibt es keine atmosphärischen Stürme. Stattdessen entstehen starke Strömungsereignisse und thermische Verwirbelungen; geologische Aktivität kann großräumige Druckwellen auslösen. Kryotharische Frühwarnsysteme überwachen diese Ereignisse."
           ]
         }
       ]
@@ -440,9 +885,17 @@
       "intro": "Gewässer von Morvath III.",
       "abschnitte": [
         {
-          "titel": "Wasser",
+          "titel": "Der Weltozean",
           "text": [
-            "Wasser gibt es höchstens als Eis in Kratern und im Untergrund."
+            "Unter der Eiskruste liegt ein zusammenhängender Weltozean, gegliedert durch untermeerische Gebirge und mineralische Schwellen, dessen große Becken miteinander verbunden bleiben. Der Salzgehalt liegt bei etwa 30–50 g pro Kilogramm. Gravitation und Eisgewicht erzeugen sehr hohen Wasserdruck. Hydrothermale Strömungen verteilen Wärme und Nährstoffe, kalte Strömungen bringen Wasser zu aktiven Regionen."
+          ]
+        },
+        {
+          "titel": "Besonderheiten",
+          "liste": [
+            "Untermeerische Salzbecken und mineralreiche Flüssigkeitsansammlungen",
+            "Lokale chemische Schichtungen",
+            "Kryotharen benötigen keine offenen Wasserflächen an der Oberfläche"
           ]
         }
       ]
@@ -453,9 +906,15 @@
       "intro": "Geologie von Morvath III.",
       "abschnitte": [
         {
-          "titel": "Geologie",
-          "text": [
-            "Morvath III ist groß genug, um im Inneren noch Wärme zu speichern; Spuren alter vulkanischer Tätigkeit sind wahrscheinlich."
+          "titel": "Innere Wärme",
+          "liste": [
+            "Langfristig erhaltener innerer Wärmehaushalt durch radioaktiven Zerfall",
+            "Geothermisch aktive Bruchsysteme und untermeerischer Vulkanismus",
+            "Hydrothermale Zirkulation zwischen Wasser und Gestein",
+            "Metall- und Mineralausfällungen, große Schlotformationen",
+            "Kryotektonische Bewegungen und regelmäßige Eisbrüche",
+            "Lokaler Kryovulkanismus",
+            "Kein großer Mond zur Erhaltung des Ozeans nötig"
           ]
         }
       ]
@@ -463,12 +922,25 @@
     "Biosphäre": {
       "gruppe": "Natur",
       "icon": "❧",
-      "intro": "Biosphäre von Morvath III.",
+      "intro": "Leben ohne Licht.",
       "abschnitte": [
         {
-          "titel": "Leben",
+          "titel": "Chemosynthese",
           "text": [
-            "Auf Morvath III ist kein Leben verzeichnet."
+            "Photosynthese ist unter dem Eis unmöglich. Chemosynthetische Mikroorganismen nutzen chemische Energie aus Wasser-Gesteins-Reaktionen – Wasserstoff, Schwefelverbindungen und Methan; Elektronenakzeptoren stammen aus geochemischen und radiolytischen Prozessen. Gelöster Sauerstoff kommt regional, aber ungleich verteilt vor. Nur besonders produktive Regionen tragen gigantische Organismen; große Individuen sind selten und haben einen langsamen Stoffwechsel. Die Kryotharen ergänzen ihre Nahrung durch technische Nährstoffproduktion."
+          ]
+        },
+        {
+          "titel": "Lebensformgruppen",
+          "liste": [
+            "Chemosynthetische Mineralbeläge und Filamentorganismen",
+            "Biolumineszente Schwebekolonien",
+            "Große filtrierende Strömungsorganismen",
+            "Mineralisch gepanzerte Bodenlebewesen",
+            "Organismen der Eiskrustenunterseite",
+            "Schwarmbildende Nahrungstiere und große aquatische Jäger",
+            "Lebensformen der salzreichen Tiefenbecken",
+            "Einzelne gigantische nicht intelligente Organismen"
           ]
         }
       ]
@@ -476,28 +948,42 @@
     "Spezies": {
       "gruppe": "Zivilisation",
       "icon": "✿",
-      "intro": "Spezies von Morvath III.",
+      "intro": "Die Kryotharen – die Eisweltriesen.",
       "abschnitte": [
         {
-          "titel": "Bewohner",
+          "titel": "Kryotharen",
           "text": [
-            "Morvath III ist keine Heimat einer intelligenten Spezies."
+            "Kryotharen besitzen einen langgezogenen, gebogenen Hauptkörper mit segmentierten Schwimm- und Manipulationsgliedern und einer akustischen Sinneskrone. Sie leuchten ausgeprägt biolumineszent, verständigen sich über ein komplexes akustisches Sprachsystem sowie Licht- und Drucksignale und pflanzen sich in geschützten Brutregionen fort. Sie sind ausschließlich an große aquatische Lebensräume angepasst und nicht mit den Technoiden verwandt."
+          ],
+          "daten": [
+            [
+              "Körperlänge",
+              "150–500 m"
+            ],
+            [
+              "Lebensdauer",
+              "vorläufig 1.500–4.000 Jahre"
+            ],
+            [
+              "Kommunikation",
+              "Akustische Sprache, Licht- und Drucksignale"
+            ],
+            [
+              "Bewusstsein",
+              "Eigenständig, individuell"
+            ]
           ]
         },
         {
-          "titel": "Im System von Gorvhan",
-          "text": [
-            "Das Morvath-System ist die Heimat der Technoiden: Ihr Planet Gorvhan umkreist Morvath."
-          ],
-          "verweise": [
-            [
-              "Gorvhan",
-              "inhalte/himmelskoerper/planeten/details/gorvhan/hauptseite/index.html"
-            ],
-            [
-              "Speziesdossier Technoiden",
-              "inhalte/spezies/Biologische Spezies/Technoiden/Hauptseite/Spezies.html"
-            ]
+          "titel": "Kultur und Gesellschaft",
+          "liste": [
+            "Eigenständige Persönlichkeiten und regionale Gemeinschaften",
+            "Lange Familien- und Betreuungsstrukturen",
+            "Anerkennung wandernder Individuen",
+            "Kunst aus räumlichen Schwingungen und Lichtkompositionen",
+            "Resonanzarchive für historische Informationen",
+            "Körpergröße bedeutet keine gesellschaftliche Überlegenheit",
+            "Bildung und Forschung über Jahrhunderte"
           ]
         }
       ]
@@ -508,25 +994,21 @@
       "intro": "Zivilisation von Morvath III.",
       "abschnitte": [
         {
-          "titel": "Siedlungen",
+          "titel": "Akustisch-thermische Hochzivilisation",
           "text": [
-            "Für Morvath III sind keine dauerhaften Siedlungen verzeichnet."
+            "Die Zivilisation entstand im subglazialen Ozean: weiträumige, dreidimensionale Siedlungen mit offener Architektur für gigantische Bewohner, gebaut aus mineralischen, druckbeständigen Verbundwerkstoffen. Thermale Energiezentren liegen an geologisch aktiven Standorten; Oberflächenanlagen werden überwiegend ferngesteuert betrieben."
           ]
         },
         {
-          "titel": "Im System von Gorvhan",
-          "text": [
-            "Das Morvath-System ist die Heimat der Technoiden: Ihr Planet Gorvhan umkreist Morvath."
-          ],
-          "verweise": [
-            [
-              "Gorvhan",
-              "inhalte/himmelskoerper/planeten/details/gorvhan/hauptseite/index.html"
-            ],
-            [
-              "Speziesdossier Technoiden",
-              "inhalte/spezies/Biologische Spezies/Technoiden/Hauptseite/Spezies.html"
-            ]
+          "titel": "Einrichtungen",
+          "liste": [
+            "Großräumige akustische Kommunikationsnetze",
+            "Biolumineszente Navigations- und Signalanlagen",
+            "Brutkammerkomplexe und medizinische Großplattformen",
+            "Technische Nährstoffproduktion",
+            "Untermeerische Fertigungs- und Forschungsanlagen",
+            "Automatisierte Wartungs- und Montageroboter",
+            "Begegnungsstationen für kleinere Spezies"
           ]
         }
       ]
@@ -537,9 +1019,42 @@
       "intro": "Geschichte von Morvath III.",
       "abschnitte": [
         {
-          "titel": "Entstehung",
+          "titel": "Zeitleiste",
+          "zeitleiste": [
+            [
+              "Anfänge",
+              "Biologische Entwicklung in mineralreichen hydrothermalen Regionen"
+            ],
+            [
+              "Evolution",
+              "Komplexe Nahrungsketten, große druckangepasste Organismen, Echoortung"
+            ],
+            [
+              "Intelligenz",
+              "Individuelle Intelligenz und komplexe Sprachsysteme"
+            ],
+            [
+              "Frühe Kultur",
+              "Werkzeuge aus Mineralen und organischem Material, Gemeinschaften an Thermalquellen"
+            ],
+            [
+              "Technik",
+              "Elektrochemische und mechanische Technologien, akustische Netze"
+            ],
+            [
+              "Expansion",
+              "Erschließung neuer Ozeanbecken, Eiskrustenbohrsysteme"
+            ],
+            [
+              "Gegenwart",
+              "Instrumentelle Entdeckung des Weltraums; Erstkontakt noch offen"
+            ]
+          ]
+        },
+        {
+          "titel": "Hinweis",
           "text": [
-            "Morvath III entstand zusammen mit dem Morvath-System vor rund 7,8 Milliarden Jahren."
+            "Absolute historische Jahreszahlen werden später festgelegt."
           ]
         }
       ]
@@ -550,9 +1065,15 @@
       "intro": "Fraktionen von Morvath III.",
       "abschnitte": [
         {
-          "titel": "Ansprüche",
-          "text": [
-            "Für Morvath III sind keine Fraktionsansprüche verzeichnet."
+          "titel": "Politik",
+          "liste": [
+            "Regionale Selbstverwaltung, Zusammenarbeit über akustische Netze",
+            "Gemeinsame Verwaltung thermischer Ressourcen",
+            "Schutz produktiver Regionen, Brutgebiete und Nahrungsräume",
+            "Regeln gegen schädliche akustische Störungen",
+            "Individuelle politische und gesellschaftliche Rechte",
+            "Beziehungen zu den Technoiden werden später ausgearbeitet",
+            "Fraktionszugehörigkeit noch offen"
           ]
         }
       ]
@@ -564,9 +1085,23 @@
       "abschnitte": [
         {
           "titel": "Rohstoffe",
-          "liste": [
-            "Silikatgestein",
-            "Metallerze"
+          "karten": [
+            {
+              "titel": "Wasser",
+              "text": "Wassereis, flüssiges Wasser, gelöste Mineralsalze."
+            },
+            {
+              "titel": "Erze",
+              "text": "Eisen-, Nickel- und kupferhaltige hydrothermale Ablagerungen."
+            },
+            {
+              "titel": "Minerale",
+              "text": "Silikate, Magnesium- und Schwefelverbindungen, kohlenstoffhaltige Materialien, geochemischer Wasserstoff."
+            },
+            {
+              "titel": "Biologisch und Energie",
+              "text": "Organische Fasern, druckbeständige Verbundwerkstoffe, mikrobielle Nährstoffe, geothermale Energie."
+            }
           ]
         }
       ]
@@ -577,22 +1112,16 @@
       "intro": "Erforschung von Morvath III.",
       "abschnitte": [
         {
-          "titel": "Offene Fragen",
+          "titel": "Forschungsfelder",
           "liste": [
-            "Wie ist der innere Aufbau beschaffen?",
-            "Gab es früher eine dichtere Atmosphäre?"
-          ]
-        },
-        {
-          "titel": "In der Sternenkarte",
-          "text": [
-            "Morvath III ist mit allen Bahndaten im Morvath-System der Sternenkarte eingetragen."
-          ],
-          "verweise": [
-            [
-              "In der Sternenkarte zeigen",
-              "Menüs/Sternenkarte/Sternenkarte.html?system=gorvhan-stern&objekt=gorvhan-morvath-iii"
-            ]
+            "Kartierung des subglazialen Ozeans und der Eiskrustendicke",
+            "Planetare Wärmebilanz und Kryotektonik",
+            "Biologisch nutzbare chemische Energiequellen",
+            "Gigantische druckangepasste Organismen",
+            "Akustische Kommunikation und natürliche Schallkanäle",
+            "Hochdruckbeständige Werkstoffe und thermische Energieanlagen",
+            "Astronomie durch Oberflächenobservatorien",
+            "Mögliche gemeinsame Forschung mit den Technoiden"
           ]
         }
       ]
@@ -603,9 +1132,54 @@
       "intro": "Besonderheiten von Morvath III.",
       "abschnitte": [
         {
-          "titel": "Besonderheiten",
+          "titel": "Rekorde",
+          "daten": [
+            [
+              "Größte Lebensformen",
+              "Kryotharen, 150–500 m Körperlänge"
+            ],
+            [
+              "Lebensdauer der Kryotharen",
+              "vorläufig 1.500–4.000 Jahre"
+            ],
+            [
+              "Wassersäule",
+              "mehrere Kilometer unter kilometerdickem Eis"
+            ],
+            [
+              "Höchster Druck",
+              "mehrere hundert MPa in den tiefsten Becken"
+            ]
+          ]
+        },
+        {
+          "titel": "Im Spiel",
           "liste": [
-            "Morvath III ist eine kalte Super-Erde mit dichter, gefrorener Kruste."
+            "Landung auf einer gefrorenen Oberfläche, Eisgebirge und Bruchlandschaften",
+            "Zugang zum Ozean über Schachtsysteme",
+            "Tiefseefahrzeuge und druckangepasste Ausrüstung",
+            "Dreidimensionale Navigation, Sonar- und Temperaturmessungen",
+            "Begegnungen mit 150–500 m großen NPCs, gigantische Unterwasserstädte",
+            "Resonanzarchive entschlüsseln, Thermalanlagen reparieren",
+            "Folgen von Rohstoffabbau für empfindliche Lebensräume"
+          ]
+        },
+        {
+          "titel": "Gestaltung",
+          "liste": [
+            "Weißes, silbernes und tiefblaues Eis, cyanfarbene Spalten, schwaches orangefarbenes Licht",
+            "Dunkelblaue bis schwarze Wassermassen mit türkisfarbener Biolumineszenz",
+            "Orangefarbene Akzente an Thermalquellen",
+            "Offene, druckangepasste Megastrukturen mit Resonanzplatten",
+            "Keine gewöhnlichen humanoiden Unterwasserstädte"
+          ]
+        },
+        {
+          "titel": "Hinweise für Besucher",
+          "liste": [
+            "Oberfläche nicht atembar, extreme Kälte",
+            "Druckangepasste Ausrüstung für den Ozean",
+            "Akustische Ruhezonen respektieren"
           ]
         }
       ]
@@ -616,9 +1190,9 @@
       "intro": "Medienarchiv von Morvath III.",
       "abschnitte": [
         {
-          "titel": "Morvath III – Archivbild",
+          "titel": "Morvath III aus dem All",
           "bild": true,
-          "bildtext": "Morvath III"
+          "bildtext": "Morvath III – die Eiswelt über dem Ozean"
         }
       ]
     }

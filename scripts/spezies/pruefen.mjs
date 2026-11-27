@@ -19,12 +19,13 @@ for (const { g, s: art } of arten) {
     const SEITEN = SEITEN_BASIS + g + "/", INFO = INFO_BASIS + g + "/";
     const html = walk(SEITEN + art).filter((f) => f.endsWith(".html")).map((f) => fs.readFileSync(f, "utf8")).join("\n");
     // Inline-Auszeichnung ohne Leerraum entfernen (Fett am Satzende), Blockgrenzen als Leerraum
-    const text = norm(entities(html.replace(/<script[\s\S]*?<\/script>/g, " ").replace(/<\/?(strong|em|b|i)>/g, "").replace(/<[^>]+>/g, " ")));
+    const text = norm(entities(html.replace(/<script[\s\S]*?<\/script>/g, " ").replace(/<\/?(strong|em|b|i|code)>|<\/?a\b[^>]*>/g, "").replace(/<[^>]+>/g, " ")));
     const fehlend = [];
     let gesamt = 0;
     for (const f of walk(INFO + art)) {
         const rel = path.relative(INFO + art, f).replace(/\\/g, "/");
-        const zeilen = fs.readFileSync(f, "utf8").split(/\r?\n/);
+        // an Kopfzeilen klebende Abschnittsüberschriften („… · Titan01 – …“) wie die Storys-Seiten getrennt prüfen
+        const zeilen = fs.readFileSync(f, "utf8").split(/\r?\n/).flatMap((l) => { const m = l.match(/^(.*·.*[^\d\s–-])(\d{1,2}(?: –|\.) [A-ZÄÖÜ].*)$/); return m ? [m[1], m[2]] : [l]; });
         const ebene = zeilen.filter((z) => /^#\s+\d+\.\d+/.test(z.trim())).length >= 3 ? 1 : zeilen.filter((z) => /^##\s/.test(z.trim())).length <= 1 && zeilen.filter((z) => /^###\s/.test(z.trim())).length >= 2 ? 3 : 2;
         let imKapitel = false;
         for (const roh of zeilen) {
@@ -36,7 +37,7 @@ for (const { g, s: art } of arten) {
             if (ebene === 1 && h && h[1].length === 1 && !/^#\s+\d+\.\d+/.test(z)) continue;   // Dateititel ohne Kapitelnummer
             if (h && h[1].length === ebene) imKapitel = true;
             if (!imKapitel && /^\*\*[^*]+\*\*$/.test(z)) continue;
-            z = z.replace(/^#{1,6}\s+/, "").replace(/^[-*]\s+/, "").replace(/^\d+\.\s+(?=\D)/, "").replace(/\*\*/g, "").replace(/^\|/, "").replace(/\|$/, "");
+            z = z.replace(/^#{1,6}\s+/, "").replace(/^[-*]\s+/, "").replace(/^\d+\.\s+(?=\D)/, "").replace(/\*\*/g, "").replace(/`/g, "").replace(/\[([^\]]+)\]\((?:[^()\s]|\([^()\s]*\))*\)/g, "$1").replace(/^\.\s+/, "").replace(/^\|/, "").replace(/\|$/, "");
             // Tabellenzeilen zellenweise prüfen
             const teile = roh.trim().startsWith("|") ? z.split("|").map((x) => x.trim()) : [z];
             for (const t of teile) {

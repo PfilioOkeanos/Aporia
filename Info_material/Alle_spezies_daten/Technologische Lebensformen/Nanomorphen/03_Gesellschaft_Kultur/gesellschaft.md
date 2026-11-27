@@ -182,3 +182,10 @@ Ihre Persönlichkeit ist nicht vollständig durch ihre ursprüngliche technische
 ### 17. Gesellschaftliche Geschichte
 
 Historische Siedlungsformen, Städte, kulturelle Bewegungen und bedeutende Persönlichkeiten sind noch nicht abschließend festgelegt.
+
+
+
+Die dunkle seite 
+
+
+Sabotage durch unbemerkte Materialveränderungen

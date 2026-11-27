@@ -1,2 +1,16 @@
-/* Astralizes – Politik · erzeugt vom Spezies-Baukasten (scripts/spezies)
-   Gemeinsames Design: astralizes-basis.css · eigene Anpassungen dieser Seite hier ergänzen. */
+/* Saal VI · Zwei Zeugen – eine Naht teilt den Raum; jede Vereinbarung wird aus zwei Richtungen bezeugt */
+.az-saal-politik { background: #07070a; }
+.az-saal-politik .az-main { background: linear-gradient(90deg, #07070a 50%, #0e0b07 50%); }
+.az-naht-kopf { min-height: 76vh; }
+.az-haelfte { position: absolute; inset: 0 50% 0 0; z-index: -1; background: var(--bild) 30% center/cover; filter: grayscale(.6) brightness(.7); }
+.az-haelfte--b { inset: 0 0 0 50%; transform: scaleX(-1); filter: sepia(.5) brightness(.75); }
+.az-naht-kopf::after, .az-diptychen::before { content: ""; position: absolute; left: 50%; top: 0; bottom: 0; width: 1px; background: linear-gradient(transparent, #d9b878, transparent); box-shadow: 0 0 18px #d9b878; }
+.az-naht-kopf .az-kopf-text { text-align: center; justify-self: center; }
+.az-diptychen { position: relative; display: grid; gap: clamp(4rem, 9vw, 8rem); padding: 2rem clamp(1rem, 5vw, 5rem) 3rem; }
+.az-diptychon > .az-kicker { text-align: center; }
+.az-zeugen { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2rem, 8vw, 8rem); }
+.az-zeuge-name { display: block; font: italic 300 1.1rem var(--az-serif); color: var(--az-gold); margin-bottom: .6rem; }
+.az-zeuge:last-child { text-align: right; }
+.az-zeuge:last-child .az-werk-bild img { transform: perspective(900px) rotateY(-6deg); }
+.az-zeuge:first-child .az-werk-bild img { transform: perspective(900px) rotateY(6deg); }
+@media (max-width: 760px) { .az-zeugen { grid-template-columns: 1fr; } .az-zeuge:last-child { text-align: left; } }

@@ -6,12 +6,16 @@
   "klasse": "Asteroid",
   "intro": "Ein Asteroid mit verzweigten, wurzelartigen Mineraladern an der Oberfläche – Gegenstand zahlreicher Legenden und wissenschaftlicher Expeditionen. Wurzelstein umkreist Khelar in 1,72 AE Abstand und braucht für einen Umlauf 2,5 Jahre.",
   "globusDaten": {
-    "planet": "asteroid-mit-tiefem-einschlagbecken",
+    "planet": "wurzelstein",
     "klasse": "Gestein",
     "radius": 38000
   },
   "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=veshkara-stern&objekt=veshkara-sporenstein",
   "grunddaten": [
+    [
+      "System-ID",
+      "veshkara-sporenstein"
+    ],
     [
       "Archiv-ID",
       "AP-44ECEFF19A"
@@ -85,16 +89,16 @@
     },
     {
       "icon": "✿",
-      "art": "Heimatwelt der Chitinoiden",
-      "titel": "Veshkara",
-      "href": "inhalte/himmelskoerper/planeten/details/veshkara/hauptseite/index.html",
+      "art": "Heimatwelt der Velorithen",
+      "titel": "Rhaum",
+      "href": "inhalte/himmelskoerper/monde/details/rhaum/hauptseite/index.html",
       "route": null
     },
     {
       "icon": "◈",
       "art": "Spezies-Dossier",
-      "titel": "Chitinoiden",
-      "href": "inhalte/spezies/Biologische Spezies/Chitinnoiden/hauptseite/Spezies.html",
+      "titel": "Velorithen",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Velorithen/hauptseite/Spezies.html",
       "route": null
     }
   ],
@@ -104,8 +108,8 @@
       "href": "Menüs/Sternenkarte/Sternenkarte.html?system=veshkara-stern&objekt=veshkara-sporenstein"
     },
     {
-      "titel": "Speziesdossier Chitinoiden",
-      "href": "inhalte/spezies/Biologische Spezies/Chitinnoiden/hauptseite/Spezies.html"
+      "titel": "Speziesdossier Velorithen",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Velorithen/hauptseite/Spezies.html"
     }
   ],
   "design": {
@@ -270,18 +274,18 @@
           ]
         },
         {
-          "titel": "Im System von Veshkara",
+          "titel": "Im System von Rhaum",
           "text": [
-            "Das Khelar-System ist die Heimat der Chitinoiden: Ihr Planet Veshkara umkreist Khelar."
+            "Das Khelar-System ist die Heimat der Velorithen: Ihr Planet Rhaum umkreist Khelar."
           ],
           "verweise": [
             [
-              "Veshkara",
-              "inhalte/himmelskoerper/planeten/details/veshkara/hauptseite/index.html"
+              "Rhaum",
+              "inhalte/himmelskoerper/monde/details/rhaum/hauptseite/index.html"
             ],
             [
-              "Speziesdossier Chitinoiden",
-              "inhalte/spezies/Biologische Spezies/Chitinnoiden/hauptseite/Spezies.html"
+              "Speziesdossier Velorithen",
+              "inhalte/spezies/Gigantische Lebensformen/Velorithen/hauptseite/Spezies.html"
             ]
           ]
         }
@@ -349,7 +353,7 @@
               "Asteroidengürtel"
             ],
             [
-              "Äußeres Kometengebiet · 33–47 AE",
+              "Zarenev-Kometenwolke · 33–47 AE",
               "Kometengebiet"
             ]
           ],

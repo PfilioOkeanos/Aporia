@@ -1,2 +1,13 @@
-/* Astralizes – Forschung · erzeugt vom Spezies-Baukasten (scripts/spezies)
-   Gemeinsames Design: astralizes-basis.css · eigene Anpassungen dieser Seite hier ergänzen. */
+/* Saal IX · Parallaxe – Labor; jedes Werk existiert zweimal und verschiebt sich mit dem Standpunkt */
+.az-saal-forschung { background: #050507; --az-gold: #ff5a64; }
+.az-labor-kopf { min-height: 70vh; }
+.az-labor-kopf::before { content: ""; position: absolute; inset: 0; z-index: -1; background: var(--bild) center/cover; filter: brightness(1.2) saturate(1.2); }
+.az-scan { position: absolute; left: 0; right: 0; height: 2px; top: 0; background: #ff5a64; box-shadow: 0 0 30px 6px #ff5a6488; animation: az-scan 5s ease-in-out infinite; }
+@keyframes az-scan { 50% { top: 100%; } }
+.az-stereo { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 21rem), 1fr)); gap: 3rem 2rem; padding: 0 clamp(1rem, 5vw, 5rem); }
+.az-stereo .az-werk-bild { position: relative; background: #000; isolation: isolate; }
+.az-stereo .az-werk-bild::before, .az-stereo .az-werk-bild::after { content: ""; position: absolute; inset: -12px; background: var(--bild) center/cover; background-blend-mode: multiply; mix-blend-mode: screen; transition: transform .3s ease-out; pointer-events: none; }
+.az-stereo .az-werk-bild::before { background-color: #ff0000; transform: translate(calc(var(--px, .4) * -10px), calc(var(--py, 0) * -4px)); }
+.az-stereo .az-werk-bild::after { background-color: #00ffff; transform: translate(calc(var(--px, .4) * 10px), calc(var(--py, 0) * 4px)); }
+.az-stereo .az-werk-bild img { position: relative; z-index: 1; opacity: 0; transition: opacity .5s, transform 1.2s; }
+.az-stereo .az-werk-bild:hover img, .az-stereo .az-werk-bild:focus-visible img { opacity: 1; }

@@ -2,7 +2,7 @@
 const B = "assets/bilder/Alle Spezies+Übersicht/Biologische Spezies/Plasmoiden/";
 const G = B + "gesamtdarstellung/";
 export default {
-    ordner: "biolumineszente-ozeanwelt-im-all", system: "lymara-system", planetId: "lymara-planet",
+    ordner: "lymara", system: "lymara-system", planetId: "lymara-planet",
     name: "Lymara", genitiv: "Lymaras", klasse: "Ozeanwelt", klasseLang: "Terrestrischer, wasserreicher Planet",
     intro: "Lymara ist die Heimatwelt der Plasmoiden: ein wasserreicher Planet mit Flusslandschaften, Seen, Lagunen, Höhlengewässern und nebelreichen Hochländern, auf dem aus gelbildenden Organismen formbare, denkende Wesen wurden.",
     bildtext: "Lymara – biolumineszente Ozeanwelt",

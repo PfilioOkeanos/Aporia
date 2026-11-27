@@ -1,7 +1,7 @@
 // Ferrum Prime · Einsatzwelt der Syntheten (Quelle: Info_material/…/Syntheten, Hauptreiter 04; Planetenwerte abgeleitet)
 const G = "assets/bilder/Alle Spezies+Übersicht/Technologische Lebensformen/Syntheten/gesamtdarstellung/gesamtdarstellung/";
 export default {
-    ordner: "rostiger-eisenplanet-mit-freiliegendem-metallkern", system: "ferrum-system", planetId: "ferrum-planet",
+    ordner: "ferrum-prime", system: "ferrum-system", planetId: "ferrum-planet",
     name: "Ferrum Prime", genitiv: "von Ferrum Prime", klasse: "Gesteinsplanet", klasseLang: "Eisenreicher Bergbauplanet (Super-Erde)",
     intro: "Ferrum Prime ist der Bergbauplanet des Konsortiums, auf dem die Syntheten eingesetzt werden: eine schwere, eisenreiche Welt mit giftiger Atmosphäre, heftigen Stürmen und riesigen Erzlagerstätten – und mit stillgelegten Minen, in denen sich unabhängige Synthetenclans verbergen.",
     bildtext: "Ferrum Prime – rostiger Eisenplanet mit freiliegendem Metallkern",

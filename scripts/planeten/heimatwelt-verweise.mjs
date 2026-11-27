@@ -14,8 +14,8 @@ const EXTRA = [
     { welt: "Kavren", spezies: "Technologische Lebensformen/Technosymbionten", ordner: "kavren", systemDatei: "iravelle-system", objekt: "iravelle-kavren" },
     { welt: "Titan", spezies: "Technologische Lebensformen/Digitaliden", ordner: "titan", dossier: "inhalte/himmelskoerper/monde/details/titan/hauptseite/index.html", system: "Kugel 1", systemName: "Sonnensystem", stern: "Sonne", objekt: "titan" },
     { welt: "Venyra", spezies: "Technologische Lebensformen/Nanomorphen", ordner: "venyra", systemDatei: "elaris-system", objekt: "elaris-venyra" },
-    { welt: "Erde", spezies: "Biologische Spezies/Humanoide", ordner: "erde-im-sternenmeer", system: "Kugel 1", systemName: "Sonnensystem", stern: "Sonne" },
-    { welt: "Kharuun", spezies: "Biologische Spezies/Pyronoiden", ordner: "dammernder-vulkanplanet-mit-gluhenden-lavaseen", systemDatei: "kharuun-system" },
+    { welt: "Erde", spezies: "Biologische Spezies/Humanoide", ordner: "erde", system: "Kugel 1", systemName: "Sonnensystem", stern: "Sonne" },
+    { welt: "Kharuun", spezies: "Biologische Spezies/Pyronoiden", ordner: "kharuun", systemDatei: "kharuun-system" },
 ];
 const bildVon = (dossier) => {
     const html = fs.readFileSync(ROOT + dossier, "utf8");
@@ -26,7 +26,9 @@ const eintraege = [];
 for (const f of fs.readdirSync(`${ROOT}scripts/planeten/heimatwelten`).filter((x) => x.endsWith(".mjs")).sort()) {
     const s = (await import(pathToFileURL(`${ROOT}scripts/planeten/heimatwelten/${f}`).href)).default;
     const sys = JSON.parse(fs.readFileSync(`${ROOT}scripts/planeten/systeme/${s.system}.json`, "utf8"));
-    eintraege.push({ welt: s.name, spezies: `${s.spezies.gruppe}/${s.spezies.ordner}`, ordner: s.ordner, system: sys.stern.id, systemName: sys.systemName, stern: sys.stern.name });
+    // Ordner als <art>/<slug> (z. B. monde/rhaum) zeigt auf ein Dossier außerhalb der Planeten
+    const [artO, slugO] = s.ordner.includes("/") ? s.ordner.split("/") : ["planeten", s.ordner];
+    eintraege.push({ welt: s.name, spezies: `${s.spezies.gruppe}/${s.spezies.ordner}`, ordner: slugO, ...(artO !== "planeten" ? { dossier: `inhalte/himmelskoerper/${artO}/details/${slugO}/hauptseite/index.html` } : {}), objekt: s.planetId, system: sys.stern.id, systemName: sys.systemName, stern: sys.stern.name });
 }
 for (const x of EXTRA) {
     if (eintraege.some((e) => e.spezies === x.spezies)) continue;

@@ -1,2 +1,2 @@
-import "../../../../../../Men%C3%BCs/TopBar/Top_bar.js";
-import "../../../../../../Men%C3%BCs/Side_bar/side_bar.js";
+// Exosphärenwesen – Technologien · erzeugt vom Spezies-Baukasten (scripts/spezies) – Änderungen dort vornehmen
+import "../../exospharenwesen-basis.js";

@@ -6,12 +6,16 @@
   "klasse": "Komet",
   "intro": "Ein Komet mit grünlich leuchtender Koma, der alle 60 Jahre das innere System erreicht. Grünschweif umkreist Halvorn in 14 AE Abstand und braucht für einen Umlauf 55,8 Jahre.",
   "globusDaten": {
-    "planet": "komet-mit-gebogenem-blauem-ionenschweif",
+    "planet": "grunschweif",
     "klasse": "Eis",
     "radius": 6000
   },
   "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=dravelon-stern&objekt=dravelon-grunschweif",
   "grunddaten": [
+    [
+      "System-ID",
+      "dravelon-grunschweif"
+    ],
     [
       "Archiv-ID",
       "AP-5988E249B3"
@@ -61,7 +65,7 @@
     [
       "Zentralstern",
       "Halvorn",
-      "inhalte/himmelskoerper/sterne/details/halvorn/hauptseite/index.html"
+      null
     ],
     [
       "Abstand",
@@ -80,14 +84,14 @@
       "icon": "☀",
       "art": "Zentralstern",
       "titel": "Halvorn",
-      "href": "inhalte/himmelskoerper/sterne/details/halvorn/hauptseite/index.html",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=dravelon-stern",
       "route": null
     },
     {
       "icon": "✿",
       "art": "Heimatwelt der Dendroarchen",
       "titel": "Dravelon",
-      "href": "inhalte/himmelskoerper/planeten/details/dravelon/hauptseite/index.html",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=dravelon-stern&objekt=dravelon-planet",
       "route": null
     },
     {
@@ -309,7 +313,7 @@
           "verweise": [
             [
               "Dravelon",
-              "inhalte/himmelskoerper/planeten/details/dravelon/hauptseite/index.html"
+              "Menüs/Sternenkarte/Sternenkarte.html?system=dravelon-stern&objekt=dravelon-planet"
             ],
             [
               "Speziesdossier Dendroarchen",
@@ -361,7 +365,7 @@
               "Orangefarbener Zwerg (K0 V)"
             ],
             [
-              "Halvorn I · 0,35 AE",
+              "Halvorn I · 0,55 AE",
               "Gesteinsplanet"
             ],
             [
@@ -385,30 +389,30 @@
               "Asteroidengürtel"
             ],
             [
-              "Äußeres Kometengebiet · 32–46 AE",
+              "Emovtar-Kometenwolke · 32–46 AE",
               "Kometengebiet"
             ]
           ],
           "verweise": [
             [
               "Halvorn",
-              "inhalte/himmelskoerper/sterne/details/halvorn/hauptseite/index.html"
+              "Menüs/Sternenkarte/Sternenkarte.html?system=dravelon-stern"
             ],
             [
               "Halvorn I",
-              "inhalte/himmelskoerper/planeten/details/halvorn-i/hauptseite/index.html"
+              "Menüs/Sternenkarte/Sternenkarte.html?system=dravelon-stern&objekt=dravelon-halvorn-i"
             ],
             [
               "Dravelon",
-              "inhalte/himmelskoerper/planeten/details/dravelon/hauptseite/index.html"
+              "Menüs/Sternenkarte/Sternenkarte.html?system=dravelon-stern&objekt=dravelon-planet"
             ],
             [
               "Halvorn III",
-              "inhalte/himmelskoerper/planeten/details/halvorn-iii/hauptseite/index.html"
+              "Menüs/Sternenkarte/Sternenkarte.html?system=dravelon-stern&objekt=dravelon-halvorn-iii"
             ],
             [
               "Halvorn IV",
-              "inhalte/himmelskoerper/planeten/details/halvorn-iv/hauptseite/index.html"
+              "Menüs/Sternenkarte/Sternenkarte.html?system=dravelon-stern&objekt=dravelon-halvorn-iv"
             ],
             [
               "Halvorn V",

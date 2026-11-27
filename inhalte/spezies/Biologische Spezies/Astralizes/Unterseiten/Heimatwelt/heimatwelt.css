@@ -1,2 +1,14 @@
-/* Astralizes – Heimatwelt · erzeugt vom Spezies-Baukasten (scripts/spezies)
-   Gemeinsames Design: astralizes-basis.css · eigene Anpassungen dieser Seite hier ergänzen. */
+/* Saal IV · Dämmerung – ein waagerechtes Panorama vor dem letzten Lichtsaum, unten der Horizont als Silhouette */
+.az-saal-heimatwelt { background: #08060f; }
+.az-saal-heimatwelt .az-main { background: linear-gradient(180deg, #08060f 0%, #120c22 30%, #2a1838 55%, #6a3038 78%, #d08a50 92%, #08060f 100%); }
+.az-daemmer-kopf { min-height: 78vh; }
+.az-daemmer-kopf::before { content: ""; position: absolute; inset: 0; z-index: -1; background: var(--bild) center/cover; filter: contrast(1.1); }
+.az-saum { position: absolute; left: 0; right: 0; top: 50%; height: 3px; background: linear-gradient(90deg, transparent, #fff7e0, transparent); box-shadow: 0 0 40px 8px #ffd9a0aa; animation: az-saum 7s ease-in-out infinite; }
+@keyframes az-saum { 50% { opacity: .35; transform: scaleX(.7); } }
+.az-panorama { overflow-x: auto; padding: 2rem 0 3rem; scroll-snap-type: x mandatory; scrollbar-color: #ffd9a0 transparent; }
+.az-panorama-band { display: flex; gap: 2rem; padding: 0 clamp(1rem, 6vw, 6rem); width: max-content; }
+.az-panorama .az-werk { width: min(78vw, 46rem); scroll-snap-align: center; }
+.az-panorama .az-werk-bild { aspect-ratio: 16/8; box-shadow: 0 0 60px -10px #ffb06a66; }
+.az-panorama .az-werk-bild img { object-position: center 60%; }
+.az-silhouette { height: 26vh; margin-top: -4vh; background: var(--bild) center 75%/cover; filter: brightness(0); -webkit-mask: linear-gradient(transparent 0, #000 55%); mask: linear-gradient(transparent 0, #000 55%); }
+.az-panorama-hinweis { text-align: center; margin: 0; }

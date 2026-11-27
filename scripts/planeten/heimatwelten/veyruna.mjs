@@ -5,7 +5,7 @@ const E = "assets/bilder/Alle Spezies+Übersicht/Mentale Spezies/Echonoiden/entw
 const B = { kueste: H + "Echonoiden_welt-A1.png", hoehle: H + "Echonoiden_welt-A2.png", mirael: H + "Echonoiden_welt-A3.png", becken: H + "Echonoiden_welt-A4.png", spalten: H + "Echonoiden_welt-A5.png" };
 export default {
     systemseite: "inhalte/himmelskoerper/sternensysteme/details/orelis-system/hauptseite/index.html",
-    ordner: "aporia-blaue-inselwelt-im-all", system: "veyruna-system", planetId: "veyruna-planet",
+    ordner: "veyruna", system: "veyruna-system", planetId: "veyruna-planet",
     name: "Veyruna", genitiv: "von Veyruna", klasse: "Gesteinsplanet", klasseLang: "Felsiger, wasserreicher terrestrischer Planet",
     spezies: { name: "Echonoiden", gruppe: "Mentale Spezies", ordner: "Echonoiden", seite: "inhalte/spezies/Mentale Spezies/Echonoiden/hauptseite/Spezies.html" },
     intro: "Veyruna ist die Heimatwelt der Echonoiden. Ein felsiger, wasserreicher Planet mit dichter Atmosphäre, gezeitengeprägten Küsten, vulkanischen Inselbögen und Höhlenlandschaften – eine Welt, deren vielfältige Schallräume die Entwicklung einer Wahrnehmung aus mechanischen Schwingungen begünstigten.",

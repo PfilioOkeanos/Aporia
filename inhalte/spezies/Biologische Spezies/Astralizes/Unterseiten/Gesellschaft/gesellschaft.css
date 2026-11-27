@@ -1,2 +1,13 @@
-/* Astralizes – Gesellschaft · erzeugt vom Spezies-Baukasten (scripts/spezies)
-   Gemeinsames Design: astralizes-basis.css · eigene Anpassungen dieser Seite hier ergänzen. */
+/* Saal V · Der gemeinsame Blickwinkel – heller Raum, eine Folge heller und dunkler Zeichen, alle Werke schauen zur Mitte */
+.az-saal-gesellschaft { background: #e7e3d9; color: #1a1712; --az-leise: #6d665a; --az-gold: #7a5a20; }
+.az-saal-gesellschaft .az-saalplan { background: #e7e3d9e0; border-color: #0000001a; }
+.az-hell-kopf { min-height: 60vh; align-content: center; }
+.az-hell-kopf h1 { color: #1a1712; }
+.az-zeichen { display: flex; gap: 6px; margin-top: 2.5rem; }
+.az-zeichen i { flex: 1; height: 3.5rem; background: #1a1712; animation: az-zeichen 4.2s steps(1) infinite; animation-delay: calc(var(--i) * -.37s); }
+.az-zeichen i:nth-child(3n) { flex: 2.6; }
+@keyframes az-zeichen { 0% { opacity: 1; } 40% { opacity: .08; } 70% { opacity: 1; } 85% { opacity: .3; } }
+.az-kreis { position: relative; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr)); gap: 3rem 2rem; padding: 2rem clamp(1rem, 6vw, 6rem) 4rem; }
+.az-kreis-mitte { grid-column: 1 / -1; justify-self: center; width: clamp(8rem, 16vw, 12rem); aspect-ratio: 1; border-radius: 50%; background: var(--bild) center/cover; box-shadow: 0 0 0 10px #e7e3d9, 0 0 0 11px #1a171230, 0 30px 60px -20px #0006; animation: az-drehen 60s linear infinite; }
+.az-kreis .az-werk-bild { border-radius: 50%; aspect-ratio: 1; box-shadow: 0 25px 50px -25px #0008; }
+.az-kreis .az-schild { text-align: center; }

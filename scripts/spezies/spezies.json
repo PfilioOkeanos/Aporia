@@ -23,7 +23,7 @@
         ["Technologie und Ingenieurwesen/Elektrotechnik und Elektronik", "Messsysteme"]
       ]
     },
-    { "gruppe": "Biologische Spezies", "ordner": "Astralizes", "quellen": {"entwicklung":["02_Geschichte_Entwicklung/entwicklung.md"],"geschichte":["02_Geschichte_Entwicklung/geschichte.md"]} },
+    { "gruppe": "Biologische Spezies", "ordner": "Astralizes", "bauskript": "astralizes.mjs" },
     { "gruppe": "Biologische Spezies", "ordner": "Parasitoiden", "quellen": {"entwicklung":["02_Geschichte_Entwicklung/entwicklung.md"],"geschichte":["02_Geschichte_Entwicklung/geschichte.md"]}, "farbton": 330, "zweitton": 32, "titelmotiv": "Fadenkronen-Bote im Pflaumenmantel-1.png" },
     { "gruppe": "Gigantische Lebensformen", "ordner": "Aerothanen" },
     { "gruppe": "Gigantische Lebensformen", "ordner": "Biophäriden" },
@@ -143,15 +143,15 @@
     {
       "gruppe": "Mentale Spezies", "ordner": "Solitiden", "farbton": 195, "zweitton": 42,
       "quellen": {
-        "allgemeines": ["Allgemein/Allgemein.md"],
+        "allgemeines": ["Allgemein/Allgemein.md", "01_Speziesdaten/speziesdaten.md"],
         "biologie": ["Biologie/Biologie.md"],
         "entwicklung": ["02_Geschichte_Entwicklung/entwicklung.md"],
         "heimatwelt": ["05_Heimatwelt/heimatwelt-referenz.md", "Sternensystem/Sternensystem.md"],
         "gesellschaft": ["03_Gesellschaft_Kultur/gesellschaft.md", "03_Gesellschaft_Kultur/kultur.md"],
         "politik": ["04_Politik_Fraktionsbeziehungen/politik.md", "04_Politik_Fraktionsbeziehungen/fraktionsbeziehungen.md"],
         "geschichte": ["02_Geschichte_Entwicklung/geschichte.md"],
-        "gameplay": ["Gameplay/.gitkeep"],
-        "forschung": ["Forschung/.gitkeep"],
+        "gameplay": ["Gameplay/Gameplaydossier.md"],
+        "forschung": ["Forschung/Forschungsdossier.md"],
         "technologien": ["technologien/Technologien.md"]
       },
       "titelmotiv": "Heimatplanet/Heimat_a1.png"

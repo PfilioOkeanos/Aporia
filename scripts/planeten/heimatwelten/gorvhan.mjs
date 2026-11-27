@@ -2,7 +2,7 @@
 // Werte aus den Vorgaben abgeleitet: extreme geologische Aktivität, wenig freies Wasser, zwei atmosphärische Bedingungen, regionale Schwerkraftunterschiede, seltene Mineralien)
 const G = "assets/bilder/Alle Spezies+Übersicht/Biologische Spezies/Technoiden/gesamtdarstellung/";
 export default {
-    ordner: "die-zerbrochene-kruste", system: "gorvhan-system", planetId: "gorvhan-planet",
+    ordner: "gorvhan", system: "gorvhan-system", planetId: "gorvhan-planet",
     name: "Gorvhan", genitiv: "von Gorvhan", klasse: "Gesteinsplanet", klasseLang: "Vulkanische Erzwelt mit geringer Schwerkraft",
     spezies: { name: "Technoiden", gruppe: "Biologische Spezies", ordner: "Technoiden", seite: "inhalte/spezies/Biologische Spezies/Technoiden/Hauptseite/Spezies.html" },
     intro: "Gorvhan ist die Heimatwelt der Technoiden: eine von Lavarissen durchzogene Welt aus Vulkangebirgen, Erzebenen und kilometertiefen Höhlensystemen. In ihren heißen Gesteinsspalten verband sich einst eine Mikrobe mit Stein und Erz – der Ursprung der Technoiden.",

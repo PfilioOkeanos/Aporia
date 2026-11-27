@@ -3,7 +3,7 @@ const B = "assets/bilder/Alle Spezies+Übersicht/Technologische Lebensformen/Bio
 const H = B + "Heimatplanet/Städte_planet_TRAPPIST-1e/";
 const K = B + "Designs_website_ui/UI_Assetpaket/bildmotive/konzeptausschnitte/";
 export default {
-    ordner: "felsplanet-im-dichten-violetten-wolkenmantel", system: "trappist-system", planetId: "trappist-e",
+    ordner: "trappist-1e", system: "trappist-system", planetId: "trappist-e",
     name: "TRAPPIST-1e", genitiv: "von TRAPPIST-1e", klasse: "Gesteinsplanet", klasseLang: "Erdgroßer Gesteinsplanet um einen Roten Zwerg",
     intro: "TRAPPIST-1e ist die Heimatwelt der Biomechnoiden: ein erdgroßer Gesteinsplanet unter dem roten Licht eines ultrakühlen Zwergsterns, mit dichter Atmosphäre, starken Klimagegensätzen, gefährlichen Gasregionen und Kristallstürmen – einst Siedlungswelt ihrer menschlichen Vorfahren.",
     bildtext: "TRAPPIST-1e im violetten Wolkenmantel",

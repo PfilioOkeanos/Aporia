@@ -6,12 +6,16 @@
   "klasse": "Asteroid",
   "intro": "Tivar ist ein kleiner Trojaner, der Seyrath am vorauseilenden Lagrange-Punkt L4 begleitet. Sein glasig aufgeschmolzenes Gestein stammt vermutlich aus einem frühen Einschlag auf Seyrath selbst; chronoidische Forscher nutzen ihn als ungestörte Messplattform. Tivar umkreist Kelira in 0,66 AE Abstand und braucht für einen Umlauf 216,3 Tage.",
   "globusDaten": {
-    "planet": "glasiger-impaktasteroid-im-tiefen-all",
+    "planet": "tivar",
     "klasse": "Gestein",
     "radius": 3000
   },
   "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=seyrath-stern&objekt=seyrath-tivar",
   "grunddaten": [
+    [
+      "System-ID",
+      "seyrath-tivar"
+    ],
     [
       "Archiv-ID",
       "AP-FFE7D3ECA1"
@@ -85,16 +89,16 @@
     },
     {
       "icon": "✿",
-      "art": "Heimatwelt der Chronoiden",
-      "titel": "Seyrath",
-      "href": "inhalte/himmelskoerper/planeten/details/seyrath/hauptseite/index.html",
+      "art": "Heimatwelt der Megakolonien",
+      "titel": "Doran",
+      "href": "inhalte/himmelskoerper/planeten/details/doran/hauptseite/index.html",
       "route": null
     },
     {
       "icon": "◈",
       "art": "Spezies-Dossier",
-      "titel": "Chronoiden",
-      "href": "inhalte/spezies/Mentale Spezies/Chronoiden/hauptseite/Spezies.html",
+      "titel": "Megakolonien",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Megakolonien/hauptseite/Spezies.html",
       "route": null
     }
   ],
@@ -104,8 +108,8 @@
       "href": "Menüs/Sternenkarte/Sternenkarte.html?system=seyrath-stern&objekt=seyrath-tivar"
     },
     {
-      "titel": "Speziesdossier Chronoiden",
-      "href": "inhalte/spezies/Mentale Spezies/Chronoiden/hauptseite/Spezies.html"
+      "titel": "Speziesdossier Megakolonien",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Megakolonien/hauptseite/Spezies.html"
     }
   ],
   "design": {
@@ -270,18 +274,18 @@
           ]
         },
         {
-          "titel": "Im System von Seyrath",
+          "titel": "Im System von Doran",
           "text": [
-            "Das Kelira-System ist die Heimat der Chronoiden: Ihr Planet Seyrath umkreist Kelira."
+            "Das Kelira-System ist die Heimat der Megakolonien: Ihr Planet Doran umkreist Kelira."
           ],
           "verweise": [
             [
-              "Seyrath",
-              "inhalte/himmelskoerper/planeten/details/seyrath/hauptseite/index.html"
+              "Doran",
+              "inhalte/himmelskoerper/planeten/details/doran/hauptseite/index.html"
             ],
             [
-              "Speziesdossier Chronoiden",
-              "inhalte/spezies/Mentale Spezies/Chronoiden/hauptseite/Spezies.html"
+              "Speziesdossier Megakolonien",
+              "inhalte/spezies/Gigantische Lebensformen/Megakolonien/hauptseite/Spezies.html"
             ]
           ]
         }

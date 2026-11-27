@@ -168,4 +168,9 @@ Sie können offen kommunizieren und kooperieren, ohne persönliche Beziehungen e
 ## 18. Zentrale gesellschaftliche Identität
 Die solitidische Gesellschaft ist keine Gemeinschaft im emotionalen Sinn, sondern eine funktionierende Zivilisation unabhängiger Individuen.
 
-Ihre Stabilität entsteht aus Wissen, Infrastruktur, Recht und überprüfbaren Vereinbarungen.
+Ihre Stabilität entsteht aus Wissen, Infrastruktur, Recht und überprüfbaren Vereinbarungen.#
+
+
+Die dunkle seite#
+
+Eigennützige Entscheidungen ohne emotionale Rücksichtnahme

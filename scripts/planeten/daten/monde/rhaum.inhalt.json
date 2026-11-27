@@ -1,56 +1,135 @@
 {
-  "_erzeugt": "koerper-bauen",
   "name": "Rhaum",
   "genitiv": "von Rhaum",
   "dossierName": "Rhaum-Dossier",
-  "klasse": "Mond",
-  "intro": "Rhaum ist der große Mond Veshkaras. Gemeinsam mit den saisonalen Überschwemmungen prägen seine Gezeiten die Küstendeltas. Rhaum umkreist Veshkara in 29 Tage.",
+  "klasse": "Mond · Atmosphärischer Gesteinsmond",
+  "intro": "Rhaum – die Welt der fliegenden Titanen. Der große Mond Veshkaras ist klein und leicht, besitzt aber eine Atmosphäre von 4,2 bar. Geringe Schwerkraft und dichte Luft machten hier möglich, was anderswo undenkbar ist: Die Velorithen fliegen mit 100 bis 400 Metern Flügelspannweite über Gebirgsbögen, Wolkenbecken und Binnenmeere.",
   "globusDaten": {
     "planet": "istral-der-lebende-mond",
-    "klasse": "Gestein",
+    "klasse": "Organisch geprägte Mondwelt",
     "radius": 1500000
   },
-  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=veshkara-stern&objekt=veshkara-rhaum",
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=veshkara-stern",
   "grunddaten": [
     [
       "Archiv-ID",
       "AP-DFADAC72A5"
     ],
     [
-      "Typ",
-      "Mond"
-    ],
-    [
-      "Sternsystem",
-      "Khelar-System"
-    ],
-    [
-      "Zentralkörper",
-      "Veshkara"
-    ],
-    [
-      "Große Halbachse",
-      "371.674 km"
-    ],
-    [
-      "Umlaufzeit",
-      "29 Tage"
+      "Klasse",
+      "Atmosphärischer Gesteinsmond mit dichter Gashülle"
     ],
     [
       "Durchmesser",
       "3.000 km"
     ],
     [
+      "Radius",
+      "1.500 km"
+    ],
+    [
       "Masse",
-      "1,138 Mondmassen"
+      "0,01 Erdmassen"
+    ],
+    [
+      "Dichte",
+      "5,91 g/cm³"
     ],
     [
       "Schwerkraft",
-      "0,25 g"
+      "0,25 g (2,5 m/s²)"
     ],
     [
-      "Gleichgewichtstemperatur",
-      "ca. -4 °C"
+      "Mittlere Oberflächentemperatur",
+      "ca. 9 °C"
+    ],
+    [
+      "Ozeane",
+      "ca. 35 % (Binnenmeere, Ozeanbecken, Seen und Flüsse)"
+    ],
+    [
+      "Atmosphäre",
+      "80 % Stickstoff, 13,8 % Argon, 6 % Sauerstoff, 0,1 % Kohlendioxid, 0,1 % Spurengase"
+    ],
+    [
+      "Atmosphärendruck",
+      "ca. 4,2 bar (Becken bis ca. 5 bar)"
+    ],
+    [
+      "Rotation (gebunden)",
+      "29 Erdtage (gebunden; Sonnentag ca. 32,4 Erdtage)"
+    ],
+    [
+      "Umlaufzeit",
+      "276 Erdtage"
+    ],
+    [
+      "Abstand zum Stern",
+      "0,78 AE"
+    ],
+    [
+      "Mutterplanet",
+      "Veshkara (Gesteinsplanet)"
+    ],
+    [
+      "Abstand zum Mutterplaneten",
+      "ca. 371.674 km"
+    ],
+    [
+      "Umlauf um Veshkara",
+      "29 Erdtage"
+    ],
+    [
+      "Monde",
+      "keine"
+    ],
+    [
+      "Zentralstern",
+      "Khelar, Orangefarbener Zwerg (K0 V)"
+    ],
+    [
+      "Einstrahlung",
+      "0,99-fach der Erde"
+    ],
+    [
+      "Achsneigung",
+      "0°"
+    ],
+    [
+      "Exzentrizität",
+      "0,05"
+    ],
+    [
+      "Fluchtgeschwindigkeit",
+      "2,7 km/s"
+    ],
+    [
+      "Alter",
+      "ca. 4,7 Mrd. Jahre"
+    ],
+    [
+      "Beiname",
+      "Welt der fliegenden Titanen"
+    ],
+    [
+      "Archiv-ID",
+      "AP-DFADAC72A5"
+    ],
+    [
+      "Rotation",
+      "Gebunden an Veshkara"
+    ],
+    [
+      "Landmassen",
+      "Drei große, zahlreiche Inselgruppen"
+    ],
+    [
+      "Fraktionszugehörigkeit",
+      "Noch nicht festgelegt"
+    ],
+    [
+      "Intelligente Spezies",
+      "Velorithen"
     ]
   ],
   "position": [
@@ -60,173 +139,121 @@
     ],
     [
       "Zentralstern",
-      "Khelar",
-      "inhalte/himmelskoerper/sterne/details/khelar/hauptseite/index.html"
+      "Khelar · K0 V, Einzelstern"
     ],
     [
-      "Umläuft",
-      "Veshkara",
-      "inhalte/himmelskoerper/planeten/details/veshkara/hauptseite/index.html"
+      "Bahnposition",
+      "2. von 4 Planeten"
     ],
     [
-      "Abstand",
-      "371.674 km"
+      "Entfernung zur Sonne",
+      "31 Lichtjahre"
+    ],
+    [
+      "Nächste Nachbarsysteme",
+      "Kharuun-System (22,6 Lj), Halvorn-System (23,7 Lj)"
     ]
   ],
   "verknuepfungen": [
     {
-      "icon": "✦",
-      "art": "Sternenkarte",
-      "titel": "Rhaum im Khelar-System",
-      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=veshkara-stern&objekt=veshkara-rhaum",
-      "route": null
-    },
-    {
-      "icon": "☀",
-      "art": "Zentralstern",
-      "titel": "Khelar",
-      "href": "inhalte/himmelskoerper/sterne/details/khelar/hauptseite/index.html",
-      "route": null
-    },
-    {
-      "icon": "◍",
-      "art": "Mutterplanet",
-      "titel": "Veshkara",
-      "href": "inhalte/himmelskoerper/planeten/details/veshkara/hauptseite/index.html",
-      "route": null
-    },
-    {
       "icon": "✿",
-      "art": "Heimatwelt der Chitinoiden",
-      "titel": "Veshkara",
-      "href": "inhalte/himmelskoerper/planeten/details/veshkara/hauptseite/index.html",
+      "art": "Heimische Spezies",
+      "titel": "Velorithen",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Velorithen/hauptseite/Spezies.html",
       "route": null
     },
     {
       "icon": "◈",
       "art": "Spezies-Dossier",
-      "titel": "Chitinoiden",
-      "href": "inhalte/spezies/Biologische Spezies/Chitinnoiden/hauptseite/Spezies.html",
+      "titel": "Heimatwelt",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Velorithen/Unterseiten/Heimatwelt/heimatwelt.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Politik und Fraktionen",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Velorithen/Unterseiten/Politik/politik.html",
+      "route": null
+    },
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Khelar-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=veshkara-stern",
       "route": null
     }
   ],
   "quellen": [
     {
-      "titel": "Sternenkarte · Khelar-System",
-      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=veshkara-stern&objekt=veshkara-rhaum"
+      "titel": "Speziesdossier Velorithen · Heimatwelt",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Velorithen/Unterseiten/Heimatwelt/heimatwelt.html"
     },
     {
-      "titel": "Speziesdossier Chitinoiden",
-      "href": "inhalte/spezies/Biologische Spezies/Chitinnoiden/hauptseite/Spezies.html"
+      "titel": "Speziesdossier Velorithen · Geschichte",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Velorithen/Unterseiten/Geschichte/geschichte.html"
+    },
+    {
+      "titel": "Speziesdossier Velorithen · Gesellschaft",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Velorithen/Unterseiten/Gesellschaft/gesellschaft.html"
+    },
+    {
+      "titel": "Speziesdossier Velorithen · Politik",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Velorithen/Unterseiten/Politik/politik.html"
+    },
+    {
+      "titel": "Speziesdossier Velorithen · Allgemeines",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Velorithen/Unterseiten/Allgemeines/allgemeines.html"
     }
   ],
   "design": {
     "farben": {
-      "nacht": "#090908",
-      "tiefe": "#141413",
-      "akzent": "#d1cdc7",
-      "sand": "#d4c9ad",
-      "moos": "#aec69e",
-      "ozean": "#8bacba",
-      "glas": "rgba(8, 12, 18, .76)",
-      "glas-hell": "rgba(16, 22, 32, .82)",
-      "linie": "rgba(255, 255, 255, .12)",
-      "linie-hell": "rgba(255, 255, 255, .3)",
-      "text": "#eef2f6",
-      "leise": "#a8b0bc",
-      "aporia-page-tint": "#53504c"
-    },
-    "schichten": [
-      [
-        "Orbit",
-        "Astronomie"
-      ],
-      [
-        "Planet",
-        "Mutterplanet"
-      ],
-      [
-        "Kräfte",
-        "Gezeiten"
-      ],
-      [
-        "Tiefe",
-        "Geologie"
-      ]
-    ]
+      "nacht": "#05070c",
+      "tiefe": "#0c1119",
+      "akzent": "#9fd0ff",
+      "sand": "#d6c8a8",
+      "moos": "#8fc49a",
+      "ozean": "#3f7fc0",
+      "glas": "rgba(12, 17, 25, .8)",
+      "glas-hell": "rgba(20, 28, 40, .86)",
+      "linie": "rgba(159, 208, 255, .16)",
+      "linie-hell": "rgba(180, 215, 255, .36)",
+      "text": "#eef3fa",
+      "leise": "#a6b3c4",
+      "aporia-page-tint": "#28466a"
+    }
   },
   "kapitel": {
     "Mutterplanet": {
-      "gruppe": "Wissenschaft",
-      "icon": "◐",
+      "gruppe": "Weitere",
+      "icon": "◆",
       "intro": "Mutterplanet von Rhaum.",
-      "abschnitte": [
-        {
-          "titel": "Veshkara",
-          "text": [
-            "Veshkara ist die Heimatwelt der Chitinoiden: ein terrestrischer Planet mit Ozeanen, den Kontinenten Sereth und Vaul, großen Flusssystemen und Feuchtgebieten."
-          ],
-          "daten": [
-            [
-              "Typ",
-              "Gesteinsplanet"
-            ],
-            [
-              "Durchmesser",
-              "11.978 km"
-            ],
-            [
-              "Abstand des Mondes",
-              "371.674 km (62,1 Planetenradien)"
-            ]
-          ],
-          "verweise": [
-            [
-              "Veshkara",
-              "inhalte/himmelskoerper/planeten/details/veshkara/hauptseite/index.html"
-            ]
-          ]
-        }
-      ]
+      "abschnitte": []
     },
     "Gezeiten": {
-      "gruppe": "Natur",
-      "icon": "≈",
+      "gruppe": "Weitere",
+      "icon": "◆",
       "intro": "Gezeiten von Rhaum.",
-      "abschnitte": [
-        {
-          "titel": "Gezeitenkräfte",
-          "text": [
-            "Auf seiner Bahn in 371.674 km Abstand wirken starke Gezeitenkräfte von Veshkara auf Rhaum. Die leicht exzentrische Bahn (e = 0,05) knetet das Innere bei jedem Umlauf."
-          ]
-        }
-      ]
+      "abschnitte": []
     },
     "Gebundene Rotation": {
-      "gruppe": "Wissenschaft",
-      "icon": "↻",
+      "gruppe": "Weitere",
+      "icon": "◆",
       "intro": "Gebundene Rotation von Rhaum.",
-      "abschnitte": [
-        {
-          "titel": "Rotation",
-          "text": [
-            "Rhaum wendet Veshkara vermutlich stets dieselbe Seite zu: Ein Tag dauert so lange wie ein Umlauf – 29 Tage."
-          ]
-        }
-      ]
+      "abschnitte": []
     },
     "Allgemeines": {
       "gruppe": "Weitere",
       "icon": "▤",
-      "intro": "Rhaum auf einen Blick.",
+      "intro": "Rhaum auf einen Blick: leichter Mond, dichte Luft, fliegende Titanen.",
       "abschnitte": [
         {
           "titel": "Kurzprofil",
           "bild": true,
-          "bildtext": "Rhaum",
+          "bildtext": "Rhaum – Welt der fliegenden Titanen",
           "text": [
-            "Rhaum ist der große Mond Veshkaras. Gemeinsam mit den saisonalen Überschwemmungen prägen seine Gezeiten die Küstendeltas.",
-            "Rhaum umkreist Veshkara in 29 Tage."
+            "Rhaum ist ein metallreicher Gesteinsmond von 3.000 Kilometern Durchmesser und 1,138 Erdmondmassen. Er umläuft Veshkara in 371.674 km Abstand alle 29 Tage und zeigt ihm stets dieselbe Seite; ein Sonnentag dauert rund 32,4 Erdtage. Die Schwerkraft beträgt nur 0,25 g.",
+            "Seine dichte, stickstoff- und argonreiche Atmosphäre ist eine außergewöhnliche Eigenschaft – bei nur 2,73 km/s Fluchtgeschwindigkeit. Eine kühle Hochatmosphäre, schwere Gase sowie geologische und biologische Nachlieferung halten sie stabil; das Modell ist eine spekulative APORIA-Festlegung. 35 % der Oberfläche sind Wasser, die mittlere Temperatur liegt bei etwa 9 °C."
           ]
         },
         {
@@ -234,55 +261,125 @@
           "daten": [
             [
               "Typ",
-              "Mond"
+              "Atmosphärischer Gesteinsmond mit dichter Gashülle"
             ],
             [
-              "Sternsystem",
-              "Khelar-System"
-            ],
-            [
-              "Zentralkörper",
-              "Veshkara"
-            ],
-            [
-              "Große Halbachse",
-              "371.674 km"
-            ],
-            [
-              "Umlaufzeit",
-              "29 Tage"
-            ],
-            [
-              "Durchmesser",
-              "3.000 km"
-            ],
-            [
-              "Masse",
-              "1,138 Mondmassen"
+              "Zentralstern",
+              "Khelar (Orangefarbener Zwerg (K0 V))"
             ],
             [
               "Schwerkraft",
               "0,25 g"
             ],
             [
-              "Gleichgewichtstemperatur",
-              "ca. -4 °C"
+              "Durchmesser",
+              "3.000 km"
+            ],
+            [
+              "Mittlere Temperatur",
+              "ca. 9 °C"
+            ],
+            [
+              "Atmosphäre",
+              "Dicht, stickstoff- und argonreich, ca. 4,2 bar"
+            ],
+            [
+              "Wasser",
+              "ca. 35 % (Binnenmeere, Ozeanbecken, Seen und Flüsse)"
+            ],
+            [
+              "Intelligente Spezies",
+              "Velorithen"
             ]
           ]
         },
         {
-          "titel": "Im System von Veshkara",
-          "text": [
-            "Das Khelar-System ist die Heimat der Chitinoiden: Ihr Planet Veshkara umkreist Khelar, und Rhaum ist einer seiner Monde."
-          ],
-          "verweise": [
+          "titel": "Rhaum im Vergleich zur Erde",
+          "vergleich": {
+            "mit": "Erde",
+            "werte": [
+              [
+                "Durchmesser",
+                3000,
+                12742,
+                "km"
+              ],
+              [
+                "Schwerkraft",
+                0.25,
+                1,
+                "g"
+              ],
+              [
+                "Tageslänge",
+                696,
+                24,
+                "h"
+              ],
+              [
+                "Luftdruck (Mittel)",
+                4.2,
+                1,
+                "bar"
+              ],
+              [
+                "Mittlere Temperatur",
+                9,
+                15,
+                "°C"
+              ],
+              [
+                "Wasserbedeckung",
+                35,
+                71,
+                "%"
+              ]
+            ]
+          }
+        },
+        {
+          "titel": "Hauptmerkmale",
+          "karten": [
+            {
+              "titel": "Dichte Atmosphäre",
+              "text": "4,2 bar auf einem Mond mit nur 0,25 g."
+            },
+            {
+              "titel": "Fliegende Titanen",
+              "text": "Velorithen mit 100–400 m Flügelspannweite."
+            },
+            {
+              "titel": "Lange Tage",
+              "text": "Ein Sonnentag dauert rund 32,4 Erdtage."
+            },
+            {
+              "titel": "Veshkara am Himmel",
+              "text": "Der Mutterplanet steht fast unbeweglich über der zugewandten Seite."
+            }
+          ]
+        },
+        {
+          "titel": "Einordnung",
+          "daten": [
             [
-              "Veshkara",
-              "inhalte/himmelskoerper/planeten/details/veshkara/hauptseite/index.html"
+              "Sternenkarten-ID",
+              "veshkara-rhaum"
             ],
             [
-              "Speziesdossier Chitinoiden",
-              "inhalte/spezies/Biologische Spezies/Chitinnoiden/hauptseite/Spezies.html"
+              "Mutterplanet",
+              "Veshkara, Heimat der Chitinoiden"
+            ],
+            [
+              "Natürliche Lebensräume",
+              "Oberfläche und Atmosphäre"
+            ],
+            [
+              "Alter",
+              "ca. 4,7 Mrd. Jahre"
+            ],
+            [
+              "Entfernung zum Sonnensystem",
+              "31 Lichtjahre"
             ]
           ]
         }
@@ -291,70 +388,163 @@
     "Astronomie": {
       "gruppe": "Wissenschaft",
       "icon": "✧",
-      "intro": "Rhaum im Khelar-System.",
+      "intro": "Ein Mond mit eigener Zivilisation.",
       "abschnitte": [
         {
-          "titel": "Bahn",
+          "titel": "Bahn und Position",
+          "text": [
+            "Rhaum ist ein Mond von Veshkara, dem 2. von 4 Planeten im Khelar-System. Er umläuft Veshkara in rund 371.674 km Abstand alle 29 Tage; gemeinsam umkreisen beide Khelar in 0,78 AE Abstand – innerhalb der habitablen Zone (bei Khelar zwischen 0,74 und 1,29 AE). Er erhält 0,99-mal so viel Sternlicht wie die Erde.",
+            "Ohne Atmosphäre läge seine Gleichgewichtstemperatur bei rund -4 °C. Die dichte Atmosphäre hebt die mittlere Temperatur von rund −4 °C (Gleichgewicht) auf etwa 9 °C und verteilt Wärme zwischen Tag- und Nachtseite."
+          ],
           "daten": [
             [
-              "Zentralkörper",
-              "Veshkara"
+              "Sternsystem",
+              "Khelar-System"
+            ],
+            [
+              "Bahnposition",
+              "Mond von Veshkara · 2. von 4 Planeten"
+            ],
+            [
+              "Mutterplanet",
+              "Veshkara (Gesteinsplanet)"
+            ],
+            [
+              "Abstand zum Mutterplaneten",
+              "ca. 371.674 km"
+            ],
+            [
+              "Umlauf um Veshkara",
+              "29 Erdtage"
             ],
             [
               "Große Halbachse",
-              "371.674 km"
+              "0,78 AE (ca. 116,7 Mio. km)"
             ],
             [
               "Exzentrizität",
               "0,05"
             ],
             [
-              "Bahnneigung",
-              "5,2°"
+              "Umlaufzeit",
+              "276,2 Erdtage"
             ],
             [
-              "Umlaufzeit",
-              "29 Tage"
+              "Ortsjahr",
+              "ca. 10 Ortstage"
+            ],
+            [
+              "Einstrahlung",
+              "ca. 0,99-fach der Erde"
+            ],
+            [
+              "Habitable Zone von Khelar",
+              "0,74–1,29 AE"
             ]
           ]
         },
         {
-          "titel": "Körper des Systems",
-          "zeitleiste": [
+          "titel": "Zentralstern",
+          "text": [
+            "Khelar ist ein Hauptreihenstern der Spektralklasse K0 V mit 83 % der Sonnenmasse und 60 % ihrer Leuchtkraft – Heimatstern der Chitinoiden und ein ruhiger Einzelstern."
+          ],
+          "daten": [
             [
-              "Khelar · Stern",
+              "Name",
+              "Khelar"
+            ],
+            [
+              "Typ",
               "Orangefarbener Zwerg (K0 V)"
             ],
             [
-              "Khelar I · 0,3 AE",
-              "Gesteinsplanet"
+              "Masse",
+              "0,83 Sonnenmassen"
             ],
             [
-              "Veshkara · 0,78 AE",
-              "Gesteinsplanet"
+              "Radius",
+              "0,83 Sonnenradien"
             ],
             [
-              "Khelar III · 2,7 AE",
-              "Gasriese"
+              "Leuchtkraft",
+              "0,6 Sonnenleuchtkräfte"
             ],
             [
-              "Khelar IV · 7,8 AE",
-              "Eisriese"
+              "Oberflächentemperatur",
+              "ca. 5.250 K"
             ],
             [
-              "Harzgürtel · 1,4–2 AE",
-              "Asteroidengürtel"
+              "Alter",
+              "ca. 4,7 Mrd. Jahre"
             ],
             [
-              "Äußeres Kometengebiet · 33–47 AE",
-              "Kometengebiet"
+              "Begleitsterne",
+              "keine (Einzelstern)"
             ]
           ],
           "verweise": [
             [
               "Khelar",
               "inhalte/himmelskoerper/sterne/details/khelar/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Rotation und Achse",
+          "daten": [
+            [
+              "Rotation (gebunden)",
+              "29 Erdtage (gebunden; Sonnentag ca. 32,4 Erdtage)"
             ],
+            [
+              "Achsneigung",
+              "0°"
+            ],
+            [
+              "Scheinbare Sterngröße",
+              "ca. 0,56° (Sonne von der Erde: 0,53°)"
+            ],
+            [
+              "Jahreszeiten",
+              "Lange Licht- und Dunkelphasen statt ausgeprägter Jahreszeiten"
+            ]
+          ]
+        },
+        {
+          "titel": "Monde",
+          "text": [
+            "Rhaum besitzt keine Monde."
+          ]
+        },
+        {
+          "titel": "Planeten des Systems",
+          "zeitleiste": [
+            [
+              "Khelar I · 0,3 AE",
+              "Khelar I ist ein heißer, eisenreicher Gesteinsplanet nahe am Stern."
+            ],
+            [
+              "Veshkara · 0,78 AE",
+              "Veshkara ist die Heimatwelt der Chitinoiden: ein terrestrischer Planet mit Ozeanen, den Kontinenten Sereth und Vaul, großen Flusssystemen und Feuchtgebieten."
+            ],
+            [
+              "Khelar III · 2,7 AE",
+              "Khelar III ist ein goldgelber Gasriese mit 0,44 Jupitermassen."
+            ],
+            [
+              "Harzgürtel · 1,4–2 AE",
+              "Der Harzgürtel zwischen 1,4 und 2,0 AE besteht aus dunklen, kohlenstoff- und eisenreichen Asteroiden; sein Name stammt von ihrer bernsteinartigen Färbung im Sternlicht."
+            ],
+            [
+              "Khelar IV · 7,8 AE",
+              "Khelar IV ist ein kalter, blaugrüner Eisriese."
+            ],
+            [
+              "Zarenev-Kometenwolke · 33–47 AE",
+              "Ein ferner Gürtel aus Eiskörpern zwischen 33 und 47 AE."
+            ]
+          ],
+          "verweise": [
             [
               "Khelar I",
               "inhalte/himmelskoerper/planeten/details/khelar-i/hauptseite/index.html"
@@ -368,9 +558,75 @@
               "inhalte/himmelskoerper/planeten/details/khelar-iii/hauptseite/index.html"
             ],
             [
+              "Harzgürtel",
+              "inhalte/himmelskoerper/sternensysteme/details/harzgurtel/hauptseite/index.html"
+            ],
+            [
               "Khelar IV",
               "inhalte/himmelskoerper/planeten/details/khelar-iv/hauptseite/index.html"
+            ],
+            [
+              "Zarenev-Kometenwolke",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=veshkara-stern&objekt=veshkara-kometengebiet"
             ]
+          ]
+        },
+        {
+          "titel": "Nachbarschaft und Anomalien",
+          "karten": [
+            {
+              "titel": "Panzerkomet",
+              "text": "Ein ungewöhnlich großer, dunkel verkrusteter Komet (rund 34 Jahre Umlaufzeit), dessen Schweif in einzelnen Schichten aufbricht – die Chitinoiden nennen ihn wegen seiner Kruste den Panzerkometen."
+            },
+            {
+              "titel": "Wurzelstein",
+              "text": "Ein Asteroid mit verzweigten, wurzelartigen Mineraladern an der Oberfläche – Gegenstand zahlreicher Legenden und wissenschaftlicher Expeditionen."
+            },
+            {
+              "titel": "Nachbarsysteme",
+              "text": "Kharuun-System (22,6 Lj), Halvorn-System (23,7 Lj), Velhar-System (24,5 Lj) – alle weit außerhalb der gravitativen Einflusszone von Khelar (rund 3,4 Lichtjahre)."
+            }
+          ],
+          "verweise": [
+            [
+              "Panzerkomet",
+              "inhalte/himmelskoerper/kometen/details/panzerkomet/hauptseite/index.html"
+            ],
+            [
+              "Wurzelstein",
+              "inhalte/himmelskoerper/asteroiden/details/wurzelstein/hauptseite/index.html"
+            ],
+            [
+              "Khelar-System in der Sternenkarte",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=veshkara-stern"
+            ]
+          ]
+        },
+        {
+          "titel": "Bahn um Veshkara",
+          "daten": [
+            [
+              "Bahnneigung",
+              "5,2°"
+            ],
+            [
+              "Exzentrizität der Mondbahn",
+              "0,05"
+            ],
+            [
+              "Gebundene Rotation",
+              "Ja – gegenüber Veshkara"
+            ],
+            [
+              "Eigene Monde",
+              "Keine kartiert"
+            ]
+          ]
+        },
+        {
+          "titel": "Am Himmel von Rhaum",
+          "text": [
+            "Veshkara nimmt einen großen Teil des Nachthimmels ein und bleibt auf der zugewandten Mondhälfte annähernd an derselben Stelle. Je nach Bahngeometrie verdunkelt der Mutterplanet regelmäßig die Sonne Khelar."
           ]
         }
       ]
@@ -389,7 +645,7 @@
             ],
             [
               "Masse",
-              "1,138 Mondmassen"
+              "0,01 Erdmassen"
             ],
             [
               "Mittlere Dichte",
@@ -397,12 +653,62 @@
             ],
             [
               "Oberflächenschwerkraft",
-              "2,48 m/s² (0,253 g)"
+              "2,5 m/s² (0,25 g)"
             ],
             [
               "Fluchtgeschwindigkeit",
-              "2,73 km/s"
+              "ca. 2,7 km/s"
+            ],
+            [
+              "Masse in Erdmondmassen",
+              "ca. 1,138"
+            ],
+            [
+              "Gesamtoberfläche",
+              "ca. 28,27 Mio. km²"
+            ],
+            [
+              "Aufbau",
+              "Metallreicher Kern, silikatischer Mantel"
             ]
+          ]
+        },
+        {
+          "titel": "Physikalische Werte im Vergleich",
+          "vergleich": {
+            "mit": "Erde",
+            "werte": [
+              [
+                "Masse",
+                0.014,
+                1,
+                "Erdmassen"
+              ],
+              [
+                "Dichte",
+                5.91,
+                5.51,
+                "g/cm³"
+              ],
+              [
+                "Fluchtgeschwindigkeit",
+                2.7,
+                11.2,
+                "km/s"
+              ],
+              [
+                "Magnetfeld",
+                0.2,
+                1,
+                "× Erde"
+              ]
+            ]
+          }
+        },
+        {
+          "titel": "Leicht und dicht",
+          "text": [
+            "Rhaum besitzt eine hohe mittlere Dichte von etwa 5,9 g/cm³ und einen metallreichen inneren Aufbau. Die Fallbeschleunigung beträgt nur rund 2,45 m/s², die Fluchtgeschwindigkeit etwa 2,73 km/s. Die geringe Schwerkraft erlaubt außergewöhnlich große biologische Tragstrukturen; die dichte Luft erzeugt dagegen hohen Luftwiderstand – Bewegungen in Bodennähe unterscheiden sich erheblich von erdähnlichen Welten."
           ]
         }
       ]
@@ -413,9 +719,9 @@
       "intro": "Geologie von Rhaum.",
       "abschnitte": [
         {
-          "titel": "Geologie",
+          "titel": "Alte Oberfläche",
           "text": [
-            "Rhaum ist geologisch weitgehend erstarrt; Einschläge haben seine Oberfläche geformt."
+            "Große Teile der Oberfläche sind alt. Historische Einschläge schufen gewaltige Becken, deren Ränder heute langgestreckte Gebirgsketten bilden; die schwache Gravitation erlaubt hohe Formationen. Wind und Regen tragen Schichten ab und lagern Sedimente in Becken ab. Die Kruste ist überwiegend stabil; mineralische Hochländer bieten natürliche Siedlungsstandorte."
           ]
         }
       ]
@@ -426,9 +732,81 @@
       "intro": "Atmosphäre von Rhaum.",
       "abschnitte": [
         {
-          "titel": "Gashülle",
+          "titel": "Zusammensetzung",
           "text": [
-            "Rhaum besitzt keine nennenswerte Atmosphäre – dafür ist die Schwerkraft zu gering."
+            "Die dichte Gashülle hat einen mittleren Oberflächendruck von 4,2 bar, in tiefen Becken bis etwa 5 bar; bodennah ist die Luft mit rund 5,4 kg/m³ mehr als viermal so dicht wie auf der Erde. Sie besteht aus 80 % Stickstoff, 13,8 % Argon und 6 % Sauerstoff (Partialdruck etwa 0,25 bar). Der Druck nimmt mit der Höhe nur langsam ab. Für ungeschützte Menschen ist die Luft wegen des hohen Stickstoffpartialdrucks nicht grundsätzlich geeignet."
+          ],
+          "balken": {
+            "werte": [
+              [
+                "Stickstoff",
+                80
+              ],
+              [
+                "Argon",
+                13.8
+              ],
+              [
+                "Sauerstoff",
+                6
+              ],
+              [
+                "Kohlendioxid",
+                0.1
+              ],
+              [
+                "Spurengase",
+                0.1
+              ]
+            ]
+          }
+        },
+        {
+          "titel": "Druck",
+          "daten": [
+            [
+              "Mittlerer Oberflächendruck",
+              "ca. 4,2 bar"
+            ],
+            [
+              "Tiefe Becken",
+              "bis ca. 5 bar"
+            ],
+            [
+              "Bodennahe Dichte",
+              "ca. 5,4 kg/m³"
+            ],
+            [
+              "Sauerstoffpartialdruck",
+              "ca. 0,25 bar"
+            ]
+          ]
+        },
+        {
+          "titel": "Atmosphärische Stabilität",
+          "text": [
+            "Die geringe Fluchtgeschwindigkeit begünstigt Gasverlust; leichte Gase entweichen bevorzugt, schwere wie Argon bleiben länger. Eine kühle Hochatmosphäre begrenzt thermische Verluste, geologische Reservoirs liefern nach, biologische Stickstoffkreisläufe stabilisieren den nutzbaren Anteil. Die genaue langfristige Gasbilanz bleibt wissenschaftlich offen – für die ursprüngliche Evolution war keine Technik nötig."
+          ]
+        },
+        {
+          "titel": "Wolkenschichten",
+          "karten": [
+            {
+              "titel": "Untere Schicht (0–10 km)",
+              "text": "Nebel- und Feuchtigkeitszonen, häufige Wolken in Becken."
+            },
+            {
+              "titel": "Mittlere Schicht (10–30 km)",
+              "text": "Zusammenhängende Wolkenfelder und Aufwindkorridore – teils von Velorithen erreichbar."
+            },
+            {
+              "titel": "Obere Schicht (30–70 km)",
+              "text": "Eiskristalle, dünnere Luft, Forschungsregion."
+            },
+            {
+              "titel": "Hochatmosphäre",
+              "text": "Keine biologische Flugzone, nur technische Forschung."
+            }
           ]
         }
       ]
@@ -439,9 +817,53 @@
       "intro": "Klima von Rhaum.",
       "abschnitte": [
         {
-          "titel": "Temperatur",
+          "titel": "Temperaturzonen",
           "text": [
-            "Bei 0,78 AE Abstand zu Khelar liegt die Gleichgewichtstemperatur von Rhaum bei rund -4 °C – gemäßigt."
+            "Die regionalen Temperaturen reichen von etwa −30 bis +35 °C. Weil ein Sonnentag gut 32 Erdtage dauert, wechseln lange Beleuchtungs- und Dunkelphasen; globale Luftströmungen tragen Wärme von der Tag- zur Nachtseite. Große Gewässer puffern das Klima, und die Temperaturunterschiede treiben die großräumige Zirkulation – das natürliche Verkehrsnetz der Velorithen."
+          ],
+          "skala": {
+            "einheit": "°C",
+            "min": -35,
+            "max": 40,
+            "bereiche": [
+              [
+                "Gebirgshöhen (Nacht)",
+                -30,
+                -5
+              ],
+              [
+                "Hochplateaus",
+                -5,
+                12
+              ],
+              [
+                "Gemäßigte Täler",
+                5,
+                22
+              ],
+              [
+                "Becken (Tagseite)",
+                18,
+                35
+              ]
+            ]
+          }
+        },
+        {
+          "titel": "Strömungen",
+          "liste": [
+            "Großräumige horizontale Windsysteme",
+            "Thermische Aufwinde über erwärmtem Land",
+            "Dynamische Aufwinde an Gebirgskanten",
+            "Zirkulation zwischen Tag- und Nachtregionen",
+            "Atmosphärische Wellen und temporäre Wirbel",
+            "Natürliche Flugkorridore über Tausende Kilometer"
+          ]
+        },
+        {
+          "titel": "Stürme",
+          "text": [
+            "Tiefdrucksysteme, Gewitter, Fallwinde, Gebirgswirbel und lang anhaltende Übergangsstürme zwischen Tag- und Nachtseite prägen das Wetter. Gewöhnlich wehen 20–70 km/h, schwere Stürme deutlich mehr – und weil die Luft so dicht ist, wirkt jeder Wind mit großer Kraft. Stürme können Verkehrsverbindungen unterbrechen; Siedlungen brauchen umfangreiche Schutzsysteme."
           ]
         }
       ]
@@ -452,9 +874,32 @@
       "intro": "Geschichte von Rhaum.",
       "abschnitte": [
         {
-          "titel": "Entstehung",
-          "text": [
-            "Rhaum entstand zusammen mit dem Khelar-System vor rund 4,7 Milliarden Jahren."
+          "titel": "Zeitleiste",
+          "zeitleiste": [
+            [
+              "vor ca. 4,7 Mrd. Jahren",
+              "Entstehung, metallreiches Inneres, frühe Kruste"
+            ],
+            [
+              "Atmosphäre",
+              "Ausgasung, Gasreservoirs, dichte sekundäre Atmosphäre"
+            ],
+            [
+              "Evolution",
+              "Mikroben, Landleben, Flugorganismen, gigantische Leichtbaustrukturen"
+            ],
+            [
+              "Intelligenz",
+              "Frühe Velorithen, Kommunikation, Wanderungen, Gemeinschaften"
+            ],
+            [
+              "Zivilisation",
+              "Rastplätze, atmosphärische Karten, Versorgungsnetze"
+            ],
+            [
+              "Raumfahrt",
+              "Hochatmosphäre, Orbit, Khelar-System; Erstkontakt mit den Chitinoiden offen"
+            ]
           ]
         }
       ]
@@ -465,22 +910,14 @@
       "intro": "Erforschung von Rhaum.",
       "abschnitte": [
         {
-          "titel": "Offene Fragen",
+          "titel": "Forschungsfelder",
           "liste": [
-            "Ist der Mond eingefangen oder mit seinem Planeten entstanden?",
-            "Welche Spuren tragen seine ältesten Krater?"
-          ]
-        },
-        {
-          "titel": "In der Sternenkarte",
-          "text": [
-            "Rhaum ist mit allen Bahndaten im Khelar-System der Sternenkarte eingetragen."
-          ],
-          "verweise": [
-            [
-              "In der Sternenkarte zeigen",
-              "Menüs/Sternenkarte/Sternenkarte.html?system=veshkara-stern&objekt=veshkara-rhaum"
-            ]
+            "Atmosphärenphysik, Meteorologie und Klimatologie",
+            "Aerodynamik und adaptive Tragflächen",
+            "Biomechanik und biologische Leichtbaustrukturen",
+            "Langfristige Atmosphärenstabilität und Gasverluste",
+            "Atmosphärische Energiegewinnung",
+            "Speziesübergreifende Medizin"
           ]
         }
       ]
@@ -491,9 +928,301 @@
       "intro": "Besonderheiten von Rhaum.",
       "abschnitte": [
         {
-          "titel": "Besonderheiten",
+          "titel": "Rekorde",
+          "daten": [
+            [
+              "Größte Lebensformen",
+              "Velorithen, 100–400 m Flügelspannweite"
+            ],
+            [
+              "Lebensspanne der Velorithen",
+              "ca. 600–1.200 Jahre"
+            ],
+            [
+              "Dichteste Luft",
+              "bis ca. 5 bar in tiefen Becken"
+            ]
+          ]
+        },
+        {
+          "titel": "Im Spiel",
           "liste": [
-            "Rhaum ist der große Mond Veshkaras. Gemeinsam mit den saisonalen Überschwemmungen prägen seine Gezeiten die Küstendeltas."
+            "Eine Welt mit veränderter Flugphysik",
+            "Begegnungen mit 100–400 m großen Flugorganismen",
+            "Reisen durch Wolkenschichten, Gebirgssiedlungen erkunden",
+            "Freiwilliger Personentransport durch Velorithen",
+            "Fahrzeuge an dichte Atmosphäre anpassen",
+            "Verletzte Individuen retten, Wetterstationen reparieren",
+            "Handelsmissionen zwischen Rhaum und Veshkara"
+          ]
+        },
+        {
+          "titel": "Gefahren für Besucher",
+          "liste": [
+            "Hoher Druck und hoher Stickstoffpartialdruck",
+            "Starke Windbelastung, Turbulenzen und Abwinde",
+            "Lange Dunkelphasen und niedrige Gravitation",
+            "Bewegungen gigantischer Bewohner",
+            "Schutzkleidung, Atemsysteme und angepasste Fluggeräte nötig"
+          ]
+        }
+      ]
+    },
+    "Planetare Struktur": {
+      "gruppe": "Wissenschaft",
+      "icon": "◈",
+      "intro": "Planetare Struktur von Rhaum.",
+      "abschnitte": [
+        {
+          "titel": "Aufbau",
+          "text": [
+            "Ein metallreicher Kern, ein silikatischer Mantel und eine unterschiedlich starke Kruste mit alten Bruchsystemen bilden den Mond. Regional ist geothermische Aktivität erhalten; tiefe Gesteinsreservoirs gasen langfristig aus und liefern atmosphärische Bestandteile nach. Unterirdisch liegen umfangreiche Wasservorkommen."
+          ],
+          "schichten": [
+            [
+              "Atmosphäre",
+              "Dicht, 4,2 bar, große Skalenhöhe"
+            ],
+            [
+              "Kruste",
+              "Alt, mineralreich, Gasreservoirs, Wasser"
+            ],
+            [
+              "Mantel",
+              "Überwiegend silikatisch"
+            ],
+            [
+              "Kern",
+              "Metallreich"
+            ]
+          ]
+        }
+      ]
+    },
+    "Geografie": {
+      "gruppe": "Natur",
+      "icon": "△",
+      "intro": "Hochplateaus, Gebirgsbögen und Wolkenbecken.",
+      "abschnitte": [
+        {
+          "titel": "Oberfläche",
+          "balken": {
+            "werte": [
+              [
+                "Land",
+                65
+              ],
+              [
+                "Wasser",
+                35
+              ]
+            ]
+          },
+          "liste": [
+            "Drei größere Landmassen und zahlreiche Inselgruppen",
+            "Gewaltige Hochplateaus und Gebirgsbögen aus Einschlagrändern",
+            "Tiefe Einschlagbecken und Binnenmeere",
+            "Breite Flusslandschaften und geschützte Täler",
+            "Hochgelegene natürliche Startregionen"
+          ]
+        },
+        {
+          "titel": "Besondere Landschaften",
+          "karten": [
+            {
+              "titel": "Die Windkronen",
+              "text": "Bogenförmige Gebirgsketten mit wechselnden Aufwinden – Startregionen und große Siedlungen."
+            },
+            {
+              "titel": "Das Große Wolkenbecken",
+              "text": "Gigantisches Einschlagbecken mit Feuchtigkeitsreservoirs, bodennahen Wolken und hoher Produktivität."
+            },
+            {
+              "titel": "Die Schwebenden Nebelmeere",
+              "text": "Nebel über tiefen Regionen, aus denen Gipfel ragen – atmosphärische Wanderkorridore."
+            },
+            {
+              "titel": "Die Langen Abgründe",
+              "text": "Kilometerlange Abbruchkanten mit starken Aufwinden und gefährlichen Abwinden."
+            },
+            {
+              "titel": "Die Stillen Hochländer",
+              "text": "Geschützte Plateaus für Ruhe, Fortpflanzung, Medizin und flugunfähige Velorithen."
+            },
+            {
+              "titel": "Die Atmosphärischen Tore",
+              "text": "Durchgänge zwischen Gebirgen mit gebündelten Strömungen – Verkehrs-, Handels- und Forschungszentren."
+            }
+          ]
+        }
+      ]
+    },
+    "Gewässer": {
+      "gruppe": "Natur",
+      "icon": "≈",
+      "intro": "Gewässer von Rhaum.",
+      "abschnitte": [
+        {
+          "titel": "Gewässer",
+          "liste": [
+            "Mehrere große Binnenmeere und regionale Ozeanbecken",
+            "Umfangreiche Süßwasserseen und breite Flüsse",
+            "Hochgelegene Wasserspeicher",
+            "Geothermisch beeinflusste Gewässer",
+            "Unterirdische Reservoirs",
+            "Saisonale Wasserstandsänderungen"
+          ]
+        }
+      ]
+    },
+    "Biosphäre": {
+      "gruppe": "Natur",
+      "icon": "❧",
+      "intro": "Leben im dichten Luftmeer.",
+      "abschnitte": [
+        {
+          "titel": "Biosphäre",
+          "text": [
+            "Die kohlenstoffbasierte Biosphäre entstand eigenständig. Pflanzenähnliche Primärproduzenten, mikrobielle Ökosysteme, Land- und Gewässerlebewesen und flugfähige Organismen aller Größen sind an hohen Druck angepasst; leichte Tragstrukturen und die Verbreitung von Sporen und Samen durch die Luft spielen eine große Rolle."
+          ]
+        },
+        {
+          "titel": "Flora",
+          "liste": [
+            "Leichte, hochwachsende Pflanzen und flexible Formen in windreichen Regionen",
+            "Biomasseteppiche und schirmartige Vegetation",
+            "Verstärkte Faserstrukturen und Nährstoffspeicher",
+            "Energiespeicher für lange Dunkelphasen",
+            "Kultivierte Nährstoffpflanzen für Velorithen"
+          ]
+        },
+        {
+          "titel": "Fauna",
+          "liste": [
+            "Segel- und mehrgliedrige Flugorganismen",
+            "Atmosphärische Filterorganismen und Strömungsspezialisten",
+            "Bodenbewohnende Pflanzenfresser und Gewässerräuber",
+            "Gleitfähige Gebirgsorganismen",
+            "Nachtaktive Organismen und Bestäuber"
+          ]
+        }
+      ]
+    },
+    "Spezies": {
+      "gruppe": "Zivilisation",
+      "icon": "✿",
+      "intro": "Die Velorithen – die fliegenden Titanen.",
+      "abschnitte": [
+        {
+          "titel": "Velorithen",
+          "text": [
+            "Velorithen sind die größte intelligente Lebensform Rhaums. Sie fliegen aerodynamisch und bewegen sich zusätzlich auf festem Boden; ihre Gesellschaft besteht aus dezentralen Flug- und Versorgungsgemeinschaften. Mit den Chitinoiden auf Veshkara sind sie nicht verwandt."
+          ],
+          "daten": [
+            [
+              "Flügelspannweite",
+              "100–400 m"
+            ],
+            [
+              "Lebensspanne",
+              "ca. 600–1.200 Jahre"
+            ],
+            [
+              "Bewusstsein",
+              "Individuell"
+            ],
+            [
+              "Technologie",
+              "Atmosphärenforschung, Aerodynamik, Leichtbau"
+            ]
+          ]
+        },
+        {
+          "titel": "Ursprung",
+          "liste": [
+            "Frühe Organismen in den alten Beckenlandschaften",
+            "Erste Gleitstrukturen an bewachsenen Hängen",
+            "Geringe Gravitation begünstigt größere Tragflächen",
+            "Dichte Luft ermöglicht leistungsfähigen Flug",
+            "Wanderungen fördern räumliche Intelligenz und soziale Entwicklung",
+            "Versorgungsorte werden zu frühen Siedlungen",
+            "Zivilisation unabhängig von Veshkara"
+          ]
+        }
+      ]
+    },
+    "Zivilisation": {
+      "gruppe": "Zivilisation",
+      "icon": "▥",
+      "intro": "Zivilisation von Rhaum.",
+      "abschnitte": [
+        {
+          "titel": "Siedlungen",
+          "liste": [
+            "Großräumige dezentrale Siedlungsverbünde",
+            "Monumentale Lande- und Ruheplattformen",
+            "Technische Aufwindanlagen, Gebirgskanten als Verkehrsknoten",
+            "Atmosphärische Forschung und planetare Wetterüberwachung",
+            "Medizinische Einrichtungen für gigantische Organismen",
+            "Infrastruktur für ältere Individuen",
+            "Keine verpflichtende Zentralregierung"
+          ]
+        },
+        {
+          "titel": "Architektur und Energie",
+          "liste": [
+            "Horizontale, offene Großkonstruktionen mit tragenden Bögen",
+            "Bewegliche aerodynamische Leitstrukturen und Windschutz",
+            "In Fels integrierte Industrie",
+            "Leichte, biologisch inspirierte Verbundwerkstoffe",
+            "Wind-, Strömungs-, Solar- und Erdwärmeenergie",
+            "Langzeitspeicher für Dunkelphasen"
+          ]
+        }
+      ]
+    },
+    "Fraktionen": {
+      "gruppe": "Zivilisation",
+      "icon": "◇",
+      "intro": "Fraktionen von Rhaum.",
+      "abschnitte": [
+        {
+          "titel": "Politik",
+          "liste": [
+            "Regionale Selbstverwaltung",
+            "Überregionale Koordination der Flugkorridore",
+            "Gemeinsame atmosphärische Sicherheitsstandards",
+            "Regulierung technischer Strömungseingriffe",
+            "Beziehungen zu Veshkara werden später definiert",
+            "Keine automatische Zuordnung zur Fraktion der Chitinoiden"
+          ]
+        }
+      ]
+    },
+    "Rohstoffe": {
+      "gruppe": "Weitere",
+      "icon": "⬡",
+      "intro": "Rohstoffe von Rhaum.",
+      "abschnitte": [
+        {
+          "titel": "Rohstoffe",
+          "karten": [
+            {
+              "titel": "Gesteine und Erze",
+              "text": "Eisenhaltige Gesteine, Silikate, Metallerze, Aluminium- und Magnesiumminerale."
+            },
+            {
+              "titel": "Gase und Wasser",
+              "text": "Atmosphärischer Stickstoff, Argon, Wasser."
+            },
+            {
+              "titel": "Biologisch",
+              "text": "Faserwerkstoffe und organische Nährstoffe."
+            },
+            {
+              "titel": "Energie",
+              "text": "Geothermie und atmosphärische Bewegungsenergie."
+            }
           ]
         }
       ]
@@ -504,9 +1233,9 @@
       "intro": "Medienarchiv von Rhaum.",
       "abschnitte": [
         {
-          "titel": "Rhaum – Archivbild",
+          "titel": "Rhaum aus dem All",
           "bild": true,
-          "bildtext": "Rhaum"
+          "bildtext": "Rhaum – Welt der fliegenden Titanen"
         }
       ]
     }

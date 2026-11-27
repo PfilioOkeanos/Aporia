@@ -1,113 +1,650 @@
 {
   "systemName": "Terev-System",
   "praefix": "nerath-",
-  "lage": { "entfernungLj": 42, "richtung": [-0.6, -0.7, 0.38] },
+  "lage": {
+    "entfernungLj": 42,
+    "richtung": [
+      -0.6,
+      -0.7,
+      0.38
+    ]
+  },
   "einzelstern": true,
   "stern": {
-    "id": "nerath-stern", "name": "Terev", "typ": "Orangegelber Zwerg (K0 V)",
-    "masseSonne": 0.866, "radiusSonne": 0.94, "leuchtkraftSonne": 0.619, "temperaturK": 5280, "alterMrd": 5.6,
-    "farbe": [1, 0.82, 0.58], "emissionsfarbe": [1, 0.84, 0.62], "emission": 1.2,
-    "bild": { "art": "sterne", "slug": "chatgpt-bild-11-nov-2026-16-44-40" },
+    "id": "nerath-stern",
+    "name": "Terev",
+    "typ": "Orangegelber Zwerg (K0 V)",
+    "masseSonne": 0.866,
+    "radiusSonne": 0.94,
+    "leuchtkraftSonne": 0.619,
+    "temperaturK": 5280,
+    "alterMrd": 5.6,
+    "farbe": [
+      1,
+      0.82,
+      0.58
+    ],
+    "emissionsfarbe": [
+      1,
+      0.84,
+      0.62
+    ],
+    "emission": 1.2,
+    "bild": {
+      "art": "sterne",
+      "slug": "chatgpt-bild-11-nov-2026-16-44-40"
+    },
     "beschreibung": "Terev ist ein orangegelber Hauptreihenstern der Spektralklasse K0 V mit 0,866 Sonnenmassen und rund 62 % der Sonnenleuchtkraft. Mit etwa 5,6 Milliarden Jahren befindet er sich in einer langfristig stabilen Entwicklungsphase; seine magnetische Aktivität ist moderat und zeitlich variabel. Er ist Heimatstern der Synaptoiden (Tavari) und Zentrum eines alten Systems mit sieben großen Planeten."
   },
   "koerper": [
-    { "id": "nerath-vaskir", "name": "Vaskir", "typ": "Gesteinsplanet", "um": "nerath-stern",
-      "aAE": 0.16, "e": 0.03, "i": 1.9, "knoten": 20, "peri": 70, "phase": 40, "radiusKm": 4715, "masseErde": 0.42, "albedo": 0.1, "farbe": [0.5, 0.4, 0.34],
-      "bild": { "art": "planeten", "slug": "narben-des-kosmischen-aufpralls" },
-      "beschreibung": "Vaskir ist eine heiße, trockene Gesteinswelt mit zahlreichen Einschlagkratern, alten Lavabecken und mineralischen Hochländern. Eine dichte Atmosphäre fehlt; die Temperaturen unterscheiden sich stark zwischen beleuchteten und unbeleuchteten Regionen." },
-    { "id": "nerath-sereth", "name": "Sereth", "typ": "Gesteinsplanet", "um": "nerath-stern",
-      "aAE": 0.42, "e": 0.05, "i": 1.2, "knoten": 110, "peri": 200, "phase": 210, "radiusKm": 6116, "masseErde": 0.82, "albedo": 0.65, "farbe": [0.82, 0.76, 0.36],
-      "bild": { "art": "planeten", "slug": "vulkanplanet-unter-schwefelgelben-wolken" },
-      "beschreibung": "Sereth ist ein heißer, vulkanisch aktiver Gesteinsplanet mit Lavabecken, Calderen und vulkanischen Hochländern. Seine dichte, nicht atembare Atmosphäre enthält Kohlendioxid und schwefelhaltige Gase." },
-    { "id": "nerath-planet", "name": "Nerath", "typ": "Gesteinsplanet", "um": "nerath-stern",
-      "aAE": 0.93, "e": 0.028, "i": 0, "knoten": 0, "peri": 30, "phase": 120, "radiusKm": 6563, "masseErde": 1.02, "albedo": 0.2, "zielTemperaturC": 15, "farbe": [0.3, 0.62, 0.6],
-      "bild": { "art": "planeten", "slug": "turkisfarbene-flachmeerwelt-im-all" },
-      "beschreibung": "Nerath ist die Heimatwelt der Synaptoiden (Tavari): eine gezeitengeprägte Binnenmeer-, Flachwasser- und Feuchtgebietswelt mit zwei großen Kontinenten, dem Silven-Becken, ausgedehnten Gezeitenmarschen und dem großen Mond Ivera." },
-    { "id": "nerath-ivera", "name": "Ivera", "typ": "Mond", "um": "nerath-planet",
-      "periodeTage": 20, "e": 0.045, "i": 5.1, "knoten": 60, "peri": 0, "phase": 150, "radiusKm": 1975, "masseErde": 0.018, "farbe": [0.72, 0.72, 0.7],
-      "bild": { "art": "monde", "slug": "weitgehend-geformter-mond" },
-      "beschreibung": "Ivera ist der große Gesteinsmond Neraths, vermutlich aus einem frühen Rieseneinschlag entstanden. Sein Gezeitenbeitrag ist etwa 2,7-mal so groß wie der des Erdmondes; er ermöglicht vollständige Sonnenfinsternisse und prägt die Kalender der Tavari." },
-    { "id": "nerath-talvek", "name": "Talvek", "typ": "Gesteinsplanet", "um": "nerath-stern",
-      "aAE": 1.57, "e": 0.055, "i": 1.6, "knoten": 200, "peri": 300, "phase": 300, "radiusKm": 5097, "masseErde": 0.5, "albedo": 0.25, "farbe": [0.6, 0.62, 0.66],
-      "bild": { "art": "planeten", "slug": "blaugrauer-kaltewustenplanet-im-all" },
-      "beschreibung": "Talvek ist ein kalter Gesteinsplanet mit Hochländern, trockenen Becken und größeren Eisvorkommen. Spuren früherer Wasserbewegungen deuten auf eine einst dichtere Atmosphäre hin; früheres Leben ist nicht bestätigt." },
-    { "id": "nerath-rusk", "name": "Rusk", "typ": "Mond", "um": "nerath-talvek",
-      "periodeTage": 0.35, "e": 0.015, "i": 1.1, "knoten": 0, "peri": 0, "phase": 40, "radiusKm": 14, "masseErde": 0, "farbe": [0.5, 0.46, 0.42],
-      "bild": { "art": "monde", "slug": "poroser-trummermond-im-schwarzen-all" },
-      "beschreibung": "Rusk ist ein kleiner, unregelmäßig geformter Gesteinsmond Talveks mit zahlreichen Einschlagspuren." },
-    { "id": "nerath-nemi", "name": "Nemi", "typ": "Mond", "um": "nerath-talvek",
-      "periodeTage": 1.4, "e": 0.003, "i": 1.8, "knoten": 90, "peri": 0, "phase": 220, "radiusKm": 8, "masseErde": 0, "farbe": [0.36, 0.34, 0.32],
-      "bild": { "art": "monde", "slug": "zerklufteter-splittermond" },
-      "beschreibung": "Nemi ist ein weiter außen umlaufender kleiner Mond Talveks mit dunkler, stark verkraterter Oberfläche." },
-    { "id": "nerath-skalenband", "name": "Skalenband", "typ": "Asteroidengürtel", "ringUm": "nerath-stern",
-      "ringeAE": [2.15, 2.4, 2.65, 2.9, 3.15], "anzahl": 300, "groesseKm": 420, "mindestPx": 6, "farbe": [0.64, 0.56, 0.48],
-      "bild": { "art": "sternensysteme", "slug": "rhovans-staubiger-asteroidengurtel" },
-      "beschreibung": "Das Skalenband zwischen 2,15 und 3,15 AE besteht aus Gesteins-, Metall- und kohlenstoffreichen Kleinkörpern. Urakans Gravitation prägte seine Entwicklung; es ist kein überall dicht gefülltes Asteroidenfeld." },
-    { "id": "nerath-urakan", "name": "Urakan", "typ": "Gasriese", "um": "nerath-stern",
-      "aAE": 4.4, "e": 0.034, "i": 1.3, "knoten": 300, "peri": 80, "phase": 60, "radiusKm": 67200, "masseErde": 206.6, "albedo": 0.5, "farbe": [0.86, 0.7, 0.52],
-      "bild": { "art": "planeten", "slug": "warmer-jupiter-im-sanften-sternenlicht" },
-      "beschreibung": "Urakan ist ein Gasriese mit 0,65 Jupitermassen, farbigen Wolkenbändern und dem langlebigen Großen Wirbel. Eine ausgedehnte Magnetosphäre, schmale Staub- und Gesteinsringe und vier größere Monde umgeben ihn." },
-    { "id": "nerath-urakan-ringe", "name": "Ringe von Urakan", "typ": "Planetenring", "ringUm": "nerath-urakan",
-      "ringeAE": [0.00063, 0.0007, 0.00076, 0.00081], "anzahl": 220, "groesseKm": 2, "mindestPx": 2, "farbe": [0.78, 0.72, 0.64],
-      "beschreibung": "Ein schmales Ringsystem aus kleinen Eis-, Staub- und Gesteinspartikeln, etwa 94.000 bis 121.000 km vom Zentrum Urakans entfernt. Kleine Monde und gravitative Resonanzen formen seine Struktur." },
-    { "id": "nerath-nair", "name": "Nair", "typ": "Mond", "um": "nerath-urakan",
-      "periodeTage": 1.52, "e": 0.006, "i": 0.1, "knoten": 0, "peri": 0, "phase": 0, "radiusKm": 1750, "masseErde": 0.013, "farbe": [0.86, 0.72, 0.36],
-      "bild": { "art": "monde", "slug": "junger-mond-im-werden" },
-      "beschreibung": "Nair ist der innerste der vier größeren Monde Urakans – ein vulkanisch aktiver Gesteinsmond mit Lavafeldern und schwefelhaltigen Ablagerungen. Die Resonanz mit Sirel und Valdor heizt sein Inneres durch Gezeitenverformung." },
-    { "id": "nerath-sirel", "name": "Sirel", "typ": "Mond", "um": "nerath-urakan",
-      "periodeTage": 3.04, "e": 0.009, "i": 0.4, "knoten": 0, "peri": 0, "phase": 90, "radiusKm": 1500, "masseErde": 0.008, "farbe": [0.78, 0.86, 0.9],
-      "bild": { "art": "monde", "slug": "eisiger-rissmond-uber-blauen-eisweiten" },
-      "beschreibung": "Sirel ist ein eisiger Ozeanmond mit großen Risssystemen. Unter der Eisoberfläche könnte ein salzhaltiger Ozean liegen – ein besonders interessanter Kandidat für mögliche unterirdische Lebensräume." },
-    { "id": "nerath-valdor", "name": "Valdor", "typ": "Mond", "um": "nerath-urakan",
-      "periodeTage": 6.09, "e": 0.002, "i": 0.2, "knoten": 0, "peri": 0, "phase": 200, "radiusKm": 2400, "masseErde": 0.022, "farbe": [0.6, 0.62, 0.64],
-      "bild": { "art": "monde", "slug": "gefrorener-trummermond-im-schwarzen-all" },
-      "beschreibung": "Valdor ist ein großer Eis-Gesteins-Mond mit alten Einschlagbecken und Eisregionen; ein tiefer Salzwasserozean ist möglich." },
-    { "id": "nerath-erym", "name": "Erym", "typ": "Mond", "um": "nerath-urakan",
-      "periodeTage": 19.5, "e": 0.007, "i": 0.5, "knoten": 40, "peri": 0, "phase": 310, "radiusKm": 1100, "masseErde": 0.002, "farbe": [0.5, 0.48, 0.46],
-      "bild": { "art": "monde", "slug": "mond-mit-orbitalem-auswurfkranz" },
-      "beschreibung": "Erym ist ein alter, stark verkraterter Außenmond Urakans mit geringer innerer Aktivität – wichtig für die Rekonstruktion der frühen Systemgeschichte." },
-    { "id": "nerath-oryss", "name": "Oryss", "typ": "Eisriese", "um": "nerath-stern",
-      "aAE": 9.3, "e": 0.042, "i": 1.8, "knoten": 150, "peri": 250, "phase": 170, "radiusKm": 26121, "masseErde": 20, "albedo": 0.3, "farbe": [0.58, 0.82, 0.8],
-      "bild": { "art": "planeten", "slug": "zarter-gasriese-im-sternenfeld" },
-      "beschreibung": "Oryss ist ein türkis bis blaugrau erscheinender Eisriese mit rund 20 Erdmassen, starken Winden und mehreren schmalen, diffusen Ringen. Seine Achsneigung von etwa 31° führt zu langen saisonalen Veränderungen." },
-    { "id": "nerath-oryss-ringe", "name": "Ringe von Oryss", "typ": "Planetenring", "ringUm": "nerath-oryss",
-      "ringeAE": [0.00028, 0.00033, 0.00038, 0.00042], "anzahl": 180, "groesseKm": 2, "mindestPx": 2, "farbe": [0.7, 0.8, 0.82],
-      "beschreibung": "Mehrere schmale und diffuse Ringe aus kleinen Eis- und Gesteinspartikeln, etwa 42.000 bis 63.000 km vom Zentrum des Oryss entfernt. Der kleine Mond Hevin beeinflusst ihre Verteilung." },
-    { "id": "nerath-hevin", "name": "Hevin", "typ": "Mond", "um": "nerath-oryss",
-      "periodeTage": 0.9, "e": 0.001, "i": 0.1, "knoten": 0, "peri": 0, "phase": 60, "radiusKm": 25, "masseErde": 0, "farbe": [0.66, 0.66, 0.64],
-      "bild": { "art": "monde", "slug": "gezeitenverformter-mond-mit-spannungsrissen" },
-      "beschreibung": "Hevin ist ein kleiner ringnaher Mond des Oryss; seine Gravitation beeinflusst die Verteilung der Ringpartikel." },
-    { "id": "nerath-thyl", "name": "Thyl", "typ": "Mond", "um": "nerath-oryss",
-      "periodeTage": 4.8, "e": 0.004, "i": 0.6, "knoten": 10, "peri": 0, "phase": 140, "radiusKm": 780, "masseErde": 0.0003, "farbe": [0.76, 0.8, 0.84],
-      "bild": { "art": "monde", "slug": "poroser-eistrummermond-im-all" },
-      "beschreibung": "Thyl ist ein eisreicher größerer Mond des Oryss mit alter, kraterreicher Oberfläche; tief liegende Flüssigkeitsschichten sind möglich." },
-    { "id": "nerath-vorra", "name": "Vorra", "typ": "Mond", "um": "nerath-oryss",
-      "periodeTage": 280, "e": 0.3, "i": 145, "knoten": 210, "peri": 0, "phase": 260, "radiusKm": 45, "masseErde": 0, "farbe": [0.42, 0.34, 0.3],
-      "bild": { "art": "monde", "slug": "rotierender-tropfenmond-im-schwarzen-all" },
-      "beschreibung": "Vorra ist ein kleiner, unregelmäßiger Mond mit dunkler Oberfläche auf weiter, rückläufiger Bahn – vermutlich ein eingefangener Kleinkörper." },
-    { "id": "nerath-veyl", "name": "Veyl", "typ": "Eisplanet", "um": "nerath-stern",
-      "aAE": 22.8, "e": 0.12, "i": 14, "knoten": 60, "peri": 120, "phase": 280, "radiusKm": 9238, "masseErde": 2.4, "albedo": 0.6, "farbe": [0.78, 0.82, 0.86],
-      "bild": { "art": "planeten", "slug": "gesteins-eisplanet-im-tiefen-all" },
-      "beschreibung": "Veyl ist ein äußerer eisreicher Planet mit Wassereis, mineralischen Ablagerungen und gefrorenen flüchtigen Stoffen. Seine exzentrische, um 14° geneigte Bahn verändert den Abstand zu Terev deutlich; die sehr kalte Atmosphäre wechselt saisonal ihre Dichte." },
-    { "id": "nerath-kel", "name": "Kel", "typ": "Mond", "um": "nerath-veyl",
-      "periodeTage": 3.5, "e": 0.02, "i": 2, "knoten": 0, "peri": 0, "phase": 100, "radiusKm": 180, "masseErde": 0.00002, "farbe": [0.74, 0.74, 0.72],
-      "bild": { "art": "monde", "slug": "salzkrustenmond-im-schwarzen-all" },
-      "beschreibung": "Kel ist ein kleiner eisiger Mond Veyls mit geringer Schwerkraft, zahlreichen Einschlagspuren und einer Oberfläche aus Eis und mineralischem Material." },
-    { "id": "nerath-taren-saum", "name": "Taren-Saum", "typ": "Kleinkörpergürtel", "ringUm": "nerath-stern",
-      "ringeAE": [38, 45, 52, 58, 65], "anzahl": 320, "groesseKm": 260, "mindestPx": 4.5, "farbe": [0.72, 0.8, 0.88],
-      "bild": { "art": "sternensysteme", "slug": "nivoras-eisblauer-asteroidengurtel" },
-      "beschreibung": "Der Taren-Saum zwischen 38 und 65 AE ist ein äußerer Kleinkörpergürtel aus eis- und gesteinsreichen Körpern, organischen Verbindungen und primitiven Mischkörpern – vergleichbar mit einem transneptunischen Gürtel." },
-    { "id": "nerath-relt", "name": "Relt", "typ": "Zwergplanet", "um": "nerath-stern",
-      "aAE": 44, "e": 0.1, "i": 8, "knoten": 250, "peri": 40, "phase": 100, "radiusKm": 640, "masseErde": 0.0004, "albedo": 0.08, "farbe": [0.34, 0.32, 0.32],
-      "bild": { "art": "zwergplaneten", "slug": "dunkle-kraterwelt-im-all" },
-      "beschreibung": "Relt ist ein dunkler, eisreicher Zwergplanetkandidat im Taren-Saum mit stark verkraterter Oberfläche." },
-    { "id": "nerath-othir", "name": "Othir", "typ": "Zwergplanet", "um": "nerath-stern",
-      "aAE": 52, "e": 0.15, "i": 17, "knoten": 20, "peri": 280, "phase": 330, "radiusKm": 760, "masseErde": 0.0006, "albedo": 0.45, "farbe": [0.7, 0.78, 0.84],
-      "bild": { "art": "zwergplaneten", "slug": "eisblauer-zwergplanet-mit-tektonischen-rissen" },
-      "beschreibung": "Othir ist ein größerer eisreicher Körper des Taren-Saums mit Hinweisen auf mehrere geologische Entwicklungsphasen." },
-    { "id": "nerath-fernwolke", "name": "Terev-Fernwolke", "typ": "Kometengebiet", "ringUm": "nerath-stern",
-      "ringeAE": [1500, 4000, 8000], "ankerAE": 90, "anzahl": 260, "groesseKm": 120, "mindestPx": 3.5, "farbe": [0.66, 0.78, 0.9],
-      "bild": { "art": "sternensysteme", "slug": "spharische-kometenwolke-mit-geneigtem-innenring" },
-      "beschreibung": "Die Terev-Fernwolke ist eine vermutete, weit entfernte Population eisreicher Kleinkörper auf sehr langen Umlaufbahnen – mehrere Tausend bis Zehntausende AE vom Stern entfernt. Gelegentlich gelangen Kometen aus ihr in das innere System." }
+    {
+      "id": "nerath-vaskir",
+      "name": "Vaskir",
+      "typ": "Gesteinsplanet",
+      "um": "nerath-stern",
+      "aAE": 0.16,
+      "e": 0.03,
+      "i": 1.9,
+      "knoten": 20,
+      "peri": 70,
+      "phase": 40,
+      "radiusKm": 4715,
+      "masseErde": 0.42,
+      "albedo": 0.1,
+      "farbe": [
+        0.5,
+        0.4,
+        0.34
+      ],
+      "bild": {
+        "art": "planeten",
+        "slug": "narben-des-kosmischen-aufpralls"
+      },
+      "beschreibung": "Vaskir ist eine heiße, trockene Gesteinswelt mit zahlreichen Einschlagkratern, alten Lavabecken und mineralischen Hochländern. Eine dichte Atmosphäre fehlt; die Temperaturen unterscheiden sich stark zwischen beleuchteten und unbeleuchteten Regionen."
+    },
+    {
+      "id": "nerath-sereth",
+      "name": "Sereth",
+      "typ": "Gesteinsplanet",
+      "um": "nerath-stern",
+      "aAE": 0.42,
+      "e": 0.05,
+      "i": 1.2,
+      "knoten": 110,
+      "peri": 200,
+      "phase": 210,
+      "radiusKm": 6116,
+      "masseErde": 0.82,
+      "albedo": 0.65,
+      "farbe": [
+        0.82,
+        0.76,
+        0.36
+      ],
+      "bild": {
+        "art": "planeten",
+        "slug": "vulkanplanet-unter-schwefelgelben-wolken"
+      },
+      "beschreibung": "Sereth ist ein heißer, vulkanisch aktiver Gesteinsplanet mit Lavabecken, Calderen und vulkanischen Hochländern. Seine dichte, nicht atembare Atmosphäre enthält Kohlendioxid und schwefelhaltige Gase."
+    },
+    {
+      "id": "nerath-planet",
+      "name": "Nerath",
+      "typ": "Gesteinsplanet",
+      "um": "nerath-stern",
+      "aAE": 0.93,
+      "e": 0.028,
+      "i": 0,
+      "knoten": 0,
+      "peri": 30,
+      "phase": 120,
+      "radiusKm": 6563,
+      "masseErde": 1.02,
+      "albedo": 0.2,
+      "zielTemperaturC": 15,
+      "farbe": [
+        0.3,
+        0.62,
+        0.6
+      ],
+      "bild": {
+        "art": "planeten",
+        "slug": "turkisfarbene-flachmeerwelt-im-all"
+      },
+      "beschreibung": "Nerath ist die Heimatwelt der Synaptoiden (Tavari): eine gezeitengeprägte Binnenmeer-, Flachwasser- und Feuchtgebietswelt mit zwei großen Kontinenten, dem Silven-Becken, ausgedehnten Gezeitenmarschen und dem großen Mond Ivera."
+    },
+    {
+      "id": "nerath-ivera",
+      "name": "Ivera",
+      "typ": "Mond",
+      "um": "nerath-planet",
+      "periodeTage": 20,
+      "e": 0.045,
+      "i": 5.1,
+      "knoten": 60,
+      "peri": 0,
+      "phase": 150,
+      "radiusKm": 1975,
+      "masseErde": 0.018,
+      "farbe": [
+        0.72,
+        0.72,
+        0.7
+      ],
+      "bild": {
+        "art": "monde",
+        "slug": "weitgehend-geformter-mond"
+      },
+      "beschreibung": "Ivera ist der große Gesteinsmond Neraths, vermutlich aus einem frühen Rieseneinschlag entstanden. Sein Gezeitenbeitrag ist etwa 2,7-mal so groß wie der des Erdmondes; er ermöglicht vollständige Sonnenfinsternisse und prägt die Kalender der Tavari."
+    },
+    {
+      "id": "nerath-talvek",
+      "name": "Talvek",
+      "typ": "Gesteinsplanet",
+      "um": "nerath-stern",
+      "aAE": 1.57,
+      "e": 0.055,
+      "i": 1.6,
+      "knoten": 200,
+      "peri": 300,
+      "phase": 300,
+      "radiusKm": 5097,
+      "masseErde": 0.5,
+      "albedo": 0.25,
+      "farbe": [
+        0.6,
+        0.62,
+        0.66
+      ],
+      "bild": {
+        "art": "planeten",
+        "slug": "blaugrauer-kaltewustenplanet-im-all"
+      },
+      "beschreibung": "Talvek ist eine kalte, mineralreiche Gesteinswelt mit dunklen Gebirgen und gefrorenen Salzebenen. Zwei bis fünfzehn Kilometer tief in seiner Kruste leben die Lithonetzwerke – gigantische, im Gestein verwurzelte Intelligenzen."
+    },
+    {
+      "id": "nerath-rusk",
+      "name": "Rusk",
+      "typ": "Mond",
+      "um": "nerath-talvek",
+      "periodeTage": 0.35,
+      "e": 0.015,
+      "i": 1.1,
+      "knoten": 0,
+      "peri": 0,
+      "phase": 40,
+      "radiusKm": 14,
+      "masseErde": 0,
+      "farbe": [
+        0.5,
+        0.46,
+        0.42
+      ],
+      "bild": {
+        "art": "monde",
+        "slug": "poroser-trummermond-im-schwarzen-all"
+      },
+      "beschreibung": "Rusk ist ein kleiner, unregelmäßig geformter Gesteinsmond Talveks mit zahlreichen Einschlagspuren."
+    },
+    {
+      "id": "nerath-nemi",
+      "name": "Nemi",
+      "typ": "Mond",
+      "um": "nerath-talvek",
+      "periodeTage": 1.4,
+      "e": 0.003,
+      "i": 1.8,
+      "knoten": 90,
+      "peri": 0,
+      "phase": 220,
+      "radiusKm": 8,
+      "masseErde": 0,
+      "farbe": [
+        0.36,
+        0.34,
+        0.32
+      ],
+      "bild": {
+        "art": "monde",
+        "slug": "zerklufteter-splittermond"
+      },
+      "beschreibung": "Nemi ist ein weiter außen umlaufender kleiner Mond Talveks mit dunkler, stark verkraterter Oberfläche."
+    },
+    {
+      "id": "nerath-skalenband",
+      "name": "Skalenband",
+      "typ": "Asteroidengürtel",
+      "ringUm": "nerath-stern",
+      "ringeAE": [
+        2.15,
+        2.4,
+        2.65,
+        2.9,
+        3.15
+      ],
+      "anzahl": 300,
+      "groesseKm": 420,
+      "mindestPx": 6,
+      "farbe": [
+        0.64,
+        0.56,
+        0.48
+      ],
+      "bild": {
+        "art": "sternensysteme",
+        "slug": "rhovans-staubiger-asteroidengurtel"
+      },
+      "beschreibung": "Das Skalenband zwischen 2,15 und 3,15 AE besteht aus Gesteins-, Metall- und kohlenstoffreichen Kleinkörpern. Urakans Gravitation prägte seine Entwicklung; es ist kein überall dicht gefülltes Asteroidenfeld."
+    },
+    {
+      "id": "nerath-urakan",
+      "name": "Urakan",
+      "typ": "Gasriese",
+      "um": "nerath-stern",
+      "aAE": 4.4,
+      "e": 0.034,
+      "i": 1.3,
+      "knoten": 300,
+      "peri": 80,
+      "phase": 60,
+      "radiusKm": 67200,
+      "masseErde": 206.6,
+      "albedo": 0.5,
+      "farbe": [
+        0.86,
+        0.7,
+        0.52
+      ],
+      "bild": {
+        "art": "planeten",
+        "slug": "warmer-jupiter-im-sanften-sternenlicht"
+      },
+      "beschreibung": "Urakan ist ein Gasriese mit 0,65 Jupitermassen, farbigen Wolkenbändern und dem langlebigen Großen Wirbel. Eine ausgedehnte Magnetosphäre, schmale Staub- und Gesteinsringe und vier größere Monde umgeben ihn."
+    },
+    {
+      "id": "nerath-urakan-ringe",
+      "name": "Ringe von Urakan",
+      "typ": "Planetenring",
+      "ringUm": "nerath-urakan",
+      "ringeAE": [
+        0.00063,
+        0.0007,
+        0.00076,
+        0.00081
+      ],
+      "anzahl": 220,
+      "groesseKm": 2,
+      "mindestPx": 2,
+      "farbe": [
+        0.78,
+        0.72,
+        0.64
+      ],
+      "beschreibung": "Ein schmales Ringsystem aus kleinen Eis-, Staub- und Gesteinspartikeln, etwa 94.000 bis 121.000 km vom Zentrum Urakans entfernt. Kleine Monde und gravitative Resonanzen formen seine Struktur."
+    },
+    {
+      "id": "nerath-nair",
+      "name": "Nair",
+      "typ": "Mond",
+      "um": "nerath-urakan",
+      "periodeTage": 1.52,
+      "e": 0.006,
+      "i": 0.1,
+      "knoten": 0,
+      "peri": 0,
+      "phase": 0,
+      "radiusKm": 1750,
+      "masseErde": 0.013,
+      "farbe": [
+        0.86,
+        0.72,
+        0.36
+      ],
+      "bild": {
+        "art": "monde",
+        "slug": "junger-mond-im-werden"
+      },
+      "beschreibung": "Nair ist der innerste der vier größeren Monde Urakans – ein vulkanisch aktiver Gesteinsmond mit Lavafeldern und schwefelhaltigen Ablagerungen. Die Resonanz mit Sirel und Valdor heizt sein Inneres durch Gezeitenverformung."
+    },
+    {
+      "id": "nerath-sirel",
+      "name": "Sirel",
+      "typ": "Mond",
+      "um": "nerath-urakan",
+      "periodeTage": 3.04,
+      "e": 0.009,
+      "i": 0.4,
+      "knoten": 0,
+      "peri": 0,
+      "phase": 90,
+      "radiusKm": 1500,
+      "masseErde": 0.008,
+      "farbe": [
+        0.78,
+        0.86,
+        0.9
+      ],
+      "bild": {
+        "art": "monde",
+        "slug": "eisiger-rissmond-uber-blauen-eisweiten"
+      },
+      "beschreibung": "Sirel ist ein eisiger Ozeanmond mit großen Risssystemen. Unter der Eisoberfläche könnte ein salzhaltiger Ozean liegen – ein besonders interessanter Kandidat für mögliche unterirdische Lebensräume."
+    },
+    {
+      "id": "nerath-valdor",
+      "name": "Valdor",
+      "typ": "Mond",
+      "um": "nerath-urakan",
+      "periodeTage": 6.09,
+      "e": 0.002,
+      "i": 0.2,
+      "knoten": 0,
+      "peri": 0,
+      "phase": 200,
+      "radiusKm": 2400,
+      "masseErde": 0.022,
+      "farbe": [
+        0.6,
+        0.62,
+        0.64
+      ],
+      "bild": {
+        "art": "monde",
+        "slug": "gefrorener-trummermond-im-schwarzen-all"
+      },
+      "beschreibung": "Valdor ist ein großer Eis-Gesteins-Mond mit alten Einschlagbecken und Eisregionen; ein tiefer Salzwasserozean ist möglich."
+    },
+    {
+      "id": "nerath-erym",
+      "name": "Erym",
+      "typ": "Mond",
+      "um": "nerath-urakan",
+      "periodeTage": 19.5,
+      "e": 0.007,
+      "i": 0.5,
+      "knoten": 40,
+      "peri": 0,
+      "phase": 310,
+      "radiusKm": 1100,
+      "masseErde": 0.002,
+      "farbe": [
+        0.5,
+        0.48,
+        0.46
+      ],
+      "bild": {
+        "art": "monde",
+        "slug": "mond-mit-orbitalem-auswurfkranz"
+      },
+      "beschreibung": "Erym ist ein alter, stark verkraterter Außenmond Urakans mit geringer innerer Aktivität – wichtig für die Rekonstruktion der frühen Systemgeschichte."
+    },
+    {
+      "id": "nerath-oryss",
+      "name": "Oryss",
+      "typ": "Eisriese",
+      "um": "nerath-stern",
+      "aAE": 9.3,
+      "e": 0.042,
+      "i": 1.8,
+      "knoten": 150,
+      "peri": 250,
+      "phase": 170,
+      "radiusKm": 26121,
+      "masseErde": 20,
+      "albedo": 0.3,
+      "farbe": [
+        0.58,
+        0.82,
+        0.8
+      ],
+      "bild": {
+        "art": "planeten",
+        "slug": "zarter-gasriese-im-sternenfeld"
+      },
+      "beschreibung": "Oryss ist ein türkis bis blaugrau erscheinender Eisriese mit rund 20 Erdmassen, starken Winden und mehreren schmalen, diffusen Ringen. Seine Achsneigung von etwa 31° führt zu langen saisonalen Veränderungen."
+    },
+    {
+      "id": "nerath-oryss-ringe",
+      "name": "Ringe von Oryss",
+      "typ": "Planetenring",
+      "ringUm": "nerath-oryss",
+      "ringeAE": [
+        0.00028,
+        0.00033,
+        0.00038,
+        0.00042
+      ],
+      "anzahl": 180,
+      "groesseKm": 2,
+      "mindestPx": 2,
+      "farbe": [
+        0.7,
+        0.8,
+        0.82
+      ],
+      "beschreibung": "Mehrere schmale und diffuse Ringe aus kleinen Eis- und Gesteinspartikeln, etwa 42.000 bis 63.000 km vom Zentrum des Oryss entfernt. Der kleine Mond Hevin beeinflusst ihre Verteilung."
+    },
+    {
+      "id": "nerath-hevin",
+      "name": "Hevin",
+      "typ": "Mond",
+      "um": "nerath-oryss",
+      "periodeTage": 0.9,
+      "e": 0.001,
+      "i": 0.1,
+      "knoten": 0,
+      "peri": 0,
+      "phase": 60,
+      "radiusKm": 25,
+      "masseErde": 0,
+      "farbe": [
+        0.66,
+        0.66,
+        0.64
+      ],
+      "bild": {
+        "art": "monde",
+        "slug": "gezeitenverformter-mond-mit-spannungsrissen"
+      },
+      "beschreibung": "Hevin ist ein kleiner ringnaher Mond des Oryss; seine Gravitation beeinflusst die Verteilung der Ringpartikel."
+    },
+    {
+      "id": "nerath-thyl",
+      "name": "Thyl",
+      "typ": "Mond",
+      "um": "nerath-oryss",
+      "periodeTage": 4.8,
+      "e": 0.004,
+      "i": 0.6,
+      "knoten": 10,
+      "peri": 0,
+      "phase": 140,
+      "radiusKm": 780,
+      "masseErde": 0.0003,
+      "farbe": [
+        0.76,
+        0.8,
+        0.84
+      ],
+      "bild": {
+        "art": "monde",
+        "slug": "poroser-eistrummermond-im-all"
+      },
+      "beschreibung": "Thyl ist ein eisreicher größerer Mond des Oryss mit alter, kraterreicher Oberfläche; tief liegende Flüssigkeitsschichten sind möglich."
+    },
+    {
+      "id": "nerath-vorra",
+      "name": "Vorra",
+      "typ": "Mond",
+      "um": "nerath-oryss",
+      "periodeTage": 280,
+      "e": 0.3,
+      "i": 145,
+      "knoten": 210,
+      "peri": 0,
+      "phase": 260,
+      "radiusKm": 45,
+      "masseErde": 0,
+      "farbe": [
+        0.42,
+        0.34,
+        0.3
+      ],
+      "bild": {
+        "art": "monde",
+        "slug": "rotierender-tropfenmond-im-schwarzen-all"
+      },
+      "beschreibung": "Vorra ist ein kleiner, unregelmäßiger Mond mit dunkler Oberfläche auf weiter, rückläufiger Bahn – vermutlich ein eingefangener Kleinkörper."
+    },
+    {
+      "id": "nerath-veyl",
+      "name": "Veyl",
+      "typ": "Eisplanet",
+      "um": "nerath-stern",
+      "aAE": 22.8,
+      "e": 0.12,
+      "i": 14,
+      "knoten": 60,
+      "peri": 120,
+      "phase": 280,
+      "radiusKm": 9238,
+      "masseErde": 2.4,
+      "albedo": 0.6,
+      "farbe": [
+        0.78,
+        0.82,
+        0.86
+      ],
+      "bild": {
+        "art": "planeten",
+        "slug": "gesteins-eisplanet-im-tiefen-all"
+      },
+      "beschreibung": "Veyl ist ein äußerer eisreicher Planet mit Wassereis, mineralischen Ablagerungen und gefrorenen flüchtigen Stoffen. Seine exzentrische, um 14° geneigte Bahn verändert den Abstand zu Terev deutlich; die sehr kalte Atmosphäre wechselt saisonal ihre Dichte."
+    },
+    {
+      "id": "nerath-kel",
+      "name": "Kel",
+      "typ": "Mond",
+      "um": "nerath-veyl",
+      "periodeTage": 3.5,
+      "e": 0.02,
+      "i": 2,
+      "knoten": 0,
+      "peri": 0,
+      "phase": 100,
+      "radiusKm": 180,
+      "masseErde": 0.00002,
+      "farbe": [
+        0.74,
+        0.74,
+        0.72
+      ],
+      "bild": {
+        "art": "monde",
+        "slug": "salzkrustenmond-im-schwarzen-all"
+      },
+      "beschreibung": "Kel ist ein kleiner eisiger Mond Veyls mit geringer Schwerkraft, zahlreichen Einschlagspuren und einer Oberfläche aus Eis und mineralischem Material."
+    },
+    {
+      "id": "nerath-taren-saum",
+      "name": "Taren-Saum",
+      "typ": "Kleinkörpergürtel",
+      "ringUm": "nerath-stern",
+      "ringeAE": [
+        38,
+        45,
+        52,
+        58,
+        65
+      ],
+      "anzahl": 320,
+      "groesseKm": 260,
+      "mindestPx": 4.5,
+      "farbe": [
+        0.72,
+        0.8,
+        0.88
+      ],
+      "bild": {
+        "art": "sternensysteme",
+        "slug": "nivoras-eisblauer-asteroidengurtel"
+      },
+      "beschreibung": "Der Taren-Saum zwischen 38 und 65 AE ist ein äußerer Kleinkörpergürtel aus eis- und gesteinsreichen Körpern, organischen Verbindungen und primitiven Mischkörpern – vergleichbar mit einem transneptunischen Gürtel."
+    },
+    {
+      "id": "nerath-relt",
+      "name": "Relt",
+      "typ": "Zwergplanet",
+      "um": "nerath-stern",
+      "aAE": 44,
+      "e": 0.1,
+      "i": 8,
+      "knoten": 250,
+      "peri": 40,
+      "phase": 100,
+      "radiusKm": 640,
+      "masseErde": 0.0004,
+      "albedo": 0.08,
+      "farbe": [
+        0.34,
+        0.32,
+        0.32
+      ],
+      "bild": {
+        "art": "zwergplaneten",
+        "slug": "dunkle-kraterwelt-im-all"
+      },
+      "beschreibung": "Relt ist ein dunkler, eisreicher Zwergplanetkandidat im Taren-Saum mit stark verkraterter Oberfläche."
+    },
+    {
+      "id": "nerath-othir",
+      "name": "Othir",
+      "typ": "Zwergplanet",
+      "um": "nerath-stern",
+      "aAE": 52,
+      "e": 0.15,
+      "i": 17,
+      "knoten": 20,
+      "peri": 280,
+      "phase": 330,
+      "radiusKm": 760,
+      "masseErde": 0.0006,
+      "albedo": 0.45,
+      "farbe": [
+        0.7,
+        0.78,
+        0.84
+      ],
+      "bild": {
+        "art": "zwergplaneten",
+        "slug": "eisblauer-zwergplanet-mit-tektonischen-rissen"
+      },
+      "beschreibung": "Othir ist ein größerer eisreicher Körper des Taren-Saums mit Hinweisen auf mehrere geologische Entwicklungsphasen."
+    },
+    {
+      "id": "nerath-fernwolke",
+      "name": "Terev-Fernwolke",
+      "typ": "Kometengebiet",
+      "ringUm": "nerath-stern",
+      "ringeAE": [
+        1500,
+        4000,
+        8000
+      ],
+      "ankerAE": 90,
+      "anzahl": 260,
+      "groesseKm": 120,
+      "mindestPx": 3.5,
+      "farbe": [
+        0.66,
+        0.78,
+        0.9
+      ],
+      "bild": {
+        "art": "sternensysteme",
+        "slug": "spharische-kometenwolke-mit-geneigtem-innenring"
+      },
+      "beschreibung": "Die Terev-Fernwolke ist eine vermutete, weit entfernte Population eisreicher Kleinkörper auf sehr langen Umlaufbahnen – mehrere Tausend bis Zehntausende AE vom Stern entfernt. Gelegentlich gelangen Kometen aus ihr in das innere System."
+    }
   ]
 }

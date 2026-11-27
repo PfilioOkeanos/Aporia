@@ -2,6 +2,7 @@
 
 const routes = Object.freeze({
     "spezies-biological-1-technologien": new URL("../../inhalte/spezies/Biologische%20Spezies/Humanoide/Unterseiten/Technologien/technologien.html", import.meta.url).href,
+    "spezies-biological-1-storys": new URL("../../inhalte/spezies/Biologische%20Spezies/Humanoide/Unterseiten/Storys/storys.html", import.meta.url).href,
     "spezies-biological-1": new URL("../../inhalte/spezies/Biologische%20Spezies/Humanoide/Hauptseite/Spezies.html", import.meta.url).href,
     "spezies-biological-1-biologie": new URL("../../inhalte/spezies/Biologische%20Spezies/Humanoide/Unterseiten/Biologie/biologie.html", import.meta.url).href,
     "spezies-biological-1-entwicklung": new URL("../../inhalte/spezies/Biologische%20Spezies/Humanoide/Unterseiten/Entwicklung/entwicklung.html", import.meta.url).href,

@@ -6,12 +6,16 @@
   "klasse": "Orangefarbener Zwerg (K2 V)",
   "intro": "Ysmeroth ist ein orangefarbener Hauptreihenstern der Spektralklasse K2 V mit 80 % der Sonnenmasse und der halben Sonnenleuchtkraft. Sein Licht ist zu längeren Wellenlängen verschoben; Sternflecken und gelegentliche Strahlungsausbrüche gehören zu seiner normalen Aktivität. Er ist der Hauptstern eines weiten Doppelsternsystems und Zentralstern von Karynth, der Heimat der Metamorphen. Ysmeroth ist der Zentralstern des Ysmeroth-Systems.",
   "globusDaten": {
-    "planet": "feuriger-roter-stern-in-kosmischer-tiefe",
+    "planet": "ysmeroth",
     "klasse": "Vulkan",
     "radius": 591345000
   },
   "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=karynth-stern",
   "grunddaten": [
+    [
+      "System-ID",
+      "karynth-stern"
+    ],
     [
       "Archiv-ID",
       "AP-2EAACA25B0"
@@ -45,8 +49,8 @@
       "ca. 5,2 Mrd. Jahre"
     ],
     [
-      "Monde",
-      "10 (Ysmeroth I, Ysmeroth II, Karynth, Ysmeroth IV, Ysmeroth V, Vorlaufende Trojaner, Nachlaufende Trojaner, Ysmeroth VI, Schwellenläufer, Ysmeroth B)"
+      "Planeten",
+      "10 (Ysmeroth I, Ysmeroth II, Karynth, Ysmeroth IV, Ysmeroth V, Elioos, Carunir, Ysmeroth VI, Schwellenläufer, Ysmeroth B)"
     ]
   ],
   "position": [
@@ -73,70 +77,70 @@
     },
     {
       "icon": "◐",
-      "art": "Mond",
+      "art": "Planet",
       "titel": "Ysmeroth I",
       "href": "inhalte/himmelskoerper/planeten/details/ysmeroth-i/hauptseite/index.html",
       "route": null
     },
     {
       "icon": "◐",
-      "art": "Mond",
+      "art": "Planet",
       "titel": "Ysmeroth II",
       "href": "inhalte/himmelskoerper/planeten/details/ysmeroth-ii/hauptseite/index.html",
       "route": null
     },
     {
       "icon": "◐",
-      "art": "Mond",
+      "art": "Planet",
       "titel": "Karynth",
       "href": "inhalte/himmelskoerper/planeten/details/karynth/hauptseite/index.html",
       "route": null
     },
     {
       "icon": "◐",
-      "art": "Mond",
+      "art": "Planet",
       "titel": "Ysmeroth IV",
       "href": "inhalte/himmelskoerper/planeten/details/ysmeroth-iv/hauptseite/index.html",
       "route": null
     },
     {
       "icon": "◐",
-      "art": "Mond",
+      "art": "Planet",
       "titel": "Ysmeroth V",
       "href": "inhalte/himmelskoerper/planeten/details/ysmeroth-v/hauptseite/index.html",
       "route": null
     },
     {
       "icon": "◐",
-      "art": "Mond",
-      "titel": "Vorlaufende Trojaner",
+      "art": "Planet",
+      "titel": "Elioos",
       "href": "inhalte/himmelskoerper/asteroiden/details/elioos/hauptseite/index.html",
       "route": null
     },
     {
       "icon": "◐",
-      "art": "Mond",
-      "titel": "Nachlaufende Trojaner",
+      "art": "Planet",
+      "titel": "Carunir",
       "href": "inhalte/himmelskoerper/asteroiden/details/carunir/hauptseite/index.html",
       "route": null
     },
     {
       "icon": "◐",
-      "art": "Mond",
+      "art": "Planet",
       "titel": "Ysmeroth VI",
       "href": "inhalte/himmelskoerper/planeten/details/ysmeroth-vi/hauptseite/index.html",
       "route": null
     },
     {
       "icon": "◐",
-      "art": "Mond",
+      "art": "Planet",
       "titel": "Schwellenläufer",
       "href": "inhalte/himmelskoerper/kometen/details/schwellenlaufer/hauptseite/index.html",
       "route": null
     },
     {
       "icon": "◐",
-      "art": "Mond",
+      "art": "Planet",
       "titel": "Ysmeroth B",
       "href": "inhalte/himmelskoerper/sterne/details/ysmeroth-b/hauptseite/index.html",
       "route": null
@@ -318,8 +322,8 @@
               "ca. 5,2 Mrd. Jahre"
             ],
             [
-              "Monde",
-              "10 (Ysmeroth I, Ysmeroth II, Karynth, Ysmeroth IV, Ysmeroth V, Vorlaufende Trojaner, Nachlaufende Trojaner, Ysmeroth VI, Schwellenläufer, Ysmeroth B)"
+              "Planeten",
+              "10 (Ysmeroth I, Ysmeroth II, Karynth, Ysmeroth IV, Ysmeroth V, Elioos, Carunir, Ysmeroth VI, Schwellenläufer, Ysmeroth B)"
             ]
           ]
         },
@@ -461,8 +465,8 @@
               "ca. 5,2 Mrd. Jahre"
             ],
             [
-              "Monde",
-              "10 (Ysmeroth I, Ysmeroth II, Karynth, Ysmeroth IV, Ysmeroth V, Vorlaufende Trojaner, Nachlaufende Trojaner, Ysmeroth VI, Schwellenläufer, Ysmeroth B)"
+              "Planeten",
+              "10 (Ysmeroth I, Ysmeroth II, Karynth, Ysmeroth IV, Ysmeroth V, Elioos, Carunir, Ysmeroth VI, Schwellenläufer, Ysmeroth B)"
             ]
           ]
         }
@@ -603,11 +607,11 @@
         {
           "titel": "Besonderheiten",
           "liste": [
-            "10 Monde: Ysmeroth I, Ysmeroth II, Karynth, Ysmeroth IV, Ysmeroth V, Vorlaufende Trojaner, Nachlaufende Trojaner, Ysmeroth VI, Schwellenläufer, Ysmeroth B"
+            "10 eigene Planeten: Ysmeroth I, Ysmeroth II, Karynth, Ysmeroth IV, Ysmeroth V, Elioos, Carunir, Ysmeroth VI, Schwellenläufer, Ysmeroth B"
           ]
         },
         {
-          "titel": "Monde",
+          "titel": "Planeten",
           "karten": [
             {
               "titel": "Ysmeroth I",
@@ -630,11 +634,11 @@
               "text": "141.000 km Durchmesser, Umlauf in 5,5 Jahre. Ysmeroth V ist ein stürmischer Super-Jupiter auf deutlich elliptischer Bahn. Er hat das Gebiet zwischen 1,6 und 5 AE leergeräumt; statt eines Asteroidengürtels sammeln sich Trümmer nur in seinen Lagrange-Punkten."
             },
             {
-              "titel": "Vorlaufende Trojaner",
+              "titel": "Elioos",
               "text": "92 km Durchmesser, Umlauf in 5,5 Jahre. Ein Schwarm dunkler, kohlenstoffreicher Asteroiden im vorauseilenden Lagrange-Punkt L4 von Ysmeroth V – stabil gehalten von der Schwerkraft des Riesen und des Sterns."
             },
             {
-              "titel": "Nachlaufende Trojaner",
+              "titel": "Carunir",
               "text": "76 km Durchmesser, Umlauf in 5,5 Jahre. Der Schwarm im nachlaufenden Lagrange-Punkt L5 von Ysmeroth V. Seine Brocken gelten als nahezu unverändertes Material aus der Entstehungszeit des Systems."
             },
             {
@@ -672,11 +676,11 @@
               "inhalte/himmelskoerper/planeten/details/ysmeroth-v/hauptseite/index.html"
             ],
             [
-              "Vorlaufende Trojaner",
+              "Elioos",
               "inhalte/himmelskoerper/asteroiden/details/elioos/hauptseite/index.html"
             ],
             [
-              "Nachlaufende Trojaner",
+              "Carunir",
               "inhalte/himmelskoerper/asteroiden/details/carunir/hauptseite/index.html"
             ],
             [

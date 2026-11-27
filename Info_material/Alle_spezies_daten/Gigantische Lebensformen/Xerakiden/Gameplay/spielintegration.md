@@ -1,101 +1,248 @@
-# Xerakiden – Spielintegration
-# Xerakiden – Gameplay
+# Xerakiden – Gameplay V2.0
 
-## Micro – unmittelbare Spielerinteraktion
+## 01 – Direkte Spielerinteraktion
 
-- Begegnungen mit einzelnen Xerakiden.
-- Kommunikation über technische Übersetzungsstationen.
-- Untersuchung einzelner Panzerplatten.
-- Analyse biologischer Gewebeproben.
-- Wartung empfindlicher technischer Komponenten.
-- Erforschung der Sinnesorgane.
-- Zusammenarbeit bei feinmechanischen Reparaturen.
-- Betreten dafür vorgesehener sicherer Kontaktplattformen.
-- Untersuchung individueller Persönlichkeiten und Lebensgeschichten.
-- Handel mit spezialisierten Ressourcen und Technologien.
+- Persönliche Begegnungen mit intelligenten Xerakiden.
+- Direkte Gespräche und Dialoge.
+- Individuelle NPC-Persönlichkeiten.
+- Freundschaften und Vertrauensbeziehungen.
+- Handel mit Ressourcen und Technologien.
+- Gemeinsame Forschungsmissionen.
+- Berufliche Zusammenarbeit.
+- Besuche xerakidischer Siedlungen.
+- Nutzung angepasster Kommunikationsplattformen.
+- Zugang zu Werkstätten und Produktionsanlagen.
+- Interaktion mit xerakidischen Raumfahrern außerhalb der Heimatwelt.
 
-## Mid – regionale Interaktion
+## 02 – Xerakiden als NPCs
 
-- Erkundung gigantischer Siedlungen.
-- Wiederherstellung beschädigter Wasserversorgungssysteme.
-- Untersuchung instabiler Bodenregionen.
-- Kartierung unterirdischer Hohlräume.
-- Begleitung reisender Xerakiden.
-- Schutz regionaler Versorgungswege.
-- Forschungsexpeditionen in abgelegene Wüsten.
-- Unterstützung medizinischer Einrichtungen.
-- Aufbau gemeinsamer Produktionsanlagen.
-- Untersuchung historischer Ruinen.
+- Händler
+- Forscher
+- Mechaniker
+- Konstrukteure
+- Bergbauarbeiter
+- Raumfahrer
+- Stationspersonal
+- Kolossjäger
+- Tierpfleger
+- Diplomaten
+- Techniker
+- Sicherheitskräfte
+- Begleiter
+- Questgeber
 
-## Macro – planetare Interaktion
+Xerakiden besitzen individuelle Persönlichkeiten, Tagesabläufe, Interessen und Beziehungen.
 
-- Aufbau großräumiger Wasser- und Energienetze.
-- Beteiligung an planetaren Infrastrukturprojekten.
-- Untersuchung globaler Trockenperioden.
-- Diplomatische Zusammenarbeit zwischen regionalen Gemeinschaften.
-- Planung neuer Siedlungsgebiete.
-- Erschließung weiterer geeigneter Planetenregionen.
-- Entwicklung spezialisierter Transportinfrastruktur.
-- Unterstützung interplanetarer Forschungsprogramme.
-- Einflussnahme auf regionale Ressourcenpolitik.
+Ihre Größe beeinflusst ihre Bewegungsanimationen, Wegeplanung, Arbeitsabläufe und die Nutzung technischer Gegenstände.
 
-## Wahrnehmung gigantischer Lebensformen
+## 03 – Gemeinsame Infrastruktur
 
-- Weithin sichtbare Silhouetten.
-- Langsame, kontrollierte und gewichtige Bewegungen.
-- Bodenschwingungen während der Fortbewegung.
-- Positionsabhängige Staubentwicklung.
-- Großräumige Schattenbildung.
-- Bewegliche Panzersegmente.
-- Tieffrequente körperliche Kommunikationssignale.
-- Sichtbare Reaktion einzelner Sinnesorgane auf Umweltveränderungen.
-- Keine übertriebenen Erdbeben bei jedem gewöhnlichen Schritt.
+- Gebäude mit unterschiedlichen Größenebenen.
+- Erhöhte Kommunikationsplattformen für kleinere Spezies.
+- Aufzüge und Transportanlagen.
+- Großdimensionierte und gewöhnliche Werkstätten.
+- Unterschiedliche Bedienoberflächen technischer Geräte.
+- Gesonderte Verkehrswege.
+- Gemeinsam nutzbare Forschungseinrichtungen.
+- Anpassbare Fahrzeug- und Raumschiffsysteme.
 
-## Mögliche Forschungsmissionen
+## 04 – Erkundung der Wüstenkolosse
 
-- Untersuchung einer ungewöhnlichen Bodenresonanz.
-- Lokalisierung eines beschädigten unterirdischen Speichers.
-- Analyse einer neuartigen Panzerstruktur.
-- Entwicklung eines Übersetzungsgeräts für unbekannte Schwingungsmuster.
-- Erforschung einer historischen Resonanzanlage.
-- Stabilisierung eines gefährdeten Siedlungsabschnitts.
-- Untersuchung veränderter Wasserressourcen.
-- Unterstützung eines Xerakiden mit beschädigten Sinnesorganen.
+- Entdeckung natürlicher Lebensräume.
+- Beobachtung unterschiedlicher Verhaltensweisen.
+- Kartierung von Wanderwegen.
+- Identifikation einzelner Tiere.
+- Untersuchung von Panzerplatten.
+- Analyse biologischer Gewebe.
+- Beobachtung von Fortpflanzung und Wachstum.
+- Untersuchung natürlicher Ruheplätze.
+- Erforschung verschiedener regionaler Erscheinungsformen.
 
-## Wirtschaftliche Spielintegration
+## 05 – Wildtierverhalten
 
-- Handel mit hochbelastbaren Verbundmaterialien.
-- Erwerb von Schwingungssensoren.
-- Freischaltung neuer Wassergewinnungstechnologien.
-- Verbesserung von Gebäudestabilität und Strukturdiagnostik.
-- Erwerb spezialisierter Werkzeuge.
-- Zugang zu xerakidischen Fertigungsanlagen.
-- Entwicklung gemeinsamer Technologien.
+- Eigenständige Wanderbewegungen.
+- Suche nach Wasser und Nahrung.
+- Ruhe- und Regenerationsphasen.
+- Unterschiedliche Reaktionen auf den Spieler.
+- Individuelle Flucht- und Verteidigungsreaktionen.
+- Schutz des eigenen Nachwuchses.
+- Situationsabhängiges Territorialverhalten.
+- Reaktion auf Bodenschwingungen und Umweltgeräusche.
+- Anpassung der Aktivität an Tageszeit und Temperatur.
+- Keine grundsätzlich permanente Aggressivität.
 
-## Beziehungen und Reputation
+## 06 – Jagd und gigantische Begegnungen
 
-- Individuelle Beziehungen zu einzelnen Xerakiden.
-- Regionale Reputation bei unterschiedlichen Gemeinschaften.
-- Vertrauen durch zuverlässige technische Zusammenarbeit.
-- Zugang zu besonderen Forschungsaufträgen.
-- Freischaltung geschützter Siedlungsbereiche.
-- Unterschiedliche politische und gesellschaftliche Konsequenzen von Spielerentscheidungen.
+- Verfolgung einzelner Wüstenkolosse.
+- Vorbereitung größerer Jagdmissionen.
+- Untersuchung der jeweiligen Körperarchitektur.
+- Ausrüstungsauswahl entsprechend der Größe des Tieres.
+- Nutzung spezialisierter Fahrzeuge und Werkzeuge.
+- Unterschiedliche Verhaltensphasen während einer Begegnung.
+- Flucht- und Rückzugsmöglichkeiten.
+- Optionale Zusammenarbeit mit xerakidischen Jägern.
+- Unterschiedliche Rohstoffqualität je nach Tier und Zustand.
+- Regionale Jagdbeschränkungen.
+- Auswirkungen übermäßiger Jagd auf lokale Tierpopulationen.
 
-## Konflikte
+Nicht jede Begegnung mit einem Wüstenkoloss ist ein Bosskampf. Viele Tiere können beobachtet, umgangen oder auf friedlichem Weg genutzt werden.
 
-- Xerakiden sind keine grundsätzlich feindliche Spezies.
-- Konflikte entstehen situationsabhängig.
-- Aggression, Verteidigung und Flucht hängen von Persönlichkeit und Umständen ab.
-- Direkte körperliche Konfrontationen mit gigantischen Individuen stellen eine erhebliche Herausforderung dar.
-- Diplomatische, technische und wirtschaftliche Lösungswege sind möglich.
-- Xerakiden sollen nicht ausschließlich als gigantische Bossgegner verwendet werden.
+## 07 – Nichttödliche Rohstoffgewinnung
 
-## Akustische Gestaltung
+- Sammlung natürlich abgestoßener Panzerplatten.
+- Untersuchung ehemaliger Ruheplätze.
+- Sammlung natürlicher Mineralablagerungen.
+- Gewinnung abgestorbener äußerer Gewebeschichten.
+- Kontrollierte Entnahme regenerierbarer biologischer Materialien.
+- Medizinisch unterstützte Probenentnahme.
+- Bergung natürlicher Überreste bereits verstorbener Tiere.
+- Nutzung biologischer Gewebekulturen.
 
-- Tieffrequente Resonanzkommunikation.
-- Langsame mechanisch-organische Bewegungsgeräusche.
-- Subtile Schwingungsgeräusche der Panzersegmente.
-- Geräusche des belasteten Untergrunds.
-- Individuell unterschiedliche Signalrhythmen.
-- Technisch übersetzte Stimmen bei Gesprächen mit dem Spieler.
-- Visuelle Rückmeldungen für wichtige niederfrequente oder nicht hörbare Signale.
+## 08 – Koloss-Farming
+
+- Aufbau geeigneter Haltungs- und Schutzgebiete.
+- Bereitstellung natürlicher Wasserquellen.
+- Sicherstellung ausreichender Nahrungsversorgung.
+- Überwachung einzelner Tiere.
+- Beobachtung biologischer Gesundheitszustände.
+- Sammlung regelmäßig abgestoßener Panzerplatten.
+- Kontrollierte Zucht kompatibler Individuen.
+- Entwicklung automatisierter Rohstoffsammelsysteme.
+- Medizinische Versorgung.
+- Schutz vor natürlichen Gefahren.
+- Handel mit gewonnenen Materialien.
+
+Ausgewachsene Wüstenkolosse werden aufgrund ihrer Größe nicht in gewöhnlichen Tiergehegen gehalten. Die Haltung erfolgt in ausgedehnten, teilweise natürlich begrenzten Landschaftsregionen.
+
+## 09 – Langfristiges Zuchtsystem
+
+- Individuelle genetische Eigenschaften.
+- Unterschiedliche Wachstumsgeschwindigkeiten.
+- Variierende Körpergrößen.
+- Unterschiedliche Panzerfarben.
+- Unterschiedliche Panzerhärte.
+- Unterschiedliche Regenerationsfähigkeit.
+- Unterschiedliche sensorische Eigenschaften.
+- Erbliche Anpassungen an bestimmte Umweltbedingungen.
+- Langfristige Verbesserung ausgewählter biologischer Werkstoffe.
+- Keine unrealistisch schnelle Entwicklung vollständig ausgewachsener Kolosse.
+
+## 10 – Biologische Rohstoffe
+
+### Xera-Panzerplatten
+
+- Herstellung widerstandsfähiger Rüstungen.
+- Fahrzeugpanzerung.
+- Schutzmodule.
+- Gebäudeverkleidungen.
+- Raumschiffkomponenten.
+
+### Mineralische Strukturfasern
+
+- Herstellung leichter Verbundwerkstoffe.
+- Tragende Bauteile.
+- Maschinenkomponenten.
+- Verstärkung technischer Konstruktionen.
+
+### Elastisches Verbindungsgewebe
+
+- Flexible Gelenkverbindungen.
+- Bewegliche Panzerstrukturen.
+- Technische Greiforgane.
+- Biomechanische Komponenten.
+
+### Sensorisches Gewebe
+
+- Drucksensoren.
+- Mechanische Scanner.
+- Materialprüfgeräte.
+- Schwingungsdetektoren.
+- Biologische Messsysteme.
+
+### Thermische Membranen
+
+- Hitzeschutz.
+- Wärmespeichersysteme.
+- Temperaturregulierung.
+- Schutz vor extremen Umweltbedingungen.
+
+### Biologische Filtergewebe
+
+- Wasseraufbereitung.
+- Luftreinigung.
+- Flüssigkeitsrückgewinnung.
+- Biotechnologische Versorgungssysteme.
+
+### Regeneratives Gewebe
+
+- Medizinische Forschung.
+- Biologische Reparaturverfahren.
+- Herstellung kultivierter Gewebestrukturen.
+- Entwicklung regenerierbarer Werkstoffe.
+
+## 11 – Herstellungssystem
+
+- Sammlung biologischer Rohstoffe.
+- Reinigung und Sortierung.
+- Analyse der Materialqualität.
+- Stabilisierung organischer Komponenten.
+- Mechanische Bearbeitung.
+- Kombination mit mineralischen und synthetischen Materialien.
+- Herstellung technischer Bauteile.
+- Freischaltung verbesserter Herstellungsverfahren durch Forschung.
+- Entwicklung eigener xerakidisch inspirierter Ausrüstung.
+
+## 12 – Automatisierte Produktion
+
+- Biologische Rohstoffsammelanlagen.
+- Automatisierte Materialtransporte.
+- Gewebeverarbeitung.
+- Kultivierung biologischer Materialproben.
+- Herstellung synthetischer Xera-Platten.
+- Qualitätskontrolle.
+- Integration in bestehende industrielle Produktionsketten.
+
+## 13 – Raumfahrt
+
+- Besuch xerakidischer Raumschiffe.
+- Interaktion mit xerakidischen Besatzungsmitgliedern.
+- Nutzung angepasster orbitaler Einrichtungen.
+- Handel mit xerakidischen Raumschiffkomponenten.
+- Bau eigener Fahrzeuge mit Xera-Verbundmaterialien.
+- Forschung an biologisch inspirierten Raumfahrtkomponenten.
+- Nutzung xerakidischer Bergbau- und Werfttechnologien.
+- Interstellare Forschungs- und Transportmissionen.
+
+## 14 – Ruf und Beziehungen
+
+- Individueller Ruf bei einzelnen Xerakiden.
+- Regionaler Ruf innerhalb ihrer Gemeinschaften.
+- Anerkennung wissenschaftlicher Leistungen.
+- Wirtschaftliche Beziehungen.
+- Auswirkungen legaler und illegaler Jagd.
+- Einfluss auf den Zugang zu Schutz- und Haltungsgebieten.
+- Freischaltung besonderer Produktionsverfahren.
+- Individuelle Konsequenzen von Spielerentscheidungen.
+
+## 15 – Darstellung und Sounddesign
+
+- Gewichtige Bewegungen intelligenter Xerakiden.
+- Bewegliche mineralisch-organische Panzerplatten.
+- Individuelle Kommunikationsgeräusche.
+- Tieffrequente Resonanzsignale.
+- Unterschiedliche Geräusche natürlicher Panzerbewegungen.
+- Gewaltige Silhouetten der Wüstenkolosse.
+- Positionsabhängige Bodenschwingungen.
+- Staubentwicklung abhängig von Größe, Bewegung und Untergrund.
+- Weithin wahrnehmbare Bewegungsgeräusche ausgewachsener Kolosse.
+- Keine künstlich übertriebenen Erschütterungen bei gewöhnlichen Bewegungen.
+
+## 16 – Spielmechanische Grundregel
+
+Intelligente Xerakiden und wildlebende Wüstenkolosse werden als vollständig unterschiedliche Gameplay-Entitäten behandelt.
+
+Xerakiden verwenden NPC-, Gesellschafts-, Handels-, Dialog- und Raumfahrtsysteme.
+
+Wüstenkolosse verwenden Fauna-, Ökosystem-, Jagd-, Zucht-, Farming- und biologische Rohstoffsysteme.
+
+Beide Arten können gemeinsame visuelle und anatomische Grundlagen besitzen, benötigen jedoch unterschiedliche Verhaltenssysteme und Animationen.

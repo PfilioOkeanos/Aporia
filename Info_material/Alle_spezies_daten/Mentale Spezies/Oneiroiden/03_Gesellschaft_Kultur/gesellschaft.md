@@ -179,3 +179,10 @@ Eine aufgezeichnete Traumsequenz ist immer eine Interpretation oder technische R
 Die Oneiroiden betrachten den Schlaf als einen Zustand persönlicher Verletzlichkeit und zugleich als mögliche Form freiwilliger Zusammenarbeit.
 
 Daraus entwickelte sich ein besonders ausgeprägtes Verständnis von Vertrauen, Einwilligung und Schutz individueller Erinnerungen.
+
+
+
+Die Dunkle seite 
+
+
+	Manipulation fremder Träume

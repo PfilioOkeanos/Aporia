@@ -6,12 +6,16 @@
   "klasse": "Orangefarbener Zwerg (K0 V)",
   "intro": "Khelar ist ein Hauptreihenstern der Spektralklasse K0 V mit 83 % der Sonnenmasse und 60 % ihrer Leuchtkraft – Heimatstern der Chitinoiden und ein ruhiger Einzelstern. Khelar ist der Zentralstern des Khelar-Systems.",
   "globusDaten": {
-    "planet": "gelbweier-unterriese-im-ubergang",
+    "planet": "khelar",
     "klasse": "Vulkan",
     "radius": 577431000
   },
   "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=veshkara-stern",
   "grunddaten": [
+    [
+      "System-ID",
+      "veshkara-stern"
+    ],
     [
       "Archiv-ID",
       "AP-C78DCC48BA"
@@ -45,7 +49,7 @@
       "ca. 4,7 Mrd. Jahre"
     ],
     [
-      "Monde",
+      "Planeten",
       "6 (Khelar I, Veshkara, Wurzelstein, Khelar III, Khelar IV, Panzerkomet)"
     ]
   ],
@@ -73,58 +77,58 @@
     },
     {
       "icon": "◐",
-      "art": "Mond",
+      "art": "Planet",
       "titel": "Khelar I",
       "href": "inhalte/himmelskoerper/planeten/details/khelar-i/hauptseite/index.html",
       "route": null
     },
     {
       "icon": "◐",
-      "art": "Mond",
+      "art": "Planet",
       "titel": "Veshkara",
       "href": "inhalte/himmelskoerper/planeten/details/veshkara/hauptseite/index.html",
       "route": null
     },
     {
       "icon": "◐",
-      "art": "Mond",
+      "art": "Planet",
       "titel": "Wurzelstein",
       "href": "inhalte/himmelskoerper/asteroiden/details/wurzelstein/hauptseite/index.html",
       "route": null
     },
     {
       "icon": "◐",
-      "art": "Mond",
+      "art": "Planet",
       "titel": "Khelar III",
       "href": "inhalte/himmelskoerper/planeten/details/khelar-iii/hauptseite/index.html",
       "route": null
     },
     {
       "icon": "◐",
-      "art": "Mond",
+      "art": "Planet",
       "titel": "Khelar IV",
       "href": "inhalte/himmelskoerper/planeten/details/khelar-iv/hauptseite/index.html",
       "route": null
     },
     {
       "icon": "◐",
-      "art": "Mond",
+      "art": "Planet",
       "titel": "Panzerkomet",
       "href": "inhalte/himmelskoerper/kometen/details/panzerkomet/hauptseite/index.html",
       "route": null
     },
     {
       "icon": "✿",
-      "art": "Heimatwelt der Chitinoiden",
-      "titel": "Veshkara",
-      "href": "inhalte/himmelskoerper/planeten/details/veshkara/hauptseite/index.html",
+      "art": "Heimatwelt der Velorithen",
+      "titel": "Rhaum",
+      "href": "inhalte/himmelskoerper/monde/details/rhaum/hauptseite/index.html",
       "route": null
     },
     {
       "icon": "◈",
       "art": "Spezies-Dossier",
-      "titel": "Chitinoiden",
-      "href": "inhalte/spezies/Biologische Spezies/Chitinnoiden/hauptseite/Spezies.html",
+      "titel": "Velorithen",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Velorithen/hauptseite/Spezies.html",
       "route": null
     }
   ],
@@ -134,8 +138,8 @@
       "href": "Menüs/Sternenkarte/Sternenkarte.html?system=veshkara-stern"
     },
     {
-      "titel": "Speziesdossier Chitinoiden",
-      "href": "inhalte/spezies/Biologische Spezies/Chitinnoiden/hauptseite/Spezies.html"
+      "titel": "Speziesdossier Velorithen",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Velorithen/hauptseite/Spezies.html"
     }
   ],
   "design": {
@@ -290,24 +294,24 @@
               "ca. 4,7 Mrd. Jahre"
             ],
             [
-              "Monde",
+              "Planeten",
               "6 (Khelar I, Veshkara, Wurzelstein, Khelar III, Khelar IV, Panzerkomet)"
             ]
           ]
         },
         {
-          "titel": "Im System von Veshkara",
+          "titel": "Im System von Rhaum",
           "text": [
-            "Das Khelar-System ist die Heimat der Chitinoiden: Ihr Planet Veshkara umkreist Khelar."
+            "Das Khelar-System ist die Heimat der Velorithen: Ihr Planet Rhaum umkreist Khelar."
           ],
           "verweise": [
             [
-              "Veshkara",
-              "inhalte/himmelskoerper/planeten/details/veshkara/hauptseite/index.html"
+              "Rhaum",
+              "inhalte/himmelskoerper/monde/details/rhaum/hauptseite/index.html"
             ],
             [
-              "Speziesdossier Chitinoiden",
-              "inhalte/spezies/Biologische Spezies/Chitinnoiden/hauptseite/Spezies.html"
+              "Speziesdossier Velorithen",
+              "inhalte/spezies/Gigantische Lebensformen/Velorithen/hauptseite/Spezies.html"
             ]
           ]
         }
@@ -359,7 +363,7 @@
               "Asteroidengürtel"
             ],
             [
-              "Äußeres Kometengebiet · 33–47 AE",
+              "Zarenev-Kometenwolke · 33–47 AE",
               "Kometengebiet"
             ]
           ],
@@ -413,7 +417,7 @@
               "ca. 4,7 Mrd. Jahre"
             ],
             [
-              "Monde",
+              "Planeten",
               "6 (Khelar I, Veshkara, Wurzelstein, Khelar III, Khelar IV, Panzerkomet)"
             ]
           ]
@@ -466,7 +470,7 @@
               "Asteroidengürtel"
             ],
             [
-              "Äußeres Kometengebiet · 33–47 AE",
+              "Zarenev-Kometenwolke · 33–47 AE",
               "Kometengebiet"
             ]
           ],
@@ -535,11 +539,11 @@
         {
           "titel": "Besonderheiten",
           "liste": [
-            "6 Monde: Khelar I, Veshkara, Wurzelstein, Khelar III, Khelar IV, Panzerkomet"
+            "6 eigene Planeten: Khelar I, Veshkara, Wurzelstein, Khelar III, Khelar IV, Panzerkomet"
           ]
         },
         {
-          "titel": "Monde",
+          "titel": "Planeten",
           "karten": [
             {
               "titel": "Khelar I",

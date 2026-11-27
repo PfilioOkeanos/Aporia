@@ -1,1 +1,12 @@
-@import url("../../../../_gemeinsam/dossier-aufbau.css");
+/* Saal X · Beobachtungsstationen – Blaupause: jede Aufnahme mit Protokollkarte nach Archivformat */
+.az-saal-technologien { background: #06182c; --az-gold: #8fd8ff; --az-leise: #7fa6c4; background-image: linear-gradient(#8fd8ff0f 1px, transparent 1px), linear-gradient(90deg, #8fd8ff0f 1px, transparent 1px); background-size: 32px 32px; }
+.az-blau-kopf { min-height: 72vh; }
+.az-blau-kopf::before { content: ""; position: absolute; inset: 0; z-index: -1; background: var(--bild) center 30%/cover; filter: grayscale(1) contrast(1.4) brightness(.9); mix-blend-mode: screen; opacity: .65; }
+.az-blau-kopf::after { content: ""; position: absolute; inset: 8% 6%; border: 1px dashed #8fd8ff66; pointer-events: none; }
+.az-protokolle { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 24rem), 1fr)); gap: 2rem; padding: 0 clamp(1rem, 5vw, 5rem); }
+.az-protokoll { border: 1px solid #8fd8ff40; padding: 1rem; background: #06182ccc; }
+.az-protokoll .az-werk-bild img { filter: grayscale(1) sepia(1) hue-rotate(160deg) saturate(2.2) brightness(.9); }
+.az-protokoll .az-werk-bild:hover img { filter: none; }
+.az-protokoll dl { display: grid; grid-template-columns: 1fr 1fr; gap: .4rem 1rem; margin: 1rem 0 0; font-size: .74rem; }
+.az-protokoll dt { letter-spacing: .2em; text-transform: uppercase; color: #8fd8ff; font-size: .62rem; }
+.az-protokoll dd { margin: 0; color: #cfe8f8; }

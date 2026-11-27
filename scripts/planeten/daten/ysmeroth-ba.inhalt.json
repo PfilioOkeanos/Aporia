@@ -1,56 +1,119 @@
 {
-  "_erzeugt": "koerper-bauen",
   "name": "Ysmeroth Ba",
   "genitiv": "von Ysmeroth Ba",
   "dossierName": "Ysmeroth Ba-Dossier",
-  "klasse": "Ozeanplanet",
-  "intro": "Ysmeroth Ba ist eine gebunden rotierende Wasserwelt in der habitablen Zone des Roten Zwergs Ysmeroth B. Ihre Tagseite liegt unter einem dauernden roten Licht, die Nachtseite ist vereist. Ysmeroth Ba umkreist den Begleitstern Ysmeroth B in 0,08 AE Abstand und braucht für einen Umlauf 18 Tage.",
+  "klasse": "Planet · Ozeanplanet",
+  "intro": "Ysmeroth Ba ist eine gebunden rotierende Wasserwelt um den Roten Zwerg Ysmeroth B, den fernen Begleiter des Hauptsterns Ysmeroth. Eine Seite liegt in ewigem rötlichem Licht, die andere unter Eis. In den offenen Meeren und den Dämmerungsozeanen dazwischen leben die Ozeaniden – gigantische aquatische Lebewesen mit eigener mariner Zivilisation.",
   "globusDaten": {
     "planet": "gluhende-wasserwelt-im-roten-sternenlicht",
-    "klasse": "Ozean",
+    "klasse": "Ozeanwelt",
     "radius": 6600000
   },
-  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=karynth-stern&objekt=karynth-ysmeroth-ba",
+  "sternenkarte": "Menüs/Sternenkarte/Sternenkarte.html?system=karynth-stern",
   "grunddaten": [
     [
       "Archiv-ID",
       "AP-2485917560"
     ],
     [
-      "Typ",
-      "Ozeanplanet"
-    ],
-    [
-      "Sternsystem",
-      "Ysmeroth-System"
-    ],
-    [
-      "Zentralkörper",
-      "Ysmeroth B"
-    ],
-    [
-      "Große Halbachse",
-      "0,08 AE"
-    ],
-    [
-      "Umlaufzeit",
-      "18 Tage"
+      "Klasse",
+      "Gebunden rotierender Ozeanplanet eines Roten Zwergs"
     ],
     [
       "Durchmesser",
       "13.200 km"
     ],
     [
+      "Radius",
+      "6.600 km"
+    ],
+    [
       "Masse",
       "1,1 Erdmassen"
     ],
     [
-      "Schwerkraft",
-      "1,02 g"
+      "Dichte",
+      "5,46 g/cm³"
     ],
     [
-      "Gleichgewichtstemperatur",
-      "ca. -20 °C"
+      "Schwerkraft",
+      "1,02 g (10,1 m/s²)"
+    ],
+    [
+      "Mittlere Oberflächentemperatur",
+      "Gleichgewicht ca. −20 °C · Mittelwert noch nicht festgelegt"
+    ],
+    [
+      "Ozeane",
+      "Nahezu global – offene Meere auf der Tagseite, Eis auf der Nachtseite"
+    ],
+    [
+      "Atmosphäre",
+      "100 % Zusammensetzung noch nicht festgelegt"
+    ],
+    [
+      "Atmosphärendruck",
+      "Noch nicht festgelegt"
+    ],
+    [
+      "Rotation (gebunden)",
+      "ca. 18 Erdtage (gebunden)"
+    ],
+    [
+      "Umlaufzeit",
+      "18 Erdtage"
+    ],
+    [
+      "Abstand zum Stern",
+      "0,08 AE"
+    ],
+    [
+      "Monde",
+      "keine"
+    ],
+    [
+      "Zentralstern",
+      "Ysmeroth B, Roter Zwerg (M4 V)"
+    ],
+    [
+      "Einstrahlung",
+      "1-fach der Erde"
+    ],
+    [
+      "Achsneigung",
+      "0°"
+    ],
+    [
+      "Exzentrizität",
+      "0,01"
+    ],
+    [
+      "Fluchtgeschwindigkeit",
+      "11,5 km/s"
+    ],
+    [
+      "Alter",
+      "ca. 5,2 Mrd. Jahre"
+    ],
+    [
+      "Archiv-ID",
+      "AP-2485917560"
+    ],
+    [
+      "Zentralstern",
+      "Ysmeroth B (Begleitstern, M4 V)"
+    ],
+    [
+      "Systemtyp",
+      "Weites Doppelsternsystem"
+    ],
+    [
+      "Nachbarspezies",
+      "Metamorphen auf Karynth (um Ysmeroth A)"
+    ],
+    [
+      "Intelligente Spezies",
+      "Ozeaniden"
     ]
   ],
   "position": [
@@ -60,84 +123,103 @@
     ],
     [
       "Zentralstern",
-      "Ysmeroth",
-      "inhalte/himmelskoerper/sterne/details/ysmeroth/hauptseite/index.html"
+      "Ysmeroth B · M4 V"
     ],
     [
-      "Abstand",
-      "0,08 AE"
+      "Bahnposition",
+      "1. von 1 Planeten"
+    ],
+    [
+      "Entfernung zur Sonne",
+      "37 Lichtjahre"
+    ],
+    [
+      "Nächste Nachbarsysteme",
+      "TRAPPIST-1-System (9,8 Lj), Narev-System (18,9 Lj)"
     ]
   ],
   "verknuepfungen": [
     {
-      "icon": "✦",
-      "art": "Sternenkarte",
-      "titel": "Ysmeroth Ba im Ysmeroth-System",
-      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=karynth-stern&objekt=karynth-ysmeroth-ba",
-      "route": null
-    },
-    {
-      "icon": "☀",
-      "art": "Zentralstern",
-      "titel": "Ysmeroth",
-      "href": "inhalte/himmelskoerper/sterne/details/ysmeroth/hauptseite/index.html",
-      "route": null
-    },
-    {
       "icon": "✿",
-      "art": "Heimatwelt der Metamorphen",
-      "titel": "Karynth",
-      "href": "inhalte/himmelskoerper/planeten/details/karynth/hauptseite/index.html",
+      "art": "Heimische Spezies",
+      "titel": "Ozeaniden",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Ozeaniden/hauptseite/Spezies.html",
       "route": null
     },
     {
       "icon": "◈",
       "art": "Spezies-Dossier",
-      "titel": "Metamorphen",
-      "href": "inhalte/spezies/Biologische Spezies/Meta Morphen/hauptseite/Spezies.html",
+      "titel": "Heimatwelt",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Ozeaniden/Unterseiten/Heimatwelt/heimatwelt.html",
+      "route": null
+    },
+    {
+      "icon": "◈",
+      "art": "Spezies-Dossier",
+      "titel": "Politik und Fraktionen",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Ozeaniden/Unterseiten/Politik/politik.html",
+      "route": null
+    },
+    {
+      "icon": "✦",
+      "art": "Sternenkarte",
+      "titel": "Ysmeroth-System",
+      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=karynth-stern",
       "route": null
     }
   ],
   "quellen": [
     {
-      "titel": "Sternenkarte · Ysmeroth-System",
-      "href": "Menüs/Sternenkarte/Sternenkarte.html?system=karynth-stern&objekt=karynth-ysmeroth-ba"
+      "titel": "Speziesdossier Ozeaniden · Heimatwelt",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Ozeaniden/Unterseiten/Heimatwelt/heimatwelt.html"
     },
     {
-      "titel": "Speziesdossier Metamorphen",
-      "href": "inhalte/spezies/Biologische Spezies/Meta Morphen/hauptseite/Spezies.html"
+      "titel": "Speziesdossier Ozeaniden · Geschichte",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Ozeaniden/Unterseiten/Geschichte/geschichte.html"
+    },
+    {
+      "titel": "Speziesdossier Ozeaniden · Gesellschaft",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Ozeaniden/Unterseiten/Gesellschaft/gesellschaft.html"
+    },
+    {
+      "titel": "Speziesdossier Ozeaniden · Politik",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Ozeaniden/Unterseiten/Politik/politik.html"
+    },
+    {
+      "titel": "Speziesdossier Ozeaniden · Allgemeines",
+      "href": "inhalte/spezies/Gigantische Lebensformen/Ozeaniden/Unterseiten/Allgemeines/allgemeines.html"
     }
   ],
   "design": {
     "farben": {
-      "nacht": "#060404",
-      "tiefe": "#0e0809",
-      "akzent": "#ac8b8e",
-      "sand": "#b39088",
-      "moos": "#8c796e",
-      "ozean": "#706774",
-      "glas": "rgba(8, 12, 18, .76)",
-      "glas-hell": "rgba(16, 22, 32, .82)",
-      "linie": "rgba(255, 255, 255, .12)",
-      "linie-hell": "rgba(255, 255, 255, .3)",
-      "text": "#eef2f6",
-      "leise": "#a8b0bc",
-      "aporia-page-tint": "#392225"
+      "nacht": "#0a0508",
+      "tiefe": "#160a12",
+      "akzent": "#e0607a",
+      "sand": "#d8b0a8",
+      "moos": "#a05a8a",
+      "ozean": "#3a5aa8",
+      "glas": "rgba(22, 10, 18, .8)",
+      "glas-hell": "rgba(36, 18, 30, .86)",
+      "linie": "rgba(224, 96, 122, .16)",
+      "linie-hell": "rgba(230, 150, 170, .36)",
+      "text": "#f6eef2",
+      "leise": "#bfa6b2",
+      "aporia-page-tint": "#5a2240"
     }
   },
   "kapitel": {
     "Allgemeines": {
       "gruppe": "Weitere",
       "icon": "▤",
-      "intro": "Ysmeroth Ba auf einen Blick.",
+      "intro": "Ysmeroth Ba auf einen Blick: Licht, Eis und Riesen im Meer.",
       "abschnitte": [
         {
           "titel": "Kurzprofil",
           "bild": true,
-          "bildtext": "Ysmeroth Ba",
+          "bildtext": "Ysmeroth Ba – Ozeane unter rotem Licht",
           "text": [
-            "Ysmeroth Ba ist eine gebunden rotierende Wasserwelt in der habitablen Zone des Roten Zwergs Ysmeroth B. Ihre Tagseite liegt unter einem dauernden roten Licht, die Nachtseite ist vereist.",
-            "Ysmeroth Ba umkreist den Begleitstern Ysmeroth B in 0,08 AE Abstand und braucht für einen Umlauf 18 Tage."
+            "Ysmeroth Ba ist der einzige Planet des Roten Zwergs Ysmeroth B, der den Hauptstern Ysmeroth in rund 310 AE Abstand umkreist. Der Planet umläuft seinen Stern in 0,08 AE Abstand alle 18 Tage – innerhalb der habitablen Zone – und zeigt ihm stets dieselbe Seite. Die Gleichgewichtstemperatur liegt bei etwa −20 °C.",
+            "Mit 13.200 Kilometern Durchmesser und 1,1 Erdmassen ist Ba etwas größer als die Erde; die Schwerkraft beträgt rund 1,02 g. Zusammenhängende Ozeane bedecken die Welt, auf der Tagseite offen, auf der Nachtseite unter Eis. Atmosphärische und ozeanische Zirkulation tragen Wärme zwischen den Hemisphären."
           ]
         },
         {
@@ -145,55 +227,111 @@
           "daten": [
             [
               "Typ",
-              "Ozeanplanet"
+              "Gebunden rotierender Ozeanplanet eines Roten Zwergs"
             ],
             [
-              "Sternsystem",
-              "Ysmeroth-System"
-            ],
-            [
-              "Zentralkörper",
-              "Ysmeroth B"
-            ],
-            [
-              "Große Halbachse",
-              "0,08 AE"
-            ],
-            [
-              "Umlaufzeit",
-              "18 Tage"
-            ],
-            [
-              "Durchmesser",
-              "13.200 km"
-            ],
-            [
-              "Masse",
-              "1,1 Erdmassen"
+              "Zentralstern",
+              "Ysmeroth B (Roter Zwerg (M4 V))"
             ],
             [
               "Schwerkraft",
               "1,02 g"
             ],
             [
-              "Gleichgewichtstemperatur",
-              "ca. -20 °C"
+              "Durchmesser",
+              "13.200 km"
+            ],
+            [
+              "Mittlere Temperatur",
+              "Gleichgewicht ca. −20 °C · Mittelwert noch nicht festgelegt"
+            ],
+            [
+              "Atmosphäre",
+              "Noch nicht festgelegt"
+            ],
+            [
+              "Wasser",
+              "Nahezu global – offene Meere auf der Tagseite, Eis auf der Nachtseite"
+            ],
+            [
+              "Intelligente Spezies",
+              "Ozeaniden"
             ]
           ]
         },
         {
-          "titel": "Im System von Karynth",
-          "text": [
-            "Das Ysmeroth-System ist die Heimat der Metamorphen: Ihr Planet Karynth umkreist Ysmeroth."
-          ],
-          "verweise": [
+          "titel": "Ysmeroth Ba im Vergleich zur Erde",
+          "vergleich": {
+            "mit": "Erde",
+            "werte": [
+              [
+                "Durchmesser",
+                13200,
+                12742,
+                "km"
+              ],
+              [
+                "Schwerkraft",
+                1.02,
+                1,
+                "g"
+              ],
+              [
+                "Tageslänge",
+                433,
+                24,
+                "h"
+              ],
+              [
+                "Luftdruck (nicht festgelegt)",
+                1,
+                1,
+                "bar"
+              ],
+              [
+                "Mittlere Temperatur",
+                -20,
+                15,
+                "°C"
+              ]
+            ]
+          }
+        },
+        {
+          "titel": "Hauptmerkmale",
+          "karten": [
+            {
+              "titel": "Gebundene Rotation",
+              "text": "Ewiges rötliches Licht auf der einen, Eis auf der anderen Seite."
+            },
+            {
+              "titel": "Globaler Ozean",
+              "text": "Offene Meere, Tiefseegräben und unterseeische Gebirge."
+            },
+            {
+              "titel": "Dämmerungsozeane",
+              "text": "Nährstoffreiche Übergänge zwischen Licht und Eis."
+            },
+            {
+              "titel": "Doppelstern",
+              "text": "Ein zweites Sonnensystem 310 AE vom Hauptstern entfernt."
+            }
+          ]
+        },
+        {
+          "titel": "Einordnung",
+          "daten": [
             [
-              "Karynth",
-              "inhalte/himmelskoerper/planeten/details/karynth/hauptseite/index.html"
+              "Sternenkarten-ID",
+              "karynth-ysmeroth-ba"
             ],
             [
-              "Speziesdossier Metamorphen",
-              "inhalte/spezies/Biologische Spezies/Meta Morphen/hauptseite/Spezies.html"
+              "Heimatspezies",
+              "Ozeaniden (Gigantische Lebensformen)"
+            ],
+            [
+              "Bahn",
+              "Unverändert übernommen"
             ]
           ]
         }
@@ -202,116 +340,181 @@
     "Astronomie": {
       "gruppe": "Wissenschaft",
       "icon": "✧",
-      "intro": "Ysmeroth Ba im Ysmeroth-System.",
+      "intro": "Der Planet des Begleitsterns.",
       "abschnitte": [
         {
-          "titel": "Bahn",
+          "titel": "Bahn und Position",
+          "text": [
+            "Ysmeroth Ba ist der 1. von 1 Planeten im Ysmeroth-System. Er umkreist Ysmeroth B in 0,08 AE Abstand – innerhalb der habitablen Zone (bei Ysmeroth B zwischen 0,08 und 0,13 AE). Er erhält 1-mal so viel Sternlicht wie die Erde.",
+            "Ohne Atmosphäre läge seine Gleichgewichtstemperatur bei rund -20 °C. Wie stark die Atmosphäre die Temperatur über das Gleichgewicht hebt, ist noch nicht festgelegt."
+          ],
           "daten": [
             [
-              "Zentralkörper",
-              "Ysmeroth B"
+              "Sternsystem",
+              "Ysmeroth-System"
+            ],
+            [
+              "Bahnposition",
+              "1. von 1 Planeten"
             ],
             [
               "Große Halbachse",
-              "0,08 AE (12 Mio. km)"
+              "0,08 AE (ca. 12 Mio. km)"
             ],
             [
               "Exzentrizität",
               "0,01"
             ],
             [
-              "Bahnneigung",
-              "1,5°"
+              "Umlaufzeit",
+              "18 Erdtage"
             ],
             [
-              "Umlaufzeit",
-              "18 Tage"
+              "Ortsjahr",
+              "ca. 1 Ortstage"
             ],
             [
               "Einstrahlung",
-              "1-fach der Erde"
+              "ca. 1-fach der Erde"
+            ],
+            [
+              "Habitable Zone von Ysmeroth B",
+              "0,08–0,13 AE"
             ]
+          ]
+        },
+        {
+          "titel": "Zentralstern",
+          "text": [
+            "Ysmeroth B ist ein Roter Zwerg mit 21 % der Sonnenmasse auf einer weiten, exzentrischen Bahn um Ysmeroth. Am Himmel Karynths erscheint er als heller, rötlicher Stern, der in einem Umlauf von rund 5.400 Jahren langsam zwischen den Sternbildern wandert."
+          ],
+          "daten": [
+            [
+              "Name",
+              "Ysmeroth B"
+            ],
+            [
+              "Typ",
+              "Roter Zwerg (M4 V)"
+            ],
+            [
+              "Masse",
+              "0,21 Sonnenmassen"
+            ],
+            [
+              "Radius",
+              "0,23 Sonnenradien"
+            ],
+            [
+              "Leuchtkraft",
+              "0,0064 Sonnenleuchtkräfte"
+            ],
+            [
+              "Oberflächentemperatur",
+              "ca. 3.400 K"
+            ],
+            [
+              "Alter",
+              "ca. 5,2 Mrd. Jahre"
+            ],
+            [
+              "Begleitsterne",
+              "Ein Roter Zwerg (Ysmeroth B) auf weiter, exzentrischer Bahn in rund 310 AE Abstand"
+            ]
+          ],
+          "verweise": [
+            [
+              "Ysmeroth B",
+              "inhalte/himmelskoerper/sterne/details/ysmeroth-b/hauptseite/index.html"
+            ]
+          ]
+        },
+        {
+          "titel": "Rotation und Achse",
+          "daten": [
+            [
+              "Rotation (gebunden)",
+              "ca. 18 Erdtage (gebunden)"
+            ],
+            [
+              "Achsneigung",
+              "0°"
+            ],
+            [
+              "Scheinbare Sterngröße",
+              "ca. 1,52° (Sonne von der Erde: 0,53°)"
+            ],
+            [
+              "Jahreszeiten",
+              "Keine – dauerhafte Tag-, Dämmerungs- und Nachtregionen"
+            ]
+          ]
+        },
+        {
+          "titel": "Monde",
+          "text": [
+            "Ysmeroth Ba besitzt keine Monde."
+          ]
+        },
+        {
+          "titel": "Planeten des Systems",
+          "zeitleiste": [
+            [
+              "Ysmeroth Ba · 0,08 AE",
+              "Ysmeroth Ba ist eine gebunden rotierende Wasserwelt in der habitablen Zone des Roten Zwergs Ysmeroth B."
+            ]
+          ],
+          "verweise": []
+        },
+        {
+          "titel": "Nachbarschaft und Anomalien",
+          "karten": [
+            {
+              "titel": "Elioos",
+              "text": "Ein Schwarm dunkler, kohlenstoffreicher Asteroiden im vorauseilenden Lagrange-Punkt L4 von Ysmeroth V – stabil gehalten von der Schwerkraft des Riesen und des Sterns."
+            },
+            {
+              "titel": "Carunir",
+              "text": "Der Schwarm im nachlaufenden Lagrange-Punkt L5 von Ysmeroth V. Seine Brocken gelten als nahezu unverändertes Material aus der Entstehungszeit des Systems."
+            },
+            {
+              "titel": "Schwellenläufer",
+              "text": "Ein Langperioden-Komet, den Ysmeroth B aus dem Graumantel ins innere System gelenkt hat. Bei seiner letzten Sternannäherung vor rund 490 Jahren zerbrach er in mehrere Fragmente; die Metamorphen verbinden ihn mit dem Beginn der Ära der Verschlossenen Schwellen."
+            },
+            {
+              "titel": "Nachbarsysteme",
+              "text": "TRAPPIST-1-System (9,8 Lj), Narev-System (18,9 Lj), Ombrys-System (21,2 Lj) – alle weit außerhalb der gravitativen Einflusszone von Ysmeroth B (rund 2,1 Lichtjahre)."
+            }
+          ],
+          "verweise": [
+            [
+              "Elioos",
+              "inhalte/himmelskoerper/asteroiden/details/elioos/hauptseite/index.html"
+            ],
+            [
+              "Carunir",
+              "inhalte/himmelskoerper/asteroiden/details/carunir/hauptseite/index.html"
+            ],
+            [
+              "Schwellenläufer",
+              "inhalte/himmelskoerper/kometen/details/schwellenlaufer/hauptseite/index.html"
+            ],
+            [
+              "Ysmeroth-System in der Sternenkarte",
+              "Menüs/Sternenkarte/Sternenkarte.html?system=karynth-stern"
+            ]
+          ]
+        },
+        {
+          "titel": "Zwei Sterne",
+          "text": [
+            "Ysmeroth B ist ein Roter Zwerg mit 21 % der Sonnenmasse und umläuft den Hauptstern Ysmeroth A auf einer weiten, exzentrischen Bahn (rund 310 AE, Exzentrizität 0,38) in etwa 5.400 Jahren. Wegen der großen Entfernung konnten sich die Ozeaniden und die Metamorphen auf Karynth unabhängig voneinander entwickeln. Von Ysmeroth Ba aus erscheint Ysmeroth A als besonders heller Stern."
           ]
         },
         {
           "titel": "Am Himmel von Ysmeroth Ba",
           "text": [
-            "Ysmeroth B erscheint von hier aus etwa 1,52° groß (die Sonne von der Erde: 0,53°)."
-          ]
-        },
-        {
-          "titel": "Körper des Systems",
-          "zeitleiste": [
-            [
-              "Ysmeroth · Stern",
-              "Orangefarbener Zwerg (K2 V)"
-            ],
-            [
-              "Ysmeroth B · Begleitstern in 310 AE",
-              "Roter Zwerg (M4 V)"
-            ],
-            [
-              "Ysmeroth I · 0,09 AE",
-              "Gesteinsplanet"
-            ],
-            [
-              "Ysmeroth II · 0,45 AE",
-              "Gesteinsplanet"
-            ],
-            [
-              "Karynth · 0,72 AE",
-              "Gesteinsplanet"
-            ],
-            [
-              "Ysmeroth IV · 1,14 AE",
-              "Gesteinsplanet"
-            ],
-            [
-              "Ysmeroth V · 2,9 AE",
-              "Gasriese"
-            ],
-            [
-              "Ysmeroth VI · 13,8 AE",
-              "Eisriese"
-            ],
-            [
-              "Graumantel · 40–56 AE",
-              "Kometengebiet"
-            ]
-          ],
-          "verweise": [
-            [
-              "Ysmeroth",
-              "inhalte/himmelskoerper/sterne/details/ysmeroth/hauptseite/index.html"
-            ],
-            [
-              "Ysmeroth B",
-              "inhalte/himmelskoerper/sterne/details/ysmeroth-b/hauptseite/index.html"
-            ],
-            [
-              "Ysmeroth I",
-              "inhalte/himmelskoerper/planeten/details/ysmeroth-i/hauptseite/index.html"
-            ],
-            [
-              "Ysmeroth II",
-              "inhalte/himmelskoerper/planeten/details/ysmeroth-ii/hauptseite/index.html"
-            ],
-            [
-              "Karynth",
-              "inhalte/himmelskoerper/planeten/details/karynth/hauptseite/index.html"
-            ],
-            [
-              "Ysmeroth IV",
-              "inhalte/himmelskoerper/planeten/details/ysmeroth-iv/hauptseite/index.html"
-            ],
-            [
-              "Ysmeroth V",
-              "inhalte/himmelskoerper/planeten/details/ysmeroth-v/hauptseite/index.html"
-            ],
-            [
-              "Ysmeroth VI",
-              "inhalte/himmelskoerper/planeten/details/ysmeroth-vi/hauptseite/index.html"
-            ]
+            "Über der Tagseite steht Ysmeroth B unbeweglich als große, rote Scheibe. In der Dämmerungsregion verharrt sie am Horizont, auf der Nachtseite ist sie nie zu sehen."
           ]
         }
       ]
@@ -338,22 +541,23 @@
             ],
             [
               "Oberflächenschwerkraft",
-              "10,06 m/s² (1,025 g)"
+              "10,1 m/s² (1,02 g)"
             ],
             [
               "Fluchtgeschwindigkeit",
-              "11,53 km/s"
+              "ca. 11,5 km/s"
+            ],
+            [
+              "Rotation",
+              "Gebunden an Ysmeroth B"
             ]
-          ],
+          ]
+        },
+        {
+          "titel": "Physikalische Werte im Vergleich",
           "vergleich": {
             "mit": "Erde",
             "werte": [
-              [
-                "Durchmesser",
-                13200,
-                12742,
-                "km"
-              ],
               [
                 "Masse",
                 1.1,
@@ -361,10 +565,16 @@
                 "Erdmassen"
               ],
               [
-                "Schwerkraft",
-                1.02,
-                1,
-                "g"
+                "Dichte",
+                5.46,
+                5.51,
+                "g/cm³"
+              ],
+              [
+                "Fluchtgeschwindigkeit",
+                11.5,
+                11.2,
+                "km/s"
               ]
             ]
           }
@@ -375,29 +585,7 @@
       "gruppe": "Wissenschaft",
       "icon": "◈",
       "intro": "Planetare Struktur von Ysmeroth Ba.",
-      "abschnitte": [
-        {
-          "titel": "Schalenbau",
-          "schichten": [
-            [
-              "Ozean",
-              "Globale Wasserschicht"
-            ],
-            [
-              "Meeresboden",
-              "Basaltische Kruste"
-            ],
-            [
-              "Mantel",
-              "Silikatgestein"
-            ],
-            [
-              "Kern",
-              "Eisen und Nickel"
-            ]
-          ]
-        }
-      ]
+      "abschnitte": []
     },
     "Geografie": {
       "gruppe": "Natur",
@@ -405,9 +593,39 @@
       "intro": "Geografie von Ysmeroth Ba.",
       "abschnitte": [
         {
-          "titel": "Oberfläche",
-          "text": [
-            "Die Oberfläche von Ysmeroth Ba ist kalt."
+          "titel": "Meereslandschaften",
+          "liste": [
+            "Großflächige zusammenhängende Ozeane",
+            "Dauerhaft offene Meere auf der Tagseite",
+            "Ausgedehnte Eisflächen und schwimmende Eisformationen auf der Nachtseite",
+            "Tiefseegräben und unterseeische Gebirgsketten",
+            "Hydrothermale Quellen",
+            "Flüssige Reservoire unter Teilen der Eiskruste"
+          ]
+        },
+        {
+          "titel": "Besondere Naturlandschaften",
+          "karten": [
+            {
+              "titel": "Untereislandschaften",
+              "text": "Gigantische Räume unter der Eiskruste."
+            },
+            {
+              "titel": "Leuchtende Tiefsee",
+              "text": "Biolumineszente Ökosysteme und Planktonfelder."
+            },
+            {
+              "titel": "Eisabbrüche",
+              "text": "Kilometerlange Abbruchkanten an der Eisgrenze."
+            },
+            {
+              "titel": "Schlotfelder",
+              "text": "Hydrothermale Quellen in der Tiefe."
+            },
+            {
+              "titel": "Schwebende Körperlandschaften",
+              "text": "Die gewaltigen Körper der Ozeaniden im Wasser."
+            }
           ]
         }
       ]
@@ -415,33 +633,30 @@
     "Atmosphäre": {
       "gruppe": "Natur",
       "icon": "☁",
-      "intro": "Eine feuchte Hülle unter rotem Dauerlicht.",
+      "intro": "Atmosphäre von Ysmeroth Ba.",
       "abschnitte": [
         {
-          "titel": "Gashülle",
+          "titel": "Zusammensetzung",
           "text": [
-            "Ysmeroth Ba hält eine dichte Stickstoffatmosphäre mit viel Wasserdampf. Weil der Planet seinem Stern stets dieselbe Seite zuwendet, steht über dem Mittelpunkt der Tagseite eine gewaltige, ortsfeste Wolkensäule, die das rote Licht teilweise zurückwirft."
+            "Zusammensetzung und Druck der Atmosphäre sind im Infomaterial noch nicht festgelegt. Bekannt ist, dass atmosphärische und ozeanische Zirkulation Wärme von der Tag- zur Nachtseite tragen, über offenen Meeren viel Wasser verdunstet und sich regional Wolken bilden."
           ],
           "balken": {
             "werte": [
               [
-                "Stickstoff",
-                88
-              ],
-              [
-                "Wasserdampf",
-                7
-              ],
-              [
-                "Kohlendioxid",
-                4
-              ],
-              [
-                "Argon und Spurengase",
-                1
+                "Zusammensetzung noch nicht festgelegt",
+                100
               ]
             ]
           }
+        },
+        {
+          "titel": "Druck",
+          "daten": [
+            [
+              "Oberflächendruck",
+              "Noch nicht festgelegt"
+            ]
+          ]
         }
       ]
     },
@@ -451,9 +666,42 @@
       "intro": "Klima von Ysmeroth Ba.",
       "abschnitte": [
         {
-          "titel": "Tag- und Nachtseite",
+          "titel": "Temperaturzonen",
           "text": [
-            "Am Mittelpunkt der Tagseite wird es rund 30 °C warm, an der Dämmerungsgrenze um den Gefrierpunkt, auf der Nachtseite bis −80 °C. Ein ständiger Wind weht in Bodennähe von der Nacht- zur Tagseite."
+            "Die Temperaturbereiche sind eine vorläufige Darstellung der drei Klimaregionen; konkrete Werte sind noch nicht festgelegt. Die sternzugewandte Seite liegt in permanentem rötlichem Tageslicht, die Nachtseite in dauerhafter Dunkelheit; dazwischen erstrecken sich ausgedehnte Dämmerungsregionen mit starken Temperaturunterschieden."
+          ],
+          "skala": {
+            "einheit": "°C",
+            "min": -60,
+            "max": 30,
+            "bereiche": [
+              [
+                "Nachtseite (Eis)",
+                -60,
+                -10
+              ],
+              [
+                "Dämmerungsozeane",
+                -10,
+                10
+              ],
+              [
+                "Offene Meere der Tagseite",
+                5,
+                25
+              ]
+            ]
+          }
+        },
+        {
+          "titel": "Klima",
+          "liste": [
+            "Permanentes rötliches Tageslicht auf der Sternseite",
+            "Dauerhafte Dunkelheit auf der Nachtseite",
+            "Ausgedehnte Dämmerungsregionen",
+            "Starke Temperaturunterschiede zwischen den Hemisphären",
+            "Wärmetransport durch Luft- und Meeresströmungen",
+            "Wechselwirkung zwischen Strömungen und Eisflächen"
           ]
         }
       ]
@@ -464,9 +712,15 @@
       "intro": "Gewässer von Ysmeroth Ba.",
       "abschnitte": [
         {
-          "titel": "Augapfel-Ozean",
-          "text": [
-            "Auf der Tagseite liegt ein offener, kreisrunder Ozean unter der Wolkensäule; zur Nachtseite hin geht er in einen geschlossenen Eispanzer über. Meeresströmungen tragen Wärme unter das Eis und halten die Grenze zwischen Wasser und Eis beweglich."
+          "titel": "Lebensräume im Meer",
+          "liste": [
+            "Nährstoffreiche Oberflächengewässer",
+            "Tiefere sauerstoffreiche Strömungen",
+            "Offene Meere unter rotem Licht",
+            "Dämmerungsozeane",
+            "Sauerstoffreiche Untereisregionen",
+            "Hydrothermal beeinflusste Tiefsee",
+            "Geschützte Fortpflanzungsgebiete"
           ]
         }
       ]
@@ -475,14 +729,7 @@
       "gruppe": "Wissenschaft",
       "icon": "◈",
       "intro": "Geologie von Ysmeroth Ba.",
-      "abschnitte": [
-        {
-          "titel": "Geologie",
-          "text": [
-            "Ysmeroth Ba ist groß genug, um im Inneren noch Wärme zu speichern; Spuren alter vulkanischer Tätigkeit sind wahrscheinlich."
-          ]
-        }
-      ]
+      "abschnitte": []
     },
     "Biosphäre": {
       "gruppe": "Natur",
@@ -490,9 +737,15 @@
       "intro": "Biosphäre von Ysmeroth Ba.",
       "abschnitte": [
         {
-          "titel": "Leben",
-          "text": [
-            "Ob in der Dämmerungszone einfaches Leben existiert, ist ungeklärt. Messungen aus dem Ysmeroth-System zeigen Spuren organischer Verbindungen im Oberflächenwasser – eine Landung hat bisher niemand gewagt."
+          "titel": "Biosphäre",
+          "liste": [
+            "Lichtangepasste marine Mikroorganismen",
+            "Rötlich und dunkelviolett pigmentierte Wasserpflanzen und Algen",
+            "Biolumineszierende Tiefseeorganismen",
+            "Kälteresistente Meereslebewesen",
+            "Filternde Großorganismen und wandernde Arten",
+            "Chemosynthetische Lebensformen",
+            "Eigenständige Ökosysteme unter der Eiskruste"
           ]
         }
       ]
@@ -500,28 +753,12 @@
     "Spezies": {
       "gruppe": "Zivilisation",
       "icon": "✿",
-      "intro": "Spezies von Ysmeroth Ba.",
+      "intro": "Die Ozeaniden – Riesen der Dämmerungsozeane.",
       "abschnitte": [
         {
-          "titel": "Bewohner",
+          "titel": "Ozeaniden",
           "text": [
-            "Ysmeroth Ba ist keine Heimat einer intelligenten Spezies."
-          ]
-        },
-        {
-          "titel": "Im System von Karynth",
-          "text": [
-            "Das Ysmeroth-System ist die Heimat der Metamorphen: Ihr Planet Karynth umkreist Ysmeroth."
-          ],
-          "verweise": [
-            [
-              "Karynth",
-              "inhalte/himmelskoerper/planeten/details/karynth/hauptseite/index.html"
-            ],
-            [
-              "Speziesdossier Metamorphen",
-              "inhalte/spezies/Biologische Spezies/Meta Morphen/hauptseite/Spezies.html"
-            ]
+            "Ozeaniden bewohnen überwiegend die offenen Ozeane und die Übergänge zwischen beleuchteter und vereister Seite. Besonders große Individuen folgen nährstoffreichen Strömungen zwischen den Temperaturzonen; einzelne Körperregionen können sich gleichzeitig in verschiedenen Wasserschichten und Klimabereichen befinden. Ysmeroth Ba ist ihre natürliche Entstehungs- und Heimatwelt."
           ]
         }
       ]
@@ -532,25 +769,9 @@
       "intro": "Zivilisation von Ysmeroth Ba.",
       "abschnitte": [
         {
-          "titel": "Siedlungen",
+          "titel": "Marine Zivilisation",
           "text": [
-            "Für Ysmeroth Ba sind keine dauerhaften Siedlungen verzeichnet."
-          ]
-        },
-        {
-          "titel": "Im System von Karynth",
-          "text": [
-            "Das Ysmeroth-System ist die Heimat der Metamorphen: Ihr Planet Karynth umkreist Ysmeroth."
-          ],
-          "verweise": [
-            [
-              "Karynth",
-              "inhalte/himmelskoerper/planeten/details/karynth/hauptseite/index.html"
-            ],
-            [
-              "Speziesdossier Metamorphen",
-              "inhalte/spezies/Biologische Spezies/Meta Morphen/hauptseite/Spezies.html"
-            ]
+            "Die Ozeaniden besitzen keine Landstädte. Technische Einrichtungen liegen überwiegend unter Wasser, auf schwimmenden Plattformen oder am Rand der Eisflächen; Meeresströmungen verbinden Individuen, Forschungsanlagen und gemeinsam genutzte Regionen."
           ]
         }
       ]
@@ -559,14 +780,7 @@
       "gruppe": "Zivilisation",
       "icon": "▤",
       "intro": "Geschichte von Ysmeroth Ba.",
-      "abschnitte": [
-        {
-          "titel": "Entstehung",
-          "text": [
-            "Ysmeroth Ba entstand zusammen mit dem Ysmeroth-System vor rund 5,2 Milliarden Jahren."
-          ]
-        }
-      ]
+      "abschnitte": []
     },
     "Fraktionen": {
       "gruppe": "Zivilisation",
@@ -574,9 +788,9 @@
       "intro": "Fraktionen von Ysmeroth Ba.",
       "abschnitte": [
         {
-          "titel": "Ansprüche",
+          "titel": "Beziehungen",
           "text": [
-            "Für Ysmeroth Ba sind keine Fraktionsansprüche verzeichnet."
+            "Ozeaniden und Metamorphen entwickelten sich unabhängig voneinander in unterschiedlichen Lebensräumen desselben Doppelsternsystems. Der Zeitpunkt ihrer ersten Begegnung sowie diplomatische und wirtschaftliche Beziehungen werden später im Rahmen der Storyentwicklung festgelegt."
           ]
         }
       ]
@@ -585,41 +799,13 @@
       "gruppe": "Weitere",
       "icon": "⬡",
       "intro": "Rohstoffe von Ysmeroth Ba.",
-      "abschnitte": [
-        {
-          "titel": "Rohstoffe",
-          "liste": [
-            "Silikatgestein",
-            "Metallerze"
-          ]
-        }
-      ]
+      "abschnitte": []
     },
     "Erforschung": {
       "gruppe": "Weitere",
       "icon": "✧",
       "intro": "Erforschung von Ysmeroth Ba.",
-      "abschnitte": [
-        {
-          "titel": "Offene Fragen",
-          "liste": [
-            "Wie ist der innere Aufbau beschaffen?",
-            "Gab es früher eine dichtere Atmosphäre?"
-          ]
-        },
-        {
-          "titel": "In der Sternenkarte",
-          "text": [
-            "Ysmeroth Ba ist mit allen Bahndaten im Ysmeroth-System der Sternenkarte eingetragen."
-          ],
-          "verweise": [
-            [
-              "In der Sternenkarte zeigen",
-              "Menüs/Sternenkarte/Sternenkarte.html?system=karynth-stern&objekt=karynth-ysmeroth-ba"
-            ]
-          ]
-        }
-      ]
+      "abschnitte": []
     },
     "Besonderheiten": {
       "gruppe": "Weitere",
@@ -627,9 +813,22 @@
       "intro": "Besonderheiten von Ysmeroth Ba.",
       "abschnitte": [
         {
-          "titel": "Besonderheiten",
-          "liste": [
-            "Ysmeroth Ba ist eine gebunden rotierende Wasserwelt in der habitablen Zone des Roten Zwergs Ysmeroth B. Ihre Tagseite liegt unter einem dauernden roten Licht, die Nachtseite ist vereist."
+          "titel": "Rekorde",
+          "daten": [
+            [
+              "Größte Lebewesen",
+              "Ozeaniden – Körperregionen gleichzeitig in mehreren Wasserschichten"
+            ],
+            [
+              "Abstand zum Hauptstern",
+              "ca. 310 AE (über Ysmeroth B)"
+            ]
+          ]
+        },
+        {
+          "titel": "Besonderheit des Systems",
+          "text": [
+            "Das Ysmeroth-System beherbergt zwei grundlegend verschiedene intelligente Lebensformen, die jeweils einen anderen Stern des Doppelsterns umkreisen: die Metamorphen auf der wasserreichen Gesteinswelt Karynth und die Ozeaniden in den Meeren einer gebunden rotierenden Welt um Ysmeroth B."
           ]
         }
       ]
@@ -640,9 +839,9 @@
       "intro": "Medienarchiv von Ysmeroth Ba.",
       "abschnitte": [
         {
-          "titel": "Ysmeroth Ba – Archivbild",
+          "titel": "Ysmeroth Ba aus dem All",
           "bild": true,
-          "bildtext": "Ysmeroth Ba"
+          "bildtext": "Ysmeroth Ba – Ozeane unter rotem Licht"
         }
       ]
     }
