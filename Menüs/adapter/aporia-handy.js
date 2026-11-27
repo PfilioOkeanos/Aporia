@@ -180,10 +180,8 @@ function erkenneZweitleisten() {
 }
 
 // ---------- 5: Seitentyp-Erweiterungen fürs Handy (nur geladen, wenn die Seite den Aufbau hat) ----------
-const ERWEITERUNGEN = [
-    // Inhalts-Übersichten mit Szene: Kartenansicht unter der Szene
-    { erkennen: "nav.scene > a.scene-link", modul: "../../inhalte/Archivansicht.js" },
-];
+// Eintrag: { erkennen: "<CSS-Selektor>", modul: "<Pfad relativ zu dieser Datei>" }
+const ERWEITERUNGEN = [];
 const geladen = new Set();
 function ladeErweiterungen() {
     for (const { erkennen, modul } of ERWEITERUNGEN) {

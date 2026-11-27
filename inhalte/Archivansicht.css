@@ -21,82 +21,43 @@ main h1, .scene-link span {
 .scene-link:active { transform: translateY(2px) scale(.985); filter: brightness(.83); }
 .related { display: flex; gap: 1.5rem; flex-wrap: wrap; padding: 1rem 3vw; }
 .related a, .scene-link { color: inherit; }
-/* ---------- Kartenansicht unter der Szene (Handy, erzeugt von Archivansicht.js) ---------- */
-.scene-karten { display: none; }
-
+/* ---------- Handy: Szene mittig im Bildschirm, darüber und darunter das Szenenbild als Hintergrund ---------- */
 /* HANDY-BEDINGUNG – gleich wie HANDY_MEDIA in Menüs/adapter/aporia-handy.js */
 @media (max-width: 760px), (pointer: coarse) and (max-width: 1024px), (max-height: 500px) {
-  /* Die Szene passt vollständig in die Bildschirmbreite – wie am PC, nur kleiner */
-  .scene { width: 100%; }
-
-  .scene-karten {
-    display: block;
+  main {
     position: relative;
-    padding: 1.1rem 1rem 2.2rem;
-    background:
-      radial-gradient(ellipse at 50% 0%, #3a302455, transparent 70%),
-      linear-gradient(#191817, #121110);
-  }
-  /* Übergang von der Szene zu den Karten */
-  .scene-karten::before {
-    content: ""; position: absolute; inset: 0 0 auto; height: 1px;
-    background: linear-gradient(90deg, transparent, #d9b97a88, transparent);
-  }
-  .scene-karten-kopf {
-    margin: 0 0 .9rem;
-    color: #d9b97a;
-    font: .7rem/1 system-ui, sans-serif; letter-spacing: .22em; text-transform: uppercase;
-    text-align: center;
-  }
-  .scene-karten-liste {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(min(10rem, 44vw), 1fr));
-    gap: .7rem;
-  }
-  .scene-karte {
-    position: relative;
-    display: grid;
-    grid-template-rows: 1fr auto;
-    gap: .55rem;
-    padding: .7rem .7rem .8rem;
-    border: 1px solid #5b5244;
-    border-radius: .6rem;
-    background: linear-gradient(160deg, #26231f, #171513 70%);
-    box-shadow: inset 0 1px 0 #ffffff10, 0 10px 24px #0007;
-    color: #f4eadb;
-    text-decoration: none;
+    display: flex; flex-direction: column; justify-content: center;
+    min-height: calc(100dvh - var(--aporia-topbar-height, 50px));
+    padding: 3.5rem 0 1.5rem;          /* oben Platz für die herabhängende Topbar-Grafik */
+    box-sizing: border-box;
     overflow: hidden;
-    transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease;
   }
-  .scene-karte:hover, .scene-karte:active {
-    transform: translateY(-2px);
-    border-color: #d9b97a;
-    box-shadow: inset 0 1px 0 #ffffff18, 0 14px 30px #000a, 0 0 0 1px #d9b97a55;
-  }
-  /* Bildausschnitt der Fläche aus der Szene – gleiche Form wie dort */
-  .scene-karte-bild {
-    display: block;
-    width: 100%;
-    align-self: center;
-    justify-self: center;
+  .scene { width: 100%; box-shadow: 0 0 2rem .5rem #000c; }
+  /* Hintergrund oben und unten: das Szenenbild gespiegelt, weich und zum Rand hin ausgeblendet (wie eine Reflexion) */
+  .scene::before, .scene::after {
+    content: ""; position: absolute; left: 0; right: 0; z-index: -1;
+    height: 55vh;
     background-image: var(--art);
+    background-size: 100% auto;
     background-repeat: no-repeat;
-    clip-path: var(--shape);
-    filter: drop-shadow(0 6px 10px #000c);
-    transition: transform .3s ease, filter .3s ease;
+    filter: blur(4px) brightness(.5) saturate(1.15);
+    transform: scaleY(-1);
+    pointer-events: none;
   }
-  .scene-karte:hover .scene-karte-bild, .scene-karte:active .scene-karte-bild { transform: scale(1.04); filter: brightness(1.12); }
-  .scene-karte-titel {
-    font: 400 1.05rem/1.2 Georgia, serif;
-    padding-right: 1.4rem;
-    hyphens: auto;
-    overflow-wrap: anywhere;
+  .scene::before {   /* oberhalb: Bildoberkante gespiegelt nach oben */
+    bottom: 100%;
+    background-position: center top;
+    -webkit-mask-image: linear-gradient(to bottom, #000 0%, #0008 35%, transparent 85%);
+            mask-image: linear-gradient(to bottom, #000 0%, #0008 35%, transparent 85%);
   }
-  .scene-karte-pfeil {
-    position: absolute; right: .75rem; bottom: .75rem;
-    color: #d9b97a; font: 1.1rem/1 system-ui, sans-serif;
+  .scene::after {    /* unterhalb: Bildunterkante gespiegelt nach unten */
+    top: 100%;
+    background-position: center bottom;
+    -webkit-mask-image: linear-gradient(to top, #000 0%, #0008 35%, transparent 85%);
+            mask-image: linear-gradient(to top, #000 0%, #0008 35%, transparent 85%);
   }
-  .related { padding: 1rem; justify-content: center; }
+  .related { position: relative; z-index: 1; justify-content: center; padding: 1.2rem 1rem 0; }
+  .related a { text-shadow: 0 1px 6px #000; }
 }
 @media (prefers-reduced-motion: reduce) {
   .scene-link { transition: none; }
