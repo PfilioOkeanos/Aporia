@@ -449,6 +449,29 @@ body.is-resizing-sidebar, body.is-resizing-sidebar * {
     user-select: none !important;
 }
 @media (max-width: 760px) {
+    /* Handy: Seitenleiste als Seitenmenü über dem Inhalt (Knopf links in der Topbar) */
+    #aporia-sidebar-host,
+    .aporia-auto-page-frame > #aporia-sidebar-host[data-sidebar-auto="true"] {
+        position: fixed !important;
+        z-index: 990;
+        top: var(--aporia-topbar-height, 50px);
+        left: 0;
+        bottom: 0;
+        width: min(86vw, 320px) !important;
+        max-width: none;
+        height: auto !important;
+        min-height: 0;
+        flex: none;
+        margin: 0;
+        box-shadow: 12px 0 30px #000b;
+    }
+    #aporia-sidebar-host .aporia-sidebar {
+        position: relative;
+        top: 0;
+        width: calc(100% - var(--sidebar-inset));
+        height: calc(100% - 2 * var(--sidebar-inset));
+        max-height: none;
+    }
     .aporia-sidebar-resizer { display: none; }
     .aporia-sidebar { --sidebar-inset: 4px; border-radius: .8rem 1.25rem 1.25rem .8rem; }
     .aporia-sidebar::after { block-size: clamp(3rem, 10vh, 6rem); }

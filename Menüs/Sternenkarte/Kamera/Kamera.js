@@ -99,14 +99,52 @@ export function erzeugeKamera(canvas, reset) {
         canvas.addEventListener(type, endDrag);
     }
 
-    canvas.addEventListener("wheel", event => {
+    // Zoom in Log-Schritten, begrenzt auf den erlaubten Abstand (Mausrad und Zwei-Finger-Geste)
+    function zoome(logSchritt) {
         anflug = null;
+        const minimum = fokusObjekt ? bildabstand(fokusObjekt.radius) : MIN_DISTANCE;
+        distance = Math.exp(clamp(Math.log(distance) + logSchritt,
+            Math.log(minimum), Math.log(Math.max(MAX_DISTANCE, minimum))));
+    }
+
+    canvas.addEventListener("wheel", event => {
         event.preventDefault();
         const multiplier = event.deltaMode === 1 ? 16 : event.deltaMode === 2 ? canvas.clientHeight : 1;
-        const minimum = fokusObjekt ? bildabstand(fokusObjekt.radius) : MIN_DISTANCE;
-        distance = Math.exp(clamp(Math.log(distance) + event.deltaY * multiplier * 0.0014,
-            Math.log(minimum), Math.log(Math.max(MAX_DISTANCE, minimum))));
+        zoome(event.deltaY * multiplier * 0.0014);
     }, { passive: false });
+
+    // Handy/Tablet: zwei Finger auseinanderziehen = hineinzoomen, zusammenführen = herauszoomen
+    const finger = new Map();
+    let pinchAbstand = 0;
+    const fingerAbstand = () => {
+        const [a, b] = [...finger.values()];
+        return Math.hypot(a.x - b.x, a.y - b.y);
+    };
+    canvas.addEventListener("pointerdown", event => {
+        if (event.pointerType !== "touch") return;
+        finger.set(event.pointerId, { x: event.clientX, y: event.clientY });
+        if (finger.size === 2) {
+            pinchAbstand = fingerAbstand();
+            // Drehen mit dem ersten Finger beenden, solange gezoomt wird
+            drag = null;
+            canvas.classList.remove("is-dragging");
+            event.stopImmediatePropagation();
+        }
+    }, true);
+    canvas.addEventListener("pointermove", event => {
+        if (!finger.has(event.pointerId)) return;
+        finger.set(event.pointerId, { x: event.clientX, y: event.clientY });
+        if (finger.size !== 2) return;
+        const neu = fingerAbstand();
+        if (pinchAbstand > 0 && neu > 0) zoome(Math.log(pinchAbstand / neu));
+        pinchAbstand = neu;
+    });
+    for (const type of ["pointerup", "pointercancel"]) {
+        canvas.addEventListener(type, event => {
+            if (!finger.delete(event.pointerId)) return;
+            pinchAbstand = finger.size === 2 ? fingerAbstand() : 0;
+        });
+    }
 
     canvas.addEventListener("keydown", event => {
         if (!KEYS.has(event.code) || event.ctrlKey || event.metaKey || event.altKey) return;

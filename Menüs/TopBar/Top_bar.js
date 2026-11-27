@@ -77,6 +77,7 @@ async function loadAporiaTopbar() {
 
 
         initializeSidebarToggle();
+        initializeMobileMenu(header, navigation);
         new ResizeObserver(() => {
             document.documentElement.style.setProperty("--aporia-topbar-height", header.offsetHeight + "px");
         }).observe(header);
@@ -415,8 +416,10 @@ function initializeSidebarToggle() {
     const sidebar = document.querySelector("[data-aporia-sidebar]");
     if (!button || !sidebar) return;
 
-    const compactDossier = matchMedia("(max-width: 760px)").matches && document.querySelector("main nav:is([class$='-reiter'], .thl-reiterleiste, .dossier-seitennavigation)");
-    const preference = compactDossier ? "aporia.sidebar.mobileDossier.collapsed" : "aporia.sidebar.collapsed";
+    // Handy: Seitenleiste ist ein ausklappbares Seitenmenü und startet eingeklappt
+    const mobil = matchMedia("(max-width: 760px)").matches;
+    const compactDossier = mobil && document.querySelector("main nav:is([class$='-reiter'], .thl-reiterleiste, .dossier-seitennavigation)");
+    const preference = mobil ? "aporia.sidebar.mobile.collapsed" : "aporia.sidebar.collapsed";
     sidebar.id = "aporia-sidebar-host";
     function setExpanded(expanded) {
         sidebar.hidden = !expanded;
@@ -426,9 +429,9 @@ function initializeSidebarToggle() {
         button.title = label;
     }
 
-    let expanded = !compactDossier && !sidebar.hasAttribute("data-sidebar-default-collapsed");
+    let expanded = !mobil && !compactDossier && !sidebar.hasAttribute("data-sidebar-default-collapsed");
     try {
-        const saved = window.localStorage.getItem(preference);
+        const saved = mobil ? null : window.localStorage.getItem(preference);
         if (saved !== null) expanded = saved !== "true";
     } catch {
         // Der Schalter bleibt auch ohne Zugriff auf den Browserspeicher nutzbar.
@@ -440,10 +443,48 @@ function initializeSidebarToggle() {
         const expanded = sidebar.hidden;
         setExpanded(expanded);
         try {
-            window.localStorage.setItem(preference, String(!expanded));
+            if (!mobil) window.localStorage.setItem(preference, String(!expanded));
         } catch {
             // Die aktuelle Ansicht ist bereits aktualisiert.
         }
+    });
+
+    // Handy: Seitenmenü schließt nach Linkwahl oder Tipp außerhalb (wird beim Seitenwechsel nicht gemerkt)
+    if (mobil) {
+        const schliessen = () => { if (!sidebar.hidden) setExpanded(false); };
+        sidebar.addEventListener("click", event => { if (event.target.closest("a[href]")) schliessen(); });
+        document.addEventListener("click", event => {
+            if (!sidebar.contains(event.target) && !button.contains(event.target)) schliessen();
+        });
+    }
+}
+
+// Handy: Hauptnavigation hinter einem Menü-Knopf, damit die Topbar nur eine Zeile hoch ist
+function initializeMobileMenu(header, navigation) {
+    const knopf = document.createElement("button");
+    knopf.type = "button";
+    knopf.className = "aporia-menu-toggle";
+    knopf.setAttribute("aria-expanded", "false");
+    knopf.setAttribute("aria-label", "Menü öffnen");
+    knopf.innerHTML = '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg><span>Menü</span>';
+    navigation.before(knopf);
+    if (!navigation.id) navigation.id = "aporia-main-nav";
+    knopf.setAttribute("aria-controls", navigation.id);
+
+    const setzen = (offen) => {
+        header.classList.toggle("is-menu-open", offen);
+        knopf.setAttribute("aria-expanded", String(offen));
+        knopf.setAttribute("aria-label", offen ? "Menü schließen" : "Menü öffnen");
+    };
+    knopf.addEventListener("click", () => setzen(!header.classList.contains("is-menu-open")));
+    navigation.addEventListener("click", event => {
+        if (event.target.closest("a[href]:not([href='#'])")) setzen(false);
+    });
+    document.addEventListener("click", event => {
+        if (!header.contains(event.target)) setzen(false);
+    });
+    document.addEventListener("keydown", event => {
+        if (event.key === "Escape" && header.classList.contains("is-menu-open")) { setzen(false); knopf.focus(); }
     });
 }
 

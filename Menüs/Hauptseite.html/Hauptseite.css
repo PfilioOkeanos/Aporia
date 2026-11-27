@@ -172,8 +172,7 @@ body.home-page {
 
 @media (max-width: 650px) {
     .home-frame { display: block; }
-    .home-frame #aporia-sidebar-host { width: 100%; }
-    .home-frame .aporia-sidebar { position: static; max-height: 24vh; }
+    /* Seitenleiste ist auf dem Handy ein ausklappbares Seitenmenü (siehe Side_bar.css) */
 }
 
 .home-universe {

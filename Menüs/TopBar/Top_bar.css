@@ -291,6 +291,72 @@ body[data-navigation-color="turquoise"] {
     .aporia-celestial-nav:nth-child(3n + 1) ul { inset-inline: 0 auto; }
 }
 
+/* Menü-Knopf: nur auf dem Handy sichtbar */
+.aporia-menu-toggle { display: none; }
+
+@media (max-width: 760px) {
+    /* Eine Zeile: [Seitenleiste][APORIA] [Suche] [Menü] – die Navigation klappt darunter auf */
+    .aporia-topbar {
+        grid-template-columns: auto minmax(0, 1fr) auto;
+        align-items: center;
+        gap: 6px;
+        padding: 6px 8px;
+    }
+    .aporia-topbar-start { grid-area: 1 / 1; }
+    .aporia-search { grid-area: 1 / 2; justify-self: stretch; width: auto; }
+    .aporia-menu-toggle {
+        grid-area: 1 / 3;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        min-height: 34px;
+        padding: 0 10px;
+        border: 0;
+        border-radius: 4px;
+        background: var(--topbar-art) 40.18% 20.82% / 1628.21% 1421.05% no-repeat;
+        color: var(--plate-ink);
+        font: bold 12px/1 Georgia, serif;
+        cursor: pointer;
+    }
+    .aporia-menu-toggle svg {
+        width: 16px; height: 16px;
+        stroke: currentColor; stroke-width: 2; stroke-linecap: round;
+    }
+    .aporia-topbar.is-menu-open .aporia-menu-toggle { box-shadow: inset 0 -2px var(--plate-ink); }
+
+    .aporia-main-nav {
+        display: none;
+        position: absolute;
+        inset: 100% 0 auto;
+        z-index: 20;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 6px;
+        max-height: calc(100dvh - var(--aporia-topbar-height, 50px) - 8px);
+        overflow-y: auto;
+        padding: 8px;
+        background: var(--aporia-glass-menu);
+        border-bottom: 1px solid var(--aporia-line);
+        box-shadow: 0 14px 30px #000a;
+    }
+    .aporia-topbar.is-menu-open .aporia-main-nav { display: grid; }
+    .aporia-main-nav > * { min-height: 42px; }
+    .aporia-nav-link, .aporia-content-trigger { font-size: 13px; }
+    .aporia-celestial-nav .aporia-nav-link > svg { display: inline; }
+    .aporia-celestial-disclosure { flex-basis: 36px; }
+    /* Untermenüs als Blatt am unteren Bildschirmrand (wie „Inhalte“), gut mit dem Daumen erreichbar */
+    .aporia-topbar .aporia-celestial-disclosure ul {
+        position: fixed;
+        z-index: 1100;
+        inset: auto .5rem .5rem .5rem;
+        width: auto;
+        max-height: 60dvh;
+        padding: 8px;
+        border-radius: 12px;
+        box-shadow: var(--aporia-glass-rim), 0 -10px 40px #000c;
+    }
+    .aporia-topbar .aporia-celestial-disclosure a { padding: 12px 12px; font-size: 15px; }
+}
+
 @media (621px <= width <= 1279px) {
     .aporia-celestial-nav:nth-child(5n + 1) ul,
     .aporia-celestial-nav:nth-child(5n + 2) ul { inset-inline: 0 auto; }
