@@ -16,6 +16,7 @@ import { starteSzene } from "./Szene/Szene.js";
 import { ladeKartenansicht, leseDossierVorschau, speichereKartenansicht } from "../adapter/Sternenkarte/KartenRueckkehr.js";
 import { kartenobjektLink } from "../adapter/Sternenkarte/Verknuepfungen/Verknuepfungen.js";
 
+const STANDARD_SYSTEM = "Kugel 1";   // Sonnensystem
 const canvas = document.querySelector("#star-map");
 const reset = document.querySelector("#camera-reset");
 const status = document.querySelector("#map-status");
@@ -90,7 +91,8 @@ async function starteKarte() {
     function gruppenAktualisieren() {
         gruppen = kartengruppen(objekte);
         gruppenNachId = new Map(gruppen.map(gruppe => [gruppe.id, gruppe]));
-        if (!gruppenNachId.has(aktiveGruppe)) aktiveGruppe = gruppen[0].id;
+        // Standard: nur ein Sternsystem (das Sonnensystem) – alle Systeme gleichzeitig sind am Handy zu langsam
+        if (!gruppenNachId.has(aktiveGruppe)) aktiveGruppe = gruppenNachId.has(STANDARD_SYSTEM) ? STANDARD_SYSTEM : gruppen[0].id;
         sichtbareObjekte.splice(0, sichtbareObjekte.length,
             ...objekte.filter(objekt => inKartengruppe(objekt, aktiveGruppe, gruppenNachId)));
         for (const aktualisiere of ansichtsWahlen) {

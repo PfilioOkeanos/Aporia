@@ -291,6 +291,11 @@ body[data-navigation-color="turquoise"] {
     .aporia-celestial-nav:nth-child(3n + 1) ul { inset-inline: 0 auto; }
 }
 
+/* Handy: keine blaue Standard-Markierung des Browsers beim Antippen – die Seiten zeigen ihre eigenen Effekte */
+html { -webkit-tap-highlight-color: transparent; }
+/* Fokusrahmen nur bei Tastaturbedienung zeigen, nicht nach dem Antippen */
+:focus:not(:focus-visible) { outline: none; }
+
 /* Menü-Knopf: nur auf dem Handy sichtbar */
 .aporia-menu-toggle { display: none; }
 

@@ -114,13 +114,15 @@ export function erzeugeKamera(canvas, reset) {
     }, { passive: false });
 
     // Handy/Tablet: zwei Finger auseinanderziehen = hineinzoomen, zusammenführen = herauszoomen
+    // Gesten am ganzen Kartenbereich erkennen – auch wenn ein Finger auf einer Beschriftung oder Markierung liegt
+    const flaeche = canvas.closest(".map-view") ?? canvas;
     const finger = new Map();
     let pinchAbstand = 0;
     const fingerAbstand = () => {
         const [a, b] = [...finger.values()];
         return Math.hypot(a.x - b.x, a.y - b.y);
     };
-    canvas.addEventListener("pointerdown", event => {
+    flaeche.addEventListener("pointerdown", event => {
         if (event.pointerType !== "touch") return;
         finger.set(event.pointerId, { x: event.clientX, y: event.clientY });
         if (finger.size === 2) {
@@ -131,7 +133,7 @@ export function erzeugeKamera(canvas, reset) {
             event.stopImmediatePropagation();
         }
     }, true);
-    canvas.addEventListener("pointermove", event => {
+    flaeche.addEventListener("pointermove", event => {
         if (!finger.has(event.pointerId)) return;
         finger.set(event.pointerId, { x: event.clientX, y: event.clientY });
         if (finger.size !== 2) return;
@@ -140,7 +142,7 @@ export function erzeugeKamera(canvas, reset) {
         pinchAbstand = neu;
     });
     for (const type of ["pointerup", "pointercancel"]) {
-        canvas.addEventListener(type, event => {
+        flaeche.addEventListener(type, event => {
             if (!finger.delete(event.pointerId)) return;
             pinchAbstand = finger.size === 2 ? fingerAbstand() : 0;
         });

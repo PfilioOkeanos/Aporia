@@ -1,6 +1,8 @@
 .map-view {
     position: relative;
     height: 100%;
+    /* Gesten (Drehen, Zwei-Finger-Zoom) übernimmt die Kamera – auch über Beschriftungen */
+    touch-action: none;
 }
 
 .map-view-header {

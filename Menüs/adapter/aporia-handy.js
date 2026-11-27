@@ -3,7 +3,7 @@
 // Neue Seiten brauchen dafür nichts zu tun – sie schreiben ihr CSS wie gewohnt:
 //   1. Bewegung:  @media (prefers-reduced-motion: …) wird auf den Schalter „Animationen“ umgestellt (aporia-bewegung.js)
 //   2. Touch:     Jede :hover-Regel bekommt auf Touch-Geräten eine Zwillingsregel mit .ist-aktiv.
-//                 Elemente im Inhalt erhalten .ist-aktiv, solange sie in der Bildschirmmitte stehen oder angetippt wurden.
+//                 Ein Element im Inhalt erhält .ist-aktiv, wenn es angetippt wird (bis zum nächsten Tippen woanders).
 //                 So laufen Hover-Animationen auch am Handy. Eigene Regeln können .ist-aktiv auch direkt nutzen.
 //   3. Leistung:  Endlos-Animationen außerhalb des Bildschirms werden angehalten und laufen beim Hineinscrollen weiter.
 //
@@ -87,35 +87,31 @@ function bearbeiteStylesheets() {
 }
 
 // ---------- 2: Touch-Aktivierung ----------
-const beobachtet = new WeakSet();
-const mitte = TOUCH ? new IntersectionObserver(eintraege => {
-    for (const e of eintraege) e.target.classList.toggle(KLASSE, e.isIntersecting);
-}, { rootMargin: "-38% 0px -38% 0px" }) : null;
+// Hover-Effekte erscheinen am Handy auf dem Element, das angetippt wird (wie ein Mausklick darauf).
+// Tippt man woanders hin, wandert der Effekt mit bzw. verschwindet. Nicht dauerhaft, nicht beim bloßen Scrollen.
+let aktive = [];
 
 function istInhalt(element) {
     return !element.closest(NAVIGATION);
 }
 
-function beobachteHoverElemente() {
-    if (!TOUCH || !hoverBasen.size) return;
+function istHoverElement(element) {
     for (const basis of hoverBasen) {
-        let treffer;
-        try { treffer = document.querySelectorAll(basis); } catch { continue; }
-        for (const element of treffer) {
-            if (beobachtet.has(element) || !istInhalt(element)) continue;
-            beobachtet.add(element);
-            mitte.observe(element);
-        }
+        try { if (element.matches(basis)) return true; } catch { /* ungültiger Teilselektor */ }
     }
+    return false;
 }
 
 if (TOUCH) {
-    // Antippen aktiviert sofort (ohne auf das Scrollen zu warten)
     document.addEventListener("pointerdown", event => {
-        if (event.pointerType !== "touch") return;
+        if (event.pointerType !== "touch" && !new URLSearchParams(location.search).has("touch-test")) return;
+        const neu = [];
         for (let el = event.target; el && el !== document.body; el = el.parentElement) {
-            if (beobachtet.has(el)) el.classList.add(KLASSE);
+            if (el instanceof Element && istInhalt(el) && istHoverElement(el)) neu.push(el);
         }
+        for (const el of aktive) if (!neu.includes(el)) el.classList.remove(KLASSE);
+        for (const el of neu) el.classList.add(KLASSE);
+        aktive = neu;
     }, { passive: true });
 }
 
@@ -180,10 +176,24 @@ function erkenneZweitleisten() {
     }
 }
 
+// ---------- 5: Seitentyp-Erweiterungen fürs Handy (nur geladen, wenn die Seite den Aufbau hat) ----------
+const ERWEITERUNGEN = [
+    // Inhalts-Übersichten mit Szene: Kartenansicht unter der Szene
+    { erkennen: "nav.scene > a.scene-link", modul: "../../inhalte/Archivansicht.js" },
+];
+const geladen = new Set();
+function ladeErweiterungen() {
+    for (const { erkennen, modul } of ERWEITERUNGEN) {
+        if (geladen.has(modul) || !document.querySelector(erkennen)) continue;
+        geladen.add(modul);
+        import(modul).catch(fehler => console.warn("APORIA Handy-Erweiterung nicht geladen:", modul, fehler));
+    }
+}
+
 // ---------- Ablauf ----------
 function aktualisieren() {
+    ladeErweiterungen();
     bearbeiteStylesheets();
-    beobachteHoverElemente();
     erfasseEndlosAnimationen();
     erkenneZweitleisten();
 }
