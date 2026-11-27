@@ -204,11 +204,13 @@ for (const card of document.querySelectorAll("[data-spezies-emblem]")) {
     let onScreen = false;
     const sync = () => setMotion(logo, pointerOver && onScreen && (canHover.matches || istTouch) && !reducedMotion.matches);
     draw(logo);
+    // Nur die Maus steuert per Überfahren – Finger (Antippen, Scrollen) halten die Animation nicht an
     card.addEventListener("pointerenter", event => {
-        pointerOver = event.pointerType === "mouse";
+        if (event.pointerType !== "mouse") return;
+        pointerOver = true;
         sync();
     });
-    const stop = () => { pointerOver = false; sync(); };
+    const stop = event => { if (event?.pointerType && event.pointerType !== "mouse") return; pointerOver = false; sync(); };
     card.addEventListener("pointerleave", stop);
     card.addEventListener("pointercancel", stop);
     // Handy: Emblem bewegt sich, solange die Karte in der Bildschirmmitte steht

@@ -47,6 +47,9 @@ function hoverZwilling(liste) {
         const regel = regeln[i];
         if (regel instanceof CSSStyleRule) {
             if (!regel.selectorText.includes(":hover")) continue;
+            // Regeln, die beim Überfahren eine Animation anhalten, gelten am Handy nicht – Antippen soll nichts stoppen
+            const stil = regel.style;
+            if (stil.animationPlayState === "paused" || stil.animationName === "none") continue;
             const zwillinge = [];
             for (const teil of teileSelektoren(regel.selectorText)) {
                 const stelle = teil.indexOf(":hover");

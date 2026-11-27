@@ -97,8 +97,9 @@ for (const logo of grid.querySelectorAll("[data-animated-src]")) {
         const source = visible && hovered && !motion.matches ? logo.dataset.animatedSrc : poster;
         if (logo.getAttribute("src") !== source) logo.src = source;
     }
-    card.addEventListener("pointerenter", event => { hovered = event.pointerType === "mouse"; syncLogo(); });
-    const stop = () => { hovered = false; syncLogo(); };
+    // Nur die Maus steuert per Überfahren – Finger (Antippen, Scrollen) halten die Animation nicht an
+    card.addEventListener("pointerenter", event => { if (event.pointerType !== "mouse") return; hovered = true; syncLogo(); });
+    const stop = event => { if (event.pointerType !== "mouse") return; hovered = false; syncLogo(); };
     card.addEventListener("pointerleave", stop);
     card.addEventListener("pointercancel", stop);
     // Handy: Logo animiert, solange die Karte in der Bildschirmmitte steht
