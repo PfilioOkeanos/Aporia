@@ -226,6 +226,7 @@ ${links.map(([h, t, u, r]) => `                        <li><a href="${h}" ${r}><
                 </aside>`;
 }
 function blaettern(s) {
+    return "";   // Blätter-Knöpfe entfallen – zum Wechseln dient die mitwandernde Reiter-Leiste (Handy-Schicht)
     const i = SEITEN.indexOf(s), vor = SEITEN[i - 1], nach = SEITEN[i + 1], f = s.file;
     return `<nav class="pl-blaettern" aria-label="Hauptreiter blättern">${vor ? `<a href="${rel(f, vor.file)}" data-route="${ROUTE(vor)}">← ${esc(vor.label)}</a>` : "<span></span>"}${nach ? `<a href="${rel(f, nach.file)}" data-route="${ROUTE(nach)}">${esc(nach.label)} →</a>` : "<span></span>"}</nav>`;
 }
@@ -246,7 +247,6 @@ function hero(s) {
                 <span class="pl-glanz" aria-hidden="true"></span>
                 <div class="pl-hero-text">
                     ${pfad(s)}
-                    <p class="pl-kicker">Plasmoiden · Hauptreiter</p>
                     <h1>${esc(s.label)}</h1>
                     <p class="pl-unterzeile">${esc(s.text)}</p>
                 </div>

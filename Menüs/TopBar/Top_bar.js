@@ -7,7 +7,7 @@
 /* 01 - ROUTENVERWALTUNG IMPORTIEREN */
 
 /* Handy-Schicht zuerst: Animationen-Schalter, Touch-Ersatz für Hover, Leistung (siehe adapter/aporia-handy.js) */
-import { HANDY_MEDIA } from "../adapter/aporia-handy.js";
+import { HANDY_MEDIA, leistenZu, setzeLeistenZu } from "../adapter/aporia-handy.js";
 import "../Side_bar/side_bar.js";
 import {
     applyAporiaRoutes,
@@ -424,6 +424,8 @@ function initializeSidebarToggle() {
     sidebar.id = "aporia-sidebar-host";
     function setExpanded(expanded) {
         sidebar.hidden = !expanded;
+        // Handy: offene Seitenleiste schiebt die Seite zusammen (Side_bar.css)
+        document.documentElement.classList.toggle("aporia-seitenleiste-offen", mobil && expanded);
         button.setAttribute("aria-expanded", String(expanded));
         const label = expanded ? "Seitenleiste einklappen" : "Seitenleiste ausklappen";
         button.setAttribute("aria-label", label);
@@ -450,13 +452,23 @@ function initializeSidebarToggle() {
         }
     });
 
-    // Handy: Seitenmenü schließt nach Linkwahl oder Tipp außerhalb (wird beim Seitenwechsel nicht gemerkt)
+    // Handy: Seitenleiste schließt nach Linkwahl oder beim Wischen nach links (wird beim Seitenwechsel nicht gemerkt).
+    // Die Seite daneben bleibt bedienbar – Tippen dort schließt die Leiste nicht.
     if (mobil) {
         const schliessen = () => { if (!sidebar.hidden) setExpanded(false); };
         sidebar.addEventListener("click", event => { if (event.target.closest("a[href]")) schliessen(); });
-        document.addEventListener("click", event => {
-            if (!sidebar.contains(event.target) && !button.contains(event.target)) schliessen();
-        });
+        let start = null;
+        sidebar.addEventListener("touchstart", event => {
+            const t = event.touches[0];
+            start = event.touches.length === 1 ? { x: t.clientX, y: t.clientY } : null;
+        }, { passive: true });
+        sidebar.addEventListener("touchmove", event => {
+            if (!start) return;
+            const t = event.touches[0];
+            const dx = t.clientX - start.x, dy = t.clientY - start.y;
+            if (dx < -60 && Math.abs(dx) > Math.abs(dy) * 1.5) { start = null; schliessen(); }
+        }, { passive: true });
+        sidebar.addEventListener("touchend", () => { start = null; }, { passive: true });
     }
 }
 
@@ -469,6 +481,25 @@ function initializeMobileMenu(header, navigation) {
     knopf.setAttribute("aria-label", "Menü öffnen");
     knopf.innerHTML = '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg><span>Menü</span>';
     navigation.before(knopf);
+
+    // Leisten ein-/ausklappen (Topbar + zweite Leisten); Zustand verwaltet aporia-handy.js
+    const klappen = document.createElement("button");
+    klappen.type = "button";
+    klappen.className = "aporia-leisten-knopf";
+    klappen.textContent = "▴";
+    klappen.setAttribute("aria-label", "Leisten einklappen");
+    klappen.title = "Leisten einklappen";
+    knopf.after(klappen);
+    const lasche = document.createElement("button");
+    lasche.type = "button";
+    lasche.className = "aporia-leisten-lasche";
+    lasche.textContent = "▾";
+    lasche.setAttribute("aria-label", "Leisten ausklappen");
+    lasche.title = "Leisten ausklappen";
+    document.body.append(lasche);
+    klappen.addEventListener("click", () => { header.classList.remove("is-menu-open"); setzeLeistenZu(true); });
+    lasche.addEventListener("click", () => setzeLeistenZu(false));
+    if (leistenZu()) lasche.hidden = false;
     if (!navigation.id) navigation.id = "aporia-main-nav";
     knopf.setAttribute("aria-controls", navigation.id);
 

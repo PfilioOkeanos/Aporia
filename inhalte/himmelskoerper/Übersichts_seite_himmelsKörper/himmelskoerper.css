@@ -70,3 +70,37 @@ body[data-page="himmelskoerper"] {
   background: linear-gradient(145deg, #253b34, #121d29);
 }
 .world-preview p { min-height: 3em; line-height: 1.6; }
+
+/* Hörprobe: kleines eigenes Feld unter jedem Planeten (statt des eingebauten Players) */
+.orbit-card .hoerprobe {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: .25rem .55rem;
+  width: min(100%, 245px);
+  margin: .2rem auto 0;
+  padding: .5rem .8rem .55rem;
+  border: 1px solid #947d58;
+  border-radius: .8rem;
+  background: #101d22;
+  color: #f4e6cc;
+  font: .9rem/1.2 Georgia, serif;
+  text-align: left;
+  cursor: pointer;
+}
+.orbit-card .hoerprobe:hover, .orbit-card .hoerprobe.ist-am-spielen { background: #1c2f2c; border-color: #f0cd91; }
+.hoerprobe-symbol {
+  display: grid; place-items: center;
+  width: 1.8rem; height: 1.8rem;
+  border-radius: 50%;
+  background: #f0cd91; color: #101d22;
+  font-size: .75rem;
+}
+.hoerprobe-leiste {
+  grid-column: 1 / -1;
+  height: 3px;
+  border-radius: 3px;
+  background: #947d5855;
+  overflow: hidden;
+}
+.hoerprobe-leiste i { display: block; width: 0; height: 100%; background: #f0cd91; transition: width .25s linear; }

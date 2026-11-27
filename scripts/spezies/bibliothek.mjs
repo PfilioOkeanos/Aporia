@@ -189,6 +189,7 @@ ${links.map(([h, t, u, r = ""]) => `                        <li><a href="${h}" $
                 </aside>`;
     }
     function blaettern(s) {
+        return "";   // Blätter-Knöpfe entfallen – zum Wechseln dient die mitwandernde Reiter-Leiste (Handy-Schicht)
         const i = SEITEN.indexOf(s), vor = SEITEN[i - 1], nach = SEITEN[i + 1], f = s.file;
         return `<nav class="${P}-blaettern" aria-label="Hauptreiter blättern">${vor ? `<a href="${rel(f, vor.file)}" data-route="${ROUTE(vor)}">← ${esc(vor.label)}</a>` : "<span></span>"}${nach ? `<a href="${rel(f, nach.file)}" data-route="${ROUTE(nach)}">${esc(nach.label)} →</a>` : "<span></span>"}</nav>`;
     }
@@ -210,7 +211,6 @@ ${links.map(([h, t, u, r = ""]) => `                        <li><a href="${h}" $
                 <span class="${P}-glanz" aria-hidden="true"></span>
                 <div class="${P}-hero-text">
                     ${pfad(s)}
-                    <p class="${P}-kicker">${NAME} · Hauptreiter</p>
                     <h1>${esc(s.label)}</h1>
                     <p class="${P}-unterzeile">${esc(s.text)}</p>
                 </div>

@@ -297,22 +297,72 @@ html { -webkit-tap-highlight-color: transparent; }
 :focus:not(:focus-visible) { outline: none; }
 
 /* Menü-Knopf: nur auf dem Handy sichtbar */
-.aporia-menu-toggle { display: none; }
+.aporia-menu-toggle, .aporia-leisten-knopf, .aporia-leisten-lasche { display: none; }
 
 /* HANDY-BEDINGUNG – gleich in Side_bar.css und adapter/aporia-handy.js (HANDY_MEDIA) */
 @media (max-width: 760px), (pointer: coarse) and (max-width: 1024px), (max-height: 500px) {
-    /* Leisten klappen beim Scrollen nach unten weg und kommen beim Scrollen nach oben zurück (aporia-handy.js) */
+    /* Nichts darf die Seite seitlich verschiebbar machen (clip statt hidden, damit „sticky“ weiter klebt) */
+    body { overflow-x: clip; }
+
+    /* Leisten bleiben beim Scrollen oben; der Klapp-Knopf (▴) klappt Topbar und zweite Leisten ein (aporia-handy.js) */
     [data-aporia-topbar], .aporia-zweitleiste { transition: transform .28s ease, opacity .28s ease; }
-    .aporia-leisten-weg [data-aporia-topbar] { transform: translateY(calc(-100% - 7rem)); }
-    .aporia-leisten-weg .aporia-zweitleiste {
+    .aporia-leisten-zu [data-aporia-topbar] { transform: translateY(calc(-100% - 7rem)); pointer-events: none; }
+    .aporia-leisten-zu .aporia-zweitleiste {
         transform: translateY(calc(-100% - var(--aporia-topbar-height, 50px) - 2rem));
         opacity: 0;
         pointer-events: none;
     }
+    .aporia-leisten-knopf {
+        grid-area: 1 / 4;
+        display: grid; place-items: center;
+        width: 34px; min-height: 34px;
+        border: 0; border-radius: 4px;
+        background: var(--topbar-art) 40.18% 20.82% / 1628.21% 1421.05% no-repeat;
+        color: var(--plate-ink);
+        font: bold 15px/1 Georgia, serif;
+        cursor: pointer;
+    }
+    /* Lasche zum Wiederausklappen (nur sichtbar, wenn die Leisten eingeklappt sind) */
+    .aporia-leisten-lasche {
+        position: fixed; z-index: 1001; top: 0; right: 12px;
+        display: none;
+        padding: 2px 14px 6px;
+        border: 0; border-radius: 0 0 10px 10px;
+        background: linear-gradient(#e7d1aa, #cdb089);
+        color: #2a1c12;
+        font: bold 15px/1 Georgia, serif;
+        box-shadow: 0 4px 14px #000a;
+        cursor: pointer;
+    }
+    .aporia-leisten-zu .aporia-leisten-lasche { display: block; }
+
+    /* Spezies-Reiter (Übersicht · Allgemeines · Biologie …) als zweite Leiste: klebt unter der Topbar, waagerecht wischbar */
+    .aporia-reiterleiste {
+        position: sticky !important;
+        top: var(--aporia-topbar-height, 50px) !important;
+        z-index: 900 !important;
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        gap: .4rem;
+        overflow-x: auto;
+        overscroll-behavior-x: contain;
+        scrollbar-width: none;
+        padding: .45rem .5rem !important;
+        margin-block: 0 !important;
+        background: #0b1016 !important;
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        box-shadow: 0 8px 18px #0008;
+    }
+    .aporia-reiterleiste::-webkit-scrollbar { display: none; }
+    .aporia-reiterleiste > * { flex: 0 0 auto; white-space: nowrap; }
+
+    /* Hohe klebende Seitenspalten (Kapitel, Sprungmarken) kleben in der einspaltigen Ansicht nicht */
+    .aporia-handy-statisch { position: static !important; max-height: none !important; }
 
     /* Eine Zeile: [Seitenleiste][APORIA] [Suche] [Menü] – die Navigation klappt darunter auf */
     .aporia-topbar {
-        grid-template-columns: auto minmax(0, 1fr) auto;
+        grid-template-columns: auto minmax(0, 1fr) auto auto;
         align-items: center;
         gap: 6px;
         padding: 6px 8px;
@@ -346,8 +396,8 @@ html { -webkit-tap-highlight-color: transparent; }
         z-index: 20;
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 6px;
-        max-height: calc(100dvh - var(--aporia-topbar-height, 50px) - 8px);
-        overflow-y: auto;
+        /* kein eigenes Scrollen: Untermenüs dürfen über den Menürand hinaus aufklappen */
+        overflow: visible;
         padding: 8px;
         background: var(--aporia-glass-menu);
         border-bottom: 1px solid var(--aporia-line);
@@ -358,18 +408,34 @@ html { -webkit-tap-highlight-color: transparent; }
     .aporia-nav-link, .aporia-content-trigger { font-size: 13px; }
     .aporia-celestial-nav .aporia-nav-link > svg { display: inline; }
     .aporia-celestial-disclosure { flex-basis: 36px; }
-    /* Untermenüs als Blatt am unteren Bildschirmrand (wie „Inhalte“), gut mit dem Daumen erreichbar */
-    .aporia-topbar .aporia-celestial-disclosure ul {
-        position: fixed;
-        z-index: 1100;
-        inset: auto .5rem .5rem .5rem;
-        width: auto;
+    /* Untermenüs öffnen direkt unter dem angetippten Punkt, so breit wie das Menü, im Pergament-Ton der Topbar */
+    .aporia-topbar .aporia-celestial-nav, .aporia-topbar .aporia-content-nav { position: relative; }
+    .aporia-topbar .aporia-celestial-disclosure ul,
+    .aporia-topbar .aporia-content-panel {
+        position: absolute;
+        z-index: 30;
+        top: calc(100% + 4px);
+        left: 0; right: auto; bottom: auto;
+        width: calc(200% + 6px);
         max-height: 60dvh;
-        padding: 8px;
-        border-radius: 12px;
-        box-shadow: var(--aporia-glass-rim), 0 -10px 40px #000c;
+        padding: 6px;
+        border: 1px solid #8a6a43;
+        border-radius: 8px;
+        background: linear-gradient(#ecd7b1, #d1b48b);
+        color: var(--plate-ink);
+        box-shadow: 0 12px 28px #000b;
     }
-    .aporia-topbar .aporia-celestial-disclosure a { padding: 12px 12px; font-size: 15px; }
+    /* Punkte in der rechten Spalte: Untermenü rechtsbündig */
+    .aporia-topbar .aporia-main-nav > :nth-child(even) .aporia-celestial-disclosure ul,
+    .aporia-topbar .aporia-main-nav > :nth-child(even) .aporia-content-panel { left: auto; right: 0; }
+    .aporia-topbar .aporia-celestial-disclosure a,
+    .aporia-topbar .aporia-content-panel a { color: var(--plate-ink); padding: 11px 12px; font-size: 15px; }
+    .aporia-topbar .aporia-celestial-disclosure a:is(:hover, :active, [aria-current]),
+    .aporia-topbar .aporia-content-panel a:is(:hover, :active, .is-selected) { background: #a6835455; color: #1a110a; }
+    .aporia-topbar .aporia-content-panel { grid-template-columns: minmax(7rem, .8fr) minmax(0, 1.2fr); overflow: hidden; }
+    .aporia-topbar .aporia-content-categories { border-right-color: #8a6a4380; }
+    .aporia-topbar .aporia-content-subfolders > p { color: #4a3624; }
+    .aporia-topbar .aporia-content-subfolders ul { grid-template-columns: minmax(0, 1fr); }
 }
 
 @media (621px <= width <= 1279px) {

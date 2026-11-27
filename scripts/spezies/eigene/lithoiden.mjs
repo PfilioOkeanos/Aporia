@@ -182,6 +182,7 @@ ${links.map(([h, t, u, r]) => `                        <li><a href="${h}" ${r}><
                 </aside>`;
 }
 function blaettern(s) {
+    return "";   // Blätter-Knöpfe entfallen – zum Wechseln dient die mitwandernde Reiter-Leiste (Handy-Schicht)
     const i = SEITEN.indexOf(s), vor = SEITEN[i - 1], nach = SEITEN[i + 1], f = s.file;
     return `<nav class="li-blaettern" aria-label="Hauptreiter blättern">${vor ? `<a href="${rel(f, vor.file)}" data-route="${ROUTE(vor)}">← ${esc(vor.label)}</a>` : "<span></span>"}${nach ? `<a href="${rel(f, nach.file)}" data-route="${ROUTE(nach)}">${esc(nach.label)} →</a>` : "<span></span>"}</nav>`;
 }
@@ -196,7 +197,6 @@ function hero(s, unterzeile, extra = "") {
                 <img class="li-hero-bild" src="${rel(s.file, bild(s.titelbild))}" alt="" fetchpriority="high" decoding="async">
                 <div class="li-hero-text">
                     ${pfad(s)}
-                    <p class="li-kicker">Lithoiden · Hauptreiter</p>
                     <h1>${esc(s.label)}</h1>
                     <p class="li-unterzeile">${esc(unterzeile)}</p>
                     ${extra}

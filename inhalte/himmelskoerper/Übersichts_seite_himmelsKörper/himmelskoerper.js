@@ -38,10 +38,31 @@ let currentPlayer;
 function makeCard(title, route, art, group, index) {
   const card = document.createElement("article");
   card.className = "orbit-card";
-  card.innerHTML = '<a class="orbit-image"><img alt="" loading="lazy" width="245" height="245"></a><h3><a></a></h3><audio controls preload="none"></audio>';
+  // Hörprobe als eigenes kleines Feld (der eingebaute Player ist auf Android breiter als die Karte)
+  card.innerHTML = '<a class="orbit-image"><img alt="" loading="lazy" width="245" height="245"></a><h3><a></a></h3>' +
+    '<button type="button" class="hoerprobe" aria-pressed="false"><span class="hoerprobe-symbol" aria-hidden="true">▶</span><span>Hörprobe</span><span class="hoerprobe-leiste" aria-hidden="true"><i></i></span></button>' +
+    '<audio preload="none"></audio>';
   const [imageLink, titleLink] = card.querySelectorAll("a");
   const image = card.querySelector("img");
   const player = card.querySelector("audio");
+  const feld = card.querySelector(".hoerprobe");
+  const symbol = feld.querySelector(".hoerprobe-symbol");
+  const fortschritt = feld.querySelector(".hoerprobe-leiste i");
+  feld.setAttribute("aria-label", "Hörprobe abspielen: " + title);
+  feld.addEventListener("click", () => { if (player.paused) player.play().catch(() => {}); else player.pause(); });
+  const zustand = () => {
+    const laeuft = !player.paused && !player.ended;
+    feld.setAttribute("aria-pressed", String(laeuft));
+    feld.classList.toggle("ist-am-spielen", laeuft);
+    symbol.textContent = laeuft ? "❚❚" : "▶";
+    feld.setAttribute("aria-label", (laeuft ? "Hörprobe pausieren: " : "Hörprobe abspielen: ") + title);
+  };
+  player.addEventListener("play", zustand);
+  player.addEventListener("pause", zustand);
+  player.addEventListener("ended", () => { player.currentTime = 0; fortschritt.style.width = "0%"; zustand(); });
+  player.addEventListener("timeupdate", () => {
+    if (player.duration) fortschritt.style.width = (player.currentTime / player.duration * 100).toFixed(1) + "%";
+  });
   imageLink.setAttribute("aria-label", title + " – " + (title.toLowerCase() === route ? "Übersicht" : "zugehöriges Archiv") + " öffnen");
   titleLink.textContent = title;
   imageLink.dataset.route = titleLink.dataset.route = route;

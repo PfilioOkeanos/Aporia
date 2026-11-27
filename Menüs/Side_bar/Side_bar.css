@@ -496,7 +496,9 @@ body.is-resizing-sidebar, body.is-resizing-sidebar * {
 }
 /* HANDY-BEDINGUNG – gleich in Top_bar.css und adapter/aporia-handy.js (HANDY_MEDIA) */
 @media (max-width: 760px), (pointer: coarse) and (max-width: 1024px), (max-height: 500px) {
-    /* Handy: Seitenleiste als Seitenmenü über dem Inhalt (Knopf links in der Topbar) */
+    /* Handy: Seitenleiste links (Knopf in der Topbar). Offen schiebt sie die Seite daneben zusammen;
+       Wischen nach links schließt sie (Top_bar.js). */
+    :root { --handy-seitenleiste: min(72vw, 290px); }
     #aporia-sidebar-host,
     .aporia-auto-page-frame > #aporia-sidebar-host[data-sidebar-auto="true"] {
         position: fixed !important;
@@ -504,7 +506,7 @@ body.is-resizing-sidebar, body.is-resizing-sidebar * {
         top: var(--aporia-topbar-height, 50px);
         left: 0;
         bottom: 0;
-        width: min(86vw, 320px) !important;
+        width: var(--handy-seitenleiste) !important;
         max-width: none;
         height: auto !important;
         min-height: 0;
@@ -522,6 +524,13 @@ body.is-resizing-sidebar, body.is-resizing-sidebar * {
         background-color: color-mix(in srgb, var(--aporia-glass-dark, #18161a) 88%, #000);
         backdrop-filter: blur(14px) saturate(1.1);
         -webkit-backdrop-filter: blur(14px) saturate(1.1);
+    }
+    /* Seite daneben wird schmaler statt verdeckt (alle Seitenaufbauten: Leiste und main sind Geschwister) */
+    #aporia-sidebar-host ~ * { transition: margin-left .25s ease; }
+    .aporia-seitenleiste-offen #aporia-sidebar-host ~ * {
+        margin-left: var(--handy-seitenleiste) !important;
+        min-width: 0;
+        max-width: calc(100vw - var(--handy-seitenleiste));
     }
     .aporia-sidebar-resizer { display: none; }
     .aporia-sidebar { --sidebar-inset: 4px; border-radius: .8rem 1.25rem 1.25rem .8rem; }

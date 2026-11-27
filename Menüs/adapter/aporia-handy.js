@@ -142,40 +142,49 @@ function erfasseEndlosAnimationen() {
     }
 }
 
-// ---------- 4: Leisten am Handy ein-/ausklappen ----------
-// Beim Scrollen nach unten klappen Topbar und „zweite Leisten“ (klebende Seitennavigation wie Saalplan,
-// Kapitel-Reiter) weg, beim Scrollen nach oben kommen sie zurück. Zweite Leisten werden automatisch erkannt
-// (klebend/fest oben im Inhalt) und bekommen die Klasse .aporia-zweitleiste. CSS dazu: Top_bar.css.
+// ---------- 4: Leisten am Handy ----------
+// Topbar und „zweite Leisten“ (Seitennavigation wie Saalplan oder Spezies-Reiter) bleiben beim Scrollen oben.
+// Der Klapp-Knopf in der Topbar (Top_bar.js) klappt beide von Hand ein/aus – die Wahl wird gemerkt.
+// Zweite Leisten werden automatisch erkannt und bekommen .aporia-zweitleiste. CSS dazu: Top_bar.css.
 const handyAnsicht = matchMedia(HANDY_MEDIA);
-let letzteY = scrollY;
-let leistenWeg = false;
+const LEISTEN_SCHLUESSEL = "aporia.leisten.zu";
 
-function setzeLeisten(weg) {
-    if (weg === leistenWeg) return;
-    leistenWeg = weg;
-    document.documentElement.classList.toggle("aporia-leisten-weg", weg);
+export function leistenZu() {
+    return document.documentElement.classList.contains("aporia-leisten-zu");
 }
-
-function menueOffen() {
-    const seitenleiste = document.querySelector("[data-aporia-sidebar]");
-    return document.querySelector(".aporia-topbar.is-menu-open, .aporia-content-disclosure[open]") || (seitenleiste && !seitenleiste.hidden);
+export function setzeLeistenZu(zu) {
+    document.documentElement.classList.toggle("aporia-leisten-zu", zu);
+    try { localStorage.setItem(LEISTEN_SCHLUESSEL, zu ? "ja" : "nein"); } catch { /* nur für diese Seite */ }
 }
+try { if (localStorage.getItem(LEISTEN_SCHLUESSEL) === "ja") document.documentElement.classList.add("aporia-leisten-zu"); } catch { /* ohne Speicher: offen */ }
 
-addEventListener("scroll", () => {
-    const y = scrollY;
-    const schritt = y - letzteY;
-    if (!handyAnsicht.matches || y < 90 || menueOffen()) setzeLeisten(false);
-    else if (schritt > 12) setzeLeisten(true);
-    else if (schritt < -12) setzeLeisten(false);
-    if (Math.abs(schritt) > 12 || y < 90) letzteY = y;
-}, { passive: true });
-
+// Spezies-Reiter (Übersicht · Allgemeines · Biologie …) sind immer zweite Leisten
+const REITERLEISTEN = ".dossier-seitennavigation, nav[class$='-reiter']";
 const ZWEITLEISTEN_KANDIDATEN = "main nav, main header, body > nav, body > header, [class*='reiter'], [class*='leiste'], [class*='saalplan'], [class*='navigation']";
+// Hohe klebende Seitenspalten (Kapitel, Sprungmarken) – in der einspaltigen Handy-Ansicht nicht kleben lassen
+const KLEBESPALTEN = "main aside, main nav, main [class*='chapter'], main [class*='rail'], main [class*='jump'], main [class*='sprung'], main [class*='kapitel']";
+
 function erkenneZweitleisten() {
+    for (const element of document.querySelectorAll(REITERLEISTEN)) {
+        if (element.classList.contains("aporia-zweitleiste") || element.closest(NAVIGATION)) continue;
+        element.classList.add("aporia-zweitleiste", "aporia-reiterleiste");
+        // aktiven Reiter in den sichtbaren Bereich der waagerecht wischbaren Leiste holen
+        const aktiv = element.querySelector("[aria-current]");
+        if (aktiv && handyAnsicht.matches) requestAnimationFrame(() => {
+            element.scrollLeft = aktiv.offsetLeft - (element.clientWidth - aktiv.offsetWidth) / 2;
+        });
+    }
     for (const element of document.querySelectorAll(ZWEITLEISTEN_KANDIDATEN)) {
         if (element.classList.contains("aporia-zweitleiste") || element.closest(NAVIGATION)) continue;
         const stil = getComputedStyle(element);
-        if ((stil.position === "sticky" || stil.position === "fixed") && parseFloat(stil.top) <= 220) element.classList.add("aporia-zweitleiste");
+        if ((stil.position === "sticky" || stil.position === "fixed") && parseFloat(stil.top) <= 220 && element.offsetHeight < innerHeight * .25) {
+            element.classList.add("aporia-zweitleiste");
+        }
+    }
+    if (!handyAnsicht.matches) return;
+    for (const element of document.querySelectorAll(KLEBESPALTEN)) {
+        if (element.classList.contains("aporia-zweitleiste") || element.classList.contains("aporia-handy-statisch")) continue;
+        if (getComputedStyle(element).position === "sticky" && element.offsetHeight > innerHeight * .35) element.classList.add("aporia-handy-statisch");
     }
 }
 
