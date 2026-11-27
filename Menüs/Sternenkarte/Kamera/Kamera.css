@@ -49,3 +49,9 @@
     font: .75rem/1.3 monospace;
     overflow-wrap: anywhere;
 }
+
+/* Handy (Hochformat): kleine Achsen, Kameraposition ausgeblendet – mehr Platz für die Karte */
+@media (max-width: 760px) {
+    .camera-axes { width: 3.6rem; inset: .5rem .5rem auto auto; }
+    .camera-position { display: none; }
+}

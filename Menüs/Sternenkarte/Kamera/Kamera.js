@@ -254,7 +254,9 @@ export function erzeugeKamera(canvas, reset) {
         },
         fliegeZumObjekt,
         fokussiereGruppe(punkt, abstand, id, revision) {
-            gruppenStart = { ...START, target: punkt, distance: abstand };
+            // Hochformat (Handy): der Ausschnitt ist schmaler als hoch → weiter weg, damit die ganze Gruppe ins Bild passt
+            const hochformat = Math.max(1, canvas.clientHeight / Math.max(1, canvas.clientWidth));
+            gruppenStart = { ...START, target: punkt, distance: abstand * Math.min(hochformat, 2.4) };
             schluessel = id === "Kugel 1" ? RESET_KEY : RESET_KEY + "." + id + (revision ? "." + revision : "");
             ruecksetzpunkt = ladeRuecksetzpunkt(schluessel);
             setzeAnsicht(gruppenStart);

@@ -196,7 +196,7 @@ const BASIS_CSS = `/* Astralizes · Das Haus der Unergründlichen – gemeinsame
 .az-kopf-text { position: relative; z-index: 2; }
 
 /* Saalplan */
-.az-saalplan { position: sticky; top: calc(clamp(420px, 30vw, 490px) * .39 - 54px); z-index: 40; display: flex; align-items: center; gap: 1rem; padding: .55rem clamp(1rem, 3vw, 2rem); background: color-mix(in srgb, var(--az-schwarz) 82%, transparent); backdrop-filter: blur(14px) saturate(1.4); border-bottom: 1px solid #ffffff14; }
+.az-saalplan { position: sticky; top: var(--aporia-topbar-height, 78px); z-index: 40; display: flex; align-items: center; gap: 1rem; padding: .55rem clamp(1rem, 3vw, 2rem); background: color-mix(in srgb, var(--az-schwarz) 82%, transparent); backdrop-filter: blur(14px) saturate(1.4); border-bottom: 1px solid #ffffff14; }
 .az-saalplan-titel { display: flex; align-items: center; gap: .6rem; text-decoration: none; font: 300 1.25rem/1 var(--az-serif); letter-spacing: .18em; text-transform: uppercase; white-space: nowrap; }
 .az-saalplan-titel img { width: 40px; height: 40px; border-radius: 50%; object-fit: cover; animation: az-drehen 40s linear infinite; box-shadow: 0 0 18px #d9b87866; }
 .az-saalplan ol { display: flex; flex: 1 1 auto; min-width: 0; gap: .15rem; list-style: none; margin: 0; padding: 0; overflow-x: auto; scrollbar-width: thin; scrollbar-color: #d9b87855 transparent; }

@@ -143,11 +143,49 @@ function erfasseEndlosAnimationen() {
     }
 }
 
+// ---------- 4: Leisten am Handy ein-/ausklappen ----------
+// Beim Scrollen nach unten klappen Topbar und „zweite Leisten“ (klebende Seitennavigation wie Saalplan,
+// Kapitel-Reiter) weg, beim Scrollen nach oben kommen sie zurück. Zweite Leisten werden automatisch erkannt
+// (klebend/fest oben im Inhalt) und bekommen die Klasse .aporia-zweitleiste. CSS dazu: Top_bar.css.
+const handyAnsicht = matchMedia(HANDY_MEDIA);
+let letzteY = scrollY;
+let leistenWeg = false;
+
+function setzeLeisten(weg) {
+    if (weg === leistenWeg) return;
+    leistenWeg = weg;
+    document.documentElement.classList.toggle("aporia-leisten-weg", weg);
+}
+
+function menueOffen() {
+    const seitenleiste = document.querySelector("[data-aporia-sidebar]");
+    return document.querySelector(".aporia-topbar.is-menu-open, .aporia-content-disclosure[open]") || (seitenleiste && !seitenleiste.hidden);
+}
+
+addEventListener("scroll", () => {
+    const y = scrollY;
+    const schritt = y - letzteY;
+    if (!handyAnsicht.matches || y < 90 || menueOffen()) setzeLeisten(false);
+    else if (schritt > 12) setzeLeisten(true);
+    else if (schritt < -12) setzeLeisten(false);
+    if (Math.abs(schritt) > 12 || y < 90) letzteY = y;
+}, { passive: true });
+
+const ZWEITLEISTEN_KANDIDATEN = "main nav, main header, body > nav, body > header, [class*='reiter'], [class*='leiste'], [class*='saalplan'], [class*='navigation']";
+function erkenneZweitleisten() {
+    for (const element of document.querySelectorAll(ZWEITLEISTEN_KANDIDATEN)) {
+        if (element.classList.contains("aporia-zweitleiste") || element.closest(NAVIGATION)) continue;
+        const stil = getComputedStyle(element);
+        if ((stil.position === "sticky" || stil.position === "fixed") && parseFloat(stil.top) <= 220) element.classList.add("aporia-zweitleiste");
+    }
+}
+
 // ---------- Ablauf ----------
 function aktualisieren() {
     bearbeiteStylesheets();
     beobachteHoverElemente();
     erfasseEndlosAnimationen();
+    erkenneZweitleisten();
 }
 
 aktualisieren();

@@ -296,6 +296,15 @@ body[data-navigation-color="turquoise"] {
 
 /* HANDY-BEDINGUNG – gleich in Side_bar.css und adapter/aporia-handy.js (HANDY_MEDIA) */
 @media (max-width: 760px), (pointer: coarse) and (max-width: 1024px), (max-height: 500px) {
+    /* Leisten klappen beim Scrollen nach unten weg und kommen beim Scrollen nach oben zurück (aporia-handy.js) */
+    [data-aporia-topbar], .aporia-zweitleiste { transition: transform .28s ease, opacity .28s ease; }
+    .aporia-leisten-weg [data-aporia-topbar] { transform: translateY(calc(-100% - 7rem)); }
+    .aporia-leisten-weg .aporia-zweitleiste {
+        transform: translateY(calc(-100% - var(--aporia-topbar-height, 50px) - 2rem));
+        opacity: 0;
+        pointer-events: none;
+    }
+
     /* Eine Zeile: [Seitenleiste][APORIA] [Suche] [Menü] – die Navigation klappt darunter auf */
     .aporia-topbar {
         grid-template-columns: auto minmax(0, 1fr) auto;
