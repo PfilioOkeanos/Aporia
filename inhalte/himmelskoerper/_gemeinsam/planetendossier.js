@@ -355,6 +355,33 @@ if (kapitelSeite) {
     }
 }
 
+// ---------- Hauptseite: statt „Alle Kapitel“ ein Feld zum ersten Kapitel ----------
+// Die Kapitel stehen schon im Kapitelmenü (zweite Leiste). Der Abschnitt .pd-archiv bleibt im HTML,
+// weil die Kapitelseiten daraus ihre Bilder für „Vorheriges/Nächstes Kapitel“ lesen – er wird nur ausgeblendet.
+if (!kapitelSeite) {
+    const archiv = document.querySelector(".pd-archiv");
+    const kacheln = archiv ? [...archiv.querySelectorAll(".pd-kachel[href]")] : [];
+    if (archiv && kacheln.length) {
+        archiv.hidden = true;
+        const erstes = kacheln[0];
+        const nav = document.createElement("nav");
+        nav.className = "pd-blaettern pd-blaettern--start";
+        nav.setAttribute("aria-label", "Kapitel beginnen");
+        const weiter = document.createElement("a");
+        weiter.href = erstes.href;
+        weiter.className = "pd-blaettern-weiter";
+        const bild = erstes.querySelector("img");
+        if (bild) weiter.append(Object.assign(document.createElement("img"), { src: bild.currentSrc || bild.src, alt: "", loading: "lazy", decoding: "async" }));
+        weiter.insertAdjacentHTML("beforeend", "<small>Erstes Kapitel →</small><strong></strong>");
+        weiter.querySelector("strong").textContent = (erstes.querySelector("strong, h3, b")?.textContent || erstes.textContent).trim();
+        const mitte = document.createElement("span");
+        mitte.className = "pd-blaettern-mitte";
+        mitte.innerHTML = `<small>Kapitel</small><b>${kacheln.length}</b><small>im Dossier</small>`;
+        nav.append(mitte, weiter);
+        archiv.after(nav);
+    }
+}
+
 // ---------- Wissenssuche in Kapiteln (Filter über Faktenkarten) ----------
 for (const block of document.querySelectorAll(".erde-wissen")) {
     const feld = block.querySelector(".erde-wissen-suche");

@@ -142,12 +142,7 @@ ${karte("forschung", "Forschungsnotizen", "❧", "notiz", NOTIZ)}
 ${STATUS.map(([a, b]) => `                <div><span class="${P}-status-kopf"><span aria-hidden="true">${ICON[a]}</span>${esc(a)}</span><span class="${P}-status-wert">${esc(b)}</span></div>`).join("\n")}
             </section>
             ${B.dossierSteckbrief(s, { datei: "allgemein/allgemein.md", steckbrief: ["Speziesidentität"], beschreibung: ["Allgemeine Beschreibung"], mehr: "allgemeines" })}
-            <section class="${P}-themen" aria-labelledby="themen-titel">
-                <h2 class="${P}-h2 ${P}-h2--linie" id="themen-titel">Themenbereiche</h2>
-                <div class="${P}-themen-raster">
-${["allgemeines", "biologie", "entwicklung", "heimatwelt", "gesellschaft", "politik", "geschichte", "gameplay"].map(kachel).join("\n")}
-                </div>
-            </section>
+            <!-- Themenbereiche entfallen: dieselben Ziele stehen in der Reiter-Leiste (zweite Leiste) -->
             <section class="${P}-panel ${P}-block ${P}-karussell-block" id="bildarchiv" aria-labelledby="bildarchiv-titel">
                 ${B.titel("Bildarchiv", ALLE.length + " Bilder", "▣", "bildarchiv-titel")}
                 ${B.karussell(f, ALLE, { buehne: true, filter: true, autoplay: 7000, texte: TEXTE })}

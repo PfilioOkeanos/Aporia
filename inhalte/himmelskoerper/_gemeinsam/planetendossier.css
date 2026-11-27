@@ -651,3 +651,21 @@ body.planetendossier main { overflow-x: clip; }
 .pd-status { font-size: .85rem; color: var(--pd-sand); }
 .pd-kapitel-anker { position: absolute; inset-block-start: 0; scroll-margin-top: 7rem; }
 .pd-hero--ohne-globus { grid-template-columns: minmax(0, 1fr); }
+
+/* Hauptseite: Feld „Erstes Kapitel“ statt „Alle Kapitel“ (planetendossier.js) */
+.pd-blaettern--start { grid-template-columns: auto minmax(0, 1fr); }
+.pd-blaettern--start .pd-blaettern-mitte { padding: 1rem 1.2rem; border: 1px solid var(--pd-linie); border-radius: 16px; color: var(--pd-text); }
+
+/* Handy: Klapplisten im Kapitelmenü (Wissenschaft, Natur, Zivilisation, Weitere) passen in die Bildschirmbreite */
+@media (max-width: 760px) {
+    .planetendossier .earth-tabs { position: relative; }
+    .planetendossier .earth-tabs details { position: static; }
+    .planetendossier .earth-tabs ul {
+        left: .35rem; right: .35rem;
+        min-width: 0;
+        transform: none; translate: none;
+        max-height: 60dvh; overflow-y: auto;
+    }
+    .pd-blaettern--start { grid-template-columns: minmax(0, 1fr); }
+    .pd-blaettern--start .pd-blaettern-mitte { grid-auto-flow: column; min-height: 0; }
+}

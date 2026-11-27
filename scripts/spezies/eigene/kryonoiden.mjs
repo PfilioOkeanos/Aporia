@@ -163,19 +163,7 @@ ${DATEN.map(([a, b]) => `                        <div><dt><span aria-hidden="tru
                 </a>
             </div>
             ${B.dossierSteckbrief(s, { datei: "Allgemein/Allgemeines", steckbrief: ["Steckbrief"], beschreibung: ["Grundbeschreibung"], mehr: "biologie" })}
-            <section class="${P}-themen" aria-labelledby="themen-titel">
-                <h2 class="${P}-h2 ${P}-h2--linie" id="themen-titel">Archivbereiche</h2>
-                <div class="${P}-themen-raster">
-${kachel("heimatwelt", "Heimatwelt: Nivareth")}
-${kachel("kultur", "Kultur & Siedlungen")}
-${kachel("biologie", "Biologie & Adaption")}
-${kachel("technologie")}
-${kachel("psyche")}
-${kachel("historie")}
-${kachel("gameplay")}
-${kachel("medien")}
-                </div>
-            </section>
+            <!-- Themenbereiche entfallen: dieselben Ziele stehen in der Reiter-Leiste (zweite Leiste) -->
             <section class="${P}-panel ${P}-block ${P}-karussell-block" id="bildarchiv" aria-labelledby="bildarchiv-titel">
                 ${B.titel("Bildarchiv", ALLE.length + " Bilder", "▣", "bildarchiv-titel")}
                 ${B.karussell(f, ALLE, { buehne: true, filter: true, autoplay: 7000, texte: { Designtafel: "Designvorlage der Spezies", Dossiertafeln: "Dossiertafel aus dem Bildarchiv", "Szenen & Porträts": "Szene aus dem Bildarchiv", "Charakterentwürfe": "Charakterentwurf aus dem Bildarchiv" } })}

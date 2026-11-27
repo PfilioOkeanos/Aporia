@@ -124,12 +124,7 @@ B.medienSeite(B.S_.medien, { bilder: ALLE, klang: KLANG, modellRegion: "wirt", t
                 ${B.karussell(f, ALLE, { buehne: true, filter: true, autoplay: 7000, texte: TEXTE })}
             </section>
             ${B.dossierSteckbrief(s, { datei: "Allgemein/allgemein", steckbrief: ["Identifikation"], beschreibung: ["Grundbeschreibung"], mehr: "allgemeines" })}
-            <section class="${P}-themen" aria-labelledby="themen-titel">
-                <h2 class="${P}-h2 ${P}-h2--linie" id="themen-titel">Themenbereiche</h2>
-                <div class="${P}-themen-raster">
-${["allgemeines", "biologie", "entwicklung", "heimatwelt", "gesellschaft", "politik", "geschichte", "gameplay"].map(kachel).join("\n")}
-                </div>
-            </section>
+            <!-- Themenbereiche entfallen: dieselben Ziele stehen in der Reiter-Leiste (zweite Leiste) -->
             <div class="${P}-fuss-raster ${P}-fuss-raster--eins">
                 <section class="${P}-panel ${P}-block ${P}-klangleiste" aria-labelledby="klang-titel">
                     ${B.titel("Klangarchiv", klangAnzahl + " Klänge", "♪", "klang-titel")}

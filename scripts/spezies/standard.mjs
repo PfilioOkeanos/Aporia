@@ -205,12 +205,7 @@ export function baueStandard(cfg) {
                 </section>
             </div>
             ${steck ? B.dossierSteckbrief(s, { datei: steck.datei, steckbrief: [steck.titel], beschreibung: beschr && beschr.datei === steck.datei ? [beschr.titel] : null, mehr: "allgemeines" }) : ""}
-            <section class="${P}-themen" aria-labelledby="themen-titel">
-                <h2 class="${P}-h2 ${P}-h2--linie" id="themen-titel">Themenbereiche</h2>
-                <div class="${P}-themen-raster">
-${["allgemeines", "biologie", "entwicklung", "heimatwelt", "gesellschaft", "politik", "geschichte", "gameplay"].map(kachel).join("\n")}
-                </div>
-            </section>
+            <!-- Themenbereiche entfallen: dieselben Ziele stehen in der Reiter-Leiste (zweite Leiste) -->
 ${BILDER.length ? `            <section class="${P}-panel ${P}-block ${P}-karussell-block" id="bildarchiv" aria-labelledby="bildarchiv-titel">
                 ${B.titel("Bildarchiv", BILDER.length + " Bilder", "▣", "bildarchiv-titel")}
                 ${B.karussell(f, BILDER, { buehne: true, filter: true, autoplay: 7000 })}

@@ -643,3 +643,11 @@
 @media (prefers-reduced-motion: reduce) {
     .noe-ambient { animation: none; }
 }
+
+/* Handy: große Titel passen in die Breite (weite Laufweite nur auf großen Bildschirmen) */
+@media (max-width: 760px) {
+    .noe-hero h1 { max-width: 100%; letter-spacing: .1em; font-size: clamp(1.7rem, 9vw, 2.8rem); }
+    .noe-hero--reiter h1 { font-size: clamp(1.6rem, 8.5vw, 2.6rem); }
+    .noe-subtitle { letter-spacing: .12em; }
+    .noe-kicker { letter-spacing: .14em; flex-wrap: wrap; }
+}

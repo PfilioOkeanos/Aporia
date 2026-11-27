@@ -424,12 +424,7 @@ ${varianten.map((v) => `                    ${klapp(esc(v.titel.replace(/^\d+(\.
                 ${titel("Bildarchiv", ALLE.length + " Bilder", "▣", "bildarchiv-titel")}
                 ${karussell(f, ALLE, { buehne: true, filter: true, autoplay: 7000, texte: { Designtafel: "Offizielle Designvorlage der Spezies", Konzepttafeln: "Konzepttafel aus dem Bildarchiv", "Piratenentwürfe": "Charakterentwurf aus dem Bildarchiv" } })}
             </section>
-            <section class="pl-themen" aria-labelledby="themen-titel">
-                <h2 class="pl-h2 pl-h2--linie" id="themen-titel">Themenbereiche: Plasmoiden im Überblick</h2>
-                <div class="pl-themen-raster">
-${["allgemeines", "biologie", "entwicklung", "heimatwelt", "gesellschaft", "politik", "geschichte", "gameplay"].map(kachel).join("\n")}
-                </div>
-            </section>
+            <!-- Themenbereiche entfallen: dieselben Ziele stehen in der Reiter-Leiste (zweite Leiste) -->
             <section class="pl-welt" aria-labelledby="welt-titel">
                 ${ausschnitt(f, "hoehle", "pl-welt-bild")}
                 <div class="pl-welt-text">

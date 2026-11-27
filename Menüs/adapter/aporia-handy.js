@@ -159,7 +159,7 @@ export function setzeLeistenZu(zu) {
 try { if (localStorage.getItem(LEISTEN_SCHLUESSEL) === "ja") document.documentElement.classList.add("aporia-leisten-zu"); } catch { /* ohne Speicher: offen */ }
 
 // Spezies-Reiter (Übersicht · Allgemeines · Biologie …) sind immer zweite Leisten
-const REITERLEISTEN = ".dossier-seitennavigation, nav[class$='-reiter']";
+const REITERLEISTEN = ".dossier-seitennavigation, nav[class$='-reiter'], nav[class*='-reiter ']";
 const ZWEITLEISTEN_KANDIDATEN = "main nav, main header, body > nav, body > header, [class*='reiter'], [class*='leiste'], [class*='saalplan'], [class*='navigation']";
 // Hohe klebende Seitenspalten (Kapitel, Sprungmarken) – in der einspaltigen Handy-Ansicht nicht kleben lassen
 const KLEBESPALTEN = "main aside, main nav, main [class*='chapter'], main [class*='rail'], main [class*='jump'], main [class*='sprung'], main [class*='kapitel']";

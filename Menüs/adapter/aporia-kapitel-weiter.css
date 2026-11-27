@@ -1,0 +1,72 @@
+/* APORIA · Kapitel blättern am Seitenende (aporia-kapitel-weiter.js) – Vorbild: Planeten-Unterseiten (.pd-blaettern) */
+.aporia-kapitel {
+    --kapitel-akzent: #d9b878;
+    --kapitel-text: #f3ecdf;
+    --kapitel-nacht: #090c12;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: stretch;
+    gap: 1rem;
+    margin: 2.5rem 0 1.5rem;
+    font-family: Georgia, serif;
+}
+.aporia-kapitel a {
+    position: relative;
+    display: grid;
+    align-content: end;
+    gap: .3rem;
+    min-height: 8.5rem;
+    overflow: hidden;
+    isolation: isolate;
+    padding: 1rem 1.2rem;
+    border: 1px solid color-mix(in srgb, var(--kapitel-akzent) 35%, transparent);
+    border-radius: 16px;
+    background: var(--kapitel-nacht);
+    color: var(--kapitel-text) !important;
+    text-decoration: none;
+    transition: border-color .3s, transform .3s;
+}
+.aporia-kapitel a img {
+    position: absolute; inset: 0; z-index: -2;
+    width: 100%; height: 100%; object-fit: cover;
+    opacity: .5;
+    transition: opacity .3s, transform .8s;
+}
+.aporia-kapitel a::before {
+    content: ""; position: absolute; inset: 0; z-index: -1;
+    background: linear-gradient(90deg, color-mix(in srgb, var(--kapitel-nacht) 92%, transparent), color-mix(in srgb, var(--kapitel-nacht) 45%, transparent));
+}
+.aporia-kapitel .aporia-kapitel-weiter::before {
+    background: linear-gradient(270deg, color-mix(in srgb, var(--kapitel-nacht) 92%, transparent), color-mix(in srgb, var(--kapitel-nacht) 45%, transparent));
+}
+.aporia-kapitel a:hover { border-color: var(--kapitel-akzent); transform: translateY(-3px); }
+.aporia-kapitel a:hover img { opacity: .8; transform: scale(1.05); }
+.aporia-kapitel small {
+    color: var(--kapitel-akzent);
+    font: 600 .66rem/1.2 system-ui, sans-serif;
+    letter-spacing: .22em;
+    text-transform: uppercase;
+}
+.aporia-kapitel strong { font: 300 1.4rem/1.15 Georgia, serif; }
+.aporia-kapitel .aporia-kapitel-weiter { text-align: right; }
+.aporia-kapitel .aporia-kapitel-mitte {
+    place-items: center; align-content: center;
+    min-width: 9rem;
+    text-align: center;
+}
+.aporia-kapitel-mitte b { font: 300 2rem/1 ui-monospace, monospace; color: var(--kapitel-akzent); }
+
+@media (max-width: 760px) {
+    .aporia-kapitel { grid-template-columns: minmax(0, 1fr); gap: .7rem; }
+    .aporia-kapitel a { min-height: 6.5rem; }
+    .aporia-kapitel .aporia-kapitel-mitte { min-height: 0; grid-auto-flow: column; gap: .8rem; padding: .7rem 1rem; }
+    .aporia-kapitel .aporia-kapitel-mitte b { font-size: 1.3rem; }
+    .aporia-kapitel .aporia-kapitel-weiter { order: -1; }   /* am Handy steht „Weiter“ zuerst */
+}
+@media (prefers-reduced-motion: reduce) {
+    .aporia-kapitel a, .aporia-kapitel a img { transition: none; }
+}
+
+/* Übersicht (Kapitel 1): nur Kapitelzähler und „Nächstes Kapitel“ */
+.aporia-kapitel--start { grid-template-columns: auto minmax(0, 1fr); }
+@media (max-width: 760px) { .aporia-kapitel--start { grid-template-columns: minmax(0, 1fr); } }

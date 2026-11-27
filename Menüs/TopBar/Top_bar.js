@@ -9,6 +9,8 @@
 /* Handy-Schicht zuerst: Animationen-Schalter, Touch-Ersatz für Hover, Leistung (siehe adapter/aporia-handy.js) */
 import { HANDY_MEDIA, leistenZu, setzeLeistenZu } from "../adapter/aporia-handy.js";
 import "../Side_bar/side_bar.js";
+/* Kapitel blättern am Seitenende (Seiten mit Reiter-Leiste) */
+import "../adapter/aporia-kapitel-weiter.js";
 import {
     applyAporiaRoutes,
     celestialCategories,
