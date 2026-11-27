@@ -89,12 +89,26 @@ const umschreiben = (text) => {
     if (ffmpeg) t = t.replace(/([^\s"'`()<>]*?)\.wav\b/gi, (m, vor) => /^(https?:)?\/\//i.test(vor) ? m : `${vor}.mp3`);
     return t;
 };
+// CSS-Variablen mit Bildpfad (z. B. style="--art:url('../../bild.webp')"): Browser lösen den Pfad dort auf,
+// wo die Variable benutzt wird (oft eine CSS-Datei in einem anderen Ordner). Lokal fällt das nicht auf,
+// weil die Seite im Hauptordner liegt – online im Unterordner /Aporia/ zeigt der Pfad ins Leere.
+// Darum werden solche Pfade in feste Pfade ab der Website-Wurzel umgeschrieben.
+const BASIS = (process.env.PAGES_BASE ?? "/Aporia/").replace(/\/?$/, "/");
+const VARIABLE = /(--[\w-]+\s*:\s*)((?:url\(\s*(?:'[^']*'|"[^"]*"|[^)]*)\s*\)|[^;}"<>])*)/g;
+const URL_IN = /url\(\s*(['"]?)([^'")]+)\1\s*\)/g;
+const variablenPfade = (text, rel) => text.replace(VARIABLE, (m, kopf, wert) => kopf + wert.replace(URL_IN, (u, q, pfad) => {
+    if (/^(?:[a-z]+:|\/|#|var\()/i.test(pfad.trim())) return u;
+    const fest = BASIS + path.posix.normalize(path.posix.join(path.posix.dirname(rel), pfad.trim()));
+    return fest.includes("/../") ? u : `url(${q}${fest}${q})`;
+}));
+
 const alle = walk(ZIEL);
 let geaendert = 0;
 for (const p of alle) {
     if (!TEXT.test(p)) continue;
     const alt = fs.readFileSync(p, "utf8");
     let neu = umschreiben(alt);
+    if (/\.(html?|css)$/i.test(p)) neu = variablenPfade(neu, path.relative(ZIEL, p).split(path.sep).join("/"));
     // Import-Map: Server-Pfad /_aporia/three/ → relativer Pfad (die Website liegt online in einem Unterordner)
     if (neu.includes("\"/_aporia/three/")) {
         const vor = path.posix.relative(path.posix.dirname(path.relative(ZIEL, p).split(path.sep).join("/")), "_aporia/three") + "/";
@@ -135,7 +149,7 @@ for (const p of liste) {
         if (!u) continue;
         let ziel;
         try { ziel = path.posix.normalize(path.posix.join(path.posix.dirname(rel), decodeURIComponent(u))).normalize("NFC"); } catch { continue; }
-        if (u.startsWith("/")) ziel = u.slice(1);
+        if (u.startsWith("/")) { try { ziel = decodeURIComponent(u.startsWith(BASIS) ? u.slice(BASIS.length) : u.slice(1)).normalize("NFC"); } catch { continue; } }
         if (ziel.startsWith("..")) { defekt.set(rel + " → " + u, true); continue; }
         if (!vorhanden.has(ziel) && !ordner.has(ziel.replace(/\/$/, ""))) defekt.set(rel + " → " + u, true);
     }
