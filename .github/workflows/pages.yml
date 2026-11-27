@@ -21,6 +21,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      # Das Repo ist ca. 6 GB groß – vorinstallierte, ungenutzte Software entfernen, damit Platz ist
+      - name: Speicherplatz freigeben
+        run: |
+          sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc /opt/hostedtoolcache/CodeQL /usr/local/share/boost "$AGENT_TOOLSDIRECTORY"
+          sudo docker image prune --all --force >/dev/null 2>&1 || true
+          df -h /
+
       - name: Repo auschecken
         uses: actions/checkout@v4
         with:
@@ -41,6 +48,12 @@ jobs:
 
       - name: Webfassung bauen
         run: node scripts/web/webseite-bauen.mjs
+
+      # Originale und Git-Daten werden nach dem Bauen nicht mehr gebraucht – Platz für das Upload-Paket
+      - name: Aufräumen vor dem Hochladen
+        run: |
+          rm -rf .git assets inhalte Info_material Menüs node_modules
+          df -h /
 
       - name: Pages-Artefakt hochladen
         uses: actions/upload-pages-artifact@v3
