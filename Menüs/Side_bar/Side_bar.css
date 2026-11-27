@@ -494,7 +494,8 @@ body.is-resizing-sidebar, body.is-resizing-sidebar * {
     cursor: col-resize !important;
     user-select: none !important;
 }
-@media (max-width: 760px) {
+/* HANDY-BEDINGUNG – gleich in Top_bar.css und adapter/aporia-handy.js (HANDY_MEDIA) */
+@media (max-width: 760px), (pointer: coarse) and (max-width: 1024px), (max-height: 500px) {
     /* Handy: Seitenleiste als Seitenmenü über dem Inhalt (Knopf links in der Topbar) */
     #aporia-sidebar-host,
     .aporia-auto-page-frame > #aporia-sidebar-host[data-sidebar-auto="true"] {
@@ -517,6 +518,10 @@ body.is-resizing-sidebar, body.is-resizing-sidebar * {
         width: calc(100% - var(--sidebar-inset));
         height: calc(100% - 2 * var(--sidebar-inset));
         max-height: none;
+        /* dichter Hintergrund: Inhalt dahinter soll nicht durchscheinen */
+        background-color: color-mix(in srgb, var(--aporia-glass-dark, #18161a) 88%, #000);
+        backdrop-filter: blur(14px) saturate(1.1);
+        -webkit-backdrop-filter: blur(14px) saturate(1.1);
     }
     .aporia-sidebar-resizer { display: none; }
     .aporia-sidebar { --sidebar-inset: 4px; border-radius: .8rem 1.25rem 1.25rem .8rem; }

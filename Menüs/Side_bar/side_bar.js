@@ -1,4 +1,4 @@
-import "../adapter/aporia-handy.js";
+import { HANDY_MEDIA } from "../adapter/aporia-handy.js";
 import { animationenAn, setzeAnimationen } from "../adapter/aporia-bewegung.js";
 import { initializeSidebarDetails } from "./sidebar-details.js";
 
@@ -152,7 +152,7 @@ function initializeSidebarResize(host) {
     }
 
     handle.addEventListener("pointerdown", event => {
-        if (window.matchMedia("(max-width: 760px)").matches) return;
+        if (window.matchMedia(HANDY_MEDIA).matches) return;
         event.preventDefault();
         const currentWidth = host.getBoundingClientRect().width;
         dragState = { pointerId: event.pointerId, startX: event.clientX, width: currentWidth };

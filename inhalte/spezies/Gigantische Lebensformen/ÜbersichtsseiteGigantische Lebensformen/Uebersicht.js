@@ -3,6 +3,7 @@ import { applyAporiaRoutes } from "../../../../Menüs/adapter/aporia-routes.js";
 import "../../../../Menüs/TopBar/Top_bar.js";
 import "../../../../Menüs/Side_bar/side_bar.js";
 import { bewegungReduziert } from "../../../../Menüs/adapter/aporia-bewegung.js";
+import { beobachteMitte } from "../../../../Menüs/adapter/aporia-handy.js";
 
 const main = document.querySelector(".species-group-main");
 const grid = main.querySelector(".species-category-grid");
@@ -101,6 +102,8 @@ for (const logo of grid.querySelectorAll("[data-animated-src]")) {
     const stop = () => { hovered = false; syncLogo(); };
     card.addEventListener("pointerleave", stop);
     card.addEventListener("pointercancel", stop);
+    // Handy: Logo animiert, solange die Karte in der Bildschirmmitte steht
+    beobachteMitte(card, aktiv => { hovered = aktiv; syncLogo(); });
     observeMediaVisibility(logo, current => {
         visible = current;
         if (!visible) hovered = false;

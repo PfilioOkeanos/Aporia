@@ -294,7 +294,8 @@ body[data-navigation-color="turquoise"] {
 /* Menü-Knopf: nur auf dem Handy sichtbar */
 .aporia-menu-toggle { display: none; }
 
-@media (max-width: 760px) {
+/* HANDY-BEDINGUNG – gleich in Side_bar.css und adapter/aporia-handy.js (HANDY_MEDIA) */
+@media (max-width: 760px), (pointer: coarse) and (max-width: 1024px), (max-height: 500px) {
     /* Eine Zeile: [Seitenleiste][APORIA] [Suche] [Menü] – die Navigation klappt darunter auf */
     .aporia-topbar {
         grid-template-columns: auto minmax(0, 1fr) auto;

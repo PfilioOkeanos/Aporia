@@ -348,6 +348,14 @@ body.home-page {
 /* Emblem: Neigung zur Maus und leuchtender Ring */
 .home-universe-art { position: relative; perspective: 1200px; }
 .home-universe-art img { transform: rotateX(var(--neigung-x, 0deg)) rotateY(var(--neigung-y, 0deg)); transition: transform .4s cubic-bezier(.2, .7, .2, 1); will-change: transform; }
+/* Handy (ohne Maus): Emblem schwebt sanft statt der Maus zu folgen */
+.home-neigung-auto img { animation: home-schweben 11s ease-in-out infinite; }
+@keyframes home-schweben {
+    0%, 100% { transform: rotateX(3deg) rotateY(-5deg) translateY(0); }
+    25% { transform: rotateX(-2deg) rotateY(4deg) translateY(-6px); }
+    50% { transform: rotateX(-4deg) rotateY(6deg) translateY(-2px); }
+    75% { transform: rotateX(2deg) rotateY(-3deg) translateY(-7px); }
+}
 .home-emblem-ring { position: absolute; z-index: -1; width: min(70%, 34rem); aspect-ratio: 1; border-radius: 50%; background: conic-gradient(from 0deg, transparent, #dbb47755, transparent 30%, #7fb0ff44, transparent 60%, #dbb47744, transparent); filter: blur(18px); animation: home-drehen 24s linear infinite; }
 @keyframes home-drehen { to { transform: rotate(360deg); } }
 

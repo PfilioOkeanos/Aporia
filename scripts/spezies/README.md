@@ -56,5 +56,7 @@ Es gibt **eine** Website für PC und Handy. Die Handy-Anpassungen hängen zentra
 - `Menüs/adapter/aporia-bewegung.js` – Schalter „Animationen“ (Seitenleiste → Darstellung). CSS schreibt weiter `@media (prefers-reduced-motion: reduce) { … }`; das wird automatisch auf den Schalter umgestellt. Die Geräteeinstellung gilt nur beim ersten Besuch als Vorschlag.
   JavaScript fragt **nicht** `matchMedia("(prefers-reduced-motion…)")`, sondern `import { bewegungReduziert } from ".../Menüs/adapter/aporia-bewegung.js"` (gleiche Form: `.matches`, `"change"`).
 - **Hover am Handy:** Jede `:hover`-Regel bekommt auf Touch-Geräten eine Zwillingsregel mit `.ist-aktiv`. Elemente im Inhalt erhalten `.ist-aktiv`, solange sie in der Bildschirmmitte stehen oder angetippt wurden. Ausnahme setzen: `data-ohne-touch-aktiv`. Am PC testen: `?touch-test` an die Adresse hängen.
-- Topbar am Handy: eine Zeile mit Menü-Knopf; Seitenleiste als ausklappbares Seitenmenü.
+- **Hover in JavaScript** (z. B. animierte Logos): `import { istTouch, beobachteMitte } from ".../Menüs/adapter/aporia-handy.js"` – `beobachteMitte(karte, aktiv => …)` meldet am Handy, ob die Karte in der Bildschirmmitte steht.
+- Topbar am Handy: eine Zeile mit Menü-Knopf; Seitenleiste als ausklappbares Seitenmenü. Wann die Handy-Ansicht gilt, steht in `HANDY_MEDIA` (aporia-handy.js) und gleichlautend in `Top_bar.css`/`Side_bar.css`: schmal, Touch bis 1024 px oder Handy quer.
+- Inhalts-Übersichten (`inhalte/Archivansicht.css`): am Handy dieselbe Szene wie am PC, bildschirmhoch und seitlich zu wischen.
 - Prüfen: `node scripts/web/handy-pruefen.mjs` meldet Seiten ohne Topbar, direkte Abfragen von „Bewegung reduzieren“ und Skripte, die nur auf Mausbewegung reagieren.

@@ -1,6 +1,7 @@
 
 import { observeMediaVisibility } from "../../../Menüs/adapter/aporia-media-visibility.js";
 import { bewegungReduziert } from "../../../Menüs/adapter/aporia-bewegung.js";
+import { istTouch, beobachteMitte } from "../../../Menüs/adapter/aporia-handy.js";
 
 // Originale, gezeichnete Motive. Die zweite Ebene bestimmt, wie das Motiv
 // aus seiner Umgebung hervorgeht: z. B. Wurzeln, Gestein, Wasser oder Leiterbahnen.
@@ -201,7 +202,7 @@ for (const card of document.querySelectorAll("[data-spezies-emblem]")) {
         detail: new Path2D(engraving), metal, light, family, index, entered: 0 };
     let pointerOver = false;
     let onScreen = false;
-    const sync = () => setMotion(logo, pointerOver && onScreen && canHover.matches && !reducedMotion.matches);
+    const sync = () => setMotion(logo, pointerOver && onScreen && (canHover.matches || istTouch) && !reducedMotion.matches);
     draw(logo);
     card.addEventListener("pointerenter", event => {
         pointerOver = event.pointerType === "mouse";
@@ -210,6 +211,8 @@ for (const card of document.querySelectorAll("[data-spezies-emblem]")) {
     const stop = () => { pointerOver = false; sync(); };
     card.addEventListener("pointerleave", stop);
     card.addEventListener("pointercancel", stop);
+    // Handy: Emblem bewegt sich, solange die Karte in der Bildschirmmitte steht
+    beobachteMitte(card, aktiv => { pointerOver = aktiv; sync(); });
     reducedMotion.addEventListener("change", sync);
     canHover.addEventListener("change", sync);
     if ("IntersectionObserver" in window) {

@@ -6,6 +6,7 @@ import { starteArchivsuche } from "../adapter/aporia-archivsuche.js";
 import "../TopBar/Top_bar.js";
 import "../Side_bar/side_bar.js";
 import { bewegungReduziert } from "../adapter/aporia-bewegung.js";
+import { istTouch } from "../adapter/aporia-handy.js";
 
 const ruhig = bewegungReduziert.matches;
 const zahlFormat = new Intl.NumberFormat("de-DE");
@@ -56,6 +57,8 @@ if (leinwand && !ruhig) {
     const male = (zeit) => {
         requestAnimationFrame(male);
         if (!sichtbar || document.hidden) return;
+        // Handy (keine Maus): das Sternenfeld treibt langsam von selbst
+        if (istTouch) { zielX = Math.sin(zeit / 9000) * .45; zielY = Math.cos(zeit / 12000) * .35; }
         mausX += (zielX - mausX) * .05; mausY += (zielY - mausY) * .05;
         ctx.clearRect(0, 0, breite, hoehe);
         for (const s of sterne) {
@@ -71,7 +74,7 @@ if (leinwand && !ruhig) {
 
 // ---------- Emblem neigt sich zur Maus ----------
 const emblem = document.querySelector("[data-home-neigung]");
-if (emblem && !ruhig && matchMedia("(pointer: fine)").matches) {
+if (emblem && !ruhig && !istTouch && matchMedia("(pointer: fine)").matches) {
     const bereich = emblem.closest(".home-universe");
     bereich.addEventListener("pointermove", (e) => {
         const r = emblem.getBoundingClientRect();
@@ -80,6 +83,9 @@ if (emblem && !ruhig && matchMedia("(pointer: fine)").matches) {
         emblem.style.setProperty("--neigung-y", (x * 9).toFixed(2) + "deg");
     });
     bereich.addEventListener("pointerleave", () => { emblem.style.removeProperty("--neigung-x"); emblem.style.removeProperty("--neigung-y"); });
+} else if (emblem && !ruhig) {
+    // Handy: Emblem schwebt sanft (CSS-Animation home-schweben)
+    emblem.classList.add("home-neigung-auto");
 }
 
 // ---------- Bereiche blenden beim Scrollen ein ----------

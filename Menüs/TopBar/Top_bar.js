@@ -7,7 +7,7 @@
 /* 01 - ROUTENVERWALTUNG IMPORTIEREN */
 
 /* Handy-Schicht zuerst: Animationen-Schalter, Touch-Ersatz für Hover, Leistung (siehe adapter/aporia-handy.js) */
-import "../adapter/aporia-handy.js";
+import { HANDY_MEDIA } from "../adapter/aporia-handy.js";
 import "../Side_bar/side_bar.js";
 import {
     applyAporiaRoutes,
@@ -418,7 +418,7 @@ function initializeSidebarToggle() {
     if (!button || !sidebar) return;
 
     // Handy: Seitenleiste ist ein ausklappbares Seitenmenü und startet eingeklappt
-    const mobil = matchMedia("(max-width: 760px)").matches;
+    const mobil = matchMedia(HANDY_MEDIA).matches;
     const compactDossier = mobil && document.querySelector("main nav:is([class$='-reiter'], .thl-reiterleiste, .dossier-seitennavigation)");
     const preference = mobil ? "aporia.sidebar.mobile.collapsed" : "aporia.sidebar.collapsed";
     sidebar.id = "aporia-sidebar-host";

@@ -9,7 +9,5 @@
 @media (prefers-reduced-motion: no-preference) {
   .scene-link .lettering { transition: opacity .16s ease; }
 }
-@media (max-width: 760px) {
-  .scene-link img.lettering { display: none; }
-  .scene-link:is(:hover,:focus-visible,:active) span { color: #fff3cf; text-shadow: 0 0 .5rem #ffc870; }
-}
+/* Handy: Szene bleibt wie am PC (siehe Archivansicht.css); die Leuchtschrift erscheint,
+   wenn eine Fläche in der Bildschirmmitte steht oder angetippt wird (.ist-aktiv aus der Handy-Schicht) */

@@ -11,10 +11,31 @@
 
 import { stelleBewegungsregelnUm, teileSelektoren, bewegungReduziert } from "./aporia-bewegung.js";
 
+// Wann gilt die Handy-Ansicht (Topbar mit Menü-Knopf, Seitenleiste als Seitenmenü)?
+// Schmaler Bildschirm, Touch-Gerät bis Tablet-Breite oder sehr niedrige Höhe (Handy quer).
+// Dieselbe Bedingung steht in Top_bar.css und Side_bar.css (CSS kann keine JS-Konstanten lesen).
+export const HANDY_MEDIA = "(max-width: 760px), (pointer: coarse) and (max-width: 1024px), (max-height: 500px)";
+
 // ?touch-test in der Adresse erzwingt das Touch-Verhalten am PC (zum Ausprobieren)
 const TOUCH = matchMedia("(hover: none)").matches || new URLSearchParams(location.search).has("touch-test");
 const KLASSE = "ist-aktiv";
 const NAVIGATION = ".aporia-topbar, [data-aporia-topbar], #aporia-sidebar-host, [data-aporia-sidebar], [data-ohne-touch-aktiv]";
+
+// ---------- Für Skripte: Touch-Gerät? Element in der Bildschirmmitte? ----------
+// Ersatz für Maus-Hover in JavaScript:
+//   import { istTouch, beobachteMitte } from ".../Menüs/adapter/aporia-handy.js";
+//   beobachteMitte(karte, aktiv => { … Animation starten/stoppen … });   // ruft nur auf Touch-Geräten auf
+export const istTouch = TOUCH;
+const mitteRueckrufe = new WeakMap();
+const mitteSkripte = TOUCH ? new IntersectionObserver(eintraege => {
+    for (const e of eintraege) for (const fn of mitteRueckrufe.get(e.target) ?? []) fn(e.isIntersecting);
+}, { rootMargin: "-30% 0px -30% 0px" }) : null;
+export function beobachteMitte(element, rueckruf) {
+    if (!mitteSkripte || !element) return;
+    let liste = mitteRueckrufe.get(element);
+    if (!liste) { liste = []; mitteRueckrufe.set(element, liste); mitteSkripte.observe(element); }
+    liste.push(rueckruf);
+}
 
 // ---------- 1 + 2: Stylesheets einmal bearbeiten ----------
 const hoverBasen = new Set();

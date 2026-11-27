@@ -21,25 +21,28 @@ main h1, .scene-link span {
 .scene-link:active { transform: translateY(2px) scale(.985); filter: brightness(.83); }
 .related { display: flex; gap: 1.5rem; flex-wrap: wrap; padding: 1rem 3vw; }
 .related a, .scene-link { color: inherit; }
+/* Handy: dieselbe Szene wie am PC – bildschirmhoch und seitlich zu durchwischen (Panorama) */
 @media (max-width: 760px) {
-  main h1, .scene-link span {
-    position: static; width: auto; height: auto; overflow: visible;
-    clip-path: none; white-space: normal;
+  main {
+    overflow-x: auto; overflow-y: hidden;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    scrollbar-width: none;
   }
-  main h1 { padding: 1.25rem 1rem; font-size: clamp(1.8rem,7vw,3rem); font-weight: 400; }
+  main::-webkit-scrollbar { display: none; }
+  /* Der Titel steht schon im Bild – nur ein kleiner Hinweis zum Wischen bleibt fest stehen */
+  main::before {
+    content: "← seitlich wischen →";
+    position: sticky; left: 0; display: block; width: 100vw; box-sizing: border-box;
+    padding: .55rem 1rem;
+    font: .75rem/1.3 system-ui, sans-serif; letter-spacing: .06em; text-align: center;
+    color: #f4eadbb0;
+  }
   .scene {
-    display: grid; gap: .65rem; padding: 0 1rem 1rem;
-    background: none; aspect-ratio: auto !important;
+    display: inline-block; vertical-align: top;
+    height: min(calc(100dvh - var(--aporia-topbar-height, 50px) - 2.2rem), 40rem); width: auto;
   }
-  .scene-link {
-    position: static; width: auto !important; height: auto !important;
-    display: flex; align-items: center; gap: .8rem;
-    clip-path: none; background: #282623; text-decoration: none;
-    border: 1px solid #534e45; font-size: clamp(1rem,4.5vw,1.35rem);
-  }
-  .scene-link img { display: block; width: 26%; height: 5rem; object-fit: cover; }
-  .scene-link::after { content: "→"; margin-left: auto; padding-right: .7rem; }
-  .scene-link:focus-visible::after { position: static; background: none; }
+  .scene-link { scroll-snap-align: center; }
 }
 @media (prefers-reduced-motion: reduce) {
   .scene-link { transition: none; }
