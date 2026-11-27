@@ -37,3 +37,12 @@ In `spezies.json` unter `standard` eine Zeile ergänzen: `{ "gruppe": "…", "or
 Seiten (HTML/CSS/JS) und `<spezies>-basis.css/js` der Spezies, fehlende Unterseiten-Routen in `Menüs/adapter/aporia-routes.js`, den Klang-/Videoblock in `medien.json` (nur Blöcke mit `"_baukasten": true`, von Hand gepflegte bleiben unverändert) und auf der Übersichtskarte Link, eigenes Bild und „Offen“-Werte aus dem Steckbrief.
 
 Gemeinsame Bausteine: `inhalte/spezies/_gemeinsam/` (`spezies-standard.css`, `bilder-karussell.*`, `klangarchiv.*`, `medien-player.*`, `galerie-zoom.js`).
+
+## Website online (GitHub Pages)
+
+Die Website ist unter **https://pfiliookeanos.github.io/Aporia/** erreichbar (z. B. am Handy).
+
+- Bei jedem Push auf `main` baut die GitHub Action `.github/workflows/pages.yml` mit `scripts/web/webseite-bauen.mjs` eine verkleinerte Webfassung (`_site/`) und veröffentlicht sie. Das Repo selbst bleibt unverändert.
+- Webfassung: PNG → WebP (max. 1.400 px), große JPG und WebP verkleinert, WAV → MP3; Verweise werden automatisch umgeschrieben. Grenze von GitHub Pages: 1 GB.
+- Lokaler Probelauf: `npm install --no-save sharp` und `node scripts/web/webseite-bauen.mjs` (ohne ffmpeg bleiben WAV-Dateien erhalten).
+- Online nicht verfügbar: Funktionen des lokalen Servers (z. B. 3D-Modelle hochladen) und die FBX-Modelle aus Git LFS. Suchmaschinen sind über `robots.txt` ausgesperrt.

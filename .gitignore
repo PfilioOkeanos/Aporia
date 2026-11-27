@@ -2,3 +2,9 @@ node_modules/
 
 # Testscreenshots und Protokolle der Browser-Tests
 .playwright-mcp/
+
+# Webfassung für GitHub Pages (wird in der Action gebaut)
+_site/
+
+# Lokale Werkzeugeinstellungen
+.codex/
