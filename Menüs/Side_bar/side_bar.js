@@ -1,3 +1,5 @@
+import "../adapter/aporia-handy.js";
+import { animationenAn, setzeAnimationen } from "../adapter/aporia-bewegung.js";
 import { initializeSidebarDetails } from "./sidebar-details.js";
 
 /* ================================================= */
@@ -336,6 +338,13 @@ async function loadAporiaSidebar() {
         /* ========================================= */
         /* 08 - ERFOLGSMELDUNG                       */
         /* ========================================= */
+
+        /* Schalter „Animationen“ (Handy-Schicht, siehe adapter/aporia-bewegung.js) */
+        const schalter = sidebarHost.querySelector("[data-animationen-schalter]");
+        if (schalter) {
+            schalter.checked = animationenAn();
+            schalter.addEventListener("change", () => setzeAnimationen(schalter.checked));
+        }
 
         console.log(
             "APORIA: Sidebar erfolgreich geladen."

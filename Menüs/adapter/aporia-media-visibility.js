@@ -1,3 +1,4 @@
+import { bewegungReduziert } from "./aporia-bewegung.js";
 export function observeMediaVisibility(element, update) {
     let intersecting = false;
     let pageActive = true;
@@ -19,7 +20,7 @@ export function observeMediaVisibility(element, update) {
 }
 
 export function loadVisibleLoop(video, container, source, toggle) {
-    const motion = matchMedia("(prefers-reduced-motion: reduce)");
+    const motion = bewegungReduziert;
     let visible = false;
     let requested = !motion.matches;
     function sync() {

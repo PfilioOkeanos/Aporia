@@ -2,6 +2,7 @@ import { observeMediaVisibility } from "../../../../Menüs/adapter/aporia-media-
 import { applyAporiaRoutes } from "../../../../Menüs/adapter/aporia-routes.js";
 import "../../../../Menüs/TopBar/Top_bar.js";
 import "../../../../Menüs/Side_bar/side_bar.js";
+import { bewegungReduziert } from "../../../../Menüs/adapter/aporia-bewegung.js";
 
 const main = document.querySelector(".species-group-main");
 const grid = main.querySelector(".species-category-grid");
@@ -87,7 +88,7 @@ applyAporiaRoutes(document);
 
 for (const logo of grid.querySelectorAll("[data-animated-src]")) {
     const poster = logo.getAttribute("src");
-    const motion = matchMedia("(prefers-reduced-motion: reduce)");
+    const motion = bewegungReduziert;
     let visible = false;
     let hovered = false;
     const card = logo.closest(".species-category");

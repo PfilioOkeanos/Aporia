@@ -2,7 +2,8 @@
 // Zahlen zählen hoch, Messanzeigen füllen sich, Schichten-Erkundung, Parallaxe im Kopf,
 // Einblenden beim Scrollen, Lesefortschritt, Kapitel blättern (mit Bildern der Hauptseite), Wissenssuche.
 import { symbolFuer } from "./dossier-symbole.js";
-const ruhig = matchMedia("(prefers-reduced-motion: reduce)").matches;
+import { bewegungReduziert } from "../../../Menüs/adapter/aporia-bewegung.js";
+const ruhig = bewegungReduziert.matches;
 const body = document.body;
 if (ruhig) body.classList.add("pd-ohne-bewegung");
 const haupt = body.classList.contains("pd-haupt");

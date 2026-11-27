@@ -5,8 +5,9 @@ import { loadVisibleLoop } from "../adapter/aporia-media-visibility.js";
 import { starteArchivsuche } from "../adapter/aporia-archivsuche.js";
 import "../TopBar/Top_bar.js";
 import "../Side_bar/side_bar.js";
+import { bewegungReduziert } from "../adapter/aporia-bewegung.js";
 
-const ruhig = matchMedia("(prefers-reduced-motion: reduce)").matches;
+const ruhig = bewegungReduziert.matches;
 const zahlFormat = new Intl.NumberFormat("de-DE");
 
 applyAporiaRoutes(document);

@@ -1,6 +1,7 @@
 // Astralizes · gemeinsames Verhalten (erzeugt von scripts/spezies/eigene/astralizes.mjs)
 import "../../../../Men%C3%BCs/TopBar/Top_bar.js";
 import { applyAporiaRoutes } from "../../../../Men%C3%BCs/adapter/aporia-routes.js";
+import { bewegungReduziert } from "../../../../Menüs/adapter/aporia-bewegung.js";
 applyAporiaRoutes(document);
 
 // Großansicht mit Blättern durch alle Werke der Seite
@@ -22,4 +23,4 @@ knoepfe.forEach((b, i) => b.addEventListener("click", () => { zeigen(i); dialog.
 dialog?.querySelectorAll(".az-blaettern").forEach((b) => b.addEventListener("click", () => zeigen(aktuell + Number(b.dataset.schritt))));
 dialog?.addEventListener("keydown", (e) => { if (e.key === "ArrowRight") zeigen(aktuell + 1); if (e.key === "ArrowLeft") zeigen(aktuell - 1); });
 dialog?.addEventListener("click", (e) => { if (e.target === dialog) dialog.close(); });
-export const bewegungErlaubt = !matchMedia("(prefers-reduced-motion: reduce)").matches;
+export const bewegungErlaubt = !bewegungReduziert.matches;

@@ -46,3 +46,15 @@ Die Website ist unter **https://pfiliookeanos.github.io/Aporia/** erreichbar (z.
 - Webfassung: PNG → WebP (max. 1.400 px), große JPG und WebP verkleinert, WAV → MP3; Verweise werden automatisch umgeschrieben. Grenze von GitHub Pages: 1 GB.
 - Lokaler Probelauf: `npm install --no-save sharp` und `node scripts/web/webseite-bauen.mjs` (ohne ffmpeg bleiben WAV-Dateien erhalten).
 - Online nicht verfügbar: Funktionen des lokalen Servers (z. B. 3D-Modelle hochladen) und die FBX-Modelle aus Git LFS. Suchmaschinen sind über `robots.txt` ausgesperrt.
+- Bildpfade in CSS-Variablen (`style="--art:url('…')"`) schreibt das Bauskript online auf feste Pfade ab `/Aporia/` um.
+
+## Handy-Schicht (gilt automatisch für alle Seiten)
+
+Es gibt **eine** Website für PC und Handy. Die Handy-Anpassungen hängen zentral an der Topbar – jede Seite mit `<div data-aporia-topbar></div>` und `Top_bar.js` bekommt sie ohne Zusatzarbeit:
+
+- `Menüs/adapter/aporia-handy.js` – Steuerung: stellt jedes Stylesheet beim Laden um (siehe unten), aktiviert Hover-Effekte per Touch und hält Endlos-Animationen außerhalb des Bildschirms an.
+- `Menüs/adapter/aporia-bewegung.js` – Schalter „Animationen“ (Seitenleiste → Darstellung). CSS schreibt weiter `@media (prefers-reduced-motion: reduce) { … }`; das wird automatisch auf den Schalter umgestellt. Die Geräteeinstellung gilt nur beim ersten Besuch als Vorschlag.
+  JavaScript fragt **nicht** `matchMedia("(prefers-reduced-motion…)")`, sondern `import { bewegungReduziert } from ".../Menüs/adapter/aporia-bewegung.js"` (gleiche Form: `.matches`, `"change"`).
+- **Hover am Handy:** Jede `:hover`-Regel bekommt auf Touch-Geräten eine Zwillingsregel mit `.ist-aktiv`. Elemente im Inhalt erhalten `.ist-aktiv`, solange sie in der Bildschirmmitte stehen oder angetippt wurden. Ausnahme setzen: `data-ohne-touch-aktiv`. Am PC testen: `?touch-test` an die Adresse hängen.
+- Topbar am Handy: eine Zeile mit Menü-Knopf; Seitenleiste als ausklappbares Seitenmenü.
+- Prüfen: `node scripts/web/handy-pruefen.mjs` meldet Seiten ohne Topbar, direkte Abfragen von „Bewegung reduzieren“ und Skripte, die nur auf Mausbewegung reagieren.

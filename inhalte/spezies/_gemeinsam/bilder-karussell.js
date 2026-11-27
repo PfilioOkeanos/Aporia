@@ -2,7 +2,8 @@
 // Markup: [data-karussell] > .karussell-spur > .karussell-folie (figure mit button.karussell-bild > img)
 //         optional [data-filter]-Knöpfe, [data-karussell-schritt], [data-karussell-pause], .karussell-punkte, .karussell-zaehler
 // Aufruf: mountBilderKarussell(wurzel, { oeffnen(bilder, index) }) – oeffnen erhält die sichtbaren <img> und den Index.
-const ruhig = matchMedia("(prefers-reduced-motion: reduce)");
+import { bewegungReduziert } from "../../../Menüs/adapter/aporia-bewegung.js";
+const ruhig = bewegungReduziert;
 
 export function mountBilderKarussell(wurzel, { oeffnen } = {}) {
     const spur = wurzel.querySelector(".karussell-spur");

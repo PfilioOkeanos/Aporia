@@ -14,6 +14,7 @@
 // Knoten: { id, name, stufe (0 = unten … höchste Stufe = Durchbruch), benoetigt: [ids], kosten,
 //           belohnung?: { art: "vorteil", text, wirkung: { rate?, rabatt?, experiment? } }
 //                     | { art: "gegenstand", name, bild } }
+import { bewegungReduziert } from "./aporia-bewegung.js";
 
 const PREFIX = "aporia-forschung:";
 
@@ -62,7 +63,7 @@ export function mountForschungsbaum(wurzel, config) {
     const MAX_STUFE = Math.max(...knoten.map((k) => k.stufe));
     const W = { name: config.waehrung?.name ?? "Forschungspunkte", kurz: config.waehrung?.kurz ?? "FP" };
     const stufenName = (s) => config.stufen?.[s] ?? (s === 0 ? "Grundlagen" : s === MAX_STUFE ? "Durchbruch" : s === 1 ? "Vertiefung" : "Anwendung");
-    const bewegungReduziert = matchMedia("(prefers-reduced-motion: reduce)");
+    const bewegungReduziert = bewegungReduziert;
 
     // ---------- Zustand ----------
     const gespeichert = speicher.lesen(schluessel);

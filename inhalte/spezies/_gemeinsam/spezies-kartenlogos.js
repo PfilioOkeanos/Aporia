@@ -1,5 +1,6 @@
 
 import { observeMediaVisibility } from "../../../Menüs/adapter/aporia-media-visibility.js";
+import { bewegungReduziert } from "../../../Menüs/adapter/aporia-bewegung.js";
 
 // Originale, gezeichnete Motive. Die zweite Ebene bestimmt, wie das Motiv
 // aus seiner Umgebung hervorgeht: z. B. Wurzeln, Gestein, Wasser oder Leiterbahnen.
@@ -64,7 +65,7 @@ const motive = new Map([
     ["Hybriden",["#e5a8aa","#a9c9f0","M50 17L20 34v32l30 17 30-17V34Z M50 17v66M29 51l7-9 7 9-7 9Z M58 42h13v18H58Z M58 51h13","shell",57]],
 ]);
 
-const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)");
+const reducedMotion = bewegungReduziert;
 const canHover = matchMedia("(any-hover: hover)");
 const forms = {
     arch: ["M8 88V50Q8 14 50 6Q92 14 92 50V88Q50 102 8 88Z", "M14 83H86M18 50Q18 21 50 13Q82 21 82 50"],

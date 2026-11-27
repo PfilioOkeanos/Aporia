@@ -6,7 +6,8 @@
 
 /* 01 - ROUTENVERWALTUNG IMPORTIEREN */
 
-
+/* Handy-Schicht zuerst: Animationen-Schalter, Touch-Ersatz für Hover, Leistung (siehe adapter/aporia-handy.js) */
+import "../adapter/aporia-handy.js";
 import "../Side_bar/side_bar.js";
 import {
     applyAporiaRoutes,
