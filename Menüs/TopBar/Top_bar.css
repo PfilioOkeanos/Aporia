@@ -367,7 +367,26 @@ html { -webkit-tap-highlight-color: transparent; }
         gap: 6px;
         padding: 6px 8px;
     }
-    .aporia-topbar-start { grid-area: 1 / 1; }
+    /* Seitenleisten-Knopf und „APORIA“ als zwei getrennte Felder mit Abstand – kein Danebentippen */
+    .aporia-topbar .aporia-topbar-start {
+        grid-area: 1 / 1;
+        gap: 8px;
+        padding: 0;
+        background: none !important;
+    }
+    .aporia-topbar .aporia-sidebar-toggle-button,
+    .aporia-topbar .aporia-brand {
+        min-height: 34px;
+        border-radius: 4px;
+        background: var(--topbar-art) 40.18% 20.82% / 1628.21% 1421.05% no-repeat;
+    }
+    .aporia-topbar .aporia-sidebar-toggle-button {
+        width: 42px;
+        box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--plate-ink) 35%, transparent);
+    }
+    .aporia-topbar .aporia-sidebar-toggle-button > svg { width: 20px; height: 20px; }
+    .aporia-topbar .aporia-sidebar-toggle-button[aria-expanded="true"] { box-shadow: inset 0 -3px var(--plate-ink); }
+    .aporia-topbar .aporia-brand { padding: 0 9px; }
     .aporia-search { grid-area: 1 / 2; justify-self: stretch; width: auto; }
     .aporia-menu-toggle {
         grid-area: 1 / 3;

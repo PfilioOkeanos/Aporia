@@ -3,7 +3,7 @@
 .funke{opacity:0;animation:steig 4s linear infinite}.f0{animation-delay:0.00s}.f1{animation-delay:0.45s}.f2{animation-delay:0.90s}.f3{animation-delay:1.35s}.f4{animation-delay:1.80s}.f5{animation-delay:2.25s}.f6{animation-delay:2.70s}.f7{animation-delay:3.15s}.f8{animation-delay:3.60s}
 @keyframes pulse{50%{opacity:.55;transform:scale(.93)}}@keyframes riss{50%{stroke:#ffd27a;opacity:.75}}
 @keyframes steig{0%{opacity:0;transform:translateY(0)}15%{opacity:1}100%{opacity:0;transform:translateY(-150px) translateX(8px)}}</style>
-<defs><filter id="t" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="5" result="b"/><feFlood flood-color="#ff6a1a"/><feComposite in2="b" operator="in"/><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter><radialGradient id="tg"><stop offset="0" stop-color="#ff9a3c" stop-opacity=".55"/><stop offset="1" stop-color="#ff4a10" stop-opacity="0"/></radialGradient></defs>
+<defs><filter id="t" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter><radialGradient id="tg"><stop offset="0" stop-color="#ff9a3c" stop-opacity=".55"/><stop offset="1" stop-color="#ff4a10" stop-opacity="0"/></radialGradient></defs>
 <circle class="glut" cx="275" cy="100" r="88" fill="url(#tg)"/>
 <polygon points="275,38 329,69 329,131 275,162 221,131 221,69" fill="#1d1612" stroke="#6b5240" stroke-width="3"/>
 <polygon points="275,52 317,76 317,124 275,148 233,124 233,76" fill="none" stroke="#3a2c22" stroke-width="2"/>

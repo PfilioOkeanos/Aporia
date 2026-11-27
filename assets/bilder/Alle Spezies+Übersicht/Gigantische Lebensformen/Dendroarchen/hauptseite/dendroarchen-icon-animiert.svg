@@ -3,7 +3,7 @@
 .spore{opacity:0;animation:spore 6s ease-in-out infinite}.s0{animation-delay:0.00s}.s1{animation-delay:0.55s}.s2{animation-delay:1.10s}.s3{animation-delay:1.65s}.s4{animation-delay:2.20s}.s5{animation-delay:2.75s}.s6{animation-delay:3.30s}.s7{animation-delay:3.85s}.s8{animation-delay:4.40s}.s9{animation-delay:4.95s}
 @keyframes wieg{50%{transform:rotate(2.5deg)}}@keyframes ring{0%{opacity:.7;transform:scale(.3)}100%{opacity:0;transform:scale(3)}}
 @keyframes spore{0%{opacity:0;transform:translate(0,0)}30%{opacity:1}100%{opacity:0;transform:translate(14px,-110px)}}</style>
-<defs><filter id="d" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feFlood flood-color="#f0c46e"/><feComposite in2="b" operator="in"/><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+<defs><filter id="d" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
 <circle cx="275" cy="100" r="86" fill="#0b120a" fill-opacity=".78" stroke="#f0c46e" stroke-opacity=".65" stroke-width="1.5"/>
 <g fill="none" stroke="#a6d86e"><circle class="ring r0" cx="275" cy="150" r="22" stroke-opacity=".5"/><circle class="ring r1" cx="275" cy="150" r="22" stroke-opacity=".5"/><circle class="ring r2" cx="275" cy="150" r="22" stroke-opacity=".5"/></g>
 <path d="M275 150 Q 256 158 242 174 M275 150 Q 294 158 308 174 M275 150 Q 270 164 262 180 M275 150 Q 280 164 288 180" fill="none" stroke="#8a6a44" stroke-width="2.5" stroke-linecap="round"/>

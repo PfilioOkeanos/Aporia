@@ -499,6 +499,9 @@ body.is-resizing-sidebar, body.is-resizing-sidebar * {
     /* Handy: Seitenleiste links (Knopf in der Topbar). Offen schiebt sie die Seite daneben zusammen;
        Wischen nach links schließt sie (Top_bar.js). */
     :root { --handy-seitenleiste: min(72vw, 290px); }
+    /* Bis die Topbar die Seitenleiste übernommen hat (id + eingeklappt), bleibt sie unsichtbar –
+       sonst blitzt sie beim Seitenwechsel kurz links als helles Feld auf */
+    [data-aporia-sidebar]:not(#aporia-sidebar-host) { display: none !important; }
     #aporia-sidebar-host,
     .aporia-auto-page-frame > #aporia-sidebar-host[data-sidebar-auto="true"] {
         position: fixed !important;
