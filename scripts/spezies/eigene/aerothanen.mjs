@@ -586,7 +586,9 @@ body:has(.aporia-topbar details[open], .aporia-topbar.is-menu-open) .ae-reiter {
 .ae-kapitel--voll .ae-text p, .ae-kapitel--voll .ae-text li { max-width: 80ch; }
 .ae-text { container-type: inline-size; }
 @container (max-width: 40rem) {
-    .ae-einschub { float: none; width: 100%; max-width: 30rem; margin: .4rem 0 1.2rem; }
+    .ae-einschub { float: right; width: 44%; max-width: 16rem; margin: .3rem 0 .9rem 1rem; }
+    .ae-einschub figcaption strong { font-size: .72rem; }
+    .ae-einschub figcaption span { display: none; }
 }
 @media (min-width: 1400px) {
     .ae-einschub { width: min(52%, 28rem); margin-right: clamp(-18rem, -14vw, -6rem); }
@@ -621,7 +623,7 @@ body:has(.aporia-topbar details[open], .aporia-topbar.is-menu-open) .ae-reiter {
     .ae-kapitel::before { left: -1rem; right: -1rem; top: calc(var(--luft) - 3.5rem);
         -webkit-mask-image: linear-gradient(180deg, transparent, #000 3.5rem, #000 calc(100% - 3rem), transparent); mask-image: linear-gradient(180deg, transparent, #000 3.5rem, #000 calc(100% - 3rem), transparent); }
     .ae-kapitel-kopf { gap: .3rem .8rem; }
-    .ae-einschub { float: none; width: 100%; margin: .4rem 0 1.1rem; }
+    .ae-einschub { float: right; width: 44%; margin: .3rem 0 .9rem .9rem; }
     .ae-text { font-size: 1rem; }
     .ae-text h3 { padding-left: 1.8rem; }
     .ae-text h3::before { width: 1.2rem; }
