@@ -500,9 +500,11 @@
 .noetiden .aporia-sidebar::after { background: linear-gradient(180deg, transparent, #a98bff10 70%, transparent); }
 .noe-dossier { position: relative; isolation: isolate; }
 
-/* Knotenraster mit leuchtenden Synapsen */
+/* Knotenraster mit leuchtenden Synapsen
+   Fest am Bildschirm statt über die ganze Seite: eine kleine pulsierende Ebene statt einer seitenhohen –
+   seitenhohe animierte Ebenen zeichnen Handys in Kacheln, die dabei weiß aufblitzen. */
 .noe-ambient {
-    position: absolute;
+    position: fixed;
     inset: 0;
     z-index: -1;
     pointer-events: none;
@@ -650,4 +652,11 @@
     .noe-hero--reiter h1 { font-size: clamp(1.6rem, 8.5vw, 2.6rem); }
     .noe-subtitle { letter-spacing: .12em; }
     .noe-kicker { letter-spacing: .14em; flex-wrap: wrap; }
+}
+
+/* Handy: keine Effekte, die über der pulsierenden Ebene ständig neu gerechnet werden (weiße Kacheln/Flackern) */
+@media (max-width: 760px), (pointer: coarse) and (max-width: 1024px) {
+    .noe-panel { backdrop-filter: none; -webkit-backdrop-filter: none; }
+    .noe-hero h1 { filter: none; }
+    .noe-topic:hover, .noe-topic:focus-visible, .noe-topic.ist-aktiv { filter: none; }
 }

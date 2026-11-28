@@ -7,6 +7,10 @@
 //      → stattdessen  import { bewegungReduziert } from ".../Menüs/adapter/aporia-bewegung.js"
 //   3. Skripte, die Animationen nur bei Mausbewegung starten (mouseenter/pointerenter ohne Touch-Gegenstück)
 //      → am Handy gibt es kein Überfahren; .ist-aktiv nutzen oder auf Sichtbarkeit reagieren
+//   4. Grafikfehler am Handy (weiße, flackernde Kacheln):
+//      - SVG-Filter mit Farbfläche (feFlood) in animierten Bildern → Leuchten per feGaussianBlur des Motivs
+//      (Regel ohne Prüfung, siehe README: keine seitenhohen, endlos animierten Hintergrundebenen –
+//       solche Ebenen mit position: fixed nur bildschirmgroß anlegen)
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -20,6 +24,8 @@ const walk = (d) => fs.readdirSync(d, { withFileTypes: true }).flatMap((e) => {
 });
 
 const dateien = BEREICHE.flatMap((b) => walk(path.join(ROOT, b)));
+const svgs = walk(path.join(ROOT, "assets")).filter((p) => /\.svg$/i.test(p));
+const css = dateien.filter((p) => /\.css$/i.test(p));
 const html = dateien.filter((p) => /\.html?$/i.test(p));
 const js = dateien.filter((p) => /\.m?js$/i.test(p));
 
@@ -45,6 +51,9 @@ for (const p of js) {
     nurMaus.push(rel(p));
 }
 
+// 4. Grafikfehler-Muster
+const feFlood = svgs.filter((p) => { const t = fs.readFileSync(p, "utf8"); return t.includes("<feFlood") && /animation|<animate/.test(t); }).map(rel);
+
 const abschnitt = (titel, liste, tipp) => {
     console.log(`\n${liste.length ? "⚠" : "✓"} ${titel}: ${liste.length}`);
     for (const e of liste.slice(0, 30)) console.log("   " + e);
@@ -56,4 +65,5 @@ console.log(`Handy-Prüfung: ${html.length} Seiten, ${js.length} Skripte`);
 abschnitt("Seiten ohne Topbar (keine Handy-Schicht)", ohneTopbar, 'Topbar einbinden: <div data-aporia-topbar></div> und Top_bar.js importieren');
 abschnitt("Skripte mit direkter Abfrage von „Bewegung reduzieren“", direkt, 'bewegungReduziert aus Menüs/adapter/aporia-bewegung.js verwenden');
 abschnitt("Skripte, die nur auf Mausbewegung reagieren", nurMaus, "am Handy zusätzlich auf .ist-aktiv, Antippen oder Sichtbarkeit reagieren");
-process.exitCode = direkt.length ? 1 : 0;
+abschnitt("Animierte SVGs mit Farbfläche (feFlood)", feFlood, "Leuchten per feGaussianBlur des Motivs, ohne feFlood/feComposite");
+process.exitCode = direkt.length || feFlood.length ? 1 : 0;

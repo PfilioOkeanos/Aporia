@@ -175,7 +175,8 @@ function erkenneZweitleisten() {
         });
     }
     for (const element of document.querySelectorAll(ZWEITLEISTEN_KANDIDATEN)) {
-        if (element.classList.contains("aporia-zweitleiste") || element.closest(NAVIGATION)) continue;
+        // eigene Knöpfe der Handy-Schicht (Lasche/Klapp-Knopf) sind keine Leisten der Seite
+        if (element.classList.contains("aporia-zweitleiste") || element.closest(NAVIGATION) || element.matches(".aporia-leisten-lasche, .aporia-leisten-knopf")) continue;
         const stil = getComputedStyle(element);
         if ((stil.position === "sticky" || stil.position === "fixed") && parseFloat(stil.top) <= 220 && element.offsetHeight < innerHeight * .25) {
             element.classList.add("aporia-zweitleiste");

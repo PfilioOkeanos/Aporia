@@ -322,19 +322,22 @@ html { -webkit-tap-highlight-color: transparent; }
         font: bold 15px/1 Georgia, serif;
         cursor: pointer;
     }
-    /* Lasche zum Wiederausklappen (nur sichtbar, wenn die Leisten eingeklappt sind) */
+    /* Knopf zum Wiederausklappen: rund, gut sichtbar oben rechts (auch unter der Statusleiste von Startbildschirm-Apps) */
     .aporia-leisten-lasche {
-        position: fixed; z-index: 1001; top: 0; right: 12px;
+        position: fixed; z-index: 1001;
+        top: calc(env(safe-area-inset-top, 0px) + 8px);
+        right: calc(env(safe-area-inset-right, 0px) + 10px);
         display: none;
-        padding: 2px 14px 6px;
-        border: 0; border-radius: 0 0 10px 10px;
-        background: linear-gradient(#e7d1aa, #cdb089);
+        place-items: center;
+        width: 44px; height: 44px;
+        border: 1px solid #8a6a43; border-radius: 50%;
+        background: linear-gradient(#ecd7b1, #cdb089);
         color: #2a1c12;
-        font: bold 15px/1 Georgia, serif;
-        box-shadow: 0 4px 14px #000a;
+        font: bold 18px/1 Georgia, serif;
+        box-shadow: 0 4px 16px #000c, 0 0 0 3px #00000040;
         cursor: pointer;
     }
-    .aporia-leisten-zu .aporia-leisten-lasche { display: block; }
+    .aporia-leisten-zu .aporia-leisten-lasche { display: grid; }
 
     /* Spezies-Reiter (Übersicht · Allgemeines · Biologie …) als zweite Leiste: klebt unter der Topbar, waagerecht wischbar */
     .aporia-reiterleiste {
