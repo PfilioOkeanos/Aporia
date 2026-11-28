@@ -1,2 +1,2 @@
-// Aerothanen – Heimatwelt · erzeugt vom Spezies-Baukasten (scripts/spezies) – Änderungen dort vornehmen
+// Aerothanen · Heimatwelt
 import "../../aerothanen-basis.js";

@@ -10,6 +10,7 @@ Erzeugt die Dossierseiten der Spezies aus dem, was im Projekt liegt. Wer Texte, 
 | `npm run spezies -- Kolonialwesen Elektrozoiden` | nur die genannten Spezies (Ordnernamen) |
 | `npm run spezies:pruefen` | prüfen, ob jede Zeile der Info-Dateien auf den Seiten steht |
 | `node scripts/spezies/eigene/pyronoiden.mjs` | ausgearbeitete Spezies mit eigener Hauptseite neu bauen (ebenso kryonoiden, floranoiden, symbionten, lithoiden, plasmoiden) |
+| `node scripts/spezies/eigene/aerothanen.mjs` | Aerothanen mit eigener Marke „Perlmutt & Sturmlicht“ neu bauen: alle 12 Seiten aus Infomaterial und Bildern. Neue Bilder in den passenden Ordner unter `assets/…/Aerothanen/` legen, Vorschau erzeugen (`vorschau/<ordner>/*.jpg`, max. 1.400 px) und das Skript ausführen. Kapitel bekommen passende Bilder automatisch (Titelwörter, T-/F-Nummern); übrige Bilder landen in der Bildschicht der Seite, alle im Bildarchiv der Medienseite. Seiten mit eigenem Design setzen `body[data-eigenes-design]` (keine gemeinsame Kapitel-Gestaltung); das Emblem in der Reiter-Leiste trägt `data-kapitel-aus`. |
 | `node scripts/spezies/ergaenzen.mjs` | auf älteren, von Hand gebauten Seiten fehlende Info-Kapitel als Bereich „Aus dem Infomaterial“ einfügen |
 
 ## Woher die Inhalte kommen

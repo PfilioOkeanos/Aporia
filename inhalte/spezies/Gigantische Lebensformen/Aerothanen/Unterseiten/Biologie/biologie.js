@@ -1,2 +1,2 @@
-// Aerothanen – Biologie · erzeugt vom Spezies-Baukasten (scripts/spezies) – Änderungen dort vornehmen
+// Aerothanen · Biologie
 import "../../aerothanen-basis.js";

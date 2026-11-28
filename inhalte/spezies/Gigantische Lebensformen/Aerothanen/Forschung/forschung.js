@@ -1,2 +1,2 @@
-// Aerothanen – Forschung · erzeugt vom Spezies-Baukasten (scripts/spezies) – Änderungen dort vornehmen
+// Aerothanen · Forschung
 import "../aerothanen-basis.js";

@@ -1,2 +1,2 @@
-// Aerothanen – Politik · erzeugt vom Spezies-Baukasten (scripts/spezies) – Änderungen dort vornehmen
+// Aerothanen · Politik
 import "../../aerothanen-basis.js";

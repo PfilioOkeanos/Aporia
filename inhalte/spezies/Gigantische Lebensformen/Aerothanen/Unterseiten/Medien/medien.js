@@ -1,4 +1,2 @@
-// Aerothanen – Medien · erzeugt vom Spezies-Baukasten (scripts/spezies) – Änderungen dort vornehmen
+// Aerothanen · Medien
 import "../../aerothanen-basis.js";
-import "../../../../_gemeinsam/medien-player.js";
-import "../../../../_gemeinsam/klangarchiv.js";

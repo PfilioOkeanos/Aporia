@@ -1,2 +1,2 @@
-// Aerothanen – Gesellschaft · erzeugt vom Spezies-Baukasten (scripts/spezies) – Änderungen dort vornehmen
+// Aerothanen · Gesellschaft
 import "../../aerothanen-basis.js";

@@ -1,83 +1,49 @@
-// Aerothanen – gemeinsame Funktionen für Hauptseite und alle Unterseiten.
-// Wird von der jeweiligen Seiten-JS importiert (z. B. Unterseiten/Biologie/biologie.js).
-import { applyAporiaRoutes } from "../../../../Men%C3%BCs/adapter/aporia-routes.js";
+// Aerothanen · gemeinsames Verhalten (erzeugt von scripts/spezies/eigene/aerothanen.mjs)
 import "../../../../Men%C3%BCs/TopBar/Top_bar.js";
-import "../../../../Men%C3%BCs/Side_bar/side_bar.js";
-import { mountGalleryZoom } from "../../_gemeinsam/galerie-zoom.js";
-import { mountBilderKarussell } from "../../_gemeinsam/bilder-karussell.js";
-
-if (matchMedia("(max-width: 760px)").matches) {
-    document.querySelector("[data-aporia-sidebar]")?.setAttribute("data-sidebar-default-collapsed", "");
-}
-
+import { applyAporiaRoutes } from "../../../../Men%C3%BCs/adapter/aporia-routes.js";
 applyAporiaRoutes(document);
 
-// Kapitelleiste: aktives Kapitel hervorheben, Sprung öffnet eine geschlossene Karte
-const sprung = document.querySelector("[data-st-sprung]");
-if (sprung) {
-    const links = new Map([...sprung.querySelectorAll('a[href^="#"]')].map((a) => [a.getAttribute("href").slice(1), a]));
-    if ("IntersectionObserver" in window) {
-        const beobachter = new IntersectionObserver((eintraege) => {
-            for (const eintrag of eintraege) {
-                if (!eintrag.isIntersecting) continue;
-                links.forEach((a) => a.classList.remove("is-active"));
-                links.get(eintrag.target.id)?.classList.add("is-active");
-            }
-        }, { rootMargin: "-25% 0px -65% 0px" });
-        links.forEach((_, id) => { const ziel = document.getElementById(id); if (ziel) beobachter.observe(ziel); });
-    }
-    sprung.addEventListener("click", (event) => {
-        const link = event.target.closest('a[href^="#"]');
-        const ziel = link && document.getElementById(link.getAttribute("href").slice(1));
-        if (ziel instanceof HTMLDetailsElement && !ziel.open) ziel.open = true;
-    });
+// Kapitel: alle auf-/zuklappen, Sprungziel öffnen
+const kapitel = [...document.querySelectorAll("details.ae-kapitel")];
+const klappen = document.querySelector("[data-ae-klappen]");
+if (klappen && kapitel.length) {
+    const stand = () => { const alle = kapitel.every((k) => k.open); klappen.setAttribute("aria-pressed", String(alle)); klappen.textContent = alle ? "Alle zuklappen" : "Alle aufklappen"; };
+    klappen.addEventListener("click", () => { const auf = !kapitel.every((k) => k.open); kapitel.forEach((k) => { k.open = auf; }); stand(); });
+    kapitel.forEach((k) => k.addEventListener("toggle", stand));
+    stand();
 }
 const ziel = location.hash && document.getElementById(decodeURIComponent(location.hash.slice(1)));
 if (ziel instanceof HTMLDetailsElement) ziel.open = true;
-else if (ziel instanceof Element && ziel.closest("details")) ziel.closest("details").open = true;
 
-// Alle Kapitel auf- oder zuklappen
-const kapitel = [...document.querySelectorAll(".st-inhalt details.st-karte")];
-const klappKnopf = document.querySelector("[data-st-klappen]");
-if (klappKnopf && kapitel.length) {
-    const stand = () => {
-        const alleOffen = kapitel.every((k) => k.open);
-        klappKnopf.setAttribute("aria-pressed", String(alleOffen));
-        klappKnopf.textContent = alleOffen ? "Alle zuklappen" : "Alle aufklappen";
-    };
-    klappKnopf.addEventListener("click", () => {
-        const oeffnen = !kapitel.every((k) => k.open);
-        kapitel.forEach((k) => { k.open = oeffnen; });
-        stand();
-    });
-    kapitel.forEach((k) => k.addEventListener("toggle", stand));
-    stand();
-} else klappKnopf?.remove();
-
-// Großansicht mit Zoom (gemeinsamer Adapter galerie-zoom.js) für alle Bildkarusselle
-const dialog = document.querySelector("dialog.st-zoom");
-const karusselle = document.querySelectorAll("[data-karussell]");
-if (dialog && karusselle.length) {
-    const vollbild = mountGalleryZoom(dialog);
-    const bild = dialog.querySelector("img");
-    const ausgabe = dialog.querySelector("output");
+// Großansicht mit Blättern (Pfeiltasten, Knöpfe, Wischen)
+const dialog = document.querySelector(".ae-gross");
+if (dialog) {
+    const bild = dialog.querySelector("img"), titel = dialog.querySelector("figcaption strong"), zaehler = dialog.querySelector(".ae-gross-zaehler"), link = dialog.querySelector("figcaption a");
     let liste = [], aktuell = 0;
-    const zeigen = (index) => {
-        aktuell = (index + liste.length) % liste.length;
-        const quelle = liste[aktuell];
-        bild.src = quelle.currentSrc || quelle.src;
-        bild.alt = quelle.alt;
-        ausgabe.textContent = (aktuell + 1) + " / " + liste.length + " · " + quelle.alt;
+    const sichtbar = () => [...document.querySelectorAll(".ae-werk-bild")].filter((b) => !b.closest("[hidden]"));
+    const zeigen = (i) => {
+        aktuell = (i + liste.length) % liste.length;
+        const b = liste[aktuell];
+        bild.src = b.dataset.vor; bild.alt = b.dataset.titel;
+        titel.textContent = b.dataset.titel; link.href = b.dataset.gross;
+        zaehler.textContent = (aktuell + 1) + " / " + liste.length + " · " + b.dataset.kategorie;
     };
-    for (const wurzel of karusselle) mountBilderKarussell(wurzel, { oeffnen(bilder, index) { liste = bilder; zeigen(index); vollbild(); } });
-    dialog.querySelectorAll("[data-step]").forEach((knopf) => knopf.addEventListener("click", () => zeigen(aktuell + Number(knopf.dataset.step))));
-    dialog.addEventListener("keydown", (event) => {
-        if (event.key !== "ArrowLeft" && event.key !== "ArrowRight") return;
-        event.preventDefault();
-        zeigen(aktuell + (event.key === "ArrowRight" ? 1 : -1));
+    document.addEventListener("click", (e) => {
+        const knopf = e.target.closest(".ae-werk-bild");
+        if (!knopf) return;
+        liste = sichtbar(); zeigen(liste.indexOf(knopf)); dialog.showModal();
     });
-    dialog.addEventListener("click", (event) => { if (event.target === dialog) dialog.close(); });
+    dialog.querySelectorAll("[data-schritt]").forEach((k) => k.addEventListener("click", () => zeigen(aktuell + Number(k.dataset.schritt))));
+    dialog.addEventListener("keydown", (e) => { if (e.key === "ArrowRight") zeigen(aktuell + 1); if (e.key === "ArrowLeft") zeigen(aktuell - 1); });
+    dialog.addEventListener("click", (e) => { if (e.target === dialog || e.target.tagName === "FIGURE") dialog.close(); });
+    let startX = null;
+    dialog.addEventListener("touchstart", (e) => { startX = e.touches[0].clientX; }, { passive: true });
+    dialog.addEventListener("touchend", (e) => { if (startX === null) return; const dx = e.changedTouches[0].clientX - startX; if (Math.abs(dx) > 50) zeigen(aktuell + (dx < 0 ? 1 : -1)); startX = null; }, { passive: true });
 }
 
-// Heimatwelt-Kasten (Planetendossier + Sternenkarte) für Spezies mit Heimatwelt
-import "../../_gemeinsam/heimatwelt-verweis.js";
+// Medien: Bildarchiv filtern
+const filter = [...document.querySelectorAll(".ae-filter button")];
+filter.forEach((b) => b.addEventListener("click", () => {
+    filter.forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
+    document.querySelectorAll(".ae-galerie--archiv .ae-werk").forEach((w) => { w.hidden = !!b.dataset.filter && w.dataset.kategorie !== b.dataset.filter; });
+}));

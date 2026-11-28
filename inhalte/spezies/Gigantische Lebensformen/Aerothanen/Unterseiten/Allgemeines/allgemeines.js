@@ -1,2 +1,2 @@
-// Aerothanen – Allgemeines · erzeugt vom Spezies-Baukasten (scripts/spezies) – Änderungen dort vornehmen
+// Aerothanen · Allgemeines
 import "../../aerothanen-basis.js";

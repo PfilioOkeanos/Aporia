@@ -1,2 +1,2 @@
-// Aerothanen – Hauptseite · erzeugt vom Spezies-Baukasten (scripts/spezies) – Änderungen dort vornehmen
+// Aerothanen · Übersicht
 import "../aerothanen-basis.js";

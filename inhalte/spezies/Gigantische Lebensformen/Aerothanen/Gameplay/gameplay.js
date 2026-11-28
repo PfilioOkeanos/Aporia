@@ -1,2 +1,2 @@
-// Aerothanen – Spielintegration · erzeugt vom Spezies-Baukasten (scripts/spezies) – Änderungen dort vornehmen
+// Aerothanen · Spielintegration
 import "../aerothanen-basis.js";

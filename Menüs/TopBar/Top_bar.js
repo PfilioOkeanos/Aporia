@@ -670,7 +670,8 @@ function addStoryEditorMenuItem(navigation) {
     navigation.append(link);
 }
 
-if (/\/inhalte\/spezies\/[^/]+\/[^/]+\/.+\.html$/i.test(location.pathname) && !/bersichtsseite/i.test(location.pathname)) {
+// Gemeinsame Kapitel-Gestaltung für Spezies-Seiten – Seiten mit eigenem Design (body[data-eigenes-design]) melden sich ab
+if (/\/inhalte\/spezies\/[^/]+\/[^/]+\/.+\.html$/i.test(location.pathname) && !/bersichtsseite/i.test(location.pathname) && !document.body.hasAttribute("data-eigenes-design")) {
     const kapitelStil = document.createElement("link");
     kapitelStil.rel = "stylesheet";
     kapitelStil.href = new URL("../../inhalte/spezies/_gemeinsam/dossier-kapitel.css", import.meta.url).href;

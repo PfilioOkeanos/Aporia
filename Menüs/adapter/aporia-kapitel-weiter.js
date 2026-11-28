@@ -17,7 +17,7 @@ function starte() {
     const main = document.querySelector("main");
     if (!leiste || !main) return;
 
-    const links = [...leiste.querySelectorAll("a[href]")];
+    const links = [...leiste.querySelectorAll("a[href]:not([data-kapitel-aus])")];   // data-kapitel-aus: z. B. Emblem/Marke
     const hier = location.href.split("#")[0];
     let index = links.findIndex((a) => a.hasAttribute("aria-current"));
     if (index < 0) index = links.findIndex((a) => a.href.split("#")[0] === hier);

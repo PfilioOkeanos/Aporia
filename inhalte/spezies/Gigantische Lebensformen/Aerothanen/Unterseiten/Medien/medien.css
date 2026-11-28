@@ -1,2 +1,6 @@
-/* Aerothanen – Medien · erzeugt vom Spezies-Baukasten (scripts/spezies)
-   Gemeinsames Design: aerothanen-basis.css · eigene Anpassungen dieser Seite hier ergänzen. */
+/* Medien · Bildarchiv mit Filter */
+.ae-filter { display: flex; flex-wrap: wrap; gap: .4rem; margin-bottom: 1.2rem; }
+.ae-filter button { padding: .45rem .9rem; border: 1px solid #c9a6ff55; border-radius: 999px; background: #0b0d1c99; color: var(--ae-perl); font: 700 .72rem var(--ae-sans); letter-spacing: .08em; cursor: pointer; }
+.ae-filter button small { opacity: .7; margin-left: .2rem; }
+.ae-filter button[aria-pressed="true"] { background: var(--ae-schillern); color: var(--ae-nacht); border-color: transparent; }
+.ae-medienfeld code { font-size: .8rem; color: var(--ae-tuerkis); overflow-wrap: anywhere; }

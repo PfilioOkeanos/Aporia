@@ -343,7 +343,8 @@ html { -webkit-tap-highlight-color: transparent; }
     .aporia-reiterleiste {
         position: sticky !important;
         top: var(--aporia-topbar-height, 50px) !important;
-        z-index: 900 !important;
+        /* über der herabhängenden Topbar-Grafik; bei offenem Topbar-Menü darunter (siehe unten) */
+        z-index: 1000 !important;
         display: flex !important;
         flex-wrap: nowrap !important;
         gap: .4rem;
@@ -358,6 +359,7 @@ html { -webkit-tap-highlight-color: transparent; }
         box-shadow: 0 8px 18px #0008;
     }
     .aporia-reiterleiste::-webkit-scrollbar { display: none; }
+    body:has(.aporia-topbar details[open], .aporia-topbar.is-menu-open) .aporia-reiterleiste { z-index: 990 !important; }
     .aporia-reiterleiste > * { flex: 0 0 auto; white-space: nowrap; }
 
     /* Hohe klebende Seitenspalten (Kapitel, Sprungmarken) kleben in der einspaltigen Ansicht nicht */

@@ -1,2 +1,8 @@
-/* Aerothanen – Heimatwelt · erzeugt vom Spezies-Baukasten (scripts/spezies)
-   Gemeinsames Design: aerothanen-basis.css · eigene Anpassungen dieser Seite hier ergänzen. */
+/* Heimatwelt · Saelith III */
+.ae-heimat { display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: center; gap: 1.2rem; padding: 1.1rem 1.3rem; border: 1px solid #78e0ea44; border-radius: 18px; background: radial-gradient(ellipse at 0% 50%, #78e0ea1f, transparent 60%), linear-gradient(160deg, #142038f0, #0d0f22f5); }
+.ae-heimat img { width: clamp(5rem, 14vw, 8rem); height: auto; aspect-ratio: 1; border-radius: 50%; object-fit: cover; box-shadow: 0 0 0 1px #78e0ea66, 0 0 40px #78e0ea44; }
+.ae-heimat h2 { margin: .2rem 0; font: 400 clamp(1.6rem, 3vw, 2.2rem) var(--ae-serif); color: var(--ae-perl); }
+.ae-knoepfe { display: flex; flex-wrap: wrap; gap: .5rem; margin: .6rem 0 0; }
+.ae-knoepfe a { padding: .45rem .9rem; border: 1px solid #f4ecf344; border-radius: 999px; color: var(--ae-perl) !important; text-decoration: none; font-size: .85rem; }
+.ae-knoepfe a:hover { background: #f4ecf31a; }
+@media (max-width: 520px) { .ae-heimat { grid-template-columns: minmax(0, 1fr); justify-items: start; } }

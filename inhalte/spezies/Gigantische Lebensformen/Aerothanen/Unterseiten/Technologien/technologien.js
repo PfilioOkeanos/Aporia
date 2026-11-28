@@ -1,2 +1,2 @@
-// Aerothanen – Technologien · erzeugt vom Spezies-Baukasten (scripts/spezies) – Änderungen dort vornehmen
+// Aerothanen · Technologien
 import "../../aerothanen-basis.js";
