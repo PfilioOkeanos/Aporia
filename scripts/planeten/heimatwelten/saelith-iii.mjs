@@ -1,6 +1,12 @@
-// Saelith III · Heimatwelt der Aerothanen (Quelle: Info_material/…/Gigantische Lebensformen/Aerothanen/05_Heimatwelt/heimatwelt-referenz.md
-// und Sternensystem/Sternensystem.md – Bahn 2,60 AE unverändert; 62.000 km, 120 Erdmassen, Ringsystem 85.000–150.000 km ergänzt)
+// Saelith III · Heimatwelt der Aerothanen. Die Kapiteltexte kommen vollständig und unverändert aus dem Infomaterial
+// (heimatwelt-referenz.md und Sternensystem/Sternensytstem.md) – die Spezies-Seite zeigt nur noch eine Zusammenfassung.
+// Bahn 2,60 AE unverändert; 62.000 km, 120 Erdmassen, Ringsystem 85.000–150.000 km ergänzt.
+import { quellAbschnitte } from "../quelltext-kapitel.mjs";
+const Q = "Info_material/Alle_spezies_daten/Gigantische Lebensformen/Aerothanen/";
+const hw = quellAbschnitte(Q + "05_Heimatwelt/heimatwelt-referenz.md");
+const ss = quellAbschnitte(Q + "Sternensystem/Sternensytstem.md");
 export default {
+    kapitelErgaenzen: true, doppelteWeglassen: true,
     ordner: "saelith-iii", system: "osselyr-system", planetId: "osselyr-saelith-iii",
     name: "Saelith III", genitiv: "von Saelith III", klasse: "Gasriese", globusKlasse: "Gasriese",
     klasseLang: "Gasriese mit atmosphärischer Biosphäre und Ringsystem",
@@ -22,7 +28,7 @@ export default {
         rotationH: 13.5, rotationText: "ca. 13,5 h", achsneigung: 11, jahreszeiten: "Veränderungen der äußeren Strahlungs- und Wolkenbedingungen",
         treibhausText: "Die Gleichgewichtstemperatur von rund 130 K beschreibt nur die oberen Wolken. In der Tiefe steigen Druck und Temperatur stark an; zusätzlich gibt der Planet Wärme aus seinem Inneren ab.",
         magnetfeldFaktor: 8,
-        physikExtra: [["Masse in Jupitermassen", "ca. 0,38"], ["Mittlere Dichte", "ca. 0,72 g/cm³"], ["Feste Oberfläche", "Nicht vorhanden"], ["Magnetosphäre", "Ausgedehnt, mit Strahlungsgürteln und Polarlichtern"]],
+        physikExtra: [["Feste Oberfläche", "Nicht vorhanden"], ["Magnetosphäre", "Ausgedehnt, mit Strahlungsgürteln und Polarlichtern"]],
         extra: [["Beiname", "Welt der Himmelsriesen"], ["Archiv-ID", "AP-8B515B4143"], ["Ringsystem", "Hell, ca. 85.000–150.000 km vom Zentrum"], ["Charakteristische Farben", "Gold, Ocker, Blau, Silberweiß"], ["Fraktionszugehörigkeit", "Offen"]],
         umbenennen: { "Mittlere Oberflächentemperatur": "Temperatur der Schwebezone", "Ozeane": "Wasser", "Atmosphärendruck": "Druck der Schwebezone", "Schwerkraft": "Schwerkraft (Referenzniveau)", "Oberflächenschwerkraft": "Schwerkraft (Referenzniveau)", "Mittlere Temperatur": "Temperatur der Schwebezone", "Luftdruck (Mittel)": "Druck der Schwebezone" },
         zonen: { einheit: "°C", min: -180, max: 150, bereiche: [["Äußerer Schleier", -175, -150], ["Silberwolken", -150, -100], ["Goldschicht", -100, -30], ["Gemäßigte Schwebezone", -33, 67], ["Tiefe Sturmzone", 60, 150]] },
@@ -30,57 +36,28 @@ export default {
         rekorde: [["Größte Lebensformen", "Aerothanen, 500–3.000 m hoch"], ["Lebenserwartung der Aerothanen", "ca. 2.500–9.000 Jahre"], ["Größter Wirbel", "Kronenwirbel, ca. 18.000 km"], ["Stärkste Winde", "bis ca. 1.000 km/h in lokalen Sturmregionen"]],
     },
     kapitel: {
-        "Allgemeines": { intro: "Saelith III auf einen Blick: Wolken, Ringe und Himmelsriesen.", abschnitte: [
-            { titel: "Hauptmerkmale", karten: [{ titel: "Keine feste Oberfläche", text: "Leben und Zivilisation existieren in den Wolkenschichten." }, { titel: "Gemäßigte Schwebezone", text: "5–12 bar, 240–340 K – Hauptlebensraum der Aerothanen." }, { titel: "Helles Ringsystem", text: "Eispartikel und Staub zwischen 85.000 und 150.000 km." }, { titel: "Himmelsriesen", text: "Aufrechte, schwebende Giganten bis 3.000 m Höhe." }] },
-            { titel: "Einordnung", daten: [["Planeten-ID", "osselyr-saelith-iii"], ["Position", "Dritter Hauptplanet"], ["Heimatspezies", "Aerothanen (Gigantische Lebensformen)"], ["Monde", "Noch nicht individuell festgelegt"], ["Nachbarwelt", "Osselyr, Heimat der Floranoiden"]] }] },
-        "Astronomie": { intro: "Ein Gasriese im äußeren Osselyr-System.", abschnitte: [
-            { titel: "Bahndaten", daten: [["Jahreslänge", "ca. 4,57 Erdjahre"], ["Periapsis", "ca. 2,47 AE"], ["Apoapsis", "ca. 2,73 AE"], ["Bahnneigung", "1,4°"], ["Gebundene Rotation", "Nein – schnelle Eigenrotation"]] },
-            { titel: "Ringsystem", text: ["Das helle Ringsystem besteht überwiegend aus Eispartikeln und mineralischem Staub mit kleinen Gesteins- und Eisbrocken. Unterschiedlich dichte Bereiche, dynamische Lücken und feine Strukturen reichen von etwa 85.000 bis 150.000 km vom Planetenzentrum. Die Ringe werfen weite Schatten auf bestimmte Wolkenregionen und sind aus den oberen, teils auch aus tieferen Schichten sichtbar. Ringmonde sind noch nicht benannt."] },
-            { titel: "Magnetosphäre", liste: ["Intrinsisches Magnetfeld, Wechselwirkung mit dem Sternwind Saeliths", "Ausgedehnte Polarlichtregionen", "Strahlungsgürtel im planetennahen Raum", "Erhöhte Strahlung außerhalb geschützter Schichten", "Bedeutung für Navigation und Raumfahrt"] }] },
-        "Physik": { abschnitte: [{ titel: "Leichter Riese", text: ["Saelith III besitzt nur rund 0,38 Jupitermassen bei einem Radius von 62.000 km – seine mittlere Dichte liegt mit etwa 0,72 g/cm³ unter der von Wasser. Am Referenzniveau beträgt die Schwerkraft rund 12,45 m/s², die Fluchtgeschwindigkeit etwa 39 km/s."] }] },
-        "Planetare Struktur": { abschnitte: [{ titel: "Von außen nach innen", text: ["Zwischen gasförmigen und flüssigkeitsähnlichen inneren Schichten gibt es keine harte Grenze. Druck und Temperatur nehmen zum Zentrum hin stark zu; die tiefen Regionen sind für natürliche Aerothanen unbewohnbar."], schichten: [["Magnetosphäre", "Ausgedehnt, Strahlungsgürtel"], ["Obere Atmosphäre", "Dünn, photochemische Aerosole"], ["Kalte Wolkenregionen", "Ammoniakhaltige Silberwolken"], ["Übergangsschichten", "Goldschicht mit komplexen Aerosolen"], ["Gemäßigte Hochdruckregion", "Komplexe Biosphäre, Zivilisation"], ["Tiefe Wasserstoff-Helium-Atmosphäre", "Sturmzone, steigende Temperaturen"], ["Dichter Wasserstoff", "Möglicherweise elektrisch leitfähig"], ["Zentralbereich", "Erhöhter Anteil schwerer Elemente"]] }] },
-        "Geografie": { intro: "Keine Kontinente – Regionen aus Wolken und Strömungen.", abschnitte: [
-            { titel: "Atmosphärische Regionen", karten: [
-                { titel: "Aurumgürtel", text: "Goldfarbenes Wolkenband über mehrere Breitengrade mit zahlreichen Siedlungen – wichtigste Transport- und Handelsregion." },
-                { titel: "Silbermeer", text: "Helle, kalte Wolkenlandschaft mit Lichtreflexen des Ringsystems; Beobachtungs- und Forschungsgebiet." },
-                { titel: "Blaue Schluchten", text: "Tiefenregionen zwischen Wolkenmassen mit sichtbaren Druckschicht-Übergängen – Wanderungskorridore der Aerothanen." },
-                { titel: "Kronenwirbel", text: "Langlebiger Großwirbel von rund 18.000 km mit übereinanderliegenden Wirbelstrukturen – natürliche Landmarke des Planeten." },
-                { titel: "Leuchtgärten", text: "Regionen hoher biologischer Aktivität mit biolumineszenten Mikroorganismen – bedeutende Nahrungsgebiete." },
-                { titel: "Stille Tiefen", text: "Ruhige, geschützte Bereiche für Fortpflanzung, Ruhe und Siedlungen – ökologisch empfindlich." }] }] },
-        "Atmosphäre": { abschnitte: [
-            { titel: "Wolkenschichten", karten: [
-                { titel: "Äußerer Schleier (< 0,1 bar)", text: "Feine photochemische Aerosole, starke Strahlung, spezialisierte Mikroorganismen." },
-                { titel: "Silberwolken (0,1–1 bar)", text: "Sehr kalte, ammoniakhaltige, silberweiße Wolken – für erwachsene Aerothanen meist ungeeignet." },
-                { titel: "Goldschicht (1–5 bar)", text: "Goldene und ockerfarbene Wolken, wechselnde Nährstoffe, Übergang zum Lebensraum der Aerothanen." },
-                { titel: "Gemäßigte Schwebezone (5–12 bar)", text: "240–340 K, Dichte etwa 0,5–1 kg/m³, wasserhaltige Wolken, komplexe Nahrungsketten, Zentrum der Zivilisation." },
-                { titel: "Tiefe Sturmzone (12–40 bar)", text: "Steigende Temperaturen, gewaltige Konvektion, starke elektrische Aktivität, chemotrophe Lebensformen." },
-                { titel: "Hochdruckzone (> 40 bar)", text: "Zunehmend lebensfeindlich – Forschungsgebiet spezialisierter Sonden." }] }] },
-        "Klima": { abschnitte: [
-            { titel: "Stürme", daten: [["Großräumige Windströmungen", "100–300 km/h"], ["Starke Strömungsbänder", "300–600 km/h"], ["Extreme lokale Sturmregionen", "bis ca. 1.000 km/h"]], text: ["Dazu kommen langlebige Wirbelstürme, vertikale Konvektionsstürme, Blitzentladungen und kilometerhohe Wolkentürme. Für mitströmende Organismen ist nicht die Windgeschwindigkeit gefährlich, sondern abrupte Änderungen von Strömungsgeschwindigkeit und -richtung – gefürchtet sind Windscherungen zwischen benachbarten Schichten."] }] },
-        "Gewässer": { abschnitte: [{ titel: "Atmosphärischer Wasserkreislauf", text: ["Frei zugängliche Meere gibt es nicht. Wasser existiert als Wolken, schwebende Tröpfchen und wasserhaltige Aerosole. Starke Niederschläge fallen in tiefere Schichten, verdampfen dort bei steigender Temperatur und steigen wieder auf – ein geschlossener Kreislauf. Wasser ist eine wichtige Grundlage der einheimischen Biochemie."] }] },
-        "Geologie": { abschnitte: [{ titel: "Minerale ohne Gestein", text: ["Zugängliche Gesteinslandschaften fehlen. Mineralische Partikel stammen aus kosmischen Einträgen von Asteroiden und Kometen, aus metallischem und silikatischem Staub und aus chemischen Ausfällungen in verschiedenen Druckregionen. Mineralische Rohstoffe gewinnen die Aerothanen überwiegend durch Importe, Staubabscheidung und außerplanetaren Bergbau."] },
-            { titel: "Naturgefahren", liste: ["Extreme Windscherungen und gewaltige Sturmregionen", "Blitzentladungen", "Druck- und Temperaturüberschreitungen", "Chemisch aggressive Regionen", "Verlust technischer Auftriebssysteme", "Strahlung in oberen Schichten", "Krankheitserreger und Parasitenbefall", "Gefährliche Eintrittsbedingungen aus dem Weltraum"] }] },
-        "Biosphäre": { intro: "Eine vollständig atmosphärische Biosphäre.", abschnitte: [
-            { titel: "Leben in der Luft", text: ["Mikrobielles Leben besiedelt alle geeigneten Druckschichten; schwebende Wassertröpfchen sind Lebensräume. Chemotrophe Primärproduzenten nutzen chemische Konzentrationsunterschiede, phototrophe Organismen das Sternlicht in den oberen Regionen. Atmosphärische Zirkulation und Photochemie liefern reaktive Stoffe. Ausreichende Primärproduktion und Stofftransport sind Voraussetzung für die Existenz der Aerothanen."] },
-            { titel: "Lebensformgruppen", karten: [{ titel: "Atmosphärenplankton", text: "Mikroskopische Organismen in wasserhaltigen Aerosolen – Grundlage der Nahrungsketten." }, { titel: "Lichtschleier", text: "Flächige, teils transparente phototrophe Lebensformen in oberen Wolken." }, { titel: "Schwebegeflechte", text: "Zeitweise ausgedehnte Lebensgemeinschaften, keine intelligente Spezies." }, { titel: "Druckgleiter", text: "Bewegliche Tiere, räuberisch oder filtrierend, an wechselnde Druckschichten angepasst." }, { titel: "Wolkenparasiten", text: "Heften sich an größere Lebewesen – teils gefährlich für Aerothanen." }, { titel: "Tiefenorganismen", text: "Chemotrophe Lebensformen tiefer, heißer Hochdruckschichten." }] }] },
-        "Spezies": { intro: "Die Aerothanen – aufrechte Himmelsriesen.", abschnitte: [
-            { titel: "Aerothanen", text: ["Aerothanen sind gigantische atmosphärische Lebensformen von 500 bis 3.000 Metern Höhe mit aufrechter, vertikaler Körperarchitektur. Sie besitzen ein individuelles Bewusstsein, sind kein Schwarm und haben weder Flugflügel noch eine dinosaurierartige Gestalt. Biologische Auftriebskammern, tragende Faserstrukturen und dezentrale Stoffwechselzentren halten sie in der Schwebe. Sie verständigen sich über Druckwellen, elektrische Impulse und Licht."], daten: [["Körperhöhe", "500–3.000 m"], ["Lebenserwartung", "ca. 2.500–9.000 Jahre"], ["Kommunikation", "Druckwellen, elektrische Impulse, Licht"], ["Lebensraum", "Gemäßigte Hochdruckregionen"]] },
-            { titel: "Biologische Anpassung", liste: ["Extrem niedrige mittlere Körperdichte, große gasgefüllte Volumina", "Biologische Gewinnung leichter Gase, temperierte wasserstoffreiche Auftriebskammern", "Auftriebsmittelpunkt oberhalb des Schwerpunkts – aufrechte Schwebehaltung", "Lokale Regulierung der Gasvolumina bei wechselndem Druck", "Fortbewegung mit natürlichen Strömungen", "Keine natürliche Antigravitation – Überleben nur in geeigneten Schichten"] }] },
-        "Zivilisation": { abschnitte: [
-            { titel: "Dreidimensionale Siedlungen", text: ["Mehrere selbstverwaltete Gemeinschaften leben in beweglichen, dreidimensionalen Siedlungen auf künstlichen Auftriebsplattformen. Feste Straßen oder Grundstücke gibt es nicht; Versorgungsanlagen liegen in stabilen Druckschichten, verbunden durch atmosphärische Verkehrskorridore."] },
-            { titel: "Einrichtungen", liste: ["Medizinische Großanlagen und Forschungsstationen", "Atmosphärische Industrie und Gasaufbereitung", "Biologische Kultivierungsanlagen", "Kommunikationsstationen", "Künstliche Habitate für andere Spezies"] },
-            { titel: "Technologien", liste: ["Variable Auftriebsgeneratoren", "Atmosphärische Tiefenscanner", "Strömungsenergie-Konverter und Gasabscheider", "Makrobiologische Gewebestabilisatoren", "Druckwellen-Kommunikationsverstärker", "Rettungsplattformen und Transferstationen", "Schwebende Biokultivierungsanlagen und Membranfertiger"] },
-            { titel: "Besondere Orte", liste: ["Handelsgemeinschaft im Aurumgürtel", "Forschungsstation am Rand des Kronenwirbels", "Fortpflanzungsregion in den Stillen Tiefen", "Medizinisches Zentrum für gigantische Organismen", "Orbitale Transferstation", "Floranoidisch-aerothanische Forschungsstation", "Verlassene atmosphärische Plattform", "Tiefenobservatorium oberhalb der Hochdruckzone"] }] },
-        "Geschichte": { abschnitte: [{ titel: "Zeitleiste", zeitleiste: [["Anfänge", "Erste atmosphärische Mikroorganismen, größere schwebende Lebensformen"], ["Auftrieb", "Evolution natürlicher Auftriebssysteme und vertikaler Giganten"], ["Intelligenz", "Eigenständige Intelligenz, erste Gemeinschaften"], ["Technik", "Künstliche Auftriebstechnologien, bewegliche Siedlungen, Erschließung tieferer Schichten"], ["Gegenwart", "Außerplanetare Kommunikation; Kontakt mit den Floranoiden (wird später ausgearbeitet)"]] },
-            { titel: "Hinweis", text: ["Absolute historische Datierungen bleiben offen."] }] },
-        "Fraktionen": { abschnitte: [{ titel: "Politik", liste: ["Mehrere regionale Gemeinschaften mit eigenständigen Entscheidungen", "Nutzung atmosphärischer Regionen durch gemeinsame Vereinbarungen", "Schutz empfindlicher Lebensräume, Regulierung der Gasgewinnung", "Kontrolle gefährlicher Strömungsregionen, gemeinsame Rettungsmissionen", "Eigenständige diplomatische Vertretungen", "Verhältnis zu den Floranoiden noch nicht vollständig festgelegt", "Zugehörigkeit zu den APORIA-Hauptfraktionen offen"] }] },
-        "Rohstoffe": { abschnitte: [{ titel: "Rohstoffe", karten: [{ titel: "Gase", text: "Wasserstoff, Helium, Methan, Ammoniak, Wasserdampf, seltene Spurengase." }, { titel: "Chemie", text: "Kohlenwasserstoffe und chemische Energieträger." }, { titel: "Biologisch", text: "Biologisch produzierte Materialien und Faserverbundstoffe." }, { titel: "Partikel", text: "Atmosphärische Mineralpartikel; Eis und Minerale aus dem Ringsystem. Metalle überwiegend von außerhalb." }] }] },
-        "Erforschung": { abschnitte: [{ titel: "Forschungsfelder", liste: ["Atmosphärenphysik und planetare Strömungsdynamik", "Biologische Auftriebssysteme und Makrobiologie", "Atmosphärische Ökologie und Hochdruckbiologie", "Leichtbauwerkstoffe und flexible Membranen", "Wettervorhersage und Druckwellenkommunikation", "Atmosphärische Energietechnik und Gasaufbereitung", "Magnetosphärenforschung", "Dreidimensionale Siedlungsentwicklung"] },
-            { titel: "Hinweis", text: ["Die vorgeschlagenen atmosphärischen Parameter werden bei einer späteren Planetensimulation überprüft."] }] },
-        "Besonderheiten": { abschnitte: [
-            { titel: "Im Spiel", liste: ["Planetenbesuch ohne klassische Landung", "Navigation durch verschiedene Druckschichten", "Begegnungen mit kilometerhohen intelligenten Lebensformen", "Dreidimensionale Siedlungen besichtigen", "Spezialisierte Fahrzeuge entwickeln", "Handel mit Gasen und Biomaterialien", "Wetterabhängige Transport- und Rettungsmissionen", "Medizinische Hilfe für Aerothanen", "Ringsystem untersuchen"] },
-            { titel: "Visuelle Gestaltung", liste: ["Gold-blauer Gasplanet mit farbigen Wolkenbändern und hellem Ring", "Gewaltige Wirbel und kilometerhohe Wolkenlandschaften", "Aufrechte Aerothanen zwischen den Wolkenschichten", "Schwebende Plattformen, Membranen und Faserbögen", "Biolumineszente Mikroorganismen, Kondensation und Wassertröpfchen im Nahbereich"] },
-            { titel: "Hinweise für Besucher", liste: ["Atemluft mitführen – kein freier Sauerstoff", "Windscherungen und Sturmwarnungen beachten", "Strahlung in oberen Schichten"] }] },
+        "Allgemeines": { intro: "Saelith III auf einen Blick: Wolken, Ringe und Himmelsriesen.", abschnitte: hw("HW01", "HW31") },
+        "Astronomie": { intro: "Ein Gasriese im äußeren Osselyr-System.", abschnitte: [...hw("HW02"), ...ss("SS07"), ...hw("HW13", "HW14")] },
+        "Physik": { abschnitte: hw("HW03") },
+        "Planetare Struktur": { abschnitte: hw("HW04") },
+        "Geografie": { intro: "Keine Kontinente – Regionen aus Wolken und Strömungen.", abschnitte: hw("HW10") },
+        "Atmosphäre": { abschnitte: hw("HW05") },
+        "Klima": { abschnitte: hw("HW08") },
+        "Gewässer": { abschnitte: hw("HW11") },
+        "Geologie": { abschnitte: hw("HW12", "HW25") },
+        "Biosphäre": { intro: "Eine vollständig atmosphärische Biosphäre.", abschnitte: hw("HW15", "HW16") },
+        "Spezies": { intro: "Die Aerothanen – aufrechte Himmelsriesen.", abschnitte: [...hw("HW17", "HW18"), ...ss("SS13", "SS14")] },
+        "Zivilisation": { abschnitte: hw("HW19", "HW24", "HW26") },
+        "Geschichte": { abschnitte: hw("HW20") },
+        "Fraktionen": { abschnitte: hw("HW21") },
+        "Rohstoffe": { abschnitte: hw("HW22") },
+        "Erforschung": { abschnitte: hw("HW23") },
+        "Besonderheiten": { abschnitte: hw("HW27", "HW28", "HW29", "HW30") },
+        "Gaszusammensetzung": { abschnitte: hw("HW06") },
+        "Wolkenschichten": { abschnitte: hw("HW07") },
+        "Stürme": { abschnitte: hw("HW09") },
+        "Sternensystem": { intro: "Das Osselyr-System: Saelith, vier Hauptplaneten und zwei intelligente Spezies.", abschnitte: ss("SS01", "SS02", "SS03", "SS04", "SS05", "SS06", "SS08", "SS09", "SS10", "SS11", "SS12", "SS15", "SS16", "SS17", "SS18") },
         "Medienarchiv": { abschnitte: [] },
     },
 };
+if (hw.rest().length || ss.rest().length) throw new Error("Saelith III: nicht zugeordnete Quellabschnitte " + [...hw.rest(), ...ss.rest()].join(", "));

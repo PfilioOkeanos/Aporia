@@ -150,6 +150,29 @@ if (W.umbenennen) {
     for (const liste of Object.values(auto)) for (const a of liste) { um(a.daten); um(a.vergleich?.werte); }
 }
 
+// doppelteWeglassen: Datenzeilen der Beschreibung entfallen, wenn dasselbe schon weiter oben im Kapitel steht
+// (gleiche Zahlen bis 1 % Abweichung, oder gleicher Name mit enthaltenem Wert) – der Leser sieht jede Angabe nur einmal
+const weggelassen = [];   // „Name: Wert“ der entfallenen Zeilen – spezies/pruefen.mjs erkennt sie als abgedeckt an
+function ohneDoppel(abschnitte, vorher) {
+    const zahlen = (s) => (String(s).match(/\d[\d.]*(?:,\d+)?/g) ?? []).map((x) => Number(x.replace(/\.(?=\d{3}\b)/g, "").replace(",", ".")));
+    const klein = (s) => String(s).toLowerCase().replace(/^(ca\.|ungefähr|etwa)\s+/, "").replace(/[.\s]+$/, "");
+    const gesehen = vorher.flatMap((a) => a.daten ?? []);
+    const einheit = (s) => (String(s).match(/\d[\d.,]*\s*([^\s\d(),;]+)/)?.[1] ?? "").toLowerCase();
+    const stamm = (w) => new Set(String(w).toLowerCase().split(/[^a-zäöüß]+/).filter((x) => x.length >= 5).map((x) => x.slice(0, 5)));
+    const verwandt = (w, v, w2, v2) => einheit(v) === einheit(v2) || [...stamm(w)].some((x) => stamm(w2).has(x));
+    const doppelt = ([w, v]) => gesehen.some(([w2, v2]) => {
+        const z = zahlen(v), z2 = zahlen(v2);
+        if (z.length) return z.every((n) => z2.some((m) => Math.abs(n - m) <= Math.abs(m) * 0.01)) && verwandt(w, v, w2, v2);
+        return klein(w) === klein(w2) && klein(v2).includes(klein(v));
+    });
+    return abschnitte.map((a) => {
+        if (!a.daten) return a;
+        const daten = a.daten.filter((d) => !doppelt(d) || (weggelassen.push(`${d[0]}: ${d[1]}`), false));
+        gesehen.push(...daten);
+        return { ...a, daten };
+    }).map((a) => (a.daten && !a.daten.length ? (({ daten, ...r }) => r)(a) : a)).filter((a) => a.text || a.liste || a.daten || a.karten || a.zeitleiste);
+}
+
 // ---------- zusammenführen ----------
 const GRUPPE = { "Allgemeines": ["Weitere", "▤"], "Astronomie": ["Wissenschaft", "✧"], "Physik": ["Wissenschaft", "⚛"], "Planetare Struktur": ["Wissenschaft", "◈"], "Geografie": ["Natur", "△"], "Atmosphäre": ["Natur", "☁"], "Klima": ["Natur", "☀"], "Gewässer": ["Natur", "≈"], "Geologie": ["Wissenschaft", "◈"], "Biosphäre": ["Natur", "❧"], "Spezies": ["Zivilisation", "✿"], "Zivilisation": ["Zivilisation", "▥"], "Geschichte": ["Zivilisation", "▤"], "Fraktionen": ["Zivilisation", "◇"], "Rohstoffe": ["Weitere", "⬡"], "Erforschung": ["Weitere", "✧"], "Besonderheiten": ["Weitere", "✺"], "Medienarchiv": ["Weitere", "▣"], "Gaszusammensetzung": ["Natur", "☁"], "Wolkenschichten": ["Natur", "☁"], "Stürme": ["Natur", "☀"] };
 const kapitel = {};
@@ -159,7 +182,7 @@ for (const k of basis.kapitel) {
     kapitel[k.titel] = {
         gruppe, icon, intro: s.intro ?? `${k.titel} ${spec.genitiv}.`,
         ...(s.kopfbild ? { kopfbild: s.kopfbild, bild: s.kopfbild } : {}),
-        abschnitte: [...(s.vorne ?? []), ...(auto[k.titel] ?? []), ...(s.abschnitte ?? [])],
+        abschnitte: [...(s.vorne ?? []), ...(auto[k.titel] ?? []), ...(spec.doppelteWeglassen ? ohneDoppel(s.abschnitte ?? [], [...(s.vorne ?? []), ...(auto[k.titel] ?? [])]) : (s.abschnitte ?? []))],
     };
 }
 const verweise = [
@@ -185,6 +208,7 @@ const inhalt = {
     verknuepfungen: verweise, quellen,
     design: { farben: spec.farben },
     kapitel,
+    ...(weggelassen.length ? { weggelasseneDoppel: weggelassen } : {}),
 };
 fs.writeFileSync(ROOT + K.datenDatei.replace(/\.json$/, ".inhalt.json"), JSON.stringify(inhalt, null, 2) + "\n");
 const anzahl = Object.values(kapitel).reduce((s, k) => s + k.abschnitte.length, 0);

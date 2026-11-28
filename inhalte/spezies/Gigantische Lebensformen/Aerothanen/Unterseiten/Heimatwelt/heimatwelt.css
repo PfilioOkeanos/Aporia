@@ -1,8 +1,15 @@
-/* Heimatwelt · Saelith III */
-.ae-heimat { display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: center; gap: 1.2rem; padding: 1.1rem 1.3rem; border: 1px solid #78e0ea44; border-radius: 18px; background: radial-gradient(ellipse at 0% 50%, #78e0ea1f, transparent 60%), linear-gradient(160deg, #142038f0, #0d0f22f5); }
-.ae-heimat img { width: clamp(5rem, 14vw, 8rem); height: auto; aspect-ratio: 1; border-radius: 50%; object-fit: cover; box-shadow: 0 0 0 1px #78e0ea66, 0 0 40px #78e0ea44; }
-.ae-heimat h2 { margin: .2rem 0; font: 400 clamp(1.6rem, 3vw, 2.2rem) var(--ae-serif); color: var(--ae-perl); }
-.ae-knoepfe { display: flex; flex-wrap: wrap; gap: .5rem; margin: .6rem 0 0; }
-.ae-knoepfe a { padding: .45rem .9rem; border: 1px solid #f4ecf344; border-radius: 999px; color: var(--ae-perl) !important; text-decoration: none; font-size: .85rem; }
-.ae-knoepfe a:hover { background: #f4ecf31a; }
-@media (max-width: 520px) { .ae-heimat { grid-template-columns: minmax(0, 1fr); justify-items: start; } }
+/* Heimatwelt · Zusammenfassung zu Saelith III – Planet, Höhenprofil, Nachbarn, Weg ins Dossier */
+.ae-planet { position: relative; float: right; width: min(40%, 20rem); aspect-ratio: 1; margin: .2rem 0 1.4rem 2.2rem; }
+.ae-planet img { display: block; width: 100%; height: 100%; border-radius: 50%; object-fit: cover; box-shadow: 0 0 0 1px #78e0ea55, 0 0 70px #78e0ea33, inset -30px -20px 60px #000a; }
+.ae-planet::after { content: ""; position: absolute; left: -24%; right: -24%; top: 41%; height: 18%; border-radius: 50%; border: 2px solid #f4ecf355; box-shadow: 0 0 0 7px #e8b48a1c, 0 0 30px #c9a6ff33; transform: rotate(-14deg); pointer-events: none; }
+@media (min-width: 1400px) { .ae-planet { margin-right: clamp(-16rem, -12vw, -5rem); width: min(44%, 24rem); } }
+.ae-text ol.ae-profil { list-style: none; margin: 1.6rem 0 .6rem; padding: 0; display: grid; gap: 0; border-left: 2px solid transparent; border-image: linear-gradient(#78e0ea00, #78e0ea, #e8b48a 60%, #b8573a) 1; }
+.ae-profil li { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: baseline; gap: .2rem 1rem; max-width: none; padding: .9rem .4rem .9rem 1.8rem; border-bottom: 1px solid #c9a6ff1f; }
+.ae-profil li::before { content: ""; position: absolute; left: -7px; top: 1.45rem; width: 12px; height: 12px; border-radius: 50%; background: var(--ae-nacht); border: 2px solid var(--ae-leise); }
+.ae-profil b { font: 400 1.18rem var(--ae-serif); color: var(--ae-perl); }
+.ae-profil span { font: 700 .72rem var(--ae-sans); letter-spacing: .12em; color: var(--ae-leise); white-space: nowrap; }
+.ae-profil .ist-hier { padding-block: 1.3rem; background: linear-gradient(90deg, #e8b48a2e, transparent 85%); }
+.ae-profil .ist-hier::before { top: 1.85rem; background: var(--ae-rose); border-color: var(--ae-rose); box-shadow: 0 0 16px var(--ae-rose); }
+.ae-profil .ist-hier b { font-size: 1.4rem; color: var(--ae-rose); }
+.ae-profil small { grid-column: 1 / -1; font: 700 .64rem var(--ae-sans); letter-spacing: .2em; text-transform: uppercase; color: var(--ae-tuerkis); }
+@media (max-width: 760px) { .ae-planet { float: none; width: min(70%, 15rem); margin: .4rem auto 1.8rem; } }

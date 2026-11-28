@@ -98,6 +98,8 @@ Alle gebauten Seiten tragen `data-custom-dossier`. Der Atlas-Generator (`build-c
   daraus zeigt `_gemeinsam/heimatwelt-verweis.js` auf allen Speziesseiten den Kasten „Heimatwelt“ (Planetendossier + Sternenkarte).
   Eingebunden ist der Kasten in allen `<spezies>-basis.js`, in `_gemeinsam/spezies-navigation.js` und bei den Technoiden in `Hauptseite/Spezies.js`.
   Seiten, die schon selbst auf ihren Planeten verlinken, bleiben unverändert.
+- Quelltexte vollständig übernehmen (z. B. Saelith III): `quelltext-kapitel.mjs` liest ein Markdown-Dossier mit Abschnitten „### HW01 – Titel“ und liefert Kapitelabschnitte (`const hw = quellAbschnitte("Info_material/…/heimatwelt-referenz.md")`, dann `abschnitte: hw("HW02", "HW13")`). Nicht zugeordnete Abschnitte meldet `hw.rest()`.
+  `kapitelErgaenzen: true` legt fehlende Kapitel (z. B. „Sternensystem“) an; `doppelteWeglassen: true` streicht Datenzeilen, die das Kapitel schon berechnet zeigt (gleiche Zahl ±1 % mit gleicher Einheit oder verwandtem Namen). Die gestrichenen Zeilen stehen als `weggelasseneDoppel` in der Inhaltsdatei; `spezies/pruefen.mjs` sucht Zeilen aus `05_Heimatwelt/` und `Sternensystem/` dann auch im Planetendossier und erkennt diese Zeilen an.
 - Kharuun (Pyronoiden) ist von Hand gepflegt (`daten/dammernder-vulkanplanet-mit-gluhenden-lavaseen.inhalt.json`) und hat keine Beschreibungsdatei.
 
 ## Alle übrigen Körper der Sternenkarte (Sterne, Planeten, Monde, Gürtel, Kometen, Asteroiden, Nebel)

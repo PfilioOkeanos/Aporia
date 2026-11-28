@@ -1,46 +1,112 @@
 # Gravanten – Gesellschaft
 
-# Gravanten – Gesellschaft
+**Dossierversion:** V4.0
 
-## Gesellschaftliche Grundstruktur
+## 1. Gesellschaftliche Grundstruktur
 
-- Jedes Individuum besitzt eine eigenständige Identität und Persönlichkeit
-- Gemeinschaften entstehen freiwillig und nicht durch biologische Verschmelzung
-- Sowohl Einzelgänger als auch dauerhaft miteinander wandernde Gruppen
-- Kleine Familienverbände mit großen räumlichen Abständen
-- Keine verpflichtende Zugehörigkeit zu einem Wanderverband
-- Gesellschaftliche Kontakte können über große Entfernungen aufrechterhalten werden
+Gravanten sind eigenständige intelligente Individuen.
 
-## Wanderkultur
+Sie leben als Einzelwanderer, freiwillige Partner, Familienverbände oder größere Wandergemeinschaften.
 
-- Wanderwege besitzen eine zentrale gesellschaftliche Bedeutung
-- Individuen entwickeln persönliche Wandergebiete und bevorzugte Routen
-- Regelmäßige Zusammenkünfte an natürlichen Versammlungsplätzen
-- Jungtiere lernen sichere Wanderwege von älteren Individuen
-- Kenntnisse über Untergrund, Wetter und Nahrungsvorkommen werden generationenübergreifend vermittelt
-- Wanderungen können mehrere Jahrzehnte dauern
+Eine verpflichtende biologische Gemeinschaftsbindung existiert nicht.
 
-## Beziehungen und Kultur
+## 2. Individuelle Identität
 
-- Individuelle Freundschaften, Familienbindungen und Partnerschaften
-- Unterschiedliche Persönlichkeiten und gesellschaftliche Überzeugungen
-- Tiefenfrequente Gesänge als kulturelle Ausdrucksform
-- Gemeinsame rhythmische Bodenimpulse während großer Zusammenkünfte
-- Künstlerische Gestaltung von Landschaftsflächen und Gesteinsformationen
-- Historische Erinnerungen werden durch Erzählungen und aufgezeichnete Schwingungsmuster bewahrt
+Jeder Gravante entwickelt eine persönliche Identität.
 
-## Architektur und Lebensweise
+Individuen unterscheiden sich durch:
 
-- Keine gewöhnlichen Städte für die Gravanten selbst
-- Offene Versammlungslandschaften mit tragfähigem Untergrund
-- Großflächige Ruheplätze mit natürlichen oder künstlichen Stützformationen
-- Technologische Infrastruktur wird überwiegend in zugänglichen Landschaftsbereichen errichtet
-- Zusammenarbeit mit kleineren intelligenten Spezies bei feinmechanischen Tätigkeiten
-- Kleinere Spezies können mit Zustimmung eines Gravanten temporäre Beobachtungsplattformen auf dessen Körper betreiben
+- Erinnerungen.
+- Persönlichkeit.
+- Interessen.
+- Körperarchitektur.
+- Bewegungsgewohnheiten.
+- Individuelle Belastungs- und Strukturfarbmuster.
+- Persönliche Beziehungen.
+- Wissenschaftliche und kulturelle Überzeugungen.
 
-## Individuelle Freiheit
+## 3. Lebensverbünde
 
-- Jeder Gravante entscheidet selbst über seinen Lebensweg
-- Kein Individuum besitzt eine angeborene Herrschaftsposition
-- Körpergröße allein bestimmt weder Ansehen noch politischen Einfluss
-- Unterschiedliche Lebensphilosophien und persönliche Ziele innerhalb der Spezies
+Langfristige Partnerschaften werden als Lebensverbünde bezeichnet.
+
+Lebensverbünde können emotional, familiär, beruflich oder wissenschaftlich motiviert sein.
+
+Eine Partnerschaft setzt keine Fortpflanzung voraus.
+
+Die Verbindung zweier Organismen während einer Fortpflanzungsphase erfolgt ausschließlich freiwillig.
+
+## 4. Nachwuchs und Erziehung
+
+Die Betreuung junger Gravanten besitzt eine besondere gesellschaftliche Bedeutung.
+
+Neben gewöhnlicher Wissensvermittlung müssen junge Individuen lernen, ihre wachsende Körperarchitektur zu kontrollieren.
+
+Wichtige Lernbereiche:
+
+- Lastwahrnehmung.
+- Sichere Verankerung.
+- Auswahl geeigneter Kontaktflächen.
+- Bewegungskoordination.
+- Schutzkonfiguration.
+- Umweltbeobachtung.
+- Sozialverhalten.
+- Kommunikation über Körperhaltungen.
+
+## 5. Wanderverbände
+
+Wanderverbände bestehen aus freiwillig gemeinsam reisenden Individuen.
+
+Sie koordinieren ihre Bewegungen, um gegenseitige Behinderungen und übermäßige Landschaftsbelastungen zu vermeiden.
+
+Geschwächte Individuen können durch gemeinschaftliche Planung und mechanische Unterstützung sicherere Wanderabschnitte nutzen.
+
+## 6. Gesellschaftliche Berufe
+
+- Lastarchitekten.
+- Wanderfugenmediziner.
+- Strukturfarben-Diagnostiker.
+- Verbundentwicklungsbetreuer.
+- Wanderkorridorplaner.
+- Kontaktflächenforscher.
+- Spannfaserbiologen.
+- Mechanische Signalübersetzer.
+- Landschaftshistoriker.
+- Interstellare Kontaktvermittler.
+
+## 7. Ältere Individuen
+
+Ältere Gravanten verfügen häufig über umfangreiche Erfahrungen mit Landschaften, historischen Veränderungen und mechanischen Belastungssituationen.
+
+Sie übernehmen Beratungs-, Lehr- und Forschungsaufgaben.
+
+Alter begründet keine automatische politische Herrschaft.
+
+## 8. Siedlungen und Infrastruktur
+
+Klassische dicht bebaute Städte sind für ausgewachsene Gravanten ungeeignet.
+
+Gesellschaftliche Zentren bestehen überwiegend aus offenen und mechanisch geeigneten Landschaftsbereichen.
+
+Dort befinden sich:
+
+- Versammlungsflächen.
+- Medizinische Spannwerkstationen.
+- Verbundentwicklungsplätze.
+- Gemeinsame Ruhebereiche.
+- Wissensarchive.
+- Technische Forschungsanlagen.
+- Kontaktstationen für kleinere Spezies.
+
+## 9. Gesellschaftliche Konflikte
+
+Konflikte entstehen unter anderem durch:
+
+- Überschneidungen wichtiger Wandergebiete.
+- Konkurrenz um mineralstoffreiche Nahrungsflächen.
+- Unterschiedliche Vorstellungen biologischer Selbstbestimmung.
+- Technische Eingriffe in natürliche Körperentwicklung.
+- Gefährdung bestehender Wanderrouten.
+- Ungleichen Zugang zu medizinischen Einrichtungen.
+- Vorurteile gegenüber ungewöhnlichen Körperarchitekturen.
+
+Gravanten sind weder grundsätzlich friedfertig noch grundsätzlich aggressiv. Ihr Verhalten wird durch individuelle Entscheidungen und gesellschaftliche Bedingungen bestimmt.

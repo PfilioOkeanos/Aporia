@@ -102,8 +102,8 @@ function hoehenmesser(s) {
 
 const wolken = `<span class="ae-wolken" aria-hidden="true"><i></i><i></i></span>`;
 
-function hero(von, s, meta) {
-    return `<header class="ae-hero" style="--fokus:${s.fokus ?? "50% 50%"}">
+function hero(von, s) {
+    return `<header class="ae-hero" style="--fokus:${s.fokus ?? "50% 50%"}"${himmelAttr(von, s.heroBild)}>
 ${bildTag(von, s.heroBild, "ae-hero-bild", "eager").replace("<img", '<img fetchpriority="high"')}
 ${wolken}
 ${hoehenmesser(s)}
@@ -112,11 +112,23 @@ ${pfad(von, s)}
 <p class="ae-kicker"><span>Höhenschicht ${s.schicht}</span><span>${esc(s.hoehe)}</span></p>
 <h1>${esc(s.label)}</h1>
 <p class="ae-unterzeile">${esc(s.unter)}</p>
-${meta ? `<p class="ae-meta">${meta}</p>` : ""}
 </div>
 </header>`;
 }
 
+// Himmel: bildschirmfeste Bildebene hinter dem Text (keine seitenhohe Ebene). Beim Lesen blendet sie zum Bild
+// des Abschnitts in Bildschirmmitte über (data-himmel). Abschnitte ohne eigenes Bild lassen den Himmel stehen.
+const himmel = (von, b) => `<div class="ae-himmel" aria-hidden="true"><img class="ist-an" src="${zu(von, b.vor)}" alt="" decoding="async"><img alt="" decoding="async"></div>`;
+const himmelAttr = (von, b) => b ? ` data-himmel="${zu(von, b.vor)}"` : "";
+// Bildnachweis am Abschnittsanfang: nennt das Werk, das gerade den Himmel bildet, und öffnet es groß
+const himmelsbild = (von, b, text) => b ? `<button type="button" class="ae-werk-bild ae-himmelsbild" data-gross="${zu(von, b.orig)}" data-vor="${zu(von, b.vor)}" data-titel="${esc(b.titel)}" data-kategorie="${esc(b.kategorie)}" aria-label="Himmelsbild ${esc(b.titel)} groß ansehen"><span>Im Himmel</span>${esc(text ?? b.titel)}</button>` : "";
+const windLinie = `<span class="ae-wind" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>`;
+const abschnittKopf = (von, nr, titel, id, b, bildtext) => `<header class="ae-kapitel-kopf">
+${windLinie}
+<span class="ae-nr" aria-hidden="true">${esc(nr)}</span>
+<div class="ae-h2"><h2${id ? ` id="${id}"` : ""}>${esc(titel)}</h2></div>
+${himmelsbild(von, b, bildtext)}
+</header>`;
 // ---------- Kapitel mit passendem Bild ----------
 const woerter = (t) => new Set(t.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").split(/[^a-zß0-9]+/).filter((w) => w.length >= 5).map((w) => w.slice(0, 7)));
 const code = (t) => (t.match(/\b([TF])0*(\d{1,2})\b/) ?? []).slice(1).join("");
@@ -154,38 +166,24 @@ function kapitelHtml(von, s) {
             if (b) k.einschuebe.push(b);
             return b ? `${h3}\n${einschub(b)}` : h3;
         });
-        // Kapitel mit Bildern an ihren Einzelthemen: Text in voller Breite, Kopfband zeigt das erste Bild
-        if (k.einschuebe.length) { k.voll = true; k.bild = k.einschuebe[0]; }
+        // Kapitel mit Bildern an ihren Einzelthemen: Text breiter; der Himmel zeigt ein anderes Werk (kein Bild doppelt)
+        if (k.einschuebe.length) k.voll = true;
     }
     for (const k of kaps) if (!k.bild) k.bild = nimm(bildFuer(k, frei));
-    const reserve = pool.length ? pool : [s.heroBild];
-    let z = 0;
-    for (const k of kaps) if (!k.bild) k.bild = frei.shift() ?? reserve[z++ % reserve.length];
+    // Kapitel ohne freies Bild behalten den Himmel des vorigen Kapitels – kein Werk erscheint zweimal
+    for (const k of kaps) if (!k.bild) k.bild = frei.shift() ?? null;
     let j = 0;
     while (frei.length && kaps.length) kaps[j++ % kaps.length].text += "\n" + einschub(frei.shift());
 
     const html = kaps.map((k, n) => {
-        const b = k.bild;
         const quelle = k.letztes ? `\n<p class="ae-quelle">Quelle: Info_material · Aerothanen · ${esc(k.datei)}</p>` : "";
-        return `<details class="ae-kapitel${k.voll ? " ae-kapitel--voll" : n % 2 ? " ae-kapitel--links" : ""}" id="${k.id}"${n === 0 ? " open" : ""}>
-<summary class="ae-band">
-${bildTag(von, b, "ae-band-bild")}
-<span class="ae-wind" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
-<span class="ae-nr">${esc(k.nr === "◇" ? String(n + 1).padStart(2, "0") : k.nr)}</span><h2>${esc(k.titel)}</h2><span class="ae-chevron" aria-hidden="true"></span>
-</summary>
-<div class="ae-kapitel-koerper">
+        return `<section class="ae-kapitel${k.voll ? " ae-kapitel--voll" : ""}" id="${k.id}"${himmelAttr(von, k.bild)}>
+${abschnittKopf(von, k.nr === "◇" ? String(n + 1).padStart(2, "0") : k.nr, k.titel, "", k.bild)}
 <div class="ae-text">${k.text}${quelle}</div>
-${k.voll ? "" : werk(von, b, "ae-werk ae-tafel")}
-</div>
-</details>`;
+</section>`;
     }).join("\n");
-    const bilder = new Set(kaps.map((k) => k.bild)).size + (html.match(/ae-einschub/g) ?? []).length;
-    return { html, anzahl: kaps.length, bilder };
+    return { html, anzahl: kaps.length };
 }
-const galerie = (von, liste, titel = "Bildschicht") => liste.length ? `<section class="ae-galerie-block" aria-label="${esc(titel)}">
-<div class="ae-h2"><h2><span>${esc(titel)}</span></h2><small>${liste.length} ${liste.length === 1 ? "Bild" : "Bilder"}</small></div>
-<div class="ae-galerie">${liste.map((b) => werk(von, b)).join("\n")}</div>
-</section>` : "";
 
 // ---------- Seitengerüst ----------
 function seite(s, inhalt) {
@@ -209,6 +207,7 @@ function seite(s, inhalt) {
 </head>
 <body class="ae ae-seite-${s.key}" data-page="${s.route}" data-section="spezies" data-eigenes-design>
 <div data-aporia-topbar></div>
+${himmel(von, s.heroBild)}
 <div class="aporia-page-frame ae-frame">
 <div data-aporia-sidebar></div>
 <main class="ae-main" id="inhalt">
@@ -240,7 +239,13 @@ function uebersicht(von) {
         [GRUPPE.datei, GRUPPE.name, "Alle Spezies dieser Gruppe", `data-route="${GRUPPE.route}"`],
         ["inhalte/spezies/Spezies_übersicht/Spezies.html", "Speziesarchiv", "Alle Gruppen", `data-route="spezies"`],
     ];
-    return `<header class="ae-start" style="--bild:url('${zu(von, s.heroBild.vor)}')">
+    // Steckbrief-Liste („Name – Wert“) als Instrumentenleiste; die Körpergröße bekommt ihre Skala direkt am Wert.
+    // „Die Himmelsriesen“ steht schon als Leitspruch im Kopf und entfällt im Text.
+    const skala = `<span class="ae-skala" aria-hidden="true"><span class="ae-skala-balken"></span></span>`;
+    const text = daten.map((k) => `${k.vorspann ? "" : `<h3>${esc(k.titel)}</h3>`}${mdLinks(k.html)}`).join("\n")
+        .replace(/<p>Die Himmelsriesen<\/p>\n?/, "")
+        .replace(/<ul>((?:<li>[^<]* – [^<]*<\/li>)+)<\/ul>/, (m, lis) => `<ul class="ae-instrumente">${lis.replace(/<li>([^<]*) – ([^<]*)<\/li>/g, (x, name, wert) => `<li><span class="ae-instrument-name">${name}</span><i class="ae-strich"> – </i><b>${wert}</b>${/Körpergröße/.test(name) ? skala : ""}</li>`)}</ul>`);
+    return `<header class="ae-start"${himmelAttr(von, s.heroBild)}>
 ${wolken}
 <div class="ae-start-text">
 ${pfad(von, s)}
@@ -248,7 +253,6 @@ ${pfad(von, s)}
 <img class="ae-emblem" src="${zu(von, EMBLEM)}" alt="" width="132" height="132">
 <h1 class="ae-wortmarke">Aerothanen</h1>
 <p class="ae-claim">Die Himmelsriesen</p>
-<p class="ae-unterzeile">Intelligente Schwebewesen mit riesigen Auftriebsorganen und spezialisierten Nervensystemen.</p>
 <a class="ae-aufstieg" href="${zu(von, `${S}/${SEITE.allgemeines.datei}`)}" data-route="${SEITE.allgemeines.route}">Aufstieg beginnen <span aria-hidden="true">↑</span></a>
 </div>
 <figure class="ae-start-fenster">
@@ -256,56 +260,79 @@ ${pfad(von, s)}
 ${hoehenmesser(s)}
 </figure>
 </header>
-<section class="ae-flugdaten" aria-labelledby="flugdaten-titel">
-${bildTag(von, flugbild, "ae-flugdaten-bild")}
-<span class="ae-wind" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
-<div class="ae-h2"><h2 id="flugdaten-titel"><span>Flugdaten</span></h2><small>Speziesdaten</small></div>
-<div class="ae-flugdaten-raster">
-<div class="ae-panel ae-flugdaten-text">${daten.map((k) => `${k.vorspann ? "" : `<h3>${esc(k.titel)}</h3>`}${mdLinks(k.html)}`).join("\n")}
+<div class="ae-inhalt">
+<section class="ae-kapitel ae-flugdaten" aria-labelledby="flugdaten-titel"${himmelAttr(von, flugbild)}>
+${abschnittKopf(von, "01", "Flugdaten", "flugdaten-titel", flugbild)}
+<div class="ae-text">${text}
 <p class="ae-quelle">Quelle: Info_material · Aerothanen · ${esc(s.info[0])}</p></div>
-<div class="ae-panel ae-groesse" aria-label="Körpergröße 500 Meter bis 3 Kilometer">
-<p class="ae-kicker"><span>Körpergröße</span></p>
-<div class="ae-groesse-skala"><span class="ae-groesse-balken"></span><b class="ae-groesse-min">500 m</b><b class="ae-groesse-max">3 km</b></div>
-<p class="ae-groesse-zahl">500 m <span>bis</span> 3 km</p>
-<p class="ae-leise">Lebensraum: Atmosphären großer Gasplaneten</p>
-</div>
-</div>
 </section>
-<section class="ae-panorama" aria-labelledby="panorama-titel">
-${bildTag(von, panorama, "ae-panorama-bild")}
-<span class="ae-wind ae-wind--stark" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+<section class="ae-panorama" aria-labelledby="panorama-titel"${himmelAttr(von, panorama)}>
 <div class="ae-panorama-text">
 <p class="ae-kicker"><span>Heimatwelt</span><span>${esc(HEIMAT.welt)}</span></p>
-<div class="ae-h2"><h2 id="panorama-titel"><span>${esc(panorama.titel)}</span></h2></div>
-<p>Lebensraum: Atmosphären großer Gasplaneten.</p>
-<a class="ae-aufstieg ae-aufstieg--leise" href="${zu(von, `${S}/${SEITE.heimatwelt.datei}`)}" data-route="${SEITE.heimatwelt.route}">Zur Heimatwelt <span aria-hidden="true">↑</span></a>
+<div class="ae-h2"><h2 id="panorama-titel">${esc(panorama.titel)}</h2></div>
+<p class="ae-knoepfe"><a class="ae-aufstieg ae-aufstieg--leise" href="${zu(von, `${S}/${SEITE.heimatwelt.datei}`)}" data-route="${SEITE.heimatwelt.route}">Zur Heimatwelt <span aria-hidden="true">↑</span></a>${himmelsbild(von, panorama, "Bild groß ansehen")}</p>
 </div>
 </section>
-<aside class="ae-verweise" aria-label="Verknüpfungen">
-<div class="ae-h2"><h2><span>Verknüpfungen</span></h2></div>
-<ul>${links.map(([h, t, u, r]) => `<li><a href="${zu(von, h)}" ${r}><strong>${esc(t)}</strong><span>${esc(u)}</span></a></li>`).join("")}</ul>
-</aside>`;
+<section class="ae-kapitel ae-verweise" aria-labelledby="verweise-titel">
+${abschnittKopf(von, "02", "Verknüpfungen", "verweise-titel", null)}
+<ul class="ae-wegweiser">${links.map(([h, t, u, r]) => `<li><a href="${zu(von, h)}" ${r}><strong>${esc(t)}</strong><span>${esc(u)}</span></a></li>`).join("")}</ul>
+</section>
+</div>`;
 }
 
 function unterseite(s) {
     return (von) => {
         const k = kapitelHtml(von, s);
-        const heimat = s.key === "heimatwelt" ? `<section class="ae-heimat" aria-label="Heimatwelt ${esc(HEIMAT.welt)}">
-<img src="${zu(von, HEIMAT.bild)}" alt="${esc(HEIMAT.welt)}" width="320" height="320" loading="lazy" decoding="async">
-<div><p class="ae-kicker"><span>Heimatwelt</span><span>Gasriese</span></p><h2>${esc(HEIMAT.welt)}</h2><p class="ae-leise">${esc(HEIMAT.system)} · Stern ${esc(HEIMAT.stern)}</p>
-<p class="ae-knoepfe"><a href="${zu(von, HEIMAT.dossier)}">Planetendossier ›</a><a href="${zu(von, "Menüs/Sternenkarte/Sternenkarte.html")}?system=osselyr-stern&amp;objekt=osselyr-saelith-iii">Sternenkarte ›</a></p></div>
-</section>` : "";
-        return `${hero(von, s, `${k.anzahl} Kapitel · ${k.bilder} ${k.bilder === 1 ? "Bild" : "Bilder"}`)}
+        return `${hero(von, s)}
 <div class="ae-inhalt">
-${heimat}
-<div class="ae-werkzeug"><p class="ae-kicker"><span>${k.anzahl} Kapitel</span></p><button type="button" class="ae-klappen" data-ae-klappen aria-pressed="false">Alle aufklappen</button></div>
-<div class="ae-kapitel-liste">
 ${k.html}
-</div>
 </div>`;
     };
 }
 
+// Heimatwelt: nur die Zusammenfassung – alle Einzelheiten (Heimatwelt-Referenz und Sternensystem) stehen im
+// Planetendossier Saelith III (scripts/planeten/heimatwelten/saelith-iii.mjs liest sie aus dem Infomaterial)
+const DOSSIER_KAPITEL = [["06 – Atmosphäre", "Atmosphäre"], ["20 – Wolkenschichten", "Wolkenschichten"], ["21 – Stürme", "Stürme"], ["05 – Geografie", "Geografie"], ["10 – Biosphäre", "Biosphäre"], ["11 – Spezies", "Spezies"], ["12 – Zivilisation", "Zivilisation"], ["22 – Sternensystem", "Sternensystem"]];
+const SCHICHTEN = [["Äußerer Schleier", "unter 0,1 bar"], ["Silberwolken", "0,1–1 bar"], ["Goldschicht", "1–5 bar"], ["Gemäßigte Schwebezone", "5–12 bar", true], ["Tiefe Sturmzone", "12–40 bar"], ["Hochdruckzone", "über 40 bar"]];
+function heimatwelt(von) {
+    const s = SEITE.heimatwelt;
+    const b1 = bildVon("Kosmischer Wirbelsturm über Gasriesen"), b2 = bildVon("Schwebende Megastadt über dem Sturmriesen"), b3 = bildVon("Leuchtende Welten im Sturmhimmel"), b4 = bildVon("Schwebende Megastadt unter dem Gasriesen");
+    const dossierOrdner = path.posix.dirname(path.posix.dirname(HEIMAT.dossier));
+    const fakten = [["Planetentyp", "Gasriese mit Ringsystem"], ["Durchmesser", "124.000 km"], ["Schwerkraft", "ca. 1,27 g"], ["Tageslänge", "13,5 Stunden"], ["Jahreslänge", "ca. 4,57 Erdjahre"], ["Zentralstern", "Saelith · K1 V"]];
+    return `${hero(von, s)}
+<div class="ae-inhalt">
+<section class="ae-kapitel" aria-labelledby="welt-titel"${himmelAttr(von, b1)}>
+${abschnittKopf(von, "01", `${HEIMAT.welt} – Welt der Himmelsriesen`, "welt-titel", b1)}
+<div class="ae-text">
+<figure class="ae-planet"><img src="${zu(von, HEIMAT.bild)}" alt="${esc(HEIMAT.welt)}" width="320" height="320" loading="lazy" decoding="async"></figure>
+<p>Die Aerothanen stammen von ${esc(HEIMAT.welt)}, dem dritten Hauptplaneten des ${esc(HEIMAT.system)}s. Der gold-blaue Gasriese mit hellem Ringsystem besitzt keine feste Oberfläche – Leben, Siedlungen und Geschichte der Himmelsriesen spielen sich vollständig in seiner Atmosphäre ab.</p>
+<p>Ihr Lebensraum ist die gemäßigte Schwebezone: Unter kalten Silberwolken und der goldenen Wolkenschicht schweben sie zwischen gegenläufigen Windbändern, gewaltigen Wirbeln und leuchtenden Mikroorganismen.</p>
+<ul class="ae-instrumente">${fakten.map(([n, w]) => `<li><span class="ae-instrument-name">${esc(n)}</span><i class="ae-strich" aria-hidden="true"></i><b>${esc(w)}</b></li>`).join("")}</ul>
+</div>
+</section>
+<section class="ae-kapitel" aria-labelledby="profil-titel"${himmelAttr(von, b2)}>
+${abschnittKopf(von, "02", "Höhenprofil der Atmosphäre", "profil-titel", b2)}
+<div class="ae-text">
+<p>Je tiefer, desto dichter, wärmer und stürmischer. Nur eine Schicht bietet den Himmelsriesen Halt – dort, wo Druck, Wärme und Nahrung zusammenpassen.</p>
+<ol class="ae-profil">${SCHICHTEN.map(([n, d, hier]) => `<li${hier ? ' class="ist-hier"' : ""}><b>${esc(n)}</b><span>${esc(d)}</span>${hier ? "<small>Lebensraum der Aerothanen · 240–340 K</small>" : ""}</li>`).join("")}</ol>
+</div>
+</section>
+<section class="ae-kapitel" aria-labelledby="nachbarn-titel"${himmelAttr(von, b3)}>
+${abschnittKopf(von, "03", "Zwei Spezies, ein Stern", "nachbarn-titel", b3)}
+<div class="ae-text">
+<p>${esc(HEIMAT.welt)} teilt das ${esc(HEIMAT.system)} mit Osselyr, der Heimat der Floranoiden. Beide Spezies entstanden unabhängig voneinander und können die Welt der anderen nur mit technischen Schutzsystemen betreten – verbunden sind sie durch Forschung, Wissensaustausch und möglichen Handel.</p>
+<p class="ae-knoepfe"><a href="${zu(von, "inhalte/himmelskoerper/planeten/details/osselyr/hauptseite/index.html")}">Osselyr ›</a><a href="${zu(von, HEIMAT.karte)}">Sternenkarte ›</a></p>
+</div>
+</section>
+<section class="ae-kapitel" aria-labelledby="dossier-titel"${himmelAttr(von, b4)}>
+${abschnittKopf(von, "04", "Im Planetendossier weiterlesen", "dossier-titel", b4)}
+<div class="ae-text">
+<p>Alle Einzelheiten zu ${esc(HEIMAT.welt)} – Bahn, Physik, Wolkenschichten, Regionen, Lebensformen und das ganze ${esc(HEIMAT.system)} – stehen im Planetendossier.</p>
+<ul class="ae-wegweiser"><li><a href="${zu(von, HEIMAT.dossier)}"><strong>Planetendossier</strong><span>${esc(HEIMAT.welt)} · Hauptseite</span></a></li>${DOSSIER_KAPITEL.map(([o, t]) => `<li><a href="${zu(von, `${dossierOrdner}/unterseiten/${o}/index.html`)}"><strong>${esc(t)}</strong><span>Kapitel ${o.slice(0, 2)}</span></a></li>`).join("")}</ul>
+</div>
+</section>
+</div>`;
+}
 // ---------- Medien: Ordner werden beim Bauen gelesen – neue Dateien erscheinen nach erneutem Ausführen ----------
 const AUDIO = "assets/audio/Alle Spezies+Übersicht/Gigantische Lebensformen/Aerothanen";
 const VIDEO = "assets/videos/Alle Spezies+Übersicht/Gigantische Lebensformen/Aerothanen";
@@ -336,8 +363,7 @@ function medien(von) {
     const klaenge = AUDIO_KATS.reduce((n, k) => n + k.dateien.length, 0);
     const ordnerHinweis = (o) => `<p class="ae-ordner"><span>Ordner</span><code>${esc(o)}</code></p>`;
     const welle = `<span class="ae-welle" aria-hidden="true">${Array.from({ length: 28 }, (_, i) => `<i style="--h:${(28 + 62 * Math.abs(Math.sin(i * 1.7))).toFixed(0)}%;--v:${(i * 0.09).toFixed(2)}s"></i>`).join("")}</span>`;
-    return `${hero(von, s, `${BILDER.length} Bilder · ${klaenge} Klänge · ${VIDEOS.length} Videos · ${MODELL_DATEIEN.length} Modelle`)}
-<div class="ae-inhalt ae-medien">
+    return `${hero(von, s)}<div class="ae-inhalt ae-medien">
 <section class="ae-karussell" id="bildarchiv" aria-labelledby="bildarchiv-titel">
 <div class="ae-h2"><h2 id="bildarchiv-titel"><span>Bild-Karussell</span></h2><small>${BILDER.length} Bilder</small></div>
 <div class="ae-filter" role="group" aria-label="Bilder filtern"><button type="button" aria-pressed="true" data-filter="">Alle <small>${BILDER.length}</small></button>${kats.map((k) => `<button type="button" aria-pressed="false" data-filter="${esc(k)}">${esc(k)} <small>${BILDER.filter((b) => b.kategorie === k).length}</small></button>`).join("")}</div>
@@ -451,14 +477,14 @@ body:has(.aporia-topbar details[open], .aporia-topbar.is-menu-open) .ae-reiter {
 .ae-pfad a { color: var(--ae-perl); text-decoration: none; opacity: .85; }
 .ae-pfad a:hover { opacity: 1; text-decoration: underline; }
 
-/* Inhalt – nutzt die Breite: Text und Bildtafel nebeneinander */
-.ae-inhalt { display: grid; gap: 1.4rem; max-width: 104rem; margin: 0 auto; padding: clamp(1.2rem, 3vw, 2.6rem) clamp(.8rem, 3vw, 2.6rem); }
-.ae-panel { border: 1px solid var(--ae-linie); border-radius: 18px; background: linear-gradient(160deg, #1a1b3ae6, #0d0f22f2); box-shadow: inset 0 1px 0 #f4ecf31a, 0 18px 40px #0007; padding: clamp(1rem, 2.5vw, 1.6rem); }
-.ae-werkzeug { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
-.ae-klappen { padding: .5rem 1rem; border: 1px solid #c9a6ff66; border-radius: 999px; background: transparent; color: var(--ae-perl); font: 700 .72rem var(--ae-sans); letter-spacing: .14em; text-transform: uppercase; cursor: pointer; }
-.ae-klappen:hover { background: #c9a6ff1f; }
+/* Himmel: bildschirmfeste Bildebene hinter allem (position: fixed – keine seitenhohe Ebene, nicht endlos animiert) */
+.ae-himmel { position: fixed; inset: 0; z-index: -1; pointer-events: none; background: var(--ae-nacht); }
+.ae-himmel img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 1.4s ease; }
+.ae-himmel img.ist-an { opacity: 1; }
+.ae-himmel::after { content: ""; position: absolute; inset: 0; background: linear-gradient(0deg, #0b0d1cb3, transparent 38%), linear-gradient(90deg, #0b0d1c99, #0b0d1c33 55%, #0b0d1c14); }
+.ae-main { overflow-x: clip; }
 
-/* Wind: feine Luftströme, die über Bilder ziehen (nur so groß wie ihr Band) */
+/* Wind: feine Luftströme (nur so groß wie ihr Band) */
 .ae-wind { position: absolute; inset: 0; z-index: 1; overflow: hidden; pointer-events: none; }
 .ae-wind i { position: absolute; left: -40%; width: 38%; height: 1px; border-radius: 1px; background: linear-gradient(90deg, transparent, #f4ecf3cc 45%, #c9e9ff 55%, transparent); opacity: 0; animation: ae-windstoss 7s linear infinite; }
 .ae-wind i:nth-child(1) { top: 22%; animation-delay: 0s; }
@@ -466,56 +492,73 @@ body:has(.aporia-topbar details[open], .aporia-topbar.is-menu-open) .ae-reiter {
 .ae-wind i:nth-child(3) { top: 58%; width: 30%; animation-delay: 3.1s; }
 .ae-wind i:nth-child(4) { top: 73%; width: 46%; animation-delay: 4.4s; animation-duration: 8s; }
 .ae-wind i:nth-child(5) { top: 33%; width: 24%; animation-delay: 5.7s; animation-duration: 6s; }
-.ae-wind--stark i { height: 2px; }
 @keyframes ae-windstoss { 0% { transform: translateX(0) translateY(0); opacity: 0; } 12% { opacity: .75; } 70% { opacity: .5; } 100% { transform: translateX(380%) translateY(-14px); opacity: 0; } }
 
-/* Kapitel: Bildband als Kopf, aufgeklappt Text + Bildtafel */
-.ae-kapitel-liste { display: grid; gap: 1rem; }
-.ae-kapitel { position: relative; border: 1px solid var(--ae-linie); border-radius: 20px; background: linear-gradient(160deg, #161735f2, #0b0d1cf7); box-shadow: inset 0 1px 0 #f4ecf314, 0 16px 36px #0007; overflow: hidden; }
-.ae-band { position: relative; isolation: isolate; display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: end; gap: 1rem; min-height: clamp(7.5rem, 14vw, 11rem); padding: 1.1rem 1.4rem; cursor: pointer; list-style: none; overflow: hidden; }
-.ae-band::-webkit-details-marker { display: none; }
-.ae-band-bild { position: absolute; inset: -8% -4%; z-index: -2; width: 108%; height: 116%; object-fit: cover; object-position: center 35%; animation: ae-drift 26s ease-in-out infinite alternate; }
-.ae-kapitel--links .ae-band-bild { animation-direction: alternate-reverse; }
-@keyframes ae-drift { from { transform: translateX(-2.5%) scale(1.02); } to { transform: translateX(2.5%) scale(1.08); } }
-.ae-band::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, #0b0d1cf0 0%, #0b0d1cb3 38%, #0b0d1c40 75%, #0b0d1c26), linear-gradient(0deg, #0b0d1ce6, transparent 70%); }
-.ae-kapitel--links .ae-band::after { background: linear-gradient(270deg, #0b0d1cf0 0%, #0b0d1cb3 38%, #0b0d1c40 75%, #0b0d1c26), linear-gradient(0deg, #0b0d1ce6, transparent 70%); }
-.ae-band h2 { position: relative; z-index: 2; margin: 0; font: 400 clamp(1.25rem, 2.6vw, 1.9rem)/1.2 var(--ae-serif); color: var(--ae-perl); letter-spacing: .03em; text-shadow: 0 2px 14px #000c; }
-.ae-band .ae-nr, .ae-band .ae-chevron { position: relative; z-index: 2; }
-.ae-nr { min-width: 2.8rem; padding: .3rem .55rem; border: 1px solid #78e0ea77; border-radius: 999px; background: #0b0d1caa; font: 700 .72rem var(--ae-sans); letter-spacing: .1em; text-align: center; color: var(--ae-tuerkis); }
-.ae-chevron { align-self: center; width: .8rem; height: .8rem; border-right: 2px solid var(--ae-rose); border-bottom: 2px solid var(--ae-rose); transform: rotate(45deg); transition: transform .25s; }
-.ae-kapitel[open] .ae-chevron { transform: rotate(-135deg); }
-.ae-kapitel:hover { border-color: #c9a6ff66; }
-.ae-kapitel[open] .ae-band { min-height: clamp(6rem, 9vw, 8rem); }
-.ae-kapitel-koerper { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(16rem, .85fr); gap: clamp(1.2rem, 3vw, 2.8rem); padding: clamp(1.1rem, 2.6vw, 2.2rem); }
-.ae-kapitel--links .ae-kapitel-koerper { grid-template-columns: minmax(16rem, .85fr) minmax(0, 1.35fr); }
-.ae-kapitel--links .ae-tafel { order: -1; }
-.ae-tafel { align-self: start; position: sticky; top: calc(var(--aporia-topbar-height, 78px) + 4.5rem); }
-.ae-tafel .ae-werk-bild { box-shadow: 0 0 0 1px #f2c7a544, 0 24px 60px #000b, 0 0 40px #c9a6ff22; border-radius: 16px; }
+/* Fluss: Abschnitte gehen ohne Kästen ineinander über; zwischen ihnen öffnet sich der Himmel */
+.ae-inhalt { max-width: 104rem; margin: 0 auto; padding: 0 clamp(1rem, 5vw, 5rem) clamp(3rem, 8vh, 6rem); }
+.ae-inhalt > * { min-width: 0; }
+.ae-kapitel { --luft: clamp(7rem, 34vh, 18rem); position: relative; isolation: isolate; max-width: 60rem; padding-top: var(--luft); scroll-margin-top: calc(var(--aporia-topbar-height, 78px) + 3.4rem); }
+.ae-kapitel:first-child { --luft: clamp(2.6rem, 7vw, 5rem); }
+/* weicher Dunst hinter dem Text – ohne Rand, an allen Seiten auslaufend */
+.ae-kapitel::before { content: ""; position: absolute; z-index: -1; top: calc(var(--luft) - 4.5rem); bottom: -3.5rem; left: -6rem; right: -6rem; background: #0b0d1cd9; pointer-events: none;
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 6rem, #000 calc(100% - 6rem), transparent), linear-gradient(180deg, transparent, #000 4.5rem, #000 calc(100% - 3.5rem), transparent);
+    -webkit-mask-composite: source-in; mask-image: linear-gradient(90deg, transparent, #000 6rem, #000 calc(100% - 6rem), transparent), linear-gradient(180deg, transparent, #000 4.5rem, #000 calc(100% - 3.5rem), transparent); mask-composite: intersect; }
+.ae-kapitel-kopf { position: relative; display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: end; gap: .4rem 1.2rem; margin-bottom: 1.6rem; padding-bottom: 1.1rem; }
+.ae-kapitel-kopf::after { content: ""; position: absolute; left: 0; right: -40vw; bottom: 0; height: 1px; background: linear-gradient(90deg, var(--ae-rose), #c9a6ff88 25%, transparent 70%); }
+.ae-kapitel-kopf .ae-wind { inset: auto -40vw -1.4rem 0; height: 3rem; }
+.ae-nr { font: 400 clamp(2.6rem, 6vw, 4.8rem)/.85 var(--ae-serif); letter-spacing: .02em; background: var(--ae-schillern); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.ae-kapitel-kopf .ae-h2 { margin: 0; font-size: clamp(1.55rem, 3.4vw, 2.6rem); }
+.ae-werk-bild.ae-himmelsbild { grid-column: 1 / -1; justify-self: start; display: inline-flex; align-items: baseline; gap: .6rem; width: auto; max-width: 100%; aspect-ratio: auto; padding: .32rem .85rem; border: 1px solid #f4ecf333; border-radius: 999px; background: #0b0d1c66; color: var(--ae-leise); font: 500 .78rem/1.3 var(--ae-sans); text-align: left; overflow: visible; }
+.ae-himmelsbild span { flex: 0 0 auto; font: 700 .6rem var(--ae-sans); letter-spacing: .2em; text-transform: uppercase; color: var(--ae-tuerkis); }
+.ae-werk-bild.ae-himmelsbild:hover { color: var(--ae-perl); border-color: #e8b48a88; }
+.ae-panel { border: 1px solid var(--ae-linie); border-radius: 18px; background: linear-gradient(160deg, #1a1b3ae6, #0d0f22f2); padding: clamp(1rem, 2.5vw, 1.6rem); }
+.ae-knoepfe { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem; margin: 1rem 0 0; }
+.ae-knoepfe > a:not(.ae-aufstieg) { padding: .45rem .95rem; border: 1px solid #f4ecf344; border-radius: 999px; color: var(--ae-perl); text-decoration: none; font-size: .88rem; }
+.ae-knoepfe > a:not(.ae-aufstieg):hover { background: #f4ecf31a; }
+.ae-knoepfe .ae-himmelsbild { grid-column: auto; }
+/* Wegweiser: Verweise als Linien statt Kacheln */
+.ae-wegweiser { list-style: none; margin: 1.2rem 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 14rem), 1fr)); gap: 0 2rem; }
+.ae-text ul.ae-wegweiser { border: 0; padding: 0; }
+.ae-text ul.ae-wegweiser li { padding: 0; border: 0; }
+.ae-text ul.ae-wegweiser li::before { display: none; }
+.ae-wegweiser a { display: grid; gap: .15rem; padding: .85rem 0 .9rem; border-top: 1px solid #c9a6ff40; text-decoration: none; transition: border-color .2s; }
+.ae-wegweiser a:hover { border-top-color: var(--ae-rose); }
+.ae-wegweiser strong { color: var(--ae-perl); font: 400 1.15rem var(--ae-serif); letter-spacing: .02em; }
+.ae-wegweiser a:hover strong { color: var(--ae-rose); }
+.ae-wegweiser span { color: var(--ae-leise); font-size: .84rem; }
+/* Instrumentenleiste: Kennwerte frei über dem Himmel, getrennt nur durch feine Linien */
+.ae-text ul.ae-instrumente { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 11.5rem), 1fr)); gap: 0 2rem; margin: 1.6rem 0 2rem; padding: 0; border: 0; }
+.ae-text ul.ae-instrumente li { max-width: none; padding: .9rem 0 1rem; border: 0; border-top: 1px solid #c9a6ff44; }
+.ae-text ul.ae-instrumente li::before { display: none; }
+.ae-instrument-name { display: block; font: 700 .64rem var(--ae-sans); letter-spacing: .2em; text-transform: uppercase; color: var(--ae-tuerkis); }
+.ae-strich { display: block; width: 1.6rem; height: 2px; margin: .5rem 0 .55rem; background: var(--ae-schillern); font-size: 0; color: transparent; overflow: hidden; }
+.ae-instrumente b { display: block; font: 400 clamp(1.1rem, 2vw, 1.45rem)/1.25 var(--ae-serif); color: var(--ae-perl); }
+.ae-skala { position: relative; display: block; height: 2.2rem; margin-top: .8rem; border-bottom: 1px solid #f4ecf344; background: repeating-linear-gradient(90deg, #f4ecf333 0 1px, transparent 1px 10%); }
+.ae-skala-balken { position: absolute; bottom: 0; left: 16.6%; right: 0; height: 62%; border-radius: 6px 6px 0 0; background: var(--ae-schillern); box-shadow: 0 0 20px #c9a6ff55; }
 
 /* Text mit Gestaltungselementen */
-.ae-text { min-width: 0; font-size: 1.02rem; }
+.ae-text { min-width: 0; font-size: 1.03rem; }
 .ae-text > :first-child { margin-top: 0; }
-.ae-text > p:first-of-type { font-size: 1.12rem; color: var(--ae-perl); }
+.ae-text > p:first-of-type { font-size: 1.13rem; color: var(--ae-perl); }
 .ae-text p, .ae-text li { max-width: 74ch; }
-.ae-text h3 { position: relative; margin: 1.8rem 0 .7rem; padding-left: 2.2rem; font: 400 1.22rem/1.3 var(--ae-serif); color: var(--ae-rose); }
+.ae-text h3 { position: relative; margin: 2rem 0 .7rem; padding-left: 2.2rem; font: 400 1.25rem/1.3 var(--ae-serif); color: var(--ae-rose); }
 .ae-text h3::before { content: ""; position: absolute; left: 0; top: .62em; width: 1.6rem; height: 2px; background: var(--ae-schillern); box-shadow: 0 0 10px #c9a6ff88; }
-.ae-text ul { list-style: none; display: grid; gap: 0; margin: .6rem 0 1.1rem; padding: .2rem 0 .2rem; border-left: 2px solid transparent; border-image: var(--ae-schillern) 1; }
+.ae-text ul { list-style: none; display: grid; gap: 0; margin: .6rem 0 1.1rem; padding: .2rem 0; border-left: 2px solid transparent; border-image: var(--ae-schillern) 1; }
 .ae-text ul li { position: relative; padding: .45rem .4rem .45rem 2rem; border-bottom: 1px solid #c9a6ff1a; }
 .ae-text ul li::before { content: ""; position: absolute; left: .85rem; top: 1.05em; width: .7rem; height: 2px; background: var(--ae-tuerkis); box-shadow: 4px -4px 0 -0.5px #78e0ea66; transform: translateY(-50%); }
 .ae-text ol { margin: .8rem 0 1.1rem; padding-left: 1.4rem; display: grid; gap: .35rem; }
 .ae-text ol li::marker { color: var(--ae-rose); font-weight: 700; }
-.ae-fakten { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 14rem), 1fr)); gap: .55rem; margin: 1rem 0; }
-.ae-fakten div { position: relative; padding: .7rem .9rem .7rem 1.1rem; border: 1px solid var(--ae-linie); border-radius: 12px; background: radial-gradient(ellipse at 0% 0%, #78e0ea18, transparent 70%), #0b0d1cb3; overflow: hidden; }
-.ae-fakten div::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 3px; background: var(--ae-schillern); }
-.ae-fakten dt { font: 700 .66rem var(--ae-sans); letter-spacing: .16em; text-transform: uppercase; color: var(--ae-tuerkis); }
-.ae-fakten dd { margin: .2rem 0 0; color: var(--ae-perl); }
-.ae-tabelle { overflow-x: auto; margin: 1rem 0; border: 1px solid var(--ae-linie); border-radius: 12px; }
+.ae-fakten { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 13rem), 1fr)); gap: 0 1.8rem; margin: 1.2rem 0; }
+.ae-fakten div { padding: .75rem 0 .85rem; border-top: 1px solid #c9a6ff44; }
+.ae-fakten dt { font: 700 .64rem var(--ae-sans); letter-spacing: .18em; text-transform: uppercase; color: var(--ae-tuerkis); }
+.ae-fakten dd { margin: .25rem 0 0; color: var(--ae-perl); }
+.ae-tabelle { overflow-x: auto; margin: 1.2rem 0; }
 .ae-tabelle table { width: 100%; border-collapse: collapse; font-size: .92rem; }
-.ae-tabelle th, .ae-tabelle td { padding: .55rem .75rem; border-bottom: 1px solid var(--ae-linie); text-align: left; vertical-align: top; }
-.ae-tabelle th { color: var(--ae-tuerkis); font-weight: 700; background: #c9a6ff12; }
+.ae-tabelle th, .ae-tabelle td { padding: .6rem .75rem .6rem 0; border-bottom: 1px solid #c9a6ff2e; text-align: left; vertical-align: top; }
+.ae-tabelle th { color: var(--ae-tuerkis); font: 700 .7rem var(--ae-sans); letter-spacing: .14em; text-transform: uppercase; border-bottom-color: #c9a6ff66; }
 .ae-text strong { color: var(--ae-perl); }
 .ae-text .ae-kicker { margin: 0 0 .6rem; }
-.ae-quelle { margin: 1.4rem 0 0; padding-top: .8rem; border-top: 1px solid var(--ae-linie); font-size: .74rem; color: var(--ae-leise); }
+.ae-quelle { margin: 1.6rem 0 0; font-size: .74rem; color: var(--ae-leise); }
 
 /* Werke (Bilder): immer im eigenen Seitenverhältnis – nichts wird abgeschnitten */
 .ae-werk { margin: 0; }
@@ -525,19 +568,18 @@ body:has(.aporia-topbar details[open], .aporia-topbar.is-menu-open) .ae-reiter {
 .ae-werk figcaption { display: grid; gap: .1rem; padding: .55rem .2rem 0; }
 .ae-werk figcaption strong { font: 500 .88rem/1.3 var(--ae-sans); color: var(--ae-perl); }
 .ae-werk figcaption span { font: 700 .62rem var(--ae-sans); letter-spacing: .16em; text-transform: uppercase; color: var(--ae-leise); }
-/* Einschub: Bild mitten im Text, passend zur Zwischenüberschrift */
-.ae-einschub { float: right; width: min(46%, 24rem); margin: .3rem 0 1.1rem 1.6rem; }
-.ae-einschub .ae-werk-bild { border-radius: 14px; box-shadow: 0 0 0 1px #c9a6ff44, 0 16px 40px #0009; }
+/* Einschub: Bild neben seinem Thema; auf breiten Fenstern ragt es aus der Textspalte in den Himmel */
+.ae-einschub { float: right; width: min(46%, 24rem); margin: .3rem 0 1.2rem 1.8rem; }
+.ae-einschub .ae-werk-bild { background: transparent; border-radius: 16px; box-shadow: 0 0 0 1px #f4ecf322, 0 26px 60px #000a, 0 0 50px #c9a6ff1f; }
 .ae-text::after { content: ""; display: block; clear: both; }
-/* Kapitel mit Bildern an ihren Einzelthemen: Text in voller Breite, Bilder stehen neben ihrem Thema */
-.ae-kapitel--voll .ae-kapitel-koerper { grid-template-columns: minmax(0, 1fr); }
-.ae-kapitel--voll .ae-text p, .ae-kapitel--voll .ae-text li { max-width: 82ch; }
-/* Schmale Textspalte: Einschub-Bild über dem Text statt daneben (Textspalte als Container) */
+.ae-kapitel--voll .ae-text p, .ae-kapitel--voll .ae-text li { max-width: 80ch; }
 .ae-text { container-type: inline-size; }
 @container (max-width: 40rem) {
-    .ae-einschub { float: none; width: 100%; max-width: 30rem; margin: .4rem 0 1.1rem; }
+    .ae-einschub { float: none; width: 100%; max-width: 30rem; margin: .4rem 0 1.2rem; }
 }
-
+@media (min-width: 1400px) {
+    .ae-einschub { width: min(52%, 28rem); margin-right: clamp(-18rem, -14vw, -6rem); }
+}
 /* Großansicht */
 .ae-gross { width: 100vw; height: 100dvh; max-width: none; max-height: none; margin: 0; padding: 0; border: 0; background: #05060cf2; color: var(--ae-perl); }
 .ae-gross::backdrop { background: #000c; }
@@ -556,22 +598,19 @@ body:has(.aporia-topbar details[open], .aporia-topbar.is-menu-open) .ae-reiter {
 .ae .aporia-kapitel { --kapitel-akzent: #e8b48a; --kapitel-nacht: #0b0d1c; --kapitel-text: #f4ecf3; max-width: 104rem; margin: 1rem auto 0; padding: 0 clamp(.8rem, 3vw, 2rem); }
 
 /* Handy und schmale Fenster */
-@media (max-width: 1100px) {
-    .ae-kapitel-koerper, .ae-kapitel--links .ae-kapitel-koerper { grid-template-columns: minmax(0, 1fr); }
-    .ae-kapitel--links .ae-tafel { order: 0; }
-    .ae-tafel { position: static; order: -1; max-width: 34rem; }
-}
 @media (max-width: 760px) {
     .ae { background-attachment: scroll; }
+    .ae-himmel::after { background: linear-gradient(0deg, #0b0d1c99, #0b0d1c40 50%, #0b0d1c66); }
     .ae-hero { min-height: 62svh; }
-    .ae-hero::after { background: linear-gradient(0deg, var(--ae-nacht) 4%, #0b0d1cc4 42%, #0b0d1c26 78%, #0b0d1c80); }
+    .ae-hero::after { background: linear-gradient(0deg, #0b0d1c 0%, #0b0d1cb8 40%, #0b0d1c26 78%, #0b0d1c80); }
     .ae-hoehenmesser { top: 18%; bottom: 30%; right: .7rem; }
     .ae-hoehenmarke { font-size: .62rem; right: 26px; }
-    .ae-band { min-height: 8.5rem; padding: .9rem; gap: .7rem; }
-    .ae-band::after, .ae-kapitel--links .ae-band::after { background: linear-gradient(0deg, #0b0d1cf2 10%, #0b0d1c80 60%, #0b0d1c33); }
-    .ae-kapitel-koerper { padding: 1rem .9rem 1.2rem; gap: 1rem; }
-    .ae-tafel { max-width: none; }
-    .ae-einschub { float: none; width: 100%; margin: .4rem 0 1rem; }
+    .ae-inhalt { padding-inline: 1rem; }
+    .ae-kapitel { --luft: 40svh; }
+    .ae-kapitel::before { left: -1rem; right: -1rem; top: calc(var(--luft) - 3.5rem);
+        -webkit-mask-image: linear-gradient(180deg, transparent, #000 3.5rem, #000 calc(100% - 3rem), transparent); mask-image: linear-gradient(180deg, transparent, #000 3.5rem, #000 calc(100% - 3rem), transparent); }
+    .ae-kapitel-kopf { gap: .3rem .8rem; }
+    .ae-einschub { float: none; width: 100%; margin: .4rem 0 1.1rem; }
     .ae-text { font-size: 1rem; }
     .ae-text h3 { padding-left: 1.8rem; }
     .ae-text h3::before { width: 1.2rem; }
@@ -581,83 +620,64 @@ body:has(.aporia-topbar details[open], .aporia-topbar.is-menu-open) .ae-reiter {
     .ae-gross-zurueck { left: .3rem; } .ae-gross-weiter { right: .3rem; }
 }
 @media (prefers-reduced-motion: reduce) {
-    .ae-wolken i, .ae-wind i, .ae-band-bild { animation: none; }
+    .ae-wolken i, .ae-wind i { animation: none; }
     .ae-wind { display: none; }
-    .ae-werk-bild img, .ae-chevron { transition: none; }
+    .ae-himmel img, .ae-werk-bild img { transition: none; }
 }
 `;
 
 const SEITEN_CSS = {
-    uebersicht: `/* Übersicht · Wolkendecke – Startfenster mit Wortmarke, Flugdaten und Gestalten */
-.ae-start { position: relative; isolation: isolate; display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); align-items: center; gap: clamp(1rem, 4vw, 3rem); min-height: calc(100svh - var(--aporia-topbar-height, 78px) - 3.2rem); padding: clamp(1.4rem, 4vw, 3.4rem) clamp(1rem, 5vw, 4rem); overflow: hidden; border-bottom: 1px solid var(--ae-linie); }
-.ae-start::before { content: ""; position: absolute; inset: -6%; z-index: -2; background: var(--bild) center 40% / cover; filter: blur(26px) saturate(1.3) brightness(.55); }
-.ae-start::after { content: ""; position: absolute; inset: 0; z-index: -1; background: radial-gradient(ellipse 70% 60% at 30% 60%, #0b0d1c33, #0b0d1cd9 75%), linear-gradient(0deg, var(--ae-nacht), transparent 30%); }
+    uebersicht: `/* Übersicht · Wolkendecke – Startfenster mit Wortmarke, danach Flugdaten, Panorama und Wegweiser im Himmel */
+.ae-start { position: relative; isolation: isolate; display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); align-items: center; gap: clamp(1rem, 4vw, 3rem); min-height: calc(100svh - var(--aporia-topbar-height, 78px) - 3.2rem); padding: clamp(1.4rem, 4vw, 3.4rem) clamp(1rem, 5vw, 5rem); overflow: hidden; }
+.ae-start::after { content: ""; position: absolute; inset: 0; z-index: -1; background: radial-gradient(ellipse 70% 60% at 30% 55%, #0b0d1c4d, #0b0d1cb3 80%); }
 .ae-start-text { position: relative; z-index: 3; display: grid; gap: .8rem; justify-items: start; min-width: 0; container-type: inline-size; }
 .ae-emblem { width: clamp(84px, 11vw, 132px); height: auto; aspect-ratio: 1; border-radius: 50%; object-fit: cover; box-shadow: 0 0 0 1px #f2c7a588, 0 0 0 8px #c9a6ff14, 0 0 50px #c9a6ff66; animation: ae-schweben 9s ease-in-out infinite; }
 @keyframes ae-schweben { 50% { transform: translateY(-8px); } }
 .ae-wortmarke { margin: 0; font: 400 min(6.4rem, 13.5cqi)/.95 var(--ae-serif); letter-spacing: .1em; text-transform: uppercase; background: var(--ae-schillern); background-size: 200% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; animation: ae-schillern 14s ease-in-out infinite; }
 @keyframes ae-schillern { 50% { background-position: 100% 0; } }
 .ae-claim { margin: 0; font: 400 clamp(1.3rem, 2.6vw, 2rem) var(--ae-serif); letter-spacing: .3em; text-transform: uppercase; color: var(--ae-rose); }
-.ae-start .ae-unterzeile { max-width: 34rem; color: var(--ae-text); font-family: var(--ae-sans); font-size: clamp(1rem, 1.6vw, 1.15rem); }
 .ae-aufstieg { display: inline-flex; align-items: center; gap: .6rem; margin-top: .6rem; padding: .85rem 1.5rem; border-radius: 999px; background: var(--ae-schillern); color: var(--ae-nacht) !important; font: 700 .85rem var(--ae-sans); letter-spacing: .14em; text-transform: uppercase; text-decoration: none; box-shadow: 0 12px 30px #c9a6ff44; transition: transform .25s; }
 .ae-aufstieg:hover { transform: translateY(-3px); }
+.ae-aufstieg--leise { margin-top: 0; background: #0b0d1ccc; color: var(--ae-perl) !important; border: 1px solid #f2c7a588; box-shadow: none; }
 .ae-start-fenster { position: relative; z-index: 2; justify-self: center; width: min(100%, 26rem); margin: 0; }
 .ae-start-fenster .ae-werk-bild { aspect-ratio: 2 / 3; border-radius: 999px 999px 24px 24px; box-shadow: 0 0 0 1px #f2c7a566, 0 30px 80px #000a, 0 0 70px #c9a6ff33; }
 .ae-start-fenster .ae-werk-bild img { object-fit: cover; }
 .ae-start-fenster .ae-hoehenmesser { right: -1.6rem; }
-.ae-flugdaten, .ae-verweise { max-width: 104rem; margin: 0 auto; padding: clamp(1.4rem, 3vw, 2.6rem) clamp(.8rem, 3vw, 2.6rem) 0; }
-/* Flugdaten vor dem Leviathan im Sturm – Bild als Hintergrund des Abschnitts, mit Wind */
-.ae-flugdaten { position: relative; isolation: isolate; overflow: hidden; padding-bottom: clamp(1.4rem, 3vw, 2.6rem); border-radius: 0 0 28px 28px; }
-.ae-flugdaten-bild { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; object-position: center 30%; opacity: .55; animation: ae-drift 30s ease-in-out infinite alternate; }
-.ae-flugdaten::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, var(--ae-nacht) 0%, #0b0d1cd9 45%, #0b0d1c66 100%), linear-gradient(0deg, var(--ae-nacht), transparent 40%); }
-/* Panorama: Heimat der Himmelsriesen als breites Bildband */
-.ae-panorama { position: relative; isolation: isolate; display: grid; align-items: end; min-height: clamp(22rem, 48vw, 36rem); margin: clamp(1.4rem, 3vw, 2.6rem) 0 0; overflow: hidden; border-block: 1px solid var(--ae-linie); }
-.ae-panorama-bild { position: absolute; inset: -6% -3%; z-index: -2; width: 106%; height: 112%; object-fit: cover; animation: ae-drift 34s ease-in-out infinite alternate; }
-.ae-panorama::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(0deg, var(--ae-nacht) 0%, #0b0d1c99 35%, transparent 70%), linear-gradient(90deg, #0b0d1cb3, transparent 55%); }
-.ae-panorama-text { position: relative; z-index: 2; display: grid; gap: .6rem; justify-items: start; max-width: 40rem; padding: clamp(1.4rem, 4vw, 3.4rem) clamp(1rem, 5vw, 4rem); }
-.ae-panorama-text p { margin: 0; }
-.ae-aufstieg--leise { background: #0b0d1ccc; color: var(--ae-perl) !important; border: 1px solid #f2c7a588; box-shadow: none; }
-.ae-flugdaten-raster { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 1rem; }
-.ae-flugdaten-text ul { list-style: none; padding: 0; display: grid; gap: .4rem; }
-.ae-flugdaten-text li { padding: .55rem .8rem; border: 1px solid var(--ae-linie); border-radius: 12px; background: #0b0d1c99; }
-.ae-flugdaten-text h3 { font: 400 1.15rem var(--ae-serif); color: var(--ae-rose); }
-.ae-groesse { display: grid; align-content: center; gap: .9rem; }
-.ae-groesse-skala { position: relative; height: 3.2rem; margin-top: 1.6rem; border-bottom: 1px solid #f4ecf344; background: repeating-linear-gradient(90deg, #f4ecf333 0 1px, transparent 1px 10%); }
-.ae-groesse-balken { position: absolute; bottom: 0; left: 16.6%; right: 0; height: 60%; border-radius: 8px 8px 0 0; background: var(--ae-schillern); box-shadow: 0 0 24px #c9a6ff55; }
-.ae-groesse-min, .ae-groesse-max { position: absolute; top: -1.3rem; font: 700 .7rem var(--ae-sans); color: var(--ae-leise); }
-.ae-groesse-min { left: 16.6%; transform: translateX(-50%); } .ae-groesse-max { right: 0; }
-.ae-groesse-zahl { margin: 0; font: 400 clamp(1.8rem, 4vw, 2.6rem)/1 var(--ae-serif); color: var(--ae-perl); }
-.ae-groesse-zahl span { font-size: .5em; color: var(--ae-leise); }
-.ae-verweise ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr)); gap: .7rem; }
-.ae-verweise a { display: grid; gap: .15rem; padding: .9rem 1.1rem; border: 1px solid var(--ae-linie); border-radius: 14px; background: linear-gradient(160deg, #1a1b3ae6, #0d0f22f2); text-decoration: none; transition: border-color .2s, transform .2s; }
-.ae-verweise a:hover { border-color: #e8b48a88; transform: translateY(-2px); }
-.ae-verweise strong { color: var(--ae-perl); font-weight: 700; }
-.ae-verweise span { color: var(--ae-leise); font-size: .85rem; }
+/* Panorama: ein offenes Wolkenfenster – der Himmel zeigt die schwebende Stadt, darüber nur Titel und Weg */
+.ae-panorama { position: relative; display: grid; align-items: end; min-height: clamp(26rem, 86vh, 52rem); padding-bottom: clamp(1rem, 4vh, 3rem); }
+.ae-panorama-text { display: grid; gap: .7rem; justify-items: start; max-width: 42rem; text-shadow: 0 2px 18px #000c; }
+.ae-panorama .ae-h2 { margin: 0; font-size: clamp(1.8rem, 4.4vw, 3.4rem); }
+.ae-panorama .ae-knoepfe { margin: .4rem 0 0; }
 @media (max-width: 860px) {
-    .ae-start { grid-template-columns: minmax(0, 1fr); min-height: 0; text-align: left; }
+    .ae-start { grid-template-columns: minmax(0, 1fr); min-height: 0; }
     .ae-start-fenster { width: min(78%, 20rem); order: -1; }
     .ae-start-fenster .ae-hoehenmesser { right: -1.1rem; }
-    .ae-flugdaten-raster { grid-template-columns: minmax(0, 1fr); }
+    .ae-panorama { min-height: 70svh; }
 }
 @media (prefers-reduced-motion: reduce) { .ae-emblem, .ae-wortmarke { animation: none; } }
 `,
-    heimatwelt: `/* Heimatwelt · Saelith III */
-.ae-heimat { display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: center; gap: 1.2rem; padding: 1.1rem 1.3rem; border: 1px solid #78e0ea44; border-radius: 18px; background: radial-gradient(ellipse at 0% 50%, #78e0ea1f, transparent 60%), linear-gradient(160deg, #142038f0, #0d0f22f5); }
-.ae-heimat img { width: clamp(5rem, 14vw, 8rem); height: auto; aspect-ratio: 1; border-radius: 50%; object-fit: cover; box-shadow: 0 0 0 1px #78e0ea66, 0 0 40px #78e0ea44; }
-.ae-heimat h2 { margin: .2rem 0; font: 400 clamp(1.6rem, 3vw, 2.2rem) var(--ae-serif); color: var(--ae-perl); }
-.ae-knoepfe { display: flex; flex-wrap: wrap; gap: .5rem; margin: .6rem 0 0; }
-.ae-knoepfe a { padding: .45rem .9rem; border: 1px solid #f4ecf344; border-radius: 999px; color: var(--ae-perl) !important; text-decoration: none; font-size: .85rem; }
-.ae-knoepfe a:hover { background: #f4ecf31a; }
-@media (max-width: 520px) { .ae-heimat { grid-template-columns: minmax(0, 1fr); justify-items: start; } }
+    heimatwelt: `/* Heimatwelt · Zusammenfassung zu Saelith III – Planet, Höhenprofil, Nachbarn, Weg ins Dossier */
+.ae-planet { position: relative; float: right; width: min(40%, 20rem); aspect-ratio: 1; margin: .2rem 0 1.4rem 2.2rem; }
+.ae-planet img { display: block; width: 100%; height: 100%; border-radius: 50%; object-fit: cover; box-shadow: 0 0 0 1px #78e0ea55, 0 0 70px #78e0ea33, inset -30px -20px 60px #000a; }
+.ae-planet::after { content: ""; position: absolute; left: -24%; right: -24%; top: 41%; height: 18%; border-radius: 50%; border: 2px solid #f4ecf355; box-shadow: 0 0 0 7px #e8b48a1c, 0 0 30px #c9a6ff33; transform: rotate(-14deg); pointer-events: none; }
+@media (min-width: 1400px) { .ae-planet { margin-right: clamp(-16rem, -12vw, -5rem); width: min(44%, 24rem); } }
+.ae-text ol.ae-profil { list-style: none; margin: 1.6rem 0 .6rem; padding: 0; display: grid; gap: 0; border-left: 2px solid transparent; border-image: linear-gradient(#78e0ea00, #78e0ea, #e8b48a 60%, #b8573a) 1; }
+.ae-profil li { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: baseline; gap: .2rem 1rem; max-width: none; padding: .9rem .4rem .9rem 1.8rem; border-bottom: 1px solid #c9a6ff1f; }
+.ae-profil li::before { content: ""; position: absolute; left: -7px; top: 1.45rem; width: 12px; height: 12px; border-radius: 50%; background: var(--ae-nacht); border: 2px solid var(--ae-leise); }
+.ae-profil b { font: 400 1.18rem var(--ae-serif); color: var(--ae-perl); }
+.ae-profil span { font: 700 .72rem var(--ae-sans); letter-spacing: .12em; color: var(--ae-leise); white-space: nowrap; }
+.ae-profil .ist-hier { padding-block: 1.3rem; background: linear-gradient(90deg, #e8b48a2e, transparent 85%); }
+.ae-profil .ist-hier::before { top: 1.85rem; background: var(--ae-rose); border-color: var(--ae-rose); box-shadow: 0 0 16px var(--ae-rose); }
+.ae-profil .ist-hier b { font-size: 1.4rem; color: var(--ae-rose); }
+.ae-profil small { grid-column: 1 / -1; font: 700 .64rem var(--ae-sans); letter-spacing: .2em; text-transform: uppercase; color: var(--ae-tuerkis); }
+@media (max-width: 760px) { .ae-planet { float: none; width: min(70%, 15rem); margin: .4rem auto 1.8rem; } }
 `,
-    technologien: `/* Technologien · Bauplan-Anmutung */
-.ae-seite-technologien .ae-kapitel { background: linear-gradient(160deg, #10203af0, #0b0f22f5), repeating-linear-gradient(0deg, #78e0ea0a 0 1px, transparent 1px 28px); }
-.ae-seite-technologien .ae-nr { border-color: #e8b48a77; color: var(--ae-rose); }
+    technologien: `/* Technologien · Bauplan-Anmutung: Kapitelnummern in Sturmlicht-Bronze */
+.ae-seite-technologien .ae-nr { background: linear-gradient(100deg, #f4ecf3, #e8b48a 45%, #b88a5c); -webkit-background-clip: text; background-clip: text; }
 `,
-    forschung: `/* Forschung · Laborlicht */
-.ae-seite-forschung .ae-kapitel::before { background: linear-gradient(90deg, #78e0ea, #c9a6ff); opacity: .7; }
-`,
-    medien: `/* Medien · Bild-Karussell, Klangarchiv, Bewegtbild, 3D und Assets */
+    forschung: `/* Forschung · Laborlicht: Kapitelnummern in Türkis */
+.ae-seite-forschung .ae-nr { background: linear-gradient(100deg, #f4ecf3, #78e0ea 50%, #c9a6ff); -webkit-background-clip: text; background-clip: text; }
+`,    medien: `/* Medien · Bild-Karussell, Klangarchiv, Bewegtbild, 3D und Assets */
 .ae-medien { gap: clamp(2rem, 4vw, 3.4rem); }
 .ae-inhalt > * { min-width: 0; }
 .ae-buehne-bild { width: 100%; }
@@ -748,20 +768,32 @@ const SEITEN_CSS = {
 const BASIS_JS = `// Aerothanen · gemeinsames Verhalten (erzeugt von scripts/spezies/eigene/aerothanen.mjs)
 import "../../../../Men%C3%BCs/TopBar/Top_bar.js";
 import { applyAporiaRoutes } from "../../../../Men%C3%BCs/adapter/aporia-routes.js";
+import { bewegungReduziert } from "../../../../Men%C3%BCs/adapter/aporia-bewegung.js";
 applyAporiaRoutes(document);
 
-// Kapitel: alle auf-/zuklappen, Sprungziel öffnen
-const kapitel = [...document.querySelectorAll("details.ae-kapitel")];
-const klappen = document.querySelector("[data-ae-klappen]");
-if (klappen && kapitel.length) {
-    const stand = () => { const alle = kapitel.every((k) => k.open); klappen.setAttribute("aria-pressed", String(alle)); klappen.textContent = alle ? "Alle zuklappen" : "Alle aufklappen"; };
-    klappen.addEventListener("click", () => { const auf = !kapitel.every((k) => k.open); kapitel.forEach((k) => { k.open = auf; }); stand(); });
-    kapitel.forEach((k) => k.addEventListener("toggle", stand));
-    stand();
+// Himmel: blendet zum Bild des Abschnitts in Bildschirmmitte über (zwei Ebenen im Wechsel, erst nach dem Laden)
+const himmel = document.querySelector(".ae-himmel");
+const himmelsAbschnitte = [...document.querySelectorAll("[data-himmel]")];
+if (himmel && himmelsAbschnitte.length) {
+    const [a, b] = himmel.querySelectorAll("img");
+    let vorne = a, jetzt = a.getAttribute("src"), marke = 0;
+    const zeige = (src) => {
+        if (!src || src === jetzt) return;
+        jetzt = src;
+        const hinten = vorne === a ? b : a, m = ++marke;
+        const fertig = () => { if (m !== marke) return; hinten.classList.add("ist-an"); vorne.classList.remove("ist-an"); vorne = hinten; };
+        hinten.onload = fertig;
+        hinten.src = src;
+        if (hinten.complete && hinten.naturalWidth) { hinten.onload = null; fertig(); }
+    };
+    const sichtbar = new Set();
+    const beobachter = new IntersectionObserver((eintraege) => {
+        eintraege.forEach((e) => (e.isIntersecting ? sichtbar.add(e.target) : sichtbar.delete(e.target)));
+        const aktiv = himmelsAbschnitte.filter((x) => sichtbar.has(x)).pop();
+        if (aktiv) zeige(aktiv.dataset.himmel);
+    }, { rootMargin: "-40% 0px -40% 0px" });
+    himmelsAbschnitte.forEach((x) => beobachter.observe(x));
 }
-const ziel = location.hash && document.getElementById(decodeURIComponent(location.hash.slice(1)));
-if (ziel instanceof HTMLDetailsElement) ziel.open = true;
-
 // Großansicht mit Blättern (Pfeiltasten, Knöpfe, Wischen)
 let grossOeffnen = () => {};
 const dialog = document.querySelector(".ae-gross");
@@ -831,7 +863,7 @@ if (buehne) {
     // von selbst weiterblättern, solange die Bühne sichtbar ist und nicht bedient wurde
     let takt = null, imBild = false, bedient = false;
     const halt = () => { bedient = true; clearInterval(takt); takt = null; };
-    const lauf = () => { clearInterval(takt); takt = null; if (imBild && !bedient && !document.hidden && !matchMedia("(prefers-reduced-motion: reduce)").matches) takt = setInterval(() => schritt(1), 6500); };
+    const lauf = () => { clearInterval(takt); takt = null; if (imBild && !bedient && !document.hidden && !bewegungReduziert.matches) takt = setInterval(() => schritt(1), 6500); };
     new IntersectionObserver(([e]) => { imBild = e.isIntersecting; lauf(); }).observe(buehne);
     document.addEventListener("visibilitychange", lauf);
 }
@@ -856,7 +888,7 @@ write(`${S}/aerothanen-basis.js`, BASIS_JS);
 for (const s of SEITEN) {
     const von = `${S}/${s.datei}`;
     const dir = path.posix.dirname(von), name = path.posix.basename(s.datei).replace(/\.html$/, "");
-    const inhalt = s.key === "uebersicht" ? uebersicht : s.key === "medien" ? medien : unterseite(s);
+    const inhalt = s.key === "uebersicht" ? uebersicht : s.key === "medien" ? medien : s.key === "heimatwelt" ? heimatwelt : unterseite(s);
     write(von, seite(s, inhalt));
     write(`${dir}/${name}.css`, SEITEN_CSS[s.key] ?? `/* Aerothanen · ${s.label} – gemeinsames Design: aerothanen-basis.css */\n`);
     const basis = rel(`${dir}/x.js`, `${S}/aerothanen-basis.js`);

@@ -1,20 +1,32 @@
 // Aerothanen · gemeinsames Verhalten (erzeugt von scripts/spezies/eigene/aerothanen.mjs)
 import "../../../../Men%C3%BCs/TopBar/Top_bar.js";
 import { applyAporiaRoutes } from "../../../../Men%C3%BCs/adapter/aporia-routes.js";
+import { bewegungReduziert } from "../../../../Men%C3%BCs/adapter/aporia-bewegung.js";
 applyAporiaRoutes(document);
 
-// Kapitel: alle auf-/zuklappen, Sprungziel öffnen
-const kapitel = [...document.querySelectorAll("details.ae-kapitel")];
-const klappen = document.querySelector("[data-ae-klappen]");
-if (klappen && kapitel.length) {
-    const stand = () => { const alle = kapitel.every((k) => k.open); klappen.setAttribute("aria-pressed", String(alle)); klappen.textContent = alle ? "Alle zuklappen" : "Alle aufklappen"; };
-    klappen.addEventListener("click", () => { const auf = !kapitel.every((k) => k.open); kapitel.forEach((k) => { k.open = auf; }); stand(); });
-    kapitel.forEach((k) => k.addEventListener("toggle", stand));
-    stand();
+// Himmel: blendet zum Bild des Abschnitts in Bildschirmmitte über (zwei Ebenen im Wechsel, erst nach dem Laden)
+const himmel = document.querySelector(".ae-himmel");
+const himmelsAbschnitte = [...document.querySelectorAll("[data-himmel]")];
+if (himmel && himmelsAbschnitte.length) {
+    const [a, b] = himmel.querySelectorAll("img");
+    let vorne = a, jetzt = a.getAttribute("src"), marke = 0;
+    const zeige = (src) => {
+        if (!src || src === jetzt) return;
+        jetzt = src;
+        const hinten = vorne === a ? b : a, m = ++marke;
+        const fertig = () => { if (m !== marke) return; hinten.classList.add("ist-an"); vorne.classList.remove("ist-an"); vorne = hinten; };
+        hinten.onload = fertig;
+        hinten.src = src;
+        if (hinten.complete && hinten.naturalWidth) { hinten.onload = null; fertig(); }
+    };
+    const sichtbar = new Set();
+    const beobachter = new IntersectionObserver((eintraege) => {
+        eintraege.forEach((e) => (e.isIntersecting ? sichtbar.add(e.target) : sichtbar.delete(e.target)));
+        const aktiv = himmelsAbschnitte.filter((x) => sichtbar.has(x)).pop();
+        if (aktiv) zeige(aktiv.dataset.himmel);
+    }, { rootMargin: "-40% 0px -40% 0px" });
+    himmelsAbschnitte.forEach((x) => beobachter.observe(x));
 }
-const ziel = location.hash && document.getElementById(decodeURIComponent(location.hash.slice(1)));
-if (ziel instanceof HTMLDetailsElement) ziel.open = true;
-
 // Großansicht mit Blättern (Pfeiltasten, Knöpfe, Wischen)
 let grossOeffnen = () => {};
 const dialog = document.querySelector(".ae-gross");
@@ -84,7 +96,7 @@ if (buehne) {
     // von selbst weiterblättern, solange die Bühne sichtbar ist und nicht bedient wurde
     let takt = null, imBild = false, bedient = false;
     const halt = () => { bedient = true; clearInterval(takt); takt = null; };
-    const lauf = () => { clearInterval(takt); takt = null; if (imBild && !bedient && !document.hidden && !matchMedia("(prefers-reduced-motion: reduce)").matches) takt = setInterval(() => schritt(1), 6500); };
+    const lauf = () => { clearInterval(takt); takt = null; if (imBild && !bedient && !document.hidden && !bewegungReduziert.matches) takt = setInterval(() => schritt(1), 6500); };
     new IntersectionObserver(([e]) => { imBild = e.isIntersecting; lauf(); }).observe(buehne);
     document.addEventListener("visibilitychange", lauf);
 }

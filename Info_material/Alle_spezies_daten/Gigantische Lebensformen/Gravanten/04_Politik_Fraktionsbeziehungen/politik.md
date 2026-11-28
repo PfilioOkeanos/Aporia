@@ -1,30 +1,79 @@
 # Gravanten – Politik
 
-# Gravanten – Politik
+**Dossierversion:** V4.0
 
-## Politische Organisation
+## 1. Politisches Grundsystem
 
-- Dezentrale politische Grundstruktur
-- Zusammenschlüsse regionaler Wandergemeinschaften
-- Politische Versammlungen an großen natürlichen Begegnungsplätzen
-- Gleichberechtigung unabhängig von Alter und Körpergröße
-- Repräsentanten werden durch ihre Gemeinschaften bestimmt
-- Politische Ämter sind nicht biologisch vorgegeben
+Die Gravanten besitzen eine überwiegend dezentrale politische Organisation.
 
-## Recht und Verwaltung
+Regionale Wandergemeinschaften bestimmen ihre eigenen Vertreter und Verwaltungsstrukturen.
 
-- Schutz individueller Bewegungsfreiheit
-- Gemeinschaftliche Verwaltung bedeutender Wanderrouten
-- Regulierung der Nutzung besonders empfindlicher Landschaften
-- Verbot absichtlicher Blockaden lebenswichtiger Wanderwege
-- Verpflichtung zur Rücksichtnahme auf kleinere Lebensformen
-- Individuelle Zustimmung vor technologischen Installationen auf einem Gravantenkörper
+Körpergröße, Alter oder anatomische Leistungsfähigkeit verleihen keine automatische politische Autorität.
 
-## Außenpolitik
+## 2. Gemeinsame Verwaltung
 
-- Grundsätzliche Bereitschaft zum Austausch mit anderen intelligenten Spezies
-- Interesse an Forschungskooperationen und technologischem Handel
-- Besondere Bedeutung von Verträgen über Landschaftsnutzung und planetare Infrastruktur
-- Politische Vertretung außerhalb der Heimatwelt durch technische Kommunikationssysteme oder bevollmächtigte Vertreter
-- Unterschiedliche politische Überzeugungen innerhalb der Spezies
-- Zugehörigkeit zu einer der interstellaren Fraktionen bislang nicht festgelegt
+Gemeinschaftlich verwaltet werden insbesondere:
+
+- Bedeutende Wanderkorridore.
+- Mechanisch tragfähige Versammlungsflächen.
+- Medizinische Infrastruktur.
+- Mineralstoffreiche Nahrungsgebiete.
+- Verbundentwicklungsstätten.
+- Wissenschaftliche Einrichtungen.
+- Kontaktstationen für außerplanetare Besucher.
+
+## 3. Individuelle Rechte
+
+- Recht auf körperliche Selbstbestimmung.
+- Recht auf freie Partnerwahl.
+- Recht auf selbstständige Lebensführung.
+- Recht auf freiwillige oder verweigerte technische Körpermodifikation.
+- Recht auf Schutz vor unzulässiger mechanischer Ausbeutung.
+- Recht auf eigenständige politische Überzeugungen.
+
+## 4. Mechanische Verantwortung
+
+Aufgrund ihrer enormen Körpergröße können Gravanten ihre Umgebung erheblich beeinflussen.
+
+Die gezielte Zerstörung wichtiger Infrastruktur oder die absichtliche Gefährdung kleinerer Lebensformen kann gesellschaftlich und rechtlich verfolgt werden.
+
+Ein natürlicher Bewegungsbedarf rechtfertigt nicht automatisch jede Landschaftsveränderung.
+
+## 5. Fortpflanzungsrecht
+
+Verbundfortpflanzung erfordert die Zustimmung aller beteiligten Elternorganismen.
+
+Die Verpflichtung zur Fortsetzung eines Verbunds gegen den Willen eines Beteiligten ist nicht zulässig.
+
+Bei Gefährdung des Nachwuchses können medizinische und gesellschaftliche Unterstützungsmaßnahmen angeboten werden.
+
+## 6. Wissenschaftliche Verantwortung
+
+Biologische Forschung unterliegt Regeln zum Schutz individueller Organismen.
+
+Experimentelle Eingriffe in die Tragmatrix, Fortpflanzungsentwicklung oder mechanische Sinneswahrnehmung erfordern eine entsprechende Zustimmung.
+
+## 7. Außenpolitik
+
+Die Gravanten sind grundsätzlich zur diplomatischen Zusammenarbeit mit anderen intelligenten Spezies fähig.
+
+Schwerpunkte möglicher Abkommen:
+
+- Wissenschaftlicher Austausch.
+- Mechanische Sicherheit.
+- Gemeinsame Infrastrukturprojekte.
+- Medizinische Zusammenarbeit.
+- Zugang zu geeigneten außerplanetaren Lebensräumen.
+- Schutz der natürlichen Wandergebiete.
+
+## 8. Politische Konfliktfelder
+
+Innerhalb der gravantischen Gesellschaft bestehen unterschiedliche Auffassungen über:
+
+- Interstellare Öffnung.
+- Umfang technologischer Körpermodifikationen.
+- Wirtschaftliche Nutzung biologischer Materialien.
+- Schutz traditioneller Wanderkultur.
+- Umfang gemeinschaftlicher Landschaftsverwaltung.
+
+Eine verbindliche Zugehörigkeit zu einer interstellaren Hauptfraktion ist bisher nicht festgelegt.

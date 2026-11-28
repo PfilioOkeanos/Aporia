@@ -14,12 +14,31 @@ const wahl = process.argv.slice(2).map((x) => x.toLowerCase());
 const arten = (wahl.length ? alle.filter((a) => wahl.includes(a.s.toLowerCase())) : alle.filter((a) => walk(INFO_BASIS + a.g + "/" + a.s).some((f) => !/Fragen Templates/i.test(f) && fs.statSync(f).size > 200))).filter((a) => fs.existsSync(SEITEN_BASIS + a.g + "/" + a.s));
 const norm = (s) => s.normalize("NFC").replace(/[\u00ad:]/g, "").replace(/[„“”"«»]/g, '"').replace(/[‚‘’']/g, "'").replace(/[–—]/g, "-").replace(/\s+/g, " ").trim().toLowerCase();
 const entities = (s) => s.replace(/&nbsp;/g, " ").replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&quot;/g, '"').replace(/&#39;/g, "'");
+// Heimatwelt-Dateien (05_Heimatwelt, Sternensystem) dürfen statt auf der Spezies-Seite im Planetendossier stehen,
+// wenn eine Heimatwelt-Beschreibung (scripts/planeten/heimatwelten/*.mjs) mit „doppelteWeglassen“ die Quelltexte dorthin überträgt
+const { findeKoerper } = await import("../planeten/koerper.mjs");
+const dossierFuer = {};
+for (const d of fs.readdirSync(ROOT + "scripts/planeten/heimatwelten").filter((x) => x.endsWith(".mjs"))) {
+    const quelle = fs.readFileSync(ROOT + "scripts/planeten/heimatwelten/" + d, "utf8");
+    if (!quelle.includes("quellAbschnitte(")) continue;
+    const spec = (await import(new URL("../planeten/heimatwelten/" + d, import.meta.url).href)).default;
+    try {
+        const K = findeKoerper(spec.ordner);
+        // Zeilen, die heimatwelt-bauen.mjs als doppelt weggelassen hat (dieselbe Angabe steht berechnet im Dossier)
+        const inhalt = ROOT + K.datenDatei.replace(/\.json$/, ".inhalt.json");
+        const doppelt = fs.existsSync(inhalt) ? JSON.parse(fs.readFileSync(inhalt, "utf8")).weggelasseneDoppel ?? [] : [];
+        dossierFuer[spec.spezies.ordner] = { basis: K.basis, abgedeckt: new Set(doppelt.map(norm)) };
+    } catch { /* Körper ohne Dossier */ }
+}
+const zuText = (html) => norm(entities(html.replace(/<script[\s\S]*?<\/script>/g, " ").replace(/<\/?(strong|em|b|i|code)>|<\/?a\b[^>]*>/g, "").replace(/<[^>]+>/g, " ")));
 const ergebnis = {};
 for (const { g, s: art } of arten) {
     const SEITEN = SEITEN_BASIS + g + "/", INFO = INFO_BASIS + g + "/";
     const html = walk(SEITEN + art).filter((f) => f.endsWith(".html")).map((f) => fs.readFileSync(f, "utf8")).join("\n");
     // Inline-Auszeichnung ohne Leerraum entfernen (Fett am Satzende), Blockgrenzen als Leerraum
     const text = norm(entities(html.replace(/<script[\s\S]*?<\/script>/g, " ").replace(/<\/?(strong|em|b|i|code)>|<\/?a\b[^>]*>/g, "").replace(/<[^>]+>/g, " ")));
+    const dossier = dossierFuer[art];
+    const dossierText = dossier ? zuText(walk(ROOT + dossier.basis).filter((f) => f.endsWith(".html")).map((f) => fs.readFileSync(f, "utf8")).join("\n")) : "";
     const fehlend = [];
     let gesamt = 0;
     for (const f of walk(INFO + art)) {
@@ -27,6 +46,7 @@ for (const { g, s: art } of arten) {
         // an Kopfzeilen klebende Abschnittsüberschriften („… · Titan01 – …“) wie die Storys-Seiten getrennt prüfen
         const zeilen = fs.readFileSync(f, "utf8").split(/\r?\n/).flatMap((l) => { const m = l.match(/^(.*·.*[^\d\s–-])(\d{1,2}(?: –|\.) [A-ZÄÖÜ].*)$/); return m ? [m[1], m[2]] : [l]; });
         const ebene = zeilen.filter((z) => /^#\s+\d+\.\d+/.test(z.trim())).length >= 3 ? 1 : zeilen.filter((z) => /^##\s/.test(z.trim())).length <= 1 && zeilen.filter((z) => /^###\s/.test(z.trim())).length >= 2 ? 3 : 2;
+        const imDossier = dossierText && /^(05_Heimatwelt|Sternensystem)\//.test(rel);
         let imKapitel = false;
         for (const roh of zeilen) {
             let z = roh.trim();
@@ -46,7 +66,7 @@ for (const { g, s: art } of arten) {
                 gesamt++;
                 // Kapitelnummer vor Überschriften („3.1 Titel“) darf auf der Seite getrennt stehen
                 const ohneNr = n.replace(/^(\d+(\.\d+)*\.?|[a-zäöü]{1,6}\d{0,3}\s+-)\s+/, "");
-                if (!text.includes(n) && !text.includes(ohneNr)) fehlend.push(rel + ": " + t.slice(0, 90));
+                if (!text.includes(n) && !text.includes(ohneNr) && !(imDossier && (dossierText.includes(n) || dossierText.includes(ohneNr) || dossier.abgedeckt.has(n)))) fehlend.push(rel + ": " + t.slice(0, 90));
             }
         }
     }

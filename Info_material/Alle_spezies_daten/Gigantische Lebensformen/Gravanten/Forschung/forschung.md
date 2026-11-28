@@ -1,50 +1,100 @@
 # Gravanten – Forschung
-# Gravanten – Forschung
 
-## GR-F01 – Biologische Statik
+**Dossierversion:** V4.0  
+**Leitwissenschaft:** Dynamische Spannwerkbiologie
 
-- Untersuchung natürlicher Tragwerke und dynamischer Lastverteilung innerhalb gigantischer Organismen
+## F001 – Veränderliche biologische Lastpfade
 
-## GR-F02 – Biologische Verbundwerkstoffe
+Untersucht die kontrollierte Umleitung mechanischer Kräfte innerhalb zusammenhängender biologischer Spannwerke.
 
-- Erforschung leichter, belastbarer und selbstregenerierender mineralisch-organischer Materialien
+**Spielerhandlung:** Alternative Kraftpfade herstellen und unter Belastung erproben.
 
-## GR-F03 – Gravitationsbiologie
+**Freischaltung:** T001.
 
-- Untersuchung der Auswirkungen unterschiedlicher Schwerkraft auf Körperwachstum, Organe und Fortbewegung
+## F002 – Hybridverankerung unterschiedlicher Untergründe
 
-## GR-F04 – Verteilte Organversorgung
+Untersucht das Zusammenwirken von Unterdruckzonen, Mineralhaken und flächigen Druckmembranen.
 
-- Erforschung regionaler Kreislaufsysteme zur Versorgung außergewöhnlich großer Körperstrukturen
+**Spielerhandlung:** Geeignete Kontaktkonfigurationen für unterschiedliche Oberflächen entwickeln.
 
-## GR-F05 – Gigantische Nervensysteme
+**Freischaltung:** T002.
 
-- Untersuchung der Signalübertragung über große körperliche Entfernungen
+## F003 – Biologische Wanderfugen
 
-## GR-F06 – Bewegungsmechanik
+Untersucht die Fortbewegung eines Körpers relativ zu zeitweise ortsfest verankerten Kontaktorganen.
 
-- Erforschung energieeffizienter mehrbeiniger Fortbewegung und adaptiver Skelettspannung
+**Spielerhandlung:** Kontaktpositionen koordinieren und einen vollständigen Bewegungszyklus entwickeln.
 
-## GR-F07 – Seismische Kommunikation
+**Freischaltung:** T003.
 
-- Analyse und technische Übertragung kontrollierter Bodenerschütterungen als Informationsmedium
+## F004 – Mechanische Vorspannungsübertragung
 
-## GR-F08 – Landschaftsstatik
+Untersucht die Speicherung und kontrollierte Freigabe mechanischer Arbeit innerhalb elastischer Spannwerksbögen.
 
-- Untersuchung der Tragfähigkeit natürlicher Geländeformationen und planetarer Oberflächen
+**Spielerhandlung:** Kraftspeicherung und Freigabezeitpunkt experimentell abstimmen.
 
-## GR-F09 – Makroökologie
+**Freischaltung:** T004.
 
-- Erforschung der Wechselwirkungen gigantischer Einzelorganismen mit komplexen Ökosystemen
+## F005 – Biologische Lastverriegelung
 
-## GR-F10 – Regenerative Skelettmedizin
+Untersucht die mechanische Verriegelung beweglicher Körperstrukturen ohne dauerhafte aktive Muskelspannung.
 
-- Entwicklung biologischer Reparaturverfahren für großdimensionierte tragende Körperstrukturen
+**Spielerhandlung:** Unterschiedliche Verriegelungskonfigurationen erproben.
 
-## GR-F11 – Gravitationsentlastung
+**Freischaltung:** T005.
 
-- Forschung an technischen Unterstützungssystemen für Aufenthalte unter erhöhter Schwerkraft, ohne eine funktionierende künstliche Gravitationskontrolle vorauszusetzen
+## F006 – Belastungsabhängige Strukturfarben
 
-## GR-F12 – Speziesübergreifende Kommunikation
+Untersucht die Veränderung optischer Materialeigenschaften unter Zug-, Druck- und Scherbelastung.
 
-- Entwicklung universeller Schnittstellen zwischen gravantischen Kommunikationsformen und anderen intelligenten Lebensformen
+**Spielerhandlung:** Farbveränderungen realen Belastungszuständen zuordnen.
+
+**Freischaltung:** T006.
+
+## F007 – Richtungsabhängige Tragmatrixbildung
+
+Untersucht die gezielte Ausrichtung mineralisch-organischer Fasern durch kontrollierte mechanische Entwicklungsbedingungen.
+
+**Spielerhandlung:** Unterschiedliche Materialrichtungen erzeugen und ihre Belastbarkeit vergleichen.
+
+**Freischaltung:** T007.
+
+## F008 – Dynamisches Fugenverschlussgewebe
+
+Untersucht Schutzgewebe, das sich bei Bewegungen selbstständig innerhalb tiefer Materialfugen faltet und entfaltet.
+
+**Spielerhandlung:** Geeignete Gewebefaltungen für unterschiedliche Bewegungsbereiche entwickeln.
+
+**Freischaltung:** T008.
+
+## F009 – Mechanische Ersatzlastpfade
+
+Untersucht die vorübergehende Umleitung von Kräften um beschädigte Spannwerksegmente.
+
+**Spielerhandlung:** Einen gefährdeten Organismus stabilisieren, ohne seine natürliche Körperarchitektur dauerhaft zu ersetzen.
+
+**Freischaltung:** T009.
+
+## F010 – Offene mechanische Verbundentwicklung
+
+Untersucht die Ausbildung neuer Organismen an temporären elterlichen Entwicklungsbögen.
+
+**Spielerhandlung:** Wachstumsbedingungen beobachten, mechanische Entwicklungsreize abstimmen und Fehlbelastungen verhindern.
+
+**Freischaltung:** T010.
+
+## F011 – Phasenversetzte Kontaktentlastung
+
+Untersucht die kontrollierte Ablösung einzelner Kontaktfelder unter Beibehaltung der Gesamtstabilität eines Körpers.
+
+**Spielerhandlung:** Belastete Kontaktorgane in geeigneter Reihenfolge lösen und neu positionieren.
+
+**Freischaltung:** T011.
+
+## F012 – Mechanische Bruchpfadunterbrechung
+
+Untersucht die Möglichkeit, einen sich ausbreitenden strukturellen Bruch durch rechtzeitige Umkonfiguration benachbarter Spannwerksegmente zu begrenzen.
+
+**Spielerhandlung:** Unter Zeitdruck alternative Kraftpfade herstellen, um einen vollständigen Strukturkollaps zu verhindern.
+
+**Freischaltung:** T012.
