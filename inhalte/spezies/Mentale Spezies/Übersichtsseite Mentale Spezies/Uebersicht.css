@@ -296,3 +296,24 @@ body.species-group-page { margin: 0; background: #061811; color: #f4e6c9; font-f
 @media (prefers-reduced-motion: reduce) {
     .neurofloren-emblem i::after { animation: none; }
 }
+
+/* Noetiden-Karte: Artefakte am Handy beheben.
+   Der Rahmen-Überzug lag mit opacity .75 über der ganzen Karte (auch über Logo und Text). Über dem animierten
+   Logo musste das Handy diese durchsichtige Ebene ständig neu rechnen – dabei entstanden Artefakte.
+   Jetzt: gleiche Optik, aber Durchsichtigkeit direkt in den Farben (keine Deckkraft-Ebene); Karte als eigener
+   Zeichenbereich, animiertes Logo auf eigener Ebene. */
+.species-category--noetiden { isolation: isolate; contain: paint; }
+.species-category--noetiden > .species-card-logo { transform: translateZ(0); backface-visibility: hidden; }
+.species-category--noetiden::after {
+    opacity: 1;
+    border-color: #a98bff26;
+    background:
+        linear-gradient(#a98bffbf, #a98bffbf) 0 0 / 16px 2px no-repeat,
+        linear-gradient(#a98bffbf, #a98bffbf) 0 0 / 2px 16px no-repeat,
+        linear-gradient(#a98bffbf, #a98bffbf) 100% 0 / 16px 2px no-repeat,
+        linear-gradient(#a98bffbf, #a98bffbf) 100% 0 / 2px 16px no-repeat,
+        linear-gradient(#a98bffbf, #a98bffbf) 0 100% / 16px 2px no-repeat,
+        linear-gradient(#a98bffbf, #a98bffbf) 0 100% / 2px 16px no-repeat,
+        linear-gradient(#a98bffbf, #a98bffbf) 100% 100% / 16px 2px no-repeat,
+        linear-gradient(#a98bffbf, #a98bffbf) 100% 100% / 2px 16px no-repeat;
+}
