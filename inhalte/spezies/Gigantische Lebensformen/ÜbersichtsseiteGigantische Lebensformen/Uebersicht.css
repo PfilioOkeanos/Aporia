@@ -134,3 +134,89 @@ body.species-group-page { margin: 0; background: #061811; color: #f4e6c9; font-f
 
 /* Lange Wörter in Cards umbrechen statt abschneiden */
 .species-card-columns :is(dd, p) { overflow-wrap: break-word; hyphens: auto; }
+
+/* Aerothanen – Card in der Marke „Perlmutt & Sturmlicht“ (wie die Dossierseiten):
+   schillernder Rahmen, Himmelsbühne mit Wind und Wolkenband, schwebendes Emblem, Höhenmesser.
+   Beim Darüberfahren/Antippen beginnt der „Aufstieg“: der Himmel sinkt, die Höhenmarke steigt, der Wind frischt auf. */
+.species-category--aerothanen {
+    --ae-nacht: #0b0d1c; --ae-perl: #f4ecf3; --ae-rose: #e8b48a; --ae-tuerkis: #78e0ea; --ae-lavendel: #c9a6ff;
+    --ae-schillern: linear-gradient(100deg, #fff4e8 0%, #f2c7a5 22%, #c9a6ff 52%, #8fe3ee 78%, #fff4e8 100%);
+    --ae-wind-takt: 7s;
+    position: relative;
+    isolation: isolate;
+    color: var(--ae-perl);
+    border: 1.5px solid transparent;
+    border-radius: 1.1rem 1.1rem .7rem .7rem;
+    background:
+        radial-gradient(ellipse at 92% 100%, #c9a6ff2e, transparent 60%) padding-box,
+        radial-gradient(ellipse at 0% 70%, #78e0ea1c, transparent 55%) padding-box,
+        linear-gradient(180deg, #161b3d, var(--ae-nacht) 62%) padding-box,
+        var(--ae-schillern) border-box;
+    box-shadow: 0 .8rem 2rem #05061099, 0 0 1.4rem #c9a6ff26;
+    transition: transform .4s cubic-bezier(.2, .7, .2, 1), box-shadow .4s;
+}
+.species-category--aerothanen:hover, .species-category--aerothanen:focus-within {
+    --ae-wind-takt: 3.2s;
+    transform: translateY(-6px);
+    box-shadow: 0 1.4rem 2.8rem #050610cc, 0 0 2.4rem #c9a6ff59, 0 0 3.6rem #78e0ea26;
+}
+.ae-karte-buehne { position: relative; display: block; aspect-ratio: 2.3; overflow: hidden; border-radius: 1rem 1rem 0 0; }
+.species-category--aerothanen img.ae-karte-himmel {
+    position: absolute; left: 0; top: -14%; width: 100%; height: 132%; aspect-ratio: auto;
+    object-fit: cover; object-position: center 38%;
+    transform: scale(1.04); filter: saturate(1.1);
+    transition: transform 1.8s cubic-bezier(.2, .7, .2, 1), filter .6s;
+}
+.species-category--aerothanen:is(:hover, :focus-within) img.ae-karte-himmel { transform: translateY(7%) scale(1.14); filter: saturate(1.35) brightness(1.08); }
+.ae-karte-buehne::after { content: ""; position: absolute; inset: 0; z-index: 2; background: linear-gradient(0deg, var(--ae-nacht) 0%, #0b0d1cb3 26%, transparent 64%), linear-gradient(90deg, #0b0d1c80, transparent 45%); }
+/* Wolkenband und Wind – nur so groß wie die Bühne */
+.ae-karte-wolke { position: absolute; z-index: 1; left: -30%; bottom: -22%; width: 160%; height: 58%; border-radius: 50%; background: radial-gradient(ellipse, #f4ecf35c, transparent 66%); filter: blur(12px); animation: ae-karte-treiben 18s ease-in-out infinite alternate; }
+@keyframes ae-karte-treiben { from { transform: translateX(-10%); } to { transform: translateX(10%); } }
+.ae-karte-wind { position: absolute; inset: 0; z-index: 3; overflow: hidden; pointer-events: none; }
+.ae-karte-wind i { position: absolute; left: -45%; width: 40%; height: 1px; background: linear-gradient(90deg, transparent, #f4ecf3dd 45%, #c9e9ff 55%, transparent); opacity: 0; animation: ae-karte-wind var(--ae-wind-takt) linear infinite; }
+.ae-karte-wind i:nth-child(1) { top: 24%; }
+.ae-karte-wind i:nth-child(2) { top: 42%; width: 55%; animation-delay: calc(var(--ae-wind-takt) * -.25); }
+.ae-karte-wind i:nth-child(3) { top: 58%; width: 30%; animation-delay: calc(var(--ae-wind-takt) * -.5); }
+.ae-karte-wind i:nth-child(4) { top: 71%; width: 48%; animation-delay: calc(var(--ae-wind-takt) * -.7); }
+.ae-karte-wind i:nth-child(5) { top: 34%; width: 22%; animation-delay: calc(var(--ae-wind-takt) * -.88); }
+@keyframes ae-karte-wind { 0% { transform: translateX(0); opacity: 0; } 12% { opacity: .8; } 70% { opacity: .5; } 100% { transform: translateX(370%) translateY(-10px); opacity: 0; } }
+/* Höhenmesser mit steigender Marke */
+.ae-karte-hoehe { position: absolute; z-index: 4; right: 1rem; top: 12%; bottom: 30%; width: 2px; background: linear-gradient(#78e0ea00, #78e0eacc, #c9a6ffcc, #e8b48a00); }
+.ae-karte-hoehe i { position: absolute; right: 0; width: 7px; height: 1px; background: #f4ecf3aa; }
+.ae-karte-hoehe i:nth-child(1) { top: 0; } .ae-karte-hoehe i:nth-child(2) { top: 16%; } .ae-karte-hoehe i:nth-child(3) { top: 33%; } .ae-karte-hoehe i:nth-child(4) { top: 50%; width: 12px; }
+.ae-karte-hoehe i:nth-child(5) { top: 66%; } .ae-karte-hoehe i:nth-child(6) { top: 83%; } .ae-karte-hoehe i:nth-child(7) { top: 100%; }
+.ae-karte-hoehe b { position: absolute; right: -4px; top: 86%; width: 10px; height: 10px; border-radius: 50%; background: var(--ae-rose); box-shadow: 0 0 12px var(--ae-rose), 0 0 0 3px #e8b48a33; transition: top 1.6s cubic-bezier(.2, .7, .2, 1); }
+.species-category--aerothanen:is(:hover, :focus-within) .ae-karte-hoehe b { top: 4%; }
+/* Emblem schwebt */
+.species-category--aerothanen img.ae-karte-emblem { position: absolute; z-index: 4; left: .9rem; top: .85rem; width: 3.3rem; height: 3.3rem; aspect-ratio: 1; border-radius: 50%; object-fit: cover; box-shadow: 0 0 0 1px #f2c7a599, 0 0 0 5px #c9a6ff1f, 0 0 22px #c9a6ff99; animation: ae-karte-schweben 6s ease-in-out infinite; }
+@keyframes ae-karte-schweben { 50% { transform: translateY(-5px); } }
+/* Wortmarke ragt aus dem Himmel in die Karte */
+.species-category--aerothanen > div { position: relative; z-index: 5; }
+.species-category--aerothanen h2 {
+    margin: -2.5rem 0 .8rem;
+    font: 400 clamp(1.45rem, 2.1vw, 1.9rem)/1.05 "Marcellus", Georgia, serif;
+    letter-spacing: .16em; text-transform: uppercase;
+    background: var(--ae-schillern); background-size: 200% 100%;
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+    animation: ae-karte-schillern 10s ease-in-out infinite;
+    filter: drop-shadow(0 2px 8px #000d);
+}
+@keyframes ae-karte-schillern { 50% { background-position: 100% 0; } }
+.species-category--aerothanen .species-card-columns dt { font: 700 .66rem/1.3 system-ui, sans-serif; letter-spacing: .18em; text-transform: uppercase; color: var(--ae-tuerkis); }
+.species-category--aerothanen .species-card-columns dd { color: var(--ae-perl); }
+.species-category--aerothanen .species-card-columns dl div { padding-top: .35rem; border-top: 1px solid #c9a6ff33; }
+.species-category--aerothanen .species-card-copy { border-left: 2px solid transparent; border-image: linear-gradient(#78e0ea, #c9a6ff, #e8b48a00) 1; color: #e9e4f2; }
+.species-category--aerothanen .species-card-copy a {
+    display: inline-flex; align-items: center; margin-top: .2rem; padding: .38rem .85rem; border-radius: 999px; white-space: nowrap;
+    background: var(--ae-schillern); color: var(--ae-nacht) !important; text-decoration: none;
+    font: 700 .7rem system-ui, sans-serif; letter-spacing: .12em; text-transform: uppercase;
+    box-shadow: 0 6px 18px #c9a6ff44; transition: transform .25s;
+}
+.species-category--aerothanen .species-card-copy a:hover { transform: translateY(-2px); }
+/* Listenansicht: Bühne links, Wortmarke normal */
+.species-category-list .species-category--aerothanen .ae-karte-buehne { aspect-ratio: auto; height: 100%; min-height: 7rem; border-radius: 1rem 0 0 .7rem; }
+.species-category-list .species-category--aerothanen h2 { margin-top: 0; }
+@media (prefers-reduced-motion: reduce) {
+    .ae-karte-wolke, .ae-karte-wind i, .species-category--aerothanen img.ae-karte-emblem, .species-category--aerothanen h2 { animation: none; }
+    .ae-karte-wind { display: none; }
+}
