@@ -127,7 +127,6 @@ const abschnittKopf = (von, nr, titel, id, b, bildtext) => `<header class="ae-ka
 ${windLinie}
 <span class="ae-nr" aria-hidden="true">${esc(nr)}</span>
 <div class="ae-h2"><h2${id ? ` id="${id}"` : ""}>${esc(titel)}</h2></div>
-${himmelsbild(von, b, bildtext)}
 </header>`;
 // ---------- Kapitel mit passendem Bild ----------
 const woerter = (t) => new Set(t.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").split(/[^a-zß0-9]+/).filter((w) => w.length >= 5).map((w) => w.slice(0, 7)));
@@ -173,13 +172,18 @@ function kapitelHtml(von, s) {
     // Kapitel ohne freies Bild behalten den Himmel des vorigen Kapitels – kein Werk erscheint zweimal
     for (const k of kaps) if (!k.bild) k.bild = frei.shift() ?? null;
     let j = 0;
-    while (frei.length && kaps.length) kaps[j++ % kaps.length].text += "\n" + einschub(frei.shift());
+    // übrige Bilder neben die erste Zwischenüberschrift ohne Bild, sonst an den Kapitelanfang – nie unter den Text
+    const lege = (k, b) => {
+        const m = k.text.match(/<h3>[^<]*<\/h3>(?!\n<figure)/);
+        k.text = m ? k.text.replace(m[0], m[0] + "\n" + einschub(b)) : einschub(b) + "\n" + k.text;
+    };
+    while (frei.length && kaps.length) lege(kaps[j++ % kaps.length], frei.shift());
 
     const html = kaps.map((k, n) => {
         const quelle = k.letztes ? `\n<p class="ae-quelle">Quelle: Info_material · Aerothanen · ${esc(k.datei)}</p>` : "";
         return `<section class="ae-kapitel${k.voll ? " ae-kapitel--voll" : ""}" id="${k.id}"${himmelAttr(von, k.bild)}>
 ${abschnittKopf(von, k.nr === "◇" ? String(n + 1).padStart(2, "0") : k.nr, k.titel, "", k.bild)}
-<div class="ae-text">${k.text}${quelle}</div>
+<div class="ae-text">${k.bild ? einschub(k.bild) : ""}${k.text}${quelle}</div>
 </section>`;
     }).join("\n");
     return { html, anzahl: kaps.length };
@@ -263,10 +267,10 @@ ${hoehenmesser(s)}
 <div class="ae-inhalt">
 <section class="ae-kapitel ae-flugdaten" aria-labelledby="flugdaten-titel"${himmelAttr(von, flugbild)}>
 ${abschnittKopf(von, "01", "Flugdaten", "flugdaten-titel", flugbild)}
-<div class="ae-text">${text}
+<div class="ae-text">${werk(von, flugbild, "ae-werk ae-einschub")}${text}
 <p class="ae-quelle">Quelle: Info_material · Aerothanen · ${esc(s.info[0])}</p></div>
 </section>
-<section class="ae-panorama" aria-labelledby="panorama-titel"${himmelAttr(von, panorama)}>
+<section class="ae-panorama" aria-labelledby="panorama-titel"${himmelAttr(von, panorama)} data-himmel-klar>
 <div class="ae-panorama-text">
 <p class="ae-kicker"><span>Heimatwelt</span><span>${esc(HEIMAT.welt)}</span></p>
 <div class="ae-h2"><h2 id="panorama-titel">${esc(panorama.titel)}</h2></div>
@@ -314,13 +318,13 @@ ${abschnittKopf(von, "01", `${HEIMAT.welt} – Welt der Himmelsriesen`, "welt-ti
 ${abschnittKopf(von, "02", "Höhenprofil der Atmosphäre", "profil-titel", b2)}
 <div class="ae-text">
 <p>Je tiefer, desto dichter, wärmer und stürmischer. Nur eine Schicht bietet den Himmelsriesen Halt – dort, wo Druck, Wärme und Nahrung zusammenpassen.</p>
-<ol class="ae-profil">${SCHICHTEN.map(([n, d, hier]) => `<li${hier ? ' class="ist-hier"' : ""}><b>${esc(n)}</b><span>${esc(d)}</span>${hier ? "<small>Lebensraum der Aerothanen · 240–340 K</small>" : ""}</li>`).join("")}</ol>
+${werk(von, b2, "ae-werk ae-einschub")}<ol class="ae-profil">${SCHICHTEN.map(([n, d, hier]) => `<li${hier ? ' class="ist-hier"' : ""}><b>${esc(n)}</b><span>${esc(d)}</span>${hier ? "<small>Lebensraum der Aerothanen · 240–340 K</small>" : ""}</li>`).join("")}</ol>
 </div>
 </section>
 <section class="ae-kapitel" aria-labelledby="nachbarn-titel"${himmelAttr(von, b3)}>
 ${abschnittKopf(von, "03", "Zwei Spezies, ein Stern", "nachbarn-titel", b3)}
 <div class="ae-text">
-<p>${esc(HEIMAT.welt)} teilt das ${esc(HEIMAT.system)} mit Osselyr, der Heimat der Floranoiden. Beide Spezies entstanden unabhängig voneinander und können die Welt der anderen nur mit technischen Schutzsystemen betreten – verbunden sind sie durch Forschung, Wissensaustausch und möglichen Handel.</p>
+${werk(von, b3, "ae-werk ae-einschub")}<p>${esc(HEIMAT.welt)} teilt das ${esc(HEIMAT.system)} mit Osselyr, der Heimat der Floranoiden. Beide Spezies entstanden unabhängig voneinander und können die Welt der anderen nur mit technischen Schutzsystemen betreten – verbunden sind sie durch Forschung, Wissensaustausch und möglichen Handel.</p>
 <p class="ae-knoepfe"><a href="${zu(von, "inhalte/himmelskoerper/planeten/details/osselyr/hauptseite/index.html")}">Osselyr ›</a><a href="${zu(von, HEIMAT.karte)}">Sternenkarte ›</a></p>
 </div>
 </section>
@@ -429,7 +433,7 @@ const BASIS_CSS = `/* Aerothanen · Marke „Perlmutt & Sturmlicht“ (erzeugt v
 .ae-kicker { display: flex; flex-wrap: wrap; gap: .4rem 1rem; margin: 0; font: 700 .7rem/1.3 var(--ae-sans); letter-spacing: .24em; text-transform: uppercase; color: var(--ae-tuerkis); }
 .ae-kicker span + span::before { content: "·"; margin-right: 1rem; color: var(--ae-leise); }
 .ae-h2 { display: flex; align-items: baseline; flex-wrap: wrap; gap: .3rem 1rem; margin: 0 0 1.2rem; font: 400 clamp(1.5rem, 3vw, 2.2rem)/1.15 var(--ae-serif); letter-spacing: .04em; }
-.ae-h2 h2 { margin: 0; font: inherit; letter-spacing: inherit; }
+.ae-h2 h2 { margin: 0; padding-bottom: .14em; font: inherit; letter-spacing: inherit; }
 .ae-h2 span { background: var(--ae-schillern); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .ae-h2 small { font: 700 .7rem var(--ae-sans); letter-spacing: .2em; text-transform: uppercase; color: var(--ae-leise); }
 .ae-leise { color: var(--ae-leise); }
@@ -470,7 +474,13 @@ body:has(.aporia-topbar details[open], .aporia-topbar.is-menu-open) .ae-reiter {
 .ae-hero-bild { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; object-position: var(--fokus); }
 .ae-hero::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(0deg, var(--ae-nacht) 2%, #0b0d1cb8 34%, #0b0d1c33 70%, #0b0d1c66), linear-gradient(90deg, #0b0d1ccc, transparent 60%); }
 .ae-hero-text { position: relative; z-index: 3; display: grid; gap: .55rem; max-width: 46rem; padding: clamp(1.4rem, 4vw, 3.4rem) clamp(1rem, 5vw, 4rem); }
-.ae-hero h1 { margin: 0; font: 400 clamp(2.4rem, 6.5vw, 5rem)/1 var(--ae-serif); letter-spacing: .06em; background: var(--ae-schillern); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.ae-hero, .ae-start { border-bottom: 0; }
+.ae-hero::before, .ae-start::before { content: ""; position: absolute; z-index: 4; left: 0; right: 0; bottom: 0; height: 4.5rem; pointer-events: none;
+    background: var(--ae-schillern) center bottom / 100% 2px no-repeat, radial-gradient(ellipse 48% 100% at 50% 100%, #c9a6ff66, #78e0ea22 45%, transparent 75%);
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 16%, #000 84%, transparent); mask-image: linear-gradient(90deg, transparent, #000 16%, #000 84%, transparent);
+    animation: ae-leuchten 6s ease-in-out infinite; }
+@keyframes ae-leuchten { 50% { opacity: .7; } }
+.ae-hero h1 { margin: 0; font: 400 clamp(2.4rem, 6.5vw, 5rem)/1.12 var(--ae-serif); padding-bottom: .14em; letter-spacing: .06em; background: var(--ae-schillern); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .ae-unterzeile { margin: 0; font: 400 clamp(1.05rem, 2vw, 1.35rem)/1.4 var(--ae-serif); color: var(--ae-perl); }
 .ae-meta { margin: .3rem 0 0; font: 700 .72rem var(--ae-sans); letter-spacing: .18em; text-transform: uppercase; color: var(--ae-leise); }
 .ae-pfad { display: flex; flex-wrap: wrap; gap: .35rem; font-size: .8rem; color: var(--ae-leise); }
@@ -481,6 +491,9 @@ body:has(.aporia-topbar details[open], .aporia-topbar.is-menu-open) .ae-reiter {
 .ae-himmel { position: fixed; inset: 0; z-index: -1; pointer-events: none; background: var(--ae-nacht); }
 .ae-himmel img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 1.4s ease; }
 .ae-himmel img.ist-an { opacity: 1; }
+.ae-himmel img { filter: blur(9px) saturate(1.25) brightness(.85); transform: scale(1.06); transition: opacity 1.4s ease, filter 1s ease; }
+.ae-himmel.ist-klar img { filter: none; }
+.ae-einschub { clear: right; }
 .ae-himmel::after { content: ""; position: absolute; inset: 0; background: linear-gradient(0deg, #0b0d1cb3, transparent 38%), linear-gradient(90deg, #0b0d1c99, #0b0d1c33 55%, #0b0d1c14); }
 .ae-main { overflow-x: clip; }
 
@@ -623,6 +636,7 @@ body:has(.aporia-topbar details[open], .aporia-topbar.is-menu-open) .ae-reiter {
     .ae-wolken i, .ae-wind i { animation: none; }
     .ae-wind { display: none; }
     .ae-himmel img, .ae-werk-bild img { transition: none; }
+    .ae-hero::before, .ae-start::before { animation: none; }
 }
 `;
 
@@ -633,7 +647,7 @@ const SEITEN_CSS = {
 .ae-start-text { position: relative; z-index: 3; display: grid; gap: .8rem; justify-items: start; min-width: 0; container-type: inline-size; }
 .ae-emblem { width: clamp(84px, 11vw, 132px); height: auto; aspect-ratio: 1; border-radius: 50%; object-fit: cover; box-shadow: 0 0 0 1px #f2c7a588, 0 0 0 8px #c9a6ff14, 0 0 50px #c9a6ff66; animation: ae-schweben 9s ease-in-out infinite; }
 @keyframes ae-schweben { 50% { transform: translateY(-8px); } }
-.ae-wortmarke { margin: 0; font: 400 min(6.4rem, 13.5cqi)/.95 var(--ae-serif); letter-spacing: .1em; text-transform: uppercase; background: var(--ae-schillern); background-size: 200% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; animation: ae-schillern 14s ease-in-out infinite; }
+.ae-wortmarke { margin: 0; padding-bottom: .1em; font: 400 min(6.4rem, 13.5cqi)/.95 var(--ae-serif); letter-spacing: .1em; text-transform: uppercase; background: var(--ae-schillern); background-size: 200% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; animation: ae-schillern 14s ease-in-out infinite; }
 @keyframes ae-schillern { 50% { background-position: 100% 0; } }
 .ae-claim { margin: 0; font: 400 clamp(1.3rem, 2.6vw, 2rem) var(--ae-serif); letter-spacing: .3em; text-transform: uppercase; color: var(--ae-rose); }
 .ae-aufstieg { display: inline-flex; align-items: center; gap: .6rem; margin-top: .6rem; padding: .85rem 1.5rem; border-radius: 999px; background: var(--ae-schillern); color: var(--ae-nacht) !important; font: 700 .85rem var(--ae-sans); letter-spacing: .14em; text-transform: uppercase; text-decoration: none; box-shadow: 0 12px 30px #c9a6ff44; transition: transform .25s; }
@@ -777,7 +791,8 @@ const himmelsAbschnitte = [...document.querySelectorAll("[data-himmel]")];
 if (himmel && himmelsAbschnitte.length) {
     const [a, b] = himmel.querySelectorAll("img");
     let vorne = a, jetzt = a.getAttribute("src"), marke = 0;
-    const zeige = (src) => {
+    const zeige = (src, klar) => {
+        himmel.classList.toggle("ist-klar", !!klar);
         if (!src || src === jetzt) return;
         jetzt = src;
         const hinten = vorne === a ? b : a, m = ++marke;
@@ -790,7 +805,7 @@ if (himmel && himmelsAbschnitte.length) {
     const beobachter = new IntersectionObserver((eintraege) => {
         eintraege.forEach((e) => (e.isIntersecting ? sichtbar.add(e.target) : sichtbar.delete(e.target)));
         const aktiv = himmelsAbschnitte.filter((x) => sichtbar.has(x)).pop();
-        if (aktiv) zeige(aktiv.dataset.himmel);
+        if (aktiv) zeige(aktiv.dataset.himmel, aktiv.hasAttribute("data-himmel-klar"));
     }, { rootMargin: "-40% 0px -40% 0px" });
     himmelsAbschnitte.forEach((x) => beobachter.observe(x));
 }

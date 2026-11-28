@@ -10,7 +10,8 @@ const himmelsAbschnitte = [...document.querySelectorAll("[data-himmel]")];
 if (himmel && himmelsAbschnitte.length) {
     const [a, b] = himmel.querySelectorAll("img");
     let vorne = a, jetzt = a.getAttribute("src"), marke = 0;
-    const zeige = (src) => {
+    const zeige = (src, klar) => {
+        himmel.classList.toggle("ist-klar", !!klar);
         if (!src || src === jetzt) return;
         jetzt = src;
         const hinten = vorne === a ? b : a, m = ++marke;
@@ -23,7 +24,7 @@ if (himmel && himmelsAbschnitte.length) {
     const beobachter = new IntersectionObserver((eintraege) => {
         eintraege.forEach((e) => (e.isIntersecting ? sichtbar.add(e.target) : sichtbar.delete(e.target)));
         const aktiv = himmelsAbschnitte.filter((x) => sichtbar.has(x)).pop();
-        if (aktiv) zeige(aktiv.dataset.himmel);
+        if (aktiv) zeige(aktiv.dataset.himmel, aktiv.hasAttribute("data-himmel-klar"));
     }, { rootMargin: "-40% 0px -40% 0px" });
     himmelsAbschnitte.forEach((x) => beobachter.observe(x));
 }

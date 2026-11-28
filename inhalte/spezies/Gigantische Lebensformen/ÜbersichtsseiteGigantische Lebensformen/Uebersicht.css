@@ -188,7 +188,7 @@ body.species-group-page { margin: 0; background: #061811; color: #f4e6c9; font-f
 .ae-karte-hoehe b { position: absolute; right: -4px; top: 86%; width: 10px; height: 10px; border-radius: 50%; background: var(--ae-rose); box-shadow: 0 0 12px var(--ae-rose), 0 0 0 3px #e8b48a33; transition: top 1.6s cubic-bezier(.2, .7, .2, 1); }
 .species-category--aerothanen:is(:hover, :focus-within) .ae-karte-hoehe b { top: 4%; }
 /* Emblem schwebt */
-.species-category--aerothanen img.ae-karte-emblem { position: absolute; z-index: 4; left: .9rem; top: .85rem; width: 3.3rem; height: 3.3rem; aspect-ratio: 1; border-radius: 50%; object-fit: cover; box-shadow: 0 0 0 1px #f2c7a599, 0 0 0 5px #c9a6ff1f, 0 0 22px #c9a6ff99; animation: ae-karte-schweben 6s ease-in-out infinite; }
+.species-category--aerothanen img.ae-karte-emblem { position: absolute; z-index: 6; left: .8rem; top: .75rem; width: 4.6rem; height: 4.6rem; aspect-ratio: 1; box-sizing: border-box; padding: 2px; border-radius: 50%; object-fit: cover; background: var(--ae-schillern); filter: brightness(1.18) contrast(1.12) saturate(1.15); box-shadow: 0 0 0 3px #0b0d1caa, 0 0 0 5px #f2c7a5aa, 0 0 26px #c9a6ffcc, 0 0 48px #78e0ea55; animation: ae-karte-schweben 6s ease-in-out infinite; }
 @keyframes ae-karte-schweben { 50% { transform: translateY(-5px); } }
 /* Wortmarke ragt aus dem Himmel in die Karte */
 .species-category--aerothanen > div { position: relative; z-index: 5; }

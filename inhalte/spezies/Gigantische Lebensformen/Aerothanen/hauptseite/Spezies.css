@@ -4,7 +4,7 @@
 .ae-start-text { position: relative; z-index: 3; display: grid; gap: .8rem; justify-items: start; min-width: 0; container-type: inline-size; }
 .ae-emblem { width: clamp(84px, 11vw, 132px); height: auto; aspect-ratio: 1; border-radius: 50%; object-fit: cover; box-shadow: 0 0 0 1px #f2c7a588, 0 0 0 8px #c9a6ff14, 0 0 50px #c9a6ff66; animation: ae-schweben 9s ease-in-out infinite; }
 @keyframes ae-schweben { 50% { transform: translateY(-8px); } }
-.ae-wortmarke { margin: 0; font: 400 min(6.4rem, 13.5cqi)/.95 var(--ae-serif); letter-spacing: .1em; text-transform: uppercase; background: var(--ae-schillern); background-size: 200% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; animation: ae-schillern 14s ease-in-out infinite; }
+.ae-wortmarke { margin: 0; padding-bottom: .1em; font: 400 min(6.4rem, 13.5cqi)/.95 var(--ae-serif); letter-spacing: .1em; text-transform: uppercase; background: var(--ae-schillern); background-size: 200% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; animation: ae-schillern 14s ease-in-out infinite; }
 @keyframes ae-schillern { 50% { background-position: 100% 0; } }
 .ae-claim { margin: 0; font: 400 clamp(1.3rem, 2.6vw, 2rem) var(--ae-serif); letter-spacing: .3em; text-transform: uppercase; color: var(--ae-rose); }
 .ae-aufstieg { display: inline-flex; align-items: center; gap: .6rem; margin-top: .6rem; padding: .85rem 1.5rem; border-radius: 999px; background: var(--ae-schillern); color: var(--ae-nacht) !important; font: 700 .85rem var(--ae-sans); letter-spacing: .14em; text-transform: uppercase; text-decoration: none; box-shadow: 0 12px 30px #c9a6ff44; transition: transform .25s; }

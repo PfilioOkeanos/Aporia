@@ -18,7 +18,7 @@
 .ae-kicker { display: flex; flex-wrap: wrap; gap: .4rem 1rem; margin: 0; font: 700 .7rem/1.3 var(--ae-sans); letter-spacing: .24em; text-transform: uppercase; color: var(--ae-tuerkis); }
 .ae-kicker span + span::before { content: "·"; margin-right: 1rem; color: var(--ae-leise); }
 .ae-h2 { display: flex; align-items: baseline; flex-wrap: wrap; gap: .3rem 1rem; margin: 0 0 1.2rem; font: 400 clamp(1.5rem, 3vw, 2.2rem)/1.15 var(--ae-serif); letter-spacing: .04em; }
-.ae-h2 h2 { margin: 0; font: inherit; letter-spacing: inherit; }
+.ae-h2 h2 { margin: 0; padding-bottom: .14em; font: inherit; letter-spacing: inherit; }
 .ae-h2 span { background: var(--ae-schillern); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .ae-h2 small { font: 700 .7rem var(--ae-sans); letter-spacing: .2em; text-transform: uppercase; color: var(--ae-leise); }
 .ae-leise { color: var(--ae-leise); }
@@ -59,7 +59,13 @@ body:has(.aporia-topbar details[open], .aporia-topbar.is-menu-open) .ae-reiter {
 .ae-hero-bild { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; object-position: var(--fokus); }
 .ae-hero::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(0deg, var(--ae-nacht) 2%, #0b0d1cb8 34%, #0b0d1c33 70%, #0b0d1c66), linear-gradient(90deg, #0b0d1ccc, transparent 60%); }
 .ae-hero-text { position: relative; z-index: 3; display: grid; gap: .55rem; max-width: 46rem; padding: clamp(1.4rem, 4vw, 3.4rem) clamp(1rem, 5vw, 4rem); }
-.ae-hero h1 { margin: 0; font: 400 clamp(2.4rem, 6.5vw, 5rem)/1 var(--ae-serif); letter-spacing: .06em; background: var(--ae-schillern); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.ae-hero, .ae-start { border-bottom: 0; }
+.ae-hero::before, .ae-start::before { content: ""; position: absolute; z-index: 4; left: 0; right: 0; bottom: 0; height: 4.5rem; pointer-events: none;
+    background: var(--ae-schillern) center bottom / 100% 2px no-repeat, radial-gradient(ellipse 48% 100% at 50% 100%, #c9a6ff66, #78e0ea22 45%, transparent 75%);
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 16%, #000 84%, transparent); mask-image: linear-gradient(90deg, transparent, #000 16%, #000 84%, transparent);
+    animation: ae-leuchten 6s ease-in-out infinite; }
+@keyframes ae-leuchten { 50% { opacity: .7; } }
+.ae-hero h1 { margin: 0; font: 400 clamp(2.4rem, 6.5vw, 5rem)/1.12 var(--ae-serif); padding-bottom: .14em; letter-spacing: .06em; background: var(--ae-schillern); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .ae-unterzeile { margin: 0; font: 400 clamp(1.05rem, 2vw, 1.35rem)/1.4 var(--ae-serif); color: var(--ae-perl); }
 .ae-meta { margin: .3rem 0 0; font: 700 .72rem var(--ae-sans); letter-spacing: .18em; text-transform: uppercase; color: var(--ae-leise); }
 .ae-pfad { display: flex; flex-wrap: wrap; gap: .35rem; font-size: .8rem; color: var(--ae-leise); }
@@ -70,6 +76,9 @@ body:has(.aporia-topbar details[open], .aporia-topbar.is-menu-open) .ae-reiter {
 .ae-himmel { position: fixed; inset: 0; z-index: -1; pointer-events: none; background: var(--ae-nacht); }
 .ae-himmel img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 1.4s ease; }
 .ae-himmel img.ist-an { opacity: 1; }
+.ae-himmel img { filter: blur(9px) saturate(1.25) brightness(.85); transform: scale(1.06); transition: opacity 1.4s ease, filter 1s ease; }
+.ae-himmel.ist-klar img { filter: none; }
+.ae-einschub { clear: right; }
 .ae-himmel::after { content: ""; position: absolute; inset: 0; background: linear-gradient(0deg, #0b0d1cb3, transparent 38%), linear-gradient(90deg, #0b0d1c99, #0b0d1c33 55%, #0b0d1c14); }
 .ae-main { overflow-x: clip; }
 
@@ -212,4 +221,5 @@ body:has(.aporia-topbar details[open], .aporia-topbar.is-menu-open) .ae-reiter {
     .ae-wolken i, .ae-wind i { animation: none; }
     .ae-wind { display: none; }
     .ae-himmel img, .ae-werk-bild img { transition: none; }
+    .ae-hero::before, .ae-start::before { animation: none; }
 }
