@@ -15,7 +15,18 @@
 .ae-start-fenster .ae-werk-bild { aspect-ratio: 2 / 3; border-radius: 999px 999px 24px 24px; box-shadow: 0 0 0 1px #f2c7a566, 0 30px 80px #000a, 0 0 70px #c9a6ff33; }
 .ae-start-fenster .ae-werk-bild img { object-fit: cover; }
 .ae-start-fenster .ae-hoehenmesser { right: -1.6rem; }
-.ae-flugdaten, .ae-gestalten, .ae-verweise { max-width: 72rem; margin: 0 auto; padding: clamp(1.4rem, 3vw, 2.6rem) clamp(.8rem, 3vw, 2rem) 0; }
+.ae-flugdaten, .ae-verweise { max-width: 104rem; margin: 0 auto; padding: clamp(1.4rem, 3vw, 2.6rem) clamp(.8rem, 3vw, 2.6rem) 0; }
+/* Flugdaten vor dem Leviathan im Sturm – Bild als Hintergrund des Abschnitts, mit Wind */
+.ae-flugdaten { position: relative; isolation: isolate; overflow: hidden; padding-bottom: clamp(1.4rem, 3vw, 2.6rem); border-radius: 0 0 28px 28px; }
+.ae-flugdaten-bild { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; object-position: center 30%; opacity: .55; animation: ae-drift 30s ease-in-out infinite alternate; }
+.ae-flugdaten::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, var(--ae-nacht) 0%, #0b0d1cd9 45%, #0b0d1c66 100%), linear-gradient(0deg, var(--ae-nacht), transparent 40%); }
+/* Panorama: Heimat der Himmelsriesen als breites Bildband */
+.ae-panorama { position: relative; isolation: isolate; display: grid; align-items: end; min-height: clamp(22rem, 48vw, 36rem); margin: clamp(1.4rem, 3vw, 2.6rem) 0 0; overflow: hidden; border-block: 1px solid var(--ae-linie); }
+.ae-panorama-bild { position: absolute; inset: -6% -3%; z-index: -2; width: 106%; height: 112%; object-fit: cover; animation: ae-drift 34s ease-in-out infinite alternate; }
+.ae-panorama::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(0deg, var(--ae-nacht) 0%, #0b0d1c99 35%, transparent 70%), linear-gradient(90deg, #0b0d1cb3, transparent 55%); }
+.ae-panorama-text { position: relative; z-index: 2; display: grid; gap: .6rem; justify-items: start; max-width: 40rem; padding: clamp(1.4rem, 4vw, 3.4rem) clamp(1rem, 5vw, 4rem); }
+.ae-panorama-text p { margin: 0; }
+.ae-aufstieg--leise { background: #0b0d1ccc; color: var(--ae-perl) !important; border: 1px solid #f2c7a588; box-shadow: none; }
 .ae-flugdaten-raster { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 1rem; }
 .ae-flugdaten-text ul { list-style: none; padding: 0; display: grid; gap: .4rem; }
 .ae-flugdaten-text li { padding: .55rem .8rem; border: 1px solid var(--ae-linie); border-radius: 12px; background: #0b0d1c99; }
@@ -27,8 +38,6 @@
 .ae-groesse-min { left: 16.6%; transform: translateX(-50%); } .ae-groesse-max { right: 0; }
 .ae-groesse-zahl { margin: 0; font: 400 clamp(1.8rem, 4vw, 2.6rem)/1 var(--ae-serif); color: var(--ae-perl); }
 .ae-groesse-zahl span { font-size: .5em; color: var(--ae-leise); }
-.ae-gestalten-spur { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(13rem, 18rem); gap: 1rem; overflow-x: auto; padding-bottom: .6rem; scroll-snap-type: x mandatory; scrollbar-color: #c9a6ff55 transparent; }
-.ae-gestalt { scroll-snap-align: start; }
 .ae-verweise ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr)); gap: .7rem; }
 .ae-verweise a { display: grid; gap: .15rem; padding: .9rem 1.1rem; border: 1px solid var(--ae-linie); border-radius: 14px; background: linear-gradient(160deg, #1a1b3ae6, #0d0f22f2); text-decoration: none; transition: border-color .2s, transform .2s; }
 .ae-verweise a:hover { border-color: #e8b48a88; transform: translateY(-2px); }

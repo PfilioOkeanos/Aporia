@@ -133,38 +133,57 @@ function bildFuer(k, pool) {
     }
     return punkte >= 1 ? best : null;
 }
+// Jedes Kapitel bekommt ein Bild: als Kopfband (mit Wind) und aufgeklappt als Tafel neben dem Text.
+// Verteilung: 1. Zwischenüberschriften mit passendem Bild (Einschub im Text), 2. Kapitel mit passendem Bild,
+// 3. restliche Kapitel der Reihe nach mit freien Bildern, 4. übrige Bilder als Einschübe – keine angehängte Galerie.
 function kapitelHtml(von, s) {
     const pool = BILDER.filter((b) => s.pool?.(b) && b !== s.heroBild);
     const frei = [...pool];
-    const teile = [];
-    let nr = 0;
+    const nimm = (b) => { if (b) frei.splice(frei.indexOf(b), 1); return b; };
+    const einschub = (b) => werk(von, b, "ae-werk ae-einschub");
+    const kaps = [];
     for (const datei of s.info) {
         const liste = kapitel(`${INFO}/${datei}`, P);
-        liste.forEach((k, i) => {
-            nr++;
-            // Zwischenüberschriften (z. B. „F03 – Kaskadenversagen …“) bekommen zuerst ihr eigenes Bild …
-            let text = mdLinks(k.html).replace(/<h3>([^<]+)<\/h3>/g, (h3, titel) => {
-                const nurText = titel.replace(/&[a-z]+;/g, " ");
-                const passt = bildFuer({ nr: (nurText.match(/^[TF]\d+/) ?? [""])[0], titel: nurText }, frei);
-                if (!passt) return h3;
-                frei.splice(frei.indexOf(passt), 1);
-                return `${h3}\n${werk(von, passt, "ae-werk ae-kapitelbild")}`;
-            });
-            // … das Kapitel selbst bekommt eines, wenn noch keines darin steht
-            const b = text.includes("ae-kapitelbild") ? null : bildFuer(k, frei);
-            if (b) frei.splice(frei.indexOf(b), 1);
-            const quelle = i === liste.length - 1 ? `\n<p class="ae-quelle">Quelle: Info_material · Aerothanen · ${esc(datei)}</p>` : "";
-            teile.push(`<details class="ae-kapitel" id="${k.id}"${nr === 1 ? " open" : ""}>
-<summary><span class="ae-nr">${esc(k.nr === "◇" ? String(nr).padStart(2, "0") : k.nr)}</span><h2>${esc(k.titel)}</h2><span class="ae-chevron" aria-hidden="true"></span></summary>
-<div class="ae-text">${b ? werk(von, b, "ae-werk ae-kapitelbild") : ""}
-${text}${quelle}</div>
-</details>`);
-        });
+        liste.forEach((k, i) => kaps.push({ ...k, datei, letztes: i === liste.length - 1 }));
     }
-    return { html: teile.join("\n"), anzahl: nr, rest: frei };
+    for (const k of kaps) {
+        k.einschuebe = [];
+        k.text = mdLinks(k.html).replace(/<h3>([^<]+)<\/h3>/g, (h3, titel) => {
+            const nurText = titel.replace(/&[a-z]+;/g, " ");
+            const b = nimm(bildFuer({ nr: (nurText.match(/^[TF]\d+/) ?? [""])[0], titel: nurText }, frei));
+            if (b) k.einschuebe.push(b);
+            return b ? `${h3}\n${einschub(b)}` : h3;
+        });
+        // Kapitel mit Bildern an ihren Einzelthemen: Text in voller Breite, Kopfband zeigt das erste Bild
+        if (k.einschuebe.length) { k.voll = true; k.bild = k.einschuebe[0]; }
+    }
+    for (const k of kaps) if (!k.bild) k.bild = nimm(bildFuer(k, frei));
+    const reserve = pool.length ? pool : [s.heroBild];
+    let z = 0;
+    for (const k of kaps) if (!k.bild) k.bild = frei.shift() ?? reserve[z++ % reserve.length];
+    let j = 0;
+    while (frei.length && kaps.length) kaps[j++ % kaps.length].text += "\n" + einschub(frei.shift());
+
+    const html = kaps.map((k, n) => {
+        const b = k.bild;
+        const quelle = k.letztes ? `\n<p class="ae-quelle">Quelle: Info_material · Aerothanen · ${esc(k.datei)}</p>` : "";
+        return `<details class="ae-kapitel${k.voll ? " ae-kapitel--voll" : n % 2 ? " ae-kapitel--links" : ""}" id="${k.id}"${n === 0 ? " open" : ""}>
+<summary class="ae-band">
+${bildTag(von, b, "ae-band-bild")}
+<span class="ae-wind" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+<span class="ae-nr">${esc(k.nr === "◇" ? String(n + 1).padStart(2, "0") : k.nr)}</span><h2>${esc(k.titel)}</h2><span class="ae-chevron" aria-hidden="true"></span>
+</summary>
+<div class="ae-kapitel-koerper">
+<div class="ae-text">${k.text}${quelle}</div>
+${k.voll ? "" : werk(von, b, "ae-werk ae-tafel")}
+</div>
+</details>`;
+    }).join("\n");
+    const bilder = new Set(kaps.map((k) => k.bild)).size + (html.match(/ae-einschub/g) ?? []).length;
+    return { html, anzahl: kaps.length, bilder };
 }
 const galerie = (von, liste, titel = "Bildschicht") => liste.length ? `<section class="ae-galerie-block" aria-label="${esc(titel)}">
-<h2 class="ae-h2"><span>${esc(titel)}</span><small>${liste.length} ${liste.length === 1 ? "Bild" : "Bilder"}</small></h2>
+<div class="ae-h2"><h2><span>${esc(titel)}</span></h2><small>${liste.length} ${liste.length === 1 ? "Bild" : "Bilder"}</small></div>
 <div class="ae-galerie">${liste.map((b) => werk(von, b)).join("\n")}</div>
 </section>` : "";
 
@@ -212,7 +231,8 @@ ${inhalt(von)}
 function uebersicht(von) {
     const s = SEITE.uebersicht;
     const daten = kapitel(`${INFO}/${s.info[0]}`, P);
-    const gestalten = ["Gestalt B1", "Gestalt B3", "Schwebender Leviathan im Gasriesensturm", "Höherentwickelter Aerothan über der Wolkenstadt", "Gestalt B4", "Kronen-Aerothan über den Wolken"].map((t) => BILDER.find((b) => b.titel.startsWith(t))).filter(Boolean);
+    const panorama = bildVon("Schwebende Stadt über dem Sturmmeer");
+    const flugbild = bildVon("Schwebender Leviathan im Gasriesensturm");
     const links = [
         [`${S}/Unterseiten/Heimatwelt/heimatwelt.html`, "Heimatwelt", `${HEIMAT.welt} · ${HEIMAT.system}`, `data-route="${R0}-heimatwelt"`],
         [HEIMAT.dossier, "Planetendossier", HEIMAT.welt, ""],
@@ -237,7 +257,9 @@ ${hoehenmesser(s)}
 </figure>
 </header>
 <section class="ae-flugdaten" aria-labelledby="flugdaten-titel">
-<h2 class="ae-h2" id="flugdaten-titel"><span>Flugdaten</span><small>Speziesdaten</small></h2>
+${bildTag(von, flugbild, "ae-flugdaten-bild")}
+<span class="ae-wind" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+<div class="ae-h2"><h2 id="flugdaten-titel"><span>Flugdaten</span></h2><small>Speziesdaten</small></div>
 <div class="ae-flugdaten-raster">
 <div class="ae-panel ae-flugdaten-text">${daten.map((k) => `${k.vorspann ? "" : `<h3>${esc(k.titel)}</h3>`}${mdLinks(k.html)}`).join("\n")}
 <p class="ae-quelle">Quelle: Info_material · Aerothanen · ${esc(s.info[0])}</p></div>
@@ -249,12 +271,18 @@ ${hoehenmesser(s)}
 </div>
 </div>
 </section>
-<section class="ae-gestalten" aria-labelledby="gestalten-titel">
-<h2 class="ae-h2" id="gestalten-titel"><span>Gestalten über den Wolken</span><small>${gestalten.length} Ansichten</small></h2>
-<div class="ae-gestalten-spur">${gestalten.map((b) => werk(von, b, "ae-werk ae-gestalt")).join("\n")}</div>
+<section class="ae-panorama" aria-labelledby="panorama-titel">
+${bildTag(von, panorama, "ae-panorama-bild")}
+<span class="ae-wind ae-wind--stark" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+<div class="ae-panorama-text">
+<p class="ae-kicker"><span>Heimatwelt</span><span>${esc(HEIMAT.welt)}</span></p>
+<div class="ae-h2"><h2 id="panorama-titel"><span>${esc(panorama.titel)}</span></h2></div>
+<p>Lebensraum: Atmosphären großer Gasplaneten.</p>
+<a class="ae-aufstieg ae-aufstieg--leise" href="${zu(von, `${S}/${SEITE.heimatwelt.datei}`)}" data-route="${SEITE.heimatwelt.route}">Zur Heimatwelt <span aria-hidden="true">↑</span></a>
+</div>
 </section>
 <aside class="ae-verweise" aria-label="Verknüpfungen">
-<h2 class="ae-h2"><span>Verknüpfungen</span></h2>
+<div class="ae-h2"><h2><span>Verknüpfungen</span></h2></div>
 <ul>${links.map(([h, t, u, r]) => `<li><a href="${zu(von, h)}" ${r}><strong>${esc(t)}</strong><span>${esc(u)}</span></a></li>`).join("")}</ul>
 </aside>`;
 }
@@ -267,37 +295,90 @@ function unterseite(s) {
 <div><p class="ae-kicker"><span>Heimatwelt</span><span>Gasriese</span></p><h2>${esc(HEIMAT.welt)}</h2><p class="ae-leise">${esc(HEIMAT.system)} · Stern ${esc(HEIMAT.stern)}</p>
 <p class="ae-knoepfe"><a href="${zu(von, HEIMAT.dossier)}">Planetendossier ›</a><a href="${zu(von, "Menüs/Sternenkarte/Sternenkarte.html")}?system=osselyr-stern&amp;objekt=osselyr-saelith-iii">Sternenkarte ›</a></p></div>
 </section>` : "";
-        const bilder = k.rest.length + (k.html.match(/ae-kapitelbild/g) ?? []).length;
-        return `${hero(von, s, `${k.anzahl} Kapitel · ${bilder} ${bilder === 1 ? "Bild" : "Bilder"}`)}
+        return `${hero(von, s, `${k.anzahl} Kapitel · ${k.bilder} ${k.bilder === 1 ? "Bild" : "Bilder"}`)}
 <div class="ae-inhalt">
 ${heimat}
 <div class="ae-werkzeug"><p class="ae-kicker"><span>${k.anzahl} Kapitel</span></p><button type="button" class="ae-klappen" data-ae-klappen aria-pressed="false">Alle aufklappen</button></div>
 <div class="ae-kapitel-liste">
 ${k.html}
 </div>
-${galerie(von, k.rest)}
 </div>`;
     };
 }
 
+// ---------- Medien: Ordner werden beim Bauen gelesen – neue Dateien erscheinen nach erneutem Ausführen ----------
+const AUDIO = "assets/audio/Alle Spezies+Übersicht/Gigantische Lebensformen/Aerothanen";
+const VIDEO = "assets/videos/Alle Spezies+Übersicht/Gigantische Lebensformen/Aerothanen";
+const MODELLE = "assets/Modelle/Alle Spezies+Übersicht/Gigantische Lebensformen/Aerothanen";
+const NAMEN = { koerpergeraeusche: "Körpergeräusche", kommunikation: "Kommunikation", hintergrundmusik: "Hintergrundmusik", kulturelle_musik: "Kulturelle Musik", musik: "Musik", Forschung: "Forschung", Gameplay: "Gameplay" };
+const schoen = (n) => NAMEN[n] ?? n.replace(/[_-]+/g, " ").replace(/^\w/, (c) => c.toUpperCase());
+const dateiTitel = (f) => path.basename(f).replace(/\.[^.]+$/, "").replace(/[_-]+/g, " ").replace(/\s+/g, " ").trim();
+function baum(ordner) {
+    const voll = path.join(ROOT, ordner);
+    if (!fs.existsSync(voll)) return [];
+    return fs.readdirSync(voll, { withFileTypes: true }).flatMap((e) => e.isDirectory() ? baum(`${ordner}/${e.name}`) : e.name.startsWith(".") ? [] : [`${ordner}/${e.name}`]);
+}
+function blaetter(ordner) {   // unterste Ordner = Kategorien (auch leere)
+    const voll = path.join(ROOT, ordner);
+    if (!fs.existsSync(voll)) return [];
+    const unter = fs.readdirSync(voll, { withFileTypes: true }).filter((e) => e.isDirectory());
+    return unter.length ? unter.flatMap((e) => blaetter(`${ordner}/${e.name}`)) : [ordner];
+}
+const AUDIO_KATS = blaetter(AUDIO).map((o) => ({ ordner: o, name: schoen(path.posix.basename(o)), oben: path.posix.relative(AUDIO, o).includes("/") ? schoen(path.posix.relative(AUDIO, o).split("/")[0]) : "", dateien: baum(o).filter((f) => /\.(mp3|wav|ogg|m4a)$/i.test(f)) }));
+const VIDEOS = baum(VIDEO).filter((f) => /\.(mp4|webm|mov)$/i.test(f));
+const MODELL_DATEIEN = baum(MODELLE).filter((f) => /\.(glb|gltf)$/i.test(f));
+const ASSET_DATEIEN = baum(MODELLE).filter((f) => !/\.(glb|gltf)$/i.test(f));
+
 function medien(von) {
     const s = SEITE.medien;
     const kats = [...new Set(BILDER.map((b) => b.kategorie))];
-    return `${hero(von, s, `${BILDER.length} Bilder in ${kats.length} Kategorien`)}
-<div class="ae-inhalt">
-<section class="ae-galerie-block" id="bildarchiv" aria-labelledby="bildarchiv-titel">
-<h2 class="ae-h2" id="bildarchiv-titel"><span>Bildarchiv</span><small>${BILDER.length} Bilder</small></h2>
+    const erstes = BILDER[0];
+    const klaenge = AUDIO_KATS.reduce((n, k) => n + k.dateien.length, 0);
+    const ordnerHinweis = (o) => `<p class="ae-ordner"><span>Ordner</span><code>${esc(o)}</code></p>`;
+    const welle = `<span class="ae-welle" aria-hidden="true">${Array.from({ length: 28 }, (_, i) => `<i style="--h:${(28 + 62 * Math.abs(Math.sin(i * 1.7))).toFixed(0)}%;--v:${(i * 0.09).toFixed(2)}s"></i>`).join("")}</span>`;
+    return `${hero(von, s, `${BILDER.length} Bilder · ${klaenge} Klänge · ${VIDEOS.length} Videos · ${MODELL_DATEIEN.length} Modelle`)}
+<div class="ae-inhalt ae-medien">
+<section class="ae-karussell" id="bildarchiv" aria-labelledby="bildarchiv-titel">
+<div class="ae-h2"><h2 id="bildarchiv-titel"><span>Bild-Karussell</span></h2><small>${BILDER.length} Bilder</small></div>
 <div class="ae-filter" role="group" aria-label="Bilder filtern"><button type="button" aria-pressed="true" data-filter="">Alle <small>${BILDER.length}</small></button>${kats.map((k) => `<button type="button" aria-pressed="false" data-filter="${esc(k)}">${esc(k)} <small>${BILDER.filter((b) => b.kategorie === k).length}</small></button>`).join("")}</div>
-<div class="ae-galerie ae-galerie--archiv">${BILDER.map((b) => werk(von, b)).join("\n")}</div>
+<div class="ae-buehne">
+<img class="ae-buehne-hintergrund" src="${zu(von, erstes.vor)}" alt="" aria-hidden="true">
+<span class="ae-wind" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+<button type="button" class="ae-buehne-knopf" data-buehne="-1" aria-label="Vorheriges Bild">‹</button>
+<figure class="ae-buehne-bild"><button type="button" class="ae-buehne-gross" aria-label="Bild in Großansicht öffnen"><img src="${zu(von, erstes.vor)}" alt="${esc(erstes.titel)}" width="${erstes.w}" height="${erstes.h}"></button>
+<figcaption><span class="ae-buehne-kategorie">${esc(erstes.kategorie)}</span><strong>${esc(erstes.titel)}</strong><span class="ae-buehne-zaehler">1 / ${BILDER.length}</span></figcaption></figure>
+<button type="button" class="ae-buehne-knopf" data-buehne="1" aria-label="Nächstes Bild">›</button>
+</div>
+<div class="ae-daumen" aria-label="Alle Bilder">${BILDER.map((b, i) => `<button type="button" class="ae-daumen-bild" data-index="${i}" data-kategorie="${esc(b.kategorie)}" data-vor="${zu(von, b.vor)}" data-gross="${zu(von, b.orig)}" data-titel="${esc(b.titel)}" aria-label="${esc(b.titel)}"${i === 0 ? ' aria-current="true"' : ""}><img src="${zu(von, b.vor)}" alt="" loading="lazy" decoding="async" width="${b.w}" height="${b.h}"></button>`).join("")}</div>
 </section>
-<section class="ae-panel ae-medienfeld" id="klangarchiv" aria-labelledby="klang-titel"><h2 class="ae-h2" id="klang-titel"><span>Klangarchiv</span><small>0 Klänge</small></h2>
-<p>Noch keine Klänge im Archiv. Vorgesehener Ordner: <code>assets/audio/Alle Spezies+Übersicht/Gigantische Lebensformen/Aerothanen</code></p></section>
-<section class="ae-panel ae-medienfeld" id="video" aria-labelledby="video-titel"><h2 class="ae-h2" id="video-titel"><span>Animationen und Video</span></h2>
-<p>Animationen und Videos der Himmelsriesen sind in Vorbereitung.</p></section>
-<section class="ae-panel ae-medienfeld" id="modelle" aria-labelledby="modelle-titel"><h2 class="ae-h2" id="modelle-titel"><span>3D-Modelle und 360°-Ansicht</span></h2>
-<p>Modellansicht in Vorbereitung.</p></section>
-<section class="ae-panel ae-medienfeld" id="assets" aria-labelledby="assets-titel"><h2 class="ae-h2" id="assets-titel"><span>Digitale Assets</span></h2>
-<p>In Vorbereitung.</p></section>
+
+<section class="ae-medienfeld" id="klangarchiv" aria-labelledby="klang-titel">
+<div class="ae-h2"><h2 id="klang-titel"><span>Klangarchiv</span></h2><small>${klaenge} Klänge in ${AUDIO_KATS.length} Kategorien</small></div>
+<div class="ae-klang-raster">${AUDIO_KATS.map((k) => `<article class="ae-klang">
+<header><p class="ae-kicker">${k.oben ? `<span>${esc(k.oben)}</span>` : ""}<span>${k.dateien.length} ${k.dateien.length === 1 ? "Klang" : "Klänge"}</span></p><h3>${esc(k.name)}</h3></header>
+${k.dateien.length ? `<ol class="ae-spur">${k.dateien.map((f) => `<li><span>${esc(dateiTitel(f))}</span><audio controls preload="none" src="${zu(von, f)}"></audio></li>`).join("")}</ol>` : `${welle}<p class="ae-leise">Bereit für Klänge – Dateien (MP3, WAV, OGG) in diesen Ordner legen und das Bauskript ausführen.</p>${ordnerHinweis(k.ordner)}`}
+</article>`).join("\n")}</div>
+</section>
+
+<section class="ae-medienfeld" id="video" aria-labelledby="video-titel">
+<div class="ae-h2"><h2 id="video-titel"><span>Animationen und Video</span></h2><small>${VIDEOS.length} Videos</small></div>
+${VIDEOS.length ? `<div class="ae-video-raster">${VIDEOS.map((f) => `<figure class="ae-video"><video controls preload="metadata" playsinline src="${zu(von, f)}"></video><figcaption>${esc(dateiTitel(f))}</figcaption></figure>`).join("")}</div>`
+        : `<div class="ae-bildschirm"><img src="${zu(von, bildVon("Kosmischer Wirbelsturm über Gasriesen").vor)}" alt="" loading="lazy" decoding="async"><span class="ae-wind" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span><span class="ae-play" aria-hidden="true">▶</span>
+<div class="ae-bildschirm-text"><p class="ae-kicker"><span>Bewegtbild</span><span>16:9</span></p><p>Bereit für Animationen und Videos (MP4, WebM).</p>${ordnerHinweis(VIDEO)}</div></div>`}
+</section>
+
+<section class="ae-medienfeld" id="modelle" aria-labelledby="modelle-titel">
+<div class="ae-h2"><h2 id="modelle-titel"><span>3D-Modelle und 360°-Ansicht</span></h2><small>${MODELL_DATEIEN.length} Modelle</small></div>
+${MODELL_DATEIEN.length ? `<div class="ae-modell-raster">${MODELL_DATEIEN.map((f) => `<figure class="ae-modell" data-modell="${zu(von, f)}" data-titel="${esc(dateiTitel(f))}"><div class="ae-modell-buehne"><button type="button" class="ae-modell-laden">3D-Modell laden</button></div><figcaption>${esc(dateiTitel(f))}</figcaption></figure>`).join("")}</div>`
+        : `<div class="ae-holo"><div class="ae-holo-kugel" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+<div><p class="ae-kicker"><span>Modellansicht</span><span>GLB · GLTF</span></p><p>Bereit für drehbare 3D-Modelle mit 360°-Ansicht – die Ansicht lädt erst beim Antippen.</p>${ordnerHinweis(MODELLE)}</div></div>`}
+</section>
+
+<section class="ae-medienfeld" id="assets" aria-labelledby="assets-titel">
+<div class="ae-h2"><h2 id="assets-titel"><span>Digitale Assets</span></h2><small>${ASSET_DATEIEN.length} Dateien</small></div>
+${ASSET_DATEIEN.length ? `<ul class="ae-asset-liste">${ASSET_DATEIEN.map((f) => `<li><a href="${zu(von, f)}" download><strong>${esc(path.basename(f))}</strong><span>${esc(path.extname(f).slice(1).toUpperCase())}</span></a></li>`).join("")}</ul>`
+        : `<div class="ae-panel ae-asset-leer"><p class="ae-kicker"><span>Downloads</span><span>FBX · Blend · Texturen</span></p><p>Bereit für Quelldateien und Texturen zum Herunterladen.</p>${ordnerHinweis(MODELLE)}</div>`}
+</section>
 </div>`;
 }
 
@@ -314,7 +395,7 @@ const BASIS_CSS = `/* Aerothanen · Marke „Perlmutt & Sturmlicht“ (erzeugt v
 }
 .ae *, .ae *::before, .ae *::after { box-sizing: border-box; }
 .ae-main a { color: var(--ae-rose); }
-.ae-frame { display: flex; align-items: flex-start; }
+.ae-frame { display: flex; }
 .ae-frame > [data-aporia-sidebar] { flex: 0 0 auto; }
 .ae-main { flex: 1 1 auto; min-width: 0; padding-bottom: 2rem; }
 
@@ -322,6 +403,7 @@ const BASIS_CSS = `/* Aerothanen · Marke „Perlmutt & Sturmlicht“ (erzeugt v
 .ae-kicker { display: flex; flex-wrap: wrap; gap: .4rem 1rem; margin: 0; font: 700 .7rem/1.3 var(--ae-sans); letter-spacing: .24em; text-transform: uppercase; color: var(--ae-tuerkis); }
 .ae-kicker span + span::before { content: "·"; margin-right: 1rem; color: var(--ae-leise); }
 .ae-h2 { display: flex; align-items: baseline; flex-wrap: wrap; gap: .3rem 1rem; margin: 0 0 1.2rem; font: 400 clamp(1.5rem, 3vw, 2.2rem)/1.15 var(--ae-serif); letter-spacing: .04em; }
+.ae-h2 h2 { margin: 0; font: inherit; letter-spacing: inherit; }
 .ae-h2 span { background: var(--ae-schillern); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .ae-h2 small { font: 700 .7rem var(--ae-sans); letter-spacing: .2em; text-transform: uppercase; color: var(--ae-leise); }
 .ae-leise { color: var(--ae-leise); }
@@ -369,52 +451,92 @@ body:has(.aporia-topbar details[open], .aporia-topbar.is-menu-open) .ae-reiter {
 .ae-pfad a { color: var(--ae-perl); text-decoration: none; opacity: .85; }
 .ae-pfad a:hover { opacity: 1; text-decoration: underline; }
 
-/* Inhalt */
-.ae-inhalt { display: grid; gap: 1.2rem; max-width: 72rem; margin: 0 auto; padding: clamp(1.2rem, 3vw, 2.4rem) clamp(.8rem, 3vw, 2rem); }
+/* Inhalt – nutzt die Breite: Text und Bildtafel nebeneinander */
+.ae-inhalt { display: grid; gap: 1.4rem; max-width: 104rem; margin: 0 auto; padding: clamp(1.2rem, 3vw, 2.6rem) clamp(.8rem, 3vw, 2.6rem); }
 .ae-panel { border: 1px solid var(--ae-linie); border-radius: 18px; background: linear-gradient(160deg, #1a1b3ae6, #0d0f22f2); box-shadow: inset 0 1px 0 #f4ecf31a, 0 18px 40px #0007; padding: clamp(1rem, 2.5vw, 1.6rem); }
 .ae-werkzeug { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
 .ae-klappen { padding: .5rem 1rem; border: 1px solid #c9a6ff66; border-radius: 999px; background: transparent; color: var(--ae-perl); font: 700 .72rem var(--ae-sans); letter-spacing: .14em; text-transform: uppercase; cursor: pointer; }
 .ae-klappen:hover { background: #c9a6ff1f; }
 
-/* Kapitel als Wolkenschichten */
-.ae-kapitel-liste { display: grid; gap: .8rem; }
-.ae-kapitel { position: relative; border: 1px solid var(--ae-linie); border-radius: 16px; background: linear-gradient(160deg, #191a38f0, #0d0f22f5); box-shadow: inset 0 1px 0 #f4ecf314, 0 12px 30px #0006; overflow: hidden; }
-.ae-kapitel::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 2px; background: var(--ae-schillern); opacity: .55; }
-.ae-kapitel > summary { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: .9rem; padding: 1rem 1.2rem; cursor: pointer; list-style: none; }
-.ae-kapitel > summary::-webkit-details-marker { display: none; }
-.ae-kapitel > summary h2 { margin: 0; font: 400 clamp(1.1rem, 2.2vw, 1.45rem)/1.25 var(--ae-serif); color: var(--ae-perl); letter-spacing: .02em; }
-.ae-nr { min-width: 2.6rem; padding: .25rem .5rem; border: 1px solid #78e0ea55; border-radius: 999px; font: 700 .7rem var(--ae-sans); letter-spacing: .1em; text-align: center; color: var(--ae-tuerkis); }
-.ae-chevron { width: .7rem; height: .7rem; border-right: 2px solid var(--ae-rose); border-bottom: 2px solid var(--ae-rose); transform: rotate(45deg); transition: transform .25s; }
+/* Wind: feine Luftströme, die über Bilder ziehen (nur so groß wie ihr Band) */
+.ae-wind { position: absolute; inset: 0; z-index: 1; overflow: hidden; pointer-events: none; }
+.ae-wind i { position: absolute; left: -40%; width: 38%; height: 1px; border-radius: 1px; background: linear-gradient(90deg, transparent, #f4ecf3cc 45%, #c9e9ff 55%, transparent); opacity: 0; animation: ae-windstoss 7s linear infinite; }
+.ae-wind i:nth-child(1) { top: 22%; animation-delay: 0s; }
+.ae-wind i:nth-child(2) { top: 41%; width: 52%; animation-delay: 1.6s; animation-duration: 9s; }
+.ae-wind i:nth-child(3) { top: 58%; width: 30%; animation-delay: 3.1s; }
+.ae-wind i:nth-child(4) { top: 73%; width: 46%; animation-delay: 4.4s; animation-duration: 8s; }
+.ae-wind i:nth-child(5) { top: 33%; width: 24%; animation-delay: 5.7s; animation-duration: 6s; }
+.ae-wind--stark i { height: 2px; }
+@keyframes ae-windstoss { 0% { transform: translateX(0) translateY(0); opacity: 0; } 12% { opacity: .75; } 70% { opacity: .5; } 100% { transform: translateX(380%) translateY(-14px); opacity: 0; } }
+
+/* Kapitel: Bildband als Kopf, aufgeklappt Text + Bildtafel */
+.ae-kapitel-liste { display: grid; gap: 1rem; }
+.ae-kapitel { position: relative; border: 1px solid var(--ae-linie); border-radius: 20px; background: linear-gradient(160deg, #161735f2, #0b0d1cf7); box-shadow: inset 0 1px 0 #f4ecf314, 0 16px 36px #0007; overflow: hidden; }
+.ae-band { position: relative; isolation: isolate; display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: end; gap: 1rem; min-height: clamp(7.5rem, 14vw, 11rem); padding: 1.1rem 1.4rem; cursor: pointer; list-style: none; overflow: hidden; }
+.ae-band::-webkit-details-marker { display: none; }
+.ae-band-bild { position: absolute; inset: -8% -4%; z-index: -2; width: 108%; height: 116%; object-fit: cover; object-position: center 35%; animation: ae-drift 26s ease-in-out infinite alternate; }
+.ae-kapitel--links .ae-band-bild { animation-direction: alternate-reverse; }
+@keyframes ae-drift { from { transform: translateX(-2.5%) scale(1.02); } to { transform: translateX(2.5%) scale(1.08); } }
+.ae-band::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, #0b0d1cf0 0%, #0b0d1cb3 38%, #0b0d1c40 75%, #0b0d1c26), linear-gradient(0deg, #0b0d1ce6, transparent 70%); }
+.ae-kapitel--links .ae-band::after { background: linear-gradient(270deg, #0b0d1cf0 0%, #0b0d1cb3 38%, #0b0d1c40 75%, #0b0d1c26), linear-gradient(0deg, #0b0d1ce6, transparent 70%); }
+.ae-band h2 { position: relative; z-index: 2; margin: 0; font: 400 clamp(1.25rem, 2.6vw, 1.9rem)/1.2 var(--ae-serif); color: var(--ae-perl); letter-spacing: .03em; text-shadow: 0 2px 14px #000c; }
+.ae-band .ae-nr, .ae-band .ae-chevron { position: relative; z-index: 2; }
+.ae-nr { min-width: 2.8rem; padding: .3rem .55rem; border: 1px solid #78e0ea77; border-radius: 999px; background: #0b0d1caa; font: 700 .72rem var(--ae-sans); letter-spacing: .1em; text-align: center; color: var(--ae-tuerkis); }
+.ae-chevron { align-self: center; width: .8rem; height: .8rem; border-right: 2px solid var(--ae-rose); border-bottom: 2px solid var(--ae-rose); transform: rotate(45deg); transition: transform .25s; }
 .ae-kapitel[open] .ae-chevron { transform: rotate(-135deg); }
 .ae-kapitel:hover { border-color: #c9a6ff66; }
-.ae-text { padding: 0 1.2rem 1.3rem; }
+.ae-kapitel[open] .ae-band { min-height: clamp(6rem, 9vw, 8rem); }
+.ae-kapitel-koerper { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(16rem, .85fr); gap: clamp(1.2rem, 3vw, 2.8rem); padding: clamp(1.1rem, 2.6vw, 2.2rem); }
+.ae-kapitel--links .ae-kapitel-koerper { grid-template-columns: minmax(16rem, .85fr) minmax(0, 1.35fr); }
+.ae-kapitel--links .ae-tafel { order: -1; }
+.ae-tafel { align-self: start; position: sticky; top: calc(var(--aporia-topbar-height, 78px) + 4.5rem); }
+.ae-tafel .ae-werk-bild { box-shadow: 0 0 0 1px #f2c7a544, 0 24px 60px #000b, 0 0 40px #c9a6ff22; border-radius: 16px; }
+
+/* Text mit Gestaltungselementen */
+.ae-text { min-width: 0; font-size: 1.02rem; }
 .ae-text > :first-child { margin-top: 0; }
-.ae-text h3 { margin: 1.3rem 0 .4rem; font: 400 1.15rem var(--ae-serif); color: var(--ae-rose); }
-.ae-text p, .ae-text li { max-width: 72ch; }
-.ae-text ul { padding-left: 1.2rem; }
-.ae-text li::marker { color: var(--ae-tuerkis); }
-.ae-fakten { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr)); gap: .5rem; margin: .8rem 0; }
-.ae-fakten div { padding: .6rem .8rem; border: 1px solid var(--ae-linie); border-radius: 12px; background: #0b0d1c99; }
+.ae-text > p:first-of-type { font-size: 1.12rem; color: var(--ae-perl); }
+.ae-text p, .ae-text li { max-width: 74ch; }
+.ae-text h3 { position: relative; margin: 1.8rem 0 .7rem; padding-left: 2.2rem; font: 400 1.22rem/1.3 var(--ae-serif); color: var(--ae-rose); }
+.ae-text h3::before { content: ""; position: absolute; left: 0; top: .62em; width: 1.6rem; height: 2px; background: var(--ae-schillern); box-shadow: 0 0 10px #c9a6ff88; }
+.ae-text ul { list-style: none; display: grid; gap: 0; margin: .6rem 0 1.1rem; padding: .2rem 0 .2rem; border-left: 2px solid transparent; border-image: var(--ae-schillern) 1; }
+.ae-text ul li { position: relative; padding: .45rem .4rem .45rem 2rem; border-bottom: 1px solid #c9a6ff1a; }
+.ae-text ul li::before { content: ""; position: absolute; left: .85rem; top: 1.05em; width: .7rem; height: 2px; background: var(--ae-tuerkis); box-shadow: 4px -4px 0 -0.5px #78e0ea66; transform: translateY(-50%); }
+.ae-text ol { margin: .8rem 0 1.1rem; padding-left: 1.4rem; display: grid; gap: .35rem; }
+.ae-text ol li::marker { color: var(--ae-rose); font-weight: 700; }
+.ae-fakten { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 14rem), 1fr)); gap: .55rem; margin: 1rem 0; }
+.ae-fakten div { position: relative; padding: .7rem .9rem .7rem 1.1rem; border: 1px solid var(--ae-linie); border-radius: 12px; background: radial-gradient(ellipse at 0% 0%, #78e0ea18, transparent 70%), #0b0d1cb3; overflow: hidden; }
+.ae-fakten div::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 3px; background: var(--ae-schillern); }
 .ae-fakten dt { font: 700 .66rem var(--ae-sans); letter-spacing: .16em; text-transform: uppercase; color: var(--ae-tuerkis); }
-.ae-fakten dd { margin: .15rem 0 0; color: var(--ae-perl); }
-.ae-tabelle { overflow-x: auto; }
+.ae-fakten dd { margin: .2rem 0 0; color: var(--ae-perl); }
+.ae-tabelle { overflow-x: auto; margin: 1rem 0; border: 1px solid var(--ae-linie); border-radius: 12px; }
 .ae-tabelle table { width: 100%; border-collapse: collapse; font-size: .92rem; }
-.ae-tabelle th, .ae-tabelle td { padding: .45rem .6rem; border-bottom: 1px solid var(--ae-linie); text-align: left; vertical-align: top; }
-.ae-tabelle th { color: var(--ae-tuerkis); font-weight: 700; }
-.ae-quelle { margin: 1rem 0 0; font-size: .74rem; color: var(--ae-leise); }
+.ae-tabelle th, .ae-tabelle td { padding: .55rem .75rem; border-bottom: 1px solid var(--ae-linie); text-align: left; vertical-align: top; }
+.ae-tabelle th { color: var(--ae-tuerkis); font-weight: 700; background: #c9a6ff12; }
+.ae-text strong { color: var(--ae-perl); }
+.ae-text .ae-kicker { margin: 0 0 .6rem; }
+.ae-quelle { margin: 1.4rem 0 0; padding-top: .8rem; border-top: 1px solid var(--ae-linie); font-size: .74rem; color: var(--ae-leise); }
 
 /* Werke (Bilder): immer im eigenen Seitenverhältnis – nichts wird abgeschnitten */
 .ae-werk { margin: 0; }
 .ae-werk-bild { display: block; width: 100%; padding: 0; border: 0; border-radius: 12px; overflow: hidden; background: #07080f; cursor: zoom-in; aspect-ratio: var(--ar); }
 .ae-werk-bild img { display: block; width: 100%; height: 100%; object-fit: contain; transition: transform .6s cubic-bezier(.2, .7, .2, 1); }
 .ae-werk-bild:hover img { transform: scale(1.025); }
-.ae-werk figcaption { display: grid; gap: .1rem; padding: .5rem .2rem 0; }
+.ae-werk figcaption { display: grid; gap: .1rem; padding: .55rem .2rem 0; }
 .ae-werk figcaption strong { font: 500 .88rem/1.3 var(--ae-sans); color: var(--ae-perl); }
 .ae-werk figcaption span { font: 700 .62rem var(--ae-sans); letter-spacing: .16em; text-transform: uppercase; color: var(--ae-leise); }
-.ae-kapitelbild { float: right; width: min(42%, 22rem); margin: .2rem 0 1rem 1.4rem; }
-.ae-galerie { columns: 16rem; column-gap: 1rem; }
-.ae-galerie .ae-werk { break-inside: avoid; margin-bottom: 1rem; }
-.ae-galerie .ae-werk[hidden] { display: none; }
+/* Einschub: Bild mitten im Text, passend zur Zwischenüberschrift */
+.ae-einschub { float: right; width: min(46%, 24rem); margin: .3rem 0 1.1rem 1.6rem; }
+.ae-einschub .ae-werk-bild { border-radius: 14px; box-shadow: 0 0 0 1px #c9a6ff44, 0 16px 40px #0009; }
+.ae-text::after { content: ""; display: block; clear: both; }
+/* Kapitel mit Bildern an ihren Einzelthemen: Text in voller Breite, Bilder stehen neben ihrem Thema */
+.ae-kapitel--voll .ae-kapitel-koerper { grid-template-columns: minmax(0, 1fr); }
+.ae-kapitel--voll .ae-text p, .ae-kapitel--voll .ae-text li { max-width: 82ch; }
+/* Schmale Textspalte: Einschub-Bild über dem Text statt daneben (Textspalte als Container) */
+.ae-text { container-type: inline-size; }
+@container (max-width: 40rem) {
+    .ae-einschub { float: none; width: 100%; max-width: 30rem; margin: .4rem 0 1.1rem; }
+}
 
 /* Großansicht */
 .ae-gross { width: 100vw; height: 100dvh; max-width: none; max-height: none; margin: 0; padding: 0; border: 0; background: #05060cf2; color: var(--ae-perl); }
@@ -431,28 +553,36 @@ body:has(.aporia-topbar details[open], .aporia-topbar.is-menu-open) .ae-reiter {
 .ae-gross-zu { top: .8rem; right: .8rem; }
 
 /* Kapitel blättern am Seitenende (aporia-kapitel-weiter.js) in Aerothanen-Farben */
-.ae .aporia-kapitel { --kapitel-akzent: #e8b48a; --kapitel-nacht: #0b0d1c; --kapitel-text: #f4ecf3; max-width: 72rem; margin: 1rem auto 0; padding: 0 clamp(.8rem, 3vw, 2rem); }
+.ae .aporia-kapitel { --kapitel-akzent: #e8b48a; --kapitel-nacht: #0b0d1c; --kapitel-text: #f4ecf3; max-width: 104rem; margin: 1rem auto 0; padding: 0 clamp(.8rem, 3vw, 2rem); }
 
-/* Handy */
+/* Handy und schmale Fenster */
+@media (max-width: 1100px) {
+    .ae-kapitel-koerper, .ae-kapitel--links .ae-kapitel-koerper { grid-template-columns: minmax(0, 1fr); }
+    .ae-kapitel--links .ae-tafel { order: 0; }
+    .ae-tafel { position: static; order: -1; max-width: 34rem; }
+}
 @media (max-width: 760px) {
     .ae { background-attachment: scroll; }
     .ae-hero { min-height: 62svh; }
     .ae-hero::after { background: linear-gradient(0deg, var(--ae-nacht) 4%, #0b0d1cc4 42%, #0b0d1c26 78%, #0b0d1c80); }
     .ae-hoehenmesser { top: 18%; bottom: 30%; right: .7rem; }
     .ae-hoehenmarke { font-size: .62rem; right: 26px; }
-    .ae-kapitel > summary { padding: .85rem .9rem; gap: .7rem; }
-    .ae-text { padding: 0 .9rem 1.1rem; }
-    .ae-kapitelbild { float: none; width: 100%; margin: 0 0 1rem; }
-    .ae-galerie { columns: 2; column-gap: .6rem; }
-    .ae-galerie .ae-werk { margin-bottom: .6rem; }
-    .ae-werk figcaption strong { font-size: .78rem; }
+    .ae-band { min-height: 8.5rem; padding: .9rem; gap: .7rem; }
+    .ae-band::after, .ae-kapitel--links .ae-band::after { background: linear-gradient(0deg, #0b0d1cf2 10%, #0b0d1c80 60%, #0b0d1c33); }
+    .ae-kapitel-koerper { padding: 1rem .9rem 1.2rem; gap: 1rem; }
+    .ae-tafel { max-width: none; }
+    .ae-einschub { float: none; width: 100%; margin: .4rem 0 1rem; }
+    .ae-text { font-size: 1rem; }
+    .ae-text h3 { padding-left: 1.8rem; }
+    .ae-text h3::before { width: 1.2rem; }
+    .ae-werk figcaption strong { font-size: .8rem; }
     .ae-gross figure { padding: 3.4rem .6rem .8rem; }
     .ae-gross-knopf { width: 2.4rem; height: 2.4rem; font-size: 1.4rem; background: #0b0d1c99; }
     .ae-gross-zurueck { left: .3rem; } .ae-gross-weiter { right: .3rem; }
 }
-@media (max-width: 420px) { .ae-galerie { columns: 1; } }
 @media (prefers-reduced-motion: reduce) {
-    .ae-wolken i { animation: none; }
+    .ae-wolken i, .ae-wind i, .ae-band-bild { animation: none; }
+    .ae-wind { display: none; }
     .ae-werk-bild img, .ae-chevron { transition: none; }
 }
 `;
@@ -475,7 +605,18 @@ const SEITEN_CSS = {
 .ae-start-fenster .ae-werk-bild { aspect-ratio: 2 / 3; border-radius: 999px 999px 24px 24px; box-shadow: 0 0 0 1px #f2c7a566, 0 30px 80px #000a, 0 0 70px #c9a6ff33; }
 .ae-start-fenster .ae-werk-bild img { object-fit: cover; }
 .ae-start-fenster .ae-hoehenmesser { right: -1.6rem; }
-.ae-flugdaten, .ae-gestalten, .ae-verweise { max-width: 72rem; margin: 0 auto; padding: clamp(1.4rem, 3vw, 2.6rem) clamp(.8rem, 3vw, 2rem) 0; }
+.ae-flugdaten, .ae-verweise { max-width: 104rem; margin: 0 auto; padding: clamp(1.4rem, 3vw, 2.6rem) clamp(.8rem, 3vw, 2.6rem) 0; }
+/* Flugdaten vor dem Leviathan im Sturm – Bild als Hintergrund des Abschnitts, mit Wind */
+.ae-flugdaten { position: relative; isolation: isolate; overflow: hidden; padding-bottom: clamp(1.4rem, 3vw, 2.6rem); border-radius: 0 0 28px 28px; }
+.ae-flugdaten-bild { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; object-position: center 30%; opacity: .55; animation: ae-drift 30s ease-in-out infinite alternate; }
+.ae-flugdaten::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, var(--ae-nacht) 0%, #0b0d1cd9 45%, #0b0d1c66 100%), linear-gradient(0deg, var(--ae-nacht), transparent 40%); }
+/* Panorama: Heimat der Himmelsriesen als breites Bildband */
+.ae-panorama { position: relative; isolation: isolate; display: grid; align-items: end; min-height: clamp(22rem, 48vw, 36rem); margin: clamp(1.4rem, 3vw, 2.6rem) 0 0; overflow: hidden; border-block: 1px solid var(--ae-linie); }
+.ae-panorama-bild { position: absolute; inset: -6% -3%; z-index: -2; width: 106%; height: 112%; object-fit: cover; animation: ae-drift 34s ease-in-out infinite alternate; }
+.ae-panorama::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(0deg, var(--ae-nacht) 0%, #0b0d1c99 35%, transparent 70%), linear-gradient(90deg, #0b0d1cb3, transparent 55%); }
+.ae-panorama-text { position: relative; z-index: 2; display: grid; gap: .6rem; justify-items: start; max-width: 40rem; padding: clamp(1.4rem, 4vw, 3.4rem) clamp(1rem, 5vw, 4rem); }
+.ae-panorama-text p { margin: 0; }
+.ae-aufstieg--leise { background: #0b0d1ccc; color: var(--ae-perl) !important; border: 1px solid #f2c7a588; box-shadow: none; }
 .ae-flugdaten-raster { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 1rem; }
 .ae-flugdaten-text ul { list-style: none; padding: 0; display: grid; gap: .4rem; }
 .ae-flugdaten-text li { padding: .55rem .8rem; border: 1px solid var(--ae-linie); border-radius: 12px; background: #0b0d1c99; }
@@ -487,8 +628,6 @@ const SEITEN_CSS = {
 .ae-groesse-min { left: 16.6%; transform: translateX(-50%); } .ae-groesse-max { right: 0; }
 .ae-groesse-zahl { margin: 0; font: 400 clamp(1.8rem, 4vw, 2.6rem)/1 var(--ae-serif); color: var(--ae-perl); }
 .ae-groesse-zahl span { font-size: .5em; color: var(--ae-leise); }
-.ae-gestalten-spur { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(13rem, 18rem); gap: 1rem; overflow-x: auto; padding-bottom: .6rem; scroll-snap-type: x mandatory; scrollbar-color: #c9a6ff55 transparent; }
-.ae-gestalt { scroll-snap-align: start; }
 .ae-verweise ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr)); gap: .7rem; }
 .ae-verweise a { display: grid; gap: .15rem; padding: .9rem 1.1rem; border: 1px solid var(--ae-linie); border-radius: 14px; background: linear-gradient(160deg, #1a1b3ae6, #0d0f22f2); text-decoration: none; transition: border-color .2s, transform .2s; }
 .ae-verweise a:hover { border-color: #e8b48a88; transform: translateY(-2px); }
@@ -518,12 +657,90 @@ const SEITEN_CSS = {
     forschung: `/* Forschung · Laborlicht */
 .ae-seite-forschung .ae-kapitel::before { background: linear-gradient(90deg, #78e0ea, #c9a6ff); opacity: .7; }
 `,
-    medien: `/* Medien · Bildarchiv mit Filter */
-.ae-filter { display: flex; flex-wrap: wrap; gap: .4rem; margin-bottom: 1.2rem; }
+    medien: `/* Medien · Bild-Karussell, Klangarchiv, Bewegtbild, 3D und Assets */
+.ae-medien { gap: clamp(2rem, 4vw, 3.4rem); }
+.ae-inhalt > * { min-width: 0; }
+.ae-buehne-bild { width: 100%; }
+.ae-filter { display: flex; flex-wrap: wrap; gap: .4rem; margin-bottom: 1rem; }
 .ae-filter button { padding: .45rem .9rem; border: 1px solid #c9a6ff55; border-radius: 999px; background: #0b0d1c99; color: var(--ae-perl); font: 700 .72rem var(--ae-sans); letter-spacing: .08em; cursor: pointer; }
 .ae-filter button small { opacity: .7; margin-left: .2rem; }
 .ae-filter button[aria-pressed="true"] { background: var(--ae-schillern); color: var(--ae-nacht); border-color: transparent; }
-.ae-medienfeld code { font-size: .8rem; color: var(--ae-tuerkis); overflow-wrap: anywhere; }
+
+/* Karussell-Bühne: das Bild groß, dahinter dasselbe Motiv weich als Himmel, mit Wind */
+.ae-buehne { position: relative; isolation: isolate; display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 1rem; min-height: clamp(22rem, 62vh, 42rem); padding: clamp(1rem, 3vw, 2.4rem); border: 1px solid var(--ae-linie); border-radius: 24px; overflow: hidden; }
+.ae-buehne-hintergrund { position: absolute; inset: -10%; z-index: -2; width: 120%; height: 120%; object-fit: cover; filter: blur(30px) saturate(1.3) brightness(.5); transition: opacity .5s; }
+.ae-buehne::after { content: ""; position: absolute; inset: 0; z-index: -1; background: radial-gradient(ellipse at center, transparent 30%, #0b0d1ccc 100%); }
+.ae-buehne-bild { position: relative; z-index: 2; display: grid; justify-items: center; gap: .8rem; margin: 0; min-width: 0; }
+.ae-buehne-gross { display: block; max-width: 100%; padding: 0; border: 0; background: none; cursor: zoom-in; }
+.ae-buehne-gross img { display: block; max-width: 100%; max-height: min(56vh, 36rem); width: auto; height: auto; margin: 0 auto; object-fit: contain; border-radius: 14px; box-shadow: 0 0 0 1px #f2c7a544, 0 30px 70px #000c; transition: opacity .35s; }
+.ae-buehne-bild figcaption { display: grid; justify-items: center; gap: .2rem; text-align: center; }
+.ae-buehne-bild strong { font: 400 clamp(1.1rem, 2vw, 1.5rem) var(--ae-serif); color: var(--ae-perl); }
+.ae-buehne-kategorie { font: 700 .66rem var(--ae-sans); letter-spacing: .2em; text-transform: uppercase; color: var(--ae-tuerkis); }
+.ae-buehne-zaehler { font: 700 .7rem var(--ae-sans); letter-spacing: .14em; color: var(--ae-leise); }
+.ae-buehne-knopf { position: relative; z-index: 3; display: grid; place-items: center; width: 3.2rem; height: 3.2rem; border: 1px solid #f4ecf344; border-radius: 50%; background: #0b0d1ccc; color: var(--ae-perl); font: 1.9rem/1 var(--ae-serif); cursor: pointer; }
+.ae-buehne-knopf:hover { border-color: var(--ae-rose); }
+.ae-daumen { display: flex; gap: .5rem; margin-top: .8rem; overflow-x: auto; padding: .3rem .1rem .6rem; scroll-snap-type: x proximity; scrollbar-color: #c9a6ff55 transparent; }
+.ae-daumen-bild { flex: 0 0 auto; width: 5.6rem; height: 5.6rem; padding: 0; border: 2px solid transparent; border-radius: 12px; overflow: hidden; background: #07080f; cursor: pointer; opacity: .6; scroll-snap-align: center; transition: opacity .2s, border-color .2s; }
+.ae-daumen-bild img { width: 100%; height: 100%; object-fit: cover; }
+.ae-daumen-bild:hover { opacity: .9; }
+.ae-daumen-bild[aria-current] { opacity: 1; border-color: var(--ae-rose); }
+.ae-daumen-bild[hidden] { display: none; }
+
+/* Klangarchiv */
+.ae-klang-raster { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr)); gap: 1rem; }
+.ae-klang { display: grid; gap: .8rem; align-content: start; padding: 1.2rem; border: 1px solid var(--ae-linie); border-radius: 18px; background: radial-gradient(ellipse at 100% 0%, #c9a6ff1f, transparent 60%), linear-gradient(160deg, #191a38f0, #0b0d1cf5); }
+.ae-klang h3 { margin: .3rem 0 0; font: 400 1.3rem var(--ae-serif); color: var(--ae-perl); }
+.ae-welle { display: flex; align-items: center; gap: 3px; height: 3.6rem; padding: 0 .2rem; }
+.ae-welle i { flex: 1; height: var(--h); border-radius: 2px; background: var(--ae-schillern); opacity: .55; transform-origin: center; animation: ae-welle 2.4s ease-in-out infinite; animation-delay: var(--v); }
+@keyframes ae-welle { 50% { transform: scaleY(.35); opacity: .3; } }
+.ae-spur { list-style: none; margin: 0; padding: 0; display: grid; gap: .6rem; }
+.ae-spur li { display: grid; gap: .35rem; }
+.ae-spur audio { width: 100%; }
+.ae-ordner { display: grid; gap: .2rem; margin: 0; }
+.ae-ordner span { font: 700 .62rem var(--ae-sans); letter-spacing: .18em; text-transform: uppercase; color: var(--ae-leise); }
+.ae-ordner code { font-size: .78rem; color: var(--ae-tuerkis); overflow-wrap: anywhere; }
+
+/* Bewegtbild */
+.ae-video-raster { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 26rem), 1fr)); gap: 1rem; }
+.ae-video { margin: 0; }
+.ae-video video { width: 100%; aspect-ratio: 16 / 9; border-radius: 16px; background: #000; }
+.ae-bildschirm { position: relative; isolation: isolate; display: grid; align-items: end; aspect-ratio: 16 / 7; min-height: 16rem; border: 1px solid var(--ae-linie); border-radius: 24px; overflow: hidden; }
+.ae-bildschirm > img { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; opacity: .7; }
+.ae-bildschirm::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(0deg, var(--ae-nacht), #0b0d1c66 60%, #0b0d1c33); }
+.ae-play { position: absolute; left: 50%; top: 42%; z-index: 2; display: grid; place-items: center; width: 4.6rem; height: 4.6rem; border: 1px solid #f4ecf388; border-radius: 50%; background: #0b0d1c99; color: var(--ae-perl); font-size: 1.6rem; transform: translate(-50%, -50%); box-shadow: 0 0 0 10px #f4ecf314; }
+.ae-bildschirm-text { position: relative; z-index: 2; display: grid; gap: .5rem; padding: clamp(1rem, 3vw, 2rem); }
+.ae-bildschirm-text p { margin: 0; }
+
+/* 3D: Hologramm-Kugel als Platzhalter, Modelle laden erst beim Antippen */
+.ae-holo { display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: center; gap: clamp(1rem, 4vw, 3rem); padding: clamp(1.2rem, 3vw, 2.4rem); border: 1px solid #78e0ea44; border-radius: 24px; background: radial-gradient(ellipse at 15% 50%, #78e0ea1f, transparent 60%), linear-gradient(160deg, #10203af0, #0b0d1cf5); }
+.ae-holo p { margin: .5rem 0 0; }
+.ae-holo-kugel { position: relative; width: clamp(8rem, 18vw, 12rem); aspect-ratio: 1; transform-style: preserve-3d; animation: ae-dreh 16s linear infinite; }
+.ae-holo-kugel i { position: absolute; inset: 0; border: 1px solid #78e0eaaa; border-radius: 50%; box-shadow: 0 0 18px #78e0ea44 inset; }
+.ae-holo-kugel i:nth-child(2) { transform: rotateY(45deg); }
+.ae-holo-kugel i:nth-child(3) { transform: rotateY(90deg); }
+.ae-holo-kugel i:nth-child(4) { transform: rotateX(90deg); border-color: #c9a6ffaa; }
+@keyframes ae-dreh { to { transform: rotateY(360deg) rotateX(12deg); } }
+.ae-modell-raster { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 22rem), 1fr)); gap: 1rem; }
+.ae-modell { margin: 0; }
+.ae-modell-buehne { display: grid; place-items: center; aspect-ratio: 4 / 3; border: 1px solid var(--ae-linie); border-radius: 18px; background: radial-gradient(ellipse, #78e0ea1a, #0b0d1c 70%); overflow: hidden; }
+.ae-modell-buehne model-viewer { width: 100%; height: 100%; }
+.ae-modell-laden { padding: .7rem 1.3rem; border: 1px solid #78e0ea88; border-radius: 999px; background: #0b0d1ccc; color: var(--ae-perl); font: 700 .8rem var(--ae-sans); letter-spacing: .1em; cursor: pointer; }
+
+/* Assets */
+.ae-asset-liste { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 18rem), 1fr)); gap: .6rem; }
+.ae-asset-liste a { display: flex; justify-content: space-between; gap: 1rem; padding: .8rem 1rem; border: 1px solid var(--ae-linie); border-radius: 12px; background: #0b0d1cb3; color: var(--ae-perl) !important; text-decoration: none; }
+.ae-asset-leer p { margin: .5rem 0 0; }
+
+@media (max-width: 760px) {
+    .ae-buehne { grid-template-columns: minmax(0, 1fr); min-height: 0; padding: 1rem .6rem; }
+    .ae-buehne-knopf { position: absolute; top: 40%; width: 2.6rem; height: 2.6rem; font-size: 1.5rem; }
+    .ae-buehne-knopf[data-buehne="-1"] { left: .4rem; } .ae-buehne-knopf[data-buehne="1"] { right: .4rem; }
+    .ae-buehne-gross img { max-height: 52vh; }
+    .ae-daumen-bild { width: 4.4rem; height: 4.4rem; }
+    .ae-bildschirm { aspect-ratio: 4 / 5; }
+    .ae-holo { grid-template-columns: minmax(0, 1fr); justify-items: center; text-align: center; }
+}
+@media (prefers-reduced-motion: reduce) { .ae-welle i, .ae-holo-kugel { animation: none; } }
 `,
 };
 
@@ -546,6 +763,7 @@ const ziel = location.hash && document.getElementById(decodeURIComponent(locatio
 if (ziel instanceof HTMLDetailsElement) ziel.open = true;
 
 // Großansicht mit Blättern (Pfeiltasten, Knöpfe, Wischen)
+let grossOeffnen = () => {};
 const dialog = document.querySelector(".ae-gross");
 if (dialog) {
     const bild = dialog.querySelector("img"), titel = dialog.querySelector("figcaption strong"), zaehler = dialog.querySelector(".ae-gross-zaehler"), link = dialog.querySelector("figcaption a");
@@ -561,8 +779,9 @@ if (dialog) {
     document.addEventListener("click", (e) => {
         const knopf = e.target.closest(".ae-werk-bild");
         if (!knopf) return;
-        liste = sichtbar(); zeigen(liste.indexOf(knopf)); dialog.showModal();
+        grossOeffnen(sichtbar(), sichtbar().indexOf(knopf));
     });
+    grossOeffnen = (l, i) => { liste = l; zeigen(Math.max(0, i)); dialog.showModal(); };
     dialog.querySelectorAll("[data-schritt]").forEach((k) => k.addEventListener("click", () => zeigen(aktuell + Number(k.dataset.schritt))));
     dialog.addEventListener("keydown", (e) => { if (e.key === "ArrowRight") zeigen(aktuell + 1); if (e.key === "ArrowLeft") zeigen(aktuell - 1); });
     dialog.addEventListener("click", (e) => { if (e.target === dialog || e.target.tagName === "FIGURE") dialog.close(); });
@@ -571,12 +790,64 @@ if (dialog) {
     dialog.addEventListener("touchend", (e) => { if (startX === null) return; const dx = e.changedTouches[0].clientX - startX; if (Math.abs(dx) > 50) zeigen(aktuell + (dx < 0 ? 1 : -1)); startX = null; }, { passive: true });
 }
 
-// Medien: Bildarchiv filtern
-const filter = [...document.querySelectorAll(".ae-filter button")];
-filter.forEach((b) => b.addEventListener("click", () => {
-    filter.forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
-    document.querySelectorAll(".ae-galerie--archiv .ae-werk").forEach((w) => { w.hidden = !!b.dataset.filter && w.dataset.kategorie !== b.dataset.filter; });
-}));
+// Medien: Bild-Karussell (Bühne + Daumenleiste + Filter, blättert von selbst, Wischen am Handy)
+const buehne = document.querySelector(".ae-buehne");
+if (buehne) {
+    const daumen = [...document.querySelectorAll(".ae-daumen-bild")];
+    const bild = buehne.querySelector(".ae-buehne-gross img"), himmel = buehne.querySelector(".ae-buehne-hintergrund");
+    const titel = buehne.querySelector(".ae-buehne-bild strong"), kat = buehne.querySelector(".ae-buehne-kategorie"), zaehler = buehne.querySelector(".ae-buehne-zaehler");
+    const sicht = () => daumen.filter((d) => !d.hidden);
+    let aktuell = daumen[0];
+    const zeige = (d) => {
+        if (!d) return;
+        aktuell = d;
+        const liste = sicht();
+        bild.style.opacity = "0";
+        setTimeout(() => {
+            bild.src = d.dataset.vor; bild.alt = d.dataset.titel;
+            himmel.src = d.dataset.vor;
+            titel.textContent = d.dataset.titel; kat.textContent = d.dataset.kategorie;
+            zaehler.textContent = (liste.indexOf(d) + 1) + " / " + liste.length;
+            bild.style.opacity = "1";
+        }, 180);
+        daumen.forEach((x) => x.toggleAttribute("aria-current", x === d));
+        d.scrollIntoView({ block: "nearest", inline: "center", behavior: "smooth" });
+    };
+    const schritt = (n) => { const liste = sicht(); zeige(liste[(liste.indexOf(aktuell) + n + liste.length) % liste.length]); };
+    daumen.forEach((d) => d.addEventListener("click", () => { halt(); zeige(d); }));
+    buehne.querySelectorAll("[data-buehne]").forEach((k) => k.addEventListener("click", () => { halt(); schritt(Number(k.dataset.buehne)); }));
+    const filter = [...document.querySelectorAll(".ae-filter button")];
+    filter.forEach((b) => b.addEventListener("click", () => {
+        filter.forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
+        daumen.forEach((d) => { d.hidden = !!b.dataset.filter && d.dataset.kategorie !== b.dataset.filter; });
+        zeige(sicht()[0]);
+    }));
+    // Großansicht vom Bühnenbild aus, blättert durch die sichtbaren Bilder
+    buehne.querySelector(".ae-buehne-gross").addEventListener("click", () => { halt(); grossOeffnen(sicht(), sicht().indexOf(aktuell)); });
+    // Wischen auf der Bühne
+    let startX = null;
+    buehne.addEventListener("touchstart", (e) => { startX = e.touches[0].clientX; }, { passive: true });
+    buehne.addEventListener("touchend", (e) => { if (startX === null) return; const dx = e.changedTouches[0].clientX - startX; if (Math.abs(dx) > 50) { halt(); schritt(dx < 0 ? 1 : -1); } startX = null; }, { passive: true });
+    // von selbst weiterblättern, solange die Bühne sichtbar ist und nicht bedient wurde
+    let takt = null, imBild = false, bedient = false;
+    const halt = () => { bedient = true; clearInterval(takt); takt = null; };
+    const lauf = () => { clearInterval(takt); takt = null; if (imBild && !bedient && !document.hidden && !matchMedia("(prefers-reduced-motion: reduce)").matches) takt = setInterval(() => schritt(1), 6500); };
+    new IntersectionObserver(([e]) => { imBild = e.isIntersecting; lauf(); }).observe(buehne);
+    document.addEventListener("visibilitychange", lauf);
+}
+
+// Medien: 3D-Modelle laden erst beim Antippen (gemeinsamer Modell-Adapter)
+document.querySelectorAll(".ae-modell").forEach((m) => {
+    m.querySelector(".ae-modell-laden")?.addEventListener("click", async (e) => {
+        const ort = m.querySelector(".ae-modell-buehne");
+        e.currentTarget.textContent = "Wird geladen …";
+        try {
+            const { loadModel } = await import("../../_gemeinsam/modell-viewer.js");
+            ort.replaceChildren();
+            await loadModel(ort, { url: new URL(m.dataset.modell, location.href).href, title: m.dataset.titel }, m.dataset.modell.split(".").pop().toLowerCase());
+        } catch { ort.textContent = "Modell konnte nicht geladen werden."; }
+    });
+});
 `;
 
 // ---------- schreiben ----------
